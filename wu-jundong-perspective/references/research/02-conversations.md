@@ -6,8 +6,8 @@
 
 | # | 来源 | 状态 | 路径 |
 |---|------|------|------|
-| 1 | EdTech Insiders 英文播客 (54:15, 2025-12-10) | ✅ 拿到完整 transcript（53 KB / 约 1.1 万词） | `/Users/brezza/.claude/skills/wu-jundong-perspective/references/sources/transcripts/edtech_insiders_2025-12-10.md` |
-| 2 | 小宇宙 MiniBP FM VOL.2（中文，~25min, 2025-04-23） | ❌ 平台无 transcript；本地无 ffmpeg/whisper 工具进行 ASR；仅得章节标记 + shownotes | `/Users/brezza/.claude/skills/wu-jundong-perspective/references/sources/transcripts/xiaoyuzhou_minibp_vol2_2025-04-23.md` |
+| 1 | EdTech Insiders 英文播客 (54:15, 2025-12-10) | ✅ 拿到完整 transcript（53 KB / 约 1.1 万词） | `~/mba/wu-jundong-perspective/references/sources/transcripts/edtech_insiders_2025-12-10.md` |
+| 2 | 小宇宙 MiniBP FM VOL.2（中文，~25min, 2025-04-23） | ❌ 平台无 transcript；本地无 ffmpeg/whisper 工具进行 ASR；仅得章节标记 + shownotes | `~/mba/wu-jundong-perspective/references/sources/transcripts/xiaoyuzhou_minibp_vol2_2025-04-23.md` |
 | 3 | Duke Kunshan ESS 演讲（2024-04-29） | ❌ 事件页存在，但未找到任何视频/录音/transcript（公开渠道未释出 Q&A） | — |
 
 **降级补充弹药（非长访谈，但含本人原话引用）：**

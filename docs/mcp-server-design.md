@@ -516,7 +516,7 @@ pnpm --filter mcp-server release  # bump + build + npm publish
   "mcpServers": {
     "mba-dev": {
       "command": "node",
-      "args": ["/Users/john/mba/packages/mcp-server/dist/index.js"],
+      "args": ["<HOME>/mba/packages/mcp-server/dist/index.js"],
       "env": {
         "ANTHROPIC_API_KEY": "sk-ant-...",
         "MBA_STORE_DIR": "/tmp/mba-dev-audits",

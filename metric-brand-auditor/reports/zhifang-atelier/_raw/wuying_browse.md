@@ -36,7 +36,7 @@
 SSH 鉴权，本沙箱不持有该机的私钥也不能交互输入密码（`Permission denied (publickey,password,keyboard-interactive)`）。
 `ssh ... 'cd ~/mba && python3 wuying_open.py'` 这一行**无法**从沙箱执行。
 
-**阻塞点 2（更关键）：** 因此我在本机（macOS / `/Users/john/mba`，wuying API key 与 image 同样配置）改用**等价路径**直接跑 `python3 ~/mba/wuying_open.py`。
+**阻塞点 2（更关键）：** 因此我在本机（macOS / `~/mba`，wuying API key 与 image 同样配置）改用**等价路径**直接跑 `python3 ~/mba/wuying_open.py`。
 session 创建成功（见上表）；但当前 wuying API key 对应的租户层级是 **Lite**，而不是 **Pro/Ultra**。
 agent-browser 接 wuying 必须先调用 `Browser.get_endpoint_url()` 拿 CDP wss URL，
 该 SDK 内部会请求 `GetLink` API。返回硬性 400：
