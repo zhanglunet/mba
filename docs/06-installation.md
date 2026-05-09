@@ -101,23 +101,24 @@ ln -s ~/mba/zhang-yiming-perspective ~/.claude/skills/zhang-yiming-perspective
 /mba list
 ```
 
-应该返回:
+应该返回(空仓库):
 
 ```
 已审计品牌(reports/ 下):
-- zhifang-atelier   v1  最近更新 2026-05-09
+(暂无)
 ```
 
-(zhifang-atelier 是仓库自带的演示报告)
+### 5.4 跑一份你自己的报告
 
-### 5.4 看演示报告
-
-```bash
-open metric-brand-auditor/reports/zhifang-atelier/report.html
+```
+> /mba <你关注的品牌名>
 ```
 
-应该看到一份完整的 HTML 报告,含雷达图、异议热力图、Mermaid 影响力流程图。
+走完 Phase 0-5 后,产出 `metric-brand-auditor/reports/<brand-slug>/report.html`。
+本机用 `open report.html` 即可看到完整 HTML 报告(雷达图、异议热力图、Mermaid 影响力流程图)。
 如果 Mermaid 块显示 "Syntax error",见下文 §6.4。
+
+> ⚠️ **报告隐私:** 仓库 `.gitignore` **不**默认排除 `reports/`,跑完审计的 markdown / HTML 文件会被 git status 捕捉。如不想提交,自行 `echo 'metric-brand-auditor/reports/' >> .gitignore`。
 
 ## 6. 故障排除
 

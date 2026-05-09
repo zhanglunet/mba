@@ -512,8 +512,8 @@ def slide_08_built(prs, page, total):
         ("• Phase 0-5 + EVOLUTION 模式", False, 1),
         ("• 自包含 HTML 报告(9 块图表)", False, 1),
         ("/research 复用 skill", True, 0),
-        ("演示报告:zhifang-atelier v1", True, 0),
-        ("• 完整 _raw / reviews / report.{md,html}", False, 1),
+        ("自包含 HTML 报告(Chart.js + Mermaid · 9 块)", True, 0),
+        ("• 雷达图 / 异议热力图 / 影响力流程图 / 定位象限", False, 1),
         ("完整文档手册 docs/(2020 行)", True, 0),
         ("• PRD · 架构 · pipeline · usage · 安装 · 规范 · 扩展", False, 1),
         ("MCP 化设计文档(732 行,未来形态)", True, 0),
@@ -685,7 +685,7 @@ def slide_11_demo(prs, page, total):
         ("📖  README", "/README.md  ·  介绍 + 产品结构"),
         ("📚  完整文档", "/docs/  ·  9 篇 + 2750 行"),
         ("🔭  MCP 路线图", "/docs/mcp-server-design.md"),
-        ("🦞  Demo 报告", "/metric-brand-auditor/reports/zhifang-atelier/report.html"),
+        ("⚡  现场跑一次", "/mba YourBrand  →  ~25 min 出报告"),
     ]
     for i, (icon_label, url) in enumerate(links):
         y = Inches(1.85) + i * Inches(0.85)
@@ -696,7 +696,7 @@ def slide_11_demo(prs, page, total):
                  url, size=10, color=MUTED, font="Menlo")
 
     add_text(s, Inches(0.5), Inches(6.5), Inches(12), Inches(0.4),
-             "现场演示请到 reports/zhifang-atelier/report.html",
+             "现场演示:/mba <一个评委你想看的品牌>",
              size=12, color=ACCENT, align=PP_ALIGN.CENTER)
     page_footer(s, page, total)
 

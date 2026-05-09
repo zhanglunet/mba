@@ -93,7 +93,7 @@ MBA 用三条对应机制解决:
 
 ### 短期(v0.x)
 
-- 跑通 5+ 真实品牌(OpenClaw / Aibrary / BotLearn / 智坊 / 任意 1 个外部测试)
+- 跑通 5+ 真实品牌(OpenClaw / Aibrary / BotLearn / 任意 2 个外部测试)
 - 5 评委的打分能稳定区分(同一品牌不同评委分差 ≥ 2 分,证明评委没"被洗"成同质)
 - HTML 报告渲染零错(Chart.js + Mermaid 全部成功)
 

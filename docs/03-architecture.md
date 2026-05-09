@@ -161,7 +161,7 @@ MBA 共 6 个 phase(0-5)。Phase 0 是路由,1-5 是主流程。EVOLUTION 模式
 
 > 一个品牌一个目录,所有产物都落盘可读。MBA 不持久化任何内存状态 —— 重跑只需要 `report.md` 和 `_raw/` 在那。
 
-路径根:`metric-brand-auditor/reports/<brand-slug>/`。`<brand-slug>` 规则:小写 ASCII + 连字符,例如 `openclaw` / `zhifang-atelier` / `bytedance-doubao`。
+路径根:`metric-brand-auditor/reports/<brand-slug>/`。`<brand-slug>` 规则:小写 ASCII + 连字符,例如 `openclaw` / `aibrary` / `bytedance-doubao`。
 
 ### 4.5 Perspective skill
 
@@ -211,7 +211,7 @@ body 部分按 phase 组织,每个 phase 含:
 ```
 brand: "OpenClaw"          → slug: openclaw         → reports/openclaw/
 brand: "字节豆包"           → slug: bytedance-doubao → reports/bytedance-doubao/
-brand: "智坊 atelier"       → slug: zhifang-atelier  → reports/zhifang-atelier/
+brand: "Aibrary"           → slug: aibrary          → reports/aibrary/
 ```
 
 slug 由 Lead 在 Phase 1 决定,用户可在 GATE 1 改。
