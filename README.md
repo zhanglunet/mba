@@ -4,6 +4,16 @@
 
 `/mba` 文件夹下的核心 skill 名为 **Metric Brand Auditor**(MBA)—— 一条由 Lead 编排、子 agent 并行执行、5 位人物评委独立打分的品牌影响力审计流水线。整个仓库就是这条流水线的源代码 + 角色资料 + 历史报告。
 
+## 团队 / Team
+
+| 角色 | 成员 |
+|---|---|
+| 💡 创意 / Ideation | **Jason** |
+| 🛠 实现 / Implementation | **清风** |
+| 🧭 顾问 / Advisor | **John** |
+
+🤖 协作 AI:Claude Opus 4.7(Anthropic)
+
 ---
 
 ## 一、设计思路:为什么要这样写
