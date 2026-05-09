@@ -1,2 +1,6 @@
 .env
 .DS_Store
+
+# 跑过的审计报告默认不入库 —— 报告归用户所有,可能含敏感品牌信息
+# 如需分享某份特定报告,显式: git add -f metric-brand-auditor/reports/<brand>/
+metric-brand-auditor/reports/

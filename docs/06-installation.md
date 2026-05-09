@@ -118,7 +118,8 @@ ln -s ~/mba/zhang-yiming-perspective ~/.claude/skills/zhang-yiming-perspective
 本机用 `open report.html` 即可看到完整 HTML 报告(雷达图、异议热力图、Mermaid 影响力流程图)。
 如果 Mermaid 块显示 "Syntax error",见下文 §6.4。
 
-> ⚠️ **报告隐私:** 仓库 `.gitignore` **不**默认排除 `reports/`,跑完审计的 markdown / HTML 文件会被 git status 捕捉。如不想提交,自行 `echo 'metric-brand-auditor/reports/' >> .gitignore`。
+> ⚠️ **报告隐私:** `metric-brand-auditor/reports/` 已默认在 `.gitignore`,跑完审计的报告**不会**进版本库。
+> 如需分享某份特定报告,显式 `git add -f metric-brand-auditor/reports/<brand>/`(并 review 内容是否合适公开)。
 
 ## 6. 故障排除
 
