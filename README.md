@@ -1,4 +1,6 @@
-# MBA
+# MBA — Metric Brand Auditor
+
+`/mba` 文件夹下的 skill 名为 **Metric Brand Auditor**（MBA）。
 
 ## 环境配置
 
