@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>智坊 atelier — MBA Brand Audit (v1)</title>
+<style>
+  :root {
+    --c-bg: #fafaf7;
+    --c-surface: #ffffff;
+    --c-text: #1a1a1a;
+    --c-muted: #666;
+    --c-accent: #2c3e50;
+    --c-border: #e5e5e0;
+    --c-judge-1: #e74c3c;
+    --c-judge-2: #3498db;
+    --c-judge-3: #2ecc71;
+    --c-judge-4: #f39c12;
+    --c-judge-5: #9b59b6;
+    --c-up: #27ae60;
+    --c-down: #c0392b;
+    --c-flat: #95a5a6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --c-bg: #14151a;
+      --c-surface: #1f2128;
+      --c-text: #e8e8ea;
+      --c-muted: #9aa;
+      --c-accent: #5fa8d3;
+      --c-border: #2c2e36;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--c-bg);
+    color: var(--c-text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 80px; }
+  header.hero { border-bottom: 1px solid var(--c-border); padding-bottom: 24px; margin-bottom: 32px; }
+  header.hero h1 { font-size: 32px; margin: 0 0 8px; line-height: 1.2; }
+  header.hero .sub { color: var(--c-muted); font-size: 14px; margin: 4px 0 12px; }
+  .badges { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0 16px; }
+  .badge {
+    display: inline-block; padding: 3px 10px; font-size: 12px;
+    border-radius: 999px; background: var(--c-surface); border: 1px solid var(--c-border);
+  }
+  .badge.mode-FRESH { background: #e8f6ef; color: #1a7a4c; border-color: #a8d8b9; }
+  .badge.warn { background: #fff3e6; color: #b76b00; border-color: #ffd1a3; }
+  .tldr { font-size: 17px; color: var(--c-text); }
+  .tldr-bullets { margin-top: 12px; }
+  .tldr-bullets li { margin: 6px 0; color: var(--c-muted); font-size: 15px; }
+  section { margin: 44px 0; }
+  section > h2 { font-size: 22px; margin: 0 0 16px; border-left: 4px solid var(--c-accent); padding-left: 12px; }
+  section > p.intro { color: var(--c-muted); margin-top: -8px; font-size: 14px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 720px) { .grid-2 { grid-template-columns: 1fr; } }
+  .card { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px; padding: 16px; }
+  .judge-card { border-left-width: 4px; border-left-style: solid; }
+  .judge-card h3 { margin: 0 0 4px; font-size: 18px; }
+  .judge-card .totals { font-size: 13px; color: var(--c-muted); margin-bottom: 8px; }
+  .judge-card .quote { font-style: italic; color: var(--c-muted); border-left: 2px solid var(--c-border); padding-left: 10px; margin: 10px 0; font-size: 14px; }
+  .judge-card .verdict { font-weight: 600; margin: 8px 0 4px; font-size: 14px; }
+  .score-row { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+  .score-pill { background: var(--c-bg); border: 1px solid var(--c-border); border-radius: 4px; padding: 2px 8px; font-size: 11px; }
+  table.score-matrix { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  table.score-matrix th, table.score-matrix td { border: 1px solid var(--c-border); padding: 8px 10px; text-align: center; }
+  table.score-matrix th { background: var(--c-surface); }
+  table.score-matrix td.lens { text-align: left; font-weight: 600; }
+  table.score-matrix tr.totals td { background: var(--c-surface); font-weight: 700; }
+  td.up   { background: rgba(39,174,96,.12); color: var(--c-up); }
+  td.down { background: rgba(192,57,43,.12); color: var(--c-down); }
+  td.flat { color: var(--c-flat); }
+  .delta-pos { color: var(--c-up); font-weight: 600; }
+  .delta-neg { color: var(--c-down); font-weight: 600; }
+  /* Heatmap */
+  .heatmap {
+    display: grid; gap: 2px;
+    background: var(--c-border);
+    border: 1px solid var(--c-border);
+    border-radius: 6px; overflow: hidden;
+    font-size: 13px;
+  }
+  .heatmap .hcell { padding: 12px 8px; text-align: center; background: var(--c-surface); position: relative; cursor: default; transition: transform .15s; }
+  .heatmap .hcell.score { font-weight: 600; font-size: 16px; color: #111; }
+  .heatmap .hcell.label { background: var(--c-surface); color: var(--c-muted); font-size: 12px; }
+  .heatmap .hcell.label.lens { text-align: left; padding-left: 12px; font-weight: 600; color: var(--c-text); }
+  .heatmap .hcell.score:hover { transform: scale(1.06); z-index: 2; box-shadow: 0 2px 10px rgba(0,0,0,.18); }
+  .heatmap .hcell.sigma { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .heatmap .hcell .tip {
+    visibility: hidden; opacity: 0;
+    position: absolute; bottom: 110%; left: 50%; transform: translateX(-50%);
+    background: #1a1a1a; color: #fff; padding: 8px 12px; border-radius: 4px;
+    font-size: 12px; line-height: 1.5;
+    width: max-content; max-width: 260px;
+    transition: opacity .15s; pointer-events: none; z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
+    text-align: left; white-space: normal;
+  }
+  .heatmap .hcell:hover .tip { visibility: visible; opacity: 1; }
+  .heatmap-legend { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--c-muted); margin-top: 8px; }
+  .heatmap-legend .swatch { width: 140px; height: 12px; border-radius: 3px; background: linear-gradient(90deg, #c0392b 0%, #f39c12 50%, #27ae60 100%); }
+  .mermaid { background: var(--c-surface); padding: 16px; border-radius: 8px; border: 1px solid var(--c-border); margin: 12px 0; }
+  canvas { background: var(--c-surface); border-radius: 8px; padding: 12px; border: 1px solid var(--c-border); }
+  details { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px; padding: 12px 16px; margin: 12px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 6px 0; }
+  ol.actions li { margin: 10px 0; line-height: 1.55; }
+  .leverage { font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle; }
+  .leverage.high { background: #e74c3c; color: white; }
+  .leverage.med  { background: #f39c12; color: white; }
+  .leverage.low  { background: #95a5a6; color: white; }
+  .objects-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0 24px; }
+  .objects-bar .card.A { border-left: 4px solid var(--c-up); }
+  .objects-bar .card.B { border-left: 4px solid var(--c-down); }
+  .objects-bar h3 { margin: 0 0 6px; font-size: 16px; }
+  .objects-bar .big-num { font-size: 32px; font-weight: 700; line-height: 1; margin: 4px 0; }
+  .objects-bar .small { font-size: 12px; color: var(--c-muted); }
+  @media print {
+    body { background: white; color: black; }
+    .wrap { max-width: 100%; }
+    details[open] summary { display: none; }
+    details { border: none; padding: 0; }
+    canvas, .mermaid { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>智坊 atelier — Brand Influence Audit</h1>
+    <div class="sub">CBC 宽带资本（China Broadband Capital，田溯宁）旗下声称的三段式 AI 孵化器升级叙事</div>
+    <div class="badges">
+      <span class="badge">v1</span>
+      <span class="badge mode-FRESH">FRESH</span>
+      <span class="badge">2026-05-09</span>
+      <span class="badge">5 judges · 5 lenses · 7 dimensions + Wuying</span>
+      <span class="badge warn">两个对象分开打分</span>
+    </div>
+    <p class="tldr">
+      <strong>任务源给的"AI坊 → harness farm → 智坊 atelier"三段式叙事在公开层面不成立——更像 LLM brand exercise 而非真路线图。</strong>
+      但 CBC 旗下"宽带资本·AI坊"<em>真实在跑</em>——给早期 AI 创业者发竞争力工资，连接西云算力 / 丹摩智算 / 智优沃园区构成全栈闭环。
+      5 评委独立给出最大共识 <strong>Δ +17.4 分</strong>：真在跑的事比挂出去的故事强 3 倍。CBC 真正的影响力问题不在"该怎么造一个新名字"，
+      而在<strong>"早就拿了好牌却没出"</strong>。
+    </p>
+    <ul class="tldr-bullets">
+      <li><strong>正确写法是"AI坊"（首字母大写 AI）</strong>，任务源给的小写"ai 坊"已经是二手转述硬证据。</li>
+      <li>"harness farm" 中英文 0 命中；"harness" 真出处是 HashiCorp 联创 Hashimoto 2026-02 博文，与 CBC 无关。</li>
+      <li>"智坊"中文 SEO 命名空间已被海能达 (002583.SZ)"精工智坊"占了 13 年。</li>
+      <li>田溯宁 IP 活在错频道：智库×运营商×老牌财经强；创投/创业 KOL 圈（拾象/海外独角兽/Founder Park/机器之心）零自然提及。</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>两个对象的总分对比</h2>
+    <p class="intro">本审计明确区分两个评分对象。下方所有可视化主对象是 <strong>A</strong>（真在跑的 AI坊），对象 B（三段式叙事）以对照方式展示。</p>
+    <div class="objects-bar">
+      <div class="card A">
+        <h3>对象 A — 真实在跑的"宽带资本·AI坊"</h3>
+        <div class="big-num" style="color: var(--c-up);">27.6 / 50</div>
+        <div class="small">5 评委均值 · 范围 25-31</div>
+      </div>
+      <div class="card B">
+        <h3>对象 B — 三段式升级叙事</h3>
+        <div class="big-num" style="color: var(--c-down);">10.2 / 50</div>
+        <div class="small">5 评委均值 · 范围 9-12 · <strong>Δ −17.4 vs A</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Score radar — 5 judges across 5 lenses (对象 A)</h2>
+    <canvas id="radar" height="360"></canvas>
+  </section>
+
+  <section>
+    <h2>Score totals</h2>
+    <div class="grid-2">
+      <canvas id="totals" height="280"></canvas>
+      <canvas id="lensMean" height="280"></canvas>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dissent heatmap (对象 A) — where do the judges fight</h2>
+    <p class="intro">
+      Each cell: that judge's score on that lens (1-10), shaded red→yellow→green.
+      Last column σ = standard deviation across judges; high σ = real disagreement.
+      Hover any cell for the judge's one-line reasoning.
+    </p>
+    <div id="heatmap" class="heatmap"></div>
+    <div class="heatmap-legend">
+      <span>1</span><span class="swatch"></span><span>10</span>
+      <span style="margin-left: 24px;">σ column shading: pale = consensus · saturated = brawl</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Score matrix — 对象 A vs 对象 B</h2>
+    <table class="score-matrix">
+      <thead>
+        <tr>
+          <th>Lens</th>
+          <th>Fusheng</th><th>Jobs</th><th>Likejia</th><th>Wu-Jundong</th><th>Zhang-Yiming</th>
+          <th>Mean (A)</th><th>Mean (B)</th><th>Δ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lens">Origin authenticity</td>
+          <td>8 / 3</td><td>9 / 2</td><td>8 / 3</td><td>7 / 2</td><td>7 / 2</td>
+          <td><strong>7.8</strong></td><td>2.4</td><td class="delta-pos">+5.4</td>
+        </tr>
+        <tr>
+          <td class="lens">Category coinage</td>
+          <td>5 / 2</td><td>6 / 3</td><td>5 / 2</td><td>5 / 3</td><td>5 / 3</td>
+          <td><strong>5.2</strong></td><td>2.6</td><td class="delta-pos">+2.6</td>
+        </tr>
+        <tr>
+          <td class="lens">Leverage quality</td>
+          <td>6 / 2</td><td>6 / 2</td><td>6 / 3</td><td>6 / 2</td><td>6 / 2</td>
+          <td><strong>6.0</strong></td><td>2.2</td><td class="delta-pos">+3.8</td>
+        </tr>
+        <tr>
+          <td class="lens">Identity coherence</td>
+          <td>5 / 2</td><td>5 / 2</td><td>5 / 2</td><td>4 / 1</td><td>5 / 2</td>
+          <td><strong>4.8</strong></td><td>1.8</td><td class="delta-pos">+3.0</td>
+        </tr>
+        <tr>
+          <td class="lens">Real-world signal</td>
+          <td>4 / 1</td><td>5 / 1</td><td>4 / 2</td><td>3 / 1</td><td>3 / 1</td>
+          <td><strong>3.8</strong></td><td>1.2</td><td class="delta-pos">+2.6</td>
+        </tr>
+        <tr class="totals">
+          <td class="lens">Total / 50</td>
+          <td>28 / 10</td><td>31 / 10</td><td>28 / 12</td><td>25 / 9</td><td>26 / 10</td>
+          <td><strong>27.6</strong></td><td>10.2</td><td class="delta-pos">+17.4</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="intro">每格 "A / B" 双分。Mean(A) 是 5 评委对真 AI坊 的均分；Mean(B) 是对三段式叙事的均分。Δ +17.4 是无横向沟通下浮现的最大共识。</p>
+  </section>
+
+  <section>
+    <h2>How influence is constructed (对象 A 的真实杠杆图)</h2>
+    <div class="mermaid">
+flowchart LR
+  Tian["田溯宁 30 年 IP backbone<br/>亚信 → 网通 → 云基地"]
+  Stack["算力—园区—资本闭环<br/>西云算力 + 丹摩智算 + 智优沃"]
+  Salary["AI坊 给早期 AI 创业者<br/>发竞争力工资"]
+  Thesis["智能体互联网 op-ed<br/>2025-09 / 2025-11"]
+  Hou["侯宏 北大国发院<br/>承泽企业家圈"]
+  Press["新浪财经智库栏目<br/>+ 亚布力 / GSMA"]
+  DTalk["D Talk 小宇宙播客<br/>+ 智优沃公众号"]
+  Policy["政策 / 运营商 / 老牌财经<br/>中性偏正"]
+  KOL["创投 / 创业 KOL 圈<br/>0 自然提及"]
+
+  Tian --> Stack
+  Tian --> Thesis
+  Stack --> Salary
+  Thesis --> Hou
+  Hou --> Press
+  Salary --> DTalk
+  Press --> Policy
+  DTalk --> Policy
+  Policy -. "渠道断层" .-> KOL
+
+  classDef strong fill:#d4edda,stroke:#27ae60,color:#1a1a1a
+  classDef weak   fill:#f8d7da,stroke:#c0392b,color:#1a1a1a
+  classDef mid    fill:#fff3cd,stroke:#f39c12,color:#1a1a1a
+  class Tian,Stack,Salary strong
+  class KOL weak
+  class Thesis,Hou,Press,DTalk,Policy mid
+    </div>
+  </section>
+
+  <section>
+    <h2>Brand positioning — 协议布道 ↔ 协议落地 × 老钱 ↔ 创业圈</h2>
+    <div class="mermaid">
+quadrantChart
+  title 中国 AI 孵化 / Agent 平台站位
+  x-axis "协议布道 (受众=人)" --> "协议落地 (受众=Agent / 开发者)"
+  y-axis "老钱机构" --> "创业圈原生"
+  quadrant-1 "协议落地 × 创业圈"
+  quadrant-2 "协议布道 × 创业圈"
+  quadrant-3 "协议布道 × 老钱"
+  quadrant-4 "协议落地 × 老钱"
+  "AI坊 (CBC)": [0.20, 0.20]
+  "智坊 atelier (空名)": [0.18, 0.22]
+  "奇绩创坛": [0.32, 0.85]
+  "真格 AI 训练营": [0.35, 0.78]
+  "红杉 AI Day": [0.45, 0.65]
+  "字节 Coze": [0.85, 0.60]
+  "火山引擎 V-START": [0.80, 0.50]
+  "创新工场 AI 工程院": [0.40, 0.48]
+  "中国移动 ACN": [0.70, 0.18]
+    </div>
+  </section>
+
+  <section>
+    <h2>Judge panel — 5 in-character scorecards</h2>
+    <p class="intro">每位评委独立加载自己的 perspective skill，未读他人 scorecard，独立打分。色条为该评委对对象 A 的总分位次（红=最高，紫=最低，按总分降序）。</p>
+    <div class="grid-2">
+
+      <div class="judge-card card" style="border-left-color: #3498db;">
+        <h3>Steve Jobs</h3>
+        <div class="totals">A: <strong>31</strong> / 50 · B: 10 / 50 · 最高 A 总分</div>
+        <div class="score-row">
+          <span class="score-pill">Origin: 9/2</span>
+          <span class="score-pill">Category: 6/3</span>
+          <span class="score-pill">Leverage: 6/2</span>
+          <span class="score-pill">Identity: 5/2</span>
+          <span class="score-pill">Signal: 5/1</span>
+        </div>
+        <p class="verdict">Verdict: A real builder hiding behind a fake brand — kill the three-name story, point a camera at the salaried founders, and let the work speak.</p>
+        <p class="quote">"A brand without a product surface is a memo. The other judges will score the memo. I'm telling you: the memo is the problem. — Show me the work, or it didn't happen."</p>
+      </div>
+
+      <div class="judge-card card" style="border-left-color: #e74c3c;">
+        <h3>傅盛 Fu Sheng</h3>
+        <div class="totals">A: <strong>28</strong> / 50 · B: 10 / 50</div>
+        <div class="score-row">
+          <span class="score-pill">Origin: 8/3</span>
+          <span class="score-pill">Category: 5/2</span>
+          <span class="score-pill">Leverage: 6/2</span>
+          <span class="score-pill">Identity: 5/2</span>
+          <span class="score-pill">Signal: 4/1</span>
+        </div>
+        <p class="verdict">Verdict: AI坊 是真的、是低声量；智坊 atelier 是空名、是命名练习——不要把两件事讲成一件事。</p>
+        <p class="quote">"给创业者发工资这件事，比起一个'坊'字珍贵 10 倍。CBC 缺的不是资源、不是人、不是算力，缺的是把破局点喊出来的勇气。"</p>
+      </div>
+
+      <div class="judge-card card" style="border-left-color: #2ecc71;">
+        <h3>李可佳 Ethan KJ Li</h3>
+        <div class="totals">A: <strong>28</strong> / 50 · B: 12 / 50 · 最高 B（B 仍 &lt;25%）</div>
+        <div class="score-row">
+          <span class="score-pill">Origin: 8/3</span>
+          <span class="score-pill">Category: 5/2</span>
+          <span class="score-pill">Leverage: 6/3</span>
+          <span class="score-pill">Identity: 5/2</span>
+          <span class="score-pill">Signal: 4/2</span>
+        </div>
+        <p class="verdict">Verdict: AI坊 是真的，智坊 atelier 是空的——CBC 想用三段式名字升级品牌的方向反了，它真正缺的不是新名字，是新主语。</p>
+        <p class="quote">"协议位不是靠'布道'占的，是靠'被 Agent 自动调用'占的。CBC 的智能体互联网叙事是给人看的，不是给 Agent 调用的——这两件事差 90%。主语得是 Agent，不是参会嘉宾。"</p>
+      </div>
+
+      <div class="judge-card card" style="border-left-color: #9b59b6;">
+        <h3>张一鸣 Zhang Yiming</h3>
+        <div class="totals">A: <strong>26</strong> / 50 · B: 10 / 50</div>
+        <div class="score-row">
+          <span class="score-pill">Origin: 7/2</span>
+          <span class="score-pill">Category: 5/3</span>
+          <span class="score-pill">Leverage: 6/2</span>
+          <span class="score-pill">Identity: 5/2</span>
+          <span class="score-pill">Signal: 3/1</span>
+        </div>
+        <p class="verdict">Verdict: 真做事的部分还可以；外部信号供给基本不在线；三段式叙事是装饰，不是路线图。</p>
+        <p class="quote">"做得对的事，发不出来，是另一种偷懒。李开复早年做 AI-First 元年布道是有'创新工场'撑底的——CBC 现在是只有 op-ed 没有底盘。"</p>
+      </div>
+
+      <div class="judge-card card" style="border-left-color: #f39c12;">
+        <h3>吴俊东 Frank Jundong WU</h3>
+        <div class="totals">A: <strong>25</strong> / 50 · B: 9 / 50 · 最严打分</div>
+        <div class="score-row">
+          <span class="score-pill">Origin: 7/2</span>
+          <span class="score-pill">Category: 5/3</span>
+          <span class="score-pill">Leverage: 6/2</span>
+          <span class="score-pill">Identity: 4/1</span>
+          <span class="score-pill">Signal: 3/1</span>
+        </div>
+        <p class="verdict">Verdict: AI坊 是田溯宁 30 年关系沉淀的真实载体，但它没把关系讲成 60 年课程；'智坊 atelier' 三段式叙事是命名练习，不是 becoming 路线图。</p>
+        <p class="quote">"30 年的关系是真资产，但资产要用，光放着会贬值。AI坊 真正缺的不是 demo day，是赶在 sunset 段前兑现 3-5 个'田老师被投人 → 旗帜创业者'的 6 年长尾 case。"</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Where the judges agree (6 hard consensus points)</h2>
+    <ul>
+      <li><strong>三段式叙事是 LLM brand exercise，不是真路线图。</strong> 5/5 评委把对象 B 总分压在 9-12 分。</li>
+      <li><strong>田溯宁 30 年技术 backbone 是真东西。</strong> 5/5 评委 origin authenticity (A) 打到 7-9（mean 7.8，最强项）。</li>
+      <li><strong>三个名字命名学是断裂的</strong>——"坊"（手工）+ "harness farm"（工业）+ "atelier"（高定）三种打架的人格。4/5 评委明确建议至少砍掉两个名字。</li>
+      <li><strong>"给早期 AI 创业者发竞争力工资"是被低估的真破局点。</strong> 5/5 评委一致点出来——但 Lead 综合只把它放在"被低估的杠杆"注脚里。</li>
+      <li><strong>创投/创业 KOL 圈零提及 = 结构性缺席信号。</strong> 5/5 评委 real-world signal (A) 打地板分（mean 3.8）。</li>
+      <li><strong>不要正面打 cohort 孵化器赛道。</strong> 缺陆奇式 lieutenant、缺 demo day 校友光环、缺 cohort 运营基因。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where they disagree — 4 critical gaps（最值得读的部分）</h2>
+
+    <details open>
+      <summary>Gap 1 — Jobs vs Likejia："surface 问题"还是"subject 问题"？</summary>
+      <p><strong>Jobs:</strong> "This brand has no product surface. Not a logo. Not a website you can reach without an SSL error. Not a public founder list. The brand and the product are the same thing or the brand isn't real. The other judges will score the memo. I'm telling you: <em>the memo is the problem.</em>"</p>
+      <p><strong>Likejia:</strong> "协议位不是靠'布道'占的，是靠'被 Agent 自动调用'占的。CBC 的智能体互联网叙事是给人看的，不是给 Agent 调用的。它没有一个 .well-known/agent.json、没有一份可被 A2A 协议读取的 Spec——政策叙事和协议叙事差 90%。<em>主语得是 Agent，不是参会嘉宾。</em>"</p>
+      <p><em>Lead 解读：</em> 两个看似相反实则互补的诊断。Jobs 说"做出能让人 10 秒内体验的东西"（受众=人）；Likejia 说"做出能让 Agent 自动调用的接口"（受众=Agent）。<strong>两条建议都说"做一个东西"——只是 receiver 不同。</strong></p>
+    </details>
+
+    <details open>
+      <summary>Gap 2 — Fusheng vs Wu-Jundong："喊话不够"还是"关系没产品化"？</summary>
+      <p><strong>Fusheng:</strong> "AI坊 给早期创业者发'竞争力工资'这一条才是整个 CBC AI 故事里唯一的破局点候选——应用反向找技术 + 算账逻辑 + 不做大平台附庸三套心智同时点亮。<em>CBC 缺的是把破局点喊出来的勇气。</em>"</p>
+      <p><strong>Wu-Jundong:</strong> "田溯宁 30 年里投出去的人很多，但<em>没有一笔关系兑现成'田老师的被投人变成 AI坊 的旗帜创业者'这个 case</em>。CBC 一直把田的关系当成 portfolio item 而不是 cohort fuel。田 1963 年生，63 岁——<em>关系长尾接近 sunset 段</em>，AI坊 真正缺的不是 demo day，是赶在 sunset 前兑现 3-5 个 6 年长尾 case。"</p>
+      <p><em>Lead 解读：</em> 两人都看到 CBC 把真实差异化埋在了深处。Fusheng 是市场端（PR + 媒体节奏问题）；Wu-Jundong 是人才端（cohort 招募逻辑问题）。优先级：先有"被投人变旗帜创业者"的 case，再喊"为什么 CBC 给早期发工资"才有素材。</p>
+    </details>
+
+    <details open>
+      <summary>Gap 3 — Zhang-Yiming 独占视角：Coze / 火山 / 豆包 是 Lead 漏掉的真对手</summary>
+      <p><strong>Zhang-Yiming:</strong> "Lead 说真实竞争对手是协议层布道者：李开复、邬贺铨、Cisco、中国移动 ACN——这判断对了一半。错的那一半是：协议层不是只靠'布道'占的，是靠'开发者用你的 SDK / 调用你的 API / 读你的开源代码'占的。<em>字节没必要正面打 CBC，只要把开发者工具链做厚，CBC 的'智能体互联网'就会在 2-3 年内变成一个学术名词，不是产业事实。</em>李开复早年做 AI-First 元年布道是有'创新工场'这个 cohort 制实体撑底的。CBC 现在是只有 op-ed 没有底盘。"</p>
+      <p><em>Lead 解读：</em> 这是 Lead 综合 §6 维度结构性漏掉的一刀，与 Likejia 的"协议落地" 诊断同源不同语，指向同一个空白：<strong>CBC 缺一个开发者可用的产出</strong>。</p>
+    </details>
+
+    <details open>
+      <summary>Gap 4 — Jobs vs Wu-Jundong：田溯宁 IP 该被怎样使用？</summary>
+      <p><strong>Jobs:</strong> "Tian Suning is the real article. AsiaInfo, China Netcom, China Broadband Capital — thirty years on the same arc. <em>The man is real. The narrative is a placeholder.</em> I respect that."</p>
+      <p><strong>Wu-Jundong:</strong> "30 年的关系是真资产，但资产要用，光放着会贬值。<em>关系长尾已经接近 sunset 段</em>——田 63 岁，他的健康、退休、注意力转移任何一项发生，整套叙事瞬间失效。"</p>
+      <p><em>Lead 解读：</em> Jobs 把"30 年同一条 arc"当作可信度的最强证据；Wu-Jundong 把"63 岁的 sunset 段"当作时间窗口收紧的最强警告。两者都对——Jobs 说要用，Wu-Jundong 说要快。两者叠加：<strong>未来 6-12 个月是 CBC AI 影响力兑现的最后窗口</strong>，再不把"工资模式 + 关系 + 算力闭环"喊出来，IP 兑现到 AI坊 这一代就断档。</p>
+    </details>
+  </section>
+
+  <section>
+    <h2>Brand essence — mindmap</h2>
+    <div class="mermaid">
+mindmap
+  root((智坊<br/>atelier))
+    [Origin authentic]
+      田溯宁 30 年 IP
+      亚信 → 网通 → 云基地
+      产业互联网 → 智能体互联网
+      侯宏 北大国发院 op-ed
+    [Real product · 隐藏]
+      宽带资本·AI坊 真在跑
+      给创业者发竞争力工资
+      算力闭环 西云+丹摩
+      智优沃园区
+      D Talk 播客 2024-11+
+      合伙人 Jason
+    [Phantom 三段式]
+      智坊 atelier 0 命中
+      harness farm 0 命中
+      被精工智坊抢名 13 年
+      LLM brand exercise
+    [Channels]
+      北大国发院 承泽
+      新浪财经智库
+      亚布力 / GSMA / 乌镇
+      Earned 65 percent
+      Owned 弱
+    [Voice gap]
+      创投 KOL 0 引用
+      拾象 海外独角兽 静默
+      不在 top of mind
+      只有 op-ed 没底盘
+    </div>
+  </section>
+
+  <section>
+    <h2>Lead's read — 综合判断</h2>
+    <p>5 评委的打分和 critical gap 强化了综合判断，并在三个地方提示 Lead 的盲区——<strong>"协议布道 vs 协议落地"差 90%</strong>（Likejia + Zhang-Yiming），<strong>"surface 不存在"是比"footprint=0"更深的诊断</strong>（Jobs），<strong>"关系长尾接近 sunset"把"田 63 岁没有 2.0"接到 6-12 个月行动节奏</strong>（Wu-Jundong）。</p>
+    <p>5 评委的 critical gap 共同指向同一句话——<strong>CBC 的 AI 影响力问题不在"该怎么造一个新名字"，在"早就拿了好牌却没出"</strong>：算力—孵化—园区闭环（牌）没说出来；给早期发工资（牌）没说出来；田溯宁 30 年关系（牌）没产品化；智能体互联网叙事（牌）给的是人不是 Agent。继续造一个新名字（智坊 atelier）只会让"没出的牌"更多，不会更少。</p>
+  </section>
+
+  <section>
+    <h2>Action recommendations (next 90 days)</h2>
+    <ol class="actions">
+      <li><strong>砍掉"智坊 atelier"和"harness farm"两个空名</strong>——CBC 不需要新品牌，需要重新选主语；保留"AI坊"或换一个不带通用前缀的本体词。<span class="leverage high">high leverage</span> · 4/5 评委一致 · 30 天内决策</li>
+      <li><strong>把 AI坊 给早期创业者发竞争力工资做成可量化、可引用的公开 spec</strong>——发多少 / 发多久 / 考核什么 / 退出条款是什么。<span class="leverage high">high leverage</span> · Fusheng + Zhang-Yiming + Jobs · 60 天内</li>
+      <li><strong>公开 1-3 个"田溯宁被投人 → AI坊 旗帜创业者"的 case study</strong>——把 30 年关系产品化，赶在 sunset 段前兑现。<span class="leverage high">high leverage</span> · Wu-Jundong 独占视角 · 90-180 天</li>
+      <li><strong>打开一个对外的"东西"</strong>——Agent 可调用的接口 / 开源仓库 / 评测榜单 / cohort alumni 公开列表，三选一。<span class="leverage high">high leverage</span> · Likejia + Zhang-Yiming · 180 天</li>
+      <li><strong>田溯宁 op-ed 节奏从一年一篇 → 双月一篇</strong>，每篇必须挂一个具体 portfolio 进展或 Agent 可用产出。<span class="leverage med">med leverage</span> · 持续</li>
+      <li><strong>找一个 45-55 岁、技术 + 政策双轨经历的 lieutenant</strong>——必须能 own 田溯宁 80% 叙事 + 加自己 20% 的当代化语言。<span class="leverage med">med leverage</span> · Wu-Jundong + Lead · 6-12 个月</li>
+      <li><strong>不要正面打 cohort 孵化器赛道</strong>——把 AI坊 重新定位为"老钱版 Stanford d.school × CBC 30 年企业家网络"。<span class="leverage med">med leverage</span> · 持续</li>
+      <li><strong>30 天内放出一页可被搜索引擎索引的 AI坊 介绍页</strong>——合伙人 Jason 真名、当前 cohort 项目 logo 墙、母品牌官网修复 SSL。<span class="leverage low">low leverage</span> · Jobs 独占</li>
+    </ol>
+  </section>
+
+  <details>
+    <summary>Citations — 24 sources</summary>
+    <ul>
+      <li><a href="https://www.xiaoyuzhoufm.com/episode/672b11116c53cd405a54bb75" target="_blank" rel="noopener">小宇宙 D Talk 节目页 — "宽带资本·AI坊和丹摩智算联合出品" (2024-11+)</a></li>
+      <li>搜狗微信 SERP `"宽带资本·AI坊"` → 智优沃公众号《极智技术沙龙-2024 AIGC 创新创业新趋势专场》(2024-04-14)</li>
+      <li><a href="https://finance.sina.com.cn/cj/2025-09-28/doc-infrzcmt9028783.shtml" target="_blank" rel="noopener">侯宏 + 田溯宁《智能体互联网——被"人工智能+"行动忽视的关键未来》新浪财经 2025-09-28</a></li>
+      <li><a href="https://finance.sina.com.cn/cj/2025-11-13/doc-infxhkcu5220933.shtml" target="_blank" rel="noopener">同上 11-13 智库精选重发</a></li>
+      <li><a href="https://www.asiainfo.com/zh_hk/content_4834.html" target="_blank" rel="noopener">田溯宁 GSMA Post-MWC 2025-04-10 演讲</a></li>
+      <li><a href="https://nsd.pku.edu.cn/szdw/qzjs/h/516313.htm" target="_blank" rel="noopener">侯宏 北大国发院主页</a></li>
+      <li><a href="http://www.cbc-capital.com/cn/" target="_blank" rel="noopener">CBC 宽带资本官网（多次 WebFetch SSL 证书错误）</a></li>
+      <li><a href="https://www.miraclepl.us/" target="_blank" rel="noopener">MiraclePlus 奇绩创坛官网</a></li>
+      <li><a href="https://www.zhenfund.com/" target="_blank" rel="noopener">真格基金 News & Z Events</a></li>
+      <li><a href="https://www.hongshan.com/article/ai-agents：从工具到伙伴-2025-hongshan-ai-day/" target="_blank" rel="noopener">HongShan 2025 AI Day 长文</a></li>
+      <li><a href="https://mitchellh.com/writing/my-ai-adoption-journey" target="_blank" rel="noopener">Mitchell Hashimoto《My AI Adoption Journey》2026-02-05 — "harness" 概念真出处</a></li>
+      <li><a href="https://36kr.com/p/3768661067252483" target="_blank" rel="noopener">36kr — Harness 风口</a></li>
+      <li><a href="https://www.qbitai.com/2026/04/401065.html" target="_blank" rel="noopener">量子位《李笛 / 明日新程》Harness 头部交易 2026-04 — CBC 不在 cap table</a></li>
+      <li><a href="https://blog.csdn.net/horses/article/details/149664654" target="_blank" rel="noopener">CSDN — Coze 开源拆解</a></li>
+      <li><a href="https://cobusgreyling.medium.com/the-rise-of-ai-harness-engineering-5f5220de393e" target="_blank" rel="noopener">Cobus Greyling — The Rise of AI Harness Engineering 2026-03</a></li>
+      <li><a href="https://finance.sina.com.cn/tech/roll/2026-02-09/doc-inhmfqca5260337.shtml" target="_blank" rel="noopener">新浪财经《2025 风险投资们的 AI 圈地运动》2026-02-09 — CBC 不在该榜单</a></li>
+      <li><a href="https://hub.baai.ac.cn/view/46374" target="_blank" rel="noopener">智源社区 BAAI — 2025 春季奇绩创坛路演纪要</a></li>
+      <li>海能达"精工智坊"（东吴 / 华西 / 招商通信硬科技 公众号文章）— "智坊"二字 SEO 占名硬证据</li>
+      <li><strong>反向证据：</strong> 36kr / 钛媒体 / 虎嗅 站内搜索 "AI坊 宽带资本 / 智坊 atelier / harness farm" — 全部 0 命中</li>
+      <li><strong>反向证据：</strong> 微博 / 小红书 / 知乎 "智坊 atelier" Bing 索引 — 0 命中</li>
+      <li><strong>反向证据：</strong> CBC 官网 site: 索引 "智坊 OR atelier OR ai坊 OR harness" — 0 命中</li>
+      <li><strong>反向证据：</strong> 拾象 / 海外独角兽 / Founder Park / 机器之心 历史档案中田溯宁 / CBC AI 动作 — 0 引用</li>
+      <li><strong>反向证据：</strong> "harness farm" + 宽带资本 / CBC / 田溯宁 — 中英文 0 命中</li>
+      <li><strong>反向证据：</strong> 田溯宁 2025-2026 公开演讲 / 文章自署提及 ai坊 / 智坊 / harness farm — 0 篇</li>
+    </ul>
+  </details>
+
+  <section style="margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--c-border); color: var(--c-muted); font-size: 13px;">
+    <p>Versions: <strong>v1 — 2026-05-09</strong> — initial review (FRESH 模式；7 维度 + Wuying + 5 评委)</p>
+    <p>原始材料：<code>_raw/synthesis.md</code> · <code>_raw/wuying_browse.md</code> · <code>_raw/dimension_1..7_*.md</code> · <code>reviews/{fusheng,jobs,likejia,wu-jundong,zhang-yiming}.md</code></p>
+    <p>Next pass：<code>/mba zhifang-atelier</code>（增量）· <code>/mba zhifang-atelier --refresh</code>（重做）</p>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: dark ? 'dark' : 'neutral',
+    securityLevel: 'loose',
+    flowchart: { curve: 'basis' }
+  });
+</script>
+<script>
+  const DATA = {
+    lenses: ["Origin authenticity", "Category coinage", "Leverage quality", "Identity coherence", "Real-world signal"],
+    judges: [
+      { slug: "fusheng",      cn: "傅盛",         scores: [8, 5, 6, 5, 4], total: 28, color: "#e74c3c",
+        reasoning: [
+          "30 年技术叙事 backbone 是结构性资产，但叙事得他自己嘴说出来",
+          "智能体互联网是真品类，但不在 AI坊 这三个字上",
+          "给工资比'坊'字珍贵 10 倍，应做头条",
+          "不能既是 atelier 又是 farm — 选一个",
+          "我大脑里没在 CBC 这一栏"
+        ] },
+      { slug: "jobs",         cn: "Steve Jobs",  scores: [9, 6, 6, 5, 5], total: 31, color: "#3498db",
+        reasoning: [
+          "The man is real — 30 years on the same arc, same as Edwin Land",
+          "Three names, three personalities, three metaphors at war",
+          "Vertical integration is real, but he's pedaling alone",
+          "If you can't draw it on a napkin, you haven't built it",
+          "Show me the work, or it didn't happen"
+        ] },
+      { slug: "likejia",      cn: "李可佳",       scores: [8, 5, 6, 5, 4], total: 28, color: "#2ecc71",
+        reasoning: [
+          "30 年一根 backbone，不是装的",
+          "现成词能装下就没看到本质；'AI坊'立不住",
+          "闭环是真杠杆，但被错配了出口",
+          "三个名字三种人格 = 不一致本身",
+          "没有让我第一夜拍板的钩子"
+        ] },
+      { slug: "wu-jundong",   cn: "吴俊东",       scores: [7, 5, 6, 4, 3], total: 25, color: "#f39c12",
+        reasoning: [
+          "30 年关系是真资产，但资产要用，光放着会贬值",
+          "造词是 60 年课程，不是 12 个月课程",
+          "杠杆=介质×规模；没有 demo day 这块核心肌肉",
+          "1 年内切 3 次身份，we wouldn't do it",
+          "no one is talking about it = 风暴外或没风暴"
+        ] },
+      { slug: "zhang-yiming", cn: "张一鸣",       scores: [7, 5, 6, 5, 3], total: 26, color: "#9b59b6",
+        reasoning: [
+          "出处不真就是杠杆没生根",
+          "造词的前置条件是有事实在做",
+          "做得对的事发不出来是另一种偷懒",
+          "两套人群没有桥",
+          "0 提及不等于不存在，但等于'还没到该被讨论的量级'"
+        ] }
+    ]
+  };
+
+  // Radar
+  new Chart(document.getElementById('radar'), {
+    type: 'radar',
+    data: {
+      labels: DATA.lenses,
+      datasets: DATA.judges.map(j => ({
+        label: j.cn, data: j.scores, borderColor: j.color, backgroundColor: j.color + '22',
+        borderWidth: 2, pointRadius: 3
+      }))
+    },
+    options: {
+      responsive: true,
+      scales: { r: { suggestedMin: 0, suggestedMax: 10, ticks: { stepSize: 2 } } },
+      plugins: { legend: { position: 'bottom' } }
+    }
+  });
+
+  // Totals per judge
+  new Chart(document.getElementById('totals'), {
+    type: 'bar',
+    data: {
+      labels: DATA.judges.map(j => j.cn),
+      datasets: [{ label: 'Total (A)', data: DATA.judges.map(j => j.total), backgroundColor: DATA.judges.map(j => j.color) }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins: { legend: { display: false }, title: { display: true, text: 'Total per judge (A 真 AI坊)' } },
+      scales: { x: { suggestedMax: 50 } }
+    }
+  });
+
+  // Mean per lens
+  const means = DATA.lenses.map((_, i) => DATA.judges.reduce((s, j) => s + j.scores[i], 0) / DATA.judges.length);
+  new Chart(document.getElementById('lensMean'), {
+    type: 'bar',
+    data: {
+      labels: DATA.lenses,
+      datasets: [{ label: 'Mean', data: means, backgroundColor: '#2c3e50' }]
+    },
+    options: {
+      plugins: { legend: { display: false }, title: { display: true, text: 'Mean per lens (A)' } },
+      scales: { y: { suggestedMin: 0, suggestedMax: 10 } }
+    }
+  });
+
+  // Heatmap
+  (function renderHeatmap() {
+    const root = document.getElementById('heatmap');
+    root.style.gridTemplateColumns = `1.6fr repeat(${DATA.judges.length}, 1fr) .9fr`;
+
+    const scoreColor = (s) => {
+      if (s == null || isNaN(s)) return 'var(--c-surface)';
+      const t = Math.max(0, Math.min(1, (s - 1) / 9));
+      const lerp = (a, b, k) => Math.round(a + (b - a) * k);
+      let r, g, b;
+      if (t < 0.5) {
+        const k = t * 2;
+        r = lerp(192, 243, k); g = lerp(57, 156, k); b = lerp(43, 18, k);
+      } else {
+        const k = (t - 0.5) * 2;
+        r = lerp(243, 39, k); g = lerp(156, 174, k); b = lerp(18, 96, k);
+      }
+      return `rgba(${r},${g},${b},.78)`;
+    };
+    const sigmaColor = (sd) => {
+      const t = Math.max(0, Math.min(1, sd / 2.5));
+      return `rgba(155, 89, 182, ${0.10 + t * 0.65})`;
+    };
+    const std = (arr) => {
+      const m = arr.reduce((a, b) => a + b, 0) / arr.length;
+      return Math.sqrt(arr.reduce((a, b) => a + (b - m) ** 2, 0) / arr.length);
+    };
+
+    const make = (cls, html, style) => {
+      const el = document.createElement('div');
+      el.className = 'hcell ' + cls;
+      el.innerHTML = html;
+      if (style) Object.assign(el.style, style);
+      return el;
+    };
+
+    root.appendChild(make('label', ''));
+    DATA.judges.forEach(j => root.appendChild(make('label', j.cn)));
+    root.appendChild(make('label sigma', 'σ'));
+
+    DATA.lenses.forEach((lens, i) => {
+      root.appendChild(make('label lens', lens));
+      const scoresRow = DATA.judges.map(j => j.scores[i]);
+      DATA.judges.forEach((j) => {
+        const s = j.scores[i];
+        const tip = `<div class="tip"><strong>${j.cn}:</strong> ${s} — ${j.reasoning[i]}</div>`;
+        root.appendChild(make('score', `${s}${tip}`, { background: scoreColor(s) }));
+      });
+      const sd = std(scoresRow);
+      root.appendChild(make('sigma', sd.toFixed(2), { background: sigmaColor(sd) }));
+    });
+  })();
+</script>
+</body>
+</html>
