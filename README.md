@@ -26,6 +26,8 @@
 
 ![Lenovo 审计报告 — 雷达图 / 异议热力图 / 影响力构造图](docs/screenshots/report-lenovo.png)
 
+**黑客松 5 分钟 Pitch 稿** · [Markdown](docs/hackathon/pitch-5min.md) · [HTML](docs/hackathon/pitch-5min.html)
+
 ---
 
 ## 一、设计思路:为什么要这样写
