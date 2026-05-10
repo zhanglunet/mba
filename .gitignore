@@ -22,3 +22,6 @@ site/reports/
 
 # Cloudflare Wrangler 本地缓存
 .wrangler/
+
+# 增长辅助脚本运行日志 —— 每次运行就变,不入库
+logs/

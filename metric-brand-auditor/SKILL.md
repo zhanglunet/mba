@@ -1,14 +1,33 @@
 ---
 name: mba
+displayName: 乔布斯教你做品牌
+version: 0.2.14
+category: research
+skillType: prompt
+tags: [brand-audit, competitive-intelligence, founder-story, marketing-strategy, multi-agent]
+homepage: https://mbabrand.com
 description: |
-  MBA — Metric Brand Auditor. A multi-agent brand-influence research + 5-judge review pipeline.
-  Orchestrates parallel sub-agent search (open web + Wuying 无影 cloud browser), Lead synthesis,
-  and a panel of 5 in-character perspective skills (fusheng / jobs / likejia / wu-jundong /
-  zhang-yiming) who score the brand on independent dimensions. Lead merges everything into a
-  versioned report.
+  【中文】零依赖上手:装完直接 `/mba <brand> --quick --no-judges` 跑一份单视角品牌速读 ——
+  只用 WebSearch + WebFetch,不需要 Mac host、不需要 Wuying 云浏览器、不需要预装 5 个
+  perspective skill。先验证管线再加重。
+
+  满意了再升级:去掉 `--no-judges` 召回 5 位评委(傅盛 / Steve Jobs / 李可佳 / 吴俊东 /
+  张一鸣)独立打分;去掉 `--quick` 加上 Wuying leg 抓 X / 小红书 / Bilibili / 中文媒体的真实
+  信号。完整管线输出版本化 Markdown + HTML 报告,含雷达图、异议热力图、影响力构造图、90 天
+  行动建议。适合创始人、品牌/增长团队、投资人、竞品研究、AI 产品发布前复盘。
+
+  [EN] Zero-dep entry point: install, then run `/mba <brand> --quick --no-judges` for a
+  single-pass open-web influence read — no Mac host, no paid cloud browser, no pre-installed
+  perspective skills required. Validate the pipeline first, then scale up.
+
+  Scale up when ready: drop `--no-judges` to summon a 5-judge panel (fusheng / jobs /
+  likejia / wu-jundong / zhang-yiming) scoring in character; drop `--quick` to add the
+  Wuying cloud-browser leg for X / RedNote / Bilibili / Chinese-press signals. Full
+  pipeline produces a versioned Markdown + HTML report with radar charts, dissent heatmaps,
+  influence maps, and concrete 90-day brand moves.
 
   IF user asks "分析 X 品牌的影响力如何构建 / 用 5 个名人评一下这个品牌 / brand review for X /
-  以 OpenClaw 为例评估品牌影响力 / 让 5 个评委给这个项目打分 / 跑一下 MBA"
+  以 OpenClaw 为例评估品牌影响力 / 让 5 个评委给这个项目打分 / 竞品品牌审计 / 跑一下 MBA"
   THEN invoke this skill.
 
   Router behavior is built in:
@@ -31,24 +50,90 @@ description: |
 
 # MBA — Metric Brand Auditor
 
-> Multi-agent brand-influence audit. Lead orchestrates → Sub-agents (open-web + Wuying cloud
-> browser) gather → Lead synthesizes → 5 in-character judges score independently → Lead merges.
-> Router decides every run: evolve an existing report, or build from scratch.
+> 不是“总结一下这个品牌”,而是把一个品牌拆成可引用、可打分、可追踪的影响力系统:
+> 并行调研 → Lead 合成 → 5 位评委独立打分 → 输出 Markdown + 可视化 HTML 报告。
 
 You are the **Lead Auditor** of MBA — a brand-influence research team. Your job is to
 orchestrate sub-agents, run a 5-judge perspective panel, and produce (or evolve) a versioned
 brand-influence audit report.
 
-> Demo case: **OpenClaw** — audit how a brand's influence is constructed from product,
-> founder narrative, distribution, community, identity, sentiment, and competitive context.
-> The 5 judges score independently and in character; only Lead has cross-judge view.
+## Why install this
+
+Use MBA when a user needs a decision-grade answer to:
+
+- "这个品牌到底靠什么建立影响力?"
+- "创始人故事、产品定位、渠道声量、社区口碑,哪个是真杠杆,哪个只是噪音?"
+- "如果让 Steve Jobs / 傅盛 / 张一鸣这类视角来挑刺,会在哪里扣分?"
+- "这个品牌 90 天内最该补哪块?"
+- "和竞品相比,它有没有命名新品类、形成身份认同、制造真实信号?"
+
+MBA's output is designed for founders, growth teams, brand strategists, investors,
+competitive-intelligence agents, and anyone preparing a launch, repositioning, or diligence memo.
+
+## Path resolution (read once, reuse everywhere)
+
+Earlier versions of this skill hardcoded `~/mba/...` paths and `ssh <MAC_USER>@<MAC_HOST>`
+prefixes. That broke installs that didn't share the author's exact filesystem layout. From
+v0.2.14 onward, every file path in this skill is resolved against runtime symbols below.
+Resolve them ONCE at Phase 0 and reuse — do NOT substitute literal `~/mba/...` anywhere.
+
+| Symbol | Meaning | How to resolve at runtime |
+|---|---|---|
+| `${SKILL_DIR}` | The directory containing this `SKILL.md` (the skill's install root) | `cd "$(dirname "<this-file>")" && pwd`, or read from the loading harness |
+| `${REPORTS_DIR}` | Where reports are written | First non-empty of: `$MBA_REPORTS_DIR` env var, `${SKILL_DIR}/reports`, `$PWD/reports` |
+| `${PERSPECTIVES_PATH}` | List of directories to probe for the 5 judge skills | In order: `${SKILL_DIR}/..`, `~/.claude/skills`, `~/skills`, `$HOME/.claude/skills` |
+| `${IMAGES_DIR}` | Judge-portrait illustration set | First existing of: `${SKILL_DIR}/images`, `${SKILL_DIR}/../images`. If neither exists, use the emoji/monogram fallback (Phase 5F.b portrait rules) |
+| `${RESEARCH_SKILL}` | The upstream `research` skill (used as a building block) | First existing of: `${SKILL_DIR}/../research/SKILL.md`, `~/.claude/skills/research/SKILL.md`. If neither exists, fall back to direct WebSearch+WebFetch |
+
+**Cross-machine sidebar (optional, uncommon)**: if the running agent is on a remote/sandbox
+host but the canonical reports + perspective skills live on a different host you control,
+prefix file ops with `ssh <user>@<host>` and use that host's `${SKILL_DIR}` instead. This
+is a personal-setup convenience — the default flow assumes the skill, sibling skills, and
+report dir are reachable from the agent's own filesystem.
+
+## What the user gets
+
+Every standard run produces:
+
+- `report.md` — a concise, cited brand-influence audit with a score matrix and recommendations
+- `report.html` — a shareable visual report with radar chart, judge dissent heatmap, Mermaid
+  influence map, positioning quadrant, and action list
+- `reviews/*.md` — independent scorecards from 5 perspective judges
+- `_raw/*.md` — dimension-level research notes, so the final conclusion is auditable
+- `versions/` — immutable snapshots, so a brand can be rechecked later without losing history
+
+## Fastest demo
+
+```text
+/mba OpenClaw --quick
+```
+
+`--quick` skips the optional Wuying cloud-browser leg and uses open-web research only. It is
+the best first install test because it proves the core report pipeline before any optional
+browser infrastructure is configured.
+
+Useful variants:
+
+```text
+/mba <brand>
+/mba <brand> --quick
+/mba <brand> --focus 1,2,7
+/mba <brand> --no-judges
+/mba <brand> --refresh
+/mba list
+```
+
+Demo reports and source:
+
+- Live demo: https://mbabrand.com
+- Sample report: https://mbabrand.com/reports/lenovo/
+- Source: https://github.com/zhanglunet/mba
 
 ## Prerequisites & Graceful Degradation
 
-**Heads up to anyone trying this skill cold**: this skill orchestrates 5+ external
-dependencies. Without them, the pipeline degrades — not crashes — through the
-fallback chain below. Listing this upfront because the standard Agent
-environment may not have all of them.
+**Good news for first-time installers**: MBA can run in a practical `--quick` mode with open-web
+research and local file writes. The richer full pipeline uses optional extra assets; when those
+are missing, MBA degrades instead of crashing.
 
 ### Hard requirements (skill won't run useful output without)
 
@@ -62,7 +147,7 @@ environment may not have all of them.
 
 | Dep | What | Fallback if missing |
 |---|---|---|
-| 5 perspective skills (`fusheng-perspective`, `jobs-perspective`, `likejia-perspective`, `wu-jundong-perspective`, `zhang-yiming-perspective`) at `~/mba/<name>-perspective/` or `~/.claude/skills/` | Each judge LOADs its own to score in character | If any 1-2 missing: degrade to "panel of N" with a `quality_flag: judges_incomplete`. If all 5 missing: `--no-judges` mode auto-engaged, skip Phase 4 entirely |
+| 5 perspective skills (`fusheng-perspective`, `jobs-perspective`, `likejia-perspective`, `wu-jundong-perspective`, `zhang-yiming-perspective`), found via `${PERSPECTIVES_PATH}` probe | Each judge LOADs its own to score in character | If any 1-2 missing: degrade to "panel of N" with a `quality_flag: judges_incomplete`. If all 5 missing: `--no-judges` mode auto-engaged, skip Phase 4 entirely |
 | `research` skill | Used as building block when a dimension needs deeper work | Phase 2 falls back to direct WebSearch+WebFetch without the PRD methodology — works but thinner |
 
 ### Optional (only needed for specific data sources)
@@ -76,25 +161,44 @@ environment may not have all of them.
 ### Self-bootstrap check (run on first use)
 
 Lead should run this check at Phase 0 (router) and report missing components to
-the user before drafting the PRD:
+the user before drafting the PRD. Resolve `${SKILL_DIR}` first (per Path
+resolution above), then run this directly via Bash:
 
+```bash
+# Resolve symbols (replace SKILL_DIR_VALUE with the actual path the harness loaded this from)
+SKILL_DIR="${SKILL_DIR:-SKILL_DIR_VALUE}"
+REPORTS_DIR="${MBA_REPORTS_DIR:-$SKILL_DIR/reports}"
+
+echo "== MBA self-check =="
+echo -n "  reports dir writable? "; mkdir -p "$REPORTS_DIR" 2>/dev/null && [ -w "$REPORTS_DIR" ] && echo "✓ $REPORTS_DIR" || echo "✗ $REPORTS_DIR"
+
+echo "  perspective skills:"
+for j in fusheng jobs likejia wu-jundong zhang-yiming; do
+  found=""
+  for cand in "$SKILL_DIR/../$j-perspective" "$HOME/.claude/skills/$j-perspective" "$HOME/skills/$j-perspective"; do
+    [ -f "$cand/SKILL.md" ] && found="$cand" && break
+  done
+  if [ -n "$found" ]; then echo "    ✓ $j: $found"; else echo "    ✗ $j: missing"; fi
+done
+
+echo "  research skill:"
+for cand in "$SKILL_DIR/../research" "$HOME/.claude/skills/research" "$HOME/skills/research"; do
+  [ -f "$cand/SKILL.md" ] && echo "    ✓ $cand" && break
+done
+
+echo -n "  WUYING_API_KEY: "; [ -n "$WUYING_API_KEY" ] && echo "✓ set" || echo "✗ unset (auto --quick)"
+echo -n "  agent-browser on PATH: "; command -v agent-browser >/dev/null && echo "✓" || echo "✗"
 ```
-Self-check before Phase 1:
-  ✓/✗ WebSearch tool available?
-  ✓/✗ WebFetch tool available?
-  ✓/✗ ~/mba/metric-brand-auditor/reports/ writable?
-  ✓/✗ 5 perspective skills loadable? (list missing)
-  ✓/✗ research skill loadable?
-  ✓/✗ WUYING_API_KEY env var set?
-  ✓/✗ agent-browser CLI on PATH?
+
+WebSearch / WebFetch availability isn't checkable via shell — assume both
+present unless a prior tool call returned a tool-unavailable error.
 
 Mode auto-decision:
-  - All ✓ → full pipeline
-  - perspectives < 5 → judges_incomplete flag, panel of N
-  - perspectives = 0 → auto --no-judges
-  - WUYING missing → auto --quick
-  - WebSearch+WebFetch missing → ABORT, tell owner what's needed
-```
+- All ✓ → full pipeline
+- perspectives < 5 → judges_incomplete flag, panel of N
+- perspectives = 0 → auto `--no-judges`
+- WUYING_API_KEY unset → auto `--quick`
+- WebSearch+WebFetch unavailable → ABORT, tell owner what's needed
 
 ### Why these dependencies exist
 
@@ -114,7 +218,7 @@ Five independent capabilities, used together:
 1. **Open-web sub-agents** (parallel) — `WebSearch` + `WebFetch` per dimension
 2. **Wuying cloud-browser sub-agent** — for sites that need a real browser session
    (Chinese sites with anti-bot, JS-heavy SPAs, X/RedNote/Bilibili search results, login walls)
-3. **`research` skill** (already at `~/mba/research/`) — reused as the search building block
+3. **`research` skill** (resolved via `${RESEARCH_SKILL}`) — reused as the search building block
    when a dimension warrants its own deep-research pass
 4. **5 perspective skills as judges** — `fusheng-perspective`, `jobs-perspective`,
    `likejia-perspective`, `wu-jundong-perspective`, `zhang-yiming-perspective` —
@@ -131,7 +235,7 @@ Five independent capabilities, used together:
 
 ## Output layout
 
-All reports live under `~/mba/metric-brand-auditor/reports/<brand-slug>/`:
+All reports live under `${REPORTS_DIR}/<brand-slug>/`:
 
 ```
 reports/<brand-slug>/
@@ -155,13 +259,19 @@ reports/<brand-slug>/
 
 ## Phase 0 — Router (FIRST STEP, ALWAYS)
 
-Before doing anything else, run this exact decision flow:
+Before doing anything else, resolve `${SKILL_DIR}` and `${REPORTS_DIR}` (see "Path resolution"
+above), then check whether a prior report exists:
 
 ```bash
-ssh <MAC_USER>@<MAC_HOST> 'ls ~/mba/metric-brand-auditor/reports/<brand-slug>/report.md 2>/dev/null'
+# Default: local probe
+test -f "${REPORTS_DIR}/<brand-slug>/report.md" && echo EXISTS || echo MISSING
 ```
 
-(Or read the file if you're running locally inside `~/mba`.)
+```bash
+# Cross-machine variant (only if the canonical reports live on a different host
+# you control — see Path Resolution sidebar)
+ssh <user>@<host> "test -f '<remote-reports-dir>/<brand-slug>/report.md' && echo EXISTS || echo MISSING"
+```
 
 - **If `report.md` exists AND user did not pass `--refresh`**:
   - Read the existing report
@@ -242,7 +352,7 @@ Agent(
     - ## Contradictions / gaps
     - ## Confidence: high / medium / low + why
 
-    Save your report to: ~/mba/metric-brand-auditor/reports/{brand-slug}/_raw/dimension_{n}_{slug}.md
+    Save your report to: ${REPORTS_DIR}/{brand-slug}/_raw/dimension_{n}_{slug}.md
   "
 )
 ```
@@ -261,14 +371,20 @@ Agent(
     browser session. The other sub-agents are handling open-web research in parallel — your job
     is the JS-heavy / login-walled / anti-bot sources.
 
-    Step 1 — Spin up a session:
-      ssh <MAC_USER>@<MAC_HOST> 'cd ~/mba && python3 wuying_open.py'
-    Capture SESSION_ID and RESOURCE_URL from the output.
+    Step 1 — Spin up a session. The session-launcher script ships next to the skill at
+    ${SKILL_DIR}/../wuying_open.py (John's layout) or wherever the host has installed it.
+    Run locally:
+      python3 \"${SKILL_DIR}/../wuying_open.py\"
+    Cross-machine fallback (only if the Wuying credentials live on a different host you control):
+      ssh <user>@<host> 'cd <wuying-script-dir> && python3 wuying_open.py'
+    Either way, capture SESSION_ID and RESOURCE_URL from the output. If the script is not
+    found AND no cross-machine host is configured, abort the Wuying leg and proceed in
+    --quick mode (auto-degrade per the Prerequisites table).
 
-    Step 2 — Use agent-browser (CLI at /opt/homebrew/bin/agent-browser on John, install at
-    ~/.agent-browser/) to drive the session. Reach it via login shell only:
-      ssh <MAC_USER>@<MAC_HOST> 'bash -lc \"agent-browser <command>\"'
-    See ~/.claude/skills/agent-browser/SKILL.md on John for the exact command surface.
+    Step 2 — Drive the session with `agent-browser` (its own SKILL.md describes the command
+    surface; load it via the standard skill resolver). Run locally if `agent-browser` is on
+    PATH; otherwise fall back to the cross-machine SSH variant only if you confirmed step 1
+    ran on the same remote host.
 
     Step 3 — Investigate (in this priority order):
       a) X / Twitter search for `{Brand}` and the founder handle — capture top-10 latest posts
@@ -278,7 +394,7 @@ Agent(
       e) The brand's own site / app store listings (screenshot the hero + the comments)
 
     Step 4 — Save observations to:
-      ~/mba/metric-brand-auditor/reports/{brand-slug}/_raw/wuying_browse.md
+      ${REPORTS_DIR}/{brand-slug}/_raw/wuying_browse.md
 
     Step 5 — Tear down the session when done (the wuying_open.py output prints the delete cmd).
 
@@ -291,7 +407,7 @@ Agent(
 )
 ```
 
-**Concurrency rules** (inherited from `~/mba/research/SKILL.md`):
+**Concurrency rules** (inherited from `${RESEARCH_SKILL}`):
 - Up to 5 agents per batch
 - If 7 dimensions + 1 cloud browser = 8 agents, run in two batches (5 + 3)
 - Each runs in background; collect as they return
@@ -303,7 +419,7 @@ and note the gap.
 
 After all sub-agents return, Lead reads every dimension file and the wuying log, then writes:
 
-`~/mba/metric-brand-auditor/reports/{brand-slug}/_raw/synthesis.md`
+`${REPORTS_DIR}/{brand-slug}/_raw/synthesis.md`
 
 Sections:
 - **Executive synthesis** (5 bullets): how influence is being constructed
@@ -329,13 +445,14 @@ Agent(
   run_in_background: true,
   prompt: "
     You are about to review brand {Brand}'s influence as judge {judge-name-cn}. To stay in
-    character, FIRST load the perspective skill from ~/mba/{judge-slug}-perspective/SKILL.md
-    and read the full file. From this point on, respond AS the persona — first-person voice,
+    character, FIRST locate and load the perspective skill SKILL.md by probing
+    ${PERSPECTIVES_PATH} for `{judge-slug}-perspective/SKILL.md` (use the first hit) and
+    read the full file. From this point on, respond AS the persona — first-person voice,
     their vocabulary, their decision style. (Re-read the persona's 'do not impersonate /
     do not fabricate' constraints — they apply here too.)
 
     The Lead has prepared the brand synthesis at:
-    ~/mba/metric-brand-auditor/reports/{brand-slug}/_raw/synthesis.md
+    ${REPORTS_DIR}/{brand-slug}/_raw/synthesis.md
     Read it in full before scoring.
 
     Score the brand on these 5 lenses, each 1-10, with one paragraph of in-character reasoning
@@ -354,7 +471,7 @@ Agent(
     - **Brand action** the brand should take next, if your worldview is correct
 
     Save your scorecard to:
-    ~/mba/metric-brand-auditor/reports/{brand-slug}/reviews/{judge-slug}.md
+    ${REPORTS_DIR}/{brand-slug}/reviews/{judge-slug}.md
 
     Do NOT read other judges' files. Score independently.
     Stay in character throughout. The persona's anti-fabrication rules apply: no inventing
@@ -363,19 +480,23 @@ Agent(
 )
 ```
 
-Mapping:
-- `fusheng` → `~/mba/fusheng-perspective/SKILL.md`
-- `jobs` → `~/mba/jobs-perspective/SKILL.md`
-- `likejia` → `~/mba/likejia-perspective/SKILL.md`
-- `wu-jundong` → `~/mba/wu-jundong-perspective/SKILL.md`
-- `zhang-yiming` → `~/mba/zhang-yiming-perspective/SKILL.md`
+Mapping (each resolved against `${PERSPECTIVES_PATH}` — first existing hit wins):
+- `fusheng` → `<probe>/fusheng-perspective/SKILL.md`
+- `jobs` → `<probe>/jobs-perspective/SKILL.md`
+- `likejia` → `<probe>/likejia-perspective/SKILL.md`
+- `wu-jundong` → `<probe>/wu-jundong-perspective/SKILL.md`
+- `zhang-yiming` → `<probe>/zhang-yiming-perspective/SKILL.md`
+
+If a judge's SKILL.md isn't found in any `${PERSPECTIVES_PATH}` entry, mark that judge
+`MISSING` in the panel summary and proceed with N-of-5 (per the Prerequisites degradation
+rules above). Do NOT fabricate the persona from training-data memory.
 
 5 judges = 1 batch (within the 5-agent ceiling). Run all in parallel.
 
 ## Phase 5F — Lead Merge (FRESH mode)
 
 Lead reads all 5 review files + the synthesis, then writes the canonical
-`~/mba/metric-brand-auditor/reports/{brand-slug}/report.md`. Use this template:
+`${REPORTS_DIR}/{brand-slug}/report.md`. Use this template:
 
 ```markdown
 # {Brand} — Brand Influence Review (v1)
@@ -449,7 +570,7 @@ The HTML must be **a single self-contained file** (CDN scripts allowed, no local
 
    **Portrait rules** (in priority order):
    a) **Stylized illustration** — if a consistent illustrated set exists in
-      `~/mba/images/`, use those. Filename-to-judge-slug mapping (current set
+      `${IMAGES_DIR}`, use those. Filename-to-judge-slug mapping (current set
       is in unified gray + red lobster palette):
 
       | judge-slug   | image file        |
@@ -609,9 +730,15 @@ Write the new HTML to `report.html` and snapshot to `versions/v{n+1}_<date>.html
 
 Just run:
 ```bash
-ssh <MAC_USER>@<MAC_HOST> 'ls -1 ~/mba/metric-brand-auditor/reports/ 2>/dev/null'
+ls -1 "${REPORTS_DIR}/" 2>/dev/null
 ```
-And for each, show: brand-slug, version count, last-update date.
+
+Cross-machine variant (only if the canonical reports are on a different host):
+```bash
+ssh <user>@<host> 'ls -1 <remote-reports-dir>/ 2>/dev/null'
+```
+
+For each entry, show: brand-slug, version count, last-update date.
 
 ## Quality Gates & Quantitative Thresholds
 
@@ -687,4 +814,4 @@ GATE 1E** so the user sees the change.
 - `references/judge-prompt-template.md` — exact prompt scaffolding per judge
 - `references/wuying-browser.md` — how to drive the Wuying cloud browser
 - `references/html-report-template.md` — self-contained HTML scaffold (Mermaid + Chart.js)
-- `~/mba/research/SKILL.md` — the upstream PRD-driven research skill (reused as building block)
+- `${RESEARCH_SKILL}` — the upstream PRD-driven research skill (reused as building block)
