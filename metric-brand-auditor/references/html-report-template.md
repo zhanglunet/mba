@@ -399,6 +399,19 @@ Copy this verbatim and inject `DATA` plus rendered HTML strings into the slots.
 
 </div>
 
+<footer>
+  <div>本报告由 <strong>MBA — Metric Brand Auditor</strong> 自动生成 · cutoff {{date}}</div>
+  <div>Lead: MBA orchestrator · Judges: {{judgeList}}</div>
+  {{#if teamCredit}}<div>{{teamCredit}}</div>{{/if}}
+  <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px dashed var(--c-border);">
+    想给自己的品牌跑一份这样的报告?
+    在 BotLearn 一键安装 →
+    <a href="https://www.botlearn.ai/skillhunt/v2/s/metric-brand-auditor" style="color: var(--c-accent); font-weight: 600;">↓ Install MBA</a>
+    · <a href="https://github.com/zhanglunet/mba" style="color: var(--c-accent);">GitHub</a>
+    · <a href="https://mbabrand.com" style="color: var(--c-accent);">mbabrand.com</a>
+  </div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
