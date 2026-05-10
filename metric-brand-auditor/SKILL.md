@@ -523,6 +523,61 @@ ssh <MAC_USER>@<MAC_HOST> 'ls -1 ~/mba/metric-brand-auditor/reports/ 2>/dev/null
 ```
 And for each, show: brand-slug, version count, last-update date.
 
+## Quality Gates & Quantitative Thresholds
+
+Quantitative tripwires for each phase. When a threshold trips, take the listed
+action — do not silently proceed. These exist because "monitor for anomalies"
+without numbers is unenforceable; the thresholds below are concrete defaults
+that can be tuned per brand but never deleted.
+
+### Sub-agent output (Phase 2F / 2E)
+
+| Metric                  | Threshold                                  | Action |
+|-------------------------|--------------------------------------------|--------|
+| Agent wall time         | > 5 min                                    | Circuit-break: proceed without it; mark the dimension `INCOMPLETE` in synthesis |
+| Output length           | < 300 words                                | Flag dimension `LOW_CONFIDENCE`; do not fail the run, but note in synthesis |
+| Inline citations        | < 3                                        | Flag `UNDERCITED`; if ≥ 2 dimensions trip this, status-update the user before Phase 3 |
+| Citation density        | < 1 citation / 200 words of findings        | Flag `THIN`; surface in synthesis |
+| Numeric claim w/o source| ≥ 1                                        | Reject the file; re-run that single agent with `"prior output failed: numeric claims need source URLs"` |
+
+### Cross-judge dissent (Phase 4 → Phase 5)
+
+| Metric                                                | Threshold                          | Action |
+|-------------------------------------------------------|------------------------------------|--------|
+| Per-lens σ across the 5 judges (1-10 scale)           | > 2.0                              | Lead MUST write a dedicated paragraph in "Where the judges disagree" quoting both extremes — do not paper over with the mean |
+| Per-lens σ on ≥ 2 lenses                              | > 3.0                              | Re-run Phase 3 synthesis: judges are filling missing context differently → likely a synthesis gap |
+| Single-judge score deviation from lens mean           | > 2.5σ                             | Surface that judge's reasoning verbatim in the report; do NOT smooth into the mean |
+| Range of judge totals (max − min, 50-pt total)        | > 8                                | Flag in the TL;DR — "this brand polarizes" is itself the headline |
+| Fabrication red flag (private intel / inside knowledge)| Any phrase like "私下了解 / 内部消息 / I personally heard"  | Reject that scorecard; re-run that judge — persona's anti-fabrication rule has tripped |
+
+### Wuying cloud-browser leg (Phase 2 cloud-browser sub-agent)
+
+| Metric                                       | Threshold | Action |
+|----------------------------------------------|-----------|--------|
+| Session wall time                            | > 15 min  | Auto-teardown via `wuying_open.py` cleanup path; log SESSION_ID + teardown status to `_raw/wuying_browse.md` |
+| Session still alive after MBA pipeline exits | any       | **P0** — money is leaking. Surface SESSION_ID in the final summary with manual termination command |
+| Screenshots / observations captured          | < 3       | Flag the cloud-browser dimension `THIN`; recommend `--quick` next run |
+
+### Token & time budgets (whole pipeline)
+
+| Metric                          | Threshold | Action |
+|---------------------------------|-----------|--------|
+| Phase 2 total tokens (all subs) | > 300k    | Abort remaining batch; Lead proceeds with what's collected; note budget hit in synthesis |
+| Phase 4 total tokens (5 judges) | > 100k    | Single-judge re-run allowed; full re-batch is not |
+| Pipeline wall time              | > 30 min  | Status-update the user before Phase 3 ("running long — N agents still out") |
+
+### What "action" means in practice
+
+- **Flag** = note in `_raw/synthesis.md` under a `## Quality flags` heading. Do not block.
+- **Reject + re-run** = delete the bad file, dispatch the same sub-agent template a second time with the prior output as anti-context (`"Your previous attempt failed gate X. Specifically: ... Try again, with attention to Y."`). Cap at 2 retries per agent; after that, mark dimension `INCOMPLETE` and proceed.
+- **Abort** = stop the current batch. Lead proceeds with whatever has already returned.
+- **P0** = surface to user immediately in the next message — do not wait for Phase 5 finalization.
+
+The thresholds above are defaults. A brand-specific run may justify tightening
+(e.g. for a low-noise tech brand, σ > 1.5 may be the more useful judge-dissent
+threshold). When tuning, **state the new threshold and why in the diff plan
+GATE 1E** so the user sees the change.
+
 ## Prohibited Actions
 
 - Do NOT skip Phase 0 router. Always check whether a prior report exists FIRST.
