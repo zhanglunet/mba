@@ -10,3 +10,9 @@ skills/botlearn/
 # 跑过的审计报告默认不入库 —— 报告归用户所有,可能含敏感品牌信息
 # 如需分享某份特定报告,显式: git add -f metric-brand-auditor/reports/<brand>/
 metric-brand-auditor/reports/
+
+# Cloudflare Pages 本地 build 产物(CF Pages 自己会 build,不入库)
+site/reports/
+
+# Cloudflare Wrangler 本地缓存
+.wrangler/

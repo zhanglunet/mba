@@ -124,6 +124,31 @@
   footer a:hover { color: var(--accent); border-color: var(--accent); }
 
   .en { color: var(--muted); font-size: 14px; font-style: italic; margin-top: 6px; }
+
+  .hack-banner {
+    background: #fff7ed;
+    border: 2px solid #c1440e;
+    color: var(--ink);
+    padding: 14px 18px;
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0 0 28px;
+    border-radius: 4px;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+  }
+  .hack-banner strong { color: var(--accent); }
+  .hack-banner .tag { display: inline-block; background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; margin-right: 8px; letter-spacing: 0.06em; }
+
+  .reports-list { margin: 36px 0 44px; padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+  .reports-list h3 { margin: 0 0 14px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .report-card { display: block; padding: 16px 18px; border: 1px solid var(--rule); border-radius: 6px; text-decoration: none; color: var(--ink); margin-bottom: 10px; transition: all 0.15s; background: #fff; }
+  .report-card:hover { border-color: var(--accent); transform: translateX(4px); }
+  .report-card .top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .report-card .brand { font-weight: 700; font-size: 17px; }
+  .report-card .v { color: var(--muted); font-size: 13px; }
+  .report-card .takeaway { color: var(--ink); font-size: 14px; margin-top: 6px; line-height: 1.5; }
+  .report-card .meta { color: var(--muted); font-size: 12px; margin-top: 8px; }
+  .report-card .meta a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); margin-left: 8px; }
 </style>
 </head>
 <body>
@@ -136,10 +161,15 @@
       </nav>
     </header>
 
-    <span class="status">Coming soon · 站点搭建中</span>
+    <span class="status">Live · 黑客松演示</span>
 
     <h1>把品牌影响力<br/>拆成可打分的事。</h1>
     <p class="sub">Metric Brand Auditor — multi-agent research, scored, versioned, replayable.</p>
+
+    <div class="hack-banner">
+      <span class="tag">HACKATHON DEMO</span>
+      <strong>本站为黑客松比赛演示版,不是真实场景。</strong> 5 位评委的头像 + 评分 + verdict + Round 2 辩论均为 AI 基于公开一手资料的 in-character 模拟,**非照片中本人真实意见**。本站发布的报告**不构成投资建议**,也**不构成对任何品牌 / 上市公司的实际评价**。如有不当请到 GitHub 反馈。
+    </div>
 
     <p class="pitch" id="what">
       MBA 是一条由 Lead 编排、子智能体并行执行、5 位人物评委独立打分的品牌影响力审计流水线。
@@ -169,10 +199,22 @@
       </div>
     </section>
 
-    <p class="pitch">
-      首批审计报告整理中,即将上线。
-      <span class="en">First batch of audited brands publishing soon.</span>
-    </p>
+    <section class="reports-list">
+      <h3>已发布审计报告 / Published Audits</h3>
+      <a class="report-card" href="/reports/lenovo/">
+        <div class="top">
+          <span class="brand">联想集团 Lenovo Group · 0992.HK</span>
+          <span class="v">v1 · 2026-05-10</span>
+        </div>
+        <div class="takeaway">
+          全球 PC 龙头 + 子品牌资产撑起的渠道机器,**财务面比亚信好得多但 AI 时代位置危机更严峻**:亚信"做不出来",联想"做出来了但红利归别人"。3 评委 R2 收敛到"红利不归联想"同一深层共识。Total mean 22/50。
+        </div>
+        <div class="meta">
+          5 评委 · Round 2 辩论 · CSS 象限 + 雷达 + 异议热力图
+          <a href="/reports/lenovo/report.pdf">↓ PDF</a>
+        </div>
+      </a>
+    </section>
 
     <footer>
       <div>© 2026 MBA · Jason · 清风 · John</div>

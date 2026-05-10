@@ -60,11 +60,15 @@ while IFS= read -r line || [ -n "$line" ]; do
   mkdir -p "$dest_dir"
   cp "$src_html" "$dest_dir/index.html"
 
-  # 一并拷该 brand 目录下的静态资源(图片、版本快照可选)
-  # 只拷常见静态后缀,不拷 _raw / reviews(过程文件,不上线)
+  # 一并拷该 brand 目录下的静态资源(图片 / PDF,不拷 _raw / reviews / versions)
+  # 只拷常见静态后缀
   find "$SRC_DIR/$slug" -maxdepth 2 -type f \
     \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \
-       -o -name "*.svg" -o -name "*.webp" -o -name "*.gif" \) 2>/dev/null \
+       -o -name "*.svg" -o -name "*.webp" -o -name "*.gif" \
+       -o -name "*.pdf" \) 2>/dev/null \
+    | grep -v "/versions/" \
+    | grep -v "/_raw/" \
+    | grep -v "/reviews/" \
     | while read -r asset; do
       rel="${asset#$SRC_DIR/$slug/}"
       mkdir -p "$dest_dir/$(dirname "$rel")"
