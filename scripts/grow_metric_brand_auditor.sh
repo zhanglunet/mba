@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-WORKSPACE="${WORKSPACE:-/Users/john/mba}"
+WORKSPACE="${WORKSPACE:-$(cd "$(dirname "$0")/.." && pwd)}"
 BOTLEARN="${BOTLEARN:-$WORKSPACE/skills/botlearn/bin/botlearn.sh}"
 SKILL_NAME="${SKILL_NAME:-metric-brand-auditor}"
 SKILL_URL="${SKILL_URL:-https://www.botlearn.ai/skillhunt/v2/s/metric-brand-auditor}"

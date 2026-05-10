@@ -25,3 +25,9 @@ site/reports/
 
 # 增长辅助脚本运行日志 —— 每次运行就变,不入库
 logs/
+
+# 个人讲稿 / scratch 笔记(不入库)
+demo-script-*.md
+
+# 个人 Pitch 稿件(.docx)—— 黑客松 / 演讲稿,不入库
+docs/hackathon/*.docx
