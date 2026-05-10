@@ -16,6 +16,18 @@
 
 ---
 
+## 看一眼 / Live preview
+
+**网站 [mbabrand.com](https://mbabrand.com)**
+
+![mbabrand.com 首页](docs/screenshots/site-home.png)
+
+**样例报告 [Lenovo 0992.HK](https://mbabrand.com/reports/lenovo/)** · [PDF](https://mbabrand.com/reports/lenovo/report.pdf) · [BotLearn 一键安装](https://www.botlearn.ai/skillhunt/v2/s/metric-brand-auditor)
+
+![Lenovo 审计报告 — 雷达图 / 异议热力图 / 影响力构造图](docs/screenshots/report-lenovo.png)
+
+---
+
 ## 一、设计思路:为什么要这样写
 
 传统"品牌分析报告"有三个老问题:
