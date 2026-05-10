@@ -43,6 +43,70 @@ brand-influence audit report.
 > founder narrative, distribution, community, identity, sentiment, and competitive context.
 > The 5 judges score independently and in character; only Lead has cross-judge view.
 
+## Prerequisites & Graceful Degradation
+
+**Heads up to anyone trying this skill cold**: this skill orchestrates 5+ external
+dependencies. Without them, the pipeline degrades — not crashes — through the
+fallback chain below. Listing this upfront because the standard Agent
+environment may not have all of them.
+
+### Hard requirements (skill won't run useful output without)
+
+| Dep | What | If missing |
+|---|---|---|
+| `WebSearch` | open-web search tool (Anthropic Claude Code native) | Phase 2 sub-agents have nothing to fetch — pipeline aborts |
+| `WebFetch` | URL content fetcher (Anthropic Claude Code native) | Same — sub-agents flag `INCOMPLETE` and Lead synthesizes from titles only (degraded but not dead) |
+| Local file write to `reports/<brand-slug>/` | for synthesis + report.md output | Cannot persist; Phase 5 emits report inline, owner saves manually |
+
+### Recommended (skill is much weaker without)
+
+| Dep | What | Fallback if missing |
+|---|---|---|
+| 5 perspective skills (`fusheng-perspective`, `jobs-perspective`, `likejia-perspective`, `wu-jundong-perspective`, `zhang-yiming-perspective`) at `~/mba/<name>-perspective/` or `~/.claude/skills/` | Each judge LOADs its own to score in character | If any 1-2 missing: degrade to "panel of N" with a `quality_flag: judges_incomplete`. If all 5 missing: `--no-judges` mode auto-engaged, skip Phase 4 entirely |
+| `research` skill | Used as building block when a dimension needs deeper work | Phase 2 falls back to direct WebSearch+WebFetch without the PRD methodology — works but thinner |
+
+### Optional (only needed for specific data sources)
+
+| Dep | What | Fallback if missing |
+|---|---|---|
+| Wuying 无影 cloud browser (with `WUYING_API_KEY` in `.env`) | JS-heavy / login-walled / Chinese site fetching (X / RedNote / Bilibili / 36kr) | `--quick` mode auto-engaged, skip cloud-browser leg entirely. Open-web sub-agents still cover ~70% of the surface |
+| `agent-browser` CLI on local machine | Drives Wuying session | If absent but Wuying API present: use ResourceUrl in browser manually; pipeline notes "manual leg required" |
+| Mac main host SSH access (when running cross-machine) | Some commands shell out via SSH | If absent: run all locally, drop SSH-prefixed commands |
+
+### Self-bootstrap check (run on first use)
+
+Lead should run this check at Phase 0 (router) and report missing components to
+the user before drafting the PRD:
+
+```
+Self-check before Phase 1:
+  ✓/✗ WebSearch tool available?
+  ✓/✗ WebFetch tool available?
+  ✓/✗ ~/mba/metric-brand-auditor/reports/ writable?
+  ✓/✗ 5 perspective skills loadable? (list missing)
+  ✓/✗ research skill loadable?
+  ✓/✗ WUYING_API_KEY env var set?
+  ✓/✗ agent-browser CLI on PATH?
+
+Mode auto-decision:
+  - All ✓ → full pipeline
+  - perspectives < 5 → judges_incomplete flag, panel of N
+  - perspectives = 0 → auto --no-judges
+  - WUYING missing → auto --quick
+  - WebSearch+WebFetch missing → ABORT, tell owner what's needed
+```
+
+### Why these dependencies exist
+
+This skill aggregates the work of a research team, not a single LLM call. The
+external deps are genuine sub-agents, not bloat. If you want a single-prompt
+brand summarizer, this isn't the right skill — try a single `/research <brand>`
+or even a one-off WebSearch.
+
+The ambition is real, the infra cost is real, and graceful degradation through
+`--quick` / `--no-judges` / `--focus` flags lets the same SKILL.md still
+produce useful output in subset environments.
+
 ## What you orchestrate
 
 Five independent capabilities, used together:

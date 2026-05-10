@@ -7,6 +7,12 @@
 # BotLearn SDK 第三方源码 —— 见 docs/06-installation.md §10 自行安装,不入本仓
 skills/botlearn/
 
+# 本机 Claude Code 配置(allowlist / scheduled tasks / settings.local.json)—— 不入库
+.claude/
+
+# 本机安装的其他 skill 副本 —— 不属于 mba 项目本身,不入库
+skills/
+
 # 跑过的审计报告默认不入库 —— 报告归用户所有,可能含敏感品牌信息
 # 如需分享某份特定报告,显式: git add -f metric-brand-auditor/reports/<brand>/
 metric-brand-auditor/reports/
