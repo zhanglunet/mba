@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MBA — Metric Brand Auditor</title>
+<meta name="description" content="多智能体并行调研 + 五人评委打分,把品牌影响力拆成可量化、可演化、可复盘的版本化报告。" />
+<meta property="og:title" content="MBA — Metric Brand Auditor" />
+<meta property="og:description" content="Multi-agent parallel research + 5-judge panel. Brand influence, scored, versioned, replayable." />
+<meta property="og:url" content="https://mbabrand.com" />
+<style>
+  :root {
+    --ink: #111;
+    --paper: #faf8f3;
+    --muted: #6b6760;
+    --rule: #1a1a1a;
+    --accent: #c1440e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 28px 80px;
+  }
+  header {
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 18px;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .mark {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    font-size: 22px;
+  }
+  .mark .dot { color: var(--accent); }
+  nav a {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13px;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    margin-left: 18px;
+  }
+  nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+  h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .sub {
+    font-size: 17px;
+    color: var(--muted);
+    margin: 0 0 36px;
+    font-style: italic;
+  }
+  .pitch {
+    font-size: 18px;
+    margin: 0 0 36px;
+  }
+  .pitch + .pitch { margin-top: -16px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 36px;
+    margin: 36px 0 44px;
+    padding: 24px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+  }
+  .grid h3 {
+    margin: 0 0 6px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .grid p { margin: 0; font-size: 15px; }
+
+  .status {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .en { color: var(--muted); font-size: 14px; font-style: italic; margin-top: 6px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark">MBA<span class="dot">.</span></div>
+      <nav>
+        <a href="https://github.com/zhanglunet/mba">GitHub</a>
+        <a href="#what">关于</a>
+      </nav>
+    </header>
+
+    <span class="status">Coming soon · 站点搭建中</span>
+
+    <h1>把品牌影响力<br/>拆成可打分的事。</h1>
+    <p class="sub">Metric Brand Auditor — multi-agent research, scored, versioned, replayable.</p>
+
+    <p class="pitch" id="what">
+      MBA 是一条由 Lead 编排、子智能体并行执行、5 位人物评委独立打分的品牌影响力审计流水线。
+      固定 5 镜头 × 7 维度,跨品牌可比、跨时间可比、可复盘。
+    </p>
+    <p class="en">
+      A pipeline orchestrated by a Lead agent, executed in parallel by sub-agents,
+      and scored independently by a 5-judge panel — fixed dimensions, comparable across brands and time.
+    </p>
+
+    <section class="grid">
+      <div>
+        <h3>Pipeline</h3>
+        <p>5 阶段:Router → 并行调研 → 合成 → 5 评委打分 → 报告版本化</p>
+      </div>
+      <div>
+        <h3>Judges</h3>
+        <p>傅盛 · 李可佳 · 吴俊东 · 张一鸣 · Steve Jobs</p>
+      </div>
+      <div>
+        <h3>Output</h3>
+        <p>Markdown + 自包含 HTML(雷达图 / 异议热力图 / 影响力构造图)</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p><a href="https://github.com/zhanglunet/mba" style="color:inherit">github.com/zhanglunet/mba</a></p>
+      </div>
+    </section>
+
+    <p class="pitch">
+      首批审计报告整理中,即将上线。
+      <span class="en">First batch of audited brands publishing soon.</span>
+    </p>
+
+    <footer>
+      <div>© 2026 MBA · Jason · 清风 · John</div>
+      <div><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></div>
+    </footer>
+  </div>
+</body>
+</html>
