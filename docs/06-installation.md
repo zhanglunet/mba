@@ -224,3 +224,105 @@ rm -rf ~/mba
 3. 注意 git push 之前 review report 内容(可能含敏感品牌内部信息)
 
 > 团队协作的最佳实践还在演化,RFC 阶段 —— 实际想做请先开 issue 讨论。
+
+## 10. (可选)加入 BotLearn Agent 社区
+
+BotLearn(`https://www.botlearn.ai`)是一个面向 AI agent 的社区,提供入学考试
+(benchmark)、技能市场(skillhunt)、agent 社交(post / DM)等功能。本项目
+**可选**地把 MBA agent 注册到 BotLearn 跑 benchmark + 浏览社区。
+
+> ⚠️ **重要**:BotLearn SDK 是第三方代码,**不入本仓库版本库**(`.gitignore`
+> 已忽略 `skills/botlearn/`)。安装前请自己审计 SDK 内容。本项目对 BotLearn
+> 平台不做担保。
+
+### 10.1 安装前提醒(必读)
+
+- BotLearn 的 marketplace 装第三方 skill = **任意代码执行风险**;`archiveUrl`
+  来自服务端,无校验、无签名、无审核队列
+- 默认 `templates/config.json` **所有权限开关都是 `true`**,与官方 `core/security.md`
+  表格里写的"安全默认值"矛盾。**装好后立刻锁权限**(见下文)
+- `botlearn.sh scan` 会上传 workspace 根目录所有**全大写 *.md 文件**(50KB
+  截断)+ `.claude/settings.json`(redacted)+ 主机指纹。MBA 仓库的 `README.md`
+  是其中之一——**README 里的真名 / 团队信息会被上传**
+- `botlearn.sh install <skill>` 之前必须**逐个 skill 让 owner 确认**
+
+### 10.2 安装
+
+```bash
+cd ~/mba
+mkdir -p skills/botlearn
+curl -sL https://www.botlearn.ai/sdk/botlearn-sdk.tar.gz | tar -xz -C skills/botlearn
+```
+
+验证 SDK 内容(只解压不安装的安全姿势):
+
+```bash
+curl -sL https://www.botlearn.ai/sdk/botlearn-sdk.tar.gz -o /tmp/botlearn-sdk.tar.gz
+tar -tzf /tmp/botlearn-sdk.tar.gz                    # 看文件列表
+shasum -a 256 /tmp/botlearn-sdk.tar.gz               # 记录 hash 做版本追溯
+```
+
+### 10.3 注册 + 立即锁权限
+
+```bash
+# 用项目化 handle,不暴露真名
+bash skills/botlearn/bin/botlearn.sh register "mba-auditor" \
+  "MBA = Metric Brand Auditor. Multi-agent brand-influence research + 5-judge review pipeline."
+```
+
+注册成功后 SDK 会写 `~/mba/.botlearn/credentials.json`(api_key)和
+`config.json`(模板默认权限**全开**)。**立刻覆盖** `config.json` 为锁死版:
+
+```json
+{
+  "auto_post": false,
+  "auto_comment": false,
+  "auto_vote": true,
+  "auto_dm_approve": false,
+  "auto_dm_reply": false,
+  "auto_update": false,
+  "heartbeat_enabled": true,
+  "learning_context_scan": false,
+  "learning_retroactive_scan": false,
+  "share_project_context_in_posts": false,
+  "share_project_context_in_learning": false,
+  "auto_benchmark": false,
+  "auto_install_solutions": false,
+  "auto_report_runs": true,
+  "auto_recheck_after_install": false,
+  "learning_actionable_install": false,
+  "learning_report_to_platform": false,
+  "learning_report_privacy": "redacted"
+}
+```
+
+### 10.4 Claim(必须本人完成)
+
+注册命令最后会打印类似:
+
+```
+https://www.botlearn.ai/claim/botlearn_<hex>
+```
+
+打开浏览器用 Twitter / Email / Google 登录,把 agent 绑到你的账号——这步
+agent 自己做不了,这是好事。
+
+### 10.5 跑入学考试
+
+```bash
+bash skills/botlearn/bin/botlearn.sh scan         # 上传环境配置(注意上面的隐私警告)
+bash skills/botlearn/bin/botlearn.sh exam-start <config_id>
+# 6 道题,scenario / practical 两种,每题答案以文件 + JSON 形式提交
+bash skills/botlearn/bin/botlearn.sh exam-submit <session_id>
+bash skills/botlearn/bin/botlearn.sh report <session_id> full
+```
+
+### 10.6 卸载
+
+```bash
+rm -rf ~/mba/skills/botlearn ~/mba/.botlearn
+# 同时上 https://www.botlearn.ai 网站把 agent 删除 + 让平台清你的数据
+```
+
+> BotLearn 是可选拼图,不影响 MBA 主流水线。本节内容会跟随 BotLearn SDK 演化,
+> 用前先 `cat skills/botlearn/SKILL.md` 看一眼当前版本是否还匹配本节描述。
