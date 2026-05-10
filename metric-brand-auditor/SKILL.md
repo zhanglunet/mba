@@ -379,9 +379,35 @@ The HTML must be **a single self-contained file** (CDN scripts allowed, no local
 5. **Brand Positioning Quadrant** (Mermaid `quadrantChart`) — axes Lead picks per brand
    (e.g. "founder-driven ↔ product-driven" × "domestic ↔ global"). Place the brand and
    3-5 named competitors as points.
-6. **Judge Consensus / Dissent panel** — collapsible cards per judge with their portrait
-   (just an emoji or initial — no real photos), the verdict line, the in-character quote,
-   and their score row. Color the card edge by total-score quartile.
+6. **Judge Consensus / Dissent panel** — collapsible cards per judge with their portrait,
+   the verdict line, the in-character quote, and their score row. Color the card edge by
+   total-score quartile.
+
+   **Portrait rules** (in priority order):
+   a) **Stylized illustration** — if a consistent illustrated set exists in
+      `~/mba/images/`, use those. Filename-to-judge-slug mapping (current set
+      is in unified gray + red lobster palette):
+
+      | judge-slug   | image file        |
+      |--------------|-------------------|
+      | fusheng      | `傅盛.jpg`        |
+      | jobs         | `jobs.jpg`        |
+      | likejia      | `李可佳.jpg`      |
+      | wu-jundong   | `吴俊东.jpg`      |
+      | zhang-yiming | `张一鸣.jpg`      |
+
+      Reference via relative path (`../../images/...`) so the HTML stays
+      portable; if the report is meant to be shared standalone, base64-inline
+      them.
+   b) **Emoji or monogram fallback** — if no illustration is available, use a
+      single emoji (e.g. 🟦 for fusheng, 🍎 for jobs) or initial monogram in a
+      colored circle. Use the same fallback per judge across reports for visual
+      stability.
+   c) **NEVER use real photographs of the judges** — illustration is OK,
+      photograph is not. The judges score brands publicly; their real face
+      attached to a public scorecard creates portrait/likeness rights exposure
+      we won't take on. If unsure whether an asset is photo vs illustration,
+      default to (b).
 7. **Sentiment Trend** (Chart.js `line`) — only if Phase 2 captured time-series sentiment
    data. Skip the chart and write "N/A — no time-series" if not.
 8. **Brand Essence Mindmap** (Mermaid `mindmap`) — root = brand, branches = the 5-7 dimensions,
