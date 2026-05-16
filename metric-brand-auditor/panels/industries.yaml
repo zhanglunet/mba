@@ -1,0 +1,25 @@
+# metric-brand-auditor/panels/industries.yaml
+#
+# 行业 → panel 名映射。/mba <brand> --industry <name> 来这里查,
+# 再 resolve 到 ./<panel-name>.yaml。
+#
+# Phase 0 resolver 优先级:
+#   --panel <name>            (CLI 显式指定 panel)
+#   > --industry <name>       (CLI 行业 hint,本文件查表)
+#   > reports/<brand>/panel.yaml (品牌绑定)
+#   > default
+#
+# 加新行业:追加 `<industry-name>: <panel-name>` 一行。
+# - panel-name 必须对应 ./<panel-name>.yaml 已存在的文件;Phase 0 启动时会校验,
+#   找不到的就 ABORT 并打印这里所有合法的 industry 列表。
+# - 一个 panel 可以被多个 industry 别名共用(下面 auto / ev 都指向 auto panel)。
+# - 行业名建议小写短名(`auto` / `edu` / `consumer-cn`),不要写空格 / 中文。
+
+auto: auto              # 汽车 / 主机厂 / 新能源车
+ev: auto                # 电动车别名 → 复用 auto panel
+
+# 占位条目(panel 文件还没建,加进去会被 Phase 0 ABORT —— 现在注释掉):
+# edu: edu              # 教育 / 终身学习产品
+# consumer-cn: consumer # 中文消费品 / 快消
+# vc-en: vc-en          # 英文 VC / 增长向
+# tech-cn: tech-cn      # 全中文科技

@@ -1,0 +1,50 @@
+# metric-brand-auditor/panels/auto.yaml
+#
+# 汽车 / 电动车 panel —— 5 位创始人 CEO 视角。
+# 通过 industries.yaml 被 `--industry auto` / `--industry ev` 引用。
+#
+# ⚠️  当前是 SKELETON 状态:这 5 位都还没有对应的 <slug>-perspective/ skill。
+# 跑 /mba <brand> --industry auto 会触发 Phase 0 自动降级:
+#   - 所有 judges MISSING → 自动 --no-judges
+#   - Phase 0.2 检测到 status: skeleton 会显式提示用户
+# 要让这个 panel 真正可用,按 panels/README.md §3 给每位 judge 跑 6 路调研 +
+# 写 perspective skill,做完再把下面 status: 字段删掉。
+
+name: auto
+display_name: Auto Industry Panel (Skeleton)
+status: skeleton
+description: >
+  汽车 / 电动车 panel:中国新势力 4 家(理想 / 小鹏 / 蔚来 / 小米)+ Tesla。
+  每位都是创始人兼 CEO,视角偏产品 / 制造 / 营销 / 用户社区 / 自动驾驶赌注。
+  适合给主机厂、新势力、智能电动品牌做影响力审计。
+
+judges:
+  - slug: musk
+    display_name_cn: 马斯克
+    display_name_en: Elon Musk
+    language: en
+    weight: 1.0
+
+  - slug: leijun
+    display_name_cn: 雷军
+    display_name_en: Lei Jun
+    language: zh
+    weight: 1.0
+
+  - slug: lixiang
+    display_name_cn: 李想
+    display_name_en: Li Xiang
+    language: zh
+    weight: 1.0
+
+  - slug: hexiaopeng
+    display_name_cn: 何小鹏
+    display_name_en: He Xiaopeng
+    language: zh
+    weight: 1.0
+
+  - slug: libin
+    display_name_cn: 李斌
+    display_name_en: William Li
+    language: zh
+    weight: 1.0

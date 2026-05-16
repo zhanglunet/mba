@@ -114,17 +114,57 @@ judges:
 每次 `/mba <brand>` 走以下顺序解析,**先命中先用**:
 
 ```
-CLI flag (--panel <name>)
+CLI --panel <name>            (显式 panel)
+  > CLI --industry <name>     (行业 hint,查 industries.yaml)
   > reports/<brand-slug>/panel.yaml 里 panel: <name> 字段
   > metric-brand-auditor/panels/default.yaml
 ```
 
-具体场景见仓库根 `README.md §4.4`。这里只补两条本目录相关的实现细节:
+具体场景见仓库根 `README.md §4.4`。这里只补几条本目录相关的实现细节:
 
 - Resolver 只在 `${PANELS_DIR}` 下找(默认 `${SKILL_DIR}/panels`,可被 `MBA_PANELS_DIR`
   env 覆盖)。不在仓库其它地方 fallback。
-- 如果 `--panel <name>` 指定的文件不存在,Phase 0 直接 ABORT 并提示用户 ——
-  **不**静默回退到 default,因为静默回退会让人以为换 panel 成功了。
+- 如果 `--panel <name>` 或 `--industry <name>` 指定的文件不存在,Phase 0 直接 ABORT
+  并提示用户 —— **不**静默回退到 default,因为静默回退会让人以为换 panel 成功了。
+- `--industry` 是 `--panel` 的便捷别名:实质就是查表 `industries.yaml` 拿 panel 名,
+  然后走同一套 resolver / 写同一份 brand 绑定。
+
+### 5.1  行业映射 —— `industries.yaml`
+
+格式极简,一行一个 `<industry-name>: <panel-name>`:
+
+```yaml
+auto: auto              # 汽车 / 主机厂 / 新能源车
+ev: auto                # 电动车别名 → 复用 auto panel
+# edu: edu              # 注释掉的行 = 占位,Phase 0 不会 resolve
+```
+
+加新行业:**先**确认 `<panel-name>.yaml` 已经存在(否则 Phase 0 启动校验就 ABORT),
+**再**追加映射行。一个 panel 可以被多个 industry 别名共用 —— 上面的 `auto` 和 `ev`
+就是这样,两个 `--industry` 都指向同一个 panel 文件。
+
+行业名建议:小写短名 / 不要空格 / 不要中文(`auto` / `edu` / `consumer-cn` 是好名字)。
+
+### 5.2  Skeleton panel —— "评委还没建" 状态
+
+panel yaml 顶部加 `status: skeleton` 字段标记"占位 panel",作用:
+
+- Phase 0.2 加载到这种 panel 时会打印一行明确提示,告诉用户"判分这一步会自动跳过"
+- 区分"用户误删了 perspective skill" 和 "panel 本身就是占位等评委到位"
+
+`auto.yaml` 就是这种状态 —— 5 位汽车评委(马斯克 / 雷军 / 李想 / 何小鹏 / 李斌)
+列了名字,但还没建对应的 perspective skill。跑 `/mba xiaomi --industry auto` 会:
+
+1. resolve 到 `auto.yaml`
+2. 检测 status: skeleton → 打印警告
+3. Phase 4 探测 5 个 slug 全 MISSING → 整体 `--no-judges`
+4. Phase 1-3 + 5 正常跑,产出 synthesis-only 报告 + HTML
+
+这是有意设计的"渐进可用":即使评委没到位,合成报告本身已经有价值。等评委填齐后,
+删掉 `status: skeleton` 字段,这个 panel 就自动从 skeleton 升级到正式状态。
+
+要让 skeleton 升级:对每位 judge 跑一遍 §3 那 6 步流程 —— 模板 → frontmatter →
+6 路调研 → 头像 → 单跑确认 → 改 panel yaml(这里只剩"删掉 status: skeleton")。
 
 ---
 
@@ -167,3 +207,6 @@ CLI flag (--panel <name>)
 最低限度本目录会有:
 
 - `default.yaml` —— 5 人混合 panel,/mba 的兜底
+- `auto.yaml` —— 汽车/电动车 panel,SKELETON 状态(评委 perspective skill 还没建)
+- `industries.yaml` —— 行业 → panel 映射表,被 `--industry` flag 查询(本身不是 panel,
+  也不会被 `--panel` 解析到)
