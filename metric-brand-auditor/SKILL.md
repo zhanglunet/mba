@@ -191,7 +191,9 @@ else
   echo "✗ $PANEL_FILE missing — Phase 0 will ABORT unless you pass --panel with an existing name"
 fi
 
-# Extract judge slugs from the resolved panel (tolerant of missing pyyaml).
+# Extract judge slugs from the resolved panel (newline-separated so the loop
+# works in both bash and zsh — zsh's `for x in $var` does NOT word-split).
+# Parser is tolerant of missing pyyaml (regex fallback).
 JUDGE_SLUGS=""
 if [ -f "$PANEL_FILE" ]; then
   JUDGE_SLUGS=$(python3 - "$PANEL_FILE" <<'PY'
@@ -203,19 +205,20 @@ try:
     slugs = [j.get("slug") for j in (data.get("judges") or []) if j.get("slug")]
 except ImportError:
     slugs = re.findall(r"^\s*-\s*slug:\s*([\w-]+)", content, re.MULTILINE)
-print(" ".join(slugs))
+print("\n".join(slugs))
 PY
 )
 fi
 
 echo "  perspective skills (panel: $PANEL_NAME):"
-for j in $JUDGE_SLUGS; do
+while IFS= read -r j; do
+  [ -z "$j" ] && continue
   found=""
   for cand in "$SKILL_DIR/../$j-perspective" "$HOME/.claude/skills/$j-perspective" "$HOME/skills/$j-perspective"; do
     [ -f "$cand/SKILL.md" ] && found="$cand" && break
   done
   if [ -n "$found" ]; then echo "    ✓ $j: $found"; else echo "    ✗ $j: missing"; fi
-done
+done <<< "$JUDGE_SLUGS"
 
 echo "  research skill:"
 for cand in "$SKILL_DIR/../research" "$HOME/.claude/skills/research" "$HOME/skills/research"; do
@@ -361,9 +364,13 @@ A `--refresh` rebuild also archives the current `report.md` into `versions/` bef
 
 ### 0.4  Panel-change GATE (EVOLUTION only)
 
-If we're in EVOLUTION mode AND the resolved panel (`PANEL_NAME` from 0.2) differs
-from the panel recorded in `${REPORTS_DIR}/<brand-slug>/panel.yaml`, STOP. Tell
-the user verbatim:
+**Legacy brands** — if EVOLUTION mode AND `${REPORTS_DIR}/<brand-slug>/panel.yaml`
+is missing (brand was audited before the panel system landed), SKIP this gate.
+0.5 will write the panel.yaml with the resolved panel name on this run.
+Note in the user-facing status: `"Legacy brand — migrating to panel system, binding {brand} to '{panel-name}'."`
+
+If we're in EVOLUTION mode AND `panel.yaml` exists AND the resolved panel (`PANEL_NAME` from 0.2) differs
+from the panel recorded there, STOP. Tell the user verbatim:
 
 > Panel change detected for {brand}: v{n} was scored by **{old-panel}** ({old-slugs}),
 > this run wants **{new-panel}** ({new-slugs}).
@@ -391,6 +398,10 @@ overrides:
   add: []                      # populated from --panel-add (slugs only)
   drop: []                     # populated from --panel-drop (slugs only)
 ```
+
+On **EVOLUTION** mode + `panel.yaml` missing (legacy brand from before the panel
+system): create it with the resolved `PANEL_NAME` and `locked_at: today`. This is
+the one-time migration; subsequent evolutions go through the normal gate logic.
 
 On **EVOLUTION** mode + user confirmed the 0.4 panel-change gate: rewrite
 `panel.yaml` with the new panel name, set `locked_at` to today, refresh `mba_version`.
