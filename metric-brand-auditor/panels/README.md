@@ -1,0 +1,169 @@
+# Panels —— 字段参考 / 怎么写一个新 panel
+
+5 镜头是固定的尺子,**坐在尺子后面打分的人是可换的**。本目录下每个 yaml 都是一份"评委名单",
+SKILL.md Phase 0 router 会按三层优先级选其中一份用。
+
+> 上层概念(为什么要做 panel / 跨品牌调用规则 / 与 perspective skill 的关系)在仓库根
+> `README.md §4`。本文件只解释**字段级**细节 —— 怎么写、什么字段、resolver 会怎么找它。
+
+---
+
+## 1. 一个最小可用的 panel
+
+```yaml
+name: solo
+display_name: Solo Judge
+description: 速读用,只放一位评委
+judges:
+  - slug: fusheng
+```
+
+只有 `name` 和 `judges[*].slug` 是必填。其它字段都可省略,resolver 会用默认值兜底
+(display_name 回退到 slug、language 回退到 `zh`、portrait 走 emoji/monogram、weight 默认 `1.0`)。
+
+---
+
+## 2. 字段参考
+
+### Top-level
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `name` | string | ✓ | panel 标识符,必须与文件名(去 `.yaml`)一致。`--panel <name>` 引用的就是这个 |
+| `display_name` | string | – | 人类可读名,用于报告头部 / `/mba panels` 列表。缺省时显示 `name` |
+| `description` | string | – | 一两句话说明这个 panel 适合什么场景。`/mba panels` 显示这个 |
+| `judges` | list | ✓ | 评委列表,至少 1 位。3 / 5 / 7 位都合法,不强制 5 位 |
+
+### `judges[*]`
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `slug` | string | ✓ | 必须能在 `${PERSPECTIVES_PATH}` 任一目录下找到 `<slug>-perspective/SKILL.md`,否则该评委 `MISSING`、panel 自动降级为 N-of-M |
+| `display_name_cn` | string | – | 中文显示名。缺省时 = `slug` |
+| `display_name_en` | string | – | 英文显示名。缺省时 = `slug` |
+| `language` | enum: `zh` / `en` | – | 该评委在 `reviews/<slug>.md` 里用哪种语言落笔。缺省 `zh` |
+| `portrait` | string | – | 头像文件名(相对 `${IMAGES_DIR}`)。缺省走 emoji / monogram 兜底 |
+| `weight` | float | – | Phase 5 算 mean 的权重。缺省 `1.0`。雷达图 / 异议热力图按 raw score 画,不被权重污染 |
+
+> `slug` 一定要跟 perspective skill 的目录名前缀严格对齐:`fusheng-perspective/` ⇒
+> slug 写 `fusheng`,**不要**写 `fusheng-perspective`、`Fusheng`、`fu-sheng`。
+
+---
+
+## 3. 加一个新评委 —— 端到端 6 步
+
+> 假设要加 `pmarca`(Marc Andreessen)。
+
+```text
+1. 复制视角 skill 模板
+   cp -r ../../fusheng-perspective ../../pmarca-perspective
+
+2. 改 ../../pmarca-perspective/SKILL.md frontmatter
+   - name: pmarca-perspective
+   - description: Marc Andreessen / a16z 创始合伙人 ...
+   - 显式触发 / 不要激活 / anti-fabrication 段全部改完
+
+3. 跑 6 路并行调研填 references/research/01-06.md
+   /research Marc Andreessen --persona-mode
+   (01 身份卡 / 02 表达 DNA / 03 心智模型 / 04 决策启发式 /
+    05 反共识立场 / 06 anti-fabrication 边界)
+
+4. (可选)放一张插画头像到 ../../images/pmarca.jpg
+   严禁真人照片,插画 / 卡通 / monogram 都行
+
+5. 单独跑一次确认 perspective 自己可用
+   /pmarca-perspective 帮我看一眼龙虾这个事
+
+6. 注册进 panel —— 在某个 yaml 的 judges: 下面追加:
+     - slug: pmarca
+       display_name_cn: 安德森
+       display_name_en: Marc Andreessen
+       language: en
+       portrait: pmarca.jpg
+```
+
+第 3 步是大头 —— "像不像"靠的是 80% 一手访谈/文章/播客 transcript 的高密度调研,
+不是 frontmatter 里的几句口令。
+
+---
+
+## 4. 写一个新 panel —— 4 步
+
+```text
+1. 选一个语义化的 name(同时是文件名)
+   tech-cn / vc-en / consumer-cn / solo / china-edu ...
+
+2. 复制 default.yaml 改名
+   cp default.yaml tech-cn.yaml
+
+3. 改 name / display_name / description / judges
+   - judges 至少 1 位
+   - 每位 slug 必须能 resolve 到 sibling perspective skill
+
+4. 验证
+   /mba panels show tech-cn        # 打印解析后的 yaml
+   /mba <test-brand> --panel tech-cn --quick --no-judges   # 不真打分,只走 Phase 0 把 panel.yaml 写下来
+```
+
+不需要"deploy" —— 文件落地就是注册完成,git 一 commit 跨机器都能用。
+
+---
+
+## 5. Resolver 行为 —— Phase 0 怎么选 panel
+
+每次 `/mba <brand>` 走以下顺序解析,**先命中先用**:
+
+```
+CLI flag (--panel <name>)
+  > reports/<brand-slug>/panel.yaml 里 panel: <name> 字段
+  > metric-brand-auditor/panels/default.yaml
+```
+
+具体场景见仓库根 `README.md §4.4`。这里只补两条本目录相关的实现细节:
+
+- Resolver 只在 `${PANELS_DIR}` 下找(默认 `${SKILL_DIR}/panels`,可被 `MBA_PANELS_DIR`
+  env 覆盖)。不在仓库其它地方 fallback。
+- 如果 `--panel <name>` 指定的文件不存在,Phase 0 直接 ABORT 并提示用户 ——
+  **不**静默回退到 default,因为静默回退会让人以为换 panel 成功了。
+
+---
+
+## 6. 校验规则 —— Phase 0 拒绝加载的 panel
+
+下面任一条命中,Phase 0 拒绝该 panel,要求修复:
+
+| 规则 | 失败时的报错 |
+|---|---|
+| `name` 缺失或与文件名不一致 | `panel name "<x>" doesn't match filename <file>.yaml — rename one of them` |
+| `judges` 为空或缺失 | `panel "<name>" has no judges — a panel needs ≥ 1 entry` |
+| 任一 `judges[*].slug` 在 `${PERSPECTIVES_PATH}` 下找不到 sibling skill | `judge "<slug>" not found — looked in: <paths>. Drop from panel or install the perspective skill first.` 默认行为是降级为 N-of-M 并打 `judges_incomplete` flag;若全员 MISSING 则强制 `--no-judges` |
+| `language` 不是 `zh` / `en` | `judge "<slug>" language="<x>" — only zh/en supported` |
+| `weight` 不是正数 | `judge "<slug>" weight must be > 0` |
+
+`portrait` 缺失或文件不存在**不**是失败 —— 回落到 emoji/monogram。
+
+---
+
+## 7. 不要踩的 4 条
+
+写 / 改 panel 时这几条不能踩,踩了会破坏跨版本可读性:
+
+1. **不要直接改已经在用的 panel 的 `judges:`**(尤其 default)—— 旧品牌的
+   `reports/<brand>/panel.yaml` 记的是 panel 名,evolution 重跑时会读到新名单,
+   导致 v{n+1} 跟 v{n} 不可比。要换评委时 → 起一个新 panel 名。
+2. **不要把同一个 `slug` 列两次** —— 静默 dedupe 会让人意外少打一份分。
+3. **不要给 `language` 写 `bi` / `auto` / `mixed`** —— Phase 4 的 sub-agent 需要一个明确的
+   落笔语言,混合语会让 Lead 合成时挑哪种作为引用都不对。
+4. **不要让 panel 里全是同一类视角**(比如 5 个全是 VC、5 个全是产品经理)——
+   panel 的价值在"异议的几何分布",同质 panel 让 σ 永远低于阈值、Phase 5 出不来戏剧张力。
+   /mba 不会校验这个,但 Phase 5 的 dissent 热力图会一眼看出来。
+
+---
+
+## 8. 自带 panel 一览
+
+跑 `/mba panels` 看当前目录下所有 panel 和它们的 judge 列表 + 用过的次数。
+
+最低限度本目录会有:
+
+- `default.yaml` —— 5 人混合 panel,/mba 的兜底

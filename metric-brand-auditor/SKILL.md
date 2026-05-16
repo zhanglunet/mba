@@ -1,7 +1,7 @@
 ---
 name: mba
 displayName: 乔布斯教你做品牌
-version: 0.2.15
+version: 0.2.16
 category: ai-agents
 skillType: prompt
 tags: [brand-audit, competitive-intelligence, founder-story, marketing-strategy, multi-agent]
@@ -81,8 +81,9 @@ Resolve them ONCE at Phase 0 and reuse — do NOT substitute literal `~/mba/...`
 |---|---|---|
 | `${SKILL_DIR}` | The directory containing this `SKILL.md` (the skill's install root) | `cd "$(dirname "<this-file>")" && pwd`, or read from the loading harness |
 | `${REPORTS_DIR}` | Where reports are written | First non-empty of: `$MBA_REPORTS_DIR` env var, `${SKILL_DIR}/reports`, `$PWD/reports` |
-| `${PERSPECTIVES_PATH}` | List of directories to probe for the 5 judge skills | In order: `${SKILL_DIR}/..`, `~/.claude/skills`, `~/skills`, `$HOME/.claude/skills` |
+| `${PERSPECTIVES_PATH}` | List of directories to probe for judge perspective skills | In order: `${SKILL_DIR}/..`, `~/.claude/skills`, `~/skills`, `$HOME/.claude/skills` |
 | `${IMAGES_DIR}` | Judge-portrait illustration set | First existing of: `${SKILL_DIR}/images`, `${SKILL_DIR}/../images`. If neither exists, use the emoji/monogram fallback (Phase 5F.b portrait rules) |
+| `${PANELS_DIR}` | Where judge-panel yaml configs live | First non-empty of: `$MBA_PANELS_DIR` env var, `${SKILL_DIR}/panels`. See `panels/README.md` for the schema |
 | `${RESEARCH_SKILL}` | The upstream `research` skill (used as a building block) | First existing of: `${SKILL_DIR}/../research/SKILL.md`, `~/.claude/skills/research/SKILL.md`. If neither exists, fall back to direct WebSearch+WebFetch |
 
 **Cross-machine sidebar (optional, uncommon)**: if the running agent is on a remote/sandbox
@@ -147,7 +148,7 @@ are missing, MBA degrades instead of crashing.
 
 | Dep | What | Fallback if missing |
 |---|---|---|
-| 5 perspective skills (`fusheng-perspective`, `jobs-perspective`, `likejia-perspective`, `wu-jundong-perspective`, `zhang-yiming-perspective`), found via `${PERSPECTIVES_PATH}` probe | Each judge LOADs its own to score in character | If any 1-2 missing: degrade to "panel of N" with a `quality_flag: judges_incomplete`. If all 5 missing: `--no-judges` mode auto-engaged, skip Phase 4 entirely |
+| Perspective skills listed in the resolved panel (each `<slug>-perspective/SKILL.md`), found via `${PERSPECTIVES_PATH}` probe | Each judge LOADs its own to score in character. Slug list is read from the panel yaml selected in Phase 0 (CLI flag > brand binding > `default.yaml`) | If any 1-2 missing: degrade to "panel of N-of-M" with a `quality_flag: judges_incomplete`. If all missing: `--no-judges` mode auto-engaged, skip Phase 4 entirely |
 | `research` skill | Used as building block when a dimension needs deeper work | Phase 2 falls back to direct WebSearch+WebFetch without the PRD methodology — works but thinner |
 
 ### Optional (only needed for specific data sources)
@@ -168,12 +169,47 @@ resolution above), then run this directly via Bash:
 # Resolve symbols (replace SKILL_DIR_VALUE with the actual path the harness loaded this from)
 SKILL_DIR="${SKILL_DIR:-SKILL_DIR_VALUE}"
 REPORTS_DIR="${MBA_REPORTS_DIR:-$SKILL_DIR/reports}"
+PANELS_DIR="${MBA_PANELS_DIR:-$SKILL_DIR/panels}"
+
+# Panel resolution order: --panel flag > existing brand panel.yaml > default.
+# At self-check time we usually don't know the brand yet — Phase 0 router resolves
+# this properly per-run. Here we just probe whichever panel will be used.
+PANEL_NAME="${MBA_PANEL_OVERRIDE:-}"
+if [ -z "$PANEL_NAME" ] && [ -n "$MBA_BRAND_SLUG" ] && [ -f "$REPORTS_DIR/$MBA_BRAND_SLUG/panel.yaml" ]; then
+  PANEL_NAME=$(python3 -c "import sys,re; print((re.search(r'^\s*panel:\s*([\w-]+)', open(sys.argv[1]).read(), re.M) or [None,'default'])[1])" "$REPORTS_DIR/$MBA_BRAND_SLUG/panel.yaml")
+fi
+PANEL_NAME="${PANEL_NAME:-default}"
+PANEL_FILE="$PANELS_DIR/$PANEL_NAME.yaml"
 
 echo "== MBA self-check =="
 echo -n "  reports dir writable? "; mkdir -p "$REPORTS_DIR" 2>/dev/null && [ -w "$REPORTS_DIR" ] && echo "✓ $REPORTS_DIR" || echo "✗ $REPORTS_DIR"
 
-echo "  perspective skills:"
-for j in fusheng jobs likejia wu-jundong zhang-yiming; do
+echo -n "  panel: $PANEL_NAME → "
+if [ -f "$PANEL_FILE" ]; then
+  echo "✓ $PANEL_FILE"
+else
+  echo "✗ $PANEL_FILE missing — Phase 0 will ABORT unless you pass --panel with an existing name"
+fi
+
+# Extract judge slugs from the resolved panel (tolerant of missing pyyaml).
+JUDGE_SLUGS=""
+if [ -f "$PANEL_FILE" ]; then
+  JUDGE_SLUGS=$(python3 - "$PANEL_FILE" <<'PY'
+import sys, re
+content = open(sys.argv[1]).read()
+try:
+    import yaml
+    data = yaml.safe_load(content) or {}
+    slugs = [j.get("slug") for j in (data.get("judges") or []) if j.get("slug")]
+except ImportError:
+    slugs = re.findall(r"^\s*-\s*slug:\s*([\w-]+)", content, re.MULTILINE)
+print(" ".join(slugs))
+PY
+)
+fi
+
+echo "  perspective skills (panel: $PANEL_NAME):"
+for j in $JUDGE_SLUGS; do
   found=""
   for cand in "$SKILL_DIR/../$j-perspective" "$HOME/.claude/skills/$j-perspective" "$HOME/skills/$j-perspective"; do
     [ -f "$cand/SKILL.md" ] && found="$cand" && break
@@ -195,8 +231,9 @@ present unless a prior tool call returned a tool-unavailable error.
 
 Mode auto-decision:
 - All ✓ → full pipeline
-- perspectives < 5 → judges_incomplete flag, panel of N
-- perspectives = 0 → auto `--no-judges`
+- Panel file missing → ABORT, tell owner the resolved panel name + expected path
+- Any perspective in the resolved panel missing → judges_incomplete flag, panel of N-of-M
+- All perspectives in the resolved panel missing → auto `--no-judges`
 - WUYING_API_KEY unset → auto `--quick`
 - WebSearch+WebFetch unavailable → ABORT, tell owner what's needed
 
@@ -230,8 +267,11 @@ Five independent capabilities, used together:
 - `$ARGUMENTS` — brand name (e.g. `OpenClaw`, `Aibrary`, `BotLearn`, or a URL)
 - `--quick` — skip Wuying cloud-browser leg (web search only)
 - `--refresh` — force EVOLUTION mode even if last report is recent
-- `--no-judges` — produce only the synthesis (skip the 5-judge panel)
+- `--no-judges` — produce only the synthesis (skip the judge panel)
 - `--focus <dim1,dim2>` — restrict deep research to specific dimensions
+- `--panel <name>` — use a named panel from `${PANELS_DIR}/<name>.yaml` (highest precedence; overrides any prior brand binding). First-time runs write this to `reports/<brand-slug>/panel.yaml` and the brand stays bound until you pass `--panel` again. Field schema in `panels/README.md`.
+- `--panel-add <slug>` — runtime-only addition of one judge (slug must resolve under `${PERSPECTIVES_PATH}`). Stored in `panel.yaml.overrides.add` for this run; does NOT mutate `panels/<name>.yaml`. Repeatable.
+- `--panel-drop <slug>` — runtime-only exclusion of one judge. Stored in `panel.yaml.overrides.drop`; does NOT mutate `panels/<name>.yaml`. Repeatable.
 
 ## Output layout
 
@@ -241,6 +281,7 @@ All reports live under `${REPORTS_DIR}/<brand-slug>/`:
 reports/<brand-slug>/
 ├── report.md                 # current canonical report (markdown, overwritten on merge)
 ├── report.html               # current canonical report (self-contained HTML, Mermaid + Chart.js)
+├── panel.yaml                # which panel this brand is bound to (written by Phase 0 on FRESH)
 ├── versions/
 │   ├── v1_2026-05-09.md      # immutable markdown snapshot per evolution cycle
 │   ├── v1_2026-05-09.html    # immutable HTML snapshot
@@ -250,17 +291,51 @@ reports/<brand-slug>/
 │   ├── dimension_<n>_<slug>.md   # per-dimension sub-agent output
 │   └── wuying_browse.md      # cloud-browser observation log
 └── reviews/
-    ├── fusheng.md            # judge scorecards (one per perspective)
-    ├── jobs.md
-    ├── likejia.md
-    ├── wu-jundong.md
-    └── zhang-yiming.md
+    ├── <judge-slug>.md       # one scorecard per judge in the resolved panel
+    └── ...                   # default panel = 5 files (fusheng/jobs/likejia/wu-jundong/zhang-yiming)
 ```
 
 ## Phase 0 — Router (FIRST STEP, ALWAYS)
 
-Before doing anything else, resolve `${SKILL_DIR}` and `${REPORTS_DIR}` (see "Path resolution"
-above), then check whether a prior report exists:
+Phase 0 has four sub-steps. Run them in order; do NOT skip ahead.
+
+### 0.1  Resolve paths
+
+Resolve `${SKILL_DIR}`, `${REPORTS_DIR}`, `${PANELS_DIR}`, `${PERSPECTIVES_PATH}`,
+`${IMAGES_DIR}` (see "Path resolution" above). Do this once and reuse.
+
+### 0.2  Resolve which panel to use (three-tier precedence)
+
+This decision is independent of FRESH vs EVOLUTION — both need a panel before
+any judge-related work. Order, first hit wins:
+
+1. **CLI flag**: `--panel <name>` if user passed one
+2. **Brand binding**: `${REPORTS_DIR}/<brand-slug>/panel.yaml` → `panel:` field, if file exists
+3. **Default**: `default`
+
+Then load `${PANELS_DIR}/<panel-name>.yaml`. Parse it (tolerant of missing pyyaml,
+same regex fallback as the self-bootstrap snippet):
+
+```bash
+PANEL_FILE="$PANELS_DIR/$PANEL_NAME.yaml"
+if [ ! -f "$PANEL_FILE" ]; then
+  echo "ABORT: panel '$PANEL_NAME' not found at $PANEL_FILE"
+  echo "       Available: $(ls "$PANELS_DIR"/*.yaml 2>/dev/null | xargs -n1 basename | sed 's/.yaml//' | tr '\n' ' ')"
+  exit 1
+fi
+```
+
+**Do NOT silently fall back to default** if `--panel <name>` was explicit and missing —
+that masks typos. Tell the user and abort.
+
+Apply runtime `--panel-add` / `--panel-drop` overrides on top of the loaded panel.
+These overrides apply for this run only — they go into `panel.yaml.overrides`,
+they do NOT mutate `panels/<name>.yaml`.
+
+Run the self-bootstrap check (see "Self-bootstrap check" above) against the
+resolved panel's judge slugs to detect missing perspective skills early.
+
+### 0.3  FRESH vs EVOLUTION
 
 ```bash
 # Default: local probe
@@ -277,12 +352,51 @@ ssh <user>@<host> "test -f '<remote-reports-dir>/<brand-slug>/report.md' && echo
   - Read the existing report
   - Note the existing version number, last-update date, and dimension list
   - Switch to **EVOLUTION mode** (Phase 1E onward)
-  - Tell the user: `"Found existing v{n} dated {date}. Switching to EVOLUTION mode — I'll do delta research and re-score only what's changed. Use --refresh if you want a full rebuild."`
+  - Tell the user: `"Found existing v{n} dated {date}, bound to panel '{panel-name}'. Switching to EVOLUTION mode — delta research + re-score only what's changed. Use --refresh for a full rebuild."`
 - **If `report.md` does NOT exist OR `--refresh` was passed**:
   - Switch to **FRESH mode** (Phase 1F onward)
-  - Tell the user: `"No prior report for {brand}. Running fresh pipeline: discovery → parallel search → synthesis → 5-judge panel → merge. Estimated 15-25 minutes."`
+  - Tell the user: `"No prior report for {brand}. Running fresh pipeline with panel '{panel-name}' ({N} judges): discovery → parallel search → synthesis → judge panel → merge. Estimated 15-25 minutes."`
 
 A `--refresh` rebuild also archives the current `report.md` into `versions/` before starting.
+
+### 0.4  Panel-change GATE (EVOLUTION only)
+
+If we're in EVOLUTION mode AND the resolved panel (`PANEL_NAME` from 0.2) differs
+from the panel recorded in `${REPORTS_DIR}/<brand-slug>/panel.yaml`, STOP. Tell
+the user verbatim:
+
+> Panel change detected for {brand}: v{n} was scored by **{old-panel}** ({old-slugs}),
+> this run wants **{new-panel}** ({new-slugs}).
+> Old `reviews/*.md` are NOT directly diffable against new scores — every judge will
+> re-score from scratch, and v{n+1}'s score matrix will not be comparable to v{n}'s
+> on a cell-by-cell basis.
+>
+> Reply `yes` to proceed (writes new panel binding into `panel.yaml`, v{n+1} carries
+> the new panel name in its header), or rerun with `--panel {old-panel}` to keep
+> continuity.
+
+This gate exists to prevent silent panel drift across versions. Do NOT auto-proceed.
+
+### 0.5  Write / update `panel.yaml`
+
+On **FRESH** mode: at the start of Phase 1F (after user passes GATE 1 confirming the
+PRD), create `${REPORTS_DIR}/<brand-slug>/panel.yaml`:
+
+```yaml
+# Generated by Phase 0 router on FRESH mode
+panel: <panel-name>            # which panels/<name>.yaml was used
+locked_at: YYYY-MM-DD          # today
+mba_version: 0.2.16            # from this SKILL.md's frontmatter
+overrides:
+  add: []                      # populated from --panel-add (slugs only)
+  drop: []                     # populated from --panel-drop (slugs only)
+```
+
+On **EVOLUTION** mode + user confirmed the 0.4 panel-change gate: rewrite
+`panel.yaml` with the new panel name, set `locked_at` to today, refresh `mba_version`.
+Do NOT delete the file — the brand keeps a binding at all times.
+
+On EVOLUTION mode + same panel as before: leave `panel.yaml` untouched.
 
 ## Phase 1F — Discovery (FRESH mode, Lead, sequential)
 
@@ -431,25 +545,42 @@ Sections:
 
 This synthesis is the input to the judge panel — it must be self-contained.
 
-## Phase 4F — 5-Judge Review Panel
+## Phase 4F — N-Judge Review Panel (panel-driven)
 
-Dispatch 5 judges in parallel. Each judge **loads their own perspective skill** so they reply
-in character. They score independently — do NOT share each other's drafts.
+Read the resolved panel (Phase 0.2) and build the judge list:
 
-For each of `[fusheng, jobs, likejia, wu-jundong, zhang-yiming]`:
+```python
+# Pseudocode — actual loader is in the self-bootstrap snippet
+panel = load_yaml(f"{PANELS_DIR}/{PANEL_NAME}.yaml")
+judges = panel["judges"]                          # list of judge dicts
+judges += [resolve(s) for s in overrides.add]     # --panel-add appends
+judges = [j for j in judges if j["slug"] not in overrides.drop]  # --panel-drop excludes
+# Drop any judge whose perspective SKILL.md isn't reachable (mark MISSING, don't fabricate)
+judges = [j for j in judges if perspective_found(j["slug"])]
+```
+
+Dispatch the surviving N judges in parallel. Each judge **loads their own perspective
+skill** so they reply in character. They score independently — do NOT share each
+other's drafts.
+
+For each `judge` in the resolved list, dispatch:
 
 ```
 Agent(
   subagent_type: "general-purpose",
-  description: "Judge — {judge-name}",
+  description: "Judge — {judge.display_name_cn or judge.slug}",
   run_in_background: true,
   prompt: "
-    You are about to review brand {Brand}'s influence as judge {judge-name-cn}. To stay in
-    character, FIRST locate and load the perspective skill SKILL.md by probing
-    ${PERSPECTIVES_PATH} for `{judge-slug}-perspective/SKILL.md` (use the first hit) and
+    You are about to review brand {Brand}'s influence as judge {judge.display_name_cn}.
+    To stay in character, FIRST locate and load the perspective skill SKILL.md by probing
+    ${PERSPECTIVES_PATH} for `{judge.slug}-perspective/SKILL.md` (use the first hit) and
     read the full file. From this point on, respond AS the persona — first-person voice,
     their vocabulary, their decision style. (Re-read the persona's 'do not impersonate /
     do not fabricate' constraints — they apply here too.)
+
+    Respond in {judge.language} (zh = 中文, en = English) — this comes from the panel
+    yaml, not from the brand's language. A Chinese brand still gets an English Jobs
+    review; Lead translates inside the final report's quoted sections.
 
     The Lead has prepared the brand synthesis at:
     ${REPORTS_DIR}/{brand-slug}/_raw/synthesis.md
@@ -471,7 +602,7 @@ Agent(
     - **Brand action** the brand should take next, if your worldview is correct
 
     Save your scorecard to:
-    ${REPORTS_DIR}/{brand-slug}/reviews/{judge-slug}.md
+    ${REPORTS_DIR}/{brand-slug}/reviews/{judge.slug}.md
 
     Do NOT read other judges' files. Score independently.
     Stay in character throughout. The persona's anti-fabrication rules apply: no inventing
@@ -480,18 +611,23 @@ Agent(
 )
 ```
 
-Mapping (each resolved against `${PERSPECTIVES_PATH}` — first existing hit wins):
-- `fusheng` → `<probe>/fusheng-perspective/SKILL.md`
-- `jobs` → `<probe>/jobs-perspective/SKILL.md`
-- `likejia` → `<probe>/likejia-perspective/SKILL.md`
-- `wu-jundong` → `<probe>/wu-jundong-perspective/SKILL.md`
-- `zhang-yiming` → `<probe>/zhang-yiming-perspective/SKILL.md`
+Resolver:
+- `{judge.slug}` → `<probe>/<slug>-perspective/SKILL.md` (first hit across `${PERSPECTIVES_PATH}`)
+- `{judge.display_name_cn}` / `{judge.display_name_en}` / `{judge.language}` / `{judge.portrait}` /
+  `{judge.weight}` all come from the panel yaml row; missing fields use the defaults documented
+  in `panels/README.md` §2
 
 If a judge's SKILL.md isn't found in any `${PERSPECTIVES_PATH}` entry, mark that judge
-`MISSING` in the panel summary and proceed with N-of-5 (per the Prerequisites degradation
-rules above). Do NOT fabricate the persona from training-data memory.
+`MISSING` in the panel summary and proceed N-of-M (per the Prerequisites degradation rules
+above). Do NOT fabricate the persona from training-data memory.
 
-5 judges = 1 batch (within the 5-agent ceiling). Run all in parallel.
+**Batching**: up to 5 agents per batch (Anthropic agent ceiling). For N > 5 judges, run
+⌈N/5⌉ batches — collect each batch's results before starting the next. The default panel's
+5 judges fit in a single batch.
+
+**Output line for Phase 5 score matrix**: emit one column per surviving judge, in panel-yaml
+order. Missing judges get a `—` column with a footnote `MISSING: {slug}` rather than being
+silently dropped — readers should see the panel size that ran.
 
 ## Phase 5F — Lead Merge (FRESH mode)
 
@@ -503,8 +639,9 @@ Lead reads all 5 review files + the synthesis, then writes the canonical
 
 **Date:** {YYYY-MM-DD}
 **Mode:** FRESH
+**Panel:** {panel-name} ({N} judges)
 **Dimensions analyzed:** {list}
-**Judges:** fusheng / jobs / likejia / wu-jundong / zhang-yiming
+**Judges:** {comma-join of judge.display_name_cn (zh) or display_name_en (en) from panel, in panel-yaml order}
 
 ## TL;DR — How {Brand}'s influence is constructed
 {4-6 bullets answering the Research Objective. Lead's own voice.}

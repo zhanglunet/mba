@@ -1,0 +1,49 @@
+# metric-brand-auditor/panels/default.yaml
+#
+# MBA 的默认 5 人评委 panel。这个文件是"哪 N 位评委上场"的命名配置 ——
+# Phase 0 的 router 在用户没传 --panel 也没绑定品牌 panel.yaml 时回退到这里。
+#
+# 字段定义 / 校验规则 / 怎么写一个新 panel 见 ./README.md。
+# 上层概念(为什么要 panel / 三层优先级 / 跨品牌怎么调用)见 ../../README.md §4。
+
+name: default
+display_name: Default 5-Judge Panel
+description: >
+  混合中英文、创始人视角 + 产品设计视角 + 教育/全球化视角 + 字节系产品视角。
+  /mba <brand> 在没有 --panel 且品牌没绑定其它 panel 时,自动用这一套。
+
+judges:
+  - slug: fusheng
+    display_name_cn: 傅盛
+    display_name_en: Fu Sheng
+    language: zh
+    portrait: 傅盛.jpg
+    weight: 1.0
+
+  - slug: jobs
+    display_name_cn: 乔布斯
+    display_name_en: Steve Jobs
+    language: en
+    portrait: jobs.jpg
+    weight: 1.0
+
+  - slug: likejia
+    display_name_cn: 李可佳
+    display_name_en: Ethan Li
+    language: zh
+    portrait: 李可佳.jpg
+    weight: 1.0
+
+  - slug: wu-jundong
+    display_name_cn: 吴俊东
+    display_name_en: Frank Wu
+    language: zh
+    portrait: 吴俊东.jpg
+    weight: 1.0
+
+  - slug: zhang-yiming
+    display_name_cn: 张一鸣
+    display_name_en: Zhang Yiming
+    language: zh
+    portrait: 张一鸣.jpg
+    weight: 1.0
