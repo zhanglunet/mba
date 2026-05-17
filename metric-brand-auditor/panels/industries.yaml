@@ -15,11 +15,24 @@
 # - 一个 panel 可以被多个 industry 别名共用(下面 auto / ev 都指向 auto panel)。
 # - 行业名建议小写短名(`auto` / `edu` / `consumer-cn`),不要写空格 / 中文。
 
-auto: auto              # 汽车 / 主机厂 / 新能源车
-ev: auto                # 电动车别名 → 复用 auto panel
+auto: auto                  # 汽车 / 主机厂 / 新能源车
+ev: auto                    # 电动车别名 → 复用 auto panel
 
-# 占位条目(panel 文件还没建,加进去会被 Phase 0 ABORT —— 现在注释掉):
-# edu: edu              # 教育 / 终身学习产品
-# consumer-cn: consumer # 中文消费品 / 快消
-# vc-en: vc-en          # 英文 VC / 增长向
-# tech-cn: tech-cn      # 全中文科技
+consumer-cn: consumer-cn    # 中文消费品 / 快消
+ai-app-cn: ai-app-cn        # AI 应用 / Agent 层
+vc-cn: vc-cn                # 中文投资人
+vc-en: vc-en                # 英文 VC / Silicon Valley
+edu-cn: edu-cn              # 中文教育 / 终身学习
+cross-border: cross-border  # 出海 / 跨境电商
+luxury-en: luxury-en        # 奢侈品 / 时尚 / 英文
+
+# Aliases(指向已建 panel 的便捷别名,可选):
+ai: ai-app-cn               # /mba <brand> --industry ai 等价于 --industry ai-app-cn
+consumer: consumer-cn       # 简写
+edu: edu-cn                 # 简写
+
+# 占位(panel 还没建,加进去会被 Phase 0 ABORT,留着记 wishlist):
+# gaming-cn: gaming-cn      # 游戏 —— 选手太沉默,缓建
+# f-and-b-cn: f-and-b-cn    # 餐饮 / 连锁 —— 可作为 consumer-cn 子集
+# biotech: biotech          # 生物医药 —— 政治敏感 + 源差,缓建
+# real-estate: real-estate  # 房地产 —— 行业敏感,缓建

@@ -1,0 +1,47 @@
+# metric-brand-auditor/panels/vc-en.yaml
+#
+# 英文 VC panel —— 5 位 Silicon Valley 投资人/思想家。
+# 通过 industries.yaml 被 `--industry vc-en` 引用。
+#
+# ⚠️  SKELETON 状态:5 位都待建 perspective skill。
+# 候选评估见 panels/_prd/industries-roster.md §3.5。
+# Peter Thiel 政治敏感,某些用户场景可能不合适,可替换为 Bill Gurley / Vinod Khosla。
+
+name: vc-en
+display_name: VC-EN Panel (Skeleton)
+status: skeleton
+description: >
+  英文 VC panel:Software-eats-world 派 + YC first-principles 派 +
+  0-to-1 反竞争派 + leverage 财富启示录派 + Blitzscaling 网络效应派。
+  给 SaaS / AI 应用 / 网络效应产品 / 国际化品牌做美式 VC 视角审计。
+
+judges:
+  - slug: pmarca
+    display_name_cn: 马克·安德森
+    display_name_en: Marc Andreessen
+    language: en
+    weight: 1.0
+
+  - slug: paulg
+    display_name_cn: 保罗·格雷厄姆
+    display_name_en: Paul Graham
+    language: en
+    weight: 1.0
+
+  - slug: pthiel
+    display_name_cn: 彼得·蒂尔
+    display_name_en: Peter Thiel
+    language: en
+    weight: 1.0
+
+  - slug: naval
+    display_name_cn: 纳瓦尔
+    display_name_en: Naval Ravikant
+    language: en
+    weight: 1.0
+
+  - slug: rhoffman
+    display_name_cn: 里德·霍夫曼
+    display_name_en: Reid Hoffman
+    language: en
+    weight: 1.0

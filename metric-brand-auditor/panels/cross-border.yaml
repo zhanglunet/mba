@@ -1,0 +1,49 @@
+# metric-brand-auditor/panels/cross-border.yaml
+#
+# 出海 / 跨境电商 panel —— 5 位出海/电商代表 + 失败案例 + 行业观察者。
+# 通过 industries.yaml 被 `--industry cross-border` 引用。
+#
+# ⚠️  SKELETON 状态 + LOW DENSITY 警告:5 位中沉默选手占 2/5
+# (huangzheng 2021 后沉默,zhangyong-shein 几乎不公开发言)。
+# 候选评估见 panels/_prd/industries-roster.md §3.7。
+# 真正能挖出第一人称材料的只有杨建辉 + 陈年 + 庄帅 —— 建议要么接受"低密度
+# panel"(评分偏 withheld),要么把黄峥 / 张勇换成更 vocal 的出海创业者。
+
+name: cross-border
+display_name: Cross-Border Panel (Skeleton)
+status: skeleton
+description: >
+  出海 / 跨境电商 panel:极致下沉算法供应链 + 静默产品力 +
+  极致供应链数据驱动 + 失败者复盘 + 行业观察者补位。
+  给跨境电商、出海消费品牌、SaaS 出海、TikTok 商品做影响力审计。
+
+judges:
+  - slug: huangzheng
+    display_name_cn: 黄峥
+    display_name_en: Colin Huang
+    language: zh
+    weight: 1.0
+
+  - slug: yangjianhui
+    display_name_cn: 杨建辉
+    display_name_en: Steven Yang
+    language: zh
+    weight: 1.0
+
+  - slug: zhangyong-shein
+    display_name_cn: 张勇
+    display_name_en: Chris Xu
+    language: zh
+    weight: 1.0
+
+  - slug: chennian
+    display_name_cn: 陈年
+    display_name_en: Chen Nian
+    language: zh
+    weight: 1.0
+
+  - slug: zhuangshuai
+    display_name_cn: 庄帅
+    display_name_en: Zhuang Shuai
+    language: zh
+    weight: 1.0

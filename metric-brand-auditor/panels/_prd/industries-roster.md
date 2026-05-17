@@ -24,16 +24,19 @@
 
 ## 2. 选择栏(在这里勾选 ☑ / ☐)
 
-| 优先建 | Panel | 评委(5 人) | 源密度 | 难度 | 复用 |
+8 套全部已勾选(2026-05-17,通过"先按照这个吧"接受);骨架 panel.yaml 都已落到
+`./` 同级,industries.yaml 映射已登记。下一步是按 §5 流程逐位建 perspective skill。
+
+| 骨架已建 | Panel | 评委(5 人) | 源密度 | 难度 | 复用 |
 |---|---|---|---|---|---|
-| ☑ (已草) | `auto` | 马斯克 / 雷军 / 李想 / 何小鹏 / 李斌 | ★★★★ | ★★★ | 0 |
-| ☐ | `consumer-cn` | 江南春 / 张兰 / 罗永浩 / 杨建辉 / 钟睒睒 ⚠ | ★★★★ | ★★ | 0 |
-| ☐ | `ai-app-cn` | 杨植麟 / 王慧文 / 周鸿祎 / 傅盛(复用) / 朱啸虎 | ★★★★ | ★★★ | 1 |
-| ☐ | `vc-cn` | 朱啸虎 / 张磊 / 徐新 / 雷军(顺为) / 沈南鹏 ⚠ | ★★★ | ★★★ | 0 |
-| ☐ | `vc-en` | Marc Andreessen / Paul Graham / Peter Thiel ⚠ / Naval Ravikant / Reid Hoffman | ★★★★★ | ★★ | 0 |
-| ☐ | `edu-cn` | 俞敏洪 / 张邦鑫 / 李可佳(复用) / 吴俊东(复用) / Sal Khan | ★★★ | ★★ | 2 |
-| ☐ | `cross-border` | 黄峥 ⚠ / 杨建辉 / 张勇-Shein ⚠ / 陈年 / 庄帅 | ★★ | ★★★★ | 0 |
-| ☐ | `luxury-en` | Bernard Arnault / Anna Wintour / Brunello Cucinelli / Tom Ford / Sarah Burton | ★★★ | ★★★ | 0 |
+| ☑ | `auto` | 马斯克 / 雷军 / 李想 / 何小鹏 / 李斌 | ★★★★ | ★★★ | 0 |
+| ☑ | `consumer-cn` | 江南春 / 张兰 / 罗永浩 / 杨建辉 / 钟睒睒 ⚠ | ★★★★ | ★★ | 0 |
+| ☑ | `ai-app-cn` | 杨植麟 / 王慧文 / 周鸿祎 / 傅盛(复用) / 朱啸虎 | ★★★★ | ★★★ | 1 |
+| ☑ | `vc-cn` | 朱啸虎 / 张磊 / 徐新 / 雷军(顺为) / 沈南鹏 ⚠ | ★★★ | ★★★ | 0 |
+| ☑ | `vc-en` | Marc Andreessen / Paul Graham / Peter Thiel ⚠ / Naval Ravikant / Reid Hoffman | ★★★★★ | ★★ | 0 |
+| ☑ | `edu-cn` | 俞敏洪 / 张邦鑫 / 李可佳(复用) / 吴俊东(复用) / Sal Khan | ★★★ | ★★ | 2 |
+| ☑ | `cross-border` | 黄峥 ⚠ / 杨建辉 / 张勇-Shein ⚠ / 陈年 / 庄帅 | ★★ | ★★★★ | 0 |
+| ☑ | `luxury-en` | Bernard Arnault / Anna Wintour / Brunello Cucinelli / Tom Ford / Sarah Burton | ★★★ | ★★★ | 0 |
 
 **其它候选(暂不推荐):** gaming-cn(选手极沉默)/ f&b-cn(可作为 consumer-cn 子集)/
 biotech(政治敏感 + 源差)/ real-estate(行业敏感)。

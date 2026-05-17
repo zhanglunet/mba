@@ -1,0 +1,47 @@
+# metric-brand-auditor/panels/vc-cn.yaml
+#
+# 中文 VC panel —— 5 位中文投资人,差异化视角。
+# 通过 industries.yaml 被 `--industry vc-cn` 引用。
+#
+# ⚠️  SKELETON 状态:5 位都待建 perspective skill。
+# 候选评估见 panels/_prd/industries-roster.md §3.4。
+# 沈南鹏源密度极差,建之前考虑替换(见 roster 替补建议)。
+# leijun 若 auto panel 已建,可复用同一 perspective skill。
+
+name: vc-cn
+display_name: VC-CN Panel (Skeleton)
+status: skeleton
+description: >
+  中文 VC panel:红海实战派 + 长期主义 + 消费杀手锏 + 跨界 operator VC +
+  平台型超级 LP。给国内品牌做投资人视角影响力审计、商业模式可投性评估。
+
+judges:
+  - slug: zhuxiaohu
+    display_name_cn: 朱啸虎
+    display_name_en: Zhu Xiaohu
+    language: zh
+    weight: 1.0
+
+  - slug: zhanglei
+    display_name_cn: 张磊
+    display_name_en: Zhang Lei
+    language: zh
+    weight: 1.0
+
+  - slug: xuxin
+    display_name_cn: 徐新
+    display_name_en: Kathy Xu
+    language: zh
+    weight: 1.0
+
+  - slug: leijun
+    display_name_cn: 雷军
+    display_name_en: Lei Jun
+    language: zh
+    weight: 1.0
+
+  - slug: shennanpeng
+    display_name_cn: 沈南鹏
+    display_name_en: Neil Shen
+    language: zh
+    weight: 1.0
