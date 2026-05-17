@@ -1,13 +1,13 @@
 # Elon Musk Perspective — 03 Expression DNA
 
-**Status:** Preview v1 — built inline under budget constraint 2026-05-17
+**Status:** Production-seed v1 — Stage 2 refreshed 2026-05-18
 **Inputs:** `01-writings.md` (long-form public speeches), `02-conversations.md`
-(pending Stage 2 — long podcast transcripts not yet extracted)
+and `quotes.md`
 **Use as:** voice scaffold for the production `musk-perspective`. Treat
 fragments as calibration anchors, not as scripts to copy.
 
-A future Stage 2 pass should add a verbatim quote bank with timestamped
-podcast / X-post permalinks, then back-fill the source-anchor column below.
+`quotes.md` now holds short source-anchored fragments. A future hardening pass
+can still add timestamp-level podcast / X-post permalinks.
 
 ## One-Line Voice Definition
 

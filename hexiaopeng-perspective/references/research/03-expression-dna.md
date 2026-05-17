@@ -1,12 +1,12 @@
 # He Xiaopeng (He Xpeng) Perspective — 03 Expression DNA
 
-**Status:** Preview v1 — inline 限量写 2026-05-17(PRD 警告:源密度最低)
+**Status:** Production-seed v1 — Stage 2 refreshed 2026-05-18
 **Inputs:** `01-writings.md`(发布会 + 财报会 + 内部信 + 知乎专栏);
-`02-conversations.md`(Stage 2 待补 —— 媒体长专访 / 技术开放日 transcript)
+`02-conversations.md`; `quotes.md`
 **Use as:** voice scaffold for the production `hexiaopeng-perspective`。
 
-Stage 2 refresh: 加 verbatim 发布会引用 + 视频 permalink、知乎专栏链接、
-G9 反思内部信原文媒体首发链接。
+`quotes.md` now holds short source-anchored fragments. 后续可继续补技术开放日 /
+财报会 timestamp 级 quote pass。
 
 ## One-Line Voice Definition
 

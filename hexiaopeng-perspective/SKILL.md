@@ -365,17 +365,12 @@ XNGP 在 X 个城市的开通节奏 / 算法接管率 / 数据闭环规模 > 销
 
 ## Stage 2 Refresh Notes
 
-这是 Preview v1(2026-05-17 inline 限量写,源密度最稀)。Stage 2 待补:
+Stage 2 production-seed 已于 2026-05-18 落地:
 
-- `references/research/02-conversations.md`(媒体长专访 / 技术开放日
-  transcript / 财报会问答合集)。
-- `references/research/04-external-views.md`(媒体长报道 / 投资人视角 /
-  G9 翻车期间外部读法 / 大众合作外部解读 / 飞行汽车外部质疑)。
-- `references/research/06-timeline.md`(2004 → 2026 voice 漂移与决策时间线,
-  UC → 阿里 → 小鹏投资 → 全职 CEO → P7 NGP → G9 失败 → 大众合作 → MONA →
-  欧洲 → 飞行汽车)。
-- `03-expression-dna.md` 的 verbatim 发布会引用 + 视频 permalink。
-- 头像 `../images/hexiaopeng.jpg` 插画版(严禁真人照片)。
+- `references/research/02-conversations.md`
+- `references/research/04-external-views.md`
+- `references/research/06-timeline.md`
+- `references/research/quotes.md`
 
-本 skill 在当前 preview 深度下可用于 MBA Phase 4 judge 调用,但 voice 触感
-比 leijun-perspective 浅 30%。
+剩余可选增强:补技术开放日 / 财报会 timestamp 级 quote pass,以及
+`../images/hexiaopeng.jpg` 插画头像(严禁真人照片)。

@@ -345,16 +345,12 @@ material 的创始人在 origin 维度封顶。
 
 ## Stage 2 Refresh Notes
 
-这是 Preview v1(2026-05-17 inline 限量写)。Stage 2 待补:
+Stage 2 production-seed 已于 2026-05-18 落地:
 
-- `references/research/02-conversations.md`(B 站 vlog 长片 + 晚点 LatePost /
-  36 氪 长专访 + 微博答复合集)。
-- `references/research/04-external-views.md`(媒体长报道 / 投资人视角 /
-  友商评价 / MEGA 翻车期间外部读法)。
-- `references/research/06-timeline.md`(2005 → 2026 voice 漂移与决策时间线,
-  泡泡网 → 汽车之家 → SEV → 理想 ONE → MEGA → 反思 → L6 恢复期)。
-- `03-expression-dna.md` 的 verbatim 微博引用 + permalink 锚点。
-- 头像 `../images/lixiang.jpg` 插画版(严禁真人照片)。
+- `references/research/02-conversations.md`
+- `references/research/04-external-views.md`
+- `references/research/06-timeline.md`
+- `references/research/quotes.md`
 
-本 skill 在当前 preview 深度下可用于 MBA Phase 4 judge 调用,但 Stage 2
-之前 voice 触感比 leijun-perspective 略浅。
+剩余可选增强:补微博 permalink / B 站视频 timestamp 级 quote pass,以及
+`../images/lixiang.jpg` 插画头像(严禁真人照片)。

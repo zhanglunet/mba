@@ -1,8 +1,9 @@
 # Auto Industry Panel — Judge Build PRD
 
-**Status:** Implemented v0.2.19 — auto panel 5 位 perspective 已落地
+**Status:** Implemented v0.2.20 — auto panel 5 位 perspective 已落地
 **Created:** 2026-05-17
-**Decision:** Path A 先建雷军已完成;随后补齐 4 位 v1 preview。Stage 2 待补深调研。
+**Decision:** Path A 先建雷军已完成;随后补齐 4 位 production-seed v1。Stage 2
+基础深调研已于 2026-05-18 落地。
 
 ---
 
@@ -12,9 +13,9 @@
 (马斯克 / 雷军 / 李想 / 何小鹏 / 李斌)各建一份 `<slug>-perspective/` skill,
 使得 `/mba <auto-brand> --industry auto` 能跑完整的 5 评委 Phase 4。
 
-截至 v0.2.19,这个目标已完成。`leijun` 是 full v1;`musk` / `lixiang` /
-`hexiaopeng` / `libin` 是 v1 preview,可用于 Phase 4,但 Stage 2 仍需补齐更高密度
-研究材料。
+截至 2026-05-18,这个目标已完成。`leijun` 是 full v1;`musk` / `lixiang` /
+`hexiaopeng` / `libin` 是 production-seed v1,均已有 6/6 路研究材料和
+`quotes.md` URL-anchor bank。后续只剩 timestamp quote pass / 头像等增强项。
 
 ## 2. 为什么不能直接用 default panel
 
@@ -152,7 +153,9 @@ perspective skill。**3-5 天**是合理估计(单人,熟悉 /research --persona
 
 - [x] 接受 Path A,开始建雷军 perspective
 - [x] 发布 `leijun-perspective` full v1
-- [x] 补齐 4 位汽车评委 v1 preview
-- [ ] 为 `musk` / `lixiang` / `hexiaopeng` / `libin` 补 Stage 2 深调研
-- [ ] 给每位 auto judge 补 portrait 和 quote bank
-- [ ] 为 self-conflict 做 Phase 0 自动提示或默认 drop 规则
+- [x] 补齐 4 位汽车评委 production-seed v1
+- [x] 为 `musk` / `lixiang` / `hexiaopeng` / `libin` 补 Stage 2 深调研基础包
+- [x] 给 4 位 production-seed auto judge 补 `quotes.md` URL-anchor bank
+- [x] 为 self-conflict 补 panel 文档和 `auto.yaml` 默认 drop 规则
+- [ ] 给每位 auto judge 补 portrait
+- [ ] 为 self-conflict 做 Phase 0 runtime 自动提示 / 默认 drop

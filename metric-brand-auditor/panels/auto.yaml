@@ -3,18 +3,22 @@
 # 汽车 / 电动车 panel —— 5 位创始人 CEO 视角。
 # 通过 industries.yaml 被 `--industry auto` / `--industry ev` 引用。
 #
-# 状态(2026-05-17):5 位 perspective skill 都已存在,panel 可用于 MBA Phase 4。
+# 状态(2026-05-18):5 位 perspective skill 都已存在,panel 可用于 MBA Phase 4。
 #   - leijun:full v1(6/6 路调研 + SKILL.md 305 行)
-#   - musk / lixiang / libin / hexiaopeng:v1 preview(3/6 路调研:01-writings /
-#     03-expression-dna / 05-decisions + SKILL.md ~300-340 行)。Stage 2 待补
-#     02-conversations / 04-external-views / 06-timeline + verbatim quote bank
-#     + URL anchors + 头像。具体待办见各 perspective 的 "Stage 2 Refresh Notes"。
-# v1 preview 4 位的 voice 触感比 leijun 浅约 30%,但可用于 MBA Phase 4 judge 调用。
+#   - musk / lixiang / libin / hexiaopeng:production-seed v1(6/6 路调研 +
+#     quotes.md URL-anchor bank 已落地)。仍待可选增强:更细 timestamp quote pass
+#     + 插画头像。
 #
 # Self-conflict rule:
 #   - For Xiaomi / Redmi / Xiaomi Auto / 小米 / 小米汽车 / SU7 audits, use
 #     --panel-drop leijun by default.
-#   - If leijun is kept, his output is founder self-check only and must not be
+#   - For Tesla / SpaceX / X / xAI / Neuralink / Starlink / The Boring Company,
+#     use --panel-drop musk.
+#   - For Li Auto / 理想 / 车和家 / 汽车之家, use --panel-drop lixiang.
+#   - For XPeng / 小鹏 / MONA / UC, use --panel-drop hexiaopeng.
+#   - For NIO / 蔚来 / Onvo / 乐道 / Firefly / 萤火虫 / 易车, use
+#     --panel-drop libin.
+#   - If the conflicted judge is kept, his output is founder self-check only and must not be
 #     treated as a neutral cross-brand score.
 
 name: auto

@@ -1,13 +1,13 @@
 # Li Xiang Perspective — 03 Expression DNA
 
-**Status:** Preview v1 — built inline under budget constraint 2026-05-17
+**Status:** Production-seed v1 — Stage 2 refreshed 2026-05-18
 **Inputs:** `01-writings.md`(微博 + 内部信 + 发布会); `02-conversations.md`
-(Stage 2 待补 —— B 站 vlog 长片 + 36 氪 / 晚点 LatePost 长专访)
+and `quotes.md`
 **Use as:** voice scaffold for the production `lixiang-perspective`. 片段当
 calibration anchor 用,不要直接照抄。
 
-Stage 2 refresh:加 verbatim 微博引用 + 时间戳 permalink(@李想),按
-voice function 列表逐条 back-anchor。
+`quotes.md` now holds short source-anchored fragments. 后续可继续补微博 /
+B 站 timestamp 级 quote pass。
 
 ## One-Line Voice Definition
 

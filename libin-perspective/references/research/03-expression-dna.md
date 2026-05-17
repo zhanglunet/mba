@@ -1,12 +1,12 @@
 # Li Bin (William Li) Perspective — 03 Expression DNA
 
-**Status:** Preview v1 — inline 限量写 2026-05-17
+**Status:** Production-seed v1 — Stage 2 refreshed 2026-05-18
 **Inputs:** `01-writings.md`(NIO Day + 内部信 + 用户面对面 + 财报会);
-`02-conversations.md`(Stage 2 待补 —— 用户聊天纪录 / 媒体长专访)
+`02-conversations.md`; `quotes.md`
 **Use as:** voice scaffold for the production `libin-perspective`。
 
-Stage 2 refresh:加 verbatim NIO Day 演讲引用 + 视频 permalink,内部信原文
-首发链接,财报会音频时间码。
+`quotes.md` now holds short source-anchored fragments. 后续可继续补 NIO Day /
+用户面对面 timestamp 级 quote pass。
 
 ## One-Line Voice Definition
 

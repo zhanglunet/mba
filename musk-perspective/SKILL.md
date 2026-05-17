@@ -397,19 +397,13 @@ judge the brand-promise structure but not the current state.
 
 ## Stage 2 Refresh Notes
 
-This is a Preview v1 built under budget constraint on 2026-05-17. The
-following are deliberately deferred to a Stage 2 refresh:
+Stage 2 production-seed landed on 2026-05-18:
 
-- `references/research/02-conversations.md` (long Lex Fridman / Joe Rogan
-  / Tim Dodd podcast transcripts with timestamped fragments).
-- `references/research/04-external-views.md` (Isaacson lens cross-check,
-  regulatory record, ex-employee accounts).
-- `references/research/06-timeline.md` (period-by-period voice drift,
-  2002 → 2026).
-- Verbatim quote bank with URL anchors per fragment in
-  `03-expression-dna.md`.
-- Portrait illustration at `../images/musk.jpg` (must be illustration /
-  monogram, never a real photograph).
+- `references/research/02-conversations.md`
+- `references/research/04-external-views.md`
+- `references/research/06-timeline.md`
+- `references/research/quotes.md`
 
-The skill is usable for MBA Phase 4 judge calls at this preview depth.
-Future quality will be limited until Stage 2 lands.
+Remaining optional hardening: add timestamp-level podcast fragments for Joe
+Rogan / Lex Fridman / Everyday Astronaut and add a non-photographic portrait at
+`../images/musk.jpg`.
