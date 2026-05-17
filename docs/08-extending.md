@@ -25,7 +25,7 @@ Lead 自动:
 
 ## 2. 添加新评委
 
-新评委 = 一个新的 `*-perspective/` 目录,跟现有 5 个同结构。
+新评委 = 一个新的 `*-perspective/` 目录,跟现有 production perspective 同结构。
 
 ### 2.1 复制模板
 

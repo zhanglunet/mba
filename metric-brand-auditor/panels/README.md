@@ -163,24 +163,35 @@ panel 文件:
 
 ### 5.2  Skeleton panel —— "评委还没建" 状态
 
-panel yaml 顶部加 `status: skeleton` 字段标记"占位 panel",作用:
+panel yaml 顶部加 `status: skeleton` 字段标记"占位 / 预览 panel",作用:
 
-- Phase 0.2 加载到这种 panel 时会打印一行明确提示,告诉用户"判分这一步会自动跳过"
+- Phase 0.2 加载到这种 panel 时会打印一行明确提示,告诉用户这套 panel 还没完全毕业
 - 区分"用户误删了 perspective skill" 和 "panel 本身就是占位等评委到位"
 
-`auto.yaml` 就是这种状态 —— 5 位汽车评委(马斯克 / 雷军 / 李想 / 何小鹏 / 李斌)
-列了名字,但还没建对应的 perspective skill。跑 `/mba xiaomi --industry auto` 会:
+`auto.yaml` 曾经是全员占位;v0.2.19 之后,5 位汽车评委(马斯克 / 雷军 / 李想 /
+何小鹏 / 李斌)的 perspective skill 都已存在,可用于 MBA Phase 4。当前状态是:
+
+- `leijun`:full v1,6/6 路调研已落地。
+- `musk` / `lixiang` / `hexiaopeng` / `libin`:v1 preview,可调用,但 Stage 2 仍要补
+  conversations / external views / timeline / quote bank / URL anchors / portrait。
+
+跑 `/mba byd --industry auto` 会:
 
 1. resolve 到 `auto.yaml`
-2. 检测 status: skeleton → 打印警告
-3. Phase 4 探测 5 个 slug 全 MISSING → 整体 `--no-judges`
-4. Phase 1-3 + 5 正常跑,产出 synthesis-only 报告 + HTML
+2. 检测到 auto panel 已是可运行状态
+3. Phase 4 调用 5 位汽车评委打分
+4. Phase 5 合成报告 + HTML
 
-这是有意设计的"渐进可用":即使评委没到位,合成报告本身已经有价值。等评委填齐后,
-删掉 `status: skeleton` 字段,这个 panel 就自动从 skeleton 升级到正式状态。
+评小米 / Redmi / Xiaomi Auto / SU7 时,使用:
 
-要让 skeleton 升级:对每位 judge 跑一遍 §3 那 6 步流程 —— 模板 → frontmatter →
-6 路调研 → 头像 → 单跑确认 → 改 panel yaml(这里只剩"删掉 status: skeleton")。
+```bash
+/mba xiaomi --industry auto --quick --panel-drop leijun
+```
+
+如果保留 `leijun`,他的输出只能当 founder self-check,不能当中立横评。
+
+这是有意设计的"渐进可用":其它 skeleton panel 即使评委没到位,合成报告本身也有价值。
+等评委填齐后,删掉 `status: skeleton` 字段,这个 panel 就自动从 skeleton 升级到正式状态。
 
 ### 5.3  Self-conflict judges —— 品牌与评委有关联时怎么处理
 

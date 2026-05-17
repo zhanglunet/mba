@@ -1,8 +1,8 @@
 # Auto Industry Panel — Judge Build PRD
 
-**Status:** Proposal — 还没决定走哪条路
+**Status:** Implemented v0.2.19 — auto panel 5 位 perspective 已落地
 **Created:** 2026-05-17
-**Decision needed:** Path A(先建 1 个验证模板)vs Path B(5 个并行)
+**Decision:** Path A 先建雷军已完成;随后补齐 4 位 v1 preview。Stage 2 待补深调研。
 
 ---
 
@@ -11,6 +11,10 @@
 把 `panels/auto.yaml` 从 SKELETON 状态升级到可用 —— 给 5 位汽车评委
 (马斯克 / 雷军 / 李想 / 何小鹏 / 李斌)各建一份 `<slug>-perspective/` skill,
 使得 `/mba <auto-brand> --industry auto` 能跑完整的 5 评委 Phase 4。
+
+截至 v0.2.19,这个目标已完成。`leijun` 是 full v1;`musk` / `lixiang` /
+`hexiaopeng` / `libin` 是 v1 preview,可用于 Phase 4,但 Stage 2 仍需补齐更高密度
+研究材料。
 
 ## 2. 为什么不能直接用 default panel
 
@@ -144,9 +148,11 @@ perspective skill。**3-5 天**是合理估计(单人,熟悉 /research --persona
 
 ## 10. Next decision
 
-跑完这份 PRD 后,要决定:
+跑完这份 PRD 后,下一步改为 Stage 2:
 
-- [ ] 接受 Path A,开始建雷军 perspective(下一步 `/research 雷军 --persona-mode`)
-- [ ] 改 Path B(请填写理由)
-- [ ] 跳过 auto,换别的行业(教育 / 消费品 / 跨境电商 / ...)
-- [ ] 现在不动,本 PRD 归档,等有具体汽车品牌审计需求再启动
+- [x] 接受 Path A,开始建雷军 perspective
+- [x] 发布 `leijun-perspective` full v1
+- [x] 补齐 4 位汽车评委 v1 preview
+- [ ] 为 `musk` / `lixiang` / `hexiaopeng` / `libin` 补 Stage 2 深调研
+- [ ] 给每位 auto judge 补 portrait 和 quote bank
+- [ ] 为 self-conflict 做 Phase 0 自动提示或默认 drop 规则

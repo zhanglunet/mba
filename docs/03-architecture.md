@@ -33,18 +33,25 @@ mba/                                   ← 仓库根
 │       └── report-template.md
 │
 │ ── 评委层 ────────────────────────────────
-├── fusheng-perspective/               ← 5 套人物视角 skill
-├── jobs-perspective/                       每套结构相同:
-├── likejia-perspective/                      ├── SKILL.md         (frontmatter + 触发规则 + DNA)
-├── wu-jundong-perspective/                   ├── references/
-└── zhang-yiming-perspective/                 │   └── research/
-                                              │       ├── 01-writings.md
-                                              │       ├── 02-conversations.md
-                                              │       ├── 03-expression-dna.md
-                                              │       ├── 04-external-views.md
-                                              │       ├── 05-decisions.md
-                                              │       └── 06-timeline.md
-                                              └── scripts/         (字幕下载 / 调研合并工具)
+├── fusheng-perspective/               ← production 人物视角 skill
+├── jobs-perspective/
+├── likejia-perspective/
+├── wu-jundong-perspective/
+├── zhang-yiming-perspective/
+├── leijun-perspective/
+├── musk-perspective/
+├── lixiang-perspective/
+├── hexiaopeng-perspective/
+└── libin-perspective/                      每套结构相同:
+                                            ├── SKILL.md         (frontmatter + 触发规则 + DNA)
+                                            ├── references/research/
+                                            │   ├── 01-writings.md
+                                            │   ├── 02-conversations.md
+                                            │   ├── 03-expression-dna.md
+                                            │   ├── 04-external-views.md
+                                            │   ├── 05-decisions.md
+                                            │   └── 06-timeline.md
+                                            └── scripts/         (字幕下载 / 调研合并工具)
 │
 │ ── 基建层 ────────────────────────────────
 ├── wuying_open.py                     ← 阿里云无影 AgentBay 一次性会话
@@ -74,7 +81,7 @@ mba/                                   ← 仓库根
                   ▼                  ▼
           ┌──────────────┐   ┌──────────────────┐
           │ research     │   │ *-perspective    │
-          │ (复用搜索)    │   │ (5 套人格 skill)  │
+          │ (复用搜索)    │   │ (人物视角 skill)  │
           └──────┬───────┘   └──────────────────┘
                  │
             可选 ▼

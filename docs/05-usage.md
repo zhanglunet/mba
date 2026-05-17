@@ -137,8 +137,13 @@ Lead 只跑维度 2/3/4/6/7,跳过 1(创始叙事)和 5(视觉)。评委仍然 5
 ```
 
 `--industry` 会查 `metric-brand-auditor/panels/industries.yaml`,再解析到对应的
-`panels/<name>.yaml`。如果 panel 是 `status: skeleton`,MBA 会清楚提示本次自动降级为
-`--no-judges`:只产出 synthesis 报告,不伪造尚未建好的评委 persona。
+`panels/<name>.yaml`。如果 panel 是 `status: skeleton`,MBA 会清楚提示它仍是占位
+或预览状态:能 resolve 到的评委照常跑,缺失的评委降级为 N-of-M 并打
+`judges_incomplete` flag;如果全员缺失,才整体降级为 `--no-judges`。
+
+`auto.yaml` 在 v0.2.19 已可用于 Phase 4:雷军是 full v1,马斯克 / 李想 / 何小鹏 /
+李斌是 v1 preview。评小米 / Redmi / Xiaomi Auto / SU7 时默认加
+`--panel-drop leijun`,避免创始人自评被当成中立横评。
 
 也可以直接指定 panel:
 

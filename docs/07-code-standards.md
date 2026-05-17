@@ -217,7 +217,7 @@ Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
 
 - 用 SemVer:`vMAJOR.MINOR.PATCH`
 - 文档更新 = patch(`v0.2.x`)
-- 新 skill / 新评委 = minor(`v0.3.0`)
+- 新 skill / 新评委 = feature release;0.x 阶段若不破坏兼容可发 patch(`v0.2.x`)
 - SKILL.md 不向后兼容的改动 = major(慎重,目前还没到 1.0)
 - 每个 minor+ 版本配套 GitHub Release,release notes 列出所有 commit summary
 
