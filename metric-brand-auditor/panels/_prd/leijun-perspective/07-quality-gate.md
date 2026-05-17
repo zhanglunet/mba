@@ -3,7 +3,7 @@
 **Status:** Review checkpoint for draft promotion
 **Created:** 2026-05-17
 **Reviewed artifact:** `SKILL-draft.md`
-**Decision:** Not ready to promote to production `leijun-perspective/SKILL.md`
+**Decision:** Promoted to production v1 by user request
 **Dogfood update:** Option A BYD dogfood executed; resolver-only Option B check
 executed; see `dogfood/`
 **Quote update:** 2022 low-point and 2024 SU7 livestream fragments added to
@@ -27,7 +27,7 @@ would make the panel resolver treat `leijun` as available.
 | Primary-source ratio | Needs review | Strong speech layer, weaker conversational layer; not yet safe to claim the repo's 80% primary-source quality bar |
 | Xiaomi conflict rule | Partial pass | Draft and panel docs state the rule; runtime still does not enforce it |
 | Dogfood test | Partial pass | Option A BYD review passed; Option B resolver discovery passed; full `/mba` runtime review not executed |
-| Promotion readiness | Partial pass | Mechanically feasible; source review and promotion-scope decision remain |
+| Promotion readiness | Promoted | Production `leijun-perspective/SKILL.md` now exists; full `/mba` runtime dogfood remains optional |
 
 ## What Is Strong Enough
 
@@ -135,16 +135,17 @@ The repo standard says a new perspective should be tested with:
 /mba <demo brand> --panel-add <new-judge> --quick
 ```
 
-Because this draft is intentionally not installed as a production skill, the
-first dogfood used Option A: a manual single-judge simulation on BYD. That
-passed the distinctiveness check.
+At the time of the first dogfood, the draft was intentionally not installed as
+a production skill, so Option A used a manual single-judge simulation on BYD.
+That passed the distinctiveness check.
 
 The short-lived Option B resolver check also passed:
 
 - temporary `leijun-perspective/SKILL.md` made `auto.yaml` report 4 missing
   skills instead of 5
 - cleanup restored `auto.yaml` to 5 missing skills
-- no production skill was committed
+- no production skill was committed during that resolver check; production
+  promotion happened later by user request
 
 Still not done:
 
@@ -176,8 +177,9 @@ Promote only when all are true:
 Do **not** promote yet. The highest-leverage next task is now:
 
 ```text
-Decide whether this PR remains research-only or becomes a promotion PR that
-creates production `leijun-perspective/SKILL.md`.
+Production `leijun-perspective/SKILL.md` now exists. Next optional step is a
+full `/mba` runtime dogfood, or opening follow-up issues for resolver-level
+self-conflict enforcement.
 ```
 
 The BYD dogfood suggests the point of view is distinct enough to keep refining.

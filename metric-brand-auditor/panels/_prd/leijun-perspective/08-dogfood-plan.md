@@ -211,6 +211,6 @@ After a passing dogfood, choose one:
 3. **Revise draft:** if dogfood fails, update `SKILL-draft.md` and
    `03-expression-dna.md`, then rerun BYD before promotion.
 
-Recommended next action: decide whether this PR should remain research-only, or
-whether to create a dedicated promotion commit with production
-`leijun-perspective/SKILL.md`.
+Promotion has now happened. Recommended next action: run a full `/mba` runtime
+dogfood only if we want to test end-to-end report generation with `leijun`
+enabled.

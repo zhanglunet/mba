@@ -79,6 +79,5 @@ Decide whether to run a short-lived Option B runtime dogfood, or move directly
 to a promotion PR that creates production `leijun-perspective/SKILL.md`.
 ```
 
-Option B resolver discovery has now passed. A full `/mba` runtime dogfood is
-still optional and should happen only if the next step is promotion, not
-research-only merge.
+Option B resolver discovery has passed and production `leijun-perspective/SKILL.md`
+now exists. A full `/mba` runtime dogfood remains optional.

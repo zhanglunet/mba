@@ -78,10 +78,9 @@ Cleanup checks passed:
 
 Promotion is mechanically feasible. The next decision is product-level:
 
-1. Promote `leijun-perspective/SKILL.md` in a dedicated PR, copy the research
-   packet into `leijun-perspective/references/research/`, and leave
-   `auto.yaml` as skeleton until more auto judges exist.
-2. Or keep this PR as research-only and merge it as the full prescan packet.
+1. Production `leijun-perspective/SKILL.md` now exists and the research packet
+   has been copied into `leijun-perspective/references/research/`.
+2. Leave `auto.yaml` as skeleton until more auto judges exist.
 
-Do not accidentally mix the two. A production skill changes resolver behavior
-across panels.
+Production skill creation changes resolver behavior across panels; this is now
+intentional.

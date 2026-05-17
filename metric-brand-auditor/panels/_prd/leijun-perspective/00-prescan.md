@@ -1,16 +1,14 @@
 # Lei Jun Perspective — Prescan
 
-**Status:** P1 source inventory, not a usable perspective skill yet
+**Status:** P1 source inventory, promoted to production v1
 **Created:** 2026-05-17
 **Target slug:** `leijun`
 **Target panel:** `auto` first; later reusable by `vc-cn`
 **Cutoff intent:** build from public material through the 2024 SU7 launch / 2024 annual speech first. Add 2025+ only after a deliberate refresh pass.
 
-This file starts the `leijun-perspective` build without creating
-`leijun-perspective/SKILL.md` yet. That is intentional: once a real
-`<slug>-perspective/SKILL.md` exists, MBA's panel resolver treats the judge as
-available. We should only create it after the six research files and the draft
-persona pass quality checks.
+This file started the `leijun-perspective` build. Production
+`leijun-perspective/SKILL.md` now exists, so MBA's panel resolver treats
+`leijun` as available wherever a panel lists that slug.
 
 ## Build Goal
 
