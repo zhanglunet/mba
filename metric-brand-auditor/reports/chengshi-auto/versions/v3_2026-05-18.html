@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>橙仕汽车 - MBA Brand Audit v3</title>
+  <style>
+    :root { --bg:#f7f6f2; --surface:#fff; --text:#202020; --muted:#666; --line:#ddd8ce; --accent:#d76f23; --accent2:#244f63; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif; }
+    .wrap { max-width:1040px; margin:0 auto; padding:34px 20px 76px; }
+    header { padding:18px 0 28px; border-bottom:1px solid var(--line); }
+    h1 { margin:0 0 8px; font-size:36px; line-height:1.15; }
+    h2 { margin:42px 0 14px; padding-left:12px; border-left:4px solid var(--accent); font-size:23px; }
+    h3 { margin:0 0 8px; font-size:18px; }
+    a { color:#0b6bcb; }
+    .badges { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 16px; }
+    .badge { border:1px solid var(--line); background:var(--surface); border-radius:999px; padding:3px 10px; font-size:12px; color:var(--muted); }
+    .tldr { font-size:18px; max-width:900px; color:#3f3f3f; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    @media (max-width:760px) { .grid { grid-template-columns:1fr; } h1 { font-size:30px; } }
+    .card { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .judge { border-left:5px solid var(--accent); }
+    .score { font-size:28px; font-weight:800; color:var(--accent2); }
+    .quote { color:var(--muted); border-left:3px solid var(--line); padding-left:10px; font-style:italic; }
+    table { width:100%; border-collapse:collapse; background:var(--surface); margin:12px 0; }
+    th,td { border:1px solid var(--line); padding:9px 10px; text-align:center; vertical-align:top; }
+    th { background:#fbefe6; }
+    td:first-child, th:first-child { text-align:left; }
+    .callout { background:#fff8ec; border:1px solid #ecd6b7; border-left:5px solid var(--accent); border-radius:8px; padding:14px 16px; }
+    li { margin:7px 0; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>橙仕汽车 - Brand Influence Review</h1>
+      <div class="badges">
+        <span class="badge">v3</span>
+        <span class="badge">2026-05-18</span>
+        <span class="badge">Panel: auto</span>
+        <span class="badge">Judges: 5/5</span>
+        <span class="badge">Detailed web research</span>
+      </div>
+      <p class="tldr">橙仕汽车的品牌不是“新能源车”,而是“末端配送生产力工具”。它抓住了快递末端、电三轮替代、小 B 配送和移动售卖这些窄但真实的场景；下一步要把低价和应用案例升级成公开的运营账本、可靠性数据和服务承诺。</p>
+      <p class="tldr">本报告引用并扩展了 <strong>MBA — Metric Brand Auditor</strong> 的多评委品牌审计分析。官网: <a href="https://mbabrand.com">mbabrand.com</a> · GitHub: <a href="https://github.com/zhanglunet/mba">zhanglunet/mba</a></p>
+    </header>
+
+    <section>
+      <h2>Method: MBA 与评委机制</h2>
+      <p><strong>MBA</strong> 是 Metric Brand Auditor,中文可理解为“可量化品牌影响力审计器”。它先按 7 个维度做公开资料调研,再让行业评委 panel 独立打分,最后由 Lead 合成可复盘报告。</p>
+      <table>
+        <thead><tr><th>评委</th><th>视角</th><th>本报告中主要关注</th></tr></thead>
+        <tbody>
+          <tr><td>Musk</td><td>制造、物理约束、规模化</td><td>cost/km、uptime、维修和电池健康</td></tr>
+          <tr><td>雷军</td><td>用户信任、厚道价格、长期交付</td><td>低价是否能变成用户买完不后悔</td></tr>
+          <tr><td>李想</td><td>用户场景、产品矩阵、任务定义</td><td>车型是否按真实任务组织清楚</td></tr>
+          <tr><td>何小鹏</td><td>工程可靠性、智能化、组织诊断</td><td>智能和工程能力是否有真实工况指标</td></tr>
+          <tr><td>李斌</td><td>服务网络、用户社区、长期承诺</td><td>低价车能否变成可依赖服务体系</td></tr>
+        </tbody>
+      </table>
+      <p>五个评分镜头为 Origin authenticity、Category coinage、Leverage quality、Identity coherence、Real-world signal。分数不是绝对裁判,而是用来暴露不同视角的共识与分歧。</p>
+    </section>
+
+    <section>
+      <h2>Score Matrix</h2>
+      <table>
+        <thead><tr><th>Lens</th><th>Musk</th><th>雷军</th><th>李想</th><th>何小鹏</th><th>李斌</th><th>Mean</th><th>σ</th></tr></thead>
+        <tbody>
+          <tr><td>Origin authenticity</td><td>7</td><td>7</td><td>7</td><td>6</td><td>7</td><td><strong>6.8</strong></td><td>0.40</td></tr>
+          <tr><td>Category coinage</td><td>7</td><td>7</td><td>8</td><td>7</td><td>6</td><td><strong>7.0</strong></td><td>0.63</td></tr>
+          <tr><td>Leverage quality</td><td>6</td><td>7</td><td>6</td><td>6</td><td>6</td><td><strong>6.2</strong></td><td>0.40</td></tr>
+          <tr><td>Identity coherence</td><td>4</td><td>5</td><td>5</td><td>4</td><td>5</td><td><strong>4.6</strong></td><td>0.49</td></tr>
+          <tr><td>Real-world signal</td><td>5</td><td>7</td><td>6</td><td>7</td><td>7</td><td><strong>6.4</strong></td><td>0.80</td></tr>
+          <tr><td><strong>Total /50</strong></td><td><strong>29</strong></td><td><strong>33</strong></td><td><strong>32</strong></td><td><strong>30</strong></td><td><strong>31</strong></td><td><strong>31.0</strong></td><td><strong>1.41</strong></td></tr>
+        </tbody>
+      </table>
+      <p><strong>相对 v1:</strong> 综合分从 29.6 / 50 升到 31.0 / 50。真实应用信号更强，但 identity coherence 和服务数据透明度仍是短板。</p>
+    </section>
+
+    <section>
+      <h2>Lead Read</h2>
+      <div class="callout">
+        <p><strong>橙仕的核心命题:</strong> 帮末端配送经营者用更低成本、更合法、更稳定的车辆多赚钱。</p>
+      </div>
+      <p>橙仕真正的对手不是乘用车新势力，而是电三轮、低速车、传统微卡、五菱 E10、欧铃小车和无人配送车。它的强项是场景拥有感：快递末端、社区团购、商超补货、生鲜短驳、乡镇配送、农产品上行和移动售卖。</p>
+      <p>v2 的增量判断是：公开资料中出现更多规模证据，包括近 10 亿元 B 轮融资、170+ 场景 / 城市、全球 20 国、30+ 应用场景、累计约 5000 台和单人单车日配送 2000-2500 件等线索。但品牌护城河仍取决于维修、保修、配件、停运损失和残值闭环。</p>
+    </section>
+
+    <section>
+      <h2>Judge Cards</h2>
+      <div class="grid">
+        <article class="card judge"><h3>Musk</h3><div class="score">29/50</div><p class="quote">If it makes a courier more money, show the numbers.</p><p>认可真实物理问题，但要求 fleet dashboard。</p></article>
+        <article class="card judge"><h3>雷军</h3><div class="score">33/50</div><p class="quote">低价不是终点，用户买完以后不后悔，才是真的厚道。</p><p>认可普惠切口，要求全生命周期信任。</p></article>
+        <article class="card judge"><h3>李想</h3><div class="score">32/50</div><p class="quote">先告诉他，他这个生意应该买哪台车。</p><p>好场景，但缺“任务-车型-收益”地图。</p></article>
+        <article class="card judge"><h3>何小鹏</h3><div class="score">30/50</div><p class="quote">工程能力不是发布会词汇，是真实工况下的数据。</p><p>智能化要变成可靠性指标。</p></article>
+        <article class="card judge"><h3>李斌</h3><div class="score">31/50</div><p class="quote">这类车交付出去以后，品牌才真正开始。</p><p>要从低价工具车升级成服务品牌。</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>90-Day Actions</h2>
+      <ol>
+        <li>发布“橙仕车主账本 100 例”：购车成本、日单量、能耗、维修、停运、回本周期和保修结果。</li>
+        <li>建立“任务-车型-收益”导购地图：快递末端、商超补货、生鲜短驳、乡镇配送、农产品上行、移动售卖。</li>
+        <li>发布 3 城 fleet dashboard：车辆部署、日配送、uptime、维修时长、cost/km、电池健康。</li>
+        <li>发布可靠性白皮书：三电质保、故障率、维修件、满载续航、保修争议处理流程。</li>
+        <li>推出运营保障标准：服务半径、配件时效、保修判定、停运补偿、二手回收和车队 SLA。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Final Verdict</h2>
+      <p>橙仕已经完成第一步：证明场景存在、产品能卖、资本愿意支持、应用案例不是零。它还没有完成第二步：证明自己能长期服务这些小 B 用户，并把“低价购买”变成“持续赚钱”。</p>
+      <p><strong>综合分: 31.0 / 50 = 6.2 / 10。</strong> 评价：场景切口清晰、真实信号增强的早中期商用车品牌；服务数据和身份系统是主要短板。</p>
+    </section>
+  </main>
+</body>
+</html>

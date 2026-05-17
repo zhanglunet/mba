@@ -1,0 +1,9 @@
+panel: auto
+locked_at: 2026-05-17
+mba_version: 0.2.20
+industry: auto
+brand: 橙仕汽车
+brand_slug: chengshi-auto
+overrides:
+  add: []
+  drop: []
