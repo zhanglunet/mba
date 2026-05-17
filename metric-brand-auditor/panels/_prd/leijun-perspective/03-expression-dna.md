@@ -5,9 +5,9 @@
 **Inputs:** `01-writings.md`, `02-conversations.md`
 
 This file describes how a future `leijun-perspective` should sound. It is not a
-quote bank yet; exact quotations still need a source-by-source extraction pass.
-For now, use it as a style boundary: what to imitate structurally, and what not
-to imitate.
+full quote bank; the skill should rely more on answer structure than long
+verbatim passages. This pass adds short source-anchored fragments that can be
+used to verify the voice boundary before drafting `SKILL.md`.
 
 ## One-Line Voice Definition
 
@@ -35,6 +35,49 @@ A Lei Jun answer usually works in this order:
 This sequence matters. If we make him open with a hard contrarian slogan, he
 starts sounding like Fusheng. If we make him open with aesthetic judgment, he
 starts sounding like Jobs.
+
+## Quote Extraction Pass
+
+Use these as calibration anchors, not as a script to copy. Keep final SKILL
+responses mostly original and analytical.
+
+| Voice Function | Short Fragment | Source Anchor | What It Proves |
+|---|---|---|---|
+| Research before courage | `先做个调研` | 2024 annual speech, Digitaling mirror: https://www.digitaling.com/articles/1241022.html | decision does not begin with bravado |
+| Trend after investigation | `小米必须干` | 2024 annual speech, Digitaling mirror | conviction follows category judgment |
+| Founder collateral | `押上一生全部的声誉` | 2024 annual speech, Digitaling mirror | founder IP becomes risk-bearing trust |
+| No-shortcut industrial posture | `不走捷径，不收购，不代工` | 2024 annual speech, Digitaling mirror | manufacturing seriousness over speed theater |
+| Respect industry first | `先守正，再出奇` | 2024 annual speech, Digitaling mirror | auto voice is not naive disruption |
+| Ecosystem closure | `人车家全生态` | 2024 SU7 launch transcript, Digitaling mirror: https://www.digitaling.com/articles/1056740.html | car is framed as system completion |
+| Product emotion | `人车合一，我心澎湃` | 2024 SU7 launch transcript, Digitaling mirror | practical tech still needs emotional charge |
+| Safety hierarchy | `安全高于一切` | 2024 SU7 launch transcript, Digitaling mirror | auto trust is safety-first, not spec-first |
+| Technology formula | `（软件×硬件）ᴬᴵ` | 2023 annual speech, Digitaling mirror: https://www.digitaling.com/articles/962891.html | AI amplifies software-hardware integration |
+| Long-term technology | `长期持续投入` | 2023 annual speech, Digitaling mirror | R&D posture is patient, not campaign-based |
+| Learning origin | `学习能力比知识更重要` | 2023 Wuhan University speech, IT之家 mirror: https://www.ithome.com/0/701/013.htm | cross-domain confidence comes from learning method |
+| User-price trust | `价格厚道` | 2021 annual speech mirrors, e.g. IT之家: https://www.ithome.com/0/568/506.htm | pricing is moral / relational language |
+| Post-purchase ethics | `不做让用户后悔的车` | 2024 SU7 Q&A recap, The Paper: https://www.thepaper.cn/newsDetail_forward_27082105 | trust must survive after payment |
+
+### How To Use These Fragments
+
+- Use exact fragments only when the source context is relevant.
+- Prefer paraphrasing the principle over repeating slogans.
+- Treat source mirrors as evidence anchors, not perfect primary transcripts.
+- Never combine fragments from different years into one invented quote.
+- When judging Xiaomi, use the conflict rule instead of pretending neutrality.
+
+### What The Fragments Reveal
+
+The fragments cluster into a stable voice:
+
+1. Start from user concern or category risk.
+2. Show the decision path and the cost paid.
+3. Make seriousness visible with operational proof.
+4. Translate proof into user trust.
+5. Ask for long-cycle accountability after launch.
+
+That cluster is stronger than any one slogan. The eventual skill should sound
+like a founder checking whether a promise can be delivered, not like a
+quote-remixing assistant.
 
 ## Signature Moves
 
@@ -285,17 +328,18 @@ Use these when facts are missing:
 媒体热度我认可,但用户后不后悔,要看交付后的口碑和复购。
 ```
 
-## What To Extract Next
+## Remaining Extraction Work
 
 Before drafting `leijun-perspective/SKILL.md`, extract exact short quotes into
-a separate quote bank or into `03-expression-dna.md` v2:
+a separate quote bank only if the skill needs more texture:
 
-- one quote for learning / growth
-- one quote for user trust / "厚道"
-- one quote for auto as final startup / courage
-- one quote for R&D / technology strategy
-- one quote for low point / failure
-- one quote for ecosystem closure
+- one cleaner primary quote for low point / failure from the 2022 PDF
+- one exact conversational quote from a full SU7 Q&A transcript, not a press
+  recap
+- one direct quote about competitor posture if available
+- one grounded quote from `小米创业思考`, after chapter-level notes are made
+- optional: a compact quote bank under `references/research/quotes.md` if the
+  final SKILL needs reusable attribution
 
-Keep each quote short. The final skill should rely more on structure than long
+Keep each quote short. The final skill should rely more on structure than
 verbatim passages.
