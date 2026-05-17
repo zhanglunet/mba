@@ -4,6 +4,8 @@
 **Created:** 2026-05-17
 **Reviewed artifact:** `SKILL-draft.md`
 **Decision:** Not ready to promote to production `leijun-perspective/SKILL.md`
+**Dogfood update:** Option A BYD dogfood executed; see
+`dogfood/byd-review.md` and `dogfood/byd-eval.md`
 
 This quality gate checks whether the Lei Jun draft can become a real MBA
 perspective skill. It should remain in `_prd` until the blockers below are
@@ -22,8 +24,8 @@ would make the panel resolver treat `leijun` as available.
 | Source density | Conditional pass | `rg` finds 44 URL occurrences across the prescan packet, but this includes duplicates and secondary commentary |
 | Primary-source ratio | Needs review | Strong speech layer, weaker conversational layer; not yet safe to claim the repo's 80% primary-source quality bar |
 | Xiaomi conflict rule | Partial pass | Draft states the rule, but MBA/panel runtime does not yet enforce it |
-| Dogfood test | Blocked | No production skill exists, so `/mba <brand> --panel-add leijun --quick` cannot run yet |
-| Promotion readiness | Blocked | Need either temporary local production copy for dogfood or a gated promotion PR |
+| Dogfood test | Partial pass | Option A BYD dogfood produced a distinct review without creating production `SKILL.md` |
+| Promotion readiness | Blocked | Still needs quote cleanup, source review, and runtime conflict handling before production promotion |
 
 ## What Is Strong Enough
 
@@ -118,7 +120,7 @@ the product has at least one of:
 - a runtime check that drops or flags `leijun` when brand slug matches Xiaomi
   family terms
 
-### Blocker 5 — No Dogfood Review Yet
+### Blocker 5 — Full Runtime Dogfood Not Yet Done
 
 The repo standard says a new perspective should be tested with:
 
@@ -126,14 +128,19 @@ The repo standard says a new perspective should be tested with:
 /mba <demo brand> --panel-add <new-judge> --quick
 ```
 
-Because this draft is intentionally not installed as a production skill, dogfood
-has not run. The next safe step is a staged dogfood:
+Because this draft is intentionally not installed as a production skill, the
+first dogfood used Option A: a manual single-judge simulation on BYD. That
+passed the distinctiveness check, but it is not a true end-to-end `/mba
+--panel-add leijun` run.
+
+The remaining staged dogfood path is:
 
 1. Create a temporary production copy only on a branch or local scratch path.
-2. Run one non-Xiaomi auto brand, for example BYD / NIO / Li Auto / XPeng.
-3. Compare the Lei Jun review against Jobs or Fusheng to confirm it surfaces
-   distinct issues.
-4. Delete or keep gated until promotion decision.
+2. Run one non-Xiaomi auto brand through the real judge-loading path.
+3. Compare the Lei Jun review against Jobs or Fusheng to confirm it still
+   surfaces distinct issues.
+4. Delete the temporary production skill before commit unless promotion is
+   explicit.
 
 ## Promotion Criteria
 
@@ -146,18 +153,21 @@ Promote only when all are true:
 - [ ] `SKILL-draft.md` no longer depends on unresolved book notes, or those
   notes exist.
 - [ ] Xiaomi conflict handling is documented outside the draft itself.
-- [ ] One non-Xiaomi dogfood run produces an in-character, non-generic review.
+- [x] One non-Xiaomi Option A dogfood run produces an in-character,
+  non-generic review.
+- [ ] One real runtime dogfood run passes, or the promotion PR explicitly
+  accepts Option A as sufficient for first release.
 - [ ] Local `scripts/validate_panels.py` still treats `auto.yaml` as skeleton
   until promotion is intentional.
 
 ## Recommended Next Step
 
-Do **not** promote yet. The highest-leverage next task is:
+Do **not** promote yet. The highest-leverage next task is now:
 
 ```text
-Add 08-dogfood-plan.md with a staged promotion plan and a non-Xiaomi test brand.
+Extract one 2022 low-point quote and one exact Q&A quote, then update
+03-expression-dna.md and SKILL-draft.md.
 ```
 
-That plan should choose one demo brand, define what "distinct from Jobs /
-Fusheng / Zhang Yiming" means, and specify how to temporarily expose the draft
-without accidentally making `leijun` look production-ready in `auto.yaml`.
+The BYD dogfood suggests the point of view is distinct enough to keep refining.
+The remaining risk is voice evidence quality, not conceptual differentiation.

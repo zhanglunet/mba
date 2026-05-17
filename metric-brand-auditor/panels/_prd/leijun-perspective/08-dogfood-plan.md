@@ -1,12 +1,19 @@
 # Lei Jun Perspective — 08 Dogfood Plan
 
-**Status:** Staged dogfood plan, not executed
+**Status:** Option A executed; Option B not executed
 **Created:** 2026-05-17
 **Recommended test brand:** BYD / 比亚迪
-**Decision:** Dogfood should happen before production promotion
+**Decision:** Option A dogfood passed; production promotion still blocked
 
 This plan defines how to test `SKILL-draft.md` without accidentally making
 `leijun` look production-ready to MBA's panel resolver.
+
+Execution update:
+
+- Option A was executed on BYD.
+- Outputs: `dogfood/byd-review.md` and `dogfood/byd-eval.md`.
+- No production `leijun-perspective/SKILL.md` was created.
+- Option B remains available only for a later explicit promotion pass.
 
 ## Why Dogfood Is Needed
 
@@ -202,5 +209,6 @@ After a passing dogfood, choose one:
 3. **Revise draft:** if dogfood fails, update `SKILL-draft.md` and
    `03-expression-dna.md`, then rerun BYD before promotion.
 
-Recommended next action: execute Option A first. If the review is clearly
-distinct, run Option B in a separate, explicit promotion pass.
+Recommended next action: do not run Option B yet. First improve voice evidence
+by extracting one low-point quote from the 2022 speech and one exact Q&A quote,
+then update `03-expression-dna.md` and `SKILL-draft.md`.
