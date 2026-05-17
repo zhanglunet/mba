@@ -255,6 +255,7 @@ metric-brand-auditor/panels/
 
 ```
 CLI flag (--panel <name>)
+  > CLI flag (--industry <name>) → industries.yaml → panel name
   > reports/<brand-slug>/panel.yaml 里 panel: <name> 字段
   > metric-brand-auditor/panels/default.yaml
 ```
@@ -275,7 +276,7 @@ CLI flag (--panel <name>)
 # 由 Phase 0 router 在首次运行后写入
 panel: default                  # 引用 panels/default.yaml
 locked_at: 2026-05-17           # 首次绑定日期
-mba_version: 0.2.15             # 当时的 mba 版本号(后续可观测兼容性)
+mba_version: 0.2.18             # 当时的 mba 版本号(后续可观测兼容性)
 overrides:                      # 可选 —— 在 panel 之上的局部调整
   drop: []                      # 跳过这次不出场的评委 slug
   add: []                       # 临时加挂的评委(不写回 panels/)

@@ -1,0 +1,20 @@
+name: Panel validation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-panels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate panel configs
+        run: python scripts/validate_panels.py
+      - name: Compile helper scripts
+        run: python -m py_compile scripts/validate_panels.py scripts/migrate_legacy_report_panels.py

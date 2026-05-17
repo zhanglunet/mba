@@ -278,7 +278,7 @@ EVOLUTION 不是"重跑一次整个流程",而是"对变了的维度做 surgical
 | 1 | 起草新 PRD | 列 diff plan |
 | 2 | 跑全部 7 维度 | 只跑变了的 ≤ 4 维度 |
 | 3 | 写新 synthesis | 把新 dimension 嵌入旧 synthesis,产出 delta-synthesis |
-| 4 | 5 评委全打 | 评委只对变了的维度重打分,其他维度沿用上版 |
+| 4 | resolved panel 的 N 位评委全打 | resolved panel 的评委只对变了的维度重打分,其他维度沿用上版 |
 | 5 | report.md v1 | report.md v{n+1},Versions 章节 append 一行 |
 
 **关键不变量:**

@@ -21,7 +21,7 @@ REPORTS_DIR = ROOT / "metric-brand-auditor" / "reports"
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--panel", default="default", help="panel name to bind legacy reports to")
-    parser.add_argument("--mba-version", default="0.2.17", help="MBA version to record")
+    parser.add_argument("--mba-version", default="0.2.18", help="MBA version to record")
     parser.add_argument("--date", default=date.today().isoformat(), help="locked_at date")
     parser.add_argument("--dry-run", action="store_true", help="show what would be written")
     args = parser.parse_args()

@@ -21,7 +21,8 @@
    用户可以:
    - "ok 跑吧"
    - "把维度 5(视觉)去掉,只关心商业部分"
-   - "评委只用 fusheng + likejia"
+   - "这次用 --panel vc-en"
+   - "临时 --panel-drop jobs"
    - "改 brand-slug 为 openclaw-2026q2"
         │
         ▼
@@ -32,7 +33,7 @@
    [Phase 3 — Lead 合成]
         │
         ▼
-   [Phase 4 — 5 评委独立打分]   约 5-8 min
+   [Phase 4 — N 位 panel 评委独立打分]   约 5-8 min
         │
         ▼
    [Phase 5 — Lead 合并 + HTML 渲染]
@@ -52,8 +53,9 @@
 
 **Date:** YYYY-MM-DD
 **Mode:** FRESH | EVOLUTION
+**Panel:** default | vc-en | ...
 **Dimensions analyzed:** 1, 2, 3, 4, 5, 6, 7
-**Judges:** fusheng / jobs / likejia / wu-jundong / zhang-yiming
+**Judges:** {resolved panel judge slugs}
 
 ## TL;DR — How {Brand}'s influence is constructed
 {4-6 bullets,Lead 自己的声音}
