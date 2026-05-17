@@ -90,6 +90,14 @@ const DATA = {
     { text: "...", leverage: "med" },
     { text: "...", leverage: "low" }
   ],
+  legalNotices: [
+    { title: "Public-source basis", text: "This report only cites and analyzes publicly accessible sources..." },
+    { title: "Trademark and brand ownership", text: "Brand names, product names, model names, logos, marks, and trade dress belong to their lawful owners..." },
+    { title: "Images and copyright", text: "Third-party visuals, if used, remain owned by the original photographer, platform, publisher, brand, or lawful rights holder..." },
+    { title: "Relationship disclaimer", text: "MBA / the report author is not sponsored, authorized, endorsed by, affiliated with, partnered with, or acting as agent for the reviewed brand..." },
+    { title: "Non-advice", text: "This is brand-influence research and a method demonstration, not investment, financing, procurement, legal, audit, or diligence advice..." },
+    { title: "Accuracy limits", text: "Conclusions are limited by the run mode and available public evidence..." }
+  ],
   citations: [
     { label: "36kr — OpenClaw founder interview", url: "https://..." },
     ...
@@ -244,6 +252,28 @@ Copy this verbatim and inject `DATA` plus rendered HTML strings into the slots.
     border-left: 4px solid #f39c12; padding: 14px 18px; border-radius: 6px;
     margin: 0 0 24px;
   }
+  .legal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .legal-card {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-left: 4px solid var(--c-accent);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .legal-card strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--c-accent);
+  }
+  .legal-card p {
+    margin: 0;
+    color: var(--c-muted);
+    font-size: 14px;
+  }
   @media print {
     body { background: white; color: black; }
     .wrap { max-width: 100%; }
@@ -386,6 +416,18 @@ Copy this verbatim and inject `DATA` plus rendered HTML strings into the slots.
       <li>{{this.text}} <span class="leverage {{this.leverage}}">{{this.leverage}} leverage</span></li>
       {{/each}}
     </ol>
+  </section>
+
+  <section>
+    <h2>Legal, IP &amp; Disclaimer</h2>
+    <div class="legal-grid">
+      {{#each legalNotices}}
+      <div class="legal-card">
+        <strong>{{this.title}}</strong>
+        <p>{{this.text}}</p>
+      </div>
+      {{/each}}
+    </div>
   </section>
 
   <details>
@@ -590,6 +632,9 @@ The Lead generates the inner `<tbody>` HTML, not the chart library. For each len
 - [ ] All 5 judge cards present, even if one judge "withheld" — show "withheld" not 0
 - [ ] In EVOLUTION mode the delta banner is present and the score matrix uses delta cells
 - [ ] In FRESH mode there's no `gitGraph` section (only meaningful from v2 onward)
+- [ ] Legal/IP/Disclaimer exists before Citations and covers public-source basis,
+      trademark/brand ownership, images/copyright, no relationship/endorsement,
+      non-advice, and accuracy limits
 - [ ] File opens correctly in a browser (test on John: `cd ~/mba/metric-brand-auditor/reports/<brand-slug> && python3 -m http.server 8080`)
 - [ ] Mermaid `mindmap` indentation is consistent (Mermaid is whitespace-sensitive)
 - [ ] No `console.error` in browser devtools

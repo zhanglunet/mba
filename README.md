@@ -62,7 +62,7 @@ mba/
 │   │   ├── dimensions.md                7 个默认维度的提示词模板(创始叙事/产品定位/分发/社区/视觉/竞品/情绪)
 │   │   ├── judge-prompt-template.md     喂给评委的统一打分模板(5 镜头 × 1-10 分),judge 列表从 panel 读取
 │   │   ├── wuying-browser.md            云浏览器 leg 的开会话/驱动/拆除规范
-│   │   └── html-report-template.md      最终 HTML 报告的脚手架(Chart.js + Mermaid)
+│   │   └── html-report-template.md      最终 HTML 报告的脚手架(Chart.js + Mermaid + Legal/IP)
 │   ├── panels/                       ← 评委编组层:命名 panel 的 yaml 配置
 │   │   ├── default.yaml                 默认上场阵容:傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣
 │   │   ├── tech-cn.yaml                 示例:全中文科技评委
@@ -70,7 +70,7 @@ mba/
 │   │   └── README.md                    panel yaml 字段说明 + 怎么写一个新 panel
 │   └── reports/<brand-slug>/          每个品牌一个文件夹(运行 /mba <brand> 后生成)
 │       ├── report.md                    当前 canonical 报告(滚动覆盖)
-│       ├── report.html                  自包含 HTML 报告(雷达图 + 异议热力图 + 影响力构造图)
+│       ├── report.html                  自包含 HTML 报告(雷达图 + 异议热力图 + 影响力构造图 + 法律声明)
 │       ├── panel.yaml                   这个品牌锁定了哪一套 panel(首次运行写入,evolution 默认沿用)
 │       ├── versions/v{n}_{date}.{md,html}  每次 evolution 的不可变快照
 │       ├── _raw/                        过程文件:每个维度子 agent 的原始输出 + 云浏览器日志 + Lead 合成
@@ -124,7 +124,7 @@ Phase 4  N-Judge Panel   Lead 读取 panel.yaml (品牌已绑定 / CLI 覆盖 / 
    │
 Phase 5  Lead Merge      Lead 合并 synthesis + 5 份 reviews,产出:
                          • report.md(canonical Markdown)
-                         • report.html(自包含 HTML,Chart.js 雷达 + 异议热力图 + Mermaid 影响力流程图)
+                         • report.html(自包含 HTML,Chart.js 雷达 + 异议热力图 + Mermaid 影响力流程图 + Legal/IP/Disclaimer)
                          • versions/v{n}_<date>.{md,html}(冻结快照)
 ```
 
@@ -281,7 +281,7 @@ CLI flag (--panel <name>)
 # 由 Phase 0 router 在首次运行后写入
 panel: default                  # 引用 panels/default.yaml
 locked_at: 2026-05-17           # 首次绑定日期
-mba_version: 0.2.20             # 当时的 mba 版本号(后续可观测兼容性)
+mba_version: 0.2.21             # 当时的 mba 版本号(后续可观测兼容性)
 overrides:                      # 可选 —— 在 panel 之上的局部调整
   drop: []                      # 跳过这次不出场的评委 slug
   add: []                       # 临时加挂的评委(不写回 panels/)

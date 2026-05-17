@@ -46,7 +46,7 @@
 
 ### 2.1 markdown 报告(`report.md`)
 
-固定 8 个章节(顺序固定,任何品牌都一样):
+固定章节(顺序固定,任何品牌都一样):
 
 ```markdown
 # {Brand} — Brand Influence Review (v{n})
@@ -75,6 +75,9 @@
 ## Action recommendations (next 90 days)
 {3-5 条具体建议,按 leverage 排序}
 
+## Legal, IP & Disclaimer
+{公开资料说明 / 商标与品牌归属 / 图片与版权 / 关系说明 / 非投资采购法律建议 / 准确性限制}
+
 ## Citations
 {去重合并所有 sub-agent 的引用}
 
@@ -85,7 +88,7 @@
 
 ### 2.2 HTML 报告(`report.html`)
 
-自包含单文件(只引 Chart.js / Mermaid CDN,无其他依赖)。布局从上到下 9 块:
+自包含单文件(只引 Chart.js / Mermaid CDN,无其他依赖)。布局从上到下 10 块:
 
 | # | 块 | 工具 | 关键设计 |
 |---|---|---|---|
@@ -99,6 +102,7 @@
 | 7 | Sentiment Trend | Chart.js line | 仅当 Phase 2 拿到时间序列时显示,否则 N/A |
 | 8 | Brand Essence Mindmap | Mermaid mindmap | 品牌为根,7 维度为枝,每枝顶 2-3 finding |
 | 9 | Action Recommendations | 纯 HTML | 编号 + leverage badge(high/med/low) |
+| 10 | Legal/IP/Disclaimer | 纯 HTML | 公开资料、商标/IP、图片版权、无背书关系、非建议性质、准确性限制 |
 
 **配色 / 排版规则:**
 

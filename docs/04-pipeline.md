@@ -246,13 +246,24 @@ for judge in [fusheng, jobs, likejia, wu-jundong, zhang-yiming]:
 
 ### 5.a markdown 报告
 
-模板见 `metric-brand-auditor/SKILL.md`,8 个章节顺序固定(详见 [02-product-design.md](02-product-design.md) §2.1)。
+模板见 `metric-brand-auditor/SKILL.md`,章节顺序固定(详见 [02-product-design.md](02-product-design.md) §2.1)。
+
+**强制 Legal/IP/Disclaimer 模块**:每份 `report.md` 必须在 Citations/Sources 前包含
+`Legal, IP & Disclaimer`。该模块必须说明:
+
+- 报告仅引用公开资料,未使用非公开文件、商业秘密或未授权数据库
+- 商标、品牌名、产品名、车型名、logo、商业外观等归合法权利方所有
+- MBA / 作者与被评品牌无赞助、授权、合作、背书或代理关系(除非用户明确提供)
+- 第三方图片、截图、产品视觉的版权与相关权利归原权利方所有
+- MBA 的文字分析/评分框架是研究性表达,不改变第三方资料的原有权利归属
+- 报告不构成投资、融资、采购、法律、审计、产品质量认证或商业尽调建议
+- 结论受运行模式和资料边界限制,重大决策前需核验一手资料
 
 ### 5.b HTML 报告
 
 **渲染方法**:Lead 直接生成完整 HTML 字符串,Write 落盘。**没有 SSR/build**。
 
-**模板源**:`metric-brand-auditor/references/html-report-template.md` 提供 scaffold,Lead 把数据填进去。
+**模板源**:`metric-brand-auditor/references/html-report-template.md` 提供 scaffold,Lead 把数据填进去。HTML 必须和 Markdown 一样在 Citations 前显示 Legal/IP/Disclaimer,不能只放在 footer 或隐藏脚注里。
 
 **Sanity check**:Lead 写完后必须告诉用户 "open report.html",并提示 "如果 Mermaid 报错请告诉我"。
 
