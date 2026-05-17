@@ -9,6 +9,12 @@
 #   - Phase 0.2 检测到 status: skeleton 会显式提示用户
 # 要让这个 panel 真正可用,按 panels/README.md §3 给每位 judge 跑 6 路调研 +
 # 写 perspective skill,做完再把下面 status: 字段删掉。
+#
+# Self-conflict rule:
+#   - For Xiaomi / Redmi / Xiaomi Auto / 小米 / 小米汽车 / SU7 audits, use
+#     --panel-drop leijun by default.
+#   - If leijun is kept, his output is founder self-check only and must not be
+#     treated as a neutral cross-brand score.
 
 name: auto
 display_name: Auto Industry Panel (Skeleton)
