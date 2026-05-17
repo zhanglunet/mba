@@ -316,5 +316,6 @@ Before turning this into production `leijun-perspective/SKILL.md`:
 - [x] Add one cleaner low-point / failure quote from the 2022 speech PDF.
 - [x] Add one exact SU7 Q&A / livestream quote for conversational voice.
 - [ ] Decide whether production skill lives as a sibling directory or stays gated.
-- [ ] Add panel conflict behavior before enabling `leijun` in `auto.yaml`.
-- [ ] Dogfood on one non-Xiaomi auto brand with `--panel-add leijun --quick`.
+- [x] Document panel conflict behavior before enabling `leijun` in `auto.yaml`.
+- [x] Dogfood one non-Xiaomi auto brand via Option A simulation.
+- [ ] Optional: dogfood via short-lived runtime `--panel-add leijun --quick`.

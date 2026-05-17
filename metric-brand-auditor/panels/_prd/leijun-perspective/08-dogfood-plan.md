@@ -209,6 +209,6 @@ After a passing dogfood, choose one:
 3. **Revise draft:** if dogfood fails, update `SKILL-draft.md` and
    `03-expression-dna.md`, then rerun BYD before promotion.
 
-Recommended next action: do not run Option B yet. First document Xiaomi conflict
-handling outside the draft itself, then decide whether to run a short-lived
-runtime dogfood.
+Recommended next action: decide whether to run Option B in a short-lived local
+production copy, or move directly to a promotion PR that creates production
+`leijun-perspective/SKILL.md`.

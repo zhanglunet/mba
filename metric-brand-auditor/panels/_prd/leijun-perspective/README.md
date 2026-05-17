@@ -29,3 +29,5 @@ judge, so a half-built skill would make `auto.yaml` look healthier than it is.
 - At least six P0/P1 sources are cited with URLs and dates.
 - Direct Lei Jun / Xiaomi first-person material is clearly separated from press coverage.
 - Conflict rule for Xiaomi audits is specified before enabling the judge.
+  External rule now lives in `metric-brand-auditor/panels/README.md §5.3` and
+  `auto.yaml` comments.

@@ -67,15 +67,16 @@ Remaining blockers from `07-quality-gate.md` still stand:
 - conversational evidence is still recap-heavy
 - book dependency has been removed from production v1 and retained as future
   refresh material
-- runtime Xiaomi conflict rule is not enforced outside the draft
+- Xiaomi conflict rule is now documented outside the draft, but not yet runtime
+  enforced
 
 ## Recommendation
 
 Do not promote yet. Next best step:
 
 ```text
-Document Xiaomi conflict handling outside the draft itself, then decide whether
-to run a short-lived Option B runtime dogfood.
+Decide whether to run a short-lived Option B runtime dogfood, or move directly
+to a promotion PR that creates production `leijun-perspective/SKILL.md`.
 ```
 
 After that, run Option B in a separate promotion pass if the user explicitly

@@ -182,6 +182,31 @@ panel yaml 顶部加 `status: skeleton` 字段标记"占位 panel",作用:
 要让 skeleton 升级:对每位 judge 跑一遍 §3 那 6 步流程 —— 模板 → frontmatter →
 6 路调研 → 头像 → 单跑确认 → 改 panel yaml(这里只剩"删掉 status: skeleton")。
 
+### 5.3  Self-conflict judges —— 品牌与评委有关联时怎么处理
+
+有些行业 panel 会包含"行业创始人 / CEO"视角。这个视角在评别的品牌时有价值,但评
+自己公司或强关联产品时会有利益冲突。规则:
+
+- 如果品牌与某个 judge 强关联,优先在本次运行使用 `--panel-drop <slug>`。
+- 如果用户明确要保留该 judge,该 judge 只能作为"创始人自检"输出,不能给中立横评分。
+- Lead 合成报告必须显式标注 conflict,不要把该分数混进平均分。
+- 这种规则先写在 panel 文档和 perspective skill 里;未来可升级为 resolver runtime check。
+
+当前已知规则:
+
+| Panel | Judge | Strongly associated brands | Default action |
+|---|---|---|---|
+| `auto` | `leijun` | Xiaomi / Redmi / Xiaomi Auto / 小米 / 小米汽车 / SU7 | use `--panel-drop leijun`; if kept, self-check only |
+
+示例:
+
+```text
+/mba xiaomi --industry auto --quick --panel-drop leijun
+```
+
+如果后续新增 `lixiang` / `hexiaopeng` / `libin` / `musk` 的 production skill,也应在这里补
+对应的自家公司 conflict 规则。
+
 ---
 
 ## 6. 校验规则 —— Phase 0 拒绝加载的 panel

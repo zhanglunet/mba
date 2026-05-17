@@ -25,9 +25,9 @@ would make the panel resolver treat `leijun` as available.
 | Anti-fabrication | Pass | Draft explicitly blocks private claims, 2025+ unstated facts, Xiaomi-neutral judging, and unsourced numbers |
 | Source density | Conditional pass | `rg` finds 44 URL occurrences across the prescan packet, but this includes duplicates and secondary commentary |
 | Primary-source ratio | Needs review | Strong speech layer, weaker conversational layer; not yet safe to claim the repo's 80% primary-source quality bar |
-| Xiaomi conflict rule | Partial pass | Draft states the rule, but MBA/panel runtime does not yet enforce it |
+| Xiaomi conflict rule | Partial pass | Draft and panel docs state the rule; runtime still does not enforce it |
 | Dogfood test | Partial pass | Option A BYD dogfood produced a distinct review without creating production `SKILL.md` |
-| Promotion readiness | Blocked | Book decision resolved for v1; still needs source review and runtime conflict handling before production promotion |
+| Promotion readiness | Blocked | Book decision and external conflict docs resolved for v1; still needs source review and optional runtime enforcement before production promotion |
 
 ## What Is Strong Enough
 
@@ -109,7 +109,7 @@ Needed:
 - confirm the 2024 livestream fragment is treated as a recap-backed source
 - optional: add a fuller transcript later if available
 
-### Blocker 4 — Runtime Conflict Rule Is Not Enforced
+### Partial 4 — Conflict Rule Documented, Runtime Enforcement Still Future
 
 The draft states:
 
@@ -117,13 +117,15 @@ The draft states:
 MBA 正式跑分时，建议使用 --panel-drop leijun。
 ```
 
-But the MBA runtime / panel config does not enforce this. Promotion is safer if
-the product has at least one of:
+External documentation now exists in `panels/README.md §5.3` and `auto.yaml`
+comments. This is enough for a manual v1 promotion path, but the MBA runtime /
+panel resolver still does not enforce it automatically.
 
-- a documented manual rule in `panels/README.md`
-- a panel-level warning convention for self-conflicted judges
-- a runtime check that drops or flags `leijun` when brand slug matches Xiaomi
-  family terms
+Future runtime enhancement:
+
+- drop or flag `leijun` when brand slug matches Xiaomi family terms
+- keep conflicted judge output out of average scoring unless explicitly allowed
+- print a Phase 0 warning when a self-conflict rule matches
 
 ### Blocker 5 — Full Runtime Dogfood Not Yet Done
 
@@ -157,7 +159,7 @@ Promote only when all are true:
   quote with source labels.
 - [x] `SKILL-draft.md` no longer depends on unresolved book notes, or those
   notes exist.
-- [ ] Xiaomi conflict handling is documented outside the draft itself.
+- [x] Xiaomi conflict handling is documented outside the draft itself.
 - [x] One non-Xiaomi Option A dogfood run produces an in-character,
   non-generic review.
 - [ ] One real runtime dogfood run passes, or the promotion PR explicitly
@@ -170,10 +172,11 @@ Promote only when all are true:
 Do **not** promote yet. The highest-leverage next task is now:
 
 ```text
-Document Xiaomi conflict handling outside the draft itself, then decide whether
-to run a short-lived Option B runtime dogfood.
+Decide whether to run a short-lived Option B runtime dogfood, or open a
+promotion PR that creates production `leijun-perspective/SKILL.md` with conflict
+docs already in place.
 ```
 
 The BYD dogfood suggests the point of view is distinct enough to keep refining.
-The remaining risk is runtime conflict handling and promotion mechanics, not
-conceptual differentiation or book dependency.
+The remaining risk is source review and promotion mechanics, not conceptual
+differentiation, book dependency, or external conflict documentation.

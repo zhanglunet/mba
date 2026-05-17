@@ -349,9 +349,7 @@ These are candidates for the future SKILL.md:
 - Add exact dates and source links for Xiaomi premium milestones.
 - Treat `小米创业思考` as future refresh only unless legitimate chapter notes are
   added. Do not make production v1 depend on it.
-- Clarify how to handle Xiaomi conflict in MBA panel execution:
-  - default: drop `leijun` when brand is Xiaomi / Redmi / Xiaomi Auto
-  - alternative: include only as "founder self-check", not in comparable score
-    mean
+- Xiaomi conflict handling is documented in `panels/README.md §5.3` and
+  `auto.yaml` comments. Runtime enforcement is a future enhancement.
 - Add negative decision cases, not only successful ones. The future skill needs
   failure sensitivity, or it will become founder myth.
