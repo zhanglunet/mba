@@ -54,7 +54,11 @@ responses mostly original and analytical.
 | Technology formula | `（软件×硬件）ᴬᴵ` | 2023 annual speech, Digitaling mirror: https://www.digitaling.com/articles/962891.html | AI amplifies software-hardware integration |
 | Long-term technology | `长期持续投入` | 2023 annual speech, Digitaling mirror | R&D posture is patient, not campaign-based |
 | Learning origin | `学习能力比知识更重要` | 2023 Wuhan University speech, IT之家 mirror: https://www.ithome.com/0/701/013.htm | cross-domain confidence comes from learning method |
+| Failure diagnosis | `闭门造车` | 2022 annual speech PDF: https://csrc.xmu.edu.cn/index_cn/article_pdf/202208131.pdf | failure is traced to product / user distance, not bad luck |
+| User-first product lesson | `做用户需要的产品` | 2022 annual speech PDF | low-point learning becomes product doctrine |
 | User-price trust | `价格厚道` | 2021 annual speech mirrors, e.g. IT之家: https://www.ithome.com/0/568/506.htm | pricing is moral / relational language |
+| Early success caution | `成功为时尚早` | 2024 SU7 20-day livestream recap, NBD: https://www.nbd.com.cn/articles/2024-04-19/3338238.html | strong launch is framed as first phase, not victory |
+| Post-launch duty | `把握好汽车品质` | 2024 SU7 20-day livestream recap, NBD | launch heat converts into quality / service duty |
 | Post-purchase ethics | `不做让用户后悔的车` | 2024 SU7 Q&A recap, The Paper: https://www.thepaper.cn/newsDetail_forward_27082105 | trust must survive after payment |
 
 ### How To Use These Fragments
@@ -333,9 +337,6 @@ Use these when facts are missing:
 Before drafting `leijun-perspective/SKILL.md`, extract exact short quotes into
 a separate quote bank only if the skill needs more texture:
 
-- one cleaner primary quote for low point / failure from the 2022 PDF
-- one exact conversational quote from a full SU7 Q&A transcript, not a press
-  recap
 - one direct quote about competitor posture if available
 - one grounded quote from `小米创业思考`, after chapter-level notes are made
 - optional: a compact quote bank under `references/research/quotes.md` if the

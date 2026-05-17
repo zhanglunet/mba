@@ -66,7 +66,6 @@ Remaining blockers from `07-quality-gate.md` still stand:
 
 - conversational evidence is still recap-heavy
 - book dependency is unresolved
-- low-point quote from 2022 PDF still needs extraction
 - runtime Xiaomi conflict rule is not enforced outside the draft
 
 ## Recommendation
@@ -74,8 +73,8 @@ Remaining blockers from `07-quality-gate.md` still stand:
 Do not promote yet. Next best step:
 
 ```text
-Extract one 2022 low-point quote and one exact Q&A quote, then update
-03-expression-dna.md and SKILL-draft.md.
+Resolve the book dependency: either add legitimate `小米创业思考` chapter notes,
+or remove the book as a production dependency for v1.
 ```
 
 After that, run Option B in a separate promotion pass if the user explicitly

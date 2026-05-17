@@ -209,6 +209,6 @@ After a passing dogfood, choose one:
 3. **Revise draft:** if dogfood fails, update `SKILL-draft.md` and
    `03-expression-dna.md`, then rerun BYD before promotion.
 
-Recommended next action: do not run Option B yet. First improve voice evidence
-by extracting one low-point quote from the 2022 speech and one exact Q&A quote,
-then update `03-expression-dna.md` and `SKILL-draft.md`.
+Recommended next action: do not run Option B yet. First resolve the
+`小米创业思考` dependency: either add legitimate chapter notes or remove the book
+as a production dependency for v1.

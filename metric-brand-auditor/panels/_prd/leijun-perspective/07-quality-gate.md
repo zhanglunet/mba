@@ -6,6 +6,8 @@
 **Decision:** Not ready to promote to production `leijun-perspective/SKILL.md`
 **Dogfood update:** Option A BYD dogfood executed; see
 `dogfood/byd-review.md` and `dogfood/byd-eval.md`
+**Quote update:** 2022 low-point and 2024 SU7 livestream fragments added to
+`03-expression-dna.md`
 
 This quality gate checks whether the Lei Jun draft can become a real MBA
 perspective skill. It should remain in `_prd` until the blockers below are
@@ -25,7 +27,7 @@ would make the panel resolver treat `leijun` as available.
 | Primary-source ratio | Needs review | Strong speech layer, weaker conversational layer; not yet safe to claim the repo's 80% primary-source quality bar |
 | Xiaomi conflict rule | Partial pass | Draft states the rule, but MBA/panel runtime does not yet enforce it |
 | Dogfood test | Partial pass | Option A BYD dogfood produced a distinct review without creating production `SKILL.md` |
-| Promotion readiness | Blocked | Still needs quote cleanup, source review, and runtime conflict handling before production promotion |
+| Promotion readiness | Blocked | Still needs source review, book decision, and runtime conflict handling before production promotion |
 
 ## What Is Strong Enough
 
@@ -91,18 +93,18 @@ Options:
 1. Add legitimate chapter notes before promotion.
 2. Remove the book as a production dependency and treat it as a future refresh.
 
-### Blocker 3 — Low-Point Voice Needs One Cleaner Primary Quote
+### Blocker 3 — Low-Point / Conversation Voice Needs Review, Not Extraction
 
-The 2022 annual speech is the best source for failure / low-point voice, but
-`03-expression-dna.md` still lacks a short, clean quote from it. Without that,
-the draft may over-index on SU7-era courage and underrepresent the warmer
-failure-processing register.
+The 2022 annual speech and 2024 SU7 livestream now have short fragments in
+`03-expression-dna.md`. This reduces the extraction blocker, but the final
+production skill still needs a human source review to ensure those fragments are
+used as calibration anchors, not as over-repeated slogans.
 
 Needed:
 
-- one short failure / low-point fragment from the 2022 PDF
-- source note in `03-expression-dna.md`
-- optional adjustment in `SKILL-draft.md` identity / expression sections
+- confirm the 2022 fragments stay short and source-accurate
+- confirm the 2024 livestream fragment is treated as a recap-backed source
+- optional: add a fuller transcript later if available
 
 ### Blocker 4 — Runtime Conflict Rule Is Not Enforced
 
@@ -148,7 +150,7 @@ Promote only when all are true:
 
 - [ ] The six research files have enough primary / first-person source coverage
   to satisfy the repo quality bar.
-- [ ] `03-expression-dna.md` has one low-point quote and one conversational
+- [x] `03-expression-dna.md` has one low-point quote and one conversational
   quote with source labels.
 - [ ] `SKILL-draft.md` no longer depends on unresolved book notes, or those
   notes exist.
@@ -165,9 +167,10 @@ Promote only when all are true:
 Do **not** promote yet. The highest-leverage next task is now:
 
 ```text
-Extract one 2022 low-point quote and one exact Q&A quote, then update
-03-expression-dna.md and SKILL-draft.md.
+Resolve the book dependency: either add legitimate `小米创业思考` chapter notes,
+or remove the book as a production dependency for v1.
 ```
 
 The BYD dogfood suggests the point of view is distinct enough to keep refining.
-The remaining risk is voice evidence quality, not conceptual differentiation.
+The remaining risk is source readiness and runtime conflict handling, not
+conceptual differentiation.
