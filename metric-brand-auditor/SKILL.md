@@ -308,15 +308,22 @@ Phase 0 has four sub-steps. Run them in order; do NOT skip ahead.
 Resolve `${SKILL_DIR}`, `${REPORTS_DIR}`, `${PANELS_DIR}`, `${PERSPECTIVES_PATH}`,
 `${IMAGES_DIR}` (see "Path resolution" above). Do this once and reuse.
 
-### 0.2  Resolve which panel to use (three-tier precedence)
+### 0.2  Resolve which panel to use (four-tier precedence)
 
 This decision is independent of FRESH vs EVOLUTION — both need a panel before
 any judge-related work. Order, first hit wins:
 
 1. **CLI `--panel <name>`** — explicit panel name
 2. **CLI `--industry <name>`** — look up in `${PANELS_DIR}/industries.yaml`,
-   resolves to a panel name. If the industry isn't in the mapping, ABORT and
-   print all legal industries from that file (do NOT silently default).
+   resolves to a panel name. Validation is **lazy** — failure modes:
+   - Industry not in the mapping → ABORT with "industry '<name>' not registered.
+     Known industries: <list>. Add a mapping line to industries.yaml or pass --panel directly."
+   - Industry mapped but panel file missing → ABORT with "industry '<name>' is
+     mapped to panel '<panel>' but ${PANELS_DIR}/<panel>.yaml doesn't exist —
+     build the panel first (see panels/README.md §3)." This case happens because
+     industries.yaml lists the roadmap of intended industries; the corresponding
+     panel files may not exist yet.
+   - In neither case do we silently fall back to default.
 3. **Brand binding**: `${REPORTS_DIR}/<brand-slug>/panel.yaml` → `panel:` field, if file exists
 4. **Default**: `default`
 
@@ -453,8 +460,10 @@ which levers do the work, which are decorative, where the leverage is fragile.
 **Wuying cloud-browser leg:** {YES unless --quick} — for X / RedNote / Bilibili / Chinese
 press / login-walled sites where WebFetch is blocked or returns junk.
 
-**Judge panel:** 5 perspectives — fusheng, jobs, likejia, wu-jundong, zhang-yiming.
-Each will score the brand in character on 5 lenses (see Phase 4).
+**Judge panel:** {panel-name} — {judge slugs from the resolved panel, after overrides}.
+Each available judge will score the brand in character on 5 lenses (see Phase 4).
+If the resolved panel is `status: skeleton`, note that the run will auto-engage
+`--no-judges` and produce a synthesis-only report.
 
 **Estimated runtime:** ~20 minutes.
 ```

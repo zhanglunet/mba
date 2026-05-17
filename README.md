@@ -249,7 +249,7 @@ metric-brand-auditor/panels/
 
 下次 `--panel tech-cn` 直接复用 —— 不需要改 SKILL.md,不需要 deploy。
 
-### 4.4 不同品牌调用不同 panel —— 三层优先级
+### 4.4 不同品牌调用不同 panel —— 四层优先级
 
 每次 `/mba <brand>` 走以下顺序解析,先命中先用:
 

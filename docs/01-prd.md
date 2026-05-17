@@ -63,7 +63,8 @@ MBA 用三条对应机制解决:
 ### F3 — 评委可配置
 
 - 内置 5 评委(傅盛、Jobs、李可佳、吴俊东、张一鸣)
-- 可在 Phase 1 通过 `--judges fusheng,jobs` flag 选子集
+- 可通过 `--panel <name>` 选择命名评委组,或通过 `--industry <name>` 按行业映射选择 panel
+- 可通过 `--panel-add <slug>` / `--panel-drop <slug>` 做本次运行的临时增删
 - 可通过追加 `*-perspective/` 目录添加自定义评委(详见 [08-extending.md](08-extending.md))
 
 ### F4 — 维度可配置

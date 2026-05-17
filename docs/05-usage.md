@@ -31,7 +31,10 @@ Lead 会:
 | `--refresh` | 开关 | off | 强制 EVOLUTION 重跑(已有报告归档到 versions/) |
 | `--no-judges` | 开关 | off | 只做合成,跳过评委(快速预览用) |
 | `--focus 1,3,7` | 列表 | 全部 7 | 限定调研维度 |
-| `--judges fusheng,jobs` | 列表 | 全部 5 | 限定参与评委 |
+| `--panel vc-en` | 名称 | default | 使用一套命名评委 panel |
+| `--industry auto` | 名称 | - | 按行业映射选择 panel,例如 `auto` / `ai` / `consumer` |
+| `--panel-add pmarca` | slug | - | 本次临时追加一位评委,不修改 panel 文件 |
+| `--panel-drop jobs` | slug | - | 本次临时跳过一位评委,不修改 panel 文件 |
 | `list` | 子命令 | - | 列出已审计品牌 + 各自版本数 |
 
 ## 3. 完整示例
@@ -57,7 +60,7 @@ Lead 会:
        **Default Dimensions (7):** {表格}
 
        **Wuying cloud-browser leg:** YES
-       **Judge panel:** 5 perspectives — fusheng / jobs / likejia / wu-jundong / zhang-yiming
+       **Judge panel:** default — fusheng / jobs / likejia / wu-jundong / zhang-yiming
        **Estimated runtime:** ~22 minutes.
 
        --- GATE 1 ---
@@ -127,15 +130,34 @@ Lead 会:
 
 Lead 只跑维度 2/3/4/6/7,跳过 1(创始叙事)和 5(视觉)。评委仍然 5 人,但他们的 score matrix 只在这 5 个维度上有数。
 
-### 3.4 快速预览,不要 5 评委
+### 3.4 换一套行业评委 panel
+
+```
+> /mba 小米汽车 --industry auto --quick
+```
+
+`--industry` 会查 `metric-brand-auditor/panels/industries.yaml`,再解析到对应的
+`panels/<name>.yaml`。如果 panel 是 `status: skeleton`,MBA 会清楚提示本次自动降级为
+`--no-judges`:只产出 synthesis 报告,不伪造尚未建好的评委 persona。
+
+也可以直接指定 panel:
+
+```
+> /mba 某 SaaS --panel vc-en
+```
+
+首次运行会把解析后的 panel 写进 `reports/<brand>/panel.yaml`;之后同一品牌默认沿用这套
+panel,保证 EVOLUTION 版本之间可比。
+
+### 3.5 快速预览,不要评委
 
 ```
 > /mba 某新品牌 --quick --no-judges
 ```
 
-跳过 wuying leg + 跳过评委,只跑 Phase 2-3,产出 `_raw/synthesis.md`(没有 `report.md`)。适合"先看 Lead 怎么看,再决定要不要花成本叫 5 评委"。
+跳过 wuying leg + 跳过评委,只跑 Phase 2-3,产出 `_raw/synthesis.md`(没有 `reviews/`)。适合"先看 Lead 怎么看,再决定要不要花成本叫评委"。
 
-### 3.5 列出所有已审计品牌
+### 3.6 列出所有已审计品牌
 
 ```
 > /mba list
@@ -206,7 +228,7 @@ A: 当前 Claude Code 模式不支持续跑(状态没持久化在 server 端)。
 
 ### Q4: 想加自家公司一位同事作为第 6 个评委
 
-A: 见 [08-extending.md](08-extending.md) 第 2 节"添加新评委"。简版:复制一个 `*-perspective/` 目录,改 SKILL.md frontmatter + 5 必需章节,然后 `--judges <new-name>,fusheng,...` 用上。
+A: 见 [08-extending.md](08-extending.md) 第 2 节"添加新评委"。简版:复制一个 `*-perspective/` 目录,改 SKILL.md frontmatter + 5 必需章节,然后把 slug 加进某个 `panels/<name>.yaml`,或用 `--panel-add <new-name>` 先临时试跑。
 
 ### Q5: Mermaid 图在 HTML 里渲染失败
 

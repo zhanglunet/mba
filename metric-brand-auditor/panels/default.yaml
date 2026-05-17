@@ -4,7 +4,7 @@
 # Phase 0 的 router 在用户没传 --panel 也没绑定品牌 panel.yaml 时回退到这里。
 #
 # 字段定义 / 校验规则 / 怎么写一个新 panel 见 ./README.md。
-# 上层概念(为什么要 panel / 三层优先级 / 跨品牌怎么调用)见 ../../README.md §4。
+# 上层概念(为什么要 panel / 四层优先级 / 跨品牌怎么调用)见 ../../README.md §4。
 
 name: default
 display_name: Default 5-Judge Panel

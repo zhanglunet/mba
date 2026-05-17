@@ -72,7 +72,7 @@
 
 **职责**:Lead 起草 Brand Influence PRD,等用户 confirm。
 
-**输入**:`brand` 名称、可选 `--focus` / `--judges` / `--quick` flag。
+**输入**:`brand` 名称、可选 `--focus` / `--panel` / `--industry` / `--panel-add` / `--panel-drop` / `--quick` flag。
 
 **输出**:Markdown PRD,包含:
 
@@ -80,7 +80,7 @@
 - Research Objective
 - 默认 7 维度表(可被用户裁掉)
 - 是否走 wuying leg
-- Judge 名单
+- 解析后的 panel 名称与 Judge 名单
 - 预估耗时 + 成本
 
 **GATE 1**:Lead 必须停下,等用户确认或编辑。

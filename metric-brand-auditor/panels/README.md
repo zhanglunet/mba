@@ -1,7 +1,7 @@
 # Panels —— 字段参考 / 怎么写一个新 panel
 
 5 镜头是固定的尺子,**坐在尺子后面打分的人是可换的**。本目录下每个 yaml 都是一份"评委名单",
-SKILL.md Phase 0 router 会按三层优先级选其中一份用。
+SKILL.md Phase 0 router 会按四层优先级选其中一份用。
 
 > 上层概念(为什么要做 panel / 跨品牌调用规则 / 与 perspective skill 的关系)在仓库根
 > `README.md §4`。本文件只解释**字段级**细节 —— 怎么写、什么字段、resolver 会怎么找它。
@@ -134,16 +134,32 @@ CLI --panel <name>            (显式 panel)
 格式极简,一行一个 `<industry-name>: <panel-name>`:
 
 ```yaml
-auto: auto              # 汽车 / 主机厂 / 新能源车
-ev: auto                # 电动车别名 → 复用 auto panel
-# edu: edu              # 注释掉的行 = 占位,Phase 0 不会 resolve
+auto: auto                  # 汽车 / 主机厂 / 新能源车
+ev: auto                    # 电动车别名 → 复用 auto panel
+consumer-cn: consumer-cn    # 中文消费品(panel 已建,当前是 skeleton)
+consumer: consumer-cn       # alias
+# gaming-cn: gaming-cn      # 注释掉 = wishlist,resolver 看不见
 ```
 
-加新行业:**先**确认 `<panel-name>.yaml` 已经存在(否则 Phase 0 启动校验就 ABORT),
-**再**追加映射行。一个 panel 可以被多个 industry 别名共用 —— 上面的 `auto` 和 `ev`
-就是这样,两个 `--industry` 都指向同一个 panel 文件。
+校验是 **lazy** 的 —— 这个文件是**行业路线图**,可以列还没建 panel 的行业。Phase 0
+不会在 /mba 启动时全表扫;只有用户实际跑 `--industry <name>` 时才校验那一行对应的
+panel 文件:
 
-行业名建议:小写短名 / 不要空格 / 不要中文(`auto` / `edu` / `consumer-cn` 是好名字)。
+| 调用 | 行为 |
+|---|---|
+| `--industry auto`(已建)| ✓ 解析到 `auto.yaml`,正常往下 |
+| `--industry consumer-cn`(skeleton)| ✓ 解析到 `consumer-cn.yaml`,提示 synthesis-only 降级 |
+| `--industry foo`(没注册)| ✗ ABORT "industry 'foo' not registered. Known: auto, ev, consumer-cn, ..." |
+| `--industry <new>` 映射到缺失 panel | ✗ ABORT "industry mapped to panel '<panel>' but panels/<panel>.yaml doesn't exist — build it first (§3)" |
+| 没传 `--industry`,但 industries.yaml 里有未建 panel 的行业 | 完全不影响 —— 不走 industry 路径就不校验 |
+
+加新行业可以走两步法:**先**把映射行写进 industries.yaml(声明意图),**再**按 §3
+建对应的 perspective skill + panel yaml。期间用户跑 `--industry <new>` 会拿到清晰报错。
+
+一个 panel 可以被多个 industry 别名共用 —— 上面的 `auto` 和 `ev` 就是这样,
+`consumer-cn` 和 `consumer` 也是。简写别名很有用,别滥用(别名 > 3 个就乱了)。
+
+行业名建议:小写短名 / 不要空格 / 不要中文(`auto` / `edu-cn` / `consumer-cn` 是好名字)。
 
 ### 5.2  Skeleton panel —— "评委还没建" 状态
 
@@ -207,6 +223,6 @@ panel yaml 顶部加 `status: skeleton` 字段标记"占位 panel",作用:
 最低限度本目录会有:
 
 - `default.yaml` —— 5 人混合 panel,/mba 的兜底
-- `auto.yaml` —— 汽车/电动车 panel,SKELETON 状态(评委 perspective skill 还没建)
+- `auto.yaml` / `consumer-cn.yaml` / `ai-app-cn.yaml` 等 —— 行业 panel,多为 SKELETON 状态(评委 perspective skill 还没建齐)
 - `industries.yaml` —— 行业 → panel 映射表,被 `--industry` flag 查询(本身不是 panel,
   也不会被 `--panel` 解析到)
