@@ -4,8 +4,8 @@
 **Created:** 2026-05-17
 **Reviewed artifact:** `SKILL-draft.md`
 **Decision:** Not ready to promote to production `leijun-perspective/SKILL.md`
-**Dogfood update:** Option A BYD dogfood executed; see
-`dogfood/byd-review.md` and `dogfood/byd-eval.md`
+**Dogfood update:** Option A BYD dogfood executed; resolver-only Option B check
+executed; see `dogfood/`
 **Quote update:** 2022 low-point and 2024 SU7 livestream fragments added to
 `03-expression-dna.md`
 
@@ -26,8 +26,8 @@ would make the panel resolver treat `leijun` as available.
 | Source density | Conditional pass | `rg` finds 44 URL occurrences across the prescan packet, but this includes duplicates and secondary commentary |
 | Primary-source ratio | Needs review | Strong speech layer, weaker conversational layer; not yet safe to claim the repo's 80% primary-source quality bar |
 | Xiaomi conflict rule | Partial pass | Draft and panel docs state the rule; runtime still does not enforce it |
-| Dogfood test | Partial pass | Option A BYD dogfood produced a distinct review without creating production `SKILL.md` |
-| Promotion readiness | Blocked | Book decision and external conflict docs resolved for v1; still needs source review and optional runtime enforcement before production promotion |
+| Dogfood test | Partial pass | Option A BYD review passed; Option B resolver discovery passed; full `/mba` runtime review not executed |
+| Promotion readiness | Partial pass | Mechanically feasible; source review and promotion-scope decision remain |
 
 ## What Is Strong Enough
 
@@ -127,7 +127,7 @@ Future runtime enhancement:
 - keep conflicted judge output out of average scoring unless explicitly allowed
 - print a Phase 0 warning when a self-conflict rule matches
 
-### Blocker 5 — Full Runtime Dogfood Not Yet Done
+### Partial 5 — Runtime Resolver Dogfood Done, Full MBA Run Not Done
 
 The repo standard says a new perspective should be tested with:
 
@@ -137,17 +137,19 @@ The repo standard says a new perspective should be tested with:
 
 Because this draft is intentionally not installed as a production skill, the
 first dogfood used Option A: a manual single-judge simulation on BYD. That
-passed the distinctiveness check, but it is not a true end-to-end `/mba
---panel-add leijun` run.
+passed the distinctiveness check.
 
-The remaining staged dogfood path is:
+The short-lived Option B resolver check also passed:
 
-1. Create a temporary production copy only on a branch or local scratch path.
-2. Run one non-Xiaomi auto brand through the real judge-loading path.
-3. Compare the Lei Jun review against Jobs or Fusheng to confirm it still
-   surfaces distinct issues.
-4. Delete the temporary production skill before commit unless promotion is
-   explicit.
+- temporary `leijun-perspective/SKILL.md` made `auto.yaml` report 4 missing
+  skills instead of 5
+- cleanup restored `auto.yaml` to 5 missing skills
+- no production skill was committed
+
+Still not done:
+
+- a full `/mba BYD --industry auto --quick --panel-add leijun` runtime review
+  through Phase 4
 
 ## Promotion Criteria
 
@@ -162,8 +164,10 @@ Promote only when all are true:
 - [x] Xiaomi conflict handling is documented outside the draft itself.
 - [x] One non-Xiaomi Option A dogfood run produces an in-character,
   non-generic review.
-- [ ] One real runtime dogfood run passes, or the promotion PR explicitly
-  accepts Option A as sufficient for first release.
+- [x] One short-lived Option B resolver check passes and cleans up production
+  `SKILL.md`.
+- [ ] One full runtime dogfood run passes, or the promotion PR explicitly
+  accepts Option A + resolver check as sufficient for first release.
 - [ ] Local `scripts/validate_panels.py` still treats `auto.yaml` as skeleton
   until promotion is intentional.
 
@@ -172,9 +176,8 @@ Promote only when all are true:
 Do **not** promote yet. The highest-leverage next task is now:
 
 ```text
-Decide whether to run a short-lived Option B runtime dogfood, or open a
-promotion PR that creates production `leijun-perspective/SKILL.md` with conflict
-docs already in place.
+Decide whether this PR remains research-only or becomes a promotion PR that
+creates production `leijun-perspective/SKILL.md`.
 ```
 
 The BYD dogfood suggests the point of view is distinct enough to keep refining.

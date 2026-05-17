@@ -318,4 +318,6 @@ Before turning this into production `leijun-perspective/SKILL.md`:
 - [ ] Decide whether production skill lives as a sibling directory or stays gated.
 - [x] Document panel conflict behavior before enabling `leijun` in `auto.yaml`.
 - [x] Dogfood one non-Xiaomi auto brand via Option A simulation.
-- [ ] Optional: dogfood via short-lived runtime `--panel-add leijun --quick`.
+- [x] Verify short-lived production copy changes resolver discovery and cleans
+  up safely.
+- [ ] Optional: full `/mba` runtime dogfood via `--panel-add leijun --quick`.
