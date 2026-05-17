@@ -154,7 +154,8 @@ The eventual `leijun-perspective` must not:
 After `06-timeline.md`, the prescan packet now has:
 
 - `00-prescan.md`: source plan and guardrails
-- `01-writings.md`: annual speeches / launch scripts / book-method notes
+- `01-writings.md`: annual speeches / launch scripts; book-method notes are
+  future refresh only
 - `02-conversations.md`: interview and Q&A answer patterns
 - `03-expression-dna.md`: voice boundary and judge templates
 - `05-decisions.md`: decision spine and candidate heuristics

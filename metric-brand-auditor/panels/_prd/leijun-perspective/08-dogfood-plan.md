@@ -209,6 +209,6 @@ After a passing dogfood, choose one:
 3. **Revise draft:** if dogfood fails, update `SKILL-draft.md` and
    `03-expression-dna.md`, then rerun BYD before promotion.
 
-Recommended next action: do not run Option B yet. First resolve the
-`小米创业思考` dependency: either add legitimate chapter notes or remove the book
-as a production dependency for v1.
+Recommended next action: do not run Option B yet. First document Xiaomi conflict
+handling outside the draft itself, then decide whether to run a short-lived
+runtime dogfood.

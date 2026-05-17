@@ -27,7 +27,7 @@ would make the panel resolver treat `leijun` as available.
 | Primary-source ratio | Needs review | Strong speech layer, weaker conversational layer; not yet safe to claim the repo's 80% primary-source quality bar |
 | Xiaomi conflict rule | Partial pass | Draft states the rule, but MBA/panel runtime does not yet enforce it |
 | Dogfood test | Partial pass | Option A BYD dogfood produced a distinct review without creating production `SKILL.md` |
-| Promotion readiness | Blocked | Still needs source review, book decision, and runtime conflict handling before production promotion |
+| Promotion readiness | Blocked | Book decision resolved for v1; still needs source review and runtime conflict handling before production promotion |
 
 ## What Is Strong Enough
 
@@ -81,17 +81,20 @@ Needed:
 - one non-launch long-form interview where follow-up questions shape the answer
 - clear labels for exact Lei Jun wording vs reporter paraphrase
 
-### Blocker 2 — Book Dependency Is Not Resolved
+### Resolved 2 — Book Dependency Removed From V1
 
 `00-prescan.md` and `01-writings.md` mention `小米创业思考`, but the draft does
 not yet have chapter-level notes from a legitimate copy. The current
-`SKILL-draft.md` mostly works without the book, but the source inventory still
-implies it is part of the backbone.
+`SKILL-draft.md` works without the book, so production v1 should not depend on
+it.
 
-Options:
+Decision:
 
-1. Add legitimate chapter notes before promotion.
-2. Remove the book as a production dependency and treat it as a future refresh.
+- `小米创业思考` is downgraded to future refresh only.
+- Production v1 must rely on speeches, launch scripts, Q&A, external views,
+  decision notes, and timeline.
+- Do not cite the book in production `SKILL.md` unless legitimate chapter notes
+  or reliable short excerpts are added later.
 
 ### Blocker 3 — Low-Point / Conversation Voice Needs Review, Not Extraction
 
@@ -152,7 +155,7 @@ Promote only when all are true:
   to satisfy the repo quality bar.
 - [x] `03-expression-dna.md` has one low-point quote and one conversational
   quote with source labels.
-- [ ] `SKILL-draft.md` no longer depends on unresolved book notes, or those
+- [x] `SKILL-draft.md` no longer depends on unresolved book notes, or those
   notes exist.
 - [ ] Xiaomi conflict handling is documented outside the draft itself.
 - [x] One non-Xiaomi Option A dogfood run produces an in-character,
@@ -167,10 +170,10 @@ Promote only when all are true:
 Do **not** promote yet. The highest-leverage next task is now:
 
 ```text
-Resolve the book dependency: either add legitimate `小米创业思考` chapter notes,
-or remove the book as a production dependency for v1.
+Document Xiaomi conflict handling outside the draft itself, then decide whether
+to run a short-lived Option B runtime dogfood.
 ```
 
 The BYD dogfood suggests the point of view is distinct enough to keep refining.
-The remaining risk is source readiness and runtime conflict handling, not
-conceptual differentiation.
+The remaining risk is runtime conflict handling and promotion mechanics, not
+conceptual differentiation or book dependency.

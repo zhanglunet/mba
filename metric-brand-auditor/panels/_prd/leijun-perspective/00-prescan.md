@@ -43,8 +43,9 @@ auto panel:
 - annual speeches from 2020-2024 create a time series of self-narration
 - the 2024 SU7 launch and annual speech expose a complete automotive go-to-market
   argument
-- `Xiaomi Entrepreneurship Thinking` gives a durable management / product method
-  backbone
+- annual speeches and launch / Q&A material already provide enough public method
+  backbone for v1; `Xiaomi Entrepreneurship Thinking` is a future refresh source
+  unless legitimate chapter notes are added
 - his public voice is distinctive enough to test whether an "auto operator"
   perspective can stay separate from Fusheng / Jobs / Zhang Yiming
 
@@ -65,10 +66,10 @@ Legend:
 | P0 | Primary / transcript PDF | `2022 年度演讲：穿越人生低谷的感悟` PDF. URL: https://csrc.xmu.edu.cn/index_cn/article_pdf/202208131.pdf | Failure / low-point handling, Xiaomi method, book launch, R&D escalation |
 | P0 | Primary mirror | `2021 雷军年度演讲：我的梦想，我的选择` — Sina mirror. URL: https://finance.sina.cn/tech/2021-08-10/detail-ikqcfncc2102383.d.html | Early self-narrative and "choice" frame; compare with 2024 "courage" frame |
 | P0 | Primary mirror | `2023 武汉大学毕业典礼演讲：相信自己，每个人的人生都有无限可能` — IT之家 mirror. URL: https://www.ithome.com/0/701/013.htm | Personal origin story, confidence / choice rhetoric, non-product public voice |
-| P0 | Primary / book | `小米创业思考` | Management backbone: product view, Xiaomi triad, mission / vision, internet methods. Need chapter-level notes from a legitimate copy or reliable excerpts before SKILL.md draft |
 | P1 | Official / JS-heavy | `Lei Jun Annual Speech 2024` — Xiaomi Global. URL: https://www.mi.com/global/event/lei-jun-annual-speech-2024/ | Official landing page confirms global framing, but content is JS-light in fetch; use as source pointer, not main transcript |
 | P1 | Secondary / state media | Xinhua: `小米首款新能源汽车正式发布`. URL: https://www.news.cn/20240328/7ba29784a82b429c9f175366bf07d750/c.html | External factual check for SU7 launch date, price range, delivery plan, factory scale |
 | P1 | Secondary / press | 证券时报 / IT之家 / 第一财经 coverage around 2022-2024 speeches | Cross-check numerical claims and public reception; do not use as voice source |
+| P2 | Primary / book | `小米创业思考` | Future refresh only. Do not cite in production v1 unless legitimate chapter notes or reliable short excerpts are added |
 
 ## Research File Plan
 
@@ -79,7 +80,7 @@ leijun-perspective/
 ├── SKILL.md                         # create only after 01-06 are drafted
 └── references/research/
     ├── 00-prescan.md                # copy/adapt this file
-    ├── 01-writings.md               # annual speeches + book excerpts
+    ├── 01-writings.md               # annual speeches + launch scripts; book excerpts only in future refresh
     ├── 02-conversations.md          # interviews, launch Q&A, CCTV/long-form if available
     ├── 03-expression-dna.md         # sentence patterns, repeated words, launch rhetoric
     ├── 04-external-views.md         # press / market / criticism, clearly separated

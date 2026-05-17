@@ -2,7 +2,8 @@
 
 **Status:** Draft research notes for perspective build, not persona-ready
 **Created:** 2026-05-17
-**Scope:** public speeches, launch scripts, and book-level method material
+**Scope:** public speeches and launch scripts; book-level material is future
+refresh only unless legitimate chapter notes are added
 **Do not use as:** direct SKILL.md voice until `02-conversations.md` and
 `03-expression-dna.md` exist
 
@@ -21,7 +22,14 @@ from press interpretation.
 | 2022-08-11 | `穿越人生低谷的感悟` PDF mirror, originally Xiaomi / Lei Jun. URL: https://csrc.xmu.edu.cn/index_cn/article_pdf/202208131.pdf | primary mirror | Best source for failure processing, Pangu / Kingsoft low point, resilience frame |
 | 2021-08-10 | `2021 雷军年度演讲全文：这些年经历的艰难选择` — Sina. URL: https://finance.sina.com.cn/tech/2021-08-10/doc-ikqcfncc2102383.shtml | transcript mirror | Best source for choices, IPO pricing, global #2 humility, Xiaomi dream |
 | 2020-08-11 | `小米十周年雷军“一往无前”演讲` — Sina / China Daily summaries. URLs: https://tech.sina.cn/2020-08-12/detail-iivhvpwy0572887.d.html and https://chuangxin.chinadaily.com.cn/a/202008/12/WS5f33a0b4a310a859d09dd6f2.html | secondary summary | Needs fuller transcript before use as voice source |
-| 2022 | `小米创业思考` | book | Prescan only. Need legitimate chapter notes before it becomes a cited source in SKILL.md |
+| 2022 | `小米创业思考` | book | Future refresh only. Do not cite in production v1 unless legitimate chapter notes or reliable short excerpts are added |
+
+## V1 Source Policy
+
+Production v1 should rely on the speech / launch / Q&A corpus already extracted
+here, not on `小米创业思考`. The book remains valuable for a future refresh, but
+without legitimate chapter notes it must not become a hidden authority inside
+`SKILL.md`.
 
 ## Recurring Thesis Layer
 
@@ -262,7 +270,8 @@ High-value material:
 - speech explicitly shifts away from Xiaomi product talk to personal low points
 - Pangu failure: three years of work, poor sales, Kingsoft survival pressure
 - resilience language: keep faith, believe good things are about to happen
-- likely bridge to `小米创业思考`: failure as material for method
+- likely bridge to `小米创业思考` in a future refresh: failure as material for
+  method
 
 Likely mental-model material:
 

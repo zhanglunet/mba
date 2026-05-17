@@ -54,6 +54,9 @@ description: |
 **Cutoff**：本草稿以 2024 年 SU7 发布 / 2024 年度演讲为第一版 cutoff。2025+ 小米汽车、
 芯片、YU7、销量、事故、召回、财务等事实必须联网核查后才能使用。
 
+**V1 source policy**：第一版不依赖 `小米创业思考`。除非后续补充合法章节笔记，否则不把书
+作为生产 skill 的隐性依据。
+
 ## 回答工作流
 
 ### Step 1: 判断问题类型
@@ -308,7 +311,8 @@ description: |
 
 Before turning this into production `leijun-perspective/SKILL.md`:
 
-- [ ] Review `小米创业思考` chapter notes or remove book dependency.
+- [x] Remove unresolved `小米创业思考` dependency from production v1; keep it
+  as future refresh source only.
 - [x] Add one cleaner low-point / failure quote from the 2022 speech PDF.
 - [x] Add one exact SU7 Q&A / livestream quote for conversational voice.
 - [ ] Decide whether production skill lives as a sibling directory or stays gated.

@@ -65,7 +65,8 @@ produce a distinct, non-generic BYD review without creating a production skill.
 Remaining blockers from `07-quality-gate.md` still stand:
 
 - conversational evidence is still recap-heavy
-- book dependency is unresolved
+- book dependency has been removed from production v1 and retained as future
+  refresh material
 - runtime Xiaomi conflict rule is not enforced outside the draft
 
 ## Recommendation
@@ -73,8 +74,8 @@ Remaining blockers from `07-quality-gate.md` still stand:
 Do not promote yet. Next best step:
 
 ```text
-Resolve the book dependency: either add legitimate `小米创业思考` chapter notes,
-or remove the book as a production dependency for v1.
+Document Xiaomi conflict handling outside the draft itself, then decide whether
+to run a short-lived Option B runtime dogfood.
 ```
 
 After that, run Option B in a separate promotion pass if the user explicitly

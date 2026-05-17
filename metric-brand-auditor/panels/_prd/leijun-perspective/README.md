@@ -14,7 +14,8 @@ judge, so a half-built skill would make `auto.yaml` look healthier than it is.
 
 ## Recommended Sequence
 
-1. Build `01-writings.md` from annual speeches and book material.
+1. Build `01-writings.md` from annual speeches and launch scripts. Treat book
+   material as future refresh unless legitimate chapter notes are added.
 2. Build `02-conversations.md` from long-form interviews / Q&A.
 3. Build `03-expression-dna.md` from direct quotes only.
 4. Build `05-decisions.md` before `04-external-views`; decisions are the spine.

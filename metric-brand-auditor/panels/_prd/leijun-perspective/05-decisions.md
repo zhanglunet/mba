@@ -347,7 +347,8 @@ These are candidates for the future SKILL.md:
 - Cross-check hardware net margin cap wording against official Xiaomi IPO /
   announcement materials.
 - Add exact dates and source links for Xiaomi premium milestones.
-- Add primary / official source for `小米创业思考` chapter claims.
+- Treat `小米创业思考` as future refresh only unless legitimate chapter notes are
+  added. Do not make production v1 depend on it.
 - Clarify how to handle Xiaomi conflict in MBA panel execution:
   - default: drop `leijun` when brand is Xiaomi / Redmi / Xiaomi Auto
   - alternative: include only as "founder self-check", not in comparable score

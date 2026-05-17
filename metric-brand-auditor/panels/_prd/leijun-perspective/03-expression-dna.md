@@ -338,7 +338,8 @@ Before drafting `leijun-perspective/SKILL.md`, extract exact short quotes into
 a separate quote bank only if the skill needs more texture:
 
 - one direct quote about competitor posture if available
-- one grounded quote from `小米创业思考`, after chapter-level notes are made
+- optional future-refresh quote from `小米创业思考`, after legitimate
+  chapter-level notes are made
 - optional: a compact quote bank under `references/research/quotes.md` if the
   final SKILL needs reusable attribution
 
