@@ -4,7 +4,7 @@
 # 通过 industries.yaml 被 `--industry consumer-cn` 引用。
 #
 # ⚠️  SKELETON 状态:5 位都还没建 <slug>-perspective/。
-# 候选评估见 panels/_prd/industries-roster.md §3.2。
+# 候选评估见 docs/prd/panels/industries-roster.md §3.2。
 # 钟睒睒源密度差,建之前考虑替换(见 roster 替补建议)。
 
 name: consumer-cn

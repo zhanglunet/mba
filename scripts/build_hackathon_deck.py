@@ -466,7 +466,7 @@ def slide_07_architecture(prs, page, total):
          "PRD 多代理深度调研,被 MBA 复用,也可独立 /research 触发"),
         ("评委层 / Judges", "5 × *-perspective/",
          "fusheng / jobs / likejia / wu-jundong / zhang-yiming · 每套含 6 路调研 + 决策启发式"),
-        ("基建层 / Infra", "wuying_open.py · .env",
+        ("基建层 / Infra", "scripts/wuying/open.py · .env",
          "阿里云无影 AgentBay 一次性会话(免费 Lite 即可);.env 不入库"),
     ]
 

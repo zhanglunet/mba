@@ -1,4 +1,4 @@
-"""Smoke-test the WUYING_API_KEY in ~/mba/.env by spinning up an AgentBay
+"""Smoke-test the WUYING_API_KEY in the repo .env by spinning up an AgentBay
 browser session, fetching the CDP endpoint, and tearing it down.
 """
 import asyncio
@@ -7,7 +7,7 @@ import time
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 ENV_PATH = ROOT / ".env"
 
 

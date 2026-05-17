@@ -1,7 +1,7 @@
 # Wuying Cloud Browser — How to Use It in This Skill
 
 The Wuying (无影) cloud browser is provisioned via Alibaba Cloud's AgentBay service. The
-project ships with a one-shot helper at `~/mba/wuying_open.py` that creates a session and
+project ships with a one-shot helper at `~/mba/scripts/wuying/open.py` that creates a session and
 prints `SESSION_ID` + `RESOURCE_URL`.
 
 This skill uses Wuying for things `WebFetch` can't do well:
@@ -16,7 +16,7 @@ This skill uses Wuying for things `WebFetch` can't do well:
 ### 1. Create
 
 ```bash
-ssh <MAC_USER>@<MAC_HOST> 'cd ~/mba && python3 wuying_open.py'
+ssh <MAC_USER>@<MAC_HOST> 'cd ~/mba && python3 scripts/wuying/open.py'
 ```
 
 Output:
@@ -130,7 +130,7 @@ Log the teardown (or its failure) in `wuying_browse.md`. Never silently leave a 
 - **Wuying API key missing** — the `.env` file on John must have `WUYING_API_KEY=...`. If
   it's still `your_api_key_here`, abort the cloud-browser leg and tell the user.
 - **`agentbay` Python pkg missing** — `pip install --user agentbay-sdk` (or whatever the
-  exact package name is per the team's convention; `wuying_open.py` imports `agentbay`).
+  exact package name is per the team's convention; `scripts/wuying/open.py` imports `agentbay`).
 - **Session create succeeds but RESOURCE_URL is empty** — the SDK version may not surface
   it. Re-check by calling the AgentBay describe-session API directly. Don't proceed with an
   unknown URL.

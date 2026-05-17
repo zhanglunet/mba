@@ -353,4 +353,4 @@ Stage 2 production-seed 已于 2026-05-18 落地:
 - `references/research/quotes.md`
 
 剩余可选增强:补微博 permalink / B 站视频 timestamp 级 quote pass,以及
-`../images/lixiang.jpg` 插画头像(严禁真人照片)。
+`../assets/judges/lixiang.jpg` 插画头像(严禁真人照片)。

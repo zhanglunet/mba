@@ -14,7 +14,7 @@ Steps performed:
 
 1. Confirmed no production `leijun-perspective/SKILL.md` existed.
 2. Ran `/usr/bin/python3 scripts/validate_panels.py`.
-3. Temporarily copied `_prd/leijun-perspective/SKILL-draft.md` to
+3. Temporarily copied `docs/prd/panels/leijun-perspective/SKILL-draft.md` to
    `leijun-perspective/SKILL.md`.
 4. Ran `/usr/bin/python3 scripts/validate_panels.py` again.
 5. Deleted the temporary `leijun-perspective/SKILL.md`.

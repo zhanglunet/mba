@@ -4,7 +4,7 @@
 # 通过 industries.yaml 被 `--industry luxury-en` 引用。
 #
 # ⚠️  SKELETON 状态:5 位都待建 perspective skill,全英文落笔。
-# 候选评估见 panels/_prd/industries-roster.md §3.8。
+# 候选评估见 docs/prd/panels/industries-roster.md §3.8。
 
 name: luxury-en
 display_name: Luxury & Fashion Panel (Skeleton)

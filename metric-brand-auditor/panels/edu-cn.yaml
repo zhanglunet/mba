@@ -5,7 +5,7 @@
 #
 # ⚠️  SKELETON 状态:3 位待建(yuminhong / zhangbangxin / salkhan)。
 # likejia + wu-jundong 已存在(复用 default panel 的 perspective)。
-# 候选评估见 panels/_prd/industries-roster.md §3.6。
+# 候选评估见 docs/prd/panels/industries-roster.md §3.6。
 
 name: edu-cn
 display_name: Education-CN Panel (Skeleton)

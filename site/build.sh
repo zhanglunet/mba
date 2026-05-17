@@ -5,7 +5,7 @@
 #   1. 不动 site/index.html(已经在仓库里)
 #   2. 读 site/published-reports.txt
 #   3. 把白名单里每个 brand 的 report.html 拷到 site/reports/<brand>/index.html
-#   4. 拷过去的同时把 reports/<brand>/ 下的图片等静态资源一并搬过去(若存在)
+#   4. 拷过去的同时把 published/reports/<brand>/ 下的图片等静态资源一并搬过去(若存在)
 #
 # 输出目录 = site/  (Cloudflare Pages 的 build output directory)
 #
@@ -21,7 +21,7 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 SITE_DIR="$REPO_ROOT/site"
-SRC_DIR="$REPO_ROOT/metric-brand-auditor/reports"
+SRC_DIR="$REPO_ROOT/published/reports"
 WHITELIST="$SITE_DIR/published-reports.txt"
 OUT_DIR="$SITE_DIR/reports"
 

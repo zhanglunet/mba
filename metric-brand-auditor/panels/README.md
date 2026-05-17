@@ -68,7 +68,7 @@ judges:
    (01 身份卡 / 02 表达 DNA / 03 心智模型 / 04 决策启发式 /
     05 反共识立场 / 06 anti-fabrication 边界)
 
-4. (可选)放一张插画头像到 ../../images/pmarca.jpg
+4. (可选)放一张插画头像到 ../../assets/judges/pmarca.jpg
    严禁真人照片,插画 / 卡通 / monogram 都行
 
 5. 单独跑一次确认 perspective 自己可用

@@ -134,7 +134,7 @@ dimension 文件名 `dimension_<n>_<slug>.md`:
 
 ## 4. Python 脚本风格
 
-`wuying_open.py` / `test_wuying.py` 当前是参考实现。新增脚本应:
+`scripts/wuying/open.py` / `scripts/wuying/smoke_test.py` 当前是参考实现。新增脚本应:
 
 ### 4.1 .env 加载
 
@@ -174,7 +174,7 @@ except Exception as e:
 
 Anthropic key / wuying key 即使在 debug 输出里也不能完整打印。
 
-> 当前 `wuying_open.py` 在 teardown 命令里把 api_key 内联进了 print —— **新代码不要这么做**(已知 issue,修在 v0.3 backlog)。
+> `scripts/wuying/open.py` 的 teardown 输出必须从 `.env` 重新读取 key,不要把 API key 内联进 print。
 
 ### 4.4 单文件优先
 

@@ -60,7 +60,7 @@ PR. Use one of these controlled options.
 1. Copy `SKILL-draft.md` to a temporary scratch directory outside the repo or
    outside `${PERSPECTIVES_PATH}`.
 2. Manually load it during a single simulated judge run.
-3. Write the output to `_prd/leijun-perspective/dogfood/byd-review.md`.
+3. Write the output to `docs/prd/panels/leijun-perspective/dogfood/byd-review.md`.
 
 Pros:
 
@@ -76,7 +76,7 @@ Cons:
 1. Create `leijun-perspective/SKILL.md` locally from the draft.
 2. Run `/mba BYD --industry auto --quick --panel-add leijun` or an equivalent
    single-judge prompt.
-3. Save the review output under `_prd/leijun-perspective/dogfood/byd-review.md`.
+3. Save the review output under `docs/prd/panels/leijun-perspective/dogfood/byd-review.md`.
 4. Remove the temporary `leijun-perspective/SKILL.md` before commit.
 5. Confirm `scripts/validate_panels.py` returns `auto.yaml` as skeleton again.
 
@@ -100,7 +100,7 @@ Run one review with these constraints:
 Brand: BYD / 比亚迪
 Mode: quick
 Judge: leijun only, or auto panel with only leijun temporarily available
-Output: metric-brand-auditor/panels/_prd/leijun-perspective/dogfood/byd-review.md
+Output: docs/prd/panels/leijun-perspective/dogfood/byd-review.md
 ```
 
 The review should follow the normal MBA judge output:
@@ -175,8 +175,8 @@ The dogfood review fails if:
 If dogfood is executed, commit only these artifacts:
 
 ```text
-metric-brand-auditor/panels/_prd/leijun-perspective/dogfood/byd-review.md
-metric-brand-auditor/panels/_prd/leijun-perspective/dogfood/byd-eval.md
+docs/prd/panels/leijun-perspective/dogfood/byd-review.md
+docs/prd/panels/leijun-perspective/dogfood/byd-eval.md
 ```
 
 Do not commit:

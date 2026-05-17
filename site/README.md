@@ -24,15 +24,17 @@ site/
 
 1. 跑出报告:`/mba <brand>` —— 本地生成 `metric-brand-auditor/reports/<brand>/report.html`
 2. 把 brand-slug 加进白名单:`echo "<brand>" >> site/published-reports.txt`
-3. 报告本身被 `.gitignore` ignore,要发布就显式 add:
+3. Review 报告内容,确认可公开后复制到 `published/reports/<brand>/`
+4. 发布源需要显式 add:
    ```bash
-   git add -f metric-brand-auditor/reports/<brand>/report.html
-   # 如果报告引用图片,也一并 add -f
+   mkdir -p published/reports/<brand>
+   cp -R metric-brand-auditor/reports/<brand>/* published/reports/<brand>/
+   git add -f published/reports/<brand>/
    git add site/published-reports.txt
    git commit -m "publish: <brand>"
    git push
    ```
-4. Cloudflare Pages 检测到 push 自动触发 build,30 秒~2 分钟内 `https://mbabrand.com/reports/<brand>/` 上线。
+5. Cloudflare Pages 检测到 push 自动触发 build,30 秒~2 分钟内 `https://mbabrand.com/reports/<brand>/` 上线。
 
 ### 取消发布
 
@@ -111,7 +113,7 @@ site/
 Cloudflare Pages 默认 cache,push 后等 1~2 分钟。还不行就 dashboard → 项目 → **Deployments** → 看最新 build 是否成功。
 
 **Q: 报告里的图片 404?**
-build.sh 只搬 `metric-brand-auditor/reports/<brand>/` 下深度 ≤2 的图片。如果你的报告引用了更深路径或外部图,要么改报告里的路径,要么扩展 build.sh。
+build.sh 只搬 `published/reports/<brand>/` 下深度 ≤2 的图片。如果你的报告引用了更深路径或外部图,要么改报告里的路径,要么扩展 build.sh。
 
 **Q: 想删掉整个 site,改用其他方案?**
 Cloudflare Pages 控制台 → 项目 → **Settings** → **Delete project**。DNS 记录手动删。

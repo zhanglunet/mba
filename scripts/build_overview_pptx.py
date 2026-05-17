@@ -479,7 +479,7 @@ code = """mba/
 │   └── fusheng · jobs · likejia · wu-jundong · zhang-yiming
 │       每套 = SKILL.md + references/research/01–06.md + scripts/
 │
-└── wuying_open.py           ← 基建层：阿里云无影 AgentBay 云浏览器"""
+└── scripts/wuying/open.py      ← 基建层：阿里云无影 AgentBay 云浏览器"""
 add_code_block(s, Inches(0.5), Inches(2.2), Inches(12.3), Inches(4.4), code)
 add_text(s, Inches(0.5), Inches(6.8), Inches(12.3), Inches(0.4),
          "每一层对应流水线一个阶段，且可独立调用（research / perspective 都能单独 / 调）。",

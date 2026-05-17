@@ -373,4 +373,4 @@ Stage 2 production-seed 已于 2026-05-18 落地:
 - `references/research/quotes.md`
 
 剩余可选增强:补技术开放日 / 财报会 timestamp 级 quote pass,以及
-`../images/hexiaopeng.jpg` 插画头像(严禁真人照片)。
+`../assets/judges/hexiaopeng.jpg` 插画头像(严禁真人照片)。

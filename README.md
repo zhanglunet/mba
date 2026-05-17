@@ -92,11 +92,14 @@ mba/
 │   └── libin-perspective/             李斌(蔚来)
 │   每套 = 1 份 SKILL.md(含人格化触发规则、表达 DNA、anti-fabrication 约束)
 │         + references/research/01-06.md(80% 一手来源的 6 路调研材料)
-│         + scripts/(字幕下载、研究合并、质量检查工具)
+│         + 共享工具见 scripts/perspective-tools/
 │
-└── wuying_open.py                ← 基建层:阿里云无影 AgentBay 浏览器一次性会话脚本
-    test_wuying.py                     冒烟测试 API key
-    .env.example / .env                WUYING_API_KEY 配置
+├── scripts/
+│   ├── perspective-tools/           ← 字幕下载、研究合并、质量检查等 perspective 共用工具
+│   └── wuying/                      ← 阿里云无影 AgentBay helper + smoke test
+├── assets/judges/                   ← 评委插画头像
+├── published/reports/               ← 已确认可公开发布的报告源
+└── .env.example / .env              WUYING_API_KEY 配置
 ```
 
 ### 流水线五阶段(FRESH 模式)
@@ -226,7 +229,7 @@ judges:
     05 反共识立场 / 06 anti-fabrication 边界)
 
 4. (可选)放一张插画头像
-   images/pmarca.jpg  ← 插画 / 卡通 / monogram 都行,严禁真人照片
+   assets/judges/pmarca.jpg  ← 插画 / 卡通 / monogram 都行,严禁真人照片
 
 5. 单独跑一次,确认 perspective 自己可用
    /pmarca-perspective 帮我看一眼龙虾这个事
@@ -348,8 +351,8 @@ cp .env.example .env
 `.env` 已在 `.gitignore` 中,不会进版本库。本机调通后跑一次:
 
 ```bash
-python3 test_wuying.py    # 冒烟测试,自动创建 → 取 endpoint → 删除
-python3 wuying_open.py    # 创建会话并打印 SESSION_ID + RESOURCE_URL,会话保持活跃
+python3 scripts/wuying/smoke_test.py    # 冒烟测试,自动创建 → 取 endpoint → 删除
+python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_URL,会话保持活跃
 ```
 
 > **注意**:免费 Lite 层 **拿不到 CDP 的 wss URL**(`get_endpoint_url()` 是 Pro/Ultra 独享)。

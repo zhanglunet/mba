@@ -406,4 +406,4 @@ Stage 2 production-seed landed on 2026-05-18:
 
 Remaining optional hardening: add timestamp-level podcast fragments for Joe
 Rogan / Lex Fridman / Everyday Astronaut and add a non-photographic portrait at
-`../images/musk.jpg`.
+`../assets/judges/musk.jpg`.

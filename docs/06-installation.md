@@ -7,7 +7,7 @@
 | 项 | 最低 | 备注 |
 |---|---|---|
 | OS | macOS 12+ / Linux | Windows 走 WSL2 |
-| Python | 3.9+ | 用于 wuying_open.py / test_wuying.py |
+| Python | 3.9+ | 用于 scripts/wuying/open.py / scripts/wuying/smoke_test.py |
 | Claude Code | 当前版本 | https://docs.claude.com/ |
 | Anthropic API key | 任意计费档 | https://console.anthropic.com/ |
 | 阿里云无影 API key | 免费 Lite 即可 | https://wuying.aliyun.com/ (可选,跳过则用 --quick) |
@@ -62,7 +62,7 @@ pip install agentbay
 ### 5.1 烟雾测试 wuying API key
 
 ```bash
-python3 test_wuying.py
+python3 scripts/wuying/smoke_test.py
 ```
 
 预期输出末尾:
@@ -119,7 +119,7 @@ ln -s ~/mba/zhang-yiming-perspective ~/.claude/skills/zhang-yiming-perspective
 如果 Mermaid 块显示 "Syntax error",见下文 §6.4。
 
 > ⚠️ **报告隐私:** `metric-brand-auditor/reports/` 已默认在 `.gitignore`,跑完审计的报告**不会**进版本库。
-> 如需分享某份特定报告,显式 `git add -f metric-brand-auditor/reports/<brand>/`(并 review 内容是否合适公开)。
+> 如需分享某份特定报告,显式 `git add -f published/reports/<brand>/`(并 review 内容是否合适公开)。
 
 ## 6. 故障排除
 
@@ -131,7 +131,7 @@ ln -s ~/mba/zhang-yiming-perspective ~/.claude/skills/zhang-yiming-perspective
 - 重启 Claude Code(skills 不热加载)
 - frontmatter 的 `name` 字段必须是小写 + 连字符,如 `mba` / `fusheng-perspective`
 
-### 6.2 `python3 test_wuying.py` 报 ModuleNotFoundError
+### 6.2 `python3 scripts/wuying/smoke_test.py` 报 ModuleNotFoundError
 
 → 没装依赖。`pip3 install --user agentbay`,确认在你的 Python path 里。
    `python3 -c "import agentbay"` 应该静默返回 0。

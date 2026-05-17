@@ -1,12 +1,12 @@
 # MBA 发布白名单 / Publish whitelist
 #
-# 每行一个 brand-slug,对应 metric-brand-auditor/reports/<slug>/report.html
+# 每行一个 brand-slug,对应 published/reports/<slug>/report.html
 # build.sh 只把这里列出的报告拷到 site/reports/<slug>/index.html 上线。
 #
 # 没列在这里的报告 —— 即使本地存在 —— 不会被发布。
-# .gitignore 仍然 ignore 整个 reports/ 目录,所以发布前必须显式:
+# metric-brand-auditor/reports/ 仍然 ignore,发布前先把确认可公开的报告复制到 published/reports/:
 #
-#   git add -f metric-brand-auditor/reports/<slug>/report.html
+#   git add -f published/reports/<slug>/report.html
 #   git add site/published-reports.txt
 #   git commit && git push
 #

@@ -154,7 +154,7 @@ Agent(
 
 **Wuying sub-agent 特殊性:**
 
-- 需要先跑 `python3 wuying_open.py` 起会话
+- 需要先跑 `python3 scripts/wuying/open.py` 起会话
 - 用 `agent-browser` CLI 驱动 → 拿数据 → 落盘 `_raw/wuying_browse.md`
 - **必须 teardown**(MBA 把 wuying session 看作"花钱在跑"的资源,不能漏关)
 - 失败时降级:不伪造数据,在报告里标 N/A

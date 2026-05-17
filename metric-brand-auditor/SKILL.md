@@ -84,7 +84,7 @@ Resolve them ONCE at Phase 0 and reuse — do NOT substitute literal `~/mba/...`
 | `${SKILL_DIR}` | The directory containing this `SKILL.md` (the skill's install root) | `cd "$(dirname "<this-file>")" && pwd`, or read from the loading harness |
 | `${REPORTS_DIR}` | Where reports are written | First non-empty of: `$MBA_REPORTS_DIR` env var, `${SKILL_DIR}/reports`, `$PWD/reports` |
 | `${PERSPECTIVES_PATH}` | List of directories to probe for judge perspective skills | In order: `${SKILL_DIR}/..`, `~/.claude/skills`, `~/skills`, `$HOME/.claude/skills` |
-| `${IMAGES_DIR}` | Judge-portrait illustration set | First existing of: `${SKILL_DIR}/images`, `${SKILL_DIR}/../images`. If neither exists, use the emoji/monogram fallback (Phase 5F.b portrait rules) |
+| `${IMAGES_DIR}` | Judge-portrait illustration set | First existing of: `$MBA_IMAGES_DIR` env var, `${SKILL_DIR}/../assets/judges`, `${SKILL_DIR}/assets/judges`. If none exists, use the emoji/monogram fallback (Phase 5F.b portrait rules) |
 | `${PANELS_DIR}` | Where judge-panel yaml configs live | First non-empty of: `$MBA_PANELS_DIR` env var, `${SKILL_DIR}/panels`. See `panels/README.md` for the schema |
 | `${RESEARCH_SKILL}` | The upstream `research` skill (used as a building block) | First existing of: `${SKILL_DIR}/../research/SKILL.md`, `~/.claude/skills/research/SKILL.md`. If neither exists, fall back to direct WebSearch+WebFetch |
 
@@ -525,12 +525,12 @@ Agent(
     browser session. The other sub-agents are handling open-web research in parallel — your job
     is the JS-heavy / login-walled / anti-bot sources.
 
-    Step 1 — Spin up a session. The session-launcher script ships next to the skill at
-    ${SKILL_DIR}/../wuying_open.py (John's layout) or wherever the host has installed it.
+    Step 1 — Spin up a session. The session-launcher script ships in the repo at
+    ${SKILL_DIR}/../scripts/wuying/open.py (John's layout) or wherever the host has installed it.
     Run locally:
-      python3 \"${SKILL_DIR}/../wuying_open.py\"
+      python3 \"${SKILL_DIR}/../scripts/wuying/open.py\"
     Cross-machine fallback (only if the Wuying credentials live on a different host you control):
-      ssh <user>@<host> 'cd <wuying-script-dir> && python3 wuying_open.py'
+      ssh <user>@<host> 'cd <wuying-script-dir> && python3 scripts/wuying/open.py'
     Either way, capture SESSION_ID and RESOURCE_URL from the output. If the script is not
     found AND no cross-machine host is configured, abort the Wuying leg and proceed in
     --quick mode (auto-degrade per the Prerequisites table).
@@ -550,7 +550,7 @@ Agent(
     Step 4 — Save observations to:
       ${REPORTS_DIR}/{brand-slug}/_raw/wuying_browse.md
 
-    Step 5 — Tear down the session when done (the wuying_open.py output prints the delete cmd).
+    Step 5 — Tear down the session when done (the scripts/wuying/open.py output prints the delete cmd).
 
     Output sections:
     - ## Platform-by-platform findings (X / RedNote / Bilibili / press / own channels)
@@ -787,7 +787,7 @@ The HTML must be **a single self-contained file** (CDN scripts allowed, no local
       | wu-jundong   | `吴俊东.jpg`      |
       | zhang-yiming | `张一鸣.jpg`      |
 
-      Reference via relative path (`../../images/...`) so the HTML stays
+      Reference via relative path (`../../assets/judges/...`) so the HTML stays
       portable; if the report is meant to be shared standalone, base64-inline
       them.
    b) **Emoji or monogram fallback** — if no illustration is available, use a
@@ -1000,7 +1000,7 @@ that can be tuned per brand but never deleted.
 
 | Metric                                       | Threshold | Action |
 |----------------------------------------------|-----------|--------|
-| Session wall time                            | > 15 min  | Auto-teardown via `wuying_open.py` cleanup path; log SESSION_ID + teardown status to `_raw/wuying_browse.md` |
+| Session wall time                            | > 15 min  | Auto-teardown via `scripts/wuying/open.py` cleanup path; log SESSION_ID + teardown status to `_raw/wuying_browse.md` |
 | Session still alive after MBA pipeline exits | any       | **P0** — money is leaking. Surface SESSION_ID in the final summary with manual termination command |
 | Screenshots / observations captured          | < 3       | Flag the cloud-browser dimension `THIN`; recommend `--quick` next run |
 

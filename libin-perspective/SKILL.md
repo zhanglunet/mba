@@ -355,4 +355,4 @@ Stage 2 production-seed 已于 2026-05-18 落地:
 - `references/research/quotes.md`
 
 剩余可选增强:补 NIO Day / 用户面对面 timestamp 级 quote pass,以及
-`../images/libin.jpg` 插画头像(严禁真人照片)。
+`../assets/judges/libin.jpg` 插画头像(严禁真人照片)。

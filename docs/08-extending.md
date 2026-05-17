@@ -50,14 +50,14 @@ cd my-judge-perspective
 这 6 个文件是 TA 的"调研材料"。要么:
 
 - **手动写**:你自己读够 TA 的访谈/文章,自己整理 6 个文件
-- **跑研究脚本**:每个 perspective 目录有 `scripts/`,内含 `merge_research.py` 之类工具,但需要你先用 Claude Code 跑一轮调研拿到 raw 资料
+- **跑研究脚本**:共享工具在 `scripts/perspective-tools/`,内含 `merge_research.py` 之类工具,但需要你先用 Claude Code 跑一轮调研拿到 raw 资料
 
 理想流程(MVP):
 
 ```
 1. 在 Claude Code 里说: "调研 X 这个人,用 perspective skill 的 6 路并行模板"
 2. Claude 跑 6 个 sub-agent,各自落到 my-judge-perspective/references/research/01-06.md
-3. 跑 scripts/quality_check.py 校验占位符 / 一手来源比例(如果存在)
+3. 跑 scripts/perspective-tools/quality_check.py 校验占位符 / 一手来源比例(如果存在)
 4. 把 01-06 的结论手动归纳进 SKILL.md 的"核心心智模型"和"表达 DNA"
 ```
 
@@ -217,7 +217,7 @@ scripts/migrate_legacy_report_panels.py
 1. fork → 改 → PR 到 main
 2. PR 标题用 commit message 规范(`feat:` / `docs:` / `fix:` 等)
 3. 改了 SKILL.md 必须同步改 docs/03 / docs/04 / docs/08 中相关章节
-4. 改了 perspective skill 必须跑一次 `scripts/quality_check.py`(如果存在)
+4. 改了 perspective skill 必须跑一次 `scripts/perspective-tools/quality_check.py`(如果存在)
 5. PR description 列出"做了什么 / 为什么"和"对存量影响"
 
 ### 8.2 Issue 流程

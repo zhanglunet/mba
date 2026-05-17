@@ -4,7 +4,7 @@
 # 通过 industries.yaml 被 `--industry ai-app-cn` 引用。
 #
 # ⚠️  SKELETON 状态:4 位待建,fusheng 已存在(复用 default panel 的 perspective)。
-# 候选评估见 panels/_prd/industries-roster.md §3.3。
+# 候选评估见 docs/prd/panels/industries-roster.md §3.3。
 
 name: ai-app-cn
 display_name: AI Application Layer Panel (Skeleton)
