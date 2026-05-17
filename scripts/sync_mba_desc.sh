@@ -28,9 +28,9 @@ fi
 SOURCE_URL='https://mbabrand.com'
 
 # Marketplace description — source of truth. 改这里就够。
-DESC='【中文】把任意品牌交给 5 位"评委"做一次可复盘的品牌影响力审计: 并行调研创始叙事、产品定位、渠道、社区、视觉、竞品、舆情,再由傅盛 / Steve Jobs / 李可佳 / 吴俊东 / 张一鸣五个视角独立打分。输出 Markdown + HTML 报告,含雷达图、异议热力图、影响力构造图、90 天行动建议。适合创始人、品牌/增长团队、投资人、竞品研究、AI 产品发布前复盘。
+DESC='【中文】把任意品牌交给一组可配置的"评委"做一次可复盘的品牌影响力审计: 并行调研创始叙事、产品定位、渠道、社区、视觉、竞品、舆情,再由默认 5 人 panel(傅盛 / Steve Jobs / 李可佳 / 吴俊东 / 张一鸣)或行业 panel 独立打分。支持 --panel / --industry / --panel-add / --panel-drop,输出 Markdown + HTML 报告,含雷达图、异议热力图、影响力构造图、90 天行动建议。适合创始人、品牌/增长团队、投资人、竞品研究、AI 产品发布前复盘。
 
-[EN] Turn any brand into a replayable influence audit: parallel research across founder narrative, positioning, distribution, community, identity, competitors, and sentiment, followed by a 5-judge perspective panel. Outputs versioned Markdown + HTML report with radar charts, dissent heatmaps, influence maps, and 90-day brand moves.
+[EN] Turn any brand into a replayable influence audit: parallel research across founder narrative, positioning, distribution, community, identity, competitors, and sentiment, followed by a configurable judge panel. Use the default 5-judge panel or switch via --panel / --industry / --panel-add / --panel-drop. Outputs versioned Markdown + HTML reports with radar charts, dissent heatmaps, influence maps, and 90-day brand moves.
 
 官网 / Website: https://mbabrand.com/
 样例报告 / Sample: https://mbabrand.com/reports/lenovo/

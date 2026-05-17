@@ -61,25 +61,36 @@ cd my-judge-perspective
 4. 把 01-06 的结论手动归纳进 SKILL.md 的"核心心智模型"和"表达 DNA"
 ```
 
-### 2.4 注册到 MBA(可选)
+### 2.4 注册到 panel(可选)
 
-如果想让 `/mba <brand>` 默认带上 TA,改 `metric-brand-auditor/SKILL.md`:
+如果想让 MBA 调用 TA,不要改 `SKILL.md` 里的硬编码名单;把 TA 注册进一份
+`metric-brand-auditor/panels/<panel-name>.yaml`:
 
-- 找到 `**Judge panel:** 5 perspectives — fusheng, jobs, likejia, wu-jundong, zhang-yiming`
-- 加上 `, my-judge`
-- 找到 Phase 4F 的 mapping table,加一行 `my-judge → ~/mba/my-judge-perspective/SKILL.md`
-- 找到 HTML 模板的 Score Matrix 章节,把 5 列改 6 列
-- 找到 "5 judges = 1 batch" 的并发说明,改成 "6 judges = 2 batches"
+```yaml
+judges:
+  - slug: my-judge
+    display_name_cn: 我的评委
+    display_name_en: My Judge
+    language: zh
+    weight: 1.0
+```
 
-> 6+ 评委 = Phase 4 一批跑不完(超 Anthropic 5 并发上限)。Lead 会自动分两批,但要在 SKILL.md 里加一句说明。
+常见做法:
+
+- 想长期复用:复制 `panels/default.yaml` 为一个新 panel 名,把 `my-judge` 加进去。
+- 想先试一次:运行 `/mba <brand> --panel-add my-judge`,不修改任何 panel 文件。
+- 想按行业调用:在 `panels/industries.yaml` 里把行业名映射到你的 panel。
+
+6+ 评委会由 Phase 4 自动按每批最多 5 位分批派发;Score Matrix 和 HTML 报告按 panel
+yaml 的顺序生成列。
 
 ### 2.5 试跑
 
 ```
-/mba <某个 demo 品牌> --judges my-judge
+/mba <某个 demo 品牌> --panel-add my-judge --quick
 ```
 
-只让你的新评委参与,看输出符合不符合预期(in-character / 没编造 / score 解释成立)。
+把你的新评委临时追加到当前 panel,看输出符合不符合预期(in-character / 没编造 / score 解释成立)。
 
 ## 3. 添加新维度
 
@@ -183,6 +194,22 @@ watch -n 5 'ls -la metric-brand-auditor/reports/<brand>/_raw/'
 
 这绕开 MBA pipeline,直接用单 perspective skill 输出 review,适合调评委 prompt。
 
+### 7.5 校验 panel 配置
+
+```bash
+scripts/validate_panels.py
+```
+
+这个脚本不依赖 PyYAML,会检查 panel 文件名 / `name` 字段、judge slug 重复、language /
+weight、industry 映射是否指向存在的 panel,并把 skeleton panel 缺失 perspective skill
+视为预期状态。
+
+如果你手上有旧报告目录(已有 `report.md` 但没有 `panel.yaml`),可以本地补一次默认绑定:
+
+```bash
+scripts/migrate_legacy_report_panels.py
+```
+
 ## 8. 提交贡献
 
 ### 8.1 PR 流程
@@ -245,7 +272,7 @@ Step 4. 归纳 SKILL.md
         - Anti-fabrication 红线(必须有,具体到"哪些话题不要替 TA 说")
 
 Step 5. 与 MBA 联动测试
-        - /mba <demo brand> --judges <new-judge>,jobs
+        - /mba <demo brand> --panel-add <new-judge> --quick
         - 看新评委的 review 是否 in-character
         - 与 Jobs(已稳定的对照组)对比,确保新评委有独立观点而非趋同
 

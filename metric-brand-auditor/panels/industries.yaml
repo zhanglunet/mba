@@ -10,8 +10,11 @@
 #   > default
 #
 # 加新行业:追加 `<industry-name>: <panel-name>` 一行。
-# - panel-name 必须对应 ./<panel-name>.yaml 已存在的文件;Phase 0 启动时会校验,
-#   找不到的就 ABORT 并打印这里所有合法的 industry 列表。
+# - 本文件是**行业路线图** —— 列在里面 ≠ 立刻可用。校验是 lazy 的:
+#   只有用户实际跑 `--industry <name>` 时,Phase 0 才检查对应 panel-name.yaml
+#   是否存在,不存在就 ABORT 提示"industry 映射到 panel '<name>' 但 panel 文件
+#   还没建,见 panels/README.md §3 建"。/mba 每次启动不做全表扫,所以列还没建
+#   panel 的行业是 OK 的。
 # - 一个 panel 可以被多个 industry 别名共用(下面 auto / ev 都指向 auto panel)。
 # - 行业名建议小写短名(`auto` / `edu` / `consumer-cn`),不要写空格 / 中文。
 
