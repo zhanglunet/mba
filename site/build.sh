@@ -62,18 +62,20 @@ while IFS= read -r line || [ -n "$line" ]; do
 
   # 一并拷该 brand 目录下的静态资源(图片 / PDF,不拷 _raw / reviews / versions)
   # 只拷常见静态后缀
-  find "$SRC_DIR/$slug" -maxdepth 2 -type f \
-    \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \
-       -o -name "*.svg" -o -name "*.webp" -o -name "*.gif" \
-       -o -name "*.pdf" \) 2>/dev/null \
-    | grep -v "/versions/" \
-    | grep -v "/_raw/" \
-    | grep -v "/reviews/" \
-    | while read -r asset; do
-      rel="${asset#$SRC_DIR/$slug/}"
-      mkdir -p "$dest_dir/$(dirname "$rel")"
-      cp "$asset" "$dest_dir/$rel"
-    done
+  while IFS= read -r asset; do
+    rel="${asset#$SRC_DIR/$slug/}"
+    mkdir -p "$dest_dir/$(dirname "$rel")"
+    cp "$asset" "$dest_dir/$rel"
+  done < <(
+    find "$SRC_DIR/$slug" -maxdepth 2 -type f \
+      \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \
+         -o -name "*.svg" -o -name "*.webp" -o -name "*.gif" \
+         -o -name "*.pdf" \) \
+      ! -path "*/versions/*" \
+      ! -path "*/_raw/*" \
+      ! -path "*/reviews/*" \
+      2>/dev/null
+  )
 
   echo "[mba-build] published: $slug"
   published_count=$((published_count + 1))

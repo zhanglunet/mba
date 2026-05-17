@@ -2,10 +2,13 @@
 browser session, fetching the CDP endpoint, and tearing it down.
 """
 import asyncio
-import os
 import sys
 import time
 from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent
+ENV_PATH = ROOT / ".env"
 
 
 def load_env(path: Path) -> dict:
@@ -20,11 +23,14 @@ def load_env(path: Path) -> dict:
 
 
 async def main() -> int:
-    env = load_env(Path.home() / "mba" / ".env")
+    if not ENV_PATH.is_file():
+        print(f"ERROR: env file not found: {ENV_PATH}", file=sys.stderr)
+        return 2
+    env = load_env(ENV_PATH)
     api_key = env.get("WUYING_API_KEY")
     image_id = env.get("WUYING_IMAGE_ID", "browser_latest")
     if not api_key or api_key == "your_api_key_here":
-        print("ERROR: WUYING_API_KEY not set in ~/mba/.env", file=sys.stderr)
+        print(f"ERROR: WUYING_API_KEY not set in {ENV_PATH}", file=sys.stderr)
         return 2
 
     masked = f"{api_key[:8]}…{api_key[-4:]}"

@@ -16,5 +16,15 @@ jobs:
           python-version: "3.x"
       - name: Validate panel configs
         run: python scripts/validate_panels.py
-      - name: Compile helper scripts
-        run: python -m py_compile scripts/validate_panels.py scripts/migrate_legacy_report_panels.py
+      - name: Compile Python files
+        run: |
+          python -m py_compile $(find . -type f -name '*.py' \
+            ! -path './skills/*' \
+            ! -path './metric-brand-auditor/reports/*')
+      - name: Check shell syntax
+        run: |
+          find . -type f -name '*.sh' \
+            ! -path './skills/*' \
+            -print0 | xargs -0 -r bash -n
+      - name: Build site
+        run: bash site/build.sh

@@ -1,8 +1,12 @@
 """Create an AgentBay browser session, print SessionId + ResourceUrl, exit
 without deleting so the user can open the URL in a browser."""
-import os
 import sys
+import shlex
 from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent
+ENV_PATH = ROOT / ".env"
 
 
 def load_env(path: Path) -> dict:
@@ -17,8 +21,14 @@ def load_env(path: Path) -> dict:
 
 
 def main() -> int:
-    env = load_env(Path.home() / "mba" / ".env")
-    api_key = env["WUYING_API_KEY"]
+    if not ENV_PATH.is_file():
+        print(f"ERROR: env file not found: {ENV_PATH}", file=sys.stderr)
+        return 2
+    env = load_env(ENV_PATH)
+    api_key = env.get("WUYING_API_KEY")
+    if not api_key or api_key == "your_api_key_here":
+        print(f"ERROR: WUYING_API_KEY not set in {ENV_PATH}", file=sys.stderr)
+        return 2
     image_id = env.get("WUYING_IMAGE_ID", "browser_latest")
 
     from agentbay import AgentBay
@@ -45,9 +55,15 @@ def main() -> int:
     print(f"RESOURCE_URL={resource_url}")
     print("===")
     print("Session left ALIVE. To delete later, run:")
-    print(f'  python3 -c "from agentbay import AgentBay; c=AgentBay(api_key=\\"{api_key}\\"); '
-          f'from agentbay.session import Session; '
-          f'c.delete_by_id(\\"{session_id}\\") if hasattr(c,\\"delete_by_id\\") else None"')
+    print(
+        f"  cd {shlex.quote(str(ROOT))} && "
+        "python3 -c \"from pathlib import Path; "
+        "from agentbay import AgentBay; "
+        "env=dict(line.strip().split('=', 1) for line in Path('.env').read_text().splitlines() "
+        "if line.strip() and not line.lstrip().startswith('#') and '=' in line); "
+        "c=AgentBay(api_key=env['WUYING_API_KEY']); "
+        f"c.delete_by_id('{session_id}') if hasattr(c, 'delete_by_id') else None\""
+    )
     return 0
 
 

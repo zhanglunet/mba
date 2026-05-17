@@ -33,6 +33,7 @@ JUDGE_COLORS = {
 # 16:9 slide size in EMU (1 inch = 914400 EMU)
 SLIDE_W = Inches(13.333)
 SLIDE_H = Inches(7.5)
+ROOT = Path(__file__).resolve().parent.parent
 
 
 def add_filled_rect(slide, x, y, w, h, fill_color, line=False):
@@ -789,7 +790,7 @@ def main():
         else:
             fn(prs, i + 1, total)
 
-    out = Path.home() / "mba" / "docs" / "hackathon" / "mba-hackathon-deck.pptx"
+    out = ROOT / "docs" / "hackathon" / "mba-hackathon-deck.pptx"
     out.parent.mkdir(parents=True, exist_ok=True)
     prs.save(out)
     print(f"✅ {out}")
