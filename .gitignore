@@ -17,6 +17,10 @@ skills/
 # 如需分享某份特定报告,先人工 review,再复制到 published/reports/<brand>/ 并显式 add
 metric-brand-auditor/reports/
 
+# 亚信安全报告当前仅供本地审阅,不得入库 / 发布 / 部署
+docs/prd/reports/asiainfo-security-v2-plan.md
+published/reports/asiainfo-security/
+
 # Cloudflare Pages 本地 build 产物(CF Pages 自己会 build,不入库)
 site/reports/
 
