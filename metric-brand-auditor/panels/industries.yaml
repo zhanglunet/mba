@@ -28,6 +28,9 @@ vc-en: vc-en                # 英文 VC / Silicon Valley
 edu-cn: edu-cn              # 中文教育 / 终身学习
 cross-border: cross-border  # 出海 / 跨境电商
 luxury-en: luxury-en        # 奢侈品 / 时尚 / 英文
+security-cn-global: security-cn-global  # 网络安全 / 企业安全 / AI 安全 / 政企软件
+cybersecurity: security-cn-global        # 网络安全别名
+security: security-cn-global             # 安全行业简写
 
 # Aliases(指向已建 panel 的便捷别名,可选):
 ai: ai-app-cn               # /mba <brand> --industry ai 等价于 --industry ai-app-cn

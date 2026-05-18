@@ -1,0 +1,61 @@
+# metric-brand-auditor/panels/security-cn-global.yaml
+#
+# 网络安全 / 企业安全 / AI 安全 / 政企软件全球评委组。
+# 状态(2026-05-18):6 位 perspective skill 均已存在，可用于 MBA Phase 4。
+# 适合亚信安全、奇安信、深信服、安恒信息、启明星辰、绿盟科技、Trend Micro、
+# CrowdStrike、Palo Alto Networks 等安全或基础设施品牌。
+#
+# Self-conflict rule:
+#   - 360 / 奇虎 360 / 三六零 / 360 安全 / 奇富科技: use --panel-drop zhouhongyi.
+#   - Trend Micro / 趋势科技: use --panel-drop zhangmingzheng.
+#   - Huawei / 华为 / 华为云 / 鸿蒙 / 昇腾 / 鲲鹏 / 海思: use --panel-drop renzhengfei.
+#   - NVIDIA / CUDA / GeForce / DGX / Omniverse: use --panel-drop jensenhuang.
+#   - Tesla / SpaceX / X / xAI / Neuralink / Starlink / The Boring Company: use --panel-drop musk.
+#   - Microsoft / Azure / Microsoft Security / Defender / Sentinel / GitHub / LinkedIn / Copilot:
+#     use --panel-drop satyanadella.
+#   - If a conflicted judge is kept, their output is founder self-check only and must not be
+#     treated as a neutral cross-brand score.
+
+name: security-cn-global
+display_name: Security CN Global 6-Judge Panel
+description: >
+  网络安全 / 企业安全 / AI 安全 panel:中国安全心智、亚洲安全全球化、硬科技长期主义、
+  AI 基础设施、第一性原理技术叙事、企业级云安全平台。适合给政企安全、数据安全、
+  云安全、AI 安全和基础设施型软件品牌做影响力审计。
+
+judges:
+  - slug: zhouhongyi
+    display_name_cn: 周鸿祎
+    display_name_en: Zhou Hongyi
+    language: zh
+    weight: 1.0
+
+  - slug: zhangmingzheng
+    display_name_cn: 张明正
+    display_name_en: Steve Chang
+    language: zh
+    weight: 1.0
+
+  - slug: renzhengfei
+    display_name_cn: 任正非
+    display_name_en: Ren Zhengfei
+    language: zh
+    weight: 1.0
+
+  - slug: jensenhuang
+    display_name_cn: 黄仁勋
+    display_name_en: Jensen Huang
+    language: en
+    weight: 1.0
+
+  - slug: musk
+    display_name_cn: 马斯克
+    display_name_en: Elon Musk
+    language: en
+    weight: 1.0
+
+  - slug: satyanadella
+    display_name_cn: 萨提亚·纳德拉
+    display_name_en: Satya Nadella
+    language: en
+    weight: 1.0

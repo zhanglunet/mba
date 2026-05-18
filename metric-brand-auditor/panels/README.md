@@ -213,6 +213,11 @@ Redmi / Xiaomi Auto / SU7:
 | `auto` | `lixiang` | Li Auto / 理想汽车 / 理想 / 车和家 / 汽车之家 | use `--panel-drop lixiang`; if kept, self-check only |
 | `auto` | `hexiaopeng` | XPeng / 小鹏 / 小鹏汽车 / MONA / UC / UC 浏览器 | use `--panel-drop hexiaopeng`; if kept, self-check only |
 | `auto` | `libin` | NIO / 蔚来 / Onvo / 乐道 / Firefly / 萤火虫 / 易车网 | use `--panel-drop libin`; if kept, self-check only |
+| `security-cn-global` | `zhouhongyi` | 360 / 奇虎 360 / 三六零 / 360 安全 / 奇富科技 | use `--panel-drop zhouhongyi`; if kept, self-check only |
+| `security-cn-global` | `zhangmingzheng` | Trend Micro / 趋势科技 | use `--panel-drop zhangmingzheng`; if kept, self-check only |
+| `security-cn-global` | `renzhengfei` | Huawei / 华为 / 华为云 / 鸿蒙 / 昇腾 / 鲲鹏 / 海思 | use `--panel-drop renzhengfei`; if kept, self-check only |
+| `security-cn-global` | `jensenhuang` | NVIDIA / CUDA / GeForce / DGX / Omniverse | use `--panel-drop jensenhuang`; if kept, self-check only |
+| `security-cn-global` | `satyanadella` | Microsoft / Azure / Microsoft Security / Defender / Sentinel / GitHub / LinkedIn / Copilot | use `--panel-drop satyanadella`; if kept, self-check only |
 
 示例:
 
