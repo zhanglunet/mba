@@ -145,6 +145,17 @@ Lead 只跑维度 2/3/4/6/7,跳过 1(创始叙事)和 5(视觉)。评委仍然 5
 李斌是 v1 preview。评小米 / Redmi / Xiaomi Auto / SU7 时默认加
 `--panel-drop leijun`,避免创始人自评被当成中立横评。
 
+网络安全 / 企业安全 / AI 安全品牌可用:
+
+```
+> /mba 某安全公司 --industry security-cn-global --quick
+```
+
+`security-cn-global` 会召回周鸿祎、张明正、任正非、黄仁勋、马斯克、Satya Nadella
+六位视角。评 360 / Trend Micro / Huawei / NVIDIA / Microsoft 等强关联品牌时,使用
+对应 `--panel-drop <judge>`;如果保留该评委,输出只能作为 founder self-check,不能当
+中立横评分。
+
 也可以直接指定 panel:
 
 ```

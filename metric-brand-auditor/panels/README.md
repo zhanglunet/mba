@@ -227,6 +227,9 @@ Redmi / Xiaomi Auto / SU7:
 /mba li-auto --industry auto --quick --panel-drop lixiang
 /mba xpeng --industry auto --quick --panel-drop hexiaopeng
 /mba nio --industry auto --quick --panel-drop libin
+/mba 360 --industry security-cn-global --quick --panel-drop zhouhongyi
+/mba trend-micro --industry security-cn-global --quick --panel-drop zhangmingzheng
+/mba microsoft-security --industry security-cn-global --quick --panel-drop satyanadella
 ```
 
 ---
@@ -270,6 +273,8 @@ Redmi / Xiaomi Auto / SU7:
 最低限度本目录会有:
 
 - `default.yaml` —— 5 人混合 panel,/mba 的兜底
-- `auto.yaml` / `consumer-cn.yaml` / `ai-app-cn.yaml` 等 —— 行业 panel,多为 SKELETON 状态(评委 perspective skill 还没建齐)
+- `auto.yaml` —— 汽车 / EV panel,可运行
+- `security-cn-global.yaml` —— 网络安全 / 企业安全 / AI 安全 panel,可运行
+- `consumer-cn.yaml` / `ai-app-cn.yaml` 等 —— 行业 panel,多为 SKELETON 状态(评委 perspective skill 还没建齐)
 - `industries.yaml` —— 行业 → panel 映射表,被 `--industry` flag 查询(本身不是 panel,
   也不会被 `--panel` 解析到)
