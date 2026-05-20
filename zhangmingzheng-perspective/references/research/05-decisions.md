@@ -37,23 +37,11 @@
 ---
 
 ## D2. 1991–1992 PC-cillin + Intel 五年獨家授權
-
-### 背景
-- 1991 推出 PC-cillin 95 — 趨勢科技第一款消費端防毒產品 (取名意指「PC 的盤尼西林」)。
-- 1992 Intel 看上趨勢的 LAN 防毒程式。
-
-### 決策動作
-- 1992 Intel 取得趨勢 LAN 防毒程式在美國 + 歐洲的五年獨家授權 (Intel LANDesk
-  Virus Protect)，趨勢拿 17% royalty，年約 USD 4M。
-- 這是趨勢早期最大的單一現金流，為 1993–1997 的全球佈局提供燃料。
-
-### 外部信號
-- Lehigh News《The Antivirus King》: https://news.lehigh.edu/antivirus-king
-- Wikipedia 多源轉述
-
-### MBA 評委視角的意涵
-- 早期「OEM 給巨頭」是現金流轉折，但也讓品牌曝光暫時被 Intel 蓋住。
+- 1991 推出 PC-cillin 95 (取「PC 的盤尼西林」之意) — 第一款消費端防毒。
+- 1992 Intel 取得趨勢 LAN 防毒程式在美國 + 歐洲 5 年獨家授權 (Intel LANDesk
+  Virus Protect)，趨勢拿 17% royalty，年約 USD 4M — 早期最大現金流。
 - 5 年授權結束後 (1997)，趨勢需要重建自有品牌 — 1996 將總部遷東京 (D3) 是回應。
+- 來源: Lehigh News https://news.lehigh.edu/antivirus-king + Wikipedia
 
 ---
 
@@ -128,21 +116,9 @@
 ---
 
 ## D6. 2000 趨勢教育基金會成立
-
-### 背景
-- 上市帶來資金 + 知名度 + 社會期待；陳怡蓁開始準備從營運轉向文化。
-
-### 決策動作
-- 2000 成立趨勢科技教育基金會 (現「趨勢教育基金會」)，定位「科技連結文化」。
-- 由陳怡蓁主導，定期辦「藝文有影」課程、贊助文化活動。
-
-### 外部信號
-- 趨勢教育基金會官網: https://www.trend.org/home/about
-- iThome 2003 報導: https://www.ithome.com.tw/news/2493
-  (將「基金會 + 著書」一起報導)
-
-### MBA 評委視角的意涵
-- 上市後即建立公益基金會 — 「家族價值觀延續」而非「家族繼承營運」的訊號。
+- 2000 成立趨勢教育基金會，定位「科技連結文化」，陳怡蓁主導；
+  上市後即建立公益基金會 — 「家族價值觀延續」而非「家族繼承營運」訊號。
+- 來源: https://www.trend.org/home/about + https://www.ithome.com.tw/news/2493
 
 ---
 

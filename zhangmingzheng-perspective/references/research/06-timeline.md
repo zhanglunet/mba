@@ -249,48 +249,34 @@
 - 來源: Trend Micro 多份新聞稿
 
 ### 2018 (年齡 64) **[錨]**
-- 若水創立 **台灣第一家 AI 數據處理策略服務** — 兼顧 AI 產業發展與身障就業。
-- 來源: 若水官網 + 未來城市天下 https://futurecity.cw.com.tw/article/986
+- 若水創立台灣第一家 AI 數據處理策略服務 — 兼顧 AI 產業發展與身障就業。
+- 來源: https://futurecity.cw.com.tw/article/986
 
 ### 2019 (年齡 65) **[錨]**
-- 數位時代專訪《不要太愛你的技術！趨勢科技董事長張明正用一根「孔雀羽毛」，
-  想給創業家什麼忠告？》— 標誌性「孔雀羽毛 + 空椅子」演講記錄。
-- 來源: bnext.com.tw/article/61287
+- 數位時代「孔雀羽毛 + 空椅子」標誌性演講記錄。
+- 來源: https://www.bnext.com.tw/article/61287
 
 ### 2020 (年齡 66) **[錨]**
-- 趨勢 Deep Security 整合進 Trend Cloud One — Workload Security 平台。
-- 來源: Trend Micro 文檔 docs.trendmicro.com
-- 趨勢 CEO 陳怡樺 (Eva) 榮登 CRN 科技百大經理人。
-- 來源: trendmicro.com 2020-08-03 新聞稿
-- 大人社團《看透權力，退休到花蓮養雞、找自己》— Steve 退休後第二輪訪談。
-- 來源: club.commonhealth.com.tw/article/2305
+- Deep Security 整合進 Trend Cloud One — Workload Security 平台。
+- Eva Chen 榮登 CRN 科技百大經理人。
+- 大人社團 Steve 退休後第二輪訪談 (https://club.commonhealth.com.tw/article/2305)。
 
 ### 2021-02-03 (年齡 66) **[錨]**
-- AWS Taiwan Office Fireside Chat — Steve Chang + Jonathan Chang (Trend
-  Forward Capital GP) 對台灣創業者。
-- 來源: Medium rich-51765 整理
+- AWS Taiwan Office Fireside Chat — Steve + Jonathan Chang (Trend Forward
+  Capital GP) 對台灣創業者。
 
 ### 2022 (年齡 67) **[錨]**
-- 趨勢影音平台「藝文有影放輕鬆」課程上線 (陳怡蓁主導)。
-- 來源: video.trend.org
+- 趨勢影音「藝文有影放輕鬆」課程上線 (陳怡蓁主導)。
 
-### 2024 (年齡 70) **[錨]**
-- 趨勢 9 月再次被 Gartner 列為 Endpoint Security Leader (改名後)。
-- 來源: newsroom.trendmicro.com 2024-09-23
+### 2024–2025-07 (年齡 70) **[錨]**
+- 2024-09 趨勢再次被 Gartner 列為 Endpoint Security Leader。
+- 2025-07-17 連續第 20 次 Gartner EPP Leader (2002–2025)。
+- 來源: https://newsroom.trendmicro.com/2025-07-17-Trend-Micro-Celebrates-20th-Consecutive-Recognition-as-a-Leader-in-Gartner-R-Magic-Quadrant-TM-Endpoint-Protection-Platforms
 
-### 2025-07-17 (年齡 70) **[錨]**
-- Trend Micro 慶祝 **連續第 20 次** 被 Gartner Magic Quadrant Endpoint
-  Protection Platforms 列為 Leader (2002–2025)。
-- 來源: trendmicro.com 2025-07-17 新聞稿
-
-### 2025-08+ (年齡 70) **[錨]**
-- 天下雜誌《趨勢科技大改組、牽手 Anthropic，CEO 陳怡樺 3 招反擊 AI "軟體末日"》。
-- 來源: cw.com.tw/article/5140871
-
-### 2025 (年齡 70) **[單錨 / 待跟蹤]**
-- 路透 / 鉅亨網 / IT 之家報導: 趨勢正考慮被多家私募巨頭收購；
-  市值約 1.53 萬億日元。
-- 來源: news.cnyes.com/news/id/5674685 + ithome.com/0/830/590.htm
+### 2025-08+ (年齡 70) **[錨 + 待跟蹤]**
+- 天下雜誌《趨勢大改組、牽手 Anthropic》(https://www.cw.com.tw/article/5140871)。
+- 路透 / 鉅亨網報導趨勢正考慮被私募競購；市值約 1.53 萬億日元。
+- 來源: https://news.cnyes.com/news/id/5674685 + https://www.ithome.com/0/830/590.htm
 
 ### 2026-05 (本次研究截止) (年齡 71)
 - Steve Chang 仍掛 Chairman；Eva Chen 仍掛 CEO；陳怡蓁主導趨勢教育基金會；
@@ -341,24 +327,13 @@
 
 ## H. 對 MBA 評委視角的時間軸特徵
 
-### H1. 「長期信任」是時間累積的
-- 1988 創立 → 2002 首次 Gartner Leader (用 14 年)
-- 2002 首次 Gartner Leader → 2025 連續 20 年 Leader (再用 23 年)
-- 從 SKILL.md 模型 1 來看，**「安全品牌是時間資產」需要至少 10–15 年才能在
-  外部評測機構建立位置，然後再 20 年穩定才能成為品類錨點**。
-
-### H2. 「家族傳承」的時間結構
-- 1988 三人創辦 → 2005 接班 (17 年)
-- 2005 接班 → 2025 仍是 Eva CEO (再 20 年)
-- 創辦人 → 連襟接班 → 連襟長期任 CEO 的結構是亞洲科技業少見的穩定組合。
-
-### H3. 「第二曲線」是創辦人退休後 2–3 年就建立的
-- 2004 卸 CEO → 2007 創辦若水 (僅 3 年)
-- 對 SKILL.md「家族 + 聯合創辦人三角組織」是延續證據。
-
-### H4. 「亞洲創立、全球品牌」的可驗證時程
-- 1988 美國加州創立 (美國基底)
-- 1996 總部遷東京 (亞洲認同)
-- 1998 JASDAQ + 1999 NASDAQ ADR + 2000 TSE 主板 (雙市場流動性)
-- 2015 收購 HP TippingPoint USD 300M (反向出資收購美國資產)
-- **這條路徑用了 27 年 (1988–2015)，是亞洲科技公司全球化最完整的單一樣本之一**。
+- **「長期信任」是時間累積的**: 1988 創立 → 2002 首次 Gartner Leader (14 年)
+  → 2025 連續 20 年 Leader (再 23 年)。「安全品牌是時間資產」需要至少 10–15
+  年才能在外部評測機構建立位置，再 20 年穩定才能成為品類錨點。
+- **「家族傳承」時間結構**: 1988 三人創辦 → 2005 接班 (17 年) → 2025 仍是
+  Eva CEO (再 20 年)。創辦人 → 連襟接班 → 連襟長期任 CEO 的結構是亞洲科技業
+  少見的穩定組合。
+- **「第二曲線」是創辦人退休後 2–3 年就建立的**: 2004 卸 CEO → 2007 創辦若水。
+- **「亞洲創立、全球品牌」可驗證時程**: 1988 加州 → 1996 東京總部 → 1998
+  JASDAQ → 1999 NASDAQ ADR → 2000 TSE 主板 → 2015 反向收購 HP TippingPoint
+  USD 300M。**用了 27 年 (1988–2015)**，是亞洲科技公司全球化最完整單一樣本之一。
