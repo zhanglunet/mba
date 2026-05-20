@@ -35,3 +35,7 @@ demo-script-*.md
 
 # 个人 Pitch 稿件(.docx)—— 黑客松 / 演讲稿,不入库
 docs/hackathon/*.docx
+
+# Python 字节码缓存(py_compile / pytest 等会生成)
+__pycache__/
+*.pyc
