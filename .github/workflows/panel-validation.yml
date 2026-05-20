@@ -16,6 +16,8 @@ jobs:
           python-version: "3.x"
       - name: Validate panel configs
         run: python scripts/validate_panels.py
+      - name: Validate perspective SKILL.md structure
+        run: python scripts/perspective-tools/check_structure.py
       - name: Compile Python files
         run: |
           python -m py_compile $(find . -type f -name '*.py' \
