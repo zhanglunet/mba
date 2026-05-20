@@ -50,20 +50,40 @@ bash "$BOTLEARN_BIN" skill-update "$SKILL_NAME" \
 python3 - "$LOG" <<'PY'
 import json, sys
 raw = open(sys.argv[1]).read()
+
 start = raw.find('{')
 if start < 0:
-    print('[sync-mba-desc] no JSON in response:')
-    print(raw[:500])
+    print('[sync-mba-desc] no JSON in response (first 500 chars):', file=sys.stderr)
+    print(raw[:500], file=sys.stderr)
     sys.exit(1)
-obj, _ = json.JSONDecoder().raw_decode(raw[start:])
+
+try:
+    obj, _ = json.JSONDecoder().raw_decode(raw[start:])
+except json.JSONDecodeError as e:
+    print(f'[sync-mba-desc] JSON parse failed: {e}', file=sys.stderr)
+    print('[sync-mba-desc] raw response (first 500 chars):', file=sys.stderr)
+    print(raw[:500], file=sys.stderr)
+    sys.exit(1)
+
 if not obj.get('success'):
-    print('[sync-mba-desc] API returned success=false')
-    print(json.dumps(obj.get('errors'), ensure_ascii=False))
+    print('[sync-mba-desc] API returned success=false', file=sys.stderr)
+    print(json.dumps(obj.get('errors'), ensure_ascii=False), file=sys.stderr)
     sys.exit(1)
-s = obj['data']['skill']
-print(f"[sync-mba-desc] OK · version={s['version']} · sourceUrl={s['sourceUrl']}")
+
+# 防御性提取：botlearn API 结构若变了，告诉用户具体哪一层缺
+try:
+    s = obj['data']['skill']
+    version = s['version']
+    source_url = s['sourceUrl']
+    description = s['description']
+except (KeyError, TypeError) as e:
+    print(f'[sync-mba-desc] unexpected API response shape (missing {e}); raw response keys: {list(obj.keys())}', file=sys.stderr)
+    print(json.dumps(obj, ensure_ascii=False, indent=2)[:800], file=sys.stderr)
+    sys.exit(1)
+
+print(f"[sync-mba-desc] OK · version={version} · sourceUrl={source_url}")
 print('[sync-mba-desc] live description:')
 print('---')
-print(s['description'])
+print(description)
 print('---')
 PY
