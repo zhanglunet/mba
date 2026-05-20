@@ -12,25 +12,21 @@
 ## D1. 1988 創立 Trend Micro (洛杉磯起家)
 
 ### 背景
-- 1988 年，張明正 (34 歲) 已從 HP 台灣分公司離職，曾自行創辦 AsiaTek (UNIX 軟體公司)。
-- 妻子陳怡蓁是台大中文系畢業、前天下雜誌編輯；妻妹陳怡樺 (Eva Chen) 同為輔大資管系
-  (轉述待驗) 出身的技術人。
-- 美國 IBM PC 普及 + 早期病毒 (Brain、Cascade) 開始出現，PC 安全是新興品類。
+- 張明正 (34 歲) 已離開 HP 台灣分公司、曾自行創辦 AsiaTek (UNIX 軟體)。
+- 妻子陳怡蓁 (台大中文系，前天下編輯)、妻妹 Eva Chen (技術)。
+- 1988 美國 IBM PC 普及 + 早期病毒 (Brain、Cascade) 興起，PC 安全是新興品類。
 
 ### 決策動作
-- 在美國加州洛杉磯成立 Trend Micro，初始資金約 USD 5,000 (英文 Wikipedia 摘要) +
-  岳母資助 30 萬美金 (中文維基百科摘要)。
-- 三人創辦結構: Steve = CEO/CTO 兼 (技術 + 銷售)；陳怡蓁 = 行銷 + 人事；
-  Eva Chen = Executive Vice President (1988–1996，後 CTO 1996–2004)。
+- 在美國加州洛杉磯成立 Trend Micro；初始資金 USD 5,000 (英 Wiki) +
+  岳母 USD 30 萬資助 (中 Wiki)。
+- 三人創辦結構: Steve=CEO/CTO；陳怡蓁=行銷+人事；Eva Chen=EVP (1988–1996, 後 CTO)。
 
 ### 外部信號
-- Trend Micro Leadership 官方頁: https://www.trendmicro.com/en_us/about/leaders.html
-- Wikipedia Steve Chang: https://en.wikipedia.org/wiki/Steve_Chang
-- Wikipedia Trend Micro: https://en.wikipedia.org/wiki/Trend_Micro
+- Trend Micro Leadership: https://www.trendmicro.com/en_us/about/leaders.html
+- Wikipedia Steve Chang + Trend Micro
 
 ### MBA 評委視角的意涵
 - 「美國起家」對後續日本 + 台灣布局是反常識選擇 — 多數亞裔創業者選台灣 / 大陸起步。
-- Steve 的選擇傾向「靠近用戶 + 靠近 Intel/Microsoft 生態」。
 - **三人創辦結構讓品牌敘事一開始就不是個人英雄主義**，是 SKILL.md
   「家族 + 聯合創辦人三角」的源頭。
 
@@ -46,72 +42,33 @@
 ---
 
 ## D3. 1996 總部遷往東京
-
-### 背景
-- 1996 年趨勢已在加州 + 台灣兩地運作 8 年。
-- Steve 多次表示日本市場是「Asia's most promising market」(轉述自 Wiki + Lehigh News)。
-
-### 決策動作
-- 1996 將 Trend Micro 全球總部遷往東京 (英文資料說 1996，中文資料說 1998 在
-  東京正式成立子公司 — 兩個事件不同：1996 是搬總部，1998 是上市)。
-- 任務原文提及「1996 Pacific Bell 與趨勢合作 LineOne 郵件防毒」— 本次 WebSearch
-  未驗到 Pacific Bell + LineOne 的具體合作報導，**標為待驗 / 不確定**。
-
-### 外部信號
-- Lehigh News + Wikipedia 摘要 (英)
-- 趨勢科技 zh.wikipedia.org 條目摘要
-
-### MBA 評委視角的意涵
-- 把總部放在日本 — 為 1998 JASDAQ 上市做制度準備。
-- 也對應「亞洲創立、亞洲上市、全球銷售」的長期品牌路徑。
+- 1996 將全球總部遷東京 (英資料 1996，中資料 1998 在東京正式成立子公司 —
+  兩個事件不同：1996 搬總部、1998 上市)。Steve 多次表示日本是「Asia's most
+  promising market」(轉述自 Wiki + Lehigh News)。
+- 任務原文「1996 Pacific Bell 與趨勢合作 LineOne 郵件防毒」— **未驗 / 待錨**。
+- 為 1998 JASDAQ 上市做制度準備；對「亞洲創立、亞洲上市、全球銷售」路徑關鍵。
+- 來源: Lehigh News + Wikipedia zh.wikipedia.org/wiki/趨勢科技
 
 ---
 
 ## D4. 1998-08 JASDAQ IPO — 亞洲首家在東京上市的軟體公司
 
-### 背景
-- 1998 趨勢年營收約 USD 60-80M (推估，未錨)；亞洲金融危機後資本市場仍活躍。
-- 趨勢需要海外資本與品牌信用為下一輪全球擴張提供燃料。
-
-### 決策動作
-- 1998-08-17 JASDAQ 上市 (Tokyo Stock Exchange JASDAQ market)。
-- 募資約 USD 70M。
-- 股票代號: 4704。
-- 「first Taiwanese-founded software company to be listed on the Tokyo Stock
-  Exchange」 — Lehigh News 直接引語。
-- 後續 2000-08 升上 TSE 主板。
-
-### 外部信號
-- Wikipedia Trend Micro 與 Steve Chang 條目
-- Lehigh News
-- Yahoo Finance: https://finance.yahoo.com/quote/4704.T/
-- Trend Micro IR: https://www.trendmicro.com/en_us/about/investor-relations/stocks-bonds.html
-
-### MBA 評委視角的意涵
-- **在東京而非紐約 / 台北上市** 是非典型路徑 — 反映趨勢「日本是真正客戶與資本市場」
-  的判斷。
-- 對「亞洲創立、全球品牌」的品牌主張是首個重大外部證明。
+- 1998 趨勢年營收 USD 60-80M (推估)；亞洲金融危機後仍活躍。
+- 1998-08-17 JASDAQ 上市 (4704)；募資約 USD 70M；
+  「first Taiwanese-founded software company to be listed on the Tokyo Stock
+  Exchange」(Lehigh News 直接引語)；2000-08 升 TSE 主板。
+- **在東京而非紐約 / 台北上市**是非典型路徑 — 反映「日本是真正客戶與資本市場」判斷。
+- 對「亞洲創立、全球品牌」主張是首個重大外部證明。
+- 來源: Wikipedia + Lehigh News + Yahoo Finance 4704.T + Trend Micro IR
 
 ---
 
 ## D5. 1999-07 NASDAQ ADR (TMICY) 上市
-
-### 背景
-- JASDAQ 上市後一年，趨勢需要美國資本市場的流動性與品牌可信度。
-- 1999 是 .com 泡沫高峰，多數亞洲科技公司也試圖在 NASDAQ 上市。
-
-### 決策動作
-- 1999-07 NASDAQ ADR 掛牌，代號 TMIC (後 TMICY)。
-- 從此趨勢同時在東京 + 美國雙市場流動。
-
-### 外部信號
-- Nasdaq: https://www.nasdaq.com/market-activity/stocks/tmicy
-- SEC 6-K filings 2003 起: https://www.sec.gov/Archives/edgar/data/0001089463/000119312503027699/d6k.htm
-
-### MBA 評委視角的意涵
-- 任務原文寫「2003 NASDAQ ADR 上市」— 實為 1999-07，**任務描述年份有誤**。
+- JASDAQ 上市後一年；1999-07 NASDAQ ADR 掛牌，代號 TMIC (後 TMICY)。
 - 雙重上市 + SEC 報備是「亞洲創立、全球標準」的法定錨。
-- 2003 的部分可能是 SEC 6-K 在 2003 開始有完整文檔，不是上市本身。
+- **任務原文寫「2003 NASDAQ ADR 上市」實為 1999-07，年份錯誤** —
+  2003 可能是 SEC 6-K filings 開始密集記錄的年份。
+- 來源: https://www.nasdaq.com/market-activity/stocks/tmicy + SEC 6-K https://www.sec.gov/Archives/edgar/data/0001089463/000119312503027699/d6k.htm
 
 ---
 
@@ -123,29 +80,14 @@
 ---
 
 ## D7. 2004 卸 CEO、2005 Eva Chen 正式接班
-
-### 背景
-- Steve Chang 已 50 歲；趨勢年營收 USD 454M (2003)。
-- 公開原因: 想退休、想分權；私下脈絡見天下雜誌 5080509「看透權力」一文。
-
-### 決策動作
-- 2004 年底，Steve Chang 宣布卸任 CEO 但留任 Chairman；Eva Chen (時任 CTO，
-  自 1988 共同創辦人) 接 CEO。
-- 2005-01 Eva Chen 正式上任 CEO。
-- SEC 6-K 記錄: https://www.sec.gov/Archives/edgar/data/0001089463/000119312505082093/d6k.htm
-- Steve 移居花蓮，自稱「半農」。
-
-### 外部信號
-- Wikipedia Eva Chen + Wikipedia Steve Chang
-- 天下雜誌 5080509《看透權力的本質》https://www.cw.com.tw/article/5080509
-- CommonWealth English 2017-02-06: https://english.cw.com.tw/article/article.action?id=1131
-- 大人社團 2020 訪談: https://club.commonhealth.com.tw/article/2305/
-
-### MBA 評委視角的意涵
-- **「家族內接班」(連襟) 但給的是技術人而非血親二代** — 不傳給自己的兒子，
-  傳給最懂技術的人。
-- 對 SKILL.md「家族 + 聯合創辦人三角組織」是核心證據。
-- Steve 自述: 「拿掉名片之後，你是誰？」— 主動把個人 CEO 標籤剝離。
+- Steve 50 歲；2003 年營收 USD 454M。2004 年底宣布卸 CEO 留 Chairman；
+  Eva Chen (CTO 自 1988 共同創辦人) 接 CEO，2005-01 正式上任。Steve 移居花蓮自稱「半農」。
+- **「家族內接班」(連襟) 但給的是技術人而非血親二代** — 不傳兒子，傳最懂技術的人。
+  對 SKILL.md「家族 + 聯合創辦人三角組織」是核心證據。
+- 來源: SEC 6-K https://www.sec.gov/Archives/edgar/data/0001089463/000119312505082093/d6k.htm
+  + 天下 5080509 https://www.cw.com.tw/article/5080509
+  + English CW https://english.cw.com.tw/article/article.action?id=1131
+  + 大人社團 https://club.commonhealth.com.tw/article/2305/
 
 ---
 
@@ -157,50 +99,25 @@
 ---
 
 ## D9. 2007 創辦若水國際 (社會企業)
-
-### 背景
-- Steve 已從營運退出 3 年；趨勢進入 Eva 主導期。
-- 王文華 (作家、前 MTV Networks 台灣總經理) 同期離開 MTV。
-
-### 決策動作
-- 2007 Steve Chang + 王文華 共同創辦若水國際 (FLOW International)。
-- 早期定位: 台灣第一個社會企業育成顧問團隊 / 社企 VC。
-- 中後期: 2009 聚焦身障就業；2013 全球首家社企型 BIM 服務；2018 台灣首家 AI
-  數據處理策略服務。
-
-### 外部信號
-- 若水國際官網: https://www.flow.tw/en/about/
-- 數位時代 2007: https://www.bnext.com.tw/article/20/BN-ARTICLE-20
-- 社企流 10 年回顧: https://www.seinsights.asia/article/3291/3268/5315
-- 王文華《創業教我的 50 件事》天下文化 2012, BCB483
-- 中央社 2013《換新執行長 若水改 DNA》: https://www.chinatimes.com/realtimenews/20131031003966-260410
-
-### MBA 評委視角的意涵
-- **創辦人下車後的「第二曲線」** — 不是退休而是換戰場。
-- 與趨勢的營運完全分離 — 一個是 ToB 安全，一個是社企 ToB BIM / AI 服務。
-- 「Tech for Good」品牌是若水的核心，與趨勢「A Safer World」並列為 Chang
-  家族兩個品牌資產。
+- 2007 Steve + 王文華 (作家、前 MTV Networks 台灣總經理) 共同創辦若水。
+  早期是台灣第一個社企育成顧問 / 社企 VC；2009 聚焦身障就業；
+  2013 全球首家社企型 BIM 服務；2018 台灣首家 AI 數據處理策略服務。
+- **創辦人下車後的「第二曲線」** — 不是退休而是換戰場；與趨勢營運完全分離。
+  「Tech for Good」(若水) + 「A Safer World」(趨勢) 並列為 Chang 家族兩個品牌資產。
+- 來源: 若水官網 https://www.flow.tw/en/about/ + 數位時代 https://www.bnext.com.tw/article/20/BN-ARTICLE-20
+  + 社企流 https://www.seinsights.asia/article/3291/3268/5315
+  + 王文華《創業教我的 50 件事》天下文化 2012 BCB483
+  + 中央社 https://www.chinatimes.com/realtimenews/20131031003966-260410
 
 ---
 
 ## D10. 2008-06 Smart Protection Network 發佈 — 雲端優先轉向
-
-### 背景
-- 2005–2008 病毒數量爆增 1,700% (Trend Micro 引用其威脅報告)；簽名檔模型瀕臨崩潰。
-- AV 產業整體開始往「雲端威脅情報」走。
-
-### 決策動作
-- 2008-06 趨勢發布 Smart Protection Network — 業界首批「雲端優先」威脅情報架構。
-- 把簽名檔放雲端 + reputation services (file / web / email) 統一。
-
-### 外部信號
-- Trend Micro 技術頁: http://cloudsecurity.trendmicro.com/us/technology-innovation/our-technology/smart-protection-network/
-- Wikipedia Trend Micro 條目
-- 2012 加入 big data analytics 升級。
-
-### MBA 評委視角的意涵
-- 對 SKILL.md 模型 2「從防毒到雲安全，遷移能力就是生命力」是核心證據。
-- 是 Steve 卸任後，Eva Chen 主導下的第一次重大「架構級」決策。
+- 2005–2008 病毒數量爆增 1,700% (Trend Micro 自家威脅報告)；簽名檔模型瀕臨崩潰。
+- 2008-06 趨勢發布 SPN — 業界首批「雲端優先」威脅情報架構；
+  簽名檔放雲端 + reputation services (file/web/email) 統一。2012 加 big data analytics。
+- 對 SKILL.md 模型 2「從防毒到雲安全，遷移能力就是生命力」是核心證據；
+  Steve 卸任後，Eva Chen 主導下的第一次重大「架構級」決策。
+- 來源: Trend Micro 技術頁 + Wikipedia Trend Micro
 
 ---
 
@@ -213,72 +130,33 @@
 ---
 
 ## D12. 2009-04 Third Brigade 收購 → Deep Security 誕生
-
-### 背景
-- 雲端工作負載 (workload) 出現新興攻擊面；hypervisor / agentless 防護需求興起。
-
-### 決策動作
-- 2009-04 收購 Third Brigade — host-based IPS + firewall 技術，
-  在收購前已被趨勢 OfficeScan 用了兩年。
-- 整合成 Trend Micro Deep Security — 後來成為趨勢主力雲端安全產品線。
-
-### 外部信號
-- Wikipedia Trend Micro
-- Trend Micro Deep Security 產品頁: https://www.trendmicro.com/en_us/business/products/hybrid-cloud/deep-security.html
-- AWS Marketplace: https://aws.amazon.com/marketplace/pp/prodview-2xurbznbep5eu
-
-### MBA 評委視角的意涵
-- 任務原文寫「2012 推出 Deep Security 雲端 workload protection」— 實際時程: 
-  2009 收購 Third Brigade，Deep Security 在 2009–2010 之間整合成形，
-  2012 加 big data analytics 到 SPN。**任務年份略晚 2-3 年**。
+- 2009-04 收購 Third Brigade (host-based IPS + firewall，收購前已被 OfficeScan
+  用了兩年)，整合成 Trend Micro Deep Security — 後成為趨勢主力雲端安全產品線。
+- **任務原文「2012 推出 Deep Security」實際時程: 2009 收購 → 2009–2010 整合成形，
+  2012 加 big data analytics 到 SPN。任務年份晚 2-3 年。**
 - 對 SKILL.md 模型 2 是雲端 workload 安全的核心遷移節點。
+- 來源: Wikipedia + https://www.trendmicro.com/en_us/business/products/hybrid-cloud/deep-security.html
 
 ---
 
 ## D13. 2015-10 / 2016-03 收購 HP TippingPoint USD 300M
-
-### 背景
-- HP 拆分企業業務 (HP Enterprise vs HP Inc) 後出售非核心安全產品線。
-- 趨勢需要網路入侵防禦 (NGIPS) + Zero Day Initiative (ZDI) 漏洞情報能力。
-
-### 決策動作
-- 2015-10-21 趨勢與 HP 簽訂收購協議: USD 300M，含 TippingPoint、Digital
-  Vaccine Labs (DVLabs)、Zero Day Initiative (ZDI)。
-- 2015-11-16 FTC 批准。
-- 2016-03-09 收購正式完成。
-
-### 外部信號
-- TechCrunch: https://techcrunch.com/2015/10/21/hp-sells-network-security-business-tippingpoint-to-trend-micro-for-300m/
-- Trend Micro 新聞稿: https://newsroom.trendmicro.com/2015-10-21-Trend-Micro-Acquires-HP-TippingPoint-Establishing-Game-Changing-Network-Defense-Solution
-- SecurityWeek: https://www.securityweek.com/trend-micro-completes-acquisition-hps-tippingpoint/
-- MarketScreener: https://www.marketscreener.com/quote/stock/HP-INC-24782740/news/Trend-Micro-Incorporated-completed-the-acquisition-of-Tippingpoint-Technologies-Inc-from-Hewlett-Pa-38070871/
-
-### MBA 評委視角的意涵
-- **趨勢史上最大單一收購** — 從端點 / 雲端擴張到網路安全 + 漏洞情報。
-- ZDI 後來成為全球最大有償漏洞回購計畫之一，是 SKILL.md「威脅情報文化」的
-  關鍵資產來源。
-- 反向驗證: 過了 7 年 (2025) 仍然是 Gartner EPP Leader (見 04 B1)。
+- 2015-10-21 與 HP 簽 USD 300M 收購 TippingPoint (含 DVLabs + Zero Day Initiative)；
+  2015-11-16 FTC 批准；2016-03-09 收購完成。
+- **趨勢史上最大單一收購** — 從端點/雲端擴張到網路安全+漏洞情報。
+- ZDI 後成為全球最大有償漏洞回購計畫之一，是 SKILL.md「威脅情報文化」核心資產來源。
+- 反向驗證: 7 年後 (2025) 仍是 Gartner EPP Leader。
+- 來源: TechCrunch https://techcrunch.com/2015/10/21/hp-sells-network-security-business-tippingpoint-to-trend-micro-for-300m/
+  + 趨勢新聞稿 https://newsroom.trendmicro.com/2015-10-21-Trend-Micro-Acquires-HP-TippingPoint-Establishing-Game-Changing-Network-Defense-Solution
 
 ---
 
 ## D14. 2002–2025 Gartner Magic Quadrant EPP Leader 20 年連續
-
-### 背景
 - 不是單一決策，而是「每年發布、每年外部評定」的長期信號。
-
-### 決策動作 (內部)
-- 持續投入端點防護 / EDR / XDR / MDR 產品線；
-- 持續用 ZDI 回購漏洞情報來餵產品；
-- 持續配合 Gartner 的評估方法 (Vision + Execution)。
-
-### 外部信號
-- Trend Micro 2025-07-17 新聞稿: https://newsroom.trendmicro.com/2025-07-17-Trend-Micro-Celebrates-20th-Consecutive-Recognition-as-a-Leader-in-Gartner-R-Magic-Quadrant-TM-Endpoint-Protection-Platforms
-- PR Newswire: https://www.prnewswire.com/news-releases/trend-micro-celebrates-20th-consecutive-recognition-as-a-leader-in-gartner-magic-quadrant-endpoint-protection-platforms-302508107.html
-
-### MBA 評委視角的意涵
-- **對 SKILL.md 模型 1「安全品牌是時間資產」的最強單一外部證據**。
-- 20 年連續 Leader 是 cybersecurity 圈獨一無二的紀錄 — 沒有任何其他廠商
-  在同一個 Magic Quadrant 連續 Leader 20 次。
+- 持續投入 EDR/XDR/MDR + ZDI 漏洞情報 + 配合 Gartner Vision/Execution 方法。
+- **對 SKILL.md 模型 1「安全品牌是時間資產」的最強單一外部證據** —
+  20 年連續 Leader 是 cybersecurity 圈獨一無二紀錄。
+- 來源: https://newsroom.trendmicro.com/2025-07-17-Trend-Micro-Celebrates-20th-Consecutive-Recognition-as-a-Leader-in-Gartner-R-Magic-Quadrant-TM-Endpoint-Protection-Platforms
+  + PR Newswire 同步
 
 ---
 
@@ -307,59 +185,43 @@
 
 ## E. 決策橫向觀察 — 模式提煉
 
-### E1. 「家族 + 制度」雙線
-- 1988 三人創辦 (家族)；2004–2005 接班給連襟而非血親 (制度勝於血緣)；
-- 2007 創辦人轉戰社企 (家族價值觀延續但不繼承營運)；
-- 2025 仍是 Eva CEO + Steve Chairman 結構 (家族影響仍在但 day-to-day 已制度化)。
-
-### E2. 「上市 + 收購 + 評測機構」三段式建構長期可信度
-- 上市: 1998 JASDAQ + 1999 NASDAQ ADR + 2000 TSE 主板
-- 收購: InterMute / Identum / Third Brigade / TippingPoint 等 5+
-- 評測: Gartner EPP Leader 20 連 + AV-TEST + CRN
-- **這套組合拳是 SKILL.md「亞洲公司全球標準」可被驗證的具體路徑**。
-
-### E3. 「總部地理」是策略而非歷史
-- 1988 加州 → 1996 東京 (全球總部) → 至今台北 + 東京 + Cupertino 三足鼎立。
-- 不依附單一國家的法律 / 稅務 / 政治風險。
-
-### E4. 「威脅情報」是真正的護城河
-- 從 Smart Protection Network 2008 起，到 ZDI 2015 收購，到 2017 ML 加持，
-  到 2025 Anthropic 合作 — 趨勢每次架構更新都重新投資威脅情報。
-
-### E5. 「不愛上技術」是創辦人自我修正
-- Steve 自己是 CS 碩士 + 工程師背景，卻反覆告誡創業者不要愛技術 — 推測這是
-  他在 1988–1996 之間踩過坑的反向告誡。
+- **「家族 + 制度」雙線**: 1988 三人創辦 (家族) → 2004–2005 接班給連襟而非血親
+  (制度勝於血緣) → 2007 創辦人轉戰社企 (價值觀延續而非繼承營運) →
+  2025 仍是 Eva CEO + Steve Chairman (家族影響仍在但 day-to-day 已制度化)。
+- **「上市 + 收購 + 評測機構」三段式建構長期可信度**:
+  上市 (1998 JASDAQ / 1999 NASDAQ ADR / 2000 TSE 主板) + 收購 (InterMute /
+  Identum / Third Brigade / TippingPoint 等 5+) + 評測 (Gartner EPP Leader 20 連
+  + AV-TEST + CRN)。**這是 SKILL.md「亞洲公司全球標準」的具體路徑**。
+- **「總部地理」是策略而非歷史**: 1988 加州 → 1996 東京 → 至今台北+東京+Cupertino
+  三足鼎立，不依附單一國家風險。
+- **「威脅情報」是真正的護城河**: SPN 2008 → ZDI 2015 → ML 2017 → Anthropic 2025，
+  每次架構更新都重新投資威脅情報。
+- **「不愛上技術」是創辦人自我修正**: Steve 是 CS 碩士+工程師背景，卻反覆告誡
+  創業者不要愛技術 — 1988–1996 之間踩過坑的反向告誡。
 
 ---
 
 ## F. 缺口 / 後續可補
 
-1. **D5 1999-07 NASDAQ ADR 上市的精確定價 / 募資額** — 未錨。
-2. **D3 Pacific Bell LineOne 合作 (任務提及)** — 完全未驗。
-3. **AsiaTek (D1 創辦前)** — 細節稀薄，未錨。
-4. **2025 私募競購 (D18)** — 進展需 live 跟蹤。
-5. **Eva Chen 接班的內部決策過程** — Wikipedia 摘要說 Steve 「nominated her,
-   after heavy persuasion she assumed CEO」— 但「heavy persuasion」的細節
-   未錨到天下 / 商週原文。
-6. **2022 後的中國市場退出細節** — 完全未查。
+1. D5 1999-07 NASDAQ ADR 上市精確定價 / 募資額未錨。
+2. D3 Pacific Bell LineOne 合作 (任務原文提及) 完全未驗。
+3. AsiaTek (D1 創辦前) 細節稀薄。
+4. D17 2025 私募競購進展需 live 跟蹤。
+5. Eva Chen 接班內部決策過程細節未錨到天下 / 商週原文。
+6. 2022 後的中國市場退出細節未查。
 
 ---
 
 ## 總結
 
-18 個關鍵決策，可分為三類:
+17 個關鍵決策，分三類:
+- **結構性** (改變公司基本面): D1 創立、D4 JASDAQ、D5 NASDAQ ADR、D7 接班、
+  D13 TippingPoint、D17 私募 (待驗)
+- **產品 / 技術轉向**: D2 PC-cillin+Intel、D10 SPN、D12 Deep Security、
+  D15 SPN→ML/Cloud One、D16 Anthropic AI
+- **創辦人個人**: D6 教育基金會、D7 退休、D9 若水社企
 
-**A 類 - 結構性決策** (改變公司基本面)
-- D1 創立、D4 JASDAQ、D5 NASDAQ ADR、D7 接班、D13 TippingPoint、D18 私募 (待驗)
-
-**B 類 - 產品 / 技術轉向**
-- D2 PC-cillin + Intel、D10 SPN、D12 Deep Security、D15 ML 加持、D16 Cloud One、
-  D17 Anthropic AI
-
-**C 類 - 創辦人個人**
-- D6 教育基金會、D7 退休、D9 若水社企
-
-對 MBA 評委視角，最強的三個「長期信任」證據:
-- D14 Gartner EPP 20 連 Leader (時間資產)
-- D7 Eva 接班 20 年延續 (制度勝血緣)
-- D9 創辦人下車後仍有第二曲線 (價值觀傳承)
+對 MBA 評委視角，最強三個「長期信任」證據:
+- **D14 Gartner EPP 20 連 Leader** (時間資產)
+- **D7 Eva 接班 20 年延續** (制度勝血緣)
+- **D9 創辦人下車後仍有第二曲線** (價值觀傳承)
