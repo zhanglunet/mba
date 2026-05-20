@@ -50,6 +50,7 @@ async def main() -> int:
     session_id = getattr(session, "session_id", None) or getattr(session, "id", "?")
     print(f"[3/5] session created: {session_id} ({time.time()-t0:.2f}s)")
 
+    cleanup_ok = False
     try:
         t0 = time.time()
         ok = await session.browser.initialize_async(BrowserOption())
@@ -60,14 +61,25 @@ async def main() -> int:
         try:
             client.delete(session)
             print("cleanup: session deleted via client.delete()")
+            cleanup_ok = True
         except Exception:
             try:
                 session.delete()
                 print("cleanup: session deleted via session.delete()")
+                cleanup_ok = True
             except Exception as e:
-                print(f"cleanup: failed to delete session: {e!r}", file=sys.stderr)
+                # Session may still be alive → costs money. Surface this loudly
+                # and propagate a non-zero exit so CI / babysitters notice.
+                print(
+                    f"cleanup: FAILED to delete session {session_id}: {e!r}",
+                    file=sys.stderr,
+                )
+                print(
+                    f"cleanup: session {session_id} may still be alive — delete manually",
+                    file=sys.stderr,
+                )
 
-    return 0
+    return 0 if cleanup_ok else 3
 
 
 if __name__ == "__main__":
