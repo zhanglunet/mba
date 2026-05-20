@@ -8,7 +8,7 @@ SKILL_URL="${SKILL_URL:-https://www.botlearn.ai/skillhunt/v2/s/metric-brand-audi
 DEMO_URL="${DEMO_URL:-https://mbabrand.com/reports/lenovo/}"
 SITE_URL="${SITE_URL:-https://mbabrand.com}"
 POST_CHANNEL="${POST_CHANNEL:-skill-bazaar-zh}"
-OUT_DIR="${OUT_DIR:-/private/tmp/mba-growth}"
+OUT_DIR="${OUT_DIR:-${TMPDIR:-/tmp}/mba-growth}"
 
 usage() {
   cat <<'EOF'
