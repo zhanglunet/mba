@@ -1,8 +1,13 @@
 # Wuying Cloud Browser — How to Use It in This Skill
 
 The Wuying (无影) cloud browser is provisioned via Alibaba Cloud's AgentBay service. The
-project ships with a one-shot helper at `~/mba/scripts/wuying/open.py` that creates a session and
-prints `SESSION_ID` + `RESOURCE_URL`.
+project ships with a one-shot helper at `${MAC_MBA_ROOT}/scripts/wuying/open.py` that creates a
+session and prints `SESSION_ID` + `RESOURCE_URL`.
+
+`${MAC_MBA_ROOT}` is the MBA install root on the Mac host that owns the `WUYING_API_KEY`
+`.env`. Resolve it before running the commands below — see SKILL.md "Path resolution" for the
+full symbol table. Default is `~/mba` on the Mac host; override with `export MAC_MBA_ROOT=/your/path`
+when installed elsewhere.
 
 This skill uses Wuying for things `WebFetch` can't do well:
 - X / Twitter search results (rate-limited / blocked for unauth fetch)
@@ -16,7 +21,7 @@ This skill uses Wuying for things `WebFetch` can't do well:
 ### 1. Create
 
 ```bash
-ssh <MAC_USER>@<MAC_HOST> 'cd ~/mba && python3 scripts/wuying/open.py'
+ssh <MAC_USER>@<MAC_HOST> "cd ${MAC_MBA_ROOT:-~/mba} && python3 scripts/wuying/open.py"
 ```
 
 Output:
@@ -55,7 +60,7 @@ If agent-browser does not natively support attaching to an external CDP/WSS endp
 After the cloud-browser leg finishes, delete the session:
 
 ```bash
-ssh <MAC_USER>@<MAC_HOST> "cd ~/mba && python3 -c \"
+ssh <MAC_USER>@<MAC_HOST> "cd ${MAC_MBA_ROOT:-~/mba} && python3 -c \"
 from agentbay import AgentBay
 import os
 api_key = open('.env').read().split('WUYING_API_KEY=')[1].split('\\n')[0].strip()

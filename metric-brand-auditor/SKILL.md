@@ -87,12 +87,14 @@ Resolve them ONCE at Phase 0 and reuse — do NOT substitute literal `~/mba/...`
 | `${IMAGES_DIR}` | Judge-portrait illustration set | First existing of: `$MBA_IMAGES_DIR` env var, `${SKILL_DIR}/../assets/judges`, `${SKILL_DIR}/assets/judges`. If none exists, use the emoji/monogram fallback (Phase 5F.b portrait rules) |
 | `${PANELS_DIR}` | Where judge-panel yaml configs live | First non-empty of: `$MBA_PANELS_DIR` env var, `${SKILL_DIR}/panels`. See `panels/README.md` for the schema |
 | `${RESEARCH_SKILL}` | The upstream `research` skill (used as a building block) | First existing of: `${SKILL_DIR}/../research/SKILL.md`, `~/.claude/skills/research/SKILL.md`. If neither exists, fall back to direct WebSearch+WebFetch |
+| `${MAC_MBA_ROOT}` | MBA install root on the Mac host that owns `WUYING_API_KEY`. Only consulted by the optional Wuying leg (see `references/wuying-browser.md`) | `$MAC_MBA_ROOT` env var if set; otherwise default `~/mba` on the Mac host. Override per-run with `export MAC_MBA_ROOT=/your/path` |
 
 **Cross-machine sidebar (optional, uncommon)**: if the running agent is on a remote/sandbox
 host but the canonical reports + perspective skills live on a different host you control,
 prefix file ops with `ssh <user>@<host>` and use that host's `${SKILL_DIR}` instead. This
 is a personal-setup convenience — the default flow assumes the skill, sibling skills, and
-report dir are reachable from the agent's own filesystem.
+report dir are reachable from the agent's own filesystem. The Wuying leg is the most common
+real-world case of this — see `${MAC_MBA_ROOT}` above.
 
 ## What the user gets
 
@@ -448,7 +450,12 @@ Draft a Brand Influence PRD. Output it to the user and wait for confirmation.
 **Research Objective:** Map how {Brand}'s influence is constructed and compounded —
 which levers do the work, which are decorative, where the leverage is fragile.
 
-**Default Dimensions (7):**
+**Default Dimensions (7 core + 2 advanced; Lead typically picks 5-8 per brand):**
+
+Core 1-7 below cover most brands. See `references/dimensions.md` for the advanced
+dimensions 8-9 and the per-dimension agent-prompt templates. Filename convention for
+sub-agent outputs: `dimension_{n}_{slug}.md` where `1 ≤ n ≤ 9`.
+
 | # | Dimension                  | Sub-questions                                                              |
 |---|----------------------------|----------------------------------------------------------------------------|
 | 1 | Founder & origin narrative | Who tells the story, what creation myth circulates, how truthful is it     |

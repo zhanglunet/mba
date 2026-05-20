@@ -1,7 +1,11 @@
 # Brand-Influence Dimensions — Default Catalog
 
-The Lead picks 5-8 from this list per brand. Don't try to use all of them — coverage trumps
-exhaustiveness.
+This file lists 9 dimensions: **core 1-7** (used by default) and **advanced 8-9** (opt-in
+for specific brand types). The Lead picks 5-8 per brand — don't try to use all of them,
+coverage trumps exhaustiveness.
+
+**Filename convention for sub-agent outputs:** `dimension_{n}_{slug}.md` where
+`1 ≤ n ≤ 9`. SKILL.md Phase 2F dispatches against this numbering.
 
 ## 1. Founder & origin narrative
 - Who tells the brand's creation story (founder? PR shop? investors?)
