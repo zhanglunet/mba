@@ -359,7 +359,7 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）</div>
     <tr>
       <td><code>smoke_test.py</code></td>
       <td>API key 冒烟测试：创建 → 拿 CDP endpoint → 立即删除</td>
-      <td>30-33（读 key）、44-51（创建）、54-58（初始化 browser + CDP endpoint）、60-68（cleanup）</td>
+      <td>30-33（读 key）、44-51（创建）、55-59（初始化 browser + CDP endpoint）、53 / 60-80 / 82（<code>cleanup_ok</code> 跟踪 + teardown 失败时返回 <code>exit 3</code>）</td>
     </tr>
     <tr>
       <td><code>README.md</code></td>
@@ -373,27 +373,31 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）</div>
 <h3>3.3 Skill 集成层 <code>metric-brand-auditor/</code></h3>
 
 <p><strong>SKILL.md</strong> 里的位置：</p>
+<div class="callout warn" style="font-size:13px;">
+  <strong>⚠ 行号基线：</strong> 已对齐 commit <code>44e1df0</code>（2026-05-20）。SKILL.md 在 L90 / L451 各加了一段（<code>${MAC_MBA_ROOT}</code> 路径解析行 + Default Dimensions 注释），下方所有行号相应 +2 / +7。
+</div>
 <table>
   <thead><tr><th>行</th><th>内容</th></tr></thead>
   <tbody>
     <tr><td>11, 16, 26</td><td>SkillHunt 营销文案：强调"零依赖入口不需要 Wuying"</td></tr>
-    <tr><td>43, 114</td><td><code>--quick</code> flag 定义与详细说明</td></tr>
-    <tr><td>160-161</td><td>依赖矩阵：Wuying API key + <code>agent-browser</code> CLI 两层 fallback</td></tr>
-    <tr><td>230</td><td>环境检查：<code>echo "WUYING_API_KEY: ..."</code></td></tr>
-    <tr><td>242</td><td>自动降级：<code>WUYING_API_KEY unset → auto --quick</code></td></tr>
-    <tr><td>261, 273, 298</td><td>sub-agent 定义、<code>--quick</code>、产物路径 <code>_raw/wuying_browse.md</code></td></tr>
-    <tr><td>462</td><td>Phase 1 proposal 模板里的 Wuying 字段</td></tr>
-    <tr><td><strong>514-553</strong></td><td><strong>核心：Phase 2 cloud-browser sub-agent prompt 模板</strong>（含 SSH 跨机 fallback、teardown 强制要求）</td></tr>
-    <tr><td>574</td><td>Lead 合成时必读 <code>wuying_browse.md</code></td></tr>
-    <tr><td>737</td><td>Phase 5 报告里必须标 accuracy limits（"no Wuying" 也是一种 limit）</td></tr>
-    <tr><td>902</td><td>EVOLUTION 模式：只在受影响维度才重跑 Wuying leg</td></tr>
-    <tr><td>935</td><td>模式变化时（Wuying vs web-only）更新法律声明</td></tr>
-    <tr><td><strong>999-1036</strong></td><td><strong>Wuying leg 风险表 + 自动 teardown 规则</strong>（&gt;15min 强制断开）</td></tr>
-    <tr><td>1044</td><td>指针：see <code>references/wuying-browser.md</code></td></tr>
+    <tr><td>43, 116</td><td><code>--quick</code> flag 定义与详细说明</td></tr>
+    <tr><td>90</td><td><code>${MAC_MBA_ROOT}</code> 路径解析行（持有 <code>WUYING_API_KEY</code> 的 Mac host 安装根）</td></tr>
+    <tr><td>162-163</td><td>依赖矩阵：Wuying API key + <code>agent-browser</code> CLI 两层 fallback</td></tr>
+    <tr><td>232</td><td>环境检查：<code>echo "WUYING_API_KEY: ..."</code></td></tr>
+    <tr><td>244</td><td>自动降级：<code>WUYING_API_KEY unset → auto --quick</code></td></tr>
+    <tr><td>263, 275, 300</td><td>sub-agent 定义、<code>--quick</code>、产物路径 <code>_raw/wuying_browse.md</code></td></tr>
+    <tr><td>469</td><td>Phase 1 proposal 模板里的 Wuying 字段</td></tr>
+    <tr><td><strong>521-560</strong></td><td><strong>核心：Phase 2 cloud-browser sub-agent prompt 模板</strong>（含 SSH 跨机 fallback、teardown 强制要求）</td></tr>
+    <tr><td>581</td><td>Lead 合成时必读 <code>wuying_browse.md</code></td></tr>
+    <tr><td>744</td><td>Phase 5 报告里必须标 accuracy limits（"no Wuying" 也是一种 limit）</td></tr>
+    <tr><td>909</td><td>EVOLUTION 模式：只在受影响维度才重跑 Wuying leg</td></tr>
+    <tr><td>942</td><td>模式变化时（Wuying vs web-only）更新法律声明</td></tr>
+    <tr><td><strong>1006-1043</strong></td><td><strong>Wuying leg 风险表 + 自动 teardown 规则</strong>（&gt;15min 强制断开）</td></tr>
+    <tr><td>1051</td><td>指针：see <code>references/wuying-browser.md</code></td></tr>
   </tbody>
 </table>
 
-<p><strong>references/wuying-browser.md</strong> — 完整的操作规范文档（147 行），覆盖：</p>
+<p><strong>references/wuying-browser.md</strong> — 完整的操作规范文档（152 行；commit <code>44e1df0</code> 后顶部多 5 行 <code>${MAC_MBA_ROOT}</code> 抽象说明，原硬编码 <code>~/mba/...</code> 改为 <code>${MAC_MBA_ROOT:-~/mba}</code>），覆盖：</p>
 <ul>
   <li>One-shot session lifecycle（创建 → 驱动 → 拆除）</li>
   <li>SSH 进 Mac host 调起脚本</li>
@@ -538,7 +542,7 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）</div>
 </table>
 
 <div class="callout danger">
-  <strong>规则两条</strong>（<code>metric-brand-auditor/references/wuying-browser.md:140-146</code>）：
+  <strong>规则两条</strong>（<code>metric-brand-auditor/references/wuying-browser.md:145-151</code>）：
   <ol style="margin: 10px 0 0 0;">
     <li>一次 skill 调用 = 一个 session。如果晚些再要平台，开新 session，不要让旧的 park 着。</li>
     <li>teardown 状态必须落 <code>wuying_browse.md</code>。Lead 在 Phase 3 检查。</li>
@@ -562,9 +566,10 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）</div>
   <tbody>
     <tr><td><code>WUYING_API_KEY not set</code></td><td><code>.env</code> 不存在 / key 仍是 <code>your_api_key_here</code></td><td><code>docs/05-usage.md:222-225</code></td></tr>
     <tr><td><code>ModuleNotFoundError: agentbay</code></td><td><code>pip install --user agentbay-sdk</code></td><td><code>docs/06-installation.md:134</code></td></tr>
-    <tr><td><code>RESOURCE_URL</code> 为空</td><td>SDK 版本不暴露；用 describe-session 直查</td><td><code>references/wuying-browser.md:134-136</code></td></tr>
-    <tr><td><code>agent-browser</code> 找不到</td><td>non-login SSH 不含 <code>/opt/homebrew/bin</code>；用 <code>bash -lc</code> 或绝对路径</td><td><code>references/wuying-browser.md:36-42</code></td></tr>
+    <tr><td><code>RESOURCE_URL</code> 为空</td><td>SDK 版本不暴露；用 describe-session 直查</td><td><code>references/wuying-browser.md:139-141</code></td></tr>
+    <tr><td><code>agent-browser</code> 找不到</td><td>non-login SSH 不含 <code>/opt/homebrew/bin</code>；用 <code>bash -lc</code> 或绝对路径</td><td><code>references/wuying-browser.md:41-47</code></td></tr>
     <tr><td>Session 未释放</td><td>用 <code>docs/06-installation.md:157-165</code> 的应急脚本</td><td><code>docs/06-installation.md</code></td></tr>
+    <tr><td><code>smoke_test.py</code> 退出码 = 3</td><td>创建/CDP 都成功但 teardown 失败 → <strong>session 可能仍在跑（计费中）</strong>，按 stderr 提示的 SESSION_ID 手动删</td><td><code>scripts/wuying/smoke_test.py:53,70-80,82</code>（commit <code>71d646d</code>）</td></tr>
   </tbody>
 </table>
 
@@ -579,7 +584,7 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）</div>
 </ul>
 
 <footer>
-  生成于 2026-06-02，对应 <strong>v0.2.25</strong> 仓库快照。如果新增/删除了 Wuying 相关文件，请同步更新本文档第 3 节的位置表。
+  生成于 2026-06-02。基线 = <strong>v0.2.25</strong> + commits <code>44e1df0</code>（<code>${MAC_MBA_ROOT}</code> 抽象 + Default Dimensions 注释）+ <code>71d646d</code>（smoke_test 漏关检测 + <code>exit 3</code>）。如果新增/删除了 Wuying 相关文件，请同步更新本文档第 3 节的位置表。
 </footer>
 
 </main>

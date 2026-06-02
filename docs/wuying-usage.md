@@ -64,7 +64,7 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）
 | 文件 | 作用 | 关键行 |
 |------|------|--------|
 | `scripts/wuying/open.py` | 创建会话 → 打印 `SESSION_ID` + `RESOURCE_URL` → 退出但**不删除** | 28-32（读 key）、37-40（`AgentBay.create()`）、44-51（拿 ResourceUrl）、57-66（打印 teardown 命令） |
-| `scripts/wuying/smoke_test.py` | API key 冒烟测试：创建 → 拿 CDP endpoint → 立即删除 | 30-33（读 key）、44-51（创建）、54-58（初始化 browser + CDP endpoint）、60-68（cleanup） |
+| `scripts/wuying/smoke_test.py` | API key 冒烟测试：创建 → 拿 CDP endpoint → 立即删除 | 30-33（读 key）、44-51（创建）、55-59（初始化 browser + CDP endpoint）、53 / 60-80 / 82（cleanup_ok 跟踪 + teardown 失败时返回 exit 3） |
 | `scripts/wuying/README.md` | 脚本说明 | 全文 |
 
 依赖的 Python 包：
@@ -75,29 +75,32 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）
 
 #### `metric-brand-auditor/SKILL.md`
 
+> 行号已对齐 commit `44e1df0`（2026-05-20）—— SKILL.md 在 L90 / L451 各加了一段（`${MAC_MBA_ROOT}` 路径解析行 + Default Dimensions 注释），下方所有行号相应 +2 / +7。
+
 | 行 | 内容 |
 |----|------|
 | 11, 16, 26 | SkillHunt 营销文案：强调"零依赖入口不需要 Wuying" |
 | 43 | `--quick` flag 定义：跳过 Wuying leg |
-| 114 | `--quick` 详细说明 |
-| 160-161 | 依赖矩阵：Wuying API key + `agent-browser` CLI 两层 fallback |
-| 230 | 环境检查：`echo "WUYING_API_KEY: ..."` |
-| 242 | 自动降级：`WUYING_API_KEY unset → auto --quick` |
-| 261 | "Wuying cloud-browser sub-agent — for sites that need a real browser session" |
-| 273 | `--quick — skip Wuying cloud-browser leg` |
-| 298 | 产物路径：`_raw/wuying_browse.md` |
-| 462 | Phase 1 proposal 模板里的 Wuying 字段 |
-| 514-553 | **核心：Phase 2 cloud-browser sub-agent prompt 模板**（含 SSH 跨机 fallback、teardown 强制要求） |
-| 574 | Lead 合成时必读 `wuying_browse.md` |
-| 737 | Phase 5 报告里必须标 accuracy limits（"no Wuying" 也是一种 limit） |
-| 902 | EVOLUTION 模式：只在受影响维度才重跑 Wuying leg |
-| 935 | 模式变化时（Wuying vs web-only）更新法律声明 |
-| 999-1036 | **Wuying leg 风险表 + 自动 teardown 规则**（>15min 强制断开） |
-| 1044 | 指针：see `references/wuying-browser.md` |
+| 90 | `${MAC_MBA_ROOT}` 路径解析行（持有 `WUYING_API_KEY` 的 Mac host 安装根） |
+| 116 | `--quick` 详细说明 |
+| 162-163 | 依赖矩阵：Wuying API key + `agent-browser` CLI 两层 fallback |
+| 232 | 环境检查：`echo "WUYING_API_KEY: ..."` |
+| 244 | 自动降级：`WUYING_API_KEY unset → auto --quick` |
+| 263 | "Wuying cloud-browser sub-agent — for sites that need a real browser session" |
+| 275 | `--quick — skip Wuying cloud-browser leg` |
+| 300 | 产物路径：`_raw/wuying_browse.md` |
+| 469 | Phase 1 proposal 模板里的 Wuying 字段 |
+| 521-560 | **核心：Phase 2 cloud-browser sub-agent prompt 模板**（含 SSH 跨机 fallback、teardown 强制要求） |
+| 581 | Lead 合成时必读 `wuying_browse.md` |
+| 744 | Phase 5 报告里必须标 accuracy limits（"no Wuying" 也是一种 limit） |
+| 909 | EVOLUTION 模式：只在受影响维度才重跑 Wuying leg |
+| 942 | 模式变化时（Wuying vs web-only）更新法律声明 |
+| 1006-1043 | **Wuying leg 风险表 + 自动 teardown 规则**（>15min 强制断开） |
+| 1051 | 指针：see `references/wuying-browser.md` |
 
 #### `metric-brand-auditor/references/wuying-browser.md`
 
-完整的操作规范文档（147 行）。覆盖：
+完整的操作规范文档（152 行；commit `44e1df0` 后顶部多 5 行 `${MAC_MBA_ROOT}` 抽象说明，原硬编码 `~/mba/...` 改为 `${MAC_MBA_ROOT:-~/mba}`）。覆盖：
 - One-shot session lifecycle（创建 → 驱动 → 拆除）
 - SSH 进 Mac host 调起脚本
 - `agent-browser` CLI 调用约定（注意 PATH on non-login SSH 不含 `/opt/homebrew/bin`）
@@ -266,7 +269,7 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）
 | 反爬 / 内容墙 | 任意 | 在 wuying_browse.md 显式记录"哪些没拿到"，报告里标 N/A 不假装拿到 |
 | `agent-browser` 不能 attach | 任意 | 降级 Playwright/Puppeteer 或手动观察；不允许静默跳过 |
 
-**规则两条**（`metric-brand-auditor/references/wuying-browser.md:140-146`）：
+**规则两条**（`metric-brand-auditor/references/wuying-browser.md:145-151`）：
 1. 一次 skill 调用 = 一个 session。如果晚些再要平台，开新 session，不要让旧的 park 着。
 2. teardown 状态必须落 `wuying_browse.md`。Lead 在 Phase 3 检查。
 
@@ -295,9 +298,10 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）
 |------|------|------|
 | `WUYING_API_KEY not set` | `.env` 不存在 / key 仍是 `your_api_key_here` | `docs/05-usage.md:222-225` |
 | `ModuleNotFoundError: agentbay` | `pip install --user agentbay-sdk` | `docs/06-installation.md:134` |
-| RESOURCE_URL 为空 | SDK 版本不暴露；用 describe-session 直查 | `references/wuying-browser.md:134-136` |
-| `agent-browser` 找不到 | non-login SSH 不含 `/opt/homebrew/bin`；用 `bash -lc` 或绝对路径 | `references/wuying-browser.md:36-42` |
+| RESOURCE_URL 为空 | SDK 版本不暴露；用 describe-session 直查 | `references/wuying-browser.md:139-141` |
+| `agent-browser` 找不到 | non-login SSH 不含 `/opt/homebrew/bin`；用 `bash -lc` 或绝对路径 | `references/wuying-browser.md:41-47` |
 | Session 未释放 | 用 `docs/06-installation.md:157-165` 的应急脚本 | `docs/06-installation.md` |
+| `smoke_test.py` 退出码 = 3 | 创建/CDP 都成功但 teardown 失败 → **session 可能仍在跑（计费中）**，按 stderr 提示的 SESSION_ID 手动删 | `scripts/wuying/smoke_test.py:53,70-80,82`（commit `71d646d`） |
 
 ---
 
@@ -311,4 +315,4 @@ Wuying cloud browser  ──┘  （可选；--quick 跳过）
 
 ---
 
-*生成于 2026-06-02，对应 v0.2.25 仓库快照。如果新增/删除了 Wuying 相关文件，请同步更新本文档第 3 节的位置表。*
+*生成于 2026-06-02。基线 = v0.2.25 + commits `44e1df0` (${MAC_MBA_ROOT} 抽象 + Default Dimensions 注释) + `71d646d` (smoke_test 漏关检测 + exit 3)。如果新增/删除了 Wuying 相关文件，请同步更新本文档第 3 节的位置表。*
