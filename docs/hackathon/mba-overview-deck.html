@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MBA — Metric Brand Auditor · 项目全景</title>
+<style>
+  :root {
+    --bg: #0b0d10;
+    --panel: #11151a;
+    --ink: #e9eef5;
+    --ink-dim: #9aa6b2;
+    --line: #1f2630;
+    --accent: #ff7a4d;
+    --accent-2: #67e8a4;
+    --warn: #f1c453;
+    --code-bg: #0a0c10;
+    --code-ink: #d7e3f4;
+    --mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+            "Helvetica Neue", "Microsoft YaHei", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  .deck {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  .slide {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    padding: 6vh 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+  .slide::before {
+    content: counter(slide-num) " / 25";
+    counter-increment: slide-num;
+    position: absolute;
+    top: 3vh; right: 4vw;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+    letter-spacing: 0.08em;
+  }
+  .slide::after {
+    content: "MBA — Metric Brand Auditor";
+    position: absolute;
+    bottom: 3vh; left: 4vw;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.1em;
+  }
+  .deck { counter-reset: slide-num; }
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 700;
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: clamp(24px, 2.8vw, 38px);
+    margin: 0 0 24px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: clamp(16px, 1.4vw, 20px);
+    color: var(--ink-dim);
+    font-weight: 500;
+    margin: 0 0 8px;
+  }
+  p, li {
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.65;
+    color: var(--ink);
+  }
+  .lead { font-size: clamp(20px, 2vw, 26px); color: var(--ink); }
+  .dim  { color: var(--ink-dim); }
+  .accent { color: var(--accent); }
+  .accent2 { color: var(--accent-2); }
+  ul { margin: 12px 0; padding-left: 22px; }
+  ol { margin: 12px 0; padding-left: 28px; }
+  li { margin: 6px 0; }
+  strong { color: var(--ink); font-weight: 600; }
+  blockquote {
+    margin: 18px 0;
+    padding: 14px 22px;
+    border-left: 3px solid var(--accent);
+    background: rgba(255,122,77,0.06);
+    color: var(--ink);
+    font-size: clamp(16px, 1.3vw, 19px);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: clamp(14px, 1.1vw, 16px);
+  }
+  th, td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    color: var(--ink-dim);
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  pre, code {
+    font-family: var(--mono);
+    font-size: clamp(12px, 0.95vw, 14px);
+  }
+  pre {
+    background: var(--code-bg);
+    color: var(--code-ink);
+    padding: 18px 22px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    overflow-x: auto;
+    line-height: 1.55;
+  }
+  code { color: var(--accent-2); }
+  pre code { color: var(--code-ink); }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px 22px;
+  }
+  .card h3 { color: var(--accent); font-family: var(--mono); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
+  .kbd {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-dim);
+    background: var(--panel);
+  }
+  .nav-hint {
+    position: fixed;
+    bottom: 18px; right: 18px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-dim);
+    background: rgba(11,13,16,0.85);
+    border: 1px solid var(--line);
+    padding: 6px 12px;
+    border-radius: 4px;
+    z-index: 100;
+  }
+  .title-block {
+    border-left: 4px solid var(--accent);
+    padding-left: 22px;
+  }
+  .footer-meta {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 28px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-dim);
+  }
+  .footer-meta span strong { color: var(--ink); }
+  hr.divider {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 22px 0;
+  }
+  /* Print: one slide per page */
+  @media print {
+    @page { size: 16in 9in; margin: 0; }
+    body { background: white; color: black; }
+    .deck { height: auto; overflow: visible; }
+    .slide {
+      min-height: auto;
+      height: 9in; width: 16in;
+      page-break-after: always;
+      border: none;
+      padding: 0.6in 1in;
+      background: white; color: black;
+    }
+    .slide::before, .slide::after { color: #666; }
+    .nav-hint { display: none; }
+    h1, h2, strong { color: black; }
+    p, li, .dim, h3 { color: #222; }
+    pre { background: #f4f4f4; color: #111; border-color: #ddd; }
+    code { color: #b8400a; }
+    table th { color: #555; }
+    blockquote { background: #fff5ef; color: #111; }
+    .card { background: #fafafa; border-color: #ddd; }
+  }
+</style>
+</head>
+<body>
+<div class="nav-hint">← / → 翻页 · <span class="kbd">P</span> 打印</div>
+<div class="deck" id="deck">
+
+<!-- 1 · Cover -->
+<section class="slide">
+  <span class="tag">Project Overview · 2026</span>
+  <div class="title-block">
+    <h1>MBA<span class="dim"> — </span><span class="accent">Metric Brand Auditor</span></h1>
+    <p class="lead">把品牌影响力做成可调研、可打分、可比较、可复盘的智能资产。</p>
+  </div>
+  <div class="footer-meta">
+    <span>站点 <strong>mbabrand.com</strong></span>
+    <span>BotLearn <strong>metric-brand-auditor</strong></span>
+    <span>团队 <strong>Jason · 清风 · John</strong></span>
+    <span>协作 AI <strong>Claude Opus 4.7</strong></span>
+  </div>
+</section>
+
+<!-- 2 · One-liner -->
+<section class="slide">
+  <span class="tag">One-liner</span>
+  <h2>MBA 是 <span class="accent">AI 时代的品牌影响力审计协议</span>。</h2>
+  <p class="lead">
+    不是写一份品牌报告，而是把一家公司在 AI Agent 世界里的影响力，
+    拆成 <strong>7 个维度 × 5 个镜头</strong>，
+    由 Lead 编排、子 agent 并行调研、5 位人物评委独立打分，
+    输出 <strong>版本化报告</strong>。
+  </p>
+</section>
+
+<!-- 3 · Reframe -->
+<section class="slide">
+  <span class="tag">Reframe</span>
+  <h2>品牌正在变成什么</h2>
+  <div class="grid-2">
+    <div>
+      <h3>过去</h3>
+      <p>品牌主要影响 <strong>人</strong>——
+      消费者怎么感知它，投资人怎么理解它，媒体怎么叙述它，候选人愿不愿意加入它。</p>
+    </div>
+    <div>
+      <h3>未来</h3>
+      <p>越来越多的判断会被 <strong>Agent</strong> 参与甚至代理：投资 Agent 筛公司、采购 Agent 推荐供应商、招聘 Agent 理解雇主品牌、消费 Agent 比较产品、战略 Agent 持续追踪竞争格局。</p>
+    </div>
+  </div>
+  <blockquote>
+    品牌正在从"人类心智资产"变成"<span class="accent">智能体世界里可识别、可比较、可调用的信号资产</span>"。
+  </blockquote>
+</section>
+
+<!-- 4 · Problem -->
+<section class="slide">
+  <span class="tag">Problem</span>
+  <h2>品牌很重要，但今天 <span class="accent">不可审计</span></h2>
+  <table>
+    <thead><tr><th>现有方式</th><th>缺陷</th></tr></thead>
+    <tbody>
+      <tr><td>咨询公司报告</td><td>一次性、主观、不可复盘</td></tr>
+      <tr><td>舆情 / 社媒工具</td><td>只能告诉你声量，不能告诉你品类定义权与叙事是否成立</td></tr>
+      <tr><td>创始人 / 投资人 / CMO 的判断</td><td>高度依赖经验，难标准化、难跨公司比较、难跨时间追踪</td></tr>
+    </tbody>
+  </table>
+  <blockquote>
+    财务有审计、产品有数据分析、销售有 CRM、舆情有 monitoring。
+    <strong>品牌影响力没有审计协议。</strong> MBA 要做这个协议。
+  </blockquote>
+</section>
+
+<!-- 5 · 3 problems -> 3 mechanisms -->
+<section class="slide">
+  <span class="tag">Mechanism</span>
+  <h2>三个老问题 → MBA 的三个机制</h2>
+  <table>
+    <thead><tr><th>传统报告的问题</th><th>MBA 的应对</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>单线程单视角</td>
+        <td><strong>N 路并行 sub-agent</strong> + <strong>5 位人物评委</strong>独立打分，Lead 只做合成</td>
+      </tr>
+      <tr>
+        <td>不可复盘</td>
+        <td><strong>版本化目录</strong> <code>reports/&lt;brand&gt;/versions/v{n}_{date}.{md,html}</code>，evolution 滚动</td>
+      </tr>
+      <tr>
+        <td>打分主观、口径漂移</td>
+        <td><strong>固定 5 镜头 × 7 维度</strong>，跨品牌、跨评委、跨时间同口径</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 6 · 7 dimensions -->
+<section class="slide">
+  <span class="tag">Dimensions · 横向</span>
+  <h2>7 个调研维度</h2>
+  <p class="dim">子 agent 并行跑的输入维度</p>
+  <div class="grid-2" style="margin-top: 12px;">
+    <div>
+      <ol>
+        <li><strong>创始 &amp; 起源叙事</strong>　创世神话省略了什么 / 一手 vs PR 复用</li>
+        <li><strong>产品 &amp; 定位</strong>　一句话定位 / 新品类宣称 / 比较与回避</li>
+        <li><strong>分发 &amp; 渠道</strong>　自有 / earned / paid 的真实占比</li>
+        <li><strong>社区 &amp; PR</strong>　谁在站台 / 谁在攻击 / 各自利益</li>
+      </ol>
+    </div>
+    <div>
+      <ol start="5">
+        <li><strong>视觉 &amp; 语言</strong>　命名 / slogan / 元符号（如 OpenClaw 🦞）</li>
+        <li><strong>竞品 &amp; 格局</strong>　谁让出地盘 / 谁借用了它的语言</li>
+        <li><strong>接收 &amp; 情绪</strong>　搜索趋势 / 增长 / 媒体口径</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · 5 lenses -->
+<section class="slide">
+  <span class="tag">Lenses · 纵向</span>
+  <h2>5 个打分镜头</h2>
+  <p class="dim">5 位评委手里的同一把尺子</p>
+  <div class="grid-3" style="margin-top: 14px;">
+    <div class="card"><h3>01 · 原创性</h3><p>Origin authenticity — 创始人 / 公司叙事是否站得住</p></div>
+    <div class="card"><h3>02 · 范畴命名</h3><p>Category coinage — 是否真定义了一个新品类，且粘住</p></div>
+    <div class="card"><h3>03 · 杠杆质量</h3><p>Leverage quality — 影响力渠道是否结构性可持续</p></div>
+    <div class="card"><h3>04 · 身份一致性</h3><p>Identity coherence — 视觉 / 语言 / 产品是否同一种感觉</p></div>
+    <div class="card"><h3>05 · 真实信号</h3><p>Real-world signal — 评委自己愿意为之下注的程度</p></div>
+  </div>
+  <blockquote style="margin-top:18px;">
+    维度是"调研的输入"，镜头是"评委的尺子"——两者通过 <code>_raw/synthesis.md</code> 耦合。
+  </blockquote>
+</section>
+
+<!-- 8 · 5 judges -->
+<section class="slide">
+  <span class="tag">Judge Panel</span>
+  <h2>5 位人物评委</h2>
+  <p class="dim">每人一个独立的 perspective skill，加载自己的世界观打分</p>
+  <table>
+    <thead><tr><th>评委</th><th>身份 / 视角</th></tr></thead>
+    <tbody>
+      <tr><td><strong>傅盛</strong></td><td>猎豹移动 / OpenClaw，AI 应用为王 + 战略三板斧</td></tr>
+      <tr><td><strong>Steve Jobs</strong></td><td>Apple / NeXT / Pixar，Liberal Arts × Technology + focus = saying no</td></tr>
+      <tr><td><strong>李可佳</strong></td><td>BotLearn / Aibrary，协议位 + 新物种命名</td></tr>
+      <tr><td><strong>吴俊东</strong></td><td>Aibrary 联创 / 前 TAL 战投，教育本质 + 长期关系投资</td></tr>
+      <tr><td><strong>张一鸣</strong></td><td>字节跳动，Context not Control + 火星视角</td></tr>
+    </tbody>
+  </table>
+  <p class="dim" style="margin-top:10px;">每套 skill 基于公开一手访谈与文章（80%+ 一手来源），顶部有 <strong>anti-fabrication 红线</strong>。</p>
+</section>
+
+<!-- 9 · 5-phase pipeline -->
+<section class="slide">
+  <span class="tag">Pipeline</span>
+  <h2>流水线 5 阶段（FRESH 模式）</h2>
+<pre><code>Phase 0  Router          检查 reports/&lt;brand&gt;/report.md 是否存在
+  │                      → 存在 ⇒ EVOLUTION 模式
+  │                      → 不存在 ⇒ FRESH 模式
+  │
+Phase 1  Discovery       Lead 起草 PRD，用户确认维度（GATE 1）
+  │
+Phase 2  Parallel Search 一条消息派发 N 个 sub-agent（每维度 1 个）
+  │                      + 1 个 wuying 云浏览器 agent（--quick 时跳过）
+  │
+Phase 3  Synthesis       Lead 读完所有 _raw/，产出 synthesis.md
+  │
+Phase 4  5-Judge Panel   并行派发 5 个评委，独立打分互不可见
+  │
+Phase 5  Lead Merge      产出 report.md + report.html + versions/v{n}.{md,html}</code></pre>
+</section>
+
+<!-- 10 · Evolution -->
+<section class="slide">
+  <span class="tag">Evolution Mode</span>
+  <h2>可复盘是关键</h2>
+  <blockquote>
+    真正有价值的不是"今天品牌几分"，而是
+    <span class="accent">"过去 30 / 90 / 180 天，品牌影响力发生了什么结构性变化"</span>。
+  </blockquote>
+  <h3 style="margin-top:18px;">EVOLUTION 模式做什么</h3>
+  <ul>
+    <li>Phase 0 路由器发现 <code>report.md</code> 已存在</li>
+    <li>Phase 1E 列 diff plan：自上版以来可能变了什么</li>
+    <li>只重跑 <strong>变了的维度</strong></li>
+    <li>评委只在 <strong>受影响维度</strong>上重打分</li>
+    <li>版本号 +1 写入 <code>versions/v{n}_&lt;date&gt;.{md,html}</code></li>
+  </ul>
+  <p>这让 MBA 从一次性报告变成 <strong>品牌影响力的时间序列</strong>。</p>
+</section>
+
+<!-- 11 · Outputs -->
+<section class="slide">
+  <span class="tag">Outputs</span>
+  <h2>拿到手是什么</h2>
+  <table>
+    <thead><tr><th>文件</th><th>作用</th></tr></thead>
+    <tbody>
+      <tr><td><code>report.md</code></td><td>当前 canonical Markdown 报告（滚动覆盖）</td></tr>
+      <tr><td><code>report.html</code></td><td>自包含 HTML：Chart.js 雷达 + 异议热力图 + Mermaid 影响力流程图</td></tr>
+      <tr><td><code>versions/v{n}_{date}.{md,html}</code></td><td>每次 evolution 的不可变快照</td></tr>
+      <tr><td><code>reviews/&lt;judge&gt;.md</code></td><td>5 位评委的独立打分卡</td></tr>
+      <tr><td><code>_raw/dimension_n_*.md</code></td><td>每个维度子 agent 的原始输出（可审计）</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 12 · 4-layer architecture -->
+<section class="slide">
+  <span class="tag">Architecture</span>
+  <h2>仓库 4 层架构</h2>
+<pre><code>mba/
+├── metric-brand-auditor/    ← 编排层：流水线主 SKILL
+│   ├── SKILL.md                  Lead 的工作手册（Phase 0–5）
+│   ├── references/               维度模板 / 评委模板 / 云浏览器规范 / HTML 脚手架
+│   └── reports/&lt;brand&gt;/          每个品牌一个文件夹
+│
+├── research/                ← 工具层：PRD 多代理深度调研 skill
+│
+├── *-perspective/           ← 评委层：5 套人物视角 skill
+│   └── fusheng · jobs · likejia · wu-jundong · zhang-yiming
+│
+└── scripts/wuying/open.py           ← 基建层：阿里云无影 AgentBay 云浏览器</code></pre>
+  <p class="dim">每一层对应流水线一个阶段，且可独立调用。</p>
+</section>
+
+<!-- 13 · Commands -->
+<section class="slide">
+  <span class="tag">Usage</span>
+  <h2>一行命令调用</h2>
+<pre><code>/mba &lt;brand&gt;               # 标准全流程（自动判断 FRESH / EVOLUTION）
+/mba OpenClaw              # 仓库内置 demo case
+/mba &lt;brand&gt; --quick       # 跳过云浏览器 leg（开放网 only）
+/mba &lt;brand&gt; --refresh     # 强制 EVOLUTION 重跑
+/mba &lt;brand&gt; --no-judges   # 只做合成，跳过 5 评委
+/mba &lt;brand&gt; --focus 1,3,7 # 只调研指定维度
+/mba list                  # 列出已审计品牌 + 各自版本数</code></pre>
+  <p>零依赖入口：<code>/mba &lt;brand&gt; --quick --no-judges</code>（只用 WebSearch + WebFetch）</p>
+</section>
+
+<!-- 14 · Lenovo sample -->
+<section class="slide">
+  <span class="tag">Sample Report</span>
+  <h2>Lenovo 0992.HK</h2>
+  <p class="dim">实际跑出的报告含：</p>
+  <ul>
+    <li><strong>品牌影响力雷达图</strong>　5 镜头评分</li>
+    <li><strong>异议热力图</strong>　5 位评委 × 5 镜头打分差异</li>
+    <li><strong>Mermaid 影响力构造图</strong>　杠杆从哪里来、流到哪里</li>
+    <li><strong>执行摘要 / 杠杆地图 / 脆弱边缘 / 跨维度矛盾</strong></li>
+    <li><strong>90 天行动建议</strong></li>
+  </ul>
+  <p>样例地址 <code>mbabrand.com/reports/lenovo</code> · 含 PDF + BotLearn 一键安装</p>
+</section>
+
+<!-- 15 · Site -->
+<section class="slide">
+  <span class="tag">Live</span>
+  <h2>演示站点 <span class="accent">mbabrand.com</span></h2>
+  <ul>
+    <li>首页：项目机制与核心理念</li>
+    <li><code>/reports/&lt;brand&gt;/</code>：已发布的品牌审计样例</li>
+    <li>BotLearn 一键安装入口</li>
+    <li>黑客松 5 分钟 Pitch 稿（MD + HTML）</li>
+  </ul>
+  <p class="dim">站点本身用 <code>site/build.sh</code> 静态生成，<code>published-reports.txt</code> 控制发布列表。</p>
+</section>
+
+<!-- 16 · Tech stack -->
+<section class="slide">
+  <span class="tag">Tech Stack</span>
+  <h2>技术栈</h2>
+  <table>
+    <thead><tr><th>层</th><th>技术</th></tr></thead>
+    <tbody>
+      <tr><td>编排</td><td>Claude Opus 4.7 + Claude Agent SDK</td></tr>
+      <tr><td>并行调研</td><td>Lead 一条消息派发 N 个 general-purpose sub-agent</td></tr>
+      <tr><td>开放网</td><td>WebSearch + WebFetch</td></tr>
+      <tr><td>中文真实信号</td><td>阿里云无影 AgentBay 云浏览器（X / 小红书 / Bilibili / 中文媒体）</td></tr>
+      <tr><td>可视化</td><td>Chart.js（雷达 + 热力图）+ Mermaid（流程图）</td></tr>
+      <tr><td>报告分发</td><td>自包含 HTML + Markdown + 版本快照</td></tr>
+      <tr><td>分发渠道</td><td>BotLearn skill 一键安装</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 17 · Users -->
+<section class="slide">
+  <span class="tag">Target Users</span>
+  <h2>目标用户与场景</h2>
+  <p class="dim">不卖给普通市场部。卖给真正关心"品牌如何转化为战略资源"的人</p>
+  <table>
+    <thead><tr><th>用户</th><th>场景</th></tr></thead>
+    <tbody>
+      <tr><td><strong>创始人 / CEO Office</strong></td><td>战略叙事一致性诊断 / 融资 deck 前的品牌镜子</td></tr>
+      <tr><td><strong>投资人 / VC / PE</strong></td><td>Brand Influence Due Diligence / portfolio 持续监控</td></tr>
+      <tr><td><strong>战略部 / IR</strong></td><td>上市公司品牌叙事审计 / 竞品定位追踪</td></tr>
+      <tr><td><strong>品牌 / 增长团队</strong></td><td>发布前复盘 / 品类定义权验证</td></tr>
+      <tr><td><strong>咨询公司</strong></td><td>输入素材层，加速尽调与战略项目</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 18 · Commercialization -->
+<section class="slide">
+  <span class="tag">Commercialization</span>
+  <h2>商业化路径（三层）</h2>
+  <div class="grid-3" style="margin-top:14px;">
+    <div class="card">
+      <h3>Layer 1</h3>
+      <p><strong>单次审计</strong></p>
+      <p class="dim">创业 / 上市公司 / 投资标的一次完整 Brand Influence Audit</p>
+    </div>
+    <div class="card">
+      <h3>Layer 2</h3>
+      <p><strong>持续监控订阅</strong></p>
+      <p class="dim">portfolio / watchlist / 自家 + 核心竞品的月度 evolution</p>
+    </div>
+    <div class="card">
+      <h3>Layer 3</h3>
+      <p><strong>Skills 平台化</strong></p>
+      <p class="dim">Brand Audit / Category Mapping / Narrative Diff / Investor Memo / IPO Narrative Check / Founder Story Audit 等可调用 skills</p>
+    </div>
+  </div>
+  <blockquote>第二层的本质：<span class="accent">把品牌影响力变成时间序列。</span></blockquote>
+</section>
+
+<!-- 19 · Moat -->
+<section class="slide">
+  <span class="tag">Moat</span>
+  <h2>壁垒：五件事</h2>
+  <ol>
+    <li><strong>审计框架</strong>　7 维度 × 5 镜头，固定口径</li>
+    <li><strong>多智能体流程</strong>　Lead 拆解、Research Agents 并行、Judge Skills 独立、可复盘</li>
+    <li><strong>版本化数据库</strong>　每次审计是一次品牌快照，时间越长系统越知道品牌如何演化</li>
+    <li><strong>跨品牌 benchmark</strong>　审计足够多公司后，能比较谁有品类定义权、谁的叙事在增强</li>
+    <li><strong>可治理输出</strong>　评委头像 / 评分 / 辩论标注为 AI 模拟；商业化版升级成角色化 Lens（Investor / Founder / Product / Category / Distribution / Culture）</li>
+  </ol>
+</section>
+
+<!-- 20 · vs generic AI -->
+<section class="slide">
+  <span class="tag">vs Generic AI</span>
+  <h2>与单一 AI 品牌分析的区别</h2>
+  <table>
+    <thead><tr><th>维度</th><th>普通 AI 品牌分析</th><th>MBA</th></tr></thead>
+    <tbody>
+      <tr><td>调研路径</td><td>单 prompt 单线程</td><td>N 路并行 sub-agent + 云浏览器 leg</td></tr>
+      <tr><td>打分主体</td><td>模型自己</td><td>5 位独立人格评委（互不可见）</td></tr>
+      <tr><td>维度口径</td><td>每次漂移</td><td>固定 7 维度 × 5 镜头</td></tr>
+      <tr><td>时间维度</td><td>一次性</td><td>EVOLUTION 模式 + 版本快照</td></tr>
+      <tr><td>可审计性</td><td>黑盒</td><td>子 agent 原始输出 + 打分卡 + 引用索引全留痕</td></tr>
+      <tr><td>输出形态</td><td>一段文字</td><td>Markdown + 自包含 HTML（雷达 / 热力图 / 流程图）</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 21 · Anti-fabrication -->
+<section class="slide">
+  <span class="tag">Governance</span>
+  <h2>Anti-fabrication 红线</h2>
+  <p>5 套人物视角 skill 都基于<strong>公开一手资料</strong>：</p>
+  <ul>
+    <li>访谈、文章、播客 transcript</li>
+    <li>每套 SKILL.md 顶部明确：<strong>不替本人编造未公开内容</strong></li>
+    <li>评委对自己留白的话题（家庭、未公开决策细节）保持沉默</li>
+    <li>网站明确声明：评委头像、评分、辩论是 AI 模拟，不代表本人真实意见，不构成投资建议或真实品牌评价</li>
+  </ul>
+  <blockquote>
+    商业化版本会去掉真人模拟风险，升级为角色化 Lens——
+    <span class="accent">Investor / Founder / Product / Category / Distribution / Culture Lens</span>。
+  </blockquote>
+</section>
+
+<!-- 22 · Shipped -->
+<section class="slide">
+  <span class="tag">Shipped</span>
+  <h2>已落地的实物清单</h2>
+  <div class="grid-2">
+    <ul>
+      <li><span class="accent2">✓</span> <code>metric-brand-auditor/SKILL.md</code>（~600 行主手册）</li>
+      <li><span class="accent2">✓</span> 5 套 perspective skill + research/01–06.md</li>
+      <li><span class="accent2">✓</span> <code>research</code> skill（可独立 <code>/research</code>）</li>
+      <li><span class="accent2">✓</span> Wuying 云浏览器 leg + smoke test</li>
+    </ul>
+    <ul>
+      <li><span class="accent2">✓</span> 自包含 HTML 报告模板（Chart.js + Mermaid）</li>
+      <li><span class="accent2">✓</span> 演示站点 mbabrand.com + 静态构建脚本</li>
+      <li><span class="accent2">✓</span> BotLearn 一键安装：v0.2.15+</li>
+      <li><span class="accent2">✓</span> Lenovo 样例报告 + PDF</li>
+      <li><span class="accent2">✓</span> 黑客松 5 分钟 Pitch 稿（MD + HTML）</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 23 · Vision -->
+<section class="slide">
+  <span class="tag">Vision</span>
+  <h2>Brand Influence Ledger</h2>
+  <blockquote>
+    未来每一家重要公司，都需要一份 <span class="accent">持续更新的 Brand Influence Ledger</span>。
+  </blockquote>
+  <p>就像公司有：</p>
+  <ul>
+    <li>财务报表（财务）</li>
+    <li>数据看板（产品）</li>
+    <li>CRM（销售）</li>
+    <li>监控系统（舆情）</li>
+  </ul>
+  <p><strong>品牌影响力也应该有自己的审计系统。</strong></p>
+  <p class="dim">它决定一家公司能调动多少社会资源——人才、渠道、资本、定价权、品类话语权，以及在 AI Agent 世界里被正确理解和优先推荐的能力。</p>
+</section>
+
+<!-- 24 · Tagline -->
+<section class="slide">
+  <span class="tag">Tagline</span>
+  <h2 style="font-size: clamp(28px, 3.8vw, 52px); line-height:1.25;">
+    我们不是在做 AI 品牌报告。<br/>
+    <span class="accent">我们是在做 AI 时代的品牌影响力审计协议。</span>
+  </h2>
+  <p class="lead" style="margin-top: 22px;">
+    MBA 把品牌影响力从主观感觉，
+    变成<strong>可调研、可打分、可比较、可复盘、可持续追踪</strong>的智能资产。
+  </p>
+</section>
+
+<!-- 25 · Thanks -->
+<section class="slide">
+  <span class="tag">Thank You</span>
+  <h1>谢谢 <span class="dim">/</span> <span class="accent">Thanks</span></h1>
+  <div class="footer-meta" style="margin-top: 28px; font-size: 16px;">
+    <span>站点 <strong>mbabrand.com</strong></span>
+    <span>一键安装 <strong>botlearn.ai/skillhunt/v2/s/metric-brand-auditor</strong></span>
+  </div>
+  <div class="footer-meta" style="font-size: 16px;">
+    <span>样例 <strong>mbabrand.com/reports/lenovo</strong></span>
+    <span>团队 <strong>Jason · 清风 · John</strong></span>
+    <span>技术支持 <strong>marsdata.ai</strong></span>
+  </div>
+  <hr class="divider" />
+  <p class="lead">
+    <code>/mba &lt;brand&gt; --quick --no-judges</code> — 三十秒上手。
+  </p>
+</section>
+
+</div>
+
+<script>
+  const deck = document.getElementById('deck');
+  const slides = [...document.querySelectorAll('.slide')];
+  let idx = 0;
+  function scrollTo(i) {
+    idx = Math.max(0, Math.min(slides.length - 1, i));
+    slides[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+      e.preventDefault(); scrollTo(idx + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      e.preventDefault(); scrollTo(idx - 1);
+    } else if (e.key === 'Home') {
+      e.preventDefault(); scrollTo(0);
+    } else if (e.key === 'End') {
+      e.preventDefault(); scrollTo(slides.length - 1);
+    } else if (e.key.toLowerCase() === 'p') {
+      window.print();
+    }
+  });
+  // Track current slide via IntersectionObserver
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting && e.intersectionRatio > 0.5) {
+        idx = slides.indexOf(e.target);
+      }
+    });
+  }, { threshold: [0.5] });
+  slides.forEach(s => io.observe(s));
+</script>
+</body>
+</html>

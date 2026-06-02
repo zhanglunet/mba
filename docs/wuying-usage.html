@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阿里无影浏览器（Wuying / AgentBay）在 MBA 中的使用全景</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #d4501c;       /* 阿里橙 → 偏暗红 */
+    --accent-soft: #fef2ec;
+    --line: #e5e3dd;
+    --code-bg: #f4f2ec;
+    --code-fg: #1a1a1a;
+    --table-stripe: #f7f5ef;
+    --ok: #2e7d32;
+    --warn: #b54708;
+    --danger: #c62828;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  /* Sidebar */
+  nav.toc {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid var(--line);
+    padding: 32px 20px;
+    background: #fff;
+  }
+  nav.toc h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0 0 14px 0;
+  }
+  nav.toc ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: section;
+  }
+  nav.toc ol > li {
+    counter-increment: section;
+    margin: 6px 0;
+  }
+  nav.toc ol > li > a::before {
+    content: counter(section) ". ";
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  nav.toc a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 13.5px;
+    display: block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+  nav.toc a:hover {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  /* Main */
+  main {
+    padding: 56px 64px 120px 64px;
+    max-width: 880px;
+  }
+  .hero {
+    margin-bottom: 56px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--line);
+  }
+  .hero .eyebrow {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.25;
+    margin: 0 0 14px 0;
+    letter-spacing: -0.01em;
+  }
+  .hero .sub {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .hero .meta {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .hero .meta span strong { color: var(--fg); font-weight: 600; }
+
+  h2 {
+    font-size: 22px;
+    margin: 56px 0 14px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+    letter-spacing: -0.005em;
+  }
+  h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 17px;
+    margin: 32px 0 10px 0;
+    color: var(--fg);
+  }
+
+  p { margin: 12px 0; }
+
+  code {
+    background: var(--code-bg);
+    color: var(--code-fg);
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+  }
+  pre {
+    background: #1a1a1a;
+    color: #e8e6e0;
+    padding: 16px 20px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 16px 0;
+  }
+  pre code { background: transparent; color: inherit; padding: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 13.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    background: var(--code-bg);
+    font-weight: 600;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  tbody tr:nth-child(even) { background: var(--table-stripe); }
+  td code { font-size: 12.5px; }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 14px 18px;
+    margin: 18px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .callout.warn { border-color: var(--warn); background: #fff7ed; }
+  .callout.danger { border-color: var(--danger); background: #fef2f2; }
+  .callout strong { color: var(--accent); }
+  .callout.warn strong { color: var(--warn); }
+  .callout.danger strong { color: var(--danger); }
+
+  .tldr {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin: 24px 0;
+  }
+  .tldr h3 {
+    margin-top: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+  }
+
+  .diagram {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 18px 0;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12.5px;
+    line-height: 1.6;
+    overflow-x: auto;
+    white-space: pre;
+    color: var(--fg);
+  }
+  .diagram .step { color: var(--accent); font-weight: 600; }
+
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0 0; }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    background: var(--code-bg);
+    color: var(--muted);
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+  }
+  .badge.ok { background: #e8f5e9; color: var(--ok); }
+  .badge.warn { background: #fff3e0; color: var(--warn); }
+  .badge.req { background: #ffebee; color: var(--danger); }
+
+  ul, ol { padding-left: 22px; }
+  li { margin: 4px 0; }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 48px 0;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.toc { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--line); }
+    main { padding: 32px 24px 80px 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+<nav class="toc" aria-label="目录">
+  <h2>目录</h2>
+  <ol>
+    <li><a href="#s1">一句话总结</a></li>
+    <li><a href="#s2">架构定位</a></li>
+    <li><a href="#s3">仓库里所有位置</a></li>
+    <li><a href="#s4">会话生命周期</a></li>
+    <li><a href="#s5">何时用 / 跳过</a></li>
+    <li><a href="#s6">成本与风险</a></li>
+    <li><a href="#s7">MCP 化路线</a></li>
+    <li><a href="#s8">快速排错</a></li>
+    <li><a href="#s9">相关文档</a></li>
+  </ol>
+</nav>
+
+<main>
+
+<div class="hero">
+  <span class="eyebrow">MBA · INFRA REFERENCE</span>
+  <h1>阿里无影浏览器（Wuying / AgentBay）<br>在 MBA 中的使用全景</h1>
+  <p class="sub">覆盖 <code>~/mba</code> 仓库里所有与阿里云无影 AgentBay 云浏览器相关的代码、配置、脚本、文档和营销物料。</p>
+  <div class="meta">
+    <span><strong>版本</strong> v0.2.25</span>
+    <span><strong>快照</strong> 2026-06-02</span>
+    <span><strong>关键词</strong> Wuying / 无影 / AgentBay / <code>--quick</code></span>
+  </div>
+</div>
+
+<!-- 1 -->
+<h2 id="s1"><span class="num">1</span>一句话总结</h2>
+<p>MBA 用阿里云 <strong>无影 AgentBay</strong> 起一个<strong>一次性云浏览器会话</strong>，专门去抓 <code>WebFetch</code> 拿不到的内容（X、小红书、Bilibili、登录墙后的中文媒体、JS 渲染页面）。整条 leg 是<strong>可选</strong>的——<code>--quick</code> 模式下完全跳过，开源用户零依赖也能跑。</p>
+
+<div class="diagram">WebSearch + WebFetch  ──┐
+                        ├──→ Lead 合成 → 评委打分 → 报告
+Wuying cloud browser  ──┘  （可选；--quick 跳过）</div>
+
+<!-- 2 -->
+<h2 id="s2"><span class="num">2</span>架构定位</h2>
+<p>无影在系统里属于<strong>基建层 / 第三方依赖</strong>。<code>scripts/wuying/open.py</code> 是<strong>完全独立</strong>的脚本（<code>docs/03-architecture.md:100</code>），只在 Phase 2 的某一个并行 sub-agent 里被调起。</p>
+
+<div class="diagram">┌──────────────────────────────────────────────────────────┐
+│ Phase 2 Parallel Research                                │
+│                                                          │
+│   sub-agent #1 ─ dimension 1 (WebSearch + WebFetch)      │
+│   sub-agent #2 ─ dimension 2 (WebSearch + WebFetch)      │
+│   ...                                                    │
+│   sub-agent #N ─ wuying cloud browser  ← 本文档主角      │
+│                  ├─ ssh → scripts/wuying/open.py         │
+│                  ├─ agent-browser CLI drive              │
+│                  └─ teardown via client.delete()         │
+└──────────────────────────────────────────────────────────┘</div>
+
+<div class="tldr">
+  <h3>会话生命周期</h3>
+  <ul>
+    <li><strong>创建</strong>：<code>python3 scripts/wuying/open.py</code> → 拿到 <code>SESSION_ID</code> + <code>RESOURCE_URL</code></li>
+    <li><strong>驱动</strong>：本机 <code>agent-browser</code> CLI 连接 CDP/WSS endpoint（或手动打开 RESOURCE_URL）</li>
+    <li><strong>拆除</strong>：<strong>强制</strong>调用 <code>client.delete()</code> / <code>delete_by_id()</code>，并在 <code>_raw/wuying_browse.md</code> 里写明 teardown 状态</li>
+    <li><strong>资源密集</strong>：会话按分钟计费，漏关会持续烧钱（<code>docs/03-architecture.md:178-180</code>）</li>
+  </ul>
+</div>
+
+<!-- 3 -->
+<h2 id="s3"><span class="num">3</span>仓库里的 Wuying 全部出现位置</h2>
+<p>按层级分组。每条都给出精确文件路径 + 行号。</p>
+
+<h3>3.1 配置层 <code>.env</code></h3>
+<table>
+  <thead><tr><th>文件</th><th>行</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td><code>.env.example</code></td><td>1</td><td><code>WUYING_API_KEY=your_api_key_here</code></td></tr>
+    <tr><td><code>.env.example</code></td><td>2</td><td><code>WUYING_IMAGE_ID=browser_latest</code></td></tr>
+  </tbody>
+</table>
+<div class="callout warn">
+  <strong>⚠ 安全：</strong> <code>.env</code> 不入库；Key 不得在日志或 print 里完整输出（见 <code>docs/07-code-standards.md:175-177</code>）。
+</div>
+
+<h3>3.2 脚本层 <code>scripts/wuying/</code></h3>
+<table>
+  <thead><tr><th>文件</th><th>作用</th><th>关键行</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>open.py</code></td>
+      <td>创建会话 → 打印 <code>SESSION_ID</code> + <code>RESOURCE_URL</code> → 退出但 <strong>不删除</strong></td>
+      <td>28-32（读 key）、37-40（<code>AgentBay.create()</code>）、44-51（拿 ResourceUrl）、57-66（打印 teardown 命令）</td>
+    </tr>
+    <tr>
+      <td><code>smoke_test.py</code></td>
+      <td>API key 冒烟测试：创建 → 拿 CDP endpoint → 立即删除</td>
+      <td>30-33（读 key）、44-51（创建）、54-58（初始化 browser + CDP endpoint）、60-68（cleanup）</td>
+    </tr>
+    <tr>
+      <td><code>README.md</code></td>
+      <td>脚本说明</td>
+      <td>全文</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>依赖的 Python 包：</strong> <code>agentbay</code>（<code>AgentBay</code>、<code>CreateSessionParams</code>、<code>BrowserOption</code>）。安装：<code>pip install --user agentbay-sdk</code>。</p>
+
+<h3>3.3 Skill 集成层 <code>metric-brand-auditor/</code></h3>
+
+<p><strong>SKILL.md</strong> 里的位置：</p>
+<table>
+  <thead><tr><th>行</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>11, 16, 26</td><td>SkillHunt 营销文案：强调"零依赖入口不需要 Wuying"</td></tr>
+    <tr><td>43, 114</td><td><code>--quick</code> flag 定义与详细说明</td></tr>
+    <tr><td>160-161</td><td>依赖矩阵：Wuying API key + <code>agent-browser</code> CLI 两层 fallback</td></tr>
+    <tr><td>230</td><td>环境检查：<code>echo "WUYING_API_KEY: ..."</code></td></tr>
+    <tr><td>242</td><td>自动降级：<code>WUYING_API_KEY unset → auto --quick</code></td></tr>
+    <tr><td>261, 273, 298</td><td>sub-agent 定义、<code>--quick</code>、产物路径 <code>_raw/wuying_browse.md</code></td></tr>
+    <tr><td>462</td><td>Phase 1 proposal 模板里的 Wuying 字段</td></tr>
+    <tr><td><strong>514-553</strong></td><td><strong>核心：Phase 2 cloud-browser sub-agent prompt 模板</strong>（含 SSH 跨机 fallback、teardown 强制要求）</td></tr>
+    <tr><td>574</td><td>Lead 合成时必读 <code>wuying_browse.md</code></td></tr>
+    <tr><td>737</td><td>Phase 5 报告里必须标 accuracy limits（"no Wuying" 也是一种 limit）</td></tr>
+    <tr><td>902</td><td>EVOLUTION 模式：只在受影响维度才重跑 Wuying leg</td></tr>
+    <tr><td>935</td><td>模式变化时（Wuying vs web-only）更新法律声明</td></tr>
+    <tr><td><strong>999-1036</strong></td><td><strong>Wuying leg 风险表 + 自动 teardown 规则</strong>（&gt;15min 强制断开）</td></tr>
+    <tr><td>1044</td><td>指针：see <code>references/wuying-browser.md</code></td></tr>
+  </tbody>
+</table>
+
+<p><strong>references/wuying-browser.md</strong> — 完整的操作规范文档（147 行），覆盖：</p>
+<ul>
+  <li>One-shot session lifecycle（创建 → 驱动 → 拆除）</li>
+  <li>SSH 进 Mac host 调起脚本</li>
+  <li><code>agent-browser</code> CLI 调用约定（注意 PATH on non-login SSH 不含 <code>/opt/homebrew/bin</code>）</li>
+  <li>平台抓取规范（X / RedNote / Bilibili / 中文媒体 / brand-owned surfaces）</li>
+  <li><code>wuying_browse.md</code> 产物模板</li>
+  <li>Failure modes（key missing / SDK missing / RESOURCE_URL 为空 / agent-browser 不能 attach）</li>
+  <li>Cost discipline 双规则</li>
+</ul>
+
+<h3>3.4 项目文档 <code>docs/</code></h3>
+<table>
+  <thead><tr><th>文件</th><th>行</th><th>主题</th></tr></thead>
+  <tbody>
+    <tr><td><code>01-prd.md</code></td><td>90, 122, 134, 140</td><td>可移植性原则 / 用户前置条件 / 反爬降级 / v0.1.0 里程碑</td></tr>
+    <tr><td><code>02-product-design.md</code></td><td>120, 240-242</td><td>产物清单 / 完全降级时的报告标注</td></tr>
+    <tr><td><code>03-architecture.md</code></td><td>19, 57-58, 89, 96, 100, 119, 178-180, 275, 284, 294</td><td>目录结构 / 架构图 / Skill 依赖 / 独立性 / Phase 2 调度 / <strong>session 生命周期 + 资源密集警告</strong> / Bash 用途 / 第三方依赖表 / teardown 要求</td></tr>
+    <tr><td><code>04-pipeline.md</code></td><td>82, 110, 116, 152, 155-159, 174, 306</td><td>Phase 1/2 决策 / 批次切分（7+1=8 → 5+3）/ <strong>Wuying sub-agent 特殊性</strong> / Lead 必读 / 完全失败兜底</td></tr>
+    <tr><td><code>05-usage.md</code></td><td>30, 62, 73, 174, 222-225, 274</td><td><code>--quick</code> flag / 跑动示例 / FAQ "<code>WUYING_API_KEY not set</code>" / 成本估算</td></tr>
+    <tr><td><code>06-installation.md</code></td><td>10-13, 34-35, 40, 62-65, 134, 157-165</td><td>前置条件 / <code>.env</code> 模板 / 获取 key / smoke_test / <code>ModuleNotFoundError</code> / 应急 teardown</td></tr>
+    <tr><td><code>07-code-standards.md</code></td><td>137, 175-177</td><td>脚本风格基准 / <strong>key 脱敏要求</strong></td></tr>
+    <tr><td><code>08-extending.md</code></td><td>116-117, 230, 242</td><td>维度扩展批次切分 / 限流诊断 / scope 红线（不允许换成反爬爬虫）</td></tr>
+    <tr><td><code>mcp-server-design.md</code></td><td>163, 212, 363, 644</td><td>MCP 中间产物 / 参数 <code>skip_wuying</code> / 错误码 <code>WUYING_UNAVAILABLE</code> / v0.1 降级路径</td></tr>
+  </tbody>
+</table>
+
+<h3>3.5 README 顶层</h3>
+<table>
+  <thead><tr><th>行</th><th>内容</th></tr></thead>
+  <tbody>
+    <tr><td>64</td><td>目录树：<code>wuying-browser.md</code> 是云浏览器 leg 规范</td></tr>
+    <tr><td>99</td><td><code>scripts/wuying/</code> 描述</td></tr>
+    <tr><td>102</td><td><code>.env.example</code> 含 <code>WUYING_API_KEY</code></td></tr>
+    <tr><td>116-117</td><td>流水线示意里的 wuying sub-agent</td></tr>
+    <tr><td><strong>343-355</strong></td><td><strong>安装小节</strong>：API key 获取（<code>wuying.aliyun.com</code> → AgentBay 应用）、smoke_test、open.py</td></tr>
+  </tbody>
+</table>
+
+<h3>3.6 Hackathon 物料</h3>
+<table>
+  <thead><tr><th>文件</th><th>行</th><th>主题</th></tr></thead>
+  <tbody>
+    <tr><td><code>scripts/build_hackathon_deck.py</code></td><td>469-470, 652</td><td>Wuying 作为"基建层"展示 / <code>.env</code> 模板示例</td></tr>
+    <tr><td><code>scripts/build_overview_pptx.py</code></td><td>400, 482</td><td>Phase 2 Parallel Search 描述 / 目录树节点</td></tr>
+    <tr><td><code>docs/hackathon/mba-overview-deck.{md,html}</code></td><td>—</td><td>生成的 deck 文本与网页</td></tr>
+  </tbody>
+</table>
+
+<h3>3.7 营销 / SkillHunt 分发</h3>
+<table>
+  <thead><tr><th>文件</th><th>行</th><th>主题</th></tr></thead>
+  <tbody>
+    <tr><td><code>scripts/grow_metric_brand_auditor.sh</code></td><td>88-90</td><td>Marketplace description：<code>--quick --no-judges</code> <strong>不需要 Wuying</strong></td></tr>
+    <tr><td><code>scripts/grow_metric_brand_auditor.sh</code></td><td>122</td><td>"试跑姿势放在门面，不用先备 Wuying 云浏览器"</td></tr>
+  </tbody>
+</table>
+
+<h3>3.8 历史报告产物（自动生成）</h3>
+<p>跑过 Wuying leg 的历史报告会保留 <code>_raw/wuying_browse.md</code>：</p>
+<ul>
+  <li><code>published/reports/chengshi-auto/_raw/synthesis.md</code></li>
+  <li><code>published/reports/chengshi-auto/report.{md,html}</code></li>
+  <li><code>published/reports/chengshi-auto/versions/v2..v6_2026-05-18.md</code></li>
+  <li><code>published/reports/lenovo/report.html</code></li>
+</ul>
+<p class="sub" style="color:var(--muted);font-size:13px;">这些是输出样本，不是代码。</p>
+
+<!-- 4 -->
+<h2 id="s4"><span class="num">4</span>会话生命周期（端到端）</h2>
+
+<div class="diagram"><span class="step">┌─ 1. CREATE ─────────────────────────────────────────────────┐</span>
+   $ python3 scripts/wuying/open.py
+   → 读 .env → AgentBay.create(CreateSessionParams)
+   → 打印 SESSION_ID + RESOURCE_URL (wss://...)
+   → 进程退出, 会话保持 ALIVE
+<span class="step">└─────────────────────────────────────────────────────────────┘</span>
+                            ↓
+<span class="step">┌─ 2. DRIVE ──────────────────────────────────────────────────┐</span>
+   agent-browser CLI 连 RESOURCE_URL
+   或 Playwright/Puppeteer 连 CDP endpoint
+   或 用户本机打开 URL 手动观察（last resort）
+
+   抓取目标:
+     - X / Twitter 最新 10 条
+     - RedNote top 10 (含 KOL 画像 + 评论 top-3)
+     - Bilibili top 5 视频 (含 角度分类)
+     - 36kr/虎嗅/钛媒体 近 3 篇 (含 slant)
+     - Brand-owned surfaces (hero + footer + pricing + CTA)
+
+   所有产物落 _raw/wuying_browse.md
+   截图存 /tmp/mba-screenshots/{brand-slug}/
+<span class="step">└─────────────────────────────────────────────────────────────┘</span>
+                            ↓
+<span class="step">┌─ 3. TEARDOWN (REQUIRED) ────────────────────────────────────┐</span>
+   AgentBay.delete_by_id(SESSION_ID)
+   或 client.delete(session) / session.delete()
+
+   在 wuying_browse.md 里写明:
+     **Torn down:** &lt;ISO timestamp&gt; (success|failure)
+
+   Lead 在 Phase 3 会读这一段; teardown 缺失 → block 报告
+<span class="step">└─────────────────────────────────────────────────────────────┘</span></div>
+
+<!-- 5 -->
+<h2 id="s5"><span class="num">5</span>何时用 / 何时跳过</h2>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 18px 0;">
+  <div class="callout">
+    <strong>✓ 用 Wuying 的场景</strong>
+    <ul style="margin: 10px 0 0 0;">
+      <li>X / Twitter 搜索结果（rate-limited / 未登录不可见）</li>
+      <li>小红书 / 抖音 / Bilibili / 知乎（中文反爬）</li>
+      <li>App store 评论（动态加载）</li>
+      <li>登录墙后的媒体存档</li>
+      <li>JS 渲染才能拿到内容的页面</li>
+    </ul>
+  </div>
+  <div class="callout warn">
+    <strong>⊘ 跳过 Wuying 的场景</strong>（<code>--quick</code>）
+    <ul style="margin: 10px 0 0 0;">
+      <li>没有 <code>WUYING_API_KEY</code>（自动降级）</li>
+      <li>只想验证管线（first run）</li>
+      <li>目标品牌没有重要的中文社媒信号</li>
+      <li>成本敏感（Lite 套餐免费，但分钟计费会积累）</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>降级后报告会怎样：</strong> 报告 TL;DR 写 <code>Wuying leg N/A — see _raw/wuying_browse.md</code>，X / RedNote / Bilibili 这几个维度的"first-person framing"标 <code>N/A — wuying leg unavailable, web-only fallback used</code>。评委打分照常进行，但他们看到的素材确实是 web-only 的子集。</p>
+
+<!-- 6 -->
+<h2 id="s6"><span class="num">6</span>成本与风险纪律</h2>
+<table>
+  <thead><tr><th>风险</th><th>阈值</th><th>处理</th></tr></thead>
+  <tbody>
+    <tr><td>Session wall time</td><td>&gt; 15 min</td><td>自动 teardown via <code>scripts/wuying/open.py</code> cleanup path；log SESSION_ID + teardown 状态到 <code>_raw/wuying_browse.md</code></td></tr>
+    <tr><td>Session 漏关</td><td>任意</td><td>Lead 在 Phase 3 读 wuying_browse.md 时检查 teardown 字段；缺失 → block 报告</td></tr>
+    <tr><td>API key 泄露</td><td>任意</td><td>不允许内联打印；teardown 输出必须从 <code>.env</code> 重读</td></tr>
+    <tr><td>反爬 / 内容墙</td><td>任意</td><td>在 wuying_browse.md 显式记录"哪些没拿到"，报告里标 N/A 不假装拿到</td></tr>
+    <tr><td><code>agent-browser</code> 不能 attach</td><td>任意</td><td>降级 Playwright/Puppeteer 或手动观察；不允许静默跳过</td></tr>
+  </tbody>
+</table>
+
+<div class="callout danger">
+  <strong>规则两条</strong>（<code>metric-brand-auditor/references/wuying-browser.md:140-146</code>）：
+  <ol style="margin: 10px 0 0 0;">
+    <li>一次 skill 调用 = 一个 session。如果晚些再要平台，开新 session，不要让旧的 park 着。</li>
+    <li>teardown 状态必须落 <code>wuying_browse.md</code>。Lead 在 Phase 3 检查。</li>
+  </ol>
+</div>
+
+<!-- 7 -->
+<h2 id="s7"><span class="num">7</span>MCP 化路线（v0.3+）</h2>
+<p>未来 MCP server 会暴露 <code>mba.audit_brand</code> tool，含参数：</p>
+<pre><code>{
+  "brand": "string",
+  "skip_wuying": { "type": "boolean", "default": false },
+  // ...
+}</code></pre>
+<p>对应错误码 <code>WUYING_UNAVAILABLE</code>：云浏览器 leg 失败 → 自动降级 <code>--quick</code>，在报告里标注，不阻断流程。<span class="sub" style="color:var(--muted);">（<code>docs/mcp-server-design.md:212, 363</code>）</span></p>
+
+<!-- 8 -->
+<h2 id="s8"><span class="num">8</span>快速排错清单</h2>
+<table>
+  <thead><tr><th>症状</th><th>检查</th><th>来源</th></tr></thead>
+  <tbody>
+    <tr><td><code>WUYING_API_KEY not set</code></td><td><code>.env</code> 不存在 / key 仍是 <code>your_api_key_here</code></td><td><code>docs/05-usage.md:222-225</code></td></tr>
+    <tr><td><code>ModuleNotFoundError: agentbay</code></td><td><code>pip install --user agentbay-sdk</code></td><td><code>docs/06-installation.md:134</code></td></tr>
+    <tr><td><code>RESOURCE_URL</code> 为空</td><td>SDK 版本不暴露；用 describe-session 直查</td><td><code>references/wuying-browser.md:134-136</code></td></tr>
+    <tr><td><code>agent-browser</code> 找不到</td><td>non-login SSH 不含 <code>/opt/homebrew/bin</code>；用 <code>bash -lc</code> 或绝对路径</td><td><code>references/wuying-browser.md:36-42</code></td></tr>
+    <tr><td>Session 未释放</td><td>用 <code>docs/06-installation.md:157-165</code> 的应急脚本</td><td><code>docs/06-installation.md</code></td></tr>
+  </tbody>
+</table>
+
+<!-- 9 -->
+<h2 id="s9"><span class="num">9</span>相关文档</h2>
+<ul>
+  <li><code>metric-brand-auditor/references/wuying-browser.md</code> — 操作规范权威源</li>
+  <li><code>docs/03-architecture.md</code> — 整体架构里的 Wuying 定位</li>
+  <li><code>docs/04-pipeline.md</code> — Phase 2 调度细节</li>
+  <li><code>docs/06-installation.md</code> — 安装与冒烟测试</li>
+  <li><code>scripts/wuying/README.md</code> — 脚本最小说明</li>
+</ul>
+
+<footer>
+  生成于 2026-06-02，对应 <strong>v0.2.25</strong> 仓库快照。如果新增/删除了 Wuying 相关文件，请同步更新本文档第 3 节的位置表。
+</footer>
+
+</main>
+</div>
+</body>
+</html>
