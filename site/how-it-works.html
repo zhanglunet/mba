@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MBA 怎么打分 · How it works — Metric Brand Auditor</title>
+<meta name="description" content="MBA 的信息来源、评估参数、打分与聚合规则、Lead 合成方式,以及最终报告如何生成 —— 图文详解。" />
+<meta property="og:title" content="MBA 怎么打分 · How it works" />
+<meta property="og:description" content="信息源 → 7 维度 × 5 镜头 → N 评委独立打分 → 异议聚合 → 版本化报告。" />
+<meta property="og:url" content="https://mbabrand.com/how-it-works.html" />
+<style>
+  :root {
+    --ink: #111;
+    --paper: #faf8f3;
+    --muted: #6b6760;
+    --rule: #1a1a1a;
+    --accent: #c1440e;
+    --card: #fff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 840px; margin: 0 auto; padding: 56px 28px 80px; }
+  header {
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 18px; margin-bottom: 30px;
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
+  .mark a { color: inherit; text-decoration: none; }
+  .mark .dot { color: var(--accent); }
+  nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 18px; }
+  nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+  h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.16; margin: 0 0 12px; font-weight: 800; letter-spacing: -0.01em; }
+  .sub { font-size: 17px; color: var(--muted); margin: 0 0 28px; font-style: italic; }
+  .lead { font-size: 18px; margin: 0 0 28px; }
+
+  h2 { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 22px; margin: 48px 0 6px; padding-top: 14px; border-top: 1px solid var(--rule); letter-spacing: -0.01em; }
+  h2 .n { color: var(--accent); font-weight: 800; margin-right: 10px; }
+  h3 { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 16px; margin: 26px 0 6px; }
+  p { margin: 0 0 14px; }
+  .en { color: var(--muted); font-size: 14px; font-style: italic; }
+  strong { color: var(--ink); }
+  code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.86em; background: #f0ece3; padding: 1px 6px; border-radius: 4px; }
+
+  .toc { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 18px 22px; margin: 0 0 36px; }
+  .toc h3 { margin: 0 0 10px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .toc ol { margin: 0; padding-left: 20px; }
+  .toc li { margin: 4px 0; }
+  .toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid #d8d2c6; }
+  .toc a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .diagram { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 22px 18px; margin: 18px 0 8px; overflow-x: auto; }
+  .diagram .mermaid { display: flex; justify-content: center; min-width: 100%; }
+  .caption { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin: 0 0 24px; text-align: center; }
+
+  table { border-collapse: collapse; width: 100%; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; margin: 14px 0 22px; }
+  th, td { border: 1px solid #d8d2c6; padding: 9px 12px; text-align: left; vertical-align: top; }
+  th { background: #f0ece3; font-weight: 700; }
+  tbody tr:nth-child(even) { background: #fbf9f4; }
+
+  ul.tight { margin: 8px 0 18px; padding-left: 22px; }
+  ul.tight li { margin: 5px 0; }
+
+  .lenses { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 14px 0 20px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+  .lens { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; background: var(--card); }
+  .lens .t { font-weight: 700; font-size: 14px; }
+  .lens .d { color: var(--muted); font-size: 13px; margin-top: 4px; line-height: 1.45; }
+
+  .blocks { counter-reset: blk; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; margin: 14px 0 20px; }
+  .blk { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e7e1d5; }
+  .blk:last-child { border-bottom: none; }
+  .blk .num { flex: 0 0 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .blk .bd b { display: block; }
+  .blk .bd span { color: var(--muted); }
+
+  .callout { border-left: 4px solid var(--accent); background: #fff7ed; padding: 12px 16px; margin: 16px 0 22px; font-size: 15px; border-radius: 0 6px 6px 0; }
+
+  .hack-banner { background: #fff7ed; border: 2px solid var(--accent); color: var(--ink); padding: 13px 18px; font-size: 13.5px; line-height: 1.55; margin: 0 0 30px; border-radius: 4px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+  .hack-banner .tag { display: inline-block; background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; margin-right: 8px; letter-spacing: 0.06em; }
+
+  footer { margin-top: 56px; padding-top: 18px; border-top: 2px solid var(--rule); color: var(--muted); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+  @media (max-width: 560px) { .lenses { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark"><a href="/">MBA<span class="dot">.</span></a></div>
+      <nav>
+        <a href="/">首页</a>
+        <a href="https://github.com/zhanglunet/mba">GitHub</a>
+      </nav>
+    </header>
+
+    <h1>MBA 是怎么给品牌打分的</h1>
+    <p class="sub">How it works — 信息源 → 7 维度 × 5 镜头 → N 评委独立打分 → 异议聚合 → 版本化报告</p>
+
+    <div class="hack-banner">
+      <span class="tag">HACKATHON DEMO</span>
+      评委头像 / 评分 / verdict 均为 AI 基于<strong>公开一手资料</strong>的 in-character 模拟,<strong>非本人真实意见</strong>;本站报告<strong>不构成投资建议</strong>,也不构成对任何品牌 / 上市公司的实际评价。
+    </div>
+
+    <p class="lead">
+      一句话:<strong>先把品牌拆成可引用的事实,再让多位评委用同一把尺子独立打分,最后由 Lead 把"共识"和"分歧"合成成版本化报告。</strong>
+      下面拆开讲每一步 —— 数据从哪来、怎么变成分数、怎么变成报告。
+    </p>
+    <p class="en">A Lead agent orchestrates parallel research sub-agents and an independent multi-judge panel, then synthesizes consensus and dissent into a versioned, replayable report.</p>
+
+    <nav class="toc">
+      <h3>目录</h3>
+      <ol>
+        <li><a href="#flow">端到端数据流(5 阶段)</a></li>
+        <li><a href="#sources">信息从哪来</a></li>
+        <li><a href="#params">评估参数:7 维度 × 5 镜头</a></li>
+        <li><a href="#scoring">怎么打分、怎么聚合</a></li>
+        <li><a href="#synthesis">怎么评价(Lead 合成)</a></li>
+        <li><a href="#report">最终报告长什么样</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="flow"><span class="n">1</span>端到端数据流(5 阶段)</h2>
+    <p>MBA 不是"一次大模型调用总结一下品牌",而是一条由 Lead 编排、子智能体并行执行、评委独立打分的流水线。Router 先判断是首次审计(FRESH)还是已有报告的增量更新(EVOLUTION)。</p>
+    <div class="diagram">
+      <pre class="mermaid">
+flowchart TD
+  IN["品牌名 / 主页 URL"] --> R0["Phase 0 · Router<br/>查 report.md 是否存在 → FRESH or EVOLUTION"]
+  R0 --> P1["Phase 1 · Discovery<br/>Lead 起草 PRD,用户在 GATE 确认维度 / 评委"]
+  P1 --> P2["Phase 2 · 并行采集<br/>每个维度 1 个 sub-agent + 可选云浏览器 leg"]
+  P2 --> RAW["_raw/ 原始材料<br/>每条结论带引用 · 区分一手/三方 · 标注矛盾"]
+  RAW --> P3["Phase 3 · Synthesis<br/>Lead 合成 synthesis.md · 评委唯一输入"]
+  P3 --> P4["Phase 4 · N 评委独立打分<br/>5 镜头 × 1-10 分,互不可见"]
+  P4 --> REV["reviews/ 打分卡 × N"]
+  REV --> P5["Phase 5 · Merge<br/>Lead 合并 → report.md + report.html"]
+  P3 --> P5
+  P5 --> OUT["版本化报告<br/>滚动 canonical + 不可变 versions/v_n"]
+      </pre>
+    </div>
+    <p class="caption">图 1 · 五阶段流水线。评委只读 synthesis.md 这一个中间层,既看不到 7 份原始维度文件,也看不到彼此的打分卡。</p>
+    <div class="callout">为什么这样设计:<strong>单一中间层</strong>(synthesis.md)保证所有评委口径一致、可复现;<strong>互不可见</strong>保证打分独立、不趋同 —— 评委趋同等于把"outsider 视角"的价值丢掉了。</div>
+
+    <h2 id="sources"><span class="n">2</span>信息从哪来</h2>
+    <p>所有结论都建立在<strong>公开可访问来源</strong>上,每条 finding 在 <code>_raw/</code> 里都带 URL 引用,可逐条回溯。采集分四路:</p>
+    <table>
+      <thead><tr><th>信息源</th><th>采集方式</th><th>覆盖什么</th><th>缺失时</th></tr></thead>
+      <tbody>
+        <tr><td><b>开放网 sub-agent</b><br/>(每维度 1 个)</td><td><code>WebSearch</code> 中英各 4-6 条 + <code>WebFetch</code> top 3 实质 URL</td><td>官网 / 新闻 / 行业媒体 / 公开社媒 / 产品页 / 公开投诉样本</td><td>维度标 <code>INCOMPLETE</code>,合成时注明</td></tr>
+        <tr><td><b>云浏览器 leg</b><br/>(无影 AgentBay,可选,<code>--quick</code> 跳过)</td><td>真实浏览器会话驱动</td><td>X/Twitter · 小红书 · Bilibili · 36kr/虎嗅/钛媒体 · 应用商店等 JS 重 / 登录墙 / 反爬站</td><td>自动降级 web-only,报告标 <code>N/A</code>,不伪造</td></tr>
+        <tr><td><b><code>research</code> skill</b><br/>(可选 building block)</td><td>PRD 驱动的多代理深度调研</td><td>某维度需要更深时复用</td><td>退回直接 WebSearch + WebFetch</td></tr>
+        <tr><td><b>评委 perspective 资料</b></td><td>每位评委 LOAD 自己的 <code>*-perspective</code>,基于 80% 一手访谈/文章/播客 transcript 的 6 路调研材料</td><td>评委"怎么看"的世界观 / 决策启发式 / 表达 DNA</td><td>找不到则该评委 <code>MISSING</code>,panel 降级 N-of-M</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><strong>信息边界</strong>(写进每份报告的 Legal/IP/Disclaimer):只引用公开资料,不使用非公开文件、商业秘密、未授权数据库;拿不到的数据标 <code>N/A</code> 而非编造;评委对自己强关联的公司 / 产品默认 <code>--panel-drop</code>,保留则只作"创始人自检",不计入中立横评。</div>
+
+    <h2 id="params"><span class="n">3</span>评估参数:7 维度(输入)× 5 镜头(尺子)</h2>
+    <p><strong>7 个调研维度</strong>是信息的输入面,由 sub-agent 横向采集:</p>
+    <ul class="tight">
+      <li>① 创始 &amp; 起源叙事 — 谁讲故事、创世神话省略了什么、一手 vs PR 复用</li>
+      <li>② 产品 &amp; 定位 — 一句话定位、新品类宣称、主动/回避的"vs"比较</li>
+      <li>③ 分发 &amp; 渠道 — 第一次被看到的地方、自有 vs earned vs paid</li>
+      <li>④ 社区 &amp; PR — 谁在站台、谁在攻击、各自利益</li>
+      <li>⑤ 视觉 &amp; 语言 — 命名 / slogan / 元符号</li>
+      <li>⑥ 竞品 &amp; 格局 — 谁让出地盘、谁借用了它的语言</li>
+      <li>⑦ 接收 &amp; 情绪 — 搜索趋势 / 增长 / 媒体口径(定量信号)</li>
+    </ul>
+    <p><strong>5 个打分镜头</strong>是评判的尺子,由评委纵向投射 —— 评委不逐维度打分,而是从 synthesis 里抽取自己看重的信号:</p>
+    <div class="lenses">
+      <div class="lens"><div class="t">① 原创性 Origin authenticity</div><div class="d">创始人 / 公司叙事是否站得住</div></div>
+      <div class="lens"><div class="t">② 范畴命名 Category coinage</div><div class="d">是否真命名了一个新东西、且粘住了</div></div>
+      <div class="lens"><div class="t">③ 杠杆质量 Leverage quality</div><div class="d">主导影响力渠道是否结构性可持续</div></div>
+      <div class="lens"><div class="t">④ 身份一致性 Identity coherence</div><div class="d">视觉 / 语言 / 产品是否传递同一种感觉</div></div>
+      <div class="lens"><div class="t">⑤ 真实信号 Real-world signal</div><div class="d">评委自己愿意为之下注的程度</div></div>
+    </div>
+    <p>5 镜头是<strong>固定坐标系</strong> —— 所有品牌、所有评委、所有时间点同一口径,因此跨品牌可比、跨时间可比。坐在尺子后面的评委(panel)则可替换:default 5 人(傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣)、auto 5 人汽车评委、security 6 人安全评委,均可按品牌 / 行业切换。</p>
+
+    <h2 id="scoring"><span class="n">4</span>怎么打分、怎么聚合</h2>
+    <div class="diagram">
+      <pre class="mermaid">
+flowchart LR
+  S["synthesis.md<br/>评委的唯一输入"] --> J1["评委 A · in-character"]
+  S --> J2["评委 B · in-character"]
+  S --> J3["评委 …N"]
+  J1 --> M["每镜头聚合<br/>mean 可加权 + σ 异议强度"]
+  J2 --> M
+  J3 --> M
+  M --> H["异议热力图<br/>低 σ = 共识 / 高 σ = 撕扯"]
+  M --> L["Lead 合成<br/>共识 / 分歧 / 杠杆地图 / 90 天行动"]
+      </pre>
+    </div>
+    <p class="caption">图 2 · N 位评委从同一份 synthesis 独立打分 → 每镜头聚合出均值与异议强度 σ。</p>
+    <ul class="tight">
+      <li><b>谁打</b>:panel 里 N 位评委,每位先 LOAD 自己的 perspective skill,以第一人称、本人词汇与决策风格作答。</li>
+      <li><b>打什么</b>:5 个镜头各 <b>1-10 整数</b> + 一段 in-character 推理 + 一句签名金句;另给 <b>Verdict</b>(一句结论)/ <b>Critical gap</b>(只有该视角能点出的盲点)/ <b>Brand action</b>(下一步该做什么)。</li>
+      <li><b>独立性</b>:评委互不可见对方打分卡(prompt 显式 <code>DO NOT read other judges' files</code>),防止趋同。</li>
+      <li><b>聚合</b>:每镜头算 <code>mean</code>(可按 <code>weight</code> 加权)与 <code>σ</code>(跨评委标准差 = 异议强度)。雷达图 / 异议热力图按 <b>raw score</b> 画,不被权重污染。</li>
+    </ul>
+    <p><strong>异议是产品,不是噪声</strong> —— 质量阈值会强制把分歧顶到台面:</p>
+    <table>
+      <thead><tr><th>触发条件</th><th>Lead 必须做</th></tr></thead>
+      <tbody>
+        <tr><td>某镜头 σ &gt; 2.0</td><td>写一段专门段落,引用打分最高与最低评委的原话,不许用均值糊过去</td></tr>
+        <tr><td>单评委偏离镜头均值 &gt; 2.5σ</td><td>把该评委推理<b>原文</b>呈现,不平滑进均值</td></tr>
+        <tr><td>评委总分极差(max−min)&gt; 8</td><td>在 TL;DR 直接写"这个品牌两极分化"——分歧本身就是头条</td></tr>
+        <tr><td>出现"私下了解 / 内部消息"等编造红旗</td><td>拒收该打分卡,重跑该评委(anti-fabrication 触发)</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="synthesis"><span class="n">5</span>怎么评价(Lead 的合成,非任何单一评委)</h2>
+    <p>Lead 做的是只有"全局视角"才能做的判断 —— 这部分不是任何一位评委的声音:</p>
+    <ul class="tight">
+      <li><b>杠杆地图</b>:哪个维度在做实功(真正撑起影响力),哪个只是装饰。</li>
+      <li><b>脆弱边缘</b>:品牌在哪一点上单点依赖(一个渠道 / 一个人 / 一个叙事)。</li>
+      <li><b>跨维度矛盾</b>:维度 N 的发现与维度 M 打架在哪。</li>
+      <li><b>共识 vs 分歧</b>:<code>Where judges agree</code> 给方向,<code>Where judges disagree</code>(报告最有价值的一节)给"哪里有故事"。</li>
+      <li><b>90 天行动建议</b>:3-5 条按 leverage 排序的具体动作。</li>
+    </ul>
+    <p>异议热力图(5 镜头 × N 评委 + σ 列)是 HTML 报告里信息密度最高的"扫一眼"界面:读者扫 σ 列,σ 低的行是共识,σ 高的行是评委在撕 —— 再点开评委卡片看原话。</p>
+
+    <h2 id="report"><span class="n">6</span>最终报告长什么样</h2>
+    <p>每次标准运行产出 <code>report.md</code>(canonical Markdown,给工具 / LLM 消费)+ <code>report.html</code>(自包含单文件,给人看,只引 Chart.js / Mermaid CDN,离线可读)。HTML 自上而下的可视化块:</p>
+    <div class="blocks">
+      <div class="blk"><div class="num">1</div><div class="bd"><b>Hero</b><span>品牌 / 版本 / 模式 / 一句 TL;DR</span></div></div>
+      <div class="blk"><div class="num">2</div><div class="bd"><b>评分雷达图(Chart.js radar)</b><span>5 镜头为辐条,每评委一条彩色多边形,共识区一眼可见</span></div></div>
+      <div class="blk"><div class="num">3</div><div class="bd"><b>评分条形图 + 异议热力图</b><span>5 镜头 × N 评委 + σ 列,红 → 黄 → 绿</span></div></div>
+      <div class="blk"><div class="num">4</div><div class="bd"><b>影响力构造图(Mermaid flowchart)</b><span>源维度 → 放大器 → 可观察表面,边标杠杆假设</span></div></div>
+      <div class="blk"><div class="num">5</div><div class="bd"><b>品牌定位象限(Mermaid quadrant)</b><span>品牌 + 3-5 竞品落点</span></div></div>
+      <div class="blk"><div class="num">6</div><div class="bd"><b>评委卡片</b><span>插画头像(严禁真人照片)+ verdict + 金句 + 分数行</span></div></div>
+      <div class="blk"><div class="num">7</div><div class="bd"><b>情绪趋势 + 品牌精髓脑图</b><span>有时间序列才画趋势;Mermaid mindmap 速览品牌精髓</span></div></div>
+      <div class="blk"><div class="num">8</div><div class="bd"><b>90 天行动建议</b><span>带 leverage 徽章(high / med / low)</span></div></div>
+      <div class="blk"><div class="num">9</div><div class="bd"><b>Legal / IP / Disclaimer + 引用索引</b><span>公开资料说明 / 商标归属 / 非投资建议 / 去重引用</span></div></div>
+    </div>
+    <div class="callout"><strong>版本化与复盘</strong>:<code>report.md</code> 滚动覆盖为最新版,每次 evolution 冻结一份 <code>versions/v{n}_&lt;date&gt;</code>。再次跑同一品牌走 <b>EVOLUTION 模式</b> —— 只重研究 / 重打分"变了的维度",版本号 +1,于是六个月的品牌影响力演化变成一条可对比的时间线。</div>
+
+    <p style="margin-top:36px;font-size:16px;">想看真实产物?读两份已发布报告:
+      <a href="/reports/lenovo/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">联想集团</a> ·
+      <a href="/reports/chengshi-auto/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">橙仕汽车</a>,
+      或读 <a href="https://github.com/zhanglunet/mba" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">GitHub 源码</a>(含完整 SKILL.md 与 docs/)。
+    </p>
+
+    <footer>
+      <div>© 2026 MBA · Jason · 清风 · John</div>
+      <div><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></div>
+      <div style="flex-basis:100%;text-align:center;margin-top:6px;">技术支持:<a href="https://marsdata.ai">marsdata.ai</a></div>
+    </footer>
+  </div>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose', flowchart: { useMaxWidth: true, htmlLabels: true } });
+  </script>
+</body>
+</html>

@@ -149,6 +149,14 @@
   .report-card .takeaway { color: var(--ink); font-size: 14px; margin-top: 6px; line-height: 1.5; }
   .report-card .meta { color: var(--muted); font-size: 12px; margin-top: 8px; }
   .report-card .meta a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); margin-left: 8px; }
+
+  .how { margin: 36px 0 44px; padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+  .how h3 { margin: 0 0 14px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .how .how-line { font-size: 16px; font-weight: 700; margin: 0 0 8px; line-height: 1.4; }
+  .how .how-line b { color: var(--accent); }
+  .how .how-desc { font-size: 14px; color: var(--ink); margin: 0 0 16px; line-height: 1.55; }
+  .how .how-cta { display: inline-block; font-size: 14px; font-weight: 700; color: #fff; background: var(--accent); padding: 9px 16px; border-radius: 6px; text-decoration: none; }
+  .how .how-cta:hover { background: #a5380b; }
 </style>
 </head>
 <body>
@@ -156,6 +164,7 @@
     <header>
       <div class="mark">MBA<span class="dot">.</span></div>
       <nav>
+        <a href="/how-it-works.html">怎么打分</a>
         <a href="https://github.com/zhanglunet/mba">GitHub</a>
         <a href="#what">关于</a>
       </nav>
@@ -197,6 +206,16 @@
         <h3>Open source</h3>
         <p><a href="https://github.com/zhanglunet/mba" style="color:inherit">github.com/zhanglunet/mba</a></p>
       </div>
+    </section>
+
+    <section class="how">
+      <h3>它是怎么打分的 · How it works</h3>
+      <p class="how-line">信息源 → <b>7 维度 × 5 镜头</b> → N 评委独立打分 → 异议聚合 → 版本化报告</p>
+      <p class="how-desc">
+        每条结论都带公开来源引用;评委各自 in-character、互不可见地按 5 把固定尺子打 1-10 分;
+        Lead 再把共识与分歧合成报告。异议越大越被顶到台面 —— 分歧本身就是头条。
+      </p>
+      <a class="how-cta" href="/how-it-works.html">查看完整方法论(含流程图) →</a>
     </section>
 
     <section class="reports-list">
