@@ -141,10 +141,12 @@ Agent(
     - ## Contradictions / gaps
     - ## Confidence: high / medium / low
 
-    Save to: ~/mba/metric-brand-auditor/reports/{brand-slug}/_raw/dimension_{n}_{slug}.md
+    Save to: ${REPORTS_DIR}/{brand-slug}/_raw/dimension_{n}_{slug}.md
   """
 )
 ```
+
+> 路径走运行时符号 `${REPORTS_DIR}`(Phase 0 解析,默认 `${SKILL_DIR}/reports`),不 hardcode `~/mba`。
 
 **并发规则:**
 
@@ -189,46 +191,44 @@ Agent(
 
 ## Phase 4F / 4E — Judge Review Panel
 
-**职责**:N 评委独立打分,各自落 `reviews/<judge>.md`。
+**职责**:解析后 panel 里的 N 评委独立打分,各自落 `reviews/<judge>.md`。**panel-driven** —— 评委名单
+不再写死在 SKILL.md,而是从 Phase 0 解析出的 panel yaml 读取(default 5 / auto 5 / security-cn-global 6)。
 
-**实现核心**(摘自 SKILL.md):
+**实现核心**(摘自 SKILL.md,路径走运行时符号,不 hardcode `~/mba`):
 
 ```
-for judge in [fusheng, jobs, likejia, wu-jundong, zhang-yiming]:
+panel  = load_yaml(${PANELS_DIR}/{PANEL_NAME}.yaml)
+judges = panel["judges"] + overrides.add - overrides.drop
+judges = [j for j in judges if perspective_found(j["slug"])]   # 找不到的标 MISSING,降级 N-of-M
+
+for judge in judges:                    # 每批 ≤ 5,N>5 分 ⌈N/5⌉ 批
   Agent(
     subagent_type: "general-purpose",
-    description: "Judge — {judge}",
+    description: "Judge — {judge.display_name_cn or judge.slug}",
     run_in_background: true,
     prompt: """
-      FIRST load ~/mba/{judge}-perspective/SKILL.md and READ FULLY.
+      FIRST probe ${PERSPECTIVES_PATH} for {judge.slug}-perspective/SKILL.md (first hit) and READ FULLY.
       From now on, respond AS the persona — first-person, their vocabulary, their style.
-      Re-read anti-fabrication rules — they apply.
+      Re-read anti-fabrication + self-conflict rules — they apply.
 
-      Read synthesis at:
-      ~/mba/metric-brand-auditor/reports/{brand-slug}/_raw/synthesis.md
+      Respond in {judge.language} (zh/en, from panel yaml — NOT the brand's language).
 
-      Score on 5 lenses (1-10):
-      1. Origin authenticity
-      2. Category coinage
-      3. Leverage quality
-      4. Identity coherence
-      5. Real-world signal
+      Read synthesis at: ${REPORTS_DIR}/{brand-slug}/_raw/synthesis.md
 
+      Score on 5 lenses (1-10): Origin authenticity / Category coinage /
+      Leverage quality / Identity coherence / Real-world signal.
       Each lens: one paragraph in-character + one signature quote.
 
-      End with:
-      - Verdict (1 sentence, in character)
-      - Critical gap (the thing only YOU would surface)
-      - Brand action (what to do next, if your worldview holds)
+      End with: Verdict (1 sentence) / Critical gap (only YOU surface) / Brand action.
 
-      Save to: ~/mba/metric-brand-auditor/reports/{brand-slug}/reviews/{judge}.md
-
+      Save to: ${REPORTS_DIR}/{brand-slug}/reviews/{judge.slug}.md
       DO NOT read other judges' files. Score independently.
     """
   )
 ```
 
-**为什么 5 个 = 1 批**:刚好不超 Anthropic 5 并发上限,一个回合搞定。
+**批次**:每批 ≤ 5 个 agent(Anthropic 并发上限)。default 的 5 位刚好 1 批;security-cn-global 的
+6 位分 5 + 1 两批。缺失的评委在 Score Matrix 里留 `—` 列 + 脚注 `MISSING: <slug>`,不静默丢。
 
 **人格化纪律:**
 
@@ -329,6 +329,6 @@ EVOLUTION 不是"重跑一次整个流程",而是"对变了的维度做 surgical
 | Phase 1F — Discovery | "## Phase 1F — Discovery (FRESH mode, Lead, sequential)" |
 | Phase 2F — Parallel Search | "## Phase 2F — Parallel Sub-Agent Search (FRESH mode)" |
 | Phase 3F — Synthesis | "## Phase 3F — Lead Synthesis (FRESH mode)" |
-| Phase 4F — Judge Panel | "## Phase 4F — 5-Judge Review Panel" |
+| Phase 4F — Judge Panel | "## Phase 4F — N-Judge Review Panel (panel-driven)" |
 | Phase 5F — Merge | "## Phase 5F — Lead Merge (FRESH mode)" + "### Phase 5F.b — HTML report" + "### Phase 5F.c — Surface to user" |
 | EVOLUTION 1E-5E | "## EVOLUTION MODE (Phase 1E onward)" |

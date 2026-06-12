@@ -174,7 +174,8 @@
 
 ## 6. 异议热力图(Dissent Heatmap)— 高价值组件详解
 
-5×5 grid + σ 列,是 HTML 报告里**最高价值的扫一眼界面**。
+5 镜头 × N 评委 grid + σ 列,是 HTML 报告里**最高价值的扫一眼界面**。列随解析出的 panel 走 ——
+下例是 `default` panel 的 5 列;`auto` 是另外 5 位汽车评委,`security-cn-global` 是 6 列。
 
 ```
           fusheng  jobs  likejia  wu-jundong  zhang-yiming     σ

@@ -19,7 +19,11 @@ git clone https://github.com/zhanglunet/mba.git ~/mba
 cd ~/mba
 ```
 
-放在 `~/mba` 是 SKILL.md 里 hardcode 的路径。如果你想放别处,需要在所有 SKILL.md 里搜 `~/mba` 替换为你的路径。
+> **路径不再 hardcode**:从 v0.2.14 起,SKILL.md 用运行时符号(`${SKILL_DIR}` / `${REPORTS_DIR}` /
+> `${PERSPECTIVES_PATH}` / `${PANELS_DIR}` / `${IMAGES_DIR}`)在 Phase 0 解析一次后复用。`~/mba` 只是
+> 推荐的克隆位置和文档示例,放别处也能跑 —— Lead 会以 SKILL.md 自身所在目录为 `${SKILL_DIR}`,并按
+> `${SKILL_DIR}/..` → `~/.claude/skills` → `~/skills` 的顺序探测兄弟 perspective skill。可用环境变量
+> `MBA_REPORTS_DIR` / `MBA_PANELS_DIR` / `MBA_IMAGES_DIR` 覆盖默认值。
 
 ## 3. 配置 .env
 
@@ -82,14 +86,18 @@ cleanup: session deleted via client.delete()
 **方法 A**(推荐):软链到全局 skills 目录
 
 ```bash
+mkdir -p ~/.claude/skills
 ln -s ~/mba/metric-brand-auditor ~/.claude/skills/mba
 ln -s ~/mba/research ~/.claude/skills/research
-ln -s ~/mba/fusheng-perspective ~/.claude/skills/fusheng-perspective
-ln -s ~/mba/jobs-perspective ~/.claude/skills/jobs-perspective
-ln -s ~/mba/likejia-perspective ~/.claude/skills/likejia-perspective
-ln -s ~/mba/wu-jundong-perspective ~/.claude/skills/wu-jundong-perspective
-ln -s ~/mba/zhang-yiming-perspective ~/.claude/skills/zhang-yiming-perspective
+# 一次性软链全部 15 套 perspective(default + auto + security 三套 panel 的评委)
+for d in ~/mba/*-perspective; do
+  ln -s "$d" ~/.claude/skills/"$(basename "$d")"
+done
 ```
+
+> 只装 default panel 的话,至少软链 `fusheng / jobs / likejia / wu-jundong / zhang-yiming` 这 5 套;
+> 要用 `--industry auto` / `--panel security-cn-global` 就把对应 panel 的评委也链上。缺失的评委
+> Phase 4 会标 `MISSING` 并降级为 N-of-M,不会让流水线崩。
 
 **方法 B**:`cd ~/mba` 后在仓库内启动 Claude Code,自动识别同目录下的 `*-perspective/` 和 `metric-brand-auditor/`。
 
@@ -208,8 +216,8 @@ git pull
 ## 8. 卸载
 
 ```bash
-rm -f ~/.claude/skills/mba ~/.claude/skills/research \
-      ~/.claude/skills/{fusheng,jobs,likejia,wu-jundong,zhang-yiming}-perspective
+rm -f ~/.claude/skills/mba ~/.claude/skills/research
+rm -f ~/.claude/skills/*-perspective    # 清掉全部 15 套 perspective 软链
 rm -rf ~/mba
 ```
 

@@ -139,8 +139,11 @@ MBA 用三条对应机制解决:
 
 - **v0.1.0** — 5 perspective skills + 无影脚本(已发)
 - **v0.2.0** — metric-brand-auditor + research skill(已发)
-- **v0.2.1** — README 重写 + 完整 docs/(本批次)
-- **v0.3** — 持续改进 SKILL.md(尚未编排,以 issue 驱动)
+- **v0.2.1** — README 重写 + 完整 docs/(已发)
+- **v0.2.14** — 路径去 hardcode,引入 `${SKILL_DIR}` 等运行时符号(已发)
+- **v0.2.19** — panel 系统:`panels/*.yaml` + `--panel` / `--industry` + 品牌绑定;auto panel 可运行(已发)
+- **v0.2.2x** — security-cn-global 6 人 panel + perspective 增至 15 套 + perspective-structure-spec + CI 校验 + site 发布(mbabrand.com)(当前)
+- **v0.3** — 填齐 7 个 SKELETON 行业 panel 的评委 + 持续改进 SKILL.md(以 issue 驱动)
 - **v0.4+** — MCP 化(参考 [mcp-server-design.md](mcp-server-design.md))
 
 ## 11. 衍生需求(待评估)
