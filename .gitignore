@@ -24,6 +24,11 @@ published/reports/asiainfo-security/
 # Cloudflare Pages 本地 build 产物(CF Pages 自己会 build,不入库)
 site/reports/
 
+# scripts/print_report.sh 的 PDF 渲染中间产物 —— 每次跑就重生成,不入库
+published/reports/*/report.print.html
+# 旧 --inplace 之前会留下的 expanded.pdf 中间产物 —— 新版默认就地覆盖 report.pdf,不再有这文件
+published/reports/*/report.expanded.pdf
+
 # Cloudflare Wrangler 本地缓存
 .wrangler/
 

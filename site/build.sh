@@ -60,8 +60,9 @@ while IFS= read -r line || [ -n "$line" ]; do
   mkdir -p "$dest_dir"
   cp "$src_html" "$dest_dir/index.html"
 
-  # 一并拷该 brand 目录下的静态资源(图片 / PDF,不拷 _raw / reviews / versions)
-  # 只拷常见静态后缀
+  # 一并拷该 brand 目录下的静态资源(图片 / PDF,不拷 _raw / reviews / versions)。
+  # report.pdf 由 scripts/print_report.sh 就地生成并覆盖(forced-open <details>),
+  # 不再有 expanded.pdf 中间产物。report.print.html 仅是 PDF 渲染源,也不上线。
   while IFS= read -r asset; do
     rel="${asset#$SRC_DIR/$slug/}"
     mkdir -p "$dest_dir/$(dirname "$rel")"

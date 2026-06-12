@@ -846,6 +846,18 @@ slots, and write the result to `report.html` and `versions/v1_<date>.html`.
   of third-party marks/images.
 - If a chart fails, fall back to a markdown table inside `<details>` and note the failure
 
+**Optional — produce a PDF:**
+
+```sh
+scripts/print_report.sh <brand-slug>   # overwrites published/reports/<slug>/report.pdf
+```
+
+The script copies `report.html` → `report.print.html`, force-opens every `<details>`,
+strips the legacy `details[open] summary { display:none }` print rule if present, and
+runs headless Chrome to overwrite `report.pdf` in place. `site/build.sh` then ships
+that `report.pdf` to the site as-is — no `expanded.pdf` intermediate. If you want a
+diff baseline, snapshot the previous `report.pdf` yourself before running.
+
 ### Phase 5F.c — Surface to user
 
 After both files exist, tell the user:
