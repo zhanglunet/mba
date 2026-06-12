@@ -8,60 +8,67 @@
 mba/                                   ← 仓库根
 ├── README.md                          ← 项目门面
 ├── .env.example                       ← 配置模板
-├── .gitignore                         ← .env, .DS_Store
+├── .gitignore                         ← .env / reports/ / .botlearn/ / skills/ 等
+├── .github/workflows/panel-validation.yml ← CI:校验 panel / 结构 / py_compile / shell / site build
 │
 │ ── 编排层 ────────────────────────────────
 ├── metric-brand-auditor/              ← 主 SKILL: MBA 流水线编排器
-│   ├── SKILL.md                            Lead 的工作手册(~600 行)
+│   ├── SKILL.md                            Lead 的工作手册(~1000 行)
 │   ├── references/                         复用片段
-│   │   ├── dimensions.md                   7 默认维度
-│   │   ├── judge-prompt-template.md        评委统一打分模板
+│   │   ├── dimensions.md                   7 默认维度(+ 高级维度 8-9)
+│   │   ├── judge-prompt-template.md        评委统一打分模板(5 镜头)
 │   │   ├── wuying-browser.md               云浏览器 leg 规范
-│   │   └── html-report-template.md         HTML 报告脚手架
-│   └── reports/<brand-slug>/               每个品牌一个目录
+│   │   ├── html-report-template.md         HTML 报告脚手架
+│   │   └── perspective-structure-spec.md   *-perspective/SKILL.md 的 H2 结构规范
+│   ├── panels/                             ← 评委编组层:命名 panel yaml
+│   │   ├── default.yaml / auto.yaml / security-cn-global.yaml   可运行 panel
+│   │   ├── ai-app-cn.yaml … vc-en.yaml     SKELETON 占位 panel(7 个)
+│   │   ├── industries.yaml                 行业名 → panel 名映射表
+│   │   └── README.md                       panel 字段参考 + resolver 行为
+│   └── reports/<brand-slug>/               每个品牌一个目录(运行时产物,.gitignore)
 │       ├── report.md / report.html         canonical 报告
+│       ├── panel.yaml                      品牌绑定了哪套 panel
 │       ├── versions/v{n}_<date>.{md,html}  不可变版本快照
-│       ├── _raw/                           过程文件
-│       └── reviews/                        5 评委打分卡
+│       ├── _raw/                           过程文件(dimension_* / synthesis / wuying_browse)
+│       └── reviews/                        N 评委打分卡(按 panel 大小)
 │
 │ ── 工具层 ────────────────────────────────
 ├── research/                          ← /research skill: PRD 多代理深度调研
 │   ├── SKILL.md
-│   └── references/
-│       ├── agent-prompts.md
-│       ├── comparison-matrix.md
-│       └── report-template.md
+│   └── references/{agent-prompts,comparison-matrix,report-template}.md
 │
-│ ── 评委层 ────────────────────────────────
-├── fusheng-perspective/               ← production 人物视角 skill
-├── jobs-perspective/
-├── likejia-perspective/
-├── wu-jundong-perspective/
-├── zhang-yiming-perspective/
-├── leijun-perspective/
-├── musk-perspective/
-├── lixiang-perspective/
-├── hexiaopeng-perspective/
-└── libin-perspective/                      每套结构相同:
-                                            ├── SKILL.md         (frontmatter + 触发规则 + DNA)
-                                            ├── references/research/
-                                            │   ├── 01-writings.md
-                                            │   ├── 02-conversations.md
-                                            │   ├── 03-expression-dna.md
-                                            │   ├── 04-external-views.md
-                                            │   ├── 05-decisions.md
-                                            │   └── 06-timeline.md
-                                            └── references/      (人物研究材料)
+│ ── 评委层(15 套 *-perspective/)──────────────
+├── default panel:  fusheng / jobs / likejia / wu-jundong / zhang-yiming
+├── auto panel:     musk / leijun / lixiang / hexiaopeng / libin
+└── security panel: zhouhongyi / zhangmingzheng / renzhengfei / jensenhuang / satyanadella (+ musk)
+                                            每套结构:
+                                            ├── SKILL.md         (frontmatter + 触发规则 + 心智模型 + DNA + 红线)
+                                            ├── references/research/01-06.md  (6 路调研材料)
+                                            ├── references/research/quotes.md (部分:URL 锚定金句库)
+                                            └── references/sources/           (部分:transcript 原文)
 │
 │ ── 基建层 ────────────────────────────────
-├── scripts/wuying/open.py                     ← 阿里云无影 AgentBay 一次性会话
-├── scripts/wuying/smoke_test.py                     ← 冒烟测试 API key
+├── scripts/
+│   ├── validate_panels.py                  ← 校验 panel yaml(零依赖,CI 跑)
+│   ├── migrate_legacy_report_panels.py     ← 给老报告补 panel.yaml
+│   ├── print_report.sh                     ← report.html → report.pdf(headless Chrome)
+│   ├── perspective-tools/                  ← perspective 共用工具
+│   │   ├── check_structure.py              校验 SKILL.md H2 结构(CI 跑)
+│   │   ├── merge_research.py / quality_check.py
+│   │   └── srt_to_transcript.py / download_subtitles.sh
+│   └── wuying/{open.py, smoke_test.py}     ← 阿里云无影 AgentBay 会话 + 冒烟测试
+├── assets/judges/                     ← 评委插画头像(严禁真人照片)
+│
+│ ── 发布层 ────────────────────────────────
+├── published/reports/<brand>/         ← 经 review 可公开的样例报告源(显式 add)
+├── site/                              ← mbabrand.com 源:index.html + build.sh(Cloudflare Pages)
 │
 │ ── 文档层 ────────────────────────────────
 └── docs/                              ← 本文档目录
     ├── README.md (index)
     ├── 01-prd.md ... 08-extending.md
-    └── mcp-server-design.md
+    ├── mcp-server-design.md / wuying-usage.md
+    └── hackathon/ (pitch / deck)
 ```
 
 ## 2. 模块依赖图
@@ -93,7 +100,8 @@ mba/                                   ← 仓库根
 
 **依赖方向:** 严格自顶向下,无环。
 
-- `metric-brand-auditor` 依赖 `research`(可选,Phase 2 调研可直接用 sub-agent 不必走 research)、`*-perspective`(必选,Phase 4 必读)、`scripts/wuying/open.py`(可选,`--quick` 跳过)
+- `metric-brand-auditor` 依赖 `panels/*.yaml`(Phase 0 决定哪 N 位评委)、`research`(可选,Phase 2 调研可直接用 sub-agent 不必走 research)、`*-perspective`(Phase 4 按 panel 读取,缺失则降级 N-of-M)、`scripts/wuying/open.py`(可选,`--quick` 跳过)
+- 所有路径在 Phase 0 由运行时符号(`${SKILL_DIR}` / `${REPORTS_DIR}` / `${PERSPECTIVES_PATH}` / `${PANELS_DIR}` / `${IMAGES_DIR}`)解析一次后复用 —— v0.2.14 起不再 hardcode `~/mba/...`
 - `research` 不依赖任何其他 skill(可独立用)
 - `*-perspective` 互不依赖,各自独立。SKILL.md 顶部的"路由规则"靠 metadata 协调,不靠代码
 - perspective 研究辅助脚本集中在 `scripts/perspective-tools/`,避免每个 perspective 目录重复维护
@@ -179,6 +187,20 @@ MBA 共 6 个 phase(0-5)。Phase 0 是路由,1-5 是主流程。EVOLUTION 模式
 
 > 一次性云浏览器会话,生命周期从 `scripts/wuying/open.py` 创建开始,到显式 `Session.delete()` 结束。**资源密集**,SKILL.md 强制要求 teardown 在 `wuying_browse.md` 里有验证。
 
+### 4.7 Panel
+
+> 一份命名的评委名单 yaml(`panels/<name>.yaml`),把"哪 N 位评委上场"从 SKILL.md 里抽出来。
+> 一个 panel = 一个 yaml,git 跟踪即"保存"。
+
+Phase 0 的 panel resolver 四层优先级(先命中先用):**`--panel <name>` > `--industry <name>`
+(查 `industries.yaml`)> `reports/<brand>/panel.yaml` 的品牌绑定 > `default.yaml`**。`--panel-add` /
+`--panel-drop` 在解析后做本次运行的临时增删(写进 `panel.yaml.overrides`,不改 `panels/<name>.yaml`)。
+
+panel 有 `status: skeleton` 字段标记"占位 / 评委未建齐":跑到时 Lead 提示并自动降级为
+synthesis-only。当前 3 个可运行(default / auto / security-cn-global)+ 7 个 skeleton。
+关键不变量:**不要改已在用 panel(尤其 default)的 `judges:`** —— 老品牌 `panel.yaml` 记的是
+panel 名,改名单会让 v{n+1} 与 v{n} 不可比;换评委请起新 panel 名。
+
 ## 5. SKILL.md 文件格式
 
 每个 SKILL.md 顶部必须有 YAML frontmatter:
@@ -203,14 +225,30 @@ body 部分按 phase 组织,每个 phase 含:
 
 ## 6. Perspective skill 文件格式
 
-每个 `*-perspective/SKILL.md` 必须含 4 个章节(否则 add_judge 校验失败,见 [mcp-server-design.md](mcp-server-design.md)):
+**单一事实源**:`metric-brand-auditor/references/perspective-structure-spec.md` 规定了每个
+`*-perspective/SKILL.md` 必须满足的 H2 布局,`scripts/perspective-tools/check_structure.py`
+在 CI 里强制校验(`panel-validation.yml` 第二步)。
 
-1. **YAML frontmatter** + 触发规则
-2. **核心心智模型 / 决策启发式**(≥ 5 条编号项)
-3. **表达 DNA**(怎么说话,带样例)
-4. **Anti-fabrication 红线**(明确"不要激活"/"不可编造"/"留白")
+15 套 perspective 经一年增量演化形成了三种风格(默认 panel 全中文 H2、auto panel 中英混排、
+security panel 全英式 H2),structure-spec 用"逻辑章节 + 可接受别名"统一它们。必须出现的 5 个
+H2 章节(任一别名即可):
 
-`references/research/` 下的 6 路调研材料(`01-writings` / `02-conversations` / `03-expression-dna` / `04-external-views` / `05-decisions` / `06-timeline`)是 SKILL.md 的素材源,不是 skill 自身的一部分 —— 但是日后 EVOLUTION / refresh perspective 时的入口。
+| 逻辑章节 | 可接受 H2(任一) |
+|---|---|
+| Core Mental Models | `## Core Mental Models` / `## 核心心智模型`(5-8 条,典型 6) |
+| Honest Boundary | `## Honest Boundary` / `## 诚实边界`(无一手材料的话题 + cutoff 日期) |
+| Anti-Fabrication | `## Anti-Fabrication Red Lines` / `## Anti-Fabrication 红线` / `## Anti-Fabrication Guard` |
+| Self-Conflict Rule | `## Self-Conflict Rule`(强关联品牌 → 默认 `--panel-drop`) |
+| Sources / Appendix | `## Sources` / `## 附录:调研来源`(指向 `references/research/01-06.md`) |
+
+其它 H2(Identity Card / Decision Heuristics / Expression DNA / Persona Activation Rules /
+MBA Five-Lens Scoring Bias 等)推荐但不强制。frontmatter + 触发规则始终必备。
+
+`references/research/` 下的 6 路调研材料(`01-writings` / `02-conversations` /
+`03-expression-dna` / `04-external-views` / `05-decisions` / `06-timeline`)是 SKILL.md 的
+素材源;部分 perspective 还带 `references/research/quotes.md`(URL 锚定金句库,production-seed
+档)或 `references/sources/`(transcript 原文)。它们不是 skill 自身的一部分 —— 但是日后
+EVOLUTION / refresh perspective 时的入口。
 
 ## 7. 数据格式约定
 
@@ -246,7 +284,11 @@ _raw/dimension_<n>_<slug>.md
 reviews/<judge>.md
 ```
 
-`<judge>` ∈ `{fusheng, jobs, likejia, wu-jundong, zhang-yiming}` ∪ 用户自定义。
+`<judge>` = 解析后 panel 里每位评委的 slug,文件数 = panel 大小(default 5 / auto 5 /
+security-cn-global 6)。slug 取自 15 套 perspective 之一(`fusheng` / `jobs` / `likejia` /
+`wu-jundong` / `zhang-yiming` / `musk` / `leijun` / `lixiang` / `hexiaopeng` / `libin` /
+`zhouhongyi` / `zhangmingzheng` / `renzhengfei` / `jensenhuang` / `satyanadella`)∪ 用户自定义。
+EVOLUTION 模式重打分写 `reviews/<judge>_v{n+1}.md`,旧卡保留。
 
 ### 7.4 version 文件命名
 

@@ -35,7 +35,15 @@ Lead 会:
 | `--industry auto` | 名称 | - | 按行业映射选择 panel,例如 `auto` / `ai` / `consumer` |
 | `--panel-add pmarca` | slug | - | 本次临时追加一位评委,不修改 panel 文件 |
 | `--panel-drop jobs` | slug | - | 本次临时跳过一位评委,不修改 panel 文件 |
-| `list` | 子命令 | - | 列出已审计品牌 + 各自版本数 |
+| `list` | 子命令 | - | 列出已审计品牌 + 各自版本数 + 绑定的 panel |
+| `panels` | 子命令 | - | 列出 `panels/` 下所有 panel + judge 列表 |
+| `panels show <name>` | 子命令 | - | 打印某个 panel 的完整 yaml |
+| `panels new <name>` | 子命令 | - | 从 default.yaml 复制出一份 panel 骨架 |
+
+> **可运行 vs SKELETON**:`default` / `auto` / `security-cn-global` 三套 panel 评委已建齐,可真打分;
+> 另外 7 套(`ai-app-cn` / `consumer-cn` / `cross-border` / `edu-cn` / `luxury-en` / `vc-cn` /
+> `vc-en`)标了 `status: skeleton`,跑到会自动降级为 synthesis-only。`--industry` 名见
+> `panels/industries.yaml`。
 
 ## 3. 完整示例
 

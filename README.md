@@ -64,9 +64,11 @@ mba/
 │   │   ├── wuying-browser.md            云浏览器 leg 的开会话/驱动/拆除规范
 │   │   └── html-report-template.md      最终 HTML 报告的脚手架(Chart.js + Mermaid + Legal/IP)
 │   ├── panels/                       ← 评委编组层:命名 panel 的 yaml 配置
-│   │   ├── default.yaml                 默认上场阵容:傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣
-│   │   ├── tech-cn.yaml                 示例:全中文科技评委
-│   │   ├── vc-en.yaml                   示例:英文 VC / 增长向评委
+│   │   ├── default.yaml                 [可运行] 默认阵容:傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣
+│   │   ├── auto.yaml                    [可运行] 汽车 / EV:马斯克 / 雷军 / 李想 / 何小鹏 / 李斌
+│   │   ├── security-cn-global.yaml      [可运行] 安全 6 人:周鸿祎 / 张明正 / 任正非 / 黄仁勋 / 马斯克 / Satya
+│   │   ├── ai-app-cn.yaml … vc-en.yaml  [SKELETON] 行业占位 panel(评委 perspective 尚未建齐)
+│   │   ├── industries.yaml              行业名 → panel 名映射表,被 --industry 查询(本身不是 panel)
 │   │   └── README.md                    panel yaml 字段说明 + 怎么写一个新 panel
 │   └── reports/<brand-slug>/          每个品牌一个文件夹(运行 /mba <brand> 后生成)
 │       ├── report.md                    当前 canonical 报告(滚动覆盖)
@@ -79,27 +81,34 @@ mba/
 ├── research/                     ← 工具层:复用的"PRD 多代理深度调研" skill
 │   └── SKILL.md                       MBA 内部当作搜索建块,自身也可独立 `/research` 调用
 │
-├── *-perspective/                ← 评委层:production 人物视角 skill
-│   ├── fusheng-perspective/           傅盛(猎豹/OpenClaw)
-│   ├── jobs-perspective/              Steve Jobs
-│   ├── likejia-perspective/           李可佳(BotLearn/Aibrary)
-│   ├── wu-jundong-perspective/        吴俊东(Aibrary 联创、前 TAL 战投)
-│   ├── zhang-yiming-perspective/      张一鸣(字节跳动)
-│   ├── leijun-perspective/            雷军(小米)
-│   ├── musk-perspective/              Elon Musk(Tesla / SpaceX)
-│   ├── lixiang-perspective/           李想(理想汽车)
-│   ├── hexiaopeng-perspective/        何小鹏(小鹏汽车)
-│   └── libin-perspective/             李斌(蔚来)
-│   每套 = 1 份 SKILL.md(含人格化触发规则、表达 DNA、anti-fabrication 约束)
+├── *-perspective/                ← 评委层:15 套 production 人物视角 skill
+│   ├── default panel 的 5 位:
+│   │   fusheng(傅盛)/ jobs(Steve Jobs)/ likejia(李可佳)/
+│   │   wu-jundong(吴俊东)/ zhang-yiming(张一鸣)
+│   ├── auto panel 的 5 位:
+│   │   musk(马斯克)/ leijun(雷军)/ lixiang(李想)/
+│   │   hexiaopeng(何小鹏)/ libin(李斌)
+│   └── security panel 的 5 位(+ 复用 musk):
+│       zhouhongyi(周鸿祎)/ zhangmingzheng(张明正)/ renzhengfei(任正非)/
+│       jensenhuang(黄仁勋)/ satyanadella(Satya Nadella)
+│   每套 = 1 份 SKILL.md(含人格化触发规则、表达 DNA、anti-fabrication + self-conflict 约束)
 │         + references/research/01-06.md(80% 一手来源的 6 路调研材料)
-│         + 共享工具见 scripts/perspective-tools/
+│         + 部分含 quotes.md(URL 锚定金句库)+ 共享工具见 scripts/perspective-tools/
+│   H2 结构由 references/perspective-structure-spec.md 规定,CI 用 check_structure.py 校验
 │
 ├── scripts/
-│   ├── perspective-tools/           ← 字幕下载、研究合并、质量检查等 perspective 共用工具
+│   ├── validate_panels.py           ← 校验所有 panel yaml(CI 跑这个,零依赖)
+│   ├── migrate_legacy_report_panels.py ← 给老报告补默认 panel.yaml 绑定
+│   ├── print_report.sh              ← report.html → report.pdf(headless Chrome,就地覆盖)
+│   ├── perspective-tools/           ← 字幕下载、研究合并、质量检查、结构校验等 perspective 共用工具
+│   │   └── check_structure.py           校验 *-perspective/SKILL.md 的 H2 结构(CI 跑这个)
 │   └── wuying/                      ← 阿里云无影 AgentBay helper + smoke test
-├── assets/judges/                   ← 评委插画头像
-├── published/reports/               ← 已确认可公开发布的报告源
-└── .env.example / .env              WUYING_API_KEY 配置
+├── assets/judges/                   ← 评委插画头像(严禁真人照片)
+├── published/reports/               ← 已确认可公开发布的报告源(显式 git add -f 才入库)
+├── site/                            ← mbabrand.com 的源:index.html + build.sh(Cloudflare Pages)
+├── docs/                            ← 完整设计文档 01-08 + mcp-server-design + hackathon 资料
+├── .github/workflows/panel-validation.yml ← CI:校验 panel / 结构 / py_compile / shell / site build
+└── .env.example / .env              WUYING_API_KEY 配置(.env 不入库)
 ```
 
 ### 流水线五阶段(FRESH 模式)
@@ -246,16 +255,30 @@ panel 没有"保存"动作 —— 写进 `metric-brand-auditor/panels/<name>.yam
 
 常用模式:
 
+仓库当前自带的 panel(`status:` 区分**可运行** vs **SKELETON 占位**):
+
 ```bash
 metric-brand-auditor/panels/
-├── default.yaml            # 当前默认:傅盛 + Jobs + 李可佳 + 吴俊东 + 张一鸣
-├── tech-cn.yaml            # 全中文科技评委(如:张一鸣 + 傅盛 + 李可佳 + 王兴 + 黄峥)
-├── vc-en.yaml              # 英文 VC / 增长(如:Jobs + pmarca + naval + paulg)
-├── consumer-cn.yaml        # 消费品牌评委(如:江南春 + 钟睒睒 + 张鹏 + 罗永浩)
-└── solo.yaml               # 单视角速读;只放一位,等价于 /<persona>-perspective
+# ── 可运行(评委 perspective skill 已建齐,能真打分)──────────────
+├── default.yaml            # 兜底:傅盛 + Jobs + 李可佳 + 吴俊东 + 张一鸣
+├── auto.yaml               # 汽车 / EV:马斯克 + 雷军 + 李想 + 何小鹏 + 李斌
+├── security-cn-global.yaml # 安全 6 人:周鸿祎 + 张明正 + 任正非 + 黄仁勋 + 马斯克 + Satya
+# ── SKELETON(占位 / 路线图,评委还没建齐,跑到会自动降级为 synthesis-only)──
+├── ai-app-cn.yaml          # AI 应用层(杨植麟 / 王慧文 / 周鸿祎 / 傅盛 / 朱啸虎)
+├── consumer-cn.yaml        # 中文消费品(江南春 / 张兰 / 罗永浩 / …)
+├── cross-border.yaml       # 跨境出海(黄峥 / SHEIN 许仰天 / …)
+├── edu-cn.yaml             # 教育(俞敏洪 / 张邦鑫 / 李可佳 / 吴俊东 / Sal Khan)
+├── luxury-en.yaml          # 奢侈品(Arnault / Anna Wintour / …)
+├── vc-cn.yaml              # 中文 VC(朱啸虎 / 张磊 / 徐新 / 雷军 / 沈南鹏)
+└── vc-en.yaml              # 英文 VC(pmarca / paulg / pthiel / naval / rhoffman)
+# ── 不是 panel,是映射表 ────────────────────────────────────
+└── industries.yaml         # 行业名 → panel 名,被 --industry 查询
 ```
 
-下次 `--panel tech-cn` 直接复用 —— 不需要改 SKILL.md,不需要 deploy。
+SKELETON panel 仍可用于 synthesis-only 速读;等评委 perspective 填齐、删掉
+`status: skeleton` 字段,它就自动升级为可运行。下次 `--panel auto` 直接复用 ——
+不需要改 SKILL.md,不需要 deploy。字段定义见
+[`metric-brand-auditor/panels/README.md`](metric-brand-auditor/panels/README.md)。
 
 ### 4.4 不同品牌调用不同 panel —— 四层优先级
 
@@ -273,9 +296,10 @@ CLI flag (--panel <name>)
 | 场景 | 行为 |
 |---|---|
 | `/mba lenovo` 首次跑 | 用 `default` panel,跑完把 `panel: default` 写进 `reports/lenovo/panel.yaml` |
-| `/mba lenovo --panel vc-en` 首次跑 | 用 `vc-en`,写进 `reports/lenovo/panel.yaml`(品牌从此默认绑定 vc-en) |
-| `/mba lenovo`(已有 v1) | 走 EVOLUTION,从 `reports/lenovo/panel.yaml` 读出绑定的 panel,不重选 |
-| `/mba lenovo --panel consumer-cn`(已有 v1) | EVOLUTION 用新 panel —— 但 Lead 会 GATE 一次告诉你"评委换了,旧 reviews/ 不可直接 diff,会全员重打",等用户确认 |
+| `/mba byd --industry auto` 首次跑 | 经 industries.yaml 解析到 `auto`,写进 `reports/byd/panel.yaml`(品牌从此默认绑定 auto) |
+| `/mba byd`(已有 v1) | 走 EVOLUTION,从 `reports/byd/panel.yaml` 读出绑定的 `auto`,不重选 |
+| `/mba byd --panel security-cn-global`(已有 v1) | EVOLUTION 用新 panel —— 但 Lead 会 GATE 一次告诉你"评委换了,旧 reviews/ 不可直接 diff,会全员重打",等用户确认 |
+| `/mba lenovo --panel <skeleton>` | panel 标了 `status: skeleton` 时,Lead 提示并自动降级为 synthesis-only(跳过 Phase 4) |
 | `/mba lenovo --no-judges` | 跳过 Phase 4,panel 解析也跳过 |
 
 `reports/<brand>/panel.yaml` 长这样:
@@ -303,7 +327,7 @@ overrides:                      # 可选 —— 在 panel 之上的局部调整
 /mba <brand> --panel-drop <slug>  # 在本次运行临时跳过一位评委,不改 panel 文件
 ```
 
-`--panel-add` / `--panel-drop` 走 `overrides`,只影响本次输出,不修改 `panels/<name>.yaml` —— 用来做"这次想加 pmarca 试一下,但还不确定要不要进 tech-cn 常驻"这种探索。
+`--panel-add` / `--panel-drop` 走 `overrides`,只影响本次输出,不修改 `panels/<name>.yaml` —— 用来做"这次想加 pmarca 试一下,但还不确定要不要进 vc-en 常驻"这种探索。
 
 ### 4.6 评委 panel 与品牌之间的耦合面 —— 不要破坏的几条
 
@@ -311,7 +335,7 @@ overrides:                      # 可选 —— 在 panel 之上的局部调整
 
 1. **改了 panel 后不要去改旧 `versions/v{n}_*.md`** —— 那是当时 panel 给出的冻结快照,不该被新评委的分数污染。新 panel 重打分,在 `v{n+1}` 写新版本。
 2. **旧的 `reviews/<judge-slug>.md` 留着** —— 哪怕 panel 里删掉了该 judge,它的历史打分仍在,EVOLUTION 模式可以 diff(`v2 by pmarca` vs `v1 by zhang-yiming`)。
-3. **panel 切换会写进 `versions/v{n+1}` 的 metadata** —— Phase 5 报告头部必须显式列出 `Panel: tech-cn`,不要让读者以为"分数变了"是品牌变了,实际上是评委换了。
+3. **panel 切换会写进 `versions/v{n+1}` 的 metadata** —— Phase 5 报告头部必须显式列出 `Panel: auto`,不要让读者以为"分数变了"是品牌变了,实际上是评委换了。
 4. **判分语言跟随 `judges[*].language`,不要被品牌语种盖住** —— 给中文品牌找 Jobs 打分,他还是用英文,Lead 再翻译进合成报告。
 
 ---
@@ -364,20 +388,23 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 
 ## 七、文件级路标(给读源码的人)
 
-- 想读流水线的人 → `metric-brand-auditor/SKILL.md`(主手册,~600 行)
-- 想看一个报告长啥样 → 跑一次 `/mba <你关注的品牌>`,在 `reports/<slug>/report.html` 生成
+- 想读流水线的人 → `metric-brand-auditor/SKILL.md`(主手册,~1000 行)
+- 想要系统化的设计 / 使用 / 扩展文档 → [`docs/`](docs/)(01-prd → 08-extending,索引见 `docs/README.md`)
+- 想看一个报告长啥样 → [`published/reports/lenovo/report.html`](published/reports/lenovo/) 或 `chengshi-auto`,或自己跑一次 `/mba <品牌>` 在 `reports/<slug>/` 生成
 - 想加一个新维度 → `metric-brand-auditor/references/dimensions.md`
 - 想改评委的打分模板 → `metric-brand-auditor/references/judge-prompt-template.md`
 - 想换 HTML 报告的图表样式 → `metric-brand-auditor/references/html-report-template.md`
-- 想加一个新评委(persona) → 看本文§4.2 的 6 步;模板目录是任意 `*-perspective/`
-- 想存 / 切 / 查 panel → `metric-brand-auditor/panels/` 下加减 yaml,字段定义见本文§4.1
+- 想加一个新评委(persona) → 看本文§4.2 的 6 步 + `metric-brand-auditor/references/perspective-structure-spec.md`(H2 结构规范);模板目录是任意 `*-perspective/`
+- 想存 / 切 / 查 panel → `metric-brand-auditor/panels/`(字段定义见本文§4.1 与 `panels/README.md`),校验用 `python3 scripts/validate_panels.py`
 - 想给某个品牌换一套评委 → `/mba <brand> --panel <name>`(详见本文§4.4)
 - 想理解多代理调研本身怎么写的 → `research/SKILL.md`(被 MBA 复用,也可独立 `/research` 调用)
+- 想把报告发到 mbabrand.com → 见 [`site/README.md`](site/README.md)(Cloudflare Pages + `site/build.sh`)
+- 想知道 CI 校验什么 → `.github/workflows/panel-validation.yml`(panel / 结构 / py_compile / shell / site build)
 
 ## 许可与边界
 
-- Production 人物视角 skill 都基于**公开一手资料**(访谈、文章、播客 transcript),每套 SKILL.md 顶部有明确的 anti-fabrication 红线 —— 不替本人编造未公开内容。
-- 仓库不附任何品牌的样板报告;每次 `/mba <brand>` 跑完的报告归用户所有,不入版本库,需自行管理隐私。
+- Production 人物视角 skill 都基于**公开一手资料**(访谈、文章、播客 transcript),每套 SKILL.md 顶部有明确的 anti-fabrication 红线 + self-conflict 规则 —— 不替本人编造未公开内容;评委评自己强关联的公司 / 产品时默认 `--panel-drop`,保留则只作"创始人自检"不计入中立横评。
+- 运行时报告目录 `metric-brand-auditor/reports/` 默认在 `.gitignore`,跑完的报告归用户所有、不入版本库,需自行管理隐私。仅 `published/reports/<brand>/` 下经人工 review、显式 `git add -f` 的少量样例报告(如 lenovo / chengshi-auto)会公开。
 
 ---
 

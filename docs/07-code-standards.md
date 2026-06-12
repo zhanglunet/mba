@@ -57,16 +57,23 @@ description: |           # 多行,Claude 用此判断激活
 
 ## 2. Perspective skill 必备章节
 
-每个 `*-perspective/SKILL.md` 必须有这 4 个章节:
+**单一事实源**:`metric-brand-auditor/references/perspective-structure-spec.md`。
+`scripts/perspective-tools/check_structure.py` 在 CI 里强制校验,新增 / 修改 perspective 后必须
+本地跑一次让它 exit 0。
 
-1. **frontmatter** + 触发规则
-2. **核心心智模型 / 决策启发式**(≥ 5 条编号项)
-3. **表达 DNA**(怎么说话,带样例,展示 ≥ 3 句"这就是 TA 会说的话")
-4. **Anti-fabrication 红线** —— 必须出现以下任一关键词:
-   - "不要激活"
-   - "不可编造"
-   - "anti-fabrication"
-   - "留白"
+每个 `*-perspective/SKILL.md` 必须有 frontmatter + 触发规则,外加这 5 个 H2 章节(每个允许若干别名):
+
+| 逻辑章节 | 可接受 H2 |
+|---|---|
+| Core Mental Models | `## Core Mental Models` / `## 核心心智模型` |
+| Honest Boundary | `## Honest Boundary` / `## 诚实边界` |
+| Anti-Fabrication | `## Anti-Fabrication Red Lines` / `## Anti-Fabrication 红线` / `## Anti-Fabrication Guard` |
+| Self-Conflict Rule | `## Self-Conflict Rule` |
+| Sources / Appendix | `## Sources` / `## 附录:调研来源` |
+
+> 三种历史风格(默认 panel 全中文 H2 / auto panel 中英混排 / security panel 全英式 H2)都合规,
+> spec 用"逻辑章节 + 别名"统一它们。Identity Card / Decision Heuristics / Expression DNA /
+> MBA Five-Lens Scoring Bias 等 H2 推荐但不强制。
 
 `references/research/` 下的 6 路调研文件命名固定:
 
@@ -118,15 +125,15 @@ dimension 文件名 `dimension_<n>_<slug>.md`:
 
 ### 3.3 judge-name
 
-5 内置评委 slug 固定:
+judge slug = `<slug>-perspective/` 目录名去掉 `-perspective` 后缀。当前 15 个内置 slug,按所属
+可运行 panel 分组:
 
-- `fusheng`
-- `jobs`
-- `likejia`
-- `wu-jundong`
-- `zhang-yiming`
+- **default**:`fusheng` / `jobs` / `likejia` / `wu-jundong` / `zhang-yiming`
+- **auto**:`musk` / `leijun` / `lixiang` / `hexiaopeng` / `libin`
+- **security-cn-global**:`zhouhongyi` / `zhangmingzheng` / `renzhengfei` / `jensenhuang` / `satyanadella`(+ 复用 `musk`)
 
-自定义评委(MCP 化后):`^[a-z][a-z0-9-]{1,30}$`,不要和内置同名。
+panel yaml 里的 `slug` 必须与目录名前缀严格对齐(`fusheng` 不是 `fusheng-perspective` / `Fusheng` /
+`fu-sheng`)。新评委:`^[a-z][a-z0-9-]{1,30}$`,不要和内置同名。
 
 ### 3.4 audit-id(MCP 化后)
 
