@@ -99,12 +99,18 @@
   .deck { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
   .slide {
     position: absolute; inset: 0;
-    padding: 88px 8vw 96px;
+    padding: clamp(60px, 9vh, 88px) 8vw clamp(68px, 10vh, 96px);
     display: flex; flex-direction: column; justify-content: center;
     opacity: 0;
     visibility: hidden;
     transform: translateY(12px);
     transition: opacity 380ms ease, transform 420ms cubic-bezier(0.2,0.7,0.2,1);
+    overflow: hidden;
+  }
+  .slide-inner {
+    flex-shrink: 0;
+    transform-origin: center center;
+    will-change: transform;
   }
   .slide.active {
     opacity: 1;
@@ -1317,6 +1323,46 @@ judges:
   const toc   = document.getElementById('toc');
 
   pnTot.textContent = String(total).padStart(2, '0');
+
+  // Wrap each slide's children in a .slide-inner box we can scale
+  slides.forEach(s => {
+    if (s.querySelector(':scope > .slide-inner')) return;
+    const inner = document.createElement('div');
+    inner.className = 'slide-inner';
+    while (s.firstChild) inner.appendChild(s.firstChild);
+    s.appendChild(inner);
+  });
+
+  // Auto-fit: if a slide's content is taller than its content box, scale it down to fit one screen.
+  function autoFit() {
+    slides.forEach(s => {
+      const inner = s.querySelector(':scope > .slide-inner');
+      if (!inner) return;
+      inner.style.transform = '';
+      const cs = getComputedStyle(s);
+      const padT = parseFloat(cs.paddingTop)  || 0;
+      const padB = parseFloat(cs.paddingBottom) || 0;
+      const avail = s.clientHeight - padT - padB;
+      const natural = inner.scrollHeight;
+      if (avail > 0 && natural > avail) {
+        const scale = Math.max(0.5, avail / natural);
+        inner.style.transform = 'scale(' + scale.toFixed(4) + ')';
+      }
+    });
+  }
+
+  let _fitTimer = 0;
+  function scheduleFit() {
+    clearTimeout(_fitTimer);
+    _fitTimer = setTimeout(autoFit, 120);
+  }
+  window.addEventListener('resize', scheduleFit);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(autoFit);
+  }
+  requestAnimationFrame(autoFit);
+  // One more pass after late layout (images, web fonts)
+  window.addEventListener('load', autoFit);
 
   // Build TOC
   slides.forEach((s, i) => {
