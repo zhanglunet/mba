@@ -1,0 +1,1423 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MBA — Metric Brand Auditor · Presentation</title>
+<meta name="description" content="Metric Brand Auditor: 把品牌影响力做成可调研、可打分、可比较、可复盘的智能资产。" />
+<style>
+  :root {
+    --bg:        #f5efe6;
+    --bg-deep:   #ece4d4;
+    --ink:       #1a1a1a;
+    --ink-2:     #3a3733;
+    --ink-mute:  #7a766f;
+    --line:      #d7cdbb;
+    --line-2:    #c5b89f;
+    --accent:    #d94f1e;
+    --accent-2:  #2c5e3f;
+    --accent-3:  #3a5a8a;
+    --warn:      #b4831e;
+    --paper:     #fbf7ef;
+    --mono:      ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --serif:     "Source Serif 4", "Source Serif Pro", "Noto Serif SC", "Songti SC",
+                  "Iowan Old Style", "Apple Garamond", "Baskerville", Georgia, serif;
+    --sans:     -apple-system, BlinkMacSystemFont, "Inter", "PingFang SC",
+                 "Hiragino Sans GB", "Helvetica Neue", "Microsoft YaHei", system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+
+  /* ---------- chrome ---------- */
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: 44px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 28px;
+    z-index: 50;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    pointer-events: none;
+  }
+  .topbar .brand { color: var(--ink); font-weight: 600; }
+  .topbar .brand .dot {
+    display: inline-block; width: 8px; height: 8px;
+    background: var(--accent); border-radius: 50%;
+    transform: translateY(-1px); margin-right: 8px;
+  }
+  .progress {
+    position: fixed; top: 0; left: 0;
+    height: 2px; background: var(--accent);
+    width: 0%;
+    transition: width 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    z-index: 60;
+  }
+
+  .botbar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    height: 56px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 28px;
+    z-index: 50;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--ink-mute);
+    pointer-events: none;
+  }
+  .botbar .nav-hint { opacity: 0.7; }
+  .botbar .nav-hint kbd {
+    font-family: var(--mono);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 10px;
+    color: var(--ink-2);
+    margin: 0 2px;
+  }
+  .pageno {
+    font-feature-settings: "tnum";
+    color: var(--ink);
+  }
+  .pageno .sep { color: var(--line-2); margin: 0 6px; }
+
+  /* ---------- deck ---------- */
+  .deck { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+  .slide {
+    position: absolute; inset: 0;
+    padding: 88px 8vw 96px;
+    display: flex; flex-direction: column; justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 380ms ease, transform 420ms cubic-bezier(0.2,0.7,0.2,1);
+  }
+  .slide.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .slide.prev { transform: translateY(-12px); }
+
+  /* ---------- typography ---------- */
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .eyebrow .bar {
+    width: 28px; height: 1px; background: var(--accent);
+    display: inline-block;
+  }
+  h1.display {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(48px, 7.6vw, 116px);
+    line-height: 0.98;
+    letter-spacing: -0.018em;
+    margin: 0 0 28px;
+    color: var(--ink);
+  }
+  h1.display em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  h2.title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(34px, 4.6vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.012em;
+    margin: 0 0 28px;
+    color: var(--ink);
+    max-width: 18ch;
+  }
+  h2.title em { font-style: italic; color: var(--accent); font-weight: 500; }
+  h3.sub {
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: clamp(15px, 1.2vw, 18px);
+    letter-spacing: 0;
+    margin: 0 0 8px;
+    color: var(--ink-mute);
+  }
+  .lede {
+    font-family: var(--serif);
+    font-size: clamp(20px, 1.9vw, 28px);
+    line-height: 1.45;
+    color: var(--ink-2);
+    max-width: 32ch;
+  }
+  .body {
+    font-size: clamp(15px, 1.15vw, 17px);
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 56ch;
+  }
+  .body strong { color: var(--ink); font-weight: 600; }
+  .small {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-mute);
+    letter-spacing: 0.06em;
+  }
+
+  /* ---------- helpers ---------- */
+  .grid { display: grid; gap: 24px; }
+  .cols-2 { grid-template-columns: 1fr 1fr; }
+  .cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .cols-5 { grid-template-columns: repeat(5, 1fr); }
+  .cols-7 { grid-template-columns: repeat(7, 1fr); }
+  .cluster { display: flex; flex-wrap: wrap; gap: 14px; }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 22px;
+  }
+  .card .num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.16em;
+    margin-bottom: 12px;
+  }
+  .card h4 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(20px, 1.5vw, 24px);
+    margin: 0 0 10px;
+    line-height: 1.2;
+  }
+  .card p { font-size: 14px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+
+  /* section divider */
+  .slide.section {
+    background: var(--bg-deep);
+    padding-left: 8vw;
+  }
+  .section .marker {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+  .section .section-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(110px, 18vw, 280px);
+    line-height: 0.9;
+    color: var(--ink);
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+  .section .section-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(36px, 4.4vw, 60px);
+    line-height: 1.05;
+    margin: 12px 0 0;
+    color: var(--ink);
+  }
+  .section .section-note {
+    margin-top: 24px;
+    max-width: 36ch;
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.55;
+    color: var(--ink-mute);
+  }
+
+  /* pipeline */
+  .pipeline {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .phase {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 16px;
+    position: relative;
+    min-height: 200px;
+    display: flex; flex-direction: column;
+  }
+  .phase .pn {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.18em;
+    margin-bottom: 10px;
+  }
+  .phase h5 {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0 0 8px;
+    line-height: 1.2;
+  }
+  .phase p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--ink-2);
+    margin: 0;
+  }
+  .phase .gate {
+    margin-top: auto;
+    padding-top: 10px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--warn);
+    text-transform: uppercase;
+  }
+
+  /* matrix */
+  .matrix {
+    display: grid;
+    grid-template-columns: 220px repeat(5, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    background: var(--paper);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 13px;
+  }
+  .matrix .cell {
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 12px 14px;
+    line-height: 1.35;
+  }
+  .matrix .head {
+    background: var(--bg-deep);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--ink);
+    text-transform: uppercase;
+  }
+  .matrix .row-head {
+    background: var(--bg-deep);
+    font-family: var(--serif);
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .matrix .row-head .n {
+    font-family: var(--mono);
+    color: var(--accent);
+    font-size: 11px;
+    margin-right: 6px;
+    letter-spacing: 0.08em;
+  }
+
+  /* judges */
+  .judges {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-top: 16px;
+  }
+  .judge {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 16px;
+    text-align: center;
+  }
+  .judge .avatar {
+    width: 88px; height: 88px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: var(--bg-deep);
+    border: 1px solid var(--line-2);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    font-size: 36px;
+  }
+  .judge .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .judge .name-cn {
+    font-family: var(--serif);
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .judge .name-en {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    margin: 4px 0 12px;
+    letter-spacing: 0.06em;
+  }
+  .judge .quote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--ink-2);
+    margin: 0;
+    min-height: 70px;
+  }
+  .judge .tag {
+    margin-top: 10px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+
+  /* heatmap mock */
+  .heatmap {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px;
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+  .heatmap table { border-collapse: collapse; width: 100%; }
+  .heatmap th, .heatmap td { padding: 8px 6px; text-align: center; }
+  .heatmap th {
+    font-weight: 500;
+    color: var(--ink-mute);
+    border-bottom: 1px solid var(--line);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+  .heatmap td.label {
+    text-align: left;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink);
+  }
+  .heatmap .c {
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    width: 36px; height: 30px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .heatmap .sigma {
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    width: 46px; height: 28px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .heatmap .row-hi td.label::after {
+    content: "  ←  共识";
+    color: var(--accent-2);
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+  .heatmap .row-tear td.label::after {
+    content: "  ←  撕扯";
+    color: var(--accent);
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
+  /* repo layers */
+  .layers {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 24px;
+  }
+  .layer-list {
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .layer {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .layer .ln {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.16em;
+    margin-bottom: 4px;
+  }
+  .layer h5 {
+    font-family: var(--serif);
+    font-size: 18px;
+    margin: 0 0 4px;
+    font-weight: 500;
+  }
+  .layer p { font-size: 13px; color: var(--ink-2); margin: 0; line-height: 1.5; }
+  .layer:nth-child(2) { border-left-color: var(--accent-3); }
+  .layer:nth-child(2) .ln, .layer:nth-child(2) h5 + p strong { color: var(--accent-3); }
+  .layer:nth-child(3) { border-left-color: var(--accent-2); }
+  .layer:nth-child(3) .ln { color: var(--accent-2); }
+  .layer:nth-child(4) { border-left-color: var(--warn); }
+  .layer:nth-child(4) .ln { color: var(--warn); }
+
+  pre.tree {
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 0;
+    overflow: auto;
+    white-space: pre;
+  }
+  pre.tree .c-accent { color: var(--accent); font-weight: 600; }
+  pre.tree .c-blue   { color: var(--accent-3); font-weight: 600; }
+  pre.tree .c-green  { color: var(--accent-2); font-weight: 600; }
+  pre.tree .c-mute   { color: var(--ink-mute); }
+
+  /* big stat */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 8px; }
+  .stat {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px 24px;
+  }
+  .stat .big {
+    font-family: var(--serif);
+    font-size: clamp(54px, 6vw, 88px);
+    font-style: italic;
+    line-height: 1;
+    color: var(--accent);
+    margin: 0;
+  }
+  .stat .big.alt { color: var(--accent-3); }
+  .stat .big.alt2 { color: var(--accent-2); }
+  .stat .lbl {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    margin: 16px 0 8px;
+  }
+  .stat .desc { font-size: 14px; line-height: 1.5; color: var(--ink-2); margin: 0; }
+
+  /* usecase rows */
+  .use-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 28px;
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+  .use-row:last-child { border-bottom: 1px solid var(--line); }
+  .use-row .who {
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .use-row .who .tag {
+    display: block;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.14em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  .use-row .pain {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+  .use-row .give {
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .use-row .give strong { color: var(--accent); font-weight: 600; }
+
+  /* commercialization */
+  .layers-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 8px; }
+  .layer-3 {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 22px;
+    position: relative;
+  }
+  .layer-3 .pnum {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 60px;
+    line-height: 1;
+    color: var(--bg-deep);
+    position: absolute;
+    top: 12px; right: 18px;
+  }
+  .layer-3 .pn-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .layer-3 h5 {
+    font-family: var(--serif);
+    font-size: 22px;
+    margin: 0 0 12px;
+    font-weight: 500;
+  }
+  .layer-3 p { font-size: 14px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+  .layer-3:nth-child(2) .pn-tag { color: var(--accent-3); }
+  .layer-3:nth-child(3) .pn-tag { color: var(--accent-2); }
+
+  /* cover */
+  .cover-meta {
+    display: flex; gap: 28px; flex-wrap: wrap;
+    margin-top: 36px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-mute);
+    letter-spacing: 0.08em;
+  }
+  .cover-meta span strong {
+    color: var(--ink);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .cover-mark {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  /* closing */
+  .closing .quote {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.6vw, 48px);
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 24px;
+    max-width: 22ch;
+  }
+  .closing .quote em { font-style: italic; color: var(--accent); }
+  .closing .sign {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-mute);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  /* TOC dots */
+  .toc {
+    position: fixed;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 7px;
+    z-index: 40;
+  }
+  .toc .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--line-2);
+    cursor: pointer;
+    transition: all 220ms ease;
+    border: 0;
+    padding: 0;
+  }
+  .toc .dot.active {
+    background: var(--accent);
+    transform: scale(1.5);
+  }
+  .toc .dot.section { background: var(--ink-mute); }
+  .toc .dot:hover { background: var(--ink); }
+
+  /* responsive */
+  @media (max-width: 960px) {
+    .slide { padding: 80px 6vw 86px; }
+    .pipeline { grid-template-columns: repeat(2, 1fr); }
+    .matrix { grid-template-columns: 150px repeat(5, 1fr); font-size: 11px; }
+    .judges { grid-template-columns: repeat(2, 1fr); }
+    .stats, .layers-3, .cols-3, .cols-4 { grid-template-columns: 1fr; }
+    .layers { grid-template-columns: 1fr; }
+    .use-row { grid-template-columns: 1fr; gap: 10px; }
+    .toc { display: none; }
+  }
+
+  /* print */
+  @media print {
+    body, html, .deck { overflow: visible; height: auto; }
+    .topbar, .botbar, .progress, .toc { display: none; }
+    .slide {
+      position: relative; inset: auto;
+      opacity: 1; visibility: visible; transform: none;
+      page-break-after: always;
+      min-height: 100vh;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="topbar">
+  <div class="brand"><span class="dot"></span>MBA · Metric Brand Auditor</div>
+  <div class="meta">mbabrand.com</div>
+</div>
+
+<nav class="toc" id="toc" aria-label="Slide navigation"></nav>
+
+<main class="deck" id="deck">
+
+  <!-- 1 · Cover -->
+  <section class="slide active" data-title="Cover">
+    <div class="cover-mark">A Presentation · 2026</div>
+    <h1 class="display">Metric Brand <em>Auditor</em>.</h1>
+    <p class="lede">把品牌影响力做成可调研、可打分、可比较、可复盘的<strong style="color:var(--ink)">智能资产</strong>。</p>
+    <div class="cover-meta">
+      <span>Site / <strong>mbabrand.com</strong></span>
+      <span>Skill / <strong>/mba &lt;brand&gt;</strong></span>
+      <span>Team / <strong>Jason · 清风 · John</strong></span>
+      <span>Stack / <strong>Claude Opus 4.7</strong></span>
+    </div>
+  </section>
+
+  <!-- 2 · One-sentence -->
+  <section class="slide" data-title="What is MBA">
+    <div class="eyebrow"><span class="bar"></span>一句话</div>
+    <h2 class="title">MBA 是 AI 时代的<br/><em>品牌影响力审计协议</em>。</h2>
+    <p class="body">
+      不是写一份品牌报告 —— 而是把一家公司在 Agent 世界里的影响力，
+      拆成 <strong>7 个调研维度</strong> × <strong>5 个打分镜头</strong>，
+      由 Lead 编排、子 agent 并行调研、<strong>N 位人物评委独立打分</strong>，
+      输出 Markdown + 自包含 HTML 的版本化报告。
+    </p>
+  </section>
+
+  <!-- 3 · Section 01 -->
+  <section class="slide section" data-section="01">
+    <div class="marker">— Chapter</div>
+    <p class="section-num">01</p>
+    <h2 class="section-title">The <em style="font-style:italic;color:var(--accent)">Reframe</em>.</h2>
+    <p class="section-note">品牌正在从"人类心智资产"变成"智能体世界里可识别、可比较、可调用的信号资产"。</p>
+  </section>
+
+  <!-- 4 · The reframe -->
+  <section class="slide" data-title="Reframe">
+    <div class="eyebrow"><span class="bar"></span>升维</div>
+    <h2 class="title">过去品牌影响 <em>人</em>。<br/>未来还要影响 <em>Agent</em>。</h2>
+    <div class="grid cols-2" style="margin-top:24px; gap:48px;">
+      <div>
+        <h3 class="sub">人类看到的</h3>
+        <p class="body">故事、审美、身份、文化符号。slogan / logo / PR / 社媒声量。</p>
+      </div>
+      <div>
+        <h3 class="sub">Agent 看到的</h3>
+        <p class="body">
+          稳定叙事、清晰品类、高质量来源反复引用、竞品对比中的独特位置、
+          真实用户与真实增长。<strong>结构化信号</strong>。
+        </p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:36px">
+      投资 Agent 筛公司 · 采购 Agent 推荐供应商 · 招聘 Agent 理解雇主品牌 · 消费 Agent 比较产品 · 战略 Agent 持续追踪格局
+    </p>
+  </section>
+
+  <!-- 5 · Section 02 -->
+  <section class="slide section" data-section="02">
+    <div class="marker">— Chapter</div>
+    <p class="section-num">02</p>
+    <h2 class="section-title">The <em>Problem</em>.</h2>
+    <p class="section-note">财务有审计、产品有数据分析、销售有 CRM、舆情有 monitoring。<strong style="color:var(--ink)">品牌影响力没有审计协议。</strong></p>
+  </section>
+
+  <!-- 6 · Three flaws -->
+  <section class="slide" data-title="Three flaws">
+    <div class="eyebrow"><span class="bar"></span>三个顽疾</div>
+    <h2 class="title">传统报告的<em>三条断裂</em>。</h2>
+    <div class="stats" style="margin-top:28px">
+      <div class="stat">
+        <p class="big">01</p>
+        <p class="lbl">single-thread</p>
+        <p class="desc"><strong style="color:var(--ink)">单线程单视角。</strong>一个分析师写一份报告，容易陷入自家叙事或个人偏好。</p>
+      </div>
+      <div class="stat">
+        <p class="big alt">02</p>
+        <p class="lbl">non-replayable</p>
+        <p class="desc"><strong style="color:var(--ink)">不可复盘。</strong>报告一次性，半年后再看，不知道哪些结论已经过时。</p>
+      </div>
+      <div class="stat">
+        <p class="big alt2">03</p>
+        <p class="lbl">drifting metric</p>
+        <p class="desc"><strong style="color:var(--ink)">口径漂移。</strong>每个分析师有自己的尺度，跨品牌、跨时间不可比。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · Section 03 -->
+  <section class="slide section" data-section="03">
+    <div class="marker">— Chapter</div>
+    <p class="section-num">03</p>
+    <h2 class="section-title">The <em>Pipeline</em>.</h2>
+    <p class="section-note">Lead 编排 · 子 agent 并行调研 · 人物评委独立打分 · 版本化报告滚动覆盖。</p>
+  </section>
+
+  <!-- 8 · Five-phase pipeline -->
+  <section class="slide" data-title="Pipeline">
+    <div class="eyebrow"><span class="bar"></span>五阶段流水线</div>
+    <h2 class="title">六个 Phase。一条流水线。</h2>
+    <div class="pipeline">
+      <div class="phase">
+        <div class="pn">PHASE 0</div>
+        <h5>Router</h5>
+        <p>Lead 检查 reports/&lt;brand&gt;/report.md 是否存在 → FRESH 或 EVOLUTION 模式。</p>
+      </div>
+      <div class="phase">
+        <div class="pn">PHASE 1</div>
+        <h5>Discovery</h5>
+        <p>Lead 起草 PRD：定位 / 7 维度 / 评委 panel / 是否走云浏览器。</p>
+        <div class="gate">Gate 1 · 用户确认</div>
+      </div>
+      <div class="phase">
+        <div class="pn">PHASE 2</div>
+        <h5>Parallel Search</h5>
+        <p>N 个 sub-agent 并行调研，每维度 1 个 + 可选 1 个 Wuying 云浏览器 leg。</p>
+      </div>
+      <div class="phase">
+        <div class="pn">PHASE 3</div>
+        <h5>Synthesis</h5>
+        <p>Lead 读所有 _raw/ → synthesis.md：杠杆地图、脆弱边缘、跨维度矛盾。</p>
+      </div>
+      <div class="phase">
+        <div class="pn">PHASE 4</div>
+        <h5>N-Judge Panel</h5>
+        <p>N 位评委各自 LOAD perspective skill，5 镜头 1-10 分独立打分。</p>
+      </div>
+      <div class="phase">
+        <div class="pn">PHASE 5</div>
+        <h5>Lead Merge</h5>
+        <p>合并 synthesis + reviews → report.md / report.html / versions/v{n}。</p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:24px">
+      EVOLUTION 模式跳过 PRD 起草，改为 diff plan：只重跑变了的维度 · 版本号 +1
+    </p>
+  </section>
+
+  <!-- 9 · 7×5 matrix -->
+  <section class="slide" data-title="Matrix">
+    <div class="eyebrow"><span class="bar"></span>坐标系</div>
+    <h2 class="title">7 维度 × 5 镜头。<br/>跨品牌、跨时间<em>同一把尺</em>。</h2>
+    <div class="matrix" style="margin-top:18px">
+      <div class="cell head">维度 ＼ 镜头</div>
+      <div class="cell head">原创性<br/><span style="color:var(--ink-mute)">Origin</span></div>
+      <div class="cell head">范畴命名<br/><span style="color:var(--ink-mute)">Category</span></div>
+      <div class="cell head">杠杆质量<br/><span style="color:var(--ink-mute)">Leverage</span></div>
+      <div class="cell head">身份一致性<br/><span style="color:var(--ink-mute)">Identity</span></div>
+      <div class="cell head">真实信号<br/><span style="color:var(--ink-mute)">Signal</span></div>
+
+      <div class="cell row-head"><span class="n">01</span>创始 &amp; 起源叙事</div>
+      <div class="cell">✦</div><div class="cell">✦</div><div class="cell">·</div><div class="cell">·</div><div class="cell">·</div>
+
+      <div class="cell row-head"><span class="n">02</span>产品 &amp; 定位</div>
+      <div class="cell">·</div><div class="cell">✦</div><div class="cell">·</div><div class="cell">✦</div><div class="cell">·</div>
+
+      <div class="cell row-head"><span class="n">03</span>分发 &amp; 渠道</div>
+      <div class="cell">·</div><div class="cell">·</div><div class="cell">✦</div><div class="cell">·</div><div class="cell">✦</div>
+
+      <div class="cell row-head"><span class="n">04</span>社区 &amp; PR</div>
+      <div class="cell">✦</div><div class="cell">·</div><div class="cell">·</div><div class="cell">·</div><div class="cell">✦</div>
+
+      <div class="cell row-head"><span class="n">05</span>视觉 &amp; 语言</div>
+      <div class="cell">·</div><div class="cell">✦</div><div class="cell">·</div><div class="cell">✦</div><div class="cell">·</div>
+
+      <div class="cell row-head"><span class="n">06</span>竞品 &amp; 格局</div>
+      <div class="cell">·</div><div class="cell">✦</div><div class="cell">✦</div><div class="cell">·</div><div class="cell">·</div>
+
+      <div class="cell row-head"><span class="n">07</span>接收 &amp; 情绪</div>
+      <div class="cell">·</div><div class="cell">·</div><div class="cell">✦</div><div class="cell">·</div><div class="cell">✦</div>
+    </div>
+    <p class="small" style="margin-top:14px">
+      维度是<strong style="color:var(--ink)">输入</strong> · 镜头是<strong style="color:var(--ink)">尺子</strong> · 通过 _raw/synthesis.md 这一中间层耦合
+    </p>
+  </section>
+
+  <!-- 10 · Judges -->
+  <section class="slide" data-title="Judges">
+    <div class="eyebrow"><span class="bar"></span>默认评委 panel</div>
+    <h2 class="title">5 位人物视角，<em>互不可见</em>。</h2>
+    <div class="judges">
+      <div class="judge">
+        <div class="avatar"><img src="/assets/judges/%E5%82%85%E7%9B%9B.jpg" alt="傅盛" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'🐆'}))"/></div>
+        <p class="name-cn">傅盛</p>
+        <p class="name-en">Fu Sheng</p>
+        <p class="quote">"卷不动的时候不是再卷一点，是换一个不卷的池子。"</p>
+        <div class="tag">猎豹 · OpenClaw</div>
+      </div>
+      <div class="judge">
+        <div class="avatar"><img src="/assets/judges/jobs.jpg" alt="Steve Jobs" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'🍎'}))"/></div>
+        <p class="name-cn">乔布斯</p>
+        <p class="name-en">Steve Jobs</p>
+        <p class="quote">"Focus is about saying no — to a thousand good ideas."</p>
+        <div class="tag">Apple · NeXT · Pixar</div>
+      </div>
+      <div class="judge">
+        <div class="avatar"><img src="/assets/judges/%E6%9D%8E%E5%8F%AF%E4%BD%B3.jpg" alt="李可佳" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'🦞'}))"/></div>
+        <p class="name-cn">李可佳</p>
+        <p class="name-en">Ethan Li</p>
+        <p class="quote">"现成词能装下就没看到本质 —— 起一个新名字。"</p>
+        <div class="tag">BotLearn · Aibrary</div>
+      </div>
+      <div class="judge">
+        <div class="avatar"><img src="/assets/judges/%E5%90%B4%E4%BF%8A%E4%B8%9C.jpg" alt="吴俊东" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'📚'}))"/></div>
+        <p class="name-cn">吴俊东</p>
+        <p class="name-en">Frank Wu</p>
+        <p class="quote">"杠杆 = 介质 × 规模。教育是 becoming。"</p>
+        <div class="tag">Aibrary · 前 TAL</div>
+      </div>
+      <div class="judge">
+        <div class="avatar"><img src="/assets/judges/%E5%BC%A0%E4%B8%80%E9%B8%A3.jpg" alt="张一鸣" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'🐘'}))"/></div>
+        <p class="name-cn">张一鸣</p>
+        <p class="name-en">Zhang Yiming</p>
+        <p class="quote">"Context, not control. 务实浪漫，延迟满足。"</p>
+        <div class="tag">字节跳动</div>
+      </div>
+    </div>
+    <p class="small" style="margin-top:22px">
+      Panel 由 yaml 配置 / 11 个内置 panel：default · tech-cn · vc-en · auto · edu-cn · consumer-cn · cross-border · luxury-en · security-cn-global · ai-app-cn · vc-cn
+    </p>
+  </section>
+
+  <!-- 11 · Evolution mode -->
+  <section class="slide" data-title="Evolution">
+    <div class="eyebrow"><span class="bar"></span>演化模式</div>
+    <h2 class="title">每个品牌一条<em>时间序列</em>。</h2>
+    <div class="grid cols-2" style="gap:40px; margin-top:14px">
+      <div>
+        <h3 class="sub">FRESH 模式</h3>
+        <p class="body">没有报告时 —— Lead 走完五阶段全流程，落 <strong>v1</strong> 不可变快照。</p>
+        <pre class="tree" style="margin-top:14px">
+reports/openclaw/
+├── <span class="c-accent">report.md</span>          ← 滚动覆盖
+├── <span class="c-accent">report.html</span>        ← 自包含 HTML
+├── <span class="c-blue">panel.yaml</span>         ← 锁定哪套评委
+├── <span class="c-green">versions/</span>
+│   └── v1_2026-06-12.{md,html}
+├── _raw/                ← 过程文件
+└── reviews/             ← 评委独立打分卡
+        </pre>
+      </div>
+      <div>
+        <h3 class="sub">EVOLUTION 模式</h3>
+        <p class="body">
+          已有报告时 —— Lead 跑 <strong>diff plan</strong>：自动识别哪些维度可能变了，
+          只对变了的维度 delta 调研、让评委只对变了的维度重打分，
+          写入 <strong>v{n+1}</strong>。
+        </p>
+        <pre class="tree" style="margin-top:14px">
+versions/
+├── v1_2026-04-10.{md,html}  ← <span class="c-mute">初版</span>
+├── v2_2026-05-09.{md,html}  ← <span class="c-mute">delta on dim 3,7</span>
+└── v3_2026-06-12.{md,html}  ← <span class="c-mute">delta on dim 1,4</span>
+        </pre>
+      </div>
+    </div>
+    <p class="small" style="margin-top:20px">
+      真正有价值的不是"今天几分"，而是"过去 90 / 180 天发生了什么结构性变化"
+    </p>
+  </section>
+
+  <!-- 12 · Section 04 -->
+  <section class="slide section" data-section="04">
+    <div class="marker">— Chapter</div>
+    <p class="section-num">04</p>
+    <h2 class="section-title">The <em>Output</em>.</h2>
+    <p class="section-note">一份 Markdown 给 LLM · 一份自包含 HTML 给人看 · 一份 _raw/ 给下一次 EVOLUTION。</p>
+  </section>
+
+  <!-- 13 · Report anatomy -->
+  <section class="slide" data-title="Report anatomy">
+    <div class="eyebrow"><span class="bar"></span>报告解剖学</div>
+    <h2 class="title">HTML 报告的 <em>10 个区块</em>。</h2>
+    <div class="grid cols-2" style="gap:18px; margin-top:8px">
+      <div class="card">
+        <div class="num">01 · HERO</div>
+        <h4>品牌名 + 版本 badge</h4>
+        <p>mode 标签 + 一句 TL;DR；不堆图。</p>
+      </div>
+      <div class="card">
+        <div class="num">02 · SCORE RADAR</div>
+        <h4>5 镜头雷达图</h4>
+        <p>Chart.js radar，每评委一彩色多边形，共识区一眼可见。</p>
+      </div>
+      <div class="card">
+        <div class="num">03 · DISSENT HEATMAP</div>
+        <h4>5 × 5 异议热力图 + σ 列</h4>
+        <p>低 σ 行 = 共识、高 σ = 撕扯，扫一眼最高价值的 surface。</p>
+      </div>
+      <div class="card">
+        <div class="num">04 · INFLUENCE FLOW</div>
+        <h4>影响力构造图</h4>
+        <p>Mermaid flowchart：维度做源 → 放大器 → 可观察表面，边标 leverage 假设。</p>
+      </div>
+      <div class="card">
+        <div class="num">05 · POSITIONING QUADRANT</div>
+        <h4>品牌定位象限</h4>
+        <p>Lead 选两条轴，品牌 + 3-5 竞品定位，Mermaid quadrantChart。</p>
+      </div>
+      <div class="card">
+        <div class="num">06 · JUDGE CARDS</div>
+        <h4>N 张评委卡</h4>
+        <p>portrait + verdict + 金句 + 5 镜头分数行 + 卡片边框按总分四分位染色。</p>
+      </div>
+      <div class="card">
+        <div class="num">07 · BRAND MINDMAP</div>
+        <h4>品牌精髓脑图</h4>
+        <p>品牌为根 · 7 维度为枝 · 每枝顶 2-3 finding。</p>
+      </div>
+      <div class="card">
+        <div class="num">08 · ACTION RECS</div>
+        <h4>90 天行动建议</h4>
+        <p>编号 + leverage badge（high/med/low），按杠杆排序。</p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:14px">
+      系统字体 · 离线可读 · prefers-color-scheme 自动深色 · @media print 友好 · 最大宽度 960px 抗"AI 无脑全宽"
+    </p>
+  </section>
+
+  <!-- 14 · Heatmap detail -->
+  <section class="slide" data-title="Dissent heatmap">
+    <div class="eyebrow"><span class="bar"></span>最高价值的扫一眼界面</div>
+    <h2 class="title">异议热力图<br/>—— <em>分歧才是 outsider 视角真正暴露真相的地方</em>。</h2>
+    <div class="heatmap" style="margin-top:14px">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>傅盛</th><th>Jobs</th><th>李可佳</th><th>吴俊东</th><th>张一鸣</th>
+            <th style="color:var(--ink); font-weight:600">σ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-hi">
+            <td class="label">Origin</td>
+            <td><span class="c" style="background:#7ba374">7</span></td>
+            <td><span class="c" style="background:#a8a55a">6</span></td>
+            <td><span class="c" style="background:#5a9e6f">8</span></td>
+            <td><span class="c" style="background:#7ba374">7</span></td>
+            <td><span class="c" style="background:#a8a55a">6</span></td>
+            <td><span class="sigma" style="background:#f0e8d4">0.7</span></td>
+          </tr>
+          <tr class="row-tear">
+            <td class="label">Category</td>
+            <td><span class="c" style="background:#3a8a55">10</span></td>
+            <td><span class="c" style="background:#d65a2e">4</span></td>
+            <td><span class="c" style="background:#4a945f">9</span></td>
+            <td><span class="c" style="background:#7ba374">7</span></td>
+            <td><span class="c" style="background:#c08838">5</span></td>
+            <td><span class="sigma" style="background:#e6b89a">2.3</span></td>
+          </tr>
+          <tr>
+            <td class="label">Leverage</td>
+            <td><span class="c" style="background:#a8a55a">6</span></td>
+            <td><span class="c" style="background:#c08838">5</span></td>
+            <td><span class="c" style="background:#a8a55a">6</span></td>
+            <td><span class="c" style="background:#c08838">5</span></td>
+            <td><span class="c" style="background:#a8a55a">6</span></td>
+            <td><span class="sigma" style="background:#f0e8d4">0.5</span></td>
+          </tr>
+          <tr>
+            <td class="label">Identity</td>
+            <td><span class="c" style="background:#d65a2e">4</span></td>
+            <td><span class="c" style="background:#4a945f">9</span></td>
+            <td><span class="c" style="background:#a8a55a">6</span></td>
+            <td><span class="c" style="background:#c08838">5</span></td>
+            <td><span class="c" style="background:#c08838">5</span></td>
+            <td><span class="sigma" style="background:#ecd6c0">1.7</span></td>
+          </tr>
+          <tr>
+            <td class="label">Signal</td>
+            <td><span class="c" style="background:#5a9e6f">8</span></td>
+            <td><span class="c" style="background:#c08838">5</span></td>
+            <td><span class="c" style="background:#4a945f">9</span></td>
+            <td><span class="c" style="background:#7ba374">7</span></td>
+            <td><span class="c" style="background:#7ba374">7</span></td>
+            <td><span class="sigma" style="background:#eedccb">1.4</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:20px">
+      <strong style="color:var(--ink)">读图法：</strong>扫 σ 列 → 找 σ ≥ 2 的行 → 这行有故事 → 点开评委卡片看 quote
+    </p>
+  </section>
+
+  <!-- 15 · Section 05 -->
+  <section class="slide section" data-section="05">
+    <div class="marker">— Chapter</div>
+    <p class="section-num">05</p>
+    <h2 class="section-title">The <em>Stack</em>.</h2>
+    <p class="section-note">没有 build。改 markdown 即生效。让贡献门槛降到"会改 markdown 就行"。</p>
+  </section>
+
+  <!-- 16 · Repo layout -->
+  <section class="slide" data-title="Repo">
+    <div class="eyebrow"><span class="bar"></span>仓库分层</div>
+    <h2 class="title">四层分工，<em>自顶向下，无环</em>。</h2>
+    <div class="layers" style="margin-top:14px">
+      <div class="layer-list">
+        <div class="layer">
+          <div class="ln">L1 · ORCHESTRATION</div>
+          <h5>metric-brand-auditor/</h5>
+          <p>主 SKILL · Lead 的工作手册 · references · panels · reports/</p>
+        </div>
+        <div class="layer">
+          <div class="ln">L2 · TOOL</div>
+          <h5>research/</h5>
+          <p>PRD 多代理深度调研 skill，被 MBA 复用，也可独立 /research 调用</p>
+        </div>
+        <div class="layer">
+          <div class="ln">L3 · JUDGE</div>
+          <h5>*-perspective/ × 15</h5>
+          <p>人物视角 skill：人格化触发 · 表达 DNA · anti-fabrication 红线</p>
+        </div>
+        <div class="layer">
+          <div class="ln">L4 · INFRA</div>
+          <h5>scripts/wuying/</h5>
+          <p>阿里云无影 AgentBay helper：云浏览器 leg · smoke test</p>
+        </div>
+      </div>
+      <pre class="tree">
+mba/
+├── <span class="c-accent">metric-brand-auditor/</span>      ← 编排层
+│   ├── SKILL.md             Phase 0 → Phase 1-5 全流程
+│   ├── references/
+│   │   ├── dimensions.md          7 默认维度
+│   │   ├── judge-prompt-template.md  评委统一打分模板
+│   │   ├── wuying-browser.md         云浏览器 leg 规范
+│   │   └── html-report-template.md   HTML 报告脚手架
+│   ├── panels/                ← 评委编组层
+│   │   ├── default.yaml           默认 panel
+│   │   ├── auto.yaml              汽车行业 panel
+│   │   ├── vc-en.yaml             英文 VC panel
+│   │   └── ...                    11 个内置 panel
+│   └── reports/&lt;brand-slug&gt;/  ← 品牌产物
+│       ├── report.md / report.html
+│       ├── panel.yaml
+│       ├── versions/v{n}_{date}.{md,html}
+│       ├── _raw/
+│       └── reviews/
+│
+├── <span class="c-blue">research/</span>                  ← 工具层
+│   └── SKILL.md
+│
+├── <span class="c-green">*-perspective/ × 15</span>       ← 评委层
+│   ├── fusheng-perspective/        傅盛
+│   ├── jobs-perspective/           Steve Jobs
+│   ├── likejia-perspective/        李可佳
+│   ├── wu-jundong-perspective/     吴俊东
+│   ├── zhang-yiming-perspective/   张一鸣
+│   ├── leijun-perspective/         雷军
+│   ├── musk-perspective/           Elon Musk
+│   ├── lixiang/hexiaopeng/libin/   理想 / 小鹏 / 蔚来
+│   └── ...
+│
+├── <span style="color:var(--warn);font-weight:600">scripts/</span>                   ← 基建层
+│   ├── wuying/                     无影 AgentBay
+│   ├── perspective-tools/          视角研究工具
+│   └── build_*                     文档/PPT 构建
+│
+└── assets/judges/             ← 评委插画头像
+      </pre>
+    </div>
+  </section>
+
+  <!-- 17 · Panel system -->
+  <section class="slide" data-title="Panels">
+    <div class="eyebrow"><span class="bar"></span>评委编组</div>
+    <h2 class="title">5 镜头是固定的尺子。<br/>坐在尺子后面的人<em>可以换</em>。</h2>
+    <div class="grid cols-2" style="gap:40px; margin-top:8px">
+      <div>
+        <h3 class="sub">Panel = 一份 yaml</h3>
+        <pre class="tree" style="font-size:11.5px"><span class="c-mute"># panels/default.yaml</span>
+name: default
+display_name: Default 5-Judge Panel
+judges:
+  - slug: <span class="c-accent">fusheng</span>
+    display_name_cn: 傅盛
+    language: zh
+  - slug: <span class="c-accent">jobs</span>
+    display_name_en: Steve Jobs
+    language: en
+  - slug: <span class="c-accent">likejia</span>
+    display_name_cn: 李可佳
+    language: zh
+  - slug: <span class="c-accent">wu-jundong</span>
+    display_name_cn: 吴俊东
+    language: zh
+  - slug: <span class="c-accent">zhang-yiming</span>
+    display_name_cn: 张一鸣
+    language: zh</pre>
+      </div>
+      <div>
+        <h3 class="sub">四层优先级</h3>
+        <p class="body" style="margin-top:6px">
+          每次 <code style="font-family:var(--mono);color:var(--accent)">/mba &lt;brand&gt;</code> 走以下顺序，先命中先用：
+        </p>
+        <pre class="tree" style="font-size:12px; margin-top:10px">
+1.  <span class="c-accent">--panel &lt;name&gt;</span>          CLI flag
+2.  <span class="c-accent">--industry &lt;name&gt;</span>       行业映射
+3.  <span class="c-blue">reports/&lt;b&gt;/panel.yaml</span>   品牌绑定
+4.  <span class="c-green">panels/default.yaml</span>      兜底
+        </pre>
+        <p class="small" style="margin-top:18px">
+          + <code style="font-family:var(--mono);color:var(--accent)">--panel-add</code> / <code style="font-family:var(--mono);color:var(--accent)">--panel-drop</code> 本次临时增删，不改 panel 文件
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18 · Section 06 -->
+  <section class="slide section" data-section="06">
+    <div class="marker">— Chapter</div>
+    <p class="section-num">06</p>
+    <h2 class="section-title">The <em>Audience</em>.</h2>
+    <p class="section-note">不卖给泛市场部。卖给真正关心"品牌如何转化为战略资源"的人。</p>
+  </section>
+
+  <!-- 19 · Use cases -->
+  <section class="slide" data-title="Use cases">
+    <div class="eyebrow"><span class="bar"></span>三类用户</div>
+    <h2 class="title">谁在用，<em>用来回答什么</em>。</h2>
+    <div style="margin-top:18px">
+      <div class="use-row">
+        <div class="who"><span class="tag">PRIMARY · INVESTOR</span>AI native 早期投资人 / FA</div>
+        <div class="pain">一周看 5-10 个 pitch，品牌叙事真假难辨。增长来自真实势能，还是渠道红利？</div>
+        <div class="give"><strong>25 分钟</strong>出一份带 5 评委独立打分的 Brand Influence DD 报告。</div>
+      </div>
+      <div class="use-row">
+        <div class="who"><span class="tag">PRIMARY · FOUNDER</span>创始人 / CEO Office</div>
+        <div class="pain">融资 deck、官网、产品 demo、销售材料、媒体采访 —— 故事太多，互相矛盾。</div>
+        <div class="give"><strong>每月一次 EVOLUTION</strong>，把品牌当镜子，盯 90 天结构性变化。</div>
+      </div>
+      <div class="use-row">
+        <div class="who"><span class="tag">SECONDARY · CREATOR</span>内容创作者 / 研究员</div>
+        <div class="pain">写品牌深度文之前需要事实参考；研究框架需要可复用的"评估组件"。</div>
+        <div class="give"><strong>可复用的品牌评估组件</strong>，嵌入研究工作台或 agent 框架。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20 · Commercialization -->
+  <section class="slide" data-title="Commercialization">
+    <div class="eyebrow"><span class="bar"></span>商业化路径</div>
+    <h2 class="title">三层 —— 从<em>单次审计</em>到<em>Skills 平台</em>。</h2>
+    <div class="layers-3">
+      <div class="layer-3">
+        <p class="pnum">01</p>
+        <div class="pn-tag">L1 · Audit</div>
+        <h5>高价值单次审计</h5>
+        <p>为创业 / 上市 / 投资标的做一次完整 Brand Influence Audit：评分 · 叙事一致性诊断 · 竞品定位 · 品类定义权 · 风险点 · 行动建议。</p>
+      </div>
+      <div class="layer-3">
+        <p class="pnum">02</p>
+        <div class="pn-tag">L2 · Monitor</div>
+        <h5>持续监控订阅</h5>
+        <p>对基金监控 portfolio / watchlist。对上市公司监控自己与核心竞品。MBA 从一次性报告 → 品牌影响力时间序列。</p>
+      </div>
+      <div class="layer-3">
+        <p class="pnum">03</p>
+        <div class="pn-tag">L3 · Platform</div>
+        <h5>Skills 平台化</h5>
+        <p>Brand Audit · Category Mapping · Narrative Diff · Competitor Benchmark · IPO Narrative Check · Founder Story Audit —— 拆成可调用 skills 接入企业知识库 / 投研系统。</p>
+      </div>
+    </div>
+    <p class="small" style="margin-top:24px">
+      壁垒：审计框架 · 多智能体流程 · 版本化数据库 · 跨品牌 benchmark · 可治理的输出机制
+    </p>
+  </section>
+
+  <!-- 21 · Closing -->
+  <section class="slide closing" data-title="Closing">
+    <div class="eyebrow"><span class="bar"></span>愿景</div>
+    <h2 class="quote">
+      We're not building an<br/>AI brand report.<br/>
+      We're building the <em>Brand<br/>Influence Ledger</em><br/>
+      for the agentic age.
+    </h2>
+    <p class="body" style="max-width:38ch">
+      就像公司有财务报表 · 产品有数据看板 · 销售有 CRM · 舆情有监控系统。
+      品牌影响力也应该有自己的<strong>审计系统</strong>。
+    </p>
+    <div class="cover-meta" style="margin-top:36px">
+      <span>Site / <strong>mbabrand.com</strong></span>
+      <span>Install / <strong>botlearn.ai/skillhunt</strong></span>
+      <span>Repo / <strong>/mba in Claude Code</strong></span>
+    </div>
+    <div class="sign" style="margin-top:48px">— Thanks. /</div>
+  </section>
+
+</main>
+
+<div class="botbar">
+  <div class="nav-hint"><kbd>←</kbd> <kbd>→</kbd> 翻页 · <kbd>Space</kbd> 下一页 · <kbd>F</kbd> 全屏 · <kbd>P</kbd> 打印</div>
+  <div class="pageno"><span id="pn-cur">01</span><span class="sep">/</span><span id="pn-tot">00</span></div>
+</div>
+
+<script>
+(function () {
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const total  = slides.length;
+  const progress = document.getElementById('progress');
+  const pnCur = document.getElementById('pn-cur');
+  const pnTot = document.getElementById('pn-tot');
+  const toc   = document.getElementById('toc');
+
+  pnTot.textContent = String(total).padStart(2, '0');
+
+  // Build TOC
+  slides.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'dot' + (s.classList.contains('section') ? ' section' : '');
+    btn.title = (s.dataset.title || s.dataset.section || ('Slide ' + (i+1)));
+    btn.addEventListener('click', () => go(i));
+    toc.appendChild(btn);
+  });
+  const dots = Array.from(toc.children);
+
+  let idx = 0;
+  function go(n) {
+    n = Math.max(0, Math.min(total - 1, n));
+    if (n === idx) return;
+    slides[idx].classList.remove('active');
+    slides[idx].classList.add('prev');
+    slides[n].classList.remove('prev');
+    slides[n].classList.add('active');
+    dots[idx].classList.remove('active');
+    dots[n].classList.add('active');
+    idx = n;
+    pnCur.textContent = String(idx + 1).padStart(2, '0');
+    progress.style.width = ((idx + 1) / total * 100) + '%';
+    if (history.replaceState) history.replaceState(null, '', '#' + (idx + 1));
+  }
+  dots[0].classList.add('active');
+  progress.style.width = (1 / total * 100) + '%';
+
+  // Hash deep link
+  function fromHash() {
+    const m = location.hash.match(/^#(\d+)$/);
+    if (m) {
+      const n = parseInt(m[1], 10) - 1;
+      if (n >= 0 && n < total) go(n);
+    }
+  }
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
+
+  // Keyboard
+  document.addEventListener('keydown', (e) => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    switch (e.key) {
+      case 'ArrowRight':
+      case 'PageDown':
+      case ' ':
+      case 'j':
+        e.preventDefault(); go(idx + 1); break;
+      case 'ArrowLeft':
+      case 'PageUp':
+      case 'k':
+        e.preventDefault(); go(idx - 1); break;
+      case 'Home':
+        e.preventDefault(); go(0); break;
+      case 'End':
+        e.preventDefault(); go(total - 1); break;
+      case 'f':
+      case 'F':
+        if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+        else document.exitFullscreen();
+        break;
+      case 'p':
+      case 'P':
+        window.print();
+        break;
+    }
+  });
+
+  // Wheel / touch — gentle, with cooldown so one scroll = one slide
+  let lock = false;
+  function wheel(dir) {
+    if (lock) return;
+    lock = true;
+    setTimeout(() => lock = false, 520);
+    go(idx + dir);
+  }
+  window.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaY) < 24) return;
+    wheel(e.deltaY > 0 ? 1 : -1);
+  }, { passive: true });
+
+  // Touch swipe
+  let tY = null;
+  window.addEventListener('touchstart', (e) => { tY = e.touches[0].clientY; }, { passive: true });
+  window.addEventListener('touchend', (e) => {
+    if (tY == null) return;
+    const dy = e.changedTouches[0].clientY - tY;
+    if (Math.abs(dy) > 50) go(idx + (dy < 0 ? 1 : -1));
+    tY = null;
+  }, { passive: true });
+
+  // Click on left/right thirds
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('a, button, kbd, input, [data-no-click]')) return;
+    const x = e.clientX / window.innerWidth;
+    if (x < 0.18) go(idx - 1);
+    else if (x > 0.82) go(idx + 1);
+  });
+})();
+</script>
+
+</body>
+</html>
