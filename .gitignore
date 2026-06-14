@@ -25,10 +25,6 @@ metric-brand-auditor/.reports.backup-*
 # 任何放进 private/ 的内容都不会进入 git,也不会经过 build 脚本 deploy
 private/
 
-# 亚信安全报告当前仅供本地审阅,不得入库 / 发布 / 部署
-docs/prd/reports/asiainfo-security-v2-plan.md
-published/reports/asiainfo-security/
-
 # Cloudflare Pages 本地 build 产物(CF Pages 自己会 build,不入库)
 site/reports/
 
