@@ -56,9 +56,9 @@ judges:
 
 ```text
 1. 复制视角 skill 模板
-   cp -r ../../fusheng-perspective ../../pmarca-perspective
+   cp -r ../../perspectives/fusheng-perspective ../../perspectives/pmarca-perspective
 
-2. 改 ../../pmarca-perspective/SKILL.md frontmatter
+2. 改 ../../perspectives/pmarca-perspective/SKILL.md frontmatter
    - name: pmarca-perspective
    - description: Marc Andreessen / a16z 创始合伙人 ...
    - 显式触发 / 不要激活 / anti-fabrication 段全部改完

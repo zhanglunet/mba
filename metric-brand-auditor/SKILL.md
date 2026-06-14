@@ -83,7 +83,7 @@ Resolve them ONCE at Phase 0 and reuse — do NOT substitute literal `~/mba/...`
 |---|---|---|
 | `${SKILL_DIR}` | The directory containing this `SKILL.md` (the skill's install root) | `cd "$(dirname "<this-file>")" && pwd`, or read from the loading harness |
 | `${REPORTS_DIR}` | Where reports are written | First non-empty of: `$MBA_REPORTS_DIR` env var, `${SKILL_DIR}/reports`, `$PWD/reports` |
-| `${PERSPECTIVES_PATH}` | List of directories to probe for judge perspective skills | In order: `${SKILL_DIR}/..`, `~/.claude/skills`, `~/skills`, `$HOME/.claude/skills` |
+| `${PERSPECTIVES_PATH}` | List of directories to probe for judge perspective skills | In order: `${SKILL_DIR}/../perspectives`, `${SKILL_DIR}/..`, `~/.claude/skills`, `~/skills`, `$HOME/.claude/skills`. The `perspectives/` subdir is the canonical layout (since 2026-06: persona skills live one level down to keep the repo root clean); the bare `${SKILL_DIR}/..` fallback is kept for older installs that still have `<slug>-perspective/` directly at the repo root |
 | `${IMAGES_DIR}` | Judge-portrait illustration set | First existing of: `$MBA_IMAGES_DIR` env var, `${SKILL_DIR}/../assets/judges`, `${SKILL_DIR}/assets/judges`. If none exists, use the emoji/monogram fallback (Phase 5F.b portrait rules) |
 | `${PANELS_DIR}` | Where judge-panel yaml configs live | First non-empty of: `$MBA_PANELS_DIR` env var, `${SKILL_DIR}/panels`. See `panels/README.md` for the schema |
 | `${RESEARCH_SKILL}` | The upstream `research` skill (used as a building block) | First existing of: `${SKILL_DIR}/../research/SKILL.md`, `~/.claude/skills/research/SKILL.md`. If neither exists, fall back to direct WebSearch+WebFetch |
@@ -218,7 +218,7 @@ echo "  perspective skills (panel: $PANEL_NAME):"
 while IFS= read -r j; do
   [ -z "$j" ] && continue
   found=""
-  for cand in "$SKILL_DIR/../$j-perspective" "$HOME/.claude/skills/$j-perspective" "$HOME/skills/$j-perspective"; do
+  for cand in "$SKILL_DIR/../perspectives/$j-perspective" "$SKILL_DIR/../$j-perspective" "$HOME/.claude/skills/$j-perspective" "$HOME/skills/$j-perspective"; do
     [ -f "$cand/SKILL.md" ] && found="$cand" && break
   done
   if [ -n "$found" ]; then echo "    ✓ $j: $found"; else echo "    ✗ $j: missing"; fi

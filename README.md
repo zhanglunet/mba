@@ -81,7 +81,7 @@ mba/
 ├── research/                     ← 工具层:复用的"PRD 多代理深度调研" skill
 │   └── SKILL.md                       MBA 内部当作搜索建块,自身也可独立 `/research` 调用
 │
-├── *-perspective/                ← 评委层:15 套 production 人物视角 skill
+├── perspectives/                 ← 评委层:15 套 production 人物视角 skill(目录名 <slug>-perspective/)
 │   ├── default panel 的 5 位:
 │   │   fusheng(傅盛)/ jobs(Steve Jobs)/ likejia(李可佳)/
 │   │   wu-jundong(吴俊东)/ zhang-yiming(张一鸣)
@@ -94,7 +94,8 @@ mba/
 │   每套 = 1 份 SKILL.md(含人格化触发规则、表达 DNA、anti-fabrication + self-conflict 约束)
 │         + references/research/01-06.md(80% 一手来源的 6 路调研材料)
 │         + 部分含 quotes.md(URL 锚定金句库)+ 共享工具见 scripts/perspective-tools/
-│   H2 结构由 references/perspective-structure-spec.md 规定,CI 用 check_structure.py 校验
+│   H2 结构由 metric-brand-auditor/references/perspective-structure-spec.md 规定,CI 用 check_structure.py 校验
+│   注:2026-06 之前 *-perspective/ 在根目录,现统一收纳到 perspectives/ 下;mba SKILL.md 同时兼容旧布局
 │
 ├── scripts/
 │   ├── validate_panels.py           ← 校验所有 panel yaml(CI 跑这个,零依赖)
@@ -321,9 +322,9 @@ judges:
 
 ```text
 1. 复制视角 skill 模板
-   cp -r fusheng-perspective pmarca-perspective
+   cp -r perspectives/fusheng-perspective perspectives/pmarca-perspective
 
-2. 改 pmarca-perspective/SKILL.md frontmatter
+2. 改 perspectives/pmarca-perspective/SKILL.md frontmatter
    - name: pmarca-perspective
    - description: Marc Andreessen / a16z 创始合伙人 ...
    - 显式触发:「用 pmarca 视角」「Andreessen 会怎么看」
@@ -492,7 +493,7 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 - 想加一个新维度 → `metric-brand-auditor/references/dimensions.md`
 - 想改评委的打分模板 → `metric-brand-auditor/references/judge-prompt-template.md`
 - 想换 HTML 报告的图表样式 → `metric-brand-auditor/references/html-report-template.md`
-- 想加一个新评委(persona) → 看本文§4.2 的 6 步 + `metric-brand-auditor/references/perspective-structure-spec.md`(H2 结构规范);模板目录是任意 `*-perspective/`
+- 想加一个新评委(persona) → 看本文§4.2 的 6 步 + `metric-brand-auditor/references/perspective-structure-spec.md`(H2 结构规范);模板目录在 `perspectives/<slug>-perspective/`
 - 想存 / 切 / 查 panel → `metric-brand-auditor/panels/`(字段定义见本文§4.1 与 `panels/README.md`),校验用 `python3 scripts/validate_panels.py`
 - 想给某个品牌换一套评委 → `/mba <brand> --panel <name>`(详见本文§4.4)
 - 想理解多代理调研本身怎么写的 → `research/SKILL.md`(被 MBA 复用,也可独立 `/research` 调用)

@@ -15,7 +15,15 @@ skills/
 
 # 跑过的审计报告默认不入库 —— 报告归用户所有,可能含敏感品牌信息
 # 如需分享某份特定报告,先人工 review,再复制到 published/reports/<brand>/ 并显式 add
-metric-brand-auditor/reports/
+# 注:无 trailing slash,这样既匹配目录,也匹配 symlink(2026-06 reports/ 被 symlink 到 private/reports)
+metric-brand-auditor/reports
+metric-brand-auditor/.reports.backup-*
+
+# 脱敏报告目录 —— private/ 与 published/ 形成"私 vs 公"对仗:
+# private/   = 仅本地审阅,严格禁止 GitHub / 外网 / Cloudflare Pages / 任何第三方
+# published/ = 经人工 review 后对外发布的报告(默认仍 ignored,需显式 git add)
+# 任何放进 private/ 的内容都不会进入 git,也不会经过 build 脚本 deploy
+private/
 
 # 亚信安全报告当前仅供本地审阅,不得入库 / 发布 / 部署
 docs/prd/reports/asiainfo-security-v2-plan.md
