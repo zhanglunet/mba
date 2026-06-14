@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MBA 5 分钟 Pitch · Metric Brand Auditor</title>
+<meta name="description" content="MBA 项目 5 分钟 Pitch 稿:把品牌影响力做成 AI 时代的审计协议。问题 / 解决方案 / 商业化 / 壁垒 / 愿景。" />
+<meta property="og:title" content="MBA 5 分钟 Pitch — Metric Brand Auditor" />
+<meta property="og:description" content="AI 时代,品牌不只是人类心智资产,而是 Agent 选择、推荐、排序、判断公司的基础信号。MBA 要做的,就是品牌影响力的 Agentic Audit Protocol。" />
+<meta property="og:url" content="https://mbabrand.com/pitch.html" />
+<style>
+  :root {
+    --ink: #111;
+    --paper: #faf8f3;
+    --muted: #6b6760;
+    --rule: #1a1a1a;
+    --accent: #c1440e;
+    --card: #fff;
+    --soft: #f0ece3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 28px 80px; }
+  header {
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 18px; margin-bottom: 30px;
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
+  .mark a { color: inherit; text-decoration: none; }
+  .mark .dot { color: var(--accent); }
+  nav a {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13px; color: var(--ink); text-decoration: none;
+    border-bottom: 1px solid var(--ink); margin-left: 18px;
+  }
+  nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .status {
+    display: inline-block; padding: 4px 10px;
+    border: 1px solid var(--accent); color: var(--accent);
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-size: clamp(30px, 4.8vw, 48px);
+    line-height: 1.15; margin: 0 0 12px;
+    font-weight: 800; letter-spacing: -0.01em;
+  }
+  .sub {
+    font-size: 17px; color: var(--muted);
+    margin: 0 0 28px; font-style: italic;
+  }
+  .meta-line {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 12px; color: var(--muted);
+    letter-spacing: 0.04em;
+    margin: 0 0 32px;
+  }
+  .meta-line span + span::before { content: " · "; color: #d8d2c6; margin: 0 6px; }
+
+  .reframe {
+    border-left: 4px solid var(--accent);
+    background: #fff7ed;
+    padding: 18px 22px 20px;
+    margin: 0 0 40px;
+    border-radius: 0 6px 6px 0;
+  }
+  .reframe .tag {
+    display: inline-block;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .reframe p {
+    margin: 0;
+    font-size: 19px; line-height: 1.55;
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .reframe p + p { margin-top: 10px; font-weight: 500; }
+
+  .toc {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 14px; background: var(--card);
+    border: 1px solid var(--rule); border-radius: 8px;
+    padding: 18px 22px; margin: 0 0 36px;
+  }
+  .toc h3 { margin: 0 0 10px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .toc ol { margin: 0; padding-left: 22px; }
+  .toc li { margin: 5px 0; }
+  .toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid #d8d2c6; }
+  .toc a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .lead {
+    font-size: 18px; margin: 0 0 28px;
+  }
+  .lead.big {
+    font-size: 19.5px;
+    border-left: 2px solid var(--accent);
+    padding-left: 16px;
+    margin: 0 0 32px;
+    color: var(--ink);
+  }
+
+  h2 {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 22px; margin: 56px 0 12px;
+    padding-top: 18px; border-top: 1px solid var(--rule);
+    letter-spacing: -0.01em; line-height: 1.3;
+  }
+  h2 .n {
+    display: inline-block;
+    color: var(--accent); font-weight: 800;
+    margin-right: 12px;
+  }
+
+  p { margin: 0 0 14px; font-size: 17px; }
+  p strong { color: var(--ink); font-weight: 700; }
+  em { font-style: italic; color: var(--muted); }
+
+  /* questions list — repeating rhetorical Qs in the pitch */
+  ul.questions {
+    list-style: none;
+    margin: 0 0 22px;
+    padding: 0;
+    border-left: 2px solid var(--soft);
+  }
+  ul.questions li {
+    padding: 6px 0 6px 16px;
+    font-size: 17px;
+    color: var(--ink-2, #3a3733);
+    font-style: italic;
+  }
+
+  /* numbered emphasis blocks for things like the 3 types / 5 walls */
+  .enum {
+    margin: 16px 0 22px;
+    display: grid;
+    gap: 12px;
+  }
+  .enum .row {
+    background: var(--card);
+    border: 1px solid #d8d2c6;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .enum .row .label {
+    display: inline-block;
+    font-weight: 800;
+    color: var(--accent);
+    margin-right: 10px;
+    letter-spacing: 0.02em;
+  }
+
+  .callout {
+    border-left: 4px solid var(--accent);
+    background: #fff7ed;
+    padding: 14px 18px;
+    margin: 18px 0 26px;
+    font-size: 17px;
+    line-height: 1.6;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout strong { color: var(--ink); }
+  .callout.big {
+    background: var(--card);
+    border: 2px solid var(--accent);
+    border-left-width: 6px;
+    padding: 20px 22px;
+    font-size: 18.5px;
+    margin: 32px 0;
+  }
+
+  .step-card {
+    display: flex; gap: 16px;
+    padding: 14px 0; border-bottom: 1px dashed #d8d2c6;
+  }
+  .step-card:last-of-type { border-bottom: none; }
+  .step-card .num {
+    flex: 0 0 36px; height: 36px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-weight: 700; font-size: 15px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step-card .bd { flex: 1; }
+  .step-card .bd b {
+    display: block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-weight: 700; font-size: 15px; margin-bottom: 4px;
+  }
+  .step-card .bd p {
+    margin: 0; font-size: 16px; line-height: 1.6; color: var(--ink);
+  }
+
+  .closing {
+    margin: 56px 0 0;
+    padding: 36px 32px;
+    background: var(--card);
+    border: 2px solid var(--rule);
+    border-radius: 8px;
+    text-align: center;
+  }
+  .closing .small {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .closing p {
+    font-size: clamp(20px, 2.4vw, 28px);
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 12px;
+    letter-spacing: -0.005em;
+  }
+  .closing p em {
+    font-style: italic; color: var(--accent);
+  }
+  .closing .thanks {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13px; color: var(--muted);
+    letter-spacing: 0.14em; text-transform: uppercase;
+    margin-top: 22px;
+  }
+
+  .cta-strip {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    margin: 40px 0 0; padding: 24px 0;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+  }
+  .cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 16px; border: 1px solid var(--rule);
+    border-radius: 6px; background: var(--card);
+    color: var(--ink); text-decoration: none; font-size: 14px;
+    font-weight: 600;
+  }
+  .cta:hover { border-color: var(--accent); color: var(--accent); }
+  .cta.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .cta.primary:hover { background: #a5380b; border-color: #a5380b; color: #fff; }
+
+  .hack-banner {
+    background: #fff7ed; border: 2px solid var(--accent);
+    color: var(--ink); padding: 13px 18px;
+    font-size: 13.5px; line-height: 1.55;
+    margin: 0 0 30px; border-radius: 4px;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+  }
+  .hack-banner .tag { display: inline-block; background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; margin-right: 8px; letter-spacing: 0.06em; }
+
+  footer {
+    margin-top: 56px; padding-top: 18px;
+    border-top: 2px solid var(--rule);
+    color: var(--muted);
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13px;
+    display: flex; justify-content: space-between;
+    flex-wrap: wrap; gap: 8px;
+  }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* anchor offset so h2 scrollIntoView clears the page top */
+  h2[id] { scroll-margin-top: 24px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark"><a href="/">MBA<span class="dot">.</span></a></div>
+      <nav>
+        <a href="/">首页</a>
+        <a href="/presentation/">Presentation</a>
+        <a href="/how-it-works.html">怎么打分</a>
+        <a href="https://github.com/zhanglunet/mba">GitHub</a>
+      </nav>
+    </header>
+
+    <span class="status">Pitch · 5 分钟</span>
+
+    <h1>把品牌影响力<br/>做成 AI 时代的审计协议。</h1>
+    <p class="sub">MBA 项目 5 分钟 Pitch 稿(高级版) — 现场讲稿</p>
+
+    <p class="meta-line">
+      <span>约 5 分钟口播</span><span>7 段结构</span><span>2026 · 黑客松版本</span>
+    </p>
+
+    <div class="hack-banner">
+      <span class="tag">HACKATHON DEMO</span>
+      本稿是黑客松演示版的现场讲稿;评委头像 / 评分 / verdict / Round 2 辩论均为 AI 基于公开一手资料的 in-character 模拟,<strong>非本人真实意见</strong>;本站报告<strong>不构成投资建议</strong>,也不构成对任何品牌 / 上市公司的实际评价。
+    </div>
+
+    <div class="reframe">
+      <div class="tag">核心升维 · Key Reframe</div>
+      <p>AI 时代,品牌不只是人类心智资产,而会变成 Agent 选择、推荐、排序、判断公司的基础信号。</p>
+      <p>MBA 要做的,就是品牌影响力的 <em style="font-style:italic;color:var(--accent)">Agentic Audit Protocol</em>。</p>
+    </div>
+
+    <nav class="toc" aria-label="目录">
+      <h3>讲稿目录</h3>
+      <ol>
+        <li><a href="#part-1">问题:品牌很重要,但今天仍然不可审计</a></li>
+        <li><a href="#part-2">解决方案:拆成 Agent 可执行的审计流程</a></li>
+        <li><a href="#part-3">为什么这件事现在重要?</a></li>
+        <li><a href="#part-4">第一个切入点:投资人与创始人</a></li>
+        <li><a href="#part-5">商业化路径:审计 → 监控 → Skills 平台</a></li>
+        <li><a href="#part-6">壁垒:沉淀的是品牌影响力数据结构</a></li>
+        <li><a href="#part-7">愿景:Brand Influence Ledger</a></li>
+      </ol>
+    </nav>
+
+    <p class="lead">
+      各位好,我今天要讲的项目叫 <strong>MBA — Metric Brand Auditor</strong>。
+    </p>
+    <p>但我不想从"品牌分析工具"开始讲。因为如果我们只是说"用 AI 生成品牌报告",这个项目马上就会变得很普通。</p>
+
+    <p class="lead big">
+      我真正想讲的是一个更大的变化 ——
+      <strong>在 AI 时代,品牌正在从"人类心智资产",变成"智能体世界里的可识别、可比较、可调用的信号资产"。</strong>
+    </p>
+
+    <p>过去,一个品牌强不强,主要取决于人怎么记住它。消费者怎么感知它,投资人怎么理解它,媒体怎么叙述它,候选人愿不愿意加入它。</p>
+
+    <p>但未来,越来越多的判断会被 Agent 参与甚至代理 —— 投资 Agent 筛公司,采购 Agent 推荐供应商,招聘 Agent 理解雇主品牌,消费者 Agent 帮人比较产品,企业战略 Agent 持续追踪格局。</p>
+
+    <p>这时候,一个公司的品牌影响力就不再只是 slogan、logo、PR 或社媒声量。它会变成一个更底层的问题:</p>
+
+    <div class="callout">
+      <strong>当 AI Agent 观察一家公司时,它能不能稳定地识别 —— 这家公司是谁、代表什么、定义了什么品类、拥有多少真实信号、是否值得被推荐、被投资、被合作、被加入?</strong>
+    </div>
+
+    <p>今天,没有一套系统能严肃回答这个问题。这就是 MBA 要解决的事。</p>
+
+
+    <h2 id="part-1"><span class="n">一 ·</span>品牌很重要,但今天仍然不可审计</h2>
+
+    <p>所有人都知道品牌重要 —— 创业公司融资要讲品牌,上市公司做 IR 要讲品牌,AI 公司要讲生态、开发者心智和模型认知,消费公司要讲用户身份,B2B 公司要讲信任、渠道和行业位置。</p>
+
+    <p>但今天我们判断品牌,主要还是靠三类东西:</p>
+
+    <div class="enum">
+      <div class="row"><span class="label">第一类</span><strong>咨询公司报告</strong> —— 很漂亮,但经常是一次性的、主观的、不可复盘的。</div>
+      <div class="row"><span class="label">第二类</span><strong>舆情和社媒工具</strong> —— 能告诉你声量、曝光、情绪,但很难告诉你这个品牌到底有没有品类定义权、叙事是不是被市场接受、影响力是结构性的还是短期 PR。</div>
+      <div class="row"><span class="label">第三类</span><strong>投资人、创始人、CMO 自己的判断</strong> —— 很重要,但高度依赖个人经验,难以标准化、跨公司比较、跨时间追踪。</div>
+    </div>
+
+    <p>所以我们看到一个巨大空白:</p>
+
+    <div class="callout big">
+      <strong>财务有审计。产品有数据分析。销售有 CRM。舆情有 monitoring。</strong><br/>
+      但品牌影响力 —— 这个决定公司长期定价权、资本吸引力、人才吸引力和市场话语权的资产 —— <strong>今天还没有真正的审计协议</strong>。
+    </div>
+
+    <p>MBA 就是要做这个协议。</p>
+
+
+    <h2 id="part-2"><span class="n">二 ·</span>把品牌影响力拆成 Agent 可以执行的审计流程</h2>
+
+    <p>MBA 的全称是 <strong>Metric Brand Auditor</strong>。它不是单个 prompt,也不是一个报告模板 —— 它是一条 <strong>多智能体品牌影响力审计流水线</strong>。</p>
+
+    <p>核心机制:由 <strong>Lead Agent 编排</strong>、<strong>子智能体并行执行</strong>、<strong>多个评委视角独立打分</strong>,并且强调 scored、versioned、replayable —— 可打分、可版本化、可复盘。</p>
+
+    <p>工作方式分五步:</p>
+
+    <div class="step-card">
+      <div class="num">1</div>
+      <div class="bd">
+        <b>Router</b>
+        <p>Lead Agent 先判断这是一个新品牌审计,还是已有品牌的版本更新。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="num">2</div>
+      <div class="bd">
+        <b>并行调研</b>
+        <p>系统不会简单问"这个品牌好不好",而是把品牌拆成 7 个维度并行调研:创始叙事、产品定位、分发渠道、社区与 PR、视觉语言、竞品格局、用户情绪。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="num">3</div>
+      <div class="bd">
+        <b>综合判断</b>
+        <p>Lead Agent 把不同维度的调研结果合成,找出品牌杠杆、叙事矛盾、脆弱边缘和证据链。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="num">4</div>
+      <div class="bd">
+        <b>多视角打分</b>
+        <p>不是让一个模型拍脑袋给分,而是用多个 Judge Skills,从不同认知模型审视同一个品牌。当前系统使用 5 个打分镜头:原创性、范畴命名、杠杆质量、身份一致性、真实信号。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="num">5</div>
+      <div class="bd">
+        <b>生成版本化报告</b>
+        <p>输出不是一段文字,而是 Markdown + 自包含 HTML,包括雷达图、异议热力图、影响力构造图,并沉淀为版本快照。</p>
+      </div>
+    </div>
+
+    <p style="margin-top:24px">所以 MBA 真正做的事情是:</p>
+
+    <div class="callout">
+      <strong>把品牌判断,从主观表达,变成一个 Agent 可以重复执行的审计流程。</strong>
+    </div>
+
+
+    <h2 id="part-3"><span class="n">三 ·</span>为什么这件事现在重要?</h2>
+
+    <p>因为 AI 正在改变品牌的存在方式。过去,品牌主要影响人;未来,品牌还要影响 Agent。</p>
+
+    <p>人类会记住一个品牌,因为它有故事、有审美、有身份、有文化符号。但 <strong>Agent 会识别一个品牌,是因为它有结构化信号</strong>:</p>
+
+    <ul class="questions">
+      <li>它是否有稳定叙事?</li>
+      <li>是否有清晰品类?</li>
+      <li>是否被高质量来源反复引用?</li>
+      <li>是否在竞品对比中拥有独特位置?</li>
+      <li>是否有真实用户、真实增长、真实生态?</li>
+    </ul>
+
+    <div class="callout">
+      <strong>品牌不只是要被人喜欢,还要能被机器正确理解。</strong>
+    </div>
+
+    <p>如果一个公司对外表达混乱 —— 官网讲一套、财报讲一套、创始人采访讲一套、客户案例讲一套 —— 那么未来不仅人会困惑,Agent 也会困惑。而当 Agent 困惑时,它就不会推荐你、不会解释你、不会把你放在正确的比较集合里。</p>
+
+    <p>所以 MBA 的长期价值不是"帮你写一份品牌报告",而是帮助公司回答:</p>
+
+    <div class="callout big">
+      <strong>在 AI Agent 的世界里,我这个品牌是否足够<em style="font-style:italic;color:var(--accent)">清晰、可信、可比较、可推荐</em>?</strong>
+    </div>
+
+
+    <h2 id="part-4"><span class="n">四 ·</span>第一个切入点:投资人与创始人</h2>
+
+    <p>我们不会一开始就做一个泛泛的营销工具 —— 那样很容易被压成普通 SaaS。MBA 的第一个高价值场景,是 <strong>投资研究和创始人战略叙事</strong>。</p>
+
+    <p><strong>对投资人来说</strong>,品牌影响力其实是判断长期复利的重要变量:</p>
+    <ul class="questions">
+      <li>一家公司的增长,到底来自真实品牌势能,还是渠道红利?</li>
+      <li>一家公司的估值溢价,到底来自品类定义权,还是市场短期情绪?</li>
+      <li>一家 AI 公司讲了很多宏大故事,但它有没有真正进入用户心智?</li>
+      <li>一家消费公司很火,但这种热度能不能沉淀为定价权?</li>
+    </ul>
+
+    <p>MBA 可以成为投资研究里的一个新模块 —— <strong>Brand Influence Due Diligence</strong>。帮助基金经理、VC、PE、二级市场研究员判断:这个公司有没有真正的品牌资产?这个品牌资产是在增强,还是在衰减?它是否支撑未来估值?</p>
+
+    <p><strong>对创始人来说</strong>,MBA 是一个战略镜子。很多创业公司最大的问题不是没有故事,而是故事太多 —— 融资 deck 是一个故事,官网是一个故事,产品 demo 是一个故事,销售材料是一个故事,媒体采访又是另一个故事。</p>
+
+    <p>MBA 帮创始人回答:我的公司到底代表什么?我有没有定义一个新品类?客户、投资人、候选人、媒体看到的是不是同一家公司?我的品牌势能能不能调动人才、资本、渠道和生态?</p>
+
+    <p>所以 MBA 一开始不应该卖给普通市场部。它应该卖给那些真正关心"品牌如何转化为战略资源"的人 —— <em>基金经理、创始人、CEO Office、IR、战略部、咨询公司</em>。</p>
+
+
+    <h2 id="part-5"><span class="n">五 ·</span>商业化路径:审计 → 监控 → Skills 平台</h2>
+
+    <p>MBA 的商业化分三层:</p>
+
+    <div class="step-card">
+      <div class="num">L1</div>
+      <div class="bd">
+        <b>高价值单次审计</b>
+        <p>为创业 / 上市 / 投资标的做一次完整的 Brand Influence Audit:品牌影响力评分、叙事一致性诊断、竞品定位、品类定义权、风险点、行动建议。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="num">L2</div>
+      <div class="bd">
+        <b>持续监控订阅</b>
+        <p>基金可以监控 portfolio / watchlist;上市公司可以监控自己与核心竞品;创业公司可以每月追踪品牌叙事是否变强、市场是否更理解自己。MBA 从一次性报告,变成<strong>品牌影响力的时间序列</strong>。</p>
+      </div>
+    </div>
+    <div class="step-card">
+      <div class="num">L3</div>
+      <div class="bd">
+        <b>Skills 平台化</b>
+        <p>MBA 最终可以拆成一组可调用 Skills —— Brand Audit · Category Mapping · Narrative Diff · Competitor Benchmark · Investor Memo · IPO Narrative Check · Monthly Brand Monitoring · Founder Story Audit —— 接入企业知识库、投研系统、咨询工作台,也可以成为更大 Agent 平台中的品牌智能模块。</p>
+      </div>
+    </div>
+
+    <p style="margin-top:24px">MBA 已经支持 <strong>evolution 模式</strong>:已有报告时,系统只研究发生变化的维度、只重判受影响维度,并写入新版本快照。这是非常关键的能力 —— 真正有价值的不是"今天品牌几分",而是:</p>
+
+    <div class="callout">
+      <strong>这个品牌的影响力在过去 30 天、90 天、180 天,到底发生了什么结构性变化?</strong>
+    </div>
+
+
+    <h2 id="part-6"><span class="n">六 ·</span>壁垒:沉淀的是品牌影响力数据结构</h2>
+
+    <p>这个项目的壁垒不是调用大模型 —— 任何人都可以让 AI 写一篇品牌分析文章。MBA 的壁垒在于五件事:</p>
+
+    <div class="enum">
+      <div class="row"><span class="label">01</span><strong>审计框架</strong> —— 把品牌拆成 7 个调研维度和 5 个判断镜头,有固定口径。</div>
+      <div class="row"><span class="label">02</span><strong>多智能体流程</strong> —— Lead Agent 拆解合成,Research Agents 并行调研,Judge Skills 独立判断,形成可复盘报告。</div>
+      <div class="row"><span class="label">03</span><strong>版本化数据库</strong> —— 每一次审计都是品牌影响力的一次快照。时间越长,系统越知道一个品牌如何演化。</div>
+      <div class="row"><span class="label">04</span><strong>跨品牌 benchmark</strong> —— 审计足够多公司后,可以比较谁真正拥有品类定义权、谁只是流量强、谁的叙事在增强、谁的品牌资产在透支。</div>
+      <div class="row"><span class="label">05</span><strong>可治理的输出机制</strong> —— 当前明确声明为黑客松演示版,评委头像 / 评分 / 辩论是 AI 模拟。商业化版本会去掉真人模拟风险,升级成角色化 Lens(Investor / Founder / Product / Category / Distribution / Culture Lens)。</div>
+    </div>
+
+    <p>这会让 MBA 从 demo 走向企业级可用系统。</p>
+
+
+    <h2 id="part-7"><span class="n">七 ·</span>愿景:Brand Influence Ledger</h2>
+
+    <p>我们相信,未来每一家重要公司,都需要一份持续更新的 <strong>Brand Influence Ledger</strong>。</p>
+
+    <p>就像公司有财务报表,产品有数据看板,销售有 CRM,舆情有监控系统 —— 品牌影响力也应该有自己的审计系统。</p>
+
+    <p>因为品牌不是装饰。<strong>品牌是一个公司调动社会资源的能力</strong> —— 它决定你能吸引什么人才、能进入什么渠道、能获得什么资本、能拥有多少定价权、能不能定义一个品类、能不能在 AI Agent 的世界里被正确理解和优先推荐。</p>
+
+    <p>MBA 要做的,就是把这件事变成一套可执行的系统。</p>
+
+    <div class="closing">
+      <div class="small">One-line summary</div>
+      <p>我们不是在做 AI 品牌报告。<br/>我们是在做 <em>AI 时代的品牌影响力审计协议</em>。</p>
+      <p style="font-size:clamp(16px,1.6vw,19px);font-weight:500;margin-top:18px;color:var(--muted);">
+        MBA 是一个 Agentic Brand Influence Auditor ——<br/>
+        把品牌影响力从主观感觉,变成可调研、可打分、可比较、可复盘、可持续追踪的智能资产。
+      </p>
+      <div class="thanks">— 谢谢大家 —</div>
+    </div>
+
+    <section class="cta-strip">
+      <a class="cta primary" href="/presentation/">看 21 页 deck →</a>
+      <a class="cta" href="/how-it-works.html">它是怎么打分的</a>
+      <a class="cta" href="https://www.botlearn.ai/en/community/u/mba_auditor">Install · /mba &lt;brand&gt;</a>
+      <a class="cta" href="https://github.com/zhanglunet/mba">GitHub</a>
+    </section>
+
+    <footer>
+      <div>© 2026 MBA · Jason · 清风 · John</div>
+      <div><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></div>
+      <div style="flex-basis:100%;text-align:center;margin-top:6px;">技术支持:<a href="https://marsdata.ai">marsdata.ai</a></div>
+    </footer>
+  </div>
+</body>
+</html>
