@@ -22,7 +22,15 @@
 
 ![mbabrand.com 首页](docs/screenshots/site-home.png)
 
-**样例报告 [Lenovo 0992.HK](https://mbabrand.com/reports/lenovo/)** · [PDF](https://mbabrand.com/reports/lenovo/report.pdf) · [BotLearn 一键安装](https://www.botlearn.ai/skillhunt/v2/s/metric-brand-auditor)
+**评估方法论 [How it works](https://mbabrand.com/how-it-works.html)** —— 信息源 → 7 维度 × 5 镜头 → N 评委独立打分 → 异议聚合 → 版本化报告
+
+![How it works — 含流水线流程图与端到端数据流](docs/screenshots/how-it-works.png)
+
+**项目介绍 [Web Presentation](https://mbabrand.com/presentation/)** —— 21 页编辑式 deck(键盘 ← → 翻页)
+
+![MBA · Metric Brand Auditor — 项目介绍封面](docs/screenshots/presentation.png)
+
+**样例报告 [Lenovo 0992.HK](https://mbabrand.com/reports/lenovo/)** · [PDF](https://mbabrand.com/reports/lenovo/report.pdf) · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
 
 ![Lenovo 审计报告 — 雷达图 / 异议热力图 / 影响力构造图](docs/screenshots/report-lenovo.png)
 
