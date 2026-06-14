@@ -1,0 +1,102 @@
+{
+  "count": 10,
+  "industries": {
+    "auto": "auto",
+    "ev": "auto",
+    "consumer-cn": "consumer-cn",
+    "ai-app-cn": "ai-app-cn",
+    "vc-cn": "vc-cn",
+    "vc-en": "vc-en",
+    "edu-cn": "edu-cn",
+    "cross-border": "cross-border",
+    "luxury-en": "luxury-en",
+    "security-cn-global": "security-cn-global",
+    "cybersecurity": "security-cn-global",
+    "security": "security-cn-global",
+    "ai": "ai-app-cn",
+    "consumer": "consumer-cn",
+    "edu": "edu-cn"
+  },
+  "items": [
+    {
+      "slug": "ai-app-cn",
+      "display_name": "AI Application Layer Panel (Skeleton)",
+      "status": "skeleton",
+      "judges_count": 5,
+      "description": "AI 应用 / Agent 层 panel:大模型创业现役选手 + 创业失败复盘者 + 安全反共识派 + 反共识 Agent 布道者 + 卷王 VC。 给 AI 应用、Agent 产品、大模型 API 包装层、AI 出海做影响力审计。",
+      "api_url": "/api/panels/ai-app-cn.json"
+    },
+    {
+      "slug": "auto",
+      "display_name": "Auto Industry Panel",
+      "status": "production",
+      "judges_count": 5,
+      "description": "汽车 / 电动车 panel:中国新势力 4 家(理想 / 小鹏 / 蔚来 / 小米)+ Tesla。 每位都是创始人兼 CEO,视角偏产品 / 制造 / 营销 / 用户社区 / 自动驾驶赌注。 适合给主机厂、新势力、智能电动品牌做影响力审计。",
+      "api_url": "/api/panels/auto.json"
+    },
+    {
+      "slug": "consumer-cn",
+      "display_name": "Consumer-CN Panel (Skeleton)",
+      "status": "skeleton",
+      "judges_count": 5,
+      "description": "中文消费品 / 快消 panel:媒介杠杆派 + IP 化派 + 反共识表达 + 跨境产品力 + 渠道极致。给消费品牌、零售、IP 化餐饮、跨境消费品做 影响力审计。",
+      "api_url": "/api/panels/consumer-cn.json"
+    },
+    {
+      "slug": "cross-border",
+      "display_name": "Cross-Border Panel (Skeleton)",
+      "status": "skeleton",
+      "judges_count": 5,
+      "description": "出海 / 跨境电商 panel:极致下沉算法供应链 + 静默产品力 + 极致供应链数据驱动 + 失败者复盘 + 行业观察者补位。 给跨境电商、出海消费品牌、SaaS 出海、TikTok 商品做影响力审计。",
+      "api_url": "/api/panels/cross-border.json"
+    },
+    {
+      "slug": "default",
+      "display_name": "Default 5-Judge Panel",
+      "status": "production",
+      "judges_count": 5,
+      "description": "混合中英文、创始人视角 + 产品设计视角 + 教育/全球化视角 + 字节系产品视角。 /mba <brand> 在没有 --panel 且品牌没绑定其它 panel 时,自动用这一套。",
+      "api_url": "/api/panels/default.json"
+    },
+    {
+      "slug": "edu-cn",
+      "display_name": "Education-CN Panel (Skeleton)",
+      "status": "skeleton",
+      "judges_count": 5,
+      "description": "中文教育 / 终身学习 panel:失败重生 IP 化 + 双减后 AI 转身 + Bot 派新物种 + Education becoming 思想派 + AI Tutor 鼻祖。 给 K12 / AI Tutor / 终身学习 / 职业培训 / 内容付费做影响力审计。",
+      "api_url": "/api/panels/edu-cn.json"
+    },
+    {
+      "slug": "luxury-en",
+      "display_name": "Luxury & Fashion Panel (Skeleton)",
+      "status": "skeleton",
+      "judges_count": 5,
+      "description": "奢侈品 / 时尚 panel:收购艺术 + 工艺信仰 / 行业仲裁人 gatekeeper / 慢生活人文经营 / 设计师即 CEO / 设计师传承。给奢侈品、高端时尚、 设计驱动品牌、生活方式品牌做影响力审计,全英文落笔。",
+      "api_url": "/api/panels/luxury-en.json"
+    },
+    {
+      "slug": "security-cn-global",
+      "display_name": "Security CN Global 6-Judge Panel",
+      "status": "production",
+      "judges_count": 6,
+      "description": "网络安全 / 企业安全 / AI 安全 panel:中国安全心智、亚洲安全全球化、硬科技长期主义、 AI 基础设施、第一性原理技术叙事、企业级云安全平台。适合给政企安全、数据安全、 云安全、AI 安全和基础设施型软件品牌做影响力审计。",
+      "api_url": "/api/panels/security-cn-global.json"
+    },
+    {
+      "slug": "vc-cn",
+      "display_name": "VC-CN Panel (Skeleton)",
+      "status": "skeleton",
+      "judges_count": 5,
+      "description": "中文 VC panel:红海实战派 + 长期主义 + 消费杀手锏 + 跨界 operator VC + 平台型超级 LP。给国内品牌做投资人视角影响力审计、商业模式可投性评估。",
+      "api_url": "/api/panels/vc-cn.json"
+    },
+    {
+      "slug": "vc-en",
+      "display_name": "VC-EN Panel (Skeleton)",
+      "status": "skeleton",
+      "judges_count": 5,
+      "description": "英文 VC panel:Software-eats-world 派 + YC first-principles 派 + 0-to-1 反竞争派 + leverage 财富启示录派 + Blitzscaling 网络效应派。 给 SaaS / AI 应用 / 网络效应产品 / 国际化品牌做美式 VC 视角审计。",
+      "api_url": "/api/panels/vc-en.json"
+    }
+  ]
+}

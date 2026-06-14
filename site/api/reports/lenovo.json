@@ -1,0 +1,19 @@
+{
+  "slug": "lenovo",
+  "brand_cn": "联想集团",
+  "brand_en": "Lenovo Group",
+  "ticker": "0992.HK",
+  "version": "v1",
+  "audit_date": "2026-05-10",
+  "panel": "default",
+  "score": {
+    "total": 22,
+    "max": 50,
+    "normalized": null
+  },
+  "tl_dr": "全球 PC 龙头 + 子品牌资产撑起的渠道机器,财务面比亚信好得多但 AI 时代位置危机更严峻:亚信\"做不出来\",联想\"做出来了但红利归别人\"。 3 评委 R2 收敛到\"红利不归联想\"同一深层共识。Total mean 22/50。",
+  "html_url": "/reports/lenovo/",
+  "pdf_url": "/reports/lenovo/report.pdf",
+  "api_url": "/api/reports/lenovo.json",
+  "panel_api_url": "/api/panels/default.json"
+}

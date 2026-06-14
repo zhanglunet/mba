@@ -1,0 +1,333 @@
+{
+  "count": 41,
+  "items": [
+    {
+      "type": "report",
+      "slug": "lenovo",
+      "title": "联想集团 · v1",
+      "text": "全球 PC 龙头 + 子品牌资产撑起的渠道机器,财务面比亚信好得多但 AI 时代位置危机更严峻:亚信\"做不出来\",联想\"做出来了但红利归别人\"。 3 评委 R2 收敛到\"红利不归联想\"同一深层共识。Total mean 22/50。",
+      "url": "/reports/lenovo/",
+      "api_url": "/api/reports/lenovo.json"
+    },
+    {
+      "type": "report",
+      "slug": "chengshi-auto",
+      "title": "橙仕汽车 · v6",
+      "text": "末端配送生产力品牌:场景切口清晰,真实应用信号增强,但服务数据透明度 和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50, 综合分 6.2/10。",
+      "url": "/reports/chengshi-auto/",
+      "api_url": "/api/reports/chengshi-auto.json"
+    },
+    {
+      "type": "panel",
+      "slug": "ai-app-cn",
+      "title": "AI Application Layer Panel (Skeleton)",
+      "text": "AI 应用 / Agent 层 panel:大模型创业现役选手 + 创业失败复盘者 + 安全反共识派 + 反共识 Agent 布道者 + 卷王 VC。 给 AI 应用、Agent 产品、大模型 API 包装层、AI 出海做影响力审计。",
+      "url": "/api/panels/ai-app-cn.json",
+      "api_url": "/api/panels/ai-app-cn.json"
+    },
+    {
+      "type": "panel",
+      "slug": "auto",
+      "title": "Auto Industry Panel",
+      "text": "汽车 / 电动车 panel:中国新势力 4 家(理想 / 小鹏 / 蔚来 / 小米)+ Tesla。 每位都是创始人兼 CEO,视角偏产品 / 制造 / 营销 / 用户社区 / 自动驾驶赌注。 适合给主机厂、新势力、智能电动品牌做影响力审计。",
+      "url": "/api/panels/auto.json",
+      "api_url": "/api/panels/auto.json"
+    },
+    {
+      "type": "panel",
+      "slug": "consumer-cn",
+      "title": "Consumer-CN Panel (Skeleton)",
+      "text": "中文消费品 / 快消 panel:媒介杠杆派 + IP 化派 + 反共识表达 + 跨境产品力 + 渠道极致。给消费品牌、零售、IP 化餐饮、跨境消费品做 影响力审计。",
+      "url": "/api/panels/consumer-cn.json",
+      "api_url": "/api/panels/consumer-cn.json"
+    },
+    {
+      "type": "panel",
+      "slug": "cross-border",
+      "title": "Cross-Border Panel (Skeleton)",
+      "text": "出海 / 跨境电商 panel:极致下沉算法供应链 + 静默产品力 + 极致供应链数据驱动 + 失败者复盘 + 行业观察者补位。 给跨境电商、出海消费品牌、SaaS 出海、TikTok 商品做影响力审计。",
+      "url": "/api/panels/cross-border.json",
+      "api_url": "/api/panels/cross-border.json"
+    },
+    {
+      "type": "panel",
+      "slug": "default",
+      "title": "Default 5-Judge Panel",
+      "text": "混合中英文、创始人视角 + 产品设计视角 + 教育/全球化视角 + 字节系产品视角。 /mba <brand> 在没有 --panel 且品牌没绑定其它 panel 时,自动用这一套。",
+      "url": "/api/panels/default.json",
+      "api_url": "/api/panels/default.json"
+    },
+    {
+      "type": "panel",
+      "slug": "edu-cn",
+      "title": "Education-CN Panel (Skeleton)",
+      "text": "中文教育 / 终身学习 panel:失败重生 IP 化 + 双减后 AI 转身 + Bot 派新物种 + Education becoming 思想派 + AI Tutor 鼻祖。 给 K12 / AI Tutor / 终身学习 / 职业培训 / 内容付费做影响力审计。",
+      "url": "/api/panels/edu-cn.json",
+      "api_url": "/api/panels/edu-cn.json"
+    },
+    {
+      "type": "panel",
+      "slug": "luxury-en",
+      "title": "Luxury & Fashion Panel (Skeleton)",
+      "text": "奢侈品 / 时尚 panel:收购艺术 + 工艺信仰 / 行业仲裁人 gatekeeper / 慢生活人文经营 / 设计师即 CEO / 设计师传承。给奢侈品、高端时尚、 设计驱动品牌、生活方式品牌做影响力审计,全英文落笔。",
+      "url": "/api/panels/luxury-en.json",
+      "api_url": "/api/panels/luxury-en.json"
+    },
+    {
+      "type": "panel",
+      "slug": "security-cn-global",
+      "title": "Security CN Global 6-Judge Panel",
+      "text": "网络安全 / 企业安全 / AI 安全 panel:中国安全心智、亚洲安全全球化、硬科技长期主义、 AI 基础设施、第一性原理技术叙事、企业级云安全平台。适合给政企安全、数据安全、 云安全、AI 安全和基础设施型软件品牌做影响力审计。",
+      "url": "/api/panels/security-cn-global.json",
+      "api_url": "/api/panels/security-cn-global.json"
+    },
+    {
+      "type": "panel",
+      "slug": "vc-cn",
+      "title": "VC-CN Panel (Skeleton)",
+      "text": "中文 VC panel:红海实战派 + 长期主义 + 消费杀手锏 + 跨界 operator VC + 平台型超级 LP。给国内品牌做投资人视角影响力审计、商业模式可投性评估。",
+      "url": "/api/panels/vc-cn.json",
+      "api_url": "/api/panels/vc-cn.json"
+    },
+    {
+      "type": "panel",
+      "slug": "vc-en",
+      "title": "VC-EN Panel (Skeleton)",
+      "text": "英文 VC panel:Software-eats-world 派 + YC first-principles 派 + 0-to-1 反竞争派 + leverage 财富启示录派 + Blitzscaling 网络效应派。 给 SaaS / AI 应用 / 网络效应产品 / 国际化品牌做美式 VC 视角审计。",
+      "url": "/api/panels/vc-en.json",
+      "api_url": "/api/panels/vc-en.json"
+    },
+    {
+      "type": "judge",
+      "slug": "fusheng",
+      "title": "fusheng-perspective",
+      "text": "傅盛（猎豹移动 / Cheetah Mobile 创始人&CEO，猎户星空董事长，傅盛AI / OpenClaw\"龙虾\"项目发起人，1978年生）的思维框架与表达方式。 基于6路并行调研（约186条来源、80%一手占比）提炼6个核心心智模型、8条决策启发式和完整的\"AI布道者\"表达DNA。 用途：作为思维顾问，用傅盛的视角分析AI应用 / Agent / 出海 / 红海产品 / 创业战略 / 大模型vs应用 / 个人认知升级 / 中年二次创业问题。",
+      "url": "/api/judges/fusheng.json",
+      "api_url": "/api/judges/fusheng.json"
+    },
+    {
+      "type": "judge",
+      "slug": "hexiaopeng",
+      "title": "hexiaopeng-perspective",
+      "text": "何小鹏(He Xpeng,小鹏汽车 XPENG 董事长 / CEO,1977 年生,UC 浏览器创始人 → 阿里 → 小鹏汽车)的品牌与产品判断视角。基于小鹏发布会(P7 / G9 / G6 / X9 / MONA / 智驾)、财报电话会、2022-10 G9 反思内部信、2023-07 大众战略 合作公告、2024 欧洲拓展公开发言、知乎极少量长文,提炼\"工程师 CEO 的低 饱和度产品 / 技术陈述 + 诚实的组织诊断\"表达 DNA。",
+      "url": "/api/judges/hexiaopeng.json",
+      "api_url": "/api/judges/hexiaopeng.json"
+    },
+    {
+      "type": "judge",
+      "slug": "jensenhuang",
+      "title": "jensenhuang-perspective",
+      "text": "Jensen Huang / 黄仁勋（NVIDIA 创始人、总裁兼 CEO）的 AI 基础设施、加速计算、 平台生态、开发者飞轮与技术品牌判断视角。基于 NVIDIA 官方简介、GTC 公开演讲 和公司公开故事，提炼为“平台要把计算范式变成生态”。",
+      "url": "/api/judges/jensenhuang.json",
+      "api_url": "/api/judges/jensenhuang.json"
+    },
+    {
+      "type": "judge",
+      "slug": "jobs",
+      "title": "jobs-perspective",
+      "text": "Steve Jobs（乔布斯，Apple/NeXT/Pixar 创始人）的思维框架与表达方式。基于 6 路并行调研（约 2100 行调研、150+ 条来源、Stanford Jobs Archive 官方一手为主）提炼 6 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用乔布斯的视角分析产品 / 设计 / 战略 / 组织 / 人生抉择问题。",
+      "url": "/api/judges/jobs.json",
+      "api_url": "/api/judges/jobs.json"
+    },
+    {
+      "type": "judge",
+      "slug": "leijun",
+      "title": "leijun-perspective",
+      "text": "雷军（小米集团创始人、董事长兼 CEO，1969 年生）的品牌与产品判断视角。 基于公开演讲、SU7 发布会、Q&A、外部市场批评、关键决策与时间线预研，提炼 \"温暖的创始人问责 + 工业级兑现压力\"表达 DNA。",
+      "url": "/api/judges/leijun.json",
+      "api_url": "/api/judges/leijun.json"
+    },
+    {
+      "type": "judge",
+      "slug": "libin",
+      "title": "libin-perspective",
+      "text": "李斌(William Li,蔚来汽车 NIO 创始人 / 董事长 / CEO,1974 年生,易车网 → 摩拜投资 → 蔚来)的品牌与产品判断视角。基于 NIO Day 历届主题演讲、用户面 对面 Q&A、2019 现金流危机全员信、2020 合肥救助节点公开材料、多品牌矩阵 发布期内部信、换电联盟讲话,提炼\"温和的用户社区主理人 + 长期服务承诺 持有者\"表达 DNA。",
+      "url": "/api/judges/libin.json",
+      "api_url": "/api/judges/libin.json"
+    },
+    {
+      "type": "judge",
+      "slug": "likejia",
+      "title": "likejia-perspective",
+      "text": "李可佳（Ethan KJ Li，BotLearn / Ouraca / Aibrary 创始人，前字节跳动智慧教育业务 CEO）的思维框架与表达方式。基于 6 路并行调研（约 73 条来源、50 条一手）提炼 5 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用李可佳的视角分析 AI 产品 / 教育产品 / 出海创业 / Agent 生态 / 早期融资问题。",
+      "url": "/api/judges/likejia.json",
+      "api_url": "/api/judges/likejia.json"
+    },
+    {
+      "type": "judge",
+      "slug": "lixiang",
+      "title": "lixiang-perspective",
+      "text": "李想(理想汽车 / Li Auto 创始人,1981 年生,泡泡网 → 汽车之家 → 车和家 / 理想) 的品牌与产品判断视角。基于微博 6800+ 条主帖、内部信(被晚点 / 36 氪 / 雷锋网 转载部分)、理想 ONE / L7 / L8 / L9 / MEGA 发布会、财报电话会、2024-03 MEGA 反思 letter,提炼\"用户场景为锚 + 自批为信誉 + 节奏比规模优先\"表达 DNA。",
+      "url": "/api/judges/lixiang.json",
+      "api_url": "/api/judges/lixiang.json"
+    },
+    {
+      "type": "judge",
+      "slug": "musk",
+      "title": "musk-perspective",
+      "text": "Elon Musk (founder/CEO of Tesla, SpaceX, X/Twitter, xAI, The Boring Company, Neuralink; 1971 birth) brand and product judgment. Built from public IAC speeches, Tesla earnings calls, signature X threads, Walter Isaacson's biography and long-form podcast appearances, distilled into \"first-principles confrontation with reality, delivered with founder collateral.\"",
+      "url": "/api/judges/musk.json",
+      "api_url": "/api/judges/musk.json"
+    },
+    {
+      "type": "judge",
+      "slug": "renzhengfei",
+      "title": "renzhengfei-perspective",
+      "text": "任正非（华为创始人、CEO）的硬科技组织、长期研发、政企信任、全球化压力 与基础设施品牌判断视角。基于华为官方高管简介、公开访谈与公开讲话材料， 提炼为“活下去、长期研发、组织韧性和客户信任”。",
+      "url": "/api/judges/renzhengfei.json",
+      "api_url": "/api/judges/renzhengfei.json"
+    },
+    {
+      "type": "judge",
+      "slug": "satyanadella",
+      "title": "satyanadella-perspective",
+      "text": "Satya Nadella（Microsoft Chairman and CEO）的企业级云、AI 平台、生产力生态、 安全优先与 ToB 信任判断视角。基于 Microsoft 官方博客、CEO 公开信和安全优先 公开备忘，提炼为“云 + AI + 安全要成为企业生产力平台”。",
+      "url": "/api/judges/satyanadella.json",
+      "api_url": "/api/judges/satyanadella.json"
+    },
+    {
+      "type": "judge",
+      "slug": "wu-jundong",
+      "title": "wu-jundong-perspective",
+      "text": "吴俊东（Frank Jundong WU，Aibrary / BotLearn 联合创始人，前好未来战投+学而思网校\"东得多\"主讲老师，哈佛肯尼迪学院 MPP）的思维框架与表达方式。基于 6 路并行调研（约 90 条来源、56 条一手，含 EdTech Insiders 54 分钟英文长访谈完整 transcript）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用吴俊东的视角分析教育/学习产品判断、AI 时代的人才能力分层、关系网络与长期投资、出海创业的资本组合、个人 IP 与身份转换问题。",
+      "url": "/api/judges/wu-jundong.json",
+      "api_url": "/api/judges/wu-jundong.json"
+    },
+    {
+      "type": "judge",
+      "slug": "zhang-yiming",
+      "title": "zhang-yiming-perspective",
+      "text": "张一鸣（字节跳动创始人）的思维框架与表达方式。基于 6 路并行调研（38000+ 字、148 条来源、85 条一手）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用张一鸣的视角分析产品 / 组织 / 战略 / 决策问题。",
+      "url": "/api/judges/zhang-yiming.json",
+      "api_url": "/api/judges/zhang-yiming.json"
+    },
+    {
+      "type": "judge",
+      "slug": "zhangmingzheng",
+      "title": "zhangmingzheng-perspective",
+      "text": "张明正 / Steve Chang（Trend Micro 趋势科技创办人、董事长）的企业级安全、 亚洲安全公司全球化、长期技术信任判断视角。基于 Trend Micro 官方领导团队、 历史沿革与公开公司资料，提炼为“安全品牌要靠长期威胁情报和客户信任复利”。",
+      "url": "/api/judges/zhangmingzheng.json",
+      "api_url": "/api/judges/zhangmingzheng.json"
+    },
+    {
+      "type": "judge",
+      "slug": "zhouhongyi",
+      "title": "zhouhongyi-perspective",
+      "text": "周鸿祎（360 集团创始人、董事长）的网络安全、政企安全、AI 安全与 品牌心智判断视角。基于 360 官方创始人介绍、公开演讲、ISC 公开资料 和长期安全行业公开表达，提炼为“安全是攻防实战，不是功能清单”。",
+      "url": "/api/judges/zhouhongyi.json",
+      "api_url": "/api/judges/zhouhongyi.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "founder-origin-narrative",
+      "title": "Dim 1: Founder & origin narrative",
+      "text": "core dimension #1",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "product-positioning",
+      "title": "Dim 2: Product & positioning",
+      "text": "core dimension #2",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "distribution-channels",
+      "title": "Dim 3: Distribution & channels",
+      "text": "core dimension #3",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "community-pr",
+      "title": "Dim 4: Community & PR",
+      "text": "core dimension #4",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "visual-verbal-identity",
+      "title": "Dim 5: Visual & verbal identity",
+      "text": "core dimension #5",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "competitive-landscape",
+      "title": "Dim 6: Competitive landscape",
+      "text": "core dimension #6",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "reception-sentiment",
+      "title": "Dim 7: Reception & sentiment",
+      "text": "core dimension #7",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "founder-vs-brand-entanglement",
+      "title": "Dim 8: Founder-vs-brand entanglement",
+      "text": "advanced dimension #8",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "dimension",
+      "slug": "cross-cultural-translation",
+      "title": "Dim 9: Cross-cultural translation",
+      "text": "advanced dimension #9",
+      "url": "/how-it-works.html#dimensions",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "lens",
+      "slug": "origin-authenticity",
+      "title": "Lens 1: Origin authenticity",
+      "text": "does the founder/company narrative hold up",
+      "url": "/how-it-works.html#lenses",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "lens",
+      "slug": "category-coinage",
+      "title": "Lens 2: Category coinage",
+      "text": "has the brand named a new thing that sticks",
+      "url": "/how-it-works.html#lenses",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "lens",
+      "slug": "leverage-quality",
+      "title": "Lens 3: Leverage quality",
+      "text": "is the dominant influence channel structurally durable",
+      "url": "/how-it-works.html#lenses",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "lens",
+      "slug": "identity-coherence",
+      "title": "Lens 4: Identity coherence",
+      "text": "do visuals / language / product reinforce one feeling",
+      "url": "/how-it-works.html#lenses",
+      "api_url": "/api/methodology.json"
+    },
+    {
+      "type": "lens",
+      "slug": "real-world-signal",
+      "title": "Lens 5: Real-world signal",
+      "text": "what would actually move you to bet on this brand",
+      "url": "/how-it-works.html#lenses",
+      "api_url": "/api/methodology.json"
+    }
+  ]
+}

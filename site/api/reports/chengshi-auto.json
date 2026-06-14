@@ -1,0 +1,19 @@
+{
+  "slug": "chengshi-auto",
+  "brand_cn": "橙仕汽车",
+  "brand_en": "Chengshi Auto",
+  "ticker": null,
+  "version": "v6",
+  "audit_date": "2026-05-18",
+  "panel": "auto",
+  "score": {
+    "total": 31.0,
+    "max": 50,
+    "normalized": 6.2
+  },
+  "tl_dr": "末端配送生产力品牌:场景切口清晰,真实应用信号增强,但服务数据透明度 和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50, 综合分 6.2/10。",
+  "html_url": "/reports/chengshi-auto/",
+  "pdf_url": "/reports/chengshi-auto/report.pdf",
+  "api_url": "/api/reports/chengshi-auto.json",
+  "panel_api_url": "/api/panels/auto.json"
+}

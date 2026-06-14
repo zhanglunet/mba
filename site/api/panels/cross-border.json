@@ -1,0 +1,48 @@
+{
+  "slug": "cross-border",
+  "display_name": "Cross-Border Panel (Skeleton)",
+  "status": "skeleton",
+  "description": "出海 / 跨境电商 panel:极致下沉算法供应链 + 静默产品力 + 极致供应链数据驱动 + 失败者复盘 + 行业观察者补位。 给跨境电商、出海消费品牌、SaaS 出海、TikTok 商品做影响力审计。",
+  "judges": [
+    {
+      "slug": "huangzheng",
+      "display_name_cn": "黄峥",
+      "display_name_en": "Colin Huang",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": null
+    },
+    {
+      "slug": "yangjianhui",
+      "display_name_cn": "杨建辉",
+      "display_name_en": "Steven Yang",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": null
+    },
+    {
+      "slug": "zhangyong-shein",
+      "display_name_cn": "张勇",
+      "display_name_en": "Chris Xu",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": null
+    },
+    {
+      "slug": "chennian",
+      "display_name_cn": "陈年",
+      "display_name_en": "Chen Nian",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": null
+    },
+    {
+      "slug": "zhuangshuai",
+      "display_name_cn": "庄帅",
+      "display_name_en": "Zhuang Shuai",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": null
+    }
+  ]
+}

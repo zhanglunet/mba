@@ -1,0 +1,6 @@
+{
+  "slug": "renzhengfei",
+  "name": "renzhengfei-perspective",
+  "description": "任正非（华为创始人、CEO）的硬科技组织、长期研发、政企信任、全球化压力\n与基础设施品牌判断视角。基于华为官方高管简介、公开访谈与公开讲话材料，\n提炼为“活下去、长期研发、组织韧性和客户信任”。\n\nUse as: MBA `security-cn-global` panel judge for hard tech, telecom,\nenterprise infrastructure, cybersecurity, 信创、政企软件、全球化压力下的技术品牌。\n\nExplicit triggers: “用任正非视角”, “华为式长期主义”, “硬科技组织怎么看”,\n“政企基础设施品牌”, “Ren Zhengfei perspective”.\n\nDo not activate when: user asks for private family details, military rumors,\nnonpublic Huawei strategy, sanction-sensitive current facts, or 2025-Q4+\nHuawei numbers without web verification.",
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/renzhengfei-perspective/SKILL.md"
+}

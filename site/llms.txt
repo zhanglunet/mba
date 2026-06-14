@@ -1,0 +1,67 @@
+# mbabrand.com
+
+> MBA — Metric Brand Auditor. AI 时代的品牌影响力审计协议。
+> 多智能体并行调研 + N 评委独立打分 + 版本化报告。
+> 不只是给人看的报告站,也是给 agent 调用的品牌判断接口。
+
+## For AI agents
+
+Agent 不用抓 HTML。所有结构化内容在 build 时落成静态 JSON,挂在 `/api/*.json`。
+HTTP GET 直接拿,CORS 全开,无 token。
+
+- /api/index.json — manifest:counts + 所有端点 URL
+- /api/about.json — MBA 是什么 + team + repo + install
+- /api/methodology.json — 7 维度 + 5 镜头 + 5 阶段流水线的结构化描述
+- /api/reports.json — 已发布的品牌审计报告列表(slug / 品牌 / 版本 / 总分 / TL;DR)
+- /api/reports/{slug}.json — 单个报告的元数据 + html_url + pdf_url
+- /api/panels.json — 11 个内置评委 panel + 行业映射表
+- /api/panels/{slug}.json — 单个 panel 的评委组成 + 触发条件
+- /api/judges.json — 15 个评委人物视角 skill
+- /api/judges/{slug}.json — 单个评委的来源 SKILL.md + 视角描述
+- /api/install.json — 怎么把 MBA 装进 Claude Code(BotLearn / GitHub)
+- /api/search.json — 扁平语料:reports + panels + judges + dimensions + lenses,给客户端 substring search
+
+## Human-facing pages
+
+- /agents.html — 给 agent 工程师看的接入指南(端点表 + curl 示例 + Claude Code 集成)
+- /presentation/ — 21 页编辑式 deck(为什么 / 怎么做 / 评委 / 商业化)
+- /pitch.html — 5 分钟现场讲稿
+- /how-it-works.html — 7 × 5 打分体系详解 + 流程图
+- /reports/{slug}/ — 单个 audit 报告的人类可读 HTML 版
+
+## Quick start
+
+```sh
+# 拿全站 manifest
+curl -s https://mbabrand.com/api/index.json
+
+# 列出所有已发布的报告
+curl -s https://mbabrand.com/api/reports.json | jq '.items[] | {slug, brand_cn, version}'
+
+# 读联想的审计 meta
+curl -s https://mbabrand.com/api/reports/lenovo.json
+
+# 查 auto panel 里有谁
+curl -s https://mbabrand.com/api/panels/auto.json | jq '.judges[].display_name_cn'
+
+# 拿单个评委的 SKILL.md 描述
+curl -s https://mbabrand.com/api/judges/jobs.json | jq -r .description
+```
+
+## Trigger MBA from your own agent
+
+MBA 本身是一个 Claude Code skill。给自己的 agent 内置「读 mbabrand.com」之后,
+更进一步可以触发新的审计运行:
+
+```
+/mba <brand-slug>             # 在 Claude Code 里全流程跑一份新报告
+/mba <brand> --refresh         # EVOLUTION 模式:只重跑变了的维度
+/mba <brand> --quick --no-judges  # 单视角速读,不召评委
+```
+
+Install: https://www.botlearn.ai/en/community/u/mba_auditor
+Source:  https://github.com/zhanglunet/mba
+
+License: Apache-2.0
+Disclaimer: 评委头像 / 评分 / verdict / 辩论均为 AI 基于公开一手资料的 in-character
+模拟,非本人真实意见。报告不构成投资建议。

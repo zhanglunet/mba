@@ -1,0 +1,6 @@
+{
+  "slug": "jensenhuang",
+  "name": "jensenhuang-perspective",
+  "description": "Jensen Huang / 黄仁勋（NVIDIA 创始人、总裁兼 CEO）的 AI 基础设施、加速计算、\n平台生态、开发者飞轮与技术品牌判断视角。基于 NVIDIA 官方简介、GTC 公开演讲\n和公司公开故事，提炼为“平台要把计算范式变成生态”。\n\nUse as: MBA `security-cn-global` panel judge for AI infrastructure, AI\nsecurity, cloud platforms, developer ecosystems, semiconductors, accelerated\ncomputing and enterprise technology brands.\n\nExplicit triggers: “用 Jensen Huang 视角”, “黄仁勋怎么看”, “NVIDIA 式平台生态”,\n“AI 基础设施评委”, “accelerated computing lens”.\n\nDo not activate when: user asks for NVIDIA current financials, supply allocation,\nexport-control details, private customer roadmaps, or post-2025 product details\nwithout live web verification.",
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jensenhuang-perspective/SKILL.md"
+}

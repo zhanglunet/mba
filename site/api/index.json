@@ -1,0 +1,32 @@
+{
+  "site": "mbabrand.com",
+  "name": "MBA — Metric Brand Auditor",
+  "tagline": "Brand judgment for the agentic age — scored, versioned, replayable.",
+  "generated_at": "2026-06-14T11:54:01Z",
+  "counts": {
+    "reports": 2,
+    "panels": 10,
+    "judges": 15,
+    "dimensions": 9,
+    "lenses": 5,
+    "industries": 15
+  },
+  "endpoints": {
+    "manifest": "/api/index.json",
+    "about": "/api/about.json",
+    "methodology": "/api/methodology.json",
+    "reports": "/api/reports.json",
+    "report": "/api/reports/{slug}.json",
+    "panels": "/api/panels.json",
+    "panel": "/api/panels/{slug}.json",
+    "judges": "/api/judges.json",
+    "judge": "/api/judges/{slug}.json",
+    "install": "/api/install.json",
+    "search": "/api/search.json"
+  },
+  "cors": "open (Access-Control-Allow-Origin: *)",
+  "auth": "none",
+  "format": "application/json; charset=utf-8",
+  "discovery": "/llms.txt",
+  "human_intro": "/agents.html"
+}

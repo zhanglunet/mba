@@ -1,0 +1,48 @@
+{
+  "slug": "auto",
+  "display_name": "Auto Industry Panel",
+  "status": "production",
+  "description": "汽车 / 电动车 panel:中国新势力 4 家(理想 / 小鹏 / 蔚来 / 小米)+ Tesla。 每位都是创始人兼 CEO,视角偏产品 / 制造 / 营销 / 用户社区 / 自动驾驶赌注。 适合给主机厂、新势力、智能电动品牌做影响力审计。",
+  "judges": [
+    {
+      "slug": "musk",
+      "display_name_cn": "马斯克",
+      "display_name_en": "Elon Musk",
+      "language": "en",
+      "weight": 1.0,
+      "api_url": "/api/judges/musk.json"
+    },
+    {
+      "slug": "leijun",
+      "display_name_cn": "雷军",
+      "display_name_en": "Lei Jun",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/leijun.json"
+    },
+    {
+      "slug": "lixiang",
+      "display_name_cn": "李想",
+      "display_name_en": "Li Xiang",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/lixiang.json"
+    },
+    {
+      "slug": "hexiaopeng",
+      "display_name_cn": "何小鹏",
+      "display_name_en": "He Xiaopeng",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/hexiaopeng.json"
+    },
+    {
+      "slug": "libin",
+      "display_name_cn": "李斌",
+      "display_name_en": "William Li",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/libin.json"
+    }
+  ]
+}

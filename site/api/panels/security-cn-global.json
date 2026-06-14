@@ -1,0 +1,56 @@
+{
+  "slug": "security-cn-global",
+  "display_name": "Security CN Global 6-Judge Panel",
+  "status": "production",
+  "description": "网络安全 / 企业安全 / AI 安全 panel:中国安全心智、亚洲安全全球化、硬科技长期主义、 AI 基础设施、第一性原理技术叙事、企业级云安全平台。适合给政企安全、数据安全、 云安全、AI 安全和基础设施型软件品牌做影响力审计。",
+  "judges": [
+    {
+      "slug": "zhouhongyi",
+      "display_name_cn": "周鸿祎",
+      "display_name_en": "Zhou Hongyi",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/zhouhongyi.json"
+    },
+    {
+      "slug": "zhangmingzheng",
+      "display_name_cn": "张明正",
+      "display_name_en": "Steve Chang",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/zhangmingzheng.json"
+    },
+    {
+      "slug": "renzhengfei",
+      "display_name_cn": "任正非",
+      "display_name_en": "Ren Zhengfei",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/renzhengfei.json"
+    },
+    {
+      "slug": "jensenhuang",
+      "display_name_cn": "黄仁勋",
+      "display_name_en": "Jensen Huang",
+      "language": "en",
+      "weight": 1.0,
+      "api_url": "/api/judges/jensenhuang.json"
+    },
+    {
+      "slug": "musk",
+      "display_name_cn": "马斯克",
+      "display_name_en": "Elon Musk",
+      "language": "en",
+      "weight": 1.0,
+      "api_url": "/api/judges/musk.json"
+    },
+    {
+      "slug": "satyanadella",
+      "display_name_cn": "萨提亚·纳德拉",
+      "display_name_en": "Satya Nadella",
+      "language": "en",
+      "weight": 1.0,
+      "api_url": "/api/judges/satyanadella.json"
+    }
+  ]
+}

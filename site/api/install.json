@@ -1,0 +1,26 @@
+{
+  "skill_invoke": "/mba <brand>",
+  "quick_start": [
+    "/mba openai --quick --no-judges    # single-pass open-web read, no judge panel",
+    "/mba lenovo                        # full pipeline, default 5-judge panel",
+    "/mba xpeng --panel auto            # use a specific industry panel",
+    "/mba <brand> --refresh             # force EVOLUTION even if report exists"
+  ],
+  "platforms": [
+    {
+      "name": "BotLearn (SkillHunt)",
+      "url": "https://www.botlearn.ai/en/community/u/mba_auditor",
+      "description": "One-click install into Claude Code as a skill named `mba_auditor`."
+    },
+    {
+      "name": "GitHub (manual)",
+      "url": "https://github.com/zhanglunet/mba",
+      "description": "Clone the repo and point Claude Code's skills directory at metric-brand-auditor/ + perspectives/."
+    }
+  ],
+  "requirements": [
+    "Claude Code (CLI / IDE extension) or Claude API access",
+    "Claude Opus 4.7 recommended for the Lead role; Sonnet 4.6 works for sub-agents",
+    "Optional: 阿里云无影 AgentBay for the Wuying cloud-browser leg (X / RedNote / Bilibili / Chinese press signal)"
+  ]
+}

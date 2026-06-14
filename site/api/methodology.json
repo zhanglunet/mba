@@ -1,0 +1,134 @@
+{
+  "framework": {
+    "dimensions_total": 9,
+    "dimensions_default": 7,
+    "lenses_total": 5,
+    "judges_default": 5
+  },
+  "dimensions": [
+    {
+      "n": 1,
+      "slug": "founder-origin-narrative",
+      "name_en": "Founder & origin narrative",
+      "tier": "core"
+    },
+    {
+      "n": 2,
+      "slug": "product-positioning",
+      "name_en": "Product & positioning",
+      "tier": "core"
+    },
+    {
+      "n": 3,
+      "slug": "distribution-channels",
+      "name_en": "Distribution & channels",
+      "tier": "core"
+    },
+    {
+      "n": 4,
+      "slug": "community-pr",
+      "name_en": "Community & PR",
+      "tier": "core"
+    },
+    {
+      "n": 5,
+      "slug": "visual-verbal-identity",
+      "name_en": "Visual & verbal identity",
+      "tier": "core"
+    },
+    {
+      "n": 6,
+      "slug": "competitive-landscape",
+      "name_en": "Competitive landscape",
+      "tier": "core"
+    },
+    {
+      "n": 7,
+      "slug": "reception-sentiment",
+      "name_en": "Reception & sentiment",
+      "tier": "core"
+    },
+    {
+      "n": 8,
+      "slug": "founder-vs-brand-entanglement",
+      "name_en": "Founder-vs-brand entanglement",
+      "tier": "advanced"
+    },
+    {
+      "n": 9,
+      "slug": "cross-cultural-translation",
+      "name_en": "Cross-cultural translation",
+      "tier": "advanced"
+    }
+  ],
+  "lenses": [
+    {
+      "n": 1,
+      "slug": "origin-authenticity",
+      "name_en": "Origin authenticity",
+      "description": "does the founder/company narrative hold up"
+    },
+    {
+      "n": 2,
+      "slug": "category-coinage",
+      "name_en": "Category coinage",
+      "description": "has the brand named a new thing that sticks"
+    },
+    {
+      "n": 3,
+      "slug": "leverage-quality",
+      "name_en": "Leverage quality",
+      "description": "is the dominant influence channel structurally durable"
+    },
+    {
+      "n": 4,
+      "slug": "identity-coherence",
+      "name_en": "Identity coherence",
+      "description": "do visuals / language / product reinforce one feeling"
+    },
+    {
+      "n": 5,
+      "slug": "real-world-signal",
+      "name_en": "Real-world signal",
+      "description": "what would actually move you to bet on this brand"
+    }
+  ],
+  "pipeline": [
+    {
+      "phase": 0,
+      "name": "Router",
+      "summary": "Lead checks reports/<brand>/report.md → FRESH or EVOLUTION."
+    },
+    {
+      "phase": 1,
+      "name": "Discovery",
+      "summary": "Lead drafts PRD: brand framing, 7 dimensions, panel choice, optional cloud-browser leg."
+    },
+    {
+      "phase": 2,
+      "name": "Parallel Search",
+      "summary": "N sub-agents research one dimension each + optional Wuying cloud-browser leg."
+    },
+    {
+      "phase": 3,
+      "name": "Synthesis",
+      "summary": "Lead reads _raw/ → synthesis.md: leverage map, fragile edges, cross-dim contradictions."
+    },
+    {
+      "phase": 4,
+      "name": "N-Judge Panel",
+      "summary": "Each judge loads its perspective skill, scores 5 lenses 1-10 independently."
+    },
+    {
+      "phase": 5,
+      "name": "Lead Merge",
+      "summary": "Synthesis + reviews → report.md / report.html / versions/v{n}."
+    }
+  ],
+  "panel_resolution_order": [
+    "--panel <name>          # CLI flag",
+    "--industry <name>       # industries.yaml map",
+    "reports/<brand>/panel.yaml  # brand-bound panel",
+    "panels/default.yaml     # fallback"
+  ]
+}

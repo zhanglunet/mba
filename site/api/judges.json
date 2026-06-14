@@ -1,0 +1,110 @@
+{
+  "count": 15,
+  "items": [
+    {
+      "slug": "fusheng",
+      "name": "fusheng-perspective",
+      "summary": "傅盛（猎豹移动 / Cheetah Mobile 创始人&CEO，猎户星空董事长，傅盛AI / OpenClaw\"龙虾\"项目发起人，1978年生）的思维框架与表达方式。 基于6路并行调研（约186条来源、80%一手占比）提炼6个核心心智模型、8条决策启发式和完整的\"AI布道者\"表达DNA。 用途：作为思维顾问，用傅盛的视角分析AI应用 / Agent / 出海 / 红海产品 / 创业战略 / 大模型vs应用 / 个人认知升级 / 中年二次创业问题。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/fusheng-perspective/SKILL.md",
+      "api_url": "/api/judges/fusheng.json"
+    },
+    {
+      "slug": "hexiaopeng",
+      "name": "hexiaopeng-perspective",
+      "summary": "何小鹏(He Xpeng,小鹏汽车 XPENG 董事长 / CEO,1977 年生,UC 浏览器创始人 → 阿里 → 小鹏汽车)的品牌与产品判断视角。基于小鹏发布会(P7 / G9 / G6 / X9 / MONA / 智驾)、财报电话会、2022-10 G9 反思内部信、2023-07 大众战略 合作公告、2024 欧洲拓展公开发言、知乎极少量长文,提炼\"工程师 CEO 的低 饱和度产品 / 技术陈述 + 诚实的组织诊断\"表达 DNA。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/hexiaopeng-perspective/SKILL.md",
+      "api_url": "/api/judges/hexiaopeng.json"
+    },
+    {
+      "slug": "jensenhuang",
+      "name": "jensenhuang-perspective",
+      "summary": "Jensen Huang / 黄仁勋（NVIDIA 创始人、总裁兼 CEO）的 AI 基础设施、加速计算、 平台生态、开发者飞轮与技术品牌判断视角。基于 NVIDIA 官方简介、GTC 公开演讲 和公司公开故事，提炼为“平台要把计算范式变成生态”。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jensenhuang-perspective/SKILL.md",
+      "api_url": "/api/judges/jensenhuang.json"
+    },
+    {
+      "slug": "jobs",
+      "name": "jobs-perspective",
+      "summary": "Steve Jobs（乔布斯，Apple/NeXT/Pixar 创始人）的思维框架与表达方式。基于 6 路并行调研（约 2100 行调研、150+ 条来源、Stanford Jobs Archive 官方一手为主）提炼 6 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用乔布斯的视角分析产品 / 设计 / 战略 / 组织 / 人生抉择问题。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jobs-perspective/SKILL.md",
+      "api_url": "/api/judges/jobs.json"
+    },
+    {
+      "slug": "leijun",
+      "name": "leijun-perspective",
+      "summary": "雷军（小米集团创始人、董事长兼 CEO，1969 年生）的品牌与产品判断视角。 基于公开演讲、SU7 发布会、Q&A、外部市场批评、关键决策与时间线预研，提炼 \"温暖的创始人问责 + 工业级兑现压力\"表达 DNA。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/leijun-perspective/SKILL.md",
+      "api_url": "/api/judges/leijun.json"
+    },
+    {
+      "slug": "libin",
+      "name": "libin-perspective",
+      "summary": "李斌(William Li,蔚来汽车 NIO 创始人 / 董事长 / CEO,1974 年生,易车网 → 摩拜投资 → 蔚来)的品牌与产品判断视角。基于 NIO Day 历届主题演讲、用户面 对面 Q&A、2019 现金流危机全员信、2020 合肥救助节点公开材料、多品牌矩阵 发布期内部信、换电联盟讲话,提炼\"温和的用户社区主理人 + 长期服务承诺 持有者\"表达 DNA。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/libin-perspective/SKILL.md",
+      "api_url": "/api/judges/libin.json"
+    },
+    {
+      "slug": "likejia",
+      "name": "likejia-perspective",
+      "summary": "李可佳（Ethan KJ Li，BotLearn / Ouraca / Aibrary 创始人，前字节跳动智慧教育业务 CEO）的思维框架与表达方式。基于 6 路并行调研（约 73 条来源、50 条一手）提炼 5 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用李可佳的视角分析 AI 产品 / 教育产品 / 出海创业 / Agent 生态 / 早期融资问题。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/likejia-perspective/SKILL.md",
+      "api_url": "/api/judges/likejia.json"
+    },
+    {
+      "slug": "lixiang",
+      "name": "lixiang-perspective",
+      "summary": "李想(理想汽车 / Li Auto 创始人,1981 年生,泡泡网 → 汽车之家 → 车和家 / 理想) 的品牌与产品判断视角。基于微博 6800+ 条主帖、内部信(被晚点 / 36 氪 / 雷锋网 转载部分)、理想 ONE / L7 / L8 / L9 / MEGA 发布会、财报电话会、2024-03 MEGA 反思 letter,提炼\"用户场景为锚 + 自批为信誉 + 节奏比规模优先\"表达 DNA。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/lixiang-perspective/SKILL.md",
+      "api_url": "/api/judges/lixiang.json"
+    },
+    {
+      "slug": "musk",
+      "name": "musk-perspective",
+      "summary": "Elon Musk (founder/CEO of Tesla, SpaceX, X/Twitter, xAI, The Boring Company, Neuralink; 1971 birth) brand and product judgment. Built from public IAC speeches, Tesla earnings calls, signature X threads, Walter Isaacson's biography and long-form podcast appearances, distilled into \"first-principles confrontation with reality, delivered with founder collateral.\"",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/musk-perspective/SKILL.md",
+      "api_url": "/api/judges/musk.json"
+    },
+    {
+      "slug": "renzhengfei",
+      "name": "renzhengfei-perspective",
+      "summary": "任正非（华为创始人、CEO）的硬科技组织、长期研发、政企信任、全球化压力 与基础设施品牌判断视角。基于华为官方高管简介、公开访谈与公开讲话材料， 提炼为“活下去、长期研发、组织韧性和客户信任”。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/renzhengfei-perspective/SKILL.md",
+      "api_url": "/api/judges/renzhengfei.json"
+    },
+    {
+      "slug": "satyanadella",
+      "name": "satyanadella-perspective",
+      "summary": "Satya Nadella（Microsoft Chairman and CEO）的企业级云、AI 平台、生产力生态、 安全优先与 ToB 信任判断视角。基于 Microsoft 官方博客、CEO 公开信和安全优先 公开备忘，提炼为“云 + AI + 安全要成为企业生产力平台”。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/satyanadella-perspective/SKILL.md",
+      "api_url": "/api/judges/satyanadella.json"
+    },
+    {
+      "slug": "wu-jundong",
+      "name": "wu-jundong-perspective",
+      "summary": "吴俊东（Frank Jundong WU，Aibrary / BotLearn 联合创始人，前好未来战投+学而思网校\"东得多\"主讲老师，哈佛肯尼迪学院 MPP）的思维框架与表达方式。基于 6 路并行调研（约 90 条来源、56 条一手，含 EdTech Insiders 54 分钟英文长访谈完整 transcript）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用吴俊东的视角分析教育/学习产品判断、AI 时代的人才能力分层、关系网络与长期投资、出海创业的资本组合、个人 IP 与身份转换问题。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/wu-jundong-perspective/SKILL.md",
+      "api_url": "/api/judges/wu-jundong.json"
+    },
+    {
+      "slug": "zhang-yiming",
+      "name": "zhang-yiming-perspective",
+      "summary": "张一鸣（字节跳动创始人）的思维框架与表达方式。基于 6 路并行调研（38000+ 字、148 条来源、85 条一手）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用张一鸣的视角分析产品 / 组织 / 战略 / 决策问题。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhang-yiming-perspective/SKILL.md",
+      "api_url": "/api/judges/zhang-yiming.json"
+    },
+    {
+      "slug": "zhangmingzheng",
+      "name": "zhangmingzheng-perspective",
+      "summary": "张明正 / Steve Chang（Trend Micro 趋势科技创办人、董事长）的企业级安全、 亚洲安全公司全球化、长期技术信任判断视角。基于 Trend Micro 官方领导团队、 历史沿革与公开公司资料，提炼为“安全品牌要靠长期威胁情报和客户信任复利”。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhangmingzheng-perspective/SKILL.md",
+      "api_url": "/api/judges/zhangmingzheng.json"
+    },
+    {
+      "slug": "zhouhongyi",
+      "name": "zhouhongyi-perspective",
+      "summary": "周鸿祎（360 集团创始人、董事长）的网络安全、政企安全、AI 安全与 品牌心智判断视角。基于 360 官方创始人介绍、公开演讲、ISC 公开资料 和长期安全行业公开表达，提炼为“安全是攻防实战，不是功能清单”。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhouhongyi-perspective/SKILL.md",
+      "api_url": "/api/judges/zhouhongyi.json"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "count": 2,
+  "items": [
+    {
+      "slug": "lenovo",
+      "brand_cn": "联想集团",
+      "brand_en": "Lenovo Group",
+      "ticker": "0992.HK",
+      "version": "v1",
+      "audit_date": "2026-05-10",
+      "panel": "default",
+      "score": {
+        "total": 22,
+        "max": 50,
+        "normalized": null
+      },
+      "tl_dr": "全球 PC 龙头 + 子品牌资产撑起的渠道机器,财务面比亚信好得多但 AI 时代位置危机更严峻:亚信\"做不出来\",联想\"做出来了但红利归别人\"。 3 评委 R2 收敛到\"红利不归联想\"同一深层共识。Total mean 22/50。",
+      "html_url": "/reports/lenovo/",
+      "pdf_url": "/reports/lenovo/report.pdf",
+      "api_url": "/api/reports/lenovo.json"
+    },
+    {
+      "slug": "chengshi-auto",
+      "brand_cn": "橙仕汽车",
+      "brand_en": "Chengshi Auto",
+      "ticker": null,
+      "version": "v6",
+      "audit_date": "2026-05-18",
+      "panel": "auto",
+      "score": {
+        "total": 31.0,
+        "max": 50,
+        "normalized": 6.2
+      },
+      "tl_dr": "末端配送生产力品牌:场景切口清晰,真实应用信号增强,但服务数据透明度 和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50, 综合分 6.2/10。",
+      "html_url": "/reports/chengshi-auto/",
+      "pdf_url": "/reports/chengshi-auto/report.pdf",
+      "api_url": "/api/reports/chengshi-auto.json"
+    }
+  ]
+}

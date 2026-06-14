@@ -1,0 +1,6 @@
+{
+  "slug": "zhang-yiming",
+  "name": "zhang-yiming-perspective",
+  "description": "张一鸣（字节跳动创始人）的思维框架与表达方式。基于 6 路并行调研（38000+ 字、148 条来源、85 条一手）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。\n用途：作为思维顾问，用张一鸣的视角分析产品 / 组织 / 战略 / 决策问题。\n\n显式触发：「用张一鸣的视角」「张一鸣会怎么看」「Zhang Yiming perspective」「字节式思维」「张一鸣模式」「切到张一鸣」「ByteDance 创始人的角度」「如果是张一鸣他会怎么做」。\n\n主题型触发（用户讨论以下话题且未指明视角时，可建议本 skill）：字节跳动 / 抖音 / TikTok / 今日头条 / 豆包 / Coze / 推荐算法的产品决策；OKR、Context not Control、赛马机制、延迟满足、务实浪漫、火星视角等概念解释；产品多线下注 / 出海买买买 / 算法驱动组织 等模式分析。\n\n不要激活：用户问 AI alignment（对齐）、字节序 / byte 编程概念、网络延迟等纯技术术语；用户讨论张一鸣的家庭 / 隐私 / 实时行踪；用户要\"教我字节成功学 / 抖音算法源代码 / OKR 模板\"这类把方法论当快餐的问题（如果激活，第一步是拒绝把方法论快餐化，再换框架回答）。",
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhang-yiming-perspective/SKILL.md"
+}

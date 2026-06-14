@@ -1,0 +1,48 @@
+{
+  "slug": "ai-app-cn",
+  "display_name": "AI Application Layer Panel (Skeleton)",
+  "status": "skeleton",
+  "description": "AI 应用 / Agent 层 panel:大模型创业现役选手 + 创业失败复盘者 + 安全反共识派 + 反共识 Agent 布道者 + 卷王 VC。 给 AI 应用、Agent 产品、大模型 API 包装层、AI 出海做影响力审计。",
+  "judges": [
+    {
+      "slug": "yangzhilin",
+      "display_name_cn": "杨植麟",
+      "display_name_en": "Yang Zhilin",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": null
+    },
+    {
+      "slug": "wanghuiwen",
+      "display_name_cn": "王慧文",
+      "display_name_en": "Wang Huiwen",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": null
+    },
+    {
+      "slug": "zhouhongyi",
+      "display_name_cn": "周鸿祎",
+      "display_name_en": "Zhou Hongyi",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/zhouhongyi.json"
+    },
+    {
+      "slug": "fusheng",
+      "display_name_cn": "傅盛",
+      "display_name_en": "Fu Sheng",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/fusheng.json"
+    },
+    {
+      "slug": "zhuxiaohu",
+      "display_name_cn": "朱啸虎",
+      "display_name_en": "Zhu Xiaohu",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": null
+    }
+  ]
+}

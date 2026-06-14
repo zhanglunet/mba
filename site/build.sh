@@ -32,6 +32,23 @@ echo "[mba-build] whitelist: $WHITELIST"
 rm -rf "$OUT_DIR"
 mkdir -p "$OUT_DIR"
 
+# Agent-facing JSON 端点 —— site/api/*.json 是给 agent 调用的结构化产物。
+# 默认从 git 仓库里读已生成的 site/api/*(committed),build 时如果 python3 + pyyaml
+# 在 build env 里可用,会重新生成一次以保证和源文件同步。
+if command -v python3 >/dev/null 2>&1; then
+  if python3 -c "import yaml" 2>/dev/null \
+     || pip install --quiet pyyaml >/dev/null 2>&1 \
+     || pip3 install --quiet pyyaml >/dev/null 2>&1; then
+    echo "[mba-build] regenerating site/api/* from sources"
+    python3 "$REPO_ROOT/scripts/build_agents_api.py" || \
+      echo "[mba-build] WARN: build_agents_api.py failed — using committed site/api/*"
+  else
+    echo "[mba-build] no PyYAML in build env — using committed site/api/*"
+  fi
+else
+  echo "[mba-build] no python3 in build env — using committed site/api/*"
+fi
+
 if [ ! -f "$WHITELIST" ]; then
   echo "[mba-build] no whitelist file — only homepage will be published"
   exit 0

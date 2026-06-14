@@ -1,0 +1,48 @@
+{
+  "slug": "default",
+  "display_name": "Default 5-Judge Panel",
+  "status": "production",
+  "description": "混合中英文、创始人视角 + 产品设计视角 + 教育/全球化视角 + 字节系产品视角。 /mba <brand> 在没有 --panel 且品牌没绑定其它 panel 时,自动用这一套。",
+  "judges": [
+    {
+      "slug": "fusheng",
+      "display_name_cn": "傅盛",
+      "display_name_en": "Fu Sheng",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/fusheng.json"
+    },
+    {
+      "slug": "jobs",
+      "display_name_cn": "乔布斯",
+      "display_name_en": "Steve Jobs",
+      "language": "en",
+      "weight": 1.0,
+      "api_url": "/api/judges/jobs.json"
+    },
+    {
+      "slug": "likejia",
+      "display_name_cn": "李可佳",
+      "display_name_en": "Ethan Li",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/likejia.json"
+    },
+    {
+      "slug": "wu-jundong",
+      "display_name_cn": "吴俊东",
+      "display_name_en": "Frank Wu",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/wu-jundong.json"
+    },
+    {
+      "slug": "zhang-yiming",
+      "display_name_cn": "张一鸣",
+      "display_name_en": "Zhang Yiming",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/zhang-yiming.json"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "MBA — Metric Brand Auditor",
+  "tagline": "Brand judgment for the agentic age — scored, versioned, replayable.",
+  "tagline_cn": "AI 时代的品牌影响力审计协议:多智能体并行调研 + N 评委独立打分 + 版本化报告。",
+  "what_it_is": [
+    "Lead-orchestrated multi-agent pipeline that audits a brand across 7 default dimensions × 5 lenses.",
+    "Each audit is one HTML + Markdown report frozen to /versions/v{n}, snapshotting the brand at that date.",
+    "Evolution mode re-runs only changed dimensions and bumps the version."
+  ],
+  "team": [
+    "Jason",
+    "清风",
+    "John"
+  ],
+  "stack": [
+    "Claude Opus 4.7",
+    "Claude Code skills",
+    "Static-first publishing"
+  ],
+  "site": "https://mbabrand.com",
+  "repo": "https://github.com/zhanglunet/mba",
+  "install": "https://www.botlearn.ai/en/community/u/mba_auditor",
+  "license": "Apache-2.0",
+  "disclaimer": "Hackathon demo. Judge avatars / scores / verdicts are AI simulations of public personas — not the real people's opinions. Reports do not constitute investment advice."
+}

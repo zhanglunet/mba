@@ -1,0 +1,50 @@
+# site/reports-meta.yaml
+#
+# 已发布 audit 报告的结构化元数据 —— 给 /api/reports.json + /api/reports/<slug>.json 用。
+# 每条目对应 site/published-reports.txt 的一行;build.sh 在生成 /api/* 时按 slug 找。
+#
+# 加新报告 → 在 published-reports.txt 加一行 slug + 这里加一段 meta。
+# 都加完再 commit。
+#
+# 字段说明:
+#   brand_cn / brand_en   品牌中英文名(brand_en 缺省时按 brand_cn 发)
+#   ticker                上市公司股票代码(可选)
+#   version               v1 / v2 …(report 的当前对外版本)
+#   audit_date            最近一次审计落地日(YYYY-MM-DD)
+#   panel                 使用的 panel slug(对应 panels/<panel>.yaml)
+#   score_total           5 评委 × 5 镜头 总分(满分 = 评委数 × 5 × 10 = 标到 score_max)
+#   score_max             满分(=评委数 × 50)
+#   score_normalized      归一化总分(0-10),可选
+#   tl_dr                 一句话审计结论(可换行)
+#   has_pdf               true 时 /reports/<slug>/report.pdf 存在
+
+reports:
+  - slug: lenovo
+    brand_cn: 联想集团
+    brand_en: Lenovo Group
+    ticker: 0992.HK
+    version: v1
+    audit_date: 2026-05-10
+    panel: default
+    score_total: 22
+    score_max: 50
+    tl_dr: >-
+      全球 PC 龙头 + 子品牌资产撑起的渠道机器,财务面比亚信好得多但
+      AI 时代位置危机更严峻:亚信"做不出来",联想"做出来了但红利归别人"。
+      3 评委 R2 收敛到"红利不归联想"同一深层共识。Total mean 22/50。
+    has_pdf: true
+
+  - slug: chengshi-auto
+    brand_cn: 橙仕汽车
+    brand_en: Chengshi Auto
+    version: v6
+    audit_date: 2026-05-18
+    panel: auto
+    score_total: 31.0
+    score_max: 50
+    score_normalized: 6.2
+    tl_dr: >-
+      末端配送生产力品牌:场景切口清晰,真实应用信号增强,但服务数据透明度
+      和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50,
+      综合分 6.2/10。
+    has_pdf: true
