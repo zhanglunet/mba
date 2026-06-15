@@ -37,15 +37,18 @@ mba/                                   ← 仓库根
 │   ├── SKILL.md
 │   └── references/{agent-prompts,comparison-matrix,report-template}.md
 │
-│ ── 评委层(15 套 *-perspective/)──────────────
-├── default panel:  fusheng / jobs / likejia / wu-jundong / zhang-yiming
-├── auto panel:     musk / leijun / lixiang / hexiaopeng / libin
-└── security panel: zhouhongyi / zhangmingzheng / renzhengfei / jensenhuang / satyanadella (+ musk)
-                                            每套结构:
-                                            ├── SKILL.md         (frontmatter + 触发规则 + 心智模型 + DNA + 红线)
-                                            ├── references/research/01-06.md  (6 路调研材料)
-                                            ├── references/research/quotes.md (部分:URL 锚定金句库)
-                                            └── references/sources/           (部分:transcript 原文)
+│ ── 评委层 ────────────────────────────────
+├── perspectives/                      ← 15 套 production 人物视角 skill(目录名 <slug>-perspective/)
+│   ├── default panel:  fusheng / jobs / likejia / wu-jundong / zhang-yiming
+│   ├── auto panel:     musk / leijun / lixiang / hexiaopeng / libin
+│   └── security panel: zhouhongyi / zhangmingzheng / renzhengfei / jensenhuang / satyanadella (+ musk)
+│       每套结构:
+│       ├── SKILL.md         (frontmatter + 触发规则 + 心智模型 + DNA + 红线)
+│       ├── references/research/01-06.md  (6 路调研材料)
+│       ├── references/research/quotes.md (部分:URL 锚定金句库)
+│       └── references/sources/           (部分:transcript 原文)
+│   注:2026-06 起 *-perspective/ 统一收纳到 perspectives/ 下(此前在仓库根);
+│       SKILL.md 的 ${PERSPECTIVES_PATH} 优先找 perspectives/,旧布局兜底
 │
 │ ── 基建层 ────────────────────────────────
 ├── scripts/

@@ -483,7 +483,7 @@ mba/                                     ← 仓库根
 │   └── SKILL.md                              做为人类可读规范,
 │                                              未来 mcp-server 启动时扫这个文件
 │                                              当 prompt 模板源(单一事实源)
-├── *-perspective/                       ← 现状保留,被 judges/built-in.ts 编译时内联
+├── perspectives/*-perspective/         ← 现状保留,被 judges/built-in.ts 编译时内联
 ├── research/
 ├── docs/
 │   └── mcp-server-design.md             ← 本文

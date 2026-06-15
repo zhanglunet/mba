@@ -65,7 +65,7 @@ MBA 用三条对应机制解决:
 - 内置 production 评委默认包含 default panel 5 位,并可扩展到行业 panel(如 auto)
 - 可通过 `--panel <name>` 选择命名评委组,或通过 `--industry <name>` 按行业映射选择 panel
 - 可通过 `--panel-add <slug>` / `--panel-drop <slug>` 做本次运行的临时增删
-- 可通过追加 `*-perspective/` 目录添加自定义评委(详见 [08-extending.md](08-extending.md))
+- 可通过在 `perspectives/` 下追加 `<slug>-perspective/` 目录添加自定义评委(详见 [08-extending.md](08-extending.md))
 
 ### F4 — 维度可配置
 
@@ -142,7 +142,8 @@ MBA 用三条对应机制解决:
 - **v0.2.1** — README 重写 + 完整 docs/(已发)
 - **v0.2.14** — 路径去 hardcode,引入 `${SKILL_DIR}` 等运行时符号(已发)
 - **v0.2.19** — panel 系统:`panels/*.yaml` + `--panel` / `--industry` + 品牌绑定;auto panel 可运行(已发)
-- **v0.2.2x** — security-cn-global 6 人 panel + perspective 增至 15 套 + perspective-structure-spec + CI 校验 + site 发布(mbabrand.com)(当前)
+- **v0.2.2x** — security-cn-global 6 人 panel + perspective 增至 15 套 + perspective-structure-spec + CI 校验 + site 发布(mbabrand.com)
+- **2026-06** — perspective skill 收纳到 `perspectives/` 子目录(SKILL.md 路径兼容旧布局)+ For-Agents 机读层(`site/api/*.json` + `llms.txt` + `agents.html`)+ 项目介绍 presentation deck(当前)
 - **v0.3** — 填齐 7 个 SKELETON 行业 panel 的评委 + 持续改进 SKILL.md(以 issue 驱动)
 - **v0.4+** — MCP 化(参考 [mcp-server-design.md](mcp-server-design.md))
 

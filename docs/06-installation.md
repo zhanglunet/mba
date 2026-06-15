@@ -90,7 +90,8 @@ mkdir -p ~/.claude/skills
 ln -s ~/mba/metric-brand-auditor ~/.claude/skills/mba
 ln -s ~/mba/research ~/.claude/skills/research
 # 一次性软链全部 15 套 perspective(default + auto + security 三套 panel 的评委)
-for d in ~/mba/*-perspective; do
+# 注:2026-06 起 perspective skill 收纳在 perspectives/ 子目录下
+for d in ~/mba/perspectives/*-perspective; do
   ln -s "$d" ~/.claude/skills/"$(basename "$d")"
 done
 ```
@@ -99,7 +100,7 @@ done
 > 要用 `--industry auto` / `--panel security-cn-global` 就把对应 panel 的评委也链上。缺失的评委
 > Phase 4 会标 `MISSING` 并降级为 N-of-M,不会让流水线崩。
 
-**方法 B**:`cd ~/mba` 后在仓库内启动 Claude Code,自动识别同目录下的 `*-perspective/` 和 `metric-brand-auditor/`。
+**方法 B**:`cd ~/mba` 后在仓库内启动 Claude Code,自动识别 `metric-brand-auditor/` 和 `perspectives/*-perspective/`。
 
 > 如果你的 Claude Code 安装路径里 `~/.claude/skills/` 不存在,可能用的是不同的 skill 加载机制 —— 查 Claude Code 当前版本的官方文档。
 
