@@ -14,10 +14,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Install Python deps
+        run: python -m pip install --quiet pyyaml
       - name: Validate panel configs
         run: python scripts/validate_panels.py
       - name: Validate perspective SKILL.md structure
         run: python scripts/perspective-tools/check_structure.py
+      - name: Check agent API (site/api/*.json) in sync with sources
+        run: python scripts/build_agents_api.py --check
       - name: Compile Python files
         run: |
           python -m py_compile $(find . -type f -name '*.py' \

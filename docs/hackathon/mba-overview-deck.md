@@ -172,7 +172,7 @@ mba/
 │
 ├── research/                    ← 工具层：PRD 多代理深度调研 skill
 │
-├── *-perspective/               ← 评委层：5 套人物视角 skill
+├── perspectives/                ← 评委层：15 套人物视角 skill
 │   └── fusheng / jobs / likejia / wu-jundong / zhang-yiming
 │
 └── scripts/wuying/open.py               ← 基建层：阿里云无影 AgentBay 云浏览器
@@ -288,7 +288,7 @@ mba/
 
 ## Slide 21 · Anti-fabrication 红线
 
-5 套人物视角 skill 都基于**公开一手资料**：
+15 套人物视角 skill 都基于**公开一手资料**：
 
 - 访谈、文章、播客 transcript
 - 每套 SKILL.md 顶部明确：**不替本人编造未公开内容**
@@ -302,7 +302,7 @@ mba/
 ## Slide 22 · 已落地的实物清单
 
 - ✅ `metric-brand-auditor/SKILL.md`（~600 行主手册）
-- ✅ 5 套 perspective skill，每套 6 路调研 + research/01–06.md
+- ✅ 15 套 perspective skill（default / auto / security 三套 panel），每套 6 路调研 + research/01–06.md
 - ✅ `research` skill（可独立 `/research` 调用）
 - ✅ Wuying 云浏览器 leg + smoke test
 - ✅ 自包含 HTML 报告模板（Chart.js + Mermaid）
