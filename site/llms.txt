@@ -14,7 +14,7 @@ HTTP GET 直接拿,CORS 全开,无 token。
 - /api/methodology.json — 7 维度 + 5 镜头 + 5 阶段流水线的结构化描述
 - /api/reports.json — 已发布的品牌审计报告列表(slug / 品牌 / 版本 / 总分 / TL;DR)
 - /api/reports/{slug}.json — 单个报告的元数据 + html_url + pdf_url
-- /api/panels.json — 11 个内置评委 panel + 行业映射表
+- /api/panels.json — 10 个内置评委 panel + 行业映射表
 - /api/panels/{slug}.json — 单个 panel 的评委组成 + 触发条件
 - /api/judges.json — 15 个评委人物视角 skill
 - /api/judges/{slug}.json — 单个评委的来源 SKILL.md + 视角描述
