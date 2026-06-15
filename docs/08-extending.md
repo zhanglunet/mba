@@ -25,14 +25,14 @@ Lead 自动:
 
 ## 2. 添加新评委
 
-新评委 = 一个新的 `*-perspective/` 目录,跟现有 production perspective 同结构。
+新评委 = `perspectives/` 下一个新的 `<slug>-perspective/` 目录,跟现有 production perspective 同结构。
 
 ### 2.1 复制模板
 
 ```bash
 cd ~/mba
-cp -r fusheng-perspective my-judge-perspective
-cd my-judge-perspective
+cp -r perspectives/fusheng-perspective perspectives/my-judge-perspective
+cd perspectives/my-judge-perspective
 ```
 
 ### 2.2 改 SKILL.md

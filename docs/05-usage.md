@@ -252,7 +252,7 @@ A: 当前 Claude Code 模式不支持续跑(状态没持久化在 server 端)。
 
 ### Q4: 想加自家公司一位同事作为第 6 个评委
 
-A: 见 [08-extending.md](08-extending.md) 第 2 节"添加新评委"。简版:复制一个 `*-perspective/` 目录,改 SKILL.md frontmatter + 5 必需章节,然后把 slug 加进某个 `panels/<name>.yaml`,或用 `--panel-add <new-name>` 先临时试跑。
+A: 见 [08-extending.md](08-extending.md) 第 2 节"添加新评委"。简版:在 `perspectives/` 下复制一个 `*-perspective/` 目录,改 SKILL.md frontmatter + 5 必需章节,然后把 slug 加进某个 `panels/<name>.yaml`,或用 `--panel-add <new-name>` 先临时试跑。
 
 ### Q5: Mermaid 图在 HTML 里渲染失败
 
