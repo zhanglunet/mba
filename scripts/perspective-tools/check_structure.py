@@ -68,7 +68,14 @@ def h2_headings(skill_md: Path) -> list[str]:
 
 
 def list_perspective_dirs(root: Path) -> list[Path]:
-    return sorted(p for p in root.glob("*-perspective") if (p / "SKILL.md").is_file())
+    # Canonical layout (since 2026-06): perspectives/<slug>-perspective/.
+    # Legacy fallback: <slug>-perspective/ directly at repo root.
+    seen: dict[str, Path] = {}
+    for pattern in ("perspectives/*-perspective", "*-perspective"):
+        for p in root.glob(pattern):
+            if (p / "SKILL.md").is_file() and p.name not in seen:
+                seen[p.name] = p
+    return [seen[name] for name in sorted(seen)]
 
 
 def check_one(skill_md: Path) -> list[str]:
@@ -93,8 +100,8 @@ def main() -> int:
 
     dirs = list_perspective_dirs(root)
     if args.perspective:
-        wanted = root / f"{args.perspective}-perspective"
-        dirs = [d for d in dirs if d == wanted]
+        wanted = f"{args.perspective}-perspective"
+        dirs = [d for d in dirs if d.name == wanted]
         if not dirs:
             print(f"check_structure.py: no such perspective '{args.perspective}'", file=sys.stderr)
             return 2
