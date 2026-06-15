@@ -18,6 +18,7 @@
 """
 from __future__ import annotations
 
+import argparse
 import datetime
 import json
 import re
@@ -38,13 +39,33 @@ PERSP_DIR     = ROOT / "perspectives"
 
 # -------------------------------------------------------------- helpers ----
 
+# When True, write_json() compares the generated content against the committed
+# file instead of writing — used by the CI drift guard (`--check`). The only
+# volatile field is index.json's generated_at, which _normalize() masks so the
+# comparison is stable across runs.
+CHECK_MODE = False
+_PRODUCED: set[str] = set()
+DRIFT: list[str] = []
+
+
+def _normalize(rel_path: str, text: str) -> str:
+    if rel_path == "index.json":
+        text = re.sub(r'("generated_at":\s*)"[^"]*"', r'\1"<ignored>"', text)
+    return text
+
+
 def write_json(rel_path: str, data) -> None:
+    text = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False) + "\n"
     out = API_DIR / rel_path
+    if CHECK_MODE:
+        _PRODUCED.add(rel_path)
+        if not out.exists():
+            DRIFT.append(f"missing: api/{rel_path} (generator produces it, repo doesn't have it)")
+        elif _normalize(rel_path, out.read_text(encoding="utf-8")) != _normalize(rel_path, text):
+            DRIFT.append(f"drift:   api/{rel_path}")
+        return
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False) + "\n",
-        encoding="utf-8",
-    )
+    out.write_text(text, encoding="utf-8")
     print(f"[agents-api] wrote /api/{rel_path}")
 
 
@@ -375,8 +396,9 @@ def build_search(judges: list[dict], panels: list[dict], reports: list[dict], me
 # ---------------------------------------------------------------- main -----
 
 def main() -> int:
-    # Clean old api/ output so removed entries don't linger.
-    if API_DIR.exists():
+    # Clean old api/ output so removed entries don't linger. (Skipped under
+    # --check: we must not delete the committed files we're validating.)
+    if not CHECK_MODE and API_DIR.exists():
         for p in sorted(API_DIR.rglob("*"), reverse=True):
             if p.is_file():
                 p.unlink()
@@ -425,6 +447,24 @@ def main() -> int:
         build_search(judges_list, panels_list, reports_list, methodology),
     )
 
+    if CHECK_MODE:
+        # Flag committed files the generator no longer produces (stale leftovers).
+        for p in sorted(API_DIR.rglob("*.json")):
+            rel = str(p.relative_to(API_DIR))
+            if rel not in _PRODUCED:
+                DRIFT.append(f"stale:   api/{rel} (in repo, generator no longer produces it)")
+        if DRIFT:
+            print("[agents-api] CHECK FAILED — site/api/ is out of sync with sources:",
+                  file=sys.stderr)
+            for d in DRIFT:
+                print("  " + d, file=sys.stderr)
+            print("Fix: run `python3 scripts/build_agents_api.py` and commit site/api/.",
+                  file=sys.stderr)
+            return 1
+        print(f"[agents-api] check OK — api/ in sync with sources "
+              f"({counts['judges']} judges / {counts['panels']} panels / {counts['reports']} reports)")
+        return 0
+
     print(f"[agents-api] done — "
           f"{counts['reports']} reports, "
           f"{counts['panels']} panels, "
@@ -435,4 +475,11 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Build (or --check) mbabrand.com agent-facing JSON API.")
+    ap.add_argument(
+        "--check", action="store_true",
+        help="Verify committed site/api/ matches generator output and exit 1 on "
+             "drift (ignores index.json generated_at). Writes nothing.",
+    )
+    CHECK_MODE = ap.parse_args().check
     sys.exit(main())

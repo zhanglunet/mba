@@ -17,6 +17,7 @@
 | 06 | [06-installation.md](06-installation.md) | 用户 | 环境前置、克隆、配 .env、校验、故障排除 |
 | 07 | [07-code-standards.md](07-code-standards.md) | 贡献者 | SKILL.md 写法、命名、commit、Python 风格 |
 | 08 | [08-extending.md](08-extending.md) | 贡献者 | 加品牌 / 评委 / 维度 / 改 HTML 模板 |
+| 09 | [09-agent-api.md](09-agent-api.md) | 集成方 / 贡献者 | For-Agents 机读层:/api 端点契约、生成器、CI 漂移守卫 |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(未来形态) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |
