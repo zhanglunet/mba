@@ -16,7 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PANELS_DIR = ROOT / "metric-brand-auditor" / "panels"
 PERSPECTIVE_ROOTS = [
-    ROOT,
+    ROOT / "perspectives",   # canonical layout since 2026-06
+    ROOT,                    # legacy: <slug>-perspective/ at repo root
     Path.home() / ".claude" / "skills",
     Path.home() / "skills",
     Path.home() / ".codex" / "skills",
