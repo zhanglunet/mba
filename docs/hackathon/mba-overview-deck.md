@@ -301,7 +301,7 @@ mba/
 
 ## Slide 22 · 已落地的实物清单
 
-- ✅ `metric-brand-auditor/SKILL.md`（~600 行主手册）
+- ✅ `metric-brand-auditor/SKILL.md`（~1000 行主手册）
 - ✅ 15 套 perspective skill（default / auto / security 三套 panel），每套 6 路调研 + research/01–06.md
 - ✅ `research` skill（可独立 `/research` 调用）
 - ✅ Wuying 云浏览器 leg + smoke test
