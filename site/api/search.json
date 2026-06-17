@@ -1,5 +1,5 @@
 {
-  "count": 47,
+  "count": 52,
   "items": [
     {
       "type": "report",
@@ -92,7 +92,7 @@
     {
       "type": "panel",
       "slug": "vc-en",
-      "title": "VC-EN Panel (Skeleton)",
+      "title": "VC-EN Panel",
       "text": "英文 VC panel:Software-eats-world 派 + YC first-principles 派 + 0-to-1 反竞争派 + leverage 财富启示录派 + Blitzscaling 网络效应派。 给 SaaS / AI 应用 / 网络效应产品 / 国际化品牌做美式 VC 视角审计。",
       "url": "/api/panels/vc-en.json",
       "api_url": "/api/panels/vc-en.json"
@@ -171,11 +171,51 @@
     },
     {
       "type": "judge",
+      "slug": "naval",
+      "title": "naval-perspective",
+      "text": "Naval Ravikant (co-founder of AngelList; angel investor; writer on wealth & judgment) — \"specific knowledge × leverage\", \"play long-term games with long-term people\", compounding, code-and-media-as-leverage lens. Based on his public writing and The Almanack of Naval Ravikant.",
+      "url": "/api/judges/naval.json",
+      "api_url": "/api/judges/naval.json"
+    },
+    {
+      "type": "judge",
+      "slug": "paulg",
+      "title": "paulg-perspective",
+      "text": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\", \"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Based on his public essays and YC's startup library.",
+      "url": "/api/judges/paulg.json",
+      "api_url": "/api/judges/paulg.json"
+    },
+    {
+      "type": "judge",
+      "slug": "pmarca",
+      "title": "pmarca-perspective",
+      "text": "Marc Andreessen (co-founder & general partner, Andreessen Horowitz / a16z; co-creator of Netscape) — \"software is eating the world\", founder-as-engine-of-progress, strong- opinions / platform-VC investing lens. Based on his public essays, a16z materials and interviews.",
+      "url": "/api/judges/pmarca.json",
+      "api_url": "/api/judges/pmarca.json"
+    },
+    {
+      "type": "judge",
+      "slug": "pthiel",
+      "title": "pthiel-perspective",
+      "text": "Peter Thiel (co-founder of PayPal, Palantir, Founders Fund; author of \"Zero to One\") — contrarian, monopoly-over-competition, definite-optimism, \"what important truth do few agree with you\" investing lens. Based on Zero to One and his public talks.",
+      "url": "/api/judges/pthiel.json",
+      "api_url": "/api/judges/pthiel.json"
+    },
+    {
+      "type": "judge",
       "slug": "renzhengfei",
       "title": "renzhengfei-perspective",
       "text": "任正非（华为创始人、CEO）的硬科技组织、长期研发、政企信任、全球化压力 与基础设施品牌判断视角。基于华为官方高管简介、公开访谈与公开讲话材料， 提炼为“活下去、长期研发、组织韧性和客户信任”。",
       "url": "/api/judges/renzhengfei.json",
       "api_url": "/api/judges/renzhengfei.json"
+    },
+    {
+      "type": "judge",
+      "slug": "rhoffman",
+      "title": "rhoffman-perspective",
+      "text": "Reid Hoffman (co-founder of LinkedIn; partner at Greylock; author of \"Blitzscaling\") — blitzscaling, network effects, \"if you're not embarrassed by your first version you launched too late\", operator-and-investor lens. Based on his public writing and talks.",
+      "url": "/api/judges/rhoffman.json",
+      "api_url": "/api/judges/rhoffman.json"
     },
     {
       "type": "judge",

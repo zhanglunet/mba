@@ -1,0 +1,6 @@
+{
+  "slug": "paulg",
+  "name": "paulg-perspective",
+  "description": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\",\n\"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Based on\nhis public essays and YC's startup library.\n\nUse as: MBA `vc-en` panel judge — early-stage / product-market-fit / founder craft /\norganic growth lens (English). A grounded counterweight to macro-thesis VC.\n\nExplicit triggers: \"用 Paul Graham 视角\", \"pg / YC 会怎么看\", \"make something people want\nlens\", \"Paul Graham perspective\".\n\nDo not activate when: user asks for YC internal selection data, non-public portfolio\nnumbers, Graham's private life, or unverified post-cutoff specifics.",
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/paulg-perspective/SKILL.md"
+}

@@ -3,13 +3,13 @@
 # 英文 VC panel —— 5 位 Silicon Valley 投资人/思想家。
 # 通过 industries.yaml 被 `--industry vc-en` 引用。
 #
-# ⚠️  SKELETON 状态:5 位都待建 perspective skill。
-# 候选评估见 docs/prd/panels/industries-roster.md §3.5。
-# Peter Thiel 政治敏感,某些用户场景可能不合适,可替换为 Bill Gurley / Vinod Khosla。
+# 可运行(v1 production-seed):pmarca / paulg / pthiel / naval / rhoffman 已建
+# (SKILL.md + quotes.md,基于公开一手资料:essays / books / a16z / talks)。
+# 深度 references/research/01-06 为后续工作。
+# 注:Peter Thiel 政治敏感,某些场景可 --panel-drop pthiel 或替换为 Bill Gurley / Vinod Khosla。
 
 name: vc-en
-display_name: VC-EN Panel (Skeleton)
-status: skeleton
+display_name: VC-EN Panel
 description: >
   英文 VC panel:Software-eats-world 派 + YC first-principles 派 +
   0-to-1 反竞争派 + leverage 财富启示录派 + Blitzscaling 网络效应派。

@@ -1,5 +1,5 @@
 {
-  "count": 21,
+  "count": 26,
   "items": [
     {
       "slug": "fusheng",
@@ -65,11 +65,46 @@
       "api_url": "/api/judges/musk.json"
     },
     {
+      "slug": "naval",
+      "name": "naval-perspective",
+      "summary": "Naval Ravikant (co-founder of AngelList; angel investor; writer on wealth & judgment) — \"specific knowledge × leverage\", \"play long-term games with long-term people\", compounding, code-and-media-as-leverage lens. Based on his public writing and The Almanack of Naval Ravikant.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/naval-perspective/SKILL.md",
+      "api_url": "/api/judges/naval.json"
+    },
+    {
+      "slug": "paulg",
+      "name": "paulg-perspective",
+      "summary": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\", \"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Based on his public essays and YC's startup library.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/paulg-perspective/SKILL.md",
+      "api_url": "/api/judges/paulg.json"
+    },
+    {
+      "slug": "pmarca",
+      "name": "pmarca-perspective",
+      "summary": "Marc Andreessen (co-founder & general partner, Andreessen Horowitz / a16z; co-creator of Netscape) — \"software is eating the world\", founder-as-engine-of-progress, strong- opinions / platform-VC investing lens. Based on his public essays, a16z materials and interviews.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pmarca-perspective/SKILL.md",
+      "api_url": "/api/judges/pmarca.json"
+    },
+    {
+      "slug": "pthiel",
+      "name": "pthiel-perspective",
+      "summary": "Peter Thiel (co-founder of PayPal, Palantir, Founders Fund; author of \"Zero to One\") — contrarian, monopoly-over-competition, definite-optimism, \"what important truth do few agree with you\" investing lens. Based on Zero to One and his public talks.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pthiel-perspective/SKILL.md",
+      "api_url": "/api/judges/pthiel.json"
+    },
+    {
       "slug": "renzhengfei",
       "name": "renzhengfei-perspective",
       "summary": "任正非（华为创始人、CEO）的硬科技组织、长期研发、政企信任、全球化压力 与基础设施品牌判断视角。基于华为官方高管简介、公开访谈与公开讲话材料， 提炼为“活下去、长期研发、组织韧性和客户信任”。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/renzhengfei-perspective/SKILL.md",
       "api_url": "/api/judges/renzhengfei.json"
+    },
+    {
+      "slug": "rhoffman",
+      "name": "rhoffman-perspective",
+      "summary": "Reid Hoffman (co-founder of LinkedIn; partner at Greylock; author of \"Blitzscaling\") — blitzscaling, network effects, \"if you're not embarrassed by your first version you launched too late\", operator-and-investor lens. Based on his public writing and talks.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/rhoffman-perspective/SKILL.md",
+      "api_url": "/api/judges/rhoffman.json"
     },
     {
       "slug": "salkhan",
