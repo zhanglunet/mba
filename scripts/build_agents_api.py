@@ -69,6 +69,19 @@ def write_json(rel_path: str, data) -> None:
     print(f"[agents-api] wrote /api/{rel_path}")
 
 
+def write_text_file(out: Path, text: str, label: str) -> None:
+    """Like write_json but for a raw text artifact outside api/ (e.g. llms.txt).
+    Participates in --check (exact compare; no volatile fields)."""
+    if CHECK_MODE:
+        if not out.exists():
+            DRIFT.append(f"missing: {label} (generator produces it, repo doesn't have it)")
+        elif out.read_text(encoding="utf-8") != text:
+            DRIFT.append(f"drift:   {label}")
+        return
+    out.write_text(text, encoding="utf-8")
+    print(f"[agents-api] wrote {label}")
+
+
 def read_whitelist() -> list[str]:
     slugs = []
     for line in WHITELIST.read_text(encoding="utf-8").splitlines():
@@ -238,8 +251,11 @@ def build_reports() -> tuple[list[dict], dict[str, dict]]:
     for slug in slugs:
         m = meta_by_slug.get(slug)
         if not m:
-            print(f"[agents-api] WARN: {slug} listed in published-reports.txt but missing in reports-meta.yaml — skipping",
-                  file=sys.stderr)
+            msg = f"{slug} listed in published-reports.txt but missing in reports-meta.yaml"
+            if CHECK_MODE:
+                DRIFT.append(f"meta:    {msg}")
+            else:
+                print(f"[agents-api] WARN: {msg} — skipping", file=sys.stderr)
             continue
         common = {
             "slug": slug,
@@ -393,6 +409,89 @@ def build_search(judges: list[dict], panels: list[dict], reports: list[dict], me
     return {"count": len(items), "items": items}
 
 
+# ----------------------------------------------------------- llms.txt ------
+
+# Curated prose template; counts (__N_PANELS__ / __N_JUDGES__) are filled from
+# the same source data as /api so they can never drift (this is what caused the
+# old hardcoded "11 panels" bug). Placeholders (not f-string) keep the jq `{...}`
+# examples literal.
+LLMS_TXT_TEMPLATE = """\
+# mbabrand.com
+
+> MBA — Metric Brand Auditor. AI 时代的品牌影响力审计协议。
+> 多智能体并行调研 + N 评委独立打分 + 版本化报告。
+> 不只是给人看的报告站,也是给 agent 调用的品牌判断接口。
+
+## For AI agents
+
+Agent 不用抓 HTML。所有结构化内容在 build 时落成静态 JSON,挂在 `/api/*.json`。
+HTTP GET 直接拿,CORS 全开,无 token。
+
+- /api/index.json — manifest:counts + 所有端点 URL
+- /api/about.json — MBA 是什么 + team + repo + install
+- /api/methodology.json — 7 维度 + 5 镜头 + 5 阶段流水线的结构化描述
+- /api/reports.json — 已发布的品牌审计报告列表(slug / 品牌 / 版本 / 总分 / TL;DR)
+- /api/reports/{slug}.json — 单个报告的元数据 + html_url + pdf_url
+- /api/panels.json — __N_PANELS__ 个内置评委 panel + 行业映射表
+- /api/panels/{slug}.json — 单个 panel 的评委组成 + 触发条件
+- /api/judges.json — __N_JUDGES__ 个评委人物视角 skill
+- /api/judges/{slug}.json — 单个评委的来源 SKILL.md + 视角描述
+- /api/install.json — 怎么把 MBA 装进 Claude Code(BotLearn / GitHub)
+- /api/search.json — 扁平语料:reports + panels + judges + dimensions + lenses,给客户端 substring search
+
+## Human-facing pages
+
+- /agents.html — 给 agent 工程师看的接入指南(端点表 + curl 示例 + Claude Code 集成)
+- /presentation/ — 21 页编辑式 deck(为什么 / 怎么做 / 评委 / 商业化)
+- /pitch.html — 5 分钟现场讲稿
+- /how-it-works.html — 7 × 5 打分体系详解 + 流程图
+- /reports/{slug}/ — 单个 audit 报告的人类可读 HTML 版
+
+## Quick start
+
+```sh
+# 拿全站 manifest
+curl -s https://mbabrand.com/api/index.json
+
+# 列出所有已发布的报告
+curl -s https://mbabrand.com/api/reports.json | jq '.items[] | {slug, brand_cn, version}'
+
+# 读联想的审计 meta
+curl -s https://mbabrand.com/api/reports/lenovo.json
+
+# 查 auto panel 里有谁
+curl -s https://mbabrand.com/api/panels/auto.json | jq '.judges[].display_name_cn'
+
+# 拿单个评委的 SKILL.md 描述
+curl -s https://mbabrand.com/api/judges/jobs.json | jq -r .description
+```
+
+## Trigger MBA from your own agent
+
+MBA 本身是一个 Claude Code skill。给自己的 agent 内置「读 mbabrand.com」之后,
+更进一步可以触发新的审计运行:
+
+```
+/mba <brand-slug>             # 在 Claude Code 里全流程跑一份新报告
+/mba <brand> --refresh         # EVOLUTION 模式:只重跑变了的维度
+/mba <brand> --quick --no-judges  # 单视角速读,不召评委
+```
+
+Install: https://www.botlearn.ai/en/community/u/mba_auditor
+Source:  https://github.com/zhanglunet/mba
+
+License: Apache-2.0
+Disclaimer: 评委头像 / 评分 / verdict / 辩论均为 AI 基于公开一手资料的 in-character
+模拟,非本人真实意见。报告不构成投资建议。
+"""
+
+
+def build_llms_txt(n_panels: int, n_judges: int) -> str:
+    return (LLMS_TXT_TEMPLATE
+            .replace("__N_PANELS__", str(n_panels))
+            .replace("__N_JUDGES__", str(n_judges)))
+
+
 # ---------------------------------------------------------------- main -----
 
 def main() -> int:
@@ -445,6 +544,13 @@ def main() -> int:
     write_json(
         "search.json",
         build_search(judges_list, panels_list, reports_list, methodology),
+    )
+
+    # llms.txt — generated from the same counts so it can't drift (outside api/).
+    write_text_file(
+        SITE_DIR / "llms.txt",
+        build_llms_txt(len(panels_list), len(judges_list)),
+        "llms.txt",
     )
 
     if CHECK_MODE:
