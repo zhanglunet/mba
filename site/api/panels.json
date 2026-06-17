@@ -60,8 +60,8 @@
     },
     {
       "slug": "edu-cn",
-      "display_name": "Education-CN Panel (Skeleton)",
-      "status": "skeleton",
+      "display_name": "Education-CN Panel",
+      "status": "production",
       "judges_count": 5,
       "description": "中文教育 / 终身学习 panel:失败重生 IP 化 + 双减后 AI 转身 + Bot 派新物种 + Education becoming 思想派 + AI Tutor 鼻祖。 给 K12 / AI Tutor / 终身学习 / 职业培训 / 内容付费做影响力审计。",
       "api_url": "/api/panels/edu-cn.json"

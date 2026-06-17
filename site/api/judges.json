@@ -1,5 +1,5 @@
 {
-  "count": 18,
+  "count": 21,
   "items": [
     {
       "slug": "fusheng",
@@ -72,6 +72,13 @@
       "api_url": "/api/judges/renzhengfei.json"
     },
     {
+      "slug": "salkhan",
+      "name": "salkhan-perspective",
+      "summary": "Sal Khan (Salman Khan, founder & CEO of Khan Academy) — a nonprofit, mastery-learning, \"free world-class education for anyone, anywhere\", AI-tutor (Khanmigo) judgment lens. Based on his public talks, books (The One World Schoolhouse, Brave New Words) and Khan Academy's public mission materials.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/salkhan-perspective/SKILL.md",
+      "api_url": "/api/judges/salkhan.json"
+    },
+    {
       "slug": "satyanadella",
       "name": "satyanadella-perspective",
       "summary": "Satya Nadella（Microsoft Chairman and CEO）的企业级云、AI 平台、生产力生态、 安全优先与 ToB 信任判断视角。基于 Microsoft 官方博客、CEO 公开信和安全优先 公开备忘，提炼为“云 + AI + 安全要成为企业生产力平台”。",
@@ -100,11 +107,25 @@
       "api_url": "/api/judges/yangzhilin.json"
     },
     {
+      "slug": "yuminhong",
+      "name": "yuminhong-perspective",
+      "summary": "俞敏洪(新东方创始人、东方甄选 / 东方甄选发起人)的「第二曲线、坚韧自渡、 创始人 IP、知识带货」教育与转型判断视角。基于其公开演讲、采访与新东方双减后 转型的公开记录提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yuminhong-perspective/SKILL.md",
+      "api_url": "/api/judges/yuminhong.json"
+    },
+    {
       "slug": "zhang-yiming",
       "name": "zhang-yiming-perspective",
       "summary": "张一鸣（字节跳动创始人）的思维框架与表达方式。基于 6 路并行调研（38000+ 字、148 条来源、85 条一手）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用张一鸣的视角分析产品 / 组织 / 战略 / 决策问题。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhang-yiming-perspective/SKILL.md",
       "api_url": "/api/judges/zhang-yiming.json"
+    },
+    {
+      "slug": "zhangbangxin",
+      "name": "zhangbangxin-perspective",
+      "summary": "张邦鑫(好未来 / 学而思创始人)的「科技驱动教育、教育公平普惠、千班千面、 低调长期」判断视角。基于其公开采访、好未来公开战略与双减后转型记录提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhangbangxin-perspective/SKILL.md",
+      "api_url": "/api/judges/zhangbangxin.json"
     },
     {
       "slug": "zhangmingzheng",
