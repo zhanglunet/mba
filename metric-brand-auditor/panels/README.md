@@ -223,6 +223,11 @@ Redmi / Xiaomi Auto / SU7:
 | `ai-app-cn` | `zhuxiaohu` | 金沙江创投 / GSR Ventures 被投组合 | use `--panel-drop zhuxiaohu`; if kept, self-check only |
 | `ai-app-cn` | `fusheng` | 猎豹移动 / Cheetah / OpenClaw / 猎户星空 | use `--panel-drop fusheng`; if kept, self-check only |
 | `ai-app-cn` | `zhouhongyi` | 360 / 奇虎 360 / 纳米 AI | use `--panel-drop zhouhongyi`; if kept, self-check only |
+| `edu-cn` | `yuminhong` | 新东方 / New Oriental / 东方甄选 / 新东方在线 | use `--panel-drop yuminhong`; if kept, self-check only |
+| `edu-cn` | `zhangbangxin` | 好未来 / TAL / 学而思 / 学而思网校 | use `--panel-drop zhangbangxin`; if kept, self-check only |
+| `edu-cn` | `salkhan` | Khan Academy / Khanmigo / Schoolhouse.world | use `--panel-drop salkhan`; if kept, self-check only |
+| `edu-cn` | `likejia` | BotLearn / Aibrary | use `--panel-drop likejia`; if kept, self-check only |
+| `edu-cn` | `wu-jundong` | Aibrary / TAL 系 | use `--panel-drop wu-jundong`; if kept, self-check only |
 
 示例:
 
@@ -237,6 +242,8 @@ Redmi / Xiaomi Auto / SU7:
 /mba microsoft-security --industry security-cn-global --quick --panel-drop satyanadella
 /mba kimi --industry ai-app-cn --quick --panel-drop yangzhilin
 /mba meituan --industry ai-app-cn --quick --panel-drop wanghuiwen
+/mba new-oriental --industry edu-cn --quick --panel-drop yuminhong
+/mba tal --industry edu-cn --quick --panel-drop zhangbangxin
 ```
 
 ---
@@ -283,6 +290,7 @@ Redmi / Xiaomi Auto / SU7:
 - `auto.yaml` —— 汽车 / EV panel,可运行
 - `security-cn-global.yaml` —— 网络安全 / 企业安全 / AI 安全 panel,可运行
 - `ai-app-cn.yaml` —— AI 应用 / Agent 层 panel,可运行(v1 production-seed)
-- `consumer-cn.yaml` / `cross-border.yaml` / `edu-cn.yaml` / `luxury-en.yaml` / `vc-cn.yaml` / `vc-en.yaml` —— 行业 panel,SKELETON 状态(评委 perspective skill 还没建齐)
+- `edu-cn.yaml` —— 中文教育 / 终身学习 panel,可运行(v1 production-seed)
+- `consumer-cn.yaml` / `cross-border.yaml` / `luxury-en.yaml` / `vc-cn.yaml` / `vc-en.yaml` —— 行业 panel,SKELETON 状态(评委 perspective skill 还没建齐)
 - `industries.yaml` —— 行业 → panel 映射表,被 `--industry` flag 查询(本身不是 panel,
   也不会被 `--panel` 解析到)

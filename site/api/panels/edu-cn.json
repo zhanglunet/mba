@@ -1,7 +1,7 @@
 {
   "slug": "edu-cn",
-  "display_name": "Education-CN Panel (Skeleton)",
-  "status": "skeleton",
+  "display_name": "Education-CN Panel",
+  "status": "production",
   "description": "中文教育 / 终身学习 panel:失败重生 IP 化 + 双减后 AI 转身 + Bot 派新物种 + Education becoming 思想派 + AI Tutor 鼻祖。 给 K12 / AI Tutor / 终身学习 / 职业培训 / 内容付费做影响力审计。",
   "judges": [
     {
@@ -10,7 +10,7 @@
       "display_name_en": "Michael Yu",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/yuminhong.json"
     },
     {
       "slug": "zhangbangxin",
@@ -18,7 +18,7 @@
       "display_name_en": "Zhang Bangxin",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/zhangbangxin.json"
     },
     {
       "slug": "likejia",
@@ -42,7 +42,7 @@
       "display_name_en": "Sal Khan",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/salkhan.json"
     }
   ]
 }
