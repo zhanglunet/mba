@@ -92,8 +92,8 @@
     },
     {
       "slug": "vc-en",
-      "display_name": "VC-EN Panel (Skeleton)",
-      "status": "skeleton",
+      "display_name": "VC-EN Panel",
+      "status": "production",
       "judges_count": 5,
       "description": "英文 VC panel:Software-eats-world 派 + YC first-principles 派 + 0-to-1 反竞争派 + leverage 财富启示录派 + Blitzscaling 网络效应派。 给 SaaS / AI 应用 / 网络效应产品 / 国际化品牌做美式 VC 视角审计。",
       "api_url": "/api/panels/vc-en.json"

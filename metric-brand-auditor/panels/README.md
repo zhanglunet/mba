@@ -228,6 +228,11 @@ Redmi / Xiaomi Auto / SU7:
 | `edu-cn` | `salkhan` | Khan Academy / Khanmigo / Schoolhouse.world | use `--panel-drop salkhan`; if kept, self-check only |
 | `edu-cn` | `likejia` | BotLearn / Aibrary | use `--panel-drop likejia`; if kept, self-check only |
 | `edu-cn` | `wu-jundong` | Aibrary / TAL 系 | use `--panel-drop wu-jundong`; if kept, self-check only |
+| `vc-en` | `pmarca` | a16z / Andreessen Horowitz 被投组合 | use `--panel-drop pmarca`; if kept, self-check only |
+| `vc-en` | `paulg` | Y Combinator / YC 被投(Airbnb / Dropbox / Stripe …) | use `--panel-drop paulg`; if kept, self-check only |
+| `vc-en` | `pthiel` | Founders Fund / Palantir / PayPal 系被投 | use `--panel-drop pthiel`; if kept, self-check only |
+| `vc-en` | `naval` | AngelList / 其天使被投组合 | use `--panel-drop naval`; if kept, self-check only |
+| `vc-en` | `rhoffman` | Greylock / LinkedIn / Microsoft / 其被投组合 | use `--panel-drop rhoffman`; if kept, self-check only |
 
 示例:
 
@@ -244,6 +249,7 @@ Redmi / Xiaomi Auto / SU7:
 /mba meituan --industry ai-app-cn --quick --panel-drop wanghuiwen
 /mba new-oriental --industry edu-cn --quick --panel-drop yuminhong
 /mba tal --industry edu-cn --quick --panel-drop zhangbangxin
+/mba stripe --industry vc-en --quick --panel-drop paulg
 ```
 
 ---
@@ -291,6 +297,7 @@ Redmi / Xiaomi Auto / SU7:
 - `security-cn-global.yaml` —— 网络安全 / 企业安全 / AI 安全 panel,可运行
 - `ai-app-cn.yaml` —— AI 应用 / Agent 层 panel,可运行(v1 production-seed)
 - `edu-cn.yaml` —— 中文教育 / 终身学习 panel,可运行(v1 production-seed)
-- `consumer-cn.yaml` / `cross-border.yaml` / `luxury-en.yaml` / `vc-cn.yaml` / `vc-en.yaml` —— 行业 panel,SKELETON 状态(评委 perspective skill 还没建齐)
+- `vc-en.yaml` —— 英文 VC panel,可运行(v1 production-seed)
+- `consumer-cn.yaml` / `cross-border.yaml` / `luxury-en.yaml` / `vc-cn.yaml` —— 行业 panel,SKELETON 状态(评委 perspective skill 还没建齐)
 - `industries.yaml` —— 行业 → panel 映射表,被 `--industry` flag 查询(本身不是 panel,
   也不会被 `--panel` 解析到)

@@ -1,7 +1,7 @@
 {
   "slug": "vc-en",
-  "display_name": "VC-EN Panel (Skeleton)",
-  "status": "skeleton",
+  "display_name": "VC-EN Panel",
+  "status": "production",
   "description": "英文 VC panel:Software-eats-world 派 + YC first-principles 派 + 0-to-1 反竞争派 + leverage 财富启示录派 + Blitzscaling 网络效应派。 给 SaaS / AI 应用 / 网络效应产品 / 国际化品牌做美式 VC 视角审计。",
   "judges": [
     {
@@ -10,7 +10,7 @@
       "display_name_en": "Marc Andreessen",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/pmarca.json"
     },
     {
       "slug": "paulg",
@@ -18,7 +18,7 @@
       "display_name_en": "Paul Graham",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/paulg.json"
     },
     {
       "slug": "pthiel",
@@ -26,7 +26,7 @@
       "display_name_en": "Peter Thiel",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/pthiel.json"
     },
     {
       "slug": "naval",
@@ -34,7 +34,7 @@
       "display_name_en": "Naval Ravikant",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/naval.json"
     },
     {
       "slug": "rhoffman",
@@ -42,7 +42,7 @@
       "display_name_en": "Reid Hoffman",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/rhoffman.json"
     }
   ]
 }
