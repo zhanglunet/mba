@@ -10,7 +10,7 @@
       "display_name_en": "Zhu Xiaohu",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/zhuxiaohu.json"
     },
     {
       "slug": "zhanglei",

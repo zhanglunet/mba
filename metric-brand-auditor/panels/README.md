@@ -218,6 +218,11 @@ Redmi / Xiaomi Auto / SU7:
 | `security-cn-global` | `renzhengfei` | Huawei / 华为 / 华为云 / 鸿蒙 / 昇腾 / 鲲鹏 / 海思 | use `--panel-drop renzhengfei`; if kept, self-check only |
 | `security-cn-global` | `jensenhuang` | NVIDIA / CUDA / GeForce / DGX / Omniverse | use `--panel-drop jensenhuang`; if kept, self-check only |
 | `security-cn-global` | `satyanadella` | Microsoft / Azure / Microsoft Security / Defender / Sentinel / GitHub / LinkedIn / Copilot | use `--panel-drop satyanadella`; if kept, self-check only |
+| `ai-app-cn` | `yangzhilin` | 月之暗面 / Moonshot AI / Kimi | use `--panel-drop yangzhilin`; if kept, self-check only |
+| `ai-app-cn` | `wanghuiwen` | 美团 / Meituan / 光年之外 / Light Years Beyond | use `--panel-drop wanghuiwen`; if kept, self-check only |
+| `ai-app-cn` | `zhuxiaohu` | 金沙江创投 / GSR Ventures 被投组合 | use `--panel-drop zhuxiaohu`; if kept, self-check only |
+| `ai-app-cn` | `fusheng` | 猎豹移动 / Cheetah / OpenClaw / 猎户星空 | use `--panel-drop fusheng`; if kept, self-check only |
+| `ai-app-cn` | `zhouhongyi` | 360 / 奇虎 360 / 纳米 AI | use `--panel-drop zhouhongyi`; if kept, self-check only |
 
 示例:
 
@@ -230,6 +235,8 @@ Redmi / Xiaomi Auto / SU7:
 /mba 360 --industry security-cn-global --quick --panel-drop zhouhongyi
 /mba trend-micro --industry security-cn-global --quick --panel-drop zhangmingzheng
 /mba microsoft-security --industry security-cn-global --quick --panel-drop satyanadella
+/mba kimi --industry ai-app-cn --quick --panel-drop yangzhilin
+/mba meituan --industry ai-app-cn --quick --panel-drop wanghuiwen
 ```
 
 ---
@@ -275,6 +282,7 @@ Redmi / Xiaomi Auto / SU7:
 - `default.yaml` —— 5 人混合 panel,/mba 的兜底
 - `auto.yaml` —— 汽车 / EV panel,可运行
 - `security-cn-global.yaml` —— 网络安全 / 企业安全 / AI 安全 panel,可运行
-- `consumer-cn.yaml` / `ai-app-cn.yaml` 等 —— 行业 panel,多为 SKELETON 状态(评委 perspective skill 还没建齐)
+- `ai-app-cn.yaml` —— AI 应用 / Agent 层 panel,可运行(v1 production-seed)
+- `consumer-cn.yaml` / `cross-border.yaml` / `edu-cn.yaml` / `luxury-en.yaml` / `vc-cn.yaml` / `vc-en.yaml` —— 行业 panel,SKELETON 状态(评委 perspective skill 还没建齐)
 - `industries.yaml` —— 行业 → panel 映射表,被 `--industry` flag 查询(本身不是 panel,
   也不会被 `--panel` 解析到)

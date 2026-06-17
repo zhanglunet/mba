@@ -20,8 +20,8 @@
   "items": [
     {
       "slug": "ai-app-cn",
-      "display_name": "AI Application Layer Panel (Skeleton)",
-      "status": "skeleton",
+      "display_name": "AI Application Layer Panel",
+      "status": "production",
       "judges_count": 5,
       "description": "AI 应用 / Agent 层 panel:大模型创业现役选手 + 创业失败复盘者 + 安全反共识派 + 反共识 Agent 布道者 + 卷王 VC。 给 AI 应用、Agent 产品、大模型 API 包装层、AI 出海做影响力审计。",
       "api_url": "/api/panels/ai-app-cn.json"

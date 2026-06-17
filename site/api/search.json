@@ -1,5 +1,5 @@
 {
-  "count": 41,
+  "count": 44,
   "items": [
     {
       "type": "report",
@@ -20,7 +20,7 @@
     {
       "type": "panel",
       "slug": "ai-app-cn",
-      "title": "AI Application Layer Panel (Skeleton)",
+      "title": "AI Application Layer Panel",
       "text": "AI 应用 / Agent 层 panel:大模型创业现役选手 + 创业失败复盘者 + 安全反共识派 + 反共识 Agent 布道者 + 卷王 VC。 给 AI 应用、Agent 产品、大模型 API 包装层、AI 出海做影响力审计。",
       "url": "/api/panels/ai-app-cn.json",
       "api_url": "/api/panels/ai-app-cn.json"
@@ -187,11 +187,27 @@
     },
     {
       "type": "judge",
+      "slug": "wanghuiwen",
+      "title": "wanghuiwen-perspective",
+      "text": "王慧文(美团联合创始人、光年之外创始人)的「互联网下半场 / 供给侧、通用方法论、 人才密度、选择 > 努力」战略与产品方法论视角。基于其公开的清华《互联网产品课》 讲义与 2023 年光年之外公开资料提炼。",
+      "url": "/api/judges/wanghuiwen.json",
+      "api_url": "/api/judges/wanghuiwen.json"
+    },
+    {
+      "type": "judge",
       "slug": "wu-jundong",
       "title": "wu-jundong-perspective",
       "text": "吴俊东（Frank Jundong WU，Aibrary / BotLearn 联合创始人，前好未来战投+学而思网校\"东得多\"主讲老师，哈佛肯尼迪学院 MPP）的思维框架与表达方式。基于 6 路并行调研（约 90 条来源、56 条一手，含 EdTech Insiders 54 分钟英文长访谈完整 transcript）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用吴俊东的视角分析教育/学习产品判断、AI 时代的人才能力分层、关系网络与长期投资、出海创业的资本组合、个人 IP 与身份转换问题。",
       "url": "/api/judges/wu-jundong.json",
       "api_url": "/api/judges/wu-jundong.json"
+    },
+    {
+      "type": "judge",
+      "slug": "yangzhilin",
+      "title": "yangzhilin-perspective",
+      "text": "杨植麟(月之暗面 Moonshot AI 创始人 / CEO,Kimi 背后的人)的「tech vision 驱动、 长上下文通往 AGI、Be Simple Be Naive」模型层创始人视角。基于其公开访谈 (《晚点》对话、ChinaTalk / 公开演讲)与论文背景提炼:创始人必须有独特技术判断并 果断执行;无损长上下文是 AI-native 个性化交互的基础。",
+      "url": "/api/judges/yangzhilin.json",
+      "api_url": "/api/judges/yangzhilin.json"
     },
     {
       "type": "judge",
@@ -216,6 +232,14 @@
       "text": "周鸿祎（360 集团创始人、董事长）的网络安全、政企安全、AI 安全与 品牌心智判断视角。基于 360 官方创始人介绍、公开演讲、ISC 公开资料 和长期安全行业公开表达，提炼为“安全是攻防实战，不是功能清单”。",
       "url": "/api/judges/zhouhongyi.json",
       "api_url": "/api/judges/zhouhongyi.json"
+    },
+    {
+      "type": "judge",
+      "slug": "zhuxiaohu",
+      "title": "zhuxiaohu-perspective",
+      "text": "朱啸虎(金沙江创投 / GSR Ventures 主管合伙人)的「AI 应用为王、反共识套利、 商业化优先」早期投资判断视角。基于其公开访谈与受访记录(对话《晚点》/中关村论坛/ 投中网等)提炼:5 年后没有独立大模型公司,价值沉淀到有场景有数据的应用层; 创业者要勇于承认没有壁垒,再在 AI 之外造壁垒。",
+      "url": "/api/judges/zhuxiaohu.json",
+      "api_url": "/api/judges/zhuxiaohu.json"
     },
     {
       "type": "dimension",
