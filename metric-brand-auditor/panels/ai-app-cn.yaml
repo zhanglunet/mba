@@ -3,12 +3,12 @@
 # AI 应用 / Agent 层 panel —— 5 位现役 AI 创业者 + 失败者 + VC + 反共识布道者。
 # 通过 industries.yaml 被 `--industry ai-app-cn` 引用。
 #
-# ⚠️  SKELETON 状态:4 位待建,fusheng 已存在(复用 default panel 的 perspective)。
-# 候选评估见 docs/prd/panels/industries-roster.md §3.3。
+# 可运行(v1 production-seed):yangzhilin / wanghuiwen / zhuxiaohu 已建(SKILL.md +
+# quotes.md,基于公开一手资料),zhouhongyi / fusheng 复用现有 perspective。
+# 深度 references/research/01-06 为后续工作。
 
 name: ai-app-cn
-display_name: AI Application Layer Panel (Skeleton)
-status: skeleton
+display_name: AI Application Layer Panel
 description: >
   AI 应用 / Agent 层 panel:大模型创业现役选手 + 创业失败复盘者 +
   安全反共识派 + 反共识 Agent 布道者 + 卷王 VC。
