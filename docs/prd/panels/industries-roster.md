@@ -66,7 +66,7 @@ biotech(政治敏感 + 源差)/ real-estate(行业敏感)。
 | jiangnanchun | 江南春(分众)| 媒介杠杆 + 品类教育第一人,讲品牌教科书 |
 | zhanglan | 张兰(麻六记)| 短视频时代 IP 化典范,失败-翻身-翻身的强叙事 |
 | luoyonghao | 罗永浩(锤子→直播→AR)| 一次失败一次重生,反共识表达 DNA 极强 |
-| yangjianhui | 杨建辉(Anker)| 跨境产品力 + 工程师式静默优秀,反"营销天花板" |
+| yangjianhui | 阳萌 / Steven Yang(Anker;slug 沿用历史命名,旧标"杨建辉"系误标)| 跨境产品力 + 工程师式静默优秀,反"营销天花板" |
 | zhongshanshan | 钟睒睒(农夫山泉)⚠ | 极致渠道 + 价值标签,但**几乎不公开发言** |
 
 **替补建议:** 钟睒睒源太少,可替换为周成建(美邦)或喜茶聂云宸或卫龙刘卫平。
@@ -136,7 +136,7 @@ biotech(政治敏感 + 源差)/ real-estate(行业敏感)。
 | slug | 评委 | 一句话理由 |
 |---|---|---|
 | huangzheng | 黄峥(Pinduoduo / Temu)⚠ | 极致下沉 + 算法供应链,**2021 后沉默** |
-| yangjianhui | 杨建辉(Anker,与 consumer-cn 复用)| 静默优秀 |
+| yangjianhui | 阳萌(Anker,与 consumer-cn 复用)| 静默优秀 |
 | zhangyong-shein | 张勇(Shein)⚠ | 极致供应链 + 数据驱动设计,**几乎不公开发言** |
 | chennian | 陈年(凡客)| **失败者**视角,稀缺 |
 | zhuangshuai | 庄帅(零售电商研究)| 行业观察者,弥补创始人沉默 |

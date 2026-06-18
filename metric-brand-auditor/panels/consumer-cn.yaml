@@ -3,13 +3,12 @@
 # 中文消费品 / 快消 panel —— 5 位品牌型 operator + 媒介杠杆视角。
 # 通过 industries.yaml 被 `--industry consumer-cn` 引用。
 #
-# ⚠️  SKELETON 状态:5 位都还没建 <slug>-perspective/。
-# 候选评估见 docs/prd/panels/industries-roster.md §3.2。
-# 钟睒睒源密度差,建之前考虑替换(见 roster 替补建议)。
+# 可运行(v1 production-seed):jiangnanchun / zhongshanshan / luoyonghao /
+# yangjianhui(阳萌 / Anker)/ zhanglan 已建(SKILL.md + quotes.md,基于公开一手资料)。
+# 深度 references/research/01-06 为后续工作。
 
 name: consumer-cn
-display_name: Consumer-CN Panel (Skeleton)
-status: skeleton
+display_name: Consumer-CN Panel
 description: >
   中文消费品 / 快消 panel:媒介杠杆派 + IP 化派 + 反共识表达 +
   跨境产品力 + 渠道极致。给消费品牌、零售、IP 化餐饮、跨境消费品做
@@ -35,7 +34,7 @@ judges:
     weight: 1.0
 
   - slug: yangjianhui
-    display_name_cn: 杨建辉
+    display_name_cn: 阳萌
     display_name_en: Steven Yang
     language: zh
     weight: 1.0

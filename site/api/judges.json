@@ -1,5 +1,5 @@
 {
-  "count": 29,
+  "count": 34,
   "items": [
     {
       "slug": "fusheng",
@@ -21,6 +21,13 @@
       "summary": "Jensen Huang / 黄仁勋（NVIDIA 创始人、总裁兼 CEO）的 AI 基础设施、加速计算、 平台生态、开发者飞轮与技术品牌判断视角。基于 NVIDIA 官方简介、GTC 公开演讲 和公司公开故事，提炼为“平台要把计算范式变成生态”。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jensenhuang-perspective/SKILL.md",
       "api_url": "/api/judges/jensenhuang.json"
+    },
+    {
+      "slug": "jiangnanchun",
+      "name": "jiangnanchun-perspective",
+      "summary": "江南春(分众传媒创始人)的「抢占心智、饱和攻击、找对词、人心 > 流量」品牌定位 判断视角。基于其著作《抢占心智》与公开演讲提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jiangnanchun-perspective/SKILL.md",
+      "api_url": "/api/judges/jiangnanchun.json"
     },
     {
       "slug": "jobs",
@@ -56,6 +63,13 @@
       "summary": "李想(理想汽车 / Li Auto 创始人,1981 年生,泡泡网 → 汽车之家 → 车和家 / 理想) 的品牌与产品判断视角。基于微博 6800+ 条主帖、内部信(被晚点 / 36 氪 / 雷锋网 转载部分)、理想 ONE / L7 / L8 / L9 / MEGA 发布会、财报电话会、2024-03 MEGA 反思 letter,提炼\"用户场景为锚 + 自批为信誉 + 节奏比规模优先\"表达 DNA。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/lixiang-perspective/SKILL.md",
       "api_url": "/api/judges/lixiang.json"
+    },
+    {
+      "slug": "luoyonghao",
+      "name": "luoyonghao-perspective",
+      "summary": "罗永浩(锤子科技创始人,「交个朋友」直播创始人)的「创始人 IP、理想主义 × 务实打脸、 内容化带货、债务自救」消费 / 网红品牌判断视角。基于其公开言论与创业经历提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/luoyonghao-perspective/SKILL.md",
+      "api_url": "/api/judges/luoyonghao.json"
     },
     {
       "slug": "musk",
@@ -149,6 +163,13 @@
       "api_url": "/api/judges/xuxin.json"
     },
     {
+      "slug": "yangjianhui",
+      "name": "yangjianhui-perspective",
+      "summary": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「产品主义、工程师式静默优秀、 为本地用户创造价值的出海、做全球品牌不做白牌」消费 / 跨境判断视角。基于其公开访谈与 Anker 公开战略提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yangjianhui-perspective/SKILL.md",
+      "api_url": "/api/judges/yangjianhui.json"
+    },
+    {
       "slug": "yangzhilin",
       "name": "yangzhilin-perspective",
       "summary": "杨植麟(月之暗面 Moonshot AI 创始人 / CEO,Kimi 背后的人)的「tech vision 驱动、 长上下文通往 AGI、Be Simple Be Naive」模型层创始人视角。基于其公开访谈 (《晚点》对话、ChinaTalk / 公开演讲)与论文背景提炼:创始人必须有独特技术判断并 果断执行;无损长上下文是 AI-native 个性化交互的基础。",
@@ -177,6 +198,13 @@
       "api_url": "/api/judges/zhangbangxin.json"
     },
     {
+      "slug": "zhanglan",
+      "name": "zhanglan-perspective",
+      "summary": "张兰(俏江南创始人,麻六记联合创始人)的「草根逆袭、个人 IP 话题营销、轻资产高毛利、 东山再起」餐饮 / 消费品牌判断视角。基于其公开创业经历与麻六记直播带货的公开报道提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhanglan-perspective/SKILL.md",
+      "api_url": "/api/judges/zhanglan.json"
+    },
+    {
       "slug": "zhanglei",
       "name": "zhanglei-perspective",
       "summary": "张磊(高瓴 / Hillhouse 创始人)的「长期主义、价值投资、重仓中国、弱水三千只取一瓢」 研究驱动投资判断视角。基于其著作《价值》与公开访谈提炼。",
@@ -189,6 +217,13 @@
       "summary": "张明正 / Steve Chang（Trend Micro 趋势科技创办人、董事长）的企业级安全、 亚洲安全公司全球化、长期技术信任判断视角。基于 Trend Micro 官方领导团队、 历史沿革与公开公司资料，提炼为“安全品牌要靠长期威胁情报和客户信任复利”。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhangmingzheng-perspective/SKILL.md",
       "api_url": "/api/judges/zhangmingzheng.json"
+    },
+    {
+      "slug": "zhongshanshan",
+      "name": "zhongshanshan-perspective",
+      "summary": "钟睒睒(农夫山泉 / 养生堂创始人)的「产品主义、品类冠军、差异化定位、独行做长期」 消费品判断视角。基于其公开报道与农夫山泉品牌战略提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhongshanshan-perspective/SKILL.md",
+      "api_url": "/api/judges/zhongshanshan.json"
     },
     {
       "slug": "zhouhongyi",

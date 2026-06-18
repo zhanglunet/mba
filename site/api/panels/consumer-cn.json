@@ -1,7 +1,7 @@
 {
   "slug": "consumer-cn",
-  "display_name": "Consumer-CN Panel (Skeleton)",
-  "status": "skeleton",
+  "display_name": "Consumer-CN Panel",
+  "status": "production",
   "description": "中文消费品 / 快消 panel:媒介杠杆派 + IP 化派 + 反共识表达 + 跨境产品力 + 渠道极致。给消费品牌、零售、IP 化餐饮、跨境消费品做 影响力审计。",
   "judges": [
     {
@@ -10,7 +10,7 @@
       "display_name_en": "Jiang Nanchun",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/jiangnanchun.json"
     },
     {
       "slug": "zhanglan",
@@ -18,7 +18,7 @@
       "display_name_en": "Zhang Lan",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/zhanglan.json"
     },
     {
       "slug": "luoyonghao",
@@ -26,15 +26,15 @@
       "display_name_en": "Luo Yonghao",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/luoyonghao.json"
     },
     {
       "slug": "yangjianhui",
-      "display_name_cn": "杨建辉",
+      "display_name_cn": "阳萌",
       "display_name_en": "Steven Yang",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/yangjianhui.json"
     },
     {
       "slug": "zhongshanshan",
@@ -42,7 +42,7 @@
       "display_name_en": "Zhong Shanshan",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/zhongshanshan.json"
     }
   ]
 }

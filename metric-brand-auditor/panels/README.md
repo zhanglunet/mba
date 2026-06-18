@@ -238,6 +238,11 @@ Redmi / Xiaomi Auto / SU7:
 | `vc-cn` | `xuxin` | 今日资本被投组合(京东 / 网易 …) | use `--panel-drop xuxin`; if kept, self-check only |
 | `vc-cn` | `leijun` | 小米 / 顺为资本被投组合 | use `--panel-drop leijun`; if kept, self-check only |
 | `vc-cn` | `shennanpeng` | 红杉中国 / Sequoia China 被投组合(携程 / 如家 …) | use `--panel-drop shennanpeng`; if kept, self-check only |
+| `consumer-cn` | `jiangnanchun` | 分众传媒 / 其重要广告客户 | use `--panel-drop jiangnanchun`; if kept, self-check only |
+| `consumer-cn` | `zhongshanshan` | 农夫山泉 / 养生堂 | use `--panel-drop zhongshanshan`; if kept, self-check only |
+| `consumer-cn` | `luoyonghao` | 锤子科技 / 交个朋友 | use `--panel-drop luoyonghao`; if kept, self-check only |
+| `consumer-cn` | `yangjianhui` | 安克创新 / Anker(eufy / soundcore / Nebula);判 = 阳萌 | use `--panel-drop yangjianhui`; if kept, self-check only |
+| `consumer-cn` | `zhanglan` | 俏江南 / 麻六记 | use `--panel-drop zhanglan`; if kept, self-check only |
 
 示例:
 
@@ -256,6 +261,7 @@ Redmi / Xiaomi Auto / SU7:
 /mba tal --industry edu-cn --quick --panel-drop zhangbangxin
 /mba stripe --industry vc-en --quick --panel-drop paulg
 /mba jd --industry vc-cn --quick --panel-drop xuxin
+/mba nongfu-spring --industry consumer-cn --quick --panel-drop zhongshanshan
 ```
 
 ---
@@ -305,6 +311,7 @@ Redmi / Xiaomi Auto / SU7:
 - `edu-cn.yaml` —— 中文教育 / 终身学习 panel,可运行(v1 production-seed)
 - `vc-en.yaml` —— 英文 VC panel,可运行(v1 production-seed)
 - `vc-cn.yaml` —— 中文 VC panel,可运行(v1 production-seed)
-- `consumer-cn.yaml` / `cross-border.yaml` / `luxury-en.yaml` —— 行业 panel,SKELETON 状态(评委 perspective skill 还没建齐)
+- `consumer-cn.yaml` —— 中文消费品 / 快消 panel,可运行(v1 production-seed)
+- `cross-border.yaml` / `luxury-en.yaml` —— 行业 panel,SKELETON 状态(评委 perspective skill 还没建齐)
 - `industries.yaml` —— 行业 → panel 映射表,被 `--industry` flag 查询(本身不是 panel,
   也不会被 `--panel` 解析到)

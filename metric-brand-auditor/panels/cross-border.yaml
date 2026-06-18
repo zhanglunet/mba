@@ -25,7 +25,7 @@ judges:
     weight: 1.0
 
   - slug: yangjianhui
-    display_name_cn: 杨建辉
+    display_name_cn: 阳萌
     display_name_en: Steven Yang
     language: zh
     weight: 1.0
