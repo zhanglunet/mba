@@ -16,7 +16,7 @@ MBA 用三条对应机制解决:
 
 | 顽疾 | MBA 应对 |
 |---|---|
-| 单线程单视角 | N 条并行 sub-agent + 5 位人物评委独立打分 |
+| 单线程单视角 | N 条并行 sub-agent + N 位人物评委 panel 独立打分 |
 | 不可复盘 | 版本化目录 + EVOLUTION 模式(只 diff 变了的部分) |
 | 打分漂移 | 固定 5 镜头 × 7 维度,跨品牌跨时间同一坐标系 |
 
@@ -49,7 +49,7 @@ MBA 用三条对应机制解决:
 
 输入一个品牌名(或主页 URL),输出:
 - 一份 markdown 报告 + 一份 HTML 报告(Chart.js 雷达图 + 异议热力图 + Mermaid 影响力图)
-- 5 位评委独立打分卡
+- N 位评委(panel)独立打分卡
 - 每个研究维度的原始材料(`_raw/`)
 
 ### F2 — 演化模式(EVOLUTION)
@@ -143,8 +143,8 @@ MBA 用三条对应机制解决:
 - **v0.2.14** — 路径去 hardcode,引入 `${SKILL_DIR}` 等运行时符号(已发)
 - **v0.2.19** — panel 系统:`panels/*.yaml` + `--panel` / `--industry` + 品牌绑定;auto panel 可运行(已发)
 - **v0.2.2x** — security-cn-global 6 人 panel + perspective 增至 15 套 + perspective-structure-spec + CI 校验 + site 发布(mbabrand.com)
-- **2026-06** — perspective skill 收纳到 `perspectives/` 子目录(SKILL.md 路径兼容旧布局)+ For-Agents 机读层(`site/api/*.json` + `llms.txt` + `agents.html`)+ 项目介绍 presentation deck(当前)
-- **v0.3** — 填齐 7 个 SKELETON 行业 panel 的评委 + 持续改进 SKILL.md(以 issue 驱动)
+- **2026-06 · v0.2.30–v0.2.36** — perspective 收纳到 `perspectives/`;For-Agents 机读层(`site/api/*.json` + `llms.txt` + `agents.html`)+ presentation deck;修复 perspectives/ 重构的 CI 回归 + `/api` 漂移守卫(含 llms.txt / reports-meta)+ 一键发布流水线;**7 个 SKELETON 行业 panel 全部建成可运行 → 10/10 panel、43 套 perspective**(当前)
+- **v0.3** — 把 28 套 seed-tier perspective 深化到 full tier(6 路调研,见 [10-deepening-perspectives.md](10-deepening-perspectives.md))+ dogfood 真实报告
 - **v0.4+** — MCP 化(参考 [mcp-server-design.md](mcp-server-design.md))
 
 ## 11. 衍生需求(待评估)
