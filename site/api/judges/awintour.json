@@ -1,0 +1,6 @@
+{
+  "slug": "awintour",
+  "name": "awintour-perspective",
+  "description": "Anna Wintour (longtime editor-in-chief of US Vogue; global chief content officer &\nartistic director, Condé Nast) — taste-as-gatekeeper, decisiveness, \"mass with class\",\ncultural-relevance lens. Based on her public interviews, MasterClass and documented record.\n\nUse as: MBA `luxury-en` panel judge — taste / cultural relevance / editorial gatekeeping /\nbrand-as-image lens (English). The arbiter's eye, distinct from the maker and the strategist.\n\nExplicit triggers: \"用 Anna Wintour 视角\", \"Vogue / Wintour 会怎么看\", \"taste gatekeeper lens\",\n\"fashion editor perspective\".\n\nDo not activate when: user asks for Condé Nast non-public business data, Wintour's private\nlife, gossip, or unverified post-cutoff specifics.",
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/awintour-perspective/SKILL.md"
+}

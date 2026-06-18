@@ -1,12 +1,40 @@
 {
-  "count": 38,
+  "count": 43,
   "items": [
+    {
+      "slug": "arnault",
+      "name": "arnault-perspective",
+      "summary": "Bernard Arnault (Chairman & CEO of LVMH) — \"star brands\", creativity-as-core, decentralized maisons, long-term desirability-over-volume luxury-empire lens. Based on his public interviews, LVMH materials and documented strategy.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/arnault-perspective/SKILL.md",
+      "api_url": "/api/judges/arnault.json"
+    },
+    {
+      "slug": "awintour",
+      "name": "awintour-perspective",
+      "summary": "Anna Wintour (longtime editor-in-chief of US Vogue; global chief content officer & artistic director, Condé Nast) — taste-as-gatekeeper, decisiveness, \"mass with class\", cultural-relevance lens. Based on her public interviews, MasterClass and documented record.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/awintour-perspective/SKILL.md",
+      "api_url": "/api/judges/awintour.json"
+    },
+    {
+      "slug": "burton",
+      "name": "burton-perspective",
+      "summary": "Sarah Burton (creative director of Givenchy; previously creative director of Alexander McQueen, 2010–2023) — craftsmanship, atelier-first, \"how the woman feels\", stewarding a founder's legacy lens. Based on her public interviews and documented work.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/burton-perspective/SKILL.md",
+      "api_url": "/api/judges/burton.json"
+    },
     {
       "slug": "chennian",
       "name": "chennian-perspective",
       "summary": "陈年(凡客诚品创始人)的「极致单品、回归产品本质、复盘过度扩张、专注而非凑热闹」 消费 / 品牌反思视角。基于其公开复盘、采访与凡客兴衰的公开记录提炼。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/chennian-perspective/SKILL.md",
       "api_url": "/api/judges/chennian.json"
+    },
+    {
+      "slug": "cucinelli",
+      "name": "cucinelli-perspective",
+      "summary": "Brunello Cucinelli (founder & chairman of Brunello Cucinelli) — \"humanistic capitalism\", quiet luxury, Italian craftsmanship, dignity of work (Solomeo) lens. Based on his public talks, interviews and the brand's stated philosophy.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/cucinelli-perspective/SKILL.md",
+      "api_url": "/api/judges/cucinelli.json"
     },
     {
       "slug": "fusheng",
@@ -161,6 +189,13 @@
       "summary": "周受资(Shou Zi Chew,TikTok CEO,前字节跳动 / 小米 CFO)的「全球化、数据主权与信任、 地缘合规、极致执行」中国公司出海 / 全球平台判断视角。基于其国会听证证词与公开访谈提炼。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/shouzichew-perspective/SKILL.md",
       "api_url": "/api/judges/shouzichew.json"
+    },
+    {
+      "slug": "tomford",
+      "name": "tomford-perspective",
+      "summary": "Tom Ford (designer; revived Gucci as creative director, founded Tom Ford brand, filmmaker) — perfectionism, glamour, total creative control, branding-as-lifestyle lens. Based on his public interviews and documented career.",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/tomford-perspective/SKILL.md",
+      "api_url": "/api/judges/tomford.json"
     },
     {
       "slug": "wanghuiwen",

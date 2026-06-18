@@ -1,7 +1,7 @@
 {
   "slug": "luxury-en",
-  "display_name": "Luxury & Fashion Panel (Skeleton)",
-  "status": "skeleton",
+  "display_name": "Luxury & Fashion Panel",
+  "status": "production",
   "description": "奢侈品 / 时尚 panel:收购艺术 + 工艺信仰 / 行业仲裁人 gatekeeper / 慢生活人文经营 / 设计师即 CEO / 设计师传承。给奢侈品、高端时尚、 设计驱动品牌、生活方式品牌做影响力审计,全英文落笔。",
   "judges": [
     {
@@ -10,7 +10,7 @@
       "display_name_en": "Bernard Arnault",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/arnault.json"
     },
     {
       "slug": "awintour",
@@ -18,7 +18,7 @@
       "display_name_en": "Anna Wintour",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/awintour.json"
     },
     {
       "slug": "cucinelli",
@@ -26,7 +26,7 @@
       "display_name_en": "Brunello Cucinelli",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/cucinelli.json"
     },
     {
       "slug": "tomford",
@@ -34,7 +34,7 @@
       "display_name_en": "Tom Ford",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/tomford.json"
     },
     {
       "slug": "burton",
@@ -42,7 +42,7 @@
       "display_name_en": "Sarah Burton",
       "language": "en",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/burton.json"
     }
   ]
 }

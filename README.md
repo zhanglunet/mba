@@ -81,7 +81,7 @@ mba/
 │   │   ├── vc-cn.yaml                   [可运行] 中文 VC:朱啸虎 / 张磊 / 徐新 / 雷军 / 沈南鹏
 │   │   ├── consumer-cn.yaml             [可运行] 消费:江南春 / 钟睒睒 / 罗永浩 / 阳萌 / 张兰
 │   │   ├── cross-border.yaml            [可运行] 出海:黄峥 / 阳萌 / 周受资 / 陈年 / 庄帅
-│   │   ├── luxury-en.yaml               [SKELETON] 最后 1 个行业占位 panel(评委 perspective 尚未建齐)
+│   │   ├── luxury-en.yaml               [可运行] 奢侈品:Arnault / Cucinelli / Wintour / Tom Ford / Burton(全英文)
 │   │   ├── industries.yaml              行业名 → panel 名映射表,被 --industry 查询(本身不是 panel)
 │   │   └── README.md                    panel yaml 字段说明 + 怎么写一个新 panel
 │   └── reports/<brand-slug>/          每个品牌一个文件夹(运行 /mba <brand> 后生成)
@@ -382,8 +382,8 @@ metric-brand-auditor/panels/
 ├── vc-cn.yaml              # 中文 VC:朱啸虎 + 张磊 + 徐新 + 雷军 + 沈南鹏(v1 production-seed)
 ├── consumer-cn.yaml        # 中文消费品:江南春 + 钟睒睒 + 罗永浩 + 阳萌 + 张兰(v1 production-seed)
 ├── cross-border.yaml       # 出海 / 跨境:黄峥 + 阳萌 + 周受资 + 陈年 + 庄帅(v1 production-seed)
-# ── SKELETON(占位 / 路线图,评委还没建齐,跑到会自动降级为 synthesis-only)──
-└── luxury-en.yaml          # 奢侈品(Arnault / Anna Wintour / …)
+└── luxury-en.yaml          # 奢侈品:Arnault + Cucinelli + Wintour + Tom Ford + Burton(全英文,v1 production-seed)
+# ── 10/10 panel 全部可运行(v1 production-seed),已无 skeleton ──
 # ── 不是 panel,是映射表 ────────────────────────────────────
 └── industries.yaml         # 行业名 → panel 名,被 --industry 查询
 ```

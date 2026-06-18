@@ -248,6 +248,11 @@ Redmi / Xiaomi Auto / SU7:
 | `cross-border` | `yangjianhui` | 安克创新 / Anker(阳萌) | use `--panel-drop yangjianhui`; if kept, self-check only |
 | `cross-border` | `chennian` | 凡客诚品 | use `--panel-drop chennian`; if kept, self-check only |
 | `cross-border` | `zhuangshuai` | 百联咨询的咨询客户(分析师,利益相对轻) | use `--panel-drop zhuangshuai`(可酌情); if kept, self-check only |
+| `luxury-en` | `arnault` | LVMH 旗下任何 maison(Dior / LV / Tiffany / Bulgari …) | use `--panel-drop arnault`; if kept, self-check only |
+| `luxury-en` | `cucinelli` | Brunello Cucinelli(品牌) | use `--panel-drop cucinelli`; if kept, self-check only |
+| `luxury-en` | `awintour` | Vogue / Condé Nast / Met Gala / 其公开力捧的品牌 | use `--panel-drop awintour`; if kept, self-check only |
+| `luxury-en` | `tomford` | Tom Ford(品牌)/ Gucci(其任职过) | use `--panel-drop tomford`; if kept, self-check only |
+| `luxury-en` | `burton` | Givenchy / Alexander McQueen | use `--panel-drop burton`; if kept, self-check only |
 
 示例:
 
@@ -268,6 +273,7 @@ Redmi / Xiaomi Auto / SU7:
 /mba jd --industry vc-cn --quick --panel-drop xuxin
 /mba nongfu-spring --industry consumer-cn --quick --panel-drop zhongshanshan
 /mba temu --industry cross-border --quick --panel-drop huangzheng
+/mba dior --industry luxury-en --quick --panel-drop arnault
 ```
 
 ---
@@ -319,6 +325,6 @@ Redmi / Xiaomi Auto / SU7:
 - `vc-cn.yaml` —— 中文 VC panel,可运行(v1 production-seed)
 - `consumer-cn.yaml` —— 中文消费品 / 快消 panel,可运行(v1 production-seed)
 - `cross-border.yaml` —— 出海 / 跨境电商 panel,可运行(v1 production-seed)
-- `luxury-en.yaml` —— 奢侈品 panel,SKELETON 状态(最后一个,评委 perspective skill 还没建齐)
+- `luxury-en.yaml` —— 奢侈品 / 时尚 panel,可运行(v1 production-seed)—— 至此 **10/10 panel 全部可运行**
 - `industries.yaml` —— 行业 → panel 映射表,被 `--industry` flag 查询(本身不是 panel,
   也不会被 `--panel` 解析到)
