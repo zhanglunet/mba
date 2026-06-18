@@ -50,7 +50,7 @@ Lead 会:
 > /mba OpenClaw
 
 [Lead] No prior report for openclaw. Running fresh pipeline:
-       discovery → parallel search → synthesis → 5-judge panel → merge.
+       discovery → parallel search → synthesis → N-judge panel → merge.
        Estimated 20-25 minutes.
 
        Drafting Brand Influence PRD...

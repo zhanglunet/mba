@@ -38,7 +38,7 @@ mba/                                   ← 仓库根
 │   └── references/{agent-prompts,comparison-matrix,report-template}.md
 │
 │ ── 评委层 ────────────────────────────────
-├── perspectives/                      ← 15 套 production 人物视角 skill(目录名 <slug>-perspective/)
+├── perspectives/                      ← 43 套 production 人物视角 skill(目录名 <slug>-perspective/,覆盖 10 套 panel)
 │   ├── default panel:  fusheng / jobs / likejia / wu-jundong / zhang-yiming
 │   ├── auto panel:     musk / leijun / lixiang / hexiaopeng / libin
 │   └── security panel: zhouhongyi / zhangmingzheng / renzhengfei / jensenhuang / satyanadella (+ musk)
@@ -232,7 +232,7 @@ body 部分按 phase 组织,每个 phase 含:
 `*-perspective/SKILL.md` 必须满足的 H2 布局,`scripts/perspective-tools/check_structure.py`
 在 CI 里强制校验(`panel-validation.yml` 第二步)。
 
-15 套 perspective 经一年增量演化形成了三种风格(默认 panel 全中文 H2、auto panel 中英混排、
+43 套 perspective 经增量演化形成了三种风格(默认 panel 全中文 H2、auto panel 中英混排、
 security panel 全英式 H2),structure-spec 用"逻辑章节 + 可接受别名"统一它们。必须出现的 5 个
 H2 章节(任一别名即可):
 
@@ -288,7 +288,7 @@ reviews/<judge>.md
 ```
 
 `<judge>` = 解析后 panel 里每位评委的 slug,文件数 = panel 大小(default 5 / auto 5 /
-security-cn-global 6)。slug 取自 15 套 perspective 之一(`fusheng` / `jobs` / `likejia` /
+security-cn-global 6)。slug 取自 43 套 perspective 之一(`fusheng` / `jobs` / `likejia` /
 `wu-jundong` / `zhang-yiming` / `musk` / `leijun` / `lixiang` / `hexiaopeng` / `libin` /
 `zhouhongyi` / `zhangmingzheng` / `renzhengfei` / `jensenhuang` / `satyanadella`)∪ 用户自定义。
 EVOLUTION 模式重打分写 `reviews/<judge>_v{n+1}.md`,旧卡保留。

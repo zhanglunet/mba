@@ -89,7 +89,7 @@ cleanup: session deleted via client.delete()
 mkdir -p ~/.claude/skills
 ln -s ~/mba/metric-brand-auditor ~/.claude/skills/mba
 ln -s ~/mba/research ~/.claude/skills/research
-# 一次性软链全部 15 套 perspective(default + auto + security 三套 panel 的评委)
+# 一次性软链全部 43 套 perspective(10 套 panel 的评委)
 # 注:2026-06 起 perspective skill 收纳在 perspectives/ 子目录下
 for d in ~/mba/perspectives/*-perspective; do
   ln -s "$d" ~/.claude/skills/"$(basename "$d")"
@@ -218,7 +218,7 @@ git pull
 
 ```bash
 rm -f ~/.claude/skills/mba ~/.claude/skills/research
-rm -f ~/.claude/skills/*-perspective    # 清掉全部 15 套 perspective 软链
+rm -f ~/.claude/skills/*-perspective    # 清掉全部 43 套 perspective 软链
 rm -rf ~/mba
 ```
 
@@ -276,7 +276,7 @@ shasum -a 256 /tmp/botlearn-sdk.tar.gz               # 记录 hash 做版本追�
 ```bash
 # 用项目化 handle,不暴露真名
 bash skills/botlearn/bin/botlearn.sh register "mba-auditor" \
-  "MBA = Metric Brand Auditor. Multi-agent brand-influence research + 5-judge review pipeline."
+  "MBA = Metric Brand Auditor. Multi-agent brand-influence research + swappable multi-judge panels (10 built-in, 43 judges)."
 ```
 
 注册成功后 SDK 会写 `~/mba/.botlearn/credentials.json`(api_key)和

@@ -2,7 +2,7 @@
 
 > 多智能体并行调研 + 五人评委打分,把"品牌影响力是怎么搭起来的"拆成可量化、可演化、可复盘的版本化报告。
 
-`/mba` 文件夹下的核心 skill 名为 **Metric Brand Auditor**(MBA)—— 一条由 Lead 编排、子 agent 并行执行、人物评委 panel 独立打分的品牌影响力审计流水线。默认 panel 是 5 位评委,行业 panel 可替换或扩展。整个仓库就是这条流水线的源代码 + 角色资料 + 历史报告。
+`/mba` 文件夹下的核心 skill 名为 **Metric Brand Auditor**(MBA)—— 一条由 Lead 编排、子 agent 并行执行、人物评委 panel 独立打分的品牌影响力审计流水线。默认 panel 是 5 位评委,另有 9 套行业 panel 可按需替换 / 扩展(共 **10 套内置 panel、43 位评委,全部可运行**)。整个仓库就是这条流水线的源代码 + 角色资料 + 历史报告。
 
 ## 团队 / Team
 
@@ -95,7 +95,7 @@ mba/
 ├── research/                     ← 工具层:复用的"PRD 多代理深度调研" skill
 │   └── SKILL.md                       MBA 内部当作搜索建块,自身也可独立 `/research` 调用
 │
-├── perspectives/                 ← 评委层:15 套 production 人物视角 skill(目录名 <slug>-perspective/)
+├── perspectives/                 ← 评委层:43 套 production 人物视角 skill(目录名 <slug>-perspective/)
 │   ├── default panel 的 5 位:
 │   │   fusheng(傅盛)/ jobs(Steve Jobs)/ likejia(李可佳)/
 │   │   wu-jundong(吴俊东)/ zhang-yiming(张一鸣)
