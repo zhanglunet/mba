@@ -1,5 +1,5 @@
 {
-  "count": 60,
+  "count": 64,
   "items": [
     {
       "type": "report",
@@ -44,7 +44,7 @@
     {
       "type": "panel",
       "slug": "cross-border",
-      "title": "Cross-Border Panel (Skeleton)",
+      "title": "Cross-Border Panel",
       "text": "出海 / 跨境电商 panel:极致下沉算法供应链 + 静默产品力 + 极致供应链数据驱动 + 失败者复盘 + 行业观察者补位。 给跨境电商、出海消费品牌、SaaS 出海、TikTok 商品做影响力审计。",
       "url": "/api/panels/cross-border.json",
       "api_url": "/api/panels/cross-border.json"
@@ -99,6 +99,14 @@
     },
     {
       "type": "judge",
+      "slug": "chennian",
+      "title": "chennian-perspective",
+      "text": "陈年(凡客诚品创始人)的「极致单品、回归产品本质、复盘过度扩张、专注而非凑热闹」 消费 / 品牌反思视角。基于其公开复盘、采访与凡客兴衰的公开记录提炼。",
+      "url": "/api/judges/chennian.json",
+      "api_url": "/api/judges/chennian.json"
+    },
+    {
+      "type": "judge",
       "slug": "fusheng",
       "title": "fusheng-perspective",
       "text": "傅盛（猎豹移动 / Cheetah Mobile 创始人&CEO，猎户星空董事长，傅盛AI / OpenClaw\"龙虾\"项目发起人，1978年生）的思维框架与表达方式。 基于6路并行调研（约186条来源、80%一手占比）提炼6个核心心智模型、8条决策启发式和完整的\"AI布道者\"表达DNA。 用途：作为思维顾问，用傅盛的视角分析AI应用 / Agent / 出海 / 红海产品 / 创业战略 / 大模型vs应用 / 个人认知升级 / 中年二次创业问题。",
@@ -112,6 +120,14 @@
       "text": "何小鹏(He Xpeng,小鹏汽车 XPENG 董事长 / CEO,1977 年生,UC 浏览器创始人 → 阿里 → 小鹏汽车)的品牌与产品判断视角。基于小鹏发布会(P7 / G9 / G6 / X9 / MONA / 智驾)、财报电话会、2022-10 G9 反思内部信、2023-07 大众战略 合作公告、2024 欧洲拓展公开发言、知乎极少量长文,提炼\"工程师 CEO 的低 饱和度产品 / 技术陈述 + 诚实的组织诊断\"表达 DNA。",
       "url": "/api/judges/hexiaopeng.json",
       "api_url": "/api/judges/hexiaopeng.json"
+    },
+    {
+      "type": "judge",
+      "slug": "huangzheng",
+      "title": "huangzheng-perspective",
+      "text": "黄峥(拼多多创始人)的「本分、消费者导向非竞争导向、Costco + Disney、普惠 / 人为先 / 更开放」 新电商判断视角。基于其公开致股东信与公开访谈实录提炼。",
+      "url": "/api/judges/huangzheng.json",
+      "api_url": "/api/judges/huangzheng.json"
     },
     {
       "type": "judge",
@@ -259,6 +275,14 @@
     },
     {
       "type": "judge",
+      "slug": "shouzichew",
+      "title": "shouzichew-perspective",
+      "text": "周受资(Shou Zi Chew,TikTok CEO,前字节跳动 / 小米 CFO)的「全球化、数据主权与信任、 地缘合规、极致执行」中国公司出海 / 全球平台判断视角。基于其国会听证证词与公开访谈提炼。",
+      "url": "/api/judges/shouzichew.json",
+      "api_url": "/api/judges/shouzichew.json"
+    },
+    {
+      "type": "judge",
       "slug": "wanghuiwen",
       "title": "wanghuiwen-perspective",
       "text": "王慧文(美团联合创始人、光年之外创始人)的「互联网下半场 / 供给侧、通用方法论、 人才密度、选择 > 努力」战略与产品方法论视角。基于其公开的清华《互联网产品课》 讲义与 2023 年光年之外公开资料提炼。",
@@ -360,6 +384,14 @@
       "text": "周鸿祎（360 集团创始人、董事长）的网络安全、政企安全、AI 安全与 品牌心智判断视角。基于 360 官方创始人介绍、公开演讲、ISC 公开资料 和长期安全行业公开表达，提炼为“安全是攻防实战，不是功能清单”。",
       "url": "/api/judges/zhouhongyi.json",
       "api_url": "/api/judges/zhouhongyi.json"
+    },
+    {
+      "type": "judge",
+      "slug": "zhuangshuai",
+      "title": "zhuangshuai-perspective",
+      "text": "庄帅(百联咨询创始人、零售电商行业分析师)的「平台与供应链拆解、单位经济、效率与履约、 冷静第三方」零售电商判断视角。基于其公开评论与行业分析提炼。",
+      "url": "/api/judges/zhuangshuai.json",
+      "api_url": "/api/judges/zhuangshuai.json"
     },
     {
       "type": "judge",

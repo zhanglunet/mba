@@ -1,7 +1,7 @@
 {
   "slug": "cross-border",
-  "display_name": "Cross-Border Panel (Skeleton)",
-  "status": "skeleton",
+  "display_name": "Cross-Border Panel",
+  "status": "production",
   "description": "出海 / 跨境电商 panel:极致下沉算法供应链 + 静默产品力 + 极致供应链数据驱动 + 失败者复盘 + 行业观察者补位。 给跨境电商、出海消费品牌、SaaS 出海、TikTok 商品做影响力审计。",
   "judges": [
     {
@@ -10,7 +10,7 @@
       "display_name_en": "Colin Huang",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/huangzheng.json"
     },
     {
       "slug": "yangjianhui",
@@ -21,12 +21,12 @@
       "api_url": "/api/judges/yangjianhui.json"
     },
     {
-      "slug": "zhangyong-shein",
-      "display_name_cn": "张勇",
-      "display_name_en": "Chris Xu",
+      "slug": "shouzichew",
+      "display_name_cn": "周受资",
+      "display_name_en": "Shou Zi Chew",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/shouzichew.json"
     },
     {
       "slug": "chennian",
@@ -34,7 +34,7 @@
       "display_name_en": "Chen Nian",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/chennian.json"
     },
     {
       "slug": "zhuangshuai",
@@ -42,7 +42,7 @@
       "display_name_en": "Zhuang Shuai",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/zhuangshuai.json"
     }
   ]
 }

@@ -40,8 +40,8 @@ Lead 会:
 | `panels show <name>` | 子命令 | - | 打印某个 panel 的完整 yaml |
 | `panels new <name>` | 子命令 | - | 从 default.yaml 复制出一份 panel 骨架 |
 
-> **可运行 vs SKELETON**:`default` / `auto` / `security-cn-global` / `ai-app-cn` / `edu-cn` / `vc-en` / `vc-cn` / `consumer-cn` 八套 panel 评委已建齐,可真打分;
-> 另外 2 套(`cross-border` / `luxury-en`)标了
+> **可运行 vs SKELETON**:`default` / `auto` / `security-cn-global` / `ai-app-cn` / `edu-cn` / `vc-en` / `vc-cn` / `consumer-cn` / `cross-border` 九套 panel 评委已建齐,可真打分;
+> 还剩 1 套(`luxury-en`)标了
 > `status: skeleton`,跑到会自动降级为 synthesis-only。`--industry` 名见 `panels/industries.yaml`。
 
 ## 3. 完整示例
