@@ -3,14 +3,12 @@
 # 中文 VC panel —— 5 位中文投资人,差异化视角。
 # 通过 industries.yaml 被 `--industry vc-cn` 引用。
 #
-# ⚠️  SKELETON 状态:5 位都待建 perspective skill。
-# 候选评估见 docs/prd/panels/industries-roster.md §3.4。
-# 沈南鹏源密度极差,建之前考虑替换(见 roster 替补建议)。
-# leijun 若 auto panel 已建,可复用同一 perspective skill。
+# 可运行(v1 production-seed):zhanglei / xuxin / shennanpeng 已建(SKILL.md +
+# quotes.md,基于公开一手资料),zhuxiaohu(复用 ai-app-cn)+ leijun(复用 auto)。
+# 深度 references/research/01-06 为后续工作。
 
 name: vc-cn
-display_name: VC-CN Panel (Skeleton)
-status: skeleton
+display_name: VC-CN Panel
 description: >
   中文 VC panel:红海实战派 + 长期主义 + 消费杀手锏 + 跨界 operator VC +
   平台型超级 LP。给国内品牌做投资人视角影响力审计、商业模式可投性评估。

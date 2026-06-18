@@ -1,5 +1,5 @@
 {
-  "count": 26,
+  "count": 29,
   "items": [
     {
       "slug": "fusheng",
@@ -121,6 +121,13 @@
       "api_url": "/api/judges/satyanadella.json"
     },
     {
+      "slug": "shennanpeng",
+      "name": "shennanpeng-perspective",
+      "summary": "沈南鹏(红杉中国 / Sequoia China 创始及执行合伙人,携程 / 如家联合创始人)的 「做多中国、创业者背后的创业者、赛道 + 投人、专注成专家」投资判断视角。 基于其公开访谈与红杉中国投资版图提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/shennanpeng-perspective/SKILL.md",
+      "api_url": "/api/judges/shennanpeng.json"
+    },
+    {
       "slug": "wanghuiwen",
       "name": "wanghuiwen-perspective",
       "summary": "王慧文(美团联合创始人、光年之外创始人)的「互联网下半场 / 供给侧、通用方法论、 人才密度、选择 > 努力」战略与产品方法论视角。基于其公开的清华《互联网产品课》 讲义与 2023 年光年之外公开资料提炼。",
@@ -133,6 +140,13 @@
       "summary": "吴俊东（Frank Jundong WU，Aibrary / BotLearn 联合创始人，前好未来战投+学而思网校\"东得多\"主讲老师，哈佛肯尼迪学院 MPP）的思维框架与表达方式。基于 6 路并行调研（约 90 条来源、56 条一手，含 EdTech Insiders 54 分钟英文长访谈完整 transcript）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用吴俊东的视角分析教育/学习产品判断、AI 时代的人才能力分层、关系网络与长期投资、出海创业的资本组合、个人 IP 与身份转换问题。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/wu-jundong-perspective/SKILL.md",
       "api_url": "/api/judges/wu-jundong.json"
+    },
+    {
+      "slug": "xuxin",
+      "name": "xuxin-perspective",
+      "summary": "徐新(今日资本创始人)的「投消费、投人、抓住人心成为行业第一、耐心 + 野心」 消费品牌早期投资判断视角。基于其公开访谈与京东 / 网易等投资案例提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/xuxin-perspective/SKILL.md",
+      "api_url": "/api/judges/xuxin.json"
     },
     {
       "slug": "yangzhilin",
@@ -161,6 +175,13 @@
       "summary": "张邦鑫(好未来 / 学而思创始人)的「科技驱动教育、教育公平普惠、千班千面、 低调长期」判断视角。基于其公开采访、好未来公开战略与双减后转型记录提炼。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhangbangxin-perspective/SKILL.md",
       "api_url": "/api/judges/zhangbangxin.json"
+    },
+    {
+      "slug": "zhanglei",
+      "name": "zhanglei-perspective",
+      "summary": "张磊(高瓴 / Hillhouse 创始人)的「长期主义、价值投资、重仓中国、弱水三千只取一瓢」 研究驱动投资判断视角。基于其著作《价值》与公开访谈提炼。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhanglei-perspective/SKILL.md",
+      "api_url": "/api/judges/zhanglei.json"
     },
     {
       "slug": "zhangmingzheng",

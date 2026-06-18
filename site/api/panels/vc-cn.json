@@ -1,7 +1,7 @@
 {
   "slug": "vc-cn",
-  "display_name": "VC-CN Panel (Skeleton)",
-  "status": "skeleton",
+  "display_name": "VC-CN Panel",
+  "status": "production",
   "description": "中文 VC panel:红海实战派 + 长期主义 + 消费杀手锏 + 跨界 operator VC + 平台型超级 LP。给国内品牌做投资人视角影响力审计、商业模式可投性评估。",
   "judges": [
     {
@@ -18,7 +18,7 @@
       "display_name_en": "Zhang Lei",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/zhanglei.json"
     },
     {
       "slug": "xuxin",
@@ -26,7 +26,7 @@
       "display_name_en": "Kathy Xu",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/xuxin.json"
     },
     {
       "slug": "leijun",
@@ -42,7 +42,7 @@
       "display_name_en": "Neil Shen",
       "language": "zh",
       "weight": 1.0,
-      "api_url": null
+      "api_url": "/api/judges/shennanpeng.json"
     }
   ]
 }
