@@ -200,7 +200,7 @@ Phase 0 的 panel resolver 四层优先级(先命中先用):**`--panel <name>` >
 `--panel-drop` 在解析后做本次运行的临时增删(写进 `panel.yaml.overrides`,不改 `panels/<name>.yaml`)。
 
 panel 有 `status: skeleton` 字段标记"占位 / 评委未建齐":跑到时 Lead 提示并自动降级为
-synthesis-only。当前 6 个可运行(default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en)+ 4 个 skeleton。
+synthesis-only。当前 7 个可运行(default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn)+ 3 个 skeleton。
 关键不变量:**不要改已在用 panel(尤其 default)的 `judges:`** —— 老品牌 `panel.yaml` 记的是
 panel 名,改名单会让 v{n+1} 与 v{n} 不可比;换评委请起新 panel 名。
 
