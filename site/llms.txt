@@ -16,7 +16,7 @@ HTTP GET 直接拿,CORS 全开,无 token。
 - /api/reports/{slug}.json — 单个报告的元数据 + html_url + pdf_url
 - /api/panels.json — 10 个内置评委 panel + 行业映射表
 - /api/panels/{slug}.json — 单个 panel 的评委组成 + 触发条件
-- /api/judges.json — 38 个评委人物视角 skill
+- /api/judges.json — 43 个评委人物视角 skill
 - /api/judges/{slug}.json — 单个评委的来源 SKILL.md + 视角描述
 - /api/install.json — 怎么把 MBA 装进 Claude Code(BotLearn / GitHub)
 - /api/search.json — 扁平语料:reports + panels + judges + dimensions + lenses,给客户端 substring search

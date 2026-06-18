@@ -3,12 +3,12 @@
 # 奢侈品 / 时尚 panel —— 5 位奢侈品产业塑造者。
 # 通过 industries.yaml 被 `--industry luxury-en` 引用。
 #
-# ⚠️  SKELETON 状态:5 位都待建 perspective skill,全英文落笔。
-# 候选评估见 docs/prd/panels/industries-roster.md §3.8。
+# 可运行(v1 production-seed):arnault / cucinelli / awintour / tomford / burton 已建
+# (SKILL.md + quotes.md,基于公开 interviews / talks / 报道,全英文落笔)。
+# 深度 references/research/01-06 为后续工作。
 
 name: luxury-en
-display_name: Luxury & Fashion Panel (Skeleton)
-status: skeleton
+display_name: Luxury & Fashion Panel
 description: >
   奢侈品 / 时尚 panel:收购艺术 + 工艺信仰 / 行业仲裁人 gatekeeper /
   慢生活人文经营 / 设计师即 CEO / 设计师传承。给奢侈品、高端时尚、
