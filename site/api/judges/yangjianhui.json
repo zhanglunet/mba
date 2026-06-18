@@ -1,0 +1,6 @@
+{
+  "slug": "yangjianhui",
+  "name": "yangjianhui-perspective",
+  "description": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「产品主义、工程师式静默优秀、\n为本地用户创造价值的出海、做全球品牌不做白牌」消费 / 跨境判断视角。基于其公开访谈与\nAnker 公开战略提炼。\n\n注:本 perspective 的 slug 沿用历史命名 `yangjianhui`,但所指人物是 Anker 创始人\n阳萌(Steven Yang);早期 panel 配置里的中文名\"杨建辉\"系误标,已在配置中更正为\"阳萌\"。\n\nUse as: MBA `consumer-cn` / `cross-border` panel judge — 产品力 / 出海本地化 /\n工程师文化 / 全球品牌视角。\n\nExplicit triggers: 「用阳萌视角」「Anker / 安克会怎么看」「出海产品主义视角」。\n\nDo not activate when: 用户问安克创新未公开的财务 / 供应链细节、阳萌私人生活,\n或需要未经核验的最新份额 / 评分数据。",
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yangjianhui-perspective/SKILL.md"
+}

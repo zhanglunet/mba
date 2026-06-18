@@ -36,8 +36,8 @@
     },
     {
       "slug": "consumer-cn",
-      "display_name": "Consumer-CN Panel (Skeleton)",
-      "status": "skeleton",
+      "display_name": "Consumer-CN Panel",
+      "status": "production",
       "judges_count": 5,
       "description": "中文消费品 / 快消 panel:媒介杠杆派 + IP 化派 + 反共识表达 + 跨境产品力 + 渠道极致。给消费品牌、零售、IP 化餐饮、跨境消费品做 影响力审计。",
       "api_url": "/api/panels/consumer-cn.json"

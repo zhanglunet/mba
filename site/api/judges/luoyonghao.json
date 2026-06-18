@@ -1,0 +1,6 @@
+{
+  "slug": "luoyonghao",
+  "name": "luoyonghao-perspective",
+  "description": "罗永浩(锤子科技创始人,「交个朋友」直播创始人)的「创始人 IP、理想主义 × 务实打脸、\n内容化带货、债务自救」消费 / 网红品牌判断视角。基于其公开言论与创业经历提炼。\n\nUse as: MBA `consumer-cn` panel judge — 创始人 IP / 直播带货 / 理想主义叙事 /\n逆境自救视角。\n\nExplicit triggers: 「用罗永浩视角」「老罗会怎么看」「创始人 IP / 直播带货视角」。\n\nDo not activate when: 用户问交个朋友未公开的财务、罗永浩私人生活 / 家庭、\n或需要未经核验的最新 GMV / 债务数据。",
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/luoyonghao-perspective/SKILL.md"
+}
