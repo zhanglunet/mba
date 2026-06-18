@@ -3,15 +3,14 @@
 # 出海 / 跨境电商 panel —— 5 位出海/电商代表 + 失败案例 + 行业观察者。
 # 通过 industries.yaml 被 `--industry cross-border` 引用。
 #
-# ⚠️  SKELETON 状态 + LOW DENSITY 警告:5 位中沉默选手占 2/5
-# (huangzheng 2021 后沉默,zhangyong-shein 几乎不公开发言)。
-# 候选评估见 docs/prd/panels/industries-roster.md §3.7。
-# 真正能挖出第一人称材料的只有杨建辉 + 陈年 + 庄帅 —— 建议要么接受"低密度
-# panel"(评分偏 withheld),要么把黄峥 / 张勇换成更 vocal 的出海创业者。
+# 可运行(v1 production-seed):huangzheng / shouzichew / yangjianhui(阳萌)/ chennian /
+# zhuangshuai 已建(SKILL.md + quotes.md,基于公开一手资料)。
+# 原 zhangyong-shein(SHEIN 许仰天)几乎无一手资料、且旧标"张勇"系误标,已替换为
+# 周受资(Shou Zi Chew,TikTok / 字节,中国公司出海与全球化代表,听证 / 访谈材料充足)。
+# 深度 references/research/01-06 为后续工作。
 
 name: cross-border
-display_name: Cross-Border Panel (Skeleton)
-status: skeleton
+display_name: Cross-Border Panel
 description: >
   出海 / 跨境电商 panel:极致下沉算法供应链 + 静默产品力 +
   极致供应链数据驱动 + 失败者复盘 + 行业观察者补位。
@@ -30,9 +29,9 @@ judges:
     language: zh
     weight: 1.0
 
-  - slug: zhangyong-shein
-    display_name_cn: 张勇
-    display_name_en: Chris Xu
+  - slug: shouzichew
+    display_name_cn: 周受资
+    display_name_en: Shou Zi Chew
     language: zh
     weight: 1.0
 

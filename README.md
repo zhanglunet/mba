@@ -80,7 +80,8 @@ mba/
 │   │   ├── vc-en.yaml                   [可运行] 英文 VC:pmarca / paulg / pthiel / naval / rhoffman
 │   │   ├── vc-cn.yaml                   [可运行] 中文 VC:朱啸虎 / 张磊 / 徐新 / 雷军 / 沈南鹏
 │   │   ├── consumer-cn.yaml             [可运行] 消费:江南春 / 钟睒睒 / 罗永浩 / 阳萌 / 张兰
-│   │   ├── cross-border.yaml / luxury-en.yaml [SKELETON] 其余 2 个行业占位 panel(评委 perspective 尚未建齐)
+│   │   ├── cross-border.yaml            [可运行] 出海:黄峥 / 阳萌 / 周受资 / 陈年 / 庄帅
+│   │   ├── luxury-en.yaml               [SKELETON] 最后 1 个行业占位 panel(评委 perspective 尚未建齐)
 │   │   ├── industries.yaml              行业名 → panel 名映射表,被 --industry 查询(本身不是 panel)
 │   │   └── README.md                    panel yaml 字段说明 + 怎么写一个新 panel
 │   └── reports/<brand-slug>/          每个品牌一个文件夹(运行 /mba <brand> 后生成)
@@ -380,8 +381,8 @@ metric-brand-auditor/panels/
 ├── vc-en.yaml              # 英文 VC:pmarca + paulg + pthiel + naval + rhoffman(v1 production-seed)
 ├── vc-cn.yaml              # 中文 VC:朱啸虎 + 张磊 + 徐新 + 雷军 + 沈南鹏(v1 production-seed)
 ├── consumer-cn.yaml        # 中文消费品:江南春 + 钟睒睒 + 罗永浩 + 阳萌 + 张兰(v1 production-seed)
+├── cross-border.yaml       # 出海 / 跨境:黄峥 + 阳萌 + 周受资 + 陈年 + 庄帅(v1 production-seed)
 # ── SKELETON(占位 / 路线图,评委还没建齐,跑到会自动降级为 synthesis-only)──
-├── cross-border.yaml       # 跨境出海(黄峥 / SHEIN 许仰天 / …)
 └── luxury-en.yaml          # 奢侈品(Arnault / Anna Wintour / …)
 # ── 不是 panel,是映射表 ────────────────────────────────────
 └── industries.yaml         # 行业名 → panel 名,被 --industry 查询

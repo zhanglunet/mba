@@ -35,7 +35,7 @@
 | ☑ | `vc-cn` | 朱啸虎 / 张磊 / 徐新 / 雷军(顺为) / 沈南鹏 ⚠ | ★★★ | ★★★ | 0 |
 | ☑ | `vc-en` | Marc Andreessen / Paul Graham / Peter Thiel ⚠ / Naval Ravikant / Reid Hoffman | ★★★★★ | ★★ | 0 |
 | ☑ | `edu-cn` | 俞敏洪 / 张邦鑫 / 李可佳(复用) / 吴俊东(复用) / Sal Khan | ★★★ | ★★ | 2 |
-| ☑ | `cross-border` | 黄峥 ⚠ / 杨建辉 / 张勇-Shein ⚠ / 陈年 / 庄帅 | ★★ | ★★★★ | 0 |
+| ✅ | `cross-border` | 黄峥 / 阳萌 / 周受资 / 陈年 / 庄帅 | ★★★ | ★★★★ | 5 |
 | ☑ | `luxury-en` | Bernard Arnault / Anna Wintour / Brunello Cucinelli / Tom Ford / Sarah Burton | ★★★ | ★★★ | 0 |
 
 **其它候选(暂不推荐):** gaming-cn(选手极沉默)/ f&b-cn(可作为 consumer-cn 子集)/
@@ -137,7 +137,7 @@ biotech(政治敏感 + 源差)/ real-estate(行业敏感)。
 |---|---|---|
 | huangzheng | 黄峥(Pinduoduo / Temu)⚠ | 极致下沉 + 算法供应链,**2021 后沉默** |
 | yangjianhui | 阳萌(Anker,与 consumer-cn 复用)| 静默优秀 |
-| zhangyong-shein | 张勇(Shein)⚠ | 极致供应链 + 数据驱动设计,**几乎不公开发言** |
+| shouzichew | 周受资(Shou Zi Chew,TikTok / 字节;替换原 SHEIN 许仰天——其几乎无一手资料)| 全球化出海 + 数据主权与信任 + 地缘合规 |
 | chennian | 陈年(凡客)| **失败者**视角,稀缺 |
 | zhuangshuai | 庄帅(零售电商研究)| 行业观察者,弥补创始人沉默 |
 
@@ -164,7 +164,8 @@ biotech(政治敏感 + 源差)/ real-estate(行业敏感)。
 - **复用 slug 省事**:`edu-cn` 里复用 likejia / wu-jundong,`ai-app-cn` 复用 fusheng,
   `cross-border` / `consumer-cn` 共享杨建辉,`vc-cn` / `auto` 共享雷军。复用越多,
   整体 perspective skill 数量越少
-- **沉默选手要谨慎**:钟睒睒 / 沈南鹏 / 蔡浩宇 / 黄峥 / 张勇(Shein)源密度差,
+- **沉默选手要谨慎**:蔡浩宇等源密度差;SHEIN 许仰天因几乎无一手资料,已用周受资替换。
+  (钟睒睒 / 沈南鹏 / 黄峥 经核验有足够公开一手材料,已建成 v1)。原注:
   即使名头响,做 perspective 实际是用第三人称报道倒推他们怎么想 —— 跟
   anti-fabrication 边界冲突,建议替换或缓建
 - **失败者视角稀缺且珍贵**:王慧文 / 陈年 / 罗永浩判分维度跟成功者不同,每个 panel
