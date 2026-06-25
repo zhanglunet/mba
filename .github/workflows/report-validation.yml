@@ -1,0 +1,33 @@
+name: Report validation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-reports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate report.md structure (published reports)
+        run: python scripts/validate_report.py
+
+      - name: Validate report.html components (published reports)
+        run: python scripts/validate_html_report.py
+
+      - name: Validate mock fixtures (self-test)
+        run: |
+          python scripts/validate_report.py tests/fixtures/mock_report.md
+          python scripts/validate_html_report.py tests/fixtures/mock_report.html
+
+      - name: Compile new validator scripts
+        run: |
+          python -m py_compile scripts/validate_report.py
+          python -m py_compile scripts/validate_html_report.py

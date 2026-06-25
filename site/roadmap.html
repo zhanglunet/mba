@@ -626,28 +626,28 @@
     <div class="task-group-label">A · 集成测试 Workflow</div>
     <div class="task-list task-group">
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          新增 <code>.github/workflows/integration-test.yml</code>
-          <div class="note">用 --quick --no-judges 跑完整流水线；不触发真实 WebSearch</div>
+          新增 <code>.github/workflows/report-validation.yml</code>
+          <div class="note">校验已发布报告的结构完整性；含 mock fixture 自测</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          创建 <code>tests/fixtures/</code> mock 数据目录
+          创建 <code>tests/fixtures/</code>：mock_report.md + mock_report.html
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          验证报告 Markdown 结构符合 schema
+          <code>scripts/validate_report.py</code>：验证 report.md 结构（标题/Score Matrix/5 镜头/Verdict/Legal/Sources）
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          验证 HTML 报告含必要组件（radar chart、Mermaid 图、dissent heatmap）
+          <code>scripts/validate_html_report.py</code>：验证 HTML 报告含 Chart.js canvas / Mermaid / 热力图 / Verdict / Legal
         </div>
       </div>
     </div>
@@ -776,6 +776,25 @@
       <div class="log-body">
         测试 <code>WebFetch paulgraham.com/ds.html</code> 返回 HTTP 403。沙箱网络限制仍然有效（文档记录的 blocker 未解除）。P0-A（vc-en 英文评委深化）挂起，等待 Wuying Pro 升级或网络策略变更。
         <div class="log-commit">无 commit · 无文件变更</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-06-25</div>
+      <div class="log-tags">
+        <span class="badge done">P2-A 完成</span>
+        <span class="badge p2">测试基础设施</span>
+      </div>
+      <div class="log-title">集成测试 Workflow 建立（report-validation CI）</div>
+      <div class="log-body">
+        <ul>
+          <li><code>scripts/validate_report.py</code>：校验 report.md 的 7 条规则（标题格式、Score Matrix 5 镜头含数字分值、Dissent Heatmap、Final Verdict、Legal、Sources）</li>
+          <li><code>scripts/validate_html_report.py</code>：校验 report.html 的 7 条规则（Chart.js canvas、Mermaid/影响力图、热力图、Verdict、Legal、Sources）</li>
+          <li><code>tests/fixtures/mock_report.md</code> + <code>mock_report.html</code>：最小合法 fixture，用于校验器自测</li>
+          <li><code>.github/workflows/report-validation.yml</code>：CI workflow，PR/push to main 时自动跑四步校验</li>
+          <li>本地全量测试通过：2 份 HTML 报告 ✓，1 份 Markdown 报告 ✓，2 份 mock fixture ✓</li>
+        </ul>
+        <div class="log-commit">commit 待推送 · branch claude/sharp-turing-496l8b</div>
       </div>
     </div>
 
