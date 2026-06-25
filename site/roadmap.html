@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>开发路线图 · MBA — Metric Brand Auditor</title>
+<meta name="description" content="MBA 开发路线图与进度日志：P0-P3 优先级计划、评委档案深化进度、关键阻断项追踪。" />
+<meta property="og:title" content="开发路线图 · MBA" />
+<meta property="og:url" content="https://mbabrand.com/roadmap.html" />
+<style>
+  :root {
+    --ink: #111;
+    --paper: #faf8f3;
+    --paper-2: #f0ece3;
+    --muted: #6b6760;
+    --rule: #1a1a1a;
+    --accent: #c1440e;
+    --card: #fff;
+    --green: #2a7a4b;
+    --green-bg: #edf7f1;
+    --yellow: #9a6c00;
+    --yellow-bg: #fef9ec;
+    --red: #c1440e;
+    --red-bg: #fff2ee;
+    --blue: #1a4f8a;
+    --blue-bg: #eef4fc;
+    --gray: #4a4a4a;
+    --gray-bg: #f0ece3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 56px 28px 100px; }
+
+  /* ── Header ── */
+  header {
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 18px; margin-bottom: 36px;
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
+  .mark a { color: inherit; text-decoration: none; }
+  .mark .dot { color: var(--accent); }
+  nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 18px; }
+  nav a:hover { color: var(--accent); border-color: var(--accent); }
+  nav a.current { color: var(--accent); border-color: var(--accent); }
+
+  /* ── Page title ── */
+  h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.16; margin: 0 0 10px; font-weight: 800; letter-spacing: -0.01em; }
+  .sub { font-size: 16px; color: var(--muted); margin: 0 0 8px; font-style: italic; }
+  .version-chip {
+    display: inline-block;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+    padding: 3px 10px; border: 1px solid var(--muted); color: var(--muted);
+    border-radius: 999px; margin-bottom: 28px; text-transform: uppercase;
+  }
+
+  /* ── Section headers ── */
+  h2 {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--muted);
+    margin: 52px 0 14px; padding-top: 18px;
+    border-top: 2px solid var(--rule);
+  }
+
+  /* ── Status grid ── */
+  .status-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .status-card {
+    background: var(--card);
+    border: 1px solid #d8d2c6;
+    border-radius: 8px;
+    padding: 16px 18px;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+  }
+  .status-card .label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 8px;
+  }
+  .status-card .value {
+    font-size: 26px; font-weight: 800; line-height: 1; margin-bottom: 4px;
+  }
+  .status-card .note { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .status-card.ok .value { color: var(--green); }
+  .status-card.warn .value { color: var(--yellow); }
+  .status-card.err .value { color: var(--red); }
+
+  /* ── Badges ── */
+  .badge {
+    display: inline-block;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+    padding: 2px 8px; border-radius: 999px; text-transform: uppercase;
+  }
+  .badge.done   { background: var(--green-bg); color: var(--green); }
+  .badge.todo   { background: var(--gray-bg);  color: var(--gray); }
+  .badge.blocked{ background: var(--red-bg);   color: var(--red); }
+  .badge.p0 { background: #fff0ed; color: #c1440e; }
+  .badge.p1 { background: #fff8e6; color: #9a6c00; }
+  .badge.p2 { background: #eef4fc; color: #1a4f8a; }
+  .badge.p3 { background: var(--gray-bg); color: var(--gray); }
+
+  /* ── Blocker alert ── */
+  .blocker-box {
+    background: var(--red-bg);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 36px;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 14px;
+  }
+  .blocker-box .bhead {
+    font-weight: 700; font-size: 13px; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+  }
+  .blocker-item {
+    display: flex; gap: 10px; align-items: flex-start; margin-bottom: 8px;
+  }
+  .blocker-item:last-child { margin-bottom: 0; }
+  .blocker-dot {
+    flex: 0 0 18px; height: 18px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    font-size: 10px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center; margin-top: 1px;
+  }
+  .blocker-item .text { line-height: 1.5; }
+  .blocker-item .text b { color: var(--accent); }
+  .blocker-item .resolve { color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+  /* ── Judge progress ── */
+  .progress-section { margin-bottom: 36px; }
+  .big-bar-wrap { margin-bottom: 24px; }
+  .big-bar-label {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 14px; margin-bottom: 6px;
+  }
+  .big-bar-label .count { font-weight: 800; font-size: 22px; }
+  .big-bar-label .total { color: var(--muted); }
+  .bar-track {
+    height: 10px; background: var(--paper-2);
+    border-radius: 999px; overflow: hidden;
+    border: 1px solid #d8d2c6;
+  }
+  .bar-fill {
+    height: 100%; background: var(--green);
+    border-radius: 999px; transition: width 0.8s ease;
+  }
+  .bar-fill.partial { background: var(--yellow); }
+
+  .panel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .panel-row {
+    background: var(--card);
+    border: 1px solid #d8d2c6;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+  }
+  .panel-row .top {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 7px;
+  }
+  .panel-row .pname { font-size: 13px; font-weight: 700; }
+  .panel-row .pfrac { font-size: 12px; color: var(--muted); }
+  .panel-bar { height: 5px; background: var(--paper-2); border-radius: 999px; overflow: hidden; }
+  .panel-bar .fill { height: 100%; border-radius: 999px; }
+  .fill-full    { background: var(--green); }
+  .fill-partial { background: var(--yellow); }
+  .fill-zero    { background: #d8d2c6; width: 0%; }
+
+  /* ── Priority cards ── */
+  .priority-section { margin-bottom: 8px; }
+  .priority-card {
+    background: var(--card);
+    border: 1px solid #d8d2c6;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .priority-card .card-head {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e7e1d5;
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .priority-card .card-title {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 15px; font-weight: 800;
+  }
+  .priority-card .card-desc {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13px; color: var(--muted); flex: 1; min-width: 160px;
+  }
+  .task-list { padding: 10px 18px 14px; }
+  .task-item {
+    display: flex; gap: 10px; align-items: flex-start;
+    padding: 7px 0;
+    border-bottom: 1px solid #f0ece3;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13.5px;
+  }
+  .task-item:last-child { border-bottom: none; }
+  .task-check {
+    flex: 0 0 18px; height: 18px; margin-top: 1px;
+    border-radius: 4px; border: 2px solid #c8c2b8;
+    background: #fff;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .task-check.done {
+    background: var(--green); border-color: var(--green);
+  }
+  .task-check.done::after {
+    content: "✓"; color: #fff; font-size: 11px; font-weight: 900;
+  }
+  .task-check.blocked {
+    background: var(--red-bg); border-color: var(--accent);
+  }
+  .task-check.blocked::after {
+    content: "!"; color: var(--accent); font-size: 11px; font-weight: 900;
+  }
+  .task-text { line-height: 1.45; flex: 1; }
+  .task-text .note { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  .task-text s { color: #b0a898; }
+
+  /* Sub-group in task list */
+  .task-group { padding-left: 28px; }
+  .task-group .task-item { font-size: 13px; }
+  .task-group-label {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted);
+    padding: 10px 18px 4px; border-bottom: 1px solid #f0ece3;
+  }
+
+  /* ── Progress log ── */
+  .log-timeline { position: relative; padding-left: 28px; }
+  .log-timeline::before {
+    content: '';
+    position: absolute; left: 7px; top: 8px; bottom: 0;
+    width: 2px; background: #d8d2c6;
+  }
+  .log-entry {
+    position: relative; margin-bottom: 28px;
+  }
+  .log-entry::before {
+    content: '';
+    position: absolute; left: -23px; top: 6px;
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--card); border: 2px solid #d8d2c6;
+  }
+  .log-entry.milestone::before { background: var(--accent); border-color: var(--accent); }
+  .log-date {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 4px;
+  }
+  .log-title {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 15px; font-weight: 700; margin-bottom: 6px; line-height: 1.3;
+  }
+  .log-body {
+    font-size: 14px; color: var(--ink); line-height: 1.55;
+    background: var(--card); border: 1px solid #e7e1d5;
+    border-radius: 8px; padding: 12px 14px;
+  }
+  .log-body ul { margin: 6px 0 0; padding-left: 18px; }
+  .log-body li { margin: 4px 0; }
+  .log-commit {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px; color: var(--muted);
+    margin-top: 8px; border-top: 1px solid #f0ece3; padding-top: 8px;
+  }
+  .log-commit a { color: var(--muted); }
+  .log-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+
+  /* ── Footer ── */
+  footer {
+    margin-top: 64px; padding-top: 18px;
+    border-top: 2px solid var(--rule);
+    color: var(--muted);
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+  @media (max-width: 620px) {
+    .status-grid { grid-template-columns: repeat(2, 1fr); }
+    .panel-grid  { grid-template-columns: 1fr; }
+    .status-grid .status-card:last-child { grid-column: span 2; }
+  }
+  @media (max-width: 420px) {
+    .status-grid { grid-template-columns: 1fr; }
+    .status-grid .status-card:last-child { grid-column: span 1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark"><a href="/">MBA<span class="dot">.</span></a></div>
+    <nav>
+      <a href="/how-it-works.html">怎么打分</a>
+      <a href="/agents.html">For Agents</a>
+      <a href="/roadmap.html" class="current">Roadmap</a>
+      <a href="https://github.com/zhanglunet/mba">GitHub</a>
+    </nav>
+  </header>
+
+  <h1>开发路线图</h1>
+  <p class="sub">Development Roadmap &amp; Progress Log · 持续更新</p>
+  <div class="version-chip">当前版本 v0.2.36 · 快照 2026-06-25</div>
+
+  <!-- ── 状态快照 ── -->
+  <h2>当前状态快照</h2>
+  <div class="status-grid">
+    <div class="status-card ok">
+      <div class="label">流水线</div>
+      <div class="value">v0.2.36</div>
+      <div class="note">Phase 0-5 稳定，生产就绪</div>
+    </div>
+    <div class="status-card ok">
+      <div class="label">评委面板</div>
+      <div class="value">10 / 10</div>
+      <div class="note">全部面板可运行</div>
+    </div>
+    <div class="status-card warn">
+      <div class="label">评委全档</div>
+      <div class="value">15 / 43</div>
+      <div class="note">28 人待深化（seed 层）</div>
+    </div>
+    <div class="status-card ok">
+      <div class="label">公开报告</div>
+      <div class="value">2</div>
+      <div class="note">Lenovo · 成市 Auto</div>
+    </div>
+    <div class="status-card err">
+      <div class="label">集成测试</div>
+      <div class="value">0</div>
+      <div class="note">仅有 smoke test，无 CI 集成</div>
+    </div>
+    <div class="status-card err">
+      <div class="label">待实现功能</div>
+      <div class="value">2</div>
+      <div class="note">--dry-run · MCP Server</div>
+    </div>
+  </div>
+
+  <!-- ── 关键阻断项 ── -->
+  <h2>关键阻断项</h2>
+  <div class="blocker-box">
+    <div class="bhead">⚠ 当前阻断</div>
+    <div class="blocker-item">
+      <div class="blocker-dot">1</div>
+      <div class="text">
+        <b>Wuying 免费版限制</b> — <code>GetLink()</code> 返回 400（Pro/Ultra 专属）<br/>
+        <div class="resolve">影响：25 位中文评委无法抓取 Zhihu / 微信 / X 内容，深化被阻断。解法：升级到 Pro/Ultra。</div>
+      </div>
+    </div>
+    <div class="blocker-item">
+      <div class="blocker-dot">2</div>
+      <div class="text">
+        <b>沙箱 WebFetch 403</b> — paulgraham.com / Wikipedia / CF 防护站点返回 403<br/>
+        <div class="resolve">影响：vc-en 3 位英文评委（paulgraham/bhorowitz/marcandreessen）深化受阻。解法：通过 Wuying 代理访问，或 Jina Reader 镜像。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 评委档案进度 ── -->
+  <h2>评委档案深化进度</h2>
+  <div class="progress-section">
+    <div class="big-bar-wrap">
+      <div class="big-bar-label">
+        <span>全档完成 <span class="count">15</span> <span class="total">/ 43 位评委</span></span>
+        <span style="font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;font-size:13px;color:var(--muted);">35%</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width: 34.9%"></div>
+      </div>
+    </div>
+
+    <div class="panel-grid">
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">default <span style="color:var(--muted);font-weight:400">· 默认面板</span></span>
+          <span class="pfrac">5 / 5 <span class="badge done">全档</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">auto <span style="color:var(--muted);font-weight:400">· 新能源汽车</span></span>
+          <span class="pfrac">5 / 5 <span class="badge done">全档</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">security-cn-global</span>
+          <span class="pfrac">3 / 6 <span class="badge" style="background:var(--yellow-bg);color:var(--yellow)">进行中</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-partial" style="width:50%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">vc-en <span style="color:var(--muted);font-weight:400">· 英文 VC</span></span>
+          <span class="pfrac">2 / 5 <span class="badge todo">待深化</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-partial" style="width:40%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">ai-app-cn <span style="color:var(--muted);font-weight:400">· AI 应用</span></span>
+          <span class="pfrac">2 / 5 <span class="badge todo">待深化</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-partial" style="width:40%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">edu-cn <span style="color:var(--muted);font-weight:400">· 教育</span></span>
+          <span class="pfrac">2 / 5 <span class="badge todo">待深化</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-partial" style="width:40%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">vc-cn <span style="color:var(--muted);font-weight:400">· 中文 VC</span></span>
+          <span class="pfrac">2 / 5 <span class="badge todo">待深化</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-partial" style="width:40%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">consumer-cn <span style="color:var(--muted);font-weight:400">· 消费品</span></span>
+          <span class="pfrac">0 / 5 <span class="badge blocked">阻断</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-zero" style="width:0%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">cross-border <span style="color:var(--muted);font-weight:400">· 出海</span></span>
+          <span class="pfrac">0 / 4 <span class="badge blocked">阻断</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-zero" style="width:0%"></div></div>
+      </div>
+      <div class="panel-row">
+        <div class="top">
+          <span class="pname">luxury-en <span style="color:var(--muted);font-weight:400">· 奢侈品</span></span>
+          <span class="pfrac">— / 5 <span class="badge todo">待核查</span></span>
+        </div>
+        <div class="panel-bar"><div class="fill fill-zero" style="width:0%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 路线图 ── -->
+  <h2>开发路线图</h2>
+
+  <!-- P0 -->
+  <div class="priority-card">
+    <div class="card-head">
+      <span class="badge p0">P0</span>
+      <span class="card-title">立即可执行</span>
+      <span class="card-desc">不依赖外部解锁，当前环境即可完成</span>
+    </div>
+
+    <div class="task-group-label">A · 深化 vc-en 英文评委（3 人）</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          <b>paulgraham</b> — paulgraham.com essays 6 路径研究 + quotes.md
+          <div class="note">英文 essay 无访问限制；需完成 01-06.md 六路径</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          <b>bhorowitz</b> — a16z.com blog + The Hard Thing About Hard Things
+          <div class="note">多篇英文长文可直接抓取</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          <b>marcandreessen</b> — pmarca.com archive + 近期 X/博客发言
+          <div class="note">需验证当前访问情况，可能需要 Jina Reader</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-group-label">B · 实现 <code style="font-size:11px">--dry-run</code> 标志</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          <b>SKILL.md</b> 增加 <code>--dry-run</code> 参数解析
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          Phase 0 增加 dry-run 分支（打印计划后退出，不触发网络请求）
+          <div class="note">输出：品牌名、选定面板、7 维度描述、预计评委列表</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          <b>docs/05-usage.md</b> 补充 <code>--dry-run</code> 示例
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- P1 -->
+  <div class="priority-card">
+    <div class="card-head">
+      <span class="badge p1">P1</span>
+      <span class="card-title">依赖 Wuying Pro 升级</span>
+      <span class="card-desc">升级后可批量解锁 25 位中文评委深化</span>
+    </div>
+
+    <div class="task-group-label">A · 升级 Wuying 并验证</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          升级 Wuying 套餐到 Pro/Ultra
+          <div class="note">解锁后：运行 scripts/wuying/smoke_test.py 确认 GetLink 可用</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-group-label">B · 批量深化中文评委（按优先级排序）</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          <b>consumer-cn 5 人</b>：江南春 / 钟睒睒 / 罗永浩 / 阳萌 / 张兰
+          <div class="note">国内品牌审计需求最大，优先</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          <b>vc-cn 3 人</b>：张磊 / 徐新 / 沈南鹏
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          <b>ai-app-cn 3 人</b>：王小川 / 王慧文 / 李木欧
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          <b>cross-border 4 人</b>：黄峥 / 周受资 / 陈年 / 庄帅
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          <b>edu-cn 3 人</b>：Sal Khan / 寿松涛 / 黄峥（教育版）
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          <b>security-cn-global 3 人</b>（剩余）
+        </div>
+      </div>
+    </div>
+
+    <div class="task-group-label">C · <code style="font-size:11px">--panel-merge</code> 跨面板对比</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          设计跨面板对比数据结构
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          SKILL.md Phase 5 增加 panel-merge 逻辑
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          HTML 报告模板增加跨面板 diff 热力图组件
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- P2 -->
+  <div class="priority-card">
+    <div class="card-head">
+      <span class="badge p2">P2</span>
+      <span class="card-title">质量与基础设施</span>
+      <span class="card-desc">测试覆盖 + 报告覆盖扩充</span>
+    </div>
+
+    <div class="task-group-label">A · 集成测试 Workflow</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          新增 <code>.github/workflows/integration-test.yml</code>
+          <div class="note">用 --quick --no-judges 跑完整流水线；不触发真实 WebSearch</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          创建 <code>tests/fixtures/</code> mock 数据目录
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          验证报告 Markdown 结构符合 schema
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          验证 HTML 报告含必要组件（radar chart、Mermaid 图、dissent heatmap）
+        </div>
+      </div>
+    </div>
+
+    <div class="task-group-label">B · 扩充公开报告（各面板至少 1 份）</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          选定 8 个品牌（补全 vc-en / security / luxury / ai-app / edu / vc-cn / consumer / cross-border 各 1 份）
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          运行完整审计并发布到 <code>published/reports/</code>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          更新 <code>site/published-reports.txt</code> 和 <code>reports-meta.yaml</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- P3 -->
+  <div class="priority-card">
+    <div class="card-head">
+      <span class="badge p3">P3</span>
+      <span class="card-title">未来形态</span>
+      <span class="card-desc">前置：P0/P1 完成，评委档案质量达标</span>
+    </div>
+
+    <div class="task-group-label">A · MCP Server 封装</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          确认 MCP Server 框架选型（设计草稿见 <code>docs/mcp-server-design.md</code>）
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          实现核心工具：<code>run_audit()</code> · <code>list_panels()</code> · <code>get_report()</code>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          文档 + 示例调用 + site/agents.html 同步更新
+        </div>
+      </div>
+    </div>
+
+    <div class="task-group-label">B · 报告订阅 / 品牌演化追踪</div>
+    <div class="task-list task-group">
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          设计触发机制（webhook / cron / 新闻监控）
+          <div class="note">品牌发布新产品、高管变动、负面事件后自动触发 EVOLUTION 模式</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          实现订阅-触发-审计-发布完整闭环
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 进度日志 ── -->
+  <h2>进度日志</h2>
+  <div class="log-timeline">
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-06-25</div>
+      <div class="log-tags">
+        <span class="badge done">里程碑</span>
+        <span class="badge p0">文档</span>
+      </div>
+      <div class="log-title">全量代码库分析 · 开发路线图建立</div>
+      <div class="log-body">
+        <ul>
+          <li>分析全量代码库：43 位评委、10 面板、5 阶段流水线、完整文档集（10 篇设计文档）</li>
+          <li>整理当前状态快照（v0.2.36）：15/43 全档，10/10 面板可运行，2 份公开报告</li>
+          <li>识别关键阻断项：Wuying 免费版 GetLink 返回 400，WebFetch 对部分站点返回 403</li>
+          <li>制定 P0-P3 四级优先级路线图</li>
+          <li>创建 <code>docs/11-roadmap.md</code> 开发路线图与进度日志文档</li>
+          <li>创建 <code>site/roadmap.html</code> 可视化路线图网页</li>
+        </ul>
+        <div class="log-commit">commit <a href="https://github.com/zhanglunet/mba/commit/4d41917" target="_blank">4d41917</a> · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <!-- 后续进度在此追加，格式参考上方 -->
+    <div class="log-entry" style="opacity:0.45">
+      <div class="log-date">—</div>
+      <div class="log-title" style="font-style:italic;color:var(--muted)">后续进度将在此追加…</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>MBA · Metric Brand Auditor</span>
+    <span>
+      <a href="/">主页</a> ·
+      <a href="/how-it-works.html">方法论</a> ·
+      <a href="https://github.com/zhanglunet/mba">GitHub</a> ·
+      <a href="/docs/11-roadmap.md">原始文档</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
