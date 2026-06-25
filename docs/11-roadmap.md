@@ -69,16 +69,14 @@
 - [ ] bhorowitz — a16z.com blog + hard thing about hard things
 - [ ] marcandreessen — pmarca.com archive + 近期 X 发言
 
-#### P0-B：实现 `--dry-run` 标志
+#### P0-B：实现 `--dry-run` 标志 ✅ 已完成（2026-06-25）
 
 **目标**：`/mba 小米 --dry-run` 打印 PRD + 面板选择 + 维度计划，不触发真实搜索  
-**理由**：文档已设计，用户需要在正式审计前预览和调整计划  
-**实现位置**：`metric-brand-auditor/SKILL.md` Phase 0/1 路由逻辑  
-**验收标准**：dry-run 后无网络请求，输出包含：品牌名、选定面板、7 个维度描述、预计评委列表
+**实现位置**：`metric-brand-auditor/SKILL.md` Phase 0 §0.5 + 参数列表
 
-- [ ] SKILL.md 增加 `--dry-run` 参数解析
-- [ ] Phase 0 增加 dry-run 分支（打印计划后退出）
-- [ ] docs/05-usage.md 补充 `--dry-run` 示例
+- [x] SKILL.md 增加 `--dry-run` 参数解析
+- [x] Phase 0 新增 §0.5 dry-run exit（原 §0.5 Write panel.yaml 顺延为 §0.6）
+- [x] docs/05-usage.md §3.6 补充 `--dry-run` 完整示例
 
 ---
 
@@ -186,7 +184,25 @@ get_report(brand) → report_md
 - 不依赖 Wuying 的立即可执行项：vc-en 英文评委深化 + `--dry-run` 实现
 - 测试覆盖是当前最大技术债（无集成测试）
 
-**commit**：— （文档创建）
+**commit**：`4d41917` · branch `claude/sharp-turing-496l8b`
+
+---
+
+### 2026-06-25（续）
+
+**事项**：实现 `--dry-run` 标志（v0.2.36 → v0.2.37）  
+**完成内容**：
+- `metric-brand-auditor/SKILL.md`：
+  - 版本号 bump 0.2.36 → 0.2.37
+  - 参数列表新增 `--dry-run` 说明
+  - Phase 0 新增 §0.5 dry-run exit，原 §0.5 顺延为 §0.6
+  - 输出格式：品牌、模式、面板评委状态（✓/✗）、Wuying leg、维度列表、输出路径、生效 flags
+- `docs/05-usage.md`：参数表增行，新增 §3.6 dry-run 完整示例
+- `site/roadmap.html`：P0-B 三个子任务标为完成，版本快照更新为 v0.2.37，追加进度日志
+
+**同步发现**：WebFetch paulgraham.com 返回 HTTP 403，沙箱阻断仍有效。P0-A（vc-en 评委深化）暂挂起。
+
+**commit**：待推送
 
 ---
 

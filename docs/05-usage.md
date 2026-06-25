@@ -35,6 +35,7 @@ Lead 会:
 | `--industry auto` | 名称 | - | 按行业映射选择 panel,例如 `auto` / `ai` / `consumer` |
 | `--panel-add pmarca` | slug | - | 本次临时追加一位评委,不修改 panel 文件 |
 | `--panel-drop jobs` | slug | - | 本次临时跳过一位评委,不修改 panel 文件 |
+| `--dry-run` | 开关 | off | 预览审计计划(解析路径/面板/模式),不执行任何搜索或文件写入 |
 | `list` | 子命令 | - | 列出已审计品牌 + 各自版本数 + 绑定的 panel |
 | `panels` | 子命令 | - | 列出 `panels/` 下所有 panel + judge 列表 |
 | `panels show <name>` | 子命令 | - | 打印某个 panel 的完整 yaml |
@@ -178,7 +179,43 @@ panel,保证 EVOLUTION 版本之间可比。
 
 跳过 wuying leg + 跳过评委,只跑 Phase 2-3,产出 `_raw/synthesis.md`(没有 `reviews/`)。适合"先看 Lead 怎么看,再决定要不要花成本叫评委"。
 
-### 3.6 列出所有已审计品牌
+### 3.6 正式运行前预览计划（--dry-run）
+
+```
+> /mba 小米汽车 --industry auto --dry-run
+```
+
+输出示例：
+
+```
+### MBA Dry-Run Plan — 小米汽车
+
+Mode:          FRESH (no prior report)
+Panel:         auto (5 judges)
+Judges:        musk ✓  leijun ✓  lixiang ✓  hexiaopeng ✓  libin ✓
+Wuying leg:    YES
+Dimensions:    1 2 3 4 5 6 7 (all default)
+Output path:   ~/mba/reports/xiaomi-auto/
+
+Flags active:  --industry auto
+
+— No files written. No network requests made. —
+Re-run without --dry-run to execute the full pipeline (~20 min).
+```
+
+适用场景：
+- 确认 `--industry` / `--panel` 解析是否如预期
+- 验证所有评委的 perspective skill 都已安装（✓ = 已找到 / ✗ = 缺失）
+- 跑正式流水线前确认品牌 slug、输出路径
+- 多个 flag 组合时先检查 flag 解析结果
+
+`--dry-run` 与任何其它 flag 组合均有效：
+
+```
+/mba 某品牌 --quick --panel vc-en --focus 1,2,7 --dry-run
+```
+
+### 3.7 列出所有已审计品牌
 
 ```
 > /mba list

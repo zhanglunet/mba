@@ -328,7 +328,7 @@
 
   <h1>开发路线图</h1>
   <p class="sub">Development Roadmap &amp; Progress Log · 持续更新</p>
-  <div class="version-chip">当前版本 v0.2.36 · 快照 2026-06-25</div>
+  <div class="version-chip">当前版本 v0.2.37 · 快照 2026-06-25</div>
 
   <!-- ── 状态快照 ── -->
   <h2>当前状态快照</h2>
@@ -358,10 +358,10 @@
       <div class="value">0</div>
       <div class="note">仅有 smoke test，无 CI 集成</div>
     </div>
-    <div class="status-card err">
+    <div class="status-card warn">
       <div class="label">待实现功能</div>
-      <div class="value">2</div>
-      <div class="note">--dry-run · MCP Server</div>
+      <div class="value">1</div>
+      <div class="note">MCP Server（--dry-run 已完成）</div>
     </div>
   </div>
 
@@ -511,22 +511,22 @@
     <div class="task-group-label">B · 实现 <code style="font-size:11px">--dry-run</code> 标志</div>
     <div class="task-list task-group">
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           <b>SKILL.md</b> 增加 <code>--dry-run</code> 参数解析
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          Phase 0 增加 dry-run 分支（打印计划后退出，不触发网络请求）
-          <div class="note">输出：品牌名、选定面板、7 维度描述、预计评委列表</div>
+          Phase 0 增加 dry-run 分支 §0.5（打印计划后退出，不触发网络请求）
+          <div class="note">输出：品牌名、选定面板、评委状态 ✓/✗、维度列表、输出路径</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          <b>docs/05-usage.md</b> 补充 <code>--dry-run</code> 示例
+          <b>docs/05-usage.md</b> 补充 <code>--dry-run</code> 示例（§3.6）
         </div>
       </div>
     </div>
@@ -744,6 +744,38 @@
           <li>创建 <code>site/roadmap.html</code> 可视化路线图网页</li>
         </ul>
         <div class="log-commit">commit <a href="https://github.com/zhanglunet/mba/commit/4d41917" target="_blank">4d41917</a> · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-06-25</div>
+      <div class="log-tags">
+        <span class="badge done">P0-B 完成</span>
+        <span class="badge p0">功能</span>
+      </div>
+      <div class="log-title">实现 <code>--dry-run</code> 标志（v0.2.37）</div>
+      <div class="log-body">
+        <ul>
+          <li>SKILL.md 参数列表新增 <code>--dry-run</code> 说明</li>
+          <li>Phase 0 新增 §0.5 dry-run exit：运行完路径解析/面板解析/FRESH-EVOLUTION 检测后打印计划并退出，无网络请求、无文件写入</li>
+          <li>输出格式：品牌名、模式、面板+评委状态（✓/✗）、Wuying leg、维度列表、输出路径、生效 flags</li>
+          <li>原 §0.5 Write panel.yaml 顺延为 §0.6</li>
+          <li>docs/05-usage.md §3.6 新增 dry-run 完整示例（含与其他 flags 组合）</li>
+        </ul>
+        <div class="log-commit">commit 待推送 · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">2026-06-25</div>
+      <div class="log-tags">
+        <span class="badge todo">P0-A 阻断</span>
+        <span class="badge blocked">WebFetch 403</span>
+      </div>
+      <div class="log-title">vc-en 评委深化尝试 · 确认沙箱阻断</div>
+      <div class="log-body">
+        测试 <code>WebFetch paulgraham.com/ds.html</code> 返回 HTTP 403。沙箱网络限制仍然有效（文档记录的 blocker 未解除）。P0-A（vc-en 英文评委深化）挂起，等待 Wuying Pro 升级或网络策略变更。
+        <div class="log-commit">无 commit · 无文件变更</div>
       </div>
     </div>
 
