@@ -48,3 +48,73 @@ reports:
       和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50,
       综合分 6.2/10。
     has_pdf: true
+
+  # ── P2-B: 待生成报告(各面板补一份样本) ───────────────────────────────
+  # 运行命令见下方各条目;生成后删除 status: pending,填入实际分数和 tl_dr
+
+  - slug: qianxin
+    brand_cn: 奇安信
+    brand_en: QiAnXin Technology
+    ticker: 688561.SH
+    panel: security-cn-global
+    status: pending
+    run_cmd: "/mba 奇安信 --panel security-cn-global"
+    tl_dr: "待生成"
+
+  - slug: kimichat
+    brand_cn: Kimi / 月之暗面
+    brand_en: Kimi (Moonshot AI)
+    panel: ai-app-cn
+    status: pending
+    run_cmd: "/mba Kimi --panel ai-app-cn"
+    tl_dr: "待生成"
+
+  - slug: tal-education
+    brand_cn: 好未来
+    brand_en: TAL Education
+    ticker: TAL.NYSE
+    panel: edu-cn
+    status: pending
+    run_cmd: "/mba 好未来 --panel edu-cn"
+    tl_dr: "待生成"
+
+  - slug: anthropic
+    brand_cn: Anthropic
+    brand_en: Anthropic (Claude)
+    panel: vc-en
+    status: pending
+    run_cmd: "/mba Anthropic --panel vc-en"
+    tl_dr: "待生成"
+
+  - slug: genki-forest
+    brand_cn: 元气森林
+    brand_en: Genki Forest
+    panel: consumer-cn
+    status: pending
+    run_cmd: "/mba 元气森林 --panel consumer-cn"
+    tl_dr: "待生成"
+
+  - slug: meituan
+    brand_cn: 美团
+    brand_en: Meituan
+    ticker: 3690.HK
+    panel: vc-cn
+    status: pending
+    run_cmd: "/mba 美团 --panel vc-cn"
+    tl_dr: "待生成"
+
+  - slug: dji
+    brand_cn: 大疆创新
+    brand_en: DJI
+    panel: cross-border
+    status: pending
+    run_cmd: "/mba DJI --panel cross-border"
+    tl_dr: "待生成"
+
+  - slug: hermes
+    brand_cn: 爱马仕
+    brand_en: Hermès
+    panel: luxury-en
+    status: pending
+    run_cmd: "/mba Hermès --panel luxury-en"
+    tl_dr: "待生成"

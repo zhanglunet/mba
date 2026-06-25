@@ -328,15 +328,15 @@
 
   <h1>开发路线图</h1>
   <p class="sub">Development Roadmap &amp; Progress Log · 持续更新</p>
-  <div class="version-chip">当前版本 v0.2.37 · 快照 2026-06-25</div>
+  <div class="version-chip">当前版本 v0.2.38 · 快照 2026-06-25</div>
 
   <!-- ── 状态快照 ── -->
   <h2>当前状态快照</h2>
   <div class="status-grid">
     <div class="status-card ok">
       <div class="label">流水线</div>
-      <div class="value">v0.2.36</div>
-      <div class="note">Phase 0-5 稳定，生产就绪</div>
+      <div class="value">v0.2.38</div>
+      <div class="note">Phase 0-5 + Phase 5M 稳定，生产就绪</div>
     </div>
     <div class="status-card ok">
       <div class="label">评委面板</div>
@@ -348,20 +348,20 @@
       <div class="value">15 / 43</div>
       <div class="note">28 人待深化（seed 层）</div>
     </div>
-    <div class="status-card ok">
+    <div class="status-card warn">
       <div class="label">公开报告</div>
-      <div class="value">2</div>
-      <div class="note">Lenovo · 成市 Auto</div>
+      <div class="value">2 + 8</div>
+      <div class="note">Lenovo · 成市 Auto；8 品牌建档待审计</div>
     </div>
-    <div class="status-card err">
+    <div class="status-card ok">
       <div class="label">集成测试</div>
-      <div class="value">0</div>
-      <div class="note">仅有 smoke test，无 CI 集成</div>
+      <div class="value">✓ CI</div>
+      <div class="note">report-validation.yml 已上线</div>
     </div>
     <div class="status-card warn">
       <div class="label">待实现功能</div>
       <div class="value">1</div>
-      <div class="note">MCP Server（--dry-run 已完成）</div>
+      <div class="note">MCP Server（--dry-run · --panel-merge 已完成）</div>
     </div>
   </div>
 
@@ -595,21 +595,24 @@
     <div class="task-group-label">C · <code style="font-size:11px">--panel-merge</code> 跨面板对比</div>
     <div class="task-list task-group">
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           设计跨面板对比数据结构
+          <div class="note">Phase 0.3 ABORT guard + Phase 0.4 bypass clause + Phase 5M 4步流程</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          SKILL.md Phase 5 增加 panel-merge 逻辑
+          SKILL.md Phase 5 增加 panel-merge 逻辑（Phase 5M.1-5M.4）
+          <div class="note">5M.1 读旧分 → 5M.2 跑新面板 → 5M.3 Panel Comparison 报告模板 → 5M.4 HTML delta 热力图</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           HTML 报告模板增加跨面板 diff 热力图组件
+          <div class="note">面板选择器 toggle + 5 镜头 delta 热力图列，docs/05-usage.md §3.7 补充用例</div>
         </div>
       </div>
     </div>
@@ -655,21 +658,24 @@
     <div class="task-group-label">B · 扩充公开报告（各面板至少 1 份）</div>
     <div class="task-list task-group">
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           选定 8 个品牌（补全 vc-en / security / luxury / ai-app / edu / vc-cn / consumer / cross-border 各 1 份）
+          <div class="note">奇安信 · Kimi · 好未来 · Anthropic · 元气森林 · 美团 · DJI · 爱马仕；<code>published/reports/*/panel.yaml</code> + <code>reports-meta.yaml</code> 已建档</div>
         </div>
       </div>
       <div class="task-item">
         <div class="task-check"></div>
         <div class="task-text">
           运行完整审计并发布到 <code>published/reports/</code>
+          <div class="note">需要在 Claude Code 会话中逐一运行 <code>/mba {品牌} --panel {panel}</code>；依赖 Wuying 可用性</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          更新 <code>site/published-reports.txt</code> 和 <code>reports-meta.yaml</code>
+          更新 <code>site/reports-meta.yaml</code>（8 条 pending 条目已建档）
+          <div class="note"><code>published-reports.txt</code> 待审计完成后补充</div>
         </div>
       </div>
     </div>
@@ -793,6 +799,43 @@
           <li><code>tests/fixtures/mock_report.md</code> + <code>mock_report.html</code>：最小合法 fixture，用于校验器自测</li>
           <li><code>.github/workflows/report-validation.yml</code>：CI workflow，PR/push to main 时自动跑四步校验</li>
           <li>本地全量测试通过：2 份 HTML 报告 ✓，1 份 Markdown 报告 ✓，2 份 mock fixture ✓</li>
+        </ul>
+        <div class="log-commit">commit 待推送 · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-06-25</div>
+      <div class="log-tags">
+        <span class="badge done">P1-C 完成</span>
+        <span class="badge p1">功能</span>
+      </div>
+      <div class="log-title">实现 <code>--panel-merge</code> 跨面板对比（v0.2.38）</div>
+      <div class="log-body">
+        <ul>
+          <li>SKILL.md 参数列表新增 <code>--panel-merge</code>（触发 Phase 5M，跳过面板变更拦截）</li>
+          <li>Phase 0.3：FRESH 品牌（无先前报告）ABORT guard</li>
+          <li>Phase 0.4：<code>--panel-merge</code> bypass clause；修改 STOP 条件，排除 panel-merge 触发</li>
+          <li>Phase 5M（新增）：5M.1 读旧版分值 → 5M.2 用新面板跑完整 N-Judge → 5M.3 Panel Comparison 报告节（side-by-side delta 表 + 共识/分歧/fingerprint）→ 5M.4 HTML delta 热力图（面板选择器 toggle）</li>
+          <li>docs/05-usage.md §3.7：<code>--panel-merge</code> 两步示例 + 适用场景说明</li>
+        </ul>
+        <div class="log-commit">commit 待推送 · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-06-25</div>
+      <div class="log-tags">
+        <span class="badge done">P2-B 基础设施完成</span>
+        <span class="badge p2">报告扩充</span>
+      </div>
+      <div class="log-title">扩充公开报告基础设施（8 品牌建档）</div>
+      <div class="log-body">
+        <ul>
+          <li>选定 8 个品牌，覆盖全部 8 个待补面板：奇安信（security-cn-global）、Kimi（ai-app-cn）、好未来（edu-cn）、Anthropic（vc-en）、元气森林（consumer-cn）、美团（vc-cn）、DJI（cross-border）、爱马仕（luxury-en）</li>
+          <li>创建 <code>published/reports/{slug}/panel.yaml</code> × 8（status: pending，锁定面板 + mba_version: 0.2.38）</li>
+          <li>更新 <code>site/reports-meta.yaml</code>：8 条 pending 条目（含 run_cmd 字段）</li>
+          <li>待后续运行真实审计后，补充 report.md / report.html，更新 published-reports.txt，移除 pending status</li>
         </ul>
         <div class="log-commit">commit 待推送 · branch claude/sharp-turing-496l8b</div>
       </div>

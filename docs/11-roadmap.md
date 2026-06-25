@@ -10,15 +10,16 @@
 
 | 维度 | 状态 | 备注 |
 |------|------|------|
-| 版本 | v0.2.36 | |
-| 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 稳定 |
+| 版本 | v0.2.38 | |
+| 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
 | 评委全档进度 | ⚠️ 15/43 全档 | 28 人仍在 seed 层，待深化 |
 | mbabrand.com | ✅ 上线 | Cloudflare Pages |
-| 公开报告 | ✅ 2 份 | Lenovo + 成市 Auto |
+| 公开报告 | ✅ 2 份 + 8 个 pending | Lenovo + 成市 Auto；8 品牌建档待审计 |
 | CI/CD | ✅ 运行中 | 面板校验 + 结构检查 + 站点构建 |
-| 单元/集成测试 | ❌ 缺失 | 仅有 smoke test |
-| --dry-run 标志 | ❌ 未实现 | 设计已在 docs/08 中标注 |
+| 集成测试 | ✅ 已建立 | report-validation.yml（validate_report.py + validate_html_report.py） |
+| --dry-run 标志 | ✅ 已实现 | Phase 0 §0.5 dry-run exit |
+| --panel-merge 标志 | ✅ 已实现 | Phase 5M 跨面板对比流程 |
 | MCP Server 形态 | ❌ 未实现 | 设计稿在 mcp-server-design.md |
 
 ### 评委全档分布（v0.2.36）
@@ -100,15 +101,15 @@
 - [ ] 跑 smoke test 确认 `GetLink` 可用
 - [ ] 按顺序深化 25 人
 
-#### P1-B：`--panel-merge` 跨面板对比报告
+#### P1-B：`--panel-merge` 跨面板对比报告 ✅ 已完成（2026-06-25）
 
 **目标**：支持将两次不同面板的审计结果合并到同一报告的对比章节  
 **场景**：同一品牌用 default + vc-en 两套视角对比，形成"内行 vs 外行"差异热力图  
-**复杂度**：Phase 5 Merge 需支持跨面板 diff 视图，版本控制需记录面板变更
+**实现**：SKILL.md v0.2.38；Phase 5M 4步流程；docs/05-usage.md §3.7 用例
 
-- [ ] 设计跨面板对比数据结构
-- [ ] SKILL.md Phase 5 增加 panel-merge 逻辑
-- [ ] HTML 模板增加对比视图组件
+- [x] 设计跨面板对比数据结构（Phase 0.3 guard + Phase 0.4 bypass）
+- [x] SKILL.md Phase 5M 增加 panel-merge 逻辑（5M.1-5M.4 完整流程）
+- [x] HTML 报告模板增加跨面板 diff 热力图组件（面板选择器 toggle + delta 列）
 
 ---
 
@@ -127,12 +128,13 @@
 
 **目标**：10 个面板各有 1 份公开样本报告  
 **理由**：当前仅 2 份（default + auto），其他 8 个面板无演示  
-**优先补充**：vc-en（海外品牌）、security-cn-global（安全企业）、luxury-en（奢侈品）
+**选定品牌**：奇安信·Kimi·好未来·Anthropic·元气森林·美团·DJI·爱马仕（各面板 1 份）
 
-- [ ] 选定 8 个品牌（每面板 1 个）
-- [ ] 运行完整审计
-- [ ] 发布到 `published/reports/`
-- [ ] 更新 `site/published-reports.txt` 和 `reports-meta.yaml`
+- [x] 选定 8 个品牌（每面板 1 个）
+- [x] 建档：`published/reports/*/panel.yaml` × 8 + `site/reports-meta.yaml` 8 条 pending 条目
+- [ ] 运行完整审计（需 Claude Code 会话 + Wuying 可用）
+- [ ] 发布到 `published/reports/`（报告生成后移除 pending status）
+- [ ] 更新 `site/published-reports.txt`（待审计完成后补充）
 
 ---
 
@@ -213,6 +215,43 @@ get_report(brand) → report_md
 - `tests/fixtures/mock_report.md` + `mock_report.html`：最小合法 mock fixture
 - `.github/workflows/report-validation.yml`：CI workflow（PR + push to main）
 - 本地测试：2 份 HTML ✓、1 份 Markdown ✓、2 份 mock fixture ✓
+
+**commit**：待推送
+
+---
+
+### 2026-06-25（续三）
+
+**事项**：实现 `--panel-merge` 跨面板对比（P1-B，v0.2.37 → v0.2.38）  
+**完成内容**：
+- `metric-brand-auditor/SKILL.md` v0.2.38：
+  - 参数列表新增 `--panel-merge` 描述
+  - Phase 0.3：FRESH 品牌（无先前 report.md）触发 `--panel-merge` 时 ABORT
+  - Phase 0.4：`--panel-merge` bypass clause（跳过面板相同检测）；STOP 条件追加 "AND `--panel-merge` was NOT passed"
+  - Phase 5M（新增完整章节）：
+    - 5M.1 读取旧版 score.json / report.md 提取分值
+    - 5M.2 用新面板正常跑 N-Judge（复用 Phase 4）
+    - 5M.3 生成 Panel Comparison 报告节（side-by-side delta 表 + 共识/分歧/fingerprint + cross-panel verdict）
+    - 5M.4 HTML 模板扩展（面板选择器 toggle + 5 镜头 delta 热力图列）
+- `docs/05-usage.md`：
+  - 参数表新增 `--panel-merge` 行
+  - §3.7 新增"跨面板对比审计"两步示例（Step 1 首次审计 + Step 2 panel-merge）
+
+**commit**：待推送
+
+---
+
+### 2026-06-25（续四）
+
+**事项**：P2-B 报告扩充基础设施（8 品牌建档）  
+**完成内容**：
+- 选定 8 个品牌，覆盖全部 8 个待补面板：
+  - 奇安信（security-cn-global）、Kimi（ai-app-cn）、好未来（edu-cn）、Anthropic（vc-en）
+  - 元气森林（consumer-cn）、美团（vc-cn）、DJI（cross-border）、爱马仕（luxury-en）
+- `published/reports/{slug}/panel.yaml` × 8（status: pending，锁定面板 + mba_version: 0.2.38）
+- `site/reports-meta.yaml`：追加 8 条 pending 条目（含 run_cmd、panel、ticker 等字段）
+
+**待完成**：在 Claude Code 会话中逐一运行真实审计 → 生成 report.md/html → 更新 published-reports.txt → 移除 pending status
 
 **commit**：待推送
 

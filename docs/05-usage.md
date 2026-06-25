@@ -36,6 +36,7 @@ Lead 会:
 | `--panel-add pmarca` | slug | - | 本次临时追加一位评委,不修改 panel 文件 |
 | `--panel-drop jobs` | slug | - | 本次临时跳过一位评委,不修改 panel 文件 |
 | `--dry-run` | 开关 | off | 预览审计计划(解析路径/面板/模式),不执行任何搜索或文件写入 |
+| `--panel-merge` | 开关 | off | 跨面板对比模式:用第二套评委重新打分,生成两套面板的并排比较报告。需与 `--panel`/`--industry` 配合使用,且品牌必须已有历史报告 |
 | `list` | 子命令 | - | 列出已审计品牌 + 各自版本数 + 绑定的 panel |
 | `panels` | 子命令 | - | 列出 `panels/` 下所有 panel + judge 列表 |
 | `panels show <name>` | 子命令 | - | 打印某个 panel 的完整 yaml |
@@ -215,7 +216,46 @@ Re-run without --dry-run to execute the full pipeline (~20 min).
 /mba 某品牌 --quick --panel vc-en --focus 1,2,7 --dry-run
 ```
 
-### 3.7 列出所有已审计品牌
+### 3.7 跨面板对比审计（--panel-merge）
+
+适合场景：同一品牌先用 default 面板审计，再想看 vc-en 的硅谷视角，两套结果并排比较。
+
+```
+# 第一步：先用默认面板做一次完整审计（已有报告则跳过）
+> /mba 某 SaaS 品牌
+
+# 第二步：用 vc-en 面板做对比，生成跨面板比较报告（v2）
+> /mba 某 SaaS 品牌 --panel vc-en --panel-merge
+```
+
+输出（v2 新增章节）：
+
+```
+## Panel Comparison
+
+### Side-by-Side Score Deltas
+| Lens     | default mean | vc-en mean | Δ    | Direction |
+|----------|-------------|------------|------|-----------|
+| Origin   | 6.8          | 7.4        | +0.6 | ↑         |
+| Category | 7.0          | 8.2        | +1.2 | ↑↑        |
+| Leverage | 6.2          | 5.8        | -0.4 | ↓         |
+| Identity | 4.6          | 6.0        | +1.4 | ↑↑        |
+| Signal   | 6.4          | 5.2        | -1.2 | ↓↓        |
+
+### Where the panels agree
+Origin 和 Leverage 两个维度两套面板评分接近(σ < 1.0)——这是品牌最稳定的信号。
+
+### Where the panels diverge
+Category 分歧最大(Δ +1.2):vc-en 评委(PG / Andreessen / Naval)更看重"是否命名了新品类",
+而 default 面板(傅盛 / Jobs)更看重执行到位而非命名本身。
+```
+
+注意事项：
+- `--panel-merge` 必须有历史报告，否则 ABORT 并提示先跑 `/mba <brand>`
+- 旧面板的 `reviews/*.md` 会被保留（不覆盖），新面板写入新 slug 的文件
+- 研究数据（`_raw/`）默认复用（30 天内），加 `--refresh` 强制重新研究
+
+### 3.8 列出所有已审计品牌
 
 ```
 > /mba list
