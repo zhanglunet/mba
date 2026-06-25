@@ -19,6 +19,7 @@
 | 08 | [08-extending.md](08-extending.md) | 贡献者 | 加品牌 / 评委 / 维度 / 改 HTML 模板 |
 | 09 | [09-agent-api.md](09-agent-api.md) | 集成方 / 贡献者 | For-Agents 机读层:/api 端点契约、生成器、CI 漂移守卫 |
 | 10 | [10-deepening-perspectives.md](10-deepening-perspectives.md) | 贡献者 | seed → full tier 深化 SOP + 43 评委 tier 进度表 + Wuying 取数前提 |
+| 11 | [11-roadmap.md](11-roadmap.md) | 全员 | **开发路线图 + 进度日志**：P0-P3 优先级计划、当前阻断项、每次开发动作记录 |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(未来形态) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |
