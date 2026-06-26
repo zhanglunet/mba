@@ -82,9 +82,17 @@ reports:
     brand_cn: Anthropic
     brand_en: Anthropic (Claude)
     panel: vc-en
-    status: pending
-    run_cmd: "/mba Anthropic --panel vc-en"
-    tl_dr: "待生成"
+    version: v1
+    audit_date: 2026-06-26
+    score_total: 191
+    score_max: 250
+    score_normalized: 7.64
+    tl_dr: >-
+      从"被嘲笑的矛盾命题"到 $965B IPO 估值——vc-en 5 位评委对起源真实性（8.4）
+      和市场信号（8.8）高度共识，但在 Category（Thiel 5 vs Hoffman 8）和 Leverage
+      （Thiel 6 vs Naval 9）存在核心分歧，揭示 0→1 品类创造 vs 1→n 卓越执行的根本张力。
+      Total: 191/250 · 7.64/10。
+    has_pdf: false
 
   - slug: genki-forest
     brand_cn: 元气森林
