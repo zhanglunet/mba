@@ -459,7 +459,13 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
 /mba openai <span class="p">--quick --no-judges</span>
 
 <span class="c"># EVOLUTION:已有报告,只重跑变了的维度</span>
-/mba lenovo <span class="p">--refresh</span></pre>
+/mba lenovo <span class="p">--refresh</span>
+
+<span class="c"># 预览计划 — 只打印面板/评委/路径,零副作用</span>
+/mba anthropic <span class="p">--dry-run --panel vc-en</span>
+
+<span class="c"># 跨面板对比 — 用新面板重跑,产出 delta 热力图</span>
+/mba lenovo <span class="p">--panel vc-en --panel-merge</span></pre>
 
     <p>装法在 <a href="/api/install.json"><code>/api/install.json</code></a>(BotLearn 一键 / GitHub 手装两条路)。</p>
 

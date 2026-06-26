@@ -54,9 +54,12 @@ MBA 本身是一个 Claude Code skill。给自己的 agent 内置「读 mbabrand
 更进一步可以触发新的审计运行:
 
 ```
-/mba <brand-slug>             # 在 Claude Code 里全流程跑一份新报告
-/mba <brand> --refresh         # EVOLUTION 模式:只重跑变了的维度
-/mba <brand> --quick --no-judges  # 单视角速读,不召评委
+/mba <brand-slug>                        # 全流程,默认面板
+/mba <brand> --panel <panel-slug>        # 指定行业评委 panel
+/mba <brand> --refresh                   # EVOLUTION:只重跑变了的维度
+/mba <brand> --quick --no-judges         # 单视角速读,不召评委
+/mba <brand> --dry-run                   # 预览计划,零副作用,不触发搜索
+/mba <brand> --panel <p2> --panel-merge  # 跨面板对比,产出 delta 热力图
 ```
 
 Install: https://www.botlearn.ai/en/community/u/mba_auditor
