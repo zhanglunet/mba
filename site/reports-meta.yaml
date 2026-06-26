@@ -57,9 +57,18 @@ reports:
     brand_en: QiAnXin Technology
     ticker: 688561.SH
     panel: security-cn-global
-    status: pending
-    run_cmd: "/mba 奇安信 --panel security-cn-global"
-    tl_dr: "待生成"
+    version: v1
+    audit_date: 2026-06-26
+    score_total: 185
+    score_max: 300
+    score_normalized: 6.17
+    tl_dr: >-
+      中国政务安全市场无可置疑的领导者，80%+ 中央部委客户、67亿RMB营收、科创板上市。
+      security-cn-global 6位评委对 Leverage（均值7.0）基本共识，但 Identity（均值4.5）
+      全卷最低——政务工具标签在国内是护城河，在国际市场是障碍。
+      最大分歧：马斯克（22/50，监管护城河非真正杠杆）vs 任正非（37/50，国家数字主权基础设施价值极高）。
+      185/300 · 6.17/10。
+    has_pdf: false
 
   - slug: kimichat
     brand_cn: Kimi / 月之暗面
