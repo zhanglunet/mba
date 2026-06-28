@@ -92,9 +92,19 @@ reports:
     brand_en: TAL Education
     ticker: TAL.NYSE
     panel: edu-cn
-    status: pending
-    run_cmd: "/mba 好未来 --panel edu-cn"
-    tl_dr: "待生成"
+    version: v1
+    audit_date: 2026-06-28
+    score_total: 124
+    score_max: 200
+    score_normalized: 6.20
+    tl_dr: >-
+      中国教育行业 20 年积累的品牌标杆，MBA 审计史上首个"品类被政策摧毁后重建"案例。
+      双减（2021）将核心 K9 课外辅导强制消灭，市值蒸发 90%+；但学习数据、学而思品牌信任、
+      教研质量三项核心资产在 AI 时代提供了真实重建基础。edu-cn 4 位评委（张邦鑫自冲突排除）：
+      Origin 7.3 最高（草根叙事真实），Category 5.5 最低（原品类消灭）。
+      最大分歧：俞敏洪△品类 4 分 vs 萨尔曼·可汗 7 分——"残局"框架 vs "数据壁垒"框架对撞。
+      124/200 · 6.20/10。
+    has_pdf: false
 
   - slug: anthropic
     brand_cn: Anthropic
