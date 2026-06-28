@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kimi 月之暗面 — Brand Influence Review v1 · MBA</title>
+<meta name="description" content="ai-app-cn panel brand audit of Kimi / 月之暗面 (Moonshot AI). Score: 137/200 · 6.85/10. 4 judges × 5 lenses. Audit date: 2026-06-26." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --green: #1a7a4a;
+  --blue: #1a4a7a;
+  --warn: #d97706;
+  --moon: #2c1a4a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 820px; margin: 0 auto; padding: 56px 28px 96px; }
+header {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+
+.panel-note { background: #fffbf0; border: 1px solid #e8d96e; border-radius: 6px; padding: 12px 16px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: #7a6b00; margin-bottom: 28px; }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.score-table tr.mean-row td { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; color: var(--accent); font-weight: 700; background: #fef9f7; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+.cell-conflict { font-size: 10px; color: var(--muted); }
+
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; }
+
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+
+.actions { counter-reset: action-counter; margin-bottom: 32px; }
+.action-phase { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 20px 0 10px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--moon); color: #fff; margin-bottom: 20px; }
+.insight-box { background: #f3f0fa; border-left: 3px solid var(--moon); border-radius: 0 6px 6px 0; padding: 14px 18px; margin-bottom: 20px; font-size: 14px; line-height: 1.6; }
+.insight-box strong { font-size: 12px; font-family: ui-sans-serif,sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--moon); display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark">MBA<span class="dot">.</span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
+  </header>
+
+  <div class="report-meta">Brand Influence Audit · v1 · 2026-06-26</div>
+  <h1 class="brand-title">Kimi · 月之暗面</h1>
+  <p class="report-subtitle">Moonshot AI · 中国 AI 应用层品牌质感最佳 · 知识工作者 AI 深耕者</p>
+
+  <div class="panel-badge">🌙 ai-app-cn · 4-Judge Panel</div>
+
+  <div class="panel-note">
+    ⚠ <strong>Panel 自冲突说明</strong>：杨植麟（月之暗面创始人）是 ai-app-cn panel 的标准成员，因品牌创始人自冲突规则排除（等同于 --panel-drop yangzhilin）。有效评委 4 人（王慧文·周鸿祎·傅盛·朱啸虎），满分 200。朱啸虎（金沙江创投）参与了月之暗面 A 轮融资，评分存在利益相关性。
+  </div>
+
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">6.85</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10</div>
+    </div>
+    <div>
+      <div class="score-label">总分</div>
+      <div class="score-sub">137 / 200</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">有效评委数</div>
+        <div class="score-sub">4 <span class="score-tag">ai-app-cn</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="score-label">最强维度 ★ 罕见</div>
+      <div class="score-sub" style="color:var(--moon);">Identity 7.5</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Leverage 6.0</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      中国 AI 应用层品牌命名最优，技术起源最纯粹，但字节 Doubao 的分发鸿沟是不可回避的结构性挑战。
+    </div>
+  </div>
+
+  <div class="insight-box">
+    <strong>MBA 异常信号</strong>
+    本次审计中 Identity（7.5）高于 Leverage（6.0）和 Signal（6.3）——这是 MBA 历史审计中第一次出现 Identity 维度领跑的案例。通常品牌身份是最弱维度（DJI 5.6，奇安信 4.5）。Kimi 的品牌名质量在中国 AI 产品中出类拔萃，形成了"品牌强于业务"的罕见格局。
+  </div>
+
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Lens</th>
+        <th>王慧文</th>
+        <th>周鸿祎</th>
+        <th>傅盛</th>
+        <th>朱啸虎★</th>
+        <th>Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td>
+        <td class="cell-hi">8</td>
+        <td>7</td>
+        <td class="cell-hi">8</td>
+        <td class="cell-hi">8</td>
+        <td>7.8</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td>
+        <td>7</td>
+        <td class="cell-lo">6</td>
+        <td>7</td>
+        <td>7</td>
+        <td>6.8</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td>
+        <td>6</td>
+        <td class="cell-lo">5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>6.0</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td>
+        <td class="cell-hi">8</td>
+        <td>7</td>
+        <td>7</td>
+        <td class="cell-hi">8</td>
+        <td>7.5</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td>
+        <td>6</td>
+        <td>6</td>
+        <td>6</td>
+        <td>7</td>
+        <td>6.3</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td>
+        <td>35</td>
+        <td>31</td>
+        <td>34</td>
+        <td>37</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">★ 朱啸虎（金沙江创投）参与月之暗面 A 轮融资，评分存在利益相关性。</p>
+
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 4 评委 × 5 镜头</div>
+      <canvas id="radarChart" height="280"></canvas>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <canvas id="barChart" height="280"></canvas>
+    </div>
+  </div>
+
+  <h2>Dissent Heatmap / 异议热力图</h2>
+  <div class="heatmap">
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:18%;background:#1a7a4a;">7.8</div>
+        <span class="heatmap-range">范围 7–8 · Δ1 · 高度共识</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:50%;width:18%;background:#6b7280;">6.8</div>
+        <span class="heatmap-range">范围 6–7 · Δ1</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:40%;width:20%;background:#c1440e;">6.0 ★最弱</div>
+        <span class="heatmap-range">范围 5–7 · Δ2 ★</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:25%;background:#2c1a4a;">7.5 ★★ 最强</div>
+        <span class="heatmap-range">范围 7–8 · Δ1 · 高度共识</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:50%;width:13%;background:#6b7280;">6.3</div>
+        <span class="heatmap-range">范围 6–7 · Δ1</span>
+      </div>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>关键特征</strong>：本卷是 MBA 历史审计中分歧最小的一次（最大 Δ=2，出现在 Leverage 维度）。4 位评委在 Identity 维度高度一致（7-8），对 Leverage 的共同担忧也高度一致（5-7）——说明 ai-app-cn 行业内部人士对 Kimi 处境判断的共识程度极高。唯一的分歧是：技术杠杆是否足以弥补分发鸿沟（周鸿祎 5 vs 朱啸虎 7）。
+    </div>
+  </div>
+
+  <h2>影响力构造 / Influence Map</h2>
+  <div class="flow-diagram">
+    <pre>
+创始叙事（CMU博士·XLNet作者·真正的技术学术理想主义）
+      │
+      ▼
+长文本问题定义（学术积累自然延伸·非机会主义）
+      │
+      ├──→ 200K→1M tokens（2023 中国 AI 应用 0→1）
+      │           │
+      │           ▼
+      │     知识工作者心智占位
+      │     研究员·律师·学生·记者·高质量用户群
+      │
+      └──→ 品牌质感系统
+           Kimi（最优命名）+ 月之暗面（文化深度）
+           极简界面·不油腻语气·克制调性
+                  │
+                  ▼
+        ~2000-3000万 MAU · 开发者 API 口碑
+        $12亿融资（阿里/腾讯/美团战略参与）
+        137/200 · 6.85/10
+                  │
+                  ▼
+         ⚠ 分发鸿沟
+         字节 Doubao MAU = Kimi 的 5-8x
+         字节生态嵌入（抖音/飞书/剪映）→ 结构性不对称
+                  │
+                  ▼
+         商业化路径待验证
+         情感叙事层空白："Kimi 是谁"还未被回答
+    </pre>
+  </div>
+
+  <h2>评委打分卡 / Judge Scorecards</h2>
+  <div class="judge-grid">
+
+    <div class="judge-card">
+      <div class="judge-name">王慧文</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">美团联合创始人</div>
+      <div class="judge-total">35</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"好产品不一定能活下去。在字节面前，好产品够吗？"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">周鸿祎</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">360 创始人</div>
+      <div class="judge-total" style="color:var(--accent);">31</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最低分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%;background:#d97706;"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"字节的分发是生态封锁，不是竞争。找一个字节不在乎的战场打垂直第一。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">傅盛</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">猎豹移动创始人</div>
+      <div class="judge-total">34</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"猎豹有 3 亿月活，但当谷歌一个更新来，3 亿月活瞬间归零——因为那不是依赖，是顺手用用。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">朱啸虎 ★</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">金沙江创投 · A轮投资方</div>
+      <div class="judge-total" style="color:var(--green);">37</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分 · 利益相关</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"投资有一句话：正确的时间，正确的人，正确的事。月之暗面三件事都对了。"</div>
+    </div>
+
+  </div>
+
+  <h2>R2 对话：核心分歧 / Dissent Dialogues</h2>
+
+  <h3>字节 Doubao 的阴影能否绕开？（Leverage 分歧）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">周鸿祎</div>
+      <div class="dialogue-text">"字节的分发不是竞争优势，是生态封锁。把 Doubao 嵌进抖音就是让 10 亿用户每天看到 Doubao——这不是打不过，这是根本不在一个战场上。Kimi 要活，唯一的路是找一个字节不在乎的战场打垂直第一。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">朱啸虎</div>
+      <div class="dialogue-text">"我同意字节有分发优势，但你们忽略了一件事：字节做的是平均分 80 分的通用产品，而知识工作者需要的是专业分 95 分的深度产品。在那 2% 的高端用户里，Kimi 的分发劣势没有那么致命——他们会主动找 Kimi。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">王慧文（折中）</div>
+      <div class="dialogue-text">"你们都说的对，但都只说了一半。字节做的是覆盖广度，Kimi 做的是渗透深度——两个都可以有价值，但 Kimi 必须把深度用户的商业价值（高 ARPU + 低流失）先证明出来，否则融资逻辑会越来越难成立。"</div>
+    </div>
+  </div>
+
+  <h3>品牌质感能转化为品牌护城河吗？（Identity 讨论）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">傅盛</div>
+      <div class="dialogue-text">"'月之暗面'这个名字我很喜欢，但猎豹的经验告诉我：好名字不等于品牌忠诚。用户记住你的名字，和用户因为你的名字留下来，是两件不一样的事。Kimi 需要把命名优势转化成情感资产。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">王慧文</div>
+      <div class="dialogue-text">"月之暗面有一个别人没有的东西：它的名字本身就是一个还没有被讲完的故事。月亮的暗面——你永远看不到的那一面——这和 AI 探索未知知识的使命有天然的共鸣。但这个故事需要被讲出来，需要内容、需要创始人的声音、需要用户的诠释——现在这些都还没有开始。"</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议</h2>
+  <div class="actions">
+    <div class="action-phase">立即执行 · 0–30 天</div>
+
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>杨植麟写一篇深度长文：我为什么做 Kimi</strong>
+        不是 PR 稿，是真实的技术判断和对大模型路线的公开表达。这种内容在知识圈的传播价值远超广告，且能建立"月之暗面是有自己技术判断的公司"的品牌叙事——字节 Doubao 无法跟进的差异化。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>建立"Kimi for Research"独立产品线</strong>
+        专门服务研究人员、知识工作者场景，有独立定价（¥399/月）、专属功能（多文档对比、引用管理、团队协作）——避免在通用 AI 助手场景和字节正面竞争，建立垂直深度护城河。
+      </div>
+    </div>
+
+    <div class="action-phase">中期执行 · 30–90 天</div>
+
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>发起"Kimi 数据安全承诺"透明度计划</strong>
+        公开用户数据处理规则——是否用用户文档训练模型？数据存储在哪？对律师、研究员等知识工作者来说，这是使用决策的关键因素，是字节 Doubao 很难快速追上的差异化信任建设。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>建立 Kimi 用户成功案例库</strong>
+        收集 50-100 个"研究人员/律师/学者如何用 Kimi 完成了一件具体的重要工作"的真实故事，以 case study 形式发布——把功能演示变成用户故事，建立情感共鸣。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>在 10 所顶级高校建立 Kimi Campus Program</strong>
+        为研究生/博士生提供免费或补贴的 Kimi Plus 订阅——最低成本的核心用户建立路径，且这批用户毕业后会把 Kimi 带进职场，成为 B2B 渗透的先导力量。
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sources">Sources</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://www.moonshot.cn">月之暗面 / Moonshot AI 官网 – moonshot.cn</a></li>
+      <li><a href="https://kimi.ai">Kimi AI 助手 – kimi.ai</a></li>
+      <li><a href="https://arxiv.org/abs/1906.08237">XLNet: Generalized Autoregressive Pretraining for Language Understanding – Yang et al., 2019（arXiv）</a></li>
+      <li><a href="https://36kr.com">月之暗面 B 轮融资报道 – 36kr（2024）</a></li>
+      <li><a href="https://www.geekpark.net">杨植麟极客公园访谈（2024）– 极客公园</a></li>
+      <li><a href="https://www.questmobile.com.cn">QuestMobile 中国 AI 助手月活数据 2025Q1</a></li>
+      <li><a href="https://platform.moonshot.cn">Kimi API 定价页面 – platform.moonshot.cn</a></li>
+      <li><a href="https://www.idc.com/cn">中国 AI 大模型应用竞争格局 2025 – IDC China</a></li>
+      <li><a href="https://sspai.com">少数派 Kimi 深度评测（2024）– sspai.com</a></li>
+      <li><a href="https://www.moonshot.cn">月之暗面 1M tokens 长文本公告（2024）</a></li>
+      <li><a href="https://36kr.com">金沙江创投投资月之暗面 A 轮 – 36kr（2023）</a></li>
+      <li><a href="https://www.qbitai.com">ChatGPT vs Kimi 对比测评 2024 – 量子位</a></li>
+      <li><a href="https://www.jiqizhixin.com">中国 AI 助手竞争格局 2025 – 机器之心</a></li>
+      <li><a href="https://36kr.com">字节 Doubao 月活数据报道 2025 – 36kr</a></li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-06-26 的公开资料，包括新闻报道、企业公告、产品评测及公开访谈。Kimi、月之暗面、Moonshot AI 及相关商标归北京月之暗面科技有限公司所有；本报告与月之暗面无任何赞助、授权或合作关系。4 位评委（王慧文、周鸿祎、傅盛、朱啸虎）的评分均为 AI 基于其公开发表资料的 in-character 模拟推断，非本人真实意见，不代表其个人或所在机构立场。朱啸虎（金沙江创投）参与了月之暗面 A 轮融资，评分存在利益相关性，请读者做相应调整。报告中的财务和用户数据来自第三方媒体报道，非月之暗面官方披露，可能存在偏差。本报告不构成投资建议、证券分析或任何形式的商业尽调建议。
+  </div>
+</div>
+
+<script>
+const radarCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radarCtx, {
+  type: 'radar',
+  data: {
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+    datasets: [
+      {
+        label: '王慧文',
+        data: [8, 7, 6, 8, 6],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 2,
+        pointRadius: 3,
+      },
+      {
+        label: '周鸿祎',
+        data: [7, 6, 5, 7, 6],
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217,119,6,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4,2],
+      },
+      {
+        label: '傅盛',
+        data: [8, 7, 6, 7, 6],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '朱啸虎★',
+        data: [8, 7, 7, 8, 7],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.1)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 } },
+        pointLabels: { font: { size: 11, weight: '600' } },
+        grid: { color: '#e5e2dc' },
+      }
+    },
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+    }
+  }
+});
+
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Identity', 'Origin', 'Category', 'Signal', 'Leverage'],
+    datasets: [{
+      label: '均值 (Mean)',
+      data: [7.5, 7.8, 6.8, 6.3, 6.0],
+      backgroundColor: ['#2c1a4a', '#1a7a4a', '#6b7280', '#6b7280', '#c1440e'],
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } },
+      y: { ticks: { font: { size: 11, weight: '600' } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `均值: ${ctx.parsed.x.toFixed(1)} / 10`
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
