@@ -144,9 +144,18 @@ reports:
     brand_en: Meituan
     ticker: 3690.HK
     panel: vc-cn
-    status: pending
-    run_cmd: "/mba 美团 --panel vc-cn"
-    tl_dr: "待生成"
+    version: v1
+    audit_date: 2026-06-28
+    score_total: 194
+    score_max: 250
+    score_normalized: 7.76
+    tl_dr: >-
+      中国本地生活服务无可争议的领导者，MBA 审计史最高分（7.76/10）——但需在双重投资冲突背景下解读：
+      张磊★（高瓴，42/50）和沈南鹏★（红杉，41/50）是 MBA 首个双重★冲突案例。
+      Origin（8.4）和 Signal（8.4）并列最高，千团大战幸存叙事真实，276B RMB营收+盈利转正信号极清晰；
+      Identity（6.4）揭示功能品牌叙事空白——无创始人IP、无用户社群、无情感叙事。
+      去除两位★评委后为 111/150 · 7.40/10。194/250 · 7.76/10。
+    has_pdf: false
 
   - slug: dji
     brand_cn: 大疆创新
