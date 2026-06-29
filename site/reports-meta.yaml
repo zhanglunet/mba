@@ -177,6 +177,16 @@ reports:
     brand_cn: 爱马仕
     brand_en: Hermès
     panel: luxury-en
-    status: pending
-    run_cmd: "/mba Hermès --panel luxury-en"
-    tl_dr: "待生成"
+    version: v1
+    audit_date: 2026-06-28
+    score_total: 216
+    score_max: 250
+    score_normalized: 8.64
+    tl_dr: >-
+      MBA 审计史三项纪录同次创立：Identity 9.6（最高，超越元气森林7.6 +2.0）、Origin 9.0（最高）、
+      总分8.64/10（最高，清洁纪录，仅 Arnault△ 竞争披露）。
+      luxury-en 5位评委：最戏剧性冲突——Bernard Arnault△（LVMH，2010-2014恶意收购发起者）为被收购目标的品牌力量打分，
+      给出40/50最低分，却依然无法低于40。Cucinelli 46/50最高：工艺信仰者对工艺信仰品牌的最高致敬。
+      "拒绝本身即品牌"——拒绝收购、拒绝授权、拒绝廉价线、拒绝增长冲动，每一次拒绝强化 True Luxury 品类定义。
+      216/250 · 8.64/10。
+    has_pdf: false
