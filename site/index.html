@@ -142,6 +142,16 @@
 
   .reports-list { margin: 36px 0 44px; padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
   .reports-list h3 { margin: 0 0 14px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .stats-strip {
+    display: flex; flex-wrap: wrap; gap: 8px 18px;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 12px; color: var(--muted);
+    margin: 0 0 18px; padding: 10px 14px;
+    background: #f5f2ec; border-radius: 4px;
+    line-height: 1.5;
+  }
+  .stats-strip .s-item { white-space: nowrap; }
+  .stats-strip .s-item strong { color: var(--ink); font-weight: 700; }
   .report-card { display: block; padding: 16px 18px; border: 1px solid var(--rule); border-radius: 6px; text-decoration: none; color: var(--ink); margin-bottom: 10px; transition: all 0.15s; background: #fff; }
   .report-card:hover { border-color: var(--accent); transform: translateX(4px); }
   .report-card .top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
@@ -236,7 +246,14 @@
     </section>
 
     <section class="reports-list">
-      <h3>已发布审计报告 / Published Audits</h3>
+      <h3>已发布审计报告（10 份）/ Published Audits</h3>
+      <div class="stats-strip">
+        <span class="s-item">10 个 Panel &nbsp;·&nbsp; 43 位评委</span>
+        <span class="s-item">最高总分 <strong>Hermès 8.64/10</strong></span>
+        <span class="s-item">最高 Identity <strong>9.6</strong>（Hermès，审计史最高）</span>
+        <span class="s-item">最高 Origin <strong>9.0</strong>（Hermès）</span>
+        <span class="s-item">首个双重★冲突 <strong>美团</strong>（张磊★ + 沈南鹏★）</span>
+      </div>
       <a class="report-card" href="/reports/lenovo/">
         <div class="top">
           <span class="brand">联想集团 Lenovo Group · 0992.HK</span>

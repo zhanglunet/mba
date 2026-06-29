@@ -12,7 +12,7 @@
 | 🛠 实现 / Implementation | **清风** |
 | 🧭 顾问 / Advisor | **John** |
 
-🤖 协作 AI:Claude Opus 4.7(Anthropic)
+🤖 协作 AI:Claude (Anthropic)
 
 ---
 
@@ -30,9 +30,20 @@
 
 ![MBA · Metric Brand Auditor — 项目介绍封面](docs/screenshots/presentation.png)
 
-**样例报告 [Lenovo 0992.HK](https://mbabrand.com/reports/lenovo/)** · [PDF](https://mbabrand.com/reports/lenovo/report.pdf) · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
+**已发布报告（10 份）[mbabrand.com/reports/](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
 
-![Lenovo 审计报告 — 雷达图 / 异议热力图 / 影响力构造图](docs/screenshots/report-lenovo.png)
+| 品牌 | Panel | 总分 | 归一化 | 备注 |
+|---|---|---|---|---|
+| **Hermès 爱马仕** | luxury-en | 216/250 | **8.64** ★★★ | Identity 9.6 最高、Origin 9.0 最高、总分最高（三项历史纪录） |
+| **美团 Meituan** | vc-cn | 194/250 | 7.76 | MBA 首个双重★投资冲突（张磊★ + 沈南鹏★）；去★后 7.40 |
+| **Anthropic** | vc-en | 191/250 | 7.64 | Signal 8.8；Category 与 Leverage 双极分化 |
+| **DJI 大疆** | cross-border | 186/250 | 7.44 | Category/Signal 8.0；Identity 5.6，FCC 禁令暴露结构弱点 |
+| **Kimi 月之暗面** | ai-app-cn | 137/200 | 6.85 | Identity 7.5 历史首次领跑全维度 |
+| **元气森林** | consumer-cn | 162/250 | 6.48 | Identity 7.6（已被 Hermès 超越）× Signal 5.4 历史最低 |
+| **好未来 TAL** | edu-cn | 124/200 | 6.20 | MBA 史上首个"品类被政策摧毁后重建"案例 |
+| **橙仕汽车** | auto | 31/50 | 6.20 | 末端配送品牌，auto panel 初代报告 |
+| **奇安信** | security-cn-global | 185/300 | 6.17 | Identity 4.5 全卷最低；6 评委安全专业 panel |
+| **联想 Lenovo** | default | 22/50 | 4.40 | MBA 第一份报告（default panel 样例） |
 
 **黑客松 5 分钟 Pitch 稿** · [Markdown](docs/hackathon/pitch-5min.md) · [HTML](docs/hackathon/pitch-5min.html)
 
@@ -503,7 +514,7 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 
 - 想读流水线的人 → `metric-brand-auditor/SKILL.md`(主手册,~1000 行)
 - 想要系统化的设计 / 使用 / 扩展文档 → [`docs/`](docs/)(01-prd → 08-extending,索引见 `docs/README.md`)
-- 想看一个报告长啥样 → [`published/reports/lenovo/report.html`](published/reports/lenovo/) 或 `chengshi-auto`,或自己跑一次 `/mba <品牌>` 在 `reports/<slug>/` 生成
+- 想看已发布的报告 → [`mbabrand.com`](https://mbabrand.com)(10 份,含 Hermès / 美团 / Anthropic / DJI 等)或直接看 [`published/reports/`](published/reports/)
 - 想加一个新维度 → `metric-brand-auditor/references/dimensions.md`
 - 想改评委的打分模板 → `metric-brand-auditor/references/judge-prompt-template.md`
 - 想换 HTML 报告的图表样式 → `metric-brand-auditor/references/html-report-template.md`
@@ -517,7 +528,7 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 ## 许可与边界
 
 - Production 人物视角 skill 都基于**公开一手资料**(访谈、文章、播客 transcript),每套 SKILL.md 顶部有明确的 anti-fabrication 红线 + self-conflict 规则 —— 不替本人编造未公开内容;评委评自己强关联的公司 / 产品时默认 `--panel-drop`,保留则只作"创始人自检"不计入中立横评。
-- 运行时报告目录 `metric-brand-auditor/reports/` 默认在 `.gitignore`,跑完的报告归用户所有、不入版本库,需自行管理隐私。仅 `published/reports/<brand>/` 下经人工 review、显式 `git add -f` 的少量样例报告(如 lenovo / chengshi-auto)会公开。
+- 运行时报告目录 `metric-brand-auditor/reports/` 默认在 `.gitignore`,跑完的报告归用户所有、不入版本库,需自行管理隐私。仅 `published/reports/<brand>/` 下经人工 review、显式 `git add -f` 的报告会公开(当前已发布 10 份,见 `site/published-reports.txt`)。
 
 ---
 
