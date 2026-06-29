@@ -126,9 +126,18 @@ reports:
     brand_cn: 元气森林
     brand_en: Genki Forest
     panel: consumer-cn
-    status: pending
-    run_cmd: "/mba 元气森林 --panel consumer-cn"
-    tl_dr: "待生成"
+    version: v1
+    audit_date: 2026-06-28
+    score_total: 162
+    score_max: 250
+    score_normalized: 6.48
+    tl_dr: >-
+      中国 2016-2021 新消费浪潮品类创造力最强案例。"0糖0脂0卡"六字定义无糖气泡水品类，
+      日系视觉锤在货架极度差异化，三年营收增长约 7×。MBA 历史异常：
+      Identity 7.6（审计史最高）× Signal 5.4（审计史最低）——最强品牌系统遭遇
+      最难修复的诚信危机（2021 年"0糖"标注风波）。钟睒睒△（农夫山泉，直接竞对）
+      29/50 最低，江南春 36/50 最高。162/250 · 6.48/10。
+    has_pdf: false
 
   - slug: meituan
     brand_cn: 美团
