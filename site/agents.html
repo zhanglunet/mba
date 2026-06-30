@@ -478,7 +478,9 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
 
     <p style="margin-bottom:8px;"><strong>Hermes / OpenClaw / 任何支持 HTTP tool 的 framework</strong> —— 直接调。</p>
 
-    <p style="margin-bottom:8px;"><strong>MCP server</strong> —— 目前没出。如果 Claude Code 之外的 MCP 用户量起来,会在 Cloudflare Worker 上包一层 MCP server,复用现有 JSON 端点。</p>
+    <p style="margin-bottom:8px;"><strong>MCP server</strong> —— <code>mba-mcp-server</code> v0.1.0 已发布（本地运行，stdio transport）。安装方式：</p>
+    <pre style="margin:6px 0 10px;"><code style="background:none;padding:0;font-size:13px;">ANTHROPIC_API_KEY=sk-... npx mba-mcp-server</code></pre>
+    <p style="margin-bottom:8px;">提供 6 个 MCP 工具：<code>propose_audit</code>（生成 PRD）· <code>confirm_audit</code>（启动后台流水线）· <code>get_status</code>（轮询进度）· <code>fetch_report</code>（拉取报告 MD/HTML）· <code>list_audits</code>（列出历史审计）· <code>add_judge</code>（注册自定义评委 persona）。内置 5 位评委（傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣），可通过 <code>add_judge</code> 扩展。源码：<a href="https://github.com/zhanglunet/mba/tree/main/packages/mcp-server">packages/mcp-server/</a>。</p>
 
     <p style="margin-bottom:8px;"><strong>RAG ingest</strong> —— 直接拉 <code>/api/search.json</code>,扁平 corpus 就是给 client-side substring search 准备的;也适合直接灌 embedding。</p>
 

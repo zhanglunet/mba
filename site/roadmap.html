@@ -358,10 +358,10 @@
       <div class="value">✓ CI</div>
       <div class="note">report-validation.yml 已上线</div>
     </div>
-    <div class="status-card warn">
+    <div class="status-card ok">
       <div class="label">待实现功能</div>
-      <div class="value">1</div>
-      <div class="note">MCP Server（P3-A）；--dry-run · --panel-merge 已完成</div>
+      <div class="value">0</div>
+      <div class="note">MCP Server P3-A 框架 ✓；npm 发布待 PR-05</div>
     </div>
   </div>
 
@@ -692,21 +692,24 @@
     <div class="task-group-label">A · MCP Server 封装</div>
     <div class="task-list task-group">
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          确认 MCP Server 框架选型（设计草稿见 <code>docs/mcp-server-design.md</code>）
+          确认 MCP Server 框架选型：<code>@modelcontextprotocol/sdk</code> + TypeScript + stdio transport
+          <div class="note">packages/mcp-server/ · PR-01~03 完成架构 · commit cd2b9ce</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          实现核心工具：<code>run_audit()</code> · <code>list_panels()</code> · <code>get_report()</code>
+          实现 6 个核心工具：<code>propose_audit</code> · <code>confirm_audit</code> · <code>get_status</code> · <code>fetch_report</code> · <code>list_audits</code> · <code>add_judge</code>；Phase 2-5 完整编排
+          <div class="note">PR-04 · 22 tests passing · commit 069c5c4 · 2026-06-30</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           文档 + 示例调用 + site/agents.html 同步更新
+          <div class="note">2026-06-30</div>
         </div>
       </div>
     </div>
@@ -859,6 +862,25 @@
           <li>Git tag <code>v0.3.0</code>（本地创建，注释详述各面板首次运行状态）</li>
         </ul>
         <div class="log-commit">commit <a href="https://github.com/zhanglunet/mba/commit/e341eee" target="_blank">e341eee</a> · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-06-30</div>
+      <div class="log-tags">
+        <span class="badge done">P3-A 完成</span>
+        <span class="badge p3">MCP Server</span>
+      </div>
+      <div class="log-title">MCP Server v0.1.0 — Phase 2-5 完整编排上线</div>
+      <div class="log-body">
+        <ul>
+          <li><b>PR-01~03</b>：pnpm workspace 架构、类型系统（AuditState / 8 阶段生命周期）、FilesystemStore 原子写入、StateMachine、6 个工具框架（propose_audit / confirm_audit / get_status / fetch_report / list_audits / add_judge）</li>
+          <li><b>PR-04</b>：接通真实 LLM 调用 — <code>llm/client.ts</code>（Anthropic SDK 封装，3 次重试 429/5xx）、<code>llm/prompts.ts</code>（7 维度 + 合成 + 5 评委 + merge 全套 prompt 模板）、Phase 2-5 四个 orchestrator、<code>orchestrator/runner.ts</code>（非阻塞链式执行，cost guard，失败自动写 failed 状态）</li>
+          <li><code>confirm_audit</code> 现在真正启动后台 LLM 流水线，<code>get_status</code> 轮询进度；5 个内置评委（傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣）</li>
+          <li>22 tests passing，TypeScript zero errors</li>
+          <li>site/agents.html MCP 段落更新，roadmap P3-A 全部任务勾选</li>
+        </ul>
+        <div class="log-commit">commit <a href="https://github.com/zhanglunet/mba/commit/069c5c4" target="_blank">069c5c4</a> · branch claude/sharp-turing-496l8b</div>
       </div>
     </div>
 
