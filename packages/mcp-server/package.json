@@ -1,0 +1,37 @@
+{
+  "name": "mba-mcp-server",
+  "version": "0.1.0",
+  "description": "MBA (Metric Brand Auditor) — MCP server. Run /mba audits from any MCP-capable agent.",
+  "keywords": ["mcp", "brand", "audit", "anthropic", "claude"],
+  "author": "zhanglunet",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "mba-mcp-server": "./dist/index.js"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node scripts/add-shebang.js",
+    "dev": "tsc --watch -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "inspect": "node dist/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.25.64"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

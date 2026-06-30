@@ -1,0 +1,15 @@
+{
+  "name": "mba",
+  "private": true,
+  "version": "0.3.0",
+  "description": "Metric Brand Auditor — monorepo root",
+  "scripts": {
+    "build": "pnpm --filter './packages/*' build",
+    "test": "pnpm --filter './packages/*' test",
+    "dev": "pnpm --filter mba-mcp-server dev"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
