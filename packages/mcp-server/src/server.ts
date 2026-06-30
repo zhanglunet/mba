@@ -4,7 +4,9 @@ import { homedir } from 'node:os';
 import { join } from 'node:path';
 
 import { FilesystemStore } from './store/filesystem.js';
+import { SubscriptionStore } from './store/subscriptions.js';
 import { StateMachine } from './orchestrator/state-machine.js';
+import { CronScheduler } from './orchestrator/scheduler.js';
 import { runAudit } from './orchestrator/runner.js';
 import { LLMClient } from './llm/client.js';
 import { proposeAudit } from './tools/propose-audit.js';
@@ -12,6 +14,10 @@ import { getStatus } from './tools/get-status.js';
 import { fetchReport } from './tools/fetch-report.js';
 import { listAudits } from './tools/list-audits.js';
 import { addJudge } from './tools/add-judge.js';
+import { subscribeBrand } from './tools/subscribe-brand.js';
+import { triggerEvolution } from './tools/trigger-evolution.js';
+import { listSubscriptions } from './tools/list-subscriptions.js';
+import { unsubscribeBrand } from './tools/unsubscribe-brand.js';
 import type { ServerConfig } from './types.js';
 
 export function buildConfig(): ServerConfig {
@@ -40,6 +46,7 @@ export function createServer(): McpServer {
   const config = buildConfig();
   const log = makeLogger(config.log_level);
   const store = new FilesystemStore(config.store_dir);
+  const subStore = new SubscriptionStore(config.store_dir);
   const sm = new StateMachine(store, log);
   const judgesDir = join(config.store_dir, 'judges');
 
@@ -122,7 +129,6 @@ export function createServer(): McpServer {
         judgesDir,
       };
 
-      // Fire-and-forget: runner writes state.json as it progresses
       runAudit(next, store, sm, runnerConfig, client, log).catch(err => {
         log('error', `confirm_audit background runner crashed: ${err}`);
       });
@@ -215,6 +221,116 @@ export function createServer(): McpServer {
       };
     },
   );
+
+  // ── Tool: subscribe_brand ────────────────────────────────────────────────
+  server.registerTool(
+    'subscribe_brand',
+    {
+      description:
+        '订阅品牌自动演化追踪。支持 cron（定期）、webhook（外部推送）触发器。触发时自动启动 EVOLUTION 模式重审。',
+      inputSchema: {
+        brand: z.string().min(1).describe('品牌名'),
+        panel: z.string().optional().describe('评委面板（默认 default）'),
+        triggers: z
+          .array(
+            z.object({
+              type: z.enum(['cron', 'webhook', 'keyword', 'news']),
+              config: z.record(z.unknown()).optional(),
+            }),
+          )
+          .optional()
+          .describe('触发器列表（默认 cron interval_days:7）'),
+        notify: z
+          .array(
+            z.object({
+              type: z.enum(['webhook', 'email', 'mcp-push']),
+              url: z.string().optional(),
+              address: z.string().optional(),
+            }),
+          )
+          .optional()
+          .describe('推送目标列表'),
+        min_interval_days: z.number().positive().optional().default(7),
+        max_per_month: z.number().positive().optional().default(4),
+      },
+    },
+    async (input) => {
+      const result = await subscribeBrand(input, subStore);
+      return {
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
+      };
+    },
+  );
+
+  // ── Tool: trigger_evolution ──────────────────────────────────────────────
+  server.registerTool(
+    'trigger_evolution',
+    {
+      description:
+        '手动触发品牌 EVOLUTION 模式重审（比较上次基线）。cadence guard 默认生效，可用 force:true 跳过。',
+      inputSchema: {
+        brand: z.string().min(1),
+        event_type: z
+          .string()
+          .optional()
+          .describe('触发类型（product_launch / executive_change / negative_event / …）'),
+        event_summary: z.string().optional().describe('事件摘要（可选，写入 log）'),
+        source_url: z.string().optional(),
+        force: z.boolean().optional().default(false).describe('跳过 cadence guard'),
+      },
+    },
+    async (input) => {
+      const apiKey = process.env['ANTHROPIC_API_KEY'];
+      if (!apiKey) throw new Error('MISSING_API_KEY: set ANTHROPIC_API_KEY env var');
+      const client = new LLMClient(apiKey);
+      const runnerConfig = { maxParallel: config.max_parallel, judgesDir };
+      const result = await triggerEvolution(input, store, subStore, sm, runnerConfig, client, log);
+      return {
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
+      };
+    },
+  );
+
+  // ── Tool: list_subscriptions ─────────────────────────────────────────────
+  server.registerTool(
+    'list_subscriptions',
+    {
+      description: '列出所有活跃品牌订阅及其触发器、最近触发时间。',
+      inputSchema: {},
+    },
+    async () => {
+      const result = await listSubscriptions(subStore);
+      return {
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
+      };
+    },
+  );
+
+  // ── Tool: unsubscribe_brand ──────────────────────────────────────────────
+  server.registerTool(
+    'unsubscribe_brand',
+    {
+      description: '删除品牌订阅，停止自动触发。',
+      inputSchema: {
+        subscription_id: z.string().describe('list_subscriptions 返回的 subscription_id'),
+      },
+    },
+    async (input) => {
+      const result = await unsubscribeBrand(input, subStore);
+      return {
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
+      };
+    },
+  );
+
+  // ── Start cron scheduler ─────────────────────────────────────────────────
+  const apiKey = process.env['ANTHROPIC_API_KEY'];
+  if (apiKey) {
+    const schedulerClient = new LLMClient(apiKey);
+    const runnerConfig = { maxParallel: config.max_parallel, judgesDir };
+    const scheduler = new CronScheduler(subStore, store, sm, runnerConfig, schedulerClient, log);
+    scheduler.start();
+  }
 
   return server;
 }

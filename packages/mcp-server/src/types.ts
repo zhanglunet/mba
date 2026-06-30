@@ -30,6 +30,104 @@ export interface AuditOptions {
   skip_wuying: boolean;
   language: 'zh' | 'en' | 'auto';
   max_cost_usd?: number;
+  previous_audit_id?: string;
+}
+
+// ── Subscription / Evolution tracking ────────────────────────────────────────
+
+export interface CronTriggerConfig {
+  interval_days: number;
+  run_at?: string; // HH:MM UTC
+}
+
+export interface KeywordTriggerConfig {
+  brand_aliases: string[];
+  signal_words: string[];
+  poll_interval_hours: number;
+}
+
+export interface Trigger {
+  type: 'keyword' | 'cron' | 'webhook' | 'news';
+  config: CronTriggerConfig | KeywordTriggerConfig | Record<string, unknown>;
+}
+
+export interface NotifyTarget {
+  type: 'webhook' | 'email' | 'mcp-push';
+  url?: string;
+  address?: string;
+}
+
+export interface Subscription {
+  id: string;
+  brand: string;
+  brand_slug: string;
+  panel: string;
+  triggers: Trigger[];
+  notify: NotifyTarget[];
+  cadence: {
+    min_interval_days: number;
+    max_per_month: number;
+  };
+  created_at: string;
+  last_triggered_at?: string;
+  last_audit_id?: string;
+  trigger_count_this_month: number;
+  month_reset_at: string;
+  active: boolean;
+}
+
+export interface SubscribeBrandInput {
+  brand: string;
+  panel?: string;
+  triggers?: Array<{ type: string; config?: Record<string, unknown> }>;
+  notify?: Array<{ type: string; url?: string; address?: string }>;
+  min_interval_days?: number;
+  max_per_month?: number;
+}
+
+export interface SubscribeBrandOutput {
+  subscription_id: string;
+  brand: string;
+  panel: string;
+  triggers: Trigger[];
+  message: string;
+}
+
+export interface TriggerEvolutionInput {
+  brand: string;
+  event_type?: string;
+  event_summary?: string;
+  source_url?: string;
+  force?: boolean;
+}
+
+export interface TriggerEvolutionOutput {
+  audit_id: string;
+  phase: AuditPhase;
+  message: string;
+  skipped?: boolean;
+  skip_reason?: string;
+}
+
+export interface ListSubscriptionsOutput {
+  subscriptions: Array<{
+    subscription_id: string;
+    brand: string;
+    panel: string;
+    triggers: Trigger[];
+    active: boolean;
+    last_triggered_at?: string;
+    last_audit_id?: string;
+  }>;
+}
+
+export interface UnsubscribeBrandInput {
+  subscription_id: string;
+}
+
+export interface UnsubscribeBrandOutput {
+  unsubscribed: boolean;
+  subscription_id: string;
 }
 
 export interface AuditError {
