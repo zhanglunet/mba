@@ -5,6 +5,8 @@ import { join } from 'node:path';
 
 import { FilesystemStore } from './store/filesystem.js';
 import { StateMachine } from './orchestrator/state-machine.js';
+import { runAudit } from './orchestrator/runner.js';
+import { LLMClient } from './llm/client.js';
 import { proposeAudit } from './tools/propose-audit.js';
 import { getStatus } from './tools/get-status.js';
 import { fetchReport } from './tools/fetch-report.js';
@@ -108,8 +110,22 @@ export function createServer(): McpServer {
         state.options.max_cost_usd = input.max_cost_usd;
       }
 
+      const apiKey = process.env['ANTHROPIC_API_KEY'];
+      if (!apiKey) throw new Error('MISSING_API_KEY: set ANTHROPIC_API_KEY env var');
+
       const next = await sm.transition(state, 'researching');
-      log('info', `confirm_audit: ${input.audit_id} → researching (orchestration not yet implemented)`);
+
+      const client = new LLMClient(apiKey);
+      const runnerConfig = {
+        maxParallel: config.max_parallel,
+        maxCostUsd: state.options.max_cost_usd,
+        judgesDir,
+      };
+
+      // Fire-and-forget: runner writes state.json as it progresses
+      runAudit(next, store, sm, runnerConfig, client, log).catch(err => {
+        log('error', `confirm_audit background runner crashed: ${err}`);
+      });
 
       return {
         content: [
@@ -118,8 +134,7 @@ export function createServer(): McpServer {
             text: JSON.stringify({
               audit_id: next.audit_id,
               phase: next.phase,
-              message:
-                'Audit started. Poll get_status for progress. (Phase 2-5 orchestration coming in next release.)',
+              message: 'Audit started. Poll get_status for progress.',
             }),
           },
         ],
