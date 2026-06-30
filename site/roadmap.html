@@ -717,16 +717,36 @@
     <div class="task-group-label">B · 报告订阅 / 品牌演化追踪</div>
     <div class="task-list task-group">
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          设计触发机制（webhook / cron / 新闻监控）
-          <div class="note">品牌发布新产品、高管变动、负面事件后自动触发 EVOLUTION 模式</div>
+          设计触发机制（webhook / cron / keyword / news RSS）
+          <div class="note">设计文档 <a href="/docs/12-evolution-tracking.md"><code>docs/12-evolution-tracking.md</code></a> 完成 · 2026-06-30 · 4 种触发器 + delta 报告格式 + 5 个新 MCP 工具</div>
         </div>
       </div>
       <div class="task-item">
         <div class="task-check"></div>
         <div class="task-text">
-          实现订阅-触发-审计-发布完整闭环
+          P3-B-1：<code>subscribe_brand</code> + <code>trigger_evolution</code> + cron 触发器
+          <div class="note">前置：P3-A v0.1.0 ✓</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          P3-B-2：delta 报告生成（score diff + 变化叙述 + <code>get_delta_report</code> 工具）
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          P3-B-3：keyword / news RSS 触发器
+          <div class="note">阻断：Wuying Pro GetLink() 抓取中文内容（免费版返回 400）</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check"></div>
+        <div class="task-text">
+          P3-B-4：webhook 接收端 + notify 推送（webhook / email）
         </div>
       </div>
     </div>

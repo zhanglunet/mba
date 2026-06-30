@@ -54,11 +54,11 @@ See [`docs/mcp-server-design.md`](../../docs/mcp-server-design.md) for full arch
 
 ## Status
 
-**v0.1.0 — PR-01+02+03 scope**  
+**v0.1.0 — complete**  
 - ✅ Project scaffold (TypeScript, vitest, MCP SDK)  
 - ✅ State machine with all valid transitions  
 - ✅ Filesystem store with atomic writes  
 - ✅ `propose_audit` + `confirm_audit` + `get_status` + `fetch_report` + `list_audits` + `add_judge` tools  
 - ✅ Judge persona validator  
-- ⏳ Phase 2-5 orchestration (next PR)  
-- ⏳ npm publish  
+- ✅ Phase 2-5 LLM orchestration — 22 tests passing  
+- ⏳ npm publish (PR-05)  

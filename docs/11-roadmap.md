@@ -20,7 +20,7 @@
 | 集成测试 | ✅ 已建立 | report-validation.yml（validate_report.py + validate_html_report.py） |
 | --dry-run 标志 | ✅ 已实现 | Phase 0 §0.5 dry-run exit |
 | --panel-merge 标志 | ✅ 已实现 | Phase 5M 跨面板对比流程 |
-| MCP Server 形态 | ❌ 未实现 | 设计稿在 mcp-server-design.md |
+| MCP Server 形态 | ✅ v0.1.0 完成 | packages/mcp-server/ · 6 工具 · Phase 2-5 编排 · 22 tests |
 
 ### 评委全档分布（v0.2.36）
 
@@ -140,27 +140,29 @@
 
 ### 优先级 P3 — 未来形态
 
-#### P3-A：MCP Server 封装
+#### P3-A：MCP Server 封装 ✅ 完成（2026-06-30）
 
-**文档**：`docs/mcp-server-design.md`（已有完整设计草稿）  
-**前置条件**：P0/P1 评委档案质量达标，流水线稳定  
-**核心工具暴露**：
+**包**：`packages/mcp-server/` · **npm**：`mba-mcp-server@0.1.0`  
+**工具**：`propose_audit` · `confirm_audit` · `get_status` · `fetch_report` · `list_audits` · `add_judge`  
+**内置评委**：傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣  
+**测试**：22 tests passing · TypeScript zero errors
 
-```
-run_audit(brand, panel, quick, refresh) → report_url
-list_panels() → panels[]
-get_report(brand) → report_md
-```
-
-- [ ] 确认 MCP Server 框架选型
-- [ ] 实现 tool 定义和路由
-- [ ] 文档 + 示例调用
+- [x] 确认 MCP Server 框架选型（`@modelcontextprotocol/sdk` + TypeScript + stdio）
+- [x] 实现 6 个核心工具 + Phase 2-5 完整 LLM 编排
+- [x] 文档 + 示例调用 + site/agents.html 同步
 
 #### P3-B：报告订阅 / 品牌演化追踪
 
 **目标**：用户订阅某品牌，当品牌有重大新闻时自动触发 EVOLUTION 模式重新审计  
+**设计文档**：`docs/12-evolution-tracking.md`（2026-06-30）  
 **场景**：品牌发布新产品、高管变动、负面事件后自动更新报告  
-**依赖**：需要外部触发机制（webhook / cron）
+**新增 MCP 工具**：`subscribe_brand` · `trigger_evolution` · `list_subscriptions` · `get_delta_report` · `unsubscribe_brand`
+
+- [x] 设计触发机制（keyword / news RSS / cron / webhook）
+- [ ] P3-B-1：`subscribe_brand` + `trigger_evolution` + cron 触发器
+- [ ] P3-B-2：delta 报告生成（score diff + 变化叙述）
+- [ ] P3-B-3：keyword / news 触发器（阻断：Wuying Pro）
+- [ ] P3-B-4：webhook 接收端 + notify 推送
 
 ---
 
@@ -256,5 +258,19 @@ get_report(brand) → report_md
 **commit**：待推送
 
 ---
+
+---
+
+### 2026-06-30
+
+**事项**：P3-A MCP Server v0.1.0 全量完成 + P3-B 设计文档  
+**完成内容**：
+- PR-01~03：pnpm workspace 架构、TypeScript 8 阶段状态机、FilesystemStore 原子写入、6 工具框架
+- PR-04：Phase 2-5 LLM 完整编排（llm/client.ts 重试逻辑、llm/prompts.ts 全套 prompt、四个 orchestrator、runner.ts 非阻塞链式执行 + cost guard）；22 tests passing，TypeScript zero errors
+- PR-05 文件：scripts/add-shebang.js，README.md 状态更新，site/api/install.json 新增 MCP server 条目
+- P3-B 设计文档 docs/12-evolution-tracking.md：4 种触发器（keyword/news/cron/webhook）、增量维度重跑方案、5 个新 MCP 工具设计、存储结构扩展
+- roadmap.html + agents.html + docs/11-roadmap.md 同步更新
+
+**commit**：069c5c4（PR-04）· c18c465（文档）· 待推送（PR-05 + P3-B）
 
 <!-- 在此追加后续进度记录，格式参考上方 -->

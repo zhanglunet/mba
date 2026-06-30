@@ -16,6 +16,21 @@
       "name": "GitHub (manual)",
       "url": "https://github.com/zhanglunet/mba",
       "description": "Clone the repo and point Claude Code's skills directory at metric-brand-auditor/ + perspectives/."
+    },
+    {
+      "name": "MCP server (npx)",
+      "package": "mba-mcp-server",
+      "description": "Run audits from Claude Desktop, Cursor, or any MCP-capable agent. Requires ANTHROPIC_API_KEY.",
+      "config_example": {
+        "mcpServers": {
+          "mba": {
+            "command": "npx",
+            "args": ["-y", "mba-mcp-server@latest"],
+            "env": { "ANTHROPIC_API_KEY": "sk-ant-..." }
+          }
+        }
+      },
+      "tools": ["propose_audit", "confirm_audit", "get_status", "fetch_report", "list_audits", "add_judge"]
     }
   ],
   "requirements": [
