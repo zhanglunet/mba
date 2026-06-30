@@ -328,30 +328,30 @@
 
   <h1>开发路线图</h1>
   <p class="sub">Development Roadmap &amp; Progress Log · 持续更新</p>
-  <div class="version-chip">当前版本 v0.2.38 · 快照 2026-06-25</div>
+  <div class="version-chip">当前版本 v0.3.0 · 快照 2026-06-30</div>
 
   <!-- ── 状态快照 ── -->
   <h2>当前状态快照</h2>
   <div class="status-grid">
     <div class="status-card ok">
       <div class="label">流水线</div>
-      <div class="value">v0.2.38</div>
+      <div class="value">v0.3.0</div>
       <div class="note">Phase 0-5 + Phase 5M 稳定，生产就绪</div>
     </div>
     <div class="status-card ok">
       <div class="label">评委面板</div>
       <div class="value">10 / 10</div>
-      <div class="note">全部面板可运行</div>
+      <div class="note">全部面板可运行，各有首份发布报告</div>
     </div>
     <div class="status-card warn">
       <div class="label">评委全档</div>
       <div class="value">15 / 43</div>
-      <div class="note">28 人待深化（seed 层）</div>
+      <div class="note">28 人待深化（seed 层）；P0-A 下一步</div>
     </div>
-    <div class="status-card warn">
+    <div class="status-card ok">
       <div class="label">公开报告</div>
-      <div class="value">2 + 8</div>
-      <div class="note">Lenovo · 成市 Auto；8 品牌建档待审计</div>
+      <div class="value">10 / 10</div>
+      <div class="note">全部 10 套面板各 1 份，P2-B ✓</div>
     </div>
     <div class="status-card ok">
       <div class="label">集成测试</div>
@@ -361,7 +361,7 @@
     <div class="status-card warn">
       <div class="label">待实现功能</div>
       <div class="value">1</div>
-      <div class="note">MCP Server（--dry-run · --panel-merge 已完成）</div>
+      <div class="note">MCP Server（P3-A）；--dry-run · --panel-merge 已完成</div>
     </div>
   </div>
 
@@ -665,10 +665,10 @@
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           运行完整审计并发布到 <code>published/reports/</code>
-          <div class="note">需要在 Claude Code 会话中逐一运行 <code>/mba {品牌} --panel {panel}</code>；依赖 Wuying 可用性</div>
+          <div class="note">已完成：全部 8 品牌审计报告发布（2026-06-26 至 2026-06-28）</div>
         </div>
       </div>
       <div class="task-item">
@@ -838,6 +838,27 @@
           <li>待后续运行真实审计后，补充 report.md / report.html，更新 published-reports.txt，移除 pending status</li>
         </ul>
         <div class="log-commit">commit 待推送 · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-06-26 — 2026-06-28</div>
+      <div class="log-tags">
+        <span class="badge done">P2-B 全部完成</span>
+        <span class="badge p2">报告扩充</span>
+      </div>
+      <div class="log-title">10 套面板首份报告全部发布 · v0.3.0 里程碑</div>
+      <div class="log-body">
+        <ul>
+          <li><b>2026-06-26</b>：奇安信（security-cn-global · 185/300 · 6.17）、Kimi 月之暗面（ai-app-cn · 137/200 · 6.85）、Anthropic（vc-en · 191/250 · 7.64）、DJI 大疆（cross-border · 186/250 · 7.44）</li>
+          <li><b>2026-06-28</b>：好未来 TAL（edu-cn · 124/200 · 6.20）、元气森林（consumer-cn · 162/250 · 6.48）、美团 Meituan（vc-cn · 194/250 · 7.76）、Hermès 爱马仕（luxury-en · 216/250 · 8.64）</li>
+          <li>MBA 历史纪录 3 项同次创立（Hermès）：Identity 9.6 最高 · Origin 9.0 最高 · 总分 8.64/10 最高</li>
+          <li>MBA 首个双重★投资冲突案例（美团：张磊★高瓴 + 沈南鹏★红杉）</li>
+          <li>MBA 首个"品类被政策摧毁后重建"案例（好未来：双减 2021 → AI 重建）</li>
+          <li>文档更新：README.md 加入 10 份报告汇总表，site/index.html 加统计条 + 计数，site/agents.html 报告数量修正</li>
+          <li>Git tag <code>v0.3.0</code>（本地创建，注释详述各面板首次运行状态）</li>
+        </ul>
+        <div class="log-commit">commit <a href="https://github.com/zhanglunet/mba/commit/e341eee" target="_blank">e341eee</a> · branch claude/sharp-turing-496l8b</div>
       </div>
     </div>
 
