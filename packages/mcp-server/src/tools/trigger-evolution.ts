@@ -87,11 +87,14 @@ export async function triggerEvolution(
 
   // Create EVOLUTION audit state
   const audit_id = makeAuditId(brand_slug);
+  const evolutionContext = input.event_summary
+    ? `${input.event_type ?? 'event'}: ${input.event_summary}${input.source_url ? ` (${input.source_url})` : ''}`
+    : undefined;
   const options: AuditOptions = {
     skip_wuying: false,
     language: 'auto',
     previous_audit_id: previousAuditId,
-    ...(sub?.cadence.max_per_month ? {} : {}),
+    ...(evolutionContext ? { evolution_context: evolutionContext } : {}),
   };
 
   const state: AuditState = {

@@ -131,13 +131,17 @@ Notify
 
 ---
 
-## 5. EVOLUTION 模式优化（维度差分）
+## 5. EVOLUTION 模式优化（维度差分）✅ 已实现（2026-07-02）
 
 全量重跑 7 维度成本高（~$3/次）。EVOLUTION 模式改为**增量重跑**：
 
-1. **维度变化检测**：对每个维度运行轻量"变化探针"（单次调用，约 300 tokens），询问"近期有无新证据影响本维度评分？"
-2. **只重跑标记为变化的维度**（预期 2-4 个），合成 + 评委 + merge 阶段正常运行
-3. **成本估算**：探针 7×$0.001 + 重跑 3×$0.15 = ~$0.46/次（vs 全量 ~$3）
+1. **维度变化检测**：对每个维度运行轻量"变化探针"（单次调用，256 tokens），返回 `VERDICT: CHANGED|UNCHANGED` + 一句理由。触发事件（`trigger_evolution` 的 `event_summary`）会通过 `options.evolution_context` 喂给探针，让"新品发布"这类信号精准命中相关维度
+2. **只重跑标记为变化的维度**，`UNCHANGED` 维度直接复用上次 `_raw/dimension_N_slug.md`，合成 + 评委 + merge 阶段正常运行
+3. **成本估算**：探针 7×~$0.001 + 重跑 2-4×~$0.15 = ~$0.3-0.6/次（vs 全量 ~$3，省 80%+）
+4. **保守回退**：探针响应无法解析时默认 `CHANGED`（重研究比用陈旧数据更安全）；上次无对应维度文件时也走全量研究
+5. **透明度**：每次演化写 `_raw/evolution_probes.md`，逐维记录 verdict + 复用/重研究状态
+
+**实现**：`src/orchestrator/phase-2-evolution.ts`（`runPhase2Evolution`）；`runner.ts` 在 `mode === 'evolution' && previous_audit_id` 时自动切到此路径；`llm/prompts.ts` 的 `changeProbeSystemPrompt` / `changeProbeUserPrompt`。测试：`tests/orchestrator/phase-2-evolution.test.ts`（5 例）。
 
 ---
 

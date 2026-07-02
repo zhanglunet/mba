@@ -3,6 +3,7 @@ import type { FilesystemStore } from '../store/filesystem.js';
 import type { StateMachine } from './state-machine.js';
 import type { LLMClient } from '../llm/client.js';
 import { runPhase2Research } from './phase-2-research.js';
+import { runPhase2Evolution } from './phase-2-evolution.js';
 import { runPhase3Synthesis } from './phase-3-synthesis.js';
 import { runPhase4Judging } from './phase-4-judging.js';
 import { runPhase5Merge } from './phase-5-merge.js';
@@ -48,7 +49,13 @@ export async function runAudit(
 
   try {
     // ── Phase 2: Research ───────────────────────────────────────────────────
-    const phase2 = await runPhase2Research(state, store, client, config.maxParallel, log);
+    // EVOLUTION mode with a baseline → incremental probe-then-rerun (cheaper).
+    // Otherwise → full fresh research of all dimensions.
+    const previousAuditId = state.options.previous_audit_id;
+    const phase2 =
+      state.mode === 'evolution' && previousAuditId
+        ? await runPhase2Evolution(state, previousAuditId, store, client, config.maxParallel, log)
+        : await runPhase2Research(state, store, client, config.maxParallel, log);
     checkCostLimit(phase2.total_input_tokens, phase2.total_output_tokens);
 
     state = await sm.transition(state, 'synthesizing');

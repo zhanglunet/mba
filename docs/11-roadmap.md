@@ -163,6 +163,7 @@
 - [x] 设计触发机制（keyword / news RSS / cron / webhook）
 - [x] P3-B-1：`subscribe_brand` + `trigger_evolution` + `list_subscriptions` + `unsubscribe_brand` + CronScheduler（2026-06-30，commit 61fb801，34 tests）
 - [x] P3-B-2：delta 报告生成（`get_delta_report` + `scores.json` 结构化打分 + per-lens 均值差 + LLM 变化叙述，2026-07-02，47 tests）
+- [x] P3-B-5（成本优化）：EVOLUTION 增量维度重跑 —— 变化探针只重跑变了的维度，成本 ~$3 → ~$0.3-0.6/次（省 80%+），2026-07-02，52 tests
 - [ ] P3-B-4：webhook 接收端 + notify 推送（webhook out / email）← **下一步（无阻断）**
 - [ ] P3-B-3：keyword / news 触发器（**阻断**：Wuying Pro GetLink）
 
@@ -285,6 +286,24 @@
 - **P3-B-2**（本次）：`get_delta_report` 工具 —— 新增 `src/orchestrator/scores.ts`（从 judge review 解析结构化打分，英文 lens 名作锚点，中英文都能解析）；Phase 4 生成时持久化 `scores.json`；delta 计算 per-lens 均值差 + LLM 变化叙述；旧 audit 无 scores.json 时从 reviews/ 重建；`FilesystemStore.listFiles` 辅助方法；47 tests passing
 - MCP Server 现共 **11 个工具**（6 核心 + 4 订阅 + 1 delta）
 - 同步修正 docs/11-roadmap.md 中 P2-B / P3-B-1 的 stale 勾选状态
+
+**commit**：a185b9c（P3-B-2）
+
+---
+
+### 2026-07-02（续）
+
+**事项**：EVOLUTION 增量维度重跑（成本优化）  
+**完成内容**：
+- `src/orchestrator/phase-2-evolution.ts`（`runPhase2Evolution`）：演化审计时先用廉价"变化探针"（256 tokens）逐维判断 CHANGED/UNCHANGED，只重跑变了的维度，UNCHANGED 直接复用上次 `_raw/dimension_N_slug.md`
+- `llm/prompts.ts`：`changeProbeSystemPrompt` / `changeProbeUserPrompt`；触发事件通过 `options.evolution_context` 喂给探针
+- `runner.ts`：`mode === 'evolution' && previous_audit_id` 时自动切到增量路径，否则全量研究
+- `trigger-evolution.ts`：把 `event_type + event_summary + source_url` 组装成 `evolution_context` 写入 audit options
+- 保守回退：探针无法解析 → 默认 CHANGED；无基线维度文件 → 全量研究
+- 透明度：写 `_raw/evolution_probes.md` 逐维记录
+- **成本**：~$3/次 → ~$0.3-0.6/次（省 80%+）
+- 测试：52 tests passing（新增 5），TypeScript zero errors
+- docs/12-evolution-tracking.md §5 标记已实现
 
 **commit**：待推送
 

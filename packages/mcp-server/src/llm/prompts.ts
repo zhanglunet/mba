@@ -49,6 +49,53 @@ Produce a structured research note covering:
 Target length: 400-800 words. Be specific and cite sources.`;
 }
 
+// ── Phase 2E: Evolution change probe ─────────────────────────────────────────
+
+export function changeProbeSystemPrompt(): string {
+  return `You are a change-detection analyst for an MBA (Metric Brand Auditor) EVOLUTION re-audit.
+
+You are given a brand, one dimension, and the PREVIOUS research note for that dimension. Optionally you are given a triggering event.
+
+Your ONLY job: decide whether this dimension likely needs fresh research, i.e. whether material new evidence would change its assessment since the previous note.
+
+Be conservative but decisive. Respond in EXACTLY this format, nothing else:
+
+VERDICT: CHANGED
+REASON: <one sentence>
+
+or
+
+VERDICT: UNCHANGED
+REASON: <one sentence>
+
+Rules:
+- If a triggering event is provided and plausibly touches this dimension → CHANGED
+- If the dimension is inherently slow-moving (e.g. founding narrative) and no event touches it → UNCHANGED
+- When genuinely uncertain, prefer CHANGED (re-research is safer than stale data)`;
+}
+
+export function changeProbeUserPrompt(
+  brand: string,
+  dim: typeof DIMENSIONS[number],
+  previousResearch: string,
+  eventContext?: string,
+): string {
+  const eventBlock = eventContext
+    ? `## Triggering event\n\n${eventContext}\n\n`
+    : '## Triggering event\n\n(none — scheduled/periodic re-audit)\n\n';
+
+  return `Brand: **${brand}**
+Dimension: **${dim.title} / ${dim.title_en}**
+
+${eventBlock}## Previous research note (excerpt)
+
+${previousResearch.slice(0, 2000)}
+
+---
+
+Does this dimension need fresh research? Respond in the exact VERDICT/REASON format.`;
+}
+
 // ── Phase 3: Synthesis ───────────────────────────────────────────────────────
 
 export function synthesisSystemPrompt(): string {

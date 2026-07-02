@@ -31,6 +31,7 @@ export interface AuditOptions {
   language: 'zh' | 'en' | 'auto';
   max_cost_usd?: number;
   previous_audit_id?: string;
+  evolution_context?: string;
 }
 
 // ── Subscription / Evolution tracking ────────────────────────────────────────
