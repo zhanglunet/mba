@@ -51,6 +51,13 @@ export class FilesystemStore {
     return entries.filter(e => e.isDirectory()).map(e => e.name);
   }
 
+  async listFiles(auditId: string, subdir: string): Promise<string[]> {
+    const dir = join(this.auditDir(auditId), subdir);
+    if (!existsSync(dir)) return [];
+    const entries = await readdir(dir, { withFileTypes: true });
+    return entries.filter(e => e.isFile()).map(e => e.name);
+  }
+
   async exists(auditId: string): Promise<boolean> {
     return existsSync(this.statePath(auditId));
   }

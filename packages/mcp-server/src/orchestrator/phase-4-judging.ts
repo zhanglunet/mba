@@ -1,7 +1,8 @@
-import type { AuditState } from '../types.js';
+import type { AuditState, JudgeScores } from '../types.js';
 import type { FilesystemStore } from '../store/filesystem.js';
 import type { LLMClient } from '../llm/client.js';
 import { judgeSystemPrompt, judgeUserPrompt } from '../llm/prompts.js';
+import { parseJudgeScores, aggregateScores } from './scores.js';
 
 const DEFAULT_JUDGES = ['fusheng', 'jobs', 'likejia', 'wu-jundong', 'zhang-yiming'];
 
@@ -61,6 +62,23 @@ export async function runPhase4Judging(
 
   if (Object.keys(reviews).length === 0) {
     throw new Error('JUDGING_FAILED: all judges failed to score');
+  }
+
+  // Persist structured scores for delta/evolution comparisons
+  const judgeScores: JudgeScores[] = [];
+  for (const [slug, content] of Object.entries(reviews)) {
+    const parsed = parseJudgeScores(slug, content);
+    if (parsed) judgeScores.push(parsed);
+    else log('warn', `[${state.audit_id}] Could not parse scores for judge '${slug}'`);
+  }
+  if (judgeScores.length > 0) {
+    const auditScores = aggregateScores(
+      state.audit_id,
+      state.brand,
+      new Date().toISOString(),
+      judgeScores,
+    );
+    await store.writeFile(state.audit_id, 'scores.json', JSON.stringify(auditScores, null, 2));
   }
 
   return { reviews, total_input_tokens, total_output_tokens };

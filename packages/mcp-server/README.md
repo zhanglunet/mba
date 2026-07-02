@@ -22,6 +22,8 @@ Then in Claude: *"用 mba 审一下 OpenClaw"* → Claude calls `propose_audit` 
 
 ## Tools
 
+**Core audit**
+
 | Tool | Description |
 |---|---|
 | `propose_audit` | Generate PRD for a brand, returns `audit_id` |
@@ -30,6 +32,18 @@ Then in Claude: *"用 mba 审一下 OpenClaw"* → Claude calls `propose_audit` 
 | `fetch_report` | Pull finished report (markdown / html / both) |
 | `list_audits` | List all audits in `MBA_STORE_DIR` |
 | `add_judge` | Register a custom judge persona |
+
+**Evolution tracking** (P3-B)
+
+| Tool | Description |
+|---|---|
+| `subscribe_brand` | Subscribe a brand for auto re-audit (cron / webhook triggers) |
+| `trigger_evolution` | Manually fire an EVOLUTION re-audit (cadence-guarded) |
+| `list_subscriptions` | List active subscriptions |
+| `unsubscribe_brand` | Remove a subscription |
+| `get_delta_report` | Compare two audits — per-lens score delta + narrative |
+
+An internal `CronScheduler` polls subscriptions and fires overdue cron triggers automatically (started when `ANTHROPIC_API_KEY` is set).
 
 ## Environment variables
 

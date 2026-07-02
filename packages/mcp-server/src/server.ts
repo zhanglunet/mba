@@ -18,6 +18,7 @@ import { subscribeBrand } from './tools/subscribe-brand.js';
 import { triggerEvolution } from './tools/trigger-evolution.js';
 import { listSubscriptions } from './tools/list-subscriptions.js';
 import { unsubscribeBrand } from './tools/unsubscribe-brand.js';
+import { getDeltaReport } from './tools/get-delta-report.js';
 import type { ServerConfig } from './types.js';
 
 export function buildConfig(): ServerConfig {
@@ -317,6 +318,35 @@ export function createServer(): McpServer {
     },
     async (input) => {
       const result = await unsubscribeBrand(input, subStore);
+      return {
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
+      };
+    },
+  );
+
+  // ── Tool: get_delta_report ───────────────────────────────────────────────
+  server.registerTool(
+    'get_delta_report',
+    {
+      description:
+        '对比两次审计（新 vs 旧基线）的评分变化，产出 delta 报告（per-lens 均值差 + 变化叙述）。previous_audit_id 缺省时自动找同品牌上一份 done 审计。',
+      inputSchema: {
+        audit_id: z.string().describe('新审计 audit_id'),
+        previous_audit_id: z
+          .string()
+          .optional()
+          .describe('基线 audit_id（缺省自动查找同品牌上一份）'),
+        narrative: z
+          .boolean()
+          .optional()
+          .default(true)
+          .describe('是否生成 LLM 变化叙述（需 ANTHROPIC_API_KEY）'),
+      },
+    },
+    async (input) => {
+      const apiKey = process.env['ANTHROPIC_API_KEY'];
+      const client = apiKey ? new LLMClient(apiKey) : null;
+      const result = await getDeltaReport(input, store, client, log);
       return {
         content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
       };

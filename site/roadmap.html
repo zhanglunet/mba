@@ -724,16 +724,17 @@
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          P3-B-1：<code>subscribe_brand</code> + <code>trigger_evolution</code> + cron 触发器
-          <div class="note">前置：P3-A v0.1.0 ✓</div>
+          P3-B-1：<code>subscribe_brand</code> + <code>trigger_evolution</code> + <code>list_subscriptions</code> + <code>unsubscribe_brand</code> + CronScheduler
+          <div class="note">commit 61fb801 · 2026-06-30 · cadence guard + 月度上限 · 34 tests</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          P3-B-2：delta 报告生成（score diff + 变化叙述 + <code>get_delta_report</code> 工具）
+          P3-B-2：delta 报告生成（<code>get_delta_report</code> + <code>scores.json</code> 结构化打分 + per-lens 均值差 + LLM 变化叙述）
+          <div class="note">2026-07-02 · 中英文 judge review 解析 · 47 tests</div>
         </div>
       </div>
       <div class="task-item">
@@ -882,6 +883,23 @@
           <li>Git tag <code>v0.3.0</code>（本地创建，注释详述各面板首次运行状态）</li>
         </ul>
         <div class="log-commit">commit <a href="https://github.com/zhanglunet/mba/commit/e341eee" target="_blank">e341eee</a> · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-02</div>
+      <div class="log-tags">
+        <span class="badge done">P3-B-1+2 完成</span>
+        <span class="badge p3">演化追踪</span>
+      </div>
+      <div class="log-title">品牌订阅 + 演化触发 + delta 报告上线（MCP 11 工具）</div>
+      <div class="log-body">
+        <ul>
+          <li><b>P3-B-1</b>（commit 61fb801）：4 个新工具 <code>subscribe_brand</code> / <code>trigger_evolution</code> / <code>list_subscriptions</code> / <code>unsubscribe_brand</code>；<code>SubscriptionStore</code> JSON 持久化；<code>CronScheduler</code> setInterval 轮询到期订阅并 fire-and-forget 触发演化；cadence guard（min_interval_days + max_per_month 月度上限）</li>
+          <li><b>P3-B-2</b>：<code>get_delta_report</code> 工具 + <code>src/orchestrator/scores.ts</code>（从 judge review 解析结构化打分，英文 lens 名作锚点，中英文都能解析）；Phase 4 生成时持久化 <code>scores.json</code>；per-lens 均值差 + LLM 变化叙述；旧 audit 无 scores.json 时从 reviews/ 重建</li>
+          <li>MCP Server 现共 <b>11 个工具</b>（6 核心 + 4 订阅 + 1 delta）；47 tests passing，TypeScript zero errors</li>
+        </ul>
+        <div class="log-commit">commit 61fb801 + 待推送 · branch claude/sharp-turing-496l8b</div>
       </div>
     </div>
 

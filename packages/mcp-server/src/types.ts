@@ -130,6 +130,46 @@ export interface UnsubscribeBrandOutput {
   subscription_id: string;
 }
 
+// ── Scores / Delta reports ───────────────────────────────────────────────────
+
+export interface JudgeScores {
+  judge: string;
+  lenses: Record<string, number>;
+  total: number;
+}
+
+export interface AuditScores {
+  audit_id: string;
+  brand: string;
+  generated_at: string;
+  judges: JudgeScores[];
+  means: Record<string, number>;
+  overall_mean: number;
+}
+
+export interface LensDelta {
+  lens: string;
+  old_mean: number;
+  new_mean: number;
+  delta: number;
+}
+
+export interface GetDeltaReportInput {
+  audit_id: string;
+  previous_audit_id?: string;
+  narrative?: boolean;
+}
+
+export interface GetDeltaReportOutput {
+  audit_id: string;
+  previous_audit_id: string;
+  brand: string;
+  overall_delta: number;
+  lens_deltas: LensDelta[];
+  delta_markdown: string;
+  narrative?: string;
+}
+
 export interface AuditError {
   phase: string;
   code: string;

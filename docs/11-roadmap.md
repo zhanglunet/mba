@@ -132,9 +132,11 @@
 
 - [x] 选定 8 个品牌（每面板 1 个）
 - [x] 建档：`published/reports/*/panel.yaml` × 8 + `site/reports-meta.yaml` 8 条 pending 条目
-- [ ] 运行完整审计（需 Claude Code 会话 + Wuying 可用）
-- [ ] 发布到 `published/reports/`（报告生成后移除 pending status）
-- [ ] 更新 `site/published-reports.txt`（待审计完成后补充）
+- [x] 运行完整审计（10 份报告全部产出，2026-06-26 ~ 06-28）
+- [x] 发布到 `published/reports/`（10 个品牌 report.html 齐全）
+- [x] 更新 `site/published-reports.txt`（10 个 slug 全部列入白名单）
+
+**✅ P2-B 全部完成**：10 面板各 1 份公开报告，Hermès 创 MBA 三项史上最高（Identity 9.6 / Origin 9.0 / 总分 8.64）。
 
 ---
 
@@ -159,10 +161,10 @@
 **新增 MCP 工具**：`subscribe_brand` · `trigger_evolution` · `list_subscriptions` · `get_delta_report` · `unsubscribe_brand`
 
 - [x] 设计触发机制（keyword / news RSS / cron / webhook）
-- [ ] P3-B-1：`subscribe_brand` + `trigger_evolution` + cron 触发器
-- [ ] P3-B-2：delta 报告生成（score diff + 变化叙述）
-- [ ] P3-B-3：keyword / news 触发器（阻断：Wuying Pro）
-- [ ] P3-B-4：webhook 接收端 + notify 推送
+- [x] P3-B-1：`subscribe_brand` + `trigger_evolution` + `list_subscriptions` + `unsubscribe_brand` + CronScheduler（2026-06-30，commit 61fb801，34 tests）
+- [x] P3-B-2：delta 报告生成（`get_delta_report` + `scores.json` 结构化打分 + per-lens 均值差 + LLM 变化叙述，2026-07-02，47 tests）
+- [ ] P3-B-4：webhook 接收端 + notify 推送（webhook out / email）← **下一步（无阻断）**
+- [ ] P3-B-3：keyword / news 触发器（**阻断**：Wuying Pro GetLink）
 
 ---
 
@@ -272,5 +274,18 @@
 - roadmap.html + agents.html + docs/11-roadmap.md 同步更新
 
 **commit**：069c5c4（PR-04）· c18c465（文档）· 待推送（PR-05 + P3-B）
+
+---
+
+### 2026-07-02
+
+**事项**：P3-B-1 订阅+触发落地 + P3-B-2 delta 报告  
+**完成内容**：
+- **P3-B-1**（commit 61fb801）：4 个新 MCP 工具（`subscribe_brand` / `trigger_evolution` / `list_subscriptions` / `unsubscribe_brand`）+ `SubscriptionStore` JSON 持久化 + `CronScheduler`（setInterval 轮询到期订阅，fire-and-forget 触发演化）；cadence guard（min_interval_days + max_per_month）；34 tests
+- **P3-B-2**（本次）：`get_delta_report` 工具 —— 新增 `src/orchestrator/scores.ts`（从 judge review 解析结构化打分，英文 lens 名作锚点，中英文都能解析）；Phase 4 生成时持久化 `scores.json`；delta 计算 per-lens 均值差 + LLM 变化叙述；旧 audit 无 scores.json 时从 reviews/ 重建；`FilesystemStore.listFiles` 辅助方法；47 tests passing
+- MCP Server 现共 **11 个工具**（6 核心 + 4 订阅 + 1 delta）
+- 同步修正 docs/11-roadmap.md 中 P2-B / P3-B-1 的 stale 勾选状态
+
+**commit**：待推送
 
 <!-- 在此追加后续进度记录，格式参考上方 -->
