@@ -131,8 +131,9 @@ mba/
 │   └── wuying/                      ← 阿里云无影 AgentBay helper + smoke test
 ├── assets/judges/                   ← 评委插画头像(严禁真人照片)
 ├── published/reports/               ← 已确认可公开发布的报告源(显式 git add -f 才入库)
+├── packages/mcp-server/             ← mba-mcp-server:MBA 的 MCP 封装(TypeScript,11 工具,67 tests)
 ├── site/                            ← mbabrand.com 的源:index.html + build.sh(Cloudflare Pages)
-├── docs/                            ← 完整设计文档 01-08 + mcp-server-design + hackathon 资料
+├── docs/                            ← 完整设计文档 01-13 + mcp-server-design + hackathon 资料
 ├── .github/workflows/panel-validation.yml ← CI:校验 panel / 结构 / py_compile / shell / site build
 └── .env.example / .env              WUYING_API_KEY 配置(.env 不入库)
 ```
@@ -483,6 +484,27 @@ overrides:                      # 可选 —— 在 panel 之上的局部调整
 ```
 
 也可以单独调任何一个 perspective skill 做"一句话点评"(`/fusheng-perspective ...`)—— 那走的是单视角通道,不触发 MBA 流水线。
+
+### 5.1 MCP Server —— 从任何 MCP agent 调 MBA
+
+除了 Claude Code skill,MBA 还封装成了 **MCP server**(`mba-mcp-server`,TypeScript,stdio),可接进 Claude Desktop / Cursor / 任何 MCP 客户端:
+
+```jsonc
+// claude_desktop_config.json
+{
+  "mcpServers": {
+    "mba": {
+      "command": "npx",
+      "args": ["-y", "mba-mcp-server@latest"],
+      "env": { "ANTHROPIC_API_KEY": "sk-ant-..." }
+    }
+  }
+}
+```
+
+然后直接说"用 mba 审一下 Anthropic",agent 会走 `propose_audit → confirm_audit → get_status → fetch_report`。共 **11 个工具**(6 核心审计 + 5 演化追踪),支持**品牌订阅 + 自动重审 + delta 报告 + webhook/email 通知**——品牌有变化时自动重审并推送。增量重跑让演化审计成本从 ~$3 降到 ~$0.4/次。
+
+完整用法见 [`docs/13-mcp-quickstart.md`](docs/13-mcp-quickstart.md);源码与开发/发布说明见 [`packages/mcp-server/`](packages/mcp-server)。
 
 ---
 
