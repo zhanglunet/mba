@@ -337,6 +337,22 @@
 - 测试用临时 store dir + stubEnv（无 API key，不起 scheduler、不发真实 LLM 调用），确定性、无网络
 - 测试：67 tests passing（新增 7），TypeScript zero errors
 
+**commit**：33ba200
+
+---
+
+### 2026-07-02（续四）
+
+**事项**：npm 发布准备（拿到 token 即可一键 publish）  
+**完成内容**：
+- 验证 `pnpm build` 产出干净：全量 `.js` + `.d.ts`，`dist/index.js` 带 shebang + 可执行位，`node dist/index.js` 能起 stdio server
+- `npm pack --dry-run`：34.5 kB / 65 文件，仅含 dist/ + README + LICENSE + package.json（`files` 白名单生效，无源码/测试泄漏）
+- 新增 `LICENSE`（MIT，© 2026 zhanglunet，随包发布）
+- package.json 补发布质量字段：`homepage` / `repository`（含 directory）/ `bugs` / `publishConfig.access=public`
+- 新增 `prepublishOnly` 守卫：`typecheck && test && build`（67 tests 全绿才允许 publish，杜绝发布坏包）
+- README 加 Publishing 小节（登录 + publish + 版本 bump 步骤）
+- **唯一剩余阻断**：npm token + 出站网络（此环境无）；本地一切就绪
+
 **commit**：待推送
 
 <!-- 在此追加后续进度记录，格式参考上方 -->

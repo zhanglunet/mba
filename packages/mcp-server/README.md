@@ -85,6 +85,21 @@ drives the real `createServer()` over an in-memory MCP transport with an actual
 
 See [`docs/mcp-server-design.md`](../../docs/mcp-server-design.md) for full architecture.
 
+## Publishing
+
+The package is publish-ready. Once you have an npm token with publish rights:
+
+```bash
+cd packages/mcp-server
+npm login                 # or: npm config set //registry.npmjs.org/:_authToken=<token>
+npm publish               # prepublishOnly runs typecheck + 67 tests + build first
+```
+
+- `prepublishOnly` gates publish on a green typecheck, full test run, and a fresh build — a broken tree cannot be published.
+- `files` ships only `dist/`, `README.md`, `LICENSE` (verify with `npm pack --dry-run`).
+- `publishConfig.access: public` — no scope, published publicly.
+- Bump `version` in `package.json` before each release (`npm version patch|minor|major`).
+
 ## Status
 
 **v0.1.0 — complete · 11 tools · 67 tests**  

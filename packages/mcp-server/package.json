@@ -5,12 +5,24 @@
   "keywords": ["mcp", "brand", "audit", "anthropic", "claude"],
   "author": "zhanglunet",
   "license": "MIT",
+  "homepage": "https://mbabrand.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanglunet/mba.git",
+    "directory": "packages/mcp-server"
+  },
+  "bugs": {
+    "url": "https://github.com/zhanglunet/mba/issues"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
     "mba-mcp-server": "./dist/index.js"
   },
-  "files": ["dist", "README.md"],
+  "files": ["dist", "README.md", "LICENSE"],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.build.json && node scripts/add-shebang.js",
     "dev": "tsc --watch -p tsconfig.json",
@@ -18,7 +30,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
-    "inspect": "node dist/index.js"
+    "inspect": "node dist/index.js",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",
