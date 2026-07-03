@@ -1,5 +1,5 @@
 {
-  "count": 69,
+  "count": 77,
   "items": [
     {
       "type": "report",
@@ -16,6 +16,70 @@
       "text": "末端配送生产力品牌:场景切口清晰,真实应用信号增强,但服务数据透明度 和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50, 综合分 6.2/10。",
       "url": "/reports/chengshi-auto/",
       "api_url": "/api/reports/chengshi-auto.json"
+    },
+    {
+      "type": "report",
+      "slug": "anthropic",
+      "title": "Anthropic · v1",
+      "text": "从\"被嘲笑的矛盾命题\"到 $965B IPO 估值——vc-en 5 位评委对起源真实性（8.4） 和市场信号（8.8）高度共识，但在 Category（Thiel 5 vs Hoffman 8）和 Leverage （Thiel 6 vs Naval 9）存在核心分歧，揭示 0→1 品类创造 vs 1→n 卓越执行的根本张力。 Total: 191/250 · 7.64/10。",
+      "url": "/reports/anthropic/",
+      "api_url": "/api/reports/anthropic.json"
+    },
+    {
+      "type": "report",
+      "slug": "dji",
+      "title": "大疆创新 · v1",
+      "text": "中国出海硬科技天花板：70%+ 全球无人机份额、$3.5B 营收、品类创造者地位无争议。 cross-border 5 位评委对 Category（8.0）和 Signal（8.0）高度共识， 但 Identity 均值仅 5.6 ——极致产品力背后叙事层几乎空白， 美国 FCC 禁令将这一结构性弱点暴露为生死考场。186/250 · 7.44/10。",
+      "url": "/reports/dji/",
+      "api_url": "/api/reports/dji.json"
+    },
+    {
+      "type": "report",
+      "slug": "qianxin",
+      "title": "奇安信 · v1",
+      "text": "中国政务安全市场无可置疑的领导者，80%+ 中央部委客户、67亿RMB营收、科创板上市。 security-cn-global 6位评委对 Leverage（均值7.0）基本共识，但 Identity（均值4.5） 全卷最低——政务工具标签在国内是护城河，在国际市场是障碍。 最大分歧：马斯克（22/50，监管护城河非真正杠杆）vs 任正非（37/50，国家数字主权基础设施价值极高）。 185/300 · 6.17/10。",
+      "url": "/reports/qianxin/",
+      "api_url": "/api/reports/qianxin.json"
+    },
+    {
+      "type": "report",
+      "slug": "kimichat",
+      "title": "Kimi / 月之暗面 · v1",
+      "text": "中国 AI 创业浪潮品牌质感最好的独立公司：Kimi 命名全卷最优，杨植麟学术背书无可复制。 ai-app-cn 4 位评委（杨植麟自冲突排除）历史首次出现 Identity（均值 7.5）领跑全维度—— 品牌系统强于业务信号的罕见模式。最大弱点 Leverage（均值 6.0）：字节 Doubao 的分发生态是 结构性鸿沟，非产品迭代可弥补。朱啸虎★（A轮投资方）37/50 为最高分，周鸿祎 31/50 为最低。 137/200 · 6.85/10。",
+      "url": "/reports/kimichat/",
+      "api_url": "/api/reports/kimichat.json"
+    },
+    {
+      "type": "report",
+      "slug": "tal-education",
+      "title": "好未来 · v1",
+      "text": "中国教育行业 20 年积累的品牌标杆，MBA 审计史上首个\"品类被政策摧毁后重建\"案例。 双减（2021）将核心 K9 课外辅导强制消灭，市值蒸发 90%+；但学习数据、学而思品牌信任、 教研质量三项核心资产在 AI 时代提供了真实重建基础。edu-cn 4 位评委（张邦鑫自冲突排除）： Origin 7.3 最高（草根叙事真实），Category 5.5 最低（原品类消灭）。 最大分歧：俞敏洪△品类 4 分 vs 萨尔曼·可汗 7 分——\"残局\"框架 vs \"数据壁垒\"框架对撞。 124/200 · 6.20/10。",
+      "url": "/reports/tal-education/",
+      "api_url": "/api/reports/tal-education.json"
+    },
+    {
+      "type": "report",
+      "slug": "genki-forest",
+      "title": "元气森林 · v1",
+      "text": "中国 2016-2021 新消费浪潮品类创造力最强案例。\"0糖0脂0卡\"六字定义无糖气泡水品类， 日系视觉锤在货架极度差异化，三年营收增长约 7×。MBA 历史异常： Identity 7.6（审计史最高）× Signal 5.4（审计史最低）——最强品牌系统遭遇 最难修复的诚信危机（2021 年\"0糖\"标注风波）。钟睒睒△（农夫山泉，直接竞对） 29/50 最低，江南春 36/50 最高。162/250 · 6.48/10。",
+      "url": "/reports/genki-forest/",
+      "api_url": "/api/reports/genki-forest.json"
+    },
+    {
+      "type": "report",
+      "slug": "meituan",
+      "title": "美团 · v1",
+      "text": "中国本地生活服务无可争议的领导者，MBA 审计史最高分（7.76/10）——但需在双重投资冲突背景下解读： 张磊★（高瓴，42/50）和沈南鹏★（红杉，41/50）是 MBA 首个双重★冲突案例。 Origin（8.4）和 Signal（8.4）并列最高，千团大战幸存叙事真实，276B RMB营收+盈利转正信号极清晰； Identity（6.4）揭示功能品牌叙事空白——无创始人IP、无用户社群、无情感叙事。 去除两位★评委后为 111/150 · 7.40/10。194/250 · 7.76/10。",
+      "url": "/reports/meituan/",
+      "api_url": "/api/reports/meituan.json"
+    },
+    {
+      "type": "report",
+      "slug": "hermes",
+      "title": "爱马仕 · v1",
+      "text": "MBA 审计史三项纪录同次创立：Identity 9.6（最高，超越元气森林7.6 +2.0）、Origin 9.0（最高）、 总分8.64/10（最高，清洁纪录，仅 Arnault△ 竞争披露）。 luxury-en 5位评委：最戏剧性冲突——Bernard Arnault△（LVMH，2010-2014恶意收购发起者）为被收购目标的品牌力量打分， 给出40/50最低分，却依然无法低于40。Cucinelli 46/50最高：工艺信仰者对工艺信仰品牌的最高致敬。 \"拒绝本身即品牌\"——拒绝收购、拒绝授权、拒绝廉价线、拒绝增长冲动，每一次拒绝强化 True Luxury 品类定义。 216/250 · 8.64/10。",
+      "url": "/reports/hermes/",
+      "api_url": "/api/reports/hermes.json"
     },
     {
       "type": "panel",

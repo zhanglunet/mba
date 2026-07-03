@@ -1,0 +1,19 @@
+{
+  "slug": "dji",
+  "brand_cn": "大疆创新",
+  "brand_en": "DJI",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-06-26",
+  "panel": "cross-border",
+  "score": {
+    "total": 186,
+    "max": 250,
+    "normalized": 7.44
+  },
+  "tl_dr": "中国出海硬科技天花板：70%+ 全球无人机份额、$3.5B 营收、品类创造者地位无争议。 cross-border 5 位评委对 Category（8.0）和 Signal（8.0）高度共识， 但 Identity 均值仅 5.6 ——极致产品力背后叙事层几乎空白， 美国 FCC 禁令将这一结构性弱点暴露为生死考场。186/250 · 7.44/10。",
+  "html_url": "/reports/dji/",
+  "pdf_url": null,
+  "api_url": "/api/reports/dji.json",
+  "panel_api_url": "/api/panels/cross-border.json"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "anthropic",
+  "brand_cn": "Anthropic",
+  "brand_en": "Anthropic (Claude)",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-06-26",
+  "panel": "vc-en",
+  "score": {
+    "total": 191,
+    "max": 250,
+    "normalized": 7.64
+  },
+  "tl_dr": "从\"被嘲笑的矛盾命题\"到 $965B IPO 估值——vc-en 5 位评委对起源真实性（8.4） 和市场信号（8.8）高度共识，但在 Category（Thiel 5 vs Hoffman 8）和 Leverage （Thiel 6 vs Naval 9）存在核心分歧，揭示 0→1 品类创造 vs 1→n 卓越执行的根本张力。 Total: 191/250 · 7.64/10。",
+  "html_url": "/reports/anthropic/",
+  "pdf_url": null,
+  "api_url": "/api/reports/anthropic.json",
+  "panel_api_url": "/api/panels/vc-en.json"
+}

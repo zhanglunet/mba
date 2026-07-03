@@ -25,12 +25,29 @@
         "mcpServers": {
           "mba": {
             "command": "npx",
-            "args": ["-y", "mba-mcp-server@latest"],
-            "env": { "ANTHROPIC_API_KEY": "sk-ant-..." }
+            "args": [
+              "-y",
+              "mba-mcp-server@latest"
+            ],
+            "env": {
+              "ANTHROPIC_API_KEY": "sk-ant-..."
+            }
           }
         }
       },
-      "tools": ["propose_audit", "confirm_audit", "get_status", "fetch_report", "list_audits", "add_judge"]
+      "tools": [
+        "propose_audit",
+        "confirm_audit",
+        "get_status",
+        "fetch_report",
+        "list_audits",
+        "add_judge",
+        "subscribe_brand",
+        "trigger_evolution",
+        "list_subscriptions",
+        "unsubscribe_brand",
+        "get_delta_report"
+      ]
     }
   ],
   "requirements": [

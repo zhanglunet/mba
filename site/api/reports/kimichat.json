@@ -1,0 +1,19 @@
+{
+  "slug": "kimichat",
+  "brand_cn": "Kimi / 月之暗面",
+  "brand_en": "Kimi (Moonshot AI)",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-06-26",
+  "panel": "ai-app-cn",
+  "score": {
+    "total": 137,
+    "max": 200,
+    "normalized": 6.85
+  },
+  "tl_dr": "中国 AI 创业浪潮品牌质感最好的独立公司：Kimi 命名全卷最优，杨植麟学术背书无可复制。 ai-app-cn 4 位评委（杨植麟自冲突排除）历史首次出现 Identity（均值 7.5）领跑全维度—— 品牌系统强于业务信号的罕见模式。最大弱点 Leverage（均值 6.0）：字节 Doubao 的分发生态是 结构性鸿沟，非产品迭代可弥补。朱啸虎★（A轮投资方）37/50 为最高分，周鸿祎 31/50 为最低。 137/200 · 6.85/10。",
+  "html_url": "/reports/kimichat/",
+  "pdf_url": null,
+  "api_url": "/api/reports/kimichat.json",
+  "panel_api_url": "/api/panels/ai-app-cn.json"
+}
