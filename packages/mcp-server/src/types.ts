@@ -171,6 +171,24 @@ export interface GetDeltaReportOutput {
   narrative?: string;
 }
 
+// ── Notifications ────────────────────────────────────────────────────────────
+
+export interface NotifyPayload {
+  event: string;
+  brand: string;
+  audit_id: string;
+  previous_audit_id?: string;
+  overall_delta?: number;
+  summary: string;
+  delta_markdown?: string;
+}
+
+export interface NotifyResult {
+  target: string;
+  ok: boolean;
+  detail?: string;
+}
+
 export interface AuditError {
   phase: string;
   code: string;

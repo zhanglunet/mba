@@ -11,6 +11,8 @@ import type { LLMClient } from '../llm/client.js';
 import type { RunnerConfig } from '../orchestrator/runner.js';
 import { runAudit } from '../orchestrator/runner.js';
 import { makeAuditId, slugify } from '../orchestrator/state-machine.js';
+import { getDeltaReport } from './get-delta-report.js';
+import { dispatchNotifications } from '../notify/dispatch.js';
 
 const DEFAULT_PANEL = 'default';
 
@@ -138,8 +140,51 @@ export async function triggerEvolution(
     : '';
   log('info', `[${audit_id}] Evolution triggered for ${input.brand}${eventDesc}`);
 
+  // On completion: compute delta vs baseline and push notifications to the
+  // subscription's notify targets (best-effort — hook errors don't fail the audit).
+  const notifyTargets = sub?.notify ?? [];
+  const onComplete = async (finalState: AuditState): Promise<void> => {
+    if (notifyTargets.length === 0) return;
+
+    let summary = `${finalState.brand}: evolution audit ${finalState.audit_id} complete`;
+    let overall_delta: number | undefined;
+    let previous_audit_id: string | undefined = previousAuditId;
+    let delta_markdown: string | undefined;
+
+    if (previousAuditId) {
+      try {
+        const delta = await getDeltaReport(
+          { audit_id: finalState.audit_id, previous_audit_id: previousAuditId, narrative: true },
+          store,
+          client,
+          log,
+        );
+        overall_delta = delta.overall_delta;
+        previous_audit_id = delta.previous_audit_id;
+        delta_markdown = delta.delta_markdown;
+        summary = `${finalState.brand}: overall ${delta.overall_delta >= 0 ? '+' : ''}${delta.overall_delta} vs ${delta.previous_audit_id}`;
+      } catch (err) {
+        log('warn', `[${finalState.audit_id}] delta computation failed, notifying without delta: ${err}`);
+      }
+    }
+
+    await dispatchNotifications(
+      notifyTargets,
+      {
+        event: 'mba.evolution.done',
+        brand: finalState.brand,
+        audit_id: finalState.audit_id,
+        previous_audit_id,
+        overall_delta,
+        summary,
+        delta_markdown,
+      },
+      log,
+    );
+  };
+
   // Fire-and-forget
-  runAudit(next, store, sm, runnerConfig, client, log).catch(err => {
+  runAudit(next, store, sm, runnerConfig, client, log, onComplete).catch(err => {
     log('error', `Evolution runner crashed for ${audit_id}: ${err}`);
   });
 

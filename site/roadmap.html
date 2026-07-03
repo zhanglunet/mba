@@ -738,16 +738,31 @@
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check blocked"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
-          P3-B-3：keyword / news RSS 触发器
-          <div class="note">阻断：Wuying Pro GetLink() 抓取中文内容（免费版返回 400）</div>
+          P3-B-5（成本优化）：EVOLUTION 增量维度重跑 —— 变化探针只重跑变了的维度
+          <div class="note">2026-07-02 · 成本 ~$3 → ~$0.3-0.6/次（省 80%+）· 事件精准命中维度 · 52 tests</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check done"></div>
+        <div class="task-text">
+          P3-B-4a：notify 推送出站（webhook POST + Resend email + mcp-push）
+          <div class="note">2026-07-02 · 审计完成自动算 delta 并推送 · best-effort 逐 target 容错 · 60 tests</div>
         </div>
       </div>
       <div class="task-item">
         <div class="task-check"></div>
         <div class="task-text">
-          P3-B-4：webhook 接收端 + notify 推送（webhook / email）
+          P3-B-4b：webhook <b>接收端</b>（外部推送触发）
+          <div class="note">需长运行 HTTP daemon（MCP 是 stdio transport）</div>
+        </div>
+      </div>
+      <div class="task-item">
+        <div class="task-check blocked"></div>
+        <div class="task-text">
+          P3-B-3：keyword / news RSS 触发器
+          <div class="note">阻断：Wuying Pro GetLink() 抓取中文内容（免费版返回 400）</div>
         </div>
       </div>
     </div>

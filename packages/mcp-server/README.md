@@ -54,6 +54,21 @@ An internal `CronScheduler` polls subscriptions and fires overdue cron triggers 
 | `MBA_MAX_PARALLEL` | `5` | Max concurrent sub-agents per audit |
 | `MBA_MAX_CONCURRENT_AUDITS` | `3` | Max simultaneous audits |
 | `MBA_LOG_LEVEL` | `info` | `error / warn / info / debug / trace` |
+| `MBA_RESEND_API_KEY` | *(optional)* | [Resend](https://resend.com) API key — enables email notifications |
+| `MBA_NOTIFY_FROM` | *(optional)* | From-address for email notifications (required with Resend key) |
+
+### Notifications
+
+When an evolution audit (via `trigger_evolution` or the cron scheduler) finishes,
+the server automatically computes the delta vs. the baseline and pushes it to the
+subscription's `notify` targets:
+
+- **`webhook`** — HTTP POST of the delta payload (`event: "mba.evolution.done"`) to your URL
+- **`email`** — sent via Resend (needs `MBA_RESEND_API_KEY` + `MBA_NOTIFY_FROM`)
+- **`mcp-push`** — served passively; just poll `get_status` / `get_delta_report`
+
+Delivery is best-effort and per-target: one failing target never blocks the others,
+and notification errors never fail the audit itself.
 
 ## Development
 

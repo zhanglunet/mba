@@ -176,22 +176,42 @@ Notify
 
 ---
 
+## 7.5 通知推送（notify）✅ 已实现（2026-07-02）
+
+演化审计完成后（`trigger_evolution` 或 cron scheduler 触发），runner 的 `onComplete`
+钩子自动算 delta 并推送到订阅的 notify targets：
+
+- **`webhook`**：HTTP POST delta payload（`event: "mba.evolution.done"` + brand/audit_id/overall_delta/summary/delta_markdown）到指定 URL，10s 超时
+- **`email`**：通过 Resend API 发送（需 `MBA_RESEND_API_KEY` + `MBA_NOTIFY_FROM`），未配置时静默跳过
+- **`mcp-push`**：被动服务，客户端轮询 `get_status` / `get_delta_report` 即可
+
+**容错**：每个 target 独立投递（`Promise` 逐个 await），单个失败不影响其他；通知错误
+不会导致审计失败（best-effort，`onComplete` 包在 try/catch 内）。
+
+**实现**：`src/notify/{webhook,email,dispatch}.ts`；`runner.ts` 的 `onComplete` 可选参数；
+`trigger-evolution.ts` 构造 onComplete（算 delta → dispatchNotifications）。
+测试：`tests/notify/dispatch.test.ts`（8 例，mock fetch）。
+
+---
+
 ## 8. 实现优先级
 
-| 阶段 | 内容 | 估时 |
+| 阶段 | 内容 | 状态 |
 |---|---|---|
-| P3-B-1 | `subscribe_brand` + `trigger_evolution` + cron 触发器 | 1-2 天 |
-| P3-B-2 | delta 报告生成（score diff + 叙述） | 1 天 |
-| P3-B-3 | keyword / news RSS 触发器 | 1-2 天 |
-| P3-B-4 | webhook 接收端 + notify 推送 | 1 天 |
+| P3-B-1 | `subscribe_brand` + `trigger_evolution` + cron 触发器 | ✅ 完成 2026-06-30 |
+| P3-B-2 | delta 报告生成（score diff + 叙述） | ✅ 完成 2026-07-02 |
+| P3-B-5 | EVOLUTION 增量维度重跑（成本优化） | ✅ 完成 2026-07-02 |
+| P3-B-4a | notify 推送（webhook out + email） | ✅ 完成 2026-07-02 |
+| P3-B-4b | webhook **接收端**（外部推送触发） | ⏳ 待做（需长运行 HTTP daemon） |
+| P3-B-3 | keyword / news RSS 触发器 | ⛔ 阻断（Wuying Pro） |
 
 ---
 
 ## 9. 阻断项
 
 - **Wuying Pro**：keyword 触发器依赖 GetLink() 抓取中文内容，免费版返回 400
-- **部署环境**：cron/webhook 需要长运行进程（本地 Node.js daemon 或 Cloudflare Workers Cron Triggers）
-- **邮件推送**：需要 SMTP 或 Resend API key
+- **webhook 接收端**：需要长运行 HTTP 进程（MCP 是 stdio transport，接收端需独立 daemon 或 Cloudflare Workers）——notify **出站**已实现，**入站**待做
+- **邮件推送**：已接 Resend，需用户提供 `MBA_RESEND_API_KEY`
 
 ---
 

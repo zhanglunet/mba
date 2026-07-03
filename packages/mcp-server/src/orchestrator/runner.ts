@@ -29,6 +29,7 @@ export async function runAudit(
   config: RunnerConfig,
   client: LLMClient,
   log: (level: string, msg: string) => void,
+  onComplete?: (finalState: AuditState) => Promise<void>,
 ): Promise<void> {
   const id = state.audit_id;
   let totalInputTokens = 0;
@@ -93,6 +94,15 @@ export async function runAudit(
 
     await sm.transition(state, 'done');
     log('info', `[${id}] Audit complete — report.md written`);
+
+    // Post-completion hook (e.g. delta computation + notifications). Best-effort.
+    if (onComplete) {
+      try {
+        await onComplete(state);
+      } catch (hookErr) {
+        log('error', `[${id}] onComplete hook failed: ${hookErr}`);
+      }
+    }
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
     log('error', `[${id}] Audit failed: ${msg}`);

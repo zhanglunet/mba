@@ -164,7 +164,8 @@
 - [x] P3-B-1：`subscribe_brand` + `trigger_evolution` + `list_subscriptions` + `unsubscribe_brand` + CronScheduler（2026-06-30，commit 61fb801，34 tests）
 - [x] P3-B-2：delta 报告生成（`get_delta_report` + `scores.json` 结构化打分 + per-lens 均值差 + LLM 变化叙述，2026-07-02，47 tests）
 - [x] P3-B-5（成本优化）：EVOLUTION 增量维度重跑 —— 变化探针只重跑变了的维度，成本 ~$3 → ~$0.3-0.6/次（省 80%+），2026-07-02，52 tests
-- [ ] P3-B-4：webhook 接收端 + notify 推送（webhook out / email）← **下一步（无阻断）**
+- [x] P3-B-4a：notify 推送出站（webhook POST + Resend email + mcp-push），审计完成自动算 delta 并推送，best-effort 容错，2026-07-02，60 tests
+- [ ] P3-B-4b：webhook **接收端**（外部推送触发）—— 需长运行 HTTP daemon
 - [ ] P3-B-3：keyword / news 触发器（**阻断**：Wuying Pro GetLink）
 
 ---
@@ -304,6 +305,24 @@
 - **成本**：~$3/次 → ~$0.3-0.6/次（省 80%+）
 - 测试：52 tests passing（新增 5），TypeScript zero errors
 - docs/12-evolution-tracking.md §5 标记已实现
+
+**commit**：4931e1e
+
+---
+
+### 2026-07-02（续二）
+
+**事项**：P3-B-4a notify 推送出站  
+**完成内容**：
+- `src/notify/webhook.ts`：`sendWebhook` —— fetch POST JSON，10s 超时，网络错误捕获进结果不抛出
+- `src/notify/email.ts`：`sendEmail` —— Resend API（需 `MBA_RESEND_API_KEY` + `MBA_NOTIFY_FROM`），未配置静默返回
+- `src/notify/dispatch.ts`：`dispatchNotifications` —— 逐个 target 独立投递（webhook/email/mcp-push），单个失败不影响其他
+- `runner.ts`：新增可选 `onComplete(finalState)` 钩子，'done' 后 best-effort 调用（try/catch 包裹）
+- `trigger-evolution.ts`：构造 onComplete —— 有基线时算 delta（getDeltaReport）→ dispatchNotifications；无基线时推送简单摘要
+- README + docs/12 §7.5 补通知说明和环境变量
+- 测试：60 tests passing（新增 8，mock global fetch + stubEnv），TypeScript zero errors
+
+**闭环打通**：品牌变化 → trigger_evolution → 增量重审 → 算 delta → webhook/email 主动通知
 
 **commit**：待推送
 
