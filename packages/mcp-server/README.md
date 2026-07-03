@@ -74,20 +74,27 @@ and notification errors never fail the audit itself.
 
 ```bash
 pnpm install          # from repo root
-pnpm test             # run vitest
+pnpm test             # run vitest (unit + e2e)
 pnpm typecheck        # tsc --noEmit
 pnpm build            # compile to dist/
 ```
+
+Tests include an end-to-end suite (`tests/integration/server.e2e.test.ts`) that
+drives the real `createServer()` over an in-memory MCP transport with an actual
+`Client`, verifying tool registration and request/response wiring for all 11 tools.
 
 See [`docs/mcp-server-design.md`](../../docs/mcp-server-design.md) for full architecture.
 
 ## Status
 
-**v0.1.0 — complete**  
+**v0.1.0 — complete · 11 tools · 67 tests**  
 - ✅ Project scaffold (TypeScript, vitest, MCP SDK)  
 - ✅ State machine with all valid transitions  
 - ✅ Filesystem store with atomic writes  
-- ✅ `propose_audit` + `confirm_audit` + `get_status` + `fetch_report` + `list_audits` + `add_judge` tools  
+- ✅ 6 core tools + Phase 2-5 LLM orchestration  
 - ✅ Judge persona validator  
-- ✅ Phase 2-5 LLM orchestration — 22 tests passing  
-- ⏳ npm publish (PR-05)  
+- ✅ Evolution tracking — subscriptions, cron scheduler, `trigger_evolution`, `get_delta_report`  
+- ✅ Incremental EVOLUTION re-run (change probes — cost ~$3 → ~$0.4/run)  
+- ✅ Notifications — webhook + email push on audit completion  
+- ✅ End-to-end tests over a real MCP Client / in-memory transport  
+- ⏳ npm publish  

@@ -324,6 +324,19 @@
 
 **闭环打通**：品牌变化 → trigger_evolution → 增量重审 → 算 delta → webhook/email 主动通知
 
+**commit**：9fef872
+
+---
+
+### 2026-07-02（续三）
+
+**事项**：MCP 端到端集成测试  
+**完成内容**：
+- `tests/integration/server.e2e.test.ts`：用真实 MCP `Client` + `InMemoryTransport` 驱动 `createServer()`，覆盖前 60 个单元测试没触及的协议层（工具注册、zod schema 接线、请求/响应）
+- 7 个 e2e 用例：11 工具全部注册校验；propose_audit 产出 PRD；list_audits + get_status 往返；confirm_audit 无 key → MISSING_API_KEY；subscribe → list → unsubscribe 往返；add_judge validate_only；未知 audit → AUDIT_NOT_FOUND
+- 测试用临时 store dir + stubEnv（无 API key，不起 scheduler、不发真实 LLM 调用），确定性、无网络
+- 测试：67 tests passing（新增 7），TypeScript zero errors
+
 **commit**：待推送
 
 <!-- 在此追加后续进度记录，格式参考上方 -->
