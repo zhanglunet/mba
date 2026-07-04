@@ -1,0 +1,72 @@
+<!doctype html>
+<!--
+  mock_report.html — minimal fixture for validate_html_report.py testing.
+  Contains all required components: Chart.js canvas, Mermaid diagram,
+  dissent heatmap, Final Verdict, Legal, Sources.
+-->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>MockBrand — MBA Brand Influence Review v1</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+
+<h1>MockBrand Brand Influence Review</h1>
+
+<!-- Radar chart (Chart.js) -->
+<section id="radar">
+  <h2>Radar Chart</h2>
+  <canvas id="radarChart" width="400" height="400"></canvas>
+  <script>
+    const ctx = document.getElementById('radarChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+        datasets: [{ label: 'Judge-A', data: [7, 8, 6, 5, 7] }]
+      }
+    });
+  </script>
+</section>
+
+<!-- Mermaid influence map -->
+<section id="leverage-map">
+  <h2>Influence Map</h2>
+  <div class="mermaid">
+graph LR
+  A[Founder Story] --> B[Product]
+  B --> C[Community]
+  C --> D[Brand Signal]
+  </div>
+</section>
+
+<!-- Dissent heatmap -->
+<section id="heatmap">
+  <h2>Dissent Heatmap — 异议热力图</h2>
+  <p>Origin: σ 0.50 · Signal: σ 0.00</p>
+</section>
+
+<!-- Final Verdict -->
+<section id="verdict">
+  <h2>Final Verdict</h2>
+  <p>MockBrand scores 32.5/50. Strong origin, needs identity work.</p>
+</section>
+
+<!-- Legal -->
+<section id="legal">
+  <h2>Legal, IP &amp; Disclaimer</h2>
+  <p>Mock fixture. Not investment advice. All data fabricated for testing.</p>
+</section>
+
+<!-- Sources -->
+<section id="sources">
+  <h2>Sources</h2>
+  <ul>
+    <li><a href="https://example.com/source1">Mock Source 1</a></li>
+  </ul>
+</section>
+
+</body>
+</html>

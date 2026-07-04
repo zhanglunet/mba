@@ -48,3 +48,9 @@ docs/hackathon/*.docx
 # Python 字节码缓存(py_compile / pytest 等会生成)
 __pycache__/
 *.pyc
+
+# pnpm workspace
+node_modules/
+packages/*/dist/
+packages/*/coverage/
+*.tsbuildinfo

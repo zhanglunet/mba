@@ -1,0 +1,11 @@
+panel: security-cn-global
+locked_at: 2026-06-25
+mba_version: 0.2.38
+published_at: 2026-06-26
+version: v1
+score_total: 185
+score_max: 300
+score_normalized: 6.17
+overrides:
+  add: []
+  drop: []

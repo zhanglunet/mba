@@ -13,6 +13,7 @@
                          ┌─────────────┐
                          │  Phase 0    │  路由器
                          │  Router     │  decide FRESH | EVOLUTION
+                         │             │  --dry-run → exit here
                          └──────┬──────┘
                                 │
                 ┌───────────────┴───────────────┐
@@ -40,18 +41,26 @@
                          │  Phase 4    │  N judges in parallel
                          └──────┬──────┘
                                 ▼
-                         ┌─────────────┐
-                         │  Phase 5    │  Lead merge + HTML render
-                         └──────┬──────┘
+                   ┌────────────┴────────────┐
+                   ▼                         ▼
+            ┌─────────────┐          ┌──────────────┐
+            │  Phase 5    │          │  Phase 5M    │
+            │  Lead merge │          │  panel-merge │
+            │  + HTML     │          │  comparison  │
+            └──────┬──────┘          └──────┬───────┘
+                   │                        │
+                   └────────────┬───────────┘
                                 ▼
                           [ report.{md,html} ]
 ```
 
+> Phase 5M 仅在传入 `--panel-merge` 时触发（EVOLUTION 品牌，跨面板对比模式）。
+
 ## Phase 0 — Router
 
-**职责**:决定走 FRESH 还是 EVOLUTION,告知用户。
+**职责**:决定走 FRESH 还是 EVOLUTION,告知用户。`--dry-run` 时在此阶段完整解析后打印计划退出。
 
-**输入**:`brand` 名称、`--refresh` flag(可选)。
+**输入**:`brand` 名称 + 可选 flags：`--refresh` / `--dry-run` / `--panel-merge` / `--panel` / `--quick` 等。
 
 **实现**:Lead 直接 `Read reports/<brand-slug>/report.md`。
 
@@ -60,6 +69,9 @@
 | 文件不存在 | FRESH 模式,进入 Phase 1F |
 | 文件存在 + 没传 `--refresh` | EVOLUTION 模式,进入 Phase 1E |
 | 文件存在 + 传了 `--refresh` | FRESH 模式,但先把现有 `report.md` 归档到 `versions/v{n}_archived_<date>.md` |
+| 传了 `--dry-run`（任何状态）| 完成路径/面板/FRESH-EVOLUTION 解析后打印计划并退出——零文件写入、零网络请求 |
+| 传了 `--panel-merge` + 文件不存在 | ABORT：brand 没有先前报告,无法做跨面板对比 |
+| 传了 `--panel-merge` + 文件存在 | bypass 面板相同检测,进入 Phase 1E → … → Phase 5M |
 
 **输出**:消息给用户,告知进入哪个模式 + 预计耗时。
 
@@ -67,12 +79,13 @@
 
 - brand-slug 不规范导致路径找不到 → SKILL.md 提示 Lead 在确认 PRD 时显式给 slug
 - `--refresh` 模式下要把当前 `report.md` 先归档,Lead 必须显式做这步(以免覆盖丢失)
+- `--panel-merge` 不能和 `--dry-run` 冲突：两个 flag 同时传时，dry-run 优先
 
 ## Phase 1F — Discovery (FRESH)
 
 **职责**:Lead 起草 Brand Influence PRD,等用户 confirm。
 
-**输入**:`brand` 名称、可选 `--focus` / `--panel` / `--industry` / `--panel-add` / `--panel-drop` / `--quick` flag。
+**输入**:`brand` 名称、可选 `--focus` / `--panel` / `--industry` / `--panel-add` / `--panel-drop` / `--quick` / `--no-judges` flag（`--dry-run` 和 `--panel-merge` 在 Phase 0 已消耗，不再传入）。
 
 **输出**:Markdown PRD,包含:
 
@@ -277,6 +290,32 @@ Lead 在对话里给:
 - Score Matrix 表格内联
 - `report.md` 和 `report.html` 路径
 - 后续建议("要深挖某个评委吗?要重点关注竞品 X 吗?")
+
+## Phase 5M — Panel Merge Comparison
+
+> 触发条件：`--panel-merge` flag + 品牌已有先前报告（EVOLUTION 品牌）
+
+**职责**：跑完 Phase 4（用新面板的 N 位评委），再叠加旧版报告的分值，产出一份**跨面板对比报告**。
+
+| 步骤 | 操作 |
+|---|---|
+| 5M.1 | 从旧 report.md / score.json 提取旧面板的 5 镜头均值 |
+| 5M.2 | 正常跑 Phase 4（新面板的评委打分） |
+| 5M.3 | 在 report.md 末尾附加 `## Panel Comparison` 节：side-by-side delta 表 + 共识/分歧段落 + cross-panel verdict |
+| 5M.4 | HTML 报告增加面板选择器 toggle + 5 镜头 delta 热力图列 |
+
+**报告结构（Panel Comparison 节）**：
+
+```
+## Panel Comparison
+### Side-by-Side Score Deltas
+| Lens | {old-panel} mean | {new-panel} mean | Δ | Direction |
+...
+### Where the panels agree
+### Where the panels diverge
+### Panel lens fingerprints
+### Cross-panel verdict
+```
 
 ## EVOLUTION 模式细节
 

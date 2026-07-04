@@ -1,0 +1,11 @@
+panel: luxury-en
+locked_at: 2026-06-25
+mba_version: 0.2.38
+published_at: 2026-06-28
+version: v1
+score_total: 216
+score_max: 250
+score_normalized: 8.64
+overrides:
+  add: []
+  drop: []

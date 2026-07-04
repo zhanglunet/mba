@@ -1,7 +1,7 @@
 ---
 name: mba
 displayName: 乔布斯教你做品牌
-version: 0.2.36
+version: 0.4.0
 category: ai-agents
 skillType: prompt
 tags: [brand-audit, competitive-intelligence, founder-story, marketing-strategy, multi-agent]
@@ -280,6 +280,8 @@ Five independent capabilities, used together:
 - `--industry <name>` — pick a panel via the `panels/industries.yaml` industry→panel mapping (e.g. `--industry auto` resolves to `auto.yaml`). Lower priority than `--panel` but higher than the brand's existing binding. Same stickiness as `--panel`: first-time use writes the resolved panel into the brand's `panel.yaml`. Pass an industry not in the mapping → Phase 0 ABORT with the list of legal industries.
 - `--panel-add <slug>` — runtime-only addition of one judge (slug must resolve under `${PERSPECTIVES_PATH}`). Stored in `panel.yaml.overrides.add` for this run; does NOT mutate `panels/<name>.yaml`. Repeatable.
 - `--panel-drop <slug>` — runtime-only exclusion of one judge. Stored in `panel.yaml.overrides.drop`; does NOT mutate `panels/<name>.yaml`. Repeatable.
+- `--dry-run` — preview the audit plan without executing it. Runs Phase 0 fully (path resolution, panel resolution, FRESH/EVOLUTION detection), then prints the plan and stops. No network requests, no file writes, no sub-agents. Combine with any other flags to preview their effect (e.g. `/mba 小米 --industry auto --dry-run`).
+- `--panel-merge` — cross-panel comparison mode. Requires an existing report (FRESH brand → ABORT with guidance). Bypasses the panel-change GATE (the intent is explicit: compare two judge lineups). Runs the full pipeline with the new panel, then writes a v{n+1} report that includes both the old panel's scores AND the new panel's scores side-by-side in `## Panel Comparison`. Use alongside `--panel` or `--industry` to specify the second panel. Example: `/mba 某品牌 --panel vc-en --panel-merge` (compares current default-panel scores with vc-en scores).
 
 ## Output layout
 
@@ -386,7 +388,11 @@ ssh <user>@<host> "test -f '<remote-reports-dir>/<brand-slug>/report.md' && echo
   - Switch to **EVOLUTION mode** (Phase 1E onward)
   - Tell the user: `"Found existing v{n} dated {date}, bound to panel '{panel-name}'. Switching to EVOLUTION mode — delta research + re-score only what's changed. Use --refresh for a full rebuild."`
 - **If `report.md` does NOT exist OR `--refresh` was passed**:
-  - Switch to **FRESH mode** (Phase 1F onward)
+  - If `--panel-merge` was ALSO passed → ABORT immediately:
+    > `--panel-merge` requires an existing report to compare against, but no report.md
+    > found for '{brand}'. Run a full audit first (`/mba {brand}`), then come back
+    > with `--panel-merge` to compare a second panel's perspective.
+  - Otherwise → Switch to **FRESH mode** (Phase 1F onward)
   - Tell the user: `"No prior report for {brand}. Running fresh pipeline with panel '{panel-name}' ({N} judges): discovery → parallel search → synthesis → judge panel → merge. Estimated 15-25 minutes."`
 
 A `--refresh` rebuild also archives the current `report.md` into `versions/` before starting.
@@ -398,8 +404,11 @@ is missing (brand was audited before the panel system landed), SKIP this gate.
 0.5 will write the panel.yaml with the resolved panel name on this run.
 Note in the user-facing status: `"Legacy brand — migrating to panel system, binding {brand} to '{panel-name}'."`
 
+**`--panel-merge` bypass**: if `--panel-merge` was passed, skip this entire gate —
+the panel difference is intentional. Proceed directly; Phase 5M will handle the comparison.
+
 If we're in EVOLUTION mode AND `panel.yaml` exists AND the resolved panel (`PANEL_NAME` from 0.2) differs
-from the panel recorded there, STOP. Tell the user verbatim:
+from the panel recorded there AND `--panel-merge` was NOT passed, STOP. Tell the user verbatim:
 
 > Panel change detected for {brand}: v{n} was scored by **{old-panel}** ({old-slugs}),
 > this run wants **{new-panel}** ({new-slugs}).
@@ -413,7 +422,32 @@ from the panel recorded there, STOP. Tell the user verbatim:
 
 This gate exists to prevent silent panel drift across versions. Do NOT auto-proceed.
 
-### 0.5  Write / update `panel.yaml`
+### 0.5  --dry-run exit (if flag present)
+
+If `--dry-run` was passed, print the following plan block and **stop immediately**.
+Do NOT proceed to 0.6 or any later Phase. No files written, no network calls made.
+
+```
+### MBA Dry-Run Plan — {Brand}
+
+Mode:          {FRESH (no prior report) | EVOLUTION (v{n} found, dated {date})}
+Panel:         {panel-name} ({N} judges)
+Judges:        {slug1} ({display_name}) ✓ | {slug2} ✗ missing ...
+Wuying leg:    {YES | NO (--quick)}
+Dimensions:    {1-7 default | restricted to {dims} via --focus}
+Output path:   {REPORTS_DIR}/{brand-slug}/
+
+Flags active:  {list all flags that were passed}
+
+— No files written. No network requests made. —
+Re-run without --dry-run to execute the full pipeline (~20 min).
+```
+
+Judge status symbols: ✓ = perspective skill found at `${PERSPECTIVES_PATH}`; ✗ = missing
+(run will degrade to N-of-M or auto --no-judges). Use the standard panel probe from the
+self-bootstrap check to determine each judge's status.
+
+### 0.6  Write / update `panel.yaml`
 
 On **FRESH** mode: at the start of Phase 1F (after user passes GATE 1 confirming the
 PRD), create `${REPORTS_DIR}/<brand-slug>/panel.yaml`:
@@ -422,7 +456,7 @@ PRD), create `${REPORTS_DIR}/<brand-slug>/panel.yaml`:
 # Generated by Phase 0 router on FRESH mode
 panel: <panel-name>            # which panels/<name>.yaml was used
 locked_at: YYYY-MM-DD          # today
-mba_version: 0.2.36            # from this SKILL.md's frontmatter
+mba_version: 0.2.38            # from this SKILL.md's frontmatter
 overrides:
   add: []                      # populated from --panel-add (slugs only)
   drop: []                     # populated from --panel-drop (slugs only)
@@ -971,6 +1005,128 @@ fresh path, with two evolution-specific additions:
   a 30-second skim.
 
 Write the new HTML to `report.html` and snapshot to `versions/v{n+1}_<date>.html`.
+
+---
+
+## Phase 5M — Panel Merge (--panel-merge mode)
+
+Triggered when `--panel-merge` was passed AND we're in EVOLUTION mode (existing report.md found).
+
+**What this phase produces**: a v{n+1} report where BOTH the old panel's scores AND the
+new panel's scores appear side-by-side — the main audit report plus a `## Panel Comparison`
+chapter that makes the two lineups directly comparable.
+
+### 5M.1  Read old scores
+
+Load all existing `reviews/<old-judge-slug>.md` files. Extract:
+- Old panel name (from `panel.yaml`)
+- Old judge display names, scores per lens (5 rows), totals
+
+### 5M.2  Run new panel through Phases 2-4
+
+Run the new panel through the standard pipeline:
+- **Phase 2**: Reuse existing `_raw/dimension_*.md` files if they're recent (< 30 days)
+  and the user did not pass `--refresh`. Skip re-research if reusable.
+  If `--quick` was passed or Wuying unavailable, keep the existing Wuying observations.
+- **Phase 3**: Re-run synthesis if research was refreshed; otherwise reuse `_raw/synthesis.md`.
+- **Phase 4**: Run new panel judges (all of them) against the synthesis. Write to
+  `reviews/<new-judge-slug>.md` files. DO NOT overwrite old-panel reviews — old panel
+  reviews are preserved as `reviews/<old-judge-slug>.md`.
+
+### 5M.3  Write the Panel Comparison report
+
+Archive current `report.md` → `versions/v{n}_<orig_date>.md` as usual.
+
+Write new `report.md` using this template extension (add `## Panel Comparison` before
+`## Citations`):
+
+```markdown
+# {Brand} — Brand Influence Review (v{n+1})
+
+**Date:** {YYYY-MM-DD}
+**Mode:** PANEL-MERGE
+**Panels compared:** {old-panel-name} (v{n}) → {new-panel-name} (v{n+1})
+**Dimensions analyzed:** {list}
+
+## TL;DR — Panel Comparison Summary
+{3-4 bullets: where do the two panels agree? where do they sharply diverge?
+Name the exact lenses and the direction of divergence.}
+
+## Score Matrix — {new-panel-name} (v{n+1})
+{Standard 5-lens matrix for the new judges — identical format to Phase 5F}
+
+## Score Matrix — {old-panel-name} (v{n}, reference)
+{The OLD panel's scores, clearly labeled as reference. Use the scores from step 5M.1.}
+
+## Panel Comparison
+{This is the unique output of --panel-merge. Structure:}
+
+### Side-by-Side Score Deltas
+
+| Lens              | {old-panel} mean | {new-panel} mean | Δ | Direction |
+|-------------------|-----------------|-----------------|---|-----------|
+| Origin authenticity  | {old-mean}   | {new-mean}      | {Δ} | ↑/↓/= |
+| Category coinage     | ...            | ...             | ... | ...    |
+| Leverage quality     | ...            | ...             | ... | ...    |
+| Identity coherence   | ...            | ...             | ... | ...    |
+| Real-world signal    | ...            | ...             | ... | ...    |
+| **Total /50**        | **{old-total}**| **{new-total}** | **{Δ}** | |
+
+### Where the panels agree
+{Lenses where both panels' means are within 1.0 of each other. These are
+stable signals — the brand's performance on these dimensions holds up across
+different judge perspectives.}
+
+### Where the panels diverge
+{Lenses where |Δ| ≥ 1.5. For each diverging lens:
+- Name the lens and the delta direction
+- Quote one judge from each panel whose reasoning best explains the gap
+- Offer Lead's interpretation: is this a genuine lens disagreement, or does it
+  reflect a domain bias (e.g., VC judges weight origin story more than auto judges)?}
+
+### Panel lens fingerprints
+{Each panel has a characteristic "fingerprint" — lenses it consistently scores
+high or low relative to the other panel. Describe each panel's fingerprint in
+one sentence and what it reveals about that panel's implicit brand priorities.}
+
+### Cross-panel verdict
+{1-2 sentences: what does a brand score ROBUSTLY across both panels? What are
+the brand's fragile edges that ONLY show up with one panel? The intersection of
+both panels' critical findings is the hardest, most panel-independent signal.}
+
+## Where the {new-panel-name} judges agree and disagree with each other
+{Standard within-panel consensus/dissent — same as Phase 5F format}
+
+## Action recommendations (next 90 days)
+{Draw from both panels' insights. Flag which recommendations are panel-universal
+vs. panel-specific (only one lineup's judges flagged this).}
+
+## Legal, IP & Disclaimer
+{Standard legal block — same as Phase 5F, adapted to include panel-merge context}
+
+## Citations
+{Dedupe-merged from all dimension files, same as Phase 5F}
+
+## Versions
+{Existing version history + new entry: `- v{n+1} — {date} — panel-merge: {old-panel} vs {new-panel}`}
+```
+
+### 5M.4  Write HTML report (REQUIRED)
+
+Render `report.html` with these --panel-merge specific additions:
+
+1. **Panel selector toggle** (pure HTML/CSS, no JS framework): two tabs/buttons labeled
+   `{old-panel}` and `{new-panel}`. Default view shows both panels' radar charts overlaid
+   on the same Chart.js canvas so the reader sees the "shape gap" at a glance.
+2. **Delta heatmap** (new section): a 5×2 grid (5 lenses × 2 panels) where each cell is
+   colored by score. This reveals which panel is harder/softer on which lens.
+3. **Panel fingerprint bar chart** (Chart.js `bar`, grouped): one group per lens, two bars
+   per group (old-panel mean vs new-panel mean). The visual "which bars are the same
+   height" shows at-a-glance stability.
+4. Standard sections: influence map, judge cards (now for BOTH panels — label old-panel
+   cards with a "reference" badge), dissent heatmap within each panel.
+
+Snapshot to `versions/v{n+1}_<date>_panel-merge.html`.
 
 ---
 

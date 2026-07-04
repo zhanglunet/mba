@@ -1,0 +1,11 @@
+panel: edu-cn
+locked_at: 2026-06-25
+mba_version: 0.2.38
+published_at: 2026-06-28
+version: v1
+score_total: 124
+score_max: 200
+score_normalized: 6.20
+overrides:
+  add: []
+  drop: [zhangbangxin]

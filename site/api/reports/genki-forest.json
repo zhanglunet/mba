@@ -1,0 +1,19 @@
+{
+  "slug": "genki-forest",
+  "brand_cn": "元气森林",
+  "brand_en": "Genki Forest",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-06-28",
+  "panel": "consumer-cn",
+  "score": {
+    "total": 162,
+    "max": 250,
+    "normalized": 6.48
+  },
+  "tl_dr": "中国 2016-2021 新消费浪潮品类创造力最强案例。\"0糖0脂0卡\"六字定义无糖气泡水品类， 日系视觉锤在货架极度差异化，三年营收增长约 7×。MBA 历史异常： Identity 7.6（审计史最高）× Signal 5.4（审计史最低）——最强品牌系统遭遇 最难修复的诚信危机（2021 年\"0糖\"标注风波）。钟睒睒△（农夫山泉，直接竞对） 29/50 最低，江南春 36/50 最高。162/250 · 6.48/10。",
+  "html_url": "/reports/genki-forest/",
+  "pdf_url": null,
+  "api_url": "/api/reports/genki-forest.json",
+  "panel_api_url": "/api/panels/consumer-cn.json"
+}

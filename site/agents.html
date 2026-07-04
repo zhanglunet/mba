@@ -221,6 +221,7 @@
         <a href="/presentation/">Presentation</a>
         <a href="/pitch.html">Pitch</a>
         <a href="/how-it-works.html">怎么打分</a>
+        <a href="/roadmap.html">Roadmap</a>
         <a href="https://github.com/zhanglunet/mba">GitHub</a>
       </nav>
     </header>
@@ -305,7 +306,7 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
           <a class="path" href="/api/index.json">/api/index.json</a>
           <span class="desc">站点 manifest — counts + 所有端点 URL + CORS / auth / discovery 元数据</span>
         </div>
-        <div class="schema">{ "counts": { "reports": 2, "panels": 10, "judges": 43, ... }, "endpoints": {...} }</div>
+        <div class="schema">{ "counts": { "reports": 10, "panels": 10, "judges": 43, ... }, "endpoints": {...} }</div>
       </div>
 
       <div class="ep">
@@ -329,7 +330,7 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
           <a class="path" href="/api/reports.json">/api/reports.json</a>
           <span class="desc">已发布的所有品牌 audit 报告</span>
         </div>
-        <div class="schema">{ "count": 2, "items": [{slug,brand_cn,version,audit_date,panel,score,tl_dr,html_url,pdf_url}] }</div>
+        <div class="schema">{ "count": 10, "items": [{slug,brand_cn,version,audit_date,panel,score,tl_dr,html_url,pdf_url}] }</div>
       </div>
 
       <div class="ep">
@@ -458,7 +459,13 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
 /mba openai <span class="p">--quick --no-judges</span>
 
 <span class="c"># EVOLUTION:已有报告,只重跑变了的维度</span>
-/mba lenovo <span class="p">--refresh</span></pre>
+/mba lenovo <span class="p">--refresh</span>
+
+<span class="c"># 预览计划 — 只打印面板/评委/路径,零副作用</span>
+/mba anthropic <span class="p">--dry-run --panel vc-en</span>
+
+<span class="c"># 跨面板对比 — 用新面板重跑,产出 delta 热力图</span>
+/mba lenovo <span class="p">--panel vc-en --panel-merge</span></pre>
 
     <p>装法在 <a href="/api/install.json"><code>/api/install.json</code></a>(BotLearn 一键 / GitHub 手装两条路)。</p>
 
@@ -471,7 +478,17 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
 
     <p style="margin-bottom:8px;"><strong>Hermes / OpenClaw / 任何支持 HTTP tool 的 framework</strong> —— 直接调。</p>
 
-    <p style="margin-bottom:8px;"><strong>MCP server</strong> —— 目前没出。如果 Claude Code 之外的 MCP 用户量起来,会在 Cloudflare Worker 上包一层 MCP server,复用现有 JSON 端点。</p>
+    <p style="margin-bottom:8px;"><strong>MCP server</strong> —— <code>mba-mcp-server</code> v0.1.0（TypeScript，stdio，Node ≥ 20）。接进 Claude Desktop / Cursor / 任何 MCP 客户端：</p>
+    <pre style="margin:6px 0 10px;"><code style="background:none;padding:0;font-size:13px;">// claude_desktop_config.json
+{ "mcpServers": { "mba": {
+  "command": "npx",
+  "args": ["-y", "mba-mcp-server@latest"],
+  "env": { "ANTHROPIC_API_KEY": "sk-ant-..." }
+}}}</code></pre>
+    <p style="margin-bottom:8px;">然后说"用 mba 审一下 Anthropic"，agent 走 <code>propose_audit → confirm_audit → get_status → fetch_report</code>。共 <strong>11 个工具</strong>：</p>
+    <p style="margin-bottom:8px;padding-left:12px;font-size:14px;"><strong>核心审计（6）</strong>：<code>propose_audit</code>（生成 PRD）· <code>confirm_audit</code>（启动后台流水线，非阻塞）· <code>get_status</code>（轮询进度）· <code>fetch_report</code>（拉报告 MD/HTML）· <code>list_audits</code> · <code>add_judge</code>（注册自定义评委）<br/>
+    <strong>演化追踪（5）</strong>：<code>subscribe_brand</code>（订阅品牌自动重审）· <code>trigger_evolution</code>（触发 EVOLUTION 重审）· <code>list_subscriptions</code> · <code>unsubscribe_brand</code> · <code>get_delta_report</code>（两次审计评分对比）</p>
+    <p style="margin-bottom:8px;">支持<strong>品牌订阅 → 定时/事件触发 → 增量重审 → delta 报告 → webhook/email 主动通知</strong>的完整闭环。变化探针只重跑受影响的维度，演化审计成本从 ~$3 降到 ~$0.4/次。内置 5 位评委（傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣），可扩展。67 tests（含真实 MCP 协议层 e2e）。上手见 <a href="https://github.com/zhanglunet/mba/blob/main/docs/13-mcp-quickstart.md">docs/13-mcp-quickstart.md</a>；源码 <a href="https://github.com/zhanglunet/mba/tree/main/packages/mcp-server">packages/mcp-server/</a>。</p>
 
     <p style="margin-bottom:8px;"><strong>RAG ingest</strong> —— 直接拉 <code>/api/search.json</code>,扁平 corpus 就是给 client-side substring search 准备的;也适合直接灌 embedding。</p>
 

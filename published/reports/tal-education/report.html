@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>好未来 / TAL Education — MBA Brand Audit v1</title>
+<style>
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --edu: #1a6b3a;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--paper);color:var(--ink);font-family:ui-serif,"Noto Serif SC","Songti SC",Georgia,serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:820px;margin:0 auto;padding:56px 28px 80px;}
+header{border-bottom:2px solid var(--rule);padding-bottom:18px;margin-bottom:36px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.mark{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-weight:800;letter-spacing:.02em;font-size:20px;}
+.mark .dot{color:var(--accent);}
+.panel-badge{display:inline-block;padding:3px 10px;border:1.5px solid var(--edu);color:var(--edu);font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border-radius:3px;}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 10px;font-weight:800;letter-spacing:-.01em;}
+.brand-en{font-size:17px;color:var(--muted);font-style:italic;margin:0 0 6px;}
+.meta-line{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:13px;color:var(--muted);margin:0 0 28px;}
+.meta-line span{margin-right:18px;}
+.tldr{background:#fff;border-left:4px solid var(--accent);padding:18px 22px;margin:0 0 36px;font-size:16px;line-height:1.65;}
+.tldr strong{color:var(--accent);}
+
+/* score hero */
+.score-hero{display:flex;gap:28px;margin:0 0 40px;flex-wrap:wrap;align-items:center;}
+.score-big{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:64px;font-weight:900;line-height:1;color:var(--ink);}
+.score-sub{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:14px;color:var(--muted);margin-top:6px;}
+.score-norm{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:28px;font-weight:700;color:var(--edu);}
+
+/* conflict warning */
+.conflict-box{background:#fffbf0;border:1.5px solid #d4a017;border-radius:6px;padding:14px 18px;margin:0 0 32px;font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:13px;line-height:1.6;}
+.conflict-box .cf-title{font-weight:700;color:#8a6500;margin-bottom:6px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;}
+.conflict-box ul{margin:4px 0 0;padding-left:18px;}
+.conflict-box li{margin-bottom:4px;}
+
+/* charts */
+.charts-row{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:0 0 44px;}
+@media(max-width:600px){.charts-row{grid-template-columns:1fr;}}
+.chart-box{background:#fff;border:1px solid #e5e2db;border-radius:8px;padding:20px;}
+.chart-title{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;}
+canvas{width:100%!important;}
+
+/* score table */
+.section-title{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:40px 0 14px;border-top:1px solid var(--rule);padding-top:16px;}
+table{width:100%;border-collapse:collapse;font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:14px;margin:0 0 36px;}
+th{background:var(--ink);color:#fff;padding:9px 12px;text-align:left;font-weight:600;font-size:12px;letter-spacing:.05em;}
+td{padding:9px 12px;border-bottom:1px solid #e5e2db;}
+tr:last-child td{border-bottom:none;}
+tr:nth-child(even) td{background:#f7f5f0;}
+.heat-1{background:#ffe8e8!important;color:#8b0000;}
+.heat-2{background:#fff3e0!important;color:#7a4500;}
+.heat-3{background:#fffde7!important;}
+.heat-4{background:#e8f5e9!important;}
+.heat-5{background:#c8e6c9!important;color:#1b5e20;}
+.total-row td{font-weight:700;background:var(--paper)!important;}
+
+/* judge cards */
+.judge-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:0 0 44px;}
+@media(max-width:560px){.judge-grid{grid-template-columns:1fr;}}
+.judge-card{background:#fff;border:1px solid #e5e2db;border-radius:8px;padding:18px 20px;}
+.judge-card .jname{font-weight:700;font-size:16px;margin:0 0 2px;}
+.judge-card .jrole{font-size:12px;color:var(--muted);margin:0 0 10px;font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;}
+.judge-card .jscore{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:28px;font-weight:800;color:var(--edu);}
+.judge-card .jscore-max{font-size:14px;color:var(--muted);font-weight:400;}
+.judge-card .jverdict{font-size:14px;margin-top:10px;line-height:1.55;color:var(--ink);}
+.judge-card.competitor{border-color:#d4a017;background:#fffcf0;}
+.badge-competitor{display:inline-block;background:#d4a017;color:#fff;font-size:10px;padding:1px 7px;border-radius:999px;font-family:ui-sans-serif,sans-serif;font-weight:700;letter-spacing:.04em;margin-left:6px;vertical-align:middle;}
+
+/* insight box */
+.insight-box{background:#f0f7f2;border:1.5px solid var(--edu);border-radius:8px;padding:20px 24px;margin:0 0 36px;}
+.insight-box .ib-title{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--edu);margin:0 0 10px;}
+.insight-box p{margin:0 0 8px;font-size:15px;line-height:1.65;}
+.insight-box p:last-child{margin:0;}
+
+/* comparison table */
+.compare-table{width:100%;border-collapse:collapse;font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:13px;margin:0 0 36px;}
+.compare-table th{background:#f0f7f2;color:var(--edu);padding:8px 12px;text-align:left;font-weight:700;border-bottom:2px solid var(--edu);}
+.compare-table td{padding:8px 12px;border-bottom:1px solid #e5e2db;}
+.compare-table .highlight-row td{font-weight:700;background:#e8f5e9;}
+
+/* verdict */
+.verdict{border:2px solid var(--rule);padding:22px 26px;margin:0 0 36px;border-radius:6px;}
+.verdict h3{margin:0 0 12px;font-size:15px;letter-spacing:.05em;text-transform:uppercase;font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;}
+.verdict p{margin:0 0 10px;font-size:16px;line-height:1.65;}
+.verdict p:last-child{margin:0;}
+
+/* brand actions */
+.action-list{margin:0 0 44px;padding:0;}
+.action-list li{list-style:none;padding:16px 18px;border:1px solid #e5e2db;border-radius:6px;margin-bottom:10px;background:#fff;}
+.action-list li .action-num{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-weight:700;color:var(--edu);font-size:14px;margin-bottom:6px;}
+.action-list li p{margin:0;font-size:15px;line-height:1.6;}
+.action-list li strong{color:var(--ink);}
+
+/* quotes */
+.quote-block{border-left:3px solid var(--edu);padding:14px 20px;margin:0 0 16px;background:#f0f7f2;border-radius:0 6px 6px 0;}
+.quote-block p{margin:0;font-size:15px;font-style:italic;line-height:1.65;}
+.quote-block .quote-attr{margin-top:8px;font-size:13px;color:var(--muted);font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-style:normal;font-weight:600;}
+
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted);font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">MBA<span class="dot">.</span></div>
+  <div class="panel-badge">edu-cn panel</div>
+</header>
+
+<h1>好未来 / TAL Education Group</h1>
+<p class="brand-en">TAL Education Group · NYSE: TAL</p>
+<p class="meta-line">
+  <span>MBA v0.2.38</span>
+  <span>Audit Date: 2026-06-28</span>
+  <span>Panel: edu-cn</span>
+  <span>4 有效评委</span>
+</p>
+
+<div class="conflict-box">
+  <div class="cf-title">Panel 冲突说明</div>
+  <ul>
+    <li><strong>张邦鑫（好未来创始人）</strong>：依 MBA 自冲突规则排除（等同于 <code>--panel-drop zhangbangxin</code>）。有效评委 4 人，满分 200 分。</li>
+    <li><strong>俞敏洪△（新东方创始人）</strong>：好未来直接竞争对手，存在竞争偏见；已披露，保留评分并以 △ 标注。</li>
+  </ul>
+</div>
+
+<div class="tldr">
+  <strong>TL;DR：</strong>中国教育行业 20 年积累的品牌标杆，MBA 审计史上首个"品类被政策摧毁后重建"案例。
+  双减政策（2021）将核心 K9 课外辅导强制消灭，市值蒸发 90%+；但学习行为数据、学而思品牌信任、教研团队质量三项核心资产在 AI 时代提供了真实的重建基础。
+  edu-cn 4 位评委：<strong>Origin 7.3 最高</strong>（草根叙事真实扎实），<strong>Category 5.5 最低</strong>（原品类消灭，AI 新品类心智未建立）。
+  最大分歧：俞敏洪△品类 4 分 vs 萨尔曼·可汗品类 7 分——"传统教育市场残局"框架 vs "AI 时代数据壁垒"框架的根本张力。
+  <strong>124/200 · 6.20/10</strong>。
+</div>
+
+<div class="score-hero">
+  <div>
+    <div class="score-big">124</div>
+    <div class="score-sub">/ 200（4 评委 × 50）</div>
+  </div>
+  <div>
+    <div class="score-norm">6.20 / 10</div>
+    <div class="score-sub">归一化总分</div>
+  </div>
+</div>
+
+<div class="charts-row">
+  <div class="chart-box">
+    <div class="chart-title">维度雷达图</div>
+    <canvas id="radarChart" height="260"></canvas>
+  </div>
+  <div class="chart-box">
+    <div class="chart-title">评委分数对比</div>
+    <canvas id="barChart" height="260"></canvas>
+  </div>
+</div>
+
+<div class="section-title">Score Matrix</div>
+<table>
+  <thead>
+    <tr>
+      <th>Lens</th>
+      <th>俞敏洪△</th>
+      <th>李可佳</th>
+      <th>吴俊东</th>
+      <th>萨尔曼·可汗</th>
+      <th>Mean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Origin / 起源叙事</td>
+      <td class="heat-4">7</td>
+      <td class="heat-4">7</td>
+      <td class="heat-5">8</td>
+      <td class="heat-4">7</td>
+      <td><strong>7.3</strong></td>
+    </tr>
+    <tr>
+      <td>Category / 品类定义</td>
+      <td class="heat-1">4</td>
+      <td class="heat-3">6</td>
+      <td class="heat-2">5</td>
+      <td class="heat-4">7</td>
+      <td><strong>5.5</strong></td>
+    </tr>
+    <tr>
+      <td>Leverage / 杠杆点</td>
+      <td class="heat-3">6</td>
+      <td class="heat-4">7</td>
+      <td class="heat-3">6</td>
+      <td class="heat-4">7</td>
+      <td><strong>6.5</strong></td>
+    </tr>
+    <tr>
+      <td>Identity / 身份系统</td>
+      <td class="heat-2">5</td>
+      <td class="heat-2">5</td>
+      <td class="heat-3">6</td>
+      <td class="heat-2">5</td>
+      <td><strong>5.3</strong></td>
+    </tr>
+    <tr>
+      <td>Signal / 真实信号</td>
+      <td class="heat-4">7</td>
+      <td class="heat-3">6</td>
+      <td class="heat-4">7</td>
+      <td class="heat-3">6</td>
+      <td><strong>6.5</strong></td>
+    </tr>
+    <tr class="total-row">
+      <td>Total</td>
+      <td>29</td>
+      <td>31</td>
+      <td>32</td>
+      <td>32</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+<p style="font-size:12px;color:var(--muted);font-family:ui-sans-serif,sans-serif;margin:-20px 0 36px;">△ 俞敏洪：新东方创始人，好未来直接竞争对手，竞争偏见已披露。</p>
+
+<div class="section-title">Judge Scorecards</div>
+<div class="judge-grid">
+  <div class="judge-card competitor">
+    <div class="jname">俞敏洪 <span class="badge-competitor">竞争对手△</span></div>
+    <div class="jrole">新东方教育科技集团创始人 · 东方甄选 · 双减后重生 IP</div>
+    <div class="jscore">29 <span class="jscore-max">/ 50</span></div>
+    <div class="jverdict">双减之后，我和邦鑫都经历了同样的政策打击。区别在于路径：我选择走出去，他选择深耕。学而思的品牌信任是真实的，数据资产是真实的——但 AI 教育品类叙事还没有讲出来。那个能让家长在新时代仍然选择学而思的故事，比 AI 技术更难建立，也更重要。</div>
+  </div>
+  <div class="judge-card">
+    <div class="jname">李可佳</div>
+    <div class="jrole">AI 原生教育创业者 · Bot 派新物种 · 数据驱动学习</div>
+    <div class="jscore">31 <span class="jscore-max">/ 50</span></div>
+    <div class="jverdict">我做 AI 教育产品时，最羡慕的不是大厂算力，而是好未来那 20 年的数据。这个数据资产在 AI 时代的价值被严重低估——但好未来还没有把"我们有数据"这件事变成品牌差异化的核心叙事，这是最需要填补的空白。</div>
+  </div>
+  <div class="judge-card">
+    <div class="jname">吴俊东</div>
+    <div class="jrole">内容付费创业者 · 知识服务 · 用户信任建立</div>
+    <div class="jscore">32 <span class="jscore-max">/ 50</span></div>
+    <div class="jverdict">学而思 20 年赢在一件事上：家长信任你能改变孩子的命运。AI 时代，这句话仍然成立，只是"改变命运"的方式变了。讲清楚这件事，品牌转型就完成了大半。那一刻需要一个"家长说孩子因为学而思 AI 喜欢上了数学"的引爆点。</div>
+  </div>
+  <div class="judge-card">
+    <div class="jname">萨尔曼·可汗</div>
+    <div class="jrole">Khan Academy 创始人 · Khanmigo AI · 全球 AI 教育先驱</div>
+    <div class="jscore">32 <span class="jscore-max">/ 50</span></div>
+    <div class="jverdict">The moment TAL publishes real learning outcome data — rigorous, publicly verifiable — their brand transforms from a legacy education company to an AI era benchmark. TAL has the data, the teaching expertise, and the family trust. What's missing is the proof. Build it, publish it, let it speak.</div>
+  </div>
+</div>
+
+<div class="insight-box">
+  <div class="ib-title">MBA 特殊场景记录：品类被政策消灭后重建</div>
+  <p>好未来是 MBA 审计史上第一个"外部政策导致品类崩塌"的案例。Category 5.5 是全卷最低维度——但与奇安信的 Identity 弱（主动建设不足）性质不同：好未来的 Category 弱是客观环境造成的被动断裂，不是战略失误的主动结果。</p>
+  <p>最大分歧维度（Category）的 3 分差距（俞敏洪△ 4 vs 萨尔曼·可汗 7）揭示了一个关键认知分叉：看"品类的过去"（政策打碎的 K12 辅导市场）还是看"品类的未来"（数据壁垒支撑的 AI 个性化学习）。这个分叉本身是好未来品牌叙事的核心战场。</p>
+</div>
+
+<div class="section-title">MBA 历史对比</div>
+<table class="compare-table">
+  <thead>
+    <tr>
+      <th>品牌</th>
+      <th>Origin</th>
+      <th>Category</th>
+      <th>Leverage</th>
+      <th>Identity</th>
+      <th>Signal</th>
+      <th>总分</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anthropic</td>
+      <td>8.4</td>
+      <td>6.6</td>
+      <td>7.2</td>
+      <td>7.2</td>
+      <td>8.8</td>
+      <td>7.64/10</td>
+    </tr>
+    <tr>
+      <td>DJI 大疆</td>
+      <td>7.4</td>
+      <td>8.0</td>
+      <td>7.6</td>
+      <td>5.6</td>
+      <td>8.0</td>
+      <td>7.44/10</td>
+    </tr>
+    <tr>
+      <td>Kimi 月之暗面</td>
+      <td>7.8</td>
+      <td>6.8</td>
+      <td>6.0</td>
+      <td>7.5</td>
+      <td>6.3</td>
+      <td>6.85/10</td>
+    </tr>
+    <tr>
+      <td>奇安信</td>
+      <td>5.8</td>
+      <td>6.7</td>
+      <td>7.0</td>
+      <td>4.5</td>
+      <td>6.8</td>
+      <td>6.17/10</td>
+    </tr>
+    <tr class="highlight-row">
+      <td>好未来 TAL</td>
+      <td>7.3</td>
+      <td>5.5</td>
+      <td>6.5</td>
+      <td>5.3</td>
+      <td>6.5</td>
+      <td>6.20/10</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="section-title">Verdict</div>
+<div class="verdict">
+  <p>好未来是 MBA 审计中最复杂的案例：一个 20 年积累的教育品牌标杆，遭遇了历史上最剧烈的政策性品类消亡，现在正在用数据资产和 AI 能力重新定义自己的赛道。</p>
+  <p>4 位评委的共识弱点是 Category 和 Identity——前者是外力所致，后者是内部待解的双品牌困境。共识强点是 Origin——张邦鑫 2003 年的草根叙事跨越了 23 年依然是可信的创业原点。</p>
+  <p>未来 24 个月的关键验证点：好未来能否用学习结果数据证明"学而思 AI = 真正有效的学习"，在字节 Doubao 等 AI 原生竞争者占领 AI 教育品类心智之前，建立足够深的用户依赖。时间窗口真实存在，但正在收窄。</p>
+</div>
+
+<div class="section-title">Brand Actions（90 天）</div>
+<ul class="action-list">
+  <li>
+    <div class="action-num">Action 1 — 学习结果白皮书（最优先）</div>
+    <p>发布量化的 AI 产品学习效果数据——"使用学而思 AI 60 天，数学进步 X%"。这是目前最有力的品类叙事武器，让"学而思 AI = 真正有效的学习"在家长心中固化。数据需真实，透明度本身即是品牌资产。</p>
+  </li>
+  <li>
+    <div class="action-num">Action 2 — 张邦鑫公开叙事</div>
+    <p>张邦鑫录制/撰写深度内容："我为什么在双减之后选择继续做教育"。解释为何学而思的数据资产在 AI 时代价值更高——这种内容在知识圈的传播价值远超广告，是字节/俞敏洪很难复制的差异化叙事。</p>
+  </li>
+  <li>
+    <div class="action-num">Action 3 — 学而思 AI 开放测评</div>
+    <p>主动邀请独立教育研究机构对"学而思 AI vs 其他 AI 教育工具"进行标准化对比测评并公开结果。透明度比结果更重要——"敢于对比"的品牌态度本身是核心差异化。</p>
+  </li>
+  <li>
+    <div class="action-num">Action 4 — 英文品牌线建立</div>
+    <p>为海外华人市场建立统一英文品牌，配套英文官网和社交媒体。海外市场既是合规增量，也是好未来国际化叙事的实验室，同时绕开双减对 K9 的国内限制。</p>
+  </li>
+  <li>
+    <div class="action-num">Action 5 — 品牌架构澄清</div>
+    <p>明确以学而思作为 C 端主品牌、好未来作为集团对外品牌。两个品牌同时在消费者层面传播只会加剧混淆；单一主品牌聚焦才能加速 AI 转型期的用户心智建立。</p>
+  </li>
+</ul>
+
+<div class="section-title">In-Character Quotes</div>
+<div class="quote-block">
+  <p>"学而思的品牌信任是真实的，数据资产是真实的。但双减之后，邦鑫需要的不只是一个好产品，而是一个让家长在新时代仍然选择学而思的理由——不是因为焦虑，而是因为信任。这件事，比 AI 技术更难，也更重要。"</p>
+  <div class="quote-attr">— 俞敏洪△（新东方创始人，竞争对手偏见已披露）</div>
+</div>
+<div class="quote-block">
+  <p>"The moment TAL publishes learning outcome data — real, rigorous, publicly verifiable — is the moment their brand transforms from a legacy education company into an AI era benchmark. That proof doesn't exist yet. Build it."</p>
+  <div class="quote-attr">— Sal Khan（Khan Academy 创始人）</div>
+</div>
+<div class="quote-block">
+  <p>"学而思 20 年赢在一件事上：家长信任你能改变孩子的命运。AI 时代，这句话仍然成立，只是'改变命运'的方式变了。讲清楚这件事，品牌转型就完成了大半。"</p>
+  <div class="quote-attr">— 吴俊东（内容付费创业者）</div>
+</div>
+<div class="quote-block">
+  <p>"如果我能选择一件事做，我会选有数据。好未来有数据。这件事在 AI 时代的价值，比市场目前给出的估值高出了好几个数量级。问题不是好未来能不能成功，而是他们能不能在窗口关闭之前把这个优势讲清楚。"</p>
+  <div class="quote-attr">— 李可佳（AI 原生教育创业者）</div>
+</div>
+
+<footer>
+  <div>MBA v0.2.38 · 好未来 / TAL Education · v1 · 2026-06-28</div>
+  <div>edu-cn panel · 4 有效评委（张邦鑫自冲突排除）· 总分 124/200 · 6.20/10</div>
+  <div style="flex-basis:100%;margin-top:4px;font-size:11px;">本报告为 AI 基于公开资料的 in-character 模拟，非照片中本人真实意见，不构成投资建议。<a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></div>
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+const labels = ['Origin\n起源叙事','Category\n品类定义','Leverage\n杠杆点','Identity\n身份系统','Signal\n真实信号'];
+const means  = [7.3, 5.5, 6.5, 5.3, 6.5];
+
+// Radar
+new Chart(document.getElementById('radarChart'), {
+  type: 'radar',
+  data: {
+    labels: labels,
+    datasets: [{
+      label: 'Mean Score',
+      data: means,
+      backgroundColor: 'rgba(26,107,58,0.15)',
+      borderColor: '#1a6b3a',
+      borderWidth: 2.5,
+      pointBackgroundColor: '#1a6b3a',
+      pointRadius: 4,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      r: {
+        beginAtZero: true,
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 }, color: '#6b6760' },
+        pointLabels: { font: { size: 10 } },
+        grid: { color: '#e5e2db' },
+        angleLines: { color: '#e5e2db' },
+      }
+    }
+  }
+});
+
+// Bar
+const judges = ['俞敏洪△','李可佳','吴俊东','萨尔曼·可汗'];
+const scores = [29, 31, 32, 32];
+const colors = ['rgba(212,160,23,0.75)','rgba(26,107,58,0.7)','rgba(26,107,58,0.7)','rgba(26,107,58,0.7)'];
+new Chart(document.getElementById('barChart'), {
+  type: 'bar',
+  data: {
+    labels: judges,
+    datasets: [{
+      label: '总分 / 50',
+      data: scores,
+      backgroundColor: colors,
+      borderColor: colors.map(c => c.replace('0.7','1').replace('0.75','1')),
+      borderWidth: 1.5,
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: { label: ctx => ` ${ctx.parsed.x} / 50` }
+      }
+    },
+    scales: {
+      x: { beginAtZero: true, max: 50, grid: { color: '#e5e2db' }, ticks: { color: '#6b6760' } },
+      y: { ticks: { color: '#111', font: { size: 12 } }, grid: { display: false } }
+    }
+  }
+});
+</script>
+
+<section class="mba-legal" style="max-width:860px;margin:48px auto 0;padding:20px 24px;border-top:2px solid #1a1a1a;font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;line-height:1.7;color:#6b6760;">
+  <h2 style="font-size:15px;color:#111;margin:0 0 12px;">Legal, IP &amp; Disclaimer — 商标、知识产权与免责声明</h2>
+  <p><strong>公开资料说明：</strong>本报告仅引用和分析公开可访问资料（新闻报道、行业媒体、品牌官方公开材料、公开访谈与演讲、MBA 方法说明）。报告未使用 好未来（TAL Education） 、其关联公司或任何第三方的非公开资料、内部文件、商业秘密或未授权数据库。</p>
+  <p><strong>商标与品牌归属：</strong>报告中提及的品牌名、产品名、商标、标识及相关商业外观均归其合法权利人所有，仅为识别、评论、研究和说明目的引用，不表示 MBA 与相关权利主体存在赞助、授权、合作或背书关系。</p>
+  <p><strong>评委模拟说明：</strong>本报告 edu-cn 面板评委（俞敏洪△、李可佳、吴俊东、萨尔曼·可汗）为基于公开资料构建的 AI 视角模拟，代表合乎逻辑的分析视角，不代表相关个人的真实观点或表态。与被审计品牌存在竞争关系的评委已用 △ 标注。</p>
+  <p><strong>非投资 / 非采购建议：</strong>本报告是品牌影响力研究与方法演示，不构成投资、采购、法律或商业尽调结论。分数反映 MBA edu-cn 面板在公开资料基础上的判断，不等同于 好未来（TAL Education） 的真实经营表现、财务状况或产品质量。</p>
+  <p><strong>准确性限制：</strong>本轮为 open-web research，所有结论均受公开资料完整性、发布时间、媒体口径和样本偏差限制。读者在做商业、投资或法律决策前，应自行核验一手资料并咨询专业顾问。</p>
+  <p style="margin-top:10px;font-style:italic;"><strong>Sources / 来源：</strong>本轮审计未逐条归档一手来源 URL；结论基于上述公开可访问资料。后续版本将补充可追溯来源清单。</p>
+</section>
+
+</body>
+</html>
