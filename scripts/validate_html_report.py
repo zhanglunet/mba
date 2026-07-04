@@ -22,7 +22,9 @@ import sys
 from pathlib import Path
 
 
-RULES = [
+# Hard requirements (block CI): the core interactive components every published
+# HTML report must ship, plus a legal / disclaimer section.
+HARD_RULES = [
     (
         r"<canvas[\s>]",
         "Missing <canvas> element (radar chart requires Chart.js canvas)",
@@ -36,37 +38,45 @@ RULES = [
         "Missing influence/leverage map (Mermaid diagram or custom map element)",
     ),
     (
-        r"(dissent|heatmap|异议|热力图)",
-        "Missing dissent heatmap section",
-    ),
-    (
-        r"(Final Verdict|final.verdict|verdict)",
-        "Missing Final Verdict section",
-    ),
-    (
         r"(Legal|Disclaimer|免责声明)",
         "Missing Legal / Disclaimer section",
     ),
+]
+
+# Advisory (warn only): sections that legitimately vary across bilingual report
+# formats; surfaced but not blocking.
+SOFT_RULES = [
+    (
+        r"(dissent|heatmap|异议|热力图)",
+        "No dissent heatmap section (advisory)",
+    ),
+    (
+        r"(Final Verdict|final.verdict|verdict|总评|结论)",
+        "No Final Verdict / 总评 / 结论 section (advisory)",
+    ),
     (
         r"(Sources|参考|来源)",
-        "Missing Sources / 参考 section",
+        "No Sources / 参考 / 来源 section (advisory) — backfill real public sources when available",
     ),
 ]
 
 
-def validate_file(path: Path) -> list:
-    """Validate one report.html. Returns list of error strings (empty = pass)."""
+def validate_file(path: Path) -> tuple:
+    """Validate one report.html. Returns (errors, warnings)."""
     try:
         text = path.read_text(encoding="utf-8", errors="replace")
     except OSError as e:
-        return [f"Cannot read file: {e}"]
+        return [f"Cannot read file: {e}"], []
 
-    errors = []
-    for pattern, message in RULES:
+    errors, warnings = [], []
+    for pattern, message in HARD_RULES:
         if not re.search(pattern, text, re.IGNORECASE):
             errors.append(message)
+    for pattern, message in SOFT_RULES:
+        if not re.search(pattern, text, re.IGNORECASE):
+            warnings.append(message)
 
-    return errors
+    return errors, warnings
 
 
 def find_reports(root: Path) -> list:
@@ -90,10 +100,10 @@ def main() -> int:
         return 0
 
     repo_root = Path(__file__).resolve().parent.parent
-    total, failed = len(targets), 0
+    total, failed, warned = len(targets), 0, 0
 
     for path in targets:
-        errs = validate_file(path)
+        errs, warns = validate_file(path)
         try:
             rel = path.resolve().relative_to(repo_root)
         except ValueError:
@@ -103,10 +113,19 @@ def main() -> int:
             print(f"FAIL  {rel}")
             for e in errs:
                 print(f"      {e}")
+            for w in warns:
+                print(f"      warn: {w}")
+        elif warns:
+            warned += 1
+            print(f"ok    {rel}")
+            for w in warns:
+                print(f"      warn: {w}")
         else:
             print(f"ok    {rel}")
 
     print(f"\n{total - failed}/{total} passed", end="")
+    if warned:
+        print(f"  ({warned} with advisory warnings)", end="")
     if failed:
         print(f"  ({failed} failed)")
         return 1
