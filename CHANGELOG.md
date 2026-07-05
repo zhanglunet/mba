@@ -7,6 +7,9 @@ track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 ## Unreleased
 
 ### Added
+- **npm publish automation** — `.github/workflows/publish-npm.yml` publishes
+  `mba-mcp-server` to npm on manual dispatch (idempotent, with a `dry_run`
+  option). One-time setup: add an `NPM_TOKEN` repo secret.
 - **Full panel system in the MCP server** — `propose_audit` now accepts a
   `panel` (default / auto / luxury-en / vc-en / vc-cn / consumer-cn / ai-app-cn /
   edu-cn / cross-border / security-cn-global). The 43 judge personas across all

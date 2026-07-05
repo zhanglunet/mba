@@ -1,0 +1,73 @@
+name: Publish npm
+
+# Publish packages/mcp-server (mba-mcp-server) to npm.
+#
+# One-time setup: add an npm automation token as the repo secret NPM_TOKEN
+#   (npmjs.com → Access Tokens → Generate → "Automation").
+#
+# To publish: bump the version in packages/mcp-server/package.json, commit, then
+# run this workflow from the Actions tab ("Run workflow") or via the API / MCP.
+# Idempotent: if that version is already on npm, it is a no-op. Use dry_run to
+# rehearse without publishing.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Rehearse only (npm publish --dry-run), do not publish."
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/mcp-server
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: "https://registry.npmjs.org"
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install deps (workspace root)
+        working-directory: .
+        run: pnpm install --frozen-lockfile
+
+      - name: Resolve version
+        id: v
+        run: echo "version=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
+
+      - name: Skip if already published
+        id: check
+        run: |
+          if npm view "mba-mcp-server@${{ steps.v.outputs.version }}" version >/dev/null 2>&1; then
+            echo "already=true" >> "$GITHUB_OUTPUT"
+            echo "mba-mcp-server@${{ steps.v.outputs.version }} is already on npm — nothing to do."
+          else
+            echo "already=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish
+        if: steps.check.outputs.already == 'false'
+        # prepublishOnly runs typecheck + tests + build before the tarball is created.
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            npm publish --dry-run --access public
+          else
+            npm publish --access public
+            echo "Published mba-mcp-server@${{ steps.v.outputs.version }}"
+          fi

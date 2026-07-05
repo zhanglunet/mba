@@ -143,18 +143,29 @@ See [`docs/mcp-server-design.md`](../../docs/mcp-server-design.md) for full arch
 
 ## Publishing
 
-The package is publish-ready. Once you have an npm token with publish rights:
+### Automated (recommended) — GitHub Actions
+
+One-time: add an npm **automation** token as the repo secret `NPM_TOKEN`
+(npmjs.com → Access Tokens → Generate → *Automation*).
+
+Then, to publish: bump `version` in `package.json`, commit, and run the
+**Publish npm** workflow (`.github/workflows/publish-npm.yml`) from the Actions
+tab — or via the API/MCP. It installs, runs `prepublishOnly` (typecheck + tests +
+build) and publishes. It's idempotent (a version already on npm is a no-op), and
+supports a `dry_run` input to rehearse without publishing.
+
+### Manual
 
 ```bash
 cd packages/mcp-server
 npm login                 # or: npm config set //registry.npmjs.org/:_authToken=<token>
-npm publish               # prepublishOnly runs typecheck + 67 tests + build first
+npm publish               # prepublishOnly runs typecheck + tests + build first
 ```
 
 - `prepublishOnly` gates publish on a green typecheck, full test run, and a fresh build — a broken tree cannot be published.
 - `files` ships only `dist/`, `README.md`, `LICENSE` (verify with `npm pack --dry-run`).
 - `publishConfig.access: public` — no scope, published publicly.
-- Bump `version` in `package.json` before each release (`npm version patch|minor|major`).
+- Bump `version` before each release (`npm version patch|minor|major`).
 
 ## Status
 
