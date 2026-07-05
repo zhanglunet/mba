@@ -202,15 +202,15 @@ Notify
 | P3-B-2 | delta 报告生成（score diff + 叙述） | ✅ 完成 2026-07-02 |
 | P3-B-5 | EVOLUTION 增量维度重跑（成本优化） | ✅ 完成 2026-07-02 |
 | P3-B-4a | notify 推送（webhook out + email） | ✅ 完成 2026-07-02 |
-| P3-B-4b | webhook **接收端**（外部推送触发） | ⏳ 待做（需长运行 HTTP daemon） |
-| P3-B-3 | keyword / news RSS 触发器 | ⛔ 阻断（Wuying Pro） |
+| P3-B-4b | webhook **接收端**（外部推送触发） | ✅ 完成 2026-07-05 |
+| P3-B-3 | keyword / news RSS 触发器 | ⛔ 阻断（Wuying Pro；可改 RSS 绕过） |
 
 ---
 
 ## 9. 阻断项
 
 - **Wuying Pro**：keyword 触发器依赖 GetLink() 抓取中文内容，免费版返回 400
-- **webhook 接收端**：需要长运行 HTTP 进程（MCP 是 stdio transport，接收端需独立 daemon 或 Cloudflare Workers）——notify **出站**已实现，**入站**待做
+- **webhook 接收端**：✅ 已实现（`mba-webhook-receiver`，`src/http/receiver.ts` + `src/receiver-main.ts`）。`POST /webhooks/trigger` 把外部事件转成 EVOLUTION 重审，共享 `MBA_STORE_DIR`，可选 `MBA_WEBHOOK_SECRET` 鉴权。仍需用户提供一个长运行部署位（小 VM / 容器 / systemd）——这是**部署**要求，非构建阻断。notify **出站** + webhook **入站** 均已就绪。
 - **邮件推送**：已接 Resend，需用户提供 `MBA_RESEND_API_KEY`
 
 ---

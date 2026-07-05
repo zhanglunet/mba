@@ -70,6 +70,43 @@ subscription's `notify` targets:
 Delivery is best-effort and per-target: one failing target never blocks the others,
 and notification errors never fail the audit itself.
 
+## Webhook receiver (inbound triggers)
+
+The MCP server speaks stdio, so external systems (news monitors, PR bots, CI)
+can't reach it directly. The package also ships a small HTTP receiver that turns
+an inbound event POST into an EVOLUTION re-audit — the inbound counterpart to the
+outbound notifications above.
+
+```bash
+ANTHROPIC_API_KEY=sk-ant-... MBA_WEBHOOK_SECRET=your-secret \
+  npx -p mba-mcp-server mba-webhook-receiver
+# listening on http://0.0.0.0:8787
+
+curl -X POST http://localhost:8787/webhooks/trigger \
+  -H "authorization: Bearer your-secret" \
+  -H "content-type: application/json" \
+  -d '{"brand":"Xiaomi","event_type":"product_launch","event_summary":"YU7 launched"}'
+# → 202 { "audit_id": "...", "phase": "researching" }
+```
+
+| Route | Purpose |
+|---|---|
+| `POST /webhooks/trigger` | `{ brand, event_type?, event_summary?, source_url?, force? }` → starts an EVOLUTION audit (202), or 200 if a subscription's cadence guard skips it |
+| `GET /status?audit_id=…` | poll an audit's phase / progress |
+| `GET /health` | liveness check |
+
+It shares `MBA_STORE_DIR` with the MCP server, so audits triggered by webhook show
+up in `list_audits` / `get_status` there too. Config:
+
+| Var | Default | Description |
+|---|---|---|
+| `MBA_WEBHOOK_PORT` | `8787` | Listen port |
+| `MBA_WEBHOOK_HOST` | `0.0.0.0` | Listen host |
+| `MBA_WEBHOOK_SECRET` | *(optional)* | If set, POSTs must send `Authorization: Bearer <secret>` |
+
+Run it wherever you can keep a long-lived process (a small VM, a container, a
+`systemd` unit). Always set `MBA_WEBHOOK_SECRET` when exposing it publicly.
+
 ## Development
 
 ```bash
