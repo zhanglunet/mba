@@ -45,6 +45,25 @@ Then in Claude: *"用 mba 审一下 OpenClaw"* → Claude calls `propose_audit` 
 
 An internal `CronScheduler` polls subscriptions and fires overdue cron triggers automatically (started when `ANTHROPIC_API_KEY` is set).
 
+## Panels (43 judges across 10 panels)
+
+`propose_audit` accepts a `panel` — the same industry rosters the published reports use, so you can reproduce any of them (e.g. Hermès on `luxury-en`, Anthropic on `vc-en`):
+
+```jsonc
+{ "brand": "Hermès", "panel": "luxury-en" }
+```
+
+| Panel | Roster |
+|---|---|
+| `default` | 傅盛 · Jobs · 李可佳 · 吴俊东 · 张一鸣 |
+| `auto` | 新能源汽车 5 位（马斯克 / 雷军 / 李想 / 何小鹏 / 李斌） |
+| `luxury-en` | Arnault · Wintour · Cucinelli · Tom Ford · Burton |
+| `vc-en` | pmarca · paulg · pthiel · naval · rhoffman |
+| `vc-cn` | 朱啸虎 · 张磊 · 徐新 · 雷军 · 沈南鹏 |
+| `consumer-cn` · `ai-app-cn` · `edu-cn` · `cross-border` · `security-cn-global` | 各领域 5–6 位 |
+
+The 43 judge personas are bundled from the project's authored `perspectives/*` files (regenerate with `pnpm generate:personas`). Pass an explicit `judges` array to override a panel, or register your own with `add_judge`.
+
 ## Environment variables
 
 | Var | Default | Description |

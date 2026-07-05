@@ -19,7 +19,7 @@
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
 | 集成测试 | ✅ 已建立 | report-validation.yml + MCP e2e（真实 MCP 协议层） |
 | --dry-run / --panel-merge | ✅ 已实现 | Phase 0 §0.5 / Phase 5M |
-| MCP Server 形态 | ✅ v0.1.0 完成 | packages/mcp-server/ · **11 工具**（6 核心 + 5 演化）· 67 tests |
+| MCP Server 形态 | ✅ v0.1.0 完成 | packages/mcp-server/ · **11 工具** · **10 面板 / 43 评委** · webhook 接收端 · 93 tests |
 | 演化追踪 | ✅ 完成 | 订阅 + cron + trigger_evolution + delta 报告 + 增量重跑 + webhook/email 通知 |
 
 ### 评委全档分布（v0.2.36）
