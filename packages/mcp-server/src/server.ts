@@ -65,6 +65,12 @@ export function createServer(): McpServer {
       inputSchema: {
         brand: z.string().min(1).describe('品牌名或主页 URL'),
         mode: z.enum(['fresh', 'evolution', 'auto']).optional().default('auto'),
+        panel: z
+          .string()
+          .optional()
+          .describe(
+            '评委面板：default / auto / luxury-en / vc-en / vc-cn / consumer-cn / ai-app-cn / edu-cn / cross-border / security-cn-global（默认 default 的 5 位）',
+          ),
         focus_dimensions: z
           .array(z.string())
           .optional()
@@ -72,7 +78,7 @@ export function createServer(): McpServer {
         judges: z
           .array(z.string())
           .optional()
-          .describe('评委列表（默认使用 default panel）'),
+          .describe('显式指定评委列表（会覆盖 panel）'),
         skip_wuying: z.boolean().optional().default(false),
         language: z.enum(['zh', 'en', 'auto']).optional().default('auto'),
       },

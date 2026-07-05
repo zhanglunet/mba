@@ -1,8 +1,30 @@
 import type { ProposeAuditInput, ProposeAuditOutput, AuditState, AuditOptions } from '../types.js';
 import type { FilesystemStore } from '../store/filesystem.js';
 import { makeAuditId, slugify } from '../orchestrator/state-machine.js';
+import { GENERATED_PANELS } from '../llm/panels.generated.js';
 
 const DEFAULT_JUDGES = ['fusheng', 'jobs', 'likejia', 'wu-jundong', 'zhang-yiming'];
+
+/**
+ * Resolve the judge panel for an audit. Explicit `judges` win; otherwise a
+ * named `panel` (auto / luxury-en / vc-en / …) maps to its authored roster;
+ * default falls back to the built-in 5.
+ */
+function resolvePanel(input: ProposeAuditInput): { panel: string; judges: string[] } {
+  if (input.judges && input.judges.length > 0) {
+    return { panel: input.panel ?? 'custom', judges: input.judges };
+  }
+  const name = input.panel;
+  if (!name || name === 'default') {
+    return { panel: 'default', judges: DEFAULT_JUDGES };
+  }
+  const p = GENERATED_PANELS[name];
+  if (!p) {
+    const known = ['default', ...Object.keys(GENERATED_PANELS)].join(', ');
+    throw new Error(`PANEL_NOT_FOUND: '${name}'. Known panels: ${known}`);
+  }
+  return { panel: name, judges: p.judges };
+}
 const DEFAULT_DIMENSIONS = [
   '创始 & 起源叙事',
   '产品 & 定位',
@@ -30,15 +52,17 @@ export async function proposeAudit(
   const audit_id = makeAuditId(brandSlug);
   const mode = input.mode === 'auto' || !input.mode ? 'fresh' : input.mode;
 
+  const { panel, judges: resolvedJudges } = resolvePanel(input);
+
   const opts: AuditOptions = {
     focus_dimensions: input.focus_dimensions,
-    judges: input.judges ?? DEFAULT_JUDGES,
+    judges: resolvedJudges,
     skip_wuying: input.skip_wuying ?? false,
     language: input.language ?? 'auto',
   };
 
   const dims = input.focus_dimensions ?? DEFAULT_DIMENSIONS;
-  const judges = opts.judges ?? DEFAULT_JUDGES;
+  const judges = resolvedJudges;
 
   const inputTokens = dims.length * TOKENS_PER_DIMENSION + judges.length * TOKENS_PER_JUDGE;
   const outputTokens = inputTokens * OUTPUT_RATIO;
@@ -52,7 +76,7 @@ export async function proposeAudit(
     audit_id,
     brand: input.brand,
     brand_slug: brandSlug,
-    panel: 'default',
+    panel,
     mode,
     phase: 'proposed',
     started_at: now,
@@ -71,6 +95,7 @@ export async function proposeAudit(
     brand: input.brand,
     brand_slug: brandSlug,
     mode,
+    panel,
     dims,
     judges,
     opts,
@@ -93,6 +118,7 @@ function buildProposalMarkdown(p: {
   brand: string;
   brand_slug: string;
   mode: string;
+  panel: string;
   dims: string[];
   judges: string[];
   opts: AuditOptions;
@@ -104,7 +130,7 @@ function buildProposalMarkdown(p: {
 **Audit ID:** \`${p.audit_id}\`
 **Brand:** ${p.brand}
 **Mode:** ${p.mode.toUpperCase()}
-**Panel:** ${p.opts.judges?.join(' · ') ?? 'default'}
+**Panel:** ${p.panel} (${p.judges.length} judges)
 **Language:** ${p.opts.language}
 **Wuying browser leg:** ${p.opts.skip_wuying ? '❌ skipped (--skip-wuying)' : '✅ enabled'}
 

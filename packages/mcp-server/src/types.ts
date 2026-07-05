@@ -199,6 +199,7 @@ export interface AuditError {
 export interface ProposeAuditInput {
   brand: string;
   mode?: 'fresh' | 'evolution' | 'auto';
+  panel?: string;
   focus_dimensions?: string[];
   judges?: string[];
   skip_wuying?: boolean;

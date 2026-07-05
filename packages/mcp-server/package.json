@@ -32,6 +32,7 @@
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
     "inspect": "node dist/index.js",
+    "generate:personas": "python3 scripts/generate-personas.py",
     "prepublishOnly": "npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
