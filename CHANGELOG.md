@@ -7,6 +7,14 @@ track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 ## Unreleased
 
 ### Added
+- **`list_panels` + `get_brand_trend` MCP tools** — `list_panels` exposes the 10
+  panels and their rosters so a caller can discover options before choosing a
+  `panel`; `get_brand_trend` gives a brand's score trajectory across all its
+  audits (the N-audit view that `get_delta_report`'s two-audit compare doesn't).
+  The MCP server now has **13 tools**.
+- **MCP server CI** (`.github/workflows/mcp-ci.yml`) — typecheck + tests + build
+  on every PR/push touching the package, plus a check that the bundled
+  personas/panels are in sync with their sources.
 - **npm publish automation** — `.github/workflows/publish-npm.yml` publishes
   `mba-mcp-server` to npm on manual dispatch (idempotent, with a `dry_run`
   option). One-time setup: add an `NPM_TOKEN` repo secret.
