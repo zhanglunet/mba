@@ -1,0 +1,66 @@
+name: MCP server CI
+
+# Typecheck + tests + build for packages/mcp-server on every PR / push that
+# touches it. Until now nothing ran the MCP server's test suite on PRs — only
+# the Python report/panel validators did — so a regression could merge green.
+
+on:
+  pull_request:
+    paths:
+      - "packages/mcp-server/**"
+      - "pnpm-lock.yaml"
+      - "package.json"
+      - "pnpm-workspace.yaml"
+      - ".github/workflows/mcp-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "packages/mcp-server/**"
+      - "pnpm-lock.yaml"
+      - "package.json"
+      - "pnpm-workspace.yaml"
+      - ".github/workflows/mcp-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm --filter mba-mcp-server typecheck
+
+      - name: Test
+        run: pnpm --filter mba-mcp-server test
+
+      - name: Build
+        run: pnpm --filter mba-mcp-server build
+
+      - name: Personas/panels in sync with sources
+        # The bundled data is generated from perspectives/ + panels/; fail if a
+        # commit changed those without re-running the generator.
+        run: |
+          python3 -m pip install --quiet pyyaml
+          python3 packages/mcp-server/scripts/generate-personas.py
+          if ! git diff --quiet -- packages/mcp-server/src/llm/personas.generated.ts packages/mcp-server/src/llm/panels.generated.ts; then
+            echo "::error::personas/panels generated files are stale — run 'pnpm --filter mba-mcp-server generate:personas' and commit."
+            git --no-pager diff --stat -- packages/mcp-server/src/llm/
+            exit 1
+          fi
+          echo "generated data in sync ✓"
