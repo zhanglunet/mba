@@ -60,6 +60,8 @@ p { margin: 0 0 14px; }
 .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
 @media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
 .chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
 .chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
 
 .score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
@@ -241,11 +243,11 @@ p { margin: 0 0 14px; }
   <div class="chart-grid">
     <div class="chart-box">
       <div class="chart-title">雷达图 — 6 评委 × 5 镜头</div>
-      <canvas id="radarChart" height="300"></canvas>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
     </div>
     <div class="chart-box">
       <div class="chart-title">均值条形图 — Lens Means</div>
-      <canvas id="barChart" height="300"></canvas>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
     </div>
   </div>
 
