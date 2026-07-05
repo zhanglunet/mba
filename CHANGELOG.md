@@ -6,6 +6,14 @@ track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
 ## Unreleased
 
+### Added
+- **Webhook receiver** (`mba-webhook-receiver`) — a small HTTP server that turns
+  an inbound event `POST /webhooks/trigger` into an EVOLUTION re-audit, the
+  inbound counterpart to the outbound notifications. Optional `MBA_WEBHOOK_SECRET`
+  Bearer auth, `GET /status` + `/health`, shares `MBA_STORE_DIR` with the MCP
+  server. Completes the four evolution triggers: subscription cron, manual,
+  notify-out, and webhook-in. (`src/http/receiver.ts`, 18 tests.)
+
 ### Fixed
 - Chart.js infinite-growth on the kimichat & qianxin report charts (radar + Lens
   Means bar): canvases now sit in a fixed-height `.chart-wrap` container.

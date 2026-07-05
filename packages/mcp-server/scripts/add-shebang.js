@@ -1,10 +1,12 @@
 #!/usr/bin/env node
-// Prepend #!/usr/bin/env node to dist/index.js and make it executable
+// Prepend #!/usr/bin/env node to the CLI entry points and make them executable
 import { readFileSync, writeFileSync, chmodSync } from 'node:fs';
 
-const entry = new URL('../dist/index.js', import.meta.url).pathname;
-const src = readFileSync(entry, 'utf-8');
-if (!src.startsWith('#!')) {
-  writeFileSync(entry, '#!/usr/bin/env node\n' + src);
+for (const rel of ['../dist/index.js', '../dist/receiver-main.js']) {
+  const entry = new URL(rel, import.meta.url).pathname;
+  const src = readFileSync(entry, 'utf-8');
+  if (!src.startsWith('#!')) {
+    writeFileSync(entry, '#!/usr/bin/env node\n' + src);
+  }
+  chmodSync(entry, 0o755);
 }
-chmodSync(entry, 0o755);

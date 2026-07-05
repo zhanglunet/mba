@@ -17,7 +17,8 @@
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
-    "mba-mcp-server": "./dist/index.js"
+    "mba-mcp-server": "./dist/index.js",
+    "mba-webhook-receiver": "./dist/receiver-main.js"
   },
   "files": ["dist", "README.md", "LICENSE"],
   "publishConfig": {

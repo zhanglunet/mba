@@ -165,8 +165,8 @@
 - [x] P3-B-2：delta 报告生成（`get_delta_report` + `scores.json` 结构化打分 + per-lens 均值差 + LLM 变化叙述，2026-07-02，47 tests）
 - [x] P3-B-5（成本优化）：EVOLUTION 增量维度重跑 —— 变化探针只重跑变了的维度，成本 ~$3 → ~$0.3-0.6/次（省 80%+），2026-07-02，52 tests
 - [x] P3-B-4a：notify 推送出站（webhook POST + Resend email + mcp-push），审计完成自动算 delta 并推送，best-effort 容错，2026-07-02，60 tests
-- [ ] P3-B-4b：webhook **接收端**（外部推送触发）—— 需长运行 HTTP daemon
-- [ ] P3-B-3：keyword / news 触发器（**阻断**：Wuying Pro GetLink）
+- [x] P3-B-4b：webhook **接收端**（`mba-webhook-receiver`）—— `POST /webhooks/trigger` 外部事件转 EVOLUTION 重审，可选 Bearer 鉴权，2026-07-05，85 tests
+- [ ] P3-B-3：keyword / news 触发器（**阻断**：Wuying Pro GetLink；可改 RSS/新闻 API 绕过）
 
 ---
 
