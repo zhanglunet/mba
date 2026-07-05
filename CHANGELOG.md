@@ -4,6 +4,28 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
+## Unreleased
+
+### Fixed
+- Chart.js infinite-growth on the kimichat & qianxin report charts (radar + Lens
+  Means bar): canvases now sit in a fixed-height `.chart-wrap` container.
+
+### Added
+- `scripts/qa_report_render.mjs` — headless-render QA for published reports.
+  Catches chart infinite-growth, collapsed canvases, unrendered Mermaid, and JS
+  errors that static validators miss. Run before publishing: `node
+  scripts/qa_report_render.mjs` (needs network for the chart/mermaid CDNs, or
+  `--offline-libs <dir>` in air-gapped environments).
+- Real public Sources sections backfilled into the hermes / genki-forest /
+  meituan / tal-education reports.
+
+### Changed
+- Report validators (`validate_report.py`, `validate_html_report.py`) split into
+  hard (block CI) vs advisory (warn) rules, with advisory anchors covering MBA's
+  real bilingual section variants (TL;DR / Core Insight / 最大分歧 / Judge Total …).
+- `release.yml` now sources release notes from the matching CHANGELOG section and
+  updates an existing release instead of no-oping.
+
 ## v0.4.0 — 2026-07-04
 
 The MCP-server + evolution-tracking milestone. MBA is now runnable not just as a
