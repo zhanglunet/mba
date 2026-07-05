@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>交接文档 · MBA — Metric Brand Auditor</title>
+<meta name="description" content="MBA v0.4.0 交接文档：本次开发成果、产品现状与用法、需要解锁的外部资源、代码地图与继续开发指引。" />
+<meta property="og:title" content="交接文档 · MBA" />
+<meta property="og:url" content="https://mbabrand.com/handoff.html" />
+<style>
+  :root {
+    --ink: #111; --paper: #faf8f3; --paper-2: #f0ece3; --muted: #6b6760;
+    --rule: #1a1a1a; --accent: #c1440e; --card: #fff;
+    --green: #2a7a4b; --green-bg: #edf7f1;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+    line-height: 1.68; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 56px 28px 100px; }
+  header {
+    border-bottom: 2px solid var(--rule); padding-bottom: 18px; margin-bottom: 36px;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  .mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
+  .mark a { color: inherit; text-decoration: none; }
+  .mark .dot { color: var(--accent); }
+  nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 18px; }
+  nav a:hover { color: var(--accent); border-color: var(--accent); }
+  nav a.current { color: var(--accent); border-color: var(--accent); }
+  h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.16; margin: 0 0 10px; font-weight: 800; letter-spacing: -0.01em; }
+  .sub { font-size: 16px; color: var(--muted); margin: 0 0 8px; font-style: italic; }
+  .chip {
+    display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 3px 10px;
+    border: 1px solid var(--muted); color: var(--muted); border-radius: 999px;
+    margin: 0 8px 28px 0; text-transform: uppercase;
+  }
+  .chip.hl { border-color: var(--accent); color: var(--accent); }
+  h2 {
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
+    font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); margin: 52px 0 16px; padding-top: 18px; border-top: 2px solid var(--rule);
+  }
+  h3 { font-size: 19px; font-weight: 700; margin: 26px 0 6px; letter-spacing: -0.01em; }
+  h3 .n { color: var(--accent); font-family: ui-sans-serif, sans-serif; font-size: 14px; margin-right: 8px; }
+  p { margin: 0 0 14px; }
+  .lead { background: var(--card); border-left: 4px solid var(--accent); padding: 18px 22px; border-radius: 0 6px 6px 0; margin: 0 0 8px; font-size: 17px; }
+  .note-line { color: var(--muted); font-style: italic; font-size: 14px; }
+  .t-wrap { overflow-x: auto; margin: 16px 0 24px; }
+  table { border-collapse: collapse; width: 100%; font-family: ui-sans-serif, -apple-system, sans-serif; font-size: 14px; }
+  th { background: #1a1a1a; color: #f3f1ea; text-align: left; padding: 9px 12px; font-weight: 600; white-space: nowrap; }
+  td { border: 1px solid #e0ddd6; padding: 9px 12px; vertical-align: top; }
+  tr:nth-child(even) td { background: #fbf9f4; }
+  ul { padding-left: 20px; margin: 0 0 14px; }
+  li { margin: 0 0 8px; }
+  strong { font-weight: 700; }
+  code { font-family: ui-monospace, monospace; font-size: 0.9em; background: #f0ece3; padding: 1px 5px; border-radius: 3px; }
+  footer {
+    margin-top: 56px; padding-top: 20px; border-top: 2px solid var(--rule);
+    font-family: ui-sans-serif, -apple-system, sans-serif; font-size: 13px; color: var(--muted);
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  footer a { color: var(--muted); }
+  pre { background:#1a1a1a; color:#f3f1ea; padding:14px 16px; border-radius:6px; overflow-x:auto; font-family:ui-monospace,monospace; font-size:12.5px; line-height:1.55; margin:12px 0 20px; }
+  pre code { background:none; padding:0; color:inherit; font-size:inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark"><a href="/">MBA<span class="dot">.</span></a></div>
+    <nav>
+      <a href="/how-it-works.html">怎么打分</a>
+      <a href="/agents.html">For Agents</a>
+      <a href="/roadmap.html">Roadmap</a>
+      <a href="/weekly.html">周报</a>
+      <a href="https://github.com/zhanglunet/mba">GitHub</a>
+    </nav>
+  </header>
+
+  <h1>交接文档 · Handoff</h1>
+  <p class="sub">v0.4.0 开发交接快照 · 截至 2026-07-05</p>
+  <div>
+    <span class="chip hl">版本 · v0.4.0</span>
+    <span class="chip">状态 · 已发布 · main 全绿</span>
+  </div>
+
+  <h2>一、一句话状态</h2>
+  <p class="lead">MCP Server 已是<strong>功能完整、发布就绪</strong>的产品（11 工具 · 10 面板 · 43 评委 · 演化闭环 · webhook 入站）；v0.4.0 已发布，<code>main</code> 全绿零告警。<strong>代码侧无阻断的建设已收尾</strong>，剩余全部是<strong>需要你亲自解锁外部资源</strong>的项。</p>
+  <h2>二、本次会话成果（11 个 PR，全部已合并）</h2>
+  <div class="t-wrap"><table><thead><tr><th>PR</th><th>内容</th><th>commit</th></tr></thead><tbody><tr><td>#28</td><td>v0.4.0 里程碑：MCP Server + 演化追踪 + 10 报告</td><td>—</td></tr><tr><td>#29</td><td>release.yml 自动用 CHANGELOG 生成 release notes</td><td>—</td></tr><tr><td>#30</td><td>4 份报告补真实公开来源（不编造）</td><td>—</td></tr><tr><td>#31</td><td>报告校验器建议告警清零（识别真实小节变体）</td><td>—</td></tr><tr><td>#32</td><td>修复 kimichat/qianxin 图表无限增长 bug</td><td>—</td></tr><tr><td>#33</td><td>报告渲染 QA 工具（无头浏览器检测图表）</td><td>—</td></tr><tr><td>#34</td><td>webhook 接收端（外部事件触发重审）</td><td>—</td></tr><tr><td>#35</td><td>本周周报（文档 + 网站页）</td><td>—</td></tr><tr><td>#36</td><td>周报模板 + 生成脚本</td><td>—</td></tr><tr><td>#37</td><td><strong>MCP Server 完整面板系统（10 面板 / 43 评委）</strong></td><td>—</td></tr><tr><td>#38</td><td>npm 发布 workflow</td><td><code>91eb126</code></td></tr></tbody></table></div>
+  <p><strong>测试</strong>：mcp-server 93 tests 全过 · <strong>文档/网站</strong>：README / CHANGELOG / roadmap / agents / weekly 均同步。</p>
+  <h2>三、产品现状：能用的东西 + 怎么用</h2>
+  <h3>1. MCP Server（<code>mba-mcp-server</code>）</h3>
+  <p>装进 Claude Desktop / Cursor 等：</p>
+  <pre><code>{ "mcpServers": { "mba": {
+  "command": "npx", "args": ["-y", "mba-mcp-server@latest"],
+  "env": { "ANTHROPIC_API_KEY": "sk-ant-..." }
+}}}</code></pre>
+  <ul><li><strong>11 工具</strong>：<code>propose_audit</code> · <code>confirm_audit</code> · <code>get_status</code> · <code>fetch_report</code> · <code>list_audits</code> · <code>add_judge</code> · <code>subscribe_brand</code> · <code>trigger_evolution</code> · <code>list_subscriptions</code> · <code>unsubscribe_brand</code> · <code>get_delta_report</code></li><li><strong>10 面板 / 43 评委</strong>：<code>propose_audit({ brand, panel })</code>，<code>panel</code> ∈ default / auto / luxury-en / vc-en / vc-cn / consumer-cn / ai-app-cn / edu-cn / cross-border / security-cn-global。可复现任何一份旗舰报告。</li><li><strong>演化闭环</strong>：订阅 → 定时/事件/webhook 触发 → 增量重审（成本 ~$3→$0.4）→ delta 报告 → webhook/email 通知。</li><li>⚠️ 目前只能 clone 仓库本地跑；<code>npx</code> 需先发布（见 §四-1）。</li></ul>
+  <h3>2. Webhook 接收端（<code>mba-webhook-receiver</code>）</h3>
+  <pre><code>ANTHROPIC_API_KEY=... MBA_WEBHOOK_SECRET=... npx -p mba-mcp-server mba-webhook-receiver
+# POST /webhooks/trigger { brand, event_type, event_summary } → 202</code></pre>
+  <p>让外部系统（新闻监控/公关系统）主动推事件触发重审。需一个长运行部署位（小 VM / 容器 / systemd）。</p>
+  <h3>3. 10 份公开报告</h3>
+  <p><code>published/reports/*</code> → 站点 <code>mbabrand.com/reports/</code>。全部含法律免责声明 + 真实公开来源。</p>
+  <h3>4. 报告 QA 工具</h3>
+  <pre><code>node scripts/qa_report_render.mjs        # 发报告前跑，检测图表/渲染问题</code></pre>
+  <h3>5. 周报体系</h3>
+  <pre><code>python3 scripts/new_weekly.py new &lt;日期&gt; --milestone "..."   # 生成骨架
+python3 scripts/new_weekly.py publish &lt;日期&gt;                  # md → 网页</code></pre>
+  <h2>四、⭐ 需要你操作的事项（外部资源解锁）</h2>
+  <h3>1. 把 MCP Server 发到 npm（让全世界能装）—— 最高价值</h3>
+  <ul><li>npmjs.com → Access Tokens → 生成一个 <strong>Automation</strong> token</li><li>仓库 Settings → Secrets and variables → Actions → 新增 <code>NPM_TOKEN</code></li><li>Actions 面板 → <strong>Publish npm</strong> → Run workflow（可先勾 <code>dry_run</code> 彩排）</li><li>包名 <code>mba-mcp-server</code> 已确认空闲；当前版本 <code>0.1.0</code>。</li><li>发布是幂等的，workflow 会自动跑 类型检查 + 93 测试 + 构建。</li></ul>
+  <h3>2. GitHub Release（已自动化，无需 token）</h3>
+  <p><code>release.yml</code> 用 <code>GITHUB_TOKEN</code> 即可。以后发版：改 <code>metric-brand-auditor/SKILL.md</code> 的 <code>version:</code> + 在 CHANGELOG 加对应小节 → Actions 跑 <strong>Release</strong>。</p>
+  <h3>3. Wuying Pro（阿里云无影）→ 解锁两件事</h3>
+  <ul><li><strong>25 位中文评委深化</strong>（Zhihu/微信/X 内容抓取，<code>GetLink</code> 需 Pro/Ultra）</li><li><strong>keyword/news 自动触发器</strong>（P3-B-3，中文内容源）</li></ul>
+  <p>升级后跑 <code>python3 scripts/wuying/smoke_test.py</code> 确认 <code>GetLink</code> 可用。</p>
+  <h3>4. 沙箱网络放行 → vc-en 英文评委深化（P0-A）</h3>
+  <p>paulgraham.com / a16z.com 等一手源目前 WebFetch 403。放行后可深化 paulgraham / bhorowitz / marcandreessen 三位。</p>
+  <h2>五、代码地图（关键文件在哪）</h2>
+  <pre><code>packages/mcp-server/
+  src/
+    index.ts              MCP server 入口（stdio）
+    receiver-main.ts      webhook 接收端入口
+    server.ts             注册 11 个工具
+    tools/                每个工具一个文件
+    orchestrator/         Phase 2-5 编排 + 状态机 + 演化增量重跑 + 打分解析
+    llm/
+      prompts.ts          各阶段 prompt 模板
+      personas.generated.ts   43 评委 persona（生成，勿手改）
+      panels.generated.ts     10 面板映射（生成，勿手改）
+    http/receiver.ts      webhook HTTP server
+    notify/               webhook/email 出站通知
+    store/                原子写文件存储 + 订阅存储
+  scripts/generate-personas.py   从 perspectives/ + panels/ 重生成上面两个文件
+  tests/                  93 tests
+
+.github/workflows/
+  release.yml             GitHub Release（GITHUB_TOKEN，已能用）
+  publish-npm.yml         npm 发布（需 NPM_TOKEN）
+  report-validation.yml   报告结构校验
+  panel-validation.yml    面板 + API 校验
+
+scripts/
+  qa_report_render.mjs    报告渲染 QA
+  new_weekly.py           周报生成
+  generate-personas 见上
+
+docs/                     01-13 设计文档 + weekly/ 周报 + 12-evolution-tracking
+CHANGELOG.md              版本变更（有 Unreleased 段，下次发版现成）</code></pre>
+  <p><strong>重要约定</strong>：<code>personas.generated.ts</code> / <code>panels.generated.ts</code> 是<strong>生成产物</strong>，改评委/面板要改 <code>perspectives/*/SKILL.md</code> 或 <code>panels/*.yaml</code>，再跑 <code>pnpm generate:personas</code> 重生成。</p>
+  <h2>六、解锁后建议的下一步</h2>
+  <div class="t-wrap"><table><thead><tr><th>优先</th><th>前提</th><th>任务</th></tr></thead><tbody><tr><td>1</td><td><code>NPM_TOKEN</code></td><td>发 <code>mba-mcp-server@0.1.0</code> 到 npm</td></tr><tr><td>2</td><td>Wuying Pro</td><td>keyword/news 自动触发器（P3-B-3）—— 让演化系统真正自主</td></tr><tr><td>3</td><td>Wuying Pro</td><td>25 位中文评委深化 —— 提升审计专业度</td></tr><tr><td>4</td><td>网络放行</td><td>vc-en 3 位英文评委深化</td></tr></tbody></table></div>
+  <h2>七、给未来开发者 / 会话</h2>
+  <pre><code># 跑测试
+cd packages/mcp-server &amp;&amp; pnpm install &amp;&amp; pnpm test    # 93 tests
+pnpm typecheck &amp;&amp; pnpm build
+
+# 重生成评委/面板数据
+pnpm generate:personas
+
+# 发报告前 QA
+node scripts/qa_report_render.mjs
+
+# 写周报
+python3 scripts/new_weekly.py new &lt;日期&gt; &amp;&amp; ... publish &lt;日期&gt;</code></pre>
+  <ul><li><strong>分支</strong>：<code>claude/sharp-turing-496l8b</code>，已全部合并到 <code>main</code>。后续新工作从最新 <code>main</code> 起分支。</li><li><strong>提交约定</strong>：commit 尾部带 <code>Co-Authored-By</code> + <code>Claude-Session</code>；不直接推 <code>main</code>；PR 合并前 CI 必须绿。</li><li><strong>红线</strong>：anti-fabrication —— 报告结论/来源必须真实可核验，评委为 AI 模拟且明确标注，绝不编造 URL 或私下信息。</li></ul>
+  <p class="note-line">*本文档为本次开发会话的交接快照。产品状态截至 2026-07-05，v0.4.0。*</p>
+
+  <footer>
+    <span>MBA · Metric Brand Auditor</span>
+    <span>
+      <a href="/">主页</a> ·
+      <a href="/roadmap.html">Roadmap</a> ·
+      <a href="https://github.com/zhanglunet/mba/blob/main/docs/handoff-2026-07-05.md">原始文档</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
