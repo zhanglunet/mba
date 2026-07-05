@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>项目周报 · MBA — Metric Brand Auditor</title>
-<meta name="description" content="MBA 项目周报：本周解决了哪些问题、交付了哪些功能、沉淀了哪些方法论。面向非技术读者，聚焦业务价值。v0.4.0 发布。" />
+<meta name="description" content="MBA 项目周报：本周解决了哪些问题、交付了哪些功能、沉淀了哪些方法论。面向非技术读者，聚焦业务价值。" />
 <meta property="og:title" content="项目周报 · MBA" />
 <meta property="og:url" content="https://mbabrand.com/weekly.html" />
 <style>
@@ -21,12 +21,9 @@
     line-height: 1.68; -webkit-font-smoothing: antialiased;
   }
   .wrap { max-width: 820px; margin: 0 auto; padding: 56px 28px 100px; }
-
-  /* Header */
   header {
     border-bottom: 2px solid var(--rule); padding-bottom: 18px; margin-bottom: 36px;
-    display: flex; align-items: baseline; justify-content: space-between;
-    gap: 16px; flex-wrap: wrap;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   }
   .mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
   .mark a { color: inherit; text-decoration: none; }
@@ -34,8 +31,6 @@
   nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 18px; }
   nav a:hover { color: var(--accent); border-color: var(--accent); }
   nav a.current { color: var(--accent); border-color: var(--accent); }
-
-  /* Titles */
   h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.16; margin: 0 0 10px; font-weight: 800; letter-spacing: -0.01em; }
   .sub { font-size: 16px; color: var(--muted); margin: 0 0 8px; font-style: italic; }
   .chip {
@@ -45,7 +40,6 @@
     margin: 0 8px 28px 0; text-transform: uppercase;
   }
   .chip.hl { border-color: var(--accent); color: var(--accent); }
-
   h2 {
     font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
     font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
@@ -54,29 +48,17 @@
   h3 { font-size: 19px; font-weight: 700; margin: 26px 0 6px; letter-spacing: -0.01em; }
   h3 .n { color: var(--accent); font-family: ui-sans-serif, sans-serif; font-size: 14px; margin-right: 8px; }
   p { margin: 0 0 14px; }
-
-  /* Lead box */
-  .lead {
-    background: var(--card); border-left: 4px solid var(--accent);
-    padding: 18px 22px; border-radius: 0 6px 6px 0; margin: 0 0 8px;
-    font-size: 17px;
-  }
-
-  /* Tables */
+  .lead { background: var(--card); border-left: 4px solid var(--accent); padding: 18px 22px; border-radius: 0 6px 6px 0; margin: 0 0 8px; font-size: 17px; }
+  .note-line { color: var(--muted); font-style: italic; font-size: 14px; }
   .t-wrap { overflow-x: auto; margin: 16px 0 24px; }
   table { border-collapse: collapse; width: 100%; font-family: ui-sans-serif, -apple-system, sans-serif; font-size: 14px; }
   th { background: #1a1a1a; color: #f3f1ea; text-align: left; padding: 9px 12px; font-weight: 600; white-space: nowrap; }
   td { border: 1px solid #e0ddd6; padding: 9px 12px; vertical-align: top; }
   tr:nth-child(even) td { background: #fbf9f4; }
-
   ul { padding-left: 20px; margin: 0 0 14px; }
   li { margin: 0 0 8px; }
   strong { font-weight: 700; }
-
-  .callout {
-    background: var(--green-bg); border: 1px solid #cfe6d8; border-radius: 6px;
-    padding: 14px 18px; margin: 16px 0; font-size: 15px;
-  }
+  code { font-family: ui-monospace, monospace; font-size: 0.9em; background: #f0ece3; padding: 1px 5px; border-radius: 3px; }
   footer {
     margin-top: 56px; padding-top: 20px; border-top: 2px solid var(--rule);
     font-family: ui-sans-serif, -apple-system, sans-serif; font-size: 13px; color: var(--muted);
@@ -102,75 +84,37 @@
   <h1>项目周报</h1>
   <p class="sub">Weekly Report · 面向非技术读者，聚焦业务价值</p>
   <div>
-    <span class="chip">周期 · 截至 2026-07-05</span>
-    <span class="chip hl">里程碑 · v0.4.0 发布</span>
+    <span class="chip">本周（截至 2026-07-05）</span>
+    <span class="chip hl">里程碑 · 正式发布 v0.4.0 版本</span>
   </div>
 
-  <h2>本周一句话总结</h2>
+  <h2>一、本周一句话总结</h2>
   <p class="lead">把 MBA 从"只能在单一工具里手动跑、结果一次性"的品牌审计工具，升级成一套<strong>任何主流 AI 助手都能调用、还能持续追踪品牌变化并主动通知</strong>的品牌监测系统，并把 10 个行业的示范报告全部补齐、正式发布。</p>
-
-  <h2>解决了哪些问题 / 满足了哪些需求</h2>
-
+  <h2>二、解决了哪些问题 / 满足了哪些需求</h2>
   <h3><span class="n">1</span>"只能在一个工具里用" → 现在任何 AI 助手都能用</h3>
   <p>过去 MBA 只能在特定环境里手动操作。本周把它做成了一个<strong>通用接口</strong>，主流 AI 助手（如 Claude 桌面版、Cursor 等）都能直接接入，用一句自然语言就能发起一次完整的品牌影响力审计。使用门槛大幅降低，受众从"少数会用命令行的人"扩展到"所有用 AI 助手的人"。</p>
-
   <h3><span class="n">2</span>"报告是一次性快照，品牌变了没人知道" → 品牌演化追踪</h3>
   <p>以前一份报告只是某个时间点的快照，六个月后品牌变了、没人会主动回头更新。本周实现了<strong>"订阅一个品牌"</strong>的能力：品牌有重大动作（发新品、高管变动、负面舆情等）时，系统能<strong>自动重新评估</strong>，并给出"这次 vs 上次"的变化对比，再通过邮件 / 消息<strong>主动通知</strong>用户。品牌监测从"点查询"变成了"持续跟踪"。</p>
-
   <h3><span class="n">3</span>"每次重新评估都很贵" → 成本下降约 80%</h3>
   <p>持续追踪意味着要反复评估，成本是关键。本周做了智能优化：<strong>只重新评估真正发生变化的部分</strong>，其余复用上次结果。单次演化评估的成本从约 3 美元降到约 0.4 美元，让"长期订阅一个品牌"在经济上真正可行。</p>
-
   <h3><span class="n">4</span>"示范太少，看不出效果" → 10 个行业各一份公开报告</h3>
   <p>之前只有 2 份公开样本。本周补齐到 <strong>10 份</strong>，覆盖奢侈品、消费品、教育、科技、投资、跨境、安全等各个领域（如爱马仕、美团、Anthropic、大疆、元气森林、好未来等），让潜在用户一眼就能看到不同行业的真实产出效果。</p>
-
   <h3><span class="n">5</span>"报告的合规与可信度" → 补齐免责声明与真实来源</h3>
-  <p>本周为缺失的报告补上了<strong>法律 / 知识产权免责声明</strong>，并把结论所依据的<strong>真实、可核验的公开来源</strong>逐条补录进去，提升报告的严谨性和对外发布的合规性。</p>
-
-  <h3><span class="n">6</span>"外部系统无法自动触发" → 开放了对外接口</h3>
+  <p>本周为缺失的报告补上了<strong>法律/知识产权免责声明</strong>，并把结论所依据的<strong>真实、可核验的公开来源</strong>逐条补录进去，提升报告的严谨性和对外发布的合规性。</p>
+  <h3><span class="n">6</span>"外部系统无法自动触发" → 开放了 webhook 接口</h3>
   <p>新增了一个<strong>对外接口</strong>，让新闻监控、公关系统、内部工作流等外部系统可以主动"推送事件"来触发品牌重评，无需人工介入，为后续自动化监测打下基础。</p>
-
-  <h2>本周交付的功能清单</h2>
-  <div class="t-wrap">
-    <table>
-      <thead><tr><th>#</th><th>功能</th><th>价值</th></tr></thead>
-      <tbody>
-        <tr><td>1</td><td>通用 AI 接口（11 项能力）</td><td>任何 AI 助手都能调用 MBA 做审计</td></tr>
-        <tr><td>2</td><td>品牌订阅 + 自动重审</td><td>从一次性快照变持续追踪</td></tr>
-        <tr><td>3</td><td>变化对比报告</td><td>直观看到品牌影响力的升降</td></tr>
-        <tr><td>4</td><td>主动通知（邮件 / webhook）</td><td>品牌有变化第一时间知道</td></tr>
-        <tr><td>5</td><td>增量重评（成本 -80%）</td><td>让长期订阅经济可行</td></tr>
-        <tr><td>6</td><td>外部事件接入接口</td><td>打通与外部系统的自动联动</td></tr>
-        <tr><td>7</td><td>10 份行业公开报告</td><td>完整的对外示范</td></tr>
-        <tr><td>8</td><td>报告质量校验 + 自动化发布</td><td>保证对外内容质量与发布效率</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="callout"><strong>版本成果：</strong>以上能力打包为 <strong>v0.4.0 正式版</strong>发布，配套完整的使用文档和上手指南。</div>
-
-  <h2>质量保障</h2>
-  <ul>
-    <li><strong>上线前自动体检</strong>：建立了自动校验，报告的结构完整性、合规声明、以及网页图表是否正常显示，都在发布前自动检查，问题提前拦截。</li>
-    <li><strong>真实环境验证</strong>：发现并修复了一个网页图表显示异常的问题（部分报告的图表会不断撑大页面），并把这套"用真实浏览器检查报告"的方法沉淀成了可复用的检测工具，避免同类问题再次流到线上。</li>
-    <li><strong>全程绿灯合并</strong>：本周所有改动都经过自动化测试全部通过后才合并，累计安全合并 7 批变更，主干始终保持可发布状态。</li>
-  </ul>
-
-  <h2>方法论沉淀</h2>
-  <ul>
-    <li><strong>小步快跑、持续集成</strong>：每个功能独立成一个小变更，测试通过即合并，避免大爆炸式上线的风险，进度可控、随时可回退。</li>
-    <li><strong>质量门禁前置</strong>：把"检查"自动化并放在发布之前，而不是靠事后人工发现问题，显著降低了线上事故概率。</li>
-    <li><strong>诚信第一（不编造）</strong>：坚持结论必须基于真实可核验的公开资料，评委观点明确标注为"AI 模拟、非本人真实意见"，来源宁缺毋滥、绝不虚构。</li>
-    <li><strong>成本意识内建</strong>：在做功能的同时主动优化成本（增量重评），让产品在规模化使用时经济可持续。</li>
-    <li><strong>阻断项精准甄别</strong>：仔细区分"真正被外部条件卡住"和"其实现在就能做"的任务，避免把可交付的工作误判为受阻，最大化有效产出。</li>
-  </ul>
-
-  <h2>当前状态 &amp; 下周展望</h2>
+  <h2>三、本周交付的功能清单</h2>
+  <div class="t-wrap"><table><thead><tr><th>#</th><th>功能</th><th>价值</th></tr></thead><tbody><tr><td>1</td><td>通用 AI 接口（11 项能力）</td><td>任何 AI 助手都能调用 MBA 做审计</td></tr><tr><td>2</td><td>品牌订阅 + 自动重审</td><td>从一次性快照变持续追踪</td></tr><tr><td>3</td><td>变化对比报告</td><td>直观看到品牌影响力的升降</td></tr><tr><td>4</td><td>主动通知（邮件 / webhook）</td><td>品牌有变化第一时间知道</td></tr><tr><td>5</td><td>增量重评（成本 -80%）</td><td>让长期订阅经济可行</td></tr><tr><td>6</td><td>外部事件接入接口</td><td>打通与外部系统的自动联动</td></tr><tr><td>7</td><td>10 份行业公开报告</td><td>完整的对外示范</td></tr><tr><td>8</td><td>报告质量校验 + 自动化发布</td><td>保证对外内容质量与发布效率</td></tr></tbody></table></div>
+  <p><strong>版本成果</strong>：以上能力打包为 <strong>v0.4.0 正式版</strong>发布，配套完整的使用文档和上手指南。</p>
+  <h2>四、质量保障</h2>
+  <ul><li><strong>上线前自动体检</strong>：建立了自动校验，报告的结构完整性、合规声明、以及网页图表是否正常显示，都在发布前自动检查，问题提前拦截。</li><li><strong>真实环境验证</strong>：发现并修复了一个网页图表显示异常的问题（部分报告的图表会不断撑大页面），并把这套"用真实浏览器检查报告"的方法沉淀成了可复用的检测工具，避免同类问题再次流到线上。</li><li><strong>全程绿灯合并</strong>：本周所有改动都经过自动化测试全部通过后才合并，累计安全合并 7 批变更，主干始终保持可发布状态。</li></ul>
+  <h2>五、方法论沉淀</h2>
+  <ul><li><strong>小步快跑、持续集成</strong>：每个功能独立成一个小变更，测试通过即合并，避免大爆炸式上线的风险，进度可控、随时可回退。</li><li><strong>质量门禁前置</strong>：把"检查"自动化并放在发布之前，而不是靠事后人工发现问题，显著降低了线上事故概率。</li><li><strong>诚信第一（不编造）</strong>：坚持结论必须基于真实可核验的公开资料，评委观点明确标注为"AI 模拟、非本人真实意见"，来源宁缺毋滥、绝不虚构。</li><li><strong>成本意识内建</strong>：在做功能的同时主动优化成本（增量重评），让产品在规模化使用时经济可持续。</li><li><strong>阻断项精准甄别</strong>：仔细区分"真正被外部条件卡住"和"其实现在就能做"的任务，避免把可交付的工作误判为受阻，最大化有效产出。</li></ul>
+  <h2>六、当前状态 &amp; 下周展望</h2>
   <p><strong>当前</strong>：v0.4.0 已正式发布；品牌"订阅 → 自动重审 → 变化对比 → 通知 → 外部触发"的完整闭环已全部打通；10 份行业报告全部上线；主干质量健康、零遗留告警。</p>
   <p><strong>下周可推进</strong>（部分需外部资源配合）：</p>
-  <ul>
-    <li>将 AI 接口正式发布到公共平台，让外部用户可以一键安装使用（需开通发布账号）；</li>
-    <li>探索用公开新闻源自动发现品牌事件，让"自动触发重评"更智能；</li>
-    <li>继续深化评委档案，提升评估的专业度（部分依赖数据获取权限）。</li>
-  </ul>
+  <ul><li>将 AI 接口正式发布到公共平台，让外部用户可以一键安装使用（需开通发布账号）；</li><li>探索用公开新闻源自动发现品牌事件，让"自动触发重评"更智能；</li><li>继续深化评委档案，提升评估的专业度（部分依赖数据获取权限）。</li></ul>
+  <p class="note-line"><em>本报告面向非技术读者，聚焦业务价值与需求解决。</em></p>
 
   <footer>
     <span>MBA · Metric Brand Auditor</span>
