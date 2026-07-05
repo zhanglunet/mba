@@ -47,12 +47,12 @@ HARD_RULES = [
 # formats; surfaced but not blocking.
 SOFT_RULES = [
     (
-        r"(dissent|heatmap|异议|热力图)",
-        "No dissent heatmap section (advisory)",
+        r"(dissent|heatmap|异议|热力图|最大分歧|核心张力|分歧|张力|divergence)",
+        "No dissent heatmap / 分歧 section (advisory)",
     ),
     (
-        r"(Final Verdict|final.verdict|verdict|总评|结论)",
-        "No Final Verdict / 总评 / 结论 section (advisory)",
+        r"(Final Verdict|final.verdict|verdict|总评|结论|总结|Core Insight|TL;?DR|品牌行动|Brand Action)",
+        "No Final Verdict / TL;DR / 总评 / 结论 section (advisory)",
     ),
     (
         r"(Sources|参考|来源)",
