@@ -66,8 +66,10 @@ def _check_score_rows(text: str) -> tuple:
         if not scores:
             errors.append(f"  Lens '{pat}' row has no numeric scores 1-10")
 
-    # Total row is advisory: reports vary between 'Total' / '总分' / omitting it
-    if not re.search(r"\|\s*\*?\*?\s*(?:Total|总分|总计)", block, re.IGNORECASE):
+    # Total row is advisory. MBA matrices label it variously: 'Total' / 'Judge
+    # Total' / 'Score Total' / '总分' / '总计', sometimes with a 'Normalized'
+    # line right below. Accept any of these anywhere in the matrix block.
+    if not re.search(r"(Total|总分|总计|归一化|Normalized)", block, re.IGNORECASE):
         warnings.append("  Score Matrix has no Total / 总分 row (advisory)")
 
     return errors, warnings
@@ -106,15 +108,18 @@ def validate_file(path: Path) -> tuple:
         ),
     ]
 
-    # Advisory rules — surfaced as warnings, do not fail CI.
+    # Advisory rules — surfaced as warnings, do not fail CI. Anchors cover the
+    # real MBA section-naming variants: dissent may be a "Dissent Heatmap" or a
+    # "最大分歧" / "核心张力" discussion; the verdict may be "Final Verdict",
+    # "TL;DR", "Core Insight", "总评", "结论", or the "品牌行动建议" close.
     soft_rules = [
         (
-            r"(Dissent Heatmap|异议热力图)",
-            "No Dissent Heatmap / 异议热力图 section (advisory)",
+            r"(Dissent Heatmap|异议热力图|最大分歧|核心张力|分歧|张力|Divergence)",
+            "No Dissent Heatmap / 异议热力图 / 分歧 section (advisory)",
         ),
         (
-            r"(Final Verdict|Final Assessment|总评|总结论|^##[^\n]*结论)",
-            "No Final Verdict / 总评 / 结论 section (advisory)",
+            r"(Final Verdict|Final Assessment|Verdict|总评|总结论|总结|Core Insight|TL;?DR|品牌行动|Brand Action|^##[^\n]*结论)",
+            "No Final Verdict / TL;DR / 总评 / 结论 section (advisory)",
         ),
         (
             r"^##\s+(?:Sources|来源|参考(?:文献|资料)?)",
