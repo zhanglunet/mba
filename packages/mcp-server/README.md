@@ -31,6 +31,7 @@ Then in Claude: *"用 mba 审一下 OpenClaw"* → Claude calls `propose_audit` 
 | `get_status` | Poll phase / progress / token usage |
 | `fetch_report` | Pull finished report (markdown / html / both) |
 | `list_audits` | List all audits in `MBA_STORE_DIR` |
+| `list_panels` | Discover the available panels + their judge rosters |
 | `add_judge` | Register a custom judge persona |
 
 **Evolution tracking** (P3-B)
@@ -42,6 +43,7 @@ Then in Claude: *"用 mba 审一下 OpenClaw"* → Claude calls `propose_audit` 
 | `list_subscriptions` | List active subscriptions |
 | `unsubscribe_brand` | Remove a subscription |
 | `get_delta_report` | Compare two audits — per-lens score delta + narrative |
+| `get_brand_trend` | A brand's score trajectory across all its audits (N-audit view) |
 
 An internal `CronScheduler` polls subscriptions and fires overdue cron triggers automatically (started when `ANTHROPIC_API_KEY` is set).
 

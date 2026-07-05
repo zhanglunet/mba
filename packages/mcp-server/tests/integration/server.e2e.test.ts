@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import { createServer } from '../../src/server.js';
 
 /**
- * End-to-end: drive the real McpServer (all 11 registered tools) over an
+ * End-to-end: drive the real McpServer (all 13 registered tools) over an
  * in-memory transport with a real MCP Client. No network — only tools that
  * don't require ANTHROPIC_API_KEY are exercised for happy paths; API-gated
  * tools are checked for the correct error.
@@ -39,7 +39,7 @@ describe('MCP server e2e', () => {
     return JSON.parse(text);
   }
 
-  it('registers all 11 tools', async () => {
+  it('registers all 13 tools', async () => {
     const { tools } = await client.listTools();
     const names = tools.map(t => t.name).sort();
     expect(names).toEqual(
@@ -47,9 +47,11 @@ describe('MCP server e2e', () => {
         'add_judge',
         'confirm_audit',
         'fetch_report',
+        'get_brand_trend',
         'get_delta_report',
         'get_status',
         'list_audits',
+        'list_panels',
         'list_subscriptions',
         'propose_audit',
         'subscribe_brand',
@@ -147,6 +149,26 @@ This persona exists purely to exercise the validator path end to end with enough
     expect(out.validation).toBeDefined();
     expect(out.validation.has_anti_fabrication).toBe(true);
     expect(out.registered).toBe(false); // validate_only
+  });
+
+  it('list_panels returns default + 10 industry panels with rosters', async () => {
+    const result = await client.callTool({ name: 'list_panels', arguments: {} });
+    const out = parse(result as any);
+    expect(out.panels).toHaveLength(11); // default + 10
+    const names = out.panels.map((p: any) => p.name);
+    expect(names).toContain('default');
+    expect(names).toContain('luxury-en');
+    const luxury = out.panels.find((p: any) => p.name === 'luxury-en');
+    expect(luxury.judges.map((j: any) => j.slug)).toContain('arnault');
+    expect(luxury.judges[0].name_cn).toBeTruthy();
+  });
+
+  it('get_brand_trend on a brand with no audits returns count 0', async () => {
+    const result = await client.callTool({ name: 'get_brand_trend', arguments: { brand: 'Never Audited Co' } });
+    const out = parse(result as any);
+    expect(out.count).toBe(0);
+    expect(out.points).toEqual([]);
+    expect(out.trend).toBe('flat');
   });
 
   it('get_status on unknown audit returns AUDIT_NOT_FOUND', async () => {

@@ -19,6 +19,8 @@ import { triggerEvolution } from './tools/trigger-evolution.js';
 import { listSubscriptions } from './tools/list-subscriptions.js';
 import { unsubscribeBrand } from './tools/unsubscribe-brand.js';
 import { getDeltaReport } from './tools/get-delta-report.js';
+import { listPanels } from './tools/list-panels.js';
+import { getBrandTrend } from './tools/get-brand-trend.js';
 import type { ServerConfig } from './types.js';
 
 export function buildConfig(): ServerConfig {
@@ -327,6 +329,36 @@ export function createServer(): McpServer {
       return {
         content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
       };
+    },
+  );
+
+  // ── Tool: list_panels ────────────────────────────────────────────────────
+  server.registerTool(
+    'list_panels',
+    {
+      description:
+        '列出可用的评委面板及各自评委阵容（10 个行业面板 + default）。在 propose_audit 选 panel 前用它发现有哪些面板。',
+      inputSchema: {},
+    },
+    async () => {
+      const result = listPanels();
+      return { content: [{ type: 'text', text: JSON.stringify(result, null, 2) }] };
+    },
+  );
+
+  // ── Tool: get_brand_trend ────────────────────────────────────────────────
+  server.registerTool(
+    'get_brand_trend',
+    {
+      description:
+        '某品牌跨多次审计的评分轨迹（overall + per-lens 随时间变化）。delta 只比两次，trend 比 N 次。',
+      inputSchema: {
+        brand: z.string().min(1),
+      },
+    },
+    async (input) => {
+      const result = await getBrandTrend(input, store);
+      return { content: [{ type: 'text', text: JSON.stringify(result, null, 2) }] };
     },
   );
 

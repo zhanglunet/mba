@@ -189,6 +189,39 @@ export interface NotifyResult {
   detail?: string;
 }
 
+// ── Panels discovery ─────────────────────────────────────────────────────────
+
+export interface ListPanelsOutput {
+  panels: Array<{
+    name: string;
+    display_name: string;
+    description: string;
+    judges: Array<{ slug: string; name_cn: string; name_en: string; language: string }>;
+  }>;
+}
+
+// ── Brand trend (trajectory across N audits) ─────────────────────────────────
+
+export interface BrandTrendPoint {
+  audit_id: string;
+  date: string;
+  panel: string;
+  overall_mean: number;
+  lens_means: Record<string, number>;
+}
+
+export interface GetBrandTrendInput {
+  brand: string;
+}
+
+export interface GetBrandTrendOutput {
+  brand: string;
+  count: number;
+  points: BrandTrendPoint[];
+  overall_delta: number;
+  trend: 'up' | 'down' | 'flat';
+}
+
 export interface AuditError {
   phase: string;
   code: string;
