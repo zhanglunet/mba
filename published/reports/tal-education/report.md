@@ -150,4 +150,12 @@ Khan Academy 创始人，非营利 AI 教育先驱，Khanmigo AI 学习伙伴发
 
 **准确性限制:** 本轮为 open-web research，所有结论均受公开资料完整性、发布时间、媒体口径和样本偏差限制。读者在做商业、投资或法律决策前，应自行核验一手资料并咨询专业顾问。
 
-> **Sources / 来源:** 本轮审计未逐条归档一手来源 URL；结论基于上述公开可访问资料。后续版本将补充可追溯来源清单。
+## Sources / 来源
+
+主要公开来源（均可公开访问；来源补录整理）：
+
+- 维基百科 —《好未来》（沿革、双减、AI 转型）：https://zh.wikipedia.org/zh-hans/好未来
+- 好未来官网 —《一文带你了解好未来》：https://www.100tal.com/zh-cn/news/detail/1730
+- 搜狐财经 — 好未来（NYSE:TAL）公司资料：https://q.stock.sohu.com/us/TAL_summary.html
+- 新浪财经 —《好未来夹缝中转型成功？市值缩水近九成》：https://finance.sina.com.cn/roll/2025-03-14/doc-inepqxct9776558.shtml
+- 雪球 — 好未来（TAL）财报数据：https://xueqiu.com/S/TAL/company
