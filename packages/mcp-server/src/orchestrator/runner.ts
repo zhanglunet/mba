@@ -22,6 +22,58 @@ function estimateCostUsd(inputTokens: number, outputTokens: number): number {
   return inputTokens * INPUT_COST_PER_TOKEN + outputTokens * OUTPUT_COST_PER_TOKEN;
 }
 
+// Rank of each work phase in the pipeline. `runAudit` enters at `state.phase`;
+// on a normal run that's `researching` (rank 1) and every phase executes. On a
+// resume it's a later phase — earlier phases are skipped and their persisted
+// artifacts are reloaded from disk instead.
+const PHASE_RANK: Record<string, number> = {
+  researching: 1,
+  synthesizing: 2,
+  judging: 3,
+  merging: 4,
+};
+
+// ── Resume artifact loaders ────────────────────────────────────────────────────
+// Reconstruct a completed phase's in-memory outputs from what it wrote to disk,
+// so a resume can pick up without re-running (and re-paying for) that phase.
+
+export async function loadResearchOutputs(
+  store: FilesystemStore,
+  auditId: string,
+): Promise<Record<string, string>> {
+  const files = await store.listFiles(auditId, '_raw');
+  const outputs: Record<string, string> = {};
+  for (const f of files) {
+    const m = /^dimension_\d+_(.+)\.md$/.exec(f);
+    if (!m) continue; // skip synthesis.md, evolution_probes.md, etc.
+    const content = await store.readFile(auditId, `_raw/${f}`);
+    if (content !== null) outputs[m[1]] = content;
+  }
+  return outputs;
+}
+
+export async function loadSynthesis(store: FilesystemStore, auditId: string): Promise<string> {
+  const synthesis = await store.readFile(auditId, '_raw/synthesis.md');
+  if (synthesis === null) {
+    throw new Error('RESUME_MISSING_ARTIFACT: _raw/synthesis.md not found');
+  }
+  return synthesis;
+}
+
+export async function loadReviews(
+  store: FilesystemStore,
+  auditId: string,
+): Promise<Record<string, string>> {
+  const files = await store.listFiles(auditId, 'reviews');
+  const reviews: Record<string, string> = {};
+  for (const f of files) {
+    if (!f.endsWith('.md')) continue;
+    const content = await store.readFile(auditId, `reviews/${f}`);
+    if (content !== null) reviews[f.slice(0, -3)] = content;
+  }
+  return reviews;
+}
+
 export async function runAudit(
   state: AuditState,
   store: FilesystemStore,
@@ -48,40 +100,62 @@ export async function runAudit(
     }
   }
 
+  // Where to enter the pipeline. Normal run: 'researching' (rank 1 → run all).
+  // Resume: a later phase, whose predecessors are reloaded from disk below.
+  const entryRank = PHASE_RANK[state.phase] ?? 1;
+
   try {
+    let researchOutputs: Record<string, string> | undefined;
+    let synthesis: string | undefined;
+    let reviews: Record<string, string> | undefined;
+
+    // Resuming past a phase → reload its persisted outputs instead of re-running.
+    if (entryRank > 1) {
+      researchOutputs = await loadResearchOutputs(store, id);
+      log('info', `[${id}] resume: reloaded ${Object.keys(researchOutputs).length} research dimensions from disk`);
+    }
+    if (entryRank > 2) synthesis = await loadSynthesis(store, id);
+    if (entryRank > 3) reviews = await loadReviews(store, id);
+
     // ── Phase 2: Research ───────────────────────────────────────────────────
     // EVOLUTION mode with a baseline → incremental probe-then-rerun (cheaper).
     // Otherwise → full fresh research of all dimensions.
-    const previousAuditId = state.options.previous_audit_id;
-    const phase2 =
-      state.mode === 'evolution' && previousAuditId
-        ? await runPhase2Evolution(state, previousAuditId, store, client, config.maxParallel, log)
-        : await runPhase2Research(state, store, client, config.maxParallel, log);
-    checkCostLimit(phase2.total_input_tokens, phase2.total_output_tokens);
-
-    state = await sm.transition(state, 'synthesizing');
+    if (entryRank <= 1) {
+      const previousAuditId = state.options.previous_audit_id;
+      const phase2 =
+        state.mode === 'evolution' && previousAuditId
+          ? await runPhase2Evolution(state, previousAuditId, store, client, config.maxParallel, log)
+          : await runPhase2Research(state, store, client, config.maxParallel, log);
+      checkCostLimit(phase2.total_input_tokens, phase2.total_output_tokens);
+      researchOutputs = phase2.outputs;
+      state = await sm.transition(state, 'synthesizing');
+    }
 
     // ── Phase 3: Synthesis ──────────────────────────────────────────────────
-    const phase3 = await runPhase3Synthesis(state, phase2.outputs, store, client, log);
-    checkCostLimit(phase3.input_tokens, phase3.output_tokens);
-
-    state = await sm.transition(state, 'judging');
+    if (entryRank <= 2) {
+      const phase3 = await runPhase3Synthesis(state, researchOutputs!, store, client, log);
+      checkCostLimit(phase3.input_tokens, phase3.output_tokens);
+      synthesis = phase3.synthesis;
+      state = await sm.transition(state, 'judging');
+    }
 
     // ── Phase 4: Judging ────────────────────────────────────────────────────
-    const phase4 = await runPhase4Judging(
-      state,
-      phase3.synthesis,
-      store,
-      client,
-      config.judgesDir,
-      log,
-    );
-    checkCostLimit(phase4.total_input_tokens, phase4.total_output_tokens);
-
-    state = await sm.transition(state, 'merging');
+    if (entryRank <= 3) {
+      const phase4 = await runPhase4Judging(
+        state,
+        synthesis!,
+        store,
+        client,
+        config.judgesDir,
+        log,
+      );
+      checkCostLimit(phase4.total_input_tokens, phase4.total_output_tokens);
+      reviews = phase4.reviews;
+      state = await sm.transition(state, 'merging');
+    }
 
     // ── Phase 5: Merge ──────────────────────────────────────────────────────
-    const phase5 = await runPhase5Merge(state, phase3.synthesis, phase4.reviews, store, client, log);
+    const phase5 = await runPhase5Merge(state, synthesis!, reviews!, store, client, log);
     checkCostLimit(phase5.input_tokens, phase5.output_tokens);
 
     // Persist token totals before marking done

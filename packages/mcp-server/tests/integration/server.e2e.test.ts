@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import { createServer } from '../../src/server.js';
 
 /**
- * End-to-end: drive the real McpServer (all 13 registered tools) over an
+ * End-to-end: drive the real McpServer (all 14 registered tools) over an
  * in-memory transport with a real MCP Client. No network — only tools that
  * don't require ANTHROPIC_API_KEY are exercised for happy paths; API-gated
  * tools are checked for the correct error.
@@ -39,7 +39,7 @@ describe('MCP server e2e', () => {
     return JSON.parse(text);
   }
 
-  it('registers all 13 tools', async () => {
+  it('registers all 14 tools', async () => {
     const { tools } = await client.listTools();
     const names = tools.map(t => t.name).sort();
     expect(names).toEqual(
@@ -54,6 +54,7 @@ describe('MCP server e2e', () => {
         'list_panels',
         'list_subscriptions',
         'propose_audit',
+        'resume_audit',
         'subscribe_brand',
         'trigger_evolution',
         'unsubscribe_brand',
@@ -169,6 +170,29 @@ This persona exists purely to exercise the validator path end to end with enough
     expect(out.count).toBe(0);
     expect(out.points).toEqual([]);
     expect(out.trend).toBe('flat');
+  });
+
+  it('resume_audit on a not-yet-started (proposed) audit returns RESUME_NOT_APPLICABLE', async () => {
+    const proposeRes = await client.callTool({
+      name: 'propose_audit',
+      arguments: { brand: 'Resumable Brand' },
+    });
+    const { audit_id } = parse(proposeRes as any);
+
+    const result = await client.callTool({ name: 'resume_audit', arguments: { audit_id } });
+    expect((result as any).isError).toBe(true);
+    const text = (result as any).content.map((c: any) => c.text).join('');
+    expect(text).toContain('RESUME_NOT_APPLICABLE');
+  });
+
+  it('resume_audit on unknown audit returns AUDIT_NOT_FOUND', async () => {
+    const result = await client.callTool({
+      name: 'resume_audit',
+      arguments: { audit_id: 'does-not-exist' },
+    });
+    expect((result as any).isError).toBe(true);
+    const text = (result as any).content.map((c: any) => c.text).join('');
+    expect(text).toContain('AUDIT_NOT_FOUND');
   });
 
   it('get_status on unknown audit returns AUDIT_NOT_FOUND', async () => {

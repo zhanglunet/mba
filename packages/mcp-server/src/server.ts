@@ -10,6 +10,7 @@ import { CronScheduler } from './orchestrator/scheduler.js';
 import { runAudit } from './orchestrator/runner.js';
 import { LLMClient } from './llm/client.js';
 import { proposeAudit } from './tools/propose-audit.js';
+import { resumeAudit } from './tools/resume-audit.js';
 import { getStatus } from './tools/get-status.js';
 import { fetchReport } from './tools/fetch-report.js';
 import { listAudits } from './tools/list-audits.js';
@@ -153,6 +154,45 @@ export function createServer(): McpServer {
             }),
           },
         ],
+      };
+    },
+  );
+
+  // ── Tool: resume_audit ───────────────────────────────────────────────────
+  server.registerTool(
+    'resume_audit',
+    {
+      description:
+        '续跑一个卡住的审计（进程中断 / 出错 / interrupted），复用同一 audit_id 与配置。已完成的阶段从磁盘复用产物、不重跑，从第一个未完成的阶段继续。非阻塞，用 get_status 轮询。',
+      inputSchema: {
+        audit_id: z.string().describe('要续跑的 audit_id'),
+        max_cost_usd: z
+          .number()
+          .positive()
+          .optional()
+          .describe('成本上限（USD），超过则中断'),
+      },
+    },
+    async (input) => {
+      const apiKey = process.env['ANTHROPIC_API_KEY'];
+      const result = await resumeAudit(input, {
+        store,
+        sm,
+        hasApiKey: Boolean(apiKey),
+        run: (s) => {
+          const client = new LLMClient(apiKey!);
+          const runnerConfig = {
+            maxParallel: config.max_parallel,
+            maxCostUsd: s.options.max_cost_usd,
+            judgesDir,
+          };
+          runAudit(s, store, sm, runnerConfig, client, log).catch(err => {
+            log('error', `resume_audit background runner crashed: ${err}`);
+          });
+        },
+      });
+      return {
+        content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
       };
     },
   );

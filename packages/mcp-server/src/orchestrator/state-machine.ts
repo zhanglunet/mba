@@ -69,6 +69,56 @@ export class StateMachine {
   canResume(state: AuditState): boolean {
     return state.phase === 'interrupted';
   }
+
+  // ── Resume support ─────────────────────────────────────────────────────────
+  // A stalled audit (process died mid-run, an error, or an explicit interrupt)
+  // can be resumed. It is resumable in any non-terminal *work* phase, plus the
+  // 'interrupted' and 'failed' terminal-ish states. 'proposed' (never started)
+  // and 'done' (finished) are not resumable.
+  private static readonly RESUMABLE: AuditPhase[] = [
+    'researching',
+    'synthesizing',
+    'judging',
+    'merging',
+    'interrupted',
+    'failed',
+  ];
+
+  private static readonly WORK_PHASES: AuditPhase[] = [
+    'researching',
+    'synthesizing',
+    'judging',
+    'merging',
+  ];
+
+  isResumable(state: AuditState): boolean {
+    return StateMachine.RESUMABLE.includes(state.phase);
+  }
+
+  // The work phase to resume execution from: the first one that never completed.
+  // `completed_phases` only records phases the audit transitioned *out* of, so a
+  // phase listed there wrote its artifacts to disk and can be reloaded instead of
+  // re-run. Falls back to 'merging' if all four somehow completed without 'done'.
+  resumePhase(state: AuditState): AuditPhase {
+    for (const p of StateMachine.WORK_PHASES) {
+      if (!state.completed_phases.includes(p)) return p;
+    }
+    return 'merging';
+  }
+
+  // Re-enter a work phase for a resume. Unlike `transition`, this bypasses the
+  // forward-only transition table (we're stepping back into an in-progress phase)
+  // and does not touch `completed_phases` — no phase is being completed here.
+  async resumeInto(state: AuditState, to: AuditPhase): Promise<AuditState> {
+    const next: AuditState = {
+      ...state,
+      phase: to,
+      last_progress_at: new Date().toISOString(),
+    };
+    await this.store.writeState(next);
+    this.log('info', `[${state.audit_id}] resume → ${to}`);
+    return next;
+  }
 }
 
 export function makeAuditId(brandSlug: string): string {

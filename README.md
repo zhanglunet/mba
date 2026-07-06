@@ -13,7 +13,7 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 `/mba` 文件夹下的核心 skill 名为 **Metric Brand Auditor**(MBA)—— 一条由 Lead 编排、子 agent 并行执行、人物评委 panel 独立打分的品牌影响力审计流水线。默认 panel 是 5 位评委,另有 9 套行业 panel 可按需替换 / 扩展(共 **10 套内置 panel、43 位评委,全部可运行**)。整个仓库就是这条流水线的源代码 + 角色资料 + 历史报告。
 
-> **v0.4.1** —— 两种用法:① Claude Code **skill**(`/mba <brand>`);② 独立 **MCP server**([`mba-mcp-server`](https://www.npmjs.com/package/mba-mcp-server),已上 npm,13 工具),可接进 Claude Desktop / Cursor,支持**品牌订阅 → 自动重审 → delta 报告 → webhook/email 通知**的演化闭环。见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
+> **v0.4.1** —— 两种用法:① Claude Code **skill**(`/mba <brand>`);② 独立 **MCP server**([`mba-mcp-server`](https://www.npmjs.com/package/mba-mcp-server),已上 npm,14 工具),可接进 Claude Desktop / Cursor,支持**品牌订阅 → 自动重审 → delta 报告 → webhook/email 通知**的演化闭环。见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
 
 ## 团队 / Team
 
@@ -142,7 +142,7 @@ mba/
 │   └── wuying/                      ← 阿里云无影 AgentBay helper + smoke test
 ├── assets/judges/                   ← 评委插画头像(严禁真人照片)
 ├── published/reports/               ← 已确认可公开发布的报告源(显式 git add -f 才入库)
-├── packages/mcp-server/             ← mba-mcp-server:MBA 的 MCP 封装(TypeScript,13 工具,已发布 npm)
+├── packages/mcp-server/             ← mba-mcp-server:MBA 的 MCP 封装(TypeScript,14 工具,已发布 npm)
 ├── site/                            ← mbabrand.com 的源:index.html + build.sh(Cloudflare Pages)
 ├── docs/                            ← 完整设计文档 01-13 + mcp-server-design + hackathon 资料
 ├── .github/workflows/panel-validation.yml ← CI:校验 panel / 结构 / py_compile / shell / site build
@@ -519,7 +519,7 @@ npx -y mba-mcp-server@latest      # 直接跑,或写进下面的 claude_desktop_
 }
 ```
 
-然后直接说"用 mba 审一下 Anthropic",agent 会走 `propose_audit → confirm_audit → get_status → fetch_report`。共 **13 个工具**(7 核心审计 + 6 演化追踪),支持**品牌订阅 + 自动重审 + delta 报告 + webhook/email 通知**——品牌有变化时自动重审并推送。增量重跑让演化审计成本从 ~$3 降到 ~$0.4/次。
+然后直接说"用 mba 审一下 Anthropic",agent 会走 `propose_audit → confirm_audit → get_status → fetch_report`。共 **14 个工具**(8 核心审计 + 6 演化追踪),支持**品牌订阅 + 自动重审 + delta 报告 + webhook/email 通知**——品牌有变化时自动重审并推送。增量重跑让演化审计成本从 ~$3 降到 ~$0.4/次。
 
 完整用法见 [`docs/13-mcp-quickstart.md`](docs/13-mcp-quickstart.md);源码与开发/发布说明见 [`packages/mcp-server/`](packages/mcp-server)。
 

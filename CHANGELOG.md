@@ -4,6 +4,18 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
+## Unreleased
+
+### Added
+- **`resume_audit` MCP tool** — resume a stalled audit (process died mid-run, an
+  error, or an interrupt) without creating a new one. It keeps the same
+  `audit_id`, proposal, panel, and options; reloads the artifacts of every
+  finished phase from disk (`_raw/dimension_*.md`, `_raw/synthesis.md`,
+  `reviews/*.md`) and re-enters the pipeline at the first phase that never
+  completed — so a stall in judging or merging doesn't re-pay for research.
+  Wires up the previously-dormant `interrupted` / resume machinery. The MCP
+  server now has **14 tools**. (14 new tests; 113 total.)
+
 ## v0.4.1 — 2026-07-06
 
 First **npm release** of the MCP server, plus panel / evolution / CI enhancements
