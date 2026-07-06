@@ -4,9 +4,15 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
-## Unreleased
+## v0.4.1 — 2026-07-06
+
+First **npm release** of the MCP server, plus panel / evolution / CI enhancements
+on top of v0.4.0. `mba-mcp-server` is now `npx`-installable — no clone required.
 
 ### Added
+- **`mba-mcp-server` published to npm** — install with
+  `npx -y mba-mcp-server@latest` (or point `claude_desktop_config.json` at it).
+  Ships two bins: `mba-mcp-server` (MCP stdio) and `mba-webhook-receiver`. MIT.
 - **`list_panels` + `get_brand_trend` MCP tools** — `list_panels` exposes the 10
   panels and their rosters so a caller can discover options before choosing a
   `panel`; `get_brand_trend` gives a brand's score trajectory across all its
@@ -17,7 +23,8 @@ track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
   personas/panels are in sync with their sources.
 - **npm publish automation** — `.github/workflows/publish-npm.yml` publishes
   `mba-mcp-server` to npm on manual dispatch (idempotent, with a `dry_run`
-  option). One-time setup: add an `NPM_TOKEN` repo secret.
+  option). One-time setup: add an `NPM_TOKEN` repo secret (a granular access
+  token, so it can publish under a 2FA-protected account).
 - **Full panel system in the MCP server** — `propose_audit` now accepts a
   `panel` (default / auto / luxury-en / vc-en / vc-cn / consumer-cn / ai-app-cn /
   edu-cn / cross-border / security-cn-global). The 43 judge personas across all
@@ -30,12 +37,6 @@ track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
   Bearer auth, `GET /status` + `/health`, shares `MBA_STORE_DIR` with the MCP
   server. Completes the four evolution triggers: subscription cron, manual,
   notify-out, and webhook-in. (`src/http/receiver.ts`, 18 tests.)
-
-### Fixed
-- Chart.js infinite-growth on the kimichat & qianxin report charts (radar + Lens
-  Means bar): canvases now sit in a fixed-height `.chart-wrap` container.
-
-### Added
 - `scripts/qa_report_render.mjs` — headless-render QA for published reports.
   Catches chart infinite-growth, collapsed canvases, unrendered Mermaid, and JS
   errors that static validators miss. Run before publishing: `node
@@ -45,11 +46,17 @@ track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
   meituan / tal-education reports.
 
 ### Changed
+- CI workflows (`mcp-ci.yml`, `publish-npm.yml`) run on **Node 22** — Node 20 is
+  being deprecated on GitHub runners. Package `engines` stays `>=20`.
 - Report validators (`validate_report.py`, `validate_html_report.py`) split into
   hard (block CI) vs advisory (warn) rules, with advisory anchors covering MBA's
   real bilingual section variants (TL;DR / Core Insight / 最大分歧 / Judge Total …).
 - `release.yml` now sources release notes from the matching CHANGELOG section and
   updates an existing release instead of no-oping.
+
+### Fixed
+- Chart.js infinite-growth on the kimichat & qianxin report charts (radar + Lens
+  Means bar): canvases now sit in a fixed-height `.chart-wrap` container.
 
 ## v0.4.0 — 2026-07-04
 

@@ -139,7 +139,7 @@ pnpm build            # compile to dist/
 
 Tests include an end-to-end suite (`tests/integration/server.e2e.test.ts`) that
 drives the real `createServer()` over an in-memory MCP transport with an actual
-`Client`, verifying tool registration and request/response wiring for all 11 tools.
+`Client`, verifying tool registration and request/response wiring for all 13 tools.
 
 See [`docs/mcp-server-design.md`](../../docs/mcp-server-design.md) for full architecture.
 
@@ -147,8 +147,10 @@ See [`docs/mcp-server-design.md`](../../docs/mcp-server-design.md) for full arch
 
 ### Automated (recommended) — GitHub Actions
 
-One-time: add an npm **automation** token as the repo secret `NPM_TOKEN`
-(npmjs.com → Access Tokens → Generate → *Automation*).
+One-time: add an npm **granular access token** as the repo secret `NPM_TOKEN`
+(npmjs.com → Access Tokens → Generate → *Granular Access Token*, Read and write).
+A granular token can publish under a 2FA-protected account; classic automation
+tokens are rejected with `E403` when the account enforces 2FA.
 
 Then, to publish: bump `version` in `package.json`, commit, and run the
 **Publish npm** workflow (`.github/workflows/publish-npm.yml`) from the Actions
@@ -171,14 +173,15 @@ npm publish               # prepublishOnly runs typecheck + tests + build first
 
 ## Status
 
-**v0.1.0 — complete · 11 tools · 67 tests**  
+**v0.1.0 — published to npm · 13 tools · 99 tests**  
 - ✅ Project scaffold (TypeScript, vitest, MCP SDK)  
 - ✅ State machine with all valid transitions  
 - ✅ Filesystem store with atomic writes  
-- ✅ 6 core tools + Phase 2-5 LLM orchestration  
-- ✅ Judge persona validator  
-- ✅ Evolution tracking — subscriptions, cron scheduler, `trigger_evolution`, `get_delta_report`  
+- ✅ 7 core tools (incl. `list_panels`) + Phase 2-5 LLM orchestration  
+- ✅ Judge persona validator + full 10-panel / 43-judge roster  
+- ✅ Evolution tracking — subscriptions, cron scheduler, `trigger_evolution`, `get_delta_report`, `get_brand_trend`  
 - ✅ Incremental EVOLUTION re-run (change probes — cost ~$3 → ~$0.4/run)  
 - ✅ Notifications — webhook + email push on audit completion  
+- ✅ Webhook receiver (`mba-webhook-receiver`) for inbound triggers  
 - ✅ End-to-end tests over a real MCP Client / in-memory transport  
-- ⏳ npm publish  
+- ✅ Published to npm (`npx -y mba-mcp-server@latest`)  
