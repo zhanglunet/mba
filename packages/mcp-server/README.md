@@ -28,6 +28,7 @@ Then in Claude: *"用 mba 审一下 OpenClaw"* → Claude calls `propose_audit` 
 |---|---|
 | `propose_audit` | Generate PRD for a brand, returns `audit_id` |
 | `confirm_audit` | Start Phase 2-5 after reviewing proposal |
+| `resume_audit` | Resume a stalled/failed audit — reloads finished phases, re-runs the rest |
 | `get_status` | Poll phase / progress / token usage |
 | `fetch_report` | Pull finished report (markdown / html / both) |
 | `list_audits` | List all audits in `MBA_STORE_DIR` |
@@ -139,7 +140,7 @@ pnpm build            # compile to dist/
 
 Tests include an end-to-end suite (`tests/integration/server.e2e.test.ts`) that
 drives the real `createServer()` over an in-memory MCP transport with an actual
-`Client`, verifying tool registration and request/response wiring for all 13 tools.
+`Client`, verifying tool registration and request/response wiring for all 14 tools.
 
 See [`docs/mcp-server-design.md`](../../docs/mcp-server-design.md) for full architecture.
 
@@ -173,11 +174,11 @@ npm publish               # prepublishOnly runs typecheck + tests + build first
 
 ## Status
 
-**v0.1.0 — published to npm · 13 tools · 99 tests**  
+**v0.1.0 — published to npm · 14 tools · 113 tests**  
 - ✅ Project scaffold (TypeScript, vitest, MCP SDK)  
 - ✅ State machine with all valid transitions  
 - ✅ Filesystem store with atomic writes  
-- ✅ 7 core tools (incl. `list_panels`) + Phase 2-5 LLM orchestration  
+- ✅ 8 core tools (incl. `list_panels`, `resume_audit`) + Phase 2-5 LLM orchestration  
 - ✅ Judge persona validator + full 10-panel / 43-judge roster  
 - ✅ Evolution tracking — subscriptions, cron scheduler, `trigger_evolution`, `get_delta_report`, `get_brand_trend`  
 - ✅ Incremental EVOLUTION re-run (change probes — cost ~$3 → ~$0.4/run)  

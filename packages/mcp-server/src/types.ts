@@ -268,6 +268,19 @@ export interface GetStatusOutput {
   tokens_used: { input: number; output: number };
 }
 
+export interface ResumeAuditInput {
+  audit_id: string;
+  max_cost_usd?: number;
+}
+
+export interface ResumeAuditOutput {
+  audit_id: string;
+  phase: AuditPhase;
+  resumed_from: AuditPhase;
+  resume_point: AuditPhase;
+  message: string;
+}
+
 export interface FetchReportInput {
   audit_id: string;
   format?: 'markdown' | 'html' | 'both';

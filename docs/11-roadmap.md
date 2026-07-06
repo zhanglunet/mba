@@ -6,11 +6,11 @@
 
 ---
 
-## 当前状态快照（2026-07-04）
+## 当前状态快照（2026-07-06）
 
 | 维度 | 状态 | 备注 |
 |------|------|------|
-| 版本 | **v0.4.0** | MCP server + 演化追踪里程碑 |
+| 版本 | **v0.4.1** | MCP server 首发 npm + 演化追踪里程碑 |
 | 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
 | 评委全档进度 | ⚠️ 15/43 全档 | 28 人仍在 seed 层，待深化 |
@@ -19,7 +19,7 @@
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
 | 集成测试 | ✅ 已建立 | report-validation.yml + MCP e2e（真实 MCP 协议层） |
 | --dry-run / --panel-merge | ✅ 已实现 | Phase 0 §0.5 / Phase 5M |
-| MCP Server 形态 | ✅ v0.1.0 完成 | packages/mcp-server/ · **11 工具** · **10 面板 / 43 评委** · webhook 接收端 · 93 tests |
+| MCP Server 形态 | ✅ 已发布 npm | packages/mcp-server/ · **14 工具** · **10 面板 / 43 评委** · webhook 接收端 · `resume_audit` 续跑 · 113 tests · `npx -y mba-mcp-server@latest` |
 | 演化追踪 | ✅ 完成 | 订阅 + cron + trigger_evolution + delta 报告 + 增量重跑 + webhook/email 通知 |
 
 ### 评委全档分布（v0.2.36）
@@ -354,5 +354,20 @@
 - **唯一剩余阻断**：npm token + 出站网络（此环境无）；本地一切就绪
 
 **commit**：待推送
+
+### 2026-07-06
+
+**事项**：npm 首发 + 面板/演化/CI 增强 + `resume_audit`（v0.4.0 → v0.4.1）
+**完成内容**：
+- **发布 `mba-mcp-server@0.1.0` 到 npm**（`npx -y mba-mcp-server@latest` 即可用，无需 clone）。踩过三关：`ENEEDAUTH`（补 `NPM_TOKEN`）→ `E403`（Classic 令牌换 Granular Access Token 以绕过账号 2FA）→ Node 20 弃用告警（CI 升 Node 22）
+- **`list_panels` + `get_brand_trend`**（11 → 13 工具）：面板发现 + 品牌跨 N 次审计评分轨迹
+- **`resume_audit`**（13 → 14 工具）：续跑卡住/失败的审计，复用 audit_id 与配置，已完成阶段从磁盘复用产物（`_raw/dimension_*.md` / `synthesis.md` / `reviews/*.md`）、只重跑未完成阶段；接上了此前 dormant 的 `interrupted`/resume 脚手架
+- **mcp-ci.yml**：MCP 包的 typecheck + 测试 + build 现在每个 PR 都跑（此前只有 Python 报告校验器在跑），外加 generated 数据同步校验
+- **文档/网站**：README（npm 徽章 + `npx` 一行安装）、CHANGELOG、site 首页、v0.4.1 GitHub Release 全部同步
+- 测试：99 → **113 tests**（resume 新增 14）
+
+**关键判断**：代码侧无阻断建设已收尾。剩余高杠杆项全部需外部资源解锁（Wuying Pro → 中文评委 + 自主新闻触发器；出站网络 → vc-en 英文评委，实测 paulgraham/Google News RSS 仍 403）
+
+**commit**：见 PR #41（list_panels/get_brand_trend）· #42（Node 22）· #43（v0.4.1 docs）· 本次（resume_audit）
 
 <!-- 在此追加后续进度记录，格式参考上方 -->
