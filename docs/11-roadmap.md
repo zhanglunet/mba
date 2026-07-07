@@ -36,7 +36,7 @@
 | ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
 | cross-border | **3/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
 | vc-cn | 1/5 | `zhanglei`/`xuxin`/`shennanpeng` — 中文,多二手 |
-| consumer-cn | **2/5** | ✅ `yangjianhui`(阳萌,同属 cross-border)+ `luoyonghao`(罗永浩)已 full(2026-07-07,老罗 2014 演讲全文实录+2021 专访);`jiangnanchun`(演讲+书)待评估;`zhongshanshan`/`zhanglan` 一手薄 |
+| consumer-cn | **3/5** | ✅ `yangjianhui`(阳萌,同属 cross-border)+ `luoyonghao`(罗永浩)+ `jiangnanchun`(江南春,2017 两场演讲实录)已 full(2026-07-07);`zhongshanshan`/`zhanglan` 一手薄,待评估 |
 
 ---
 
