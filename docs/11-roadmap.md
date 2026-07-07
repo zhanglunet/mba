@@ -31,7 +31,7 @@
 | 面板 | 全档进度 | 下一步 |
 |------|---------|--------|
 | default / auto / security-cn-global / vc-en | ✅ 满档 | — |
-| **luxury-en** | **0/5** | ⚠️ 非 5/5:`cucinelli` 一手强(人文资本主义 report ~3.9 万英文词);`arnault` LVMH 致股东信偏薄(边际,需多篇+股东会 transcript);`awintour`/`tomford`/`burton` 多为设计师访谈(二手)。按 80% 门槛先做 Cucinelli(±Arnault) |
+| **luxury-en** | **1/5** | ✅ `cucinelli` 已 full(2026-07-07,人文资本主义 report ~3.9 万英文词)。⚠️ `arnault` 致股东信偏薄(边际);`awintour`/`tomford`/`burton` 多为设计师访谈(二手),按 80% 门槛暂留 seed |
 | edu-cn | 2/5 | `yuminhong` 深化中;`salkhan`(英文,TED 正文被 JS 截断,需补书/blog);`zhangbangxin`(中文) |
 | ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
 | cross-border | 0/5 | `yangjianhui`(阳萌)/`huangzheng`(黄峥)深化中;`chennian`/`zhuangshuai` 待评估;`shouzichew` 英文一手薄 |

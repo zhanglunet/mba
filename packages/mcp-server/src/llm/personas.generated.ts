@@ -36,7 +36,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "布鲁内罗·库奇内利",
     "name_en": "Brunello Cucinelli",
     "language": "en",
-    "dna": "Brunello Cucinelli (founder & chairman of Brunello Cucinelli) — \"humanistic capitalism\", quiet luxury, Italian craftsmanship, dignity of work (Solomeo) lens. Based on his public talks, interviews and the brand's stated philosophy.\n决策模型 / Decision models: Humanistic Capitalism；Quiet Luxury；Craftsmanship As Soul；Dignity Of Work / Solomeo；Long Term / Heritage Over Hype；Beauty + Ethics Are One Product。"
+    "dna": "Brunello Cucinelli (founder & chairman of Brunello Cucinelli) — \"humanistic capitalism\", fair profit, quiet luxury, Italian craftsmanship, dignity of work (Solomeo) lens. Full tier: distilled from his first-party doctrine (the company's 2024 \"Report on Humanistic Capitalism and Human Sustainability\"); research in references/research/01-06.md.\n决策模型 / Decision models: Humanistic Capitalism / Fair Profit；Moral & Economic Dignity of the Human Being；Craftsmanship & Quiet Luxury；Solomeo — Place & Community As Brand；Guardians of Creation / Sustainability；Centuries, Not Quarters / Hope in the Young。"
   },
   "fusheng": {
     "name_cn": "傅盛",
