@@ -4,7 +4,11 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
-## Unreleased
+## v0.4.2 — 2026-07-07
+
+Real-data research + audit recovery, on top of v0.4.1. Two additions that make
+the MCP server both more accurate and more robust — neither needs the sandbox to
+have any outbound network of its own.
 
 ### Added
 - **Live web search in research (opt-in)** — set `MBA_WEB_SEARCH=1` and Phase 2

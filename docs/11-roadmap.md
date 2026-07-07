@@ -10,7 +10,7 @@
 
 | 维度 | 状态 | 备注 |
 |------|------|------|
-| 版本 | **v0.4.1** | MCP server 首发 npm + 演化追踪里程碑 |
+| 版本 | **v0.4.2** | 实时联网研究 + 断点续跑（v0.4.1 首发 npm） |
 | 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
 | 评委全档进度 | ⚠️ 15/43 全档 | 28 人仍在 seed 层，待深化 |
@@ -19,7 +19,7 @@
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
 | 集成测试 | ✅ 已建立 | report-validation.yml + MCP e2e（真实 MCP 协议层） |
 | --dry-run / --panel-merge | ✅ 已实现 | Phase 0 §0.5 / Phase 5M |
-| MCP Server 形态 | ✅ 已发布 npm | packages/mcp-server/ · **14 工具** · **10 面板 / 43 评委** · webhook 接收端 · `resume_audit` 续跑 · 113 tests · `npx -y mba-mcp-server@latest` |
+| MCP Server 形态 | ✅ 已发布 npm | packages/mcp-server/ · **14 工具** · **10 面板 / 43 评委** · webhook 接收端 · `resume_audit` 续跑 · **实时联网研究**(`MBA_WEB_SEARCH`) · 121 tests · `npx -y mba-mcp-server@latest` |
 | 演化追踪 | ✅ 完成 | 订阅 + cron + trigger_evolution + delta 报告 + 增量重跑 + webhook/email 通知 |
 
 ### 评委全档分布（v0.2.36）
@@ -369,5 +369,18 @@
 **关键判断**：代码侧无阻断建设已收尾。剩余高杠杆项全部需外部资源解锁（Wuying Pro → 中文评委 + 自主新闻触发器；出站网络 → vc-en 英文评委，实测 paulgraham/Google News RSS 仍 403）
 
 **commit**：见 PR #41（list_panels/get_brand_trend）· #42（Node 22）· #43（v0.4.1 docs）· 本次（resume_audit）
+
+### 2026-07-07
+
+**事项**：实时联网研究 + 断点续跑，打 v0.4.2（v0.4.1 → v0.4.2）
+**完成内容**：
+- **`resume_audit`**（PR #44，13 → 14 工具）：续跑卡住/失败的审计，复用 audit_id 与配置，已完成阶段从磁盘复用产物、只重跑未完成阶段
+- **实时联网研究**（PR #45）：`MBA_WEB_SEARCH=1` 让 Phase 2 用 Anthropic **服务端 web_search** 工具带真实来源 URL 研究，写入 `_raw/`；搜索在 Anthropic 侧发生、**不需要沙箱出网**，锁死出站策略的环境也能用。仅研究阶段联网。`MBA_WEB_SEARCH_MAX_USES` 控成本
+- 测试：113 → **121 tests**
+- v0.4.2 GitHub Release + README/site/CHANGELOG 同步
+
+**关键结论（出站网络）**：实测沙箱出站是**组织级 egress allowlist**（网关 403，只放包管理源），代理 README 明令禁止绕行。给 MCP server 真实数据的最优解是 **web_search**（零 egress 改动、最安全），已落地。仅剩 **Wuying leg**（中文登录墙源，需 Pro）和**全量出站**（几乎无非它不可的场景）两条，均需你解锁资源
+
+**commit**：PR #44（resume_audit）· #45（web_search）
 
 <!-- 在此追加后续进度记录，格式参考上方 -->
