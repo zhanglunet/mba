@@ -83,7 +83,7 @@ export async function runPhase2Evolution(
         // No previous research → must do full research (treat as CHANGED)
         if (!previous) {
           const userPrompt = dimensionUserPrompt(state.brand, dim);
-          const res = await client.complete(researchSystem, userPrompt, 2048);
+          const res = await client.complete(researchSystem, userPrompt, 2048, { search: true });
           const content = `# ${dim.title} / ${dim.title_en}\n\n${res.content}`;
           await store.writeFile(state.audit_id, relPath, content);
           return {
@@ -111,7 +111,7 @@ export async function runPhase2Evolution(
         if (verdict === 'CHANGED') {
           // Full re-research
           const userPrompt = dimensionUserPrompt(state.brand, dim);
-          const res = await client.complete(researchSystem, userPrompt, 2048);
+          const res = await client.complete(researchSystem, userPrompt, 2048, { search: true });
           content = res.content;
           dimInput += res.input_tokens;
           dimOutput += res.output_tokens;

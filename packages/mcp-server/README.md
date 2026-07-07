@@ -76,8 +76,24 @@ The 43 judge personas are bundled from the project's authored `perspectives/*` f
 | `MBA_MAX_PARALLEL` | `5` | Max concurrent sub-agents per audit |
 | `MBA_MAX_CONCURRENT_AUDITS` | `3` | Max simultaneous audits |
 | `MBA_LOG_LEVEL` | `info` | `error / warn / info / debug / trace` |
+| `MBA_WEB_SEARCH` | `0` | `1` → research phases use Anthropic's live web search (real, cited sources) |
+| `MBA_WEB_SEARCH_MAX_USES` | `5` | Max searches per dimension (Anthropic bills per search) |
 | `MBA_RESEND_API_KEY` | *(optional)* | [Resend](https://resend.com) API key — enables email notifications |
 | `MBA_NOTIFY_FROM` | *(optional)* | From-address for email notifications (required with Resend key) |
+
+### Live web search (real sources)
+
+By default the research phase (Phase 2) reasons from the model's own knowledge.
+Set **`MBA_WEB_SEARCH=1`** to have it use Anthropic's **server-side web search**
+tool instead: each dimension is researched against live results, and the real
+source URLs are captured into `_raw/dimension_*.md` (anti-fabrication — sources
+are verifiable, never invented).
+
+The search runs on Anthropic's infrastructure (via `api.anthropic.com`), so it
+needs **no outbound network access of its own** — it works even in a locked-down
+sandbox. Requirements: web search must be enabled on your Anthropic account, and
+it's billed per search (cap it with `MBA_WEB_SEARCH_MAX_USES`). Only the research
+phases search — judging, synthesis, and merge never do.
 
 ### Notifications
 
