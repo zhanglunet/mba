@@ -7,6 +7,13 @@ track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 ## Unreleased
 
 ### Added
+- **Live web search in research (opt-in)** — set `MBA_WEB_SEARCH=1` and Phase 2
+  researches each dimension with Anthropic's **server-side web_search** tool
+  instead of the model's own memory, capturing the real source URLs into
+  `_raw/dimension_*.md`. The search runs on Anthropic's infra (`api.anthropic.com`),
+  so it needs **no sandbox outbound network** — it works even in a locked-down
+  egress policy. Billed per search; cap with `MBA_WEB_SEARCH_MAX_USES` (default 5).
+  Only research phases search (judging / synthesis / merge never do).
 - **`resume_audit` MCP tool** — resume a stalled audit (process died mid-run, an
   error, or an interrupt) without creating a new one. It keeps the same
   `audit_id`, proposal, panel, and options; reloads the artifacts of every

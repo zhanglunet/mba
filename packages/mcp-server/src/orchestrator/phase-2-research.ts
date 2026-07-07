@@ -33,7 +33,9 @@ export async function runPhase2Research(
     const results = await Promise.allSettled(
       batch.map(async dim => {
         const userPrompt = dimensionUserPrompt(state.brand, dim);
-        const result = await client.complete(systemPrompt, userPrompt, 2048);
+        // Research phases request live web search (a no-op unless the client has
+        // it enabled). Sources are folded into the returned content.
+        const result = await client.complete(systemPrompt, userPrompt, 2048, { search: true });
 
         const content = `# ${dim.title} / ${dim.title_en}\n\n${result.content}`;
         await store.writeFile(state.audit_id, `_raw/dimension_${DIMENSIONS.indexOf(dim) + 1}_${dim.slug}.md`, content);
