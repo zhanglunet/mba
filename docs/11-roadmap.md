@@ -13,7 +13,7 @@
 | 版本 | **v0.4.2** | 实时联网研究 + 断点续跑（v0.4.1 首发 npm） |
 | 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
-| 评委全档进度 | ⚠️ 15/43 全档 | 28 人仍在 seed 层，待深化 |
+| 评委全档进度 | ⚠️ **20/43 全档** | 23 人仍在 seed 层；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
 | mbabrand.com | ✅ 上线 | Cloudflare Pages |
 | 公开报告 | ✅ 10/10 全部发布 | 10 面板各 1 份；Hermès 8.64 创三项史上最高 |
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
@@ -22,27 +22,21 @@
 | MCP Server 形态 | ✅ 已发布 npm | packages/mcp-server/ · **14 工具** · **10 面板 / 43 评委** · webhook 接收端 · `resume_audit` 续跑 · **实时联网研究**(`MBA_WEB_SEARCH`) · 121 tests · `npx -y mba-mcp-server@latest` |
 | 演化追踪 | ✅ 完成 | 订阅 + cron + trigger_evolution + delta 报告 + 增量重跑 + webhook/email 通知 |
 
-### 评委全档分布（v0.2.36）
+### 评委全档分布（按面板覆盖，更新 2026-07-07）
 
-**已完成全档（15 人）**
+> 权威 FULL/seed slug 名单以 `docs/10 §6` 为准（本节只给面板覆盖概览,不再手抄易错的 slug 列表）。
 
-| 面板 | 评委 slug |
-|------|-----------|
-| default | fusheng, jobs, likejia, wu-jundong, zhang-yiming |
-| auto | musk, leijun, lixiang, hexiaopeng, libin |
-| security-cn-global | zhouhongyi, zhangmingzheng, renzhengfei |
-| vc-en | jensenhuang, satyanadella |
+**满档面板(4)**:`default` · `auto` · `security-cn-global` · **`vc-en`**(2026-07-07 本场完成:paulg/naval/pmarca/pthiel/rhoffman)。
 
-**待深化（28 人）**
-
-| 面板 | 待深化评委 | 可用资料情况 |
-|------|-----------|-------------|
-| ai-app-cn | 3 人（wangxiaochuan, wanghuiwen, limuou） | 中文为主，需 Wuying Pro |
-| edu-cn | 3 人（salkhan, shouzicheng, huangzheng） | 部分有英文 PDF |
-| vc-en | 3 人（paulgraham, bhorowitz, marcandreessen） | **英文 essay 可直接 WebFetch** |
-| vc-cn | 3 人（zhanglei, xuxin, shennp） | 中文为主，需 Wuying Pro |
-| consumer-cn | 5 人（jiangnanc, zhongsc, luoyonghao, yangm, zhangl） | 中文为主，需 Wuying Pro |
-| cross-border | 4 人（huangzheng-cr, zhoushouzi, chennnian, zhuangshuai） | 中文为主，需 Wuying Pro |
+| 面板 | 全档进度 | 下一步 |
+|------|---------|--------|
+| default / auto / security-cn-global / vc-en | ✅ 满档 | — |
+| **luxury-en** | **0/5** | ⚠️ 非 5/5:`cucinelli` 一手强(人文资本主义 report ~3.9 万英文词);`arnault` LVMH 致股东信偏薄(边际,需多篇+股东会 transcript);`awintour`/`tomford`/`burton` 多为设计师访谈(二手)。按 80% 门槛先做 Cucinelli(±Arnault) |
+| edu-cn | 2/5 | `yuminhong` 深化中;`salkhan`(英文,TED 正文被 JS 截断,需补书/blog);`zhangbangxin`(中文) |
+| ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
+| cross-border | 0/5 | `yangjianhui`(阳萌)/`huangzheng`(黄峥)深化中;`chennian`/`zhuangshuai` 待评估;`shouzichew` 英文一手薄 |
+| vc-cn | 1/5 | `zhanglei`/`xuxin`/`shennanpeng` — 中文,多二手 |
+| consumer-cn | 0/5 | `luoyonghao`(发布会转录可)/`jiangnanchun`(演讲+书)/`zhuangshuai` 等;`zhongshanshan`/`zhanglan` 一手薄 |
 
 ---
 
@@ -50,8 +44,9 @@
 
 | 阻断项 | 影响范围 | 解法 | 状态 |
 |--------|----------|------|------|
-| Wuying 免费版 `GetLink` 返回 400 | 25 位中文评委无法深化 | 升级到 Pro/Ultra | ❌ 待解 |
-| 沙箱 WebFetch 对 paulgraham.com / Wikipedia 返回 403 | vc-en 3 位英文评委受阻 | Wuying 代理访问，或 Jina Reader | ❌ 待解 |
+| ~~沙箱 WebFetch 对 paulgraham.com 等返回 403~~ | ~~英文评委深化~~ | **CCR Network access 设 Full + `curl` 走 `$HTTPS_PROXY` 出口代理(带浏览器 UA + CA)** | ✅ **已解(2026-07-07)**;vc-en 5 位即用此法完成。**注意:WebFetch 本身仍 403(走 Anthropic 服务端出口),用 curl。** |
+| 中文源站(知乎/百度百科/微博/澎湃)反爬/JS 墙 | 部分中文评委深化 | 36氪/新浪/腾讯新闻/企业官网/公众号可 curl;其余需 Wuying 或加 allowlist | ⚠️ 部分可绕 |
+| Wuying 免费版 `GetLink` 返回 400 | 依赖 Wuying 的中文站抓取 | 升级到 Pro/Ultra(多数情况"Full + curl"已够,可不依赖 Wuying) | ⚠️ 降级 |
 
 ---
 
@@ -59,16 +54,34 @@
 
 ### 优先级 P0 — 立即可执行，不依赖外部解锁
 
-#### P0-A：深化 vc-en 英文评委（3 人）
+#### P0-A：深化 vc-en 英文评委 ✅ 已完成（2026-07-07）
 
-**目标**：将 paulgraham、bhorowitz、marcandreessen 从 seed 升级到 full 档  
-**理由**：英文 essay 无访问限制，当前环境即可完成，且 vc-en 面板是对海外品牌最常用的面板  
-**输出物**：每位评委的 `references/research/01-06.md` + `quotes.md`  
-**参考 SOP**：`docs/10-deepening-perspectives.md`
+**结果**：vc-en 5 位全部 seed→full（paulg #47；naval/pmarca/pthiel/rhoffman #48）。
+用"CCR Full 出口 + curl 抓一手全文 + 工作流并行建 dossier + 独立防伪(逐字比对语料)"打法。
+按引用计一手占比 90–93%。pthiel=Masters CS183 笔记(semi-first-party)、rhoffman AI 偏斜均如实标注。
 
-- [ ] paulgraham — paulgraham.com essays 6 路径研究
-- [ ] bhorowitz — a16z.com blog + hard thing about hard things
-- [ ] marcandreessen — pmarca.com archive + 近期 X 发言
+- [x] paulg — paulgraham.com 28 essay（#47）
+- [x] naval — nav.al「How to Get Rich」+ happiness（#48）
+- [x] pmarca — pmarchive.com Guide + a16z manifestos（#48）
+- [x] pthiel — CS183(Masters 笔记) + Cato essay（#48）
+- [x] rhoffman — reidhoffman.org（AI 期,偏斜已注）（#48）
+
+#### P0-A2：深化 luxury-en 中能过门槛的评委（预抓已做,**非 5/5**）
+
+**现实**(2026-07-07 预抓探明):luxury-en 5 位**不是**都能达 80% 一手——多数是设计师访谈(二手)。
+按门槛只做能达标的:
+- [ ] **`cucinelli`** ✅ 一手强:investor.brunellocucinelli.com「人文资本主义与人的可持续性」报告 PDF(~3.9 万英文词)+ 官网哲学页 + 主席信。**可做真·full**。
+- [ ] `arnault` ⚠️ 边际:LVMH 致股东信(lvmh.com/static/letter-to-shareholders-*,单篇短)+ 股东会 transcript;需多篇凑够 30 条一手,勉强。
+- [ ] `awintour` / `tomford` / `burton` ⛔ 多为访谈(二手),难过 80%——**保持 seed**,在 docs/10 注明。
+
+**卡点**:深化工作流(subagent)需等 session limit 重置(10:20am UTC);Cucinelli/Arnault 语料现已 curl 预抓在 scratchpad。
+**参考 SOP**:`docs/10-deepening-perspectives.md`;模板 `paulg-perspective`。
+
+#### P0-A3：中文评委首批(严守 80% 一手)— 进行中
+
+**结果**：`yangjianhui`(阳萌,cross-border)/`yuminhong`(俞敏洪,edu-cn)/`huangzheng`(黄峥,cross-border)
+一手语料已抓齐(anker 官网对谈 / 演讲全文 / 公众号名篇+致股东信合集);工作流因 session limit 挂起,
+已排 10:25am UTC 续跑。**方针**:能过 80% 一手才做,达不到(源被挡/仅二手)的保持 seed 并在 docs/10 注明。
 
 #### P0-B：实现 `--dry-run` 标志 ✅ 已完成（2026-06-25）
 
