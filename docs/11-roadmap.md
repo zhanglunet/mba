@@ -35,7 +35,7 @@
 | edu-cn | **4/5** | ✅ `yuminhong`(俞敏洪)+ `salkhan`(Sal Khan,2 场官方 TED transcript,内嵌 JSON 抽逐字)已 full(2026-07-07);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
 | cross-border | **3/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
-| vc-cn | **2/5** | ✅ `xuxin`(徐新)已 full(2026-07-07,route-A:前瞻大咖第一人称自述+格隆汇访谈);`zhanglei`/`shennanpeng` 试 route-A(演讲实录聚合站)再判 |
+| vc-cn | **3/5** | ✅ `xuxin`(徐新)、`zhanglei`(张磊)已 full(2026-07-07,route-A:徐新=前瞻大咖自述+格隆汇;张磊=人大演讲+《价值》自序+高层论坛演讲);`shennanpeng` 试 route-A 再判 |
 | consumer-cn | **3/5** | ✅ `yangjianhui`(阳萌,同属 cross-border)+ `luoyonghao`(罗永浩)+ `jiangnanchun`(江南春,2017 两场演讲实录)已 full(2026-07-07);`zhongshanshan`/`zhanglan` 一手薄,待评估 |
 
 ---
