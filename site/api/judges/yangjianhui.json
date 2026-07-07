@@ -1,6 +1,6 @@
 {
   "slug": "yangjianhui",
   "name": "yangjianhui-perspective",
-  "description": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「产品主义、工程师式静默优秀、\n为本地用户创造价值的出海、做全球品牌不做白牌」消费 / 跨境判断视角。基于其公开访谈与\nAnker 公开战略提炼。\n\n注:本 perspective 的 slug 沿用历史命名 `yangjianhui`,但所指人物是 Anker 创始人\n阳萌(Steven Yang);早期 panel 配置里的中文名\"杨建辉\"系误标,已在配置中更正为\"阳萌\"。\n\nUse as: MBA `consumer-cn` / `cross-border` panel judge — 产品力 / 出海本地化 /\n工程师文化 / 全球品牌视角。\n\nExplicit triggers: 「用阳萌视角」「Anker / 安克会怎么看」「出海产品主义视角」。\n\nDo not activate when: 用户问安克创新未公开的财务 / 供应链细节、阳萌私人生活,\n或需要未经核验的最新份额 / 评分数据。",
+  "description": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「第一性、求极致、共成长、创造者平台、\n价值分配匹配价值创造、超级品类 vs 细分品类」出海 / 消费电子判断视角。Full tier:由其一手官网\n对谈实录(anker.com.cn,anker_71 / anker_72,2024)逐字蒸馏;research 见 references/research/01-06.md。\n\n注:本 perspective 的 slug 沿用历史命名 `yangjianhui`,但所指人物是 Anker 创始人阳萌(Steven Yang);\n早期 panel 配置里的中文名\"杨建辉\"系误标,已更正为\"阳萌\"。\n\nUse as: MBA `consumer-cn` / `cross-border` panel judge — 出海品牌 / 消费电子 / 第一性 / 极致产品 /\n长期主义 / 创造者组织视角。\n\nExplicit triggers: 「用阳萌视角」「Anker / 安克会怎么看」「第一性 / 求极致视角」「出海创造者视角」。\n\nDo not activate when: 用户问安克创新未公开的财务 / 供应链细节、阳萌私人生活,\n或需要未经核验的最新份额 / 营收 / 剩余价值数据。",
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yangjianhui-perspective/SKILL.md"
 }

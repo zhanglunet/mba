@@ -34,9 +34,9 @@
 | **luxury-en** | **1/5** | ✅ `cucinelli` 已 full(2026-07-07,人文资本主义 report ~3.9 万英文词)。⚠️ `arnault` 致股东信偏薄(边际);`awintour`/`tomford`/`burton` 多为设计师访谈(二手),按 80% 门槛暂留 seed |
 | edu-cn | **3/5** | ✅ `yuminhong`(俞敏洪)已 full(2026-07-07,三篇公开演讲全文);`salkhan`(英文,TED 正文被 JS 截断,需补书/blog);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
-| cross-border | **1/5** | ✅ `huangzheng`(黄峥)已 full(2026-07-07,公众号名篇+致股东信);`yangjianhui`(阳萌)深化中;`chennian`/`zhuangshuai` 待评估;`shouzichew` 英文一手薄 |
+| cross-border | **2/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)已 full(2026-07-07);`chennian`/`zhuangshuai` 待评估;`shouzichew` 英文一手薄 |
 | vc-cn | 1/5 | `zhanglei`/`xuxin`/`shennanpeng` — 中文,多二手 |
-| consumer-cn | 0/5 | `luoyonghao`(发布会转录可)/`jiangnanchun`(演讲+书)/`zhuangshuai` 等;`zhongshanshan`/`zhanglan` 一手薄 |
+| consumer-cn | **1/5** | ✅ `yangjianhui`(阳萌)已 full(2026-07-07,安克官网对谈,同属 cross-border);`luoyonghao`(发布会转录可)/`jiangnanchun`(演讲+书)/`zhuangshuai` 等;`zhongshanshan`/`zhanglan` 一手薄 |
 
 ---
 
@@ -77,12 +77,13 @@
 **卡点**:深化工作流(subagent)需等 session limit 重置(10:20am UTC);Cucinelli/Arnault 语料现已 curl 预抓在 scratchpad。
 **参考 SOP**:`docs/10-deepening-perspectives.md`;模板 `paulg-perspective`。
 
-#### P0-A3：中文评委首批(严守 80% 一手)— 进行中
+#### P0-A3：中文评委首批(严守 80% 一手)— ✅ 已完成(2026-07-07)
 
-**结果**：`huangzheng`(黄峥,cross-border)与 `yuminhong`(俞敏洪,edu-cn)已在主循环手工深化到 full
-(公众号名篇+致股东信合集 / 三篇公开演讲全文,均中文去空格+全半角规范化逐字校验,6/6)。
-`yangjianhui`(阳萌,cross-border)一手语料(anker.com.cn 官网对谈)已抓齐,留工作流深化(无 speaker 标签,更适合 agent)。
-**方针**:能过 80% 一手才做,达不到(源被挡/仅二手)的保持 seed 并在 docs/10 注明。
+**结果**：首批 3 位中文评委 `huangzheng`(黄峥,cross-border)、`yuminhong`(俞敏洪,edu-cn)、
+`yangjianhui`(阳萌,cross-border / consumer-cn)全部在主循环手工深化到 full——分别由公众号名篇+致股东信合集、
+三篇公开演讲全文、安克官网两篇对谈实录蒸馏,均中文去空格+全半角规范化逐字校验,`check_structure`+`quality_check` 6/6,
+按引用计一手占比 93–95%。`yangjianhui` 对谈有清晰 speaker 标签(阳萌 vs 杨轩/张鹏),按 speaker 只引本人回答。
+**方针兑现**:3 位均过 80% 一手门槛;达不到(源被挡/仅二手)的中文评委保持 seed 并在 docs/10 注明。
 
 #### P0-B：实现 `--dry-run` 标志 ✅ 已完成（2026-06-25）
 

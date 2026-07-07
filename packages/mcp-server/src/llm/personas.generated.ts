@@ -198,7 +198,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "阳萌",
     "name_en": "Steven Yang",
     "language": "zh",
-    "dna": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「产品主义、工程师式静默优秀、 为本地用户创造价值的出海、做全球品牌不做白牌」消费 / 跨境判断视角。基于其公开访谈与 Anker 公开战略提炼。\n决策模型 / Decision models: 好产品才是道,追流量是术；不做白牌,做全球品牌；出海 = 为本地用户创造价值；工程师式静默优秀；速生速死品类上建长寿公司；评分即反馈闭环。"
+    "dna": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「第一性、求极致、共成长、创造者平台、 价值分配匹配价值创造、超级品类 vs 细分品类」出海 / 消费电子判断视角。Full tier:由其一手官网 对谈实录(anker.com.cn,anker_71 / anker_72,2024)逐字蒸馏;research 见 references/research/01-06.md。\n决策模型 / Decision models: 模型1:第一性(原理)；模型2:求极致(与\"求胜\"相对)；模型3:共成长 / 长期主义(终局思维 + 延迟满足)；模型4:品类逻辑决定管理逻辑(超级品类 vs 细分品类)；模型5:先人后事 —— 找到\"创造者\"是扩张的前提；模型6:价值分配匹配价值创造 —— 把大头分给创造者。"
   },
   "yangzhilin": {
     "name_cn": "杨植麟",
