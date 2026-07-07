@@ -263,7 +263,7 @@
     {
       "slug": "zhanglei",
       "name": "zhanglei-perspective",
-      "summary": "张磊(高瓴 / Hillhouse 创始人)的「长期主义、价值投资、重仓中国、弱水三千只取一瓢」 研究驱动投资判断视角。基于其著作《价值》与公开访谈提炼。",
+      "summary": "张磊(高瓴 / Hillhouse 创始人)的「长期主义 / 做时间的朋友、价值创造是唯一标准、弱水三千但取一瓢、 与伟大格局观的创业者同行、动态护城河、第一性原理 + 人文 / 哑铃理论」研究驱动价值投资判断视角。 Full tier:由其第一人称实录(人大毕业演讲 + 《价值》自序 + 高层论坛低碳演讲)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhanglei-perspective/SKILL.md",
       "api_url": "/api/judges/zhanglei.json"
     },
