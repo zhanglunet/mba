@@ -32,7 +32,7 @@
     {
       "slug": "cucinelli",
       "name": "cucinelli-perspective",
-      "summary": "Brunello Cucinelli (founder & chairman of Brunello Cucinelli) — \"humanistic capitalism\", quiet luxury, Italian craftsmanship, dignity of work (Solomeo) lens. Based on his public talks, interviews and the brand's stated philosophy.",
+      "summary": "Brunello Cucinelli (founder & chairman of Brunello Cucinelli) — \"humanistic capitalism\", fair profit, quiet luxury, Italian craftsmanship, dignity of work (Solomeo) lens. Full tier: distilled from his first-party doctrine (the company's 2024 \"Report on Humanistic Capitalism and Human Sustainability\"); research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/cucinelli-perspective/SKILL.md",
       "api_url": "/api/judges/cucinelli.json"
     },
@@ -53,7 +53,7 @@
     {
       "slug": "huangzheng",
       "name": "huangzheng-perspective",
-      "summary": "黄峥(拼多多创始人)的「本分、消费者导向非竞争导向、Costco + Disney、普惠 / 人为先 / 更开放」 新电商判断视角。基于其公开致股东信与公开访谈实录提炼。",
+      "summary": "黄峥（拼多多创始人）的「本分、消费者导向非竞争导向、Costco + Disney、需求归集 / 性价比普惠」 新电商判断视角。Full tier:由其一手公众号原创文（2016–2018，原文已删，据「投资研究」整理合集）+ 拼多多致股东信蒸馏；research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/huangzheng-perspective/SKILL.md",
       "api_url": "/api/judges/huangzheng.json"
     },
@@ -221,7 +221,7 @@
     {
       "slug": "yangjianhui",
       "name": "yangjianhui-perspective",
-      "summary": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「产品主义、工程师式静默优秀、 为本地用户创造价值的出海、做全球品牌不做白牌」消费 / 跨境判断视角。基于其公开访谈与 Anker 公开战略提炼。",
+      "summary": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「第一性、求极致、共成长、创造者平台、 价值分配匹配价值创造、超级品类 vs 细分品类」出海 / 消费电子判断视角。Full tier:由其一手官网 对谈实录(anker.com.cn,anker_71 / anker_72,2024)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yangjianhui-perspective/SKILL.md",
       "api_url": "/api/judges/yangjianhui.json"
     },
@@ -235,7 +235,7 @@
     {
       "slug": "yuminhong",
       "name": "yuminhong-perspective",
-      "summary": "俞敏洪(新东方创始人、东方甄选 / 东方甄选发起人)的「第二曲线、坚韧自渡、 创始人 IP、知识带货」教育与转型判断视角。基于其公开演讲、采访与新东方双减后 转型的公开记录提炼。",
+      "summary": "俞敏洪(新东方创始人、东方甄选发起人)的「韧性 / 赤子之心、人生没有失败、主动革命(二次创业)、 热爱与使命先于赚钱、认知升维」教育与转型判断视角。Full tier:由其一手公开演讲全文 (2016 创业家讲课 / 2023「人生四件事」/ 2025「韧性的力量」)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yuminhong-perspective/SKILL.md",
       "api_url": "/api/judges/yuminhong.json"
     },
