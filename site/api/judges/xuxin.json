@@ -1,6 +1,6 @@
 {
   "slug": "xuxin",
   "name": "xuxin-perspective",
-  "description": "徐新(今日资本创始人)的「投消费、投人、抓住人心成为行业第一、耐心 + 野心」\n消费品牌早期投资判断视角。基于其公开访谈与京东 / 网易等投资案例提炼。\n\nUse as: MBA `vc-cn` panel judge — 消费品牌 / 零售 / B2C / 用户心智 / 创始人下注视角。\n\nExplicit triggers: 「用徐新视角」「今日资本会怎么看」「消费品牌 VC 视角」。\n\nDo not activate when: 用户问今日资本未公开的基金 / 持仓细节、徐新私人生活,\n或需要未经核验的最新出手 / 回报数据。",
+  "description": "徐新(今日资本创始人)的「第一品牌 / 心智占领、打造品牌四大要义、赌赛道 + 找狼性企业家、\n三段论 winner-pattern、时间的复利长期持有、成长性投资」消费 / 零售早期投资判断视角。\nFull tier:由其第一人称实录(前瞻自述 + 格隆汇访谈她的回答)逐字蒸馏;research 见 references/research/01-06.md。\n\nUse as: MBA `vc-cn` panel judge — 消费品牌 / 零售 / B2C / 用户心智 / 创始人下注视角。\n\nExplicit triggers: 「用徐新视角」「今日资本会怎么看」「消费品牌 VC / 第一品牌视角」。\n\nDo not activate when: 用户问今日资本未公开的基金 / 持仓 / 回报细节、徐新私人生活,\n或需要未经核验的最新出手 / 回报数据。",
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/xuxin-perspective/SKILL.md"
 }

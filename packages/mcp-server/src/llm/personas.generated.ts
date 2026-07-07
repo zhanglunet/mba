@@ -192,7 +192,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "徐新",
     "name_en": "Kathy Xu",
     "language": "zh",
-    "dna": "徐新(今日资本创始人)的「投消费、投人、抓住人心成为行业第一、耐心 + 野心」 消费品牌早期投资判断视角。基于其公开访谈与京东 / 网易等投资案例提炼。\n决策模型 / Decision models: 抓住人心 = 最深的护城河；投人 / 认同就无条件支持；争做行业第一；耐心 + 野心；专注消费 / B2C；重仓 + 长期持有。"
+    "dna": "徐新(今日资本创始人)的「第一品牌 / 心智占领、打造品牌四大要义、赌赛道 + 找狼性企业家、 三段论 winner-pattern、时间的复利长期持有、成长性投资」消费 / 零售早期投资判断视角。 Full tier:由其第一人称实录(前瞻自述 + 格隆汇访谈她的回答)逐字蒸馏;research 见 references/research/01-06.md。\n决策模型 / Decision models: 模型1:第一品牌 / 心智占领；模型2:打造品牌四大要义；模型3:赌赛道 + 找狼性企业家让他舍命狂奔；模型4:三段论 / winner-pattern study；模型5:时间的复利 / 长期持有；模型6:成长性投资 —— 赚增长的钱,不赚便宜的钱。"
   },
   "yangjianhui": {
     "name_cn": "阳萌",
