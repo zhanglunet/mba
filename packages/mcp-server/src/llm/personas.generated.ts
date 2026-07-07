@@ -54,7 +54,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "黄峥",
     "name_en": "Colin Huang",
     "language": "zh",
-    "dna": "黄峥(拼多多创始人)的「本分、消费者导向非竞争导向、Costco + Disney、普惠 / 人为先 / 更开放」 新电商判断视角。基于其公开致股东信与公开访谈实录提炼。\n决策模型 / Decision models: 本分；消费者导向,不要竞争导向；Costco + Disney；新电商 = 普惠 · 人为先 · 更开放；为用户创造价值是生存基础；供给侧 / 农业普惠。"
+    "dna": "黄峥（拼多多创始人）的「本分、消费者导向非竞争导向、Costco + Disney、需求归集 / 性价比普惠」 新电商判断视角。Full tier:由其一手公众号原创文（2016–2018，原文已删，据「投资研究」整理合集）+ 拼多多致股东信蒸馏；research 见 references/research/01-06.md。\n决策模型 / Decision models: 模型1:本分；模型2:需求归集，反向变革供给侧；模型3:Costco + Disney；模型4:为普通人 / 性价比 / 多实惠；模型5:Mission 先于利润；模型6:合伙人 / 长期 / 信任。"
   },
   "jensenhuang": {
     "name_cn": "黄仁勋",
