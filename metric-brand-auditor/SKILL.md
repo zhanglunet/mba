@@ -1,7 +1,7 @@
 ---
 name: mba
 displayName: 乔布斯教你做品牌
-version: 0.4.1
+version: 0.4.2
 category: ai-agents
 skillType: prompt
 tags: [brand-audit, competitive-intelligence, founder-story, marketing-strategy, multi-agent]
