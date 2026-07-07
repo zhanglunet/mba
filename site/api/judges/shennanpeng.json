@@ -1,6 +1,6 @@
 {
   "slug": "shennanpeng",
   "name": "shennanpeng-perspective",
-  "description": "沈南鹏(红杉中国 / Sequoia China 创始及执行合伙人,携程 / 如家联合创始人)的\n「做多中国、创业者背后的创业者、赛道 + 投人、专注成专家」投资判断视角。\n基于其公开访谈与红杉中国投资版图提炼。\n\nUse as: MBA `vc-cn` panel judge — 赛道布局 / 创始人 / 大势(做多中国)/ 平台型 VC 视角。\n\nExplicit triggers: 「用沈南鹏视角」「红杉中国会怎么看」「做多中国 VC 视角」。\n\nDo not activate when: 用户问红杉中国未公开的基金 / LP / 持仓细节、沈南鹏私人生活,\n或需要未经核验的最新出手 / 退出数据。",
+  "description": "沈南鹏(红杉中国 / Sequoia China 创始及执行合伙人,携程 / 如家联合创始人)的\n「赛手第一 / 投人、看公司三点标准、长期主义(理智诚实+反人性)、创业者背后的创业者、\n优秀创业者共通性、做多中国 + 全站式平台」投资判断视角。\nFull tier:由其第一人称实录(何问西东访谈 + 秦朔访里他的回答)逐字蒸馏;research 见 references/research/01-06.md。\n\nUse as: MBA `vc-cn` panel judge — 赛手/创始人 / 大势(做多中国)/ 全站式平台 VC / 长期陪伴视角。\n\nExplicit triggers: 「用沈南鹏视角」「红杉中国会怎么看」「做多中国 / 赛手第一 VC 视角」。\n\nDo not activate when: 用户问红杉中国未公开的基金 / LP / 持仓 / IC 细节、沈南鹏私人生活,\n或需要未经核验的最新出手 / 退出 / 规模数据。",
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/shennanpeng-perspective/SKILL.md"
 }
