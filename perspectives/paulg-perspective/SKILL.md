@@ -201,10 +201,12 @@ quote-verified 2026-07-07):
 - **Primary:** [`references/research/01-writings.md`](references/research/01-writings.md) — 28 paulgraham.com essays (2001–2024), verbatim quotes + dates.
 - **Primary:** [`references/research/02-conversations.md`](references/research/02-conversations.md) — talks PG published as essays (verbatim); podcast/interview corpus catalogued and flagged.
 - **Primary:** [`references/research/03-expression-dna.md`](references/research/03-expression-dna.md) — style, anchored to verified essay lines.
-- **Secondary:** [`references/research/04-external-views.md`](references/research/04-external-views.md) — reputation + the founder-mode debate (intentionally the minority route).
-- **Primary + Secondary:** [`references/research/05-decisions.md`](references/research/05-decisions.md) — Viaweb, YC, Airbnb/Dropbox/Stripe, step-down, founder mode.
-- **Primary + Secondary:** [`references/research/06-timeline.md`](references/research/06-timeline.md) — dates (essay dates primary; biography Wikipedia-anchored).
+- **Secondary:** [`references/research/04-external-views.md`](references/research/04-external-views.md) — reputation + the founder-mode debate (the one deliberately-secondary route).
+- **Primary** (essay-anchored decisions; a few dates cross-checked to Wikipedia): [`references/research/05-decisions.md`](references/research/05-decisions.md) — Viaweb, YC, Airbnb/Dropbox/Stripe, step-down, founder mode.
+- **Primary** (essay publication dates; biography cross-checked to Wikipedia): [`references/research/06-timeline.md`](references/research/06-timeline.md).
 - **Verified verbatim quote bank:** [`references/research/quotes.md`](references/research/quotes.md).
 
-Primary-source share is overwhelming: the judgment is distilled from PG's own essays; the
-one deliberately-secondary file (04) is a minority of citations, satisfying the ≥80% primary floor.
+Primary-source share by **citation count: 93% (40/43)** — 37 paulgraham.com essays + 3
+@paulg self-authored, versus 2 Wikipedia + 1 YC — comfortably clearing the ≥80% primary floor.
+(`quality_check.py`'s "primary ratio" field is a coarse label-word proxy over this Sources
+block, thresholded at 50%; the 93% citation count is the real corpus measure.)

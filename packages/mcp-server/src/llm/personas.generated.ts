@@ -120,7 +120,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "保罗·格雷厄姆",
     "name_en": "Paul Graham",
     "language": "en",
-    "dna": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\", \"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Based on his public essays and YC's startup library.\n决策模型 / Decision models: Make Something People Want；Do Things That Don't Scale；Look For Problems, Not Ideas；Talk To Users / Be Default Alive；A Few People Who Love It > Many Who Like It；Write / Think Clearly。"
+    "dna": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\", \"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Full tier: distilled from 28 first-party paulgraham.com essays (2001–2024), read in full and quote-verified; research in references/research/01-06.md.\n决策模型 / Decision models: Make Something People Want；Do Things That Don't Scale；Look For Problems, Not Ideas；Startup = Growth (use the rate as a compass)；A Few Who Love It > Many Who Like It (and survival is a choice)；The Power Law (the best ideas look like bad ideas)。"
   },
   "pmarca": {
     "name_cn": "马克·安德森",
