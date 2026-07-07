@@ -34,7 +34,7 @@
 | **luxury-en** | **1/5** | ✅ `cucinelli` 已 full(2026-07-07,人文资本主义 report ~3.9 万英文词)。⚠️ `arnault` 致股东信偏薄(边际);`awintour`/`tomford`/`burton` 多为设计师访谈(二手),按 80% 门槛暂留 seed |
 | edu-cn | **3/5** | ✅ `yuminhong`(俞敏洪)已 full(2026-07-07,三篇公开演讲全文);`salkhan`(英文,TED 正文被 JS 截断,需补书/blog);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
-| cross-border | **2/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)已 full(2026-07-07);`chennian`/`zhuangshuai` 待评估;`shouzichew` 英文一手薄 |
+| cross-border | **3/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
 | vc-cn | 1/5 | `zhanglei`/`xuxin`/`shennanpeng` — 中文,多二手 |
 | consumer-cn | **2/5** | ✅ `yangjianhui`(阳萌,同属 cross-border)+ `luoyonghao`(罗永浩)已 full(2026-07-07,老罗 2014 演讲全文实录+2021 专访);`jiangnanchun`(演讲+书)待评估;`zhongshanshan`/`zhanglan` 一手薄 |
 
