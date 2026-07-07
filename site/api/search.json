@@ -349,7 +349,7 @@
       "type": "judge",
       "slug": "salkhan",
       "title": "salkhan-perspective",
-      "text": "Sal Khan (Salman Khan, founder & CEO of Khan Academy) — a nonprofit, mastery-learning, \"free world-class education for anyone, anywhere\", AI-tutor (Khanmigo) judgment lens. Based on his public talks, books (The One World Schoolhouse, Brave New Words) and Khan Academy's public mission materials.",
+      "text": "Sal Khan (Salman Khan, founder & CEO of Khan Academy) — a nonprofit, \"free world-class education for anyone, anywhere\", mastery-learning, flip-the-classroom, humanize-the-classroom, and AI-tutor (Khanmigo, with guardrails) judgment lens. Full tier: distilled verbatim from his two official TED transcripts (2011 origin talk + 2023 AI talk); research in references/research/01-06.md.",
       "url": "/api/judges/salkhan.json",
       "api_url": "/api/judges/salkhan.json"
     },
