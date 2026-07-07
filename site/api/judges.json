@@ -186,7 +186,7 @@
     {
       "slug": "shouzichew",
       "name": "shouzichew-perspective",
-      "summary": "周受资(Shou Zi Chew,TikTok CEO,前字节跳动 / 小米 CFO)的「全球化、数据主权与信任、 地缘合规、极致执行」中国公司出海 / 全球平台判断视角。基于其国会听证证词与公开访谈提炼。",
+      "summary": "周受资(Shou Zi Chew,TikTok CEO,前字节跳动 / 小米 CFO)的「使命与产品哲学、创作者/小企业经济、 信任靠行动赢得、安全优先于短期变现、本地化与独立性(Project Texas)」全球平台 / 出海判断视角。 Full tier:由其 2023-03-23 美国众议院书面证词(~3.1 万字符,准备陈述)蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/shouzichew-perspective/SKILL.md",
       "api_url": "/api/judges/shouzichew.json"
     },
