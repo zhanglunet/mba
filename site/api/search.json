@@ -309,7 +309,7 @@
       "type": "judge",
       "slug": "paulg",
       "title": "paulg-perspective",
-      "text": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\", \"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Based on his public essays and YC's startup library.",
+      "text": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\", \"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Full tier: distilled from 28 first-party paulgraham.com essays (2001–2024), read in full and quote-verified; research in references/research/01-06.md.",
       "url": "/api/judges/paulg.json",
       "api_url": "/api/judges/paulg.json"
     },
