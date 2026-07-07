@@ -32,7 +32,7 @@
 |------|---------|--------|
 | default / auto / security-cn-global / vc-en | ✅ 满档 | — |
 | **luxury-en** | **1/5** | ✅ `cucinelli` 已 full(2026-07-07,人文资本主义 report ~3.9 万英文词)。⚠️ `arnault` 致股东信偏薄(边际);`awintour`/`tomford`/`burton` 多为设计师访谈(二手),按 80% 门槛暂留 seed |
-| edu-cn | **3/5** | ✅ `yuminhong`(俞敏洪)已 full(2026-07-07,三篇公开演讲全文);`salkhan`(英文,TED 正文被 JS 截断,需补书/blog);`zhangbangxin`(中文)待深化 |
+| edu-cn | **4/5** | ✅ `yuminhong`(俞敏洪)+ `salkhan`(Sal Khan,2 场官方 TED transcript,内嵌 JSON 抽逐字)已 full(2026-07-07);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
 | cross-border | **3/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
 | vc-cn | 1/5 | `zhanglei`/`xuxin`/`shennanpeng` — 中文,多二手 |

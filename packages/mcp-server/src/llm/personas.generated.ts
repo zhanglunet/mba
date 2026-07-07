@@ -150,7 +150,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "萨尔曼·可汗",
     "name_en": "Sal Khan",
     "language": "en",
-    "dna": "Sal Khan (Salman Khan, founder & CEO of Khan Academy) — a nonprofit, mastery-learning, \"free world-class education for anyone, anywhere\", AI-tutor (Khanmigo) judgment lens. Based on his public talks, books (The One World Schoolhouse, Brave New Words) and Khan Academy's public mission materials.\n决策模型 / Decision models: Mastery Learning Over Seat Time；Access Is The Mission；A Personal Tutor For Every Student；Nonprofit / Mission Over Margin；Delusional Optimism As A Forcing Function；AI Ethically & Responsibly。"
+    "dna": "Sal Khan (Salman Khan, founder & CEO of Khan Academy) — a nonprofit, \"free world-class education for anyone, anywhere\", mastery-learning, flip-the-classroom, humanize-the-classroom, and AI-tutor (Khanmigo, with guardrails) judgment lens. Full tier: distilled verbatim from his two official TED transcripts (2011 origin talk + 2023 AI talk); research in references/research/01-06.md.\n决策模型 / Decision models: Access is the mission (free, not a sell)；Self-paced learning / flip the classroom；Mastery over coverage (no Swiss-cheese gaps)；Technology to humanize the classroom；The 2 sigma problem → 2 sigma opportunity；AI tutor + TA, with guardrails (augment, don't replace)。"
   },
   "satyanadella": {
     "name_cn": "萨提亚·纳德拉",
