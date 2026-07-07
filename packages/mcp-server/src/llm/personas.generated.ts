@@ -114,7 +114,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "纳瓦尔",
     "name_en": "Naval Ravikant",
     "language": "en",
-    "dna": "Naval Ravikant (co-founder of AngelList; angel investor; writer on wealth & judgment) — \"specific knowledge × leverage\", \"play long-term games with long-term people\", compounding, code-and-media-as-leverage lens. Based on his public writing and The Almanack of Naval Ravikant.\n决策模型 / Decision models: Specific Knowledge；Leverage = Capital, People, Code & Media；Play Long-Term Games With Long-Term People；Accountability；Wealth Is A Skill, Not An Event；Clear Thinking / Remove Noise。"
+    "dna": "Naval Ravikant (co-founder of AngelList & Epinions; angel investor; writer on wealth, leverage & judgment) — \"seek wealth, not money or status\", \"specific knowledge × leverage\", \"play long-term games with long-term people\", code-and-media-as-permissionless-leverage, \"escape competition through authenticity\". Full tier: distilled from his first-party nav.al corpus (the 2018 \"How to Get Rich (without getting lucky)\" series expanded into edited podcast transcripts, 2019, plus the happiness/desire essays 2020–2021), read in full and quote-verified; research in references/research/01-06.md.\n决策模型 / Decision models: Seek Wealth, Not Money or Status；Specific Knowledge (Play That Looks Like Work)；Leverage = Labor, Capital, Code & Media (permissionless wins)；Judgment × Accountability (the multiplier + your name on the line)；Play Long-Term Games With Long-Term People；Escape Competition Through Authenticity。"
   },
   "paulg": {
     "name_cn": "保罗·格雷厄姆",
@@ -126,13 +126,13 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "马克·安德森",
     "name_en": "Marc Andreessen",
     "language": "en",
-    "dna": "Marc Andreessen (co-founder & general partner, Andreessen Horowitz / a16z; co-creator of Netscape) — \"software is eating the world\", founder-as-engine-of-progress, strong- opinions / platform-VC investing lens. Based on his public essays, a16z materials and interviews.\n决策模型 / Decision models: Software Eats The World；Founders Are The Engine；It Should Seem Kind Of Nuts；Strong Opinions As Edge；The Platform Model；Thesis As Checklist。"
+    "dna": "Marc Andreessen (co-founder & general partner, Andreessen Horowitz / a16z; co-creator of Mosaic & Netscape) — \"market is the only thing that matters\" / product-market fit, software-eats-the-world / technology-as-growth-engine, strong-founder thesis, \"it’s time to build\", techno-optimism / category lens. Full tier: distilled from a first-party corpus read in full and quote-verified — the 2007 \"Pmarca Guide\" (Startups Parts 1-9, Career Planning, Personal Productivity, Big Companies; pmarchive.com) + a16z’s \"It’s Time to Build\" (2020) and \"The Techno-Optimist Manifesto\" (2023). Research in references/research/01-06.md.\n决策模型 / Decision models: Market Is the Only Thing That Matters (product/market fit)；Software / Technology Eats the World (technology is the growth engine)；It’s Time to Build (bias to action)；The Onion Theory of Risk (fundability)；Capital Is Insurance, Not an Accomplishment；Techno-Optimism / Strong Opinions as Edge。"
   },
   "pthiel": {
     "name_cn": "彼得·蒂尔",
     "name_en": "Peter Thiel",
     "language": "en",
-    "dna": "Peter Thiel (co-founder of PayPal, Palantir, Founders Fund; author of \"Zero to One\") — contrarian, monopoly-over-competition, definite-optimism, \"what important truth do few agree with you\" investing lens. Based on Zero to One and his public talks.\n决策模型 / Decision models: Zero To One；The Contrarian Question；Monopoly Over Competition；Definite Optimism；Last Mover Advantage；Secrets。"
+    "dna": "Peter Thiel (co-founder of PayPal, Palantir, Founders Fund; ideas behind \"Zero to One\") — contrarian secrets, \"competition is for losers\", monopoly & moats, definite optimism, 0→1, and the power law. Full tier: distilled from a first-party corpus — Blake Masters' notes of Thiel's Stanford CS183 lectures (Spring 2012, classes 1–9, 11, 13; semi-first- party, Thiel-endorsed, later became the book) plus Thiel's signed 2009 essay \"The Education of a Libertarian\". Research in references/research/01-06.md; verified verbatim quote bank in references/research/quotes.md.\n决策模型 / Decision models: Zero to One (create, don't copy)；The Contrarian Question / Secrets；Monopoly Over Competition；Last Mover Advantage & Moats；The Power Law；Definite Optimism。"
   },
   "renzhengfei": {
     "name_cn": "任正非",
@@ -144,7 +144,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "里德·霍夫曼",
     "name_en": "Reid Hoffman",
     "language": "en",
-    "dna": "Reid Hoffman (co-founder of LinkedIn; partner at Greylock; author of \"Blitzscaling\") — blitzscaling, network effects, \"if you're not embarrassed by your first version you launched too late\", operator-and-investor lens. Based on his public writing and talks.\n决策模型 / Decision models: Blitzscaling；Network Effects；Ship Before You're Ready；Intelligent Risk / Theory Of The Startup；Both Sides Of The Table；The Startup Of You / Networks Compound。"
+    "dna": "Reid Hoffman (co-founder of LinkedIn; partner at Greylock; author of \"Blitzscaling\" & \"Superagency\") — network effects, blitzscaling / speed-over-efficiency, market timing, the Start-up of You, both-sides-of-the-marketplace, AI-optimism / \"superagency\". Full tier: distilled from Hoffman’s first-party 2023–2025 AI-phase corpus (reidhoffman.org essays & speeches + NYT / Times / SF-Standard op-eds), read in full and quote-verified; research in references/research/01-06.md.\n决策模型 / Decision models: Market Timing — Surf the Cresting Wave；Blitzscaling — Speed Over Efficiency in Winner-Take-Most Markets；Small Risks to Navigate Big Risks — Ship, Learn, Iterate；Product-Market Fit — Disruption Lives Where Demand Meets Supply；Networks Compound — Both-Sides-of-the-Marketplace & the Start-up of You；Superagency — AI Amplifies Human Agency (calibrated optimism)。"
   },
   "salkhan": {
     "name_cn": "萨尔曼·可汗",
