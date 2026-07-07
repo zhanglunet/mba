@@ -32,7 +32,7 @@
 |------|---------|--------|
 | default / auto / security-cn-global / vc-en | ✅ 满档 | — |
 | **luxury-en** | **1/5** | ✅ `cucinelli` 已 full(2026-07-07,人文资本主义 report ~3.9 万英文词)。⚠️ `arnault` 致股东信偏薄(边际);`awintour`/`tomford`/`burton` 多为设计师访谈(二手),按 80% 门槛暂留 seed |
-| edu-cn | 2/5 | `yuminhong` 深化中;`salkhan`(英文,TED 正文被 JS 截断,需补书/blog);`zhangbangxin`(中文) |
+| edu-cn | **3/5** | ✅ `yuminhong`(俞敏洪)已 full(2026-07-07,三篇公开演讲全文);`salkhan`(英文,TED 正文被 JS 截断,需补书/blog);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
 | cross-border | **1/5** | ✅ `huangzheng`(黄峥)已 full(2026-07-07,公众号名篇+致股东信);`yangjianhui`(阳萌)深化中;`chennian`/`zhuangshuai` 待评估;`shouzichew` 英文一手薄 |
 | vc-cn | 1/5 | `zhanglei`/`xuxin`/`shennanpeng` — 中文,多二手 |
@@ -79,9 +79,10 @@
 
 #### P0-A3：中文评委首批(严守 80% 一手)— 进行中
 
-**结果**：`yangjianhui`(阳萌,cross-border)/`yuminhong`(俞敏洪,edu-cn)/`huangzheng`(黄峥,cross-border)
-一手语料已抓齐(anker 官网对谈 / 演讲全文 / 公众号名篇+致股东信合集);工作流因 session limit 挂起,
-已排 10:25am UTC 续跑。**方针**:能过 80% 一手才做,达不到(源被挡/仅二手)的保持 seed 并在 docs/10 注明。
+**结果**：`huangzheng`(黄峥,cross-border)与 `yuminhong`(俞敏洪,edu-cn)已在主循环手工深化到 full
+(公众号名篇+致股东信合集 / 三篇公开演讲全文,均中文去空格+全半角规范化逐字校验,6/6)。
+`yangjianhui`(阳萌,cross-border)一手语料(anker.com.cn 官网对谈)已抓齐,留工作流深化(无 speaker 标签,更适合 agent)。
+**方针**:能过 80% 一手才做,达不到(源被挡/仅二手)的保持 seed 并在 docs/10 注明。
 
 #### P0-B：实现 `--dry-run` 标志 ✅ 已完成（2026-06-25）
 
