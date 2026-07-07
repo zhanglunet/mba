@@ -33,9 +33,9 @@
 | default / auto / security-cn-global / vc-en | ✅ 满档 | — |
 | **luxury-en** | **1/5** | ✅ `cucinelli` 已 full(2026-07-07,人文资本主义 report ~3.9 万英文词)。⚠️ `arnault` 致股东信偏薄(边际);`awintour`/`tomford`/`burton` 多为设计师访谈(二手),按 80% 门槛暂留 seed |
 | edu-cn | **4/5** | ✅ `yuminhong`(俞敏洪)+ `salkhan`(Sal Khan,2 场官方 TED transcript,内嵌 JSON 抽逐字)已 full(2026-07-07);`zhangbangxin`(中文)待深化 |
-| ai-app-cn | 2/5 | `yangzhilin`/`wanghuiwen`/`zhuxiaohu` — 多为记者访谈(二手),达 80% 一手难 |
+| ai-app-cn | **3/5** | ✅ `zhuxiaohu`(朱啸虎)已 full(2026-07-07,route-A:2025 中关村演讲+《未竟之约》张小珺访谈);`yangzhilin`/`wanghuiwen` 侦察均判 deepen(route-A) |
 | cross-border | **3/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
-| vc-cn | **4/5** | ✅ `xuxin`(徐新)、`zhanglei`(张磊)、`shennanpeng`(沈南鹏)已 full + `leijun`(复用 auto);沈南鹏=陆家嘴《何问西东》+秦朔访(只引其答);仅剩 `zhuxiaohu`(与 ai-app-cn 共享)seed |
+| vc-cn | ✅ **5/5** | 整面板收官:`xuxin`/`zhanglei`/`shennanpeng`/`zhuxiaohu` route-A 深化 + `leijun`(复用 auto)。继 vc-en 后第二个整面板 full,首个中文行业整面板 full |
 | consumer-cn | **3/5** | ✅ `yangjianhui`(阳萌,同属 cross-border)+ `luoyonghao`(罗永浩)+ `jiangnanchun`(江南春,2017 两场演讲实录)已 full(2026-07-07);`zhongshanshan`/`zhanglan` 一手薄,待评估 |
 
 ---
