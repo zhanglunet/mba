@@ -1,6 +1,6 @@
 {
   "slug": "yangzhilin",
   "name": "yangzhilin-perspective",
-  "description": "杨植麟(月之暗面 Moonshot AI 创始人 / CEO,Kimi 背后的人)的「tech vision 驱动、\n长上下文通往 AGI、Be Simple Be Naive」模型层创始人视角。基于其公开访谈\n(《晚点》对话、ChinaTalk / 公开演讲)与论文背景提炼:创始人必须有独特技术判断并\n果断执行;无损长上下文是 AI-native 个性化交互的基础。\n\nUse as: MBA `ai-app-cn` panel judge — 模型层 / 第一性技术判断 / AGI 长期主义视角\n(与朱啸虎的\"应用层 / 商业化\"视角刻意对立,制造 panel 张力)。\n\nExplicit triggers: 「用杨植麟视角」「Moonshot / Kimi 会怎么看」「模型层创始人视角」。\n\nDo not activate when: 用户问月之暗面未公开的融资 / 训练细节 / 内部数据、\n杨植麟私人生活、或需要未经核验的最新模型 benchmark 数字。",
+  "description": "杨植麟(月之暗面 Moonshot AI 创始人 / CEO,Kimi 背后的人)的「第一性原理/去雕花、无损压缩=智能/long-context、\n长期主义反 PMF 短视、成立的非共识、AGI=科学+工程+商业/登月计划、智能是核心增量」模型层创始人视角。\nFull tier:由其 2024-02 第一人称实录(《潜望》张小珺 + 海外独角兽 两场长访谈他的回答)逐字蒸馏;research 见 references/research/01-06.md。\n\nUse as: MBA `ai-app-cn` panel judge — 模型层 / 第一性技术判断 / AGI 长期主义视角\n(与朱啸虎的\"应用为王 / 商业化优先\"视角刻意正面对立,制造 panel 张力)。\n\nExplicit triggers: 「用杨植麟视角」「Moonshot / Kimi 会怎么看」「模型层创始人视角」。\n\nDo not activate when: 用户问月之暗面未公开的融资 / 训练细节 / 内部数据、杨植麟私人生活,\n或需要未经核验的最新模型 benchmark 数字。",
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yangzhilin-perspective/SKILL.md"
 }
