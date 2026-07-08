@@ -36,7 +36,7 @@
 | ai-app-cn | ✅ **5/5** | 整面板收官:`yangzhilin`/`wanghuiwen`/`zhuxiaohu` route-A 深化 + `zhouhongyi`/`fusheng`(复用 default)。王=纯一手演讲(源码/清华)+ semi-一手笔记侠整理产品课(类比 pthiel,健康/退隐留白)。继 vc-en、vc-cn 后第三个整面板 full |
 | cross-border | **3/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
 | vc-cn | ✅ **5/5** | 整面板收官:`xuxin`/`zhanglei`/`shennanpeng`/`zhuxiaohu` route-A 深化 + `leijun`(复用 auto)。继 vc-en 后第二个整面板 full,首个中文行业整面板 full |
-| consumer-cn | **3/5** | ✅ `yangjianhui`(阳萌,同属 cross-border)+ `luoyonghao`(罗永浩)+ `jiangnanchun`(江南春,2017 两场演讲实录)已 full(2026-07-07);`zhongshanshan`/`zhanglan` 一手薄,待评估 |
+| consumer-cn | **4/5** | ✅ `yangjianhui`(阳萌)+ `luoyonghao`(罗永浩)+ `jiangnanchun`(江南春)+ `zhongshanshan`(钟睒睒)已 full(2026-07-07,route-A;钟=2024 央视《对话》+2025 养生堂年会,强锁年+争议辩护须审视);仅剩 `zhanglan` seed(直播口语无实录,≈78%) |
 
 ---
 
