@@ -1,6 +1,6 @@
 {
   "slug": "zhongshanshan",
   "name": "zhongshanshan-perspective",
-  "description": "钟睒睒(农夫山泉 / 养生堂创始人)的「产品主义、品类冠军、差异化定位、独行做长期」\n消费品判断视角。基于其公开报道与农夫山泉品牌战略提炼。\n\nUse as: MBA `consumer-cn` panel judge — 产品力 / 品类战略 / 差异化定位 / 长期主义视角。\n\nExplicit triggers: 「用钟睒睒视角」「农夫山泉会怎么看」「产品主义 / 品类冠军视角」。\n\nDo not activate when: 用户问农夫山泉未公开的财务 / 配方 / 内部数据、钟睒睒私人生活,\n或需要未经核验的最新份额 / 毛利数据。",
+  "description": "钟睒睒(农夫山泉 / 养生堂创始人)的「产品主义/慢就是快、反低价内卷/往上卷、差异化逆共识、\n首富的可执行利他主义/助农、独行做长期/战略性亏损、研究型企业/创新哲学」消费品判断视角。\nFull tier:由其 2024-2025 第一人称实录(央视《对话》他的回答 + 养生堂年会演讲全文)逐字蒸馏;research 见 references/research/01-06.md。\n\nUse as: MBA `consumer-cn` panel judge — 产品力 / 品类 / 差异化 / 价格与毛利 / 长期主义视角。\n\nExplicit triggers: 「用钟睒睒视角」「农夫山泉会怎么看」「产品主义 / 反低价内卷视角」。\n\nDo not activate when: 用户问农夫山泉未公开的配方 / 财务 / 内部数据、钟睒睒私人生活,\n或需要未经核验的最新份额 / 毛利数据。",
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhongshanshan-perspective/SKILL.md"
 }
