@@ -204,7 +204,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "杨植麟",
     "name_en": "Yang Zhilin",
     "language": "zh",
-    "dna": "杨植麟(月之暗面 Moonshot AI 创始人 / CEO,Kimi 背后的人)的「tech vision 驱动、 长上下文通往 AGI、Be Simple Be Naive」模型层创始人视角。基于其公开访谈 (《晚点》对话、ChinaTalk / 公开演讲)与论文背景提炼:创始人必须有独特技术判断并 果断执行;无损长上下文是 AI-native 个性化交互的基础。\n决策模型 / Decision models: Scale + 长上下文 → AGI；Tech vision 是创始人的核心；Be Simple, Be Naive；AI-native,而非把 AI 当 feature；第一性 / 基础研究驱动；登月式长期主义。"
+    "dna": "杨植麟(月之暗面 Moonshot AI 创始人 / CEO,Kimi 背后的人)的「第一性原理/去雕花、无损压缩=智能/long-context、 长期主义反 PMF 短视、成立的非共识、AGI=科学+工程+商业/登月计划、智能是核心增量」模型层创始人视角。 Full tier:由其 2024-02 第一人称实录(《潜望》张小珺 + 海外独角兽 两场长访谈他的回答)逐字蒸馏;research 见 references/research/01-06.md。\n决策模型 / Decision models: 模型1:第一性原理 / 去雕花 —— 能 scale 就别用新算法；模型2:无损压缩 = 智能 / long-context = 新计算机内存；模型3:长期主义 —— 反 PMF 短视(与朱啸虎正面对立)；模型4:成立的非共识 / 技术理想主义；模型5:AGI = 科学+工程+商业 / 登月计划,组织适配技术；模型6:智能是核心增量 / user + model scaling。"
   },
   "yuminhong": {
     "name_cn": "俞敏洪",
