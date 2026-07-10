@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # 需要历史来 diff 出本 PR 改动的 SKILL.md
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -20,6 +22,29 @@ jobs:
         run: python scripts/validate_panels.py
       - name: Validate perspective SKILL.md structure
         run: python scripts/perspective-tools/check_structure.py
+      - name: Anti-fabrication firewall (SKILL 引用必须逐字存在于本套 research 语料)
+        run: python scripts/perspective-tools/firewall_check.py
+      - name: Quality check (本 PR 改动的 SKILL.md 必须 6/6)
+        run: |
+          base="${{ github.event.pull_request.base.sha || github.event.before }}"
+          if [ -z "$base" ] || ! git cat-file -e "${base}^{commit}" 2>/dev/null; then
+            echo "无可用 diff base(首推/浅历史)—— quality_check 全量跑,仅信息化(不阻断)。"
+            rc=0
+            for f in perspectives/*/SKILL.md; do
+              python scripts/perspective-tools/quality_check.py "$f" >/dev/null 2>&1 || echo "  ⚠️ $f 未过 6/6"
+            done
+            exit 0
+          fi
+          changed=$(git diff --name-only "$base" HEAD -- 'perspectives/*/SKILL.md' || true)
+          if [ -z "$changed" ]; then echo "本次无 SKILL.md 改动,跳过。"; exit 0; fi
+          echo "本 PR 改动的 SKILL.md:"; echo "$changed"
+          rc=0
+          for f in $changed; do
+            [ -f "$f" ] || continue   # 删除的文件跳过
+            echo "--- quality_check: $f ---"
+            python scripts/perspective-tools/quality_check.py "$f" || rc=1
+          done
+          exit $rc
       - name: Check agent API (site/api/*.json) in sync with sources
         run: python scripts/build_agents_api.py --check
       - name: Compile Python files

@@ -282,7 +282,19 @@ Verbatim Jobs in PBS doc *Triumph of the Nerds: The Rise of Accidental Empires* 
 
 Misattribution caveat [P2]: There is no documented Picasso source. T.S. Eliot (1920) wrote a related sentiment ("immature poets imitate; mature poets steal"). Jobs reused this line repeatedly through the 90s and 2000s — qualifies as a real signature claim despite the false attribution.
 
-Sources: `quoteinvestigator.com/2013/03/06/artists-steal/`; `gizmodo.com/steve-jobs-1996-good-artists-copy-great-artists-ste-5483914`.
+In the same 1996 documentary, his three-layer critique of Microsoft (technical, not cultural), verbatim:
+> "Microsoft has no taste. They have absolutely no taste — and I don't mean that in a small way, I mean that in a big way." [P1]
+
+Sources: `quoteinvestigator.com/2013/03/06/artists-steal/`; `gizmodo.com/steve-jobs-1996-good-artists-copy-great-artists-ste-5483914`; *Triumph of the Nerds* (PBS, 1996) transcript for the Microsoft/"no taste" line.
+
+---
+
+## 16b. Self-cannibalization — D5 conference, 2007
+
+At the D5 (AllThingsD) conference with Walt Mossberg & Kara Swisher, 2007, verbatim:
+> "If you don't cannibalize yourself, someone else will. The smartest thing we ever did was bet against our own business." [P1]
+
+Process principle (drove iPhone-over-iPod). Source: `allthingsd.com` D5 2007 archive.
 
 ---
 
