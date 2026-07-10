@@ -1,11 +1,14 @@
 panel: vc-en
 locked_at: 2026-06-25
-mba_version: 0.2.38
-published_at: 2026-06-26
-version: v1
-score_total: 191
+mba_version: 0.4.2
+published_at: 2026-07-10
+version: v2
+score_total: 190
 score_max: 250
-score_normalized: 7.64
+score_normalized: 7.60
+prev_version: v1
+prev_score_total: 191
+prev_score_normalized: 7.64
 overrides:
   add: []
   drop: []
