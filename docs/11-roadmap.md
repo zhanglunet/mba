@@ -34,7 +34,7 @@
 | **luxury-en** | **1/5** | ✅ `cucinelli` 已 full(2026-07-07,人文资本主义 report ~3.9 万英文词)。⚠️ `arnault` 致股东信偏薄(边际);`awintour`/`tomford`/`burton` 多为设计师访谈(二手),按 80% 门槛暂留 seed |
 | edu-cn | **4/5** | ✅ `yuminhong`(俞敏洪)+ `salkhan`(Sal Khan,2 场官方 TED transcript,内嵌 JSON 抽逐字)已 full(2026-07-07);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | ✅ **5/5** | 整面板收官:`yangzhilin`/`wanghuiwen`/`zhuxiaohu` route-A 深化 + `zhouhongyi`/`fusheng`(复用 default)。王=纯一手演讲(源码/清华)+ semi-一手笔记侠整理产品课(类比 pthiel,健康/退隐留白)。继 vc-en、vc-cn 后第三个整面板 full |
-| cross-border | **3/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
+| cross-border | **4/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
 | vc-cn | ✅ **5/5** | 整面板收官:`xuxin`/`zhanglei`/`shennanpeng`/`zhuxiaohu` route-A 深化 + `leijun`(复用 auto)。继 vc-en 后第二个整面板 full,首个中文行业整面板 full |
 | consumer-cn | **4/5** | ✅ `yangjianhui`+`luoyonghao`+`jiangnanchun`+`zhongshanshan` 已 full;`zhanglan`(张兰)**经严格核算主动留 seed**——唯一干净一手仅澎湃深访 2114 字,凑不齐 ≥30 逐字/≥80% 一手,直播口语无实录、自传为版权书(守 §3 门槛,详见 docs/10) |
 
