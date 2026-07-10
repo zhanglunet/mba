@@ -3,9 +3,10 @@
 # 中文教育 / 终身学习 panel —— 5 位教育创业者。
 # 通过 industries.yaml 被 `--industry edu-cn` 引用。
 #
-# 可运行(v1 production-seed):yuminhong / zhangbangxin / salkhan 已建(SKILL.md +
-# quotes.md,基于公开一手资料),likejia + wu-jundong 复用现有 perspective。
-# 深度 references/research/01-06 为后续工作。
+# 5/5 全档(FULL,2026-07-10 收官):yuminhong(俞敏洪)+ salkhan(Sal Khan,官方 TED transcript)
+# + zhangbangxin(张邦鑫,芥末堆演讲实录 semi + 报道引述,教不好=抢钱/管理增长/教育本质是爱,强锁双减前)
+# 均已深化到 full tier;likejia + wu-jundong 复用现有 default perspective(已 full)。
+# (SKILL.md + references/research/01-06 + quotes.md)。
 
 name: edu-cn
 display_name: Education-CN Panel
