@@ -1,0 +1,71 @@
+# metric-brand-auditor/self-conflict.yaml
+#
+# 评委 → 强关联品牌/机构 别名表(self-conflict 自动拦截用)。
+#
+# 用途:审计某品牌时,若该品牌命中某评委的 orgs 别名,说明该评委评自家/强关联品牌,
+# 分数不中立 → 自动建议 `--panel-drop <slug>`。由 `scripts/check_self_conflict.py` 消费:
+#   - validate:校验每套 SKILL 的 Self-Conflict Rule 都写了 --panel-drop <own-slug>;本表 slug 都真实。
+#   - query:`check_self_conflict.py --brand "<name>" [--panel <name> | --industry <name>]`
+#            → 列出命中的评委 + 建议的 --panel-drop flags。
+#
+# 维护:别名用于**大小写不敏感的子串匹配**(去空格后),中英文都列;宁缺毋滥——
+# 只列**确有直接品牌/机构归属**的关联,把握不准的宁可不列(避免误拦)。
+# type 仅作说明:founder/owner/exec/creative-director/editor/investor/analyst。
+# 权威 --panel-drop 指令仍以各 SKILL 的 Self-Conflict Rule 为准;本表是机器可读的补充。
+
+judges:
+  # ── 创始人 / owner(直接品牌归属)──────────────────────────────
+  leijun:        { type: founder, orgs: [小米, Xiaomi, Redmi, 红米, 小米汽车, Xiaomi Auto, SU7, YU7, 玄戒, 顺为, Shunwei, 金山, Kingsoft, WPS] }
+  renzhengfei:   { type: founder, orgs: [华为, Huawei, 荣耀, Honor, 海思, HiSilicon, 鸿蒙, HarmonyOS] }
+  musk:          { type: founder, orgs: [Tesla, 特斯拉, SpaceX, Starlink, X, Twitter, 推特, xAI, Grok, Neuralink, "The Boring Company"] }
+  jobs:          { type: founder, orgs: [Apple, 苹果, iPhone, iPad, Mac, Pixar, NeXT] }
+  zhang-yiming:  { type: founder, orgs: [字节跳动, ByteDance, 抖音, Douyin, TikTok, 今日头条, Toutiao, 飞书, Lark, 剪映, CapCut] }
+  huangzheng:    { type: founder, orgs: [拼多多, Pinduoduo, PDD, Temu, 多多买菜] }
+  wanghuiwen:    { type: founder, orgs: [美团, Meituan, 校内网, 人人网, Renren, 光年之外, 光年] }
+  yangzhilin:    { type: founder, orgs: [月之暗面, Moonshot, Kimi, KimiChat] }
+  zhouhongyi:    { type: founder, orgs: [360, 奇虎, Qihoo, 纳米AI, 花椒] }
+  fusheng:       { type: founder, orgs: [猎豹, Cheetah, 猎户星空, Orion Star, 猎豹移动] }
+  lixiang:       { type: founder, orgs: [理想, 理想汽车, "Li Auto", Lixiang, 车和家] }
+  hexiaopeng:    { type: founder, orgs: [小鹏, 小鹏汽车, XPeng, 小鹏汇天] }
+  libin:         { type: founder, orgs: [蔚来, NIO, 易车, Bitauto] }
+  yuminhong:     { type: founder, orgs: [新东方, "New Oriental", 东方甄选, 与辉同行] }
+  zhangbangxin:  { type: founder, orgs: [好未来, 学而思, TAL, "TAL Education", 学而思网校] }
+  luoyonghao:    { type: founder, orgs: [锤子, Smartisan, 老罗, 交个朋友, 细红线, "Thin Red Line"] }
+  zhongshanshan: { type: founder, orgs: [农夫山泉, "Nongfu Spring", 养生堂, 万泰生物, 母亲牛肉] }
+  yangjianhui:   { type: founder, orgs: [Anker, 安克, 安克创新, Eufy, Soundcore, Nebula] }
+  chennian:      { type: founder, orgs: [凡客, VANCL, 凡客诚品] }
+  cucinelli:     { type: founder, orgs: [Brunello Cucinelli, 布鲁内洛·库奇内利, Cucinelli, Solomeo] }
+  likejia:       { type: founder, orgs: [创新工场, Sinovation, 零一万物, 01.AI, 万物模型] }
+  zhangmingzheng: { type: founder, orgs: [趋势科技, "Trend Micro", 趋勢科技] }
+  zhanglan:      { type: founder, orgs: [俏江南, 南塘, 麻六记, "Lan Club", 兰会所] }
+
+  # ── 董事长/CEO/高管(所属集团/品牌)────────────────────────────
+  arnault:       { type: owner, orgs: [LVMH, "Louis Vuitton", 路易威登, Dior, 迪奥, Tiffany, 蒂芙尼, Bvlgari, 宝格丽, "Moët Hennessy", 酩悦, Sephora, 丝芙兰, Loewe, 罗意威, Celine, 思琳, Fendi, 芬迪, "TAG Heuer", 泰格豪雅, Givenchy, 纪梵希, "Dom Pérignon", Hennessy, 轩尼诗, Belmond] }
+  jensenhuang:   { type: owner, orgs: [NVIDIA, 英伟达, 辉达, CUDA, GeForce] }
+  satyanadella:  { type: owner, orgs: [Microsoft, 微软, Azure, "Microsoft Copilot", GitHub, LinkedIn, Xbox, OpenAI] }
+  shouzichew:    { type: exec, orgs: [TikTok, 字节跳动, ByteDance, 抖音] }
+
+  # ── 创意总监(所属时装屋 + 母集团)──────────────────────────────
+  burton:        { type: creative-director, orgs: [Givenchy, 纪梵希, "Alexander McQueen", 麦昆, LVMH] }
+  tomford:       { type: creative-director, orgs: ["Tom Ford", 汤姆·福特, Gucci, 古驰, YSL, "Yves Saint Laurent", "Estée Lauder", 雅诗兰黛] }
+
+  # ── 主编/gatekeeper(平台 + 结构性绑定的奢侈广告主)────────────
+  awintour:      { type: editor, orgs: [Vogue, "Condé Nast", 康泰纳仕, "Met Gala", 大都会艺术博物馆慈善舞会] }
+
+  # ── 投资人(所属基金 / portfolio 触发时须自检)──────────────────
+  zhanglei:      { type: investor, orgs: [高瓴, Hillhouse, 高瓴资本, 百丽, 格力] }
+  shennanpeng:   { type: investor, orgs: [红杉中国, "Sequoia China", 红杉资本中国, 携程, Ctrip, 如家] }
+  xuxin:         { type: investor, orgs: [今日资本, "Capital Today", 徐新] }
+  zhuxiaohu:     { type: investor, orgs: [金沙江, GSR, 金沙江创投, 饿了么, 滴滴, ofo] }
+  jiangnanchun:  { type: investor, orgs: [分众传媒, "Focus Media", 分众] }
+  paulg:         { type: investor, orgs: ["Y Combinator", YC, Hacker News] }
+  naval:         { type: investor, orgs: [AngelList, 天使名单] }
+  pmarca:        { type: investor, orgs: [a16z, Andreessen Horowitz, Netscape] }
+  pthiel:        { type: investor, orgs: [Founders Fund, Palantir, PayPal, Thiel Capital, Mithril] }
+  rhoffman:      { type: investor, orgs: [Greylock, LinkedIn, PayPal, Inflection AI] }
+
+  # ── 分析师(咨询客户 = 强关联,须自检)────────────────────────────
+  zhuangshuai:   { type: analyst, orgs: [百联咨询, 庄帅] }
+
+# 说明:未列入的评委(如 wu-jundong 作者/多元投资、salkhan 非营利)= 无单一强品牌关联;
+# 其 self-conflict 仍以 SKILL 的 Self-Conflict Rule 为准,按需人工判断。
