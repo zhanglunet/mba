@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>评委全景 · MBA — Metric Brand Auditor</title>
+<meta name="description" content="MBA 43 位人物评委的深化 tier 与 provenance 全景记分卡:42/43 全档,9/10 面板满档,唯一留 seed 为反捏造纪律所守。" />
+<meta property="og:title" content="评委全景 · MBA" />
+<meta property="og:description" content="43 位人物评委 · 7 维度 × 5 镜头 · 10 套 panel。深化 tier 与 provenance 全景。" />
+<meta property="og:url" content="https://mbabrand.com/panorama.html" />
+<style>
+  :root{
+    --ink:#111; --paper:#faf8f3; --paper-2:#f3efe6; --card:#fffdf8;
+    --muted:#6b6760; --faint:#9a948a; --rule:#1a1a1a; --hair:#e0d9cc;
+    --accent:#c1440e; --accent-soft:#c1440e14; --accent-ring:#c1440e55;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);
+    font-family:ui-serif,"Noto Serif SC","Songti SC",Georgia,serif;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .sans{font-family:ui-sans-serif,"Inter",-apple-system,"Segoe UI",sans-serif;}
+  .num{font-variant-numeric:tabular-nums;}
+  .wrap{max-width:1060px;margin:0 auto;padding:56px 28px 80px;}
+
+  /* header/nav — matches site chrome */
+  header.site{border-bottom:2px solid var(--rule);padding-bottom:18px;margin-bottom:34px;
+    display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .mark{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-weight:800;letter-spacing:.02em;font-size:22px;}
+  .mark .dot{color:var(--accent);}
+  nav a{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:13px;color:var(--ink);
+    text-decoration:none;border-bottom:1px solid var(--ink);margin-left:18px;white-space:nowrap;}
+  nav a:hover{color:var(--accent);border-color:var(--accent);}
+  nav a[aria-current]{color:var(--accent);border-color:var(--accent);}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;margin-bottom:12px;}
+  .status{display:inline-block;padding:4px 10px;border:1px solid var(--accent);color:var(--accent);
+    font-family:ui-sans-serif,"Inter",sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px;}
+  h1{font-size:clamp(32px,5vw,50px);line-height:1.12;margin:0 0 12px;font-weight:800;letter-spacing:-.01em;text-wrap:balance;}
+  .sub{font-size:17px;color:var(--muted);margin:0;font-style:italic;max-width:56ch;}
+  .radar{position:absolute;top:-34px;right:-30px;width:190px;height:190px;color:var(--accent);opacity:.16;pointer-events:none;}
+
+  /* summary tiles */
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:34px 0 8px;
+    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:ui-sans-serif,"Inter",sans-serif;}
+  .tiles .t{padding:20px 20px 18px;border-left:1px solid var(--hair);}
+  .tiles .t:first-child{border-left:none;}
+  .tiles .v{font-size:34px;font-weight:800;letter-spacing:-.02em;line-height:1;}
+  .tiles .v small{font-size:17px;color:var(--faint);font-weight:600;}
+  .tiles .t.hi .v{color:var(--accent);}
+  .tiles .k{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.35;}
+  @media (max-width:720px){.tiles{grid-template-columns:repeat(2,1fr)}.tiles .t:nth-child(3){border-left:none}
+    .tiles .t:nth-child(3),.tiles .t:nth-child(4){border-top:1px solid var(--hair)}}
+
+  /* legend */
+  .legend{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-family:ui-sans-serif,"Inter",sans-serif;
+    font-size:12.5px;color:var(--muted);margin:22px 0 26px;}
+  .legend b{color:var(--ink);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;}
+  .lg{display:inline-flex;align-items:center;gap:7px;}
+  .swatch{width:22px;height:15px;border-radius:4px;display:inline-block;flex-shrink:0;}
+  .sw-full{background:var(--accent-soft);border:1.5px solid var(--accent);}
+  .sw-seed{background:transparent;border:1.5px dashed var(--muted);}
+  .provdot{width:9px;height:9px;border-radius:50%;display:inline-block;flex-shrink:0;}
+  .pd-pure{background:var(--accent);}
+  .pd-semi{background:transparent;box-shadow:inset 0 0 0 2px var(--accent);}
+  .pd-early{background:var(--faint);}
+  .star{color:var(--accent);font-size:13px;line-height:1;}
+
+  /* panel scorecard grid */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  @media (max-width:800px){.grid{grid-template-columns:1fr}}
+  .panel{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:15px 16px 15px;}
+  .panel.pending{border-color:var(--accent-ring);}
+  .p-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+  .p-name{font-family:ui-sans-serif,"Inter",sans-serif;font-size:14.5px;font-weight:700;letter-spacing:.01em;}
+  .p-score{font-family:ui-sans-serif,"Inter",sans-serif;font-size:12.5px;font-weight:700;padding:2px 9px;border-radius:20px;white-space:nowrap;}
+  .p-score.done{color:var(--accent);background:var(--accent-soft);}
+  .p-score.part{color:var(--muted);border:1px dashed var(--muted);}
+  .p-sub{font-family:ui-sans-serif,"Inter",sans-serif;font-size:11.5px;color:var(--faint);margin:3px 0 12px;min-height:1em;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;}
+  .chip{display:inline-flex;align-items:center;gap:7px;font-family:ui-sans-serif,"Inter",sans-serif;font-size:12.5px;
+    padding:5px 10px;border-radius:8px;border:1.5px solid var(--hair);background:var(--paper-2);line-height:1.2;}
+  .chip.full{border-color:var(--accent-ring);background:var(--accent-soft);}
+  .chip.seed{border-style:dashed;border-color:var(--muted);background:transparent;color:var(--muted);}
+  .chip .slug{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:10px;color:var(--faint);}
+  .chip.reuse{opacity:.72;}
+  .chip.reuse .nm{font-weight:400;}
+
+  /* notes */
+  .notes{margin-top:34px;display:grid;grid-template-columns:1.45fr 1fr;gap:16px;}
+  @media (max-width:800px){.notes{grid-template-columns:1fr}}
+  .note{border:1px solid var(--hair);border-radius:12px;padding:18px 20px;background:var(--card);}
+  .note.seedcard{border-color:var(--accent-ring);}
+  .note h3{font-family:ui-sans-serif,"Inter",sans-serif;margin:0 0 14px;font-size:12px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);font-weight:700;display:flex;align-items:center;gap:9px;}
+  .note h3::before{content:"";width:16px;height:2px;background:var(--accent);display:inline-block;}
+  .flip{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px;}
+  .flip li{font-size:14px;line-height:1.5;}
+  .flip .was{font-family:ui-sans-serif,"Inter",sans-serif;font-size:11.5px;color:var(--faint);
+    text-decoration:line-through;text-decoration-thickness:1px;letter-spacing:.03em;}
+  .flip .now b{color:var(--accent);}
+  .seedcard p{margin:0 0 10px;font-size:14px;}
+  .seedcard p:last-child{margin-bottom:0;color:var(--muted);font-size:12.5px;font-style:italic;}
+  .seedcard .q{color:var(--accent);font-weight:700;font-style:normal;}
+
+  footer{margin-top:46px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted);
+    font-family:ui-sans-serif,"Inter",sans-serif;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);}
+  footer a:hover{color:var(--accent);border-color:var(--accent);}
+  .src{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:11px;color:var(--faint);}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="mark">MBA<span class="dot">.</span></div>
+    <nav>
+      <a href="/presentation/">Presentation</a>
+      <a href="/pitch.html">Pitch</a>
+      <a href="/how-it-works.html">怎么打分</a>
+      <a href="/agents.html">For Agents</a>
+      <a href="/roadmap.html">Roadmap</a>
+      <a href="/panorama.html" aria-current="page">评委全景</a>
+      <a href="https://github.com/zhanglunet/mba">GitHub</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <svg class="radar" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor">
+      <g stroke-width="1"><circle cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="56"/><circle cx="100" cy="100" r="82"/></g>
+      <g id="axes" stroke-width="1"></g>
+      <polygon id="web" fill="currentColor" fill-opacity="0.18" stroke-width="1.5"/>
+    </svg>
+    <span class="status">深化全景 · 2026-07-10</span>
+    <h1>评委全景</h1>
+    <p class="sub">43 位「人物评委」· 7 维度 × 5 镜头 · 10 套 panel。把品牌影响力拆成可打分、可比较、可复盘的事 —— 这是每位评委的深化 tier 与来源(provenance)全景。</p>
+  </section>
+
+  <section class="tiles num" aria-label="摘要">
+    <div class="t hi"><div class="v">42<small>/43</small></div><div class="k">评委全档 FULL</div></div>
+    <div class="t hi"><div class="v">9<small>/10</small></div><div class="k">面板满档<br>仅 consumer-cn 4/5</div></div>
+    <div class="t"><div class="v">27</div><div class="k">本会话 seed → full<br>均 route-A + 亲手 firewall</div></div>
+    <div class="t"><div class="v">1</div><div class="k">诚实留 seed<br>张兰:达不到不硬凑</div></div>
+  </section>
+
+  <div class="legend" role="note">
+    <b>图例</b>
+    <span class="lg"><span class="swatch sw-full"></span>full 全档</span>
+    <span class="lg"><span class="swatch sw-seed"></span>seed 留档</span>
+    <span class="lg"><span class="provdot pd-pure"></span>纯一手</span>
+    <span class="lg"><span class="provdot pd-semi"></span>semi 整理稿</span>
+    <span class="lg"><span class="provdot pd-early"></span>早批 / 复用</span>
+    <span class="lg"><span class="star">★</span>本会话深化</span>
+  </div>
+
+  <main class="grid" id="grid"></main>
+
+  <section class="notes">
+    <div class="note">
+      <h3>route-A 重扫推翻的三个旧判定</h3>
+      <ul class="flip">
+        <li><span class="was">访谈 = 二手</span><br><span class="now"><b>其实是干净一手</b> —— Wintour 署名编者信、Tom Ford / 沈南鹏 带说话人标签的问答,只取本人的答即得逐字一手。</span></li>
+        <li><span class="was">arnault marginal</span><br><span class="now"><b>反转</b> —— LVMH 官网 Prismic CDN 历年年报董事长致辞 + 致股东信全可 curl、全署名一手。</span></li>
+        <li><span class="was">芥末堆 = 记者特写</span><br><span class="now"><b>实为演讲实录</b> —— 张邦鑫 2016 年会 + 2019 AI教育大会两篇是 semi 一手演讲实录。</span></li>
+      </ul>
+    </div>
+    <div class="note seedcard">
+      <h3>唯一留坑 · 张兰</h3>
+      <p>consumer-cn 的第 5 席。经严格取数核算:唯一干净一手仅澎湃深访(~2114 字 / ~15 条),自传为版权书、直播口语无实录、多源 403 / JS 墙。</p>
+      <p><span class="q">凑不齐 ≥30 逐字、真实纯一手 &lt;80%</span> → 按「能达标才做、达不到诚实留 seed」原则留 seed。这不是失败,是反捏造立身之本。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>provenance 分层如实标 · 锁年 · self-conflict <code>--panel-drop</code> · 引用逐字 firewall 复核</div>
+    <div class="src">权威 tier → docs/10 §6 · 全景 → docs/14</div>
+  </footer>
+</div>
+
+<script>
+  (function(){
+    const cx=100,cy=100,N=7,R=82,axes=document.getElementById('axes'),web=document.getElementById('web');
+    const s=[0.86,0.62,0.78,0.9,0.55,0.72,0.83];let ax='',pts=[];
+    for(let i=0;i<N;i++){const a=-Math.PI/2+i*2*Math.PI/N;
+      ax+=`<line x1="${cx}" y1="${cy}" x2="${(cx+Math.cos(a)*R).toFixed(1)}" y2="${(cy+Math.sin(a)*R).toFixed(1)}"/>`;
+      const r=R*s[i];pts.push(`${(cx+Math.cos(a)*r).toFixed(1)},${(cy+Math.sin(a)*r).toFixed(1)}`);}
+    axes.innerHTML=ax;web.setAttribute('points',pts.join(' '));
+  })();
+  const F=(nm,slug,prov,ses,reuse)=>({nm,slug,tier:'full',prov,s:!!ses,reuse:!!reuse});
+  const S=(nm,slug)=>({nm,slug,tier:'seed'});
+  const panels=[
+    {name:'vc-en',score:'5/5',done:true,sub:'首个整面板 seed→full',judges:[
+      F('Paul Graham','paulg','pure',1),F('Naval','naval','pure',1),F('Marc Andreessen','pmarca','pure',1),F('Peter Thiel','pthiel','semi',1),F('Reid Hoffman','rhoffman','pure',1)]},
+    {name:'luxury-en',score:'5/5',done:true,sub:'2026-07-10 收官',judges:[
+      F('Brunello Cucinelli','cucinelli','pure',1),F('Anna Wintour','awintour','pure',1),F('Sarah Burton','burton','pure',1),F('Tom Ford','tomford','pure',1),F('Bernard Arnault','arnault','pure',1)]},
+    {name:'vc-cn',score:'5/5',done:true,sub:'首个中文行业整面板',judges:[
+      F('徐新','xuxin','pure',1),F('张磊','zhanglei','pure',1),F('沈南鹏','shennanpeng','pure',1),F('朱啸虎','zhuxiaohu','pure',1),F('雷军','leijun','early',0,1)]},
+    {name:'ai-app-cn',score:'5/5',done:true,sub:'王慧文=纯+semi 分层',judges:[
+      F('杨植麟','yangzhilin','pure',1),F('王慧文','wanghuiwen','semi',1),F('朱啸虎','zhuxiaohu','pure',0,1),F('周鸿祎','zhouhongyi','early',0,1),F('傅盛','fusheng','early',0,1)]},
+    {name:'cross-border',score:'5/5',done:true,sub:'黄峥公众号原创文',judges:[
+      F('黄峥','huangzheng','pure',1),F('阳萌','yangjianhui','pure',1),F('周受资','shouzichew','pure',1),F('陈年','chennian','semi',1),F('庄帅','zhuangshuai','pure',1)]},
+    {name:'edu-cn',score:'5/5',done:true,sub:'2026-07-10 收官',judges:[
+      F('俞敏洪','yuminhong','pure',1),F('Sal Khan','salkhan','pure',1),F('张邦鑫','zhangbangxin','semi',1),F('李开复','likejia','early',0,1),F('吴军','wu-jundong','early',0,1)]},
+    {name:'consumer-cn',score:'4/5',done:false,sub:'张兰诚实留 seed',judges:[
+      F('江南春','jiangnanchun','pure',1),F('罗永浩','luoyonghao','pure',1),F('钟睒睒','zhongshanshan','pure',1),F('阳萌','yangjianhui','pure',0,1),S('张兰','zhanglan')]},
+    {name:'default',score:'5/5',done:true,sub:'早期基础面板',judges:[
+      F('乔布斯','jobs','early'),F('张一鸣','zhang-yiming','early'),F('傅盛','fusheng','early'),F('李开复','likejia','early'),F('吴军','wu-jundong','early')]},
+    {name:'auto',score:'5/5',done:true,sub:'早期基础面板',judges:[
+      F('马斯克','musk','early'),F('雷军','leijun','early'),F('李想','lixiang','early'),F('何小鹏','hexiaopeng','early'),F('李斌','libin','early')]},
+    {name:'security-cn-global',score:'6/6',done:true,sub:'早期基础面板',judges:[
+      F('周鸿祎','zhouhongyi','early'),F('张明正','zhangmingzheng','early'),F('任正非','renzhengfei','early'),F('黄仁勋','jensenhuang','early'),F('马斯克','musk','early'),F('Satya Nadella','satyanadella','early')]},
+  ];
+  const PT={pure:'纯一手',semi:'semi 整理稿',early:'早批 / 复用'};
+  document.getElementById('grid').innerHTML=panels.map(p=>{
+    const chips=p.judges.map(j=>{
+      if(j.tier==='seed')return `<span class="chip seed" title="${j.slug} · seed(诚实留档)"><span class="nm">${j.nm}</span> <span class="slug">${j.slug}</span></span>`;
+      const dot=`<span class="provdot pd-${j.prov==='semi'?'semi':j.prov==='early'?'early':'pure'}" title="${PT[j.prov]}"></span>`;
+      const star=j.s?` <span class="star" title="本会话深化">★</span>`:'';
+      return `<span class="chip full ${j.reuse?'reuse':''}" title="${j.slug} · ${PT[j.prov]}${j.s?' · 本会话深化':''}${j.reuse?' · 复用':''}">${dot}<span class="nm">${j.nm}</span>${star}</span>`;
+    }).join('');
+    return `<article class="panel ${p.done?'':'pending'}"><div class="p-head"><span class="p-name">${p.name}</span><span class="p-score ${p.done?'done':'part'}">${p.score}</span></div><p class="p-sub">${p.sub}</p><div class="chips">${chips}</div></article>`;
+  }).join('');
+</script>
+</body>
+</html>
