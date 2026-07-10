@@ -24,7 +24,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "莎拉·伯顿",
     "name_en": "Sarah Burton",
     "language": "en",
-    "dna": "Sarah Burton (creative director of Givenchy; previously creative director of Alexander McQueen, 2010–2023) — craftsmanship, atelier-first, \"how the woman feels\", stewarding a founder's legacy lens. Based on her public interviews and documented work.\n决策模型 / Decision models: The Atelier Is The Soul；It Comes Alive In The Fitting；How The Woman Feels；Craftsmanship + Storytelling；Steward A Legacy, Then Evolve；Fit Over Spectacle。"
+    "dna": "Sarah Burton (creative director of Givenchy from 2024; previously creative director of Alexander McQueen, 2010–2023) — the maker's hands: the atelier is the heart and soul, it comes alive in the fitting, how the woman feels (armor, but still herself), a couture look-by-look mindset, creating out of nothing / \"it was never 'no'\", steward the DNA yet author for today. Full tier: pure first-party (39+ verbatim from her clean-label interviews, only her answers, 100% first-party by count); research in references/research/01-06.md.\n决策模型 / Decision models: The atelier is the heart and soul — go back to the beginning；It comes alive in the fitting — on the body, not the sketch；How the woman feels — armor, but still herself；Design look-by-look — a couture mindset, the woman in mind；Create out of nothing — it was never 'no'; don't be too precious；Steward the DNA — but speak to the woman of today。"
   },
   "chennian": {
     "name_cn": "陈年",

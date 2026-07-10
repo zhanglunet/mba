@@ -13,7 +13,7 @@
 | 版本 | **v0.4.2** | 实时联网研究 + 断点续跑（v0.4.1 首发 npm） |
 | 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
-| 评委全档进度 | ✅ **38/43 全档** | 5 人仍在 seed 层；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
+| 评委全档进度 | ✅ **39/43 全档** | 4 人仍在 seed 层；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
 | mbabrand.com | ✅ 上线 | Cloudflare Pages |
 | 公开报告 | ✅ 10/10 全部发布 | 10 面板各 1 份；Hermès 8.64 创三项史上最高 |
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
@@ -32,7 +32,7 @@
 | 面板 | 全档进度 | 下一步 |
 |------|---------|--------|
 | default / auto / security-cn-global / vc-en | ✅ 满档 | — |
-| **luxury-en** | **2/5** | ✅ `cucinelli`(人文资本主义 report)+ `awintour`(Anna Wintour,署名 Vogue Editor's Letters + 悼念信,一手 100%,39 条 verbatim,2026-07-10)已 full。**4 路 scout 推翻"访谈=二手"与"arnault marginal"**:`tomford`(GQ/Interview Mag 干净标签)、`burton`(burton.com 第一人称自传+自撰邮件)、`arnault`(LVMH 年报董事长致辞+致股东信署名)均判 deepen、语料已抓,待逐位落地 |
+| **luxury-en** | **3/5** | ✅ `cucinelli`(人文资本主义 report)+ `awintour`(Anna Wintour,署名 Editor's Letters + 悼念信)+ `burton`（**= Sarah Burton 麦昆/纪梵希创意总监**,3 篇干净标签访谈只取本人答,一手 100%,39 条 verbatim,atelier/fitting/how-the-woman-feels,2026-07-10)已 full。**4 路 scout 推翻"访谈=二手"与"arnault marginal"**:`tomford`(GQ/Interview Mag 干净标签)、`arnault`(LVMH 年报董事长致辞+致股东信署名)均判 deepen、语料已抓,待逐位落地 |
 | edu-cn | **4/5** | ✅ `yuminhong`(俞敏洪)+ `salkhan`(Sal Khan,2 场官方 TED transcript,内嵌 JSON 抽逐字)已 full(2026-07-07);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | ✅ **5/5** | 整面板收官:`yangzhilin`/`wanghuiwen`/`zhuxiaohu` route-A 深化 + `zhouhongyi`/`fusheng`(复用 default)。王=纯一手演讲(源码/清华)+ semi-一手笔记侠整理产品课(类比 pthiel,健康/退隐留白)。继 vc-en、vc-cn 后第三个整面板 full |
 | cross-border | ✅ **5/5** | 整面板收官:`huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资,2023 国会书面证词)+ `chennian`(陈年,2014 一件衬衫 828 实录)+ `zhuangshuai`(庄帅,署名专栏 self-writing 一手 100%,货场人/殊途同归,2026-07-10)全 full。继 vc-en、vc-cn、ai-app-cn 后第四个整面板 full |
