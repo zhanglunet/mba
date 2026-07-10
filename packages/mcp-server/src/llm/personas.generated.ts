@@ -18,7 +18,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "安娜·温图尔",
     "name_en": "Anna Wintour",
     "language": "en",
-    "dna": "Anna Wintour (longtime editor-in-chief of US Vogue; global chief content officer & artistic director, Condé Nast) — taste-as-gatekeeper, decisiveness, \"mass with class\", cultural-relevance lens. Based on her public interviews, MasterClass and documented record.\n决策模型 / Decision models: Taste Is Not Democratic；Decide；Fashion Only Goes Forward；Mass With Class；Anoint & Champion；Cultural Relevance > Pretty。"
+    "dna": "Anna Wintour (editor-in-chief of US Vogue 1988–2025; global chief content officer, Condé Nast) — the arbiter's eye: timelessness & clarity of purpose over trend, power/attitude & making people more themselves, self-possession, \"backwards and forwards at once\", champion-the-new / community-not-elitism, crisis-as-catalyst. Full tier: pure first-party (39+ verbatim from her signed Vogue Editor's Letters & tribute letters, 100% first-party by byline); research in references/research/01-06.md.\n决策模型 / Decision models: Timelessness & clarity of purpose over the whims of fashion；Power, attitude & making people more themselves；Self-possession — a brand that knows who it is；Backwards and forwards at once — honor the past to move forward；Champion the new — community, not elitism；Crisis as catalyst; the singular is irreplaceable。"
   },
   "burton": {
     "name_cn": "莎拉·伯顿",

@@ -3,9 +3,10 @@
 # 奢侈品 / 时尚 panel —— 5 位奢侈品产业塑造者。
 # 通过 industries.yaml 被 `--industry luxury-en` 引用。
 #
-# 可运行(v1 production-seed):arnault / cucinelli / awintour / tomford / burton 已建
-# (SKILL.md + quotes.md,基于公开 interviews / talks / 报道,全英文落笔)。
-# 深度 references/research/01-06 为后续工作。
+# FULL(2/5):cucinelli(人文资本主义 doctrine)+ awintour(Anna Wintour,署名 Vogue
+# Editor's Letters + 悼念信,一手 100%,货真价实署名文,2026-07-10)已深化到 full tier。
+# seed(3/5):arnault / tomford / burton —— 侦察均判 deepen(route-A 可达),待深化落地。
+# (SKILL.md + references/research/01-06 + quotes.md,全英文落笔)。
 
 name: luxury-en
 display_name: Luxury & Fashion Panel
