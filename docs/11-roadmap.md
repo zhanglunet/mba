@@ -58,7 +58,7 @@
 内容侧已收尾(42/43 full + 1 诚实 seed;10 报告);真实短板集中在**质量自动化 / flagship 验证 / 一致性**。
 
 - **E0-1 反捏造 firewall 进 CI ✅ 已完成(2026-07-10)** —— `scripts/perspective-tools/firewall_check.py`:校验每套 SKILL「心智模型/关键引用」区 `>` 逐字引用必须在本套 `references/research/*.md` 逐字命中;接 `panel-validation.yml` 硬 gate。**把反捏造从人工纪律升级成机器门禁**;上线即抓出并修复 jobs 2 条未锚定引用(no taste / cannibalize)。`quality_check.py` 同时接入 CI(仅对本 PR 改动的 SKILL 阻断 6/6)。
-- **E0-2 报告渲染 QA 进 CI** —— 把 `scripts/qa_report_render.mjs`(headless Chromium,抓 Chart.js 无限增高 / Mermaid 未渲染 / 零高 canvas,曾搞坏 kimichat/qianxin)接 `report-validation.yml`;当前静态校验抓不到这类回归。
+- **E0-2 报告渲染 QA 进 CI ✅ 已完成(2026-07-10)** —— `scripts/qa_report_render.mjs`(headless Chromium,抓 Chart.js 无限增高 / Mermaid 未渲染 / 零高 canvas,曾搞坏 kimichat/qianxin)接入 `report-validation.yml` 的 `render-qa` job;新增 `scripts/qa_fetch_libs.sh` 把 Chart.js 4.4.4 + Mermaid 11 确定性 vendored(`--offline-libs`,不依赖 jsdelivr 在线)。10 报告全过、负测试(注入 JS 报错)exit 1 验证过 gate 有牙。exit 1/3 阻断、exit 2(inconclusive)非阻断。
 - **E0-3 self-conflict 静态拦截** —— resolver/build 阶段校验:被审品牌命中某评委强关联表就自动 flag 建议 `--panel-drop`(现在全靠用户手动记)。
 - **E1-4 真跑一个 EVOLUTION v2** —— skill 最大卖点却零验证(9 份 versions 全停 v1);挑 dji/anthropic 真跑,验 delta / `↑↓↔` / gitGraph,先跑通再宣传。
 - **E1-5 MCP Phase 3/4/5 + 持久层单测** —— synthesis/judging/merge(最烧钱阶段)零单测;`store/filesystem·atomic·subscriptions` 无直测。

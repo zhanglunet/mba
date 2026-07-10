@@ -31,3 +31,31 @@ jobs:
         run: |
           python -m py_compile scripts/validate_report.py
           python -m py_compile scripts/validate_html_report.py
+
+  render-qa:
+    # 动态渲染 QA:真实 headless 浏览器抓静态校验看不到的回归——
+    # Chart.js 无限增高(曾搞坏 kimichat/qianxin)、零高 canvas、Mermaid 未渲染、JS 报错。
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright + Chromium
+        run: |
+          npm i -g playwright@1.48.0 --no-audit --no-fund
+          playwright install --with-deps chromium
+      - name: Vendor Chart.js + Mermaid (deterministic offline libs)
+        run: bash scripts/qa_fetch_libs.sh "$RUNNER_TEMP/qa-libs"
+      - name: Render QA (Chart.js grow / zero-canvas / Mermaid / JS errors)
+        run: |
+          set +e
+          node scripts/qa_report_render.mjs --offline-libs "$RUNNER_TEMP/qa-libs"
+          code=$?
+          case "$code" in
+            0) echo "render QA: all reports OK" ; exit 0 ;;
+            1) echo "::error::render QA found a report render failure (Chart.js grow / canvas / Mermaid / JS error)" ; exit 1 ;;
+            2) echo "::warning::render QA inconclusive (libs did not load) — non-blocking" ; exit 0 ;;
+            3) echo "::error::render QA setup error (Playwright/Chromium missing)" ; exit 1 ;;
+            *) echo "::error::render QA unexpected exit $code" ; exit 1 ;;
+          esac
