@@ -13,7 +13,7 @@
 | 版本 | **v0.4.2** | 实时联网研究 + 断点续跑（v0.4.1 首发 npm） |
 | 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
-| 评委全档进度 | ⚠️ **20/43 全档** | 23 人仍在 seed 层；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
+| 评委全档进度 | ✅ **37/43 全档** | 6 人仍在 seed 层；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
 | mbabrand.com | ✅ 上线 | Cloudflare Pages |
 | 公开报告 | ✅ 10/10 全部发布 | 10 面板各 1 份；Hermès 8.64 创三项史上最高 |
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
@@ -22,11 +22,12 @@
 | MCP Server 形态 | ✅ 已发布 npm | packages/mcp-server/ · **14 工具** · **10 面板 / 43 评委** · webhook 接收端 · `resume_audit` 续跑 · **实时联网研究**(`MBA_WEB_SEARCH`) · 121 tests · `npx -y mba-mcp-server@latest` |
 | 演化追踪 | ✅ 完成 | 订阅 + cron + trigger_evolution + delta 报告 + 增量重跑 + webhook/email 通知 |
 
-### 评委全档分布（按面板覆盖，更新 2026-07-07）
+### 评委全档分布（按面板覆盖，更新 2026-07-10）
 
 > 权威 FULL/seed slug 名单以 `docs/10 §6` 为准（本节只给面板覆盖概览,不再手抄易错的 slug 列表）。
 
-**满档面板(4)**:`default` · `auto` · `security-cn-global` · **`vc-en`**(2026-07-07 本场完成:paulg/naval/pmarca/pthiel/rhoffman)。
+**满档面板(7)**:`default` · `auto` · `security-cn-global` · **`vc-en`** · **`vc-cn`** · **`ai-app-cn`** · **`cross-border`**
+(vc-en/vc-cn/ai-app-cn/cross-border 均本场 seed→full 收官;cross-border 2026-07-10 由 `chennian`+`zhuangshuai` 收官)。
 
 | 面板 | 全档进度 | 下一步 |
 |------|---------|--------|
@@ -34,7 +35,7 @@
 | **luxury-en** | **1/5** | ✅ `cucinelli` 已 full(2026-07-07,人文资本主义 report ~3.9 万英文词)。⚠️ `arnault` 致股东信偏薄(边际);`awintour`/`tomford`/`burton` 多为设计师访谈(二手),按 80% 门槛暂留 seed |
 | edu-cn | **4/5** | ✅ `yuminhong`(俞敏洪)+ `salkhan`(Sal Khan,2 场官方 TED transcript,内嵌 JSON 抽逐字)已 full(2026-07-07);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | ✅ **5/5** | 整面板收官:`yangzhilin`/`wanghuiwen`/`zhuxiaohu` route-A 深化 + `zhouhongyi`/`fusheng`(复用 default)。王=纯一手演讲(源码/清华)+ semi-一手笔记侠整理产品课(类比 pthiel,健康/退隐留白)。继 vc-en、vc-cn 后第三个整面板 full |
-| cross-border | **4/5** | ✅ `huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资)已 full(2026-07-07,周受资=2023 国会书面证词);`chennian`/`zhuangshuai` 待评估,多二手 |
+| cross-border | ✅ **5/5** | 整面板收官:`huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资,2023 国会书面证词)+ `chennian`(陈年,2014 一件衬衫 828 实录)+ `zhuangshuai`(庄帅,署名专栏 self-writing 一手 100%,货场人/殊途同归,2026-07-10)全 full。继 vc-en、vc-cn、ai-app-cn 后第四个整面板 full |
 | vc-cn | ✅ **5/5** | 整面板收官:`xuxin`/`zhanglei`/`shennanpeng`/`zhuxiaohu` route-A 深化 + `leijun`(复用 auto)。继 vc-en 后第二个整面板 full,首个中文行业整面板 full |
 | consumer-cn | **4/5** | ✅ `yangjianhui`+`luoyonghao`+`jiangnanchun`+`zhongshanshan` 已 full;`zhanglan`(张兰)**经严格核算主动留 seed**——唯一干净一手仅澎湃深访 2114 字,凑不齐 ≥30 逐字/≥80% 一手,直播口语无实录、自传为版权书(守 §3 门槛,详见 docs/10) |
 
