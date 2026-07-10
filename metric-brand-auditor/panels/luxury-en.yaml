@@ -3,10 +3,12 @@
 # 奢侈品 / 时尚 panel —— 5 位奢侈品产业塑造者。
 # 通过 industries.yaml 被 `--industry luxury-en` 引用。
 #
-# FULL(2/5):cucinelli(人文资本主义 doctrine)+ awintour(Anna Wintour,署名 Vogue
-# Editor's Letters + 悼念信,一手 100%,货真价实署名文,2026-07-10)已深化到 full tier。
-# seed(3/5):arnault / tomford / burton —— 侦察均判 deepen(route-A 可达),待深化落地。
+# FULL(3/5):cucinelli(人文资本主义 doctrine)+ awintour(Anna Wintour,署名 Vogue
+# Editor's Letters + 悼念信)+ burton(Sarah Burton,3 篇干净标签访谈只取本人答,一手 100%,
+# atelier/fitting/how-the-woman-feels,2026-07-10)已深化到 full tier。
+# seed(2/5):arnault / tomford —— 侦察均判 deepen(route-A 可达),待深化落地。
 # (SKILL.md + references/research/01-06 + quotes.md,全英文落笔)。
+# 注:burton slot = Sarah Burton(麦昆/纪梵希创意总监),非单板滑雪 Jake Burton。
 
 name: luxury-en
 display_name: Luxury & Fashion Panel
