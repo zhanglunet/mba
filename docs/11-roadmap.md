@@ -53,6 +53,18 @@
 
 ## 开发路线图
 
+### 工程健壮化 backlog（2026-07-10 整体盘点 · 4 路并行深读结论）
+
+内容侧已收尾(42/43 full + 1 诚实 seed;10 报告);真实短板集中在**质量自动化 / flagship 验证 / 一致性**。
+
+- **E0-1 反捏造 firewall 进 CI ✅ 已完成(2026-07-10)** —— `scripts/perspective-tools/firewall_check.py`:校验每套 SKILL「心智模型/关键引用」区 `>` 逐字引用必须在本套 `references/research/*.md` 逐字命中;接 `panel-validation.yml` 硬 gate。**把反捏造从人工纪律升级成机器门禁**;上线即抓出并修复 jobs 2 条未锚定引用(no taste / cannibalize)。`quality_check.py` 同时接入 CI(仅对本 PR 改动的 SKILL 阻断 6/6)。
+- **E0-2 报告渲染 QA 进 CI** —— 把 `scripts/qa_report_render.mjs`(headless Chromium,抓 Chart.js 无限增高 / Mermaid 未渲染 / 零高 canvas,曾搞坏 kimichat/qianxin)接 `report-validation.yml`;当前静态校验抓不到这类回归。
+- **E0-3 self-conflict 静态拦截** —— resolver/build 阶段校验:被审品牌命中某评委强关联表就自动 flag 建议 `--panel-drop`(现在全靠用户手动记)。
+- **E1-4 真跑一个 EVOLUTION v2** —— skill 最大卖点却零验证(9 份 versions 全停 v1);挑 dji/anthropic 真跑,验 delta / `↑↓↔` / gitGraph,先跑通再宣传。
+- **E1-5 MCP Phase 3/4/5 + 持久层单测** —— synthesis/judging/merge(最烧钱阶段)零单测;`store/filesystem·atomic·subscriptions` 无直测。
+- **E2-6 一致性清账** —— version 三处对齐(SKILL v0.4.2 vs PRD/panel 模板 0.2.38)、`docs/README` 收 docs/14 + 工具数 11→14、dimensions 7↔9 口径、报告目录三代统一(补 lenovo 的 md/panel)、`validate_panels` panel 完整性 warn→error、`print_report.sh` 改用预装 Chromium 让 PDF 可在 Linux/CI 生成。可做成 `check_consistency.py` CI 校验。
+- **E2-7 早批 6 套 quality_check 补齐 6/6** —— auto 面板等早期格式(hexiaopeng/leijun/libin/lixiang/musk)+ zhanglan(seed)当前不过 quality_check;补齐后可把 quality_check 升为全量硬 gate。
+
 ### 优先级 P0 — 立即可执行，不依赖外部解锁
 
 #### P0-A：深化 vc-en 英文评委 ✅ 已完成（2026-07-07）
