@@ -101,6 +101,7 @@ python3 scripts/perspective-tools/check_structure.py                 # 全部 43
 python3 scripts/perspective-tools/firewall_check.py                  # 反捏造硬 gate:SKILL 引用全部逐字命中 research(坑 #3)
 python3 scripts/perspective-tools/quality_check.py <path/to/SKILL.md># 必须 6/6(CI 只对本 PR 改动的 SKILL 阻断)
 python3 scripts/validate_panels.py                                   # panel 能解析
+python3 scripts/check_self_conflict.py                               # self-conflict 硬 gate:每套 SKILL 声明 --panel-drop <own-slug>、关联表 slug 真实
 python3 scripts/build_agents_api.py --check                          # site/api 无漂移(坑 #2)
 python3 packages/mcp-server/scripts/generate-personas.py             # 再 git diff --quiet 确认无漂移
 ```
