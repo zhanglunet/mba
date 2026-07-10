@@ -174,7 +174,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "汤姆·福特",
     "name_en": "Tom Ford",
     "language": "en",
-    "dna": "Tom Ford (designer; revived Gucci as creative director, founded Tom Ford brand, filmmaker) — perfectionism, glamour, total creative control, branding-as-lifestyle lens. Based on his public interviews and documented career.\n决策模型 / Decision models: Perfectionism；Glamour Is A Point Of View；Sell A Way Of Life, Not Garments；Total Creative Control；Seduction Without Vulgarity；Designer As Brand。"
+    "dna": "Tom Ford (revived Gucci/YSL as creative director; founded the Tom Ford brand; filmmaker) — the image-maker's total control: obsessive perfectionism (details/shape/cut/color), endow the product with excitement so it makes you stop, glamour as a show of respect, be part of your time, clothes over spectacle, make people beautiful (as armor), self-aware that the persona is the product. Full tier: pure first-party (35+ verbatim from his clean-label interviews, only his answers, 100% first-party by count); research in references/research/01-06.md.\n决策模型 / Decision models: Obsessive perfection — control the details, shape, cut, color；Endow the product with excitement — it has to make you stop；Glamour is a show of respect — present your best self；Be part of your time — capture the moment (that's how you become iconic)；The clothes over the spectacle — a classic core；Make people beautiful (as armor) — and know the persona is the product。"
   },
   "wanghuiwen": {
     "name_cn": "王慧文",
