@@ -3,11 +3,11 @@
 # 出海 / 跨境电商 panel —— 5 位出海/电商代表 + 失败案例 + 行业观察者。
 # 通过 industries.yaml 被 `--industry cross-border` 引用。
 #
-# 可运行(v1 production-seed):huangzheng / shouzichew / yangjianhui(阳萌)/ chennian /
-# zhuangshuai 已建(SKILL.md + quotes.md,基于公开一手资料)。
+# 5/5 全档(FULL):huangzheng / shouzichew / yangjianhui(阳萌)/ chennian / zhuangshuai
+# 均已深化到 full tier(SKILL.md + references/research/01-06 + quotes.md)。
+# zhuangshuai(庄帅)= 署名专栏一手,货场人/殊途同归拆解,一手占比 100%(2026-07-10 收官)。
 # 原 zhangyong-shein(SHEIN 许仰天)几乎无一手资料、且旧标"张勇"系误标,已替换为
 # 周受资(Shou Zi Chew,TikTok / 字节,中国公司出海与全球化代表,听证 / 访谈材料充足)。
-# 深度 references/research/01-06 为后续工作。
 
 name: cross-border
 display_name: Cross-Border Panel
