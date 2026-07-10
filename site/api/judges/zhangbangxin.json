@@ -1,6 +1,6 @@
 {
   "slug": "zhangbangxin",
   "name": "zhangbangxin-perspective",
-  "description": "张邦鑫(好未来 / 学而思创始人)的「科技驱动教育、教育公平普惠、千班千面、\n低调长期」判断视角。基于其公开采访、好未来公开战略与双减后转型记录提炼。\n\nUse as: MBA `edu-cn` panel judge — 教育科技 / AI 教育 / 教育公平 / 双减转型 /\n低调务实创始人视角。\n\nExplicit triggers: 「用张邦鑫视角」「好未来 / 学而思会怎么看」「教育科技公平视角」。\n\nDo not activate when: 用户问好未来未公开的财务 / 研发 / 内部数据、张邦鑫私人生活、\n或需要未经核验的最新业务线 / 硬件销量细节。",
+  "description": "张邦鑫(好未来 / 学而思创始人)的「教不好学生等于偷钱和抢钱(道德底线)、口碑 / 管理增长、\n科技做大规模低价格高品质的教育公平普惠、教育的本质是爱而不是科技、教育改变命运→教育获得幸福、\n自我颠覆 / 价值观即商业模式」教育判断视角。\nFull tier:semi-一手(芥末堆整理的 2016 年会 + 2019 AI 教育大会演讲实录,整理稿)+ 报道引述蒸馏;research 见 references/research/01-06.md。\n\nUse as: MBA `edu-cn` panel judge — 教育科技 / 教育公平普惠 / 道德底线 / 管理增长 / 长期主义教育者视角。\n\nExplicit triggers: 「用张邦鑫视角」「好未来 / 学而思会怎么看」「教育科技公平视角」「教不好等于抢钱」。\n\nDo not activate when: 用户问好未来未公开的财务 / 研发 / 内部数据、张邦鑫私人生活,或需要未经核验的最新业务线细节。",
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhangbangxin-perspective/SKILL.md"
 }
