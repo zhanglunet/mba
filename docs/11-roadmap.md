@@ -13,7 +13,7 @@
 | 版本 | **v0.4.2** | 实时联网研究 + 断点续跑（v0.4.1 首发 npm） |
 | 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
-| 评委全档进度 | ✅ **40/43 全档** | 3 人仍在 seed 层；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
+| 评委全档进度 | ✅ **41/43 全档** | 2 人仍在 seed 层；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
 | mbabrand.com | ✅ 上线 | Cloudflare Pages |
 | 公开报告 | ✅ 10/10 全部发布 | 10 面板各 1 份；Hermès 8.64 创三项史上最高 |
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
@@ -26,13 +26,13 @@
 
 > 权威 FULL/seed slug 名单以 `docs/10 §6` 为准（本节只给面板覆盖概览,不再手抄易错的 slug 列表）。
 
-**满档面板(7)**:`default` · `auto` · `security-cn-global` · **`vc-en`** · **`vc-cn`** · **`ai-app-cn`** · **`cross-border`**
-(vc-en/vc-cn/ai-app-cn/cross-border 均本场 seed→full 收官;cross-border 2026-07-10 由 `chennian`+`zhuangshuai` 收官)。
+**满档面板(8)**:`default` · `auto` · `security-cn-global` · **`vc-en`** · **`vc-cn`** · **`ai-app-cn`** · **`cross-border`** · **`luxury-en`**
+(vc-en/vc-cn/ai-app-cn/cross-border/luxury-en 均本场 seed→full 收官;luxury-en 2026-07-10 由 `awintour`+`burton`+`tomford`+`arnault` 收官,只剩 edu-cn 一个行业面板未满档)。
 
 | 面板 | 全档进度 | 下一步 |
 |------|---------|--------|
 | default / auto / security-cn-global / vc-en | ✅ 满档 | — |
-| **luxury-en** | **4/5** | ✅ `cucinelli`(人文资本主义 report)+ `awintour`(署名 Editor's Letters + 悼念信)+ `burton`（**= Sarah Burton 麦昆/纪梵希**,3 篇干净标签访谈,atelier/fitting）+ `tomford`（Tom Ford,GQ 2021 + Interview Mag ~2011 干净标签访谈只取本人答,一手 100%,35 条 verbatim,obsessive perfection/glamour as respect,2026-07-10)已 full。剩 `arnault`(LVMH 年报董事长致辞+致股东信署名,scout 已判 deepen、语料已抓)——做完 = **luxury-en 5/5** 收官 |
+| **luxury-en** | ✅ **5/5** | 整面板收官(2026-07-10):`cucinelli`(人文资本主义 report)+ `awintour`(署名 Editor's Letters + 悼念信)+ `burton`（**= Sarah Burton 麦昆/纪梵希**,干净标签访谈,atelier/fitting）+ `tomford`（Tom Ford,GQ+Interview Mag 干净标签访谈）+ `arnault`（Bernard Arnault,LVMH 署名年报董事长致辞+致股东信,一手 100%,30+ 条 verbatim,desirability/长期主义/eternal Maison）全 full。**4 路 scout 推翻"访谈=二手"+"arnault marginal";继 vc-en、vc-cn、ai-app-cn、cross-border 后第五个整面板 full** |
 | edu-cn | **4/5** | ✅ `yuminhong`(俞敏洪)+ `salkhan`(Sal Khan,2 场官方 TED transcript,内嵌 JSON 抽逐字)已 full(2026-07-07);`zhangbangxin`(中文)待深化 |
 | ai-app-cn | ✅ **5/5** | 整面板收官:`yangzhilin`/`wanghuiwen`/`zhuxiaohu` route-A 深化 + `zhouhongyi`/`fusheng`(复用 default)。王=纯一手演讲(源码/清华)+ semi-一手笔记侠整理产品课(类比 pthiel,健康/退隐留白)。继 vc-en、vc-cn 后第三个整面板 full |
 | cross-border | ✅ **5/5** | 整面板收官:`huangzheng`(黄峥)+ `yangjianhui`(阳萌)+ `shouzichew`(周受资,2023 国会书面证词)+ `chennian`(陈年,2014 一件衬衫 828 实录)+ `zhuangshuai`(庄帅,署名专栏 self-writing 一手 100%,货场人/殊途同归,2026-07-10)全 full。继 vc-en、vc-cn、ai-app-cn 后第四个整面板 full |
