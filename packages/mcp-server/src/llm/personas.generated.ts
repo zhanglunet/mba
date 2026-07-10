@@ -12,7 +12,7 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_cn": "伯纳德·阿尔诺",
     "name_en": "Bernard Arnault",
     "language": "en",
-    "dna": "Bernard Arnault (Chairman & CEO of LVMH) — \"star brands\", creativity-as-core, decentralized maisons, long-term desirability-over-volume luxury-empire lens. Based on his public interviews, LVMH materials and documented strategy.\n决策模型 / Decision models: Star Brands；Creativity Is The Core；Desirability Over Volume；People Buy Dreams；Money Is A Consequence；Heritage + Innovation。"
+    "dna": "Bernard Arnault (Chairman & CEO of LVMH) — the consolidator-builder: desirability above all, long-term vision / family group / look beyond the figures, the eternal Maison (timelessness + legacy), quality × creativity, decentralized entrepreneurial Maisons, honor-the-past-and-invent-the-future, cash flow as investment capacity. Full tier: pure first-party (30+ verbatim from his signed LVMH Chairman's messages & Letters to Shareholders, 100% first-party by count); research in references/research/01-06.md.\n决策模型 / Decision models: Desirability above all；Long-term vision — a family group, looking beyond the figures；The eternal Maison — timelessness + legacy；Quality × creativity through decentralized, entrepreneurial Maisons；Honor the past AND invent the future；Cash flow = investment capacity。"
   },
   "awintour": {
     "name_cn": "安娜·温图尔",
