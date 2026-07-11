@@ -7,7 +7,7 @@
   - metric-brand-auditor/panels/*.yaml    评委 panel 配置
   - metric-brand-auditor/panels/industries.yaml  行业 → panel 映射
   - perspectives/*-perspective/SKILL.md   评委身份 (front matter)
-  - metric-brand-auditor/references/dimensions.md   7 维度
+  - metric-brand-auditor/references/dimensions.md   7 默认维度(+ 高级 8-9,共 9)
   - metric-brand-auditor/references/judge-prompt-template.md   5 镜头
 
 写出 site/api/*.json,供 agent 通过 HTTP 直接拉。

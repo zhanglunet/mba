@@ -123,7 +123,9 @@ def main() -> int:
                 missing.append(slug)
 
         if missing and status != "skeleton":
-            warnings.append(f"{path.name}: missing perspective skills: {', '.join(missing)}")
+            # 硬错误(E2-6):非 skeleton panel 引用了不存在的 perspective slug =
+            # 面板不可用,必须 CI 红(此前仅 WARN 会放行断链面板)。
+            errors.append(f"{path.name}: missing perspective skills: {', '.join(missing)}")
         if status == "skeleton":
             print(f"OK skeleton: {path.name} ({len(judges)} judges, {len(missing)} missing skills)")
         else:
@@ -134,7 +136,9 @@ def main() -> int:
         mappings = parse_industries(industries_path)
         for industry, panel in mappings.items():
             if panel not in panel_names:
-                warnings.append(f"industries.yaml: {industry!r} maps to missing panel {panel!r}")
+                # 硬错误(E2-6):活跃 industry 别名指向不存在的 panel 文件 =
+                # `--industry <x>` 会 ABORT,属真实断链,必须 CI 红。
+                errors.append(f"industries.yaml: {industry!r} maps to missing panel {panel!r}")
         print(f"OK industries.yaml ({len(mappings)} mappings)")
     else:
         warnings.append("industries.yaml is missing")

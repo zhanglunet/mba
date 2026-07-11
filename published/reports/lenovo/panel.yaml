@@ -1,0 +1,19 @@
+# Reconstructed by E2-6 (2026-07-10) from site/reports-meta.yaml — the original
+# panel.yaml was never committed for this early (2026-05-10) report. Metadata
+# only; no audit prose was fabricated.
+#
+# NOTE: lenovo predates the panel-lock era and only ever had report.html (+ pdf +
+# _assets) committed. report.md / reviews/ / _raw/ / versions/ were never in git
+# history and are intentionally NOT backfilled — regenerating them would fabricate
+# reviewer scores/quotes for a v1 report and violate the anti-fabrication gate (坑 #3).
+panel: default
+brand: 联想集团
+brand_slug: lenovo
+version: v1
+audit_date: 2026-05-10
+score_total: 22
+score_max: 50
+score_normalized: 4.4
+overrides:
+  add: []
+  drop: []

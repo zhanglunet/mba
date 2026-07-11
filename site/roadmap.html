@@ -348,10 +348,10 @@
       <div class="value">10 / 10</div>
       <div class="note">全部面板可运行，各有首份发布报告</div>
     </div>
-    <div class="status-card warn">
+    <div class="status-card ok">
       <div class="label">评委全档</div>
-      <div class="value">15 / 43</div>
-      <div class="note">28 人待深化（seed 层）；P0-A 下一步</div>
+      <div class="value">42 / 43</div>
+      <div class="note">1 人诚实留 seed（张兰 / zhanglan）；9/10 面板满档</div>
     </div>
     <div class="status-card ok">
       <div class="label">公开报告</div>
@@ -365,27 +365,27 @@
     </div>
     <div class="status-card ok">
       <div class="label">MCP Server</div>
-      <div class="value">11 工具</div>
-      <div class="note">v0.1.0 · 6 核心 + 5 演化 · 67 tests · 发布就绪</div>
+      <div class="value">14 工具</div>
+      <div class="note">v0.1.0 · 8 核心 + 6 演化 · 158 tests · 已发 npm</div>
     </div>
   </div>
 
   <!-- ── 关键阻断项 ── -->
   <h2>关键阻断项</h2>
   <div class="blocker-box">
-    <div class="bhead">⚠ 当前阻断</div>
+    <div class="bhead">✓ 原深化阻断已绕过（route-A：出口代理 + curl）</div>
     <div class="blocker-item">
-      <div class="blocker-dot">1</div>
+      <div class="blocker-dot">✓</div>
       <div class="text">
         <b>Wuying 免费版限制</b> — <code>GetLink()</code> 返回 400（Pro/Ultra 专属）<br/>
-        <div class="resolve">影响：25 位中文评委无法抓取 Zhihu / 微信 / X 内容，深化被阻断。解法：升级到 Pro/Ultra。</div>
+        <div class="resolve">曾阻断中文评委深化。已绕过：36氪 / 新浪财经 / 腾讯新闻 / 企业官网 / 公众号合集用 route-A（<code>curl</code> 走出口代理）取一手,42/43 全档达成。</div>
       </div>
     </div>
     <div class="blocker-item">
-      <div class="blocker-dot">2</div>
+      <div class="blocker-dot">✓</div>
       <div class="text">
-        <b>沙箱 WebFetch 403</b> — paulgraham.com / Wikipedia / CF 防护站点返回 403<br/>
-        <div class="resolve">影响：vc-en 3 位英文评委（paulgraham/bhorowitz/marcandreessen）深化受阻。解法：通过 Wuying 代理访问，或 Jina Reader 镜像。</div>
+        <b>沙箱 WebFetch 403</b> — paulgraham.com / CF 防护站点对 WebFetch UA 返回 403<br/>
+        <div class="resolve">曾阻断 vc-en 英文评委深化。已绕过：改用 route-A <code>curl</code>（浏览器 UA + CA bundle）直取原文,vc-en 5/5 全档。</div>
       </div>
     </div>
   </div>
@@ -395,11 +395,11 @@
   <div class="progress-section">
     <div class="big-bar-wrap">
       <div class="big-bar-label">
-        <span>全档完成 <span class="count">15</span> <span class="total">/ 43 位评委</span></span>
-        <span style="font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;font-size:13px;color:var(--muted);">35%</span>
+        <span>全档完成 <span class="count">42</span> <span class="total">/ 43 位评委</span></span>
+        <span style="font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;font-size:13px;color:var(--muted);">98%</span>
       </div>
       <div class="bar-track">
-        <div class="bar-fill" style="width: 34.9%"></div>
+        <div class="bar-fill" style="width: 97.7%"></div>
       </div>
     </div>
 
@@ -421,58 +421,58 @@
       <div class="panel-row">
         <div class="top">
           <span class="pname">security-cn-global</span>
-          <span class="pfrac">3 / 6 <span class="badge" style="background:var(--yellow-bg);color:var(--yellow)">进行中</span></span>
+          <span class="pfrac">6 / 6 <span class="badge done">全档</span></span>
         </div>
-        <div class="panel-bar"><div class="fill fill-partial" style="width:50%"></div></div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
       </div>
       <div class="panel-row">
         <div class="top">
           <span class="pname">vc-en <span style="color:var(--muted);font-weight:400">· 英文 VC</span></span>
-          <span class="pfrac">2 / 5 <span class="badge todo">待深化</span></span>
+          <span class="pfrac">5 / 5 <span class="badge done">全档</span></span>
         </div>
-        <div class="panel-bar"><div class="fill fill-partial" style="width:40%"></div></div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
       </div>
       <div class="panel-row">
         <div class="top">
           <span class="pname">ai-app-cn <span style="color:var(--muted);font-weight:400">· AI 应用</span></span>
-          <span class="pfrac">2 / 5 <span class="badge todo">待深化</span></span>
+          <span class="pfrac">5 / 5 <span class="badge done">全档</span></span>
         </div>
-        <div class="panel-bar"><div class="fill fill-partial" style="width:40%"></div></div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
       </div>
       <div class="panel-row">
         <div class="top">
           <span class="pname">edu-cn <span style="color:var(--muted);font-weight:400">· 教育</span></span>
-          <span class="pfrac">2 / 5 <span class="badge todo">待深化</span></span>
+          <span class="pfrac">5 / 5 <span class="badge done">全档</span></span>
         </div>
-        <div class="panel-bar"><div class="fill fill-partial" style="width:40%"></div></div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
       </div>
       <div class="panel-row">
         <div class="top">
           <span class="pname">vc-cn <span style="color:var(--muted);font-weight:400">· 中文 VC</span></span>
-          <span class="pfrac">2 / 5 <span class="badge todo">待深化</span></span>
+          <span class="pfrac">5 / 5 <span class="badge done">全档</span></span>
         </div>
-        <div class="panel-bar"><div class="fill fill-partial" style="width:40%"></div></div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
       </div>
       <div class="panel-row">
         <div class="top">
           <span class="pname">consumer-cn <span style="color:var(--muted);font-weight:400">· 消费品</span></span>
-          <span class="pfrac">0 / 5 <span class="badge blocked">阻断</span></span>
+          <span class="pfrac">4 / 5 <span class="badge" style="background:var(--yellow-bg);color:var(--yellow)">张兰诚实留 seed</span></span>
         </div>
-        <div class="panel-bar"><div class="fill fill-zero" style="width:0%"></div></div>
+        <div class="panel-bar"><div class="fill fill-partial" style="width:80%"></div></div>
       </div>
       <div class="panel-row">
         <div class="top">
           <span class="pname">cross-border <span style="color:var(--muted);font-weight:400">· 出海</span></span>
-          <span class="pfrac">0 / 4 <span class="badge blocked">阻断</span></span>
+          <span class="pfrac">5 / 5 <span class="badge done">全档</span></span>
         </div>
-        <div class="panel-bar"><div class="fill fill-zero" style="width:0%"></div></div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
       </div>
       <div class="panel-row">
         <div class="top">
           <span class="pname">luxury-en <span style="color:var(--muted);font-weight:400">· 奢侈品</span></span>
-          <span class="pfrac">— / 5 <span class="badge todo">待核查</span></span>
+          <span class="pfrac">5 / 5 <span class="badge done">全档</span></span>
         </div>
-        <div class="panel-bar"><div class="fill fill-zero" style="width:0%"></div></div>
+        <div class="panel-bar"><div class="fill fill-full" style="width:100%"></div></div>
       </div>
     </div>
   </div>

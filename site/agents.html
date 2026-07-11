@@ -487,10 +487,10 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
   "args": ["-y", "mba-mcp-server@latest"],
   "env": { "ANTHROPIC_API_KEY": "sk-ant-..." }
 }}}</code></pre>
-    <p style="margin-bottom:8px;">然后说"用 mba 审一下 Anthropic"，agent 走 <code>propose_audit → confirm_audit → get_status → fetch_report</code>。共 <strong>11 个工具</strong>：</p>
+    <p style="margin-bottom:8px;">然后说"用 mba 审一下 Anthropic"，agent 走 <code>propose_audit → confirm_audit → get_status → fetch_report</code>。共 <strong>14 个工具</strong>：</p>
     <p style="margin-bottom:8px;padding-left:12px;font-size:14px;"><strong>核心审计（6）</strong>：<code>propose_audit</code>（生成 PRD）· <code>confirm_audit</code>（启动后台流水线，非阻塞）· <code>get_status</code>（轮询进度）· <code>fetch_report</code>（拉报告 MD/HTML）· <code>list_audits</code> · <code>add_judge</code>（注册自定义评委）<br/>
     <strong>演化追踪（5）</strong>：<code>subscribe_brand</code>（订阅品牌自动重审）· <code>trigger_evolution</code>（触发 EVOLUTION 重审）· <code>list_subscriptions</code> · <code>unsubscribe_brand</code> · <code>get_delta_report</code>（两次审计评分对比）</p>
-    <p style="margin-bottom:8px;">支持<strong>品牌订阅 → 定时/事件触发 → 增量重审 → delta 报告 → webhook/email 主动通知</strong>的完整闭环。变化探针只重跑受影响的维度，演化审计成本从 ~$3 降到 ~$0.4/次。内置 5 位评委（傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣），可扩展。67 tests（含真实 MCP 协议层 e2e）。上手见 <a href="https://github.com/zhanglunet/mba/blob/main/docs/13-mcp-quickstart.md">docs/13-mcp-quickstart.md</a>；源码 <a href="https://github.com/zhanglunet/mba/tree/main/packages/mcp-server">packages/mcp-server/</a>。</p>
+    <p style="margin-bottom:8px;">支持<strong>品牌订阅 → 定时/事件触发 → 增量重审 → delta 报告 → webhook/email 主动通知</strong>的完整闭环。变化探针只重跑受影响的维度，演化审计成本从 ~$3 降到 ~$0.4/次。内置 5 位评委（傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣），可扩展。158 tests（含真实 MCP 协议层 e2e）。上手见 <a href="https://github.com/zhanglunet/mba/blob/main/docs/13-mcp-quickstart.md">docs/13-mcp-quickstart.md</a>；源码 <a href="https://github.com/zhanglunet/mba/tree/main/packages/mcp-server">packages/mcp-server/</a>。</p>
 
     <p style="margin-bottom:8px;"><strong>RAG ingest</strong> —— 直接拉 <code>/api/search.json</code>,扁平 corpus 就是给 client-side substring search 准备的;也适合直接灌 embedding。</p>
 
