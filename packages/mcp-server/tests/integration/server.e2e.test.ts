@@ -5,6 +5,7 @@ import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createServer } from '../../src/server.js';
+import { SERVER_VERSION } from '../../src/version.js';
 
 /**
  * End-to-end: drive the real McpServer (all 14 registered tools) over an
@@ -38,6 +39,12 @@ describe('MCP server e2e', () => {
     const text = result.content.find(c => c.type === 'text')?.text ?? '{}';
     return JSON.parse(text);
   }
+
+  it('advertises the SERVER_VERSION over the MCP handshake', async () => {
+    // pins server.ts's McpServer registration to the single-source-of-truth const, so a
+    // re-hardcoded version literal there cannot silently drift from package.json.
+    expect(client.getServerVersion()?.version).toBe(SERVER_VERSION);
+  });
 
   it('registers all 14 tools', async () => {
     const { tools } = await client.listTools();

@@ -22,6 +22,7 @@ import { unsubscribeBrand } from './tools/unsubscribe-brand.js';
 import { getDeltaReport } from './tools/get-delta-report.js';
 import { listPanels } from './tools/list-panels.js';
 import { getBrandTrend } from './tools/get-brand-trend.js';
+import { SERVER_VERSION } from './version.js';
 import type { ServerConfig } from './types.js';
 
 export function buildConfig(): ServerConfig {
@@ -56,7 +57,7 @@ export function createServer(): McpServer {
 
   const server = new McpServer({
     name: 'mba-mcp-server',
-    version: '0.1.0',
+    version: SERVER_VERSION,
   });
 
   // ── Tool: propose_audit ──────────────────────────────────────────────────

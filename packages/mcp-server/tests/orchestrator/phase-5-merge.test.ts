@@ -3,6 +3,7 @@ import type { AuditState } from '../../src/types.js';
 import type { FilesystemStore } from '../../src/store/filesystem.js';
 import type { LLMClient } from '../../src/llm/client.js';
 import { runPhase5Merge } from '../../src/orchestrator/phase-5-merge.js';
+import { SERVER_VERSION } from '../../src/version.js';
 
 function makeState(overrides: Partial<AuditState> = {}): AuditState {
   return {
@@ -73,6 +74,8 @@ describe('runPhase5Merge', () => {
     expect(md).toContain('BODY-XYZ');
     expect(md).toContain('## Legal / IP / Disclaimer');
     expect(md).toContain('does not constitute investment advice');
+    // footer provenance uses the shared SERVER_VERSION const (not a re-hardcoded literal)
+    expect(md).toContain(`MBA MCP Server v${SERVER_VERSION}`);
     // the returned report_md is exactly what was persisted
     expect(result.report_md).toBe(md);
   });
@@ -86,6 +89,8 @@ describe('runPhase5Merge', () => {
     expect(html).toContain('&lt;b&gt;bold&lt;/b&gt; &amp; &lt;script&gt;');
     // the raw, unescaped injected tag must NOT survive into the HTML
     expect(html).not.toContain('<script>x</script>');
+    // HTML meta div provenance uses the shared SERVER_VERSION const
+    expect(html).toContain(`MBA MCP Server v${SERVER_VERSION}`);
   });
 
   it('snapshots the report into versions/v1_<date>.md identical to report.md', async () => {
