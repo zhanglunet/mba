@@ -3,11 +3,18 @@
 """
 firewall_check.py — anti-fabrication firewall (MBA 立身之本,机器门禁)
 
-对每套 perspective 校验:SKILL.md「## Core Mental Models」区里所有引号内 `>` blockquote
-逐字引用,**必须**在该套 references/research/*.md 语料(quotes.md + 01-06)里逐字存在
-(规范化后子串匹配)。SKILL 引了一句 research 里没有的话 = 可能捏造 / 漂移 → CI fail。
+对每套 perspective 校验两类「声称的逐字引用」,**必须**在该套 references/research/*.md 语料
+(quotes.md + 01-06)里逐字存在(规范化后子串匹配),否则 = 可能捏造 / 漂移 → CI fail:
 
-这把 CLAUDE.md 坑#3 的「反捏造靠人工 grep」升级成机器强制门禁。
+  (1) SKILL「## Core Mental Models / 关键引用」区里的 `>` blockquote 逐字引用;
+  (2) F4:「## 表达DNA / Expression DNA」等区 ```代码块``` 里**带来源署名**的代表句式
+      (如 `… —— 致股东信，2018` / `… — Startup = Growth, 2012`)——署名=声称是真引语,必须有据。
+
+**豁免**:无来源署名的「Representative lines / 代表句式 / answer scaffold」句式模板(常带
+`{占位符}`)是合法的风格演示,不是声称的引语,不校验(避免误伤合法的风格样例)。
+
+这把 CLAUDE.md 坑#3 的「反捏造靠人工 grep」升级成机器强制门禁;F4 把覆盖从「只查 `>`」
+扩到「也查带署名的代表句式」(此前 22/43 套的行内/代码块引用是盲区)。
 
 用法:
   python3 scripts/perspective-tools/firewall_check.py            # 全 43 套
@@ -76,6 +83,54 @@ def extract_skill_quotes(skill_text: str):
                 quotes.append(q)
     return quotes
 
+# ---- F4:带署名的「代表句式」代码块引用 ----
+# 表达DNA / Expression DNA 等区里 ```text 代码块中的句子分两类:
+#   - **带来源署名**(如 `…… —— 致股东信，2018` / `… — Startup = Growth, 2012`)= 声称的真引语 → 必须逐字在 research;
+#   - **无署名**(「Representative lines / 代表句式 / answer scaffold」的句式模板,常带 {占位符})= 合法的风格样例 → 豁免。
+# 只校验前者,把「引了一句署名却不在语料」的漏洞补上,同时不误伤合法的句式演示。
+_DNA_SECTIONS = ("表达dna", "expression dna", "表达风格", "代表", "representative", "金句", "句式")
+# 来源信号:出现年份 / 出处词 / 大写 essay 标题起始,才把结尾的 — / —— 当作署名(避免误吃句内破折号)
+_SRC_SIGNAL = re.compile(r"(1[89]\d\d|20\d\d|年会|发布会|讲话|演讲|大会|访谈|致股东|股东信|公开信|自传|Commencement|essay|Source|source|Growth|Wealth|—\s*[A-Z])")
+_ATTR_RE = re.compile(r"\s[—–]\s+(?P<a>\S.*)$|\s*——\s*(?P<b>\S.*)$")
+
+def _split_attribution(line: str):
+    """若 line 以「来源署名」结尾,返回 (正文, True);否则 (原文, False)。
+    只有署名段带来源信号时才切,避免误吃句内的破折号。"""
+    m = _ATTR_RE.search(line)
+    if m:
+        src = m.group("a") or m.group("b") or ""
+        if _SRC_SIGNAL.search(src):
+            return line[:m.start()].rstrip(), True
+    return line, False
+
+def extract_attributed_fence_quotes(skill_text: str):
+    """表达DNA / 关键引用区 ```代码块``` 内、带来源署名的引用(块级合并多行,只到署名行为止)。"""
+    lines = skill_text.splitlines()
+    quotes, in_sec, in_fence, unit = [], False, False, []
+    for ln in lines:
+        st = ln.strip()
+        if st.startswith("## "):
+            low = st.lower()
+            in_sec = _is_quote_section(st) or any(k in low for k in _DNA_SECTIONS)
+            in_fence = False; unit = []
+            continue
+        if st.startswith("```"):
+            in_fence = not in_fence
+            if not in_fence:
+                unit = []  # 出块:未署名残余=风格样例,丢弃
+            continue
+        if not (in_sec and in_fence):
+            continue
+        body, attributed = _split_attribution(st)
+        if body:
+            unit.append(body)
+        if attributed:
+            q = " ".join(unit).strip()
+            if len(q) >= 8:
+                quotes.append(q)
+            unit = []
+    return quotes
+
 def strip_annotation(q: str):
     """生成候选:原样 + 去掉行内 `code` 标签 + 去掉结尾括注 后的版本(全试,任一命中即算过)。"""
     cands = []
@@ -92,13 +147,16 @@ def strip_annotation(q: str):
         cands.append(c2)
         # 双破折号 + 括注都去
         cands.append(re.sub(r"[（(][^（）()]*[)）]\s*$", "", c_dash).strip())
-    # 去成对首尾引号
+    # 去成对首尾引号 + 去句尾标点(「抢钱。」应命中语料里的「抢钱」)
     out = []
     for c in cands:
         out.append(c)
         c3 = c.strip("\"'“”‘’「」")
         if c3 != c:
             out.append(c3)
+        c4 = re.sub(r"[。.!?！?：:；;、,，\s\"'“”‘’「」]+$", "", c).strip()
+        if c4 and c4 != c:
+            out.append(c4)
     # 去重保序
     seen, uniq = set(), []
     for c in out:
@@ -117,7 +175,7 @@ def check_perspective(skill_path: str, quiet=False):
     persp_dir = os.path.dirname(skill_path)
     slug = os.path.basename(persp_dir).replace("-perspective", "")
     skill = open(skill_path, encoding="utf-8").read()
-    quotes = extract_skill_quotes(skill)
+    quotes = extract_skill_quotes(skill) + extract_attributed_fence_quotes(skill)
     corpus_raw, files = load_corpus(persp_dir)
 
     if not corpus_raw.strip():
@@ -148,6 +206,10 @@ def check_perspective(skill_path: str, quiet=False):
             continue
         segs = [s for s in re.split(r"\s+/\s+", q) if len(s.strip()) >= 6]
         if len(segs) >= 2 and all(match_one(s) for s in segs):
+            continue
+        # 多句体兜底:整段不中再逐句(如 paulg「A startup is…. The only essential thing is growth.」),要求每句命中
+        sents = [s for s in re.split(r"(?<=[。.!?！?])\s+", q) if len(s.strip()) >= 8]
+        if len(sents) >= 2 and all(match_one(s) for s in sents):
             continue
         failed.append(q)
 
