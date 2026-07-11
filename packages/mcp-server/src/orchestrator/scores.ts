@@ -11,16 +11,44 @@ export const LENS_LABELS: Record<string, string> = {
   signal: 'Real-world signal',
 };
 
-const LENS_ANCHORS: Array<{ id: string; pattern: RegExp }> = [
-  { id: 'origin', pattern: /Origin authenticity[^\d\n]*?(\d{1,2})/i },
-  { id: 'category', pattern: /Category coinage[^\d\n]*?(\d{1,2})/i },
-  { id: 'leverage', pattern: /Leverage quality[^\d\n]*?(\d{1,2})/i },
-  { id: 'identity', pattern: /Identity coherence[^\d\n]*?(\d{1,2})/i },
-  { id: 'signal', pattern: /Real-world signal[^\d\n]*?(\d{1,2})/i },
+// Every judge-output format we've observed carries the lens's English SHORT name
+// (Origin/Category/Leverage/Identity/Signal) verbatim — so we anchor on that, not the
+// full MCP label. The score is the first 1–2 digit integer (1–10) that follows the lens
+// name on the same line. Formats this covers:
+//   - MCP orchestrator bullets:  "- Origin authenticity: 8 — ..."  /  ZH "…（Origin authenticity）：7"
+//   - skill table rows:          "| Origin / 起源叙事 | 9 | … |"  /  "| Origin 起源真实性 | 7 | … |"
+//   - skill section headers:     "### Origin — 8 ↔"  /  "### 1. Origin 起源真实性 — 7"
+const LENS_ANCHORS: Array<{ id: string; name: RegExp }> = [
+  { id: 'origin', name: /\bOrigin\b/i },
+  { id: 'category', name: /\bCategory\b/i },
+  { id: 'leverage', name: /\bLeverage\b/i },
+  { id: 'identity', name: /\bIdentity\b/i },
+  { id: 'signal', name: /\bSignal\b/i },
 ];
+
+// A line is trusted as a score line only if it is structured (table row / header / blockquote /
+// bullet) or the lens name sits near its start. This stops a stray lens word in prose — e.g.
+// "把 Signal 从 10 压到 7" in a panel-merge divergence paragraph — from hijacking the score.
+const STRUCTURE_PREFIX = /^[|#>\-*]/;
+const NEAR_START = 8;
 
 function round(n: number): number {
   return Math.round(n * 100) / 100;
+}
+
+/** Extract a lens score (1–10) from a single line, or null if the line isn't a trusted score line. */
+function scoreFromLine(line: string, nameRe: RegExp): number | null {
+  const m = nameRe.exec(line);
+  if (!m || m.index === undefined) return null;
+  const leadingWs = line.length - line.trimStart().length;
+  const trimmed = line.slice(leadingWs);
+  if (!STRUCTURE_PREFIX.test(trimmed) && m.index - leadingWs > NEAR_START) return null;
+  // First 1–2 digit number within 40 non-digit chars after the lens name = the score;
+  // the cap keeps rationale digits ("grew 300% in 2024", the "↑1" delta suffix) out.
+  const sm = line.slice(m.index + m[0].length).match(/^[^\d\n]{0,40}?(\d{1,2})/);
+  if (!sm) return null;
+  const val = parseInt(sm[1], 10);
+  return val >= 1 && val <= 10 ? val : null;
 }
 
 /**
@@ -29,11 +57,14 @@ function round(n: number): number {
  */
 export function parseJudgeScores(judge: string, markdown: string): JudgeScores | null {
   const lenses: Record<string, number> = {};
-  for (const { id, pattern } of LENS_ANCHORS) {
-    const m = markdown.match(pattern);
-    if (m && m[1]) {
-      const val = parseInt(m[1], 10);
-      if (val >= 1 && val <= 10) lenses[id] = val;
+  const lines = markdown.split(/\r?\n/);
+  for (const { id, name } of LENS_ANCHORS) {
+    for (const line of lines) {
+      const val = scoreFromLine(line, name);
+      if (val !== null) {
+        lenses[id] = val; // first trusted line wins (score table precedes any prose recap)
+        break;
+      }
     }
   }
   if (Object.keys(lenses).length === 0) return null;
