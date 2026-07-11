@@ -144,7 +144,7 @@ mba/
 ├── published/reports/               ← 已确认可公开发布的报告源(显式 git add -f 才入库)
 ├── packages/mcp-server/             ← mba-mcp-server:MBA 的 MCP 封装(TypeScript,14 工具,已发布 npm)
 ├── site/                            ← mbabrand.com 的源:index.html + build.sh(Cloudflare Pages)
-├── docs/                            ← 完整设计文档 01-13 + mcp-server-design + hackathon 资料
+├── docs/                            ← 完整设计文档 01-14 + mcp-server-design + hackathon 资料
 ├── .github/workflows/panel-validation.yml ← CI:校验 panel / 结构 / py_compile / shell / site build
 └── .env.example / .env              WUYING_API_KEY 配置(.env 不入库)
 ```

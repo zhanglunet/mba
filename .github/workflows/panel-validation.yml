@@ -28,6 +28,8 @@ jobs:
         run: |
           python scripts/check_self_conflict.py
           python scripts/check_self_conflict.py --smoke
+      - name: 一致性守卫(版本对齐 / docs 索引 / 评委数 / 工具数 / 维度口径 不漂移)
+        run: python scripts/check_consistency.py
       - name: Quality check (全量硬 gate:全部 43 套 SKILL.md 必须 6/6)
         run: |
           # E2-7 起全部 43 套已达 6/6,quality_check 从"仅阻断 PR 改动的 SKILL"

@@ -145,9 +145,10 @@ MBA 用三条对应机制解决:
 - **v0.2.2x** — security-cn-global 6 人 panel + perspective 增至 15 套 + perspective-structure-spec + CI 校验 + site 发布(mbabrand.com)
 - **2026-06 · v0.2.30–v0.2.36** — perspective 收纳到 `perspectives/`;For-Agents 机读层(`site/api/*.json` + `llms.txt` + `agents.html`)+ presentation deck;修复 perspectives/ 重构的 CI 回归 + `/api` 漂移守卫(含 llms.txt / reports-meta)+ 一键发布流水线;**7 个 SKELETON 行业 panel 全部建成可运行 → 10/10 panel、43 套 perspective**
 - **v0.2.37** — `--dry-run` 标志（Phase 0 §0.5：打印模式/面板/评委/维度/路径后退出，零副作用）；集成测试 CI workflow（`report-validation.yml` + validate 脚本）
-- **v0.2.38** — `--panel-merge` 标志（Phase 5M：跨面板 N-Judge 对比 + Panel Comparison 报告节 + delta 热力图）；P2-B 8 品牌建档（报告待生成）(当前)
-- **v0.3** — 把 28 套 seed-tier perspective 深化到 full tier(6 路调研,见 [10-deepening-perspectives.md](10-deepening-perspectives.md))+ dogfood 真实报告
-- **v0.4+** — MCP 化(参考 [mcp-server-design.md](mcp-server-design.md))
+- **v0.2.38** — `--panel-merge` 标志（Phase 5M：跨面板 N-Judge 对比 + Panel Comparison 报告节 + delta 热力图）；P2-B 8 品牌建档
+- **v0.3** — 把 seed-tier perspective 深化到 full tier(6 路调研,见 [10-deepening-perspectives.md](10-deepening-perspectives.md))+ dogfood 真实报告 **✅ 42/43 full + 1 诚实 seed(zhanglan);10 份旗舰报告**
+- **v0.4.0** — MCP 化(参考 [mcp-server-design.md](mcp-server-design.md))**✅ `mba-mcp-server`(14 工具、演化闭环、webhook 入站)已发 npm**
+- **v0.4.2** — 工程硬化:反捏造 firewall / 报告渲染 QA / self-conflict 三道 CI 硬 gate;真跑首个 EVOLUTION v2(anthropic);MCP Phase 3/4/5 + 持久层补单测(158);一致性清账 + `check_consistency.py`;`quality_check` 升为全量硬 gate(43/43 · 6/6)(当前)
 
 ## 11. 衍生需求(待评估)
 

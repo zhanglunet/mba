@@ -41,11 +41,31 @@ if [ ! -f "$SRC_HTML" ]; then
   exit 1
 fi
 
-CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-if [ ! -x "$CHROME" ]; then
-  echo "[print] Google Chrome.app not found at $CHROME" >&2
+# Cross-platform Chromium/Chrome discovery (E2-6). Prefers the Chromium this
+# environment preinstalls for Playwright ($PLAYWRIGHT_BROWSERS_PATH, e.g.
+# /opt/pw-browsers), so PDF generation works on Linux/CI — not only macOS.
+find_chrome() {
+  local pb="${PLAYWRIGHT_BROWSERS_PATH:-}"
+  if [ -n "$pb" ]; then
+    [ -x "$pb/chromium" ] && { echo "$pb/chromium"; return 0; }
+    local c
+    for c in "$pb"/chromium-*/chrome-linux/chrome "$pb"/chromium-*/chrome-linux/headless_shell; do
+      [ -x "$c" ] && { echo "$c"; return 0; }
+    done
+  fi
+  for name in chromium chromium-browser google-chrome-stable google-chrome; do
+    if command -v "$name" >/dev/null 2>&1; then command -v "$name"; return 0; fi
+  done
+  local mac="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  [ -x "$mac" ] && { echo "$mac"; return 0; }
+  return 1
+}
+
+if ! CHROME="$(find_chrome)"; then
+  echo "[print] no Chromium/Chrome found. Tried \$PLAYWRIGHT_BROWSERS_PATH/chromium, chromium, chromium-browser, google-chrome[-stable], and macOS Chrome.app." >&2
   exit 1
 fi
+echo "[print] using browser: $CHROME"
 
 cp "$SRC_HTML" "$PRINT_HTML"
 perl -i -pe 's|<details>|<details open>|g' "$PRINT_HTML"

@@ -29,7 +29,7 @@ CORS 全开、无 token。本文档说明这层的契约、数据来源、生成
 | `/api/reports/{slug}.json` | 单报告 meta + `html_url` + `pdf_url` + `panel_api_url` | `site/reports-meta.yaml` |
 | `/api/panels.json` | 10 个内置 panel + 行业映射表 | `panels/*.yaml` + `panels/industries.yaml` |
 | `/api/panels/{slug}.json` | 单 panel 的评委组成 + status | `panels/<slug>.yaml` |
-| `/api/judges.json` | 15 个评委人物视角 skill | `perspectives/*-perspective/SKILL.md`(front matter) |
+| `/api/judges.json` | 43 个评委人物视角 skill | `perspectives/*-perspective/SKILL.md`(front matter) |
 | `/api/judges/{slug}.json` | 单评委描述 + 来源 `skill_url` | `perspectives/<slug>-perspective/SKILL.md` |
 | `/api/install.json` | 怎么把 MBA 装进 Claude Code(BotLearn / GitHub) | 生成器内置常量 |
 | `/api/search.json` | 扁平语料(reports + panels + judges + dimensions + lenses),给客户端做 substring search | 上述汇总 |

@@ -190,7 +190,7 @@ npm publish               # prepublishOnly runs typecheck + tests + build first
 
 ## Status
 
-**v0.1.0 — published to npm · 14 tools · 113 tests**  
+**v0.1.0 — published to npm · 14 tools · 158 tests**  
 - ✅ Project scaffold (TypeScript, vitest, MCP SDK)  
 - ✅ State machine with all valid transitions  
 - ✅ Filesystem store with atomic writes  
