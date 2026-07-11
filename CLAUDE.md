@@ -62,11 +62,15 @@ CI 漂移检查:`panel-validation.yml` 跑 `build_agents_api.py --check`;`mcp-ci
 
 - 引号内的引用**必须是源站/语料里逐字存在的原话**。写入前 `grep -F` 验证;
   **中文按去空格匹配**(CJK 无词间空格,把引用和语料都 `re.sub(r'\s+','')` 后再比)。
-- **✅ 现已机器强制(2026-07-10)**:`scripts/perspective-tools/firewall_check.py` 校验每套 SKILL
-  「心智模型 / 关键引用」区的 `>` 逐字引用**必须**在本套 `references/research/*.md` 语料里规范化后逐字存在,
-  已接入 `panel-validation.yml` **硬 gate**(引一句 research 里没有的话 = CI 红)。本地先跑:
-  `python3 scripts/perspective-tools/firewall_check.py`(可带单套路径)。**这把"反捏造"从人工纪律升级成门禁,
-  但它只保证 SKILL⊆research;research 本身对不对(引用是否真是那人说的)仍靠 provenance 标注 + 人工 `grep -F` 源站。**
+- **✅ 现已机器强制(2026-07-10 · F4 扩 2026-07-11)**:`scripts/perspective-tools/firewall_check.py` 校验
+  **两类声称的逐字引用**必须在本套 `references/research/*.md` 语料里规范化后逐字存在,已接入 `panel-validation.yml`
+  **硬 gate**(引一句 research 里没有的话 = CI 红):① 「心智模型 / 关键引用」区的 `>` blockquote;
+  ② **F4**:「表达DNA / Expression DNA」等区 ```代码块``` 里**带来源署名**的代表句式(`… —— 致股东信,2018`)。
+  **豁免**:无署名的「Representative lines / 代表句式 / answer scaffold」句式模板(合法风格演示,非声称引语)。
+  本地先跑:`python3 scripts/perspective-tools/firewall_check.py`(可带单套路径)。**这把"反捏造"从人工纪律升级成门禁,
+  但它只保证 SKILL⊆research(且引用须"署名"才被查);research 本身对不对仍靠 provenance 标注 + 人工 `grep -F` 源站。**
+  (注:纯 URL 的 research provenance 硬 gate 不可行——语料来源异构:arnault/awintour 0 URL 但靠具名书籍/访谈,
+  expression-dna 文件本就无 per-file 源锚;强上 URL gate 会大面积误伤,故 F4 只做「署名引语必须有据」这层。)
 - **禁止**:LLM 凭空生成的"风格化引言";把维基当一手;把已被本人公开否认/道歉的内容当正面 DNA。
 - **provenance 要如实标**:
   - 半一手(如 Thiel 的 CS183 = Blake Masters 记录的讲课笔记)→ 标"Masters' notes of Thiel's lecture"。
