@@ -20,6 +20,8 @@
 
 reports:
   - slug: lenovo
+    card_brand: "联想集团 Lenovo Group · 0992.HK"
+    card_meta: "5 评委 · Round 2 辩论 · CSS 象限 + 雷达 + 异议热力图"
     brand_cn: 联想集团
     brand_en: Lenovo Group
     ticker: 0992.HK
@@ -35,6 +37,14 @@ reports:
     has_pdf: true
 
   - slug: chengshi-auto
+    card_brand: "橙仕汽车 Chengshi Auto"
+    card_meta: "Auto panel · 雷达图 · 评委异议热力图 · 产品图片 · 法律/IP/免责声明"
+    versions:
+      - { v: v2, date: 2026-05-18, file: versions/v2_2026-05-18.html }
+      - { v: v3, date: 2026-05-18, file: versions/v3_2026-05-18.html }
+      - { v: v4, date: 2026-05-18, file: versions/v4_2026-05-18.html }
+      - { v: v5, date: 2026-05-18, file: versions/v5_2026-05-18.html }
+      - { v: v6, date: 2026-05-18, current: true }
     brand_cn: 橙仕汽车
     brand_en: Chengshi Auto
     version: v6
@@ -53,6 +63,8 @@ reports:
   # 运行命令见下方各条目;生成后删除 status: pending,填入实际分数和 tl_dr
 
   - slug: qianxin
+    card_brand: "奇安信 QiAnXin"
+    card_meta: "security-cn-global panel · 6 评委（周鸿祎·张明正·任正非·黄仁勋·马斯克·纳德拉）· 雷达图 + 异议热力图 · R2 辩论"
     brand_cn: 奇安信
     brand_en: QiAnXin Technology
     ticker: 688561.SH
@@ -71,6 +83,8 @@ reports:
     has_pdf: false
 
   - slug: kimichat
+    card_brand: "Kimi 月之暗面 (Moonshot AI)"
+    card_meta: "ai-app-cn panel · 4 评委（王慧文·周鸿祎·傅盛·朱啸虎★）· 雷达图 + 异议热力图 · 创始人自冲突说明"
     brand_cn: Kimi / 月之暗面
     brand_en: Kimi (Moonshot AI)
     panel: ai-app-cn
@@ -88,6 +102,8 @@ reports:
     has_pdf: false
 
   - slug: tal-education
+    card_brand: "好未来 TAL Education · TAL.NYSE"
+    card_meta: "edu-cn panel · 4 评委（俞敏洪△·李可佳·吴俊东·萨尔曼·可汗）· 雷达图 + 评委对比 · 创始人自冲突 + 竞争对手偏见说明"
     brand_cn: 好未来
     brand_en: TAL Education
     ticker: TAL.NYSE
@@ -107,6 +123,12 @@ reports:
     has_pdf: false
 
   - slug: anthropic
+    card_brand: "Anthropic (Claude)"
+    card_meta: "PANEL-MERGE · vc-en × vc-cn 双面板 · 10 评委 · Panel Comparison + 叠加雷达 + delta 热力图 · v1 FRESH→v2 EVOLUTION→v3 跨面板"
+    versions:
+      - { v: v1, date: 2026-06-26, file: versions/v1_2026-06-26.html }
+      - { v: v2, date: 2026-07-10, file: versions/v2_2026-07-10.html }
+      - { v: v3, date: 2026-07-11, current: true }
     brand_cn: Anthropic
     brand_en: Anthropic (Claude)
     panel: vc-en
@@ -124,6 +146,8 @@ reports:
     has_pdf: false
 
   - slug: genki-forest
+    card_brand: "元气森林 Genki Forest"
+    card_meta: "consumer-cn panel · 5 评委（江南春·张兰·罗永浩·阳萌·钟睒睒△）· 雷达图 + 评委对比 · 竞争对手偏见说明"
     brand_cn: 元气森林
     brand_en: Genki Forest
     panel: consumer-cn
@@ -141,6 +165,8 @@ reports:
     has_pdf: false
 
   - slug: meituan
+    card_brand: "美团 Meituan"
+    card_meta: "vc-cn panel · 5 评委（朱啸虎·张磊★·徐新·雷军·沈南鹏★）· 雷达图 + 评委对比 · MBA首个双重投资冲突说明"
     brand_cn: 美团
     brand_en: Meituan
     ticker: 3690.HK
@@ -159,6 +185,8 @@ reports:
     has_pdf: false
 
   - slug: dji
+    card_brand: "DJI 大疆创新"
+    card_meta: "cross-border panel · 5 评委 · 雷达图 + 异议热力图 + 影响力构造图 · R2 辩论"
     brand_cn: 大疆创新
     brand_en: DJI
     panel: cross-border
@@ -175,6 +203,8 @@ reports:
     has_pdf: false
 
   - slug: hermes
+    card_brand: "Hermès 爱马仕"
+    card_meta: "luxury-en panel · 5评委（Arnault△·Wintour·Cucinelli·Tom Ford·Sarah Burton）· 全英文评语 · 三项MBA历史纪录"
     brand_cn: 爱马仕
     brand_en: Hermès
     panel: luxury-en

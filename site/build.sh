@@ -95,6 +95,14 @@ while IFS= read -r line || [ -n "$line" ]; do
       2>/dev/null
   )
 
+  # 发布 EVOLUTION 版本快照(versions/*.html)——首页卡片的「版本演化」导航点开的正是这些历史版本。
+  # 只发 .html(自包含),不发 versions/*.md 原稿。当前版本仍是 /reports/<slug>/(report.html)。
+  if compgen -G "$SRC_DIR/$slug/versions/*.html" >/dev/null 2>&1; then
+    mkdir -p "$dest_dir/versions"
+    cp "$SRC_DIR/$slug"/versions/*.html "$dest_dir/versions/"
+    echo "[mba-build]   + $(ls "$SRC_DIR/$slug"/versions/*.html | wc -l | tr -d ' ') version snapshot(s)"
+  fi
+
   echo "[mba-build] published: $slug"
   published_count=$((published_count + 1))
 done < "$WHITELIST"

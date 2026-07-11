@@ -20,7 +20,7 @@ check_consistency.py — E2-6 跨文件一致性守卫。
 
 退出码:有任一不变量被破坏 → 1;全部通过 → 0。
 """
-import os, re, sys, json, glob
+import os, re, sys, json, glob, subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -94,12 +94,33 @@ def check_dimensions():
         return False, f"维度口径漂移:core={core}(应 7)· total={total}(应 9,7 核心 + 2 高级)"
     return True, "维度口径自洽(7 核心 + 2 高级 = 9)"
 
+def check_home_cards():
+    """首页(site/index.html)报告卡片必须与 site/reports-meta.yaml 同步(F6)。
+    卡片由 build_home_cards.py 从 reports-meta 生成;此处跑其 --check 拦漂移
+    (anthropic 卡片曾长期停在 v1/$965B 就是双源漂移的后果)。"""
+    script = os.path.join(ROOT, "scripts", "build_home_cards.py")
+    if not os.path.exists(script):
+        return True, "build_home_cards.py 不存在(跳过)"
+    try:
+        r = subprocess.run([sys.executable, script, "--check"],
+                           capture_output=True, text=True, cwd=ROOT)
+    except Exception as e:
+        return True, f"无法运行 build_home_cards(跳过):{e}"
+    if r.returncode == 0:
+        return True, "首页卡片与 reports-meta.yaml 同步(无漂移)"
+    if r.returncode == 2:
+        # 依赖缺失(如无 PyYAML)——非漂移;build_agents_api --check 会另行兜底
+        return True, "build_home_cards 依赖缺失(跳过);build_agents_api --check 兜底"
+    lines = [x for x in (r.stdout or r.stderr or "").strip().splitlines() if x.strip()]
+    return False, "首页卡片漂移 —— " + (lines[0] if lines else "跑 build_home_cards.py 重生成")
+
 CHECKS = [
     ("版本对齐", check_version_alignment),
     ("docs 索引完整", check_docs_index),
     ("评委数自洽", check_judge_count),
     ("工具数自洽", check_tool_count),
     ("维度口径", check_dimensions),
+    ("首页卡片对齐", check_home_cards),
 ]
 
 def main():
