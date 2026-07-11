@@ -65,6 +65,19 @@
 - **E2-6 一致性清账 ✅ 已完成(2026-07-10)** —— 8-agent 并行审计(7 轴 + completeness critic)→ 主循环逐条核实后落地:**版本对齐**(SKILL 面板模板 `mba_version` 0.2.38→0.4.2 —— 每份 FRESH 报告都拷这个模板;docs/01-prd `(当前)` 迁到 v0.4.2)、**docs 索引收 docs/14**(docs/README + README `01-14` + CLAUDE.md)、**工具数 11→14**(docs/13 §5 补 `resume_audit`/`list_panels`/`get_brand_trend` 三个真工具 + docs/README + site)、**dimensions**(build_agents_api 注释;7↔9 本已自洽:7 核心 + 2 高级 = 9)、**报告目录**(lenovo 补 `panel.yaml`,从 reports-meta 机械重建;md/reviews/_raw 从未提交、不捏造,已注明)、**`validate_panels` warn→error**(断链 perspective / 死 industry 映射;验证 0 面板会新失败)、**`print_report.sh` 跨平台**(改用 `$PLAYWRIGHT_BROWSERS_PATH/chromium` 发现,Linux/CI 可出 PDF)。critic 额外抓出 `site/roadmap.html` 停在 15/43 的旧状态板 → 更新为 42/43 + 各面板真实进度 + 测试数 158。**新增 `scripts/check_consistency.py`**(版本对齐 / docs 索引 / 评委数 / 工具数 / 维度口径 5 项不变量)接 `panel-validation.yml` 硬 gate,负测试验证有牙。
 - **E2-7 早批 6 套 quality_check 补齐 6/6 ✅ 已完成(2026-07-10)** —— hexiaopeng/leijun/libin/lixiang/musk/zhanglan 补齐,**43/43 全过 6/6**,并把 `quality_check` 从"仅阻断 PR 改动的 SKILL"升为 `panel-validation.yml` **全量硬 gate**(任一套掉出 6/6 即红)。根因多为格式代理:`## 表达 DNA` 标题带空格(regex 需无空格)→ hexiaopeng/leijun/libin;内在张力 marker <2 → leijun/lixiang/zhanglan;musk(2/6 最重)缺 局限性/DNA marker/张力/一手占比。**全部靠诚实重格式化**——给已有英文 DNA 子节加 CJK gloss(节奏/词汇/句式)、把既有模型已隐含的失效模式/张力显式成 prose section、按真实归属给 Sources 路由打 Primary/Secondary 标签;**零新增 `>` 引用块**,firewall 167 quotes 不变(SKILL⊆research 仍成立)。诊断用 workflow 6 agent 并行出 firewall-safe edit plan,主循环校验唯一匹配后应用。
 
+### F 系列 backlog(2026-07-11 · 6-agent survey workflow 结论)
+
+E0–E2 工程硬化收官后,下一批短板集中在:**flagship 特性只证明 n=1(EVOLUTION / 从没跑过的 --panel-merge)、research 语料本身无人校验(信任链根部)、skill⇄MCP 从未同品牌对齐、网站没真正呈现 EVOLUTION**。按杠杆排序:
+
+- **F1 报告数字自洽 gate ✅ 已完成(2026-07-11)** —— `scripts/check_report_integrity.py`:`validate_report` 只查结构,从不查算术;本 checker 校验每份 published 报告 Score Matrix 的 **① 维度 Mean == 评委均值 ② Judge Total == 列和 ③ Score Total == 全表之和 ④ Normalized == total/满分×10**(容差 0.05)。单元格含 v2 delta(`7→6 ↓1`/`↔`)取当前值;跨 9 份异构格式(σ 列 / `Total /10` 行 / `△` 竞争标记 / `总分`vs`Score Total`)**解析不出即跳过、不误伤**,只对明确算术错误 FAIL。接 `report-validation.yml` 硬 gate;负测试(改错 Mean / 评委总分 / Score Total)全部 exit 1 验证有牙。
+- **F2 首跑 `--panel-merge`(Phase 5M)** —— skill 第二大 flagship 章节(SKILL 1011-1129 + 整套 HTML 变体,v0.2.38 headline),`published/reports` 里 0 个 `Panel Comparison`、0 个 `*_panel-merge.*`、MCP 层未建模。像 E1-4 之于 EVOLUTION——挑 anthropic(vc-en)跑一次跨面板对比,产出首个 `## Panel Comparison` + panel-merge HTML(panel 切换 + 叠加雷达 + 5×2 delta 热力图),顺手修 5M spec 实跑暴露的坑。[M/高]
+- **F3 EVOLUTION 从 n=1 → n≥2** —— 换一个中文面板的 v1 真跑 v1→v2(证明泛化,非只对 anthropic/vc-en/英文有效)+ anthropic **v3**(首个 3-commit gitGraph,验多版本时间线)。[M/高]
+- **F4 research 语料 provenance 地板(可视为 E3 反捏造)** —— firewall 现只证 SKILL⊆research 且只抓 `>` 引用块(**22/43 套行内引号 0 进 gate**)。① firewall 补行内引号覆盖 + 每套覆盖下限;② `research/*.md` provenance linter:每条引用须带可解析来源 URL/日期;③ 真·按引用计数的 ≥30 条、≥80% 一手 gate(SOP §3 真门槛,现无人守)。[M/高]
+- **F5 skill ⇄ MCP 一致性** —— 二者从没在同品牌都跑过,且**已确认格式漂移**(MCP parser 期望特定分数格式)。用 npm MCP 真跑 anthropic 出首份 MCP 报告 + 与 skill 版 5×5 矩阵容差断言。[M/高]
+- **F6 网站真正呈现 EVOLUTION** —— `site/build.sh` 现排除 `versions/`;加版本导航 + delta 视图;首页 report 卡片改从 `reports-meta.yaml` 生成并进 `check_consistency`(**顺手修 anthropic 卡片仍写 v1/`$965B`** 的错值)。[S–M/高]
+- **F7 MCP 测试盲区 + 联网 smoke** —— `trigger-evolution.ts` 限流/cadence(0 覆盖、烧钱逻辑)、`prompts.ts`(最大未测)、`fetch-report`、`server.ts` `0.1.0` 三处 DRY;+ 一个 env-gated 真 API smoke(唯一 mock 测不到的 SDK 响应漂移)。[M/高]
+- **F8 便宜的收尾** —— quality_check 弱代理收紧(3/6 项能被"假过":模型数 3-7 应收到 6、张力/DNA 计词而非计实质)、`--quick --no-judges` 前门 dogfood(描述里第一条命令却无 artifact)、`--dry-run` golden test。[S/中]
+
 ### 优先级 P0 — 立即可执行，不依赖外部解锁
 
 #### P0-A：深化 vc-en 英文评委 ✅ 已完成（2026-07-07）

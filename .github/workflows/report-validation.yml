@@ -19,6 +19,9 @@ jobs:
       - name: Validate report.md structure (published reports)
         run: python scripts/validate_report.py
 
+      - name: Report integrity — Score Matrix 数字自洽(矩阵 ⇄ 评委总分 ⇄ 总分算术)
+        run: python scripts/check_report_integrity.py
+
       - name: Validate report.html components (published reports)
         run: python scripts/validate_html_report.py
 
