@@ -20,8 +20,8 @@
     {
       "type": "report",
       "slug": "anthropic",
-      "title": "Anthropic · v2",
-      "text": "EVOLUTION v2（v1→v2，14 天）：Sonnet 5 上市 + IPO 落定 + 安全护城河从\"技术\"迁移到 \"治理/分发\"。总分 191→190（−1），但组成旋转——Leverage ↑0.6（自托管 Claude Code 网关锁定）、Signal ↓1.0（$47B ARR gross/net 洁净度，5 评委齐降）、Category 方向撕裂 （Hoffman/Thiel ↑ 执笔标准 vs PG ↓ 安全产品税）。Total: 190/250 · 7.60/10。",
+      "title": "Anthropic · v3",
+      "text": "PANEL-MERGE v3（首个 --panel-merge 跨面板对比）：同一份简报由 vc-en(硅谷 VC)与 vc-cn(中国 VC)独立打分。两面板方向惊人一致——没有一个镜头均值差达 1.5(最大 0.8)； vc-cn 系统性偏严 −2.2(35.8 vs 38.0/50)集中在 Leverage/Identity。两面板共识裂缝重合： Signal 全 10 位评委齐打 gross/net 折价、Identity 同为最弱镜头。vc-cn 179/250 · 7.16； vc-en 参照 190/250 · 7.60。",
       "url": "/reports/anthropic/",
       "api_url": "/api/reports/anthropic.json"
     },
