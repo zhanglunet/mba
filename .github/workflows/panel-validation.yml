@@ -28,26 +28,24 @@ jobs:
         run: |
           python scripts/check_self_conflict.py
           python scripts/check_self_conflict.py --smoke
-      - name: Quality check (本 PR 改动的 SKILL.md 必须 6/6)
+      - name: Quality check (全量硬 gate:全部 43 套 SKILL.md 必须 6/6)
         run: |
-          base="${{ github.event.pull_request.base.sha || github.event.before }}"
-          if [ -z "$base" ] || ! git cat-file -e "${base}^{commit}" 2>/dev/null; then
-            echo "无可用 diff base(首推/浅历史)—— quality_check 全量跑,仅信息化(不阻断)。"
-            rc=0
-            for f in perspectives/*/SKILL.md; do
-              python scripts/perspective-tools/quality_check.py "$f" >/dev/null 2>&1 || echo "  ⚠️ $f 未过 6/6"
-            done
-            exit 0
-          fi
-          changed=$(git diff --name-only "$base" HEAD -- 'perspectives/*/SKILL.md' || true)
-          if [ -z "$changed" ]; then echo "本次无 SKILL.md 改动,跳过。"; exit 0; fi
-          echo "本 PR 改动的 SKILL.md:"; echo "$changed"
+          # E2-7 起全部 43 套已达 6/6,quality_check 从"仅阻断 PR 改动的 SKILL"
+          # 升级为全量硬 gate —— 任何一套掉出 6/6 即 CI 红。
           rc=0
-          for f in $changed; do
-            [ -f "$f" ] || continue   # 删除的文件跳过
-            echo "--- quality_check: $f ---"
-            python scripts/perspective-tools/quality_check.py "$f" || rc=1
+          fails=""
+          for f in perspectives/*/SKILL.md; do
+            if ! python scripts/perspective-tools/quality_check.py "$f" >/dev/null 2>&1; then
+              rc=1; fails="$fails $f"
+              echo "--- FAIL: $f ---"
+              python scripts/perspective-tools/quality_check.py "$f" | grep -E "FAIL|结果:" || true
+            fi
           done
+          if [ "$rc" -eq 0 ]; then
+            echo "✅ 全部 $(ls perspectives/*/SKILL.md | wc -l) 套 SKILL.md 均过 quality_check 6/6"
+          else
+            echo "❌ 以下 SKILL 未过 6/6:$fails"
+          fi
           exit $rc
       - name: Check agent API (site/api/*.json) in sync with sources
         run: python scripts/build_agents_api.py --check
