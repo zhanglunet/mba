@@ -266,3 +266,46 @@ reports:
       最大分歧:任正非 37/50(基础设施主权价值最高) vs 马斯克 21/50(收缩生意做反向重组=财务工程)。
       178/300 · 5.93/10。
     has_pdf: false
+
+  - slug: spacex
+    card_brand: "SpaceX"
+    card_meta: "vc-en panel · 5 评委（保罗·格雷厄姆·纳瓦尔·马克·安德森·彼得·蒂尔△·里德·霍夫曼）· 雷达图 + 异议热力图 · 深科技 / 第一性原理"
+    headline: "MBA 审计史第二高分:起源与品类近乎满分,唯一裂缝在「品牌 = 马斯克」"
+    brand_cn: SpaceX
+    brand_en: SpaceX
+    panel: vc-en
+    version: v1
+    audit_date: 2026-07-12
+    score_total: 215
+    score_max: 250
+    score_normalized: 8.60
+    tl_dr: >-
+      第一性原理 + 制造护城河的当代范本:可复用火箭(2025 年 165 次轨道发射)+ Starlink 现金飞轮
+      (2025 营收约 $118 亿、~900 万用户)。vc-en 5 评委:Origin(9.4)与 Category(9.2)近乎满分共识,
+      是 MBA 审计史分歧最小的样本之一(三维极差仅 1)。唯一裂缝 Identity(6.8):品牌与创始人马斯克
+      深度绑定,既是最强「创始人抵押」,也是最大稀释源(政治外溢 + key-man)。最大分歧:彼得·蒂尔△
+      46/50(Founders Fund 为 SpaceX 早期投资方,披露;「不可复制的创始人就是护城河」)vs 里德·霍夫曼
+      40/50(「工程护城河 9 分,品牌治理 6 分」)。215/250 · 8.60/10(仅次爱马仕 8.64)。
+    has_pdf: false
+
+  - slug: yuanxin
+    card_brand: "垣信卫星 · 千帆星座 SpaceSail"
+    card_meta: "security-cn-global panel · 6 评委（周鸿祎·张明正·任正非·黄仁勋·马斯克△·纳德拉）· 雷达图 + 异议热力图 · 卫星互联网"
+    headline: "中国版 Starlink 的战略卡位与工程差距:频段全球前二,在轨却落后两个数量级"
+    brand_cn: 垣信卫星
+    brand_en: Yuanxin Satellite / SpaceSail
+    panel: security-cn-global
+    version: v1
+    audit_date: 2026-07-12
+    score_total: 165
+    score_max: 300
+    score_normalized: 5.50
+    tl_dr: >-
+      垣信卫星运营的「千帆星座」(G60星链 / SpaceSail)是中国低轨卫星互联网旗舰工程,对标 Starlink,
+      最终计划超 1.5 万颗星。2024-02 完成 67 亿元 A 轮(国家制造业转型升级基金领投,业内最大单轮),
+      2024-08 长六甲一箭 18 星首批组网,掌握全球前二 Ka 频段优先级,2025 估值超 400 亿。security-cn-global
+      6 评委:Leverage(6.5)领跑(频段 + 国家资本 + 主权必需),最弱 Identity(4.5)——品牌高度依赖
+      「国家队 / 对标 Starlink」外部锚点、消费者与国际几乎不可见。最大分歧:任正非 36/50(数字主权必争
+      基础设施)vs 马斯克△ 18/50(Starlink 创始人、直接竞对披露;「频段不等于在轨,差着两个数量级」)。
+      165/300 · 5.50/10。
+    has_pdf: false
