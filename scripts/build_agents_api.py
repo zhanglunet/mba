@@ -32,6 +32,7 @@ SITE_DIR      = ROOT / "site"
 API_DIR       = SITE_DIR / "api"
 WHITELIST     = SITE_DIR / "published-reports.txt"
 REPORTS_META  = SITE_DIR / "reports-meta.yaml"
+JUDGES_I18N   = SITE_DIR / "judges-i18n.yaml"   # 英文评委页的中文覆盖(手写)
 PANELS_DIR    = ROOT / "metric-brand-auditor" / "panels"
 REFS_DIR      = ROOT / "metric-brand-auditor" / "references"
 PERSP_DIR     = ROOT / "perspectives"
@@ -171,11 +172,14 @@ def _first_para_gist(lines: list[str]) -> str:
             if para:
                 break
             continue
-        # 「**一句话**:X / **One-liner**:X」这类粗体标签行,X 本身就是 gist。
-        lab = re.match(r"^\*{2}[^*]{1,16}\*{2}\s*[:：]\s*(\S.*)$", s)
-        if lab:
-            para.append(lab.group(1))
-            break
+        # 「一句话」粗体标记行:**一句话**:X / **One line.** X / **One-liner**: X。
+        # 取行内内容并继续累积续行(内容可能跨物理行,如 musk),不立即 break。
+        lab = re.match(r"^\*{2}\s*([^*]{1,20}?)\s*\*{2}\s*[:：.。]?\s*(.*)$", s)
+        if lab and not para and re.search(
+                r"一句话|核心|定义|One[\s-]?lin|TL;?DR", lab.group(1), re.I):
+            if lab.group(2).strip():
+                para.append(lab.group(2).strip())
+            continue
         if s.startswith(">"):
             if not quote:
                 quote = s.lstrip("> ").strip()
@@ -231,8 +235,43 @@ def parse_mental_models(text: str) -> list[dict]:
 
 # ----------------------------------------------------------- judges build ---
 
+def load_judges_i18n() -> dict:
+    """读英文评委的中文覆盖(可选,缺省即无覆盖)。"""
+    if not JUDGES_I18N.exists():
+        return {}
+    return yaml.safe_load(JUDGES_I18N.read_text(encoding="utf-8")) or {}
+
+
+def build_i18n_block(tr: dict, models: list[dict], slug: str) -> dict:
+    """把一位评委的中文覆盖整形成 JSON 里的 i18n 块。models_cn 须与 mental_models 数量一致。"""
+    block: dict = {}
+    for k in ("display_cn", "role_cn"):
+        if tr.get(k):
+            block[k] = str(tr[k]).strip()
+    intro = tr.get("intro_cn")
+    if intro:
+        block["intro_cn"] = [
+            {"label": (x.get("label") or "").strip(), "body": (x.get("body") or "").strip()}
+            for x in intro
+        ]
+    mcn = tr.get("models_cn")
+    if mcn is not None:
+        if len(mcn) != len(models):
+            msg = f"judges-i18n {slug}: models_cn 有 {len(mcn)} 条,mental_models 有 {len(models)} 条,不对齐"
+            if CHECK_MODE:
+                DRIFT.append("i18n:    " + msg)
+            else:
+                print(f"[agents-api] WARN: {msg}", file=sys.stderr)
+        block["models_cn"] = [
+            {"title": (m.get("title") or "").strip(), "gist": (m.get("gist") or "").strip()}
+            for m in mcn
+        ]
+    return block
+
+
 def build_judges() -> tuple[list[dict], dict[str, dict]]:
     """Returns (list_items, by_slug_body)."""
+    i18n = load_judges_i18n()
     items = []
     bodies = {}
     for path in sorted(PERSP_DIR.glob("*-perspective/SKILL.md")):
@@ -262,6 +301,9 @@ def build_judges() -> tuple[list[dict], dict[str, dict]]:
             "mental_models": parse_mental_models(path.read_text(encoding="utf-8")),
             "skill_url": skill_url,
         }
+        tr = i18n.get(slug)
+        if tr:
+            bodies[slug]["i18n"] = build_i18n_block(tr, bodies[slug]["mental_models"], slug)
     return items, bodies
 
 

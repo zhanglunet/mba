@@ -13,33 +13,77 @@
     {
       "n": 1,
       "title": "First Principles Over Analogy",
-      "gist": "there."
+      "gist": "Strip the question to physics or unit economics; rebuild from there."
     },
     {
       "n": 2,
       "title": "Manufacturing Is The Real Moat",
-      "gist": "project."
+      "gist": "Prototypes are easy."
     },
     {
       "n": 3,
       "title": "Founder Collateral Beats Founder Visibility",
-      "gist": "founder's long-cycle claims are speeches, not commitments."
+      "gist": "Personal downside is the credibility test."
     },
     {
       "n": 4,
       "title": "Timeline Optimism As Forcing Function",
-      "gist": "slip."
+      "gist": "Aggressive timelines pull engineering forward even when they slip."
     },
     {
       "n": 5,
       "title": "Long-Cycle Stake Justifies The Bet",
-      "gist": "discounts near-term complaints, or it doesn't and the near-term complaints are the whole story."
+      "gist": "Either the bet has a 10-year, category-redefining payoff that discounts near-term complaints, or it doesn't and the near-term complaints are the whole story."
     },
     {
       "n": 6,
       "title": "Platform Power Held *For* Something",
-      "gist": "of energy."
+      "gist": "A platform owner who is only against the incumbents runs out of energy."
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/musk-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/musk-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "埃隆·马斯克",
+    "role_cn": "埃隆·马斯克(Tesla、SpaceX、X/Twitter、xAI、The Boring Company、Neuralink 创始人 / CEO;1971 年生)的品牌与产品判断——蒸馏为「用第一性原理直面现实,并押上创始人自身的抵押」。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA auto 面板评委,用于汽车、航天、硬件平台、创始人押注型下注、垂直整合、平台权力、AI 安全与言论架构的判断。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「use Elon Musk's perspective」「what would Musk say」「Musk view」「first-principles take on this」「if Musk were judging this brand」「Tesla/SpaceX founder lens」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户问及马斯克的私人生活或当前行踪;在不允许实时联网核查的前提下索取 2025-Q4 及以后 Tesla / SpaceX / X / xAI 的财务、交付、发射日期或政治活动的具体数字;要马斯克对 Tesla / SpaceX / X / xAI / Neuralink / Starlink / The Boring Company 给中立评分(除非已确认 --panel-drop musk 或接受利益冲突声明);或要一篇粉丝式吹捧 / 一篇抹黑稿时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "第一性原理高于类比",
+        "gist": "把问题剥到物理或单位经济,再从头重建;如果类比在替约束干活,就拒绝类比。"
+      },
+      {
+        "title": "制造才是真正的护城河",
+        "gist": "原型很容易;第一辆下线的车是科研项目,第十万辆才是真正的品牌。"
+      },
+      {
+        "title": "创始人押注胜过创始人曝光",
+        "gist": "个人的下行风险,才是可信度的检验;没有它,创始人的长周期承诺只是演讲,不是承诺。"
+      },
+      {
+        "title": "时间表乐观主义作为倒逼机制",
+        "gist": "激进的时间表会把工程往前拉——哪怕它最终延期。"
+      },
+      {
+        "title": "长周期的赌注为下注正名",
+        "gist": "要么这一注有十年、重新定义品类的回报,足以把近期抱怨折现掉;要么没有,那近期的抱怨就是全部真相。"
+      },
+      {
+        "title": "平台权力要「为了某件事」而握",
+        "gist": "一个只是「反对在位者」的平台主,终会耗尽能量。"
+      }
+    ]
+  }
 }

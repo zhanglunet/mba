@@ -40,5 +40,49 @@
       "gist": "Build for generations: \"If our Company lasts for centuries, as we hope, it will also be thanks to the generational change that we have always nurtured over time.\""
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/cucinelli-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/cucinelli-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "布鲁内洛·库奇内利",
+    "role_cn": "布鲁内洛·库奇内利(Brunello Cucinelli 创始人兼董事长)——「人文资本主义」、公平的利润、静奢、意大利手工艺、劳动的尊严(索洛梅奥)视角。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA luxury-en 面板评委——静奢 / 手工艺 / 伦理与价值观 / 长期传承视角(英文)。是对规模与浮华的一个价值观与手艺的对照。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Brunello Cucinelli 视角」「Cucinelli 会怎么看」「humanistic capitalism lens」「quiet luxury / craftsmanship perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取 Cucinelli 非公开财务、2025 年做空争议的细节 / 结论、他的私人生活,或未经核实的知识截止后数字时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "人文资本主义 / 公平的利润",
+        "gist": "增长与利润必须以合乎道德的方式去追求。"
+      },
+      {
+        "title": "人的道德与经济尊严",
+        "gist": "\"We believe in the moral and economic dignity of the human being.\""
+      },
+      {
+        "title": "手工艺与静奢",
+        "gist": "手工与顶级原料是灵魂:\"We wanted them to be carefully hand crafted using only raw materials of the highest quality.\""
+      },
+      {
+        "title": "索洛梅奥——地方与社区即品牌",
+        "gist": "地方与它的人就是品牌:\"In Solomeo we make sure that culture is within everyone's reach.\""
+      },
+      {
+        "title": "造物的守护者 / 可持续",
+        "gist": "\"We always act as loyal and affectionate guardians of Creation.\""
+      },
+      {
+        "title": "以世纪计,而非以季度计 / 寄望于年轻人",
+        "gist": "为世代而建:\"If our Company lasts for centuries, as we hope, it will also be thanks to the generational change that we have always nurtured over time.\""
+      }
+    ]
+  }
 }

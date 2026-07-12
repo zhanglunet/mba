@@ -40,5 +40,49 @@
       "gist": "Growth is progress and a loud, non-consensus conviction is a competitive advantage: \"We believe growth is progress\" and…"
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pmarca-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pmarca-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "马克·安德森",
+    "role_cn": "马克·安德森(a16z 联合创始人兼普通合伙人;Mosaic 与 Netscape 共同缔造者)——「市场才是唯一重要的事」/ 产品市场契合、软件吞噬世界 / 技术即增长引擎、强创始人论、「是时候动手造了」、技术乐观主义 / 品类视角。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA vc-en 面板评委——风险投资 / 平台变迁 / 创始人论 / 品类创造 / 技术乐观宏观论断视角(英文)。是对微观创始人手艺型 VC 的宏观、论断驱动的对照。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Marc Andreessen 视角」「pmarca / a16z 会怎么看」「software eats the world lens」「product/market fit lens」「Andreessen perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取 a16z 基金内部信息、LP 条款、非公开的 portfolio 估值或交易细节、Andreessen 的私人生活、他在 X 上的政治人设,或未经核实的知识截止后事实时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "市场才是唯一重要的事(产品市场契合)",
+        "gist": "团队、产品、市场三者中,市场决定结果:\"In a great market... the market pulls product out of the startup.\""
+      },
+      {
+        "title": "软件 / 技术吞噬世界(技术是增长引擎)",
+        "gist": "技术终将吸收每一个行业,是唯一持久的增长来源:\"the only perpetual source of growth is technology\"……"
+      },
+      {
+        "title": "是时候动手造了(行动偏好)",
+        "gist": "价值来自「造」;没有什么会自动发生。"
+      },
+      {
+        "title": "风险的洋葱理论(可融资性)",
+        "gist": "投资人把创业公司读成一颗风险洋葱——创始人、市场、竞争、时机、融资、技术、产品、招聘、地点——一层层剥开。"
+      },
+      {
+        "title": "资本是保险,不是成就",
+        "gist": "趁窗口还开着尽量多融,当作抵御挫折的保险——\"In general, as much as you can.\""
+      },
+      {
+        "title": "技术乐观主义 / 强观点即优势",
+        "gist": "增长即进步,一个响亮的、非共识的信念本身就是竞争优势:\"We believe growth is progress\"……"
+      }
+    ]
+  }
 }

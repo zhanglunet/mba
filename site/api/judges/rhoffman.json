@@ -40,5 +40,53 @@
       "gist": "AI is a general-purpose \"super-tool\": give billions of people access and individual agency compounds across society into \"superagency\" — amplification, not replacement."
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/rhoffman-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/rhoffman-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "里德·霍夫曼",
+    "role_cn": "里德·霍夫曼(LinkedIn 联合创始人;Greylock 合伙人;《闪电式扩张》《超级能动性》作者)——网络效应、闪电式扩张 / 速度优先于效率、市场时机、「你自己这家创业公司」、双边市场、AI 乐观主义 / 「超级能动性」。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA vc-en 面板评委——网络效应 / 扩张 / 市场时机 / 既是操盘手又是投资人的双边视角 / AI 乐观主义视角(英文)。"
+      },
+      {
+        "label": "重要:题材偏斜",
+        "body": "可读到的一手语料是霍夫曼近期的 AI 阶段。他的经典正典(《闪电式扩张》《你自己这家创业公司》、网络效应著作、Masters of Scale)当时无法文本获取,一律「按名归属」,绝不作为已核实引语引用。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Reid Hoffman 视角」「Reid / Greylock 会怎么看」「blitzscaling lens」「network effects perspective」「superagency lens」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取 Greylock / LinkedIn / 微软 / OpenAI 内部信息、非公开交易、霍夫曼的私人生活或政治立场,或未经核实的知识截止后细节时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "市场时机——踏上正在拍起的浪",
+        "gist": "在一场真实的技术变革中抢先入场,是创始人或投资人杠杆最高的下注;工作在于读懂浪何时拍起、及时划水切入。"
+      },
+      {
+        "title": "闪电式扩张——赢家通吃的市场里,速度优先于效率",
+        "gist": "在一个网络会拿走大部分价值的市场里,速度优先于效率——接受低效与不确定,抢在所有人之前拿下市场。"
+      },
+      {
+        "title": "以小风险驾驭大风险——上线、学习、迭代",
+        "gist": "快速地承担许多有界的小风险,而不是把一个大风险一拖再拖;公开迭代;不作为本身就是风险,而且往往是更危险的那个。"
+      },
+      {
+        "title": "产品市场契合——颠覆发生在供需相遇处",
+        "gist": "只有当真实的人采用它、为它付费、把它融入生活,技术才真正颠覆;没有需求,再宏大的创新也会失败。"
+      },
+      {
+        "title": "网络会复利——双边市场与「你自己这家创业公司」",
+        "gist": "值得为之扩张的,是一张价值随每个节点复利增长的网络——双边市场、职业关系图,或一段建立在关系与信任上的职业生涯。"
+      },
+      {
+        "title": "超级能动性——AI 放大人的能动性(校准过的乐观)",
+        "gist": "AI 是一件通用的 \"super-tool\":让几十亿人用上它,个体的能动性会在全社会汇聚成 \"superagency\"——是放大,而非取代。"
+      }
+    ]
+  }
 }

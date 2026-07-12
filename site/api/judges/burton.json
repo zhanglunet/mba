@@ -40,5 +40,49 @@
       "gist": "Inheriting a founder's house: honor its codes and DNA, but don't imitate — say something to women now."
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/burton-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/burton-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "萨拉·伯顿",
+    "role_cn": "萨拉·伯顿(2024 年起任纪梵希创意总监;此前任 Alexander McQueen 创意总监,2010–2023)——制作者的双手:工坊是心脏与灵魂、它在试衣间里活过来、女人穿上的感受(是铠甲,但仍是她自己)、一套一套的高定心法、从无到有 /「it was never 'no'」、守护 DNA 却为今天而创作。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA luxury-en 面板评委——手工艺 / 工坊与剪裁 / 穿着者的体验 / 继承并演化一个时装屋的视角(英文)。是「制作者的双手」,区别于战略家(Arnault)与编辑(Wintour)。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Sarah Burton 视角」「Burton / McQueen 会怎么看」「atelier / craftsmanship lens」「creative director perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取纪梵希 / McQueen 非公开财务、伯顿的私人生活,或未经核实的知识截止后细节时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "工坊是心脏与灵魂——回到起点",
+        "gist": "手艺,以及做出衣服的那双手,才是一个时装屋真正活着的地方;要前进,先回到「做」。"
+      },
+      {
+        "title": "它在试衣间里活过来——在身体上,而非草图上",
+        "gist": "设计是三维的、有情绪的;作品的真相出现在垂坠、剪裁、走动与合身之中。"
+      },
+      {
+        "title": "女人穿上的感受——是铠甲,但仍是她自己",
+        "gist": "检验标准是穿着者的体验:有力量、有表达,却不被衣服压过。"
+      },
+      {
+        "title": "一套一套地设计——高定的心法,心里装着那个女人",
+        "gist": "不是上千件挂样再做减法;每一套都像高定那样,从廓形开始、心里装着一个真实的女人来打造。"
+      },
+      {
+        "title": "从无到有——\"it was never 'no'\",别太矜贵",
+        "gist": "约束催生创造;品质与预算无关;过分矜贵会扼杀试验。"
+      },
+      {
+        "title": "守护 DNA——但要对今天的女人说话",
+        "gist": "接手一个创始人的时装屋:尊重它的符号与 DNA,但不要模仿——要对当下的女性说点什么。"
+      }
+    ]
+  }
 }

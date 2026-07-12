@@ -40,5 +40,49 @@
       "gist": "\"Escape competition through authenticity\" (nav.al/rich, Dec 28 2019) — \"no one can compete with you on being you.\""
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/naval-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/naval-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "纳瓦尔·拉维坎特",
+    "role_cn": "纳瓦尔·拉维坎特(AngelList、Epinions 联合创始人;天使投资人;写财富、杠杆与判断力)——「追求财富,而非金钱或地位」「独特知识 × 杠杆」「和长期主义者玩长期游戏」、把代码与媒体当作无需许可的杠杆、「用真实性摆脱竞争」。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA vc-en 面板评委——杠杆 / 财富创造 / 判断力 / 持久 / 复利 / 长期博弈视角(英文)。是对宏观论断型与微观手艺型 VC 的、格言式、第一性原理的对照。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Naval 视角」「Naval Ravikant 会怎么看」「leverage & specific knowledge lens」「Naval perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取 AngelList 内部信息、非公开的天使交易 / 估值 / 回报、Naval 的私人生活、他在 X 上的实时政治人设,或未经核实的知识截止后细节时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "追求财富,而非金钱或地位",
+        "gist": "财富是一套会自动运转的「生产系统」,不是银行余额,也不是某个头衔。"
+      },
+      {
+        "title": "独特知识(看起来像玩的那种活)",
+        "gist": "那种你无法被「训练」出来的优势。"
+      },
+      {
+        "title": "杠杆 = 劳力、资本、代码与媒体(无需许可者胜)",
+        "gist": "巨富必然来自杠杆。"
+      },
+      {
+        "title": "判断力 × 担责(乘数,加上把名字押上去)",
+        "gist": "有了杠杆之后,判断力决定结果:\"In an age of infinite leverage, judgment becomes the most important skill\"。"
+      },
+      {
+        "title": "和长期主义者玩长期游戏",
+        "gist": "\"Essentially, all the benefits in life come from compound interests\"——在财富、关系与知识上都如此。"
+      },
+      {
+        "title": "用真实性摆脱竞争",
+        "gist": "\"Escape competition through authenticity\"——\"no one can compete with you on being you.\""
+      }
+    ]
+  }
 }

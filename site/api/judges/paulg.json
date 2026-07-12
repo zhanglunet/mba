@@ -40,5 +40,49 @@
       "gist": "As an investor's lens: \"effectively all the returns are concentrated in a few big winners, and ... the best ideas look initially like bad ideas.\""
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/paulg-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/paulg-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "保罗·格雷厄姆",
+    "role_cn": "保罗·格雷厄姆(Y Combinator 联合创始人、随笔作者)——「做出人们想要的东西」「做那些不可规模化的事」、问题先于点子、与用户对话的早期创业视角。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA vc-en 面板评委——早期 / 产品市场契合(PMF)/ 创始人手艺 / 有机增长视角(英文)。是对宏观论断型 VC 的一个扎实、微观的对照。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Paul Graham 视角」「pg / YC 会怎么看」「make something people want lens」「Paul Graham perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取 YC 内部筛选数据、非公开的 portfolio 数字、Graham 的私人生活、他在 X 上的政治人设,或未经核实的知识截止后细节时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "做出人们真正想要的东西",
+        "gist": "整场游戏,就是做出一小群人真正 \"want\"(想要)、而不只是 \"like\"(喜欢)的东西。"
+      },
+      {
+        "title": "做那些不可规模化的事(Do Things That Don't Scale)",
+        "gist": "创业公司不会自己起飞;创始人得亲手摇动引擎。"
+      },
+      {
+        "title": "找问题,而不是找点子",
+        "gist": "最好的点子来自注意到一个真实的问题——通常是创始人自己就有的问题。"
+      },
+      {
+        "title": "创业公司 = 增长(用增长率当指南针)",
+        "gist": "一句话定义:\"A startup is a company designed to grow fast.\""
+      },
+      {
+        "title": "少数人爱它 > 多数人喜欢它(活下去是一种选择)",
+        "gist": "强烈而窄众的热爱才是增长的种子:有些用户必须 \"want it urgently\",而不只是 \"could see themselves using it one day\"。"
+      },
+      {
+        "title": "幂律(最好的点子看起来像坏点子)",
+        "gist": "以投资人的视角:\"effectively all the returns are concentrated in a few big winners, and ... the best ideas look initially like bad ideas.\""
+      }
+    ]
+  }
 }
