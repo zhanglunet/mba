@@ -30,7 +30,7 @@
   .mark .dot { color: var(--accent); }
   nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 18px; }
   nav a:hover { color: var(--accent); border-color: var(--accent); }
-  nav a.current { color: var(--accent); border-color: var(--accent); }
+  nav a[aria-current] { color: var(--accent); border-color: var(--accent); }
   h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.16; margin: 0 0 10px; font-weight: 800; letter-spacing: -0.01em; }
   .sub { font-size: 16px; color: var(--muted); margin: 0 0 8px; font-style: italic; }
   .chip {
@@ -75,11 +75,9 @@
   <header>
     <div class="mark"><a href="/">MBA<span class="dot">.</span></a></div>
     <nav>
-      <a href="/how-it-works.html">怎么打分</a>
-      <a href="/agents.html">For Agents</a>
-      <a href="/roadmap.html">Roadmap</a>
+      <a href="/">品牌监控</a>
       <a href="/panorama.html">评委全景</a>
-      <a href="/weekly.html">周报</a>
+      <a href="/docs.html" aria-current="page">文档</a>
       <a href="https://github.com/zhanglunet/mba">GitHub</a>
     </nav>
   </header>
@@ -176,12 +174,9 @@ python3 scripts/new_weekly.py new &lt;日期&gt; &amp;&amp; ... publish &lt;日�
   <p class="note-line">*本文档为本次开发会话的交接快照。产品状态截至 2026-07-05，v0.4.0。*</p>
 
   <footer>
-    <span>MBA · Metric Brand Auditor</span>
-    <span>
-      <a href="/">主页</a> ·
-      <a href="/roadmap.html">Roadmap</a> ·
-      <a href="https://github.com/zhanglunet/mba/blob/main/docs/handoff-2026-07-05.md">原始文档</a>
-    </span>
+    <span>MBA · Metric Brand Auditor · 评分为 AI 评委模拟,非本人观点,不构成投资建议</span>
+    <span><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></span>
+    <span style="flex-basis:100%;">© 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai">marsdata.ai</a></span>
   </footer>
 
 </div>

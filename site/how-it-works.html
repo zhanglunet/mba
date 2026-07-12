@@ -37,7 +37,7 @@
   .mark a { color: inherit; text-decoration: none; }
   .mark .dot { color: var(--accent); }
   nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 18px; }
-  nav a:hover { color: var(--accent); border-color: var(--accent); }
+  nav a:hover, nav a[aria-current] { color: var(--accent); border-color: var(--accent); }
 
   h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.16; margin: 0 0 12px; font-weight: 800; letter-spacing: -0.01em; }
   .sub { font-size: 17px; color: var(--muted); margin: 0 0 28px; font-style: italic; }
@@ -99,13 +99,9 @@
     <header>
       <div class="mark"><a href="/">MBA<span class="dot">.</span></a></div>
       <nav>
-        <a href="/">首页</a>
-        <a href="/presentation/">Presentation</a>
-        <a href="/pitch.html">Pitch</a>
-        <a href="/agents.html">For Agents</a>
-        <a href="/roadmap.html">Roadmap</a>
+        <a href="/">品牌监控</a>
         <a href="/panorama.html">评委全景</a>
-        <a href="/weekly.html">周报</a>
+        <a href="/docs.html" aria-current="page">文档</a>
         <a href="https://github.com/zhanglunet/mba">GitHub</a>
       </nav>
     </header>
@@ -255,9 +251,9 @@ flowchart LR
     </p>
 
     <footer>
-      <div>© 2026 MBA · Jason · 清风 · John</div>
-      <div><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></div>
-      <div style="flex-basis:100%;text-align:center;margin-top:6px;">技术支持:<a href="https://marsdata.ai">marsdata.ai</a></div>
+      <span>MBA · Metric Brand Auditor · 评分为 AI 评委模拟,非本人观点,不构成投资建议</span>
+      <span><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></span>
+      <span style="flex-basis:100%;">© 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai">marsdata.ai</a></span>
     </footer>
   </div>
 
