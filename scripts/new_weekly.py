@@ -10,10 +10,14 @@ Commands:
       Create docs/weekly/<date>.md from TEMPLATE.md and add a row to the index.
       (date defaults to today.)
 
-  python3 scripts/new_weekly.py publish <YYYY-MM-DD>
-      Render docs/weekly/<date>.md → site/weekly.html.
+  python3 scripts/new_weekly.py publish [YYYY-MM-DD]
+      Re-render ALL docs/weekly/*.md → site/weekly/<date>.html archive pages,
+      and the latest one → site/weekly.html, each with a 历史周报 timeline
+      (date + milestone) linking every issue. Date argument is accepted for
+      backward compatibility but publish always regenerates everything —
+      pages are deterministic functions of the Markdown sources.
 
-Typical flow: `new` → fill in the Markdown → `publish` → commit both.
+Typical flow: `new` → fill in the Markdown → `publish` → commit md + site pages.
 """
 
 import re
@@ -27,6 +31,8 @@ WEEKLY_DIR = REPO / "docs" / "weekly"
 TEMPLATE = WEEKLY_DIR / "TEMPLATE.md"
 INDEX = WEEKLY_DIR / "README.md"
 SITE_PAGE = REPO / "site" / "weekly.html"
+SITE_ARCHIVE_DIR = REPO / "site" / "weekly"
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 # ── Markdown → styled HTML ───────────────────────────────────────────────────
@@ -206,6 +212,21 @@ PAGE_TEMPLATE = """<!doctype html>
     display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   }}
   footer a {{ color: var(--muted); }}
+  /* 历史周报时间线 */
+  .timeline {{ list-style: none; padding: 0; margin: 8px 0 0; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }}
+  .timeline li {{ position: relative; padding: 0 0 18px 26px; border-left: 2px solid #e0ddd6; margin-left: 6px; }}
+  .timeline li:last-child {{ padding-bottom: 4px; }}
+  .timeline li::before {{
+    content: ""; position: absolute; left: -6px; top: 6px; width: 10px; height: 10px;
+    border-radius: 50%; background: var(--paper); border: 2px solid var(--muted);
+  }}
+  .timeline li.current::before {{ background: var(--accent); border-color: var(--accent); }}
+  .tl-date {{ font-size: 12px; font-weight: 700; color: var(--muted); letter-spacing: 0.06em; }}
+  .tl-date a {{ color: inherit; text-decoration: none; border-bottom: 1px solid var(--muted); }}
+  .tl-date a:hover {{ color: var(--accent); border-color: var(--accent); }}
+  .timeline li.current .tl-date {{ color: var(--accent); }}
+  .tl-ms {{ font-size: 14px; margin-top: 2px; line-height: 1.5; }}
+  .tl-tag {{ font-size: 10px; font-weight: 800; color: #fff; background: var(--accent); border-radius: 999px; padding: 1px 8px; margin-left: 8px; vertical-align: 1px; }}
 </style>
 </head>
 <body>
@@ -230,6 +251,11 @@ PAGE_TEMPLATE = """<!doctype html>
   </div>
 
   {content}
+
+  <h2>历史周报 · Timeline</h2>
+  <ol class="timeline">
+{timeline}
+  </ol>
 
   <footer>
     <span>MBA · Metric Brand Auditor · © 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai">marsdata.ai</a></span>
@@ -277,28 +303,76 @@ def cmd_new(args: list):
     return 0
 
 
-def cmd_publish(args: list):
-    if not args:
-        print("usage: new_weekly.py publish <YYYY-MM-DD>")
-        return 1
-    date = args[0]
-    src = WEEKLY_DIR / f"{date}.md"
-    if not src.exists():
-        print(f"not found: {src.relative_to(REPO)}")
-        return 1
+def _plain(s: str) -> str:
+    """Chips / timeline are plain styled labels — strip markdown emphasis markers."""
+    return re.sub(r"[*`]", "", s)
 
-    md = src.read_text(encoding="utf-8")
-    meta = parse_meta(md)
-    # Chips are plain styled labels — strip markdown emphasis markers.
-    plain = lambda s: re.sub(r"[*`]", "", s)
-    period = html.escape(plain(meta["period"]) or f"周期 · 截至 {date}", quote=False)
-    milestone = html.escape(plain(meta["milestone"]) or "—", quote=False)
-    content = render_body(md)
+
+def list_issues():
+    """All weekly issues, newest first: [(date, md_text, meta)]."""
+    issues = []
+    for p in sorted(WEEKLY_DIR.glob("*.md"), reverse=True):
+        if not DATE_RE.match(p.stem):
+            continue  # README / TEMPLATE
+        md = p.read_text(encoding="utf-8")
+        issues.append((p.stem, md, parse_meta(md)))
+    return issues
+
+
+def render_timeline(issues, current_date):
+    """时间线:每期一个节点(日期 + 里程碑),当前期高亮。最新一期链 /weekly.html。"""
+    items = []
+    for i, (date, _md, meta) in enumerate(issues):
+        href = "/weekly.html" if i == 0 else f"/weekly/{date}.html"
+        cur = ' class="current"' if date == current_date else ""
+        tag = '<span class="tl-tag">本期</span>' if date == current_date else ""
+        ms = html.escape(_plain(meta["milestone"]) or "—", quote=False)
+        items.append(
+            f'    <li{cur}><div class="tl-date"><a href="{href}">截至 {date}</a>{tag}</div>'
+            f'<div class="tl-ms">{ms}</div></li>'
+        )
+    return "\n".join(items)
+
+
+def render_issue_page(date, md, meta, timeline_html):
+    period = html.escape(_plain(meta["period"]) or f"周期 · 截至 {date}", quote=False)
+    milestone = html.escape(_plain(meta["milestone"]) or "—", quote=False)
     doc_url = f"https://github.com/zhanglunet/mba/blob/main/docs/weekly/{date}.md"
+    return PAGE_TEMPLATE.format(
+        period=period, milestone=milestone, content=render_body(md),
+        timeline=timeline_html, doc_url=doc_url,
+    )
 
-    page = PAGE_TEMPLATE.format(period=period, milestone=milestone, content=content, doc_url=doc_url)
-    SITE_PAGE.write_text(page, encoding="utf-8")
-    print(f"wrote {SITE_PAGE.relative_to(REPO)} from {src.relative_to(REPO)}")
+
+def cmd_publish(args: list):
+    # date 参数向后兼容;publish 恒重生成全部页面(页面是 md 的确定性函数)。
+    issues = list_issues()
+    if not issues:
+        print("no weekly issues found under docs/weekly/")
+        return 1
+    if args and DATE_RE.match(args[0]) and not (WEEKLY_DIR / f"{args[0]}.md").exists():
+        print(f"not found: docs/weekly/{args[0]}.md")
+        return 1
+
+    SITE_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    # 清掉已删除期数的孤儿页
+    known = {f"{d}.html" for d, _, _ in issues}
+    for p in SITE_ARCHIVE_DIR.glob("*.html"):
+        if p.name not in known:
+            p.unlink()
+            print(f"removed orphan {p.relative_to(REPO)}")
+
+    for date, md, meta in issues:
+        page = render_issue_page(date, md, meta, render_timeline(issues, date))
+        (SITE_ARCHIVE_DIR / f"{date}.html").write_text(page, encoding="utf-8")
+        print(f"wrote site/weekly/{date}.html")
+
+    latest_date, latest_md, latest_meta = issues[0]
+    SITE_PAGE.write_text(
+        render_issue_page(latest_date, latest_md, latest_meta, render_timeline(issues, latest_date)),
+        encoding="utf-8",
+    )
+    print(f"wrote {SITE_PAGE.relative_to(REPO)} (latest = {latest_date}, timeline {len(issues)} 期)")
     return 0
 
 
