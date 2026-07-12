@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>文档 · MBA</title>
+<meta name="description" content="MBA 文档中心:方法论、Agent API、MCP 接入、Roadmap、周报与完整文档目录。" />
+<style>
+  :root {
+    --ink: #111; --paper: #faf8f3; --muted: #6b6760; --rule: #1a1a1a;
+    --accent: #c1440e; --card: #fff; --hair: #e2ddd3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: ui-sans-serif, "Inter", "PingFang SC", "Noto Sans SC", -apple-system, sans-serif;
+    line-height: 1.55; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 40px 28px 72px; }
+  header {
+    border-bottom: 2px solid var(--rule); padding-bottom: 14px; margin-bottom: 30px;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  .mast-left { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .mark { font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
+  .mark .dot { color: var(--accent); }
+  .mast-sub { font-family: ui-serif, "Noto Serif SC", Georgia, serif; font-style: italic; font-size: 14px; color: var(--muted); }
+  nav a { font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+  nav a:hover, nav a.here { color: var(--accent); border-color: var(--accent); }
+  h1 { font-size: 26px; font-weight: 800; margin: 0 0 8px; }
+  .lede { color: var(--muted); font-size: 14px; margin: 0 0 28px; max-width: 68ch; }
+  .section-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin: 30px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--hair); }
+  .doc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .doc-card { display: block; background: var(--card); border: 1px solid var(--hair); border-radius: 6px; padding: 14px 16px; color: var(--ink); text-decoration: none; transition: border-color .15s; }
+  .doc-card:hover { border-color: var(--accent); }
+  .doc-card h3 { margin: 0 0 4px; font-size: 15px; font-weight: 700; }
+  .doc-card h3 .arrow { color: var(--accent); }
+  .doc-card p { margin: 0; font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+  code { background: #f0ece3; padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mast-left">
+        <div class="mark">MBA<span class="dot">.</span></div>
+        <div class="mast-sub">文档中心 · Documentation</div>
+      </div>
+      <nav>
+        <a href="/">品牌监控</a>
+        <a href="/panorama.html">评委全景</a>
+        <a href="/docs.html" class="here">文档</a>
+        <a href="https://github.com/zhanglunet/mba">GitHub</a>
+      </nav>
+    </header>
+
+    <h1>文档</h1>
+    <p class="lede">方法论、接入方式与项目资料。想直接看结果?回<a href="/" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">品牌监控台</a>挑一份报告。</p>
+
+    <div class="section-label">方法论 / Methodology</div>
+    <div class="doc-grid">
+      <a class="doc-card" href="/how-it-works.html">
+        <h3>怎么打分 <span class="arrow">→</span></h3>
+        <p>7 维度 × 5 镜头 × 人物评委面板:分数从哪来、为什么可复盘。</p>
+      </a>
+      <a class="doc-card" href="/panorama.html">
+        <h3>评委全景 <span class="arrow">→</span></h3>
+        <p>43 位评委人物视角:谁在打分、各自的思维框架与利益披露。</p>
+      </a>
+      <a class="doc-card" href="https://github.com/zhanglunet/mba/blob/main/docs/12-evolution-tracking.md">
+        <h3>EVOLUTION 版本追踪 <span class="arrow">→</span></h3>
+        <p>同一品牌 v1→v2→v3 怎么重审:delta 表、↑↓↔、版本时间线。</p>
+      </a>
+    </div>
+
+    <div class="section-label">接入 / Integrate</div>
+    <div class="doc-grid">
+      <a class="doc-card" href="/agents.html">
+        <h3>For Agents(JSON API)<span class="arrow">→</span></h3>
+        <p>/api/reports.json 等结构化端点,给 agent 直接消费。</p>
+      </a>
+      <a class="doc-card" href="https://github.com/zhanglunet/mba/blob/main/docs/13-mcp-quickstart.md">
+        <h3>MCP Quickstart <span class="arrow">→</span></h3>
+        <p><code>npx -y mba-mcp-server@latest</code> 一行接入 Claude Desktop / Cursor,14 个工具。</p>
+      </a>
+      <a class="doc-card" href="https://github.com/zhanglunet/mba/tree/main/metric-brand-auditor">
+        <h3>/mba Skill <span class="arrow">→</span></h3>
+        <p>Claude Code skill:<code>/mba &lt;brand&gt; --dry-run</code> 先预览计划,再真跑审计。</p>
+      </a>
+    </div>
+
+    <div class="section-label">项目 / Project</div>
+    <div class="doc-grid">
+      <a class="doc-card" href="/roadmap.html">
+        <h3>Roadmap <span class="arrow">→</span></h3>
+        <p>进度与下一步:面板、评委深化、工程硬化的实时状态板。</p>
+      </a>
+      <a class="doc-card" href="/weekly.html">
+        <h3>周报 <span class="arrow">→</span></h3>
+        <p>每周进展记录。</p>
+      </a>
+      <a class="doc-card" href="/pitch.html">
+        <h3>Pitch <span class="arrow">→</span></h3>
+        <p>一页讲清 MBA 是什么、为什么值得存在。</p>
+      </a>
+      <a class="doc-card" href="/presentation/">
+        <h3>Presentation <span class="arrow">→</span></h3>
+        <p>演示 deck。</p>
+      </a>
+      <a class="doc-card" href="https://github.com/zhanglunet/mba/tree/main/docs">
+        <h3>完整文档目录(docs/01–14)<span class="arrow">→</span></h3>
+        <p>PRD、架构、五阶段流程、代码规范、perspective 深化 SOP 等全部文档。</p>
+      </a>
+    </div>
+
+    <footer>
+      <span>MBA · Metric Brand Auditor</span>
+      <span><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></span>
+    </footer>
+  </div>
+</body>
+</html>
