@@ -129,7 +129,13 @@
   const norm = t => String(t || '').replace(/\s+/g, ' ').trim();
 
   // 介绍:首段(身份/来源)去掉已在 role 行展示的首句;其余段统一成卡片,识别到标签则加粗。
+  // 全站标签统一显示中文:英文 front-matter 标签映射到中文(已是中文的原样透传)。
   const LABELS = /^(Use as|Explicit triggers?|Do not activate when|Do not activate|用途|显式触发|主题型触发|不要激活|不要在此激活|不要在)(?:\s*[（(][^)）]*[)）])?\s*[:：]/;
+  const LABEL_CN = {
+    'Use as': '用途',
+    'Explicit trigger': '显式触发', 'Explicit triggers': '显式触发',
+    'Do not activate when': '不要激活', 'Do not activate': '不要激活',
+  };
   function renderIntro(desc, role){
     const paras = desc.split(/\n\s*\n/).map(p => norm(p)).filter(Boolean);
     let html = '';
@@ -141,8 +147,9 @@
         return;
       }
       const m = p.match(LABELS);
+      const label = m ? (LABEL_CN[m[1]] || m[1]) : '';
       html += m
-        ? '<p class="use"><b>' + esc(m[1]) + '</b>' + esc(p.slice(m[0].length).trim()) + '</p>'
+        ? '<p class="use"><b>' + esc(label) + '</b>' + esc(p.slice(m[0].length).trim()) + '</p>'
         : '<p class="use">' + esc(p) + '</p>';
     });
     return html;
