@@ -243,3 +243,26 @@ reports:
       "拒绝本身即品牌"——拒绝收购、拒绝授权、拒绝廉价线、拒绝增长冲动，每一次拒绝强化 True Luxury 品类定义。
       216/250 · 8.64/10。
     has_pdf: false
+
+  - slug: asiainfo
+    card_brand: "亚信 AsiaInfo · 01675.HK + 688225.SH"
+    card_meta: "security-cn-global panel · 6 评委（周鸿祎·张明正△·任正非·黄仁勋·马斯克·纳德拉）· 雷达图 + 异议热力图 · 统一品牌（亚信科技 + 亚信安全）"
+    headline: "中国互联网「主建筑师」的黄昏与重生:BSS 收缩,田溯宁反向收购重聚「亚信帝国」"
+    brand_cn: 亚信
+    brand_en: AsiaInfo
+    ticker: 01675.HK / 688225.SH
+    panel: security-cn-global
+    version: v1
+    audit_date: 2026-07-12
+    score_total: 178
+    score_max: 300
+    score_normalized: 5.93
+    tl_dr: >-
+      把亚信科技(01675.HK)与亚信安全(688225.SH)作为统一「亚信」品牌评。最强资产是罕见厚重的起源——
+      1993 年田溯宁/丁健创立、承建 ChinaNet(中国首个商业化互联网骨干网)、2000 年首家赴美上市中国高科技企业。
+      security-cn-global 6 评委:Origin(7.3)领跑、共识最高;最弱 Identity(4.7)——「亚信科技 vs 亚信安全」
+      双品牌割裂、B2B 圈外几乎隐形。当下张力:电信 BSS 核心收缩(2024 −15.8%、BSS −19.1%),田溯宁以
+      「亚信安全反向收购亚信科技」重聚「亚信帝国」(目标合并营收>100 亿、~1.5 万人)+ 押注 AI 大模型交付。
+      最大分歧:任正非 37/50(基础设施主权价值最高) vs 马斯克 21/50(收缩生意做反向重组=财务工程)。
+      178/300 · 5.93/10。
+    has_pdf: false
