@@ -1,0 +1,26 @@
+# watch/matrix.yaml — 舆情监控:维度 × 品牌适用性矩阵(单一真源)
+#
+# 来源:docs/15-brand-watch-prd.md §4.3(PRD 里的 ●/○/− 在此落库为 core/on/off)。
+# 规则(由 scripts/watch-tools/validate_watch.py 硬 gate):
+#   - brands 的 key 集合必须与 site/published-reports.txt 白名单完全一致
+#     (新发布品牌 → 必须同步加一行矩阵;下线品牌 → 必须删行);
+#   - watch/<slug>/events.yaml 里的事件,其 dim 在本表对应品牌上不得为 off
+#     (空维度诚实留空,不填充噪音 —— docs/15 §3 原则 3)。
+# 维度定义见 docs/15 §4.1:
+#   W1 媒体报道 · W2 社交与社区声量 · W3 招投标与采购 · W4 监管司法合规
+#   W5 资本市场 · W6 产品口碑与投诉 · W7 人事与组织 · W8 技术与知识产权 · W9 供应链与生态
+
+brands:
+  lenovo:        {W1: on,   W2: on,  W3: core, W4: on,   W5: core, W6: core, W7: on,   W8: on,   W9: core}
+  chengshi-auto: {W1: on,   W2: off, W3: core, W4: on,   W5: off,  W6: on,   W7: on,   W8: on,   W9: core}
+  anthropic:     {W1: core, W2: core, W3: on,  W4: core, W5: on,   W6: on,   W7: on,   W8: core, W9: core}
+  dji:           {W1: core, W2: on,  W3: on,   W4: core, W5: off,  W6: core, W7: on,   W8: core, W9: core}
+  qianxin:       {W1: on,   W2: off, W3: core, W4: core, W5: core, W6: off,  W7: on,   W8: core, W9: on}
+  kimichat:      {W1: core, W2: core, W3: off, W4: on,   W5: on,   W6: core, W7: core, W8: core, W9: core}
+  tal-education: {W1: core, W2: core, W3: off, W4: core, W5: core, W6: core, W7: on,   W8: on,   W9: off}
+  genki-forest:  {W1: core, W2: core, W3: off, W4: core, W5: off,  W6: core, W7: on,   W8: off,  W9: core}
+  meituan:       {W1: core, W2: core, W3: off, W4: core, W5: core, W6: core, W7: on,   W8: on,   W9: core}
+  hermes:        {W1: on,   W2: core, W3: off, W4: on,   W5: core, W6: core, W7: on,   W8: off,  W9: off}
+  asiainfo:      {W1: on,   W2: off, W3: core, W4: on,   W5: core, W6: off,  W7: core, W8: on,   W9: core}
+  spacex:        {W1: core, W2: core, W3: core, W4: core, W5: core, W6: on,  W7: core, W8: core, W9: on}
+  yuanxin:       {W1: core, W2: on,  W3: core, W4: on,   W5: on,   W6: off,  W7: on,   W8: core, W9: core}

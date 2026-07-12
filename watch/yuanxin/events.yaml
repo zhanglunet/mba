@@ -1,0 +1,92 @@
+# watch/yuanxin/events.yaml — 垣信卫星·千帆星座(SpaceSail)舆情事件流
+# schema 见 docs/16 §2;本批为 M1 试点回填(采集方法与过程见 docs/16 §4)。
+#
+# 注:本品牌 v1 审计(2026-07-12)的调研语料止于 2025-10;下列 2026 年组网进展是
+# 审计未覆盖的新信号 —— 这正是 watch 层存在的意义(两版之间的眼睛,docs/15 §1.1)。
+
+- id: 2026-04-08-yuanxin-001
+  date: 2026-04-08
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 千帆星座第七批组网卫星成功发射
+  quote: "“千帆星座”第七批组网卫星成功发射"
+  quote_type: title
+  url: https://cn.chinadaily.com.cn/a/202604/08/WS69d5f3d8a310942cc49a6bc5.html
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [signal, leverage]
+  note: 官媒确认的发射节奏信号;日期以 URL 内嵌(202604/08)自证。
+
+- id: 2026-04-09-yuanxin-002
+  date: 2026-04-09
+  dim: W1
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: 财经媒体关注卫星互联网高频发射节奏
+  quote: "长征系列火箭48小时内两连发，卫星互联网组网双轨并进"
+  quote_type: title
+  url: https://www.21jingji.com/article/20260409/herald/b20e158b221bffb82ea806e6b0a8da60.html
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [category]
+  note: P3 背景语境(品类议程升温),不上卡片;日期以 URL 内嵌(20260409)自证。
+
+- id: 2026-06-05-yuanxin-003
+  date: 2026-06-05
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 千帆星座组网卫星再次成功发射(科技日报)
+  quote: "我国成功发射千帆星座组网卫星"
+  quote_type: title
+  url: https://www.stdaily.com/web/gdxw/2026-06/05/content_528330.html
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [signal]
+  note: 日期以 URL 内嵌(2026-06/05)自证。
+
+- id: 2026-07-04-yuanxin-004
+  date: 2026-07-04
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 垣信披露千帆组网卫星数量增至 218 颗
+  quote: "垣信卫星：千帆组网卫星数量增至 218 颗"
+  quote_type: title
+  url: https://finance.sina.com.cn/tech/digi/2026-07-04/doc-inifskfq3100316.shtml
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [signal]
+  note: 在轨规模的官方口径快照;日期以 URL 内嵌(2026-07-04)自证。
+
+- id: 2026-07-05-yuanxin-005
+  date: 2026-07-05
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 长征八号甲首次用于千帆发射,一箭 20 星,星座增至 238 颗
+  quote: "我国成功发射千帆星座组网卫星，千帆星座增至 238 颗"
+  quote_type: title
+  url: https://www.ithome.com/0/972/856.htm
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [signal, leverage]
+  note: >-
+    堆叠规模首次提至一箭 20 星,发射节奏与单星成本双改善——直接回应 v1 审计
+    最大质疑「频段不等于在轨」(马斯克△ Δ5 分歧点)。标题与正文日期(2026/7/5)
+    已 curl 原文核对(docs/16 §4);国家航天局同日发文可交叉。
+
+- id: 2026-07-10-yuanxin-006
+  date: 2026-07-10
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 官方调研行报道:2026 年计划累计在轨 324 颗
+  quote: "活力中国调研行｜千帆星座今年计划达到累计在轨324颗卫星"
+  quote_type: title
+  url: https://finance.sina.cn/stock/jdts/2026-07-10/detail-inihhzsf5161803.d.html
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [signal, category]
+  note: 年度组网目标的公开口径(324 颗);日期以 URL 内嵌(2026-07-10)自证。

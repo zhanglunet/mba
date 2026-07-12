@@ -23,7 +23,8 @@
 | 12 | [12-evolution-tracking.md](12-evolution-tracking.md) | 贡献者 | P3-B 报告订阅与品牌演化追踪设计 + 实现（触发器 / delta / 增量重跑 / 通知） |
 | 13 | [13-mcp-quickstart.md](13-mcp-quickstart.md) | **用户 / 集成方** | MCP server 快速上手：安装、一次完整审计、演化订阅、14 工具参考 |
 | 14 | [14-deepening-summary.md](14-deepening-summary.md) | 全员 | Perspective 深化收尾点时快照(2026-07-10):全景 + 坑记录,**非 live tracker**(权威 tier 名单以 docs/10 §6 / panels/*.yaml 为准) |
-| 15 | [15-brand-watch-prd.md](15-brand-watch-prd.md) | 产品 / 决策者 | **品牌舆情监控(Brand Watch)需求分析 PRD**:9 监控维度(招投标 W3 深潜)、事件模型与 P0-P3 分级、舆情→EVOLUTION 触发规则、13 品牌适用性矩阵;**需求稿,未实现** |
+| 15 | [15-brand-watch-prd.md](15-brand-watch-prd.md) | 产品 / 决策者 | **品牌舆情监控(Brand Watch)需求分析 PRD**:9 监控维度(招投标 W3 深潜)、事件模型与 P0-P3 分级、舆情→EVOLUTION 触发规则、13 品牌适用性矩阵 |
+| 16 | [16-brand-watch-implementation.md](16-brand-watch-implementation.md) | 贡献者 | **Brand Watch 实现与过程记录**:W 系列开发计划、数据层与校验器实现、源可达性验证表(含 b2b.10086.cn TLS workaround)、试点采集记录与 SOP;**做一项记一项** |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(原始设计草案) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |

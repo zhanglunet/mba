@@ -1,0 +1,93 @@
+# watch/asiainfo/events.yaml — 亚信(统一品牌:亚信科技 01675.HK + 亚信安全 688225.SH)舆情事件流
+#
+# schema 见 docs/16 §2;硬字段(date/quote/url/fetched_at)必须可溯源,
+# 判断字段(direction/severity/lens_map)恒为模型判断、重审时可被评委推翻。
+# quote_type: title = 引用为源文章标题(逐字);body = 引用为正文摘句(需 curl 原文核对)。
+# 本批为 M1 试点回填(采集方法与过程见 docs/16 §4)。
+
+- id: 2024-01-17-asiainfo-001
+  date: 2024-01-17
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: 亚信安全拟以逾 17 亿港元反向收购亚信科技约 20% 股份,田溯宁将统一实控
+  quote: "逾17亿港元！“互联网先生”田溯宁又一资本运作：亚信安全反向“收编”亚信科技"
+  quote_type: title
+  url: https://www.21jingji.com/article/20240117/herald/15daf6cce31c1e3c52a5a3200cef5667.html
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [leverage, identity, signal]
+  note: 「亚信帝国」重聚的起点事件;日期以 URL 内嵌(20240117)自证。
+
+- id: 2024-03-26-asiainfo-002
+  date: 2024-03-26
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: 21 世纪经济报道深度稿:田溯宁重组百亿亚信帝国
+  quote: "北京留美博士，重组100亿亚信帝国"
+  quote_type: title
+  url: https://m.21jingji.com/article/20240326/herald/b40e9bf54bedb43f8222d948c8aa3c44_zaker.html
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [identity, origin]
+  note: 重组叙事进入主流财经媒体议程;日期以 URL 内嵌(20240326)自证。
+
+- id: 2024-08-15-asiainfo-003
+  date: 2024-08-15
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: 亚信科技中期业绩首次亏损
+  quote: "亚信科技中期业绩首亏 田溯宁加速整合“亚信帝国”"
+  quote_type: title
+  url: https://www.21jingji.com/article/20240815/herald/25e491dbc263e57ce57dc198356e78c3.html
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [signal]
+  note: 上市以来首个中期亏损;日期以 URL 内嵌(20240815)自证。
+
+- id: 2024-08-22-asiainfo-004
+  date: 2024-08-22
+  dim: W1
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: 财经媒体正面解读:投资周期波谷下的韧性叙事
+  quote: "投资周期波谷阶段下，亚信科技(01675)展现穿越周期韧性"
+  quote_type: title
+  url: https://finance.sina.cn/stock/relnews/hk/2024-08-22/detail-incknxxa1698695.d.html
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [identity]
+  note: P3 背景语境,不上卡片;日期以 URL 内嵌(2024-08-22)自证。
+
+- id: 2025-03-15-asiainfo-005
+  date: 2025-03-15
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: 2024 年报卖方点评:运营商业务承压,AI 大模型交付被视为增长点
+  quote: "【亚信科技（1675.HK）】2024年运营商业务承压，AI大模型交付业务增长潜力可期——2024年年度业绩点评（付天姿）"
+  quote_type: title
+  url: https://finance.sina.com.cn/stock/stockzmt/2025-03-15/doc-inepsvuv8924563.shtml
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [signal, leverage]
+  note: 2024 全年营收 66.46 亿(−15.8%)的年报季信号;日期以 URL 内嵌(2025-03-15)自证。
+
+- id: 2025-04-07-asiainfo-006
+  date: 2025-04-07
+  dim: W3
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: 亚信安全被中国移动子公司禁入采购三年(起因约 60 万元项目)
+  quote: "因小失大！亚信安全被中国移动子公司禁入三年 竟只因60万的项目？"
+  quote_type: title
+  url: https://finance.sina.com.cn/tech/roll/2025-04-07/doc-inesincs1400808.shtml
+  fetched_at: "2026-07-12T06:18:00Z"
+  lens_map: [leverage, signal]
+  note: >-
+    docs/15 §4.2.2 分类学「采购黑名单/处罚性禁入 → P0」的真实实例:运营商是亚信
+    命脉客户群,子公司层级的禁入虽范围有限,但对「集采份额=护城河」的叙事是直接
+    警讯。日期以 URL 内嵌(2025-04-07)自证;处罚公示原文待回溯(docs/16 §4 leads)。
