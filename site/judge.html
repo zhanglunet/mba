@@ -44,6 +44,7 @@
     text-decoration:none;padding:3px 9px;border:1px solid var(--hair);border-radius:20px;background:var(--paper-2);}
   .pchip:hover{border-color:var(--accent);color:var(--accent);}
   h1{font-size:clamp(30px,5vw,46px);line-height:1.12;margin:0 0 8px;font-weight:800;letter-spacing:-.01em;text-wrap:balance;}
+  h1 .en{font-size:.5em;font-weight:600;color:var(--muted);letter-spacing:0;white-space:nowrap;}
   .role{font-size:16.5px;color:var(--muted);margin:0 0 30px;font-style:italic;line-height:1.5;}
 
   /* section label */
@@ -150,22 +151,37 @@
   fetch('/api/judges/' + slug + '.json', {headers:{'accept':'application/json'}})
     .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
     .then(d => {
-      document.title = (d.display || d.slug) + ' · 评委 · MBA';
+      const t = d.i18n || {};                    // 英文评委的中文覆盖(若有)
+      const nameEn = d.display || d.slug;
+      const nameCn = t.display_cn || '';
+      document.title = (nameCn || nameEn) + ' · 评委 · MBA';
       const tierCls = d.tier === 'seed' ? 'seed' : 'full';
       const tierTxt = d.tier === 'seed' ? 'Seed · 留档' : 'Full · 全档';
       const panels = (d.panels || []).map(p =>
         '<a class="pchip" href="/panorama.html" title="面板">' + esc(p) + '</a>').join('');
-      const roleLine = firstSentence(d.summary || '');  // 身份首句
-      const models = (d.mental_models || []).map(m =>
-        '<div class="model"><div class="m-n">' + String(m.n).padStart(2,'0') + '</div>' +
-        '<div class="m-body"><h3>' + esc(m.title) + '</h3>' +
-        (m.gist ? '<p>' + esc(m.gist) + '</p>' : '') + '</div></div>').join('');
+      const roleLine = t.role_cn || firstSentence(d.summary || '');  // 身份首句(中文优先)
+      const h1 = nameCn
+        ? esc(nameCn) + ' <span class="en">· ' + esc(nameEn) + '</span>'
+        : esc(nameEn);
+      const mcn = t.models_cn || [];
+      const models = (d.mental_models || []).map((m, i) => {
+        const title = (mcn[i] && mcn[i].title) || m.title;
+        const gist  = (mcn[i] && mcn[i].gist)  || m.gist;
+        return '<div class="model"><div class="m-n">' + String(m.n).padStart(2,'0') + '</div>' +
+          '<div class="m-body"><h3>' + esc(title) + '</h3>' +
+          (gist ? '<p>' + esc(gist) + '</p>' : '') + '</div></div>';
+      }).join('');
+      // 介绍:有中文 intro_cn 就用译好的卡片,否则从英文 description 现拆。
+      const introHtml = (t.intro_cn && t.intro_cn.length)
+        ? t.intro_cn.map(x => '<p class="use">' +
+            (x.label ? '<b>' + esc(x.label) + '</b>' : '') + esc(x.body) + '</p>').join('')
+        : renderIntro(d.description || '', roleLine);
 
       main.innerHTML =
         '<div class="eyebrow"><span class="tier ' + tierCls + '">' + tierTxt + '</span>' + panels + '</div>' +
-        '<h1>' + esc(d.display || d.slug) + '</h1>' +
+        '<h1>' + h1 + '</h1>' +
         '<p class="role">' + esc(roleLine) + '</p>' +
-        '<div class="lbl">介绍</div><div class="intro">' + renderIntro(d.description || '', roleLine) + '</div>' +
+        '<div class="lbl">介绍</div><div class="intro">' + introHtml + '</div>' +
         (models
           ? '<div class="lbl">视角 · 核心心智模型</div><div class="models">' + models + '</div>'
           : '') +

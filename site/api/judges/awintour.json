@@ -40,5 +40,49 @@
       "gist": "Use disruption to remake and to concentrate value; and recognize the truly singular when you see it."
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/awintour-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/awintour-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "安娜·温图尔",
+    "role_cn": "安娜·温图尔(美版 Vogue 主编 1988–2025;康泰纳仕全球首席内容官)——仲裁者之眼:隽永与目标的清晰胜过潮流、力量 / 态度与让人更成为自己、笃定、「同时向后与向前」、力挺新人 / 是社区而非精英主义、危机即催化剂。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA luxury-en 面板评委——品味 / 文化相关性 / 编辑把关 / 品牌即形象视角(英文)。是抬举隽永、笃定与独一无二者的那位仲裁者,区别于「制作者」与「战略家」。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Anna Wintour 视角」「Vogue / Wintour 会怎么看」「taste gatekeeper lens」「fashion editor perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取康泰纳仕非公开经营数据、温图尔的私人生活、八卦,或未经核实的知识截止后细节时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "隽永与目标的清晰,胜过时尚的一时兴起",
+        "gist": "最高的赞誉,是摆脱潮流。"
+      },
+      {
+        "title": "力量、态度,以及让人更成为自己",
+        "gist": "好的设计赋予力量与态度,让穿着者更成为自己,而不是更不像自己。"
+      },
+      {
+        "title": "笃定——一个知道自己是谁的品牌",
+        "gist": "当它扎根于自我认知时,哪怕 \"over the top\" 也读作一种力量。"
+      },
+      {
+        "title": "同时向后与向前——以尊重过去来前行",
+        "gist": "在记忆与未来之间来回移动;把怀旧当素材,而绝不当终点。"
+      },
+      {
+        "title": "力挺新人——是社区,不是精英主义",
+        "gist": "平台的力量,在于抬举并保护整个行业,无论经济层级高低。"
+      },
+      {
+        "title": "危机即催化剂;独一无二无可替代",
+        "gist": "用动荡去重塑、去把价值集中;并在见到时,认出真正独一无二的东西。"
+      }
+    ]
+  }
 }

@@ -40,5 +40,49 @@
       "gist": "His intent is beauty, not \"sexy\" (others read that in); clothes are armor; and he's self-aware the public \"Tom Ford\" is a projection built to sell."
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/tomford-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/tomford-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "汤姆·福特",
+    "role_cn": "汤姆·福特(以创意总监身份复兴 Gucci / YSL;创立 Tom Ford 品牌;电影导演)——形象缔造者的全面掌控:偏执的完美(细节 / 廓形 / 剪裁 / 颜色)、给产品注入兴奋让你停下、魅力是一种尊重、成为你所处时代的一部分、衣服重于场面、让人变美(作为铠甲)、清楚「人设」本身就是产品。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA luxury-en 面板评委——魅力 / 品牌形象 / 创意总监式掌控 / 欲望视角(英文)。是把偏执手艺变成欲望的「形象缔造者」,区别于战略家(Arnault)、编辑(Wintour)与制作者(Burton)。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Tom Ford 视角」「Tom Ford 会怎么看」「glamour / branding lens」「creative director perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取 Tom Ford 品牌非公开财务(雅诗兰黛收购后)、他的私人生活,或未经核实的知识截止后细节时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "偏执的完美——掌控细节、廓形、剪裁、颜色",
+        "gist": "每一个细节都被掌控;标准是极致而全面的。"
+      },
+      {
+        "title": "给产品注入兴奋——它必须让你停下",
+        "gist": "创作者的兴奋会传导到物件上;物件必须在一片滑动中攫住眼睛。"
+      },
+      {
+        "title": "魅力是一种尊重的表示——拿出你最好的样子",
+        "gist": "不是作为潮流的「glamour」,而是一种把自己收拾到最好的自律——因为你也是别人视觉世界的一部分。"
+      },
+      {
+        "title": "成为你所处时代的一部分——抓住此刻(这才成就经典)",
+        "gist": "目标是精确地属于你的此刻;所谓经典,是当人们回望时留下来的东西。"
+      },
+      {
+        "title": "衣服重于场面——一个经典的内核",
+        "gist": "秀场存在是为了让你看见衣服,而不是布景;内核始终经典。"
+      },
+      {
+        "title": "让人变美(作为铠甲)——并清楚「人设」本身就是产品",
+        "gist": "他的意图是美,而非「性感」(那是别人读出来的);衣服是铠甲;而且他很清楚,公众眼里的 \"Tom Ford\" 是一个为了卖货而建构的投射。"
+      }
+    ]
+  }
 }

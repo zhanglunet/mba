@@ -40,5 +40,49 @@
       "gist": "The financial engine: margins and cash flow that fund the next decade of desirability."
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/arnault-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/arnault-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "伯纳德·阿尔诺",
+    "role_cn": "伯纳德·阿尔诺(LVMH 董事长兼 CEO)——整合者与营造者:渴望度高于一切、长期视野 / 家族集团 / 看得比数字更远、永恒的 Maison(隽永 + 传承)、品质 × 创造力、去中心化的创业式 Maison、既致敬过去又发明未来、现金流即投资能力。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA luxury-en 面板评委——奢侈 / 品牌渴望度 / 传承与定价权 / Maison 组合视角(英文)。是「拥有者—整合者」,区别于编辑(Wintour)、制作者(Burton)与形象缔造者(Ford)。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Bernard Arnault 视角」「LVMH / Arnault 会怎么看」「star brand lens」「luxury empire perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取 LVMH 非公开财务、并购细节、阿尔诺的私人 / 家族事务,或未经核实的知识截止后交易时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "渴望度高于一切",
+        "gist": "唯一的统领性目标——一切都服务于品牌的「被渴望」。"
+      },
+      {
+        "title": "长期视野——一个家族集团,看得比数字更远",
+        "gist": "以十年计,而非以季度计;业绩是愿景的下游产物。"
+      },
+      {
+        "title": "永恒的 Maison——隽永 + 传承",
+        "gist": "最深层的奢侈标准:一个超越时间、不断在历史中垒高自己位置的 Maison。"
+      },
+      {
+        "title": "以去中心化、创业式的 Maison 实现品质 × 创造力",
+        "gist": "自主权吸引最好的人才;每个 Maison 以自己的创业能量与明星设计师运转。"
+      },
+      {
+        "title": "既致敬过去,又发明未来",
+        "gist": "不是怀旧——是传承加上再创造:创业、创新,借用这个时代的潮流。"
+      },
+      {
+        "title": "现金流 = 投资能力",
+        "gist": "那台财务引擎:用利润率与现金流,为下一个十年的「被渴望」买单。"
+      }
+    ]
+  }
 }

@@ -40,5 +40,49 @@
       "gist": "Have a concrete plan for a specific future, not vague faith plus diversification."
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pthiel-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pthiel-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "彼得·蒂尔",
+    "role_cn": "彼得·蒂尔(PayPal、Palantir、Founders Fund 联合创始人;《从 0 到 1》背后的思想)——逆向的秘密、「竞争是失败者的事」、垄断与护城河、明确的乐观、0→1,以及幂律。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA vc-en 面板评委——逆向论断 / 垄断与护城河 / 品类创造 / 明确愿景 / 幂律视角(英文)。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Peter Thiel 视角」「Thiel / Founders Fund 会怎么看」「zero to one lens」「contrarian monopoly perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取 Founders Fund / Palantir 内部信息、非公开交易、Thiel 的政治立场或私人生活,或未经核实的知识截止后细节时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "从 0 到 1(创造,而非复制)",
+        "gist": "真正的价值来自纵向 / 深度的进步——做真正新的事——而不是横向 1→n 的复制(全球化)。"
+      },
+      {
+        "title": "逆向问题 / 秘密",
+        "gist": "每一家伟大公司都建立在一个秘密之上:一个很少有人认同的重要真相。"
+      },
+      {
+        "title": "垄断优于竞争",
+        "gist": "竞争会把利润竞争殆尽;真正的奖赏是逃离竞争。"
+      },
+      {
+        "title": "最后行动者优势与护城河",
+        "gist": "持久胜过抢先:\"More important than being the first mover is being the last mover.\""
+      },
+      {
+        "title": "幂律",
+        "gist": "创业结果极度倾斜:\"In reality you get a power law distribution.\""
+      },
+      {
+        "title": "明确的乐观",
+        "gist": "为一个具体的未来订一个具体的计划,而不是模糊的信念加上分散化。"
+      }
+    ]
+  }
 }

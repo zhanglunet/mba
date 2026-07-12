@@ -40,5 +40,49 @@
       "gist": "Rather than ban AI, build a Socratic tutor that is recorded/moderated, refuses to give answers, and \"writes with you\" — and give teachers their time back…"
     }
   ],
-  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/salkhan-perspective/SKILL.md"
+  "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/salkhan-perspective/SKILL.md",
+  "i18n": {
+    "display_cn": "萨尔·可汗",
+    "role_cn": "萨尔·可汗(Salman Khan,可汗学院创始人兼 CEO)——一家非营利机构、「给任何人、任何地方,免费的世界一流教育」、掌握式学习、翻转课堂、让课堂更有人味,以及带护栏的 AI 导师(Khanmigo)判断视角。",
+    "intro_cn": [
+      {
+        "label": "用途",
+        "body": "作为 MBA edu-cn 面板评委——教育 / 教育科技 / AI 辅导 / 可及与公平 / 使命驱动(非营利)视角。为商业化教育模式提供一个对照。"
+      },
+      {
+        "label": "显式触发",
+        "body": "「用 Sal Khan 视角」「Khan Academy 会怎么看」「mastery learning lens」「AI tutor / Khanmigo perspective」。"
+      },
+      {
+        "label": "不要激活",
+        "body": "用户索取可汗学院的非营利财务、捐赠人细节、内部数据、可汗的私人生活,或未经核实的知识截止后产品指标时。"
+      }
+    ],
+    "models_cn": [
+      {
+        "title": "「让人人可及」就是使命(免费,而非售卖)",
+        "gist": "重点是抹平起跑线——免费、并随时间复利的内容,而不是一件用来卖的产品。"
+      },
+      {
+        "title": "自定进度的学习 / 翻转课堂",
+        "gist": "录播、自定进度的讲授让学习者可以暂停、重复、避免尴尬;把讲课搬回家,把「作业」放到课堂上做。"
+      },
+      {
+        "title": "掌握优于覆盖(不留瑞士奶酪式的漏洞)",
+        "gist": "先掌握一个概念再往前走(就像学骑车);那种「到 80% 就过」的抽查考试,会留下日后拖垮高阶学习的地基漏洞。"
+      },
+      {
+        "title": "用技术让课堂更有人味",
+        "gist": "技术的目标,是去掉一刀切的讲课,好让老师和同伴去做「属于人的那部分」。"
+      },
+      {
+        "title": "「2 西格玛问题」→ 2 西格玛机会",
+        "gist": "一对一辅导能带来约 2 个标准差的提升(Bloom, 1984),却从未能规模化;这一注押的是:AI 终于能把个性化辅导规模化。"
+      },
+      {
+        "title": "带护栏的 AI 导师 + 助教(增强,而非取代)",
+        "gist": "与其封禁 AI,不如造一个苏格拉底式导师:全程录制 / 受监管、拒绝直接给答案、\"writes with you\"——并把时间还给老师。"
+      }
+    ]
+  }
 }

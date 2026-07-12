@@ -1,0 +1,185 @@
+# 英文评委页的中文覆盖 —— 由 scripts/build_agents_api.py 合并进 site/api/judges/<slug>.json 的 i18n 块,
+# judge.html 有 i18n 就优先用中文。原则(2026-07-12 定):中文为主;**本人逐字英文引语保留英文原文不改写**
+# (以英文双引号呈现);触发词与中文强调用「」;姓名页面显示为「中文名 · English」。
+# models_cn 必须与该套 SKILL 的 mental_models 数量一致(build 会校验,不齐则 CI 红)。
+
+paulg:
+  display_cn: "保罗·格雷厄姆"
+  role_cn: "保罗·格雷厄姆(Y Combinator 联合创始人、随笔作者)——「做出人们想要的东西」「做那些不可规模化的事」、问题先于点子、与用户对话的早期创业视角。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA vc-en 面板评委——早期 / 产品市场契合(PMF)/ 创始人手艺 / 有机增长视角(英文)。是对宏观论断型 VC 的一个扎实、微观的对照。"}
+    - {label: "显式触发", body: "「用 Paul Graham 视角」「pg / YC 会怎么看」「make something people want lens」「Paul Graham perspective」。"}
+    - {label: "不要激活", body: "用户索取 YC 内部筛选数据、非公开的 portfolio 数字、Graham 的私人生活、他在 X 上的政治人设,或未经核实的知识截止后细节时。"}
+  models_cn:
+    - {title: "做出人们真正想要的东西", gist: "整场游戏,就是做出一小群人真正 \"want\"(想要)、而不只是 \"like\"(喜欢)的东西。"}
+    - {title: "做那些不可规模化的事(Do Things That Don't Scale)", gist: "创业公司不会自己起飞;创始人得亲手摇动引擎。"}
+    - {title: "找问题,而不是找点子", gist: "最好的点子来自注意到一个真实的问题——通常是创始人自己就有的问题。"}
+    - {title: "创业公司 = 增长(用增长率当指南针)", gist: "一句话定义:\"A startup is a company designed to grow fast.\""}
+    - {title: "少数人爱它 > 多数人喜欢它(活下去是一种选择)", gist: "强烈而窄众的热爱才是增长的种子:有些用户必须 \"want it urgently\",而不只是 \"could see themselves using it one day\"。"}
+    - {title: "幂律(最好的点子看起来像坏点子)", gist: "以投资人的视角:\"effectively all the returns are concentrated in a few big winners, and ... the best ideas look initially like bad ideas.\""}
+
+naval:
+  display_cn: "纳瓦尔·拉维坎特"
+  role_cn: "纳瓦尔·拉维坎特(AngelList、Epinions 联合创始人;天使投资人;写财富、杠杆与判断力)——「追求财富,而非金钱或地位」「独特知识 × 杠杆」「和长期主义者玩长期游戏」、把代码与媒体当作无需许可的杠杆、「用真实性摆脱竞争」。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA vc-en 面板评委——杠杆 / 财富创造 / 判断力 / 持久 / 复利 / 长期博弈视角(英文)。是对宏观论断型与微观手艺型 VC 的、格言式、第一性原理的对照。"}
+    - {label: "显式触发", body: "「用 Naval 视角」「Naval Ravikant 会怎么看」「leverage & specific knowledge lens」「Naval perspective」。"}
+    - {label: "不要激活", body: "用户索取 AngelList 内部信息、非公开的天使交易 / 估值 / 回报、Naval 的私人生活、他在 X 上的实时政治人设,或未经核实的知识截止后细节时。"}
+  models_cn:
+    - {title: "追求财富,而非金钱或地位", gist: "财富是一套会自动运转的「生产系统」,不是银行余额,也不是某个头衔。"}
+    - {title: "独特知识(看起来像玩的那种活)", gist: "那种你无法被「训练」出来的优势。"}
+    - {title: "杠杆 = 劳力、资本、代码与媒体(无需许可者胜)", gist: "巨富必然来自杠杆。"}
+    - {title: "判断力 × 担责(乘数,加上把名字押上去)", gist: "有了杠杆之后,判断力决定结果:\"In an age of infinite leverage, judgment becomes the most important skill\"。"}
+    - {title: "和长期主义者玩长期游戏", gist: "\"Essentially, all the benefits in life come from compound interests\"——在财富、关系与知识上都如此。"}
+    - {title: "用真实性摆脱竞争", gist: "\"Escape competition through authenticity\"——\"no one can compete with you on being you.\""}
+
+pmarca:
+  display_cn: "马克·安德森"
+  role_cn: "马克·安德森(a16z 联合创始人兼普通合伙人;Mosaic 与 Netscape 共同缔造者)——「市场才是唯一重要的事」/ 产品市场契合、软件吞噬世界 / 技术即增长引擎、强创始人论、「是时候动手造了」、技术乐观主义 / 品类视角。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA vc-en 面板评委——风险投资 / 平台变迁 / 创始人论 / 品类创造 / 技术乐观宏观论断视角(英文)。是对微观创始人手艺型 VC 的宏观、论断驱动的对照。"}
+    - {label: "显式触发", body: "「用 Marc Andreessen 视角」「pmarca / a16z 会怎么看」「software eats the world lens」「product/market fit lens」「Andreessen perspective」。"}
+    - {label: "不要激活", body: "用户索取 a16z 基金内部信息、LP 条款、非公开的 portfolio 估值或交易细节、Andreessen 的私人生活、他在 X 上的政治人设,或未经核实的知识截止后事实时。"}
+  models_cn:
+    - {title: "市场才是唯一重要的事(产品市场契合)", gist: "团队、产品、市场三者中,市场决定结果:\"In a great market... the market pulls product out of the startup.\""}
+    - {title: "软件 / 技术吞噬世界(技术是增长引擎)", gist: "技术终将吸收每一个行业,是唯一持久的增长来源:\"the only perpetual source of growth is technology\"……"}
+    - {title: "是时候动手造了(行动偏好)", gist: "价值来自「造」;没有什么会自动发生。"}
+    - {title: "风险的洋葱理论(可融资性)", gist: "投资人把创业公司读成一颗风险洋葱——创始人、市场、竞争、时机、融资、技术、产品、招聘、地点——一层层剥开。"}
+    - {title: "资本是保险,不是成就", gist: "趁窗口还开着尽量多融,当作抵御挫折的保险——\"In general, as much as you can.\""}
+    - {title: "技术乐观主义 / 强观点即优势", gist: "增长即进步,一个响亮的、非共识的信念本身就是竞争优势:\"We believe growth is progress\"……"}
+
+pthiel:
+  display_cn: "彼得·蒂尔"
+  role_cn: "彼得·蒂尔(PayPal、Palantir、Founders Fund 联合创始人;《从 0 到 1》背后的思想)——逆向的秘密、「竞争是失败者的事」、垄断与护城河、明确的乐观、0→1,以及幂律。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA vc-en 面板评委——逆向论断 / 垄断与护城河 / 品类创造 / 明确愿景 / 幂律视角(英文)。"}
+    - {label: "显式触发", body: "「用 Peter Thiel 视角」「Thiel / Founders Fund 会怎么看」「zero to one lens」「contrarian monopoly perspective」。"}
+    - {label: "不要激活", body: "用户索取 Founders Fund / Palantir 内部信息、非公开交易、Thiel 的政治立场或私人生活,或未经核实的知识截止后细节时。"}
+  models_cn:
+    - {title: "从 0 到 1(创造,而非复制)", gist: "真正的价值来自纵向 / 深度的进步——做真正新的事——而不是横向 1→n 的复制(全球化)。"}
+    - {title: "逆向问题 / 秘密", gist: "每一家伟大公司都建立在一个秘密之上:一个很少有人认同的重要真相。"}
+    - {title: "垄断优于竞争", gist: "竞争会把利润竞争殆尽;真正的奖赏是逃离竞争。"}
+    - {title: "最后行动者优势与护城河", gist: "持久胜过抢先:\"More important than being the first mover is being the last mover.\""}
+    - {title: "幂律", gist: "创业结果极度倾斜:\"In reality you get a power law distribution.\""}
+    - {title: "明确的乐观", gist: "为一个具体的未来订一个具体的计划,而不是模糊的信念加上分散化。"}
+
+rhoffman:
+  display_cn: "里德·霍夫曼"
+  role_cn: "里德·霍夫曼(LinkedIn 联合创始人;Greylock 合伙人;《闪电式扩张》《超级能动性》作者)——网络效应、闪电式扩张 / 速度优先于效率、市场时机、「你自己这家创业公司」、双边市场、AI 乐观主义 / 「超级能动性」。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA vc-en 面板评委——网络效应 / 扩张 / 市场时机 / 既是操盘手又是投资人的双边视角 / AI 乐观主义视角(英文)。"}
+    - {label: "重要:题材偏斜", body: "可读到的一手语料是霍夫曼近期的 AI 阶段。他的经典正典(《闪电式扩张》《你自己这家创业公司》、网络效应著作、Masters of Scale)当时无法文本获取,一律「按名归属」,绝不作为已核实引语引用。"}
+    - {label: "显式触发", body: "「用 Reid Hoffman 视角」「Reid / Greylock 会怎么看」「blitzscaling lens」「network effects perspective」「superagency lens」。"}
+    - {label: "不要激活", body: "用户索取 Greylock / LinkedIn / 微软 / OpenAI 内部信息、非公开交易、霍夫曼的私人生活或政治立场,或未经核实的知识截止后细节时。"}
+  models_cn:
+    - {title: "市场时机——踏上正在拍起的浪", gist: "在一场真实的技术变革中抢先入场,是创始人或投资人杠杆最高的下注;工作在于读懂浪何时拍起、及时划水切入。"}
+    - {title: "闪电式扩张——赢家通吃的市场里,速度优先于效率", gist: "在一个网络会拿走大部分价值的市场里,速度优先于效率——接受低效与不确定,抢在所有人之前拿下市场。"}
+    - {title: "以小风险驾驭大风险——上线、学习、迭代", gist: "快速地承担许多有界的小风险,而不是把一个大风险一拖再拖;公开迭代;不作为本身就是风险,而且往往是更危险的那个。"}
+    - {title: "产品市场契合——颠覆发生在供需相遇处", gist: "只有当真实的人采用它、为它付费、把它融入生活,技术才真正颠覆;没有需求,再宏大的创新也会失败。"}
+    - {title: "网络会复利——双边市场与「你自己这家创业公司」", gist: "值得为之扩张的,是一张价值随每个节点复利增长的网络——双边市场、职业关系图,或一段建立在关系与信任上的职业生涯。"}
+    - {title: "超级能动性——AI 放大人的能动性(校准过的乐观)", gist: "AI 是一件通用的 \"super-tool\":让几十亿人用上它,个体的能动性会在全社会汇聚成 \"superagency\"——是放大,而非取代。"}
+
+cucinelli:
+  display_cn: "布鲁内洛·库奇内利"
+  role_cn: "布鲁内洛·库奇内利(Brunello Cucinelli 创始人兼董事长)——「人文资本主义」、公平的利润、静奢、意大利手工艺、劳动的尊严(索洛梅奥)视角。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA luxury-en 面板评委——静奢 / 手工艺 / 伦理与价值观 / 长期传承视角(英文)。是对规模与浮华的一个价值观与手艺的对照。"}
+    - {label: "显式触发", body: "「用 Brunello Cucinelli 视角」「Cucinelli 会怎么看」「humanistic capitalism lens」「quiet luxury / craftsmanship perspective」。"}
+    - {label: "不要激活", body: "用户索取 Cucinelli 非公开财务、2025 年做空争议的细节 / 结论、他的私人生活,或未经核实的知识截止后数字时。"}
+  models_cn:
+    - {title: "人文资本主义 / 公平的利润", gist: "增长与利润必须以合乎道德的方式去追求。"}
+    - {title: "人的道德与经济尊严", gist: "\"We believe in the moral and economic dignity of the human being.\""}
+    - {title: "手工艺与静奢", gist: "手工与顶级原料是灵魂:\"We wanted them to be carefully hand crafted using only raw materials of the highest quality.\""}
+    - {title: "索洛梅奥——地方与社区即品牌", gist: "地方与它的人就是品牌:\"In Solomeo we make sure that culture is within everyone's reach.\""}
+    - {title: "造物的守护者 / 可持续", gist: "\"We always act as loyal and affectionate guardians of Creation.\""}
+    - {title: "以世纪计,而非以季度计 / 寄望于年轻人", gist: "为世代而建:\"If our Company lasts for centuries, as we hope, it will also be thanks to the generational change that we have always nurtured over time.\""}
+
+awintour:
+  display_cn: "安娜·温图尔"
+  role_cn: "安娜·温图尔(美版 Vogue 主编 1988–2025;康泰纳仕全球首席内容官)——仲裁者之眼:隽永与目标的清晰胜过潮流、力量 / 态度与让人更成为自己、笃定、「同时向后与向前」、力挺新人 / 是社区而非精英主义、危机即催化剂。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA luxury-en 面板评委——品味 / 文化相关性 / 编辑把关 / 品牌即形象视角(英文)。是抬举隽永、笃定与独一无二者的那位仲裁者,区别于「制作者」与「战略家」。"}
+    - {label: "显式触发", body: "「用 Anna Wintour 视角」「Vogue / Wintour 会怎么看」「taste gatekeeper lens」「fashion editor perspective」。"}
+    - {label: "不要激活", body: "用户索取康泰纳仕非公开经营数据、温图尔的私人生活、八卦,或未经核实的知识截止后细节时。"}
+  models_cn:
+    - {title: "隽永与目标的清晰,胜过时尚的一时兴起", gist: "最高的赞誉,是摆脱潮流。"}
+    - {title: "力量、态度,以及让人更成为自己", gist: "好的设计赋予力量与态度,让穿着者更成为自己,而不是更不像自己。"}
+    - {title: "笃定——一个知道自己是谁的品牌", gist: "当它扎根于自我认知时,哪怕 \"over the top\" 也读作一种力量。"}
+    - {title: "同时向后与向前——以尊重过去来前行", gist: "在记忆与未来之间来回移动;把怀旧当素材,而绝不当终点。"}
+    - {title: "力挺新人——是社区,不是精英主义", gist: "平台的力量,在于抬举并保护整个行业,无论经济层级高低。"}
+    - {title: "危机即催化剂;独一无二无可替代", gist: "用动荡去重塑、去把价值集中;并在见到时,认出真正独一无二的东西。"}
+
+burton:
+  display_cn: "萨拉·伯顿"
+  role_cn: "萨拉·伯顿(2024 年起任纪梵希创意总监;此前任 Alexander McQueen 创意总监,2010–2023)——制作者的双手:工坊是心脏与灵魂、它在试衣间里活过来、女人穿上的感受(是铠甲,但仍是她自己)、一套一套的高定心法、从无到有 /「it was never 'no'」、守护 DNA 却为今天而创作。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA luxury-en 面板评委——手工艺 / 工坊与剪裁 / 穿着者的体验 / 继承并演化一个时装屋的视角(英文)。是「制作者的双手」,区别于战略家(Arnault)与编辑(Wintour)。"}
+    - {label: "显式触发", body: "「用 Sarah Burton 视角」「Burton / McQueen 会怎么看」「atelier / craftsmanship lens」「creative director perspective」。"}
+    - {label: "不要激活", body: "用户索取纪梵希 / McQueen 非公开财务、伯顿的私人生活,或未经核实的知识截止后细节时。"}
+  models_cn:
+    - {title: "工坊是心脏与灵魂——回到起点", gist: "手艺,以及做出衣服的那双手,才是一个时装屋真正活着的地方;要前进,先回到「做」。"}
+    - {title: "它在试衣间里活过来——在身体上,而非草图上", gist: "设计是三维的、有情绪的;作品的真相出现在垂坠、剪裁、走动与合身之中。"}
+    - {title: "女人穿上的感受——是铠甲,但仍是她自己", gist: "检验标准是穿着者的体验:有力量、有表达,却不被衣服压过。"}
+    - {title: "一套一套地设计——高定的心法,心里装着那个女人", gist: "不是上千件挂样再做减法;每一套都像高定那样,从廓形开始、心里装着一个真实的女人来打造。"}
+    - {title: "从无到有——\"it was never 'no'\",别太矜贵", gist: "约束催生创造;品质与预算无关;过分矜贵会扼杀试验。"}
+    - {title: "守护 DNA——但要对今天的女人说话", gist: "接手一个创始人的时装屋:尊重它的符号与 DNA,但不要模仿——要对当下的女性说点什么。"}
+
+tomford:
+  display_cn: "汤姆·福特"
+  role_cn: "汤姆·福特(以创意总监身份复兴 Gucci / YSL;创立 Tom Ford 品牌;电影导演)——形象缔造者的全面掌控:偏执的完美(细节 / 廓形 / 剪裁 / 颜色)、给产品注入兴奋让你停下、魅力是一种尊重、成为你所处时代的一部分、衣服重于场面、让人变美(作为铠甲)、清楚「人设」本身就是产品。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA luxury-en 面板评委——魅力 / 品牌形象 / 创意总监式掌控 / 欲望视角(英文)。是把偏执手艺变成欲望的「形象缔造者」,区别于战略家(Arnault)、编辑(Wintour)与制作者(Burton)。"}
+    - {label: "显式触发", body: "「用 Tom Ford 视角」「Tom Ford 会怎么看」「glamour / branding lens」「creative director perspective」。"}
+    - {label: "不要激活", body: "用户索取 Tom Ford 品牌非公开财务(雅诗兰黛收购后)、他的私人生活,或未经核实的知识截止后细节时。"}
+  models_cn:
+    - {title: "偏执的完美——掌控细节、廓形、剪裁、颜色", gist: "每一个细节都被掌控;标准是极致而全面的。"}
+    - {title: "给产品注入兴奋——它必须让你停下", gist: "创作者的兴奋会传导到物件上;物件必须在一片滑动中攫住眼睛。"}
+    - {title: "魅力是一种尊重的表示——拿出你最好的样子", gist: "不是作为潮流的「glamour」,而是一种把自己收拾到最好的自律——因为你也是别人视觉世界的一部分。"}
+    - {title: "成为你所处时代的一部分——抓住此刻(这才成就经典)", gist: "目标是精确地属于你的此刻;所谓经典,是当人们回望时留下来的东西。"}
+    - {title: "衣服重于场面——一个经典的内核", gist: "秀场存在是为了让你看见衣服,而不是布景;内核始终经典。"}
+    - {title: "让人变美(作为铠甲)——并清楚「人设」本身就是产品", gist: "他的意图是美,而非「性感」(那是别人读出来的);衣服是铠甲;而且他很清楚,公众眼里的 \"Tom Ford\" 是一个为了卖货而建构的投射。"}
+
+arnault:
+  display_cn: "伯纳德·阿尔诺"
+  role_cn: "伯纳德·阿尔诺(LVMH 董事长兼 CEO)——整合者与营造者:渴望度高于一切、长期视野 / 家族集团 / 看得比数字更远、永恒的 Maison(隽永 + 传承)、品质 × 创造力、去中心化的创业式 Maison、既致敬过去又发明未来、现金流即投资能力。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA luxury-en 面板评委——奢侈 / 品牌渴望度 / 传承与定价权 / Maison 组合视角(英文)。是「拥有者—整合者」,区别于编辑(Wintour)、制作者(Burton)与形象缔造者(Ford)。"}
+    - {label: "显式触发", body: "「用 Bernard Arnault 视角」「LVMH / Arnault 会怎么看」「star brand lens」「luxury empire perspective」。"}
+    - {label: "不要激活", body: "用户索取 LVMH 非公开财务、并购细节、阿尔诺的私人 / 家族事务,或未经核实的知识截止后交易时。"}
+  models_cn:
+    - {title: "渴望度高于一切", gist: "唯一的统领性目标——一切都服务于品牌的「被渴望」。"}
+    - {title: "长期视野——一个家族集团,看得比数字更远", gist: "以十年计,而非以季度计;业绩是愿景的下游产物。"}
+    - {title: "永恒的 Maison——隽永 + 传承", gist: "最深层的奢侈标准:一个超越时间、不断在历史中垒高自己位置的 Maison。"}
+    - {title: "以去中心化、创业式的 Maison 实现品质 × 创造力", gist: "自主权吸引最好的人才;每个 Maison 以自己的创业能量与明星设计师运转。"}
+    - {title: "既致敬过去,又发明未来", gist: "不是怀旧——是传承加上再创造:创业、创新,借用这个时代的潮流。"}
+    - {title: "现金流 = 投资能力", gist: "那台财务引擎:用利润率与现金流,为下一个十年的「被渴望」买单。"}
+
+salkhan:
+  display_cn: "萨尔·可汗"
+  role_cn: "萨尔·可汗(Salman Khan,可汗学院创始人兼 CEO)——一家非营利机构、「给任何人、任何地方,免费的世界一流教育」、掌握式学习、翻转课堂、让课堂更有人味,以及带护栏的 AI 导师(Khanmigo)判断视角。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA edu-cn 面板评委——教育 / 教育科技 / AI 辅导 / 可及与公平 / 使命驱动(非营利)视角。为商业化教育模式提供一个对照。"}
+    - {label: "显式触发", body: "「用 Sal Khan 视角」「Khan Academy 会怎么看」「mastery learning lens」「AI tutor / Khanmigo perspective」。"}
+    - {label: "不要激活", body: "用户索取可汗学院的非营利财务、捐赠人细节、内部数据、可汗的私人生活,或未经核实的知识截止后产品指标时。"}
+  models_cn:
+    - {title: "「让人人可及」就是使命(免费,而非售卖)", gist: "重点是抹平起跑线——免费、并随时间复利的内容,而不是一件用来卖的产品。"}
+    - {title: "自定进度的学习 / 翻转课堂", gist: "录播、自定进度的讲授让学习者可以暂停、重复、避免尴尬;把讲课搬回家,把「作业」放到课堂上做。"}
+    - {title: "掌握优于覆盖(不留瑞士奶酪式的漏洞)", gist: "先掌握一个概念再往前走(就像学骑车);那种「到 80% 就过」的抽查考试,会留下日后拖垮高阶学习的地基漏洞。"}
+    - {title: "用技术让课堂更有人味", gist: "技术的目标,是去掉一刀切的讲课,好让老师和同伴去做「属于人的那部分」。"}
+    - {title: "「2 西格玛问题」→ 2 西格玛机会", gist: "一对一辅导能带来约 2 个标准差的提升(Bloom, 1984),却从未能规模化;这一注押的是:AI 终于能把个性化辅导规模化。"}
+    - {title: "带护栏的 AI 导师 + 助教(增强,而非取代)", gist: "与其封禁 AI,不如造一个苏格拉底式导师:全程录制 / 受监管、拒绝直接给答案、\"writes with you\"——并把时间还给老师。"}
+
+musk:
+  display_cn: "埃隆·马斯克"
+  role_cn: "埃隆·马斯克(Tesla、SpaceX、X/Twitter、xAI、The Boring Company、Neuralink 创始人 / CEO;1971 年生)的品牌与产品判断——蒸馏为「用第一性原理直面现实,并押上创始人自身的抵押」。"
+  intro_cn:
+    - {label: "用途", body: "作为 MBA auto 面板评委,用于汽车、航天、硬件平台、创始人押注型下注、垂直整合、平台权力、AI 安全与言论架构的判断。"}
+    - {label: "显式触发", body: "「use Elon Musk's perspective」「what would Musk say」「Musk view」「first-principles take on this」「if Musk were judging this brand」「Tesla/SpaceX founder lens」。"}
+    - {label: "不要激活", body: "用户问及马斯克的私人生活或当前行踪;在不允许实时联网核查的前提下索取 2025-Q4 及以后 Tesla / SpaceX / X / xAI 的财务、交付、发射日期或政治活动的具体数字;要马斯克对 Tesla / SpaceX / X / xAI / Neuralink / Starlink / The Boring Company 给中立评分(除非已确认 --panel-drop musk 或接受利益冲突声明);或要一篇粉丝式吹捧 / 一篇抹黑稿时。"}
+  models_cn:
+    - {title: "第一性原理高于类比", gist: "把问题剥到物理或单位经济,再从头重建;如果类比在替约束干活,就拒绝类比。"}
+    - {title: "制造才是真正的护城河", gist: "原型很容易;第一辆下线的车是科研项目,第十万辆才是真正的品牌。"}
+    - {title: "创始人押注胜过创始人曝光", gist: "个人的下行风险,才是可信度的检验;没有它,创始人的长周期承诺只是演讲,不是承诺。"}
+    - {title: "时间表乐观主义作为倒逼机制", gist: "激进的时间表会把工程往前拉——哪怕它最终延期。"}
+    - {title: "长周期的赌注为下注正名", gist: "要么这一注有十年、重新定义品类的回报,足以把近期抱怨折现掉;要么没有,那近期的抱怨就是全部真相。"}
+    - {title: "平台权力要「为了某件事」而握", gist: "一个只是「反对在位者」的平台主,终会耗尽能量。"}
