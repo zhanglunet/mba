@@ -12,6 +12,7 @@
   quote_type: title
   url: https://finance.sina.com.cn/stock/t/2026-03-26/doc-inhshtfa2951092.shtml
   fetched_at: "2026-07-12T07:35:00Z"
+  consumed_by: v3
   lens_map: [leverage, signal]
   note: >-
     监管收紧(neg)与补贴战止血(pos)并存 —— v2 审计「被打成亏损」叙事的
@@ -45,6 +46,7 @@
   quote_type: title
   url: https://finance.sina.com.cn/stock/t/2026-06-01/doc-inhzxewp2350319.shtml
   fetched_at: "2026-07-12T07:35:00Z"
+  consumed_by: v3
   lens_map: [signal]
   note: >-
     v2 审计锚在 FY2025 亏损谷底;Q1 减亏是 v2 之后方向反转的第一个硬信号
@@ -61,5 +63,6 @@
   quote_type: title
   url: https://news.qq.com/rain/a/20260616A04KUO00
   fetched_at: "2026-07-12T07:35:00Z"
+  consumed_by: v3
   lens_map: [leverage, category]
   note: 下一主战场(即时零售)的开销预期 —— 减亏叙事的对冲面。日期以 URL 内嵌(20260616)自证。

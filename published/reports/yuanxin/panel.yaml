@@ -1,11 +1,17 @@
 panel: security-cn-global
 locked_at: 2026-07-12
-mba_version: 0.4.2
+mba_version: 0.4.3
 published_at: 2026-07-12
-version: v1
-score_total: 165
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 173
 score_max: 300
-score_normalized: 5.50
+score_normalized: 5.77
+reference:
+  version: v1
+  score_total: 165
+  score_normalized: 5.50
 overrides:
   add: []
   drop: []

@@ -150,15 +150,15 @@
       "brand_cn": "美团",
       "brand_en": "Meituan",
       "ticker": "3690.HK",
-      "version": "v2",
-      "audit_date": "2026-07-11",
+      "version": "v3",
+      "audit_date": "2026-07-12",
       "panel": "vc-cn",
       "score": {
-        "total": 168,
+        "total": 170,
         "max": 250,
-        "normalized": 6.72
+        "normalized": 6.8
       },
-      "tl_dr": "EVOLUTION v1→v2:美团让出\"MBA 审计史最高分\"（7.76→6.72，−1.04）。v1 把 Signal(8.4)/Leverage(8.0) 锚在 2023 旧口径（营收¥276B、~70% 份额、盈利转正），FY2025 年报直接证伪——由盈转亏净亏¥234亿、 营销占比冲 28.2%、淘宝闪购按 GTV 45.2% 反超美团 45.0%、¥7.46亿食安罚单。五评委齐降 Signal(↓2.8)、 Leverage(↓1.4)、Category(↓1.0)，Origin/Identity ↔。裁决 v1 朱啸虎-张磊之争： \"护城河没被攻破，是被打成了亏损——朱啸虎赢了这一回合，但没赢下整场。\"168/250 · 6.72/10。",
+      "tl_dr": "EVOLUTION v3:监管按停外卖大战 + 2026Q1 环比减亏 96 亿(净亏收窄至 68.27 亿,营收 +5.6%) 把 v2 的亏损谷底叙事翻回方向,但净亏仍在、即时零售又开烧。Signal 5.6→6.0 成唯一移动维度且 五人首次同分——回分的正是 v2 砍得最狠的无冲突空头朱啸虎/徐新(各 +1),两位★评委与雷军按兵 不动。总分 168→170(6.72→6.80,↑0.08):这一格是「方向」的价,扭亏的价留给 Q2。",
       "html_url": "/reports/meituan/",
       "pdf_url": null,
       "api_url": "/api/reports/meituan.json"
@@ -186,15 +186,15 @@
       "brand_cn": "亚信",
       "brand_en": "AsiaInfo",
       "ticker": "01675.HK / 688225.SH",
-      "version": "v1",
+      "version": "v2",
       "audit_date": "2026-07-12",
       "panel": "security-cn-global",
       "score": {
-        "total": 178,
+        "total": 173,
         "max": 300,
-        "normalized": 5.93
+        "normalized": 5.77
       },
-      "tl_dr": "把亚信科技(01675.HK)与亚信安全(688225.SH)作为统一「亚信」品牌评。最强资产是罕见厚重的起源—— 1993 年田溯宁/丁健创立、承建 ChinaNet(中国首个商业化互联网骨干网)、2000 年首家赴美上市中国高科技企业。 security-cn-global 6 评委:Origin(7.3)领跑、共识最高;最弱 Identity(4.7)——「亚信科技 vs 亚信安全」 双品牌割裂、B2B 圈外几乎隐形。当下张力:电信 BSS 核心收缩(2024 −15.8%、BSS −19.1%),田溯宁以 「亚信安全反向收购亚信科技」重聚「亚信帝国」(目标合并营收>100 亿、~1.5 万人)+ 押注 AI 大模型交付。 最大分歧:任正非 37/50(基础设施主权价值最高) vs 马斯克 21/50(收缩生意做反向重组=财务工程)。 178/300 · 5.93/10。",
+      "tl_dr": "EVOLUTION v2(watch 事件流驱动):补上 v1 调研窗漏掉的 P0 信号——亚信安全被中国移动子公司 禁入采购三年(起因约 60 万元项目),命脉客户关系这条护城河露出「许可证」底色,Leverage 6.0→5.2 除黄仁勋外全员下调。对冲面同样真实:2025 年报营收 63.02 亿(−5.2%,降幅收窄)、 智能数据运营 +34.1%、大模型交付六强、盈利预喜——Signal 均值持平但阵营分裂:黄仁勋唯一升分 (6→7),周鸿祎为信任降分(6→5)。总分 178→173(5.93→5.77,↓0.16)。",
       "html_url": "/reports/asiainfo/",
       "pdf_url": null,
       "api_url": "/api/reports/asiainfo.json"
@@ -204,15 +204,15 @@
       "brand_cn": "SpaceX",
       "brand_en": "SpaceX",
       "ticker": null,
-      "version": "v1",
+      "version": "v2",
       "audit_date": "2026-07-12",
       "panel": "vc-en",
       "score": {
-        "total": 215,
+        "total": 219,
         "max": 250,
-        "normalized": 8.6
+        "normalized": 8.76
       },
-      "tl_dr": "第一性原理 + 制造护城河的当代范本:可复用火箭(2025 年 165 次轨道发射)+ Starlink 现金飞轮 (2025 营收约 $118 亿、~900 万用户)。vc-en 5 评委:Origin(9.4)与 Category(9.2)近乎满分共识, 是 MBA 审计史分歧最小的样本之一(三维极差仅 1)。唯一裂缝 Identity(6.8):品牌与创始人马斯克 深度绑定,既是最强「创始人抵押」,也是最大稀释源(政治外溢 + key-man)。最大分歧:彼得·蒂尔△ 46/50(Founders Fund 为 SpaceX 早期投资方,披露;「不可复制的创始人就是护城河」)vs 里德·霍夫曼 40/50(「工程护城河 9 分,品牌治理 6 分」)。215/250 · 8.60/10(仅次爱马仕 8.64)。",
+      "tl_dr": "EVOLUTION v2:史上最大 IPO(募资约 750 亿美元、首日 +19% 市值约 2.1 万亿,NASDAQ:SPCX) 补上 v1 Signal 的唯一保留——估值信号未被公开市场验证。Signal 8.6→9.2(格雷厄姆/安德森/ 霍夫曼各 ↑1,纳瓦尔/蒂尔△按「定价不是现金流」持分不动);Identity 6.8→7.0,分歧升级为 「IPO 用治理稀释 key-man,还是给它装上实时计价器」。总分 215→219(8.60→8.76,↑0.16), 超过爱马仕(8.64)成为 MBA 审计史最高分。",
       "html_url": "/reports/spacex/",
       "pdf_url": null,
       "api_url": "/api/reports/spacex.json"
@@ -222,15 +222,15 @@
       "brand_cn": "垣信卫星",
       "brand_en": "Yuanxin Satellite / SpaceSail",
       "ticker": null,
-      "version": "v1",
+      "version": "v2",
       "audit_date": "2026-07-12",
       "panel": "security-cn-global",
       "score": {
-        "total": 165,
+        "total": 173,
         "max": 300,
-        "normalized": 5.5
+        "normalized": 5.77
       },
-      "tl_dr": "垣信卫星运营的「千帆星座」(G60星链 / SpaceSail)是中国低轨卫星互联网旗舰工程,对标 Starlink, 最终计划超 1.5 万颗星。2024-02 完成 67 亿元 A 轮(国家制造业转型升级基金领投,业内最大单轮), 2024-08 长六甲一箭 18 星首批组网,掌握全球前二 Ka 频段优先级,2025 估值超 400 亿。security-cn-global 6 评委:Leverage(6.5)领跑(频段 + 国家资本 + 主权必需),最弱 Identity(4.5)——品牌高度依赖 「国家队 / 对标 Starlink」外部锚点、消费者与国际几乎不可见。最大分歧:任正非 36/50(数字主权必争 基础设施)vs 马斯克△ 18/50(Starlink 创始人、直接竞对披露;「频段不等于在轨,差着两个数量级」)。 165/300 · 5.50/10。",
+      "tl_dr": "EVOLUTION v2:消费 watch 流全部 10 条事件——组网从里程碑变成节奏(第七批、长八甲一箭 20 星、在轨 238 颗、年度目标 324 颗),Signal 全员上调(4.8→5.8);手机直连十日内从试验星 到国内首例无改造存量手机 5G 语音视频通话,Category 6.0→6.3。但国产商业火箭运力短板被媒体 点名、商业化收入仍无披露,Leverage 重审后全员持平(6.5);任正非 9 vs 马斯克△ 4 的 Δ5 分歧 原样保留。总分 165→173(5.50→5.77,↑0.27)。",
       "html_url": "/reports/yuanxin/",
       "pdf_url": null,
       "api_url": "/api/reports/yuanxin.json"
