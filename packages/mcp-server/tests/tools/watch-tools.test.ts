@@ -111,19 +111,27 @@ describe('evaluateTrigger', () => {
     expect(r.rules_hit[0]).toContain('R1');
   });
 
-  it('R2: two P1 hit, one P1 does not', () => {
-    expect(evaluateTrigger([ev('2026-07-01', 'P1')], { asOf: '2026-07-10' }).hit).toBe(false);
+  it('R2: three P1 hit, two P1 do not (2026-07-12 校准)', () => {
     expect(
       evaluateTrigger([ev('2026-07-01', 'P1'), ev('2026-07-02', 'P1')], { asOf: '2026-07-10' }).hit,
+    ).toBe(false);
+    expect(
+      evaluateTrigger(
+        [ev('2026-07-01', 'P1'), ev('2026-07-02', 'P1'), ev('2026-07-03', 'P1')],
+        { asOf: '2026-07-10' },
+      ).hit,
     ).toBe(true);
   });
 
-  it('R3: weighted P1 + 6×P2 = 5 hits', () => {
-    const events = [ev('2026-07-01', 'P1'), ...Array.from({ length: 6 }, (_, i) =>
-      ev(`2026-07-0${i + 2}`, 'P2'))];
-    const r = evaluateTrigger(events, { asOf: '2026-07-10' });
-    expect(r.weighted).toBe(5);
+  it('R3: weighted 2×P1 + 4×P2 = 6 hits, P1 + 6×P2 = 5 does not (校准后)', () => {
+    const hit = [ev('2026-07-01', 'P1'), ev('2026-07-02', 'P1'), ...Array.from({ length: 4 }, (_, i) =>
+      ev(`2026-07-0${i + 3}`, 'P2'))];
+    const r = evaluateTrigger(hit, { asOf: '2026-07-10' });
+    expect(r.weighted).toBe(6);
     expect(r.hit).toBe(true);
+    const miss = [ev('2026-07-01', 'P1'), ...Array.from({ length: 6 }, (_, i) =>
+      ev(`2026-07-0${i + 2}`, 'P2'))];
+    expect(evaluateTrigger(miss, { asOf: '2026-07-10' }).hit).toBe(false);
   });
 
   it('events outside the rolling window are ignored (edge day counts)', () => {

@@ -5,8 +5,11 @@ evaluate_triggers.py — Brand Watch 触发规则**运行时**评估器(W7,docs/
 
 规则(滚动 30 天窗口内,三条任一命中 → 建议重审):
   R1  P0 ≥ 1
-  R2  P1 ≥ 2
-  R3  加权计数 4×P0 + 2×P1 + 0.5×P2 ≥ 5
+  R2  P1 ≥ 3
+  R3  加权计数 4×P0 + 2×P1 + 0.5×P2 ≥ 6
+
+(2026-07-12 校准:原 R2 P1≥2 / R3 ≥5 在 n=5 回测中精确率 1/5;收紧后压掉两个
+ 最差误报且不丢真阳性,回测精确率 1/3。记录见 docs/16 §8.3。)
 
 与首页徽章(build_home_cards.py)的分工——两者口径**故意不同**,docs/16 §6.2 记录在案:
   - 徽章是**生成物**,必须确定性(--check 漂移 gate),所以数「未消费」、不看日期窗;
@@ -41,7 +44,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 WATCH_DIR = os.path.join(ROOT, "watch")
 
 WEIGHTS = {"P0": 4.0, "P1": 2.0, "P2": 0.5, "P3": 0.0}
-WEIGHTED_THRESHOLD = 5.0
+WEIGHTED_THRESHOLD = 6.0
 
 
 def as_date(v):
@@ -76,8 +79,8 @@ def evaluate(events, as_of, window_days=30, include_consumed=False):
     rules_hit = []
     if counts["P0"] >= 1:
         rules_hit.append("R1:P0≥1")
-    if counts["P1"] >= 2:
-        rules_hit.append("R2:P1≥2")
+    if counts["P1"] >= 3:
+        rules_hit.append("R2:P1≥3")
     if weighted >= WEIGHTED_THRESHOLD:
         rules_hit.append(f"R3:加权{weighted:g}≥{WEIGHTED_THRESHOLD:g}")
     return {
@@ -131,7 +134,7 @@ def main(argv):
 
     scope = "含已消费" if args.include_consumed else "仅未消费"
     print(f"触发规则评估 · 基准日 {as_of} · 窗口 {args.window_days} 天 · {scope}"
-          f"(规则:P0≥1 / P1≥2 / 加权 4·2·0.5 ≥5)")
+          f"(规则:P0≥1 / P1≥3 / 加权 4·2·0.5 ≥6)")
     print("-" * 72)
     hits = 0
     for slug, r in sorted(results.items()):
@@ -161,8 +164,10 @@ def selftest():
         ("空事件不命中", [], False, {}),
         ("窗口内 1×P0 命中 R1", [ev(5, "P0")], True, {}),
         ("窗口内 1×P1 不命中", [ev(5, "P1")], False, {}),
-        ("窗口内 2×P1 命中 R2", [ev(5, "P1"), ev(9, "P1")], True, {}),
-        ("P1+6×P2 加权 5.0 命中 R3", [ev(3, "P1")] + [ev(i + 4, "P2") for i in range(6)], True, {}),
+        ("窗口内 2×P1 不再命中(校准后)", [ev(5, "P1"), ev(9, "P1")], False, {}),
+        ("窗口内 3×P1 命中 R2", [ev(5, "P1"), ev(9, "P1"), ev(11, "P1")], True, {}),
+        ("2×P1+4×P2 加权 6.0 命中 R3", [ev(3, "P1"), ev(4, "P1")] + [ev(i + 5, "P2") for i in range(4)], True, {}),
+        ("P1+6×P2 加权 5.0 不再命中(校准后)", [ev(3, "P1")] + [ev(i + 4, "P2") for i in range(6)], False, {}),
         ("5×P2 加权 2.5 不命中", [ev(i + 1, "P2") for i in range(5)], False, {}),
         ("P0 在窗口外(31 天前)不命中", [ev(31, "P0")], False, {}),
         ("P0 恰在窗口沿(30 天前)命中", [ev(30, "P0")], True, {}),

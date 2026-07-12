@@ -118,8 +118,9 @@ def load_watch_pending():
             continue
         p0 = sum(1 for e in events if isinstance(e, dict) and e.get("severity") == "P0" and not e.get("consumed_by"))
         p1 = sum(1 for e in events if isinstance(e, dict) and e.get("severity") == "P1" and not e.get("consumed_by"))
+        p2 = sum(1 for e in events if isinstance(e, dict) and e.get("severity") == "P2" and not e.get("consumed_by"))
         if p0 or p1:
-            pending[slug] = (p0, p1)
+            pending[slug] = (p0, p1, p2)
     return pending
 
 
@@ -128,13 +129,16 @@ def render_watch_line(slug, pending):
     P2/P3 永不上卡(docs/15 §5.2);链接浮于拉伸链接之上(.watch-line z-index)。"""
     if slug not in pending:
         return ""
-    p0, p1 = pending[slug]
+    p0, p1, p2 = pending[slug]
     chips = ""
     if p0:
         chips += f'<span class="wchip wchip-p0">P0×{p0}</span>'
     if p1:
         chips += f'<span class="wchip wchip-p1">P1×{p1}</span>'
-    rec = '<span class="wchip wchip-rec">建议重审</span>' if (p0 >= 1 or p1 >= 2) else ""
+    # 触发规则(2026-07-12 校准,docs/16 §8.3):P0≥1 / P1≥3 / 加权 4·2·0.5 ≥6。
+    # P2 只参与加权、不上卡(docs/15 §5.2)。
+    hit = p0 >= 1 or p1 >= 3 or (4 * p0 + 2 * p1 + 0.5 * p2) >= 6
+    rec = '<span class="wchip wchip-rec">建议重审</span>' if hit else ""
     return (f'\n        <div class="watch-line"><span class="wlabel">舆情待审</span>{chips}{rec}'
             f'<a href="/watch/{slug}/">信号 →</a></div>')
 

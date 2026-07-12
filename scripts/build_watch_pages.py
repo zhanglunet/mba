@@ -9,7 +9,8 @@ site/watch/<slug>/index.html(W5)与全品牌舆情总览页 site/watch/index.htm
   同一模式:generated at deploy,不入库)。本地跑一次即可预览。
 - 事件按日期倒序;P0/P1 高亮;`consumed_by: vN` 的事件标「已入 vN 审计」;
   每条直链原文(反捏造:页面上所有事实都可一键回源)。
-- 顶部汇总「待审信号」(未消费 P0/P1)与触发规则评估(P0≥1 或 P1≥2 → 建议重审)。
+- 顶部汇总「待审信号」(未消费 P0/P1)与触发规则评估(2026-07-12 校准:P0≥1 /
+  P1≥3 / 加权 4·2·0.5 ≥6 → 建议重审)。
 - 总览页对 13 个监控品牌逐一列:事件数 / 待审 P0/P1 / 双口径触发状态(欠账 + 30 天窗;
   窗口口径按**生成时**评估——本页是 deploy 产物、不入库,无 --check 确定性约束)/
   未开采品牌诚实标注。
@@ -82,7 +83,8 @@ def render_page(slug, brand_name, events):
     events = sorted(events, key=lambda e: fmt_date(e.get("date")), reverse=True)
     p0 = sum(1 for e in events if e.get("severity") == "P0" and not e.get("consumed_by"))
     p1 = sum(1 for e in events if e.get("severity") == "P1" and not e.get("consumed_by"))
-    rec = (p0 >= 1) or (p1 >= 2)
+    p2 = sum(1 for e in events if e.get("severity") == "P2" and not e.get("consumed_by"))
+    rec = (p0 >= 1) or (p1 >= 3) or (4 * p0 + 2 * p1 + 0.5 * p2 >= 6)  # 2026-07-12 校准
     rec_html = ('<span class="wchip wchip-rec">触发规则命中 · 建议重审</span>' if rec
                 else '<span class="wchip wchip-ok">未触发重审建议</span>')
     body = "\n\n".join(render_event(e) for e in events)
@@ -184,8 +186,10 @@ def render_brand_row(slug, name, dims_on, events, as_of):
 
     p0 = sum(1 for e in events if e.get("severity") == "P0" and not e.get("consumed_by"))
     p1 = sum(1 for e in events if e.get("severity") == "P1" and not e.get("consumed_by"))
+    p2 = sum(1 for e in events if e.get("severity") == "P2" and not e.get("consumed_by"))
     consumed = sum(1 for e in events if e.get("consumed_by"))
-    backlog_hit = (p0 >= 1) or (p1 >= 2)  # 欠账口径 == 首页徽章(build_home_cards)
+    # 欠账口径 == 首页徽章(build_home_cards);2026-07-12 校准:P0≥1 / P1≥3 / 加权≥6
+    backlog_hit = (p0 >= 1) or (p1 >= 3) or (4 * p0 + 2 * p1 + 0.5 * p2 >= 6)
     win = evaluate(events, as_of, 30, False)  # 30 天窗口径(W7 评估器)
 
     chips = []
@@ -214,9 +218,12 @@ def render_overview(rows_meta, as_of):
     """rows_meta: [(slug, name, dims_on, events|None)],已按亮灯→有事件→未开采排序。"""
     mined = [r for r in rows_meta if r[3] is not None]
     total_events = sum(len(r[3]) for r in mined)
-    lit = sum(1 for r in mined
-              if sum(1 for e in r[3] if e.get("severity") == "P0" and not e.get("consumed_by")) >= 1
-              or sum(1 for e in r[3] if e.get("severity") == "P1" and not e.get("consumed_by")) >= 2)
+    def _hit(evts):
+        p0 = sum(1 for e in evts if e.get("severity") == "P0" and not e.get("consumed_by"))
+        p1 = sum(1 for e in evts if e.get("severity") == "P1" and not e.get("consumed_by"))
+        p2 = sum(1 for e in evts if e.get("severity") == "P2" and not e.get("consumed_by"))
+        return p0 >= 1 or p1 >= 3 or (4 * p0 + 2 * p1 + 0.5 * p2 >= 6)
+    lit = sum(1 for r in mined if _hit(r[3]))
     body = "\n\n".join(render_brand_row(*r, as_of) for r in rows_meta)
     return f'''<!doctype html>
 <html lang="zh-CN">
@@ -293,8 +300,8 @@ def render_overview(rows_meta, as_of):
 {body}
 
   <footer>
-    「建议重审」为欠账口径(未消费 P0≥1 或 P1≥2,与首页徽章一致);「窗口命中」为 30 天滚动窗
-    口径(P0≥1 / P1≥2 / 加权 4·2·0.5 ≥5,生成时评估)——窗口答"最近热度",欠账答"待消化",
+    「建议重审」为欠账口径(未消费 P0≥1 / P1≥3 / 加权 4·2·0.5 ≥6,与首页徽章一致,
+    2026-07-12 校准);「窗口命中」为同规则的 30 天滚动窗口径(生成时评估)——窗口答"最近热度",欠账答"待消化",
     两口径互补(docs/16 §8.1)。方向 / 分级为 AI 模型判断,事实字段(日期 / 引用 / 链接)均可溯源。
     © 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai" style="color:var(--ink);">marsdata.ai</a>
   </footer>
@@ -335,7 +342,8 @@ def main():
         else:
             p0 = sum(1 for e in ev if e.get("severity") == "P0" and not e.get("consumed_by"))
             p1 = sum(1 for e in ev if e.get("severity") == "P1" and not e.get("consumed_by"))
-            group = 0 if (p0 >= 1 or p1 >= 2) else 1
+            p2 = sum(1 for e in ev if e.get("severity") == "P2" and not e.get("consumed_by"))
+            group = 0 if (p0 >= 1 or p1 >= 3 or 4 * p0 + 2 * p1 + 0.5 * p2 >= 6) else 1
         rows.append((group, (slug, names[slug], dims_on, ev)))
     rows = [r for _, r in sorted(rows, key=lambda t: t[0])]
 
