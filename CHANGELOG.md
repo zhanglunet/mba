@@ -4,6 +4,29 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
+## v0.4.3 — 2026-07-12
+
+**Brand Watch(舆情监控)整条链路落地**(docs/15 PRD · docs/16 过程记录,W1→W7):
+信号采集与审计评分严格分离——watch **只建议、永不改分**。
+
+### Added
+- **数据层 + 硬 gate(W1)** — `watch/matrix.yaml`(13 品牌 × W1-W9 适用性矩阵)+
+  `watch/<slug>/events.yaml`(事件 schema:逐字 quote ≤100 字、URL 自证日期、判断字段
+  恒标 `model-judged`)+ `scripts/watch-tools/validate_watch.py`(静态校验,接
+  panel-validation CI,`--selftest` 13 组断言)。
+- **试点与滚动采集(W2/W3/W6)** — 源可达性逐源验证;5 品牌 39 条可溯源事件
+  (亚信/奇安信/垣信/SpaceX/美团);CCR Routine 每周一自动增量周扫。
+- **`--watch` 进 skill + EVOLUTION 消费(W4)** — `/mba <brand> --watch` 单次扫描;
+  EVOLUTION Phase 2 先消费事件流再补扫(`consumed_by: vN` 回标);验收:奇安信
+  v1→v2 全程由 watch 事件流驱动。
+- **首页徽章 + 时间线页(W5)** — 未消费 P0/P1 徽章(漂移 gate 内)+
+  `/watch/<slug>/` 事件时间线页(deploy 时生成)。
+- **触发与联动(W7)** — `scripts/watch-tools/evaluate_triggers.py` 运行时评估器
+  (30 天滚动窗:P0≥1 / P1≥2 / 加权 4·2·0.5 ≥5,`--selftest` 12 组断言);MCP 新增
+  `get_watch_events` / `record_watch_event` 两工具(录入门槛 = validate_watch 的 TS
+  镜像;P0 或触发命中经既有 `subscribe_brand` 订阅链路下发重审建议)。MCP server
+  现有 **16 tools**(19 new tests; 220 total)。
+
 ## v0.4.2 — 2026-07-07
 
 Real-data research + audit recovery, on top of v0.4.1. Two additions that make

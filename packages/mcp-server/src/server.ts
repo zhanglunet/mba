@@ -22,12 +22,16 @@ import { unsubscribeBrand } from './tools/unsubscribe-brand.js';
 import { getDeltaReport } from './tools/get-delta-report.js';
 import { listPanels } from './tools/list-panels.js';
 import { getBrandTrend } from './tools/get-brand-trend.js';
+import { getWatchEvents } from './tools/get-watch-events.js';
+import { recordWatchEvent } from './tools/record-watch-event.js';
+import { WatchStore } from './watch/store.js';
 import { SERVER_VERSION } from './version.js';
 import type { ServerConfig } from './types.js';
 
 export function buildConfig(): ServerConfig {
   return {
     store_dir: process.env['MBA_STORE_DIR'] ?? join(homedir(), '.mba'),
+    watch_dir: process.env['MBA_WATCH_DIR'] ?? join(process.cwd(), 'watch'),
     max_parallel: Number(process.env['MBA_MAX_PARALLEL'] ?? 5),
     max_concurrent_audits: Number(process.env['MBA_MAX_CONCURRENT_AUDITS'] ?? 3),
     max_tokens_per_audit_input: Number(process.env['MBA_MAX_TOKENS_INPUT'] ?? 1_500_000),
@@ -52,6 +56,7 @@ export function createServer(): McpServer {
   const log = makeLogger(config.log_level);
   const store = new FilesystemStore(config.store_dir);
   const subStore = new SubscriptionStore(config.store_dir);
+  const watchStore = new WatchStore(config.watch_dir);
   const sm = new StateMachine(store, log);
   const judgesDir = join(config.store_dir, 'judges');
 
@@ -429,6 +434,57 @@ export function createServer(): McpServer {
       return {
         content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
       };
+    },
+  );
+
+  // ── Tool: get_watch_events ───────────────────────────────────────────────
+  server.registerTool(
+    'get_watch_events',
+    {
+      description:
+        '读品牌舆情事件流（watch/<slug>/events.yaml），附 30 天滚动窗触发规则评估（P0≥1 / P1≥2 / 加权≥5 → 建议重审）。只读；watch 只建议、不改分。',
+      inputSchema: {
+        brand: z.string().min(1).describe('品牌 slug（watch/ 目录名）'),
+        since: z.string().optional().describe('只返回该日期（含）之后的事件（YYYY-MM-DD）'),
+        dim: z.enum(['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9']).optional(),
+        severity: z.enum(['P0', 'P1', 'P2', 'P3']).optional(),
+        unconsumed_only: z.boolean().optional().describe('只返回未被审计消费的事件'),
+      },
+    },
+    async (input) => {
+      const result = await getWatchEvents(input, watchStore);
+      return { content: [{ type: 'text', text: JSON.stringify(result, null, 2) }] };
+    },
+  );
+
+  // ── Tool: record_watch_event ─────────────────────────────────────────────
+  server.registerTool(
+    'record_watch_event',
+    {
+      description:
+        '录入一条舆情事件（反捏造门槛与 validate_watch 同套：date/quote/url 可溯源、quote 逐字 ≤100 字、判断字段恒标 model-judged）。P0 或触发规则命中时经 subscribe_brand 订阅链路下发重审建议。只录信号，永不改分。',
+      inputSchema: {
+        brand: z.string().min(1).describe('品牌 slug（须在 watch/matrix.yaml）'),
+        event: z.object({
+          date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).describe('事件日期（URL 自证或原文核对）'),
+          dim: z.enum(['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9']),
+          severity: z.enum(['P0', 'P1', 'P2', 'P3']),
+          direction: z.enum(['pos', 'neg', 'neutral', 'mixed']),
+          title: z.string().min(1),
+          quote: z.string().min(1).max(100).describe('原文逐字引用（≤100 字）'),
+          quote_type: z.enum(['title', 'body']),
+          url: z.string().url().describe('原文链接（http(s)）'),
+          fetched_at: z.string().describe('抓取时间 ISO UTC（YYYY-MM-DDTHH:MM[:SS]Z）'),
+          lens_map: z
+            .array(z.enum(['origin', 'category', 'leverage', 'identity', 'signal']))
+            .min(1),
+          note: z.string().optional(),
+        }),
+      },
+    },
+    async (input) => {
+      const result = await recordWatchEvent(input, watchStore, subStore, log);
+      return { content: [{ type: 'text', text: JSON.stringify(result, null, 2) }] };
     },
   );
 

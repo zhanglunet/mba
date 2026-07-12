@@ -286,9 +286,10 @@ Five independent capabilities, used together:
   (`quote_type: title|body`); aggregator hits are leads only, trace to the statutory notice before
   recording; ③ append events to `watch/<brand-slug>/events.yaml`(id `<date>-<slug>-NNN`, judgment
   fields marked `model-judged`); ④ run `python3 scripts/watch-tools/validate_watch.py` — must pass;
-  ⑤ evaluate the trigger rule: rolling 30-day window, `P0 ≥ 1` or `P1 ≥ 2` → print an EVOLUTION
-  recommendation. Watch events **never change scores** — scores only come from a judged re-audit
-  (docs/15 §5.3 boundary).
+  ⑤ evaluate the trigger rule via `python3 scripts/watch-tools/evaluate_triggers.py --brand <slug>`:
+  rolling 30-day window, `P0 ≥ 1` or `P1 ≥ 2` or weighted count (P0=4, P1=2, P2=0.5) ≥ 5 → print an
+  EVOLUTION recommendation. Watch events **never change scores** — scores only come from a judged
+  re-audit (docs/15 §5.3 boundary).
 - `--no-judges` — produce only the synthesis (skip the judge panel)
 - `--focus <dim1,dim2>` — restrict deep research to specific dimensions
 - `--panel <name>` — use a named panel from `${PANELS_DIR}/<name>.yaml` (highest precedence; overrides any prior brand binding). First-time runs write this to `reports/<brand-slug>/panel.yaml` and the brand stays bound until you pass `--panel` again. Field schema in `panels/README.md`.

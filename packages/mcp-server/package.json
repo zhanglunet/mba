@@ -2,7 +2,13 @@
   "name": "mba-mcp-server",
   "version": "0.1.0",
   "description": "MBA (Metric Brand Auditor) — MCP server. Run /mba audits from any MCP-capable agent.",
-  "keywords": ["mcp", "brand", "audit", "anthropic", "claude"],
+  "keywords": [
+    "mcp",
+    "brand",
+    "audit",
+    "anthropic",
+    "claude"
+  ],
   "author": "zhanglunet",
   "license": "MIT",
   "homepage": "https://mbabrand.com",
@@ -20,7 +26,11 @@
     "mba-mcp-server": "./dist/index.js",
     "mba-webhook-receiver": "./dist/receiver-main.js"
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -38,6 +48,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",
     "@modelcontextprotocol/sdk": "^1.12.1",
+    "yaml": "^2.9.0",
     "zod": "^3.25.64"
   },
   "devDependencies": {

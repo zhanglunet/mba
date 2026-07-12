@@ -156,7 +156,7 @@ pnpm build            # compile to dist/
 
 Tests include an end-to-end suite (`tests/integration/server.e2e.test.ts`) that
 drives the real `createServer()` over an in-memory MCP transport with an actual
-`Client`, verifying tool registration and request/response wiring for all 14 tools.
+`Client`, verifying tool registration and request/response wiring for all 16 tools.
 
 See [`docs/mcp-server-design.md`](../../docs/mcp-server-design.md) for full architecture.
 
