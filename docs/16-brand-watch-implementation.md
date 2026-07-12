@@ -1,6 +1,6 @@
 # 16 — 品牌舆情监控实现与过程记录(Brand Watch Implementation)
 
-> Status: **M1 进行中**(W1/W2 已落地,W3 起未动)· Last verified: 2026-07-12
+> Status: **M1 进行中**(W1/W2 ✅,W3 滚动中,W4 机制已落)· Last verified: 2026-07-12
 > 需求与维度设计见 **docs/15**(PRD);本文是**开发计划 + 实现细节 + 过程记录**,
 > 按 W 系列工作项组织,做一项记一项(格式对齐 docs/11 的进度日志纪律)。
 
@@ -15,7 +15,7 @@
 | **W1** | 数据层 + 硬 gate | `watch/matrix.yaml`(适用性矩阵单一真源)· `watch/<slug>/events.yaml` schema · `scripts/watch-tools/validate_watch.py`(静态校验 + `--selftest`)· 接入 panel-validation CI | 校验器全绿 + 自测有牙 + CI 跑 | ✅ 2026-07-12 |
 | **W2** | 源可达性验证 | PRD §4.2.3 清单逐源真 curl,🔍 → ✅/⚠️/❌,坑记录在案 | 每源有结论 + workaround 可复现 | ✅ 2026-07-12(见 §3) |
 | **W3** | 试点采集(持续) | 亚信 / 奇安信 / 垣信三品牌真实事件回填与增量 | **每品牌 ≥10 条**可溯源事件(M1 验收) | 🟡 首批 15 条(6/3/6),缺口见 §4.4 |
-| **W4** | 半自动扫描进 skill | `/mba <brand> --watch` 单次扫描 SOP 进 SKILL.md;EVOLUTION Phase 2 先消费 events.yaml 再补扫 | 一次重审的 delta 调研直接引用事件流 | ⬜(注意坑 #2:SKILL.md 改动连带重生成) |
+| **W4** | 半自动扫描进 skill | `/mba <brand> --watch` 单次扫描 SOP 进 SKILL.md;EVOLUTION Phase 2 先消费 events.yaml 再补扫 | 一次重审的 delta 调研直接引用事件流 | 🟡 机制已落(2026-07-12,见 §5);验收待下一次真实重审 |
 | **W5** | 首页徽章 + 时间线页(M2) | `build_home_cards.py` 读 watch 产出 P0/P1 徽章(进 REPORTS 生成区 + 漂移 gate)· `/watch/<slug>/` 时间线页 | 徽章与 events.yaml 零漂移 | ⬜ |
 | **W6** | 定期采集(M2) | CCR Routines / cron 周扫,按矩阵扫开启维度 | 13 品牌适用维度覆盖 ≥80% | ⬜ |
 | **W7** | 触发与联动(M3) | 触发规则评估器(30 天窗 P0≥1 / P1≥2)· MCP `get_watch_events` / `record_watch_event` · 订阅链路下发重审建议 | 触发建议精确率 ≥60% | ⬜ |
@@ -143,15 +143,36 @@ W3 工作项持续滚动,不阻塞 W4 起步。
 
 ---
 
-## 5. 下一步(按 §1 顺序)
+## 5. W4 实现记录(`--watch` 进 skill + EVOLUTION 消费,2026-07-12)
+
+改动全部在 `metric-brand-auditor/SKILL.md`(版本 0.4.2 → 0.4.3,front-matter 与
+panel 模板 `mba_version` 同步 bump,过版本对齐 gate):
+
+1. **`--watch` 参数**(Parameters 区 + front-matter trigger patterns):单次扫描、
+   不跑评委不出报告 —— 读矩阵 → 按开启维度搜集有据事件(收录门槛 = §4.1 SOP)→
+   追加 events.yaml → 跑 validate_watch 必须全绿 → 评估触发规则(30 天窗
+   P0≥1 / P1≥2 → 打印重审建议)。**watch 永不改分**的边界写进了参数说明本身。
+2. **Phase 1E 先消费 watch 流**:`last_update_date` 之后的 P0/P1 事件,其 `lens_map`
+   维度必须在 diff plan 标 YES 并引用事件 id;diff plan 模板新增
+   `Watch events since v{n}` 行。原则:不重复发现 watch 已记录的东西。
+3. **Phase 2E 贴入 prompt**:相关事件(id/date/title/quote/url)作为已核实线索贴给
+   sub-agent,先验证扩展、再泛搜 —— 有据事件优先级高于新发现。
+4. **配套**:docs/12 新增 §5.5(与维度差分探针的关系:有 P0/P1 事件的维度可跳过
+   探针直接标 CHANGED);坑 #2 已履行(两个派生产物重生成,personas 零漂移,
+   index.json 仅时间戳已回退)。
+
+**验收状态**:机制落地;「一次真实重审的 delta 调研直接引用事件流」待下一次品牌重审
+(候选:奇安信 —— watch 流已有 2025 年报 −12.87 亿 P1 事件,天然的 EVOLUTION 案例)。
+
+## 6. 下一步(按 §1 顺序)
 
 1. **W3 滚动**:用 b2b.10086.cn workaround 深挖亚信集采公示;回溯 §4.3 全部 leads;
-2. **W4**:`--watch` SOP 进 SKILL.md(⚠️ 坑 #2:连带 `build_agents_api.py` +
-   `generate-personas.py` 重生成)+ EVOLUTION Phase 2 消费 events.yaml;
+2. **W4 验收**:挑一个 watch 流已有 P0/P1 事件的品牌(首选奇安信)真跑一次
+   EVOLUTION,验证 delta 调研直接引用事件流;
 3. **W5**:徽章生成进 `build_home_cards.py`(P3 永不上卡,P0/P1 计数 + 30 天窗;
    沿用 REPORTS 生成区 + `--check` 漂移 gate 模式)。
 
-## 6. 单次扫描操作 SOP(M1 人肉/半自动版)
+## 7. 单次扫描操作 SOP(M1 人肉/半自动版)
 
 ```
 1. 选品牌,读 watch/matrix.yaml 确认开启维度

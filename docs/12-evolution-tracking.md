@@ -143,6 +143,25 @@ Notify
 
 **实现**：`src/orchestrator/phase-2-evolution.ts`（`runPhase2Evolution`）；`runner.ts` 在 `mode === 'evolution' && previous_audit_id` 时自动切到此路径；`llm/prompts.ts` 的 `changeProbeSystemPrompt` / `changeProbeUserPrompt`。测试：`tests/orchestrator/phase-2-evolution.test.ts`（5 例）。
 
+## 5.5 Brand Watch 事件流消费 ✅ skill 侧已接(2026-07-12 · W4)
+
+Brand Watch(docs/15 PRD / docs/16 实现)为每个已发布品牌维护连续事件流
+`watch/<slug>/events.yaml`(可溯源:URL + 逐字引用 + 时间戳;P0-P3 分级 + `lens_map`)。
+EVOLUTION 与它的接口(SKILL.md 已落):
+
+1. **Phase 1E 先消费**:读 `last_update_date` 之后的全部事件;P0/P1 事件的 `lens_map`
+   维度**必须**在 diff plan 标 YES,并引用事件 id 作证据(diff plan 模板新增
+   `Watch events since v{n}` 行)——不重复发现 watch 流已记录的东西;
+2. **Phase 2E 贴入 prompt**:与被标维度相关的事件(id/date/title/quote/url)作为
+   **已核实线索**贴给 sub-agent,指示"先从事件 URL 验证与扩展,再泛搜"——
+   有据事件优先级高于新发现;
+3. **边界**:watch 事件只作调研输入与重审触发建议,**绝不直接改分**(docs/15 §5.3);
+4. MCP 侧对应(`get_watch_events` / `record_watch_event` 与探针的
+   `evolution_context` 喂入)排在 W7,见 docs/16 §1。
+
+与 §5 维度差分的关系:watch 事件是"变化探针"之前更廉价、更有据的第一层证据——
+有 P0/P1 事件的维度可以跳过探针直接标 CHANGED。
+
 ---
 
 ## 6. MCP 工具扩展（P3-B 新增）
