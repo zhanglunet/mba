@@ -14,6 +14,8 @@ check_consistency.py — E2-6 跨文件一致性守卫。
   4. 工具数自洽:`packages/mcp-server/src/server.ts` 的 `registerTool(` 次数
      == `docs/13-mcp-quickstart.md` 的 "全部 N 个工具"。
   5. 维度口径:`site/api/methodology.json` 的 core 维度 == 7、总维度 == 9(7 核心 + 2 高级)。
+  6. 首页卡片对齐:`build_home_cards.py --check`(site/index.html 监控区 == reports-meta.yaml)。
+  7. panorama 名单:`site/panorama.html` 手写评委数组的唯一 slug 数 == perspectives 目录数(G1)。
 
 历史快照(published/reports/* 的 MBA Version 戳、dated handoff / changelog / 进度日志)
 **不在校验范围**——它们记录的是当时状态,不该被"对齐"。
@@ -114,6 +116,24 @@ def check_home_cards():
     lines = [x for x in (r.stdout or r.stderr or "").strip().splitlines() if x.strip()]
     return False, "首页卡片漂移 —— " + (lines[0] if lines else "跑 build_home_cards.py 重生成")
 
+def check_panorama_roster():
+    """panorama.html 的评委名单是手写内联数组(F('名','slug',…)/S('名','slug')),
+    不像 judge.html 那样走 /api/judges.json —— 曾因此静默漂移。此处锁:页面内
+    唯一 slug 数必须等于 perspectives 目录数(G1,docs/11 G 系列)。"""
+    html_src = rd("site/panorama.html")
+    if html_src is None:
+        return True, "site/panorama.html 不存在(跳过)"
+    slugs = set(re.findall(r"[FS]\('[^']*','([a-z0-9-]+)'", html_src))
+    persp = glob.glob(os.path.join(ROOT, "perspectives", "*-perspective"))
+    n_dir = len([d for d in persp if os.path.isfile(os.path.join(d, "SKILL.md"))])
+    if len(slugs) != n_dir:
+        missing = {os.path.basename(d).removesuffix("-perspective") for d in persp} - slugs
+        extra = slugs - {os.path.basename(d).removesuffix("-perspective") for d in persp}
+        return False, (f"panorama 评委名单漂移:页面 {len(slugs)} 人 != 目录 {n_dir} 人"
+                       + (f" · 页面缺 {sorted(missing)}" if missing else "")
+                       + (f" · 页面多 {sorted(extra)}" if extra else ""))
+    return True, f"panorama 评委名单自洽(页面唯一 slug == 目录数 == {n_dir})"
+
 CHECKS = [
     ("版本对齐", check_version_alignment),
     ("docs 索引完整", check_docs_index),
@@ -121,6 +141,7 @@ CHECKS = [
     ("工具数自洽", check_tool_count),
     ("维度口径", check_dimensions),
     ("首页卡片对齐", check_home_cards),
+    ("panorama 名单", check_panorama_roster),
 ]
 
 def main():

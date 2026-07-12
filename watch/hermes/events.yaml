@@ -1,0 +1,74 @@
+# watch/hermes/events.yaml — 爱马仕(Hermès)舆情事件流
+# schema 见 docs/16 §2;G3 冷启动首批(2026-07-12)。
+#
+# W5 财报走官方发布渠道 GlobeNewswire(Hermès 法定信息披露分发方,URL 内嵌日期,
+# 正文逐字 curl 核对;官方 PDF 同稿在 assets-finance.hermes.com)。W2(core)本批
+# 未采到达标的硬信号,诚实留空。
+
+- id: 2025-04-15-hermes-001
+  date: 2025-04-15
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 市值超越 LVMH,成为全球最有价值奢侈品公司(约 2436 亿欧元)
+  quote: "Hermès overtakes LVMH to become the world’s most valuable luxury company"
+  quote_type: title
+  url: https://www.cnn.com/2025/04/15/style/hermes-worlds-most-valuable-luxury-company
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, category, identity]
+  note: >-
+    LVMH Q1 销售 −3% 逊于预期触发换位;限量供给模式在行业下行期反而抗跌——
+    「被收购未遂者反超收购方」的标志性时刻。早于 6-12 个月窗口但属重大可溯源事件,
+    按 G3 规则收录。日期以 URL 内嵌(2025/04/15)自证。
+
+- id: 2025-07-10-hermes-002
+  date: 2025-07-10
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: Jane Birkin 原版 Birkin 包在苏富比巴黎以 €8.6M 成交,史上最贵手袋
+  quote: "Jane Birkin’s original namesake Hermès bag sells for record-breaking €8.6m at Sotheby’s Paris"
+  quote_type: title
+  url: https://www.theartnewspaper.com/2025/07/11/jane-birkins-original-namesake-hermes-bag-sells-for-recording-breaking-86m-at-sothebys-paris
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [origin, identity, signal]
+  note: >-
+    含佣 €8.58M(约 $10.1M),此前纪录($513,040,2021)被开拍首口价即碾过。
+    拍卖发生于 7/10(周四)——已 curl 正文核对「And on Thursday (10 July)」,
+    URL 内嵌日期 2025/07/11 为报道日。品牌起源实物变成拍卖行级文化资产,origin 镜头强信号。
+
+- id: 2026-02-12-hermes-003
+  date: 2026-02-12
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 2025 全年业绩:收入 €160 亿(固定汇率 +9%),经常性营业利润 €66 亿(利润率 41%),净利 €45 亿
+  quote: "The group’s consolidated revenue amounted to €16 billion in 2025, up 9% at constant exchange rates"
+  quote_type: body
+  url: https://www.globenewswire.com/news-release/2026/02/12/3236884/0/en/herm%C3%A8s-international-2025-full-year-results.html
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, leverage]
+  note: >-
+    皮具鞍具 +13% 领跑;第 24 家皮具工坊 2025-09 投产,Loupes(2026)/
+    Charleville-Mézières(2027)/Colombelles(2028)排产中——供给节制模式下的产能
+    渐进扩张。拟派息 €18.00/股。日期以 URL 内嵌(2026/02/12)自证,正文逐字 curl 核对。
+
+- id: 2026-04-15-hermes-004
+  date: 2026-04-15
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: 2026 Q1 收入 €41 亿:固定汇率 +6%,汇率拖累 −€2.9 亿致现汇口径 −1%
+  quote: "revenue amounted to €4.1 billion in the first quarter of 2026, up 6% at constant exchange rates"
+  quote_type: body
+  url: https://www.globenewswire.com/news-release/2026/04/15/3274129/0/en/herm%C3%A8s-international-first-quarter-2026-revenue.html
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal]
+  note: >-
+    美洲 +17.2% 领跑、中东 −5.9%(地缘因素);集团重申固定汇率下雄心增长目标。
+    增长健康但汇率逆风首次把现汇口径拖入负值,记 mixed。日期以 URL 内嵌
+    (2026/04/15)自证,正文逐字 curl 核对。

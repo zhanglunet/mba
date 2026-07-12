@@ -22,10 +22,11 @@ track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 - **首页徽章 + 时间线页(W5)** — 未消费 P0/P1 徽章(漂移 gate 内)+
   `/watch/<slug>/` 事件时间线页(deploy 时生成)。
 - **触发与联动(W7)** — `scripts/watch-tools/evaluate_triggers.py` 运行时评估器
-  (30 天滚动窗:P0≥1 / P1≥2 / 加权 4·2·0.5 ≥5,`--selftest` 12 组断言);MCP 新增
+  (30 天滚动窗:P0≥1 / P1≥3 / 加权 4·2·0.5 ≥6——同日按 5 单重审回测校准,
+  初版为 P1≥2 / ≥5,见 docs/16 §8.3;`--selftest` 14 组断言);MCP 新增
   `get_watch_events` / `record_watch_event` 两工具(录入门槛 = validate_watch 的 TS
   镜像;P0 或触发命中经既有 `subscribe_brand` 订阅链路下发重审建议)。MCP server
-  现有 **16 tools**(19 new tests; 220 total)。
+  现有 **16 tools**(19 new tests; 220 total),npm 发布为 `mba-mcp-server@0.2.0`。
 
 ## v0.4.2 — 2026-07-07
 

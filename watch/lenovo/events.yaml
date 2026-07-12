@@ -1,0 +1,55 @@
+# watch/lenovo/events.yaml — 联想舆情事件流
+# schema 见 docs/16 §2;G3 冷启动首批(2026-07-12)。
+
+- id: 2026-05-22-lenovo-001
+  date: 2026-05-22
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 2025/26 财年年报:营收首破 800 亿美元(831 亿,+20%),归母净利 19.12 亿美元(+38%),史上最佳财年
+  quote: "联想交出史上最好财报，未来两年目标跃升千亿美元规模企业"
+  quote_type: title
+  url: https://www.stcn.com/article/detail/3921911.html
+  fetched_at: "2026-07-12T12:45:00Z"
+  consumed_by: v2
+  lens_map: [signal, leverage]
+  note: >-
+    AI 相关业务营收 +105%、占集团总营收 33% —— 「PC 厂」向「混合式 AI」叙事切换的
+    财务硬证据。业绩发布日 2026-05-21(官方通稿 businesswire URL 内嵌 20260521 可核),
+    本条日期以 curl 证券时报原文页面时间(2026-05-22 10:11)核对。
+
+- id: 2026-06-18-lenovo-002
+  date: 2026-06-18
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 中标 2026 中央国家机关 6 月打印机批量集采,单包中标台数与金额居全标段首位
+  quote: "联想中标2026中央国家机关6月打印机批量集采项目 单包规模领跑全标段"
+  quote_type: title
+  url: https://www.doit.com.cn/itnews/819020793233477.html
+  fetched_at: "2026-07-12T12:45:00Z"
+  consumed_by: v2
+  lens_map: [leverage, signal]
+  note: >-
+    央采市场(W3 core)持续中标 = 政企渠道信任的硬信号;A4 激光黑白双面打印机品类
+    2340 台 / 超 147.8 万元为本次项目最大单一厂商。日期以 curl 原文页面日期
+    (2026年06月18日)核对。
+
+- id: 2026-07-12-lenovo-003
+  date: 2026-07-12
+  dim: W1
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: 媒体预览 BW 2026 大会:AI 全家桶集中亮相,8 月发布重磅新品
+  quote: "联想BW 2026看点拉满：全家桶一次看齐、8月重磅新品亮相"
+  quote_type: title
+  url: https://finance.sina.com.cn/tech/roll/2026-07-12/doc-inihpipy5944728.shtml
+  fetched_at: "2026-07-12T12:45:00Z"
+  consumed_by: v2
+  lens_map: [category, identity]
+  note: >-
+    发布会预热稿,信号弱(P3)但标记「混合式 AI 全家桶」的品牌议程节奏;
+    8 月新品发布是下一个观察点。日期以 URL 内嵌(2026-07-12)自证。

@@ -1,0 +1,58 @@
+# watch/tal-education/events.yaml — 好未来(TAL Education,NYSE:TAL)舆情事件流
+# schema 见 docs/16 §2;G3 冷启动首批(2026-07-12)。
+#
+# W5 财报走公司 IR 官网 ir.tal.com(PR Newswire 托管,URL 内嵌发布日期,正文
+# 逐字 curl 核对;sec.gov 6-K 同稿本环境 403,记于 note 供回溯)。财年止 2 月末。
+
+- id: 2025-10-30-tal-education-001
+  date: 2025-10-30
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: FY2026 Q2(止 2025-08-31):净收入 $861.4M(上年同期 $619.4M,+39%),经营利润 $96.1M
+  quote: "Net revenues were US$861.4 million"
+  quote_type: body
+  url: https://ir.tal.com/2025-10-30-TAL-Education-Group-Announces-Unaudited-Financial-Results-for-the-Second-Fiscal-Quarter-Ended-August-31,-2025-and-Issues-Notice-of-Annual-General-Meeting
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, leverage]
+  note: >-
+    经营利润 $96.1M(上年同期 $47.6M);截至 8/31 现金+短投 $3,248.8M。
+    「双减」后学习机+素质教育双引擎的高增长延续。日期以 URL 内嵌(2025-10-30)自证,
+    正文逐字 curl 核对。
+
+- id: 2026-01-29-tal-education-002
+  date: 2026-01-29
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: FY2026 Q3(止 2025-11-30):净收入 $770.2M(上年同期 $606.4M),归属净利 $130.6M(上年 $23.1M)
+  quote: "Net income attributable to TAL was US$130.6 million"
+  quote_type: body
+  url: https://ir.tal.com/2026-01-29-TAL-Education-Group-Announces-Unaudited-Financial-Results-for-the-Third-Fiscal-Quarter-Ended-November-30,-2025
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, leverage]
+  note: >-
+    经营利润 $93.1M(上年同期经营亏损 $17.4M),单季利润侧大幅转正;
+    截至 11/30 现金及等价物 $2,146.3M + 短投 $1,471.1M。日期以 URL 内嵌
+    (2026-01-29)自证,正文逐字 curl 核对。SEC 6-K 同稿:
+    sec.gov/Archives/edgar/data/1499620/000110465926007969/(本环境 403,待回溯)。
+
+- id: 2026-04-23-tal-education-003
+  date: 2026-04-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: FY2026 Q4 与全年:Q4 净收入 $802.4M(上年同期 $610.2M),经营利润 $72.5M(上年同期亏损 $16.0M)
+  quote: "Net revenues were US$802.4 million"
+  quote_type: body
+  url: https://ir.tal.com/2026-04-23-TAL-Education-Group-Announces-Unaudited-Financial-Results-for-the-Fourth-Fiscal-Quarter-and-the-Fiscal-Year-2026
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, leverage]
+  note: >-
+    全年口径完成「双减」重创后向规模化盈利的年度验证(Q4 摊薄后每 ADS 净利 $0.92);
+    年度财报事件记 P1(对齐 asiainfo/qianxin 年报先例)。日期以 URL 内嵌(2026-04-23)
+    自证,正文逐字 curl 核对。SEC 6-K 同稿:
+    sec.gov/Archives/edgar/data/0001499620/000110465926047673/(本环境 403,待回溯)。

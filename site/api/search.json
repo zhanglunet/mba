@@ -4,16 +4,16 @@
     {
       "type": "report",
       "slug": "lenovo",
-      "title": "联想集团 · v1",
-      "text": "全球 PC 龙头 + 子品牌资产撑起的渠道机器,财务面比亚信好得多但 AI 时代位置危机更严峻:亚信\"做不出来\",联想\"做出来了但红利归别人\"。 3 评委 R2 收敛到\"红利不归联想\"同一深层共识。Total mean 22/50。",
+      "title": "联想集团 · v2",
+      "text": "引擎升级全量重审(50 分制→250 分制)撞上联想「史上最好的一年」:FY25/26 营收 831 亿美元(+20%)、AI 收入 +105% 占 33%、央采标段第一,Signal 均值 6.2 成全卷 最强;但「AI PC / Hybrid AI / Claw」三个词仍是借的、Qira/天禧中外双名再添主语 分裂,Category 3.0 / Identity 3.2 仍是结构病。官方公告首次写 \"maximize value per token\"——v1「红利不归联想」共识出现第一个反向信号,傅盛认方向、李可佳不认成色。 119/250 · 4.76/10(v1: 22/50 = 4.40,归一化同尺度可比)。",
       "url": "/reports/lenovo/",
       "api_url": "/api/reports/lenovo.json"
     },
     {
       "type": "report",
       "slug": "chengshi-auto",
-      "title": "橙仕汽车 · v6",
-      "text": "末端配送生产力品牌:场景切口清晰,真实应用信号增强,但服务数据透明度 和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50, 综合分 6.2/10。",
+      "title": "橙仕汽车 · v7",
+      "text": "引擎升级全量重审(50 分制→250 分制):watch 回填坐实德国 1500 万欧元大单、 欧标认证与中远海运出海杠杆链,Origin/Category/Leverage 维持。但 2025-2026 公开信息近乎断流,唯一可核 2025 数据点是一条未回应的保修投诉——Signal 主驱动 降分,Identity 4.4 仍全卷最弱。归一化同尺度 6.20→6.04:场景是真的,品牌护城河 的证明逾期了。151/250 · 6.04/10。",
       "url": "/reports/chengshi-auto/",
       "api_url": "/api/reports/chengshi-auto.json"
     },

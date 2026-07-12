@@ -1,0 +1,89 @@
+# watch/anthropic/events.yaml — Anthropic 舆情事件流
+# schema 见 docs/16 §2;G3 冷启动首批(2026-07-12)。
+#
+# 注:anthropic.com 在本环境出口 allowlist 之外(curl 403 "Host not in allowlist"),
+# 官方 newsroom 稿(series-h / claude-fable-5-mythos-5 / fable-mythos-access)本批未能
+# 直接核对,一律改用 URL 内嵌日期的权威媒体稿(CNBC / TechCrunch / Fortune),
+# 标题逐字 curl 核对。官方稿 URL 记在 note 里,供后续出口放行后回溯。
+
+- id: 2026-05-28-anthropic-001
+  date: 2026-05-28
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: Series H 融资 650 亿美元、投后估值 9650 亿美元,超越 OpenAI 成最有价值 AI 初创(IPO 前最后一轮私募)
+  quote: "Anthropic tops OpenAI as most valuable AI startup, nears $1 trillion valuation in latest round"
+  quote_type: title
+  url: https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, leverage]
+  note: >-
+    Altimeter/Dragoneer/Greenoaks/红杉等共同领投,含超大规模云厂商此前承诺的 150 亿美元;
+    CNBC 称自 2 月 Series G 以来 run-rate 收入已破 470 亿美元。官方稿
+    anthropic.com/news/series-h(出口未放行,待回溯)。日期以 URL 内嵌(2026/05/28)自证。
+
+- id: 2026-06-09-anthropic-002
+  date: 2026-06-09
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 发布 Claude Fable 5——Mythos 级(高于 Opus)首个公开可用模型
+  quote: "Anthropic’s Claude Fable 5 is a version of Mythos the public can access today"
+  quote_type: title
+  url: https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [category, leverage, signal]
+  note: >-
+    Fable 5 为 Anthropic 第 5 代模型中面向公众的 Mythos 级版本;完整 Mythos 5 仅限
+    Project Glasswing 合作方。官方稿 anthropic.com/news/claude-fable-5-mythos-5
+    (出口未放行,待回溯)。日期以 URL 内嵌(2026/06/09)自证。
+
+- id: 2026-06-13-anthropic-003
+  date: 2026-06-13
+  dim: W4
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: 美国政府出口管制指令:发布仅 3 天后全球禁用 Fable 5 / Mythos 5
+  quote: "Anthropic disables Fable and Mythos AI models following U.S. government export ban"
+  quote_type: title
+  url: https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, leverage, category]
+  note: >-
+    商务部以国家安全/出口管制权限要求暂停一切外国国籍人员访问(含境内外),净效果 =
+    全球下线;Opus/Sonnet/Haiku 不受影响。指令于 6/12(美东)发出,本文 6/13 见报,
+    日期以 URL 内嵌(2026/06/13)自证。官方声明 anthropic.com/news/fable-mythos-access
+    (出口未放行,待回溯)。旗舰模型被监管叫停属重大监管事件,记 P0。
+
+- id: 2026-06-30-anthropic-004
+  date: 2026-06-30
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 美商务部解除出口管制,Fable 5 / Mythos 5 恢复(7/1 起全球重新部署)
+  quote: "Anthropic says Trump admin has lifted export controls on Claude Fable 5 and Mythos 5"
+  quote_type: title
+  url: https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, category]
+  note: >-
+    与 003 构成同一监管事件的闭环(暂停 18 天后解除);Fable 5 自 7/1 起带更新的
+    网络安全防护全球重新上线。日期以 URL 内嵌(2026/06/30)自证。
+
+- id: 2026-06-30-anthropic-005
+  date: 2026-06-30
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 发布 Claude Sonnet 5:近 Opus 智能、Sonnet 价位,成为免费/Pro 档默认模型
+  quote: "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents"
+  quote_type: title
+  url: https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [category, leverage]
+  note: 与出口管制解除同日发布,主打 agent 场景性价比。日期以 URL 内嵌(2026/06/30)自证。

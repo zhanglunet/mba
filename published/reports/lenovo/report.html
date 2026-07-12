@@ -1,660 +1,601 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>联想集团 Lenovo Group (0992.HK) — Brand Influence Review v1</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose' });
-</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>联想集团 Lenovo Group — Brand Influence Review v2 · MBA</title>
+<meta name="description" content="default panel EVOLUTION audit of Lenovo Group (联想集团 0992.HK). v1→v2 engine upgrade: 50-pt → 250-pt scale. 119/250 · 4.76/10 (v1: 22/50 = 4.40). Audit date: 2026-07-12." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
-  :root {
-    --c-bg: #fafaf9; --c-surface: #ffffff; --c-text: #1a1a1a; --c-muted: #64748b;
-    --c-border: #e5e7eb; --c-accent: #e87a3e; --c-navy: #1a3a5c;
-    --c-judge-fusheng: #d97706; --c-judge-jobs: #94a3b8; --c-judge-likejia: #dc2626;
-    --c-judge-wu-jundong: #16a34a; --c-judge-zhang-yiming: #1e293b;
-    --c-good: #16a34a; --c-warn: #eab308; --c-bad: #dc2626;
-    --c-cell-low: #fecaca; --c-cell-mid: #fef3c7; --c-cell-high: #bbf7d0;
-    --c-sigma-low: #e0e7ff; --c-sigma-mid: #c7d2fe; --c-sigma-high: #a5b4fc;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --c-bg: #0f172a; --c-surface: #1e293b; --c-text: #f1f5f9; --c-muted: #94a3b8; --c-border: #334155; --c-navy: #60a5fa; }
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--c-bg); color: var(--c-text); line-height: 1.65; }
-  .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
-  .hero { background: linear-gradient(135deg, var(--c-navy), #325b8c); color: #fff; padding: 3rem 1.5rem; border-bottom: 5px solid var(--c-accent); }
-  .hero h1 { margin: 0 0 0.25rem; font-size: 2.4rem; line-height: 1.2; }
-  .hero .subtitle { font-size: 1.1rem; color: #cbd5e1; margin-bottom: 1.5rem; }
-  .hero .badges { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.2rem; }
-  .badge { display: inline-block; padding: 0.3rem 0.7rem; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; font-size: 0.8rem; color: #fff; }
-  .badge.accent { background: var(--c-accent); border-color: var(--c-accent); font-weight: 600; }
-  .hero .tldr { background: rgba(255,255,255,0.1); border-left: 3px solid var(--c-accent); padding: 1rem 1.2rem; border-radius: 4px; font-size: 1rem; }
-  section { padding: 2.5rem 0; border-bottom: 1px solid var(--c-border); }
-  h2 { font-size: 1.6rem; color: var(--c-navy); margin: 0 0 1rem; }
-  h3 { font-size: 1.2rem; color: var(--c-navy); margin: 1.5rem 0 0.7rem; }
-  .lead { color: var(--c-muted); font-size: 0.95rem; margin-bottom: 1rem; }
-  .chart-wrap { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px; padding: 1.2rem; margin: 1rem 0; }
-  canvas { max-width: 100%; }
-  .heatmap { display: grid; grid-template-columns: 180px repeat(5, 1fr) 80px; gap: 4px; align-items: stretch; font-size: 0.9rem; margin-top: 0.8rem; }
-  .heatmap .hcell { padding: 0.55rem 0.4rem; text-align: center; border-radius: 4px; background: var(--c-surface); color: var(--c-text); display: flex; align-items: center; justify-content: center; }
-  .heatmap .hhead { background: var(--c-navy); color: #fff; font-weight: 600; }
-  .heatmap .hlens { background: var(--c-surface); color: var(--c-text); text-align: left; padding-left: 0.7rem; font-weight: 500; }
-  .heatmap .s-low { background: var(--c-cell-low); }
-  .heatmap .s-mid { background: var(--c-cell-mid); }
-  .heatmap .s-high { background: var(--c-cell-high); }
-  .heatmap .sigma-low { background: var(--c-sigma-low); }
-  .judges { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; }
-  .judge { background: var(--c-surface); border: 1px solid var(--c-border); border-top: 4px solid var(--c-navy); border-radius: 8px; padding: 1.2rem; }
-  .judge[data-j="fusheng"] { border-top-color: var(--c-judge-fusheng); }
-  .judge[data-j="jobs"] { border-top-color: var(--c-judge-jobs); }
-  .judge[data-j="likejia"] { border-top-color: var(--c-judge-likejia); }
-  .judge[data-j="wu-jundong"] { border-top-color: var(--c-judge-wu-jundong); }
-  .judge[data-j="zhang-yiming"] { border-top-color: var(--c-judge-zhang-yiming); }
-  .judge .head { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.7rem; }
-  .judge .portrait { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 3px solid var(--c-border); flex-shrink: 0; background: var(--c-bg); }
-  .judge[data-j="fusheng"] .portrait { border-color: var(--c-judge-fusheng); }
-  .judge[data-j="jobs"] .portrait { border-color: var(--c-judge-jobs); }
-  .judge[data-j="likejia"] .portrait { border-color: var(--c-judge-likejia); }
-  .judge[data-j="wu-jundong"] .portrait { border-color: var(--c-judge-wu-jundong); }
-  .judge[data-j="zhang-yiming"] .portrait { border-color: var(--c-judge-zhang-yiming); }
-  .judge .badge-emoji { font-size: 1rem; opacity: 0.7; margin-left: 0.3rem; }
-  .judge .meta .name { font-weight: 700; font-size: 1.1rem; color: var(--c-navy); }
-  .judge .meta .total { color: var(--c-muted); font-size: 0.85rem; }
-  .judge .verdict { font-style: italic; color: var(--c-text); margin: 0.6rem 0 0.8rem; line-height: 1.55; font-size: 0.95rem; }
-  .judge .quote { background: rgba(232,122,62,0.08); border-left: 3px solid var(--c-accent); padding: 0.6rem 0.9rem; font-size: 0.9rem; margin: 0.5rem 0; color: var(--c-text); }
-  .judge .gap { margin-top: 0.8rem; padding-top: 0.7rem; border-top: 1px dashed var(--c-border); font-size: 0.85rem; }
-  .judge .gap b { color: var(--c-accent); }
-  .judge .scores { display: flex; gap: 4px; margin-top: 0.7rem; flex-wrap: wrap; }
-  .judge .scores .s { flex: 1; min-width: 30px; padding: 0.3rem 0; text-align: center; border-radius: 4px; font-size: 0.75rem; font-weight: 600; background: var(--c-cell-mid); color: var(--c-text); }
-  .actions { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1rem; }
-  .action { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px; padding: 1rem 1.2rem; display: grid; grid-template-columns: 50px 1fr auto; gap: 1rem; align-items: start; }
-  .action .num { font-size: 1.6rem; font-weight: 700; color: var(--c-accent); line-height: 1; padding-top: 0.1rem; }
-  .action h4 { margin: 0 0 0.3rem; font-size: 1rem; color: var(--c-navy); }
-  .action p { margin: 0; font-size: 0.9rem; color: var(--c-text); }
-  .action .lev { padding: 0.25rem 0.6rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
-  .action .lev.high { background: var(--c-bad); color: #fff; }
-  .action .lev.med { background: var(--c-warn); color: var(--c-text); }
-  .action .lev.low { background: var(--c-good); color: #fff; }
-  .action .source { font-size: 0.75rem; color: var(--c-muted); margin-top: 0.3rem; }
-  .mermaid-wrap { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; overflow-x: auto; }
-  .mermaid { color: var(--c-text); }
-  details { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px; padding: 0.8rem 1.2rem; margin-top: 1rem; }
-  details summary { cursor: pointer; font-weight: 600; color: var(--c-navy); }
-  details ul { padding-left: 1.2rem; margin: 0.7rem 0 0; }
-  details li { margin-bottom: 0.4rem; font-size: 0.85rem; }
-  details a { color: var(--c-accent); }
-  footer { background: var(--c-surface); color: var(--c-muted); font-size: 0.85rem; padding: 2rem 1.5rem; text-align: center; border-top: 1px solid var(--c-border); }
-  @media print { body { background: #fff; color: #000; } .hero { background: #1a3a5c !important; -webkit-print-color-adjust: exact; } details[open] summary { display: none; } details { border: none; padding: 0; } details > * { display: block !important; } }
-  .disclaimer { background: rgba(220, 38, 38, 0.08); border-left: 4px solid #dc2626; padding: 0.85rem 1.1rem; margin: 1rem 0 1.5rem; border-radius: 4px; font-size: 0.88rem; color: var(--c-text); line-height: 1.55; }
-  .disclaimer strong { color: #dc2626; }
-  .gaps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin: 1rem 0; }
-  .gap-card { background: var(--c-surface); border: 1px solid var(--c-border); border-top: 3px solid var(--c-accent); border-radius: 8px; padding: 1rem; }
-  .gap-card h5 { margin: 0 0 0.4rem; font-size: 0.95rem; }
-  .gap-card p { margin: 0; font-size: 0.85rem; color: var(--c-muted); }
-  .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.7rem; margin: 1rem 0; }
-  .process-card { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 6px; padding: 0.7rem 0.9rem; font-size: 0.88rem; display: flex; align-items: center; gap: 0.6rem; }
-  .process-card .step { background: var(--c-navy); color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
-  .consensus-list, .dissent-list { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
-  .consensus-item { background: rgba(22,163,74,0.06); border-left: 3px solid #16a34a; padding: 0.7rem 1rem; border-radius: 4px; }
-  .dissent-item { background: rgba(220,38,38,0.05); border-left: 3px solid #dc2626; padding: 0.7rem 1rem; border-radius: 4px; }
-  .consensus-item h4, .dissent-item h4 { margin: 0 0 0.3rem; font-size: 0.95rem; color: var(--c-navy); }
-  .consensus-item p, .dissent-item p { margin: 0; font-size: 0.85rem; color: var(--c-text); line-height: 1.55; }
-  .duel { display: grid; grid-template-columns: 1fr 50px 1fr; gap: 0.6rem; margin: 1rem 0; align-items: stretch; }
-  .duel .side { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 6px; padding: 0.8rem; font-size: 0.88rem; }
-  .duel .side strong { display: block; margin-bottom: 0.4rem; color: var(--c-navy); font-size: 0.9rem; }
-  .duel .side blockquote { margin: 0; padding-left: 0.7rem; border-left: 2px solid var(--c-accent); font-style: italic; font-size: 0.85rem; color: var(--c-text); line-height: 1.5; }
-  .duel .vs { display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--c-accent); font-size: 1.05rem; }
-  .debate-cards { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1rem 0; }
-  @media (min-width: 760px) { .debate-cards { grid-template-columns: 1fr 1fr; } }
-  .debate-card { background: var(--c-surface); border: 1px solid var(--c-border); border-top: 3px solid var(--c-navy); border-radius: 8px; padding: 1rem 1.2rem; }
-  .debate-card[data-j="fusheng"] { border-top-color: var(--c-judge-fusheng); }
-  .debate-card[data-j="jobs"] { border-top-color: var(--c-judge-jobs); }
-  .debate-card[data-j="likejia"] { border-top-color: var(--c-judge-likejia); }
-  .debate-card[data-j="wu-jundong"] { border-top-color: var(--c-judge-wu-jundong); }
-  .debate-card[data-j="zhang-yiming"] { border-top-color: var(--c-judge-zhang-yiming); }
-  .debate-card .head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.7rem; font-weight: 700; color: var(--c-navy); font-size: 0.95rem; }
-  .debate-card .head img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid var(--c-border); }
-  .debate-card .turn { margin: 0.6rem 0; padding: 0.7rem 0.85rem; border-radius: 4px; font-size: 0.85rem; }
-  .debate-card .turn.disagree { background: rgba(220,38,38,0.06); border-left: 3px solid #dc2626; }
-  .debate-card .turn.agree { background: rgba(22,163,74,0.06); border-left: 3px solid #16a34a; }
-  .debate-card .tag { font-weight: 700; font-size: 0.8rem; display: block; margin-bottom: 0.4rem; }
-  .debate-card .turn.disagree .tag { color: #dc2626; }
-  .debate-card .turn.agree .tag { color: #16a34a; }
-  .debate-card .from { color: var(--c-muted); font-weight: 400; font-size: 0.78rem; margin-left: 0.3rem; }
-  .debate-card blockquote { margin: 0.3rem 0; padding-left: 0.7rem; border-left: 2px solid var(--c-border); font-style: italic; font-size: 0.82rem; color: var(--c-muted); line-height: 1.5; }
-  .debate-card .response { margin: 0.5rem 0 0; line-height: 1.6; color: var(--c-text); font-size: 0.88rem; }
-  .qc { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
-  .qc-title { text-align: center; font-weight: 700; color: var(--c-navy); margin: 0 0 1.2rem; font-size: 1rem; }
-  .qc-wrap { position: relative; max-width: 720px; margin: 0 auto; padding: 32px 90px; }
-  .qc-y-top, .qc-y-bot { position: absolute; left: 50%; transform: translateX(-50%); font-size: 0.8rem; color: var(--c-muted); white-space: nowrap; font-weight: 500; }
-  .qc-y-top { top: 4px; } .qc-y-bot { bottom: 4px; }
-  .qc-x-left, .qc-x-right { position: absolute; top: 50%; transform: translateY(-50%); font-size: 0.8rem; color: var(--c-muted); white-space: nowrap; font-weight: 500; }
-  .qc-x-left { left: 0; text-align: right; max-width: 88px; line-height: 1.3; }
-  .qc-x-right { right: 0; text-align: left; max-width: 88px; line-height: 1.3; }
-  .qc-grid { position: relative; width: 100%; padding-bottom: 60%; border: 1.5px solid #94a3b8; border-radius: 4px; background-color: rgba(0,0,0,0.015); background-image: linear-gradient(to right, transparent calc(50% - 0.5px), rgba(148,163,184,0.5) calc(50% - 0.5px), rgba(148,163,184,0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px)), linear-gradient(to bottom, transparent calc(50% - 0.5px), rgba(148,163,184,0.5) calc(50% - 0.5px), rgba(148,163,184,0.5) calc(50% + 0.5px), transparent calc(50% + 0.5px)); }
-  .qc-q { position: absolute; font-size: 0.72rem; color: var(--c-muted); padding: 4px 8px; opacity: 0.85; font-weight: 500; }
-  .qc-q.tl { top: 6px; left: 8px; }
-  .qc-q.tr { top: 6px; right: 8px; text-align: right; color: #16a34a; font-weight: 600; }
-  .qc-q.bl { bottom: 6px; left: 8px; }
-  .qc-q.br { bottom: 6px; right: 8px; text-align: right; }
-  .qc-pt { position: absolute; width: 11px; height: 11px; transform: translate(-50%, 50%); background: var(--c-accent); border-radius: 50%; box-shadow: 0 0 0 3px rgba(232,122,62,0.22); }
-  .qc-pt[data-k="ai"] { background: #dc2626; box-shadow: 0 0 0 4px rgba(220,38,38,0.28); width: 14px; height: 14px; }
-  .qc-pt-label { position: absolute; left: 14px; top: -8px; font-size: 0.78rem; color: var(--c-text); white-space: nowrap; background: rgba(255,255,255,0.85); padding: 1px 5px; border-radius: 3px; font-weight: 500; }
-  .qc-pt[data-k="ai"] .qc-pt-label { color: #dc2626; font-weight: 700; }
-  .hack-banner {
-    background: #fff7ed;
-    border-bottom: 3px solid #dc2626;
-    color: #1a1a1a;
-    padding: 14px 1.5rem;
-    font-size: 0.92rem;
-    text-align: center;
-    line-height: 1.55;
-  }
-  .hack-banner strong { color: #dc2626; }
-  .hack-banner .tag {
-    display: inline-block;
-    background: #dc2626;
-    color: #fff;
-    padding: 2px 10px;
-    border-radius: 999px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    margin-right: 0.4rem;
-    letter-spacing: 0.04em;
-  }
-  @media print { .hack-banner { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --green: #1a7a4a;
+  --blue: #1a4a7a;
+  --warn: #d97706;
+  --lenovo: #8a1c1c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 56px 28px 96px; }
+header {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; }
+
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+
+.actions { counter-reset: action-counter; margin-bottom: 32px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--lenovo); color: #fff; margin-bottom: 20px; }
 </style>
 </head>
 <body>
+<div class="wrap">
+  <header>
+    <span class="mark">MBA<span class="dot">.</span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
+  </header>
 
-<div class="hack-banner">
-  <span class="tag">HACKATHON DEMO</span>
-  <strong>黑客松比赛演示版,不是真实场景。</strong> 评委头像 + 5 镜头评分 + verdict + critical gap + Round 2 辩论均为 AI in-character 模拟,基于公开一手资料推断 —— <strong>非照片中任何一位本人的真实意见</strong>。仅作产品演示用途,<strong>不构成投资建议、不构成对联想集团 / 0992.HK 或任何其他主体的实际评价</strong>。如有不当请联系 <a href="https://github.com/zhanglunet/mba" style="color:#dc2626;font-weight:600;">github.com/zhanglunet/mba</a> 反馈下架。
-</div>
+  <div class="report-meta">Brand Influence Audit · <strong>v2 · EVOLUTION · 引擎升级（50 分制 → 250 分制，0.4.3）</strong> · 2026-07-12 · watch 事件流驱动 + 全量重打分 · <a href="versions/v1_2026-05-10.html" style="color:var(--accent);">v1(2026-05-10)→</a></div>
+  <h1 class="brand-title">联想集团 Lenovo Group <span style="opacity:0.55;font-size:0.6em;">0992.HK</span></h1>
+  <p class="report-subtitle">全球 PC 龙头的"混合式 AI"元年 · 史上最佳财年 vs 没治好的命名权与主语</p>
 
-<header class="hero">
-  <div class="container">
-    <h1>联想集团 Lenovo Group <span style="opacity:0.6">/ 0992.HK</span></h1>
-    <div class="subtitle">Brand Influence Review · Cutoff 2026-05-10</div>
-    <div class="badges">
-      <span class="badge accent">v1</span>
-      <span class="badge">FRESH</span>
-      <span class="badge">7 dimensions + wuying leg</span>
-      <span class="badge">5 judges + Round 2 debate</span>
-      <span class="badge">Total Mean: 22/50 (4.4/10)</span>
+  <div class="panel-badge">🧭 default · 5-Judge Panel（傅盛 · Jobs · 李可佳 · 吴俊东 · 张一鸣）</div>
+
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">4.76</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10</div>
     </div>
-    <div class="tldr">
-      <strong>TL;DR.</strong> 联想是"全球 PC 龙头 + 子品牌资产"撑起来的渠道机器,FY24/25 营收 $69.1B / +21% YoY / Q3 2025 IDC 25.5% 份额领先 HP 5.7pct。<strong>财务面比亚信好得多(Total 22 vs 17),但 AI 时代位置危机更严峻</strong>:亚信"做不出来",联想"做出来了但红利归别人"。3 评委用 3 种语言(数据飞轮 / Token 总装厂 / 协议位)在 Round 2 收敛到 <strong>"红利不归联想"</strong> 同一深层共识。
+    <div>
+      <div class="score-label">总分</div>
+      <div class="score-sub">119 / 250 <span class="score-tag">v1: 22/50 = 4.40（50 分制）</span></div>
+      <div style="margin-top:8px;">
+        <div class="score-label">评委数</div>
+        <div class="score-sub">5 <span class="score-tag">default panel</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="score-label">最强维度</div>
+      <div class="score-sub">Signal 6.2</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Category 3.0</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      引擎升级全量重审撞上「史上最好的一年」：FY25/26 营收 831 亿美元（+20%）、AI 收入 +105% 占 33%、央采标段第一——Signal/Leverage 上行；但 'AI PC / Hybrid AI / Claw' 三个词都是借的，Qira/天禧中外双名再添主语分裂——Category/Identity 仍是结构病。归一化 4.40 → 4.76 同尺度可比；分制不同勿直接比总分。
     </div>
   </div>
-</header>
 
-<div class="container">
+  <h2>What changed since v1 / 较 v1 变化</h2>
+  <div style="background:#fff;border:1.5px solid #e0ddd8;border-left:3px solid var(--accent);border-radius:6px;padding:18px 20px;margin-bottom:28px;font-size:14px;line-height:1.7;">
+    <p style="margin:0 0 10px;"><strong>为什么全量重审</strong>：v1（2026-05-10）是 MBA 第一份报告，用已废弃的 50 分制（5 评委 × 5 镜头取均值 = 22/50 = 4.40），与现行 250/300 分制报告不可比。本版按 0.4.3 全量重打：5 评委 × 5 镜头 × 10 分 = <strong>250 分制</strong>，纯分数不用 delta 箭头。<strong>归一化 4.40 → 4.76 同尺度可比，总分 22/50 与 119/250 分制不同勿直接比。</strong></p>
+    <p style="margin:0 0 10px;"><strong>Signal ↑（5.0 → 6.2，主驱动）</strong>：watch P1 事件 <code>2026-05-22-lenovo-001</code>——「联想交出史上最好财报，未来两年目标跃升千亿美元规模企业」。FY25/26 营收 831 亿美元（+20%）、归母净利 19.12 亿美元（+38%）、AI 相关收入 +105% 占总营收 33%（官方公告）。Jobs 独持 5（"财务滞后品味三年"）vs 傅盛/张一鸣 7——方法论分歧。</p>
+    <p style="margin:0 0 10px;"><strong>Leverage ↑（5.0 → 5.4）</strong>：<code>2026-06-18-lenovo-002</code>——央采 6 月打印机批量集采单包台数金额双第一；叠加 ISG 全年扭亏、AI 服务器储备 210 亿美元、SSG 连续 20 季双位数（官方公告）。</p>
+    <p style="margin:0;"><strong>Category / Identity 基本未动（3.0 / 3.2，全卷最弱）</strong>：<code>2026-07-12-lenovo-003</code>——BW 2026 天禧Claw + Skills 广场 + Token 调度预览；官方公告载明海外 Qira / 国内天禧中外双名。v1 五评委「红利不归联想」共识出现第一个反向信号（官方公告原文 "maximize value per token"），分歧点移到「省 Token 算不算抢回计量表」。</p>
+  </div>
 
-<section>
-  <h2>2. 评委打分雷达</h2>
-  <p class="lead">5 评委 × 5 镜头独立打分(1-10 整数)。<strong>联想各 lens σ ≤ 0.63,共识极高</strong>(亚信 σ 最大 0.75)。</p>
-  <div class="chart-wrap"><canvas id="radarChart" height="380"></canvas></div>
-</section>
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Lens</th>
+        <th>傅盛</th>
+        <th>Jobs</th>
+        <th>李可佳</th>
+        <th>吴俊东</th>
+        <th>张一鸣</th>
+        <th>Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td>
+        <td>6</td>
+        <td>6</td>
+        <td class="cell-lo">5</td>
+        <td>6</td>
+        <td class="cell-hi">7</td>
+        <td>6.0</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td>
+        <td>3</td>
+        <td>3</td>
+        <td class="cell-lo">2</td>
+        <td>3</td>
+        <td class="cell-hi">4</td>
+        <td>3.0</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td>
+        <td>5</td>
+        <td class="cell-hi">6</td>
+        <td>5</td>
+        <td>5</td>
+        <td class="cell-hi">6</td>
+        <td>5.4</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td class="cell-hi">4</td>
+        <td>3.2</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td>
+        <td class="cell-hi">7</td>
+        <td class="cell-lo">5</td>
+        <td>6</td>
+        <td>6</td>
+        <td class="cell-hi">7</td>
+        <td>6.2</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td>
+        <td>24</td>
+        <td>23</td>
+        <td>21</td>
+        <td>23</td>
+        <td>28</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">Score Total: <strong>119 / 250</strong> · Score Normalized: <strong>4.76 / 10</strong>（v1 参考：22/50 = 4.40，50 分制，归一化同尺度可比）· 本版为全量重打分，矩阵为纯分数。</p>
 
-<section>
-  <h2>3. 评委总分对比</h2>
-  <p class="lead">总分(满分 50)。<strong>5 评委集中在 19-24,全部负面,但比亚信平均高 5 分</strong> —— 反映联想 30 年累积资产是真的。</p>
-  <div class="chart-wrap"><canvas id="barChart" height="240"></canvas></div>
-</section>
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 5 评委 × 5 镜头</div>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+    </div>
+  </div>
 
-<section>
-  <h2>3b. 异议热力图(Dissent Heatmap)</h2>
-  <p class="lead">5×5 grid + σ 列。<strong>联想所有 σ ≤ 0.63,5 评委高度共识</strong> —— 撕扯不在分数,在 5 个独占 critical gap + Round 2 辩论网络。</p>
+  <h2>Dissent Heatmap / 异议热力图</h2>
   <div class="heatmap">
-    <div class="hcell hhead">Lens / Judge</div>
-    <div class="hcell hhead">🐆 fusheng</div>
-    <div class="hcell hhead">🍎 jobs</div>
-    <div class="hcell hhead">🦞 likejia</div>
-    <div class="hcell hhead">📚 wu-jundong</div>
-    <div class="hcell hhead">🐘 zhang-yiming</div>
-    <div class="hcell hhead">σ</div>
-    <div class="hcell hlens">1. Origin authenticity</div>
-    <div class="hcell s-mid">6</div><div class="hcell s-mid">6</div><div class="hcell s-mid">5</div><div class="hcell s-mid">6</div><div class="hcell s-mid">7</div>
-    <div class="hcell sigma-low">0.63</div>
-    <div class="hcell hlens">2. Category coinage</div>
-    <div class="hcell s-low">3</div><div class="hcell s-low">3</div><div class="hcell s-low">2</div><div class="hcell s-low">3</div><div class="hcell s-low">3</div>
-    <div class="hcell sigma-low">0.40</div>
-    <div class="hcell hlens">3. Leverage quality</div>
-    <div class="hcell s-mid">5</div><div class="hcell s-mid">6</div><div class="hcell s-low">4</div><div class="hcell s-mid">5</div><div class="hcell s-mid">5</div>
-    <div class="hcell sigma-low">0.63</div>
-    <div class="hcell hlens">4. Identity coherence</div>
-    <div class="hcell s-low">3</div><div class="hcell s-low">3</div><div class="hcell s-low">3</div><div class="hcell s-low">3</div><div class="hcell s-mid">4</div>
-    <div class="hcell sigma-low">0.40</div>
-    <div class="hcell hlens">5. Real-world signal</div>
-    <div class="hcell s-mid">6</div><div class="hcell s-mid">5</div><div class="hcell s-mid">5</div><div class="hcell s-low">4</div><div class="hcell s-mid">5</div>
-    <div class="hcell sigma-low">0.63</div>
-  </div>
-  <p class="lead" style="margin-top: 1rem;"><strong>关键观察</strong>:<strong>Category coinage 联想 2.8 = 亚信 2.8 同款病</strong> —— 自创词被业界不接受是结构性问题,跟公司体量无关。</p>
-</section>
-
-<section>
-  <h2>4. 影响力构造图(Leverage Map)</h2>
-  <p class="lead">真正做功的 4 维度 vs 装饰的 4 维度。注意:联想最强资产(ThinkPad)其实是子品牌,主品牌反成"管子"。</p>
-  <div class="mermaid-wrap"><pre class="mermaid">
-flowchart LR
-    classDef load fill:#16a34a,stroke:#0f7a35,color:#fff
-    classDef dec fill:#fde68a,stroke:#d4a016,color:#1a1a1a
-    classDef surface fill:#1a3a5c,stroke:#0f2541,color:#fff
-    classDef fragile fill:#dc2626,stroke:#991b1b,color:#fff
-    L1["全球 PC 龙头<br/>25.5% 领先 HP 5.7pct"]:::load
-    L2["ThinkPad 1992<br/>黑红 TrackPoint nub<br/>34 年视觉资产"]:::load
-    L3["渠道<br/>180 国 17000 渠道商"]:::load
-    L4["SSG OPM 21.1%<br/>利润放大器"]:::load
-    D1["AI PC 自创词<br/>无 IDC/Gartner traction"]:::dec
-    D2["Hybrid AI<br/>借自 Qualcomm 2023-05"]:::dec
-    D3["Lenovo 主品牌<br/>2015 红矩形<br/>无产品级锚点"]:::dec
-    D4["ISG +63%<br/>是市场 tide<br/>份额仍 ~4%"]:::dec
-    F1{{"信创锁定<br/>SASAC 2027 100%"}}:::fragile
-    F2{{"Token 计量表<br/>在微软 + 英特尔 + NVIDIA"}}:::fragile
-    F3{{"2025-12 上海<br/>15 分钟 Zoom 裁员"}}:::fragile
-    L1 --> S1
-    L2 --> S1
-    L3 --> S1
-    L4 --> S1
-    D1 -.AI 叙事装饰.-> S1
-    D2 -.借词装饰.-> S1
-    D3 -.主品牌空壳.-> S1
-    D4 -.增长率包装.-> S1
-    S1["可观察品牌表面<br/>0992.HK +30% 1y / +164% 5y<br/>16 Buy 0 Sell 但 MS+JPM 暗下调"]:::surface
-    L3 -.锁定.-> F1
-    L1 -.红利外流.-> F2
-    L4 -.信任裂痕.-> F3
-    F1 -.总装厂化.-> S1
-    F2 -.数据飞轮归别人.-> S1
-    F3 -.taste failure.-> S1
-  </pre></div>
-</section>
-
-<section>
-  <h2>5. 品牌定位象限</h2>
-  <p class="lead">轴选取:<strong>category 定义权</strong>(被上下游夺走 ↔ 自有命名)× <strong>叙事一致性</strong>(子主分裂 ↔ 统一)。<strong>联想红点落在左下</strong> —— 主品牌弱,category 定义权外包。</p>
-  <div class="qc">
-    <div class="qc-title">PC + AI 终端品牌坐标(联想红点 = 当前位置)</div>
-    <div class="qc-wrap">
-      <div class="qc-y-top">↑ 主品牌强 / 统一</div>
-      <div class="qc-y-bot">↓ 子品牌强 / 主品牌弱</div>
-      <div class="qc-x-left">定义权外包<br>← (Microsoft/Intel)</div>
-      <div class="qc-x-right">→ 自有 category<br>(命名权)</div>
-      <div class="qc-grid">
-        <span class="qc-q tl">外包-统一</span>
-        <span class="qc-q tr">自有-统一(理想)</span>
-        <span class="qc-q bl">外包-分裂</span>
-        <span class="qc-q br">自有-分裂</span>
-        <span class="qc-pt" data-k="ai" style="left: 22%; bottom: 22%;"><span class="qc-pt-label">联想 (0992.HK)</span></span>
-        <span class="qc-pt" style="left: 90%; bottom: 88%;"><span class="qc-pt-label">Apple</span></span>
-        <span class="qc-pt" style="left: 60%; bottom: 70%;"><span class="qc-pt-label">华为</span></span>
-        <span class="qc-pt" style="left: 35%; bottom: 55%;"><span class="qc-pt-label">Dell</span></span>
-        <span class="qc-pt" style="left: 30%; bottom: 50%;"><span class="qc-pt-label">HP</span></span>
-        <span class="qc-pt" style="left: 50%; bottom: 35%;"><span class="qc-pt-label">Asus</span></span>
-        <span class="qc-pt" style="left: 70%; bottom: 30%;"><span class="qc-pt-label">小米/红米</span></span>
-        <span class="qc-pt" style="left: 12%; bottom: 78%;"><span class="qc-pt-label">Microsoft Surface</span></span>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:50%;width:20%;background:#1a7a4a;">6.0 avg</div>
+        <div class="heatmap-bar" style="left:50%;width:20%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 5 – max 7"></div>
+        <span class="heatmap-range">范围 5–7 · Δ2（李可佳 5 vs 张一鸣 7）</span>
       </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <h2>6. 5 评委独立卡片</h2>
-  <p class="lead">每位评委 in-character 第一人称裁断。<strong>5 个 critical gap 完全无重叠;但 brand action 在 ThinkPad 路径上 4/5 同方向</strong>。</p>
-  <div class="disclaimer">
-    ⚠️ <strong>AI 模拟,非本人观点。</strong> 评委头像仅作可识别用途;每位评委的 verdict / quote / critical gap / 1-10 打分均为本仓库 perspective skill 基于公开一手资料的 in-character 推断,<strong>不是本人对联想集团的真实意见</strong>。这份报告本身不代表照片中任何一位本人。
-  </div>
-  <div class="judges">
-    <div class="judge" data-j="fusheng">
-      <div class="head"><img class="portrait" src="_assets/fusheng.jpg" alt="" /><div class="meta"><div class="name">傅盛 / fusheng <span class="badge-emoji">🐆</span></div><div class="total">猎豹 / OpenClaw · 23/50</div></div></div>
-      <div class="verdict">"联想是一家 1984 真王者起点 + 全球 PC 出货第一段位的老厂,但 14 年 4 个 slogan 都没撑过 5 年,卡在 PC 防守 + AI 进攻两条线之间没有破局点。"</div>
-      <div class="quote">"联想卖 AI PC 越多,Token 经济价值的 80% 流向 Microsoft / OpenAI —— 出货是联想的,Token 是别人的。信创 PC 总装厂是表面,Token 总装厂才是底层。"</div>
-      <div class="gap"><b>Critical gap:</b> Token 总装厂 —— 真正的 All in 不是回去抢 ThinkPad 35 周年,是把 Token 计量表抢回来。</div>
-      <div class="scores"><div class="s">O 6</div><div class="s">C 3</div><div class="s">L 5</div><div class="s">I 3</div><div class="s">S 6</div></div>
-    </div>
-    <div class="judge" data-j="jobs">
-      <div class="head"><img class="portrait" src="_assets/jobs.jpg" alt="" /><div class="meta"><div class="name">Steve Jobs <span class="badge-emoji">🍎</span></div><div class="total">Apple / NeXT / Pixar · 23/50</div></div></div>
-      <div class="verdict">"Lenovo is an extraordinary distribution machine wearing a brand that doesn't fit it."</div>
-      <div class="quote">"How you fire someone is how you ran the company. There's no separating the two. The financials lag the taste by about three years."</div>
-      <div class="gap"><b>Critical gap:</b> The December 15-min Zoom layoff is a taste failure — moral category, leading indicator of product decay 3 years out.</div>
-      <div class="scores"><div class="s">O 6</div><div class="s">C 3</div><div class="s">L 6</div><div class="s">I 3</div><div class="s">S 5</div></div>
-    </div>
-    <div class="judge" data-j="likejia">
-      <div class="head"><img class="portrait" src="_assets/likejia.jpg" alt="" /><div class="meta"><div class="name">李可佳 / likejia <span class="badge-emoji">🦞</span></div><div class="total">BotLearn / Aibrary · 19/50</div></div></div>
-      <div class="verdict">"现成的词能装下,就还没看到本质 —— 联想做了 14 年的品牌,做的是渠道,不是协议。"</div>
-      <div class="quote">"亚信是协议位错配,联想是协议位主动放弃 —— 把定义权外包给上游(Microsoft/Intel/高通)+ 下游(华为/信创),自己只保留出货第一的体量数字。"</div>
-      <div class="gap"><b>Critical gap:</b> 协议位主动放弃 —— 比亚信"协议位错配"更深一层。</div>
-      <div class="scores"><div class="s">O 5</div><div class="s">C 2</div><div class="s">L 4</div><div class="s">I 3</div><div class="s">S 5</div></div>
-    </div>
-    <div class="judge" data-j="wu-jundong">
-      <div class="head"><img class="portrait" src="_assets/wu-jundong.jpg" alt="" /><div class="meta"><div class="name">吴俊东 / wu-jundong <span class="badge-emoji">📚</span></div><div class="total">Aibrary 联创 · 21/50</div></div></div>
-      <div class="verdict">"联想是一家 inner core 真存在但没翻译出来、走完了 60 年课程的 42 年但还没敢做过一次主动 rebrand 的老厂。"</div>
-      <div class="quote">"做了一半的 IP 转移之后中断,比从来没转移更难修复 —— 因为公司会有'我们已经会换帅'的错觉。"</div>
-      <div class="gap"><b>Critical gap:</b> IP 转移做了一半中断比从未转移更难修复 —— 杨元庆 64 岁、第三代承接者完全不在公开视野。</div>
-      <div class="scores"><div class="s">O 6</div><div class="s">C 3</div><div class="s">L 5</div><div class="s">I 3</div><div class="s">S 4</div></div>
-    </div>
-    <div class="judge" data-j="zhang-yiming">
-      <div class="head"><img class="portrait" src="_assets/zhang-yiming.jpg" alt="" /><div class="meta"><div class="name">张一鸣 / zhang-yiming <span class="badge-emoji">🐘</span></div><div class="total">字节跳动 · 24/50</div></div></div>
-      <div class="verdict">"联想在算法时代承担了数据采集器的角色,但飞轮复利不归它 —— 这是位置问题不是品牌问题。字节会不会下注 → 只下渠道不下品牌。"</div>
-      <div class="quote">"亚信是有 AI 项目没规模化产品;联想是有规模化产品但 AI 数据飞轮在外人手里(Microsoft Copilot+ / Intel NPU / NVIDIA CUDA)—— 是位置问题不是品牌问题。"</div>
-      <div class="gap"><b>Critical gap:</b> 数据飞轮在外人手里 —— 联想是数据采集器,飞轮复利不归它。</div>
-      <div class="scores"><div class="s">O 7</div><div class="s">C 3</div><div class="s">L 5</div><div class="s">I 4</div><div class="s">S 5</div></div>
-    </div>
-  </div>
-  <h3 style="margin-top: 2rem;">5 个 critical gap 一览(完全无重叠)</h3>
-  <div class="gaps">
-    <div class="gap-card"><h5>🍎 闪电裁员 = taste failure</h5><p>moral category,leading indicator of product decay 3 years out</p></div>
-    <div class="gap-card"><h5>🐘 数据飞轮在外人手里</h5><p>位置问题不是品牌问题,联想是数据采集器</p></div>
-    <div class="gap-card"><h5>🦞 协议位主动放弃</h5><p>比亚信错配更深 —— 把定义权外包给上下游</p></div>
-    <div class="gap-card"><h5>🐆 Token 总装厂</h5><p>信创 PC 总装厂只是表面;Token 计量表才是底层</p></div>
-    <div class="gap-card"><h5>📚 IP 转移做了一半中断</h5><p>比从未转移更难修复 —— 公司有"我们已会换帅"的错觉</p></div>
-  </div>
-</section>
-
-<section>
-  <h2>6.5 评分过程 · 共识 · 分歧 · 辩论</h2>
-  <h3>6.5.1 评分过程方法论</h3>
-  <p class="lead">每位评委独立打分,4 步纪律:</p>
-  <div class="process-grid">
-    <div class="process-card"><span class="step">1</span> LOAD 自己的 perspective skill 全文</div>
-    <div class="process-card"><span class="step">2</span> 读 Lead synthesis(唯一输入)</div>
-    <div class="process-card"><span class="step">3</span> 5 镜头独立打分 + verdict + critical gap</div>
-    <div class="process-card"><span class="step">4</span> Round 1 — DO NOT 互看 review</div>
-  </div>
-  <p class="lead" style="margin-top: 0.7rem;">Round 1 完成后,评委进入 <strong>Round 2 辩论</strong>(读完彼此 review,quote + 反驳/呼应)。</p>
-
-  <h3>6.5.2 🟢 共识区 — 5 评委一致认同</h3>
-  <div class="consensus-list">
-    <div class="consensus-item"><h4>1. 起源真实但 narrator 漂移</h4><p>5/5 score 5-7。柳传志被 de-Liu-ifying,杨元庆"创业 1.0-5.0"框架替代;但媒体口径还停在柳传志时代。</p></div>
-    <div class="consensus-item"><h4>2. 范畴命名一致失败(同亚信同款病)</h4><p>5/5 score 2-3。"AI PC" 自创无外部 traction / "Hybrid AI" 借自 Qualcomm 2023-05 / 14 年 4 换没一个撑过 5 年。</p></div>
-    <div class="consensus-item"><h4>3. ISG +63% 是搭车不是真赢</h4><p>4/5 评委明确说出。服务器市场 +61% 同步,联想份额仍 ~4%(Dell 10% / Supermicro 9.5% 真赢家)。</p></div>
-    <div class="consensus-item"><h4>4. 子品牌 > 主品牌</h4><p>5/5 一致。ThinkPad 1992 黑红 TrackPoint nub = 34 年视觉资产 vs Lenovo 主品牌 2015 红矩形 11 年无产品级锚点。</p></div>
-    <div class="consensus-item"><h4>5. 海外 vs 国内 framing 完全分裂</h4><p>5/5 公认。Bloomberg/Nikkei "tops estimates" 同期中文媒体"至暗时刻 / 1.61亿薪酬";<strong>MS + JPM 从 Overweight 暗下调到 Neutral / Equal Weight</strong>(2025 H2)。</p></div>
-  </div>
-
-  <h3>6.5.3 🔴 分歧区</h3>
-  <h4 style="margin-top: 1.2rem;">最大撕扯:ThinkPad 是不是出路 —— 4 种路径</h4>
-  <div class="duel">
-    <div class="side"><strong>📚 wu-jundong + 🦞 likejia(同方向)</strong>
-      <blockquote>wu:"Lenovo 退到法律实体,ThinkPad 当主语 = becoming";likejia:"全押 ThinkPad 35 周年,让承重的子品牌反向定义主品牌"</blockquote>
-    </div>
-    <div class="vs">VS</div>
-    <div class="side"><strong>🍎 Jobs + 🐆 fusheng(反对升主品牌)</strong>
-      <blockquote>Jobs:"Pick one product. Put the Lenovo (not ThinkPad) name on it";fusheng:"两个都不持久 —— 都是 PC 时代遗产,关键是 Token 计量表"</blockquote>
-    </div>
-  </div>
-  <p class="lead"><strong>真分歧</strong>:wu+likejia 朝同方向但 likejia 在 R2 反驳 wu(主语应换成 Agent 不是 ThinkPad);Jobs 反对 wu 的 18-24 月媒体铺垫(succession 是 shipped work);fusheng 跨过这层说<strong>关键是 Token 计量表</strong>。</p>
-
-  <h3>6.5.4 🥊 Round 2 — In-character 辩论</h3>
-  <p class="lead">Round 1 是独立打分;Round 2 让评委读完彼此 review,quote 1 句最不同意 + 1 句最同意,in-character 互相回应。<strong>3 评委用 3 种语言收敛到"红利不归联想"同一深层共识</strong>。</p>
-  <div class="debate-cards">
-
-    <div class="debate-card" data-j="fusheng">
-      <div class="head"><img src="_assets/fusheng.jpg" alt="" /><span>🐆 傅盛 · Round 2</span></div>
-      <div class="turn disagree">
-        <span class="tag">❌ 最不同意 <span class="from">→ 来自 likejia</span></span>
-        <blockquote>"ThinkPad 比 Lenovo 更持久。"</blockquote>
-        <p class="response">不是 ThinkPad 更持久,而是<strong>两个都不持久</strong> —— 这是李可佳没看到的破局点。ThinkPad 黑红 nub 是 1992 硬件包浆,Lenovo 红矩形是 2015 渠道刷漆,两件都是 PC 时代的遗产。AI 时代的"持久"不是子品牌反向救主品牌,是<strong>谁握着 Token 计量表</strong>。让 ThinkPad 当主语,联想还是个总装厂——只是换了个更体面的招牌。SaaS 已死,硬件铭牌也救不了。</p>
-      </div>
-      <div class="turn agree">
-        <span class="tag">✓ 最同意 <span class="from">→ 来自 zhang-yiming</span></span>
-        <blockquote>"联想在算法时代承担了数据采集器的角色,但收割飞轮复利的不是它。"</blockquote>
-        <p class="response">这一句就是我 R1 写"Token 总装厂"的另一种说法 —— 一鸣的火星视角看到了同一件事。每年 7000 万台 PC + ISG 服务器进 hyperscaler,Token 都从联想这条管子流过去,但计量表在 Microsoft / Intel / NVIDIA 那边。<strong>联想干的是搬运工,赚的是搬运费;真正的红利是 Token 调用复利,18 个月内会拉开 10 倍差距</strong>。破局点很清楚:<strong>找一个具体场景把 Token 计量表抢回来</strong>。</p>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:20%;width:20%;background:#c1440e;">3.0 avg</div>
+        <div class="heatmap-bar" style="left:20%;width:20%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 2 – max 4"></div>
+        <span class="heatmap-range">范围 2–4 · Δ2 ★ 全卷最低维（李可佳 2 vs 张一鸣 4）</span>
       </div>
     </div>
-
-    <div class="debate-card" data-j="jobs">
-      <div class="head"><img src="_assets/jobs.jpg" alt="" /><span>🍎 Steve Jobs · Round 2</span></div>
-      <div class="turn disagree">
-        <span class="tag">❌ Most disagree <span class="from">→ from wu-jundong</span></span>
-        <blockquote>"用 18-24 个月的叙事铺垫,让外部第三方逐渐把'联想'和某一个具体人名联系起来"</blockquote>
-        <p class="response">No. You don't manufacture a successor through a media calendar. That's process replacing content. A successor is a person who has shipped great products in front of you, then shipped greater ones beside you. <strong>Tim wasn't a profile in Forbes. Tim ran operations for thirteen years. The work made him obvious.</strong> If your candidate needs eighteen months of WSJ profiles to become legitimate, the candidate isn't legitimate. You're hiring a press release. Show me the products this person shipped. Boom. That's succession.</p>
-      </div>
-      <div class="turn agree">
-        <span class="tag">✓ Most agree <span class="from">→ from likejia</span></span>
-        <blockquote>"现成的词能装下,就还没看到本质 —— 联想做了 14 年的品牌,做的是渠道,不是协议。"</blockquote>
-        <p class="response">He's right. If a category fits inside someone else's word, you haven't built a category. You've built a sticker. <strong>"AI PC" goes in Microsoft's drawer. "Hybrid AI" came out of Qualcomm's drawer.</strong> Lenovo is rearranging other people's drawers and calling it furniture. Marketing is about values, not specs. The fix isn't another keynote word. <strong>It's a product so insanely great the world has to invent a word for it.</strong> Until then, you're a channel.</p>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:50%;width:10%;background:#6b7280;">5.4</div>
+        <div class="heatmap-bar" style="left:50%;width:10%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 5 – max 6"></div>
+        <span class="heatmap-range">范围 5–6 · Δ1 · 共识：渠道机器是真的</span>
       </div>
     </div>
-
-    <div class="debate-card" data-j="likejia">
-      <div class="head"><img src="_assets/likejia.jpg" alt="" /><span>🦞 李可佳 · Round 2</span></div>
-      <div class="turn disagree">
-        <span class="tag">❌ 最不同意 <span class="from">→ 来自 wu-jundong</span></span>
-        <blockquote>"ThinkPad 这个 34 年子品牌资产应该被允许变成主品牌"</blockquote>
-        <p class="response">让 ThinkPad 反向代表公司,这条路径听起来体面,本质是把"现成词"重新刷一遍漆。ThinkPad 是 PC 时代的子品牌,主语还是人——一个坐在工位上敲字的人。<strong>联想真正放弃的不是主品牌,是协议位</strong>。把 34 年的人类工位资产升格为主叙事,等于宣布这家公司决定不再回答"屏幕另一端是谁"这个问题。<strong>子品牌能装下,就还没看到本质。</strong></p>
-      </div>
-      <div class="turn agree">
-        <span class="tag">✓ 最同意 <span class="from">→ 来自 zhang-yiming</span></span>
-        <blockquote>"联想在算法时代承担了数据采集器的角色,但收割飞轮复利的不是它。"</blockquote>
-        <p class="response">这一句把我 R1 的"协议位主动放弃"翻译成了数据语法。联想每出一台机器,行为数据回到 Copilot+,模型调用回到 OpenAI,联想拿走的是 BOM 利润 —— 把自己的 7000 万台年出货量做成了别人的训练管道。<strong>从我视角看,2026 年起设备的主语应该是 Agent,不是人;主语换了,飞轮的归属也得跟着换。联想现在不是在卖 PC,是在替别的协议层喂养它的 Agent。</strong></p>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:30%;width:10%;background:#a3705a;">3.2</div>
+        <div class="heatmap-bar" style="left:30%;width:10%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 3 – max 4"></div>
+        <span class="heatmap-range">范围 3–4 · Δ1 · 共识：主语含混没治好</span>
       </div>
     </div>
-
-    <div class="debate-card" data-j="wu-jundong">
-      <div class="head"><img src="_assets/wu-jundong.jpg" alt="" /><span>📚 吴俊东 · Round 2</span></div>
-      <div class="turn disagree">
-        <span class="tag">❌ 最不同意 <span class="from">→ 来自 jobs</span></span>
-        <blockquote>"Pick one product. Make it insanely great. Put the Lenovo name on it — not ThinkPad, not Legion, not IdeaPad. Lenovo."</blockquote>
-        <p class="response">Steve 在这里讲的是 1997 年回 Apple 时的逻辑:产品先于品牌、垂直整合、All in 一个名字。<strong>但那时 Apple 主品牌的 inner core 还没死</strong>。Lenovo 不一样 —— 主品牌承重的那一块 34 年视觉资产,在 ThinkPad 那个红 nub 里,不在红色矩形里。we believe 让一个空壳主品牌 insanely great 是反 leverage —— 介质 × 规模那一层,ThinkPad 已累出 3 个量级,主品牌从 0 起步要再花 20 年。<strong>这不是该选哪个名字,是该承认哪个名字才是真的主语。</strong></p>
-      </div>
-      <div class="turn agree">
-        <span class="tag">✓ 最同意 <span class="from">→ 来自 likejia</span></span>
-        <blockquote>"停掉所有 'AI for All' / 'Hybrid AI' / 'AI PC' 的主品牌叙事预算,把这笔钱全部移到 ThinkPad 的 35 周年(2027)上"</blockquote>
-        <p class="response">Ethan 这一刀我接住 —— 我 R1 讲过"IP 转移做了一半中断比从未转移更难修复"。杨元庆那 23 年弧线,如果是被压在柳传志 IP 下面的"接班叙事",会一直被 de-Liu-ifying 反噬;但如果是放进 ThinkPad 35 周年这种 60 年课程式的时间锚里,叙事就稳了。a brand is what you say no to —— 联想最该 say no 的不是 AI for All 这个 slogan,<strong>是"主品牌必须自己写故事"这个执念</strong>。my understanding is 把 ThinkPad 设成主语,让 Lenovo 退到法律实体那一层 —— <strong>这不是降级,是 becoming。</strong></p>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:50%;width:20%;background:#1a7a4a;">6.2 avg ★</div>
+        <div class="heatmap-bar" style="left:50%;width:20%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 5 – max 7"></div>
+        <span class="heatmap-range">范围 5–7 · Δ2 ★★ 方法论分歧（Jobs 5 vs 傅盛/张一鸣 7）</span>
       </div>
     </div>
-
-    <div class="debate-card" data-j="zhang-yiming">
-      <div class="head"><img src="_assets/zhang-yiming.jpg" alt="" /><span>🐘 张一鸣 · Round 2</span></div>
-      <div class="turn disagree">
-        <span class="tag">❌ 最不同意 <span class="from">→ 来自 jobs</span></span>
-        <blockquote>"That is a taste failure. Taste is a moral category, not a decorative one. The financials lag the taste by about three years."</blockquote>
-        <p class="response">我不同意把一次裁员动作直接归因到"品味"再外推三年财务。这是<strong>把单点事件升级成结构变量,样本太薄</strong>。一个 ~260 人的处理方式,可以解释为流程粗糙、可以解释为时区问题、也可以解释为 HR 系统失能。要判断它是不是结构性的,得看 24 个月里同类事件的频次和方向。Don't rush to conclusion。我自己 2018 年朋友圈怼马化腾也被骂"不够克制",那是我个体在那个时点的失控,不是公司"品味"。</p>
-      </div>
-      <div class="turn agree">
-        <span class="tag">✓ 最同意 <span class="from">→ 来自 fusheng</span></span>
-        <blockquote>"联想 AI PC 卖出去之后,Token 算在 Microsoft Copilot+ 头上 —— 出货数据是联想的,Token 数据是别人的"</blockquote>
-        <p class="response">这条跟我 R1 讲的"数据飞轮在外人手里"是同一个问题的两面 —— 他叫 Token 经济,我叫信息流动效率。本质是:用户每多用一次,谁的复利结构在转。联想卖 1 亿台 AI PC,飞轮转的是 Microsoft 和 OpenAI 的;它自己只拿到一次性硬件毛利,<strong>没有进入第二条收益曲线</strong>。这就不是品牌问题,是位置问题 —— 站在算法和数据的下游,声量再大也喂不出自己的飞轮。</p>
-      </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>v2 特征</strong>：延续 v1 的「低 σ 高共识」体质（v1 全部 lens σ ≤ 0.63），撕扯不在分数在解释权。两处真分歧：① Signal——同一份史上最佳财报，张一鸣/傅盛按硬数据给 7，Jobs 按「财务是品味的滞后指标」只给 5（归因方法之争）；② Category——天禧/Qira 算不算自有命名资产（张一鸣 4 vs 李可佳 2）。评委总分带 21–28（Δ7），张一鸣最高、李可佳最低，与 v1 位次一致，立场连续。
     </div>
   </div>
 
-  <h4 style="margin-top: 1.5rem;">辩论网络观察</h4>
-  <ul style="margin-top: 0.5rem; line-height: 1.8;">
-    <li><strong>3 评委(zhang-yiming + fusheng + likejia)用 3 种语言收敛到同一深层共识</strong>:数据飞轮 / Token 总装厂 / 协议位 —— 都指向 <strong>"AI 时代红利不归联想"</strong>。<strong>这是 R2 最大产品价值</strong>。</li>
-    <li><strong>likejia ↔ wu-jundong 同方向但不同格</strong>:都说 ThinkPad 是真主语,但 likejia R2 反驳 wu 的"ThinkPad 升主品牌"路径(主语应换成 Agent)。</li>
-    <li><strong>Jobs ↔ wu-jundong</strong>:Jobs 反驳 wu 的 18-24 月媒体铺垫(succession 是 shipped work);wu 反驳 Jobs 的"Pick one Lenovo product"(反 leverage)。</li>
-    <li><strong>zhang-yiming 反驳 Jobs "taste failure"</strong>:样本太薄,需要 24 月频次验证 —— 真正的归因方法分歧。</li>
-    <li><strong>fusheng 反驳 likejia "ThinkPad 比 Lenovo 更持久"</strong>:跨过子品牌-主品牌之争,提"两个都不持久,关键是 Token 计量表"。</li>
-  </ul>
-</section>
+  <h2>影响力构造 / Influence Map · Leverage Map</h2>
+  <div class="flow-diagram">
+    <pre>
+1984 中科院起点 · 11 亿台 PC 累计销量 · 全球 PC 龙头（Origin 6.0 —— v1 判断，未变）
+      │
+      ▼
+全球渠道机器（180 国 · Q4 全球 PC 份额 24.4%，15 年最大领先优势 —— 公司口径）
+      │
+      ├──→ 报表兑现（watch 001）：FY25/26 营收 831 亿美元 +20% · 归母净利 19.12 亿 +38%
+      │      AI 收入 +105% 占 33%（Q4 占 38%）· ISG 全年扭亏 · AI 服务器储备 210 亿
+      │      SSG 连续 20 季双位数 —— Signal 6.2，全卷最强
+      │
+      ├──→ 央采/政企渠道（watch 002）：打印机批量集采单包台数金额双第一
+      │      2 月台式机 73.8% 份额 —— 渠道位持续加固（Leverage 5.4）
+      │
+      ├──→ ⚠ 未解结构病 1（Category 3.0）：'AI PC / Hybrid AI' 定义权仍在
+      │      微软/英特尔/高通；'Claw' 词根也是外部带火的
+      │
+      └──→ ⚠ 未解结构病 2（Identity 3.2）：主品牌 vs 子品牌主语含混（v1 判断未变）
+             + 海外 Qira / 国内天禧中外双名，主语分裂再添一层
+                  │
+                  ▼
+      🔄 v2 新变量（watch 003 + 官方公告）：天禧Claw 自有 Agent 入口 + Skills 广场 +
+         Token 调度 · 官方公告首次写 "maximize value per token"
+         —— v1「红利不归联想」共识的第一个反向信号，成色待 8 月新品验证
+                  │
+                  ▼
+          品牌叙事层：报表叙事已切换（PC 厂 → 混合式 AI），品牌叙事未切换
+          （命名权、主语、继任三悬念 —— 90 天建议全部指向这里）
+    </pre>
+  </div>
 
-<section>
-  <h2>7. 情绪趋势</h2>
-  <p class="lead">本审计未捕获结构化时间序列数据。<strong>N/A — no time-series</strong>。代理信号:</p>
-  <ul>
-    <li><strong>2018 / 2019 / 2021 / 2024</strong>:5G 投票事件四度发酵</li>
-    <li><strong>2021</strong>:司马南"七问联想"系列(知乎/微博/B站负面峰值)</li>
-    <li><strong>2022-04-14</strong>:北京 CSRC 对联想控股发整改令</li>
-    <li><strong>2024-04-18</strong>:Tech World Shanghai AI PC 首发</li>
-    <li><strong>2025-12 / 2026-01</strong>:ISG 上海 15 分钟 Zoom 闪电裁员(脉脉→微博→知乎→36Kr 传播链)</li>
-    <li><strong>2026-02</strong>:JPM + Morgan Stanley 从 Overweight 暗下调至 Neutral</li>
-    <li><strong>2026-03</strong>:FY24/25 营收 $69.1B +21% 公布</li>
-  </ul>
-  <p class="lead"><strong>典型"负面 + 资本正面双轨"</strong> —— 海外贡献正面大头(40%),国内贡献几乎全部负面(25%)。整体估算正/中/负 = 40% / 35% / 25%(亚信对比 15% / 35% / 50%)。</p>
-</section>
+  <h2>评委打分卡 / Judge Scorecards（v2 全量重打）</h2>
+  <div class="judge-grid">
 
-<section>
-  <h2>8. 品牌本质 Mindmap</h2>
-  <p class="lead">7 维度 × 各自 top finding。</p>
-  <div class="mermaid-wrap"><pre class="mermaid">
-mindmap
-  root((联想集团<br/>0992.HK))
-    创始叙事
-      1984 中科院 11 人 + 20 万启动金
-      倪柳之争三度复发
-      杨元庆 1.0-5.0 替柳做 narrator
-    产品定位
-      AI PC 自创无 traction
-      Hybrid AI 借自 Qualcomm 2023
-      14 年 4 个 slogan
-    分发渠道
-      全球 PC 25.5 龙头
-      Americas 34 大于 China 23
-      SSG OPM 21 利润放大
-    社区 PR
-      两边政治都为负但资本未折价
-      19 家 16 Buy 0 Sell
-      MS+JPM 暗下调
-    视觉语言
-      ThinkPad 1992 黑红 nub 34 年
-      Lenovo 主品牌 2015 红矩形
-      子品牌强主品牌弱
-    竞品格局
-      ISG +63 是市场 tide 联想 4 弱于 Dell 10
-      AI PC 定义权在微软英特尔
-      华为 4 front 唯一对手
-    接收情绪
-      5y +164 是 V 形 AI 红利
-      2025-12 上海 15 分钟闪电裁员
-      杨元庆 1.61 亿薪酬八年扯
-  </pre></div>
-</section>
+    <div class="judge-card">
+      <div class="judge-name">傅盛</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">猎豹移动 / OpenClaw · v1 23/50</div>
+      <div class="judge-total">24</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:30%;background:#d97706;"></div></div><span class="judge-score">3</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%;background:#d97706;"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:30%;background:#d97706;"></div></div><span class="judge-score">3</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"官方公告写 maximize value per token——破局点它认了；但省 Token 不等于收 Token，计量表还没换主人。"</div>
+    </div>
 
-<section>
-  <h2>9. 行动建议(next 90 days)</h2>
-  <p class="lead">5 项里 1 项是"砍",4 项是"做"。<strong>亚信缺的是先减法,联想缺的是做对的减法 + 找对位置的加法</strong>。</p>
+    <div class="judge-card">
+      <div class="judge-name">Steve Jobs</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Apple / NeXT / Pixar · v1 23/50</div>
+      <div class="judge-total">23</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#6b7280;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:30%;background:#6b7280;"></div></div><span class="judge-score">3</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#6b7280;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:30%;background:#6b7280;"></div></div><span class="judge-score">3</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%;background:#6b7280;"></div></div><span class="judge-score">5</span></div>
+      </div>
+      <div class="judge-quote">"Record year, borrowed words. It's not a report card. It's a lagging indicator——我给品味打分，不给季报打分。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">李可佳</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">BotLearn / Aibrary · v1 19/50</div>
+      <div class="judge-total" style="color:var(--accent);">21</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最低分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%;"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:20%;"></div></div><span class="judge-score">2</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%;"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:30%;"></div></div><span class="judge-score">3</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"渠道位收搬运费，协议位收过路费——联想还在收搬运费。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">吴俊东</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Aibrary 联创 · v1 21/50</div>
+      <div class="judge-total">23</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#1a7a4a;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:30%;background:#1a7a4a;"></div></div><span class="judge-score">3</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%;background:#1a7a4a;"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:30%;background:#1a7a4a;"></div></div><span class="judge-score">3</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#1a7a4a;"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"报表接住了叙事，但千亿目标系于一位年过六旬的 CEO——转型叙事考的不是这一年的报表，是下一个讲故事的人。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">张一鸣</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">字节跳动 · v1 24/50</div>
+      <div class="judge-total" style="color:var(--green);">28</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#1a4a7a;"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%;background:#1a4a7a;"></div></div><span class="judge-score">4</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#1a4a7a;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%;background:#1a4a7a;"></div></div><span class="judge-score">4</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#1a4a7a;"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"831 亿、+20%、AI 占 33%——数据不撒谎。但飞轮归属只解决一小半，天禧的复利要看 24 个月。"</div>
+    </div>
+
+  </div>
+
+  <h2>R2 对话：v2 核心分歧 / Dissent Dialogues</h2>
+  <p style="font-size:12px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">以下评委发言均为 AI 基于其公开资料的 in-character 模拟，非本人观点。</p>
+
+  <h3>傅盛 vs 李可佳：天禧Claw 算不算把 Token 计量表抢回来</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">傅盛</div>
+      <div class="dialogue-text">"不是联想变了，是联想终于看见了。v1 我说它是 Token 总装厂——出货是它的，Token 是微软和 OpenAI 的。这次官方公告白纸黑字写 maximize value per token，天禧Claw 开箱即用、AI 主机 Mini 2999 块把本地算力打到 3000 以内。方向对了，这是破局点。但我只把 Signal 提到 7，Leverage 还是 5——省 Token 是给用户省，收 Token 才是给自己收。18 个月内天禧的 Token 消耗要变成经营指标，不然还是总装厂，只是装了个更聪明的壳。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">李可佳</div>
+      <div class="dialogue-text">"盛哥看的是计量表，我看的是主语。天禧Claw 这个名字里，'天禧'是联想的，'Claw'是谁的？是这一波 Agent 生态带火的现成词根。现成的词能装下，就还没看到本质。Skills 技能广场是个协议位的姿势，但姿势不等于位置——卡进多少 Agent 的工作流里，才算协议位。联想这一年证明的是渠道位更强了：央采第一、份额新高、831 亿。渠道位收的是搬运费，协议位收的是过路费。联想还在收搬运费。"</div>
+    </div>
+  </div>
+
+  <h3>张一鸣 vs Jobs：史上最佳报表值多少 Signal</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">张一鸣</div>
+      <div class="dialogue-text">"831 亿，+20%。归母净利 +38%。AI 相关收入 +105%、占 33%。这些是审计过的数字，不是发布会措辞。SSG 连续 20 个季度双位数、ISG 扭亏、服务占比在升——第二条收益曲线从无到有了。Signal 我给 7。但 Don't rush to conclusion：飞轮归属的问题只解决了一小半，天禧的用户数据能不能形成越用越好的复利结构，要看 24 个月，不是看一个财年。所以 Leverage 我只给 6，不给 8。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">Steve Jobs</div>
+      <div class="dialogue-text">"Numbers. Everyone keeps showing me numbers. 我 v1 说过：how you fire someone is how you ran the company，financials lag the taste by about three years。今年的 831 亿是 2023 年那批产品和渠道决策的回款，它不能证明 2026 年的品味。我要看的是一个产品——one product——好到世界必须为它发明一个新词。天禧Claw？It's a follower's name on a follower's product. 做得不差，但 insanely great 和 not bad 之间隔着一整个品牌。Signal 5。It's not a report card. It's a lagging indicator."</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">吴俊东（补充）</div>
+      <div class="dialogue-text">"2024 年我在 DKU 那场讲座，有个学生问我怎么判断老公司转型的真假，我说看它敢不敢把新叙事写进最重要的文件。联想把混合式 AI 写进了业绩公告第一页，'创业 5.0'和千亿目标绑在了一起——叙事铺垫是标准的。但 IP 转移做了一半中断比从未转移更难修复：千亿目标是一位年过六旬的 CEO 报出来的，第三代承接者还是不在公开视野里。转型叙事考的不是这一年的报表，是下一个讲故事的人。"</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议（v2）</h2>
   <div class="actions">
-    <div class="action">
-      <div class="num">1</div>
-      <div>
-        <h4>砍 "AI PC" / "Hybrid AI" / "AI for All" 三个主品牌 slogan</h4>
-        <p>至少留 1 个有 IDC/Gartner 第三方背书的;不要继续 coin 微软会赢的词。</p>
-        <div class="source">← jobs + likejia + fusheng + zhang-yiming 4 票一致</div>
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>把天禧的 Token 结构做成经营指标，而不是发布会措辞（承 v1 建议 #2，升级）</strong>
+        官方公告已写 "maximize value per token"，8 月新品发布是第一个节点——公布天禧Claw 的活跃 Agent 数、Skills 生态规模、Token 消耗结构，让"个人智能系统"从展台叙事变成报表叙事；否则下次重审 Leverage 仍按"搬运费"计价。
       </div>
-      <div class="lev high">High</div>
     </div>
-    <div class="action">
-      <div class="num">2</div>
-      <div>
-        <h4>选一个具体场景"把 Token 计量表抢回来"</h4>
-        <p>18 个月内,在 ThinkPad 或 Legion 上验证一个垂直 Agent 工作流闭环,联想自有(不挂 Microsoft Copilot+ / Intel NPU 标),复利结构归联想。</p>
-        <div class="source">← fusheng + zhang-yiming + likejia 三票同向</div>
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>千亿美元目标要翻译成品牌语言</strong>
+        千亿是 specs 不是 values（Jobs/李可佳同向）——在 'AI PC'（微软的抽屉）、'Hybrid AI'（高通的词源）、'Claw'（生态的词根）之外，90 天内选定一个联想自己拥有的品类词并停掉其余主叙事预算。
       </div>
-      <div class="lev high">High</div>
     </div>
-    <div class="action">
-      <div class="num">3</div>
-      <div>
-        <h4>2025-12 ISG 上海闪电裁员补诚实复盘</h4>
-        <p>Tolga Kurtoglu 公开问责;下次裁员"面对面、用员工母语、CEO 在场"。</p>
-        <div class="source">← jobs "taste = moral category"</div>
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>解决 Qira/天禧 中外双名的主语问题</strong>
+        个人智能系统是未来十年主叙事载体，上线第一年就中外两个名字，是把 v1 诊断的主语分裂制度化——要么统一，要么明确双名分工的品牌规则，别让它自然漂移。
       </div>
-      <div class="lev med">Med</div>
     </div>
-    <div class="action">
-      <div class="num">4</div>
-      <div>
-        <h4>杨元庆继任路径必须 12 个月内有可见动作</h4>
-        <p>必须有一个 shipped 工作让承接者 obvious(Jobs:"Tim 跑了 13 年 operations 才 obvious,不是 Forbes profile")。</p>
-        <div class="source">← wu-jundong vs jobs 真分歧 — Lead 倾向 Jobs work first + wu 时间窗 12-24 月</div>
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>杨元庆继任路径 12 个月内要有 shipped-work 信号（承 v1 建议 #4，顺延）</strong>
+        "创业 5.0 + 十年混合式 AI + 千亿目标"的叙事弧全部系于一人；下次重审若继任仍零信号，Origin/Identity 按叙事单点风险折价。
       </div>
-      <div class="lev med">Med</div>
     </div>
-    <div class="action">
-      <div class="num">5</div>
-      <div>
-        <h4>ThinkPad 35 周年(2027)作为 narrative anchor,但不上升为主品牌</h4>
-        <p>让 ThinkPad 当 9 寸故事载体,Lenovo 名字保留 —— Token 时代主语必须是产品 + 生态,不是 PC 时代的子品牌。</p>
-        <div class="source">← Lead 综合 wu+likejia+jobs+fusheng 4 路径</div>
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>央采/信创中标持续披露，但别升格为品牌故事</strong>
+        渠道位的硬信号继续按季度披露，但对外品牌叙事别把"标段第一"当"品类第一"讲——渠道位撑估值，协议位才撑品牌（张一鸣/李可佳同向）。
       </div>
-      <div class="lev med">Med</div>
     </div>
   </div>
-</section>
 
-<section>
-  <h2>10. 引用 / Citations</h2>
-  <p class="lead">关键载体性来源(下方列出 15 条;完整 100+ 条原始调研索引保留在生成本报告的内部 _raw 目录,未随对外报告发布,如需可联系作者)。</p>
-  <details open>
-    <summary>载体性来源(15 条)</summary>
-    <ul>
-      <li>Lenovo IR FY24/25 — <a href="https://investor.lenovo.com/">investor.lenovo.com</a></li>
-      <li>Lenovo IR Q3 FY25/26(2026-02-12)— US$22.2B / +18% YoY / AI mix 32%</li>
-      <li>Lenovo Tech World Shanghai 2024-04-18(AI PC 首发)</li>
-      <li>Lenovo Tech World Bellevue 2024-10(Hybrid AI 战略)</li>
-      <li>IDC PC market share Q3 2025(Lenovo 25.5%)</li>
-      <li>Gartner PC 2025 全年(Lenovo 27.2% / 70.9M units)</li>
-      <li>IDC Server market Q3 2025(Lenovo ISG ~4.0% #4)</li>
-      <li><strong>JPM + Morgan Stanley 从 Overweight 下调至 Equal Weight / Neutral(2025 H2)</strong></li>
-      <li>Microsoft Copilot+ NPU 40 TOPS / Intel Lunar Lake / Qualcomm Snapdragon X Elite</li>
-      <li>司马南 2021"七问联想"系列 + 吴刚梁等专家纠错</li>
-      <li>5G 投票事件 87 次会议(2018/2019/2021/2024 四度发酵)</li>
-      <li>杨元庆 FY24/25 ¥1.61 亿($22.39M)薪酬披露</li>
-      <li>2025-12 ISG 上海闪电裁员(脉脉→微博→知乎→36Kr 传播链)</li>
-      <li><strong>2022-04-14 北京 CSRC 对联想控股整改令</strong></li>
-      <li>Reddit r/thinkpad(238k+ 会员)/ Bilibili / 知乎"联想"高频问答</li>
-    </ul>
-  </details>
-</section>
+  <h2 class="sources">Sources（v2；v1 全部来源见 <a href="versions/v1_2026-05-10.html">v1 快照</a> §10）</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://www.stcn.com/article/detail/3921911.html">联想交出史上最好财报，未来两年目标跃升千亿美元规模企业 – 证券时报转界面新闻（watch 2026-05-22-lenovo-001，P1，Signal 主驱动）</a></li>
+      <li><a href="https://www.doit.com.cn/itnews/819020793233477.html">联想中标2026中央国家机关6月打印机批量集采项目 单包规模领跑全标段 – DOIT（watch 2026-06-18-lenovo-002，P2，Leverage）</a></li>
+      <li><a href="https://finance.sina.com.cn/tech/roll/2026-07-12/doc-inihpipy5944728.shtml">联想BW 2026看点拉满：全家桶一次看齐、8月重磅新品亮相 – 新浪科技转快科技（watch 2026-07-12-lenovo-003，P3，Category/Identity 语境）</a></li>
+      <li><a href="https://doc.irasia.com/listco/hk/lenovo/annual/2026/res.pdf">Lenovo Group FY2025/26 Annual Results Announcement – 港交所公告原文 PDF（补充调研：营收 83,075M/+20%、归母净利 1,912M/+38%、AI 收入 +105% 占 33%、ISG 扭亏、AI 服务器储备 210 亿、Qira/天禧、"maximize value per token"）</a></li>
+      <li><a href="versions/v1_2026-05-10.html">联想 v1 报告（2026-05-10，50 分制 22/50 = 4.40）– 基线引用（v1 评委立场与 5 个 critical gap）</a></li>
+    </ol>
+  </div>
 
-<section>
-  <h2>版本</h2>
-  <ul>
-    <li><strong>v1</strong> — 2026-05-10 — initial review (FRESH mode, 7 dims + wuying leg, 5 judges + Round 2 debate)</li>
-  </ul>
-</section>
-
+  <div class="disclaimer">
+    <strong>Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-07-12 的公开资料（v1 基线 2026-05-10 发布；本版为 EVOLUTION 引擎升级全量重审，50 分制 → 250 分制，0.4.3；delta 证据来自 Brand Watch 事件流 watch/lenovo/events.yaml 的 3 条可溯源事件，每条含逐字引用与原文 URL，补充调研为联想集团 FY2025/26 年度业绩公告原文 PDF）。联想、Lenovo、ThinkPad、拯救者、YOGA、小新、moto、天禧、Qira 及相关商标归联想集团（0992.HK）及其关联公司所有；本报告与联想集团无任何赞助、授权或合作关系。5 位评委（傅盛、Steve Jobs、李可佳、吴俊东、张一鸣）的评分、verdict 与对话均为 AI 基于其公开发表资料的 in-character 模拟推断，非本人真实意见，不代表其个人或所在机构立场；Steve Jobs 已于 2011 年逝世，其视角为基于 1976–2011 公开言论的模拟。评委披露：傅盛为 OpenClaw 发起人，李可佳/吴俊东为 BotLearn（Agent 学习平台）联创——联想天禧Claw 属同类 Claw/Agent 生态产品，三人视角为"有据披露"的知情视角，非利益冲突回避项（联想不在三人 Self-Conflict 清单内）；张一鸣关联的字节跳动与联想存在 AI 生态合作与竞合关系，同样如实披露。v1（2026-05-10）只发布了 report.html/pdf，未落库 report.md 与逐评委 review 原稿；本版引用的 v1 立场均回溯自 versions/v1_2026-05-10.html，不伪造 v1 从未存在的中间产物。财务数据来自联想集团公开业绩公告及公开财经报道，可能存在偏差；全球 PC 份额 24.4%、15 年最大领先优势等为公司口径转述。本报告不构成投资建议、证券分析或任何形式的商业尽调建议。
+  </div>
 </div>
-
-<footer>
-  <div>本报告由 <strong>MBA — Metric Brand Auditor</strong> 自动生成 · cutoff 2026-05-10</div>
-  <div>Lead: MBA orchestrator · Judges: fusheng / jobs / likejia / wu-jundong / zhang-yiming</div>
-  <div>Team: 创意 Jason · 实现 清风 · 顾问 John · 协作 AI Claude Opus 4.7</div>
-  <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px dashed var(--c-border);">
-    想给自己的品牌跑一份这样的报告?
-    在 BotLearn 一键安装 →
-    <a href="https://www.botlearn.ai/skillhunt/v2/s/metric-brand-auditor" style="color: var(--c-accent); font-weight: 600;">↓ Install MBA</a>
-    · <a href="https://github.com/zhanglunet/mba" style="color: var(--c-accent);">GitHub</a>
-    · <a href="https://mbabrand.com" style="color: var(--c-accent);">mbabrand.com</a>
-  </div>
-  <div style="margin-top: 0.8rem; padding-top: 0.6rem; border-top: 1px dashed var(--c-border); font-size: 0.85rem;">
-    技术支持:<a href="https://marsdata.ai" style="color: var(--c-accent);">marsdata.ai</a>
-  </div>
-</footer>
 
 <script>
+// Radar chart — 5 judges × 5 lenses
 const radarCtx = document.getElementById('radarChart').getContext('2d');
 new Chart(radarCtx, {
   type: 'radar',
   data: {
-    labels: ['Origin authenticity', 'Category coinage', 'Leverage quality', 'Identity coherence', 'Real-world signal'],
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
     datasets: [
-      { label: '🐆 fusheng', data: [6, 3, 5, 3, 6], borderColor: '#d97706', backgroundColor: 'rgba(217,119,6,0.15)', borderWidth: 2 },
-      { label: '🍎 jobs', data: [6, 3, 6, 3, 5], borderColor: '#94a3b8', backgroundColor: 'rgba(148,163,184,0.15)', borderWidth: 2 },
-      { label: '🦞 likejia', data: [5, 2, 4, 3, 5], borderColor: '#dc2626', backgroundColor: 'rgba(220,38,38,0.15)', borderWidth: 2 },
-      { label: '📚 wu-jundong', data: [6, 3, 5, 3, 4], borderColor: '#16a34a', backgroundColor: 'rgba(22,163,74,0.15)', borderWidth: 2 },
-      { label: '🐘 zhang-yiming', data: [7, 3, 5, 4, 5], borderColor: '#1e293b', backgroundColor: 'rgba(30,41,59,0.15)', borderWidth: 2 }
+      {
+        label: '傅盛',
+        data: [6, 3, 5, 3, 7],
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217,119,6,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: 'Jobs',
+        data: [6, 3, 6, 3, 5],
+        borderColor: '#6b7280',
+        backgroundColor: 'rgba(107,114,128,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4, 2],
+      },
+      {
+        label: '李可佳',
+        data: [5, 2, 5, 3, 6],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '吴俊东',
+        data: [6, 3, 5, 3, 6],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '张一鸣',
+        data: [7, 4, 6, 4, 7],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
     ]
   },
-  options: { responsive: true, maintainAspectRatio: false, scales: { r: { suggestedMin: 0, suggestedMax: 10, ticks: { stepSize: 2 } } }, plugins: { legend: { position: 'bottom' } } }
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 } },
+        pointLabels: { font: { size: 11, weight: '600' } },
+        grid: { color: '#e5e2dc' },
+      }
+    },
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+    }
+  }
 });
 
+// Bar chart — lens means (sorted desc)
 const barCtx = document.getElementById('barChart').getContext('2d');
 new Chart(barCtx, {
   type: 'bar',
   data: {
-    labels: ['🐆 fusheng', '🍎 jobs', '🦞 likejia', '📚 wu-jundong', '🐘 zhang-yiming'],
-    datasets: [{ label: 'Total /50', data: [23, 23, 19, 21, 24], backgroundColor: ['#d97706', '#94a3b8', '#dc2626', '#16a34a', '#1e293b'] }]
+    labels: ['Signal', 'Origin', 'Leverage', 'Identity', 'Category'],
+    datasets: [{
+      label: '均值 (Mean)',
+      data: [6.2, 6.0, 5.4, 3.2, 3.0],
+      backgroundColor: ['#1a7a4a', '#4a7a5a', '#6b7280', '#a3705a', '#c1440e'],
+      borderRadius: 3,
+    }]
   },
-  options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y', scales: { x: { suggestedMin: 0, suggestedMax: 50 } }, plugins: { legend: { display: false } } }
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } },
+      y: { ticks: { font: { size: 11, weight: '600' } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `均值: ${ctx.parsed.x.toFixed(1)} / 10`
+        }
+      }
+    }
+  }
 });
 </script>
-
 </body>
 </html>

@@ -3,15 +3,15 @@
   "brand_cn": "橙仕汽车",
   "brand_en": "Chengshi Auto",
   "ticker": null,
-  "version": "v6",
-  "audit_date": "2026-05-18",
+  "version": "v7",
+  "audit_date": "2026-07-12",
   "panel": "auto",
   "score": {
-    "total": 31.0,
-    "max": 50,
-    "normalized": 6.2
+    "total": 151,
+    "max": 250,
+    "normalized": 6.04
   },
-  "tl_dr": "末端配送生产力品牌:场景切口清晰,真实应用信号增强,但服务数据透明度 和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50, 综合分 6.2/10。",
+  "tl_dr": "引擎升级全量重审(50 分制→250 分制):watch 回填坐实德国 1500 万欧元大单、 欧标认证与中远海运出海杠杆链,Origin/Category/Leverage 维持。但 2025-2026 公开信息近乎断流,唯一可核 2025 数据点是一条未回应的保修投诉——Signal 主驱动 降分,Identity 4.4 仍全卷最弱。归一化同尺度 6.20→6.04:场景是真的,品牌护城河 的证明逾期了。151/250 · 6.04/10。",
   "html_url": "/reports/chengshi-auto/",
   "pdf_url": "/reports/chengshi-auto/report.pdf",
   "api_url": "/api/reports/chengshi-auto.json",

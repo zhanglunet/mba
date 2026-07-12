@@ -1,0 +1,67 @@
+# watch/kimichat/events.yaml — Kimi(月之暗面)舆情事件流
+# schema 见 docs/16 §2;G3 冷启动首批(2026-07-12)。
+
+- id: 2026-01-29-kimichat-001
+  date: 2026-01-29
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 发布新一代开源模型 Kimi K2.5:万亿参数 MoE、15 万亿视觉+文本 Token 原生多模态训练
+  quote: "月之暗面发布Kimi K2.5模型，北京人工智能矩阵再添生力军"
+  quote_type: title
+  url: https://www.ncsti.gov.cn/kjdt/xwjj/202601/t20260129_236776.html
+  fetched_at: "2026-07-12T12:45:00Z"
+  lens_map: [category, signal]
+  note: >-
+    官方发布 2026-01-27,本条以北京国际科技创新中心(政务源)稿件收录,
+    日期以 URL 内嵌(t20260129)自证。开源多模态旗舰 —— W8 模型迭代节奏的锚点。
+
+- id: 2026-04-21-kimichat-002
+  date: 2026-04-21
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 发布并开源 Kimi K2.6:主攻长程代码与智能体,官方称多基准持平或优于闭源前沿模型
+  quote: "月之暗面新模型Kimi K2.6发布并开源"
+  quote_type: title
+  url: https://www.nbd.com.cn/articles/2026-04-21/4348672.html
+  fetched_at: "2026-07-12T12:45:00Z"
+  lens_map: [category, leverage, signal]
+  note: >-
+    「开源追平闭源」是 Kimi 品牌当前核心叙事;基准对比(HLE/SWE-Bench Pro/
+    DeepSearchQA)为厂商自报口径,评委消费时需独立核。日期以 URL 内嵌(2026-04-21)自证。
+
+- id: 2026-04-22-kimichat-003
+  date: 2026-04-22
+  dim: W6
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: K2.6 上线期间访问高峰致功能异常,官方致歉并全员额度重置作为补偿
+  quote: "新模型 Kimi K2.6 上线期间功能异常，月之暗面宣布全员额度重置作为补偿"
+  quote_type: title
+  url: https://finance.sina.com.cn/tech/digi/2026-04-22/doc-inhvkupw9253007.shtml
+  fetched_at: "2026-07-12T12:45:00Z"
+  lens_map: [identity, signal]
+  note: >-
+    可靠性事故(neg)× 快速补偿处置(pos)—— 需求过载本身也是热度佐证,判 mixed。
+    发布次日即发生,与 002 构成一组「发布-过载」联动信号。日期以 URL 内嵌(2026-04-22)自证。
+
+- id: 2026-06-08-kimichat-004
+  date: 2026-06-08
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 媒体报道:估值飙升至 300 亿美元,已开启新一轮融资
+  quote: "Kimi估值飙升至300亿美元，已开启新一轮融资"
+  quote_type: title
+  url: https://www.stcn.com/article/detail/3948559.html
+  fetched_at: "2026-07-12T12:45:00Z"
+  lens_map: [signal, leverage]
+  note: >-
+    一级市场对 K 系列开源路线的定价信号;300 亿美元为媒体报道口径,
+    融资未官宣完成,评委消费时注意区分。URL 无日期,日期以 curl 证券时报
+    原文页面时间(2026-06-08 15:16)核对。

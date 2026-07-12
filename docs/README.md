@@ -21,7 +21,7 @@
 | 10 | [10-deepening-perspectives.md](10-deepening-perspectives.md) | 贡献者 | seed → full tier 深化 SOP + 43 评委 tier 进度表 + Wuying 取数前提 |
 | 11 | [11-roadmap.md](11-roadmap.md) | 全员 | **开发路线图 + 进度日志**：P0-P3 优先级计划、当前阻断项、每次开发动作记录 |
 | 12 | [12-evolution-tracking.md](12-evolution-tracking.md) | 贡献者 | P3-B 报告订阅与品牌演化追踪设计 + 实现（触发器 / delta / 增量重跑 / 通知） |
-| 13 | [13-mcp-quickstart.md](13-mcp-quickstart.md) | **用户 / 集成方** | MCP server 快速上手：安装、一次完整审计、演化订阅、14 工具参考 |
+| 13 | [13-mcp-quickstart.md](13-mcp-quickstart.md) | **用户 / 集成方** | MCP server 快速上手：安装、一次完整审计、演化订阅、舆情信号、16 工具参考 |
 | 14 | [14-deepening-summary.md](14-deepening-summary.md) | 全员 | Perspective 深化收尾点时快照(2026-07-10):全景 + 坑记录,**非 live tracker**(权威 tier 名单以 docs/10 §6 / panels/*.yaml 为准) |
 | 15 | [15-brand-watch-prd.md](15-brand-watch-prd.md) | 产品 / 决策者 | **品牌舆情监控(Brand Watch)需求分析 PRD**:9 监控维度(招投标 W3 深潜)、事件模型与 P0-P3 分级、舆情→EVOLUTION 触发规则、13 品牌适用性矩阵 |
 | 16 | [16-brand-watch-implementation.md](16-brand-watch-implementation.md) | 贡献者 | **Brand Watch 实现与过程记录**:W 系列开发计划、数据层与校验器实现、源可达性验证表(含 b2b.10086.cn TLS workaround)、试点采集记录与 SOP;**做一项记一项** |
@@ -35,6 +35,6 @@
 ## 维护原则
 
 - **单一事实源**:行为以 `metric-brand-auditor/SKILL.md` 为准。文档解释 SKILL.md,不替代它。
-- **两种形态**:01-08 描述 Claude Code skill 模型;12-13 + `packages/mcp-server/` 是已实现的 MCP server 形态(mba-mcp-server v0.1.0,14 工具),`mcp-server-design.md` 是其原始设计草案。二者共享同一条 5 阶段流水线逻辑。
+- **两种形态**:01-08 描述 Claude Code skill 模型;12-13 + `packages/mcp-server/` 是已实现的 MCP server 形态(mba-mcp-server v0.2.0,16 工具),`mcp-server-design.md` 是其原始设计草案。二者共享同一条 5 阶段流水线逻辑。
 - **改 SKILL.md 之后**:对应章节也要更新(主要影响 03 / 04 / 08)。
 - **每个文件顶部 Status / Last verified**:从 v0.3 起强制(本批次先发,后续补)。

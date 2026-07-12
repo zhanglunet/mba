@@ -36,6 +36,7 @@ Lead 会:
 | `--panel-add pmarca` | slug | - | 本次临时追加一位评委,不修改 panel 文件 |
 | `--panel-drop jobs` | slug | - | 本次临时跳过一位评委,不修改 panel 文件 |
 | `--dry-run` | 开关 | off | 预览审计计划(解析路径/面板/模式),不执行任何搜索或文件写入 |
+| `--watch` | 开关 | off | Brand Watch 单次舆情扫描:只采可溯源事件进 `watch/<slug>/events.yaml` + 触发规则评估,不跑评委不出报告(docs/15) |
 | `--panel-merge` | 开关 | off | 跨面板对比模式:用第二套评委重新打分,生成两套面板的并排比较报告。需与 `--panel`/`--industry` 配合使用,且品牌必须已有历史报告 |
 | `list` | 子命令 | - | 列出已审计品牌 + 各自版本数 + 绑定的 panel |
 | `panels` | 子命令 | - | 列出 `panels/` 下所有 panel + judge 列表 |

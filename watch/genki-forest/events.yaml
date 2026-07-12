@@ -1,0 +1,66 @@
+# watch/genki-forest/events.yaml — 元气森林舆情事件流
+# schema 见 docs/16 §2;G3 冷启动首批(2026-07-12)。
+
+- id: 2025-11-24-genki-forest-001
+  date: 2025-11-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 媒体报道:告别单品依赖,连续三年双位数增长,营收冲 140 亿+
+  quote: "告别单品依赖，元气森林三年双位数增长，营收冲140亿+"
+  quote_type: title
+  url: https://news.qq.com/rain/a/20251124A03FVZ00
+  fetched_at: "2026-07-12T12:45:00Z"
+  lens_map: [signal, category]
+  note: >-
+    未上市公司无法定披露,营收口径为媒体报道(W5 在矩阵为 off,故按 W1 收录);
+    「告别单品依赖」= 从气泡水单品到多品类矩阵的叙事转折。日期以 URL 内嵌(20251124)自证。
+
+- id: 2026-04-01-genki-forest-002
+  date: 2026-04-01
+  dim: W1
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: 消费参考:饮料大盘收缩背景下元气森林逆势扩张(咸宁创新院 3 月底揭幕、一期投资 2 亿)
+  quote: "饮料市场收缩，元气森林扩张丨消费参考"
+  quote_type: title
+  url: https://finance.sina.com.cn/roll/2026-04-01/doc-inhsyfuw2731777.shtml
+  fetched_at: "2026-07-12T12:45:00Z"
+  lens_map: [category, leverage]
+  note: >-
+    行业收缩 × 单点扩张的反差信号,强度弱(P3)但方向与 001/004 一致。
+    日期以 URL 内嵌(2026-04-01)自证。
+
+- id: 2026-04-12-genki-forest-003
+  date: 2026-04-12
+  dim: W9
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: 渠道观察:从爆款到放量,经销商体系成增长瓶颈
+  quote: "从爆款到放量，元气森林经销商卡在哪了？"
+  quote_type: title
+  url: https://finance.sina.com.cn/tech/roll/2026-04-12/doc-inhufkkk5737913.shtml
+  fetched_at: "2026-07-12T12:45:00Z"
+  lens_map: [leverage]
+  note: >-
+    合作网点已破 128 万家(2025 底口径),但媒体指出经销商/终端动销环节存在瓶颈 ——
+    放量叙事(pos)与渠道摩擦(neg)并存,判 mixed。日期以 URL 内嵌(2026-04-12)自证。
+
+- id: 2026-05-28-genki-forest-004
+  date: 2026-05-28
+  dim: W9
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 第 7 座自建工厂签约落地河南许昌:总投资超 10 亿、8 条无菌线、年产能 12 亿瓶
+  quote: "元气森林落子许昌：第7座工厂背后的“重资产+重研发”全国布局"
+  quote_type: title
+  url: https://www.chinanews.com.cn/cj/2026/05-28/10630090.shtml
+  fetched_at: "2026-07-12T12:45:00Z"
+  lens_map: [leverage, signal]
+  note: >-
+    签约仪式 2026-05-27,本条以中新网稿收录,日期以 URL 内嵌(2026/05-28)自证。
+    自建供应链累计投入近 80 亿 —— 「重资产化」是复审 leverage 镜头的关键变量。
