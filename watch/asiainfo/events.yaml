@@ -91,3 +91,78 @@
     docs/15 §4.2.2 分类学「采购黑名单/处罚性禁入 → P0」的真实实例:运营商是亚信
     命脉客户群,子公司层级的禁入虽范围有限,但对「集采份额=护城河」的叙事是直接
     警讯。日期以 URL 内嵌(2025-04-07)自证;处罚公示原文待回溯(docs/16 §4 leads)。
+
+# ── 二批补采(2026-07-12,过程见 docs/16 §4.5)──────────────────────────
+
+- id: 2025-07-01-asiainfo-007
+  date: 2025-07-01
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 跻身中国「大模型应用交付供应商」六强
+  quote: "权威发布！亚信科技跻身中国“大模型应用交付供应商”六强"
+  quote_type: title
+  url: https://www.asiainfo.com/zh_cn/content_4884.html
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [category, leverage]
+  note: 官网一手稿;URL 无日期,已 curl 页面核对(2025-07-01)。
+
+- id: 2025-08-05-asiainfo-008
+  date: 2025-08-05
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 盈利预喜:预计全年利润优于上年,AI 大模型交付爆发式增长
+  quote: "亚信科技预计全年利润优于上年 AI大模型应用与交付爆发式增长"
+  quote_type: title
+  url: https://www.stcn.com/article/detail/2932591.html
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [signal]
+  note: URL 无日期,已 curl 页面核对(2025-08-05)。
+
+- id: 2025-08-22-asiainfo-009
+  date: 2025-08-22
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: 亚信安全 2025 年半年度报告披露
+  quote: "亚信安全科技股份有限公司 2025 年半年度报告"
+  quote_type: title
+  url: https://stockmc.xueqiu.com/202508/688225_20250822_RBL3.pdf
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [signal]
+  note: 统一品牌口径下亚信安全侧的法定披露;日期以 URL 内嵌(20250822)自证。
+
+- id: 2026-03-24-asiainfo-010
+  date: 2026-03-24
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: 2025 年报:营收 63.02 亿(−5.2%),核心系统 −8.9%、智能数据运营 +34.1%
+  quote: "亚信科技：2025年营业收入约63.02亿元 同比降5.2%"
+  quote_type: title
+  url: https://finance.eastmoney.com/a/202603243681838932.html
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [signal, leverage]
+  note: >-
+    收缩收窄(2024 −15.8% → 2025 −5.2%)但核心 BSS 仍降;第二曲线(智能数据运营
+    +34.1%、占 12.8%)起量 —— v1 审计「换挡」判断的年度校验点。日期以 URL 内嵌
+    (20260324)自证。2026 年公司提出「AI First」战略(据年报报道)。
+
+- id: 2026-04-11-asiainfo-011
+  date: 2026-04-11
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: 亚信安全 2025 年年度报告披露(已并表亚信科技)
+  quote: "亚信安全科技股份有限公司2025 年年度报告"
+  quote_type: title
+  url: http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-4/2026-04-11/12080670.PDF
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [signal, identity]
+  note: 2024-11 完成对亚信科技的控制并表(「一个亚信」资本层面落地);日期以 URL 内嵌(2026-04-11)自证。

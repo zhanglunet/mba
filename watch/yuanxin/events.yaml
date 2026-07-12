@@ -90,3 +90,65 @@
   fetched_at: "2026-07-12T06:18:00Z"
   lens_map: [signal, category]
   note: 年度组网目标的公开口径(324 颗);日期以 URL 内嵌(2026-07-10)自证。
+
+# ── 二批补采(2026-07-12,过程见 docs/16 §4.5)──────────────────────────
+
+- id: 2026-05-23-yuanxin-007
+  date: 2026-05-23
+  dim: W9
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: 千帆星座「三连发」提速,媒体聚焦国产商业火箭运力短板
+  quote: "新动向！千帆星座步入全球组网快车道，国产商业火箭正加紧补上运力短板"
+  quote_type: title
+  url: https://www.stcn.com/article/detail/3923793.html
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [leverage, signal]
+  note: >-
+    URL 无日期,已 curl 页面核对(2026-05-23)。组网提速(pos)与火箭供应链瓶颈
+    (neg)并存 —— v1 审计「发射节奏是胜负手」的供应链侧信号。
+
+- id: 2026-06-09-yuanxin-008
+  date: 2026-06-09
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 首颗手机直连试验星发射成功(朱雀二号改进型,一箭双星含中国移动 02 星)
+  quote: "垣信首颗手机直连试验星成功发射：攻关卫星通信与5G/6G深度融合"
+  quote_type: title
+  url: https://finance.sina.com.cn/tech/roll/2026-06-09/doc-iniavmyk6369254.shtml
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [category, leverage]
+  note: >-
+    3GPP NTN 手机直连路线开测 —— 从「宽带星座」向「手机直连」品类扩展的
+    第一个硬信号;与中国移动 02 星同发(生态信号)。日期以 URL 内嵌(2026-06-09)自证。
+
+- id: 2026-06-10-yuanxin-009
+  date: 2026-06-10
+  dim: W1
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: 媒体议程:手机直连卫星「主流玩家×主流赛道」
+  quote: "主流玩家×主流赛道！手机直连卫星迎来新机遇"
+  quote_type: title
+  url: https://finance.sina.com.cn/tech/roll/2026-06-10/doc-iniaxzpe5754381.shtml
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [category]
+  note: P3 背景语境,不上卡片;日期以 URL 内嵌(2026-06-10)自证。
+
+- id: 2026-06-19-yuanxin-010
+  date: 2026-06-19
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 国内首例:无改造存量商用手机直连卫星 5G 制式语音与视频通话
+  quote: "国内首例：垣信卫星实现无改造手机直连卫星通话，通话质量比肩 5G"
+  quote_type: title
+  url: https://field.10jqka.com.cn/20260619/c677590396.shtml
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [category, signal]
+  note: 手机直连从「试验星」到「打通通话」十日兑现 —— 技术节奏信号;日期以 URL 内嵌(20260619)自证。
