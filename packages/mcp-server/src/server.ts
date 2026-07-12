@@ -442,7 +442,7 @@ export function createServer(): McpServer {
     'get_watch_events',
     {
       description:
-        '读品牌舆情事件流（watch/<slug>/events.yaml），附 30 天滚动窗触发规则评估（P0≥1 / P1≥2 / 加权≥5 → 建议重审）。只读；watch 只建议、不改分。',
+        '读品牌舆情事件流（watch/<slug>/events.yaml），附 30 天滚动窗触发规则评估（P0≥1 / P1≥3 / 加权≥6 → 建议重审）。只读；watch 只建议、不改分。',
       inputSchema: {
         brand: z.string().min(1).describe('品牌 slug（watch/ 目录名）'),
         since: z.string().optional().describe('只返回该日期（含）之后的事件（YYYY-MM-DD）'),

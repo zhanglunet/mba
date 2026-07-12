@@ -287,7 +287,7 @@ Five independent capabilities, used together:
   recording; ③ append events to `watch/<brand-slug>/events.yaml`(id `<date>-<slug>-NNN`, judgment
   fields marked `model-judged`); ④ run `python3 scripts/watch-tools/validate_watch.py` — must pass;
   ⑤ evaluate the trigger rule via `python3 scripts/watch-tools/evaluate_triggers.py --brand <slug>`:
-  rolling 30-day window, `P0 ≥ 1` or `P1 ≥ 2` or weighted count (P0=4, P1=2, P2=0.5) ≥ 5 → print an
+  rolling 30-day window, `P0 ≥ 1` or `P1 ≥ 3` or weighted count (P0=4, P1=2, P2=0.5) ≥ 6 → print an
   EVOLUTION recommendation. Watch events **never change scores** — scores only come from a judged
   re-audit (docs/15 §5.3 boundary).
 - `--no-judges` — produce only the synthesis (skip the judge panel)

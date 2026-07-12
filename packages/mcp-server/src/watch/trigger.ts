@@ -2,14 +2,14 @@ import type { WatchEvent, WatchTriggerEvaluation } from '../types.js';
 
 /**
  * 触发规则运行时评估(docs/15 §5.3;与 scripts/watch-tools/evaluate_triggers.py 同一套语义):
- * 滚动 windowDays 天窗口(闭区间)内,R1 P0≥1 / R2 P1≥2 / R3 加权 4·2·0.5 ≥5 任一命中
+ * 滚动 windowDays 天窗口(闭区间)内,R1 P0≥1 / R2 P1≥3 / R3 加权 4·2·0.5 ≥6 任一命中(2026-07-12 校准,docs/16 §8.3)
  * → 建议 EVOLUTION 重审。默认只数未消费事件;includeConsumed 切 PRD 严格口径。
  *
  * 边界:只建议、不改分——命中只产生「建议重审」,任何分数都必须来自评委重审。
  */
 
 const WEIGHTS: Record<string, number> = { P0: 4, P1: 2, P2: 0.5, P3: 0 };
-const WEIGHTED_THRESHOLD = 5;
+const WEIGHTED_THRESHOLD = 6;
 
 export function evaluateTrigger(
   events: WatchEvent[],
@@ -32,7 +32,7 @@ export function evaluateTrigger(
 
   const rulesHit: string[] = [];
   if (counts['P0'] >= 1) rulesHit.push('R1:P0>=1');
-  if (counts['P1'] >= 2) rulesHit.push('R2:P1>=2');
+  if (counts['P1'] >= 3) rulesHit.push('R2:P1>=3');
   if (weighted >= WEIGHTED_THRESHOLD) rulesHit.push(`R3:weighted ${weighted}>=${WEIGHTED_THRESHOLD}`);
 
   return {
