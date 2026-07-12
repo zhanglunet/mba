@@ -27,6 +27,7 @@ private/
 
 # Cloudflare Pages 本地 build 产物(CF Pages 自己会 build,不入库)
 site/reports/
+site/watch/
 
 # scripts/print_report.sh 的 PDF 渲染中间产物 —— 每次跑就重生成,不入库
 published/reports/*/report.print.html

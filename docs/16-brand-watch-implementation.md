@@ -1,6 +1,6 @@
 # 16 — 品牌舆情监控实现与过程记录(Brand Watch Implementation)
 
-> Status: **M1 进行中**(W1/W2/W3 ✅,W4 机制已落、验收待真实重审)· Last verified: 2026-07-12
+> Status: **M1 完成 · M2 首项落地**(W1-W4 ✅,W5 ✅)· Last verified: 2026-07-12
 > 需求与维度设计见 **docs/15**(PRD);本文是**开发计划 + 实现细节 + 过程记录**,
 > 按 W 系列工作项组织,做一项记一项(格式对齐 docs/11 的进度日志纪律)。
 
@@ -15,8 +15,8 @@
 | **W1** | 数据层 + 硬 gate | `watch/matrix.yaml`(适用性矩阵单一真源)· `watch/<slug>/events.yaml` schema · `scripts/watch-tools/validate_watch.py`(静态校验 + `--selftest`)· 接入 panel-validation CI | 校验器全绿 + 自测有牙 + CI 跑 | ✅ 2026-07-12 |
 | **W2** | 源可达性验证 | PRD §4.2.3 清单逐源真 curl,🔍 → ✅/⚠️/❌,坑记录在案 | 每源有结论 + workaround 可复现 | ✅ 2026-07-12(见 §3) |
 | **W3** | 试点采集(持续) | 亚信 / 奇安信 / 垣信三品牌真实事件回填与增量 | **每品牌 ≥10 条**可溯源事件(M1 验收) | ✅ 2026-07-12 二批后 **11/11/10,验收达成**(见 §4.5);后续增量随 W6 周扫 |
-| **W4** | 半自动扫描进 skill | `/mba <brand> --watch` 单次扫描 SOP 进 SKILL.md;EVOLUTION Phase 2 先消费 events.yaml 再补扫 | 一次重审的 delta 调研直接引用事件流 | 🟡 机制已落(2026-07-12,见 §5);验收待下一次真实重审 |
-| **W5** | 首页徽章 + 时间线页(M2) | `build_home_cards.py` 读 watch 产出 P0/P1 徽章(进 REPORTS 生成区 + 漂移 gate)· `/watch/<slug>/` 时间线页 | 徽章与 events.yaml 零漂移 | ⬜ |
+| **W4** | 半自动扫描进 skill | `/mba <brand> --watch` 单次扫描 SOP 进 SKILL.md;EVOLUTION Phase 2 先消费 events.yaml 再补扫 | 一次重审的 delta 调研直接引用事件流 | ✅ 2026-07-12 **验收达成**:奇安信 v1→v2(见 §5) |
+| **W5** | 首页徽章 + 时间线页(M2) | `build_home_cards.py` 读 watch 产出 P0/P1 徽章(进 REPORTS 生成区 + 漂移 gate)· `/watch/<slug>/` 时间线页 | 徽章与 events.yaml 零漂移 | ✅ 2026-07-12(见 §6) |
 | **W6** | 定期采集(M2) | CCR Routines / cron 周扫,按矩阵扫开启维度 | 13 品牌适用维度覆盖 ≥80% | ⬜ |
 | **W7** | 触发与联动(M3) | 触发规则评估器(30 天窗 P0≥1 / P1≥2)· MCP `get_watch_events` / `record_watch_event` · 订阅链路下发重审建议 | 触发建议精确率 ≥60% | ⬜ |
 
@@ -188,19 +188,48 @@ panel 模板 `mba_version` 同步 bump,过版本对齐 gate):
    探针直接标 CHANGED);坑 #2 已履行(两个派生产物重生成,personas 零漂移,
    index.json 仅时间戳已回退)。
 
-**验收状态**:机制落地;「一次真实重审的 delta 调研直接引用事件流」待下一次品牌重审
-(候选:奇安信 —— watch 流已有 2025 年报 −12.87 亿 P1 事件,天然的 EVOLUTION 案例)。
+**验收状态(2026-07-12,达成)**:**奇安信 v1→v2 是 MBA 首个由 watch 事件流驱动的
+EVOLUTION**。diff plan 直接消费 `watch/qianxin/events.yaml` 全部 11 条事件:P1
+`2026-01-31-qianxin-002` / `2026-04-30-qianxin-003` 驱动 Signal 重审(锚点校正:v1 引
+2023 口径 67 亿营收,FY2025 现实 43.92 亿 + 净亏 12.87 亿 → 全员下调 6.8→5.7),
+P2 中标×5 + CyberSec-Eval 作 Leverage 对冲证据(7.0→6.5)。Origin/Category/Identity
+无新证据保留(↔)。结果 185→175(6.17→5.83)。报告的 What-changed 段与 Sources
+逐条引用事件 id;重打分记录在 `reviews/v2_rescores.md`。
 
-## 6. 下一步(按 §1 顺序)
+**consumed_by 机制(W4↔W5 连接件)**:被审计消费的事件标 `consumed_by: vN`
+(校验器强制 vN 格式)——奇安信 11 条标 v2;亚信 4 条(001/002/003/005,其信息已在
+v1 证据基内)标 v1。徽章(§6)只数**未消费**的 P0/P1,审计一跑徽章即清,闭环成立。
 
-1. **W5**:徽章生成进 `build_home_cards.py`(P3 永不上卡,P0/P1 计数 + 30 天窗;
-   沿用 REPORTS 生成区 + `--check` 漂移 gate 模式)+ `/watch/<slug>/` 时间线页;
-2. **W4 验收**:挑一个 watch 流已有 P0/P1 事件的品牌(首选奇安信)真跑一次
-   EVOLUTION,验证 delta 调研直接引用事件流;
-3. **开放 leads**(随 W6 周扫回收):移动集采公示(需浏览器)、亚信禁入处罚原文、
-   奇安信大行 NDR / 中海油框架。
+## 6. W5 实现记录(首页徽章 + 时间线页,2026-07-12)
 
-## 7. 单次扫描操作 SOP(M1 人肉/半自动版)
+1. **首页「舆情待审」行**:`build_home_cards.py` 新增 `load_watch_pending()`(数未消费
+   P0/P1)与 `render_watch_line()`(P0/P1 chips + 触发规则命中时的「建议重审」chip +
+   `/watch/<slug>/` 链接,z-index 浮于拉伸链接上)。进 REPORTS 生成区,由既有
+   `--check` 漂移 gate 覆盖;CSS 手动加在标记外(与 footer 同模式)。
+   **P2/P3 永不上卡**(docs/15 §5.2)。
+2. **实现偏差(记录在案)**:PRD §5.3 的触发窗是「滚动 30 天」,实现改为
+   「**未消费**(无 consumed_by)的 P0/P1」——滚动窗依赖"今天",会让生成物随日期漂移、
+   打破 `--check` 确定性;「未消费」语义等价于"这些信号还没进任何审计",更可执行。
+   W7 做触发评估器时可在运行时(非生成物)恢复 30 天窗。
+3. **时间线页**:`scripts/build_watch_pages.py` 生成 `site/watch/<slug>/index.html`
+   (事件倒序、P0/P1 高亮、consumed 标记、每条直链原文、页脚重申"不改分"边界)。
+   接入 `site/build.sh` 的 python 守卫块(与 agents-api 同模式),`site/watch/` 已
+   gitignore(与 `site/reports/` 同:deploy 时生成,不入库)。
+4. **验证**:headless 首页 —— 亚信卡 `P0×1 P1×1 建议重审`、垣信卡 `P1×3 建议重审`、
+   奇安信(全部已消费)无徽章;`/watch/asiainfo/` 11 条 + 触发命中;
+   奇安信 v2 报告页 render-qa 离线 13/13 通过。
+
+## 7. 下一步(按 §1 顺序)
+
+1. **W6 定期采集**:CCR Routines / cron 周扫(按矩阵扫开启维度,SOP=§8);
+   顺带回收开放 leads:移动集采公示(需浏览器)、亚信禁入处罚原文、
+   奇安信大行 NDR / 中海油框架;
+2. **W7 触发与联动**:运行时触发评估器(可恢复 PRD 的 30 天滚动窗)+ MCP
+   `get_watch_events` / `record_watch_event` + 订阅链路下发重审建议;
+3. **亚信 / 垣信重审**:两卡都已亮「建议重审」——亚信的 P0(禁入)与 P1(2025 年报)、
+   垣信的 P1×3(手机直连双事件 + 一箭 20 星)都是现成的 EVOLUTION 素材。
+
+## 8. 单次扫描操作 SOP(M1 人肉/半自动版)
 
 ```
 1. 选品牌,读 watch/matrix.yaml 确认开启维度

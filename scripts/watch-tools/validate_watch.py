@@ -147,6 +147,9 @@ def validate_events(slug, events, brands, today):
             errs.append(f"{ctx}: quote 超 {QUOTE_MAX} 字({len(q)})——只存短逐字引用 + 链接原文")
         if e.get("quote_type") not in (None, *QUOTE_TYPES):
             errs.append(f"{ctx}: quote_type `{e['quote_type']}` 非法(title/body)")
+        cb = e.get("consumed_by")
+        if cb is not None and not re.fullmatch(r"v\d+", str(cb)):
+            errs.append(f"{ctx}: consumed_by `{cb}` 非法(应为 vN,标记该事件已被哪个审计版本消费)")
         if not str(e["url"]).startswith(("http://", "https://")):
             errs.append(f"{ctx}: url 必须是 http(s) 绝对地址")
         if not FETCHED_RE.match(str(e["fetched_at"])):
@@ -222,6 +225,7 @@ def selftest():
         ("severity 非法必抓", [ok_event(severity="P9")], 1),
         ("lens_map 越界必抓", [ok_event(lens_map=["signal", "vibe"])], 1),
         ("url 非 http 必抓", [ok_event(url="ftp://x")], 1),
+        ("consumed_by 非 vN 必抓", [ok_event(consumed_by="yes")], 1),
     ]
     failed = []
     for name, events, expect_min in cases:

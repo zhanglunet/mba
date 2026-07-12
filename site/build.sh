@@ -42,6 +42,10 @@ if command -v python3 >/dev/null 2>&1; then
     echo "[mba-build] regenerating site/api/* from sources"
     python3 "$REPO_ROOT/scripts/build_agents_api.py" || \
       echo "[mba-build] WARN: build_agents_api.py failed — using committed site/api/*"
+    echo "[mba-build] generating watch timeline pages"
+    rm -rf "$SITE_DIR/watch"
+    python3 "$REPO_ROOT/scripts/build_watch_pages.py" || \
+      echo "[mba-build] WARN: build_watch_pages.py failed — watch pages skipped"
   else
     echo "[mba-build] no PyYAML in build env — using committed site/api/*"
   fi

@@ -16,6 +16,7 @@
   quote_type: title
   url: https://www.21jingji.com/article/20240117/herald/15daf6cce31c1e3c52a5a3200cef5667.html
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v1
   lens_map: [leverage, identity, signal]
   note: 「亚信帝国」重聚的起点事件;日期以 URL 内嵌(20240117)自证。
 
@@ -30,6 +31,7 @@
   quote_type: title
   url: https://m.21jingji.com/article/20240326/herald/b40e9bf54bedb43f8222d948c8aa3c44_zaker.html
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v1
   lens_map: [identity, origin]
   note: 重组叙事进入主流财经媒体议程;日期以 URL 内嵌(20240326)自证。
 
@@ -44,6 +46,7 @@
   quote_type: title
   url: https://www.21jingji.com/article/20240815/herald/25e491dbc263e57ce57dc198356e78c3.html
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v1
   lens_map: [signal]
   note: 上市以来首个中期亏损;日期以 URL 内嵌(20240815)自证。
 
@@ -72,6 +75,7 @@
   quote_type: title
   url: https://finance.sina.com.cn/stock/stockzmt/2025-03-15/doc-inepsvuv8924563.shtml
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v1
   lens_map: [signal, leverage]
   note: 2024 全年营收 66.46 亿(−15.8%)的年报季信号;日期以 URL 内嵌(2025-03-15)自证。
 
