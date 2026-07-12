@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MBA Logo 设计规范</title>
+<meta name="description" content="mbabrand.com 站标的设计说明:五镜头雷达 glyph + 字标的构成、几何、色彩、动效与使用规范。" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+<style>
+  :root {
+    --ink: #111;
+    --paper: #faf8f3;
+    --muted: #6b6760;
+    --rule: #1a1a1a;
+    --accent: #c1440e;
+    --accent-dark: #d95f27;
+    --card: #ffffff;
+    --hair: #e2ddd3;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: ui-sans-serif, "Inter", -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 40px 28px 72px; }
+
+  header {
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 14px; margin-bottom: 30px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .mark { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .02em; font-size: 23px; line-height: 1; color: var(--ink); text-decoration: none; }
+  .mark .dot { color: var(--accent); }
+  .mark-glyph { display: block; flex-shrink: 0; }
+  nav a { font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+  nav a:hover, nav a[aria-current] { color: var(--accent); border-color: var(--accent); }
+
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; font-weight: 800; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); font-size: 15px; margin: 0 0 34px; max-width: 68ch; }
+  h2 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin: 44px 0 14px; padding-top: 18px; border-top: 1px solid var(--rule); }
+  p { font-size: 14.5px; max-width: 72ch; }
+  li { font-size: 14.5px; }
+  code { background: #f1ede4; border: 1px solid var(--hair); border-radius: 3px; padding: 1px 5px; font-size: .88em; }
+  pre { background: #16130e; color: #e8e2d5; border-radius: 8px; padding: 16px 18px; overflow-x: auto; font-size: 12.5px; line-height: 1.55; }
+  pre code { background: none; border: none; padding: 0; color: inherit; }
+
+  /* hero showcase */
+  .hero {
+    background: var(--card); border: 1px solid var(--hair); border-radius: 10px;
+    padding: 48px 24px; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap;
+  }
+  .hero .word { font-weight: 800; font-size: 64px; letter-spacing: .01em; line-height: 1; }
+  .hero .word .dot { color: var(--accent); }
+
+  /* anatomy */
+  .anatomy { display: grid; grid-template-columns: 220px 1fr; gap: 26px; align-items: center; }
+  @media (max-width: 640px) { .anatomy { grid-template-columns: 1fr; } }
+  .anatomy ol { margin: 0; padding-left: 20px; }
+  .anatomy li { margin-bottom: 10px; }
+
+  /* variants */
+  .variants { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+  .variant { background: var(--card); border: 1px solid var(--hair); border-radius: 8px; padding: 22px 14px 12px; text-align: center; }
+  .variant.dark { background: #111; border-color: #333; }
+  .variant .cap { font-size: 11.5px; color: var(--muted); margin-top: 14px; letter-spacing: .04em; }
+  .variant.dark .cap { color: #9a948a; }
+  .v-lockup { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 19px; line-height: 1; }
+  .v-lockup .dot { color: var(--accent); }
+  .variant.dark .v-lockup { color: var(--paper); }
+  .variant.dark .v-lockup .dot { color: var(--accent-dark); }
+  .fav-row { display: inline-flex; gap: 14px; align-items: flex-end; }
+
+  /* color table */
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--hair); }
+  th { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .swatch { display: inline-block; width: 15px; height: 15px; border-radius: 3px; border: 1px solid rgba(0,0,0,.18); vertical-align: -2px; margin-right: 7px; }
+
+  .dont li { margin-bottom: 6px; }
+  .note { background: #fff7ed; border: 1px solid var(--accent); border-radius: 6px; padding: 12px 16px; font-size: 13.5px; }
+
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* logo motion(与首页一致)*/
+  .radar-data { stroke-dasharray: 100; }
+  .radar-dot { transform-box: fill-box; transform-origin: center; }
+  @media (prefers-reduced-motion: no-preference) {
+    .animate .radar-data { animation: mba-draw 1.1s cubic-bezier(.6,0,.25,1) .2s backwards; }
+    .animate .radar-dot { animation: mba-pop .4s cubic-bezier(.2,1.6,.4,1) 1.2s backwards; }
+  }
+  @keyframes mba-draw { from { stroke-dashoffset: 100; fill-opacity: 0; } to { stroke-dashoffset: 0; fill-opacity: 1; } }
+  @keyframes mba-pop { from { transform: scale(0); } to { transform: scale(1); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="/">
+      <svg class="mark-glyph" viewBox="0 0 64 64" width="36" height="36" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="gHead" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/>
+        </linearGradient></defs>
+        <polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+        <g fill="none" stroke="#111" opacity=".12" stroke-width="1">
+          <polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/>
+          <path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/>
+        </g>
+        <polygon points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#gHead)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/>
+      </svg>
+      <span>MBA<span class="dot">.</span></span>
+    </a>
+    <nav>
+      <a href="/">品牌监控</a>
+      <a href="/watch/">舆情信号</a>
+      <a href="/panorama.html">评委全景</a>
+      <a href="/docs.html" aria-current="page">文档</a>
+      <a href="https://github.com/zhanglunet/mba">GitHub</a>
+    </nav>
+  </header>
+
+  <h1>MBA Logo 设计规范</h1>
+  <p class="lede">站标 = <strong>五镜头雷达 glyph</strong> + <strong>MBA. 字标</strong>。图形直接取自 MBA 报告的核心视觉——五镜头雷达图:一个正在被打分的品牌,一次正在成形的审计。本页是唯一权威规范;Markdown 版见 <a href="https://github.com/zhanglunet/mba/blob/main/docs/17-logo-design.md" style="color:var(--accent)">docs/17-logo-design.md</a>。</p>
+
+  <!-- ── 概览 ─────────────────────────────────────────── -->
+  <div class="hero animate">
+    <svg viewBox="0 0 64 64" width="150" height="150" role="img" aria-label="MBA 雷达 glyph">
+      <defs><linearGradient id="gHero" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/>
+      </linearGradient></defs>
+      <polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+      <g fill="none" stroke="#111" opacity=".12" stroke-width="1">
+        <polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/>
+        <path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/>
+      </g>
+      <polygon class="radar-data" pathLength="100" points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#gHero)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle class="radar-dot" cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/>
+    </svg>
+    <div class="word">MBA<span class="dot">.</span></div>
+  </div>
+
+  <!-- ── 设计理念 ─────────────────────────────────────── -->
+  <h2>01 · 设计理念</h2>
+  <p><strong>产品即符号。</strong>MBA 的方法论是"固定 5 镜头 × 7 维度,N 评委独立打分"——每份报告的第一张图都是五镜头雷达。logo 不另造抽象图形,直接把这张雷达图提炼成标志:懂产品的人一眼认出出处,不懂的人也能读出"测量"与"评分"。</p>
+  <ul>
+    <li><strong>外层五边形</strong>:评分框架——5 个镜头,固定、可比、不漂移;</li>
+    <li><strong>内部数据形</strong>:一次审计——五个镜头上各有高低,真实的品牌从来不是满分正多边形;</li>
+    <li><strong>峰值评分点</strong>:最高分镜头上的强调点——每个品牌都有它最锋利的一面;</li>
+    <li><strong>MBA. 字标</strong>:延续站点原有的编辑部刊头风格,句点收尾 = "审计有结论"。</li>
+  </ul>
+  <p class="note"><strong>Anti-fabrication 备注</strong>:数据形的五个半径是纯造型比例(见 §03),<strong>不是任何真实品牌的评分</strong>,禁止把它当成示例数据引用。</p>
+
+  <!-- ── 构成 ─────────────────────────────────────────── -->
+  <h2>02 · 构成</h2>
+  <div class="anatomy">
+    <svg viewBox="0 0 64 64" width="200" height="200" role="img" aria-label="glyph 构成标注">
+      <defs><linearGradient id="gAna" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/>
+      </linearGradient></defs>
+      <polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+      <g fill="none" stroke="#111" opacity=".12" stroke-width="1">
+        <polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/>
+        <path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/>
+      </g>
+      <polygon points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#gAna)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/>
+    </svg>
+    <ol>
+      <li><strong>评分框架</strong> — 正五边形外框,墨色 2px 描边,圆角折点(呼应报告图表);</li>
+      <li><strong>网格</strong> — 50% 内环 + 五条辐条,墨色 12% 透明度,提供"图表感"但不抢主体;</li>
+      <li><strong>数据形</strong> — 烧橙 2.5px 描边 + 自上而下 30%→6% 渐隐填充;</li>
+      <li><strong>评分点</strong> — 顶点(镜头 1)上 r3.2 圆点,纸色描边把它从线里"抬"出来;</li>
+      <li><strong>字标</strong> — MBA + 烧橙句点,extrabold,字距 +0.02em,与 glyph 间距 10px、垂直居中。</li>
+    </ol>
+  </div>
+
+  <!-- ── 几何 ─────────────────────────────────────────── -->
+  <h2>03 · 几何</h2>
+  <ul>
+    <li>viewBox <code>0 0 64 64</code>,中心 <code>(32, 33)</code>,外接圆半径 <code>R = 26</code>;</li>
+    <li>顶点朝上,五个顶点位于 <code>−90° / −18° / 54° / 126° / 198°</code>;</li>
+    <li>内环网格半径 <code>0.5 R</code>;</li>
+    <li>数据形五个半径比例(自顶点顺时针):<code>0.94 · 0.66 · 0.78 · 0.55 · 0.72</code> —— 峰值在顶点,整体重心略偏右下,形成不对称的张力;</li>
+    <li>评分点圆心 = 数据形顶点 <code>(32, 8.6)</code>,半径 <code>3.2</code>,纸色描边 <code>1.5</code>。</li>
+  </ul>
+
+  <!-- ── 色彩 ─────────────────────────────────────────── -->
+  <h2>04 · 色彩</h2>
+  <table>
+    <thead><tr><th>Token</th><th>值</th><th>用途</th><th>对比度(vs 底色)</th></tr></thead>
+    <tbody>
+      <tr><td><span class="swatch" style="background:#111"></span><code>--ink</code></td><td>#111111</td><td>外框、字标(纸底)</td><td>≈ 16 : 1 ✓</td></tr>
+      <tr><td><span class="swatch" style="background:#c1440e"></span><code>--accent</code></td><td>#c1440e</td><td>数据形、评分点、句点(纸底)</td><td>≈ 4.8 : 1 ✓(图形/大字号)</td></tr>
+      <tr><td><span class="swatch" style="background:#faf8f3"></span><code>--paper</code></td><td>#faf8f3</td><td>底色、评分点描边</td><td>—</td></tr>
+      <tr><td><span class="swatch" style="background:#d95f27"></span><code>--accent-dark</code></td><td>#d95f27</td><td><strong>深色底专用</strong>强调色</td><td>≈ 5.0 : 1 vs #111 ✓</td></tr>
+    </tbody>
+  </table>
+  <p>渐变填充:<code>#c1440e</code> 自上而下 <code>stop-opacity .30 → .06</code>。深色底版本外框与字标改用纸色,强调色换 <code>--accent-dark</code>(#c1440e 在墨底上只有 ≈3.4:1,不达标)。</p>
+
+  <!-- ── 动效 ─────────────────────────────────────────── -->
+  <h2>05 · 动效</h2>
+  <p>页面加载时,logo 演一遍"打分":数据形沿边描线画出(<code>pathLength=100</code> + <code>stroke-dashoffset 100→0</code>),随后评分点弹出。</p>
+  <table>
+    <thead><tr><th>元素</th><th>动画</th><th>时长 / 缓动 / 延迟</th></tr></thead>
+    <tbody>
+      <tr><td>数据形</td><td>描线 + 填充渐显</td><td>1.1s · cubic-bezier(.6,0,.25,1) · 0.2s</td></tr>
+      <tr><td>评分点</td><td>scale 0→1 弹出</td><td>0.4s · cubic-bezier(.2,1.6,.4,1) · 1.2s</td></tr>
+      <tr><td>评分点(hover)</td><td>scale 1→1.35</td><td>0.25s · 回弹曲线</td></tr>
+    </tbody>
+  </table>
+  <ul>
+    <li>整套动画包在 <code>@media (prefers-reduced-motion: no-preference)</code> 内——用户关动效时直接呈现成品态,无信息损失;</li>
+    <li>只播一次,不循环;动效是"开场",不是"装饰噪声"。</li>
+  </ul>
+
+  <!-- ── 变体 ─────────────────────────────────────────── -->
+  <h2>06 · 变体</h2>
+  <div class="variants">
+    <div class="variant">
+      <span class="v-lockup">
+        <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true">
+          <defs><linearGradient id="gV1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/></linearGradient></defs>
+          <polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+          <g fill="none" stroke="#111" opacity=".12" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g>
+          <polygon points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#gV1)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/>
+        </svg>
+        MBA<span class="dot">.</span>
+      </span>
+      <div class="cap">标准横排 lockup(站点 masthead)</div>
+    </div>
+    <div class="variant">
+      <svg viewBox="0 0 64 64" width="44" height="44" role="img" aria-label="glyph 单独使用">
+        <defs><linearGradient id="gV2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/></linearGradient></defs>
+        <polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+        <g fill="none" stroke="#111" opacity=".12" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g>
+        <polygon points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#gV2)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/>
+      </svg>
+      <div class="cap">仅 glyph(头像 / 社交 / 小尺寸)</div>
+    </div>
+    <div class="variant dark">
+      <span class="v-lockup">
+        <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true">
+          <defs><linearGradient id="gV3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d95f27" stop-opacity=".35"/><stop offset="1" stop-color="#d95f27" stop-opacity=".08"/></linearGradient></defs>
+          <polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#faf8f3" stroke-width="2" stroke-linejoin="round"/>
+          <g fill="none" stroke="#faf8f3" opacity=".18" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g>
+          <polygon points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#gV3)" stroke="#d95f27" stroke-width="2.5" stroke-linejoin="round"/>
+          <circle cx="32" cy="8.6" r="3.2" fill="#d95f27" stroke="#111" stroke-width="1.5"/>
+        </svg>
+        MBA<span class="dot">.</span>
+      </span>
+      <div class="cap">深色底(纸色外框 + #d95f27)</div>
+    </div>
+    <div class="variant">
+      <span class="fav-row">
+        <img width="32" height="32" alt="favicon 32px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+        <img width="16" height="16" alt="favicon 16px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+      </span>
+      <div class="cap">favicon(去网格,加粗描边,圆角纸底)</div>
+    </div>
+  </div>
+
+  <!-- ── 使用规范 ─────────────────────────────────────── -->
+  <h2>07 · 使用规范</h2>
+  <ul>
+    <li><strong>最小尺寸</strong>:glyph ≥ 16px(favicon 版);完整 lockup 高度 ≥ 20px;</li>
+    <li><strong>留白</strong>:四周 ≥ 0.25 × glyph 宽度,不与其它元素贴边;</li>
+    <li><strong>单色场景</strong>(印章 / 传真 / 单色印刷):全 ink 版——数据形描边改 #111、去填充、评分点实心 #111。</li>
+  </ul>
+  <p><strong>禁止:</strong></p>
+  <ul class="dont">
+    <li>🚫 拉伸、压扁、旋转 glyph,或改变数据形的五个半径比例;</li>
+    <li>🚫 换配色(纸底只用 ink + accent;深色底只用纸色 + accent-dark);</li>
+    <li>🚫 把 glyph 当真实雷达图使用,或给数据形标注分数——它不是任何品牌的评分;</li>
+    <li>🚫 加投影、发光、3D、描边加粗等效果;</li>
+    <li>🚫 在低对比底色(中灰、烧橙同族色)上使用彩色版。</li>
+  </ul>
+
+  <!-- ── 嵌入 ─────────────────────────────────────────── -->
+  <h2>08 · 嵌入</h2>
+  <p>logo 是内联 SVG,零外部资源、零请求,SVG 内禁用 CSS 变量(favicon 场景无 CSS 上下文),颜色写死。masthead 嵌入(动效类名 + 关键帧见 <code>site/index.html</code> 的 <code>.mark-glyph</code> 段):</p>
+  <pre><code>&lt;div class="mark" role="img" aria-label="MBA — Metric Brand Auditor"&gt;
+  &lt;svg class="mark-glyph" viewBox="0 0 64 64" width="36" height="36"
+       aria-hidden="true" focusable="false"&gt;
+    &lt;defs&gt;&lt;linearGradient id="mbaGrad" x1="0" y1="0" x2="0" y2="1"&gt;
+      &lt;stop offset="0" stop-color="#c1440e" stop-opacity=".30"/&gt;
+      &lt;stop offset="1" stop-color="#c1440e" stop-opacity=".06"/&gt;
+    &lt;/linearGradient&gt;&lt;/defs&gt;
+    &lt;polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25"
+             fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/&gt;
+    &lt;g fill="none" stroke="#111" opacity=".12" stroke-width="1"&gt;
+      &lt;polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/&gt;
+      &lt;path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/&gt;
+    &lt;/g&gt;
+    &lt;polygon class="radar-data" pathLength="100"
+             points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2"
+             fill="url(#mbaGrad)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/&gt;
+    &lt;circle class="radar-dot" cx="32" cy="8.6" r="3.2"
+            fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/&gt;
+  &lt;/svg&gt;
+  &lt;span&gt;MBA&lt;span class="dot"&gt;.&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+  <p>当前落位:<code>site/index.html</code>(masthead + favicon)与本页。其余站内页面沿用文字版 mark,后续按此规范逐页替换。无障碍:容器 <code>role="img"</code> + <code>aria-label</code>,SVG 本体 <code>aria-hidden</code>,动效尊重 <code>prefers-reduced-motion</code>。</p>
+
+  <footer>
+    <span>MBA Logo 设计规范 · v1 · 2026-07</span>
+    <span><a href="https://github.com/zhanglunet/mba/blob/main/docs/17-logo-design.md">docs/17-logo-design.md</a> · <a href="/docs.html">返回文档</a></span>
+  </footer>
+</div>
+</body>
+</html>
