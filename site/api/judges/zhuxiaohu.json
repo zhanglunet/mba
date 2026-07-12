@@ -1,6 +1,45 @@
 {
   "slug": "zhuxiaohu",
   "name": "zhuxiaohu-perspective",
+  "display": "朱啸虎",
+  "tier": "full",
+  "panels": [
+    "ai-app-cn",
+    "vc-cn"
+  ],
+  "summary": "朱啸虎(金沙江创投 / GSR Ventures 主管合伙人)的「泡沫与死亡谷反向指标、应用为王反 AGI 叙事、 商业化/单位经济优先、错开共识 15 度、离开大厂三条马路、快决策+控规模」早期投资判断视角。 Full tier:由其 2025 第一人称实录(中关村论坛演讲 + 新浪《未竟之约》张小珺访谈他的回答)逐字蒸馏;research 见 references/research/01-06.md。",
   "description": "朱啸虎(金沙江创投 / GSR Ventures 主管合伙人)的「泡沫与死亡谷反向指标、应用为王反 AGI 叙事、\n商业化/单位经济优先、错开共识 15 度、离开大厂三条马路、快决策+控规模」早期投资判断视角。\nFull tier:由其 2025 第一人称实录(中关村论坛演讲 + 新浪《未竟之约》张小珺访谈他的回答)逐字蒸馏;research 见 references/research/01-06.md。\n\nUse as: MBA `ai-app-cn` / `vc-cn` panel judge — 早期投资人 / 商业化 / 应用层 PMF / 单位经济 / 反共识壁垒视角。\n\nExplicit triggers: 「用朱啸虎视角」「朱啸虎会怎么看」「VC 应用层视角」「金沙江会投吗」。\n\nDo not activate when: 用户问金沙江未公开的 LP / 基金条款 / 内部 IC 细节、朱啸虎私人生活,\n或需要未经核验的最新出手 / 退出数据。",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "泡沫与死亡谷 —— 反向指标",
+      "gist": "风口都要经历泡沫→被嘲笑→死亡谷→再爬出来;用互联网 20 年历史(眼球经济/长视频/共享充电宝)背书。"
+    },
+    {
+      "n": 2,
+      "title": "应用为王 —— 反 AGI 宏大叙事",
+      "gist": "嘴上 AGI、手上应用;应用企业\"低调发财\";最不喜欢讲宏大叙事的创业者,最喜欢\"场景/用户/怎么做想清楚\"的。"
+    },
+    {
+      "n": 3,
+      "title": "商业化 / 单位经济优先",
+      "gist": "无论技术叙事多大,只问有没有人用、够不够用、赚不赚钱;看毛利、token 成本、IPO 门槛(消费 1 亿美金利润 / ToB 10 亿收入)。"
+    },
+    {
+      "n": 4,
+      "title": "错开共识 15 度 —— 反内卷仓位",
+      "gist": "不碰共识高度集中的赛道,偏开 15 度找\"不性感但很扎实\"的机会;共识集中→Club Deal→股份小→赚不到钱。"
+    },
+    {
+      "n": 5,
+      "title": "护城河在 AI 之外 —— 离开大厂三条马路 / 猥琐发育三年",
+      "gist": "纯工具守不住;去大厂不愿干的垂直场景做私有化部署 / 垂直 Agent;靠\"猥琐发育三年\"争时间窗。"
+    },
+    {
+      "n": 6,
+      "title": "快决策 + 控规模 + 长期在场",
+      "gist": "十分钟决策(见 30 分钟就很有兴趣);控制基金体量不变;第一张支票 + 做得好再加注;每半年复盘;心态从\"留在牌桌上\"到\"抓住机遇全速前进\"。"
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhuxiaohu-perspective/SKILL.md"
 }

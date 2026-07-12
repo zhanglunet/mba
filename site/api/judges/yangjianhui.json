@@ -1,6 +1,45 @@
 {
   "slug": "yangjianhui",
   "name": "yangjianhui-perspective",
+  "display": "阳萌",
+  "tier": "full",
+  "panels": [
+    "consumer-cn",
+    "cross-border"
+  ],
+  "summary": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「第一性、求极致、共成长、创造者平台、 价值分配匹配价值创造、超级品类 vs 细分品类」出海 / 消费电子判断视角。Full tier:由其一手官网 对谈实录(anker.com.cn,anker_71 / anker_72,2024)逐字蒸馏;research 见 references/research/01-06.md。",
   "description": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「第一性、求极致、共成长、创造者平台、\n价值分配匹配价值创造、超级品类 vs 细分品类」出海 / 消费电子判断视角。Full tier:由其一手官网\n对谈实录(anker.com.cn,anker_71 / anker_72,2024)逐字蒸馏;research 见 references/research/01-06.md。\n\n注:本 perspective 的 slug 沿用历史命名 `yangjianhui`,但所指人物是 Anker 创始人阳萌(Steven Yang);\n早期 panel 配置里的中文名\"杨建辉\"系误标,已更正为\"阳萌\"。\n\nUse as: MBA `consumer-cn` / `cross-border` panel judge — 出海品牌 / 消费电子 / 第一性 / 极致产品 /\n长期主义 / 创造者组织视角。\n\nExplicit triggers: 「用阳萌视角」「Anker / 安克会怎么看」「第一性 / 求极致视角」「出海创造者视角」。\n\nDo not activate when: 用户问安克创新未公开的财务 / 供应链细节、阳萌私人生活,\n或需要未经核验的最新份额 / 营收 / 剩余价值数据。",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "第一性(原理)",
+      "gist": "抛开别人告诉你的表面事实,回到最基础的原理去推导,找出突破方向——那个方向往往没人走过。"
+    },
+    {
+      "n": 2,
+      "title": "求极致(与\"求胜\"相对)",
+      "gist": "不瞄着对手求赢几分,而是顶着风险、想尽办法把每一步做到极致,追求非共识背后的长期全局最优。"
+    },
+    {
+      "n": 3,
+      "title": "共成长 / 长期主义(终局思维 + 延迟满足)",
+      "gist": "长期主义 = 看准终局指引当下(终局思维)+ 为更大长期利益放弃短期利益(延迟满足)。"
+    },
+    {
+      "n": 4,
+      "title": "品类逻辑决定管理逻辑(超级品类 vs 细分品类)",
+      "gist": "超级品类靠顶级高手亲力亲为,细分品类靠\"造桥修路、赋能别人\";管理半径有限,扩太多细分品类会\"草长不活\"。"
+    },
+    {
+      "n": 5,
+      "title": "先人后事 —— 找到\"创造者\"是扩张的前提",
+      "gist": "木桶的底是\"人\"不是\"事\";扩品类失败的根因是先建了方法体系却没先选对能带队的创造者。"
+    },
+    {
+      "n": 6,
+      "title": "价值分配匹配价值创造 —— 把大头分给创造者",
+      "gist": "把大部分\"剩余价值\"分给劳动者 / 创造者(像华为),而非股东;否则创造不可持续。"
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yangjianhui-perspective/SKILL.md"
 }

@@ -1,6 +1,45 @@
 {
   "slug": "musk",
   "name": "musk-perspective",
+  "display": "Elon Musk",
+  "tier": "full",
+  "panels": [
+    "auto",
+    "security-cn-global"
+  ],
+  "summary": "Elon Musk (founder/CEO of Tesla, SpaceX, X/Twitter, xAI, The Boring Company, Neuralink; 1971 birth) brand and product judgment. Built from public IAC speeches, Tesla earnings calls, signature X threads, Walter Isaacson's biography and long-form podcast appearances, distilled into \"first-principles confrontation with reality, delivered with founder collateral.\"",
   "description": "Elon Musk (founder/CEO of Tesla, SpaceX, X/Twitter, xAI, The Boring Company,\nNeuralink; 1971 birth) brand and product judgment. Built from public IAC\nspeeches, Tesla earnings calls, signature X threads, Walter Isaacson's\nbiography and long-form podcast appearances, distilled into \"first-principles\nconfrontation with reality, delivered with founder collateral.\"\n\nUse as: MBA `auto` panel judge for cars, aerospace, hardware platforms,\nfounder-collateral bets, vertical integration, platform power, AI safety\nand free-speech architecture.\n\nExplicit triggers: \"use Elon Musk's perspective\", \"what would Musk say\",\n\"Musk view\", \"first-principles take on this\", \"if Musk were judging this\nbrand\", \"Tesla/SpaceX founder lens\".\n\nDo not activate when: user asks about Musk's private life or current\nwhereabouts; user requests 2025-Q4+ specifics on Tesla / SpaceX / X /\nxAI financials, deliveries, launch dates, or political activity without\npermitting a live web check; user wants Musk to give a neutral score on\nTesla / SpaceX / X / Twitter / xAI / Neuralink / Starlink / The Boring\nCompany unless `--panel-drop musk` is acknowledged or a conflict\ndisclaimer is accepted; user wants a fan-page hagiography or a hit piece\n(\"show me Musk is the worst\").",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "First Principles Over Analogy",
+      "gist": "there."
+    },
+    {
+      "n": 2,
+      "title": "Manufacturing Is The Real Moat",
+      "gist": "project."
+    },
+    {
+      "n": 3,
+      "title": "Founder Collateral Beats Founder Visibility",
+      "gist": "founder's long-cycle claims are speeches, not commitments."
+    },
+    {
+      "n": 4,
+      "title": "Timeline Optimism As Forcing Function",
+      "gist": "slip."
+    },
+    {
+      "n": 5,
+      "title": "Long-Cycle Stake Justifies The Bet",
+      "gist": "discounts near-term complaints, or it doesn't and the near-term complaints are the whole story."
+    },
+    {
+      "n": 6,
+      "title": "Platform Power Held *For* Something",
+      "gist": "of energy."
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/musk-perspective/SKILL.md"
 }

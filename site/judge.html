@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>评委档案 · MBA</title>
+<meta name="description" content="MBA 人物评委的介绍与视角:身份、所属面板、核心心智模型。评分为 AI 基于公开一手资料的模拟,非本人观点。" />
+<meta property="og:title" content="评委档案 · MBA" />
+<meta property="og:url" content="https://mbabrand.com/judge.html" />
+<style>
+  :root{
+    --ink:#111; --paper:#faf8f3; --paper-2:#f3efe6; --card:#fffdf8;
+    --muted:#6b6760; --faint:#9a948a; --rule:#1a1a1a; --hair:#e0d9cc;
+    --accent:#c1440e; --accent-soft:#c1440e14; --accent-ring:#c1440e55;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);
+    font-family:ui-serif,"Noto Serif SC","Songti SC",Georgia,serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .sans{font-family:ui-sans-serif,"Inter",-apple-system,"Segoe UI",sans-serif;}
+  .wrap{max-width:860px;margin:0 auto;padding:56px 28px 80px;}
+
+  /* header/nav — matches site chrome */
+  header.site{border-bottom:2px solid var(--rule);padding-bottom:18px;margin-bottom:24px;
+    display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .mark{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-weight:800;letter-spacing:.02em;font-size:22px;}
+  .mark .dot{color:var(--accent);}
+  nav a{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:13px;color:var(--ink);
+    text-decoration:none;border-bottom:1px solid var(--ink);margin-left:18px;white-space:nowrap;}
+  nav a:hover{color:var(--accent);border-color:var(--accent);}
+  nav a[aria-current]{color:var(--accent);border-color:var(--accent);}
+
+  .back{display:inline-block;font-family:ui-sans-serif,"Inter",sans-serif;font-size:13px;color:var(--muted);
+    text-decoration:none;margin-bottom:22px;}
+  .back:hover{color:var(--accent);}
+
+  /* hero */
+  .eyebrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px;}
+  .tier{font-family:ui-sans-serif,"Inter",sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;padding:3px 10px;border-radius:20px;}
+  .tier.full{color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent-ring);}
+  .tier.seed{color:var(--muted);border:1px dashed var(--muted);}
+  .pchip{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:11.5px;color:var(--muted);
+    text-decoration:none;padding:3px 9px;border:1px solid var(--hair);border-radius:20px;background:var(--paper-2);}
+  .pchip:hover{border-color:var(--accent);color:var(--accent);}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.12;margin:0 0 8px;font-weight:800;letter-spacing:-.01em;text-wrap:balance;}
+  .role{font-size:16.5px;color:var(--muted);margin:0 0 30px;font-style:italic;line-height:1.5;}
+
+  /* section label */
+  .lbl{font-family:ui-sans-serif,"Inter",sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--muted);font-weight:700;margin:36px 0 16px;display:flex;align-items:center;gap:10px;}
+  .lbl::before{content:"";width:18px;height:2px;background:var(--accent);display:inline-block;flex-shrink:0;}
+
+  /* intro paragraphs */
+  .intro p{margin:0 0 14px;font-size:15.5px;line-height:1.7;}
+  .intro .use{background:var(--card);border:1px solid var(--hair);border-left:3px solid var(--accent-ring);
+    border-radius:8px;padding:12px 16px;}
+  .intro .use b{font-family:ui-sans-serif,"Inter",sans-serif;font-size:12px;letter-spacing:.04em;
+    text-transform:uppercase;color:var(--accent);display:block;margin-bottom:3px;}
+
+  /* mental-model cards */
+  .models{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media (max-width:680px){.models{grid-template-columns:1fr}}
+  .model{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:16px 18px;display:flex;gap:14px;}
+  .m-n{font-family:ui-sans-serif,"Inter",sans-serif;font-weight:800;font-size:15px;color:var(--accent);
+    font-variant-numeric:tabular-nums;line-height:1.2;padding-top:2px;flex-shrink:0;}
+  .m-body h3{margin:0 0 5px;font-size:16px;font-weight:700;line-height:1.35;}
+  .m-body p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.6;}
+
+  .archive{margin-top:34px;padding:16px 18px;background:var(--paper-2);border:1px solid var(--hair);border-radius:10px;
+    font-family:ui-sans-serif,"Inter",sans-serif;font-size:13.5px;color:var(--muted);}
+  .archive a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);}
+  .archive .disc{margin-top:8px;font-size:12px;color:var(--faint);line-height:1.55;}
+
+  .state{font-family:ui-sans-serif,"Inter",sans-serif;color:var(--muted);font-size:15px;padding:40px 0;}
+  .state a{color:var(--accent);}
+
+  footer{margin-top:46px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted);
+    font-family:ui-sans-serif,"Inter",sans-serif;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);}
+  footer a:hover{color:var(--accent);border-color:var(--accent);}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="mark">MBA<span class="dot">.</span></div>
+    <nav>
+      <a href="/">品牌监控</a>
+      <a href="/panorama.html" aria-current="page">评委全景</a>
+      <a href="/docs.html">文档</a>
+      <a href="https://github.com/zhanglunet/mba">GitHub</a>
+    </nav>
+  </header>
+
+  <a class="back" href="/panorama.html">← 评委全景</a>
+  <main id="main">
+    <div class="state">加载中…</div>
+  </main>
+
+  <footer>
+    <span>MBA · Metric Brand Auditor · 评分为 AI 评委模拟,非本人观点,不构成投资建议</span>
+    <span><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></span>
+    <span style="flex-basis:100%;">© 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai">marsdata.ai</a></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  const main = document.getElementById('main');
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c =>
+    ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const slug = new URLSearchParams(location.search).get('slug');
+
+  function fail(msg){
+    main.innerHTML = '<div class="state">' + msg +
+      ' 回<a href="/panorama.html">评委全景</a>挑一位。</div>';
+  }
+  if(!slug || !/^[a-z0-9-]+$/.test(slug)){ fail('没有指定评委。'); return; }
+
+  // 身份首句(role 行):取到第一个句末标点为止。
+  // CJK 句末(。!?)无条件成句;ASCII 句点需后接空白/结尾/非字母数字,避开小数与 URL。
+  const firstSentence = t => {
+    const m = String(t || '').match(/^[\s\S]*?(?:[。！？]|[.!?]["”)）]?(?=\s|$|[^0-9A-Za-z]))/);
+    return (m ? m[0] : String(t || '')).trim();
+  };
+  const norm = t => String(t || '').replace(/\s+/g, ' ').trim();
+
+  // 介绍:首段(身份/来源)去掉已在 role 行展示的首句;其余段统一成卡片,识别到标签则加粗。
+  const LABELS = /^(Use as|Explicit triggers?|Do not activate when|Do not activate|用途|显式触发|主题型触发|不要激活|不要在此激活|不要在)(?:\s*[（(][^)）]*[)）])?\s*[:：]/;
+  function renderIntro(desc, role){
+    const paras = desc.split(/\n\s*\n/).map(p => norm(p)).filter(Boolean);
+    let html = '';
+    paras.forEach((p, i) => {
+      if(i === 0){
+        let rest = p;
+        if(norm(role) && norm(p).indexOf(norm(role)) === 0) rest = p.slice(role.length).trim();
+        if(rest) html += '<p>' + esc(rest) + '</p>';
+        return;
+      }
+      const m = p.match(LABELS);
+      html += m
+        ? '<p class="use"><b>' + esc(m[1]) + '</b>' + esc(p.slice(m[0].length).trim()) + '</p>'
+        : '<p class="use">' + esc(p) + '</p>';
+    });
+    return html;
+  }
+
+  fetch('/api/judges/' + slug + '.json', {headers:{'accept':'application/json'}})
+    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => {
+      document.title = (d.display || d.slug) + ' · 评委 · MBA';
+      const tierCls = d.tier === 'seed' ? 'seed' : 'full';
+      const tierTxt = d.tier === 'seed' ? 'Seed · 留档' : 'Full · 全档';
+      const panels = (d.panels || []).map(p =>
+        '<a class="pchip" href="/panorama.html" title="面板">' + esc(p) + '</a>').join('');
+      const roleLine = firstSentence(d.summary || '');  // 身份首句
+      const models = (d.mental_models || []).map(m =>
+        '<div class="model"><div class="m-n">' + String(m.n).padStart(2,'0') + '</div>' +
+        '<div class="m-body"><h3>' + esc(m.title) + '</h3>' +
+        (m.gist ? '<p>' + esc(m.gist) + '</p>' : '') + '</div></div>').join('');
+
+      main.innerHTML =
+        '<div class="eyebrow"><span class="tier ' + tierCls + '">' + tierTxt + '</span>' + panels + '</div>' +
+        '<h1>' + esc(d.display || d.slug) + '</h1>' +
+        '<p class="role">' + esc(roleLine) + '</p>' +
+        '<div class="lbl">介绍</div><div class="intro">' + renderIntro(d.description || '', roleLine) + '</div>' +
+        (models
+          ? '<div class="lbl">视角 · 核心心智模型</div><div class="models">' + models + '</div>'
+          : '') +
+        '<div class="archive">读完整视角档案(6 路一手调研 + 表达 DNA + 决策启发式):' +
+          '<a href="' + esc(d.skill_url) + '">SKILL.md on GitHub →</a>' +
+          '<div class="disc">这是基于该人物公开一手资料蒸馏的「思维顾问」视角,' +
+          '用于 MBA 打分时的 in-character 模拟 —— 非本人真实观点,不构成投资建议。</div></div>';
+    })
+    .catch(e => {
+      fail(String(e.message) === '404' ? '找不到「' + esc(slug) + '」这位评委。' : '加载失败。');
+    });
+})();
+</script>
+</body>
+</html>

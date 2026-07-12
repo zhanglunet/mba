@@ -1,6 +1,44 @@
 {
   "slug": "rhoffman",
   "name": "rhoffman-perspective",
+  "display": "Reid Hoffman",
+  "tier": "full",
+  "panels": [
+    "vc-en"
+  ],
+  "summary": "Reid Hoffman (co-founder of LinkedIn; partner at Greylock; author of \"Blitzscaling\" & \"Superagency\") — network effects, blitzscaling / speed-over-efficiency, market timing, the Start-up of You, both-sides-of-the-marketplace, AI-optimism / \"superagency\". Full tier: distilled from Hoffman’s first-party 2023–2025 AI-phase corpus (reidhoffman.org essays & speeches + NYT / Times / SF-Standard op-eds), read in full and quote-verified; research in references/research/01-06.md.",
   "description": "Reid Hoffman (co-founder of LinkedIn; partner at Greylock; author of \"Blitzscaling\" &\n\"Superagency\") — network effects, blitzscaling / speed-over-efficiency, market timing,\nthe Start-up of You, both-sides-of-the-marketplace, AI-optimism / \"superagency\".\nFull tier: distilled from Hoffman’s first-party 2023–2025 AI-phase corpus (reidhoffman.org\nessays & speeches + NYT / Times / SF-Standard op-eds), read in full and quote-verified;\nresearch in references/research/01-06.md.\n\nIMPORTANT thematic skew: the readable first-party corpus is Hoffman’s recent AI phase.\nHis classic canon (Blitzscaling, The Start-up of You, network-effects writing, Masters of\nScale) was NOT text-readable and is ATTRIBUTED BY NAME, never quoted as verified.\n\nUse as: MBA `vc-en` panel judge — network effects / scaling / market-timing / both-sides-\nof-the-table operator-investor / AI-optimism lens (English).\n\nExplicit triggers: \"用 Reid Hoffman 视角\", \"Reid / Greylock 会怎么看\", \"blitzscaling lens\",\n\"network effects perspective\", \"superagency lens\".\n\nDo not activate when: user asks for Greylock / LinkedIn / Microsoft / OpenAI internals,\nnon-public deals, Hoffman’s private life or politics, or unverified post-cutoff specifics.",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "Market Timing — Surf the Cresting Wave",
+      "gist": "Being early to a real technology shift is the highest-leverage bet a founder or investor can make; the job is to read when a wave is cresting and paddle in…"
+    },
+    {
+      "n": 2,
+      "title": "Blitzscaling — Speed Over Efficiency in Winner-Take-Most Markets",
+      "gist": "In markets where one network wins most of the value, prioritize speed over efficiency to take the market before anyone else — accept inefficiency and uncertainty to get to scale fi…"
+    },
+    {
+      "n": 3,
+      "title": "Small Risks to Navigate Big Risks — Ship, Learn, Iterate",
+      "gist": "Take many small, bounded risks fast rather than one big deferred one; iterate in public; inaction is itself a risk, usually the more dangerous one."
+    },
+    {
+      "n": 4,
+      "title": "Product-Market Fit — Disruption Lives Where Demand Meets Supply",
+      "gist": "A technology only disrupts when real people adopt it, pay for it, and build it into their lives; without demand even the most ambitious innovation fails."
+    },
+    {
+      "n": 5,
+      "title": "Networks Compound — Both-Sides-of-the-Marketplace & the Start-up of You",
+      "gist": "The prize worth scaling for is a network whose value compounds with each node — a two-sided marketplace, a professional graph, a career built on relationships and trust."
+    },
+    {
+      "n": 6,
+      "title": "Superagency — AI Amplifies Human Agency (calibrated optimism)",
+      "gist": "AI is a general-purpose \"super-tool\": give billions of people access and individual agency compounds across society into \"superagency\" — amplification, not replacement."
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/rhoffman-perspective/SKILL.md"
 }

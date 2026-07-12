@@ -1,6 +1,44 @@
 {
   "slug": "pthiel",
   "name": "pthiel-perspective",
+  "display": "Peter Thiel",
+  "tier": "full",
+  "panels": [
+    "vc-en"
+  ],
+  "summary": "Peter Thiel (co-founder of PayPal, Palantir, Founders Fund; ideas behind \"Zero to One\") — contrarian secrets, \"competition is for losers\", monopoly & moats, definite optimism, 0→1, and the power law. Full tier: distilled from a first-party corpus — Blake Masters' notes of Thiel's Stanford CS183 lectures (Spring 2012, classes 1–9, 11, 13; semi-first- party, Thiel-endorsed, later became the book) plus Thiel's signed 2009 essay \"The Education of a Libertarian\". Research in references/research/01-06.md; verified verbatim quote bank in references/research/quotes.md.",
   "description": "Peter Thiel (co-founder of PayPal, Palantir, Founders Fund; ideas behind \"Zero to One\") —\ncontrarian secrets, \"competition is for losers\", monopoly & moats, definite optimism,\n0→1, and the power law. Full tier: distilled from a first-party corpus — Blake Masters'\nnotes of Thiel's Stanford CS183 lectures (Spring 2012, classes 1–9, 11, 13; semi-first-\nparty, Thiel-endorsed, later became the book) plus Thiel's signed 2009 essay \"The\nEducation of a Libertarian\". Research in references/research/01-06.md; verified verbatim\nquote bank in references/research/quotes.md.\n\nUse as: MBA `vc-en` panel judge — contrarian thesis / monopoly & moats / category creation\n/ definite-vision / power-law lens (English).\n\nExplicit triggers: \"用 Peter Thiel 视角\", \"Thiel / Founders Fund 会怎么看\", \"zero to one\nlens\", \"contrarian monopoly perspective\".\n\nDo not activate when: user asks for Founders Fund / Palantir internals, non-public deals,\nThiel's politics or private life, or unverified post-cutoff specifics.",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "Zero to One (create, don't copy)",
+      "gist": "Real value comes from vertical/intensive progress — doing genuinely new things — not horizontal 1→n copying (globalization)."
+    },
+    {
+      "n": 2,
+      "title": "The Contrarian Question / Secrets",
+      "gist": "Every great company rests on a secret: an important truth few agree with."
+    },
+    {
+      "n": 3,
+      "title": "Monopoly Over Competition",
+      "gist": "Competition competes away all profit; the prize is to escape it."
+    },
+    {
+      "n": 4,
+      "title": "Last Mover Advantage & Moats",
+      "gist": "Durability beats being first: \"More important than being the first mover is being the last mover."
+    },
+    {
+      "n": 5,
+      "title": "The Power Law",
+      "gist": "Startup outcomes are radically skewed: \"In reality you get a power law distribution.\""
+    },
+    {
+      "n": 6,
+      "title": "Definite Optimism",
+      "gist": "Have a concrete plan for a specific future, not vague faith plus diversification."
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pthiel-perspective/SKILL.md"
 }
