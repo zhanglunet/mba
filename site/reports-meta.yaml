@@ -321,6 +321,29 @@ reports:
       超过爱马仕(8.64)成为 MBA 审计史最高分。
     has_pdf: false
 
+  - slug: zhipu
+    card_brand: "智谱 Zhipu AI · GLM · 02513.HK"
+    card_meta: "ai-app-cn panel · FRESH v1 · 5 评委(yangzhilin△ 竞对披露)· 最大分歧 Leverage Δ4(傅盛 9 vs 朱啸虎 5)"
+    headline: "「大模型第一股」:起点最早、开源最激进的中国 AI,账本尚未闭合"
+    brand_cn: 智谱
+    brand_en: Zhipu AI
+    ticker: 02513.HK
+    panel: ai-app-cn
+    version: v1
+    audit_date: 2026-07-12
+    score_total: 177
+    score_max: 250
+    score_normalized: 7.08
+    tl_dr: >-
+      中国大模型公司里「起点最早、上市最先、开源最激进」的样本:2019 年(ChatGPT 前
+      三年)自清华 KEG 转化,2026-01-08 港交所上市成「全球大模型第一股」,GLM-5.2
+      (MIT 开源)拿下 Code Arena 全球可用模型第一,现以 150 亿科创板募资冲刺「A+H」。
+      ai-app-cn 面板 177/250(7.08),高于同板 Kimi 的 6.85。最大分歧 Leverage(Δ4):
+      傅盛 9「没人能下架的基础设施」 vs 朱啸虎 5「开源即让利,47.18 亿年亏损是军备
+      账单」——2023 傅朱大模型论战的攻守易位续集。最弱 Identity 6.2:AGI 登月叙事与
+      政企私有化收入(73.7%)的两张皮,加上智谱/Z.ai/GLM/清言多名并存。
+    has_pdf: false
+
   - slug: openai
     card_brand: "OpenAI · Codex"
     card_meta: "vc-en panel · FRESH v1 · 5 评委(rhoffman△/pthiel△ 早期渊源披露)· 产品聚焦 Codex · 20 个 curl 核验来源"

@@ -1,0 +1,123 @@
+# watch/zhipu/events.yaml — 智谱(GLM)舆情事件流
+# 智谱品牌监控首批(2026-07-12)。schema 见 docs/16 §2。
+#
+# 注:政企招投标公示原文(深圳交易集团 szggzy.com / 联通招标网列表页)为 JS 壳,
+# curl 不可达(与 docs/16 §3-§4 结论一致);ccgp.gov.cn 搜索接口本批持续返回
+# 「频繁访问」限流页。W3 事件以智东西(zhidx.com,curl 可达)原稿收录,
+# 原公示与正文提及的另两单(气象局 1090 万、联通 AI+眼镜 979 万)记为 leads 待回溯。
+
+- id: 2026-01-08-zhipu-001
+  date: 2026-01-08
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 登陆港交所主板(02513.HK)成「全球大模型第一股」,发行价 116.2 港元、开盘市值超 528 亿港元
+  quote: "历史性时刻！智谱登陆港交所成“全球大模型第一股”，市值超528亿港元"
+  quote_type: title
+  url: https://finance.sina.com.cn/roll/2026-01-08/doc-inhfqpsr3846469.shtml
+  fetched_at: "2026-07-12T15:50:09Z"
+  consumed_by: v1
+  lens_map: [signal, leverage]
+  note: >-
+    全球首家上市的独立通用大模型企业。全球发售 3741.95 万股 H 股,香港公开发售获
+    1159.46 倍超额认购,募资净额约 41.73 亿港元(70% 投通用大模型研发、10% 投 MaaS
+    平台)。W5 资本线的起点锚,后续 003/005 均以此为坐标。日期以 URL 内嵌
+    (2026-01-08)自证,标题与正文已 curl 逐字核对。
+
+- id: 2026-06-17-zhipu-002
+  date: 2026-06-17
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 正式上线并开源 GLM-5.2:1M 上下文、MIT 协议,官方称 Code Arena 盲测位列全球可用模型第一
+  quote: "智谱GLM-5.2上线并开源"
+  quote_type: title
+  url: https://www.stdaily.com/web/gdxw/2026-06/17/content_533710.html
+  fetched_at: "2026-07-12T15:50:09Z"
+  consumed_by: v1
+  lens_map: [category, leverage, signal]
+  note: >-
+    科技日报稿。主攻「长程任务」,1M Token 上下文;权重上 Hugging Face 与
+    ModelScope、MIT License 可商用;Day 0 完成华为昇腾/平头哥/摩尔线程/寒武纪等
+    国产算力平台推理适配。「Code Arena 全球可用模型第一」为厂商自报口径
+    (百万用户盲测系统),评委消费时需独立核。日期以 URL 内嵌(2026-06/17)自证。
+
+- id: 2026-06-17-zhipu-003
+  date: 2026-06-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 科创板 IPO 辅导 11 天即验收(国泰海通辅导),拟募资 150 亿元冲刺「A+H」双平台
+  quote: "智谱科创板IPO辅导仅11天即验收"
+  quote_type: title
+  url: https://finance.sina.com.cn/wm/2026-06-17/doc-inictnup3789670.shtml
+  fetched_at: "2026-07-12T15:50:09Z"
+  consumed_by: v1
+  lens_map: [signal, leverage]
+  note: >-
+    证监会网站披露:6月6日辅导备案 → 6月17日状态变更「辅导验收」。此前 6月1日
+    公告拟科创板上市,计划募资 150 亿元(120 亿基座大模型 / 20 亿 MaaS 平台 /
+    10 亿流动资金)。港股同期大涨:5月29日盘中 1993 港元、市值一度逼近 9000 亿港元;
+    原文亦载瑞银对估值溢价的担忧 —— 评委消费时注意估值泡沫争议。程序性里程碑
+    (后续还需上交所审核 + 证监会注册),故 P2。日期以 URL 内嵌(2026-06-17)自证。
+
+- id: 2026-06-17-zhipu-004
+  date: 2026-06-17
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 深圳市智慧城市科技发展集团「基于国产大模型的全球科创分析服务项目」公示智谱为第一中标候选人,报价 9390 万元
+  quote: "9390万元！智谱拿下大模型大单"
+  quote_type: title
+  url: https://zhidx.com/p/567286.html
+  fetched_at: "2026-07-12T15:50:09Z"
+  lens_map: [leverage, signal]
+  note: >-
+    智东西 2026-06-17 报道:候选人公示于前一日(6月16日);采购控制价 9395 万,
+    采购内容为大模型及软件服务(非算力硬件),纯软件类近亿元「已属高位」。
+    系「第一中标候选人」公示而非最终合同,故 P2。正文另载智谱 2026 年政企单:
+    2月11日中国气象局闪信预警项目 1090 万、6月2日联通深圳 AI+眼镜工程 979 万
+    (均为 leads,待回溯原公示;深圳交易集团/ccgp 本批 curl 不可达,见文件头注)。
+    URL 无日期,日期以页面日期(2026/06/17)及站点 WP API(2026-06-17T19:18)
+    curl 核对。
+
+- id: 2026-07-09-zhipu-005
+  date: 2026-07-09
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 完成约 314 亿港元新 H 股配售(上市半年内最大一笔再融资),投向基座模型研发/算力基建/商业化与全球生态
+  quote: "智谱完成约314亿港元配售，继续聚焦大模型技术摸高"
+  quote_type: title
+  url: https://finance.sina.com.cn/tech/shenji/2026-07-09/doc-inihefvc1535226.shtml
+  fetched_at: "2026-07-12T15:50:09Z"
+  lens_map: [signal, leverage]
+  note: >-
+    新浪科技 7月9日稿:配售约 314.1 亿港元,叠加 A 股 150 亿计划(003)构成
+    「A+H」双线融资。配售细节见 006(每经稿):最多 1978 万股新 H 股、每股
+    1588 港元、较 7月8日收盘折价 12.99%,中金公司为配售代理,引入不少于 6 家
+    独立机构投资者。日期以 URL 内嵌(2026-07-09)自证。
+
+- id: 2026-07-09-zhipu-006
+  date: 2026-07-09
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: 每经聚焦配售时点:部分限售股解禁次日即推 300 亿+配售、折价近 13%,但当日股价仍一度涨超 20%
+  quote: "智谱配售计划引关注：部分限售股刚解禁，300亿港元融资背后有何玄机？"
+  quote_type: title
+  url: https://finance.sina.com.cn/roll/2026-07-09/doc-inihenca8321325.shtml
+  fetched_at: "2026-07-12T15:50:09Z"
+  lens_map: [signal, identity]
+  note: >-
+    每日经济新闻稿(新浪转载)。质疑点:限售股 7月8日解禁、次日即公告配售,
+    配售价较前收盘折价 12.99%;但市场情绪未受挫(7月8日涨 13.35%、9日盘中
+    涨超 20%),且融资投向(算力军备)有行业逻辑支撑 —— 判 mixed。与 005 构成
+    同一配售事件的「官方口径 × 媒体审视」双面记录。日期以 URL 内嵌
+    (2026-07-09)自证。

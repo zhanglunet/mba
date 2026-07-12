@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>智谱（Zhipu AI / Z.ai）— Brand Influence Review v1 · MBA</title>
+<meta name="description" content="ai-app-cn panel FRESH audit of 智谱 (Zhipu AI / Z.ai, GLM). v1: 177/250 · 7.08/10. Judges: yangzhilin△ / wanghuiwen / zhouhongyi / fusheng / zhuxiaohu. Audit date: 2026-07-12." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --green: #1a7a4a;
+  --blue: #1a4a7a;
+  --warn: #d97706;
+  --aiapp: #1f3a5f;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 56px 28px 96px; }
+header {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; }
+
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+
+.actions { counter-reset: action-counter; margin-bottom: 32px; }
+.action-phase { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 20px 0 10px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--aiapp); color: #fff; margin-bottom: 20px; }
+.disclosure-box { background:#fff; border:1.5px solid #e0ddd8; border-left:3px solid var(--warn); border-radius:6px; padding:16px 20px; margin-bottom:28px; font-size:13.5px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark">MBA<span class="dot">.</span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
+  </header>
+
+  <div class="report-meta">Brand Influence Audit · <strong>v1 · FRESH</strong> · 2026-07-12 · 品牌统一评（智谱：GLM 系列 / 开源生态 / Z.ai 国际化 / MaaS 与政企 / "A+H" IPO 进程）</div>
+  <h1 class="brand-title">智谱（Zhipu AI / Z.ai）</h1>
+  <p class="report-subtitle">起点最早 · 上市最先 · 开源最激进 —— "全球大模型第一股"与它尚未闭合的开源账本</p>
+
+  <div class="panel-badge">🧭 ai-app-cn · 5-Judge Panel · yangzhilin△ 竞对有据披露</div>
+
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">7.08</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10</div>
+    </div>
+    <div>
+      <div class="score-label">总分</div>
+      <div class="score-sub">177 / 250 <span class="score-tag">FRESH v1</span></div>
+      <div style="margin-top:8px;">
+        <div class="score-label">评委数</div>
+        <div class="score-sub">5 <span class="score-tag">ai-app-cn</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="score-label">最强维度</div>
+      <div class="score-sub">Origin 7.6</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Identity 6.2</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      TL;DR：2019 年（ChatGPT 前三年）从清华 KEG 出发，2026-01-08 成"全球大模型第一股"，GLM-5.2 拿下 Code Arena 全球可用模型第一（与 Opus 4.8 差 1 个点、成本约 1/5）。最大分歧在 Leverage（Δ4：傅盛 9"没人能下架的基础设施" vs 朱啸虎 5"开源即让利，军备账单"）；最弱在 Identity（6.2：AGI 登月叙事 vs 政企私有化收入 73.7% 的两张皮）。
+    </div>
+  </div>
+
+  <div class="disclosure-box">
+    <strong>△ 评委利益披露（详见 Legal 段与 reviews/ 文件头部）</strong>：
+    <strong>杨植麟</strong>为月之暗面（Moonshot AI）创始人，与智谱为基座大模型<strong>直接竞争对手</strong>（证券时报·创投智库 2026-01 将月之暗面列为智谱竞争压力来源）。以「△ 有据披露」纳入评分，非利益冲突回避项；其 35/50 与面板中位一致，无系统性压分迹象。
+    <br>邻近关联（非△）：<strong>周鸿祎</strong>——360 持股关系<strong>未能核实</strong>（IPO 资本版图与股东名单均无三六零），有据的是 2023-05-16 战略合作共研"360GLM"；<strong>王慧文</strong>——美团为智谱 B2 轮领投方；<strong>朱啸虎</strong>——kimichat v1 报告所载月之暗面 A 轮关联。
+  </div>
+
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Lens</th>
+        <th>杨植麟△</th>
+        <th>王慧文</th>
+        <th>周鸿祎</th>
+        <th>傅盛</th>
+        <th>朱啸虎</th>
+        <th>Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td>
+        <td class="cell-hi">8</td>
+        <td class="cell-hi">8</td>
+        <td class="cell-hi">8</td>
+        <td>7</td>
+        <td>7</td>
+        <td>7.6</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td>
+        <td>7</td>
+        <td>7</td>
+        <td class="cell-hi">8</td>
+        <td class="cell-hi">8</td>
+        <td>7</td>
+        <td>7.4</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td>
+        <td>7</td>
+        <td>7</td>
+        <td>7</td>
+        <td class="cell-hi">9</td>
+        <td class="cell-lo">5</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td>
+        <td class="cell-lo">6</td>
+        <td class="cell-lo">6</td>
+        <td class="cell-lo">6</td>
+        <td>7</td>
+        <td class="cell-lo">6</td>
+        <td>6.2</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td>
+        <td>7</td>
+        <td>7</td>
+        <td class="cell-hi">8</td>
+        <td class="cell-hi">8</td>
+        <td class="cell-lo">6</td>
+        <td>7.2</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td>
+        <td>35</td>
+        <td>35</td>
+        <td>37</td>
+        <td>39</td>
+        <td>31</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-family:ui-sans-serif,sans-serif;font-size:14px;"><strong>Score Total: 177 / 250</strong> · <strong>Score Normalized: 7.08 / 10</strong></p>
+
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 5 评委 × 5 镜头</div>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+    </div>
+  </div>
+
+  <h2>Dissent Heatmap / 异议热力图</h2>
+  <div class="heatmap">
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:70%;width:10%;background:#1a7a4a;">7.6</div>
+        <div class="heatmap-bar" style="left:70%;width:10%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 7 – max 8"></div>
+        <span class="heatmap-range" style="right:22%;">范围 7–8 · Δ1 ⭐ 全卷最高</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:70%;width:10%;background:#6b7280;">7.4</div>
+        <div class="heatmap-bar" style="left:70%;width:10%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 7 – max 8"></div>
+        <span class="heatmap-range" style="right:22%;">范围 7–8 · Δ1</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:50%;width:40%;background:#a3705a;">7.0 avg</div>
+        <div class="heatmap-bar" style="left:50%;width:40%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 5 – max 9"></div>
+        <span class="heatmap-range">范围 5–9 · Δ4 ★ 最大分歧</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:10%;background:#c1440e;">6.2</div>
+        <div class="heatmap-bar" style="left:60%;width:10%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 6 – max 7"></div>
+        <span class="heatmap-range">范围 6–7 · Δ1 ★★ 最弱（没有分歧的低分）</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:20%;background:#6b7280;">7.2 avg</div>
+        <div class="heatmap-bar" style="left:60%;width:20%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 6 – max 8"></div>
+        <span class="heatmap-range">范围 6–8 · Δ2</span>
+      </div>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>结构读法</strong>：Leverage 的 Δ4 是全卷唯一真分歧，且是 2023 年"傅盛 vs 朱啸虎大模型论战"的 2026 续集、攻守易位——同一组事实（MIT 开源、国产算力 Day 0 适配、47.18 亿年亏损、7401 亿港元市值），傅盛读作"没人能下架的基础设施"（9），朱啸虎读作"开源即让利、算力即军备、估值即共识"（5）。Identity 是另一种危险形态：<strong>没有分歧的低分</strong>——竞对、伙伴、方法论派、布道者、投资人五条推理路径抵达同一个 6 分区间。
+    </div>
+  </div>
+
+  <h2>影响力构造 / Influence Map · Leverage Map</h2>
+  <div class="flow-diagram">
+    <pre>
+清华 KEG 起源（2019-06 · ChatGPT 前三年 · "让机器像人一样思考" · 智源以 2037 万知识产权注资天使轮）
+      │
+      ▼
+GLM 自研架构（2021 GLM-10B → 2022 GLM-130B：国内第一个千亿开源模型 · 斯坦福评测亚洲唯一入选）
+      │
+      ├──→ 开源飞轮：ChatGLM-6B(160万+下载) → GLM-4.5 全面开源(MIT · 2025-07) →
+      │     GLM-4.7 登顶 HF 趋势榜 → GLM-5.2 Code Arena 全球可用模型第一(2026-06)
+      │        │
+      │        ▼
+      │   海外生态位：Windsurf / Cerebras / Vercel 接入 · OpenRouter 流量快于 DeepSeek V4 后
+      │   · CNBC："与 Opus 4.8 差 1 个百分点，成本约 1/5" · intelligence per dollar
+      │        │
+      │        ▼
+      │   ✦ 地缘反转杠杆：实体清单(2025-01) 倒逼国产算力 Day 0 适配（八大平台）
+      │     → Fable/GPT-5.6 受限时刻(2026-06)，"没人能撤回的模型"成为更安全的选择
+      │     → GLM-5.2 发布日股价 +32.8%
+      │
+      ├──→ 政企压舱石：私有化部署收入 5.34 亿(73.7%) · 央国企/金融/能源 · 续约率 95%
+      │     ⚠ 反规模效应业务（项目制交付）
+      │
+      └──→ 资本平台："大模型第一股"(2026-01-08 港交所 · 43.48 亿港元) →
+             科创板辅导验收(2026-06-17) · 拟募 150 亿（120 亿基座模型 + 20 亿 MaaS）
+                  │
+                  ▼
+          商业化第二曲线：MaaS ARR 17 亿(2026Q1) · 云端收入 +292.6% ·
+          GLM Coding Plan 两个月 15 万付费开发者 · ARR 破亿
+                  │
+                  ▼
+          ⚠ 三重裂缝：① 收入 7.24 亿 vs 净亏 47.18 亿（军备账单）
+          ② 市值 7401 亿港元 vs 收入 7.24 亿（约千倍市销率 · 反向指标报警）
+          ③ 身份两张皮：AGI 登月叙事 vs 政企集成收入 · 多名并存（智谱/Z.ai/GLM/清言）
+                  │
+                  ▼
+          品牌叙事层（"开源 + 自主可控 + 大模型第一股"三句可复述心智 · C 端基本隐身）
+    </pre>
+  </div>
+
+  <h2>评委打分卡 / Judge Scorecards（v1）</h2>
+  <div class="judge-grid">
+
+    <div class="judge-card">
+      <div class="judge-name">杨植麟 yangzhilin △</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">月之暗面创始人 · 智谱直接竞对（△披露）</div>
+      <div class="judge-total" style="color:var(--warn);">35</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 竞对披露△</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%;background:#d97706;"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"2019 年的非共识坚持成了 2026 年的基础设施；让利换生态与烧钱换 scale 如何闭合，是它和我们共同的考题。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">王慧文 wanghuiwen</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">美团联合创始人 · 邻近关联已披露（非△）</div>
+      <div class="judge-total">35</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"两条规模效应曲线装在一个公司里：MaaS 有万有引力，私有化交付是反规模效应——市场按前者定价，收入还是后者的形状。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">周鸿祎 zhouhongyi</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">360 创始人 · 2023 战略合作 360GLM（非△，持股未核实）</div>
+      <div class="judge-total">37</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">"'开源最强 + 国产算力能跑 + 第一个上市'是能被客户复述的心智；七个名字该做减法了。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">傅盛 fusheng</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">猎豹移动创始人 · AI 应用布道者</div>
+      <div class="judge-total" style="color:var(--green);">39</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">"千亿大模型过半凋零之后，活下来的这家用 MIT 协议把自己变成了没人能下架的基础设施——最狠的反脆弱设计。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">朱啸虎 zhuxiaohu</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">金沙江创投 · 邻近关联已披露（非△）</div>
+      <div class="judge-total" style="color:var(--accent);">31</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最低分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"ARR 17 亿、续约 95% 我认；一千倍市销率的定价，等于把 AGI 当已交付订单——公司比同行值钱，股价透支了公司。"</div>
+    </div>
+
+  </div>
+
+  <h2>R2 对话：核心分歧 / Dissent Dialogues</h2>
+  <p style="font-size:12px;color:var(--muted);">（评委发言均为 AI 基于其公开发表资料的 in-character 模拟，非本人真实意见；带引号并注明出处的中文原句逐字出自各评委已核验语料——周鸿祎无逐字语料，其发言全部为风格化模拟。）</p>
+
+  <h3>傅盛 vs 朱啸虎：开源是这一代最大的杠杆，还是最贵的让利？（Leverage Δ4）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">傅盛</div>
+      <div class="dialogue-text">"不是智谱选择了开源，是断供时代替所有人选好了。我说过'今年是千亿大模型过半凋零的一年'（甲子光年，2024）——凋零的都凋零了，活下来的这家把模型 MIT 一开、国产算力 Day 0 一适配，就成了没人能下架的基础设施。我被 Google 一夜下架过 45 款应用，我太知道'命脉在别人手里'是什么滋味——Fable 说停就停的那一周，全世界的开发者都在替智谱做论证。杠杆我给 9。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">朱啸虎</div>
+      <div class="dialogue-text">"傅总，你讲的是情怀，我算的是账。开源让 DeepSeek 开、让 Qwen 开、让它开，大家都开的时候开源就不稀缺了，比的还是谁烧钱快——它一年净亏 47.18 亿，腾讯一年资本开支 767.6 亿，这仗怎么打？'移动互联网我们说离开大厂一条马路，AI时代可能要离开大厂三条马路'（未竟之约，2025）——它离大厂零条马路，正面对撞。我认它一个杠杆：央国企私有化部署，95% 续约，那是大厂不愿意弯腰干的活。所以是 5 分，不是 2 分。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">王慧文（折中）</div>
+      <div class="dialogue-text">"你们俩说的是同一家公司的两条曲线。'规模效应则是商业世界里的万有引力'（清华产品课，整理稿）——傅盛看的是 MaaS 和开源生态那条有引力的曲线，朱总看的是私有化交付那条反规模效应的曲线加上军备开支。真正的问题不是开源对不对，是哪条曲线先长成收入的大头：现在是 73.7% 对 26.3%，市场却按 26.3% 那一边定价——这个剪刀差，就是这家公司未来三年全部的戏。"</div>
+    </div>
+  </div>
+
+  <h3>杨植麟△ vs 朱啸虎：长期主义与算账主义，谁给智谱定价？（Signal / 估值）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">杨植麟△（利益披露：月之暗面创始人，智谱直接竞对）</div>
+      <div class="dialogue-text">"先说披露：这是我的竞对，我按'利益无关者会怎么打'自检过。我不同意用市销率给基座模型公司定价——'AI不是我在接下来一两年找到什么PMF，而是接下来十到二十年如何改变世界'（潜望，2024）。智谱真正该被审计的是智能增量曲线：Code Arena 百万用户盲测第一、与 Opus 4.8 差 1 个百分点，这些是真进展。我的保留只有一条：让利换生态和烧钱换 scale，这两个循环最终要在同一张资产负债表上闭合——这是它的考题，也是我们所有人的。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">朱啸虎</div>
+      <div class="dialogue-text">"植麟，你这套话我 2023 年就听过，对吧？'到底有没有人在用，到底够不够用，这是核心问题'（新浪《未竟之约》，2025）——我先表扬：智谱是六小虎里这道题答得最好的，ARR 17 亿、15 万付费开发者，这些我真金白银地认。但一千倍市销率、IPO 半年涨 13 倍、公开发售 1159 倍认购，'大家都不说泡沫的时候，那肯定是泡沫'（未竟之约，2025）。公司是好公司，价格是坏价格——十到二十年的故事，市场三个月就讲完了，剩下的时间用来跌。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">周鸿祎（折中）</div>
+      <div class="dialogue-text">"我 2023 年就跟智谱合作搞 360GLM，我说句两边都不爱听的：植麟说的智能曲线是真的，老朱说的估值透支也是真的——这两件事本来就不冲突。政企客户不看市销率，看的是出了事你的模型还在不在、数据出不出境、国产芯片上跑不跑得动。只要这三个问题智谱的答案还是最好的，泡沫破了它也是最后一个倒的；但名字再不收敛，客户连替它辩护都不知道该念哪个名字。"</div>
+    </div>
+  </div>
+
+  <h3>周鸿祎 vs 傅盛 vs 王慧文：身份两张皮，是病还是阶段？（Identity 6.2）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">周鸿祎</div>
+      <div class="dialogue-text">"智谱的问题不是没有身份，是身份太多：对股民是'Z 代表终极境地'，对部委是信创交付队，对开发者是开源慈善家，名字还分裂成智谱、Z.ai、GLM、清言七八个。我做了二十年品牌就懂一个道理：什么都像的品牌，客户最后记住的是你什么都像。它需要一次收敛手术，不是再多一个名字。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">傅盛</div>
+      <div class="dialogue-text">"老周，你说的是表，我看的是里。'对大模型没有执念，但对应用有执念。'（与周鸿祎同台，2024）——我以前拿这句话敲打大模型公司，今天我把它反过来用：智谱对开源有执念，这个执念本身就是身份。'前沿智能不应只属于少数人，也不应被少数规则随时收回'——这是它自己的原话，是中国大模型公司第一句布道级的宣言。身份不是名字的数量，是有没有一句你敢押上全部的话。它有，所以我给 7。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">王慧文（收束）</div>
+      <div class="dialogue-text">"两位说的可以合成一句：宣言有了，取舍没做。'做正确的事'和'做容易的事'各占一半收入的时候，身份必然是两张皮——这不是道德问题，是阶段问题。美团当年也是边算账边开城市，没讲过什么头部策略。智谱的身份分什么时候涨？MaaS 收入过半、名字砍到两个的那一天。"</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议</h2>
+  <div class="actions">
+    <div class="action-phase">立即执行（0-30 天）</div>
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>把"智价比（intelligence per dollar）"抢注成自己的品类语言（承傅盛/朱啸虎）</strong>
+        CNBC 已替它总结口径（与 Opus 4.8 差 1 个点、成本 1/5）——每次发版官方发布"每美元智能"对比卡（基准分 / 百万 token 成本 / 国产算力可用性），让市场引用智谱的口径而不是媒体的转述。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>在科创板招股书里主动给出"收入结构演进路线图"（承王慧文/朱啸虎）</strong>
+        披露 MaaS/订阅收入占比从 26.3% 走向 50% 的时间表与驱动假设，把估值锚换成三个可验证的数（MaaS ARR 增速、私有化续约率、单 token 毛利）。
+      </div>
+    </div>
+    <div class="action-phase">中期执行（30-90 天）</div>
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>做一次品牌收敛手术（承周鸿祎/杨植麟△）</strong>
+        收敛到"智谱 / Z.ai"双层主品牌，产品线归入 GLM 一个字母之下；明示 C 端"智谱清言"的战略取舍——敢说"不做什么"的品牌，Identity 分自己会涨。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>公开"开源→付费"转化漏斗（承杨植麟△/朱啸虎）</strong>
+        以 GLM Coding Plan（两个月 15 万付费开发者、ARR 破亿）为模板，按季度披露开源用户转 MaaS/私有化客户的转化口径——终结"让利无捕获"质疑。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>把地缘位置转化为主动的信任叙事（承周鸿祎/傅盛）</strong>
+        发布"自主可控与开放承诺"白皮书（国产算力适配清单、开源许可不可撤回承诺、数据边界），让被动的防御回应沉淀为可复述的采购论据。
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sources">Sources</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://finance.sina.com.cn/stock/hkstock/hkzmt/2026-06-17/doc-inictnum6993389.shtml">智谱(02513.HK) A股上市辅导完成 · 市值 7401 亿港元 – 新浪财经 (2026-06-17)</a></li>
+      <li><a href="https://www.21jingji.com/article/20260622/herald/dded2f6efc378a87d16bed2cba40da79.html">智谱科创板IPO拟募资150亿 · 全套财务口径 – 21经济网 (2026-06-22)</a></li>
+      <li><a href="https://finance.sina.com.cn/wm/2026-06-02/doc-inhzynrx1787322.shtml">董事会通过科创板上市议案 · 150 亿投向 – 新浪财经/蓝鲸 (2026-06-02)</a></li>
+      <li><a href="https://www.stcn.com/article/detail/3579827.html">市值579亿港元！全球大模型第一股智谱上市 – 证券时报·新财富 (2026-01)</a></li>
+      <li><a href="https://www.guancha.cn/economy/2026_01_08_803199.shtml">智谱上市首日涨13% · 唐杰内部信预告 GLM-5 – 观察者网 (2026-01-08)</a></li>
+      <li><a href="https://www.stcn.com/article/detail/3577855.html">智谱资本版图：天使轮至 B6 轮 · 83.6 亿融资 – 证券时报·创投智库 (2026-01)</a></li>
+      <li><a href="https://m.mp.oeeee.com/a/BAAFRD000020231020860529.html">2023 年累计融资超 25 亿元 – 南方都市报 (2023-10-20)</a></li>
+      <li><a href="https://www.36kr.com/p/3630125812008194">港股上市：募资 43 亿港元 · 招股书口径 – 36氪 (2026-01-08)</a></li>
+      <li><a href="https://cj.sina.com.cn/articles/view/2311077472/89c03e600200245dk">360 与智谱战略合作 · 共研 360GLM – 新浪财经·财经头条 (2023-05-16)</a></li>
+      <li><a href="https://36kr.com/p/3251196943983110">IPO 辅导启动 · z.ai 域名 · 开源年 – 36氪 (2025-04)</a></li>
+      <li><a href="https://www.stcn.com/article/detail/2371892.html">浦东创投/张江 10 亿战略投资 – 证券时报 (2025-07-02)</a></li>
+      <li><a href="https://www.ncsti.gov.cn/kjdt/xwjj/202507/t20250729_214363.html">GLM-4.5 发布：首个原生融合智能体大模型 – 北京国际科技创新中心（转智谱公众号）(2025-07-29)</a></li>
+      <li><a href="https://www.ithome.com/0/922/853.htm">GLM-5 技术细节公开 · 744B · AA 指数开源纪录 – IT之家 (2026-02-22)</a></li>
+      <li><a href="https://www.ithome.com/0/963/855.htm">GLM-5.2 面向 Coding Plan 全量开放 · "另一条路"声明 – IT之家 (2026-06-13)</a></li>
+      <li><a href="https://www.ithome.com/0/965/193.htm">GLM-5.2 开源：1M 上下文 · Code Arena 全球第一 – IT之家 (2026-06-17)</a></li>
+      <li><a href="https://www.scmp.com/tech/tech-trends/article/3357115/zhipu-ais-stock-rockets-after-chinese-firm-makes-glm-52-open-source">GLM-5.2 开源 · 股价单日 +32.8% – SCMP (2026-06-15)</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/26/china-zhipu-z-ai-open-source-anthropic-openai.html">Zhipu closing in on top U.S. AI models – CNBC (2026-06-26)</a></li>
+      <li><a href="https://www.scmp.com/tech/tech-war/article/3295002/tech-war-us-adds-chinese-ai-unicorn-zhipu-trade-blacklist-bidens-exit">智谱列入美国实体清单 – SCMP (2025-01)</a></li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Legal, IP &amp; Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-07-12 的公开资料（FRESH · open-web --quick；全部关键事实经出口代理 curl 原文核对，清单见 _raw/research_v1.md；zhipuai.cn 对本环境出口超时，官方稿以权威媒体稿与政府平台转载稿代证）。智谱、智谱华章、智谱AI、Z.ai、GLM、ChatGLM、BigModel、智谱清言及相关名称与商标归北京智谱华章科技股份有限公司及其关联实体所有；本报告与智谱无任何赞助、授权或合作关系，引用仅为识别、评论与研究。<strong>评委利益披露（△）</strong>：杨植麟为月之暗面（Moonshot AI）创始人兼 CEO，与智谱为基座大模型直接竞争对手（证券时报·创投智库 2026-01）；其视角以「△ 有据披露」方式纳入评分并在矩阵表头、对话与 reviews/ 文件头部同步标注，非利益冲突回避项（沿 yuanxin 报告马斯克△先例；参照 kimichat v1 中其因评自家公司被 drop，本单为竞对身份故保留 + △），打分经"利益无关者会不会打出同样的分"自检——其 35/50 与面板中位一致。邻近关联披露（非△）：①周鸿祎——360 对智谱的持股/融资参与关系<strong>未能核实</strong>（IPO 资本版图、57 家外部投资者口径及 2023 融资名单中均无三六零），有据的是 2023-05-16 双方战略合作共研"360GLM"（新浪财经·财经头条）；②王慧文——美团为智谱 B2 轮领投方（3 亿元），其个人经济利益无公开依据；③朱啸虎——本面板 kimichat v1 报告曾标注其参与月之暗面（智谱直接竞对）A 轮融资，仅引用该报告既有结论。5 位评委（杨植麟△、王慧文、周鸿祎、傅盛、朱啸虎）的评分与对话均为 AI 基于其公开发表资料的 in-character 模拟推断，非本人真实意见，不代表其个人或所在机构立场；带引号且注明出处的评委中文引语均逐字出自各自已核验一手语料（王慧文清华产品课语料为笔记侠整理稿，按 semi-一手标注；周鸿祎无逐字语料，其发言不含署名引语）。财务与运营数据来自公开媒体报道、招股书披露口径与公司公开口径，其中公司自报口径（企业客户数、开发者数、续约率、基准成绩）无独立审计，可能存在偏差；GLM-5 精确发布日未能核对原文，仅采"2026-02 发布"口径。本报告不构成投资建议、证券分析或任何形式的商业尽调建议；不使用任何非公开文件、商业秘密或未授权数据库；未复制任何第三方图片/截图。
+  </div>
+</div>
+
+<script>
+// Radar chart — 5 judges x 5 lenses
+const radarCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radarCtx, {
+  type: 'radar',
+  data: {
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+    datasets: [
+      {
+        label: '杨植麟△',
+        data: [8, 7, 7, 6, 7],
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217,119,6,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4, 2],
+      },
+      {
+        label: '王慧文',
+        data: [8, 7, 7, 6, 7],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '周鸿祎',
+        data: [8, 8, 7, 6, 8],
+        borderColor: '#7c3aed',
+        backgroundColor: 'rgba(124,58,237,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '傅盛',
+        data: [7, 8, 9, 7, 8],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.08)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
+      {
+        label: '朱啸虎',
+        data: [7, 7, 5, 6, 6],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 } },
+        pointLabels: { font: { size: 11, weight: '600' } },
+        grid: { color: '#e5e2dc' },
+      }
+    },
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+    }
+  }
+});
+
+// Bar chart — lens means
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Origin', 'Category', 'Signal', 'Leverage', 'Identity'],
+    datasets: [{
+      label: '均值 (Mean)',
+      data: [7.6, 7.4, 7.2, 7.0, 6.2],
+      backgroundColor: ['#1a7a4a', '#6b7280', '#8a7a6a', '#a3705a', '#c1440e'],
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } },
+      y: { ticks: { font: { size: 11, weight: '600' } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `均值: ${ctx.parsed.x.toFixed(1)} / 10`
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
