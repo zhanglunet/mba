@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>MBA — Metric Brand Auditor</title>
-<meta name="description" content="多智能体并行调研 + 可换的人物评委 panel(10 套内置 / 43 位评委)独立打分,把品牌影响力拆成可量化、可演化、可复盘的版本化报告。" />
-<meta property="og:title" content="MBA — Metric Brand Auditor" />
-<meta property="og:description" content="Multi-agent parallel research + swappable judge panels (10 built-in, 43 judges). Brand influence, scored, versioned, replayable." />
+<title>MBA — 品牌影响力监控台</title>
+<meta name="description" content="监控不同品牌的影响力动向:版本化评分、变动趋势、跨面板对比。10 个品牌 · 43 位评委 · 10 套面板,可打分、可比较、可复盘。" />
+<meta property="og:title" content="MBA — Brand Influence Monitor" />
+<meta property="og:description" content="Brand influence, scored, versioned, replayable. Monitor score movements across brands, panels and versions." />
 <meta property="og:url" content="https://mbabrand.com" />
 <style>
   :root {
@@ -16,413 +16,263 @@
     --muted: #6b6760;
     --rule: #1a1a1a;
     --accent: #c1440e;
+    --up: #1a7a4a;
+    --down: #b5341a;
+    --card: #ffffff;
+    --hair: #e2ddd3;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
     background: var(--paper);
     color: var(--ink);
-    font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+    font-family: ui-sans-serif, "Inter", "PingFang SC", "Noto Sans SC", -apple-system, sans-serif;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 64px 28px 80px;
-  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 28px 72px; }
+
+  /* ── masthead ─────────────────────────────────────────── */
   header {
     border-bottom: 2px solid var(--rule);
-    padding-bottom: 18px;
-    margin-bottom: 36px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
+    padding-bottom: 14px; margin-bottom: 26px;
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
   }
-  .mark {
-    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    font-size: 22px;
-  }
+  .mast-left { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .mark { font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
   .mark .dot { color: var(--accent); }
+  .mast-sub { font-family: ui-serif, "Noto Serif SC", Georgia, serif; font-style: italic; font-size: 14px; color: var(--muted); }
   nav a {
-    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
-    font-size: 13px;
-    color: var(--ink);
-    text-decoration: none;
-    border-bottom: 1px solid var(--ink);
-    margin-left: 18px;
+    font-size: 13px; color: var(--ink); text-decoration: none;
+    border-bottom: 1px solid var(--ink); margin-left: 16px;
   }
-  nav a:hover { color: var(--accent); border-color: var(--accent); }
+  nav a:hover, nav a.here { color: var(--accent); border-color: var(--accent); }
 
-  h1 {
-    font-size: clamp(34px, 5vw, 52px);
-    line-height: 1.15;
-    margin: 0 0 12px;
-    font-weight: 800;
-    letter-spacing: -0.01em;
-  }
-  .sub {
-    font-size: 17px;
-    color: var(--muted);
-    margin: 0 0 36px;
-    font-style: italic;
-  }
-  .pitch {
-    font-size: 18px;
-    margin: 0 0 36px;
-  }
-  .pitch + .pitch { margin-top: -16px; }
+  .intro { font-size: 14px; color: var(--muted); margin: 0 0 26px; max-width: 72ch; }
+  .intro a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px 36px;
-    margin: 36px 0 44px;
-    padding: 24px 0;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
-  }
-  .grid h3 {
-    margin: 0 0 6px;
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    font-weight: 600;
-  }
-  .grid p { margin: 0; font-size: 15px; }
+  /* ── KPI 行(stat tiles)───────────────────────────────── */
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 30px; }
+  .kpi { background: var(--card); border: 1px solid var(--hair); border-radius: 6px; padding: 14px 16px 12px; }
+  .kpi-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+  .kpi-value { font-size: 30px; font-weight: 700; line-height: 1.1; }
+  .kpi-value.down { color: var(--down); }
+  .kpi-value.up { color: var(--up); }
+  .kpi-sub { font-size: 12px; color: var(--muted); margin-top: 5px; line-height: 1.45; }
 
-  .status {
-    display: inline-block;
-    padding: 4px 10px;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-  }
+  /* ── 排序条 ───────────────────────────────────────────── */
+  .sort-bar { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--hair); }
+  .sort-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .sort-controls { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .sort-btn { font: inherit; font-weight: 600; color: var(--ink); background: none; border: 1px solid var(--hair); border-radius: 999px; padding: 2px 12px; cursor: pointer; }
+  .sort-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .sort-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .sort-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-  footer {
-    margin-top: 48px;
-    padding-top: 18px;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
-    font-size: 13px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+  /* ── 品牌卡片网格 ─────────────────────────────────────── */
+  .brand-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+  .brand-card { position: relative; background: var(--card); border: 1px solid var(--hair); border-radius: 6px; padding: 16px 18px 14px; transition: border-color 0.15s, transform 0.15s; }
+  .brand-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  @media (prefers-reduced-motion: reduce) { .brand-card, .brand-card:hover { transition: none; transform: none; } }
+  /* 品牌名 = 拉伸链接(::after 覆盖整卡);versions 链接 z-index 浮其上 —— 防 <a> 嵌套 */
+  .card-link { color: inherit; text-decoration: none; }
+  .card-link::after { content: ""; position: absolute; inset: 0; z-index: 0; }
+  .bc-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .bc-brand { font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif; font-weight: 700; font-size: 17px; line-height: 1.3; }
+  .chip { flex-shrink: 0; font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid var(--hair); border-radius: 999px; padding: 1px 10px; background: var(--paper); }
+  .bc-score-row { display: flex; align-items: center; gap: 10px; margin: 10px 0 2px; min-height: 34px; }
+  .bc-score { font-size: 32px; font-weight: 700; line-height: 1; letter-spacing: -0.01em; }
+  .badge { font-size: 12px; font-weight: 800; border-radius: 4px; padding: 2px 7px; }
+  .badge-down { color: var(--down); background: #fbe9e4; }
+  .badge-up { color: var(--up); background: #e4f3ea; }
+  .badge-flat { color: #9a958c; background: #efece5; }
+  .badge-mode { color: var(--accent); background: #fdeee5; }
+  .spark { margin-left: auto; }
+  .bc-meta { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .bc-headline { font-size: 13.5px; line-height: 1.55; margin: 0; color: var(--ink); }
+  .versions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-top: 11px; padding-top: 9px; border-top: 1px dashed var(--hair); }
+  .versions .vlabel { color: var(--muted); font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .versions a { color: var(--accent); text-decoration: none; font-size: 12px; font-weight: 600; border: 1px solid var(--hair); border-radius: 4px; padding: 0 8px; }
+  .versions a:hover { border-color: var(--accent); background: var(--accent); color: #fff; }
+
+  /* ── 页脚 ─────────────────────────────────────────────── */
+  .access { margin-top: 44px; padding: 14px 18px; background: var(--card); border: 1px solid var(--hair); border-radius: 6px; font-size: 13px; color: var(--muted); display: flex; gap: 8px 24px; flex-wrap: wrap; align-items: baseline; }
+  .access code { background: #f0ece3; padding: 1px 7px; border-radius: 3px; font-size: 12px; color: var(--ink); }
+  .access a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+  footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
   footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
   footer a:hover { color: var(--accent); border-color: var(--accent); }
-
-  .en { color: var(--muted); font-size: 14px; font-style: italic; margin-top: 6px; }
-
-  .hack-banner {
-    background: #fff7ed;
-    border: 2px solid #c1440e;
-    color: var(--ink);
-    padding: 14px 18px;
-    font-size: 14px;
-    line-height: 1.55;
-    margin: 0 0 28px;
-    border-radius: 4px;
-    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
-  }
-  .hack-banner strong { color: var(--accent); }
-  .hack-banner .tag { display: inline-block; background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; margin-right: 8px; letter-spacing: 0.06em; }
-
-  .reports-list { margin: 36px 0 44px; padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
-  .reports-list h3 { margin: 0 0 14px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-  .stats-strip {
-    display: flex; flex-wrap: wrap; gap: 8px 18px;
-    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif;
-    font-size: 12px; color: var(--muted);
-    margin: 0 0 18px; padding: 10px 14px;
-    background: #f5f2ec; border-radius: 4px;
-    line-height: 1.5;
-  }
-  .stats-strip .s-item { white-space: nowrap; }
-  .stats-strip .s-item strong { color: var(--ink); font-weight: 700; }
-  .report-card { position: relative; display: block; padding: 16px 18px; border: 1px solid var(--rule); border-radius: 6px; color: var(--ink); margin-bottom: 10px; transition: all 0.15s; background: #fff; }
-  .report-card:hover { border-color: var(--accent); transform: translateX(4px); }
-  /* 品牌名是「拉伸链接」:::after 覆盖整卡 → 点卡片任意处都打开报告;meta/versions 链接靠 z-index 浮在其上单独可点 */
-  .report-card .card-link { color: inherit; text-decoration: none; }
-  .report-card .card-link::after { content: ""; position: absolute; inset: 0; z-index: 0; }
-  .report-card .top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
-  .report-card .brand { font-weight: 700; font-size: 17px; }
-  .report-card .v { color: var(--muted); font-size: 13px; }
-  .report-card .takeaway { color: var(--ink); font-size: 14px; margin-top: 6px; line-height: 1.5; }
-  .report-card .meta { color: var(--muted); font-size: 12px; margin-top: 8px; }
-  .report-card .meta a { position: relative; z-index: 1; color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); margin-left: 8px; }
-  .report-card .versions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; padding-top: 9px; border-top: 1px dashed var(--rule); }
-  .report-card .versions .vlabel { color: var(--muted); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; }
-  .report-card .versions a { color: var(--accent); text-decoration: none; font-size: 12px; font-weight: 600; border: 1px solid var(--rule); border-radius: 4px; padding: 1px 9px; }
-  .report-card .versions a:hover { border-color: var(--accent); background: var(--accent); color: #fff; }
-
-  .how { margin: 36px 0 44px; padding: 24px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
-  .how h3 { margin: 0 0 14px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-  .how .how-line { font-size: 16px; font-weight: 700; margin: 0 0 8px; line-height: 1.4; }
-  .how .how-line b { color: var(--accent); }
-  .how .how-desc { font-size: 14px; color: var(--ink); margin: 0 0 16px; line-height: 1.55; }
-  .how .how-cta { display: inline-block; font-size: 14px; font-weight: 700; color: #fff; background: var(--accent); padding: 9px 16px; border-radius: 6px; text-decoration: none; }
-  .how .how-cta:hover { background: #a5380b; }
 </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="mark">MBA<span class="dot">.</span></div>
+      <div class="mast-left">
+        <div class="mark">MBA<span class="dot">.</span></div>
+        <div class="mast-sub">品牌影响力监控台 · Brand Influence Monitor</div>
+      </div>
       <nav>
-        <a href="/presentation/">Presentation</a>
-        <a href="/pitch.html">Pitch</a>
-        <a href="/how-it-works.html">怎么打分</a>
-        <a href="/agents.html">For Agents</a>
-        <a href="/roadmap.html">Roadmap</a>
+        <a href="/" class="here">品牌监控</a>
         <a href="/panorama.html">评委全景</a>
-        <a href="/weekly.html">周报</a>
-        <a href="https://www.botlearn.ai/en/community/u/mba_auditor">Install</a>
+        <a href="/docs.html">文档</a>
         <a href="https://github.com/zhanglunet/mba">GitHub</a>
       </nav>
     </header>
 
-    <span class="status">Live · 黑客松演示</span>
+    <p class="intro">多位「人物评委」按 7 维度 × 5 镜头对品牌独立打分,报告版本化——同一品牌随时间的每一次重审都可比较、可复盘。<a href="/how-it-works.html">怎么打分 →</a></p>
 
-    <h1>把品牌影响力<br/>拆成可打分的事。</h1>
-    <p class="sub">Metric Brand Auditor — multi-agent research, scored, versioned, replayable.</p>
-
-    <div class="hack-banner">
-      <span class="tag">HACKATHON DEMO</span>
-      <strong>本站为黑客松比赛演示版,不是真实场景。</strong> 评委的头像 + 评分 + verdict + Round 2 辩论均为 AI 基于公开一手资料的 in-character 模拟,**非照片中本人真实意见**。本站发布的报告**不构成投资建议**,也**不构成对任何品牌 / 上市公司的实际评价**。如有不当请到 GitHub 反馈。
-    </div>
-
-    <p class="pitch" id="what">
-      MBA 是一条由 Lead 编排、子智能体并行执行、人物评委 panel(可换)独立打分的品牌影响力审计流水线。
-      固定 5 镜头 × 7 维度,跨品牌可比、跨时间可比、可复盘。10 套内置 panel、43 位评委。
-    </p>
-
-    <a href="https://github.com/zhanglunet/mba/blob/main/docs/13-mcp-quickstart.md" style="display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 22px;margin:0 0 28px;background:#fff;border:2px solid var(--rule);border-radius:6px;text-decoration:none;color:var(--ink);font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;transition:all 0.15s;">
-      <span>
-        <span style="display:inline-block;background:var(--accent);color:#fff;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:0.06em;margin-right:10px;">NEW · v0.4.2</span>
-        <strong style="font-size:16px;">MCP Server · 从任何 agent 调 MBA</strong>
-        <img src="https://img.shields.io/npm/v/mba-mcp-server?logo=npm&label=npm" alt="npm 版本" style="vertical-align:middle;margin-left:8px;height:18px;">
-        <span style="display:block;color:var(--muted);font-size:13px;margin-top:6px;margin-left:70px;"><strong>已发布 npm</strong>,一行接入:<code>npx -y mba-mcp-server@latest</code> —— 13 工具,接进 Claude Desktop / Cursor。品牌订阅 → 自动重审 → delta 报告 → webhook/email 通知。</span>
-      </span>
-      <span style="color:var(--accent);font-size:20px;flex-shrink:0;">→</span>
-    </a>
-
-    <a href="/presentation/" style="display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 22px;margin:0 0 28px;background:#fff;border:2px solid var(--rule);border-radius:6px;text-decoration:none;color:var(--ink);font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;transition:all 0.15s;">
-      <span>
-        <span style="display:inline-block;background:var(--accent);color:#fff;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:0.06em;margin-right:10px;">NEW</span>
-        <strong style="font-size:16px;">MBA 项目介绍 · Web Presentation</strong>
-        <span style="display:block;color:var(--muted);font-size:13px;margin-top:6px;margin-left:48px;">21 页编辑式 deck —— 升维 / 问题 / 流水线 / 评委 / 报告解剖 / 商业化。键盘 ← → 翻页。</span>
-      </span>
-      <span style="color:var(--accent);font-size:20px;flex-shrink:0;">→</span>
-    </a>
-    <p class="en">
-      A pipeline orchestrated by a Lead agent, executed in parallel by sub-agents,
-      and scored independently by a swappable judge panel — fixed dimensions, comparable across brands and time.
-    </p>
-
-    <section class="grid">
-      <div>
-        <h3>Pipeline</h3>
-        <p>5 阶段:Router → 并行调研 → 合成 → N 评委 panel 打分 → 报告版本化</p>
-      </div>
-      <div>
-        <h3>Judges</h3>
-        <p>10 套可换 panel · 43 位评委(傅盛 / Jobs / 马斯克 / 黄仁勋 / Naval / Arnault …)</p>
-      </div>
-      <div>
-        <h3>Output</h3>
-        <p>Markdown + 自包含 HTML(雷达图 / 异议热力图 / 影响力构造图)</p>
-      </div>
-      <div>
-        <h3>Open source</h3>
-        <p>
-          <a href="https://github.com/zhanglunet/mba" style="color:inherit">github.com/zhanglunet/mba</a><br/>
-          <a href="https://www.botlearn.ai/en/community/u/mba_auditor" style="color:inherit">botlearn.ai/u/mba_auditor</a>
-        </p>
-      </div>
-    </section>
-
-    <section class="how">
-      <h3>它是怎么打分的 · How it works</h3>
-      <p class="how-line">信息源 → <b>7 维度 × 5 镜头</b> → N 评委独立打分 → 异议聚合 → 版本化报告</p>
-      <p class="how-desc">
-        每条结论都带公开来源引用;评委各自 in-character、互不可见地按 5 把固定尺子打 1-10 分;
-        Lead 再把共识与分歧合成报告。异议越大越被顶到台面 —— 分歧本身就是头条。
-      </p>
-      <a class="how-cta" href="/how-it-works.html">查看完整方法论(含流程图) →</a>
-    </section>
-
-    <section class="reports-list">
-      <h3>已发布审计报告（10 份）/ Published Audits</h3>
-      <div class="stats-strip">
-        <span class="s-item">10 个 Panel &nbsp;·&nbsp; 43 位评委</span>
-        <span class="s-item">最高总分 <strong>Hermès 8.64/10</strong></span>
-        <span class="s-item">最高 Identity <strong>9.6</strong>（Hermès，审计史最高）</span>
-        <span class="s-item">最高 Origin <strong>9.0</strong>（Hermès）</span>
-        <span class="s-item">首个双重★冲突 <strong>美团</strong>（张磊★ + 沈南鹏★）</span>
-      </div>
+    <section aria-label="品牌监控">
       <!-- REPORTS:START — 生成自 site/reports-meta.yaml(scripts/build_home_cards.py)· 勿手改 -->
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/lenovo/">联想集团 Lenovo Group · 0992.HK</a></span>
-          <span class="v">v1 · 2026-05-10</span>
+      <div class="kpi-row"><div class="kpi"><div class="kpi-label">监控品牌</div><div class="kpi-value">10</div><div class="kpi-sub">43 评委 · 10 面板</div></div><div class="kpi"><div class="kpi-label">最新审计</div><div class="kpi-value">07-11</div><div class="kpi-sub">Anthropic v3 / 美团 v2</div></div><div class="kpi"><div class="kpi-label">最大变动</div><div class="kpi-value down">↓1.04</div><div class="kpi-sub">美团 7.76→6.72</div></div><div class="kpi"><div class="kpi-label">审计最高分</div><div class="kpi-value">8.64</div><div class="kpi-sub">爱马仕 · luxury-en</div></div></div>
+      <div class="sort-bar"><span class="sort-label">品牌动向</span><span class="sort-controls">排序:<button class="sort-btn active" data-key="date">最近</button><button class="sort-btn" data-key="score">评分</button><button class="sort-btn" data-key="delta">变动</button></span></div>
+      <div class="brand-grid" id="brandGrid">
+      <div class="brand-card" data-score="7.16" data-date="2026-07-11" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/anthropic/"><span class="bc-brand">Anthropic (Claude)</span></a>
+          <span class="chip" title="PANEL-MERGE · vc-en × vc-cn 双面板 · 10 评委 · Panel Comparison + 叠加雷达 + delta 热力图 · v1 FRESH→v2 EVOLUTION→v3 跨面板">vc-en</span>
         </div>
-        <div class="takeaway">
-          全球 PC 龙头 + 子品牌资产撑起的渠道机器,财务面比亚信好得多但 AI 时代位置危机更严峻:亚信"做不出来",联想"做出来了但红利归别人"。 3 评委 R2 收敛到"红利不归联想"同一深层共识。Total mean 22/50。
+        <div class="bc-score-row">
+          <span class="bc-score">7.16</span><span class="badge badge-mode">v3 跨面板</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,5.0 48.0,6.7 91.0,25.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="91.0" cy="25.0" r="4" fill="#c1440e" stroke="var(--paper)" stroke-width="2"/></svg>
         </div>
-        <div class="meta">
-          5 评委 · Round 2 辩论 · CSS 象限 + 雷达 + 异议热力图
-          <a href="/reports/lenovo/report.pdf">↓ PDF</a>
-        </div>
+        <div class="bc-meta">v3 · 2026-07-11</div>
+        <p class="bc-headline">v3 首次跨面板对比:两面板方向惊人一致,vc-cn 系统性偏严 −2.2</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/anthropic/versions/v1_2026-06-26.html">v1</a><a href="/reports/anthropic/versions/v2_2026-07-10.html">v2</a><a href="/reports/anthropic/">v3 · 当前</a></div>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/chengshi-auto/">橙仕汽车 Chengshi Auto</a></span>
-          <span class="v">v6 · 2026-05-18</span>
+      <div class="brand-card" data-score="6.72" data-date="2026-07-11" data-delta="1.04">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/meituan/"><span class="bc-brand">美团 Meituan</span></a>
+          <span class="chip" title="vc-cn panel · EVOLUTION v1→v2 · 5 评委（朱啸虎·张磊★·徐新·雷军·沈南鹏★）· delta 表 + gitGraph + 雷达对比">vc-cn</span>
         </div>
-        <div class="takeaway">
-          末端配送生产力品牌:场景切口清晰,真实应用信号增强,但服务数据透明度和身份系统仍是短板。MBA auto panel 5 位汽车行业评委给出 31.0/50, 综合分 6.2/10。
+        <div class="bc-score-row">
+          <span class="bc-score">6.72</span><span class="badge badge-down">↓1.04</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,5.0 91.0,25.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><line x1="5.0" y1="5.0" x2="91.0" y2="25.0" stroke="#b5341a" stroke-width="2" stroke-linecap="round"/><circle cx="91.0" cy="25.0" r="4" fill="#b5341a" stroke="var(--paper)" stroke-width="2"/></svg>
         </div>
-        <div class="meta">
-          Auto panel · 雷达图 · 评委异议热力图 · 产品图片 · 法律/IP/免责声明
-          <a href="/reports/chengshi-auto/report.pdf">↓ PDF</a>
-        </div>
-        <div class="versions">
-          <span class="vlabel">版本演化 EVOLUTION</span>
-          <a href="/reports/chengshi-auto/versions/v2_2026-05-18.html">v2</a>
-          <a href="/reports/chengshi-auto/versions/v3_2026-05-18.html">v3</a>
-          <a href="/reports/chengshi-auto/versions/v4_2026-05-18.html">v4</a>
-          <a href="/reports/chengshi-auto/versions/v5_2026-05-18.html">v5</a>
-          <a href="/reports/chengshi-auto/">v6 · 当前</a>
-        </div>
+        <div class="bc-meta">v2 · 2026-07-11</div>
+        <p class="bc-headline">由盈转亏,让出 MBA 审计史最高分——护城河没被攻破,是被打成了亏损</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/meituan/versions/v1_2026-06-28.html">v1</a><a href="/reports/meituan/">v2 · 当前</a></div>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/anthropic/">Anthropic (Claude)</a></span>
-          <span class="v">v3 · 2026-07-11</span>
+      <div class="brand-card" data-score="8.64" data-date="2026-06-28" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/hermes/"><span class="bc-brand">Hermès 爱马仕</span></a>
+          <span class="chip" title="luxury-en panel · 5评委（Arnault△·Wintour·Cucinelli·Tom Ford·Sarah Burton）· 全英文评语 · 三项MBA历史纪录">luxury-en</span>
         </div>
-        <div class="takeaway">
-          PANEL-MERGE v3（首个 --panel-merge 跨面板对比）：同一份简报由 vc-en(硅谷 VC)与 vc-cn(中国 VC)独立打分。两面板方向惊人一致——没有一个镜头均值差达 1.5(最大 0.8)； vc-cn 系统性偏严 −2.2(35.8 vs 38.0/50)集中在 Leverage/Identity。两面板共识裂缝重合： Signal 全 10 位评委齐打 gross/net 折价、Identity 同为最弱镜头。vc-cn 179/250 · 7.16； vc-en 参照 190/250 · 7.60。
+        <div class="bc-score-row">
+          <span class="bc-score">8.64</span>
         </div>
-        <div class="meta">
-          PANEL-MERGE · vc-en × vc-cn 双面板 · 10 评委 · Panel Comparison + 叠加雷达 + delta 热力图 · v1 FRESH→v2 EVOLUTION→v3 跨面板
-        </div>
-        <div class="versions">
-          <span class="vlabel">版本演化 EVOLUTION</span>
-          <a href="/reports/anthropic/versions/v1_2026-06-26.html">v1</a>
-          <a href="/reports/anthropic/versions/v2_2026-07-10.html">v2</a>
-          <a href="/reports/anthropic/">v3 · 当前</a>
-        </div>
+        <div class="bc-meta">v1 · 2026-06-28</div>
+        <p class="bc-headline">审计史最高分:拒绝本身即品牌——每一次拒绝都强化品类定义</p>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/dji/">DJI 大疆创新</a></span>
-          <span class="v">v1 · 2026-06-26</span>
+      <div class="brand-card" data-score="6.48" data-date="2026-06-28" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/genki-forest/"><span class="bc-brand">元气森林 Genki Forest</span></a>
+          <span class="chip" title="consumer-cn panel · 5 评委（江南春·张兰·罗永浩·阳萌·钟睒睒△）· 雷达图 + 评委对比 · 竞争对手偏见说明">consumer-cn</span>
         </div>
-        <div class="takeaway">
-          中国出海硬科技天花板：70%+ 全球无人机份额、$3.5B 营收、品类创造者地位无争议。 cross-border 5 位评委对 Category（8.0）和 Signal（8.0）高度共识，但 Identity 均值仅 5.6 ——极致产品力背后叙事层几乎空白，美国 FCC 禁令将这一结构性弱点暴露为生死考场。186/250 · 7.44/10。
+        <div class="bc-score-row">
+          <span class="bc-score">6.48</span>
         </div>
-        <div class="meta">
-          cross-border panel · 5 评委 · 雷达图 + 异议热力图 + 影响力构造图 · R2 辩论
-        </div>
+        <div class="bc-meta">v1 · 2026-06-28</div>
+        <p class="bc-headline">史上最强 Identity(7.6)× 最弱 Signal(5.4)的历史异常</p>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/qianxin/">奇安信 QiAnXin</a></span>
-          <span class="v">v1 · 2026-06-26</span>
+      <div class="brand-card" data-score="6.2" data-date="2026-06-28" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/tal-education/"><span class="bc-brand">好未来 TAL Education · TAL.NYSE</span></a>
+          <span class="chip" title="edu-cn panel · 4 评委（俞敏洪△·李可佳·吴俊东·萨尔曼·可汗）· 雷达图 + 评委对比 · 创始人自冲突 + 竞争对手偏见说明">edu-cn</span>
         </div>
-        <div class="takeaway">
-          中国政务安全市场无可置疑的领导者，80%+ 中央部委客户、67亿RMB营收、科创板上市。 security-cn-global 6位评委对 Leverage（均值7.0）基本共识，但 Identity（均值4.5）全卷最低——政务工具标签在国内是护城河，在国际市场是障碍。最大分歧：马斯克（22/50，监管护城河非真正杠杆）vs 任正非（37/50，国家数字主权基础设施价值极高）。 185/300 · 6.17/10。
+        <div class="bc-score-row">
+          <span class="bc-score">6.20</span>
         </div>
-        <div class="meta">
-          security-cn-global panel · 6 评委（周鸿祎·张明正·任正非·黄仁勋·马斯克·纳德拉）· 雷达图 + 异议热力图 · R2 辩论
-        </div>
+        <div class="bc-meta">v1 · 2026-06-28</div>
+        <p class="bc-headline">首个「品类被政策摧毁后重建」审计案例:双减后的残局与数据壁垒</p>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/kimichat/">Kimi 月之暗面 (Moonshot AI)</a></span>
-          <span class="v">v1 · 2026-06-26</span>
+      <div class="brand-card" data-score="7.44" data-date="2026-06-26" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/dji/"><span class="bc-brand">DJI 大疆创新</span></a>
+          <span class="chip" title="cross-border panel · 5 评委 · 雷达图 + 异议热力图 + 影响力构造图 · R2 辩论">cross-border</span>
         </div>
-        <div class="takeaway">
-          中国 AI 创业浪潮品牌质感最好的独立公司：Kimi 命名全卷最优，杨植麟学术背书无可复制。 ai-app-cn 4 位评委（杨植麟自冲突排除）历史首次出现 Identity（均值 7.5）领跑全维度—— 品牌系统强于业务信号的罕见模式。最大弱点 Leverage（均值 6.0）：字节 Doubao 的分发生态是结构性鸿沟，非产品迭代可弥补。朱啸虎★（A轮投资方）37/50 为最高分，周鸿祎 31/50 为最低。 137/200 · 6.85/10。
+        <div class="bc-score-row">
+          <span class="bc-score">7.44</span>
         </div>
-        <div class="meta">
-          ai-app-cn panel · 4 评委（王慧文·周鸿祎·傅盛·朱啸虎★）· 雷达图 + 异议热力图 · 创始人自冲突说明
-        </div>
+        <div class="bc-meta">v1 · 2026-06-26</div>
+        <p class="bc-headline">无争议品类创造者,叙事空白暴露于 FCC 禁令生死考场</p>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/tal-education/">好未来 TAL Education · TAL.NYSE</a></span>
-          <span class="v">v1 · 2026-06-28</span>
+      <div class="brand-card" data-score="6.85" data-date="2026-06-26" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/kimichat/"><span class="bc-brand">Kimi 月之暗面 (Moonshot AI)</span></a>
+          <span class="chip" title="ai-app-cn panel · 4 评委（王慧文·周鸿祎·傅盛·朱啸虎★）· 雷达图 + 异议热力图 · 创始人自冲突说明">ai-app-cn</span>
         </div>
-        <div class="takeaway">
-          中国教育行业 20 年积累的品牌标杆，MBA 审计史上首个"品类被政策摧毁后重建"案例。双减（2021）将核心 K9 课外辅导强制消灭，市值蒸发 90%+；但学习数据、学而思品牌信任、教研质量三项核心资产在 AI 时代提供了真实重建基础。edu-cn 4 位评委（张邦鑫自冲突排除）： Origin 7.3 最高（草根叙事真实），Category 5.5 最低（原品类消灭）。最大分歧：俞敏洪△品类 4 分 vs 萨尔曼·可汗 7 分——"残局"框架 vs "数据壁垒"框架对撞。 124/200 · 6.20/10。
+        <div class="bc-score-row">
+          <span class="bc-score">6.85</span>
         </div>
-        <div class="meta">
-          edu-cn panel · 4 评委（俞敏洪△·李可佳·吴俊东·萨尔曼·可汗）· 雷达图 + 评委对比 · 创始人自冲突 + 竞争对手偏见说明
-        </div>
+        <div class="bc-meta">v1 · 2026-06-26</div>
+        <p class="bc-headline">MBA 首例 Identity 领跑全维度:品牌系统强于业务信号</p>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/genki-forest/">元气森林 Genki Forest</a></span>
-          <span class="v">v1 · 2026-06-28</span>
+      <div class="brand-card" data-score="6.17" data-date="2026-06-26" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/qianxin/"><span class="bc-brand">奇安信 QiAnXin</span></a>
+          <span class="chip" title="security-cn-global panel · 6 评委（周鸿祎·张明正·任正非·黄仁勋·马斯克·纳德拉）· 雷达图 + 异议热力图 · R2 辩论">security-cn-global</span>
         </div>
-        <div class="takeaway">
-          中国 2016-2021 新消费浪潮品类创造力最强案例。"0糖0脂0卡"六字定义无糖气泡水品类，日系视觉锤在货架极度差异化，三年营收增长约 7×。MBA 历史异常： Identity 7.6（审计史最高）× Signal 5.4（审计史最低）——最强品牌系统遭遇最难修复的诚信危机（2021 年"0糖"标注风波）。钟睒睒△（农夫山泉，直接竞对） 29/50 最低，江南春 36/50 最高。162/250 · 6.48/10。
+        <div class="bc-score-row">
+          <span class="bc-score">6.17</span>
         </div>
-        <div class="meta">
-          consumer-cn panel · 5 评委（江南春·张兰·罗永浩·阳萌·钟睒睒△）· 雷达图 + 评委对比 · 竞争对手偏见说明
-        </div>
+        <div class="bc-meta">v1 · 2026-06-26</div>
+        <p class="bc-headline">政务安全龙头:标签在国内是护城河,在国际市场是障碍</p>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/meituan/">美团 Meituan</a></span>
-          <span class="v">v2 · 2026-07-11</span>
+      <div class="brand-card" data-score="6.2" data-date="2026-05-18" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/chengshi-auto/"><span class="bc-brand">橙仕汽车 Chengshi Auto</span></a>
+          <span class="chip" title="Auto panel · 雷达图 · 评委异议热力图 · 产品图片 · 法律/IP/免责声明">auto</span>
         </div>
-        <div class="takeaway">
-          EVOLUTION v1→v2:美团让出"MBA 审计史最高分"（7.76→6.72，−1.04）。v1 把 Signal(8.4)/Leverage(8.0) 锚在 2023 旧口径（营收¥276B、~70% 份额、盈利转正），FY2025 年报直接证伪——由盈转亏净亏¥234亿、营销占比冲 28.2%、淘宝闪购按 GTV 45.2% 反超美团 45.0%、¥7.46亿食安罚单。五评委齐降 Signal(↓2.8)、 Leverage(↓1.4)、Category(↓1.0)，Origin/Identity ↔。裁决 v1 朱啸虎-张磊之争： "护城河没被攻破，是被打成了亏损——朱啸虎赢了这一回合，但没赢下整场。"168/250 · 6.72/10。
+        <div class="bc-score-row">
+          <span class="bc-score">6.20</span><span class="badge badge-mode">v6 · 多版本</span>
         </div>
-        <div class="meta">
-          vc-cn panel · EVOLUTION v1→v2 · 5 评委（朱啸虎·张磊★·徐新·雷军·沈南鹏★）· delta 表 + gitGraph + 雷达对比
-        </div>
-        <div class="versions">
-          <span class="vlabel">版本演化 EVOLUTION</span>
-          <a href="/reports/meituan/versions/v1_2026-06-28.html">v1</a>
-          <a href="/reports/meituan/">v2 · 当前</a>
-        </div>
+        <div class="bc-meta">v6 · 2026-05-18</div>
+        <p class="bc-headline">末端配送生产力品牌:场景切口清晰,6 版迭代打磨到 6.2</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/chengshi-auto/versions/v2_2026-05-18.html">v2</a><a href="/reports/chengshi-auto/versions/v3_2026-05-18.html">v3</a><a href="/reports/chengshi-auto/versions/v4_2026-05-18.html">v4</a><a href="/reports/chengshi-auto/versions/v5_2026-05-18.html">v5</a><a href="/reports/chengshi-auto/">v6 · 当前</a></div>
       </div>
-      <div class="report-card">
-        <div class="top">
-          <span class="brand"><a class="card-link" href="/reports/hermes/">Hermès 爱马仕</a></span>
-          <span class="v">v1 · 2026-06-28</span>
+      <div class="brand-card" data-score="0" data-date="2026-05-10" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/lenovo/"><span class="bc-brand">联想集团 Lenovo Group · 0992.HK</span></a>
+          <span class="chip" title="5 评委 · Round 2 辩论 · CSS 象限 + 雷达 + 异议热力图">default</span>
         </div>
-        <div class="takeaway">
-          MBA 审计史三项纪录同次创立：Identity 9.6（最高，超越元气森林7.6 +2.0）、Origin 9.0（最高）、总分8.64/10（最高，清洁纪录，仅 Arnault△ 竞争披露）。 luxury-en 5位评委：最戏剧性冲突——Bernard Arnault△（LVMH，2010-2014恶意收购发起者）为被收购目标的品牌力量打分，给出40/50最低分，却依然无法低于40。Cucinelli 46/50最高：工艺信仰者对工艺信仰品牌的最高致敬。 "拒绝本身即品牌"——拒绝收购、拒绝授权、拒绝廉价线、拒绝增长冲动，每一次拒绝强化 True Luxury 品类定义。 216/250 · 8.64/10。
+        <div class="bc-score-row">
+          <span class="bc-score">—</span>
         </div>
-        <div class="meta">
-          luxury-en panel · 5评委（Arnault△·Wintour·Cucinelli·Tom Ford·Sarah Burton）· 全英文评语 · 三项MBA历史纪录
-        </div>
+        <div class="bc-meta">v1 · 2026-05-10</div>
+        <p class="bc-headline">渠道机器遇 AI 位置危机:做出来了,红利归别人——审计样本最低分</p>
+      </div>
       </div>
       <!-- REPORTS:END -->
     </section>
 
+    <div class="access">
+      <span><b style="color:var(--ink);">接入</b></span>
+      <span>MCP:<code>npx -y mba-mcp-server@latest</code></span>
+      <span>Skill:<code>/mba &lt;brand&gt; --dry-run</code> 先预览再跑</span>
+      <span><a href="/agents.html">For Agents(JSON API)→</a></span>
+    </div>
+
     <footer>
-      <div>© 2026 MBA · Jason · 清风 · John</div>
-      <div><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></div>
-      <div style="flex-basis:100%;text-align:center;margin-top:6px;">技术支持:<a href="https://marsdata.ai">marsdata.ai</a></div>
+      <span>MBA · Metric Brand Auditor · 评分为 AI 评委模拟,非本人观点,不构成投资建议</span>
+      <span><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></span>
     </footer>
   </div>
+
+<script>
+// 品牌卡片排序(最近/评分/变动)。data-* 由生成器写入;date 为 ISO 字符串可按字典序比较。
+(function () {
+  var grid = document.getElementById('brandGrid');
+  if (!grid) return;
+  document.querySelectorAll('.sort-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var key = btn.dataset.key;
+      var cards = Array.prototype.slice.call(grid.children);
+      cards.sort(function (a, b) {
+        if (key === 'date') return b.dataset.date.localeCompare(a.dataset.date) ||
+          (parseFloat(b.dataset.score) - parseFloat(a.dataset.score));
+        return parseFloat(b.dataset[key]) - parseFloat(a.dataset[key]);
+      });
+      cards.forEach(function (c) { grid.appendChild(c); });
+      document.querySelectorAll('.sort-btn').forEach(function (x) { x.classList.toggle('active', x === btn); });
+    });
+  });
+})();
+</script>
 </body>
 </html>

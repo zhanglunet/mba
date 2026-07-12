@@ -22,6 +22,7 @@ reports:
   - slug: lenovo
     card_brand: "联想集团 Lenovo Group · 0992.HK"
     card_meta: "5 评委 · Round 2 辩论 · CSS 象限 + 雷达 + 异议热力图"
+    headline: "渠道机器遇 AI 位置危机:做出来了,红利归别人——审计样本最低分"
     brand_cn: 联想集团
     brand_en: Lenovo Group
     ticker: 0992.HK
@@ -39,6 +40,8 @@ reports:
   - slug: chengshi-auto
     card_brand: "橙仕汽车 Chengshi Auto"
     card_meta: "Auto panel · 雷达图 · 评委异议热力图 · 产品图片 · 法律/IP/免责声明"
+    headline: "末端配送生产力品牌:场景切口清晰,6 版迭代打磨到 6.2"
+    movement: "v6 · 多版本"
     versions:
       - { v: v2, date: 2026-05-18, file: versions/v2_2026-05-18.html }
       - { v: v3, date: 2026-05-18, file: versions/v3_2026-05-18.html }
@@ -65,6 +68,7 @@ reports:
   - slug: qianxin
     card_brand: "奇安信 QiAnXin"
     card_meta: "security-cn-global panel · 6 评委（周鸿祎·张明正·任正非·黄仁勋·马斯克·纳德拉）· 雷达图 + 异议热力图 · R2 辩论"
+    headline: "政务安全龙头:标签在国内是护城河,在国际市场是障碍"
     brand_cn: 奇安信
     brand_en: QiAnXin Technology
     ticker: 688561.SH
@@ -85,6 +89,7 @@ reports:
   - slug: kimichat
     card_brand: "Kimi 月之暗面 (Moonshot AI)"
     card_meta: "ai-app-cn panel · 4 评委（王慧文·周鸿祎·傅盛·朱啸虎★）· 雷达图 + 异议热力图 · 创始人自冲突说明"
+    headline: "MBA 首例 Identity 领跑全维度:品牌系统强于业务信号"
     brand_cn: Kimi / 月之暗面
     brand_en: Kimi (Moonshot AI)
     panel: ai-app-cn
@@ -104,6 +109,7 @@ reports:
   - slug: tal-education
     card_brand: "好未来 TAL Education · TAL.NYSE"
     card_meta: "edu-cn panel · 4 评委（俞敏洪△·李可佳·吴俊东·萨尔曼·可汗）· 雷达图 + 评委对比 · 创始人自冲突 + 竞争对手偏见说明"
+    headline: "首个「品类被政策摧毁后重建」审计案例:双减后的残局与数据壁垒"
     brand_cn: 好未来
     brand_en: TAL Education
     ticker: TAL.NYSE
@@ -125,6 +131,12 @@ reports:
   - slug: anthropic
     card_brand: "Anthropic (Claude)"
     card_meta: "PANEL-MERGE · vc-en × vc-cn 双面板 · 10 评委 · Panel Comparison + 叠加雷达 + delta 热力图 · v1 FRESH→v2 EVOLUTION→v3 跨面板"
+    headline: "v3 首次跨面板对比:两面板方向惊人一致,vc-cn 系统性偏严 −2.2"
+    movement: "v3 跨面板"
+    score_history:
+      - { v: v1, score: 7.64 }
+      - { v: v2, score: 7.60 }
+      - { v: v3, score: 7.16, note: vc-cn }
     versions:
       - { v: v1, date: 2026-06-26, file: versions/v1_2026-06-26.html }
       - { v: v2, date: 2026-07-10, file: versions/v2_2026-07-10.html }
@@ -148,6 +160,7 @@ reports:
   - slug: genki-forest
     card_brand: "元气森林 Genki Forest"
     card_meta: "consumer-cn panel · 5 评委（江南春·张兰·罗永浩·阳萌·钟睒睒△）· 雷达图 + 评委对比 · 竞争对手偏见说明"
+    headline: "史上最强 Identity(7.6)× 最弱 Signal(5.4)的历史异常"
     brand_cn: 元气森林
     brand_en: Genki Forest
     panel: consumer-cn
@@ -167,6 +180,10 @@ reports:
   - slug: meituan
     card_brand: "美团 Meituan"
     card_meta: "vc-cn panel · EVOLUTION v1→v2 · 5 评委（朱啸虎·张磊★·徐新·雷军·沈南鹏★）· delta 表 + gitGraph + 雷达对比"
+    headline: "由盈转亏,让出 MBA 审计史最高分——护城河没被攻破,是被打成了亏损"
+    score_history:
+      - { v: v1, score: 7.76 }
+      - { v: v2, score: 6.72 }
     versions:
       - { v: v1, date: 2026-06-28, file: versions/v1_2026-06-28.html }
       - { v: v2, date: 2026-07-11, current: true }
@@ -190,6 +207,7 @@ reports:
   - slug: dji
     card_brand: "DJI 大疆创新"
     card_meta: "cross-border panel · 5 评委 · 雷达图 + 异议热力图 + 影响力构造图 · R2 辩论"
+    headline: "无争议品类创造者,叙事空白暴露于 FCC 禁令生死考场"
     brand_cn: 大疆创新
     brand_en: DJI
     panel: cross-border
@@ -208,6 +226,7 @@ reports:
   - slug: hermes
     card_brand: "Hermès 爱马仕"
     card_meta: "luxury-en panel · 5评委（Arnault△·Wintour·Cucinelli·Tom Ford·Sarah Burton）· 全英文评语 · 三项MBA历史纪录"
+    headline: "审计史最高分:拒绝本身即品牌——每一次拒绝都强化品类定义"
     brand_cn: 爱马仕
     brand_en: Hermès
     panel: luxury-en
