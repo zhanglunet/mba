@@ -15,7 +15,7 @@
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
 | 评委全档进度 | ✅ **42/43 全档** | 1 人仍在 seed（`zhanglan` 已严格核算诚实留 seed）；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
 | mbabrand.com | ✅ 上线 | Cloudflare Pages |
-| 公开报告 | ✅ **14 品牌 · 24 版本** | 9 品牌有 EVOLUTION 版本;SpaceX 8.76 现居审计史最高;最新增 OpenAI v1 7.72(2026-07-12) |
+| 公开报告 | ✅ **15 品牌 · 25 版本** | 9 品牌有 EVOLUTION 版本;SpaceX 8.76 现居审计史最高;最新增 OpenAI 7.72 / 智谱 7.08(2026-07-12) |
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
 | 集成测试 | ✅ 已建立 | report-validation.yml + MCP e2e（真实 MCP 协议层） |
 | --dry-run / --panel-merge | ✅ 已实现 | Phase 0 §0.5 / Phase 5M |
