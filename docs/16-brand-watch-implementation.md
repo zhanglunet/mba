@@ -1,6 +1,6 @@
 # 16 — 品牌舆情监控实现与过程记录(Brand Watch Implementation)
 
-> Status: **M1 进行中**(W1/W2 ✅,W3 滚动中,W4 机制已落)· Last verified: 2026-07-12
+> Status: **M1 进行中**(W1/W2/W3 ✅,W4 机制已落、验收待真实重审)· Last verified: 2026-07-12
 > 需求与维度设计见 **docs/15**(PRD);本文是**开发计划 + 实现细节 + 过程记录**,
 > 按 W 系列工作项组织,做一项记一项(格式对齐 docs/11 的进度日志纪律)。
 
@@ -14,7 +14,7 @@
 |---|---|---|---|---|
 | **W1** | 数据层 + 硬 gate | `watch/matrix.yaml`(适用性矩阵单一真源)· `watch/<slug>/events.yaml` schema · `scripts/watch-tools/validate_watch.py`(静态校验 + `--selftest`)· 接入 panel-validation CI | 校验器全绿 + 自测有牙 + CI 跑 | ✅ 2026-07-12 |
 | **W2** | 源可达性验证 | PRD §4.2.3 清单逐源真 curl,🔍 → ✅/⚠️/❌,坑记录在案 | 每源有结论 + workaround 可复现 | ✅ 2026-07-12(见 §3) |
-| **W3** | 试点采集(持续) | 亚信 / 奇安信 / 垣信三品牌真实事件回填与增量 | **每品牌 ≥10 条**可溯源事件(M1 验收) | 🟡 首批 15 条(6/3/6),缺口见 §4.4 |
+| **W3** | 试点采集(持续) | 亚信 / 奇安信 / 垣信三品牌真实事件回填与增量 | **每品牌 ≥10 条**可溯源事件(M1 验收) | ✅ 2026-07-12 二批后 **11/11/10,验收达成**(见 §4.5);后续增量随 W6 周扫 |
 | **W4** | 半自动扫描进 skill | `/mba <brand> --watch` 单次扫描 SOP 进 SKILL.md;EVOLUTION Phase 2 先消费 events.yaml 再补扫 | 一次重审的 delta 调研直接引用事件流 | 🟡 机制已落(2026-07-12,见 §5);验收待下一次真实重审 |
 | **W5** | 首页徽章 + 时间线页(M2) | `build_home_cards.py` 读 watch 产出 P0/P1 徽章(进 REPORTS 生成区 + 漂移 gate)· `/watch/<slug>/` 时间线页 | 徽章与 events.yaml 零漂移 | ⬜ |
 | **W6** | 定期采集(M2) | CCR Routines / cron 周扫,按矩阵扫开启维度 | 13 品牌适用维度覆盖 ≥80% | ⬜ |
@@ -83,7 +83,7 @@ PRD schema 原样落地,增补两点(均为实操中发现的需要):
 | 巨潮资讯 cninfo.com.cn | ✅ | 200 / 110KB;`static.cninfo.com.cn/finalpage/<日期>/<id>.PDF` 直链法定披露件,是**最高置信度源** |
 | SAM.gov(美国联邦合同) | ✅ | 200 / 55KB |
 | 证券时报 stcn.com · 21 经济网 21jingji.com | ✅ | 200,正文可抓 |
-| **中国移动采购与招标网 b2b.10086.cn** | ⚠️ **可连,需 workaround** | 直连报 `unsafe legacy renegotiation disabled`(源站用旧 TLS 重协商,OpenSSL 3.x 默认拒绝)。用 `OPENSSL_CONF` 开 `UnsafeLegacyRenegotiation` 后 200(见下方配置)。首页为 855B 壳,公告列表页待深挖 |
+| **中国移动采购与招标网 b2b.10086.cn** | ⚠️ **可连,需 workaround** | 直连报 `unsafe legacy renegotiation disabled`(源站用旧 TLS 重协商,OpenSSL 3.x 默认拒绝)。用 `OPENSSL_CONF` 开 `UnsafeLegacyRenegotiation` 后 200(见下方配置)。**二批实测:全站(含公告列表各路径)均返回同一个 855B JS 壳,curl 不可用 —— 该源需真浏览器(Wuying / Playwright),转 W6 排期** |
 | 电信阳光采购 caigou.chinatelecom.com.cn | ⚠️ | 200 但 2.2KB,疑似 JS 壳,正文待验证 |
 | 国网 ECP ecp.sgcc.com.cn | ⚠️ | 200 / 3.6KB,边缘体积,待深挖 |
 
@@ -135,11 +135,38 @@ OPENSSL_CONF=/tmp/openssl_legacy.cnf curl -sSL --cacert /root/.ccr/ca-bundle.crt
 - 垣信:手机直连试验星(2026-06-09)与 5G 直连通话(2026-06-19)—— 摘要有日期但
   未见带日期 URL 的原文,待定位官方稿。
 
-### 4.4 M1 验收缺口(诚实记账)
+### 4.4 M1 验收记账
 
-验收线 **每品牌 ≥10 条**:当前 asiainfo 6/10 · qianxin 3/10 · yuanxin 6/10。
-缺口主要在 W3 一手公示(需按 §3 workaround 深挖运营商集采列表页)与 W4/W7 维度。
-W3 工作项持续滚动,不阻塞 W4 起步。
+首批(2026-07-12 上午):asiainfo 6/10 · qianxin 3/10 · yuanxin 6/10 —— 未达线。
+二批(同日,§4.5)补采后:**asiainfo 11 · qianxin 11 · yuanxin 10 —— 验收线达成**。
+
+### 4.5 二批补采记录(2026-07-12)
+
+方法与首批相同(§4.1),两处升级:
+
+1. **curl 核日期成为主力**:URL 无日期但源站可 curl 的(奇安信官网新闻详情页、
+   亚信官网、stcn),一律 curl 原文取页面日期 + 核对标题逐字 —— 本批 8 条事件
+   靠这条路入库。**奇安信官网新闻详情页(qianxin.com/news/detail)可稳定 curl
+   且带日期,是奇安信 W3 的高置信度一手源**(官网自己的中标稿)。
+2. **纠错实例(SOP 价值实证)**:「奇安信×东方国信战略合作」搜索摘要暗示为
+   2026 年事件,curl 页面实际 **2025-02-12** —— 摘要不可信、原文为准,
+   这条纪律本批直接防了一次错年入库。
+
+产出(+17 条,累计 32 条全过 validate_watch):
+
+| 品牌 | 二批新增 | 累计 | 分级结构(累计) |
+|---|---|---|---|
+| asiainfo | +5(六强评估/盈利预喜/亚信安全半年报/2025 年报 −5.2%/亚信安全年报) | **11** | P0×1 · P1×4 · P2×5 · P3×1 |
+| qianxin | +8(保险 2000 万/市大数据/东方国信/2024 年报/国核自仪 2900 万/运营商防病毒/CyberSec-Eval/医疗 AI 安全) | **11** | P1×2 · P2×9 |
+| yuanxin | +4(三连发×运力短板/手机直连试验星/品类议程/无改造直连通话首例) | **10** | P1×3 · P2×5 · P3×2 |
+
+观察(供 W7 触发规则参考):垣信 2026-06-09 / 06-19 / 07-05 三个 P1 落在同一个
+30 天窗内 —— 若 watch 早于 v1 审计存在,当时就会亮「建议重审」;v1(2026-07-12)
+已吸收该现实,后续以 v1 日期为 last_update_date 起算。
+
+Leads 状态更新:垣信手机直连两条已回溯入库(销案);移动贵州框架与亚信禁入处罚
+公示原文仍开放(b2b.10086.cn 需浏览器,见 §3);奇安信年报中标集部分已由官网
+一手稿覆盖(保险/大数据/运营商),其余(大行 NDR/中海油框架)仍开放。
 
 ---
 
@@ -166,11 +193,12 @@ panel 模板 `mba_version` 同步 bump,过版本对齐 gate):
 
 ## 6. 下一步(按 §1 顺序)
 
-1. **W3 滚动**:用 b2b.10086.cn workaround 深挖亚信集采公示;回溯 §4.3 全部 leads;
+1. **W5**:徽章生成进 `build_home_cards.py`(P3 永不上卡,P0/P1 计数 + 30 天窗;
+   沿用 REPORTS 生成区 + `--check` 漂移 gate 模式)+ `/watch/<slug>/` 时间线页;
 2. **W4 验收**:挑一个 watch 流已有 P0/P1 事件的品牌(首选奇安信)真跑一次
    EVOLUTION,验证 delta 调研直接引用事件流;
-3. **W5**:徽章生成进 `build_home_cards.py`(P3 永不上卡,P0/P1 计数 + 30 天窗;
-   沿用 REPORTS 生成区 + `--check` 漂移 gate 模式)。
+3. **开放 leads**(随 W6 周扫回收):移动集采公示(需浏览器)、亚信禁入处罚原文、
+   奇安信大行 NDR / 中海油框架。
 
 ## 7. 单次扫描操作 SOP(M1 人肉/半自动版)
 

@@ -45,3 +45,119 @@
     亏损较此前年份(v1 审计口径 10-15 亿/年)未收窄。年报发布日 2026-04-30 由同日
     上证报摘要 URL(paper.cnstock.com/html/2026-04/30/content_2212319.htm)交叉自证。
     v1 审计(2026-06-26)Signal 段「持续亏损是重要风险信号」在本财年继续成立。
+
+# ── 二批补采(2026-07-12,过程见 docs/16 §4.5)──────────────────────────
+
+- id: 2025-01-02-qianxin-004
+  date: 2025-01-02
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 中标某头部保险集团安全服务项目(2000 万+)
+  quote: "安服大单落锤，奇安信2000万+中标某头部保险集团安全服务项目"
+  quote_type: title
+  url: https://www.qianxin.com/news/detail?news_id=12930
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [leverage, signal]
+  note: 官网一手稿;URL 无日期,已 curl 页面核对(2025-01-02)。金融行业安服拓展信号。
+
+- id: 2025-01-17-qianxin-005
+  date: 2025-01-17
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 中标东北某市大数据管理中心数据安全项目(千万级)
+  quote: "千万级数据安全大单！奇安信中标东北某市大数据管理中心项目"
+  quote_type: title
+  url: https://www.qianxin.com/news/detail?news_id=12989
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [leverage, signal]
+  note: 官网一手稿;已 curl 核对(2025-01-17)。政务数据安全主场延续。
+
+- id: 2025-02-12-qianxin-006
+  date: 2025-02-12
+  dim: W9
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 与东方国信战略合作,共建基于 DeepSeek 基座的智算平台安全底座
+  quote: "奇安信与东方国信达成战略合作 筑牢AI安全底座"
+  quote_type: title
+  url: https://www.qianxin.com/news/detail?news_id=13049
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [leverage, category]
+  note: >-
+    官网一手稿;已 curl 核对(2025-02-12)。采集警示例:搜索摘要曾把该事件暗示为
+    2026 年 —— 页面日期为准,「摘要不可信、原文为准」的 SOP 再次验证。
+
+- id: 2025-04-30-qianxin-007
+  date: 2025-04-30
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: 2024 年年度报告披露
+  quote: "奇安信科技集团股份有限公司2024 年年度报告"
+  quote_type: title
+  url: http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2025/2025-4/2025-04-30/11078566.PDF
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [signal]
+  note: 法定披露;日期以 URL 内嵌(2025-04-30)自证。
+
+- id: 2025-06-23-qianxin-008
+  date: 2025-06-23
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 中标国核自仪 2900 万元全国产化工控安全项目
+  quote: "奇安信中标国核自仪2900万元全国产化工控安全项目"
+  quote_type: title
+  url: https://finance.sina.com.cn/roll/2025-06-23/doc-infazrrn9603441.shtml
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [leverage, category]
+  note: 核电+信创双标签订单;日期以 URL 内嵌(2025-06-23)自证。
+
+- id: 2025-07-10-qianxin-009
+  date: 2025-07-10
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 中标某头部运营商 2024-2025 年防病毒软件集采(千万级)
+  quote: "奇安信中标某头部运营商2024-2025年防病毒集采软件千万级大单"
+  quote_type: title
+  url: https://www.qianxin.com/news/detail?news_id=13677
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [leverage, signal]
+  note: 官网一手稿;已 curl 核对(2025-07-10)。运营商集采主场信号。
+
+- id: 2025-08-29-qianxin-010
+  date: 2025-08-29
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 安全大模型登顶 CyberSec-Eval 评测,八项单项第一
+  quote: "奇安信安全大模型登顶CyberSec-Eval评测榜，八项第一彰显安全AI硬实力"
+  quote_type: title
+  url: https://www.qianxin.com/news/detail?news_id=13885
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [category, leverage]
+  note: 官网一手稿;已 curl 核对(2025-08-29)。v1 审计「AI 安全大模型是新杠杆」的进展信号。
+
+- id: 2026-05-20-qianxin-011
+  date: 2026-05-20
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 奇安信 AI 公司中标某头部医疗科技集团 AI 安全运营平台升级项目
+  quote: "奇安信人工智能公司中标某头部医疗科技集团AI安全运营项目"
+  quote_type: title
+  url: https://news.qq.com/rain/a/20260520A08IV300
+  fetched_at: "2026-07-12T06:50:00Z"
+  lens_map: [leverage, category]
+  note: AISOC/QAX-GPT 商业化落地(医疗行业);日期以 URL 内嵌(20260520)自证。
