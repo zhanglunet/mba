@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>亚信 AsiaInfo — Brand Influence Review v1 · MBA</title>
+<meta name="description" content="security-cn-global panel brand audit of AsiaInfo (亚信 · 亚信科技 01675.HK + 亚信安全 688225.SH). Score: 178/300 · 5.93/10. 6 judges × 5 lenses. Audit date: 2026-07-12." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --green: #1a7a4a;
+  --blue: #1a4a7a;
+  --warn: #d97706;
+  --security: #1a3a6a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 56px 28px 96px; }
+header {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.score-table tr.mean-row td { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; color: var(--accent); font-weight: 700; background: #fef9f7; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; }
+
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+
+.actions { counter-reset: action-counter; margin-bottom: 32px; }
+.action-phase { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 20px 0 10px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--security); color: #fff; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark">MBA<span class="dot">.</span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
+  </header>
+
+  <div class="report-meta">Brand Influence Audit · v1 · 2026-07-12 · 统一品牌（亚信科技 01675.HK + 亚信安全 688225.SH）</div>
+  <h1 class="brand-title">亚信 AsiaInfo</h1>
+  <p class="report-subtitle">中国互联网的"主建筑师" · 运营商 BSS 龙头 · "亚信帝国"重聚中</p>
+
+  <div class="panel-badge">🔐 security-cn-global · 6-Judge Panel</div>
+
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">5.93</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10</div>
+    </div>
+    <div>
+      <div class="score-label">总分</div>
+      <div class="score-sub">178 / 300</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">评委数</div>
+        <div class="score-sub">6 <span class="score-tag">security-cn-global</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="score-label">最强维度</div>
+      <div class="score-sub">Origin 7.3</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Identity 4.7</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      "中国互联网主建筑师"的起源无可争议，但电信 BSS 核心在收缩、"亚信科技 vs 亚信安全"双品牌割裂——厚重的起源尚未转化为当下的品牌势能。
+    </div>
+  </div>
+
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Lens</th>
+        <th>周鸿祎</th>
+        <th>张明正</th>
+        <th>任正非</th>
+        <th>黄仁勋</th>
+        <th>马斯克</th>
+        <th>纳德拉</th>
+        <th>Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td>
+        <td>7</td>
+        <td>8</td>
+        <td class="cell-hi">9</td>
+        <td>7</td>
+        <td class="cell-lo">6</td>
+        <td>7</td>
+        <td>7.3</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td>
+        <td>6</td>
+        <td>6</td>
+        <td class="cell-hi">7</td>
+        <td>6</td>
+        <td class="cell-lo">4</td>
+        <td>6</td>
+        <td>5.8</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td>
+        <td>6</td>
+        <td>6</td>
+        <td class="cell-hi">8</td>
+        <td>6</td>
+        <td class="cell-lo">4</td>
+        <td>6</td>
+        <td>6.0</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td>
+        <td>4</td>
+        <td>5</td>
+        <td class="cell-hi">6</td>
+        <td>5</td>
+        <td class="cell-lo">3</td>
+        <td>5</td>
+        <td>4.7</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td>
+        <td>6</td>
+        <td>6</td>
+        <td class="cell-hi">7</td>
+        <td>6</td>
+        <td class="cell-lo">4</td>
+        <td>6</td>
+        <td>5.8</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td>
+        <td>29</td>
+        <td>31</td>
+        <td>37</td>
+        <td>30</td>
+        <td>21</td>
+        <td>30</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 6 评委 × 5 镜头</div>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+    </div>
+  </div>
+
+  <h2>Dissent Heatmap / 异议热力图</h2>
+  <div class="heatmap">
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:30%;background:#1a7a4a;">
+          7.3 avg
+        </div>
+        <div class="heatmap-bar" style="left:60%;width:30%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 6 – max 9"></div>
+        <span class="heatmap-range">范围 6–9 · Δ3 最强</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:40%;width:30%;background:#6b7280;">
+          5.8 avg
+        </div>
+        <div class="heatmap-bar" style="left:40%;width:30%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 4 – max 7"></div>
+        <span class="heatmap-range">范围 4–7 · Δ3</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:40%;width:40%;background:#6b7280;">
+          6.0 avg
+        </div>
+        <div class="heatmap-bar" style="left:40%;width:40%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 4 – max 8"></div>
+        <span class="heatmap-range">范围 4–8 · Δ4 ★</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:30%;width:30%;background:#c1440e;">
+          4.7 avg
+        </div>
+        <div class="heatmap-bar" style="left:30%;width:30%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 3 – max 6"></div>
+        <span class="heatmap-range">范围 3–6 · Δ3 ★★ 最弱</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:40%;width:30%;background:#6b7280;">
+          5.8 avg
+        </div>
+        <div class="heatmap-bar" style="left:40%;width:30%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 4 – max 7"></div>
+        <span class="heatmap-range">范围 4–7 · Δ3</span>
+      </div>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>特征</strong>：马斯克在全部 5 个维度均为最低分（总分 21/50），构成一致的"反收缩生意 / 反财务工程"立场。Leverage 的最大分歧（任正非 8 vs 马斯克 4，Δ4）体现"国家基础设施主权视角" vs "第一性原理创业视角"的根本张力。Identity 是全卷唯一均值低于 5 的维度。Origin 则是全卷共识最高、分歧最小的强项。
+    </div>
+  </div>
+
+  <h2>影响力构造 / Influence Map · Leverage Map</h2>
+  <div class="flow-diagram">
+    <pre>
+互联网主建筑师起源（1993 · 田溯宁 &amp; 丁健 · 承建 ChinaNet · 2000 首家赴美上市中国高科技企业）
+      │
+      ▼
+运营商级基础设施能力（30 年为三大运营商建 BSS/OSS 计费与业务支撑）
+      │
+      ├──→ 电信 BSS 深度锁定 —— 曾经最强护城河
+      │        │
+      │        ▼
+      │   ⚠ 核心收缩：2024 营收 66.46 亿（−15.8%）· BSS 39.48 亿（−19.1%）· 运营商降本
+      │
+      └──→ 三新业务（OSS · 垂直行业数字化 · DSaaS）25.99 亿 · 占 39.1% —— 转型对冲
+                  │
+                  ▼
+          "亚信帝国"重聚（2024 亚信安全反向收购亚信科技 · 田溯宁统一实控 · 市监总局放行）
+          目标：合并报表营收 &gt; 100 亿 · 员工近 1.5 万
+                  │
+                  ▼
+          AI 大模型交付（新赌注）+ 亚信安全（趋势科技中国资产 · 云/终端/数据安全）
+                  │
+                  ▼
+          ⚠ 双重张力：① 主业收缩要靠新业务与 AI 换挡；② 双品牌割裂要靠重聚讲成"一个亚信"
+                  │
+                  ▼
+          品牌叙事层（运营商 / 政企圈内权威 · 大众与国际几乎隐形）
+    </pre>
+  </div>
+
+  <h2>评委打分卡 / Judge Scorecards</h2>
+  <div class="judge-grid">
+
+    <div class="judge-card">
+      <div class="judge-name">周鸿祎</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">360 创始人</div>
+      <div class="judge-total">29</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%"></div></div><span class="judge-score">4</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"两家都叫亚信，用户分不清谁是谁——品牌先得让人一句话说清你是一家还是两家。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">张明正</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">趋势科技 / Trend Micro 创始人（知情披露）</div>
+      <div class="judge-total">31</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"趋势科技中国的技术给了亚信安全一副好牌；十年过去，它还是没走出中国，也没长成品类领导者。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">任正非</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">华为创始人</div>
+      <div class="judge-total" style="color:var(--green);">37</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"亚信建过这个国家的互联网骨干网，守住基础设施位置，是最难被替代的战略价值。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">黄仁勋</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">NVIDIA CEO</div>
+      <div class="judge-total">30</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"The backbone heritage is real. The question is whether the AI-delivery bet compounds — or just fills the hole left by shrinking BSS."</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">马斯克</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Tesla / xAI / SpaceX CEO</div>
+      <div class="judge-total" style="color:var(--accent);">21</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最低分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%;background:#d97706;"></div></div><span class="judge-score">4</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%;background:#d97706;"></div></div><span class="judge-score">4</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:30%;background:#d97706;"></div></div><span class="judge-score">3</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%;background:#d97706;"></div></div><span class="judge-score">4</span></div>
+      </div>
+      <div class="judge-quote">"A shrinking telco-software business doing a reverse merger with its own security spinoff. That's financial engineering, not a moonshot."</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">萨提亚·纳德拉</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Microsoft CEO</div>
+      <div class="judge-total">30</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"Reunification is a chance to build one platform. But merging two P&amp;Ls isn't the same as merging two data models."</div>
+    </div>
+
+  </div>
+
+  <h2>R2 对话：核心分歧 / Dissent Dialogues</h2>
+
+  <h3>马斯克 vs 任正非：起源遗产 vs 财务工程之争</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">马斯克</div>
+      <div class="dialogue-text">"你们都在讲 1993 年、讲 ChinaNet、讲纳斯达克第一股。那是 25 年前。今天我看到的是：一门在收缩的电信软件生意（营收 −15.8%），和它自己十年前拆分出去的安全子公司做反向合并。这不是第一性原理，是资产重组。告诉我，把两张正在下滑的报表合到一起，为什么就变成了增长？"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">任正非</div>
+      <div class="dialogue-text">"马斯克，你在硅谷的逻辑我理解。但基础设施的价值不能只看季度增长。亚信建过这个国家的互联网骨干网，给三大运营商做了 30 年的计费系统——这种位置，新公司拿钱砸十年也未必进得来。运营商降本是周期，位置是长期。把科技和安全重新合成一个亚信，是在收缩期把力气攥成一个拳头，这是对的。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">黄仁勋（折中）</div>
+      <div class="dialogue-text">"两位说的都对一半。马斯克说的收缩是真实的——BSS 在往下走，必须靠 AI 大模型交付和非电信业务换挡。任总说的位置也是真实的——运营商级的工程能力不是钱能快速买到的。亚信现在最重要的，是在旧护城河还在的时候，把 AI 交付这条新杠杆做成可复制的产品，而不只是项目。"</div>
+    </div>
+  </div>
+
+  <h3>纳德拉 vs 周鸿祎：重聚是"一个平台"还是"两张报表"</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">萨提亚·纳德拉</div>
+      <div class="dialogue-text">"把亚信科技和亚信安全合并，机会是把它做成一个平台——运营商数据、政企数据、安全数据共享一个模型。但要小心：合并两个法人主体，不等于合并两套数据模型和两种产品哲学。如果合完之后还是各卖各的，那它只是把两张 P&L 装进一个壳，不是平台。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">周鸿祎</div>
+      <div class="dialogue-text">"纳德拉说到根子上了。用户最直接的困惑就是——'亚信'到底是做电信软件的，还是做安全的？我做安全这么多年，最深的体会是品牌要让人一句话说清你是谁。亚信的起源足够硬，但两个亚信讲两个故事，势能就散了。重聚这件事，资本层面先做，品牌层面更得做——得让市场记住'一个亚信'，而不是记住一次收购。"</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议</h2>
+  <div class="actions">
+    <div class="action-phase">立即执行 · 0–30 天</div>
+
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>确立"一个亚信 One AsiaInfo"品牌主张，给双主体一个统一对外叙事</strong>
+        借"亚信安全反向收购亚信科技"的资本动作，同步发布品牌层的"一个亚信"主张——一句话说清"从中国互联网的建设者，到运营商与政企的数智化 + 安全全栈提供商"，终结"科技 vs 安全"的认知割裂。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>把"中国互联网主建筑师"的起源做成可传播的品牌资产</strong>
+        以 ChinaNet / 纳斯达克第一股 / 30 年运营商基础设施为核心，出一支面向政企决策者与资本市场的"起源即信任"叙事——把 25 年前的荣光转译成今天"最懂基础设施"的当下认知。
+      </div>
+    </div>
+
+    <div class="action-phase">中期执行 · 30–90 天</div>
+
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>发布《亚信 AI 大模型交付白皮书》并公开单位经济学</strong>
+        把 AI 大模型交付从"起势"变成"可验证"——公开可量化的交付效率、毛利率与标杆客户，让投资者看到 BSS 收缩之外的第二增长曲线，而不只是转型口号。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>用一个统一的"运营商 + 安全"标杆项目，证明重聚的协同</strong>
+        选一家运营商或大型政企，做一个亚信科技（BSS/数智化）× 亚信安全（数据/云安全）联合交付的公开样板——把"两张报表"讲成"一个平台"的第一个证据。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>合并报表落地时，用"营收超 100 亿、近 1.5 万人的软件企业"重塑资本市场认知</strong>
+        把重组从"财务运作"叙事，升级为"中国基础设施软件龙头再出发"叙事——让市场记住的是新亚信的规模与位置，而不是一次反向收购的技术细节。
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sources">Sources</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://www.asiainfo.com/zh_cn/content_4173.html">三十而已，信智依然 · 田溯宁写在亚信科技 30 华诞 – 亚信科技官网</a></li>
+      <li><a href="https://www.asiainfo.com/zh_cn/content_4811.html">亚信科技公布 2024 全年业绩，大模型交付业务起势 – 亚信科技官网</a></li>
+      <li><a href="https://www.stcn.com/article/detail/1574946.html">亚信科技 2024 年净利润 5.16 亿元 – 证券时报</a></li>
+      <li><a href="https://www.hstong.com/news/detail/25031508202516654">亚信科技（1675.HK）2024 年业绩点评：运营商承压，AI 大模型可期 – 华盛通</a></li>
+      <li><a href="https://finance.sina.com.cn/stock/relnews/hk/2024-09-04/doc-incmyuyi6075089.shtml">亚信科技（1675.HK）：领先的数智化全栈能力提供商 – 新浪财经</a></li>
+      <li><a href="https://tele.ofweek.com/2024-03/ART-8320512-8500-30629501.html">四大转变：亚信科技战略新起点 – OFweek 通信网</a></li>
+      <li><a href="https://baike.baidu.com/item/%E7%94%B0%E6%BA%AF%E5%AE%81/3183358">田溯宁 – 百度百科（亚信创立 · ChinaNet · NASDAQ）</a></li>
+      <li><a href="https://cloud.tencent.com/developer/article/1131510">亚信科技收购趋势科技中国业务并建立"亚信安全"（2015）– 腾讯云开发者社区</a></li>
+      <li><a href="https://baike.baidu.com/item/%E4%BA%9A%E4%BF%A1%E5%AE%89%E5%85%A8%E7%A7%91%E6%8A%80%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/59815651">亚信安全科技股份有限公司（688225）– 百度百科</a></li>
+      <li><a href="https://www.21jingji.com/article/20240117/herald/15daf6cce31c1e3c52a5a3200cef5667.html">逾 17 亿港元！亚信安全反向"收编"亚信科技 – 21 世纪经济报道</a></li>
+      <li><a href="https://www.21jingji.com/article/20240815/herald/25e491dbc263e57ce57dc198356e78c3.html">亚信科技中期业绩首亏 田溯宁加速整合"亚信帝国" – 21 世纪经济报道</a></li>
+      <li><a href="https://m.21jingji.com/article/20240326/herald/b40e9bf54bedb43f8222d948c8aa3c44_zaker.html">北京留美博士，重组 100 亿亚信帝国 – 21 世纪经济报道</a></li>
+      <li><a href="https://www.stcn.com/article/detail/1233137.html">亚信安全称能够通过收购主体控制亚信科技 – 证券时报</a></li>
+      <li><a href="https://zhuanlan.zhihu.com/p/637594361">通信历史连载 380 · 亚信科技 AsiaInfo 的历史 – 知乎</a></li>
+      <li><a href="https://vip.stock.finance.sina.com.cn/corp/view/vISSUE_MarketBulletinDetail.php?stockid=688225&id=7823627">亚信安全科创板上市公告书（688225）– 上交所/新浪财经</a></li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-07-12 的公开资料，包括上市公司年报与公告、财经媒体报道、公司官网及公开访谈。亚信、AsiaInfo、亚信科技、亚信安全及相关商标归亚信科技控股有限公司（01675.HK）与亚信安全科技股份有限公司（688225.SH）所有；本报告与亚信无任何赞助、授权或合作关系。本次审计将"亚信科技"与"亚信安全"作为统一"亚信"品牌评估，反映 2024 年以来田溯宁主导的两家整合的实际控制关系。评委披露：张明正（Steve Chang）为趋势科技（Trend Micro）创始人，而亚信安全前身正是 2015 年亚信收购的趋势科技中国区业务——其视角为"有据披露"的知情视角，非利益冲突回避项。6 位评委（周鸿祎、张明正/Steve Chang、任正非、黄仁勋/Jensen Huang、马斯克/Elon Musk、萨提亚·纳德拉/Satya Nadella）的评分与对话均为 AI 基于其公开发表资料的 in-character 模拟推断，非本人真实意见，不代表其个人或所在机构立场。报告中的财务数据来自亚信科技公开年报与公告（01675.HK）及公开财经报道，部分数据为区间估算，可能存在偏差。本报告不构成投资建议、证券分析或任何形式的商业尽调建议。
+  </div>
+</div>
+
+<script>
+// Radar chart
+const radarCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radarCtx, {
+  type: 'radar',
+  data: {
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+    datasets: [
+      {
+        label: '周鸿祎',
+        data: [7, 6, 6, 4, 6],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '张明正',
+        data: [8, 6, 6, 5, 6],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '任正非',
+        data: [9, 7, 8, 6, 7],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.08)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
+      {
+        label: '黄仁勋',
+        data: [7, 6, 6, 5, 6],
+        borderColor: '#7c3aed',
+        backgroundColor: 'rgba(124,58,237,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '马斯克',
+        data: [6, 4, 4, 3, 4],
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217,119,6,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4, 2],
+      },
+      {
+        label: '纳德拉',
+        data: [7, 6, 6, 5, 6],
+        borderColor: '#6b7280',
+        backgroundColor: 'rgba(107,114,128,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 } },
+        pointLabels: { font: { size: 11, weight: '600' } },
+        grid: { color: '#e5e2dc' },
+      }
+    },
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+    }
+  }
+});
+
+// Bar chart — means
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Origin', 'Leverage', 'Category', 'Signal', 'Identity'],
+    datasets: [{
+      label: '均值 (Mean)',
+      data: [7.3, 6.0, 5.8, 5.8, 4.7],
+      backgroundColor: ['#1a7a4a', '#4a7a6a', '#6b7280', '#8a7a6a', '#c1440e'],
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } },
+      y: { ticks: { font: { size: 11, weight: '600' } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `均值: ${ctx.parsed.x.toFixed(1)} / 10`
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

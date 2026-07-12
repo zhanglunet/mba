@@ -1,0 +1,19 @@
+{
+  "slug": "asiainfo",
+  "brand_cn": "亚信",
+  "brand_en": "AsiaInfo",
+  "ticker": "01675.HK / 688225.SH",
+  "version": "v1",
+  "audit_date": "2026-07-12",
+  "panel": "security-cn-global",
+  "score": {
+    "total": 178,
+    "max": 300,
+    "normalized": 5.93
+  },
+  "tl_dr": "把亚信科技(01675.HK)与亚信安全(688225.SH)作为统一「亚信」品牌评。最强资产是罕见厚重的起源—— 1993 年田溯宁/丁健创立、承建 ChinaNet(中国首个商业化互联网骨干网)、2000 年首家赴美上市中国高科技企业。 security-cn-global 6 评委:Origin(7.3)领跑、共识最高;最弱 Identity(4.7)——「亚信科技 vs 亚信安全」 双品牌割裂、B2B 圈外几乎隐形。当下张力:电信 BSS 核心收缩(2024 −15.8%、BSS −19.1%),田溯宁以 「亚信安全反向收购亚信科技」重聚「亚信帝国」(目标合并营收>100 亿、~1.5 万人)+ 押注 AI 大模型交付。 最大分歧:任正非 37/50(基础设施主权价值最高) vs 马斯克 21/50(收缩生意做反向重组=财务工程)。 178/300 · 5.93/10。",
+  "html_url": "/reports/asiainfo/",
+  "pdf_url": null,
+  "api_url": "/api/reports/asiainfo.json",
+  "panel_api_url": "/api/panels/security-cn-global.json"
+}
