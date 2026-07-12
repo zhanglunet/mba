@@ -1,0 +1,65 @@
+# watch/meituan/events.yaml — 美团舆情事件流
+# schema 见 docs/16 §2;W6 周扫演练首批(2026-07-12,过程见 docs/16 §7)。
+
+- id: 2026-03-26-meituan-001
+  date: 2026-03-26
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: 市场监管总局对外卖平台竞争开展调查评估,「外卖大战」被监管叫停
+  quote: "监管重拳叫停“外卖大战” 美团能否借势开启万亿即时零售新篇章？"
+  quote_type: title
+  url: https://finance.sina.com.cn/stock/t/2026-03-26/doc-inhshtfa2951092.shtml
+  fetched_at: "2026-07-12T07:35:00Z"
+  lens_map: [leverage, signal]
+  note: >-
+    监管收紧(neg)与补贴战止血(pos)并存 —— v2 审计「被打成亏损」叙事的
+    政策侧转折点。日期以 URL 内嵌(2026-03-26)自证。
+
+- id: 2026-04-07-meituan-002
+  date: 2026-04-07
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: FY2025 年报:外卖大战击穿盈利基本盘,净亏 234 亿
+  quote: "巨亏234亿！外卖大战击穿美团盈利基本盘"
+  quote_type: title
+  url: https://finance.sina.com.cn/wm/2026-04-07/doc-inhttaeq3258948.shtml
+  fetched_at: "2026-07-12T07:35:00Z"
+  consumed_by: v2
+  lens_map: [signal, leverage]
+  note: >-
+    该信号已被 v2 审计(2026-07-11)完整消费(v2 主叙事即「由盈转亏净亏 ¥234 亿」,
+    7.76→6.72)——回填标 consumed_by: v2。日期以 URL 内嵌(2026-04-07)自证。
+
+- id: 2026-06-01-meituan-003
+  date: 2026-06-01
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 2026Q1 财报:环比减亏 96 亿(净亏收窄至 68.27 亿),营收 910 亿(+5.6%)
+  quote: "美团一季度“回血”：环比减亏96亿元，加码AI布局"
+  quote_type: title
+  url: https://finance.sina.com.cn/stock/t/2026-06-01/doc-inhzxewp2350319.shtml
+  fetched_at: "2026-07-12T07:35:00Z"
+  lens_map: [signal]
+  note: >-
+    v2 审计锚在 FY2025 亏损谷底;Q1 减亏是 v2 之后方向反转的第一个硬信号
+    (未消费)——若 Q2 延续,构成 v3 的「回血」叙事素材。日期以 URL 内嵌(2026-06-01)自证。
+
+- id: 2026-06-16-meituan-004
+  date: 2026-06-16
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: 媒体复盘:外卖刚回血,即时零售又进入烧钱竞争
+  quote: "一季减亏近100亿，美团却笑不出来：外卖刚回血，即时零售又烧钱"
+  quote_type: title
+  url: https://news.qq.com/rain/a/20260616A04KUO00
+  fetched_at: "2026-07-12T07:35:00Z"
+  lens_map: [leverage, category]
+  note: 下一主战场(即时零售)的开销预期 —— 减亏叙事的对冲面。日期以 URL 内嵌(20260616)自证。

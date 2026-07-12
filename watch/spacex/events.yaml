@@ -1,0 +1,49 @@
+# watch/spacex/events.yaml — SpaceX 舆情事件流
+# schema 见 docs/16 §2;W6 周扫演练首批(2026-07-12,过程见 docs/16 §7)。
+#
+# 注:v1 审计(2026-07-12)调研漏掉了 6 月 IPO,初版误写「未上市」——已在报告内勘误。
+# 下列 IPO 事件为未消费 P1,将驱动下一次 EVOLUTION 重审 Signal/Identity。
+
+- id: 2026-06-11-spacex-001
+  date: 2026-06-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: IPO 定价募资约 750 亿美元,史上最大 IPO(纳斯达克挂牌前夜)
+  quote: "SpaceX raising $75 billion in record-setting IPO as Nasdaq debut awaits"
+  quote_type: title
+  url: https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html
+  fetched_at: "2026-07-12T07:30:00Z"
+  lens_map: [signal, leverage]
+  note: 定价 $135/股,约 5.556 亿股;规模约为此前纪录(沙特阿美 2019)的三倍。日期以 URL 内嵌(2026/06/11)自证。
+
+- id: 2026-06-12-spacex-002
+  date: 2026-06-12
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 纳斯达克首日收于约 $161(+19%),市值约 2.1 万亿美元(NASDAQ:SPCX)
+  quote: "SpaceX IPO takeaways: SPCX closes at $161, jumping 19% after record debut"
+  quote_type: title
+  url: https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html
+  fetched_at: "2026-07-12T07:30:00Z"
+  lens_map: [signal, identity]
+  note: >-
+    上市使 v1 审计 Signal 段「估值信号未被验证」的保留失效——公开市场以真金白银
+    定价;v1 已就「未上市」表述勘误。日期以 URL 内嵌(2026/06/12)自证。
+
+- id: 2026-06-15-spacex-003
+  date: 2026-06-15
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 上市后首个完整交易日再涨约 20%
+  quote: "SpaceX stock jumps 20% in first full day of trading after record debut"
+  quote_type: title
+  url: https://www.cnbc.com/2026/06/15/spacex-stock-record-ipo-debut.html
+  fetched_at: "2026-07-12T07:30:00Z"
+  lens_map: [signal]
+  note: 后市延续信号;日期以 URL 内嵌(2026/06/15)自证。
