@@ -47,7 +47,7 @@
     font-size: 13px; color: var(--ink); text-decoration: none;
     border-bottom: 1px solid var(--ink); margin-left: 16px;
   }
-  nav a:hover, nav a.here { color: var(--accent); border-color: var(--accent); }
+  nav a:hover, nav a[aria-current] { color: var(--accent); border-color: var(--accent); }
 
   .intro { font-size: 14px; color: var(--muted); margin: 0 0 26px; max-width: 72ch; }
   .intro a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
@@ -113,7 +113,7 @@
         <div class="mast-sub">品牌影响力监控台 · Brand Influence Monitor</div>
       </div>
       <nav>
-        <a href="/" class="here">品牌监控</a>
+        <a href="/" aria-current="page">品牌监控</a>
         <a href="/panorama.html">评委全景</a>
         <a href="/docs.html">文档</a>
         <a href="https://github.com/zhanglunet/mba">GitHub</a>
