@@ -43,6 +43,7 @@ description: |
   - `/mba <brand> --quick` — skip Wuying cloud-browser leg, web-only
   - `/mba <brand> --refresh` — force EVOLUTION mode (or rebuild from scratch if combined with --fresh)
   - `/mba <brand> --no-judges` — synthesis only, skip the 5-judge panel
+  - `/mba <brand> --dry-run` — preview the resolved plan (panel/judges/flags/phases/cost) without spending
   - `/mba list` — list previously-audited brands and their version counts
 
   NOT WHEN: user wants a single perspective (`/fusheng-perspective ...` directly), generic
@@ -125,6 +126,7 @@ Useful variants:
 /mba <brand> --focus 1,2,7
 /mba <brand> --no-judges
 /mba <brand> --refresh
+/mba <brand> --dry-run
 /mba list
 ```
 
@@ -272,6 +274,7 @@ Five independent capabilities, used together:
 ## Parameters
 
 - `$ARGUMENTS` — brand name (e.g. `OpenClaw`, `Aibrary`, `BotLearn`, or a URL)
+- `--dry-run` — **preview the resolved plan and stop, without running any research / judges / LLM calls** (spends nothing). Prints the resolved panel (and how it resolved), judge roster + perspective availability, auto-engaged flags (`--quick` if no `WUYING_API_KEY`, `--no-judges` if all perspectives missing), self-conflict `--panel-drop` suggestions, the phases that would run, and the rough sub-agent count. Implemented by `python3 scripts/resolve_plan.py <brand> [flags]` (add `--json` for machine output) — Phase 0 routing without Phase 1+. Use it to sanity-check panel/flags/cost before a real run.
 - `--quick` — skip Wuying cloud-browser leg (web search only)
 - `--refresh` — force EVOLUTION mode even if last report is recent
 - `--no-judges` — produce only the synthesis (skip the judge panel)

@@ -32,6 +32,8 @@ jobs:
         run: python scripts/check_consistency.py
       - name: Quality-check 收紧自测(F8:证明 3 项收紧对旧假过样本有牙)
         run: python scripts/perspective-tools/quality_check.py --selftest
+      - name: --dry-run 计划解析器自测(resolve_plan golden 断言)
+        run: python scripts/resolve_plan.py --selftest
       - name: Quality check (全量硬 gate:全部 43 套 SKILL.md 必须 6/6)
         run: |
           # E2-7 起全部 43 套已达 6/6,quality_check 从"仅阻断 PR 改动的 SKILL"
