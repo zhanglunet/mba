@@ -1,0 +1,19 @@
+{
+  "slug": "yuanxin",
+  "brand_cn": "垣信卫星",
+  "brand_en": "Yuanxin Satellite / SpaceSail",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-07-12",
+  "panel": "security-cn-global",
+  "score": {
+    "total": 165,
+    "max": 300,
+    "normalized": 5.5
+  },
+  "tl_dr": "垣信卫星运营的「千帆星座」(G60星链 / SpaceSail)是中国低轨卫星互联网旗舰工程,对标 Starlink, 最终计划超 1.5 万颗星。2024-02 完成 67 亿元 A 轮(国家制造业转型升级基金领投,业内最大单轮), 2024-08 长六甲一箭 18 星首批组网,掌握全球前二 Ka 频段优先级,2025 估值超 400 亿。security-cn-global 6 评委:Leverage(6.5)领跑(频段 + 国家资本 + 主权必需),最弱 Identity(4.5)——品牌高度依赖 「国家队 / 对标 Starlink」外部锚点、消费者与国际几乎不可见。最大分歧:任正非 36/50(数字主权必争 基础设施)vs 马斯克△ 18/50(Starlink 创始人、直接竞对披露;「频段不等于在轨,差着两个数量级」)。 165/300 · 5.50/10。",
+  "html_url": "/reports/yuanxin/",
+  "pdf_url": null,
+  "api_url": "/api/reports/yuanxin.json",
+  "panel_api_url": "/api/panels/security-cn-global.json"
+}

@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>MBA — 品牌影响力监控台</title>
-<meta name="description" content="监控不同品牌的影响力动向:版本化评分、变动趋势、跨面板对比。11 个品牌 · 43 位评委 · 10 套面板,可打分、可比较、可复盘。" />
+<meta name="description" content="监控不同品牌的影响力动向:版本化评分、变动趋势、跨面板对比。13 个品牌 · 43 位评委 · 10 套面板,可打分、可比较、可复盘。" />
 <meta property="og:title" content="MBA — Brand Influence Monitor" />
 <meta property="og:description" content="Brand influence, scored, versioned, replayable. Monitor score movements across brands, panels and versions." />
 <meta property="og:url" content="https://mbabrand.com" />
@@ -124,9 +124,20 @@
 
     <section aria-label="品牌监控">
       <!-- REPORTS:START — 生成自 site/reports-meta.yaml(scripts/build_home_cards.py)· 勿手改 -->
-      <div class="kpi-row"><div class="kpi"><div class="kpi-label">监控品牌</div><div class="kpi-value">11</div><div class="kpi-sub">43 评委 · 10 面板</div></div><div class="kpi"><div class="kpi-label">最新审计</div><div class="kpi-value">07-12</div><div class="kpi-sub">亚信 v1</div></div><div class="kpi"><div class="kpi-label">最大变动</div><div class="kpi-value down">↓1.04</div><div class="kpi-sub">美团 7.76→6.72</div></div><div class="kpi"><div class="kpi-label">审计最高分</div><div class="kpi-value">8.64</div><div class="kpi-sub">爱马仕 · luxury-en</div></div></div>
+      <div class="kpi-row"><div class="kpi"><div class="kpi-label">监控品牌</div><div class="kpi-value">13</div><div class="kpi-sub">43 评委 · 10 面板</div></div><div class="kpi"><div class="kpi-label">最新审计</div><div class="kpi-value">07-12</div><div class="kpi-sub">亚信 v1 / SpaceX v1 / 垣信卫星 v1</div></div><div class="kpi"><div class="kpi-label">最大变动</div><div class="kpi-value down">↓1.04</div><div class="kpi-sub">美团 7.76→6.72</div></div><div class="kpi"><div class="kpi-label">审计最高分</div><div class="kpi-value">8.64</div><div class="kpi-sub">爱马仕 · luxury-en</div></div></div>
       <div class="sort-bar"><span class="sort-label">品牌动向</span><span class="sort-controls">排序:<button class="sort-btn active" data-key="date">最近</button><button class="sort-btn" data-key="score">评分</button><button class="sort-btn" data-key="delta">变动</button></span></div>
       <div class="brand-grid" id="brandGrid">
+      <div class="brand-card" data-score="8.6" data-date="2026-07-12" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/spacex/"><span class="bc-brand">SpaceX</span></a>
+          <span class="chip" title="vc-en panel · 5 评委（保罗·格雷厄姆·纳瓦尔·马克·安德森·彼得·蒂尔△·里德·霍夫曼）· 雷达图 + 异议热力图 · 深科技 / 第一性原理">vc-en</span>
+        </div>
+        <div class="bc-score-row">
+          <span class="bc-score">8.60</span>
+        </div>
+        <div class="bc-meta">v1 · 2026-07-12</div>
+        <p class="bc-headline">MBA 审计史第二高分:起源与品类近乎满分,唯一裂缝在「品牌 = 马斯克」</p>
+      </div>
       <div class="brand-card" data-score="5.93" data-date="2026-07-12" data-delta="-1.0">
         <div class="bc-top">
           <a class="card-link" href="/reports/asiainfo/"><span class="bc-brand">亚信 AsiaInfo · 01675.HK + 688225.SH</span></a>
@@ -137,6 +148,17 @@
         </div>
         <div class="bc-meta">v1 · 2026-07-12</div>
         <p class="bc-headline">中国互联网「主建筑师」的黄昏与重生:BSS 收缩,田溯宁反向收购重聚「亚信帝国」</p>
+      </div>
+      <div class="brand-card" data-score="5.5" data-date="2026-07-12" data-delta="-1.0">
+        <div class="bc-top">
+          <a class="card-link" href="/reports/yuanxin/"><span class="bc-brand">垣信卫星 · 千帆星座 SpaceSail</span></a>
+          <span class="chip" title="security-cn-global panel · 6 评委（周鸿祎·张明正·任正非·黄仁勋·马斯克△·纳德拉）· 雷达图 + 异议热力图 · 卫星互联网">security-cn-global</span>
+        </div>
+        <div class="bc-score-row">
+          <span class="bc-score">5.50</span>
+        </div>
+        <div class="bc-meta">v1 · 2026-07-12</div>
+        <p class="bc-headline">中国版 Starlink 的战略卡位与工程差距:频段全球前二,在轨却落后两个数量级</p>
       </div>
       <div class="brand-card" data-score="7.16" data-date="2026-07-11" data-delta="-1.0">
         <div class="bc-top">

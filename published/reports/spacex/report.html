@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SpaceX — Brand Influence Review v1 · MBA</title>
+<meta name="description" content="vc-en panel brand audit of SpaceX. Score: 215/250 · 8.60/10. 5 judges × 5 lenses. Audit date: 2026-07-12." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --ink: #111; --paper: #faf8f3; --muted: #6b6760; --rule: #1a1a1a;
+  --accent: #c1440e; --green: #1a7a4a; --blue: #1a4a7a; --warn: #d97706; --security: #1a3a6a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--paper); color: var(--ink); font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 56px 28px 96px; }
+header { border-bottom: 2px solid var(--rule); padding-bottom: 16px; margin-bottom: 40px; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; }
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+.actions { margin-bottom: 32px; }
+.action-phase { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 20px 0 10px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--security); color: #fff; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark">MBA<span class="dot">.</span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
+  </header>
+
+  <div class="report-meta">Brand Influence Audit · v1 · 2026-07-12 · vc-en 深科技面板</div>
+  <h1 class="brand-title">SpaceX</h1>
+  <p class="report-subtitle">第一性原理 + 制造护城河的当代范本 · 可复用火箭 · Starlink 现金飞轮</p>
+
+  <div class="panel-badge">🚀 vc-en · 5-Judge Panel</div>
+
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">8.60</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10</div>
+    </div>
+    <div>
+      <div class="score-label">总分</div>
+      <div class="score-sub">215 / 250</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">评委数</div>
+        <div class="score-sub">5 <span class="score-tag">vc-en</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="score-label">最强维度</div>
+      <div class="score-sub">Origin 9.4</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Identity 6.8</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      起源与品类几乎满分共识,唯一裂缝在 Identity——品牌与创始人马斯克深度绑定,既是最强"创始人抵押",也是最大稀释源(政治外溢 + key-man)。
+    </div>
+  </div>
+
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr><th>Lens</th><th>保罗·格雷厄姆</th><th>纳瓦尔</th><th>马克·安德森</th><th>彼得·蒂尔</th><th>里德·霍夫曼</th><th>Mean</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td><td class="cell-lo">9</td><td class="cell-lo">9</td><td class="cell-hi">10</td><td class="cell-hi">10</td><td class="cell-lo">9</td><td>9.4</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td><td class="cell-lo">9</td><td class="cell-lo">9</td><td class="cell-lo">9</td><td class="cell-hi">10</td><td class="cell-lo">9</td><td>9.2</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td><td>9</td><td class="cell-hi">10</td><td>9</td><td>9</td><td class="cell-lo">8</td><td>9.0</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td><td class="cell-lo">6</td><td>7</td><td>7</td><td class="cell-hi">8</td><td class="cell-lo">6</td><td>6.8</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td><td class="cell-lo">8</td><td class="cell-hi">9</td><td class="cell-hi">9</td><td class="cell-hi">9</td><td class="cell-lo">8</td><td>8.6</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td><td>41</td><td>44</td><td>44</td><td>46</td><td>40</td><td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 5 评委 × 5 镜头</div>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+    </div>
+  </div>
+
+  <h2>Dissent Heatmap / 异议热力图</h2>
+  <div class="heatmap">
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:90%;width:22%;background:#1a7a4a;">9.4 avg</div>
+        <div class="heatmap-bar" style="left:90%;width:22%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 9 – max 10"></div>
+        <span class="heatmap-range">范围 9–10 · Δ1 极高共识</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:90%;width:22%;background:#1a7a4a;">9.2 avg</div>
+        <div class="heatmap-bar" style="left:90%;width:22%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 9 – max 10"></div>
+        <span class="heatmap-range">范围 9–10 · Δ1</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:80%;width:22%;background:#1a7a4a;">9.0 avg</div>
+        <div class="heatmap-bar" style="left:80%;width:22%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 8 – max 10"></div>
+        <span class="heatmap-range">范围 8–10 · Δ2</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:22%;background:#c1440e;">6.8 avg</div>
+        <div class="heatmap-bar" style="left:60%;width:22%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 6 – max 8"></div>
+        <span class="heatmap-range">范围 6–8 · Δ2 ★★ 最弱</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:80%;width:22%;background:#4a7a6a;">8.6 avg</div>
+        <div class="heatmap-bar" style="left:80%;width:22%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 8 – max 9"></div>
+        <span class="heatmap-range">范围 8–9 · Δ1</span>
+      </div>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>特征</strong>：这是 MBA 审计史上共识最强、分歧最小的样本之一——Origin/Category/Signal 三维评委极差仅为 1。真正的分歧集中在 Identity:蒂尔(8,创始人抵押是最强资产)vs 霍夫曼/格雷厄姆(6,创始人政治外溢 + key-man 是品牌负债)。
+    </div>
+  </div>
+
+  <h2>影响力构造 / Influence Map · Leverage Map</h2>
+  <div class="flow-diagram">
+    <pre>
+第一性原理起源（2002 · 马斯克 · "把火箭成本拆到物理极限再重建"）
+      │
+      ▼
+濒死后的工程胜利（2008 Falcon 1 第四飞入轨 · 首家私营入轨/上 ISS）
+      │
+      ├──→ 可复用制造护城河 —— 最难被复制的核心
+      │        （Falcon 9 助推器高频复用 · 2025 年 165 次轨道发射 · ~99.8% 成功率）
+      │           │
+      │           ▼
+      │     单位成本护城河（$/kg 大幅下探 → 竞争者短期无法追平）
+      │
+      └──→ Starlink 现金飞轮（自建运力 → 自发卫星 → 全球宽带）
+                  │   2025 营收 ~$118 亿 · ~60% 总营收 · ~900 万用户
+                  ▼
+           垂直整合（火箭 × 卫星 × 地面）→ 现金流反哺 Starship
+                  │
+                  ▼
+          Starship（下一曲线：更大复用 · 火星叙事）—— 高回报高不确定的新赌注
+                  │
+                  ▼
+          ⚠ 单一张力：品牌 = 马斯克。创始人抵押既是最强资产，也是最大稀释源
+                  │
+                  ▼
+          品牌叙事层（全球标志性 · 但被创始人政治人设极化 · key-man 单点）
+    </pre>
+  </div>
+
+  <h2>评委打分卡 / Judge Scorecards</h2>
+  <div class="judge-grid">
+
+    <div class="judge-card">
+      <div class="judge-name">保罗·格雷厄姆</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Y Combinator 联合创始人</div>
+      <div class="judge-total">41</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">早期,创始人=一切,这让 SpaceX 从死亡线上活了下来;但品牌成熟后,最健康的状态是让品牌开始独立于创始人呼吸——它还没走到那一步。</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">纳瓦尔</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">AngelList 联合创始人 / 天使投资人</div>
+      <div class="judge-total">44</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:100%"></div></div><span class="judge-score">10</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+      </div>
+      <div class="judge-quote">火箭是这个时代最纯粹的杠杆。但给品牌打分时,别把还没兑现的期权(Starship)算成已实现的护城河。</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">马克·安德森</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">a16z 联合创始人</div>
+      <div class="judge-total">44</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:100%"></div></div><span class="judge-score">10</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+      </div>
+      <div class="judge-quote">软件吞噬世界,现在轮到运力吞噬太空。这是 It's time to build 的字面兑现——它已经接住助推器了。</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">彼得·蒂尔</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Founders Fund 创始人 · SpaceX 早期投资方(△ 披露)</div>
+      <div class="judge-total" style="color:var(--green);">46</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:100%"></div></div><span class="judge-score">10</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:100%"></div></div><span class="judge-score">10</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+      </div>
+      <div class="judge-quote">这是最接近"从 0 到 1"定义的公司,在发射端接近垄断。你没法"复制"一个马斯克——那正是护城河。</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">里德·霍夫曼</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">LinkedIn 联合创始人 / Greylock</div>
+      <div class="judge-total" style="color:var(--accent);">40</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最低分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%;background:#d97706;"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%;background:#d97706;"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%;background:#d97706;"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%;background:#d97706;"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">它的工程护城河是 9 分的,品牌治理是 6 分的。创始人政治外溢与 key-man 风险,是真实的品牌负债。</div>
+    </div>
+
+  </div>
+
+  <h2>R2 对话：核心分歧 / Dissent Dialogues</h2>
+
+  <h3>蒂尔△ vs 霍夫曼：创始人抵押是护城河，还是品牌负债？</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">彼得·蒂尔（披露：Founders Fund 为 SpaceX 早期投资方）</div>
+      <div class="dialogue-text">这是我见过最接近"从 0 到 1"定义的公司。它在发射端接近垄断,而垄断不是耻辱,是伟大企业的特征。把品牌和一个不可复制的创始人绑定?那正是护城河——你没法"复制"一个马斯克。别人问"如果他走了怎么办",我问"谁能造出第二个"。</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">里德·霍夫曼</div>
+      <div class="dialogue-text">我不否认它的伟大,我给的分也很高。但品牌影响力从来不只是"现在多强",而是"多可持续、多可转移"。当品牌的公共形象随创始人的政治立场极化,当同一个人同时在跑五家公司,你就有了真实的品牌负债和 key-man 风险。SpaceX 的工程护城河是 9 分的,它的品牌治理是 6 分的。</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">保罗·格雷厄姆（折中）</div>
+      <div class="dialogue-text">两位说的其实是同一件事的两面。早期,创始人=一切,这让 SpaceX 从死亡线上活了下来,这是它起源分接近满分的原因。但品牌成熟后,最健康的状态是让品牌开始独立于创始人呼吸。SpaceX 还没走到那一步——它的上限已经触顶,它的风险全在这条绑定线上。</div>
+    </div>
+  </div>
+
+  <h3>安德森 vs 纳瓦尔：Starship 是下一曲线，还是叙事溢价？</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">马克·安德森</div>
+      <div class="dialogue-text">软件吞噬世界,现在轮到运力吞噬太空。Starship 一旦把每公斤成本再压一个数量级,今天所有关于"太空经济"的讨论都要重写。这不是叙事溢价,这是 It's time to build 的字面兑现——它已经接住助推器了。</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">纳瓦尔</div>
+      <div class="dialogue-text">火箭是这个时代最纯粹的杠杆。但我会把 Starlink 和 Starship 分开看:Starlink 是已经在复利的现金机器,Signal 拉满;Starship 还是期权,价值巨大但尚未被现金流证明。给品牌打分时,别把还没兑现的期权算成已实现的护城河。</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议</h2>
+  <div class="actions">
+    <div class="action-phase">立即执行 · 0–30 天</div>
+
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>让 Starlink 与 SpaceX 工程品牌"可控解耦"</strong>
+        Starlink 已是面向数百万普通用户的消费/企业品牌,应建立独立于马斯克个人叙事的品牌人格与信任体系——降低政治外溢对一个普世产品的减分。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>用"可复现的工程事实"对冲人设噪音</strong>
+        把发射次数、复用纪录、成功率、成本曲线做成持续、可核查的公开仪表盘——让品牌记忆点从"创始人说了什么"回到"这家公司每周在轨道上做到了什么"。
+      </div>
+    </div>
+
+    <div class="action-phase">中期执行 · 30–90 天</div>
+
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>为 Starship 建立"叙事 → 里程碑"的兑现节奏</strong>
+        把火星愿景拆成可验证的近期里程碑(复用、载荷、单位成本),把"叙事溢价"逐步转成"信号",避免下一曲线长期停留在期权状态。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>制度化 key-man 风险的品牌应对</strong>
+        明确并对外沟通核心工程与运营领导层,让品牌信任建立在一个可传承的组织之上,而不只是一个人——这是把 Identity 从 6.8 往上拉的唯一结构性路径。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>融资叙事用"现金飞轮"而非"火星梦"锚定信号</strong>
+        以 Starlink 的营收、用户与单位经济学作为对资本市场的第一叙事,把 Starship 作为期权上行——让估值信号建立在可验证的现金流之上。
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sources">Sources</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://en.wikipedia.org/wiki/SpaceX">SpaceX — Wikipedia</a></li>
+      <li><a href="https://sacra.com/c/spacex/">SpaceX revenue, valuation &amp; funding – Sacra</a></li>
+      <li><a href="https://www.morningstar.com/stocks/spacex-what-investors-need-know-about-its-enormous-upcoming-ipo">SpaceX: What Investors Need to Know About Its IPO – Morningstar</a></li>
+      <li><a href="https://www.morningstar.com/stocks/6-charts-spacexs-s-1-financials">6 Charts on SpaceX's Pre-IPO Financials – Morningstar</a></li>
+      <li><a href="https://www.forbes.com/sites/greatspeculations/2025/12/16/spacex-valuation-soars/">SpaceX Valuation Soars on Record Launches, Starlink Growth – Forbes</a></li>
+      <li><a href="https://electroiq.com/stats/spacex-statistics/">SpaceX Statistics By Revenue, Launch Count (2025) – ElectroIQ</a></li>
+      <li><a href="https://www.morningstar.com/stocks/does-spacexs-sky-high-valuation-make-sense">Does SpaceX's Sky-High Valuation Make Sense? – Morningstar</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Starlink">Starlink — Wikipedia</a></li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-07-12 的公开资料,包括第三方研究、财经媒体报道、公司公开信息及公开访谈。SpaceX、Starlink、Falcon 9、Starship 及相关商标归 Space Exploration Technologies Corp. 所有;本报告与 SpaceX 无任何赞助、授权或合作关系。评委利益披露:彼得·蒂尔(Peter Thiel)的 Founders Fund 是 SpaceX 的早期投资方——其视角以"△ 有据披露"的方式纳入评分并在对话中标注,非利益冲突回避项。5 位评委(保罗·格雷厄姆/Paul Graham、纳瓦尔/Naval Ravikant、马克·安德森/Marc Andreessen、彼得·蒂尔/Peter Thiel△、里德·霍夫曼/Reid Hoffman)的评分与对话均为 AI 基于其公开发表资料的 in-character 模拟推断,非本人真实意见,不代表其个人或所在机构立场。财务数据(Starlink 营收、用户、发射次数、估值等)来自第三方估算与公开报道,SpaceX 未上市、披露有限,数据可能存在偏差。本报告不构成投资建议、证券分析或任何形式的商业尽调建议。
+  </div>
+</div>
+
+<script>
+const radarCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radarCtx, {
+  type: 'radar',
+  data: {
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+    datasets: [
+      {
+        label: '保罗·格雷厄姆',
+        data: [9, 9, 9, 6, 8],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '纳瓦尔',
+        data: [9, 9, 10, 7, 9],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '马克·安德森',
+        data: [10, 9, 9, 7, 9],
+        borderColor: '#7c3aed',
+        backgroundColor: 'rgba(124,58,237,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '彼得·蒂尔',
+        data: [10, 10, 9, 8, 9],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.08)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
+      {
+        label: '里德·霍夫曼',
+        data: [9, 9, 8, 6, 8],
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217,119,6,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4, 2],
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: { r: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, pointLabels: { font: { size: 11, weight: '600' } }, grid: { color: '#e5e2dc' } } },
+    plugins: { legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } } }
+  }
+});
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: { labels: ['Origin', 'Category', 'Leverage', 'Signal', 'Identity'], datasets: [{ label: '均值 (Mean)', data: [9.4, 9.2, 9.0, 8.6, 6.8], backgroundColor: ['#1a7a4a', '#4a7a6a', '#6b7280', '#8a7a6a', '#c1440e'], borderRadius: 3 }] },
+  options: {
+    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+    scales: { x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } }, y: { ticks: { font: { size: 11, weight: '600' } } } },
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `均值: ${ctx.parsed.x.toFixed(1)} / 10` } } }
+  }
+});
+</script>
+</body>
+</html>
