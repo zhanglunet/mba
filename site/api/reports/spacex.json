@@ -3,15 +3,15 @@
   "brand_cn": "SpaceX",
   "brand_en": "SpaceX",
   "ticker": null,
-  "version": "v1",
+  "version": "v2",
   "audit_date": "2026-07-12",
   "panel": "vc-en",
   "score": {
-    "total": 215,
+    "total": 219,
     "max": 250,
-    "normalized": 8.6
+    "normalized": 8.76
   },
-  "tl_dr": "第一性原理 + 制造护城河的当代范本:可复用火箭(2025 年 165 次轨道发射)+ Starlink 现金飞轮 (2025 营收约 $118 亿、~900 万用户)。vc-en 5 评委:Origin(9.4)与 Category(9.2)近乎满分共识, 是 MBA 审计史分歧最小的样本之一(三维极差仅 1)。唯一裂缝 Identity(6.8):品牌与创始人马斯克 深度绑定,既是最强「创始人抵押」,也是最大稀释源(政治外溢 + key-man)。最大分歧:彼得·蒂尔△ 46/50(Founders Fund 为 SpaceX 早期投资方,披露;「不可复制的创始人就是护城河」)vs 里德·霍夫曼 40/50(「工程护城河 9 分,品牌治理 6 分」)。215/250 · 8.60/10(仅次爱马仕 8.64)。",
+  "tl_dr": "EVOLUTION v2:史上最大 IPO(募资约 750 亿美元、首日 +19% 市值约 2.1 万亿,NASDAQ:SPCX) 补上 v1 Signal 的唯一保留——估值信号未被公开市场验证。Signal 8.6→9.2(格雷厄姆/安德森/ 霍夫曼各 ↑1,纳瓦尔/蒂尔△按「定价不是现金流」持分不动);Identity 6.8→7.0,分歧升级为 「IPO 用治理稀释 key-man,还是给它装上实时计价器」。总分 215→219(8.60→8.76,↑0.16), 超过爱马仕(8.64)成为 MBA 审计史最高分。",
   "html_url": "/reports/spacex/",
   "pdf_url": null,
   "api_url": "/api/reports/spacex.json",

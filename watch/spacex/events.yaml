@@ -2,7 +2,8 @@
 # schema 见 docs/16 §2;W6 周扫演练首批(2026-07-12,过程见 docs/16 §7)。
 #
 # 注:v1 审计(2026-07-12)调研漏掉了 6 月 IPO,初版误写「未上市」——已在报告内勘误。
-# 下列 IPO 事件为未消费 P1,将驱动下一次 EVOLUTION 重审 Signal/Identity。
+# 下列 3 条 IPO 事件已于 2026-07-12 由 EVOLUTION v2 消化(consumed_by: v2):
+# Signal 8.6→9.2、Identity 6.8→7.0、Leverage 重审维持,总分 215→219(8.60→8.76)。
 
 - id: 2026-06-11-spacex-001
   date: 2026-06-11
@@ -16,6 +17,7 @@
   url: https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html
   fetched_at: "2026-07-12T07:30:00Z"
   lens_map: [signal, leverage]
+  consumed_by: v2
   note: 定价 $135/股,约 5.556 亿股;规模约为此前纪录(沙特阿美 2019)的三倍。日期以 URL 内嵌(2026/06/11)自证。
 
 - id: 2026-06-12-spacex-002
@@ -30,6 +32,7 @@
   url: https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html
   fetched_at: "2026-07-12T07:30:00Z"
   lens_map: [signal, identity]
+  consumed_by: v2
   note: >-
     上市使 v1 审计 Signal 段「估值信号未被验证」的保留失效——公开市场以真金白银
     定价;v1 已就「未上市」表述勘误。日期以 URL 内嵌(2026/06/12)自证。
@@ -46,4 +49,5 @@
   url: https://www.cnbc.com/2026/06/15/spacex-stock-record-ipo-debut.html
   fetched_at: "2026-07-12T07:30:00Z"
   lens_map: [signal]
+  consumed_by: v2
   note: 后市延续信号;日期以 URL 内嵌(2026/06/15)自证。

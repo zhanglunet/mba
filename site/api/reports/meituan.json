@@ -3,15 +3,15 @@
   "brand_cn": "美团",
   "brand_en": "Meituan",
   "ticker": "3690.HK",
-  "version": "v2",
-  "audit_date": "2026-07-11",
+  "version": "v3",
+  "audit_date": "2026-07-12",
   "panel": "vc-cn",
   "score": {
-    "total": 168,
+    "total": 170,
     "max": 250,
-    "normalized": 6.72
+    "normalized": 6.8
   },
-  "tl_dr": "EVOLUTION v1→v2:美团让出\"MBA 审计史最高分\"（7.76→6.72，−1.04）。v1 把 Signal(8.4)/Leverage(8.0) 锚在 2023 旧口径（营收¥276B、~70% 份额、盈利转正），FY2025 年报直接证伪——由盈转亏净亏¥234亿、 营销占比冲 28.2%、淘宝闪购按 GTV 45.2% 反超美团 45.0%、¥7.46亿食安罚单。五评委齐降 Signal(↓2.8)、 Leverage(↓1.4)、Category(↓1.0)，Origin/Identity ↔。裁决 v1 朱啸虎-张磊之争： \"护城河没被攻破，是被打成了亏损——朱啸虎赢了这一回合，但没赢下整场。\"168/250 · 6.72/10。",
+  "tl_dr": "EVOLUTION v3:监管按停外卖大战 + 2026Q1 环比减亏 96 亿(净亏收窄至 68.27 亿,营收 +5.6%) 把 v2 的亏损谷底叙事翻回方向,但净亏仍在、即时零售又开烧。Signal 5.6→6.0 成唯一移动维度且 五人首次同分——回分的正是 v2 砍得最狠的无冲突空头朱啸虎/徐新(各 +1),两位★评委与雷军按兵 不动。总分 168→170(6.72→6.80,↑0.08):这一格是「方向」的价,扭亏的价留给 Q2。",
   "html_url": "/reports/meituan/",
   "pdf_url": null,
   "api_url": "/api/reports/meituan.json",

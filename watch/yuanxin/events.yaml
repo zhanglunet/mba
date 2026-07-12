@@ -15,6 +15,7 @@
   quote_type: title
   url: https://cn.chinadaily.com.cn/a/202604/08/WS69d5f3d8a310942cc49a6bc5.html
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v2
   lens_map: [signal, leverage]
   note: 官媒确认的发射节奏信号;日期以 URL 内嵌(202604/08)自证。
 
@@ -29,6 +30,7 @@
   quote_type: title
   url: https://www.21jingji.com/article/20260409/herald/b20e158b221bffb82ea806e6b0a8da60.html
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v2
   lens_map: [category]
   note: P3 背景语境(品类议程升温),不上卡片;日期以 URL 内嵌(20260409)自证。
 
@@ -43,6 +45,7 @@
   quote_type: title
   url: https://www.stdaily.com/web/gdxw/2026-06/05/content_528330.html
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v2
   lens_map: [signal]
   note: 日期以 URL 内嵌(2026-06/05)自证。
 
@@ -57,6 +60,7 @@
   quote_type: title
   url: https://finance.sina.com.cn/tech/digi/2026-07-04/doc-inifskfq3100316.shtml
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v2
   lens_map: [signal]
   note: 在轨规模的官方口径快照;日期以 URL 内嵌(2026-07-04)自证。
 
@@ -71,6 +75,7 @@
   quote_type: title
   url: https://www.ithome.com/0/972/856.htm
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v2
   lens_map: [signal, leverage]
   note: >-
     堆叠规模首次提至一箭 20 星,发射节奏与单星成本双改善——直接回应 v1 审计
@@ -88,6 +93,7 @@
   quote_type: title
   url: https://finance.sina.cn/stock/jdts/2026-07-10/detail-inihhzsf5161803.d.html
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v2
   lens_map: [signal, category]
   note: 年度组网目标的公开口径(324 颗);日期以 URL 内嵌(2026-07-10)自证。
 
@@ -104,6 +110,7 @@
   quote_type: title
   url: https://www.stcn.com/article/detail/3923793.html
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [leverage, signal]
   note: >-
     URL 无日期,已 curl 页面核对(2026-05-23)。组网提速(pos)与火箭供应链瓶颈
@@ -120,6 +127,7 @@
   quote_type: title
   url: https://finance.sina.com.cn/tech/roll/2026-06-09/doc-iniavmyk6369254.shtml
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [category, leverage]
   note: >-
     3GPP NTN 手机直连路线开测 —— 从「宽带星座」向「手机直连」品类扩展的
@@ -136,6 +144,7 @@
   quote_type: title
   url: https://finance.sina.com.cn/tech/roll/2026-06-10/doc-iniaxzpe5754381.shtml
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [category]
   note: P3 背景语境,不上卡片;日期以 URL 内嵌(2026-06-10)自证。
 
@@ -150,5 +159,6 @@
   quote_type: title
   url: https://field.10jqka.com.cn/20260619/c677590396.shtml
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [category, signal]
   note: 手机直连从「试验星」到「打通通话」十日兑现 —— 技术节奏信号;日期以 URL 内嵌(20260619)自证。

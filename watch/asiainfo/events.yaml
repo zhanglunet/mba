@@ -61,6 +61,7 @@
   quote_type: title
   url: https://finance.sina.cn/stock/relnews/hk/2024-08-22/detail-incknxxa1698695.d.html
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v2
   lens_map: [identity]
   note: P3 背景语境,不上卡片;日期以 URL 内嵌(2024-08-22)自证。
 
@@ -90,6 +91,7 @@
   quote_type: title
   url: https://finance.sina.com.cn/tech/roll/2025-04-07/doc-inesincs1400808.shtml
   fetched_at: "2026-07-12T06:18:00Z"
+  consumed_by: v2
   lens_map: [leverage, signal]
   note: >-
     docs/15 §4.2.2 分类学「采购黑名单/处罚性禁入 → P0」的真实实例:运营商是亚信
@@ -109,6 +111,7 @@
   quote_type: title
   url: https://www.asiainfo.com/zh_cn/content_4884.html
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [category, leverage]
   note: 官网一手稿;URL 无日期,已 curl 页面核对(2025-07-01)。
 
@@ -123,6 +126,7 @@
   quote_type: title
   url: https://www.stcn.com/article/detail/2932591.html
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [signal]
   note: URL 无日期,已 curl 页面核对(2025-08-05)。
 
@@ -137,6 +141,7 @@
   quote_type: title
   url: https://stockmc.xueqiu.com/202508/688225_20250822_RBL3.pdf
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [signal]
   note: 统一品牌口径下亚信安全侧的法定披露;日期以 URL 内嵌(20250822)自证。
 
@@ -151,6 +156,7 @@
   quote_type: title
   url: https://finance.eastmoney.com/a/202603243681838932.html
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [signal, leverage]
   note: >-
     收缩收窄(2024 −15.8% → 2025 −5.2%)但核心 BSS 仍降;第二曲线(智能数据运营
@@ -168,5 +174,6 @@
   quote_type: title
   url: http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-4/2026-04-11/12080670.PDF
   fetched_at: "2026-07-12T06:50:00Z"
+  consumed_by: v2
   lens_map: [signal, identity]
   note: 2024-11 完成对亚信科技的控制并表(「一个亚信」资本层面落地);日期以 URL 内嵌(2026-04-11)自证。

@@ -1,17 +1,26 @@
 panel: vc-cn
 locked_at: 2026-06-25
-mba_version: 0.4.2
-published_at: 2026-07-11
-version: v2
+mba_version: 0.4.3
+published_at: 2026-07-12
+version: v3
 mode: evolution
-previous_version: v1
-score_total: 168
+previous_version: v2
+score_total: 170
 score_max: 250
-score_normalized: 6.72
+score_normalized: 6.80
 reference:
-  version: v1
-  score_total: 194
-  score_normalized: 7.76
+  version: v2
+  score_total: 168
+  score_normalized: 6.72
+history:
+  - version: v1
+    published_at: 2026-06-28
+    score_total: 194
+    score_normalized: 7.76
+  - version: v2
+    published_at: 2026-07-11
+    score_total: 168
+    score_normalized: 6.72
 overrides:
   add: []
   drop: []

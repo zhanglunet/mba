@@ -2,10 +2,16 @@ panel: vc-en
 locked_at: 2026-07-12
 mba_version: 0.4.2
 published_at: 2026-07-12
-version: v1
-score_total: 215
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 219
 score_max: 250
-score_normalized: 8.60
+score_normalized: 8.76
+reference:
+  version: v1
+  score_total: 215
+  score_normalized: 8.60
 overrides:
   add: []
   drop: []
