@@ -1,0 +1,57 @@
+# watch/chengshi-auto/events.yaml — 橙仕汽车舆情事件流
+# schema 见 docs/16 §2;G3 冷启动首批(2026-07-12)。
+# 注:该品牌公开报道稀疏,2025-2026 未检索到过准入门槛的新信号(见 docs/16 §4.1 门槛),
+# 首批为可溯源的关键历史事件回填;W3(core)邮政采购公示页为 JS 壳,curl 不可用,留作 lead。
+
+- id: 2023-04-07-chengshi-auto-001
+  date: 2023-04-07
+  dim: W1
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: 财联社《安安访谈录》专访创始人刘传富:品类议程 = 快递末端电动三轮车全面置换
+  quote: "橙仕汽车创始人刘传富：推动快递末端配送场景电动三轮车全面置换"
+  quote_type: title
+  url: https://m.cls.cn/detail/1315825
+  fetched_at: "2026-07-12T12:45:00Z"
+  consumed_by: v7
+  lens_map: [origin, category]
+  note: >-
+    创始人一手访谈,把「末端配送三轮车置换 + 城配燃油车电动化」定为品类叙事 ——
+    origin/category 镜头的基准素材。URL 无日期,日期以 curl 原文页面时间
+    (2023-04-07 10:59)核对。
+
+- id: 2023-06-25-chengshi-auto-002
+  date: 2023-06-25
+  dim: W9
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 与中远海运物流供应链(青岛)签战略合作,借其全球航运网络拓东南亚/中东/欧洲/北美市场
+  quote: "橙仕汽车与中远海运达成战略合作协议 海外市场拓展跑出“加速度”！"
+  quote_type: title
+  url: https://www.sohu.com/a/690268867_121266206
+  fetched_at: "2026-07-12T12:45:00Z"
+  consumed_by: v7
+  lens_map: [leverage]
+  note: >-
+    出海物流生态的关键一环(W9 core)。源为搜狐号稿件、内容近企业通稿,
+    署名签约方与现场信息具体可核;日期以 curl 原文页面时间(2023-06-25)核对。
+
+- id: 2024-04-16-chengshi-auto-003
+  date: 2024-04-16
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: 21 世纪经济报道广交会观察:在德国拿下 1500 万欧元大单,做出口两年占比已达三分之一
+  quote: "开展前两天，橙仕汽车刚刚在德国拿下了1500万欧元大单。"
+  quote_type: body
+  url: https://www.21jingji.com/article/20240416/herald/51e366357e3bc733c8d36768c48a937d.html
+  fetched_at: "2026-07-12T12:45:00Z"
+  consumed_by: v7
+  lens_map: [leverage, signal]
+  note: >-
+    权威财经媒体正文的出口硬数字(同文:「做出口不过两年的橙仕汽车,出口已占据了
+    三分之一份额」,并提及与 DHL/欧盟邮政接洽中)。日期以 URL 内嵌(20240416)自证,
+    引文已 curl 原文去空格逐字核对。

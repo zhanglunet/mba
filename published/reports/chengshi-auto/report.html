@@ -1,560 +1,599 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>橙仕汽车 — MBA Brand Influence Review v6</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>橙仕汽车 — Brand Influence Review v7 · MBA</title>
+<meta name="description" content="auto panel EVOLUTION audit of Chengshi Auto (橙仕汽车, last-mile electric delivery vehicles). v6→v7 engine upgrade: 31/50 (6.20) → 151/250 (6.04). Full rescore under mba 0.4.3. Audit date: 2026-07-12." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
-  :root {
-    --c-bg: #fbfaf7;
-    --c-surface: #ffffff;
-    --c-text: #1d2524;
-    --c-muted: #66736f;
-    --c-border: #e7dfd3;
-    --c-brand: #f47a20;
-    --c-brand-dark: #a8430d;
-    --c-ink: #183a3a;
-    --c-ink-2: #254f5f;
-    --c-soft: #fff3e8;
-    --c-good: #1f9d55;
-    --c-warn: #e6a700;
-    --c-bad: #d6452f;
-    --c-cell-low: #ffd8c7;
-    --c-cell-mid: #ffe8b6;
-    --c-cell-high: #c8f1d8;
-  }
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--c-bg);
-    color: var(--c-text);
-    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-  }
-  a { color: var(--c-brand-dark); }
-  .container { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
-  .topbar {
-    background: #fff7ed;
-    border-bottom: 1px solid #ffd6b1;
-    color: #5a2b0f;
-    padding: 11px 22px;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  .topbar strong { color: var(--c-brand-dark); }
-  .hero {
-    background:
-      radial-gradient(circle at 82% 12%, rgba(244,122,32,0.32), transparent 28%),
-      linear-gradient(135deg, #173332 0%, #244f5f 58%, #7b350d 100%);
-    color: #fff;
-    padding: 48px 0 40px;
-    border-bottom: 6px solid var(--c-brand);
-  }
-  .hero h1 { margin: 0 0 8px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; letter-spacing: 0; }
-  .subtitle { color: #d4e4df; font-size: 1.02rem; margin-bottom: 18px; }
-  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 18px; }
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 10px;
-    border: 1px solid rgba(255,255,255,0.28);
-    border-radius: 999px;
-    background: rgba(255,255,255,0.12);
-    color: #fff;
-    font-size: 0.8rem;
-  }
-  .badge.accent { background: var(--c-brand); border-color: var(--c-brand); font-weight: 700; }
-  .hero-grid { display: grid; grid-template-columns: 1.45fr 0.8fr; gap: 24px; align-items: stretch; margin-top: 22px; }
-  @media (max-width: 820px) { .hero-grid { grid-template-columns: 1fr; } }
-  .hero-card {
-    background: rgba(255,255,255,0.11);
-    border: 1px solid rgba(255,255,255,0.22);
-    border-left: 4px solid var(--c-brand);
-    border-radius: 8px;
-    padding: 18px 20px;
-    backdrop-filter: blur(4px);
-  }
-  .hero-card p { margin: 0; }
-  .score-tile {
-    background: rgba(255,255,255,0.95);
-    color: var(--c-text);
-    border-radius: 8px;
-    padding: 18px 20px;
-    border-top: 5px solid var(--c-brand);
-  }
-  .score-tile .score { font-size: 3.1rem; line-height: 1; font-weight: 850; color: var(--c-brand-dark); }
-  .score-tile .label { color: var(--c-muted); margin-top: 6px; }
-  section { padding: 42px 0; border-bottom: 1px solid var(--c-border); }
-  h2 { margin: 0 0 14px; color: var(--c-ink); font-size: 1.55rem; }
-  h3 { margin: 24px 0 10px; color: var(--c-ink); font-size: 1.12rem; }
-  .lead { color: var(--c-muted); margin: 0 0 18px; }
-  .section-kicker {
-    display: inline-block;
-    color: var(--c-brand-dark);
-    background: var(--c-soft);
-    border: 1px solid #ffd6b1;
-    border-radius: 999px;
-    padding: 3px 9px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .method-grid, .metric-grid, .judges {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 14px;
-  }
-  .card {
-    background: var(--c-surface);
-    border: 1px solid var(--c-border);
-    border-radius: 8px;
-    padding: 16px;
-  }
-  .method-card { border-top: 4px solid var(--c-brand); }
-  .method-card b { color: var(--c-ink); }
-  .metric {
-    border-left: 4px solid var(--c-brand);
-    min-height: 118px;
-  }
-  .metric .num { color: var(--c-brand-dark); font-size: 1.55rem; font-weight: 850; line-height: 1.1; }
-  .metric .caption { color: var(--c-muted); margin-top: 8px; font-size: 0.9rem; }
-  .chart-grid { display: grid; grid-template-columns: 1fr 0.9fr; gap: 16px; }
-  @media (max-width: 900px) { .chart-grid { grid-template-columns: 1fr; } }
-  .chart-wrap {
-    background: var(--c-surface);
-    border: 1px solid var(--c-border);
-    border-radius: 8px;
-    padding: 18px;
-    min-height: 310px;
-  }
-  canvas { max-width: 100%; }
-  .heatmap {
-    display: grid;
-    grid-template-columns: minmax(155px, 1.3fr) repeat(5, minmax(56px, 0.72fr)) minmax(58px, 0.55fr);
-    gap: 4px;
-    font-size: 0.85rem;
-    margin-top: 12px;
-  }
-  .hcell {
-    background: var(--c-surface);
-    border-radius: 5px;
-    padding: 9px 7px;
-    min-height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid rgba(0,0,0,0.03);
-  }
-  .hhead { background: var(--c-ink); color: #fff; font-weight: 700; }
-  .hlens { justify-content: flex-start; text-align: left; font-weight: 650; color: var(--c-ink); }
-  .s-low { background: var(--c-cell-low); }
-  .s-mid { background: var(--c-cell-mid); }
-  .s-high { background: var(--c-cell-high); }
-  .judge { border-top: 5px solid var(--c-brand); }
-  .judge[data-j="musk"] { border-top-color: #59636a; }
-  .judge[data-j="leijun"] { border-top-color: #ff6900; }
-  .judge[data-j="lixiang"] { border-top-color: #2f7d50; }
-  .judge[data-j="hexiaopeng"] { border-top-color: #1b75bb; }
-  .judge[data-j="libin"] { border-top-color: #7c5fd6; }
-  .judge .head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
-  .judge .name { color: var(--c-ink); font-weight: 800; font-size: 1.05rem; }
-  .judge .total { color: var(--c-brand-dark); font-weight: 850; }
-  .quote {
-    background: var(--c-soft);
-    border-left: 3px solid var(--c-brand);
-    padding: 10px 12px;
-    border-radius: 4px;
-    font-style: italic;
-    margin: 10px 0;
-  }
-  .gap { color: var(--c-muted); font-size: 0.9rem; }
-  .scores { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 12px; }
-  .scores span { flex: 1; min-width: 40px; background: #f2ede6; border-radius: 4px; padding: 4px 6px; text-align: center; font-size: 0.78rem; font-weight: 700; }
-  .map {
-    background: var(--c-surface);
-    border: 1px solid var(--c-border);
-    border-radius: 8px;
-    padding: 18px;
-  }
-  .product-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 14px;
-    margin-top: 16px;
-  }
-  .product-card {
-    background: var(--c-surface);
-    border: 1px solid var(--c-border);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .product-card img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-    background: #f2ede6;
-  }
-  .product-card .body {
-    padding: 12px 14px 14px;
-  }
-  .product-card .body strong {
-    color: var(--c-ink);
-    display: block;
-    margin-bottom: 4px;
-  }
-  .product-card .body p {
-    margin: 0;
-    color: var(--c-muted);
-    font-size: 0.88rem;
-  }
-  .source-note {
-    color: var(--c-muted);
-    font-size: 0.86rem;
-    margin-top: 10px;
-  }
-  .map-flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; align-items: stretch; }
-  @media (max-width: 900px) { .map-flow { grid-template-columns: 1fr; } }
-  .node {
-    background: #fff8f1;
-    border: 1px solid #ffd3ad;
-    border-top: 4px solid var(--c-brand);
-    border-radius: 8px;
-    padding: 12px;
-    min-height: 105px;
-  }
-  .node strong { color: var(--c-brand-dark); display: block; margin-bottom: 5px; }
-  .node p { margin: 0; color: var(--c-muted); font-size: 0.88rem; }
-  .action-list { display: flex; flex-direction: column; gap: 10px; }
-  .action {
-    background: var(--c-surface);
-    border: 1px solid var(--c-border);
-    border-radius: 8px;
-    display: grid;
-    grid-template-columns: 54px 1fr auto;
-    gap: 14px;
-    padding: 14px 16px;
-    align-items: start;
-  }
-  @media (max-width: 680px) { .action { grid-template-columns: 42px 1fr; } .action .tag { grid-column: 2; justify-self: start; } }
-  .action .num { font-size: 1.65rem; line-height: 1; color: var(--c-brand); font-weight: 850; }
-  .action h4 { margin: 0 0 4px; color: var(--c-ink); }
-  .action p { margin: 0; color: var(--c-muted); }
-  .tag { display: inline-flex; align-items: center; height: 26px; padding: 0 9px; border-radius: 999px; background: var(--c-soft); color: var(--c-brand-dark); font-weight: 750; font-size: 0.78rem; white-space: nowrap; }
-  .callout {
-    background: #fff8ed;
-    border: 1px solid #ffd8b9;
-    border-left: 5px solid var(--c-brand);
-    border-radius: 8px;
-    padding: 16px 18px;
-  }
-  .legal-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 12px;
-    margin-top: 14px;
-  }
-  .legal-card {
-    background: #fffaf4;
-    border: 1px solid #f0d5bb;
-    border-radius: 8px;
-    padding: 14px 15px;
-  }
-  .legal-card strong {
-    color: var(--c-brand-dark);
-    display: block;
-    margin-bottom: 5px;
-  }
-  .legal-card p {
-    margin: 0;
-    color: var(--c-muted);
-    font-size: 0.9rem;
-  }
-  details {
-    background: var(--c-surface);
-    border: 1px solid var(--c-border);
-    border-radius: 8px;
-    padding: 12px 16px;
-  }
-  summary { cursor: pointer; color: var(--c-ink); font-weight: 750; }
-  footer { text-align: center; color: var(--c-muted); padding: 28px 20px; background: #fff; }
-  @media print {
-    body { background: #fff; }
-    .hero { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    section { break-inside: avoid; }
-  }
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --green: #1a7a4a;
+  --blue: #1a4a7a;
+  --warn: #d97706;
+  --auto: #9a3412;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 56px 28px 96px; }
+header {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.report-meta a { color: var(--accent); }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.score-table tr.mean-row td { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; color: var(--accent); font-weight: 700; background: #fef9f7; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; background: rgba(245,243,239,0.92); padding: 1px 6px; border-radius: 3px; }
+
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+
+.actions { counter-reset: action-counter; margin-bottom: 32px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--auto); color: #fff; margin-bottom: 20px; }
 </style>
 </head>
 <body>
-  <div class="topbar">
-    本报告引用并扩展 <strong>MBA — Metric Brand Auditor</strong> 的多评委品牌审计分析 ·
-    官网 <a href="https://mbabrand.com">mbabrand.com</a> ·
-    GitHub <a href="https://github.com/zhanglunet/mba">zhanglunet/mba</a>
-  </div>
-
-  <header class="hero">
-    <div class="container">
-      <h1>橙仕汽车 Brand Influence Review</h1>
-      <div class="subtitle">末端配送生产力品牌 · MBA Auto Panel · v6 · Cutoff 2026-05-18</div>
-      <div class="badges">
-        <span class="badge accent">v6</span>
-        <span class="badge">EVOLUTION</span>
-        <span class="badge">auto panel 5/5</span>
-        <span class="badge">detailed web research</span>
-        <span class="badge">Score 31.0/50</span>
-      </div>
-      <div class="hero-grid">
-        <div class="hero-card">
-          <p><strong>TL;DR.</strong> 橙仕汽车不是另一个“新能源车”故事,而是一个末端配送生产力工具品牌。它抓住了快递末端、电三轮替代、小 B 配送和移动售卖这些窄但真实的场景。下一步要把低价和应用案例升级成公开运营账本、可靠性数据和服务承诺。</p>
-        </div>
-        <div class="score-tile">
-          <div class="score">6.2/10</div>
-          <div class="label">综合分 31.0 / 50 · 相比 v1 +1.4</div>
-          <div class="label">强项: 场景切口 · 短板: 服务数据和身份系统</div>
-        </div>
-      </div>
-    </div>
+<div class="wrap">
+  <header>
+    <span class="mark">MBA<span class="dot">.</span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section>
-      <span class="section-kicker">METHOD</span>
-      <h2>MBA 与评委机制</h2>
-      <p class="lead">MBA 是 Metric Brand Auditor,中文可理解为“可量化品牌影响力审计器”。它先按 7 个维度做公开资料调研,再让行业评委 panel 独立打分,最后由 Lead 合成可复盘报告。</p>
-      <div class="method-grid">
-        <div class="card method-card"><b>1. 7 维调研</b><br>创始叙事、产品定位、渠道、社区/PR、视觉语言、竞品格局、真实信号。</div>
-        <div class="card method-card"><b>2. 5 位 auto 评委</b><br>Musk、雷军、李想、何小鹏、李斌独立评价,互不参考彼此答案。</div>
-        <div class="card method-card"><b>3. 5 个评分镜头</b><br>Origin、Category、Leverage、Identity、Real-world signal。</div>
-        <div class="card method-card"><b>4. Lead 合成</b><br>汇总共识、分歧、关键缺口和 90 天品牌动作。</div>
-      </div>
-    </section>
+  <div class="report-meta">Brand Influence Audit · <strong>v7 · EVOLUTION</strong> · 2026-07-12 · 引擎升级重审(50 分制 → 250 分制 · mba 0.4.3)· watch 事件流 + 补充调研 · 历史版本:<a href="versions/v6_2026-05-18.html">v6(2026-05-18)→</a> · <a href="versions/v5_2026-05-18.html">v5</a> · <a href="versions/v4_2026-05-18.html">v4</a> · <a href="versions/v3_2026-05-18.html">v3</a> · <a href="versions/v2_2026-05-18.html">v2</a> · <a href="versions/v1_2026-05-17.md">v1</a></div>
+  <h1 class="brand-title">橙仕汽车 Chengshi Auto</h1>
+  <p class="report-subtitle">末端配送生产力工具 · 电三轮替代 · 出口两年占比三分之一,却在国内公开世界里静默</p>
 
-    <section>
-      <span class="section-kicker">KEY SIGNALS</span>
-      <h2>橙仕当前最重要的 6 个信号</h2>
-      <div class="metric-grid">
-        <div class="card metric"><div class="num">近 10 亿元</div><div class="caption">2023 年 B 轮融资,产业资本和供应链资源进入。</div></div>
-        <div class="card metric"><div class="num">170+</div><div class="caption">公开报道中的末端配送场景 / 城市投入应用信号。</div></div>
-        <div class="card metric"><div class="num">20 国</div><div class="caption">公开资料显示已进入全球 20 个国家使用场景。</div></div>
-        <div class="card metric"><div class="num">约 5000 台</div><div class="caption">OFweek 报道中的累计销售 / 应用规模信号。</div></div>
-        <div class="card metric"><div class="num">2000-2500 件</div><div class="caption">财联社报道中的单人单车日配送效率口径。</div></div>
-        <div class="card metric"><div class="num">31.0/50</div><div class="caption">auto panel 综合评分;场景成立,护城河未完全成立。</div></div>
-      </div>
-    </section>
+  <div class="panel-badge">🚚 auto · 5-Judge Panel</div>
 
-    <section>
-      <span class="section-kicker">SCORES</span>
-      <h2>评分雷达与总分对比</h2>
-      <p class="lead">5 位评委一致认为:橙仕的场景切口真实,但服务数据、车型任务化表达和身份系统仍是短板。</p>
-      <div class="chart-grid">
-        <div class="chart-wrap"><canvas id="radarChart" height="340"></canvas></div>
-        <div class="chart-wrap"><canvas id="barChart" height="340"></canvas></div>
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">6.04</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10</div>
+    </div>
+    <div>
+      <div class="score-label">总分(250 分制)</div>
+      <div class="score-sub">151 / 250 <span class="score-tag">v6: 31/50 = 6.20 · 同尺度 ↓0.16</span></div>
+      <div style="margin-top:8px;">
+        <div class="score-label">评委数</div>
+        <div class="score-sub">5 <span class="score-tag">auto panel</span></div>
       </div>
-
-      <h3>Dissent Heatmap — 评委异议热力图</h3>
-      <p class="lead">热力图用来回答:哪些地方评委高度一致,哪些地方最有分歧。橙仕最大分歧在 Real-world signal:应用信号变强,但 Musk 仍要求 fleet dashboard。</p>
-      <div class="heatmap">
-        <div class="hcell hhead">Lens / Judge</div>
-        <div class="hcell hhead">Musk</div>
-        <div class="hcell hhead">雷军</div>
-        <div class="hcell hhead">李想</div>
-        <div class="hcell hhead">何小鹏</div>
-        <div class="hcell hhead">李斌</div>
-        <div class="hcell hhead">σ</div>
-        <div class="hcell hlens">Origin authenticity</div>
-        <div class="hcell s-high">7</div><div class="hcell s-high">7</div><div class="hcell s-high">7</div><div class="hcell s-mid">6</div><div class="hcell s-high">7</div><div class="hcell s-mid">0.40</div>
-        <div class="hcell hlens">Category coinage</div>
-        <div class="hcell s-high">7</div><div class="hcell s-high">7</div><div class="hcell s-high">8</div><div class="hcell s-high">7</div><div class="hcell s-mid">6</div><div class="hcell s-mid">0.63</div>
-        <div class="hcell hlens">Leverage quality</div>
-        <div class="hcell s-mid">6</div><div class="hcell s-high">7</div><div class="hcell s-mid">6</div><div class="hcell s-mid">6</div><div class="hcell s-mid">6</div><div class="hcell s-mid">0.40</div>
-        <div class="hcell hlens">Identity coherence</div>
-        <div class="hcell s-low">4</div><div class="hcell s-mid">5</div><div class="hcell s-mid">5</div><div class="hcell s-low">4</div><div class="hcell s-mid">5</div><div class="hcell s-mid">0.49</div>
-        <div class="hcell hlens">Real-world signal</div>
-        <div class="hcell s-mid">5</div><div class="hcell s-high">7</div><div class="hcell s-mid">6</div><div class="hcell s-high">7</div><div class="hcell s-high">7</div><div class="hcell s-mid">0.80</div>
+    </div>
+    <div>
+      <div class="score-label">最强维度</div>
+      <div class="score-sub">Category 7.0</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Identity 4.4</div>
       </div>
-    </section>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      v7 引擎升级全量重审:watch 回填坐实出海杠杆(德国 1500 万欧元大单 · 欧标认证 · 中远海运),Leverage 6.2 持平;但 2025-2026 公开信息近乎断流,唯一可核 2025 数据点是一条未回应的保修投诉——Signal 6.4→5.8 主驱动降分。场景是真的,证明却逾期了。
+    </div>
+  </div>
 
-    <section>
-      <span class="section-kicker">PRODUCT VISUALS</span>
-      <h2>产品图片:先看到它是什么车</h2>
-      <p class="lead">橙仕的品牌判断离不开产品形态:它不是审美型乘用车,而是末端配送工具车。下面图片来自卡车之家车型页,用于帮助理解车辆外观、驾驶室和货厢形态。</p>
-      <div class="product-gallery">
-        <div class="product-card">
-          <img src="_assets/chengshi01-exterior.jpg" alt="橙仕01 外观">
-          <div class="body"><strong>橙仕 01 外观</strong><p>第一眼就是生产工具车,不是生活方式车。</p></div>
-        </div>
-        <div class="product-card">
-          <img src="_assets/chengshi01-side.jpg" alt="橙仕01 侧后方">
-          <div class="body"><strong>小尺寸封闭厢货</strong><p>品牌价值来自合法上路、灵活停靠和低成本配送。</p></div>
-        </div>
-        <div class="product-card">
-          <img src="_assets/chengshi01-cabin.jpg" alt="橙仕01 驾驶室">
-          <div class="body"><strong>驾驶室</strong><p>体验重点不是豪华,而是低门槛、易维护、够用。</p></div>
-        </div>
-        <div class="product-card">
-          <img src="_assets/chengshi01-cargo.jpg" alt="橙仕01 货厢">
-          <div class="body"><strong>货厢</strong><p>货厢能力决定每天多跑多少件,是生产力叙事核心。</p></div>
-        </div>
+  <h2>What changed since v6 / 较 v6 变化</h2>
+  <div style="background:#fff;border:1.5px solid #e0ddd8;border-left:3px solid var(--accent);border-radius:6px;padding:18px 20px;margin-bottom:28px;font-size:14px;line-height:1.7;">
+    <p style="margin:0 0 10px;"><strong>引擎升级重审</strong>:v6(2026-05-18)用已废弃的 50 分制(评委均值 31.0/50 = 6.20);v7 按 mba 0.4.3 现行体系全量重打:5 评委 × 5 镜头 × 10 分 = 250 分制。归一化口径同尺度可比:<strong>6.20 → 6.04(↓0.16)</strong>;单评委卷面仍为 /50,逐人可比。分数不锚定 v6,评委从头全量打分。</p>
+    <p style="margin:0 0 10px;"><strong>watch 事件流首次接入(3 条,2023-24 回填)</strong>:<code>2024-04-16-chengshi-auto-003</code>——「开展前两天，橙仕汽车刚刚在德国拿下了1500万欧元大单。」(21 世纪经济报道)+ Tyne GmbH 三年长跑、整车欧标认证、出口两年占比三分之一;<code>2023-06-25-chengshi-auto-002</code>——中远海运物流供应链战略合作;<code>2023-04-07-chengshi-auto-001</code>——财联社创始人一手访谈锚定「电三轮全面置换」品类议程。出海杠杆被坐实,Leverage 6.2 持平(对冲「接受贴牌」的品牌稀释与服务欠账)。</p>
+    <p style="margin:0 0 10px;"><strong>Signal 6.4→5.8(主驱动)</strong>:2025-2026 公开信息近乎断流——B 轮(2023-10)后无融资口径、2024-04 后无经营更新;唯一可核验的 2025 新数据点是车质网投诉【1458369】「橙仕01启动电机故障 厂家不给保修」(2025-07-10),未见公开处置。雷军/何小鹏/李斌各降 1;马斯克维持 5。<em>报告不推断「经营变差」——静默不是恶化的证据,但公开账本断更让品牌主张失去可验证性。</em></p>
+    <p style="margin:0;"><strong>Identity 4.6→4.4</strong>:命名两年未修,在售矩阵又新增 X2 代号(太平洋汽车 2026-07);海外「国家合伙人」接受贴牌,品牌层让位给收入。<strong>Origin 6.8 / Category 7.0 维持</strong>,且被一手访谈与 1500 万辆/200 万辆量化口径加固。总分 <strong>151 / 250(6.04)</strong>。</p>
+  </div>
+
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Lens</th>
+        <th>马斯克</th>
+        <th>雷军</th>
+        <th>李想</th>
+        <th>何小鹏</th>
+        <th>李斌</th>
+        <th>Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td>
+        <td>7</td>
+        <td>7</td>
+        <td>7</td>
+        <td class="cell-lo">6</td>
+        <td>7</td>
+        <td>6.8</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td>
+        <td>7</td>
+        <td>7</td>
+        <td class="cell-hi">8</td>
+        <td>7</td>
+        <td class="cell-lo">6</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td>
+        <td>6</td>
+        <td class="cell-hi">7</td>
+        <td>6</td>
+        <td>6</td>
+        <td>6</td>
+        <td>6.2</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td>
+        <td class="cell-lo">4</td>
+        <td>5</td>
+        <td class="cell-lo">4</td>
+        <td class="cell-lo">4</td>
+        <td>5</td>
+        <td>4.4</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td>
+        <td class="cell-lo">5</td>
+        <td>6</td>
+        <td>6</td>
+        <td>6</td>
+        <td>6</td>
+        <td>5.8</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td>
+        <td>29</td>
+        <td>32</td>
+        <td>31</td>
+        <td>29</td>
+        <td>30</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-family:ui-sans-serif,sans-serif;font-size:14px;"><strong>Score Total: 151 / 250</strong> · <strong>Score Normalized: 6.04 / 10</strong>(v6 参考:31/50 = 6.20,50 分制评委均值口径)</p>
+
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 5 评委 × 5 镜头</div>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+    </div>
+  </div>
+
+  <h2>Dissent Heatmap / 异议热力图</h2>
+  <div class="heatmap">
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:10%;background:#1a7a4a;">6.8</div>
+        <span class="heatmap-range">6–7 · Δ1 低</span>
       </div>
-      <p class="source-note">图片来源:卡车之家 `橙仕 01 创富版 3.49米单排纯电动封闭货车20.72kWh` 车型页 / 实拍图库。原页面: <a href="https://product.360che.com/m556/139199_index.html">product.360che.com/m556/139199_index.html</a>。图片版权归原权利方所有,此处仅作报告说明引用。</p>
-    </section>
-
-    <section>
-      <span class="section-kicker">LEVERAGE MAP</span>
-      <h2>影响力构造图</h2>
-      <p class="lead">橙仕现在的品牌不是破圈传播,而是生产力链条。真正做功的不是“智能”大词,而是用户能否多赚钱、少停运、少扯皮。</p>
-      <div class="map">
-        <div class="map-flow">
-          <div class="node"><strong>真实场景</strong><p>快递末端、电三轮替代、商超补货、生鲜短驳、乡镇配送。</p></div>
-          <div class="node"><strong>低价入口</strong><p>1.88 万 / 2.98 万 / 3.48-5.98 万价格带降低采购门槛。</p></div>
-          <div class="node"><strong>应用信号</strong><p>170+ 场景、20 国、约 5000 台、30+ 应用场景。</p></div>
-          <div class="node"><strong>薄弱环节</strong><p>服务半径、配件时效、保修判定、停运损失、残值不透明。</p></div>
-          <div class="node"><strong>品牌跃迁</strong><p>从低价小车变成末端配送经营者的运营保障系统。</p></div>
-        </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:20%;background:#1a7a4a;">7.0</div>
+        <span class="heatmap-range">6–8 · Δ2 ★ 最大分歧</span>
       </div>
-    </section>
-
-    <section>
-      <span class="section-kicker">JUDGES</span>
-      <h2>5 位汽车评委独立判断</h2>
-      <div class="judges">
-        <div class="card judge" data-j="musk">
-          <div class="head"><span class="name">Musk</span><span class="total">29/50</span></div>
-          <div class="quote">"If it makes a courier more money, show the numbers."</div>
-          <div class="gap"><b>Critical gap:</b> 没有公开 fleet dashboard。没有 cost/km、uptime、电池健康和维修时长,生产力品牌就没有硬证明。</div>
-          <div class="scores"><span>O 7</span><span>C 7</span><span>L 6</span><span>I 4</span><span>S 5</span></div>
-        </div>
-        <div class="card judge" data-j="leijun">
-          <div class="head"><span class="name">雷军</span><span class="total">33/50</span></div>
-          <div class="quote">"低价不是终点，用户买完以后不后悔，才是真的厚道。"</div>
-          <div class="gap"><b>Critical gap:</b> 用户信任合同还没写清楚。买车、用车、维修、保修、置换、残值都要让小 B 用户放心。</div>
-          <div class="scores"><span>O 7</span><span>C 7</span><span>L 7</span><span>I 5</span><span>S 7</span></div>
-        </div>
-        <div class="card judge" data-j="lixiang">
-          <div class="head"><span class="name">李想</span><span class="total">32/50</span></div>
-          <div class="quote">"不要让用户先研究 01、X5、X7；先告诉他，他这个生意应该买哪台车。"</div>
-          <div class="gap"><b>Critical gap:</b> 缺少“场景-车型-收益”决策地图。产品越丰富,选择越累。</div>
-          <div class="scores"><span>O 7</span><span>C 8</span><span>L 6</span><span>I 5</span><span>S 6</span></div>
-        </div>
-        <div class="card judge" data-j="hexiaopeng">
-          <div class="head"><span class="name">何小鹏</span><span class="total">30/50</span></div>
-          <div class="quote">"工程能力不是发布会词汇，是真实工况下的数据。"</div>
-          <div class="gap"><b>Critical gap:</b> 智能化没有变成可验证指标。不要只讲无人配送愿景,要讲真实工况数据。</div>
-          <div class="scores"><span>O 6</span><span>C 7</span><span>L 6</span><span>I 4</span><span>S 7</span></div>
-        </div>
-        <div class="card judge" data-j="libin">
-          <div class="head"><span class="name">李斌</span><span class="total">31/50</span></div>
-          <div class="quote">"这类车交付出去以后，品牌才真正开始。"</div>
-          <div class="gap"><b>Critical gap:</b> 服务承诺不够外显。小 B 用户买的是每天能不能稳定开工。</div>
-          <div class="scores"><span>O 7</span><span>C 6</span><span>L 6</span><span>I 5</span><span>S 7</span></div>
-        </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:10%;background:#6b7280;">6.2</div>
+        <span class="heatmap-range">6–7 · Δ1 低</span>
       </div>
-    </section>
-
-    <section>
-      <span class="section-kicker">ACTION</span>
-      <h2>90 天品牌动作</h2>
-      <div class="action-list">
-        <div class="action"><div class="num">1</div><div><h4>发布“橙仕车主账本 100 例”</h4><p>公开购车成本、日单量、能耗、维修、停运、回本周期和保修结果。</p></div><span class="tag">雷军</span></div>
-        <div class="action"><div class="num">2</div><div><h4>建立“任务-车型-收益”导购地图</h4><p>把快递末端、商超补货、生鲜短驳、乡镇配送、农产品上行、移动售卖拆成可购买任务。</p></div><span class="tag">李想</span></div>
-        <div class="action"><div class="num">3</div><div><h4>发布 3 城 fleet dashboard</h4><p>公开车辆部署、日配送、uptime、维修时长、cost/km、电池健康。</p></div><span class="tag">Musk</span></div>
-        <div class="action"><div class="num">4</div><div><h4>发布可靠性白皮书</h4><p>三电质保、故障率、维修件、满载续航、保修争议处理流程。</p></div><span class="tag">何小鹏</span></div>
-        <div class="action"><div class="num">5</div><div><h4>推出运营保障标准</h4><p>服务半径、配件时效、保修判定、停运补偿、二手回收和车队 SLA。</p></div><span class="tag">李斌</span></div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:40%;width:10%;background:#c1440e;">4.4</div>
+        <span class="heatmap-range">4–5 · Δ1 ★★ 全卷最弱</span>
       </div>
-    </section>
-
-    <section>
-      <span class="section-kicker">VERDICT</span>
-      <h2>最终判断</h2>
-      <div class="callout">
-        橙仕已经证明“场景切口成立”,但还没证明“品牌护城河成立”。它需要从低价工具车,升级成末端配送经营者每天可依赖的运营保障系统。
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:50%;width:10%;background:#a3705a;">5.8 ↓0.6</div>
+        <span class="heatmap-range">5–6 · Δ1 · 一致向下</span>
       </div>
-      <p><strong>综合分: 31.0 / 50 = 6.2 / 10。</strong> 场景切口清晰、真实信号增强的早中期商用车品牌;服务数据和身份系统是主要短板。</p>
-    </section>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>v7 特征</strong>:低分歧、共识向下。v6 最大分歧在 Signal(雷军 7 vs 马斯克 5);v7 分歧收敛到 Category(Δ2)——李想认为「末端生产力车」品类仍可被橙仕长期占住,李斌提醒五菱/欧铃/无人配送车多种叙事并存、橙仕还不是唯一命名者。Signal 上没有评委为 2025-2026 的静默辩护。当分歧消失、方向一致向下时,问题已经不是视角差异,而是证据缺席。
+    </div>
+  </div>
 
-    <section>
-      <span class="section-kicker">LEGAL</span>
-      <h2>商标、知识产权与免责声明</h2>
-      <p class="lead">本报告为 MBA 品牌影响力研究与方法演示,所有事实判断均基于公开可访问资料,不使用企业内部文件、商业秘密或未授权数据库。</p>
-      <div class="legal-grid">
-        <div class="legal-card"><strong>公开资料引用</strong><p>引用范围包括新闻报道、行业媒体文章、车型页面、公开投诉样本、MBA 方法说明和 GitHub 开源仓库信息。公开资料可能存在发布时间、媒体口径和样本偏差。</p></div>
-        <div class="legal-card"><strong>商标与品牌归属</strong><p>“橙仕汽车”“橙仕 01”“橙仕 X7”等品牌名、车型名、商标、标识及相关商业外观,均归其合法权利人所有;报告中的提及仅用于识别、评论、研究和说明。</p></div>
-        <div class="legal-card"><strong>图片与版权</strong><p>产品图片来自卡车之家公开车型页 / 实拍图库,仅用于说明产品形态。图片版权及相关权利归原摄影者、发布平台或其他合法权利方所有。</p></div>
-        <div class="legal-card"><strong>关系说明</strong><p>本报告不表示 MBA、报告作者与橙仕汽车或相关权利主体存在赞助、授权、合作、背书或代理关系。</p></div>
-        <div class="legal-card"><strong>非建议性质</strong><p>报告不构成投资建议、融资建议、采购建议、法律意见、审计意见或商业尽调结论。分数只反映 auto panel 在公开资料基础上的判断。</p></div>
-        <div class="legal-card"><strong>准确性限制</strong><p>本轮未接入 Wuying 社交抓取、车主大样本访谈、售后工单、销量发票或车队运营后台。商业、投资、采购或法律决策前应自行核验一手资料并咨询专业顾问。</p></div>
+  <h2>影响力构造 / Influence Map · Leverage Map</h2>
+  <div class="flow-diagram">
+    <pre>
+真实劳动场景起源(快递末端 · 电三轮合规/安全/效率痛点 —— watch 001 创始人一手议程)
+      │
+      ▼
+品类切口:末端配送生产力工具(量化底:约 1500 万辆存量 / 仅约 200 万合法 —— 21 经济网)
+      │
+      ├──→ 低价产品矩阵(01 · 2.98 万起;在售 01 / X5 / X2 / X7,2.98-10.08 万)
+      │      ⚠ 命名仍是代号系统,任务导购地图缺席(Identity 4.4)
+      │
+      ├──→ 供应链/资本杠杆(2023-10 近 10 亿 B 轮 · 赣锋锂业等产业方 —— v6 既有)
+      │
+      ├──→ ✚ v7 坐实:出海杠杆链(watch 002/003)
+      │      中远海运物流网络 → Tyne GmbH 三年长跑 → 欧标认证 → 德国 1500 万欧元大单
+      │      → 出口占比 1/3 → DHL/欧盟邮政「接洽中」(不计分)
+      │      ⚠ 「国家合伙人」接受贴牌 —— 杠杆兑换成收入,不是品牌资产
+      │
+      └──→ ⚠ v7 警讯:公开账本断流(2025-2026)
+             无融资/销量/服务口径更新 · 唯一可核 2025 数据点 = 车质网保修投诉
+             (2025-07-10,未见公开处置)—— Signal 6.4→5.8 主驱动
+                  │
+                  ▼
+          品牌叙事层:场景拥有感(真)× 服务承诺(未显性)× 用户账本(缺席)
+          —— 「低价买入」到「持续赚钱」的品牌跃迁仍未被证明(v6 判断,v7 加急)
+    </pre>
+  </div>
+
+  <h2>评委打分卡 / Judge Scorecards(v7 全量重打)</h2>
+  <div class="judge-grid">
+
+    <div class="judge-card">
+      <div class="judge-name">马斯克 Elon Musk</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Tesla / SpaceX / xAI CEO · v6 29</div>
+      <div class="judge-total">29</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 并列最低</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%;background:#d97706;"></div></div><span class="judge-score">4</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%;background:#d97706;"></div></div><span class="judge-score">5</span></div>
       </div>
-      <details>
-        <summary>Sources</summary>
-        <ul>
-          <li><a href="https://m.cls.cn/detail/1315825">财联社: 刘传富谈快递末端配送场景电动三轮车置换</a></li>
-          <li><a href="https://finance.sina.cn/2023-10-31/detail-imzsyuim9673507.d.html">新浪财经 / 投资界: 橙仕汽车完成近10亿元B轮融资</a></li>
-          <li><a href="https://m.tech.china.com/hea/article/20230313/032023_1237901.html">中华网: 2.98万起橙仕01</a></li>
-          <li><a href="https://m.tech.china.com/tech/article/20230802/082023_1386529.html">中华网: 橙仕X7上市</a></li>
-          <li><a href="https://www.360che.com/news/240615/191376.html">卡车之家: 橙仕汽车新品亮相</a></li>
-          <li><a href="https://nev.ofweek.com/2023-06/ART-71008-8420-30599944.html">OFweek: 五菱、欧铃和橙仕，谁会杀死电三轮</a></li>
-          <li><a href="https://www.cls.cn/detail/869094">财联社: 末端无人配送场景有望规模化落地</a></li>
-          <li><a href="https://m.automotive.org.cn/news/article_62064.html">汽车产业互联: 绿色城配大会应用场景报道</a></li>
-          <li><a href="https://www.12365auto.com/series/3198/index.shtml">车质网: 橙仕01车型页 / 投诉样本</a></li>
-        </ul>
-      </details>
-    </section>
-  </main>
+      <div class="judge-quote">"If it makes a courier more money, show the numbers. Two years of silence is also a number."</div>
+    </div>
 
-  <footer>
-    MBA — Metric Brand Auditor · <a href="https://mbabrand.com">mbabrand.com</a> · <a href="https://github.com/zhanglunet/mba">GitHub</a>
-  </footer>
+    <div class="judge-card">
+      <div class="judge-name">雷军</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">小米集团创始人 · v6 33</div>
+      <div class="judge-total" style="color:var(--green);">32</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"低价不是终点，用户买完以后不后悔，才是真的厚道。账本停更两年，用户拿什么放心？"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">李想</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">理想汽车创始人 · v6 32</div>
+      <div class="judge-total">31</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · Category 全卷最高单项</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%"></div></div><span class="judge-score">4</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"不要让用户先研究 01、X5、X7、X2；先告诉他，他这个生意应该买哪台车。这句话我 v6 说过，一个字都不用改，这本身就是问题。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">何小鹏</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">小鹏汽车 CEO · v6 30</div>
+      <div class="judge-total">29</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 并列最低</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:40%"></div></div><span class="judge-score">4</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"工程能力不是发布会词汇，是真实工况下的数据。欧标认证证明你能过实验室，公开数据才能证明你能过每一天。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">李斌</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">蔚来创始人 · v6 31</div>
+      <div class="judge-total">30</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"这类车交付出去以后，品牌才真正开始。交付之后的沉默，用户都听得见。"</div>
+    </div>
+
+  </div>
+
+  <h2>评委对话:v7 核心分歧 / Dissent Dialogues</h2>
+  <p style="font-size:12px;color:var(--muted);">(以下评委发言均为 AI 基于其公开资料的 in-character 模拟,非本人观点。)</p>
+
+  <h3>李想 vs 李斌:品类是等来的,还是喊出来的</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">李想</div>
+      <div class="dialogue-text">"Category 我给 8,全卷最高。1500 万辆存量、200 万合法,这个账谁都会算,但只有橙仕把车按场景改到了非洲、东南亚和欧洲。品类命名权不是谁嗓门大,是谁把任务做得最像标准答案。这个位置现在还空着,橙仕最有资格坐进去。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">李斌</div>
+      <div class="dialogue-text">"我给 6,不是否认场景,是提醒时间窗。五菱在做、欧铃在做、无人配送车的资本声量比橙仕大得多。品类命名者需要用户替你说话——可橙仕交付出去的车,2025 年之后连一个公开的用户故事都没有。等你想起来要命名的时候,别人可能已经把词用走了。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">雷军(补充)</div>
+      <div class="dialogue-text">"两位说的其实是同一件事:切口是真的,占住要靠兑现。用户嘴里的『买了橙仕多赚钱』比官网上任何品类词都值钱——这个素材库现在是空的。"</div>
+    </div>
+  </div>
+
+  <h3>马斯克 vs 雷军:静默该扣多少分</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">马斯克</div>
+      <div class="dialogue-text">"我 v6 就只给 Signal 5,这次还是 5——不是宽容,是我从来没把媒体报道当信号。真正的信号是运营数据,他们从来没公开过;区别只在于现在连输入端都干涸了。一家 2023 年拿了 10 亿的公司,2026 年在公开世界里几乎不存在。要么数字好但没人想着公开,要么数字不适合公开。两种都该扣分,我已经扣过了。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">雷军</div>
+      <div class="dialogue-text">"我从 7 降到 6,降的不是热度,是信任合同的履约证据。小 B 用户买生产工具,最怕的三件事:坏了没人修、修了不认账、卖了没残值。车质网那条『厂家不给保修』的投诉挂了一年没有公开回应——个案不定罪,但一个都不回应,这个姿态本身就是负信号。厚道不是便宜,是敢把处理过程摊开给人看。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">何小鹏(补充)</div>
+      <div class="dialogue-text">"我降 1 的理由更工程一点:欧标认证证明车能过实验室,但故障率、能耗、维修时长这些真实工况指标,从 v1 等到 v7 一个都没有。认证是一次性的,数据是每天的。"</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议(v7)</h2>
+  <div class="actions">
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>重启公开账本(新增,最高优先)</strong>
+        发布季度经营简报——在役车辆数、出口交付进度(对照 1500 万欧元订单)、服务网点数、平均维修时长。数字好,公开就是免费杠杆;数字不能公开,先想清楚为什么。评委来源:马斯克 / 雷军。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>公开处置存量投诉,把保修争议变成制度展示(新增)</strong>
+        对车质网【1458369】等公开投诉逐条回应——判定标准、处理结果、流程改进;同步发布「运营保障标准」第一版(服务半径、配件时效、保修判定、停运补偿、二手回收)。评委来源:雷军 / 李斌。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>建「任务-车型-收益」导购地图(承 v6 #2,升级为逾期项)</strong>
+        6 个任务入口(快递末端 / 商超补货 / 生鲜短驳 / 乡镇配送 / 农产品上行 / 移动售卖),每个任务只推荐 1-2 台车,直接给成本与回本周期;X2 等新代号先回答「替谁解决什么任务」。评委来源:李想。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>发布可靠性白皮书第一版(承 v6 #4)</strong>
+        三电质保、故障率、常见维修件、平均维修时长、冬夏能耗、满载续航、快充循环——做不齐就先公开三个指标,下季度加。评委来源:何小鹏。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>把出海故事从「贴牌出货」升级为「品牌出海」(新增)</strong>
+        公布 DHL/欧盟邮政接洽的进展口径(哪怕是「仍在认证阶段」),在欧洲订单交付后发布带橙仕品牌的交付案例;明确贴牌与自有品牌的边界策略。评委来源:李斌 / 马斯克。
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sources">Sources(v7 增量;v1-v6 全部来源见 <a href="versions/v6_2026-05-18.html">v6</a>)</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://m.cls.cn/detail/1315825">财联社《安安访谈录》:橙仕汽车创始人刘传富:推动快递末端配送场景电动三轮车全面置换(watch 2023-04-07-chengshi-auto-001,P3)</a></li>
+      <li><a href="https://www.sohu.com/a/690268867_121266206">橙仕汽车与中远海运达成战略合作协议 海外市场拓展跑出"加速度"!– 搜狐号(近企业通稿,已降权;watch 2023-06-25-chengshi-auto-002,P2)</a></li>
+      <li><a href="https://www.21jingji.com/article/20240416/herald/51e366357e3bc733c8d36768c48a937d.html">21 世纪经济报道:广交会观察——德国 1500 万欧元大单 / 出口占比三分之一 / Tyne GmbH / 欧标认证 / 贴牌与国家合伙人 / 1500 万辆-200 万辆市场口径(watch 2024-04-16-chengshi-auto-003,P2)</a></li>
+      <li><a href="https://www.12365auto.com/series/3198/index.shtml">车质网 · 橙仕 01 车型页(投诉【1458369】"橙仕01启动电机故障 厂家不给保修",2025-07-10;fetch 2026-07-12)</a></li>
+      <li><a href="https://price.pcauto.com.cn/price/nb8423/">太平洋汽车 · 橙仕品牌页(在售车系 01 / X5 / X2 / X7 及价格带;fetch 2026-07-12)</a></li>
+      <li><a href="https://finance.sina.cn/2023-10-31/detail-imzsyuim9673507.d.html">新浪财经:橙仕汽车完成近10亿元B轮融资(2023-10-31,本轮复核在线;v6 既有来源)</a></li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-07-12 的公开资料。本版为 EVOLUTION 引擎升级重审(v6 50 分制 → v7 250 分制,mba 0.4.3),评委全量重打分,分数不锚定 v6;归一化口径下与 v6 同尺度可比(6.20 → 6.04)。delta 证据来自 Brand Watch 事件流 watch/chengshi-auto/events.yaml(3 条事件均带原文 URL 与逐字引用,本轮全部重新核验)与克制的补充调研。<strong>2025-2026 年橙仕公开信息可得性差是本报告的明确发现之一</strong>:相关镜头分数反映的是「公开可验证证据的缺席」,而非对公司实际经营状况的推断;读者不应将 Signal 降分解读为「经营恶化」的结论。车质网投诉为公开个案样本,不能代表整体质量水平。「橙仕汽车」「橙仕 01」「橙仕 X7」等品牌名、车型名、商标及相关商业外观归其合法权利人所有;本报告与橙仕汽车无任何赞助、授权或合作关系。5 位评委(马斯克/Elon Musk、雷军、李想、何小鹏、李斌)的评分、评语与对话均为 AI 基于其公开发表资料的 in-character 模拟推断,非本人真实意见,不代表其个人或所在机构立场;评委利益冲突自检(check_self_conflict --brand 橙仕)无强关联命中,无回避项。本报告不构成投资建议、采购建议或任何形式的商业尽调结论。
+  </div>
+</div>
 
 <script>
-  const labels = ["Origin", "Category", "Leverage", "Identity", "Signal"];
-  const judgeScores = {
-    "Musk": [7,7,6,4,5],
-    "雷军": [7,7,7,5,7],
-    "李想": [7,8,6,5,6],
-    "何小鹏": [6,7,6,4,7],
-    "李斌": [7,6,6,5,7]
-  };
-  const colors = ["#59636a", "#ff6900", "#2f7d50", "#1b75bb", "#7c5fd6"];
-  new Chart(document.getElementById("radarChart"), {
-    type: "radar",
-    data: {
-      labels,
-      datasets: Object.entries(judgeScores).map(([name, scores], i) => ({
-        label: name,
-        data: scores,
-        borderColor: colors[i],
-        backgroundColor: colors[i] + "22",
-        pointBackgroundColor: colors[i],
-        borderWidth: 2
-      }))
+// Radar chart — 5 judges x 5 lenses
+const radarCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radarCtx, {
+  type: 'radar',
+  data: {
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+    datasets: [
+      {
+        label: '马斯克',
+        data: [7, 7, 6, 4, 5],
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217,119,6,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4, 2],
+      },
+      {
+        label: '雷军',
+        data: [7, 7, 7, 5, 6],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
+      {
+        label: '李想',
+        data: [7, 8, 6, 4, 6],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '何小鹏',
+        data: [6, 7, 6, 4, 6],
+        borderColor: '#7c3aed',
+        backgroundColor: 'rgba(124,58,237,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '李斌',
+        data: [7, 6, 6, 5, 6],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 } },
+        pointLabels: { font: { size: 11, weight: '600' } },
+        grid: { color: '#e5e2dc' },
+      }
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: { r: { min: 0, max: 10, ticks: { stepSize: 2 }, grid: { color: "#e7dfd3" } } },
-      plugins: { legend: { position: "bottom" } }
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
     }
-  });
-  new Chart(document.getElementById("barChart"), {
-    type: "bar",
-    data: {
-      labels: Object.keys(judgeScores),
-      datasets: [{
-        label: "Total / 50",
-        data: [29,33,32,30,31],
-        backgroundColor: colors,
-        borderRadius: 6
-      }]
+  }
+});
+
+// Bar chart — lens means
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Category', 'Origin', 'Leverage', 'Signal', 'Identity'],
+    datasets: [{
+      label: '均值 (Mean)',
+      data: [7.0, 6.8, 6.2, 5.8, 4.4],
+      backgroundColor: ['#1a7a4a', '#2a7a5a', '#6b7280', '#a3705a', '#c1440e'],
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } },
+      y: { ticks: { font: { size: 11, weight: '600' } } }
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: { y: { min: 0, max: 50, ticks: { stepSize: 10 }, grid: { color: "#eee6dc" } } },
-      plugins: { legend: { display: false } }
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: function(ctx) { return '均值: ' + ctx.parsed.x.toFixed(1) + ' / 10'; }
+        }
+      }
     }
-  });
+  }
+});
 </script>
 </body>
 </html>

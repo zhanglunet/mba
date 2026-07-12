@@ -13,7 +13,7 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 `/mba` 文件夹下的核心 skill 名为 **Metric Brand Auditor**(MBA)—— 一条由 Lead 编排、子 agent 并行执行、人物评委 panel 独立打分的品牌影响力审计流水线。默认 panel 是 5 位评委,另有 9 套行业 panel 可按需替换 / 扩展(共 **10 套内置 panel、43 位评委,全部可运行**)。整个仓库就是这条流水线的源代码 + 角色资料 + 历史报告。
 
-> **v0.4.2** —— 两种用法:① Claude Code **skill**(`/mba <brand>`);② 独立 **MCP server**([`mba-mcp-server`](https://www.npmjs.com/package/mba-mcp-server),已上 npm,14 工具),可接进 Claude Desktop / Cursor,支持**品牌订阅 → 自动重审 → delta 报告 → webhook/email 通知**的演化闭环。见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
+> **v0.4.3** —— 两种用法:① Claude Code **skill**(`/mba <brand>`);② 独立 **MCP server**([`mba-mcp-server`](https://www.npmjs.com/package/mba-mcp-server),已上 npm,16 工具含舆情监控),可接进 Claude Desktop / Cursor,支持**品牌订阅 → 舆情/定时/事件触发 → 自动重审 → delta 报告 → webhook/email 通知**的演化闭环。见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
 
 ## 团队 / Team
 
@@ -41,20 +41,9 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 ![MBA · Metric Brand Auditor — 项目介绍封面](docs/screenshots/presentation.png)
 
-**已发布报告（10 份）[mbabrand.com/reports/](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
+**已发布报告（13 品牌 · 21 版本）[mbabrand.com](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
 
-| 品牌 | Panel | 总分 | 归一化 | 备注 |
-|---|---|---|---|---|
-| **Hermès 爱马仕** | luxury-en | 216/250 | **8.64** ★★★ | Identity 9.6 最高、Origin 9.0 最高、总分最高（三项历史纪录） |
-| **美团 Meituan** | vc-cn | 194/250 | 7.76 | MBA 首个双重★投资冲突（张磊★ + 沈南鹏★）；去★后 7.40 |
-| **Anthropic** | vc-en | 191/250 | 7.64 | Signal 8.8；Category 与 Leverage 双极分化 |
-| **DJI 大疆** | cross-border | 186/250 | 7.44 | Category/Signal 8.0；Identity 5.6，FCC 禁令暴露结构弱点 |
-| **Kimi 月之暗面** | ai-app-cn | 137/200 | 6.85 | Identity 7.5 历史首次领跑全维度 |
-| **元气森林** | consumer-cn | 162/250 | 6.48 | Identity 7.6（已被 Hermès 超越）× Signal 5.4 历史最低 |
-| **好未来 TAL** | edu-cn | 124/200 | 6.20 | MBA 史上首个"品类被政策摧毁后重建"案例 |
-| **橙仕汽车** | auto | 31/50 | 6.20 | 末端配送品牌，auto panel 初代报告 |
-| **奇安信** | security-cn-global | 185/300 | 6.17 | Identity 4.5 全卷最低；6 评委安全专业 panel |
-| **联想 Lenovo** | default | 22/50 | 4.40 | MBA 第一份报告（default panel 样例） |
+**当前榜首**:SpaceX **8.76**(vc-en · v2,史上最大 IPO 补上公开市场验证)· Hermès 8.64(luxury-en)· DJI 7.44(cross-border)。实时榜单、全部 13 品牌 21 个版本、舆情信号与版本轨迹见 [mbabrand.com](https://mbabrand.com)(本表不再静态维护,以免与站点漂移)。
 
 **黑客松 5 分钟 Pitch 稿** · [Markdown](docs/hackathon/pitch-5min.md) · [HTML](docs/hackathon/pitch-5min.html)
 
@@ -135,16 +124,15 @@ mba/
 │
 ├── scripts/
 │   ├── validate_panels.py           ← 校验所有 panel yaml(CI 跑这个,零依赖)
-│   ├── migrate_legacy_report_panels.py ← 给老报告补默认 panel.yaml 绑定
 │   ├── print_report.sh              ← report.html → report.pdf(headless Chrome,就地覆盖)
 │   ├── perspective-tools/           ← 字幕下载、研究合并、质量检查、结构校验等 perspective 共用工具
 │   │   └── check_structure.py           校验 *-perspective/SKILL.md 的 H2 结构(CI 跑这个)
 │   └── wuying/                      ← 阿里云无影 AgentBay helper + smoke test
 ├── assets/judges/                   ← 评委插画头像(严禁真人照片)
 ├── published/reports/               ← 已确认可公开发布的报告源(显式 git add -f 才入库)
-├── packages/mcp-server/             ← mba-mcp-server:MBA 的 MCP 封装(TypeScript,14 工具,已发布 npm)
+├── packages/mcp-server/             ← mba-mcp-server:MBA 的 MCP 封装(TypeScript,16 工具,已发布 npm)
 ├── site/                            ← mbabrand.com 的源:index.html + build.sh(Cloudflare Pages)
-├── docs/                            ← 完整设计文档 01-14 + mcp-server-design + hackathon 资料
+├── docs/                            ← 完整设计文档 01-16 + mcp-server-design + weekly 周报 + hackathon 资料
 ├── .github/workflows/panel-validation.yml ← CI:校验 panel / 结构 / py_compile / shell / site build
 └── .env.example / .env              WUYING_API_KEY 配置(.env 不入库)
 ```
@@ -555,7 +543,7 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 
 - 想读流水线的人 → `metric-brand-auditor/SKILL.md`(主手册,~1000 行)
 - 想要系统化的设计 / 使用 / 扩展文档 → [`docs/`](docs/)(01-prd → 08-extending,索引见 `docs/README.md`)
-- 想看已发布的报告 → [`mbabrand.com`](https://mbabrand.com)(10 份,含 Hermès / 美团 / Anthropic / DJI 等)或直接看 [`published/reports/`](published/reports/)
+- 想看已发布的报告 → [`mbabrand.com`](https://mbabrand.com)(13 品牌 21 版本,含 SpaceX / Hermès / 美团 / Anthropic / DJI 等)或直接看 [`published/reports/`](published/reports/)
 - 想加一个新维度 → `metric-brand-auditor/references/dimensions.md`
 - 想改评委的打分模板 → `metric-brand-auditor/references/judge-prompt-template.md`
 - 想换 HTML 报告的图表样式 → `metric-brand-auditor/references/html-report-template.md`
@@ -569,7 +557,7 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 ## 许可与边界
 
 - Production 人物视角 skill 都基于**公开一手资料**(访谈、文章、播客 transcript),每套 SKILL.md 顶部有明确的 anti-fabrication 红线 + self-conflict 规则 —— 不替本人编造未公开内容;评委评自己强关联的公司 / 产品时默认 `--panel-drop`,保留则只作"创始人自检"不计入中立横评。
-- 运行时报告目录 `metric-brand-auditor/reports/` 默认在 `.gitignore`,跑完的报告归用户所有、不入版本库,需自行管理隐私。仅 `published/reports/<brand>/` 下经人工 review、显式 `git add -f` 的报告会公开(当前已发布 10 份,见 `site/published-reports.txt`)。
+- 运行时报告目录 `metric-brand-auditor/reports/` 默认在 `.gitignore`,跑完的报告归用户所有、不入版本库,需自行管理隐私。仅 `published/reports/<brand>/` 下经人工 review、显式 `git add -f` 的报告会公开(当前已发布 13 个品牌,见 `site/published-reports.txt`)。
 
 ---
 

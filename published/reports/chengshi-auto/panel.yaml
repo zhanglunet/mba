@@ -1,9 +1,22 @@
 panel: auto
 locked_at: 2026-05-17
-mba_version: 0.2.20
+mba_version: 0.4.3
+published_at: 2026-07-12
+version: v7
+mode: evolution
+previous_version: v6
 industry: auto
 brand: 橙仕汽车
 brand_slug: chengshi-auto
+score_total: 151
+score_max: 250
+score_normalized: 6.04
+reference:
+  version: v6
+  score_total: 31
+  score_max: 50
+  score_normalized: 6.20
+  note: v6 为已废弃的 50 分制(5 评委 × 5 镜头,评委均值口径 31/50 = 6.20);v7 起按 0.4.3 现行 250 分制全量求和,归一化口径同尺度可比
 overrides:
   add: []
   drop: []

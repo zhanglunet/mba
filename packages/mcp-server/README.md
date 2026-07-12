@@ -190,6 +190,10 @@ npm publish               # prepublishOnly runs typecheck + tests + build first
 
 ## Status
 
+**v0.2.0 — 16 tools · 220 tests · Brand Watch 舆情工具上线**
+- ✅ `get_watch_events` / `record_watch_event` — 可溯源舆情事件流读写,触发规则运行时评估(30 天窗 P0≥1 / P1≥3 / 加权≥6),P0 或命中经订阅链路下发重审建议(只建议、不改分)
+- ✅ Watch 数据层(`src/watch/`):录入门槛为 `validate_watch.py` 的 TS 镜像;事件文件只追加不重写
+
 **v0.1.0 — published to npm · 14 tools · 158 tests**  
 - ✅ Project scaffold (TypeScript, vitest, MCP SDK)  
 - ✅ State machine with all valid transitions  

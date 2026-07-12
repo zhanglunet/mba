@@ -1,6 +1,6 @@
 {
   "name": "mba-mcp-server",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "MBA (Metric Brand Auditor) — MCP server. Run /mba audits from any MCP-capable agent.",
   "keywords": [
     "mcp",

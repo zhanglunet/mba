@@ -329,9 +329,9 @@
 
   <h1>开发路线图</h1>
   <p class="sub">Development Roadmap &amp; Progress Log · 持续更新</p>
-  <div class="version-chip">当前版本 v0.4.0 · 快照 2026-07-04</div>
+  <div class="version-chip">当前版本 v0.4.3 · 快照 2026-07-12</div>
   <p style="margin:-16px 0 28px;font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;font-size:14px;">
-    <a href="/handoff.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">📄 v0.4.0 交接文档 / Handoff — 成果 · 用法 · 待解锁项 →</a>
+    <a href="/handoff.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">📄 交接文档 / Handoff(v0.4.0 历史快照)→</a>
   </p>
 
   <!-- ── 状态快照 ── -->
@@ -339,8 +339,8 @@
   <div class="status-grid">
     <div class="status-card ok">
       <div class="label">流水线</div>
-      <div class="value">v0.4.0</div>
-      <div class="note">Phase 0-5 + Phase 5M 稳定，生产就绪</div>
+      <div class="value">v0.4.3</div>
+      <div class="note">Phase 0-5 + 5M 稳定 · Brand Watch 舆情监控全链路(W1-W7)</div>
     </div>
     <div class="status-card ok">
       <div class="label">评委面板</div>
@@ -354,8 +354,8 @@
     </div>
     <div class="status-card ok">
       <div class="label">公开报告</div>
-      <div class="value">10 / 10</div>
-      <div class="note">全部 10 套面板各 1 份，P2-B ✓</div>
+      <div class="value">13 品牌 · 21 版本</div>
+      <div class="note">7 品牌有 EVOLUTION 版本;SpaceX 8.76 现居审计史最高</div>
     </div>
     <div class="status-card ok">
       <div class="label">集成测试</div>
@@ -365,7 +365,7 @@
     <div class="status-card ok">
       <div class="label">MCP Server</div>
       <div class="value">16 工具</div>
-      <div class="note">v0.1.0 · 8 核心 + 6 演化 + 2 舆情 · 220 tests · 已发 npm</div>
+      <div class="note">v0.2.0 · 8 核心 + 6 演化 + 2 舆情 · 220 tests · npm</div>
     </div>
   </div>
 
@@ -540,14 +540,14 @@
   <div class="priority-card">
     <div class="card-head">
       <span class="badge p1">P1</span>
-      <span class="card-title">依赖 Wuying Pro 升级</span>
-      <span class="card-desc">升级后可批量解锁 25 位中文评委深化</span>
+      <span class="card-title">中文评委深化 ✓ 已完成(route-A,未升级 Wuying)</span>
+      <span class="card-desc">2026-07-10 收官:42/43 全档,仅张兰诚实留 seed;Wuying 降级为可选增强</span>
     </div>
 
     <div class="task-group-label">A · 升级 Wuying 并验证</div>
     <div class="task-list task-group">
       <div class="task-item">
-        <div class="task-check blocked"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           升级 Wuying 套餐到 Pro/Ultra
           <div class="note">解锁后：运行 scripts/wuying/smoke_test.py 确认 GetLink 可用</div>
@@ -558,38 +558,38 @@
     <div class="task-group-label">B · 批量深化中文评委（按优先级排序）</div>
     <div class="task-list task-group">
       <div class="task-item">
-        <div class="task-check blocked"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           <b>consumer-cn 5 人</b>：江南春 / 钟睒睒 / 罗永浩 / 阳萌 / 张兰
           <div class="note">国内品牌审计需求最大，优先</div>
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check blocked"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           <b>vc-cn 3 人</b>：张磊 / 徐新 / 沈南鹏
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check blocked"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           <b>ai-app-cn 3 人</b>：王小川 / 王慧文 / 李木欧
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check blocked"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           <b>cross-border 4 人</b>：黄峥 / 周受资 / 陈年 / 庄帅
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check blocked"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           <b>edu-cn 3 人</b>：Sal Khan / 寿松涛 / 黄峥（教育版）
         </div>
       </div>
       <div class="task-item">
-        <div class="task-check blocked"></div>
+        <div class="task-check done"></div>
         <div class="task-text">
           <b>security-cn-global 3 人</b>（剩余）
         </div>
@@ -766,7 +766,7 @@
         <div class="task-check blocked"></div>
         <div class="task-text">
           P3-B-3：keyword / news RSS 触发器
-          <div class="note">阻断：Wuying Pro GetLink() 抓取中文内容（免费版返回 400）</div>
+          <div class="note">Wuying 阻断已不成立(route-A 可取内容);现状:schema 已收 keyword/news 但调度器只执行 cron——待决策:接 RSS 实现或从 enum 移除(docs/11 G 系列决策项②)</div>
         </div>
       </div>
     </div>
@@ -938,6 +938,42 @@
           <li>site/agents.html MCP 段落更新，roadmap P3-A 全部任务勾选</li>
         </ul>
         <div class="log-commit">commit <a href="https://github.com/zhanglunet/mba/commit/069c5c4" target="_blank">069c5c4</a> · branch claude/sharp-turing-496l8b</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-12</div>
+      <div class="log-tags">
+        <span class="badge done">v0.4.3</span>
+        <span class="badge p0">Brand Watch</span>
+      </div>
+      <div class="log-title">舆情监控全线上线(W1-W7)· 5 单重审 · SpaceX 8.76 登顶 · 周报体系</div>
+      <div class="log-body">
+        <ul>
+          <li><b>Brand Watch W1-W7</b>:数据层+硬 gate → 源验证 → 试点采集 → --watch 进 skill → 首页徽章+时间线页+/watch/ 总览 → 周一自动周扫 Routine → 触发评估器 + MCP 舆情双工具(14→16 工具)</li>
+          <li><b>5 单事件流驱动重审</b>:奇安信 v2(6.17→5.83)/ 亚信 v2 / 垣信 v2 / SpaceX v2(8.60→<b>8.76 登顶审计史</b>)/ 美团 v3;39 条事件 100% 消费</li>
+          <li><b>诚实记账 + 当天校准</b>:触发建议精确率 1/5=20% 未达 60% 验收线 → 全链路收紧阈值(P1≥3 / 加权≥6),回测不丢真阳性、压掉两个最差误报</li>
+          <li><b>周报体系</b>:docs/weekly md 唯一真源 → 时间线 + 每期永久存档页;周日自动生成 Routine(草稿开 PR,人工把关)</li>
+          <li>报告矩阵:13 品牌 · 21 版本;新增亚信 / 垣信 / SpaceX 三份审计</li>
+        </ul>
+        <div class="log-commit">PR #87–#106(单日 20 个 PR 全绿合并)</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-07 → 07-11</div>
+      <div class="log-tags">
+        <span class="badge done">v0.4.1 / v0.4.2</span>
+        <span class="badge p1">深化收官 + 工程硬化</span>
+      </div>
+      <div class="log-title">npm 首发 + 实时联网调研 · 评委 42/43 全档收官 · E/F 系列工程硬化</div>
+      <div class="log-body">
+        <ul>
+          <li><b>v0.4.1</b> mba-mcp-server 首发 npm(npx 一键接入);<b>v0.4.2</b> 实时联网研究(MBA_WEB_SEARCH)+ resume_audit 断点续跑</li>
+          <li><b>评委深化收官</b>:route-A(curl 出口代理直取一手)完成最后 17 位,42/43 全档、8 面板成军;张兰经严格一手核算诚实留 seed</li>
+          <li><b>E/F 系列硬化</b>:反捏造 firewall 进 CI(逐字引用门禁)、报告渲染 QA、self-conflict 拦截、报告数字自洽 gate、首页单一真源+版本导航、MCP 220 tests、EVOLUTION 泛化(anthropic v2/v3 · meituan v2)</li>
+        </ul>
+        <div class="log-commit">PR #45–#86</div>
       </div>
     </div>
 

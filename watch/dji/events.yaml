@@ -1,0 +1,73 @@
+# watch/dji/events.yaml — 大疆(DJI)舆情事件流
+# schema 见 docs/16 §2;G3 冷启动首批(2026-07-12)。
+#
+# 主线:美国监管(NDAA 审查未完成 → FCC Covered List)及其对产品/市场面的传导。
+# fcc.gov 在本环境不可达(TLS 报错),FCC 决定以 DRONELIFE(行业权威媒体,
+# URL 内嵌日期)+ DJI 官方声明逐字引用落库;矩阵 W5=off,资本维度诚实留空。
+
+- id: 2025-12-04-dji-001
+  date: 2025-12-04
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: DJI 公开敦促联邦机构在 12/23 截止期前启动 NDAA 强制安全审查
+  quote: "DJI Urges Federal Agencies to Initiate NDAA-Mandated Security Review Ahead of December Deadline"
+  quote_type: title
+  url: https://dronelife.com/2025/12/04/dji-urges-federal-agencies-to-initiate-ndaa-mandated-security-review-ahead-of-december-deadline/
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal]
+  note: >-
+    2025 NDAA 条款:若无联邦机构在 2025-12-23 前完成对 DJI 的安全审查,即自动入
+    Covered List——DJI 主动求审而无机构接手,是 002 的直接前因。日期以 URL 内嵌
+    (2025/12/04)自证。
+
+- id: 2025-12-22-dji-002
+  date: 2025-12-22
+  dim: W4
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: 审查逾期未完成,FCC 将全部外国产无人机及关键部件列入 Covered List(新品不再获认证/进口)
+  quote: "DJI is disappointed by the Federal Communications Commission’s action today"
+  quote_type: body
+  url: https://dronelife.com/2025/12/22/fcc-adds-foreign-made-drones-and-components-to-covered-list-citing-national-security-risks/
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [signal, leverage, category]
+  note: >-
+    quote 为文中 DJI 官方声明首句(逐字,curl 核对)。FCC 未单列 DJI 而是一揽子覆盖
+    全部外国产 UAS;已获认证的存量机型不受影响、可继续销售/飞行,但新品被挡在美国
+    市场之外——监管禁令级信号,记 P0。日期以 URL 内嵌(2025/12/22)自证。
+
+- id: 2026-03-26-dji-003
+  date: 2026-03-26
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: Avata 360 全球发布:首款原生 8K 360° FPV 无人机(美国区延后至 3/30)
+  quote: "DJI Avata 360 global launch begins, US delayed again"
+  quote_type: title
+  url: https://dronedj.com/2026/03/26/dji-avata-360-drone-launch-2/
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [category, leverage]
+  note: >-
+    双镜头 1 英寸级传感器、8K/60fps 全景视频——FCC 禁令阴影下产品创新节奏未减。
+    日期以 URL 内嵌(2026/03/26)自证(页面 datePublished 2026-03-27T05:01Z 为
+    美西 3/26 晚,发布日即 3/26)。
+
+- id: 2026-04-23-dji-004
+  date: 2026-04-23
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: 新品 Lito 系列全球发布但不进美国——媒体聚焦「发布即绕开美国市场」成为常态
+  quote: "New DJI Drones Launch Globally, But Not in the U.S."
+  quote_type: title
+  url: https://dronelife.com/2026/04/23/new-dji-drones-launch-globally-but-not-in-the-u-s/
+  fetched_at: "2026-07-12T12:47:37Z"
+  lens_map: [category, signal]
+  note: >-
+    002 的市场面传导实例:Covered List 生效后,DJI 新品(Lito 1/X1 等)全球上市
+    而美国缺席,行业媒体开始按此叙事框架报道。日期以 URL 内嵌(2026/04/23)自证。
