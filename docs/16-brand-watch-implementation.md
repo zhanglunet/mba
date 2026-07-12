@@ -18,7 +18,7 @@
 | **W4** | 半自动扫描进 skill | `/mba <brand> --watch` 单次扫描 SOP 进 SKILL.md;EVOLUTION Phase 2 先消费 events.yaml 再补扫 | 一次重审的 delta 调研直接引用事件流 | ✅ 2026-07-12 **验收达成**:奇安信 v1→v2(见 §5) |
 | **W5** | 首页徽章 + 时间线页(M2) | `build_home_cards.py` 读 watch 产出 P0/P1 徽章(进 REPORTS 生成区 + 漂移 gate)· `/watch/<slug>/` 时间线页 | 徽章与 events.yaml 零漂移 | ✅ 2026-07-12(见 §6) |
 | **W6** | 定期采集(M2) | CCR Routines / cron 周扫,按矩阵扫开启维度 | 13 品牌适用维度覆盖 ≥80% | 🟡 2026-07-12 基建落地:周扫 Routine 已建 + 演练扩覆盖 3→5 品牌(见 §7);**覆盖率 5/13 未达标**,靠周扫滚动逼近 |
-| **W7** | 触发与联动(M3) | 触发规则评估器(30 天窗 P0≥1 / P1≥2)· MCP `get_watch_events` / `record_watch_event` · 订阅链路下发重审建议 | 触发建议精确率 ≥60% | ⬜ |
+| **W7** | 触发与联动(M3) | 触发规则评估器(30 天窗 P0≥1 / P1≥2)· MCP `get_watch_events` / `record_watch_event` · 订阅链路下发重审建议 | 触发建议精确率 ≥60% | ✅ 2026-07-12(见 §8);精确率 n=1 初步达标,每次重审后续账 |
 
 依赖关系:W1 → {W3, W4} → W5 → W6 → W7。W2 与 W3 并行滚动(每接新源先过 W2 验证)。
 
@@ -225,7 +225,7 @@ v1 证据基内)标 v1。徽章(§6)只数**未消费**的 P0/P1,审计一跑徽
 
 - trigger id `trig_015tVDnBhwsD7wLdeiczBPVT`,cron `0 1 * * 1`(UTC,即北京时间
   **每周一 09:00**),每次触发**新开会话**独立执行(不依赖任何旧会话上下文)。
-- Prompt 固化 7 步 SOP(§9 的自动化版):重置 `claude/watch-weekly-scan` 分支 →
+- Prompt 固化 7 步 SOP(§10 的自动化版):重置 `claude/watch-weekly-scan` 分支 →
   按 matrix 增量扫描(只找上次事件之后的新信号,优先 W3/W4/W5 硬维度;curl 走出口
   代理,禁 WebFetch)→ 准入门槛(URL 自证日期 / 逐字 quote / 聚合器只当线索,拿不到
   原文宁可不录)→ 追加 events.yaml(id 顺延,**不写 consumed_by**——那是审计时才标)→
@@ -263,17 +263,62 @@ v1 证据基内)标 v1。徽章(§6)只数**未消费**的 P0/P1,审计一跑徽
 - 开放 leads 依旧(§4.3):移动集采公示(855B JS 壳,需真浏览器)、亚信禁入处罚
   原文、奇安信大行 NDR / 中海油框架。
 
-## 8. 下一步(按 §1 顺序)
+## 8. W7 实现记录(触发与联动,2026-07-12)
+
+### 8.1 运行时触发评估器
+
+- `scripts/watch-tools/evaluate_triggers.py`:滚动 30 天窗(闭区间含窗沿),三条规则
+  任一命中即建议重审——**R1** P0≥1、**R2** P1≥2、**R3** 加权 4×P0+2×P1+0.5×P2 ≥5
+  (PRD §5.3 全量,含此前徽章未实现的加权条)。默认只数**未消费**事件,
+  `--include-consumed` 切 PRD 严格口径;`--as-of / --window-days / --brand / --json`;
+  `--selftest` 12 组断言(窗沿、消费语义、每条规则、未来日期、P3 不计)。
+  退出码恒 0——它是建议工具,不是 gate。
+- **两口径分工的实证**(重要):回测奇安信——其 P1×2(01-31 业绩预告、04-30 年报)
+  距 v2 重审(07-11)已 **>30 天**,窗口口径**不命中**;而未消费口径命中,且 v2 实际
+  |Δ|=0.34 证明该建议是对的。结论:**窗口答"最近热度",未消费答"欠账"**——年报类
+  慢信号靠"未消费"兜底,突发类靠窗口保时效,两口径互补、各自保留
+  (徽章=未消费,评估器=窗口,均已文档化)。
+- SKILL `--watch` 第⑤步已从"口述规则"落为真命令:
+  `python3 scripts/watch-tools/evaluate_triggers.py --brand <slug>`(并补上 R3)。
+
+### 8.2 MCP 双工具 + 订阅链路下发(工具数 14 → 16)
+
+- `get_watch_events(brand, since?, dim?, severity?, unconsumed_only?)`:读事件流
+  (倒序)+ 附**全量**触发评估(评估品牌而非查询子集);只读。
+- `record_watch_event(brand, event)`:录入门槛与 `validate_watch.py` **同套规则的
+  TS 镜像**(`src/watch/store.ts::validateNewEvent`)——事实字段齐且合规、quote ≤100 字、
+  dim 不得落矩阵 off;id 自动顺延 `<date>-<slug>-NNN`;`direction_by` 强制
+  `model-judged`;`consumed_by` 拒收(审计消费时才标)。写入**只追加文本块、
+  不重写文件**(保注释与既有格式)。
+- **下发**:P0 事件即时、或触发规则命中 → `findByBrand` 活跃订阅 →
+  `dispatchNotifications`(`event: watch_alert`,email 主题
+  `MBA watch — <brand> 建议重审`)——复用 `subscribe_brand` 既有管道
+  (PRD §6.3「不加新管道」);无订阅或未命中则静默入库,不打扰。
+- 配置:`MBA_WATCH_DIR`(默认 `./watch`);新依赖 `yaml@^2`。
+  docs/13 §3/§5、e2e 全量工具断言、`check_consistency` 工具数 16 已同步。
+- 测试:`tests/tools/watch-tools.test.ts` 19 例——规则/窗沿/消费语义、get 过滤、
+  record 顺延与追加不重写、8 类非法输入拒收、强制 model-judged、P0 下发、未命中静默;
+  全套 220 通过,typecheck / build 绿。
+
+### 8.3 验收记账(诚实版)
+
+- §1 W7 验收线「触发建议精确率 ≥60%」(PRD §9:建议重审后,重审总分变动 ≥0.3 的
+  比例)。可回测样本目前 **n=1**:qianxin 亮灯(未消费 P1×2)→ v2 重审
+  6.17→5.83(|Δ|=0.34 ≥0.3)→ **1/1,初步达标**。样本量不足是事实,
+  每次重审落地后在本节续账;当前待验证的在册建议:asiainfo / yuanxin / spacex /
+  meituan(4 卡亮灯)。
+- 「P0 推送通知」(M3)管道已具备(record 的 P0 即时下发);真实告警要等品牌被
+  `subscribe_brand` 订阅后自然发生。
+
+## 9. 下一步
 
 1. **W6 覆盖滚动**:周扫 Routine 每周一自动跑;逐步把余下 8 品牌纳入事件流,
    顺带回收 §4.3 / §7.4 的开放 leads;
-2. **W7 触发与联动**:运行时触发评估器(可恢复 PRD 的 30 天滚动窗)+ MCP
-   `get_watch_events` / `record_watch_event` + 订阅链路下发重审建议;
-3. **重审素材已备**:4 卡亮灯——亚信 P0(禁入)+P1(年报)、垣信 P1×3(手机直连
+2. **重审素材已备**:4 卡亮灯——亚信 P0(禁入)+P1(年报)、垣信 P1×3(手机直连
    双事件 + 一箭 20 星)、SpaceX P1×2(IPO)、美团 P1×2(监管 + Q1 减亏),
-   都是现成的 EVOLUTION 输入。
+   都是现成的 EVOLUTION 输入;每次重审落地后回填 §8.3 精确率账。
 
-## 9. 单次扫描操作 SOP(M1 人肉/半自动版)
+## 10. 单次扫描操作 SOP(M1 人肉/半自动版)
 
 ```
 1. 选品牌,读 watch/matrix.yaml 确认开启维度

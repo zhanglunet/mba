@@ -46,7 +46,7 @@ describe('MCP server e2e', () => {
     expect(client.getServerVersion()?.version).toBe(SERVER_VERSION);
   });
 
-  it('registers all 14 tools', async () => {
+  it('registers all 16 tools', async () => {
     const { tools } = await client.listTools();
     const names = tools.map(t => t.name).sort();
     expect(names).toEqual(
@@ -57,10 +57,12 @@ describe('MCP server e2e', () => {
         'get_brand_trend',
         'get_delta_report',
         'get_status',
+        'get_watch_events',
         'list_audits',
         'list_panels',
         'list_subscriptions',
         'propose_audit',
+        'record_watch_event',
         'resume_audit',
         'subscribe_brand',
         'trigger_evolution',

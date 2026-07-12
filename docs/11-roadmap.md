@@ -19,7 +19,7 @@
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
 | 集成测试 | ✅ 已建立 | report-validation.yml + MCP e2e（真实 MCP 协议层） |
 | --dry-run / --panel-merge | ✅ 已实现 | Phase 0 §0.5 / Phase 5M |
-| MCP Server 形态 | ✅ 已发布 npm | packages/mcp-server/ · **14 工具** · **10 面板 / 43 评委** · webhook 接收端 · `resume_audit` 续跑 · **实时联网研究**(`MBA_WEB_SEARCH`) · 158 tests · `npx -y mba-mcp-server@latest` |
+| MCP Server 形态 | ✅ 已发布 npm | packages/mcp-server/ · **16 工具**(含舆情 `get_watch_events`/`record_watch_event`)· **10 面板 / 43 评委** · webhook 接收端 · `resume_audit` 续跑 · **实时联网研究**(`MBA_WEB_SEARCH`) · 220 tests · `npx -y mba-mcp-server@latest` |
 | 演化追踪 | ✅ 完成 | 订阅 + cron + trigger_evolution + delta 报告 + 增量重跑 + webhook/email 通知 |
 
 ### 评委全档分布（按面板覆盖，更新 2026-07-10）

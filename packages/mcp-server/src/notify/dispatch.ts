@@ -28,7 +28,9 @@ export async function dispatchNotifications(
         results.push({ target: 'email', ok: false, detail: 'missing address' });
         continue;
       }
-      const subject = `MBA delta — ${payload.brand} (${signed(payload.overall_delta)})`;
+      const subject = payload.event === 'watch_alert'
+        ? `MBA watch — ${payload.brand} 建议重审`
+        : `MBA delta — ${payload.brand} (${signed(payload.overall_delta)})`;
       const body = buildEmailBody(payload);
       const r = await sendEmail(target.address, subject, body);
       results.push({ target: `email:${target.address}`, ok: r.ok, detail: r.detail });

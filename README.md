@@ -519,7 +519,7 @@ npx -y mba-mcp-server@latest      # 直接跑,或写进下面的 claude_desktop_
 }
 ```
 
-然后直接说"用 mba 审一下 Anthropic",agent 会走 `propose_audit → confirm_audit → get_status → fetch_report`。共 **14 个工具**(8 核心审计 + 6 演化追踪),支持**品牌订阅 + 自动重审 + delta 报告 + webhook/email 通知**——品牌有变化时自动重审并推送。增量重跑让演化审计成本从 ~$3 降到 ~$0.4/次。
+然后直接说"用 mba 审一下 Anthropic",agent 会走 `propose_audit → confirm_audit → get_status → fetch_report`。共 **16 个工具**(8 核心审计 + 6 演化追踪 + 2 舆情监控),支持**品牌订阅 + 自动重审 + delta 报告 + webhook/email 通知**——品牌有变化时自动重审并推送;舆情事件流(`record_watch_event`)在 P0 或触发规则命中时经同一订阅链路下发重审建议(只建议、不改分)。增量重跑让演化审计成本从 ~$3 降到 ~$0.4/次。
 
 设 `MBA_WEB_SEARCH=1` 可让研究阶段用 **Anthropic 服务端实时联网搜索**(带真实来源 URL,写入 `_raw/`),搜索在 Anthropic 侧发生、**不需要沙箱自身出网**,锁死出站策略的环境里也能用。仅研究阶段联网,判审/合成/合并不联网。
 

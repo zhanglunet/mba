@@ -318,8 +318,70 @@ export interface AddJudgeOutput {
   };
 }
 
+// ── Brand Watch(舆情监控,docs/15)──────────────────────────────────────────
+
+export interface WatchEvent {
+  id: string;
+  date: string; // YYYY-MM-DD
+  dim: string; // W1..W9
+  severity: string; // P0..P3
+  direction: string; // pos | neg | neutral | mixed
+  direction_by: 'model-judged';
+  title: string;
+  quote: string; // 逐字引用,≤100 字
+  quote_type?: string; // title | body
+  url: string;
+  fetched_at: string; // ISO UTC
+  lens_map: string[]; // ⊆ {origin, category, leverage, identity, signal}
+  note?: string;
+  consumed_by?: string; // vN — 只在审计消费时标记,record 工具不可写
+}
+
+export interface WatchTriggerEvaluation {
+  as_of: string;
+  window_days: number;
+  include_consumed: boolean;
+  p0: number;
+  p1: number;
+  p2: number;
+  weighted: number;
+  rules_hit: string[];
+  hit: boolean;
+  recommendation: string;
+}
+
+export interface GetWatchEventsInput {
+  brand: string; // 品牌 slug(watch/<slug>/)
+  since?: string; // 只返回该日期(含)之后的事件
+  dim?: string;
+  severity?: string;
+  unconsumed_only?: boolean;
+}
+
+export interface GetWatchEventsOutput {
+  brand: string;
+  count: number;
+  events: WatchEvent[];
+  trigger: WatchTriggerEvaluation;
+}
+
+export interface RecordWatchEventInput {
+  brand: string;
+  event: Omit<WatchEvent, 'id' | 'direction_by' | 'consumed_by'> & { direction_by?: string };
+}
+
+export interface RecordWatchEventOutput {
+  recorded: boolean;
+  id: string;
+  brand: string;
+  trigger: WatchTriggerEvaluation;
+  notified: NotifyResult[];
+  message: string;
+}
+
 export interface ServerConfig {
   store_dir: string;
+  watch_dir: string;
   max_parallel: number;
   max_concurrent_audits: number;
   max_tokens_per_audit_input: number;
