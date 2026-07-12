@@ -67,23 +67,31 @@ reports:
 
   - slug: qianxin
     card_brand: "奇安信 QiAnXin"
-    card_meta: "security-cn-global panel · 6 评委（周鸿祎·张明正·任正非·黄仁勋·马斯克·纳德拉）· 雷达图 + 异议热力图 · R2 辩论"
-    headline: "政务安全龙头:标签在国内是护城河,在国际市场是障碍"
+    card_meta: "security-cn-global panel · EVOLUTION v1→v2 · 首个 watch 事件流驱动重审 · 6 评委 · delta 矩阵 + 雷达图"
+    headline: "首个 watch 流驱动重审:年报锚点校正,营收口径 67 亿→43.92 亿,Signal 全员下调"
+    score_history:
+      - { v: v1, score: 6.17 }
+      - { v: v2, score: 5.83 }
+    versions:
+      - { v: v1, date: 2026-06-26, file: versions/v1_2026-06-26.html }
+      - { v: v2, date: 2026-07-12, current: true }
     brand_cn: 奇安信
     brand_en: QiAnXin Technology
     ticker: 688561.SH
     panel: security-cn-global
-    version: v1
-    audit_date: 2026-06-26
-    score_total: 185
+    version: v2
+    audit_date: 2026-07-12
+    score_total: 175
     score_max: 300
-    score_normalized: 6.17
+    score_normalized: 5.83
     tl_dr: >-
-      中国政务安全市场无可置疑的领导者，80%+ 中央部委客户、67亿RMB营收、科创板上市。
-      security-cn-global 6位评委对 Leverage（均值7.0）基本共识，但 Identity（均值4.5）
-      全卷最低——政务工具标签在国内是护城河，在国际市场是障碍。
-      最大分歧：马斯克（22/50，监管护城河非真正杠杆）vs 任正非（37/50，国家数字主权基础设施价值极高）。
-      185/300 · 6.17/10。
+      EVOLUTION v1→v2,MBA 首个由 Brand Watch 事件流驱动的重审:diff plan 直接消费
+      watch/qianxin/events.yaml 的 11 条可溯源事件。锚点校正(主变化):v1 引 2023 口径
+      约 67 亿营收;watch P1 事件载明 FY2025 营收 43.92 亿(+0.97%)、归母净利 −12.87 亿,
+      亏损未收窄——Signal 全员下调(6.8→5.7)。对冲面:中标扩向金融/医疗/核电/运营商
+      (5 条 watch 中标事件)、安全大模型登顶 CyberSec-Eval——Leverage 小幅回落(7.0→6.5)
+      而非塌方。Origin/Category/Identity 无新证据保留(↔)。任正非 36 最高 vs 马斯克 20 最低。
+      175/300 · 5.83/10(v1: 6.17,↓0.34)。
     has_pdf: false
 
   - slug: kimichat

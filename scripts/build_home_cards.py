@@ -38,6 +38,7 @@ SITE = os.path.join(ROOT, "site")
 META = os.path.join(SITE, "reports-meta.yaml")
 INDEX = os.path.join(SITE, "index.html")
 WHITELIST = os.path.join(SITE, "published-reports.txt")
+WATCH_DIR = os.path.join(ROOT, "watch")
 
 START = "<!-- REPORTS:START — 生成自 site/reports-meta.yaml(scripts/build_home_cards.py)· 勿手改 -->"
 END = "<!-- REPORTS:END -->"
@@ -105,6 +106,39 @@ def sparkline_svg(points, color, polar):
     )
 
 
+def load_watch_pending():
+    """未消费(无 consumed_by)的 P0/P1 计数 per slug(W5,docs/16)。
+    watch/ 缺失时为空 —— 徽章是加分项不是硬依赖;计数只依赖文件内容,漂移 gate 可确定。"""
+    pending = {}
+    for path in sorted(glob.glob(os.path.join(WATCH_DIR, "*", "events.yaml"))):
+        slug = os.path.basename(os.path.dirname(path))
+        try:
+            events = yaml.safe_load(open(path, encoding="utf-8")) or []
+        except Exception:
+            continue
+        p0 = sum(1 for e in events if isinstance(e, dict) and e.get("severity") == "P0" and not e.get("consumed_by"))
+        p1 = sum(1 for e in events if isinstance(e, dict) and e.get("severity") == "P1" and not e.get("consumed_by"))
+        if p0 or p1:
+            pending[slug] = (p0, p1)
+    return pending
+
+
+def render_watch_line(slug, pending):
+    """卡片上的「舆情待审」行:P0/P1 计数 + 触发规则命中时的「建议重审」chip + 时间线链接。
+    P2/P3 永不上卡(docs/15 §5.2);链接浮于拉伸链接之上(.watch-line z-index)。"""
+    if slug not in pending:
+        return ""
+    p0, p1 = pending[slug]
+    chips = ""
+    if p0:
+        chips += f'<span class="wchip wchip-p0">P0×{p0}</span>'
+    if p1:
+        chips += f'<span class="wchip wchip-p1">P1×{p1}</span>'
+    rec = '<span class="wchip wchip-rec">建议重审</span>' if (p0 >= 1 or p1 >= 2) else ""
+    return (f'\n        <div class="watch-line"><span class="wlabel">舆情待审</span>{chips}{rec}'
+            f'<a href="/watch/{slug}/">信号 →</a></div>')
+
+
 def movement_of(m):
     """返回 (badge_html, delta_abs, spark_color, polar)。movement 文本覆盖数值 Δ(跨面板不混算)。"""
     hist = m.get("score_history") or []
@@ -130,7 +164,7 @@ def render_versions(slug, versions):
     return ('<div class="versions"><span class="vlabel">版本</span>' + "".join(links) + "</div>")
 
 
-def render_card(m):
+def render_card(m, pending):
     slug = m["slug"]
     score = m.get("score_normalized")
     score_str = f"{score:.2f}" if isinstance(score, (int, float)) else "—"
@@ -150,6 +184,7 @@ def render_card(m):
         f'          <span class="bc-score">{score_str}</span>{badge}{spark}\n'
         f"        </div>\n"
         f'        <div class="bc-meta">{esc(str(m.get("version", "")))} · {esc(date)}</div>\n'
+        f'{render_watch_line(slug, pending)}\n'
         f'        <p class="bc-headline">{esc(collapse_ws(m.get("headline", "")))}</p>{versions}\n'
         f"      </div>"
     )
@@ -213,7 +248,8 @@ def build_block():
 
     # 监控台默认序:审计日期倒序,平局按分数倒序(确定性)
     ordered = sorted(reports, key=lambda r: (fmt_date(r.get("audit_date")), r.get("score_normalized") or 0), reverse=True)
-    cards = "\n".join(render_card(m) for m in ordered)
+    pending = load_watch_pending()
+    cards = "\n".join(render_card(m, pending) for m in ordered)
     sort_bar = (
         '      <div class="sort-bar"><span class="sort-label">品牌动向</span>'
         '<span class="sort-controls">排序:'
