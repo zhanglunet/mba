@@ -643,6 +643,8 @@ HTTP GET 直接拿,CORS 全开,无 token。
 - /pitch.html — 5 分钟现场讲稿
 - /how-it-works.html — 7 × 5 打分体系详解 + 流程图
 - /reports/{slug}/ — 单个 audit 报告的人类可读 HTML 版
+- /watch/ — Brand Watch 舆情信号总览(待审 P0/P1 + 触发状态;只建议、不改分)
+- /watch/{slug}/ — 单品牌舆情事件时间线(每条直链原文)
 
 ## Quick start
 
