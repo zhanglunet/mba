@@ -14,6 +14,7 @@ brands:
   lenovo:        {W1: on,   W2: on,  W3: core, W4: on,   W5: core, W6: core, W7: on,   W8: on,   W9: core}
   chengshi-auto: {W1: on,   W2: off, W3: core, W4: on,   W5: off,  W6: on,   W7: on,   W8: on,   W9: core}
   anthropic:     {W1: core, W2: core, W3: on,  W4: core, W5: on,   W6: on,   W7: on,   W8: core, W9: core}
+  openai:        {W1: core, W2: core, W3: on,  W4: core, W5: on,   W6: core, W7: on,   W8: core, W9: core}
   dji:           {W1: core, W2: on,  W3: on,   W4: core, W5: off,  W6: core, W7: on,   W8: core, W9: core}
   qianxin:       {W1: on,   W2: off, W3: core, W4: core, W5: core, W6: off,  W7: on,   W8: core, W9: on}
   kimichat:      {W1: core, W2: core, W3: off, W4: on,   W5: on,   W6: core, W7: core, W8: core, W9: core}

@@ -1,5 +1,5 @@
 {
-  "count": 80,
+  "count": 81,
   "items": [
     {
       "type": "report",
@@ -104,6 +104,14 @@
       "text": "EVOLUTION v2:消费 watch 流全部 10 条事件——组网从里程碑变成节奏(第七批、长八甲一箭 20 星、在轨 238 颗、年度目标 324 颗),Signal 全员上调(4.8→5.8);手机直连十日内从试验星 到国内首例无改造存量手机 5G 语音视频通话,Category 6.0→6.3。但国产商业火箭运力短板被媒体 点名、商业化收入仍无披露,Leverage 重审后全员持平(6.5);任正非 9 vs 马斯克△ 4 的 Δ5 分歧 原样保留。总分 165→173(5.50→5.77,↑0.27)。",
       "url": "/reports/yuanxin/",
       "api_url": "/api/reports/yuanxin.json"
+    },
+    {
+      "type": "report",
+      "slug": "openai",
+      "title": "OpenAI · v1",
+      "text": "OpenAI 以 193/250(7.72)完成 vc-en 面板 FRESH 审计:Category 9.2 全卷最高—— ChatGPT 900M 周活即品类本身,Codex 靠打包进订阅半年翻盘至 500 万周活,并握有 AGENTS.md(已入 Linux Foundation)的品类标准起草权。最大分歧在 Leverage(Δ4): 安德森 9 读作本世代最大分发杠杆;蒂尔△ 5 读作「月入 $2B 仍烧钱 = 利润被竞争 实时吃掉,$250B Azure 承诺是负债」。最弱 Identity 6.2:结构 11 年三易、五天治理 危机、Sora 上而复关。两位△评委(蒂尔 = 创立期捐赠人、霍夫曼 = 前董事)分别给出 全场最低分与 Identity 并列最低分——渊源未变成溢价。",
+      "url": "/reports/openai/",
+      "api_url": "/api/reports/openai.json"
     },
     {
       "type": "panel",

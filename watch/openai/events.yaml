@@ -1,0 +1,127 @@
+# watch/openai/events.yaml — OpenAI 舆情事件流
+# OpenAI 品牌监控首批(2026-07-12,产品聚焦 Codex)。schema 见 docs/16 §2。
+#
+# 注:openai.com 在本环境出口 allowlist 之外(curl 403),官方稿(融资公告
+# accelerating-the-next-phase-ai、IPO 声明等)本批未能直接核对,一律改用
+# URL 内嵌日期的权威媒体稿(CNBC / TechCrunch / 9to5Mac),标题与关键正文
+# 逐字 curl 核对。官方稿 URL 记在 note 里,供后续出口放行后回溯。
+
+- id: 2026-02-09-openai-001
+  date: 2026-02-09
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: CNBC 曝 Altman 内部信:ChatGPT 重回 10% 月增长,Codex 周环比增约 50%、内部图表显示正蚕食 Claude Code 市场份额
+  quote: "Sam Altman touts ChatGPT growth as OpenAI nears $100 billion funding"
+  quote_type: title
+  url: https://www.cnbc.com/2026/02/09/sam-altman-touts-chatgpt-growth-as-openai-nears-100-billion-funding.html
+  fetched_at: "2026-07-12T14:48:21Z"
+  lens_map: [signal, category]
+  note: >-
+    CNBC 独家(内部 Slack 消息 + 截图):Altman 称 ChatGPT "back to exceeding 10%
+    monthly growth"、Codex 增长 "insane"(周环比约 +50%),一张内部数据图表显示
+    Codex 正蚕食 Claude Code 份额;前一周刚发 Codex 新模型 GPT-5.3-Codex 与 Mac
+    独立 app;时值 ~1000 亿美元融资收尾。正文已 curl 逐字核对;日期以 URL 内嵌
+    (2026/02/09)自证。Sherwood News 同日转述稿佐证(sherwood.news,无日期 URL,
+    curl 核对 published 2026-02-09)。
+
+- id: 2026-03-31-openai-002
+  date: 2026-03-31
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 完成创纪录 1220 亿美元融资、投后估值 8520 亿美元(2 月宣布 1100 亿后扩额关闭)
+  quote: "OpenAI closes record-breaking $122 billion funding round as anticipation builds for IPO"
+  quote_type: title
+  url: https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html
+  fetched_at: "2026-07-12T14:48:21Z"
+  consumed_by: v1
+  lens_map: [signal, leverage]
+  note: >-
+    SoftBank 领投,a16z / D. E. Shaw Ventures 等参投;CNBC 称其月收入 20 亿美元、
+    2025 年收入 131 亿美元、尚未盈利,ChatGPT 周活 9 亿+(订阅 5000 万+)。与
+    anthropic-001(2026-05-28 Series H 投后 9650 亿反超 OpenAI)构成同赛道估值
+    竞赛坐标。官方稿 openai.com/index/accelerating-the-next-phase-ai(出口 403,
+    待回溯)。日期以 URL 内嵌(2026/03/31)自证。
+
+- id: 2026-06-01-openai-003
+  date: 2026-06-01
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: 佛罗里达州总检察长起诉 OpenAI 并寻求 Altman 个人担责:指控明知 ChatGPT 不安全仍照常营销(首个州级诉讼)
+  quote: "Florida AG sues OpenAI, seeks to hold CEO Altman personally liable for alleged harms"
+  quote_type: title
+  url: https://www.cnbc.com/2026/06/01/florida-ag-open-ai-altman-lawsuit.html
+  fetched_at: "2026-07-12T14:48:21Z"
+  lens_map: [signal, identity]
+  note: >-
+    83 页诉状指控 ChatGPT 教唆枪击"deadly rampages"、驱使易感人群自杀、致未成年
+    成瘾,寻求 Altman 以 CEO 行为个人担责("utter disregard for the risk to human
+    life")。州级安全诉讼第一单;后续 6/12 CNBC 报道 OpenAI 称正与多州总检察长
+    "建设性"接触(cnbc.com/2026/06/12/openai-says-its-engaging-constructively-
+    with-state-ags-.html,标题已核对),多州 AG 行动为开放线索待回溯。日期以
+    URL 内嵌(2026/06/01)自证。
+
+- id: 2026-06-02-openai-004
+  date: 2026-06-02
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: Codex 发布六款白领职业插件,官方披露周活破 500 万(自 2 月桌面 app 发布以来增 6 倍+)
+  quote: "OpenAI launches new Codex tools for white-collar work"
+  quote_type: title
+  url: https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/
+  fetched_at: "2026-07-12T14:48:21Z"
+  consumed_by: v1
+  lens_map: [category, leverage]
+  note: >-
+    六款职业插件:数据分析/创意生产/销售/产品设计/股票投资/投行;随插件发布内部
+    使用报告,官方博客称 "Codex now has more than 5 million weekly active users,
+    up more than 6x since the launch of the desktop app in February",知识工作者
+    已占约 20% 用户、增速为开发者 3 倍+ —— Codex 从编码工具向通用 agent 品类扩张
+    的关键一步(对标 Anthropic 2 月企业 agents 计划)。日期以 URL 内嵌
+    (2026/06/02)自证。
+
+- id: 2026-06-08-openai-005
+  date: 2026-06-08
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 向 SEC 秘密递交 IPO 注册文件(上一轮投后 8520 亿美元;晚于 Anthropic 约一周)
+  quote: "OpenAI files confidentially for IPO, following Anthropic"
+  quote_type: title
+  url: https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/
+  fetched_at: "2026-07-12T14:48:21Z"
+  consumed_by: v1
+  lens_map: [signal, leverage]
+  note: >-
+    公司以博客自宣(称预期消息泄露),已向 SEC 提交 draft registration statement;
+    自述"未定时间,可能还要一阵"("it may be a while")。TechCrunch 同稿引 WSJ:
+    近期错失自身用户/收入目标、CFO Sarah Friar 对数据中心开支可持续性有担忧 ——
+    IPO 叙事与烧钱压力并行。与 002(融资)构成资本线闭环坐标。日期以 URL 内嵌
+    (2026/06/08)自证。
+
+- id: 2026-07-09-openai-006
+  date: 2026-07-09
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 发布 GPT-5.6(Sol/Terra/Luna 三档,覆盖 ChatGPT/Codex/API)并推 ChatGPT Work;Codex 并入新版 ChatGPT 桌面 app
+  quote: "OpenAI unveils ChatGPT Work agent, GPT-5.6 models now available"
+  quote_type: title
+  url: https://9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-today-watch-here/
+  fetched_at: "2026-07-12T14:48:21Z"
+  lens_map: [category, leverage, signal]
+  note: >-
+    GPT-5.6 三档 6 月末预告、当日上线(Sol 旗舰 / Terra 均衡 / Luna 轻量);同场
+    发布 ChatGPT Work agent、内置 Codex 的新版桌面 app(原 Codex app 并入)与
+    hosted sites 服务 —— Codex 从独立 app 升级为 ChatGPT 桌面全家桶组件。9to5Mac
+    正文已 curl 核对;官方稿在 openai.com(出口 403,待回溯)。日期以 URL 内嵌
+    (2026/07/09)自证。

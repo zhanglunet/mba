@@ -41,9 +41,9 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 ![MBA · Metric Brand Auditor — 项目介绍封面](docs/screenshots/presentation.png)
 
-**已发布报告（13 品牌 · 21 版本）[mbabrand.com](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
+**已发布报告（14 品牌 · 24 版本）[mbabrand.com](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
 
-**当前榜首**:SpaceX **8.76**(vc-en · v2,史上最大 IPO 补上公开市场验证)· Hermès 8.64(luxury-en)· DJI 7.44(cross-border)。实时榜单、全部 13 品牌 21 个版本、舆情信号与版本轨迹见 [mbabrand.com](https://mbabrand.com)(本表不再静态维护,以免与站点漂移)。
+**当前榜首**:SpaceX **8.76**(vc-en · v2,史上最大 IPO 补上公开市场验证)· Hermès 8.64(luxury-en)· DJI 7.44(cross-border)。实时榜单、全部 14 品牌 24 个版本、舆情信号与版本轨迹见 [mbabrand.com](https://mbabrand.com)(本表不再静态维护,以免与站点漂移)。
 
 **黑客松 5 分钟 Pitch 稿** · [Markdown](docs/hackathon/pitch-5min.md) · [HTML](docs/hackathon/pitch-5min.html)
 
@@ -543,7 +543,7 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 
 - 想读流水线的人 → `metric-brand-auditor/SKILL.md`(主手册,~1000 行)
 - 想要系统化的设计 / 使用 / 扩展文档 → [`docs/`](docs/)(01-prd → 08-extending,索引见 `docs/README.md`)
-- 想看已发布的报告 → [`mbabrand.com`](https://mbabrand.com)(13 品牌 21 版本,含 SpaceX / Hermès / 美团 / Anthropic / DJI 等)或直接看 [`published/reports/`](published/reports/)
+- 想看已发布的报告 → [`mbabrand.com`](https://mbabrand.com)(14 品牌 24 版本,含 SpaceX / OpenAI / Hermès / 美团 / Anthropic 等)或直接看 [`published/reports/`](published/reports/)
 - 想加一个新维度 → `metric-brand-auditor/references/dimensions.md`
 - 想改评委的打分模板 → `metric-brand-auditor/references/judge-prompt-template.md`
 - 想换 HTML 报告的图表样式 → `metric-brand-auditor/references/html-report-template.md`

@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OpenAI — Brand Influence Review v1 · MBA</title>
+<meta name="description" content="vc-en panel FRESH audit of OpenAI (brand-wide, product focus: Codex). v1: 193/250 · 7.72/10. Judges: pmarca / paulg / pthiel△ / naval / rhoffman△. Audit date: 2026-07-12." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --green: #1a7a4a;
+  --blue: #1a4a7a;
+  --warn: #d97706;
+  --vcen: #0f4c5c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 56px 28px 96px; }
+header {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; }
+
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+
+.actions { counter-reset: action-counter; margin-bottom: 32px; }
+.action-phase { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 20px 0 10px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--vcen); color: #fff; margin-bottom: 20px; }
+.disclosure-box { background:#fff; border:1.5px solid #e0ddd8; border-left:3px solid var(--warn); border-radius:6px; padding:16px 20px; margin-bottom:28px; font-size:13.5px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark">MBA<span class="dot">.</span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
+  </header>
+
+  <div class="report-meta">Brand Influence Audit · <strong>v1 · FRESH</strong> · 2026-07-12 · 品牌统一评（OpenAI） · 产品聚焦 Codex（编码 agent 产品线）</div>
+  <h1 class="brand-title">OpenAI</h1>
+  <p class="report-subtitle">"品类即品牌"的极限样本 · ChatGPT 900M 周活 · Codex 分发翻盘 · S-1 已递交</p>
+
+  <div class="panel-badge">🧭 vc-en · 5-Judge Panel · pthiel△ / rhoffman△ 有据披露</div>
+
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">7.72</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10</div>
+    </div>
+    <div>
+      <div class="score-label">总分</div>
+      <div class="score-sub">193 / 250 <span class="score-tag">FRESH v1</span></div>
+      <div style="margin-top:8px;">
+        <div class="score-label">评委数</div>
+        <div class="score-sub">5 <span class="score-tag">vc-en</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="score-label">最强维度</div>
+      <div class="score-sub">Category 9.2</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Identity 6.2</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      TL;DR：ChatGPT 即品类本身（900M 周活 · $852B 估值 · 月入 $2B）；Codex 靠打包进订阅完成分发翻盘（5M 周活）。最大分歧在 Leverage（Δ4：安德森 9 vs 蒂尔△ 5——史上最大杠杆，还是军备竞赛账单）；最弱在 Identity（6.2：结构三易其形，"我们是谁"仍在被下一次重组修订）。
+    </div>
+  </div>
+
+  <div class="disclosure-box">
+    <strong>△ 评委利益披露（详见 Legal 段与 reviews/ 文件头部）</strong>：
+    <strong>彼得·蒂尔</strong>为 OpenAI 2015 年创立期捐赠人（TechCrunch 2015-12-11 逐字名单）；
+    <strong>里德·霍夫曼</strong>为 OpenAI 早期捐赠人、前董事会成员，2023-03 因利益冲突退出（CNBC）。
+    两人以「△ 有据披露」纳入评分，非利益冲突回避项；本卷蒂尔△给出全场最低分（35/50），霍夫曼△在 Identity 给出并列最低分（6）——渊源没有变成溢价。
+    另：保罗·格雷厄姆存在邻近关联（Jessica Livingston 为创始捐赠人之一），非△项，已在其 review 头部标注。
+  </div>
+
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Lens</th>
+        <th>马克·安德森</th>
+        <th>保罗·格雷厄姆</th>
+        <th>彼得·蒂尔△</th>
+        <th>纳瓦尔</th>
+        <th>里德·霍夫曼△</th>
+        <th>Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td>
+        <td>8</td>
+        <td class="cell-lo">7</td>
+        <td>8</td>
+        <td>8</td>
+        <td class="cell-hi">9</td>
+        <td>8.0</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td>
+        <td class="cell-hi">10</td>
+        <td>9</td>
+        <td>9</td>
+        <td>9</td>
+        <td>9</td>
+        <td>9.2</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td>
+        <td class="cell-hi">9</td>
+        <td>7</td>
+        <td class="cell-lo">5</td>
+        <td>8</td>
+        <td>7</td>
+        <td>7.2</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td>
+        <td class="cell-hi">7</td>
+        <td class="cell-lo">6</td>
+        <td class="cell-lo">6</td>
+        <td class="cell-lo">6</td>
+        <td class="cell-lo">6</td>
+        <td>6.2</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-lo">7</td>
+        <td>8</td>
+        <td>8</td>
+        <td>8.0</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td>
+        <td>43</td>
+        <td>37</td>
+        <td>35</td>
+        <td>39</td>
+        <td>39</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-family:ui-sans-serif,sans-serif;font-size:14px;"><strong>Score Total: 193 / 250</strong> · <strong>Score Normalized: 7.72 / 10</strong></p>
+
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 5 评委 × 5 镜头</div>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+    </div>
+  </div>
+
+  <h2>Dissent Heatmap / 异议热力图</h2>
+  <div class="heatmap">
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:70%;width:20%;background:#1a7a4a;">8.0 avg</div>
+        <div class="heatmap-bar" style="left:70%;width:20%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 7 – max 9"></div>
+        <span class="heatmap-range">范围 7–9 · Δ2</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:90%;width:10%;background:#1a7a4a;">9.2</div>
+        <div class="heatmap-bar" style="left:90%;width:10%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 9 – max 10"></div>
+        <span class="heatmap-range" style="right:12%;">范围 9–10 · Δ1 ⭐ 全卷最高 · 近满分共识</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:50%;width:40%;background:#a3705a;">7.2 avg</div>
+        <div class="heatmap-bar" style="left:50%;width:40%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 5 – max 9"></div>
+        <span class="heatmap-range">范围 5–9 · Δ4 ★ 最大分歧</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:10%;background:#c1440e;">6.2</div>
+        <div class="heatmap-bar" style="left:60%;width:10%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 6 – max 7"></div>
+        <span class="heatmap-range">范围 6–7 · Δ1 ★★ 最弱（没有分歧的低分）</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:70%;width:20%;background:#6b7280;">8.0 avg</div>
+        <div class="heatmap-bar" style="left:70%;width:20%;background:transparent;border:2px solid #c1440e;border-radius:3px;" title="min 7 – max 9"></div>
+        <span class="heatmap-range">范围 7–9 · Δ2</span>
+      </div>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>结构读法</strong>：分歧不在"这家公司强不强"，而在同一组事实的两种读法。Leverage Δ4 是全卷唯一真分歧——900M 周活分发 + Codex 捆绑 + $250B/$500B 算力承诺，安德森读作"本世代最大杠杆"（9），蒂尔△读作"军备竞赛账单，利润被竞争实时吃掉"（5）。Identity 是另一种危险形态：<strong>没有分歧的低分</strong>——四位评委四条推理路径（taste / 定态乐观 / authenticity / 治理传记）抵达同一个 6。
+    </div>
+  </div>
+
+  <h2>影响力构造 / Influence Map · Leverage Map</h2>
+  <div class="flow-diagram">
+    <pre>
+非共识起源（2015 · "AGI 可以现在造" · $1B 捐款 · 名单：Musk/Thiel△/Livingston…）
+      │
+      ▼
+ChatGPT 时刻（2022-11 · research preview 被用户拽成产品 · 2 个月 1 亿人）
+      │
+      ├──→ 品类所有权：ChatGPT = AI 助手品类本身（900M 周活 · >50M 订阅）
+      │        │
+      │        ▼
+      │   分发飞轮：900M 周活消费面 → 任何新产品的零成本首发渠道
+      │        │
+      │        ▼
+      │   ✦ Codex 分发翻盘（产品聚焦）：CLI 开源(2025-04) → 云 agent(05) →
+      │     GPT-5-Codex(09) → 5M 周活(2026-06) · 打包进订阅无独立价签 ·
+      │     AGENTS.md 由 OpenAI 发起 → Linux Foundation 公共标准（品类宪法起草权）
+      │        │
+      │        ▼
+      │   ⚠ 捕获未证明：reach ≠ capture（无价签 · 开发者份额回落）
+      │     模型层收敛（SWE-bench 窄带）→ 差异化转向 harness/分发 —— 杠杆两读（Δ4）
+      │
+      └──→ 算力底座：微软 $13B → 重组后 27% · $250B Azure 承诺 · Stargate ≤$500B
+             —— 史上最大杠杆，同时是史上最大固定成本承诺
+                  │
+                  ▼
+          资本与治理层：11 年三换结构 · 2023-11 五天危机 · $122B 轮($852B) · S-1
+                  │
+                  ▼
+          ⚠ 单一张力：品类王冠(9.2)与身份系统(6.2)之间 3.0 分的裂缝
+            —— 估值王冠已被 Anthropic 摘走（$965B vs $852B, 2026-05-28）
+                  │
+                  ▼
+          品牌叙事层（全球现象级 · 品类即品牌 · "Open"之名的语义债未清）
+    </pre>
+  </div>
+
+  <h2>评委打分卡 / Judge Scorecards（v1）</h2>
+  <div class="judge-grid">
+
+    <div class="judge-card">
+      <div class="judge-name">马克·安德森 pmarca</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">a16z 联合创始人 · software eats the world</div>
+      <div class="judge-total" style="color:var(--green);">43</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:100%"></div></div><span class="judge-score">10</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+      </div>
+      <div class="judge-quote">"市场把产品从实验室拽到 900M 周活——钱已经开口了（$2B/月）。品牌的任务只剩：别被自己的鞋带绊倒。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">保罗·格雷厄姆 paulg</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">YC 联合创始人 · 邻近关联已披露（非△）</div>
+      <div class="judge-total">37</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">"史上最快的罗盘，还没回答最老的问题：default alive or default dead？Codex 的 reach 是租来的，热爱才是股权。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">彼得·蒂尔 pthiel △</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Founders Fund · OpenAI 2015 创立期捐赠人（△披露）</div>
+      <div class="judge-total" style="color:var(--accent);">35</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最低分△</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%;background:#d97706;"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%;background:#d97706;"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:50%;background:#d97706;"></div></div><span class="judge-score">5</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"全世界最有价值的 AI 公司，至今没有证明它能逃离竞争。其余都是噪音。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">纳瓦尔 naval</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">AngelList 联合创始人 · leverage 视角</div>
+      <div class="judge-total">39</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">"最接近'边睡边赚'的资产，配了一台永远不能睡觉的跑步机——品牌的下一个十年，取决于哪一个先停。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">里德·霍夫曼 rhoffman △</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">LinkedIn 联合创始人 · OpenAI 早期捐赠人/前董事（△披露）</div>
+      <div class="judge-total">39</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%;background:#d97706;"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%;background:#d97706;"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%;background:#d97706;"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">"品牌的治理传记，三次改写，仍未定稿——Identity 这一格我下手最重，因为我看得最近。"</div>
+    </div>
+
+  </div>
+
+  <h2>R2 对话：核心分歧 / Dissent Dialogues</h2>
+  <p style="font-size:12px;color:var(--muted);">（评委发言均为 AI 基于其公开发表资料的 in-character 模拟，非本人真实意见；英文短语逐字出自各评委已核验语料。）</p>
+
+  <h3>蒂尔△ vs 安德森：史上最大品类，还是史上最贵竞争？（Leverage Δ4）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">彼得·蒂尔△（利益披露：OpenAI 2015 年创立期捐赠人）</div>
+      <div class="dialogue-text">"'Capitalism and competition are antonyms.'（Masters 对我 2012 年讲课的笔记）。看数字：月收入 20 亿美元，仍在烧钱——收入巨大而利润为零，这是完全竞争的教科书症状。他们承诺再买 2500 亿美元的 Azure、四年最多 5000 亿的 Stargate：这不是护城河，这是军备竞赛的账单。我是 2015 年出资人之一，我比谁都希望自己错——但十一年过去，这家公司还没证明它能逃离竞争。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">马克·安德森</div>
+      <div class="dialogue-text">"Peter，你把账单读成了弱点，我读成了入场费。这个市场大到'the market pulls product out of the startup'（2007）按字面发生——九亿人每周回来，没人给他们投过一分钱广告。'Never, ever say that you have no competitors'（2007）：Anthropic 和 Google 涌进来，恰恰证明这是本世代最大的一次 software eats the world。杠杆我给 9，扣的那 1 分给资本——钱从来不是成就。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">纳瓦尔（折中）</div>
+      <div class="dialogue-text">"你们说的是同一台机器的两面。一次训练、九亿人使用，是人类最接近零边际成本智力的资产——这是 Marc 的面；但这份资产拴着 permissioned 的资本和算力，不许它的主人睡觉——这是 Peter 的面。'Wealth is assets that earn while you sleep.'（2019）——资产是真的，跑步机也是真的。"</div>
+    </div>
+  </div>
+
+  <h3>格雷厄姆 vs 安德森 vs 纳瓦尔：Codex——分发的胜利，还是心智的失守？（产品聚焦）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">保罗·格雷厄姆</div>
+      <div class="dialogue-text">"Codex 半年到 500 万周活，漂亮。但捆绑买来的是到达，不是热爱——我看到的对比是：深度与大代码库的心智在 Claude Code 那边，Codex 拿到的是 reach 和企业铺开（The New Stack 的原话口径）。开发者份额还在回落。种子用户占比下滑时我总要问：是池子变大了，还是最该爱它的人转身了？"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">马克·安德森</div>
+      <div class="dialogue-text">"pg，你低估了分发这件事本身的品位。把 agent 打包进九亿人已经在用的订阅里，让它'reached scale faster than anything else in the category'——这不是失守，这是平台公司唯一正确的打法。AGENTS.md 成了 Linux Foundation 的标准，四家竞品三家原生读它：品类的宪法是 OpenAI 起草的。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">纳瓦尔</div>
+      <div class="dialogue-text">"宪法起草权是荣耀，不是股权——公共标准锁定不了任何人，Claude Code 到今天还读自己的 CLAUDE.md。Codex 真正的考题是把 900M 周活的 reach 铸成只有 OpenAI 能赢的游戏；在那之前，5M 周活里有多少是'顺手用'，多少是'离了它不行'，这个比值比规模重要十倍。"</div>
+    </div>
+  </div>
+
+  <h3>霍夫曼△ vs 格雷厄姆：治理传记是负债，还是已付学费？（Identity 6.2）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">里德·霍夫曼△（利益披露：OpenAI 早期捐赠人、前董事，2023 年因利益冲突退出）</div>
+      <div class="dialogue-text">"Identity 这一格我给 6，是全场并列最低——我看得最近，所以下手最重。十一年三次结构重写，一次五天的治理心脏骤停，每一步都有道理，连起来读，品牌对外许诺的'我们是谁'一直在被下一次重组修订。但我也提供一个内部修正：2023 年那五天真正证明的是这家公司的网络——员工、投资人、伙伴在 120 小时内重构了治理。网络比章程更早成熟。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">保罗·格雷厄姆</div>
+      <div class="dialogue-text">"Reid，网络救得了公司，救不了身份。我的测试很简单：一件用户热爱的事，做得清楚。ChatGPT 通过，OpenAI 不通过——同时是七家公司，Sora 上了又关，编码 agent 长出 every role 的野心。'The only essential thing is growth.'（2012）我说过，但增长是罗盘不是目的地；罗盘转得太快的船，叫打转。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">彼得·蒂尔△</div>
+      <div class="dialogue-text">"更冷的读法：'In a future of definite optimism, you get underwater cities and cities in space. In a world of indefinite optimism, you get finance.'（Masters' notes, 2012）。一家以使命立身的机构，把自己的成年礼办成了 S-1——从确定的未来漂向金融，这不是学费，这是方向。"</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议</h2>
+  <div class="actions">
+    <div class="action-phase">立即执行（0-30 天）</div>
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>把"治理传记"从回避项改为路演主叙事（承霍夫曼△）</strong>
+        三次重组 + 一次危机，主动讲成"结构终于追上使命"的完成时，并给出可验证承诺（Foundation 26% 的用途、AGI 独立判定小组的构成）——Identity 6.2 是全卷最大失分池，也是 IPO 前唯一能快速修复的镜头。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>公布 Codex 的"热爱指标"，终结"reach ≠ love"质疑（承格雷厄姆/纳瓦尔）</strong>
+        在 5M 周活之外，公开接受率、复用率、付费转化（credits 口径）——用一组 craft 指标证明捆绑到达的用户正在变成离不开的用户。
+      </div>
+    </div>
+    <div class="action-phase">中期执行（30-90 天）</div>
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>为"利润没有被竞争掉"找一条可证明的业务线（承蒂尔△）</strong>
+        企业 agent（ChatGPT Business/Enterprise + Codex）是最近的候选——在 S-1 生效前给公开市场一个"单元经济为正"的样本，把估值从品类故事锚回捕获事实。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>收缩叙事，给"我们不做什么"发言权（承纳瓦尔/安德森）</strong>
+        Sora 关停证明纪律仍在——把它讲出来，并公开产品线的取舍原则；一个敢说"不做"的 900M 周活品牌，身份分自己会涨。
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>把 AGENTS.md 的公共地位转化为生态位而非让渡（产品聚焦）</strong>
+        OpenAI 是起草者——围绕标准做认证、工具链与企业治理层，让"宪法起草权"沉淀为切换成本，而不是继续作为无差别公共品供竞品通行。
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sources">Sources</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://techcrunch.com/2015/12/11/non-profit-openai-launches-with-backing-from-elon-musk-and-sam-altman/">OpenAI 非营利创立（出资名单含 Thiel△）– TechCrunch (2015-12-11)</a></li>
+      <li><a href="https://www.theguardian.com/technology/2023/feb/02/chatgpt-100-million-users-open-ai-fastest-growing-app">ChatGPT 两个月 1 亿用户 – The Guardian (2023-02-02)</a></li>
+      <li><a href="https://www.cnbc.com/2023/03/03/reid-hoffman-steps-down-from-openai-board-to-avoid-potential-conflicts.html">Reid Hoffman 因利益冲突退出 OpenAI 董事会 – CNBC (2023-03-03)</a></li>
+      <li><a href="https://www.npr.org/2023/11/22/1214621010/openai-reinstates-sam-altman-as-its-chief-executive">Altman 复职、新董事会 – NPR (2023-11-22)</a></li>
+      <li><a href="https://www.cnbc.com/2025/01/21/trump-ai-openai-oracle-softbank.html">Stargate：首期 $100B、四年至多 $500B – CNBC (2025-01-21)</a></li>
+      <li><a href="https://techcrunch.com/2025/04/16/openai-debuts-codex-cli-an-open-source-coding-tool-for-terminals/">Codex CLI 开源 – TechCrunch (2025-04-16)</a></li>
+      <li><a href="https://techcrunch.com/2025/05/16/openai-launches-codex-an-ai-coding-agent-in-chatgpt/">Codex 云端 agent 进 ChatGPT – TechCrunch (2025-05-16)</a></li>
+      <li><a href="https://www.cnbc.com/2025/08/07/openai-launches-gpt-5-model-for-all-chatgpt-users.html">GPT-5 全量发布 – CNBC (2025-08-07)</a></li>
+      <li><a href="https://techcrunch.com/2025/09/15/openai-upgrades-codex-with-a-new-version-of-gpt-5/">GPT-5-Codex – TechCrunch (2025-09-15)</a></li>
+      <li><a href="https://www.cnbc.com/2025/10/28/open-ai-for-profit-microsoft.html">PBC 重组：Foundation 26% / 微软 27% / $250B Azure – CNBC (2025-10-28)</a></li>
+      <li><a href="https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html">$122B 轮 · $852B 估值 · 月入 $2B · 关停 Sora – CNBC (2026-03-31)</a></li>
+      <li><a href="https://www.forbes.com/sites/aliciapark/2026/04/27/openai-and-microsoft-end-exclusive-partnership-and-revenue-sharing/">微软-OpenAI 独家关系终止 – Forbes (2026-04-27)</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html">Anthropic $965B 超越 OpenAI – CNBC (2026-05-28)</a></li>
+      <li><a href="https://www.constellationr.com/insights/news/openai-touts-broadening-codex-usage-5-million-weekly-active-users">Codex 5M 周活 · 知识工作者 20% – Constellation Research (2026-06-02)</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/05/linkedin-co-founder-reid-hoffman-leaving-microsoft-board-after-decade.html">Hoffman 离开微软董事会（"early funder of OpenAI"）– CNBC (2026-06-05)</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html">OpenAI 秘密递交 S-1 – CNBC (2026-06-08)</a></li>
+      <li><a href="https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/">跟随 Anthropic 递交 IPO – TechCrunch (2026-06-08)</a></li>
+      <li><a href="https://thenewstack.io/claude-code-vs-cursor-vs-codex-vs-antigravity-2026/">Claude Code vs Cursor vs Codex vs Antigravity 六个月复盘 – The New Stack (2026-06)</a></li>
+      <li><a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/">Claude Fable 5 发布（竞争语境，watch 复用）– TechCrunch (2026-06-09)</a></li>
+      <li><a href="https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/">Fable/Mythos 出口管制下线（竞争语境，watch 复用）– Fortune (2026-06-13)</a></li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Legal, IP &amp; Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-07-12 的公开资料（FRESH · open-web --quick；全部关键事实经出口代理 curl 原文核对，清单见 _raw/research_v1.md；openai.com 对本环境回 403，官方稿以权威媒体稿代证并记 URL 待回溯）。OpenAI、ChatGPT、GPT、Codex、Sora 及相关名称与商标归 OpenAI 及其关联实体所有；本报告与 OpenAI 无任何赞助、授权或合作关系，引用仅为识别、评论与研究。<strong>评委利益披露（△）</strong>：彼得·蒂尔（Peter Thiel）为 OpenAI 2015 年创立期捐赠人（TechCrunch 2015-12-11 逐字名单）；里德·霍夫曼（Reid Hoffman）为 OpenAI 早期捐赠人、前董事会成员，2023-03-03 因利益冲突退出董事会（CNBC 2023-03-03；CNBC 2026-06-05）。两人视角以「△ 有据披露」方式纳入评分并在矩阵表头、对话与 reviews/ 文件头部同步标注，非利益冲突回避项；打分经"利益无关者会不会打出同样的分"自检——本卷蒂尔△给出全场最低分（35/50），霍夫曼△在 Identity 给出并列最低分（6）。邻近关联披露（非△）：保罗·格雷厄姆与 OpenAI 无投资关系，但 Jessica Livingston（YC 联合创始人、其配偶）为 2015 年创始捐赠人之一，已在其 review 头部标注。5 位评委（马克·安德森、保罗·格雷厄姆、彼得·蒂尔△、纳瓦尔、里德·霍夫曼△）的评分与对话均为 AI 基于其公开发表资料的 in-character 模拟推断，非本人真实意见，不代表其个人或所在机构立场；评委引语均逐字出自各自已核验一手语料（蒂尔语料为 Blake Masters 对其 2012 年讲课的笔记，按半一手标注）。财务与运营数据来自公开媒体报道与公司公开口径，公司自报口径（周活、Codex 使用构成）无独立审计，可能存在偏差。本报告不构成投资建议、证券分析或任何形式的商业尽调建议；不使用任何非公开文件、商业秘密或未授权数据库；未复制任何第三方图片/截图。
+  </div>
+</div>
+
+<script>
+// Radar chart — 5 judges x 5 lenses
+const radarCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radarCtx, {
+  type: 'radar',
+  data: {
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+    datasets: [
+      {
+        label: '安德森',
+        data: [8, 10, 9, 7, 9],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.08)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
+      {
+        label: '格雷厄姆',
+        data: [7, 9, 7, 6, 8],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '蒂尔△',
+        data: [8, 9, 5, 6, 7],
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217,119,6,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4, 2],
+      },
+      {
+        label: '纳瓦尔',
+        data: [8, 9, 8, 6, 8],
+        borderColor: '#7c3aed',
+        backgroundColor: 'rgba(124,58,237,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '霍夫曼△',
+        data: [9, 9, 7, 6, 8],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4, 2],
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 } },
+        pointLabels: { font: { size: 11, weight: '600' } },
+        grid: { color: '#e5e2dc' },
+      }
+    },
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+    }
+  }
+});
+
+// Bar chart — lens means
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Category', 'Origin', 'Signal', 'Leverage', 'Identity'],
+    datasets: [{
+      label: '均值 (Mean)',
+      data: [9.2, 8.0, 8.0, 7.2, 6.2],
+      backgroundColor: ['#1a7a4a', '#6b7280', '#8a7a6a', '#a3705a', '#c1440e'],
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } },
+      y: { ticks: { font: { size: 11, weight: '600' } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `均值: ${ctx.parsed.x.toFixed(1)} / 10`
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
