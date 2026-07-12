@@ -110,6 +110,125 @@ def first_paragraph(text: str) -> str:
     return para.strip()
 
 
+def derive_display(desc: str) -> str | None:
+    """从 description 首行取人名:'Name (role) — ...' / 'Name(role)的...' → 'Name'。"""
+    if not desc:
+        return None
+    first = desc.strip().splitlines()[0]
+    name = re.split(r"\s*[（(]|\s+—\s+|\s*——", first, maxsplit=1)[0].strip()
+    if not name or len(name) > 40:
+        return None
+    return name
+
+
+_MM_SECTION = re.compile(r"(核心心智模型|Core Mental Models|Mental Models|心智模型)")
+_MODEL_HEADING = re.compile(r"^###\s+(?:Model|模型)\s*(\d+)\s*[:：]?\s*(.+?)\s*$")
+
+
+_SENT_END = re.compile(r'[。！？.!?]["”』」)）]?')
+
+
+def _gist(text: str, limit: int = 180) -> str:
+    """取正文第一句蒸馏 prose 作 gist(引语原样保留 —— 源自 SKILL.md,合规且有据)。
+
+    找第一个真正的句末(跳过 URL / 小数 / 缩写里的 `.`),整句 ≤limit 就用整句;
+    否则在句读处截断并丢掉不配对的开引号,末尾补省略号。
+    """
+    s = re.sub(r"\*{1,2}([^*]+?)\*{1,2}", r"\1", " ".join(text.split())).strip()
+    if not s:
+        return ""
+    for m in _SENT_END.finditer(s):
+        end, dot = m.end(), m.group()[0]
+        nxt = s[end] if end < len(s) else ""
+        prev = s[m.start() - 1] if m.start() > 0 else ""
+        if dot == "." and (prev == "." or nxt in ".…" or nxt.isalnum()):
+            continue  # 省略号 ... / URL growth.html / 小数 4.7 —— 不是句末
+        if end <= limit:
+            return s[:end].strip()
+        break
+    if len(s) <= limit:  # 整段够短、无明确句末 → 原样(不硬截、不加省略号)
+        return s
+    cut = s[:limit]
+    idx = max(cut.rfind(x) for x in ("，", ", ", "、", "; ", ";", "。"))
+    if idx > limit * 0.5:
+        cut = cut[: idx + 1]
+    if cut.count('"') % 2 == 1:
+        cut = cut[: cut.rfind('"')]
+    return cut.rstrip(" ,;，、") + "…"
+
+
+def _first_para_gist(lines: list[str]) -> str:
+    """从模型标题下的正文取第一段蒸馏 prose(拼接硬换行),做成一行 gist。
+
+    跳过前置的 blockquote / 列表 / 表格 / 署名行(不搬运 `>` 里声称的逐字引语);
+    遇空行或结构行即结束该段,再交给 _teaser 收尾。
+    """
+    para: list[str] = []
+    quote = ""  # 兜底:某些模型正文只有 `>` 引语(如陈年),无蒸馏 prose。
+    for ln in lines:
+        s = ln.strip()
+        if not s:
+            if para:
+                break
+            continue
+        # 「**一句话**:X / **One-liner**:X」这类粗体标签行,X 本身就是 gist。
+        lab = re.match(r"^\*{2}[^*]{1,16}\*{2}\s*[:：]\s*(\S.*)$", s)
+        if lab:
+            para.append(lab.group(1))
+            break
+        if s.startswith(">"):
+            if not quote:
+                quote = s.lstrip("> ").strip()
+            if para:
+                break
+            continue
+        if s.startswith(("-", "*", "|", "#", "```")):
+            if para:
+                break
+            continue
+        para.append(s)
+    if para:
+        return _gist(" ".join(para))
+    if quote:  # 剥掉引语尾部的来源标注,如「(828,纯一手)」「(口述,semi)」。
+        quote = re.sub(
+            r"[（(][^（()）]*(纯一手|semi|一手|口述|标注|讲话|访谈|实录|致股东信|\d{3,4})[^（()）]*[)）]\s*$",
+            "", quote).strip()
+        return _gist(quote)
+    return ""
+
+
+def parse_mental_models(text: str) -> list[dict]:
+    """抽「核心心智模型 / Core Mental Models」h2 区内的 `### 模型N / Model N` 标题 + gist。
+
+    严格限定在该 h2 段落内(遇下一个 h2 即出段),只认「模型N/Model N」命名的 `###`,
+    因此不会把答题脚手架、张力、表达DNA 等其他 `###` 误当模型。gist 取标题下第一段蒸馏
+    prose(见 _first_para_gist)。
+    """
+    in_section = False
+    raw: list[tuple[int, str, list[str]]] = []
+    cur: tuple[int, str, list[str]] | None = None
+    for ln in text.splitlines():
+        if re.match(r"^##\s+(.+)$", ln):  # h2(### 不命中:## 后需空白)
+            if cur:
+                raw.append(cur)
+                cur = None
+            in_section = bool(_MM_SECTION.search(ln))
+            continue
+        if not in_section:
+            continue
+        m = _MODEL_HEADING.match(ln)
+        if m:
+            if cur:
+                raw.append(cur)
+            cur = (int(m.group(1)), m.group(2).strip(), [])
+            continue
+        if cur:
+            cur[2].append(ln)
+    if cur:
+        raw.append(cur)
+    return [{"n": n, "title": t, "gist": _first_para_gist(lines)} for n, t, lines in raw]
+
+
 # ----------------------------------------------------------- judges build ---
 
 def build_judges() -> tuple[list[dict], dict[str, dict]]:
@@ -121,18 +240,27 @@ def build_judges() -> tuple[list[dict], dict[str, dict]]:
         full_name = fm.get("name", path.parent.name)
         slug = full_name.replace("-perspective", "")
         desc = (fm.get("description") or "").strip()
+        skill_url = f"https://github.com/zhanglunet/mba/blob/main/perspectives/{path.parent.name}/SKILL.md"
+        # tier:有 references/research/0[1-6]-*.md 即 full,否则 seed(仅 quotes.md)。
+        research = path.parent / "references" / "research"
+        tier = "full" if list(research.glob("0[1-6]-*.md")) else "seed"
         items.append({
             "slug": slug,
             "name": full_name,
             "summary": first_paragraph(desc),
-            "skill_url": f"https://github.com/zhanglunet/mba/blob/main/perspectives/{path.parent.name}/SKILL.md",
+            "skill_url": skill_url,
             "api_url": f"/api/judges/{slug}.json",
         })
         bodies[slug] = {
             "slug": slug,
             "name": full_name,
+            "display": derive_display(desc) or slug,
+            "tier": tier,
+            "panels": [],  # 由 main() 在 build_panels 后回填
+            "summary": first_paragraph(desc),
             "description": desc,
-            "skill_url": f"https://github.com/zhanglunet/mba/blob/main/perspectives/{path.parent.name}/SKILL.md",
+            "mental_models": parse_mental_models(path.read_text(encoding="utf-8")),
+            "skill_url": skill_url,
         }
     return items, bodies
 
@@ -534,6 +662,12 @@ def main() -> int:
 
     judges_list, judges_bodies = build_judges()
     panels_list, panels_bodies, industries = build_panels(judges_bodies)
+    # 回填每位评委所在的 panel 列表(panorama 上「坐在哪些面板」)。
+    for pslug, pbody in panels_bodies.items():
+        for j in pbody["judges"]:
+            body = judges_bodies.get(j["slug"])
+            if body is not None and pslug not in body["panels"]:
+                body["panels"].append(pslug)
     methodology = build_methodology()
     reports_list, reports_bodies = build_reports()
     about = build_about()

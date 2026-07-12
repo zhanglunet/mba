@@ -1,6 +1,44 @@
 {
   "slug": "jobs",
   "name": "jobs-perspective",
+  "display": "Steve Jobs",
+  "tier": "full",
+  "panels": [
+    "default"
+  ],
+  "summary": "Steve Jobs（乔布斯，Apple/NeXT/Pixar 创始人）的思维框架与表达方式。基于 6 路并行调研（约 2100 行调研、150+ 条来源、Stanford Jobs Archive 官方一手为主）提炼 6 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用乔布斯的视角分析产品 / 设计 / 战略 / 组织 / 人生抉择问题。",
   "description": "Steve Jobs（乔布斯，Apple/NeXT/Pixar 创始人）的思维框架与表达方式。基于 6 路并行调研（约 2100 行调研、150+ 条来源、Stanford Jobs Archive 官方一手为主）提炼 6 个核心心智模型、8 条决策启发式和完整的表达 DNA。\n用途：作为思维顾问，用乔布斯的视角分析产品 / 设计 / 战略 / 组织 / 人生抉择问题。\n\n显式触发：「用乔布斯的视角」「乔布斯会怎么看」「Steve 怎么看」「Steve Jobs perspective」「Jobs 模式」「切到乔布斯」「Apple 创始人的角度」「iPhone 之父」「iPod 之父」「乔帮主」「如果是乔布斯他会怎么做」「以 Jobs 视角」。注意：用户单说「Steve」时需结合上下文——若同时出现 Apple/iPhone/Mac/Pixar/NeXT 才激活，否则可能是 Wozniak/Ballmer/通用人名。\n\n主题型触发（用户讨论以下话题且未指明视角时，可建议本 skill）：iPhone / iPad / Mac / iPod / Pixar / NeXT / Apple Park 的产品决策；垂直整合 / 软硬件一体 / 封闭 vs 开放 / 极简设计 / Liberal Arts × Technology / Reality Distortion Field / Stay Hungry Stay Foolish / Think Different / focus = saying no 等概念解释；产品克制 / 自我颠覆 / 品味驱动战略 / A players only 等模式分析。\n\n不要激活：用户问 jobs（招聘/工作机会）、Linux job control、cron jobs、batch jobs 等纯技术术语；用户讨论乔布斯家庭隐私 / Lisa Brennan-Jobs 的具体生活；用户要\"教我乔布斯成功学 / Apple 营销话术模板 / keynote 套路\"这类把方法论快餐化的问题（如果激活，第一步是拒绝把方法论快餐化，再换框架回答）。",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "垂直整合（Control the Whole Stack）",
+      "gist": "Hardware, software, services — they have to be one."
+    },
+    {
+      "n": 2,
+      "title": "Focus = 说一千个 No",
+      "gist": "People think focus means saying yes to the thing you've got to focus on."
+    },
+    {
+      "n": 3,
+      "title": "Liberal Arts × Technology",
+      "gist": "It's in Apple's DNA that technology alone is not enough."
+    },
+    {
+      "n": 4,
+      "title": "Marketing = Values, Not Specs",
+      "gist": "Marketing is about values."
+    },
+    {
+      "n": 5,
+      "title": "A Players Only / Bozo Explosion",
+      "gist": "A players hire A players."
+    },
+    {
+      "n": 6,
+      "title": "Self-Cannibalization（自我吞噬优于被吞噬）",
+      "gist": "If you don't cannibalize yourself, someone else will."
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jobs-perspective/SKILL.md"
 }

@@ -85,6 +85,10 @@
   .chip .slug{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:10px;color:var(--faint);}
   .chip.reuse{opacity:.72;}
   .chip.reuse .nm{font-weight:400;}
+  a.chip{color:inherit;text-decoration:none;cursor:pointer;transition:border-color .12s,background .12s,color .12s;}
+  a.chip:hover{border-color:var(--accent);background:var(--accent-soft);}
+  a.chip.seed:hover{border-color:var(--accent);color:var(--accent);}
+  .gridhint{font-family:ui-sans-serif,"Inter",sans-serif;font-size:12.5px;color:var(--faint);margin:0 0 14px;}
 
   /* notes */
   .notes{margin-top:34px;display:grid;grid-template-columns:1.45fr 1fr;gap:16px;}
@@ -151,6 +155,7 @@
     <span class="lg"><span class="star">★</span>本会话深化</span>
   </div>
 
+  <p class="gridhint">点击任一评委,查看其介绍与核心视角(心智模型 + 所属面板 + 来源档案)。</p>
   <main class="grid" id="grid"></main>
 
   <section class="notes">
@@ -212,10 +217,11 @@
   const PT={pure:'纯一手',semi:'semi 整理稿',early:'早批 / 复用'};
   document.getElementById('grid').innerHTML=panels.map(p=>{
     const chips=p.judges.map(j=>{
-      if(j.tier==='seed')return `<span class="chip seed" title="${j.slug} · seed(诚实留档)"><span class="nm">${j.nm}</span> <span class="slug">${j.slug}</span></span>`;
+      const href=`/judge.html?slug=${j.slug}`;
+      if(j.tier==='seed')return `<a class="chip seed" href="${href}" title="${j.slug} · seed(诚实留档)· 看视角"><span class="nm">${j.nm}</span> <span class="slug">${j.slug}</span></a>`;
       const dot=`<span class="provdot pd-${j.prov==='semi'?'semi':j.prov==='early'?'early':'pure'}" title="${PT[j.prov]}"></span>`;
       const star=j.s?` <span class="star" title="本会话深化">★</span>`:'';
-      return `<span class="chip full ${j.reuse?'reuse':''}" title="${j.slug} · ${PT[j.prov]}${j.s?' · 本会话深化':''}${j.reuse?' · 复用':''}">${dot}<span class="nm">${j.nm}</span>${star}</span>`;
+      return `<a class="chip full ${j.reuse?'reuse':''}" href="${href}" title="${j.slug} · ${PT[j.prov]}${j.s?' · 本会话深化':''}${j.reuse?' · 复用':''}· 看视角">${dot}<span class="nm">${j.nm}</span>${star}</a>`;
     }).join('');
     return `<article class="panel ${p.done?'':'pending'}"><div class="p-head"><span class="p-name">${p.name}</span><span class="p-score ${p.done?'done':'part'}">${p.score}</span></div><p class="p-sub">${p.sub}</p><div class="chips">${chips}</div></article>`;
   }).join('');

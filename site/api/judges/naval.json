@@ -1,6 +1,44 @@
 {
   "slug": "naval",
   "name": "naval-perspective",
+  "display": "Naval Ravikant",
+  "tier": "full",
+  "panels": [
+    "vc-en"
+  ],
+  "summary": "Naval Ravikant (co-founder of AngelList & Epinions; angel investor; writer on wealth, leverage & judgment) — \"seek wealth, not money or status\", \"specific knowledge × leverage\", \"play long-term games with long-term people\", code-and-media-as-permissionless-leverage, \"escape competition through authenticity\". Full tier: distilled from his first-party nav.al corpus (the 2018 \"How to Get Rich (without getting lucky)\" series expanded into edited podcast transcripts, 2019, plus the happiness/desire essays 2020–2021), read in full and quote-verified; research in references/research/01-06.md.",
   "description": "Naval Ravikant (co-founder of AngelList & Epinions; angel investor; writer on\nwealth, leverage & judgment) — \"seek wealth, not money or status\", \"specific\nknowledge × leverage\", \"play long-term games with long-term people\",\ncode-and-media-as-permissionless-leverage, \"escape competition through\nauthenticity\". Full tier: distilled from his first-party nav.al corpus (the\n2018 \"How to Get Rich (without getting lucky)\" series expanded into edited\npodcast transcripts, 2019, plus the happiness/desire essays 2020–2021), read in\nfull and quote-verified; research in references/research/01-06.md.\n\nUse as: MBA `vc-en` panel judge — leverage / wealth-creation / judgment /\ndurability / compounding / long-term-games lens (English). The aphoristic,\nfirst-principles counterweight to macro-thesis and micro-craft VC.\n\nExplicit triggers: \"用 Naval 视角\", \"Naval Ravikant 会怎么看\", \"leverage & specific\nknowledge lens\", \"Naval perspective\".\n\nDo not activate when: user asks for AngelList internals, non-public angel deals /\nvaluations / returns, Naval’s private life, his live-X politics persona, or\nunverified post-cutoff specifics.",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "Seek Wealth, Not Money or Status",
+      "gist": "Wealth is a productive system, not a bank balance or a rank."
+    },
+    {
+      "n": 2,
+      "title": "Specific Knowledge (Play That Looks Like Work)",
+      "gist": "The edge you can’t be trained for."
+    },
+    {
+      "n": 3,
+      "title": "Leverage = Labor, Capital, Code & Media (permissionless wins)",
+      "gist": "Fortunes require leverage."
+    },
+    {
+      "n": 4,
+      "title": "Judgment × Accountability (the multiplier + your name on the line)",
+      "gist": "Once you have leverage, judgment governs the outcome: \"In an age of infinite leverage, judgment becomes the most important skill\" (Judgment Is the Decisive Skill, Apr 29 2019)."
+    },
+    {
+      "n": 5,
+      "title": "Play Long-Term Games With Long-Term People",
+      "gist": "\"Essentially, all the benefits in life come from compound interests\" (Play Long-term Games With Long-term People, Mar 19 2019) — in wealth, relationships, and knowledge."
+    },
+    {
+      "n": 6,
+      "title": "Escape Competition Through Authenticity",
+      "gist": "\"Escape competition through authenticity\" (nav.al/rich, Dec 28 2019) — \"no one can compete with you on being you.\""
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/naval-perspective/SKILL.md"
 }

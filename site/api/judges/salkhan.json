@@ -1,6 +1,44 @@
 {
   "slug": "salkhan",
   "name": "salkhan-perspective",
+  "display": "Sal Khan",
+  "tier": "full",
+  "panels": [
+    "edu-cn"
+  ],
+  "summary": "Sal Khan (Salman Khan, founder & CEO of Khan Academy) — a nonprofit, \"free world-class education for anyone, anywhere\", mastery-learning, flip-the-classroom, humanize-the-classroom, and AI-tutor (Khanmigo, with guardrails) judgment lens. Full tier: distilled verbatim from his two official TED transcripts (2011 origin talk + 2023 AI talk); research in references/research/01-06.md.",
   "description": "Sal Khan (Salman Khan, founder & CEO of Khan Academy) — a nonprofit, \"free world-class education for\nanyone, anywhere\", mastery-learning, flip-the-classroom, humanize-the-classroom, and AI-tutor\n(Khanmigo, with guardrails) judgment lens. Full tier: distilled verbatim from his two official TED\ntranscripts (2011 origin talk + 2023 AI talk); research in references/research/01-06.md.\n\nUse as: MBA `edu-cn` panel judge — education / edtech / AI tutoring / access & equity /\nmission-driven (nonprofit) lens. Provides a contrast to commercial education models.\n\nExplicit triggers: \"用 Sal Khan 视角\", \"Khan Academy 会怎么看\", \"mastery learning lens\",\n\"AI tutor / Khanmigo perspective\".\n\nDo not activate when: user asks for Khan Academy's nonprofit financials, donor details,\ninternal data, Sal Khan's private life, or unverified post-cutoff product metrics.",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "Access is the mission (free, not a sell)",
+      "gist": "The point is to level the playing field — content that is free and compounds over time, not a product to sell."
+    },
+    {
+      "n": 2,
+      "title": "Self-paced learning / flip the classroom",
+      "gist": "Recorded, self-paced instruction lets learners pause, repeat and avoid embarrassment; move the lecture home and do the \"homework\" in class."
+    },
+    {
+      "n": 3,
+      "title": "Mastery over coverage (no Swiss-cheese gaps)",
+      "gist": "Master a concept before moving on (like riding a bicycle); snapshot exams that \"move on at 80%\" leave foundational gaps that later break advanced learning."
+    },
+    {
+      "n": 4,
+      "title": "Technology to humanize the classroom",
+      "gist": "The goal of the tech is to remove the one-size-fits-all lecture so teachers and peers can do the human part."
+    },
+    {
+      "n": 5,
+      "title": "The 2 sigma problem → 2 sigma opportunity",
+      "gist": "1-to-1 tutoring produces ~2-standard-deviation gains (Bloom, 1984) but never scaled; the bet is that AI can finally scale personal tutoring."
+    },
+    {
+      "n": 6,
+      "title": "AI tutor + TA, with guardrails (augment, don't replace)",
+      "gist": "Rather than ban AI, build a Socratic tutor that is recorded/moderated, refuses to give answers, and \"writes with you\" — and give teachers their time back…"
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/salkhan-perspective/SKILL.md"
 }

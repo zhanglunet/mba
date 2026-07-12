@@ -1,6 +1,44 @@
 {
   "slug": "paulg",
   "name": "paulg-perspective",
+  "display": "Paul Graham",
+  "tier": "full",
+  "panels": [
+    "vc-en"
+  ],
+  "summary": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\", \"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Full tier: distilled from 28 first-party paulgraham.com essays (2001–2024), read in full and quote-verified; research in references/research/01-06.md.",
   "description": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\",\n\"do things that don't scale\", problems-over-ideas, talk-to-users startup lens.\nFull tier: distilled from 28 first-party paulgraham.com essays (2001–2024), read in\nfull and quote-verified; research in references/research/01-06.md.\n\nUse as: MBA `vc-en` panel judge — early-stage / product-market-fit / founder craft /\norganic growth lens (English). A grounded, micro counterweight to macro-thesis VC.\n\nExplicit triggers: \"用 Paul Graham 视角\", \"pg / YC 会怎么看\", \"make something people want\nlens\", \"Paul Graham perspective\".\n\nDo not activate when: user asks for YC internal selection data, non-public portfolio\nnumbers, Graham's private life, his X/politics persona, or unverified post-cutoff specifics.",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "Make Something People Want",
+      "gist": "The whole game is building something a small number of people genuinely want — not \"like\"."
+    },
+    {
+      "n": 2,
+      "title": "Do Things That Don't Scale",
+      "gist": "Startups don't take off by themselves; founders crank the engine by hand."
+    },
+    {
+      "n": 3,
+      "title": "Look For Problems, Not Ideas",
+      "gist": "The best ideas come from noticing a real problem, usually one the founders have themselves."
+    },
+    {
+      "n": 4,
+      "title": "Startup = Growth (use the rate as a compass)",
+      "gist": "\"A startup is a company designed to grow fast.\""
+    },
+    {
+      "n": 5,
+      "title": "A Few Who Love It > Many Who Like It (and survival is a choice)",
+      "gist": "Intense narrow love is the seed of growth: some users must \"want it urgently\", not just \"could see themselves using it one day\" (startupideas.html, \"Well\")."
+    },
+    {
+      "n": 6,
+      "title": "The Power Law (the best ideas look like bad ideas)",
+      "gist": "As an investor's lens: \"effectively all the returns are concentrated in a few big winners, and ... the best ideas look initially like bad ideas.\""
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/paulg-perspective/SKILL.md"
 }

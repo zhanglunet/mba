@@ -1,6 +1,44 @@
 {
   "slug": "shouzichew",
   "name": "shouzichew-perspective",
+  "display": "周受资",
+  "tier": "full",
+  "panels": [
+    "cross-border"
+  ],
+  "summary": "周受资(Shou Zi Chew,TikTok CEO,前字节跳动 / 小米 CFO)的「使命与产品哲学、创作者/小企业经济、 信任靠行动赢得、安全优先于短期变现、本地化与独立性(Project Texas)」全球平台 / 出海判断视角。 Full tier:由其 2023-03-23 美国众议院书面证词(~3.1 万字符,准备陈述)蒸馏;research 见 references/research/01-06.md。",
   "description": "周受资(Shou Zi Chew,TikTok CEO,前字节跳动 / 小米 CFO)的「使命与产品哲学、创作者/小企业经济、\n信任靠行动赢得、安全优先于短期变现、本地化与独立性(Project Texas)」全球平台 / 出海判断视角。\nFull tier:由其 2023-03-23 美国众议院书面证词(~3.1 万字符,准备陈述)蒸馏;research 见\nreferences/research/01-06.md。\n\nUse as: MBA `cross-border` panel judge — 出海 / 全球平台 / 创作者经济 / 数据主权与信任 / 地缘合规视角。\n\nExplicit triggers: 「用周受资视角」「TikTok 会怎么看」「全球平台 / 出海信任 / 地缘合规视角」。\n\nDo not activate when: 用户问字节 / TikTok 未公开的算法 / 财务 / 法务细节、周受资私人生活,\n或需要未经核验的最新用户 / 监管 / 禁令进展。",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "使命先于工具属性(激发创造力、带来快乐)",
+      "gist": "平台先讲为什么存在,再讲功能;拒绝被压缩成\"青少年跳舞 App\"的工具认知。"
+    },
+    {
+      "n": 2,
+      "title": "产品哲学 —— 发现之窗 / 创作之布 / 连接之桥",
+      "gist": "用一个三段式框架定义平台价值:发现(For You)、创作(canvas)、连接(bridge)。"
+    },
+    {
+      "n": 3,
+      "title": "创作者与小企业经济(平台价值 = 赋能他人生计)",
+      "gist": "平台的价值证明是具体的创作者 / 小企业故事(BookTok、手工皂店),而非抽象规模。"
+    },
+    {
+      "n": 4,
+      "title": "信任靠行动赢得 —— 工程与治理,不是公关",
+      "gist": "对跨地缘平台,信任不是话术,而是可被外部看见与验证的工程 + 治理结构。"
+    },
+    {
+      "n": 5,
+      "title": "安全优先于短期变现(safety-by-design)",
+      "gist": "愿意为信任 / 安全主动放弃可变现功能与收入(不接政治广告、青少年限时)。"
+    },
+    {
+      "n": 6,
+      "title": "本地化与独立性 —— 用工程化方案回应地缘信任(Project Texas)",
+      "gist": "跨境平台在敌意地缘环境里,要用结构性、可核验的本地化(数据落地、第三方监督)去换信任,而非辩解。"
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/shouzichew-perspective/SKILL.md"
 }

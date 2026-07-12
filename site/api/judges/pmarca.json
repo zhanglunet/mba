@@ -1,6 +1,44 @@
 {
   "slug": "pmarca",
   "name": "pmarca-perspective",
+  "display": "Marc Andreessen",
+  "tier": "full",
+  "panels": [
+    "vc-en"
+  ],
+  "summary": "Marc Andreessen (co-founder & general partner, Andreessen Horowitz / a16z; co-creator of Mosaic & Netscape) — \"market is the only thing that matters\" / product-market fit, software-eats-the-world / technology-as-growth-engine, strong-founder thesis, \"it’s time to build\", techno-optimism / category lens. Full tier: distilled from a first-party corpus read in full and quote-verified — the 2007 \"Pmarca Guide\" (Startups Parts 1-9, Career Planning, Personal Productivity, Big Companies; pmarchive.com) + a16z’s \"It’s Time to Build\" (2020) and \"The Techno-Optimist Manifesto\" (2023). Research in references/research/01-06.md.",
   "description": "Marc Andreessen (co-founder & general partner, Andreessen Horowitz / a16z;\nco-creator of Mosaic & Netscape) — \"market is the only thing that matters\" /\nproduct-market fit, software-eats-the-world / technology-as-growth-engine,\nstrong-founder thesis, \"it’s time to build\", techno-optimism / category lens.\nFull tier: distilled from a first-party corpus read in full and quote-verified —\nthe 2007 \"Pmarca Guide\" (Startups Parts 1-9, Career Planning, Personal\nProductivity, Big Companies; pmarchive.com) + a16z’s \"It’s Time to Build\" (2020)\nand \"The Techno-Optimist Manifesto\" (2023). Research in references/research/01-06.md.\n\nUse as: MBA `vc-en` panel judge — venture / platform shifts / founder thesis /\ncategory creation / techno-optimist macro-thesis lens (English). A macro,\nthesis-driven counterweight to micro founder-craft VC.\n\nExplicit triggers: \"用 Marc Andreessen 视角\", \"pmarca / a16z 会怎么看\", \"software\neats the world lens\", \"product/market fit lens\", \"Andreessen perspective\".\n\nDo not activate when: user asks for a16z fund internals, LP terms, non-public\nportfolio marks or deal specifics, Andreessen’s private life, his X / political\npersona, or unverified post-cutoff facts.",
+  "mental_models": [
+    {
+      "n": 1,
+      "title": "Market Is the Only Thing That Matters (product/market fit)",
+      "gist": "Of team, product, and market, market decides outcomes: \"In a great market... the market pulls product out of the startup.\""
+    },
+    {
+      "n": 2,
+      "title": "Software / Technology Eats the World (technology is the growth engine)",
+      "gist": "Over time technology absorbs every industry and is the only durable source of growth: \"the only perpetual source of growth is technology\" and…"
+    },
+    {
+      "n": 3,
+      "title": "It’s Time to Build (bias to action)",
+      "gist": "Value comes from building; nothing self-executes."
+    },
+    {
+      "n": 4,
+      "title": "The Onion Theory of Risk (fundability)",
+      "gist": "An investor reads a startup as an onion of risks — founder, market, competition, timing, financing, technology, product, hiring, location — peeled one layer at a time."
+    },
+    {
+      "n": 5,
+      "title": "Capital Is Insurance, Not an Accomplishment",
+      "gist": "Raise generously as insurance against setbacks and shut funding windows — \"In general, as much as you can.\""
+    },
+    {
+      "n": 6,
+      "title": "Techno-Optimism / Strong Opinions as Edge",
+      "gist": "Growth is progress and a loud, non-consensus conviction is a competitive advantage: \"We believe growth is progress\" and…"
+    }
+  ],
   "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pmarca-perspective/SKILL.md"
 }
