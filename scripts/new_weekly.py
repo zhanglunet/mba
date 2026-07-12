@@ -214,10 +214,10 @@ PAGE_TEMPLATE = """<!doctype html>
   <header>
     <div class="mark"><a href="/">MBA<span class="dot">.</span></a></div>
     <nav>
-      <a href="/how-it-works.html">怎么打分</a>
-      <a href="/agents.html">For Agents</a>
-      <a href="/roadmap.html">Roadmap</a>
-      <a href="/weekly.html" class="current">周报</a>
+      <a href="/">品牌监控</a>
+      <a href="/watch/">舆情信号</a>
+      <a href="/panorama.html">评委全景</a>
+      <a href="/docs.html">文档</a>
       <a href="https://github.com/zhanglunet/mba">GitHub</a>
     </nav>
   </header>
@@ -232,7 +232,7 @@ PAGE_TEMPLATE = """<!doctype html>
   {content}
 
   <footer>
-    <span>MBA · Metric Brand Auditor</span>
+    <span>MBA · Metric Brand Auditor · © 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai">marsdata.ai</a></span>
     <span>
       <a href="/">主页</a> ·
       <a href="/roadmap.html">Roadmap</a> ·
