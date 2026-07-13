@@ -94,6 +94,7 @@ def build_graph():
         add(f"brand:{slug}", cn, "brand",
             f"品牌 · {en}｜面板 {panel or '—'}｜归一化 {sc}｜核心监控维度：{'·'.join(core) or '—'}",
             1.0 + (0.05 * len(core)))
+        nodes[-1]["url"] = f"/starmap/{slug}.html"  # 下钻:品牌私有星图
         if panel and f"panel:{panel}" in {n['id'] for n in nodes}:
             edges.append({"s": f"brand:{slug}", "t": f"panel:{panel}"})
         for w in core:
@@ -294,7 +295,8 @@ TEMPLATE = r"""<!doctype html>
     var conns=Object.keys(adj[id]).map(function(k){return byId[k];}).filter(Boolean);
     var byT={}; conns.forEach(function(m){(byT[m.type]=byT[m.type]||[]).push(m.name);});
     var html=Object.keys(byT).map(function(t){return '<b>'+TYPE_LABEL[t]+'</b>('+byT[t].length+')：'+byT[t].slice(0,8).join('、')+(byT[t].length>8?'…':'');}).join('<br>');
-    panel.querySelector('.pconn').innerHTML=conns.length?('关联 '+conns.length+' 个：<br>'+html):'（无关联）';
+    var drill=n.url?('<a href="'+n.url+'" style="display:inline-block;margin:2px 0 10px;color:#c1440e;text-decoration:none;border-bottom:1px solid #c1440e;font-weight:600">查看 '+n.name+' 品牌私有星图 →</a><br>'):'';
+    panel.querySelector('.pconn').innerHTML=drill+(conns.length?('关联 '+conns.length+' 个：<br>'+html):'（无关联）');
     panel.classList.add('on');
   }
 
