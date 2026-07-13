@@ -64,3 +64,18 @@
   note: >-
     签约仪式 2026-05-27,本条以中新网稿收录,日期以 URL 内嵌(2026/05-28)自证。
     自建供应链累计投入近 80 亿 —— 「重资产化」是复审 leverage 镜头的关键变量。
+- id: 2021-04-13-genki-forest-005
+  date: '2021-04-13'
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: 元气森林就 0蔗糖 与 0糖 混淆致歉,引发无糖标注舆论争议
+  quote: 元气森林因宣传0蔗糖致歉，“0糖”和“0蔗糖”到底有什么区别？
+  quote_type: title
+  url: https://www.piyao.org.cn/2021-04/13/c_1211108441.htm
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - identity
+  - signal
+  note: 无糖招牌与真实标注的信任争议;来源为中国互联网联合辟谣平台;日期以 URL 内嵌(2021-04/13)自证。

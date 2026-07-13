@@ -87,3 +87,18 @@
   fetched_at: "2026-07-12T12:47:37Z"
   lens_map: [category, leverage]
   note: 与出口管制解除同日发布,主打 agent 场景性价比。日期以 URL 内嵌(2026/06/30)自证。
+- id: 2025-10-02-anthropic-006
+  date: '2025-10-02'
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: Anthropic 聘前 Stripe CTO Rahul Patil 任 CTO,联创 McCandlish 转首席架构师
+  quote: Anthropic hires new CTO with focus on AI infrastructure
+  quote_type: title
+  url: https://techcrunch.com/2025/10/02/anthropic-hires-new-cto-with-focus-on-ai-infrastructure/
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - leverage
+  - origin
+  note: 企业化 + 基础设施补强的高管信号;日期以 URL 内嵌(2025/10/02)自证。

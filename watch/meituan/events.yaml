@@ -66,3 +66,18 @@
   consumed_by: v3
   lens_map: [leverage, category]
   note: 下一主战场(即时零售)的开销预期 —— 减亏叙事的对冲面。日期以 URL 内嵌(20260616)自证。
+- id: 2025-09-15-meituan-005
+  date: '2025-09-15'
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: 外卖大战成全民舆论热点:三平台补贴内卷引监管与公众质疑
+  quote: 外卖大战，战而不休为哪般？
+  quote_type: title
+  url: https://www.news.cn/local/20250915/c14b7f1a1d9c403c8607e5d764aa27c6/c.html
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - identity
+  - signal
+  note: 2025 夏季即时零售补贴战成公共舆论焦点(W2);监管约谈属 W4 另计;日期以 URL 内嵌(20250915)自证。
