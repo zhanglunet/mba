@@ -190,6 +190,7 @@ def render_card(m, pending):
         f'        <div class="bc-meta">{esc(str(m.get("version", "")))} · {esc(date)}</div>\n'
         f'{render_watch_line(slug, pending)}\n'
         f'        <p class="bc-headline">{esc(collapse_ws(m.get("headline", "")))}</p>{versions}\n'
+        f'        <div class="bc-links"><a href="/starmap/{slug}.html">品牌私有星图 →</a></div>\n'
         f"      </div>"
     )
 
