@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>品牌监控全维度知识星图 · MBA</title>
+<meta name="description" content="MBA 品牌监控全维度知识星图:品牌 × 9 监控维度 × 5 镜头 × 面板 × 评委,按真实关系连成的关联图谱。可搜索、聚焦、按类型筛选。" />
+<meta property="og:title" content="MBA 品牌监控知识星图" />
+<meta property="og:url" content="https://mbabrand.com/starmap.html" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+<style>
+  :root{--ink:#111;--paper:#faf8f3;--muted:#6b6760;--rule:#1a1a1a;--accent:#c1440e;--card:#fff;--hair:#e2ddd3;}
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{background:var(--paper);color:var(--ink);font-family:ui-sans-serif,"Inter","PingFang SC","Noto Sans SC",-apple-system,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1180px;margin:0 auto;padding:32px 22px 40px;}
+  header{border-bottom:2px solid var(--rule);padding-bottom:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .mark{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em;font-size:22px;line-height:1;color:var(--ink);text-decoration:none;}
+  .mark .dot{color:var(--accent);}
+  .mark-glyph .radar-data{stroke-dasharray:100;}
+  .mark-glyph .radar-dot{transform-box:fill-box;transform-origin:center;transition:transform .25s cubic-bezier(.2,1.4,.4,1);}
+  .mark:hover .radar-dot{transform:scale(1.35);}
+  @media (prefers-reduced-motion:no-preference){.mark-glyph .radar-data{animation:mba-draw 1.1s cubic-bezier(.6,0,.25,1) .2s backwards;}.mark-glyph .radar-dot{animation:mba-pop .4s cubic-bezier(.2,1.6,.4,1) 1.2s backwards;}}
+  @keyframes mba-draw{from{stroke-dashoffset:100;fill-opacity:0;}to{stroke-dashoffset:0;fill-opacity:1;}}
+  @keyframes mba-pop{from{transform:scale(0);}to{transform:scale(1);}}
+  nav a{font-size:13px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);margin-left:16px;}
+  nav a:hover,nav a[aria-current]{color:var(--accent);border-color:var(--accent);}
+  h1{font-size:24px;font-weight:800;margin:0 0 4px;letter-spacing:-.01em;}
+  .lede{color:var(--muted);font-size:13.5px;margin:0 0 14px;max-width:80ch;}
+  .lede a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);}
+  .controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px;}
+  .controls input{font:inherit;font-size:13px;padding:6px 12px;border:1px solid var(--hair);border-radius:999px;min-width:180px;background:#fff;}
+  .controls input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent);}
+  .tog{font-size:12px;font-weight:600;border:1px solid var(--hair);border-radius:999px;padding:3px 11px;cursor:pointer;background:#fff;color:var(--muted);display:inline-flex;align-items:center;gap:6px;user-select:none;}
+  .tog .sw{width:9px;height:9px;border-radius:2px;}
+  .tog.off{opacity:.4;text-decoration:line-through;}
+  .btn{font:inherit;font-size:12px;font-weight:600;border:1px solid var(--hair);border-radius:999px;padding:4px 12px;cursor:pointer;background:#fff;color:var(--ink);}
+  .btn:hover{border-color:var(--accent);color:var(--accent);}
+  .stage{position:relative;background:radial-gradient(ellipse at center,#fffdf9,#f5f1e8);border:1px solid var(--hair);border-radius:10px;overflow:hidden;height:min(72vh,720px);}
+  svg.kg{width:100%;height:100%;display:block;cursor:grab;touch-action:none;}
+  svg.kg.drag{cursor:grabbing;}
+  .kg-edge{stroke:#b9b2a5;stroke-width:.6;opacity:.35;}
+  .kg-edge.weak{stroke-dasharray:2 3;opacity:.18;}
+  .kg-edge.hi{stroke:var(--accent);opacity:.85;stroke-width:1.1;}
+  .kg-edge.lo{opacity:.06;}
+  .kg-node circle{stroke:#fff;stroke-width:1.2;cursor:pointer;transition:transform .12s;}
+  .kg-node text{font-size:9px;fill:var(--ink);paint-order:stroke;stroke:#fdfbf6;stroke-width:2.6px;pointer-events:none;opacity:0;transition:opacity .12s;font-family:ui-sans-serif,sans-serif;}
+  .kg-node.lab text,.kg-node:hover text{opacity:1;}
+  .kg-node.hi circle{stroke:var(--accent);stroke-width:2;}
+  .kg-node.lo{opacity:.22;}
+  .kg-node.nomatch{opacity:.08;}
+  .kg-node.match circle{stroke:var(--accent);stroke-width:2;}
+  .panel{position:absolute;top:12px;right:12px;width:min(320px,86%);background:#fff;border:1px solid var(--hair);border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.12);padding:14px 16px;font-size:13px;display:none;}
+  .panel.on{display:block;}
+  .panel h3{margin:0 0 2px;font-size:16px;}
+  .panel .ptype{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;padding:1px 8px;border-radius:999px;margin-bottom:8px;}
+  .panel .pmeta{color:var(--muted);line-height:1.6;}
+  .panel .px{position:absolute;top:8px;right:12px;cursor:pointer;color:var(--muted);font-size:18px;border:none;background:none;}
+  .panel .pconn{margin-top:10px;font-size:12px;color:var(--muted);}
+  .panel .pconn b{color:var(--ink);}
+  .hint{font-size:11.5px;color:var(--muted);margin:8px 2px 0;}
+  footer{margin-top:20px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="/" role="img" aria-label="MBA — Metric Brand Auditor">
+      <svg class="mark-glyph" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true" focusable="false"><defs><linearGradient id="mbaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/></linearGradient></defs><polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/><g fill="none" stroke="#111" opacity=".12" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g><polygon class="radar-data" pathLength="100" points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#mbaGrad)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/><circle class="radar-dot" cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/></svg>
+      <span>MBA<span class="dot">.</span></span>
+    </a>
+    <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/panorama.html">评委全景</a><a href="/starmap.html" aria-current="page">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
+  </header>
+
+  <h1>品牌监控全维度知识星图</h1>
+  <p class="lede">82 个实体 · 184 条关系:<b>品牌</b> × <b>9 监控维度 W</b> × <b>5 镜头</b> × <b>面板</b> × <b>评委</b>,按真实数据连成的关联图谱。数据源:<a href="https://github.com/zhanglunet/mba/blob/main/watch/matrix.yaml">watch/matrix.yaml</a> · panels/*.yaml · reports-meta.yaml（由 <code>scripts/build_starmap.py</code> 生成）。</p>
+
+  <div class="controls">
+    <input id="kg-search" type="search" placeholder="搜索品牌/维度/评委…" autocomplete="off" />
+    <span class="tog" data-type="brand"><span class="sw" style="background:#111"></span>品牌</span>
+    <span class="tog" data-type="wdim"><span class="sw" style="background:#1a4a7a"></span>监控维度</span>
+    <span class="tog" data-type="lens"><span class="sw" style="background:#c1440e"></span>镜头</span>
+    <span class="tog" data-type="panel"><span class="sw" style="background:#1a7a4a"></span>面板</span>
+    <span class="tog" data-type="judge"><span class="sw" style="background:#9a958c"></span>评委</span>
+    <button class="btn" id="kg-reset">重置视图</button>
+  </div>
+
+  <div class="stage" id="kg-host"></div>
+  <p class="hint">点节点看详情与关联 · 悬停显示标签 · 滚轮缩放 · 拖拽平移 · 上方筛选类型 / 搜索。灵感来自 <a href="https://github.com/zhanglunet/shanghai" style="color:var(--accent)">zhanglunet/shanghai</a> 的知识星图。</p>
+
+  <footer>
+    <span>MBA · 品牌监控全维度星图 · 图例:品牌 15 · 监控维度 9 · 镜头 5 · 面板 10 · 评委 43</span>
+    <span><a href="/docs.html">文档</a> · <a href="https://github.com/zhanglunet/mba">GitHub</a></span>
+  </footer>
+</div>
+
+<script type="application/json" id="kg-data">{"nodes":[{"id":"lens:Origin","name":"起源叙事","type":"lens","meta":"起源叙事（Origin）· 创始故事与来源真实性","w":1.6,"x":96.8,"y":35.4,"r":15.5,"c":"#c1440e"},{"id":"lens:Category","name":"品类定义","type":"lens","meta":"品类定义（Category）· 是否定义/占据一个品类词","w":1.6,"x":3.2,"y":105.9,"r":15.5,"c":"#c1440e"},{"id":"lens:Leverage","name":"杠杆护城河","type":"lens","meta":"杠杆护城河（Leverage）· 护城河与增长杠杆的质量","w":1.6,"x":-115.5,"y":19.3,"r":15.5,"c":"#c1440e"},{"id":"lens:Identity","name":"身份系统","type":"lens","meta":"身份系统（Identity）· 视觉+语言身份的一致性","w":1.6,"x":-55.7,"y":-65.1,"r":15.5,"c":"#c1440e"},{"id":"lens:Signal","name":"真实信号","type":"lens","meta":"真实信号（Signal）· 可核查的现实世界信号","w":1.6,"x":56.8,"y":-53.7,"r":15.5,"c":"#c1440e"},{"id":"wdim:W1","name":"W1 媒体报道","type":"wdim","meta":"财经/行业/官方媒体的报道与调查｜软+硬信号｜映射镜头：Signal·Identity","w":1.3,"x":215.9,"y":76.2,"r":11.4,"c":"#1a4a7a"},{"id":"wdim:W2","name":"W2 社交与社区声量","type":"wdim","meta":"微博/知乎/小红书/X/Reddit 的大众情绪与热点｜软信号｜映射镜头：Identity·Category","w":1.3,"x":72.9,"y":146.1,"r":11.4,"c":"#1a4a7a"},{"id":"wdim:W3","name":"W3 招投标与采购","type":"wdim","meta":"中标/落标/黑名单/合同额——B2B/B2G 真金白银｜硬信号｜映射镜头：Leverage·Signal","w":1.3,"x":2.9,"y":162.3,"r":11.4,"c":"#1a4a7a"},{"id":"wdim:W4","name":"W4 监管司法与合规","type":"wdim","meta":"处罚、问询函、诉讼、召回、禁令｜硬信号｜映射镜头：Signal·Leverage","w":1.3,"x":-107.8,"y":135.4,"r":11.4,"c":"#1a4a7a"},{"id":"wdim:W5","name":"W5 资本市场信号","type":"wdim","meta":"财报、股价异动、评级、减持、做空报告｜硬信号｜映射镜头：Signal","w":1.3,"x":-227.0,"y":-24.8,"r":11.4,"c":"#1a4a7a"},{"id":"wdim:W6","name":"W6 产品口碑与投诉","type":"wdim","meta":"电商/应用商店评分、黑猫投诉、质量事件｜软+硬信号｜映射镜头：Signal·Identity","w":1.3,"x":-148.0,"y":-101.2,"r":11.4,"c":"#1a4a7a"},{"id":"wdim:W7","name":"W7 人事与组织","type":"wdim","meta":"高管变动、裁员/扩张、创始人动向｜硬信号｜映射镜头：Origin·Leverage","w":1.3,"x":-33.6,"y":-183.4,"r":11.4,"c":"#1a4a7a"},{"id":"wdim:W8","name":"W8 技术与知识产权","type":"wdim","meta":"专利、开源、CVE、论文、发射/交付节奏｜硬信号｜映射镜头：Leverage·Category","w":1.3,"x":133.5,"y":-174.6,"r":11.4,"c":"#1a4a7a"},{"id":"wdim:W9","name":"W9 供应链与生态伙伴","type":"wdim","meta":"合作公告、断供、渠道进退、大客户流失｜硬信号｜映射镜头：Leverage","w":1.3,"x":176.6,"y":-59.6,"r":11.4,"c":"#1a4a7a"},{"id":"panel:ai-app-cn","name":"AI Application Layer Panel","type":"panel","meta":"面板 · 5 位评委：杨植麟、王慧文、周鸿祎、傅盛、朱啸虎","w":1.25,"x":307.8,"y":32.1,"r":10.2,"c":"#1a7a4a"},{"id":"judge:yangzhilin","name":"杨植麟","type":"judge","meta":"评委 · Yang Zhilin｜所属面板：ai-app-cn","w":0.7,"x":501.5,"y":82.7,"r":4.0,"c":"#9a958c"},{"id":"judge:wanghuiwen","name":"王慧文","type":"judge","meta":"评委 · Wang Huiwen｜所属面板：ai-app-cn","w":0.7,"x":492.8,"y":195.4,"r":4.0,"c":"#9a958c"},{"id":"judge:zhouhongyi","name":"周鸿祎","type":"judge","meta":"评委 · Zhou Hongyi｜所属面板：ai-app-cn、security-cn-global","w":0.7,"x":498.2,"y":155.5,"r":4.0,"c":"#9a958c"},{"id":"judge:fusheng","name":"傅盛","type":"judge","meta":"评委 · Fu Sheng｜所属面板：ai-app-cn、default","w":0.7,"x":421.8,"y":307.9,"r":4.0,"c":"#9a958c"},{"id":"judge:zhuxiaohu","name":"朱啸虎","type":"judge","meta":"评委 · Zhu Xiaohu｜所属面板：ai-app-cn、vc-cn","w":0.7,"x":252.7,"y":390.4,"r":4.0,"c":"#9a958c"},{"id":"panel:auto","name":"Auto Industry Panel","type":"panel","meta":"面板 · 5 位评委：马斯克、雷军、李想、何小鹏、李斌","w":1.25,"x":216.1,"y":207.2,"r":10.2,"c":"#1a7a4a"},{"id":"judge:musk","name":"马斯克","type":"judge","meta":"评委 · Elon Musk｜所属面板：auto、security-cn-global","w":0.7,"x":232.2,"y":455.2,"r":4.0,"c":"#9a958c"},{"id":"judge:leijun","name":"雷军","type":"judge","meta":"评委 · Lei Jun｜所属面板：auto、vc-cn","w":0.7,"x":292.5,"y":428.3,"r":4.0,"c":"#9a958c"},{"id":"judge:lixiang","name":"李想","type":"judge","meta":"评委 · Li Xiang｜所属面板：auto","w":0.7,"x":25.9,"y":506.8,"r":4.0,"c":"#9a958c"},{"id":"judge:hexiaopeng","name":"何小鹏","type":"judge","meta":"评委 · He Xiaopeng｜所属面板：auto","w":0.7,"x":174.7,"y":476.5,"r":4.0,"c":"#9a958c"},{"id":"judge:libin","name":"李斌","type":"judge","meta":"评委 · William Li｜所属面板：auto","w":0.7,"x":5.7,"y":513.1,"r":4.0,"c":"#9a958c"},{"id":"panel:consumer-cn","name":"Consumer-CN Panel","type":"panel","meta":"面板 · 5 位评委：江南春、张兰、罗永浩、阳萌、钟睒睒","w":1.25,"x":57.9,"y":284.4,"r":10.2,"c":"#1a7a4a"},{"id":"judge:jiangnanchun","name":"江南春","type":"judge","meta":"评委 · Jiang Nanchun｜所属面板：consumer-cn","w":0.7,"x":-30.1,"y":470.6,"r":4.0,"c":"#9a958c"},{"id":"judge:zhanglan","name":"张兰","type":"judge","meta":"评委 · Zhang Lan｜所属面板：consumer-cn","w":0.7,"x":-177.1,"y":502.7,"r":4.0,"c":"#9a958c"},{"id":"judge:luoyonghao","name":"罗永浩","type":"judge","meta":"评委 · Luo Yonghao｜所属面板：consumer-cn","w":0.7,"x":-107.9,"y":475.4,"r":4.0,"c":"#9a958c"},{"id":"judge:yangjianhui","name":"阳萌","type":"judge","meta":"评委 · Steven Yang｜所属面板：consumer-cn、cross-border","w":0.7,"x":-191.4,"y":479.2,"r":4.0,"c":"#9a958c"},{"id":"judge:zhongshanshan","name":"钟睒睒","type":"judge","meta":"评委 · Zhong Shanshan｜所属面板：consumer-cn","w":0.7,"x":-398.1,"y":344.1,"r":4.0,"c":"#9a958c"},{"id":"panel:cross-border","name":"Cross-Border Panel","type":"panel","meta":"面板 · 5 位评委：黄峥、阳萌、周受资、陈年、庄帅","w":1.25,"x":-185.2,"y":207.5,"r":10.2,"c":"#1a7a4a"},{"id":"judge:huangzheng","name":"黄峥","type":"judge","meta":"评委 · Colin Huang｜所属面板：cross-border","w":0.7,"x":-375.2,"y":332.0,"r":4.0,"c":"#9a958c"},{"id":"judge:shouzichew","name":"周受资","type":"judge","meta":"评委 · Shou Zi Chew｜所属面板：cross-border","w":0.7,"x":-338.3,"y":321.3,"r":4.0,"c":"#9a958c"},{"id":"judge:chennian","name":"陈年","type":"judge","meta":"评委 · Chen Nian｜所属面板：cross-border","w":0.7,"x":-466.8,"y":207.6,"r":4.0,"c":"#9a958c"},{"id":"judge:zhuangshuai","name":"庄帅","type":"judge","meta":"评委 · Zhuang Shuai｜所属面板：cross-border","w":0.7,"x":-491.1,"y":20.0,"r":4.0,"c":"#9a958c"},{"id":"panel:default","name":"Default 5-Judge Panel","type":"panel","meta":"面板 · 5 位评委：傅盛、乔布斯、李可佳、吴俊东、张一鸣","w":1.25,"x":-289.0,"y":73.0,"r":10.2,"c":"#1a7a4a"},{"id":"judge:jobs","name":"乔布斯","type":"judge","meta":"评委 · Steve Jobs｜所属面板：default","w":0.7,"x":-457.6,"y":121.5,"r":4.0,"c":"#9a958c"},{"id":"judge:likejia","name":"李可佳","type":"judge","meta":"评委 · Ethan Li｜所属面板：default、edu-cn","w":0.7,"x":-506.0,"y":92.6,"r":4.0,"c":"#9a958c"},{"id":"judge:wu-jundong","name":"吴俊东","type":"judge","meta":"评委 · Frank Wu｜所属面板：default、edu-cn","w":0.7,"x":-479.8,"y":-20.6,"r":4.0,"c":"#9a958c"},{"id":"judge:zhang-yiming","name":"张一鸣","type":"judge","meta":"评委 · Zhang Yiming｜所属面板：default","w":0.7,"x":-449.8,"y":-151.2,"r":4.0,"c":"#9a958c"},{"id":"panel:edu-cn","name":"Education-CN Panel","type":"panel","meta":"面板 · 5 位评委：俞敏洪、张邦鑫、李可佳、吴俊东、萨尔曼·可汗","w":1.25,"x":-259.6,"y":-103.9,"r":10.2,"c":"#1a7a4a"},{"id":"judge:yuminhong","name":"俞敏洪","type":"judge","meta":"评委 · Michael Yu｜所属面板：edu-cn","w":0.7,"x":-432.3,"y":-191.8,"r":4.0,"c":"#9a958c"},{"id":"judge:zhangbangxin","name":"张邦鑫","type":"judge","meta":"评委 · Zhang Bangxin｜所属面板：edu-cn","w":0.7,"x":-441.1,"y":-232.3,"r":4.0,"c":"#9a958c"},{"id":"judge:salkhan","name":"萨尔曼·可汗","type":"judge","meta":"评委 · Sal Khan｜所属面板：edu-cn","w":0.7,"x":-406.1,"y":-306.8,"r":4.0,"c":"#9a958c"},{"id":"panel:luxury-en","name":"Luxury & Fashion Panel","type":"panel","meta":"面板 · 5 位评委：伯纳德·阿尔诺、安娜·温图尔、布鲁内罗·库奇内利、汤姆·福特、莎拉·伯顿","w":1.25,"x":-211.6,"y":-194.9,"r":10.2,"c":"#1a7a4a"},{"id":"judge:arnault","name":"伯纳德·阿尔诺","type":"judge","meta":"评委 · Bernard Arnault｜所属面板：luxury-en","w":0.7,"x":-321.4,"y":-415.8,"r":4.0,"c":"#9a958c"},{"id":"judge:awintour","name":"安娜·温图尔","type":"judge","meta":"评委 · Anna Wintour｜所属面板：luxury-en","w":0.7,"x":-316.5,"y":-366.9,"r":4.0,"c":"#9a958c"},{"id":"judge:cucinelli","name":"布鲁内罗·库奇内利","type":"judge","meta":"评委 · Brunello Cucinelli｜所属面板：luxury-en","w":0.7,"x":-64.0,"y":-491.1,"r":4.0,"c":"#9a958c"},{"id":"judge:tomford","name":"汤姆·福特","type":"judge","meta":"评委 · Tom Ford｜所属面板：luxury-en","w":0.7,"x":-48.4,"y":-465.1,"r":4.0,"c":"#9a958c"},{"id":"judge:burton","name":"莎拉·伯顿","type":"judge","meta":"评委 · Sarah Burton｜所属面板：luxury-en","w":0.7,"x":-127.8,"y":-467.2,"r":4.0,"c":"#9a958c"},{"id":"panel:security-cn-global","name":"Security CN Global 6-Judge Panel","type":"panel","meta":"面板 · 6 位评委：周鸿祎、张明正、任正非、黄仁勋、马斯克、萨提亚·纳德拉","w":1.25,"x":47.3,"y":-269.1,"r":10.2,"c":"#1a7a4a"},{"id":"judge:zhangmingzheng","name":"张明正","type":"judge","meta":"评委 · Steve Chang｜所属面板：security-cn-global","w":0.7,"x":-46.5,"y":-517.1,"r":4.0,"c":"#9a958c"},{"id":"judge:renzhengfei","name":"任正非","type":"judge","meta":"评委 · Ren Zhengfei｜所属面板：security-cn-global","w":0.7,"x":53.6,"y":-489.0,"r":4.0,"c":"#9a958c"},{"id":"judge:jensenhuang","name":"黄仁勋","type":"judge","meta":"评委 · Jensen Huang｜所属面板：security-cn-global","w":0.7,"x":149.1,"y":-503.7,"r":4.0,"c":"#9a958c"},{"id":"judge:satyanadella","name":"萨提亚·纳德拉","type":"judge","meta":"评委 · Satya Nadella｜所属面板：security-cn-global","w":0.7,"x":282.8,"y":-434.8,"r":4.0,"c":"#9a958c"},{"id":"panel:vc-cn","name":"VC-CN Panel","type":"panel","meta":"面板 · 5 位评委：朱啸虎、张磊、徐新、雷军、沈南鹏","w":1.25,"x":116.6,"y":-251.0,"r":10.2,"c":"#1a7a4a"},{"id":"judge:zhanglei","name":"张磊","type":"judge","meta":"评委 · Zhang Lei｜所属面板：vc-cn","w":0.7,"x":360.0,"y":-385.8,"r":4.0,"c":"#9a958c"},{"id":"judge:xuxin","name":"徐新","type":"judge","meta":"评委 · Kathy Xu｜所属面板：vc-cn","w":0.7,"x":349.2,"y":-358.8,"r":4.0,"c":"#9a958c"},{"id":"judge:shennanpeng","name":"沈南鹏","type":"judge","meta":"评委 · Neil Shen｜所属面板：vc-cn","w":0.7,"x":312.9,"y":-344.6,"r":4.0,"c":"#9a958c"},{"id":"panel:vc-en","name":"VC-EN Panel","type":"panel","meta":"面板 · 5 位评委：马克·安德森、保罗·格雷厄姆、彼得·蒂尔、纳瓦尔、里德·霍夫曼","w":1.25,"x":263.4,"y":-37.3,"r":10.2,"c":"#1a7a4a"},{"id":"judge:pmarca","name":"马克·安德森","type":"judge","meta":"评委 · Marc Andreessen｜所属面板：vc-en","w":0.7,"x":513.6,"y":-141.7,"r":4.0,"c":"#9a958c"},{"id":"judge:paulg","name":"保罗·格雷厄姆","type":"judge","meta":"评委 · Paul Graham｜所属面板：vc-en","w":0.7,"x":510.2,"y":-82.3,"r":4.0,"c":"#9a958c"},{"id":"judge:pthiel","name":"彼得·蒂尔","type":"judge","meta":"评委 · Peter Thiel｜所属面板：vc-en","w":0.7,"x":487.9,"y":-186.7,"r":4.0,"c":"#9a958c"},{"id":"judge:naval","name":"纳瓦尔","type":"judge","meta":"评委 · Naval Ravikant｜所属面板：vc-en","w":0.7,"x":524.1,"y":-90.4,"r":4.0,"c":"#9a958c"},{"id":"judge:rhoffman","name":"里德·霍夫曼","type":"judge","meta":"评委 · Reid Hoffman｜所属面板：vc-en","w":0.7,"x":477.3,"y":-27.3,"r":4.0,"c":"#9a958c"},{"id":"brand:lenovo","name":"lenovo","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W3·W5·W6·W9","w":1.2,"x":413.2,"y":48.5,"r":9.1,"c":"#111111"},{"id":"brand:chengshi-auto","name":"chengshi-auto","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W3·W9","w":1.1,"x":250.1,"y":317.0,"r":8.8,"c":"#111111"},{"id":"brand:anthropic","name":"anthropic","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W2·W4·W8·W9","w":1.25,"x":111.4,"y":400.7,"r":9.2,"c":"#111111"},{"id":"brand:openai","name":"openai","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W2·W4·W6·W8·W9","w":1.3,"x":100.9,"y":402.2,"r":9.3,"c":"#111111"},{"id":"brand:dji","name":"dji","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W4·W6·W8·W9","w":1.25,"x":-121.9,"y":344.5,"r":9.2,"c":"#111111"},{"id":"brand:qianxin","name":"qianxin","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W3·W4·W5·W8","w":1.2,"x":-236.2,"y":314.8,"r":9.1,"c":"#111111"},{"id":"brand:kimichat","name":"kimichat","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W2·W6·W7·W8·W9","w":1.3,"x":-406.6,"y":86.6,"r":9.3,"c":"#111111"},{"id":"brand:zhipu","name":"zhipu","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W2·W3·W5·W6·W7·W8·W9","w":1.4,"x":-432.6,"y":-37.8,"r":9.5,"c":"#111111"},{"id":"brand:tal-education","name":"tal-education","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W2·W4·W5·W6","w":1.25,"x":-394.6,"y":-130.3,"r":9.2,"c":"#111111"},{"id":"brand:genki-forest","name":"genki-forest","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W2·W4·W6·W9","w":1.25,"x":-298.2,"y":-283.7,"r":9.2,"c":"#111111"},{"id":"brand:meituan","name":"meituan","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W2·W4·W5·W6·W9","w":1.3,"x":-107.1,"y":-381.6,"r":9.3,"c":"#111111"},{"id":"brand:hermes","name":"hermes","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W2·W5·W6","w":1.15,"x":23.0,"y":-413.5,"r":9.0,"c":"#111111"},{"id":"brand:asiainfo","name":"asiainfo","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W3·W5·W7·W9","w":1.2,"x":212.0,"y":-313.0,"r":9.1,"c":"#111111"},{"id":"brand:spacex","name":"spacex","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W2·W3·W4·W5·W7·W8","w":1.35,"x":352.0,"y":-139.1,"r":9.4,"c":"#111111"},{"id":"brand:yuanxin","name":"yuanxin","type":"brand","meta":"品牌 · ｜面板 —｜归一化 —｜核心监控维度：W1·W3·W8·W9","w":1.2,"x":370.5,"y":-4.2,"r":9.1,"c":"#111111"}],"edges":[{"s":"wdim:W1","t":"lens:Signal"},{"s":"wdim:W1","t":"lens:Identity"},{"s":"wdim:W2","t":"lens:Identity"},{"s":"wdim:W2","t":"lens:Category"},{"s":"wdim:W3","t":"lens:Leverage"},{"s":"wdim:W3","t":"lens:Signal"},{"s":"wdim:W4","t":"lens:Signal"},{"s":"wdim:W4","t":"lens:Leverage"},{"s":"wdim:W5","t":"lens:Signal"},{"s":"wdim:W6","t":"lens:Signal"},{"s":"wdim:W6","t":"lens:Identity"},{"s":"wdim:W7","t":"lens:Origin"},{"s":"wdim:W7","t":"lens:Leverage"},{"s":"wdim:W8","t":"lens:Leverage"},{"s":"wdim:W8","t":"lens:Category"},{"s":"wdim:W9","t":"lens:Leverage"},{"s":"panel:ai-app-cn","t":"judge:yangzhilin"},{"s":"panel:ai-app-cn","t":"judge:wanghuiwen"},{"s":"panel:ai-app-cn","t":"judge:zhouhongyi"},{"s":"panel:ai-app-cn","t":"judge:fusheng"},{"s":"panel:ai-app-cn","t":"judge:zhuxiaohu"},{"s":"panel:auto","t":"judge:musk"},{"s":"panel:auto","t":"judge:leijun"},{"s":"panel:auto","t":"judge:lixiang"},{"s":"panel:auto","t":"judge:hexiaopeng"},{"s":"panel:auto","t":"judge:libin"},{"s":"panel:consumer-cn","t":"judge:jiangnanchun"},{"s":"panel:consumer-cn","t":"judge:zhanglan"},{"s":"panel:consumer-cn","t":"judge:luoyonghao"},{"s":"panel:consumer-cn","t":"judge:yangjianhui"},{"s":"panel:consumer-cn","t":"judge:zhongshanshan"},{"s":"panel:cross-border","t":"judge:huangzheng"},{"s":"panel:cross-border","t":"judge:yangjianhui"},{"s":"panel:cross-border","t":"judge:shouzichew"},{"s":"panel:cross-border","t":"judge:chennian"},{"s":"panel:cross-border","t":"judge:zhuangshuai"},{"s":"panel:default","t":"judge:fusheng"},{"s":"panel:default","t":"judge:jobs"},{"s":"panel:default","t":"judge:likejia"},{"s":"panel:default","t":"judge:wu-jundong"},{"s":"panel:default","t":"judge:zhang-yiming"},{"s":"panel:edu-cn","t":"judge:yuminhong"},{"s":"panel:edu-cn","t":"judge:zhangbangxin"},{"s":"panel:edu-cn","t":"judge:likejia"},{"s":"panel:edu-cn","t":"judge:wu-jundong"},{"s":"panel:edu-cn","t":"judge:salkhan"},{"s":"panel:luxury-en","t":"judge:arnault"},{"s":"panel:luxury-en","t":"judge:awintour"},{"s":"panel:luxury-en","t":"judge:cucinelli"},{"s":"panel:luxury-en","t":"judge:tomford"},{"s":"panel:luxury-en","t":"judge:burton"},{"s":"panel:security-cn-global","t":"judge:zhouhongyi"},{"s":"panel:security-cn-global","t":"judge:zhangmingzheng"},{"s":"panel:security-cn-global","t":"judge:renzhengfei"},{"s":"panel:security-cn-global","t":"judge:jensenhuang"},{"s":"panel:security-cn-global","t":"judge:musk"},{"s":"panel:security-cn-global","t":"judge:satyanadella"},{"s":"panel:vc-cn","t":"judge:zhuxiaohu"},{"s":"panel:vc-cn","t":"judge:zhanglei"},{"s":"panel:vc-cn","t":"judge:xuxin"},{"s":"panel:vc-cn","t":"judge:leijun"},{"s":"panel:vc-cn","t":"judge:shennanpeng"},{"s":"panel:vc-en","t":"judge:pmarca"},{"s":"panel:vc-en","t":"judge:paulg"},{"s":"panel:vc-en","t":"judge:pthiel"},{"s":"panel:vc-en","t":"judge:naval"},{"s":"panel:vc-en","t":"judge:rhoffman"},{"s":"brand:lenovo","t":"wdim:W3"},{"s":"brand:lenovo","t":"wdim:W5"},{"s":"brand:lenovo","t":"wdim:W6"},{"s":"brand:lenovo","t":"wdim:W9"},{"s":"brand:lenovo","t":"wdim:W1","weak":1},{"s":"brand:lenovo","t":"wdim:W2","weak":1},{"s":"brand:lenovo","t":"wdim:W4","weak":1},{"s":"brand:lenovo","t":"wdim:W7","weak":1},{"s":"brand:lenovo","t":"wdim:W8","weak":1},{"s":"brand:chengshi-auto","t":"wdim:W3"},{"s":"brand:chengshi-auto","t":"wdim:W9"},{"s":"brand:chengshi-auto","t":"wdim:W1","weak":1},{"s":"brand:chengshi-auto","t":"wdim:W4","weak":1},{"s":"brand:chengshi-auto","t":"wdim:W6","weak":1},{"s":"brand:chengshi-auto","t":"wdim:W7","weak":1},{"s":"brand:chengshi-auto","t":"wdim:W8","weak":1},{"s":"brand:anthropic","t":"wdim:W1"},{"s":"brand:anthropic","t":"wdim:W2"},{"s":"brand:anthropic","t":"wdim:W4"},{"s":"brand:anthropic","t":"wdim:W8"},{"s":"brand:anthropic","t":"wdim:W9"},{"s":"brand:anthropic","t":"wdim:W3","weak":1},{"s":"brand:anthropic","t":"wdim:W5","weak":1},{"s":"brand:anthropic","t":"wdim:W6","weak":1},{"s":"brand:anthropic","t":"wdim:W7","weak":1},{"s":"brand:openai","t":"wdim:W1"},{"s":"brand:openai","t":"wdim:W2"},{"s":"brand:openai","t":"wdim:W4"},{"s":"brand:openai","t":"wdim:W6"},{"s":"brand:openai","t":"wdim:W8"},{"s":"brand:openai","t":"wdim:W9"},{"s":"brand:openai","t":"wdim:W3","weak":1},{"s":"brand:openai","t":"wdim:W5","weak":1},{"s":"brand:openai","t":"wdim:W7","weak":1},{"s":"brand:dji","t":"wdim:W1"},{"s":"brand:dji","t":"wdim:W4"},{"s":"brand:dji","t":"wdim:W6"},{"s":"brand:dji","t":"wdim:W8"},{"s":"brand:dji","t":"wdim:W9"},{"s":"brand:dji","t":"wdim:W2","weak":1},{"s":"brand:dji","t":"wdim:W3","weak":1},{"s":"brand:dji","t":"wdim:W7","weak":1},{"s":"brand:qianxin","t":"wdim:W3"},{"s":"brand:qianxin","t":"wdim:W4"},{"s":"brand:qianxin","t":"wdim:W5"},{"s":"brand:qianxin","t":"wdim:W8"},{"s":"brand:qianxin","t":"wdim:W1","weak":1},{"s":"brand:qianxin","t":"wdim:W7","weak":1},{"s":"brand:qianxin","t":"wdim:W9","weak":1},{"s":"brand:kimichat","t":"wdim:W1"},{"s":"brand:kimichat","t":"wdim:W2"},{"s":"brand:kimichat","t":"wdim:W6"},{"s":"brand:kimichat","t":"wdim:W7"},{"s":"brand:kimichat","t":"wdim:W8"},{"s":"brand:kimichat","t":"wdim:W9"},{"s":"brand:kimichat","t":"wdim:W4","weak":1},{"s":"brand:kimichat","t":"wdim:W5","weak":1},{"s":"brand:zhipu","t":"wdim:W1"},{"s":"brand:zhipu","t":"wdim:W2"},{"s":"brand:zhipu","t":"wdim:W3"},{"s":"brand:zhipu","t":"wdim:W5"},{"s":"brand:zhipu","t":"wdim:W6"},{"s":"brand:zhipu","t":"wdim:W7"},{"s":"brand:zhipu","t":"wdim:W8"},{"s":"brand:zhipu","t":"wdim:W9"},{"s":"brand:zhipu","t":"wdim:W4","weak":1},{"s":"brand:tal-education","t":"wdim:W1"},{"s":"brand:tal-education","t":"wdim:W2"},{"s":"brand:tal-education","t":"wdim:W4"},{"s":"brand:tal-education","t":"wdim:W5"},{"s":"brand:tal-education","t":"wdim:W6"},{"s":"brand:tal-education","t":"wdim:W7","weak":1},{"s":"brand:tal-education","t":"wdim:W8","weak":1},{"s":"brand:genki-forest","t":"wdim:W1"},{"s":"brand:genki-forest","t":"wdim:W2"},{"s":"brand:genki-forest","t":"wdim:W4"},{"s":"brand:genki-forest","t":"wdim:W6"},{"s":"brand:genki-forest","t":"wdim:W9"},{"s":"brand:genki-forest","t":"wdim:W7","weak":1},{"s":"brand:meituan","t":"wdim:W1"},{"s":"brand:meituan","t":"wdim:W2"},{"s":"brand:meituan","t":"wdim:W4"},{"s":"brand:meituan","t":"wdim:W5"},{"s":"brand:meituan","t":"wdim:W6"},{"s":"brand:meituan","t":"wdim:W9"},{"s":"brand:meituan","t":"wdim:W7","weak":1},{"s":"brand:meituan","t":"wdim:W8","weak":1},{"s":"brand:hermes","t":"wdim:W2"},{"s":"brand:hermes","t":"wdim:W5"},{"s":"brand:hermes","t":"wdim:W6"},{"s":"brand:hermes","t":"wdim:W1","weak":1},{"s":"brand:hermes","t":"wdim:W4","weak":1},{"s":"brand:hermes","t":"wdim:W7","weak":1},{"s":"brand:asiainfo","t":"wdim:W3"},{"s":"brand:asiainfo","t":"wdim:W5"},{"s":"brand:asiainfo","t":"wdim:W7"},{"s":"brand:asiainfo","t":"wdim:W9"},{"s":"brand:asiainfo","t":"wdim:W1","weak":1},{"s":"brand:asiainfo","t":"wdim:W4","weak":1},{"s":"brand:asiainfo","t":"wdim:W8","weak":1},{"s":"brand:spacex","t":"wdim:W1"},{"s":"brand:spacex","t":"wdim:W2"},{"s":"brand:spacex","t":"wdim:W3"},{"s":"brand:spacex","t":"wdim:W4"},{"s":"brand:spacex","t":"wdim:W5"},{"s":"brand:spacex","t":"wdim:W7"},{"s":"brand:spacex","t":"wdim:W8"},{"s":"brand:spacex","t":"wdim:W6","weak":1},{"s":"brand:spacex","t":"wdim:W9","weak":1},{"s":"brand:yuanxin","t":"wdim:W1"},{"s":"brand:yuanxin","t":"wdim:W3"},{"s":"brand:yuanxin","t":"wdim:W8"},{"s":"brand:yuanxin","t":"wdim:W9"},{"s":"brand:yuanxin","t":"wdim:W2","weak":1},{"s":"brand:yuanxin","t":"wdim:W4","weak":1},{"s":"brand:yuanxin","t":"wdim:W5","weak":1},{"s":"brand:yuanxin","t":"wdim:W7","weak":1}]}</script>
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  var host=document.getElementById('kg-host');
+  var data=JSON.parse(document.getElementById('kg-data').textContent);
+  var nodes=data.nodes, edges=data.edges, byId={}; nodes.forEach(function(n){byId[n.id]=n;});
+  var TYPE_LABEL={lens:'镜头',wdim:'监控维度',brand:'品牌',panel:'面板',judge:'评委'};
+
+  // viewBox 适配所有点
+  var xs=nodes.map(function(n){return n.x;}), ys=nodes.map(function(n){return n.y;});
+  var pad=60, minX=Math.min.apply(0,xs)-pad, maxX=Math.max.apply(0,xs)+pad, minY=Math.min.apply(0,ys)-pad, maxY=Math.max.apply(0,ys)+pad;
+  var vb={x:minX,y:minY,w:maxX-minX,h:maxY-minY}, home={x:minX,y:minY,w:maxX-minX,h:maxY-minY};
+
+  var svg=document.createElementNS(NS,'svg'); svg.setAttribute('class','kg');
+  svg.setAttribute('aria-label','知识星图:'+nodes.length+' 个实体按真实关系连成的关联图谱');
+  function setVB(){ svg.setAttribute('viewBox',vb.x+' '+vb.y+' '+vb.w+' '+vb.h); }
+  setVB(); host.appendChild(svg);
+  var gE=document.createElementNS(NS,'g'), gN=document.createElementNS(NS,'g'); svg.appendChild(gE); svg.appendChild(gN);
+
+  // 邻接
+  var adj={}; nodes.forEach(function(n){adj[n.id]={};});
+  edges.forEach(function(e){ if(byId[e.s]&&byId[e.t]){adj[e.s][e.t]=1;adj[e.t][e.s]=1;} });
+
+  // 边
+  edges.forEach(function(e){ if(!byId[e.s]||!byId[e.t])return;
+    var ln=document.createElementNS(NS,'line'); ln.setAttribute('class','kg-edge'+(e.weak?' weak':''));
+    ln.setAttribute('x1',byId[e.s].x);ln.setAttribute('y1',byId[e.s].y);ln.setAttribute('x2',byId[e.t].x);ln.setAttribute('y2',byId[e.t].y);
+    e.el=ln; gE.appendChild(ln);
+  });
+  // 节点
+  nodes.forEach(function(n){
+    var g=document.createElementNS(NS,'g'); g.setAttribute('class','kg-node'); g.setAttribute('data-type',n.type);
+    var c=document.createElementNS(NS,'circle'); c.setAttribute('cx',n.x);c.setAttribute('cy',n.y);c.setAttribute('r',n.r);c.setAttribute('fill',n.c);
+    var t=document.createElementNS(NS,'text'); t.setAttribute('x',n.x);t.setAttribute('y',n.y-n.r-2);t.setAttribute('text-anchor','middle');t.textContent=n.name;
+    g.appendChild(c); g.appendChild(t); n.g=g;
+    if(n.type==='lens'||n.type==='wdim'){g.classList.add('lab');} // 核心维度常显标签
+    g.addEventListener('mouseenter',function(){focus(n.id);});
+    g.addEventListener('click',function(ev){ev.preventDefault();openPanel(n.id);focus(n.id);});
+    gN.appendChild(g);
+  });
+  svg.addEventListener('mouseleave',function(){ if(!locked)focus(null); });
+
+  var locked=null;
+  function focus(id){
+    if(id===null){ nodes.forEach(function(n){n.g.classList.remove('hi','lo');n.g.classList.toggle('lab',n.type==='lens'||n.type==='wdim');});
+      edges.forEach(function(e){e.el&&e.el.classList.remove('hi','lo');}); return; }
+    nodes.forEach(function(n){ var near=(n.id===id)||adj[id][n.id];
+      n.g.classList.toggle('hi',n.id===id); n.g.classList.toggle('lo',!near); n.g.classList.toggle('lab',near); });
+    edges.forEach(function(e){ var on=(e.s===id||e.t===id); e.el.classList.toggle('hi',on); e.el.classList.toggle('lo',!on); });
+  }
+
+  // 详情面板
+  var panel=document.createElement('div'); panel.className='panel';
+  panel.innerHTML='<button class="px" aria-label="关闭">×</button><span class="ptype"></span><h3></h3><div class="pmeta"></div><div class="pconn"></div>';
+  host.appendChild(panel);
+  panel.querySelector('.px').addEventListener('click',function(){panel.classList.remove('on');locked=null;focus(null);});
+  function openPanel(id){
+    var n=byId[id]; locked=id;
+    var pt=panel.querySelector('.ptype'); pt.textContent=TYPE_LABEL[n.type]; pt.style.background=n.c;
+    panel.querySelector('h3').textContent=n.name;
+    panel.querySelector('.pmeta').textContent=n.meta;
+    var conns=Object.keys(adj[id]).map(function(k){return byId[k];}).filter(Boolean);
+    var byT={}; conns.forEach(function(m){(byT[m.type]=byT[m.type]||[]).push(m.name);});
+    var html=Object.keys(byT).map(function(t){return '<b>'+TYPE_LABEL[t]+'</b>('+byT[t].length+')：'+byT[t].slice(0,8).join('、')+(byT[t].length>8?'…':'');}).join('<br>');
+    panel.querySelector('.pconn').innerHTML=conns.length?('关联 '+conns.length+' 个：<br>'+html):'（无关联）';
+    panel.classList.add('on');
+  }
+
+  // 类型筛选
+  var off={};
+  function applyVis(){ nodes.forEach(function(n){n.g.style.display=off[n.type]?'none':'';});
+    edges.forEach(function(e){e.el.style.display=(off[byId[e.s].type]||off[byId[e.t].type])?'none':'';}); }
+  Array.prototype.forEach.call(document.querySelectorAll('.tog'),function(el){
+    el.addEventListener('click',function(){var ty=el.getAttribute('data-type');off[ty]=!off[ty];el.classList.toggle('off',off[ty]);applyVis();});
+  });
+
+  // 搜索
+  document.getElementById('kg-search').addEventListener('input',function(e){
+    var q=e.target.value.trim().toLowerCase();
+    if(!q){nodes.forEach(function(n){n.g.classList.remove('match','nomatch');n.g.classList.toggle('lab',n.type==='lens'||n.type==='wdim');});return;}
+    nodes.forEach(function(n){var m=n.name.toLowerCase().indexOf(q)>=0;n.g.classList.toggle('match',m);n.g.classList.toggle('nomatch',!m);n.g.classList.toggle('lab',m);});
+  });
+
+  // 缩放 + 平移
+  svg.addEventListener('wheel',function(ev){ev.preventDefault();
+    var pt=svg.createSVGPoint();pt.x=ev.clientX;pt.y=ev.clientY;var m=svg.getScreenCTM();if(!m)return;var p=pt.matrixTransform(m.inverse());
+    var k=ev.deltaY<0?0.85:1.18; var nw=Math.max(120,Math.min(home.w*2.4,vb.w*k)), nh=nw*(vb.h/vb.w);
+    vb.x=p.x-(p.x-vb.x)*(nw/vb.w); vb.y=p.y-(p.y-vb.y)*(nh/vb.h); vb.w=nw; vb.h=nh; setVB();
+  },{passive:false});
+  var drag=null;
+  svg.addEventListener('pointerdown',function(ev){drag={x:ev.clientX,y:ev.clientY,vx:vb.x,vy:vb.y};svg.classList.add('drag');svg.setPointerCapture(ev.pointerId);});
+  svg.addEventListener('pointermove',function(ev){if(!drag)return;var m=svg.getScreenCTM();if(!m)return;var s=vb.w/svg.clientWidth;vb.x=drag.vx-(ev.clientX-drag.x)*s;vb.y=drag.vy-(ev.clientY-drag.y)*s;setVB();});
+  svg.addEventListener('pointerup',function(){drag=null;svg.classList.remove('drag');});
+  document.getElementById('kg-reset').addEventListener('click',function(){vb.x=home.x;vb.y=home.y;vb.w=home.w;vb.h=home.h;setVB();panel.classList.remove('on');locked=null;focus(null);document.getElementById('kg-search').value='';document.getElementById('kg-search').dispatchEvent(new Event('input'));});
+})();
+</script>
+</body>
+</html>
