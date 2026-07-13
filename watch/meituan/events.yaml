@@ -81,3 +81,18 @@
   - identity
   - signal
   note: 2025 夏季即时零售补贴战成公共舆论焦点(W2);监管约谈属 W4 另计;日期以 URL 内嵌(20250915)自证。
+- id: 2025-02-21-meituan-006
+  date: '2025-02-21'
+  dim: W9
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: 美团京东同日宣布为全职骑手缴纳社保,美团稳定骑手近百万
+  quote: 美团京东同天宣布将为全职骑手缴纳社保 将对外卖行业带来怎样的影响？
+  quote_type: title
+  url: https://china.cnr.cn/gdgg/20250221/t20250221_527078237.shtml
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - leverage
+  - signal
+  note: 生态/骑手成本结构性变化(稳定骑手近百万);同期新浪报道美团市值跌约 800 亿;日期以 URL 内嵌(20250221)自证。
