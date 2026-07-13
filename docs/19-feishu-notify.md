@@ -35,6 +35,11 @@ GitHub Action 会 diff 出变化、拼成一张飞书卡片,POST 到飞书自定
 3. 完成。下次合并涉及 `watch/**` 或 `reports-meta.yaml` 的 PR 即自动推送。
    未配 `FEISHU_WEBHOOK` 时工作流直接跳过、不报错(非阻断)。
 
+**立刻验证(手动测试按钮)**:配好 secret 后不用等真实变化 —— 仓库
+**Actions → Notify Feishu → Run workflow**(选 `main` 分支)→ 会往群里发一张
+「🔧 连通性测试」卡片。群里收到即说明 webhook / 签名 / 机器人进群都 OK。
+(该测试卡片明确标注为测试、不含品牌数据。)
+
 ## 本地预览 / 调试
 
 不 POST,只打印将要发送的卡片 JSON(拿任意两个提交做 diff):
