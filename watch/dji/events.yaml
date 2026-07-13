@@ -71,3 +71,18 @@
   note: >-
     002 的市场面传导实例:Covered List 生效后,DJI 新品(Lito 1/X1 等)全球上市
     而美国缺席,行业媒体开始按此叙事框架报道。日期以 URL 内嵌(2026/04/23)自证。
+- id: 2025-01-14-dji-005
+  date: '2025-01-14'
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: DJI 移除美区自动禁飞区(No-Fly Zone),改为警告区,安全责任转交飞手
+  quote: 'No more automatic No-Fly Zones: DJI puts drone safety on you'
+  quote_type: title
+  url: https://dronedj.com/2025/01/14/dji-geofencing-no-fly-zone/
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - signal
+  - identity
+  note: 产品安全决策:2013 起的地理围栏改为 FAA 数据警告区;叠加 LA 灭火机相撞事件与对华敌意,引发安全口碑争议;日期以 URL 内嵌(2025/01/14)自证。
