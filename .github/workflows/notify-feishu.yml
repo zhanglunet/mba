@@ -1,0 +1,47 @@
+name: Notify Feishu
+
+# 品牌监控 / 舆情信号有变化时,推送到飞书群。
+# 触发:push 到 main(合并 PR 即触发)。比较本次 push 的 before..after 两个提交,
+# 由 scripts/notify_feishu.py 聚合出「新增 P0/P1 事件 / 新命中建议重审 / 评分变动」
+# 三类变化,POST 到飞书自定义机器人 webhook。内容全部取自仓库文件(反捏造)。
+#
+# 需要在仓库 Settings → Secrets and variables → Actions 配:
+#   FEISHU_WEBHOOK      (必需)飞书自定义机器人 webhook URL
+#   FEISHU_SIGN_SECRET  (可选)机器人「签名校验」密钥,配了才加签
+# 未配 FEISHU_WEBHOOK 时本 job 直接跳过,不报错(非阻断)。
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "watch/**"
+      - "site/reports-meta.yaml"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # notify_feishu.py 要 git show <before>:<path> 取旧版本
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install deps
+        run: pip install --quiet pyyaml
+
+      - name: Push change digest to Feishu
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SIGN_SECRET: ${{ secrets.FEISHU_SIGN_SECRET }}
+        run: |
+          if [ -z "${FEISHU_WEBHOOK:-}" ]; then
+            echo "FEISHU_WEBHOOK 未配置 —— 跳过飞书推送(非阻断)。配置方法见 docs/19。"
+            exit 0
+          fi
+          python3 scripts/notify_feishu.py \
+            --base "${{ github.event.before }}" \
+            --head "${{ github.sha }}"
