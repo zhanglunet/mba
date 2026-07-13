@@ -87,3 +87,18 @@
   - identity
   - category
   note: 平替走红既冲击稀缺叙事、又反证 Birkin 图腾地位(双面);日期以 URL 内嵌(2024/12/30)自证。
+- id: 2025-02-14-hermes-006
+  date: '2025-02-14'
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 爱马仕 2024 全年营收 +15% 至 €15.2B、净利 +6.8% 至 €4.6B,逆奢侈品下行、拉大领先
+  quote: Hermès bucks luxury sales slowdown and extends lead over rivals
+  quote_type: title
+  url: https://www.euronews.com/business/2025/02/14/hermes-bucks-luxury-sales-slowdown-and-extends-lead-over-rivals
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - signal
+  - leverage
+  note: Q4 销售 +18% 超预期(日本 +23%);首破 €15B;RMS.PA 资本市场硬信号,补 hermes 此前空缺的 W5;日期以 URL 内嵌(2025/02/14)自证。

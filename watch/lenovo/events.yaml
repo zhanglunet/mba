@@ -53,3 +53,18 @@
   note: >-
     发布会预热稿,信号弱(P3)但标记「混合式 AI 全家桶」的品牌议程节奏;
     8 月新品发布是下一个观察点。日期以 URL 内嵌(2026-07-12)自证。
+- id: 2026-05-25-lenovo-004
+  date: '2026-05-25'
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: 联想 2025/26 财年史上最佳:营收+20.3%、净利+42.1%,AI 收入翻番,杨元庆定千亿美元目标
+  quote: 联想交“史上最佳”财报！杨元庆终于笑了
+  quote_type: title
+  url: https://news.qq.com/rain/a/20260525A02F3700
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - signal
+  - leverage
+  note: AI 业务占集团营收约 38%、AI PC 出货超 1/3;杨元庆称两年内营收超千亿美元;日期以 URL 内嵌(20260525)自证。
