@@ -27,6 +27,7 @@
 | 16 | [16-brand-watch-implementation.md](16-brand-watch-implementation.md) | 贡献者 | **Brand Watch 实现与过程记录**:W 系列开发计划、数据层与校验器实现、源可达性验证表(含 b2b.10086.cn TLS workaround)、试点采集记录与 SOP;**做一项记一项** |
 | 17 | [17-logo-design.md](17-logo-design.md) | 设计 / 对外 | 站标设计说明与使用规范:五镜头雷达 glyph + 字标(线上版 [mbabrand.com/logo-design.html](https://mbabrand.com/logo-design.html)) |
 | 18 | [18-social-fulltext.md](18-social-fulltext.md) | 贡献者 / 运维 | 中文社媒正文(知乎/微博/小红书)免费方案调研(无影平替)+ 本机 Playwright 抓取脚本(`scripts/social-fetch/`);线上版 [mbabrand.com/social-fetch.html](https://mbabrand.com/social-fetch.html) |
+| 19 | [19-feishu-notify.md](19-feishu-notify.md) | 运维 / 用户 | **飞书群推送**:品牌监控/舆情信号有变化(新增 P0/P1 事件 / 建议重审 / 评分变动)时,CI 合并到 main 自动推一张飞书卡片;配置(webhook + 可选签名)、门槛、卡片格式、`--dry-run` 调试 |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(原始设计草案) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |
