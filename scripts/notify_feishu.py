@@ -233,12 +233,52 @@ def post_feishu(url, card, secret=None, timeout=10):
     return False, f"feishu error: {raw[:200]}"
 
 
+def build_test_card():
+    """一张明确标注为「测试」的连通性卡片 —— 手动触发用,验证 webhook / 签名 / 进群是否 OK。
+    不含任何品牌数据,不冒充真实变化。"""
+    today = datetime.date.today().isoformat()
+    return {
+        "msg_type": "interactive",
+        "card": {
+            "config": {"wide_screen_mode": True},
+            "header": {"template": "turquoise",
+                       "title": {"tag": "plain_text", "content": f"🔧 MBA 飞书推送 · 连通性测试 · {today}"}},
+            "elements": [
+                {"tag": "div", "text": {"tag": "lark_md",
+                 "content": "**如果你在群里看到这条,说明配置成功 ✅**\n"
+                            "webhook 可达、签名(若配)正确、机器人已进群。\n\n"
+                            "之后每当合并涉及 **舆情事件 / 评分** 的 PR 到 main,"
+                            "就会自动推送「新增 P0/P1 事件 / 建议重审 / 评分变动」的真实变化卡片。"}},
+                {"tag": "hr"},
+                {"tag": "note", "elements": [{"tag": "lark_md",
+                 "content": f"MBA 品牌监控 · 手动测试消息(非真实告警)· [{SITE}]({SITE})"}]},
+            ],
+        },
+    }
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", default="")
     ap.add_argument("--head", default="HEAD")
     ap.add_argument("--dry-run", action="store_true", help="只打印卡片 JSON,不 POST")
+    ap.add_argument("--test", action="store_true", help="发一张「连通性测试」卡片(不 diff,手动验证用)")
     args = ap.parse_args()
+
+    # 手动连通性测试:发测试卡片即返回
+    if args.test:
+        card = build_test_card()
+        if args.dry_run:
+            print("[feishu] DRY-RUN(--test)测试卡片如下:\n")
+            print(json.dumps(card, ensure_ascii=False, indent=2))
+            return 0
+        webhook = os.environ.get("FEISHU_WEBHOOK", "").strip()
+        if not webhook:
+            print("[feishu] 未设置 FEISHU_WEBHOOK — 无法发测试卡片")
+            return 1
+        ok, detail = post_feishu(webhook, card, os.environ.get("FEISHU_SIGN_SECRET", "").strip() or None)
+        print(f"[feishu] 测试卡片:{'成功' if ok else '失败'}（{detail}）")
+        return 0 if ok else 1
 
     base = resolve_base(args.base, args.head)
     if base is None:

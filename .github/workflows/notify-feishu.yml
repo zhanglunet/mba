@@ -17,6 +17,7 @@ on:
     paths:
       - "watch/**"
       - "site/reports-meta.yaml"
+  workflow_dispatch: # 手动触发:Actions → Notify Feishu → Run workflow,发一张连通性测试卡片
 
 jobs:
   notify:
@@ -42,6 +43,12 @@ jobs:
             echo "FEISHU_WEBHOOK 未配置 —— 跳过飞书推送(非阻断)。配置方法见 docs/19。"
             exit 0
           fi
-          python3 scripts/notify_feishu.py \
-            --base "${{ github.event.before }}" \
-            --head "${{ github.sha }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # 手动触发:发一张连通性测试卡片
+            python3 scripts/notify_feishu.py --test
+          else
+            # push 到 main:diff 出真实变化再推
+            python3 scripts/notify_feishu.py \
+              --base "${{ github.event.before }}" \
+              --head "${{ github.sha }}"
+          fi
