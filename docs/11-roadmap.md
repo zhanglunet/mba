@@ -10,7 +10,7 @@
 
 | 维度 | 状态 | 备注 |
 |------|------|------|
-| 版本 | **v0.4.3** | Brand Watch 舆情监控全链路(W1-W7);v0.4.2 实时联网研究 + 断点续跑;v0.4.1 首发 npm |
+| 版本 | **v0.4.4** | 知识星图(全维度 + 每品牌私有)+ 舆情/评分变化飞书群推送;v0.4.3 Brand Watch 舆情监控全链路(W1-W7);v0.4.2 实时联网研究 + 断点续跑;v0.4.1 首发 npm |
 | 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
 | 评委全档进度 | ✅ **42/43 全档** | 1 人仍在 seed（`zhanglan` 已严格核算诚实留 seed）；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |

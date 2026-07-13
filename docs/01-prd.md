@@ -148,7 +148,9 @@ MBA 用三条对应机制解决:
 - **v0.2.38** — `--panel-merge` 标志（Phase 5M：跨面板 N-Judge 对比 + Panel Comparison 报告节 + delta 热力图）；P2-B 8 品牌建档
 - **v0.3** — 把 seed-tier perspective 深化到 full tier(6 路调研,见 [10-deepening-perspectives.md](10-deepening-perspectives.md))+ dogfood 真实报告 **✅ 42/43 full + 1 诚实 seed(zhanglan);10 份旗舰报告**
 - **v0.4.0** — MCP 化(参考 [mcp-server-design.md](mcp-server-design.md))**✅ `mba-mcp-server`(14 工具、演化闭环、webhook 入站)已发 npm**
-- **v0.4.2** — 工程硬化:反捏造 firewall / 报告渲染 QA / self-conflict 三道 CI 硬 gate;真跑首个 EVOLUTION v2(anthropic);MCP Phase 3/4/5 + 持久层补单测(158);一致性清账 + `check_consistency.py`;`quality_check` 升为全量硬 gate(43/43 · 6/6)(当前)
+- **v0.4.2** — 工程硬化:反捏造 firewall / 报告渲染 QA / self-conflict 三道 CI 硬 gate;真跑首个 EVOLUTION v2(anthropic);MCP Phase 3/4/5 + 持久层补单测(158);一致性清账 + `check_consistency.py`;`quality_check` 升为全量硬 gate(43/43 · 6/6)
+- **v0.4.3** — Brand Watch 舆情监控全链路(W1-W7):watch 只建议、永不改分;数据层 + 校验硬 gate、触发评估器、`--watch` 进 skill + EVOLUTION 消费、首页徽章 + 时间线页;MCP 16 工具
+- **v0.4.4** — 品牌监控可视化与触达:全维度知识星图(`/starmap.html`,82 实体/184 边)+ 每品牌私有星图(`/starmap/<slug>.html`,评分矩阵+舆情+版本)+ 品牌监控/舆情变化自动推送飞书群(`notify-feishu.yml`)(当前)
 
 ## 11. 衍生需求(待评估)
 
