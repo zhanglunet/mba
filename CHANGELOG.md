@@ -4,6 +4,30 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
+## v0.4.4 — 2026-07-13
+
+**品牌监控的可视化与触达**:把已有的评分/舆情数据织成可交互的知识星图,并让变化
+主动推达飞书群。均为**取自仓库真实数据**的加法(反捏造),不改评分口径。
+
+### Added
+- **全维度知识星图** — `mbabrand.com/starmap.html`(`scripts/build_starmap.py`):
+  零依赖纯 SVG 星座图,**5 镜头 × 9 监控维度 × 15 品牌 × 10 面板 × 43 评委,
+  82 实体 / 184 条真实关系边**(维度→镜头、品牌→面板、品牌→监控维度 core/weak、
+  面板→评委),关系源自 `watch/matrix.yaml` + `panels/*.yaml` + `reports-meta.yaml`。
+  可搜索/类型筛选/点击聚焦/缩放平移/详情面板;首页 banner + 全站导航入口。
+- **每品牌私有知识星图** — `mbabrand.com/starmap/<slug>.html`(15 张,
+  `scripts/build_brand_starmap.py`,`site/starmap/` gitignore、部署随 watch 页重生成):
+  以单品牌为圆心的 ego 图,画出全局图没有的三样自有数据——内环 **5 镜头**(按评委均分)+
+  中环**评委**(细线=每位评委对每个镜头的逐格打分,report.md 评分矩阵 5×N 条真实边)+
+  外环**舆情事件流**(P0-P3 定大小、正/负向定颜色,连到其 `lens_map` 影响的镜头),
+  版本演化进详情面板。下钻入口:全局星图点品牌节点 + 首页每张卡片。
+- **飞书群推送** — 合并到 main 涉及 `watch/**` 或 `site/reports-meta.yaml` 时,
+  GitHub Action(`.github/workflows/notify-feishu.yml`)diff 出变化、拼一张飞书交互卡片
+  POST 到自定义机器人 webhook 进群。**门槛与首页「建议重审」同口径**(避免刷屏):
+  新增 **P0/P1** 事件 / 品牌**新命中**触发规则(复用 `evaluate_triggers.py`)/ **评分变动**。
+  `scripts/notify_feishu.py` 支持 `--dry-run` 预览与 `--test` 连通性卡片(`workflow_dispatch`
+  手动触发);内容全部取自仓库文件,含可选 HMAC-SHA256 签名;secrets 未配则跳过。见 docs/19。
+
 ## v0.4.3 — 2026-07-12
 
 **Brand Watch(舆情监控)整条链路落地**(docs/15 PRD · docs/16 过程记录,W1→W7):
