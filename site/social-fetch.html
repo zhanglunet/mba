@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>中文社媒正文抓取:免费方案 · MBA</title>
+<meta name="description" content="Brand Watch W2:拿知乎/微博/小红书正文全文的免费方案调研(无影平替)+ 本机 Playwright + storageState 抓取脚本,带反捏造与 ToS 红线。" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+<style>
+  :root { --ink:#111; --paper:#faf8f3; --muted:#6b6760; --rule:#1a1a1a; --accent:#c1440e; --card:#fff; --hair:#e2ddd3; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased;
+    font-family: ui-sans-serif, "Inter", -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 40px 28px 72px; }
+  header { border-bottom: 2px solid var(--rule); padding-bottom: 14px; margin-bottom: 30px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .mark { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .02em; font-size: 22px; line-height: 1; color: var(--ink); text-decoration: none; }
+  .mark .dot { color: var(--accent); }
+  .mark-glyph { display: block; flex-shrink: 0; }
+  .mark-glyph .radar-data { stroke-dasharray: 100; }
+  .mark-glyph .radar-dot { transform-box: fill-box; transform-origin: center; transition: transform .25s cubic-bezier(.2,1.4,.4,1); }
+  .mark:hover .radar-dot { transform: scale(1.35); }
+  @media (prefers-reduced-motion: no-preference) {
+    .mark-glyph .radar-data { animation: mba-draw 1.1s cubic-bezier(.6,0,.25,1) .2s backwards; }
+    .mark-glyph .radar-dot { animation: mba-pop .4s cubic-bezier(.2,1.6,.4,1) 1.2s backwards; }
+  }
+  @keyframes mba-draw { from { stroke-dashoffset: 100; fill-opacity: 0; } to { stroke-dashoffset: 0; fill-opacity: 1; } }
+  @keyframes mba-pop { from { transform: scale(0); } to { transform: scale(1); } }
+  nav a { font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+  nav a:hover, nav a[aria-current] { color: var(--accent); border-color: var(--accent); }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; font-weight: 800; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); font-size: 15px; margin: 0 0 30px; max-width: 68ch; }
+  h2 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin: 42px 0 14px; padding-top: 18px; border-top: 1px solid var(--rule); }
+  p, li { font-size: 14.5px; max-width: 74ch; }
+  code { background: #f1ede4; border: 1px solid var(--hair); border-radius: 3px; padding: 1px 5px; font-size: .88em; }
+  pre { background: #16130e; color: #e8e2d5; border-radius: 8px; padding: 16px 18px; overflow-x: auto; font-size: 12.5px; line-height: 1.6; }
+  pre code { background: none; border: none; padding: 0; color: inherit; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; margin: 4px 0 8px; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--hair); vertical-align: top; }
+  th { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .ok { color: #1a7a4a; font-weight: 700; } .no { color: #b5341a; font-weight: 700; }
+  .warn { background: #fff7ed; border: 1.5px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 18px 0; font-size: 13.5px; line-height: 1.65; }
+  .warn strong { color: var(--accent); }
+  .redline { background: #fbe9e4; border-left: 4px solid #b5341a; border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 18px 0; font-size: 13.5px; }
+  .pill { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .06em; padding: 2px 10px; border-radius: 999px; }
+  footer { margin-top: 52px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="/" role="img" aria-label="MBA — Metric Brand Auditor">
+      <svg class="mark-glyph" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="mbaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/></linearGradient></defs>
+        <polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/>
+        <g fill="none" stroke="#111" opacity=".12" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g>
+        <polygon class="radar-data" pathLength="100" points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#mbaGrad)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle class="radar-dot" cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/>
+      </svg>
+      <span>MBA<span class="dot">.</span></span>
+    </a>
+    <nav>
+      <a href="/">品牌监控</a>
+      <a href="/watch/">舆情信号</a>
+      <a href="/docs.html" aria-current="page">文档</a>
+      <a href="https://github.com/zhanglunet/mba">GitHub</a>
+    </nav>
+  </header>
+
+  <h1>中文社媒正文抓取:免费方案</h1>
+  <p class="lede">Brand Watch 的 W2(社交社区)要拿<strong>知乎 / 微博 / 小红书的正文全文</strong>时,阿里云无影(付费)之外的免费替代方案调研 + 一份本机可跑的抓取脚本。Markdown 版见 <a href="https://github.com/zhanglunet/mba/blob/main/docs/18-social-fulltext.md" style="color:var(--accent)">docs/18-social-fulltext.md</a>。</p>
+
+  <h2>01 · 先厘清:缺的是"正文全文",不是"事件信号"</h2>
+  <table>
+    <thead><tr><th>你要的</th><th>需要什么</th><th>现状</th></tr></thead>
+    <tbody>
+      <tr><td>事件级信号(话题火了 + 链接 + 标题)</td><td>WebSearch 就够</td><td class="ok">✅ 已在跑(见 /watch/)</td></tr>
+      <tr><td>正文全文(大段逐字引用)</td><td>登录态 + 过反爬的真浏览器</td><td class="no">❌ 缺口(本页解决)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>02 · 关键结论:Full 网络解锁一半,China IP 才是真墙</h2>
+  <p>把环境出站策略切到 <strong>Full</strong> 后实测(2026-07-13):</p>
+  <table>
+    <thead><tr><th>层</th><th>结果</th></tr></thead>
+    <tbody>
+      <tr><td>出口网关</td><td class="ok">✅ 全放行(curl paulgraham=200;社媒三家 302 是站点跳转,非网关拒)</td></tr>
+      <tr><td>curl 取正文</td><td class="no">❌ 知乎=648B 反爬壳 · 微博=登录墙 · 小红书=JS 应用壳</td></tr>
+      <tr><td>沙箱 Playwright 经代理</td><td class="no">❌ 连不通(控制组 paulgraham 亦 ERR_CONNECTION_RESET)</td></tr>
+    </tbody>
+  </table>
+  <p>Full 对 <strong>curl-able 源</strong>(paulgraham/a16z/36氪/新浪…)是真解锁;但对知乎/微博/小红书这三家<strong>反爬 + 登录墙</strong>站无效。</p>
+
+  <h2>03 · 免费替代品调研(无影 = 付费)</h2>
+  <table>
+    <thead><tr><th>类别</th><th>免费选项</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>指纹/防关联浏览器(桌面)</td><td>GoLogin(永久免费 3 环境)· AdsPower(免费档)· Dolphin Anty(免费)</td><td>Cookie 隔离持久化 = 登录态;反指纹强;桌面 GUI,你自己机器跑</td></tr>
+      <tr><td>开源/免费云浏览器 API</td><td>Steel.dev(开源自托管全免费)· Browserless(开源+云免费档)· Browserbase(云免费 1h)</td><td>可编程可从服务端调;但机房在美/欧</td></tr>
+      <tr><td>纯开源库</td><td><strong>Playwright + storageState</strong>(全免费)</td><td>原生"登录一次、存 session、复用"——登录态根本不用付费工具</td></tr>
+    </tbody>
+  </table>
+  <div class="warn">
+    <strong>⚠️ 但免费工具都补不上的三件事(无影的真正壁垒):</strong>
+    <ol style="margin:8px 0 0;padding-left:20px;">
+      <li><strong>真实账号 + 过验证</strong>:短信 2FA + 滑块/点选验证码,手动、按账号来,换什么工具都一样;</li>
+      <li><strong>China IP</strong> ⭐:知乎/微博/小红书重度封禁境外/机房 IP。无影跑在阿里云<strong>中国机房</strong>才过得去;境外免费云浏览器(Steel/Browserless/Browserbase 都是美/欧机房)即使登录也大概率被验证码/封。<strong>免费云浏览器补不上"中国 IP"这一环。</strong></li>
+      <li><strong>ToS / 封号风险</strong>:用登录账号抓取违反三家 ToS,账号有被限/封风险。</li>
+    </ol>
+    <p style="margin:10px 0 0;">一句话:最省钱的路是<strong>在你自己的中国机器上</strong>用 GoLogin 免费版 / 纯 Playwright + storageState,而不是找一个"能从服务端自动跑的免费云浏览器"(那个基本不存在)。</p>
+  </div>
+
+  <h2>04 · 本机抓取脚本</h2>
+  <p><span class="pill">脚本</span> <code>scripts/social-fetch/zhihu_fetch.mjs</code> —— Playwright + storageState,知乎公开页正文抓取。<strong>在你自己机器 + 中国网络跑。</strong>(<a href="https://github.com/zhanglunet/mba/blob/main/scripts/social-fetch/zhihu_fetch.mjs" style="color:var(--accent)">看源码 →</a>)</p>
+  <pre><code>npm init -y &amp;&amp; npm i playwright &amp;&amp; npx playwright install chromium
+
+# 首次:弹浏览器,手动登录一次(短信/扫码/验证码人工过),存 session
+node scripts/social-fetch/zhihu_fetch.mjs login
+
+# 之后:复用 session 抓正文(打印 标题 + 正文 + quote 候选)
+node scripts/social-fetch/zhihu_fetch.mjs https://zhuanlan.zhihu.com/p/364234140</code></pre>
+  <p>会话过期(几周~几月)重跑 <code>login</code> 刷新。微博/小红书同理,换选择器即可(登录墙更硬,小红书大量内容 App-only)。</p>
+
+  <h2>05 · 红线(不可动)</h2>
+  <div class="redline">
+    <ul style="margin:0;padding-left:20px;">
+      <li><strong>在你自己机器 / 中国网络跑,用你自己的账号,低频,尊重 robots/ToS</strong> —— 这不是绕过风控的工具,是"手动登录后读页"。</li>
+      <li>抓到的正文写进 Brand Watch 时,仍守<strong>反捏造</strong>:只存 <strong>≤100 字逐字引用 + URL + 抓取时间戳</strong>,<code>direction</code> 恒 <code>model-judged</code>,<strong>只建议不改分</strong>。</li>
+      <li>达不到"可溯源"的信号,<strong>宁可不入库</strong>。</li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>MBA · 中文社媒正文抓取免费方案 · 2026-07</span>
+    <span><a href="https://github.com/zhanglunet/mba/blob/main/docs/18-social-fulltext.md">docs/18</a> · <a href="/docs.html">返回文档</a></span>
+  </footer>
+</div>
+</body>
+</html>
