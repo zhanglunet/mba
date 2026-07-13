@@ -51,3 +51,18 @@
   lens_map: [signal]
   consumed_by: v2
   note: 后市延续信号;日期以 URL 内嵌(2026/06/15)自证。
+- id: 2026-06-15-spacex-004
+  date: '2026-06-15'
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: 散户打新热度爆棚($100B+ 订单),但配售极少,面临持有或抛售抉择
+  quote: SpaceX IPO leaves retail investors with too few shares and a tough hold-or-sell decision
+  quote_type: title
+  url: https://www.cnbc.com/2026/06/15/spacex-ipo-leaves-retail-investors-with-too-few-shares-and-a-tough-hold-or-sell-decision.html
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - identity
+  - signal
+  note: 散户社群热度(>$100B 订单、留 30% 给散户仍供不应求)是品牌拉力的社交信号,区别于 W5 定价事件;日期以 URL 内嵌(2026/06/15)自证。
