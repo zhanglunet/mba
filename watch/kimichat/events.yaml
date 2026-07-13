@@ -65,3 +65,18 @@
     一级市场对 K 系列开源路线的定价信号;300 亿美元为媒体报道口径,
     融资未官宣完成,评委消费时注意区分。URL 无日期,日期以 curl 证券时报
     原文页面时间(2026-06-08 15:16)核对。
+- id: 2025-07-19-kimichat-005
+  date: '2025-07-19'
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: Nature 称 Kimi K2 是又一个「DeepSeek 时刻」,HuggingFace 下载量单周翻倍
+  quote: 'Chinese AI model Kimi K2 marks ''another DeepSeek moment'': Nature'
+  quote_type: title
+  url: https://english.news.cn/europe/20250719/7515ab83e94342f9b254a5726f83447a/c.html
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - identity
+  - category
+  note: 开源社区声量爆发(HuggingFace 周下载 7.6万→14.5万);Nature/新华/人民网/SCMP 多源报道;日期以 URL 内嵌(20250719)自证。

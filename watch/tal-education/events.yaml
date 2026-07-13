@@ -56,3 +56,18 @@
     年度财报事件记 P1(对齐 asiainfo/qianxin 年报先例)。日期以 URL 内嵌(2026-04-23)
     自证,正文逐字 curl 核对。SEC 6-K 同稿:
     sec.gov/Archives/edgar/data/0001499620/000110465926047673/(本环境 403,待回溯)。
+- id: 2021-11-17-tal-education-004
+  date: '2021-11-17'
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: 好未来官宣停止义务教育学科培训,主营业务关停+裁员,组织巨变
+  quote: 好未来、新东方官宣停止义务教育学科培训：K12教育浮现三大转型赛道
+  quote_type: title
+  url: https://www.chnfund.com/article/AR2021111717195869077087
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - leverage
+  - origin
+  note: 双减(W4)触发的组织后果:关停约 91% 营收的 K12 学科业务 + 裁员,张邦鑫内部承认裁员;已反映于 v1,历史锚点;日期以 URL 内嵌(AR2021111717)自证。
