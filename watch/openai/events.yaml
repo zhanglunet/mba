@@ -125,3 +125,33 @@
     hosted sites 服务 —— Codex 从独立 app 升级为 ChatGPT 桌面全家桶组件。9to5Mac
     正文已 curl 核对;官方稿在 openai.com(出口 403,待回溯)。日期以 URL 内嵌
     (2026/07/09)自证。
+- id: 2024-09-25-openai-007
+  date: '2024-09-25'
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: OpenAI CTO 米拉·穆拉蒂离职,同日两名研究高管一并出走
+  quote: OpenAI considering restructuring to for-profit, CTO Mira Murati and two top research execs depart
+  quote_type: title
+  url: https://www.cnbc.com/2024/09/25/openai-cto-mira-murati-announces-shes-leaving-the-company.html
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - origin
+  - leverage
+  note: 同日 Murati(CTO)+McGrew(CRO)+Zoph(VP Research)三人离职;日期以 URL 内嵌(2024/09/25)自证。
+- id: 2025-10-03-openai-008
+  date: '2025-10-03'
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: Sora 应用登顶美区 App Store 榜首(超过 Gemini 与自家 ChatGPT)
+  quote: OpenAI's Sora soars to No. 1 on Apple's US App Store
+  quote_type: title
+  url: https://techcrunch.com/2025/10/03/openais-sora-soars-to-no-1-on-the-u-s-app-store/
+  fetched_at: '2026-07-13T00:00:00Z'
+  lens_map:
+  - identity
+  - category
+  note: 邀请制且仅美加,仍登顶,社交裂变强信号;日期以 URL 内嵌(2025/10/03)自证。
