@@ -884,17 +884,22 @@ Required header (CDN imports):
 - Print-friendly: `@media print` strips the navbar and unfolds collapsibles
 - No external fonts (system-ui font stack only) so the file works offline after first load
 
-Use `references/html-report-template.md` for the exact scaffold — copy it, fill the data
+Use `references/html-report-template.md` for the exact scaffold — copy it, fill the `{{...}}`
 slots, and write the result to `report.html` and `versions/v1_<date>.html`.
 
+> The scaffold in `html-report-template.md` is the **canonical current house style** (paper
+> theme `#faf8f3` + accent `#c1440e`, five-lens radar-logo masthead + favicon, colored
+> score-matrix table, judge scorecards, inline Chart.js radar + bar). Where the idealized
+> feature list above differs (σ heatmap grid, Mermaid flowchart/quadrant, collapsible portrait
+> cards), **the template wins** — those are optional, not required for a valid report.
+
 **Sanity-check before finalizing:**
-- Open the file via `python3 -m http.server` on John briefly OR have the user `open report.html`
-- Verify Mermaid blocks render (no `Syntax error in graph`)
-- Verify Chart.js canvases populate (no empty squares)
-- Verify the Legal/IP/Disclaimer section exists in both `report.md` and `report.html`,
-  appears before Citations/Sources, and does not imply affiliation, permission, or ownership
-  of third-party marks/images.
-- If a chart fails, fall back to a markdown table inside `<details>` and note the failure
+- Open the file (`python3 -m http.server`, or run `node scripts/qa_report_render.mjs`) — expect no `console.error`.
+- The masthead is the **five-lens radar-logo lockup** (copied verbatim) + favicon; theme is paper `#faf8f3` / accent `#c1440e`, no dark-mode block.
+- Chart.js canvases populate (no empty squares) and each sits in a fixed-height `.chart-wrap` with `maintainAspectRatio:false` (avoids the infinite-growth bug).
+- The Legal/IP/Disclaimer section exists in both `report.md` and `report.html`, appears with/before Sources, and does not imply affiliation, permission, or ownership of third-party marks/images.
+- Sources are real, publicly reachable URLs (anti-fabrication — never invented).
+- Mermaid / version-timeline appear in **EVOLUTION mode only**; if a chart fails, fall back to a table and note the failure.
 
 **Optional — produce a PDF:**
 
