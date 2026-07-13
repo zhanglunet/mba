@@ -308,6 +308,7 @@ def render_overview(rows_meta, as_of):
       <a href="/">品牌监控</a>
       <a href="/watch/" aria-current="page">舆情信号</a>
       <a href="/panorama.html">评委全景</a>
+      <a href="/starmap.html">知识星图</a>
       <a href="/docs.html">文档</a>
       <a href="https://github.com/zhanglunet/mba">GitHub</a>
     </nav>

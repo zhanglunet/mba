@@ -46,6 +46,9 @@ if command -v python3 >/dev/null 2>&1; then
     rm -rf "$SITE_DIR/watch"
     python3 "$REPO_ROOT/scripts/build_watch_pages.py" || \
       echo "[mba-build] WARN: build_watch_pages.py failed — watch pages skipped"
+    echo "[mba-build] generating knowledge star map"
+    python3 "$REPO_ROOT/scripts/build_starmap.py" || \
+      echo "[mba-build] WARN: build_starmap.py failed — using committed site/starmap.html"
   else
     echo "[mba-build] no PyYAML in build env — using committed site/api/*"
   fi

@@ -63,6 +63,15 @@
 
   .intro { font-size: 14px; color: var(--muted); margin: 0 0 26px; max-width: 72ch; }
   .intro a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+  .starmap-banner { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink);
+    background: linear-gradient(90deg, rgba(193,68,14,.06), rgba(193,68,14,.02)); border: 1px solid var(--hair);
+    border-left: 3px solid var(--accent); border-radius: 8px; padding: 13px 16px; margin: 0 0 26px; transition: border-color .15s, box-shadow .15s; }
+  .starmap-banner:hover { border-color: var(--accent); box-shadow: 0 2px 14px rgba(193,68,14,.10); }
+  .starmap-banner svg { flex-shrink: 0; }
+  .starmap-banner .sb-text { font-size: 13px; line-height: 1.5; color: var(--muted); }
+  .starmap-banner .sb-text strong { color: var(--ink); font-size: 14px; margin-right: 8px; }
+  .starmap-banner .sb-go { margin-left: auto; flex-shrink: 0; color: var(--accent); font-weight: 700; font-size: 13px; white-space: nowrap; }
+  @media (max-width: 640px) { .starmap-banner { flex-wrap: wrap; } .starmap-banner .sb-go { margin-left: 42px; } }
 
   /* ── KPI 行(stat tiles)───────────────────────────────── */
   .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 30px; }
@@ -154,12 +163,23 @@
         <a href="/" aria-current="page">品牌监控</a>
         <a href="/watch/">舆情信号</a>
         <a href="/panorama.html">评委全景</a>
+        <a href="/starmap.html">知识星图</a>
         <a href="/docs.html">文档</a>
         <a href="https://github.com/zhanglunet/mba">GitHub</a>
       </nav>
     </header>
 
     <p class="intro">多位「人物评委」按 7 维度 × 5 镜头对品牌独立打分,报告版本化——同一品牌随时间的每一次重审都可比较、可复盘。<a href="/how-it-works.html">怎么打分 →</a></p>
+
+    <a class="starmap-banner" href="/starmap.html" aria-label="打开品牌监控全维度知识星图">
+      <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false">
+        <polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#c1440e" stroke-width="2" stroke-linejoin="round"/>
+        <g fill="#c1440e"><circle cx="32" cy="7" r="2.4"/><circle cx="56.7" cy="25" r="2.4"/><circle cx="47.3" cy="54" r="2.4"/><circle cx="16.7" cy="54" r="2.4"/><circle cx="7.3" cy="25" r="2.4"/><circle cx="32" cy="33" r="2.4"/></g>
+        <g stroke="#c1440e" stroke-width="1" opacity=".5"><path d="M32 33 32 7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g>
+      </svg>
+      <span class="sb-text"><strong>全维度知识星图</strong>品牌 × 9 监控维度 × 5 镜头 × 面板 × 评委,按真实关系连成一张可搜索、可聚焦的关联图谱。</span>
+      <span class="sb-go">进入星图 →</span>
+    </a>
 
     <section aria-label="品牌监控">
       <!-- REPORTS:START — 生成自 site/reports-meta.yaml(scripts/build_home_cards.py)· 勿手改 -->
