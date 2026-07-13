@@ -87,7 +87,7 @@ Resolve them ONCE at Phase 0 and reuse — do NOT substitute literal `~/mba/...`
 | `${SKILL_DIR}` | The directory containing this `SKILL.md` (the skill's install root) | `cd "$(dirname "<this-file>")" && pwd`, or read from the loading harness |
 | `${REPORTS_DIR}` | Where reports are written | First non-empty of: `$MBA_REPORTS_DIR` env var, `${SKILL_DIR}/reports`, `$PWD/reports` |
 | `${PERSPECTIVES_PATH}` | List of directories to probe for judge perspective skills | In order: `${SKILL_DIR}/../perspectives`, `${SKILL_DIR}/..`, `~/.claude/skills`, `~/skills`, `$HOME/.claude/skills`. The `perspectives/` subdir is the canonical layout (since 2026-06: persona skills live one level down to keep the repo root clean); the bare `${SKILL_DIR}/..` fallback is kept for older installs that still have `<slug>-perspective/` directly at the repo root |
-| `${IMAGES_DIR}` | Judge-portrait illustration set | First existing of: `$MBA_IMAGES_DIR` env var, `${SKILL_DIR}/../assets/judges`, `${SKILL_DIR}/assets/judges`. If none exists, use the emoji/monogram fallback (Phase 5F.b portrait rules) |
+| `${IMAGES_DIR}` | Judge-portrait illustration set (not used in reports — text scorecards only; see Phase 5F.b "Judge imagery") | First existing of: `$MBA_IMAGES_DIR` env var, `${SKILL_DIR}/../assets/judges`, `${SKILL_DIR}/assets/judges`. Illustration only — never a real photograph |
 | `${PANELS_DIR}` | Where judge-panel yaml configs live | First non-empty of: `$MBA_PANELS_DIR` env var, `${SKILL_DIR}/panels`. See `panels/README.md` for the schema |
 | `${RESEARCH_SKILL}` | The upstream `research` skill (used as a building block) | First existing of: `${SKILL_DIR}/../research/SKILL.md`, `~/.claude/skills/research/SKILL.md`. If neither exists, fall back to direct WebSearch+WebFetch |
 | `${MAC_MBA_ROOT}` | MBA install root on the Mac host that owns `WUYING_API_KEY`. Only consulted by the optional Wuying leg (see `references/wuying-browser.md`) | `$MAC_MBA_ROOT` env var if set; otherwise default `~/mba` on the Mac host. Override per-run with `export MAC_MBA_ROOT=/your/path` |
@@ -810,88 +810,49 @@ Also write a frozen snapshot to `versions/v1_<date>.md` (identical content, immu
 Markdown is the source of truth; HTML is the presentation layer for humans. After
 `report.md` is final, render `report.html` from `references/html-report-template.md`.
 
-The HTML must be **a single self-contained file** (CDN scripts allowed, no local deps) with:
+The HTML must be **a single self-contained file** (only Chart.js — plus Mermaid in EVOLUTION
+mode — load from a CDN; no local deps). `references/html-report-template.md` is the **canonical
+scaffold** — copy it and fill the `{{...}}` slots. The list below is what a report actually
+contains, required vs situational; where anything here disagrees with the template, the template wins.
 
-1. **Hero block** — brand name, version, mode badge, last-update timestamp, one-line TL;DR
-2. **Score Radar Chart** (Chart.js `radar`) — 5 lenses on the spokes, 5 colored polygons
-   (one per judge), so reader sees consensus zones and outlier judges at a glance
-3. **Score Bar Chart** (Chart.js `bar`, stacked or grouped) — total per judge + mean per lens
-3b. **Dissent Heatmap** (pure HTML+CSS grid, no extra CDN) — 5×5 grid (lenses × judges)
-    with each cell shaded by score (red→yellow→green, 1→10) and an extra rightmost column
-    "σ" (std-dev across judges per lens) shaded by dissent intensity. This is the single
-    most useful skim surface: low σ row = consensus, high σ row = brawl. Cell tooltip on
-    hover shows "{judge}: {score} — {one-line reasoning}" pulled from each judge's scorecard.
-4. **Influence Construction Diagram** (Mermaid `flowchart LR`) — how the dimensions feed each
-   other. Use the leverage map from synthesis: source dimensions on the left, amplifiers in
-   the middle, observable surface on the right. Label edges with the leverage hypothesis.
-5. **Brand Positioning Quadrant** (Mermaid `quadrantChart`) — axes Lead picks per brand
-   (e.g. "founder-driven ↔ product-driven" × "domestic ↔ global"). Place the brand and
-   3-5 named competitors as points.
-6. **Judge Consensus / Dissent panel** — collapsible cards per judge with their portrait,
-   the verdict line, the in-character quote, and their score row. Color the card edge by
-   total-score quartile.
+**Required — every report:**
 
-   **Portrait rules** (in priority order):
-   a) **Stylized illustration** — if a consistent illustrated set exists in
-      `${IMAGES_DIR}`, use those. Filename-to-judge-slug mapping (current set
-      is in unified gray + red lobster palette):
+1. **Masthead** — the five-lens radar-logo lockup (copied verbatim from the template) + a
+   `panel-badge`; then `<h1>` brand, an English identity line, a meta line (MBA version · date ·
+   panel · N judges), the TL;DR, and a **score-hero** (big total `/max` + normalized `/10`).
+2. **Score radar** (Chart.js `radar`, inside a fixed-height `.chart-wrap`, `maintainAspectRatio:false`)
+   — 5 lenses on the spokes; either the panel mean as one polygon, or one polygon per judge.
+3. **Judge totals bar** (Chart.js horizontal `bar`, in `.chart-wrap`) — total /50 per judge.
+4. **Score matrix table** — lenses × judges, each score cell heat-shaded via `heat-1..heat-8`,
+   plus a mean column and a totals row. EVOLUTION: cells become `7 → 8` with `up` / `down` / `flat`.
+5. **Judge scorecards** — a `.judge-card` grid (not collapsible): name, role line, total /50, and an
+   in-character first-person verdict. Mark a self-conflicted judge with `△` + the `competitor`
+   class; optionally add `highest` on the top scorer.
+6. **Verdict** — 2–3 paragraphs in the Lead's voice.
+7. **Brand Actions (90 days)** — a numbered action list.
+8. **Legal, IP & Disclaimer + Sources** — a visible section (not hidden only in the footer) covering
+   public-source basis, trademark/brand ownership, judge-simulation notice, no
+   affiliation/endorsement, non-advice, and accuracy limits; then **Sources** as real, publicly
+   reachable URLs (anti-fabrication — never invent a link).
 
-      | judge-slug   | image file        |
-      |--------------|-------------------|
-      | fusheng      | `傅盛.jpg`        |
-      | jobs         | `jobs.jpg`        |
-      | likejia      | `李可佳.jpg`      |
-      | wu-jundong   | `吴俊东.jpg`      |
-      | zhang-yiming | `张一鸣.jpg`      |
+**Situational — add when the material warrants (several reports do):** a **dissent view** (a colored
+heatmap / range-bar strip, or an insight/quote block on the single biggest judge disagreement); a
+**compare table** vs MBA history; record / conflict callout boxes.
 
-      Reference via relative path (`../../assets/judges/...`) so the HTML stays
-      portable; if the report is meant to be shared standalone, base64-inline
-      them.
-   b) **Emoji or monogram fallback** — if no illustration is available, use a
-      single emoji (e.g. 🟦 for fusheng, 🍎 for jobs) or initial monogram in a
-      colored circle. Use the same fallback per judge across reports for visual
-      stability.
-   c) **NEVER use real photographs of the judges** — illustration is OK,
-      photograph is not. The judges score brands publicly; their real face
-      attached to a public scorecard creates portrait/likeness rights exposure
-      we won't take on. If unsure whether an asset is photo vs illustration,
-      default to (b).
-7. **Sentiment Trend** (Chart.js `line`) — only if Phase 2 captured time-series sentiment
-   data. Skip the chart and write "N/A — no time-series" if not.
-8. **Brand Essence Mindmap** (Mermaid `mindmap`) — root = brand, branches = the 5-7 dimensions,
-   leaves = top 2-3 findings per dimension. This is the "skim and grok" surface.
-9. **Action recommendations** — numbered, with a leverage estimate badge (high / med / low).
-10. **Legal, IP & Disclaimer** — visible section before citations, not hidden only in a footer.
-    It must cover public-source basis, trademark/brand ownership, image/copyright handling,
-    IP boundaries, no affiliation/endorsement, non-advice, and accuracy limits. If images
-    are used, cite each image/source path near the visual section and repeat the copyright
-    boundary here.
-11. **Citations** at the bottom in a collapsible details element.
+**EVOLUTION mode (v2+) only:** a **delta banner** under the meta line, delta score cells, a "what
+changed since v{n-1}" section, and a **Mermaid `gitGraph`** version timeline (add the Mermaid ESM
+import only when the gitGraph is actually used).
 
-Required header (CDN imports):
-```html
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose' });
-</script>
-```
+**Judge imagery:** reports currently ship **no** judge portraits — text scorecards only. If one is
+ever added, use a **stylized illustration** from `assets/judges/`, **never a real photograph** of the
+person (likeness-rights exposure); an emoji / monogram fallback is fine.
 
-**Style rules:**
-- One CSS variable palette at the top (`--c-bg`, `--c-text`, `--c-accent`, `--c-judge-1..5`)
-- Light/dark via `prefers-color-scheme`
-- Max width 960px, centered, generous line-height for long-form
-- Print-friendly: `@media print` strips the navbar and unfolds collapsibles
-- No external fonts (system-ui font stack only) so the file works offline after first load
+**Style:** paper `#faf8f3` + accent `#c1440e`, serif body, centered, max-width ~820px, generous
+line-height. **No dark-mode block, no external fonts.** Every canvas lives in a fixed-height
+`.chart-wrap` to prevent the Chart.js infinite-growth bug.
 
-Use `references/html-report-template.md` for the exact scaffold — copy it, fill the `{{...}}`
-slots, and write the result to `report.html` and `versions/v1_<date>.html`.
-
-> The scaffold in `html-report-template.md` is the **canonical current house style** (paper
-> theme `#faf8f3` + accent `#c1440e`, five-lens radar-logo masthead + favicon, colored
-> score-matrix table, judge scorecards, inline Chart.js radar + bar). Where the idealized
-> feature list above differs (σ heatmap grid, Mermaid flowchart/quadrant, collapsible portrait
-> cards), **the template wins** — those are optional, not required for a valid report.
+Copy the scaffold, fill the `{{...}}` slots, and write the result to `report.html` and
+`versions/v1_<date>.html`.
 
 **Sanity-check before finalizing:**
 - Open the file (`python3 -m http.server`, or run `node scripts/qa_report_render.mjs`) — expect no `console.error`.
