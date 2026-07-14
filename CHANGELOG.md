@@ -4,6 +4,26 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
+## v0.4.5 — 2026-07-14
+
+**Brand Watch → 舆情驾驶舱**:按 docs/20(舆情驾驶舱需求 × MBA 能力映射)把 Brand Watch
+顺势扩展去覆盖企业级「舆情驾驶舱」需求。三阶段落地,均在 MBA「只建议、可复盘」边界内;
+反爬/私域内网/小时级实时/处置工单等共同缺口按计划守界不做。
+
+### Added
+- **事件 schema 补 4 个舆情驾驶舱字段**(Phase 1,可选、向后兼容)——`related_persons`
+  (关联人物)、`source_type`(来源类型枚举)、`suggested_action`(结构化建议动作)、
+  `alert_tier`(L1/L2/L3 预警层级覆写),对齐驾驶舱的 7 标签。`validate_watch.py` 枚举 gate +
+  `--selftest`(12→17 断言),MCP `watch/store.ts` 镜像 + 序列化(+4 tests,224 全绿)。
+- **飞书分层预警 L1/L2/L3**(Phase 2)——`notify_feishu.py` 从单门槛升为三层路由:
+  L3 高层预警(P0/建议重审)· L2 专项协同(P1)· L1 日常(评分变动);各层可配独立 webhook
+  (`FEISHU_WEBHOOK_L3/L2`)分流到不同群,解析到同一 webhook 的层合并成一张卡(单群不刷屏)。
+  事件的 `alert_tier` 可覆写层级。
+- **舆情驾驶舱看板**(Phase 3)——`scripts/build_watch_cockpit.py` 为每品牌生成
+  `site/watch/<slug>/cockpit.html`:管理层摘要 + 发布时间分布 + 风险主题归因(维度×方向)+
+  来源类型分布 + 投资社区专区 + 可筛选全量信息表。图表为零依赖静态内联 SVG。入口:
+  舆情时间线页 + 首页每张品牌卡片「舆情驾驶舱 →」。
+
 ## v0.4.4 — 2026-07-13
 
 **品牌监控的可视化与触达**:把已有的评分/舆情数据织成可交互的知识星图,并让变化
