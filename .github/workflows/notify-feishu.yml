@@ -5,9 +5,14 @@ name: Notify Feishu
 # 由 scripts/notify_feishu.py 聚合出「新增 P0/P1 事件 / 新命中建议重审 / 评分变动」
 # 三类变化,POST 到飞书自定义机器人 webhook。内容全部取自仓库文件(反捏造)。
 #
+# 分层预警(docs/20 Phase 2):L3 高层预警(P0/建议重审)· L2 专项协同(P1)· L1 日常(评分变动)。
+# 各层可配独立 webhook 路由到不同群;未配则回落 FEISHU_WEBHOOK;解析到同一 webhook 的层合并成一张卡。
+#
 # 需要在仓库 Settings → Secrets and variables → Actions 配:
-#   FEISHU_WEBHOOK      (必需)飞书自定义机器人 webhook URL
-#   FEISHU_SIGN_SECRET  (可选)机器人「签名校验」密钥,配了才加签
+#   FEISHU_WEBHOOK      (必需)默认/回落 webhook URL
+#   FEISHU_WEBHOOK_L3   (可选)高层预警群;不配则 L3 回落 FEISHU_WEBHOOK
+#   FEISHU_WEBHOOK_L2   (可选)专项协同群;不配则回落
+#   FEISHU_SIGN_SECRET  (可选)机器人「签名校验」密钥,配了才加签(所有群共用同一算法)
 # 未配 FEISHU_WEBHOOK 时本 job 直接跳过,不报错(非阻断)。
 
 on:
@@ -37,6 +42,8 @@ jobs:
       - name: Push change digest to Feishu
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_WEBHOOK_L3: ${{ secrets.FEISHU_WEBHOOK_L3 }}
+          FEISHU_WEBHOOK_L2: ${{ secrets.FEISHU_WEBHOOK_L2 }}
           FEISHU_SIGN_SECRET: ${{ secrets.FEISHU_SIGN_SECRET }}
         run: |
           if [ -z "${FEISHU_WEBHOOK:-}" ]; then

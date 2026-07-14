@@ -37,6 +37,17 @@ DIR_MARK = {"pos": "利好 ▲", "neg": "利空 ▼", "neu": "中性 ▬", "neut
 SITE = "https://mbabrand.com"
 BIG_WINDOW = 100000  # 关掉 evaluate 的 30 天窗口 → 与首页「未消费全量」口径一致
 
+# ── 分层预警(Phase 2,docs/20)──────────────────────────────────────────────
+# L3 高层预警 = P0 事件 / 建议重审;L2 专项协同 = P1 事件;L1 日常 = 评分变动/其余。
+# 事件可用 alert_tier 覆写;各层可配独立 webhook(FEISHU_WEBHOOK_L{1,2,3}),
+# 未配则回落 FEISHU_WEBHOOK;解析到同一 webhook 的层合并成一张卡(单群仍一张)。
+TIERS = ("L3", "L2", "L1")
+TIER_META = {
+    "L3": {"template": "red", "label": "高层预警", "emoji": "🚨"},
+    "L2": {"template": "orange", "label": "专项协同", "emoji": "📣"},
+    "L1": {"template": "blue", "label": "日常监测", "emoji": "📊"},
+}
+
 
 # ── git 取历史版本 ───────────────────────────────────────────────────────────
 def git_show(ref, path):
@@ -139,69 +150,136 @@ def esc_md(s):
     return str(s).replace("*", "＊").replace("[", "【").replace("]", "】").strip()
 
 
+def event_tier(e):
+    """单条舆情事件的层级:alert_tier 覆写优先,否则按 severity 派生。"""
+    t = e.get("alert_tier")
+    if t in TIERS:
+        return t
+    if e.get("severity") == "P0":
+        return "L3"
+    if e.get("severity") == "P1":
+        return "L2"
+    return "L1"
+
+
+def split_tiers(ch):
+    """把变化按层拆分。返回 {tier: {rec_brands, new_events, score_changes}}。
+    建议重审 → L3;事件按 event_tier;评分变动 → L1。"""
+    out = {t: {"rec_brands": [], "new_events": [], "score_changes": []} for t in TIERS}
+    for b in ch["rec_brands"]:
+        out["L3"]["rec_brands"].append(b)
+    for e in ch["new_events"]:
+        out[event_tier(e)]["new_events"].append(e)
+    for s in ch["score_changes"]:
+        out["L1"]["score_changes"].append(s)
+    return out
+
+
+def _rec_element(rb):
+    lines = []
+    for b in rb:
+        rules = "、".join(b["rules"]) or "触发规则命中"
+        lines.append(f"• **{esc_md(b['brand'])}** — 未消费 P0×{b['p0']} / P1×{b['p1']}("
+                     f"{esc_md(rules)}) [信号 →]({SITE}/watch/{b['slug']}/)")
+    return {"tag": "div", "text": {"tag": "lark_md", "content": "**🔁 建议重审**\n" + "\n".join(lines)}}
+
+
+def _events_element(ne):
+    lines = []
+    for e in ne:
+        mark = SEV_MARK.get(e.get("severity"), e.get("severity", ""))
+        d = DIR_MARK.get(str(e.get("direction", "neu")).lower(), "")
+        dim = e.get("dim", "")
+        dim_txt = f"{dim} {WDIM_NAME.get(dim, '')}".strip()
+        title = esc_md(e.get("title", e.get("id", "事件")))
+        url = e.get("url", "")
+        date = e.get("date", "")
+        persons = e.get("related_persons") or []
+        who = f" · 关联 {esc_md('、'.join(persons))}" if persons else ""
+        head = f"• {mark} {d} · {esc_md(e['brand'])} · {esc_md(dim_txt)}{who} · {date}"
+        body = f"[{title}]({url})" if url else title
+        act = e.get("suggested_action")
+        tail = f"\n  建议:{esc_md(act)}" if act else ""
+        lines.append(f"{head}\n  {body}{tail}")
+    return {"tag": "div", "text": {"tag": "lark_md", "content": "**📮 新增舆情信号**\n" + "\n".join(lines)}}
+
+
+def _scores_element(sc):
+    lines = []
+    for s in sc:
+        if s["old"] is None:
+            lines.append(f"• **{esc_md(s['brand'])}** {s.get('version','')} 首审 **{s['new']}**/10 "
+                         f"[报告 →]({SITE}/reports/{s['slug']}/)")
+        else:
+            delta = round(float(s["new"]) - float(s["old"]), 2)
+            arrow = "↑" if delta > 0 else "↓"
+            lines.append(f"• **{esc_md(s['brand'])}** {s['old']} → **{s['new']}**/10 "
+                         f"({arrow}{abs(delta):.2f}) [报告 →]({SITE}/reports/{s['slug']}/)")
+    return {"tag": "div", "text": {"tag": "lark_md", "content": "**📈 评分变动**\n" + "\n".join(lines)}}
+
+
+def _sections_elements(sec):
+    """把一个 {rec_brands,new_events,score_changes} 子集渲染成 element 列表(仅非空段)。"""
+    els = []
+    if sec["rec_brands"]:
+        els.append(_rec_element(sec["rec_brands"]))
+    if sec["new_events"]:
+        els.append(_events_element(sec["new_events"]))
+    if sec["score_changes"]:
+        els.append(_scores_element(sec["score_changes"]))
+    return els
+
+
+def _count(sec):
+    return len(sec["rec_brands"]) + len(sec["new_events"]) + len(sec["score_changes"])
+
+
 def build_card(ch):
-    ne, rb, sc = ch["new_events"], ch["rec_brands"], ch["score_changes"]
-    if not (ne or rb or sc):
+    """兼容入口:把全部变化合成单卡(header 取最高层)。供单群/无分层 webhook 场景。"""
+    tiers = split_tiers(ch)
+    included = [t for t in TIERS if _count(tiers[t]) > 0]
+    return build_card_for(included, tiers)
+
+
+def build_card_for(tiers_included, tiers):
+    """为给定层级集合建一张卡:按 L3→L2→L1 顺序拼各层分区,header 用最高层模板。"""
+    tiers_included = [t for t in TIERS if t in tiers_included and _count(tiers[t]) > 0]
+    if not tiers_included:
         return None
+    top = tiers_included[0]  # TIERS 已按 L3→L1 排序
     today = datetime.date.today().isoformat()
-    urgent = bool(rb) or any(e.get("severity") == "P0" for e in ne)
-    template = "red" if urgent else "orange"
-    n = len(ne) + len(rb) + len(sc)
+    n = sum(_count(tiers[t]) for t in tiers_included)
 
     elements = []
-
-    if rb:
-        lines = []
-        for b in rb:
-            rules = "、".join(b["rules"]) or "触发规则命中"
-            lines.append(f"• **{esc_md(b['brand'])}** — 未消费 P0×{b['p0']} / P1×{b['p1']}("
-                         f"{esc_md(rules)}) [信号 →]({SITE}/watch/{b['slug']}/)")
-        elements.append({"tag": "div", "text": {"tag": "lark_md",
-                        "content": "**🔁 建议重审**\n" + "\n".join(lines)}})
-
-    if ne:
-        lines = []
-        for e in ne:
-            mark = SEV_MARK.get(e.get("severity"), e.get("severity", ""))
-            d = DIR_MARK.get(str(e.get("direction", "neu")).lower(), "")
-            dim = e.get("dim", "")
-            dim_txt = f"{dim} {WDIM_NAME.get(dim, '')}".strip()
-            title = esc_md(e.get("title", e.get("id", "事件")))
-            url = e.get("url", "")
-            date = e.get("date", "")
-            head = f"• {mark} {d} · {esc_md(e['brand'])} · {esc_md(dim_txt)} · {date}"
-            body = f"[{title}]({url})" if url else title
-            lines.append(f"{head}\n  {body}")
-        elements.append({"tag": "div", "text": {"tag": "lark_md",
-                        "content": "**📮 新增舆情信号(P0/P1)**\n" + "\n".join(lines)}})
-
-    if sc:
-        lines = []
-        for s in sc:
-            if s["old"] is None:
-                lines.append(f"• **{esc_md(s['brand'])}** {s.get('version','')} 首审 **{s['new']}**/10 "
-                             f"[报告 →]({SITE}/reports/{s['slug']}/)")
-            else:
-                delta = round(float(s["new"]) - float(s["old"]), 2)
-                arrow = "↑" if delta > 0 else "↓"
-                lines.append(f"• **{esc_md(s['brand'])}** {s['old']} → **{s['new']}**/10 "
-                             f"({arrow}{abs(delta):.2f}) [报告 →]({SITE}/reports/{s['slug']}/)")
-        elements.append({"tag": "div", "text": {"tag": "lark_md",
-                        "content": "**📈 评分变动**\n" + "\n".join(lines)}})
-
+    multi = len(tiers_included) > 1
+    for t in tiers_included:
+        if multi:
+            m = TIER_META[t]
+            elements.append({"tag": "div", "text": {"tag": "lark_md",
+                            "content": f"{m['emoji']} **{m['label']}({t})**"}})
+        elements.extend(_sections_elements(tiers[t]))
     elements.append({"tag": "hr"})
     elements.append({"tag": "note", "elements": [{"tag": "lark_md",
                     "content": f"MBA 品牌监控 · 评分为 AI 评委模拟,非本人观点,不构成投资建议 · [{SITE}]({SITE})"}]})
 
+    meta = TIER_META[top]
+    label = "" if multi else f" · {meta['label']}"
     return {
         "msg_type": "interactive",
         "card": {
             "config": {"wide_screen_mode": True},
-            "header": {"template": template,
-                       "title": {"tag": "plain_text", "content": f"MBA 品牌监控更新 · {today} · {n} 项"}},
+            "header": {"template": meta["template"],
+                       "title": {"tag": "plain_text",
+                                 "content": f"{meta['emoji']} MBA 品牌监控更新{label} · {today} · {n} 项"}},
             "elements": elements,
         },
     }
+
+
+def tier_webhook(tier):
+    """层级 → webhook:FEISHU_WEBHOOK_L{n} 优先,回落 FEISHU_WEBHOOK。返回 '' 表示未配。"""
+    return (os.environ.get(f"FEISHU_WEBHOOK_{tier}", "").strip()
+            or os.environ.get("FEISHU_WEBHOOK", "").strip())
 
 
 # ── 发送(含飞书签名)──────────────────────────────────────────────────────────
@@ -263,21 +341,24 @@ def main():
     ap.add_argument("--head", default="HEAD")
     ap.add_argument("--dry-run", action="store_true", help="只打印卡片 JSON,不 POST")
     ap.add_argument("--test", action="store_true", help="发一张「连通性测试」卡片(不 diff,手动验证用)")
+    ap.add_argument("--tier", choices=TIERS, help="只处理指定层级(L1/L2/L3),便于测试")
     args = ap.parse_args()
+    secret = os.environ.get("FEISHU_SIGN_SECRET", "").strip() or None
+    only = [args.tier] if args.tier else list(TIERS)
 
-    # 手动连通性测试:发测试卡片即返回
+    # 手动连通性测试:发测试卡片即返回(--tier 指定发到哪层的 webhook)
     if args.test:
         card = build_test_card()
         if args.dry_run:
-            print("[feishu] DRY-RUN(--test)测试卡片如下:\n")
+            print(f"[feishu] DRY-RUN(--test tier={args.tier or 'L1'})测试卡片如下:\n")
             print(json.dumps(card, ensure_ascii=False, indent=2))
             return 0
-        webhook = os.environ.get("FEISHU_WEBHOOK", "").strip()
+        webhook = tier_webhook(args.tier or "L1")
         if not webhook:
             print("[feishu] 未设置 FEISHU_WEBHOOK — 无法发测试卡片")
             return 1
-        ok, detail = post_feishu(webhook, card, os.environ.get("FEISHU_SIGN_SECRET", "").strip() or None)
-        print(f"[feishu] 测试卡片:{'成功' if ok else '失败'}（{detail}）")
+        ok, detail = post_feishu(webhook, card, secret)
+        print(f"[feishu] 测试卡片({args.tier or 'L1'}):{'成功' if ok else '失败'}（{detail}）")
         return 0 if ok else 1
 
     base = resolve_base(args.base, args.head)
@@ -286,23 +367,43 @@ def main():
         return 0
 
     changes = detect_changes(base, args.head)
-    card = build_card(changes)
-    if card is None:
+    tiers = split_tiers(changes)
+    active = [t for t in only if _count(tiers[t]) > 0]
+    if not active:
         print("[feishu] 本次无 P0/P1 事件 / 建议重审 / 评分变动 — 无需推送")
         return 0
 
-    n = sum(len(changes[k]) for k in ("new_events", "rec_brands", "score_changes"))
+    # 按解析后的 webhook 分组:同一 webhook 的层合并成一张卡(单群一张,多群分流)
+    groups = {}  # webhook(或占位) → [tiers]
+    for t in active:
+        wh = tier_webhook(t) or "<unset>"
+        groups.setdefault(wh, []).append(t)
+
     if args.dry_run:
-        print(f"[feishu] DRY-RUN — {n} 项变化,卡片如下:\n")
-        print(json.dumps(card, ensure_ascii=False, indent=2))
+        total = sum(_count(tiers[t]) for t in active)
+        print(f"[feishu] DRY-RUN — {total} 项变化,{len(groups)} 张卡(层→webhook 分组):")
+        for wh, ts in groups.items():
+            card = build_card_for(ts, tiers)
+            print(f"\n─── webhook={'(未配)' if wh=='<unset>' else wh[:48]+'…'} · 层 {'/'.join(ts)} ───")
+            print(json.dumps(card, ensure_ascii=False, indent=2))
         return 0
 
-    webhook = os.environ.get("FEISHU_WEBHOOK", "").strip()
-    if not webhook:
+    if list(groups) == ["<unset>"]:
         print("[feishu] 未设置 FEISHU_WEBHOOK — 跳过(非阻断)")
         return 0
-    ok, detail = post_feishu(webhook, card, os.environ.get("FEISHU_SIGN_SECRET", "").strip() or None)
-    print(f"[feishu] 推送 {n} 项变化:{'成功' if ok else '失败'}（{detail}）")
+
+    rc = 0
+    for wh, ts in groups.items():
+        if wh == "<unset>":
+            print(f"[feishu] 层 {'/'.join(ts)} 无对应 webhook — 跳过")
+            continue
+        card = build_card_for(ts, tiers)
+        n = sum(_count(tiers[t]) for t in ts)
+        ok, detail = post_feishu(wh, card, secret)
+        print(f"[feishu] 推送层 {'/'.join(ts)}({n} 项):{'成功' if ok else '失败'}（{detail}）")
+        if not ok:
+            rc = 1
+    return rc
     return 0 if ok else 1
 
 
