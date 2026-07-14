@@ -32,6 +32,8 @@
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(原始设计草案) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |
+| - | [daily/](daily/) | 全员 | **每日工作日报**:每天盘点前一天合并到 main 的提交/PR(`scripts/new_daily.py`,cron 自动落库);`week` 子命令合成周报草稿 |
+| - | [weekly/](weekly/) | 全员 | 每周进展周报(`scripts/new_weekly.py`,Markdown 单一真源 → `site/weekly.html`) |
 
 > 与代码并存的两份"局部 README"也是一等文档:`metric-brand-auditor/panels/README.md`(panel
 > 字段与 resolver)和 `site/README.md`(mbabrand.com 发布流程)。
