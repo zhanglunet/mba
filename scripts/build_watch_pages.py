@@ -164,7 +164,8 @@ def render_page(slug, brand_name, events):
   </header>
 
   <h1>{esc(brand_name)} · 舆情信号</h1>
-  <p class="lede">Brand Watch 事件流 · {len(events)} 条可溯源信号 · 每条直链原文 · 分级与方向为模型判断(docs/15)</p>
+  <p class="lede">Brand Watch 事件流 · {len(events)} 条可溯源信号 · 每条直链原文 · 分级与方向为模型判断(docs/15)<br>
+    <a href="/watch/{esc(slug)}/cockpit.html" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);font-weight:600">舆情驾驶舱(管理层看板)→</a></p>
   <div class="summary">
     <span class="wchip wchip-p0">待审 P0×{p0}</span>
     <span class="wchip wchip-p1">待审 P1×{p1}</span>
