@@ -23,14 +23,25 @@ GitHub Action 会 diff 出变化、拼成一张飞书卡片,POST 到飞书自定
 | 🔁 建议重审 | 品牌**新命中**触发规则:base 未命中、head 命中(R1 P0≥1 / R2 P1≥3 / R3 加权 4·2·0.5 ≥6,只数未消费事件;单一真源 [`evaluate_triggers.py`](../scripts/watch-tools/evaluate_triggers.py)) | 同上 |
 | 📈 评分变动 | `score_normalized` 变化(含新品牌首审) | `site/reports-meta.yaml` |
 
-卡片头部颜色:有 P0 事件或建议重审 → 红,否则橙。一次 push 聚合成**一张**卡片,不逐条刷屏。
+## 分层预警(docs/20 Phase 2)
+
+三类变化按**层级**路由,层级可被事件的 `alert_tier` 覆写,缺省按 severity/规则推导:
+
+| 层级 | 触发 | 头部 | 建议路由 |
+|---|---|---|---|
+| **L3 高层预警** 🚨 | P0 事件 / 命中「建议重审」 | 红 | `FEISHU_WEBHOOK_L3`(管理层群) |
+| **L2 专项协同** 📣 | 新增 P1 事件 | 橙 | `FEISHU_WEBHOOK_L2`(协同部门群) |
+| **L1 日常监测** 📊 | 评分变动 / 其余 | 蓝 | `FEISHU_WEBHOOK`(默认群) |
+
+各层 webhook 未配则**回落 `FEISHU_WEBHOOK`**;**解析到同一 webhook 的层合并成一张卡**——只配一个 `FEISHU_WEBHOOK` 时,一次 push 仍是**一张**卡(内含 L3/L2/L1 分区),不刷屏;配了独立群才分流。事件的 `related_persons` / `suggested_action`(Phase 1)会一并显示在卡片里。
 
 ## 配置(3 步)
 
 1. **建飞书机器人**:目标群 → 设置 → 群机器人 → 添加「自定义机器人」→ 复制 webhook URL。
    (可选)勾选「签名校验」,复制密钥 —— 安全性更高,推荐。
 2. **配 GitHub secret**:仓库 Settings → Secrets and variables → Actions → New repository secret:
-   - `FEISHU_WEBHOOK` = webhook URL(**必需**)
+   - `FEISHU_WEBHOOK` = 默认/回落 webhook URL(**必需**)
+   - `FEISHU_WEBHOOK_L3` / `FEISHU_WEBHOOK_L2` = 高层/协同群 webhook(**可选**,分层分流才配)
    - `FEISHU_SIGN_SECRET` = 签名密钥(**可选**,勾了签名校验才配)
 3. 完成。下次合并涉及 `watch/**` 或 `reports-meta.yaml` 的 PR 即自动推送。
    未配 `FEISHU_WEBHOOK` 时工作流直接跳过、不报错(非阻断)。
