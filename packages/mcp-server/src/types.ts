@@ -335,6 +335,11 @@ export interface WatchEvent {
   lens_map: string[]; // ⊆ {origin, category, leverage, identity, signal}
   note?: string;
   consumed_by?: string; // vN — 只在审计消费时标记,record 工具不可写
+  // ── 舆情驾驶舱扩展字段(可选,docs/20)──
+  related_persons?: string[]; // 关联人物(管理层/关键人物)
+  source_type?: string; // official|media|finance|social|investor_community|search|regulator
+  suggested_action?: string; // 建议动作(结构化;note 仍留作长文)
+  alert_tier?: string; // L1|L2|L3 预警层级覆写(缺省由 severity+触发规则推导)
 }
 
 export interface WatchTriggerEvaluation {

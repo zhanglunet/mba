@@ -210,10 +210,33 @@ describe('recordWatchEvent', () => {
     ['bad fetched_at', { brand: 'demo', event: baseEvent({ fetched_at: 'yesterday' }) }, /fetched_at/],
     ['lens out of set', { brand: 'demo', event: baseEvent({ lens_map: ['vibe'] }) }, /lens_map/],
     ['consumed_by rejected', { brand: 'demo', event: baseEvent({ consumed_by: 'v3' }) }, /consumed_by/],
+    ['bad source_type', { brand: 'demo', event: baseEvent({ source_type: 'blog' }) }, /source_type/],
+    ['bad alert_tier', { brand: 'demo', event: baseEvent({ alert_tier: 'L9' }) }, /alert_tier/],
+    ['related_persons not array', { brand: 'demo', event: baseEvent({ related_persons: '张三' }) }, /related_persons/],
   ])('rejects invalid input: %s', async (_name, input, msg) => {
     await expect(
       recordWatchEvent(input as never, store, makeMockSubStore(), log),
     ).rejects.toThrow(msg);
+  });
+
+  it('persists cockpit fields (related_persons/source_type/suggested_action/alert_tier)', async () => {
+    await recordWatchEvent(
+      {
+        brand: 'demo',
+        event: baseEvent({
+          related_persons: ['张三', '李四'], source_type: 'finance',
+          suggested_action: '启动危机公关', alert_tier: 'L3',
+        }),
+      },
+      store, makeMockSubStore(), log,
+    );
+    const parsed = parse(await readFile(join(dir, 'demo', 'events.yaml'), 'utf-8')) as
+      Array<Record<string, unknown>>;
+    const last = parsed[parsed.length - 1];
+    expect(last.related_persons).toEqual(['张三', '李四']);
+    expect(last.source_type).toBe('finance');
+    expect(last.suggested_action).toBe('启动危机公关');
+    expect(last.alert_tier).toBe('L3');
   });
 
   it('forces direction_by to model-judged regardless of input', async () => {
