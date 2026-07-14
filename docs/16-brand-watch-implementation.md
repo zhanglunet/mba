@@ -68,6 +68,9 @@ PRD schema 原样落地,增补以下几点(均为实操/驾驶舱需求发现的
    `alert_tier`(L1/L2/L3 预警层级覆写)。全部**可选、向后兼容**(旧事件不动);校验由
    `validate_watch.py` 的枚举 gate + `--selftest`(17 组断言)兜底,MCP 侧 `watch/store.ts`
    镜像同一套。反捏造:`related_persons` 须取自源文本真实人名;其余是标签/判断,不进 firewall。
+   **消费方**:`scripts/build_watch_cockpit.py` 生成 `site/watch/<slug>/cockpit.html`
+   舆情驾驶舱看板(管理层摘要 / 发布时间分布 / 维度×方向归因 / 来源类型 / 投资社区专区 /
+   可筛选全量表),`notify_feishu.py` 用 `alert_tier` 做 L1/L2/L3 分层预警(docs/19)。
 
 ### 2.3 校验器检查项(全部静态,CI 不出网)
 
