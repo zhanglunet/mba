@@ -18,6 +18,11 @@ export const SEVERITIES = new Set(['P0', 'P1', 'P2', 'P3']);
 export const DIRECTIONS = new Set(['pos', 'neg', 'neutral', 'mixed']);
 export const LENSES = new Set(['origin', 'category', 'leverage', 'identity', 'signal']);
 export const QUOTE_TYPES = new Set(['title', 'body']);
+// 舆情驾驶舱扩展字段枚举(docs/20;镜像 validate_watch.py)。
+export const SOURCE_TYPES = new Set([
+  'official', 'media', 'finance', 'social', 'investor_community', 'search', 'regulator',
+]);
+export const ALERT_TIERS = new Set(['L1', 'L2', 'L3']);
 export const QUOTE_MAX = 100;
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
@@ -120,6 +125,21 @@ export class WatchStore {
     if ((e as WatchEvent).consumed_by !== undefined) {
       errs.push('consumed_by 不可经 record_watch_event 写入(只在审计消费时标记)');
     }
+    // ── 舆情驾驶舱扩展字段(可选,docs/20)──
+    const ev = e as WatchEvent;
+    if (ev.source_type !== undefined && !SOURCE_TYPES.has(ev.source_type)) {
+      errs.push(`source_type \`${ev.source_type}\` 非法(${[...SOURCE_TYPES].join('/')})`);
+    }
+    if (ev.alert_tier !== undefined && !ALERT_TIERS.has(ev.alert_tier)) {
+      errs.push(`alert_tier \`${ev.alert_tier}\` 非法(L1/L2/L3)`);
+    }
+    if (ev.related_persons !== undefined
+        && (!Array.isArray(ev.related_persons) || !ev.related_persons.every(x => typeof x === 'string'))) {
+      errs.push('related_persons 必须是字符串列表');
+    }
+    if (ev.suggested_action !== undefined && typeof ev.suggested_action !== 'string') {
+      errs.push('suggested_action 必须是字符串');
+    }
     return errs;
   }
 
@@ -141,6 +161,12 @@ export class WatchStore {
       `  fetched_at: ${q(event.fetched_at)}`,
       `  lens_map: [${event.lens_map.join(', ')}]`,
     ];
+    if (event.related_persons?.length) {
+      lines.push(`  related_persons: [${event.related_persons.map(q).join(', ')}]`);
+    }
+    if (event.source_type) lines.push(`  source_type: ${event.source_type}`);
+    if (event.suggested_action) lines.push(`  suggested_action: ${q(event.suggested_action)}`);
+    if (event.alert_tier) lines.push(`  alert_tier: ${event.alert_tier}`);
     if (event.note) lines.push(`  note: ${q(event.note)}`);
     const block = lines.join('\n') + '\n';
 

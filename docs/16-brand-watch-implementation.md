@@ -50,9 +50,9 @@ scripts/watch-tools/
   validate_watch.py      # 静态硬 gate + --selftest
 ```
 
-### 2.2 事件 schema(相对 PRD §5.1 的两处实现增补)
+### 2.2 事件 schema(相对 PRD §5.1 的实现增补)
 
-PRD schema 原样落地,增补两点(均为实操中发现的需要):
+PRD schema 原样落地,增补以下几点(均为实操/驾驶舱需求发现的需要):
 
 1. **`quote_type: title | body`(可选,缺省 body)** —— 采集实操发现:搜索结果的
    AI 摘要**不是逐字原文**,不能当 quote;但**标题是逐字的**。故允许 quote 取源文章
@@ -62,6 +62,12 @@ PRD schema 原样落地,增补两点(均为实操中发现的需要):
    (如 `…/article/20240117/…`、`…/2025-04-07/…`):日期不依赖任何转述,
    事件的 `date` 可被 URL 直接核对。首批 15 条事件全部满足此原则
    (唯一例外 ithome 一条,已 curl 原文核对正文日期,见 §4.2)。
+3. **舆情驾驶舱扩展字段(4 个可选,2026-07-14,docs/20)** —— 为对齐「舆情驾驶舱」的
+   7 标签,加 `related_persons`(关联人物)、`source_type`(来源类型枚举:official/media/
+   finance/social/investor_community/search/regulator)、`suggested_action`(结构化建议动作)、
+   `alert_tier`(L1/L2/L3 预警层级覆写)。全部**可选、向后兼容**(旧事件不动);校验由
+   `validate_watch.py` 的枚举 gate + `--selftest`(17 组断言)兜底,MCP 侧 `watch/store.ts`
+   镜像同一套。反捏造:`related_persons` 须取自源文本真实人名;其余是标签/判断,不进 firewall。
 
 ### 2.3 校验器检查项(全部静态,CI 不出网)
 

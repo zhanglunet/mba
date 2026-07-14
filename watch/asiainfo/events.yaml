@@ -18,6 +18,10 @@
   fetched_at: "2026-07-12T06:18:00Z"
   consumed_by: v1
   lens_map: [leverage, identity, signal]
+  related_persons: ["田溯宁"]
+  source_type: finance
+  suggested_action: "跟踪实控人整合进展、统一亚信科技/亚信安全对外 IR 口径"
+  alert_tier: L2
   note: 「亚信帝国」重聚的起点事件;日期以 URL 内嵌(20240117)自证。
 
 - id: 2024-03-26-asiainfo-002
@@ -48,6 +52,10 @@
   fetched_at: "2026-07-12T06:18:00Z"
   consumed_by: v1
   lens_map: [signal]
+  related_persons: ["田溯宁"]
+  source_type: finance
+  suggested_action: "关注首亏叙事对资本市场情绪的传导,准备业绩沟通口径"
+  alert_tier: L2
   note: 上市以来首个中期亏损;日期以 URL 内嵌(20240815)自证。
 
 - id: 2024-08-22-asiainfo-004

@@ -41,6 +41,10 @@ SEVERITIES = {"P0", "P1", "P2", "P3"}
 DIRECTIONS = {"pos", "neg", "neutral", "mixed"}
 LENSES = {"origin", "category", "leverage", "identity", "signal"}
 QUOTE_TYPES = {"title", "body"}
+# 舆情驾驶舱扩展字段(docs/20):均为可选,向后兼容。source_type = 来源类型标签;
+# alert_tier = 预警层级覆写(缺省由 severity+触发规则推导,见 notify_feishu.py)。
+SOURCE_TYPES = {"official", "media", "finance", "social", "investor_community", "search", "regulator"}
+ALERT_TIERS = {"L1", "L2", "L3"}
 QUOTE_MAX = 100
 REQUIRED = ("id", "date", "dim", "severity", "direction", "direction_by",
             "title", "quote", "url", "fetched_at", "lens_map")
@@ -157,6 +161,19 @@ def validate_events(slug, events, brands, today):
         lm = e["lens_map"]
         if not isinstance(lm, list) or not lm or not set(lm) <= LENSES:
             errs.append(f"{ctx}: lens_map 必须是非空列表且 ⊆ {sorted(LENSES)}")
+        # ── 舆情驾驶舱扩展字段(可选,docs/20)──────────────────────────────
+        st = e.get("source_type")
+        if st is not None and st not in SOURCE_TYPES:
+            errs.append(f"{ctx}: source_type `{st}` 非法({'/'.join(sorted(SOURCE_TYPES))})")
+        tier = e.get("alert_tier")
+        if tier is not None and tier not in ALERT_TIERS:
+            errs.append(f"{ctx}: alert_tier `{tier}` 非法(L1/L2/L3)")
+        rp = e.get("related_persons")
+        if rp is not None and (not isinstance(rp, list) or not all(isinstance(x, str) for x in rp)):
+            errs.append(f"{ctx}: related_persons 必须是字符串列表")
+        sa = e.get("suggested_action")
+        if sa is not None and not isinstance(sa, str):
+            errs.append(f"{ctx}: suggested_action 必须是字符串")
     return errs
 
 
@@ -226,6 +243,11 @@ def selftest():
         ("lens_map 越界必抓", [ok_event(lens_map=["signal", "vibe"])], 1),
         ("url 非 http 必抓", [ok_event(url="ftp://x")], 1),
         ("consumed_by 非 vN 必抓", [ok_event(consumed_by="yes")], 1),
+        ("source_type 非法必抓", [ok_event(source_type="blog")], 1),
+        ("alert_tier 非法必抓", [ok_event(alert_tier="L9")], 1),
+        ("related_persons 非列表必抓", [ok_event(related_persons="张三")], 1),
+        ("扩展字段合法应通过", [ok_event(source_type="finance", alert_tier="L3",
+                                        related_persons=["张三"], suggested_action="启动危机公关")], 0),
     ]
     failed = []
     for name, events, expect_min in cases:
