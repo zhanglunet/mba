@@ -1,0 +1,57 @@
+name: Daily Report
+
+# 每天自动盘点「前一天合并到 main 的提交 / PR」,生成日报并直接 commit 到 main。
+# 日报是 append-only 的文档记录(docs/daily/<date>.md),不改代码。数据源是 git,可验证。
+# 手动触发可指定日期(workflow_dispatch 的 date 输入,留空=昨天)。
+#
+# cron: 01:00 UTC = 09:00 北京。此刻(北京日 D 早上)按 Asia/Shanghai 计的「昨天」= D-1。
+# 前一天无合并提交则脚本跳过、不落文件,也就不会 commit(不制造空日志)。
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "盘点日期 YYYY-MM-DD(留空=昨天,Asia/Shanghai)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0 # new_daily.py 要按 committer date 全量盘点
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate daily report
+        run: |
+          python3 scripts/new_daily.py new ${{ inputs.date }}
+
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain docs/daily)" ]; then
+            echo "docs/daily 无变化(前一天无提交或已存在)—— 不提交。"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/daily
+          DATE="${{ inputs.date }}"
+          git commit -m "docs(daily): 日报 ${DATE:-$(TZ=Asia/Shanghai date -d yesterday +%F)} [skip ci]"
+          # 推前先同步 main,避免与其它推送竞争
+          git pull --rebase origin main
+          git push origin HEAD:main
