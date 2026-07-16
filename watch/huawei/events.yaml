@@ -1,0 +1,50 @@
+# watch/huawei/events.yaml — huawei 舆情事件流(首批冷启动,2026-07-16)
+#
+# 采源:公开 RSS(官方 newsroom / blog + Google News RSS)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(Google News 去尾部来源名);direction / dim / severity / lens_map
+#   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-06-17-huawei-001
+  date: 2026-06-17
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "博世因向华为发货被美方罚 3600 万美元(出口管制外溢)"
+  quote: "Germany's Bosch to pay U.S. $36 million for shipments to China's Huawei"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxORHZpREJNbnFKZ3FxMUJpSmRTMTIxSzRTTXhjMjN0T2hHZ1lBM3dkdExRdzhxRHJ3REpTUmRvbHU2cnk2dC1PbEJ3elNMdi1abWZhT2VtZXZ1OUhWLUlQTHJBN0hxb2NzWkZyQ05fSjNSTFc3QWVib0dhVVhHOTdybW95WXFvdkpUYmU0ZjBpcENqMmRucXdmQVloZ1RYQ215VmFfeHFBcUFlZEhyeEE?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: media
+  lens_map: [signal]
+  note: "来源:Reuters。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-06-huawei-002
+  date: 2026-07-06
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "麒麟芯片首用 LogicFolding 技术(先进制程突破叙事)"
+  quote: "Huawei’s new Kirin processor first to use LogicFolding tech, firm says"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxPTFZ4YWtGRkhNc284eEpMVFlWcFk5dWctOFl0cW9oRTNtckhqVXlfRmZiMUhaZlFVX0doWmhzNlJvMXdTUlkybmo2WnlIRTdhbGJSLWtpU3BKc1BmRzd5dzZ0WVhzVXhONVJHZnRZbDF4YUNQR3dNZ1d0bUJRZnJFbHdDUTNsMzRuODlhelFzYXJmUmN3aWR4bC1ZS3liZUUxMzVIZW50YVJpWmIyVTJNUS1jeEU1d9IBtgFBVV95cUxOSEVocG9kem5Tdk1sVmxqcVI5eEtaUUdNSmNDRUp0SW9CbE9GTldvaTE3MU1fa3dKZ3RlZGE3cTkzVmpyVUdBc1l1RWQ3SDNtUGFqM2txdktpUlR6eXdDdzUwMmphanFGSDlPQ0JMOHRzM0puVkVWeTFoS05SS0gydkoxT1dGMVlkdE5uWFh5ZEtxaC1zck1NYmt6Mm5YWTFZMzZMd3pyUlVlSkpfUHBHZkNKaG1VQQ?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: media
+  lens_map: [leverage, signal]
+  note: "来源:South China Morning Post。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-14-huawei-003
+  date: 2026-07-14
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Pura 90s Pro Max 评测:多处奇怪取舍成罕见失手"
+  quote: "Huawei Pura 90s Pro Max Review: Too Many Odd Decisions Lead To Rare Misfire"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivwFBVV95cUxNZkxvY2M5Q2lxRjNsOUxRZV95MWFQRU01M3NqYUtpUGdiMEZWOXlHdDQ4ck9wQTl5WEVZYU5pamFBMXlKNFl0WjdsYnVCRGhoMTA5bU5ZS3k5a1lDRjlqOHc5MVh1MDNxTVlYMk9SdzY2NHlhSGFyR0NvNkMtNEgySTNVaG40NjdWUVB5WklzTlZFRmt4VjlBRnhjaEZjS1Y5MlItWlZWeWJCMkJSTXl3Y2dkVWRyUW5yWnY1QUFfVQ?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [signal, identity]
+  note: "来源:Forbes。首批冷启动;日期取自源 feed 的 pubDate。"

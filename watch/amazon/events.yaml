@@ -1,0 +1,65 @@
+# watch/amazon/events.yaml — amazon 舆情事件流(首批冷启动,2026-07-16)
+#
+# 采源:公开 RSS(官方 newsroom / blog + Google News RSS)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(Google News 去尾部来源名);direction / dim / severity / lens_map
+#   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-06-18-amazon-001
+  date: 2026-06-18
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "或因 FTC 广告诉讼面临数十亿美元罚款"
+  quote: "Amazon Faces Billions in Penalties From Potential FTC Ad Suit"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTE9aUjF3M2wxTE54Z2NxZ0pEMWJPN21UZE9iMlExNmdsZWFXQndlYncxQ0g5OGVJU3MtZDBmN3NGSGhWNS1mREFmQ2plLWV5ekI2QXp2MXRGd0NPZTVuT3h5cVlrOGF2MXRSM2Vld25tczZFMkI4NERj?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [signal, identity]
+  note: "来源:Insurance Journal。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-15-amazon-002
+  date: 2026-07-15
+  dim: W7
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "AWS 计算与 ML 服务换帅(Dave Brown 离任)"
+  quote: "Dave Treadwell to lead AWS Compute and ML Services as Dave Brown departs"
+  quote_type: title
+  url: https://www.aboutamazon.com/news/company-news/aws-dave-treadwell-replaces-dave-brown-compute-ml-services?utm_source=rss
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [leverage]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-15-amazon-003
+  date: 2026-07-15
+  dim: W9
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon Leo 为南非最大 ISP 提供卫星互联网"
+  quote: "Amazon Leo to power satellite internet for South Africa’s largest internet provider"
+  quote_type: title
+  url: https://www.aboutamazon.com/news/amazon-leo/amazon-leo-south-africa-herotel-evry?utm_source=rss
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [leverage, category]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-16-amazon-004
+  date: 2026-07-16
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "将于 7 月 30 日发布 2026 二季度财报"
+  quote: "Amazon will share its Q2 2026 earnings on July 30"
+  quote_type: title
+  url: https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report?utm_source=rss
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [signal]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"

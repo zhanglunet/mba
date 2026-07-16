@@ -1,0 +1,50 @@
+# watch/tesla/events.yaml — tesla 舆情事件流(首批冷启动,2026-07-16)
+#
+# 采源:公开 RSS(官方 newsroom / blog + Google News RSS)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(Google News 去尾部来源名);direction / dim / severity / lens_map
+#   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-06-23-tesla-001
+  date: 2026-06-23
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美方就一起致命撞车事故展开调查"
+  quote: "US opens probe of fatal Tesla crash into Texas home"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxOZHlwOUJRVmwtUzFLZ2I3bDJSSmJtU2ozSXNBMHlTMG9OUW9lcEE3OUE3dUpDZXJTdEo5MVFKaUVYX2Z4M2Rwejcwb3ZQY2NGemp6MzBIbFFCT09kS2lKamUxWkpqLWdLT3o5WXozTmVmVGI5bC1wX1JSbmp4eW5lNS1EeGFLTUtDbmQ2X2FMWTYzSjVRMFVGdVphZjdab2M?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: media
+  lens_map: [signal, identity]
+  note: "来源:Reuters。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-06-26-tesla-002
+  date: 2026-06-26
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "FSD 是否值 99 美元/月引发产品价值讨论"
+  quote: "Is Tesla’s “Full Self Driving” Worth $99/Month?"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPQWtrbXhxaTBieTJDS2NvdVdiZGlxZlRYNjlvMFd5b2hBdnRzOEFwbm5OWENPMno2cWM1MGdiaUI4dlVSNmM2OFlCbVYteGhHdnlKTFFEZlMxbmtLbzhYYzNaQV9iWm5Jbm9aVFlrc2IybGVYckV0VHE0eUZRS1FUNWVjZWxTRFE?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: media
+  lens_map: [signal, category]
+  note: "来源:CleanTechnica。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-02-tesla-003
+  date: 2026-07-02
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "二季度销量回升"
+  quote: "Tesla Sales Jumped in Second Quarter"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQeHFoMnczV0NTdlRyaW5YV2ZYV3VQVEpoTVFrUTRBaGFiZUplNGRKcUtVWlUyUXV2bWd5LXNUNTJwcVE5cTZNeE1xN2FQdWNiSWUyaXNqaDcydkFSd2MtYTFqSDFKeTRQZkUzSXRCREVncG5pWkd2RnNGMmk2YWp1RzB3QlR4VFk?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [signal]
+  note: "来源:WSJ。首批冷启动;日期取自源 feed 的 pubDate。"

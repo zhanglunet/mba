@@ -1,0 +1,65 @@
+# watch/nvidia/events.yaml — nvidia 舆情事件流(首批冷启动,2026-07-16)
+#
+# 采源:公开 RSS(官方 newsroom / blog + Google News RSS)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(Google News 去尾部来源名);direction / dim / severity / lens_map
+#   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-06-28-nvidia-001
+  date: 2026-06-28
+  dim: W9
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "对华 AI 芯片销售停滞,华为等本土厂商取得领先"
+  quote: "Nvidia’s AI chip sales in China stall, as local chipmakers like Huawei take the lead"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxNNHUwNUNKRHR5ZkZfZXlWcVpTb1BSQXd0U0RDT3Z2UVA1ckJ1b1FwSHZmVnhOTTAyejZveTRsODZtOTE4RXVzX3VDN0pDNGsxVjFVWnFYVHFvRUV2SUk0S3RaZUVTcm5oeXB2WEpsSmRJMzE4VnRyRnZTcG5xdmotTGtEcjRpZVJodG1URXVGYm5qQQ?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: media
+  lens_map: [leverage, signal]
+  note: "来源:AP News。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-14-nvidia-002
+  date: 2026-07-14
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "美方称对华 H200 芯片实际出货‘极少’(出口管制博弈)"
+  quote: "U.S. trade official says 'very few' Nvidia H200 AI chips have been shipped to China"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBZdWd2RUZkOHBLZ3lpeVdGMFZCT1Vpd2FiUXR6c0xWMGhUMkwxLUtVY1dSdnlJNGVKMVN2aTVpNlA4UHJNQUJQSGJiNTVsemVvZ0lEakxvOG1kU2tTeXptLW91Tm1GbmtlSjg2dWlOdkXSAXZBVV95cUxQWVdMZURKQTVEMER2bE8wTmtMczA0NzBDa3NjMGV4aUdRNVdoT1Z6QlA3cFoxYnlOak8ta282ZWU1NnZLYk9oT3lYNzlPYW8xZmh3eVE2aTRmTDFxZXByU3FueERPT0wzNDg4dGpMazA1U0RjVEJn?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [leverage, signal]
+  note: "来源:CNBC。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-15-nvidia-003
+  date: 2026-07-15
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "推出 Jetson Thor 面向主流机器人与边缘 AI"
+  quote: "NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI"
+  quote_type: title
+  url: https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [category, leverage]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-16-nvidia-004
+  date: 2026-07-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "与日本政府共建全球首个国家级 AI 基础设施"
+  quote: "Japan Government, Industrial Leaders and NVIDIA Launch the World’s First National AI Infrastructure"
+  quote_type: title
+  url: https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [leverage, category]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"

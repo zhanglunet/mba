@@ -1,0 +1,50 @@
+# watch/apple/events.yaml — apple 舆情事件流(首批冷启动,2026-07-16)
+#
+# 采源:公开 RSS(官方 newsroom / blog + Google News RSS)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(Google News 去尾部来源名);direction / dim / severity / lens_map
+#   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-06-18-apple-001
+  date: 2026-06-18
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "因监管在巴西调整 iOS(合规驱动的生态让步)"
+  quote: "Apple announces changes to iOS in Brazil"
+  quote_type: title
+  url: https://www.apple.com/newsroom/2026/06/apple-announces-changes-to-ios-in-brazil/
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [leverage]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-08-apple-002
+  date: 2026-07-08
+  dim: W9
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "加大与博通合作、在美增产数十亿颗芯片"
+  quote: "Apple to increase spend with Broadcom to produce billions more U.S. chips"
+  quote_type: title
+  url: https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [leverage]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-09-apple-003
+  date: 2026-07-09
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "斩获创纪录 89 项艾美奖提名"
+  quote: "Apple scores record 89 Emmy Award nominations"
+  quote_type: title
+  url: https://www.apple.com/newsroom/2026/07/apple-scores-record-89-emmy-award-nominations/
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [identity, signal]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"

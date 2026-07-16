@@ -1,0 +1,65 @@
+# watch/deepseek/events.yaml — deepseek 舆情事件流(首批冷启动,2026-07-16)
+#
+# 采源:公开 RSS(官方 newsroom / blog + Google News RSS)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(Google News 去尾部来源名);direction / dim / severity / lens_map
+#   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-06-17-deepseek-001
+  date: 2026-06-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "据报道完成 74 亿美元融资"
+  quote: "DeepSeek Just Raised $7.4 Billion. Here’s The Catch."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxQQWszMzBpakQ5X2prb3dhSjhId0N1M0xqUmhPVVpuMUFBOEZFT3A2MU1McTJqMkVSOVRpYW82dkd2QmpzQi1ZTlA0ZmVjUjd5U1FUTzFPbGxPd3AwQ1JTOTJGY2oxa3JJck5CVk01S2hDeDRTQlQxSU02ZmxGV1RDWWdJMlA0ZHNfVnNEaDFJMlJoZ0NvSDVfMEE3cFBJNjdubWc0?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [signal]
+  note: "来源:Forbes。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-07-deepseek-002
+  date: 2026-07-07
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "以自研芯片绕开美国制裁,英伟达股价承压"
+  quote: "DeepSeek Wants to Bypass U.S. Sanctions With a Custom Chip. Why Nvidia Stock Is Sliding."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNaXp0ekxDejQtN2VmbHdLMmh5QmhWVE9qSi03OG9PdUdqOEZ4OUtVVkRSaUpYaTh3clMtWHFSTHZld2JveGtEak1YeVFYS2VLS0FsWGdoV3V4c3dHc2x6azM0R0tMV3M4RTFOSlJiTVdjMEUxSGJTbnV0UmNFUDRMdnd4RzlMRjl1N2dGTU5BMkFjX0lWTG42Tk8ycw?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [leverage, signal]
+  note: "来源:Barron's。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-09-deepseek-003
+  date: 2026-07-09
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "据报道自研 AI 芯片(降低对英伟达依赖)"
+  quote: "EXCLUSIVE: China's DeepSeek developing its own AI chip, sources say"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxNSGRQQzRJX0VFTThJbC1JZnM2NUpNVHZQeEhxODdQejNBODNSLXpYMGdvSWxJMVhRSFBEOWplZy1NMU5qSnFxc3dpOEczN01EcVRQSk1mSXo3ejlMaUoxcks3LURaeGZ0Q3EyZ2dBQVN0QkRXNWg0YWpyOXJ2TjUtLVF4elZRU1VqdUVCdEhGNnFfYV9uYTdaT3V4MVFEZ2swRmlfRw?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: media
+  lens_map: [leverage]
+  note: "来源:Reuters。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-15-deepseek-004
+  date: 2026-07-15
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "据报道拟明年在上海上市"
+  quote: "China’s DeepSeek Prepares to List Shares in Shanghai Next Year"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxNSC1feXFIcnhaZ1l3UTlCSktMMlJXaXUtcDA4S0M1azE3eGRXX3VRekFFRTRwaVJveUc2QV9IWjJMRnJkNDZqV2NUZVVabHJidVJYUG1pV29uY1NDTmk3MTU5WlZldlMwQ1NaR2NqdkJlaDczN1h5aFJ5emx2eERsS1NpWTc1Q2lobk81MGtLbDV6MldUbHZuXzZvQWJqM1E?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [signal, leverage]
+  note: "来源:WSJ。首批冷启动;日期取自源 feed 的 pubDate。"

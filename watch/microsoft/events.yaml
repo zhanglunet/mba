@@ -1,0 +1,50 @@
+# watch/microsoft/events.yaml — microsoft 舆情事件流(首批冷启动,2026-07-16)
+#
+# 采源:公开 RSS(官方 newsroom / blog + Google News RSS)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(Google News 去尾部来源名);direction / dim / severity / lens_map
+#   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-06-22-microsoft-001
+  date: 2026-06-22
+  dim: W9
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "在 Pecos 新建数据中心扩张 AI 算力"
+  quote: "Powering the next wave of AI: Expanding capacity with our new datacenter in Pecos"
+  quote_type: title
+  url: https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [leverage]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-06-25-microsoft-002
+  date: 2026-06-25
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "《纽约时报》修订对 OpenAI 与微软的诉讼(AI 版权)"
+  quote: "The New York Times Amends Lawsuit Against OpenAI and Microsoft"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNkt5bzEyVlJtRUxPRHp1N21EUjd2NVhvTm9heUFZRWRUMmwyYUJxZVNqQWhrbmFxSDhDOGZkOWFBTHJ0b0JWV1pfTFNOa2N1N05pbkFZcDg4MmdhUi04TTJ0eTMyamQ3M09UOUtWcmJNdjlQZDNwNGVtenRINHZmWGhfTVRyN1VM?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: media
+  lens_map: [leverage, signal]
+  note: "来源:The New York Times。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-06-30-microsoft-003
+  date: 2026-06-30
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "计划新一轮裁员(影响不到 2.5% 员工)"
+  quote: "Microsoft plans thousands of job cuts, impacting less than 2.5% of workforce"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxQdFFSOFFfay1NNkprN1hMdm15VmgzQU5FNzBzcTd6dTZsR09rRG83blBvUnFISVktMkJMSnhIYWZsNHNLMFdfUHdVMHl3VnhjdXJrd2tCUW5Cb25PUWh3MU9iRmh5RVJiRHpEc1hOb096ZHZfVnVNWEdyQXpySlluMGx1cXlwZWVjMEE?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [signal, identity]
+  note: "来源:Business Insider。首批冷启动;日期取自源 feed 的 pubDate。"
