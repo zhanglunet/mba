@@ -1046,7 +1046,25 @@
           <li><b>反捏造</b>:审计评分明确标 AI 评委模拟、事实带来源/数字需 live 核验;梁文锋(非评委)引语改为有据转述;产业仅作分组标签不参与评分</li>
           <li>docs/23-industry-dimension.md(分类表 + schema + 开发计划存档);MBA 现覆盖 <b>17 品牌 + 17 创始人 + 6 产业</b></li>
         </ul>
-        <div class="log-commit">PR #144(DeepSeek)· #145(NVIDIA)· 本 PR(产业维度)</div>
+        <div class="log-commit">PR #144(DeepSeek)· #145(NVIDIA)· #146(产业维度)</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-16 · 续三</div>
+      <div class="log-tags">
+        <span class="badge done">创始人晚餐</span>
+        <span class="badge p1">首页亮点</span>
+      </div>
+      <div class="log-title">创始人晚餐「亮点」嵌入首页 —— 把最出彩的一段对话搬上首页</div>
+      <div class="log-body">
+        <ul>
+          <li>首页(品牌网格之后)新增 <b>「创始人晚餐 · 亮点」块</b>:精选那场晚餐的一段亮点往返对话(两个气泡)+ 合作点 + AI-演绎 disclaimer + 「看完整晚餐 / 组合更多创始人」双入口。首场亮点 = 田溯宁 × 唐杰的 leverage 镜头(<b>「你的渠道,我的模型」</b>)</li>
+          <li><b>单一真源仍是 <code>collabs/*.yaml</code></b>:<code>build_collab_dinners.py</code> 生成 <code>&lt;!-- DINNER --&gt;</code> 块(机制同首页品牌卡片),<code>--check-home</code> 守漂移;晚餐 yaml 加可选 <code>featured</code>/<code>home_highlight</code>,校验器认这两字段 + selftest 16 组</li>
+          <li><code>check_consistency</code> 加第 11 格「晚餐亮点对齐」;docs/22 补首页块说明 + 开发计划存档</li>
+          <li><b>反捏造</b>:发言为 AI 演绎公开立场(非逐字原话)、disclaimer 在位、只作调研启发不改评分;QA:首页 0 JS 错误、产业筛选/排序与亮点块共存不冲突</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · 多场时按 featured/字母序确定性选一</div>
       </div>
     </div>
 

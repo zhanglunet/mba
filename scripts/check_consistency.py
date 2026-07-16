@@ -177,6 +177,28 @@ def check_collabs():
     lines = [x for x in (r.stderr or r.stdout or "").strip().splitlines() if x.strip()]
     return False, "创始人晚餐违规 —— " + (lines[-1] if lines else "跑 validate_collabs.py")
 
+def check_dinner_home():
+    """首页「创始人晚餐 · 亮点」块(site/index.html 的 DINNER 区)必须与 collabs/*.yaml 同步。
+    块由 build_collab_dinners.py 从 collabs 生成;此处跑其 --check-home 拦漂移
+    (同 build_home_cards 的双源防线)。collabs/ 未启用或依赖缺失 → 通过。"""
+    cdir = os.path.join(ROOT, "collabs")
+    if not os.path.isdir(cdir) or not glob.glob(os.path.join(cdir, "*.yaml")):
+        return True, "collabs/ 未启用(跳过)"
+    script = os.path.join(ROOT, "scripts", "build_collab_dinners.py")
+    if not os.path.exists(script):
+        return True, "build_collab_dinners.py 不存在(跳过)"
+    try:
+        r = subprocess.run([sys.executable, script, "--check-home"],
+                           capture_output=True, text=True, cwd=ROOT)
+    except Exception as e:
+        return True, f"无法运行 build_collab_dinners(跳过):{e}"
+    if r.returncode == 0:
+        return True, "首页晚餐亮点块与 collabs/*.yaml 同步(无漂移)"
+    if r.returncode == 2:
+        return True, "build_collab_dinners 依赖缺失(跳过)"
+    lines = [x for x in (r.stdout or r.stderr or "").strip().splitlines() if x.strip()]
+    return False, "首页晚餐亮点块漂移 —— " + (lines[0] if lines else "跑 build_collab_dinners.py 重生成")
+
 def check_industries():
     """产业维度(docs/23):每个发布白名单品牌在 reports-meta 都有 industry 且 ∈ 6 个合法 CN 标签。
     正则解析 reports-meta(不引 yaml 依赖,与本守卫零依赖风格一致)。"""
@@ -207,6 +229,7 @@ CHECKS = [
     ("创始人维度", check_founders),
     ("创始人晚餐", check_collabs),
     ("产业维度", check_industries),
+    ("晚餐亮点对齐", check_dinner_home),
 ]
 
 def main():
