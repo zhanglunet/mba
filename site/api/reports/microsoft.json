@@ -1,0 +1,19 @@
+{
+  "slug": "microsoft",
+  "brand_cn": "Microsoft / 微软",
+  "brand_en": "Microsoft",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-07-16",
+  "panel": "vc-en",
+  "score": {
+    "total": 173,
+    "max": 200,
+    "normalized": 8.65
+  },
+  "tl_dr": "Leverage(杠杆)维度领跑级(9.5):Windows/Office 生态锁定 + 企业分发 + Azure + 开发者生态 (GitHub/VS Code)+ OpenAI 股权,是科技界最深也最多元的护城河。品牌弧线独特——盖茨 1975 哈佛 退学的软件神话 → 反垄断\"邪恶帝国\"与 Ballmer 失落十年 → 纳德拉云/AI 二次崛起。**首个真实触发 --panel-drop 的发布报告**:霍夫曼因创办 LinkedIn(售予微软)并曾任微软董事被剔除,4 评委打分。 共识 Leverage(9.5)领跑;唯一分歧在 Signal(8.25)——蒂尔\"AI 领先借自 OpenAI\"7 vs 安德森/纳瓦尔 \"分发已把 AI 变成自有杠杆\"9。173/200 · 8.65/10(vc-en 高分梯队)。",
+  "html_url": "/reports/microsoft/",
+  "pdf_url": null,
+  "api_url": "/api/reports/microsoft.json",
+  "panel_api_url": "/api/panels/vc-en.json"
+}

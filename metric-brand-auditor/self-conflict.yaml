@@ -62,7 +62,7 @@ judges:
   naval:         { type: investor, orgs: [AngelList, 天使名单] }
   pmarca:        { type: investor, orgs: [a16z, Andreessen Horowitz, Netscape] }
   pthiel:        { type: investor, orgs: [Founders Fund, Palantir, PayPal, Thiel Capital, Mithril] }
-  rhoffman:      { type: investor, orgs: [Greylock, LinkedIn, PayPal, Inflection AI] }
+  rhoffman:      { type: investor, orgs: [Greylock, LinkedIn, 领英, PayPal, Inflection AI, Microsoft, 微软] }
 
   # ── 分析师(咨询客户 = 强关联,须自检)────────────────────────────
   zhuangshuai:   { type: analyst, orgs: [百联咨询, 庄帅] }

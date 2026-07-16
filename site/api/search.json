@@ -1,5 +1,5 @@
 {
-  "count": 86,
+  "count": 87,
   "items": [
     {
       "type": "report",
@@ -152,6 +152,14 @@
       "text": "Category(品类定义)维度领跑级(9.2):定义现代网络搜索 + 发明搜索广告商业模式,并以 2017 年 Transformer 论文成为生成式 AI 的技术基石;蒂尔更把 Google 当\"创造性垄断\"的教科书范式。从斯坦福 宿舍 BackRub、门洛帕克车库到\"organize the world's information\"的使命是硅谷经典起源。vc-en 5 评委 (佩奇非评委,无自冲突)共识:Category(9.2)领跑、Leverage(8.8)紧随;全卷最低、也最一致谨慎的是 Signal(7.6)——2024 搜索反垄断败诉 + \"发明了 Transformer 却被 OpenAI 的 ChatGPT 抢先\"的创新者 窘境。211/250 · 8.44/10(vc-en 高分梯队)。",
       "url": "/reports/google/",
       "api_url": "/api/reports/google.json"
+    },
+    {
+      "type": "report",
+      "slug": "microsoft",
+      "title": "Microsoft / 微软 · v1",
+      "text": "Leverage(杠杆)维度领跑级(9.5):Windows/Office 生态锁定 + 企业分发 + Azure + 开发者生态 (GitHub/VS Code)+ OpenAI 股权,是科技界最深也最多元的护城河。品牌弧线独特——盖茨 1975 哈佛 退学的软件神话 → 反垄断\"邪恶帝国\"与 Ballmer 失落十年 → 纳德拉云/AI 二次崛起。**首个真实触发 --panel-drop 的发布报告**:霍夫曼因创办 LinkedIn(售予微软)并曾任微软董事被剔除,4 评委打分。 共识 Leverage(9.5)领跑;唯一分歧在 Signal(8.25)——蒂尔\"AI 领先借自 OpenAI\"7 vs 安德森/纳瓦尔 \"分发已把 AI 变成自有杠杆\"9。173/200 · 8.65/10(vc-en 高分梯队)。",
+      "url": "/reports/microsoft/",
+      "api_url": "/api/reports/microsoft.json"
     },
     {
       "type": "panel",

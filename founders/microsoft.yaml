@@ -1,0 +1,61 @@
+# founders/microsoft.yaml — 微软 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 比尔·盖茨非 MBA 评委,履历经微软官方一手(news.microsoft.com/facts-about-microsoft)+ 盖茨
+# 哈佛 2007 毕业演讲(一手)+ 公开记录核实(curl 走 $HTTPS_PROXY+CA,坑 #1),每条里程碑带来源。
+# 诚实处理:微软由比尔·盖茨与 Paul Allen(保罗·艾伦,2018 去世)共同创办;盖茨 2000 卸任 CEO、
+# 2014 卸任董事长、2020 离开董事会,现任 CEO 为 Satya Nadella(纳德拉,MBA 评委 satyanadella)。
+# 反捏造:不含编造引语;relation 为标注的分析;当代使命句为微软官方逐字原文;数字近期需 live 核验。
+brand: microsoft
+founder:
+  name_cn: 比尔·盖茨
+  name_en: Bill Gates
+  role: 联合创始人 / 前董事长 / 前 CEO(与 Paul Allen 共同创办;现任 CEO Satya Nadella)
+  status: 已离任
+  # perspective_slug 留空:比尔·盖茨非 MBA 评委(注:现任 CEO 纳德拉是评委 satyanadella)
+career:
+  - period: "1955-1975"
+    milestone: "1955-10-28 生于西雅图;1973 入哈佛,痴迷软件,1975 从哈佛退学——用他自己的话是'我大学教育的结束,与微软这段非凡旅程的开始'"
+    evidence: "盖茨哈佛 2007 毕业演讲(一手,news.harvard.edu 2007-06);传记交叉核对"
+    lens: [origin]
+  - period: "1975-1981"
+    milestone: "1975 与 Paul Allen 创办微软(Micro-Soft,起于为 Altair 8800 写 BASIC 解释器),地点阿尔伯克基;早期愿景'一台电脑上每张桌、进每个家';1979 迁至华盛顿贝尔维尤;1981-06-25 公司注册,1981-08 借 IBM PC 交易推出 MS-DOS"
+    evidence: "微软官方 news.microsoft.com/facts-about-microsoft(curl 一手:1975 founded / 1979 迁址 / 1981 incorporates / IBM)"
+    lens: [origin, category, leverage]
+  - period: "1985-1995"
+    milestone: "1985 Windows 1.0;1986 上市;1990 Windows 3.0 确立 PC 图形界面霸主;1995-08-24 Windows 95;1995-12-07 盖茨宣布微软全面拥抱互联网(著名'互联网浪潮'转向)"
+    evidence: "微软官方 facts(curl 一手:Windows 95 / 互联网转向日期)"
+    lens: [category, signal]
+  - period: "1998-2008"
+    milestone: "1998-2001 美国诉微软反垄断案(捆绑 IE 被判滥用市场支配);2000 盖茨卸任 CEO(交棒 Ballmer),转任首席软件架构师;2008 转为兼职,重心转向比尔及梅琳达·盖茨基金会"
+    evidence: "公开司法记录(US v. Microsoft);微软官方 facts;盖茨基金会公开资料"
+    lens: [signal, identity]
+  - period: "2014-2020"
+    milestone: "2014-02-04 Satya Nadella 任 CEO,盖茨卸任董事长转任技术顾问;微软在纳德拉治下转向云(Azure)与'成长型思维'文化,重塑为当代使命'empower every person and every organization on the planet to achieve more';2020 盖茨离开董事会专注慈善"
+    evidence: "微软官方 facts(curl 一手:2014-02-04 Nadella CEO;当代使命逐字);公开公告"
+    lens: [category, identity]
+  - period: "2019-2026(遗产/现状)"
+    milestone: "微软成为 OpenAI 最大投资/云伙伴(2019 起累计百亿美元级),推出 Copilot,把 AI 嵌入 Azure/Office/GitHub;市值一度居全球最高之列——盖茨奠基的软件帝国在纳德拉的云+AI 转型下二次崛起"
+    evidence: "公开报道(微软-OpenAI 合作、Copilot、市值),需 live 核验"
+    lens: [signal, leverage]
+relation:
+  origin: >-
+    分析:微软的起源与盖茨'哈佛退学、1975 与 Paul Allen 为 Altair 写 BASIC'的软件时代创业神话深度绑定;
+    '一台电脑上每张桌、进每个家'的早期愿景,是把软件变成普世基础设施的起点。
+  category: >-
+    分析:盖茨定义了商用软件/操作系统平台品类(MS-DOS/Windows)与 Office 生产力套件,并在纳德拉治下
+    完成了向云(Azure)与 AI(OpenAI/Copilot)的品类再造——'定义品类 + 二次再造'是微软最独特的品牌资产。
+  leverage: >-
+    分析:Windows/Office 生态锁定 + 企业分发渠道 + Azure 云 + 开发者生态(GitHub/VS Code)+ OpenAI 股权,
+    构成科技界最深、也最多元的护城河;企业客户的长期绑定是核心杠杆。
+  identity: >-
+    分析:微软身份有一条'曲折弧线'——反垄断时代的'邪恶帝国'与 Ballmer'失落十年',到纳德拉'成长型思维、
+    拥抱开源、赋能每个人'的重塑。当代身份高度一致,但这份一致是纳德拉重建的,而非创始人盖茨延续的。
+  signal: >-
+    分析:全球最高市值之一、Azure 高增长、借 OpenAI 领跑企业 AI 是可核验的真实信号;但反垄断历史、
+    '这份 AI 领先有多少是借自 OpenAI'、以及 AI 资本开支的回报可持续性需 live 核验,不把一轮景气当作永久。
+sources:
+  - "微软官方《Facts About Microsoft》 news.microsoft.com/facts-about-microsoft(curl 一手:1975 founded、1981 incorporates、Windows 95、2014 Nadella CEO、当代使命逐字)"
+  - "比尔·盖茨哈佛 2007 毕业演讲 news.harvard.edu/gazette/story/2007/06(curl 一手:退学与微软起点、'greatest advances... reduce inequity')"
+  - "美国诉微软反垄断案(US v. Microsoft, 1998-2001)· 公开司法记录"
+  - "比尔及梅琳达·盖茨基金会 gatesfoundation.org(慈善转向)"
+  - "微软-OpenAI 合作、Copilot、市值(公开报道,需 live 核验)"
