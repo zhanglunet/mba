@@ -79,3 +79,18 @@
   - identity
   - signal
   note: 无糖招牌与真实标注的信任争议;来源为中国互联网联合辟谣平台;日期以 URL 内嵌(2021-04/13)自证。
+
+- id: 2026-06-22-genki-forest-006
+  date: 2026-06-22
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "元气森林十周年复盘:19 款新品 + 咸宁创新院投入,但媒体判词「不再网红、没有爆款」"
+  quote: "元气森林迎接十周年，不再网红没有爆款"
+  quote_type: title
+  url: https://www.21jingji.com/article/20260622/herald/0082a286fb07dc5a176a97fbc7f0e620.html
+  fetched_at: "2026-07-16T00:35:00Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "距上批事件(2021)五年后的媒体复盘;增长稳但爆款缺位(mixed);日期以 URL 内嵌(20260622)自证。"

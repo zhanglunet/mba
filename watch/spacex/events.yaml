@@ -66,3 +66,18 @@
   - identity
   - signal
   note: 散户社群热度(>$100B 订单、留 30% 给散户仍供不应求)是品牌拉力的社交信号,区别于 W5 定价事件;日期以 URL 内嵌(2026/06/15)自证。
+
+- id: 2026-07-15-spacex-005
+  date: 2026-07-15
+  dim: W8
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "星舰第 13 次试飞待发:首载 20 颗 V3 星链、单台猛禽二次点火与隔热瓦返场测试,针对 Flight 12 引擎问题改进"
+  quote: "SpaceX’s 13th Starship launch will test new modifications"
+  quote_type: title
+  url: https://mynews13.com/fl/orlando/space/2026/07/15/spacex-starship-13-test
+  fetched_at: "2026-07-16T00:35:00Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "发射/交付节奏信号(W8 核心维度);日期以 URL 内嵌(2026/07/15)自证。"
