@@ -411,3 +411,24 @@ reports:
       Leverage(7.0)——先进芯片禁运是结构约束,开源让护城河成为悬而未决的命题。分歧沿"技术理想主义
       值多少钱"断层线分布:周鸿祎(开源国家队)44 最高,朱啸虎(VC 商业化)35 最低。200/250 · 8.00/10。
     has_pdf: false
+
+  - slug: nvidia
+    card_brand: "NVIDIA · 英伟达"
+    card_meta: "vc-en panel · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 黄仁勋是评委但不在本 panel"
+    headline: "MBA 最高分:发明 GPU 品类 + 最深护城河,唯一分歧是垄断能否穿越浪潮"
+    brand_cn: NVIDIA / 英伟达
+    brand_en: NVIDIA
+    panel: vc-en
+    version: v1
+    audit_date: 2026-07-16
+    score_total: 222
+    score_max: 250
+    score_normalized: 8.88
+    tl_dr: >-
+      MBA 迄今综合得分最高的品牌(略高于 SpaceX 8.76):同时拥有最强品类创造史(发明 GPU、开创 CUDA
+      通用计算、定义"AI 工厂")与最深护城河(CUDA 近二十年生态锁定 + 全栈)。黄仁勋从 Denny's 创办、
+      两度濒死到执掌 3 万亿美元公司的 30 年创始人叙事几乎无法复制。vc-en 5 评委(黄仁勋是评委但不在
+      本 panel,无自冲突)共识:Leverage(9.6)领跑、Category(9.4)紧随;唯一实质分歧在 Signal(8.2)——
+      蒂尔"垄断能否穿越浪潮"(周期性/对华管制/云厂商自研芯片)7 vs 安德森"这是平台而非周期"9。
+      222/250 · 8.88/10。
+    has_pdf: false

@@ -1,0 +1,62 @@
+# founders/nvidia.yaml — 英伟达 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 黄仁勋是 MBA 评委(jensenhuang);履历复用 perspectives/jensenhuang-perspective/references/research/
+# 06-timeline.md(每条锚点已核)。诚实处理:NVIDIA 由黄仁勋与 Chris Malachowsky、Curtis Priem 共同创办。
+# 反捏造:不含编造引语;relation 为标注的分析。数字(市值/份额)以公开记录为准,近期需 live 核验。
+brand: nvidia
+founder:
+  name_cn: 黄仁勋
+  name_en: Jensen Huang
+  role: 联合创始人 / 总裁 / CEO(与 Chris Malachowsky、Curtis Priem 共同创办)
+  status: 现任
+  perspective_slug: jensenhuang
+career:
+  - period: "1963-1992"
+    milestone: "1963 生于台湾台南;1972 随兄赴美(9 岁),就读肯塔基 Oneida Baptist Institute、俄勒冈 Aloha 高中;1984 俄勒冈州立大学电机工程学士,先后任职 AMD、LSI Logic;1992 斯坦福电机工程硕士"
+    evidence: "jensenhuang 06-timeline(锚:Wikipedia / Britannica / Computer History Museum / NVIDIA newsroom)"
+    lens: [origin]
+  - period: "1993"
+    milestone: "1993-04-05 与 Chris Malachowsky、Curtis Priem 在 Denny's 餐厅商议后创办 NVIDIA,黄仁勋亲签公司章程;红杉 Don Valentine 投约 100 万美元"
+    evidence: "jensenhuang 06-timeline(锚:NVIDIA corporate timeline;The Nvidia Way)"
+    lens: [origin, leverage]
+  - period: "1995-1997"
+    milestone: "1995 首款芯片 NV1 失败(约 25 万片多被退货);1996 裁员至不足 40 人、濒临倒闭;1997 RIVA 128(NV3)四个月售超百万片,把公司从约 30 天工资的绝境救活"
+    evidence: "jensenhuang 06-timeline(锚:公司史;The Nvidia Way)"
+    lens: [origin, signal]
+  - period: "1999"
+    milestone: "1999-01 IPO;1999-08 GeForce 256 发布,定义'世界第一款 GPU'"
+    evidence: "jensenhuang 06-timeline(锚:Wikipedia GeForce 256;NVIDIA timeline)"
+    lens: [category, signal]
+  - period: "2006-2012"
+    milestone: "2006-11 推出 CUDA(把可编程通用计算放进每颗 GPU),开启 GPGPU 时代;2012-09 AlexNet 在 CUDA GPU 上证明深度学习,AI 时代由此开启"
+    evidence: "jensenhuang 06-timeline(锚:NVIDIA;AlexNet 论文;NTU 2023 演讲)"
+    lens: [category, leverage]
+  - period: "2016-2022"
+    milestone: "2016 DGX-1(盒装 AI 超算),黄仁勋亲手送首台给 OpenAI;2017 Volta/Tensor Core、2020 Ampere A100、收购 Mellanox(69 亿)、2022 Hopper H100 与'AI 工厂'叙事"
+    evidence: "jensenhuang 06-timeline(锚:Fortune 2016;SEC 备案;GTC keynote)"
+    lens: [leverage, category]
+  - period: "2022-2024"
+    milestone: "2022-11 ChatGPT 引爆 H100/A100 需求;2024-03 Blackwell 平台;2024-06-07 NVIDIA 市值突破 3 万亿美元,成为 AI 时代的定义性公司"
+    evidence: "jensenhuang 06-timeline(锚:Fortune 2024-06-07;GTC 2024 keynote)"
+    lens: [signal, identity]
+relation:
+  origin: >-
+    分析:NVIDIA 的起源与黄仁勋'Denny's 餐厅创办、两度濒死、30 余年创始人掌舵'的叙事高度绑定——
+    1996 濒临倒闭与 1997 RIVA 128 的绝地翻盘('Run, don't walk'的生存意志)是品牌起源的真实锚点。
+  category: >-
+    分析:黄仁勋发明了'GPU'品类(GeForce 256)、以 CUDA 开创通用 GPU 计算、把公司重定义为'加速计算/
+    AI 工厂'——是当代最强的品类创造者,每一次都在别人看清之前定义新范式。
+  leverage: >-
+    分析:CUDA 近二十年的软件生态锁定 + 全栈(芯片 + 网络 Mellanox + 系统 + 软件)+ 年度产品节奏,
+    构成科技界最深的护城河;开发者迁移成本是核心杠杆。
+  identity: >-
+    分析:皮衣、黄氏人格、'AI 公司'图腾塑造了高度一致且标志性的身份;创始人个人品牌与公司深度绑定。
+    黄仁勋本人是 MBA 评委(jensenhuang),审计 NVIDIA 若用含其本人的 panel 须 --panel-drop jensenhuang。
+  signal: >-
+    分析:3 万亿美元市值、数据中心收入爆发是可核验的真实信号;但半导体周期性、对华出口管制、估值
+    可持续性与竞争(云厂商自研芯片 / AMD)需 live 核验,不把一轮 AI 景气当作永久垄断。
+sources:
+  - "perspectives/jensenhuang-perspective/references/research/06-timeline.md(每条里程碑带一手/一级二手锚点)"
+  - "NVIDIA 官方 nvidianews.nvidia.com / nvidia.com(公司与产品事实)"
+  - "Wikipedia / Britannica / Computer History Museum《Jensen Huang》(传记交叉核对)"
+  - "metric-brand-auditor/self-conflict.yaml (jensenhuang → NVIDIA/CUDA/GeForce)"
