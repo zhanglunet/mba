@@ -1,0 +1,46 @@
+# founders/yuanxin.yaml — 垣信卫星 创始人维度(履历 + 创始人↔品牌关系)
+#
+# ⚠️ 诚实处理:垣信卫星**不是个人创业**,而是由**上海国资(上海联和投资)100% 控股牵头发起设立**的
+# 「中国版星链」战略工程。本页不把任何人包装成马斯克式创始人——以牵头平台董事长/法定代表人**秦健**
+# 为代表人物,并明确标注其国资发起属性。秦健非 MBA 评委;履历经权威媒体核实,不含编造引语;relation 为分析。
+brand: yuanxin
+founder:
+  name_cn: 秦健
+  name_en: Qin Jian
+  role: 董事长 / 法定代表人(垣信由上海国资牵头发起设立,非个人创业)
+  status: 现任
+  # perspective_slug 留空:秦健非 MBA 评委;垣信亦非明星创始人驱动
+career:
+  - period: "2018-03"
+    milestone: "上海垣信卫星科技有限公司成立,由上海国资 100% 控股的上海联和投资牵头发起设立;总部松江,为长三角 G60 科创走廊卫星互联网产业基地核心企业"
+    evidence: "新华网 news.cn/science/20240903;搜狐 sohu.com/a/1040629170"
+    lens: [origin]
+  - period: "秦健履历"
+    milestone: "秦健(1967 生)历任上海市松江区区长、上海信息投资股份董事长、上海联和投资党委书记兼董事长,任垣信法定代表人——国资平台负责人而非创业者"
+    evidence: "公开履历;垣信工商记录"
+    lens: [origin, identity]
+  - period: "2024-08"
+    milestone: "千帆星座(G60 星座)首批卫星发射,对标 Starlink;计划 2025 底 648 颗区域覆盖、2027 底 1296 颗一期全球覆盖、2030 底超 1.5 万颗组网"
+    evidence: "澎湃新闻 thepaper.cn/newsDetail_forward_28335053;新华网 news.cn/science/20240903"
+    lens: [category, signal]
+  - period: "2024-02"
+    milestone: "完成 A 轮融资 67 亿元,创中国卫星行业单轮融资新高;后续以约 600 亿元估值开启 B 轮,拟 3 年内推进科创板上市"
+    evidence: "搜狐 sohu.com/a/1040629170;界面新闻 jiemian.com/article/11523364"
+    lens: [signal, leverage]
+relation:
+  origin: >-
+    分析:垣信的起源不是个人创业,而是上海国资(联和投资)2018 年发起的'中国版星链'战略工程,
+    秦健作为国资平台董事长/法定代表人牵头——这是品牌起源的真实底色。
+  category: >-
+    分析:垣信定位低轨卫星互联网(千帆/G60 星座),对标 SpaceX 的 Starlink,是国家队入局的商业航天品类。
+  leverage: >-
+    分析:上海国资背书 + G60 长三角产业链 + 创纪录融资(A 轮 67 亿),是垣信的核心杠杆——资源禀赋而非个人企业家精神。
+  identity: >-
+    分析:'国家队 / 中国版 SpaceX'身份由国资战略而非明星创始人驱动;这既是公信力也是市场化机制的考验。
+    垣信创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:首批发射、67 亿 A 轮是可核验的真实信号;但组网进度、商业化能力、与 Starlink 的代际差距需 live 核验,不把规划当兑现。
+sources:
+  - "新华网《千帆星座:中国卫星互联网》 news.cn/science/20240903"
+  - "澎湃新闻《中国版星链今日升空》 thepaper.cn/newsDetail_forward_28335053"
+  - "搜狐《垣信卫星以600亿元估值开启B轮融资》 sohu.com/a/1040629170;界面新闻 jiemian.com/article/11523364"

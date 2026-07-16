@@ -1,6 +1,6 @@
 # 21 · 创始人维度(Founder Dimension)
 
-> **Status:** v1 落地(2026-07-16)。首批 4 位「创始人即评委」+ zhipu(首个非评委、curl 取一手)= 5 份。
+> **Status:** v1 落地(2026-07-16)。**已全覆盖白名单 15 品牌**(4 位「创始人即评委」复用 perspective + 11 位非评委 curl 取一手)。
 > **单一真源:** `founders/<slug>.yaml`。生成物 `site/founders/`(gitignore)。
 
 ## 这是什么 / 为什么
@@ -22,7 +22,11 @@
 核实,每条里程碑带真实来源 URL(财联社 / 虎嗅 / 创业邦),`perspective_slug` 留空。这是**非评委
 创始人的参照样板**:走 SOP 的 curl 分支。
 
-其余 10 品牌留后续 PR(需先 `curl` 取一手履历再落库,见坑 #1)。
+**已补齐其余 10 品牌(curl 取一手,2026-07-16):** lenovo(柳传志)· dji(汪滔)· qianxin(齐向东)·
+genki-forest(唐彬森)· anthropic(Dario Amodei)· openai(Sam Altman)· hermes(Thierry Hermès,已故·家族六代)·
+chengshi-auto(刘传富)· yuanxin(**国资发起、无个人创业创始人**,以董事长/法定代表人秦健为代表并如实标注)。
+**至此白名单 15 品牌全覆盖。** 诚实边界:非评委创始人无声音 DNA,履历/关系仅据公开一手;联合创始人如实标注
+(anthropic Daniela、openai 马斯克、lenovo 杨元庆、hermes Axel Dumas 等);国资/家族企业不包装成个人英雄叙事。
 
 ## 数据层 schema:`founders/<slug>.yaml`
 

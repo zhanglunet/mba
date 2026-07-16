@@ -1,0 +1,53 @@
+# founders/dji.yaml — 大疆 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 汪滔非 MBA 评委,履历经公开记录/权威媒体核实,每条里程碑带来源。反捏造:不含编造引语;
+# relation 为标注的分析。数字(份额/财富)以公开报道为准,近期需 live 核验。
+brand: dji
+founder:
+  name_cn: 汪滔
+  name_en: Frank Wang (Wang Tao)
+  role: 创始人 / 董事长
+  status: 现任
+  # perspective_slug 留空:汪滔非 MBA 评委
+career:
+  - period: "1980-2003"
+    milestone: "生于浙江杭州;从华东师范大学电子系退学,2003 入香港科技大学电子及计算机工程学系"
+    evidence: "香港科技大学职业中心 careercenter.hkust-gz.edu.cn/2024/08/27"
+    lens: [origin]
+  - period: "2005"
+    milestone: "在港科大做毕业课题,研究遥控直升机飞行控制系统,核心是让航模自动悬停(技术起点)"
+    evidence: "香港科技大学职业中心 careercenter.hkust-gz.edu.cn/2024/08/27"
+    lens: [origin, leverage]
+  - period: "2006"
+    milestone: "与朋友以约 200 万港币在深圳创立大疆创新(母公司放香港);同年获港科大工学士"
+    evidence: "香港科技大学职业中心 careercenter.hkust-gz.edu.cn/2024/08/27;公开记录"
+    lens: [origin]
+  - period: "2008"
+    milestone: "推出首款较成熟的直升机飞行控制系统 XP3.1,把研究成果做成可卖的产品"
+    evidence: "公开记录;大疆公司史"
+    lens: [leverage, signal]
+  - period: "2012-2013"
+    milestone: "推出 Phantom 精灵一体化消费级航拍无人机,把无人机从极客玩具变成大众消费品"
+    evidence: "大疆产品史;公开报道"
+    lens: [category, signal]
+  - period: "2016-2025"
+    milestone: "大疆在全球民用及商用无人机市场份额约 70%-83% 稳居第一;近年拓展影像/农业/工业等场景"
+    evidence: "新浪财经 2024-12 finance.sina.cn/chanjing/gsxw/2024-12-29;公开报道"
+    lens: [signal, category]
+relation:
+  origin: >-
+    分析:大疆的起源与汪滔'港科大做飞控毕业课题、深圳把技术产品化'的工程师路径绑定——
+    自动悬停飞控是品牌起源的真实技术锚点。
+  category: >-
+    分析:汪滔用 Phantom 把无人机从专业/极客玩具重定义为大众消费级航拍,开创并长期定义了消费无人机品类。
+  leverage: >-
+    分析:飞控/云台/图传的垂直自研 + 深圳供应链 + 极致工程迭代,是大疆相对同行的核心杠杆(份额长期第一)。
+  identity: >-
+    分析:'低调工程师、产品说话'塑造汪滔与大疆的身份;但地缘政治(美国实体清单)给身份带来外部风险。
+    大疆创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:全球份额 70%-83% 第一是可核验的真实信号;但地缘限制、财富/估值波动需 live 核验,不把历史份额当作永久护城河。
+sources:
+  - "香港科技大学职业中心《汪滔:创造无数可能》 careercenter.hkust-gz.edu.cn/2024/08/27"
+  - "新浪财经 2024-12《大疆再度出手在深圳拿地》 finance.sina.cn/chanjing/gsxw/2024-12-29"
+  - "大疆创新公司史 / 产品史(公开记录)"

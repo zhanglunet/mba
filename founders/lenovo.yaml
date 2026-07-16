@@ -1,0 +1,56 @@
+# founders/lenovo.yaml — 联想 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 柳传志非 MBA 评委,履历经公开记录/权威媒体核实,每条里程碑带来源。诚实处理:柳传志为联想
+# 创始人(已退休),现任董事长兼 CEO 为杨元庆,已如实标注。反捏造:不含编造引语;relation 为分析。
+brand: lenovo
+founder:
+  name_cn: 柳传志
+  name_en: Liu Chuanzhi
+  role: 创始人(现任董事长兼 CEO 为杨元庆)
+  status: 已退休
+  # perspective_slug 留空:柳传志非 MBA 评委
+career:
+  - period: "1944-1983"
+    milestone: "生于江苏镇江;1966 毕业西北电讯工程学院(现西安电子科技大学);1970-1983 在中科院计算技术研究所任助理研究员"
+    evidence: "共产党员网 12371.cn/2018/12/24/ARTI1545608114619452;柳传志公开履历"
+    lens: [origin]
+  - period: "1984"
+    milestone: "在中科院计算所所长曾茂朝支持下,由中科院投资 20 万元,在计算所一间小传达室带 10 位科技人员创办北京计算机新技术发展公司(联想前身)"
+    evidence: "网易《1984年联想》专题 money.163.com/special/00253JPJ/1984lianxiang;36氪 36kr.com/p/1366699024598404"
+    lens: [origin, leverage]
+  - period: "1986-1989"
+    milestone: "任北京联想总经理(1986)、总裁(1989);以'贸工技'路线先建渠道与规模,再图技术"
+    evidence: "36氪 36kr.com/p/1366699024598404;柳传志公开履历"
+    lens: [leverage, category]
+  - period: "1994"
+    milestone: "联想成立微机事业部,杨元庆任总经理,一边销售一边抓质量与降本;联想 PC 起势"
+    evidence: "网易《1984年联想》专题 money.163.com/special/00253JPJ/1984lianxiang"
+    lens: [signal, identity]
+  - period: "2005"
+    milestone: "联想收购 IBM 个人电脑业务,跃升全球 PC 巨头(蛇吞象式国际化)"
+    evidence: "公开记录;经济观察网《致敬改革开放40年》eeo.com.cn/2018/1226/344161"
+    lens: [signal, category]
+  - period: "2019-12"
+    milestone: "柳传志卸任联想控股董事长退休,谢幕;联想传承给杨元庆一代"
+    evidence: "新华网 2019-12《创始人柳传志谢幕》c_1125360856;证券时报 news.stcn.com 2020-03"
+    lens: [identity]
+relation:
+  origin: >-
+    分析:联想的起源与柳传志'中科院计算所传达室、20 万起家'的科技报国叙事高度绑定——
+    创始团队(柳传志 + 10 位科技人员)与中科院背景是品牌起源的真实锚点。
+  category: >-
+    分析:柳传志'贸工技'路线(先做贸易/渠道、再工/制造、后技术)定义了联想早期的品类打法与
+    PC 规模化路径,也埋下'技术含量'的长期争议。
+  leverage: >-
+    分析:渠道与规模(联想 PC 全国分销网)+ 2005 收购 IBM PC 的国际化并购能力,是联想的核心杠杆。
+  identity: >-
+    分析:'企业教父/贸工技'塑造柳传志与联想的身份;但'技工贸 vs 贸工技'之争、联想'含科量'争议
+    使身份长期被审视。联想创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:全球 PC 份额第一、收购 IBM PC 是可核验的真实信号;但 AI PC 时代的品类升级与'技术含量'
+    仍需 live 核验,历史地位不等于当下成绩。
+sources:
+  - "共产党员网《把技术成果变成生产力》 12371.cn/2018/12/24/ARTI1545608114619452"
+  - "网易财经《1984年联想》专题 money.163.com/special/00253JPJ/1984lianxiang"
+  - "36氪《联想创始人柳传志的创业经历》 36kr.com/p/1366699024598404"
+  - "新华网 2019-12《创始人柳传志谢幕》 xinhuanet.com/fortune/2019-12/18/c_1125360856"

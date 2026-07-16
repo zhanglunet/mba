@@ -1,0 +1,50 @@
+# founders/hermes.yaml — 爱马仕 创始人维度(履历 + 创始人↔品牌关系)
+#
+# Thierry Hermès 为 1837 年创始人(已故),非 MBA 评委;履历经公开记录/权威来源核实。诚实处理:
+# 爱马仕是家族六代传承,本页以创始人 Thierry Hermès 为中心,并如实标注关键传承者与现任 CEO
+# Axel Dumas(家族第六代)。反捏造:不含编造引语;relation 为标注的分析。
+brand: hermes
+founder:
+  name_cn: 蒂埃里·爱马仕
+  name_en: Thierry Hermès
+  role: 创始人(1837;家族六代传承,现任 CEO 为第六代 Axel Dumas)
+  status: 已故
+  # perspective_slug 留空:Thierry Hermès 非 MBA 评委
+career:
+  - period: "1837"
+    milestone: "Thierry Hermès 在巴黎开设马具作坊,专做马匹挽具/马鞍,以坚固、舒适、流畅的工艺立足"
+    evidence: "Hermès 官方《Six generations of artisans》hermes.com/us/en/content/235056;Britannica"
+    lens: [origin]
+  - period: "1867"
+    milestone: "在巴黎世界博览会(Universal Exhibition)以挽具工艺获奖,奠定顶级马具匠人声誉"
+    evidence: "Hermès 官方 hermes.com;公开记录"
+    lens: [origin, signal]
+  - period: "1878 后"
+    milestone: "Thierry 去世后由独子 Charles-Émile、孙 Émile-Maurice 接续;把马具作坊拓展为皮具/箱包等品类(从马车时代转向汽车时代)"
+    evidence: "Hermès 官方《Six generations of artisans》hermes.com/us/en/content/235056"
+    lens: [category, leverage]
+  - period: "20 世纪"
+    milestone: "女婿 Robert Dumas 等家族成员推动扩张:丝巾、Kelly / Birkin 等标志性手袋成为奢侈品图腾"
+    evidence: "公开记录;Hermès 品牌史"
+    lens: [category, identity]
+  - period: "2013 至今"
+    milestone: "家族第六代 Axel Dumas 出任 CEO(此前曾任皮具部门 CEO、COO);带领爱马仕录得创纪录利润"
+    evidence: "Business of Fashion businessoffashion.com/people/axel-dumas;European CEO"
+    lens: [identity, signal]
+relation:
+  origin: >-
+    分析:爱马仕的起源与 Thierry Hermès'1837 巴黎马具作坊、极致手工'的匠人叙事绑定——
+    马具工艺与 1867 世博获奖是品牌起源的真实锚点,也是'手工/稀缺'身份的源头。
+  category: >-
+    分析:从马具到皮具/丝巾/手袋,爱马仕在每次时代转折(马车→汽车)重新定义'顶级手工奢侈品'品类,而非追逐潮流。
+  leverage: >-
+    分析:六代家族控制 + 手工匠人体系 + 稀缺配货(Birkin/Kelly)是爱马仕的核心杠杆与定价权来源。
+  identity: >-
+    分析:'家族传承 + 匠人 + 不打折的稀缺'塑造爱马仕身份,历经六代仍高度一致;
+    家族控制也是抵御外部并购(如 LVMH 举牌)的护城河。爱马仕创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:创纪录利润、Birkin 的二级市场溢价是可核验的真实信号;但奢侈品周期、地缘与消费波动需 live 核验。
+sources:
+  - "Hermès 官方《Six generations of artisans》 hermes.com/us/en/content/235056-six-generations-of-artisans"
+  - "Business of Fashion《Axel Dumas》 businessoffashion.com/people/axel-dumas"
+  - "European CEO《Axel Dumas leads Hermès to record profit》 europeanceo.com"

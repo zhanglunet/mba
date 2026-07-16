@@ -1,0 +1,50 @@
+# founders/openai.yaml — OpenAI 创始人维度(履历 + 创始人↔品牌关系)
+#
+# Sam Altman 非 MBA 评委,履历经公开记录/权威来源核实,每条里程碑带来源。诚实处理:OpenAI 是
+# 2015 年 11 位联合创始人共同发起,本页以 CEO Sam Altman 为中心,并如实标注马斯克为联合创始人(后离开、
+# 与 Altman 公开交恶,且马斯克是 MBA 评委)。反捏造:不含编造引语;relation 为标注的分析。
+brand: openai
+founder:
+  name_cn: 萨姆·奥尔特曼
+  name_en: Sam Altman
+  role: 联合创始人 / CEO(2015 年 11 位联合创始人之一;马斯克亦为联合创始人,2018 离开董事会)
+  status: 现任
+  # perspective_slug 留空:Sam Altman 非 MBA 评委(联合创始人马斯克是评委 musk,见 spacex)
+career:
+  - period: "1985-2011"
+    milestone: "生于 1985-04-22;斯坦福读两年后退学,联合创办地理社交应用 Loopt"
+    evidence: "Britannica britannica.com/money/Sam-Altman;biography.com"
+    lens: [origin]
+  - period: "2011-2019"
+    milestone: "2011 加入 Y Combinator;2014 接替其导师 Paul Graham 任 YC 总裁(至 2019)"
+    evidence: "Britannica britannica.com/money/Sam-Altman"
+    lens: [origin, leverage]
+  - period: "2015-12"
+    milestone: "作为 11 位联合创始人之一发起 OpenAI(非营利,目标'让数字智能以最有利于全人类的方式发展');马斯克初期与其共任联席主席"
+    evidence: "公开记录;Britannica britannica.com/money/Sam-Altman"
+    lens: [origin, category]
+  - period: "2018-2019"
+    milestone: "2018 马斯克退出 OpenAI 董事会(后另创 xAI 直接竞争);2019 Altman 离开 YC、出任 OpenAI CEO,并设营利子公司引入微软投资"
+    evidence: "公开报道;Britannica britannica.com/money/Sam-Altman"
+    lens: [identity, leverage]
+  - period: "2022-2023"
+    milestone: "2022-11 发布 ChatGPT 引爆生成式 AI;2023-11 遭董事会短暂罢免后数日内回归(治理风波)"
+    evidence: "公开报道;Britannica"
+    lens: [signal, identity]
+relation:
+  origin: >-
+    分析:OpenAI 的起源与 Altman'YC 总裁转做 AGI、以非营利使命起家'的路径绑定——
+    11 位联合创始人(含马斯克)与'造福全人类'的使命宣言是品牌起源的真实锚点。
+  category: >-
+    分析:Altman 把 OpenAI 从非营利研究推向'通用大模型平台'品类(ChatGPT/API/GPT 系列),定义了生成式 AI 的大众化。
+  leverage: >-
+    分析:先发的模型能力 + 微软的算力/资本/分发,是 OpenAI 的核心杠杆;Altman 的资本运作与叙事能力放大之。
+  identity: >-
+    分析:'非营利使命 vs 营利化竞速'的内在张力塑造并困扰 OpenAI 身份(2023 治理风波、与马斯克的公开交恶是其外化)。
+    OpenAI 创始人非 MBA 评委,但联合创始人马斯克是评委——审计涉马斯克视角时须留意 self-conflict。
+  signal: >-
+    分析:ChatGPT 用户爆发、估值与融资是可核验信号;但盈利路径、治理稳定性、安全承诺需 live 核验,不把领先当永久。
+sources:
+  - "Britannica《Sam Altman》 britannica.com/money/Sam-Altman"
+  - "biography.com《Sam Altman》"
+  - "OpenAI 官方 openai.com(公司事实);公开报道(2023 治理风波)"
