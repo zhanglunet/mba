@@ -1,0 +1,13 @@
+panel: vc-en
+locked_at: 2026-07-16
+mba_version: 0.4.5
+published_at: 2026-07-16
+version: v1
+score_total: 222
+score_max: 250
+score_normalized: 8.88
+overrides:
+  add: []
+  drop: []
+# 黄仁勋(NVIDIA 联合创始人)是 MBA 评委(jensenhuang),但不在 vc-en panel,
+# 故本审计无 --panel-drop(self-conflict jensenhuang→NVIDIA 在含其本人的 panel 时才触发)。
