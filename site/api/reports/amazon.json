@@ -1,0 +1,19 @@
+{
+  "slug": "amazon",
+  "brand_cn": "Amazon / 亚马逊",
+  "brand_en": "Amazon",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-07-16",
+  "panel": "vc-en",
+  "score": {
+    "total": 218,
+    "max": 250,
+    "normalized": 8.72
+  },
+  "tl_dr": "Leverage(杠杆)维度领跑级(9.4):被写进商学院教材的\"飞轮\"(选品→流量→卖家→规模成本↓→低价→ 更多客户)+ AWS + Prime + 全球物流,是商业史最深的运营型护城河——不同于 NVIDIA 的 CUDA 软件锁定、 微软的多元产品捆绑,亚马逊胜在规模+运营的复利。贝索斯从 D.E. Shaw 辞职、1994 车库在线书店到以 AWS 开创云计算品类,\"Day 1、客户痴迷、长期主义\"是从第一天起的操作系统。vc-en 5 评委(贝索斯非评委, 无自冲突)共识:Leverage(9.4)领跑、Category(9.2)紧随;唯一分歧在 Signal(8.0)——蒂尔\"护城河深到 触发 FTC 反垄断 + AI 追赶者\"7 vs 纳瓦尔\"飞轮复利穿越周期\"9。218/250 · 8.72/10(vc-en 高分梯队)。",
+  "html_url": "/reports/amazon/",
+  "pdf_url": null,
+  "api_url": "/api/reports/amazon.json",
+  "panel_api_url": "/api/panels/vc-en.json"
+}
