@@ -72,7 +72,10 @@ COLLAB_CSS = """
   .picker #go { font:inherit; font-weight:700; font-size:13.5px; padding:6px 14px; border-radius:6px;
     border:1px solid var(--accent); background:var(--accent); color:#fff; text-decoration:none; cursor:pointer; }
   .picker #go.disabled { background:#fff; color:var(--muted); border-color:var(--hair); cursor:default; }
+  .picker #order { font:inherit; font-weight:700; font-size:13.5px; padding:6px 14px; border-radius:6px;
+    border:1px solid var(--accent); background:#fff; color:var(--accent); text-decoration:none; cursor:pointer; }
   .picker #hint { font-size:12.5px; color:var(--muted); }
+  .picker .hidden { display:none; }
   .dgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; }
   .dcard { display:block; background:var(--card); border:1px solid var(--hair); border-radius:6px;
     padding:14px 16px; text-decoration:none; color:var(--ink); }
@@ -231,7 +234,8 @@ def render_index(built, names):
     <select id="fa"><option value="">选创始人 A</option>{opts}</select>
     <span class="vs">×</span>
     <select id="fb"><option value="">选创始人 B</option>{opts}</select>
-    <a id="go" class="disabled">开饭 →</a>
+    <a id="go" class="hidden" href="#">开饭 →</a>
+    <a id="order" class="hidden" target="_blank" rel="noopener" href="#">🍽️ 点单让我加这场 →</a>
     <span id="hint"></span>
   </div>
 
@@ -241,15 +245,28 @@ def render_index(built, names):
   <script>
   (function(){{
     var D = {data_json};
+    var REPO = 'https://github.com/zhanglunet/mba';
+    var byId = {{}}; D.founders.forEach(function(f){{ byId[f.slug]=f; }});
     var fa=document.getElementById('fa'), fb=document.getElementById('fb'),
-        go=document.getElementById('go'), hint=document.getElementById('hint');
+        go=document.getElementById('go'), order=document.getElementById('order'), hint=document.getElementById('hint');
+    function show(el,on){{ el.className = on ? '' : 'hidden'; }}
+    function orderUrl(a,b,stem){{
+      var ma=byId[a]||{{name:a,brand:a,slug:a}}, mb=byId[b]||{{name:b,brand:b,slug:b}};
+      var title='创始人晚餐点单：'+ma.name+'（'+ma.brand+'） × '+mb.name+'（'+mb.brand+'）';
+      var body='请为这两位创始人加一场假想晚餐(品牌×品牌合作推演):\\n\\n'
+             +'- '+ma.name+' — '+ma.brand+'（'+ma.slug+'）\\n'
+             +'- '+mb.name+' — '+mb.brand+'（'+mb.slug+'）\\n\\n'
+             +'slug 对：'+stem+'\\n\\n(由 mbabrand.com/collabs/ 组合器点单生成)';
+      return REPO+'/issues/new?title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body);
+    }}
     function upd(){{
       var a=fa.value,b=fb.value;
-      if(!a||!b){{ go.className='disabled'; go.removeAttribute('href'); hint.textContent=''; return; }}
-      if(a===b){{ go.className='disabled'; go.removeAttribute('href'); hint.textContent='请选两位不同的创始人'; return; }}
+      show(go,false); show(order,false);
+      if(!a||!b){{ hint.textContent=''; return; }}
+      if(a===b){{ hint.textContent='请选两位不同的创始人'; return; }}
       var stem=[a,b].sort().join('--');
-      if(D.built.indexOf(stem)>=0){{ go.className=''; go.href='/collabs/'+stem+'.html'; hint.textContent=''; }}
-      else {{ go.className='disabled'; go.removeAttribute('href'); hint.textContent='该组合待推演(可点单让我加一场)'; }}
+      if(D.built.indexOf(stem)>=0){{ go.href='/collabs/'+stem+'.html'; show(go,true); hint.textContent=''; }}
+      else {{ order.href=orderUrl(a,b,stem); show(order,true); hint.textContent='这桌还没上 —— 点单开一张 GitHub issue,我看到就加'; }}
     }}
     fa.addEventListener('change',upd); fb.addEventListener('change',upd);
   }})();
