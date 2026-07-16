@@ -1,5 +1,5 @@
 {
-  "count": 84,
+  "count": 85,
   "items": [
     {
       "type": "report",
@@ -136,6 +136,14 @@
       "text": "MBA 迄今综合得分最高的品牌(略高于 SpaceX 8.76):同时拥有最强品类创造史(发明 GPU、开创 CUDA 通用计算、定义\"AI 工厂\")与最深护城河(CUDA 近二十年生态锁定 + 全栈)。黄仁勋从 Denny's 创办、 两度濒死到执掌 3 万亿美元公司的 30 年创始人叙事几乎无法复制。vc-en 5 评委(黄仁勋是评委但不在 本 panel,无自冲突)共识:Leverage(9.6)领跑、Category(9.4)紧随;唯一实质分歧在 Signal(8.2)—— 蒂尔\"垄断能否穿越浪潮\"(周期性/对华管制/云厂商自研芯片)7 vs 安德森\"这是平台而非周期\"9。 222/250 · 8.88/10。",
       "url": "/reports/nvidia/",
       "api_url": "/api/reports/nvidia.json"
+    },
+    {
+      "type": "report",
+      "slug": "apple",
+      "title": "Apple / 苹果 · v1",
+      "text": "MBA 迄今 Identity(身份系统)维度最高分(9.6):极简设计、Think Different、Jony Ive 美学与乔布斯 \"美是产品本质\"图腾构成地表最一致的品牌身份。加上\"车库创业→被自己公司逐出→特洛伊木马式归来\"的 传奇起源与个人电脑/GUI/音乐/手机/平板的连续品类创造史,几乎无法复制。vc-en 5 评委(乔布斯是评委 但不在本 panel,无自冲突)共识:Identity(9.6)领跑、Origin/Leverage(各 9.0)紧随;唯一实质分歧在 Signal(7.8)——纳瓦尔\"品牌是穿越周期的杠杆\"9 vs 安德森/蒂尔\"AI 落后动摇创新 durability\"7。 与 NVIDIA 峰值在 Leverage 不同,Apple 峰值在 Identity。221/250 · 8.84/10(MBA 第二高)。",
+      "url": "/reports/apple/",
+      "api_url": "/api/reports/apple.json"
     },
     {
       "type": "panel",

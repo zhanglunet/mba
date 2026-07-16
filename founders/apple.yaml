@@ -1,0 +1,68 @@
+# founders/apple.yaml — Apple 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 史蒂夫·乔布斯是 MBA 评委(jobs);履历复用 perspectives/jobs-perspective/references/research/
+# 06-timeline.md(每条锚点已核:Isaacson 授权传记 / Stanford 2005 演讲 / Apple 公开史)。
+# 诚实处理:Apple 由乔布斯与 Steve Wozniak、Ronald Wayne 共同创办;乔布斯 2011-10-05 去世,
+# 现任 CEO 为 Tim Cook。反捏造:不含编造引语;relation 为标注的分析;身份描述锁定"2011 之前的
+# 乔布斯 + 其遗产的当代回响",不把晚期观点安到早期口吻上。数字(市值/装机量)近期需 live 核验。
+brand: apple
+founder:
+  name_cn: 史蒂夫·乔布斯
+  name_en: Steve Jobs
+  role: 联合创始人 / 前董事长 / 前 CEO(与 Steve Wozniak、Ronald Wayne 共同创办;现任 CEO Tim Cook)
+  status: 已故
+  perspective_slug: jobs
+career:
+  - period: "1955-1974"
+    milestone: "1955-02-24 生于旧金山,被 Paul 与 Clara Jobs 收养;1972 入里德学院、半年后退学旁听书法课(后成 Mac 字体美学之源);1974 赴印度七个月习禅,确立'直觉高于理智'的极简主义"
+    evidence: "jobs 06-timeline(锚:Isaacson《Steve Jobs》;Stanford 2005 演讲)"
+    lens: [origin, identity]
+  - period: "1976-1980"
+    milestone: "1976-04-01 与 Steve Wozniak、Ronald Wayne 在车库创立 Apple Computer;1977 Apple II 证明'消费级电脑'可行;1980-12-12 Apple 上市,乔布斯 25 岁身价 2.56 亿美元"
+    evidence: "jobs 06-timeline(锚:Apple 公司史;Isaacson 传记)"
+    lens: [origin, category]
+  - period: "1984-1985"
+    milestone: "1984-01-24 发布 Macintosh 及著名'1984'广告,首次全开'现实扭曲力场';1985-09 权力斗争失败、被自己创办的公司逐出,创立 NeXT"
+    evidence: "jobs 06-timeline(锚:Isaacson 传记;Apple 史)"
+    lens: [origin, signal]
+  - period: "1986-1996"
+    milestone: "1986 以 500 万美元收购 Graphics Group 并更名 Pixar;1995 《玩具总动员》首部全 CG 长片(学会团队与长期主义);1996-12 Apple 以 4.29 亿美元收购 NeXT,NeXTSTEP 成为 Mac OS X 内核"
+    evidence: "jobs 06-timeline(锚:Pixar/Disney 史;Apple 公告)"
+    lens: [leverage, origin]
+  - period: "1997-2001"
+    milestone: "1997 回归任 iCEO,'Think Different'广告 + 砍掉 70% 产品线至'消费/专业 × 桌面/便携'四格矩阵(focus = 说不);1998 iMac 开启 Jony Ive 时代;2001 iPod 转向数字中枢"
+    evidence: "jobs 06-timeline(锚:Apple 产品史;Isaacson 传记)"
+    lens: [category, leverage, identity]
+  - period: "2007-2011"
+    milestone: "2007-01 iPhone 发布并将公司更名 Apple Inc.(自我颠覆:自己来杀 iPod);2010 iPad 宣告'post-PC';2011-08 辞任 CEO 交棒 Tim Cook,2011-10-05 因胰腺癌去世(享年 56)"
+    evidence: "jobs 06-timeline(锚:Macworld/WWDC keynote;Isaacson 传记)"
+    lens: [category, signal, identity]
+  - period: "2011-2026(遗产期)"
+    milestone: "2017 Apple Park('宇宙飞船'总部,其生前最后提案)启用;2022 Steve Jobs Archive 上线;2024 Vision Pro 发布(后乔布斯时代首款'乔布斯式'产品,争议);2025-2026 Apple Intelligence/AI 转型,被认为在 AI 竞赛落后于 OpenAI/Google"
+    evidence: "jobs 06-timeline(锚:Apple newsroom;stevejobsarchive.com)"
+    lens: [signal, identity]
+relation:
+  origin: >-
+    分析:Apple 的起源与乔布斯'车库创业(1976)、被自己公司逐出(1985)又特洛伊木马式归来(1997)'
+    的传奇弧线深度绑定——这条'放逐—回归'叙事是科技史最强的起源资产之一,几乎无法复制。
+  category: >-
+    分析:乔布斯是当代最强的品类连续创造者——个人电脑(Apple II)、GUI 消费化(Mac)、数字音乐(iPod)、
+    智能手机(iPhone)、平板(iPad),每一次都在别人看清之前定义新范式;但'后乔布斯时代是否还在创造品类'
+    是当代真实疑问。
+  leverage: >-
+    分析:硬件 + 软件 + 服务 + 自研芯片(Apple Silicon)的全栈整合 + App Store 生态 + 十亿级活跃设备锁定
+    + 品牌溢价,构成极深护城河;'focus = 说不'的产品聚焦哲学是杠杆的方法论根源。
+  identity: >-
+    分析:'极简设计语言、Think Different、Jony Ive 美学、美是产品本质'塑造了地表最一致、最具辨识度的
+    品牌身份系统——这是 Apple 在 MBA 最强的维度。乔布斯本人是 MBA 评委(jobs),审计 Apple 若用含其本人
+    的 panel 须 --panel-drop jobs(本次 vc-en 不含其本人,无需)。
+  signal: >-
+    分析:全球最高市值之一、十亿级装机、品牌价值榜首是可核验的真实信号;但后乔布斯时代创新 durability、
+    Vision Pro 争议、AI 竞赛落后(Apple Intelligence 迟)、App Store 反垄断与对华供应链需 live 核验,
+    不把历史地位当作永久胜局。
+sources:
+  - "perspectives/jobs-perspective/references/research/06-timeline.md(每条里程碑带一手/一级二手锚点)"
+  - "Walter Isaacson《Steve Jobs》(乔布斯生前授权传记)"
+  - "Stanford 2005 毕业演讲'Stay Hungry, Stay Foolish'(乔布斯思想最公开的一手陈述)"
+  - "Apple 官方 apple.com / apple.com.cn · Steve Jobs Archive stevejobsarchive.com(公司与生平事实)"
+  - "metric-brand-auditor/self-conflict.yaml (jobs → Apple/苹果/iPhone/iPad/Mac/Pixar/NeXT)"
