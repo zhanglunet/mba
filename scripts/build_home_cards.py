@@ -191,9 +191,17 @@ def render_card(m, pending):
         f'{render_watch_line(slug, pending)}\n'
         f'        <p class="bc-headline">{esc(collapse_ws(m.get("headline", "")))}</p>{versions}\n'
         f'        <div class="bc-links"><a href="/starmap/{slug}.html">品牌私有星图 →</a>'
-        f'<a href="/watch/{slug}/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a></div>\n'
+        f'<a href="/watch/{slug}/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a>'
+        f'{founder_link(slug)}</div>\n'
         f"      </div>"
     )
+
+
+def founder_link(slug):
+    """有 founders/<slug>.yaml 才挂「创始人 →」入口(创始人维度)。"""
+    if os.path.exists(os.path.join(ROOT, "founders", f"{slug}.yaml")):
+        return f'<a href="/founders/{slug}.html" style="margin-left:14px">创始人 →</a>'
+    return ""
 
 
 def render_kpis(reports):

@@ -134,6 +134,28 @@ def check_panorama_roster():
                        + (f" · 页面多 {sorted(extra)}" if extra else ""))
     return True, f"panorama 评委名单自洽(页面唯一 slug == 目录数 == {n_dir})"
 
+def check_founders():
+    """创始人维度(founders/*.yaml)跨源自洽:brand ∈ 发布白名单、履历带 provenance、
+    perspective_slug 真实。委托 validate_founders.py(单一真源逻辑,避免重复实现)。
+    founders/ 不存在 = 功能未启用,通过。"""
+    fdir = os.path.join(ROOT, "founders")
+    if not os.path.isdir(fdir) or not glob.glob(os.path.join(fdir, "*.yaml")):
+        return True, "founders/ 未启用(跳过)"
+    script = os.path.join(ROOT, "scripts", "founder-tools", "validate_founders.py")
+    if not os.path.exists(script):
+        return True, "validate_founders.py 不存在(跳过)"
+    try:
+        r = subprocess.run([sys.executable, script], capture_output=True, text=True, cwd=ROOT)
+    except Exception as e:
+        return True, f"无法运行 validate_founders(跳过):{e}"
+    if r.returncode == 2:
+        return True, "validate_founders 依赖缺失(跳过)"
+    n = len(glob.glob(os.path.join(fdir, "*.yaml")))
+    if r.returncode == 0:
+        return True, f"创始人档案自洽({n} 份 brand 对齐白名单 · perspective_slug 真实)"
+    lines = [x for x in (r.stderr or r.stdout or "").strip().splitlines() if x.strip()]
+    return False, "创始人档案违规 —— " + (lines[-1] if lines else "跑 validate_founders.py")
+
 CHECKS = [
     ("版本对齐", check_version_alignment),
     ("docs 索引完整", check_docs_index),
@@ -142,6 +164,7 @@ CHECKS = [
     ("维度口径", check_dimensions),
     ("首页卡片对齐", check_home_cards),
     ("panorama 名单", check_panorama_roster),
+    ("创始人维度", check_founders),
 ]
 
 def main():

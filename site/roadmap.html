@@ -993,6 +993,25 @@
       </div>
     </div>
 
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-16</div>
+      <div class="log-tags">
+        <span class="badge done">新维度</span>
+        <span class="badge p1">创始人维度</span>
+      </div>
+      <div class="log-title">创始人维度上线 —— 履历时间线 + 创始人↔品牌关系(按 5 镜头)</div>
+      <div class="log-body">
+        <ul>
+          <li><b>数据层</b> <code>founders/&lt;slug&gt;.yaml</code>:创始人履历(每条里程碑带 provenance)+ 从人物角度看创始人↔品牌关系(按 5 镜头,标注为分析);首批 4 位「创始人即评委」——SpaceX·musk / 美团·王慧文(联合创始人)/ 好未来·张邦鑫 / Kimi·杨植麟,直接复用其 perspective 一手调研(06-timeline)</li>
+          <li><b>独立创始人页</b> <code>build_founder_pages.py</code> → <code>site/founders/&lt;slug&gt;.html</code>(house style·零依赖),从首页卡片/品牌星图/舆情驾驶舱/watch 时间线页加「创始人 →」入口</li>
+          <li><b>硬 gate</b> <code>validate_founders.py</code>(schema + brand 对齐白名单 + 履历带 provenance + 镜头合法 + perspective 真实,<code>--selftest</code> 自证有牙)接入 CI;<code>check_consistency</code> 增第 8 格</li>
+          <li><b>反捏造</b>:履历只用真实 provenance、关系文字标注为分析不冒充原话、逐字引语须命中评委 research 语料、cutoff 外诚实留白;<b>只作调研输入,不改评分</b></li>
+          <li>开发计划存档:<code>docs/21-founder-dimension.md</code>(含 schema/SOP/反捏造约定/计划)</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · 其余 11 品牌创始人留后续</div>
+      </div>
+    </div>
+
     <!-- 后续进度在此追加，格式参考上方 -->
     <div class="log-entry" style="opacity:0.45">
       <div class="log-date">—</div>

@@ -56,6 +56,10 @@ if command -v python3 >/dev/null 2>&1; then
     rm -rf "$SITE_DIR/starmap"
     python3 "$REPO_ROOT/scripts/build_brand_starmap.py" || \
       echo "[mba-build] WARN: build_brand_starmap.py failed — per-brand star maps skipped"
+    echo "[mba-build] generating founder dimension pages"
+    rm -rf "$SITE_DIR/founders"
+    python3 "$REPO_ROOT/scripts/build_founder_pages.py" || \
+      echo "[mba-build] WARN: build_founder_pages.py failed — founder pages skipped"
   else
     echo "[mba-build] no PyYAML in build env — using committed site/api/*"
   fi

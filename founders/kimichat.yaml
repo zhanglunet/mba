@@ -1,0 +1,54 @@
+# founders/kimichat.yaml — Kimi/月之暗面 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 数据来源:复用 perspectives/yangzhilin-perspective/references/research/06-timeline.md。
+# 反捏造:evidence 为 provenance(2024-02 一手访谈自述/公开记录);relation 为标注的分析。
+# 锁年 2024-02;融资/算力/参数/人数一律需 live 核验;2024 之后进展不替本人延伸。
+brand: kimichat
+founder:
+  name_cn: 杨植麟
+  name_en: Yang Zhilin
+  role: 创始人 / CEO
+  status: 现任
+  perspective_slug: yangzhilin
+career:
+  - period: "1992"
+    milestone: "出生;清华本科(计算机),后卡内基梅隆博士,方向一直是 AI"
+    evidence: "自述(潜望;06-timeline)"
+    lens: [origin]
+  - period: "2017"
+    milestone: "研究收敛到语言模型('唯一重要的问题')"
+    evidence: "自述(潜望)"
+    lens: [origin, category]
+  - period: "2018 底"
+    milestone: "在 Google 实习做基于 Transformer 的语言模型,学到'去雕花'"
+    evidence: "自述(潜望)"
+    lens: [leverage]
+  - period: "2022 底-2023 初"
+    milestone: "ChatGPT 后判断 AGI 组织 0 到 1 的窗口,'几个月内要拿 1 亿美金'"
+    evidence: "自述(潜望;数字需核验)"
+    lens: [signal]
+  - period: "2023"
+    milestone: "创办月之暗面、发布 Kimi;以资本/组织效率高完成两轮融资"
+    evidence: "自述(潜望;需核验)"
+    lens: [category, signal]
+  - period: "2024-02"
+    milestone: "两场长访谈:登月/去雕花/长期主义/无损压缩=智能、long-context=新计算机内存"
+    evidence: "一手实录(潜望/独角兽)"
+    lens: [category, identity]
+relation:
+  origin: >-
+    分析:Kimi 的起源与杨植麟清华+CMU 语言模型研究、2017 收敛到'唯一重要的问题'的技术履历绑定,
+    是品牌以第一性原理做 AGI 这一叙事的真实锚点。
+  category: >-
+    分析:'无损压缩=智能''long-context=新计算机内存'的 tech vision,是 Kimi 相对同行的品类差异化定义。
+  leverage: >-
+    分析:'去雕花/scaling law 第一性' + 登月式组织 + 人才密度,是月之暗面的经营杠杆(2024-02 锚)。
+  identity: >-
+    分析:长期主义/非共识(十到二十年)与登月叙事塑造了品牌身份;审计须 --panel-drop yangzhilin
+    (self-conflict:yangzhilin→月之暗面/Kimi)。
+  signal: >-
+    分析:发布 Kimi、完成融资是真实信号;但融资/算力/参数/人数为自述,需 live 核验;
+    2024 之后商业化/组织变化属 cutoff 外,不替本人延伸。
+sources:
+  - "perspectives/yangzhilin-perspective/references/research/06-timeline.md"
+  - "metric-brand-auditor/self-conflict.yaml (yangzhilin → 月之暗面/Kimi)"

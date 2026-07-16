@@ -36,6 +36,10 @@ jobs:
           python scripts/watch-tools/validate_watch.py --selftest
       - name: Brand Watch 触发规则评估器自测(校准阈值回归防线)
         run: python scripts/watch-tools/evaluate_triggers.py --selftest
+      - name: 创始人维度校验(founders/*.yaml schema + brand 对齐白名单 + 履历带 provenance + 自测)
+        run: |
+          python scripts/founder-tools/validate_founders.py
+          python scripts/founder-tools/validate_founders.py --selftest
       - name: Quality-check 收紧自测(F8:证明 3 项收紧对旧假过样本有牙)
         run: python scripts/perspective-tools/quality_check.py --selftest
       - name: --dry-run 计划解析器自测(resolve_plan golden 断言)

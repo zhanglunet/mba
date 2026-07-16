@@ -1,0 +1,57 @@
+# founders/meituan.yaml — 美团 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 诚实处理:美团主创始人/CEO 是**王兴**(暂无 MBA perspective);本页聚焦**联合创始人
+# 王慧文**(其本人是 MBA 评委 wanghuiwen),role 如实标"联合创始人",不把王慧文包装成唯一创始人。
+# 数据来源:复用 perspectives/wanghuiwen-perspective/references/research/06-timeline.md。
+# 反捏造:evidence 为 provenance(自述/公开记录);relation 为标注的分析。2023 光年之外+健康退隐为
+# cutoff 留白红线,不臆测。数字需 live 核验。
+brand: meituan
+founder:
+  name_cn: 王慧文
+  name_en: Wang Huiwen
+  role: 联合创始人(主创始人/CEO 为王兴)
+  status: 已离任
+  perspective_slug: wanghuiwen
+career:
+  - period: "—"
+    milestone: "清华大学电子系,与王兴同学兼室友(自述电子系'做硬件为主,软件学得不太好')"
+    evidence: "自述(清华;06-timeline)"
+    lens: [origin]
+  - period: "2005 底"
+    milestone: "与王兴等做校内网(SNS),押'真实身份'的非共识判断"
+    evidence: "自述(清华;数字需核验)"
+    lens: [origin, category]
+  - period: "2010 底"
+    milestone: "加入美团,先问'团购能开多少城市'——以体量视角切入"
+    evidence: "自述(源码)"
+    lens: [leverage]
+  - period: "2011-04"
+    milestone: "关掉 4 个开错的城市,顶住投资人质疑与黑稿:'边算账边开城市'、to C not to VC"
+    evidence: "自述(源码)"
+    lens: [leverage, signal]
+  - period: "2013-2015"
+    milestone: "团购大战美团胜出;用体量/规模效应/马太效应的框架经营"
+    evidence: "自述(源码);2020 清华产品课"
+    lens: [leverage, category]
+  - period: "2023"
+    milestone: "个人出资创办 AGI 公司'光年之外';同年因健康原因退出光年之外与美团董事会"
+    evidence: "公开记录(cutoff 边界——不臆测健康/退隐后观点)"
+    lens: [signal]
+relation:
+  origin: >-
+    分析:美团的起源与清华电子系王兴、王慧文的同窗网络绑定,校内网押'真实身份'非共识
+    (判断对但商业失败卖掉)是这套创始团队操作系统的前史。
+  category: >-
+    分析:王慧文以'体量+规模效应+马太效应'的框架看团购/外卖,把品类竞争抽象成规模战,
+    与美团高频打低频、水大鱼大的品类定位同源。
+  leverage: >-
+    分析:'边算账边开城市''敢关开错的城市''to C not to VC'是美团相对对手的经营杠杆,
+    也是王慧文最能定义其操作系统的动作。
+  identity: >-
+    分析:王慧文是联合创始人而非唯一创始人,美团的身份系统更以王兴为中心;
+    审计美团须 --panel-drop wanghuiwen(self-conflict:王慧文→美团)。
+  signal: >-
+    分析:关城市、扛黑稿是可核验的真实信号;2023 健康退隐属 cutoff 留白,不臆测其后。
+sources:
+  - "perspectives/wanghuiwen-perspective/references/research/06-timeline.md"
+  - "metric-brand-auditor/self-conflict.yaml (wanghuiwen → 美团)"
