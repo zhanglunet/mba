@@ -1,6 +1,6 @@
 # 22 · 创始人晚餐(Founder Dinner · 品牌 × 品牌合作推演)
 
-> **Status:** v1 落地(2026-07-16)。首场:田溯宁(亚信)× 唐杰(智谱)。2026-07-16 增首页「创始人晚餐 · 亮点」块。
+> **Status:** v1 落地(2026-07-16)。已上桌 2 场:田溯宁(亚信)× 唐杰(智谱)、**梁文锋(DeepSeek)× 黄仁勋(NVIDIA)「芯片与模型」(现任首页亮点)**。2026-07-16 增首页「创始人晚餐 · 亮点」块。
 > **单一真源:** `collabs/<a>--<b>.yaml`。生成物 `site/collabs/`(gitignore)+ 首页 `<!-- DINNER -->` 块(受控,守漂移)。
 
 ## 这是什么 / 为什么
@@ -9,7 +9,7 @@
 
 **呈现:** 每场晚餐一张页 `site/collabs/<a>--<b>.html`(house style);索引页 `site/collabs/` 带**组合器**(选两位创始人 → 有则「开饭 →」跳该页;无则「🍽️ 点单让我加这场 →」)。入口:首页 nav/intro、创始人页(「🍽️ 与 X 共进晚餐 →」)、创始人索引。
 
-**首页「创始人晚餐 · 亮点」块(2026-07-16 增):** 首页(`site/index.html`,品牌网格之后、接入区之前)嵌一段**精选晚餐的亮点对话**——精选那场的一段最出彩往返(两个气泡)+ 合作点 + AI-演绎 disclaimer + 「看这场完整晚餐 →」/「组合更多创始人 →」入口。**单一真源仍是 `collabs/*.yaml`**:由 `build_collab_dinners.py` 生成 `<!-- DINNER:START/END -->` 之间的块(机制同 `build_home_cards` 的 REPORTS 块),漂移由 `check_consistency` 第 11 格 `--check-home` 守。选谁 = `featured: true` 的那场(否则字母序第一场);展示哪道菜 = `home_highlight: <lens>`(否则第一道)。
+**首页「创始人晚餐 · 亮点」块(2026-07-16 增):** 首页(`site/index.html`,品牌网格之后、接入区之前)嵌一段**精选晚餐的亮点对话**——精选那场的一段最出彩往返(两个气泡)+ 合作点 + AI-演绎 disclaimer + 「看这场完整晚餐 →」/「组合更多创始人 →」入口。**单一真源仍是 `collabs/*.yaml`**:由 `build_collab_dinners.py` 生成 `<!-- DINNER:START/END -->` 之间的块(机制同 `build_home_cards` 的 REPORTS 块),漂移由 `check_consistency` 第 11 格 `--check-home` 守。**选谁** = `featured: true` 的那场(多场取字母序第一个 featured,否则字母序第一场);**展示哪道菜** = `home_highlight: <lens>`(否则第一道)。**换首页亮点** = 把新场设 `featured: true`、旧场设 `featured: false` 即可(当前 = `deepseek--nvidia` 的 `category` 镜头:「越高效越放量」的 Jevons 之辩)。
 
 **「点单」= 真实可点(非死提示):** 组合器选到**未推演**的组合时,点单按钮打开一个**预填好的 GitHub issue**
 (`github.com/zhanglunet/mba/issues/new?title=…&body=…`,标题/正文自动带两位创始人名 + 品牌 + slug 对)——
