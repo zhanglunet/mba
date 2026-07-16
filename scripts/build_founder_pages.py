@@ -29,8 +29,28 @@ except ImportError:
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FOUNDERS_DIR = os.path.join(ROOT, "founders")
+COLLABS_DIR = os.path.join(ROOT, "collabs")
 OUT_DIR = os.path.join(ROOT, "site", "founders")
 META = os.path.join(ROOT, "site", "reports-meta.yaml")
+
+
+def dinners_for(slug):
+    """扫 collabs/*.yaml,返回该品牌参与的晚餐 [(stem, partner_slug)]。"""
+    out = []
+    for p in sorted(glob.glob(os.path.join(COLLABS_DIR, "*.yaml"))):
+        d = yaml.safe_load(open(p, encoding="utf-8")) or {}
+        brands = d.get("brands") or []
+        if slug in brands and len(brands) == 2:
+            partner = brands[0] if brands[1] == slug else brands[1]
+            out.append((os.path.splitext(os.path.basename(p))[0], partner))
+    return out
+
+
+def _founder_name(slug):
+    p = os.path.join(FOUNDERS_DIR, f"{slug}.yaml")
+    if not os.path.exists(p):
+        return slug
+    return (yaml.safe_load(open(p, encoding="utf-8")) or {}).get("founder", {}).get("name_cn", slug)
 
 # 5 镜头:id / 展示名 / 色板(与 build_brand_starmap 的镜头语义一致)
 LENSES = [
@@ -180,6 +200,8 @@ def render_founder(slug, data, brand_name):
     xlinks.append(f'<a href="/reports/{esc(slug)}/">品牌审计报告 →</a>')
     xlinks.append(f'<a href="/starmap/{esc(slug)}.html">品牌知识星图 →</a>')
     xlinks.append(f'<a href="/watch/{esc(slug)}/cockpit.html">舆情驾驶舱 →</a>')
+    for stem, partner in dinners_for(slug):
+        xlinks.append(f'<a href="/collabs/{esc(stem)}.html">🍽️ 与 {esc(_founder_name(partner))} 共进晚餐 →</a>')
 
     # 履历时间线
     tl = []
@@ -259,17 +281,18 @@ def render_index(cards_data):
     body = f"""
   <h1>创始人维度 · Founders</h1>
   <p class="lede">从人物角度看品牌:每个品牌创始人的履历时间线 + 创始人↔品牌关系(按 5 镜头)。
-    履历复用 MBA 评委的一手调研,每条里程碑带 provenance。<strong>只作调研输入,不改分。</strong></p>
+    履历复用 MBA 评委的一手调研,每条里程碑带 provenance。<strong>只作调研输入,不改分。</strong><br>
+    <a href="/collabs/" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);font-weight:600">🍽️ 创始人晚餐:把两位创始人放一桌,假想推演合作 →</a></p>
   <div class="grid">
 {cards}
   </div>
 """
     nav = ('<a href="/">品牌监控</a>'
            '<a href="/founders/" aria-current="page">创始人</a>'
+           '<a href="/collabs/">创始人晚餐</a>'
            '<a href="/watch/">舆情信号</a>'
            '<a href="/panorama.html">评委全景</a>'
-           '<a href="/starmap.html">知识星图</a>'
-           '<a href="/docs.html">文档</a>')
+           '<a href="/starmap.html">知识星图</a>')
     return shell("创始人维度 · Founders · MBA",
                  "MBA 创始人维度:各品牌创始人的履历时间线与创始人↔品牌关系(按 5 镜头),复用评委一手调研。",
                  nav, body)

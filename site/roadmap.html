@@ -1012,6 +1012,25 @@
       </div>
     </div>
 
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-16 · 续</div>
+      <div class="log-tags">
+        <span class="badge done">新功能</span>
+        <span class="badge p1">创始人晚餐</span>
+      </div>
+      <div class="log-title">创始人晚餐(品牌 × 品牌合作推演)上线 —— 把两位创始人放一桌假想聊合作</div>
+      <div class="log-body">
+        <ul>
+          <li><b>数据层</b> <code>collabs/&lt;a&gt;--&lt;b&gt;.yaml</code>:两位创始人按 5 镜头逐"道菜"聊合作(每道两发言 + 合作点)+ 假想合作备忘 + <b>诚实盒(合作张力)</b>。首场 = <b>田溯宁(亚信)× 唐杰(智谱)</b>「骨干网遇见基座模型:两代科技基础设施建设者」;同批补亚信创始人田溯宁档案(curl 一手)</li>
+          <li><b>晚餐页 + 组合器</b> <code>build_collab_dinners.py</code> → <code>site/collabs/</code>:选任意两位创始人→有则开饭、无则「待推演」;复用创始人页 house style,<b>假想 disclaimer 横幅硬编码</b></li>
+          <li><b>硬 gate</b> <code>validate_collabs.py</code>(双方均有创始人档案·镜头合法·<b>诚实盒强制</b>·12 组 selftest)接入 CI;<code>check_consistency</code> 增第 9 格</li>
+          <li><b>反捏造</b>:发言为 AI 演绎公开立场(与「人物评委」同机制)、不冒充逐字原话、锁年留白、合作点标「假想」、诚实盒必列合作张力、<b>不谎称真实合作</b>;只作调研启发不改评分</li>
+          <li>入口:创始人页「🍽️ 与 X 共进晚餐」/首页/创始人索引;文档 <code>docs/22-founder-dinner.md</code>(含反捏造约定 + 开发计划存档)</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · 首场样板,其余配对可点单扩</div>
+      </div>
+    </div>
+
     <!-- 后续进度在此追加，格式参考上方 -->
     <div class="log-entry" style="opacity:0.45">
       <div class="log-date">—</div>

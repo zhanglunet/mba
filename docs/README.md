@@ -30,6 +30,7 @@
 | 19 | [19-feishu-notify.md](19-feishu-notify.md) | 运维 / 用户 | **飞书群推送**:品牌监控/舆情信号有变化(新增 P0/P1 事件 / 建议重审 / 评分变动)时,CI 合并到 main 自动推一张飞书卡片;配置(webhook + 可选签名)、门槛、卡片格式、`--dry-run` 调试 |
 | 20 | [20-sentiment-cockpit-mapping.md](20-sentiment-cockpit-mapping.md) | 产品 / 决策者 / BD | **舆情驾驶舱需求 × MBA 能力映射**:企业级舆情监测的通用需求(主体/数据源/7 标签/看板/分层预警)逐项对照 MBA Brand Watch,标 ✅可复用/🔧需适配/➕增量/⚠️共同缺口;含覆盖度速览 |
 | 21 | [21-founder-dimension.md](21-founder-dimension.md) | 产品 / 贡献者 | **创始人维度**:梳理品牌创始人履历 + 从人物角度看创始人↔品牌关系(按 5 镜头);`founders/<slug>.yaml` 数据层 + `build_founder_pages.py` 生成独立创始人页 + `validate_founders.py` 硬 gate;含 schema、SOP、反捏造约定、开发计划存档 |
+| 22 | [22-founder-dinner.md](22-founder-dinner.md) | 产品 / 贡献者 | **创始人晚餐(品牌×品牌合作推演)**:把两位创始人放一桌,按 5 镜头假想推演合作;`collabs/<a>--<b>.yaml` + `build_collab_dinners.py`(晚餐页+组合器)+ `validate_collabs.py` 硬 gate;**反捏造:AI 演绎/非真实合作/诚实盒强制**;含 schema、SOP、开发计划存档 |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(原始设计草案) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |
