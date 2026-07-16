@@ -1,0 +1,68 @@
+# founders/tesla.yaml — Tesla 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 数据来源:复用 perspectives/musk-perspective/references/research/06-timeline.md
+# (Period/Node/Public Evidence 五列表)+ metric-brand-auditor/self-conflict.yaml。
+# 反捏造:career[].evidence 为 provenance 标注(非逐字引语);relation 为**标注的分析**,
+# 不冒充本人原话。起源归属如实标注:特斯拉 2003 由 Eberhard/Tarpenning 创立,马斯克 2004
+# 领投、2008 任 CEO,经 2009 和解被法律确认为联合创始人——不表述为马斯克一人独创。
+# 数字/近期动态需 live 核验(见 06-timeline cutoff 注记)。
+brand: tesla
+founder:
+  name_cn: 埃隆·马斯克
+  name_en: Elon Musk
+  role: 联合创始人 / CEO（2004 领投 A 轮,2008 任 CEO；2009 和解确立联合创始人身份）
+  status: 现任
+  perspective_slug: musk
+career:
+  - period: "1999-2002"
+    milestone: "X.com / PayPal:支付与平台野心,把软件套现的财富积累为下一步硬核制造的弹药"
+    evidence: "public histories;biography(06-timeline)"
+    lens: [leverage]
+  - period: "2003"
+    milestone: "特斯拉由 Martin Eberhard 与 Marc Tarpenning 创立(马斯克此时尚未加入)——起源归属如实标注"
+    evidence: "Tesla histories;Eberhard 诉讼与 2009 和解(06-timeline 起源锚点)"
+    lens: [origin]
+  - period: "2004-2008"
+    milestone: "马斯克领投 A 轮、深度介入产品与工程,2008 出任 CEO:EV 押注升级为制造 / 生存押注"
+    evidence: "Tesla histories(06-timeline: EV bet becomes manufacturing / survival bet)"
+    lens: [origin, leverage]
+  - period: "2008"
+    milestone: "特斯拉与 SpaceX 濒临同时倒闭:'fund both or lose both'——创始人不外包风险的低谷神话"
+    evidence: "biography / interviews(06-timeline Phase 2 founder-collateral lens)"
+    lens: [origin, signal]
+  - period: "2012"
+    milestone: "Model S 交付:证明'电动可以是最好的车',把电动车从环保妥协重定义为高端欲望品"
+    evidence: "Tesla records(06-timeline: ambition becomes real-world proof)"
+    lens: [category, signal]
+  - period: "2017-2018"
+    milestone: "Model 3 'production hell':制造谦卑与痛苦成为核心教义,'把工厂当作产品'"
+    evidence: "public interviews / Tesla reports(06-timeline Phase 3 manufacturing doctrine)"
+    lens: [leverage]
+  - period: "2022"
+    milestone: "收购 Twitter / X:平台权力身份扩张,品牌中立性与注意力外溢风险上升(政治外溢)"
+    evidence: "public filings and media(06-timeline: identity coherence / conflict risk rises)"
+    lens: [identity]
+  - period: "2023-2025"
+    milestone: "FSD / Robotaxi / Optimus 前沿扩张,自动驾驶时间线债务上升(近期交付与进展需 live 核验)"
+    evidence: "public announcements;06-timeline 标注需 live verification"
+    lens: [category, signal]
+relation:
+  origin: >-
+    分析:特斯拉的当代起源叙事与马斯克高度绑定——但需诚实标注,公司 2003 年由 Eberhard/Tarpenning
+    创立,马斯克 2004 年领投、2008 年任 CEO;真正属于马斯克的起源资产是 2008 年"同时救活特斯拉与
+    SpaceX、宁可押上自身也不外包风险"的生存神话,而非从车库草创。
+  category: >-
+    分析:把电动车从"环保妥协"重定义为"更快、更智能、更酷"的高端欲望品,是特斯拉最强的品类资产,
+    与创始人第一性原理式的产品判断同源;这一品类开创直接催生了全球新势力赛道(含本审计四位打分者)。
+  leverage: >-
+    分析:超充网络、FSD 数据飞轮、电池/软件垂直整合、直营零广告品牌是特斯拉核心杠杆,
+    其中"把工厂当作产品"的制造教义源自 Model 3 制造地狱——创始人从痛苦中提炼的经营doctrine。
+  identity: >-
+    分析:极简设计 + "产品即营销、CEO 即品牌"把特斯拉做成图腾;但 2022 年后随 X/xAI 扩张与政治外溢,
+    创始人身份给品牌带来中立性与注意力风险(self-conflict:审计 Tesla 须 --panel-drop musk)。
+  signal: >-
+    分析:全球交付、盈利、超充与数据飞轮是可核验的真实信号;但 FSD/Robotaxi 的激进时间承诺一再跳票、
+    中国本土份额被挑战者蚕食,近期交付/份额/自动驾驶进展一律 live 核验,不把预测当结果。
+sources:
+  - "perspectives/musk-perspective/references/research/06-timeline.md"
+  - "metric-brand-auditor/self-conflict.yaml (musk → Tesla/特斯拉)"
