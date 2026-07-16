@@ -515,3 +515,25 @@ reports:
       共识 Leverage(9.5)领跑;唯一分歧在 Signal(8.25)——蒂尔"AI 领先借自 OpenAI"7 vs 安德森/纳瓦尔
       "分发已把 AI 变成自有杠杆"9。173/200 · 8.65/10(vc-en 高分梯队)。
     has_pdf: false
+
+  - slug: amazon
+    card_brand: "Amazon · 亚马逊"
+    card_meta: "vc-en panel · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 贝索斯非评委无自冲突"
+    headline: "杠杆维度 9.4 领跑:商业史最深的飞轮 + AWS 云计算,分歧在护城河触发反垄断与 AI 追赶"
+    brand_cn: Amazon / 亚马逊
+    brand_en: Amazon
+    panel: vc-en
+    industry: 企业服务·安全
+    version: v1
+    audit_date: 2026-07-16
+    score_total: 218
+    score_max: 250
+    score_normalized: 8.72
+    tl_dr: >-
+      Leverage(杠杆)维度领跑级(9.4):被写进商学院教材的"飞轮"(选品→流量→卖家→规模成本↓→低价→
+      更多客户)+ AWS + Prime + 全球物流,是商业史最深的运营型护城河——不同于 NVIDIA 的 CUDA 软件锁定、
+      微软的多元产品捆绑,亚马逊胜在规模+运营的复利。贝索斯从 D.E. Shaw 辞职、1994 车库在线书店到以 AWS
+      开创云计算品类,"Day 1、客户痴迷、长期主义"是从第一天起的操作系统。vc-en 5 评委(贝索斯非评委,
+      无自冲突)共识:Leverage(9.4)领跑、Category(9.2)紧随;唯一分歧在 Signal(8.0)——蒂尔"护城河深到
+      触发 FTC 反垄断 + AI 追赶者"7 vs 纳瓦尔"飞轮复利穿越周期"9。218/250 · 8.72/10(vc-en 高分梯队)。
+    has_pdf: false

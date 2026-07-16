@@ -1,0 +1,62 @@
+# founders/amazon.yaml — 亚马逊 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 杰夫·贝索斯非 MBA 评委,履历经亚马逊官方一手(aboutamazon.com/about-us)+ 贝索斯 2016 致股东信
+# (一手,含著名'Day 1')+ 公开记录核实(curl 走 $HTTPS_PROXY+CA,坑 #1),每条里程碑带来源。
+# 诚实处理:贝索斯 2021 卸任 CEO(交棒 Andy Jassy),转任执行董事长,仍是最大个人股东。
+# 反捏造:不含编造引语;relation 为标注的分析;'Day 1'与使命句为亚马逊官方/贝索斯逐字原文;
+# 数字(市值/份额)近期需 live 核验。
+brand: amazon
+founder:
+  name_cn: 杰夫·贝索斯
+  name_en: Jeff Bezos
+  role: 创始人 / 执行董事长 / 前 CEO(现任 CEO Andy Jassy)
+  status: 已离任
+  # perspective_slug 留空:杰夫·贝索斯非 MBA 评委
+career:
+  - period: "1964-1994"
+    milestone: "1964-01-12 生于阿尔伯克基;1986 普林斯顿电子工程与计算机科学毕业;在对冲基金 D.E. Shaw 工作,注意到互联网年增速惊人,以'遗憾最小化框架'决定辞职创业"
+    evidence: "亚马逊官方 aboutamazon.com/about-us(curl 一手);传记交叉核对"
+    lens: [origin]
+  - period: "1994-1997"
+    milestone: "1994 在西雅图车库创办亚马逊(先取名 Cadabra,后改 Amazon,寓意'地球上最大的河');1995 amazon.com 以在线书店上线;1997 上市并发出著名首封致股东信'It's all about the long term'"
+    evidence: "亚马逊官方 aboutamazon.com/about-us(curl 一手);1997 致股东信"
+    lens: [origin, category]
+  - period: "1998-2006"
+    milestone: "从书店扩张为'万物商店';2005 推出 Prime 会员(把'快速免费配送'变成绑定);2006 推出 AWS(S3/EC2),开创云计算品类——后成为亚马逊最大利润引擎"
+    evidence: "亚马逊官方公开记录;AWS 公开史"
+    lens: [category, leverage]
+  - period: "2007-2017"
+    milestone: "2007 Kindle 定义电子阅读;2014 Echo/Alexa 开创智能音箱;2017 以约 137 亿美元收购全食超市进入线下;'飞轮'(选品→流量→卖家→低成本→低价→更多客户)成为商业战略范式"
+    evidence: "亚马逊官方公开记录;贝索斯致股东信"
+    lens: [category, leverage, identity]
+  - period: "2016-2021"
+    milestone: "2016 致股东信提出'Day 1 vs Day 2':'Day 2 is stasis. Followed by irrelevance. Followed by excruciating, painful decline. Followed by death. And that is why it is always Day 1.';2021-07 卸任 CEO 交棒 Andy Jassy(原 AWS 负责人),转任执行董事长"
+    evidence: "贝索斯 2016 致股东信 aboutamazon.com(curl 一手,Day 1 逐字);2021 交棒公告"
+    lens: [identity, signal]
+  - period: "2019-2026(现状)"
+    milestone: "亚马逊市值一度居全球前列,AWS 为利润核心;2023 美国 FTC 对亚马逊提起反垄断诉讼;在生成式 AI 上以 Bedrock + 投资 Anthropic 布局,但被认为在消费级 AI 上不如微软/谷歌抢眼"
+    evidence: "公开司法记录(FTC v. Amazon, 2023);公开报道,需 live 核验"
+    lens: [signal, leverage]
+relation:
+  origin: >-
+    分析:亚马逊的起源与贝索斯'D.E. Shaw 辞职、遗憾最小化框架、1994 西雅图车库做在线书店'深度绑定;
+    '地球上最大的河/最以客户为中心的公司'与'长期主义'从第一天(Day 1)起就是品牌的操作系统。
+  category: >-
+    分析:贝索斯定义了规模化电商与'万物商店',更以 AWS(2006)开创云计算品类(21 世纪最有价值的品类
+    创造之一),并以 Prime(会员制)、Kindle(电子阅读)、Alexa(智能音箱)持续开辟新品类。
+  leverage: >-
+    分析:亚马逊最强的是'飞轮'——选品→流量→第三方卖家→规模成本下降→更低价格→更多客户的自我强化循环,
+    叠加 AWS + Prime 绑定 + 全球物流履约网络,构成商业史上最深的运营型护城河。这是本审计的最高维度。
+  identity: >-
+    分析:'客户痴迷(customer obsession)、Day 1、长期主义、你的利润就是我的机会'塑造了高度一致、
+    可执行的身份操作系统;但它更偏运营哲学而非情感品牌,且劳工待遇/'冷酷高效'的公众争议是身份的减分面。
+  signal: >-
+    分析:全球前列市值、AWS 利润引擎、Prime 会员规模、电商主导份额是可核验的真实信号;但 2023 FTC
+    反垄断诉讼、零售薄利、AWS 面临 Azure/GCP 竞争、以及消费级 AI 相对落后需 live 核验,不把历史优势
+    当作永久胜局。
+sources:
+  - "亚马逊官方《About Us》 aboutamazon.com/about-us(curl 一手:使命'relentlessly inventing on their behalf'、创业与上线)"
+  - "杰夫·贝索斯 2016 致股东信 aboutamazon.com/news/company-news/2016-letter-to-shareholders(curl 一手:'Day 1 / Day 2 is stasis...' 逐字)"
+  - "贝索斯 1997 首封致股东信《It's all about the long term》(长期主义奠基,公开可查)"
+  - "FTC v. Amazon 反垄断诉讼(2023)· 公开司法记录"
+  - "AWS / Prime / Kindle / Alexa / 全食收购 · 亚马逊公开记录(数字需 live 核验)"

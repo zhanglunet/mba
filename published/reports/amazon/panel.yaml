@@ -1,0 +1,13 @@
+panel: vc-en
+locked_at: 2026-07-16
+mba_version: 0.4.5
+published_at: 2026-07-16
+version: v1
+score_total: 218
+score_max: 250
+score_normalized: 8.72
+overrides:
+  add: []
+  drop: []
+# 杰夫·贝索斯(Amazon 创始人)非 MBA 评委,故本审计无自冲突问题、无 --panel-drop。
+# vc-en 5 评委均无 Amazon 强关联(check_self_conflict --brand Amazon --panel vc-en 无命中)。
