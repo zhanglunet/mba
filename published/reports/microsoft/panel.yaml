@@ -1,0 +1,15 @@
+panel: vc-en
+locked_at: 2026-07-16
+mba_version: 0.4.5
+published_at: 2026-07-16
+version: v1
+score_total: 173
+score_max: 200
+score_normalized: 8.65
+overrides:
+  add: []
+  drop: [rhoffman]
+# 里德·霍夫曼(rhoffman)创办 LinkedIn(2016 售予微软)并曾任微软董事,与 Microsoft 强关联
+# (self-conflict.yaml: rhoffman.orgs 含 Microsoft/LinkedIn)→ --panel-drop rhoffman。
+# 有效评委 4 位(安德森·格雷厄姆·蒂尔·纳瓦尔),满分 200。
+# 现任 CEO 纳德拉是评委(satyanadella)但不在 vc-en panel;创始人盖茨非评委——无其他自冲突。
