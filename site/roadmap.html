@@ -740,7 +740,7 @@
         <div class="task-check done"></div>
         <div class="task-text">
           设计触发机制（webhook / cron / keyword / news RSS）
-          <div class="note">设计文档 <a href="/docs/12-evolution-tracking.md"><code>docs/12-evolution-tracking.md</code></a> 完成 · 2026-06-30 · 4 种触发器 + delta 报告格式 + 5 个新 MCP 工具</div>
+          <div class="note">设计文档 <a href="https://github.com/zhanglunet/mba/blob/main/docs/12-evolution-tracking.md"><code>docs/12-evolution-tracking.md</code></a> 完成 · 2026-06-30 · 4 种触发器 + delta 报告格式 + 5 个新 MCP 工具</div>
         </div>
       </div>
       <div class="task-item">
@@ -1173,6 +1173,23 @@
           <li><b>反捏造</b>:评委评分/对话 AI in-character 模拟(disclaimer),华为事实取自 renzhengfei 06-timeline 锚点(《华为的冬天》/备胎/农村包围城市)。QA:report/integrity/html 全过 + render-qa canvas=2 离线 + check_self_conflict 命中 + 11 格一致性 + 首页 0 JS 错误(22 品牌)</li>
         </ul>
         <div class="log-commit">branch claude/sharp-turing-496l8b · MBA 现覆盖 22 品牌(首个中国科技巨头本轮入库)+ 22 创始人 + 6 产业 + 2 场晚餐</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-16 · 续十</div>
+      <div class="log-tags">
+        <span class="badge done">全站巡检</span>
+        <span class="badge p1">修 4 处缺陷</span>
+      </div>
+      <div class="log-title">全站功能巡检 —— Playwright 爬 177 页,修复 4 个真实缺陷</div>
+      <div class="log-body">
+        <ul>
+          <li><b>方法</b>:build.sh 构建完整站点 → 本地 server → Playwright 广度优先爬 <b>177 页 / 188 链接</b>查 404 + JS 错误 → 交互功能单独驱动测试。<b>交互 11/11 通过</b>(排序 / 产业筛选 / 晚餐 CTA / 组合器开饭+点单+同人提示 / 评委页动态渲染 + 裸 URL 兜底 / panorama / starmap / 舆情驾驶舱)</li>
+          <li><b>修复 4 个真实缺陷</b>:① roadmap 死链 <code>/docs/12-evolution-tracking.md</code>(裸路径漏写)→ 改 GitHub URL;② chengshi-auto v1 版本链 <code>.md</code>(v1 无 HTML 快照)→ 改 GitHub 源文件;③ 历史快照断图(lenovo v1 / chengshi v5·v6 的 <code>_assets/*.jpg</code>,相对 versions/ 解析错位)→ build.sh 把 <code>_assets/</code> 镜像到 <code>versions/_assets/</code>;④ chengshi v2 redirect stub 跳 <code>../report.html</code>(部署后是 index.html)→ 改跳 <code>../</code></li>
+          <li><b>排除环境假阳性</b>:报告页 &lt;head&gt; 的 Chart.js CDN 在沙箱不可达 → domcontentloaded 超时记为 [0],经响应状态/直连 curl 复核均 200,非线上缺陷(render-qa --offline-libs 权威验证图表)。文档:docs/24-site-qa.md</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · 4 处缺陷全部修复并复测通过 · 交互 11/11</div>
       </div>
     </div>
 
