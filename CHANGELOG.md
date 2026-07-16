@@ -4,6 +4,37 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
+## v0.5.0 — 2026-07-16
+
+**从「品牌监控」到「品牌 + 创始人 + 产业 + 组合」的关系宇宙**:本版把 MBA 从单纯的品牌影响力
+审计,扩成一张互相关联的图——每个品牌接上**创始人**,创始人之间可摆**晚餐**推演合作,品牌按
+**产业**归类,并一次性把**七家全球科技巨头**纳入监控。均在 MBA「AI 评委模拟 · 反捏造 · 只建议不改分」
+边界内;新增两处**首次真实触发 `--panel-drop`**(创始人/董事自冲突)让自冲突机制在发布报告里落地。
+
+### Added
+- **创始人维度**(docs/21)——`founders/<slug>.yaml`:每个品牌梳理创始人履历(时间线,每条带
+  provenance)+ 从人物角度看创始人↔品牌关系(按 5 镜头,`分析:` 前缀)。`build_founder_pages.py`
+  生成独立创始人页 + 索引;`validate_founders.py` 硬 gate(brand ∈ 白名单、履历带来源、
+  perspective_slug 真实);评委创始人复用其 perspective,非评委 curl 一手。**22 位创始人全覆盖。**
+- **创始人晚餐 / 品牌×品牌合作推演**(docs/22)——`collabs/<a>--<b>.yaml`:把两位创始人放一桌,
+  按 5 镜头假想推演合作。`build_collab_dinners.py` 生成晚餐页 + **组合器**(选两位创始人 → 有则「开饭」、
+  无则「点单」开预填 GitHub issue);`validate_collabs.py` 硬 gate(双方均有创始人档案 + **诚实盒 tensions
+  强制**)。**反捏造:发言为 AI 演绎公开立场、合作为假想、不谎称真实合作。** 已上桌 2 场
+  (田溯宁×唐杰、梁文锋×黄仁勋「芯片与模型」);首页嵌「创始人晚餐 · 亮点」块(单一真源守漂移)。
+- **产业维度**(docs/23)——按产业给品牌分 6 大类(人工智能 / 消费 / 硬科技·航天 / 智能制造·硬件 /
+  企业服务·安全 / 教育);`reports-meta.yaml` 的 `industry` 字段单一真源 + 首页产业筛选条 / 卡片标签;
+  `check_consistency` 第 10 格硬 gate。
+- **七家全球科技巨头入库**(15 → **22 品牌**)——DeepSeek(ai-app-cn)· NVIDIA(vc-en,MBA 最高 8.88)·
+  Apple(vc-en,Identity 9.6 全场最高)· Google(vc-en,Category 领跑)· Microsoft · Amazon · Huawei,
+  每家含完整审计报告(10 段 + 数字自洽 Score Matrix + 手写内联 Chart.js)+ 创始人档案 + 全套耦合。
+- **首次真实 `--panel-drop`**(创始人/董事自冲突落地)——Microsoft(霍夫曼:LinkedIn 售予微软 + 曾任
+  微软董事)· Huawei(任正非:创始人评委),按 `self-conflict.yaml` 规则剔除、有效评委打分。
+
+### Fixed
+- **全站功能巡检**(docs/24)——Playwright 广度优先爬 177 页 / 188 链接 + 交互测试,修复 4 个真实缺陷:
+  roadmap 裸 `.md` 死链、chengshi-auto v1 版本链、历史快照 `_assets/` 断图(build.sh 镜像到
+  `versions/_assets/`)、v2 redirect 目标错。交互 11/11 通过;排除 CDN 环境假阳性。
+
 ## v0.4.5 — 2026-07-14
 
 **Brand Watch → 舆情驾驶舱**:按 docs/20(舆情驾驶舱需求 × MBA 能力映射)把 Brand Watch
