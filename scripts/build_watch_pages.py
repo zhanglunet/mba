@@ -317,7 +317,8 @@ def render_overview(rows_meta, as_of):
 
   <h1>舆情信号 · Brand Watch</h1>
   <p class="lede">按 W1-W9 维度持续采集的可溯源事件流(每条直链原文)——审计触发建议与调研输入,
-    <strong>只建议、不改分</strong>(docs/15 §5.3)。每周一自动周扫增量。</p>
+    <strong>只建议、不改分</strong>(docs/15 §5.3)。每周一自动周扫增量。<br>
+    <a href="/watch/cockpit.html" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);font-weight:600">全站舆情驾驶舱(所有品牌汇总看板)→</a></p>
   <div class="summary">
     <span><strong>{len(mined)}/{len(rows_meta)}</strong> 品牌已开采</span>·
     <span><strong>{total_events}</strong> 条事件</span>·
