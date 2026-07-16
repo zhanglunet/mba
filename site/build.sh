@@ -123,6 +123,11 @@ while IFS= read -r line || [ -n "$line" ]; do
     mkdir -p "$dest_dir/versions"
     cp "$SRC_DIR/$slug"/versions/*.html "$dest_dir/versions/"
     echo "[mba-build]   + $(ls "$SRC_DIR/$slug"/versions/*.html | wc -l | tr -d ' ') version snapshot(s)"
+    # 版本快照里用相对路径引用 `_assets/`(相对 versions/ 目录解析),而 _assets/ 实际在报告根,
+    # 会 404。把 _assets/ 一并镜像到 versions/_assets/,让历史快照里的图片(评委头像 / 产品实拍)正常显示。
+    if [ -d "$SRC_DIR/$slug/_assets" ]; then
+      cp -R "$SRC_DIR/$slug/_assets" "$dest_dir/versions/_assets"
+    fi
   fi
 
   echo "[mba-build] published: $slug"
