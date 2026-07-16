@@ -47,8 +47,9 @@ sources:                          # 可选;复用的调研锚点 + 公开源(可
 
 - **履历里程碑 = 带 provenance 的事实**:每条 `career[].evidence` 必填(校验器硬 gate),
   照搬/改写自对应评委 `06-timeline.md` 的 `Public Evidence` 标注,或真实源 URL;**不新造来源**。
-- **创始人↔品牌关系 = 标注的分析**:`relation` 文字以「分析:…」开头,是 MBA 的判断(像报告
-  Origin 镜头),**不冒充本人原话**。
+- **创始人↔品牌关系 = 标注的分析**:`relation` 文字**必须以「分析:」开头**(半/全角冒号均可),
+  是 MBA 的判断(像报告 Origin 镜头),**不冒充本人原话**。**✅ 已机器强制**:`validate_founders.py`
+  硬 gate 每个 relation 值须以「分析:」起头(缺前缀 = CI 红),把这条口头承诺升级成门禁。
 - **逐字引语只能来自该评委 research 语料**:若 yaml 里出现引号内引语,写入前 `grep -F` 验证
   (中文去空格)在 `perspectives/<slug>-perspective/references/research/*` 里逐字存在。
   (创始人页不是 SKILL.md → 不进 `firewall_check`,这条纪律靠人工;首批 yaml 已避免嵌入声称引语。)

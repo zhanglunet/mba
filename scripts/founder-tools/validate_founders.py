@@ -8,6 +8,7 @@ validate_founders.py — 创始人维度(founders/<slug>.yaml)数据静态硬 ga
   A. 结构底线:每个文件 brand + founder(name_cn/role/status)+ 至少 1 条 career;
      每条 career 必须有非空 period/milestone/**evidence**(反捏造:履历里程碑必须带 provenance)。
   B. 判断/事实字段合法:status 枚举合法;career[].lens 与 relation 的 key ⊆ 5 镜头;
+     relation 每个值必须以「分析:」开头(反捏造:关系是标注分析,不冒充本人原话);
      perspective_slug(非空时)必须存在对应 perspectives/<slug>-perspective/SKILL.md。
   C. 品牌对齐:brand 必须 ∈ site/published-reports.txt 白名单;文件名 slug == brand;brand 唯一。
 
@@ -33,6 +34,9 @@ PERSPECTIVES = os.path.join(ROOT, "perspectives")
 
 LENSES = {"origin", "category", "leverage", "identity", "signal"}
 STATUSES = {"现任", "已离任", "已退休", "已故"}
+# 反捏造:relation 是「从人物角度看创始人↔品牌」的**标注分析**(非本人原话),
+# 必须以「分析:」开头(半/全角冒号均可),把 docs/21 的口头承诺变成机器门禁。
+RELATION_MARKERS = ("分析:", "分析：")
 
 
 def read_whitelist(path=WHITELIST):
@@ -105,6 +109,12 @@ def validate_founder(slug, data, whitelist, seen_brands, check_perspective=True)
             errs.append(f"{ctx0}: relation 必须是映射(镜头→分析文字)")
         elif not set(rel) <= LENSES:
             errs.append(f"{ctx0}: relation 的 key 必须 ⊆ {sorted(LENSES)},实际 {sorted(rel)}")
+        else:
+            for k, v in rel.items():
+                # 反捏造:关系文字是标注的分析,不得冒充本人原话 → 必须以「分析:」开头
+                if not isinstance(v, str) or not v.lstrip().startswith(RELATION_MARKERS):
+                    errs.append(f"{ctx0}: relation.{k} 必须是以「分析:」开头的字符串"
+                                f"(标注为分析,不冒充本人原话)")
     return errs
 
 
@@ -146,7 +156,7 @@ def selftest():
             "brand": "demo",
             "founder": {"name_cn": "张三", "role": "创始人", "status": "现任"},
             "career": [{"period": "2020", "milestone": "创立 demo", "evidence": "公开记录", "lens": ["origin"]}],
-            "relation": {"origin": "分析文字"},
+            "relation": {"origin": "分析:合法分析文字"},
         }
         d.update(over)
         return d
@@ -164,6 +174,8 @@ def selftest():
         ("career 缺 evidence 必抓", ok(career=[{"period": "2020", "milestone": "x"}]), 1),
         ("career.lens 越界必抓", ok(career=[{"period": "2020", "milestone": "x", "evidence": "y", "lens": ["vibe"]}]), 1),
         ("relation key 越界必抓", ok(relation={"vibe": "x"}), 1),
+        ("relation 缺「分析:」前缀必抓", ok(relation={"origin": "SpaceX 与马斯克绑定"}), 1),
+        ("relation 全角冒号「分析：」应通过", ok(relation={"origin": "分析：合法"}), 0),
     ]
     failed = []
     for name, data, expect_min in cases:
