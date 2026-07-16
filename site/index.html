@@ -140,6 +140,35 @@
   .bc-links a { color: var(--accent); text-decoration: none; font-weight: 600; }
   .bc-links a:hover { border-bottom: 1px solid var(--accent); }
 
+  /* ── 创始人晚餐 · 亮点(首页 DINNER 块;结构由 build_collab_dinners.py 生成)── */
+  .dinner-hl { margin: 42px 0 0; }
+  .dh-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--hair); }
+  .dh-head h2 { font-family: ui-serif, "Noto Serif SC", Georgia, serif; font-size: 18px; font-weight: 700; margin: 0; }
+  .dh-more { font-size: 12.5px; color: var(--accent); text-decoration: none; font-weight: 600; white-space: nowrap; }
+  .dh-more:hover { border-bottom: 1px solid var(--accent); }
+  .dh-empty { font-size: 13.5px; color: var(--muted); margin: 0; }
+  .dh-empty a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+  .dh-card { background: var(--card); border: 1px solid var(--hair); border-left: 3px solid var(--accent); border-radius: 8px; padding: 18px 20px 16px; }
+  .dh-pair { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; color: var(--ink); margin: 0 0 3px; }
+  .dh-pair b { font-family: ui-serif, "Noto Serif SC", Georgia, serif; font-size: 15px; }
+  .dh-pair .r { font-size: 11.5px; color: var(--muted); }
+  .dh-pair .vs { font-size: 15px; color: var(--muted); font-weight: 300; }
+  .dh-lens { font-size: 11px; font-weight: 700; background: #fff; border: 1px solid; border-radius: 999px; padding: 1px 9px; white-space: nowrap; margin-left: 2px; }
+  .dh-title { font-family: ui-serif, "Noto Serif SC", Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.4; margin: 2px 0 14px; }
+  .dh-turns { display: flex; flex-direction: column; gap: 9px; margin: 0 0 12px; }
+  .dh-bubble { max-width: 88%; border: 1px solid var(--hair); border-radius: 12px; padding: 9px 13px; background: var(--paper); }
+  .dh-bubble.a { align-self: flex-start; border-top-left-radius: 3px; }
+  .dh-bubble.b { align-self: flex-end; background: #f6f3ec; border-top-right-radius: 3px; }
+  .dh-who { font-size: 11.5px; font-weight: 800; margin-bottom: 2px; }
+  .dh-who .brand { font-weight: 600; color: var(--muted); font-size: 10.5px; margin-left: 5px; }
+  .dh-say { font-size: 13px; line-height: 1.6; color: #26231f; }
+  .dh-idea { border-left: 3px solid var(--up); background: #eef6f0; border-radius: 6px; padding: 8px 12px; font-size: 12.5px; line-height: 1.55; }
+  .dh-idea b { color: var(--up); }
+  .dh-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px 18px; flex-wrap: wrap; margin-top: 12px; }
+  .dh-disc { font-size: 11px; color: var(--muted); line-height: 1.5; flex: 1 1 260px; }
+  .dh-cta a { color: var(--accent); text-decoration: none; font-weight: 700; font-size: 12.5px; white-space: nowrap; }
+  .dh-cta a:hover { border-bottom: 1px solid var(--accent); }
+
   /* ── 页脚 ─────────────────────────────────────────────── */
   .access { margin-top: 44px; padding: 14px 18px; background: var(--card); border: 1px solid var(--hair); border-radius: 6px; font-size: 13px; color: var(--muted); display: flex; gap: 8px 24px; flex-wrap: wrap; align-items: baseline; }
   .access code { background: #f0ece3; padding: 1px 7px; border-radius: 3px; font-size: 12px; color: var(--ink); }
@@ -436,6 +465,26 @@
       </div>
       </div>
       <!-- REPORTS:END -->
+    </section>
+
+    <section aria-label="创始人晚餐亮点">
+      <!-- DINNER:START — 生成自 collabs/*.yaml(scripts/build_collab_dinners.py --check-home 守漂移)· 勿手改 -->
+      <div class="dinner-hl">
+        <div class="dh-head"><h2>🍽️ 创始人晚餐 · 亮点</h2><a class="dh-more" href="/collabs/">组合更多创始人 · 共 1 场 →</a></div>
+        <div class="dh-card">
+          <div class="dh-pair"><b>田溯宁</b><span class="r">亚信</span>
+            <span class="vs">×</span><b>唐杰</b><span class="r">智谱</span>
+            <span class="dh-lens" style="border-color:#2563a8;color:#2563a8">杠杆护城河</span></div>
+          <div class="dh-title">骨干网遇见基座模型:两代科技基础设施建设者的一顿饭</div>
+          <div class="dh-turns"><div class="dh-bubble a"><div class="dh-who">田溯宁<span class="brand">亚信</span></div><div class="dh-say">亚信最硬的杠杆是运营商和政企的深度关系,加上二十多年电信软件的份额积累—— 这类客户认的是可靠、合规、能长期陪跑。</div></div><div class="dh-bubble b"><div class="dh-who">唐杰<span class="brand">智谱</span></div><div class="dh-say">智谱最硬的是模型能力与研发密度,但要进运营商、进央国企,渠道和合规是门槛。两边正好互补:你的渠道,我的模型。</div></div></div>
+          <div class="dh-idea"><b>合作点(假想):</b> 亚信渠道 × 智谱模型 = 行业大模型落地杠杆:由亚信把 GLM 打包进面向运营商/政企的解决方案,做电信级、可私有化部署的行业大模型与 AI agent。</div>
+          <div class="dh-foot">
+            <span class="dh-disc">🍽️ 假想对谈 · 双方发言为 <b>AI 演绎</b>其公开立场 · 非本人真实发言 · 非双方证实的真实合作</span>
+            <span class="dh-cta"><a href="/collabs/asiainfo--zhipu.html">看这场完整晚餐(5 镜头)→</a></span>
+          </div>
+        </div>
+      </div>
+      <!-- DINNER:END -->
     </section>
 
     <div class="access">

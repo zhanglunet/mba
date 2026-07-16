@@ -104,6 +104,20 @@ def validate_collab(stem, data, seen_stems, check_founder=True):
         if not isinstance(v, list) or not v:
             errs.append(f"{ctx0}: {field} 必须是非空列表"
                         + ("(诚实盒:合作张力/不搭之处,反炒作平衡)" if field == "tensions" else ""))
+
+    # 可选:首页「创始人晚餐 · 亮点」精选字段(build_collab_dinners 生成首页 DINNER 块用)。
+    # featured 必须是 bool;home_highlight(若给)必须指向本场真实存在的 course.lens —— 否则
+    # 首页亮点会静默落到别的镜头/首道菜,展示与作者意图不符。
+    feat = data.get("featured")
+    if feat is not None and not isinstance(feat, bool):
+        errs.append(f"{ctx0}: featured 必须是布尔值(true/false)")
+    hl = data.get("home_highlight")
+    if hl is not None:
+        course_lenses = {c.get("lens") for c in (courses if isinstance(courses, list) else [])
+                         if isinstance(c, dict)}
+        if hl not in course_lenses:
+            errs.append(f"{ctx0}: home_highlight `{hl}` 不在本场任一 course 的 lens 中"
+                        f"(须 ∈ {sorted(x for x in course_lenses if x)})")
     return errs
 
 
@@ -165,6 +179,10 @@ def selftest():
         ("takeaways 为空必抓", ok(takeaways=[]), 1),
         ("tensions 为空必抓(诚实盒)", ok(tensions=[]), 1),
         ("scene 为空必抓", ok(scene=""), 1),
+        ("home_highlight 指向不存在的镜头必抓", ok(home_highlight="signal"), 1),
+        ("featured 非布尔必抓", ok(featured="yes"), 1),
+        ("home_highlight 合法应通过", ok(home_highlight="origin"), 0),
+        ("featured 合法应通过", ok(featured=True), 0),
     ]
     failed = []
     for name, data, expect_min in cases:
