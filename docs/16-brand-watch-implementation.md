@@ -80,8 +80,24 @@ PRD schema 原样落地,增补以下几点(均为实操/驾驶舱需求发现的
   lens_map 枚举合法;`id` 格式 `<date>-<slug>-NNN` 且日期与 `date` 一致、全局唯一。
 - **C 矩阵对齐**:`matrix.yaml` 品牌集合 == 发布白名单(**新发布品牌必须补矩阵行**,
   这把「监控台每个品牌都有舆情配置」变成了机器强制);事件的 dim 在该品牌上不得为 off。
-- **`--selftest`**:12 组断言,每类违规造一个假样本证明会被抓(与
-  `quality_check --selftest` 同一哲学:门禁要自证有牙)。
+- **`--selftest`**:17 组断言(含舆情驾驶舱 4 字段),每类违规造一个假样本证明会被抓
+  (与 `quality_check --selftest` 同一哲学:门禁要自证有牙)。
+
+### 2.5 候选取数半自动助手 `fetch_candidate.py`(2026-07-16)
+
+手工加事件里最累的是 curl 源站取逐字标题 + 抓日期 + 算 id;引用又必须真实(反捏造)。
+`scripts/watch-tools/fetch_candidate.py` 把**机械部分**自动化,**判断字段(dim/severity/
+direction/lens_map)仍留人工**、**quote 只回填 curl 到的真实标题**(脚本从不编造):
+
+- `draft <url> [...] [--brand SLUG]` —— curl(走 `$HTTPS_PROXY` 出口 + CA + 浏览器 UA)→
+  提取逐字标题(优先 `<h1>`,去 `_站名`/` - 站名` 尾缀)→ 抓 URL 内嵌日期 → 猜 `source_type` →
+  给 `--brand` 时算下一个 id + 列该品牌非 off 维度 → 打印**候选 YAML 草稿**(dim/severity/
+  direction/lens_map 标 TODO)。人工核验维度/等级/方向后再粘进 `events.yaml`。
+- `verify [--brand SLUG]` —— **反捏造自审 + 死链检测**:对所有 `quote_type=title` 事件重新 curl,
+  核对 quote 是否仍在源站标题里(去空白/实体规范化匹配),报告 OK / MISMATCH / DEAD。
+
+**边界**:需要网络,**不进 CI**(CI 不出网,与 §2.3 的「逐字命中属抽检 SOP」同因);它是把
+「WebSearch → curl 核对 → 入库」这条人工链的取数/核对两段**减负**,不替代人工定维度与判断。
 
 ### 2.4 踩坑记录
 
