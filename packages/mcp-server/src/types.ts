@@ -47,8 +47,11 @@ export interface KeywordTriggerConfig {
   poll_interval_hours: number;
 }
 
+// 触发器类型:cron（scheduler 定期轮询）与 webhook（receiver 的 POST /webhooks/trigger 入站）
+// 均已接线。keyword/news 曾在 schema 里但 scheduler 从不执行(静默 no-op)→ 2026-07-16 移除,
+// 避免"订阅了却永不触发"的陷阱;RSS 接入(P3-B-3)需出网,留作独立功能再引回。
 export interface Trigger {
-  type: 'keyword' | 'cron' | 'webhook' | 'news';
+  type: 'cron' | 'webhook';
   config: CronTriggerConfig | KeywordTriggerConfig | Record<string, unknown>;
 }
 

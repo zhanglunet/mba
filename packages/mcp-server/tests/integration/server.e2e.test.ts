@@ -139,6 +139,28 @@ describe('MCP server e2e', () => {
     expect(list2.subscriptions.some((s: any) => s.subscription_id === sub.subscription_id)).toBe(false);
   });
 
+  it('subscribe_brand rejects retired keyword/news triggers (silent no-op → hard reject)', async () => {
+    // keyword/news were accepted by the schema but never executed by the scheduler
+    // (only cron fires; webhook is receiver-backed). Removed 2026-07-16 so the schema
+    // fails loud instead of silently swallowing a subscription that never triggers.
+    for (const type of ['keyword', 'news']) {
+      const res = await client.callTool({
+        name: 'subscribe_brand',
+        arguments: { brand: 'Dead Trigger', triggers: [{ type }] },
+      });
+      // MCP surfaces zod validation failures as isError results
+      expect((res as any).isError).toBe(true);
+    }
+
+    // cron + webhook still accepted
+    const okRes = await client.callTool({
+      name: 'subscribe_brand',
+      arguments: { brand: 'Live Trigger', triggers: [{ type: 'webhook' }] },
+    });
+    expect((okRes as any).isError).toBeFalsy();
+    expect(parse(okRes as any).triggers[0].type).toBe('webhook');
+  });
+
   it('add_judge validate_only checks a persona without registering', async () => {
     const persona = `# Test Judge
 
