@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>DeepSeek 深度求索 — Brand Influence Review v1 · MBA</title>
+<meta name="description" content="ai-app-cn panel brand audit of DeepSeek / 深度求索. Score: 200/250 · 8.00/10. 5 judges × 5 lenses. Audit date: 2026-07-16." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --green: #1a7a4a;
+  --blue: #1a4a7a;
+  --warn: #d97706;
+  --moon: #2c1a4a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 820px; margin: 0 auto; padding: 56px 28px 96px; }
+header {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+
+.panel-note { background: #fffbf0; border: 1px solid #e8d96e; border-radius: 6px; padding: 12px 16px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: #7a6b00; margin-bottom: 28px; }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; }
+
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+
+.actions { counter-reset: action-counter; margin-bottom: 32px; }
+.action-phase { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 20px 0 10px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--moon); color: #fff; margin-bottom: 20px; }
+.insight-box { background: #f3f0fa; border-left: 3px solid var(--moon); border-radius: 0 6px 6px 0; padding: 14px 18px; margin-bottom: 20px; font-size: 14px; line-height: 1.6; }
+.insight-box strong { font-size: 12px; font-family: ui-sans-serif,sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--moon); display: block; margin-bottom: 4px; }
+
+  /* ── logo glyph(五镜头雷达,规范见 mbabrand.com/logo-design.html)── */
+  .mark { display: inline-flex; align-items: center; gap: 9px; }
+  .mark-glyph { display: block; flex-shrink: 0; }
+  .mark-glyph .radar-data { stroke-dasharray: 100; }
+  .mark-glyph .radar-dot { transform-box: fill-box; transform-origin: center; transition: transform .25s cubic-bezier(.2,1.4,.4,1); }
+  .mark:hover .radar-dot { transform: scale(1.35); }
+  @media (prefers-reduced-motion: no-preference) {
+    .mark-glyph .radar-data { animation: mba-draw 1.1s cubic-bezier(.6,0,.25,1) .2s backwards; }
+    .mark-glyph .radar-dot { animation: mba-pop .4s cubic-bezier(.2,1.6,.4,1) 1.2s backwards; }
+  }
+  @keyframes mba-draw { from { stroke-dashoffset: 100; fill-opacity: 0; } to { stroke-dashoffset: 0; fill-opacity: 1; } }
+  @keyframes mba-pop { from { transform: scale(0); } to { transform: scale(1); } }
+</style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark" role="img" aria-label="MBA — Metric Brand Auditor"><svg class="mark-glyph" viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false"><defs><linearGradient id="mbaGradMk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/></linearGradient></defs><polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/><g fill="none" stroke="#111" opacity=".12" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g><polygon class="radar-data" pathLength="100" points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#mbaGradMk)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/><circle class="radar-dot" cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/></svg><span>MBA<span class="dot">.</span></span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
+  </header>
+
+  <div class="report-meta">Brand Influence Audit · v1 · 2026-07-16</div>
+  <h1 class="brand-title">DeepSeek · 深度求索</h1>
+  <p class="report-subtitle">量化幻方孵化 · 开源高效大模型 · R1 引发全球震动的技术理想主义者</p>
+
+  <div class="panel-badge">🌙 ai-app-cn · 5-Judge Panel</div>
+
+  <div class="panel-note">
+    ⚠ <strong>Panel 说明</strong>：ai-app-cn 5 位评委（杨植麟·王慧文·周鸿祎·傅盛·朱啸虎）全员参与。梁文锋（深度求索创始人）非本 panel 评委；DeepSeek 从未接受外部融资，5 位评委均无利益相关，无 --panel-drop。满分 250。
+  </div>
+
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">8.00</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10</div>
+    </div>
+    <div>
+      <div class="score-label">总分</div>
+      <div class="score-sub">200 / 250</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">有效评委数</div>
+        <div class="score-sub">5 <span class="score-tag">ai-app-cn</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="score-label">最强维度</div>
+      <div class="score-sub" style="color:var(--green);">Origin 8.6</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Leverage 7.0</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      信号强度最猛的一次品牌事件：R1 开源权重引发全球震动。但先进芯片禁运与开源护城河悖论，是理想主义能否穿越周期的核心考验。
+    </div>
+  </div>
+
+  <div class="insight-box">
+    <strong>MBA 断层线信号</strong>
+    本卷分歧几乎全部沿同一条断层线：朱啸虎（VC / 商业化视角）在四个维度都给最低分，周鸿祎（开源 / 国家科技视角）在四个维度都给最高分。这不是对事实的分歧，而是"技术理想主义值多少钱"的估值分歧——DeepSeek 是一次关于"影响力杠杆 vs 商业杠杆"的经典对撞。
+  </div>
+
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Lens</th>
+        <th>杨植麟</th>
+        <th>王慧文</th>
+        <th>周鸿祎</th>
+        <th>傅盛</th>
+        <th>朱啸虎</th>
+        <th>Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td>
+        <td class="cell-hi">9</td>
+        <td class="cell-hi">9</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td>8</td>
+        <td>8.6</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-lo">7</td>
+        <td>8.2</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td>
+        <td>7</td>
+        <td>7</td>
+        <td>8</td>
+        <td>7</td>
+        <td class="cell-lo">6</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td>
+        <td>8</td>
+        <td>8</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-lo">7</td>
+        <td>8.0</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-lo">7</td>
+        <td>8.2</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td>
+        <td>42</td>
+        <td>40</td>
+        <td>44</td>
+        <td>39</td>
+        <td>35</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">周鸿祎（开源视角）总分最高 44，朱啸虎（VC 商业化视角）最低 35——分歧沿"理想主义估值"断层线分布。</p>
+
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 5 评委 × 5 镜头</div>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+    </div>
+  </div>
+
+  <h2>Dissent Heatmap / 异议热力图</h2>
+  <div class="heatmap">
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:60%;width:26%;background:#1a7a4a;">8.6 ★最强</div>
+        <span class="heatmap-range">范围 8–9 · Δ1 · 高度共识</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:55%;width:27%;background:#1a7a4a;">8.2</div>
+        <span class="heatmap-range">范围 7–9 · Δ2</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:40%;width:30%;background:#c1440e;">7.0 ★最弱</div>
+        <span class="heatmap-range">范围 6–8 · Δ2 ★核心分歧</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:55%;width:25%;background:#2c1a4a;">8.0</div>
+        <span class="heatmap-range">范围 7–9 · Δ2</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:55%;width:27%;background:#1a7a4a;">8.2</div>
+        <span class="heatmap-range">范围 7–9 · Δ2</span>
+      </div>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>关键特征</strong>：分歧沿一条清晰断层线分布——朱啸虎（VC）四维最低、周鸿祎（开源国家队）四维最高。Origin 是唯一高度共识维度（8–9），全 panel 一致认可梁文锋从量化转 AGI、好奇心驱动的起源纯度。核心张力在 Leverage：开源生态是杠杆，还是没有商业护城河的隐患？
+    </div>
+  </div>
+
+  <h2>影响力构造 / Influence Map</h2>
+  <div class="flow-diagram">
+    <pre>
+创始叙事（浙大·量化幻方·技术理想主义·好奇心驱动）
+      │
+      ▼
+幻方算力母体（萤火二号~1万张A100·利润输血·从不融资）
+      │
+      ├──→ 开源高效路线（V2价格战"AI界拼多多"→V3→R1开源权重）
+      │           │
+      │           ▼
+      │     R1 全球震动（对标 OpenAI o1·低成本·开源）
+      │     "真正开放的前沿研究"心智占位
+      │
+      └──→ 品牌身份系统
+           DeepSeek·技术理想主义·不炒作
+           本土顶尖年轻人才密度（"只招1%的天才"）
+                  │
+                  ▼
+        全球开发者/研究者采用·开源生态口碑
+        "中国AI之光"国家级叙事·200/250·8.00/10
+                  │
+                  ▼
+         ⚠ 结构约束：先进芯片禁运（梁文锋多次强调核心约束是先进芯片）
+                  │
+                  ▼
+         ⚠ 开源悖论：护城河短暂·商业化路径待验证
+         不to C增长·不融资·靠幻方输血
+    </pre>
+  </div>
+
+  <h2>评委打分卡 / Judge Scorecards</h2>
+  <div class="judge-grid">
+
+    <div class="judge-card">
+      <div class="judge-name">杨植麟</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">月之暗面 Kimi 创始人</div>
+      <div class="judge-total">42</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+      </div>
+      <div class="judge-quote">"早期 Kimi 也想走开源路线没走成，DeepSeek 把它做成了——去雕花、把资源砸在最重要的问题上。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">王慧文</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">美团联合创始人</div>
+      <div class="judge-total">40</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">"影响力杠杆拉满，商业杠杆几乎为零——理想主义要能穿越周期，才算护城河。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">周鸿祎</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">360 创始人</div>
+      <div class="judge-total" style="color:var(--green);">44</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+      </div>
+      <div class="judge-quote">"开源不是拆护城河，是把整个生态变成护城河。DeepSeek 一开源，全世界都在帮它背书。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">傅盛</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">猎豹移动创始人</div>
+      <div class="judge-total">39</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">"全球影响力是最稀缺的资产，但影响力有半衰期——技术信号要落到产品和场景才不会褪色。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">朱啸虎</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">金沙江创投</div>
+      <div class="judge-total" style="color:var(--accent);">35</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最低分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"开源、不融资、靠幻方输血——这是理想，不是可持续的商业模式。商业护城河在哪里？"</div>
+    </div>
+
+  </div>
+
+  <h2>R2 对话：核心分歧 / Dissent Dialogues</h2>
+
+  <h3>开源理想主义能不能变成持久的杠杆？（Leverage 分歧）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">朱啸虎</div>
+      <div class="dialogue-text">"我尊重 R1 的技术，但作为投资人我必须问：你开源了权重，别人免费拿走、蒸馏、二次训练，你的商业护城河在哪里？没有闭源产品、不融资、不做 C 端增长，靠一家量化私募的利润输血——这是理想，不是可持续的商业模式。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">周鸿祎</div>
+      <div class="dialogue-text">"这恰恰是你们投资人算不明白的地方。开源不是把护城河拆了，是把整个生态变成你的护城河。DeepSeek 一开源，全世界的开发者都在帮它改进、传播、背书——这种国家级的技术生态影响力，比任何闭源 API 的订阅收入都值钱。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">王慧文（折中）</div>
+      <div class="dialogue-text">"你们都对一半。周鸿祎说的是'影响力杠杆'，朱啸虎说的是'商业杠杆'，DeepSeek 现在影响力杠杆拉满、商业杠杆几乎为零。它能靠幻方输血撑多久、芯片禁运下算力能不能持续跟上，才是真问题——理想主义要能穿越周期，才算护城河。"</div>
+    </div>
+  </div>
+
+  <h3>一次爆发，还是新范式？（Signal / Category 讨论）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">杨植麟</div>
+      <div class="dialogue-text">"我得诚实说，早期 Kimi 也想走过类似的开源路线，没走成。DeepSeek 把它做成了，而且做得极其干净——这不是运气，是第一性原理 + 算力 + 人才密度的组合。R1 证明了'去雕花、把资源砸在最重要的问题上'是对的。但一次证明不等于永远领先，大模型的代际战争才刚开始。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">傅盛</div>
+      <div class="dialogue-text">"我做出海最大的体会是：全球影响力是最稀缺的资产，DeepSeek 一夜之间拿到了很多公司花十年都拿不到的全球心智。但影响力有半衰期。它现在需要回答一个应用层的问题——除了'让硅谷难安'的技术叙事，普通用户、企业客户为什么持续用 DeepSeek？技术信号要落到产品和场景，才不会随下一个模型发布而褪色。"</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议</h2>
+  <div class="actions">
+    <div class="action-phase">立即执行 · 0–30 天</div>
+
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>把"技术理想主义"沉淀为可复用的品牌资产</strong>
+        梁文锋的开源观、芯片观、人才观已在少数访谈里零散表达，应系统化为持续的技术判断输出（技术报告 + 公开信 + 研究博客）。这类内容在全球技术圈的传播价值远超广告，且能把品牌从"依附创始人个人"升级为"有独立技术世界观的机构"。
+      </div>
+    </div>
+
+    <div class="action-phase">中期执行 · 30–90 天</div>
+
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>回答"能力被追平后靠什么"——建立可持续的模型代际叙事</strong>
+        公开一份务实的算力与研发路线图（不泄露敏感信息前提下），说明在芯片受限下如何保持代际迭代，把"一次爆发"升级为"可持续前沿"叙事，回应 Leverage/Signal 的核心质疑。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>把全球开发者生态制度化</strong>
+        围绕开源权重建立开发者社区、评测榜单、行业落地案例库——把"一次开源事件"变成"持续的生态位"，让开源真正成为周鸿祎所说的"生态即护城河"，而非朱啸虎担心的"免费被拿走"。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>诚实管理数字预期</strong>
+        训练成本/参数等公司自述数字已成舆论焦点，主动、透明地披露方法与口径，避免"低成本神话"被证伪时反噬品牌可信度——诚实是技术理想主义身份最好的护城河。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>建立商业化与理想主义的边界叙事</strong>
+        明确 DeepSeek 的商业化底线与节奏（哪些收费、哪些永久开源），给市场一个清晰的"理想主义如何自我供血"的答案，缓解投资视角对可持续性的疑虑。
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sources">Sources</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://news.bjd.com.cn/2025/01/30/11052844.shtml">京报网《DeepSeek创始人,一个"技术理想主义者"》(2025-01-30)</a></li>
+      <li><a href="https://www.21jingji.com/article/20250219/herald/193a45bc030bc53d6a0675508e95853a.html">21 世纪经济报道《DeepSeek背后的量化投资"信徒"》(2025-02-19)</a></li>
+      <li><a href="https://finance.sina.com.cn/roll/2025-01-26/doc-inehhkse0668392.shtml">新浪财经《只招1%的天才,这家中国公司让硅谷难安》(2025-01-26)</a></li>
+      <li><a href="https://www.36kr.com">暗涌 Waves 对梁文锋的访谈（《疯狂的幻方》/《一千零一夜》,广被转载的一手观点来源）</a></li>
+      <li><a href="https://arxiv.org">DeepSeek-V3 Technical Report(2024-12,梁文锋等)– arXiv</a></li>
+      <li><a href="https://www.deepseek.com">DeepSeek 官方 – deepseek.com</a></li>
+      <li><a href="https://huggingface.co/deepseek-ai">DeepSeek-R1 开源权重发布(2025-01)– DeepSeek / Hugging Face</a></li>
+      <li><a href="https://www.amac.org.cn">幻方量化 / 九章资产 公开资料 – 基金业协会备案</a></li>
+      <li><a href="https://x.com">英伟达研究科学家 Jim Fan 对 R1 的公开评价(2025)</a></li>
+      <li><a href="https://www.reuters.com">DeepSeek R1 引发美股 AI 板块波动报道(2025-01)</a></li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-07-16 的公开资料，包括新闻报道、企业公告、技术报告及公开访谈。DeepSeek、深度求索、幻方量化及相关商标归杭州深度求索人工智能基础技术研究有限公司及杭州幻方（浙江九章资产管理）所有；本报告与其无任何赞助、授权或合作关系。5 位评委（杨植麟、王慧文、周鸿祎、傅盛、朱啸虎）的评分与对话均为 AI 基于其公开发表资料的 in-character 模拟推断，非本人真实意见，不代表其个人或所在机构立场。报告中的训练成本、参数规模、算力、团队规模等多为公司自述或第三方报道，DeepSeek/幻方为非上市主体，数字可能存在偏差，需 live 核验。梁文锋的引用来自公开访谈（暗涌 Waves 等）的转载。本报告不构成投资建议、证券分析或任何形式的商业尽调建议。
+  </div>
+</div>
+
+<script>
+const radarCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radarCtx, {
+  type: 'radar',
+  data: {
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+    datasets: [
+      {
+        label: '杨植麟',
+        data: [9, 9, 7, 8, 9],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 2,
+        pointRadius: 3,
+      },
+      {
+        label: '王慧文',
+        data: [9, 8, 7, 8, 8],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '周鸿祎',
+        data: [9, 9, 8, 9, 9],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.1)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
+      {
+        label: '傅盛',
+        data: [8, 8, 7, 8, 8],
+        borderColor: '#2c1a4a',
+        backgroundColor: 'rgba(44,26,74,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '朱啸虎',
+        data: [8, 7, 6, 7, 7],
+        borderColor: '#d97706',
+        backgroundColor: 'rgba(217,119,6,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4,2],
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 } },
+        pointLabels: { font: { size: 11, weight: '600' } },
+        grid: { color: '#e5e2dc' },
+      }
+    },
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+    }
+  }
+});
+
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Origin', 'Category', 'Signal', 'Identity', 'Leverage'],
+    datasets: [{
+      label: '均值 (Mean)',
+      data: [8.6, 8.2, 8.2, 8.0, 7.0],
+      backgroundColor: ['#1a7a4a', '#1a7a4a', '#1a7a4a', '#2c1a4a', '#c1440e'],
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } },
+      y: { ticks: { font: { size: 11, weight: '600' } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `均值: ${ctx.parsed.x.toFixed(1)} / 10`
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

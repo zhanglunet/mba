@@ -1,0 +1,58 @@
+# founders/deepseek.yaml — DeepSeek 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 梁文锋非 MBA 评委,履历经权威媒体/一手访谈核实(curl 走 $HTTPS_PROXY+CA,坑 #1),每条里程碑带来源。
+# 诚实处理:幻方量化由梁文锋与徐进共同创办,DeepSeek 由梁文锋创办、幻方出资孵化。反捏造:不含编造
+# 引语;relation 为标注的分析。数字(训练成本/参数/规模)多为公司自述,需 live 核验。
+brand: deepseek
+founder:
+  name_cn: 梁文锋
+  name_en: Liang Wenfeng
+  role: 创始人 / CEO(幻方量化联合创始人,合伙人徐进)
+  status: 现任
+  # perspective_slug 留空:梁文锋非 MBA 评委
+career:
+  - period: "1985-2010"
+    milestone: "生于广东湛江吴川;2002 以优异成绩考入浙江大学电子信息工程,后获信息与通信工程硕士(主攻机器视觉)"
+    evidence: "京报网 2025-01-30 news.bjd.com.cn/2025/01/30/11052844;21 世纪经济报道 21jingji.com/article/20250219"
+    lens: [origin]
+  - period: "2015-2016"
+    milestone: "与浙大同学徐进共同创办杭州幻方科技(现浙江九章资产管理),以数学和 AI 做量化投资;2016 上线首个基于深度学习的交易模型"
+    evidence: "21 世纪经济报道 21jingji.com/article/20250219;新浪财经 finance.sina.com.cn/roll/2025-01-26"
+    lens: [origin, leverage]
+  - period: "2019-2021"
+    milestone: "幻方管理规模破百亿(量化'四巨头'之一,一度破千亿);自研萤火一号(1100 GPU、近 2 亿)、萤火二号(约 1 万张英伟达 A100、10 亿),积累算力"
+    evidence: "新浪财经 finance.sina.com.cn/roll/2025-01-26;21 世纪经济报道 21jingji.com/article/20250219"
+    lens: [leverage]
+  - period: "2023"
+    milestone: "2023-05 宣布进军 AGI;2023-07 创办杭州深度求索(DeepSeek),幻方自主出资(一期约 30 亿)孵化,从未接受外部融资"
+    evidence: "京报网 news.bjd.com.cn/2025/01/30/11052844;21 世纪经济报道 21jingji.com/article/20250219"
+    lens: [origin, category]
+  - period: "2024"
+    milestone: "2024-05 发布 MoE 模型 DeepSeek-V2,在全网率先降低模型成本(被称'AI 界拼多多'引发价格战);2024-12-26 发布 DeepSeek-V3 并公开 53 页技术报告"
+    evidence: "21 世纪经济报道 21jingji.com/article/20250219;公开记录"
+    lens: [category, signal]
+  - period: "2025-01"
+    milestone: "1-20 发布推理模型 DeepSeek-R1 正式版并开源模型权重,以低成本/高效/开源引发全球震动(海外惊呼'真正开放的人工智能');团队约 139 人"
+    evidence: "京报网 news.bjd.com.cn/2025/01/30/11052844;新浪财经 finance.sina.com.cn/roll/2025-01-26"
+    lens: [signal, identity]
+relation:
+  origin: >-
+    分析:DeepSeek 的起源与梁文锋'量化(幻方)转 AGI、技术理想主义'的路径高度绑定——
+    幻方十年积累的算力(萤火/A100)、资金与本土 AI 团队是 DeepSeek 的母体与起源锚点。
+  category: >-
+    分析:梁文锋用开源 + 高效 + 低成本重定义大模型竞争(V2 价格战、R1 开源权重),
+    以'真正开放的前沿研究'直接对标并挑战 OpenAI 的闭源路线。
+  leverage: >-
+    分析:幻方自有算力与利润输血 + 本土顶尖年轻人才密度('只招 1% 天才')是 DeepSeek 的核心杠杆;
+    但梁文锋自陈'卡脖子的从来是先进芯片禁运',算力是结构性约束。
+  identity: >-
+    分析:'技术理想主义、好奇心驱动、开源为文化行为、不接受外部融资、不炒作'塑造梁文锋与 DeepSeek 身份。
+    DeepSeek 创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:R1 引发的全球震动、开源权重、低成本自述是可核验的真实信号;但训练成本/参数为公司自述、
+    可持续商业化与算力受限需 live 核验,不把一次爆发当作长期胜局。
+sources:
+  - "京报网 2025-01-30《DeepSeek创始人,一个'技术理想主义者'》 news.bjd.com.cn/2025/01/30/11052844"
+  - "21 世纪经济报道 2025-02-19《DeepSeek背后的量化投资'信徒'》 21jingji.com/article/20250219"
+  - "新浪财经 2025-01-26《只招1%的天才,这家中国公司让硅谷难安》 finance.sina.com.cn/roll/2025-01-26"
+  - "暗涌 Waves 对梁文锋的访谈(广被转载的一手观点来源)"

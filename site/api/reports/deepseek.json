@@ -1,0 +1,19 @@
+{
+  "slug": "deepseek",
+  "brand_cn": "DeepSeek / 深度求索",
+  "brand_en": "DeepSeek",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-07-16",
+  "panel": "ai-app-cn",
+  "score": {
+    "total": 200,
+    "max": 250,
+    "normalized": 8.0
+  },
+  "tl_dr": "中国 AI 浪潮中信号强度最猛的一次品牌事件:2025-01 R1 推理模型开源权重发布,以低成本+高效+ 开源兑现\"真正开放的前沿研究\",引发全球震动。ai-app-cn 5 评委(梁文锋非评委、DeepSeek 无外部 融资故无自冲突)共识:Origin(8.6)领跑——梁文锋\"量化转 AGI、好奇心驱动\"的起源最难复制;最弱 Leverage(7.0)——先进芯片禁运是结构约束,开源让护城河成为悬而未决的命题。分歧沿\"技术理想主义 值多少钱\"断层线分布:周鸿祎(开源国家队)44 最高,朱啸虎(VC 商业化)35 最低。200/250 · 8.00/10。",
+  "html_url": "/reports/deepseek/",
+  "pdf_url": null,
+  "api_url": "/api/reports/deepseek.json",
+  "panel_api_url": "/api/panels/ai-app-cn.json"
+}

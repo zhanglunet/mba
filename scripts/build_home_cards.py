@@ -191,10 +191,18 @@ def render_card(m, pending):
         f'{render_watch_line(slug, pending)}\n'
         f'        <p class="bc-headline">{esc(collapse_ws(m.get("headline", "")))}</p>{versions}\n'
         f'        <div class="bc-links"><a href="/starmap/{slug}.html">品牌私有星图 →</a>'
-        f'<a href="/watch/{slug}/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a>'
+        f'{cockpit_link(slug)}'
         f'{founder_link(slug)}</div>\n'
         f"      </div>"
     )
+
+
+def cockpit_link(slug):
+    """驾驶舱页仅在该品牌有舆情事件时生成(build_watch_cockpit 迭代 watch/*/events.yaml);
+    无事件的新品牌(如首入库尚无舆情流的品牌)不挂,避免 404 死链。"""
+    if os.path.exists(os.path.join(ROOT, "watch", slug, "events.yaml")):
+        return f'<a href="/watch/{slug}/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a>'
+    return ""
 
 
 def founder_link(slug):
