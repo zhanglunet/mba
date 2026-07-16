@@ -199,7 +199,9 @@ def render_founder(slug, data, brand_name):
         xlinks.append(f'<a href="/judge.html?slug={esc(ps)}">评委视角 {esc(name_cn)} →</a>')
     xlinks.append(f'<a href="/reports/{esc(slug)}/">品牌审计报告 →</a>')
     xlinks.append(f'<a href="/starmap/{esc(slug)}.html">品牌知识星图 →</a>')
-    xlinks.append(f'<a href="/watch/{esc(slug)}/cockpit.html">舆情驾驶舱 →</a>')
+    # 驾驶舱页仅在该品牌有舆情事件时生成(build_watch_cockpit);无事件的新品牌不挂死链
+    if os.path.exists(os.path.join(ROOT, "watch", slug, "events.yaml")):
+        xlinks.append(f'<a href="/watch/{esc(slug)}/cockpit.html">舆情驾驶舱 →</a>')
     for stem, partner in dinners_for(slug):
         xlinks.append(f'<a href="/collabs/{esc(stem)}.html">🍽️ 与 {esc(_founder_name(partner))} 共进晚餐 →</a>')
 

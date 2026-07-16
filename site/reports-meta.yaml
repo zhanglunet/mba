@@ -391,3 +391,23 @@ reports:
       点名、商业化收入仍无披露,Leverage 重审后全员持平(6.5);任正非 9 vs 马斯克△ 4 的 Δ5 分歧
       原样保留。总分 165→173(5.50→5.77,↑0.27)。
     has_pdf: false
+
+  - slug: deepseek
+    card_brand: "DeepSeek · 深度求索"
+    card_meta: "ai-app-cn panel · 5 评委（杨植麟·王慧文·周鸿祎·傅盛·朱啸虎）· 雷达图 + 异议热力图 · 无自冲突"
+    headline: "R1 全球震动:信号最猛的一次品牌事件,理想主义能否穿越周期"
+    brand_cn: DeepSeek / 深度求索
+    brand_en: DeepSeek
+    panel: ai-app-cn
+    version: v1
+    audit_date: 2026-07-16
+    score_total: 200
+    score_max: 250
+    score_normalized: 8.00
+    tl_dr: >-
+      中国 AI 浪潮中信号强度最猛的一次品牌事件:2025-01 R1 推理模型开源权重发布,以低成本+高效+
+      开源兑现"真正开放的前沿研究",引发全球震动。ai-app-cn 5 评委(梁文锋非评委、DeepSeek 无外部
+      融资故无自冲突)共识:Origin(8.6)领跑——梁文锋"量化转 AGI、好奇心驱动"的起源最难复制;最弱
+      Leverage(7.0)——先进芯片禁运是结构约束,开源让护城河成为悬而未决的命题。分歧沿"技术理想主义
+      值多少钱"断层线分布:周鸿祎(开源国家队)44 最高,朱啸虎(VC 商业化)35 最低。200/250 · 8.00/10。
+    has_pdf: false
