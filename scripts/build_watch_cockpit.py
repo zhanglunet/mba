@@ -52,6 +52,7 @@ def aggregate(slug, events, brand):
     unconsumed = [e for e in ev if not e.get("consumed_by")]
     p0 = sum(1 for e in unconsumed if e.get("severity") == "P0")
     p1 = sum(1 for e in unconsumed if e.get("severity") == "P1")
+    p2 = sum(1 for e in unconsumed if e.get("severity") == "P2")
     pos = sum(1 for e in ev if _norm_dir(e.get("direction")) == "pos")
     neg = sum(1 for e in ev if _norm_dir(e.get("direction")) == "neg")
     invest = [e for e in ev if e.get("source_type") == "investor_community" or e.get("dim") == "W5"]
@@ -73,9 +74,10 @@ def aggregate(slug, events, brand):
             "persons": e.get("related_persons") or [], "action": e.get("suggested_action", "") or "",
             "consumed": e.get("consumed_by", "") or "",
         })
+    hit = (p0 >= 1) or (p1 >= 3) or (4 * p0 + 2 * p1 + 0.5 * p2 >= 6)  # 与首页「建议重审」同口径
     return {
         "slug": slug, "brand": brand, "total": len(ev),
-        "p0": p0, "p1": p1, "pos": pos, "neg": neg, "n_invest": len(invest),
+        "p0": p0, "p1": p1, "p2": p2, "hit": hit, "pos": pos, "neg": neg, "n_invest": len(invest),
         "by_month": by_month, "dim_dir": dim_dir, "by_source": by_source, "rows": rows,
     }
 
@@ -243,7 +245,7 @@ TEMPLATE = r"""<!doctype html>
     <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/starmap.html">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
   </header>
 
-  <p class="crumb"><a href="/watch/__SLUG__/">← __BRAND__ 舆情时间线</a>　/　<a href="/watch/">舆情总览</a>　/　<a href="/reports/__SLUG__/">审计报告</a></p>
+  <p class="crumb"><a href="/watch/__SLUG__/">← __BRAND__ 舆情时间线</a>　/　<a href="/watch/cockpit.html">全站驾驶舱</a>　/　<a href="/watch/">舆情总览</a>　/　<a href="/reports/__SLUG__/">审计报告</a></p>
   <h1>__BRAND__<span class="sub">舆情驾驶舱</span></h1>
 
   <h2>管理层摘要</h2>
@@ -306,11 +308,166 @@ TEMPLATE = r"""<!doctype html>
 """
 
 
+# ── 全站聚合驾驶舱 ────────────────────────────────────────────────────────────
+def aggregate_all(brand_ds):
+    dim_dir = collections.defaultdict(lambda: collections.Counter())
+    by_source, by_month = collections.Counter(), collections.Counter()
+    rows, total = [], 0
+    p0 = p1 = pos = neg = ninv = 0
+    for d in brand_ds:
+        total += d["total"]; p0 += d["p0"]; p1 += d["p1"]
+        pos += d["pos"]; neg += d["neg"]; ninv += d["n_invest"]
+        for k, c in d["by_source"].items():
+            by_source[k] += c
+        for dim, cc in d["dim_dir"].items():
+            for k, v in cc.items():
+                dim_dir[dim][k] += v
+        for m, c in d["by_month"].items():
+            by_month[m] += c
+        for r in d["rows"]:
+            rr = dict(r); rr["brand"] = d["brand"]; rr["slug"] = d["slug"]
+            rows.append(rr)
+    rows.sort(key=lambda r: r["date"], reverse=True)
+    brands = sorted(brand_ds, key=lambda d: (not d["hit"], -d["total"]))
+    return {"n_brands": len(brand_ds), "total": total, "p0": p0, "p1": p1, "pos": pos,
+            "neg": neg, "n_invest": ninv, "n_hit": sum(1 for d in brand_ds if d["hit"]),
+            "dim_dir": dim_dir, "by_source": by_source, "rows": rows, "brands": brands}
+
+
+def render_agg(a):
+    head = TEMPLATE.split("</head>", 1)[0].replace("__BRAND__", "全站") + "</head>"
+    posneg = a["pos"] + a["neg"]
+    pos_pct = f"{round(100 * a['pos'] / posneg)}%" if posneg else "—"
+
+    # 各品牌信号强度表
+    strength = []
+    for d in a["brands"]:
+        st = ("<span class='chip' style='background:#b3241f'>建议重审</span>" if d["hit"]
+              else "<span style='color:var(--muted)'>正常</span>")
+        strength.append(
+            f"<tr><td><a href='/watch/{esc(d['slug'])}/cockpit.html'>{esc(d['brand'])}</a></td>"
+            f"<td class='nowrap'>{d['total']}</td><td class='nowrap'>{d['p0']}</td>"
+            f"<td class='nowrap'>{d['p1']}</td><td>{st}</td>"
+            f"<td class='nowrap'><a href='/watch/{esc(d['slug'])}/'>时间线</a></td></tr>")
+
+    # 全量表(带品牌列)
+    trs = []
+    for r in a["rows"]:
+        who = f"<span class='who'>{esc('、'.join(r['persons']))}</span>" if r["persons"] else ""
+        title_cell = (f"<a href='{esc(r['url'])}' target='_blank' rel='nofollow noopener'>{esc(r['title'])}</a>"
+                      if r["url"] else esc(r["title"]))
+        act = f"<div class='act'>建议:{esc(r['action'])}</div>" if r["action"] else ""
+        cons = f"<span class='consumed'>已消费 {esc(r['consumed'])}</span>" if r["consumed"] else ""
+        trs.append(
+            f"<tr data-brand='{esc(r['slug'])}' data-dim='{esc(r['dim'])}' data-sev='{esc(r['severity'])}'"
+            f" data-dir='{esc(r['direction'])}' data-src='{esc(r['source'])}'>"
+            f"<td class='nowrap'><a href='/watch/{esc(r['slug'])}/cockpit.html'>{esc(r['brand'])}</a></td>"
+            f"<td class='nowrap'>{esc(r['date'])}</td>"
+            f"<td><span class='chip' style='background:{SEV_COLOR.get(r['severity'], '#999')}'>{esc(r['severity'])}</span></td>"
+            f"<td class='nowrap'>{esc(r['dim'])} {esc(WDIM.get(r['dim'], ''))}</td>"
+            f"<td style='color:{DIR_COLOR[r['direction']]}'>{DIR_CN[r['direction']]}</td>"
+            f"<td>{esc(SRC_CN.get(r['source'], r['source']))}</td>"
+            f"<td>{title_cell} {who} {cons}{act}</td></tr>")
+
+    brand_opts = "".join(f"<option value='{esc(d['slug'])}'>{esc(d['brand'])}</option>" for d in a["brands"])
+    dim_opts = "".join(f"<option value='{k}'>{k} {esc(v)}</option>" for k, v in WDIM.items())
+    src_opts = "".join(f"<option value='{k}'>{esc(vn)}</option>" for k, vn in SRC_CN.items() if k)
+
+    return (head + AGG_BODY
+            .replace("__NB__", str(a["n_brands"])).replace("__TOTAL__", str(a["total"]))
+            .replace("__P0__", str(a["p0"])).replace("__P1__", str(a["p1"]))
+            .replace("__NHIT__", str(a["n_hit"])).replace("__NINV__", str(a["n_invest"]))
+            .replace("__POSPCT__", pos_pct)
+            .replace("__STRENGTH__", "\n".join(strength))
+            .replace("__CHART_DIM__", bars_dim(a["dim_dir"])).replace("__CHART_SRC__", bars_source(a["by_source"]))
+            .replace("__LEGEND__", legend())
+            .replace("__BRAND_OPTS__", brand_opts).replace("__DIM_OPTS__", dim_opts).replace("__SRC_OPTS__", src_opts)
+            .replace("__ROWS__", "\n".join(trs)))
+
+
+AGG_BODY = r"""
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="/" aria-label="MBA"><span>MBA<span class="dot">.</span></span></a>
+    <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/starmap.html">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
+  </header>
+
+  <p class="crumb"><a href="/watch/">← 舆情总览</a>　/　全站舆情驾驶舱</p>
+  <h1>全站舆情驾驶舱<span class="sub">所有品牌的舆情信号</span></h1>
+
+  <h2>全站摘要</h2>
+  <div class="kpis">
+    <div class="kpi"><div class="l">监控品牌</div><div class="v">__NB__</div><div class="s">有事件流的品牌</div></div>
+    <div class="kpi"><div class="l">总事件</div><div class="v">__TOTAL__</div><div class="s">可溯源信号</div></div>
+    <div class="kpi"><div class="l">未消费 P0</div><div class="v warn">__P0__</div><div class="s">全站待审计</div></div>
+    <div class="kpi"><div class="l">未消费 P1</div><div class="v warn">__P1__</div><div class="s">全站待审计</div></div>
+    <div class="kpi"><div class="l">建议重审</div><div class="v warn">__NHIT__</div><div class="s">亮灯品牌数</div></div>
+    <div class="kpi"><div class="l">投资社区</div><div class="v">__NINV__</div><div class="s">投资社区 / 资本市场</div></div>
+  </div>
+
+  <h2>各品牌信号强度</h2>
+  <div class="tablewrap">
+    <table><thead><tr><th>品牌</th><th>事件</th><th>未消费 P0</th><th>未消费 P1</th><th>状态</th><th>时间线</th></tr></thead>
+    <tbody>__STRENGTH__</tbody></table>
+  </div>
+
+  <h2>全站风险主题归因(维度 × 方向)</h2>
+  <div class="panelbox">__CHART_DIM__<div class="lgs">__LEGEND__</div></div>
+
+  <h2 style="margin-top:22px">来源类型分布</h2>
+  <div class="panelbox">__CHART_SRC__</div>
+
+  <h2>全站信息表</h2>
+  <div class="filters">
+    <select id="f-brand"><option value="">全部品牌</option>__BRAND_OPTS__</select>
+    <select id="f-dim"><option value="">全部维度</option>__DIM_OPTS__</select>
+    <select id="f-sev"><option value="">全部等级</option><option>P0</option><option>P1</option><option>P2</option><option>P3</option></select>
+    <select id="f-dir"><option value="">全部方向</option><option value="pos">利好</option><option value="neg">利空</option><option value="neutral">中性</option><option value="mixed">分歧</option></select>
+    <select id="f-src"><option value="">全部来源</option>__SRC_OPTS__</select>
+    <input id="f-q" type="search" placeholder="搜索标题/人物…" />
+    <button id="f-reset" style="cursor:pointer;font:inherit;font-size:12.5px;padding:5px 9px;border:1px solid var(--hair);border-radius:6px;background:#fff">重置</button>
+  </div>
+  <div class="tablewrap">
+    <table id="tbl"><thead><tr><th>品牌</th><th>日期</th><th>等级</th><th>维度</th><th>方向</th><th>来源</th><th>标题 / 关联人物 / 建议</th></tr></thead>
+    <tbody>__ROWS__</tbody></table>
+  </div>
+  <p class="disclaim">舆情信号只提示、不改评分;方向/等级为模型判断,重审时可被评委推翻。引用为源站逐字标题/摘句,点标题核验原文。</p>
+
+  <footer>
+    <span>MBA · 全站舆情驾驶舱 · 数据源:watch/*/events.yaml</span>
+    <span><a href="/watch/">舆情总览</a> · <a href="/">品牌监控</a></span>
+  </footer>
+</div>
+<script>
+(function(){
+  var q=function(id){return document.getElementById(id);};
+  var rows=[].slice.call(document.querySelectorAll('#tbl tbody tr'));
+  var fb=q('f-brand'),fd=q('f-dim'),fs=q('f-sev'),fr=q('f-dir'),fc=q('f-src'),fq=q('f-q');
+  function apply(){
+    var br=fb.value,dim=fd.value,sev=fs.value,dir=fr.value,src=fc.value,kw=fq.value.trim().toLowerCase();
+    rows.forEach(function(tr){
+      var ok=(!br||tr.dataset.brand===br)&&(!dim||tr.dataset.dim===dim)&&(!sev||tr.dataset.sev===sev)
+           &&(!dir||tr.dataset.dir===dir)&&(!src||tr.dataset.src===src)&&(!kw||tr.textContent.toLowerCase().indexOf(kw)>=0);
+      tr.style.display=ok?'':'none';
+    });
+  }
+  [fb,fd,fs,fr,fc].forEach(function(el){el.addEventListener('change',apply);});
+  fq.addEventListener('input',apply);
+  q('f-reset').addEventListener('click',function(){fb.value=fd.value=fs.value=fr.value=fc.value='';fq.value='';apply();});
+})();
+</script>
+</body>
+</html>
+"""
+
+
 def main(argv):
     meta = yaml.safe_load(open(META, encoding="utf-8")) or {}
     names = {r["slug"]: r.get("card_brand", r["slug"]) for r in (meta.get("reports") or [])}
     only = [a for a in argv if not a.startswith("-")]
     built = 0
+    brand_ds = []
     for path in sorted(glob.glob(str(WATCH_DIR / "*" / "events.yaml"))):
         slug = os.path.basename(os.path.dirname(path))
         if only and slug not in only:
@@ -319,11 +476,18 @@ def main(argv):
         if not events:
             continue
         d = aggregate(slug, events, names.get(slug, slug))
+        brand_ds.append(d)
         outdir = OUT_DIR / slug
         outdir.mkdir(parents=True, exist_ok=True)
         (outdir / "cockpit.html").write_text(render(d), encoding="utf-8")
         print(f"[watch-cockpit] site/watch/{slug}/cockpit.html ({d['total']} events)")
         built += 1
+    # 全站聚合驾驶舱(不受 only 过滤影响时才有意义:only 未指定时才写)
+    if brand_ds and not only:
+        agg = aggregate_all(brand_ds)
+        OUT_DIR.mkdir(parents=True, exist_ok=True)
+        (OUT_DIR / "cockpit.html").write_text(render_agg(agg), encoding="utf-8")
+        print(f"[watch-cockpit] site/watch/cockpit.html — 全站 {agg['n_brands']} 品牌 / {agg['total']} events / {agg['n_hit']} 亮灯")
     print(f"[watch-cockpit] done — {built} cockpit page(s)")
     return 0
 
