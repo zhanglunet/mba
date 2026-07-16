@@ -1,5 +1,5 @@
 {
-  "count": 85,
+  "count": 86,
   "items": [
     {
       "type": "report",
@@ -144,6 +144,14 @@
       "text": "MBA 迄今 Identity(身份系统)维度最高分(9.6):极简设计、Think Different、Jony Ive 美学与乔布斯 \"美是产品本质\"图腾构成地表最一致的品牌身份。加上\"车库创业→被自己公司逐出→特洛伊木马式归来\"的 传奇起源与个人电脑/GUI/音乐/手机/平板的连续品类创造史,几乎无法复制。vc-en 5 评委(乔布斯是评委 但不在本 panel,无自冲突)共识:Identity(9.6)领跑、Origin/Leverage(各 9.0)紧随;唯一实质分歧在 Signal(7.8)——纳瓦尔\"品牌是穿越周期的杠杆\"9 vs 安德森/蒂尔\"AI 落后动摇创新 durability\"7。 与 NVIDIA 峰值在 Leverage 不同,Apple 峰值在 Identity。221/250 · 8.84/10(MBA 第二高)。",
       "url": "/reports/apple/",
       "api_url": "/api/reports/apple.json"
+    },
+    {
+      "type": "report",
+      "slug": "google",
+      "title": "Google / 谷歌 · v1",
+      "text": "Category(品类定义)维度领跑级(9.2):定义现代网络搜索 + 发明搜索广告商业模式,并以 2017 年 Transformer 论文成为生成式 AI 的技术基石;蒂尔更把 Google 当\"创造性垄断\"的教科书范式。从斯坦福 宿舍 BackRub、门洛帕克车库到\"organize the world's information\"的使命是硅谷经典起源。vc-en 5 评委 (佩奇非评委,无自冲突)共识:Category(9.2)领跑、Leverage(8.8)紧随;全卷最低、也最一致谨慎的是 Signal(7.6)——2024 搜索反垄断败诉 + \"发明了 Transformer 却被 OpenAI 的 ChatGPT 抢先\"的创新者 窘境。211/250 · 8.44/10(vc-en 高分梯队)。",
+      "url": "/reports/google/",
+      "api_url": "/api/reports/google.json"
     },
     {
       "type": "panel",

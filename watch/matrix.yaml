@@ -29,3 +29,4 @@ brands:
   deepseek:      {W1: core, W2: core, W3: off, W4: on,   W5: on,   W6: core, W7: on,   W8: core, W9: core}
   nvidia:        {W1: core, W2: core, W3: off, W4: core, W5: core, W6: on,   W7: on,   W8: core, W9: core}
   apple:         {W1: core, W2: core, W3: off, W4: core, W5: core, W6: core, W7: on,   W8: core, W9: core}
+  google:        {W1: core, W2: core, W3: off, W4: core, W5: core, W6: on,   W7: on,   W8: core, W9: core}
