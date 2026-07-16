@@ -32,7 +32,11 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 **网站 [mbabrand.com](https://mbabrand.com)**
 
-![mbabrand.com 首页](docs/screenshots/site-home.png)
+![mbabrand.com 首页 —— 22 品牌 · 产业筛选 · 创始人维度 · 舆情信号](docs/screenshots/site-home.png)
+
+**创始人晚餐 [Founder Dinners](https://mbabrand.com/collabs/)** —— 把两位创始人放一桌,按 5 镜头假想推演品牌×品牌合作机会(AI 演绎 · 非真实合作 · 诚实盒并列合作张力)
+
+![创始人晚餐 · 亮点 —— 梁文锋 × 黄仁勋「芯片与模型」](docs/screenshots/founder-dinner.png)
 
 **评估方法论 [How it works](https://mbabrand.com/how-it-works.html)** —— 信息源 → 7 维度 × 5 镜头 → N 评委独立打分 → 异议聚合 → 版本化报告
 
@@ -42,9 +46,9 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 ![MBA · Metric Brand Auditor — 项目介绍封面](docs/screenshots/presentation.png)
 
-**已发布报告（15 品牌 · 25 版本）[mbabrand.com](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
+**已发布报告（22 品牌 + 22 创始人 + 6 产业 + 2 场创始人晚餐）[mbabrand.com](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
 
-**当前榜首**:SpaceX **8.76**(vc-en · v2,史上最大 IPO 补上公开市场验证)· Hermès 8.64(luxury-en)· DJI 7.44(cross-border)。实时榜单、全部 15 品牌 25 个版本、舆情信号与版本轨迹见 [mbabrand.com](https://mbabrand.com)(本表不再静态维护,以免与站点漂移)。
+**当前榜首**:NVIDIA **8.88**(vc-en,发明 GPU 品类 + 最深护城河)· Apple 8.84(vc-en,Identity 9.6 全场最高)· SpaceX 8.76(vc-en)· Amazon 8.72 · Microsoft 8.65(首次 --panel-drop)。实时榜单、全部 22 品牌、创始人/晚餐/产业、舆情信号与版本轨迹见 [mbabrand.com](https://mbabrand.com)(本表不再静态维护,以免与站点漂移)。
 
 **黑客松 5 分钟 Pitch 稿** · [Markdown](docs/hackathon/pitch-5min.md) · [HTML](docs/hackathon/pitch-5min.html)
 
@@ -544,7 +548,7 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 
 - 想读流水线的人 → `metric-brand-auditor/SKILL.md`(主手册,~1000 行)
 - 想要系统化的设计 / 使用 / 扩展文档 → [`docs/`](docs/)(01-prd → 08-extending,索引见 `docs/README.md`)
-- 想看已发布的报告 → [`mbabrand.com`](https://mbabrand.com)(15 品牌 25 版本,含 SpaceX / OpenAI / 智谱 / Hermès / 美团等)或直接看 [`published/reports/`](published/reports/)
+- 想看已发布的报告 → [`mbabrand.com`](https://mbabrand.com)(22 品牌,含 NVIDIA / Apple / Google / Microsoft / Amazon / Huawei / SpaceX / OpenAI / 智谱 等)或直接看 [`published/reports/`](published/reports/)
 - 想加一个新维度 → `metric-brand-auditor/references/dimensions.md`
 - 想改评委的打分模板 → `metric-brand-auditor/references/judge-prompt-template.md`
 - 想换 HTML 报告的图表样式 → `metric-brand-auditor/references/html-report-template.md`
@@ -558,7 +562,7 @@ python3 scripts/wuying/open.py    # 创建会话并打印 SESSION_ID + RESOURCE_
 ## 许可与边界
 
 - Production 人物视角 skill 都基于**公开一手资料**(访谈、文章、播客 transcript),每套 SKILL.md 顶部有明确的 anti-fabrication 红线 + self-conflict 规则 —— 不替本人编造未公开内容;评委评自己强关联的公司 / 产品时默认 `--panel-drop`,保留则只作"创始人自检"不计入中立横评。
-- 运行时报告目录 `metric-brand-auditor/reports/` 默认在 `.gitignore`,跑完的报告归用户所有、不入版本库,需自行管理隐私。仅 `published/reports/<brand>/` 下经人工 review、显式 `git add -f` 的报告会公开(当前已发布 13 个品牌,见 `site/published-reports.txt`)。
+- 运行时报告目录 `metric-brand-auditor/reports/` 默认在 `.gitignore`,跑完的报告归用户所有、不入版本库,需自行管理隐私。仅 `published/reports/<brand>/` 下经人工 review、显式 `git add -f` 的报告会公开(当前已发布 22 个品牌,见 `site/published-reports.txt`)。
 
 ---
 
