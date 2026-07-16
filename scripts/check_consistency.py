@@ -156,6 +156,27 @@ def check_founders():
     lines = [x for x in (r.stderr or r.stdout or "").strip().splitlines() if x.strip()]
     return False, "创始人档案违规 —— " + (lines[-1] if lines else "跑 validate_founders.py")
 
+def check_collabs():
+    """创始人晚餐(collabs/*.yaml)跨源自洽:双方均有创始人档案、镜头合法、诚实盒在位。
+    委托 validate_collabs.py(单一真源逻辑)。collabs/ 不存在 = 功能未启用,通过。"""
+    cdir = os.path.join(ROOT, "collabs")
+    if not os.path.isdir(cdir) or not glob.glob(os.path.join(cdir, "*.yaml")):
+        return True, "collabs/ 未启用(跳过)"
+    script = os.path.join(ROOT, "scripts", "collab-tools", "validate_collabs.py")
+    if not os.path.exists(script):
+        return True, "validate_collabs.py 不存在(跳过)"
+    try:
+        r = subprocess.run([sys.executable, script], capture_output=True, text=True, cwd=ROOT)
+    except Exception as e:
+        return True, f"无法运行 validate_collabs(跳过):{e}"
+    if r.returncode == 2:
+        return True, "validate_collabs 依赖缺失(跳过)"
+    n = len(glob.glob(os.path.join(cdir, "*.yaml")))
+    if r.returncode == 0:
+        return True, f"创始人晚餐自洽({n} 场,双方均有创始人档案 · 诚实盒在位)"
+    lines = [x for x in (r.stderr or r.stdout or "").strip().splitlines() if x.strip()]
+    return False, "创始人晚餐违规 —— " + (lines[-1] if lines else "跑 validate_collabs.py")
+
 CHECKS = [
     ("版本对齐", check_version_alignment),
     ("docs 索引完整", check_docs_index),
@@ -165,6 +186,7 @@ CHECKS = [
     ("首页卡片对齐", check_home_cards),
     ("panorama 名单", check_panorama_roster),
     ("创始人维度", check_founders),
+    ("创始人晚餐", check_collabs),
 ]
 
 def main():

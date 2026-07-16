@@ -1,0 +1,299 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+build_collab_dinners.py — 从 collabs/<a>--<b>.yaml 生成「创始人晚餐(品牌×品牌合作推演)」页
+site/collabs/<a>--<b>.html + 索引/组合器 site/collabs/index.html。
+
+概念:把两个品牌的创始人放到一张饭桌上,按 5 镜头逐"道菜"聊潜在合作。**⚠️ 假想对谈**:
+双方发言均为 **AI 演绎**其公开记录在案的立场(与 MBA「人物评委 = AI 模拟真人视角」同源),
+**非本人真实发言、非双方证实的真实合作**;合作点为基于两品牌真实属性的**假想推演**。
+页面硬编码醒目 disclaimer 横幅 + 诚实盒(tensions)。
+
+- 部署产物:site/build.sh 构建时调用;site/collabs/ 已 gitignore(同 founders/watch/starmap)。
+- 复用 build_founder_pages 的 house-style 骨架(STYLE/MARK/FAVICON/5 镜头色/esc)。
+
+用法:python3 scripts/build_collab_dinners.py                     → 生成全部
+      python3 scripts/build_collab_dinners.py asiainfo--zhipu    → 只生成指定 stem
+"""
+import glob
+import os
+import sys
+
+try:
+    import yaml
+except ImportError:
+    print("build_collab_dinners: 需要 PyYAML", file=sys.stderr)
+    sys.exit(2)
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_founder_pages import STYLE, MARK, FAVICON, LENSES, LENS_CN, LENS_COLOR, esc  # noqa: E402
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+COLLABS_DIR = os.path.join(ROOT, "collabs")
+FOUNDERS_DIR = os.path.join(ROOT, "founders")
+OUT_DIR = os.path.join(ROOT, "site", "collabs")
+META = os.path.join(ROOT, "site", "reports-meta.yaml")
+
+LENS_ORDER = [lid for lid, _, _ in LENSES]
+
+# 晚餐专属 CSS(叠加在共享 STYLE 之上)
+COLLAB_CSS = """
+  .disclaimer { background:#fbeee6; border:1px solid #e6b89c; border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px; margin:0 0 20px; font-size:12.5px; color:#7a3b1e; line-height:1.55; }
+  .scene { font-size:14px; color:#33302b; background:var(--card); border:1px solid var(--hair);
+    border-radius:6px; padding:12px 15px; margin:0 0 26px; font-style:italic; }
+  .course { margin:0 0 26px; }
+  .course h2 { display:flex; align-items:center; gap:8px; }
+  .course h2 .ldot { width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .turns { display:flex; flex-direction:column; gap:10px; margin:0 0 12px; }
+  .bubble { max-width:82%; border:1px solid var(--hair); border-radius:12px; padding:10px 14px; background:var(--card); }
+  .bubble.a { align-self:flex-start; border-top-left-radius:3px; }
+  .bubble.b { align-self:flex-end; border-top-right-radius:3px; background:#f6f3ec; }
+  .bubble .who { font-size:12px; font-weight:800; margin-bottom:3px; }
+  .bubble .who .brand { font-weight:600; color:var(--muted); margin-left:6px; font-size:11px; }
+  .bubble .say { font-size:13.5px; line-height:1.6; color:#26231f; }
+  .idea { border-left:3px solid var(--up); background:#eef6f0; border-radius:6px; padding:9px 13px; font-size:13px; }
+  .idea b { color:var(--up); }
+  .box { border:1px solid var(--hair); border-radius:6px; padding:13px 16px; margin:0 0 16px; }
+  .box.take { border-left:3px solid var(--up); background:#eef6f0; }
+  .box.tension { border-left:3px solid var(--accent); background:#fbeee6; }
+  .box h2 { margin:0 0 8px; border:none; padding:0; }
+  .box ul { margin:0; padding-left:20px; } .box li { font-size:13.5px; margin:0 0 6px; line-height:1.55; }
+  .pair-head { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin:0 0 4px; }
+  .pair-head .vs { font-size:20px; color:var(--muted); font-weight:300; }
+  .who-chip { font-size:13px; }
+  .who-chip b { font-size:16px; }
+  .who-chip .r { color:var(--muted); font-size:11.5px; }
+  /* 组合器 */
+  .picker { display:flex; gap:10px; align-items:center; flex-wrap:wrap; background:var(--card);
+    border:1px solid var(--hair); border-radius:8px; padding:14px 16px; margin:0 0 22px; }
+  .picker select { font:inherit; font-size:13.5px; padding:6px 10px; border:1px solid var(--hair); border-radius:6px; background:#fff; }
+  .picker .vs { color:var(--muted); }
+  .picker #go { font:inherit; font-weight:700; font-size:13.5px; padding:6px 14px; border-radius:6px;
+    border:1px solid var(--accent); background:var(--accent); color:#fff; text-decoration:none; cursor:pointer; }
+  .picker #go.disabled { background:#fff; color:var(--muted); border-color:var(--hair); cursor:default; }
+  .picker #hint { font-size:12.5px; color:var(--muted); }
+  .dgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; }
+  .dcard { display:block; background:var(--card); border:1px solid var(--hair); border-radius:6px;
+    padding:14px 16px; text-decoration:none; color:var(--ink); }
+  .dcard:hover { border-color:var(--accent); }
+  .dcard .t { font-size:14.5px; font-weight:800; line-height:1.35; }
+  .dcard .p { font-size:12.5px; color:var(--muted); margin-top:5px; }
+"""
+
+DISCLAIMER = ("🍽️ <b>假想晚餐</b> · 双方发言为 <b>AI 演绎</b>其公开记录在案的立场"
+              "(与 MBA「人物评委」同一机制)· <b>非本人真实发言</b> · "
+              "<b>非双方证实的真实合作</b> · 合作点为基于两品牌真实属性的假想推演,仅作调研启发。")
+
+
+def load_yaml(path):
+    return yaml.safe_load(open(path, encoding="utf-8")) or {}
+
+
+def founder_info(slug):
+    """返回 (name_cn, role)。缺文件时回落 slug。"""
+    p = os.path.join(FOUNDERS_DIR, f"{slug}.yaml")
+    if not os.path.exists(p):
+        return slug, ""
+    f = (load_yaml(p).get("founder") or {})
+    return f.get("name_cn", slug), f.get("role", "")
+
+
+def brand_names():
+    out = {}
+    for r in (load_yaml(META).get("reports") or []):
+        out[r["slug"]] = r.get("brand_cn") or r.get("card_brand") or r["slug"]
+    return out
+
+
+def shell(title, desc, nav_html, body):
+    return f"""<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(desc)}" />
+<style>{STYLE}{COLLAB_CSS}</style>
+{FAVICON}
+</head>
+<body>
+<div class="wrap">
+  <header>
+    {MARK}
+    <nav>{nav_html}</nav>
+  </header>
+{body}
+  <footer>
+    创始人晚餐是<strong>假想推演</strong>:双方发言为 AI 演绎其公开立场(非本人真实发言),合作点为
+    基于两品牌真实属性的假想机会(非双方证实的真实合作),诚实盒同时列出合作张力。<strong>只作调研启发,不改评分</strong>。
+    © 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai" style="color:var(--ink);">marsdata.ai</a>
+  </footer>
+</div>
+</body>
+</html>
+"""
+
+
+def render_dinner(stem, data, names):
+    a, b = data["brands"]                       # 已按字母序(校验器保证 stem==canonical)
+    an, ar = founder_info(a)
+    bn, br = founder_info(b)
+    abn = {a: (an, names.get(a, a)), b: (bn, names.get(b, b))}
+
+    courses = sorted(data.get("courses") or [],
+                     key=lambda c: LENS_ORDER.index(c["lens"]) if c.get("lens") in LENS_ORDER else 99)
+    course_html = []
+    for c in courses:
+        lid = c.get("lens")
+        color = LENS_COLOR.get(lid, "#8a857c")
+        bubbles = []
+        for t in (c.get("exchange") or []):
+            who = t.get("who")
+            side = "a" if who == a else "b"
+            nm, brand = abn.get(who, (who, who))
+            bubbles.append(
+                f'<div class="bubble {side}"><div class="who">{esc(nm)}'
+                f'<span class="brand">{esc(brand)}</span></div>'
+                f'<div class="say">{esc(t.get("say"))}</div></div>')
+        course_html.append(f"""  <div class="course">
+    <h2><span class="ldot" style="background:{color}"></span>{esc(LENS_CN.get(lid, lid))}</h2>
+    <div class="turns">
+      {"".join(bubbles)}
+    </div>
+    <div class="idea"><b>合作点(假想):</b> {esc(c.get("idea"))}</div>
+  </div>""")
+
+    takeaways = "".join(f"<li>{esc(x)}</li>" for x in (data.get("takeaways") or []))
+    tensions = "".join(f"<li>{esc(x)}</li>" for x in (data.get("tensions") or []))
+    sources = "".join(f"<li>{esc(x)}</li>" for x in (data.get("sources") or []))
+
+    def xlinks(slug, nm, brand):
+        return (f'<a href="/founders/{esc(slug)}.html">{esc(nm)} 创始人页 →</a>'
+                f'<a href="/reports/{esc(slug)}/" style="margin-left:14px">{esc(brand)} 报告 →</a>')
+
+    body = f"""
+  <p class="disclaimer">{DISCLAIMER}</p>
+  <div class="pair-head">
+    <span class="who-chip"><b>{esc(an)}</b><br><span class="r">{esc(names.get(a, a))} · {esc(ar)}</span></span>
+    <span class="vs">×</span>
+    <span class="who-chip"><b>{esc(bn)}</b><br><span class="r">{esc(names.get(b, b))} · {esc(br)}</span></span>
+  </div>
+  <h1 style="margin-top:8px">{esc(data.get("title"))}</h1>
+  <p class="scene">{esc(data.get("scene"))}</p>
+
+{"".join(course_html)}
+
+  <div class="box take"><h2>假想合作备忘</h2><ul>{takeaways}</ul></div>
+  <div class="box tension"><h2>合作张力(诚实盒)</h2><ul>{tensions}</ul></div>
+
+  <div class="xlinks" style="margin-top:6px">{xlinks(a, an, names.get(a, a))}</div>
+  <div class="xlinks" style="margin-top:4px">{xlinks(b, bn, names.get(b, b))}</div>
+
+  <h2>数据来源(可复盘)</h2>
+  <ul class="sources">{sources}</ul>
+"""
+    nav = ('<a href="/">品牌监控</a>'
+           '<a href="/founders/">创始人</a>'
+           '<a href="/collabs/" aria-current="page">创始人晚餐</a>'
+           '<a href="/watch/">舆情信号</a>'
+           '<a href="/panorama.html">评委全景</a>')
+    title = f"{an} × {bn} · 创始人晚餐 · MBA"
+    desc = f"{an}（{names.get(a, a)}）× {bn}（{names.get(b, b)}）的假想晚餐:按 5 镜头推演潜在合作(AI 演绎·非真实合作)。"
+    return shell(title, desc, nav, body)
+
+
+def render_index(built, names):
+    """built: [(stem, [a,b], title)]。索引 + 组合器。"""
+    import json
+    # 组合器需要的创始人清单(有 founders/*.yaml 的品牌)
+    founders = []
+    for p in sorted(glob.glob(os.path.join(FOUNDERS_DIR, "*.yaml"))):
+        slug = os.path.splitext(os.path.basename(p))[0]
+        nm, _ = founder_info(slug)
+        founders.append({"slug": slug, "name": nm, "brand": names.get(slug, slug)})
+    built_stems = [s for s, _, _ in built]
+
+    opts = "".join(f'<option value="{esc(f["slug"])}">{esc(f["name"])}（{esc(f["brand"])}）</option>'
+                   for f in founders)
+    cards = "".join(
+        f'<a class="dcard" href="/collabs/{esc(stem)}.html"><div class="t">{esc(title)}</div>'
+        f'<div class="p">{esc(founder_info(br[0])[0])} × {esc(founder_info(br[1])[0])}</div></a>'
+        for stem, br, title in built)
+
+    data_json = json.dumps({"built": built_stems, "founders": founders}, ensure_ascii=False)
+    body = f"""
+  <h1>创始人晚餐 · Founder Dinners</h1>
+  <p class="lede">把两个品牌的创始人放到一张饭桌上,按 5 镜头逐"道菜"聊潜在合作。
+    <strong>假想推演</strong>:发言为 AI 演绎公开立场、合作为假想机会,并列出诚实的合作张力。<strong>只作调研启发,不改评分。</strong></p>
+
+  <div class="picker">
+    <select id="fa"><option value="">选创始人 A</option>{opts}</select>
+    <span class="vs">×</span>
+    <select id="fb"><option value="">选创始人 B</option>{opts}</select>
+    <a id="go" class="disabled">开饭 →</a>
+    <span id="hint"></span>
+  </div>
+
+  <h2>已上桌的晚餐</h2>
+  <div class="dgrid">{cards}</div>
+
+  <script>
+  (function(){{
+    var D = {data_json};
+    var fa=document.getElementById('fa'), fb=document.getElementById('fb'),
+        go=document.getElementById('go'), hint=document.getElementById('hint');
+    function upd(){{
+      var a=fa.value,b=fb.value;
+      if(!a||!b){{ go.className='disabled'; go.removeAttribute('href'); hint.textContent=''; return; }}
+      if(a===b){{ go.className='disabled'; go.removeAttribute('href'); hint.textContent='请选两位不同的创始人'; return; }}
+      var stem=[a,b].sort().join('--');
+      if(D.built.indexOf(stem)>=0){{ go.className=''; go.href='/collabs/'+stem+'.html'; hint.textContent=''; }}
+      else {{ go.className='disabled'; go.removeAttribute('href'); hint.textContent='该组合待推演(可点单让我加一场)'; }}
+    }}
+    fa.addEventListener('change',upd); fb.addEventListener('change',upd);
+  }})();
+  </script>
+"""
+    nav = ('<a href="/">品牌监控</a>'
+           '<a href="/founders/">创始人</a>'
+           '<a href="/collabs/" aria-current="page">创始人晚餐</a>'
+           '<a href="/watch/">舆情信号</a>'
+           '<a href="/starmap.html">知识星图</a>'
+           '<a href="/docs.html">文档</a>')
+    return shell("创始人晚餐 · Founder Dinners · MBA",
+                 "MBA 创始人晚餐:把两个品牌的创始人放到一桌,按 5 镜头假想推演潜在合作(AI 演绎·非真实合作)。",
+                 nav, body)
+
+
+def main(argv):
+    if not os.path.isdir(COLLABS_DIR):
+        print("build_collab_dinners: collabs/ 不存在 —— 跳过。")
+        return 0
+    only = argv[0] if argv else None
+    names = brand_names()
+    os.makedirs(OUT_DIR, exist_ok=True)
+    built = []
+    n = 0
+    for path in sorted(glob.glob(os.path.join(COLLABS_DIR, "*.yaml"))):
+        stem = os.path.splitext(os.path.basename(path))[0]
+        data = load_yaml(path)
+        brands = data.get("brands") or []
+        title = data.get("title", stem)
+        built.append((stem, brands, title))
+        if only and stem != only:
+            continue
+        with open(os.path.join(OUT_DIR, f"{stem}.html"), "w", encoding="utf-8") as fh:
+            fh.write(render_dinner(stem, data, names))
+        print(f"[collab-dinners] site/collabs/{stem}.html")
+        n += 1
+
+    with open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_index(built, names))
+    print(f"[collab-dinners] site/collabs/index.html({len(built)} 场晚餐)")
+    print(f"[collab-dinners] done — {n} dinner page(s) + index")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

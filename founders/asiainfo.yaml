@@ -1,0 +1,67 @@
+# founders/asiainfo.yaml — 亚信 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 田溯宁非 MBA 评委(无 perspective 可复用),履历经一手 curl 核实(走 $HTTPS_PROXY+CA,坑 #1,
+# 非 WebFetch),每条里程碑带真实来源 URL。诚实处理:亚信由田溯宁与丁健等留美学生共同创办,
+# 本页以田溯宁为中心并如实标注联合创始人丁健。反捏造:不含编造引语;relation 为标注的分析。
+# 数字(营收/市值/份额)以公开报道/财报为准,近年重组与营收波动需 live 核验。
+brand: asiainfo
+founder:
+  name_cn: 田溯宁
+  name_en: Edward Tian
+  role: 联合创始人 / 董事长(与丁健共同创办;兼宽带资本董事长)
+  status: 现任
+  # perspective_slug 留空:田溯宁非 MBA 评委
+career:
+  - period: "1963-1992"
+    milestone: "生于书香家庭(名字'溯宁'=记住列宁格勒);辽宁大学生物系→中科院资源管理学硕士→1987 赴美德州理工大学,读博期间转向计算机与互联网"
+    evidence: "前瞻网 qianzhan.com/analyst/detail/329/181219-70fb7e48.html"
+    lens: [origin]
+  - period: "1993"
+    milestone: "在《光明日报》发文《美国信息高速公路计划对中国现代化的意义》;同年 4 月与丁健等留美学生在美国达拉斯创办 Internet 公司 AsiaInfo(亚信)"
+    evidence: "前瞻网 qianzhan.com/analyst/detail/329/181219-70fb7e48.html"
+    lens: [origin]
+  - period: "1995"
+    milestone: "将互联网核心技术带回中国;亚信搭建中国第一个商业化互联网骨干网 ChinaNet(被称'互联网建筑师')"
+    evidence: "前瞻网 qianzhan.com/analyst/detail/329/181219-70fb7e48.html"
+    lens: [origin, leverage]
+  - period: "2000-03"
+    milestone: "亚信在纳斯达克上市,成为第一家在美国上市的中国高科技企业(市值一度超 40 亿美元)"
+    evidence: "前瞻网 qianzhan.com/analyst/detail/329/181219-70fb7e48.html;搜狐诺亚精选 sohu.com/n/475358372"
+    lens: [signal]
+  - period: "1999-2006"
+    milestone: "就任中国网通总裁兼 CEO,为互联网'铺更宽的路、铺光纤';2004-05 网通在纽约、香港两地上市"
+    evidence: "搜狐诺亚精选 sohu.com/n/475358372"
+    lens: [leverage, signal]
+  - period: "2006-06"
+    milestone: "创建宽带资本(CBC)任董事长,专注云计算/大数据/企业互联网;投资途家、分众、LinkedIn、airbnb 等"
+    evidence: "搜狐诺亚精选 sohu.com/n/475358372"
+    lens: [category, leverage]
+  - period: "2014-01"
+    milestone: "带领亚信集团从美股私有化,任亚信集团董事长"
+    evidence: "前瞻网 qianzhan.com/analyst/detail/329/181219-70fb7e48.html"
+    lens: [identity]
+  - period: "2018 后"
+    milestone: "亚信科技港股上市;亚信聚焦电信 BSS 软件与'云网安'数字化转型(市场份额第一的电信软件供应商);2024 推动亚信安全与亚信科技重组(合并收入超百亿)"
+    evidence: "21 世纪经济报道 2024-03-26 21jingji.com;前瞻网 qianzhan.com"
+    lens: [category, signal]
+relation:
+  origin: >-
+    分析:亚信的起源与田溯宁'把互联网带回中国、建骨干网'的基础设施建设者身份高度绑定——
+    创始团队(田溯宁、丁健等留美学生)与 ChinaNet 是品牌起源叙事的真实锚点。
+  category: >-
+    分析:从 ChinaNet 骨干网到电信 BSS 软件、再到'云网安'数字化转型,田溯宁的技术聚合视角
+    (云/大数据/物联网融合的'裂变效应')定义了亚信的 B2B 电信软件品类。
+  leverage: >-
+    分析:与运营商/政企的深度关系 + 二十余年电信软件积累(市场份额第一)是亚信的核心杠杆;
+    宽带资本对云计算/企业互联网的生态投资是其延伸。
+  identity: >-
+    分析:互联网建筑师、长者、终身学习者塑造了田溯宁与亚信的身份;但亚信未抓住消费互联网红利,
+    身份偏 B2B 数字基础设施而非 to C。亚信创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:纳斯达克、港股两度上市与电信软件份额第一是可核验的真实信号;但近年营收/净利波动
+    (2024 净利同比下降)与资产重组需 live 核验,不把历史地位当作当下成绩。
+sources:
+  - "前瞻网《亚信再次上市,田溯宁终敲铜锣》 qianzhan.com/analyst/detail/329/181219-70fb7e48.html"
+  - "21 世纪经济报道 2024-03-26《北京留美博士,重组100亿亚信帝国》 21jingji.com"
+  - "搜狐·诺亚精选 2016《宽带资本田溯宁的投资人生》(田溯宁本人观点) sohu.com/n/475358372"
+  - "亚信官网 asiainfo.com(公司与产品事实)"

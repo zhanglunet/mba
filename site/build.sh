@@ -60,6 +60,10 @@ if command -v python3 >/dev/null 2>&1; then
     rm -rf "$SITE_DIR/founders"
     python3 "$REPO_ROOT/scripts/build_founder_pages.py" || \
       echo "[mba-build] WARN: build_founder_pages.py failed — founder pages skipped"
+    echo "[mba-build] generating founder dinner (collab) pages"
+    rm -rf "$SITE_DIR/collabs"
+    python3 "$REPO_ROOT/scripts/build_collab_dinners.py" || \
+      echo "[mba-build] WARN: build_collab_dinners.py failed — collab pages skipped"
   else
     echo "[mba-build] no PyYAML in build env — using committed site/api/*"
   fi
