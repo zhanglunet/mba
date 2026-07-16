@@ -1,0 +1,68 @@
+# founders/huawei.yaml — 华为 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 任正非是 MBA 评委(renzhengfei);履历复用 perspectives/renzhengfei-perspective/references/research/
+# 06-timeline.md(每条锚点已核:任正非 2001《我的父亲母亲》/ 华为官网 / 主流财经媒体一手)。
+# 诚实处理:华为 1987 由任正非创办,采用员工持股 + 轮值董事长制,任正非持股约 1%、仍任创始人/CEO/总裁。
+# 反捏造:不含编造引语;relation 为标注的分析;引号内为任正非公开记录在案的说法(灰度/华为的冬天/
+# 备胎等);数字(营收/份额/制裁影响)近期需 live 核验。
+brand: huawei
+founder:
+  name_cn: 任正非
+  name_en: Ren Zhengfei
+  role: 创始人 / CEO / 总裁(华为采用轮值董事长制;任正非持股约 1%)
+  status: 现任
+  perspective_slug: renzhengfei
+career:
+  - period: "1944-1983"
+    milestone: "1944-10-25 生于贵州贫困山区(父母为教师,七兄妹之长);1963 入重庆建筑工程学院;1974 入伍基建工程兵(参建辽阳化纤总厂),1978 出席全国科学大会;1983 基建工程兵撤销,复员转业至深圳南海石油"
+    evidence: "renzhengfei 06-timeline(锚:任正非 2001《我的父亲母亲》/ 华为官网 / 维基交叉核对)"
+    lens: [origin]
+  - period: "1987-1993"
+    milestone: "1987-09 以 21,000 元、43 岁在深圳南山创办华为,起于代理香港 PBX 程控交换机;1993 自研 C&C08 数字程控交换机突破,同年实施'农村包围城市'——先攻县乡邮电局再回攻一线城市"
+    evidence: "renzhengfei 06-timeline(锚:华为官方资料 / 05-decisions)"
+    lens: [origin, category, leverage]
+  - period: "1996-2003"
+    milestone: "1996 市场部集体大辞职(能上能下);1998 起以 5 年 20 亿引入 IBM IPD 管理咨询、下决心拓展海外;2000《华为的冬天》立危机意识;2003 思科诉讼(全球化必经的知识产权对抗)"
+    evidence: "renzhengfei 06-timeline(锚:华为官方 /《华为的冬天》)"
+    lens: [leverage, identity]
+  - period: "2004-2018"
+    milestone: "2004 海思半导体独立运作(自研芯片伏笔);2007 提出'开放、妥协、灰度';2010 企业业务 BG 成立(从运营商到政企);2013 海思芯片销量破千万首次盈利;2017 华为云 BU + 消费者 BG 出货破 1.5 亿(2018 破 2 亿),一度全球电信设备第一、手机全球前二"
+    evidence: "renzhengfei 06-timeline(锚:华为官方 / 主流报道)"
+    lens: [category, leverage]
+  - period: "2018-2020"
+    milestone: "2018-12 孟晚舟在温哥华被拘;2019-05 美国把华为列入实体清单,海思'备胎转正'、Google 断供安卓;2019-08 发布鸿蒙 HarmonyOS 1.0;2020-11 因制裁压力出售荣耀"
+    evidence: "renzhengfei 06-timeline(锚:公开司法与外媒专访 / 华为公告)"
+    lens: [signal, identity]
+  - period: "2023-2026(现状)"
+    milestone: "2023-08 Mate 60 Pro 搭载国产 7nm 麒麟芯片(SMIC)悄然上市,被视为突破封锁的标志性信号;昇腾 AI 芯片、鸿蒙生态、华为云、智能汽车(问界/鸿蒙智行)多线推进,营收自制裁低谷回升"
+    evidence: "公开报道(Mate 60 / 昇腾 / 鸿蒙 / 问界),需 live 核验"
+    lens: [signal, leverage]
+relation:
+  origin: >-
+    分析:华为的起源与任正非'43 岁、2.1 万元创业,以农村包围城市从代理走向自研'的传奇深度绑定;
+    童年贫困与军旅塑造的危机意识('华为的冬天')是品牌起源与生存意志的真实锚点——这是 MBA 最强的
+    起源-生存叙事之一,并因抗住美国封锁而延续成一部'持续的起源'。
+  category: >-
+    分析:任正非带华为从电信设备(挑战爱立信/诺基亚/思科到全球第一)扩张到手机、5G、鸿蒙 OS、
+    海思/昇腾芯片、云与智能汽车;品类广度极强,但更多是'快速追赶后领先'(5G 例外),消费与先进芯片
+    品类又受制裁约束。
+  leverage: >-
+    分析:高强度研发投入(营收占比常年两位数)、庞大专利、员工持股(奋斗者文化)、运营商深度关系与
+    垂直整合(自研芯片)是核心杠杆;但美国制裁切断了先进制程、EDA、安卓 GMS 与西方运营商市场,
+    杠杆的关键环节被结构性削弱。
+  identity: >-
+    分析:'狼性文化、以客户为中心、以奋斗者为本、灰度哲学、不上市不炒作'塑造了高度一致、极具韧性的
+    身份系统,制裁下的'备胎/自立'叙事更把它升华为民族科技象征。任正非本人是 MBA 评委(renzhengfei),
+    审计华为若用含其本人的 panel 须 --panel-drop renzhengfei(本次 security-cn-global 已 drop)。
+    但在西方语境中,安全指控、与国家的关系认知是身份的复杂面。
+  signal: >-
+    分析:抗住实体清单并以 Mate 60 国产 7nm 芯片、昇腾 AI、鸿蒙生态、问界汽车实现回升,是极具戏剧性的
+    真实信号;但先进制程受限、西方市场受阻、鸿蒙生态仍在建设、营收受制裁冲击等约束需 live 核验,
+    不把一次突破当作封锁已解。
+sources:
+  - "perspectives/renzhengfei-perspective/references/research/06-timeline.md(每条里程碑带一手/一级二手锚点)"
+  - "任正非 2001《我的父亲母亲》/《华为的冬天》(一手自述,危机意识与灰度哲学之源)"
+  - "华为官方 huawei.com / 华为年报(公司与业务事实)"
+  - "2019 实体清单 + 孟晚舟事件 · 公开司法记录与外媒专访(BBC/CBS/FT/央视《面对面》)"
+  - "Mate 60 / 昇腾 / 鸿蒙 / 问界(2023-2026 公开报道,数字需 live 核验)"
+  - "metric-brand-auditor/self-conflict.yaml (renzhengfei → 华为/Huawei/海思/鸿蒙/荣耀)"

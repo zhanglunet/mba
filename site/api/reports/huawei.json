@@ -1,0 +1,19 @@
+{
+  "slug": "huawei",
+  "brand_cn": "Huawei / 华为",
+  "brand_en": "Huawei",
+  "ticker": null,
+  "version": "v1",
+  "audit_date": "2026-07-16",
+  "panel": "security-cn-global",
+  "score": {
+    "total": 212,
+    "max": 250,
+    "normalized": 8.48
+  },
+  "tl_dr": "Origin(起源叙事)维度得分最高之一(9.0):任正非 43 岁以 2.1 万元创办、以\"农村包围城市\"走向自研, 再到抗住 2019 美国实体清单、2023 以 Mate 60 国产 7nm 芯片突破封锁——一部把创业与生存焊在一起、 仍在续写的起源-韧性叙事。加\"狼性文化、以客户为中心、灰度哲学\"的高度一致身份(Identity 8.8)。 security-cn-global 5 评委(任正非因创始人自冲突 --panel-drop)分歧沿东西方最清晰:周鸿祎(国家队) 与马斯克(工程崇拜)并列 45,纳德拉(西方信任视角)38 全卷最低。唯一实质分歧在 Signal(8.0)—— 马斯克/周鸿祎\"Mate 60 突破是韧性证明\"9 vs 纳德拉/张明正\"先进制程天花板仍在\"7。212/250 · 8.48/10。",
+  "html_url": "/reports/huawei/",
+  "pdf_url": null,
+  "api_url": "/api/reports/huawei.json",
+  "panel_api_url": "/api/panels/security-cn-global.json"
+}
