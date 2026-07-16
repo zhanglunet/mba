@@ -5,8 +5,8 @@
 # **非本人真实发言、非双方证实的真实合作**。合作点为基于两品牌真实属性的**假想推演**,不谎称已发生。
 # 两位创始人均非 MBA 评委(无 perspective 声音语料),立场只落在其公开观点上,不生成新引言。
 brands: [asiainfo, zhipu]
-featured: true            # 首页「创始人晚餐 · 亮点」精选此场(build_collab_dinners 生成首页 DINNER 块)
-home_highlight: leverage  # 首页亮点展示的镜头(leverage 那道菜:「你的渠道,我的模型」)
+featured: false           # 首页「亮点」已让位给 marquee 的 deepseek--nvidia;保留 home_highlight 备轮换
+home_highlight: leverage  # 若重新 featured,亮点展示 leverage 那道菜:「你的渠道,我的模型」
 title: "骨干网遇见基座模型:两代科技基础设施建设者的一顿饭"
 scene: >-
   假想场景:一间安静的中餐厅。互联网时代把 ChinaNet 骨干网带回中国的田溯宁,
