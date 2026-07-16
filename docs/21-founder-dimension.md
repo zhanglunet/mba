@@ -1,6 +1,6 @@
 # 21 · 创始人维度(Founder Dimension)
 
-> **Status:** v1 落地(2026-07-16)。首批 4 位「创始人即评委」品牌。
+> **Status:** v1 落地(2026-07-16)。首批 4 位「创始人即评委」+ zhipu(首个非评委、curl 取一手)= 5 份。
 > **单一真源:** `founders/<slug>.yaml`。生成物 `site/founders/`(gitignore)。
 
 ## 这是什么 / 为什么
@@ -16,7 +16,13 @@
 **首批范围(4 位「创始人即评委」):** `spacex`→musk · `meituan`→wanghuiwen(联合创始人)·
 `tal-education`→zhangbangxin · `kimichat`→yangzhilin。它们的创始人**本身就是 MBA 评委**,
 直接复用其 perspective 的 `references/research/06-timeline.md` 一手调研(反捏造最稳)。
-其余 11 品牌留后续 PR(需先 `curl` 取一手履历再落库,见坑 #1)。
+
+**已扩(非评委,curl 取一手):** `zhipu`→唐杰(创始人/首席科学家;CEO 张鹏、董事长刘德兵、总裁王绍兰)。
+智谱创始人**不是** MBA 评委,无 perspective 可复用 → 履历经 `curl`(走 `$HTTPS_PROXY`+CA,坑 #1)
+核实,每条里程碑带真实来源 URL(财联社 / 虎嗅 / 创业邦),`perspective_slug` 留空。这是**非评委
+创始人的参照样板**:走 SOP 的 curl 分支。
+
+其余 10 品牌留后续 PR(需先 `curl` 取一手履历再落库,见坑 #1)。
 
 ## 数据层 schema:`founders/<slug>.yaml`
 
@@ -106,5 +112,5 @@ python3 scripts/build_founder_pages.py                        # 本地预览 sit
 `build_founder_pages.py` 生成 4 页 + Playwright 0 JS 错误 → 各入口跳转正确 → `check_consistency` /
 `build_home_cards --check` / `build_agents_api --check` 无漂移。
 
-**明确不做:** 首批只 4 位;其余 11 品牌留后续(需 `curl` 取一手);不改已发布报告 HTML;
-不做创始人自动传记生成(履历必须逐条带 provenance)。
+**明确不做:** 首批 4 位 +（后扩)zhipu = 5 位;其余 10 品牌留后续(需 `curl` 取一手);
+不改已发布报告 HTML;不做创始人自动传记生成(履历必须逐条带 provenance)。

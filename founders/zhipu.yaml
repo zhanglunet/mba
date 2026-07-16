@@ -1,0 +1,68 @@
+# founders/zhipu.yaml — 智谱 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 智谱创始人非 MBA 评委(无 perspective 可复用),履历经一手 curl 核实(走 $HTTPS_PROXY+CA,
+# 非 WebFetch,坑 #1),每条里程碑带真实来源 URL/provenance。诚实处理:智谱为清华 KEG 团队
+# 创办,唐杰是「创始人和首席科学家」(虎嗅原文),另有 CEO 张鹏、董事长刘德兵、总裁王绍兰——
+# 本页以唐杰为中心并如实标注其余联合创始人。反捏造:不含编造引语;relation 为标注的分析。
+# 数字(市值/份额/融资)以上市/招股书公开数为准,近期变动需 live 核验。
+brand: zhipu
+founder:
+  name_cn: 唐杰
+  name_en: Tang Jie
+  role: 创始人 / 首席科学家(CEO 张鹏 · 董事长刘德兵 · 总裁王绍兰)
+  status: 现任
+  # perspective_slug 留空:唐杰非 MBA 评委
+career:
+  - period: "1977"
+    milestone: "出生于四川南充;2002 考取清华大学计算机科学与技术专业博士,师从王克宏,入语义网与数据挖掘领域"
+    evidence: "财联社 2026-01-08 cls.cn/detail/2252184"
+    lens: [origin]
+  - period: "2006"
+    milestone: "博士毕业留校,以教授身份推动技术产业化(效仿王选);同年 12 月带领清华知识工程实验室(KEG)团队发布科技情报大数据挖掘系统 AMiner——智谱的技术前身"
+    evidence: "虎嗅 2026-02-28 huxiu.com/article/4837672.html;财联社 cls.cn/detail/2252184"
+    lens: [origin, leverage]
+  - period: "~2010"
+    milestone: "AMiner 已构建数十万研究者档案,为腾讯、阿里等提供情报分析服务,验证商业潜力(很早即对海外/政企收费)"
+    evidence: "财联社 cls.cn/detail/2252184;虎嗅 huxiu.com/article/4837672.html"
+    lens: [leverage, signal]
+  - period: "2019-06"
+    milestone: "唐杰带刘德兵、张鹏成立智谱AI(北京智谱华章),把 KEG 技术转化为产业;当时行业主流是 CV,智谱专注 NLP/知识图谱、坚定押注 AGI 被视为过于学术"
+    evidence: "虎嗅 huxiu.com/article/4837672.html;创业邦 cyzone.cn/article/821069.html"
+    lens: [origin, category]
+  - period: "2021"
+    milestone: "推出开源 GLM 架构(统一理解与生成任务);唐杰在智源研究院承担悟道超大规模预训练模型项目"
+    evidence: "创业邦 cyzone.cn/article/821069.html;财联社 cls.cn/detail/2252184"
+    lens: [category, leverage]
+  - period: "2022 底"
+    milestone: "ChatGPT / GPT-3.5 出圈后大模型成资本焦点,智谱被资本发现;上市前累计融资超 83 亿元"
+    evidence: "创业邦 cyzone.cn/article/821069.html"
+    lens: [signal]
+  - period: "2024"
+    milestone: "GLM 系列以 6.6% 市场份额列中国通用大模型开发商第二、独立开发商第一;唐杰复盘 2023-24 动作变形(跟风做 Chat)后纠偏、转向 Agent"
+    evidence: "财联社 cls.cn/detail/2252184;创业邦 cyzone.cn/article/821069.html"
+    lens: [category, signal]
+  - period: "2026-01-08"
+    milestone: "智谱(02513.HK)在港交所挂牌,全球首家以 AGI 基座模型为核心业务的上市公司,上市首日市值超 578 亿港元;敲钟当天唐杰低调站在团队中(董事长刘德兵、CEO 张鹏站铜锣旁)"
+    evidence: "财联社 2026-01-08 cls.cn/detail/2252184;虎嗅 huxiu.com/article/4837672.html"
+    lens: [signal, identity]
+relation:
+  origin: >-
+    分析:智谱的起源与唐杰清华 KEG 实验室教授做产业的路径高度绑定——AMiner(2006)是技术前身,
+    创始团队(唐杰/刘德兵/张鹏,均清华系)把实验室多年积累转化为产业,是品牌起源叙事的真实锚点。
+  category: >-
+    分析:2019 年成立即逆行业 CV 主流、押注 NLP/知识图谱与 AGI 基座模型,开源 GLM 架构统一理解与生成,
+    是智谱相对同行的品类定义(全栈:语言/多模态/智能体)。
+  leverage: >-
+    分析:KEG 多年技术积累 + AMiner 早期现金流 + 高强度研发(招股书累计约 44 亿、研发人员占比 74%)
+    + GLM 每 2-3 个月一次基座迭代,是智谱的经营杠杆。
+  identity: >-
+    分析:清华系、学术与产业融合、低调务实(唐杰效仿王选、敲钟当天站在团队中而非 C 位)塑造了品牌身份;
+    智谱创始人均非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:港交所上市(全球大模型第一股)、市场份额中国第二是可核验的真实信号;但盈利路径与外界对
+    AI 过度投资的担忧需 live 核验,不把估值/份额当作已兑现的长期成绩。
+sources:
+  - "财联社 2026-01-08《从清华实验室到港交所,智谱CEO张鹏的六年AGI长跑》 cls.cn/detail/2252184"
+  - "虎嗅 2026-02-28《智谱唐杰:躲在喧嚣之外的真大佬》 huxiu.com/article/4837672.html"
+  - "创业邦《超500亿,清华系智谱敲钟,大模型第一股诞生》 cyzone.cn/article/821069.html"
+  - "智谱官网 zhipuai.cn / z.ai(公司与产品事实)"
