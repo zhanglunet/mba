@@ -537,3 +537,25 @@ reports:
       无自冲突)共识:Leverage(9.4)领跑、Category(9.2)紧随;唯一分歧在 Signal(8.0)——蒂尔"护城河深到
       触发 FTC 反垄断 + AI 追赶者"7 vs 纳瓦尔"飞轮复利穿越周期"9。218/250 · 8.72/10(vc-en 高分梯队)。
     has_pdf: false
+
+  - slug: huawei
+    card_brand: "Huawei · 华为"
+    card_meta: "security-cn-global panel · 5 评委（周鸿祎·张明正·黄仁勋·马斯克·纳德拉）· 雷达图 + 异议热力图 · 任正非因创始人自冲突 --panel-drop"
+    headline: "起源维度 9.0 领跑:2.1 万元创业 + 抗住封锁,分歧沿东西方(Mate 60 突破 vs 制程天花板)"
+    brand_cn: Huawei / 华为
+    brand_en: Huawei
+    panel: security-cn-global
+    industry: 企业服务·安全
+    version: v1
+    audit_date: 2026-07-16
+    score_total: 212
+    score_max: 250
+    score_normalized: 8.48
+    tl_dr: >-
+      Origin(起源叙事)维度得分最高之一(9.0):任正非 43 岁以 2.1 万元创办、以"农村包围城市"走向自研,
+      再到抗住 2019 美国实体清单、2023 以 Mate 60 国产 7nm 芯片突破封锁——一部把创业与生存焊在一起、
+      仍在续写的起源-韧性叙事。加"狼性文化、以客户为中心、灰度哲学"的高度一致身份(Identity 8.8)。
+      security-cn-global 5 评委(任正非因创始人自冲突 --panel-drop)分歧沿东西方最清晰:周鸿祎(国家队)
+      与马斯克(工程崇拜)并列 45,纳德拉(西方信任视角)38 全卷最低。唯一实质分歧在 Signal(8.0)——
+      马斯克/周鸿祎"Mate 60 突破是韧性证明"9 vs 纳德拉/张明正"先进制程天花板仍在"7。212/250 · 8.48/10。
+    has_pdf: false

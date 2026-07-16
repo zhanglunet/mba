@@ -1,0 +1,14 @@
+panel: security-cn-global
+locked_at: 2026-07-16
+mba_version: 0.4.5
+published_at: 2026-07-16
+version: v1
+score_total: 212
+score_max: 250
+score_normalized: 8.48
+overrides:
+  add: []
+  drop: [renzhengfei]
+# 任正非(华为创始人)是 MBA 评委(renzhengfei),评自家品牌不中立 → --panel-drop renzhengfei
+# (security-cn-global 面板 self-conflict 规则明列:Huawei/华为/鸿蒙/昇腾/海思 → drop renzhengfei)。
+# 有效评委 5 位(周鸿祎·张明正·黄仁勋·马斯克·纳德拉),满分 250。
