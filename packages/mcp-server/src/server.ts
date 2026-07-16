@@ -289,7 +289,7 @@ export function createServer(): McpServer {
         triggers: z
           .array(
             z.object({
-              type: z.enum(['cron', 'webhook', 'keyword', 'news']),
+              type: z.enum(['cron', 'webhook']),
               config: z.record(z.unknown()).optional(),
             }),
           )

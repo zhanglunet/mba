@@ -34,7 +34,7 @@ Subscription（订阅）
   └── cadence: Cadence       # 最低重审间隔（防抖）
 
 Trigger
-  ├── type: 'keyword' | 'news' | 'cron' | 'webhook'
+  ├── type: 'cron' | 'webhook'   # 均已接线;keyword/news 已于 2026-07-16 从 schema 移除(见 §3 注)
   └── config: ...
 
 NotifyTarget
@@ -50,7 +50,9 @@ Cadence
 
 ## 3. 触发器类型
 
-### 3.1 keyword（关键词监控）
+> **⚠️ schema 现状(2026-07-16 清账)**:`subscribe_brand` 的 trigger enum **只保留 `cron` 与 `webhook`**——两者均已接线(`cron` 由 scheduler 定期轮询,`webhook` 由 receiver 的 `POST /webhooks/trigger` 入站)。**`keyword` / `news` 已从 schema 移除**:它们此前被 schema 收下、但 scheduler 从不执行(静默 no-op),会让用户"订阅了却永不触发";移除后 `subscribe_brand` 对这两种 type 明确报错,而非静默吞掉。下面 §3.1 / §3.2 保留为**未来 RSS 接入(P3-B-3)的设计草案**,当出网可用、真正接 RSS 时再把 type 引回。
+
+### 3.1 keyword（关键词监控 · 设计草案,未接线）
 
 通过 Wuying Web 搜索轮询，检测到包含品牌名 + 信号词的新内容即触发。
 
@@ -65,7 +67,7 @@ config:
 
 **实现方式：** cron job 每 6 小时调 Wuying/Jina 搜索，命中即入队列。
 
-### 3.2 news（新闻 RSS / API）
+### 3.2 news（新闻 RSS / API · 设计草案,未接线）
 
 接入主流新闻 RSS，过滤品牌名，命中即触发。
 
@@ -222,7 +224,7 @@ EVOLUTION 与它的接口(SKILL.md 已落):
 | P3-B-5 | EVOLUTION 增量维度重跑（成本优化） | ✅ 完成 2026-07-02 |
 | P3-B-4a | notify 推送（webhook out + email） | ✅ 完成 2026-07-02 |
 | P3-B-4b | webhook **接收端**（外部推送触发） | ✅ 完成 2026-07-05 |
-| P3-B-3 | keyword / news RSS 触发器 | ⛔ 阻断（Wuying Pro；可改 RSS 绕过） |
+| P3-B-3 | keyword / news RSS 触发器 | ⛔ 未接线(需出网)；2026-07-16 已从 schema **移除**死枚举(静默 no-op),接 RSS 时再引回 |
 
 ---
 

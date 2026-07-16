@@ -345,7 +345,7 @@
 
   <h1>开发路线图</h1>
   <p class="sub">Development Roadmap &amp; Progress Log · 持续更新</p>
-  <div class="version-chip">当前版本 v0.4.3 · 快照 2026-07-12</div>
+  <div class="version-chip">当前版本 v0.5.0 · 快照 2026-07-16</div>
   <p style="margin:-16px 0 28px;font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;font-size:14px;">
     <a href="/handoff.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">📄 交接文档 / Handoff(v0.4.0 历史快照)→</a>
   </p>
@@ -355,8 +355,8 @@
   <div class="status-grid">
     <div class="status-card ok">
       <div class="label">流水线</div>
-      <div class="value">v0.4.3</div>
-      <div class="note">Phase 0-5 + 5M 稳定 · Brand Watch 舆情监控全链路(W1-W7)</div>
+      <div class="value">v0.5.0</div>
+      <div class="note">Phase 0-5 + 5M 稳定 · 关系宇宙(创始人维度 + 创始人晚餐 + 产业维度)· Brand Watch 全链路</div>
     </div>
     <div class="status-card ok">
       <div class="label">评委面板</div>
@@ -370,8 +370,8 @@
     </div>
     <div class="status-card ok">
       <div class="label">公开报告</div>
-      <div class="value">15 品牌 · 25 版本</div>
-      <div class="note">7 品牌有 EVOLUTION 版本;SpaceX 8.76 现居审计史最高</div>
+      <div class="value">23 品牌</div>
+      <div class="note">15 品牌有 EVOLUTION 多版本;NVIDIA 8.88 现居审计史最高;3 个真实 --panel-drop(微软/华为/特斯拉)</div>
     </div>
     <div class="status-card ok">
       <div class="label">集成测试</div>
@@ -381,7 +381,7 @@
     <div class="status-card ok">
       <div class="label">MCP Server</div>
       <div class="value">16 工具</div>
-      <div class="note">v0.2.0 · 8 核心 + 6 演化 + 2 舆情 · 220 tests · npm</div>
+      <div class="note">v0.2.0 · 8 核心 + 6 演化 + 2 舆情 · 225 tests · npm</div>
     </div>
   </div>
 
@@ -1190,6 +1190,54 @@
           <li><b>排除环境假阳性</b>:报告页 &lt;head&gt; 的 Chart.js CDN 在沙箱不可达 → domcontentloaded 超时记为 [0],经响应状态/直连 curl 复核均 200,非线上缺陷(render-qa --offline-libs 权威验证图表)。文档:docs/24-site-qa.md</li>
         </ul>
         <div class="log-commit">branch claude/sharp-turing-496l8b · 4 处缺陷全部修复并复测通过 · 交互 11/11</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-16 · 续十一</div>
+      <div class="log-tags">
+        <span class="badge done">新品牌 Tesla</span>
+        <span class="badge p1">第 3 个 --panel-drop</span>
+      </div>
+      <div class="log-title">Tesla 完整入库 —— 四位中国新势力创始人给祖师爷打分,170/200 · 8.50</div>
+      <div class="log-body">
+        <ul>
+          <li><b>auto 面板 · --panel-drop musk</b>(马斯克是特斯拉领投人/CEO 且为 MBA 评委)· 雷军/李想/何小鹏/李斌 4 位中国新势力创始人打分 · <b>第 3 个真实 --panel-drop</b>(继微软/华为)</li>
+          <li><b>Category 9.5 = MBA 迄今品类维度最高分</b>——没发明电动车却第一个把它做成高端欲望品,开创四位打分者都身处其中的品类。唯一强分歧在 Signal(Δ3 全卷最大):何小鹏"数据飞轮是硬护城河"9 vs 李想"FSD 过度承诺"6</li>
+          <li><b>全套耦合</b>:report.md(数字自洽 /200)+ 手写 report.html(4 评委 + drop 卡)+ panel.yaml + reports-meta + watch/matrix + founders/tesla.yaml + api 重生成 23 reports。起源归属如实标注(2003 Eberhard/Tarpenning 创立,马斯克 2004 领投、2008 任 CEO,非一人独创)</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · render-qa canvas=2 + 全套门禁绿</div>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">2026-07-16 · 续十二</div>
+      <div class="log-tags">
+        <span class="badge done">第 3 场创始人晚餐</span>
+      </div>
+      <div class="log-title">任正非(华为)× 马斯克(Tesla)「全栈自研的两种活法」</div>
+      <div class="log-body">
+        <ul>
+          <li>两个被逆境(制裁 / 制造地狱)逼出全栈自研的生存工业家;核心张力 = 都要掌控全栈故天然是竞争者(中国智驾 ADS vs FSD)。两位均为 MBA 评委(renzhengfei / musk),表达 DNA 充分</li>
+          <li><code>featured: false</code>——不抢首页亮点(仍为 deepseek×nvidia「芯片与模型」),首页仅"共 2→3 场"计数更新;诚实盒给足(地缘 / 结构性冲突 / 身份文化 / 数字待核验)</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · validate_collabs 3 场 + 0 JS 错误</div>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">2026-07-16 · 续十三</div>
+      <div class="log-tags">
+        <span class="badge done">决策项清账</span>
+        <span class="badge p1">砍 keyword/news 死枚举</span>
+      </div>
+      <div class="log-title">G 系列 5 个「待产品拍板」决策项全部落定</div>
+      <div class="log-body">
+        <ul>
+          <li><b>① 验收线</b>保持 0.3(降阈值是移动球门)· <b>③ PDF</b> 声明按需(print_report.sh 按需出,不入库)· <b>⑤ zhanglan</b> 维持 seed(凑不齐 §3 门槛,守门槛不硬蒸)</li>
+          <li><b>② 砍 keyword/news 死枚举</b>:<code>subscribe_brand</code> trigger enum 收窄到 <code>['cron','webhook']</code>——修掉"被 schema 收下却永不执行(scheduler 只跑 cron)"的静默陷阱,加 e2e 负测试(vitest 224→<b>225</b> 全绿)· <b>④ webhook watch-event 入口</b> 暂缓(无可信自动入站源前价值有限 + 信任边界)</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · MCP typecheck+test(225)+build · 无 persona 漂移</div>
       </div>
     </div>
 

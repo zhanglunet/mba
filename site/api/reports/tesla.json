@@ -1,0 +1,19 @@
+{
+  "slug": "tesla",
+  "brand_cn": "Tesla / 特斯拉",
+  "brand_en": "Tesla",
+  "ticker": "TSLA",
+  "version": "v1",
+  "audit_date": "2026-07-16",
+  "panel": "auto",
+  "score": {
+    "total": 170,
+    "max": 200,
+    "normalized": 8.5
+  },
+  "tl_dr": "Category(品类定义)维度得分 MBA 迄今最高(9.5):没有发明电动车,却第一个把电动车做成\"人们真正 想要、愿意排队买\"的高端欲望品,把\"电动=环保妥协\"改写成\"电动=更快、更智能、更酷\"——四位打分评委 (雷军/李想/何小鹏/李斌)本身就是这场品类革命的产物。auto 面板 4 评委(马斯克因特斯拉创始人自冲突 --panel-drop,第 3 个真实 panel-drop)分歧沿\"祖师爷 vs 挑战者\":雷军/何小鹏(最直接沿特斯拉打法) 并列 45,李想(增程务实)40。唯一强分歧在 Signal(7.5,Δ3 全卷最大)——何小鹏\"数据飞轮是硬护城河\"9 vs 李想\"FSD 过度承诺、价格战暴露软件护城河未兑现\"6。170/200 · 8.50/10。",
+  "html_url": "/reports/tesla/",
+  "pdf_url": null,
+  "api_url": "/api/reports/tesla.json",
+  "panel_api_url": "/api/panels/auto.json"
+}
