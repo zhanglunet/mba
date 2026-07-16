@@ -1,0 +1,53 @@
+# founders/qianxin.yaml — 奇安信 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 齐向东非 MBA 评委,履历经公开记录/权威媒体核实,每条里程碑带来源。反捏造:不含编造引语;
+# relation 为标注的分析。数字(份额/覆盖)以公开报道/财报为准,近期需 live 核验。
+brand: qianxin
+founder:
+  name_cn: 齐向东
+  name_en: Qi Xiangdong
+  role: 创始人 / 董事长
+  status: 现任
+  # perspective_slug 留空:齐向东非 MBA 评委
+career:
+  - period: "1964-2003"
+    milestone: "生于内蒙古赤峰,毕业于长春邮电学院;1986-2003 任新华社通信技术局副局长"
+    evidence: "澎湃新闻 thepaper.cn/newsDetail_forward_8433302;公开履历"
+    lens: [origin]
+  - period: "2003-2005"
+    milestone: "任 3721 公司总经理、雅虎中国区副总裁,进入互联网与安全赛道"
+    evidence: "澎湃新闻 thepaper.cn/newsDetail_forward_8433302"
+    lens: [origin]
+  - period: "2005-2016"
+    milestone: "奇虎 360 成立时任董事长,是 360 真正的创始人之一(与周鸿祎搭档,任总裁)"
+    evidence: "澎湃新闻《齐向东这些年》thepaper.cn/newsDetail_forward_8433302;创业邦 cyzone.cn/article/595206"
+    lens: [origin, leverage]
+  - period: "2014"
+    milestone: "360 企业安全业务独立为奇安信,齐向东任董事长,专注政企网络安全"
+    evidence: "创业邦 cyzone.cn/article/595206;公开记录"
+    lens: [category]
+  - period: "2019-04"
+    milestone: "360 将所持奇安信 22.59% 股权转让给中国电子(CEC),奇安信与 360 切割、独立发展"
+    evidence: "澎湃新闻 thepaper.cn/newsDetail_forward_8433302;公开记录"
+    lens: [identity, signal]
+  - period: "2020-2024"
+    milestone: "2020-07 奇安信登陆科创板;覆盖 90% 中央部委、80% 央企及大型金融机构;2024 政企安全市场份额约 18.1%"
+    evidence: "21 世纪经济报道 2023-09 21jingji.com/article/20230912;公开财报"
+    lens: [signal, leverage]
+relation:
+  origin: >-
+    分析:奇安信的起源与齐向东'新华社通信技术出身、360 企业安全独立分拆'的路径绑定——
+    从 360 安全业务脱胎是品牌起源的真实锚点。
+  category: >-
+    分析:齐向东把奇安信定位在政企网络安全这一 to B/to G 品类,与 360 的 to C 免费杀毒路线分道。
+  leverage: >-
+    分析:政企/央国企/金融的深度覆盖(90% 中央部委、80% 央企)+ 央企(中国电子)股东背景,是奇安信的核心杠杆。
+  identity: >-
+    分析:'周鸿祎背后的男人→独立掌舵者'塑造齐向东身份;与 360 切割后建立独立的政企安全公信力。
+    奇安信创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:科创板上市、政企份额领先是可核验信号;但网安行业回款周期长、盈利承压需 live 核验。
+sources:
+  - "澎湃新闻《齐向东这些年:从周鸿祎背后的男人,到上市公司大老板》 thepaper.cn/newsDetail_forward_8433302"
+  - "创业邦《周鸿祎背后的男人,齐向东》 cyzone.cn/article/595206"
+  - "21 世纪经济报道 2023-09《百亿身家的网安大佬,狠抓回款》 21jingji.com/article/20230912"

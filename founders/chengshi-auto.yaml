@@ -1,0 +1,48 @@
+# founders/chengshi-auto.yaml — 橙仕汽车 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 刘传富非 MBA 评委,履历经权威媒体核实,每条里程碑带来源。反捏造:不含编造引语;relation 为分析。
+# 数字(销量/融资)以公开报道为准;公开账本近年断流,规模化盈利需 live 核验。
+brand: chengshi-auto
+founder:
+  name_cn: 刘传富
+  name_en: Liu Chuanfu
+  role: 创始人 / 董事长(主体:山东豪驰智能汽车)
+  status: 现任
+  # perspective_slug 留空:刘传富非 MBA 评委
+career:
+  - period: "至 2012"
+    milestone: "20 多年造车经验,参与开发长城炫丽、长安铃木、哈弗 H6 等数十款车型;2008-2012 任中国汽车工程研究院产品中心主任,是中国汽研上市时唯一整车技术关键人员"
+    evidence: "财联社 cls.cn/detail/1315825;36氪 36kr.com/p/2513298580574212"
+    lens: [origin, leverage]
+  - period: "2018-02"
+    milestone: "创办山东豪驰智能汽车有限公司(橙仕汽车主体),注册资本 5.72 亿元"
+    evidence: "36氪 36kr.com/p/2513298580574212;公开工商记录"
+    lens: [origin]
+  - period: "创办判断"
+    milestone: "放弃竞争激烈的新能源乘用车,瞄准物流配送商用车空白市场——快递末端配送电动微卡(推动电动三轮车置换)"
+    evidence: "财联社 cls.cn/detail/1315825"
+    lens: [category]
+  - period: "2021-2022"
+    milestone: "首款橙仕 01 上市;至 2022 总销量约 5000 辆、上路 170 多个城市,与京东、邮政、四通一达等快递公司合作"
+    evidence: "卡车之家 360che.com/news/240615;财联社 cls.cn/detail/1315825"
+    lens: [signal, leverage]
+  - period: "2023-10"
+    milestone: "完成近 10 亿元 B 轮融资(隐山资本领投,远致投资/赣锋锂业等联合);山东豪驰基地 500 余亩、年产能 10 万辆,列山东省重大项目"
+    evidence: "乐居财经 lejucaijing.com/news-7124691242772527066;21 世纪经济报道 21jingji.com/article/20231106"
+    lens: [signal, leverage]
+relation:
+  origin: >-
+    分析:橙仕的起源与刘传富'20 年整车研发老兵、看准快递末端配送空白'的路径绑定——
+    中国汽研的整车开发经验是品牌起源的真实技术锚点。
+  category: >-
+    分析:刘传富把品类从拥挤的新能源乘用车切换到'快递末端配送电动微卡/mini 卡',以电动三轮车置换定义细分品类。
+  leverage: >-
+    分析:整车研发经验 + 山东豪驰制造基地(年产 10 万辆)+ 京东/邮政/四通一达等大客户,是橙仕的经营杠杆。
+  identity: >-
+    分析:'造车老兵转创业、to B 物流务实派'塑造刘传富与橙仕身份。橙仕创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:5000 辆销量、170 城覆盖、近 10 亿 B 轮是可核验信号;但公开账本近年断流、规模化盈利与出海需 live 核验。
+sources:
+  - "财联社《橙仕汽车创始人刘传富:推动快递末端配送场景电动三轮车全面置换》 cls.cn/detail/1315825"
+  - "36氪《山东,跑出一个'三轮车'独角兽》 36kr.com/p/2513298580574212"
+  - "乐居财经《橙仕汽车完成近10亿元B轮融资》 lejucaijing.com/news-7124691242772527066"

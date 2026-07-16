@@ -1,0 +1,49 @@
+# founders/genki-forest.yaml — 元气森林 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 唐彬森非 MBA 评委,履历经公开记录/权威媒体核实,每条里程碑带来源。反捏造:不含编造引语;
+# relation 为标注的分析。数字(销量/估值)以公开报道为准,近期需 live 核验。
+brand: genki-forest
+founder:
+  name_cn: 唐彬森
+  name_en: Tang Binsen
+  role: 创始人 / 董事长(兼挑战者资本创始人)
+  status: 现任
+  # perspective_slug 留空:唐彬森非 MBA 评委
+career:
+  - period: "1982-2007"
+    milestone: "生于安徽合肥;2001 考入北京航空航天大学计算机系,在校获国际程序设计大赛奖项,后读北航计算机硕士"
+    evidence: "CBNData《站在元気森林背后的男人》cbndata.com/information/76920"
+    lens: [origin]
+  - period: "2008"
+    milestone: "创立智明星通,主导开发《开心农场》——最早的全民网页游戏,推广到 20 多个国家、影响海外 5 亿人口"
+    evidence: "CBNData cbndata.com/information/76920;搜狐 sohu.com/a/477510079"
+    lens: [origin, leverage]
+  - period: "2012-2014"
+    milestone: "智明星通凭《帝国战争》获腾讯、创新工场投资;2014《列王的纷争》名列中国手游出海收入榜第一(游戏出海方法论)"
+    evidence: "36氪 36kr.com/p/1129083642393090;CBNData cbndata.com/information/76920"
+    lens: [leverage, signal]
+  - period: "2016"
+    milestone: "创办元气森林饮料品牌,成为无糖气泡水细分领域的先驱者(把互联网打法带进消费品)"
+    evidence: "界面新闻 jiemian.com/article/5170583;CBNData cbndata.com/information/143281"
+    lens: [origin, category]
+  - period: "2016 后"
+    milestone: "同时创办挑战者资本(隐秘 VC),投资一批新消费品牌;元气森林以数据/爆品方法论快速扩品类"
+    evidence: "36氪 36kr.com/p/1129083642393090;界面新闻 jiemian.com/article/5170583"
+    lens: [leverage, category]
+relation:
+  origin: >-
+    分析:元气森林的起源与唐彬森'游戏出海(智明星通/开心农场)转做消费品'的路径绑定——
+    把互联网/数据打法带进饮料是品牌起源的真实底色。
+  category: >-
+    分析:唐彬森用元气森林开创并定义了'无糖气泡水'细分品类,以爆品 + 快速试错的互联网方法论扩品类。
+  leverage: >-
+    分析:游戏时代练就的数据驱动/出海/资本运作能力 + 挑战者资本的生态,是元气森林的经营杠杆。
+  identity: >-
+    分析:'游戏人转消费、暴打资本'的叙事塑造唐彬森与元气森林身份;但早期'伪日系'包装争议、
+    与传统巨头的渠道战考验身份可信度。元气森林创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:无糖气泡水的市场爆发、品牌快速扩张是可核验信号;但估值波动、品类竞争加剧与盈利需 live 核验。
+sources:
+  - "CBNData《站在元気森林背后的男人:唐彬森》 cbndata.com/information/76920"
+  - "36氪《38岁唐彬森,不仅有元气森林,还有一个隐秘的资本帝国》 36kr.com/p/1129083642393090"
+  - "界面新闻《38岁,元气森林创始人:坐拥一家隐秘VC》 jiemian.com/article/5170583"

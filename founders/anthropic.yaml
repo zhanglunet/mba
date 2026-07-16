@@ -1,0 +1,52 @@
+# founders/anthropic.yaml — Anthropic 创始人维度(履历 + 创始人↔品牌关系)
+#
+# Dario Amodei 非 MBA 评委,履历经公开记录/权威来源核实,每条里程碑带来源。诚实处理:Anthropic
+# 由 Dario 与其妹 Daniela Amodei 共同创办,本页以 CEO Dario 为中心并如实标注联合创始人 Daniela(总裁)。
+# 反捏造:不含编造引语;relation 为标注的分析。
+brand: anthropic
+founder:
+  name_cn: 达里奥·阿莫代伊
+  name_en: Dario Amodei
+  role: 联合创始人 / CEO(其妹 Daniela Amodei 为联合创始人兼总裁)
+  status: 现任
+  # perspective_slug 留空:Dario Amodei 非 MBA 评委
+career:
+  - period: "1983-2006"
+    milestone: "生于旧金山;先在加州理工读物理,后转斯坦福获学士(2006),再赴普林斯顿读物理博士(方向偏计算神经科学)"
+    evidence: "darioamodei.com(个人主页);公开传记"
+    lens: [origin]
+  - period: "至 2020"
+    milestone: "任 OpenAI 研究副总裁,主导 GPT-2 / GPT-3 大模型研发,是 RLHF(基于人类反馈的强化学习)共同发明者"
+    evidence: "公开记录;darioamodei.com"
+    lens: [origin, leverage]
+  - period: "2020 底"
+    milestone: "与妹妹 Daniela 及一批资深研究员一同离开 OpenAI,理由是需要在不同商业与治理约束下做 AI 安全研究"
+    evidence: "公开报道;darioamodei.com"
+    lens: [origin, identity]
+  - period: "2021"
+    milestone: "与 Daniela 共同创办 Anthropic(注册为特拉华州公益公司 PBC),Dario 任 CEO、Daniela 任总裁;推出 Claude 系列大模型"
+    evidence: "公开记录;anthropic.com"
+    lens: [origin, category]
+  - period: "2024-2026"
+    milestone: "Dario 持续公开撰文论述先进 AI 的收益与风险(如《Machines of Loving Grace》);两次入选《时代》全球百大影响力人物"
+    evidence: "Time 100(2025/2026);darioamodei.com"
+    lens: [identity, signal]
+relation:
+  origin: >-
+    分析:Anthropic 的起源与 Dario'从 OpenAI 出走、为 AI 安全另立治理'的选择绑定——
+    公益公司(PBC)结构 + Amodei 兄妹 + 资深研究员团队是品牌起源的真实锚点。
+  category: >-
+    分析:Dario 把 Anthropic 定位在'安全优先的前沿大模型'品类(Claude + 可解释性/对齐研究),
+    以'负责任扩展'与安全叙事区别于纯能力竞赛。
+  leverage: >-
+    分析:GPT-2/3 与 RLHF 的原创研究血统 + 顶尖对齐/安全人才密度,是 Anthropic 的核心杠杆。
+  identity: >-
+    分析:'AI 安全布道者 + 公益公司'塑造 Dario 与 Anthropic 的身份;但'又要安全、又要竞速商业化'
+    的张力持续被审视。Anthropic 创始人非 MBA 评委,审计不触发 self-conflict --panel-drop。
+  signal: >-
+    分析:Claude 的能力迭代、大额融资、影响力评选是可核验信号;但安全承诺与商业化速度的平衡、
+    盈利路径需 live 核验,不把叙事当兑现。
+sources:
+  - "Dario Amodei 个人主页 darioamodei.com"
+  - "Anthropic 官方 anthropic.com(公司与产品事实)"
+  - "《时代》全球百大影响力人物(2025 / 2026)"
