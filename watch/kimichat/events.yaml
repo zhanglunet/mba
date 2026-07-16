@@ -80,3 +80,18 @@
   - identity
   - category
   note: 开源社区声量爆发(HuggingFace 周下载 7.6万→14.5万);Nature/新华/人民网/SCMP 多源报道;日期以 URL 内嵌(20250719)自证。
+
+- id: 2026-06-09-kimichat-006
+  date: 2026-06-09
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi 半年累计融资约 39 亿美元、估值 6 倍跳升,国资(国智投/中国移动)入场"
+  quote: "月之暗面Kimi又要融资了！半年融39亿美元，估值6倍跳，估值300亿美元"
+  quote_type: title
+  url: https://finance.sina.com.cn/wm/2026-06-09/doc-iniatpih6887564.shtml
+  fetched_at: "2026-07-16T00:35:00Z"
+  lens_map: [signal, leverage]
+  source_type: finance
+  note: "资本市场信号;300 亿美元为原文口径,不作事实断言;日期以 URL 内嵌(2026-06-09)自证。"

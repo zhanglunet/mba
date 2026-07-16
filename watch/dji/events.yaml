@@ -86,3 +86,19 @@
   - signal
   - identity
   note: 产品安全决策:2013 起的地理围栏改为 FAA 数据警告区;叠加 LA 灭火机相撞事件与对华敌意,引发安全口碑争议;日期以 URL 内嵌(2025/01/14)自证。
+
+- id: 2026-01-12-dji-006
+  date: 2026-01-12
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "美商务部撤回中国无人机封禁提案(DJI 获阶段性缓解),但 FCC「涵盖清单」禁令仍在——新机型无法进入美国"
+  quote: "US nixes Chinese drone blacklist plan, but FCC’s DJI ban holds"
+  quote_type: title
+  url: https://dronedj.com/2026/01/12/us-dji-ban-commerce-department/
+  fetched_at: "2026-07-16T00:35:00Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  suggested_action: "跟踪 FCC 涵盖清单进展与美国市场渠道替代方案"
+  note: "监管缓和与封禁并存(mixed);日期以 URL 内嵌(2026/01/12)自证。"

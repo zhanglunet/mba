@@ -71,3 +71,18 @@
   - leverage
   - origin
   note: 双减(W4)触发的组织后果:关停约 91% 营收的 K12 学科业务 + 裁员,张邦鑫内部承认裁员;已反映于 v1,历史锚点;日期以 URL 内嵌(AR2021111717)自证。
+
+- id: 2026-06-23-tal-education-005
+  date: 2026-06-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "卖方复盘:好未来财报超预期 + AI 战略转型,讨论是否重估多头逻辑(TAL.NYSE,双减后复苏)"
+  quote: "Does TAL’s Earnings Beat And AI Strategy Shift The Bull Case For TAL Education Group (TAL)?"
+  quote_type: title
+  url: https://www.sahmcapital.com/news/content/does-tals-earnings-beat-and-ai-strategy-shift-the-bull-case-for-tal-education-group-tal-2026-06-23
+  fetched_at: "2026-07-16T00:35:00Z"
+  lens_map: [signal]
+  source_type: finance
+  note: "距上批事件(2021 双减)四年后首个 2026 资本市场信号;日期以 URL 内嵌(2026-06-23)自证。"

@@ -68,3 +68,18 @@
   - signal
   - leverage
   note: AI 业务占集团营收约 38%、AI PC 出货超 1/3;杨元庆称两年内营收超千亿美元;日期以 URL 内嵌(20260525)自证。
+
+- id: 2026-05-28-lenovo-005
+  date: 2026-05-28
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "联想 AI PC 全球细分市场第一(份额 31%),AI 收入 +105% 占比 33%——产品/品类端领跑"
+  quote: "2026财报季：联想集团AI PC细分市场全球第一、AI收入+105%，领跑中国AI基建"
+  quote_type: title
+  url: https://news.bjd.com.cn/2026/05/28/11771394.shtml
+  fetched_at: "2026-07-16T00:35:00Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "产品/品类领先信号(区别于已有 W5 财报事件);日期以 URL 内嵌(2026/05/28)自证。"
