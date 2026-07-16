@@ -1,0 +1,69 @@
+# founders/google.yaml — Google 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 拉里·佩奇非 MBA 评委,履历经 Google 官方一手(google.com/about/our-story · about.google,curl 走
+# $HTTPS_PROXY+CA,坑 #1)+ 公开记录核实,每条里程碑带来源。诚实处理:Google 由拉里·佩奇与
+# Sergey Brin(谢尔盖·布林)共同创办;佩奇 2019-12 卸任 Alphabet CEO(现任 Sundar Pichai),
+# 仍为联合创始人/董事/控股股东。反捏造:不含编造引语;relation 为标注的分析;使命句为 Google 官方
+# 逐字原文。数字(市值/份额)近期需 live 核验。
+brand: google
+founder:
+  name_cn: 拉里·佩奇
+  name_en: Larry Page
+  role: 联合创始人 / 前 CEO(与 Sergey Brin 共同创办;现任 Alphabet CEO Sundar Pichai)
+  status: 已离任
+  # perspective_slug 留空:拉里·佩奇非 MBA 评委
+career:
+  - period: "1973-1995"
+    milestone: "1973-03-26 生于美国密歇根,父亲 Carl Victor Page 为计算机科学教授('从小浸在计算机里');1995 到斯坦福读研究生,由在校生 Sergey Brin 带其参观校园——初次见面'几乎事事不合',次年却结成搭档"
+    evidence: "Google 官方 google.com/about/our-story(curl 一手);传记交叉核对"
+    lens: [origin]
+  - period: "1996-1997"
+    milestone: "在宿舍里造出一个'用链接判断网页重要性'的搜索引擎,取名 BackRub(PageRank 算法的雏形);随后改名 Google(googol = 1 后面 100 个零的数学表达),对应使命'organize the world's information and make it universally accessible and useful'"
+    evidence: "Google 官方 google.com/about/our-story(curl 一手,使命为逐字原文)"
+    lens: [origin, category]
+  - period: "1998"
+    milestone: "1998-08 Sun 联合创始人 Andy Bechtolsheim 写下 10 万美元支票,Google Inc. 正式成立;团队从宿舍搬进 Susan Wojcicki(员工 #16、后 YouTube CEO)位于门洛帕克的车库办公"
+    evidence: "Google 官方 google.com/about/our-story(curl 一手)"
+    lens: [origin, leverage]
+  - period: "2001-2011"
+    milestone: "2001 引入 Eric Schmidt 任 CEO('成人监管'),佩奇主抓产品与技术;搜索广告(AdWords/AdSense)成为现金牛;2004 IPO;2005 收购 Android、2006 收购 YouTube"
+    evidence: "Alphabet/Google 公开记录;SEC 备案"
+    lens: [category, leverage]
+  - period: "2011-2015"
+    milestone: "2011-04 佩奇回任 Google CEO,推动 Chrome、Android、Google X 登月项目('10 倍思维');2015-08-10 发起 Alphabet 重组,佩奇任 Alphabet CEO、布林任总裁、Sundar Pichai 任 Google CEO"
+    evidence: "Alphabet 2015 创始人信 abc.xyz;公开记录"
+    lens: [category, identity]
+  - period: "2017-2019"
+    milestone: "2017 Google 研究者发表 Transformer 论文《Attention Is All You Need》(后来生成式 AI 的技术基石);2019-12 佩奇与布林卸任 Alphabet 管理层,Pichai 兼任 Alphabet CEO,佩奇仍为联合创始人/董事/控股股东"
+    evidence: "《Attention Is All You Need》(Google/arXiv);Alphabet 公告"
+    lens: [category, signal]
+  - period: "2022-2026(遗产/现状)"
+    milestone: "2022 ChatGPT 引发 Google'红色警报';2023-2024 推出 Gemini 迎战;2024-08 美国联邦法院裁定 Google 在搜索领域构成非法垄断(反垄断标志性裁决)——'发明了 Transformer 却在生成式 AI 被后来者偷袭'成为当代命题"
+    evidence: "公开司法记录(US v. Google, 2024-08 裁决);公开报道,需 live 核验"
+    lens: [signal, leverage]
+relation:
+  origin: >-
+    分析:Google 的起源与佩奇'斯坦福宿舍(1995-96)造 BackRub/PageRank、用链接判断网页重要性'
+    深度绑定;'organize the world's information'的使命(官方逐字)从第一天起就是品牌的北极星,
+    Bechtolsheim 的 10 万支票 + Wojcicki 车库是可核查的起源锚点。
+  category: >-
+    分析:佩奇定义了现代网络搜索 + 搜索广告商业模式(AdWords/AdSense),并以 Android/Chrome/Maps/
+    Gmail 扩张品类;Google 研究院 2017 发表的 Transformer 更是生成式 AI 的技术基石——品类创造史
+    极强,但'发明了核心技术却未率先商业化'是当代反讽。
+  leverage: >-
+    分析:搜索垄断 + 广告网络 + 数据飞轮 + Android 生态 + Chrome/默认分发 + TPU/DeepMind 构成极深护城河;
+    但 2024 美国法院'搜索非法垄断'裁决,使这条杠杆同时是最大的监管风险。
+  identity: >-
+    分析:'organize the world's information'、'Focus on the user'(十诫之首)、'Don't be evil'、
+    彩色极简与登月文化塑造了强辨识度身份;但'Don't be evil'淡出、Alphabet 重组与广告模式张力
+    让身份较早期更弥散。'google 成为动词'仍是极致的品牌资产。
+  signal: >-
+    分析:约两万亿美元市值、搜索/广告主导份额、数十亿用户是可核验的真实信号;但反垄断败诉、
+    以及在自己发明的 AI 技术上被 OpenAI/ChatGPT 抢先(创新者窘境),让'统治地位能否穿越 AI 范式
+    与监管'需 live 核验,不把历史优势当作永久胜局。
+sources:
+  - "Google 官方《Our story / From the garage to the Googleplex》 google.com/about/our-story(curl 一手:1995 斯坦福、BackRub、使命逐字、1998 Bechtolsheim 10 万支票、Wojcicki 车库)"
+  - "Google《Ten things we know to be true》 about.google/company-info/philosophy(curl 一手:'Focus on the user and all else will follow')"
+  - "Alphabet 2015 创始人信 abc.xyz(Alphabet 重组与佩奇任 Alphabet CEO)"
+  - "《Attention Is All You Need》(2017,Google 研究者,Transformer)"
+  - "US v. Google 反垄断裁决(2024-08,搜索非法垄断)· 公开司法与媒体报道,需 live 核验"
