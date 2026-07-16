@@ -177,6 +177,25 @@ def check_collabs():
     lines = [x for x in (r.stderr or r.stdout or "").strip().splitlines() if x.strip()]
     return False, "创始人晚餐违规 —— " + (lines[-1] if lines else "跑 validate_collabs.py")
 
+def check_industries():
+    """产业维度(docs/23):每个发布白名单品牌在 reports-meta 都有 industry 且 ∈ 6 个合法 CN 标签。
+    正则解析 reports-meta(不引 yaml 依赖,与本守卫零依赖风格一致)。"""
+    meta = rd("site/reports-meta.yaml")
+    wl = rd("site/published-reports.txt")
+    if meta is None or wl is None:
+        return True, "reports-meta / 白名单缺失(跳过)"
+    valid = {"人工智能", "消费", "硬科技·航天", "智能制造·硬件", "企业服务·安全", "教育"}
+    whitelist = [l.strip() for l in wl.splitlines() if l.strip() and not l.strip().startswith("#")]
+    ind_by = {}
+    for b in re.split(r"\n\s*- slug:\s*", "\n" + meta)[1:]:
+        slug = b.split("\n", 1)[0].strip()
+        m = re.search(r"\n\s*industry:\s*(\S+)", b)
+        ind_by[slug] = m.group(1).strip() if m else None
+    bad = [f"{s}={ind_by.get(s)!r}" for s in whitelist if ind_by.get(s) not in valid]
+    if bad:
+        return False, "产业标签缺失/非法:" + ", ".join(bad) + f"(须 ∈ {sorted(valid)})"
+    return True, f"产业维度自洽({len(whitelist)} 品牌均有合法 industry · 6 类)"
+
 CHECKS = [
     ("版本对齐", check_version_alignment),
     ("docs 索引完整", check_docs_index),
@@ -187,6 +206,7 @@ CHECKS = [
     ("panorama 名单", check_panorama_roster),
     ("创始人维度", check_founders),
     ("创始人晚餐", check_collabs),
+    ("产业维度", check_industries),
 ]
 
 def main():

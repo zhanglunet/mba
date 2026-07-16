@@ -168,8 +168,27 @@ def render_versions(slug, versions):
     return ('<div class="versions"><span class="vlabel">版本</span>' + "".join(links) + "</div>")
 
 
+# 产业维度(6 类,docs/23):品牌 → 产业。CN 标签为 reports-meta 单一真源,slug 用于 data 属性/筛选。
+INDUSTRIES = [
+    ("ai", "人工智能"),
+    ("consumer", "消费"),
+    ("deeptech", "硬科技·航天"),
+    ("manufacturing", "智能制造·硬件"),
+    ("enterprise", "企业服务·安全"),
+    ("education", "教育"),
+]
+IND_CN2SLUG = {cn: s for s, cn in INDUSTRIES}
+
+
+def industry_of(m):
+    """返回 (slug, cn_label);未标注或非法时 slug 为空。"""
+    cn = m.get("industry") or ""
+    return IND_CN2SLUG.get(cn, ""), cn
+
+
 def render_card(m, pending):
     slug = m["slug"]
+    islug, icn = industry_of(m)
     score = m.get("score_normalized")
     score_str = f"{score:.2f}" if isinstance(score, (int, float)) else "—"
     badge, delta_abs, spark_color, polar = movement_of(m)
@@ -179,10 +198,11 @@ def render_card(m, pending):
     date = fmt_date(m.get("audit_date"))
     return (
         f'      <div class="brand-card" data-score="{score if score is not None else 0}" '
-        f'data-date="{date}" data-delta="{delta_abs}">\n'
+        f'data-date="{date}" data-delta="{delta_abs}" data-industry="{islug}">\n'
         f'        <div class="bc-top">\n'
         f'          <a class="card-link" href="/reports/{slug}/"><span class="bc-brand">{esc(m["card_brand"])}</span></a>\n'
-        f'          <span class="chip" title="{esc(m.get("card_meta", ""))}">{esc(m.get("panel", ""))}</span>\n'
+        f'          <span class="bc-chips"><span class="ind-chip">{esc(icn)}</span>'
+        f'<span class="chip" title="{esc(m.get("card_meta", ""))}">{esc(m.get("panel", ""))}</span></span>\n'
         f"        </div>\n"
         f'        <div class="bc-score-row">\n'
         f'          <span class="bc-score">{score_str}</span>{badge}{spark}\n'
@@ -279,7 +299,22 @@ def build_block():
         '<button class="sort-btn" data-key="score">评分</button>'
         '<button class="sort-btn" data-key="delta">变动</button></span></div>'
     )
-    return render_kpis(reports) + "\n" + sort_bar + '\n      <div class="brand-grid" id="brandGrid">\n' + cards + "\n      </div>", len(reports)
+    # 产业筛选条(产业维度,docs/23):全部 + 6 产业(带计数),复用 sort-btn 视觉,client-side 过滤
+    counts = {s: 0 for s, _ in INDUSTRIES}
+    for m in reports:
+        s, _ = industry_of(m)
+        if s in counts:
+            counts[s] += 1
+    ind_btns = "".join(
+        f'<button class="ind-btn" data-ind="{s}">{esc(cn)} {counts[s]}</button>'
+        for s, cn in INDUSTRIES
+    )
+    ind_filter = (
+        '      <div class="ind-filter"><span class="sort-label">产业</span>'
+        f'<button class="ind-btn active" data-ind="all">全部 {len(reports)}</button>{ind_btns}</div>'
+    )
+    return (render_kpis(reports) + "\n" + sort_bar + "\n" + ind_filter
+            + '\n      <div class="brand-grid" id="brandGrid">\n' + cards + "\n      </div>"), len(reports)
 
 
 def splice(index_text: str, block: str) -> str:

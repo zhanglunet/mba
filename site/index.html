@@ -91,6 +91,17 @@
   .sort-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
   .sort-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+  /* ── 产业筛选条(产业维度)──────────────────────────────── */
+  .ind-filter { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 0 0 16px; }
+  .ind-btn { font: inherit; font-size: 12px; font-weight: 600; color: var(--ink); background: none;
+    border: 1px solid var(--hair); border-radius: 999px; padding: 2px 11px; cursor: pointer; }
+  .ind-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .ind-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .ind-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .bc-chips { display: inline-flex; gap: 6px; align-items: center; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
+  .ind-chip { font-size: 11px; font-weight: 700; color: var(--accent); background: #fbeee6;
+    border: 1px solid #e6b89c; border-radius: 999px; padding: 1px 9px; white-space: nowrap; }
+
   /* ── 品牌卡片网格 ─────────────────────────────────────── */
   .brand-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
   .brand-card { position: relative; background: var(--card); border: 1px solid var(--hair); border-radius: 6px; padding: 16px 18px 14px; transition: border-color 0.15s, transform 0.15s; }
@@ -190,11 +201,12 @@
       <!-- REPORTS:START — 生成自 site/reports-meta.yaml(scripts/build_home_cards.py)· 勿手改 -->
       <div class="kpi-row"><div class="kpi"><div class="kpi-label">监控品牌</div><div class="kpi-value">17</div><div class="kpi-sub">43 评委 · 10 面板</div></div><div class="kpi"><div class="kpi-label">最新审计</div><div class="kpi-value">07-16</div><div class="kpi-sub">DeepSeek / 深度求索 v1 / NVIDIA / 英伟达 v1</div></div><div class="kpi"><div class="kpi-label">最大变动</div><div class="kpi-value up">↑0.36</div><div class="kpi-sub">联想集团 4.4→4.76</div></div><div class="kpi"><div class="kpi-label">审计最高分</div><div class="kpi-value">8.88</div><div class="kpi-sub">NVIDIA / 英伟达 · vc-en</div></div></div>
       <div class="sort-bar"><span class="sort-label">品牌动向</span><span class="sort-controls">排序:<button class="sort-btn active" data-key="date">最近</button><button class="sort-btn" data-key="score">评分</button><button class="sort-btn" data-key="delta">变动</button></span></div>
+      <div class="ind-filter"><span class="sort-label">产业</span><button class="ind-btn active" data-ind="all">全部 17</button><button class="ind-btn" data-ind="ai">人工智能 6</button><button class="ind-btn" data-ind="consumer">消费 3</button><button class="ind-btn" data-ind="deeptech">硬科技·航天 3</button><button class="ind-btn" data-ind="manufacturing">智能制造·硬件 2</button><button class="ind-btn" data-ind="enterprise">企业服务·安全 2</button><button class="ind-btn" data-ind="education">教育 1</button></div>
       <div class="brand-grid" id="brandGrid">
-      <div class="brand-card" data-score="8.88" data-date="2026-07-16" data-delta="-1.0">
+      <div class="brand-card" data-score="8.88" data-date="2026-07-16" data-delta="-1.0" data-industry="ai">
         <div class="bc-top">
           <a class="card-link" href="/reports/nvidia/"><span class="bc-brand">NVIDIA · 英伟达</span></a>
-          <span class="chip" title="vc-en panel · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 黄仁勋是评委但不在本 panel">vc-en</span>
+          <span class="bc-chips"><span class="ind-chip">人工智能</span><span class="chip" title="vc-en panel · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 黄仁勋是评委但不在本 panel">vc-en</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">8.88</span>
@@ -204,10 +216,10 @@
         <p class="bc-headline">MBA 最高分:发明 GPU 品类 + 最深护城河,唯一分歧是垄断能否穿越浪潮</p>
         <div class="bc-links"><a href="/starmap/nvidia.html">品牌私有星图 →</a><a href="/founders/nvidia.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="8.0" data-date="2026-07-16" data-delta="-1.0">
+      <div class="brand-card" data-score="8.0" data-date="2026-07-16" data-delta="-1.0" data-industry="ai">
         <div class="bc-top">
           <a class="card-link" href="/reports/deepseek/"><span class="bc-brand">DeepSeek · 深度求索</span></a>
-          <span class="chip" title="ai-app-cn panel · 5 评委（杨植麟·王慧文·周鸿祎·傅盛·朱啸虎）· 雷达图 + 异议热力图 · 无自冲突">ai-app-cn</span>
+          <span class="bc-chips"><span class="ind-chip">人工智能</span><span class="chip" title="ai-app-cn panel · 5 评委（杨植麟·王慧文·周鸿祎·傅盛·朱啸虎）· 雷达图 + 异议热力图 · 无自冲突">ai-app-cn</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">8.00</span>
@@ -217,10 +229,10 @@
         <p class="bc-headline">R1 全球震动:信号最猛的一次品牌事件,理想主义能否穿越周期</p>
         <div class="bc-links"><a href="/starmap/deepseek.html">品牌私有星图 →</a><a href="/founders/deepseek.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="8.76" data-date="2026-07-12" data-delta="0.16">
+      <div class="brand-card" data-score="8.76" data-date="2026-07-12" data-delta="0.16" data-industry="deeptech">
         <div class="bc-top">
           <a class="card-link" href="/reports/spacex/"><span class="bc-brand">SpaceX</span></a>
-          <span class="chip" title="vc-en panel · EVOLUTION v1→v2 · watch 事件流驱动（IPO）· 5 评委 · delta 矩阵 + 雷达图 · 深科技 / 第一性原理">vc-en</span>
+          <span class="bc-chips"><span class="ind-chip">硬科技·航天</span><span class="chip" title="vc-en panel · EVOLUTION v1→v2 · watch 事件流驱动（IPO）· 5 评委 · delta 矩阵 + 雷达图 · 深科技 / 第一性原理">vc-en</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">8.76</span><span class="badge badge-up">↑0.16</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,25.0 91.0,5.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><line x1="5.0" y1="25.0" x2="91.0" y2="5.0" stroke="#1a7a4a" stroke-width="2" stroke-linecap="round"/><circle cx="91.0" cy="5.0" r="4" fill="#1a7a4a" stroke="var(--paper)" stroke-width="2"/></svg>
@@ -231,10 +243,10 @@
         <p class="bc-headline">史上最大 IPO 补上公开市场验证:8.60→8.76,登顶 MBA 审计史最高分</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/spacex/versions/v1_2026-07-12.html">v1</a><a href="/reports/spacex/">v2 · 当前</a></div>
         <div class="bc-links"><a href="/starmap/spacex.html">品牌私有星图 →</a><a href="/watch/spacex/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/spacex.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="7.72" data-date="2026-07-12" data-delta="-1.0">
+      <div class="brand-card" data-score="7.72" data-date="2026-07-12" data-delta="-1.0" data-industry="ai">
         <div class="bc-top">
           <a class="card-link" href="/reports/openai/"><span class="bc-brand">OpenAI · Codex</span></a>
-          <span class="chip" title="vc-en panel · FRESH v1 · 5 评委(rhoffman△/pthiel△ 早期渊源披露)· 产品聚焦 Codex · 20 个 curl 核验来源">vc-en</span>
+          <span class="bc-chips"><span class="ind-chip">人工智能</span><span class="chip" title="vc-en panel · FRESH v1 · 5 评委(rhoffman△/pthiel△ 早期渊源披露)· 产品聚焦 Codex · 20 个 curl 核验来源">vc-en</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">7.72</span>
@@ -245,10 +257,10 @@
         <p class="bc-headline">ChatGPT 即品类本身,Codex 分发翻盘;最大分歧:史上最大杠杆,还是最贵竞争的账单</p>
         <div class="bc-links"><a href="/starmap/openai.html">品牌私有星图 →</a><a href="/watch/openai/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/openai.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="7.08" data-date="2026-07-12" data-delta="-1.0">
+      <div class="brand-card" data-score="7.08" data-date="2026-07-12" data-delta="-1.0" data-industry="ai">
         <div class="bc-top">
           <a class="card-link" href="/reports/zhipu/"><span class="bc-brand">智谱 Zhipu AI · GLM · 02513.HK</span></a>
-          <span class="chip" title="ai-app-cn panel · FRESH v1 · 5 评委(yangzhilin△ 竞对披露)· 最大分歧 Leverage Δ4(傅盛 9 vs 朱啸虎 5)">ai-app-cn</span>
+          <span class="bc-chips"><span class="ind-chip">人工智能</span><span class="chip" title="ai-app-cn panel · FRESH v1 · 5 评委(yangzhilin△ 竞对披露)· 最大分歧 Leverage Δ4(傅盛 9 vs 朱啸虎 5)">ai-app-cn</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">7.08</span>
@@ -259,10 +271,10 @@
         <p class="bc-headline">「大模型第一股」:起点最早、开源最激进的中国 AI,账本尚未闭合</p>
         <div class="bc-links"><a href="/starmap/zhipu.html">品牌私有星图 →</a><a href="/watch/zhipu/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/zhipu.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="6.8" data-date="2026-07-12" data-delta="0.08">
+      <div class="brand-card" data-score="6.8" data-date="2026-07-12" data-delta="0.08" data-industry="consumer">
         <div class="bc-top">
           <a class="card-link" href="/reports/meituan/"><span class="bc-brand">美团 Meituan</span></a>
-          <span class="chip" title="vc-cn panel · EVOLUTION v1→v2→v3 · 5 评委（朱啸虎·张磊★·徐新·雷军·沈南鹏★）· delta 表 + gitGraph + 雷达对比">vc-cn</span>
+          <span class="bc-chips"><span class="ind-chip">消费</span><span class="chip" title="vc-cn panel · EVOLUTION v1→v2→v3 · 5 评委（朱啸虎·张磊★·徐新·雷军·沈南鹏★）· delta 表 + gitGraph + 雷达对比">vc-cn</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">6.80</span><span class="badge badge-up">↑0.08</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,5.0 48.0,25.0 91.0,23.5" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><line x1="48.0" y1="25.0" x2="91.0" y2="23.5" stroke="#1a7a4a" stroke-width="2" stroke-linecap="round"/><circle cx="91.0" cy="23.5" r="4" fill="#1a7a4a" stroke="var(--paper)" stroke-width="2"/></svg>
@@ -273,10 +285,10 @@
         <p class="bc-headline">止血已证、扭亏未证:Q1 减亏 96 亿,6.72→6.80 克制回升一格</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/meituan/versions/v1_2026-06-28.html">v1</a><a href="/reports/meituan/versions/v2_2026-07-11.html">v2</a><a href="/reports/meituan/">v3 · 当前</a></div>
         <div class="bc-links"><a href="/starmap/meituan.html">品牌私有星图 →</a><a href="/watch/meituan/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/meituan.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="6.04" data-date="2026-07-12" data-delta="0.16">
+      <div class="brand-card" data-score="6.04" data-date="2026-07-12" data-delta="0.16" data-industry="manufacturing">
         <div class="bc-top">
           <a class="card-link" href="/reports/chengshi-auto/"><span class="bc-brand">橙仕汽车 Chengshi Auto</span></a>
-          <span class="chip" title="auto panel · EVOLUTION v6→v7(50 分制→250 分制,0.4.3)· 5 评委 · watch 3 事件消费">auto</span>
+          <span class="bc-chips"><span class="ind-chip">智能制造·硬件</span><span class="chip" title="auto panel · EVOLUTION v6→v7(50 分制→250 分制,0.4.3)· 5 评委 · watch 3 事件消费">auto</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">6.04</span><span class="badge badge-down">↓0.16</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,5.0 91.0,25.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><line x1="5.0" y1="5.0" x2="91.0" y2="25.0" stroke="#b5341a" stroke-width="2" stroke-linecap="round"/><circle cx="91.0" cy="25.0" r="4" fill="#b5341a" stroke="var(--paper)" stroke-width="2"/></svg>
@@ -286,10 +298,10 @@
         <p class="bc-headline">出口大单坐实出海杠杆,公开账本却断流两年:6.20 → 6.04</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/chengshi-auto/versions/v2_2026-05-18.html">v2</a><a href="/reports/chengshi-auto/versions/v3_2026-05-18.html">v3</a><a href="/reports/chengshi-auto/versions/v4_2026-05-18.html">v4</a><a href="/reports/chengshi-auto/versions/v5_2026-05-18.html">v5</a><a href="/reports/chengshi-auto/versions/v6_2026-05-18.html">v6</a><a href="/reports/chengshi-auto/">v7 · 当前</a></div>
         <div class="bc-links"><a href="/starmap/chengshi-auto.html">品牌私有星图 →</a><a href="/watch/chengshi-auto/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/chengshi-auto.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="5.83" data-date="2026-07-12" data-delta="0.34">
+      <div class="brand-card" data-score="5.83" data-date="2026-07-12" data-delta="0.34" data-industry="enterprise">
         <div class="bc-top">
           <a class="card-link" href="/reports/qianxin/"><span class="bc-brand">奇安信 QiAnXin</span></a>
-          <span class="chip" title="security-cn-global panel · EVOLUTION v1→v2 · 首个 watch 事件流驱动重审 · 6 评委 · delta 矩阵 + 雷达图">security-cn-global</span>
+          <span class="bc-chips"><span class="ind-chip">企业服务·安全</span><span class="chip" title="security-cn-global panel · EVOLUTION v1→v2 · 首个 watch 事件流驱动重审 · 6 评委 · delta 矩阵 + 雷达图">security-cn-global</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">5.83</span><span class="badge badge-down">↓0.34</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,5.0 91.0,25.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><line x1="5.0" y1="5.0" x2="91.0" y2="25.0" stroke="#b5341a" stroke-width="2" stroke-linecap="round"/><circle cx="91.0" cy="25.0" r="4" fill="#b5341a" stroke="var(--paper)" stroke-width="2"/></svg>
@@ -299,10 +311,10 @@
         <p class="bc-headline">首个 watch 流驱动重审:年报锚点校正,营收口径 67 亿→43.92 亿,Signal 全员下调</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/qianxin/versions/v1_2026-06-26.html">v1</a><a href="/reports/qianxin/">v2 · 当前</a></div>
         <div class="bc-links"><a href="/starmap/qianxin.html">品牌私有星图 →</a><a href="/watch/qianxin/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/qianxin.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="5.77" data-date="2026-07-12" data-delta="0.16">
+      <div class="brand-card" data-score="5.77" data-date="2026-07-12" data-delta="0.16" data-industry="enterprise">
         <div class="bc-top">
           <a class="card-link" href="/reports/asiainfo/"><span class="bc-brand">亚信 AsiaInfo · 01675.HK + 688225.SH</span></a>
-          <span class="chip" title="security-cn-global panel · EVOLUTION v1→v2 · watch 事件流驱动 · 6 评委 · delta 矩阵 + 雷达图 · 统一品牌（亚信科技 + 亚信安全）">security-cn-global</span>
+          <span class="bc-chips"><span class="ind-chip">企业服务·安全</span><span class="chip" title="security-cn-global panel · EVOLUTION v1→v2 · watch 事件流驱动 · 6 评委 · delta 矩阵 + 雷达图 · 统一品牌（亚信科技 + 亚信安全）">security-cn-global</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">5.77</span><span class="badge badge-down">↓0.16</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,5.0 91.0,25.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><line x1="5.0" y1="5.0" x2="91.0" y2="25.0" stroke="#b5341a" stroke-width="2" stroke-linecap="round"/><circle cx="91.0" cy="25.0" r="4" fill="#b5341a" stroke="var(--paper)" stroke-width="2"/></svg>
@@ -312,10 +324,10 @@
         <p class="bc-headline">被命脉客户禁入三年,护城河原来是许可证——Leverage 全线下调</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/asiainfo/versions/v1_2026-07-12.html">v1</a><a href="/reports/asiainfo/">v2 · 当前</a></div>
         <div class="bc-links"><a href="/starmap/asiainfo.html">品牌私有星图 →</a><a href="/watch/asiainfo/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/asiainfo.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="5.77" data-date="2026-07-12" data-delta="0.27">
+      <div class="brand-card" data-score="5.77" data-date="2026-07-12" data-delta="0.27" data-industry="deeptech">
         <div class="bc-top">
           <a class="card-link" href="/reports/yuanxin/"><span class="bc-brand">垣信卫星 · 千帆星座 SpaceSail</span></a>
-          <span class="chip" title="security-cn-global panel · EVOLUTION v1→v2 · watch 事件流驱动 · 6 评委（马斯克△竞对披露）· delta 矩阵 + 雷达图 · 卫星互联网">security-cn-global</span>
+          <span class="bc-chips"><span class="ind-chip">硬科技·航天</span><span class="chip" title="security-cn-global panel · EVOLUTION v1→v2 · watch 事件流驱动 · 6 评委（马斯克△竞对披露）· delta 矩阵 + 雷达图 · 卫星互联网">security-cn-global</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">5.77</span><span class="badge badge-up">↑0.27</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,25.0 91.0,5.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><line x1="5.0" y1="25.0" x2="91.0" y2="5.0" stroke="#1a7a4a" stroke-width="2" stroke-linecap="round"/><circle cx="91.0" cy="5.0" r="4" fill="#1a7a4a" stroke="var(--paper)" stroke-width="2"/></svg>
@@ -325,10 +337,10 @@
         <p class="bc-headline">组网提速 + 手机直连国内首例:5.50→5.77,运力短板仍未合拢</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/yuanxin/versions/v1_2026-07-12.html">v1</a><a href="/reports/yuanxin/">v2 · 当前</a></div>
         <div class="bc-links"><a href="/starmap/yuanxin.html">品牌私有星图 →</a><a href="/watch/yuanxin/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/yuanxin.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="4.76" data-date="2026-07-12" data-delta="0.36">
+      <div class="brand-card" data-score="4.76" data-date="2026-07-12" data-delta="0.36" data-industry="manufacturing">
         <div class="bc-top">
           <a class="card-link" href="/reports/lenovo/"><span class="bc-brand">联想集团 Lenovo Group · 0992.HK</span></a>
-          <span class="chip" title="default panel · EVOLUTION v1→v2(50 分制→250 分制,0.4.3)· 5 评委 · watch 3 事件全消费">default</span>
+          <span class="bc-chips"><span class="ind-chip">智能制造·硬件</span><span class="chip" title="default panel · EVOLUTION v1→v2(50 分制→250 分制,0.4.3)· 5 评委 · watch 3 事件全消费">default</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">4.76</span><span class="badge badge-up">↑0.36</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,25.0 91.0,5.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><line x1="5.0" y1="25.0" x2="91.0" y2="5.0" stroke="#1a7a4a" stroke-width="2" stroke-linecap="round"/><circle cx="91.0" cy="5.0" r="4" fill="#1a7a4a" stroke="var(--paper)" stroke-width="2"/></svg>
@@ -339,10 +351,10 @@
         <p class="bc-headline">史上最佳财年撞上没治好的命名权:引擎升级重审 4.40 → 4.76</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/lenovo/versions/v1_2026-05-10.html">v1</a><a href="/reports/lenovo/">v2 · 当前</a></div>
         <div class="bc-links"><a href="/starmap/lenovo.html">品牌私有星图 →</a><a href="/watch/lenovo/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/lenovo.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="7.16" data-date="2026-07-11" data-delta="-1.0">
+      <div class="brand-card" data-score="7.16" data-date="2026-07-11" data-delta="-1.0" data-industry="ai">
         <div class="bc-top">
           <a class="card-link" href="/reports/anthropic/"><span class="bc-brand">Anthropic (Claude)</span></a>
-          <span class="chip" title="PANEL-MERGE · vc-en × vc-cn 双面板 · 10 评委 · Panel Comparison + 叠加雷达 + delta 热力图 · v1 FRESH→v2 EVOLUTION→v3 跨面板">vc-en</span>
+          <span class="bc-chips"><span class="ind-chip">人工智能</span><span class="chip" title="PANEL-MERGE · vc-en × vc-cn 双面板 · 10 评委 · Panel Comparison + 叠加雷达 + delta 热力图 · v1 FRESH→v2 EVOLUTION→v3 跨面板">vc-en</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">7.16</span><span class="badge badge-mode">v3 跨面板</span><svg class="spark" width="96" height="30" viewBox="0 0 96 30" aria-hidden="true"><polyline points="5.0,5.0 48.0,6.7 91.0,25.0" fill="none" stroke="#c9c3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="91.0" cy="25.0" r="4" fill="#c1440e" stroke="var(--paper)" stroke-width="2"/></svg>
@@ -353,10 +365,10 @@
         <p class="bc-headline">v3 首次跨面板对比:两面板方向惊人一致,vc-cn 系统性偏严 −2.2</p><div class="versions"><span class="vlabel">版本</span><a href="/reports/anthropic/versions/v1_2026-06-26.html">v1</a><a href="/reports/anthropic/versions/v2_2026-07-10.html">v2</a><a href="/reports/anthropic/">v3 · 当前</a></div>
         <div class="bc-links"><a href="/starmap/anthropic.html">品牌私有星图 →</a><a href="/watch/anthropic/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/anthropic.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="8.64" data-date="2026-06-28" data-delta="-1.0">
+      <div class="brand-card" data-score="8.64" data-date="2026-06-28" data-delta="-1.0" data-industry="consumer">
         <div class="bc-top">
           <a class="card-link" href="/reports/hermes/"><span class="bc-brand">Hermès 爱马仕</span></a>
-          <span class="chip" title="luxury-en panel · 5评委（Arnault△·Wintour·Cucinelli·Tom Ford·Sarah Burton）· 全英文评语 · 三项MBA历史纪录">luxury-en</span>
+          <span class="bc-chips"><span class="ind-chip">消费</span><span class="chip" title="luxury-en panel · 5评委（Arnault△·Wintour·Cucinelli·Tom Ford·Sarah Burton）· 全英文评语 · 三项MBA历史纪录">luxury-en</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">8.64</span>
@@ -367,10 +379,10 @@
         <p class="bc-headline">审计史最高分:拒绝本身即品牌——每一次拒绝都强化品类定义</p>
         <div class="bc-links"><a href="/starmap/hermes.html">品牌私有星图 →</a><a href="/watch/hermes/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/hermes.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="6.48" data-date="2026-06-28" data-delta="-1.0">
+      <div class="brand-card" data-score="6.48" data-date="2026-06-28" data-delta="-1.0" data-industry="consumer">
         <div class="bc-top">
           <a class="card-link" href="/reports/genki-forest/"><span class="bc-brand">元气森林 Genki Forest</span></a>
-          <span class="chip" title="consumer-cn panel · 5 评委（江南春·张兰·罗永浩·阳萌·钟睒睒△）· 雷达图 + 评委对比 · 竞争对手偏见说明">consumer-cn</span>
+          <span class="bc-chips"><span class="ind-chip">消费</span><span class="chip" title="consumer-cn panel · 5 评委（江南春·张兰·罗永浩·阳萌·钟睒睒△）· 雷达图 + 评委对比 · 竞争对手偏见说明">consumer-cn</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">6.48</span>
@@ -380,10 +392,10 @@
         <p class="bc-headline">史上最强 Identity(7.6)× 最弱 Signal(5.4)的历史异常</p>
         <div class="bc-links"><a href="/starmap/genki-forest.html">品牌私有星图 →</a><a href="/watch/genki-forest/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/genki-forest.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="6.2" data-date="2026-06-28" data-delta="-1.0">
+      <div class="brand-card" data-score="6.2" data-date="2026-06-28" data-delta="-1.0" data-industry="education">
         <div class="bc-top">
           <a class="card-link" href="/reports/tal-education/"><span class="bc-brand">好未来 TAL Education · TAL.NYSE</span></a>
-          <span class="chip" title="edu-cn panel · 4 评委（俞敏洪△·李可佳·吴俊东·萨尔曼·可汗）· 雷达图 + 评委对比 · 创始人自冲突 + 竞争对手偏见说明">edu-cn</span>
+          <span class="bc-chips"><span class="ind-chip">教育</span><span class="chip" title="edu-cn panel · 4 评委（俞敏洪△·李可佳·吴俊东·萨尔曼·可汗）· 雷达图 + 评委对比 · 创始人自冲突 + 竞争对手偏见说明">edu-cn</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">6.20</span>
@@ -394,10 +406,10 @@
         <p class="bc-headline">首个「品类被政策摧毁后重建」审计案例:双减后的残局与数据壁垒</p>
         <div class="bc-links"><a href="/starmap/tal-education.html">品牌私有星图 →</a><a href="/watch/tal-education/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/tal-education.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="7.44" data-date="2026-06-26" data-delta="-1.0">
+      <div class="brand-card" data-score="7.44" data-date="2026-06-26" data-delta="-1.0" data-industry="deeptech">
         <div class="bc-top">
           <a class="card-link" href="/reports/dji/"><span class="bc-brand">DJI 大疆创新</span></a>
-          <span class="chip" title="cross-border panel · 5 评委 · 雷达图 + 异议热力图 + 影响力构造图 · R2 辩论">cross-border</span>
+          <span class="bc-chips"><span class="ind-chip">硬科技·航天</span><span class="chip" title="cross-border panel · 5 评委 · 雷达图 + 异议热力图 + 影响力构造图 · R2 辩论">cross-border</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">7.44</span>
@@ -408,10 +420,10 @@
         <p class="bc-headline">无争议品类创造者,叙事空白暴露于 FCC 禁令生死考场</p>
         <div class="bc-links"><a href="/starmap/dji.html">品牌私有星图 →</a><a href="/watch/dji/cockpit.html" style="margin-left:14px">舆情驾驶舱 →</a><a href="/founders/dji.html" style="margin-left:14px">创始人 →</a></div>
       </div>
-      <div class="brand-card" data-score="6.85" data-date="2026-06-26" data-delta="-1.0">
+      <div class="brand-card" data-score="6.85" data-date="2026-06-26" data-delta="-1.0" data-industry="ai">
         <div class="bc-top">
           <a class="card-link" href="/reports/kimichat/"><span class="bc-brand">Kimi 月之暗面 (Moonshot AI)</span></a>
-          <span class="chip" title="ai-app-cn panel · 4 评委（王慧文·周鸿祎·傅盛·朱啸虎★）· 雷达图 + 异议热力图 · 创始人自冲突说明">ai-app-cn</span>
+          <span class="bc-chips"><span class="ind-chip">人工智能</span><span class="chip" title="ai-app-cn panel · 4 评委（王慧文·周鸿祎·傅盛·朱啸虎★）· 雷达图 + 异议热力图 · 创始人自冲突说明">ai-app-cn</span></span>
         </div>
         <div class="bc-score-row">
           <span class="bc-score">6.85</span>
@@ -456,6 +468,20 @@
       });
       cards.forEach(function (c) { grid.appendChild(c); });
       document.querySelectorAll('.sort-btn').forEach(function (x) { x.classList.toggle('active', x === btn); });
+    });
+  });
+})();
+// 产业筛选(全部 / 6 产业)。data-industry 由生成器写入;与排序共存(筛选改 display,排序改顺序)。
+(function () {
+  var grid = document.getElementById('brandGrid');
+  if (!grid) return;
+  document.querySelectorAll('.ind-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var ind = btn.dataset.ind;
+      Array.prototype.slice.call(grid.children).forEach(function (c) {
+        c.style.display = (ind === 'all' || c.dataset.industry === ind) ? '' : 'none';
+      });
+      document.querySelectorAll('.ind-btn').forEach(function (x) { x.classList.toggle('active', x === btn); });
     });
   });
 })();
