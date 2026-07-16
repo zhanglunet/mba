@@ -106,6 +106,7 @@ python3 scripts/perspective-tools/firewall_check.py                  # 反捏造
 python3 scripts/perspective-tools/quality_check.py <path/to/SKILL.md># 必须 6/6(CI 只对本 PR 改动的 SKILL 阻断)
 python3 scripts/validate_panels.py                                   # panel 能解析
 python3 scripts/check_self_conflict.py                               # self-conflict 硬 gate:每套 SKILL 声明 --panel-drop <own-slug>、关联表 slug 真实
+python3 scripts/founder-tools/validate_founders.py --selftest        # 创始人维度硬 gate:founders/*.yaml schema + brand 对齐白名单 + 履历带 provenance(docs/21)
 python3 scripts/build_agents_api.py --check                          # site/api 无漂移(坑 #2)
 python3 packages/mcp-server/scripts/generate-personas.py             # 再 git diff --quiet 确认无漂移
 ```

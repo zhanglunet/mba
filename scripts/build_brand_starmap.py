@@ -270,7 +270,10 @@ def render(g):
             f"中环 <b>{g['n_judges']} 位评委</b>(细线为每位评委对每个镜头的逐格打分)· "
             f"外环 <b>{g['n_events']} 条舆情事件</b>(P0-P3 定大小、正负向定颜色,连到其影响的镜头)。"
             f"归一化总分 <b>{esc(sc)}</b>。")
+    founder_crumb = (f"　/　<a href='/founders/{esc(g['slug'])}.html'>创始人维度</a>"
+                     if (ROOT / "founders" / f"{g['slug']}.yaml").exists() else "")
     return (TEMPLATE
+            .replace("__FOUNDER_CRUMB__", founder_crumb)
             .replace("__DATA__", data_json)
             .replace("__BRAND__", esc(g["cn"]))
             .replace("__SUBTITLE__", esc(g["en"] or ""))
@@ -369,7 +372,7 @@ TEMPLATE = r"""<!doctype html>
     <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/panorama.html">评委全景</a><a href="/starmap.html">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
   </header>
 
-  <p class="crumb"><a href="/starmap.html">← 全维度知识星图</a>　/　<a href="/reports/__SLUG__/">__BRAND__ 审计报告</a></p>
+  <p class="crumb"><a href="/starmap.html">← 全维度知识星图</a>　/　<a href="/reports/__SLUG__/">__BRAND__ 审计报告</a>__FOUNDER_CRUMB__</p>
   <h1>__BRAND__<span class="sub">__SUBTITLE__ · 品牌私有星图</span></h1>
   <p class="lede">__LEDE__</p>
 

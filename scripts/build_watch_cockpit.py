@@ -20,6 +20,7 @@ import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 WATCH_DIR = ROOT / "watch"
+FOUNDERS_DIR = ROOT / "founders"
 OUT_DIR = ROOT / "site" / "watch"
 META = ROOT / "site" / "reports-meta.yaml"
 
@@ -172,8 +173,11 @@ def render(d):
         )
     dim_opts = "".join(f"<option value='{k}'>{k} {esc(v)}</option>" for k, v in WDIM.items())
     src_opts = "".join(f"<option value='{k}'>{esc(vn)}</option>" for k, vn in SRC_CN.items() if k)
+    founder_crumb = (f"　/　<a href='/founders/{esc(d['slug'])}.html'>创始人维度</a>"
+                     if d.get("has_founder") else "")
 
     return TEMPLATE \
+        .replace("__FOUNDER_CRUMB__", founder_crumb) \
         .replace("__BRAND__", esc(d["brand"])).replace("__SLUG__", esc(d["slug"])) \
         .replace("__TOTAL__", str(d["total"])).replace("__P0__", str(d["p0"])).replace("__P1__", str(d["p1"])) \
         .replace("__POSPCT__", pos_pct).replace("__NINV__", str(d["n_invest"])) \
@@ -245,7 +249,7 @@ TEMPLATE = r"""<!doctype html>
     <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/starmap.html">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
   </header>
 
-  <p class="crumb"><a href="/watch/__SLUG__/">← __BRAND__ 舆情时间线</a>　/　<a href="/watch/cockpit.html">全站驾驶舱</a>　/　<a href="/watch/">舆情总览</a>　/　<a href="/reports/__SLUG__/">审计报告</a></p>
+  <p class="crumb"><a href="/watch/__SLUG__/">← __BRAND__ 舆情时间线</a>　/　<a href="/watch/cockpit.html">全站驾驶舱</a>　/　<a href="/watch/">舆情总览</a>　/　<a href="/reports/__SLUG__/">审计报告</a>__FOUNDER_CRUMB__</p>
   <h1>__BRAND__<span class="sub">舆情驾驶舱</span></h1>
 
   <h2>管理层摘要</h2>
@@ -466,6 +470,7 @@ def main(argv):
     meta = yaml.safe_load(open(META, encoding="utf-8")) or {}
     names = {r["slug"]: r.get("card_brand", r["slug"]) for r in (meta.get("reports") or [])}
     only = [a for a in argv if not a.startswith("-")]
+    founders = {p.stem for p in FOUNDERS_DIR.glob("*.yaml")} if FOUNDERS_DIR.is_dir() else set()
     built = 0
     brand_ds = []
     for path in sorted(glob.glob(str(WATCH_DIR / "*" / "events.yaml"))):
@@ -476,6 +481,7 @@ def main(argv):
         if not events:
             continue
         d = aggregate(slug, events, names.get(slug, slug))
+        d["has_founder"] = slug in founders
         brand_ds.append(d)
         outdir = OUT_DIR / slug
         outdir.mkdir(parents=True, exist_ok=True)

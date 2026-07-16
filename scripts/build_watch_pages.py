@@ -29,6 +29,7 @@ except ImportError:
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WATCH_DIR = os.path.join(ROOT, "watch")
+FOUNDERS_DIR = os.path.join(ROOT, "founders")
 OUT_DIR = os.path.join(ROOT, "site", "watch")
 META = os.path.join(ROOT, "site", "reports-meta.yaml")
 MATRIX = os.path.join(WATCH_DIR, "matrix.yaml")
@@ -79,7 +80,7 @@ def render_event(e):
     </article>'''
 
 
-def render_page(slug, brand_name, events):
+def render_page(slug, brand_name, events, has_founder=False):
     events = sorted(events, key=lambda e: fmt_date(e.get("date")), reverse=True)
     p0 = sum(1 for e in events if e.get("severity") == "P0" and not e.get("consumed_by"))
     p1 = sum(1 for e in events if e.get("severity") == "P1" and not e.get("consumed_by"))
@@ -88,6 +89,8 @@ def render_page(slug, brand_name, events):
     rec_html = ('<span class="wchip wchip-rec">触发规则命中 · 建议重审</span>' if rec
                 else '<span class="wchip wchip-ok">未触发重审建议</span>')
     body = "\n\n".join(render_event(e) for e in events)
+    founder_link = (f' · <a href="/founders/{esc(slug)}.html" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);font-weight:600">创始人维度 →</a>'
+                    if has_founder else '')
     return f'''<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -165,7 +168,7 @@ def render_page(slug, brand_name, events):
 
   <h1>{esc(brand_name)} · 舆情信号</h1>
   <p class="lede">Brand Watch 事件流 · {len(events)} 条可溯源信号 · 每条直链原文 · 分级与方向为模型判断(docs/15)<br>
-    <a href="/watch/{esc(slug)}/cockpit.html" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);font-weight:600">舆情驾驶舱(管理层看板)→</a></p>
+    <a href="/watch/{esc(slug)}/cockpit.html" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);font-weight:600">舆情驾驶舱(管理层看板)→</a>{founder_link}</p>
   <div class="summary">
     <span class="wchip wchip-p0">待审 P0×{p0}</span>
     <span class="wchip wchip-p1">待审 P1×{p1}</span>
@@ -345,6 +348,8 @@ def main():
     reports = meta.get("reports") or []
     names = {r["slug"]: r.get("card_brand", r["slug"]) for r in reports}
     matrix = (yaml.safe_load(open(MATRIX, encoding="utf-8")) or {}).get("brands", {})
+    founders = {os.path.splitext(os.path.basename(p))[0]
+                for p in glob.glob(os.path.join(FOUNDERS_DIR, "*.yaml"))}
     as_of = datetime.date.today()
 
     all_events = {}
@@ -356,7 +361,7 @@ def main():
         out = os.path.join(OUT_DIR, slug)
         os.makedirs(out, exist_ok=True)
         with open(os.path.join(out, "index.html"), "w", encoding="utf-8") as f:
-            f.write(render_page(slug, names.get(slug, slug), events))
+            f.write(render_page(slug, names.get(slug, slug), events, slug in founders))
         print(f"[watch-pages] site/watch/{slug}/index.html ({len(events)} events)")
         n += 1
 

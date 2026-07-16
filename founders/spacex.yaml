@@ -1,0 +1,61 @@
+# founders/spacex.yaml — SpaceX 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 数据来源:复用 perspectives/musk-perspective/references/research/06-timeline.md
+# (Period/Node/Public Evidence 五列表)+ metric-brand-auditor/self-conflict.yaml。
+# 反捏造:career[].evidence 为 provenance 标注(非逐字引语);relation 为**标注的分析**,
+# 不冒充本人原话。数字/近期动态需 live 核验(见 06-timeline cutoff 注记)。
+brand: spacex
+founder:
+  name_cn: 埃隆·马斯克
+  name_en: Elon Musk
+  role: 创始人 / CEO / CTO
+  status: 现任
+  perspective_slug: musk
+career:
+  - period: "1971-1995"
+    milestone: "南非—加拿大—美国,早期计算机启蒙;局外人式的技术身份与风险偏好成型"
+    evidence: "public bios;Isaacson biography(06-timeline)"
+    lens: [origin]
+  - period: "1999-2002"
+    milestone: "X.com / PayPal:支付与平台野心,冲突密集的经营风格"
+    evidence: "public histories;biography(06-timeline)"
+    lens: [category, leverage]
+  - period: "2002"
+    milestone: "创立 SpaceX,把软件财富转投硬核航天——创始人把自身赌注押上"
+    evidence: "SpaceX / NASA histories(06-timeline)"
+    lens: [origin, signal]
+  - period: "2008"
+    milestone: "Tesla 与 SpaceX 濒临同时倒闭:同时押上两者的低谷神话(timeline: fund both or lose both),创始人不外包风险"
+    evidence: "biography / interviews(06-timeline Phase 2 founder-collateral lens)"
+    lens: [origin, signal]
+  - period: "2012-2016"
+    milestone: "Falcon 9 与可复用火箭获得真实验证:野心变成现实世界的证据"
+    evidence: "Tesla / SpaceX records(06-timeline)"
+    lens: [signal]
+  - period: "2019-2021"
+    milestone: "Starship / Starbase 快速迭代:把工厂当作产品(timeline: factory as product),把可见的失败循环公开化"
+    evidence: "Everyday Astronaut interviews(06-timeline)"
+    lens: [leverage, identity]
+  - period: "2023-2025"
+    milestone: "xAI / Starship 试飞等前沿扩张,时间线债务上升(近期交付需 live 核验)"
+    evidence: "public announcements;06-timeline 标注需 live verification"
+    lens: [category, signal]
+relation:
+  origin: >-
+    分析:SpaceX 的起源叙事与马斯克本人高度绑定——2002 年他把软件套现的财富转投航天、
+    2008 年宁可同时押上 Tesla 与 SpaceX 也不外包风险,是品牌创始人把命运押上这一叙事的真实锚点。
+  category: >-
+    分析:可复用火箭把航天的品类定义从一次性烧钱改写为以制造与复用系统为核心,
+    这一重定义与创始人的第一性原理式判断同源。
+  leverage: >-
+    分析:把工厂当作产品、把失败循环公开快速迭代,是 SpaceX 相对传统航天的核心杠杆,
+    也是创始人从 Model 3 制造地狱中提炼的经营教义在航天侧的迁移。
+  identity: >-
+    分析:创始人身份权力在 2022 年后随 X/xAI 扩张而膨胀,给品牌带来中立性与注意力外溢的风险
+    (self-conflict:审计 SpaceX 须 --panel-drop musk)。
+  signal: >-
+    分析:Falcon 9 复用、Starship 试飞是可核验的真实信号;但激进时间承诺不等于已兑现成绩,
+    近期交付一律 live 核验,不把预测当结果。
+sources:
+  - "perspectives/musk-perspective/references/research/06-timeline.md"
+  - "metric-brand-auditor/self-conflict.yaml (musk → SpaceX/Starlink)"
