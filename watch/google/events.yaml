@@ -1,0 +1,50 @@
+# watch/google/events.yaml — google 舆情事件流(首批冷启动,2026-07-16)
+#
+# 采源:公开 RSS(官方 newsroom / blog + Google News RSS)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(Google News 去尾部来源名);direction / dim / severity / lens_map
+#   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-07-01-google-001
+  date: 2026-07-01
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "在与 Klarna 的反垄断诉讼中败诉(约 20 亿美元)"
+  quote: "Klarna wins $2B Google antitrust case"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxQck9yVWtXWUZxTHFvUkM2Y1dHRlY2V2liMGdhT3hlVnBKbWROUzZTNDI4U290WXlSR3R3YWdRQUt0VkliZk9TVTdZV0xLdmM5dzFNWnRSbEdoTjVrYzZSenN0MlZaWTZDUnZVWkNoN25mdzlLenZ4V0NSQ0lyUXBpYnpuS2t5OGh3T2h2OVdaRXpRcUNMSnQ1ZDFEcGpYZkZFMTdNUU03MFVtTDlRWG53aV9YWXFGM0U2OFE?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: finance
+  lens_map: [leverage, signal]
+  note: "来源:Payments Dive。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-15-google-002
+  date: 2026-07-15
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "请求欧盟最高法院维持撤销 17 亿欧元反垄断罚款的裁决"
+  quote: "Google urges EU top court to back ruling scrapping $1.7 billion antitrust fine"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixAFBVV95cUxNUmFxVGNfZVFSZC1QbU10c0VOcXhMOEJlOU1sUDlteW8ta3htVW5yeXU2b1dZMUNsT05vZ043WVVOM2NEMmpLRGlabXNYbVc3STRhSGk0WmhpelRhQUZzVHd2ZlJRUDE0Q1ZIdnFwRnNUemRtc3hiSE51ZjR0aWpha1gwR3RiTFZ6YjFMSl9VLThTRDB3Y2FMYVNxRWRaZ1hobUMtWHE1Q0hOSURnNVFvZGlKSFZrdmV0YUUzY1pIR3lxYzFi?oc=5
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: media
+  lens_map: [leverage]
+  note: "来源:Reuters。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-16-google-003
+  date: 2026-07-16
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NotebookLM 更名并并入 Gemini Notebook"
+  quote: "NotebookLM is now Gemini Notebook"
+  quote_type: title
+  url: https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/
+  fetched_at: "2026-07-16T15:30:00Z"
+  source_type: official
+  lens_map: [category]
+  note: "首批冷启动;日期取自源 feed 的 pubDate。"
