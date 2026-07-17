@@ -1,0 +1,65 @@
+# watch/palantir/events.yaml — palantir 舆情事件流(首批冷启动,2026-07-17)
+#
+# 采源:Google News RSS(含官方 + 媒体/财经)。url / quote / date 均取自源 feed。
+# 反捏造:quote 为源站原标题(去尾部来源名);direction / dim / severity / lens_map 为 model-judged
+#   分类(非事实断言)。近期估值 / 合同 / 商业占比需 live 核验。schema 见 docs/16 §2。
+
+- id: 2026-07-07-palantir-001
+  date: 2026-07-07
+  dim: W3
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "参与美国 NIH 最具野心的健康数据计划(政府合同扩张 + 监督争议)"
+  quote: "Palantir Has a Hand in NIH’s Most Ambitious Health Initiative"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNaXZzZHZuaDVQNlpSYm93MFNRNVF6UF8xSHVuN0dmY1E0dFZRd25kSTNoQ0JHMXJWUlNHNW01QW8xSWNMMC1NbE93TG5aM0JQdEFlemp6aWRocl93NVRIbC0wSHk4OXFHcVVCZEdDNWRaTTU5NnZZS0RsUkQ0dm04NGNacEVfam91N0t4ZTNqRXJVLTgyNHRNSVdsWmREWXNqdzltMHpFdmlSLVkzQ0dubk53?oc=5
+  fetched_at: "2026-07-17T02:00:00Z"
+  source_type: media
+  lens_map: [leverage, category]
+  note: "来源:Mother Jones。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-09-palantir-002
+  date: 2026-07-09
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "称英国警方合同因被认为的‘价值观’遭错误否决(极化外溢到采购)"
+  quote: "Palantir says UK police contract wrongly blocked over perceived 'values'"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxPTF85ZzZtbnJiVjRXMmpySzM4T1dqSm11YldWUDJwQXhER0dCSVlVZTc2YlhfT0REV3ZhUGVha3lFN0FjeV9vQ2VwZkhkT1RVeUdJY2RGM05ETlRReXZLelFWUTc2MHFYc0w0SEJSS2ZZZ29kbnJ1QzBYcmtObDFkeFhDVDkyNDB1RTFOVEx0MjRRQjRmQzI2dGw3RVktaDlUalg1RGE1Z19HbDQwVDNseG53?oc=5
+  fetched_at: "2026-07-17T02:00:00Z"
+  source_type: media
+  lens_map: [identity, leverage]
+  note: "来源:Reuters。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-09-palantir-003
+  date: 2026-07-09
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "90 倍市盈率引发估值是否脱离基本面之辩"
+  quote: "Palantir: Implications Of 90x P/E (NASDAQ:PLTR)"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifEFVX3lxTE1LSW9Gb01IRFNFeEZCSi1FelFfMlBTZGhmbUpfdzJ3SjN4d1Z1WVNCcEZkOWdkUnlXT2lLd055VGl3YlBoOTVYWHRvSlFjYmdfeERxUlBsYlBkRFJEY3RSZEprS01rZXYtT1p6TGsyUG40ZG50V0o0LXBUX0s?oc=5
+  fetched_at: "2026-07-17T02:00:00Z"
+  source_type: finance
+  lens_map: [signal]
+  note: "来源:Seeking Alpha。首批冷启动;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-13-palantir-004
+  date: 2026-07-13
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "公布 2026 二季度财报发布日期"
+  quote: "Palantir Announces Date of Second Quarter 2026 Earnings Release and Webcast"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwwFBVV95cUxOakV3WVNfX1NIYjN5V2tYaV9lcnpfZDM4bnJPb0hXOXVULWNobVpaR0hTejhBeDItbG44QTJnWGVoR21FU1NYSGlhSkt4OXVtWmhrQzdIVG05QjBHcHBuVWRtaFdmcnJhc1hJbk5KT0RJQTJ2UWxlNlBsM1ZEWUhkeXhSOW5XMUx4RTlpNEoxR2o3YkRUaUZ6SjdSNmdfREZ1MEJNTjE4MXNVRVJJaE5Lc0dudV81Z25GMGFobmRRZEIyQmc?oc=5
+  fetched_at: "2026-07-17T02:00:00Z"
+  source_type: official
+  lens_map: [signal]
+  note: "来源:Palantir。首批冷启动;日期取自源 feed 的 pubDate。"

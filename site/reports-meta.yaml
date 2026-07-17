@@ -582,3 +582,26 @@ reports:
       并列 45,李想(增程务实)40。唯一强分歧在 Signal(7.5,Δ3 全卷最大)——何小鹏"数据飞轮是硬护城河"9
       vs 李想"FSD 过度承诺、价格战暴露软件护城河未兑现"6。170/200 · 8.50/10。
     has_pdf: false
+
+  - slug: palantir
+    card_brand: "Palantir · 帕兰提尔 · PLTR"
+    card_meta: "vc-en panel · 4 评委（安德森·格雷厄姆·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 蒂尔因联合创始人自冲突 --panel-drop（第 4 个真实 panel-drop）"
+    headline: "MBA 最独特也最两极分化的身份:把硅谷回避的政府/国防生意做成信仰,分歧沿意识形态（选边是护城河还是天花板）"
+    brand_cn: Palantir / 帕兰提尔
+    brand_en: Palantir
+    ticker: PLTR
+    panel: vc-en
+    industry: 企业服务·安全
+    version: v1
+    audit_date: 2026-07-17
+    score_total: 165
+    score_max: 200
+    score_normalized: 8.25
+    tl_dr: >-
+      MBA 迄今身份维度最独特、也最两极分化的品牌:做了整个硅谷回避的生意——为政府/国防/情报做"操作级"
+      数据软件,并把它讲成一种立场(2003 生于 9/11 后,In-Q-Tel 早期投资,哲学博士 Karp 任 CEO)。vc-en
+      4 评委(彼得·蒂尔因联合创始人兼董事长自冲突 --panel-drop,第 4 个真实 panel-drop)共识:Leverage
+      8.75 领跑——"无聊但不可迁移"的绑定型护城河(政府合同 + 前置部署 + 本体/平台)。核心分歧在 Identity
+      (Δ3 全卷最大)——安德森"敢选边是最强资产"10 vs 霍夫曼"极化是天花板"7。Signal(7.0)最弱:真实增长
+      之上悬着估值溢价的追问。165/200 · 8.25/10。
+    has_pdf: false

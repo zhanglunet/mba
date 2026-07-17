@@ -1,5 +1,5 @@
 {
-  "count": 23,
+  "count": 24,
   "items": [
     {
       "slug": "lenovo",
@@ -414,6 +414,24 @@
       "html_url": "/reports/tesla/",
       "pdf_url": null,
       "api_url": "/api/reports/tesla.json"
+    },
+    {
+      "slug": "palantir",
+      "brand_cn": "Palantir / 帕兰提尔",
+      "brand_en": "Palantir",
+      "ticker": "PLTR",
+      "version": "v1",
+      "audit_date": "2026-07-17",
+      "panel": "vc-en",
+      "score": {
+        "total": 165,
+        "max": 200,
+        "normalized": 8.25
+      },
+      "tl_dr": "MBA 迄今身份维度最独特、也最两极分化的品牌:做了整个硅谷回避的生意——为政府/国防/情报做\"操作级\" 数据软件,并把它讲成一种立场(2003 生于 9/11 后,In-Q-Tel 早期投资,哲学博士 Karp 任 CEO)。vc-en 4 评委(彼得·蒂尔因联合创始人兼董事长自冲突 --panel-drop,第 4 个真实 panel-drop)共识:Leverage 8.75 领跑——\"无聊但不可迁移\"的绑定型护城河(政府合同 + 前置部署 + 本体/平台)。核心分歧在 Identity (Δ3 全卷最大)——安德森\"敢选边是最强资产\"10 vs 霍夫曼\"极化是天花板\"7。Signal(7.0)最弱:真实增长 之上悬着估值溢价的追问。165/200 · 8.25/10。",
+      "html_url": "/reports/palantir/",
+      "pdf_url": null,
+      "api_url": "/api/reports/palantir.json"
     }
   ]
 }

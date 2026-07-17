@@ -370,8 +370,8 @@
     </div>
     <div class="status-card ok">
       <div class="label">公开报告</div>
-      <div class="value">23 品牌</div>
-      <div class="note">15 品牌有 EVOLUTION 多版本;NVIDIA 8.88 现居审计史最高;3 个真实 --panel-drop(微软/华为/特斯拉)</div>
+      <div class="value">24 品牌</div>
+      <div class="note">15 品牌有 EVOLUTION 多版本;NVIDIA 8.88 现居审计史最高;4 个真实 --panel-drop(微软/华为/特斯拉/Palantir);全品牌舆情驾驶舱</div>
     </div>
     <div class="status-card ok">
       <div class="label">集成测试</div>
@@ -1238,6 +1238,39 @@
           <li><b>② 砍 keyword/news 死枚举</b>:<code>subscribe_brand</code> trigger enum 收窄到 <code>['cron','webhook']</code>——修掉"被 schema 收下却永不执行(scheduler 只跑 cron)"的静默陷阱,加 e2e 负测试(vitest 224→<b>225</b> 全绿)· <b>④ webhook watch-event 入口</b> 暂缓(无可信自动入站源前价值有限 + 信任边界)</li>
         </ul>
         <div class="log-commit">branch claude/sharp-turing-496l8b · MCP typecheck+test(225)+build · 无 persona 漂移</div>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">2026-07-16 · 续十四</div>
+      <div class="log-tags">
+        <span class="badge done">舆情驾驶舱</span>
+        <span class="badge p1">8 品牌冷启动</span>
+      </div>
+      <div class="log-title">8 个新品牌 watch 冷启动 —— 27 条可溯源事件 + 驾驶舱</div>
+      <div class="log-body">
+        <ul>
+          <li>新增的 8 家科技巨头入库时只加了 matrix 行、没有 events.yaml,舆情驾驶舱因此缺席。补 27 条首批事件(每品牌 3-4 条),<b>采源全走公开 RSS</b>:官方 newsroom/blog + Google News RSS search(含监管/市场/批评视角,正负面均衡)</li>
+          <li><b>url/quote/date 全部取自源 feed(一次性生成器实时抓取,零手造)</b>;direction/dim/severity/lens_map 为 model-judged 分类并如实标注(反捏造)。8 张驾驶舱生成,首页每张新卡自动挂「舆情驾驶舱 →」入口</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · validate_watch 全合规 + 8 驾驶舱 headless 0 JS 错误 · watch 覆盖 15→23 品牌</div>
+      </div>
+    </div>
+
+    <div class="log-entry milestone">
+      <div class="log-date">2026-07-17 · 续十五</div>
+      <div class="log-tags">
+        <span class="badge done">新品牌 Palantir</span>
+        <span class="badge p1">第 4 个 --panel-drop</span>
+      </div>
+      <div class="log-title">Palantir 完整入库 —— MBA 最独特也最两极分化的身份,165/200 · 8.25</div>
+      <div class="log-body">
+        <ul>
+          <li><b>vc-en · --panel-drop pthiel</b>(彼得·蒂尔是 Palantir 联合创始人兼董事长)· 安德森/格雷厄姆/纳瓦尔/霍夫曼 4 评委 · <b>第 4 个真实 --panel-drop</b>(继微软/华为/特斯拉)</li>
+          <li>把硅谷回避的政府/国防生意做成信仰。<b>Leverage 8.75 领跑</b>("无聊却不可迁移"的绑定型护城河);<b>核心分歧在 Identity(Δ3 全卷最大)</b>——安德森"敢选边是最强资产"10 vs 霍夫曼"极化是天花板"7;Signal 7.0 最弱(90x P/E 估值之辩)</li>
+          <li>创始人 Alex Karp(哲学博士 CEO,非评委)+ 全套耦合 + watch 冷启动 4 事件 + 驾驶舱 + api 重生成 24 reports。反捏造:官网 about 锚点,近期估值/合同需 live 核验</li>
+        </ul>
+        <div class="log-commit">branch claude/sharp-turing-496l8b · render-qa canvas=2 + check_self_conflict 命中 + 24 品牌全绿</div>
       </div>
     </div>
 
