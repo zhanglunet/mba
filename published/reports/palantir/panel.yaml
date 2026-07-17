@@ -1,0 +1,15 @@
+panel: vc-en
+locked_at: 2026-07-17
+mba_version: 0.5.0
+published_at: 2026-07-17
+version: v1
+score_total: 165
+score_max: 200
+score_normalized: 8.25
+overrides:
+  add: []
+  drop: [pthiel]
+# 彼得·蒂尔(pthiel)是 Palantir 联合创始人兼董事长,与 Palantir 强关联
+# (self-conflict.yaml: pthiel.orgs 含 Palantir)→ --panel-drop pthiel。
+# 有效评委 4 位(马克·安德森·保罗·格雷厄姆·纳瓦尔·里德·霍夫曼),满分 200。
+# CEO / 联合创始人 Alex Karp 非 MBA 评委——无其他自冲突。

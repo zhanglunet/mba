@@ -1,0 +1,60 @@
+# founders/palantir.yaml — Palantir 创始人维度(履历 + 创始人↔品牌关系)
+#
+# 数据来源:Palantir 官网 about 页(palantir.com/about,2003 founded / Karp 锚点已核)+ 公开记录。
+# 反捏造:career[].evidence 为 provenance 标注(非逐字引语);relation 为**标注的分析**,不冒充本人原话。
+# 注:Palantir 由蒂尔 / Karp / Lonsdale / Cohen / Gettings 共同创立;本档案以 CEO / 联合创始人 Alex Karp
+# 为品牌代表创始人(公众面孔与现任领导),彼得·蒂尔为联合创始人兼董事长(审计时因 self-conflict --panel-drop pthiel)。
+# 近期估值 / 营收结构 / AIP 商业占比 / 标普 500 纳入等一律需 live 核验。
+brand: palantir
+founder:
+  name_cn: 亚历克斯·卡普
+  name_en: Alex Karp
+  role: 联合创始人 / CEO（另有联合创始人兼董事长彼得·蒂尔）
+  status: 现任
+  # perspective_slug 留空:Alex Karp 非 MBA 评委
+career:
+  - period: "1967-2002"
+    milestone: "哲学博士(法兰克福歌德大学,新古典社会理论,师从哈贝马斯圈层)——非典型科技 CEO 的思想底色"
+    evidence: "public bios;Alex Karp – Wikipedia(需 live 核验细节)"
+    lens: [origin, identity]
+  - period: "2003-2004"
+    milestone: "与蒂尔等共同创立 Palantir(9/11 之后;蒂尔构想把 PayPal 反欺诈技术用于反恐),Karp 任 CEO"
+    evidence: "palantir.com/about(2003 founded 锚点);公开创业史"
+    lens: [origin]
+  - period: "2005 前后"
+    milestone: "CIA 的 In-Q-Tel 成为早期投资人;公司名取自托尔金'帕兰提尔'(真知晶球)——使命型起源符号"
+    evidence: "In-Q-Tel – Wikipedia;公开报道"
+    lens: [origin, category]
+  - period: "2008-2016"
+    milestone: "Gotham 服务政府/国防/情报,做硅谷回避的品类;前置部署工程师把软件焊进客户流程"
+    evidence: "公开报道;Palantir 公司史(需 live 核验合同细节)"
+    lens: [category, leverage]
+  - period: "2016-2020"
+    milestone: "Foundry 进入商业市场;2020 直接上市(DPO, NYSE:PLTR),Karp 致股东信奠定'选边/保卫西方'叙事"
+    evidence: "Palantir Investor Relations;公开上市记录"
+    lens: [leverage, identity]
+  - period: "2023-2025"
+    milestone: "AIP(AI 平台)商业放量;2024 纳入标普 500;股价大涨——AI 与地缘顺风放大信号(需 live 核验)"
+    evidence: "public announcements;Palantir 财报;标注需 live verification"
+    lens: [signal, category]
+relation:
+  origin: >-
+    分析:Palantir 的起源与 9/11 后的反恐使命高度绑定——蒂尔的构想 + In-Q-Tel 的早期背书 + 托尔金式命名,
+    构成一个使命型、反硅谷共识的起源;Karp 的哲学博士背景为这套'把不受欢迎的事做成信念'的叙事提供思想底色。
+  category: >-
+    分析:做整个硅谷回避的政府/国防/情报'操作级'软件品类(Gotham),再以 Foundry/AIP 扩到商业——
+    Palantir 定义了'给硬骨头场景做任务级软件'这一品类,占住别人不愿碰的地方。
+  leverage: >-
+    分析:多年期政府合同、安全资质、前置部署工程师、本体(ontology)与平台锁定构成'无聊但不可迁移'的
+    绑定型护城河;迁移成本极高,但高度依赖政府客户集中度,是护城河的一体两面。
+  identity: >-
+    分析:Karp 以哲学味致股东信 + 公开'选边、保卫西方'的立场,把 Palantir 塑造成信仰型科技异类——
+    辨识度极高但两极分化;身份高度绑定 Karp 个人,是它比纯商业品牌更脆的地方(极化=天花板)。
+  signal: >-
+    分析:直接上市、标普 500 纳入、AIP 商业放量、盈利与股价大涨是可核验的真实信号;但极高估值倍数、
+    政府营收集中、股权激励摊薄叠加叙事/政治周期溢价,'信号是否可持续'需 live 核验,不把股价当基本面。
+sources:
+  - "https://www.palantir.com/about/(2003 founded / Karp 锚点)"
+  - "Alex Karp / Palantir Technologies / In-Q-Tel – Wikipedia(公开履历,近期数据需 live 核验)"
+  - "https://investors.palantir.com/(致股东信与财报)"
+  - "metric-brand-auditor/self-conflict.yaml (pthiel → Palantir,审计 --panel-drop pthiel)"

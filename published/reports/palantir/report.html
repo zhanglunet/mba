@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Palantir 帕兰提尔 — Brand Influence Review v1 · MBA</title>
+<meta name="description" content="vc-en panel brand audit of Palantir / 帕兰提尔 (pthiel --panel-drop). Score: 165/200 · 8.25/10. 4 judges × 5 lenses. Audit date: 2026-07-17." />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --ink: #111;
+  --paper: #faf8f3;
+  --muted: #6b6760;
+  --rule: #1a1a1a;
+  --accent: #c1440e;
+  --green: #1a7a4a;
+  --blue: #1a4a7a;
+  --warn: #d97706;
+  --moon: #2c1a4a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 820px; margin: 0 auto; padding: 56px 28px 96px; }
+header {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark .dot { color: var(--accent); }
+nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 16px; }
+nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+.report-meta { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.brand-title { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 8px; }
+.report-subtitle { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 32px; }
+
+.score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 28px 32px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 36px; flex-wrap: wrap; }
+.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 72px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); }
+.score-tag { display: inline-block; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 3px; background: #f0ede7; color: var(--muted); margin-left: 4px; }
+
+h2 { font-size: 22px; font-weight: 800; margin: 48px 0 16px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
+h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; }
+p { margin: 0 0 14px; }
+
+.panel-note { background: #fffbf0; border: 1px solid #e8d96e; border-radius: 6px; padding: 12px 16px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: #7a6b00; margin-bottom: 28px; }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 36px; }
+@media (max-width: 640px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
+.chart-wrap { position: relative; height: 300px; }
+.chart-wrap canvas { max-width: 100%; }
+.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 28px; }
+.score-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: center; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.score-table th:first-child { text-align: left; }
+.score-table td { padding: 9px 6px; text-align: center; border-bottom: 1px solid #eee; }
+.score-table td:first-child { text-align: left; font-weight: 600; }
+.score-table tr.total-row td { font-weight: 800; border-top: 2px solid var(--rule); border-bottom: none; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.cell-hi { background: #e8f5ee; color: #155a31; font-weight: 700; }
+.cell-lo { background: #fff0ed; color: #9a2313; font-weight: 700; }
+
+.heatmap { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; margin-bottom: 28px; }
+.heatmap-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+.heatmap-label { font-weight: 600; font-size: 12px; }
+.heatmap-bar-wrap { position: relative; height: 24px; background: #f5f3ef; border-radius: 3px; }
+.heatmap-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; }
+.heatmap-range { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; color: var(--muted); right: 6px; }
+
+.judge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-bottom: 36px; }
+.judge-card { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 18px; }
+.judge-name { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; font-size: 14px; margin-bottom: 2px; }
+.judge-total { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1; margin: 8px 0 4px; }
+.judge-bars { margin-top: 10px; }
+.judge-bar-row { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; font-size: 11px; }
+.judge-bar-label { width: 72px; color: var(--muted); flex-shrink: 0; }
+.judge-bar-track { flex: 1; height: 6px; background: #f0ede7; border-radius: 3px; }
+.judge-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+.judge-score { width: 18px; text-align: right; font-weight: 700; }
+.judge-quote { font-style: italic; font-size: 12px; color: var(--muted); margin-top: 10px; border-left: 2px solid #ddd; padding-left: 8px; line-height: 1.5; }
+.judge-card.dropped { opacity: 0.6; border-style: dashed; }
+.judge-card.dropped .judge-total { color: var(--muted); font-size: 15px; }
+
+.flow-diagram { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 24px; margin-bottom: 28px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; line-height: 1.7; overflow-x: auto; }
+.flow-diagram pre { margin: 0; font-family: "Consolas", "Monaco", ui-monospace, monospace; font-size: 12.5px; color: var(--ink); white-space: pre; }
+
+.dialogue { margin-bottom: 32px; }
+.dialogue-entry { margin-bottom: 20px; padding: 16px 20px; border-left: 3px solid var(--accent); background: #fff; }
+.dialogue-speaker { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 6px; }
+.dialogue-text { font-style: italic; line-height: 1.65; }
+
+.actions { counter-reset: action-counter; margin-bottom: 32px; }
+.action-phase { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 20px 0 10px; }
+.action-item { display: flex; gap: 14px; margin-bottom: 12px; }
+.action-num { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 900; font-size: 22px; color: var(--accent); line-height: 1; flex-shrink: 0; min-width: 24px; }
+.action-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+.action-text { font-size: 14px; line-height: 1.6; }
+
+.sources ol { font-size: 13px; line-height: 1.8; color: var(--muted); padding-left: 20px; }
+.sources ol a { color: var(--ink); }
+.disclaimer { font-size: 12px; color: var(--muted); border-top: 1px solid #ddd; padding-top: 16px; margin-top: 40px; line-height: 1.7; }
+.panel-badge { display: inline-flex; align-items: center; gap: 6px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; background: var(--green); color: #fff; margin-bottom: 20px; }
+.insight-box { background: #eef6f0; border-left: 3px solid var(--green); border-radius: 0 6px 6px 0; padding: 14px 18px; margin-bottom: 20px; font-size: 14px; line-height: 1.6; }
+.insight-box strong { font-size: 12px; font-family: ui-sans-serif,sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--green); display: block; margin-bottom: 4px; }
+
+  /* ── logo glyph(五镜头雷达,规范见 mbabrand.com/logo-design.html)── */
+  .mark { display: inline-flex; align-items: center; gap: 9px; }
+  .mark-glyph { display: block; flex-shrink: 0; }
+  .mark-glyph .radar-data { stroke-dasharray: 100; }
+  .mark-glyph .radar-dot { transform-box: fill-box; transform-origin: center; transition: transform .25s cubic-bezier(.2,1.4,.4,1); }
+  .mark:hover .radar-dot { transform: scale(1.35); }
+  @media (prefers-reduced-motion: no-preference) {
+    .mark-glyph .radar-data { animation: mba-draw 1.1s cubic-bezier(.6,0,.25,1) .2s backwards; }
+    .mark-glyph .radar-dot { animation: mba-pop .4s cubic-bezier(.2,1.6,.4,1) 1.2s backwards; }
+  }
+  @keyframes mba-draw { from { stroke-dashoffset: 100; fill-opacity: 0; } to { stroke-dashoffset: 0; fill-opacity: 1; } }
+  @keyframes mba-pop { from { transform: scale(0); } to { transform: scale(1); } }
+</style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="mark" role="img" aria-label="MBA — Metric Brand Auditor"><svg class="mark-glyph" viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false"><defs><linearGradient id="mbaGradMk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/></linearGradient></defs><polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/><g fill="none" stroke="#111" opacity=".12" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g><polygon class="radar-data" pathLength="100" points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#mbaGradMk)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/><circle class="radar-dot" cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/></svg><span>MBA<span class="dot">.</span></span></span>
+    <nav>
+      <a href="/">← 首页</a>
+      <a href="/reports/">所有报告</a>
+    </nav>
+  </header>
+
+  <div class="report-meta">Brand Influence Audit · v1 · 2026-07-17</div>
+  <h1 class="brand-title">Palantir · 帕兰提尔</h1>
+  <p class="report-subtitle">把硅谷回避的生意做成信仰 · 政府/国防的操作级软件 · MBA 最独特也最两极分化的身份</p>
+
+  <div class="panel-badge">🌐 vc-en · 4-Judge Panel（pthiel 已 drop）</div>
+
+  <div class="panel-note">
+    ⚠ <strong>Panel 说明</strong>：vc-en 5 评委中,彼得·蒂尔(pthiel)是 Palantir 联合创始人兼董事长,与 Palantir 强关联 → 按 self-conflict 规则 <strong>--panel-drop pthiel</strong>,不参与打分。剩余 4 位(马克·安德森·保罗·格雷厄姆·纳瓦尔·里德·霍夫曼)均无 Palantir 利益相关。CEO / 联合创始人 Alex Karp 非 MBA 评委。满分 200。
+  </div>
+
+  <div class="score-hero">
+    <div>
+      <div class="score-label">综合得分 / Normalized Score</div>
+      <div class="score-big">8.25</div>
+      <div style="font-family:ui-sans-serif,sans-serif;font-size:13px;color:var(--muted);">/ 10 · 高分梯队</div>
+    </div>
+    <div>
+      <div class="score-label">总分</div>
+      <div class="score-sub">165 / 200</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">有效评委数</div>
+        <div class="score-sub">4 <span class="score-tag">vc-en · drop pthiel</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="score-label">最强维度</div>
+      <div class="score-sub" style="color:var(--moon);">Leverage 8.75</div>
+      <div style="margin-top:8px;">
+        <div class="score-label">最弱维度</div>
+        <div class="score-sub" style="color:var(--accent);">Signal 7.0</div>
+      </div>
+    </div>
+    <div style="flex:1;min-width:200px;font-size:14px;line-height:1.6;color:var(--muted);">
+      把政府/国防这门硅谷回避的生意做成一种立场。最深护城河是"无聊但不可迁移"的绑定;最大分歧是极化身份——敢选边究竟是护城河还是天花板。
+    </div>
+  </div>
+
+  <div class="insight-box">
+    <strong>身份最独特两极分化 · 第 4 个真实 --panel-drop</strong>
+    Palantir 以 8.25/10 位列高分梯队(在 Google 8.44 之下、DeepSeek 8.00 之上)。Leverage 8.75 领跑——多年期政府合同 + 前置部署工程师 + 本体/平台的"无聊却不可迁移"护城河。本审计也是 MBA 第 4 个真实触发 <strong>--panel-drop</strong> 的发布报告(继微软/华为/特斯拉):彼得·蒂尔因 Palantir 联合创始人兼董事长身份被剔除,4 评委打分。核心分歧在 Identity(Δ3,全卷最大)——安德森"敢选边是最强资产"10 vs 霍夫曼"极化是天花板"7。
+  </div>
+
+  <h2>Score Matrix</h2>
+  <div style="overflow-x:auto;">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Lens</th>
+        <th>安德森</th>
+        <th>格雷厄姆</th>
+        <th>纳瓦尔</th>
+        <th>霍夫曼</th>
+        <th>Mean</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Origin / 起源叙事</td>
+        <td class="cell-hi">9</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td>8</td>
+        <td>8.5</td>
+      </tr>
+      <tr>
+        <td>Category / 品类定义</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td>8.5</td>
+      </tr>
+      <tr>
+        <td>Leverage / 杠杆点</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-hi">10</td>
+        <td>8</td>
+        <td>8.75</td>
+      </tr>
+      <tr>
+        <td>Identity / 身份系统</td>
+        <td class="cell-hi">10</td>
+        <td class="cell-hi">9</td>
+        <td>8</td>
+        <td class="cell-lo">7</td>
+        <td>8.5</td>
+      </tr>
+      <tr>
+        <td>Signal / 真实信号</td>
+        <td>8</td>
+        <td>7</td>
+        <td>7</td>
+        <td class="cell-lo">6</td>
+        <td>7.0</td>
+      </tr>
+      <tr class="total-row">
+        <td>Judge Total</td>
+        <td>45</td>
+        <td>41</td>
+        <td>42</td>
+        <td>37</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:12px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">安德森(美国活力/国防科技)总分最高 45;霍夫曼(建制/信任视角)37 全卷最低,在 Identity 给全卷唯一的 7、Signal 给 6。彼得·蒂尔因 Palantir 联合创始人兼董事长 --panel-drop,不计分。</p>
+
+  <h2>可视化 / Charts</h2>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">雷达图 — 4 评委 × 5 镜头</div>
+      <div class="chart-wrap"><canvas id="radarChart"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">均值条形图 — Lens Means</div>
+      <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+    </div>
+  </div>
+
+  <h2>Dissent Heatmap / 异议热力图</h2>
+  <div class="heatmap">
+    <div class="heatmap-row">
+      <div class="heatmap-label">Origin / 起源叙事</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:56%;width:29%;background:#1a7a4a;">8.5</div>
+        <span class="heatmap-range">范围 8–9 · Δ1</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Category / 品类定义</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:56%;width:29%;background:#1a7a4a;">8.5</div>
+        <span class="heatmap-range">范围 8–9 · Δ1</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Leverage / 杠杆点</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:57%;width:31%;background:#2c1a4a;">8.75 ★★ 最强</div>
+        <span class="heatmap-range">范围 8–10 · Δ2 · 全卷最高</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Identity / 身份系统</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:56%;width:29%;background:#c1440e;">8.5 ★核心分歧</div>
+        <span class="heatmap-range">范围 7–10 · Δ3 全卷最大</span>
+      </div>
+    </div>
+    <div class="heatmap-row">
+      <div class="heatmap-label">Signal / 真实信号</div>
+      <div class="heatmap-bar-wrap">
+        <div class="heatmap-bar" style="left:44%;width:26%;background:#d97706;">7.0 ★最弱</div>
+        <span class="heatmap-range">范围 6–8 · Δ2</span>
+      </div>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--muted);">
+      <strong>关键特征</strong>：Palantir 是全景里分歧沿"意识形态"最清晰的一卷——Origin/Category 高共识,Leverage(8.75)是全卷最强的绑定型护城河。<strong>最核心分歧在 Identity(Δ3,全卷最大)</strong>:安德森(美国活力视角)10 vs 霍夫曼(建制/信任视角)7——极化身份是护城河还是天花板。Signal(7.0)最弱:真实增长之上悬着估值溢价的追问。
+    </div>
+  </div>
+
+  <h2>影响力构造 / Influence Map</h2>
+  <div class="flow-diagram">
+    <pre>
+创始叙事（2003 · 9/11 之后 · 蒂尔构想"反欺诈技术用于反恐" · In-Q-Tel/CIA 早期投资
+         · 取名托尔金"帕兰提尔"真知晶球 · 哲学博士 Karp 任 CEO）
+      │
+      ▼
+品类开创（做硅谷回避的生意：政府/国防/情报的"操作级"数据软件 —— Gotham）
+      │
+      ├──→ 商业化扩张（Foundry 进企业 → Apollo → AIP：AI 操作系统）
+      │           │
+      │           ▼
+      │     2020 直接上市(DPO, NYSE:PLTR) → 2024 纳入标普 500 · AIP 商业放量
+      │
+      └──→ 全栈护城河
+           多年期政府合同 + 安全资质 + 前置部署工程师 + 本体/平台锁定
+                  │
+                  ▼
+        身份极化的科技异类 · 股价大涨 · 165/200 · 8.25/10
+                  │
+                  ▼
+         ⚠ 诚实追问：极化身份是护城河还是天花板
+         估值是否脱离基本面 · 政府营收集中 · "监控"公众观感
+                  │
+                  ▼
+         "立场即护城河 vs 极化即天花板 + 估值溢价" —— 全卷分歧最集中
+    </pre>
+  </div>
+
+  <h2>评委打分卡 / Judge Scorecards</h2>
+  <div class="judge-grid">
+
+    <div class="judge-card">
+      <div class="judge-name">马克·安德森</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">a16z 联合创始人</div>
+      <div class="judge-total" style="color:var(--green);">45</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 最高分</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:100%"></div></div><span class="judge-score">10</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+      </div>
+      <div class="judge-quote">"在一个企业都想讨好所有人的时代,Palantir 敢公开选边——这种不装的清晰,是最不可复制的品牌资产。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">保罗·格雷厄姆</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Y Combinator 创始人</div>
+      <div class="judge-total">41</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"它在所有人做消费 App 的年代选了又难又不酷的方向,坚持二十年——大多数创始人熬不过'不被硅谷认可'这关。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">纳瓦尔</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">AngelList 创始人</div>
+      <div class="judge-total">42</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:90%"></div></div><span class="judge-score">9</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:100%"></div></div><span class="judge-score">10</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#d97706;"></div></div><span class="judge-score">7</span></div>
+      </div>
+      <div class="judge-quote">"它的护城河是最'无聊'也最强的:把软件通过前置部署和本体一寸寸焊进客户流程,迁移成本高到拔不出来。"</div>
+    </div>
+
+    <div class="judge-card">
+      <div class="judge-name">里德·霍夫曼</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Greylock · LinkedIn 创始人</div>
+      <div class="judge-total" style="color:var(--accent);">37</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">/ 50 · 全卷最低</div>
+      <div class="judge-bars">
+        <div class="judge-bar-row"><span class="judge-bar-label">Origin</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Category</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Leverage</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:80%"></div></div><span class="judge-score">8</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Identity</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:70%;background:#c1440e;"></div></div><span class="judge-score">7</span></div>
+        <div class="judge-bar-row"><span class="judge-bar-label">Signal</span><div class="judge-bar-track"><div class="judge-bar-fill" style="width:60%;background:#d97706;"></div></div><span class="judge-score">6</span></div>
+      </div>
+      <div class="judge-quote">"把品牌焊死在一种政治立场上,天花板是真实的——它放弃了另一半市场与人才,'监控'观感是长期负债。"</div>
+    </div>
+
+    <div class="judge-card dropped">
+      <div class="judge-name">彼得·蒂尔</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">Founders Fund · Palantir 联合创始人兼董事长</div>
+      <div class="judge-total">— drop</div>
+      <div style="font-size:11px;color:var(--muted);font-family:ui-sans-serif,sans-serif;">--panel-drop pthiel</div>
+      <div class="judge-quote">Palantir 联合创始人兼董事长,与 Palantir 强关联 → 按 self-conflict 规则剔除,不参与打分,以保证评分中立。</div>
+    </div>
+
+  </div>
+
+  <h2>R2 对话：核心分歧 / Dissent Dialogues</h2>
+
+  <h3>极化的意识形态身份,是护城河还是天花板?（Identity 分歧）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">马克·安德森</div>
+      <div class="dialogue-text">"我们生活在一个企业都想讨好所有人、然后谁也没记住它们的时代。Palantir 反着来——它公开说'我们保卫西方、我们服务国防、我们选边',这种不装的清晰,是我见过最不可复制的品牌资产。信徒因此死忠,最想做硬事的人才因此聚集,客户知道它不会临阵倒戈。在一个碎裂的世界里,敢选边就是护城河。Identity 我给 10。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">里德·霍夫曼</div>
+      <div class="dialogue-text">"我尊重那份信念,也承认清晰有力量。但作为一个做网络生意的人,我必须看另一面:把品牌焊死在一种政治立场上,天花板是真实的。它天然放弃了另一半市场、另一半人才;'监控''老大哥'的公众观感,是一笔会在信息真空里被放大的长期负债。清晰是双刃的——它让你被一半人热爱,也让你被另一半人拒之门外。所以 Identity 我给 7:最独特,但也最受限。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">纳瓦尔（补充）</div>
+      <div class="dialogue-text">"两位其实在争'专注'的代价与回报。安德森押注'鲜明立场带来的死忠与人才复利',霍夫曼盯住'极化放弃的那半个市场'。我偏中间——在 B2B、尤其在政府和国防,清晰的立场确实是资产,客户要的就是'你站在我这边';但 Karp 个人色彩太重,身份高度绑定一个人,这是它比纯商业品牌更脆的地方。我给 8。"</div>
+    </div>
+  </div>
+
+  <h3>为什么"无聊的生意"是最深的护城河（Leverage / Category 讨论）</h3>
+  <div class="dialogue">
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">保罗·格雷厄姆</div>
+      <div class="dialogue-text">"我看创始人和公司性格。Palantir 最了不起的地方,是它在所有人都去做消费 App 的年代,选了一个又难、又不酷、又政治敏感的方向,然后坚持了二十年——大多数创始人熬不过'不被硅谷认可'这一关。Karp 这个哲学博士 CEO 本身就是它性格的一部分:固执、反共识、把使命看得比受欢迎重。这种性格,是它能占住别人不碰的品类的根本原因。"</div>
+    </div>
+    <div class="dialogue-entry">
+      <div class="dialogue-speaker">纳瓦尔</div>
+      <div class="dialogue-text">"Palantir 的护城河是我见过最'无聊'也最强的那种——不是某个惊艳的模型,是把软件通过前置部署工程师和本体,一寸寸焊进政府和大企业的真实流程里。一旦焊进去,迁移成本高到几乎不可能拔出来。无聊的绑定型护城河最持久,因为它不依赖下一次惊艳,只依赖'客户拔不出来'。这就是为什么它能一边不被硅谷喜欢、一边把生意做深。"</div>
+    </div>
+  </div>
+
+  <h2>90 天品牌行动建议</h2>
+  <div class="actions">
+    <div class="action-phase">立即执行 · 0–30 天</div>
+
+    <div class="action-item">
+      <div class="action-num">1</div>
+      <div class="action-text">
+        <strong>把"极化身份"从负债侧管理成可持续资产</strong>
+        Palantir 最独特的资产(鲜明立场)也是 Signal/Identity 的最大折价来源。在坚持核心立场的同时,以透明、可核查的方式正面管理"监控/隐私"的公众观感(数据治理、公民自由保障、独立审计),把"选边"与"守规矩"讲成并存而非对立,直接回应霍夫曼式的"极化即天花板"质疑。
+      </div>
+    </div>
+
+    <div class="action-phase">中期执行 · 30–90 天</div>
+
+    <div class="action-item">
+      <div class="action-num">2</div>
+      <div class="action-text">
+        <strong>把 Signal 从"估值叙事"锚回"可核查的商业基本面"</strong>
+        当前最亮的信号(股价)叠加了叙事与政治周期溢价。系统披露 AIP 商业客户数、净扩张率、政府/商业营收结构与盈利质量,把"增长"从股价故事重构为可核查的商业基本面,降低"估值脱离基本面"的折价。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">3</div>
+      <div class="action-text">
+        <strong>降低身份对创始人个人的绑定</strong>
+        Palantir 身份高度绑定 Karp 个人。把"使命、工程文化、前置部署方法论"讲成可传承的机构能力,回应"能否超越创始人"的隐忧,巩固 Identity 与 Leverage 的长期性。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">4</div>
+      <div class="action-text">
+        <strong>把"前置部署 + 本体"的护城河可视化</strong>
+        Palantir 最深的杠杆(把软件焊进客户流程)常被外界只当成"给政府做项目"。系统讲清本体与前置部署如何造成极高迁移成本,把"绑定型护城河"从抽象概念变成可核查的品牌事实,巩固 Leverage 认知。
+      </div>
+    </div>
+
+    <div class="action-item">
+      <div class="action-num">5</div>
+      <div class="action-text">
+        <strong>诚实沟通政府营收集中度与地缘依赖</strong>
+        政府/国防营收集中与地缘顺风是真实约束与变量。主动、诚实地沟通商业化多元化的进展与节奏,把品牌信誉建立在"在顺风与逆风下都能兑现"之上,而非单一景气或政治周期。
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sources">Sources</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://www.palantir.com/about/">Palantir 官网 – palantir.com/about</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Palantir_Technologies">Palantir Technologies – Wikipedia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Alex_Karp">Alex Karp – Wikipedia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/In-Q-Tel">In-Q-Tel（CIA 战略投资机构,Palantir 早期投资人）– Wikipedia</a></li>
+      <li><a href="https://investors.palantir.com/">Palantir Investor Relations（致股东信与财报）</a></li>
+      <li><a href="https://www.palantir.com/platforms/aip/">Palantir AIP（Artificial Intelligence Platform）– Palantir</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Palantir_Technologies">Palantir 直接上市（2020, NYSE:PLTR）/ 纳入标普 500（2024）– 公开报道,需 live 核验</a></li>
+    </ol>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer / 免责声明</strong><br>
+    本报告基于截至 2026-07-17 的公开资料,包括 Palantir 官方资料、Alex Karp 公开致股东信与讲话、新闻报道、企业公告及公开记录。Palantir、帕兰提尔、Gotham、Foundry、Apollo、AIP 及相关商标归 Palantir Technologies Inc. 所有;本报告与 Palantir 无任何赞助、授权或合作关系。参与评委(马克·安德森、保罗·格雷厄姆、纳瓦尔、里德·霍夫曼)的评分与对话均为 AI 基于其公开发表资料的 in-character 模拟推断,非本人真实意见,不代表其个人或所在机构立场。彼得·蒂尔(pthiel)是 Palantir 联合创始人兼董事长,与 Palantir 强关联,已按 self-conflict 规则 --panel-drop,不参与本审计打分。CEO / 联合创始人 Alex Karp 非 MBA 评委;Palantir/Karp 履历事实取自 Palantir 官网 about 页(2003 founded 锚点已核)与公开记录。报告中的市值、估值倍数、营收结构、AIP 商业占比、标普 500 纳入等来自第三方媒体报道与公开财报,可能存在偏差,近期数据需 live 核验。本报告不构成投资建议、证券分析或任何形式的商业尽调建议。
+  </div>
+</div>
+
+<script>
+const radarCtx = document.getElementById('radarChart').getContext('2d');
+new Chart(radarCtx, {
+  type: 'radar',
+  data: {
+    labels: ['Origin', 'Category', 'Leverage', 'Identity', 'Signal'],
+    datasets: [
+      {
+        label: '安德森',
+        data: [9, 9, 9, 10, 8],
+        borderColor: '#1a7a4a',
+        backgroundColor: 'rgba(26,122,74,0.1)',
+        borderWidth: 2,
+        pointRadius: 4,
+      },
+      {
+        label: '格雷厄姆',
+        data: [9, 8, 8, 9, 7],
+        borderColor: '#1a4a7a',
+        backgroundColor: 'rgba(26,74,122,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '纳瓦尔',
+        data: [8, 9, 10, 8, 7],
+        borderColor: '#2c1a4a',
+        backgroundColor: 'rgba(44,26,74,0.08)',
+        borderWidth: 1.5,
+        pointRadius: 3,
+      },
+      {
+        label: '霍夫曼',
+        data: [8, 8, 8, 7, 6],
+        borderColor: '#c1440e',
+        backgroundColor: 'rgba(193,68,14,0.08)',
+        borderWidth: 2,
+        pointRadius: 3,
+        borderDash: [4,2],
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      r: {
+        min: 0, max: 10,
+        ticks: { stepSize: 2, font: { size: 10 } },
+        pointLabels: { font: { size: 11, weight: '600' } },
+        grid: { color: '#e5e2dc' },
+      }
+    },
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } }
+    }
+  }
+});
+
+const barCtx = document.getElementById('barChart').getContext('2d');
+new Chart(barCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Leverage', 'Origin', 'Category', 'Identity', 'Signal'],
+    datasets: [{
+      label: '均值 (Mean)',
+      data: [8.75, 8.5, 8.5, 8.5, 7.0],
+      backgroundColor: ['#2c1a4a', '#1a7a4a', '#1a7a4a', '#1a7a4a', '#c1440e'],
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { min: 0, max: 10, ticks: { stepSize: 2, font: { size: 10 } }, grid: { color: '#e5e2dc' } },
+      y: { ticks: { font: { size: 11, weight: '600' } } }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `均值: ${ctx.parsed.x.toFixed(2)} / 10`
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
