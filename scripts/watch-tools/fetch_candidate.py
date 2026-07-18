@@ -208,8 +208,139 @@ def cmd_verify(args):
     return 1 if (mismatch or dead) else 0
 
 
+# ── discover ─────────────────────────────────────────────────────────────────
+# 每品牌拉 Google News RSS,dedup 现有事件,emit 候选草稿(判断字段留 TODO)。
+# 与 draft 同哲学:脚本只回填**源 feed 的逐字标题/日期/URL**,从不编造 quote,也不擅自定
+# dim/severity/direction/lens_map —— 那是人工/评委判断(docs/15 §边界:direction 是显式标注)。
+GNEWS = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
+
+
+def _published_slugs():
+    path = os.path.join(ROOT, "site", "published-reports.txt")
+    out = []
+    if os.path.exists(path):
+        for ln in open(path, encoding="utf-8"):
+            s = ln.strip()
+            if s and not s.startswith("#"):
+                out.append(s)
+    return out
+
+
+def _brand_query(slug):
+    """品牌搜索词:优先 reports-meta 的 brand_en(Google News 英文召回好),回退 slug。"""
+    meta_path = os.path.join(ROOT, "site", "reports-meta.yaml")
+    try:
+        reports = (yaml.safe_load(open(meta_path, encoding="utf-8")) or {}).get("reports", [])
+        for r in reports:
+            if r.get("slug") == slug:
+                return r.get("brand_en") or r.get("brand_cn") or slug
+    except Exception:
+        pass
+    return slug
+
+
+def _existing(slug):
+    path = os.path.join(WATCH, slug, "events.yaml")
+    urls, titles = set(), set()
+    if os.path.exists(path):
+        for e in (yaml.safe_load(open(path, encoding="utf-8")) or []):
+            if isinstance(e, dict):
+                if e.get("url"):
+                    urls.add(str(e["url"]).strip())
+                for k in ("quote", "title"):
+                    if e.get(k):
+                        titles.add(norm(strip_suffix(str(e[k]))))
+    return urls, titles
+
+
+def cmd_discover(args):
+    import json
+    import urllib.parse
+    import xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+
+    slugs = [args.brand] if args.brand else _published_slugs()
+    now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    lines = [
+        "# fetch_candidate discover —— 每日自动**发现**的候选事件(判断字段待人工核验)",
+        f"# 采源 Google News RSS · 窗口 {args.days} 天 · 生成 {now}",
+        "# 反捏造:url/quote/date 取自源 feed;dim/severity/direction/lens_map 为 TODO,由人工/评委判断。",
+        "# 核验后把合规项粘进 watch/<slug>/events.yaml、删本候选,再跑 validate_watch.py。",
+    ]
+    total_new = 0
+    for slug in slugs:
+        q = urllib.parse.quote(f"{_brand_query(slug)} when:{args.days}d")
+        xml = curl(GNEWS.format(q=q))
+        if xml is None:
+            lines.append(f"\n## {slug} —— ⚠️ RSS 拉取失败(出口/超时)")
+            continue
+        try:
+            items = ET.fromstring(xml.encode("utf-8") if isinstance(xml, str) else xml).findall(".//item")
+        except Exception as e:
+            lines.append(f"\n## {slug} —— ⚠️ RSS 解析失败:{e}")
+            continue
+        urls, titles = _existing(slug)
+        dims = brand_dims(slug)
+        applicable = "/".join(d for d, v in dims.items() if v != "off") or "—"
+        new = []
+        seen = set()
+        for it in items:
+            t = (it.findtext("title") or "").strip()
+            link = (it.findtext("link") or "").strip()
+            try:
+                d = parsedate_to_datetime(it.findtext("pubDate") or "").date().isoformat()
+            except Exception:
+                d = None
+            key = norm(strip_suffix(t))
+            if not t or not link or not key or key in seen:
+                continue
+            if link in urls or key in titles:
+                continue
+            seen.add(key)
+            new.append((t, d, link))
+        if not new:
+            lines.append(f"\n## {slug} —— 无新候选(窗口内 {args.days} 天)")
+            continue
+        omitted = max(0, len(new) - args.limit)
+        shown = new[: args.limit]
+        total_new += len(shown)
+        more = f"(另 {omitted} 条同题材省略,防噪音灌水)" if omitted else ""
+        lines.append(f"\n## {slug} —— {len(shown)} 条新候选{more} · 可用维度(非 off):{applicable}")
+        nid = 0
+        for t, d, link in shown:
+            nid += 1
+            quote, src = (t.rsplit(" - ", 1) + [None])[:2]
+            quote = quote.strip()[:100]
+            eid = next_id(slug, d)  # next_id 只看已入库事件,批内多条人工顺延 NNN
+            qj = json.dumps(quote, ensure_ascii=False)
+            src_hint = f"(来源:{src})" if src else ""
+            lines.append(f"""
+- id: {eid}          # ⚠️ 批内多条时人工顺延 NNN
+  date: {d or 'YYYY-MM-DD'}
+  dim: W?            # TODO 人工:{applicable} 里选
+  severity: P?       # TODO 人工:P0..P3
+  direction: neutral # TODO 人工:pos/neg/neutral/mixed(model-judged)
+  direction_by: model-judged
+  title: {qj}   # TODO 人工:改写成描述性标题
+  quote: {qj}
+  quote_type: title
+  url: {link}
+  fetched_at: "{now}"
+  lens_map: [signal] # TODO 人工:⊆ origin/category/leverage/identity/signal
+  source_type: media # TODO 人工:official/media/finance/regulator... {src_hint}
+  note: "每日自动发现候选;标题/日期/URL 取自 Google News RSS。待人工定维度/等级/方向后入库。\"""".rstrip())
+    out = "\n".join(lines) + "\n"
+    if args.out:
+        os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
+        open(args.out, "w", encoding="utf-8").write(out)
+        print(f"discover: {total_new} 条新候选 → {args.out}")
+    else:
+        print(out)
+    return 0
+
+
 def main(argv):
-    ap = argparse.ArgumentParser(description="舆情事件候选取数 / 反捏造自审")
+    ap = argparse.ArgumentParser(description="舆情事件候选取数 / 自动发现 / 反捏造自审")
     sub = ap.add_subparsers(dest="cmd", required=True)
     pd = sub.add_parser("draft", help="URL → 候选事件草稿")
     pd.add_argument("urls", nargs="+")
@@ -218,6 +349,12 @@ def main(argv):
     pv = sub.add_parser("verify", help="重新 curl 核对 title 引用仍逐字命中源站")
     pv.add_argument("--brand", help="只核某个品牌")
     pv.set_defaults(func=cmd_verify)
+    pg = sub.add_parser("discover", help="每日自动发现:Google News RSS → dedup → 候选草稿")
+    pg.add_argument("--brand", help="只发现某个品牌(默认全部已发布品牌)")
+    pg.add_argument("--days", type=int, default=7, help="回看窗口天数(默认 7)")
+    pg.add_argument("--limit", type=int, default=12, help="每品牌候选上限(防噪音灌水,默认 12)")
+    pg.add_argument("--out", help="写入文件(如 watch/_candidates/<date>.md);缺省打印 stdout")
+    pg.set_defaults(func=cmd_discover)
     args = ap.parse_args(argv)
     return args.func(args)
 
