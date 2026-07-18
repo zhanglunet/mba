@@ -51,3 +51,155 @@
   source_type: finance
   lens_map: [signal, identity]
   note: "来源:Business Insider。首批冷启动;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-18-microsoft-004
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软为提升 AI 回答能力，Teams 自动为符合条件会议生成存档文件"
+  quote: "微软为提升 AI 回答能力，Teams 自动为符合条件会议生成存档文件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5hR0RVNlZiNVo3djc0amVHTF9ZWkcteXJaOVJ3X0pyc3lFUWtEZ1lyRS1TN0otMG5mQ01JWXd6aXp6WjJOZE5tQm5fWXB3bGtJamJISTd3SHcwOFBVR1hCM3p6MUxpTTJXZjN2N2U5Z1NVeXVmUTlkYjhDbnBCenc?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Teams功能增强,AI能力集成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-microsoft-005
+  date: 2026-07-17
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软 12 月退役 Win10/Win11 应用商店安装的 Microsoft 365 应用"
+  quote: "微软 12 月退役 Win10/Win11 应用商店安装的 Microsoft 365 应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3gNBVV95cUxOV3RNX041RXcwb2VoQ0VEQ1hFVThRWGl6bjlCaUdFZ2ZtSm1TUnh4cEp6VmNYd25HZkNLMXVVVEk4M3JmdmE1WUtqU0FCWl9GSm44bGszT0pDU2w3NjkxVi1yOTF3dnJOR2pGSkczUGMwMzhjc1BPWF9tMC0xcGxvMWdJMmJ1Vy1nbGpsQ0tjMzJJVG1SNHBKYnotYVBOSURUZE9tX1FDMnV0a0VIRUJYcEgzRHVFNWFDWjdCQWxWeW45NUc3TGF3cjFTSlBtT0FZbW82ZDlLS0wwQUxrLXgzdkdqcUFMM2NRcjFGTTlrcVZxTzIyMzhySUpJeC11MWJwZkMtby00a3BQZzNBTXVJWlZRU2NRQklQRC13Q3RFOUV2Q0hfQmJBSUt0Y2lGWmZ1eEduUXJWcVJERkVnWnlzZ2pnd3MyRTBnZHNGbnlENExrU2F4TVA4ODBMNm5PZGxHQjRvbkNLcmlLUzlZb1NQNTlqQTBwMFRzbkVieFZkaGNucFJQZFQ0dkZ3LVdfVzMzMGhwQ2FlWnJqSmZHUk44SjM0R1k2OXk3dTBMSVBtMGNjVm1ZSERfcGFIWkx4dllPVGN3bnZBOFphaFYycTJLSXZ6QW82Z29RSHM0clNn?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品生命周期管理,系统迁移政策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-microsoft-006
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软终止支持SQL Server 2016 但承认其在企业中仍被大量使用- Microsoft 服务器 - SQL Server"
+  quote: "微软终止支持SQL Server 2016 但承认其在企业中仍被大量使用- Microsoft 服务器 - SQL Server"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zdlE2NWhsRmVKRS14VnQ0d083bmpOaW9QSzdpSW51YVphQlVodldPN0NPSW5acjM2UVJ1RVJKZG9MdmlJckdOMFUzdFhzOEU3WE5uS21waFNjUEMwUGNsRg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品支持终止,企业用户迁移压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-microsoft-007
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft推出6项有用的Windows 11 Insider新功能，其中一项可保护您的电脑免受灾难"
+  quote: "Microsoft推出6项有用的Windows 11 Insider新功能，其中一项可保护您的电脑免受灾难"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM25IT09UZ2U5bHhlRWVKVld2ZDNWVUFLLUZBQXdINUhLQlB3ci13MFo4N2phZFY0RUhObmE1SVZKcktkQ3Qta1pPdFUyTFZfd3F4N2V5aUVibVNyU0RoLXZfd1VkMTdFNkpES2wwVmxSVi1SbWNUUXl1b0xWcW1PUXdVcWJTUk1F?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Windows 11新功能发布,安全性增强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-microsoft-008
+  date: 2026-07-17
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "微软把Comic Chat 开源了，那个让Comic Sans 走进千家万户的聊天软件- OSCHINA - 开源 × AI · 开发者生态社区"
+  quote: "微软把Comic Chat 开源了，那个让Comic Sans 走进千家万户的聊天软件- OSCHINA - 开源 × AI · 开发者生态社区"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxOQ2tNMTktVkt0TkZ0OUlLa2l3NEhMdzhOTmFPbUxjNlAxaWU0Nm1lQlktRmlaVWtZMnpBY184U2Y3RnkzVXBvc3o2RlJiUVEwMFl6cHlfc19ObGZwR1V5d3JkQkw2Zi1uVnpvZ3g2X2JVSVNsV25XT3NOdnlaWW9taA?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源举措,遗留产品开放策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-microsoft-009
+  date: 2026-07-17
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软Entra ID将于9月起默认使用Passkey通行密钥"
+  quote: "微软Entra ID将于9月起默认使用Passkey通行密钥"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5JVlZfM3NLNnoySldwQnNFZUszckFpYnBNUlZnR1d1eUt5cFpEX0w1ZDBpcHhpMGhtRmhEV05kcnpHb1dXOHpMaw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):安全策略升级,Passkey默认启用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-microsoft-010
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Microsoft首次推出自愿退休计划：AI转型下的人力结构重塑"
+  quote: "Microsoft首次推出自愿退休计划：AI转型下的人力结构重塑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxQNjRqUFlsSXJicGJ0bjV3LVFQNVpmY0lFbzgxVUx1LUV6a25DTktkbENiQTBmUlRTbWQxTlZVSGlxMVAyejluVDN6eVZaVlI5aGRnUEhrVVYta1hfeGhOSlZxTDlXSzM3ZFc5STJSZVNPbEY5bHhYZG1TU3dDcy03d1NMSEo?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软推出自愿退休计划，反映AI转型下的组织重构，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-microsoft-011
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "更新：市场传闻：微软全面改革安全部门以把握人工智能需求"
+  quote: "更新：市场传闻：微软全面改革安全部门以把握人工智能需求"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAFBVV95cUxPSEIyWXZmVUhhcFBKNnRZOFVLUkdLOW9OOUZibU5yYVVHNWFkVi1hMmZmbFphdE1QZGtxQnlGeHZ3UlhCeWhXOElHZDk5RUl6amJMOHB4c1VrTGgySEJHMDV3Vm9pU3EtZ0ZoSmxsSkZobmdiZ05USHlQYnRfOWh3OUo1N0NGV1BXODdhU1d3ZTdDb04zQWpoNmxQd2FFWFpFbXpBUzdRNXBOYkxBNENvZVZ5YUZ4UkI2UHNzcw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):市场传闻微软安全部门改革以应对AI需求，信息来源为传闻需谨慎。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-microsoft-012
+  date: 2026-07-16
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "形势逆转，微软正在“游戏结束”之前重组其 800 亿美元的投资。"
+  quote: "形势逆转，微软正在“游戏结束”之前重组其 800 亿美元的投资。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUzdLeDduX1BzMDYyT1labDdlWHJhS3VuM01leG9Oc3EwYXYtSUczLXF6Qk5GTUFUN0JjdzNwclFfSUxoa0dlSEhsSVFoeDNhM3JwbktzNy1QZ2tHbUVrd25mMU5VUks1ZUVQamo3TzdGVDRMWXFjbVpxVnE1RW82dW83X0tIa0xLZjFYcm1jeFVNbmwyaWl6M1Zza2w3UC04Mnp3WWNWVkpxRVRseFUzeFpJQy1JWWpQcUJR?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):微软重组800亿美元投资，标题党风格但涉及重大资本配置调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-microsoft-013
+  date: 2026-07-18
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软9月停运Outlook会议洞察功能，Copilot AI接棒"
+  quote: "微软9月停运Outlook会议洞察功能，Copilot AI接棒"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9La1lXWlBsTVJCZS1vbjhYUGdGZGNRVWU1cXB4M3MtTjNMbUt1cnROb2lTSmVCNWNPYmRVNDlHUEVtYXVNV2tTRTBLR3FYYW5VcXlmU3RsVkV6YnJINjZFUXl3?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软产品功能迭代，Outlook功能停运并由Copilot替代，体现AI战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

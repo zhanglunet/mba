@@ -86,3 +86,20 @@
   lens_map: [signal]
   source_type: finance
   note: "距上批事件(2021 双减)四年后首个 2026 资本市场信号;日期以 URL 内嵌(2026-06-23)自证。"
+
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-16-tal-education-006
+  date: 2026-07-16
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "大公司创新情报（1月19日）：好未来退出小鹅通 曾战略投资1亿元"
+  quote: "大公司创新情报（1月19日）：好未来退出小鹅通 曾战略投资1亿元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxQeEVieVEtYzF0WWxGQXZGYjVodzgzbGprbFJBQ1NXQnp1RkxNazNKSTFkcmNMNnJYMnc3MkRXa25yNC1GOU4wSDBiMktUd3pjY2dUc1RvSlNuRW91N084T2FjMms2dWRDQkdEMFR1RU0zbUpJMzNyZmQ2S1JsWlNsVUJBTGtMdzlHa0FUT2oxaGtBczZMb285TXBCNE44eEVNU2lkNm9PRi00VnpTV2hlcmppaDg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):战略投资退出，涉及业务调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -48,3 +48,125 @@
   source_type: official
   lens_map: [identity, signal]
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-18-apple-004
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "终于告别残血版iPhone 国行版苹果AI降临"
+  quote: "终于告别残血版iPhone 国行版苹果AI降临"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5oVXBwSzBhU1Z3bEwwVVRoNWx2SGt0LVlXNVZMT2VTUWx2TnMzY3Z2UEJMV2kyMjNQLTY2X0xpdGdIUjQ4UWRubUdJVGxkOUg2X3RjbFY3eFY?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Intelligence国行版上线，产品功能落地事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-apple-005
+  date: 2026-07-18
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果上调 iPhone、Apple Music 等价格"
+  quote: "苹果上调 iPhone、Apple Music 等价格"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSkZfaWE5RTdKOWg1MDdpcEszUTBvQWs1UXlqeXZNWEpMMUNPX0RUSGhldjZaSzZnc213S09vT0dxaFJZaWV6UkJfQkswcmwyampoeDFCUkFydURPRUZxbFc2TWJlcHp3OXhNNlNjY1pPZExmajkwT0hrb0k1dWpRcms2YWU5VjFN?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):多产品涨价，影响用户体验和品牌认知的重要事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-apple-006
+  date: 2026-07-17
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果上调Apple Music和Apple One的订阅价格"
+  quote: "苹果上调Apple Music和Apple One的订阅价格"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mVG9HNUgyTExwVXFaM3gxcnZUcFI0SURYc05JTmFzTVZxRS1VSXhONGJVV1VQdVVhelpJTkJBaE9pWHhFU0NHVDU3bEFkTk9BeDV4cGg1N3N0N05SaEc0Yw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):订阅服务涨价，与第8条部分重复但独立事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-apple-007
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple智能等7款手机端侧AI完成备案：阿里千问接入国行iPhone"
+  quote: "Apple智能等7款手机端侧AI完成备案：阿里千问接入国行iPhone"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE50QlBPc25RTEx4WEp5azRFUjV4bjVfU1poNzQ1bkowZjRwRXdxcmpndVMtTVgyV3VQTTdEbFBkTmQ4WXB6dEVNTzJzcUxSTVdEZWNCX0pLUEdlbFMy?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Intelligence国行备案完成，产品落地进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-apple-008
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果(AAPL.US)推出Apple Business平台 拓展地图广告与服务收入增长空间"
+  quote: "苹果(AAPL.US)推出Apple Business平台 拓展地图广告与服务收入增长空间"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE15T2FMUjZCdHIyTGk3NEdHSVdSdjh2eWRqeVBGRGxKQWh4UTVkTFZRQjV1cmx2S0lENEYzMWF5Q1A2ckZkc2t3Wg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新平台Apple Business推出，商业模式扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-apple-009
+  date: 2026-07-16
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果Apple Care+服务涨价！覆盖iPad、Mac多款产品"
+  quote: "苹果Apple Care+服务涨价！覆盖iPad、Mac多款产品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE9uR01iRWd5WjdsVC13ekF1ZzlpQ0JUTjkxanJlb2FNRDhhRWs2OUdYWjRYbS02YmxFRkRGQUwtcXAtbE92SmZUQWZQdWFnYkVPc0NNWHRNZWd5VmM?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AppleCare+涨价，多产品覆盖，用户成本上升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-apple-010
+  date: 2026-07-18
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果官宣：Apple Music国内正式调价，iCloud+多地同步上涨"
+  quote: "苹果官宣：Apple Music国内正式调价，iCloud+多地同步上涨"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQMlEwYTk3TjI5b2ZlNHl6VWlGU2RWMXlrMVhDVXNNc1lHT1ZsWUswZHEyXy1uSWlHeWhidlkwaEhPT3BvVFRydW82YjBENlJhMUYyMG90SjJERHRYUnAwc1pQZGVKM0J3U2hPMnB3eXdoUzFpZUdTa1FKQ1ZKTzNXUld0U3N5VWVnNmhLUg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Music和iCloud+国内调价，多地同步涨价事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-apple-011
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果等七家厂商完成AI服务备案，Apple Intelligence落地进入倒计时_人工智能"
+  quote: "苹果等七家厂商完成AI服务备案，Apple Intelligence落地进入倒计时_人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBzMkl0TXppbVVaajBfODV4WGZITlhscUlxQ3FWNk1KRWV1X3BPUERtWnNnZWJ1ejdxbG1GblFKYW10bFVqN0g1eUhGOEVxVTVaNmw1MXNqU3lWRHpGcVY0LXpVMFMwRVBKVkxpeVdMZEZ0UQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Intelligence备案完成，产品落地进展确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

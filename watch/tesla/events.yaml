@@ -48,3 +48,95 @@
   source_type: finance
   lens_map: [signal]
   note: "来源:WSJ。首批冷启动;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-18-tesla-004
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉无人驾驶出租车，到底是什么水准？"
+  quote: "特斯拉无人驾驶出租车，到底是什么水准？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BR1VrYTBJai0tdVE4ajFWWU90LXJXRGx6cVhvWWU5UG5GN2RwQmhVVnpjTlN2V0p2dWpHMVQxWm1WN0dqMFNWMkxqZDItSUl5UFdQUzEtVXI5YUE?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):无人驾驶出租车产品评测,涉及特斯拉核心技术方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-tesla-005
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "等了这么久，特斯拉首款“自行车”，不过...没踏板也没电"
+  quote: "等了这么久，特斯拉首款“自行车”，不过...没踏板也没电"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNTXdIVmlYVEg1cTZCVExzbFM5bmRYVjlZaVhkN3JZSHNlTmxvSnFFVHg0SUVsUnY2andzaHZaanEwYTF6MDRLMzNMR3hBQ2U4ejliTnB1bWFDM240N09UMVNrODRHRVctZkR3Mk9KUUl6V3h0MzN4ckE5NUJ0dVE4c29mako5WmhjVVRINQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新产品发布(自行车),特斯拉产品线扩展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-tesla-006
+  date: 2026-07-17
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克预告全球开店！特斯拉(TSLA.US)“复古未来风”充电餐厅好莱坞正式迎客"
+  quote: "马斯克预告全球开店！特斯拉(TSLA.US)“复古未来风”充电餐厅好莱坞正式迎客"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxNUDBFczF5aVlvWTRxcUFNTG53cDhfS01TeHEzSk96RHl2Wk85X1lXMjlrT196elBCWmxacHlXMDMzYWRTRm93T0duTUJkR2FWX25vMWlGUFo2RERZQXpaRTcxOHhJeUhnaUhycjVZUzdOWGJ2NC04WHNMTm9WbE5IcjFMVEg1UUJaUXZ3eXJBSUZLemhPbWdPLU1zNFcyeXFNbFlFSVlR?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新业态扩展(充电餐厅),品牌战略动向属舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-tesla-007
+  date: 2026-07-16
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉获美世“2026-2027卓越健康雇主”两项荣誉"
+  quote: "特斯拉获美世“2026-2027卓越健康雇主”两项荣誉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9hZEdHUTBkSmFhanNMZ05zZURBTlBmUkFZcDR2VF9iNTZVUE5SNXRyR3k1TFBYUzZuMFJHV3pMYkFUNGJ3a0w0WQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):企业荣誉认可，品牌正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-tesla-008
+  date: 2026-07-17
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉跨足自行车 首度推出儿童平衡车"
+  quote: "特斯拉跨足自行车 首度推出儿童平衡车"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1fQi1uY05JclJIWmlTRktXdGlMVWV3S2wtWHp1TWhnOENHaGJpWjN0VmR3a3g2Ri0zai1SV2YtbGlKNWlmRkI4S0JUMGNpMldhaHc4OEF3S0dUdmdhQ2hSZTB3?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):品牌跨界新品发布，业务扩展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-tesla-009
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Tesla大马全面调涨车价"
+  quote: "Tesla大马全面调涨车价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBvaGtaOWc5NHpRYkhOR1d4bThGSldNazVZOXU5M1JYdnN3UXBwdUFWMUQtelZlcENEVlJqVFNtdXBsRnpwRTMtaXJvdWJVSWhFODNKTExyTWJLLUh6a05yOUhVNUpSYmhFV3A1aEZUTEJSdw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):区域涨价政策，可能引发消费者反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

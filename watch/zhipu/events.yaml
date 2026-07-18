@@ -121,3 +121,20 @@
     涨超 20%),且融资投向(算力军备)有行业逻辑支撑 —— 判 mixed。与 005 构成
     同一配售事件的「官方口径 × 媒体审视」双面记录。日期以 URL 内嵌
     (2026-07-09)自证。
+
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-16-zhipu-007
+  date: 2026-07-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "智谱华章发布澄清公告：否认撤回A股发行辅导备案，辅导工作已完成"
+  quote: "智谱华章发布澄清公告：否认撤回A股发行辅导备案，辅导工作已完成"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSkFVX3lxTFBYWjNCajhvVUJFM21KZG9mSUtYenBVdV9jVmVKWm5fMFZ1NmxtUHJ0NTBRRnpHSUtzVExLTnFQanRtVEdIVTZ4WWRn?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO进展澄清，资本市场重要动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

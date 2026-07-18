@@ -48,3 +48,155 @@
   source_type: official
   lens_map: [category]
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-16-google-004
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌NotebookLM更名Gemini Notebook，原生支持代码编写执行"
+  quote: "谷歌NotebookLM更名Gemini Notebook，原生支持代码编写执行"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBRYXpJMTRPamdUdlNJSlF1NkhrZUdlUEFyY1BqbURmR0pHaVptX3dFNjIwM2RxdjZVMm4yWlRLVmlvT3JYbFpTbUllR0RqMS1FTVpzR3FXamV1NTBpZmFXN0ZEY0d2WVRXT0RVTVNySXFUMHNxUlRGN1NmY2hwSFE?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品更名与功能升级,体现AI能力迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-google-005
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌Google Vids新增数字分身功能：你也可以自导自演“AI大片”"
+  quote: "谷歌Google Vids新增数字分身功能：你也可以自导自演“AI大片”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE15b1ZaRXF4UjlGT1FqT2lheUJvNURMYTBrMjRvYmpmbWtvR1c0X1ZMN24wVXlhS3JaU3pGOEVvMXVwZzR6RHFvMA?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新功能发布,AI数字分身应用拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-google-006
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "消息称欧盟拟因一系列违规行为对谷歌合计罚款数亿欧元"
+  quote: "消息称欧盟拟因一系列违规行为对谷歌合计罚款数亿欧元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3AJBVV95cUxPMTNFZm84ejRMcXRiX3ZWYzQ3YnF4LU9kOGdORDZVY2ljNGJVRjhuVFNHRWF5ZHZ1b2NRUWljbmlFZDNUSkVZSVRqYm1jNUQ1M2lFendRS1AtakZRdnM1dUt5WXNNdDhHZjB4aUJxN0lhd3FHajVaVzB3bTBfWVVQMGVyVUVXd29saEdKbGtiNWNFdXRKWWpZZFR3QUJFTFcyM1J0MWtENFFxeTFUbHFXLTR4YVdDZ0UyV0I5bGhKSERuVk5LeEZzcWRJUk5qWjQ2b2pOdUpjTTJ1N1VZZE1DcEN0cGNRcHFmMVNWNERVMUFOZThGRHZpbjFFUGY1U3o2RG9zYWdXY09YUkgwTkY5QlRYY0ZFRE51OUY2aTJEQW5Dc3lZZlF1Wmd3V015a1JUaVFOOE1xbnZQdTVnb2kxbE80WDBJR0c5Q25Yem5MMlFiS0lMVzVhOW9KZ3E?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟监管罚款,重大合规风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-google-007
+  date: 2026-07-17
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "订单激增，三星拟外包谷歌TPU芯片设计业务|Google|三星电子|Google AI|代工|纳米_手机新浪网"
+  quote: "订单激增，三星拟外包谷歌TPU芯片设计业务|Google|三星电子|Google AI|代工|纳米_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxOeUduYU5UVFFrdHRLclhvZGVaYUR2d1A0M3FZWW5qaE54ZnVGbHJDQ2dFRW1YQ3JwdDZJclJrdFRMcFhwQWFBMmtheE9rU2UwN0QzMjF2UXF6Q0xzazZqOW9Rd0ZsWER5eW1wbWFqdW9VTWNhXzB3dDR6dHRsR3U4VkdmdzY1TzduTDNEc3Y1V1k1RzJFck5KQmtpSENMdTBSVkdJ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):供应链调整,TPU芯片代工扩产信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-google-008
+  date: 2026-07-17
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "数千名Google员工联名致信CEO 要求在AI热潮中保障被裁员者权益- Google 谷歌"
+  quote: "数千名Google员工联名致信CEO 要求在AI热潮中保障被裁员者权益- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUOHJZaUNUUHFOVXU1MG83VDh6MXBveUZZalBTMlIwY2JZcW9EMk1ON0dHeVU1d0NkYU5WcFlYVW42QUtxSDhZWWxSM1hNeGhrOU1fLUNad3hhaTJGX0lucA?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):员工集体诉求,内部治理与裁员争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-google-009
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google搜索“AI模式”升级已支持直接关联常用第三方应用- Google 谷歌"
+  quote: "Google搜索“AI模式”升级已支持直接关联常用第三方应用- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Ib24yU1JPVWpldVExZzBoVUhiYVhWV1JQZElxNlk2LUlBNHUwN1d0NEZNd0N0Y0hycG03UWdWSVZoU1RSZGV3dDRER2JfMWpEdFREcTJjVDBJdFhld243Uw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):搜索功能升级,AI模式生态整合。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-google-010
+  date: 2026-07-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "欧盟勒令Google向竞争对手开放Android系统与搜索数据- Google 谷歌"
+  quote: "欧盟勒令Google向竞争对手开放Android系统与搜索数据- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFAycG04eGVybDBwOGJyalZFdDdDSGZjSmh4WnhKc2FiNDE2a3IxdGlMWWU4ZS1nTklrT0JoRUZ6TTR3TkJ6Ym15SFk4bVQ3dlQyazMycmh0VU5hUlhOUGREQw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟强制令,反垄断监管重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-google-011
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Google据悉推迟发布Gemini 3.5 Pro 因持续提升模型编程能力- Google 谷歌"
+  quote: "Google据悉推迟发布Gemini 3.5 Pro 因持续提升模型编程能力- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE05bXBJZ2l3Vjd1N00wU1BCMWpRYTNoWUQyLVAyZEM2ekwyVGtTb2FCU0xBNVpoeGYweUI4QldmZnFQY0hpNVVoeHE0VjZKc1pPSFU5a21EVFB0b1pnUWMxSw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品发布延期,质量优化信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-google-012
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Vids引入Gemini Omni模型并支持生成个人专属AI数字人- Google 谷歌"
+  quote: "Google Vids引入Gemini Omni模型并支持生成个人专属AI数字人- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pMzNfTC1maGtyV0xmTDdqV3BOdklQUC1QNXNlQ3Q2U1plSi04MkxqNnI4WDFOWHZ5cFp4dEt1QWNjdGh3TTdfZGR0dVk4X3J1MW9STGlya00xMjUzMC1nVg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):功能迭代,Omni模型集成应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-google-013
+  date: 2026-07-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "多家大型出版商就Gemini AI训练起诉Google 称其侵权规模“史无前例”"
+  quote: "多家大型出版商就Gemini AI训练起诉Google 称其侵权规模“史无前例”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lOGg1Y3ZGa21YdFFiREcyNTNpWFdUMDRyR0J0S0I0R1JVaTRrb09PbElNeF93NTlMSHU1eF9jYVFaUjROdWRwZmlwN0xFQlBUcjFHSF8yMUFTSVJsTzFwTw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):出版商集体诉讼,AI训练侵权重大法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

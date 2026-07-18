@@ -102,3 +102,20 @@
   source_type: media
   suggested_action: "跟踪 FCC 涵盖清单进展与美国市场渠道替代方案"
   note: "监管缓和与封禁并存(mixed);日期以 URL 内嵌(2026/01/12)自证。"
+
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-17-dji-007
+  date: 2026-07-17
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DJI 大疆 Osmo Pocket 系列影像大赛正式开启，邀你“做自己的生活导演”"
+  quote: "DJI 大疆 Osmo Pocket 系列影像大赛正式开启，邀你“做自己的生活导演”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiyARBVV95cUxOemtrb2kzUHhKQ2NNZjYwZTh2c19YUmVQRHFiUDhwVUM2b3JWYUFHSG9ROTB2bEhWTThWZy1nTGtUblVHVGUzWFVKTkhfeDBJZl9mMFhiOFdndW11SkxiclAyVmNqYndrWEgyQW55bnRtYTRhV29uZ0tZQkJlLWFVNTdTR1FJMFp1dWpnblBuSUhpT1Jhb0I3T0tKN1hodkY3T1kweE12aHV1eVN2Nm8ybEhDV2pyamtPdnprOGJud3RreFhYUnc3NXZFYnA0dDhOYjZuNWNWeDlCOWp3N0JOdkJMRHlEWGx1YXpJWDlZSGNSdk9oQzlwd3E1TWxwaWJwUlFNUWczMGdGSFBiSGlqbWdTSE5yaUk2VkxTMC1uWjhoV2U2TWVJZTlzQTZtYTZQcWVaT1ZRNU91T2VlaHVnczgzNVBoZ29DV3VBOTk1VS1vN2d5eEZJTTVpbzIza3d5ZjB5XzBFMTZpby1OZHJkZXMxcFZJUWlvSHhGMHBSVzFvU1lYdVZIMExTRHRxQlZ2aGE5dFpBdGdQREZ1NTViNU1qZEVOcVNPNnZwTDZkNUM4LUNiSGNfUG5CYzlwY25yRFNfWkxrNkRkS0tvb1ctMTNIOUVnbHdXX2h0N1dGNklUUHVueTkzWm1TUGdLbnpxTnRpTUhIQWhxZWxFREZOS3Y5WWdoaVF4NFpmZklFY3l6a054VEs3MWhLbGJDQ1FVczUtZWxjWklTdWE5VHJLZzNIRUZSaFo1aVB6OHBLY0NLQWhoUXcyeQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):营销活动启动，品牌推广事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

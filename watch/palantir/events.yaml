@@ -63,3 +63,20 @@
   source_type: official
   lens_map: [signal]
   note: "来源:Palantir。首批冷启动;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-16-palantir-005
+  date: 2026-07-16
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "KT携手帕兰提尔举办人工智能黑客马拉松……扩大企业对企业人工智能转型市场竞争力- 阿视亚经济"
+  quote: "KT携手帕兰提尔举办人工智能黑客马拉松……扩大企业对企业人工智能转型市场竞争力- 阿视亚经济"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YWFlPWmphVlNGQ3E2anh5dWMyOHltUTFrb3NPYy1TelEtMVVQYUg5TUc2ZGd3bkxOMEVwX0p4aDJibHBKXzNjc0xacm9PcjhHUWo2MXpzU25OdzJoRmpwNE5nZ2g?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):品牌合作活动，AI领域战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
