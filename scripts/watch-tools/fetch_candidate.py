@@ -267,6 +267,8 @@ def cmd_discover(args):
         "# 反捏造:url/quote/date 取自源 feed;dim/severity/direction/lens_map 为 TODO,由人工/评委判断。",
         "# 核验后把合规项粘进 watch/<slug>/events.yaml、删本候选,再跑 validate_watch.py。",
     ]
+    import hashlib
+    cands = []  # 结构化候选(供前台 triage 页 / build_watch_triage.py 消费)
     total_new = 0
     for slug in slugs:
         q = urllib.parse.quote(f"{_brand_query(slug)} when:{args.days}d")
@@ -314,6 +316,19 @@ def cmd_discover(args):
             eid = next_id(slug, d)  # next_id 只看已入库事件,批内多条人工顺延 NNN
             qj = json.dumps(quote, ensure_ascii=False)
             src_hint = f"(来源:{src})" if src else ""
+            cands.append({
+                "key": hashlib.sha1(link.encode("utf-8")).hexdigest()[:12],
+                "slug": slug,
+                "brand": _brand_query(slug),
+                "date": d or "",
+                "quote": quote,
+                "title": quote,
+                "url": link,
+                "source": (src or "").strip(),
+                "applicable_dims": [dm for dm, v in dims.items() if v != "off"],
+                "lens_suggest": ["signal"],
+                "fetched_at": now,
+            })
             lines.append(f"""
 - id: {eid}          # ⚠️ 批内多条时人工顺延 NNN
   date: {d or 'YYYY-MM-DD'}
@@ -333,7 +348,11 @@ def cmd_discover(args):
     if args.out:
         os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
         open(args.out, "w", encoding="utf-8").write(out)
-        print(f"discover: {total_new} 条新候选 → {args.out}")
+        # 结构化 JSON 伴生文件(前台 triage 页数据源;.md 供人读,.json 供 build_watch_triage.py)
+        jout = os.path.splitext(args.out)[0] + ".json"
+        json.dump({"generated_at": now, "window_days": args.days, "candidates": cands},
+                  open(jout, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        print(f"discover: {total_new} 条新候选 → {args.out} + {jout}")
     else:
         print(out)
     return 0
