@@ -59,8 +59,57 @@ jobs:
           echo "new=${N:-0}" >> "$GITHUB_OUTPUT"
           echo "date=${DATE}" >> "$GITHUB_OUTPUT"
 
-      - name: Publish candidates（前台 triage,优先直推 main）
+      - name: Classify candidates（LLM 预分类 → 建议入库 adopt）
+        id: cls
         if: steps.disc.outputs.new != '0'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          DATE="${{ steps.disc.outputs.date }}"
+          # 无 key 时脚本优雅跳过、不写 adopt(退回人工 triage 流)。反捏造:模型只分类,不改引文。
+          python3 scripts/watch-tools/classify_candidates.py \
+            --in "watch/_candidates/${DATE}.json" \
+            --adopt "watch/_adopt/auto-${DATE}.yaml" \
+            --report /tmp/classify-report.md || echo "classify 失败,退回人工 triage 流"
+          if [ -f "watch/_adopt/auto-${DATE}.yaml" ]; then
+            echo "auto=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "auto=0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Auto PR（LLM 建议入库 → watch-adopt 折入,人工审 diff）
+        if: steps.disc.outputs.new != '0' && steps.cls.outputs.auto == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE="${{ steps.disc.outputs.date }}"
+          N="${{ steps.disc.outputs.new }}"
+          BR="watch-auto/${DATE}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BR"
+          git add watch/_candidates watch/_adopt
+          git commit -m "chore(watch): LLM 预分类建议入库 ${DATE}（候选 ${N} 条）"
+          git push -f origin "$BR"
+          TITLE="feat(watch): ${DATE} 舆情建议入库（LLM 预分类，人工审 diff 合并）"
+          # 用 printf 组装 PR 正文(不用 heredoc/反引号,避开 YAML 缩进与命令替换坑)。
+          {
+            printf '自动发现 + **LLM 预分类**的建议入库。watch-adopt 已把高置信项折入 events.yaml —— **你只需审最终 events.yaml diff 再合并**(合并=人工闸门)。低置信/丢弃项见下方报告,可在本 PR 的 Cloudflare 预览 /watch/triage.html 手动补。\n\n'
+            printf '反捏造:标题/日期/URL 逐字取自源 feed;dim/severity/direction/lens 为 model-judged 分类,不假装客观、不改任何审计分数。\n\n'
+            cat /tmp/classify-report.md 2>/dev/null || true
+          } > /tmp/pr-body.md
+          if gh pr create --base main --head "$BR" --title "$TITLE" --body-file /tmp/pr-body.md 2>/tmp/pr.err; then
+            echo "✅ 已开建议入库 PR。"
+          elif gh pr edit "$BR" --title "$TITLE" --body-file /tmp/pr-body.md 2>/dev/null; then
+            echo "✅ 同分支已有 PR,已更新。"
+          else
+            COMPARE="${{ github.server_url }}/${{ github.repository }}/pull/new/${BR}"
+            echo "::notice::分支 ${BR} 已推,自动开 PR 被拒,手动开:${COMPARE}"
+            echo "分支已推但自动开 PR 被拒。手动开 PR → ${COMPARE}" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Publish candidates（无 LLM key 时回退:直推 main 供人工 triage）
+        if: steps.disc.outputs.new != '0' && steps.cls.outputs.auto != '1'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

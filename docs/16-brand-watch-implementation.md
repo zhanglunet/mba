@@ -126,6 +126,21 @@ JSON 即合法 YAML)经 **GitHub 预填新文件深链**创建 `watch/_adopt/<ts
 `events.yaml` diff 再合并 —— **合并仍是人工闸门**(反捏造:折叠只搬运不打分,采纳事件合并后才由评委
 在 EVOLUTION 消费)。URL 超长(采纳过多)时页面提示分批 / 回退「复制 YAML」。
 
+### 2.7 LLM 预分类 → 全自动开「建议入库」PR(2026-07-18)—— 人工只审 diff
+
+连人工 triage 也嫌费事时的更高档自动化:`scripts/watch-tools/classify_candidates.py` 用 Claude
+(Messages API,仅标准库 `urllib`)给每条候选判 **keep? + dim/severity/direction/lens + 置信度 + 理由**,
+高置信 keep 写成 `watch/_adopt/auto-<date>.yaml`。`watch-discover.yml` 随后开一个「**建议入库**」PR,
+`watch-adopt.yml` 把它折入 `events.yaml` → **维护者只审最终 `events.yaml` diff 再合并**;丢弃/低置信项
+在 PR 正文列出理由(透明,可在预览 triage 页手动补)。
+
+- **反捏造(硬约束)**:`quote/title/url/date` **原样透传**,模型**只做分类、绝不改写或编造**引文;
+  `direction` 等标 `direction_by: model-judged`(显式编辑判断,不假装客观);**不改任何审计分数**,
+  合并入库后仍由评委在 EVOLUTION 重审时消费。字段非法一律兜底留空(由人工在 diff 补),不硬塞。
+- **前置**:仓库 Secrets 需 `ANTHROPIC_API_KEY`(可选 `MBA_CLASSIFY_MODEL`,默认 `claude-haiku-4-5`)。
+  **无 key 时 `classify` 优雅跳过**,`watch-discover` 自动回退到 §2.6 的「直推候选 + 人工 triage」流,不报错。
+- 本地自测(不联网):`python3 scripts/watch-tools/classify_candidates.py --selftest`(验证兜底/分流/落盘)。
+
 ### 2.4 踩坑记录
 
 - **YAML 1.1 布尔坑**:`on` / `off` 会被 PyYAML 解析成 `True` / `False`
