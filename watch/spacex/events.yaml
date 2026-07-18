@@ -81,3 +81,34 @@
   lens_map: [leverage, category]
   source_type: media
   note: "发射/交付节奏信号(W8 核心维度);日期以 URL 内嵌(2026/07/15)自证。"
+
+# ── 2026-07-18 从每日发现候选(PR #165)人工核验入库 ──
+- id: 2026-07-17-spacex-006
+  date: 2026-07-17
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "据报道与五角大楼洽谈提供 AI 算力(潜在国防合同)"
+  quote: "Exclusive | SpaceX in Talks to Provide Computing Power for Pentagon’s AI Push"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxORjd5MTJmSFZmLU5FUmR1dDM1SUdRNVkzeFlZYXhIUXZLZHdMWDA3NFFjWDBfcXIwZnVpNllpbzd3VjE3T1ZBRHI3cHItM2tId0FNcE9mN3BkNTBCT3ZCNFFuNVFNX2lXTS1rcko0VHZwbmk0N2VRODZEMFpVanBkUC1GNFBtOTh4SGNEdTVqMUlmSmc1YkRnVkEtTG9DOE9hUUNB?oc=5
+  fetched_at: "2026-07-18T03:00:00Z"
+  source_type: finance
+  lens_map: [leverage, category]
+  note: "来源:WSJ。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"
+
+- id: 2026-07-17-spacex-007
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "IPO 后首次试飞取消,股价收于低点"
+  quote: "SpaceX stock closes at lows after first test flight since IPO scrubbed"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizwFBVV95cUxPU19mbTRNcFJEWVRhZmNfek1uM3I5bHg5SGpNWXZHeHZyMjZrU3U4aUYzTDFzQWRoWU5GRFFwV3NMMVdfNlppQ2ZDQ2VlNXpOOXVBdVItdUR0Mkdmdll1d3owSXYweWJpRTBwQ0RqaEhZQkRmQi1pTU41Q05iNGh1dXloM2RsQ1phR29sRnF6NEdQQ2hTeWNtQWRfejJIT2h1dTNBWmRhb0I0RDdxQm1qZzVXUEVoZmJxbFQ3eEJBUnhCTUFHc3lteERvMW0yNE0?oc=5
+  fetched_at: "2026-07-18T03:00:00Z"
+  source_type: finance
+  lens_map: [signal]
+  note: "来源:Yahoo Finance;与 6 月 IPO(001-003)承接。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"

@@ -102,3 +102,19 @@
   - leverage
   - origin
   note: 企业化 + 基础设施补强的高管信号;日期以 URL 内嵌(2025/10/02)自证。
+
+# ── 2026-07-18 从每日发现候选(PR #165)人工核验入库 ──
+- id: 2026-07-17-anthropic-007
+  date: 2026-07-17
+  dim: W9
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "据报道与 Meta 洽谈租用算力,潜在规模约 100 亿美元"
+  quote: "Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ0I2QWE2VG81R196RFJPdmpueDdyX05QbkxzbDhOVVBXZDRYVXpsU202RmVPNGtobW8yTVRSOFZaQ1hhYzBhWDVsaFByUklSOG1QWTFEcVNud0dhVE1RemJMa0EtSVJ1UzNXTHVRX1ZCaDBxbFhrSDM5TTdJZmRKdEdsMFZONUhWa0NXeQ?oc=5
+  fetched_at: "2026-07-18T03:00:00Z"
+  source_type: media
+  lens_map: [leverage, signal]
+  note: "来源:The New York Times。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"

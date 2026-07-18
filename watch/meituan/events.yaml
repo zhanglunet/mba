@@ -96,3 +96,19 @@
   - leverage
   - signal
   note: 生态/骑手成本结构性变化(稳定骑手近百万);同期新浪报道美团市值跌约 800 亿;日期以 URL 内嵌(20250221)自证。
+
+# ── 2026-07-18 从每日发现候选(PR #165)人工核验入库 ──
+- id: 2026-07-17-meituan-007
+  date: 2026-07-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "麦格理上调评级至跑赢大盘,目标价 113 港元(称竞争压力缓解)"
+  quote: "Macquarie Upgrades Meituan to Outperform From Neutral; Price Target Is HK$113"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisAFBVV95cUxQbUhFdjdPYV9FamtSeXNTeXd2Z2ZsUFI2YW1SWjliUEotTTNsRW05WkVQcUg5RmhXLVFQd01yNDVfRWlTWm54TlAxTGN0Vk5SOXdsd1gta0lxRk9EVEw5VVI1VzcxNE5uTVQ2VmRiVW56cFpZdThVcmhMS1lJVDlhNEpJRElmU3U1aXlPQzBIY3FWM0wtNzJySm1tc1dlQXFxVnVIVzVLMDhfZDRVTlhWNA?oc=5
+  fetched_at: "2026-07-18T03:00:00Z"
+  source_type: finance
+  lens_map: [signal]
+  note: "来源:Moomoo;对冲 v2 反内卷亏损叙事的分析师视角。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"
