@@ -49,6 +49,9 @@ if command -v python3 >/dev/null 2>&1; then
     echo "[mba-build] generating watch cockpits"
     python3 "$REPO_ROOT/scripts/build_watch_cockpit.py" || \
       echo "[mba-build] WARN: build_watch_cockpit.py failed — cockpits skipped"
+    echo "[mba-build] generating watch candidate triage page"
+    python3 "$REPO_ROOT/scripts/build_watch_triage.py" || \
+      echo "[mba-build] WARN: build_watch_triage.py failed — triage page skipped"
     echo "[mba-build] generating knowledge star map"
     python3 "$REPO_ROOT/scripts/build_starmap.py" || \
       echo "[mba-build] WARN: build_starmap.py failed — using committed site/starmap.html"

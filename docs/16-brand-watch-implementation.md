@@ -99,6 +99,21 @@ direction/lens_map)仍留人工**、**quote 只回填 curl 到的真实标题**(
 **边界**:需要网络,**不进 CI**(CI 不出网,与 §2.3 的「逐字命中属抽检 SOP」同因);它是把
 「WebSearch → curl 核对 → 入库」这条人工链的取数/核对两段**减负**,不替代人工定维度与判断。
 
+### 2.6 前台候选 triage 页(2026-07-18)—— 取代「读 PR diff」
+
+`discover` 除 `<date>.md` 外再写 `<date>.json`(结构化候选)。`scripts/build_watch_triage.py`
+聚合 `watch/_candidates/*.json` → 生成 **`site/watch/triage.html`**(自包含,候选数据 inline)。
+每条候选一张卡片,带 **✓采纳 / ✗丢弃** + 就地选 dim/severity/direction/lens,选完一键
+**复制「已采纳」YAML**(按 slug 分组、续号,粘进 `watch/<slug>/events.yaml`)。选择只存
+浏览器 localStorage。
+
+- **反捏造边界不变**:卡片只呈现源 feed 的标题/日期/URL;判断字段是**人工在页面上打的勾**,
+  非自动打分;**前台不写审计仓库**——采纳项必须 commit 进 `events.yaml` 再 `validate_watch` 才生效,
+  git 仍是唯一真源(公开访客改不了打分)。
+- **候选如何上站**:`watch-discover` workflow 把候选**直推 main**(暂存草稿、非改分),Cloudflare
+  重建后生产站 `/watch/triage.html` 立即显示;main 有保护则回退候选分支 + PR(triage 在预览部署可用)。
+- 入口:全站/单品牌驾驶舱 nav 与 crumb 均挂「候选 triage」。页面在 `site/watch/`(gitignored,随 build 重生成)。
+
 ### 2.4 踩坑记录
 
 - **YAML 1.1 布尔坑**:`on` / `off` 会被 PyYAML 解析成 `True` / `False`

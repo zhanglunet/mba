@@ -279,7 +279,7 @@ TEMPLATE = r"""<!doctype html>
 <div class="wrap">
   <header>
     <a class="mark" href="/" aria-label="MBA"><span>MBA<span class="dot">.</span></span></a>
-    <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/starmap.html">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
+    <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/watch/triage.html">候选 triage</a><a href="/starmap.html">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
   </header>
 
   <p class="crumb"><a href="/watch/__SLUG__/">← __BRAND__ 舆情时间线</a>　/　<a href="/watch/cockpit.html">全站驾驶舱</a>　/　<a href="/watch/">舆情总览</a>　/　<a href="/reports/__SLUG__/">审计报告</a>__FOUNDER_CRUMB__</p>
@@ -428,10 +428,10 @@ AGG_BODY = r"""
 <div class="wrap">
   <header>
     <a class="mark" href="/" aria-label="MBA"><span>MBA<span class="dot">.</span></span></a>
-    <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/starmap.html">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
+    <nav><a href="/">品牌监控</a><a href="/watch/">舆情信号</a><a href="/watch/triage.html">候选 triage</a><a href="/starmap.html">知识星图</a><a href="/docs.html">文档</a><a href="https://github.com/zhanglunet/mba">GitHub</a></nav>
   </header>
 
-  <p class="crumb"><a href="/watch/">← 舆情总览</a>　/　全站舆情驾驶舱</p>
+  <p class="crumb"><a href="/watch/">← 舆情总览</a>　/　全站舆情驾驶舱　/　<a href="/watch/triage.html">候选 triage（打勾采纳/打叉丢弃）</a></p>
   <h1>全站舆情驾驶舱<span class="sub">所有品牌的舆情信号</span></h1>
 
   <h2>全站摘要</h2>
