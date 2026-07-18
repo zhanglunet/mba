@@ -1,0 +1,80 @@
+name: Watch Discover
+
+# 每日自动**发现**舆情候选事件(Google News RSS)→ dedup 现有事件 → 开 PR 待人工核验。
+#
+# 反捏造(docs/15 §边界):脚本只回填**源 feed 的逐字标题/日期/URL**;
+# dim/severity/direction/lens_map 留 TODO,由人工/评委判断后才入库——**不做自动打分**。
+# 候选进 PR、**不自动合并**;人工 curate 合规项 → 粘进 watch/<slug>/events.yaml → 删候选 → validate_watch。
+#
+# 注:本文件是**新增 workflow**,首次运行可能被 GitHub 安全策略 withhold,需在 Actions 页点一次
+#     「Approve and run」(与 daily-report 首启同)。
+
+on:
+  schedule:
+    - cron: "17 2 * * *" # 02:17 UTC ≈ 10:17 北京;避开整点错峰
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "回看窗口天数(默认 3)"
+        required: false
+        default: "3"
+      limit:
+        description: "每品牌候选上限,防噪音灌水(默认 12)"
+        required: false
+        default: "12"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: watch-discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install deps
+        run: pip install --quiet pyyaml
+
+      - name: Discover candidates
+        id: disc
+        run: |
+          DATE=$(date -u +%F)
+          OUT="watch/_candidates/${DATE}.md"
+          DAYS="${{ github.event.inputs.days || '3' }}"
+          LIMIT="${{ github.event.inputs.limit || '12' }}"
+          python3 scripts/watch-tools/fetch_candidate.py discover \
+            --days "$DAYS" --limit "$LIMIT" --out "$OUT" | tee /tmp/disc.txt
+          N=$(grep -oE 'discover: [0-9]+' /tmp/disc.txt | grep -oE '[0-9]+' | head -1 || echo 0)
+          echo "new=${N:-0}" >> "$GITHUB_OUTPUT"
+          echo "date=${DATE}" >> "$GITHUB_OUTPUT"
+
+      - name: Open PR if new candidates
+        if: steps.disc.outputs.new != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE="${{ steps.disc.outputs.date }}"
+          N="${{ steps.disc.outputs.new }}"
+          BR="watch-discover/${DATE}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BR"
+          git add watch/_candidates
+          git commit -m "chore(watch): 每日自动发现候选事件 ${DATE} [skip ci]"
+          git push -f origin "$BR"
+          BODY=$'自动发现的舆情候选事件(Google News RSS,近若干天)。\n\n**判断字段(dim/severity/direction/lens_map)为 TODO,需人工/评委核验后再入库**——脚本不做自动打分(docs/15 §边界)。反捏造:标题/日期/URL 均取自源 feed。\n\n核验流程:合规项 → 粘进 `watch/<slug>/events.yaml` → 删除本候选文件 → 跑 `validate_watch.py`。若全部为噪音,直接关闭本 PR。'
+          gh pr create --base main --head "$BR" \
+            --title "chore(watch): 每日舆情候选 ${DATE}(${N} 条待核验)" \
+            --body "$BODY" \
+          || gh pr edit "$BR" --title "chore(watch): 每日舆情候选 ${DATE}(${N} 条待核验)" --body "$BODY"
