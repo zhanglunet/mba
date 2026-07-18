@@ -1,0 +1,58 @@
+name: Watch Adopt (fold triage 采纳)
+
+# 前台 triage 页「✅ 提 PR」按钮用 GitHub 预填新文件创建 watch/_adopt/<ts>.yaml
+# (采纳事件的扁平列表,每条带 slug)。本 workflow 在 PR 上把它**折入**对应
+# watch/<slug>/events.yaml、重算 id 尾号、删暂存,并跑 validate_watch —— 于是维护者
+# 只需看最终 events.yaml diff 再合并(反捏造:合并这一步仍是人工闸门,脚本不打分)。
+#
+# 限制:自动折叠 + 回推只对**同仓分支 PR**生效(维护者从 triage 页提的 PR 即是)。
+# 来自 fork 的 PR(公开访客)无法回推分支 → 只跑 --check 校验,维护者手动折叠。
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "watch/_adopt/**"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  fold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install deps
+        run: pip install --quiet pyyaml
+
+      - name: Validate adopt files
+        run: python3 scripts/watch-tools/fold_adopt.py --check
+
+      - name: Fold + validate（仅同仓 PR 回推）
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          python3 scripts/watch-tools/fold_adopt.py
+          python3 scripts/watch-tools/validate_watch.py
+          if ! git diff --quiet; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add watch/
+            git commit -m "chore(watch): 折叠 triage 采纳候选进 events.yaml [skip ci]"
+            git push origin HEAD:${{ github.event.pull_request.head.ref }}
+            echo "✅ 已折入 events.yaml 并回推 PR 分支。维护者复核 diff 后合并。" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Fork PR 提示（无法回推）
+        if: github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          echo "本 PR 来自 fork,无法自动回推折叠结果。已通过 --check 校验;维护者本地跑 \`python3 scripts/watch-tools/fold_adopt.py\` 折叠后合并。" >> "$GITHUB_STEP_SUMMARY"

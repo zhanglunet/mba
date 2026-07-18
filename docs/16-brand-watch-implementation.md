@@ -114,6 +114,18 @@ direction/lens_map)仍留人工**、**quote 只回填 curl 到的真实标题**(
   重建后生产站 `/watch/triage.html` 立即显示;main 有保护则回退候选分支 + PR(triage 在预览部署可用)。
 - 入口:全站/单品牌驾驶舱 nav 与 crumb 均挂「候选 triage」。页面在 `site/watch/`(gitignored,随 build 重生成)。
 
+**中文标题(2026-07-18 迭代)**:`discover` 的 Google News 源改中文档
+(`hl=zh-CN&gl=CN&ceid=CN:zh`)+ 查询用 `brand_cn brand_en` 组合 → 候选标题**直接是中文**
+(取自中文媒体,**非机器翻译**,quote 仍逐字);反捏造不变。
+
+**「✅ 提 PR」一键流(取代复制粘贴)**:triage 页「提 PR」按钮把采纳项(扁平列表、每条带 `slug`,
+JSON 即合法 YAML)经 **GitHub 预填新文件深链**创建 `watch/_adopt/<ts>.yaml` → 用户点「Commit / Propose」
+即开 PR(无需 copy/paste、无后端、无密钥)。`watch-adopt.yml`(PR 触发、`paths: watch/_adopt/**`)跑
+`scripts/watch-tools/fold_adopt.py`:按 slug **折入** `events.yaml`、**重算 id 尾号防撞**、删暂存、跑
+`validate_watch`,并**回推 PR 分支**(仅同仓 PR;fork PR 只 `--check`,维护者本地折叠)。维护者只看最终
+`events.yaml` diff 再合并 —— **合并仍是人工闸门**(反捏造:折叠只搬运不打分,采纳事件合并后才由评委
+在 EVOLUTION 消费)。URL 超长(采纳过多)时页面提示分批 / 回退「复制 YAML」。
+
 ### 2.4 踩坑记录
 
 - **YAML 1.1 布尔坑**:`on` / `off` 会被 PyYAML 解析成 `True` / `False`
