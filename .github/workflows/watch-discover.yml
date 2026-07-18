@@ -73,8 +73,18 @@ jobs:
           git add watch/_candidates
           git commit -m "chore(watch): 每日自动发现候选事件 ${DATE} [skip ci]"
           git push -f origin "$BR"
+          TITLE="chore(watch): 每日舆情候选 ${DATE}(${N} 条待核验)"
           BODY=$'自动发现的舆情候选事件(Google News RSS,近若干天)。\n\n**判断字段(dim/severity/direction/lens_map)为 TODO,需人工/评委核验后再入库**——脚本不做自动打分(docs/15 §边界)。反捏造:标题/日期/URL 均取自源 feed。\n\n核验流程:合规项 → 粘进 `watch/<slug>/events.yaml` → 删除本候选文件 → 跑 `validate_watch.py`。若全部为噪音,直接关闭本 PR。'
-          gh pr create --base main --head "$BR" \
-            --title "chore(watch): 每日舆情候选 ${DATE}(${N} 条待核验)" \
-            --body "$BODY" \
-          || gh pr edit "$BR" --title "chore(watch): 每日舆情候选 ${DATE}(${N} 条待核验)" --body "$BODY"
+          # 开 PR 为**尽力而为**:分支已推,候选可复核。GITHUB_TOKEN 开 PR 需仓库设置
+          # 「Allow GitHub Actions to create and approve pull requests」;未开则回退为手动链接,job 不失败。
+          COMPARE="${{ github.server_url }}/${{ github.repository }}/pull/new/${BR}"
+          if gh pr create --base main --head "$BR" --title "$TITLE" --body "$BODY" 2>/tmp/pr.err; then
+            echo "✅ 已开 PR。"
+          elif gh pr edit "$BR" --title "$TITLE" --body "$BODY" 2>/dev/null; then
+            echo "✅ 同分支已有 PR,已更新。"
+          else
+            echo "::notice title=候选分支已推送::gh pr create 被拒(多半是未开启 'Allow GitHub Actions to create and approve pull requests')。分支 ${BR} 已推送,手动开 PR:${COMPARE}"
+            echo "### 每日舆情候选 ${DATE}(${N} 条待核验)" >> "$GITHUB_STEP_SUMMARY"
+            echo "分支已推送但自动开 PR 被拒(仓库设置未放行 Actions 开 PR)。**手动开 PR** → ${COMPARE}" >> "$GITHUB_STEP_SUMMARY"
+            sed 's/^/  pr.err: /' /tmp/pr.err || true
+          fi
