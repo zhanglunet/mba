@@ -137,8 +137,11 @@ JSON 即合法 YAML)经 **GitHub 预填新文件深链**创建 `watch/_adopt/<ts
 - **反捏造(硬约束)**:`quote/title/url/date` **原样透传**,模型**只做分类、绝不改写或编造**引文;
   `direction` 等标 `direction_by: model-judged`(显式编辑判断,不假装客观);**不改任何审计分数**,
   合并入库后仍由评委在 EVOLUTION 重审时消费。字段非法一律兜底留空(由人工在 diff 补),不硬塞。
-- **前置**:仓库 Secrets 需 `ANTHROPIC_API_KEY`(可选 `MBA_CLASSIFY_MODEL`,默认 `claude-haiku-4-5`)。
-  **无 key 时 `classify` 优雅跳过**,`watch-discover` 自动回退到 §2.6 的「直推候选 + 人工 triage」流,不报错。
+- **前置(多 provider,配一个即可)**:仓库 Secrets 加下列**任一** key,`classify_candidates.py`
+  按优先级择一:`GLM_API_KEY`(智谱 GLM,OpenAI 兼容,默认 `glm-4-flash`,免费档够用)→
+  `OPENAI_API_KEY`(OpenAI 或任意兼容端点,配 `OPENAI_BASE_URL`)→ `ANTHROPIC_API_KEY`(默认 `claude-haiku-4-5`)。
+  可用仓库变量 `MBA_CLASSIFY_MODEL` 覆盖模型名、`GLM_BASE_URL`/`OPENAI_BASE_URL` 覆盖端点。
+  **一个都没配时 `classify` 优雅跳过**,`watch-discover` 自动回退到 §2.6 的「直推候选 + 人工 triage」流,不报错。
 - 本地自测(不联网):`python3 scripts/watch-tools/classify_candidates.py --selftest`(验证兜底/分流/落盘)。
 
 ### 2.4 踩坑记录

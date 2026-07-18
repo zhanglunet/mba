@@ -63,7 +63,11 @@ jobs:
         id: cls
         if: steps.disc.outputs.new != '0'
         env:
+          # 多 provider,配哪个就用哪个(GLM 优先 → OpenAI 兼容 → Anthropic)。都没配则优雅跳过。
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
         run: |
           DATE="${{ steps.disc.outputs.date }}"
           # 无 key 时脚本优雅跳过、不写 adopt(退回人工 triage 流)。反捏造:模型只分类,不改引文。
