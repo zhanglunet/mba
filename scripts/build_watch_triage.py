@@ -155,7 +155,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--rule);color:v
   </header>
 
   <h1>舆情候选 Triage</h1>
-  <p class="sub">每日自动发现的候选信号 —— 在这里 <b>打勾采纳 / 打叉丢弃</b>,不必读 PR diff。选完一键复制 YAML,粘进 <code>watch/&lt;slug&gt;/events.yaml</code>。</p>
+  <p class="sub">每日自动发现的候选信号 —— 在这里 <b>打勾采纳 / 打叉丢弃</b>,不必读 PR diff。选完点 <b>「✅ 提 PR」</b>:自动打开 GitHub 预填新文件,提交即开 PR(CI 折入 <code>events.yaml</code>);也可「复制 YAML」手动粘。</p>
 
   <div class="note">
     <b>反捏造边界</b>:每条候选的 <b>标题 / 引用 / 日期 / 原文链接取自源 feed</b>(Google News RSS),页面从不编造。
@@ -170,7 +170,8 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--rule);color:v
       <span class="k-wait">待定 <b id="c-wait">0</b></span>
     </div>
     <select class="brandf" id="brandf"><option value="">全部品牌</option></select>
-    <button class="btn primary" id="export">复制「已采纳」YAML ▸</button>
+    <button class="btn primary" id="pr">✅ 提 PR(采纳项）▸</button>
+    <button class="btn" id="export">复制 YAML</button>
     <button class="btn" id="export-no">复制丢弃清单</button>
     <button class="btn" id="reset">清空我的选择</button>
   </div>
@@ -201,6 +202,7 @@ const SEVS = ["P0","P1","P2","P3"];
 const DIRS = ["pos","neg","neutral","mixed"];
 const LENSES = ["origin","category","leverage","identity","signal"];
 const LS = "mba-triage-v1";
+const GH = {owner:"zhanglunet", repo:"mba", branch:"main"};
 function loadState(){try{return JSON.parse(localStorage.getItem(LS))||{}}catch(e){return {}}}
 function saveState(s){localStorage.setItem(LS,JSON.stringify(s))}
 let state = loadState();
@@ -281,7 +283,7 @@ function yamlFor(){
   date: ${c.date||"YYYY-MM-DD"}
   dim: ${s.dim||"W?"}
   severity: ${s.sev||"P?"}
-  direction: ${s.dir||"neutral"}
+  direction: ${s.dir||"TODO-方向未选"}
   direction_by: model-judged
   title: "${t}"
   quote: "${qq}"
@@ -313,6 +315,29 @@ document.getElementById("export").onclick=()=>{
 document.getElementById("export-no").onclick=()=>{
   const ids=DATA.filter(c=>(state[c.key]||{}).status==="no").map(c=>`${c.slug}  ${c.date}  ${c.url}`);
   openDlg("丢弃清单","这些候选被判为噪音 / 不入库(仅供你记录,页面不改仓库)。",ids.join("\n")||"(无)");
+};
+// 采纳项 → 扁平列表(每条带 slug),JSON 亦是合法 YAML,交给 fold_adopt.py 折入 events.yaml
+function adoptList(){
+  const items=[];
+  DATA.forEach(c=>{if((state[c.key]||{}).status==="ok"){const s=stFor(c);items.push({
+    slug:c.slug, date:c.date||"", dim:s.dim||"", severity:s.sev||"", direction:s.dir||"",
+    direction_by:"model-judged", title:(s.title||c.title||c.quote), quote:c.quote, quote_type:"title",
+    url:c.url, fetched_at:c.fetched_at||"", lens_map:(s.lens&&s.lens.length?s.lens:["signal"]),
+    source_type:"media", note:"前台 triage 采纳;标题/日期/URL 取自源 feed,判断字段人工定。"})}});
+  return items;
+}
+document.getElementById("pr").onclick=()=>{
+  const items=adoptList();
+  if(!items.length){openDlg("提 PR","还没有采纳任何候选 —— 先在卡片上点「✓ 采纳」。","");return}
+  const content=JSON.stringify(items,null,2)+"\n";
+  const miss=items.some(e=>!e.dim||!e.severity||!e.direction);
+  if(miss){openDlg("提 PR — 先补齐判断字段","⚠️ 有采纳项的 维度/等级/方向 没选全(W?/P?),补齐再提 PR。下面是将提交的内容:",content);return}
+  const ts=new Date().toISOString().replace(/[-:T]/g,"").slice(0,14);
+  const fn="watch/_adopt/triage-"+ts+".yaml";
+  const msg="chore(watch): triage 采纳 "+items.length+" 条候选(待折入 events.yaml)";
+  const url="https://github.com/"+GH.owner+"/"+GH.repo+"/new/"+GH.branch+"?filename="+encodeURIComponent(fn)+"&value="+encodeURIComponent(content)+"&message="+encodeURIComponent(msg);
+  if(url.length>7500){openDlg("提 PR — 采纳项过多","一次提交的采纳项过多、URL 超长。用品牌筛选分批提,或用「复制 YAML」手动提。下面是内容:",content);return}
+  window.open(url,"_blank","noopener");
 };
 document.getElementById("reset").onclick=()=>{if(confirm("清空本浏览器里所有 triage 选择?")){state={};saveState(state);render()}};
 document.getElementById("dlg-copy").onclick=async()=>{

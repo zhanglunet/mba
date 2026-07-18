@@ -212,7 +212,9 @@ def cmd_verify(args):
 # 每品牌拉 Google News RSS,dedup 现有事件,emit 候选草稿(判断字段留 TODO)。
 # 与 draft 同哲学:脚本只回填**源 feed 的逐字标题/日期/URL**,从不编造 quote,也不擅自定
 # dim/severity/direction/lens_map —— 那是人工/评委判断(docs/15 §边界:direction 是显式标注)。
-GNEWS = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
+# 中文源:标题直接是中文(取自中文媒体),满足「候选标题中文化」且**不做翻译**——
+# quote 仍是源站逐字标题(反捏造:中文标题来自中文源,非机器翻译)。
+GNEWS = "https://news.google.com/rss/search?q={q}&hl=zh-CN&gl=CN&ceid=CN:zh"
 
 
 def _published_slugs():
@@ -227,13 +229,16 @@ def _published_slugs():
 
 
 def _brand_query(slug):
-    """品牌搜索词:优先 reports-meta 的 brand_en(Google News 英文召回好),回退 slug。"""
+    """品牌搜索词:中文源下用「brand_cn brand_en」组合(中文召回优先、英文名兜底),回退 slug。"""
     meta_path = os.path.join(ROOT, "site", "reports-meta.yaml")
     try:
         reports = (yaml.safe_load(open(meta_path, encoding="utf-8")) or {}).get("reports", [])
         for r in reports:
             if r.get("slug") == slug:
-                return r.get("brand_en") or r.get("brand_cn") or slug
+                cn, en = r.get("brand_cn"), r.get("brand_en")
+                if cn and en and en.lower() not in cn.lower():
+                    return f"{cn} {en}"
+                return cn or en or slug
     except Exception:
         pass
     return slug

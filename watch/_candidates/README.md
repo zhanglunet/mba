@@ -8,11 +8,13 @@
 
 候选会**直推 main**(暂存草稿,非审计改分),生产站 `/watch/triage.html` 随即显示。
 
-## 前台 triage(推荐)—— 不必读 PR diff
+## 前台 triage(推荐)—— 不必读 PR diff,一键提 PR
 
-打开 **[/watch/triage.html](https://mbabrand.com/watch/triage.html)**:每条候选一张卡片,
-点 **✓采纳 / ✗丢弃**,可就地选 dim/severity/direction/lens;选完点「复制『已采纳』YAML」
-→ 粘进 `watch/<slug>/events.yaml` → 删掉已处理的候选文件 → 跑 `validate_watch.py`。
+打开 **[/watch/triage.html](https://mbabrand.com/watch/triage.html)**:每条候选一张卡片
+(标题为中文,取自中文媒体),点 **✓采纳 / ✗丢弃**,可就地选 dim/severity/direction/lens;
+选完点 **「✅ 提 PR」**:自动打开 GitHub 预填新文件(`watch/_adopt/<ts>.yaml`),提交即开 PR,
+`watch-adopt.yml` 折入 `events.yaml`(重算 id、删暂存、validate),维护者复核 diff 后合并。
+也可「复制 YAML」手动粘。`watch/_adopt/` 是折叠前的暂存,合并即清空。
 
 **这里的文件是暂存草稿,不是正式事件流**:
 
