@@ -298,10 +298,11 @@ function yamlFor(){
   });
   return blocks.join("\n\n");
 }
-function openDlg(title,hint,text){
+function openDlg(title,hint,text,hideCopy){
   document.getElementById("dlg-title").textContent=title;
   document.getElementById("dlg-hint").textContent=hint;
   document.getElementById("dlg-text").value=text;
+  document.getElementById("dlg-copy").style.display=hideCopy?"none":"";
   document.getElementById("dlg").showModal();
 }
 document.getElementById("export").onclick=()=>{
@@ -328,10 +329,14 @@ function adoptList(){
 }
 document.getElementById("pr").onclick=()=>{
   const items=adoptList();
-  if(!items.length){openDlg("提 PR","还没有采纳任何候选 —— 先在卡片上点「✓ 采纳」。","");return}
+  if(!items.length){openDlg("提 PR","还没有采纳任何候选 —— 先在卡片上点「✓ 采纳」。","",true);return}
   const content=JSON.stringify(items,null,2)+"\n";
-  const miss=items.some(e=>!e.dim||!e.severity||!e.direction);
-  if(miss){openDlg("提 PR — 先补齐判断字段","⚠️ 有采纳项的 维度/等级/方向 没选全(W?/P?),补齐再提 PR。下面是将提交的内容:",content);return}
+  const bad=items.filter(e=>!e.dim||!e.severity||!e.direction);
+  if(bad.length){
+    const list=bad.map(e=>"· "+e.slug+"｜"+String(e.title||"").slice(0,26)+" —— 缺:"+[!e.dim&&"维度",!e.severity&&"等级",!e.direction&&"方向"].filter(Boolean).join("/")).join("\n");
+    openDlg("提 PR — 先补齐判断字段","下面 "+bad.length+" 条采纳还没选全。回到卡片(绿色边框那几张)把 维度/等级/方向 选好,再点「提 PR」——就会**直接跳到 GitHub 预填页开 PR,不用复制粘贴**。",list,true);
+    return;
+  }
   const ts=new Date().toISOString().replace(/[-:T]/g,"").slice(0,14);
   const fn="watch/_adopt/triage-"+ts+".yaml";
   const msg="chore(watch): triage 采纳 "+items.length+" 条候选(待折入 events.yaml)";
