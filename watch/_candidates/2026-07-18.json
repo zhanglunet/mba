@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T10:13:23Z",
+  "generated_at": "2026-07-18T13:59:07Z",
   "window_days": 14,
   "candidates": [
     {
@@ -25,7 +25,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "c73ade7370b6",
@@ -50,7 +50,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
+    },
+    {
+      "key": "713b377d9d28",
+      "slug": "lenovo",
+      "brand": "联想集团 Lenovo Group",
+      "date": "2026-07-15",
+      "quote": "Lenovo Group: Qlobal baxış, PC payı 24,4%-ə yüksəlib",
+      "title": "Lenovo Group: Qlobal baxış, PC payı 24,4%-ə yüksəlib",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB6Y1FOM3ZTWjNLbFRjTzh3YmlfYnhmY0YtTHdYakZETklyNEg1NHlnTE11V3ZZSVRHLXJFMmhHeXdzZnlRQ2QydGEwVmZvbm5ucVhnN0p3OWRpR0FQN3NmSGtReVE4ZVN3?oc=5",
+      "source": "Binance",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "62c0ad0280ee",
@@ -75,32 +100,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
-    },
-    {
-      "key": "db87d9e16f0c",
-      "slug": "lenovo",
-      "brand": "联想集团 Lenovo Group",
-      "date": "2026-07-13",
-      "quote": "AI产业链中报预喜释放强势信号，联想集团财报预期升温",
-      "title": "AI产业链中报预喜释放强势信号，联想集团财报预期升温",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE95ekU0WWVNRjcxSDVLOWtUYmkzeGlCM2hvYXNBNWc3elEzbW95clhEWVVrOG1mRTBnRnhYNjVYSkh6N196aWE4UEtyUWlCUHpmY3FR?oc=5",
-      "source": "Moomoo",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "cb076e697ed0",
@@ -123,7 +123,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "f250d559729a",
@@ -146,7 +146,57 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
+    },
+    {
+      "key": "6278860b8bb9",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-07-14",
+      "quote": "Anthropic 发文称自家 Claude 已经开智，网友：为了上市，不择手段？",
+      "title": "Anthropic 发文称自家 Claude 已经开智，网友：为了上市，不择手段？",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51OFhpQ3J2MmRPLVN2c1pPaVlfZldTRUZvRGl4RVpKQ0ZVejlIOXRSc1Bzb0VxTzg1LTZXc2E0cG9nODlfSC02cTNSeGFqYjNsMmR6THQwOWFJWXVhdFpPSjh3aksxaUE?oc=5",
+      "source": "雷峰网",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T13:59:07Z"
+    },
+    {
+      "key": "9bbdae8f0148",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-07-06",
+      "quote": "Anthropic：Claude 已承担 95% 的内部数据分析查询工作",
+      "title": "Anthropic：Claude 已承担 95% 的内部数据分析查询工作",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrVmNhVnE2T0w2VzJjVUJsWmxUam1JdFdQdWJMLWRzYWxxZEVWUlRMSWNwbkQ3Vks3RW1kb3c0VHlaUzlkOWtTUjhqb1pBQW1vVDE0YUZqYmZwc1RIT0E?oc=5",
+      "source": "Infoq.cn",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "c07b5c1d216d",
@@ -171,7 +221,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "493df77098b3",
@@ -196,57 +246,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
-    },
-    {
-      "key": "8a7d01ef7964",
-      "slug": "anthropic",
-      "brand": "Anthropic Anthropic (Claude)",
-      "date": "2026-07-18",
-      "quote": "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利",
-      "title": "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FZ3J5WWVWb3ZmU1gtTnNjVVRWdWM1ZnpsUUhxZG9XU2k5UnBVekZsaURCaUViSTRuaHBZZWdURXI1MnczZ3QtLQ?oc=5",
-      "source": "财联社",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T10:13:23Z"
-    },
-    {
-      "key": "5acadbe44e4d",
-      "slug": "anthropic",
-      "brand": "Anthropic Anthropic (Claude)",
-      "date": "2026-07-15",
-      "quote": "AI也会「看人下菜」？Anthropic勾勒出了Claude的价值观画像",
-      "title": "AI也会「看人下菜」？Anthropic勾勒出了Claude的价值观画像",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wRG9GNzRmNmx6MXBZTkltSWtmUkxZY205UzNSUEZaRUdianY5YUdpYzE5TTBoLXlfWkI3YUxOTDl1Ulo1dWpGdlNzN21pYWJJalJpRktR?oc=5",
-      "source": "投资界",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "b3925243bbab",
@@ -270,7 +270,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "273c5177972e",
@@ -294,7 +294,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "f997bca4bbcc",
@@ -318,17 +318,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
-      "key": "de250530f7d5",
+      "key": "6f474f35033d",
       "slug": "dji",
       "brand": "大疆创新 DJI",
-      "date": "2026-07-16",
-      "quote": "【现场】劳动者搭电动列车通勤、商场与森林相融……深圳所展现的未来城市图景: 中国·国际",
-      "title": "【现场】劳动者搭电动列车通勤、商场与森林相融……深圳所展现的未来城市图景: 中国·国际",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HQkxrVlBfYU1HVEQwMnQ5aFFzNDdjZ0tHZHQ2cURpeWVFdXoyWUpZdTlzcUg4RFRhRV9nSTNvdTZ0TU9BeG1XcElYNEUxWERVSVpGZ3Z2MTQ4WHpMaHQ4VVJKaVQ?oc=5",
-      "source": "韩民族日报",
+      "date": "2026-07-10",
+      "quote": "大疆无人机飞抵8861公尺 精确收集取大气污染物",
+      "title": "大疆无人机飞抵8861公尺 精确收集取大气污染物",
+      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPLXRkTmhUVFRKdEtXQXE0QmtONjJ2dHhxS3Q3QzJlZmJTcU5RdXBJaXFhNllQNkhBTjNGZFptdU5QT3dyaEdkeFhQdWN0Y2Y2RjA1MFRueUw0VzRrR3BKZmozdXFyX1FZSXlrUHc1RVdQX0NZYjk5blRsUU9MLWZZTDNIX1JEaHBERHFYUWtRTEdJOGtvanRrWlNCN3JLLUFwMTVRNjBPOEdnNjRRT1huX1hfbnVUVTlCUEJ0MEw0eklXV3BIUkhtQU5saC01TzZZR19ZOWVWLWVnU1N6cy03R0lUQlJUUHpXaWwzU2U1LTExaGdCUXl0R1p3eHdFdkpoSlpLaEZpZ3pmU2VmbkQwamlRd1JaVmJscnVxeEZ1SzBsVkphLTBWWFYydE1tV2FxWHpGcC13bF94TEh3?oc=5",
+      "source": "中國報 China Press",
       "applicable_dims": [
         "W1",
         "W2",
@@ -342,7 +342,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "c79aa4bd1aee",
@@ -365,17 +365,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "a49f9a356e0b",
       "slug": "kimichat",
       "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
-      "date": "2026-07-17",
+      "date": "2026-07-18",
       "quote": "中国AI公司月之暗面发布全球最大规模开源模型",
       "title": "中国AI公司月之暗面发布全球最大规模开源模型",
       "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPd1JYUmFMRTc0V1RFZ2JYWE0yZkVQS1VtV1pabnZOXzE2VmVhSUFEb3hWUWczaUxfamVkU0JwcE1BY29HLW14dm4zR05MWTQ3SzVOSkVLUkhSWmRSRy1NWXF1LXl2dFVLRjJua3Fpcm5sZFpyUnprN0hNNDdsRXY5dy1LSDRzZi1sMGFKNm96aXVPQ3B6VVQ4UEtaVzNsTEljZ1lydExlMnp4bFQ0aFBsWnRGWFB4MjF5dWhEY2szcEFGNG1WVnFHNy16T0laQ0FjUUNnYmx4M1pod0dob2NHdnZGRERFV0E0emRZU3Azd05OMXh2bmV3cE9sVC1kNEpQN1VWX2w3M2YycHdSRk5fLUxURjVWVU9uTWFEZTN0R1JzMFFmdkt5aE81R3I2eDRMUExhZndpSkF3U0HSAbsCQVVfeXFMUHQ0dk15M192ZDczNTdBcVJLMFp5WkFSZ3hZLTJTZmx6SkZ5Q2kweWs2WnVoWE02eDRSVG16SGMxd2lVRWhuQWluaGhoRW5TVS1CcUctQ1VxQ0JLWUstd0l1SkJiSUM4YzBJcndXYTFXZG5CS1BpbmhWQ0dPZTlUYWtWWmdpZDFYTVBSaFBKczh5dTY3bmg0N1Y5Q0Y1QnAxZlFnLUNrUmF6Nzl0QlM0MHgyMlBoc05sN0tvMEhieHRNb2dmUUFodVZ3RGZHMDJOUlhreFk4YVNzaExFY2lEVk5WQ0k2ODZ1UEZoX3BPT0RqOGt4UG5aUk1rbW5PMVJ0T25EcWYwN0dqNVlHaVFudTBmVGZCVVU5LW02dEZKcG1hR1lmdVdsSGNJRXc4NXdJcl9rc1ZBRDlHRHZr?oc=5",
-      "source": "dw.com",
+      "source": "DW.com",
       "applicable_dims": [
         "W1",
         "W2",
@@ -389,7 +389,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "a9069a7ff1b4",
@@ -413,7 +413,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "5454d60219f2",
@@ -437,7 +437,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "4a257e19d032",
@@ -461,7 +461,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "0aab60818c45",
@@ -484,7 +484,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "9936568e0c87",
@@ -507,7 +507,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "cb3c582d9dc2",
@@ -530,7 +530,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "7d68835a06c4",
@@ -554,7 +554,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "f64f657103c8",
@@ -578,7 +578,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "ed27e1633a50",
@@ -602,16 +602,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
-      "key": "d755f547e644",
+      "key": "a217d51beed8",
       "slug": "meituan",
       "brand": "美团 Meituan",
-      "date": "2026-07-15",
-      "quote": "100家餐厅真实测评带娃吃饭看这里!收藏!-大众点评",
-      "title": "100家餐厅真实测评带娃吃饭看这里!收藏!-大众点评",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FbjNjOEpEWXptSUZldWZFMEVpQzlJLWc4RTNjR2RGeUdoLXpSUjJPRFFBb2JQQmhLektyNmhwMVp2aTg1aGRVUzRrZnpaSE83QTVyZktoOHd6WGI5RXpUNUVWSElRaF9uUV9FWi02NjVUTlducE1oaHFhVDVsdWM?oc=5",
+      "date": "2026-07-16",
+      "quote": "这家店？整道流程下来 我人都展开了…-大众点评",
+      "title": "这家店？整道流程下来 我人都展开了…-大众点评",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4WGo2OEVSOExVQlpKaXJrRXB3VlVaQXdWSUFndHJzU3hTUmwtRWFoWENRS3d3VWUwS3dIUzM5aFdhR3p4eG5jcDdjZlBEeXd0Y3Izb3o2eERVS1FfaHRkeVFiSVZzRmRXenhqdi1LbE1wS1ZramFaV0MyZmNldEk?oc=5",
       "source": "手机新浪网",
       "applicable_dims": [
         "W1",
@@ -626,7 +626,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "a021b5aa1465",
@@ -648,7 +648,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "33f522e3bee6",
@@ -670,7 +670,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "11254d9b7005",
@@ -692,7 +692,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "cf4712ed3168",
@@ -714,7 +714,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "85578217df06",
@@ -737,13 +737,13 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "a49d04c82c08",
       "slug": "spacex",
       "brand": "SpaceX",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "quote": "中国开启可回收火箭时代，加速追赶SpaceX",
       "title": "中国开启可回收火箭时代，加速追赶SpaceX",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQblpaZ2hZbGlnNEc3RnFxcVVvbnA4U3kxUHpuZzhmazNvMnBiWVNGQTRoNV9lTUFmNlMxR3dTZkxNLWRuX0JrZ3J0MkhjdmI0SE42Zmh5YjdPeGl0bTRlUTJ5ZHVNTUVuX0pVNVBfQWZ4NjNWS3dndExXVzk0U1J3SVI1aHlLRE0?oc=5",
@@ -762,7 +762,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "c25bf1e367f6",
@@ -787,7 +787,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "7cfbc0d0d32a",
@@ -812,15 +812,15 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "5500f773c71e",
       "slug": "spacex",
       "brand": "SpaceX",
       "date": "2026-07-10",
-      "quote": "外媒热议长十乙：突破性进展，但没搬SpaceX那套",
-      "title": "外媒热议长十乙：突破性进展，但没搬SpaceX那套",
+      "quote": "外媒热议：再突破！但没搬SpaceX那套",
+      "title": "外媒热议：再突破！但没搬SpaceX那套",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Vc05BSnlvNUI1S19MTXFobXlCTkhyeThxOC0xSXhBamV1dHRtTWdLdE50WlM1dzVId2o4SEh2SUlXTVdKTUtMa3FoOXhvbHNMVExHZ0tOSEljVjRuLU5CWnZDMUtRSXBpTEE?oc=5",
       "source": "观察者",
       "applicable_dims": [
@@ -837,7 +837,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "f0fed2c7b895",
@@ -862,7 +862,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "a6d584a018ee",
@@ -887,17 +887,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
-      "key": "c31087319a6d",
+      "key": "61d306b73066",
       "slug": "openai",
       "brand": "OpenAI",
       "date": "2026-07-16",
       "quote": "OpenAI 一夜重置全员额度，800 万开发者集体「续命」",
       "title": "OpenAI 一夜重置全员额度，800 万开发者集体「续命」",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBqQmNXc0NYZ2Jhdkk2elp2OE5URTZ6RTUzS3E3RFVteHNtcnlZWDJ6d0t2RVl4N2Y2YnpBR0tsTEs5WDFiVUpWNHNHNkZtbDhLRzdnWnY5REtfMGxDR1BfYjVSNTNnRGVpSjhISFlia2RFUQ?oc=5",
-      "source": "雷峰网",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSbTZTNlBIVFdiMmY0c1QxUUVIbVFsVk1iMGY5aXVaMlVfNmdZVC1pSnd2UWRNMHc0ZWxKVGNlcU1WOWlmd0VieUJhemdCTlpkYm1LQ1ZrZGlMS1RqdDA0WjhncUhIS3JpZ0ZINHdqMzVUR29RS1FpVUgzVjZMV0k?oc=5",
+      "source": "新浪财经",
       "applicable_dims": [
         "W1",
         "W2",
@@ -912,15 +912,15 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "019a601650d5",
       "slug": "openai",
       "brand": "OpenAI",
       "date": "2026-07-11",
-      "quote": "撕破脸！苹果控告OpenAI“窃取商业机密”：烂透了",
-      "title": "撕破脸！苹果控告OpenAI“窃取商业机密”：烂透了",
+      "quote": "苹果和OpenAI，撕破脸",
+      "title": "苹果和OpenAI，撕破脸",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ONlRwMTc5Q1pESy1xdmxzWFRZZ2g3Z0dvVUllNURGUVFveEhnNWlIbEJIQ1RuSE9Ld0dpdUtrM1h0V0V1b0ZvT3g5bmwtNnlfUTk3R1haQjcyNWMtaUZlR2lDZUd1enM4eUE?oc=5",
       "source": "观察者",
       "applicable_dims": [
@@ -937,7 +937,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "fef1b0cf78fa",
@@ -962,7 +962,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "4251527432ac",
@@ -987,7 +987,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "0b384f5ee825",
@@ -1012,7 +1012,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "8a33042bf24c",
@@ -1037,7 +1037,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "fe518c63cd8d",
@@ -1061,7 +1061,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "ca68e44a7904",
@@ -1085,31 +1085,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
-    },
-    {
-      "key": "99bbf62a1497",
-      "slug": "deepseek",
-      "brand": "DeepSeek / 深度求索",
-      "date": "2026-07-15",
-      "quote": "消息人士：DeepSeek计划再融资并筹备IPO",
-      "title": "消息人士：DeepSeek计划再融资并筹备IPO",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNb2ZPV0VZY3cxZG9KSThMeFozNzR3bkc4VkdNM1NIWTd2N1ljSFdWeGw2TlZHTnBEdXJ4M2RsbDNXRTlsZkt1LUhKNFpmVjlLenc0SW10VWZSM0pnOEpWZzR1d2hNVW1jTnRyZlJzZFNGWjhYUWVKdWpDdGFpYjZETjF2TlI0U3pUV2FRRTJlOWtLT21PblFYeHZNV3cxemJaOHJqS2l3dFVTaUZiUWFYS3FpMXktVDlhOXZSei13M1EyNkRzZHo3b0pZakJHWnI4YkVLdXVNRFhncjd5d2NidnRQaExhN0HSAecBQVVfeXFMTW9mT1dFWWN3MWRvSkk4THhaMzc0d25HOFZHTTNTSFk3djdZY0hXVnhsNk5WR05wRHVyeDNkbGwzV0U5bGZLdS1ISjRaZlY5S3p3NEltdFVmUjNKZzhKVmc0dXdoTVVtY050cmZSc2RTRlo4WFFlSnVqQ3RhaWI2RE4xdk5SNFN6VFdhUUUyZTlrS09tT25RWHh2TVd3MXpiWjhyaktpd3RVU2lGYlFhWEtxaTF5LVQ5YTl2UnotdzNRMjZEc2R6N29KWWpCR1pyOGJFS3V1TURYZ3I3eXdjYnZ0UGhMYTdB?oc=5",
-      "source": "dw.com",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "30f7302c2bc7",
@@ -1133,7 +1109,31 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
+    },
+    {
+      "key": "f31205ff6694",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-07-17",
+      "quote": "他们早就说，中国AI能行！",
+      "title": "他们早就说，中国AI能行！",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTVM3UURITXdvb3FCbWJtOGM2cm9paXY3YTVRN0ktMjUzbDdBbU5hTUFfZzAtRnpXZkE4b2huWHBtTlMxcWs5Q0JtUzZtVWJpckdMSFNqckEyN01hYWtlUy13REkzTVdtRHFxMGhWTHFZaDNrME05UlZOc1lDR0x6UFZXUHk3VHk5QTFIZQ?oc=5",
+      "source": "21财经",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "946bd5d3aa75",
@@ -1157,7 +1157,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "df23ba4beba6",
@@ -1181,7 +1181,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "4417acef45d3",
@@ -1205,17 +1205,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
-      "key": "1e79b4bd5adc",
+      "key": "b43396098715",
       "slug": "nvidia",
       "brand": "NVIDIA / 英伟达",
       "date": "2026-07-09",
-      "quote": "英伟达：AI时代的引领者？",
-      "title": "英伟达：AI时代的引领者？",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOHRkQkd5bWdrc0RLTHRnZldNdDZoSjY4WHFTUURJd3UydVhnbVFOcm82eUUtWFgxMllnQjBWUDRlOXdZUTJVS1FVZ2t0eHpvMVJib2lHUzNITjJyQ05jb3RVMDQ2bFFJS3Zlc2JDYm5yVjBHZFI4dmRiNWpRLXNaZkRyU3drS2o1aGRyUGFaWldsMlQ0RVNB?oc=5",
-      "source": "Moomoo",
+      "quote": "中国或批准顶尖AI公司购买英伟达芯片，分析人士：这一政策转向暴露了中国国产芯片的关键瓶颈",
+      "title": "中国或批准顶尖AI公司购买英伟达芯片，分析人士：这一政策转向暴露了中国国产芯片的关键瓶颈",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdkhNbm9ENEplN282NzBwbFNtei1WNzBuRmd3Rm5pcUx3TlhYVkxxc0JiRTJRWUkyRFdVdTNuVE0tMkFrQk91UnRDS0xXRmlOQ1BMQUFlZmxKTmJyOFVHVWU4NjJiMHY4ell0enJhcjVGbWppOEZ6LTBzYzlVMUhiU1FnOFhOZ3ZYNHNCT2VvYkZzdV9Hc2tVN1RmLVlxMFJ2dnFjZlFjalFreUFSNTgtWXV30gG0AUFVX3lxTFAwemlsbFlXamlkMm5wZmhBdUNoMGYwUkNUaFNlNGlEN2p0ekF0YTlKR0VwUFBzU3dhbUNCaEJ6UkxkYjFsMlI3SnVwNFlvY1Z5NGJ3cFhVZnVuaW83THh0bkloTmhmWHdvc01keDRoMWp3TnYtdHR3cUxuOENwYW5CS2RVa2RkdTdQdDJYVkN1aWgzamdXU1ZWM09tcjJ1ZnQxalFjSW5PV3gyYl9vUG80R3BndQ?oc=5",
+      "source": "美国之音",
       "applicable_dims": [
         "W1",
         "W2",
@@ -1229,7 +1229,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "d9b0c1daf9c0",
@@ -1253,7 +1253,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "8d7c9ff5162c",
@@ -1277,7 +1277,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "eb5d220559ea",
@@ -1301,7 +1301,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "c4cacd402270",
@@ -1325,7 +1325,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "bdb661d08d2e",
@@ -1349,7 +1349,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "966c9eaf2bea",
@@ -1373,17 +1373,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
-      "key": "88c0765326f9",
+      "key": "49f2e7b4ed7a",
       "slug": "google",
       "brand": "Google / 谷歌",
       "date": "2026-07-14",
       "quote": "谷歌偷偷改了2% Google Maps用户的路线！结果整座城市的汽车都快了 油耗跟着降",
       "title": "谷歌偷偷改了2% Google Maps用户的路线！结果整座城市的汽车都快了 油耗跟着降",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOHBhb3djV1c2WEkzc3BzclVaaHYwZjFuUlczRzlaeWgtMkQ0Tm1vSmxRdnJUaF91X21JazRLM0tGWUxRSUpWaFh0OUNIbnhJdzFnN05RblM3aDNYMEJINzY2MjllSWZDQ3NJdUkyZmlrX2VzdVZkTjhKbFhEdk13d1ltU0pyZE5y?oc=5",
-      "source": "搜狐网",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE81OEctWUd0Vy1IWnE4bHFaMnI1ZFdya1FTaUpkNE5PeS1FSy1CY2hiWWF4WkdGbWZ2ckNjNERUUm82Ujg2LXFwZ3U0a0xBSERTSXBIRi1mSUY?oc=5",
+      "source": "驱动之家",
       "applicable_dims": [
         "W1",
         "W2",
@@ -1397,7 +1397,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "04a772820217",
@@ -1421,7 +1421,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "8f772483a6fb",
@@ -1446,7 +1446,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "86fd932e5f96",
@@ -1471,7 +1471,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "8c837abe5356",
@@ -1496,7 +1496,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "2454928a2c60",
@@ -1521,7 +1521,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "8e03ca356e58",
@@ -1546,7 +1546,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "4db13516f69b",
@@ -1571,7 +1571,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "7a287358cf06",
@@ -1596,17 +1596,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
-      "key": "6b67892770f4",
+      "key": "39095f0f4e45",
       "slug": "amazon",
       "brand": "Amazon / 亚马逊",
-      "date": "2026-07-08",
-      "quote": "AI“无底洞”！亚马逊再发债250亿美元，AI概念债券遭全线抛售",
-      "title": "AI“无底洞”！亚马逊再发债250亿美元，AI概念债券遭全线抛售",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0tdXhGQkJkMEItdlJCbE54WHZOR3pzS3R4VkRPWWloRGFvTC12bmNuellyakpNS01jVmNMNWx1QUM2QkJXcjUyQ1lzZ2VBcmhlMVNF?oc=5",
-      "source": "华尔街见闻",
+      "date": "2026-07-09",
+      "quote": "是什么让亚马逊的股价一骑绝尘",
+      "title": "是什么让亚马逊的股价一骑绝尘",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTnhrbWNNeHI1NU45aW5PQzRlc3NRMGlQbWhzcUVMcm9MMGdsTm41RHcydDlTY3k0enhkTlNFbVg2VWlfQkJNS0JVeUNVUC00azVjNjJKTGYtV3AtTzFnMXVnVVJPNnFLR3pNdThWbnJYWmhPNkJlTzB6cl9sVzlNMW9na3E5a1hqbUJqdnlQLUU1T3Y4T0xlbmlteWhTaXFaWTF3?oc=5",
+      "source": "Moomoo",
       "applicable_dims": [
         "W1",
         "W2",
@@ -1621,7 +1621,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "aec6d0dbcc2e",
@@ -1645,16 +1645,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
-      "key": "1ddc91792c5f",
+      "key": "6bb2c755abe3",
       "slug": "huawei",
       "brand": "Huawei / 华为",
-      "date": "2026-07-18",
-      "quote": "简单才能有效，华为数据存储助力证券行业数据备份再进阶-华为企业业务",
-      "title": "简单才能有效，华为数据存储助力证券行业数据备份再进阶-华为企业业务",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQ3N2Rks1bHpfd2RMVVN2UW1qN1lvQWlldlBwOFZ0enhHTjQ1YTZOSmczak5Rc3pvb2Y3MllLZUdrNzZ3ZTE3Ukx6VHhUV0J1QXpiRkRaSFVwNXNxMmJIZUszb0RyTDZDT2xOZmtCMWtNRTFOWUs3ekZaLW9ZRkVNVHdMOWw?oc=5",
+      "date": "2026-07-17",
+      "quote": "华为助力加纳BPA，打造AI时代智能发电厂- 华为企业业务",
+      "title": "华为助力加纳BPA，打造AI时代智能发电厂- 华为企业业务",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbE9mTERESXByS2FxdjVtekxEdDFMcG1QOGZublFyR1FpX1JXa0RTQXdySHdsSHVfbHZURnFwUVlNVTIzenItZWtjR1lSR0NZNkZ6V2g3eDVtb05vWlFrMFQ5alhobHhldDUtRFk5ZlJOVXZMT0xRTkZfMVlKQU9VNmNuWQ?oc=5",
       "source": "Huawei Enterprise",
       "applicable_dims": [
         "W1",
@@ -1669,40 +1669,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
-      "key": "7a1d48612661",
+      "key": "571e489e2238",
       "slug": "huawei",
       "brand": "Huawei / 华为",
       "date": "2026-07-16",
-      "quote": "旅行用续航强的华为手机",
-      "title": "旅行用续航强的华为手机",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE11YXZUUG5xYXFBNEkybUtpaW1wQ3Vva3BDbXBYMHJiQTNBQlp4dUZ1Vjd2TmhaMWk5RGdGU2w3MXpYc1VHZ0g1LU9memdycmhVUGlvVzBmTWxFdWlaYk8tWHl4STJBNEZQUnVLUlVZTWN6Zw?oc=5",
-      "source": "手机新浪网",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T10:13:23Z"
-    },
-    {
-      "key": "cf895fe9c298",
-      "slug": "huawei",
-      "brand": "Huawei / 华为",
-      "date": "2026-07-09",
-      "quote": "华为Pura80系列官方翻新版上架 价格优势明显",
-      "title": "华为Pura80系列官方翻新版上架 价格优势明显",
-      "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQYXFzX0FkbXVFSHB0djV4S1dPcXV6VE1yZmdwMEZJaVNBNFV0QjZUb2dlNTBqNlQ2V3RRa2VTdE9mNW4tZGJjUU5lZzZJdmNWRkU1dWRmaFhReENqQV9wSW54M2wwRnJaYVZ4RC1CbnJROWUtdXhyclJZS0NqM0szOHJlU19aZlpSU04wNk1jMGdjMFNOLTA3NVRGbmp6Z1FxT09OQXdxdHJyY1dsczlsVUZ0WVJZOTFTcnJmaHhELTJTU0pNZk5XUHd0Vm9Td3NqZ1RpWFJSRjJYek5COXdfa3p0NTdMV2J2b05aTWZXbjlaSVUxMGd3eS15LVd5Y2ZwUnVlQUNwWXhDcEM1cGtVbFZ6c2xYeXVYelpRNTNQVmRfbWE4WWgteEllQTVJcGdieC05a0ZSQlBaRWxWRXFSVXlrZXRVVkVtQjFDcjI5eVZWVm1sT1NlLU5hWlY0TmU1T1AzaXRqTmw?oc=5",
+      "quote": "华为Mate 80、Pura X等手机适配支持HUAWEI Tag精准查找功能",
+      "title": "华为Mate 80、Pura X等手机适配支持HUAWEI Tag精准查找功能",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdC00bUk5LVhMZWx3Mi1mTXZEbHdHTkZkUTNMNzVWRXlBTThSdm9HVHhkRGFjVUFnTnlhdGg2OUNOMnJQZURzSEpMZWw1RGpQcU05ZlFOOHdLbUVldHdBZTExNHZfTkRTbWliZUNHelBvYXZUdjBtYWNlZjk3OUlfWGVSemQ4WXhRYUlj?oc=5",
       "source": "新浪财经",
       "applicable_dims": [
         "W1",
@@ -1717,7 +1693,31 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
+    },
+    {
+      "key": "d8adadae75db",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-07-09",
+      "quote": "华为Pura80系列官方翻新版上架 价格优势明显",
+      "title": "华为Pura80系列官方翻新版上架 价格优势明显",
+      "url": "https://news.google.com/rss/articles/CBMi5ARBVV95cUxNODluZkpwdlhVRTBJLXI5M1A2SjNadThJbW9hWjl6MTFXN0g3b1lya2lFdl8wYTdOemZkNmlPelg0WjNoWlRseUNnNXZ1bnBnazhDZmVIbEEzMDU1SExsN3NNVnlhZ3cyZXh3SlEwUkpvQTBEUERIaUhtMmp4SHoxeDJFeDQ0SUxHWXA3SG9mNzNqcUsySEN4U3lFYWlQV2JmNmhPY0tJWVVWWW1mNUdPQlU4bU51cktxakNvNnJvNVVjaHlCNTIzNVJuUm1SbVB1a3VoQ2hhd2JZSW8wc0dFZHAxaHZLbWZ1XzBXS0dBb05xTldWbmlCUTUzOHhyS01jdURpODV6T0xXNGhsWTl3WktqLUpPVnJZTXJXcEtvVnJ4U0h1bUtxdGxELW5nbDRBOElkY3BTd3VDc3RhblhTZlFtRjhyc0JnVkE1Q0VjX1FkT3A0b3Y2QmJLeDRrSk1sazZyZ1ZtVDhCUlBuNldXczdEZGlLb0x0U0hlVHNwOWViTjQtWDZadTJUdWNpeTEwN0xuQV9iMjMydDZXWnRHbld3Y0pvVDVBM1JBdG1FUmJPcEVYS0U0N0RCN3BlWTJqR2JiRUhMNVlibUJoRmVrZVhRNFU1elJxYnJoYlRLenlwLW1tYnN3ajl6TGgxVHpibWVWWXZpQU5OUEZ3Q19RQnlqdVVkSkt3WC14d1ZEeHBncTk2M1N1Yk8yQ1FDVU5Pb2NVZ1JpU09zdjQ5MDRWN0VzZ2I5TWNNa3djRWN3ZE1TNTZobDVEWGxFZURhazExYlRtU2stLWo2djlubXNEQWZxMUw?oc=5",
+      "source": "新浪网",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "890e5b23394a",
@@ -1741,7 +1741,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "f8650149c467",
@@ -1765,7 +1765,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "68443a04c51f",
@@ -1789,7 +1789,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "6c25fcd1e084",
@@ -1813,7 +1813,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "fb2dae31e7dd",
@@ -1838,7 +1838,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "9f55843ee558",
@@ -1863,7 +1863,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "bdaa7d689f07",
@@ -1888,7 +1888,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     },
     {
       "key": "30b50f4ba210",
@@ -1913,7 +1913,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T10:13:23Z"
+      "fetched_at": "2026-07-18T13:59:07Z"
     }
   ]
 }
