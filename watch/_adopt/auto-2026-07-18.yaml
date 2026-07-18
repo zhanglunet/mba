@@ -1,0 +1,2358 @@
+[
+  {
+    "slug": "lenovo",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "存储价格暴涨进行时 大摩为何坚定看涨苹果与联想集团",
+    "quote": "存储价格暴涨进行时 大摩为何坚定看涨苹果与联想集团",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0zV3VVUlVVdVVHam84WjdmQ05MR2VvRmJkM3VVckt3aHdaLTVvYWI2d3NDeU4xRHdNWGFDVFNoR1RtcEJjN25NMHBURHJTUEppdjVj?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):分析师看好联想，涉及产品竞争力与市场前景。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "lenovo",
+    "date": "2026-07-17",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "联想再度预热IFA新品关键词：\"翻转时刻\"和\"身轻如燕\"",
+    "quote": "联想再度预热IFA新品关键词：\"翻转时刻\"和\"身轻如燕\"",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeUVnOGhBYmJJRWZwMG8tMVE4MUJMVXpybVJ6blBheWVDaTZkSE53TGE5U1psd2dodlAtRFJSR2VSSkUzbFBGYVpNT2Q4Zlo2czI5RWpIVHVLSFM0OG9TQU9sWHk0b3J6cXFoSF9mR1czYllXQkhPZ0d0czJtOE9SRmoyOV9MckhLZ2hCdlJrYUs2c1FZS2pCblpNYkNiUQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):新品预热，官方营销信息，涉及产品策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "lenovo",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Panther Lake首次亮相真容，英特尔CEO：交给联想了！",
+    "quote": "Panther Lake首次亮相真容，英特尔CEO：交给联想了！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVXlFQVN3bDJjTmxYSlhhdVZhcHl1YTl0NDljVU15SGFtU3JEOXZqelZPbl92MWk1TTRkd0RzblFLMmdjZ3dsb1k3OGU1cUJXaEl5clljUG1XQUIxV25mTkdTSXNMM3JTY19SQk1TeFdpWUNWN2lEQ280a1VLSkZfY1lMLTNETmZnRUJ1SjBUZ2Q5dHoxb2IzenFjZzZnWENxanhn?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):英特尔CEO背书，联想获新芯片首发权，重要合作信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "lenovo",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "直击WAIC丨联想陈敏仪：AI不应是少数人的奢侈品，而是像“水电”一样的基础设施",
+    "quote": "直击WAIC丨联想陈敏仪：AI不应是少数人的奢侈品，而是像“水电”一样的基础设施",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5PYWNtMzBUb1NiQVIxbm44bi1falhucEg5U3diR2JtTGVFeTRzYjVkMVN4YS1zSXF6RWNXYWRvaEZWc2NnTFZnSktmV3R4enFzZG9N?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):高管观点，AI战略定位，体现企业价值主张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "lenovo",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "浙商证券：恒科下半年转向盈利兑现，联想AI服务器打开第二增长曲线",
+    "quote": "浙商证券：恒科下半年转向盈利兑现，联想AI服务器打开第二增长曲线",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9zeXhFQ2VyTlNpVnY1N3ZyOGRMSmxBclJJZ3ZDY2JzWE0tN3pIUS1XTXZWWWJqSFZMcnB4SkMzakdidWRqamtxaFNSa01xYnA5MjZF?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):券商看好AI服务器增长曲线，涉及财务前景。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "lenovo",
+    "date": "2026-07-16",
+    "dim": "W4",
+    "severity": "P3",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "为什么被称为“AI世界杯”？还原联想集团对AI和体育赛事的理解",
+    "quote": "为什么被称为“AI世界杯”？还原联想集团对AI和体育赛事的理解",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB2dEFMbW11UzhHbGU2VUVhUUk3NUNOam9PRjlISVM1R0hXN3MtVXFYVkxPUC16WWJhX0xXX0R5YkRvX0hybV84ZmJlV1lyTS1NUjhWVWYzWFBMRWw2Rk94ZEQ5UFVYU0o1d1FTX053?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):品牌赞助体育赛事，企业文化与营销活动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "lenovo",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P3",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "世界杯决赛引爆职场福利潮：阿迪达斯、网易等企业宣布放假，联想支持带薪补觉",
+    "quote": "世界杯决赛引爆职场福利潮：阿迪达斯、网易等企业宣布放假，联想支持带薪补觉",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KUVdlX3c1N2dYdVlQdHN0amVUZnZVM0hfMWxrSTlsWmt4ckhfUWd4Y01odDJQSzJWWm9CbFpIeGE3emxhbVM4UWM0NU55OGNaOWc?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):企业福利政策，体现雇主品牌与文化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利",
+    "quote": "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FZ3J5WWVWb3ZmU1gtTnNjVVRWdWM1ZnpsUUhxZG9XU2k5UnBVekZsaURCaUViSTRuaHBZZWdURXI1MnczZ3QtLQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):财务转折点，销售暴增与盈利预期，重大业绩信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-18",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "6小时，200美元，0人类代码：Anthropic把AI编程推过了临界点",
+    "quote": "6小时，200美元，0人类代码：Anthropic把AI编程推过了临界点",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5HTUR3MlJWVUpSWWtCSVl0eVhOMFBwQnNQb3NtYUYwNmVQMmJ6ZVZwbVNYaDRHbHp5TXdoWWNtc1JoUkg0QzNkc3hodjRzUQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品能力突破，编程效率里程碑，技术竞争力体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "特朗普禁令被绕过？Anthropic新模型魅力太大 美政府机构争相合作",
+    "quote": "特朗普禁令被绕过？Anthropic新模型魅力太大 美政府机构争相合作",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1CU1NqY2F1SlB1MlJJUzhJVXBNczFzV1d2YV9oZjc1cnVTR2lBbktnYWNfN0ZXWWFaQW0ybnVqdC1QRWJCT1lmZw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):政策风险与商业机遇并存，政府合作突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Anthropic IPO ：关于Claude缔造者，你需要了解的一些关键信息",
+    "quote": "Anthropic IPO ：关于Claude缔造者，你需要了解的一些关键信息",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcGhOZWZ5MHM5aXU4dmgyOWhLYmM0NUdKdHVVa0VfUlRLOVBVX2kxM0p5YmVSaThsZWFuUXNnMWdYM0E3NWtmeDF1VHJyQmYzTl9JNS13dTRlUXBxZFRSdzI5U1FxcXc4bko0cU5KYTE3Q205aDJ5bElMNWpUeDlXVVpvSlhyV2JnWFI1ekcyX0ZtcmZydVExSmloaGN1aEJiQ25uM1Niaw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):IPO传言，涉及融资与估值，重大资本事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-18",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Kimi K3发布冲击美国AI高价模式，Anthropic认怂Claude Fable 5永久可用",
+    "quote": "Kimi K3发布冲击美国AI高价模式，Anthropic认怂Claude Fable 5永久可用",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzUnBKU1VvbjR2X3pnczRNSWRIRjkxS0Y4R1NTcks3czFkZ3BnazNzci0tVGZLNkNGVS1VTl9nVG1NMWhVT2RHeWxsR2dDT0ZhdVZSTnFqcnZLeU5WWDZwa2tKbWtYUzJvSGJB?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):竞争压力下产品调整，市场竞争加剧信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "Anthropic呼吁全世界停止AI研究？网友吵翻了",
+    "quote": "Anthropic呼吁全世界停止AI研究？网友吵翻了",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE42azJWSGFnaW5jSlVNV3o3N0pDeE1lZjJIUDJDZ3dTQXVjckVsTGdNMkMzYkdQVTlWaWJvXzNiN2trZVlaQzlFendvVzRBbV9GTjdN?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):企业立场表态，AI伦理与社会责任争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Meta酝酿与Anthropic达成百亿美元大单 试水全新云计算业务",
+    "quote": "Meta酝酿与Anthropic达成百亿美元大单 试水全新云计算业务",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxOaWRUaDNDTV9YeE0wRWtYYTlPaFp6NkgzTktlejBHTE5OWGRfN3ZhRDVDVUxESk5mMFluaEp2MDE3QUZlOWJBRXJKNGpKb2Y4VnhJeVZtZm5DMGFRWG9CcnZfTkxzWDF1Q3VvVHpKQzA3cUVkX3hJQzJuMUVweXYzZGtKSXU0XzduMGVXMDVMU1IxQnpCczBmcm1RbThvWkFMLWJIb2tObEhSZFl1dUNmZUVWbUppVC05NjdoQk5JSExDbzY0b1F1Y3VhWVE4V2VZdG80ZWRZVzdzeFd3YXFRSGh1amVQZHNUbGZQSDU2TE9SQ1VVY2k0VXBQeVpZTnczNFMxNVZUTDl1djNla1paY0R6bFkwWTlOZFREek41ZzMwOTN3NUY1N0hHNWRQcGJrcGVScjVpTDBvUEFTN2didE5WTQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Meta百亿美元合作传言，战略合作与融资信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-17",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Anthropic研究发现Claude模型内部存在可探测的J-space工作空间",
+    "quote": "Anthropic研究发现Claude模型内部存在可探测的J-space工作空间",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8wdExGbm1yVHJTamJFRlZrUWR4czZiM19EQ0gtbTNlU2JmQzJyUVhrMGgtNmZGMmlRTlpkNU93TU9iYUVsVG9UNmFrMXNKbnJNMG5nTg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):技术研究发现，产品能力解读，学术信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-17",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Anthropic在疯狂省钱？Claude已不读MCP描述符",
+    "quote": "Anthropic在疯狂省钱？Claude已不读MCP描述符",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB2eWoyREp3dE1NSXIybDF5a3U3TmpOUURrTEhSNjJzRlNBeFhPZFk5NVd4UWRxcHBjRGxYNldCQ1NSckNRclZZQlRvZl9nVG9MTFhKTmFsM3poSXhoQVhiT253?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):产品功能调整，成本优化措施，用户体验变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-16",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Notion恢复Anthropic模型访问 澄清服务中断系临时故障",
+    "quote": "Notion恢复Anthropic模型访问 澄清服务中断系临时故障",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE83bHh2WkdHOUYtYk1oTWpPeVJuMVFkX3VoMFRGR1FTUkRkUVpuN1JYSUt5MjQ0TWZOaW9fS1RIaXdQY1AxV1RpTA?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):服务中断澄清，涉及产品可用性，具体事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "anthropic",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "两周搬完一百万行代码：Anthropic用Claude把多年不敢碰的语言迁移压进一个周末",
+    "quote": "两周搬完一百万行代码：Anthropic用Claude把多年不敢碰的语言迁移压进一个周末",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBoaGtrTFlwWW9oM0xkMnYwZllzRWYycDdpLWVING9TMmNrTVQ4a1NaS2Ffb2hLdzExemdxVXRVdVZETFZsT0hCRExGRF9qQQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品应用案例，展示Claude技术能力，具体成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "dji",
+    "date": "2026-07-17",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "DJI 大疆 Osmo Pocket 系列影像大赛正式开启，邀你“做自己的生活导演”",
+    "quote": "DJI 大疆 Osmo Pocket 系列影像大赛正式开启，邀你“做自己的生活导演”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiyARBVV95cUxOemtrb2kzUHhKQ2NNZjYwZTh2c19YUmVQRHFiUDhwVUM2b3JWYUFHSG9ROTB2bEhWTThWZy1nTGtUblVHVGUzWFVKTkhfeDBJZl9mMFhiOFdndW11SkxiclAyVmNqYndrWEgyQW55bnRtYTRhV29uZ0tZQkJlLWFVNTdTR1FJMFp1dWpnblBuSUhpT1Jhb0I3T0tKN1hodkY3T1kweE12aHV1eVN2Nm8ybEhDV2pyamtPdnprOGJud3RreFhYUnc3NXZFYnA0dDhOYjZuNWNWeDlCOWp3N0JOdkJMRHlEWGx1YXpJWDlZSGNSdk9oQzlwd3E1TWxwaWJwUlFNUWczMGdGSFBiSGlqbWdTSE5yaUk2VkxTMC1uWjhoV2U2TWVJZTlzQTZtYTZQcWVaT1ZRNU91T2VlaHVnczgzNVBoZ29DV3VBOTk1VS1vN2d5eEZJTTVpbzIza3d5ZjB5XzBFMTZpby1OZHJkZXMxcFZJUWlvSHhGMHBSVzFvU1lYdVZIMExTRHRxQlZ2aGE5dFpBdGdQREZ1NTViNU1qZEVOcVNPNnZwTDZkNUM4LUNiSGNfUG5CYzlwY25yRFNfWkxrNkRkS0tvb1ctMTNIOUVnbHdXX2h0N1dGNklUUHVueTkzWm1TUGdLbnpxTnRpTUhIQWhxZWxFREZOS3Y5WWdoaVF4NFpmZklFY3l6a054VEs3MWhLbGJDQ1FVczUtZWxjWklTdWE5VHJLZzNIRUZSaFo1aVB6OHBLY0NLQWhoUXcyeQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):营销活动启动，品牌推广事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "kimichat",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "中国AI公司月之暗面发布全球最大规模开源模型",
+    "quote": "中国AI公司月之暗面发布全球最大规模开源模型",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPd1JYUmFMRTc0V1RFZ2JYWE0yZkVQS1VtV1pabnZOXzE2VmVhSUFEb3hWUWczaUxfamVkU0JwcE1BY29HLW14dm4zR05MWTQ3SzVOSkVLUkhSWmRSRy1NWXF1LXl2dFVLRjJua3Fpcm5sZFpyUnprN0hNNDdsRXY5dy1LSDRzZi1sMGFKNm96aXVPQ3B6VVQ4UEtaVzNsTEljZ1lydExlMnp4bFQ0aFBsWnRGWFB4MjF5dWhEY2szcEFGNG1WVnFHNy16T0laQ0FjUUNnYmx4M1pod0dob2NHdnZGRERFV0E0emRZU3Azd05OMXh2bmV3cE9sVC1kNEpQN1VWX2w3M2YycHdSRk5fLUxURjVWVU9uTWFEZTN0R1JzMFFmdkt5aE81R3I2eDRMUExhZndpSkF3U0HSAbsCQVVfeXFMUHQ0dk15M192ZDczNTdBcVJLMFp5WkFSZ3hZLTJTZmx6SkZ5Q2kweWs2WnVoWE02eDRSVG16SGMxd2lVRWhuQWluaGhoRW5TVS1CcUctQ1VxQ0JLWUstd0l1SkJiSUM4YzBJcndXYTFXZG5CS1BpbmhWQ0dPZTlUYWtWWmdpZDFYTVBSaFBKczh5dTY3bmg0N1Y5Q0Y1QnAxZlFnLUNrUmF6Nzl0QlM0MHgyMlBoc05sN0tvMEhieHRNb2dmUUFodVZ3RGZHMDJOUlhreFk4YVNzaExFY2lEVk5WQ0k2ODZ1UEZoX3BPT0RqOGt4UG5aUk1rbW5PMVJ0T25EcWYwN0dqNVlHaVFudTBmVGZCVVU5LW02dEZKcG1hR1lmdVdsSGNJRXc4NXdJcl9rc1ZBRDlHRHZr?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):开源模型发布，重大产品里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "kimichat",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "中国AI公司月之暗面发布全球最大开源模型 向美国领先企业发起挑战",
+    "quote": "中国AI公司月之暗面发布全球最大开源模型 向美国领先企业发起挑战",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxOWEFwaEphTHh2cWg3TEszX3AzdVEwOHpsZ0k2ZFpwVGpVWW1NY25XamN6Zmltd0s0cGI4akp3UG5PbmNocDFaQVJQRTVrVTFUaUhFRzktQ3NTbU1ReEwtTDVPS0tUQ1g1QkNFNmpzUzA2Ql85a0NXdkFUYmpHTDJrMGhjdjNwSUN5QVBaTnJFZDdiWkdoSmxmaXp1bzN4RkFLRjlyMjZ1UXVpb04zb1NfVE80RmJLd1ZRMTV4anNRcHpVV19lOFNJRGN3UXNYM1cwVy1lZjRGVGdhd21ORjVveXdDR1VGWjRtczN2dHhlLUFtXzRTZmNVRjNIaDlEUFRFQUpYdC1NQWc0djVxTEZ0Ulh1UEQ4c2M3cFlPRjV3ellnMXVRcllQU2tleUdLZ00xZ290MjVVYmpod0hJYzFRVzQ4QUE0Tnc5VzVHcjRUWGdlQmVZcV95Y0cyQlBRY1pMdjlPa1N2dC0wR05SQXQ4WW9NaUlQTUxPaGlBRDl5U3c4ajRvR3lrTkdTUnNzMEYyVHlBOTQtMGZQSVE5VTZjV0Y4Mm5adFM4TkRCQVUzbHZXTnM5YWYweGdXb3lBaUU?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品发布与竞争定位，涉及市场竞争叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "kimichat",
+    "date": "2026-07-18",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Kimi K3来了：自己承认不如顶级模型，还涨价，凭什么？",
+    "quote": "Kimi K3来了：自己承认不如顶级模型，还涨价，凭什么？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ldThNRFo3SzY2Yk5lbG1iY3pqc04zdUxfWkx2RUIzVWhBdlZoMTRKc3dqRnVWdVJCamxPRjh5Q2NFWlpDTFAtZ1BOWG9NSGdvd0lUWTRVRHFvNGdScEpXd3hFVGQwRU16eUhaeUNZLWxQQQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):用户质疑产品定位与定价，舆论反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "tal-education",
+    "date": "2026-07-16",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "大公司创新情报（1月19日）：好未来退出小鹅通 曾战略投资1亿元",
+    "quote": "大公司创新情报（1月19日）：好未来退出小鹅通 曾战略投资1亿元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeEVieVEtYzF0WWxGQXZGYjVodzgzbGprbFJBQ1NXQnp1RkxNazNKSTFkcmNMNnJYMnc3MkRXa25yNC1GOU4wSDBiMktUd3pjY2dUc1RvSlNuRW91N084T2FjMms2dWRDQkdEMFR1RU0zbUpJMzNyZmQ2S1JsWlNsVUJBTGtMdzlHa0FUT2oxaGtBczZMb285TXBCNE44eEVNU2lkNm9PRi00VnpTV2hlcmppaDg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):战略投资退出，涉及业务调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "meituan",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "美团试点骑手“等灯停表”，已联合苏州进行数据对接与测试",
+    "quote": "美团试点骑手“等灯停表”，已联合苏州进行数据对接与测试",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE11M085YzM0eFNMUFoxdmpUVnRZM0FFMHFwd000WUVNMEhfYjlxTWprV2o5YmFVR3N6aVZIb3Z6UkxyNVZqSlpIQmJndEE0aVVCcUFGQlY0MHBYZw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):美团骑手权益举措，与苏州数据对接，体现企业社会责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "meituan",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "美团新一代自研无人配送车闪亮登场！",
+    "quote": "美团新一代自研无人配送车闪亮登场！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUXlnWmJsUk5vcW1MMU9xT2oyOG9PelFsQnFIcXpwWTY2SUNzYWhUYXo0b2Q5LTM1N01nai1ULUFtUlFQZ1ZxbHRqUnFCY1FaaTc1czVmMVVxU1ZrbC1LMG9rSzROQnhRQWVDdFl6VGEySUZBZWNiSW9nNkhZTlBPdUhPbEI2LUxpWVRBX0tFZ2ZveWtWdjFWTDZ0M0R1UzlHU2pRWnZseGRNS3JrTk8xTndmZw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):自研无人配送车新品发布，技术创新信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "meituan",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "美团与清华大学合作成立“数智生活联合研究中心”",
+    "quote": "美团与清华大学合作成立“数智生活联合研究中心”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Xb1pRWE1ianEwWjJzTmE2MTlvNkp5VFUwU0Y4aUx4OHFRY2VjRGhXVWU3dGZVNVMxU3ViZUpucUs0ZzZTT3RDZlpwb1hHRjFOVHZWZFFNWFBYUmRPdWVyYg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):与清华大学合作研究中心，学产融合战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "meituan",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "美团717骑士节荣誉盛典在京举办，升级“等灯停表”、医疗保障扩容等多项举措",
+    "quote": "美团717骑士节荣誉盛典在京举办，升级“等灯停表”、医疗保障扩容等多项举措",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xbGpneGFXZjBSZC16dDkxb0FhWlFzR05QdHpVd2VIUEdfbVpFcEpSZDZhRUhQaC1Femk4MF9Pc0tmbGlGYURxVGIweC0yQmp6blJZWGY4Z2V6UQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):骑士节活动升级权益保障，品牌形象建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "meituan",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "美团王莆中：骑手正成为一支更有尊严的职业力量",
+    "quote": "美团王莆中：骑手正成为一支更有尊严的职业力量",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNS0QyQlZtZ2ttNW5KZDdxREZ5THptdG56ck5maDE5TTR2WkozN3YzOVNONnd3TFAyVkt1MV9OT2lwa09OaUljRWpSTlNKWmZZNjNz?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):高管发声骑手职业尊严，企业价值观表达。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "meituan",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "美团员工发千字长文《置身团内》谈公司困境",
+    "quote": "美团员工发千字长文《置身团内》谈公司困境",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5ZDBDU2wwUHJ2dU5PN05kQkRseVdpUC1UZzAwdzZydEVXNUktaEdmemdjd0tpMEU3cDF0bFZjRmFFWHhwZzR6SUE1MjE3S01uTHc?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):员工发文谈公司困境，内部舆情风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "meituan",
+    "date": "2026-07-17",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "麦格理将美团评级从中性上调至跑赢大市，目标价为113港元",
+    "quote": "麦格理将美团评级从中性上调至跑赢大市，目标价为113港元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMEVBVmkwdm1ZR2hFdlYxa0U0STNjeTR5VS1IRzJjU09OQkVCdUJCS01SNFV0UFdqa0pJRFhzajBrdUsxa3hmV19xT2tXVFNadXc4ZExrdThOWkc3Qm9ENkwycjdYRDJqYVlSNmczMHhaNThBTERpZWFJMjNQR0hyRDNxY2FEZnFIUnFrSEVGTlJfdVNSbzlFQmhhXzRuZk0zaDVJbDJsOUY5YlI3cWxZdlVpeXQ4QlU?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):券商升级评级目标价，市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "meituan",
+    "date": "2026-07-17",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "美团推“一镜到底”验真，外卖商家后厨、堂食等实况公开展示",
+    "quote": "美团推“一镜到底”验真，外卖商家后厨、堂食等实况公开展示",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVnpOMWZHd1podUg5d3dHRTB4SXdfVDU4WEtCTkxmSFpydE82MVd6UEcxNS1fZXFCV1o5QWREZmZGT2MwcmRuNTNGeG5pem0yTmxTNUxVNlpLVjN4RW83eFJVS2djWWczRUZfd0phRTYtNlpqVDFrRDliSWF4Sm9rekRsSi12Qm9kck9vOU9oeGVkZUo2NUVUMW9tY3NZaU5adnE4WUx6SWNfT2tRWjYxclZldWk?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):推出后厨透明化验真机制，食品安全透明度提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "hermes",
+    "date": "2026-07-18",
+    "dim": "W5",
+    "severity": "P3",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "足球巨星哈蘭德酷愛柏金包 愛馬仕傳奇的由來",
+    "quote": "足球巨星哈蘭德酷愛柏金包 愛馬仕傳奇的由來",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1aaFNxZk9DV0JWV29yb2VTMXB0c09LUW9uQUtHNDJXSS1oNjg0dks1anNDUmxObWw1eWtHT2hvNDcxMGtjdEZVRnFWcE5ZcThKN28xM0Z3RUZQTnB6VDJTRXNlSjJJd9IBZkFVX3lxTE1aaFNxZk9DV0JWV29yb2VTMXB0c09LUW9uQUtHNDJXSS1oNjg0dks1anNDUmxObWw1eWtHT2hvNDcxMGtjdEZVRnFWcE5ZcThKN28xM0Z3RUZQTnB6VDJTRXNlSjJJdw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):名人代言效应，品牌传播信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "hermes",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "外媒：中国奢侈品迎来市场变革 老铺黄金正重塑行业价值标准",
+    "quote": "外媒：中国奢侈品迎来市场变革 老铺黄金正重塑行业价值标准",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1zY2xabXZ4ZE85Z1dlUS1jZXlOOFpZYWpwUWVWczJMNl9NM1lJWnJzVF9MakppOS1DU3BLVWJ5dU1sb1NXVE9udXdpRWwxR0ItTDZDU2kta1VndkktbDE0V2NYTnM4NmJKc3hiRzlWaXNzRUFaVkt5ZkdB?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):行业变革评论涉及爱马仕，市场环境信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "hermes",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P3",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Hermès手袋｜五索分享爱马仕手袋保养心得 附潮湿天气3大防潮技巧",
+    "quote": "Hermès手袋｜五索分享爱马仕手袋保养心得 附潮湿天气3大防潮技巧",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiuANBVV95cUxNSVVPTGVSTXdHRGdhaS1VVVhxSjhFTktjaF9vSEMxQ3hpV3hWbVlaM2JmdVMxcWkxLWlmZWxzTW9PY0tiV3kxTEQyWE5SWGtuay03RlFKdHFVY3hZZlVIU3JlN044VFFuQ2xkTmEyRFpKeTZMV05jU3BKUnYyUWRuWnJSblUzTkdqMVgxeGxhR1FTQndsSFE4WDdqSm9vOVZWMFFsVVZpMVVwb2ZaTi1tYWRTTUhWQUh3azJkTXBRaEFkb2QwZDQ1UGJNYVVFWDY3SzRKS2V1STI5M0VmQkp3bWltcXkxT2U4elBUbzVUX1NERWwyREhBOTNDcFMyRkY1N1haUThaVzdXZGdRTV9FSjZ3YjdiZkFIMGE1b3pDYy1fdlpJY3hFeDhEb2xmTjNobzRZSFJSSHF0MmZiUWZQMnl0aG0zRnNZUzhsODM0U19tR2tFWWFxQ0ZFbjJqMGxPNm9vdlI2TnFsVWtTOHhPS2pfWWFsNGcyR21Yc0JtVHNRWnIzb3lVN1JZcF81UDc2RzZZWjVXamNTVEZFeWZnOFRZYXM3MFE5bzNHendBenQ3SVlkQXRfQw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):用户分享产品保养心得,属品牌内容传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "hermes",
+    "date": "2026-07-18",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "郭富城一家4口看赛马,方媛粉衣白裙背25w包,踩10cm鞋子没小美高",
+    "quote": "郭富城一家4口看赛马,方媛粉衣白裙背25w包,踩10cm鞋子没小美高",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBEYUpYZEZEVF93alFLU0NocFk4ckVLMzhDTkpKelM2Mjh6WE9YdHV3SWJkNEN2SlptNjFWZkx0MzNYb281UUlrVlZTdW5iaURSelRVUjEwUWlZU1NFTG0yckJkOEhiMGZfd3BqYzhVdXpzQQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):名人穿搭展示品牌产品,属品牌曝光。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "hermes",
+    "date": "2026-07-16",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "画廊 AD Classics: 银座爱马仕之家/ Renzo Piano Building Workshop - 31",
+    "quote": "画廊 AD Classics: 银座爱马仕之家/ Renzo Piano Building Workshop - 31",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPYVdwUlZORWhzVnRNUTl1VnRoVHhmSXBTbnVXck9DNU5HY1VvZkw1SHYtOERuUWd2Ynl2czhSR0FZNlBMS0dqSC1tTmx4VlpkTXJNcXBkczZEWVNfdHpYQTFYTGVWNFROMWZEZF83UkRfeTVrdDVjTVFKd0xOT3pOTG9Wdm51ZTREUHlxeXZuamRycEM0RHpRazZOMmFfNVRjMGg2ZHphTC01Uk5sbGhyc2txSFJOVVJuSmoyMWNEajJrZlJFRmVTa3hlSGg2SXZnNWFpLVo2MlVSYWtzbV9OOUd1SE50WHVYb2tESWRLSkh6WmVBUmc5cFNfSDd0M1I0aXpoYzY1SENibUFtcTRiU1VxamEyUmw3dWZv?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):建筑设计作品介绍,品牌文化传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "asiainfo",
+    "date": "2026-07-17",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚信安全科技股份有限公司投资者关系活动记录表-2025003",
+    "quote": "亚信安全科技股份有限公司投资者关系活动记录表-2025003",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMjQyQzR0bFRlY0ZjMmFFYm9lVTVCSHNjSjh5d0plZkdCUUhjS1ZjZkcybUNIMHFzbzRCNUh5cHN3TDF5R3FCSmtOemxtem85SW1vRFgwSDhDV2tHamgzVVFyeWJwdXM3UjZ2cExIUG9TN0J0Z0JvMEd6cEw0RURBVG1zREptLURKbkdKV1BaZmdObjBjbDBacjN1QjB6T1hYRnU0SHpkTS05cE9OeUgzZkVaVHI?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):投资者关系活动记录,公司重要信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "SpaceX“星舰”第13次飞行测试中止，马斯克预告下周初有望再试！",
+    "quote": "SpaceX“星舰”第13次飞行测试中止，马斯克预告下周初有望再试！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE55UVlfUWQ0WWVMY0dMa1E4VHg0LXNmdzNYSWVGTWQ1T0tub0hQYWJkU0JJVC1UeEVJOW12WWN6R214ak5PWDJVaA?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):重大项目测试中止,影响公司运营。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "马斯克旗下SpaceX与美国防部商讨算力协议",
+    "quote": "马斯克旗下SpaceX与美国防部商讨算力协议",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlFWUFE3UzZ2Z2x0SC1MX3kxLU5QRzJ1eFZJV1dQc0pjWmRZYmFkTzlDNGMybEZEOGpyczJ2ck1jSk14SDFHWGRsZmhIcmg0TXNacmNISmZRQ0h3TGhQa1ZDQXB0QzhxamtKc0dmQlNWNEwzOHZXNFlSR0pnWHFMZnZuOVlnWFFpcWt3eW93S3NNeWJyV2NaX0hRMGpPQURIdGxGTHgxNGVCNlRnaVJDTXdwQUVKbHVpX3BXUw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):政府合作协议,战略重要事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "马斯克：SpaceX 下一次发射尝试有望在数日内进行",
+    "quote": "马斯克：SpaceX 下一次发射尝试有望在数日内进行",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PbzdBYWJmNG10ckMyOUx2MHZUQnFLZkVaOGxudlNCV0VSUW1MQmdlR2xVY3c4eTg2aHlLcm9mUFBYREtNUTMyMHFaQVFBUG9wMUZtQW9Cb21NaXh4Mjh3TQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):项目进展更新,运营相关信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "“暂无替代方案”，五角大楼如何被SpaceX卡脖子？",
+    "quote": "“暂无替代方案”，五角大楼如何被SpaceX卡脖子？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4yZVd4RTBCQm5JQzNTZFgtWDZFdElGM2kzYWdXLVZCZkdjQWI4RU0wd01veGprSkUwSXJuZExONHpmQmJpLTJHcTBUcDM0c3prRk82bFc5cnkwN0tnMDRLQy1URmhwd2dG?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):揭示市场垄断风险,涉及战略地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "SpaceX市值蒸发超万亿！IPO后星舰首飞推迟，每一秒倒计时都成了\"公开财报\"",
+    "quote": "SpaceX市值蒸发超万亿！IPO后星舰首飞推迟，每一秒倒计时都成了\"公开财报\"",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWXZpRVN1aU5rSEVSUzgyQWtUaHpubE9WLTJIVFlyY0cxQ0RNSVdwQTctWlNPWWI3enJ3SUhfdHhYamo1RG9YRV9GOWFWbGk0Z205cUUzVkdiWDVIVElyYlJwTnFDWk16M0lENHl6aldYTWpMRDJQT1RVR0Z0a09WZFQ3Y19hV0MwQlg4ZVRZTS14b1luQVZlZk1HVnE?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):IPO后股价大幅下跌,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "🚨突发：SpaceX $SPCX 在过去 31 天内蒸发了 1.3 万亿美元，并触及新低 122 美元。",
+    "quote": "🚨突发：SpaceX $SPCX 在过去 31 天内蒸发了 1.3 万亿美元，并触及新低 122 美元。",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUU9SX0lac0R3cEpWVUhDcVRlUDZ4Tl93YkNjdE9qUlM5LTNpc2NPZlBpM3Q4dklfa294SHpiR0EwSmQ5a1ZzUXhlOXc0Q25XZDBlanJRanZ1VDNmemN1d0NqaDVBdFpDSmFGa1J1VU95LUt3SDh5VmwtYnFOSGU5LVJjRmZROHgxd3ExTFh5SWVwY2N3TndrX3U2SEpweGwxZXo4ZmgxeWdUNnM2UFE5cA?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):股价暴跌创新低,重大财务危机。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "SpaceX市值已经蒸发了1万亿美元",
+    "quote": "SpaceX市值已经蒸发了1万亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ScFMyOUJZOWdlYmk1cWdsQTFaclVqQXhPQ1lvek9YblNlSFphclFFVW5yd0FYbHlvVU5CUUxrVDd4WTVaUDVtd3hVZVZrbkVwVEh3?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):市值大幅蒸发,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "SpaceX洽谈五角大楼数十亿美元AI合同，去年xAI巨亏64亿",
+    "quote": "SpaceX洽谈五角大楼数十亿美元AI合同，去年xAI巨亏64亿",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5RRk1xQXUyWFAyWUY1dDdqZ3ZmLTlReXB2bDVSM25OWkJtYXFoWmphdVdpTnFMY3MyanlmNFNuVUl0Zl81aW5valI2elloOXU5WTBya3htM1I1SmpQSlVIU0tR?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):大额合同洽谈与子公司巨亏并存。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "跌破IPO发行价后 SpaceX将迎解禁大考",
+    "quote": "跌破IPO发行价后 SpaceX将迎解禁大考",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1JaWFTSmhqRFFsNVliRFhGT2RnZzFJdTJ5eGhZMGhTTXZoQk5XUFgxZ2tNWlBGMS1raU5ubnBHTjk1WnFIaXdobQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):股价跌破发行价,IPO后重大风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "SpaceX股价首度跌破发行价，高调IPO仅一个多月跌幅达42%，遭遇了什么？",
+    "quote": "SpaceX股价首度跌破发行价，高调IPO仅一个多月跌幅达42%，遭遇了什么？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDMWxKd04zM21EUlBQZV9sTklHclozN0VCbXNzTUNsaEIzUUQ4akRoWWktMGtMZzNFSUVMZVl6Y3I3c0w4ejRtdDV6V3ZEbWdZeEdseDJ4cnFKUkxFbDdaQllB?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):IPO一月跌幅42%,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "spacex",
+    "date": "2026-07-17",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "SpaceX拟向五角大楼提供AI算力 合同规模或达数十亿美元",
+    "quote": "SpaceX拟向五角大楼提供AI算力 合同规模或达数十亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE96R0ZNVjRtR1c3U01XUy00ZWVkdWxRbVU4UldHaWtpMzB5QW5HdkJZWXBzVWNVWEZGZVJ6eGc4NzV1dkVZRHRmc0Z6VkVTdm1iSmxPVG9OYzdPc09UYUJBZ2RB?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):重大商业合同洽谈，涉及数十亿美元规模，具体商业动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "OpenAI举行“AI上岗”发布会：股票研究、投行路演都能干",
+    "quote": "OpenAI举行“AI上岗”发布会：股票研究、投行路演都能干",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE84dFE3Mmc3WS1jQVJmNUNBdkZ2UlhJUTAtaHdIZVB5NnNCQ1lmaGg5U0FGSXNGTUFnVG14eDFiYUh0d2ZoVUh4Yw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品功能发布会，展示新能力应用场景，品牌重要动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-18",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "空头1.5万字警告：OpenAI将崩溃，\"雷曼兄弟\"在逼近？",
+    "quote": "空头1.5万字警告：OpenAI将崩溃，\"雷曼兄弟\"在逼近？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiaGRMUk5CaXA2c05BLTMwVkZZeU5Ha2ViM1hNeWhjTFV4TktMTWlBbHNUZ0N4VUxPMUVCdmdyMUdMYnRvUmdTQW4ydVlBODdvNm9FeDFLVGpFX1JYel9zeTNB?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):空头做空观点，虽为评论但涉及品牌风险认知传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-18",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "算力争夺战升级：OpenAI绕开英伟达、携手博通打造专属推理芯片，成本降低约50%",
+    "quote": "算力争夺战升级：OpenAI绕开英伟达、携手博通打造专属推理芯片，成本降低约50%",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWkFaZmRiSHFSWUVWX0IwZ1Z1a2o0dnVMRkptX29ublN2eVdUUDNNa29vZnQtaUFkRmVSNGRRXzBOamppOWRKVXdBMVpTZDR0TXJtblRzSmJIM1dOVzkzZV9yUmQyLVNQekk3djVERUpmOGdMSHFqdVFvNm01Y0lfMzhkMERPRmRqeWNLaFIzVjNzMXZRbHdqb2dGSWdlSEdxbFRZVnpiRmU?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):战略合作芯片研发，成本优化重大举措，竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-18",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "OpenAI回应GPT-5.6 Sol意外删除用户文件：已采取措施降低风险|Codex|数据库|系统|模型|误操作_手机新浪网",
+    "quote": "OpenAI回应GPT-5.6 Sol意外删除用户文件：已采取措施降低风险|Codex|数据库|系统|模型|误操作_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMizARBVV95cUxNS0RfcXRlMkJqM29ucnpCNmU4TVBvZ3ZPUXRsSVAtS002SlYta2FwcTFfMlU2QlZ0ZnRYZFdEbm4tTWxDczIwWFZTQm5pTGp0WEJNejAxcHJwX3N5TnB4dDJaQ1lhWUVKaGxuS2p3MnZSUUhSU1VSQXhPU29zc002emdLVGRHN0cwV1RYckY4S1lYeWhITVB0YTItcThidXBzN0FnSGl4SlUxcDhrT2k0b1l6My1xZGpIUVBwSGhURWwxNFUwVzFKMk1WS0hhY1BEajBjOTFsbDZUUThhOXR6UmtwQ0taU3FieklBOUNrclB5YTRjX1oteERhYTFaSE9UZ1c2QUNGUDhzSFRuc2NOOHJTUi1xYWRYM21YWFlvbllRTUtwNjVvcU42SU1wMGdMekJxRUpBTHA1SUYzSU1qOElMS2NMOUtRUGk2TkVKVGhLVHhEeC1UbFdmSTR2dEoydzhwR3J2N0QxelVVelk1c3FKM1RWUDZ4LVFMZ21hOHhDRWtLMzFHUWkxUGNURUtBQ2lmUjJvcUtSYXlrbkVsSVVhbU5tU1ZTd29jQnRQR2p6cnhvWVdUM3lPaHNoNkhMMHdSUU5iQUNWZTRvN19OSVJKTmkzN0NMWXZRLWdLTUhHV2YyOXNsS2tHVllXSmhBTGIzMk5sbkZTWWw5NTdrOWZLRlh6ck5tdHlBczZlQ29xUnB6Q1JCUHNGNmJHazNSUWdZOHp3cjRHSWxyTzRqMUlBZDlpaFBVV0NjT296SFdHU1JCcGlNWWlBdHU?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品故障导致用户数据删除，风险事件与官方回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-18",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "OpenAI、Anthropic指控中企「模型蒸馏」中国副外长驳斥| 中国即时| 中国 | 世界新闻网",
+    "quote": "OpenAI、Anthropic指控中企「模型蒸馏」中国副外长驳斥| 中国即时| 中国 | 世界新闻网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NQ1ZFcDJpRzBSTTBWdTJocDJQWGZRSUJTUGU5OS1MRGJ4eTJpdnUxb0pFM2hBZjdBNlpwMklKNmdMMmQwbTNjVHFxVlBxci1nclFsUDZ3bGZzWG9DNXNWM0ZfWGZTUlR5QUE?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):国际纠纷指控，涉及知识产权与地缘政治，品牌声誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "ChatGPT终于能「搜自己」！攒了近4年的对话，一键翻出",
+    "quote": "ChatGPT终于能「搜自己」！攒了近4年的对话，一键翻出",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9IMkJnWU4tYmhiNlpIQ0hsMzlFcDJ5RzFOOXA5SXp5Y2xOVUFBREpPSXJncm16MmNwTEJzYVpDeGJZT0tSdV80SmVkMDhCdzhSa0RwRFNvY01BVC1INjd2NkJILXFnLW1sUDdFT2NfRnc3cTQ5WElxUnk5OGRuRGM?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品功能更新发布，用户体验改进，常规迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-16",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "“雷曼时刻”在逼近？大空头1.5万字长文起底：OpenAI必将崩溃，全球股市恐遭清算",
+    "quote": "“雷曼时刻”在逼近？大空头1.5万字长文起底：OpenAI必将崩溃，全球股市恐遭清算",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5oSWpJM0FyNjMyZ05GMGNVQnBOZ2NPLVkxOXhPbEhtaHlhNEFTY3l3dzNyT3ExQ2lyZWE5enVlcFBYV0p3dVNsWERGSmU0Vk1lVzJn?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):空头长文做空观点，虽为评论但传播风险认知，舆情影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "OpenAI推出GPT-5.6系列模型",
+    "quote": "OpenAI推出GPT-5.6系列模型",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9JQmNBaHExWUwtZDZzYlJhQURrQ3dZOFZxOGJGd0ZJTXhUbjVIX1NOdGtETFNFS1dmaXJURS0wV3RTMmM?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):新模型系列发布，产品线重大更新，核心业务动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-17",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "21评论｜从盟友到被告，苹果为何与OpenAI翻脸？",
+    "quote": "21评论｜从盟友到被告，苹果为何与OpenAI翻脸？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUnJMRkhWUjUwWlpYZVEyZE9uY2V3emlPTGVvdHVMTUVKYVAtNU5SWmhreVJTdkJ4YVZleFJjdUtnY21XUHhpVi13SVh1TnhTaGpGLXh2WENnTDF6SV9HZlZ3U2xvMzIwdGtZODZTRS0tMnlpTlNOMkhUMXd2LWh5dnhfUk42emZlN2JkMVh1YU9qeGl0?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):战略合作破裂转为诉讼，重要商业关系变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-18",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "OpenAI欲扩张AI算力版图：据悉正洽谈租赁俄亥俄州10吉瓦数据中心",
+    "quote": "OpenAI欲扩张AI算力版图：据悉正洽谈租赁俄亥俄州10吉瓦数据中心",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBrdHpIekxCYlpaeVc0Y3pndTJtVFkwaVlDWDdYVnlfR2t5YW4tWnRrQXlpVU5kUWdrc3prSmtwQmJQZ3E3UWgxeA?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):大规模基础设施投资洽谈，算力扩张战略重要举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "openai",
+    "date": "2026-07-16",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "欧盟出手限制谷歌：要求安卓生态向OpenAI等开放AI与搜索服务",
+    "quote": "欧盟出手限制谷歌：要求安卓生态向OpenAI等开放AI与搜索服务",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MOGJqbjQ1QXNOWmMxUGNsYXBtWHJUSmxPZDVFN3I3anpYRWJtd3Zxekc2WHBPSHV5eE03VFJCNkY4Z3JnNGlLZFdoSE1LbkdhYkpLa1R2dDAzQ0JYQUpFeTJiUVVXYWM?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):监管政策利好，欧盟强制开放市场机会，竞争格局变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "zhipu",
+    "date": "2026-07-16",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "智谱华章发布澄清公告：否认撤回A股发行辅导备案，辅导工作已完成",
+    "quote": "智谱华章发布澄清公告：否认撤回A股发行辅导备案，辅导工作已完成",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBYWjNCajhvVUJFM21KZG9mSUtYenBVdV9jVmVKWm5fMFZ1NmxtUHJ0NTBRRnpHSUtzVExLTnFQanRtVEdIVTZ4WWRn?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):澄清IPO辅导进展，否认负面传言，融资动向确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "deepseek",
+    "date": "2026-07-16",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间接持股",
+    "quote": "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间接持股",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KeWdhcF9LYndmRzU4WXBSTktpbTZQR1hCc1dmT243ZWEyLTJjMHN6SUprRVQ4TDhFMjNhd0pyTWZuUkdudzNXMGlPYTZpRWU5UHhUazU1ZHpsLVdxdVlfNw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):融资估值揭露，股权结构变化，重大财务动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "deepseek",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "DeepSeek估值超3500亿元",
+    "quote": "DeepSeek估值超3500亿元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5PQnFVQk5TMTVMZUFycDVjZTJkX0VwdFM3VGJ3aVBCdnhMcHA4STJPY1NoUEZGNmFkbEV2ek9qR1VTUGJNRk5wZXpSU2MxV3o5SVJsTDFsLVhkN1dMTFdqdlQ4OVo?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):融资估值重大进展，品牌价值量化信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "deepseek",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "DeepSeek估值站上3500亿元，这家中国AI企业开始准备第二轮融资",
+    "quote": "DeepSeek估值站上3500亿元，这家中国AI企业开始准备第二轮融资",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBRdFJXWkt1NjZmRmU0bXhuVy1Oa1pmSGNSX1N1ZE9xMTdVMDR2STMxSWVydkphZFFseUxNVmlLaHdNNm5MclZxejZnMXVra2Z3bGRUUFZNdzl0eDM0aDFmR2tn?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):融资进展与后续融资计划，重要商业动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "deepseek",
+    "date": "2026-07-18",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "DeepSeek，这些上市公司参股（附完整名单）",
+    "quote": "DeepSeek，这些上市公司参股（附完整名单）",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10WXJ4Z0lJVWdyRExrajhxN05PZHNzWXRzSlAzS1REcHhXUUowWTRBV2xIMDNOTGladGpLZUp5WDdmdmNObk1NR1NHOExtTWtFSXJWZzJmdw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):上市公司参股关系，产业链关键信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "deepseek",
+    "date": "2026-07-17",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "开润股份间接入股！DeepSeek最新估值曝光",
+    "quote": "开润股份间接入股！DeepSeek最新估值曝光",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UbFJ3dU55N2ZZbnlzMXBsclYydlVjQ0x4R1ppaVpYT3V5OUZUSTUyWGZCX3FHOW11aU4wbmVaVWVhSE1jTy1kYktWb0x3YWh3STV6RHRaY1ExY1o1WVl2Yg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):具体上市公司参股信息，产业链关键。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "deepseek",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "DeepSeek完成首轮融资 多家A股公司间接参股",
+    "quote": "DeepSeek完成首轮融资 多家A股公司间接参股",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijwVBVV95cUxOTDRXSnhxNjR3bHhabi0wS0NtSzBlV1J2aTlHRmduZmlPNFdZa0RobTRvc1FWalhvUFFTXzVfb29VWkI0aGVYUGhUM2tNWTdXRS04SU5MVGtyN25VMHFxcTZSWVRmcTZMdEZpMUdqei1UWC03MzZVMXE2TU0wdk5xUXd5V2NoUXdlbTZqejBocjM3ZDFzRGw2Q3BwN1diMmllQXg0empJRVV4Rll3WWM5Zld4V0hTQjdIblBNWkRzYVplSXJFV0RLaERyTjhFT0Y1TU1MbTBYYURLNVF1Wll4UTVWX0oxSHl3cEdMZUNzQ3N4ZUREV2JOWGpwVE9sMlVTV2ZvTi1MT2QtcFRZZ2RvSmtzNE91ek9ZdzZwcTEtVENIbnFHU2FDOTQyaGJTVjBmN2pqazBQaW5iUTNINGZHdm1odUE2QXUzTjZjUVd3VnZvR2s2N1ExNEEtcHE3eDRWSVktSTBnOC1NT3ZoVmhPUGNqSmFLRzZETG4tbzhob0I4Y0V5bXltaHYwLXN6MXJqTzhvNTQxb3U5T3RFQ1dMU1NjUzFEekJ1RGJhaWZPNjUzQVpoTWRVWFZoZVRjdDJYM2s2MjBKVU45ZUpMUng2X1NONUJjdm5mUjZLbWRvempZTjdIakdRMnIxdTB6S0NzV1gwZ2Y0bTNFNXdobUN4MVlsX1NMTmlTSFhJNnM5OGdoaEJaeGIyeThqMjFLck4yQnVPZldfUnRBdW9hb0t5czFmcW4yX0pCZjB0TjNESkNmaS1CRkp5TUE4YWl6T25haUhMLUl6SVM2REtybF91VXlkd1JCZUJ0Vk9nXzFLaXNoTm5tbzhWMVBSdGQzZUc0Znc3Q2ZvY2k3b1pjTVln?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):融资完成与参股方信息，重要商业事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "deepseek",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "DeepSeek首轮融资落地，梁文锋登顶全球大模型首富",
+    "quote": "DeepSeek首轮融资落地，梁文锋登顶全球大模型首富",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ucW1RY1BsR0xkTmJWUzFxT2xpbmg5SW45Y29GN01Obm1MSHg5MDFSLXR3X2dZcFNVbWNVMHhzemVtYmNyb1Zmb1JtZWVteXlxYUZmSnlOM1NraUR5eEEwaGJmNjJFbDRWa0lIWHRR?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):创始人身份确认与财富排名，品牌人物信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "nvidia",
+    "date": "2026-07-16",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "英伟达首席执行官黄仁勋访日 宣布和日本多家顶级企业合作",
+    "quote": "英伟达首席执行官黄仁勋访日 宣布和日本多家顶级企业合作",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMimANBVV95cUxQZFkwUXByeF9obExjYmdKWXg3X1VfbXlXbi1QRFZ1Z09CcWlITlVJVi1kYWxpVndlVzRpcWpSOURtelJJekQwa0FPdHVUR1BxTmNQU3FVWGxZZXFqN0RDR1NGTDNnYXpnc25BWW5PWl9GbWRoQjVackdEMkdTY0xObF9KMDNXZllRREZxWDl5aFg2TzBMM0FGYi0yNXNQd2xLMjRzVEJwZFItamx0QzJXX3Bnam1yZnl0RmdwRm52Nmx0RFBvOHkxendUT0FsUHh6VjdMOG9xbmhYRmpEWXhmaVpHYkFqRkdfbTZMNFZBMUZCbWpYNjFSLXd3TjE1b1NjSndERndvTjF1NDkwTTlwbFBjdVRfbjBkWHRsaW55WkJoeGtleWR3NDlndk9FSHo3OTA5UDFIUFJwT0dyUThnaGpvSjhNYS1XZDZvVjhlSWlVQjNiX3B6VDNqUjRYQlBFNjdSZ01QNTVTbXlHMWhZcXdTWXl3VFhLN2tpYUhvZ29ldnh3OGRsblFOSV8yTXhRanl6VGtDQmk?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):CEO访日与战略合作，重要商业拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "nvidia",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "NVIDIA联手日本政经界发布全球首个国家级人工智能基础设施|IT之家|英伟达|GPU|以太网|开源模型_手机新浪网",
+    "quote": "NVIDIA联手日本政经界发布全球首个国家级人工智能基础设施|IT之家|英伟达|GPU|以太网|开源模型_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNeUlZSEJ1ZU1SUVZnZ0xPWld1dE03ZjZLUjFNYVZGRmNnZ3p0dTFsTnNIVDVvdW9nVmkzV3BUd3JYUWloZllSempDNTdQOUw1NEVXNGNfQnZTU0FRcE8xajhSZnlzNWZGTUR6VkpDS2k0bVRtU2hvMzZETVVpUHZ6Tk0wVG14U3l3ZGtxNm1xd1RGM3NRVmQ4TkkxYnNhcFBRc2NsY0xEdW8xTkx5T3Z2R3F1Um5CZFlSUFFPSW55UkxmUWlUZUx5U2ptVlIwVlZSV0RIVTFSSDBYdUtreXNqWFVESUVVc21ZVE5QWmJxNTRpek02R0k5UVJiTndiRWM0TV85S2xZUUZjRzFMRXc?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):国家级基础设施合作，战略地位提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "nvidia",
+    "date": "2026-07-16",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "英伟达端出开放模型，助攻日本AI生态进化|NVIDIA|Agent|丰田|数据|仿真_手机新浪网",
+    "quote": "英伟达端出开放模型，助攻日本AI生态进化|NVIDIA|Agent|丰田|数据|仿真_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMimARBVV95cUxPUjFmRlBTX2U2eUZLaVlpalFZYmN1ZER6am5JNXZYY2dYYVNmaHNmcTJrTzVjOGVuVXZlMWdZdXgyODFidnZIRVdkTWpkVDVQQVUtSDV0eVM0RVNzTTc3bDI3S2x1enlCWEtHOTZoTHltOERvSWg0UDZsSVdBYXhubktNMkF3aHAzNmlkM0ZfMjhmM2cteHVwYTU2eFNUYVFQMXBxYzhhN3h0UTNQOFBVSWNHTndpSllOQVRiOXotZFE4bjhsM25nbm1mMkEwOFZUcHdnR2lHclQ2TGg5bnhCb3lvSEFpNFp4WTJmanZ1OXUyMXpzY2tZLWlaNnRpbXNUNFZCY0c1OUpNaE1zLXc3QUp0V21rYWJzMkVsQUYwQ2dCdmdSY2FkT2NINWpsUXFyeGNXM3hMSk11SUtnbjhVQmwzd3J2TXEyOHdyTWJZMzFfVUtkWHZsemdwNGNhVmd2TVBxVGNDc2s1UlFQQXJUMVEyWnpBR2lPbXNtNDNTUVZQdks0RTg4dUhYZkRrSTdUZlVncy1KVGV3a0taeTlMX3BqNEE0YTcwcUVURFBWSDQwbjNWQy1ZWWhZUkFIWUVPM0FYclMtbk5EckNLTkpyNDcxZmpiS0hoUWFUVjcwZ1ZMRjItZlQyZ3ZrRXhDM1A5ZDZ2T2E2aS10QVp1ODNHLWx1c1FhWWJ1QnFNVUZvb1VvVzlrWUw3ZQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):开放模型战略与生态合作，商业拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "nvidia",
+    "date": "2026-07-16",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Together AI融资8亿美元：英伟达是股东 打造AI Token工厂",
+    "quote": "Together AI融资8亿美元：英伟达是股东 打造AI Token工厂",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxOS2pZZkVCanppTlhFLUNVeEE0LU1CZmRhS1Z2TEFuSnJyM2lQcF9DUThieEd0YlR1QjdrVTdhbk5JcjR5Y3BLOTlkZUdNYVVRZndjdERORjlTR2ZDREkyOWV5MXI0WFJlZjNCNDdjUy1hN0tqQ1RmczhBY2Q3dFpZUFlERE5SY21kaGJ6TGZsMXpvclAwenRYaHJuZU05OHFiNUVSVDVTdTViOUgtNjdrdVAyVk1uV05ZcTBCUERWZDhIbDJGMGpRTFRHblBqb044ejJYQk1xdXpZREJ2WDI3MTRYdTk4WWExWGtXYS1PUk5CQzUzVDFvUnpfTW9JQ1ZVWVlzdWRDX3pqZ1FzS3JPUlJYdWhJc1B2RUlnMkpvNmE1cFgxb1N2VFllWXlDWHowaVZWZEdXdW1UanZocDJ2TS1YU0NZaE1WS29CTVkzYUlCM0JsWlZHd1BHSEM1LXhGLXZLX0VfZENrMnNlWUVkWkFR?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):投资方身份确认，生态参与信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "nvidia",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "英伟达推出两款更小的Jetson Thor平台 小型机器人也能拥有强大算力",
+    "quote": "英伟达推出两款更小的Jetson Thor平台 小型机器人也能拥有强大算力",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1LWjNndVp3bnEwalZydTJOZlM4UWExRmk0UzVsaDJYNl9QcnljQXJUcXNHRC1kejA4NDVEQlNPQ0l6VTB2blFtWjJHY0pvazY4SG80Wnh2V0I?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):新产品发布,扩展Jetson平台应用范围。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "nvidia",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "NVIDIA 推出全新 Jetson Thor 计算机，推动主流机器人与边缘 AI 发展",
+    "quote": "NVIDIA 推出全新 Jetson Thor 计算机，推动主流机器人与边缘 AI 发展",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5EajlobldrQXlna0dfNXUyMUptbmpPaExaWnZTWjA0bVplMVRZcWVIam9MUmVJWGVZbHJBdS0yYmc4azdldHBIM0ZRcjhzbFQyM3N4dWlPSVJseVdJNWlBSDRn?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Jetson Thor新品发布,推动机器人与边缘AI。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "nvidia",
+    "date": "2026-07-16",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "TEL、英伟达：扩大合作！",
+    "quote": "TEL、英伟达：扩大合作！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1lU3JMYnRSemwxQ1JvZjB4VGhkQ2tTXzktNWhsR3pyNHNEdzBWN1lWbG1uUVB6cEl3WUQwVVQxU3hJWlVhWFhXenlCQ1pJelhpSlByV2hPWjROUmxiUm9EelFB?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):与TEL扩大合作,战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "apple",
+    "date": "2026-07-17",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果上调Apple Music和Apple One的订阅价格",
+    "quote": "苹果上调Apple Music和Apple One的订阅价格",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mVG9HNUgyTExwVXFaM3gxcnZUcFI0SURYc05JTmFzTVZxRS1VSXhONGJVV1VQdVVhelpJTkJBaE9pWHhFU0NHVDU3bEFkTk9BeDV4cGg1N3N0N05SaEc0Yw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):订阅服务涨价,影响用户成本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "apple",
+    "date": "2026-07-18",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果上调 iPhone、Apple Music 等价格",
+    "quote": "苹果上调 iPhone、Apple Music 等价格",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSkZfaWE5RTdKOWg1MDdpcEszUTBvQWs1UXlqeXZNWEpMMUNPX0RUSGhldjZaSzZnc213S09vT0dxaFJZaWV6UkJfQkswcmwyampoeDFCUkFydURPRUZxbFc2TWJlcHp3OXhNNlNjY1pPZExmajkwT0hrb0k1dWpRcms2YWU5VjFN?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):iPhone和服务涨价,重大定价调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "apple",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "终于告别残血版iPhone 国行版苹果AI降临",
+    "quote": "终于告别残血版iPhone 国行版苹果AI降临",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5oVXBwSzBhU1Z3bEwwVVRoNWx2SGt0LVlXNVZMT2VTUWx2TnMzY3Z2UEJMV2kyMjNQLTY2X0xpdGdIUjQ4UWRubUdJVGxkOUg2X3RjbFY3eFY?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Intelligence国行版上线,产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "apple",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果(AAPL.US)推出Apple Business平台 拓展地图广告与服务收入增长空间",
+    "quote": "苹果(AAPL.US)推出Apple Business平台 拓展地图广告与服务收入增长空间",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE15T2FMUjZCdHIyTGk3NEdHSVdSdjh2eWRqeVBGRGxKQWh4UTVkTFZRQjV1cmx2S0lENEYzMWF5Q1A2ckZkc2t3Wg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Business平台推出,新业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "apple",
+    "date": "2026-07-16",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果Apple Care+服务涨价！覆盖iPad、Mac多款产品",
+    "quote": "苹果Apple Care+服务涨价！覆盖iPad、Mac多款产品",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sc2oxNnlMZ2xLY0JsR3ZmWXcwMk5Gbk5qZ0VXbEFYbWpiQV9DUXJZV0hHMlRtT2MtZG1GS2gyc19aQzN1RENoVXZXWVgycU9QZjVMakU4cVpsVGs?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AppleCare+涨价,服务成本上升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "apple",
+    "date": "2026-07-18",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果Apple Music订阅全球多地涨价 中国区个人订阅11元/月→12元/月",
+    "quote": "苹果Apple Music订阅全球多地涨价 中国区个人订阅11元/月→12元/月",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBWY1JsRlJHNFNjVzFCSXZmZHo0R3dmejZGOVNFazg1bEJvcXhKZmxuUTAxdnh3YnlNUlhIVkhHVFM4LS1EYU02MkM4WUJSWEpZVDlXU3RIb3d5YlM1bGxxRkc5U2ZDY3hwWWc?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Music全球涨价,定价策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "apple",
+    "date": "2026-07-18",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果多国上调iCloud+云服务价格，美区Apple Music同步涨价",
+    "quote": "苹果多国上调iCloud+云服务价格，美区Apple Music同步涨价",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5qZ2lrakpqREtHMVF3VEdrWTVBdDNOZ28ydC1vOGk2MmFZLTRobFZ0SE9vTE5NTXBUdUFUWkw5QnlCX1lXa2xPQzRIVnNNTnc2eUNpZzRNb1F4eUstQVJGZDBJWG5fRUhCMW43eVkxV1M?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):iCloud+和Apple Music涨价,多服务调价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "apple",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果等七家厂商完成AI服务备案，Apple Intelligence落地进入倒计时_人工智能",
+    "quote": "苹果等七家厂商完成AI服务备案，Apple Intelligence落地进入倒计时_人工智能",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBzMkl0TXppbVVaajBfODV4WGZITlhscUlxQ3FWNk1KRWV1X3BPUERtWnNnZWJ1ejdxbG1GblFKYW10bFVqN0g1eUhGOEVxVTVaNmw1MXNqU3lWRHpGcVY0LXpVMFMwRVBKVkxpeVdMZEZ0UQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Intelligence备案完成,产品落地进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P3",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Google将其3D emoji表情符号开源- Google 谷歌",
+    "quote": "Google将其3D emoji表情符号开源- Google 谷歌",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE96bjVJeS03VUw0Y29NV0VuZWIyWlozNHBxUXlkNjlYblJIbFEweUJ4bklQeXIxRDliT213MzVjX29PU1BWb182QTJmcnFfZS05Vk9sR3NTb2ltZG9JTUxjRQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):3D emoji开源,技术开放举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "谷歌NotebookLM更名Gemini Notebook，原生支持代码编写执行",
+    "quote": "谷歌NotebookLM更名Gemini Notebook，原生支持代码编写执行",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRYXpJMTRPamdUdlNJSlF1NkhrZUdlUEFyY1BqbURmR0pHaVptX3dFNjIwM2RxdjZVMm4yWlRLVmlvT3JYbFpTbUllR0RqMS1FTVpzR3FXamV1NTBpZmFXN0ZEY0d2WVRXT0RVTVNySXFUMHNxUlRGN1NmY2hwSFE?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品更名与功能升级,体现AI能力迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "谷歌Google Vids新增数字分身功能：你也可以自导自演“AI大片”",
+    "quote": "谷歌Google Vids新增数字分身功能：你也可以自导自演“AI大片”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE15b1ZaRXF4UjlGT1FqT2lheUJvNURMYTBrMjRvYmpmbWtvR1c0X1ZMN24wVXlhS3JaU3pGOEVvMXVwZzR6RHFvMA?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):新功能发布,AI数字分身应用拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-17",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "消息称欧盟拟因一系列违规行为对谷歌合计罚款数亿欧元",
+    "quote": "消息称欧盟拟因一系列违规行为对谷歌合计罚款数亿欧元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPMTNFZm84ejRMcXRiX3ZWYzQ3YnF4LU9kOGdORDZVY2ljNGJVRjhuVFNHRWF5ZHZ1b2NRUWljbmlFZDNUSkVZSVRqYm1jNUQ1M2lFendRS1AtakZRdnM1dUt5WXNNdDhHZjB4aUJxN0lhd3FHajVaVzB3bTBfWVVQMGVyVUVXd29saEdKbGtiNWNFdXRKWWpZZFR3QUJFTFcyM1J0MWtENFFxeTFUbHFXLTR4YVdDZ0UyV0I5bGhKSERuVk5LeEZzcWRJUk5qWjQ2b2pOdUpjTTJ1N1VZZE1DcEN0cGNRcHFmMVNWNERVMUFOZThGRHZpbjFFUGY1U3o2RG9zYWdXY09YUkgwTkY5QlRYY0ZFRE51OUY2aTJEQW5Dc3lZZlF1Wmd3V015a1JUaVFOOE1xbnZQdTVnb2kxbE80WDBJR0c5Q25Yem5MMlFiS0lMVzVhOW9KZ3E?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):欧盟监管罚款,重大合规风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-17",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "订单激增，三星拟外包谷歌TPU芯片设计业务|Google|三星电子|Google AI|代工|纳米_手机新浪网",
+    "quote": "订单激增，三星拟外包谷歌TPU芯片设计业务|Google|三星电子|Google AI|代工|纳米_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOeUduYU5UVFFrdHRLclhvZGVaYUR2d1A0M3FZWW5qaE54ZnVGbHJDQ2dFRW1YQ3JwdDZJclJrdFRMcFhwQWFBMmtheE9rU2UwN0QzMjF2UXF6Q0xzazZqOW9Rd0ZsWER5eW1wbWFqdW9VTWNhXzB3dDR6dHRsR3U4VkdmdzY1TzduTDNEc3Y1V1k1RzJFck5KQmtpSENMdTBSVkdJ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):供应链调整,TPU芯片代工扩产信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-17",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "数千名Google员工联名致信CEO 要求在AI热潮中保障被裁员者权益- Google 谷歌",
+    "quote": "数千名Google员工联名致信CEO 要求在AI热潮中保障被裁员者权益- Google 谷歌",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUOHJZaUNUUHFOVXU1MG83VDh6MXBveUZZalBTMlIwY2JZcW9EMk1ON0dHeVU1d0NkYU5WcFlYVW42QUtxSDhZWWxSM1hNeGhrOU1fLUNad3hhaTJGX0lucA?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "identity",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):员工集体诉求,内部治理与裁员争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Google搜索“AI模式”升级已支持直接关联常用第三方应用- Google 谷歌",
+    "quote": "Google搜索“AI模式”升级已支持直接关联常用第三方应用- Google 谷歌",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Ib24yU1JPVWpldVExZzBoVUhiYVhWV1JQZElxNlk2LUlBNHUwN1d0NEZNd0N0Y0hycG03UWdWSVZoU1RSZGV3dDRER2JfMWpEdFREcTJjVDBJdFhld243Uw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):搜索功能升级,AI模式生态整合。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-16",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "欧盟勒令Google向竞争对手开放Android系统与搜索数据- Google 谷歌",
+    "quote": "欧盟勒令Google向竞争对手开放Android系统与搜索数据- Google 谷歌",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAycG04eGVybDBwOGJyalZFdDdDSGZjSmh4WnhKc2FiNDE2a3IxdGlMWWU4ZS1nTklrT0JoRUZ6TTR3TkJ6Ym15SFk4bVQ3dlQyazMycmh0VU5hUlhOUGREQw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):欧盟强制令,反垄断监管重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Google据悉推迟发布Gemini 3.5 Pro 因持续提升模型编程能力- Google 谷歌",
+    "quote": "Google据悉推迟发布Gemini 3.5 Pro 因持续提升模型编程能力- Google 谷歌",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE05bXBJZ2l3Vjd1N00wU1BCMWpRYTNoWUQyLVAyZEM2ekwyVGtTb2FCU0xBNVpoeGYweUI4QldmZnFQY0hpNVVoeHE0VjZKc1pPSFU5a21EVFB0b1pnUWMxSw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品发布延期,质量优化信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Google Vids引入Gemini Omni模型并支持生成个人专属AI数字人- Google 谷歌",
+    "quote": "Google Vids引入Gemini Omni模型并支持生成个人专属AI数字人- Google 谷歌",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pMzNfTC1maGtyV0xmTDdqV3BOdklQUC1QNXNlQ3Q2U1plSi04MkxqNnI4WDFOWHZ5cFp4dEt1QWNjdGh3TTdfZGR0dVk4X3J1MW9STGlya00xMjUzMC1nVg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):功能迭代,Omni模型集成应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "google",
+    "date": "2026-07-16",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "多家大型出版商就Gemini AI训练起诉Google 称其侵权规模“史无前例”",
+    "quote": "多家大型出版商就Gemini AI训练起诉Google 称其侵权规模“史无前例”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lOGg1Y3ZGa21YdFFiREcyNTNpWFdUMDRyR0J0S0I0R1JVaTRrb09PbElNeF93NTlMSHU1eF9jYVFaUjROdWRwZmlwN0xFQlBUcjFHSF8yMUFTSVJsTzFwTw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):出版商集体诉讼,AI训练侵权重大法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "微软为提升 AI 回答能力，Teams 自动为符合条件会议生成存档文件",
+    "quote": "微软为提升 AI 回答能力，Teams 自动为符合条件会议生成存档文件",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hR0RVNlZiNVo3djc0amVHTF9ZWkcteXJaOVJ3X0pyc3lFUWtEZ1lyRS1TN0otMG5mQ01JWXd6aXp6WjJOZE5tQm5fWXB3bGtJamJISTd3SHcwOFBVR1hCM3p6MUxpTTJXZjN2N2U5Z1NVeXVmUTlkYjhDbnBCenc?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Teams功能增强,AI能力集成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-17",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "微软 12 月退役 Win10/Win11 应用商店安装的 Microsoft 365 应用",
+    "quote": "微软 12 月退役 Win10/Win11 应用商店安装的 Microsoft 365 应用",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxOV3RNX041RXcwb2VoQ0VEQ1hFVThRWGl6bjlCaUdFZ2ZtSm1TUnh4cEp6VmNYd25HZkNLMXVVVEk4M3JmdmE1WUtqU0FCWl9GSm44bGszT0pDU2w3NjkxVi1yOTF3dnJOR2pGSkczUGMwMzhjc1BPWF9tMC0xcGxvMWdJMmJ1Vy1nbGpsQ0tjMzJJVG1SNHBKYnotYVBOSURUZE9tX1FDMnV0a0VIRUJYcEgzRHVFNWFDWjdCQWxWeW45NUc3TGF3cjFTSlBtT0FZbW82ZDlLS0wwQUxrLXgzdkdqcUFMM2NRcjFGTTlrcVZxTzIyMzhySUpJeC11MWJwZkMtby00a3BQZzNBTXVJWlZRU2NRQklQRC13Q3RFOUV2Q0hfQmJBSUt0Y2lGWmZ1eEduUXJWcVJERkVnWnlzZ2pnd3MyRTBnZHNGbnlENExrU2F4TVA4ODBMNm5PZGxHQjRvbkNLcmlLUzlZb1NQNTlqQTBwMFRzbkVieFZkaGNucFJQZFQ0dkZ3LVdfVzMzMGhwQ2FlWnJqSmZHUk44SjM0R1k2OXk3dTBMSVBtMGNjVm1ZSERfcGFIWkx4dllPVGN3bnZBOFphaFYycTJLSXZ6QW82Z29RSHM0clNn?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品生命周期管理,系统迁移政策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "微软终止支持SQL Server 2016 但承认其在企业中仍被大量使用- Microsoft 服务器 - SQL Server",
+    "quote": "微软终止支持SQL Server 2016 但承认其在企业中仍被大量使用- Microsoft 服务器 - SQL Server",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zdlE2NWhsRmVKRS14VnQ0d083bmpOaW9QSzdpSW51YVphQlVodldPN0NPSW5acjM2UVJ1RVJKZG9MdmlJckdOMFUzdFhzOEU3WE5uS21waFNjUEMwUGNsRg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品支持终止,企业用户迁移压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-18",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Microsoft推出6项有用的Windows 11 Insider新功能，其中一项可保护您的电脑免受灾难",
+    "quote": "Microsoft推出6项有用的Windows 11 Insider新功能，其中一项可保护您的电脑免受灾难",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM25IT09UZ2U5bHhlRWVKVld2ZDNWVUFLLUZBQXdINUhLQlB3ci13MFo4N2phZFY0RUhObmE1SVZKcktkQ3Qta1pPdFUyTFZfd3F4N2V5aUVibVNyU0RoLXZfd1VkMTdFNkpES2wwVmxSVi1SbWNUUXl1b0xWcW1PUXdVcWJTUk1F?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Windows 11新功能发布,安全性增强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P3",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "微软把Comic Chat 开源了，那个让Comic Sans 走进千家万户的聊天软件- OSCHINA - 开源 × AI · 开发者生态社区",
+    "quote": "微软把Comic Chat 开源了，那个让Comic Sans 走进千家万户的聊天软件- OSCHINA - 开源 × AI · 开发者生态社区",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQ2tNMTktVkt0TkZ0OUlLa2l3NEhMdzhOTmFPbUxjNlAxaWU0Nm1lQlktRmlaVWtZMnpBY184U2Y3RnkzVXBvc3o2RlJiUVEwMFl6cHlfc19ObGZwR1V5d3JkQkw2Zi1uVnpvZ3g2X2JVSVNsV25XT3NOdnlaWW9taA?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):开源举措,遗留产品开放策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-17",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "微软Entra ID将于9月起默认使用Passkey通行密钥",
+    "quote": "微软Entra ID将于9月起默认使用Passkey通行密钥",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5JVlZfM3NLNnoySldwQnNFZUszckFpYnBNUlZnR1d1eUt5cFpEX0w1ZDBpcHhpMGhtRmhEV05kcnpHb1dXOHpMaw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):安全策略升级,Passkey默认启用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Microsoft首次推出自愿退休计划：AI转型下的人力结构重塑",
+    "quote": "Microsoft首次推出自愿退休计划：AI转型下的人力结构重塑",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNjRqUFlsSXJicGJ0bjV3LVFQNVpmY0lFbzgxVUx1LUV6a25DTktkbENiQTBmUlRTbWQxTlZVSGlxMVAyejluVDN6eVZaVlI5aGRnUEhrVVYta1hfeGhOSlZxTDlXSzM3ZFc5STJSZVNPbEY5bHhYZG1TU3dDcy03d1NMSEo?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):微软推出自愿退休计划，反映AI转型下的组织重构，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-16",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "更新：市场传闻：微软全面改革安全部门以把握人工智能需求",
+    "quote": "更新：市场传闻：微软全面改革安全部门以把握人工智能需求",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSEIyWXZmVUhhcFBKNnRZOFVLUkdLOW9OOUZibU5yYVVHNWFkVi1hMmZmbFphdE1QZGtxQnlGeHZ3UlhCeWhXOElHZDk5RUl6amJMOHB4c1VrTGgySEJHMDV3Vm9pU3EtZ0ZoSmxsSkZobmdiZ05USHlQYnRfOWh3OUo1N0NGV1BXODdhU1d3ZTdDb04zQWpoNmxQd2FFWFpFbXpBUzdRNXBOYkxBNENvZVZ5YUZ4UkI2UHNzcw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):市场传闻微软安全部门改革以应对AI需求，信息来源为传闻需谨慎。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-16",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "形势逆转，微软正在“游戏结束”之前重组其 800 亿美元的投资。",
+    "quote": "形势逆转，微软正在“游戏结束”之前重组其 800 亿美元的投资。",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUzdLeDduX1BzMDYyT1labDdlWHJhS3VuM01leG9Oc3EwYXYtSUczLXF6Qk5GTUFUN0JjdzNwclFfSUxoa0dlSEhsSVFoeDNhM3JwbktzNy1QZ2tHbUVrd25mMU5VUks1ZUVQamo3TzdGVDRMWXFjbVpxVnE1RW82dW83X0tIa0xLZjFYcm1jeFVNbmwyaWl6M1Zza2w3UC04Mnp3WWNWVkpxRVRseFUzeFpJQy1JWWpQcUJR?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):微软重组800亿美元投资，标题党风格但涉及重大资本配置调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "microsoft",
+    "date": "2026-07-18",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "微软9月停运Outlook会议洞察功能，Copilot AI接棒",
+    "quote": "微软9月停运Outlook会议洞察功能，Copilot AI接棒",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9La1lXWlBsTVJCZS1vbjhYUGdGZGNRVWU1cXB4M3MtTjNMbUt1cnROb2lTSmVCNWNPYmRVNDlHUEVtYXVNV2tTRTBLR3FYYW5VcXlmU3RsVkV6YnJINjZFUXl3?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):微软产品功能迭代，Outlook功能停运并由Copilot替代，体现AI战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "amazon",
+    "date": "2026-07-17",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊公司旗下ZooX部门召回其自主驾驶车辆",
+    "quote": "亚马逊公司旗下ZooX部门召回其自主驾驶车辆",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNaHVsNVpORndxVmNxLVlFNEFjQmZlekNZWF80MlVvbEgyT0duWlRKWTJxRUExdWROLTBMVngtbkRqV2g4WmN2VUdkcFdZVGpXQlNVZ0VOdm13NlFOcFJYSg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊自主驾驶部门召回车辆，涉及产品安全和技术风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "amazon",
+    "date": "2026-07-18",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "美银测算：亚马逊建数据中心每GW成本250亿美元，比谷歌低三成",
+    "quote": "美银测算：亚马逊建数据中心每GW成本250亿美元，比谷歌低三成",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9YaE5mUGdob0F2VFQ4OG01YkExODM5NjJxc2JUYjZXa3Q3dEU1Z0hkNV84b3lZQW5LWjc2dDcwTHFwemtfZHBQN1lMMGJjNlBxUC1NYlNOOUFQckdBTlYtYU9R?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊数据中心成本优势分析，体现竞争力和资本效率。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "amazon",
+    "date": "2026-07-18",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "郭明錤：亚马逊消费电子处理器转向芯片自研，2027年出货量可达4000万台",
+    "quote": "郭明錤：亚马逊消费电子处理器转向芯片自研，2027年出货量可达4000万台",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdWJLX3NycGhMTnlOenk3SFR1SXFQbGU2OUh5Z005QTRhV19IcWtabF83SVpMRmdhUVItd2VsaEJpNUt0cXZ5LTFQMXJJeDdsdUVEOHV5RE1RUjZ5MTJxZ0RBckpEZGQtX3A0ME83MnZkaFYzTS1mdkpFdjVFTFV0WXJRazIxNWtqTnRta1YtM2NzU3M4QmxaNWJIcnZaWm5Vc01RUHNwc3c3ZFJzbU44?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊芯片自研战略，2027年出货量预测，体现垂直整合方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "amazon",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "突发！亚马逊19年老将离职，贝索斯时代加速谢幕",
+    "quote": "突发！亚马逊19年老将离职，贝索斯时代加速谢幕",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWMW1EWFFoMVFZNEFkQlZZd2thX0F1eGZ3QVZLSUhlU0V4UXE1a2Q1MHVxNS1iUldyMUNsV3VTa0pOSG9lRUMxUUlOaTEyNm9ObmJGUWNGUktLWHdRNTlFYg?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊19年老将离职，标题党但涉及领导层变动和战略转向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "amazon",
+    "date": "2026-07-16",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊云科技中国峰会观察：Agentic AI规模化落地，商业价值转化的竞争已经开始",
+    "quote": "亚马逊云科技中国峰会观察：Agentic AI规模化落地，商业价值转化的竞争已经开始",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBqNTBNNDNxd0ZucEs1VXFhTGJwM3VEclh1NUcybnlBY2o0VEtMdER5cVRaMjUybEdSaVFvZ05oc2owdlFwTUp1V1pGajFKd0l4bUFCdXZvRTZTUWhpX3dfazR2N0ttZ2FCUnU2WUhTSzczWGFa?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊云科技峰会，Agentic AI商业化落地，体现产品战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "amazon",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亞馬遜借鑒中國工廠啟用AI人力管理系統 上線幾分鐘喊停",
+    "quote": "亞馬遜借鑒中國工廠啟用AI人力管理系統 上線幾分鐘喊停",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9RVTNBbjRvY2dPWXRzNDJjU0pUX1FtMzl6bk05QlAtemtRUmRfQVhLSGxIWmEzVFNmZEdmS0djbHpDdnpiQVkyN2tDWnNuVVBxLUNYcjA2NTFpWUdoUy1fWjU3dTFzV1F1T1HSAWdBVV95cUxNbmg2X2ZnZVZaNHR0SFZGUFAxdloyUnp4THNucUhTUVNlWEJDS1ZHNHBLSWZrckxGUk1UX0lKUUJUX3pRb2tOd2pqTXJfUjZkS2JPMVBZWURjM1pxLWNLS2x6dXFSdmU4?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊AI人力管理系统上线即停，涉及伦理争议和执行风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "amazon",
+    "date": "2026-07-17",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "AWS Just Hit a $150 Billion Annual Run Rate. So Why Is Amazon Stock Still 9% Below Its High?",
+    "quote": "AWS Just Hit a $150 Billion Annual Run Rate. So Why Is Amazon Stock Still 9% Below Its High?",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcVFoQ1RXMlB2a3dLalRUV1EzR0dNLWk4ZDg4N0U4MHNla1NnZFdNaXRVMzJ2SE81TGRKVzN3WE5ROFhvZkFiUzlPa292aV92OUpSTXdnb05naGg5VkJqei1VUUUwRG02MG1uSTA5emNJaV9uSDQzQlJFdTcwMXR2YXdrQllvdEVlbC1ycjBOSV9wWDdFeGUtcjM0bHZBLVpiZDVlWW1uNEhBb2FESGgtYU9YQlBmQzBk?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AWS年度运营率150亿美元，但股价表现滞后，涉及投资者预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "amazon",
+    "date": "2026-07-17",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "KeyBanc上调亚马逊目标价，看好其AWS增长前景！",
+    "quote": "KeyBanc上调亚马逊目标价，看好其AWS增长前景！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQamJKUHRwMXFTM3Buc2tJNWo4LWV6OEh2Y0lFZWFNVmEyWmx3Q2hfbmtpTmhTVjVHbFlINVBWZlExWE4ydEdXaklRUTVfSVhVZWlQcDN0eW1LaUN2QVBhRWlFVWZwZkFtZmpieGRhREdWMWpuTE93N0NVNEoxaVB1WVFGOVBxRDI2?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):分析师上调目标价看好AWS增长，属投资观点但反映市场信心。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "huawei",
+    "date": "2026-07-17",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "华为助力加纳BPA，打造AI时代智能发电厂- 华为企业业务",
+    "quote": "华为助力加纳BPA，打造AI时代智能发电厂- 华为企业业务",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbE9mTERESXByS2FxdjVtekxEdDFMcG1QOGZublFyR1FpX1JXa0RTQXdySHdsSHVfbHZURnFwUVlNVTIzenItZWtjR1lSR0NZNkZ6V2g3eDVtb05vWlFrMFQ5alhobHhldDUtRFk5ZlJOVXZMT0xRTkZfMVlKQU9VNmNuWQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):华为AI智能发电厂案例，体现企业业务战略和行业应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "huawei",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "华为nova Flip S的鸿蒙5.1系统有哪些AI新功能？",
+    "quote": "华为nova Flip S的鸿蒙5.1系统有哪些AI新功能？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tRDhxSnpqN08xMXl2dE15akNuMVU4VHE3RS03TXgwdkFRQ0xyVU1oQW5tM2ZwVEVkeTdRQXpvSll3cXJBOVkyOWxZOGQ4d1VKVHlnR3J1SkI4TmFMMk5ZMXF3Q0JtTk1FdEFsVEt3LWlUaHY4QUlmamxJS0VIVEE?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品功能更新，鸿蒙5.1 AI新功能属品牌技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "huawei",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "华为Mate 80、Pura X等手机适配支持HUAWEI Tag精准查找功能_手机新浪网",
+    "quote": "华为Mate 80、Pura X等手机适配支持HUAWEI Tag精准查找功能_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMilgVBVV95cUxQRi1DVEJ3blMxLW1iNHhZUUFsaGhadjZjanNmR3dQWE5RcDVsNDZ0eGtHWVRpSWg3R2pnWkhNNjlrdEQzVWx6TER2VzE5cHJHQWRHTzgwZ2pEQTk2SVZrcVpibEZkbFRSWXZqcldFS242ZDB4QU1yOFNfZ3BKY0xTOXZUUUdZaHhYWTJIcHR0OVdFbXN0MzBIZkw5TEI1UDFSNVFUMmwtcUMtZVdBU0xlazREOFlMQ0d2YmNhWVlJaFJDYWJaNEdjRXhaMkFaVlhXcm9tQTdjb0ZrYjJNSjVSRVd0dzljbmwxdm0yT3RDS2hDYVZMRTlWNzVLWWo4UlNpd3dya2VWQ3lIOExLZWlHUHF6enlXcXVxc1Q4UkFQTk1wc29iOWJvTzkzaGNibXJTRkw2dnl4ZlFVZXk5YTJGOVFoU0hZM1o0RWxhX2Npa1lSNHRFeHFfNDhFYjhFVGdZWlVpX1oxOU81cmttYTQ0Z3hocWNSc19JenV2aE0wZ3ByTUJVcU82dmFydDUwNVh5YnBPTE5qdUMxT3RYTzN1b0ZVWjNiSUV3X1IzMURYeE9IMkxsb0ltUHN0MkxEX1FfZ2o3UWF2NmdMUlBSbW9uekFDbmhuNWZLSV94MFA1SURhRGh4V09HRzZlSUE0QkFOUzFwNFVlTEVNWWJxOXRtRkVHemVybGtYemJJcWZlS0t5N2h3aEdBbDJzblQ3SkE3V3NZQWdRQk5vc0pZRGRzSnFWcG1raUpaNC03aFMzUXZvVlRfc0V4WmRhdVFYRkJRcGJ1cm55LXdxN3ZHWjZTVExlbDB1N0lfQW1Nbkc2cGpnLTJHU285X3ZZSXhjSGFqcjZWSk5LVWV6UlRXRWYxWlpPZzBRQQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品功能适配更新，涉及多款机型生态完善。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "huawei",
+    "date": "2026-07-17",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "一年免费换屏/碎屏险哪些品牌有？华为/vivo/小米政策全解析+FAQ",
+    "quote": "一年免费换屏/碎屏险哪些品牌有？华为/vivo/小米政策全解析+FAQ",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB2d1QxblNDSEhPTDN0cWJwUGpRQ2s2XzhtSUFQT095UE5MSXk0UWthcnBMMVBSRnZPMXdZSEI0V0Z0ZmgzWHJBRHlxRjhRaDlia3hhQkp2dmVRNHlpalpiZ2dBR2ZaWU92aHVGcHBHcGFFZw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):品牌售后政策对比分析，涉及华为保修策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "huawei",
+    "date": "2026-07-16",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "华为Mate 80系列在高端市场表现如何？",
+    "quote": "华为Mate 80系列在高端市场表现如何？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1pemRCRUpiSzNsT0hPOG5nY1NZQ04wdHd3MkZUWXhpXzdGeUhsbHBkVElPNElwY0V0cG9YWDhWWUpYZlFQYjB6NmNaV2NYUkhmdlRGelBwdDhYN2RjTnBfUGRhcEZ6S3oxM2ptWHMxZkt5QQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):高端市场表现分析，涉及品牌市场定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "huawei",
+    "date": "2026-07-17",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "涨价信号已现！华为经典旗舰仍原价 现在入手超实惠",
+    "quote": "涨价信号已现！华为经典旗舰仍原价 现在入手超实惠",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQWNOVGtZOWY2WE82TGgtWTd4VFdfaC1MQ01VYjhLU0lnNzg0NUM4Z3BSb21Wckk1Z1lYRGNlOWJXX1hCNnpyV1Y5dG5IVVRQRVp3dEx5X0t2aUo0NnZqQTQwdmQxRWp5OFN6MkVnRFZuZmpRYmhDVmszYVpyRk9iMmFQdi02WUN4RXQyY0RmZjRrMUNqeGRHUzJ6eFpHdV9qdVlEZkczVmI5QUVCNUgwNVNrbVR2SHBDcGgxNw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):涨价预期信号，涉及定价策略变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "tesla",
+    "date": "2026-07-18",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "特斯拉无人驾驶出租车，到底是什么水准？",
+    "quote": "特斯拉无人驾驶出租车，到底是什么水准？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BR1VrYTBJai0tdVE4ajFWWU90LXJXRGx6cVhvWWU5UG5GN2RwQmhVVnpjTlN2V0p2dWpHMVQxWm1WN0dqMFNWMkxqZDItSUl5UFdQUzEtVXI5YUE?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):无人驾驶出租车技术进展，涉及核心战略产品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "tesla",
+    "date": "2026-07-18",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "等了这么久，特斯拉首款“自行车”，不过...没踏板也没电",
+    "quote": "等了这么久，特斯拉首款“自行车”，不过...没踏板也没电",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTXdIVmlYVEg1cTZCVExzbFM5bmRYVjlZaVhkN3JZSHNlTmxvSnFFVHg0SUVsUnY2andzaHZaanEwYTF6MDRLMzNMR3hBQ2U4ejliTnB1bWFDM240N09UMVNrODRHRVctZkR3Mk9KUUl6V3h0MzN4ckE5NUJ0dVE4c29mako5WmhjVVRINQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):新产品发布（自行车），涉及品牌多元化探索。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "tesla",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "马斯克预告全球开店！特斯拉(TSLA.US)“复古未来风”充电餐厅好莱坞正式迎客",
+    "quote": "马斯克预告全球开店！特斯拉(TSLA.US)“复古未来风”充电餐厅好莱坞正式迎客",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUDBFczF5aVlvWTRxcUFNTG53cDhfS01TeHEzSk96RHl2Wk85X1lXMjlrT196elBCWmxacHlXMDMzYWRTRm93T0duTUJkR2FWX25vMWlGUFo2RERZQXpaRTcxOHhJeUhnaUhycjVZUzdOWGJ2NC04WHNMTm9WbE5IcjFMVEg1UUJaUXZ3eXJBSUZLemhPbWdPLU1zNFcyeXFNbFlFSVlR?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):新业态门店开业，充电餐厅战略举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "tesla",
+    "date": "2026-07-16",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "特斯拉获美世“2026-2027卓越健康雇主”两项荣誉",
+    "quote": "特斯拉获美世“2026-2027卓越健康雇主”两项荣誉",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9hZEdHUTBkSmFhanNMZ05zZURBTlBmUkFZcDR2VF9iNTZVUE5SNXRyR3k1TFBYUzZuMFJHV3pMYkFUNGJ3a0w0WQ?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):企业荣誉认可，品牌正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "tesla",
+    "date": "2026-07-17",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "特斯拉跨足自行车 首度推出儿童平衡车",
+    "quote": "特斯拉跨足自行车 首度推出儿童平衡车",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1fQi1uY05JclJIWmlTRktXdGlMVWV3S2wtWHp1TWhnOENHaGJpWjN0VmR3a3g2Ri0zai1SV2YtbGlKNWlmRkI4S0JUMGNpMldhaHc4OEF3S0dUdmdhQ2hSZTB3?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):品牌跨界新品发布，业务扩展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "tesla",
+    "date": "2026-07-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Tesla大马全面调涨车价",
+    "quote": "Tesla大马全面调涨车价",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBvaGtaOWc5NHpRYkhOR1d4bThGSldNazVZOXU5M1JYdnN3UXBwdUFWMUQtelZlcENEVlJqVFNtdXBsRnpwRTMtaXJvdWJVSWhFODNKTExyTWJLLUh6a05yOUhVNUpSYmhFV3A1aEZUTEJSdw?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):区域涨价政策，可能引发消费者反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  },
+  {
+    "slug": "palantir",
+    "date": "2026-07-16",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "KT携手帕兰提尔举办人工智能黑客马拉松……扩大企业对企业人工智能转型市场竞争力- 阿视亚经济",
+    "quote": "KT携手帕兰提尔举办人工智能黑客马拉松……扩大企业对企业人工智能转型市场竞争力- 阿视亚经济",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YWFlPWmphVlNGQ3E2anh5dWMyOHltUTFrb3NPYy1TelEtMVVQYUg5TUc2ZGd3bkxOMEVwX0p4aDJibHBKXzNjc0xacm9PcjhHUWo2MXpzU25OdzJoRmpwNE5nZ2g?oc=5",
+    "fetched_at": "2026-07-18T22:55:24Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):品牌合作活动，AI领域战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+  }
+]
