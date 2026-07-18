@@ -47,7 +47,11 @@ jobs:
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add watch/
-            git commit -m "chore(watch): 折叠 triage 采纳候选进 events.yaml [skip ci]"
+            # 不加 [skip ci]:折叠后的 commit 成为 PR HEAD,需让仓库级 PR 检查
+            # (validate-panels / validate-reports / render-qa)在最终 events.yaml diff 上跑。
+            # 折叠已删掉 _adopt 暂存,故再次 synchronize 触发本 workflow 时 fold_adopt 是空跑
+            # (无暂存→不 commit→不推),不会死循环。
+            git commit -m "chore(watch): 折叠 triage 采纳候选进 events.yaml"
             git push origin HEAD:${{ github.event.pull_request.head.ref }}
             echo "✅ 已折入 events.yaml 并回推 PR 分支。维护者复核 diff 后合并。" >> "$GITHUB_STEP_SUMMARY"
           fi

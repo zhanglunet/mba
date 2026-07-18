@@ -283,7 +283,7 @@ function yamlFor(){
   date: ${c.date||"YYYY-MM-DD"}
   dim: ${s.dim||"W?"}
   severity: ${s.sev||"P?"}
-  direction: ${s.dir||"neutral"}
+  direction: ${s.dir||"TODO-方向未选"}
   direction_by: model-judged
   title: "${t}"
   quote: "${qq}"
@@ -320,7 +320,7 @@ document.getElementById("export-no").onclick=()=>{
 function adoptList(){
   const items=[];
   DATA.forEach(c=>{if((state[c.key]||{}).status==="ok"){const s=stFor(c);items.push({
-    slug:c.slug, date:c.date||"", dim:s.dim||"", severity:s.sev||"", direction:s.dir||"neutral",
+    slug:c.slug, date:c.date||"", dim:s.dim||"", severity:s.sev||"", direction:s.dir||"",
     direction_by:"model-judged", title:(s.title||c.title||c.quote), quote:c.quote, quote_type:"title",
     url:c.url, fetched_at:c.fetched_at||"", lens_map:(s.lens&&s.lens.length?s.lens:["signal"]),
     source_type:"media", note:"前台 triage 采纳;标题/日期/URL 取自源 feed,判断字段人工定。"})}});
