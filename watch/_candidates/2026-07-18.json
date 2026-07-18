@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T13:59:07Z",
+  "generated_at": "2026-07-18T14:25:33Z",
   "window_days": 14,
   "candidates": [
     {
@@ -25,7 +25,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "c73ade7370b6",
@@ -50,7 +50,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "713b377d9d28",
@@ -75,7 +75,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "62c0ad0280ee",
@@ -100,7 +100,30 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
+    },
+    {
+      "key": "0c90fabe81e7",
+      "slug": "chengshi-auto",
+      "brand": "橙仕汽车 Chengshi Auto",
+      "date": "2026-07-13",
+      "quote": "豪驰智能橙仕纯电动货车申报：额定载重755kg 能否抢占城配市场？",
+      "title": "豪驰智能橙仕纯电动货车申报：额定载重755kg 能否抢占城配市场？",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMlM1SWkyS0plUVBzRnJ3RFVMN2xhZHR2ZjFzS2ZUQWxsaE5Ld3QwUk1vX1kxcG1CNktkWklBMG5IcFIwdTVla3hHYWhnNVFWSEc3NmgtUDVIMm1ZWkNnYzJDVnZ2Yk5nSGxHN0NVeTdveVViekVtdmZPaXR2c0hWTXAwNkUwQXdoeXBwb0tVV2YwNExDOXc?oc=5",
+      "source": "新浪财经",
+      "applicable_dims": [
+        "W1",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "cb076e697ed0",
@@ -123,7 +146,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "f250d559729a",
@@ -146,7 +169,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "6278860b8bb9",
@@ -171,32 +194,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
-    },
-    {
-      "key": "9bbdae8f0148",
-      "slug": "anthropic",
-      "brand": "Anthropic Anthropic (Claude)",
-      "date": "2026-07-06",
-      "quote": "Anthropic：Claude 已承担 95% 的内部数据分析查询工作",
-      "title": "Anthropic：Claude 已承担 95% 的内部数据分析查询工作",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrVmNhVnE2T0w2VzJjVUJsWmxUam1JdFdQdWJMLWRzYWxxZEVWUlRMSWNwbkQ3Vks3RW1kb3c0VHlaUzlkOWtTUjhqb1pBQW1vVDE0YUZqYmZwc1RIT0E?oc=5",
-      "source": "Infoq.cn",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "c07b5c1d216d",
@@ -221,7 +219,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "493df77098b3",
@@ -246,7 +244,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
+    },
+    {
+      "key": "8a7d01ef7964",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-07-18",
+      "quote": "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利",
+      "title": "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FZ3J5WWVWb3ZmU1gtTnNjVVRWdWM1ZnpsUUhxZG9XU2k5UnBVekZsaURCaUViSTRuaHBZZWdURXI1MnczZ3QtLQ?oc=5",
+      "source": "财联社",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "b3925243bbab",
@@ -270,7 +293,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "273c5177972e",
@@ -294,7 +317,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "f997bca4bbcc",
@@ -318,17 +341,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
-      "key": "6f474f35033d",
+      "key": "de250530f7d5",
       "slug": "dji",
       "brand": "大疆创新 DJI",
-      "date": "2026-07-10",
-      "quote": "大疆无人机飞抵8861公尺 精确收集取大气污染物",
-      "title": "大疆无人机飞抵8861公尺 精确收集取大气污染物",
-      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPLXRkTmhUVFRKdEtXQXE0QmtONjJ2dHhxS3Q3QzJlZmJTcU5RdXBJaXFhNllQNkhBTjNGZFptdU5QT3dyaEdkeFhQdWN0Y2Y2RjA1MFRueUw0VzRrR3BKZmozdXFyX1FZSXlrUHc1RVdQX0NZYjk5blRsUU9MLWZZTDNIX1JEaHBERHFYUWtRTEdJOGtvanRrWlNCN3JLLUFwMTVRNjBPOEdnNjRRT1huX1hfbnVUVTlCUEJ0MEw0eklXV3BIUkhtQU5saC01TzZZR19ZOWVWLWVnU1N6cy03R0lUQlJUUHpXaWwzU2U1LTExaGdCUXl0R1p3eHdFdkpoSlpLaEZpZ3pmU2VmbkQwamlRd1JaVmJscnVxeEZ1SzBsVkphLTBWWFYydE1tV2FxWHpGcC13bF94TEh3?oc=5",
-      "source": "中國報 China Press",
+      "date": "2026-07-16",
+      "quote": "【现场】劳动者搭电动列车通勤、商场与森林相融……深圳所展现的未来城市图景: 中国·国际",
+      "title": "【现场】劳动者搭电动列车通勤、商场与森林相融……深圳所展现的未来城市图景: 中国·国际",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HQkxrVlBfYU1HVEQwMnQ5aFFzNDdjZ0tHZHQ2cURpeWVFdXoyWUpZdTlzcUg4RFRhRV9nSTNvdTZ0TU9BeG1XcElYNEUxWERVSVpGZ3Z2MTQ4WHpMaHQ4VVJKaVQ?oc=5",
+      "source": "韩民族日报",
       "applicable_dims": [
         "W1",
         "W2",
@@ -342,7 +365,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "c79aa4bd1aee",
@@ -365,7 +388,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "a49f9a356e0b",
@@ -389,7 +412,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "a9069a7ff1b4",
@@ -413,7 +436,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "5454d60219f2",
@@ -437,7 +460,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "4a257e19d032",
@@ -461,7 +484,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "0aab60818c45",
@@ -484,7 +507,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "9936568e0c87",
@@ -507,7 +530,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "cb3c582d9dc2",
@@ -530,7 +553,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "7d68835a06c4",
@@ -554,7 +577,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "f64f657103c8",
@@ -578,7 +601,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "ed27e1633a50",
@@ -602,7 +625,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "a217d51beed8",
@@ -626,7 +649,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "a021b5aa1465",
@@ -648,7 +671,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "33f522e3bee6",
@@ -670,7 +693,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "11254d9b7005",
@@ -692,7 +715,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "cf4712ed3168",
@@ -714,7 +737,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "85578217df06",
@@ -737,7 +760,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "a49d04c82c08",
@@ -762,7 +785,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "c25bf1e367f6",
@@ -787,7 +810,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "7cfbc0d0d32a",
@@ -812,7 +835,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "5500f773c71e",
@@ -837,7 +860,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "f0fed2c7b895",
@@ -862,7 +885,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "a6d584a018ee",
@@ -887,7 +910,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "61d306b73066",
@@ -912,7 +935,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "019a601650d5",
@@ -937,7 +960,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "fef1b0cf78fa",
@@ -962,7 +985,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "4251527432ac",
@@ -987,7 +1010,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "0b384f5ee825",
@@ -1012,7 +1035,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "8a33042bf24c",
@@ -1037,7 +1060,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "fe518c63cd8d",
@@ -1061,7 +1084,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "ca68e44a7904",
@@ -1085,7 +1108,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "30f7302c2bc7",
@@ -1109,7 +1132,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "f31205ff6694",
@@ -1133,7 +1156,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "946bd5d3aa75",
@@ -1157,7 +1180,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "df23ba4beba6",
@@ -1181,7 +1204,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "4417acef45d3",
@@ -1205,7 +1228,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "b43396098715",
@@ -1229,7 +1252,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "d9b0c1daf9c0",
@@ -1253,7 +1276,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "8d7c9ff5162c",
@@ -1277,7 +1300,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "eb5d220559ea",
@@ -1301,7 +1324,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "c4cacd402270",
@@ -1325,7 +1348,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "bdb661d08d2e",
@@ -1349,7 +1372,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "966c9eaf2bea",
@@ -1373,7 +1396,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "49f2e7b4ed7a",
@@ -1397,7 +1420,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "04a772820217",
@@ -1421,7 +1444,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "8f772483a6fb",
@@ -1446,7 +1469,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "86fd932e5f96",
@@ -1471,16 +1494,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
-      "key": "8c837abe5356",
+      "key": "6231583d9f27",
       "slug": "microsoft",
       "brand": "Microsoft / 微软",
-      "date": "2026-07-16",
+      "date": "2026-07-17",
       "quote": "微软 12 月退役 Win10/Win11 应用商店安装的 Microsoft 365 应用",
       "title": "微软 12 月退役 Win10/Win11 应用商店安装的 Microsoft 365 应用",
-      "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxNeEx6elZ6SDVsRVJjR3hnNXV2M3RfRGNfQ2w5czVvSFVLcnVuNU8zSEZXMFY1czlJVXNiSkhPaU5ZU2lZN0lwbXRYX0VQY2R0SXhwMWFicUJScDN2WEZZM3VwU1kzcE5YZlhwU2VqVkdLOGMwdWpwQkU5WllIa3lqbXdwUTk2ZFNKTW1mZEppRWlUTG5wR0ljS1RwOXR6eTRDaHFlNldTeS02bDlfOGVOaE9DdVVuOEl5bms4LUNUampHSDctU0dVS1RjdHYwcjJYMG5tMU4wNlUxQmZJMGZpeUd0WXY4MTJCQVRDVDhyakw0ZzdFVDNtYmhTWk9sd09jdWJOSkxaUzNISzRQU0JNZkdFeFZtNE9jN0FlZ1JEZzR2SUlLMWV4ankxRVdNTmhQMEI5SWtHQ2tyRUhTRXZWVlh0dF9UZEI0?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxOV3RNX041RXcwb2VoQ0VEQ1hFVThRWGl6bjlCaUdFZ2ZtSm1TUnh4cEp6VmNYd25HZkNLMXVVVEk4M3JmdmE1WUtqU0FCWl9GSm44bGszT0pDU2w3NjkxVi1yOTF3dnJOR2pGSkczUGMwMzhjc1BPWF9tMC0xcGxvMWdJMmJ1Vy1nbGpsQ0tjMzJJVG1SNHBKYnotYVBOSURUZE9tX1FDMnV0a0VIRUJYcEgzRHVFNWFDWjdCQWxWeW45NUc3TGF3cjFTSlBtT0FZbW82ZDlLS0wwQUxrLXgzdkdqcUFMM2NRcjFGTTlrcVZxTzIyMzhySUpJeC11MWJwZkMtby00a3BQZzNBTXVJWlZRU2NRQklQRC13Q3RFOUV2Q0hfQmJBSUt0Y2lGWmZ1eEduUXJWcVJERkVnWnlzZ2pnd3MyRTBnZHNGbnlENExrU2F4TVA4ODBMNm5PZGxHQjRvbkNLcmlLUzlZb1NQNTlqQTBwMFRzbkVieFZkaGNucFJQZFQ0dkZ3LVdfVzMzMGhwQ2FlWnJqSmZHUk44SjM0R1k2OXk3dTBMSVBtMGNjVm1ZSERfcGFIWkx4dllPVGN3bnZBOFphaFYycTJLSXZ6QW82Z29RSHM0clNn?oc=5",
       "source": "MSN",
       "applicable_dims": [
         "W1",
@@ -1496,7 +1519,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "2454928a2c60",
@@ -1521,7 +1544,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "8e03ca356e58",
@@ -1546,7 +1569,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "4db13516f69b",
@@ -1571,7 +1594,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "7a287358cf06",
@@ -1596,7 +1619,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "39095f0f4e45",
@@ -1621,7 +1644,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "aec6d0dbcc2e",
@@ -1645,7 +1668,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "6bb2c755abe3",
@@ -1669,16 +1692,40 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
-      "key": "571e489e2238",
+      "key": "7a1d48612661",
       "slug": "huawei",
       "brand": "Huawei / 华为",
       "date": "2026-07-16",
-      "quote": "华为Mate 80、Pura X等手机适配支持HUAWEI Tag精准查找功能",
-      "title": "华为Mate 80、Pura X等手机适配支持HUAWEI Tag精准查找功能",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdC00bUk5LVhMZWx3Mi1mTXZEbHdHTkZkUTNMNzVWRXlBTThSdm9HVHhkRGFjVUFnTnlhdGg2OUNOMnJQZURzSEpMZWw1RGpQcU05ZlFOOHdLbUVldHdBZTExNHZfTkRTbWliZUNHelBvYXZUdjBtYWNlZjk3OUlfWGVSemQ4WXhRYUlj?oc=5",
+      "quote": "旅行用续航强的华为手机",
+      "title": "旅行用续航强的华为手机",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE11YXZUUG5xYXFBNEkybUtpaW1wQ3Vva3BDbXBYMHJiQTNBQlp4dUZ1Vjd2TmhaMWk5RGdGU2w3MXpYc1VHZ0g1LU9memdycmhVUGlvVzBmTWxFdWlaYk8tWHl4STJBNEZQUnVLUlVZTWN6Zw?oc=5",
+      "source": "手机新浪网",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T14:25:33Z"
+    },
+    {
+      "key": "cf895fe9c298",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-07-09",
+      "quote": "华为Pura80系列官方翻新版上架 价格优势明显",
+      "title": "华为Pura80系列官方翻新版上架 价格优势明显",
+      "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQYXFzX0FkbXVFSHB0djV4S1dPcXV6VE1yZmdwMEZJaVNBNFV0QjZUb2dlNTBqNlQ2V3RRa2VTdE9mNW4tZGJjUU5lZzZJdmNWRkU1dWRmaFhReENqQV9wSW54M2wwRnJaYVZ4RC1CbnJROWUtdXhyclJZS0NqM0szOHJlU19aZlpSU04wNk1jMGdjMFNOLTA3NVRGbmp6Z1FxT09OQXdxdHJyY1dsczlsVUZ0WVJZOTFTcnJmaHhELTJTU0pNZk5XUHd0Vm9Td3NqZ1RpWFJSRjJYek5COXdfa3p0NTdMV2J2b05aTWZXbjlaSVUxMGd3eS15LVd5Y2ZwUnVlQUNwWXhDcEM1cGtVbFZ6c2xYeXVYelpRNTNQVmRfbWE4WWgteEllQTVJcGdieC05a0ZSQlBaRWxWRXFSVXlrZXRVVkVtQjFDcjI5eVZWVm1sT1NlLU5hWlY0TmU1T1AzaXRqTmw?oc=5",
       "source": "新浪财经",
       "applicable_dims": [
         "W1",
@@ -1693,55 +1740,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
-    },
-    {
-      "key": "d8adadae75db",
-      "slug": "huawei",
-      "brand": "Huawei / 华为",
-      "date": "2026-07-09",
-      "quote": "华为Pura80系列官方翻新版上架 价格优势明显",
-      "title": "华为Pura80系列官方翻新版上架 价格优势明显",
-      "url": "https://news.google.com/rss/articles/CBMi5ARBVV95cUxNODluZkpwdlhVRTBJLXI5M1A2SjNadThJbW9hWjl6MTFXN0g3b1lya2lFdl8wYTdOemZkNmlPelg0WjNoWlRseUNnNXZ1bnBnazhDZmVIbEEzMDU1SExsN3NNVnlhZ3cyZXh3SlEwUkpvQTBEUERIaUhtMmp4SHoxeDJFeDQ0SUxHWXA3SG9mNzNqcUsySEN4U3lFYWlQV2JmNmhPY0tJWVVWWW1mNUdPQlU4bU51cktxakNvNnJvNVVjaHlCNTIzNVJuUm1SbVB1a3VoQ2hhd2JZSW8wc0dFZHAxaHZLbWZ1XzBXS0dBb05xTldWbmlCUTUzOHhyS01jdURpODV6T0xXNGhsWTl3WktqLUpPVnJZTXJXcEtvVnJ4U0h1bUtxdGxELW5nbDRBOElkY3BTd3VDc3RhblhTZlFtRjhyc0JnVkE1Q0VjX1FkT3A0b3Y2QmJLeDRrSk1sazZyZ1ZtVDhCUlBuNldXczdEZGlLb0x0U0hlVHNwOWViTjQtWDZadTJUdWNpeTEwN0xuQV9iMjMydDZXWnRHbld3Y0pvVDVBM1JBdG1FUmJPcEVYS0U0N0RCN3BlWTJqR2JiRUhMNVlibUJoRmVrZVhRNFU1elJxYnJoYlRLenlwLW1tYnN3ajl6TGgxVHpibWVWWXZpQU5OUEZ3Q19RQnlqdVVkSkt3WC14d1ZEeHBncTk2M1N1Yk8yQ1FDVU5Pb2NVZ1JpU09zdjQ5MDRWN0VzZ2I5TWNNa3djRWN3ZE1TNTZobDVEWGxFZURhazExYlRtU2stLWo2djlubXNEQWZxMUw?oc=5",
-      "source": "新浪网",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T13:59:07Z"
-    },
-    {
-      "key": "890e5b23394a",
-      "slug": "tesla",
-      "brand": "Tesla / 特斯拉",
-      "date": "2026-07-08",
-      "quote": "SpaceX和Tesla早期投资人：我正在押注能源、生命科学、替代蛋白质、新材料",
-      "title": "SpaceX和Tesla早期投资人：我正在押注能源、生命科学、替代蛋白质、新材料",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TakZTdmZ1V1djS3VjanFteHp0eXRYQzNESnZXREdPa3dJdDViWndDVHVxZHpwdUQ2YV9VOXk2Tl95cHJfXy1rTF9faFB3djZFTG1N?oc=5",
-      "source": "华尔街见闻",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "f8650149c467",
@@ -1765,7 +1764,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "68443a04c51f",
@@ -1789,7 +1788,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "6c25fcd1e084",
@@ -1813,7 +1812,31 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
+    },
+    {
+      "key": "10acf9ce814d",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-07-18",
+      "quote": "特斯拉无人驾驶出租车，到底是什么水准？",
+      "title": "特斯拉无人驾驶出租车，到底是什么水准？",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BR1VrYTBJai0tdVE4ajFWWU90LXJXRGx6cVhvWWU5UG5GN2RwQmhVVnpjTlN2V0p2dWpHMVQxWm1WN0dqMFNWMkxqZDItSUl5UFdQUzEtVXI5YUE?oc=5",
+      "source": "汽车之家",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "fb2dae31e7dd",
@@ -1838,7 +1861,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "9f55843ee558",
@@ -1863,7 +1886,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "bdaa7d689f07",
@@ -1888,7 +1911,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     },
     {
       "key": "30b50f4ba210",
@@ -1913,7 +1936,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T13:59:07Z"
+      "fetched_at": "2026-07-18T14:25:33Z"
     }
   ]
 }
