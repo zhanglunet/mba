@@ -43,19 +43,26 @@ BATCH = 18
 
 # 多 provider:按环境变量存在与否择一(GLM 优先,再 OpenAI 兼容,再 Anthropic)。
 # GLM(智谱)/ OpenAI 走 chat/completions;Anthropic 走 messages。可用 MBA_CLASSIFY_MODEL 覆盖模型。
+def _env(name, default=""):
+    """把未设 **和** 空串(CI 里未定义的 vars.* 会传空串)都当"未设",返回 default。"""
+    return (os.environ.get(name) or default)
+
+
 def _provider():
-    m = os.environ.get("MBA_CLASSIFY_MODEL")
-    if os.environ.get("GLM_API_KEY"):
-        return ("openai", os.environ["GLM_API_KEY"],
-                os.environ.get("GLM_BASE_URL", "https://open.bigmodel.cn/api/paas/v4").rstrip("/"),
-                m or "glm-4-flash")
-    if os.environ.get("OPENAI_API_KEY"):
-        return ("openai", os.environ["OPENAI_API_KEY"],
-                os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/"),
+    m = _env("MBA_CLASSIFY_MODEL")
+    if _env("GLM_API_KEY"):
+        # 默认走智谱 **coding 计划**端点(OpenAI 兼容,服务 glm-4.6 等)。
+        # 通用免费档用 GLM_BASE_URL=https://open.bigmodel.cn/api/paas/v4 + MBA_CLASSIFY_MODEL=glm-4-flash 覆盖。
+        return ("openai", _env("GLM_API_KEY"),
+                _env("GLM_BASE_URL", "https://open.bigmodel.cn/api/coding/paas/v4").rstrip("/"),
+                m or "glm-4.6")
+    if _env("OPENAI_API_KEY"):
+        return ("openai", _env("OPENAI_API_KEY"),
+                _env("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/"),
                 m or "gpt-4o-mini")
-    if os.environ.get("ANTHROPIC_API_KEY"):
-        return ("anthropic", os.environ["ANTHROPIC_API_KEY"],
-                os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstrip("/"),
+    if _env("ANTHROPIC_API_KEY"):
+        return ("anthropic", _env("ANTHROPIC_API_KEY"),
+                _env("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstrip("/"),
                 m or "claude-haiku-4-5-20251001")
     return (None, None, None, None)
 

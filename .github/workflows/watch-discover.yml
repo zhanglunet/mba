@@ -68,6 +68,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
         run: |
           DATE="${{ steps.disc.outputs.date }}"
           # 无 key 时脚本优雅跳过、不写 adopt(退回人工 triage 流)。反捏造:模型只分类,不改引文。
