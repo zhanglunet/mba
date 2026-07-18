@@ -271,6 +271,71 @@ def render_kpis(reports):
     return '      <div class="kpi-row">' + "".join(tiles) + "</div>"
 
 
+# 舆情方向 → 颜色/中文(与舆情驾驶舱同口径,docs/16)
+_DIR = {"pos": ("#1a7a4a", "利好"), "neg": ("#b3241f", "利空"),
+        "neutral": ("#8a857c", "中性"), "mixed": ("#c98a2b", "分歧")}
+
+
+def load_recent_alerts(by_slug, limit=8):
+    """跨品牌汇总**未消费**(无 consumed_by)的 P0/P1 事件 → 首页「近期异动」条带。
+    用「未消费」而非滚动时间窗:确定性(只随 events.yaml 变),--check 漂移 gate 才可用。
+    排序:日期倒序 → 严重度(P0 先)→ slug(稳定)。返回 (items[:limit], 总数)。"""
+    sev_rank = {"P0": 0, "P1": 1}
+    out = []
+    for path in sorted(glob.glob(os.path.join(WATCH_DIR, "*", "events.yaml"))):
+        slug = os.path.basename(os.path.dirname(path))
+        try:
+            events = yaml.safe_load(open(path, encoding="utf-8")) or []
+        except Exception:
+            continue
+        m = by_slug.get(slug) or {}
+        brand = m.get("brand_cn") or m.get("card_brand") or slug
+        for e in events:
+            if not isinstance(e, dict) or e.get("consumed_by"):
+                continue
+            if e.get("severity") not in ("P0", "P1"):
+                continue
+            out.append({"slug": slug, "brand": brand, "sev": e.get("severity"),
+                        "date": str(e.get("date") or ""), "title": e.get("title") or "",
+                        "dir": e.get("direction") or "neutral"})
+    out.sort(key=lambda a: a["slug"])
+    out.sort(key=lambda a: sev_rank.get(a["sev"], 9))
+    out.sort(key=lambda a: a["date"], reverse=True)
+    return out[:limit], len(out)
+
+
+def render_alerts(by_slug):
+    """首页顶部「重大舆情 · 近期异动」条带。无未消费 P0/P1 时返回空串(不占位)。"""
+    items, total = load_recent_alerts(by_slug)
+    if not items:
+        return ""
+    lis = []
+    for a in items:
+        color, dcn = _DIR.get(a["dir"], _DIR["neutral"])
+        sev_cls = "wchip-p0" if a["sev"] == "P0" else "wchip-p1"
+        lis.append(
+            '        <li style="display:flex;align-items:baseline;gap:8px;font-size:13px;line-height:1.5;">'
+            f'<span class="wchip {sev_cls}" style="flex-shrink:0">{a["sev"]}</span>'
+            f'<span style="color:var(--muted);font-family:ui-sans-serif,sans-serif;font-size:12px;white-space:nowrap;flex-shrink:0">{esc(a["date"])}</span>'
+            f'<a href="/watch/{esc(a["slug"])}/cockpit.html" style="color:var(--ink);text-decoration:none;">'
+            f'<b>{esc(a["brand"])}</b>　{esc(a["title"])} '
+            f'<span style="color:{color};font-weight:700;white-space:nowrap">{dcn}</span></a></li>'
+        )
+    more = (f'<a href="/watch/cockpit.html" style="color:var(--accent);text-decoration:none;font-weight:600;font-size:12px;">查看全部 {total} 条 →</a>'
+            if total > len(items) else
+            '<a href="/watch/cockpit.html" style="color:var(--accent);text-decoration:none;font-weight:600;font-size:12px;">全站驾驶舱 →</a>')
+    return (
+        '      <div class="alerts" style="margin:0 0 24px;padding:16px 18px;background:#fff;border:1.5px solid #e0ddd8;border-left:3px solid var(--accent);border-radius:8px;">\n'
+        '        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px;">'
+        '<span style="font-family:ui-sans-serif,\'Inter\',sans-serif;font-size:12px;font-weight:800;letter-spacing:0.04em;color:var(--accent);">🔔 重大舆情 · 近期异动 '
+        '<span style="color:var(--muted);font-weight:600;">未消化的 P0/P1 信号,待评委重审消化</span></span>'
+        f'{more}</div>\n'
+        '        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;">\n'
+        + "\n".join(lis) +
+        '\n        </ul>\n      </div>'
+    )
+
+
 def build_block():
     meta = yaml.safe_load(open(META, encoding="utf-8")) or {}
     by_slug = {r["slug"]: r for r in (meta.get("reports") or [])}
@@ -313,7 +378,9 @@ def build_block():
         '      <div class="ind-filter"><span class="sort-label">产业</span>'
         f'<button class="ind-btn active" data-ind="all">全部 {len(reports)}</button>{ind_btns}</div>'
     )
-    return (render_kpis(reports) + "\n" + sort_bar + "\n" + ind_filter
+    alerts = render_alerts(by_slug)
+    alerts_block = (alerts + "\n") if alerts else ""
+    return (alerts_block + render_kpis(reports) + "\n" + sort_bar + "\n" + ind_filter
             + '\n      <div class="brand-grid" id="brandGrid">\n' + cards + "\n      </div>"), len(reports)
 
 
