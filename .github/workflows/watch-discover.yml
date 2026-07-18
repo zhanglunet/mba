@@ -83,7 +83,7 @@ jobs:
             echo "auto=0" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Auto PR（LLM 建议入库 → watch-adopt 折入,人工审 diff）
+      - name: Auto PR（LLM 建议入库 → 直接折入 events.yaml,人工审 diff）
         if: steps.disc.outputs.new != '0' && steps.cls.outputs.auto == '1'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -91,16 +91,23 @@ jobs:
           DATE="${{ steps.disc.outputs.date }}"
           N="${{ steps.disc.outputs.new }}"
           BR="watch-auto/${DATE}"
+          # ⚠️ 机器人(GITHUB_TOKEN)开的 PR **不会**自动触发 watch-adopt——GitHub 对
+          #    GITHUB_TOKEN 开的 PR 上的 workflow 默认要人工「Approve and run」,会卡成
+          #    action_required。故此处**在开 PR 前就本地折入** events.yaml(fold_adopt 会删掉
+          #    _adopt 暂存并重算 id),PR diff 直接是最终 events.yaml,不依赖会被卡的 watch-adopt。
+          #    (人工 triage「提 PR」是**你本人**开的 PR,watch-adopt 正常触发,不走这条路。)
+          python3 scripts/watch-tools/fold_adopt.py
+          python3 scripts/watch-tools/validate_watch.py || echo "::warning::validate_watch 有告警,见 PR diff"
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BR"
-          git add watch/_candidates watch/_adopt
-          git commit -m "chore(watch): LLM 预分类建议入库 ${DATE}（候选 ${N} 条）"
+          git add -A watch/
+          git commit -m "chore(watch): LLM 预分类建议入库 ${DATE}（候选 ${N} 条,已折入 events.yaml）"
           git push -f origin "$BR"
           TITLE="feat(watch): ${DATE} 舆情建议入库（LLM 预分类，人工审 diff 合并）"
           # 用 printf 组装 PR 正文(不用 heredoc/反引号,避开 YAML 缩进与命令替换坑)。
           {
-            printf '自动发现 + **LLM 预分类**的建议入库。watch-adopt 已把高置信项折入 events.yaml —— **你只需审最终 events.yaml diff 再合并**(合并=人工闸门)。低置信/丢弃项见下方报告,可在本 PR 的 Cloudflare 预览 /watch/triage.html 手动补。\n\n'
+            printf '自动发现 + **LLM 预分类** + **已折入 events.yaml** 的建议入库 —— **你只需审最终 events.yaml diff 再合并**(合并=人工闸门)。丢弃/低置信项见下方报告。\n\n'
             printf '反捏造:标题/日期/URL 逐字取自源 feed;dim/severity/direction/lens 为 model-judged 分类,不假装客观、不改任何审计分数。\n\n'
             cat /tmp/classify-report.md 2>/dev/null || true
           } > /tmp/pr-body.md
