@@ -1,11 +1,26 @@
 panel: ai-app-cn
 locked_at: 2026-06-25
 mba_version: 0.2.38
-published_at: 2026-06-26
-version: v1
-score_total: 137
+published_at: 2026-07-18
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 150
 score_max: 200
-score_normalized: 6.85
+score_normalized: 7.50
+reference:
+  version: v1
+  score_total: 137
+  score_normalized: 6.85
+history:
+  - version: v1
+    published_at: 2026-06-26
+    score_total: 137
+    score_normalized: 6.85
+  - version: v2
+    published_at: 2026-07-18
+    score_total: 150
+    score_normalized: 7.50
 overrides:
   add: []
   drop: [yangzhilin]

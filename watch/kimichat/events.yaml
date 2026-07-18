@@ -18,6 +18,7 @@
     日期以 URL 内嵌(t20260129)自证。开源多模态旗舰 —— W8 模型迭代节奏的锚点。
 
 - id: 2026-04-21-kimichat-002
+  consumed_by: v2
   date: 2026-04-21
   dim: W8
   severity: P1
@@ -50,6 +51,7 @@
     发布次日即发生,与 002 构成一组「发布-过载」联动信号。日期以 URL 内嵌(2026-04-22)自证。
 
 - id: 2026-06-08-kimichat-004
+  consumed_by: v2
   date: 2026-06-08
   dim: W5
   severity: P1
@@ -66,6 +68,7 @@
     融资未官宣完成,评委消费时注意区分。URL 无日期,日期以 curl 证券时报
     原文页面时间(2026-06-08 15:16)核对。
 - id: 2025-07-19-kimichat-005
+  consumed_by: v2
   date: '2025-07-19'
   dim: W2
   severity: P1
@@ -82,6 +85,7 @@
   note: 开源社区声量爆发(HuggingFace 周下载 7.6万→14.5万);Nature/新华/人民网/SCMP 多源报道;日期以 URL 内嵌(20250719)自证。
 
 - id: 2026-06-09-kimichat-006
+  consumed_by: v2
   date: 2026-06-09
   dim: W5
   severity: P2
@@ -98,6 +102,7 @@
 
 # ── K3 发布(2026-07,重大舆情信号)· 采源 Google News RSS,url/quote/date 取自源 feed ──
 - id: 2026-07-16-kimichat-007
+  consumed_by: v2
   date: 2026-07-16
   dim: W1
   severity: P1
@@ -113,6 +118,7 @@
   note: "来源:Axios。K3 发布重大信号;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-17-kimichat-008
+  consumed_by: v2
   date: 2026-07-17
   dim: W8
   severity: P1
@@ -128,6 +134,7 @@
   note: "来源:Reuters。K3 发布重大信号;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-17-kimichat-009
+  consumed_by: v2
   date: 2026-07-17
   dim: W5
   severity: P1
@@ -143,6 +150,7 @@
   note: "来源:Yahoo Finance。K3 发布重大信号;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-17-kimichat-010
+  consumed_by: v2
   date: 2026-07-17
   dim: W6
   severity: P1
