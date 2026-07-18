@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T14:56:45Z",
+  "generated_at": "2026-07-18T22:43:57Z",
   "window_days": 14,
   "candidates": [
     {
@@ -25,7 +25,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "c73ade7370b6",
@@ -50,16 +50,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
-      "key": "713b377d9d28",
+      "key": "6a749558b618",
       "slug": "lenovo",
       "brand": "联想集团 Lenovo Group",
       "date": "2026-07-15",
-      "quote": "Lenovo Group: Qlobal baxış, PC payı 24,4%-ə yüksəlib",
-      "title": "Lenovo Group: Qlobal baxış, PC payı 24,4%-ə yüksəlib",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB6Y1FOM3ZTWjNLbFRjTzh3YmlfYnhmY0YtTHdYakZETklyNEg1NHlnTE11V3ZZSVRHLXJFMmhHeXdzZnlRQ2QydGEwVmZvbm5ucVhnN0p3OWRpR0FQN3NmSGtReVE4ZVN3?oc=5",
+      "quote": "Lenovo Group: Looking Globally, PC Share Rises to 24.4%",
+      "title": "Lenovo Group: Looking Globally, PC Share Rises to 24.4%",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1lRzExOVAzV3o4OEVYR0puZThEbWxMRHpxdWdfVjdzXzhRRmtuX1BaRzlxTVBhdnRTeURwSW52RzlqVUhGYmNCSVdkNGNiVTVwVTltTkZDcmY2MHJMYV9FMEs0ZUY?oc=5",
       "source": "Binance",
       "applicable_dims": [
         "W1",
@@ -75,7 +75,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "62c0ad0280ee",
@@ -100,30 +100,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
-    },
-    {
-      "key": "0c90fabe81e7",
-      "slug": "chengshi-auto",
-      "brand": "橙仕汽车 Chengshi Auto",
-      "date": "2026-07-13",
-      "quote": "豪驰智能橙仕纯电动货车申报：额定载重755kg 能否抢占城配市场？",
-      "title": "豪驰智能橙仕纯电动货车申报：额定载重755kg 能否抢占城配市场？",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMlM1SWkyS0plUVBzRnJ3RFVMN2xhZHR2ZjFzS2ZUQWxsaE5Ld3QwUk1vX1kxcG1CNktkWklBMG5IcFIwdTVla3hHYWhnNVFWSEc3NmgtUDVIMm1ZWkNnYzJDVnZ2Yk5nSGxHN0NVeTdveVViekVtdmZPaXR2c0hWTXAwNkUwQXdoeXBwb0tVV2YwNExDOXc?oc=5",
-      "source": "新浪财经",
-      "applicable_dims": [
-        "W1",
-        "W3",
-        "W4",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "cb076e697ed0",
@@ -146,7 +123,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "f250d559729a",
@@ -169,7 +146,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "6278860b8bb9",
@@ -194,7 +171,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
+    },
+    {
+      "key": "9bbdae8f0148",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-07-06",
+      "quote": "Anthropic：Claude 已承担 95% 的内部数据分析查询工作",
+      "title": "Anthropic：Claude 已承担 95% 的内部数据分析查询工作",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrVmNhVnE2T0w2VzJjVUJsWmxUam1JdFdQdWJMLWRzYWxxZEVWUlRMSWNwbkQ3Vks3RW1kb3c0VHlaUzlkOWtTUjhqb1pBQW1vVDE0YUZqYmZwc1RIT0E?oc=5",
+      "source": "Infoq.cn",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "c07b5c1d216d",
@@ -219,7 +221,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "493df77098b3",
@@ -244,32 +246,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
-    },
-    {
-      "key": "8a7d01ef7964",
-      "slug": "anthropic",
-      "brand": "Anthropic Anthropic (Claude)",
-      "date": "2026-07-18",
-      "quote": "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利",
-      "title": "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FZ3J5WWVWb3ZmU1gtTnNjVVRWdWM1ZnpsUUhxZG9XU2k5UnBVekZsaURCaUViSTRuaHBZZWdURXI1MnczZ3QtLQ?oc=5",
-      "source": "财联社",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "b3925243bbab",
@@ -293,7 +270,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "273c5177972e",
@@ -317,7 +294,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "f997bca4bbcc",
@@ -341,17 +318,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
-      "key": "de250530f7d5",
+      "key": "6f474f35033d",
       "slug": "dji",
       "brand": "大疆创新 DJI",
-      "date": "2026-07-16",
-      "quote": "【现场】劳动者搭电动列车通勤、商场与森林相融……深圳所展现的未来城市图景: 中国·国际",
-      "title": "【现场】劳动者搭电动列车通勤、商场与森林相融……深圳所展现的未来城市图景: 中国·国际",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HQkxrVlBfYU1HVEQwMnQ5aFFzNDdjZ0tHZHQ2cURpeWVFdXoyWUpZdTlzcUg4RFRhRV9nSTNvdTZ0TU9BeG1XcElYNEUxWERVSVpGZ3Z2MTQ4WHpMaHQ4VVJKaVQ?oc=5",
-      "source": "韩民族日报",
+      "date": "2026-07-09",
+      "quote": "大疆无人机飞抵8861公尺 精确收集取大气污染物",
+      "title": "大疆无人机飞抵8861公尺 精确收集取大气污染物",
+      "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPLXRkTmhUVFRKdEtXQXE0QmtONjJ2dHhxS3Q3QzJlZmJTcU5RdXBJaXFhNllQNkhBTjNGZFptdU5QT3dyaEdkeFhQdWN0Y2Y2RjA1MFRueUw0VzRrR3BKZmozdXFyX1FZSXlrUHc1RVdQX0NZYjk5blRsUU9MLWZZTDNIX1JEaHBERHFYUWtRTEdJOGtvanRrWlNCN3JLLUFwMTVRNjBPOEdnNjRRT1huX1hfbnVUVTlCUEJ0MEw0eklXV3BIUkhtQU5saC01TzZZR19ZOWVWLWVnU1N6cy03R0lUQlJUUHpXaWwzU2U1LTExaGdCUXl0R1p3eHdFdkpoSlpLaEZpZ3pmU2VmbkQwamlRd1JaVmJscnVxeEZ1SzBsVkphLTBWWFYydE1tV2FxWHpGcC13bF94TEh3?oc=5",
+      "source": "中國報 China Press",
       "applicable_dims": [
         "W1",
         "W2",
@@ -365,30 +342,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
-    },
-    {
-      "key": "c79aa4bd1aee",
-      "slug": "qianxin",
-      "brand": "奇安信 QiAnXin Technology",
-      "date": "2026-07-17",
-      "quote": "NadMesh僵尸网络分析：AI服务时代的产品级威胁",
-      "title": "NadMesh僵尸网络分析：AI服务时代的产品级威胁",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX3hDZTAzeEhjTkM0TW5rZ2twb3dBZjczRU1TV3pHQUlfNm1hdGdsLWROYXlrSXFBVlphemF3SnZkVVExLUFnbzk5SURUc1lhMmVYLU1pS1duaG8tU0FibGs0Wmh1TkJQWGJFZmhxSzZuQkFKRWhjNzZCNV9ReUFwT3RVXzUwN0FvZTlMd0drMEpxUXk0cnZheUpsNFk2ZmtaMnc?oc=5",
-      "source": "奇安信X 实验室",
-      "applicable_dims": [
-        "W1",
-        "W3",
-        "W4",
-        "W5",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "a49f9a356e0b",
@@ -412,7 +366,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "a9069a7ff1b4",
@@ -436,31 +390,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
-    },
-    {
-      "key": "5454d60219f2",
-      "slug": "kimichat",
-      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
-      "date": "2026-07-17",
-      "quote": "月之暗面Kimi K3正式发布，2.8万亿参数登顶全球最大开源模型",
-      "title": "月之暗面Kimi K3正式发布，2.8万亿参数登顶全球最大开源模型",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAwdGdWRHNROXhRblIteURpTFQ2S3lhUHR6SGlOZUtwTms4bHczdHJaQm9kUlBOQmxjNlVlOVJael9Ua0pqUGQyaFJtWVZvOGQ5MmdmdTRDd1JyUkZr?oc=5",
-      "source": "电子工程专辑",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "4a257e19d032",
@@ -484,7 +414,31 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
+    },
+    {
+      "key": "5454d60219f2",
+      "slug": "kimichat",
+      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
+      "date": "2026-07-17",
+      "quote": "月之暗面Kimi K3正式发布，2.8万亿参数登顶全球最大开源模型",
+      "title": "月之暗面Kimi K3正式发布，2.8万亿参数登顶全球最大开源模型",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAwdGdWRHNROXhRblIteURpTFQ2S3lhUHR6SGlOZUtwTms4bHczdHJaQm9kUlBOQmxjNlVlOVJael9Ua0pqUGQyaFJtWVZvOGQ5MmdmdTRDd1JyUkZr?oc=5",
+      "source": "电子工程专辑",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "0aab60818c45",
@@ -507,7 +461,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "9936568e0c87",
@@ -530,7 +484,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "cb3c582d9dc2",
@@ -553,7 +507,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "7d68835a06c4",
@@ -577,7 +531,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "f64f657103c8",
@@ -601,7 +555,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "ed27e1633a50",
@@ -625,7 +579,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "a217d51beed8",
@@ -649,7 +603,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "a021b5aa1465",
@@ -671,7 +625,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "33f522e3bee6",
@@ -693,7 +647,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "11254d9b7005",
@@ -715,16 +669,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
-      "key": "cf4712ed3168",
+      "key": "1fe489468ff6",
       "slug": "hermes",
       "brand": "爱马仕 Hermès",
       "date": "2026-07-15",
       "quote": "5.1亿！Hermes开发商被曝新融资，估值冲上百亿",
       "title": "5.1亿！Hermes开发商被曝新融资，估值冲上百亿",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9yMUFiX3ZETW0wTUVzeGhJSUdwTDJDNkJ1OWNmYm4tXzVfeFhicy00XzdSMmNxTGdUMlhVMW9pTDhNMEdBNXA5Zg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9mRUJiTWkzc0hhN3AtRmw5cTB6aWdtX2tUZWRTZEFXUFRPMFY0OXFqeHJ1Zkk1Wmx1OHN0TUVIY2FzeUtON2c?oc=5",
       "source": "智东西",
       "applicable_dims": [
         "W1",
@@ -737,7 +691,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "85578217df06",
@@ -760,7 +714,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "a49d04c82c08",
@@ -785,7 +739,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "c25bf1e367f6",
@@ -810,7 +764,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "7cfbc0d0d32a",
@@ -835,7 +789,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "5500f773c71e",
@@ -860,7 +814,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "f0fed2c7b895",
@@ -885,7 +839,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "a6d584a018ee",
@@ -910,7 +864,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "61d306b73066",
@@ -935,7 +889,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "019a601650d5",
@@ -960,7 +914,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "fef1b0cf78fa",
@@ -985,7 +939,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "4251527432ac",
@@ -1010,7 +964,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "0b384f5ee825",
@@ -1035,16 +989,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
-      "key": "8a33042bf24c",
+      "key": "d7e6f369aaeb",
       "slug": "zhipu",
       "brand": "智谱 Zhipu AI",
       "date": "2026-07-13",
       "quote": "AI概念港股冰火两重天：智谱“摸高”获大摩连升目标价 MiniMax解禁连续重挫",
       "title": "AI概念港股冰火两重天：智谱“摸高”获大摩连升目标价 MiniMax解禁连续重挫",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNERUM0J1a2RORmk3Si1sSWxCNl80NjZxWUhkZy1zYWh0UXA1TmVGdlZvOENyZkc3UTFvb0thd2Q1X21sYjNNQ0JmaWgybmJQYnVGalZsdllkRERTZ2ZPMGFmRmx6R3Y5X3NPQkV5Qm50VTBOVnZlaGFPZExGc0hSRkw1MEVscjZERWpJenBWSnhnRzYwYWpGdUllOUlLa21wY1FLUlZB?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbk1obmxjeG83LWZENDVsSmFUODJvalhUQW9VckV5TmdPWVY4bW5FTUlnQTNoWlhfWHZBazR4dU8ycWc1UGpmclNfODRuMk5WZ3RWaFJhNzdmeUZJbl9fQXhrQ1BjODU4R0lNM3d5NFBHbjVteG9JVmxIXzBzMXNTSUxzSVRnWGpkZDdPZnp0Q1JfREw0T25ZLVh0X1VDNUVOSlE?oc=5",
       "source": "富途牛牛",
       "applicable_dims": [
         "W1",
@@ -1060,7 +1014,31 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
+    },
+    {
+      "key": "ca68e44a7904",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-07-16",
+      "quote": "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间接持股",
+      "title": "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间接持股",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KeWdhcF9LYndmRzU4WXBSTktpbTZQR1hCc1dmT243ZWEyLTJjMHN6SUprRVQ4TDhFMjNhd0pyTWZuUkdudzNXMGlPYTZpRWU5UHhUazU1ZHpsLVdxdVlfNw?oc=5",
+      "source": "东方财富网",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "fe518c63cd8d",
@@ -1084,31 +1062,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
-    },
-    {
-      "key": "ca68e44a7904",
-      "slug": "deepseek",
-      "brand": "DeepSeek / 深度求索",
-      "date": "2026-07-16",
-      "quote": "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间接持股",
-      "title": "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间接持股",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KeWdhcF9LYndmRzU4WXBSTktpbTZQR1hCc1dmT243ZWEyLTJjMHN6SUprRVQ4TDhFMjNhd0pyTWZuUkdudzNXMGlPYTZpRWU5UHhUazU1ZHpsLVdxdVlfNw?oc=5",
-      "source": "东方财富",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "30f7302c2bc7",
@@ -1132,7 +1086,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "f31205ff6694",
@@ -1156,7 +1110,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "946bd5d3aa75",
@@ -1180,7 +1134,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "df23ba4beba6",
@@ -1204,7 +1158,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "4417acef45d3",
@@ -1228,17 +1182,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
-      "key": "b43396098715",
+      "key": "1e79b4bd5adc",
       "slug": "nvidia",
       "brand": "NVIDIA / 英伟达",
       "date": "2026-07-09",
-      "quote": "中国或批准顶尖AI公司购买英伟达芯片，分析人士：这一政策转向暴露了中国国产芯片的关键瓶颈",
-      "title": "中国或批准顶尖AI公司购买英伟达芯片，分析人士：这一政策转向暴露了中国国产芯片的关键瓶颈",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdkhNbm9ENEplN282NzBwbFNtei1WNzBuRmd3Rm5pcUx3TlhYVkxxc0JiRTJRWUkyRFdVdTNuVE0tMkFrQk91UnRDS0xXRmlOQ1BMQUFlZmxKTmJyOFVHVWU4NjJiMHY4ell0enJhcjVGbWppOEZ6LTBzYzlVMUhiU1FnOFhOZ3ZYNHNCT2VvYkZzdV9Hc2tVN1RmLVlxMFJ2dnFjZlFjalFreUFSNTgtWXV30gG0AUFVX3lxTFAwemlsbFlXamlkMm5wZmhBdUNoMGYwUkNUaFNlNGlEN2p0ekF0YTlKR0VwUFBzU3dhbUNCaEJ6UkxkYjFsMlI3SnVwNFlvY1Z5NGJ3cFhVZnVuaW83THh0bkloTmhmWHdvc01keDRoMWp3TnYtdHR3cUxuOENwYW5CS2RVa2RkdTdQdDJYVkN1aWgzamdXU1ZWM09tcjJ1ZnQxalFjSW5PV3gyYl9vUG80R3BndQ?oc=5",
-      "source": "美国之音",
+      "quote": "英伟达：AI时代的引领者？",
+      "title": "英伟达：AI时代的引领者？",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPOHRkQkd5bWdrc0RLTHRnZldNdDZoSjY4WHFTUURJd3UydVhnbVFOcm82eUUtWFgxMllnQjBWUDRlOXdZUTJVS1FVZ2t0eHpvMVJib2lHUzNITjJyQ05jb3RVMDQ2bFFJS3Zlc2JDYm5yVjBHZFI4dmRiNWpRLXNaZkRyU3drS2o1aGRyUGFaWldsMlQ0RVNB?oc=5",
+      "source": "Moomoo",
       "applicable_dims": [
         "W1",
         "W2",
@@ -1252,7 +1206,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "d9b0c1daf9c0",
@@ -1276,7 +1230,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "8d7c9ff5162c",
@@ -1286,7 +1240,7 @@
       "quote": "7款手机端侧大模型获备案！苹果Apple智能在列 阿里、百度提供支持",
       "title": "7款手机端侧大模型获备案！苹果Apple智能在列 阿里、百度提供支持",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBZM09lQUxnUVRKMUtYdGJmeWhfd2dDMmtwVElSUjVxWTdhdGhMQnNzR3lUcjcyMTg0RFBlMi1EWlJ6a0hxSlJOMTBIQjBodTNMREg3TUszS1FZR3RGS2l2cA?oc=5",
-      "source": "东方财富",
+      "source": "东方财富网",
       "applicable_dims": [
         "W1",
         "W2",
@@ -1300,7 +1254,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "eb5d220559ea",
@@ -1324,7 +1278,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "c4cacd402270",
@@ -1348,7 +1302,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "bdb661d08d2e",
@@ -1372,7 +1326,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "966c9eaf2bea",
@@ -1396,7 +1350,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "49f2e7b4ed7a",
@@ -1420,7 +1374,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "04a772820217",
@@ -1444,7 +1398,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "8f772483a6fb",
@@ -1469,7 +1423,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "86fd932e5f96",
@@ -1479,7 +1433,7 @@
       "quote": "涨幅 8~33%，微软本月已上调 Microsoft 365 企业版订阅费用",
       "title": "涨幅 8~33%，微软本月已上调 Microsoft 365 企业版订阅费用",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5CQ01yakhab1JMMUZPX2d6TmdDM0MzemtpQnNwbTJOUkFNTHgxSkEtLTREYWpfX3BaUWh1MTNaYWZvS1B1Q21oRTlUSEdMc0Q2QXpZRmpR?oc=5",
-      "source": "腾讯新闻",
+      "source": "QQ News",
       "applicable_dims": [
         "W1",
         "W2",
@@ -1494,16 +1448,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
-      "key": "6231583d9f27",
+      "key": "8c837abe5356",
       "slug": "microsoft",
       "brand": "Microsoft / 微软",
-      "date": "2026-07-17",
+      "date": "2026-07-16",
       "quote": "微软 12 月退役 Win10/Win11 应用商店安装的 Microsoft 365 应用",
       "title": "微软 12 月退役 Win10/Win11 应用商店安装的 Microsoft 365 应用",
-      "url": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxOV3RNX041RXcwb2VoQ0VEQ1hFVThRWGl6bjlCaUdFZ2ZtSm1TUnh4cEp6VmNYd25HZkNLMXVVVEk4M3JmdmE1WUtqU0FCWl9GSm44bGszT0pDU2w3NjkxVi1yOTF3dnJOR2pGSkczUGMwMzhjc1BPWF9tMC0xcGxvMWdJMmJ1Vy1nbGpsQ0tjMzJJVG1SNHBKYnotYVBOSURUZE9tX1FDMnV0a0VIRUJYcEgzRHVFNWFDWjdCQWxWeW45NUc3TGF3cjFTSlBtT0FZbW82ZDlLS0wwQUxrLXgzdkdqcUFMM2NRcjFGTTlrcVZxTzIyMzhySUpJeC11MWJwZkMtby00a3BQZzNBTXVJWlZRU2NRQklQRC13Q3RFOUV2Q0hfQmJBSUt0Y2lGWmZ1eEduUXJWcVJERkVnWnlzZ2pnd3MyRTBnZHNGbnlENExrU2F4TVA4ODBMNm5PZGxHQjRvbkNLcmlLUzlZb1NQNTlqQTBwMFRzbkVieFZkaGNucFJQZFQ0dkZ3LVdfVzMzMGhwQ2FlWnJqSmZHUk44SjM0R1k2OXk3dTBMSVBtMGNjVm1ZSERfcGFIWkx4dllPVGN3bnZBOFphaFYycTJLSXZ6QW82Z29RSHM0clNn?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxNeEx6elZ6SDVsRVJjR3hnNXV2M3RfRGNfQ2w5czVvSFVLcnVuNU8zSEZXMFY1czlJVXNiSkhPaU5ZU2lZN0lwbXRYX0VQY2R0SXhwMWFicUJScDN2WEZZM3VwU1kzcE5YZlhwU2VqVkdLOGMwdWpwQkU5WllIa3lqbXdwUTk2ZFNKTW1mZEppRWlUTG5wR0ljS1RwOXR6eTRDaHFlNldTeS02bDlfOGVOaE9DdVVuOEl5bms4LUNUampHSDctU0dVS1RjdHYwcjJYMG5tMU4wNlUxQmZJMGZpeUd0WXY4MTJCQVRDVDhyakw0ZzdFVDNtYmhTWk9sd09jdWJOSkxaUzNISzRQU0JNZkdFeFZtNE9jN0FlZ1JEZzR2SUlLMWV4ankxRVdNTmhQMEI5SWtHQ2tyRUhTRXZWVlh0dF9UZEI0?oc=5",
       "source": "MSN",
       "applicable_dims": [
         "W1",
@@ -1519,7 +1473,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "2454928a2c60",
@@ -1544,7 +1498,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "8e03ca356e58",
@@ -1569,7 +1523,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "4db13516f69b",
@@ -1594,7 +1548,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "7a287358cf06",
@@ -1604,7 +1558,7 @@
       "quote": "亚马逊公司旗下ZooX部门召回其自主驾驶车辆",
       "title": "亚马逊公司旗下ZooX部门召回其自主驾驶车辆",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNaHVsNVpORndxVmNxLVlFNEFjQmZlekNZWF80MlVvbEgyT0duWlRKWTJxRUExdWROLTBMVngtbkRqV2g4WmN2VUdkcFdZVGpXQlNVZ0VOdm13NlFOcFJYSg?oc=5",
-      "source": "东方财富",
+      "source": "东方财富网",
       "applicable_dims": [
         "W1",
         "W2",
@@ -1619,7 +1573,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "39095f0f4e45",
@@ -1644,7 +1598,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "aec6d0dbcc2e",
@@ -1668,7 +1622,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "6bb2c755abe3",
@@ -1692,7 +1646,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "7a1d48612661",
@@ -1716,7 +1670,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "cf895fe9c298",
@@ -1740,55 +1694,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
-    },
-    {
-      "key": "f8650149c467",
-      "slug": "tesla",
-      "brand": "Tesla / 特斯拉",
-      "date": "2026-07-16",
-      "quote": "特斯拉Model 3二胎空间舒适养车成本：20万级最省心的奶爸车？+FAQ",
-      "title": "特斯拉Model 3二胎空间舒适养车成本：20万级最省心的奶爸车？+FAQ",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBFM1A4TnJSbHZqV3NTaUpqbWpKZ2hSOFFaWExjLXBYU2Z4d3lrSkRYcjNQUzhycDJRNy1lR1lGbFhqWjF2ZERrV0h6R3ZDS1JGZDhYdVExUUdZTTRScmtzbHcyeThZX1o5REdueU5aR1hTQQ?oc=5",
-      "source": "手机新浪网",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T14:56:45Z"
-    },
-    {
-      "key": "68443a04c51f",
-      "slug": "tesla",
-      "brand": "Tesla / 特斯拉",
-      "date": "2026-07-07",
-      "quote": "特斯拉估值可能因与SpaceX潜在合并而上升，RBC表示",
-      "title": "特斯拉估值可能因与SpaceX潜在合并而上升，RBC表示",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaXd1aVE2djl2U0M5aEJfci1WTGtUcWc1eGlZR0huTGMtQXFoMkEtRXVDUjRkZWw0MDJ0S1ljYTljaVFMdEdQMDNBVHNReFp4Z2c2SEdrLUIxZFNWN05NTnh6ZURBcTh2bjRxOUVZTXRLbEsxNGU0Rm5YQmlzTHQyY0t4a1ZrV3VsMkRtUUcxNTllVnVBYWFKZDhzTkpWWWFHZDZQTUNKRDNtckpCVjlsMjZFYw?oc=5",
-      "source": "Moomoo",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "6c25fcd1e084",
@@ -1812,7 +1718,31 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
+    },
+    {
+      "key": "f8650149c467",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-07-16",
+      "quote": "特斯拉Model 3二胎空间舒适养车成本：20万级最省心的奶爸车？+FAQ",
+      "title": "特斯拉Model 3二胎空间舒适养车成本：20万级最省心的奶爸车？+FAQ",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBFM1A4TnJSbHZqV3NTaUpqbWpKZ2hSOFFaWExjLXBYU2Z4d3lrSkRYcjNQUzhycDJRNy1lR1lGbFhqWjF2ZERrV0h6R3ZDS1JGZDhYdVExUUdZTTRScmtzbHcyeThZX1o5REdueU5aR1hTQQ?oc=5",
+      "source": "手机新浪网",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "10acf9ce814d",
@@ -1836,7 +1766,31 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
+    },
+    {
+      "key": "204da484494f",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-07-10",
+      "quote": "对 2026 年、2027 年、2028–2030 年及以后 Tesla (TSLA) 股票价格的预测",
+      "title": "对 2026 年、2027 年、2028–2030 年及以后 Tesla (TSLA) 股票价格的预测",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBWbHMxYUNtRUg5ZHloTzVSd3BaZUR0d1lTbkc1eDJYNVpBQ2IxV1lpelFhMEJ3eWwwX0JBNnBPSHQydkxBUFd1cmttYkNTenNfczlUbDdYdlNYZ2FwN2hnb0s2V0huSk1Ud3V1dWxneEdUWFhBdXhZLThvTFVyQQ?oc=5",
+      "source": "LiteFinance",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "fb2dae31e7dd",
@@ -1861,7 +1815,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "9f55843ee558",
@@ -1886,7 +1840,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "bdaa7d689f07",
@@ -1911,7 +1865,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     },
     {
       "key": "30b50f4ba210",
@@ -1936,7 +1890,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-07-18T14:56:45Z"
+      "fetched_at": "2026-07-18T22:43:57Z"
     }
   ]
 }
