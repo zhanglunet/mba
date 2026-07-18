@@ -155,6 +155,39 @@ def esc(s):
     return html.escape(str(s or ""), quote=False)
 
 
+_EXT_LINKS_CACHE = None
+
+
+def ext_links_html(slug):
+    """从 site/external-links.yaml 读该品牌外部互链,渲染「相关看板」卡(与 SpaceX 报告页同款)。无则空串。"""
+    global _EXT_LINKS_CACHE
+    if _EXT_LINKS_CACHE is None:
+        try:
+            with open(os.path.join(ROOT, "site", "external-links.yaml"), encoding="utf-8") as fh:
+                _EXT_LINKS_CACHE = yaml.safe_load(fh) or {}
+        except FileNotFoundError:
+            _EXT_LINKS_CACHE = {}
+    links = _EXT_LINKS_CACHE.get(slug) or []
+    if not links:
+        return ""
+    cards = []
+    for lk in links:
+        cards.append(
+            f'<a href="{esc(lk.get("url"))}" target="_blank" rel="noopener" '
+            "style=\"display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid #e2dac6;"
+            "border-radius:12px;text-decoration:none;color:#2a2e2c;font:14px/1.4 -apple-system,'PingFang SC',sans-serif\">"
+            f'<span style="font-size:20px">{esc(lk.get("emoji"))}</span>'
+            f'<span><b>{esc(lk.get("title"))}</b><br>'
+            f'<span style="font-size:12px;color:#5a5852">{esc(lk.get("subtitle"))}</span></span></a>'
+        )
+    return (
+        '<div style="margin:16px 0 4px;">'
+        "<div style=\"font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;"
+        'letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">相关看板 / Related</div>'
+        + " ".join(cards) + "</div>"
+    )
+
+
 def shell(title, desc, nav_html, body):
     return f"""<!doctype html>
 <html lang="zh-CN">
@@ -245,6 +278,7 @@ def render_founder(slug, data, brand_name):
     <span class="fchip fchip-status">{esc(status)}</span>
   </div>
   <div class="xlinks">{"".join(xlinks)}</div>
+  {ext_links_html(slug)}
 
   <h2>履历时间线</h2>
   <ul class="tl">

@@ -1,0 +1,11 @@
+# site/external-links.yaml — 品牌外部互链(单一真源)
+#
+# build_founder_pages.py 与 build_watch_cockpit.py 读取本文件,为对应 slug 的
+# 创始人页 / 舆情驾驶舱页渲染「相关看板 / Related」外链卡(与 SpaceX 报告页同款)。
+# 反捏造:只放已确认的互链伙伴;渲染时 target=_blank + rel=noopener。
+# 结构:<slug>: [ { emoji, title, subtitle, url } , ... ]
+spacex:
+  - emoji: "🚀"
+    title: "SpaceX 财务 · 行情 · 异动预警"
+    subtitle: "InvesResearch 投研看板 · oaf.world/spacex"
+    url: "https://oaf.world/spacex"
