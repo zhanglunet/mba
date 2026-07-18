@@ -3,15 +3,15 @@
   "brand_cn": "NVIDIA / 英伟达",
   "brand_en": "NVIDIA",
   "ticker": null,
-  "version": "v1",
-  "audit_date": "2026-07-16",
+  "version": "v2",
+  "audit_date": "2026-07-18",
   "panel": "vc-en",
   "score": {
-    "total": 222,
+    "total": 220,
     "max": 250,
-    "normalized": 8.88
+    "normalized": 8.8
   },
-  "tl_dr": "MBA 迄今综合得分最高的品牌(略高于 SpaceX 8.76):同时拥有最强品类创造史(发明 GPU、开创 CUDA 通用计算、定义\"AI 工厂\")与最深护城河(CUDA 近二十年生态锁定 + 全栈)。黄仁勋从 Denny's 创办、 两度濒死到执掌 3 万亿美元公司的 30 年创始人叙事几乎无法复制。vc-en 5 评委(黄仁勋是评委但不在 本 panel,无自冲突)共识:Leverage(9.6)领跑、Category(9.4)紧随;唯一实质分歧在 Signal(8.2)—— 蒂尔\"垄断能否穿越浪潮\"(周期性/对华管制/云厂商自研芯片)7 vs 安德森\"这是平台而非周期\"9。 222/250 · 8.88/10。",
+  "tl_dr": "EVOLUTION v2(watch 事件流):v1 唯一实质分歧在 Signal(8.2)——蒂尔独疑对华出口管制。本轮该风险 现实兑现:对华芯片销售停滞、华为等本土领先、H200 出货\"极少\",Signal 8.2→7.8(↓0.4);但同期日本 国家级 AI 基础设施 + Jetson Thor 机器人开出新战场,Leverage(9.6)/Category(9.4)净对冲 ↔。 222→220(8.88→8.80),克制下修:护城河没动,动的是被蒂尔点名的中国这一块——他守 7 不动,是唯一 提前定价者。这一格是\"版图轮动\"的价,不是\"结构衰退\"的价。",
   "html_url": "/reports/nvidia/",
   "pdf_url": null,
   "api_url": "/api/reports/nvidia.json",

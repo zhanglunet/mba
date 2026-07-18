@@ -5,6 +5,7 @@
 #   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
 
 - id: 2026-06-17-deepseek-001
+  consumed_by: v2
   date: 2026-06-17
   dim: W5
   severity: P1
@@ -20,6 +21,7 @@
   note: "来源:Forbes。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-07-deepseek-002
+  consumed_by: v2
   date: 2026-07-07
   dim: W4
   severity: P1
@@ -35,6 +37,7 @@
   note: "来源:Barron's。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-09-deepseek-003
+  consumed_by: v2
   date: 2026-07-09
   dim: W8
   severity: P1
@@ -50,6 +53,7 @@
   note: "来源:Reuters。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-15-deepseek-004
+  consumed_by: v2
   date: 2026-07-15
   dim: W5
   severity: P1

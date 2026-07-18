@@ -5,6 +5,7 @@
 #   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
 
 - id: 2026-06-22-microsoft-001
+  consumed_by: v2
   date: 2026-06-22
   dim: W9
   severity: P1
@@ -20,6 +21,7 @@
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-06-25-microsoft-002
+  consumed_by: v2
   date: 2026-06-25
   dim: W4
   severity: P1
@@ -35,6 +37,7 @@
   note: "来源:The New York Times。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-06-30-microsoft-003
+  consumed_by: v2
   date: 2026-06-30
   dim: W7
   severity: P1

@@ -1,11 +1,26 @@
 panel: ai-app-cn
 locked_at: 2026-07-16
 mba_version: 0.4.5
-published_at: 2026-07-16
-version: v1
-score_total: 200
+published_at: 2026-07-18
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 207
 score_max: 250
-score_normalized: 8.00
+score_normalized: 8.28
+reference:
+  version: v1
+  score_total: 200
+  score_normalized: 8.00
+history:
+  - version: v1
+    published_at: 2026-07-16
+    score_total: 200
+    score_normalized: 8.00
+  - version: v2
+    published_at: 2026-07-18
+    score_total: 207
+    score_normalized: 8.28
 overrides:
   add: []
   drop: []
