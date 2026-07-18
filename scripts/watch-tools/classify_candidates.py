@@ -53,11 +53,14 @@ def _env(name, default=""):
 def _provider():
     m = _env("MBA_CLASSIFY_MODEL")
     if _env("GLM_API_KEY"):
-        # 默认走智谱 **coding 计划**端点(OpenAI 兼容,服务 glm-4.6 等)。
-        # 通用免费档用 GLM_BASE_URL=https://open.bigmodel.cn/api/paas/v4 + MBA_CLASSIFY_MODEL=glm-4-flash 覆盖。
-        return ("openai", _env("GLM_API_KEY"),
-                _env("GLM_BASE_URL", "https://open.bigmodel.cn/api/coding/paas/v4").rstrip("/"),
-                m or "glm-4.6")
+        # 默认走智谱 **Anthropic 兼容端点**(/api/anthropic)—— 即 Claude Code 等交互式
+        # 编码工具使用 GLM coding 套餐的方式。coding 套餐的 OpenAI /chat/completions 对
+        # 程序化批量调用会 429 硬限流,Anthropic messages 端点则放行(模拟交互式工具)。
+        # 想改用通用开放平台:GLM_BASE_URL=https://open.bigmodel.cn/api/paas/v4
+        #   + MBA_CLASSIFY_MODEL=glm-4-flash(base 含 paas → 自动切 openai 格式)。
+        base = _env("GLM_BASE_URL", "https://open.bigmodel.cn/api/anthropic").rstrip("/")
+        kind = "anthropic" if "anthropic" in base else "openai"
+        return (kind, _env("GLM_API_KEY"), base, m or "glm-4.6")
     if _env("OPENAI_API_KEY"):
         return ("openai", _env("OPENAI_API_KEY"),
                 _env("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/"),
