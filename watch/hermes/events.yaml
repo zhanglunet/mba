@@ -102,3 +102,19 @@
   - signal
   - leverage
   note: Q4 销售 +18% 超预期(日本 +23%);首破 €15B;RMS.PA 资本市场硬信号,补 hermes 此前空缺的 W5;日期以 URL 内嵌(2025/02/14)自证。
+
+# ── 2026-07-18 从每日发现候选(PR #165)人工核验入库 ──
+- id: 2026-07-16-hermes-007
+  date: 2026-07-16
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "宣布 2027 年 1 月推出首个高级定制(Haute Couture)系列"
+  quote: "Hermès to Debut First Haute Couture Collection in January 2027"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikwFBVV95cUxQMHNzRXNRSTNPSURESlRxVWhwRE45d29QaDgyZ2ZUYkZZZ3hJbmNnbnZabUhrVUlDeUpNWVBKWHJ5NVZZbGZ2RkRjMEMzQUwtaFZqSlRqMmJXYWVtZXJJOFJHODlGTFF4MEVjM3ktSy02cG5kcmtkR2ZTUDFpRnNONms0RkZ6cHFZb29iRXU4amNfT0k?oc=5
+  fetched_at: "2026-07-18T03:00:00Z"
+  source_type: media
+  lens_map: [category, identity]
+  note: "来源:The Impression。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"

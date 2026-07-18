@@ -276,7 +276,7 @@ _DIR = {"pos": ("#1a7a4a", "利好"), "neg": ("#b3241f", "利空"),
         "neutral": ("#8a857c", "中性"), "mixed": ("#c98a2b", "分歧")}
 
 
-def load_recent_alerts(by_slug, limit=8):
+def load_recent_alerts(by_slug, limit=12):
     """跨品牌汇总**未消费**(无 consumed_by)的 P0/P1 事件 → 首页「近期异动」条带。
     用「未消费」而非滚动时间窗:确定性(只随 events.yaml 变),--check 漂移 gate 才可用。
     排序:日期倒序 → 严重度(P0 先)→ slug(稳定)。返回 (items[:limit], 总数)。"""
