@@ -100,6 +100,30 @@ def strip_suffix(title):
     return best.strip()
 
 
+# 行情页 / 纯 ticker 等噪音标题(discover 中文源里高频):不是"事件",别入候选。
+# 保守:只挡明显的行情/报价页与极短无信息标题,避免误伤真新闻(如提到"市值/股价"的报道)。
+_NOISE_RE = re.compile(
+    r"股票股价|实时行情|资金流向|千股千评|股吧|行情中心|历史行情|个股行情|最新股价"
+    r"|Stock\s*Price.*Quote|Quote.*Stock\s*Price|\bNASDAQ:\s|\bNYSE:\s|\bstock\s+quote\b",
+    re.I,
+)
+
+
+def is_noise(title):
+    """True = 行情/报价页或纯 ticker 等噪音,不入候选。"""
+    t = (title or "").strip()
+    if _NOISE_RE.search(t):
+        return True
+    core = strip_suffix(t)
+    # 极短、基本没信息量(如 "谷歌-A")
+    if len(core.replace(" ", "")) <= 4:
+        return True
+    # 纯 ticker 标题(如 "GOOGL" / "BABA")
+    if re.fullmatch(r"[A-Z]{2,6}(\.[A-Z]{1,4})?", core.strip()):
+        return True
+    return False
+
+
 def url_date(url):
     m = re.search(r"(20\d{2})[/\-_]?(\d{2})[/\-_]?(\d{2})", url)
     if not m:
@@ -302,6 +326,8 @@ def cmd_discover(args):
             if not t or not link or not key or key in seen:
                 continue
             if link in urls or key in titles:
+                continue
+            if is_noise(t):  # 行情页 / 纯 ticker 等噪音,不入候选(节省 limit 名额)
                 continue
             seen.add(key)
             new.append((t, d, link))
