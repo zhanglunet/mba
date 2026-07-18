@@ -43,6 +43,38 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+_EXT_LINKS_CACHE = None
+
+
+def ext_links_html(slug):
+    """从 site/external-links.yaml 读该品牌外部互链,渲染「相关看板」卡(与 SpaceX 报告页同款)。无则空串。"""
+    global _EXT_LINKS_CACHE
+    if _EXT_LINKS_CACHE is None:
+        try:
+            _EXT_LINKS_CACHE = yaml.safe_load((ROOT / "site" / "external-links.yaml").read_text(encoding="utf-8")) or {}
+        except FileNotFoundError:
+            _EXT_LINKS_CACHE = {}
+    links = _EXT_LINKS_CACHE.get(slug) or []
+    if not links:
+        return ""
+    cards = []
+    for lk in links:
+        cards.append(
+            f'<a href="{esc(lk.get("url", ""))}" target="_blank" rel="noopener" '
+            "style=\"display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid #e2dac6;"
+            "border-radius:12px;text-decoration:none;color:#2a2e2c;font:14px/1.4 -apple-system,'PingFang SC',sans-serif\">"
+            f'<span style="font-size:20px">{esc(lk.get("emoji", ""))}</span>'
+            f'<span><b>{esc(lk.get("title", ""))}</b><br>'
+            f'<span style="font-size:12px;color:#5a5852">{esc(lk.get("subtitle", ""))}</span></span></a>'
+        )
+    return (
+        '<div style="margin:4px 0 22px;">'
+        "<div style=\"font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;"
+        'letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">相关看板 / Related</div>'
+        + " ".join(cards) + "</div>"
+    )
+
+
 def _norm_dir(d):
     d = str(d or "neutral").lower()
     return d if d in DIR_COLOR else "neutral"
@@ -186,6 +218,7 @@ def render(d):
         .replace("__CHART_SRC__", bars_source(d["by_source"])) \
         .replace("__LEGEND__", legend()) \
         .replace("__DIM_OPTS__", dim_opts).replace("__SRC_OPTS__", src_opts) \
+        .replace("__EXT_LINKS__", ext_links_html(d["slug"])) \
         .replace("__ROWS__", "\n".join(trs))
 
 
@@ -251,6 +284,7 @@ TEMPLATE = r"""<!doctype html>
 
   <p class="crumb"><a href="/watch/__SLUG__/">← __BRAND__ 舆情时间线</a>　/　<a href="/watch/cockpit.html">全站驾驶舱</a>　/　<a href="/watch/">舆情总览</a>　/　<a href="/reports/__SLUG__/">审计报告</a>__FOUNDER_CRUMB__</p>
   <h1>__BRAND__<span class="sub">舆情驾驶舱</span></h1>
+  __EXT_LINKS__
 
   <h2>管理层摘要</h2>
   <div class="kpis">
