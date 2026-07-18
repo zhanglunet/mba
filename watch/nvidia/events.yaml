@@ -5,6 +5,7 @@
 #   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
 
 - id: 2026-06-28-nvidia-001
+  consumed_by: v2
   date: 2026-06-28
   dim: W9
   severity: P1
@@ -20,6 +21,7 @@
   note: "来源:AP News。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-14-nvidia-002
+  consumed_by: v2
   date: 2026-07-14
   dim: W4
   severity: P1
@@ -35,6 +37,7 @@
   note: "来源:CNBC。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-15-nvidia-003
+  consumed_by: v2
   date: 2026-07-15
   dim: W8
   severity: P2
@@ -50,6 +53,7 @@
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-16-nvidia-004
+  consumed_by: v2
   date: 2026-07-16
   dim: W1
   severity: P1

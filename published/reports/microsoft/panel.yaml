@@ -1,11 +1,26 @@
 panel: vc-en
 locked_at: 2026-07-16
 mba_version: 0.4.5
-published_at: 2026-07-16
-version: v1
-score_total: 173
+published_at: 2026-07-18
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 171
 score_max: 200
-score_normalized: 8.65
+score_normalized: 8.55
+reference:
+  version: v1
+  score_total: 173
+  score_normalized: 8.65
+history:
+  - version: v1
+    published_at: 2026-07-16
+    score_total: 173
+    score_normalized: 8.65
+  - version: v2
+    published_at: 2026-07-18
+    score_total: 171
+    score_normalized: 8.55
 overrides:
   add: []
   drop: [rhoffman]
