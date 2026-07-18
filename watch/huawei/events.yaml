@@ -48,3 +48,140 @@
   source_type: finance
   lens_map: [signal, identity]
   note: "来源:Forbes。首批冷启动;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-17-huawei-004
+  date: 2026-07-17
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为助力加纳BPA，打造AI时代智能发电厂- 华为企业业务"
+  quote: "华为助力加纳BPA，打造AI时代智能发电厂- 华为企业业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxPbE9mTERESXByS2FxdjVtekxEdDFMcG1QOGZublFyR1FpX1JXa0RTQXdySHdsSHVfbHZURnFwUVlNVTIzenItZWtjR1lSR0NZNkZ6V2g3eDVtb05vWlFrMFQ5alhobHhldDUtRFk5ZlJOVXZMT0xRTkZfMVlKQU9VNmNuWQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为AI智能发电厂项目，体现国际市场拓展和技术应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-huawei-005
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为nova Flip S的鸿蒙5.1系统有哪些AI新功能？"
+  quote: "华为nova Flip S的鸿蒙5.1系统有哪些AI新功能？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE0tRDhxSnpqN08xMXl2dE15akNuMVU4VHE3RS03TXgwdkFRQ0xyVU1oQW5tM2ZwVEVkeTdRQXpvSll3cXJBOVkyOWxZOGQ4d1VKVHlnR3J1SkI4TmFMMk5ZMXF3Q0JtTk1FdEFsVEt3LWlUaHY4QUlmamxJS0VIVEE?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能更新,鸿蒙5.1 AI新功能属品牌技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-huawei-006
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为Mate 80、Pura X等手机适配支持HUAWEI Tag精准查找功能_手机新浪网"
+  quote: "华为Mate 80、Pura X等手机适配支持HUAWEI Tag精准查找功能_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgVBVV95cUxQRi1DVEJ3blMxLW1iNHhZUUFsaGhadjZjanNmR3dQWE5RcDVsNDZ0eGtHWVRpSWg3R2pnWkhNNjlrdEQzVWx6TER2VzE5cHJHQWRHTzgwZ2pEQTk2SVZrcVpibEZkbFRSWXZqcldFS242ZDB4QU1yOFNfZ3BKY0xTOXZUUUdZaHhYWTJIcHR0OVdFbXN0MzBIZkw5TEI1UDFSNVFUMmwtcUMtZVdBU0xlazREOFlMQ0d2YmNhWVlJaFJDYWJaNEdjRXhaMkFaVlhXcm9tQTdjb0ZrYjJNSjVSRVd0dzljbmwxdm0yT3RDS2hDYVZMRTlWNzVLWWo4UlNpd3dya2VWQ3lIOExLZWlHUHF6enlXcXVxc1Q4UkFQTk1wc29iOWJvTzkzaGNibXJTRkw2dnl4ZlFVZXk5YTJGOVFoU0hZM1o0RWxhX2Npa1lSNHRFeHFfNDhFYjhFVGdZWlVpX1oxOU81cmttYTQ0Z3hocWNSc19JenV2aE0wZ3ByTUJVcU82dmFydDUwNVh5YnBPTE5qdUMxT3RYTzN1b0ZVWjNiSUV3X1IzMURYeE9IMkxsb0ltUHN0MkxEX1FfZ2o3UWF2NmdMUlBSbW9uekFDbmhuNWZLSV94MFA1SURhRGh4V09HRzZlSUE0QkFOUzFwNFVlTEVNWWJxOXRtRkVHemVybGtYemJJcWZlS0t5N2h3aEdBbDJzblQ3SkE3V3NZQWdRQk5vc0pZRGRzSnFWcG1raUpaNC03aFMzUXZvVlRfc0V4WmRhdVFYRkJRcGJ1cm55LXdxN3ZHWjZTVExlbDB1N0lfQW1Nbkc2cGpnLTJHU285X3ZZSXhjSGFqcjZWSk5LVWV6UlRXRWYxWlpPZzBRQQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能适配更新,涉及多款机型生态完善。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-huawei-007
+  date: 2026-07-17
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "一年免费换屏/碎屏险哪些品牌有？华为/vivo/小米政策全解析+FAQ"
+  quote: "一年免费换屏/碎屏险哪些品牌有？华为/vivo/小米政策全解析+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFB2d1QxblNDSEhPTDN0cWJwUGpRQ2s2XzhtSUFQT095UE5MSXk0UWthcnBMMVBSRnZPMXdZSEI0V0Z0ZmgzWHJBRHlxRjhRaDlia3hhQkp2dmVRNHlpalpiZ2dBR2ZaWU92aHVGcHBHcGFFZw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):售后政策对比分析,华为碎屏险政策属品牌服务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-huawei-008
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为Pura80 Pro打游戏散热触控强不强"
+  quote: "华为Pura80 Pro打游戏散热触控强不强"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE9HQ184dF9ITWtJZEhXdlZNU29pUjVwNXZ2NjFNT2d2SXBVZWdoeElfWmI5bWE2UkJvbGs0cE1IUlgxdTBFeHJmcGRsYzlVZWItM0ZtdF9IMnJaelJhMC1YWGFYTWNEck42Y1lKUU0zYnk1Zw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品性能评测,游戏散热触控属核心卖点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-huawei-009
+  date: 2026-07-16
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为Mate 80系列在高端市场表现如何？"
+  quote: "华为Mate 80系列在高端市场表现如何？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE1pemRCRUpiSzNsT0hPOG5nY1NZQ04wdHd3MkZUWXhpXzdGeUhsbHBkVElPNElwY0V0cG9YWDhWWUpYZlFQYjB6NmNaV2NYUkhmdlRGelBwdDhYN2RjTnBfUGRhcEZ6S3oxM2ptWHMxZkt5QQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高端市场表现分析,涉及品牌市场定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-huawei-010
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为nova15 Ultra的6500mAh电池实际续航有多强？"
+  quote: "华为nova15 Ultra的6500mAh电池实际续航有多强？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBqTlNSX0dDd2Y1QWRONE9PRkh4SnRXb1d2Zmlmbm1qc3ZwWU5LT1NPd09SVjJZdnFHLVBlbWpaVVVLSzBvQTYxdGpUSjFZRVl3OFJDeUp6RUhWVzBLcXEwZEpFc0E2bllicEZOTUlrM1lIZw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品续航性能评测,电池续航属消费者关注点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-huawei-011
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为Mate 80拍娃清楚不"
+  quote: "华为Mate 80拍娃清楚不"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE1qOHlnZ0YyT2pwT3NBRU5KNGZaMG5zUnJ2OU11TnMxeG9aLS1jekxyRXRnLThpWi11Znh6QXoyaW5aM2FfR1p1RXlnbzMyV2w5UThDVnNsSnhUSGpmanJUSHdOWmVJNzV5NDVYUTdUQmNnZw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品拍照功能评测,属消费者关注的产品特性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-huawei-012
+  date: 2026-07-16
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "搭载第二代灵犀通信与原生鸿蒙操作系统 华为发布Mate70系列手机_南方+_南方plus"
+  quote: "搭载第二代灵犀通信与原生鸿蒙操作系统 华为发布Mate70系列手机_南方+_南方plus"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBmc2JkWExNME41clJSX3d6WE0zaENoRGtYd0NQLWFNYnR0cG9CNEVkMTBVTkdOLUhWVW0zdUVFV0lNSVl4aWJPZDV0b0h3NV9ERzZLdGZ3TUJUQmpTWm4zUGZ0NkJSM3FEdlZxeGk5MXo4UQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新品发布官方信息,灵犀通信与鸿蒙系统属重要技术亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

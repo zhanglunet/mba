@@ -112,3 +112,170 @@
   source_type: finance
   lens_map: [signal]
   note: "来源:Yahoo Finance;与 6 月 IPO(001-003)承接。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"
+
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-18-spacex-008
+  date: 2026-07-18
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX“星舰”第13次飞行测试中止，马斯克预告下周初有望再试！"
+  quote: "SpaceX“星舰”第13次飞行测试中止，马斯克预告下周初有望再试！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE55UVlfUWQ0WWVMY0dMa1E4VHg0LXNmdzNYSWVGTWQ1T0tub0hQYWJkU0JJVC1UeEVJOW12WWN6R214ak5PWDJVaA?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大项目测试中止,涉及运营风险与进展延迟。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-009
+  date: 2026-07-18
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克旗下SpaceX与美国防部商讨算力协议"
+  quote: "马斯克旗下SpaceX与美国防部商讨算力协议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlFWUFE3UzZ2Z2x0SC1MX3kxLU5QRzJ1eFZJV1dQc0pjWmRZYmFkTzlDNGMybEZEOGpyczJ2ck1jSk14SDFHWGRsZmhIcmg0TXNacmNISmZRQ0h3TGhQa1ZDQXB0QzhxamtKc0dmQlNWNEwzOHZXNFlSR0pnWHFMZnZuOVlnWFFpcWt3eW93S3NNeWJyV2NaX0hRMGpPQURIdGxGTHgxNGVCNlRnaVJDTXdwQUVKbHVpX3BXUw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):政府合作谈判,涉及战略合作与商业机会。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-010
+  date: 2026-07-18
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克：SpaceX 下一次发射尝试有望在数日内进行"
+  quote: "马斯克：SpaceX 下一次发射尝试有望在数日内进行"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PbzdBYWJmNG10ckMyOUx2MHZUQnFLZkVaOGxudlNCV0VSUW1MQmdlR2xVY3c4eTg2aHlLcm9mUFBYREtNUTMyMHFaQVFBUG9wMUZtQW9Cb21NaXh4Mjh3TQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):项目进展更新,运营动态信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-011
+  date: 2026-07-18
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "“暂无替代方案”，五角大楼如何被SpaceX卡脖子？"
+  quote: "“暂无替代方案”，五角大楼如何被SpaceX卡脖子？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE4yZVd4RTBCQm5JQzNTZFgtWDZFdElGM2kzYWdXLVZCZkdjQWI4RU0wd01veGprSkUwSXJuZExONHpmQmJpLTJHcTBUcDM0c3prRk82bFc5cnkwN0tnMDRLQy1URmhwd2dG?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):市场垄断风险分析,涉及战略地位与政策风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-012
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX市值蒸发超万亿！IPO后星舰首飞推迟，每一秒倒计时都成了\"公开财报\""
+  quote: "SpaceX市值蒸发超万亿！IPO后星舰首飞推迟，每一秒倒计时都成了\"公开财报\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxPWXZpRVN1aU5rSEVSUzgyQWtUaHpubE9WLTJIVFlyY0cxQ0RNSVdwQTctWlNPWWI3enJ3SUhfdHhYamo1RG9YRV9GOWFWbGk0Z205cUUzVkdiWDVIVElyYlJwTnFDWk16M0lENHl6aldYTWpMRDJQT1RVR0Z0a09WZFQ3Y19hV0MwQlg4ZVRZTS14b1luQVZlZk1HVnE?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO后股价下跌与项目延迟,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-013
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "🚨突发：SpaceX $SPCX 在过去 31 天内蒸发了 1.3 万亿美元，并触及新低 122 美元。"
+  quote: "🚨突发：SpaceX $SPCX 在过去 31 天内蒸发了 1.3 万亿美元，并触及新低 122 美元。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisAFBVV95cUxPUU9SX0lac0R3cEpWVUhDcVRlUDZ4Tl93YkNjdE9qUlM5LTNpc2NPZlBpM3Q4dklfa294SHpiR0EwSmQ5a1ZzUXhlOXc0Q25XZDBlanJRanZ1VDNmemN1d0NqaDVBdFpDSmFGa1J1VU95LUt3SDh5VmwtYnFOSGU5LVJjRmZROHgxd3ExTFh5SWVwY2N3TndrX3U2SEpweGwxZXo4ZmgxeWdUNnM2UFE5cA?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价大幅下跌,重大财务舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-014
+  date: 2026-07-18
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX洽谈五角大楼数十亿美元AI合同，去年xAI巨亏64亿"
+  quote: "SpaceX洽谈五角大楼数十亿美元AI合同，去年xAI巨亏64亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5RRk1xQXUyWFAyWUY1dDdqZ3ZmLTlReXB2bDVSM25OWkJtYXFoWmphdVdpTnFMY3MyanlmNFNuVUl0Zl81aW5valI2elloOXU5WTBya3htM1I1SmpQSlVIU0tR?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):大额合同谈判与子公司亏损,战略与财务双重信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-015
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX市值已经蒸发了1万亿美元"
+  quote: "SpaceX市值已经蒸发了1万亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ScFMyOUJZOWdlYmk1cWdsQTFaclVqQXhPQ1lvek9YblNlSFphclFFVW5yd0FYbHlvVU5CUUxrVDd4WTVaUDVtd3hVZVZrbkVwVEh3?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):市值大幅蒸发,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-016
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "跌破IPO发行价后 SpaceX将迎解禁大考"
+  quote: "跌破IPO发行价后 SpaceX将迎解禁大考"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1JaWFTSmhqRFFsNVliRFhGT2RnZzFJdTJ5eGhZMGhTTXZoQk5XUFgxZ2tNWlBGMS1raU5ubnBHTjk1WnFIaXdobQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价跌破发行价,IPO后重大风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-017
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX股价首度跌破发行价，高调IPO仅一个多月跌幅达42%，遭遇了什么？"
+  quote: "SpaceX股价首度跌破发行价，高调IPO仅一个多月跌幅达42%，遭遇了什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBDMWxKd04zM21EUlBQZV9sTklHclozN0VCbXNzTUNsaEIzUUQ4akRoWWktMGtMZzNFSUVMZVl6Y3I3c0w4ejRtdDV6V3ZEbWdZeEdseDJ4cnFKUkxFbDdaQllB?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO后短期大幅下跌,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-spacex-018
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX拟向五角大楼提供AI算力 合同规模或达数十亿美元"
+  quote: "SpaceX拟向五角大楼提供AI算力 合同规模或达数十亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE96R0ZNVjRtR1c3U01XUy00ZWVkdWxRbVU4UldHaWtpMzB5QW5HdkJZWXBzVWNVWEZGZVJ6eGc4NzV1dkVZRHRmc0Z6VkVTdm1iSmxPVG9OYzdPc09UYUJBZ2RB?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重大商业合同，涉及政府采购与战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

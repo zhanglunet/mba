@@ -83,3 +83,110 @@
   lens_map: [signal, identity]
   source_type: media
   note: "产品/品类领先信号(区别于已有 W5 财报事件);日期以 URL 内嵌(2026/05/28)自证。"
+
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-17-lenovo-006
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "存储价格暴涨进行时 大摩为何坚定看涨苹果与联想集团"
+  quote: "存储价格暴涨进行时 大摩为何坚定看涨苹果与联想集团"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE0zV3VVUlVVdVVHam84WjdmQ05MR2VvRmJkM3VVckt3aHdaLTVvYWI2d3NDeU4xRHdNWGFDVFNoR1RtcEJjN25NMHBURHJTUEppdjVj?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):摩根大通看涨联想，涉及投资评级与市场预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-lenovo-007
+  date: 2026-07-18
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Panther Lake首次亮相真容，英特尔CEO：交给联想了！"
+  quote: "Panther Lake首次亮相真容，英特尔CEO：交给联想了！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxQVXlFQVN3bDJjTmxYSlhhdVZhcHl1YTl0NDljVU15SGFtU3JEOXZqelZPbl92MWk1TTRkd0RzblFLMmdjZ3dsb1k3OGU1cUJXaEl5clljUG1XQUIxV25mTkdTSXNMM3JTY19SQk1TeFdpWUNWN2lEQ280a1VLSkZfY1lMLTNETmZnRUJ1SjBUZ2Q5dHoxb2IzenFjZzZnWENxanhn?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英特尔新品首发交由联想，产品合作信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-lenovo-008
+  date: 2026-07-17
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "联想再度预热IFA新品关键词：\"翻转时刻\"和\"身轻如燕\""
+  quote: "联想再度预热IFA新品关键词：\"翻转时刻\"和\"身轻如燕\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxOeUVnOGhBYmJJRWZwMG8tMVE4MUJMVXpybVJ6blBheWVDaTZkSE53TGE5U1psd2dodlAtRFJSR2VSSkUzbFBGYVpNT2Q4Zlo2czI5RWpIVHVLSFM0OG9TQU9sWHk0b3J6cXFoSF9mR1czYllXQkhPZ0d0czJtOE9SRmoyOV9MckhLZ2hCdlJrYUs2c1FZS2pCblpNYkNiUQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):联想IFA新品预热，产品发布计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-lenovo-009
+  date: 2026-07-17
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "直击WAIC丨联想陈敏仪：AI不应是少数人的奢侈品，而是像“水电”一样的基础设施"
+  quote: "直击WAIC丨联想陈敏仪：AI不应是少数人的奢侈品，而是像“水电”一样的基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5PYWNtMzBUb1NiQVIxbm44bi1falhucEg5U3diR2JtTGVFeTRzYjVkMVN4YS1zSXF6RWNXYWRvaEZWc2NnTFZnSktmV3R4enFzZG9N?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):高管WAIC论坛发言，AI战略与品牌定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-lenovo-010
+  date: 2026-07-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "浙商证券：恒科下半年转向盈利兑现，联想AI服务器打开第二增长曲线"
+  quote: "浙商证券：恒科下半年转向盈利兑现，联想AI服务器打开第二增长曲线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9zeXhFQ2VyTlNpVnY1N3ZyOGRMSmxBclJJZ3ZDY2JzWE0tN3pIUS1XTXZWWWJqSFZMcnB4SkMzakdidWRqamtxaFNSa01xYnA5MjZF?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):券商看好AI服务器增长曲线，业绩预期提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-lenovo-011
+  date: 2026-07-16
+  dim: W6
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "为什么被称为“AI世界杯”？还原联想集团对AI和体育赛事的理解"
+  quote: "为什么被称为“AI世界杯”？还原联想集团对AI和体育赛事的理解"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTFB2dEFMbW11UzhHbGU2VUVhUUk3NUNOam9PRjlISVM1R0hXN3MtVXFYVkxPUC16WWJhX0xXX0R5YkRvX0hybV84ZmJlV1lyTS1NUjhWVWYzWFBMRWw2Rk94ZEQ5UFVYU0o1d1FTX053?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):联想体育赛事赞助与品牌理解，营销活动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-lenovo-012
+  date: 2026-07-17
+  dim: W7
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "世界杯决赛引爆职场福利潮：阿迪达斯、网易等企业宣布放假，联想支持带薪补觉"
+  quote: "世界杯决赛引爆职场福利潮：阿迪达斯、网易等企业宣布放假，联想支持带薪补觉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KUVdlX3c1N2dYdVlQdHN0amVUZnZVM0hfMWxrSTlsWmt4ckhfUWd4Y01odDJQSzJWWm9CbFpIeGE3emxhbVM4UWM0NU55OGNaOWc?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):联想员工福利政策，企业文化展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -118,3 +118,65 @@
   source_type: media
   lens_map: [category, identity]
   note: "来源:The Impression。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"
+
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-18-hermes-008
+  date: 2026-07-18
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "足球巨星哈蘭德酷愛柏金包 愛馬仕傳奇的由來"
+  quote: "足球巨星哈蘭德酷愛柏金包 愛馬仕傳奇的由來"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE1aaFNxZk9DV0JWV29yb2VTMXB0c09LUW9uQUtHNDJXSS1oNjg0dks1anNDUmxObWw1eWtHT2hvNDcxMGtjdEZVRnFWcE5ZcThKN28xM0Z3RUZQTnB6VDJTRXNlSjJJd9IBZkFVX3lxTE1aaFNxZk9DV0JWV29yb2VTMXB0c09LUW9uQUtHNDJXSS1oNjg0dks1anNDUmxObWw1eWtHT2hvNDcxMGtjdEZVRnFWcE5ZcThKN28xM0Z3RUZQTnB6VDJTRXNlSjJJdw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):名人代言效应，品牌传播信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-hermes-009
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "外媒：中国奢侈品迎来市场变革 老铺黄金正重塑行业价值标准"
+  quote: "外媒：中国奢侈品迎来市场变革 老铺黄金正重塑行业价值标准"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE1zY2xabXZ4ZE85Z1dlUS1jZXlOOFpZYWpwUWVWczJMNl9NM1lJWnJzVF9MakppOS1DU3BLVWJ5dU1sb1NXVE9udXdpRWwxR0ItTDZDU2kta1VndkktbDE0V2NYTnM4NmJKc3hiRzlWaXNzRUFaVkt5ZkdB?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):行业变革评论涉及爱马仕，市场环境信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-hermes-010
+  date: 2026-07-18
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "郭富城一家4口看赛马,方媛粉衣白裙背25w包,踩10cm鞋子没小美高"
+  quote: "郭富城一家4口看赛马,方媛粉衣白裙背25w包,踩10cm鞋子没小美高"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBEYUpYZEZEVF93alFLU0NocFk4ckVLMzhDTkpKelM2Mjh6WE9YdHV3SWJkNEN2SlptNjFWZkx0MzNYb281UUlrVlZTdW5iaURSelRVUjEwUWlZU1NFTG0yckJkOEhiMGZfd3BqYzhVdXpzQQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):名人穿搭展示,涉及品牌产品曝光与消费者认知。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-hermes-011
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "画廊 AD Classics: 银座爱马仕之家/ Renzo Piano Building Workshop - 31"
+  quote: "画廊 AD Classics: 银座爱马仕之家/ Renzo Piano Building Workshop - 31"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwJBVV95cUxPYVdwUlZORWhzVnRNUTl1VnRoVHhmSXBTbnVXck9DNU5HY1VvZkw1SHYtOERuUWd2Ynl2czhSR0FZNlBMS0dqSC1tTmx4VlpkTXJNcXBkczZEWVNfdHpYQTFYTGVWNFROMWZEZF83UkRfeTVrdDVjTVFKd0xOT3pOTG9Wdm51ZTREUHlxeXZuamRycEM0RHpRazZOMmFfNVRjMGg2ZHphTC01Uk5sbGhyc2txSFJOVVJuSmoyMWNEajJrZlJFRmVTa3hlSGg2SXZnNWFpLVo2MlVSYWtzbV9OOUd1SE50WHVYb2tESWRLSkh6WmVBUmc5cFNfSDd0M1I0aXpoYzY1SENibUFtcTRiU1VxamEyUmw3dWZv?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):建筑设计作品展示,涉及品牌形象与文化传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

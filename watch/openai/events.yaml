@@ -155,3 +155,170 @@
   - identity
   - category
   note: 邀请制且仅美加,仍登顶,社交裂变强信号;日期以 URL 内嵌(2025/10/03)自证。
+
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-18-openai-009
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI举行“AI上岗”发布会：股票研究、投行路演都能干"
+  quote: "OpenAI举行“AI上岗”发布会：股票研究、投行路演都能干"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE84dFE3Mmc3WS1jQVJmNUNBdkZ2UlhJUTAtaHdIZVB5NnNCQ1lmaGg5U0FGSXNGTUFnVG14eDFiYUh0d2ZoVUh4Yw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能发布，展示应用能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-010
+  date: 2026-07-18
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "空头1.5万字警告：OpenAI将崩溃，\"雷曼兄弟\"在逼近？"
+  quote: "空头1.5万字警告：OpenAI将崩溃，\"雷曼兄弟\"在逼近？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBiaGRMUk5CaXA2c05BLTMwVkZZeU5Ha2ViM1hNeWhjTFV4TktMTWlBbHNUZ0N4VUxPMUVCdmdyMUdMYnRvUmdTQW4ydVlBODdvNm9FeDFLVGpFX1JYel9zeTNB?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重大负面观点，涉及公司财务风险预警。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-011
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "算力争夺战升级：OpenAI绕开英伟达、携手博通打造专属推理芯片，成本降低约50%"
+  quote: "算力争夺战升级：OpenAI绕开英伟达、携手博通打造专属推理芯片，成本降低约50%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWkFaZmRiSHFSWUVWX0IwZ1Z1a2o0dnVMRkptX29ublN2eVdUUDNNa29vZnQtaUFkRmVSNGRRXzBOamppOWRKVXdBMVpTZDR0TXJtblRzSmJIM1dOVzkzZV9yUmQyLVNQekk3djVERUpmOGdMSHFqdVFvNm01Y0lfMzhkMERPRmRqeWNLaFIzVjNzMXZRbHdqb2dGSWdlSEdxbFRZVnpiRmU?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作与成本优化，重要供应链动作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-012
+  date: 2026-07-18
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI回应GPT-5.6 Sol意外删除用户文件：已采取措施降低风险|Codex|数据库|系统|模型|误操作_手机新浪网"
+  quote: "OpenAI回应GPT-5.6 Sol意外删除用户文件：已采取措施降低风险|Codex|数据库|系统|模型|误操作_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizARBVV95cUxNS0RfcXRlMkJqM29ucnpCNmU4TVBvZ3ZPUXRsSVAtS002SlYta2FwcTFfMlU2QlZ0ZnRYZFdEbm4tTWxDczIwWFZTQm5pTGp0WEJNejAxcHJwX3N5TnB4dDJaQ1lhWUVKaGxuS2p3MnZSUUhSU1VSQXhPU29zc002emdLVGRHN0cwV1RYckY4S1lYeWhITVB0YTItcThidXBzN0FnSGl4SlUxcDhrT2k0b1l6My1xZGpIUVBwSGhURWwxNFUwVzFKMk1WS0hhY1BEajBjOTFsbDZUUThhOXR6UmtwQ0taU3FieklBOUNrclB5YTRjX1oteERhYTFaSE9UZ1c2QUNGUDhzSFRuc2NOOHJTUi1xYWRYM21YWFlvbllRTUtwNjVvcU42SU1wMGdMekJxRUpBTHA1SUYzSU1qOElMS2NMOUtRUGk2TkVKVGhLVHhEeC1UbFdmSTR2dEoydzhwR3J2N0QxelVVelk1c3FKM1RWUDZ4LVFMZ21hOHhDRWtLMzFHUWkxUGNURUtBQ2lmUjJvcUtSYXlrbkVsSVVhbU5tU1ZTd29jQnRQR2p6cnhvWVdUM3lPaHNoNkhMMHdSUU5iQUNWZTRvN19OSVJKTmkzN0NMWXZRLWdLTUhHV2YyOXNsS2tHVllXSmhBTGIzMk5sbkZTWWw5NTdrOWZLRlh6ck5tdHlBczZlQ29xUnB6Q1JCUHNGNmJHazNSUWdZOHp3cjRHSWxyTzRqMUlBZDlpaFBVV0NjT296SFdHU1JCcGlNWWlBdHU?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品故障与数据安全事件，需官方回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-013
+  date: 2026-07-18
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI、Anthropic指控中企「模型蒸馏」中国副外长驳斥| 中国即时| 中国 | 世界新闻网"
+  quote: "OpenAI、Anthropic指控中企「模型蒸馏」中国副外长驳斥| 中国即时| 中国 | 世界新闻网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE1NQ1ZFcDJpRzBSTTBWdTJocDJQWGZRSUJTUGU5OS1MRGJ4eTJpdnUxb0pFM2hBZjdBNlpwMklKNmdMMmQwbTNjVHFxVlBxci1nclFsUDZ3bGZzWG9DNXNWM0ZfWGZTUlR5QUE?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):国际纠纷与知识产权指控，涉及政治关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-openai-014
+  date: 2026-07-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "“雷曼时刻”在逼近？大空头1.5万字长文起底：OpenAI必将崩溃，全球股市恐遭清算"
+  quote: "“雷曼时刻”在逼近？大空头1.5万字长文起底：OpenAI必将崩溃，全球股市恐遭清算"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5oSWpJM0FyNjMyZ05GMGNVQnBOZ2NPLVkxOXhPbEhtaHlhNEFTY3l3dzNyT3ExQ2lyZWE5enVlcFBYV0p3dVNsWERGSmU0Vk1lVzJn?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重复第3条核心观点，重大负面预警。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-015
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "ChatGPT终于能「搜自己」！攒了近4年的对话，一键翻出"
+  quote: "ChatGPT终于能「搜自己」！攒了近4年的对话，一键翻出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9IMkJnWU4tYmhiNlpIQ0hsMzlFcDJ5RzFOOXA5SXp5Y2xOVUFBREpPSXJncm16MmNwTEJzYVpDeGJZT0tSdV80SmVkMDhCdzhSa0RwRFNvY01BVC1INjd2NkJILXFnLW1sUDdFT2NfRnc3cTQ5WElxUnk5OGRuRGM?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能更新，用户体验改进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-openai-016
+  date: 2026-07-17
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "21评论｜从盟友到被告，苹果为何与OpenAI翻脸？"
+  quote: "21评论｜从盟友到被告，苹果为何与OpenAI翻脸？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxQUnJMRkhWUjUwWlpYZVEyZE9uY2V3emlPTGVvdHVMTUVKYVAtNU5SWmhreVJTdkJ4YVZleFJjdUtnY21XUHhpVi13SVh1TnhTaGpGLXh2WENnTDF6SV9HZlZ3U2xvMzIwdGtZODZTRS0tMnlpTlNOMkhUMXd2LWh5dnhfUk42emZlN2JkMVh1YU9qeGl0?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作破裂，涉及重要商业伙伴关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-017
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI推出GPT-5.6系列模型"
+  quote: "OpenAI推出GPT-5.6系列模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9JQmNBaHExWUwtZDZzYlJhQURrQ3dZOFZxOGJGd0ZJTXhUbjVIX1NOdGtETFNFS1dmaXJURS0wV3RTMmM?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品系列发布，核心产品线更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-018
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI欲扩张AI算力版图：据悉正洽谈租赁俄亥俄州10吉瓦数据中心"
+  quote: "OpenAI欲扩张AI算力版图：据悉正洽谈租赁俄亥俄州10吉瓦数据中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBrdHpIekxCYlpaeVc0Y3pndTJtVFkwaVlDWDdYVnlfR2t5YW4tWnRrQXlpVU5kUWdrc3prSmtwQmJQZ3E3UWgxeA?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):基础设施扩张计划，战略性资本投入。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-openai-019
+  date: 2026-07-16
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "欧盟出手限制谷歌：要求安卓生态向OpenAI等开放AI与搜索服务"
+  quote: "欧盟出手限制谷歌：要求安卓生态向OpenAI等开放AI与搜索服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1MOGJqbjQ1QXNOWmMxUGNsYXBtWHJUSmxPZDVFN3I3anpYRWJtd3Zxekc2WHBPSHV5eE03VFJCNkY4Z3JnNGlLZFdoSE1LbkdhYkpLa1R2dDAzQ0JYQUpFeTJiUVVXYWM?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):监管支持与市场开放，战略利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

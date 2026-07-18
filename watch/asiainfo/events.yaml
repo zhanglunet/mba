@@ -185,3 +185,20 @@
   consumed_by: v2
   lens_map: [signal, identity]
   note: 2024-11 完成对亚信科技的控制并表(「一个亚信」资本层面落地);日期以 URL 内嵌(2026-04-11)自证。
+
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-17-asiainfo-012
+  date: 2026-07-17
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚信安全科技股份有限公司投资者关系活动记录表-2025003"
+  quote: "亚信安全科技股份有限公司投资者关系活动记录表-2025003"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxNMjQyQzR0bFRlY0ZjMmFFYm9lVTVCSHNjSjh5d0plZkdCUUhjS1ZjZkcybUNIMHFzbzRCNUh5cHN3TDF5R3FCSmtOemxtem85SW1vRFgwSDhDV2tHamgzVVFyeWJwdXM3UjZ2cExIUG9TN0J0Z0JvMEd6cEw0RURBVG1zREptLURKbkdKV1BaZmdObjBjbDBacjN1QjB6T1hYRnU0SHpkTS05cE9OeUgzZkVaVHI?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):投资者关系活动记录,公司治理信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

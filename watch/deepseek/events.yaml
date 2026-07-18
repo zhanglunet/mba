@@ -67,3 +67,110 @@
   source_type: finance
   lens_map: [signal, leverage]
   note: "来源:WSJ。首批冷启动;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-16-deepseek-005
+  date: 2026-07-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间接持股"
+  quote: "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间接持股"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KeWdhcF9LYndmRzU4WXBSTktpbTZQR1hCc1dmT243ZWEyLTJjMHN6SUprRVQ4TDhFMjNhd0pyTWZuUkdudzNXMGlPYTZpRWU5UHhUazU1ZHpsLVdxdVlfNw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值与股权结构，重要财务信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-deepseek-006
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek估值超3500亿元"
+  quote: "DeepSeek估值超3500亿元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE5PQnFVQk5TMTVMZUFycDVjZTJkX0VwdFM3VGJ3aVBCdnhMcHA4STJPY1NoUEZGNmFkbEV2ek9qR1VTUGJNRk5wZXpSU2MxV3o5SVJsTDFsLVhkN1dMTFdqdlQ4OVo?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值重大进展，直接反映品牌商业价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-deepseek-007
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek完成首轮融资 多家A股公司间接参股"
+  quote: "DeepSeek完成首轮融资 多家A股公司间接参股"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijANBVV95cUxPVUtPZEVhaFFiai1leVdmd0EzTjNkdFNHRy1LaFZjVTRyUVFDcFlxaV9fQTdMQjBKUWVZbFV4Q0xlRS0yYU1vcmE2NThIXzVBX3B6cGw2a3h0WmtFMUJzNnQ0TGs1TnNJU2d4QW1mOW1ScEJhamVyblVVM1NKblVkZ25vM3BiMXJxYUtPcU0tZWxEMWZ0RkVKdjJvYnpwMEt0TV9MT1lBUkowbmU2WkM4c2xjNEtFTE1hSHZEenlTOEJDMXJEUXN3YXBTS0ZXcl9lNFpoV2YwTHJlM1JtUFlnZFJfM3dmX2QzNFU0VF9rdDNrQUJLSXRJY3JjZXFyZENMNUFQT1kzS2VCcFdVUkZTUy1XN1d5SzRxdjROaEdBNEF5WXg0V1lRWFYzdnlDdkh2bTNHUGRNWnh0NVRXXy1Ga0lxd1JDVVdLT0p3ME5jYnRreGM2X3dpcERkV29vUENHVjV1VnBySzlkU1JHemRTeHd0Y2xnMFBTelR4SHdDTVUwZkxTRFJsbzVxUks?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首轮融资完成，涉及多家A股参股方，重要融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-deepseek-008
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek估值站上3500亿元，这家中国AI企业开始准备第二轮融资"
+  quote: "DeepSeek估值站上3500亿元，这家中国AI企业开始准备第二轮融资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBRdFJXWkt1NjZmRmU0bXhuVy1Oa1pmSGNSX1N1ZE9xMTdVMDR2STMxSWVydkphZFFseUxNVmlLaHdNNm5MclZxejZnMXVra2Z3bGRUUFZNdzl0eDM0aDFmR2tn?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值确认，后续融资计划，重大商业进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-deepseek-009
+  date: 2026-07-18
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek，这些上市公司参股（附完整名单）"
+  quote: "DeepSeek，这些上市公司参股（附完整名单）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE10WXJ4Z0lJVWdyRExrajhxN05PZHNzWXRzSlAzS1REcHhXUUowWTRBV2xIMDNOTGladGpLZUp5WDdmdmNObk1NR1NHOExtTWtFSXJWZzJmdw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):披露参股上市公司名单，涉及生态关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-deepseek-010
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "开润股份间接入股！DeepSeek最新估值曝光"
+  quote: "开润股份间接入股！DeepSeek最新估值曝光"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UbFJ3dU55N2ZZbnlzMXBsclYydlVjQ0x4R1ppaVpYT3V5OUZUSTUyWGZCX3FHOW11aU4wbmVaVWVhSE1jTy1kYktWb0x3YWh3STV6RHRaY1ExY1o1WVl2Yg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):具体上市公司参股信息，估值确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-deepseek-011
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek首轮融资落地，梁文锋登顶全球大模型首富"
+  quote: "DeepSeek首轮融资落地，梁文锋登顶全球大模型首富"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE5ucW1RY1BsR0xkTmJWUzFxT2xpbmg5SW45Y29GN01Obm1MSHg5MDFSLXR3X2dZcFNVbWNVMHhzemVtYmNyb1Zmb1JtZWVteXlxYUZmSnlOM1NraUR5eEEwaGJmNjJFbDRWa0lIWHRR?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成，创始人身家排名，重大舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

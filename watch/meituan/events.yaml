@@ -112,3 +112,125 @@
   source_type: finance
   lens_map: [signal]
   note: "来源:Moomoo;对冲 v2 反内卷亏损叙事的分析师视角。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"
+
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-17-meituan-008
+  date: 2026-07-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团试点骑手“等灯停表”，已联合苏州进行数据对接与测试"
+  quote: "美团试点骑手“等灯停表”，已联合苏州进行数据对接与测试"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE11M085YzM0eFNMUFoxdmpUVnRZM0FFMHFwd000WUVNMEhfYjlxTWprV2o5YmFVR3N6aVZIb3Z6UkxyNVZqSlpIQmJndEE0aVVCcUFGQlY0MHBYZw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美团骑手权益举措，与苏州数据对接，体现企业社会责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-meituan-009
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团新一代自研无人配送车闪亮登场！"
+  quote: "美团新一代自研无人配送车闪亮登场！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxPUXlnWmJsUk5vcW1MMU9xT2oyOG9PelFsQnFIcXpwWTY2SUNzYWhUYXo0b2Q5LTM1N01nai1ULUFtUlFQZ1ZxbHRqUnFCY1FaaTc1czVmMVVxU1ZrbC1LMG9rSzROQnhRQWVDdFl6VGEySUZBZWNiSW9nNkhZTlBPdUhPbEI2LUxpWVRBX0tFZ2ZveWtWdjFWTDZ0M0R1UzlHU2pRWnZseGRNS3JrTk8xTndmZw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):自研无人配送车新品发布，技术创新信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-meituan-010
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团与清华大学合作成立“数智生活联合研究中心”"
+  quote: "美团与清华大学合作成立“数智生活联合研究中心”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Xb1pRWE1ianEwWjJzTmE2MTlvNkp5VFUwU0Y4aUx4OHFRY2VjRGhXVWU3dGZVNVMxU3ViZUpucUs0ZzZTT3RDZlpwb1hHRjFOVHZWZFFNWFBYUmRPdWVyYg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):与清华大学合作研究中心，学产融合战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-meituan-011
+  date: 2026-07-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团717骑士节荣誉盛典在京举办，升级“等灯停表”、医疗保障扩容等多项举措"
+  quote: "美团717骑士节荣誉盛典在京举办，升级“等灯停表”、医疗保障扩容等多项举措"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xbGpneGFXZjBSZC16dDkxb0FhWlFzR05QdHpVd2VIUEdfbVpFcEpSZDZhRUhQaC1Femk4MF9Pc0tmbGlGYURxVGIweC0yQmp6blJZWGY4Z2V6UQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):骑士节活动升级权益保障，品牌形象建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-meituan-012
+  date: 2026-07-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团王莆中：骑手正成为一支更有尊严的职业力量"
+  quote: "美团王莆中：骑手正成为一支更有尊严的职业力量"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNS0QyQlZtZ2ttNW5KZDdxREZ5THptdG56ck5maDE5TTR2WkozN3YzOVNONnd3TFAyVkt1MV9OT2lwa09OaUljRWpSTlNKWmZZNjNz?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):高管发声骑手职业尊严，企业价值观表达。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-meituan-013
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美团员工发千字长文《置身团内》谈公司困境"
+  quote: "美团员工发千字长文《置身团内》谈公司困境"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFB5ZDBDU2wwUHJ2dU5PN05kQkRseVdpUC1UZzAwdzZydEVXNUktaEdmemdjd0tpMEU3cDF0bFZjRmFFWHhwZzR6SUE1MjE3S01uTHc?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):员工发文谈公司困境，内部舆情风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-meituan-014
+  date: 2026-07-17
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "麦格理将美团评级从中性上调至跑赢大市，目标价为113港元"
+  quote: "麦格理将美团评级从中性上调至跑赢大市，目标价为113港元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitwFBVV95cUxPMEVBVmkwdm1ZR2hFdlYxa0U0STNjeTR5VS1IRzJjU09OQkVCdUJCS01SNFV0UFdqa0pJRFhzajBrdUsxa3hmV19xT2tXVFNadXc4ZExrdThOWkc3Qm9ENkwycjdYRDJqYVlSNmczMHhaNThBTERpZWFJMjNQR0hyRDNxY2FEZnFIUnFrSEVGTlJfdVNSbzlFQmhhXzRuZk0zaDVJbDJsOUY5YlI3cWxZdlVpeXQ4QlU?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):券商升级评级目标价，市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-meituan-015
+  date: 2026-07-17
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团推“一镜到底”验真，外卖商家后厨、堂食等实况公开展示"
+  quote: "美团推“一镜到底”验真，外卖商家后厨、堂食等实况公开展示"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxPVnpOMWZHd1podUg5d3dHRTB4SXdfVDU4WEtCTkxmSFpydE82MVd6UEcxNS1fZXFCV1o5QWREZmZGT2MwcmRuNTNGeG5pem0yTmxTNUxVNlpLVjN4RW83eFJVS2djWWczRUZfd0phRTYtNlpqVDFrRDliSWF4Sm9rekRsSi12Qm9kck9vOU9oeGVkZUo2NUVUMW9tY3NZaU5adnE4WUx6SWNfT2tRWjYxclZldWk?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):推出后厨透明化验真机制，食品安全透明度提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

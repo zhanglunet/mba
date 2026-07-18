@@ -164,3 +164,50 @@
   source_type: media
   lens_map: [leverage, category]
   note: "来源:R&D World。K3 发布重大信号;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-18-kimichat-011
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "中国AI公司月之暗面发布全球最大规模开源模型"
+  quote: "中国AI公司月之暗面发布全球最大规模开源模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwJBVV95cUxPd1JYUmFMRTc0V1RFZ2JYWE0yZkVQS1VtV1pabnZOXzE2VmVhSUFEb3hWUWczaUxfamVkU0JwcE1BY29HLW14dm4zR05MWTQ3SzVOSkVLUkhSWmRSRy1NWXF1LXl2dFVLRjJua3Fpcm5sZFpyUnprN0hNNDdsRXY5dy1LSDRzZi1sMGFKNm96aXVPQ3B6VVQ4UEtaVzNsTEljZ1lydExlMnp4bFQ0aFBsWnRGWFB4MjF5dWhEY2szcEFGNG1WVnFHNy16T0laQ0FjUUNnYmx4M1pod0dob2NHdnZGRERFV0E0emRZU3Azd05OMXh2bmV3cE9sVC1kNEpQN1VWX2w3M2YycHdSRk5fLUxURjVWVU9uTWFEZTN0R1JzMFFmdkt5aE81R3I2eDRMUExhZndpSkF3U0HSAbsCQVVfeXFMUHQ0dk15M192ZDczNTdBcVJLMFp5WkFSZ3hZLTJTZmx6SkZ5Q2kweWs2WnVoWE02eDRSVG16SGMxd2lVRWhuQWluaGhoRW5TVS1CcUctQ1VxQ0JLWUstd0l1SkJiSUM4YzBJcndXYTFXZG5CS1BpbmhWQ0dPZTlUYWtWWmdpZDFYTVBSaFBKczh5dTY3bmg0N1Y5Q0Y1QnAxZlFnLUNrUmF6Nzl0QlM0MHgyMlBoc05sN0tvMEhieHRNb2dmUUFodVZ3RGZHMDJOUlhreFk4YVNzaExFY2lEVk5WQ0k2ODZ1UEZoX3BPT0RqOGt4UG5aUk1rbW5PMVJ0T25EcWYwN0dqNVlHaVFudTBmVGZCVVU5LW02dEZKcG1hR1lmdVdsSGNJRXc4NXdJcl9rc1ZBRDlHRHZr?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源模型发布，重大产品里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-kimichat-012
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "中国AI公司月之暗面发布全球最大开源模型 向美国领先企业发起挑战"
+  quote: "中国AI公司月之暗面发布全球最大开源模型 向美国领先企业发起挑战"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivwNBVV95cUxOWEFwaEphTHh2cWg3TEszX3AzdVEwOHpsZ0k2ZFpwVGpVWW1NY25XamN6Zmltd0s0cGI4akp3UG5PbmNocDFaQVJQRTVrVTFUaUhFRzktQ3NTbU1ReEwtTDVPS0tUQ1g1QkNFNmpzUzA2Ql85a0NXdkFUYmpHTDJrMGhjdjNwSUN5QVBaTnJFZDdiWkdoSmxmaXp1bzN4RkFLRjlyMjZ1UXVpb04zb1NfVE80RmJLd1ZRMTV4anNRcHpVV19lOFNJRGN3UXNYM1cwVy1lZjRGVGdhd21ORjVveXdDR1VGWjRtczN2dHhlLUFtXzRTZmNVRjNIaDlEUFRFQUpYdC1NQWc0djVxTEZ0Ulh1UEQ4c2M3cFlPRjV3ellnMXVRcllQU2tleUdLZ00xZ290MjVVYmpod0hJYzFRVzQ4QUE0Tnc5VzVHcjRUWGdlQmVZcV95Y0cyQlBRY1pMdjlPa1N2dC0wR05SQXQ4WW9NaUlQTUxPaGlBRDl5U3c4ajRvR3lrTkdTUnNzMEYyVHlBOTQtMGZQSVE5VTZjV0Y4Mm5adFM4TkRCQVUzbHZXTnM5YWYweGdXb3lBaUU?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):产品发布与竞争定位，涉及市场竞争叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-kimichat-013
+  date: 2026-07-18
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Kimi K3来了：自己承认不如顶级模型，还涨价，凭什么？"
+  quote: "Kimi K3来了：自己承认不如顶级模型，还涨价，凭什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5ldThNRFo3SzY2Yk5lbG1iY3pqc04zdUxfWkx2RUIzVWhBdlZoMTRKc3dqRnVWdVJCamxPRjh5Q2NFWlpDTFAtZ1BOWG9NSGdvd0lUWTRVRHFvNGdScEpXd3hFVGQwRU16eUhaeUNZLWxQQQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):用户质疑产品定位与定价，舆论反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

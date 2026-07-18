@@ -63,3 +63,95 @@
   source_type: official
   lens_map: [signal]
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
+
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-17-amazon-005
+  date: 2026-07-17
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊公司旗下ZooX部门召回其自主驾驶车辆"
+  quote: "亚马逊公司旗下ZooX部门召回其自主驾驶车辆"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNaHVsNVpORndxVmNxLVlFNEFjQmZlekNZWF80MlVvbEgyT0duWlRKWTJxRUExdWROLTBMVngtbkRqV2g4WmN2VUdkcFdZVGpXQlNVZ0VOdm13NlFOcFJYSg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊自主驾驶部门召回车辆，涉及产品安全和技术风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-amazon-006
+  date: 2026-07-18
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美银测算：亚马逊建数据中心每GW成本250亿美元，比谷歌低三成"
+  quote: "美银测算：亚马逊建数据中心每GW成本250亿美元，比谷歌低三成"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9YaE5mUGdob0F2VFQ4OG01YkExODM5NjJxc2JUYjZXa3Q3dEU1Z0hkNV84b3lZQW5LWjc2dDcwTHFwemtfZHBQN1lMMGJjNlBxUC1NYlNOOUFQckdBTlYtYU9R?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊数据中心成本优势分析，体现竞争力和资本效率。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-amazon-007
+  date: 2026-07-18
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "郭明錤：亚马逊消费电子处理器转向芯片自研，2027年出货量可达4000万台"
+  quote: "郭明錤：亚马逊消费电子处理器转向芯片自研，2027年出货量可达4000万台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxQdWJLX3NycGhMTnlOenk3SFR1SXFQbGU2OUh5Z005QTRhV19IcWtabF83SVpMRmdhUVItd2VsaEJpNUt0cXZ5LTFQMXJJeDdsdUVEOHV5RE1RUjZ5MTJxZ0RBckpEZGQtX3A0ME83MnZkaFYzTS1mdkpFdjVFTFV0WXJRazIxNWtqTnRta1YtM2NzU3M4QmxaNWJIcnZaWm5Vc01RUHNwc3c3ZFJzbU44?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊芯片自研战略，2027年出货量预测，体现垂直整合方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-amazon-008
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "突发！亚马逊19年老将离职，贝索斯时代加速谢幕"
+  quote: "突发！亚马逊19年老将离职，贝索斯时代加速谢幕"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWMW1EWFFoMVFZNEFkQlZZd2thX0F1eGZ3QVZLSUhlU0V4UXE1a2Q1MHVxNS1iUldyMUNsV3VTa0pOSG9lRUMxUUlOaTEyNm9ObmJGUWNGUktLWHdRNTlFYg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊19年老将离职，标题党但涉及领导层变动和战略转向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-amazon-009
+  date: 2026-07-16
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊云科技中国峰会观察：Agentic AI规模化落地，商业价值转化的竞争已经开始"
+  quote: "亚马逊云科技中国峰会观察：Agentic AI规模化落地，商业价值转化的竞争已经开始"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTFBqNTBNNDNxd0ZucEs1VXFhTGJwM3VEclh1NUcybnlBY2o0VEtMdER5cVRaMjUybEdSaVFvZ05oc2owdlFwTUp1V1pGajFKd0l4bUFCdXZvRTZTUWhpX3dfazR2N0ttZ2FCUnU2WUhTSzczWGFa?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊云科技峰会，Agentic AI商业化落地，体现产品战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-amazon-010
+  date: 2026-07-17
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亞馬遜借鑒中國工廠啟用AI人力管理系統 上線幾分鐘喊停"
+  quote: "亞馬遜借鑒中國工廠啟用AI人力管理系統 上線幾分鐘喊停"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE9RVTNBbjRvY2dPWXRzNDJjU0pUX1FtMzl6bk05QlAtemtRUmRfQVhLSGxIWmEzVFNmZEdmS0djbHpDdnpiQVkyN2tDWnNuVVBxLUNYcjA2NTFpWUdoUy1fWjU3dTFzV1F1T1HSAWdBVV95cUxNbmg2X2ZnZVZaNHR0SFZGUFAxdloyUnp4THNucUhTUVNlWEJDS1ZHNHBLSWZrckxGUk1UX0lKUUJUX3pRb2tOd2pqTXJfUjZkS2JPMVBZWURjM1pxLWNLS2x6dXFSdmU4?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊AI人力管理系统上线即停，涉及伦理争议和执行风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

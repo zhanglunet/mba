@@ -118,3 +118,170 @@
   source_type: media
   lens_map: [leverage, signal]
   note: "来源:The New York Times。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"
+
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-18-anthropic-008
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利"
+  quote: "打破AI烧钱魔咒！Anthropic销售额暴增 有望迎来首个季度盈利"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FZ3J5WWVWb3ZmU1gtTnNjVVRWdWM1ZnpsUUhxZG9XU2k5UnBVekZsaURCaUViSTRuaHBZZWdURXI1MnczZ3QtLQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic销售暴增与盈利预期，重大业绩信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-anthropic-009
+  date: 2026-07-18
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "6小时，200美元，0人类代码：Anthropic把AI编程推过了临界点"
+  quote: "6小时，200美元，0人类代码：Anthropic把AI编程推过了临界点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5HTUR3MlJWVUpSWWtCSVl0eVhOMFBwQnNQb3NtYUYwNmVQMmJ6ZVZwbVNYaDRHbHp5TXdoWWNtc1JoUkg0QzNkc3hodjRzUQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude编程能力突破，产品性能里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-anthropic-010
+  date: 2026-07-18
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "特朗普禁令被绕过？Anthropic新模型魅力太大 美政府机构争相合作"
+  quote: "特朗普禁令被绕过？Anthropic新模型魅力太大 美政府机构争相合作"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1CU1NqY2F1SlB1MlJJUzhJVXBNczFzV1d2YV9oZjc1cnVTR2lBbktnYWNfN0ZXWWFaQW0ybnVqdC1QRWJCT1lmZw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):美政府机构合作，涉及政策与商业关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-anthropic-011
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic IPO ：关于Claude缔造者，你需要了解的一些关键信息"
+  quote: "Anthropic IPO ：关于Claude缔造者，你需要了解的一些关键信息"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxQcGhOZWZ5MHM5aXU4dmgyOWhLYmM0NUdKdHVVa0VfUlRLOVBVX2kxM0p5YmVSaThsZWFuUXNnMWdYM0E3NWtmeDF1VHJyQmYzTl9JNS13dTRlUXBxZFRSdzI5U1FxcXc4bko0cU5KYTE3Q205aDJ5bElMNWpUeDlXVVpvSlhyV2JnWFI1ekcyX0ZtcmZydVExSmloaGN1aEJiQ25uM1Niaw?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic IPO计划，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-anthropic-012
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Kimi K3发布冲击美国AI高价模式，Anthropic认怂Claude Fable 5永久可用"
+  quote: "Kimi K3发布冲击美国AI高价模式，Anthropic认怂Claude Fable 5永久可用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFBzUnBKU1VvbjR2X3pnczRNSWRIRjkxS0Y4R1NTcks3czFkZ3BnazNzci0tVGZLNkNGVS1VTl9nVG1NMWhVT2RHeWxsR2dDT0ZhdVZSTnFqcnZLeU5WWDZwa2tKbWtYUzJvSGJB?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(med):竞争压力下Claude定价调整，市场竞争反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-anthropic-013
+  date: 2026-07-17
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic呼吁全世界停止AI研究？网友吵翻了"
+  quote: "Anthropic呼吁全世界停止AI研究？网友吵翻了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE42azJWSGFnaW5jSlVNV3o3N0pDeE1lZjJIUDJDZ3dTQXVjckVsTGdNMkMzYkdQVTlWaWJvXzNiN2trZVlaQzlFendvVzRBbV9GTjdN?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(med):Anthropic呼吁停止AI研究，品牌立场争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-anthropic-014
+  date: 2026-07-18
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Meta酝酿与Anthropic达成百亿美元大单 试水全新云计算业务"
+  quote: "Meta酝酿与Anthropic达成百亿美元大单 试水全新云计算业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwwJBVV95cUxOaWRUaDNDTV9YeE0wRWtYYTlPaFp6NkgzTktlejBHTE5OWGRfN3ZhRDVDVUxESk5mMFluaEp2MDE3QUZlOWJBRXJKNGpKb2Y4VnhJeVZtZm5DMGFRWG9CcnZfTkxzWDF1Q3VvVHpKQzA3cUVkX3hJQzJuMUVweXYzZGtKSXU0XzduMGVXMDVMU1IxQnpCczBmcm1RbThvWkFMLWJIb2tObEhSZFl1dUNmZUVWbUppVC05NjdoQk5JSExDbzY0b1F1Y3VhWVE4V2VZdG80ZWRZVzdzeFd3YXFRSGh1amVQZHNUbGZQSDU2TE9SQ1VVY2k0VXBQeVpZTnczNFMxNVZUTDl1djNla1paY0R6bFkwWTlOZFREek41ZzMwOTN3NUY1N0hHNWRQcGJrcGVScjVpTDBvUEFTN2didE5WTQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Meta百亿美元合作传闻，重大商业合作信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-anthropic-015
+  date: 2026-07-17
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic研究发现Claude模型内部存在可探测的J-space工作空间"
+  quote: "Anthropic研究发现Claude模型内部存在可探测的J-space工作空间"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE8wdExGbm1yVHJTamJFRlZrUWR4czZiM19EQ0gtbTNlU2JmQzJyUVhrMGgtNmZGMmlRTlpkNU93TU9iYUVsVG9UNmFrMXNKbnJNMG5nTg?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude模型内部机制研究发现，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-anthropic-016
+  date: 2026-07-17
+  dim: W2
+  severity: P3
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic在疯狂省钱？Claude已不读MCP描述符"
+  quote: "Anthropic在疯狂省钱？Claude已不读MCP描述符"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFB2eWoyREp3dE1NSXIybDF5a3U3TmpOUURrTEhSNjJzRlNBeFhPZFk5NVd4UWRxcHBjRGxYNldCQ1NSckNRclZZQlRvZl9nVG9MTFhKTmFsM3poSXhoQVhiT253?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude成本优化措施，可能影响用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-anthropic-017
+  date: 2026-07-16
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Notion恢复Anthropic模型访问 澄清服务中断系临时故障"
+  quote: "Notion恢复Anthropic模型访问 澄清服务中断系临时故障"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE83bHh2WkdHOUYtYk1oTWpPeVJuMVFkX3VoMFRGR1FTUkRkUVpuN1JYSUt5MjQ0TWZOaW9fS1RIaXdQY1AxV1RpTA?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):服务中断澄清，涉及产品可用性，具体事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-anthropic-018
+  date: 2026-07-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "两周搬完一百万行代码：Anthropic用Claude把多年不敢碰的语言迁移压进一个周末"
+  quote: "两周搬完一百万行代码：Anthropic用Claude把多年不敢碰的语言迁移压进一个周末"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBoaGtrTFlwWW9oM0xkMnYwZllzRWYycDdpLWVING9TMmNrTVQ4a1NaS2Ffb2hLdzExemdxVXRVdVZETFZsT0hCRExGRF9qQQ?oc=5
+  fetched_at: "2026-07-18T23:15:28Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品应用案例，展示Claude技术能力，具体成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
