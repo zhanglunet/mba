@@ -95,3 +95,64 @@
   lens_map: [signal, leverage]
   source_type: finance
   note: "资本市场信号;300 亿美元为原文口径,不作事实断言;日期以 URL 内嵌(2026-06-09)自证。"
+
+# ── K3 发布(2026-07,重大舆情信号)· 采源 Google News RSS,url/quote/date 取自源 feed ──
+- id: 2026-07-16-kimichat-007
+  date: 2026-07-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "开源 K3 以前沿级结果震动 AI 界"
+  quote: "China's open-weight Kimi model stuns AI world with frontier-level results"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxPQzVrUG9XYnlvdFlrVzlBZWpiV2R2NWxROG9zcVVUclYxcE9yeFdFQUtIU3hmV3Itc2cwS1JtZFZKdXh2WVloQWdvZGdoUUtvdUpiQUF4NmRCNl9MQWFnbTFmOHdVQW9YR2V3YTdFQ3N1bUdBak0xRFVQbmtxU2plNzEySi0?oc=5
+  fetched_at: "2026-07-18T02:30:00Z"
+  source_type: media
+  lens_map: [signal, category]
+  note: "来源:Axios。K3 发布重大信号;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-17-kimichat-008
+  date: 2026-07-17
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "发布 K3:自称全球最大开源模型,逼近美国前沿"
+  quote: "China's Moonshot unveils world's largest open AI model, closing in on US rivals"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxOUFBidnJRbHRkSDh4WXNUVlBOY1VmZ3NCSlRhQzEwZWY3dGJfeXlMQ1FWN1FheElOWU0wdFBJZ2p0Y0VDSnd2RDlDSExSQ3lOb19UYkc4Q0d6UEtsQzN4TWg2LWtianhwbEgtZmR4OWs4QU9QbjM3RkJqNHI2TmgzRVRxcXhuRlE4ZHdlRFRvNlBvWUxYUkFQRmZ1Y3NaeWh1V0swM2NHaW5NcEg2UGdiOHFMMzN4bGMweVE?oc=5
+  fetched_at: "2026-07-18T02:30:00Z"
+  source_type: media
+  lens_map: [category, leverage, signal]
+  note: "来源:Reuters。K3 发布重大信号;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-17-kimichat-009
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "K3 令股市重现「DeepSeek 时刻」波动"
+  quote: "Kimi K3 Just Triggered DeepSeek Flashbacks for the Stock Market"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxOTDN6aG8wN0NySDhTTXVDcW9HQkJXTXV1Y3dnTWJWd2VNcGdSbTdhN0ZBNkU3dk5DbFNlNFBITGdlMl9CMXIzVHU1aHBlbGVZLWNVXzh3WHBaUi1RLWpXbTFiWVNqTU1ua2lzUkpfMTc0WjFZMW9fME9SNzFvdWdxaGRYYzN6NnZ5TmdLei1acFZXejBCMzh3U0xwTks?oc=5
+  fetched_at: "2026-07-18T02:30:00Z"
+  source_type: finance
+  lens_map: [signal]
+  note: "来源:Yahoo Finance。K3 发布重大信号;日期取自源 feed 的 pubDate。"
+
+- id: 2026-07-17-kimichat-010
+  date: 2026-07-17
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "K3 以约三分之一 token 价格逼近前沿基准(高效叙事)"
+  quote: "China’s Kimi K3 comes close to Fable benchmarks at one-third the token price"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxQZnd3SmZpZ2hBczctdDNQUW8zbS13SVQxUC1mVlYtVklTempKV2RiYXQxTTNzX0hwNlhYMzc1bEs4czVZeVVYcVJhSDVlVzZHZ0EwWEo0YXdUMTc4cFdJRHRyMXp3NjUyY3ZKRlBXMzVzSTBZd1F0R1VCN1VmVDlLTWh1VHNaMkxobUpLcWNQa09hNHk0cVYwZEVlbGc4RGVCQmc?oc=5
+  fetched_at: "2026-07-18T02:30:00Z"
+  source_type: media
+  lens_map: [leverage, category]
+  note: "来源:R&D World。K3 发布重大信号;日期取自源 feed 的 pubDate。"
