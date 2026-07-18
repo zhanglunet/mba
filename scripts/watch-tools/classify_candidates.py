@@ -33,6 +33,8 @@ import argparse
 import json
 import os
 import sys
+import time
+import urllib.error
 import urllib.request
 
 DIMS = [f"W{i}" for i in range(1, 10)]
@@ -126,8 +128,21 @@ def call_llm(items, prov):
         headers = {"content-type": "application/json", "authorization": f"Bearer {key}"}
         url = f"{base}/chat/completions"
     req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers, method="POST")
-    with urllib.request.urlopen(req, timeout=90) as r:
-        body = json.loads(r.read().decode("utf-8"))
+    # 429/5xx 退避重试(GLM coding 计划等端点 QPS 严,连发易被限流)。
+    delays = [4, 10, 20, 35]
+    for attempt in range(len(delays) + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                body = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504) and attempt < len(delays):
+                ra = e.headers.get("Retry-After") if hasattr(e, "headers") else None
+                wait = int(ra) if (ra and str(ra).isdigit()) else delays[attempt]
+                print(f"classify: {e.code} 限流,{wait}s 后重试({attempt + 1}/{len(delays)})", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            raise
     if kind == "anthropic":
         text = "".join(b.get("text", "") for b in body.get("content", []) if b.get("type") == "text")
     else:
@@ -139,7 +154,10 @@ def classify(cands, prov):
     """给每条候选加 suggest 字段(model-judged)。分批调用;某批失败则该批留空建议。"""
     for c in cands:
         c["suggest"] = None
-    for start in range(0, len(cands), BATCH):
+    starts = list(range(0, len(cands), BATCH))
+    for bi, start in enumerate(starts):
+        if bi:
+            time.sleep(float(_env("MBA_CLASSIFY_BATCH_PAUSE", "2")))  # 批间隔,避开端点 QPS 限流
         chunk = cands[start:start + BATCH]
         items = [{"i": i, "brand": c.get("brand") or c.get("slug"),
                   "title": c.get("quote") or c.get("title"),
@@ -148,7 +166,7 @@ def classify(cands, prov):
         try:
             sugs = call_llm(items, prov)
         except Exception as e:
-            print(f"classify: ⚠️ 批 {start//BATCH} 调用失败({e}),该批留空建议。", file=sys.stderr)
+            print(f"classify: ⚠️ 批 {bi} 调用失败({e}),该批留空建议。", file=sys.stderr)
             continue
         for c, sug in zip(chunk, sugs if isinstance(sugs, list) else []):
             if isinstance(sug, dict):
