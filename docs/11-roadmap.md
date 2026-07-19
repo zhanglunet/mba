@@ -6,16 +6,16 @@
 
 ---
 
-## 当前状态快照（2026-07-16）
+## 当前状态快照（2026-07-19）
 
 | 维度 | 状态 | 备注 |
 |------|------|------|
-| 版本 | **v0.5.0** | 关系宇宙:创始人维度 + 创始人晚餐(品牌×品牌合作推演)+ 产业维度 + 七家科技巨头入库(22 品牌,含首次真实 --panel-drop)+ 全站巡检;v0.4.5 舆情驾驶舱;v0.4.4 知识星图 + 飞书群推送;v0.4.3 Brand Watch 全链路(W1-W7) |
+| 版本 | **v0.6.0** | 舆情自动化闭环:每日发现候选 → LLM 多 provider 预分类 → 自动折入 events.yaml 开 PR → 人工只审 diff;前台 Triage 页;4 场 EVOLUTION 重审(kimi/deepseek/microsoft/nvidia);v0.5.0 关系宇宙(创始人 + 晚餐 + 产业 + 七家科技巨头);v0.4.5 舆情驾驶舱;v0.4.4 知识星图 + 飞书群推送 |
 | 5阶段流水线 | ✅ 生产就绪 | Phase 0-5 + Phase 5M（panel-merge）稳定 |
 | 评委面板数量 | ✅ 10/10 全部可运行 | default / auto / security-cn-global / ai-app-cn / edu-cn / vc-en / vc-cn / consumer-cn / cross-border / luxury-en |
 | 评委全档进度 | ✅ **42/43 全档** | 1 人仍在 seed（`zhanglan` 已严格核算诚实留 seed）；权威名单见 `docs/10 §6`（本表曾长期滞后，勿再手抄 slug） |
 | mbabrand.com | ✅ 上线 | Cloudflare Pages |
-| 公开报告 | ✅ **24 品牌** | 15 品牌有 EVOLUTION 多版本(22 份历史快照);**NVIDIA 8.88 现居审计史最高**;本轮新增七家科技巨头(Apple/Google/微软/亚马逊/华为/NVIDIA/DeepSeek)+ Tesla + Palantir(2026-07-17),含 **4 个真实 `--panel-drop`**(微软/华为/特斯拉/Palantir) |
+| 公开报告 | ✅ **24 品牌** | 多品牌有 EVOLUTION 多版本;**Apple 8.84 现居审计史最高**(NVIDIA 经 v1→v2 重审 8.88→8.80 退居第二);本轮 4 场 EVOLUTION 重审(kimichat/DeepSeek/微软/NVIDIA);含 **4 个真实 `--panel-drop`**(微软/华为/特斯拉/Palantir) |
 | CI/CD | ✅ 全绿 | 面板校验 + 报告结构校验（硬/建议分级）+ 站点构建 |
 | 集成测试 | ✅ 已建立 | report-validation.yml + MCP e2e（真实 MCP 协议层） |
 | --dry-run / --panel-merge | ✅ 已实现 | Phase 0 §0.5 / Phase 5M |
