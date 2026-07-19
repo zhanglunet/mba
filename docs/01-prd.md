@@ -152,7 +152,8 @@ MBA 用三条对应机制解决:
 - **v0.4.3** — Brand Watch 舆情监控全链路(W1-W7):watch 只建议、永不改分;数据层 + 校验硬 gate、触发评估器、`--watch` 进 skill + EVOLUTION 消费、首页徽章 + 时间线页;MCP 16 工具
 - **v0.4.4** — 品牌监控可视化与触达:全维度知识星图(`/starmap.html`,82 实体/184 边)+ 每品牌私有星图(`/starmap/<slug>.html`,评分矩阵+舆情+版本)+ 品牌监控/舆情变化自动推送飞书群(`notify-feishu.yml`)
 - **v0.4.5** — Brand Watch → 舆情驾驶舱(docs/20):事件 schema 补 4 字段(关联人物/来源类型/建议动作/预警层级)+ 飞书 L1/L2/L3 分层预警 + 每品牌舆情驾驶舱看板(`/watch/<slug>/cockpit.html`:管理层摘要/风险归因/投资社区/可筛选全量表)
-- **v0.5.0** — 关系宇宙:创始人维度(docs/21)+ 创始人晚餐/品牌×品牌合作推演(docs/22)+ 产业维度(docs/23)+ 七家科技巨头入库(15→22 品牌,含首次真实 `--panel-drop`)+ 全站功能巡检修复(docs/24)(当前)
+- **v0.5.0** — 关系宇宙:创始人维度(docs/21)+ 创始人晚餐/品牌×品牌合作推演(docs/22)+ 产业维度(docs/23)+ 七家科技巨头入库(15→22 品牌,含首次真实 `--panel-drop`)+ 全站功能巡检修复(docs/24)
+- **v0.6.0** — 舆情自动化闭环(docs/16):前台 Triage 页(打勾采纳/丢弃 + 一键提 PR)+ 每日发现候选 → LLM 多 provider 预分类(GLM/OpenAI/Anthropic)→ 自动折入 `events.yaml` 开 PR → 人工只审 diff;4 场 EVOLUTION 重审(kimichat/DeepSeek/微软/NVIDIA)+ Tesla/Palantir 入库(24 品牌)。反捏造:AI 只判类不改分、合并=人工闸门(当前)
 
 ## 11. 衍生需求(待评估)
 

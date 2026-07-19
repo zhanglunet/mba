@@ -4,6 +4,39 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
+## v0.6.0 — 2026-07-19
+
+**舆情自动化闭环 —— 从「人工核验候选」到「AI 自动分类 → 折入 → 只审 diff」**:本版把 Brand Watch
+的信号处理从人工粘贴候选,升级成一条每日自动流水线:发现(噪音过滤 · 中文)→ LLM 多 provider 预分类
+→ 自动折入 `events.yaml` 并开 PR → 人工只审最终 diff 合并。同时用 EVOLUTION 模式对 4 个品牌做 v1→v2
+重审,新增 2 个监控品牌(Tesla / Palantir)与第 3、4 个真实 `--panel-drop`。均守 MBA 边界:
+**AI 只判类不改分、合并=人工闸门、引文逐字取自源 feed**。
+
+### Added
+- **舆情前台 Triage 页**(docs/16)——`site/watch/triage.html`:候选事件卡片打勾采纳 / 打叉丢弃、
+  可改 dim/severity/direction/lens,「✅ 提 PR」一键预填 GitHub 新文件深链(取代复制粘贴 + 读 PR diff);
+  候选标题中文化。
+- **LLM 自动分类流水线**(`watch-discover.yml` + `classify_candidates.py`)——每日 discover(Google
+  News RSS,噪音过滤:行情页 / ticker;中文 locale)→ 多 provider 预分类(GLM / OpenAI 兼容 / Anthropic,
+  含 429/5xx 退避重试)→ 高置信项 `fold_adopt.py` 折入 `events.yaml` → 自动开「建议入库」PR。无 key 时
+  优雅兜底:候选直推 main → 前台 triage。**反捏造:标题/日期/URL 逐字取自源 feed;dim/severity/direction/
+  lens 为 model-judged 分类(明确标注、不假装客观);审计分数从不自动变;合并=人工闸门。**
+- **`watch-adopt` / `fold_adopt`**——把 triage / auto 采纳的扁平事件按 slug 折入各品牌 `events.yaml`、
+  重算 id、跑 `validate_watch`;机器人自动 PR 改为**开 PR 前本地折入**(绕开 GITHUB_TOKEN 开的 PR 上
+  workflow 被 GitHub 卡成 `action_required`)。
+- **4 场 EVOLUTION v1→v2 重审**——kimichat(K3 驱动)· DeepSeek(8.00→8.28)· Microsoft(8.65→8.55)·
+  NVIDIA(8.88→8.80),按已入库 P1 watch 事件驱动 delta 打分、版本化报告 + `consumed_by` 清「建议重审」触发。
+- **2 个新监控品牌 + 第 3、4 个真实 `--panel-drop`**——Tesla(马斯克,第 3)· Palantir(Alex Karp,第 4);
+  第 3 场创始人晚餐 任正非 × 马斯克;8 个新品牌舆情驾驶舱冷启动(27 条可溯源事件)。
+- **首页「重大舆情 · 近期异动」提醒块** + oaf.world/spacex 跨站互链上创始人页 / 驾驶舱页 / 首页。
+
+### Fixed
+- `watch-discover` 开 PR 改尽力而为(Actions 默认禁建 PR 时回退分支 + 提示);triage 提 PR 补齐字段拦截、
+  discover 噪音过滤;GLM coding 端点 429 → 改走 Anthropic 端点 + 退避重试。
+
+> 规模:**24** 已发布审计品牌 · **24** 创始人档案 · **3** 场创始人晚餐 · **4** 处真实 `--panel-drop`(微软 · 华为 · 特斯拉 · Palantir)。
+> 榜首:Apple 8.84 · NVIDIA 8.80(重审后)· SpaceX 8.76 · Amazon 8.72 · Hermes 8.64。
+
 ## v0.5.0 — 2026-07-16
 
 **从「品牌监控」到「品牌 + 创始人 + 产业 + 组合」的关系宇宙**:本版把 MBA 从单纯的品牌影响力

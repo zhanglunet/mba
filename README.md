@@ -13,7 +13,7 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 `/mba` 文件夹下的核心 skill 名为 **Metric Brand Auditor**(MBA)—— 一条由 Lead 编排、子 agent 并行执行、人物评委 panel 独立打分的品牌影响力审计流水线。默认 panel 是 5 位评委,另有 9 套行业 panel 可按需替换 / 扩展(共 **10 套内置 panel、43 位评委,全部可运行**)。整个仓库就是这条流水线的源代码 + 角色资料 + 历史报告。
 
-> **v0.5.0** —— 两种用法:① Claude Code **skill**(`/mba <brand>`);② 独立 **MCP server**([`mba-mcp-server`](https://www.npmjs.com/package/mba-mcp-server),已上 npm,16 工具含舆情监控),可接进 Claude Desktop / Cursor,支持**品牌订阅 → 舆情/定时/事件触发 → 自动重审 → delta 报告 → webhook/email 通知**的演化闭环。**本版起**:22 品牌 + 创始人维度 + 创始人晚餐(品牌×品牌合作推演)+ 产业维度。见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
+> **v0.6.0** —— 两种用法:① Claude Code **skill**(`/mba <brand>`);② 独立 **MCP server**([`mba-mcp-server`](https://www.npmjs.com/package/mba-mcp-server),已上 npm,16 工具含舆情监控),可接进 Claude Desktop / Cursor,支持**品牌订阅 → 舆情/定时/事件触发 → 自动重审 → delta 报告 → webhook/email 通知**的演化闭环。**本版起**:24 品牌;**舆情自动化闭环**——每日发现候选 → LLM 多 provider 预分类 → 自动折入 `events.yaml` 开 PR → 人工只审 diff(AI 判类不改分、合并=人工闸门)。见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
 > 新增:[全维度知识星图](https://mbabrand.com/starmap.html) + 每品牌私有星图;**舆情变化自动推送飞书群**([docs/19](docs/19-feishu-notify.md));**舆情驾驶舱看板**(`/watch/<slug>/cockpit.html`,管理层视角,[docs/20](docs/20-sentiment-cockpit-mapping.md))。
 
 ## 团队 / Team
@@ -32,7 +32,7 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 **网站 [mbabrand.com](https://mbabrand.com)**
 
-![mbabrand.com 首页 —— 22 品牌 · 产业筛选 · 创始人维度 · 舆情信号](docs/screenshots/site-home.png)
+![mbabrand.com 首页 —— 24 品牌 · 产业筛选 · 创始人维度 · 舆情信号](docs/screenshots/site-home.png)
 
 **创始人晚餐 [Founder Dinners](https://mbabrand.com/collabs/)** —— 把两位创始人放一桌,按 5 镜头假想推演品牌×品牌合作机会(AI 演绎 · 非真实合作 · 诚实盒并列合作张力)
 
@@ -46,9 +46,9 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 ![MBA · Metric Brand Auditor — 项目介绍封面](docs/screenshots/presentation.png)
 
-**已发布报告（22 品牌 + 22 创始人 + 6 产业 + 2 场创始人晚餐）[mbabrand.com](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
+**已发布报告（24 品牌 + 24 创始人 + 6 产业 + 3 场创始人晚餐）[mbabrand.com](https://mbabrand.com)** · [BotLearn 一键安装](https://www.botlearn.ai/en/community/u/mba_auditor)
 
-**当前榜首**:NVIDIA **8.88**(vc-en,发明 GPU 品类 + 最深护城河)· Apple 8.84(vc-en,Identity 9.6 全场最高)· SpaceX 8.76(vc-en)· Amazon 8.72 · Microsoft 8.65(首次 --panel-drop)。实时榜单、全部 22 品牌、创始人/晚餐/产业、舆情信号与版本轨迹见 [mbabrand.com](https://mbabrand.com)(本表不再静态维护,以免与站点漂移)。
+**当前榜首**:Apple **8.84**(vc-en,Identity 9.6 全场最高)· NVIDIA 8.80(vc-en,EVOLUTION 重审后)· SpaceX 8.76(vc-en)· Amazon 8.72 · Hermes 8.64。实时榜单、全部 24 品牌、创始人/晚餐/产业、舆情信号与版本轨迹见 [mbabrand.com](https://mbabrand.com)(本表不再静态维护,以免与站点漂移)。
 
 **黑客松 5 分钟 Pitch 稿** · [Markdown](docs/hackathon/pitch-5min.md) · [HTML](docs/hackathon/pitch-5min.html)
 
