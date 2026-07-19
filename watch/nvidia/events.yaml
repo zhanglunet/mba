@@ -174,3 +174,94 @@
   source_type: media
   note: "LLM 预分类建议(med):与TEL合作扩大，战略合作事件，信息不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-16-nvidia-012
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达推出全新Jetson Thor计算机，搭配智能体技能，大幅压缩机器人内存使用量"
+  quote: "英伟达推出全新Jetson Thor计算机，搭配智能体技能，大幅压缩机器人内存使用量"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAJBVV95cUxQLUdQWEdrNkdfZUFPcTJvWjRTak5Od0ZwaUtfaUlVR0J0endXUlY1OWtsSDE1SlR0QmVxbHJDd3VOcGF6M01Qc1dsNWxndkpkY0JtemQxY3VvZmpjS1RDN21seWQwR3NtYkwwdHNIeUdyZ3JVazNqU2dQNUFlbmVkVTl4ODI1NjBVY2RBMWRvMTNIa3ctYURnX3cyZGlYWUlvcnBmeXlMbU5FQzYzVmVITTlwV29RaThya3IxTjdXWFRxUjlybWFoNzI1QUQ3RS1scm5DY2s1bFN6UDYxXzJOc1BUbncydmp0U2JzT2dQbE5GUlg2T0RuWTYwRm1sWnJlV280U280MkxOX2luTExzQQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品发布，技术创新亮点明确，具有市场影响力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-nvidia-013
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA AI 前沿 | 打造从云端到终端的智能体 AI 全栈（下集）"
+  quote: "NVIDIA AI 前沿 | 打造从云端到终端的智能体 AI 全栈（下集）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFAwSjhqeGtFQ01ZZnlGYS0yWUNHbE96MG96dThGQjJicTBIMEpNa1JtQTJWbUxsM3pPekpaTjhoSjVoLVBueGdhRmZvb3B5dDBRdElKTzhnZENtNHpWbHdqZS13?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方内容系列，战略方向阐述，品牌舆情价值高。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-nvidia-014
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达不增显存，另辟蹊径破解显存难题"
+  quote: "英伟达不增显存，另辟蹊径破解显存难题"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5pY2g5VFBmTGsxRllkWVpzbFY4a1hHWUJWWlhBaUhPSFIyb091ZEZJVHlsaEhoX0Q0cUxxX2dKRzI1N19ITjNMcEVRM1MtcDF6YXZtOVl4cGxhYy14eVhKdGF3?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):技术方案创新，解决行业痛点，具有竞争力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-nvidia-015
+  date: 2026-07-17
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "日本下单27500片Nvidia Rubin芯片，专攻机器人基础AI模型"
+  quote: "日本下单27500片Nvidia Rubin芯片，专攻机器人基础AI模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE44MXZYMnZiR29seHpJTG54djBLMHVTOTFnM0IyN3Y5b3pudTJyOWJSTFEtblpHdDNlckVUcmhQWVpZSi1NMUdUNnpWNENNZU5hbm9ONkhZZnRXbk0wbFNuVzVn?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):大额订单确认，战略客户拓展，市场需求信号强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-nvidia-016
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达T3000/T2000模组来了，预计明年上市"
+  quote: "英伟达T3000/T2000模组来了，预计明年上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBzYjJjSnV1VFVZRHdKRHFqdXllRWJTbXRieWxQU2Y1a2pUOFYyVjBLNnVFUE42OFM0YXlNN0NVOEhLdXNISHJ5MDZVLVpubnk0UHRjX2tjcFNKUks1Tl9RQ0NB?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品线发布计划，产品矩阵扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-nvidia-017
+  date: 2026-07-16
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "高通、英伟达、地平线，都在做同一件事"
+  quote: "高通、英伟达、地平线，都在做同一件事"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE4xM19YeDNZRUFPY1ZpVGR6akVwaTZCZTlKRDdwLUZ6eklPdE5GMTJJVkpjUi1lWkNLWXdWLWVjdVBkQ2FsNEl6UmwyQ2toeVVtOGtBSzktc2FKVXdmSGNuOElR?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):竞争格局分析，涉及英伟达战略定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -140,3 +140,79 @@
   source_type: media
   note: "LLM 预分类建议(high):区域涨价政策，可能引发消费者反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-18-tesla-010
+  date: 2026-07-18
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "7万美元！特斯拉正式登陆印度市场 Model Y起售价为主要市场中最高"
+  quote: "7万美元！特斯拉正式登陆印度市场 Model Y起售价为主要市场中最高"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxOOFNOX3VVbjNmM2tKdHFKRXRWNGI4MWZyUFVYd0dHVU91SnFZM0NEUFdNeU1wbjdNemRYbFRscnNjVlA3WDAyUzhESTUwTE9Sa1BpQnlySXFRVXVyNGFQMWdUSWFhQVNlNGFCc0txLVNfczFxV1BQS0pKR0VMbmxybnBVT3pWcXBfZVRrT1Z1UUFoRWpzLVgxc2RWMkVWOWhL?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉进入印度市场，重要地域扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-tesla-011
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉宣布接入Carplay，历史的车轮倒退了？"
+  quote: "特斯拉宣布接入Carplay，历史的车轮倒退了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CWEJudFVJQ0RGam1nRnN6amN1TzRiWlRNMXhYM2lCVW9GNklMSU02MFR3S2REYi1OMlVUdVJKR2s0YTdnM3lJdy1sb0xxWmVxbko5N1NYN1NtMUE?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):产品策略调整，引发舆论讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-tesla-012
+  date: 2026-07-17
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉(TSLA.US)Q1财报难言乐观，分析师将目光投向2026"
+  quote: "特斯拉(TSLA.US)Q1财报难言乐观，分析师将目光投向2026"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTVQ0aVZSWk9PNXJPc3Q1SU5DMU5ITnRYN3B1amlhcFJwTXg0YXhrT2V6N2ZmclJZcld6akFlanBSQXdvT0dXZkVrM3JBUi1sNEVKQmpKNmw5NXM4dkFmS09lN25zMm4yY2FoSzVJNzhCOHRVbGdJWHZpRWNTTFNfRU9ZbWdKZUthaTBraVJYTTBPNE9NbTB4ZlA4c1piaU9tWHNBaUk1dDA?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报表现不佳，分析师预期调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-tesla-013
+  date: 2026-07-17
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克的终极剧本？Baird：特斯拉与SpaceX合并一年半内落地，概率超80%"
+  quote: "马斯克的终极剧本？Baird：特斯拉与SpaceX合并一年半内落地，概率超80%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxNX1daR1QwZzBkQjR0N0V6UjdLSzl0dzRUTlNRTFkzVlpvd3RWZENLTFpaYUEyckgwNWxRZ2ZITm9nZTVKbUNGSjEzQ3lEekt0MDdqQlJDb0RYRHMzYWhnRTNkSjZjWFY2ZFRaNnlwMmJHaXMzYjUwWHdWX0hxY3EzRTVVU2xidTRjbkVtd3VPZXBNQlEtcTEzdFJpcG8?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师预测特斯拉与SpaceX合并，涉及重大战略传言，具舆情监测价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-tesla-014
+  date: 2026-07-17
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉(TSLA.US)董事售出9.37万股普通股股份，价值约1,824.7万美元"
+  quote: "特斯拉(TSLA.US)董事售出9.37万股普通股股份，价值约1,824.7万美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNNXZxMDlybFNOWVFrSlY5dHFOa0RYT0J3VElLOW1tR2k0NUJWQTBHOUtzNWF5VHAwdEtjNEdKdzduSHdqaEFVQ3QwSThBMTN3aDYxcUVyTTBaakcxNU54YmMtc1R3LUtIQ1lxRzh4Y3hFNVZSa1gzM2NLMURXYmpCU25ya2hwQlcyVElTQWNFTnhqdVd4MXctUzE5dw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):董事减持股份，属常规信息披露，可作为资本动向记录。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

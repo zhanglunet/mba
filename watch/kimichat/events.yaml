@@ -211,3 +211,169 @@
   source_type: media
   note: "LLM 预分类建议(high):用户质疑产品定位与定价，舆论反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-18-kimichat-014
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi K3，全球开源第一！"
+  quote: "Kimi K3，全球开源第一！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE4zdElua1I5d2hZUVg4QXZQaTZpZDlVdmxmbmhweEdFX1VnbVQ3YUFWaDhqRzNrNHR4bjRSOU56Qm44NlZjWGxwTQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3开源发布，涉及产品里程碑与技术突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-kimichat-015
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面发布Kimi K3：全球最大开源模型来了"
+  quote: "月之暗面发布Kimi K3：全球最大开源模型来了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBPaGRIenQtUkw0dmpuOGdqdHNjaVhmWkVVbFhyQXd2RTRBeThwSGNLVkg1ckUtcGxyOEZkdVFsWk5vTWxlSHg3dWpHQkJwdEJ4X3Vub2FVMFVlR3h5UmtrUXZDZW1aNV9Land0dGRicnBmT0xGblFuc3J5MXlIRzg?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3全球最大开源模型发布，涉及产品竞争力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-kimichat-016
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面Kimi K3正式发布，2.8万亿参数登顶全球最大开源模型"
+  quote: "月之暗面Kimi K3正式发布，2.8万亿参数登顶全球最大开源模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFAwdGdWRHNROXhRblIteURpTFQ2S3lhUHR6SGlOZUtwTms4bHczdHJaQm9kUlBOQmxjNlVlOVJael9Ua0pqUGQyaFJtWVZvOGQ5MmdmdTRDd1JyUkZr?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品重大发布，2.8万亿参数开源模型，具有行业里程碑意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-kimichat-017
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面发布Kimi K3新模型，挑战美国顶尖AI系统"
+  quote: "月之暗面发布Kimi K3新模型，挑战美国顶尖AI系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwJBVV95cUxOb1FKcEZNc1lCRTZIOXBwcXVWeFA1amwzeWVFTHUxcFFQSUxtMElNdGZrZjhkUHRyR084QnRtOU9VSjBiQnNwelVJTFJ3UW5fdTJoV2pmcmR2UzZQbkVQSlNQNXBVOWp0cHlfLWN1YmxjeWttaGN2aGZ6RWVmOTZxSWpveEFnZjJwRk14dURMbHpsWl84S19LYmtVM2tUZVFDcHZUaVh0UXZHWWRkcHU2WWgyRmRsME05bE4zQUFxWlh4SkI5QlZqTFB6YUlfNWNCSjVheGFrM25UaUF0NlVRZDV3b3pKbkktSlRTSzM2eXRfWGtpSFFkdHVUNzU5MVgwbHI0Q3pWRVliRXc1NEt1eGhnSnVLbTA2Qmc0ZHpvdWV3ck9xYU9J?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新模型发布与国际竞争对标，核心产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-kimichat-018
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面（Moonshot）发布全球最大开源 AI 模型，紧追美国竞争对手"
+  quote: "月之暗面（Moonshot）发布全球最大开源 AI 模型，紧追美国竞争对手"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE5iRVJwTllBLU1hWjRkQnZvR0hRSUw5NWVicklHMDRQRFlWcDgtTUlOMUVoQnhWd1ItM0pRbE9IQThLdXlFc01jWnUtQm1JZFF0RVVoWVZwZUxBdV9LMFVabXJtdVdQcmExcGhJMlFYOFVzZ2d0?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):全球最大开源模型发布，技术突破事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-kimichat-019
+  date: 2026-07-17
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "月之暗面发布开源模型 Kimi K3"
+  quote: "月之暗面发布开源模型 Kimi K3"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9RR3lkU0FIMnJJbUN3TktJZkVBcVVnZG9WWjZzTUF3SUlSQmpOeTItb3RCNjdaaE1ObXF5NFlxaW1WM3l4Qm4yag?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):产品发布基础信息，信息量相对简洁。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-kimichat-020
+  date: 2026-07-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi新模型K3刷屏，Coding得分超越Fable 5"
+  quote: "Kimi新模型K3刷屏，Coding得分超越Fable 5"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE5UVnRQekNVUmdkeTdCNUl0c1Vrb2VlTTJ3MFVEVnpvdVNFdjYwZ1hZZ3hjZ3NvdkRHS3JhQW1TRHY2TjJORkVscDhzNWVTbVBheTNORnZ3?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):性能对标超越竞品，具体技术指标对比。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-kimichat-021
+  date: 2026-07-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "中国AI初创公司月之暗面发布Kimi K3模型，称其可对标OpenAI与Anthropic"
+  quote: "中国AI初创公司月之暗面发布Kimi K3模型，称其可对标OpenAI与Anthropic"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAFBVV95cUxONmE2b2VRdXEteGJkRlpHN0hFNVA1cEZUX05jN0JrQjVFVDRsX0p5cGFpYm52elp2RWFGeW9ZaVZxWDAzQXVkRkdyV0tIY18tckhSbnJvMTZtTXlXU0ZYbkNDOUhld21YY2xVUzlXVWt6VmV1UklBaXVhMnptOHdFaGRBUk03QWVwNlBCNl9EazIyQWlVYnV6ZDRrNjBTbkxnenQ0VS1fbm1CT2lWZVhGeWJUX0RYdHdx?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新模型发布与国际一线对标，核心竞争力声明。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-kimichat-022
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面发布开源AI大模型Kimi K3，剑指美国顶尖前沿模型 提供者 Investing.com"
+  quote: "月之暗面发布开源AI大模型Kimi K3，剑指美国顶尖前沿模型 提供者 Investing.com"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBJdzU4MWJ6RkRvajNCUlF2TDZEZmRLb3NWcEFBd2Vrc2pYMTBDMkdaY0dsdDJzdnBHZS1rY2hOMXZZYVRhdExGSEdJYy1nWHRDQjU1ZUtNUzB0U2FxSktxUlFtX2VDUTNoVjVjUlF5Q3k?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源模型发布，对标美国顶尖前沿模型。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-kimichat-023
+  date: 2026-07-18
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "美国业内智囊如何评价中国爆火的 Kimi K3 AI 新模型"
+  quote: "美国业内智囊如何评价中国爆火的 Kimi K3 AI 新模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE12LXQ1TUhDQzF4bE5zeVdBNnhYSXcyemJRZ3BDZUR3a2g1cXk5cUJsWko5aHNlQThwcU5yd09zU0E4bEJDOW1XRktTUVNnM0Z3TDd2ZmpkMFB2ZWlxQTktQkMzczkwa2FYMlE?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):国际舆论评价，第三方权威声音。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-kimichat-024
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Kimi K3 深度拆解:2.8T、全球最大开源模型,月之暗面这次打的是什么算盘?"
+  quote: "Kimi K3 深度拆解:2.8T、全球最大开源模型,月之暗面这次打的是什么算盘?"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBSUE1YbVlxOFpuSUhvdU4yOU0wSjc0clEyc3llTEROdHZwQkJIUldXanZaOXFuS1lxWjEzQlpiRTk4MWo1NU1BZ21QYWE5VjNobTh4N2FhdjUxeGd6bVA3Vk80QjlHNnJtNnJoWnNXSDk4YUh5Q1pJQVhLTkFnbjQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品深度分析，战略意图解读。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

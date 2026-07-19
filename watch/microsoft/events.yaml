@@ -203,3 +203,94 @@
   source_type: media
   note: "LLM 预分类建议(high):微软产品功能迭代，Outlook功能停运并由Copilot替代，体现AI战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-17-microsoft-014
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "大摩：微软生成式AI领导地位“明确” Azure及M365支出意向持续走强"
+  quote: "大摩：微软生成式AI领导地位“明确” Azure及M365支出意向持续走强"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE14VC1wdzZqWjh5NzlpbE51VWFRMHJETHJKbEZIeXRBVEJtZzZzS2diWFU2NDF6Z09OTmVPX0FsUlhPWENfdUpZbFcyWQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):摩根士丹利评级，AI领导地位确认，Azure/M365支出强劲。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-microsoft-015
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "时隔30年微软开源经典聊天软件Comic Chat 融入AI现代化探索- Microsoft 微软"
+  quote: "时隔30年微软开源经典聊天软件Comic Chat 融入AI现代化探索- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SeTFqMHR2Tk5vMjd1YVFpYjVxNVZUM29udDhZOTdIbnZjd0tiSUQtRkRxMDBiQjkya2ZOSmVuWDc3aXhZeHh3VTVzbVhsZDJDRW5Udy1QZmZMeGRkcUZJYQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):经典软件开源并融入AI，品牌创新与开放策略体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-microsoft-016
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软正在研发一款类Mythos人工智能漏洞检测工具- Microsoft 微软"
+  quote: "微软正在研发一款类Mythos人工智能漏洞检测工具- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuZGNHMGsxbmRseGR6eXB1VzdUeTFGT0RKbm1MTUp1ZktnRkN3S3VXSW5RZ2sxZnJreXhYaU5fNU1LdWMzWEo2Rm5iRGxDN01iUDJhNnptOG9Cc1VJRngwVA?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI漏洞检测工具研发，安全领域创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-microsoft-017
+  date: 2026-07-16
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软Windows 10版OneDrive同步客户端将于2028年彻底停止服务- Microsoft 微软"
+  quote: "微软Windows 10版OneDrive同步客户端将于2028年彻底停止服务- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9nNG1vY1M4ZUpKSUlaN1c0V1ktZTJyR1pDWmdXV0dfUmdHVWxfN2NlLVgxMDBhWTFpUUNMcWRYV0ZGVm1fZzlBM0VJcllXeURacWl5blUzX1Y5UkNLU2ZjZg?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):OneDrive同步客户端停服，产品生命周期管理重要决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-microsoft-018
+  date: 2026-07-18
+  dim: W3
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "历史上最大的软件错误 Windows"
+  quote: "历史上最大的软件错误 Windows"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNc2VFbFpWdjJGUFNvOFB6T0U4aF9QSWVvdGZCRHNEYnBlTkJCX0lLdV8tREdHS1RYMTJHSjc1UFlORzN2S3l4bWpnakVzY20ydTdhUU9rODd3WXBvY2NwVEZyVjNtMEtKcFZLMkowRXhOR2hTczkzZ2hMZWtuUEthRmUwSWpCLVBMRl92V1FZZjJ1b0lMejR0R3pyQQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Windows重大软件故障，直接影响产品可靠性和用户信任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-microsoft-019
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软筹备推出类似Mythos的AI漏洞检测工具——The Information"
+  quote: "微软筹备推出类似Mythos的AI漏洞检测工具——The Information"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxONmRnUUU0YVZpT3p4TXF6UGU2Z0JkWjBRcTBfeXZaZmFYQl9HejlBNmltUlZOYmNubWM1cjNlUXNPOFBGaEtTTk90VzlISDhFSmJONnVDYnNYVE5DVFB2bzdvekFIQ0hLS1B0Y2JzT1plV1JRSWt1X0hUcHNxdVNPNEtySG1jbUgyZlp3a21SSm56OGdIZDRxdnI0blA?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):微软AI安全工具筹备，产品战略信号，信息来源二手。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

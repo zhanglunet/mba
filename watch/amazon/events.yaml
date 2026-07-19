@@ -155,3 +155,109 @@
   source_type: media
   note: "LLM 预分类建议(high):亚马逊AI人力管理系统上线即停，涉及伦理争议和执行风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-18-amazon-011
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "9连跌！“资本开支最高”的亚马逊跌入熊市，投资者对Mag 7“用脚投票”"
+  quote: "9连跌！“资本开支最高”的亚马逊跌入熊市，投资者对Mag 7“用脚投票”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxOcllPVGd1VXAyVURjdFpaa3RlU192VVJGSGVWYkViSHpxeGw1dkNMNmJxcnpfOFJyRzMxN0Z4NVFDWnhsWllPWEItZzR5MkNZdFQ1cXJXX3NQQi1RTG9laE12LUZyaUhNdVZlS3BtNHpLZmE3SzFkRmhpRmZzUE9yWEtLSW5RYklvZ1Jxdzc1Z052dlFsR2Y2UzE2bHhRNTJaajBmTzBqTThXaG5ZVHQ4?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊股价连跌进入熊市，投资者信心下滑，显著舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-amazon-012
+  date: 2026-07-17
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "松下召回中國造電烤箱 Costco和亞馬遜曾熱銷"
+  quote: "松下召回中國造電烤箱 Costco和亞馬遜曾熱銷"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wOVZ2bndnNEFBbURKakRhWlM1YmtZbXNsQVBYa3hEamt5clVpbDVwSERXbXpKV2oyNTJnNFhZdVU2VEl5SWlXQURjUlg1aGJZZFEwZkdnQU0wZ9IBVEFVX3lxTE1IeEh3VW4xNlZlYzZ0cjl0RklKWG53QXFaYk1GZktjRUNsX1VNNzBWSkd1b0hVaWdpajhXLW9fZlV3c0hJcF9vWWZMWGNHTk1HejNLTw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊平台销售产品召回，涉及产品安全和平台责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-amazon-013
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊偷跑售价499美元 HTC智能眼镜悄悄登陆美国"
+  quote: "亚马逊偷跑售价499美元 HTC智能眼镜悄悄登陆美国"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE84dUlrc2VqTUlaOFRfbVhteXhKeHQ0RmhiMWpNbHprRXI0OEFBNEh5cGVILV9qUWVpaHExRXk0bV9CQnpPSDFYMzdkY0tncGJPMUVla1RaUi13UTBxWi1hWUpn?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):亚马逊新品上架信息，产品战略动向，新闻价值一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-amazon-014
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "AWS Just Hit a $150 Billion Annual Run Rate. So Why Is Amazon Stock Still 9% Below Its High?"
+  quote: "AWS Just Hit a $150 Billion Annual Run Rate. So Why Is Amazon Stock Still 9% Below Its High?"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcVFoQ1RXMlB2a3dLalRUV1EzR0dNLWk4ZDg4N0U4MHNla1NnZFdNaXRVMzJ2SE81TGRKVzN3WE5ROFhvZkFiUzlPa292aV92OUpSTXdnb05naGg5VkJqei1VUUUwRG02MG1uSTA5emNJaV9uSDQzQlJFdTcwMXR2YXdrQllvdEVlbC1ycjBOSV9wWDdFeGUtcjM0bHZBLVpiZDVlWW1uNEhBb2FESGgtYU9YQlBmQzBk?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS业绩亮眼但股价滞后，反映市场预期与实际脱节。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-amazon-015
+  date: 2026-07-17
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "KeyBanc上调亚马逊目标价，看好其AWS增长前景！"
+  quote: "KeyBanc上调亚马逊目标价，看好其AWS增长前景！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQamJKUHRwMXFTM3Buc2tJNWo4LWV6OEh2Y0lFZWFNVmEyWmx3Q2hfbmtpTmhTVjVHbFlINVBWZlExWE4ydEdXaklRUTVfSVhVZWlQcDN0eW1LaUN2QVBhRWlFVWZwZkFtZmpieGRhREdWMWpuTE93N0NVNEoxaVB1WVFGOVBxRDI2?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):分析师上调目标价，正面舆情信号，但属常规分析评论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-amazon-016
+  date: 2026-07-18
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亞馬遜擬10億元建長島東北物流樞紐"
+  quote: "亞馬遜擬10億元建長島東北物流樞紐"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE5HWGFnMEtlU1duRGNBMWlhRUw4djc2SzZQSUprU2RFYVI1RzFIdDlwamh5WlpYbzN3WDVTby1vXzlHV0JHRmJTM1JZUmx6QjQ4T1lWMHgyT25ubnR1NVVRRFpOTmJvblRPZEHSAWdBVV95cUxPX2FFcXNRUHpNZEw0bWowaGxRTF90Vkh2SGZmWXotb3NjMHZNYzJkTTR1ZjlyUVBOdWtWVkFweG55NldCZGo1ZG5kRXNkTkdhZGZydHhwbjQ0TjRaT29NRncwUGgxNlJF?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊物流基础设施投资，战略扩张信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-amazon-017
+  date: 2026-07-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AWS：在亚马逊 Bedrock 上推出 Grok - 博客"
+  quote: "AWS：在亚马逊 Bedrock 上推出 Grok - 博客"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxNVVktbGI1bjdBNGpMUTlQaV82a05MajEwVUhKaUVaUEtuOW5ET0dTYUJtbHhINGNXUUpCNVlsUHVPQzlvTC1pQ0Z2WEtWUzNjZ3E5Yjc2N1BEZGJSaUNPWWlEY2UtZnRQcnpfSG82MWFuQXZxZEU5dWM5YUN4UGdxR3FCcm5LajdqZVE?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS推出Grok模型，AI战略进展，产品创新信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

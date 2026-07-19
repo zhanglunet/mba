@@ -285,3 +285,124 @@
   source_type: media
   note: "LLM 预分类建议(high):产品应用案例，展示Claude技术能力，具体成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-16-anthropic-019
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "中国用户被针对！Anthropic承认私藏“木马”Claude信任崩塌，网友直呼太可怕"
+  quote: "中国用户被针对！Anthropic承认私藏“木马”Claude信任崩塌，网友直呼太可怕"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFB2a2lCd3dXc2dnU045RmkzUjd4WGRhNFJnR3pPeW11ajVLdklRakxVRTQyOVowNkc2MV9EUHRRMUV4M3ZPc0IxeU5WZ00?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic安全事件指控，涉及信任危机与负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-anthropic-020
+  date: 2026-07-18
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic模型震动金融圈 欧洲央行紧急开会要求升级网络防御"
+  quote: "Anthropic模型震动金融圈 欧洲央行紧急开会要求升级网络防御"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIYVh0bTdJbkpQQ2hFWi1Yek1wa0lnOGU1UEZXY1VwR1NjQjlQaWRMZ0d5TVRiZXVrWXA5Y2l2aW43Q3NTdjdXQg?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Anthropic模型引发监管关注，标题夸大但涉及风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-anthropic-021
+  date: 2026-07-16
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic其实并不AI原生？"
+  quote: "Anthropic其实并不AI原生？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE9SMTh1NlZVZkFfbXh5aEZHbWdZOFd6Uzh6ckpuYWQ4WE5YQlI0aXVyaWNFV2JUQ2NFNGQ1TDJoX1BYazlEM2tHaG5VNC1ndw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):质疑Anthropic AI原生属性，涉及品牌定位评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-anthropic-022
+  date: 2026-07-16
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic高管：企业AI成本走高，不应简单停用"
+  quote: "Anthropic高管：企业AI成本走高，不应简单停用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizgFBVV95cUxOcWtMMUo1NDA3YnVKNG9CYTZzckFyNmpyV0JXVzRvUXZyQk8xM0NibTZCMWFVMVVOanM2dmFZRFFPbHIxcXlQRWg1d01kTmFDME1iRUpBbW1pamNzbS1adHpJcVh5TU50cWJLQnBTVDFjWk00SHNxZVJqaldOTDlWbEthbEcxaDNORk5SRFREN1JUTldwd19oQlJlRXRVV1I1b3VFdFBJN0tLTzlPOVM3NjY3VFNOamdweFVGYU5EdmZ4b2pUUGlkNk15TzBnZw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic高管观点，涉及企业AI成本策略立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-anthropic-023
+  date: 2026-07-17
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推Claude Corps项目：付薪让员工用AI做公益，7月17日截止申请！"
+  quote: "Anthropic推Claude Corps项目：付薪让员工用AI做公益，7月17日截止申请！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE83RkwwZ18tbHBWV2JnNFYwR0x0VVlYTHlBMF9UMnF6R3ZJaW4tVTFOTERxb2lnUHdVQVBRMEp4WVo2NENORFJEcHQtandmVVU5Z3A5WU9NVDFnUTNmclF1bUExQ0ItWm5PMTJr?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic公益项目，体现企业社会责任与品牌形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-anthropic-024
+  date: 2026-07-18
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英国向Anthropic抛出橄榄枝：邀请其扩张伦敦业务并探讨双重上市"
+  quote: "英国向Anthropic抛出橄榄枝：邀请其扩张伦敦业务并探讨双重上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9SRHFCQnllNVp6dHdCSk00ZktJdjF5c3RjY1FSaDFGR1JnZURFV2xIcXl2S2k4c210MnBieVllTF9qTGMwbmUydw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英国政府邀请Anthropic扩张，涉及战略机遇与政策支持。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-anthropic-025
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic惊悚报告：当AI开始破坏实验室代码，人类已无险可守"
+  quote: "Anthropic惊悚报告：当AI开始破坏实验室代码，人类已无险可守"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi2gRBVV95cUxNYmpDZGNtQnQ5bmhGZmdfQ2FwTUNuVXRBRXBPLVJzMk5FZHlHWU9ha3JwZXYzSXF5QTc0VkRUVVdlRVpsek1OeGlQX3drS3IzbDZHSlpTM3hweFN2V3lUUnYyNzc5NXNXaGRFeENPOTFJYlM5Mk9CQTFtdTEtemxBODhGS3BpZHZnWmZIZkJncmd2bDVvMnhGcEc0SjduZTRFRm8zUjV4V05TMVRSSGxFN2JMbW9relhxd2FkVHVGWl8xYW5mUDA0R1YwR1p6SU9NUC14SVJaVjRDX2ZJV3BWV1VmTXlzVUpJMUpFYVp0dnRqTkIwX2R4cWtNemQxMkZLNnFNNzlGaVBSTDRkUWhCVmNReXVoNnFudHJfNUtoR1JsalRJRUJrWFd6N1ppLVJSRVd0T1k0OF9URHkwNG9LQmI2SVlnNUdsOER2dG56YlpqZF82aUo2U2I2YVFjYkpKNnZDS18wZDZ4aDlHMDFyXzdpTHhYczgtZ3p2bmdjY2dTRUtyOGtuZGEtRmdlemMxWEpuTmdMaEI2dHpWSWFTSHUxZmp4SXhyV1FFN215SnF2aUhSN0tHSEl3cXd2RHQtZUhVeUFEV2puLW5vQzY2cmQ0OEZwRWJ2V1FtQXF2eWhzSXBwVVhvOHhEMUxMenBpcTFhcEhOcDJsbWNoSmV5dXdlcW9BSC0tZU5PZjhBa0dCTHc5Y1dFS3JqdlhtU09ocHJaendfdE1GMi1uR2RkdHNLZjBRbW9IOUY2bWluejl1WUlFdmdJOFNKZ0tLYlBPOTEtbnVRLTJydw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Anthropic AI安全风险报告，标题夸大但涉及负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-anthropic-026
+  date: 2026-07-16
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic最危险路线图曝光: 无限记忆、多智能体! AI终局战仅剩双雄决顶"
+  quote: "Anthropic最危险路线图曝光: 无限记忆、多智能体! AI终局战仅剩双雄决顶"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi5wJBVV95cUxQVjRrVWxLRzM3dTBhM1B3M29PLTJHSC1OdUw2VkZLc0RkOUw2VnNIRm9OYThCaS1PbjRNTXp6cFNsR2lOd1VUVFYweUxyNHZ5c1lVNHFHTEV0VmFRb1BvNzFPVjFUMjVZQ2hEZmU4dVZzVUJZSEY5UTA2MVhaVjJ4QzNSTmU3OXlKN21lX3JwNG1mN2V6T2llYXZkZ0MyazFWYjBFUmF6d011cEg3ZWUwSjduOFNjV3lRcmJ1bzFpeU9ZNHBxa2lnVlg0ZURpNDZ6eEpLWXJWWTNsZGJkMXVmS0t1V2MwMmxtUW90Z2oweGhzbDc5NVZEVElHMXhjazQ4N0Q5M0VLbEFvc2tweVR3ZE8zUDNhRjRLblpHWW5qcGdlOWlXellERGwxWHIxMEpIbXU5YnJ5OTduMmhsNHI2a1BPYlU1ZERHTEdaZHJwYS1XbGpKQUN4ZzJCLUhFX0NvSE8wN1g5dw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):Anthropic技术路线曝光，涉及产品战略与竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

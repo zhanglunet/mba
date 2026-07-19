@@ -174,3 +174,109 @@
   source_type: media
   note: "LLM 预分类建议(high):融资完成，创始人身家排名，重大舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-19-deepseek-012
+  date: 2026-07-19
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek估值，被一家箱包公司公告意外“曝光”了：超3000亿元！"
+  quote: "DeepSeek估值，被一家箱包公司公告意外“曝光”了：超3000亿元！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxOTkpvNmlBMG5BMFdRX1RzWTZGZG9PRHM1N2RxYUdFX1BoSUh1bmlHOHVCTkdlX1lreE5yWGFtekZnMUk0WmZrRnZTWGlxRURkR3hKb0lEUzkzS3gwd3NOLUN1a29GTk9OYVZjRlFPWWpSSm94N01KSDJVRWt6MjVkQk1tc3gydjJ1LTJZZkluYw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值曝光，重要财务信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-deepseek-013
+  date: 2026-07-18
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "超3500亿元！一纸投资公告或揭开DeepSeek估值"
+  quote: "超3500亿元！一纸投资公告或揭开DeepSeek估值"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSkFVX3lxTE9HWC14MW1TYnpYZS1KYUJVaDZQVkk1cDJyLU12RmlIdVJ2Mk4zQ25Bck85a29QN1JkeHRVR0pweTQ0RF9XejdLQXJ3?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值数据披露，重复但核心事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-deepseek-014
+  date: 2026-07-19
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "估值冲刺5000亿！DeepSeek开启二轮融资，宁德时代、吉比特等闽企参与投资"
+  quote: "估值冲刺5000亿！DeepSeek开启二轮融资，宁德时代、吉比特等闽企参与投资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JMHJvclVtWmh1OUFjb1NGWnlseTZSNGhocTBpTlliejF6cWJKX0JTQ1BoNEFWeVRHYzVhZUtGWTZGdlJjQm10TlFRZHNUMGV3aHhjUUYwVG9JeE1VeHpXUTFn?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):二轮融资启动，估值升高，重要融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-deepseek-015
+  date: 2026-07-17
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间持股"
+  quote: "DeepSeek估值已“揭秘”：超3200亿元！至少两家A股公司已间持股"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9OdTdsTXZ3VnlqREpXbE5ralJoNW1UVG9QanZvbnhmNW5UUTc0QmZ1MWRRX1hvZFp4SU9UbzVWRkFWOGt2ajB3dlJBajc?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值确认，股权结构披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-deepseek-016
+  date: 2026-07-19
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek完成首轮融资 这些上市公司参股（附完整名单）"
+  quote: "DeepSeek完成首轮融资 这些上市公司参股（附完整名单）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxNV2FObjB3SWNUTjQyeE5tQWRsZmcxQmlvWU9lakVvNDNSNjNrck1SODdrTU91S1BjUTlPLW9HUUNnOFpqY01mY0hUY0VULWZ2T04xTW9uSVoxT2xGMFZsb0VteTJfQ3hTbHYxRUdpZzdtZnEyMWNtTDdkNmRrZ0stYXlB?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):首轮融资完成，投资方名单披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-deepseek-017
+  date: 2026-07-17
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek首轮融资后估值升至3508亿元 腾讯、网易、宁德时代等参投"
+  quote: "DeepSeek首轮融资后估值升至3508亿元 腾讯、网易、宁德时代等参投"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrMTBRd0JETFlIN0FqNFRnQmY5b1M1Q0tNaloyVHA2Nkc2cmJVS2IwUUhFVVpkU3RrVG5wZUhvQnEtXzhZLUlNX19XZ0IwdFYzNEtLQ3JfTEJ5R0lSY0Y2eTgwWFF1TWc?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成估值确认，主要投资方披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-deepseek-018
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI早报 | DeepSeek估值超3500亿元；小鹏汽车：2027年将把IRON人形机器人推向全球市场"
+  quote: "AI早报 | DeepSeek估值超3500亿元；小鹏汽车：2027年将把IRON人形机器人推向全球市场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ERUN3OGlmaU9EVTRtc0xwb2hPNFBVT2gxakdLQW0xZ0kyRjNHT2F0UDNjOF9LMUFDZ090OW5Ldlp4UkEzUzJZd1hfdXk5MmY2VWNsYjZ3?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值新闻聚合，包含核心事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

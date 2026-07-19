@@ -322,3 +322,139 @@
   source_type: media
   note: "LLM 预分类建议(high):监管支持与市场开放，战略利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-19-openai-020
+  date: 2026-07-19
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "作家埃格斯受邀给 OpenAI 员工演讲，批评 ChatGPT 正夺走一代人的表达能力"
+  quote: "作家埃格斯受邀给 OpenAI 员工演讲，批评 ChatGPT 正夺走一代人的表达能力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAJBVV95cUxPYmU5dHFMS2QzRHVvcmNlZUtOWW50ZmExRUg3TTg1Zl9MV0lSQTJEZjBsemZ3VndxSXRMUFpOS2t2Ym00bHNfWjNIYmhXTDNRWERwa0tpMnlHYXVWS2N0VEh5UnlNd0Z0Mkp6NWhuZGRRcmkxZkJ6QmhuYzNZY0NxTXhEVjl3M0l2YWZwS0JBYmlKVkg4R2JxQXozY0hLSVlpZUw4VTFZVlpCYWV5R09LdFR2MXctSHFlLXZ4bWdNckxDbmlBU2R0X19XdHFnczhjVms3VkVVQWU5dnRRMkFwdkpGUGxuaUhJOTk3WVpSX1o2ZjdZejhxRFNVQnMtTnZBN2pyeVAwYkM?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):外部批评ChatGPT影响表达能力，舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-openai-021
+  date: 2026-07-17
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "早报｜OpenAI首款硬件曝光/享界G9获批北京L3自动驾驶路测牌照/雷军晒小米机器人进厂打工成绩"
+  quote: "早报｜OpenAI首款硬件曝光/享界G9获批北京L3自动驾驶路测牌照/雷军晒小米机器人进厂打工成绩"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9CUnQxcnVUbGVaWURzQmY2Wkh3ZF9ONXZfem1tOFAxYVNMRE9odE9oS2NINV83NFIxWU9XVkdBX2xxWWc?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):硬件产品曝光，新产品线信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-022
+  date: 2026-07-18
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI新增青少年安全通知：暴力违规禁ChatGPT将告知家长"
+  quote: "OpenAI新增青少年安全通知：暴力违规禁ChatGPT将告知家长"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5QSmFrdW9id2o2N1RtdldYdFB5V3c5TGljYmhVSkRIQ3FySEw0djhnQkk3c3dONmpSTmFfQ3Uya2h2WFphWS16U3d4VVhwQTVJSWZ5Q0JuMm5HRHJiNUw1N0t3?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):青少年安全措施，合规与责任信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-023
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "芯片新贵Cerebras重金“入圈”OpenAI：一份代价高昂的战略结盟"
+  quote: "芯片新贵Cerebras重金“入圈”OpenAI：一份代价高昂的战略结盟"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE5wMzN1R29PbmdTVlZoZ3hSdkVJbk91aHhiX1lOQ2pvMTMybW15OGVTN2lmT1BhUmNrX0NFRmRBa3E0bXYxX1F0MjZaelJvaXdQbGc?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):芯片厂商战略合作，产业链动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-openai-024
+  date: 2026-07-17
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI 的大模型价格战，历史早已写过结局"
+  quote: "OpenAI 的大模型价格战，历史早已写过结局"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE0yb2xpaVR4Z3A2WkdGc3RKZ2JmNE1CLVZMUXhpaHJYd2dCRzZoNEJ2SEdiZXJORkFyOU9kTFJJRUNoYTM2ZVZhb24zNmJ6ejZuR3VJ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):价格战分析评论，市场竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-025
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI核心产品负责人：ChatGPT桌面端整合聊天与工作模式，历史记录跨端同步"
+  quote: "OpenAI核心产品负责人：ChatGPT桌面端整合聊天与工作模式，历史记录跨端同步"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE4xYmZZamN1NUwxQ3lKTUlZYmNkN1dib3R4UWhuSGhwWHh4YWJWc3dYLUtwMlB6dkxMNUZickhyM1pzbHZ5dzBtYWhlYUp2VFh4VkRRT1JaUzFpeFc5NVIwanNn?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ChatGPT桌面端功能更新，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-openai-026
+  date: 2026-07-19
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "【早报】美将部分中企列入“中国军事企业清单”，商务部回应；OpenAI被查"
+  quote: "【早报】美将部分中企列入“中国军事企业清单”，商务部回应；OpenAI被查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBNNkFhZGRLZGRRLTdZQXJmUnkwSnFLNlRPWmhDMXd3WFN1R2tXa0dqTXhhcUJBdTExSEppOUpNZkg5a1AzS20xag?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI被查，监管风险与合规压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-027
+  date: 2026-07-18
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "高级语音视觉功能上线，OpenAI 12天直播已过半，还能期待什么？"
+  quote: "高级语音视觉功能上线，OpenAI 12天直播已过半，还能期待什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxONDh3QXAtWnJDdVNsS2taOGRpOXpuNEVhd0t5eEFqcEZhSXhva21Eb051b0h3T0l4N0NyZExyT21VMENYU3NvU2QyY0VVeXg3OTZmZjIwU3hKZXFUazJnS2JlbkRmTDBkdHdqOWZBSGliMVBJSjhxdkJrVjJ5MEo2SWtZdzdIa3BHeTZRQmdBSk9jRHpXV0xtUFBVbC1yLXFi?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI功能上线，产品进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-openai-028
+  date: 2026-07-18
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "继豆包后，OpenAI也盯上AI手机，这是一场豪赌"
+  quote: "继豆包后，OpenAI也盯上AI手机，这是一场豪赌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE4tNTlWVVhzSHZ2d3MtdWhjUENVR0dHU0xURk5xQ0kydHFZd29LaGpKaGpNcDMtZ3d0dkJtSjgwSW55X1N4SVNhd2FHbU9XdWJZOElZblZIdkIyU0FEZ1RvYnBQYU9fS1dMZXFiaktvLTNfdTdPR1B3SndjTkxVWGs?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI进入AI手机领域，战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

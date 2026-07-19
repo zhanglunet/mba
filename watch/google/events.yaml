@@ -200,3 +200,64 @@
   source_type: media
   note: "LLM 预分类建议(high):出版商集体诉讼,AI训练侵权重大法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-17-google-014
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌NotebookLM更名Gemini Notebook，原生支持代码编写执行|Google|云计算|IT之家|Google AI|企业客户_手机新浪网"
+  quote: "谷歌NotebookLM更名Gemini Notebook，原生支持代码编写执行|Google|云计算|IT之家|Google AI|企业客户_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwVBVV95cUxNdE83TjZ2a2tlalBqMThEZWZWZ1VuNkttRVltSlpNQ3JfWXBfYm1PZEdjTTdtM29odlV5NjFIRDh1MkRyM3NVaXV6Rng1cmgtemt4SWJsbWRNNnVWWmhVSUg0NGt4ZmdzUHozTkpxaTIxei1YdnltUWx6UmJwSnBnOWhhcHRhU1lUQTNNQm5PSGZhWWtIaE0weVFSTlZsZERoUGNsdElEZDNXR0traUZ4Z3pwd1MzODBYbTFCMDlXTVdzMl9pY3FJRUZHbnZnSVFWZE1LUEpsWkw1QmFTc1VpeTF1bVlyRlREYUdhLTV2dzItNW1kMi14TjVqRVE1RlhGaTlIaXd3RzlCdmxNc2hPQ3FuUGYtX1psQlRCcVY3X25od2dFdW0ybTNzY1VLaWtEX1pDNi0yZ0xsYU1XY1A1bDJwZlF0MmhjMW1nNC12SDlaT3JZYUFNbFlwOXRPbEVFU3BnaERqTVlEcklpUmFOQ3l3ZXVjM05PaU9vczgxRkhVV01STm43dnpaV295dlZMTjhkMjRVNUc3R0Z4M1BPOHFWYlBVUHplMXQtSk14SE1VSzIzXy03NmQtMkw5cVpZN3FKT25MUThHaFdjdVFkSkE3cmpMekV3TGtGOWdYc2gtTTZRSDJEdEV4cnIzNlR2NUFaRnFUVTJTREZsSF8yRWpqbGJhdU1IbmN6WTJZZXhvUGh2N2V4ZVpfVnVackNTRy1SejJ0R2hlTTVFNFJfRzFkR1F1c2VWVTF2QnJXOElHTDhQSGwzeGtKWkhyV2RfM1NGcU05aHdfTUdabG45LVI2V3lfZkRMcEpqdF9SRnhDOEhfM2RGczNlZ1R1RFBjRm5hU3Q2cTNMb0M2U1ZJbUJIMlkzOGdUV1NOTHRFMA?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品更名与功能升级，AI工具战略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-google-015
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google将其3D emoji表情符号开源- Google 谷歌"
+  quote: "Google将其3D emoji表情符号开源- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE96bjVJeS03VUw0Y29NV0VuZWIyWlozNHBxUXlkNjlYblJIbFEweUJ4bklQeXIxRDliT213MzVjX29PU1BWb182QTJmcnFfZS05Vk9sR3NTb2ltZG9JTUxjRQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源3D emoji，开放生态策略体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-google-016
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌推出Gemini Omni，并更新Google Vids 个人数字形象功能。｜长桥证券"
+  quote: "谷歌推出Gemini Omni，并更新Google Vids 个人数字形象功能。｜长桥证券"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTFBLaEhsZXNsdFY1TlplSzdaNUlZRVBqalBkbTN2c0t6TFp2bDNfZTNGUXExTnRSTGxfM19sNUxQdEJXUTdlSjQ2ZkwtbkRkZTFZT2p4RFkxVlJNbFdYd2dOdzFaQUZMNzRCZ2kxTXBFenppdjFvZ2RWa2Q3cw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Gemini Omni发布与Google Vids功能扩展，AI产品线重要更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-google-017
+  date: 2026-07-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌(GOOG.US)：Google Vids上线Gemini Omni和个人数字形象功能面向Google AI Pro、AI Ultra订阅用户及Workspace企业客户开放。"
+  quote: "谷歌(GOOG.US)：Google Vids上线Gemini Omni和个人数字形象功能面向Google AI Pro、AI Ultra订阅用户及Workspace企业客户开放。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE1YVWtkV3pETnUtMFh3a3pKNlJxRDNDbTZrTGI4YzZWWmZkZWVtQUp0QzN5UDI3NXRSZk9Ddk5QbGtZbXZFeEw2RnE4TXZDODBNV2tSMkFuRjNFMWN5OVRoUEVwVHRGdnI5b0Jn0gFrQVVfeXFMTVhVa2RXekROdS0wWHdreko2UnFEM0NtNmtMYjhjNlZaZmRlZW1BSnRDM3lQMjc1dFJmT0N2TlBsa1ltdkV4TDZGcThNdkM4ME1Xa1IyQW5GM0UxY3k5VGhQRXBUdEZ2cjlvQmc?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Gemini Omni与数字形象功能上线，企业级AI服务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

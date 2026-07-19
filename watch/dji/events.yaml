@@ -119,3 +119,19 @@
   source_type: media
   note: "LLM 预分类建议(high):营销活动启动，品牌推广事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-16-dji-008
+  date: 2026-07-16
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DJI大疆Osmo Pocket系列影像大赛开启：六大方向激活独立创作"
+  quote: "DJI大疆Osmo Pocket系列影像大赛开启：六大方向激活独立创作"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1DVTQ0dzNDT3V1TzlIbWpmWUZENkF0cVlfQmF1MEhuZ2JTb3NEU1BGUW9rMVlrZUlJcExCNHl0YllrMlRQS1UwcGc5ZXBEblF0amtYby1pTUN4VHp5T3kzV0VB?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):大疆创意赛事，体现品牌社区运营与用户激活。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -185,3 +185,79 @@
   source_type: media
   note: "LLM 预分类建议(high):新品发布官方信息,灵犀通信与鸿蒙系统属重要技术亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-18-huawei-013
+  date: 2026-07-18
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为IDS助力莫桑比克EDM实现低压配电精细化管理- 华为企业业务"
+  quote: "华为IDS助力莫桑比克EDM实现低压配电精细化管理- 华为企业业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxOLXVITFNuWGk2eEpEdHREU1M1UlltRDl4cVMyM003Y3ZWOXRSSFhMRlVMcEMxVXBfZ0dOWThHMUlmeF9QRS1YcThPQlpMbm1BLTk5T0k1VlRoM3k1WXJqdm43S3RXTkNXdndfci03bzE0RmIzc3RWY01IQTJWaXZmQlRrTQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为IDS解决方案案例，国际市场拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-huawei-014
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "HUAWEI ADS 5[2026年4月发布的华为乾昆智驾系统]"
+  quote: "HUAWEI ADS 5[2026年4月发布的华为乾昆智驾系统]"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTFBtOFN4M1UydkNwUHBqd3hDaGJGem5kVFd5QlBLS1IxdUVQSlZTYnV0bTJudlg4QTVKQXlJRWZBWjVMU1VWYVRGMWs1U3lDUTRxMjUzWFM4MTJmQmZmTmFvUksycThoUXkzZ01mMGdNYnlpZm9pM0ViM01LbnA2dw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):华为智驾系统新版本，产品技术进展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-huawei-015
+  date: 2026-07-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "昇腾950超节点真机亮相2026世界人工智能大会"
+  quote: "昇腾950超节点真机亮相2026世界人工智能大会"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5KSVpxZFVJVEJ4Qy1RbDFpa1haT0x0U1k2V3RmellsUXlwaXVRUHVrS0ZVbVpObmU4ajFzVGZaV1N1U29VREpxQWZVQUJhbTV6NHEzRFBTMENRT1h3Wjd1bnRKaldIdFk?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品亮相重大展会，体现技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-huawei-016
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "#华为乾崑 #启境汽车 #317启境GT7全球首秀终于蹲到官宣！"
+  quote: "#华为乾崑 #启境汽车 #317启境GT7全球首秀终于蹲到官宣！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1lYXdYajRZbG9SVl9zMFlCcmd2d0xZalJmOGRPNGFpSnRSZElfRlpVdmlQeGZQTjZtS3A4Qm5ZRV9DQ2ZoWnY5Tkx5UzZQczFzNGlscDFPN2NNTExpUXc?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为汽车新品全球首秀，重要产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-huawei-017
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为全家桶上车！宝骏华境S明年上半年上市，定位大六座SUV"
+  quote: "华为全家桶上车！宝骏华境S明年上半年上市，定位大六座SUV"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMakpMUGhYTHUtNzViTWxDUVA4aWpKREdZQWtpLThuU3luM1RnRWsxYzNTVnhJODNfRF9iTVk5N1dfQkM0RFItVWRnYVI1NmI1eS0wVWJiUUhfb00?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为汽车新品上市计划，业务扩展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

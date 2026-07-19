@@ -234,3 +234,64 @@
   source_type: media
   note: "LLM 预分类建议(high):推出后厨透明化验真机制，食品安全透明度提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-18-meituan-016
+  date: 2026-07-18
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "美团Q1营收910.39亿元，同比增长5.6%；经调整净亏损49.68亿元，市场预期亏损68.31亿元"
+  quote: "美团Q1营收910.39亿元，同比增长5.6%；经调整净亏损49.68亿元，市场预期亏损68.31亿元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxPVGNmNm84b3BtUkJTaVpzV2o0dzhpMV9xUlE5a2RXbnVoUzJEakhnUG96d3hyX0ctMm9fSkRiSWRicjJITDFUczhIYTZxOExRWlNkVGdPNFZ2NkRDNERqdUcyRmdtdUFTUzUwdkhHNDhYYjdPSjRJTU1sQWlNUlBDWWxnODBxNDh5ejR1YTIwM0dwTnltYUxubQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q1财报数据，收入增长但亏损超预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-16-meituan-017
+  date: 2026-07-16
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "穆荣均售出美团-W(03690.HK)100万股其他股股份，价值约1.16亿港元"
+  quote: "穆荣均售出美团-W(03690.HK)100万股其他股股份，价值约1.16亿港元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxOUmhyMlBEblM3bFd0V2MxeVhEMVp6WEtWQUJtU0xVelUzYnQwdmo4ZURMVl96WEF6ejd4eS1XUzVHeHNxS2RyaWVUb1FOVndKYWxJbVhxM1p0NkZxZlRMZkVkNlowSm91eFlhWHdJUS1jSFJDMUdBSERNR3JwV1BWVks2VjlYa3dDMDJabDZETjl1Rlh2UkFn?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管减持股份，1.16亿港元规模。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-meituan-018
+  date: 2026-07-17
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "又一独角兽诞生！美团领投曦诺未来，产业股东总市值突破5万亿"
+  quote: "又一独角兽诞生！美团领投曦诺未来，产业股东总市值突破5万亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WWEJzbHVqblpxTVlqNnY2eFVfVjllMFpzUmpENkdsNTZQNGZwd1VxY01QSHJWNVFoa3R3V2hibUpQYkJCNEdHYVlpWU0ySlp3OEE?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):美团领投独角兽，产业生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-meituan-019
+  date: 2026-07-17
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "美团股价在全面开源LongCat-2.0 AI模型后下跌逾4%"
+  quote: "美团股价在全面开源LongCat-2.0 AI模型后下跌逾4%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxNRjRFLTV2VGZ0UHFqdHVkQUphNzRubXNIMG9HdDdvSTNZWko4SDlBR1d6STd6SmxUenYydFFxbkg1b21nb1hTQkZYMDBBYUx3V0Q0eHFjdFdSbTNpM25Td2ljZU1wWEVWM0o3Q0s3WEF6bWZCZFdMV1ExdmZCMlJpTkpTYW9fNVFYdkh3WGpNT3F3S1JGMVVhal93?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI模型发布与股价下跌关联，市场反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

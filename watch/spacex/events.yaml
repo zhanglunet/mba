@@ -279,3 +279,139 @@
   source_type: media
   note: "LLM 预分类建议(high):重大商业合同，涉及政府采购与战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-19-spacex-019
+  date: 2026-07-19
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "10天借出10%股份！空头猛扑SpaceX"
+  quote: "10天借出10%股份！空头猛扑SpaceX"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1DUm1Fd01ncDhWcDE4TWJKRFBaSmdpMDR1Z1ZjV3Bob1BUTUlWT1J3a0MtSWpqa1RLYUFPSHJSMmFyQ2Y5SzllSVljWTNOZGJONWx3?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):空头大规模做空SpaceX，涉及融资风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-spacex-020
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "$SpaceX (SPCX.US)$ 除中国和日本外， 又一新的竞争对手"
+  quote: "$SpaceX (SPCX.US)$ 除中国和日本外， 又一新的竞争对手"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOMGVHdlpYNTUxYVVXLWxKY2hGeGkzVTF4Nm9Bc0E2OXRYZGpaSkMwSGYzMDJxbHFNOFExYWdXYlk0QzNWZXhJUE5MUGpKMy02QmYtUDkyR3RCSEVKTmVRV05fa0FjbEVRM2hzdzZ0bzlabUQ0M0JOUG5BMkpFNnFJWDV6TG1iY2EwYnJJTHRrei1JY194VXp1N2tHdnJ6TmhIdDFRbzJOYW0ydE1EQUNwQ0RieTk?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):新竞争对手出现，涉及市场竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-spacex-021
+  date: 2026-07-19
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "估值1.75万亿美元 SpaceX冲刺IPO 多家机构迎万倍回报"
+  quote: "估值1.75万亿美元 SpaceX冲刺IPO 多家机构迎万倍回报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi1ANBVV95cUxPbm50dzB5ejhMcEx6Z1h3U1NVdy1JQjFvZmRDLXlNMTg2UDVQbHBpcUZCaHkyVTg0TkN0bzFNUUsxNDNhZUphY2ZHaE5vSDRWVDBZTTdCa1dOU1gzaVRNaTNaLUFrWFUxdHNKUzhQcmZ1QndfRHNINzVvd1BNZDFSLUhkUnZ5bFgzWUsxR1ptdUZZTFkxTUVtQWpDdjJGeTBKZUgySFc1YlVJdndRRWpjN0NWTlRRVTlnQjYzTTJrUVdiS1c4QzhxcEVnSjNDMzdPaTY2V2NqRUNDc0Z4UmZWSlhKV2dpT3dXbFE5NnNMVmozRW5FM2xzWW9JTkhFaE5iMG10dnBRTHNLcXZFbnBOcmJnRWlabGpZc1hZbFE0MDd3RUQ2ZGxTNG94ZF9MTzRMeFg1dmdXeWhsVXpBN0NROTU4QjZ4dFAwYnhsblFuYWJPZDZRUVl4VU5HYUVoaTVoMWFRU2doUi1KY3hCc0ktZXZpZ1VYM2tvUjhtTnVyQmFZZEo4dkk2aWtublIwS3REcl8yZE1VdmRNWlc4djBKUU9HMTFKR2FXblVZS2tad0xGbGFwbjJpSi1xMmotYTJlZ0tmTHlkM1B5VmRFek5xQ3hZMW8?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO融资重大事件，涉及估值与市场预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-022
+  date: 2026-07-18
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美股异动 | IPO后首飞推迟 SpaceX(SPCX.US)开盘跌超4%"
+  quote: "美股异动 | IPO后首飞推迟 SpaceX(SPCX.US)开盘跌超4%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE50d2xqblFuVHQ4YU9PQWxNSm5wRS1EZFY4Q2d2b1pYQmRsY1dIT0ZzR2lNOWhYSU5DUjNiMjlOd2FFRkVNcWFkZA?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO后首飞推迟致股价下跌，重大运营风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-spacex-023
+  date: 2026-07-19
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX星舰第13次试飞在点火后自动中止发射，马斯克称几天内再试"
+  quote: "SpaceX星舰第13次试飞在点火后自动中止发射，马斯克称几天内再试"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5fQkpJOEswS081eW5uUF9hRlVTZ1FZckpjQWVRSUYwX2JGYUw5dnp1SmN1a2xCSm51SGhPM2l5ZkstX214aXBHelh6c0NkWDBxWi1FX0FKbFhNMU4teTBXQXZiWHh1d1BjZFVENm9wVWZuQQ?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰试飞中止，核心产品技术挫折。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-spacex-024
+  date: 2026-07-19
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX上市不到五周股价蒸发38%，宇宙级泡沫正在破裂"
+  quote: "SpaceX上市不到五周股价蒸发38%，宇宙级泡沫正在破裂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lNGJLTVNSck12d0syZ2NNb2ZGTnhhcUJ0V2NJV3dodHlEN09sR3RGRUJyem1JM0s0Yi13aGktbHF4cW1fTDRCakMyT2I0MXFaeWFkUmdMT21QOWVCUmtBZlBB?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO后股价大幅下跌，市值蒸发，舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-spacex-025
+  date: 2026-07-18
+  dim: W3
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX跌破发行价 “木头姐”抄底增持"
+  quote: "SpaceX跌破发行价 “木头姐”抄底增持"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxNT2w1NlRMQWViNlVjV0pyT0hVeE9sQkhYa1l0MHBKUUY0RlVPT1RjeWRBY2RBWDJkLXYtNWxaajNKS1B6NXhQS1ZEZHd6WF9EQ1JxallrU2dwc21EZ254cThpVkR0RjJKajIzWGRzbWdRcGd3T0lqT3BRaWdqQnlrZHU0Ulg?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价跌破发行价，机构抄底反映市场分歧。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-spacex-026
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX取消“星舰”第13次试飞任务，马斯克：将换发动机，下周初重新尝试发射"
+  quote: "SpaceX取消“星舰”第13次试飞任务，马斯克：将换发动机，下周初重新尝试发射"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jaTRYYVY3TXlYQVZpcjhheDRiRDdKWE5YYk5XUmJCaTNWVUlVdzhjaEx2NGI2aFA1RktjVElTVGlsemx1VXZGaDk1OXJqXy1OWnU4?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰试飞取消，需换发动机，技术延期风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-spacex-027
+  date: 2026-07-19
+  dim: W3
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "倒计时至0秒时突然中止，SpaceX“星舰”试飞取消，马斯克回应！公司股价大跌破发，近1个月市值已蒸发超1万亿美元"
+  quote: "倒计时至0秒时突然中止，SpaceX“星舰”试飞取消，马斯克回应！公司股价大跌破发，近1个月市值已蒸发超1万亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5Sb01NMDRuZFU1VHVob3pSdUQ3Y09jQV82OWpDQk5nTTFHUmNNb1hEN1ZOX0xUaWlWeWhWWHlpeWo1aGh6RnNSOVlpYm9oVzJYZ0VjZTRkRGlXUHhuY3V4SkhlOERJTUxmdTZrWkN4Vmp3dw?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):综合试飞取消+股价暴跌+市值蒸发，重大负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

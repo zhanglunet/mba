@@ -190,3 +190,34 @@
   source_type: media
   note: "LLM 预分类建议(high):联想员工福利政策，企业文化展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-17-lenovo-013
+  date: 2026-07-17
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "存储通胀来袭 大摩看好苹果与联想集团"
+  quote: "存储通胀来袭 大摩看好苹果与联想集团"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxNTktnZS1Zc2pNNjc1dHpxRWRWR19tVW45Y2p6dVo2YmV3RDJQWV8yRGZMaGZtdm9GRDk2amZHTVBGTVIzZXVqeU5BRXlIWUZudWNSZENzVGhOOGVsRUFFNC00ZjZCQ2RZSkdNT0luYjhySXRGa29oSF9CMW5Qc0J6ODhiZ285R2pqaDhSMmtodWdoOXFSRkt5RXNRTGg1SEJxZmw4Yk0wdE5hQkk2Y1E?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):摩根大通看好联想，涉及投资评级与市场认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-lenovo-014
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "联想陈敏仪：AI不应是少数人的奢侈品，而是像“水电”一样的基础设施"
+  quote: "联想陈敏仪：AI不应是少数人的奢侈品，而是像“水电”一样的基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE4waFBzcnE2UF9sbzVKaHpYeDVpSVgxNGdHWDl2QTFyZU5weUhEdGc3MnhMMWE3cE80bERwZ2dmMTJPY1VnS3p5dk5HTGdMQU42c2c?oc=5
+  fetched_at: "2026-07-19T05:32:57Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):联想高管AI战略观点，体现品牌定位与价值主张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
