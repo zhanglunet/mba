@@ -365,17 +365,23 @@ reports:
 
   - slug: openai
     card_brand: "OpenAI · Codex"
-    card_meta: "vc-en panel · FRESH v1 · 5 评委(rhoffman△/pthiel△ 早期渊源披露)· 产品聚焦 Codex · 20 个 curl 核验来源"
-    headline: "ChatGPT 即品类本身,Codex 分发翻盘;最大分歧:史上最大杠杆,还是最贵竞争的账单"
+    card_meta: "vc-en panel · EVOLUTION v2 · 5 评委(rhoffman△/pthiel△ 早期渊源披露)· 产品聚焦 Codex"
+    headline: "v2 EVOLUTION:法律/政治敞口给最弱的 Identity 加码(FL 起诉 Altman + 五角大楼批高管),193→190 · 7.72→7.60"
+    score_history:
+      - { v: v1, score: 7.72 }
+      - { v: v2, score: 7.60 }
+    versions:
+      - { v: v1, date: 2026-07-12, file: versions/v1_2026-07-12.html }
+      - { v: v2, date: 2026-07-20, current: true }
     brand_cn: OpenAI
     brand_en: OpenAI
     panel: vc-en
     industry: 人工智能
-    version: v1
-    audit_date: 2026-07-12
-    score_total: 193
+    version: v2
+    audit_date: 2026-07-20
+    score_total: 190
     score_max: 250
-    score_normalized: 7.72
+    score_normalized: 7.60
     tl_dr: >-
       OpenAI 以 193/250(7.72)完成 vc-en 面板 FRESH 审计:Category 9.2 全卷最高——
       ChatGPT 900M 周活即品类本身,Codex 靠打包进订阅半年翻盘至 500 万周活,并握有
