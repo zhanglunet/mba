@@ -588,16 +588,22 @@ reports:
   - slug: huawei
     card_brand: "Huawei · 华为"
     card_meta: "security-cn-global panel · 5 评委（周鸿祎·张明正·黄仁勋·马斯克·纳德拉）· 雷达图 + 异议热力图 · 任正非因创始人自冲突 --panel-drop"
-    headline: "起源维度 9.0 领跑:2.1 万元创业 + 抗住封锁,分歧沿东西方(Mate 60 突破 vs 制程天花板)"
+    headline: "v2 EVOLUTION:制裁下自研突破——麒麟先进制程 + 昇腾950 AI 算力(Leverage ↑0.4)+ nova16 39 天破百万(Signal ↑0.2),212→215 · 8.48→8.60"
+    score_history:
+      - { v: v1, score: 8.48 }
+      - { v: v2, score: 8.60 }
+    versions:
+      - { v: v1, date: 2026-07-16, file: versions/v1_2026-07-16.html }
+      - { v: v2, date: 2026-07-20, current: true }
     brand_cn: Huawei / 华为
     brand_en: Huawei
     panel: security-cn-global
     industry: 企业服务·安全
-    version: v1
-    audit_date: 2026-07-16
-    score_total: 212
+    version: v2
+    audit_date: 2026-07-20
+    score_total: 215
     score_max: 250
-    score_normalized: 8.48
+    score_normalized: 8.60
     tl_dr: >-
       Origin(起源叙事)维度得分最高之一(9.0):任正非 43 岁以 2.1 万元创办、以"农村包围城市"走向自研,
       再到抗住 2019 美国实体清单、2023 以 Mate 60 国产 7nm 芯片突破封锁——一部把创业与生存焊在一起、

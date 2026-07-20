@@ -5,6 +5,7 @@
 #   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
 
 - id: 2026-06-17-huawei-001
+  consumed_by: v2
   date: 2026-06-17
   dim: W4
   severity: P1
@@ -20,6 +21,7 @@
   note: "来源:Reuters。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-06-huawei-002
+  consumed_by: v2
   date: 2026-07-06
   dim: W8
   severity: P1
@@ -35,6 +37,7 @@
   note: "来源:South China Morning Post。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-14-huawei-003
+  consumed_by: v2
   date: 2026-07-14
   dim: W6
   severity: P2
@@ -51,6 +54,7 @@
 
 # ── 前台 triage 采纳折入(9 条)──
 - id: 2026-07-17-huawei-004
+  consumed_by: v2
   date: 2026-07-17
   dim: W6
   severity: P2
@@ -66,6 +70,7 @@
   note: "LLM 预分类建议(high):华为AI智能发电厂项目，体现国际市场拓展和技术应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-huawei-005
+  consumed_by: v2
   date: 2026-07-18
   dim: W2
   severity: P2
@@ -81,6 +86,7 @@
   note: "LLM 预分类建议(high):产品功能更新,鸿蒙5.1 AI新功能属品牌技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-huawei-006
+  consumed_by: v2
   date: 2026-07-17
   dim: W2
   severity: P2
@@ -96,6 +102,7 @@
   note: "LLM 预分类建议(high):产品功能适配更新,涉及多款机型生态完善。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-huawei-007
+  consumed_by: v2
   date: 2026-07-17
   dim: W3
   severity: P2
@@ -111,6 +118,7 @@
   note: "LLM 预分类建议(med):售后政策对比分析,华为碎屏险政策属品牌服务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-huawei-008
+  consumed_by: v2
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -126,6 +134,7 @@
   note: "LLM 预分类建议(high):产品性能评测,游戏散热触控属核心卖点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-huawei-009
+  consumed_by: v2
   date: 2026-07-16
   dim: W4
   severity: P2
@@ -141,6 +150,7 @@
   note: "LLM 预分类建议(high):高端市场表现分析,涉及品牌市场定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-huawei-010
+  consumed_by: v2
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -156,6 +166,7 @@
   note: "LLM 预分类建议(high):产品续航性能评测,电池续航属消费者关注点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-huawei-011
+  consumed_by: v2
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -171,6 +182,7 @@
   note: "LLM 预分类建议(med):产品拍照功能评测,属消费者关注的产品特性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-huawei-012
+  consumed_by: v2
   date: 2026-07-16
   dim: W1
   severity: P1
@@ -187,6 +199,7 @@
 
 # ── 前台 triage 采纳折入(4 条)──
 - id: 2026-07-17-huawei-013
+  consumed_by: v2
   date: 2026-07-17
   dim: W3
   severity: P1
@@ -202,6 +215,7 @@
   note: "LLM 预分类建议(high):昇腾950芯片产品亮相，AI战略重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-huawei-014
+  consumed_by: v2
   date: 2026-07-19
   dim: W2
   severity: P1
@@ -217,6 +231,7 @@
   note: "LLM 预分类建议(high):nova 16系列39天销量破百万，量化成绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-huawei-015
+  consumed_by: v2
   date: 2026-07-18
   dim: W6
   severity: P2
@@ -232,6 +247,7 @@
   note: "LLM 预分类建议(high):华为IDS国际项目案例，B2B业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-huawei-016
+  consumed_by: v2
   date: 2026-07-19
   dim: W3
   severity: P2
