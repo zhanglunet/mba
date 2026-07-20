@@ -610,17 +610,23 @@ reports:
   - slug: tesla
     card_brand: "Tesla · 特斯拉 · TSLA"
     card_meta: "auto panel · 4 评委（雷军·李想·何小鹏·李斌）· 雷达图 + 异议热力图 · 马斯克因创始人自冲突 --panel-drop（第 3 个真实 panel-drop）"
-    headline: "品类维度 9.5 领跑（MBA 迄今最高）:四位中国新势力创始人给祖师爷打分,分歧沿自动驾驶（数据飞轮 vs 过度承诺）"
+    headline: "v2 EVOLUTION:7 万美元 Model Y 登陆印度 + 二/三季度交付回升,net 致命撞车调查,Signal ↑0.25 → 170→171 · 8.50→8.55"
+    score_history:
+      - { v: v1, score: 8.50 }
+      - { v: v2, score: 8.55 }
+    versions:
+      - { v: v1, date: 2026-07-16, file: versions/v1_2026-07-16.html }
+      - { v: v2, date: 2026-07-20, current: true }
     brand_cn: Tesla / 特斯拉
     brand_en: Tesla
     ticker: TSLA
     panel: auto
     industry: 智能制造·硬件
-    version: v1
-    audit_date: 2026-07-16
-    score_total: 170
+    version: v2
+    audit_date: 2026-07-20
+    score_total: 171
     score_max: 200
-    score_normalized: 8.50
+    score_normalized: 8.55
     tl_dr: >-
       Category(品类定义)维度得分 MBA 迄今最高(9.5):没有发明电动车,却第一个把电动车做成"人们真正
       想要、愿意排队买"的高端欲望品,把"电动=环保妥协"改写成"电动=更快、更智能、更酷"——四位打分评委
