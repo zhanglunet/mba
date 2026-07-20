@@ -560,16 +560,22 @@ reports:
   - slug: amazon
     card_brand: "Amazon · 亚马逊"
     card_meta: "vc-en panel · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 贝索斯非评委无自冲突"
-    headline: "杠杆维度 9.4 领跑:商业史最深的飞轮 + AWS 云计算,分歧在护城河触发反垄断与 AI 追赶"
+    headline: "v2 EVOLUTION:FTC 数十亿诉讼 + AI 人力系统喊停 + 老将离职净盖过 ASCS/Haul 增长,Identity/Signal 各 ↓0.2 → 218→216 · 8.72→8.64"
+    score_history:
+      - { v: v1, score: 8.72 }
+      - { v: v2, score: 8.64 }
+    versions:
+      - { v: v1, date: 2026-07-16, file: versions/v1_2026-07-16.html }
+      - { v: v2, date: 2026-07-20, current: true }
     brand_cn: Amazon / 亚马逊
     brand_en: Amazon
     panel: vc-en
     industry: 企业服务·安全
-    version: v1
-    audit_date: 2026-07-16
-    score_total: 218
+    version: v2
+    audit_date: 2026-07-20
+    score_total: 216
     score_max: 250
-    score_normalized: 8.72
+    score_normalized: 8.64
     tl_dr: >-
       Leverage(杠杆)维度领跑级(9.4):被写进商学院教材的"飞轮"(选品→流量→卖家→规模成本↓→低价→
       更多客户)+ AWS + Prime + 全球物流,是商业史最深的运营型护城河——不同于 NVIDIA 的 CUDA 软件锁定、

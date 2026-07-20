@@ -5,6 +5,7 @@
 #   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
 
 - id: 2026-06-18-amazon-001
+  consumed_by: v2
   date: 2026-06-18
   dim: W4
   severity: P1
@@ -20,6 +21,7 @@
   note: "来源:Insurance Journal。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-15-amazon-002
+  consumed_by: v2
   date: 2026-07-15
   dim: W7
   severity: P2
@@ -35,6 +37,7 @@
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-15-amazon-003
+  consumed_by: v2
   date: 2026-07-15
   dim: W9
   severity: P1
@@ -50,6 +53,7 @@
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-16-amazon-004
+  consumed_by: v2
   date: 2026-07-16
   dim: W5
   severity: P2
@@ -66,6 +70,7 @@
 
 # ── 前台 triage 采纳折入(6 条)──
 - id: 2026-07-17-amazon-005
+  consumed_by: v2
   date: 2026-07-17
   dim: W4
   severity: P1
@@ -81,6 +86,7 @@
   note: "LLM 预分类建议(high):亚马逊自主驾驶部门召回车辆，涉及产品安全和技术风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-amazon-006
+  consumed_by: v2
   date: 2026-07-18
   dim: W3
   severity: P2
@@ -96,6 +102,7 @@
   note: "LLM 预分类建议(high):亚马逊数据中心成本优势分析，体现竞争力和资本效率。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-amazon-007
+  consumed_by: v2
   date: 2026-07-18
   dim: W3
   severity: P2
@@ -111,6 +118,7 @@
   note: "LLM 预分类建议(high):亚马逊芯片自研战略，2027年出货量预测，体现垂直整合方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-amazon-008
+  consumed_by: v2
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -126,6 +134,7 @@
   note: "LLM 预分类建议(high):亚马逊19年老将离职，标题党但涉及领导层变动和战略转向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-amazon-009
+  consumed_by: v2
   date: 2026-07-16
   dim: W6
   severity: P2
@@ -141,6 +150,7 @@
   note: "LLM 预分类建议(high):亚马逊云科技峰会，Agentic AI商业化落地，体现产品战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-amazon-010
+  consumed_by: v2
   date: 2026-07-17
   dim: W2
   severity: P1
@@ -157,6 +167,7 @@
 
 # ── 前台 triage 采纳折入(7 条)──
 - id: 2026-07-19-amazon-011
+  consumed_by: v2
   date: 2026-07-19
   dim: W5
   severity: P2
@@ -172,6 +183,7 @@
   note: "LLM 预分类建议(high):限制第三方数据访问,涉及竞争与平台政策争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-amazon-012
+  consumed_by: v2
   date: 2026-07-19
   dim: W5
   severity: P2
@@ -187,6 +199,7 @@
   note: "LLM 预分类建议(high):第三方卖家规模增长,平台生态发展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-amazon-013
+  consumed_by: v2
   date: 2026-07-19
   dim: W3
   severity: P1
@@ -202,6 +215,7 @@
   note: "LLM 预分类建议(high):亚马逊开放新业务ASCS，战略扩张信号明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-amazon-014
+  consumed_by: v2
   date: 2026-07-19
   dim: W2
   severity: P1
@@ -217,6 +231,7 @@
   note: "LLM 预分类建议(high):Haul业务卖家突破3000家，GMV量化增长数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-amazon-015
+  consumed_by: v2
   date: 2026-07-17
   dim: W5
   severity: P1
@@ -232,6 +247,7 @@
   note: "LLM 预分类建议(high):产品召回事件，涉及品牌声誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-amazon-016
+  consumed_by: v2
   date: 2026-07-18
   dim: W4
   severity: P2
@@ -247,6 +263,7 @@
   note: "LLM 预分类建议(med):AI投入战略与风险评估，含有争议观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-amazon-017
+  consumed_by: v2
   date: 2026-07-19
   dim: W3
   severity: P2

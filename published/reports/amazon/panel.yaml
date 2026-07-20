@@ -1,13 +1,28 @@
 panel: vc-en
 locked_at: 2026-07-16
 mba_version: 0.4.5
-published_at: 2026-07-16
-version: v1
-score_total: 218
+published_at: 2026-07-20
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 216
 score_max: 250
-score_normalized: 8.72
+score_normalized: 8.64
+reference:
+  version: v1
+  score_total: 218
+  score_normalized: 8.72
+history:
+  - version: v1
+    published_at: 2026-07-16
+    score_total: 218
+    score_normalized: 8.72
+  - version: v2
+    published_at: 2026-07-20
+    score_total: 216
+    score_normalized: 8.64
 overrides:
   add: []
   drop: []
-# 杰夫·贝索斯(Amazon 创始人)非 MBA 评委,故本审计无自冲突问题、无 --panel-drop。
-# vc-en 5 评委均无 Amazon 强关联(check_self_conflict --brand Amazon --panel vc-en 无命中)。
+# 杰夫·贝索斯(Amazon 创始人)非 MBA 评委,无自冲突、无 --panel-drop。
+# v2 EVOLUTION 仅消费 watch/amazon/events.yaml 未消费事件:Identity ↓0.2(AI 人力系统喊停 + 老将离职)、Signal ↓0.2(FTC 数十亿诉讼 + ZooX 召回)。
