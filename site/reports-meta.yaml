@@ -475,17 +475,23 @@ reports:
 
   - slug: apple
     card_brand: "Apple · 苹果"
-    card_meta: "vc-en panel · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 乔布斯是评委但不在本 panel"
-    headline: "MBA 第二高分:身份维度 9.6 全场最高,唯一分歧是没有乔布斯又在 AI 落后能否再定义品类"
+    card_meta: "vc-en panel · EVOLUTION v2 · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 乔布斯是评委但不在本 panel"
+    headline: "v2 EVOLUTION:全线涨价=定价权 + Apple Intelligence 国行过审,Signal ↑0.2 → 221→222 · 8.84→8.88 登顶 MBA 审计史最高"
+    score_history:
+      - { v: v1, score: 8.84 }
+      - { v: v2, score: 8.88 }
+    versions:
+      - { v: v1, date: 2026-07-16, file: versions/v1_2026-07-16.html }
+      - { v: v2, date: 2026-07-20, current: true }
     brand_cn: Apple / 苹果
     brand_en: Apple
     panel: vc-en
     industry: 智能制造·硬件
-    version: v1
-    audit_date: 2026-07-16
-    score_total: 221
+    version: v2
+    audit_date: 2026-07-20
+    score_total: 222
     score_max: 250
-    score_normalized: 8.84
+    score_normalized: 8.88
     tl_dr: >-
       MBA 迄今 Identity(身份系统)维度最高分(9.6):极简设计、Think Different、Jony Ive 美学与乔布斯
       "美是产品本质"图腾构成地表最一致的品牌身份。加上"车库创业→被自己公司逐出→特洛伊木马式归来"的

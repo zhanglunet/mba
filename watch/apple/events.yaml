@@ -5,6 +5,7 @@
 #   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
 
 - id: 2026-06-18-apple-001
+  consumed_by: v2
   date: 2026-06-18
   dim: W4
   severity: P2
@@ -20,6 +21,7 @@
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-08-apple-002
+  consumed_by: v2
   date: 2026-07-08
   dim: W9
   severity: P1
@@ -35,6 +37,7 @@
   note: "首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-09-apple-003
+  consumed_by: v2
   date: 2026-07-09
   dim: W1
   severity: P2
@@ -51,6 +54,7 @@
 
 # ── 前台 triage 采纳折入(8 条)──
 - id: 2026-07-18-apple-004
+  consumed_by: v2
   date: 2026-07-18
   dim: W2
   severity: P2
@@ -66,6 +70,7 @@
   note: "LLM 预分类建议(high):Apple Intelligence国行版上线，产品功能落地事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-apple-005
+  consumed_by: v2
   date: 2026-07-18
   dim: W6
   severity: P1
@@ -81,6 +86,7 @@
   note: "LLM 预分类建议(high):多产品涨价，影响用户体验和品牌认知的重要事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-apple-006
+  consumed_by: v2
   date: 2026-07-17
   dim: W6
   severity: P1
@@ -96,6 +102,7 @@
   note: "LLM 预分类建议(high):订阅服务涨价，与第8条部分重复但独立事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-apple-007
+  consumed_by: v2
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -111,6 +118,7 @@
   note: "LLM 预分类建议(high):Apple Intelligence国行备案完成，产品落地进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-apple-008
+  consumed_by: v2
   date: 2026-07-18
   dim: W2
   severity: P2
@@ -126,6 +134,7 @@
   note: "LLM 预分类建议(high):新平台Apple Business推出，商业模式扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-apple-009
+  consumed_by: v2
   date: 2026-07-16
   dim: W6
   severity: P1
@@ -141,6 +150,7 @@
   note: "LLM 预分类建议(high):AppleCare+涨价，多产品覆盖，用户成本上升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-apple-010
+  consumed_by: v2
   date: 2026-07-18
   dim: W6
   severity: P1
@@ -156,6 +166,7 @@
   note: "LLM 预分类建议(high):Apple Music和iCloud+国内调价，多地同步涨价事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-apple-011
+  consumed_by: v2
   date: 2026-07-17
   dim: W2
   severity: P2
@@ -172,6 +183,7 @@
 
 # ── 前台 triage 采纳折入(8 条)──
 - id: 2026-07-18-apple-012
+  consumed_by: v2
   date: 2026-07-18
   dim: W6
   severity: P2
@@ -187,6 +199,7 @@
   note: "LLM 预分类建议(high):订阅服务涨价，影响用户体验和品牌感知。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-apple-013
+  consumed_by: v2
   date: 2026-07-19
   dim: W6
   severity: P2
@@ -202,6 +215,7 @@
   note: "LLM 预分类建议(high):服务涨价公告，用户成本增加。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-apple-014
+  consumed_by: v2
   date: 2026-07-20
   dim: W5
   severity: P2
@@ -217,6 +231,7 @@
   note: "LLM 预分类建议(high):苹果调整日本定价,涉及区域市场策略变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-apple-015
+  consumed_by: v2
   date: 2026-07-19
   dim: W4
   severity: P1
@@ -232,6 +247,7 @@
   note: "LLM 预分类建议(high):Apple Intelligence国行通过审核,重要功能发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-apple-016
+  consumed_by: v2
   date: 2026-07-19
   dim: W1
   severity: P2
@@ -247,6 +263,7 @@
   note: "LLM 预分类建议(med):Mac Pro芯片规划曝光,产品战略信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-apple-017
+  consumed_by: v2
   date: 2026-07-18
   dim: W5
   severity: P1
@@ -262,6 +279,7 @@
   note: "LLM 预分类建议(high):Apple Music官方涨价公告,重要商业决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-apple-018
+  consumed_by: v2
   date: 2026-07-19
   dim: W6
   severity: P1
@@ -277,6 +295,7 @@
   note: "LLM 预分类建议(med):苹果AI进入中国市场前景分析,战略性话题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-apple-019
+  consumed_by: v2
   date: 2026-07-18
   dim: W5
   severity: P1
