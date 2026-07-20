@@ -1,17 +1,17 @@
 panel: vc-en
 locked_at: 2026-07-16
 mba_version: 0.4.5
-published_at: 2026-07-18
-version: v2
+published_at: 2026-07-20
+version: v3
 mode: evolution
-previous_version: v1
-score_total: 171
+previous_version: v2
+score_total: 170
 score_max: 200
-score_normalized: 8.55
+score_normalized: 8.50
 reference:
-  version: v1
-  score_total: 173
-  score_normalized: 8.65
+  version: v2
+  score_total: 171
+  score_normalized: 8.55
 history:
   - version: v1
     published_at: 2026-07-16
@@ -21,10 +21,12 @@ history:
     published_at: 2026-07-18
     score_total: 171
     score_normalized: 8.55
+  - version: v3
+    published_at: 2026-07-20
+    score_total: 170
+    score_normalized: 8.50
 overrides:
   add: []
   drop: [rhoffman]
-# 里德·霍夫曼(rhoffman)创办 LinkedIn(2016 售予微软)并曾任微软董事,与 Microsoft 强关联
-# (self-conflict.yaml: rhoffman.orgs 含 Microsoft/LinkedIn)→ --panel-drop rhoffman。
-# 有效评委 4 位(安德森·格雷厄姆·蒂尔·纳瓦尔),满分 200。
-# 现任 CEO 纳德拉是评委(satyanadella)但不在 vc-en panel;创始人盖茨非评委——无其他自冲突。
+# 里德·霍夫曼与 Microsoft 强关联 → --panel-drop rhoffman。有效评委 4 位,满分 200。
+# v3 EVOLUTION 仅消费 watch/microsoft/events.yaml 未消费事件:Signal ↓0.25(再裁员 + 漏洞洪流)。

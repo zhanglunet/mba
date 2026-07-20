@@ -348,13 +348,13 @@
       "brand_cn": "Microsoft / 微软",
       "brand_en": "Microsoft",
       "ticker": null,
-      "version": "v2",
-      "audit_date": "2026-07-18",
+      "version": "v3",
+      "audit_date": "2026-07-20",
       "panel": "vc-en",
       "score": {
-        "total": 171,
+        "total": 170,
         "max": 200,
-        "normalized": 8.55
+        "normalized": 8.5
       },
       "tl_dr": "EVOLUTION v2(watch 事件流):v1 唯一分歧在 Signal(8.25)——蒂尔独疑\"AI 领先借自 OpenAI\"。本轮 NYT 修订对 OpenAI 与微软的 AI 版权诉讼,把这层依赖变成具体法律敞口;叠加一轮(<2.5%)裁员,Signal 8.25→7.75(↓0.5)。Leverage(9.5)因 Pecos 算力扩张 vs 诉讼悬顶净对冲 ↔——最深护城河没动。173→171 (8.65→8.55),克制下修:动的是蒂尔早点破的那层\"AI 自有度\"。蒂尔守 7 不动,从少数派变先知。",
       "html_url": "/reports/microsoft/",

@@ -540,22 +540,24 @@ reports:
   - slug: microsoft
     card_brand: "Microsoft · 微软"
     card_meta: "vc-en panel · 4 评委（安德森·格雷厄姆·蒂尔·纳瓦尔）· 雷达图 + 异议热力图 · 霍夫曼因微软董事关联 --panel-drop"
-    headline: "v2 EVOLUTION:蒂尔的 OpenAI 依赖疑虑被 NYT 诉讼坐实,173→171 · 8.65→8.55"
+    headline: "v3 EVOLUTION:延续温和下滑——首次自愿退休计划(再裁员)+ LeakWatch 漏洞洪流,Signal ↓0.25 → 171→170 · 8.55→8.50"
     score_history:
       - { v: v1, score: 8.65 }
       - { v: v2, score: 8.55 }
+      - { v: v3, score: 8.50 }
     versions:
       - { v: v1, date: 2026-07-16, file: versions/v1_2026-07-16.html }
-      - { v: v2, date: 2026-07-18, current: true }
+      - { v: v2, date: 2026-07-18, file: versions/v2_2026-07-18.html }
+      - { v: v3, date: 2026-07-20, current: true }
     brand_cn: Microsoft / 微软
     brand_en: Microsoft
     panel: vc-en
     industry: 企业服务·安全
-    version: v2
-    audit_date: 2026-07-18
-    score_total: 171
+    version: v3
+    audit_date: 2026-07-20
+    score_total: 170
     score_max: 200
-    score_normalized: 8.55
+    score_normalized: 8.50
     tl_dr: >-
       EVOLUTION v2(watch 事件流):v1 唯一分歧在 Signal(8.25)——蒂尔独疑"AI 领先借自 OpenAI"。本轮
       NYT 修订对 OpenAI 与微软的 AI 版权诉讼,把这层依赖变成具体法律敞口;叠加一轮(<2.5%)裁员,Signal
