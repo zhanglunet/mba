@@ -3,13 +3,13 @@
   "brand_cn": "SpaceX",
   "brand_en": "SpaceX",
   "ticker": null,
-  "version": "v2",
-  "audit_date": "2026-07-12",
+  "version": "v3",
+  "audit_date": "2026-07-20",
   "panel": "vc-en",
   "score": {
-    "total": 219,
+    "total": 218,
     "max": 250,
-    "normalized": 8.76
+    "normalized": 8.72
   },
   "tl_dr": "EVOLUTION v2:史上最大 IPO(募资约 750 亿美元、首日 +19% 市值约 2.1 万亿,NASDAQ:SPCX) 补上 v1 Signal 的唯一保留——估值信号未被公开市场验证。Signal 8.6→9.2(格雷厄姆/安德森/ 霍夫曼各 ↑1,纳瓦尔/蒂尔△按「定价不是现金流」持分不动);Identity 6.8→7.0,分歧升级为 「IPO 用治理稀释 key-man,还是给它装上实时计价器」。总分 215→219(8.60→8.76,↑0.16), 超过爱马仕(8.64)成为 MBA 审计史最高分。",
   "html_url": "/reports/spacex/",

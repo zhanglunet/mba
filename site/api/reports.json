@@ -204,13 +204,13 @@
       "brand_cn": "SpaceX",
       "brand_en": "SpaceX",
       "ticker": null,
-      "version": "v2",
-      "audit_date": "2026-07-12",
+      "version": "v3",
+      "audit_date": "2026-07-20",
       "panel": "vc-en",
       "score": {
-        "total": 219,
+        "total": 218,
         "max": 250,
-        "normalized": 8.76
+        "normalized": 8.72
       },
       "tl_dr": "EVOLUTION v2:史上最大 IPO(募资约 750 亿美元、首日 +19% 市值约 2.1 万亿,NASDAQ:SPCX) 补上 v1 Signal 的唯一保留——估值信号未被公开市场验证。Signal 8.6→9.2(格雷厄姆/安德森/ 霍夫曼各 ↑1,纳瓦尔/蒂尔△按「定价不是现金流」持分不动);Identity 6.8→7.0,分歧升级为 「IPO 用治理稀释 key-man,还是给它装上实时计价器」。总分 215→219(8.60→8.76,↑0.16), 超过爱马仕(8.64)成为 MBA 审计史最高分。",
       "html_url": "/reports/spacex/",
@@ -240,13 +240,13 @@
       "brand_cn": "OpenAI",
       "brand_en": "OpenAI",
       "ticker": null,
-      "version": "v1",
-      "audit_date": "2026-07-12",
+      "version": "v2",
+      "audit_date": "2026-07-20",
       "panel": "vc-en",
       "score": {
-        "total": 193,
+        "total": 190,
         "max": 250,
-        "normalized": 7.72
+        "normalized": 7.6
       },
       "tl_dr": "OpenAI 以 193/250(7.72)完成 vc-en 面板 FRESH 审计:Category 9.2 全卷最高—— ChatGPT 900M 周活即品类本身,Codex 靠打包进订阅半年翻盘至 500 万周活,并握有 AGENTS.md(已入 Linux Foundation)的品类标准起草权。最大分歧在 Leverage(Δ4): 安德森 9 读作本世代最大分发杠杆;蒂尔△ 5 读作「月入 $2B 仍烧钱 = 利润被竞争 实时吃掉,$250B Azure 承诺是负债」。最弱 Identity 6.2:结构 11 年三易、五天治理 危机、Sora 上而复关。两位△评委(蒂尔 = 创立期捐赠人、霍夫曼 = 前董事)分别给出 全场最低分与 Identity 并列最低分——渊源未变成溢价。",
       "html_url": "/reports/openai/",
@@ -258,13 +258,13 @@
       "brand_cn": "智谱",
       "brand_en": "Zhipu AI",
       "ticker": "02513.HK",
-      "version": "v1",
-      "audit_date": "2026-07-12",
+      "version": "v2",
+      "audit_date": "2026-07-20",
       "panel": "ai-app-cn",
       "score": {
-        "total": 177,
+        "total": 181,
         "max": 250,
-        "normalized": 7.08
+        "normalized": 7.24
       },
       "tl_dr": "中国大模型公司里「起点最早、上市最先、开源最激进」的样本:2019 年(ChatGPT 前 三年)自清华 KEG 转化,2026-01-08 港交所上市成「全球大模型第一股」,GLM-5.2 (MIT 开源)拿下 Code Arena 全球可用模型第一,现以 150 亿科创板募资冲刺「A+H」。 ai-app-cn 面板 177/250(7.08),高于同板 Kimi 的 6.85。最大分歧 Leverage(Δ4): 傅盛 9「没人能下架的基础设施」 vs 朱啸虎 5「开源即让利,47.18 亿年亏损是军备 账单」——2023 傅朱大模型论战的攻守易位续集。最弱 Identity 6.2:AGI 登月叙事与 政企私有化收入(73.7%)的两张皮,加上智谱/Z.ai/GLM/清言多名并存。",
       "html_url": "/reports/zhipu/",
@@ -312,13 +312,13 @@
       "brand_cn": "Apple / 苹果",
       "brand_en": "Apple",
       "ticker": null,
-      "version": "v1",
-      "audit_date": "2026-07-16",
+      "version": "v2",
+      "audit_date": "2026-07-20",
       "panel": "vc-en",
       "score": {
-        "total": 221,
+        "total": 222,
         "max": 250,
-        "normalized": 8.84
+        "normalized": 8.88
       },
       "tl_dr": "MBA 迄今 Identity(身份系统)维度最高分(9.6):极简设计、Think Different、Jony Ive 美学与乔布斯 \"美是产品本质\"图腾构成地表最一致的品牌身份。加上\"车库创业→被自己公司逐出→特洛伊木马式归来\"的 传奇起源与个人电脑/GUI/音乐/手机/平板的连续品类创造史,几乎无法复制。vc-en 5 评委(乔布斯是评委 但不在本 panel,无自冲突)共识:Identity(9.6)领跑、Origin/Leverage(各 9.0)紧随;唯一实质分歧在 Signal(7.8)——纳瓦尔\"品牌是穿越周期的杠杆\"9 vs 安德森/蒂尔\"AI 落后动摇创新 durability\"7。 与 NVIDIA 峰值在 Leverage 不同,Apple 峰值在 Identity。221/250 · 8.84/10(MBA 第二高)。",
       "html_url": "/reports/apple/",
@@ -330,13 +330,13 @@
       "brand_cn": "Google / 谷歌",
       "brand_en": "Google",
       "ticker": null,
-      "version": "v1",
-      "audit_date": "2026-07-16",
+      "version": "v2",
+      "audit_date": "2026-07-20",
       "panel": "vc-en",
       "score": {
-        "total": 211,
+        "total": 208,
         "max": 250,
-        "normalized": 8.44
+        "normalized": 8.32
       },
       "tl_dr": "Category(品类定义)维度领跑级(9.2):定义现代网络搜索 + 发明搜索广告商业模式,并以 2017 年 Transformer 论文成为生成式 AI 的技术基石;蒂尔更把 Google 当\"创造性垄断\"的教科书范式。从斯坦福 宿舍 BackRub、门洛帕克车库到\"organize the world's information\"的使命是硅谷经典起源。vc-en 5 评委 (佩奇非评委,无自冲突)共识:Category(9.2)领跑、Leverage(8.8)紧随;全卷最低、也最一致谨慎的是 Signal(7.6)——2024 搜索反垄断败诉 + \"发明了 Transformer 却被 OpenAI 的 ChatGPT 抢先\"的创新者 窘境。211/250 · 8.44/10(vc-en 高分梯队)。",
       "html_url": "/reports/google/",
@@ -366,13 +366,13 @@
       "brand_cn": "Amazon / 亚马逊",
       "brand_en": "Amazon",
       "ticker": null,
-      "version": "v1",
-      "audit_date": "2026-07-16",
+      "version": "v2",
+      "audit_date": "2026-07-20",
       "panel": "vc-en",
       "score": {
-        "total": 218,
+        "total": 216,
         "max": 250,
-        "normalized": 8.72
+        "normalized": 8.64
       },
       "tl_dr": "Leverage(杠杆)维度领跑级(9.4):被写进商学院教材的\"飞轮\"(选品→流量→卖家→规模成本↓→低价→ 更多客户)+ AWS + Prime + 全球物流,是商业史最深的运营型护城河——不同于 NVIDIA 的 CUDA 软件锁定、 微软的多元产品捆绑,亚马逊胜在规模+运营的复利。贝索斯从 D.E. Shaw 辞职、1994 车库在线书店到以 AWS 开创云计算品类,\"Day 1、客户痴迷、长期主义\"是从第一天起的操作系统。vc-en 5 评委(贝索斯非评委, 无自冲突)共识:Leverage(9.4)领跑、Category(9.2)紧随;唯一分歧在 Signal(8.0)——蒂尔\"护城河深到 触发 FTC 反垄断 + AI 追赶者\"7 vs 纳瓦尔\"飞轮复利穿越周期\"9。218/250 · 8.72/10(vc-en 高分梯队)。",
       "html_url": "/reports/amazon/",
@@ -384,13 +384,13 @@
       "brand_cn": "Huawei / 华为",
       "brand_en": "Huawei",
       "ticker": null,
-      "version": "v1",
-      "audit_date": "2026-07-16",
+      "version": "v2",
+      "audit_date": "2026-07-20",
       "panel": "security-cn-global",
       "score": {
-        "total": 212,
+        "total": 215,
         "max": 250,
-        "normalized": 8.48
+        "normalized": 8.6
       },
       "tl_dr": "Origin(起源叙事)维度得分最高之一(9.0):任正非 43 岁以 2.1 万元创办、以\"农村包围城市\"走向自研, 再到抗住 2019 美国实体清单、2023 以 Mate 60 国产 7nm 芯片突破封锁——一部把创业与生存焊在一起、 仍在续写的起源-韧性叙事。加\"狼性文化、以客户为中心、灰度哲学\"的高度一致身份(Identity 8.8)。 security-cn-global 5 评委(任正非因创始人自冲突 --panel-drop)分歧沿东西方最清晰:周鸿祎(国家队) 与马斯克(工程崇拜)并列 45,纳德拉(西方信任视角)38 全卷最低。唯一实质分歧在 Signal(8.0)—— 马斯克/周鸿祎\"Mate 60 突破是韧性证明\"9 vs 纳德拉/张明正\"先进制程天花板仍在\"7。212/250 · 8.48/10。",
       "html_url": "/reports/huawei/",
@@ -402,13 +402,13 @@
       "brand_cn": "Tesla / 特斯拉",
       "brand_en": "Tesla",
       "ticker": "TSLA",
-      "version": "v1",
-      "audit_date": "2026-07-16",
+      "version": "v2",
+      "audit_date": "2026-07-20",
       "panel": "auto",
       "score": {
-        "total": 170,
+        "total": 171,
         "max": 200,
-        "normalized": 8.5
+        "normalized": 8.55
       },
       "tl_dr": "Category(品类定义)维度得分 MBA 迄今最高(9.5):没有发明电动车,却第一个把电动车做成\"人们真正 想要、愿意排队买\"的高端欲望品,把\"电动=环保妥协\"改写成\"电动=更快、更智能、更酷\"——四位打分评委 (雷军/李想/何小鹏/李斌)本身就是这场品类革命的产物。auto 面板 4 评委(马斯克因特斯拉创始人自冲突 --panel-drop,第 3 个真实 panel-drop)分歧沿\"祖师爷 vs 挑战者\":雷军/何小鹏(最直接沿特斯拉打法) 并列 45,李想(增程务实)40。唯一强分歧在 Signal(7.5,Δ3 全卷最大)——何小鹏\"数据飞轮是硬护城河\"9 vs 李想\"FSD 过度承诺、价格战暴露软件护城河未兑现\"6。170/200 · 8.50/10。",
       "html_url": "/reports/tesla/",

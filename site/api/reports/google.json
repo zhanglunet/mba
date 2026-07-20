@@ -3,13 +3,13 @@
   "brand_cn": "Google / 谷歌",
   "brand_en": "Google",
   "ticker": null,
-  "version": "v1",
-  "audit_date": "2026-07-16",
+  "version": "v2",
+  "audit_date": "2026-07-20",
   "panel": "vc-en",
   "score": {
-    "total": 211,
+    "total": 208,
     "max": 250,
-    "normalized": 8.44
+    "normalized": 8.32
   },
   "tl_dr": "Category(品类定义)维度领跑级(9.2):定义现代网络搜索 + 发明搜索广告商业模式,并以 2017 年 Transformer 论文成为生成式 AI 的技术基石;蒂尔更把 Google 当\"创造性垄断\"的教科书范式。从斯坦福 宿舍 BackRub、门洛帕克车库到\"organize the world's information\"的使命是硅谷经典起源。vc-en 5 评委 (佩奇非评委,无自冲突)共识:Category(9.2)领跑、Leverage(8.8)紧随;全卷最低、也最一致谨慎的是 Signal(7.6)——2024 搜索反垄断败诉 + \"发明了 Transformer 却被 OpenAI 的 ChatGPT 抢先\"的创新者 窘境。211/250 · 8.44/10(vc-en 高分梯队)。",
   "html_url": "/reports/google/",
