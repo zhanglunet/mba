@@ -457,19 +457,21 @@ reports:
   - slug: nvidia
     card_brand: "NVIDIA · 英伟达"
     card_meta: "vc-en panel · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 黄仁勋是评委但不在本 panel"
-    headline: "v2 EVOLUTION:蒂尔点名的对华管制风险坐实,222→220 · 8.88→8.80"
+    headline: "v3 EVOLUTION:日本国家级 AI 基础设施 + Together AI 对冲 CUDA 侵蚀 + RTX50 叫停,净持平 220/250 · 8.80"
     score_history:
       - { v: v1, score: 8.88 }
       - { v: v2, score: 8.80 }
+      - { v: v3, score: 8.80 }
     versions:
       - { v: v1, date: 2026-07-16, file: versions/v1_2026-07-16.html }
-      - { v: v2, date: 2026-07-18, current: true }
+      - { v: v2, date: 2026-07-18, file: versions/v2_2026-07-18.html }
+      - { v: v3, date: 2026-07-20, current: true }
     brand_cn: NVIDIA / 英伟达
     brand_en: NVIDIA
     panel: vc-en
     industry: 人工智能
-    version: v2
-    audit_date: 2026-07-18
+    version: v3
+    audit_date: 2026-07-20
     score_total: 220
     score_max: 250
     score_normalized: 8.80

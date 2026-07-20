@@ -132,7 +132,7 @@
     {
       "type": "report",
       "slug": "nvidia",
-      "title": "NVIDIA / 英伟达 · v2",
+      "title": "NVIDIA / 英伟达 · v3",
       "text": "EVOLUTION v2(watch 事件流):v1 唯一实质分歧在 Signal(8.2)——蒂尔独疑对华出口管制。本轮该风险 现实兑现:对华芯片销售停滞、华为等本土领先、H200 出货\"极少\",Signal 8.2→7.8(↓0.4);但同期日本 国家级 AI 基础设施 + Jetson Thor 机器人开出新战场,Leverage(9.6)/Category(9.4)净对冲 ↔。 222→220(8.88→8.80),克制下修:护城河没动,动的是被蒂尔点名的中国这一块——他守 7 不动,是唯一 提前定价者。这一格是\"版图轮动\"的价,不是\"结构衰退\"的价。",
       "url": "/reports/nvidia/",
       "api_url": "/api/reports/nvidia.json"
