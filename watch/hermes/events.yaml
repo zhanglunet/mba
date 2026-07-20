@@ -180,3 +180,34 @@
   source_type: media
   note: "LLM 预分类建议(med):建筑设计作品展示,涉及品牌形象与文化传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-19-hermes-012
+  date: 2026-07-19
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "硅谷新星Hermes agent被指抄袭中国团队：AI学会“洗代码”，开源精神还撑得住吗？"
+  quote: "硅谷新星Hermes agent被指抄袭中国团队：AI学会“洗代码”，开源精神还撑得住吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9sTHdkeC1fcnBHY21GejRmTHJDV1hhbGpUMUs1aG8zaThUd001Ym82WlNlNjhBcGx4c1llX3EwOUZxcS15NXduYWJSc3dMY3lMODNv?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Hermes AI被指抄袭，涉及品牌声誉。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-hermes-013
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕最新投资，为何选中COLOMBO？ – 华丽志"
+  quote: "爱马仕最新投资，为何选中COLOMBO？ – 华丽志"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxONEtWY3Y5LXdNUnpvRWtOVGx5VXZBbXRkRnI2RWlVZnNkYkhQM05rSnNjd2ZSV2RSQk5tenNiRVBEWTFtQjhFVWhydVRNUjhzR2NSMXFxZlZKeFl3VE5mNHJHSGpfTHRMemF1bGhtdVBLanF1dlhlbnh3UVkySm15SnRaUjc?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕投资COLOMBO，战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

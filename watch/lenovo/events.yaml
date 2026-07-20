@@ -190,3 +190,34 @@
   source_type: media
   note: "LLM 预分类建议(high):联想员工福利政策，企业文化展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-19-lenovo-013
+  date: 2026-07-19
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "异动直击 | 联想集团涨近5%，公司发布首个国产DeepSeek一体机解决方案"
+  quote: "异动直击 | 联想集团涨近5%，公司发布首个国产DeepSeek一体机解决方案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUGl0RFFZRmYzUldzbThCbUtzSWRsYmFRdUh4aUl4SmNGOGw4c0RYRVB2bGFFbWVFSHJPN3pCV25mN1BvQi1lSlNEUHluenpwbWhLVzFyZWdiZnBudy11SHFXU2ExdF94TlpIdmJDTkNxZ1gwQU5GaFZzRGxZblRYWlZtM1NOY2h0TG9VcDdtX3RDMlp4blNIVlo1LUlUMExIZ2ZRYmhpblM0UQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):联想发布DeepSeek一体机解决方案，产品创新事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-lenovo-014
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "联想陈敏仪：AI不应是少数人的奢侈品，而是像“水电”一样的基础设施"
+  quote: "联想陈敏仪：AI不应是少数人的奢侈品，而是像“水电”一样的基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE4waFBzcnE2UF9sbzVKaHpYeDVpSVgxNGdHWDl2QTFyZU5weUhEdGc3MnhMMWE3cE80bERwZ2dmMTJPY1VnS3p5dk5HTGdMQU42c2c?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管观点表述，体现品牌AI战略定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

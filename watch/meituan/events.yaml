@@ -234,3 +234,34 @@
   source_type: media
   note: "LLM 预分类建议(high):推出后厨透明化验真机制，食品安全透明度提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-20-meituan-016
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "淘宝又和美团干起来了"
+  quote: "淘宝又和美团干起来了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBpNFFQMWNROHhLSV9BRTQtQWFoVDdLRm1JMlpUUkV2QTR0c0praVRtR1FNV2dVdGFHSVQ0alp0N2l4YXhfTWNwdnIxVFVaZVJNeFRUcVFBZXpEMVd6MkRCQXdB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):竞争冲突，需了解具体事由。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-meituan-017
+  date: 2026-07-18
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "美团Q1营收910.39亿元，同比增长5.6%；经调整净亏损49.68亿元，市场预期亏损68.31亿元"
+  quote: "美团Q1营收910.39亿元，同比增长5.6%；经调整净亏损49.68亿元，市场预期亏损68.31亿元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxPVGNmNm84b3BtUkJTaVpzV2o0dzhpMV9xUlE5a2RXbnVoUzJEakhnUG96d3hyX0ctMm9fSkRiSWRicjJITDFUczhIYTZxOExRWlNkVGdPNFZ2NkRDNERqdUcyRmdtdUFTUzUwdkhHNDhYYjdPSjRJTU1sQWlNUlBDWWxnODBxNDh5ejR1YTIwM0dwTnltYUxubQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q1财报数据，营收增长但亏损超预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

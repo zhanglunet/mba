@@ -119,3 +119,64 @@
   source_type: media
   note: "LLM 预分类建议(high):营销活动启动，品牌推广事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-17-dji-008
+  date: 2026-07-17
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "把生活拍成电影：DJI 大疆 Osmo Pocket 系列影像大赛正式开启"
+  quote: "把生活拍成电影：DJI 大疆 Osmo Pocket 系列影像大赛正式开启"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE0xWlNjV3FxaHYtdkJDVFRZLURSMXVWRjEtOWR6TkF2dXh5WHNuZk1SdklXLU1XSkRaRm5LbWJqdy1NNVdzT29ibFJ5ZGY5bmd5TFp3QlJ3akM5UURZOGstQ3JYTG5kVkJoYVZnZFRTY2xDc01XV3FYTV9zRVp1aWM?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):产品营销活动，品牌推广事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-dji-009
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "从洪水到珠峰：大疆的极限叙事与长期主义密码"
+  quote: "从洪水到珠峰：大疆的极限叙事与长期主义密码"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBSUHFpMFltN1M5clNZRTZZYzR2bmpGUlRzazAxX0pLYWRZUjhJZUI0TUdWSWNMVGx4ZXNoYnptTVFCUGZUR2JITUFvZlBLVzdTQ0k3SVh1c3BhVG9WYVotdFpB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):品牌故事叙述，企业形象与价值观传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-dji-010
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DJI Osmo Pocket 4 评测：口袋视频之王驾到one他真的什么都不缺。"
+  quote: "DJI Osmo Pocket 4 评测：口袋视频之王驾到one他真的什么都不缺。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxQeFZUWC1qYWpEa3lWaUJjSzA2Z0ZoUU9MdkN4c0xJYkEtNG00aDBhX2lOTVRLVl9qRjBEeTlKSk1SZy1lYTFWajNBNXhSbXY4LURJZmVSRzlBelR3eHUtTjhObVRTTW9SN21qWU0xTmxNelZQWVZRYkc3d0JjaGx1Mmdn?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新品评测，产品功能介绍，正面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-dji-011
+  date: 2026-07-19
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DJI大疆Osmo Pocket影像大赛开启|小红书|抖音|创作者|导演|投稿_手机新浪网"
+  quote: "DJI大疆Osmo Pocket影像大赛开启|小红书|抖音|创作者|导演|投稿_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOWlFBb0I2SFkxU2VlcEdEU29rVGJKeHpmUDRKZ09VdmVENnRIMWx5SzNWQl8wOWh6clhFS2R6QWxXeldVNjc0VEdGNHI1bEI0OUNhMlhuVEpfZ1BhdXlNOFpaQnQ4dUhvZjBTUkpCcGhMNjh2UDl2SmFZVFZNeWw2SnZSVmZHcE5QQlZIVmxHWElrUVBMbDY4TVFLX0phQUhzcTJqanIyUHFhODhPek1tOXln?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):品牌营销活动，影像大赛启动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

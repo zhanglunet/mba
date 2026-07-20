@@ -174,3 +174,109 @@
   source_type: media
   note: "LLM 预分类建议(high):融资完成，创始人身家排名，重大舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-19-deepseek-012
+  date: 2026-07-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek估值意外曝光，达3508.8亿元"
+  quote: "DeepSeek估值意外曝光，达3508.8亿元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOYU1FZ0p1dWxGSGt6SllxM0U5ckxaM3dCaWduS3dYcHF3aUp5bXhfMllrc0VzbGtpSlhGd3NHaElOcEJiMUIyT21ITDVjRXZ3SFZLaHRGV3Q2MFdkU0t1d2tRX2FmVEowYkdDLTROTG10cHZjQTVuZDczUE5kU2U5ZGlB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek融资估值曝光，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-013
+  date: 2026-07-20
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Deepseek完成首轮融资：估值3500亿 梁文锋个人持股31%"
+  quote: "Deepseek完成首轮融资：估值3500亿 梁文锋个人持股31%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi-ARBVV95cUxQbXduS3BLQmtZaGZoZ0xHUFgxSkxOSXNIWDhmd3NISEp3YUhMbXRLZXoyR0ZoNnQxVVFxS3NJdkJIWTBOMk8xQ1cxMGFZM3F1bUxVTlo5b2lxN3UyWk4xV2thZmd5NktmaGt1emRvcmtrdTRDQi1TUXJ0R0lUUUtnRm5JdVUxM1lNWmpmR1BWQ3oyem9VWUVOY3dLS3RFNEZGZ19KMzd2MlN1U3A0ZzZuQ0dlT1d0MFpCSTFjRG9GX3lMMmtwUGExRFVrUUE2N2lpVlNYMDhnYmF1dVVCQTl2My12VWxGUWg5ekV2ZWZ1V01HSGp1UGNaQ3dLQ0Z3OXVCRVR6THZTN3VLbWFTTkE0Z3dLbzJQNW1odk5fSDk2LUpha1Bmamp1NGlQNXl6cktoQ18zVXd0aVJFODdtZVZXSENqTTg1SG5kS25qNVZOSWIzVWRic2dwd2lOY1EwV2d2QUFyRy1WODJ6dWRWZXlnQlg4czFnRmZON3lfSGhFWXBHMEU3ZVBfLUNnNjAzS3dIVW9WZGM3WDYzRG9uTkdNQnJYcFQta1M5a1pqSVpGV0VTekhrVXVMSS1aSEI0UUZoUmFkSnRCNFZPaWxlMzJNVk5wNWk5ZW5IbGFDRFZlYk5PdnlGc1Z0UHd5TDBTZ19aYWZ0VmFlY2N4WnV0cmVkdUhiLTg5aGtzYkxpTmNON25ZYVpNcGxwdjBVWVRzTV9MNHphcm1HTFh1M0Q2Y25tOFRrQ215T0NkRlpGbHY3UUEyVWxtNXBpVkR6THhtWmVmZm1xLXVBejY0OFlCVUNvNGJaR1RNN2k2NUdybE1vcGFaeUZWV0QyRg?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek首轮融资确认，估值3500亿，创始人持股披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-deepseek-014
+  date: 2026-07-19
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek V4满血版据报最快7月20日推出"
+  quote: "DeepSeek V4满血版据报最快7月20日推出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE5Jc2pwRW81TEQtT05JSVpxZkhtcFJrV1NyUTJKOWY0VVBySEx4NThabTk4NmU3YlphaWxEcTFtS3ctUW4tSDFlbXlReFNQR05ibjNpeDg3YVZoNUMtRXpZVUR2OWtXZFNveXc?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek V4新版本发布时间表，产品路线图信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-deepseek-015
+  date: 2026-07-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek完成首轮融资 这些上市公司参股（附完整名单）"
+  quote: "DeepSeek完成首轮融资 这些上市公司参股（附完整名单）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFcU5UdFZoXzR5Q21MN1BCZGRhQWZfdlllaGFEbnpDUzlKNDlPQ2kzVEctUHNEdDNWVkJsU3ZpdjhFdWxMRDB4OS1mUmM4c0lPdWJJS0pIQ3YyN2VCMzhUc0xB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek融资参股方名单披露，涉及多家上市公司。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-deepseek-016
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek梁文锋打新长鑫科技 名下近200只基金现身 此前刚融资510亿"
+  quote: "DeepSeek梁文锋打新长鑫科技 名下近200只基金现身 此前刚融资510亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1JNGdhMWx4blBrZm5EYXpMX01lVVY0ck1SX0RXXzE0U2xReDB5QXNlcVVfU0c3bGZ2TzJuejVPSVROOWhDeURJWDlyOWlkZnFOdHkzNEIteV81d1gxajhMNEJB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek创始人梁文锋投资动向与融资后资本运作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-deepseek-017
+  date: 2026-07-18
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "或超3250亿元！上市公司公告意外“曝光”DeepSeek估值"
+  quote: "或超3250亿元！上市公司公告意外“曝光”DeepSeek估值"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ncXl2cS1xOWxLWTN2YmpxWVM5QVk2Z2pmeTBleGctQmtlQTU2cUdrbVQwOEJDVHZOSzBuV3dEbVEyQ1pHcVh2Rmo4SzBRV0duNGc?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值信息通过上市公司公告披露，具有新闻价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-deepseek-018
+  date: 2026-07-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek首轮融资后估值升至3508亿元 腾讯、网易、宁德时代等参投"
+  quote: "DeepSeek首轮融资后估值升至3508亿元 腾讯、网易、宁德时代等参投"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrMTBRd0JETFlIN0FqNFRnQmY5b1M1Q0tNaloyVHA2Nkc2cmJVS2IwUUhFVVpkU3RrVG5wZUhvQnEtXzhZLUlNX19XZ0IwdFYzNEtLQ3JfTEJ5R0lSY0Y2eTgwWFF1TWc?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成、估值提升、大型机构参投，重要融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

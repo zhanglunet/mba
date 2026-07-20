@@ -155,3 +155,109 @@
   source_type: media
   note: "LLM 预分类建议(high):亚马逊AI人力管理系统上线即停，涉及伦理争议和执行风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-19-amazon-011
+  date: 2026-07-19
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "力推官方AI工具？亚马逊开始限制第三方比价网站展示历史价格数据- 跨境电商"
+  quote: "力推官方AI工具？亚马逊开始限制第三方比价网站展示历史价格数据- 跨境电商"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JNS1fTHJxZldUTG5jSjFxOXF3djV5aGZWbnAxcDJ1SjBTeXhiOEVrMlVDeHc4QUZ3MUkxb2RkTGJZa29NZXV5eWptMmpweWM5OXBfRWx3?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):限制第三方数据访问,涉及竞争与平台政策争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-amazon-012
+  date: 2026-07-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊第三方卖家GMV达5750亿美元 年销额超1亿美元卖家增至235家"
+  quote: "亚马逊第三方卖家GMV达5750亿美元 年销额超1亿美元卖家增至235家"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikwJBVV95cUxNU0l6WjgySGQ1MjU1cmJWOUtHRTQzbTFHZGhiREVsVUR0VDNLdDhIb1E3dDlsb1Ayc1JwSVVGZlhaOEpzU3l6NGtuWTR3SU5tTFhJY1pZb29yVHZRSmxRSkZlRklMbHhkemJlbHNldU10NXRRa09kUkloOExhNzdGOG5qT1hEMFcxYmZsM0w0S2hmbkNfUVNEVUxsQ1VrTHBlRGMtZmwzbDJlYlR1VjMwaXZPa0EzRmYzUFp3d1ctTXcyODVSVWxDMTlVcnM0Q000ZV9DeXRSMU91bXVOUzNzblFsemZISHYyZDlNY3dzQWlNNDJGQWltTnJxQnNrMGhlU1RELWdGVURtMzFUZEpIcHBwUQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):第三方卖家规模增长,平台生态发展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-amazon-013
+  date: 2026-07-19
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊开放ASCS，又一个AWS？物流业务或将成为新增长引擎"
+  quote: "亚马逊开放ASCS，又一个AWS？物流业务或将成为新增长引擎"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiyAFBVV95cUxNakNkclZIZ0diYkVhdGtyaXFXdlpPcDU1ZHBOd01hdjFjZEgwSVZWR1R5NnBTZDlWYVdYZjV4ZjdKd0MzRE5qQVl0bDNZSEZiUkwzUGl4SW9rSFVkY2JBdHlqZjZ0TlhEM3pRMjNaM3ZQVS1ORzBCUHpUUnRGNElhenZHVGk1a0FjMFROVlI5RnVTRkZ0ajdwR2g0ZURqUzhVb2lVZDZaeTJSVnV3eU04TlZOOWRUaWFCZGRDUWlkUExPQm5yWUZEQw?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊开放新业务ASCS，战略扩张信号明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-amazon-014
+  date: 2026-07-19
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon Haul卖家突破3000家 GMV约为20亿美元- 跨境电商"
+  quote: "Amazon Haul卖家突破3000家 GMV约为20亿美元- 跨境电商"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sTm1ESW5nZXY5QUFXSFJ6ZjY4bEdMV0Qyb0lSR0RoVmI2NVdrVjQxRzBDTUpidnBOcV82UnRWckFSM00ydkQ4Y3czLUc2X1hiZ0ZZbnV3?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Haul业务卖家突破3000家，GMV量化增长数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-amazon-015
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "松下召回中國造電烤箱 Costco和亞馬遜曾熱銷"
+  quote: "松下召回中國造電烤箱 Costco和亞馬遜曾熱銷"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wOVZ2bndnNEFBbURKakRhWlM1YmtZbXNsQVBYa3hEamt5clVpbDVwSERXbXpKV2oyNTJnNFhZdVU2VEl5SWlXQURjUlg1aGJZZFEwZkdnQU0wZ9IBVEFVX3lxTE1IeEh3VW4xNlZlYzZ0cjl0RklKWG53QXFaYk1GZktjRUNsX1VNNzBWSkd1b0hVaWdpajhXLW9fZlV3c0hJcF9vWWZMWGNHTk1HejNLTw?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):产品召回事件，涉及品牌声誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-amazon-016
+  date: 2026-07-18
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "亚马逊加码AI投入，高投入=高回报？投资者需警惕股价下跌风险"
+  quote: "亚马逊加码AI投入，高投入=高回报？投资者需警惕股价下跌风险"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd0lDRHBEWWF3dTBnOUl0RElCVm9vemNkbmRSVldGNHNVZThzR0ctLW9IcG9UOEVPWEp2ZmtHZWdzeElQTXVTUGNFS2FyM0UxTHFfdmRGZl9FZmU0TVNiRG5rNWR3TjdKRWdYd1NVdzJENWRQc0w4ZVA1MlcxdVpMdDRrMlR5dHFRRmE5dnBhcjB3eEI0U19jUWFsLU5iMm02VnkzRm56cHNXOW1mTGZiVGsxVW0xUFlJUmttOTQycXdMOWVVY18wcw?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI投入战略与风险评估，含有争议观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-amazon-017
+  date: 2026-07-19
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊物流管理层到访APR工厂的原因- 阿视亚经济"
+  quote: "亚马逊物流管理层到访APR工厂的原因- 阿视亚经济"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTFBXMmZIX3FyNDl4UDBRUTBvcWZaQXlfSGlHMXY1MUZlZExxQ0tUeDZIOEdVVHI0czJDNUV4Y0lBMWZSTTlFMXFmdlJoOFJ3c2lGQmQ1b2Jwbi1paXhHYnV2Q0ZldmQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):物流管理层活动，战略动向信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

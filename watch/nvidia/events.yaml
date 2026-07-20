@@ -174,3 +174,79 @@
   source_type: media
   note: "LLM 预分类建议(med):与TEL合作扩大，战略合作事件，信息不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-20-nvidia-012
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达紧急叫停50 SUPER显卡出货！显存太贵不肯卖"
+  quote: "英伟达紧急叫停50 SUPER显卡出货！显存太贵不肯卖"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BcllhQl9BTlViVmYwLVdoUGQ5WVVHNzRCdWZSTFFQNFV5OGxlcXp2czNMTVh3ZGE1c0hCeGExUzRPeFp5WE91UXpwS24zYkJhQ0JxaF84dm1yQmxZTUxzLWNn?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):产品出货叫停，涉及成本压力和供应链决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-nvidia-013
+  date: 2026-07-18
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "据称，由于内存价格高得离谱，英伟达的RTX 50 Super系列显卡正被束之高阁"
+  quote: "据称，由于内存价格高得离谱，英伟达的RTX 50 Super系列显卡正被束之高阁"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTFAzWG0yYjlmWDBral9RWG5nTkRsYlJwTG1aTTB0bVRiZGFxajBUZXU5aFB1X3daS19GQjk4dElNNFN1ZWVNNElUWWZaXzhDcEc4WkNXUkZSUUQyZWZ4NzVaaTFNYjJhb0JtbzB3UQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):产品延期/搁置，成本压力影响产品规划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-nvidia-014
+  date: 2026-07-19
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达大客户集体转向，CUDA垄断地位正在崩塌"
+  quote: "英伟达大客户集体转向，CUDA垄断地位正在崩塌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lZUNmdFhqUGVQa0xNeDFzVmgzbkpPdTVvTWVrMkNreHNBUHFFQ0p3OUhkdFZVTDFId3p4aWxiSDM3VzdVVmhPVjA3TUNHbWlVYVk0azJSblozUTBtaHJJQ3NB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):CUDA垄断地位受威胁，竞争格局变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-nvidia-015
+  date: 2026-07-17
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA扩展Jetson Thor计算机家族，新增T3000、T2000模组"
+  quote: "NVIDIA扩展Jetson Thor计算机家族，新增T3000、T2000模组"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5pVWhTTHRYOC1PalIxZkxDSnlOMVc0ZWNHMml0Q2xhUEZyQnRIMjdONndmY3N4YlIyeTZtcnp3OHBBUHdoZGFDYQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品线扩展，新增计算模组。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-nvidia-016
+  date: 2026-07-18
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达开源Nemotron 3嵌入模型，8B版RTEB得分78.5%夺冠"
+  quote: "英伟达开源Nemotron 3嵌入模型，8B版RTEB得分78.5%夺冠"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9mTV9ZcmNfNjBNaDY0OVgxaDk0NFhtQVJJOEFkY05BdklZWFQ0dzctUGVNVEVhWGEwRlpHT3hqanQxTHdYXy1pX2NKNFRqenZFLXBpV3dtR0RmUGYzSFAtZDR3?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源模型发布，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

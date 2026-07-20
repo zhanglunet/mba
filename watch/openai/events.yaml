@@ -322,3 +322,139 @@
   source_type: media
   note: "LLM 预分类建议(high):监管支持与市场开放，战略利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-20-openai-020
+  date: 2026-07-20
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI高管为何称Kimi开源是'减速主义'？"
+  quote: "OpenAI高管为何称Kimi开源是'减速主义'？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE81ODAxN2JkSzNGMXNxaTQyQ0t5MDdGeXV2V2FMUUhITl84QTFWYWRGNk82M0s5UVllQmx1bm1FSFA5V19sbzN5WlFRX084WnJiSmJkcm9JUGtSNU40bjB3cUN4N3RCVXdBbWNoVXRySU1WNDBPeV9oWDVqak15SE0?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管言论批评竞品，战略立场表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-openai-021
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI加码银发赛道：旧金山新设产品经理岗，专攻家庭与老年AI体验"
+  quote: "OpenAI加码银发赛道：旧金山新设产品经理岗，专攻家庭与老年AI体验"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE1hbkIwbDZCN090dGpVS3M3ajhaeU83N2RhSkRtanBOMlJLWGo1MGRPSnB5STE3T0Rxblp1OVNibl9kOHVMcnZTVTE1UFc2VndreW1MQl9n?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新市场拓展，银发赛道战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-openai-022
+  date: 2026-07-20
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI战略未来主管批Kimi开源：阻碍进一步的AI资本支出"
+  quote: "OpenAI战略未来主管批Kimi开源：阻碍进一步的AI资本支出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX2dZUHhBMmdxZVAtNFhYbW1vUUxuTTVBV2xTREZVSlBQa1B3VXhJU1M2cFBOT2ZqS3J2M1dwVlRGd2owTTJjNkZ3SGU0Qlh3UG8wZVNzUTNYek45SzNHMW1Qa1VIbUZLd1R6cjNWQzlld2R0Tm9KVGx2dHVOanVpWFZlMEU0WXlB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管批评开源模式，战略观点冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-openai-023
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "五角大楼官员批OpenAI高管，美政坛与AI巨头现裂痕"
+  quote: "五角大楼官员批OpenAI高管，美政坛与AI巨头现裂痕"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JaHUyQ1N1TzlleVEzTG5ZT2hZNkhIcFY0V19tTW9lOWU5aVk0cHEtd19ZQVNiQmk4SmNBYk53dEhkSVVzZEFSOWJGbXdoZThOXzdHZ2lRZGJaRk1HWTdNaTNR?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):政府与企业关系裂痕，政策风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-openai-024
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "传奇设计师艾维联手OpenAI，苹果为何没有起诉他？"
+  quote: "传奇设计师艾维联手OpenAI，苹果为何没有起诉他？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5hY3RkVFdjSFUyV1dtdHBUS2xDMDd2VnNjakVURHpYZVJMT2x4aWZTODJacFpJZnZvdm0yTVJXQnBHX2tUQXYyRg?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):设计师合作，人才与战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-openai-025
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果与 OpenAI 法律战升级：约 40 名前员工收到律师函"
+  quote: "苹果与 OpenAI 法律战升级：约 40 名前员工收到律师函"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE54bjRNV2tKcHFpOHlPcjloOG9VRU81eEZYcE8xVnlLSXpTSllwVS13UmppTUZEM1J1T1p4b0QtckhBRU4zMnZTSGNXa3ZtXzBsWVJvRG1MN1A?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):法律纠纷升级，员工离职风险与声誉损害。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-openai-026
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "别再数Token了：OpenAI甩出AI时代记分卡，用\"有用智能每美元\"给CFO算清ROI"
+  quote: "别再数Token了：OpenAI甩出AI时代记分卡，用\"有用智能每美元\"给CFO算清ROI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnMWM2RHZoQ1VBY2ZqZmRFdWlGQl9rNzdXTEc2Q1pXdnJLV1Z2dVdSTTJQNzFHT0xlVkgzZ1JHVHpTTjBwLTlidmFHNDBSQmc?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI推出新的ROI评估指标，体现产品策略创新与商业价值主张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-openai-027
+  date: 2026-07-19
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "关于OpenAI IPO，你需要了解的一些关键信息"
+  quote: "关于OpenAI IPO，你需要了解的一些关键信息"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxOcG9OX0FrMDhfMHpHS3ZUVmpZSnEwWkRid1FKNWFXb3ZrbU5fbUpJMlB0MnRwbEdzcXd1RDRYSzRHckZIZVd6MS13VjFYRC1hYmhpLTJuVXE2a3pMalVxeVBDTFV1dzZpQWtabFRPRm1PbFZFWGxJVldHS28tVEVINk9Ib0ZlNFlJay1rOU00N1lNT1lVRjE3MDJqV3Jxd21TcW9fUVpWeU1EbzFiYUE?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI IPO传言，涉及融资/上市重大事件，需持续监测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-openai-028
+  date: 2026-07-19
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "不止苹果起诉OpenAI：随着AI竞争加剧，谁将成为最大赢家？"
+  quote: "不止苹果起诉OpenAI：随着AI竞争加剧，谁将成为最大赢家？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitwFBVV95cUxPTXRWVWxka1RuQ1kzcTc0TGJMWjRnc0FzTnBRdVlmMEhlelVwUFBqcmZuU1VrYXp3YzBlQzRPWmI5UG9wdm94dDZCRDVveTl4YlRCOS15NVp4b3V0elVBZlM1S21VenJIZUcwNFo4QVdUdlZVbWp6ZmtLRXQzRnR6c2xob2JjbnNQa013NWtUYmw3elgyT085cTZVSXVER1BaTExkQjU4YlRiUmdNZE1XdHZ4MFRlSFk?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及OpenAI法律纠纷与竞争态势，具有舆情冲击力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
