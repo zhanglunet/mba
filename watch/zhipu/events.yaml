@@ -138,3 +138,19 @@
   source_type: media
   note: "LLM 预分类建议(high):IPO进展澄清，资本市场重要动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-19-zhipu-008
+  date: 2026-07-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "智谱总市值超1万亿港元，CEO对前沿模型研发乐观- Futubull"
+  quote: "智谱总市值超1万亿港元，CEO对前沿模型研发乐观- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxOa2tGVWE4emQzZ0Fsc2JwNUNyNlBFRE0wTWxQNUhnMDF1VDZyWDkzZ0x4bVBWNFloaFgyTXBMNnJpWUVPRWFrWTBVTVhKaWtKMGloMFFVVGxpMGxaX3pmTFB2N3lLdHZrbnRNYkJlbFcxTjREMjJVTzBQc2x1dmZlcjMyUVlZamdtVXBvcXYyclF4ZXg4bE9DSjZNLVRRVUpkaG5fUQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):智谱融资/估值重大进展，CEO前沿模型态度表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

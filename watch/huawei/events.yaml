@@ -185,3 +185,64 @@
   source_type: media
   note: "LLM 预分类建议(high):新品发布官方信息,灵犀通信与鸿蒙系统属重要技术亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-17-huawei-013
+  date: 2026-07-17
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "昇腾950超节点真机亮相2026世界人工智能大会"
+  quote: "昇腾950超节点真机亮相2026世界人工智能大会"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5KSVpxZFVJVEJ4Qy1RbDFpa1haT0x0U1k2V3RmellsUXlwaXVRUHVrS0ZVbVpObmU4ajFzVGZaV1N1U29VREpxQWZVQUJhbTV6NHEzRFBTMENRT1h3Wjd1bnRKaldIdFk?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):昇腾950芯片产品亮相，AI战略重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-huawei-014
+  date: 2026-07-19
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "线下 “四朵金花” 最速！华为nova 16系列开售39天销量破百万台"
+  quote: "线下 “四朵金花” 最速！华为nova 16系列开售39天销量破百万台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAFBVV95cUxQTzlSQV8xVVFLTkNZbVpZeS03ZlJZYVJaX003YTFIUmxZcGJEYlo2bDFhekNtWHhzWmlMaWNoeU53ZER5dXlUSFFPTm9jTlM0ZnNTZXAyVzRTYTQ3d3Rrcjd6VnR4bUcyVEVhUzNOaV9BLWtyOE9jRWthNUs0THRESl92bXBTNE1fVU1hRkFHaWd5VF9ZekItWWk5cF83eHlJOGtXM2NzLUtwQVpKMDlkNUNCcDIxZWFBZkxnTw?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):nova 16系列39天销量破百万，量化成绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-huawei-015
+  date: 2026-07-18
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为IDS助力莫桑比克EDM实现低压配电精细化管理- 华为企业业务"
+  quote: "华为IDS助力莫桑比克EDM实现低压配电精细化管理- 华为企业业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxOLXVITFNuWGk2eEpEdHREU1M1UlltRDl4cVMyM003Y3ZWOXRSSFhMRlVMcEMxVXBfZ0dOWThHMUlmeF9QRS1YcThPQlpMbm1BLTk5T0k1VlRoM3k1WXJqdm43S3RXTkNXdndfci03bzE0RmIzc3RWY01IQTJWaXZmQlRrTQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为IDS国际项目案例，B2B业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-huawei-016
+  date: 2026-07-19
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为全场景终端达成L3智能认证"
+  quote: "华为全场景终端达成L3智能认证"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFA4WXoycXBheU8yUUhPRnpMcWwyZFR5RFdSSEhmaVdnYXhJNV8zR2RrY1BXVDlOenVla2VYLXV1T2VkWWNIQWc5MFQ1VEJyejlrbDlGaGpMRjg5bWNmcThPY2NB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为技术进展，L3智能认证达成具体里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

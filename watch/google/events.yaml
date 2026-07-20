@@ -200,3 +200,94 @@
   source_type: media
   note: "LLM 预分类建议(high):出版商集体诉讼,AI训练侵权重大法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-20-google-014
+  date: 2026-07-20
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Google与苹果正围绕人工智能助手的发展前景与欧盟产生激烈分歧- Google 谷歌"
+  quote: "Google与苹果正围绕人工智能助手的发展前景与欧盟产生激烈分歧- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE4xSktGTVQ5dzRzeUxwLUZjalZmaGQzVHVYVERJV3gwUGVkay0yLTg0cmFKalZlODA0NVZzUXQwZWhZbzU1VlZJcHM5cWRtc0VMZnZ0UVlFb1RLYVJLeXRYdQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌苹果与欧盟AI监管分歧,重要政策冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-google-015
+  date: 2026-07-17
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌NotebookLM更名Gemini Notebook，原生支持代码编写执行|Google|云计算|IT之家|Google AI|企业客户_手机新浪网"
+  quote: "谷歌NotebookLM更名Gemini Notebook，原生支持代码编写执行|Google|云计算|IT之家|Google AI|企业客户_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwVBVV95cUxNdE83TjZ2a2tlalBqMThEZWZWZ1VuNkttRVltSlpNQ3JfWXBfYm1PZEdjTTdtM29odlV5NjFIRDh1MkRyM3NVaXV6Rng1cmgtemt4SWJsbWRNNnVWWmhVSUg0NGt4ZmdzUHozTkpxaTIxei1YdnltUWx6UmJwSnBnOWhhcHRhU1lUQTNNQm5PSGZhWWtIaE0weVFSTlZsZERoUGNsdElEZDNXR0traUZ4Z3pwd1MzODBYbTFCMDlXTVdzMl9pY3FJRUZHbnZnSVFWZE1LUEpsWkw1QmFTc1VpeTF1bVlyRlREYUdhLTV2dzItNW1kMi14TjVqRVE1RlhGaTlIaXd3RzlCdmxNc2hPQ3FuUGYtX1psQlRCcVY3X25od2dFdW0ybTNzY1VLaWtEX1pDNi0yZ0xsYU1XY1A1bDJwZlF0MmhjMW1nNC12SDlaT3JZYUFNbFlwOXRPbEVFU3BnaERqTVlEcklpUmFOQ3l3ZXVjM05PaU9vczgxRkhVV01STm43dnpaV295dlZMTjhkMjRVNUc3R0Z4M1BPOHFWYlBVUHplMXQtSk14SE1VSzIzXy03NmQtMkw5cVpZN3FKT25MUThHaFdjdVFkSkE3cmpMekV3TGtGOWdYc2gtTTZRSDJEdEV4cnIzNlR2NUFaRnFUVTJTREZsSF8yRWpqbGJhdU1IbmN6WTJZZXhvUGh2N2V4ZVpfVnVackNTRy1SejJ0R2hlTTVFNFJfRzFkR1F1c2VWVTF2QnJXOElHTDhQSGwzeGtKWkhyV2RfM1NGcU05aHdfTUdabG45LVI2V3lfZkRMcEpqdF9SRnhDOEhfM2RGczNlZ1R1RFBjRm5hU3Q2cTNMb0M2U1ZJbUJIMlkzOGdUV1NOTHRFMA?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):NotebookLM更名Gemini,产品品牌调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-google-016
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英特尔扩大与谷歌 Google Cloud 合作，加速企业 AI 赋能转型"
+  quote: "英特尔扩大与谷歌 Google Cloud 合作，加速企业 AI 赋能转型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTFBXS0FoVkFjYnNFUzVVQWhzUXB0dWhZRnpkTmR4UDh2dHE3RWZBLXRZQVlMNEY2R0dyWk5ndnh0d0FrTnpxNFdiczl3RTFPUzdXWEoxNU1mU282dlVzTnRNNW5GMmNCaVR1d2VmM29MU0I2Qml3V2c?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):英特尔与Google Cloud合作扩展,战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-google-017
+  date: 2026-07-18
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google将其3D emoji表情符号开源- Google 谷歌"
+  quote: "Google将其3D emoji表情符号开源- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE96bjVJeS03VUw0Y29NV0VuZWIyWlozNHBxUXlkNjlYblJIbFEweUJ4bklQeXIxRDliT213MzVjX29PU1BWb182QTJmcnFfZS05Vk9sR3NTb2ltZG9JTUxjRQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌开源3D emoji,技术开放举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-google-018
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为手机现在能用谷歌全家桶吗？2026年7月实测真相+FAQ"
+  quote: "华为手机现在能用谷歌全家桶吗？2026年7月实测真相+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5RcXRvbzRxWnoxd0h4eF9keXJQVmNyRWh3bnptY1dCX3VDU2FXdHlpeVRza09SZFdCWUFaRE8zZFBvbml0MDZsZE54dFBOWko0QWUtYi1WeU5PYkhKdE83NDBsSkpmSG1GeG55WU5SYnJ2YzFWSm0xSkpyNGJxdlU?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为与谷歌生态兼容性实测,涉及产品可用性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-google-019
+  date: 2026-07-18
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国旧金山检方要求苹果 App Store、谷歌 Play 商店下架 13 款“AI 脱衣”App"
+  quote: "美国旧金山检方要求苹果 App Store、谷歌 Play 商店下架 13 款“AI 脱衣”App"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwJBVV95cUxQb29IYjE3WWw0cEZmZXF2RzJLYlhjcXRUblJpOFNiWWx6YzRvRjY2YnphVGdGN0JBQnZISUg0TXRIQmZrNXFBdjc2WnNWeTRwazJxZlZxRlNLV3NVcE40ZTFwWUJNVjE3WU8xUjE2NGZlTWVPR2phYVBZZ2EzOWJxc0k1dTQ4RFFrbFYwZDJEdHQ5OXpVNlFFNnlUd3BKYUpMZVRKcUlQTlpFaHFySERRU3lnV0w0bTBMbUVRS202ODNvM2J5MWF6UlUxNEJTQlZLX0l5UjktSmRGelN5VjV6WmY5emVjMzJfdzBybURaSGFlYnZ3eFY1U3FMcFFnZGprVTV3?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):监管机构要求下架应用,涉及平台治理与品牌责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

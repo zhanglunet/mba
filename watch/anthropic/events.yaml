@@ -285,3 +285,139 @@
   source_type: media
   note: "LLM 预分类建议(high):产品应用案例，展示Claude技术能力，具体成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-20-anthropic-019
+  date: 2026-07-20
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Claude Fable5使用权限大调整:部分用户失去访问权，Anthropic加速扩容"
+  quote: "Claude Fable5使用权限大调整:部分用户失去访问权，Anthropic加速扩容"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE0wT3pxenVCRUFNQnFoNXc1bVpjVUMwSDVGMmttVk5lN3hjUUxWaWRTR0NsZlpYSTdwNUtNOEVQbVZxRTdJaVBUUEE1SnNmY2c?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品权限调整，用户体验负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-anthropic-020
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic自曝下一代Claude训练内幕！有人专职研究「性格」|智能体|模型|数据|评估|决策_手机新浪网"
+  quote: "Anthropic自曝下一代Claude训练内幕！有人专职研究「性格」|智能体|模型|数据|评估|决策_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAJBVV95cUxQNUFTMW5vYnIxdmJXZ05PRHZ3OVhaOXYzTkNMZ3pwNW1PZnZSNGRXVXphOFk5OTBmRHptNGVnNTFZT0FaUTNsc2xvVTN3SUc1a1plOEpjU21iZlo5ejM5LXo5SFoxV29XdkF4TGctUjBnbmU4MzNfWTdPOFVkdGhmalE4NVpuRXloM1REUjlZT0lMUkEwd2FUOUc1cXo5X3BEVjFwRXVmZ18tZ0tQdElvaTVuOUY5bzNvNWNWekZqOUJvQmxocFBnVDRIbWFsdXNaLW83U1Q4SGotV3ROcHJCZFVtYjJkMXhoQWpSYzB3cGlQam9fVEhGNnhBUGlNb3hKT2NpblM5RnhVQVNRSDVHQkhNSEVrekNBaHVDZzRiQzBwWkg3RmhYaEh6ZmYyYkl3UUw1SEJkX0RCS0dL?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):模型训练方法披露，技术进展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-anthropic-021
+  date: 2026-07-19
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特朗普松口！Anthropic最强大模型松绑"
+  quote: "特朗普松口！Anthropic最强大模型松绑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSmJXMkY0U0gyYS1ubjV2R3podEp1QmJFb2xHYnJpakZ3cWVnN3Z2TWJGLUhxUGN0QkM5Z184NEc5V2tLcWVlMWcxX09tQmNVd1V2Rm9RMzl3WGhRcmowNWVBN0k1YjRsYWR0VFAybUZkU21YZkd6U3dMQkJuQkFJQXRwWkJaaERIRmtheER0bkhwQ1J5cUFMNlBoYWdsTENJV1pVak5RUWlDQ2dpV2NEUTM2R3REbDR1OUVj?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):政策松绑利好，但标题党嫌疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-anthropic-022
+  date: 2026-07-19
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "阿里重磅发布Qwen3.8 Max AI模型，剑指Anthropic霸主地位"
+  quote: "阿里重磅发布Qwen3.8 Max AI模型，剑指Anthropic霸主地位"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSkFVX3lxTE12YU1YQzdnYWlhak9fR21HNDl5bjFfVl9NekZvM2dqdm1MNkhwdF9Pc2doNjZmTjlyRWlGbkpJd09UbjFwY3VvelJB?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):竞争对手重大产品发布，直接竞争威胁。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-anthropic-023
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic将Claude Fable 5纳入部分高阶订阅套餐权益，向Max和Team Premium开放"
+  quote: "Anthropic将Claude Fable 5纳入部分高阶订阅套餐权益，向Max和Team Premium开放"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOLVd6bUxQNFlrVEdPM2xrVE9CLUdtczlOcS1JMTV4VUJIYm85Nk5UVnB2eHMwUG1vQmxGenRIazlWdFY3N3VDeU56S3QxMFJCbFl5bmhOWnVudTN2QmZ3dDZrbTJvaUkxdDRaR2FoU0Z4TXBRZFJNMEs1WmNZMERhc21qVm5WYjJ2Mm96Z2Z1SkhuWGVuRy01NWVkbVhpZVpxWFhhZUtLbWxTbFd3enc0bzdR?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品权限调整，订阅策略优化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-anthropic-024
+  date: 2026-07-19
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英国向Anthropic抛出橄榄枝：邀请其扩张伦敦业务并探讨双重上市"
+  quote: "英国向Anthropic抛出橄榄枝：邀请其扩张伦敦业务并探讨双重上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9SRHFCQnllNVp6dHdCSk00ZktJdjF5c3RjY1FSaDFGR1JnZURFV2xIcXl2S2k4c210MnBieVllTF9qTGMwbmUydw?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):政府支持扩张与上市计划，战略利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-anthropic-025
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克解散xAI：22万张GPU租给Anthropic"
+  quote: "马斯克解散xAI：22万张GPU租给Anthropic"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TYndfT24zRmlTMXdDY2tPVGpZN1YxSG1EcE5DelRkdDh3ZGg4VHVtbW9lZDlELUZPM0ZXNVhuNkpQT1VBQUZwclJVUllVSmhFdmtz?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):获得GPU资源支持，但标题真实性存疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-anthropic-026
+  date: 2026-07-17
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "中国AI初创公司月之暗面发布Kimi K3模型，称其可对标OpenAI与Anthropic"
+  quote: "中国AI初创公司月之暗面发布Kimi K3模型，称其可对标OpenAI与Anthropic"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5wc2piT0pQWE9IeFhpRy1UakJzUjJhTnoyVUVvYi1kaW1DU2I0YWtoNmR4UEE4cU9RNlB3cms0LXd0X0FfcGFMWkJPb2R1c0pOMGFR?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):竞争对手产品对标，市场竞争加剧。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-anthropic-027
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic发现Claude“自发长出”J-space，AGI 之争再掀波澜"
+  quote: "Anthropic发现Claude“自发长出”J-space，AGI 之争再掀波澜"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizwJBVV95cUxPcUxjVERTVXpxcU9JMHd3djlKZ3BBQkxTQTNDR0c2LXpFaGo3ODFQNU9HY0FhVUdjQTdUTUNIeTNOX0ZrQU9EbVhZNTEtc1FSMkN0LVdzY3V2RnFWNjVIQkNXOXBWS3o3ZTE2WWNtMmR0QWdHOEkyUmh2ZDgtZnRibHhQaDdzY2JhQl9TUlJaMUdPb2tabFBCTkxfQXJGNXpOcUR0VFNraUhtMzA2ellRTnB3QXgwYUZhRlR6Z2sxaGJKMUJ0NTFCbzFpMnFpUmNuNXg0bS1JalVVZGxXX2pKbUo4N3UyZGRXQXM0a3J0OUlnTWhSeXhiaU1RdDhrVUc1TGJHa1FBajA2VExmeklyN2dpd0pibkcybXBHN3QwR0NBSDR2MUxMc2x6dklDX3lsX3BUYUl0MmdsYzhONDhPSXpiQ1A4QzVzNTZoWjAwTQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):模型能力发现，技术突破但表述模糊。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

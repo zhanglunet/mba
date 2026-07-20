@@ -279,3 +279,124 @@
   source_type: media
   note: "LLM 预分类建议(high):重大商业合同，涉及政府采购与战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-19-spacex-019
+  date: 2026-07-19
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX将“星舰”第13次试飞推迟至7月23日"
+  quote: "SpaceX将“星舰”第13次试飞推迟至7月23日"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1XbTlxTGpjRjRBOVpWRG5xUVQtRUJsYzdFNmFKa3A1Qkl3QWo0eVNoZmMyVzg5TV9JODJvUVE1cXVWOUJpRUtmMm53OU5DZ1BaTG1TUHRBLXh2RjZDUld1Zw?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰试飞推迟，运营进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-spacex-020
+  date: 2026-07-19
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX拟投入550亿美元在得州建设Terafab芯片工厂"
+  quote: "SpaceX拟投入550亿美元在得州建设Terafab芯片工厂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1ucm1Na1d5WTNrZmtIQkc0Y0hMNXZESVNmbWlIQ2FXZnA1bXJ1OGFyb0phdDJZclRIblktaXJzSUdKeWFrbDc0Zw?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX投资芯片工厂，战略扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-spacex-021
+  date: 2026-07-19
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SPACEX计划最早于7月23日启动“星舰”的第13次飞行测试"
+  quote: "SPACEX计划最早于7月23日启动“星舰”的第13次飞行测试"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1xOUE4VXZ4QmljWGpfRk1mc3k0WWtaN1FSY2R6c081bmQ3QzREYmVHRzhMWE9XekwwNFdaUFEwaTE1Y2NFQXUzWDdENFRHZUREMTFpY2RiQnpaWEc0M1RKNA?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰第13次飞行测试计划，产品进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-022
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX连续六个交易日下跌，商业航天直面盈利考题"
+  quote: "SpaceX连续六个交易日下跌，商业航天直面盈利考题"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE4waE4zVGdOZ2w0Q3NvVzV3TGtNTklLSHVnUWRtZTNwSEN2dTFIcVk5M0NucFNRekVybXZ2MTMyMXA4Y183UVNnNVNPQVNZNzk5?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):股价下跌与盈利压力，财务舆情显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-023
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "鸿海首夺SpaceX 520亿美元AI服务器大单，打破戴尔、超微垄断"
+  quote: "鸿海首夺SpaceX 520亿美元AI服务器大单，打破戴尔、超微垄断"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE91WDVnemRKUzBqS1AtQm16bnhSa3o0VTJqVWozN1g5NVJJSU5IR2FUYU4zOXRHVzZ0Rnh6TXhpSzRkSEU0SXB0WWpyQ29lZDdKZG1EZHNOcGVuOFNw?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):鸿海获520亿美元订单，商业合作重大突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-024
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX推迟“星舰”第13次试飞至7月23日"
+  quote: "SpaceX推迟“星舰”第13次试飞至7月23日"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE5JVFpiRElvX3ZaakJnMDJvOXJoeTFQMUpMWC1QY0hRTVJvaFN1WVp4NnNxRG9tYzRuX3A0RTJQdTQ0ODZNSVBJQnkyRF9faVlTak0zWkR2SWFhZGZqblE?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰试飞延期，产品进展调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-025
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "1.3万台！SpaceX斥资超3500亿元采购英伟达GB300服务器"
+  quote: "1.3万台！SpaceX斥资超3500亿元采购英伟达GB300服务器"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX1pFRTJROXFidHR6OURfODVkUy1iRE5TUE9mMGJUM1BVRFhPS2hyZkdjYmlldHhSV0swTlN5Zm16UXhlRlB3LS1QWEdpTmFLRGUyQjlyY0l5VzBQX3FPRVkyN2VMS3NjanFPRFVKVEUzMnVEQWk0dDVYbWs0eHdPUFg4cktoSmE1?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):采购英伟达服务器，战略投资与合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-026
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "发射延期叠加解禁压力重挫股价 SpaceX较市值高点蒸发万亿美元"
+  quote: "发射延期叠加解禁压力重挫股价 SpaceX较市值高点蒸发万亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxQTHhnZ3c2VHIzQmJ5WU1OakpLVHh5cGpCNllBLU1JaEM5dC13a1REcW1ydFo1Y2VMS0RsOFRzejYtcmY2RlI5SXRGcjVtcWV3UTRKaFd4aG14TFB0R29zNnBYLXg1QjZRZlFvYTladU9jS1R3NWd3TmJqQVAzVU1pNg?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价大幅下跌，市值蒸发，财务危机信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

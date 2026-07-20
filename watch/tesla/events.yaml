@@ -140,3 +140,94 @@
   source_type: media
   note: "LLM 预分类建议(high):区域涨价政策，可能引发消费者反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-19-tesla-010
+  date: 2026-07-19
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉宣布接入Carplay，历史的车轮倒退了？"
+  quote: "特斯拉宣布接入Carplay，历史的车轮倒退了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ZU2J2YUtpM3FSa3dlUnM1TktXTTk4X3ZMdld5a2E3Tlh3Z1JadnZxcWVuRkxZOWV4dTZPWHZEcjdmLUhQQzNlbEE3alJMd2NVQnFHT25fcy1qeWhubWc?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉策略调整，接入CarPlay引发观点分歧。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-tesla-011
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉推出无AI儿童脚蹬车 售价200美元卖爆全网"
+  quote: "特斯拉推出无AI儿童脚蹬车 售价200美元卖爆全网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE42UXI1SDNfZV84VFQwZmp5MGRhSzQ2dnEwaEZfUzFLQUNQWHo5SktSa0hKTk5RVU4ydU81QzJ1LUtqaW9Tay1MMFlqOXpqZVVrdS1J?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):特斯拉新品发布，儿童脚蹬车销售热度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-tesla-012
+  date: 2026-07-19
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉三季度实现今年首次交付量增长，为何投资者还不满意？"
+  quote: "特斯拉三季度实现今年首次交付量增长，为何投资者还不满意？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxOUTE3Q0wweUJkdDNaRHB1aTgxWU9BQnh5b1pfWFhMN0p1S0p6dm5RTEVsRzZsMTNnbXNscXF0N0RhMW1vRXJaTGVaeUV1UUxJSU1DcWVEdkRwYUpNUUVyMEFDMnIyM18tTjlTemdmRW9IZWdNM1lmNUVFWTBtdVNLQVFPOWdKMDlIQTgzVVhMdTFlWG1UY0JvczdhZjk5UkFiZUE?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q3交付量增长但投资者预期差，重要财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-tesla-013
+  date: 2026-07-18
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "每度电低至1.5元，特斯拉超级充电卡向非特斯拉车主开放_中国江苏网"
+  quote: "每度电低至1.5元，特斯拉超级充电卡向非特斯拉车主开放_中国江苏网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE1NLVpEXy1GR3BkbkRtamxEdG0xYjFKUVdqN3A1QjJtdFh1bmxWR0lFLVFjMTkwNlVBY1pQejJZVnBFbkYzZG5kX3lCSUhEWERwd3NvUlQ2QnN5WXpOQ21xdFdlNWdvbGVCTEtHLWVhd1FiVkFmemd3SnhiZ0QwUQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉充电网络开放策略，降价吸引非特斯拉用户。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-tesla-014
+  date: 2026-07-20
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "疑不满车停家门口 八旬翁用AA胶狂淋车窗 瘫痪Tesla车主怒告"
+  quote: "疑不满车停家门口 八旬翁用AA胶狂淋车窗 瘫痪Tesla车主怒告"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi2gJBVV95cUxNTC1vRE1QaTcwb3YwYVpCbVhyaFhTYUJWdF95Y3dKV2I0ZXVHZXhFVDdRQ0pxZ1lsZFd5bWlhdkhJcFpXaXhVc2ZvVTFPUTRYRWE2dUVHcHJudy14VnhRalF6OTA0UmoxblpuTTdHV2FKeXR0UDdwNlZZQ3diNzRQVUc2RVlla2x2NDZORlFnQ2ZZNHU4Z2xnUjUzTWtOUTdzOFk3aFBKdG1DOGZYbGdzNk5WNFhOSm55WUVOSGUzR2tnSHo5akhsaFJxTmNHTkpjNzMtWVE5ZnlGS2dCMkIyQ1p6VWhPbW1RZFhBeGhIb3V5aTlYTHFBQlhJa1QyeUF2dGMyMHpGak9Pa3ppMnVBZjJyd3c0cnk5VWxPOGtsUWFVb3p0STZ2czFxRVY4ZVF3NFRTYk16Q0xMdkZSUHVpXzB3RE5aU1JJdHBXdDg4bkVPV0Ffa29RakRR?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉车主纠纷事件，涉及品牌形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-tesla-015
+  date: 2026-07-18
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "7万美元！特斯拉正式登陆印度市场 Model Y起售价为主要市场中最高"
+  quote: "7万美元！特斯拉正式登陆印度市场 Model Y起售价为主要市场中最高"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxOOFNOX3VVbjNmM2tKdHFKRXRWNGI4MWZyUFVYd0dHVU91SnFZM0NEUFdNeU1wbjdNemRYbFRscnNjVlA3WDAyUzhESTUwTE9Sa1BpQnlySXFRVXVyNGFQMWdUSWFhQVNlNGFCc0txLVNfczFxV1BQS0pKR0VMbmxybnBVT3pWcXBfZVRrT1Z1UUFoRWpzLVgxc2RWMkVWOWhL?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉进入印度市场重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

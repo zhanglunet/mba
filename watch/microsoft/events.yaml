@@ -203,3 +203,79 @@
   source_type: media
   note: "LLM 预分类建议(high):微软产品功能迭代，Outlook功能停运并由Copilot替代，体现AI战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-19-microsoft-014
+  date: 2026-07-19
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Teams终于要修掉烦人的举手和离开按钮了"
+  quote: "Teams终于要修掉烦人的举手和离开按钮了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE93dEZ2dlZuVHVacDN1bHBYYlRoa0VDdE9IZnJ0NHg3UDRhQXJJcGMzd2dCT19TU2xiTXVORlp1T0VpeTJab3hhdUpSVTNEclo2RkQ2Nlp6cVZqMkhuRURrV2d3?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能优化更新,用户体验改进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-microsoft-015
+  date: 2026-07-19
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "LeakWatch 第29周/2026：微软漏洞洪流波及游戏、BIOS 和硬件固件"
+  quote: "LeakWatch 第29周/2026：微软漏洞洪流波及游戏、BIOS 和硬件固件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxPQXlueGYxc0tpbHlWSExnVDYyY2JrLXpXQzRmMnVFMFZLYmJWbUNCeGIzNl9QaHZCWWZaNnVLbTVrdFpKVVhvR3hHR1puU3FPeDIybk9vSU9xLUxyaXcwcWxVN3NqdWJQLUkySTFSZHdlMlROX1gxMFMtRXM4UnFqTUhIYVhzV2Y0U2lpRjFuMmNDSlJGUEdOTzdINjR0WUpjLUV2LXlTUGpsRjRVRTVj?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):安全漏洞波及多产品线,涉及系统安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-microsoft-016
+  date: 2026-07-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大摩：微软生成式AI领导地位“明确” Azure及M365支出意向持续走强"
+  quote: "大摩：微软生成式AI领导地位“明确” Azure及M365支出意向持续走强"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE14VC1wdzZqWjh5NzlpbE51VWFRMHJETHJKbEZIeXRBVEJtZzZzS2diWFU2NDF6Z09OTmVPX0FsUlhPWENfdUpZbFcyWQ?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师认可AI领导地位,云服务需求强劲。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-microsoft-017
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软：Teams默认生成会议存档，助力Copilot回答升级"
+  quote: "微软：Teams默认生成会议存档，助力Copilot回答升级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9lSVhTazIzQ0N1TVZ5b2UzQU5qUEJQaEZ4T3FJWkZfdE8xNzBjeTNPRTNSd1VXeWZHX1dZLUJsMk1OV3N0WENfeExERVBlU0p4dE5IZDg0VEFtcUd5TjhuREln?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Teams功能升级支持AI应用,产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-17-microsoft-018
+  date: 2026-07-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软正在研发一款类Mythos人工智能漏洞检测工具- Microsoft 微软"
+  quote: "微软正在研发一款类Mythos人工智能漏洞检测工具- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuZGNHMGsxbmRseGR6eXB1VzdUeTFGT0RKbm1MTUp1ZktnRkN3S3VXSW5RZ2sxZnJreXhYaU5fNU1LdWMzWEo2Rm5iRGxDN01iUDJhNnptOG9Cc1VJRngwVA?oc=5
+  fetched_at: "2026-07-20T05:50:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI漏洞检测工具研发,安全能力建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
