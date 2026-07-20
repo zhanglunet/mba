@@ -1,17 +1,32 @@
 panel: vc-en
 locked_at: 2026-07-12
 mba_version: 0.4.2
-published_at: 2026-07-12
-version: v2
+published_at: 2026-07-20
+version: v3
 mode: evolution
-previous_version: v1
-score_total: 219
+previous_version: v2
+score_total: 218
 score_max: 250
-score_normalized: 8.76
+score_normalized: 8.72
 reference:
-  version: v1
-  score_total: 215
-  score_normalized: 8.60
+  version: v2
+  score_total: 219
+  score_normalized: 8.76
+history:
+  - version: v1
+    published_at: 2026-07-12
+    score_total: 215
+    score_normalized: 8.60
+  - version: v2
+    published_at: 2026-07-12
+    score_total: 219
+    score_normalized: 8.76
+  - version: v3
+    published_at: 2026-07-20
+    score_total: 218
+    score_normalized: 8.72
 overrides:
   add: []
   drop: []
+# 蒂尔△:Founders Fund 为 SpaceX 早期投资方,以「△ 有据披露」纳入(非回避项)。
+# v3 EVOLUTION 仅消费 watch/spacex/events.yaml 未消费事件:Leverage ↑0.2(国防 AI 算力/不可替代)、Signal ↓0.4(IPO 回吐 + 星舰中止)。

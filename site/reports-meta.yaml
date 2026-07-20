@@ -314,23 +314,25 @@ reports:
 
   - slug: spacex
     card_brand: "SpaceX"
-    card_meta: "vc-en panel · EVOLUTION v1→v2 · watch 事件流驱动（IPO）· 5 评委 · delta 矩阵 + 雷达图 · 深科技 / 第一性原理"
-    headline: "史上最大 IPO 补上公开市场验证:8.60→8.76,登顶 MBA 审计史最高分"
+    card_meta: "vc-en panel · EVOLUTION v3 · watch 事件流驱动 · 5 评委 · delta 矩阵 + 雷达图 · 深科技 / 第一性原理"
+    headline: "v3 EVOLUTION:IPO 回吐 + 星舰第13次中止修正欧气(Signal ↓0.4),五角大楼 AI 算力确认杠杆(↑0.2),219→218 · 8.76→8.72"
     score_history:
       - { v: v1, score: 8.60 }
       - { v: v2, score: 8.76 }
+      - { v: v3, score: 8.72 }
     versions:
       - { v: v1, date: 2026-07-12, file: versions/v1_2026-07-12.html }
-      - { v: v2, date: 2026-07-12, current: true }
+      - { v: v2, date: 2026-07-12, file: versions/v2_2026-07-12.html }
+      - { v: v3, date: 2026-07-20, current: true }
     brand_cn: SpaceX
     brand_en: SpaceX
     panel: vc-en
     industry: 硬科技·航天
-    version: v2
-    audit_date: 2026-07-12
-    score_total: 219
+    version: v3
+    audit_date: 2026-07-20
+    score_total: 218
     score_max: 250
-    score_normalized: 8.76
+    score_normalized: 8.72
     tl_dr: >-
       EVOLUTION v2:史上最大 IPO(募资约 750 亿美元、首日 +19% 市值约 2.1 万亿,NASDAQ:SPCX)
       补上 v1 Signal 的唯一保留——估值信号未被公开市场验证。Signal 8.6→9.2(格雷厄姆/安德森/
