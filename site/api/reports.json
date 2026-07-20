@@ -6,15 +6,15 @@
       "brand_cn": "联想集团",
       "brand_en": "Lenovo Group",
       "ticker": "0992.HK",
-      "version": "v2",
-      "audit_date": "2026-07-12",
+      "version": "v3",
+      "audit_date": "2026-07-20",
       "panel": "default",
       "score": {
-        "total": 119,
+        "total": 122,
         "max": 250,
-        "normalized": 4.76
+        "normalized": 4.88
       },
-      "tl_dr": "引擎升级全量重审(50 分制→250 分制)撞上联想「史上最好的一年」:FY25/26 营收 831 亿美元(+20%)、AI 收入 +105% 占 33%、央采标段第一,Signal 均值 6.2 成全卷 最强;但「AI PC / Hybrid AI / Claw」三个词仍是借的、Qira/天禧中外双名再添主语 分裂,Category 3.0 / Identity 3.2 仍是结构病。官方公告首次写 \"maximize value per token\"——v1「红利不归联想」共识出现第一个反向信号,傅盛认方向、李可佳不认成色。 119/250 · 4.76/10(v1: 22/50 = 4.40,归一化同尺度可比)。",
+      "tl_dr": "v2 之后一个月,联想又出几件可验证的好事:首个国产 DeepSeek 一体机发布当日股价 涨近 5%、Panther Lake 联想全球首发(英特尔 CEO「交给联想了」)、AI 服务器「第二 增长曲线」——Leverage 5.4→5.8、Signal 6.2→6.4。但这些全没碰到 v2 诊断的两块结构病: DeepSeek/Panther 又是借来的词根、天禧/Qira 双名照旧,Category 3.0 / Identity 3.2 原地不动。克制 +3:财报二次曝光不重复计价、券商观点只给方向价。122/250 · 4.88/10 (v2: 119/4.76)。",
       "html_url": "/reports/lenovo/",
       "pdf_url": "/reports/lenovo/report.pdf",
       "api_url": "/api/reports/lenovo.json"

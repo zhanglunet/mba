@@ -54,6 +54,7 @@
     发布会预热稿,信号弱(P3)但标记「混合式 AI 全家桶」的品牌议程节奏;
     8 月新品发布是下一个观察点。日期以 URL 内嵌(2026-07-12)自证。
 - id: 2026-05-25-lenovo-004
+  consumed_by: v3
   date: '2026-05-25'
   dim: W5
   severity: P1
@@ -70,6 +71,7 @@
   note: AI 业务占集团营收约 38%、AI PC 出货超 1/3;杨元庆称两年内营收超千亿美元;日期以 URL 内嵌(20260525)自证。
 
 - id: 2026-05-28-lenovo-005
+  consumed_by: v3
   date: 2026-05-28
   dim: W6
   severity: P2
@@ -86,6 +88,7 @@
 
 # ── 前台 triage 采纳折入(7 条)──
 - id: 2026-07-17-lenovo-006
+  consumed_by: v3
   date: 2026-07-17
   dim: W2
   severity: P2
@@ -101,6 +104,7 @@
   note: "LLM 预分类建议(med):摩根大通看涨联想，涉及投资评级与市场预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-lenovo-007
+  consumed_by: v3
   date: 2026-07-18
   dim: W3
   severity: P2
@@ -116,6 +120,7 @@
   note: "LLM 预分类建议(high):英特尔新品首发交由联想，产品合作信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-lenovo-008
+  consumed_by: v3
   date: 2026-07-17
   dim: W5
   severity: P2
@@ -131,6 +136,7 @@
   note: "LLM 预分类建议(high):联想IFA新品预热，产品发布计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-lenovo-009
+  consumed_by: v3
   date: 2026-07-17
   dim: W4
   severity: P2
@@ -146,6 +152,7 @@
   note: "LLM 预分类建议(high):高管WAIC论坛发言，AI战略与品牌定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-lenovo-010
+  consumed_by: v3
   date: 2026-07-17
   dim: W2
   severity: P1
@@ -161,6 +168,7 @@
   note: "LLM 预分类建议(high):券商看好AI服务器增长曲线，业绩预期提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-lenovo-011
+  consumed_by: v3
   date: 2026-07-16
   dim: W6
   severity: P3
@@ -176,6 +184,7 @@
   note: "LLM 预分类建议(med):联想体育赛事赞助与品牌理解，营销活动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-lenovo-012
+  consumed_by: v3
   date: 2026-07-17
   dim: W7
   severity: P3
@@ -192,6 +201,7 @@
 
 # ── 前台 triage 采纳折入(2 条)──
 - id: 2026-07-19-lenovo-013
+  consumed_by: v3
   date: 2026-07-19
   dim: W2
   severity: P1
@@ -207,6 +217,7 @@
   note: "LLM 预分类建议(high):联想发布DeepSeek一体机解决方案，产品创新事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-lenovo-014
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P2
