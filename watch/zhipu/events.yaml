@@ -65,6 +65,7 @@
     (后续还需上交所审核 + 证监会注册),故 P2。日期以 URL 内嵌(2026-06-17)自证。
 
 - id: 2026-06-17-zhipu-004
+  consumed_by: v2
   date: 2026-06-17
   dim: W3
   severity: P2
@@ -86,6 +87,7 @@
     curl 核对。
 
 - id: 2026-07-09-zhipu-005
+  consumed_by: v2
   date: 2026-07-09
   dim: W5
   severity: P1
@@ -104,6 +106,7 @@
     独立机构投资者。日期以 URL 内嵌(2026-07-09)自证。
 
 - id: 2026-07-09-zhipu-006
+  consumed_by: v2
   date: 2026-07-09
   dim: W1
   severity: P2
@@ -124,6 +127,7 @@
 
 # ── 前台 triage 采纳折入(1 条)──
 - id: 2026-07-16-zhipu-007
+  consumed_by: v2
   date: 2026-07-16
   dim: W1
   severity: P1
@@ -140,6 +144,7 @@
 
 # ── 前台 triage 采纳折入(1 条)──
 - id: 2026-07-19-zhipu-008
+  consumed_by: v2
   date: 2026-07-19
   dim: W1
   severity: P1

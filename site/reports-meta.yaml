@@ -344,17 +344,23 @@ reports:
   - slug: zhipu
     card_brand: "智谱 Zhipu AI · GLM · 02513.HK"
     card_meta: "ai-app-cn panel · FRESH v1 · 5 评委(yangzhilin△ 竞对披露)· 最大分歧 Leverage Δ4(傅盛 9 vs 朱啸虎 5)"
-    headline: "「大模型第一股」:起点最早、开源最激进的中国 AI,账本尚未闭合"
+    headline: "v2 EVOLUTION:总市值超万亿港元 + 314 亿配售投向基座模型/算力,Signal ↑0.4 + Leverage ↑0.4 → 177→181 · 7.08→7.24"
+    score_history:
+      - { v: v1, score: 7.08 }
+      - { v: v2, score: 7.24 }
+    versions:
+      - { v: v1, date: 2026-07-12, file: versions/v1_2026-07-12.html }
+      - { v: v2, date: 2026-07-20, current: true }
     brand_cn: 智谱
     brand_en: Zhipu AI
     ticker: 02513.HK
     panel: ai-app-cn
     industry: 人工智能
-    version: v1
-    audit_date: 2026-07-12
-    score_total: 177
+    version: v2
+    audit_date: 2026-07-20
+    score_total: 181
     score_max: 250
-    score_normalized: 7.08
+    score_normalized: 7.24
     tl_dr: >-
       中国大模型公司里「起点最早、上市最先、开源最激进」的样本:2019 年(ChatGPT 前
       三年)自清华 KEG 转化,2026-01-08 港交所上市成「全球大模型第一股」,GLM-5.2
