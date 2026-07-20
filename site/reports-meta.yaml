@@ -506,16 +506,22 @@ reports:
   - slug: google
     card_brand: "Google · 谷歌"
     card_meta: "vc-en panel · 5 评委（安德森·格雷厄姆·蒂尔·纳瓦尔·霍夫曼）· 雷达图 + 异议热力图 · 佩奇非评委无自冲突"
-    headline: "品类维度 9.2 领跑:定义搜索 + 发明 Transformer,减分在反垄断败诉与被 ChatGPT 抢先"
+    headline: "v2 EVOLUTION:监管/法律围剿——欧盟勒令开放 Android/搜索数据(Leverage ↓0.4)+ 出版商起诉 Gemini 训练(Signal ↓0.2),211→208 · 8.44→8.32"
+    score_history:
+      - { v: v1, score: 8.44 }
+      - { v: v2, score: 8.32 }
+    versions:
+      - { v: v1, date: 2026-07-16, file: versions/v1_2026-07-16.html }
+      - { v: v2, date: 2026-07-20, current: true }
     brand_cn: Google / 谷歌
     brand_en: Google
     panel: vc-en
     industry: 人工智能
-    version: v1
-    audit_date: 2026-07-16
-    score_total: 211
+    version: v2
+    audit_date: 2026-07-20
+    score_total: 208
     score_max: 250
-    score_normalized: 8.44
+    score_normalized: 8.32
     tl_dr: >-
       Category(品类定义)维度领跑级(9.2):定义现代网络搜索 + 发明搜索广告商业模式,并以 2017 年
       Transformer 论文成为生成式 AI 的技术基石;蒂尔更把 Google 当"创造性垄断"的教科书范式。从斯坦福
