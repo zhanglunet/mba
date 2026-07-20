@@ -91,24 +91,24 @@ jobs:
           DATE="${{ steps.disc.outputs.date }}"
           N="${{ steps.disc.outputs.new }}"
           BR="watch-auto/${DATE}"
-          # ⚠️ 机器人(GITHUB_TOKEN)开的 PR **不会**自动触发 watch-adopt——GitHub 对
-          #    GITHUB_TOKEN 开的 PR 上的 workflow 默认要人工「Approve and run」,会卡成
-          #    action_required。故此处**在开 PR 前就本地折入** events.yaml(fold_adopt 会删掉
-          #    _adopt 暂存并重算 id),PR diff 直接是最终 events.yaml,不依赖会被卡的 watch-adopt。
-          #    (人工 triage「提 PR」是**你本人**开的 PR,watch-adopt 正常触发,不走这条路。)
+          # 在开 PR 前就本地把三件事做完,PR diff 自洽、可直接自动合并:
+          #  ① fold_adopt:折入 events.yaml(删 _adopt 暂存、重算 id);
+          #  ② validate_watch:校验事件流;
+          #  ③ build_home_cards:重生成首页「重大舆情」条 —— build.sh **不动** site/index.html,
+          #     故必须在此重生成并入 PR,否则合并后首页仍显示旧信号(#178 踩过这个坑)。
           python3 scripts/watch-tools/fold_adopt.py
           python3 scripts/watch-tools/validate_watch.py || echo "::warning::validate_watch 有告警,见 PR diff"
+          python3 scripts/build_home_cards.py
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BR"
-          git add -A watch/
-          git commit -m "chore(watch): LLM 预分类建议入库 ${DATE}（候选 ${N} 条,已折入 events.yaml）"
+          git add -A watch/ site/index.html
+          git commit -m "chore(watch): LLM 预分类建议入库 ${DATE}（候选 ${N} 条,已折入 events.yaml + 首页）"
           git push -f origin "$BR"
-          TITLE="feat(watch): ${DATE} 舆情建议入库（LLM 预分类，人工审 diff 合并）"
+          TITLE="feat(watch): ${DATE} 舆情建议入库（LLM 预分类，自动合并上线）"
           # 用 printf 组装 PR 正文(不用 heredoc/反引号,避开 YAML 缩进与命令替换坑)。
           {
-            printf '自动发现 + **LLM 预分类** + **已折入 events.yaml** 的建议入库 —— **你只需审最终 events.yaml diff 再合并**(合并=人工闸门)。丢弃/低置信项见下方报告。\n\n'
-            printf '反捏造:标题/日期/URL 逐字取自源 feed;dim/severity/direction/lens 为 model-judged 分类,不假装客观、不改任何审计分数。\n\n'
+            printf '自动发现 + **LLM 预分类** + **已折入 events.yaml 并重生成首页舆情条** —— CI 绿后**自动合并上线**。舆情事件:标题/日期/URL 逐字取自源 feed(客观事实);dim/severity/direction/lens 为 model-judged 分类(明确标注、不假装客观、不改任何审计分数)。丢弃/低置信项见下方报告。\n\n'
             cat /tmp/classify-report.md 2>/dev/null || true
           } > /tmp/pr-body.md
           if gh pr create --base main --head "$BR" --title "$TITLE" --body-file /tmp/pr-body.md 2>/tmp/pr.err; then
@@ -119,6 +119,17 @@ jobs:
             COMPARE="${{ github.server_url }}/${{ github.repository }}/pull/new/${BR}"
             echo "::notice::分支 ${BR} 已推,自动开 PR 被拒,手动开:${COMPARE}"
             echo "分支已推但自动开 PR 被拒。手动开 PR → ${COMPARE}" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          # 自动合并:内容已在本步骤本地折入 + 校验 + 重生成,自洽可上线。先直接 squash 合;
+          # 直接合失败(如分支保护要求 check)→ 退回排队自动合并(--auto,等 CI 绿);再不行留人工。
+          sleep 6  # 给 GitHub 算 mergeable 一点时间,避免刚 push 就合报 not mergeable
+          if gh pr merge "$BR" --squash --delete-branch 2>/tmp/mrg.err; then
+            echo "✅ 已自动合并 ${BR} → main(首页随 Cloudflare 部署更新)。"
+          elif gh pr merge "$BR" --squash --auto --delete-branch 2>>/tmp/mrg.err; then
+            echo "✅ 已排队自动合并 ${BR}(等 CI 绿后合)。"
+          else
+            echo "::notice::自动合并未生效,PR 留待人工合并。"
+            sed 's/^/  merge.err: /' /tmp/mrg.err || true
           fi
 
       - name: Publish candidates（无 LLM key 时回退:直推 main 供人工 triage）
