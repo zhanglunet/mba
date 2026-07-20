@@ -1,12 +1,28 @@
 panel: vc-en
 locked_at: 2026-07-16
 mba_version: 0.4.5
-published_at: 2026-07-16
-version: v1
-score_total: 211
+published_at: 2026-07-20
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 208
 score_max: 250
-score_normalized: 8.44
+score_normalized: 8.32
+reference:
+  version: v1
+  score_total: 211
+  score_normalized: 8.44
+history:
+  - version: v1
+    published_at: 2026-07-16
+    score_total: 211
+    score_normalized: 8.44
+  - version: v2
+    published_at: 2026-07-20
+    score_total: 208
+    score_normalized: 8.32
 overrides:
   add: []
   drop: []
-# 拉里·佩奇(Google 联合创始人)非 MBA 评委,故本审计无自冲突问题、无 --panel-drop。
+# 拉里·佩奇(Google 联合创始人)非 MBA 评委,无自冲突、无 --panel-drop。
+# v2 EVOLUTION 仅消费 watch/google/events.yaml 未消费事件:Leverage ↓0.4(欧盟勒令开放 Android/搜索数据 + 反垄断)、Signal ↓0.2(出版商起诉 Gemini 训练)。

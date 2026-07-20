@@ -3,13 +3,13 @@
   "brand_cn": "Apple / 苹果",
   "brand_en": "Apple",
   "ticker": null,
-  "version": "v1",
-  "audit_date": "2026-07-16",
+  "version": "v2",
+  "audit_date": "2026-07-20",
   "panel": "vc-en",
   "score": {
-    "total": 221,
+    "total": 222,
     "max": 250,
-    "normalized": 8.84
+    "normalized": 8.88
   },
   "tl_dr": "MBA 迄今 Identity(身份系统)维度最高分(9.6):极简设计、Think Different、Jony Ive 美学与乔布斯 \"美是产品本质\"图腾构成地表最一致的品牌身份。加上\"车库创业→被自己公司逐出→特洛伊木马式归来\"的 传奇起源与个人电脑/GUI/音乐/手机/平板的连续品类创造史,几乎无法复制。vc-en 5 评委(乔布斯是评委 但不在本 panel,无自冲突)共识:Identity(9.6)领跑、Origin/Leverage(各 9.0)紧随;唯一实质分歧在 Signal(7.8)——纳瓦尔\"品牌是穿越周期的杠杆\"9 vs 安德森/蒂尔\"AI 落后动摇创新 durability\"7。 与 NVIDIA 峰值在 Leverage 不同,Apple 峰值在 Identity。221/250 · 8.84/10(MBA 第二高)。",
   "html_url": "/reports/apple/",

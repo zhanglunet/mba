@@ -5,6 +5,7 @@
 #   为 model-judged 分类(非事实断言)。近期数字 / 进展需 live 核验。schema 见 docs/16 §2。
 
 - id: 2026-07-01-google-001
+  consumed_by: v2
   date: 2026-07-01
   dim: W4
   severity: P1
@@ -20,6 +21,7 @@
   note: "来源:Payments Dive。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-15-google-002
+  consumed_by: v2
   date: 2026-07-15
   dim: W4
   severity: P1
@@ -35,6 +37,7 @@
   note: "来源:Reuters。首批冷启动;日期取自源 feed 的 pubDate。"
 
 - id: 2026-07-16-google-003
+  consumed_by: v2
   date: 2026-07-16
   dim: W8
   severity: P2
@@ -51,6 +54,7 @@
 
 # ── 前台 triage 采纳折入(10 条)──
 - id: 2026-07-16-google-004
+  consumed_by: v2
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -66,6 +70,7 @@
   note: "LLM 预分类建议(high):产品更名与功能升级,体现AI能力迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-google-005
+  consumed_by: v2
   date: 2026-07-17
   dim: W2
   severity: P2
@@ -81,6 +86,7 @@
   note: "LLM 预分类建议(high):新功能发布,AI数字分身应用拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-google-006
+  consumed_by: v2
   date: 2026-07-17
   dim: W5
   severity: P1
@@ -96,6 +102,7 @@
   note: "LLM 预分类建议(high):欧盟监管罚款,重大合规风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-google-007
+  consumed_by: v2
   date: 2026-07-17
   dim: W4
   severity: P2
@@ -111,6 +118,7 @@
   note: "LLM 预分类建议(med):供应链调整,TPU芯片代工扩产信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-google-008
+  consumed_by: v2
   date: 2026-07-17
   dim: W6
   severity: P1
@@ -126,6 +134,7 @@
   note: "LLM 预分类建议(high):员工集体诉求,内部治理与裁员争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-google-009
+  consumed_by: v2
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -141,6 +150,7 @@
   note: "LLM 预分类建议(high):搜索功能升级,AI模式生态整合。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-google-010
+  consumed_by: v2
   date: 2026-07-16
   dim: W5
   severity: P1
@@ -156,6 +166,7 @@
   note: "LLM 预分类建议(high):欧盟强制令,反垄断监管重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-google-011
+  consumed_by: v2
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -171,6 +182,7 @@
   note: "LLM 预分类建议(high):产品发布延期,质量优化信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-google-012
+  consumed_by: v2
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -186,6 +198,7 @@
   note: "LLM 预分类建议(high):功能迭代,Omni模型集成应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-google-013
+  consumed_by: v2
   date: 2026-07-16
   dim: W5
   severity: P1
@@ -202,6 +215,7 @@
 
 # ── 前台 triage 采纳折入(6 条)──
 - id: 2026-07-20-google-014
+  consumed_by: v2
   date: 2026-07-20
   dim: W6
   severity: P1
@@ -217,6 +231,7 @@
   note: "LLM 预分类建议(high):谷歌苹果与欧盟AI监管分歧,重要政策冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-google-015
+  consumed_by: v2
   date: 2026-07-17
   dim: W1
   severity: P2
@@ -232,6 +247,7 @@
   note: "LLM 预分类建议(high):NotebookLM更名Gemini,产品品牌调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-google-016
+  consumed_by: v2
   date: 2026-07-17
   dim: W2
   severity: P2
@@ -247,6 +263,7 @@
   note: "LLM 预分类建议(high):英特尔与Google Cloud合作扩展,战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-google-017
+  consumed_by: v2
   date: 2026-07-18
   dim: W4
   severity: P2
@@ -262,6 +279,7 @@
   note: "LLM 预分类建议(high):谷歌开源3D emoji,技术开放举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-google-018
+  consumed_by: v2
   date: 2026-07-17
   dim: W2
   severity: P2
@@ -277,6 +295,7 @@
   note: "LLM 预分类建议(high):华为与谷歌生态兼容性实测,涉及产品可用性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-google-019
+  consumed_by: v2
   date: 2026-07-18
   dim: W5
   severity: P1

@@ -52,6 +52,7 @@
   consumed_by: v2
   note: 后市延续信号;日期以 URL 内嵌(2026/06/15)自证。
 - id: 2026-06-15-spacex-004
+  consumed_by: v3
   date: '2026-06-15'
   dim: W2
   severity: P1
@@ -68,6 +69,7 @@
   note: 散户社群热度(>$100B 订单、留 30% 给散户仍供不应求)是品牌拉力的社交信号,区别于 W5 定价事件;日期以 URL 内嵌(2026/06/15)自证。
 
 - id: 2026-07-15-spacex-005
+  consumed_by: v3
   date: 2026-07-15
   dim: W8
   severity: P2
@@ -84,6 +86,7 @@
 
 # ── 2026-07-18 从每日发现候选(PR #165)人工核验入库 ──
 - id: 2026-07-17-spacex-006
+  consumed_by: v3
   date: 2026-07-17
   dim: W3
   severity: P1
@@ -99,6 +102,7 @@
   note: "来源:WSJ。人工核验入库(判断字段人工定);标题/日期/URL 取自源 feed。近期数字需 live 核验。"
 
 - id: 2026-07-17-spacex-007
+  consumed_by: v3
   date: 2026-07-17
   dim: W5
   severity: P1
@@ -115,6 +119,7 @@
 
 # ── 前台 triage 采纳折入(11 条)──
 - id: 2026-07-18-spacex-008
+  consumed_by: v3
   date: 2026-07-18
   dim: W3
   severity: P1
@@ -130,6 +135,7 @@
   note: "LLM 预分类建议(high):重大项目测试中止,涉及运营风险与进展延迟。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-009
+  consumed_by: v3
   date: 2026-07-18
   dim: W4
   severity: P1
@@ -145,6 +151,7 @@
   note: "LLM 预分类建议(high):政府合作谈判,涉及战略合作与商业机会。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-010
+  consumed_by: v3
   date: 2026-07-18
   dim: W3
   severity: P2
@@ -160,6 +167,7 @@
   note: "LLM 预分类建议(high):项目进展更新,运营动态信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-011
+  consumed_by: v3
   date: 2026-07-18
   dim: W4
   severity: P1
@@ -175,6 +183,7 @@
   note: "LLM 预分类建议(high):市场垄断风险分析,涉及战略地位与政策风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-012
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P1
@@ -190,6 +199,7 @@
   note: "LLM 预分类建议(high):IPO后股价下跌与项目延迟,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-013
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P1
@@ -205,6 +215,7 @@
   note: "LLM 预分类建议(high):股价大幅下跌,重大财务舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-014
+  consumed_by: v3
   date: 2026-07-18
   dim: W4
   severity: P1
@@ -220,6 +231,7 @@
   note: "LLM 预分类建议(high):大额合同谈判与子公司亏损,战略与财务双重信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-015
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P1
@@ -235,6 +247,7 @@
   note: "LLM 预分类建议(high):市值大幅蒸发,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-016
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P1
@@ -250,6 +263,7 @@
   note: "LLM 预分类建议(high):股价跌破发行价,IPO后重大风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-spacex-017
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P1
@@ -265,6 +279,7 @@
   note: "LLM 预分类建议(high):IPO后短期大幅下跌,重大财务舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-spacex-018
+  consumed_by: v3
   date: 2026-07-17
   dim: W1
   severity: P1
@@ -281,6 +296,7 @@
 
 # ── 前台 triage 采纳折入(8 条)──
 - id: 2026-07-19-spacex-019
+  consumed_by: v3
   date: 2026-07-19
   dim: W4
   severity: P2
@@ -296,6 +312,7 @@
   note: "LLM 预分类建议(high):星舰试飞推迟，运营进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-spacex-020
+  consumed_by: v3
   date: 2026-07-19
   dim: W2
   severity: P1
@@ -311,6 +328,7 @@
   note: "LLM 预分类建议(high):SpaceX投资芯片工厂，战略扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-spacex-021
+  consumed_by: v3
   date: 2026-07-19
   dim: W3
   severity: P2
@@ -326,6 +344,7 @@
   note: "LLM 预分类建议(high):星舰第13次飞行测试计划，产品进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-spacex-022
+  consumed_by: v3
   date: 2026-07-20
   dim: W4
   severity: P1
@@ -341,6 +360,7 @@
   note: "LLM 预分类建议(high):股价下跌与盈利压力，财务舆情显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-spacex-023
+  consumed_by: v3
   date: 2026-07-20
   dim: W2
   severity: P1
@@ -356,6 +376,7 @@
   note: "LLM 预分类建议(high):鸿海获520亿美元订单，商业合作重大突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-spacex-024
+  consumed_by: v3
   date: 2026-07-20
   dim: W3
   severity: P2
@@ -371,6 +392,7 @@
   note: "LLM 预分类建议(high):星舰试飞延期，产品进展调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-spacex-025
+  consumed_by: v3
   date: 2026-07-20
   dim: W2
   severity: P1
@@ -386,6 +408,7 @@
   note: "LLM 预分类建议(high):采购英伟达服务器，战略投资与合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-spacex-026
+  consumed_by: v3
   date: 2026-07-20
   dim: W4
   severity: P1

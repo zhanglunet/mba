@@ -1,15 +1,28 @@
 panel: auto
 locked_at: 2026-07-16
 mba_version: 0.5.0
-published_at: 2026-07-16
-version: v1
-score_total: 170
+published_at: 2026-07-20
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 171
 score_max: 200
-score_normalized: 8.50
+score_normalized: 8.55
+reference:
+  version: v1
+  score_total: 170
+  score_normalized: 8.50
+history:
+  - version: v1
+    published_at: 2026-07-16
+    score_total: 170
+    score_normalized: 8.50
+  - version: v2
+    published_at: 2026-07-20
+    score_total: 171
+    score_normalized: 8.55
 overrides:
   add: []
   drop: [musk]
-# 埃隆·马斯克(特斯拉领投人 / CEO)是 MBA 评委,评自家品牌不中立
-# (self-conflict.yaml: musk.orgs 含 Tesla/特斯拉)→ --panel-drop musk。
-# (auto 面板 self-conflict 规则明列:Tesla/SpaceX/X/xAI/Neuralink/Starlink/Boring → drop musk。)
-# 有效评委 4 位(雷军·李想·何小鹏·李斌,均为中国新势力车企创始人、特斯拉直接竞争者),满分 200。
+# 马斯克(特斯拉领投人/CEO)是 MBA 评委,评自家不中立 → --panel-drop musk。有效评委 4 位,满分 200。
+# v2 EVOLUTION 仅消费 watch/tesla/events.yaml 未消费事件:Signal ↑0.25(印度登陆 + 交付回升 net 撞车调查)。

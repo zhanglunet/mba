@@ -7,6 +7,7 @@
 # 逐字 curl 核对。官方稿 URL 记在 note 里,供后续出口放行后回溯。
 
 - id: 2026-02-09-openai-001
+  consumed_by: v2
   date: 2026-02-09
   dim: W1
   severity: P2
@@ -47,6 +48,7 @@
     待回溯)。日期以 URL 内嵌(2026/03/31)自证。
 
 - id: 2026-06-01-openai-003
+  consumed_by: v2
   date: 2026-06-01
   dim: W4
   severity: P1
@@ -108,6 +110,7 @@
     (2026/06/08)自证。
 
 - id: 2026-07-09-openai-006
+  consumed_by: v2
   date: 2026-07-09
   dim: W8
   severity: P1
@@ -126,6 +129,7 @@
     正文已 curl 核对;官方稿在 openai.com(出口 403,待回溯)。日期以 URL 内嵌
     (2026/07/09)自证。
 - id: 2024-09-25-openai-007
+  consumed_by: v2
   date: '2024-09-25'
   dim: W7
   severity: P1
@@ -141,6 +145,7 @@
   - leverage
   note: 同日 Murati(CTO)+McGrew(CRO)+Zoph(VP Research)三人离职;日期以 URL 内嵌(2024/09/25)自证。
 - id: 2025-10-03-openai-008
+  consumed_by: v2
   date: '2025-10-03'
   dim: W2
   severity: P2
@@ -158,6 +163,7 @@
 
 # ── 前台 triage 采纳折入(11 条)──
 - id: 2026-07-18-openai-009
+  consumed_by: v2
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -173,6 +179,7 @@
   note: "LLM 预分类建议(high):产品功能发布，展示应用能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-openai-010
+  consumed_by: v2
   date: 2026-07-18
   dim: W5
   severity: P1
@@ -188,6 +195,7 @@
   note: "LLM 预分类建议(high):重大负面观点，涉及公司财务风险预警。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-openai-011
+  consumed_by: v2
   date: 2026-07-18
   dim: W1
   severity: P1
@@ -203,6 +211,7 @@
   note: "LLM 预分类建议(high):战略合作与成本优化，重要供应链动作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-openai-012
+  consumed_by: v2
   date: 2026-07-18
   dim: W3
   severity: P1
@@ -218,6 +227,7 @@
   note: "LLM 预分类建议(high):产品故障与数据安全事件，需官方回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-openai-013
+  consumed_by: v2
   date: 2026-07-18
   dim: W4
   severity: P1
@@ -233,6 +243,7 @@
   note: "LLM 预分类建议(high):国际纠纷与知识产权指控，涉及政治关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-openai-014
+  consumed_by: v2
   date: 2026-07-16
   dim: W5
   severity: P1
@@ -248,6 +259,7 @@
   note: "LLM 预分类建议(high):重复第3条核心观点，重大负面预警。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-openai-015
+  consumed_by: v2
   date: 2026-07-18
   dim: W2
   severity: P2
@@ -263,6 +275,7 @@
   note: "LLM 预分类建议(high):产品功能更新，用户体验改进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-openai-016
+  consumed_by: v2
   date: 2026-07-17
   dim: W4
   severity: P1
@@ -278,6 +291,7 @@
   note: "LLM 预分类建议(high):战略合作破裂，涉及重要商业伙伴关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-openai-017
+  consumed_by: v2
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -293,6 +307,7 @@
   note: "LLM 预分类建议(high):新产品系列发布，核心产品线更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-openai-018
+  consumed_by: v2
   date: 2026-07-18
   dim: W1
   severity: P1
@@ -308,6 +323,7 @@
   note: "LLM 预分类建议(high):基础设施扩张计划，战略性资本投入。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-openai-019
+  consumed_by: v2
   date: 2026-07-16
   dim: W4
   severity: P1
@@ -324,6 +340,7 @@
 
 # ── 前台 triage 采纳折入(9 条)──
 - id: 2026-07-20-openai-020
+  consumed_by: v2
   date: 2026-07-20
   dim: W5
   severity: P2
@@ -339,6 +356,7 @@
   note: "LLM 预分类建议(high):高管言论批评竞品，战略立场表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-openai-021
+  consumed_by: v2
   date: 2026-07-19
   dim: W2
   severity: P2
@@ -354,6 +372,7 @@
   note: "LLM 预分类建议(high):新市场拓展，银发赛道战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-openai-022
+  consumed_by: v2
   date: 2026-07-20
   dim: W5
   severity: P2
@@ -369,6 +388,7 @@
   note: "LLM 预分类建议(high):高管批评开源模式，战略观点冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-openai-023
+  consumed_by: v2
   date: 2026-07-20
   dim: W5
   severity: P1
@@ -384,6 +404,7 @@
   note: "LLM 预分类建议(high):政府与企业关系裂痕，政策风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-openai-024
+  consumed_by: v2
   date: 2026-07-19
   dim: W2
   severity: P2
@@ -399,6 +420,7 @@
   note: "LLM 预分类建议(med):设计师合作，人才与战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-openai-025
+  consumed_by: v2
   date: 2026-07-20
   dim: W5
   severity: P1
@@ -414,6 +436,7 @@
   note: "LLM 预分类建议(high):法律纠纷升级，员工离职风险与声誉损害。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-openai-026
+  consumed_by: v2
   date: 2026-07-20
   dim: W2
   severity: P1
@@ -429,6 +452,7 @@
   note: "LLM 预分类建议(high):OpenAI推出新的ROI评估指标，体现产品策略创新与商业价值主张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-openai-027
+  consumed_by: v2
   date: 2026-07-19
   dim: W1
   severity: P1
@@ -444,6 +468,7 @@
   note: "LLM 预分类建议(high):OpenAI IPO传言，涉及融资/上市重大事件，需持续监测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-openai-028
+  consumed_by: v2
   date: 2026-07-19
   dim: W5
   severity: P1

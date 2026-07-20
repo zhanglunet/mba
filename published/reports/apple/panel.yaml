@@ -1,13 +1,28 @@
 panel: vc-en
 locked_at: 2026-07-16
 mba_version: 0.4.5
-published_at: 2026-07-16
-version: v1
-score_total: 221
+published_at: 2026-07-20
+version: v2
+mode: evolution
+previous_version: v1
+score_total: 222
 score_max: 250
-score_normalized: 8.84
+score_normalized: 8.88
+reference:
+  version: v1
+  score_total: 221
+  score_normalized: 8.84
+history:
+  - version: v1
+    published_at: 2026-07-16
+    score_total: 221
+    score_normalized: 8.84
+  - version: v2
+    published_at: 2026-07-20
+    score_total: 222
+    score_normalized: 8.88
 overrides:
   add: []
   drop: []
-# 史蒂夫·乔布斯(Apple 联合创始人)是 MBA 评委(jobs),但不在 vc-en panel,
-# 故本审计无 --panel-drop(self-conflict jobs→Apple 在含其本人的 panel 时才触发)。
+# 史蒂夫·乔布斯(Apple 联合创始人)是 MBA 评委(jobs),但不在 vc-en panel,故无 --panel-drop。
+# 本轮 v2 EVOLUTION 仅消费 watch/apple/events.yaml 未消费事件:Signal ↑0.2(定价权 + Apple Intelligence 国行过审)。
