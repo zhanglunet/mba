@@ -3,15 +3,15 @@
   "brand_cn": "美团",
   "brand_en": "Meituan",
   "ticker": "3690.HK",
-  "version": "v3",
-  "audit_date": "2026-07-12",
+  "version": "v4",
+  "audit_date": "2026-07-20",
   "panel": "vc-cn",
   "score": {
-    "total": 170,
+    "total": 171,
     "max": 250,
-    "normalized": 6.8
+    "normalized": 6.84
   },
-  "tl_dr": "EVOLUTION v3:监管按停外卖大战 + 2026Q1 环比减亏 96 亿(净亏收窄至 68.27 亿,营收 +5.6%) 把 v2 的亏损谷底叙事翻回方向,但净亏仍在、即时零售又开烧。Signal 5.6→6.0 成唯一移动维度且 五人首次同分——回分的正是 v2 砍得最狠的无冲突空头朱啸虎/徐新(各 +1),两位★评委与雷军按兵 不动。总分 168→170(6.72→6.80,↑0.08):这一格是「方向」的价,扭亏的价留给 Q2。",
+  "tl_dr": "EVOLUTION v4:食安「一镜到底」验真把 v3 雷军挂的账(放心外卖是制度还是公关)变成可验证的产品 动作,骑手等灯停表/骑士节尊严再添身份暖色——雷军 Identity 6→7,兑现半格。但同一窗口淘宝 07-20 又开打(证伪麦格理「竞争缓解」上调)、员工《置身团内》困境长文、Q1 同季亏损重复,Signal/Leverage 净对冲 ↔。全套重审最克制的一格:170→171(6.80→6.84),只在有产品落地的 Identity 上动半分。",
   "html_url": "/reports/meituan/",
   "pdf_url": null,
   "api_url": "/api/reports/meituan.json",

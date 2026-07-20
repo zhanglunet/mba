@@ -217,31 +217,33 @@ reports:
 
   - slug: meituan
     card_brand: "美团 Meituan"
-    card_meta: "vc-cn panel · EVOLUTION v1→v2→v3 · 5 评委（朱啸虎·张磊★·徐新·雷军·沈南鹏★）· delta 表 + gitGraph + 雷达对比"
-    headline: "止血已证、扭亏未证:Q1 减亏 96 亿,6.72→6.80 克制回升一格"
+    card_meta: "vc-cn panel · EVOLUTION v1→v2→v3→v4 · 5 评委（朱啸虎·张磊★·徐新·雷军·沈南鹏★）· delta 表 + gitGraph + 雷达对比"
+    headline: "善意做了实事、竞争按回原形:一镜到底验真兑现半格,6.80→6.84"
     score_history:
       - { v: v1, score: 7.76 }
       - { v: v2, score: 6.72 }
       - { v: v3, score: 6.80 }
+      - { v: v4, score: 6.84 }
     versions:
       - { v: v1, date: 2026-06-28, file: versions/v1_2026-06-28.html }
       - { v: v2, date: 2026-07-11, file: versions/v2_2026-07-11.html }
-      - { v: v3, date: 2026-07-12, current: true }
+      - { v: v3, date: 2026-07-12, file: versions/v3_2026-07-12.html }
+      - { v: v4, date: 2026-07-20, current: true }
     brand_cn: 美团
     brand_en: Meituan
     ticker: 3690.HK
     panel: vc-cn
     industry: 消费
-    version: v3
-    audit_date: 2026-07-12
-    score_total: 170
+    version: v4
+    audit_date: 2026-07-20
+    score_total: 171
     score_max: 250
-    score_normalized: 6.80
+    score_normalized: 6.84
     tl_dr: >-
-      EVOLUTION v3:监管按停外卖大战 + 2026Q1 环比减亏 96 亿(净亏收窄至 68.27 亿,营收 +5.6%)
-      把 v2 的亏损谷底叙事翻回方向,但净亏仍在、即时零售又开烧。Signal 5.6→6.0 成唯一移动维度且
-      五人首次同分——回分的正是 v2 砍得最狠的无冲突空头朱啸虎/徐新(各 +1),两位★评委与雷军按兵
-      不动。总分 168→170(6.72→6.80,↑0.08):这一格是「方向」的价,扭亏的价留给 Q2。
+      EVOLUTION v4:食安「一镜到底」验真把 v3 雷军挂的账(放心外卖是制度还是公关)变成可验证的产品
+      动作,骑手等灯停表/骑士节尊严再添身份暖色——雷军 Identity 6→7,兑现半格。但同一窗口淘宝 07-20
+      又开打(证伪麦格理「竞争缓解」上调)、员工《置身团内》困境长文、Q1 同季亏损重复,Signal/Leverage
+      净对冲 ↔。全套重审最克制的一格:170→171(6.80→6.84),只在有产品落地的 Identity 上动半分。
     has_pdf: false
 
   - slug: dji
