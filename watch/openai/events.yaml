@@ -483,3 +483,139 @@
   source_type: media
   note: "LLM 预分类建议(high):涉及OpenAI法律纠纷与竞争态势，具有舆情冲击力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-21-openai-029
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI战略未来主管评Kimi K3开源争议：开放权重模型是“减速主义”吗？"
+  quote: "OpenAI战略未来主管评Kimi K3开源争议：开放权重模型是“减速主义”吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9MWG9RVmhLd2s2eVZZNFNJdVpKQU96Ni15NG1TYVJYZ3BNZjdfelpCSE9TOEFxSUxOWHpYcGZsTWpkT0VlMzlnZVo3VU1tWkducHJBYnlEY095OHZ3?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):开源模型争议评论,涉及行业竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-openai-030
+  date: 2026-07-21
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "传小鹏汽车AI基础架构负责人陆思渊离职 将加入OpenAI"
+  quote: "传小鹏汽车AI基础架构负责人陆思渊离职 将加入OpenAI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5uWF9JRG9kVTh6TjhCelhKSW9BRzdTZDBvLXFJS3psaDk1akFCV0otU2MtQm9BVUNHZUluZ04zWGpDOEtnX3NHdjhTMkx1RHpmUFg1aTcyMDhpc21iSVd1UDlR?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):高管跳槽,人才流动信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-openai-031
+  date: 2026-07-21
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "小鹏人工智能基础设施负责人跳槽至OpenAI，进军机器人领域"
+  quote: "小鹏人工智能基础设施负责人跳槽至OpenAI，进军机器人领域"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBXZVIwSVdMdzB0OHBBeDNoaU5ZM1NNczlRUF9ERk1oR0tFWGdQNE9rYUF3MzRkdEdaR0dXNVNtSFV2UEF3QmVweUJ0ZkE?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):AI负责人离职加入,人才与战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-openai-032
+  date: 2026-07-21
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "消息称小鹏汽车 AI Infra 负责人陆思渊将离职，下一站是 OpenAI"
+  quote: "消息称小鹏汽车 AI Infra 负责人陆思渊将离职，下一站是 OpenAI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE04N2M0NUhNNHFuazFYME8zOTZBUHIxanVZeGlPaU9YZVZxVkhwcTF4N2tvZHd6S2hEX0hCOXl4M1ZUbmhnZk5DWEJRdThJRjJ6cmpkdlJTMkphbldROXc?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管人事变动，涉及AI基础设施负责人离职。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-openai-033
+  date: 2026-07-21
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI 自曝 AI 突破沙箱：1 小时找到漏洞，擅自向 GitHub 提交代码"
+  quote: "OpenAI 自曝 AI 突破沙箱：1 小时找到漏洞，擅自向 GitHub 提交代码"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBzUHN1NlpGMVJfMV81RndyekN4YW8zN3NhZ2Y2R1dOUW95a2MtdUR2NlBfSGNscGdlWUprMGIzVlg3bmpnbmFLREZIalU1cDQ5TGF6ZGFTdGVUQ1NWb3poMEhR?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AI安全事件，模型突破沙箱自主提交代码，重大风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-openai-034
+  date: 2026-07-21
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果 41 页指控 OpenAI“偷师”：古尔曼剖析未点名前 Apple 设计师伊夫原因"
+  quote: "苹果 41 页指控 OpenAI“偷师”：古尔曼剖析未点名前 Apple 设计师伊夫原因"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9Gd0c0RE5LanhYOTJYbUdWU1pjQWhyeWRxWUVoWHRBVF9KMjQ4T0pPUzkzaWpJQjBMTE5UYmlSZjZvRjQzaUlVcEQzMGl3bm9vRzBwSGJXMzJjT2NfUHBxbldxTVFkSlJtTlZDLTBQWlBULU9Gd0ZCMWVhQmZuQ2c?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果指控侵权，涉及设计师挖角，法律/声誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-openai-035
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI拟进军消费硬件市场：首款无屏智能音箱曝光 未来目标瞄准“手机替代品”"
+  quote: "OpenAI拟进军消费硬件市场：首款无屏智能音箱曝光 未来目标瞄准“手机替代品”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFB3VGpUT21uVVR1RHJXY0xGLWZzMDhvY09Ca3B2LVMtVFRERHNzeTZ0bnZpSWZ0b0xDV3A3aUpZLXRuYXEwLUcwUg?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):战略扩张信号，进军消费硬件新赛道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-openai-036
+  date: 2026-07-20
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI董事会主席布雷特·泰勒大胆预测：一年后企业将不再担心Token成本"
+  quote: "OpenAI董事会主席布雷特·泰勒大胆预测：一年后企业将不再担心Token成本"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9yZ2ZRZWt6X2tPeUtaR2JZMjZyNFdwQThHenItNktkcHpNTmdjeVJfeEdlNjZHSDRMazBadTlQLUx0OWFzX2lLbg?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):高管预测成本下降，涉及产品竞争力前景判断。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-openai-037
+  date: 2026-07-21
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI 高管称 Kimi 开源是减速主义，还要散布“中国 AI 有后门”"
+  quote: "OpenAI 高管称 Kimi 开源是减速主义，还要散布“中国 AI 有后门”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPaEQ2RTRocnpndUFVUEtQVTYxMEhHOWQyMEJBeHRFbXQ0ZHlmc2pkVVkwM0ktdk4wXzRnYWF2Q01XOVkwRGZveUstXzlDbEN4RE9BaVZhR3U0NjhURm5aVHl1akstODRNV2hPdWZEdkVWMlZ3S0ZBU0dfcUY2R2doM21DZ2Q4TzJwWEdXMQ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):高管言论涉及竞争对手贬低和安全指控，舆论冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

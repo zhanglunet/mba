@@ -310,3 +310,94 @@
   source_type: media
   note: "LLM 预分类建议(high):监管机构要求下架应用,涉及平台治理与品牌责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-20-google-020
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌研发全新“固化（Frozen）芯片”，大幅提升 AI 模型运行能效"
+  quote: "谷歌研发全新“固化（Frozen）芯片”，大幅提升 AI 模型运行能效"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixwJBVV95cUxQR29wQ0dZdVVfd3lFWFRZYzBEakZOZ0hscE5MaTI2Tzh0MFRLTWtLN0ZTWmNqbVFsMHhRUHNQQ0FiaE1GVUk3eTg4Zm1LNV8zWGhJbGxRYVpHX1VFTzI1VVhXOVM2dzJVTm9VUkVkTnUya0VZREpNSEpRYWpOc3gyWEEzTTU0SjQ2T0M1djN4bUhPeGNvcUwxNHdkQmxsTWozV3ZYM01ncEd4Ui01eldZQlNlTFRjVDl1azVZZGhvT29ZcDJXSlJDeVNzQy1JTzZNbUNjMVJxMkhIWEhmTXBXQ0gyMnlfMzFDUDFTYjJCVjRWOGhXeTI5NDB5VWdIQjN4djQzemptOXRHSTFnei1HSWVjTHFtWlBoZlFieWNPaHRLWUNfZEFsdEJlX25MaGxtdjNHSVBZd2JMbVJ2REg2SDRETm5DeGs?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新芯片研发突破，技术创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-google-021
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌Google Vids支持个人虚拟形象，用AI生成专属视频"
+  quote: "谷歌Google Vids支持个人虚拟形象，用AI生成专属视频"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE5nZFlLdzU4OUhDbE1oTHZoLXBESnBZNHRfZ1pBLVZjcGVIZW1fbDJ1RkJLeDdSOFhCQW1WcDRNX2hudzN4dXN2Ri1iT3FiR2txXzlobUc5OEpsbm1WYkZnLWxFc0RubVdqMHNBcERpNC02NUFIdG9zRGR3?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI功能新增，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-google-022
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "AI泡沫论｜Google据报谋打造新款芯片 谷Gemini AI模型运行效率"
+  quote: "AI泡沫论｜Google据报谋打造新款芯片 谷Gemini AI模型运行效率"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi9wJBVV95cUxOX2hrZ1ZxQ19UT243cjF0VDRxeTJhbmQyb2lYelBZNldORDVEM3Y2czVLUTVFNGlPT0U5c05MTzFYZlhrY2ZoUzV6UnZSYklKMjEtWTJnejVMMDBfWGtLVkhYaHpBX1I4bWt1cW5xaGo3dUlCd01BTzVLcWl3VVgtYTN6OEpSOXJtQ1E2ZG9ial9XZXdaUFpaSG5ERE94TS1pRkdWaWJza3UxUkpPTHg5NUFON0NyS3BHQW1Ya1R6dldrQ2R3MTlEMXlTMHIxVXZKZC1UWjFYZ01IS0RQOVpXOTRkY2lSU0JjMVVYZlQxWHRrWTdxX19KZzkxbDhNMW9HaXlENkVrS3owZ25OYTJpR1MyRFhucUdSbnhTOUlUNV80U1BzYWhVVmlQa2dYM0xaWlRwaURyaExFLUU0Sm9IZXZlMW1wWkVqTGNma2tJNjVtVlNaR2ZmOUR6QlNycVVNRzU0cktXMjlfMTRNV2MxbkZBQ2I3LW8?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌新芯片研发与Gemini模型优化，战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-google-023
+  date: 2026-07-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Vids从自拍和语音录制中创建AI头像"
+  quote: "Google Vids从自拍和语音录制中创建AI头像"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YZG9yZXI0Z1NKODBFQndrY2NFUXpSVE94TnZ6aXU4cUR2SHlPSjRJSUtjRkJ6M05HWm9vcVUzdlB5Mm9tbHltZ2VMdEpTSE3SAUJBVV95cUxPdGg1eERUWC04cXhENjRBOUhubzNOQzhXd25pZUNOanFZbWwycVp0VERZX29QSXpUekhFamc0NThWaWc?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌Vids新功能发布，AI创新产品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-google-024
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌研发代号Frozen v2服务器芯片，高效运行Gemini模型"
+  quote: "谷歌研发代号Frozen v2服务器芯片，高效运行Gemini模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxQY0FGVVFTMDBSNFdOYnJFZThFUFdHR1Zlcnh3bTJrRjVRTUZOYThEYTJrd3hqakk1WUJyS3Y1Q2FtTzJFSlBwNFVnVmRyQkhleVJvRmdhVktMSmFBRWJpdGg5R2JvSUdWYmJzbng2RjJNMEs1VVJ5dndtcklWR29rT0V3?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌Frozen v2芯片研发，Gemini模型优化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-google-025
+  date: 2026-07-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Gboard输入法将支持手语输入 用摄像头识别手势转文字"
+  quote: "Google Gboard输入法将支持手语输入 用摄像头识别手势转文字"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5DWnRTMGE1QXhoODktRFBsRnZTdlRNNHV6Q1F5T080TVpKcXdNcmt6YTlESW1OTkVpbkZJdTBJeWl1Z3lqSzl4ZHNoaHlrcF9QbVJLQmR1TVluUFRVaXFNWDhn?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Gboard手语输入功能，无障碍创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

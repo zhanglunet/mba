@@ -278,3 +278,79 @@
   source_type: media
   note: "LLM 预分类建议(med):物流管理层活动，战略动向信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-20-amazon-018
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "跨境日报：亚马逊AWD拒收大件第三方卖家GMV突破5750亿美元- 栏目"
+  quote: "跨境日报：亚马逊AWD拒收大件第三方卖家GMV突破5750亿美元- 栏目"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE81NUVzNXJXZURYNDB4alNBUzZnYWlZRlNWVDVnTkxqaEdrYWJvYlhvSmI0VV9kRlNCSlR2eVItMDJ0MEpyTmRsWk5TNlZNOUhMc0hxQUtn?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊AWD拒收政策影响卖家，业务调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-amazon-019
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊云科技概要介绍了某客户如何将 Lambda 函数扩展至 100 万个"
+  quote: "亚马逊云科技概要介绍了某客户如何将 Lambda 函数扩展至 100 万个"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9FejJlZ0dheXI5NTB0T1pjTmJ4UzZyd3BkU1hURGk0WjV5ZXJLaGxrc0dtV0t2WVdoazBrbm9HRktGa0trb1RvRWlPb3JBVHpOQW9JSndBelNBZEdTQnc?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):亚马逊Lambda技术能力展示，云服务案例。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-amazon-020
+  date: 2026-07-20
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "L1 Capital：亚马逊货运扩张至零担市场，CEO称AI是“标志性转变”"
+  quote: "L1 Capital：亚马逊货运扩张至零担市场，CEO称AI是“标志性转变”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE82ZDM2VUhCSnFFaEhVRFl2TlFvNHFoaXdiVHlEZ0dnNWpZVXZfN3lSelRkaV8yQU4zZ1BaS21lOTZiVXFqOS1yaURXU2wtVndYV2NHcUpYOHJvMTh0cnBEb29R?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊货运扩张零担市场，CEO强调AI战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-amazon-021
+  date: 2026-07-19
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon Haul卖家突破3000家 GMV约为20亿美元"
+  quote: "Amazon Haul卖家突破3000家 GMV约为20亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE91RWRkdHVubU5FdXBxSjd2SXVyT0tZbTMydUJ4bkdIVVU4eEl4S29kb2tUTlNqa3hST1B1VmM0c2ZlRk1wX1c3d3hyQmZvcEN5QS11YWcwODdQSWw5TWhjUTln?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Amazon Haul业务增长数据，新业务进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-amazon-022
+  date: 2026-07-20
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "“七巨头”时代终结？分析师：这一概念已不再适用 AI投资逻辑正在重构"
+  quote: "“七巨头”时代终结？分析师：这一概念已不再适用 AI投资逻辑正在重构"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FY0FxV0poU1ZhYXhtQmF1dXNBQmFZcjU1eWtJa0ZrMUpHUHo4ZmJuNVgxcG04akt0NF9sVHRpcnI0akZmdnRBdw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及亚马逊在AI投资格局中的地位变化分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

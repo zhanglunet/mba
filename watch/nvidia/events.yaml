@@ -262,3 +262,124 @@
   source_type: media
   note: "LLM 预分类建议(high):开源模型发布，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-20-nvidia-017
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达Agent工具包通过新增Omniverse库进一步扩展，让AI智能体着手构建可用于仿真的世界"
+  quote: "英伟达Agent工具包通过新增Omniverse库进一步扩展，让AI智能体着手构建可用于仿真的世界"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxQdGNfdXFfUXJVTFB5VGlia05EMFZfSDNiaG4tT3dlRngtT1htN2w5ZXQwUUY2NGhnZlhMdFhCS3Y3cGZlamlvRHQ1Q0FmM3YtbUlRNjhiMTFCV1VqMWRrZVRYU2d1Q2NGRHBQT1FHXzA3a2xqOXZVNUFzSHdGMERCTjhQdTNIQk4wemVxQlBJdzN5OHRBdldBR2k1MUdGQk1oNGVMUmZSUENsLXN3WWJTWmJLOUtNUQ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):NVIDIA产品功能扩展，体现技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-nvidia-018
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达与丰田扩大合作：L2++上车，还合作打造数字孪生工厂"
+  quote: "英伟达与丰田扩大合作：L2++上车，还合作打造数字孪生工厂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE95WURVSkI5WG9ORTg0OFkyM056VzhoLWY3R2s2eHZYN1FpSWpqb24ycG5McG8wcWwwTXJjSllieHE4LUwwUnEzVzFmWnRYemU2X2c?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):与丰田战略合作扩大，涉及自动驾驶与工业应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-nvidia-019
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA推22毫秒AI鉴伪器：合成视频眨眼间现原形"
+  quote: "NVIDIA推22毫秒AI鉴伪器：合成视频眨眼间现原形"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9XZE5oc0VJYmpCbm5JWWI0YW91ZURvTUxPWG9XbVZQWkprcVB2M0JxUEpEX0h3bDJFU0hPZFBoTnE1SVFzWWtQTkEzYTRUOFV2Zm9xcXVhYmdabFh0V0tUNDVB?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):NVIDIA新产品发布，AI鉴伪技术创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-nvidia-020
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Helios 登场：AMD 首款 AI 机柜能撼动英伟达 95% 数据中心垄断吗？"
+  quote: "Helios 登场：AMD 首款 AI 机柜能撼动英伟达 95% 数据中心垄断吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi1gJBVV95cUxNcXFCako3NnUya3JDeG1DWnprV180OEgySzdIc3RwNk9zS0J6Skl5cTdLQ0o5c2QzQTY2NGJsWEl5MHhTQ2RHVnNyWWxDMjViNUdBUllacW94SGhrcUk0SWJkSWcyVkZ2M3hxWE9kWWF1M1ZZSmRoQ3VhTTA3SEZaQlkzMFh6dW5nTlhZWFN6ZVUxTmZ2ZzNqMGhaTjBLOElya2FCTzNCQXR1V0ZHX3BXclRfX3p5cFNlcGhoeFJST2prVGZPMWFQRW5zX1hmVDVFSGtkY3QzYmhGSXNIamZ5eGw5UmJOcWR2Tm13ajlWWGdfYVFETEtNVkRZdUxqUmdRaUpjV1lmUy1qQzl1VTFpR0k3M01ZRDZMX09GR0lFcnVEcWpCbE9jcEFOT0JDQXNHZ3doMkNfSlBtcFFheXdpdnZLdnpja2tZNGt1U083eldJYkRBYVE?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AMD竞品威胁NVIDIA市场地位，竞争态势舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-nvidia-021
+  date: 2026-07-20
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达深化与日本合作 布局“主权人工智能”与工业机器人网络"
+  quote: "英伟达深化与日本合作 布局“主权人工智能”与工业机器人网络"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxOS3h0QTB5bWxuempYNHJEaVJPOGJpY0d2N0ZtQlRUcXFOVDNuR21GTDNpdXR1S0E2Umw4Sk90MTZjSERMTlBNLWYtUUVxVlJkUWhfRVp3SGdqYlhQMkJldGFsT3ZyNnc2bThBR3RSdURxT0VzSDBMeWltaS1FWnktRm0wOUpoU0NPbmc?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):NVIDIA与日本战略合作深化，地缘政治与产业布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-nvidia-022
+  date: 2026-07-18
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达RTX Spark Arm芯片在首份Cinebench 2026泄露信息中现身"
+  quote: "英伟达RTX Spark Arm芯片在首份Cinebench 2026泄露信息中现身"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOWWpyUEpXOTJqOWZ6Ym1naXNrRjI2U2FBZ2VkZ0hjdGc0aWw4Z3ZkeC1SRk1abzdHTXBuQ0c4eUc5NzBObWd0ODVRTTNDNjJTeFVMZkNHQ3Z4WlNjZTlZbWY3RXU4M3RmTlZrdXZnSXVKZk1iRkpUeGpSN0QtSW0zSkp3?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):NVIDIA新芯片泄露信息，产品线扩展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-nvidia-023
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA 深化与丰田合作，推动物理 AI 在汽车、机器人和城市领域发展"
+  quote: "NVIDIA 深化与丰田合作，推动物理 AI 在汽车、机器人和城市领域发展"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5oREt6WUxhTGdYMVdrY0NXdnF2M0RWSmdxY0J4Y3FJc0VOZTFkRDVKWURzRXZrUjFRYVpQYjlDakRudmNQdU9zUnN1aE81aGxMV05LUXJ5UWo1czRvRnhuQktR?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):与丰田物理AI合作深化，多领域战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-nvidia-024
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "第 860 期：英伟达开始为即将推出的 RTX Spark Arm 电脑准备驱动"
+  quote: "第 860 期：英伟达开始为即将推出的 RTX Spark Arm 电脑准备驱动"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE44MGlnMU1YbGctSHRiZWhIVzQySEZTWmY0Q1c3UmRmdF9sQ0F2WXlkckZMRTdSUURGQUs5SEc2cFNFOHdOLWFnZ09UTXd2NzFGM05CQ0FxM2gyQUduRVphMk5R?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品驱动开发进展，技术动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

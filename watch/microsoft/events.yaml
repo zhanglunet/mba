@@ -294,3 +294,139 @@
   source_type: media
   note: "LLM 预分类建议(med):AI漏洞检测工具研发,安全能力建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-20-microsoft-019
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软将在 Azure 上大规模部署 AMD 的 Helios 机架式 AI 平台"
+  quote: "微软将在 Azure 上大规模部署 AMD 的 Helios 机架式 AI 平台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxPQWRMZXdGTDVoekdYbzc2cWkyS0x1VFgxVm1mU0dmb1ZtVXZZS0FyUlFSQXZoenFRYXowOWFtajEzakI2ZGpaYnVtUFduUDRPbmNfai1aNlMxYmNWMmZYNC14bHVmMjVqc29qU2NfZUpWS3E4NnFjSFc1WGtxak0wbmJzcG5MUVg5bFZCWUxQWThONnhpTk1XOVRDNnN4VHRSVzM1dkh3dmZ1TGktZDRSZk9PMNIBuAFBVV95cUxPVUdnRFNvc1NoQW9heXZsNlpaRDFqbVVMaDVVV281aFVObm1makU1QmFMdE9qUzl4MC1QTnczOU9kb09XNXh3eDZaelk5MXlLaE1Ma25YRzhmNndUeFEyWmFBcVk0NGxwSERsT2ROVmxzV2VHMjlVMmhWeFloSTEtaVZMekhNM0dkMmFKa2JmREFKSWxrQ0VNTFZncDY4aWNiaUVyUUNlQl9rX0xIeHVSVUNvMnlTbEst?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软Azure部署AMD芯片，战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-microsoft-020
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软将部署下一代AMD Instinct和AMD EPYC处理器，以拓展双方的长期战略合作关系"
+  quote: "微软将部署下一代AMD Instinct和AMD EPYC处理器，以拓展双方的长期战略合作关系"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxONFVPbkxJWTBSQTBSM09BTW8tbGh4elotZmVrS1hUM1BUVzgta05HT2lzeWVNMnRBQWg4SXZoV0tLcjZDT1VEeTdqcXZ5a0RsYUc5cDQ2UGNyT0c3STk1WDFRdmxxLVZHUlFEb3A3LTRVR1NURnlwZm5aRENPOVZ6Z09rYy05Q0l4TG0ybmF4M0U5enJsZmNOY0FtejRyeDhZa2JV?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与AMD扩大合作，处理器部署。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-021
+  date: 2026-07-21
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "德国统一政府文档标准为ODF，2027年让540万公务员告别微软Office！"
+  quote: "德国统一政府文档标准为ODF，2027年让540万公务员告别微软Office！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFBWYy1VQ1o1MkVWYkEyQjZMQXhXRmNmcjNrMWVaZWFMV0ZZRE8tY1kyY1R6Y2pjQUVIMjhQVllfaklKSE5aeTZfejZsVEIxcXZlYUEwTHF3T1ZqYWs2MEo3aVhQaDZUSFdKZ0VV?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):德国政府弃用微软Office，转向ODF标准。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-022
+  date: 2026-07-21
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软365日历藏匿2050年事件，黑客用它收发指令和偷文件"
+  quote: "微软365日历藏匿2050年事件，黑客用它收发指令和偷文件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9aVFpUTTI3M21SVk13SzVwR2REOUc4cnVvVlBtRmI2WWxuN19wZkRUMVZ0clBtd3pwMnFTOFdDbFdRU0t4U2czOVJ3VmtwSXRxRG8zZGtkQ24zRjNjNGZOel9B?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软365安全漏洞，黑客利用收发指令。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-023
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "微软或将Copilot模型替换为Kimi K3以节省成本可能招致特朗普政府审视风险- Microsoft 微软"
+  quote: "微软或将Copilot模型替换为Kimi K3以节省成本可能招致特朗普政府审视风险- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE85ZmsxQmxGOVUxYmNobXJyam41Z21fMm11Nkw1dUNOQm5weHg5dlZ5cUhZSElCT3dOdFFVcVlZQTY3WUhyTFphWFMwUVRDaXJTT2s2MGhpNU5jeTRvcWlEdA?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):微软考虑替换Copilot模型，涉政治风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-microsoft-024
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软将部署AMD Helios以支持Azure AI服务，这是双方扩大合作的一部分"
+  quote: "微软将部署AMD Helios以支持Azure AI服务，这是双方扩大合作的一部分"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT0R2QWxvbDRCVGdhSm9vbDllQ1pJaklUd3dNQzBBZ2l3amE4QXo2N19oYVBLTUduY2ZKVDA4dV9oUU1ucGNfVmhrV0doZVpzMXBORFhjM212a2E1MFVaNXR5ZU91TXBtb1VGMlBSTVZTbDdsQVA5WFgyTGVPRDBKaHFrS1ZmVjJITlVYRFIyX3hELTJ2N09OUDd5M25IYmhwenBaaGZ6VUQzQQ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软Azure部署AMD Helios，AI基础设施。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-microsoft-025
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软与AMD深化AI合作，Azure引入Helios机架级AI系统"
+  quote: "微软与AMD深化AI合作，Azure引入Helios机架级AI系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRnk3ODduMDZmWGVCLURwTWFGdzVJQXF2bHdkb05XVHhXR2ZJbTFRVjg5eGRmTkw3LTB1Q1JSaVozbFdiV0FabzRGNHlsN1hVVXpjZC1xMDNiTjE1NHQtNV95WW9la2FMRmJhdktNZ3JSM2ZZS3RQclRUZDhVSFJDTWVaY2ZCNnFIREJsdVgxT2Q4Wjd3TTZQc3g0Rkg1emdoN3cxM0RZZ0thUQ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软AMD深化AI合作，战略升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-microsoft-026
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Windows安全更新翻车高刷新率显示器频繁黑屏- Microsoft Error"
+  quote: "Windows安全更新翻车高刷新率显示器频繁黑屏- Microsoft Error"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UVUwydVl1TVktYWpRc1RnRUszUVRJN0dIcXpkUkhDVEtadHI3RkJPMExOY1BXYVU3ZDF5NzJXNU9Tb0E5dlJSekRUQU8tSl9XMjIwRnVSNmlQWWc4b3Jrbw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Windows安全更新故障，用户体验问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-microsoft-027
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft to Deploy AMD's Next-Generation AI Chips on Azure Under Expanded Partnership"
+  quote: "Microsoft to Deploy AMD's Next-Generation AI Chips on Azure Under Expanded Partnership"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxPNHJOZThFT2dWMnhhSi0ycFZxQkd3V01SYlpaM3pfV3VwR1JETGw2VlZOb2c3ckhBeW9YOGtvZ2duY25ka0FJSXZBRDVqaG9TeW1iRHBRZEl6a1dWaUVpQWMzYmpTQ2N3WmRsbzVSdWdCcDRaaVhRWURuUW83aXFoMlVSd3NjUG9TeG9UQ1VNMG1uZEtzal9SbldhZU1ucW5aQUE?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与AMD扩大合作部署AI芯片，战略性业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

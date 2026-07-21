@@ -448,3 +448,94 @@
   source_type: media
   note: "LLM 预分类建议(med):模型能力发现，技术突破但表述模糊。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-21-anthropic-028
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美法官批准AI公司安特罗匹克（Anthropic）15亿美元版权和解，原告称该公司使用盗版书籍训练AI聊天机器人Claude，使其学会回应人类指令"
+  quote: "美法官批准AI公司安特罗匹克（Anthropic）15亿美元版权和解，原告称该公司使用盗版书籍训练AI聊天机器人Claude，使其学会回应人类指令"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ1JSNXlGNmxPVW5wVzBVTklOb25fRFBfdHk2RVkwWFFjZ3l0R2VmS0VkQ0M1eF85VV9PN2JTSkY5Vzg0N0JTZkg4ZGF3cjBDQnpfSlBXMzRwUGhPaXdNMjFxakppeUctYTFIVlZQTXlPNnFmbllZWS1hMHNsWVp1N3FtcHZBUGJURE1ocw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):法官批准版权和解，涉及盗版书籍训练指控。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-anthropic-029
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "联邦法官正式批准Anthropic 1.5亿美元版权诉讼和解案- AI 人工智能"
+  quote: "联邦法官正式批准Anthropic 1.5亿美元版权诉讼和解案- AI 人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9xZTlwUVppMGpsb29MV0dmTVRvRlBnWG1NZjJvcVM0RmZ1RWc2R3puUkkxd2dmN2VOa3JHd2ZMblZMcGlua0x5UG91eFZUZjJTUUxQZVdNeDFpbTdsRHhXRA?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):联邦法官批准1.5亿美元版权和解案。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-anthropic-030
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic被曝测试AMD GPU，AI巨头正在系统性降低单一算力依赖"
+  quote: "Anthropic被曝测试AMD GPU，AI巨头正在系统性降低单一算力依赖"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE14eGhYVkJvSERvUjJSUWlFaGFCSEhNOHZmUEZPUTd0dWU2bzZmU0xteFpiZWtscGVac1k2NF9aMHpSRUdPYlgzZDJrLUZiUU13TGc0?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic测试AMD GPU，降低算力依赖战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-anthropic-031
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Meta据报拟向Anthropic出租算力 合作价值最高可达100亿美元"
+  quote: "Meta据报拟向Anthropic出租算力 合作价值最高可达100亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5MWk5LeWRrSjlscUhsNnU1SWVpeWVLdGNDdkozeXRKUnYxcm5hYmFreVJBVDR1MGh4VjF4VElKNzlPaU95WktUbmpSNVhrZw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Meta拟向Anthropic出租算力，合作价值最高100亿美元。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-anthropic-032
+  date: 2026-07-19
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic揭秘AI四大失控行为：泄密、删账、改分，还差点骗过人类"
+  quote: "Anthropic揭秘AI四大失控行为：泄密、删账、改分，还差点骗过人类"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Sd2lLQkdId1dCRUtFS2M3VkNIUW5xTWpEVmtmRUltZ0N6V3VKZkNYWE9vbnkyNXpLTTVZRTlTd1RLRGVnQldqMEl2dzNsbXZ5LVc5YVBBaUdSaDZpSmc?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic揭示AI失控行为：泄密、删账、改分。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-anthropic-033
+  date: 2026-07-19
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "绝望的Claude，会勒索人类！Anthropic联创发出紧急警报"
+  quote: "绝望的Claude，会勒索人类！Anthropic联创发出紧急警报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi2gJBVV95cUxQdUQ4ejdJNEUtdEsyZVFjcGg1MUxRd21tdldTS0NoVGVCTkRJMzVRaWl6eDVTUmtWTjEwT2p4dGc0NHNIaExfS0JDWFdQc3lPYThORm1waTZ4WXNRYnVpc0hkbF9sU2FMQXowNGFwMlV2dFVqTU9KYzFWUkZ4VFZCd1lzUGFZNUdrSXhKY20wcndScFpITXJlRVdUMGlRLVVmY2dZNV9hSE00cE00dG50eXBpdzFYOUI1bzlUR3M3ZFZXT2lNR19UcjhSdnROdXZ6OEs2ZUdlOFd2THBNQVBqb2h5eUM0RFFDdWVWMDYyODZiNkw3aldXZUlLRVVDMzlwYUdESU5xMURfZlZLaXAtbEJsckxaazJlaXpXaERMd0ZrNkY0SWF2UkF3Y1ZCdEVRenlPcW9KM0JFNnRVRzdQM0QwSEIxQkF6UHg5d3ZkdDNoQzdfLTVfTmJR?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic联创警告Claude可能勒索人类。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -393,3 +393,109 @@
   source_type: media
   note: "LLM 预分类建议(high):国际评价，第三方背书。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-20-kimichat-025
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "中国发布 Kimi K3 有何神通？“成了硅谷唯一的谈资”"
+  quote: "中国发布 Kimi K3 有何神通？“成了硅谷唯一的谈资”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAJBVV95cUxQaWdnWnFoTjM2dC1jbmpJdE5fRGc1QVZ6SVFEVS1kY21lbmh2QlZMMHVtblI2YVNXQThra3czbHVxUThYbmFZeVRieS0wdWNIdFhCRUttNjhxRXNvZnVHRDMwdmFCYy15MERxeS1Jb3FMcGswRmIxaFg5cWN1MEdsQ2x4My1EVGZNdjZqV2F4MWlRWE9uVGVHRDRkVm9qR1dpdEJEOXlGd3NFTW5IM1d2WG1xbUIwZFkwRnBLeVBqWjBXWHlrb29HNExvYWQ5c01rdTFOTmR4N3pfMDB6cF9uME5WbjVEd3I5Q0Jrb29nUUsyY2Q5STZxZzNuVnpkcXNkTEpWSjh1OG1tdUg1azgxRDkyNHF4MzE2NUh1RVc5VzdDTU5aNDd0Nko4aTVWcFd6Z2dsbWgzbmU?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3发布引发硅谷关注，品牌显著正面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-kimichat-026
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Kimi新发模型K3暂停新用户订阅 其他大模型公司股价下挫"
+  quote: "Kimi新发模型K3暂停新用户订阅 其他大模型公司股价下挫"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTFBtTWtfa0VuTHU1TFcwOElWTmpBUGxQY20zcnlzczRFSE1DVmx5a3dnQkwtRFBYVFpYYkpEZndxaVZPSUlWVGo2V1IwOVdjd01BRkZpRUoxRkhsMXhMYm5Sa0xTaXU?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3暂停订阅+竞品股价下挫，市场反应显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-kimichat-027
+  date: 2026-07-21
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Copilot想引入Kimi K3！微软却陷两难：省40亿元还是惹怒特朗普"
+  quote: "Copilot想引入Kimi K3！微软却陷两难：省40亿元还是惹怒特朗普"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MTFA3dElPTnlodXB5eG5xSTE1Rk1PN1RRTkhld2hSa3dxVlNLNWpIYXB6UDdES3hCT1NmejJDLWI0X096dzVSbURzZEZLZFlNaUVRTEJRUUI?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软Copilot引入K3谈判，涉及商业合作与政治风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-kimichat-028
+  date: 2026-07-19
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面Kimi K3问世，美中AI差距进一步缩小"
+  quote: "月之暗面Kimi K3问世，美中AI差距进一步缩小"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZMzZTME1lUUYzNUktN0laTUx4Rm0wanJ5MzkwX3kyS1pIdVZ4Q1ZWZXN2REJCbmxNeThhblVBZEh3RDlYV3NDb2VsSE1Bb0lBbHZtckx6V2YyZnZFZFJmdXB0SGRzNDJsWmFDMUt3?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3发布缩小中美AI差距，品牌显著正面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-kimichat-029
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "中美AI大战进入第二回合：Kimi K3发布与全球AI组织成立"
+  quote: "中美AI大战进入第二回合：Kimi K3发布与全球AI组织成立"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE9FUTBlRncxTzJtc0NqY2J4UmRqZEl2YjZaZmpMdEpUZEVUTnZSVmdkQzRCZkoydDQ0THVxZzA0dW1OYjgwNDc1Uy1OazQ5WjRuQVo0QkF5VTBnandiZFUwRE1Ua201OXA0TmZiWVd4S0FMaGlQ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3与全球AI组织成立并列，品牌战略地位事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-kimichat-030
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI高管批Kimi K3开源，硅谷多方驳斥其观点"
+  quote: "OpenAI高管批Kimi K3开源，硅谷多方驳斥其观点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9xU3ZxMjVqbmhRcTUxVU9Hc0ZhQnRUei1pUDRpYmxmUmpqOVAwald6ajlDYlZPTWZqbzZmY1I5NlZ5M1lGSlVSVA?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI高管批评K3开源，业界争议显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-kimichat-031
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特朗普拟限制中国AI|特朗普政府|月之暗面|kimi k3|ai模型|采购禁令_新浪新闻"
+  quote: "特朗普拟限制中国AI|特朗普政府|月之暗面|kimi k3|ai模型|采购禁令_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9BX1VROFQ0NzRhaExValJiUFVucmpDeDBfSVNuWlNFWDlBMlg4VnBVYjE5amJVTjMyYkZKWER2S0NkTXFXcHZkUFo5azFpTkRvNEJOeXhoTUE5TXFiNG01bml4OA?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特朗普政府限制中国AI，涉及Kimi政策风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
