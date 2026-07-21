@@ -154,6 +154,7 @@ MBA 用三条对应机制解决:
 - **v0.4.5** — Brand Watch → 舆情驾驶舱(docs/20):事件 schema 补 4 字段(关联人物/来源类型/建议动作/预警层级)+ 飞书 L1/L2/L3 分层预警 + 每品牌舆情驾驶舱看板(`/watch/<slug>/cockpit.html`:管理层摘要/风险归因/投资社区/可筛选全量表)
 - **v0.5.0** — 关系宇宙:创始人维度(docs/21)+ 创始人晚餐/品牌×品牌合作推演(docs/22)+ 产业维度(docs/23)+ 七家科技巨头入库(15→22 品牌,含首次真实 `--panel-drop`)+ 全站功能巡检修复(docs/24)
 - **v0.6.0** — 舆情自动化闭环(docs/16):前台 Triage 页(打勾采纳/丢弃 + 一键提 PR)+ 每日发现候选 → LLM 多 provider 预分类(GLM/OpenAI/Anthropic)→ 自动折入 `events.yaml` 开 PR → 人工只审 diff;4 场 EVOLUTION 重审(kimichat/DeepSeek/微软/NVIDIA)+ Tesla/Palantir 入库(24 品牌)。反捏造:AI 只判类不改分、合并=人工闸门(当前)
+- **v0.6.1** — 全部触发品牌 EVOLUTION 重审 + 首页每日自更新:把累计触发「建议重审」的 **15 家品牌**全部按 watch 事件流做 delta 重审(触发器全清零,#184 8 家 + #185 7 家),每处分数移动锚定具体 watch 事件、不重复计价、克制到底;每日舆情 PR 从「等人合」升级为「自动 squash 合并、首页每天自更新」(#183)。修复 3 处门禁抓不到的版本一致性缺口(deepseek panel history / nvidia·microsoft tl_dr 滞留 v2)
 
 ## 11. 衍生需求(待评估)
 
