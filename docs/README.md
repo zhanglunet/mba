@@ -33,6 +33,7 @@
 | 22 | [22-founder-dinner.md](22-founder-dinner.md) | 产品 / 贡献者 | **创始人晚餐(品牌×品牌合作推演)**:把两位创始人放一桌,按 5 镜头假想推演合作;`collabs/<a>--<b>.yaml` + `build_collab_dinners.py`(晚餐页+组合器)+ `validate_collabs.py` 硬 gate;**反捏造:AI 演绎/非真实合作/诚实盒强制**;含 schema、SOP、开发计划存档 |
 | 23 | [23-industry-dimension.md](23-industry-dimension.md) | 产品 / 贡献者 | **产业维度**:按产业给 17 品牌分 6 大类(AI/消费/硬科技·航天/智能制造·硬件/企业服务·安全/教育);`reports-meta.yaml` 的 `industry` 字段单一真源 + 首页产业筛选/卡片标签(`build_home_cards.py`)+ `check_consistency` 第 10 格硬 gate;含分类表、schema、开发计划存档 |
 | 24 | [24-site-qa.md](24-site-qa.md) | 贡献者 / 运维 | **全站功能巡检与修复**:一次系统性 click/execute/verify(Playwright 爬 177 页 + 交互测试)找出并修复 4 个真实缺陷(2 处死链 + 版本快照断图 + redirect 目标错);含可复现方法、CDN 环境假阳性说明、11/11 交互测试结果 |
+| 25 | [25-superpowers-checklist.md](25-superpowers-checklist.md) | 贡献者 | **Superpowers 本地 checklist**:web 环境 `/plugin` 装不了插件,把 obra/superpowers 的方法论与铁律(七阶段工作流 + verification/TDD 两条 Iron Law 逐字转写)蒸馏成本地对照表 + MBA 适配(报告/YAML 的等价「测试」=本项目门禁)+ §4 每次开发收尾自检模板;用户 standing rule「每次开发验证 Superpowers」的落地 |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(原始设计草案) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |

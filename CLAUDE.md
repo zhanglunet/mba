@@ -113,6 +113,22 @@ python3 packages/mcp-server/scripts/generate-personas.py             # 再 git d
 ```
 动了 `packages/mcp-server/` 另跑:`pnpm --filter mba-mcp-server typecheck && ... test && ... build`。
 
+## 每次开发都要做(用户 standing rule · 2026-07-21)
+
+> 用户明确要求:**每次开发都验证是否遵守 Superpowers,并全程写好过程记录**。
+
+1. **Superpowers 自检**:用户指的是 **obra 的 Superpowers 插件**(Claude Code marketplace: `obra/superpowers`,
+   结构化 brainstorm→plan→implement→verify 工作流 + 纪律技能)。**web/远程环境 `/plugin` 不可用、插件装不上**——
+   已把它的方法论与铁律蒸馏成本地 checklist **`docs/25-superpowers-checklist.md`**(含来源与逐字铁律)。
+   **每次开发收尾按 docs/25 §4 逐条自检**、在过程记录里写明「Superpowers 自检:通过/偏离哪条」。
+   如实写"以 docs/25 checklist 自检",**别假称"已用 Superpowers 插件"**。本地桌面版可 `/plugin marketplace add
+   obra/superpowers-marketplace` → `/plugin install superpowers@…` 装真插件,装上则优先用真插件。
+2. **过程记录(沿用 daily+weekly)**:工作盘点由 `daily-report.yml`(每日 09:00 北京,`scripts/new_daily.py new`)
+   **自动从 git 派生**——所以**有意义的活一定落成 PR**,盘点才抓得到。**「补充说明」(关键决策/踩坑/明日计划)
+   是人工、自动化填不了**:每次开发后补进当天 `docs/daily/<date>.md` 的补充说明段;周五合 `docs/weekly`。
+   `new_daily.py new` 重生成时**会保留已手填的补充说明**(只刷新 git 派生的工作盘点)——2026-07-21 修复,
+   放心随时补;次日 09:00 自动重生成不会清掉。
+
 ## 环境 & 约定
 
 - monorepo:**pnpm workspace**(Node ≥20,pnpm ≥9)。深化取数的临时文件放 scratchpad,**别进仓库**。
