@@ -92,8 +92,32 @@ def git_commits(ref):
     return rows
 
 
+PLACEHOLDER_NOTE = (
+    "<!-- 人工补充:今日重点 / 关键决策 / 踩坑 / 明日计划。git 盘点之外的东西写这里。 -->"
+)
+
+
+def extract_supplement(md_text):
+    """从已有日报里抽出「## 补充说明」和结尾 `---` 之间的人工正文。
+    返回去除首尾空行后的正文;若只剩占位注释 / 空,返回 ""(视为未填)。"""
+    lines = md_text.split("\n")
+    try:
+        start = next(i for i, l in enumerate(lines) if l.strip() == "## 补充说明")
+    except StopIteration:
+        return ""
+    body = []
+    for l in lines[start + 1:]:
+        if l.strip() == "---":
+            break
+        body.append(l)
+    text = "\n".join(body).strip()
+    if not text or text == PLACEHOLDER_NOTE:
+        return ""
+    return text
+
+
 # ── 渲染日报 ─────────────────────────────────────────────────────────────────
-def render_daily(date, items):
+def render_daily(date, items, note=None):
     by_type = {}
     for _, typ, scope, desc, pr in items:
         by_type.setdefault(typ, []).append((scope, desc, pr))
@@ -123,7 +147,7 @@ def render_daily(date, items):
     lines += [
         "## 补充说明",
         "",
-        "<!-- 人工补充:今日重点 / 关键决策 / 踩坑 / 明日计划。git 盘点之外的东西写这里。 -->",
+        note if note else PLACEHOLDER_NOTE,
         "",
         "---",
         f"提交:{len(items)} · PR:{n_pr}",
@@ -219,9 +243,12 @@ def cmd_new(args):
         return 0
     DAILY_DIR.mkdir(parents=True, exist_ok=True)
     out = DAILY_DIR / f"{date.isoformat()}.md"
-    out.write_text(render_daily(date, items), encoding="utf-8")
+    # 保留已手填的「补充说明」——重生成只刷新 git 派生的工作盘点,不清掉人工内容。
+    note = extract_supplement(out.read_text(encoding="utf-8")) if out.exists() else ""
+    out.write_text(render_daily(date, items, note=note or None), encoding="utf-8")
+    kept = "（保留已手填补充说明）" if note else ""
     n = rebuild_index()
-    print(f"[daily] 写入 docs/daily/{date.isoformat()}.md（{len(items)} 项）· 索引 {n} 天")
+    print(f"[daily] 写入 docs/daily/{date.isoformat()}.md（{len(items)} 项）{kept} · 索引 {n} 天")
     return 0
 
 

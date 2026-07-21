@@ -125,8 +125,8 @@ python3 packages/mcp-server/scripts/generate-personas.py             # 再 git d
 2. **过程记录(沿用 daily+weekly)**:工作盘点由 `daily-report.yml`(每日 09:00 北京,`scripts/new_daily.py new`)
    **自动从 git 派生**——所以**有意义的活一定落成 PR**,盘点才抓得到。**「补充说明」(关键决策/踩坑/明日计划)
    是人工、自动化填不了**:每次开发后补进当天 `docs/daily/<date>.md` 的补充说明段;周五合 `docs/weekly`。
-   ⚠ **注意**:`new_daily.py new` 是 `write_text` **无条件覆盖**,会**清掉手填的补充说明**——所以补充说明要在当天
-   骨架已生成之后再填(或先跑 `new_daily.py new <date>` 生成、立即填、当天内提交),别赶在次日 09:00 自动重生成前被覆盖。
+   `new_daily.py new` 重生成时**会保留已手填的补充说明**(只刷新 git 派生的工作盘点)——2026-07-21 修复,
+   放心随时补;次日 09:00 自动重生成不会清掉。
 
 ## 环境 & 约定
 
