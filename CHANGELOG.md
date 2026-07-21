@@ -4,6 +4,33 @@ All notable changes to MBA (Metric Brand Auditor) are documented here.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/); versions
 track `metric-brand-auditor/SKILL.md`'s `version:` field (the release tag).
 
+## v0.6.1 — 2026-07-21
+
+**全部触发品牌 EVOLUTION 重审 + 首页每日自更新**:本版把累计触发「建议重审」的 **15 家品牌
+全部按 watch 事件流做 EVOLUTION delta 重审**(触发器全清零),并让每日舆情流水线从「开 PR 等
+人合」升级为「自动 squash 合并、首页每天自更新」。均守 MBA 边界:**每处分数移动锚定具体 watch
+事件、引文逐字取自源 feed、不重复计价、克制到底;AI 只判类不改分、合并=人工闸门(重审 PR)**。
+
+### Added / Changed
+- **15 家品牌 EVOLUTION 重审**(#184 · #185)——批 1(8 家):apple / huawei / spacex / amazon /
+  google / openai / zhipu / tesla;批 2(7 家):**nvidia**(220 净持平)· **lenovo**(119→122,DeepSeek
+  一体机+Panther Lake)· **meituan**(170→171,一镜到底验真兑现挂账半格)· **deepseek**(207→208,
+  首轮融资落地收折价)· **kimichat**(150→149,「自称我是Claude」扣 Identity)· **anthropic**
+  (179→181,vc-cn 活跃面板:盈利有望+xAI 算力答朱啸虎两条质疑)· **microsoft**(v3)。每家消费其未
+  消费 watch 事件、版本化报告(`report.md`/`.html` + `versions/` 快照)+ `consumed_by` 清触发。
+  **不重复计价 / 方向价 / 双向跟证据走**贯穿全部重审(净持平与 ±1~3 为主)。
+- **首页每日自更新 + 自动合并**(#183)——每日「发现 → LLM 分类 → 折入」PR 重生成首页舆情条并
+  **自动 squash 合并**,首页舆情不再滞留;两批 LLM 预分类舆情入库(#182 · 96 条 / #186 · 181 条)。
+
+### Fixed
+- **版本一致性 3 处**(Codex 审出 · #185)——`deepseek/panel.yaml` 的 `history` 被一次 unbounded
+  `.replace()` 损坏(v2 日期误改、漏 v3 条目)→ 恢复并补 v3;`reports-meta` 的 **nvidia / microsoft**
+  `tl_dr` 仍是 v2 叙事(污染 `site/api/reports.json` + `search.json`)→ 改写为 v3。这三处均为门禁
+  抓不到的一致性缺口(`tl_dr` 文本不校验版本、`panel.yaml` history 不比对快照)。
+
+> 规模:**24** 已发布审计品牌 · **24** 创始人档案 · **3** 场创始人晚餐 · **4** 处真实 `--panel-drop`。
+> 榜首:Apple 8.88 · NVIDIA 8.80 · SpaceX 8.72 · Hermès 8.64 · Amazon 8.64 · Huawei 8.60(均为重审后实况)。
+
 ## v0.6.0 — 2026-07-19
 
 **舆情自动化闭环 —— 从「人工核验候选」到「AI 自动分类 → 折入 → 只审 diff」**:本版把 Brand Watch
