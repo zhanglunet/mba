@@ -118,10 +118,11 @@ python3 packages/mcp-server/scripts/generate-personas.py             # 再 git d
 > 用户明确要求:**每次开发都验证是否遵守 Superpowers,并全程写好过程记录**。
 
 1. **Superpowers 自检**:用户指的是 **obra 的 Superpowers 插件**(Claude Code marketplace: `obra/superpowers`,
-   结构化 brainstorm→plan→implement→verify 工作流 + 纪律技能)。**当前环境未安装**(`~/.claude/plugins/` 空、
-   settings 无 marketplace)——装之前没有可对照的规则,别假装"已验证"。装法:`/plugin marketplace add
-   obra/superpowers-marketplace` → `/plugin install superpowers@…`。**装好后**:每次开发收尾按它的清单逐条自检、
-   在过程记录里写明「Superpowers 自检:通过/偏离哪条」。未装时如实说明"未装、无法对照"。
+   结构化 brainstorm→plan→implement→verify 工作流 + 纪律技能)。**web/远程环境 `/plugin` 不可用、插件装不上**——
+   已把它的方法论与铁律蒸馏成本地 checklist **`docs/25-superpowers-checklist.md`**(含来源与逐字铁律)。
+   **每次开发收尾按 docs/25 §4 逐条自检**、在过程记录里写明「Superpowers 自检:通过/偏离哪条」。
+   如实写"以 docs/25 checklist 自检",**别假称"已用 Superpowers 插件"**。本地桌面版可 `/plugin marketplace add
+   obra/superpowers-marketplace` → `/plugin install superpowers@…` 装真插件,装上则优先用真插件。
 2. **过程记录(沿用 daily+weekly)**:工作盘点由 `daily-report.yml`(每日 09:00 北京,`scripts/new_daily.py new`)
    **自动从 git 派生**——所以**有意义的活一定落成 PR**,盘点才抓得到。**「补充说明」(关键决策/踩坑/明日计划)
    是人工、自动化填不了**:每次开发后补进当天 `docs/daily/<date>.md` 的补充说明段;周五合 `docs/weekly`。
