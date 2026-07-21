@@ -3,15 +3,15 @@
   "brand_cn": "DeepSeek / 深度求索",
   "brand_en": "DeepSeek",
   "ticker": null,
-  "version": "v2",
-  "audit_date": "2026-07-18",
+  "version": "v3",
+  "audit_date": "2026-07-20",
   "panel": "ai-app-cn",
   "score": {
-    "total": 207,
+    "total": 208,
     "max": 250,
-    "normalized": 8.28
+    "normalized": 8.32
   },
-  "tl_dr": "EVOLUTION v2(watch 事件流):v1 的最弱项是 Leverage(7.0)——先进芯片禁运的结构约束。本轮自研 AI 芯片(降低英伟达依赖、消息令英伟达股价承压)直接对冲这条约束,Leverage 7.0→7.8(↑0.8);叠加 据报 74 亿美元融资 + 拟上海上市,一家\"不融资\"的公司拿到资本定价,Signal 8.2→8.8。200→207 (8.00→8.28)。周鸿祎守 8(开源+效率本就是护城河,自研芯片只再确认);全为媒体口径、未落地,评委 只给\"方向\"的价。补的是 v1 最担心的杠杆天花板。",
+  "tl_dr": "EVOLUTION v3(watch 事件流):v2 据报的那轮融资本轮落地——完成首轮融资、估值约 3508 亿元、 腾讯/网易/宁德时代等具名参投、梁文锋持股 31% 登顶大模型首富。确认 + 具名 + 估值把 v2 留的 \"报道 vs 落地\"折价收掉,朱啸虎 Signal 8→9,五人收敛全 9(Signal 8.8→9.0)。其余 ↔:融资 v2 已 按 Signal 计价不重复挪 Leverage,V4 满血版据报将推但未 benchmark 不进 Category。207→208 (8.28→8.32),全套重审最克制的一格——同一轮融资 v2 已计方向,v3 只补最后一格。",
   "html_url": "/reports/deepseek/",
   "pdf_url": null,
   "api_url": "/api/reports/deepseek.json",
