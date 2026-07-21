@@ -3,15 +3,15 @@
   "brand_cn": "Kimi / 月之暗面",
   "brand_en": "Kimi (Moonshot AI)",
   "ticker": null,
-  "version": "v2",
-  "audit_date": "2026-07-18",
+  "version": "v3",
+  "audit_date": "2026-07-20",
   "panel": "ai-app-cn",
   "score": {
-    "total": 150,
+    "total": 149,
     "max": 200,
-    "normalized": 7.5
+    "normalized": 7.45
   },
-  "tl_dr": "EVOLUTION v2（K3 驱动，watch 事件流）：v1 的招牌是 MBA 罕见的「品牌>业务信号」（Identity 7.5 领跑、 Signal 6.3 垫底）。开源 K3 拿到「前沿级结果」、被 Reuters 称「全球最大开源模型逼近美国前沿」、以约 1/3 token 成本逼近前沿基准——Signal 6.3→7.8（↑1.5，全卷垫底跳到并列第一）、Category 6.8→7.8（↑1.0 开源前沿定义者）、Leverage 6.0→6.8（↑0.8，周鸿祎守 5：声量≠分发）。业务信号第一次反超品牌，v1 判定被 翻面。137→150（6.85→7.50，↑0.65）：补的是「业务信号」旧账，分发规模与品牌身份的账留给商业化。",
+  "tl_dr": "EVOLUTION v3（watch 事件流）：K3 发布已在 v2 计满（Signal ↑1.5、Category ↑1.0、Leverage ↑0.8）——本轮 那批「K3 登顶全球最大开源模型/性能接近顶级」是同一次发布的多家转载，确认不重复计价。新事件里的正向 （赴港上市、火爆到暂停 C 端、美国智囊正评）与负向（涨价+承认不如顶级、阿里 Qwen3.8 直逼）净对冲， Signal/Category/Leverage 全 ↔。唯一未被同轴正向抵消的是「Kimi 自称『我是Claude』」这条朝向原创性/身份 的负向证据——傅盛 Identity 7→6。150→149（7.50→7.45），全套重审唯一净下调，克制到底：格局未动、身份露缝。",
   "html_url": "/reports/kimichat/",
   "pdf_url": null,
   "api_url": "/api/reports/kimichat.json",
