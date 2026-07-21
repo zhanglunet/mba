@@ -3,15 +3,15 @@
   "brand_cn": "Anthropic",
   "brand_en": "Anthropic (Claude)",
   "ticker": null,
-  "version": "v3",
-  "audit_date": "2026-07-11",
+  "version": "v4",
+  "audit_date": "2026-07-20",
   "panel": "vc-en",
   "score": {
-    "total": 179,
+    "total": 181,
     "max": 250,
-    "normalized": 7.16
+    "normalized": 7.24
   },
-  "tl_dr": "PANEL-MERGE v3（首个 --panel-merge 跨面板对比）：同一份简报由 vc-en(硅谷 VC)与 vc-cn(中国 VC)独立打分。两面板方向惊人一致——没有一个镜头均值差达 1.5(最大 0.8)； vc-cn 系统性偏严 −2.2(35.8 vs 38.0/50)集中在 Leverage/Identity。两面板共识裂缝重合： Signal 全 10 位评委齐打 gross/net 折价、Identity 同为最弱镜头。vc-cn 179/250 · 7.16； vc-en 参照 190/250 · 7.60。",
+  "tl_dr": "EVOLUTION v4（vc-cn 活跃面板 · watch 事件流）：Anthropic 最浓的一个消息窗（估值9650亿超OpenAI、 Fable 5、xAI 22万GPU、有望首季盈利），恰好给 vc-cn 最低分评委朱啸虎的两条结构质疑各交第一份答卷—— 「有望首个季度盈利」(008) 答\"单位经济洁净度\"→ Signal 7→8；「xAI 22万GPU+Meta算力」(025/007/014) 答\"三云单点故障\"→ Leverage 6→7。但答卷都是\"有望/未签\"、竞争同时加剧(Qwen3.8 Max/Kimi K3)、口碑 摩擦兑现(MCP省钱/权限调整/停研争议)，其余全 ↔。179→181(7.16→7.24)，朱啸虎 31→33，组内极差 7→5。 vc-en 参照 190/7.60 不变。",
   "html_url": "/reports/anthropic/",
   "pdf_url": null,
   "api_url": "/api/reports/anthropic.json",
