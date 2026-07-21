@@ -159,3 +159,34 @@
   source_type: media
   note: "LLM 预分类建议(high):智谱融资/估值重大进展，CEO前沿模型态度表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-21-zhipu-009
+  date: 2026-07-21
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "智谱盘初反弹，现涨超10%；智谱AI落地1GW国产算力中心，同步完成对中科加禾的收购。"
+  quote: "智谱盘初反弹，现涨超10%；智谱AI落地1GW国产算力中心，同步完成对中科加禾的收购。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxON20zTUNsdXRFN3pUU3kzMFpwODZ1VGVfWEdFcDNROHg3TGV4d2FMNEFVZFFreFR5YTJqa0FJQlBvZ1JVek1GaldZWDFvMC1ONExUQlgyMVJFNG8xZG5oOU1IN1g0VGM4aFYtRVVPLXp2UDgwdjJsQ1Z2alFUM3RiMEVBb25ObzJHSnVVN2x0a0Z1WjB1UjJaVw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):算力中心落地+并购完成，战略布局进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-zhipu-010
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "314亿配售后七天浮亏44%：智谱两日再蒸发3000亿，万亿叙事退潮拷问AI估值逻辑"
+  quote: "314亿配售后七天浮亏44%：智谱两日再蒸发3000亿，万亿叙事退潮拷问AI估值逻辑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxObGV2ODBULU5qYVI0UUU5ZmRXaEQyS3JjLWhUc1R4NFM4aG9vcUdWRHpxa1N3VTFoRko2SzFDTnlCUDUzTDF3cV8tb25FdWRQRTlXaGZDQW44aGRlQXM1M212TjlZSGx5ZDc2MU9YdlhfOXZnejdGYUVyTUx2RTB5NUp6WWc?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO后股价大幅下跌，估值逻辑质疑，声誉冲击。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

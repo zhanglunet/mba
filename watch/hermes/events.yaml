@@ -211,3 +211,19 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕投资COLOMBO，战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-20-hermes-014
+  date: 2026-07-20
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "品牌停产的老款还能修吗？5大渠道实测对比+FAQ"
+  quote: "品牌停产的老款还能修吗？5大渠道实测对比+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE5RRkdpd2hBZmd1emY3T3U5YTVTeUZodEh4bG1pdmJsMzlRQzJ0elgtTzkzcUI5Mk1aaHdDOGpQX3RNN1lkcVpxc1BNZ3MwRlZUQUNCYlJvQXJMY1k0T2djQTdDdEJNcER5RU1aZUZR?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及品牌产品维修政策,有舆情参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

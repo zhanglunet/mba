@@ -232,3 +232,64 @@
   source_type: media
   note: "LLM 预分类建议(high):高管观点表述，体现品牌AI战略定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-21-lenovo-015
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "全球资金继续布局AI 联想集团受益于算力需求增长"
+  quote: "全球资金继续布局AI 联想集团受益于算力需求增长"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE80QnBGX0tGTlRfX2ZCaEx3TENRUzM1U3ByRE5CSnRGWmxOSFh5bWtpaEtDTnhRN1kwbHpNU0VKTTVtR3l0cGVtMnp5QVR2LV9DZkRV?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师观点：全球资金布局AI，联想受益算力需求增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-lenovo-016
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "摩根士丹利：AI需求向整机扩散，联想集团迎服务器升级机遇"
+  quote: "摩根士丹利：AI需求向整机扩散，联想集团迎服务器升级机遇"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBXSldjRzc5VTlCdHdQaFdPZVlMNUxWRGkxanZad1RTREhOeXNBdWxMdjN1NTkybWQzMUx4bDl3cURVSkh1MUNoUFM2cnZ1RG1OTkNr?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):摩根士丹利研报：AI需求扩散，联想服务器升级机遇。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-lenovo-017
+  date: 2026-07-21
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "海通国际：端侧AI产品加速落地，联想推进AI PC智能体升级"
+  quote: "海通国际：端侧AI产品加速落地，联想推进AI PC智能体升级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBCNGhVY2RQQzEwcnotQzlUbXhKazV1eU5UWW83X2FnZGFjR01EcHdWaHpudmU3aURnUEpRMmtjUUV4bTFfelAzZDUwZzZwb0QycTQw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):海通国际观点：联想AI PC智能体产品升级进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-lenovo-018
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Kimi“算力告急”引争论！机构资金开始转向中国资产 联想集团等多家港股公司财报受关注"
+  quote: "Kimi“算力告急”引争论！机构资金开始转向中国资产 联想集团等多家港股公司财报受关注"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0ZHAzQzhhRXFkWXNLZWNrNjlVcTlGTUM3ekw5RThvUTVDenNib19DczdYaFFseWFTVzZrNnBHQUVSQkstZlJPa1VxREVSVUstWUY4?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi算力争议引发资金转向，联想财报受关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -423,3 +423,124 @@
   source_type: media
   note: "LLM 预分类建议(high):股价大幅下跌，市值蒸发，财务危机信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-20-spacex-027
+  date: 2026-07-20
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "【早报】美股科技巨头全线走高；英伟达财报出炉、SpaceX启动IPO"
+  quote: "【早报】美股科技巨头全线走高；英伟达财报出炉、SpaceX启动IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE93eWJXd0RaM2thaF9lalA0ME1CWXdqYmJ3Z1N0REs5ZlMtYUtqa3NwZjdHT2g5c1g1dzBPbTZpR0ZKRm5CV3JmNw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX IPO启动,重要融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-028
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX星舰第13次试飞推迟至7月23日"
+  quote: "SpaceX星舰第13次试飞推迟至7月23日"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBHQTZNSXE1Q3Y0aWduY2M5bVo5Qld3bXZWdldCVlRhRWE1RlloMFpnc1hVSVdBRlI1NXVpc09Hb1Rnd09heTFVSjduSnBOZw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰试飞推迟,核心业务进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-029
+  date: 2026-07-20
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "520 亿美元大单落地，鸿海拿下SpaceX 超 520 亿 AI 服务器巨额订单"
+  quote: "520 亿美元大单落地，鸿海拿下SpaceX 超 520 亿 AI 服务器巨额订单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxQMG5HZmdMQ1hGcFBuQ0FLSjRDZ2FYbXRoV3MyalhtdkRhS25FM29BV1YxeVg1c290T1ZsQU0zMmY5LUk2Ymd5b3Qwd1FfVFVXMTRXb2V5d3pkb2p5OGV6TzVQazgzU3hGalQ0REIwdWhVN2t6YmFfWWVRRHNZbkpWcGtwamZGU2tsa3NuY1ptdmZHejNmb1RDNGsxRW5pSHBGWHhQdmgtUQ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):520亿美元订单,重大商业合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-030
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "AI算力租赁时代来临：Meta与SpaceX的两场豪赌"
+  quote: "AI算力租赁时代来临：Meta与SpaceX的两场豪赌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5rVzFZbFFqQzJrWTdBMHZEUlBMeXcxcmRoUTI1VlVyZUxjbkRqTTRpejVHTGhnMlVHTnJudmhSb2F0RmRqbjJMTzAzNE9NR3VyQTJydHNPSzg1ck9oaHBmMnlWYTVqRlY1LXp3a2JzSnoxWnRaTGZhb2FVUXp5NkE?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AI算力战略分析,涉及SpaceX业务方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-031
+  date: 2026-07-20
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX将于8月4日发布二季度业绩报告"
+  quote: "SpaceX将于8月4日发布二季度业绩报告"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE5BVUE2OUhFbmlvTU1zWVhWbVdiWDFUbE03OHdEOXZqcG1QalF6MkN0dnRFOWR4Mlg5cVdxRUFOZ25wcU54MF8zaEFsU3hETmFvdnpVdUpGdm1ZWXVYcm5nMUtOMA?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):财报发布公告,上市后首份业绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-spacex-032
+  date: 2026-07-20
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX据称向鸿海下达巨额订单 订购价值520亿美元AI服务器机架"
+  quote: "SpaceX据称向鸿海下达巨额订单 订购价值520亿美元AI服务器机架"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBzV0t5Wm5UVnNkQ1I0VElIUld1UlFfQ28wQ0FweGZGZWZyaEJsczBJME4td3hYNHRRZnJSdWFMcXlkT0kxaC1kVA?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):520亿美元AI服务器订单,重大商业事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-spacex-033
+  date: 2026-07-21
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "为何SpaceX的未来取决于Starship"
+  quote: "为何SpaceX的未来取决于Starship"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxOLTBsQm1JcWpJRUFiSzZ5bGlJa293b2F4bnI5V0ZtaDhfNFFOX0ExWEJXLXBvN0EtdmRHN1F1Zl9JaG9qaFdYVExlajBpb3JoeTBJRjIzT05QLXBrMWJmV204QkdBb1VXOUZQWjFBTHVJcGxCVk1CS3Y4UDNFUjJ6bi01d0NHNnBpbFdVaHhxNm0?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):Starship战略地位分析,核心业务评述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-spacex-034
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX上市后首次财报电话会定于8月5日4:30"
+  quote: "SpaceX上市后首次财报电话会定于8月5日4:30"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9jbjJQTExlODllZlJtZFFlSm1oSkJzNDdLZndGd1Y0YUM4ZHlYcVlCSWp1blIwV2ZkSHpfQUI1TVZzRldMSEltQXh1UkNmM3hjRFJSbEFLR1Bka19TM1RpT3pn?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):上市后首次财报电话会,重要信息披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -262,3 +262,94 @@
   source_type: media
   note: "LLM 预分类建议(high):华为技术进展，L3智能认证达成具体里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-20-huawei-017
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI功能实用的手机推荐哪款？华为Mate 80系列深度解析+FAQ"
+  quote: "AI功能实用的手机推荐哪款？华为Mate 80系列深度解析+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNVUgwa2dPQTBaZ0VRRDVZYkZDcm0zX0xFcVhlT1JBWFdUdFVnYU11NGFqNGp3dGZFcEVCTDQwenpWeG5INGhDNU5ucWNGOUluY2NfZUYwTXhXNm9BNVhiYjJrOGRLVWlKWUZhdUtsYWVUY1lCeVlxV3JUbHRyU3ZldA?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):华为Mate 80系列AI功能推介，产品宣传。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-huawei-018
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "数码产品全面涨价，华为扛住压力给出多重补贴，换机要趁早!"
+  quote: "数码产品全面涨价，华为扛住压力给出多重补贴，换机要趁早!"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijANBVV95cUxOXzdxUDBFWGkzeUUyUEVYY01XQ1BSNk1SQ3ZKay03Q2ZERzhNUTBFODdRd0J6bzJjZUV3SDkweWc3NGQ3SlAzZWFWbjA2cS11RTI5QWtKRk14aHpsTGRQUVQyZG9BV1JoS0ZicklsNVlRUW1fbHB0SE5Da3dibTN0S0ZDanAwNmRZS2tpQjBNNmxJMkU0Y2d5X3FVSk4xcXJ1VHFuRlJYS2RGSGxGQzc2b2FONl81OUN3eExaLTBIVW5TVXI3UWd0NWhIc1F0eXNmQzY5Y2FTa3JYM2M0UklCYkxYLWtyWlhUeVU5OTYtV3NVdExDa1FhV21vWW9QeGxVY2h1SEJ4Qk53MTVrb0xFZXM5T1JCRU1XNlh0ZEJIeDhQLTZsNFFkeFU0Q3hNRWVhM3hWNmpnTEt2TjJtcFBubWdqQzNQVXkxV244T3BTSGhCTmJOazBhT0paOGxnd1A2Njg2YlQ1Q2gteVV1M2I3NDBnZ191UUpXS05LN3Z6dW9QYWNYZ2JRQTlSQmI?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为应对涨价压力提供补贴，市场竞争策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-huawei-019
+  date: 2026-07-20
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "#华为乾崑 #启境汽车 #317启境GT7全球首秀终于蹲到官宣！"
+  quote: "#华为乾崑 #启境汽车 #317启境GT7全球首秀终于蹲到官宣！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RbUJfeU93X2hOSHUwM2hPck1TRnlFOGZFMU5vbGU1Tkx6ZDZhZ3RtOEJiVzJheUJsem0ya0pHOEJRME1OQ3pEN1FqVE4zejRlQWU1Y3NCOGozS00?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为启境汽车新品全球首秀，跨界业务进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-huawei-020
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "等等党这次真亏了？看懂这轮存储涨价，才知道华为旗舰现在有多香"
+  quote: "等等党这次真亏了？看懂这轮存储涨价，才知道华为旗舰现在有多香"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFpWWDQzZERiaTRRNGJjaWRreXpENzgtT2xzYjFvY2p0dHIxdzl1UlVSVW4tTi1neTFtUU9xem9KWnhBa2R3cEg1VjZ2X0tob2h6eC1ybGxNVFZsQTZuSk9CbDhkSFlYbDZMOEpjNVhDTU1hdWRXcl9WNE1Vd0lEd2R3T012XzY1djlScQ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):华为旗舰产品在存储涨价背景下的竞争优势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-huawei-021
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为 Mate 80 等系列手机开启 HarmonyOS 6.1.0.135 升级，更多机型会在 8 月获推更新"
+  quote: "华为 Mate 80 等系列手机开启 HarmonyOS 6.1.0.135 升级，更多机型会在 8 月获推更新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxQQ01QT01ZTFk2QmZEZDg5eV91VDdzdWw5WFN6MGhQSEdrcjc5RW9WaE1YcjJJbDlkTVQ1LUlDa1BXNU5uQ2RhOHlkRWgwb3BFdjJvRHZiQ01XNWpKX3pVSkM5SVp1YldaR1ItODdTeTBuMDhtbTFvUm9XYjZTd3lvSGVR?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):系统升级公告，产品功能更新信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-18-huawei-022
+  date: 2026-07-18
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "HUAWEI ADS 5[2026年4月发布的华为乾昆智驾系统]"
+  quote: "HUAWEI ADS 5[2026年4月发布的华为乾昆智驾系统]"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTFBtOFN4M1UydkNwUHBqd3hDaGJGem5kVFd5QlBLS1IxdUVQSlZTYnV0bTJudlg4QTVKQXlJRWZBWjVMU1VWYVRGMWs1U3lDUTRxMjUzWFM4MTJmQmZmTmFvUksycThoUXkzZ01mMGdNYnlpZm9pM0ViM01LbnA2dw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):华为智驾系统产品发布信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

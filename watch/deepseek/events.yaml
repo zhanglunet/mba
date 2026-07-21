@@ -294,3 +294,139 @@
   source_type: media
   note: "LLM 预分类建议(high):融资完成、估值提升、大型机构参投，重要融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-20-deepseek-019
+  date: 2026-07-20
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek估值到底多少？三只A股公告数据“打架”"
+  quote: "DeepSeek估值到底多少？三只A股公告数据“打架”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qNnl0ZGNWbGhXZnNZVzYyOXVwUGcwRHZlWG9Udi1OYTRnUWx6Wk5fTVN5Nm1RakJuMFhjTE5BaHRHTjJkYjNTU2J0REwyZGVqZUY2SDh1UGRQQkZvWG4xUzlB?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):估值数据矛盾，涉及信息透明度问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-020
+  date: 2026-07-20
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek将上市！梁文锋身价2440亿元，成全球AI新首富"
+  quote: "DeepSeek将上市！梁文锋身价2440亿元，成全球AI新首富"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE9SVFBwT0dwY1g3TnhDalgwSXFaSkdJS25lT1NsQllQM1ZrX0dTZFZqOWY1NVd4QzhwVGRfMXBoYXFTaEo0am9nN1FGdDhMalk?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO传言+创始人身价排名，可信度待验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-deepseek-021
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek估值，被一家安徽箱包公司给全部暴露了"
+  quote: "DeepSeek估值，被一家安徽箱包公司给全部暴露了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1HMUZZS0FwNnA0SVFOODdPamJqYTk5UDM3NFVMazliSjJrN3NtMndYQVMtTjNabC1MYTVpaDVZSXE2WkpNVE8yM1FUejMyQ3p4WWRWaFZjMU8tRVYxSUktY1ln?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):估值通过第三方公告意外披露，信息透明度事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-022
+  date: 2026-07-20
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "传DeepSeek启动IPO工作 目标明年上市？CEO梁文锋却曾称坚决不融资"
+  quote: "传DeepSeek启动IPO工作 目标明年上市？CEO梁文锋却曾称坚决不融资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRGJUWUQxQTlSeHMtVmFpclk4ZDFxbkQ5T3BZZDhIMDJjN1U1WHh2c3Z4NV9yMTYtVFJ2VnFfZG9RVlBUMk94VEhtZUNGa1JMMW1uY21nZWY4ZUJQV3lCVnBOaU9fWVlBSUV5bXRnc2VhT2phWWVsTXNiZldlbnBDVnFwZTZqRDY4T2c0?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO传言与CEO历史言论矛盾，策略转变信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-023
+  date: 2026-07-20
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek真实估值浮出水面？"
+  quote: "DeepSeek真实估值浮出水面？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAJBVV95cUxQWnBhUVJZWlYzWkwtcU8tREM0ak4xRFRXU2dFeWtNc0FndFFESWIyMWJjOTdmdGM4MXB0ZW9sMlhIaXNNU3RIT2c2X2xxV0U3S251STZHQTJ2UEtnWmJBY2tBZ1hKc3h0TEg4T3hOamFjOEFScWw0cGh4UEw2bEhaakxyT29ILVktd2ZVWDVSRl9pUGhRTm03c0ZPamNiNzNpeTJ2SXQyaEl3bV9GRER6MFVOWFB1U3BJSEt6TEdhUGhDNUdnXzRtMlFEUGdSVVlZcG0xN3JJbVU2WkwzQnl6OUZ4U2NNdVozRVFMdE9SRUtyTVRkTkJLQkVTOUJUYjNMMEpQd29TVTIwcjBnUXVyY0dGNVZPQXVjYXV0S3lsZVVRX0dvZXhHQ0xOVGk?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及DeepSeek估值信息，具有财务舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-024
+  date: 2026-07-20
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "吊打长鑫参股方华安证券？DeepSeek启动IPO A股唯一参股方实锤"
+  quote: "吊打长鑫参股方华安证券？DeepSeek启动IPO A股唯一参股方实锤"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE1ILXpHSkVSQm1MZmJNTjlNc1ljaUktc1FPMzZuMkhtRnFRMGoxTExzbzcxRXVFVDIzb1JuSGtJTUJZdjdJRERXakVwUHN3bTczMW5aVWx2Tll4ZnNhaW16OWt1ZGh5dmRGRHI4Mm5n?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及IPO融资与参股方信息，但标题党风格，需验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-025
+  date: 2026-07-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "凯文·凯利对话彭文生：AI投资存在“必要泡沫”，中国开源模型有独特优势"
+  quote: "凯文·凯利对话彭文生：AI投资存在“必要泡沫”，中国开源模型有独特优势"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxOdy1taVlnV2ZfYlYtbUpHSjk1SEdqT01wT0dhZU5pV0g0YVBtZUc1elplSTJkdUtZUTNxVjdVcG11eHNRa0NCQmJRMF9lOUhvNDZEc1JaaGpoS2xXTlpFQ0J4R2ZUWjlFS1AyY1k4ekNJQnA1a3hUUU1mTEt5eGFNREFmVjJ2Y0JPMjFhYkZFTVZOSldscUl0VjcxTXkwazVraXk2X3RTcw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):业界人士对DeepSeek开源模型优势的认可评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-deepseek-026
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "押中Kimi、DeepSeek，IVD龙头跨界成风投？九安医疗又盘中涨停，上半年归母净利润预增超200%"
+  quote: "押中Kimi、DeepSeek，IVD龙头跨界成风投？九安医疗又盘中涨停，上半年归母净利润预增超200%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1hOVNSN0JoSXo4NTNxU21WQXBrZWF2T2M1aUZnTWFMZGIxeXozZV9TcTRpSmFwVWpIVjJEMU5BWEFjZnVxUkxBVEpHdHVGNjZ5aXFOSlFqUHN2TkxYYVRjMWF3?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek作为投资标的被关联，涉及生态参与者表现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-deepseek-027
+  date: 2026-07-19
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Deepseek完成首轮融资：估值超3500亿 梁文锋个人持股31%"
+  quote: "Deepseek完成首轮融资：估值超3500亿 梁文锋个人持股31%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxONDdoUFd3WFdWUUNRaHpCQVFZS0ZBZU5lUVgySWdMTGhDZFpfYmpKZWl5N2xiSGhDNlZDMmtGTXJ0TUJXd1FmUDhyUF9wTy0xeHBycFg1dHNwcnRhSVBoa2QtMzczVkpIYXBFT25iM2VWOVRUNklpU1pZN1ZxOS00VEF1WGdyYTZwUXFOVg?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值与创始人持股信息，重大财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

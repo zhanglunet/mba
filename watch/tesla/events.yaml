@@ -246,3 +246,94 @@
   source_type: media
   note: "LLM 预分类建议(high):特斯拉进入印度市场重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-20-tesla-016
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉给小孩做了辆没AI的脚蹬车：200刀，卖爆了"
+  quote: "特斯拉给小孩做了辆没AI的脚蹬车：200刀，卖爆了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE42XzQwUmQzejNkUlFIZ2ZSTjBqQ05vYW54RXg1UEtDb0dSNkRKalE3U2RsTGNlY0M0ZkczdFZEQmd2emZUVzZJdjExYjVQdw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉儿童产品销售热点，品牌延伸。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-tesla-017
+  date: 2026-07-21
+  dim: W4
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "Model S自动驾驶致路人死亡特斯拉被判赔2.4亿美元三州总检察长要求撤销判决- Tesla 特斯拉"
+  quote: "Model S自动驾驶致路人死亡特斯拉被判赔2.4亿美元三州总检察长要求撤销判决- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nV2x5ZkNCVXBzU0NZZTN6MzNaeWVaUFo0aElWbGszTkFMMHk3RnRWdEhiWjdJMVBpNlI2ME1INzM1Sm1mS3dNUEV3MjdBUmhiNlRPMFNrNW9fWlp5clhNVg?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):自动驾驶致死赔偿案，重大法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-tesla-018
+  date: 2026-07-20
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉计划提升德国工厂产能"
+  quote: "特斯拉计划提升德国工厂产能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE5iaHpNMlk4aFNjRVNKWGlxYXo2ekJZLUdEaWt0WXBtQUkxZVZIY3RGS1NnVHYtcDYwVVVUOV9hWEpRZkRwUVkzQWhubDVpanU5NGRQLWVZM2I0VnRhMFE?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):产能扩张战略公告，运营重要信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-tesla-019
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Your Tesla Will Remember How You Drive -- Barrons.com"
+  quote: "Your Tesla Will Remember How You Drive -- Barrons.com"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiywFBVV95cUxOamNrVE83V3NBMWFRRlJ4RzFsV3JPYjN1ZkdoRmVqSzhsam9NY3g1OXVFNExDNkFIR04yYkpKQTRRZzFZVExkdlpKUk5XYWlXNUFxVlRZTVh4QjRXYnFwSTR2TVVhZTFKLVpSU2lwa1ZBT0lOVHZvTktmMW9zT2lfbmtHZHNuQ3NNckt3ZVBpRjBFRU9qcjZud1M5R1ViLUN6b2gyS1NYREkzaFRqZDU0SlV4WFVlejBITWNsRDFGTVBSMldXYk55dHZhcw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD功能特性报道，产品创新信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-tesla-020
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克：特斯拉FSD会模仿你的驾驶风格越开越像自己开- Tesla 特斯拉"
+  quote: "马斯克：特斯拉FSD会模仿你的驾驶风格越开越像自己开- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkUklDSldFZ2NOU251ZVE3VVc0TVNKLUtYTnllVlMxc3FyczNqNWNzRE9OeElPX3J6N0wyOTRvMFh0WmNQN1FKZWRSd2R0TktJcGV3aXliNkFjSmhZcGQ1Wg?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克FSD个性化功能声明，产品亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-tesla-021
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD可个性化调整了 马斯克称特斯拉FSD会模仿驾驶风格"
+  quote: "特斯拉FSD可个性化调整了 马斯克称特斯拉FSD会模仿驾驶风格"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxNWm5QZTZ1N0FMYXhQVzZDSHZzbHpoWl83a1lET0VpRzBzLWhHX2VLWDNzWC1vZ05odlBuN3o0YmxmbTlxXzlOSmlZd3dsOXB2bmh2YXE1bW9qcGpZcG1KbklZOWZhSUloVjNEdUZ1ZHJ2Y0JKQk80a0REX3Y3UmhnOWV1eUdnWXpUNFNSSEdkUklQVzNYNWZZ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD个性化功能更新，产品创新亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

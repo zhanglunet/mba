@@ -310,3 +310,139 @@
   source_type: media
   note: "LLM 预分类建议(high):多国服务涨价,全球定价策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-21-apple-020
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果iOS 27开发者预览版Beta 4发布：国行iPhone期待的Siri AI继续缺席"
+  quote: "苹果iOS 27开发者预览版Beta 4发布：国行iPhone期待的Siri AI继续缺席"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPM3JVM0NaVVVuOTJLNDYyTVpualJ3cktvWmN1R2p6ZjI5c2hIUXNQOVM2VmJ6UjlnYzNyR3Y1Nmx3cFk3SEZ1TkNOaDlBenFLRzl3U3kyOXFFaFpyWjJ0M3JrbVNDME9oV293aGZyMW1EdVg1eUpYS294NjFuN0x3LWo1Snp5M3pqbHp2TjRVRGZ4NmJuc0tpRjlzSm0yWHJjYVBkOWZQUQ?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):国行Siri AI缺席，用户体验差异。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-apple-021
+  date: 2026-07-20
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果 Apple Store 西安万象城零售店完成工商登记注册"
+  quote: "苹果 Apple Store 西安万象城零售店完成工商登记注册"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixwJBVV95cUxQTTZReVRkZU9FdFNPUVZEd2M0STh5bUpzZV9WX3k0THhyTjVYNHpUTThsZlJrVmVUNFVXNDlzNkdkYUF2OVRuTlhSbDV1ZEVqZjV3SHk4V2xPWkMwcVk0YmhGb1o5ZXRNMnIwOEZYWTlBVzA0bXV6M2pndmVhSFl5UldiREZ0eERIQVAyWWtPQk9ybXNQcXYwbndIN1B3ekJBZXFfWDljRzFQbjNnX1ZqZVRrc05EMWtrXzNEc0VESVpmdUlEMHRRNFc2ckRxS2d4QW93MzNfUndHZkRRMVdXRzZicnFYWUh5YWw1akZuYnNhaUUyRzMxdGRQOXhMTkZIekdoRWlvSGw5NTdUTkVQYVhJZnB3NUNhSjJNRnRKR3VIam41MllnczF6MEV2bXdkalM2REVjM1hDdkNtLUhWOXcyTjdEN00?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):零售店扩张，商业进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-apple-022
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果发布iOS 27 beta 4：Apple TV应用新增剧集自动下载功能"
+  quote: "苹果发布iOS 27 beta 4：Apple TV应用新增剧集自动下载功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUSFhuQ2plVFMzaDJZeFpGU242YVdrZkFkZzY3a0E5Vkowb2ZhOFhhY3BsNDFWc20zS0xFNDMzZXVtUXY5ZldRazdCb2NCU2xId2tqdEVFUmpjUEVjeEh2T1RR?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):系统功能更新，产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-apple-023
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果 watchOS 26.6 RC 发布|Apple Watch|iOS|Apple|升级|版本号_手机新浪网"
+  quote: "苹果 watchOS 26.6 RC 发布|Apple Watch|iOS|Apple|升级|版本号_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1NdXZ0MW5KeXNuYXFCbnZBcGdOUDVGeXF6SmRva0RjQS1DSWd2TFhPZEVFYXJlV1ppTzBBN1VjTjNyMFkzOEZuS1h3UUlqd25VcDlZd2ZaSTMtTDBSMF9UcTRvQV9tOURCQndmYmpRTHJMUV9MUWg2cVRvU2lwNUk?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):系统版本发布，技术动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-apple-024
+  date: 2026-07-21
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "三星在美国推出首张信用卡，与Apple Card正面交锋"
+  quote: "三星在美国推出首张信用卡，与Apple Card正面交锋"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1uQ09xOTBUQXBSQjRiNWJTemNNQ2pPQzczRXd0SUxwUy1XSkR0Y1dwX0RqTXUwRlRuT05JUzAta2ktc3ljME1fdktjM1lCdXBlWERqdnExX2dnN3VUUEdsb1p3?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):竞争对手推出同类产品，市场竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-apple-025
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果 iOS/iPadOS 26.6 RC 发布|iPhone|IT之家|macOS|Apple|升级_手机新浪网"
+  quote: "苹果 iOS/iPadOS 26.6 RC 发布|iPhone|IT之家|macOS|Apple|升级_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi_wFBVV95cUxOZzh1WEJFQm9Hd2RFYzdFVFR2TUZjSlJOVVVwbVc1ZW53M21LQ3k4di1GSGhvWjUzUERiWFpOcHZRMVFkZ3J2LWxCNzVudUZmSTJobDJjdlUwM0t2cV9BTXJnRHFWWkh4WmhJUUN4LTREdmlGeUh4OTdFX0g1TGVTcDdtNy15QkxxSVhySWhSUTdadmtTUGhnVDRwWlpUOUhiU0w5MTloTE8ycC1YanF6ZGtfNG5PQm10RHJtbmRia3FBelJxV2c1SXFDNjAtZ1ZIMW1xVzg5UndwU21oeVVMTk4tSEZDdnJvNzdFOHJFTUNfZ0dKcnFVOVFSSG9SYmM?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):系统版本发布，技术动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-apple-026
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果 macOS 27.0 开发者预览版Beta 4 发布|Apple|版本号|机器人|固件|测试版_手机新浪网"
+  quote: "苹果 macOS 27.0 开发者预览版Beta 4 发布|Apple|版本号|机器人|固件|测试版_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAJBVV95cUxOdUVRTzlwRzFPaWpHZ1U1OFpjY2R3cHJJaHZad1duNHlUQnBITkUxTjdneVBhRnBJTVJkUFctc1VPZHhqZjRMX2V5cFd1THJ1YmhKMHVZRkptSVl6cE5oa0VfN05USnBXaFJvOTdyb2x0V1pNMEdaTnN0dnRZSkpVVUdST2h4dnlpdWNJZnNDR1NxMkhLWHR1MmhFa21uTkRJTHNGTER3SEhBaEdnUkdka2FGSEFhZm5JbkVrQTdOQktueGhSZ1o2ZURrXy1xRHV3SnBTWEc3ZjBfNXo1TnlwcWhEd2NYTFRMLUM5aDYwYzhOUmZ3WkFfcWttcGlGRTBDSlJOMHo2anI?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):系统开发版本发布，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-apple-027
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苦等两年，国行iPhone终于能用上AI了！苹果Apple智能牵手阿里"
+  quote: "苦等两年，国行iPhone终于能用上AI了！苹果Apple智能牵手阿里"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5SQ21QVWtwMkl0QXlORVVXY2pmRjllMlpXaFlUOGpXbmllcTNkZGdRV0ZGYlRzVEVwRHZQOER0dng2MEh4Y3ZsTmJHRGxPWmt5M2IxQk52M3Q2bGc0MkE3UkFENzA4aXNrWFdfMTJQUG5iZw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):国行AI功能上线，重要产品突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-apple-028
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果 visionOS 27.0 开发者预览版 Beta 4 发布"
+  quote: "苹果 visionOS 27.0 开发者预览版 Beta 4 发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi-AFBVV95cUxOMWFoejV3ejNFRWpGVDlFWXdHZ0ZUc0JNc3JyZmtXanoyOEJLZ05oZldXTjFvaW5ITWluMEJlcmNxQnRYVXA0WHMydy1ZaEk0eVhfdkVqcWdfZi1hSmIwcWhpcnZJd0hvNVZrVDJWdy03Q3ZXSmI5RnNmZDZVS1hjcmxKSjVFN0h6dVVWOWpnV2g0bUtaOTM3cmhMNFJQQlJiQU44NUhScnl5RnMwTXR6dFB0aktBTWpfRklNOEJISzQ2RTl6dHZnTjRnNUpkR3U3bW5yaVlOOE9JMk9oQlNVaVRZdnptZERlNGNVbDRJMUpVVTZGSU0zSw?oc=5
+  fetched_at: "2026-07-21T05:31:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):系统开发版本发布，产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
