@@ -70,6 +70,7 @@
 
 # ── 前台 triage 采纳折入(7 条)──
 - id: 2026-07-16-deepseek-005
+  consumed_by: v3
   date: 2026-07-16
   dim: W1
   severity: P1
@@ -85,6 +86,7 @@
   note: "LLM 预分类建议(high):融资估值与股权结构，重要财务信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-deepseek-006
+  consumed_by: v3
   date: 2026-07-16
   dim: W2
   severity: P1
@@ -100,6 +102,7 @@
   note: "LLM 预分类建议(high):融资估值重大进展，直接反映品牌商业价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-deepseek-007
+  consumed_by: v3
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -115,6 +118,7 @@
   note: "LLM 预分类建议(high):首轮融资完成，涉及多家A股参股方，重要融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-deepseek-008
+  consumed_by: v3
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -130,6 +134,7 @@
   note: "LLM 预分类建议(high):融资估值确认，后续融资计划，重大商业进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-deepseek-009
+  consumed_by: v3
   date: 2026-07-18
   dim: W5
   severity: P1
@@ -145,6 +150,7 @@
   note: "LLM 预分类建议(high):披露参股上市公司名单，涉及生态关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-deepseek-010
+  consumed_by: v3
   date: 2026-07-17
   dim: W5
   severity: P1
@@ -160,6 +166,7 @@
   note: "LLM 预分类建议(high):具体上市公司参股信息，估值确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-deepseek-011
+  consumed_by: v3
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -176,6 +183,7 @@
 
 # ── 前台 triage 采纳折入(7 条)──
 - id: 2026-07-19-deepseek-012
+  consumed_by: v3
   date: 2026-07-19
   dim: W1
   severity: P1
@@ -191,6 +199,7 @@
   note: "LLM 预分类建议(high):DeepSeek融资估值曝光，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-deepseek-013
+  consumed_by: v3
   date: 2026-07-20
   dim: W1
   severity: P1
@@ -206,6 +215,7 @@
   note: "LLM 预分类建议(high):DeepSeek首轮融资确认，估值3500亿，创始人持股披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-deepseek-014
+  consumed_by: v3
   date: 2026-07-19
   dim: W2
   severity: P1
@@ -221,6 +231,7 @@
   note: "LLM 预分类建议(high):DeepSeek V4新版本发布时间表，产品路线图信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-deepseek-015
+  consumed_by: v3
   date: 2026-07-17
   dim: W1
   severity: P1
@@ -236,6 +247,7 @@
   note: "LLM 预分类建议(high):DeepSeek融资参股方名单披露，涉及多家上市公司。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-deepseek-016
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P2
@@ -251,6 +263,7 @@
   note: "LLM 预分类建议(high):DeepSeek创始人梁文锋投资动向与融资后资本运作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-deepseek-017
+  consumed_by: v3
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -266,6 +279,7 @@
   note: "LLM 预分类建议(high):融资估值信息通过上市公司公告披露，具有新闻价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-deepseek-018
+  consumed_by: v3
   date: 2026-07-17
   dim: W2
   severity: P1

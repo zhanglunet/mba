@@ -1,20 +1,42 @@
+# v4 (2026-07-20) — EVOLUTION：在 v3 PANEL-MERGE 的 vc-cn 活跃面板上做 watch 事件流驱动的 delta。
+#   179 → 181（7.16 → 7.24）：有望首个季度盈利(Signal +0.2)+ xAI 22万GPU/Meta算力(Leverage +0.2)
+#   各答朱啸虎两条结构质疑,朱啸虎 31→33;竞争(Qwen3.8 Max/Kimi K3)与口碑摩擦按住 Category/Identity。
+#   vc-en 仍为 v2 参照(190/7.60),不重评。消费 watch anthropic 27 条事件。
 panel: vc-en
 locked_at: 2026-06-25
 mba_version: 0.4.2
-published_at: 2026-07-11
-version: v3
-mode: panel-merge
-score_total: 179
+published_at: 2026-07-20
+version: v4
+mode: evolution
+score_total: 181
 score_max: 250
-score_normalized: 7.16
+score_normalized: 7.24
+active_panel: vc-cn
 compared_panel: vc-cn
-compared_panel_total: 179
+compared_panel_total: 181
 reference_panel: vc-en
 reference_score_total: 190
 reference_score_normalized: 7.60
-prev_version: v2
-prev_score_total: 190
-prev_score_normalized: 7.60
+prev_version: v3
+prev_score_total: 179
+prev_score_normalized: 7.16
+history:
+  - version: v1
+    published_at: 2026-06-26
+    score_total: 191
+    score_normalized: 7.64
+  - version: v2
+    published_at: 2026-07-10
+    score_total: 190
+    score_normalized: 7.60
+  - version: v3
+    published_at: 2026-07-11
+    score_total: 179
+    score_normalized: 7.16
+  - version: v4
+    published_at: 2026-07-20
+    score_total: 181
+    score_normalized: 7.24
 overrides:
   add: []
   drop: []

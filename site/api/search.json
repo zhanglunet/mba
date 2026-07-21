@@ -4,8 +4,8 @@
     {
       "type": "report",
       "slug": "lenovo",
-      "title": "联想集团 · v2",
-      "text": "引擎升级全量重审(50 分制→250 分制)撞上联想「史上最好的一年」:FY25/26 营收 831 亿美元(+20%)、AI 收入 +105% 占 33%、央采标段第一,Signal 均值 6.2 成全卷 最强;但「AI PC / Hybrid AI / Claw」三个词仍是借的、Qira/天禧中外双名再添主语 分裂,Category 3.0 / Identity 3.2 仍是结构病。官方公告首次写 \"maximize value per token\"——v1「红利不归联想」共识出现第一个反向信号,傅盛认方向、李可佳不认成色。 119/250 · 4.76/10(v1: 22/50 = 4.40,归一化同尺度可比)。",
+      "title": "联想集团 · v3",
+      "text": "v2 之后一个月,联想又出几件可验证的好事:首个国产 DeepSeek 一体机发布当日股价 涨近 5%、Panther Lake 联想全球首发(英特尔 CEO「交给联想了」)、AI 服务器「第二 增长曲线」——Leverage 5.4→5.8、Signal 6.2→6.4。但这些全没碰到 v2 诊断的两块结构病: DeepSeek/Panther 又是借来的词根、天禧/Qira 双名照旧,Category 3.0 / Identity 3.2 原地不动。克制 +3:财报二次曝光不重复计价、券商观点只给方向价。122/250 · 4.88/10 (v2: 119/4.76)。",
       "url": "/reports/lenovo/",
       "api_url": "/api/reports/lenovo.json"
     },
@@ -20,8 +20,8 @@
     {
       "type": "report",
       "slug": "anthropic",
-      "title": "Anthropic · v3",
-      "text": "PANEL-MERGE v3（首个 --panel-merge 跨面板对比）：同一份简报由 vc-en(硅谷 VC)与 vc-cn(中国 VC)独立打分。两面板方向惊人一致——没有一个镜头均值差达 1.5(最大 0.8)； vc-cn 系统性偏严 −2.2(35.8 vs 38.0/50)集中在 Leverage/Identity。两面板共识裂缝重合： Signal 全 10 位评委齐打 gross/net 折价、Identity 同为最弱镜头。vc-cn 179/250 · 7.16； vc-en 参照 190/250 · 7.60。",
+      "title": "Anthropic · v4",
+      "text": "EVOLUTION v4（vc-cn 活跃面板 · watch 事件流）：Anthropic 最浓的一个消息窗（估值9650亿超OpenAI、 Fable 5、xAI 22万GPU、有望首季盈利），恰好给 vc-cn 最低分评委朱啸虎的两条结构质疑各交第一份答卷—— 「有望首个季度盈利」(008) 答\"单位经济洁净度\"→ Signal 7→8；「xAI 22万GPU+Meta算力」(025/007/014) 答\"三云单点故障\"→ Leverage 6→7。但答卷都是\"有望/未签\"、竞争同时加剧(Qwen3.8 Max/Kimi K3)、口碑 摩擦兑现(MCP省钱/权限调整/停研争议)，其余全 ↔。179→181(7.16→7.24)，朱啸虎 31→33，组内极差 7→5。 vc-en 参照 190/7.60 不变。",
       "url": "/reports/anthropic/",
       "api_url": "/api/reports/anthropic.json"
     },
@@ -44,8 +44,8 @@
     {
       "type": "report",
       "slug": "kimichat",
-      "title": "Kimi / 月之暗面 · v2",
-      "text": "EVOLUTION v2（K3 驱动，watch 事件流）：v1 的招牌是 MBA 罕见的「品牌>业务信号」（Identity 7.5 领跑、 Signal 6.3 垫底）。开源 K3 拿到「前沿级结果」、被 Reuters 称「全球最大开源模型逼近美国前沿」、以约 1/3 token 成本逼近前沿基准——Signal 6.3→7.8（↑1.5，全卷垫底跳到并列第一）、Category 6.8→7.8（↑1.0 开源前沿定义者）、Leverage 6.0→6.8（↑0.8，周鸿祎守 5：声量≠分发）。业务信号第一次反超品牌，v1 判定被 翻面。137→150（6.85→7.50，↑0.65）：补的是「业务信号」旧账，分发规模与品牌身份的账留给商业化。",
+      "title": "Kimi / 月之暗面 · v3",
+      "text": "EVOLUTION v3（watch 事件流）：K3 发布已在 v2 计满（Signal ↑1.5、Category ↑1.0、Leverage ↑0.8）——本轮 那批「K3 登顶全球最大开源模型/性能接近顶级」是同一次发布的多家转载，确认不重复计价。新事件里的正向 （赴港上市、火爆到暂停 C 端、美国智囊正评）与负向（涨价+承认不如顶级、阿里 Qwen3.8 直逼）净对冲， Signal/Category/Leverage 全 ↔。唯一未被同轴正向抵消的是「Kimi 自称『我是Claude』」这条朝向原创性/身份 的负向证据——傅盛 Identity 7→6。150→149（7.50→7.45），全套重审唯一净下调，克制到底：格局未动、身份露缝。",
       "url": "/reports/kimichat/",
       "api_url": "/api/reports/kimichat.json"
     },
@@ -68,8 +68,8 @@
     {
       "type": "report",
       "slug": "meituan",
-      "title": "美团 · v3",
-      "text": "EVOLUTION v3:监管按停外卖大战 + 2026Q1 环比减亏 96 亿(净亏收窄至 68.27 亿,营收 +5.6%) 把 v2 的亏损谷底叙事翻回方向,但净亏仍在、即时零售又开烧。Signal 5.6→6.0 成唯一移动维度且 五人首次同分——回分的正是 v2 砍得最狠的无冲突空头朱啸虎/徐新(各 +1),两位★评委与雷军按兵 不动。总分 168→170(6.72→6.80,↑0.08):这一格是「方向」的价,扭亏的价留给 Q2。",
+      "title": "美团 · v4",
+      "text": "EVOLUTION v4:食安「一镜到底」验真把 v3 雷军挂的账(放心外卖是制度还是公关)变成可验证的产品 动作,骑手等灯停表/骑士节尊严再添身份暖色——雷军 Identity 6→7,兑现半格。但同一窗口淘宝 07-20 又开打(证伪麦格理「竞争缓解」上调)、员工《置身团内》困境长文、Q1 同季亏损重复,Signal/Leverage 净对冲 ↔。全套重审最克制的一格:170→171(6.80→6.84),只在有产品落地的 Identity 上动半分。",
       "url": "/reports/meituan/",
       "api_url": "/api/reports/meituan.json"
     },
@@ -124,16 +124,16 @@
     {
       "type": "report",
       "slug": "deepseek",
-      "title": "DeepSeek / 深度求索 · v2",
-      "text": "EVOLUTION v2(watch 事件流):v1 的最弱项是 Leverage(7.0)——先进芯片禁运的结构约束。本轮自研 AI 芯片(降低英伟达依赖、消息令英伟达股价承压)直接对冲这条约束,Leverage 7.0→7.8(↑0.8);叠加 据报 74 亿美元融资 + 拟上海上市,一家\"不融资\"的公司拿到资本定价,Signal 8.2→8.8。200→207 (8.00→8.28)。周鸿祎守 8(开源+效率本就是护城河,自研芯片只再确认);全为媒体口径、未落地,评委 只给\"方向\"的价。补的是 v1 最担心的杠杆天花板。",
+      "title": "DeepSeek / 深度求索 · v3",
+      "text": "EVOLUTION v3(watch 事件流):v2 据报的那轮融资本轮落地——完成首轮融资、估值约 3508 亿元、 腾讯/网易/宁德时代等具名参投、梁文锋持股 31% 登顶大模型首富。确认 + 具名 + 估值把 v2 留的 \"报道 vs 落地\"折价收掉,朱啸虎 Signal 8→9,五人收敛全 9(Signal 8.8→9.0)。其余 ↔:融资 v2 已 按 Signal 计价不重复挪 Leverage,V4 满血版据报将推但未 benchmark 不进 Category。207→208 (8.28→8.32),全套重审最克制的一格——同一轮融资 v2 已计方向,v3 只补最后一格。",
       "url": "/reports/deepseek/",
       "api_url": "/api/reports/deepseek.json"
     },
     {
       "type": "report",
       "slug": "nvidia",
-      "title": "NVIDIA / 英伟达 · v2",
-      "text": "EVOLUTION v2(watch 事件流):v1 唯一实质分歧在 Signal(8.2)——蒂尔独疑对华出口管制。本轮该风险 现实兑现:对华芯片销售停滞、华为等本土领先、H200 出货\"极少\",Signal 8.2→7.8(↓0.4);但同期日本 国家级 AI 基础设施 + Jetson Thor 机器人开出新战场,Leverage(9.6)/Category(9.4)净对冲 ↔。 222→220(8.88→8.80),克制下修:护城河没动,动的是被蒂尔点名的中国这一块——他守 7 不动,是唯一 提前定价者。这一格是\"版图轮动\"的价,不是\"结构衰退\"的价。",
+      "title": "NVIDIA / 英伟达 · v3",
+      "text": "EVOLUTION v3(watch 事件流):一次\"版图轮动、净对冲\"的重审,分数守持 220/8.80。正向——黄仁勋访日、 NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施 + Together AI(英伟达为股东)融资,主权 AI 是 巨量新需求,把 v2 丢掉的中国流失部分对冲回来;负向——RTX 50 SUPER 因显存太贵叫停出货 +「大客户转向、 CUDA 垄断崩塌」叙事。Leverage 已在 9.6(近满)不越顶,CUDA 侵蚀是未兑现 watch 项、RTX50 属消费级小盘, 正负净对冲,5 位评委均不动。220→220(8.80 ↔),克制守持:主权 AI 落地为早期、CUDA「崩塌」为叙事口径, 只作方向观察不改分,留待兑现再重估。",
       "url": "/reports/nvidia/",
       "api_url": "/api/reports/nvidia.json"
     },
@@ -156,8 +156,8 @@
     {
       "type": "report",
       "slug": "microsoft",
-      "title": "Microsoft / 微软 · v2",
-      "text": "EVOLUTION v2(watch 事件流):v1 唯一分歧在 Signal(8.25)——蒂尔独疑\"AI 领先借自 OpenAI\"。本轮 NYT 修订对 OpenAI 与微软的 AI 版权诉讼,把这层依赖变成具体法律敞口;叠加一轮(<2.5%)裁员,Signal 8.25→7.75(↓0.5)。Leverage(9.5)因 Pecos 算力扩张 vs 诉讼悬顶净对冲 ↔——最深护城河没动。173→171 (8.65→8.55),克制下修:动的是蒂尔早点破的那层\"AI 自有度\"。蒂尔守 7 不动,从少数派变先知。",
+      "title": "Microsoft / 微软 · v3",
+      "text": "EVOLUTION v3(watch 事件流):延续 v2 的温和下滑,最深护城河 Leverage 9.5 未动,唯一移动仍在 Signal。 首次自愿退休计划(AI 转型下再一轮人力重塑)+ LeakWatch 漏洞洪流波及游戏/BIOS/固件 + 800 亿投资在 \"游戏结束\"前重组——连续裁员 + 产品安全洪流叠加,格雷厄姆 8→7(craft/产品质量信号被漏洞洪流削), Signal 7.75→7.5(↓0.25)。Origin/Category/Leverage/Identity ↔:安全部门改革为传闻、投资重组方向未定。 171→170(8.55→8.50),克制下修:退休计划规模有限、漏洞已在修复,只给方向价一小步;安德森/蒂尔/纳瓦尔守分不动。",
       "url": "/reports/microsoft/",
       "api_url": "/api/reports/microsoft.json"
     },

@@ -1,17 +1,17 @@
 panel: vc-en
 locked_at: 2026-07-16
 mba_version: 0.4.5
-published_at: 2026-07-18
-version: v2
+published_at: 2026-07-20
+version: v3
 mode: evolution
-previous_version: v1
+previous_version: v2
 score_total: 220
 score_max: 250
 score_normalized: 8.80
 reference:
-  version: v1
-  score_total: 222
-  score_normalized: 8.88
+  version: v2
+  score_total: 220
+  score_normalized: 8.80
 history:
   - version: v1
     published_at: 2026-07-16
@@ -21,8 +21,12 @@ history:
     published_at: 2026-07-18
     score_total: 220
     score_normalized: 8.80
+  - version: v3
+    published_at: 2026-07-20
+    score_total: 220
+    score_normalized: 8.80
 overrides:
   add: []
   drop: []
-# 黄仁勋(NVIDIA 联合创始人)是 MBA 评委(jensenhuang),但不在 vc-en panel,
-# 故本审计无 --panel-drop(self-conflict jensenhuang→NVIDIA 在含其本人的 panel 时才触发)。
+# 黄仁勋(NVIDIA 联合创始人)是 MBA 评委但不在 vc-en panel,无 --panel-drop。
+# v3 EVOLUTION 消费 watch/nvidia/events.yaml 未消费事件:日本主权 AI 对冲 CUDA 侵蚀 + RTX50 叫停,净持平 220/8.80。

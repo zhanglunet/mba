@@ -67,6 +67,7 @@
   lens_map: [leverage, category]
   note: 下一主战场(即时零售)的开销预期 —— 减亏叙事的对冲面。日期以 URL 内嵌(20260616)自证。
 - id: 2025-09-15-meituan-005
+  consumed_by: v4
   date: '2025-09-15'
   dim: W2
   severity: P2
@@ -82,6 +83,7 @@
   - signal
   note: 2025 夏季即时零售补贴战成公共舆论焦点(W2);监管约谈属 W4 另计;日期以 URL 内嵌(20250915)自证。
 - id: 2025-02-21-meituan-006
+  consumed_by: v4
   date: '2025-02-21'
   dim: W9
   severity: P1
@@ -99,6 +101,7 @@
 
 # ── 2026-07-18 从每日发现候选(PR #165)人工核验入库 ──
 - id: 2026-07-17-meituan-007
+  consumed_by: v4
   date: 2026-07-17
   dim: W5
   severity: P2
@@ -115,6 +118,7 @@
 
 # ── 前台 triage 采纳折入(8 条)──
 - id: 2026-07-17-meituan-008
+  consumed_by: v4
   date: 2026-07-17
   dim: W5
   severity: P2
@@ -130,6 +134,7 @@
   note: "LLM 预分类建议(high):美团骑手权益举措，与苏州数据对接，体现企业社会责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-meituan-009
+  consumed_by: v4
   date: 2026-07-18
   dim: W1
   severity: P2
@@ -145,6 +150,7 @@
   note: "LLM 预分类建议(high):自研无人配送车新品发布，技术创新信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-meituan-010
+  consumed_by: v4
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -160,6 +166,7 @@
   note: "LLM 预分类建议(high):与清华大学合作研究中心，学产融合战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-meituan-011
+  consumed_by: v4
   date: 2026-07-17
   dim: W5
   severity: P2
@@ -175,6 +182,7 @@
   note: "LLM 预分类建议(high):骑士节活动升级权益保障，品牌形象建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-meituan-012
+  consumed_by: v4
   date: 2026-07-17
   dim: W5
   severity: P2
@@ -190,6 +198,7 @@
   note: "LLM 预分类建议(high):高管发声骑手职业尊严，企业价值观表达。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-meituan-013
+  consumed_by: v4
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -205,6 +214,7 @@
   note: "LLM 预分类建议(high):员工发文谈公司困境，内部舆情风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-meituan-014
+  consumed_by: v4
   date: 2026-07-17
   dim: W6
   severity: P2
@@ -220,6 +230,7 @@
   note: "LLM 预分类建议(high):券商升级评级目标价，市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-meituan-015
+  consumed_by: v4
   date: 2026-07-17
   dim: W4
   severity: P2
@@ -236,6 +247,7 @@
 
 # ── 前台 triage 采纳折入(2 条)──
 - id: 2026-07-20-meituan-016
+  consumed_by: v4
   date: 2026-07-20
   dim: W4
   severity: P1
@@ -251,6 +263,7 @@
   note: "LLM 预分类建议(med):竞争冲突，需了解具体事由。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-meituan-017
+  consumed_by: v4
   date: 2026-07-18
   dim: W5
   severity: P1

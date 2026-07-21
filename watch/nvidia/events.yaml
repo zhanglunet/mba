@@ -70,6 +70,7 @@
 
 # ── 前台 triage 采纳折入(7 条)──
 - id: 2026-07-16-nvidia-005
+  consumed_by: v3
   date: 2026-07-16
   dim: W5
   severity: P1
@@ -85,6 +86,7 @@
   note: "LLM 预分类建议(high):CEO访日宣布合作，战略扩展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-nvidia-006
+  consumed_by: v3
   date: 2026-07-17
   dim: W5
   severity: P1
@@ -100,6 +102,7 @@
   note: "LLM 预分类建议(high):国家级AI基础设施合作，战略意义重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-nvidia-007
+  consumed_by: v3
   date: 2026-07-16
   dim: W5
   severity: P1
@@ -115,6 +118,7 @@
   note: "LLM 预分类建议(high):开放模型战略，日本生态合作，重要举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-nvidia-008
+  consumed_by: v3
   date: 2026-07-16
   dim: W2
   severity: P1
@@ -130,6 +134,7 @@
   note: "LLM 预分类建议(high):英伟达参与融资，生态投资信号，战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-nvidia-009
+  consumed_by: v3
   date: 2026-07-16
   dim: W2
   severity: P2
@@ -145,6 +150,7 @@
   note: "LLM 预分类建议(high):新产品发布，Jetson Thor平台扩展产品线，具体产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-nvidia-010
+  consumed_by: v3
   date: 2026-07-17
   dim: W2
   severity: P2
@@ -160,6 +166,7 @@
   note: "LLM 预分类建议(high):同一产品发布的重复报道，与第0条重复，保留作为验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-nvidia-011
+  consumed_by: v3
   date: 2026-07-16
   dim: W1
   severity: P2
@@ -176,6 +183,7 @@
 
 # ── 前台 triage 采纳折入(5 条)──
 - id: 2026-07-20-nvidia-012
+  consumed_by: v3
   date: 2026-07-20
   dim: W4
   severity: P1
@@ -191,6 +199,7 @@
   note: "LLM 预分类建议(high):产品出货叫停，涉及成本压力和供应链决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-nvidia-013
+  consumed_by: v3
   date: 2026-07-18
   dim: W4
   severity: P1
@@ -206,6 +215,7 @@
   note: "LLM 预分类建议(high):产品延期/搁置，成本压力影响产品规划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-nvidia-014
+  consumed_by: v3
   date: 2026-07-19
   dim: W5
   severity: P1
@@ -221,6 +231,7 @@
   note: "LLM 预分类建议(high):CUDA垄断地位受威胁，竞争格局变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-nvidia-015
+  consumed_by: v3
   date: 2026-07-17
   dim: W4
   severity: P2
@@ -236,6 +247,7 @@
   note: "LLM 预分类建议(high):产品线扩展，新增计算模组。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-nvidia-016
+  consumed_by: v3
   date: 2026-07-18
   dim: W4
   severity: P2

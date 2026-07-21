@@ -1,26 +1,44 @@
-# v2 (2026-07-12) — EVOLUTION · 引擎升级(50 分制 → 250 分制,0.4.3)全量重审。
-# v1 (2026-05-10) 为 MBA 第一份报告,50 分制(5 评委 × 5 镜头取均值 = 22/50 = 4.40),
-# 归一化分数同尺度可比,分制不同勿直接比总分;v1 快照见 versions/v1_2026-05-10.{html,pdf}。
-# (v1 只发布过 report.html/pdf;report.md / reviews 原稿从未落库,不回填 —— 见 v1 注记。)
+# v3 (2026-07-20) — EVOLUTION · watch 事件流驱动的 delta 重审(以 v2 为基线)。
+#   119 → 122(4.76 → 4.88):DeepSeek 一体机首发+股价+5% · Panther Lake 全球首发 ·
+#   AI 服务器第二曲线 → Leverage 5.4→5.8、Signal 6.2→6.4;Category/Identity 结构病未治,原地不动。
+#   消费 watch lenovo-004..014 共 11 条(其中 004/005 为史上最佳财报二次曝光,同一财报周期不重复计价)。
+# v2 (2026-07-12) — 引擎升级全量重审(50 分制 → 250 分制,0.4.3),22/50=4.40 → 119/250=4.76。
+# v1 (2026-05-10) — MBA 第一份报告,50 分制,22/50=4.40。仅发布 html/pdf;快照见 versions/。
 panel: default
 brand: 联想集团
 brand_slug: lenovo
-version: v2
+version: v3
 mode: evolution
-previous_version: v1
-audit_date: 2026-07-12
-published_at: 2026-07-12
-locked_at: 2026-07-12
+previous_version: v2
+audit_date: 2026-07-20
+published_at: 2026-07-20
+locked_at: 2026-07-20
 mba_version: 0.4.3
-score_total: 119
+score_total: 122
 score_max: 250
-score_normalized: 4.76
+score_normalized: 4.88
 reference:
-  version: v1
-  audit_date: 2026-05-10
-  score_total: 22
-  score_max: 50
-  score_normalized: 4.40
+  version: v2
+  audit_date: 2026-07-12
+  score_total: 119
+  score_max: 250
+  score_normalized: 4.76
+history:
+  - version: v1
+    audit_date: 2026-05-10
+    score_total: 22
+    score_max: 50
+    score_normalized: 4.40
+  - version: v2
+    audit_date: 2026-07-12
+    score_total: 119
+    score_max: 250
+    score_normalized: 4.76
+  - version: v3
+    audit_date: 2026-07-20
+    score_total: 122
+    score_max: 250
+    score_normalized: 4.88
 overrides:
   add: []
   drop: []

@@ -54,6 +54,7 @@
 
 # ── 前台 triage 采纳折入(10 条)──
 - id: 2026-07-18-microsoft-004
+  consumed_by: v3
   date: 2026-07-18
   dim: W2
   severity: P2
@@ -69,6 +70,7 @@
   note: "LLM 预分类建议(high):Teams功能增强,AI能力集成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-microsoft-005
+  consumed_by: v3
   date: 2026-07-17
   dim: W1
   severity: P2
@@ -84,6 +86,7 @@
   note: "LLM 预分类建议(high):产品生命周期管理,系统迁移政策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-microsoft-006
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P2
@@ -99,6 +102,7 @@
   note: "LLM 预分类建议(high):产品支持终止,企业用户迁移压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-microsoft-007
+  consumed_by: v3
   date: 2026-07-18
   dim: W1
   severity: P2
@@ -114,6 +118,7 @@
   note: "LLM 预分类建议(high):Windows 11新功能发布,安全性增强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-microsoft-008
+  consumed_by: v3
   date: 2026-07-17
   dim: W2
   severity: P3
@@ -129,6 +134,7 @@
   note: "LLM 预分类建议(high):开源举措,遗留产品开放策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-microsoft-009
+  consumed_by: v3
   date: 2026-07-17
   dim: W1
   severity: P2
@@ -144,6 +150,7 @@
   note: "LLM 预分类建议(high):安全策略升级,Passkey默认启用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-microsoft-010
+  consumed_by: v3
   date: 2026-07-16
   dim: W2
   severity: P1
@@ -159,6 +166,7 @@
   note: "LLM 预分类建议(high):微软推出自愿退休计划，反映AI转型下的组织重构，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-microsoft-011
+  consumed_by: v3
   date: 2026-07-16
   dim: W2
   severity: P1
@@ -174,6 +182,7 @@
   note: "LLM 预分类建议(med):市场传闻微软安全部门改革以应对AI需求，信息来源为传闻需谨慎。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-microsoft-012
+  consumed_by: v3
   date: 2026-07-16
   dim: W3
   severity: P1
@@ -189,6 +198,7 @@
   note: "LLM 预分类建议(med):微软重组800亿美元投资，标题党风格但涉及重大资本配置调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-microsoft-013
+  consumed_by: v3
   date: 2026-07-18
   dim: W5
   severity: P2
@@ -205,6 +215,7 @@
 
 # ── 前台 triage 采纳折入(5 条)──
 - id: 2026-07-19-microsoft-014
+  consumed_by: v3
   date: 2026-07-19
   dim: W2
   severity: P3
@@ -220,6 +231,7 @@
   note: "LLM 预分类建议(high):产品功能优化更新,用户体验改进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-microsoft-015
+  consumed_by: v3
   date: 2026-07-19
   dim: W5
   severity: P1
@@ -235,6 +247,7 @@
   note: "LLM 预分类建议(high):安全漏洞波及多产品线,涉及系统安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-microsoft-016
+  consumed_by: v3
   date: 2026-07-17
   dim: W5
   severity: P2
@@ -250,6 +263,7 @@
   note: "LLM 预分类建议(high):分析师认可AI领导地位,云服务需求强劲。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-microsoft-017
+  consumed_by: v3
   date: 2026-07-18
   dim: W2
   severity: P2
@@ -265,6 +279,7 @@
   note: "LLM 预分类建议(high):Teams功能升级支持AI应用,产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-microsoft-018
+  consumed_by: v3
   date: 2026-07-17
   dim: W2
   severity: P2

@@ -7,6 +7,7 @@
 # 标题逐字 curl 核对。官方稿 URL 记在 note 里,供后续出口放行后回溯。
 
 - id: 2026-05-28-anthropic-001
+  consumed_by: v4
   date: 2026-05-28
   dim: W5
   severity: P1
@@ -24,6 +25,7 @@
     anthropic.com/news/series-h(出口未放行,待回溯)。日期以 URL 内嵌(2026/05/28)自证。
 
 - id: 2026-06-09-anthropic-002
+  consumed_by: v4
   date: 2026-06-09
   dim: W8
   severity: P1
@@ -41,6 +43,7 @@
     (出口未放行,待回溯)。日期以 URL 内嵌(2026/06/09)自证。
 
 - id: 2026-06-13-anthropic-003
+  consumed_by: v4
   date: 2026-06-13
   dim: W4
   severity: P0
@@ -59,6 +62,7 @@
     (出口未放行,待回溯)。旗舰模型被监管叫停属重大监管事件,记 P0。
 
 - id: 2026-06-30-anthropic-004
+  consumed_by: v4
   date: 2026-06-30
   dim: W4
   severity: P1
@@ -75,6 +79,7 @@
     网络安全防护全球重新上线。日期以 URL 内嵌(2026/06/30)自证。
 
 - id: 2026-06-30-anthropic-005
+  consumed_by: v4
   date: 2026-06-30
   dim: W8
   severity: P2
@@ -88,6 +93,7 @@
   lens_map: [category, leverage]
   note: 与出口管制解除同日发布,主打 agent 场景性价比。日期以 URL 内嵌(2026/06/30)自证。
 - id: 2025-10-02-anthropic-006
+  consumed_by: v4
   date: '2025-10-02'
   dim: W7
   severity: P2
@@ -105,6 +111,7 @@
 
 # ── 2026-07-18 从每日发现候选(PR #165)人工核验入库 ──
 - id: 2026-07-17-anthropic-007
+  consumed_by: v4
   date: 2026-07-17
   dim: W9
   severity: P1
@@ -121,6 +128,7 @@
 
 # ── 前台 triage 采纳折入(11 条)──
 - id: 2026-07-18-anthropic-008
+  consumed_by: v4
   date: 2026-07-18
   dim: W2
   severity: P1
@@ -136,6 +144,7 @@
   note: "LLM 预分类建议(high):Anthropic销售暴增与盈利预期，重大业绩信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-anthropic-009
+  consumed_by: v4
   date: 2026-07-18
   dim: W5
   severity: P2
@@ -151,6 +160,7 @@
   note: "LLM 预分类建议(high):Claude编程能力突破，产品性能里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-anthropic-010
+  consumed_by: v4
   date: 2026-07-18
   dim: W3
   severity: P1
@@ -166,6 +176,7 @@
   note: "LLM 预分类建议(med):美政府机构合作，涉及政策与商业关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-anthropic-011
+  consumed_by: v4
   date: 2026-07-17
   dim: W1
   severity: P1
@@ -181,6 +192,7 @@
   note: "LLM 预分类建议(high):Anthropic IPO计划，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-anthropic-012
+  consumed_by: v4
   date: 2026-07-18
   dim: W2
   severity: P2
@@ -196,6 +208,7 @@
   note: "LLM 预分类建议(med):竞争压力下Claude定价调整，市场竞争反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-anthropic-013
+  consumed_by: v4
   date: 2026-07-17
   dim: W4
   severity: P2
@@ -211,6 +224,7 @@
   note: "LLM 预分类建议(med):Anthropic呼吁停止AI研究，品牌立场争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-18-anthropic-014
+  consumed_by: v4
   date: 2026-07-18
   dim: W3
   severity: P1
@@ -226,6 +240,7 @@
   note: "LLM 预分类建议(high):Meta百亿美元合作传闻，重大商业合作信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-anthropic-015
+  consumed_by: v4
   date: 2026-07-17
   dim: W5
   severity: P2
@@ -241,6 +256,7 @@
   note: "LLM 预分类建议(med):Claude模型内部机制研究发现，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-anthropic-016
+  consumed_by: v4
   date: 2026-07-17
   dim: W2
   severity: P3
@@ -256,6 +272,7 @@
   note: "LLM 预分类建议(med):Claude成本优化措施，可能影响用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-16-anthropic-017
+  consumed_by: v4
   date: 2026-07-16
   dim: W3
   severity: P2
@@ -271,6 +288,7 @@
   note: "LLM 预分类建议(high):服务中断澄清，涉及产品可用性，具体事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-anthropic-018
+  consumed_by: v4
   date: 2026-07-17
   dim: W2
   severity: P1
@@ -287,6 +305,7 @@
 
 # ── 前台 triage 采纳折入(9 条)──
 - id: 2026-07-20-anthropic-019
+  consumed_by: v4
   date: 2026-07-20
   dim: W3
   severity: P1
@@ -302,6 +321,7 @@
   note: "LLM 预分类建议(high):产品权限调整，用户体验负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-anthropic-020
+  consumed_by: v4
   date: 2026-07-19
   dim: W2
   severity: P2
@@ -317,6 +337,7 @@
   note: "LLM 预分类建议(med):模型训练方法披露，技术进展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-anthropic-021
+  consumed_by: v4
   date: 2026-07-19
   dim: W4
   severity: P1
@@ -332,6 +353,7 @@
   note: "LLM 预分类建议(med):政策松绑利好，但标题党嫌疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-anthropic-022
+  consumed_by: v4
   date: 2026-07-19
   dim: W5
   severity: P1
@@ -347,6 +369,7 @@
   note: "LLM 预分类建议(high):竞争对手重大产品发布，直接竞争威胁。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-20-anthropic-023
+  consumed_by: v4
   date: 2026-07-20
   dim: W3
   severity: P2
@@ -362,6 +385,7 @@
   note: "LLM 预分类建议(high):产品权限调整，订阅策略优化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-anthropic-024
+  consumed_by: v4
   date: 2026-07-19
   dim: W4
   severity: P1
@@ -377,6 +401,7 @@
   note: "LLM 预分类建议(high):政府支持扩张与上市计划，战略利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-anthropic-025
+  consumed_by: v4
   date: 2026-07-17
   dim: W5
   severity: P1
@@ -392,6 +417,7 @@
   note: "LLM 预分类建议(med):获得GPU资源支持，但标题真实性存疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-17-anthropic-026
+  consumed_by: v4
   date: 2026-07-17
   dim: W5
   severity: P1
@@ -407,6 +433,7 @@
   note: "LLM 预分类建议(high):竞争对手产品对标，市场竞争加剧。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
 - id: 2026-07-19-anthropic-027
+  consumed_by: v4
   date: 2026-07-19
   dim: W2
   severity: P2

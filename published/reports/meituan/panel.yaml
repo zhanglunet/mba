@@ -1,17 +1,17 @@
 panel: vc-cn
 locked_at: 2026-06-25
 mba_version: 0.4.3
-published_at: 2026-07-12
-version: v3
+published_at: 2026-07-20
+version: v4
 mode: evolution
-previous_version: v2
-score_total: 170
+previous_version: v3
+score_total: 171
 score_max: 250
-score_normalized: 6.80
+score_normalized: 6.84
 reference:
-  version: v2
-  score_total: 168
-  score_normalized: 6.72
+  version: v3
+  score_total: 170
+  score_normalized: 6.80
 history:
   - version: v1
     published_at: 2026-06-28
@@ -21,6 +21,14 @@ history:
     published_at: 2026-07-11
     score_total: 168
     score_normalized: 6.72
+  - version: v3
+    published_at: 2026-07-12
+    score_total: 170
+    score_normalized: 6.80
+  - version: v4
+    published_at: 2026-07-20
+    score_total: 171
+    score_normalized: 6.84
 overrides:
   add: []
   drop: []
