@@ -18,9 +18,13 @@ history:
     score_total: 200
     score_normalized: 8.00
   - version: v2
-    published_at: 2026-07-20
+    published_at: 2026-07-18
     score_total: 207
     score_normalized: 8.28
+  - version: v3
+    published_at: 2026-07-20
+    score_total: 208
+    score_normalized: 8.32
 overrides:
   add: []
   drop: []

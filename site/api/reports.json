@@ -302,7 +302,7 @@
         "max": 250,
         "normalized": 8.8
       },
-      "tl_dr": "EVOLUTION v2(watch 事件流):v1 唯一实质分歧在 Signal(8.2)——蒂尔独疑对华出口管制。本轮该风险 现实兑现:对华芯片销售停滞、华为等本土领先、H200 出货\"极少\",Signal 8.2→7.8(↓0.4);但同期日本 国家级 AI 基础设施 + Jetson Thor 机器人开出新战场,Leverage(9.6)/Category(9.4)净对冲 ↔。 222→220(8.88→8.80),克制下修:护城河没动,动的是被蒂尔点名的中国这一块——他守 7 不动,是唯一 提前定价者。这一格是\"版图轮动\"的价,不是\"结构衰退\"的价。",
+      "tl_dr": "EVOLUTION v3(watch 事件流):一次\"版图轮动、净对冲\"的重审,分数守持 220/8.80。正向——黄仁勋访日、 NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施 + Together AI(英伟达为股东)融资,主权 AI 是 巨量新需求,把 v2 丢掉的中国流失部分对冲回来;负向——RTX 50 SUPER 因显存太贵叫停出货 +「大客户转向、 CUDA 垄断崩塌」叙事。Leverage 已在 9.6(近满)不越顶,CUDA 侵蚀是未兑现 watch 项、RTX50 属消费级小盘, 正负净对冲,5 位评委均不动。220→220(8.80 ↔),克制守持:主权 AI 落地为早期、CUDA「崩塌」为叙事口径, 只作方向观察不改分,留待兑现再重估。",
       "html_url": "/reports/nvidia/",
       "pdf_url": null,
       "api_url": "/api/reports/nvidia.json"
@@ -356,7 +356,7 @@
         "max": 200,
         "normalized": 8.5
       },
-      "tl_dr": "EVOLUTION v2(watch 事件流):v1 唯一分歧在 Signal(8.25)——蒂尔独疑\"AI 领先借自 OpenAI\"。本轮 NYT 修订对 OpenAI 与微软的 AI 版权诉讼,把这层依赖变成具体法律敞口;叠加一轮(<2.5%)裁员,Signal 8.25→7.75(↓0.5)。Leverage(9.5)因 Pecos 算力扩张 vs 诉讼悬顶净对冲 ↔——最深护城河没动。173→171 (8.65→8.55),克制下修:动的是蒂尔早点破的那层\"AI 自有度\"。蒂尔守 7 不动,从少数派变先知。",
+      "tl_dr": "EVOLUTION v3(watch 事件流):延续 v2 的温和下滑,最深护城河 Leverage 9.5 未动,唯一移动仍在 Signal。 首次自愿退休计划(AI 转型下再一轮人力重塑)+ LeakWatch 漏洞洪流波及游戏/BIOS/固件 + 800 亿投资在 \"游戏结束\"前重组——连续裁员 + 产品安全洪流叠加,格雷厄姆 8→7(craft/产品质量信号被漏洞洪流削), Signal 7.75→7.5(↓0.25)。Origin/Category/Leverage/Identity ↔:安全部门改革为传闻、投资重组方向未定。 171→170(8.55→8.50),克制下修:退休计划规模有限、漏洞已在修复,只给方向价一小步;安德森/蒂尔/纳瓦尔守分不动。",
       "html_url": "/reports/microsoft/",
       "pdf_url": null,
       "api_url": "/api/reports/microsoft.json"
