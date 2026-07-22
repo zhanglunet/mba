@@ -106,19 +106,50 @@ def sparkline_svg(points, color, polar):
     )
 
 
-def load_watch_pending():
-    """未消费(无 consumed_by)的 P0/P1 计数 per slug(W5,docs/16)。
-    watch/ 缺失时为空 —— 徽章是加分项不是硬依赖;计数只依赖文件内容,漂移 gate 可确定。"""
-    pending = {}
+def _event_date(e):
+    """事件 date → datetime.date;解析不了返回 None(与 evaluate_triggers.as_date 同口径)。"""
+    v = e.get("date") if isinstance(e, dict) else None
+    if isinstance(v, datetime.date):
+        return v
+    try:
+        return datetime.date.fromisoformat(str(v)[:10])
+    except (ValueError, TypeError):
+        return None
+
+
+def load_watch_pending(window_days=30):
+    """滚动 30 天窗口内、未消费(无 consumed_by)的 P0/P1/P2 计数 per slug(W5,docs/16)。
+    窗口口径与 `evaluate_triggers.py`(PRD 30 天滚动窗)统一,消除「首页数全部、触发器数近 30 天」
+    的分叉(如老 P0 只在首页亮红)。**锚点 as_of = 全部 feed 里最新事件日期(内容派生),不绑
+    wall-clock today** —— 因每日 discover 喂料,最新事件≈今天,与 evaluate_triggers 的 today 实质
+    一致;而内容派生保证计数只依赖文件、`--check` 仍确定(不会随日期漂移误红)。watch/ 缺失时为空。"""
+    feeds = {}
+    global_max = None
     for path in sorted(glob.glob(os.path.join(WATCH_DIR, "*", "events.yaml"))):
         slug = os.path.basename(os.path.dirname(path))
         try:
             events = yaml.safe_load(open(path, encoding="utf-8")) or []
         except Exception:
             continue
-        p0 = sum(1 for e in events if isinstance(e, dict) and e.get("severity") == "P0" and not e.get("consumed_by"))
-        p1 = sum(1 for e in events if isinstance(e, dict) and e.get("severity") == "P1" and not e.get("consumed_by"))
-        p2 = sum(1 for e in events if isinstance(e, dict) and e.get("severity") == "P2" and not e.get("consumed_by"))
+        feeds[slug] = events
+        for e in events:
+            d = _event_date(e)
+            if d is not None and (global_max is None or d > global_max):
+                global_max = d
+    pending = {}
+    if global_max is None:
+        return pending
+    window_start = global_max - datetime.timedelta(days=window_days)
+
+    def in_window(e):
+        d = _event_date(e)
+        return d is not None and window_start <= d <= global_max
+
+    for slug, events in feeds.items():
+        def cnt(sev):
+            return sum(1 for e in events if isinstance(e, dict)
+                       and e.get("severity") == sev and not e.get("consumed_by") and in_window(e))
+        p0, p1, p2 = cnt("P0"), cnt("P1"), cnt("P2")
         if p0 or p1:
             pending[slug] = (p0, p1, p2)
     return pending
