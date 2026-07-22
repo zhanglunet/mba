@@ -430,3 +430,154 @@
   source_type: media
   note: "LLM 预分类建议(high):微软与AMD扩大合作部署AI芯片，战略性业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-22-microsoft-028
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软与Mistral扩大其战略合作伙伴关系，为受监管行业和企业提供前沿的人工智能技术，并确保其可控性。"
+  quote: "微软与Mistral扩大其战略合作伙伴关系，为受监管行业和企业提供前沿的人工智能技术，并确保其可控性。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxNTURnRFZ5c3RhaHhxWmFDZ2RCN2k3Q3RjdVJqQjRqRk5WbkliWVNOdm9QLTVuelplRE0wSWM4RldNQVBNbDlIZzBiQ3VVT2gtd2xrWGRPcmU0TFFzMndwRmFjRFdHd2VPOERsSllaaEo1TFdNRVZVczUzS1JMMnZfc04xTlNjSGpJY3k2MFM2UVZRcm5XV2NKVnNVNWpEeC16RWtSTFZVWFdFdm9sWkIxaGFPQ0lBZw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与Mistral扩大战略合作，涉及AI技术和企业战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-029
+  date: 2026-07-21
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软Microsoft Whiteboard个人版下月停止服务，数据将在9月删除"
+  quote: "微软Microsoft Whiteboard个人版下月停止服务，数据将在9月删除"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaFdVcE85MnFrdE52ckpXS1g1YUVLT3dyaFZyQnFIMjY4bEtSM0RtNUMwdUNLTl8yTFJfZWd0R2VEZzhXX1hYN2J3aEExSDZJZ2F1SFRWM3E5NE41dVFaTy0yMUZwV2tUdFFTcnQ1SW1sb0JzQTM5NUV3QWlyOXFMOWZWOFo3Mkp1M0dV?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软停止Whiteboard个人版服务，影响用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-030
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软与Mistral扩大战略合作伙伴关系，Mistral模型现已登陆Microsoft Foundry与Copilot Studio，为企业及受监管行业提供可控的尖端AI技术"
+  quote: "微软与Mistral扩大战略合作伙伴关系，Mistral模型现已登陆Microsoft Foundry与Copilot Studio，为企业及受监管行业提供可控的尖端AI技术"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBGbC1TbUdvSVNQN1RoVFJWZVJEWWREVnljSERzTDJWN3Q3WTRqZmtPTE1ERFRINU9JRDN3YVJLcEpHeVQxTEVrZnVRRG1vRWhQZTNId2dkMjhSemtFaVFWYzNSNGtaQQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与Mistral合作深化，Mistral模型集成Copilot生态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-031
+  date: 2026-07-21
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软将于下月关闭面向消费者的Copilot两大核心功能- Microsoft 微软"
+  quote: "微软将于下月关闭面向消费者的Copilot两大核心功能- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGaVRaNlk0NEhDdElhckRaODdJOUJLR1Z4dFhDZDFISmJKTmF0QUh4el9pcUtQVXNBYTZTLVVnb2dRWHFaT2VVVkJwcUJlT3M1N1FlenN6SzhBV083cE91Mw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软关闭Copilot消费端核心功能，产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-microsoft-032
+  date: 2026-07-22
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "由于购买了数字游戏的账户仍被封禁，微软或将全面调整Xbox支持政策"
+  quote: "由于购买了数字游戏的账户仍被封禁，微软或将全面调整Xbox支持政策"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aS1lWZnRET1dRNEQ3UXFDalVDMi1pN1d2MzhBQ2NnbjRTbjJlUnp2c0NmejQtWVFKQ2ZNME9FUy1rY1hFMkd4LVl3SExaR3VKTkxscEp1WldMM1pjYlNjanFn?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Xbox账户封禁问题引发支持政策调整，用户权益争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-microsoft-033
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AMD Prepares to Ship First AI Rack System to Microsoft"
+  quote: "AMD Prepares to Ship First AI Rack System to Microsoft"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxPd0s3ZXp2dndvTXVxYm1iLXp0ZzBmM3JqeEZHOXpSYl93TVFhZXFhNUhSNDF1Nl93bFpHeTZVY1YyREt4WElKbG54U2cwb05aT2FlYTVubnJyMGhWX0x1Z05LeU1UY3BETmxsdFhWOFBueU41aS1JM0ZaRlpkLW9HeG5rSUlMak1PM2hoRmh6NHVlTFNXcnBITzRXWjYwSVU0dFZXcWcxM1pHZjZMaTkw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AMD向微软交付AI机架系统，涉及微软AI基础设施建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-034
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软再度加码欧洲AI布局，与Mistral签署\"数十亿美元\"数据中心合作协议"
+  quote: "微软再度加码欧洲AI布局，与Mistral签署\"数十亿美元\"数据中心合作协议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxNWXBTQ0hTZGdXWGlZOUdCaXcwYllaSzRWZUpaSUR4TUR4SlRSNGgzYV9HNkw5d0VlSml2Q0pUOXlIM3RITmM1U1dDT0F2LUdrVHBtM29Fd1pCUWFVM0d5c2ladjVCYjFhNlAtc3NjV1ZDdm44M1FfVnRreDFPU0lfdTNwdTRXNnFJUHk2b2hiSmcwbmJwTUtZdVNDQ25tQVQ5SFA5cVRR?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与Mistral签署数十亿美元数据中心协议，欧洲AI战略升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-microsoft-035
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "两项游戏订阅合作：Meta Horizon+将附带XBOX Game Pass入门版"
+  quote: "两项游戏订阅合作：Meta Horizon+将附带XBOX Game Pass入门版"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rMnBhZVpjOXlZcUhheFNtYTU4THZ4cXpENUR3ZGxfUnRjU2h6c1lwS0VadGk4S1JKZ0IxRG5pX3UyeDhEcE5jVWRsbzg3Z3R5QlJ3bF9HenpoQ0xVZjJvcU13?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Meta Horizon+捆绑Xbox Game Pass，微软游戏订阅生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-036
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软承诺斥资数十亿美元在欧洲扩展Mistral人工智能基础设施- Microsoft 微软"
+  quote: "微软承诺斥资数十亿美元在欧洲扩展Mistral人工智能基础设施- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1zMnEyOE5tVWVTQ3c4TjlQLUh0X3pkNkpGR1lmZ25zdFRYb2UwWUlfdzNadTJVSXNlaFpBRFR3aG5ic3FtdGtiNF9keFRxNUcwQ2M5dTlkT2VmSmV6OUd6LQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软数十亿美元投资欧洲Mistral AI基础设施，战略承诺。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-microsoft-037
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软间接确认AMD将推配备3D V-Cache的\"Zen 6\" EPYC处理器"
+  quote: "微软间接确认AMD将推配备3D V-Cache的\"Zen 6\" EPYC处理器"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE44QkN1MmJReHE5eWFJTFBYX21ncG5rTjJoOUxQOTA2UnVqS3d4VWdLSGNqN0dzN2pKY0pURlpKaXdoMTR3TENBR3VDUHFyakN1SjM5MEVWajdMTGFVcXlOcnZB?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软确认AMD Zen 6 EPYC处理器，涉及微软服务器芯片规划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -353,3 +353,94 @@
   source_type: media
   note: "LLM 预分类建议(med):华为智驾系统产品发布信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-22-huawei-023
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为鸿蒙 HarmonyOS 6.1.0.135 版本“隐藏”特性曝光：默认图标优化、耳机控制页面布局调整"
+  quote: "华为鸿蒙 HarmonyOS 6.1.0.135 版本“隐藏”特性曝光：默认图标优化、耳机控制页面布局调整"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxQcWNUVGR5MXl0MFRCenkweWVqV0ZmeDlJZzRhM2N3ZFdxb1p3Yl9yalpGRER0aWJJWkNYZEhsTWh2dlZhQV9fOVlHalJ1ZWxQWUIzUnVTYXp4SnRSY2NndG5MblpobEpKdmRodUh1c1hLcS1fLXdXalJBTWhpMmgwZVV3?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):系统版本更新特性曝光，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-huawei-024
+  date: 2026-07-19
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为Pura X Max手机、智慧屏S7 Pro获国标人工智能L3认证"
+  quote: "华为Pura X Max手机、智慧屏S7 Pro获国标人工智能L3认证"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE52Yjd3U2RLd0FidDZncVZYRDdPU1lzanBsNVAybG50QjNDZWYwbUVUWVo0dkNKVlQzOG1MdXZEQV9xUzlsSmswMQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品获得国标AI认证，重要资质认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-huawei-025
+  date: 2026-07-21
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为HiCar更新|huawei hicar|智慧桌面|微信通话|应用中心|分屏音乐|地图巡航_新浪新闻"
+  quote: "华为HiCar更新|huawei hicar|智慧桌面|微信通话|应用中心|分屏音乐|地图巡航_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFBpNlFMUGNFbDFKN3A2SERVUzJ4WVl4bkpSaFYxemZfajhYd0RRNWpYMHR0NVltSmJxcFdVSHFHUldRTnRpU2dScGNOYlFqcXFSUk1Sb0ZCMXRxcGpieEZKaVhEdw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):HiCar功能更新，产品迭代动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-huawei-026
+  date: 2026-07-20
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "数码产品全面涨价，华为扛住压力给出多重补贴，换机要趁早！"
+  quote: "数码产品全面涨价，华为扛住压力给出多重补贴，换机要趁早！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE8xM3NvRVZ0c013dE1IM0dZb1pGRFBlRWs4RjhuY3I5cEQ4eno2UU55RWFCVkVxVTZpMDJxT3d4RHFTTlBBMHN2d0tqMEdwS2JGX2hhTG5famFaT3RPaUVCR3BR?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):行业涨价背景下华为补贴策略，市场定位信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-huawei-027
+  date: 2026-07-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei Pamer Atlas 950 SuperPoD，声称是最大的AI超级节点"
+  quote: "Huawei Pamer Atlas 950 SuperPoD，声称是最大的AI超级节点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE54bHBmNDFMdlVLNTIwbWFjUktjWHpBZmJkUzRDVWlsdGVJalM4a2VTRjNuTFFOMHRKbVZ3eWlSZTQ1YzNERnVmbEhuWmh2VkXSAUJBVV95cUxQUXRWcUVVZ3EycG1PTVBEY3NrTkdSTkJNUVBjVUtsb1F2WW5BMU90c1NreWwzcEJjWkRVMlNyUkRsUUE?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品发布，AI芯片/算力产品具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-huawei-028
+  date: 2026-07-20
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为Mate 80、Pura X等机型适配Huawei Tag精准查找， 部分特性待完善"
+  quote: "华为Mate 80、Pura X等机型适配Huawei Tag精准查找， 部分特性待完善"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi7gNBVV95cUxNMnk5a0tQVUJtOTduRjU2VFZMM0IyNDRxVHR0ekpXSWF0Rms5ZGRzZXRPaC1DT3ZLZTc2ZlF1WWtjV2VfT1dDSFpmbng0WlFBaDJpR0FadjJpSkRQZGE3SUdTNmdVaVZPLTVEUE5JSlpmQ1hHdlBLR3VMOXJBTVZZRTZabVRMME9mOVRhY0w3UVE1RFZiWFMwVm93cXRQaFpRbkRLNW11UkhVMFFhcTlkaWFFQlI2NE1oMDdteEZfRnJWb1IyU0IwSUwxR2hXaHZINjQxSFVpbjRrX05nYzN0aFlrUDBobGRPaEJGYUZLMVJGTUlNcVphSWJnRVRqQ21fNEJpaW5LZWxYaENMUjJ6S21jc000cFg4OEVZa05hVmFOYWZQMUh6TDdfZ19LNS1pT2V5QWtEajg1ckNrWFNqS0xUYXpBbG5ubGVfSWtOSmhXQWltTzJMUEhiOHdnZGZoSDgzc1pDOElCT2xNaE85N3pRbG5qZE9VeVJYNHlfajJabXhUM0Q0em01UjJUSkNWZkVEZHVlTlE1YVBpWlExZWU5cTZMS3B2QldxMTVUQ1p2SVFxYmVQTDh3YmN2TVc1bnhyaUtRUGZiMHk5c2syOG5vaEZ4bTEyRUJKM1MwY1VnU1RQYm51NnZGaUpwQQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能适配更新，涉及用户体验完善。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -337,3 +337,49 @@
   source_type: media
   note: "LLM 预分类建议(high):FSD个性化功能更新，产品创新亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-22-tesla-022
+  date: 2026-07-22
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Tesla推$225儿童平衡车秒杀 无摩打无自动驾驶 黄牛竟叫价40万"
+  quote: "Tesla推$225儿童平衡车秒杀 无摩打无自动驾驶 黄牛竟叫价40万"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikwNBVV95cUxOV0RqVnZEeXpCQnRoWFM0ZXVfWHFYX3dJMGx4UWsybnEyeE9GVjBRQlpFWkMtQTJ6YUJjQ1kyZk1SbDlDUE14UHhiVXhqMWlSMXphSE10cmFIeEktSE5GZzJxYzRIbGJzNUIwNXVXdG9QR1NZREJCamF2ODQ2NkFoU2FQOHdxUEZ1OE9fR1FQVTRrX1E3VDFvMVJvY1pDOFFZWG1jOENfS0twN0h4T2N4bUVMRlRmdGw0eU90ZDBRMEcydkxxR1Z3XzF2LTVxN2FJSlRsMTc5MVdia2RweVNfcGxGQkVCR2hNMlNBWGNlWFMxQUY2U05ZSTFaU0J4THd4aGtYWG9OMDNTTWdIUl9xaUpPQVdyZWhUSlNWWVVYcFVXNHljSGhLVGpMNENBelg2T2liVzBlQmtvR0ExZU81TUpSYjM2b1NKVXVqU01DSFRmVHVGTXVFQjdiYUJpbm9KdWhuTWZQMXFDWmpFZmpEbW9BTWhINHJWWWctYjNJaEdQbkhDLVhMOFFHZk92TjBTN0Jr?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新品发售引发黄牛炒作，涉及品牌生态问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-tesla-023
+  date: 2026-07-19
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "非特斯拉车主能否使用沈阳超充站充电？"
+  quote: "非特斯拉车主能否使用沈阳超充站充电？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5yNTFWUDV6SU1SRTE2LXRTZElQUEw3VWhYUk43VVIxaW14SDlhdnUxbnh3aFNKQmQ5NzRiV3VUX3hvZlhRREFuQzlJUnlyVU00NXZOR1QwUVJMd1puVkoxNU1VQm1YcVJ5MzVwb094dDhvQQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):充电生态开放政策相关用户关切。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-tesla-024
+  date: 2026-07-19
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "有方向盘？特斯拉Cybercab实车现身街头，细节和宣传不一样"
+  quote: "有方向盘？特斯拉Cybercab实车现身街头，细节和宣传不一样"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TVmdCMFljSy1FWFdmMlBZNS1SOW5pajR0WTRLWEdzMGJqXzZMeGRHNzZmMlVSbEJJRGNQbVEzOFBpR3h1UGtHdGhZVkI1bGR4MUtVNDJuaHNYdjQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品实车与宣传不符，涉及品牌信誉问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

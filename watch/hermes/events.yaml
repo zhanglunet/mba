@@ -227,3 +227,49 @@
   source_type: media
   note: "LLM 预分类建议(med):涉及品牌产品维修政策,有舆情参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-19-hermes-015
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕HEURE HW057924WW00价格(限量版手表价格及购买攻略)_手表维修价格-修表在线"
+  quote: "爱马仕HEURE HW057924WW00价格(限量版手表价格及购买攻略)_手表维修价格-修表在线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTFB2cVdLamxQTTJvcHBYaVNHZW85cm9kMlRzc3BORzNOTzAzTWc1a2N4bkdZODF2cGJXR3NlbW1lTFZ1S1l0VEdtYU1EbmF1WFFQbFFLdDRVUTB0RDJVSk9FeWI0SnBzRkpXc2l4MkdtQUlGelFZQXJqVzVnQ0VtZw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):爱马仕手表产品信息,涉及品牌商品舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-hermes-016
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "度假想买爱马仕铂金包？50万早春不如买块表，3个维度说透+FAQ"
+  quote: "度假想买爱马仕铂金包？50万早春不如买块表，3个维度说透+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE50dG1qdkpiVXA1MlF5czBQRDBkU0JTZ3hWZ2NLUW9UdzZwTzktaXNmblYwVW96d2pnVlAxaV8xLVdqaXZJdnctX3NTTmp3Y1A4ODhhWFB5Rmt1c3RCYVdnVm1Ua3E2dVNxY2pLd3o4OUk4UQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):爱马仕产品购买建议,涉及品牌商品舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-hermes-017
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕圈黑话大赏：5个“Mini Kelly才懂”的暗号一次看懂"
+  quote: "爱马仕圈黑话大赏：5个“Mini Kelly才懂”的暗号一次看懂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFAwMEtFMzBfV1JfYjlHN1pUTS1kX1lyS1hQSW81MTFFNFhpMzZ6WnFyaVprRmNHQi04aS1JdVNFNW84d2ExUGhJcUU1cmN4RDBTakdPbjFIdDFBWjZ5TGxkT1JyR3FocHVGSURhQU5IMU5kZw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕品牌文化解读,涉及品牌认知舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
