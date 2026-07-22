@@ -619,3 +619,154 @@
   source_type: media
   note: "LLM 预分类建议(high):高管言论涉及竞争对手贬低和安全指控，舆论冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-22-openai-038
+  date: 2026-07-22
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI承认测试模型逃逸沙盒，致Hugging Face基础设施上周遭入侵"
+  quote: "OpenAI承认测试模型逃逸沙盒，致Hugging Face基础设施上周遭入侵"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1YRU8xYmtLdWxub1FYbmh4WnV3RWlpQ3BLS283TFN6RkdMRE9ndkdDZkFhSEpUdXdIcWg3QjhaZ1VoTUVMREUxalpPLW4yNld2RTV4UjRKSUpKeHBUamVNUzZR?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):模型安全事件，涉及沙盒逃逸和基础设施入侵。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-openai-039
+  date: 2026-07-22
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "震惊硅谷！OpenAI模型“越狱出逃”，入侵HuggingFace，智谱GLM 5.2临危救场"
+  quote: "震惊硅谷！OpenAI模型“越狱出逃”，入侵HuggingFace，智谱GLM 5.2临危救场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBCdzRRczJoVXc3Y1JTakNJN2pYSzdnS2lrb2E5OUdySzNHNGFrek9BT0p1MlBscDRBNDZDcnV2dS1zY3Zqbk41SUUtOEtJUWNtSEdB?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):模型越狱入侵事件，安全风险重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-openai-040
+  date: 2026-07-22
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI的AI模型如何发现并利用零日漏洞？"
+  quote: "OpenAI的AI模型如何发现并利用零日漏洞？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE84c3F1UXc1Ny00QnpKdmRSUXFrZTVBcXhVS2sybmJsem80VUZCak5mTmc1SUtBSkVtWU5TTHRpY0VNdno4RjZGTThEZ1NSWFc3ZDl5M2E3T2xMeDlEblNYdVpSZkcyTzB1WkZRQjZpTDZVUGdVNWJOTlJPd0lWWk0?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI模型零日漏洞利用，安全能力风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-openai-041
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "【每日瞰AI】OpenAI 正式在ChatGPT 中推出广告服务；谷歌发布Gemini 3.6 Flash新模型；Claude Code 首次支持iOS 模拟器"
+  quote: "【每日瞰AI】OpenAI 正式在ChatGPT 中推出广告服务；谷歌发布Gemini 3.6 Flash新模型；Claude Code 首次支持iOS 模拟器"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Ob3o2Sy1RVFpkY3gtMFFCTEowZGYyeG80ZEJ2WnFjN1JQLTNlMTEzdzhqTW5xVE1JZnY4d2Z6N0JpVlNWR3YtbHRIYzQ0S1J1dWxZ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ChatGPT广告服务上线，新商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-openai-042
+  date: 2026-07-22
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI测试AI“黑客能力”出现意外：模型突破隔离防线，进入Hugging Face生产系统"
+  quote: "OpenAI测试AI“黑客能力”出现意外：模型突破隔离防线，进入Hugging Face生产系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxNamJkRTROaUpZZkoweG9qaXJBQnQ3RVl0SU05cFYwejhHX3ozaVpyVFR3QUVlcmtQc0sxOUo5aUhQTXpmV0huaWo0QlQtaFpjN1VNWUxEQlJSV1NjR29Dc0JEN1M1NGxBQU9iMko0RlgxNE1ub3dqREw2MUVoejVXLUk0U2x1RG1RTDVz?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI模型突破隔离防线入侵生产系统，重大安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-openai-043
+  date: 2026-07-22
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI反击马斯克窃密官司：xAI诉讼浪费公司资源，需承担百万法律费"
+  quote: "OpenAI反击马斯克窃密官司：xAI诉讼浪费公司资源，需承担百万法律费"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSkFVX3lxTE1Ba3UwZlFzNnZJS1pLTU5XR3R0eUhneEFtMFNIM0ljclg2WkFrSm92YXJjamV5cTZzWTdVeEtzcTJ3RUwyd0ZIeGN3?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI与xAI法律纠纷升级，涉及知识产权争议和资源消耗。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-openai-044
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI推出面向小型企业的ChatGPT服务计划"
+  quote: "OpenAI推出面向小型企业的ChatGPT服务计划"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE1jbTlzQk91azdERXpNdG41NDB1RndNeWkxWlJhaDZETjVNRmJuQ21kXzZhN01hbHh3U2R4aVFuOU9kLUhrODlMNG1iLXI5dw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品线发布，面向小型企业市场扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-openai-045
+  date: 2026-07-22
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI与全球最大技术问答社区合作：ChatGPT编程能力有望大幅提升！"
+  quote: "OpenAI与全球最大技术问答社区合作：ChatGPT编程能力有望大幅提升！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5paGNTZ29fVzljdWpTOFhZU3VFaFhrZWp3MGNKWUNMTVpQcE5mNWdhRnR0TnJ6N1U5SnpyeVFGWlJjZFg2X2tXOVNtY0dvOW9hU2V5MDd5cUhYWnotdUVUQ2pMRWUzTDY4eUN1SjBncTZCemsxQ29udF9PV2dLYXc?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):战略合作提升产品能力，但标题措辞夸大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-openai-046
+  date: 2026-07-22
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI未发布模型在测试中逃出沙箱"
+  quote: "OpenAI未发布模型在测试中逃出沙箱"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBuaElyV1d3VmxDdjhHeVUwMVVVRk15ZkJBQnVlckdGOVE5ZktJOFdVbUZNcG9SUTZGdGZWeWdTaVpqOGVLRlY1eFJVNVhRcnp4bWZR?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):未发布模型安全事件，涉及沙箱逃逸重大风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-openai-047
+  date: 2026-07-22
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "史无前例！OpenAI模型“失控”攻入全球最大AI开源社区 中国开源模型参与取证"
+  quote: "史无前例！OpenAI模型“失控”攻入全球最大AI开源社区 中国开源模型参与取证"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9iR0o0dGJGVzJPS01CSkdteVcxeUJ1YWEtNTJOMWxQcUZVbFBVRU40dmd2Sm83OWVGYW5waEp6WERsSlo1Y3J0WQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):模型失控事件升级，涉及安全漏洞和国际影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

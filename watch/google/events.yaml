@@ -401,3 +401,94 @@
   source_type: media
   note: "LLM 预分类建议(high):Gboard手语输入功能，无障碍创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-22-google-026
+  date: 2026-07-22
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Gemini 3.5 Pro难产谷歌先交了两张草稿纸- Google 谷歌"
+  quote: "Gemini 3.5 Pro难产谷歌先交了两张草稿纸- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TLTZNUzNDRlAwbHRpanBncnROSVAyOEZpekhfMGJFUHhrTEVWTXhxdEwtOFh3Rk9NSk1KbGZWXzhhSjBxa05NZHJ3THR0WTZJMGJlMWNHclEtWUNlRmlQYQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Gemini 3.5 Pro延期发布，产品进展受阻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-google-027
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "谷歌于下周在Google Play上线第三方应用商店，Epic和解协议撤回"
+  quote: "谷歌于下周在Google Play上线第三方应用商店，Epic和解协议撤回"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQM2FUeWlNMDFmU0tWX2tWZDNFR2x2ZW5mTFp5NzdVeFRYcDNVTHc4eWs5WUFaZi0yZWJ5dEZSa0E3VzNxcmpjOXJQRVF2Yks2aUpiWHdYQlhQWGFYY2xudG9jcV91d2MyMjVGQkdHTEYwcVpnajkzTl84UHVUZGlxTGRhbGxMbHF4?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌Google Play上线第三方应用商店，与Epic和解协议变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-google-028
+  date: 2026-07-21
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌面向全球发布Windows桌面应用，集成Gemini AI搜索"
+  quote: "谷歌面向全球发布Windows桌面应用，集成Gemini AI搜索"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE01NklxVTJhM29YWjFvdTlKMDcyT0ZVbEdQeXRVY2ZaRVBLRmVyV2xrQTIwVjlzWWJab1p1YS02dVZaQnJMdndzSQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌发布Windows桌面应用集成Gemini，产品扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-google-029
+  date: 2026-07-22
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Maps测试跨应用智能功能，增强旅行助理"
+  quote: "Google Maps测试跨应用智能功能，增强旅行助理"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rWGxVR2RpeUh5cG0yYS1pT3lMMlZJb1ZOY0lvbC1yYmY2YnNaSmtEZktSM0pjUUJvYUpWc3dleHp5dkFQbzlsSExya1hPWnfSAUJBVV95cUxQOV9XZ2xoU2ZaR01tbHRhUU52WnRuNllNaUJaaFF3SDdNdmRITHA0d1NvSHhoQlhkQ0lxRlYzZTBwUXc?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Google Maps测试跨应用智能功能，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-google-030
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "欧盟要求开放AI助手权限 苹果和Google拒绝：有信息安全隐患"
+  quote: "欧盟要求开放AI助手权限 苹果和Google拒绝：有信息安全隐患"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwNBVV95cUxNQkhMdFFOVDh2WGNqdVZKTjFrRnhNSW82N0xOOExLTFRSelJSbWZxd0NoQ3RWSzY2YjFyT3NZSmhGcjlyeVJjQ0ZfLTIyVjROakU5T2lWaE03YlFCQjlVbVlZYlVlQ3RlUllJNDRlcTVIdjF0ZjNlQTBpZVdyYzU4anpGZ0pJQUpNQVFkbklCNHVHODVoQldLTHZGOUZMdThObExZZ3pjOFJMWkw0S0MwdkMzYXhGTEFhN0h4bkM2cXAtaEV1aloxVXFMNThtaWt0d3pvS0l0NnptcEpPcGlhbzEybFZibHZrT05odGZLRmVHREdCNUszMURNXzZybW1wenZUd0tkNVRzNi0xZmYwU1FDTWxla290dVVMRzFCRHN3S2htMkxsUlVLZGhKcUw3Y2RVQ3BuYW5HVFlHWVlsUHRuQ08zYjhGU1JrZ1J3aGFSNDBKTi1FeURiMVNFNEJLa0l3bEdsOVoxNWl2SGd5QTdsNVZESTlQYVdHX2w3ZkozRXNkYkJQX282SHhKNHM?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟要求开放AI助手权限被拒，监管冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-google-031
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌扩展Gemini产品线推出更廉价模型及Mythos竞品- Google 谷歌"
+  quote: "谷歌扩展Gemini产品线推出更廉价模型及Mythos竞品- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PM09kQmJNc2d1Qld6Tm5HSGh0VTFPbTltaU1SZzNqcG1iZW5kR0xTUlhQRkluTWgtSUxjbG94ekNLVmE3TWdubEJ2a1p5X1pucjI5NmVEMUp2V3NqcVRvVQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌扩展Gemini产品线，推出廉价模型和竞品，属于重要产品战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

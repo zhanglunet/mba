@@ -430,3 +430,79 @@
   source_type: media
   note: "LLM 预分类建议(high):融资估值与创始人持股信息，重大财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-21-deepseek-028
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "曝DeepSeek-V4正式版已开启小规模灰度测试，预计本月底发布"
+  quote: "曝DeepSeek-V4正式版已开启小规模灰度测试，预计本月底发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfUXpYRGtBZUltQWthLUNDMWhPeTBka0NXSEszMXFOc3FtN0F4dm9kcTZaY0gwTG5yZWZucmVLdUd6TGE5cFA2X1lpODFyb0ZnblhKcnpn?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新版本灰度测试进展，产品迭代信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-deepseek-029
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek醞釀第二輪融資及IPO 引發關注"
+  quote: "DeepSeek醞釀第二輪融資及IPO 引發關注"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE41em10LVUwVTVvZXhQQlNuVzZZT1A2c3E4YmNVZWhyNk4xMTY2aFZxVVhsN3J4WnBxTC03U3hQNGpqZWZSQmJqeUJld1I2YUVMWGpCSl9DS1ZxWUpvU2NZMNIBZkFVX3lxTFA3MXRPcGR4elRmNWxQQXBhbWRDTEwyMnB6NUEtUjdpRGtIVnhldzRESzhZNTVMUVZ6ZzhaQndkdkRNMjdSUUhVek5GcTgwSUJQdXMyNHdDVndCbEpRNUlWaURFRExQZw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):融资与IPO计划，重大资本动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-030
+  date: 2026-07-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek首轮融资落地，总额510亿元、宁德时代等参投，梁文锋持84%股权"
+  quote: "DeepSeek首轮融资落地，总额510亿元、宁德时代等参投，梁文锋持84%股权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxQOV9rVi1BNVdtMEVkRXlyQ1c2ZkJKWTZjWk5MVTN2c1hyaG9hYl9SMDliTG9MQ3Y3aERXWExkc1NaamFKelZPZEZiTDA5OW96N2hjWjZ4dkw1cXJubngxSGcyMEFKUmtoTGM0NG9rMmw3aXRzOVRYOXdyTFNhdGt3Sw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首轮融资510亿元落地，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-031
+  date: 2026-07-20
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek估值，被一家箱包公司公告意外“曝光”了：超3000亿元！"
+  quote: "DeepSeek估值，被一家箱包公司公告意外“曝光”了：超3000亿元！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NUTRYWmlSTkV4dVR1OVB2WlB5T19KbTdNbVNuRTFDOTZ4NkJxT1JZSnV6Q0lrQk12NmJnN3NfYlpTQ1VGUXBVVmJpWW9IcTRrTUR2SDUwMk9VUjdTOXU3SQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):估值信息披露，涉及公司价值评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-deepseek-032
+  date: 2026-07-20
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "DeepSeek实习生日薪5500元出圈 被曝高薪资配套老员工打分机制"
+  quote: "DeepSeek实习生日薪5500元出圈 被曝高薪资配套老员工打分机制"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WZ3dhaW9yeFllS3pyUHV5bVlsMkhSb1kzbGlhZU9FZDNzWEdKWUtpbTVHcVVJdk93Q3RrOHVySlBzVmx2M3pTejhvYlo0RWJobEtrQWZ5cHk?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及DeepSeek薪酬体系与内部管理机制，具有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

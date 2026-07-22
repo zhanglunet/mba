@@ -354,3 +354,64 @@
   source_type: media
   note: "LLM 预分类建议(med):涉及亚马逊在AI投资格局中的地位变化分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-22-amazon-023
+  date: 2026-07-22
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊企业购年化总销售额突破600亿美元"
+  quote: "亚马逊企业购年化总销售额突破600亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ndjViMDRHLUNPTGx0UmlNdFVZem5CcFQ4MUFkWDhOU1JUdlpGUm9YV2JYLWU3b01HR1M4YWVVMFUzb0xfMXV4ZE8yTm05S3Fka1Q5Tk52bm1OV1V6dFRLNA?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊企业购突破600亿美元年化销售，重要业务里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-amazon-024
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Dia停止在亚马逊上销售产品，并将业务重心转移到自己的渠道。"
+  quote: "Dia停止在亚马逊上销售产品，并将业务重心转移到自己的渠道。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxPbUN0RFhKYndDZm1ib0RwSGluNjZRb3pQMnNtNENjNWJSUVM5RXg5UmEya2ZkNTVBNG9QRGFaQ21NdkhkX0tmekVScHhGYlVwdXNrX2VoUmd4LXZaVWp3a1pzUFVPODNYYmJBMmJURmExYWFMZDhCQ000bWVnN2ZxWDR5Ui1PWXNFazRqb0tkeHhmUmtWaUl5Qk9WT3FlRnpubG8xeEUzNDJEZlBfeDdBNmF3?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):品牌商家调整渠道策略，涉及平台生态变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-amazon-025
+  date: 2026-07-21
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊商业业务在第二季度的年化总销售额达到$600亿}"
+  quote: "亚马逊商业业务在第二季度的年化总销售额达到$600亿}"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdjh5ZEg2Qzc0bjh2bUp2dmlhSU1YSTJuX1ZWdGhtVHc1Y2pxWmgtUDRLbDI3ZkdZX2xady1CTURfczYtSVNnTTUtdWpmUlNGam5GRk9qNzFmcUdlS1dQekRWRGh1b1M4ZkVjNjlKRnNhOWZwTG9vUVl6UHFVelhnRXZNZEhHcVRzUHpUSTlFRDJ1SjlxSEFXdDV5enQwVXFkNFhUemdUVkp2dWc?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊商业业务财务数据，重要业绩指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-amazon-026
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Temu欧区投流腰斩亚马逊第三方GMV破5750亿 | 邦小白跨境周报- 跨境电商"
+  quote: "Temu欧区投流腰斩亚马逊第三方GMV破5750亿 | 邦小白跨境周报- 跨境电商"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiRkFVX3lxTFByQ01KUkpwM0lXMU9sT0luNURoNXpyWVZhY0E0Q1F4Mm1LRUNJLUU0VU1QZ0ZtTUs2cDBHLWI4TV9xMHJadkE?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):竞争对手动态与亚马逊GMV数据，涉及市场竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

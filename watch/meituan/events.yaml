@@ -278,3 +278,34 @@
   source_type: media
   note: "LLM 预分类建议(high):Q1财报数据，营收增长但亏损超预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-21-meituan-018
+  date: 2026-07-21
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "美团今日股价为何下跌？动能疲弱与超卖状态限制了抛压"
+  quote: "美团今日股价为何下跌？动能疲弱与超卖状态限制了抛压"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxPUXJDbEs0S3VIYlNOVDZiMENsR2tQUnhYT3p5SHpqVkh6ekNHbHZ5blo5SUlQbXJ3OXFZV1h4Wm9aUjlmVnE1R2wyOXZHbFduM2VMVHU5S3otYlBGT0h5bU9zSnN2S0YtMXlPVGNXWEh0TVZualdUbzd4SkdpQkoyU041SXN3Wk5WbGNOdHNNS1ZsZFg2Q1RmZ1I4T2Foa2tkYUVj?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价下跌分析,涉及投资者关切,有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-meituan-019
+  date: 2026-07-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团今日股价为何上涨4%？"
+  quote: "美团今日股价为何上涨4%？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxPQ0xCQVZoemFPZ254YXZXM1JrNmdCWUVYUDRJWlJreUtZLVRKcy1HanNjVG55QWN0aHltbzRHS0hiVlJla1dKaXNRR2t1WEpZRjY5MUl6bUlFQkw0dENtbE5kRU91ekhaMEM3bWR6OVlyUkQxQVdRLWN5UFM4SHh1aEFQNWRLZDNsazh6NWFZMFlEMzJ3SzR6QkN4THNfUQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价上涨分析,投资者关切,有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

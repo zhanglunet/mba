@@ -293,3 +293,49 @@
   source_type: media
   note: "LLM 预分类建议(high):Kimi算力争议引发资金转向，联想财报受关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-21-lenovo-019
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "从Token Maxing到Token Efficient：联想集团用世界杯验证AI\"投入产出比\""
+  quote: "从Token Maxing到Token Efficient：联想集团用世界杯验证AI\"投入产出比\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxQOUFsTE90cFY2czlQLW1jVkUzcGdzRnAwd3hzZHlicU42MWtyWENTNnVqZFFzaW5YU3NDa1g3NnRXM296dGMwYnJfS2piVU5iRlNwbkRBT0NDM3VCLWFOWGw2czNHelpyRTVZQkcwWkpWRi13MDJHSjJHTm9OSHB5R1d2ZGRISGY1QU5uWlkxLWN6V2pybHVFOFpUMXJkdnpIZ0JZ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):联想AI技术应用案例，展示产品能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-lenovo-020
+  date: 2026-07-21
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "港股异动 | 联想集团(00992)涨超6% 全球AI Capex持续高增 服务器将为公司带来较大弹性"
+  quote: "港股异动 | 联想集团(00992)涨超6% 全球AI Capex持续高增 服务器将为公司带来较大弹性"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxPWHd6ei1kbFkyRFNsT1NnVHZDTmNiUjN4TjluUDlidWhkWlNSbnFvclJYUXBlbkMtLVBES0Zkdzk4X1lzVVlYSkZZNVlRVHZaSHg3VXIzZEIxN21VTjRLclpmZC0tM3ZoRlVYYjYzQ2lTUm0wOXRwSVNjTUg5SWRyN21TY3pKR2o2bkdCSFVKcmZPMk5WWXpyd1IxT1JJQQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):股价异动+业务前景分析，市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-lenovo-021
+  date: 2026-07-19
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "世界杯季军战上演10球大战！英格兰力克法国，联想AI持续护航世界杯关键战"
+  quote: "世界杯季军战上演10球大战！英格兰力克法国，联想AI持续护航世界杯关键战"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxQNFE1bnZvM3dIdGIxS1hpWmYyRTlJWk9SOUkwQ2I5T2lRSVAyckxYS2kzTlBOaFM4WVlhS1h6UDRiSlpGUkk2clhod1pLeU5QVXZuT2VWYmM2YTM1MjZ5VnhQUzk5a3JqUElZWllxN2tjbzRHWGRIVWZLWGo2NTg2c0h2TFRGZ3liYzVKaDZ1TXhObG1rczB6S2xjb2w?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):联想AI赞助世界杯，品牌曝光与技术展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

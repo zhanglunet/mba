@@ -544,3 +544,79 @@
   source_type: media
   note: "LLM 预分类建议(high):上市后首次财报电话会,重要信息披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-22-spacex-035
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX敲定财报发布日期，数百万股限售股迎来首批解禁窗口"
+  quote: "SpaceX敲定财报发布日期，数百万股限售股迎来首批解禁窗口"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixwJBVV95cUxOMVU2Slc4ZjdsN3ZWSU9Jb0I1Y1d0TXJCRlhDa3kwLVFSVXpKamJPTk5NQW9pV3prc1FrZUlIbGdQdHdqb3R3Y3RaU0pHX2xYNklHU2R2VnN1RlpNNmhicVBBUWJsUS1UZkdqdnBLMGFXSFhzWEZMQ0YtNnZFUThBVmNGR0hicWNZcUZpTjFoLVJ6NWo1V2FoMXl6WnVFQ01lbVJPRnlIZHJiaFFFMEUxWDJ2TzJMUU9zaF9GQjViMkxwa3hLWk9PQmh6Ry1kd21SUno5eTdYWHU2c2Y2azhCVHZ1V3dkSlhVdWVEMEFkQnhrTWV1NEttd3ZVVXNweXAxVFV0MzRfWnNDQzF0Z2tDNzVHR2Zyd3lzeFhYX0U3QkFvTXpMT3NKWDNrTGRwSU1Ra0VVREFBWEpPNWFWRFQ5N3JBb2hzNVU?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报发布与股权解禁,重要投资者关切事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-spacex-036
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX下月面临大规模股票解禁"
+  quote: "SpaceX下月面临大规模股票解禁"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE90Z1ZnZS1POUdmSWpJNkIzaGNmWkVoaC1sRFVuWFQyVE1KaVFHVkh0aTR4YUdmZ19nT2RmZHZjYmhTMEZfRThRb3N2RVQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模股票解禁是重要资本事件，影响股价和市场预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-spacex-037
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX的宏大解禁即将来临 逾千亿美元股票将可上市交易"
+  quote: "SpaceX的宏大解禁即将来临 逾千亿美元股票将可上市交易"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE96SnNvR1N0RWZ2SXpMMUZhOHZJbWZtMlZXVDFYRnl3Sjc1LWRRUkN3RU0ycERxYVgzZU1vbVVlb2JTdFFuOVZaRmp0b3ZrMG9yRHd0eXhfbVRSOXBNRFJ4cGZtZ3pmMGt3aHVEc0QzaWlNNksxSWtpMS13?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):千亿美元解禁规模重大，具体时间和金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-spacex-038
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX迎史诗级股票解禁：1160亿美元股票8月6日进入流通"
+  quote: "SpaceX迎史诗级股票解禁：1160亿美元股票8月6日进入流通"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1IQTk0eF9nb01zbVpYUWxYTkkxREdTUFl5SjJhNkJyQjd0VFphcG9PdXBkNlRZbDR2MXRpbmgtODY0YnIyOU5CYmhCUklqQzFrdS1J?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):具体解禁时间和金额，重大资本事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-spacex-039
+  date: 2026-07-21
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "【早报】深夜，美股半导体板块剧烈分化；高盛：SpaceX的AI收入将激增100倍"
+  quote: "【早报】深夜，美股半导体板块剧烈分化；高盛：SpaceX的AI收入将激增100倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1aOHhnWTVSaFhxdjFwcFFfaHZJdVlIaElZX3ZYdEtkRWI3bG5OYmkzU2xfc3M2UmdNM0MzUU0tLVd6RU83VXJIaw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):高盛AI收入预测，涉及新业务方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

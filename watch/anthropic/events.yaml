@@ -539,3 +539,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Anthropic联创警告Claude可能勒索人类。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-22-anthropic-034
+  date: 2026-07-22
+  dim: W4
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "自称安全AI却偷偷下载700万本盗版书Anthropic要赔15亿美元"
+  quote: "自称安全AI却偷偷下载700万本盗版书Anthropic要赔15亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1Vc3NnWmp2YUNsRkFOU29XQlpDZVkxWDdmWUNFTmV5bzV3aEZRb2FhSldHcGRKSVA2NmNUdVU0SnlERklzRjZEZTlHNF9USjdfc1JlQWRnUjlCbnpCdFVmVG9B?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):版权诉讼和解15亿美元，重大法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-anthropic-035
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "赛富时(CRM.US)借Anthropic反击“AI颠覆”！AI智能体杀入CRM工作流 开启企业“数字同事”时代"
+  quote: "赛富时(CRM.US)借Anthropic反击“AI颠覆”！AI智能体杀入CRM工作流 开启企业“数字同事”时代"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9senNxM0M0RktwTmYyb1J3aC1oZGtNbnkxNG9QSW1BbllETmJSSXNra19vUUI2dU5LUFF2bHVzQTVVaEZnWGstRg?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic与Salesforce合作，产品应用拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-anthropic-036
+  date: 2026-07-21
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic给Claude Cowork加了录屏学技能功能：你边做边讲，它一次学会"
+  quote: "Anthropic给Claude Cowork加了录屏学技能功能：你边做边讲，它一次学会"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9yYzJucnNLQWF3Vncya1I2QmVRVEk0YUhfVkszVnN5SkVhUUgzTFVJcmRnMEt6TWlpN0RxY0xRZ1ozNHZ4N3hyNzN2Ulo0WDFtR3IxbkZhMEQyejBva1BFM09B?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude新功能发布，产品能力升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-anthropic-037
+  date: 2026-07-20
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 15亿美元和解版权诉讼，IPO关键法律风险基本消除"
+  quote: "Anthropic 15亿美元和解版权诉讼，IPO关键法律风险基本消除"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiywFBVV95cUxQZmI3ZVhBY2U3b2NvNVY5el93dGhVbzBzNHRfbmZMczFtSS01VE5qWnFpUnZHNmw5N1ZxRGgwTk9BUk1JUi05aW93S1BKZWQ3ZVRSWkhhM3BhU0V6WTQ0bi1nbnEtVDVsSTdqUVA1djRkVk5ZVGJmbEV2OGRGNFN2dDFNbnFsY0FCaVpzdDluSmJkSVJIOFk2R3pWWkN2TVh4ak5ZclRqeE13M2cyaU1JTjZRbThWOS1oSEJ1YnhCeGpRMG4wOXZWMHVadw?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):版权诉讼和解，IPO风险消除，重大利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-anthropic-038
+  date: 2026-07-22
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic将支付15亿美元，美国AI版权纠纷迎来首起重大和解"
+  quote: "Anthropic将支付15亿美元，美国AI版权纠纷迎来首起重大和解"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xLTlZWG0tUG5ZajVMdFlvdEpuT1JkZWsxUXZ1RjV6OTkwUjBxR3FpYWFTcWJhekR6QXc2MWNVQnlBUDVwSHBwWUhacXN0THBpSWNaaTlhMmZLQ2E0UmxYeVFB?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):版权和解15亿美元，行业首例重大案例。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-19-anthropic-039
+  date: 2026-07-19
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "阿里巴巴发布Qwen3.8 Max预览版，自称性能仅次于Anthropic Fable 5，盘前涨超3%"
+  quote: "阿里巴巴发布Qwen3.8 Max预览版，自称性能仅次于Anthropic Fable 5，盘前涨超3%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivgFBVV95cUxPQVRJYlhUdXRDWDRsbUlfb2RpZUg2TWQwRWIxNmwwZkZwcHdjS3pkb0VZQjFQLXBlMjdGVFlIb28xb3prUkJhakZqaGs2WVN4VVJNVEdKdWhvRjA2UE8wSTlRTnlVVU5jUFppeFN1ZThrWWVBRjlLcUpXQ29yMUY5QVlvbXJKT0ZaenUydC1pLU11UHF3cFM1ckkzdjN0amd0bHRRVGNCb2ZJMm1Yd3FlNGtfNHVBekg5c0t0eUhn?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):竞品对标Anthropic，市场竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-anthropic-040
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic模型震动金融圈 欧洲央行紧急开会要求升级网络防御"
+  quote: "Anthropic模型震动金融圈 欧洲央行紧急开会要求升级网络防御"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIYVh0bTdJbkpQQ2hFWi1Yek1wa0lnOGU1UEZXY1VwR1NjQjlQaWRMZ0d5TVRiZXVrWXA5Y2l2aW43Q3NTdjdXQg?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Anthropic模型引发监管关注，安全风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

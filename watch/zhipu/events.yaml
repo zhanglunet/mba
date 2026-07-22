@@ -190,3 +190,19 @@
   source_type: media
   note: "LLM 预分类建议(high):IPO后股价大幅下跌，估值逻辑质疑，声誉冲击。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-21-zhipu-011
+  date: 2026-07-21
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "智谱1GW数据中心落地！国产AI芯片+中科院Infra+自研模型，构建自主技术闭环？"
+  quote: "智谱1GW数据中心落地！国产AI芯片+中科院Infra+自研模型，构建自主技术闭环？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxOQXU3dFppNGRHUTRZc0FNU0NkMG5vRzZjNHI0MmpmODJLQnBfdFZ6VzdqSlBuVFExLWUxMDR4VDZucnlJY08zcU5TODNVRFFrT0YtOUNuV1FscjhtMW9QOTlEZjVFMWNVaFh0YmV5c2NBTjFqM096QUYydWN1ckNqanhUSEhWLTlzRGJXYzM0LVZLM01rWkVB?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):数据中心建设、自主技术闭环战略进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

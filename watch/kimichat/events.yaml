@@ -499,3 +499,154 @@
   source_type: media
   note: "LLM 预分类建议(high):特朗普政府限制中国AI，涉及Kimi政策风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-21-kimichat-032
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "中国人工智能发展之路引发的震撼 质疑 不安"
+  quote: "中国人工智能发展之路引发的震撼 质疑 不安"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixgJBVV95cUxNU3hFWWJOU3BfVDk4LXJDcUVTaEZ3V3hjMHh0OGlnQnhXbjJ0QXFrRVNsWlV2TUJidnlFVlNQb3l5V25LcTBjQ1dWcWpNalUyNWhrRkpLOGxMU2lqc2ZTS0FBS1dHQkFleXF6cUxnLXk5WnlYWWNFRUp1aWdOMnZNMmlTM1ZscEpXekN1SE1GcGloRjl0MU1rWmZVUDhBNUhvTC1fRGdZdmp0YkxDbXdxTUlYd2ZKQXB5M29rdmFGNmdPQ1c1RjR2dlhSVUJUX1YyVk5qbnBKdjVHUnctQlQ2Y281YTJucUNPVGR0T1RqTGlVeVZoNEpkVk0wS2NReDlWY21KbjJmRzN1Y04zYnVJTTR1QTJtNGV5WW1nSFhTbExDQ1R2T2VTQUtWVGsyOHFnRVVydndkemR3Q3ZRdEtzeWQ1eWRDUQ?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及国际竞争、政策风险、舆论反应，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-kimichat-033
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "中国“Kimi”引燃AI主导权争夺战……美国考虑禁用中国模型: 财经新闻"
+  quote: "中国“Kimi”引燃AI主导权争夺战……美国考虑禁用中国模型: 财经新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9jWjQxVlB4ME5WUmVmYWdfOUVNUjNPcmZmbG1xZXYwVWFBV0Z4U3hxZVlFUmRnR2NxU2FPUjZEUGVYenIxamtUWkY5bDVyOUxIejd6RlJUMi14LTlW?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):美国禁用考虑、国际竞争升级，重大政策风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-kimichat-034
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi拟6个月内赴港IPO，估值或超300亿美元"
+  quote: "Kimi拟6个月内赴港IPO，估值或超300亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOSktmRHA3ZmhJQlhjdDhDZmJrQnRocnlBZ1Z1c0hoQTVMdXJ1Z1Z6bldQRFVXMDBRaUhTb3dnMGtQcDJ2bm1zOWQzR2RKQnVqNzJ5VlhtS0RDNmZyVHFoamVNZ0s2dXVfRVYtZEJRbVc2Y2owTkFTQW00aXhPdUlfbzdn?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO融资计划、估值信息，重要财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-kimichat-035
+  date: 2026-07-21
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI“斯普特尼克时刻”！Kimi K3震动硅谷，Stability AI联合创始人：推理成本还有10至50倍下降空间"
+  quote: "AI“斯普特尼克时刻”！Kimi K3震动硅谷，Stability AI联合创始人：推理成本还有10至50倍下降空间"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jM2dyWk1FbjhXT3lhTFRsQ0JVLVdpLWhhTXdDcDRPYW5mQUxSVmdFaVFHZVpiMHhOeV9xdFVTOHU5VzJBV1psU3BYWDdpbDI0eGhj?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):K3产品引发国际关注，技术突破舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-kimichat-036
+  date: 2026-07-22
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi K3让硅谷一夜无眠：中国开源模型正在重写全球AI竞争规则"
+  quote: "Kimi K3让硅谷一夜无眠：中国开源模型正在重写全球AI竞争规则"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9hdDNTR0NjOUEta1ZBQURHb2pBMmU1b2ZGQUxJdkNkMUNBVkVEdzExeFd4SjF3ZXpjUFVrVHZsQXVIWnU2RHk3bUlwd2Q1WVM1RHNpSldpbzRGV0RWSFJQNXZB?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):K3开源模型重写竞争格局，具重大舆情影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-kimichat-037
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "月之暗面，即将上线Kimi Hosted Agent平台"
+  quote: "月之暗面，即将上线Kimi Hosted Agent平台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ETVdqNTlxNDdyc2NFd05CWVo2OFJqUmNLZHVlTC1WV0p5NC04Um5iaEN2QW0zcjVxQzROUUI5VFlEYXQ0S2JWQk14cGtVSTRmQ1JN?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品功能上线，常规产品更新事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-kimichat-038
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面以500亿美元估值洽谈Pre-IPO融资，Kimi K3引爆全球AI圈后加速港股上市"
+  quote: "月之暗面以500亿美元估值洽谈Pre-IPO融资，Kimi K3引爆全球AI圈后加速港股上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQQWd0a0NXbzN4RWVyMmdxWlA1SXVaZDBkTmxfSnNHWktUTVN5dklWeUVFekNGQ2pzV2dBWVJaeE1IYmhjNWk1X0tLMjFuVUNfQnJxZnljaFlEMkNWbXpvcWNablAwNTZkd0hGMG85d2FlQWt1MVdnMWZiY25IVUJUMmxZVC1xNjBnYkxDVg?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值、IPO加速，重要财务与战略事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-kimichat-039
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "获马斯克点赞 清华团队推出Kimi K3，联合创始人是福建寿宁籍AI大牛"
+  quote: "获马斯克点赞 清华团队推出Kimi K3，联合创始人是福建寿宁籍AI大牛"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgFBVV95cUxQa0JYQU4yVWxFN2hwUC1vLXZxcEZIa29nX00yMU5ySGMxV19XWmVCNjIycVlGLWI1YkZ3VEhZeTN3VmJIQ1I3dW9MWGZvbU9CajRFWG53Mi1WdGdzQ2xwUmk3Q20yU3RVZUFFMlU4NFZHTnRaLTZkTnFDSnp5QkJYaGZQakVMNUMtOElvRWVB?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):获名人背书、团队背景曝光，品牌认可度事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-kimichat-040
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "K3上线需求超预期|月之暗面|资源紧张|付费老用户_新浪新闻"
+  quote: "K3上线需求超预期|月之暗面|资源紧张|付费老用户_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qVXQtWXFRcVJZZFdtS21nV1BoOS0wQTBLRFFNSUFsOEg2T1MwSkVOMVF3TDZJNkFJaktzQktodGpUOGlTT19BTjlvNHUyb2RzcWNEMFdTMVNOSHdJRnRKMUwxNA?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品需求超预期、资源紧张，用户热度信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-kimichat-041
+  date: 2026-07-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面预计最快六个月内在港IPO！旗下Kimi K3登顶全球开源模型"
+  quote: "月之暗面预计最快六个月内在港IPO！旗下Kimi K3登顶全球开源模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5rY21lcGxac1RMbl9NUkd4cWVHN2pfNnFRNkhuWExWSUtCWldyY0ZnMUptRkV4bHI0UHZUZDBrUWhnR3NNdEVta1hrZ1NWMlR6LUdCTE4tS2ZMckk4czhlRGthYXAtc1U4RFkwS3Vwb1NOMUJCQWFiMl8yblZZRW8?oc=5
+  fetched_at: "2026-07-22T05:30:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO时间表、K3排名，重要融资与产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
