@@ -506,3 +506,34 @@
   source_type: media
   note: "LLM 预分类建议(high):涉及DeepSeek薪酬体系与内部管理机制，具有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-22-deepseek-033
+  date: 2026-07-22
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "世界人工智能开源大赛启动 杭州500万“悬赏”全球AI开发者"
+  quote: "世界人工智能开源大赛启动 杭州500万“悬赏”全球AI开发者"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTFBvUnRyNzJtWTJIV2RkTTc4ZGVmaUNVdHpKTWUwaXR1MWszUXhqRTczSDhkWVdnM0YyaVR0VW5rQWVWR1Y0bTU1clVpUXZBS0lCdGZyRUFwQktjcUZmSVFidXVCbFVjbzY0V1FKXy1B?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):赛事活动，品牌生态建设舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-deepseek-034
+  date: 2026-07-22
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "九安医疗，投了DeepSeek"
+  quote: "九安医疗，投了DeepSeek"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTFB0MTBiVDZfVGRLNjlXLV85aEhuVzZJUGNJYl9DMEptdUs5Nkt3VTl6OXlreW5OaWJycnJDSVpvUVhJOHRsUTFYcTlSYWVPWHEtOWE1cklRLVhrV3RGdi1OMEc1ZVFFZ2h2N0tjMzVuRGxSQTBhWlE?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资/投资事件，品牌资本舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -226,3 +226,64 @@
   source_type: media
   note: "LLM 预分类建议(high):大疆新品ROMO 2发布，产品创新事件，品牌正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-22-dji-015
+  date: 2026-07-22
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "FCC初步决定禁止进口某些外国制造的军用级无人机"
+  quote: "FCC初步决定禁止进口某些外国制造的军用级无人机"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivwFBVV95cUxPd2R4RmtBSzR0d2V1TWNMSTN2ZmR6TWVXRnYyWk1oLTQ3cWxHNklrOTJaeG9WRkJBMUh1bUR0NTZjVjNEdi1BcTBpTTdGMTJMODlCUE5WYkszalVHMmJqTkJvRXh1U2pYTXpGN3FaRUd3NTRMSGJ4aTNnNEFGZDA1VUVRTHRNMXdFQWJkQWRDeGpEVmlTN2N3U1Rsbl9HcUxjUHZ2SjVWUllfSjV1TDBYa1R1S0w4eEtQWWIyNUJsTdIBwgFBVV95cUxPLUFtVlhmbEF6cUZUVW43c0lHZmt5YkU5QW8zbXBkRUxhMUhWb2lKZ0I1YWM2VGRuWE5lajhId1N3N2xPTXVnWE02bWZLY3RaeF8xbkVWYXN5enh6SzVTME1lU3lQMWFaQkhsR0tTS2tIS05ycTZNeUd3QWgwWUNIY201Mzl1aks3bXFGR2tVSDhQMzhsTmhEaFNvMEIzTjdWZ3dTbHFOSFl2NVRTaWFEbTJ2YnBNdVJKb0dfMFNpRnc5UQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):FCC禁令，大疆产品受限，监管风险重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-dji-016
+  date: 2026-07-22
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美FCC拟禁外国军用级无人机非中国产获豁免至2028年"
+  quote: "美FCC拟禁外国军用级无人机非中国产获豁免至2028年"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE1OcGF0TVl6LUZQN1gxS3RabFRZeEctYUZfYjRPcTRBanptVG9hRnJIeGxIT0IzczhTZkR6VmVCNlprYnF5SHpodEN5YUFmTjdY?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):美国监管政策直接涉及大疆市场准入，具重要舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-dji-017
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美 FCC 拟禁止部分“换牌”销售的大疆产品"
+  quote: "美 FCC 拟禁止部分“换牌”销售的大疆产品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE85REZaWnJQVmNXalR1eERHaExZSUI2MFAwUWhyeF92bi0yWmNlS0szcU9pOUU3RTVKRk91TkFMSUdmN29VcjhRS05MOHlMaG5qU1pCU2Mwc0k0enFuYlprTEh3?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):FCC禁令针对大疆产品，涉及合规与市场风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-dji-018
+  date: 2026-07-21
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "FCC祭出最严禁令：追溯封杀超300家套壳公司，大疆全系产品或被彻底踢出美国市场"
+  quote: "FCC祭出最严禁令：追溯封杀超300家套壳公司，大疆全系产品或被彻底踢出美国市场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9zbjFIU0VJVWhqM215cG5FcFo0cUNmY2oxejFNcmttVWpyNElqVFk4MHlzd010VGlQbWlUTFhsZ280aU9PZUxhSTZ0REVUSDZUWHRIV0gwbnhWTVY2Vm10cC1B?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大监管风险，涉及大疆全系产品被禁，市场冲击显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

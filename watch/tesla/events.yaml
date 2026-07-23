@@ -383,3 +383,154 @@
   source_type: media
   note: "LLM 预分类建议(high):产品实车与宣传不符，涉及品牌信誉问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-23-tesla-025
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "《大行》富瑞：Tesla(TSLA.US)次季EBIT远逊预期 评级「持有」"
+  quote: "《大行》富瑞：Tesla(TSLA.US)次季EBIT远逊预期 评级「持有」"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RTmFuTU82Z2ljMFZJN1lOdnR4VTkwalBnaUU0cTN5emtnRW5EcHRjVHZUSXJwaE12UVYzUkJ2bE8tRE5YU2dia09UX3VNOWdGczgzaVU1NGVtQQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师评级下调，财务表现不及预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-tesla-026
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉第二财季营收大增，但AI和机器人支出拖累现金流转负"
+  quote: "特斯拉第二财季营收大增，但AI和机器人支出拖累现金流转负"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxQU3F3dWJtOE1lYm4ySGJydXZJSkppYzFKMWgzeEtRUUJnZE93ZENQeHo0eFBIaXRsQWVGRmZEZktwMlVSS2lFaXpQbXcwQWNNRlpYLWFOWnpNQ3RGSTBFU1JPSDdhcHZQUndQTnc2V2NQVmcySE13VGF4SkNwcDgzM0tMTQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报负面：现金流转负，支出压力显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-027
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Alphabet(GOOGL.US)及Tesla(TSLA.US)考验华尔街耐性 AI支出掩盖增长"
+  quote: "Alphabet(GOOGL.US)及Tesla(TSLA.US)考验华尔街耐性 AI支出掩盖增长"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxOZlpGWEdfZHY4OUozSHROX2FlTnRZYWlxamh6V04yWVJUU3dxQ2YzdkN1RDRsT3ZUR2tiajFCeGd2RGtaY1NobTdyQm43XzBLd2dsV2UwTF9QVG1SZUdsU21ubHhNNk5vdm5JbnFIb3h4WWItUmc4UG9GRlJ2dG5FdkNMclNyWGl3Vlo0amVuRVFfUUtFUEZ6Z1hXRlZqQmlR?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华尔街质疑AI支出掩盖增长乏力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-028
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉产能转向算力储能|特斯拉|4680电芯|机器人|lfp电池|cybercab|tesla semi_新浪新闻"
+  quote: "特斯拉产能转向算力储能|特斯拉|4680电芯|机器人|lfp电池|cybercab|tesla semi_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFA5Z29ZcWJ6NDNUaTZQOVNrSTZ2SFJUSVZOQnlpdzFNZGxHMDc5bFFsZ1RfWUV2XzBwTjZYZUY3am42TVVUS2M5clBuanpVazNnVmFmYzJCeExxaEQzZWtMVzRSTQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):战略转向信号，产能结构调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-029
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "财经视野｜马斯克两大困局 Tesla自由现金流转负 机械人难量产"
+  quote: "财经视野｜马斯克两大困局 Tesla自由现金流转负 机械人难量产"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipANBVV95cUxOSTNmMGtPTGRlemdYbDBpUVhGNGwycUdwSW01c2h5cG1nbVJfaktUUXBkWGFLSmVYYnpCQjBXeVhwamxQV2NwUi1rUFFwQ0ZWcHVDVlZiMG40N2xjOUQweGZGUFhhZE0tNjc5Y0oxQzFmUFExMVMzNHdMcENjcWExM3JDcGlvS0I0YjQtSWhmTE5UeUlJcXFuek1vc0Q0LVJGd0w3d0JGUFhIdWlDODBsdWIzRFFBdlB1M1RSeXFHV1QxV0tOS05talg1TG1XVUhMN3UxM1cxbUdGMXNGLVJkWHJlTnZhU3VPUkc1WmptemlYNkxWVmV4UTU5M3d4SVlsX2NFckthS0VsR0hkNUJycWdJXzYtTzlkbE1UV1ZkWTRVcnpjVl9XZUFKd0l6ZGpzY0tjV1JtclU2U1hsV3pNelJsVzdReV9NRGljOTN6eWg2V1RjY1laSkRwaTZUSDV5UDBram9LcFpJcEhvdUtySGRCejNyWDlmcTRKR205N2piV1M0SUdPR3dIRkZwWDVjTGMwNU9YSk81ZHdraS11QTFvai0?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):现金流负转、机器人量产困难，战略困局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-030
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉第二季度净利润下滑5% 自由现金流转负、股价下跌3%"
+  quote: "特斯拉第二季度净利润下滑5% 自由现金流转负、股价下跌3%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FZVg1NFhWMDdXV2tITTdrNmdjaTA2SUtab2JKWVV1dUpwMmR6YmkzRUNRS1kyLWE5TTNSQ0FnRC16TnNXQmhZMDY5REwxeWc0dVNtaExJaHVRbTFzZk9lbg?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报负面：利润下滑、现金流转负、股价下跌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-031
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Tesla Earnings Call: Musk Says Company Is Undergoing 'Fastest Industrial-Scale Expansion in the U.S."
+  quote: "Tesla Earnings Call: Musk Says Company Is Undergoing 'Fastest Industrial-Scale Expansion in the U.S."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNczJob2VQcDZPUUFmVG5xVmxtRWtyeVJJNVZYTHlNMHFUSWNnemp6Vk5lSTdCZWFRajBYXzFfdDN4RGpmSjVzUHpQTUpQbzNENDlXR19uUWRmanRzWjlIOFk2SmVCNzJDaHh5MDUwc2M1VEpGRGs4Qmh6SnRxbXVNVjZpVFBkVktGTklDTlpfRDc5UkwwZnVkeUJ1cTFQQVRwek5oeThRTjhMWUJic1JOSnhR?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报会发言，扩产战略表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-tesla-032
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉Q2利润远逊华尔街预期 成本上升拖累业绩"
+  quote: "特斯拉Q2利润远逊华尔街预期 成本上升拖累业绩"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxQcFdmZ3JsX2xDbE00clZOcmY2Z1NzbWIxWjFJNnJWV1dDMzNQS2J2T2d2bHE3a0FRVjZZamFaMVRScFVrbHN6MC1uMk4zdVV0MUdKR01lR05EUzdIZ0J6Q3E4a29BNWExUFp2UTlKUTRacnIzRTJsZE9PbUp5dnlHY1RTNFJ6eTRKeTNULXpaTVZXQQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报不及预期，成本压力显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-033
+  date: 2026-07-23
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克：美光(MU.US)向Tesla(TSLA.US)分配大量内存晶片 供应条件非常合理"
+  quote: "马斯克：美光(MU.US)向Tesla(TSLA.US)分配大量内存晶片 供应条件非常合理"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XcGlZWndBYlg2bHR1QjBRYTZCTFFhdFVfa2xPdnlTd2tGVW5iOUpnaW5SVl9FN1lscXpwSXJ2VEJ0V0lfTTFNTXJCdUdJSTBtb0gyaG5hWnBYUQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):供应链合作进展，芯片供应保障。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-tesla-034
+  date: 2026-07-22
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉维持其比特币储备不变，并报告了$1.12亿的减值损失"
+  quote: "特斯拉维持其比特币储备不变，并报告了$1.12亿的减值损失"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxQdEZGak5hdkFXQnFZcUZXVnpRdVRKMk41V3I2QlJYRjBKbUxJRXllQXNnOFdJcGJFZ3J0VDV3aWVMM2Znb2dHbmFjaWR1UURZWmJiZnJVOVhEN0FkUEx0a2I2OURKUlJGb1paa2w1R1hSVDJIVlUyM1N1aDRLekJnMWMwZzJRWWUxQ2VhNGVVbEt6OW92Q3pabkVXUEZxckxoYTd5cw?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉加密资产减值损失，涉及财务表现披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

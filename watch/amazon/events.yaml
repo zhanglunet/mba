@@ -415,3 +415,109 @@
   source_type: media
   note: "LLM 预分类建议(med):竞争对手动态与亚马逊GMV数据，涉及市场竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-22-amazon-027
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Amazon Bedrock AgentCore Gateway 内置 Web 搜索工具实战"
+  quote: "Amazon Bedrock AgentCore Gateway 内置 Web 搜索工具实战"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxQUFZCUms5RkpCSVdMUjVPbGp0U0NOTG13QjNDWl9fY1pXSkVIN3ZnbXRzZWhZb3YxWjF1a0ZJSFVRdS02RzRqdUhRZlR6a1FCcERoeEJtRDZYT2xBNVdMY3h6bk0zcG9uakg2QTZQc1ROd3FUN1VfSVo4aC1jNkJEbGYyeDFfVGllc013NEVGdXI?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能更新，Bedrock服务能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-028
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "突发！亚马逊又裁员！凌晨6点电脑�..."
+  quote: "突发！亚马逊又裁员！凌晨6点电脑�..."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBuZmJLWWxZUDRfZXExVVdTTmJyX2Z3UDhjcy1jN0szdkxselYzOGRSTlNJVDBFZkN3SWItdlp2RVJBZ1pobXBxcklOQXRIT1VieW1qQThUUjMxbmo0dXA5MkNR?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):裁员事件，组织变动，重大人事调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-029
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊AGI组织裁员，AWS的AI估值锚要换了吗？"
+  quote: "亚马逊AGI组织裁员，AWS的AI估值锚要换了吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivwFBVV95cUxPVzRQLUNZNzJETjB1Y0phVzdtYVlKX1ZUd2NZMndsWlQ3RzQ4aEZFcGNjazdOaDI1NlhQY3dROUo2bDlraktERDMtdFZTN2ZRNnpFLU5pX0NaV2FLRFZtcnNuYVZ3YW1teWFIeEEzZ19CMl9nTEZfc2JXRXU1X1l1aVJhcVVIOVlVN1JoYm5LclJwV0xWbG5YNnZqN2N1U2JtelB6VDRIcURneS0tMkNfU3A5SEd5dW54NklBVTZmbw?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AGI部门裁员，涉及战略调整和估值影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-030
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊再裁员 AI部门首当其冲"
+  quote: "亚马逊再裁员 AI部门首当其冲"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5TSzhSdzZqMWhEblpWclhJRjdiZWV4Sl9vYkU3aGZveDFIQ1dVYUxObzhaZnVZeFRiaXI1dzVtVlRjX0IzM3NBTC1kcTZmZmNVS3h1TjI4VU9rWkUycTI2eXhiQWpSNDZPTldiS3lvZWVoQQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):AI部门裁员，重大组织变动事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-031
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "亚马逊在3万大裁员中“牺牲”Nova团队 押注更快兑现AI回报"
+  quote: "亚马逊在3万大裁员中“牺牲”Nova团队 押注更快兑现AI回报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3wJBVV95cUxON0E1VVJ6OEl6akxEY3BCSjZyRlV0U2xSLXBldWNhSG43QlZSejcwQ0dsT0d2bWF2a3BpN1NsUXd4M05TTFVMV044aXV4NEpCMlRxTDZrbEpucFJnNEF5V0NLU2trMDh3dmplUWFCLVlRNUtGM0xjUE1ON2JnMUtDcEgzekd0TXRPSzlrYW95akx0bWFKZF9SY1hwVDJweGZ1OHVzVWJKQVBEblRhSnhiTWdSLS16emZfd016MnlaWC1YTkFsU3NVRjY1aHI2TFlxZ3dsSldHdmVUZTk1R00xTTJvWjRmNUc3OVVHRnh0MExkM0FyLTY1MFRiN1V2YWVnV3JJVVA4RGxDdDJ2el94bnQyTldpRDEzU3VDYTB2WFBxSnlWVUFkMmsxMmtfalBmaGk4Y3M3eWFCV0JZbWdXbGJFUmFsNkZ4cEU3eTYyZHNCaERWMXdmcGlSeUU0eWs?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Nova团队裁员，战略调整信号，涉及AI投资方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-amazon-032
+  date: 2026-07-21
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "企业采购也被亚马逊吃下 年销售逼近600亿美元"
+  quote: "企业采购也被亚马逊吃下 年销售逼近600亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE1mYmIzNGpCVV9JQ083UzVIdk1tZW5WY1ExQ2V6d25pb28xMURXcHk2TUhmWVJqTWw2MXBpcGpNRl9mWlZJTzhtLXR0aU1PbDVQNXZkZ1RSX0tUNmpnRklNcklmUQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):商业平台销售额突破，业务扩展成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-amazon-033
+  date: 2026-07-22
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊商业平台第二季年化销售额达600亿美元"
+  quote: "亚马逊商业平台第二季年化销售额达600亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFBRLTlTOVVxR1RKMmtzaDgxZ0ZWc3IwNk9JS2hGLXI0SDhMRk5naTRMQ2g2Vl8yTTdya19xZ3ZDbUU3YW4tUjJOaFJrdUt5TFUzWEE3ZHJWZkNrQzdtaG1VSWJEXzZBc0NvaGc?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):商业平台年化销售额达600亿，业绩里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

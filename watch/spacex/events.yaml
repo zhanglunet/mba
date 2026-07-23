@@ -620,3 +620,154 @@
   source_type: media
   note: "LLM 预分类建议(med):高盛AI收入预测，涉及新业务方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-23-spacex-040
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX解禁对马斯克个人财富有何影响？"
+  quote: "SpaceX解禁对马斯克个人财富有何影响？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBZYXNvMDdOd3VTUEYtVUNRVGJtS1FyZDJ4aUtSQ0ljZHIxZC11N01sZy1PVGJ4eWs5dzFDWG40Ykd5d0pFVVA4dl9tN3kzcUhRN2F1UktfdzBCOFMyZVBvMmpwY0M0R05vcHRST1Nza1hydw?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):解禁事件涉及股权结构变化，但缺乏具体信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-spacex-041
+  date: 2026-07-22
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX称最早7月23日发射星舰"
+  quote: "SpaceX称最早7月23日发射星舰"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBVC1YV0VJTFd2Y0p5dWI2cnhIM3BveUM1OGQ0cnRpeTVMYUdtV2ZIM2JEWTV4bWNDbk1MOVV2ODB6eVlGbnIwX3gwQVZqVXV1QXlZQ29OZ0FpMXNucDU5ay13?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰发射计划，核心业务进展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-spacex-042
+  date: 2026-07-23
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX股价受挫，分析师：股价可能会继续下跌，直到2035年实现正自由现金流"
+  quote: "SpaceX股价受挫，分析师：股价可能会继续下跌，直到2035年实现正自由现金流"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQSVBfMmlQaEE2cmY2RFFaVDVFV2RUQm95ZGpQNTU3OVVJZnpjRGpJMmtUTWN2YVVBTlFsREs3ZUZRbFNlR29scURiQmxXTGhSSG4teGNNYU95ZmtGV2FseV9hOGhRVGF3akp6WWgtVHNlUDlZTFdDNFFTY01GMm1vVzFXMzlDbVphRWxqQQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师看空评论，涉及长期财务预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-spacex-043
+  date: 2026-07-22
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉CEO马斯克称 特斯拉与SpaceX之间的重叠之处正日益增多"
+  quote: "特斯拉CEO马斯克称 特斯拉与SpaceX之间的重叠之处正日益增多"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FZFViVDZtLVlwTlVXeVJPNGpDZGFOQ0gyVGpSRW8tQkIzWHRqU2VKMlNTbTRTNEJQZDZiRDhpUnRkT1pNMUQwNkp6Tmg0bHV5WEtiOTNRLU1nd1gtc19NXw?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):马斯克表述两公司协同，战略关联信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-spacex-044
+  date: 2026-07-23
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "摩根士丹利预估2031年SpaceX轨道AI算力每年每瓦6.5美元"
+  quote: "摩根士丹利预估2031年SpaceX轨道AI算力每年每瓦6.5美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBLT05ESWE4QWdydzlKbUdVTlZ2S0R1dktKX2hndi1QU2N4UlFrSVZTYjczRmtJMUJybDRtVVJVMXBLenlCNk5tOHBpWXE?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):摩根士丹利预估轨道AI业务前景，投资观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-spacex-045
+  date: 2026-07-22
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX上市一个月破发 估值体系与宏大叙事激烈碰撞"
+  quote: "SpaceX上市一个月破发 估值体系与宏大叙事激烈碰撞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi4ARBVV95cUxQQ1VzNlo5bGhSTXlTdkFla3NYdFdvRkFtS29hNmhrR3FZOW1ERXJIUWx2bUQ3enVtS2VTZXpNMlFweXZCZllxMGFDbEdjeDItMG1OTXU5dWxEQ3BPWlplS2syWjlYTU9Ud3phaGhiM3Bpc3VnbHFYSU8ydGd0Mm93VnJ1WUVKZWNIZmFkbnRjRlhtaE9UYXdXVUtQVEthYlUzOHZMenJaM3g0SlRLMkktWmxwbmx2a2Z2WjV5TzhSZGUwdHg0UGtpc0pRV0F5cVZOOFR2V3MzVVVQbWlqMjdLSHF2YzhfbEdvYUV5dnZhbnVEYUJyWi1lZkFFV3lqYmM4aGNvYkZCYTgyblBGbWxJRUMxNkw5SjFESUI2eVE5OFMzeWpmanNaRkhYN1FIYlBKdEVnSlloYXVBY2VyVkE5YzRKSkxOU0ljWExCTGpYU1hmVFdIV1FlWVVtZ0tVRFVNSW1CNmdQS3pvZ1JLaDFObHNYNWxfNTVmc1RtZzRBaGJqRHRJNi1VaUZKaUJnaHJoZ2FqeUxGNnFvSl9FSVlNYkVwb3dlT0xCTFdISjFJM3BfZXJWblpZTWdMUG8zZzNzT3J5YXJfc0JIX3JEM2FqVHhyUGRscC01dGNfU2lSREhrX0lTUnY1ZUprMDV0S3I3Zks5NDRjOVhQdGc5MUwwemRLblVtQXJHNkczYXFLVnd4N3hKNDU1LUlBRC0zU3hIbVRQc2hodGFzd0F0ek1zRW5ncFlXM1VaMTBHQUpBNzYyUUtKdC1TeTR2VjRYc2U1bVVJaE5iVnYwbnlSbzJKNQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO破发，估值与叙事冲突，重大舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-spacex-046
+  date: 2026-07-22
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "FAA禁止员工购买SpaceX股份有何影响"
+  quote: "FAA禁止员工购买SpaceX股份有何影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxPMnpCcDlpbDFVRlkzTl9ldHo5Q3hzbGRra0VGdWh3dzRJamMteGtwX2hBVDBKdWxuX1FYV3VzdEppSWwxdTAwaEdzOVk5WldpbWRSaEZSN29DZE9OZ3ZvNmxBeG5NT0t2TU5ueWYyMVZYSXNxdnpPNV92XzU2RUZCOW5DOA?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):FAA禁令涉及监管风险与利益冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-spacex-047
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克持续引发特斯拉与SpaceX合并的猜测"
+  quote: "马斯克持续引发特斯拉与SpaceX合并的猜测"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPNWdsWjFpYVczTmdYcFZmajdDMlNxNXh1SjFDQS1lUEJUcHJfYU55Q2p1SlhfY01NdDAzdVMxRkJzZ01aN3RfckYwdHA1aE0tZnhEOFdYSW9fdDkwc3dKQ1FjWGM3OS1DSHhoY3g3TkNvWnhpRFA1QjZiOW1IcTl0MEpkT002N1JrWWlXcg?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):合并猜测，战略关联传言。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-spacex-048
+  date: 2026-07-22
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX IPO遭疯抢？做空大师“泼冷水”：天价估值全靠“画饼”，根本站不住脚！"
+  quote: "SpaceX IPO遭疯抢？做空大师“泼冷水”：天价估值全靠“画饼”，根本站不住脚！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5NSEdiZGdqdnVLUDAyazdLZW5WclkyZHBVN20xbWV0ZmMzWmZTRDUwZnRVY3YzZVhsWnh6ald3Sll5YURNTHpHag?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):做空机构质疑估值基础，重大负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-spacex-049
+  date: 2026-07-22
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克警告空头！SpaceX首份财报将掀多空大战"
+  quote: "马斯克警告空头！SpaceX首份财报将掀多空大战"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxQemU1RzBidWIzb1Y2WkFmY1ZfNlNNbnYyMkVKTl9sYnNRNlN3anduaEQzQ1IyNEp3c2Y0QnFTdGdOX01JR0xhQ2xRb096QVJCZm8tcDgwRFU2ZmRka0VVVEo0SGNRaldfRTc1UTBmaWk4NWNrX2VqRXdkT29Cb1U1VTJVQQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首份财报预期引发市场分歧，关键信息点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

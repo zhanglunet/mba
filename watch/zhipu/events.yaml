@@ -206,3 +206,34 @@
   source_type: media
   note: "LLM 预分类建议(high):数据中心建设、自主技术闭环战略进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-23-zhipu-012
+  date: 2026-07-23
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "大模型下半场怎么打？智谱悄悄花几亿“买”下了国家队- 业界"
+  quote: "大模型下半场怎么打？智谱悄悄花几亿“买”下了国家队- 业界"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiRkFVX3lxTE9WUi1kZnREZkFyV2haeG1nTkpOSHNuUGFMRmpOazROd193Q0RHLVVMS1JlaDBCMVVMVGNBZ3FDSnl3LXpsMlE?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):战略投资并购事件，品牌发展舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-zhipu-013
+  date: 2026-07-22
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "智谱收购AI异构算力软件供应商中科加禾60%股权"
+  quote: "智谱收购AI异构算力软件供应商中科加禾60%股权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxNTVdOYjhPVVRCeHk1TVVVNUpYZlVGRGNnckpETXhjSm1Va0g2Z0hmS1JzZVM1ZVpBNHVuYWoxQWNuQ3l5N1lkYlotV1lRNFd1M3IzQXpRbi1HcUpLY0pOZU5jYTVhai0yaGdpOVg1RWUyYWo1SnhuMWVmRnVEMmlUWFpMdGFCdUpES2ViR3g5ZXZ6QQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):并购事件，战略布局舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
