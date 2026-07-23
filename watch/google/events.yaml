@@ -492,3 +492,124 @@
   source_type: media
   note: "LLM 预分类建议(high):谷歌扩展Gemini产品线，推出廉价模型和竞品，属于重要产品战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-22-google-032
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "谷歌Q2自由现金流首次转负，上调全年资本开支至最高2050亿美元，云业务爆发82%增长｜财报见闻"
+  quote: "谷歌Q2自由现金流首次转负，上调全年资本开支至最高2050亿美元，云业务爆发82%增长｜财报见闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5scUd2aE5sYnViRzdhZHlUbWQ0dUJ2LVZ6cDA2NWFFX0FjYjlVMV93eUdocWRzWWZCUFhvOUFONl9SRDAzSC1hcl9pZXNQejRMOXFn?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报数据：自由现金流转负、资本开支创高、云业务增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-google-033
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "AI 侵蚀流量：Reddit 重新评估与谷歌合作，路透社等考虑屏蔽爬虫"
+  quote: "AI 侵蚀流量：Reddit 重新评估与谷歌合作，路透社等考虑屏蔽爬虫"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxNcDczRmdTeWVIN01NdjFiNE1GU3VINkwyTFUxa3pMZ2U5NkNZUXVkRm9ySFJfc003QkNydi00QWVSeHZZVDVTZU85Q0xBd19PTkxwOE5FbkJNU0dCLWtNSGVGXzhqUlg2eU11eGY1UTJTZVFMMDBCdWVsRlVEZEgwbWNB?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AI流量冲击，媒体重新评估合作关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-google-034
+  date: 2026-07-23
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Alphabet交出强劲财报但加速“烧钱”引市场担忧- Google 谷歌"
+  quote: "Alphabet交出强劲财报但加速“烧钱”引市场担忧- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKQkJQYzJ0T00zTUJJMlM3Y1J3T25GaU81V0RBVk0wR3NiRjlCbjNUa1pPMlFOZ2tIRmtGVHk2R0dNRlFHeVF1cUp5MUdYOVc2MmphMV9aNlN5TUJDSWNrUg?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报强劲但资本开支加速，市场担忧成本压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-google-035
+  date: 2026-07-20
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌将应用抽成砍到20%，出海游戏厂商迎来多重利好"
+  quote: "谷歌将应用抽成砍到20%，出海游戏厂商迎来多重利好"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1CUlhDVDd2QWlpVzN0cWxtendvSHpuMjdUbnBmSjBxYVB1SHdZRFJKTkNWeW5vZFZPRmROOEhxd3ZJV1BzN0s3UEtQY2NUN25tdU1Z?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌调整应用商店抽成政策，直接影响生态合作方，具有商业政策意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-google-036
+  date: 2026-07-22
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌7000km跨大西洋海底光缆Nuvem落成，连接美国与葡萄牙"
+  quote: "谷歌7000km跨大西洋海底光缆Nuvem落成，连接美国与葡萄牙"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE96OGhxWkZaamZSWWVmSFNtSzJQNEFGUXV0NFUyYzFxYVB0ZWZVZC1iZW9ENmRZb1FidEZ0QWtqZ00tM2dVanZZLQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):基础设施投资完成，体现技术布局，但新闻性质偏技术公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-google-037
+  date: 2026-07-22
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Alphabet第二季度营收增长24%，谷歌云收入大增82%"
+  quote: "Alphabet第二季度营收增长24%，谷歌云收入大增82%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE8xeGx3T2xsaUpLdGdjZ1hlaGJtdGlBX0p3bnVaMGpBNFJQN3duZXJwcVVaMmFGYTN6eGFWY0xDdk9pR1MxU0JPbUpTNEhrTW9WOHhqQ2RXNUotcHA4bDNvRUxoRFFzdw?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报数据显示云业务高增长，核心业绩指标，舆情价值高。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-google-038
+  date: 2026-07-22
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Gemini掉出全球前十- Google 谷歌"
+  quote: "Gemini掉出全球前十- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yY2tMSThtU04zMWthVm9zbHFfZ1R2R0Y1aEh5NFNGRzV5cEs0M3VRcTJzRHE1QkxCU1BLMEk1NF9BSmplS2xDS1l4TFRySVRTM25IdGZrbUpYX3NWTWR2eQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Gemini排名下滑，涉及AI竞争力评估，有舆情关注度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-google-039
+  date: 2026-07-21
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为手机现在能用谷歌全家桶吗？3个维度说清现状+FAQ"
+  quote: "华为手机现在能用谷歌全家桶吗？3个维度说清现状+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5aRklLeEx6bkNybWpDa0tGRzdGRkswTWlfd3ZwXzdXYTZnTVRTNzRWbXZjOFZfVmFFSXhWMm1NSUlZMlE3RXNfX2Y4UklCVzFmR3RmWnVLTUdPczJYMFpDbVlxaF9lS0xNSGNNNi1BMllUd2dIUGVMVXM1YzFQa0U?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及谷歌服务在华可用性，用户关切问题，但偏FAQ性质。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

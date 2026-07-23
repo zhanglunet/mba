@@ -645,3 +645,169 @@
   source_type: media
   note: "LLM 预分类建议(med):Anthropic模型引发监管关注，安全风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-23-anthropic-041
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "不只有芯片交易与投资承诺：AMD将在内部应用Anthropic Claude"
+  quote: "不只有芯片交易与投资承诺：AMD将在内部应用Anthropic Claude"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5iMXQzSktVNkt2c3FYSFV0d2hVc2VFelRCN3BQQ1dYbGFnVFJjZFBTVTBYalluT3NnWVZTUzdpR1FsbVpLNExzeGpUajZUcUpsUVBMbXhORG5VWm9ncHBIV0p3?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic产品应用扩展，企业级采用案例。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-anthropic-042
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic全新大模型瞄准专业重度用户，同时切断竞品AI蒸馏训练渠道"
+  quote: "Anthropic全新大模型瞄准专业重度用户，同时切断竞品AI蒸馏训练渠道"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5ENDJtUjcxSVJmMHJobVRFVmVSMHFjUDFUbDRJU0w0TFVLYWhmRmtfd2FwTjBtQUp1QU5JZlIzazlpVUVDRFhyUVpkLTR3c0o4UFFBQUgwY3Q1ck5GQWJxNmEwUHRVei15YlFXOC0tVllHME9uUWFlbXNPS0Z1ZlU?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品发布，竞争策略调整，重要产品动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-anthropic-043
+  date: 2026-07-23
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AMD宣布与Anthropic达成合作拟投资最高50亿美元-PChome"
+  quote: "AMD宣布与Anthropic达成合作拟投资最高50亿美元-PChome"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yTXJOVmZoZ0YwVkJFV01wTS1sZGhpNXd3TDI3Q2tUbk9fREF0dmVCZXFLZXZ6RFhZM1hla0NHczdlTzlUaEZsTWpzNWtXX1VhZTBwbWFkOTF4NUk?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大战略投资合作，50亿美元规模，融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-anthropic-044
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic早期投资7500万美元如今价值70亿美元，回报近百倍"
+  quote: "Anthropic早期投资7500万美元如今价值70亿美元，回报近百倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTFA4ZUV0al9yMHNYanlTbS1zTloyZVZFU3ZJUDVOVHNXaFBaNjlhcHNGRWM1NXJsbFF5cVJhUzBGYmQ1eTEyMWF4djBFanBHc0c4MGxVZA?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资历史回顾，估值里程碑，投资价值信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-anthropic-045
+  date: 2026-07-22
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic为Claude新增录屏生成Skill功能，降低操作门槛，重塑工作护城河"
+  quote: "Anthropic为Claude新增录屏生成Skill功能，降低操作门槛，重塑工作护城河"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE9aSEZZeHUtZ2ZIdWdJRk1wTC03dkZ3V3Z6RkhVQnItaFpxa0c0NFQ4Z3ZGYXhsdHFYY3oxR2tCMWtBMEMwdlZ1NEhsQzhHZnJJYjI3NXJYYlc2NWRJeGxuN0JiWFgxWjNLZFZF?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能更新，用户体验升级，竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-anthropic-046
+  date: 2026-07-22
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic提交招股书，冲击万亿美元市值"
+  quote: "Anthropic提交招股书，冲击万亿美元市值"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVkVIZFpWenpUblMxTU9FckFGQjJXS3NOU3hBZEpCWVhCSnBXdnpJOXZ6QlZqT00wclcybU8wS1dNaXJ3eTYxU3FwamJhelh0WnpsYVJhbkpwaVlkMXVYa2JkLWxLa3ZUQ3QxeURxVnVSTDFqV1dGXzVkaVZ2OU9hS3I2aFM1a3pkZ3JDY0luOU9ZcVVESlhwR3pKQjFoN3RDektJdU5UWEtmbUh1cjZhbE5Ea1FPOUE1WGVEblRnSDhSV2Vjb18wTWVRQnNLaWtwc1hpdjVRNEdfZUtXdXcxQmNiTQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO招股书提交，重大融资事件，市值目标明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-anthropic-047
+  date: 2026-07-23
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AMD与Anthropic合作推进2GW级AI基础设施，Helios平台将落地"
+  quote: "AMD与Anthropic合作推进2GW级AI基础设施，Helios平台将落地"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisAFBVV95cUxPek9nQ3p0OUUzejlDT3ZxVVNVU3FXNHdQOU43TFc4X2EzOEEzT3M3enRTbEp0dXZvWF91bDlQY3BPNi1sV2xwaXhycDU1TmE0RkVGVTd0amJCWVJJb01nMHJ4VTlZX0VsWDRrZ0xNUWxaRDNkYmZwY1l1SHBlLU5oUzFYZm5FcHctZzdUQU4wYUVpRVZwX2dEczBmX2d1RkdSOG4zdWpEd1loRnU2QzV2NQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作深化，基础设施投资，2GW规模落地。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-anthropic-048
+  date: 2026-07-22
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic为Claude新增录屏生成Skill功能：跳过翻译，降低企业知识管理门槛"
+  quote: "Anthropic为Claude新增录屏生成Skill功能：跳过翻译，降低企业知识管理门槛"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFBOX29aSjcwQ2Nwa2xVVUVMSWFZNE1uVUJURnU5eHBONEFOSG5YalJtaGo4dGZKMjlDV1lOVmNuWWFkWjlac1oyMHVRaEMxaUlwWVVLTXZIZzdUSVlnYkRJajVYdmgwa2YyLS0w?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能迭代，企业应用场景拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-anthropic-049
+  date: 2026-07-21
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 推出 Claude Cowork：AI 代理进军桌面应用，加密科技赛道迎来生产力新变量"
+  quote: "Anthropic 推出 Claude Cowork：AI 代理进军桌面应用，加密科技赛道迎来生产力新变量"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE9YZ2FoQ1ZyVXdFeWRtRWhDMTgzQzV5YzRyQVFLekIxWnZjaUJQckE4eDdscFhlcmh4YzctNGhRaWkyNk93cGhyaEpYaXBsUmx1dlNaQnZaaw?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品发布，应用场景扩展，竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-anthropic-050
+  date: 2026-07-21
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "联邦法官正式批准Anthropic 1.5亿美元版权诉讼和解案"
+  quote: "联邦法官正式批准Anthropic 1.5亿美元版权诉讼和解案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zZmZlMTVPVXMzUGZMbUQ2WkM2YU0wNDMtMUU2VG1xelJOYkNBWkNGSWlGR1A1cUZtUTYzU0Zka2IxYXZfMThIc0ZSeGNsVGtQa1E?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):版权诉讼和解，法律风险化解，1.5亿美元。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-anthropic-051
+  date: 2026-07-22
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic与AMD达成数十亿美元合作 锁定最高2GW的GPU容量"
+  quote: "Anthropic与AMD达成数十亿美元合作 锁定最高2GW的GPU容量"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxOdnp2Wkl3Ym5SMWJ6X2o2QjZhTXZlQWVtOUtwcmtXMkNnMUZXaEhtal9rZjZWVlppdURsekxFX2pJTU1Dd25hUXFEYnNCZEJfd2xybmhHWXVwRnUxazJsTkNUUzIyWTMySlJOZlFzaTg1S2JJUGVQcFVtMG1XdGNNcm8xTzhWYUNSNkM4NzJoNXQ4dDJkREpZcGtMOEozWjJNLVFFRg?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作确认，数十亿美元规模，GPU容量锁定。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

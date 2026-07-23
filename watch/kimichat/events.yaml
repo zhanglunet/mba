@@ -650,3 +650,124 @@
   source_type: media
   note: "LLM 预分类建议(high):IPO时间表、K3排名，重要融资与产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-23-kimichat-042
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI总裁称月之暗面Kimi K3“相当不错” 中国模型开发或仅落后美国4个月"
+  quote: "OpenAI总裁称月之暗面Kimi K3“相当不错” 中国模型开发或仅落后美国4个月"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9yYV9BeXRjOWFfeGc0S1MwcExfVzdBSHN2SzJyZ21scXVoN2NMSkw5U1czTmJMNDM1SllYa3dFdjZPcjI5MWhvWkRJTVVqTlZQYzRUVXdhRVZvc0tvRHI0VXRn?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):第三方权威评价，体现Kimi竞争力与技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-kimichat-043
+  date: 2026-07-22
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "白宫指责中国最新一代人工智能模型窃取Anthropic技术"
+  quote: "白宫指责中国最新一代人工智能模型窃取Anthropic技术"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi2wJBVV95cUxQWGp6Y1dheGlSajVNNG5UalNZcmNSSFhFV2RVNjNBdEJ5aXFPS3gtWGFfbDdzTG1Hd2hNSVc3Zkd1c01vcHpvb1NQLUpGbVZJV19HbURqWU40NzBJeDhvR05MSmZQeWV3eTIxWmZ0bTk4SU1HLTd4R2hHYXMyYVJhamlrTGNzcjl4TW5LWGR6UjlXeHcyYjl0dElfV3dQTW5NeWlyeW4xdjR3QkNiTHprMW1oeXZwQ1BFYXlEeFNYYTNERUZNRDZtc2pVb0h5dnEzMDZWQ2JUeXpOdXZuZmlZTDRPUWFjeC1IWWVkTVBLRnE2YnRlZjRob20xVlFubXpBZnRKeVl5bUZxVm5QQnFtbXpyUFJ0Vk5LZ1B6U3N4MkY0Q2xtUkJ6U0dMTmZDNW94MHNETWFDZnh1dGxUYXU5Mjc3YmpQM3pnYmJIVlQ0VHlPSFdGSGhqV3RpOA?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):美国官方指控技术窃取，涉及合规与国际关系风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-kimichat-044
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Kimi让美国AI面临技术“大众化”风险"
+  quote: "Kimi让美国AI面临技术“大众化”风险"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE4zeVZJVExYeU9sMHFWbWRmZ2R4ejB3MDJueVlXTWVwNkMxMDl2X2U5RXRzRmFsWlZ1Q19DTEhiS1VrR043X1RuaVhFV2lhQmdmeHgzRnpCWFpNcUhTeDQxTDZvM0VQNmxYUGJOQW1XTXluRWdCT1E?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):评价Kimi技术影响力，含竞争与风险双重含义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-kimichat-045
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "微软拟为Copilot“换芯”Kimi K3：年省6亿美元背后的商业账与政治险"
+  quote: "微软拟为Copilot“换芯”Kimi K3：年省6亿美元背后的商业账与政治险"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYTJwYnVOMksyWlFOOGlYemtpSUUxMUtObTZkMzVfbTFKRTlRU3pMQTNlVC1ZYlBFWjIyY1BfOXZodzUwMzdCdjU5eDFmNFdPd0V0UldaNlFTRDJ0WWFidUFzMXFnYm5nZjBuOUFIcnoySy12dTNsdGFhME05QmNZZHh1dHJwSURp?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软采用Kimi的商业与政治影响，涉及市场地位与风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-kimichat-046
+  date: 2026-07-22
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "估值500亿美元！月之暗面计划8月启动上市前最后一轮融资"
+  quote: "估值500亿美元！月之暗面计划8月启动上市前最后一轮融资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE1NbTVJNzNXbnNwcXoxNmF1WlpwbkFwcjRHMWxUclMzTGs2TlFESnFXbTFYV1h6R2EtQ0VuaEdzUndTaHZSZnMtU3hNdzZXd1p5M1hGU2JPelJqVFYxc3E1MzNkS3Fldkdx?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资进展与估值信息，体现公司发展动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-kimichat-047
+  date: 2026-07-22
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "德语媒体：特朗普有可能针对中国打首场AI贸易战"
+  quote: "德语媒体：特朗普有可能针对中国打首场AI贸易战"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwJBVV95cUxNemhwUFlWNnBILUNkamQ0SUUxOHBoWlA4LVMxZFhvdnZkYVZPRVZIUjFnUUZoTXptck9SS1VhZG1ZblJLM1UxekVfWmxjYVlOSUNLTVZ0RGFNWV9fQnczVWl3cWtwdTZRZzRxbVZRQzUzMEZFUTBJYVB0bXNhNlRsTHNSZ1g1TjZsZ0ptOFhSVG1fXzZfQVFFWGtxVGtxY2pRN2FYcWttdGQydGUtTUFOam0xTURsY3d1TEltWUxqcEMzUGVlWG9JT0RtNm80bEI1ejdwZU85T2hENHcwYWl4ZFZmTXhYTml3ZUZmRlJsWHJZeEQ0NVVuSXFVSGVTTXhTMndhSDUzdURzYVpGeXFINGdKUmxpV2JQMi1XdTluOFNiRnJVaTVMWnNsSklCQlY5Z05YQ2h0cFBhelXSAbsCQVVfeXFMTXkxRnlIbEhUZVM0a1RXN3BzaVBRR240M2FWWW5GWEVwd1ZILVJER3NZdFlVSEpjVVJsM1dNYTVVQVpYU0g0S0pHZERYakNuZC1uUGE3UEtwb3Y1a05VLWQ3MmFPbDZ4UldlZk01b0lqVGtLR0QzVzM0UGFqVGc0T09XQ3FaTjVVNG42cWNJSnRaM1pLc29GVEZua1NCWDFBdWZabmhlZDdZQkpVOUV0MkttdXh3bzBfTWI1aVNITGFRRWJEandXSG5SZXg2Y1VVV2l5ekNfLXZIVnNxYzlDVUVVTW81dXRkYW44MUc1Sk1FWVRJbUx5VE0tbjlXNHEzenZwQmdnSDNzMEFfaUpmLWhUcUxpcnVDaVhsaUkzRTJtV0d2V3ZyN210UWpEQmNCSzlIYTFWQmNfYWhr?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及贸易政策风险，与Kimi国际竞争相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-kimichat-048
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软拟用Kimi K3算法替换GPT 成本节省高达6亿美元"
+  quote: "微软拟用Kimi K3算法替换GPT 成本节省高达6亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE5OaVd6SHBSNFBydDNZRVQzWkVyQV9TTUtkT2Z2djBSNEVTTHc0MGZBb09FYW9nMGFvYXB3dVlpUy1MRHhwRmZtVDQtM3JWS3lCNEJkTFZZMXRCZjFrOE5ZWDJCaWw3RGVoZW1KUkVMZ2c?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软采用Kimi算法的商业价值体现，市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-kimichat-049
+  date: 2026-07-22
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "白宮指Moonshot竊美AI技術 用英偉達先進芯片"
+  quote: "白宮指Moonshot竊美AI技術 用英偉達先進芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE8yUnVTSnF4V2p3Y0Mya01rUHctaGZEZnNEcUtFVjJYRTZrekdyUXFwUWs0dmpNNERQRWFDekN2Vy1OdUl4WWRrSnlUaFZEV0JZX1FIemJqbThIUmlBQktESTJYUlJ4UdIBZkFVX3lxTE8yUnVTSnF4V2p3Y0Mya01rUHctaGZEZnNEcUtFVjJYRTZrekdyUXFwUWs0dmpNNERQRWFDekN2Vy1OdUl4WWRrSnlUaFZEV0JZX1FIemJqbThIUmlBQktESTJYUlJ4UQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):美国官方指控技术与芯片违规，重大合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

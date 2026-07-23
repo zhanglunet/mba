@@ -309,3 +309,34 @@
   source_type: media
   note: "LLM 预分类建议(high):股价上涨分析,投资者关切,有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-22-meituan-020
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团无人机低空物流配送累计完成订单超100万单"
+  quote: "美团无人机低空物流配送累计完成订单超100万单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE56c2tDTG9BYU1tNGhtcVBjbTBMMDFvam9EREU4eWZtU04yR240d1o1Q21ndHpfVGxrTzFULTRieFZVdmtoNmVJUXIwT0xUQkItMXlz?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):业务里程碑达成，体现美团低空物流进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-meituan-021
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "网传“硕士送餐15元、博士尊享88元”？美团回应：从未上线此类服务"
+  quote: "网传“硕士送餐15元、博士尊享88元”？美团回应：从未上线此类服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1HcVRETkVLeHI4ME9SVVMtMDJsSkRfVXdBdmoxOFFIVVRhdi1ZNlotVXdZQTlqYU9Yd0ZBb0hhNmNTT2pHSzZOaTlpVkJHY3c2RlE?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):虚假服务谣言，美团官方澄清，涉及品牌信誉。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

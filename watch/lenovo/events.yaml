@@ -339,3 +339,19 @@
   source_type: media
   note: "LLM 预分类建议(high):联想AI赞助世界杯，品牌曝光与技术展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-23-lenovo-022
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌将AI资本开支推向2000亿美元，戴尔、联想等服务器厂商进入业绩验证期"
+  quote: "谷歌将AI资本开支推向2000亿美元，戴尔、联想等服务器厂商进入业绩验证期"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUSU0wdnljenFSWl9YRUNXbUJvUVk4eWpRMVFHdTlUWmFwWWVGSlVSek5VbE5ycU1mN1UzRUtaZDlBMk9MdFJYem5xY0lhN1ZsZUxV?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):联想作为服务器厂商受益于AI资本开支增长，业绩验证期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

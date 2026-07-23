@@ -597,3 +597,154 @@
   source_type: media
   note: "LLM 预分类建议(high):苹果Klarna租赁计划提振硬件销售，商业模式创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-22-apple-039
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果被曝准备推出“硬件租赁”计划 欲刺激iPhone等产品销售"
+  quote: "苹果被曝准备推出“硬件租赁”计划 欲刺激iPhone等产品销售"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFB4YlNnZmdFTElaWkVicnJiZjZHSUxhWkF0akhUbWRFUTVZTGI3T3dkYTRIZDYyMDlVc2NnRHhkMUlIbUp3ckV6NQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果新商业模式曝光，涉及销售策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-040
+  date: 2026-07-23
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果 Apple Park 游客中心启动升级改造，AR 展览区暂时关闭|加利福尼亚州|IT之家|苹果官方|库比|蒂诺_手机新浪网"
+  quote: "苹果 Apple Park 游客中心启动升级改造，AR 展览区暂时关闭|加利福尼亚州|IT之家|苹果官方|库比|蒂诺_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAJBVV95cUxPc3FMQXVUbk1weWdfR0tvcDVVN0g3ZWZKME90VUFfSzA4dFQxQjlBaVRkaHY3dVRkYVBNTmlZVmpWenZlblVOZ0tMT3cxOUhfWEluUm1BRm5NeFlZWWVyZEdhTUwwel9BWnRNM2s3YzNrVi1hZG56c2NYd2k1ektka3JLdC1kU09PUjNwZDk1d2lhVFlVMzNRTXZaYTFwZGNwSGJLalo2NEdObnk0c19QaTItX21xcjNpN3c2WGdVWWhOdl9HWm15cW41N1hZMnhFTzhkamNKWHNLNE00Mjg2V2k3NVRVeEFqTmkwY3BUS0FiWjNMUTN6NTdzX2tHb00zcW9Kaw?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果官方设施升级改造，品牌形象相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-apple-041
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果拟推出设备租赁计划以提振销量"
+  quote: "苹果拟推出设备租赁计划以提振销量"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBJX3MtckNQck1xa2JHSTRpR1NtRUFOZnlpOWVjS0p4bUFHYmNyUkt2U2Fkamc3VUh6SWZwZEpmenN1NnJwSllydTRfbWF0NzhoZ0ktQXY1TUZmVF9INHpaNg?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):设备租赁计划重复报道，商业模式创新信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-042
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "AI购物助手或登陆苹果商店，Apple Store隐私政策已更新"
+  quote: "AI购物助手或登陆苹果商店，Apple Store隐私政策已更新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEckJGOUlVdk5EUS1IT29BSGFXbUZmcmRTZ1BhZ3VFZzBiZnBxWEtxdzM5QlR2VEc5VG9SamhrMUxUYkM0S202UV8tSzVqT3FKT0hCUA?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI功能上线+隐私政策更新，涉及产品与合规。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-apple-043
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果牵手Klarna推设备租赁计划，将取代现有iPhone分期付款项目"
+  quote: "苹果牵手Klarna推设备租赁计划，将取代现有iPhone分期付款项目"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5DMVhhbXRsaDRGTm5NN2RhMEpYSC1KYWI1OVRnTndLbDNJSDFYSjIzWERHQ2hNZmN5QmFHNXFmU2tlekpKcnZmcl90Y2Z3MjY0NkJr?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):与Klarna合作租赁计划，战略合作与商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-044
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "曝苹果拟推出月租iPhone"
+  quote: "曝苹果拟推出月租iPhone"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jOW5Pck50VlBfRmI5d2JjeERxVGlKbkRyTzV5ekxfbEZ4RWJSall3LTdpbXl5dE5RU25QeFZ0bnQ4QXBPYk4xVFZFTlNPdTB4UGhuMzYzWDVnZFpKNmdlbjFR?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):月租iPhone计划曝光，商业模式创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-045
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "3nm芯片+Apple Intelligence，苹果终于舍得给iPad下血本了"
+  quote: "3nm芯片+Apple Intelligence，苹果终于舍得给iPad下血本了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdUYyM29oRzFYTlpKZ0FrS0F4RkkzdFlJaVAzTnY5R3EwakN4eE1OUUo4TDFUVE9yZXNnSzhIcEdRMTdHYTJxNlNfMElWX2w4UXZ5OTIxZkdPay03Q0ZTLUlzRVhTeTF5LW5iQS1qTjJWblJ5SjlZNUpiMUd1ZHlxbEhqTV84VkZ6?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):iPad产品升级，3nm芯片+AI功能，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-apple-046
+  date: 2026-07-22
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果Apple Store应用即将迎来AI购物助手"
+  quote: "苹果Apple Store应用即将迎来AI购物助手"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mZlBvVkd6dTRtT0tocTZjbUtEWUZ4cnFkTllvV05SWDd5aHBTQTFrUmJrSDBlVTB1ZjU1LVR2dlMxM3VkT1lXOVpTODcyeUVzaUxob21DLUYxN0RjdUh5NA?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):App Store AI购物助手功能，产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-047
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "传苹果将推出设备租赁计划：涵盖大部分iPhone、iPad和Mac等产品"
+  quote: "传苹果将推出设备租赁计划：涵盖大部分iPhone、iPad和Mac等产品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNTEtEUW5pZmtQUXpNZ0QxbEs2aFJ5LVZvQVAxRTJqXzhTYVJjMl9yUy1FSERfS3V5a2xzRnJFd2Z5RUpWVzNRWnNfUXc3Y0dmTHdkS1JXTTRQalFCQTRuLXlvOXNzdW9iSDJyRUR3Z3YtNHc4bXpscEhsRkZUODFtOWV2akY4ZXFKZm80X3B5Z29nRHkwX0J5ZlNtOEMwOW1URE81UE85WVRuM0NyN3lfdjNR?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):设备租赁计划重复报道，覆盖多产品线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-apple-048
+  date: 2026-07-22
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "WWDC26前瞻：Apple Intelligence在海外会是什么样"
+  quote: "WWDC26前瞻：Apple Intelligence在海外会是什么样"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi8gFBVV95cUxQXzM4aU02SHBSTWFTTjZULWUyWjg1bUhIWmNPTjhQQWVYb2ZfczQxemZ2eXR6ZWE1STViUzIwNFRGMUxMakJoZHFiM1VVaGFQNkI0MVV4TDYxMG8zb3dkRWhqaVhHbUdJUmtrRWJIMXA0ZHp1RDQxbkY5T1VjVVltMnQtVzdPa0ROc1FCb1ctaTJZeUNiY3gycWgwbmhSQnA2ZUlvWTlPUlM1WmVlZF83R2VVbzVrb3E5V2xPZHVPbjExN3dEZGpDRE9xVkI0UlN0MkZWQXJvaFVyd0xiZHBSNEItUWJ1RGUwbzg3LTktSU5MUQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):WWDC前瞻分析，Apple Intelligence国际化策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

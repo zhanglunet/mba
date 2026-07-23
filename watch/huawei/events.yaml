@@ -444,3 +444,79 @@
   source_type: media
   note: "LLM 预分类建议(high):产品功能适配更新，涉及用户体验完善。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-23-huawei-029
+  date: 2026-07-23
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为Mate 80拍小孩清楚吗？实测120fps抓拍+AI跟焦，3个维度说清+FAQ"
+  quote: "华为Mate 80拍小孩清楚吗？实测120fps抓拍+AI跟焦，3个维度说清+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPejVISEViRUdvNXVvU3p2OEY1V2xKVlBwamFiaWVfVXo1bEkzOWR5UWptYUY0SzZPRGdZRGNiMkV4UDdFdFJ1ZHc4Q0FWNVh4QkRCWm02TU5laXQ5NHIxRW1TeTVxWFQ4NThYU3hpY1VCZGN4YlR5cUV2ZGUxeUhJNg?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能评测，Mate 80拍摄能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-huawei-030
+  date: 2026-07-23
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "4千到6千预算选华为：鸿蒙AI+大内存+耐用，3款机型深度对比+FAQ"
+  quote: "4千到6千预算选华为：鸿蒙AI+大内存+耐用，3款机型深度对比+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPOXZHaTduUnVFNHRTd1JzendyU1R2OTZLREpRYzI5eGxNSHlUUE9hTGVxdEpueWVWRXozaW5vUTE3OTNlVGJ0dnZCdHpvSmI2cW5BSFZuQ2hwUVp0UFZfX0hBUjU0THFBbDY1LURvMmpKNk5CZ3BUX01LTEtqbUtxcw?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品对比评测，鸿蒙AI功能宣传。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-huawei-031
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为鲲鹏桌面搭配英伟达RTX 4060 Windows-on-Arm游戏性能展现新潜力- Huawei 华为"
+  quote: "华为鲲鹏桌面搭配英伟达RTX 4060 Windows-on-Arm游戏性能展现新潜力- Huawei 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE10X3hlN1U2NjlxUl9mWFdKS2I1Nk92UjFya0ZUMGhWaGlfSmpvb1FVR0c3c2h5RGlNYmhRMmhabmFMOTdGdF9vTjFMVUUyTFhxUEczSGdmblZCaW5vcUEyYQ?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):鲲鹏桌面性能展示，生态能力验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-huawei-032
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "解锁专业影像新境界，华为Pura70 Pro+如何重塑你的移动生活体验"
+  quote: "解锁专业影像新境界，华为Pura70 Pro+如何重塑你的移动生活体验"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBaZWJrd29BUTRoZ3l2R2pvakFWTWs2ZUkyRXZBeUExMVdNYWtubmhmZDhMLUZjanNOWDFoNFQ1VGVRaVJubFFFeTN2TTZfeGZ2anJUQ2ltSnpCczh6UGpGc09n?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):产品功能宣传，Pura70 Pro+影像能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-huawei-033
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为 Pura 90 官宣，还有抢跑苹果的「阔折叠」"
+  quote: "华为 Pura 90 官宣，还有抢跑苹果的「阔折叠」"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTmdocjI2U3prM3Q1RzE3bnc1b0ZERnYyNS10eWFCYmJDR1RjN1ZTcF8tM2VCYkV5aG5mWUZZR0NGU3RZYW05WEVpaWdEM0ZYX3JJNUNzYVBDRnhXRHY0am5pR25lTTVwb1U4RWM2QXNFOFpTblpGa2E4Q204aUEwSXZoSGpOOEFsR1ZGVWtZeUZReHgtZ2ZMSVVUZjNVZG9EQVlHRzd1N3FnMHEyTm9OLVg1Zl9jYTVQZ195eXN0RHJYMjRMd19jdFlDRF9HdGZ2?oc=5
+  fetched_at: "2026-07-23T05:36:13Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新品官宣，竞争对标信息，有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
