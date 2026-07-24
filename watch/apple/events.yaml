@@ -748,3 +748,109 @@
   source_type: media
   note: "LLM 预分类建议(med):WWDC前瞻分析，Apple Intelligence国际化策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-23-apple-049
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "史上首次!苹果手表上线Siri AI:11年语音助手彻底进化"
+  quote: "史上首次!苹果手表上线Siri AI:11年语音助手彻底进化"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3VoakFIN19UWXozTjNRb1J5Rk1GQzVVd0JrU3J6QTkxWFR1amZfZlY0VWdJQkkxNVV5ckhhMVF1ZGU4cVJLVWFpNVgtdzVERTBCNlZ0cFhkZ3UtUzB4djJMc25YanVlSkk1S0s2d2dURTkxYWVlYmV2SU1HNmZsSQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果手表Siri AI功能升级，产品创新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-050
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果 Apple Store 应用有望上线“AI 购物助手”，辅助用户挑选商品|数据|苹果公司|隐私|虚拟|合作伙伴_手机新浪网"
+  quote: "苹果 Apple Store 应用有望上线“AI 购物助手”，辅助用户挑选商品|数据|苹果公司|隐私|虚拟|合作伙伴_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwJBVV95cUxPR2xZNnYxbTJ4eURfZWZKZ3JDQjhnbEhfXzg5OVZEOF9wMWFYcWhmNDhnVHM0ZDZWZmUzTGZoMmVNc2paVzV6bEg3U3hBaEVpaTM0QzRHY1NNQkpmRTdxdkxWNEJKVTVURDU1UHdMTXJ0c215RGV5eDVVcEtJVnFkcDhTSHR1OW1PaExqNWQ1bUdjNVplYTdSX2FuNXRscGFMaWs1d3UzY0FZUGlQcDcyMWpBS0x3dU1SMnB4eDRzdVV4bmxTZFBrX0ZHR0RyWXhNUm9BVW83R2lPNDdncEVYV2kyQnVFN0RVY3RQMVVPSVVPdTVpdUprWHhCNEsxTGp1dG8wbWZua0RtMk9xVGw4?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):Apple Store AI购物助手功能规划，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-051
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Street Color：苹果计划于2027年将Apple Maps整合进Ford的通用电动汽车平台"
+  quote: "Street Color：苹果计划于2027年将Apple Maps整合进Ford的通用电动汽车平台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNzBjN0ZuSDZXeDVDZFZDUFNWMVZIY0NuTVNMOV9odUt6MURuX3ZmLTd1WnplS0dNSi0wdVRETTdxaVY3NWQyM0w5M3RZeTcwU0ktTE9TU3RYOXhJZXUzNTB5bWdKV3RNSWswUEVBcXdwQVhnOGowekVVTExzcVF0emRaQVFfS2lWa3pKTmJWSldVNnVkd1lnU0tSU3hyZlk4bnd0d09ja28?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果与Ford合作整合Apple Maps，战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-apple-052
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果公司正准备与 Klarna 合作，在 7 月底前推出一项新的设备租赁计划。"
+  quote: "苹果公司正准备与 Klarna 合作，在 7 月底前推出一项新的设备租赁计划。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxNWHprVy11MTkxb1dRVFhUZHhHLTF4b3dfNjF0cWpodTVfcEIyTGY0Smdlc1RDSDNobGwzRXU2eEZ4aGRYTGszbXlpdkp1TmRjQjV3LWJXb0tHSWFkRDBqa1lYYVZ5M3htQTljdmltbkpzSlRYcWttWGJqOWUydWJMY3RJWlBCUS1iZUlqSWVCTnZfRXE2?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果与Klarna合作设备租赁计划，商业模式创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-053
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果秋季发布会前瞻：国行AI这次终于“不鸽”了"
+  quote: "苹果秋季发布会前瞻：国行AI这次终于“不鸽”了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTFBjVTROY0l2dmtLeVBncy00aHo0Q25VR0pWMWdILXhxWUNnMUY1MDVHQl9udlUwdzhqcU5oaVluczRKMXljWWRVSXJ2N2hILW5JSDFaaTduZw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):秋季发布会预期，涉及国行AI功能承诺。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-054
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果拟推月租模式，能否落地中国？"
+  quote: "苹果拟推月租模式，能否落地中国？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1sbW5LWEFWM2M0RWxhdDdPcWFSb1pFM25yOURaVVo0WEEzb2dqUUVkX2ljQnlWMFlsQjNHeGMtck1pTzg3c0dWRERJUDgzVTRPRGJhSGhyeXUyWlNSY1ZtUzRn?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):商业模式创新，涉及中国市场落地可行性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-055
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "外媒：苹果 Apple Store 应用将上线“虚拟购物助手”"
+  quote: "外媒：苹果 Apple Store 应用将上线“虚拟购物助手”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOdXdBbl9PUDRiSEViNmRiVzVLRkxSM1lweGlBRUxfMERZUWhpQzFidVc2cTZqb2YxN2tzMTA1SlZzSUdtNU10QS1STmtkN3JBaGpNMVFCMGdpVmhqV3FKV0hKUFVqdTRmbEdlWFRZVl9OSmFXNUowcmhzdm5IRTVILVItZmxuQ200eVFBOG1LME52TUlHV25GTDVFSERnQm9MQ0dLUjNnSUJCTFdaUXp0VXh3?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI购物助手功能上线，零售体验升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

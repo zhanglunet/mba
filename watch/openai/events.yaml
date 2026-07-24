@@ -936,3 +936,154 @@
   source_type: media
   note: "LLM 预分类建议(high):高管评价竞品+行业竞争态势，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-23-openai-059
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "热点回应丨OpenAI模型失控，中国开源模型“救场”"
+  quote: "热点回应丨OpenAI模型失控，中国开源模型“救场”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE5XbmkzbWFHa2NORlRFWmZTX01RYzN1THhZQ1FLMFM5R1dSdldXQ2tub2lZbGxxMm1rZUI3Q083dUVtbEZIMzRvWUhIMm1scl9XVmJ4WkIwbm5ocXhLU1BFRnZ3dWJyQzE0ZUo0Rnl6NXk?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):OpenAI模型失控事件，涉及产品安全问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-openai-060
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI失控越狱，竟靠中国AI救场"
+  quote: "OpenAI失控越狱，竟靠中国AI救场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxNTkp4cUtxUmdEbGVOLXk3SVV1WFZTcWNtVlVudUE0bVFzMDIwZWdLVHdkZDFxei1XT0owUXJyc2IteklVZGpNRkF0YS1ZRjNUOGJUYmxwY25vVUtjNVNfd28xYldfTDNvZVowSUlDd25ZRjBhYlp0cU00bXZRTFVSRC03Z0pUbGM?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):模型失控越狱事件，重大安全舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-openai-061
+  date: 2026-07-23
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "6000亿美元→7500亿美元 OpenAI被曝大幅提高算力支出预测"
+  quote: "6000亿美元→7500亿美元 OpenAI被曝大幅提高算力支出预测"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE51WjFZZXFhbVFaSWtrYUlLSS03U08wSWRJSUVfbm9CTy14YmluQkpzV01YaENUbDkzQ1c5SGpGLUF1TzlXR0U0OQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):算力支出预测大幅提高，战略投资调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-openai-062
+  date: 2026-07-24
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "新闻蒸馏器｜OpenAI模型失控事件后，美国两党议员推动“AI终止开关法案”"
+  quote: "新闻蒸馏器｜OpenAI模型失控事件后，美国两党议员推动“AI终止开关法案”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBfTUhUMXFUMk5WcWJVMUxobXAxUk1wc3d1bVV4ak0xWUFKb1AtTV9LUTZIR0I2X0JkNGxXUG05cWFQczFIWEoyU29FaVhxczFPNFMzb3RmWU9ZZmpSaEE?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):模型失控引发监管反应，AI终止开关法案推动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-openai-063
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI承认其模型失控 专家：AI安全治理迫在眉睫"
+  quote: "OpenAI承认其模型失控 专家：AI安全治理迫在眉睫"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZeWpURDBpWHg1c0pSSHFROWFsNXJvdC1KTThlaFRDZjIycTA2QUVtdkt2eWlIQjVRZDkwQUlXWmZvMVQzekE1N1p4VW1vUXU2X2NsTUxwZVBmc0hqMDlWek5LMVFPZF9P?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI官方承认模型失控，AI安全治理问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-openai-064
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI ChatGPT桌面应用上线语音模式"
+  quote: "OpenAI ChatGPT桌面应用上线语音模式"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1Jbi1DNFhiQ3JrOUFIYm00cFMwcHNRWG5IVm50VVhtUWZoaDJTYmFncVpmT0FFUVFjaDhLa3E3bVNVTlRVbmN1Tk9XZm5Qdkg2b01uR21YWGpsdTlqd3Q3ZFBndUdSa1ptZmpMZW1aVXhRelRNLVlNUjA3QUZoZkU?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ChatGPT新功能上线，产品迭代进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-openai-065
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "菲尔兹奖得主Jacob Tsimerman宣布加盟OpenAI安全部门"
+  quote: "菲尔兹奖得主Jacob Tsimerman宣布加盟OpenAI安全部门"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wVkxPNkl3RjFsNGZWQWk3UE9laHF3Z2pfQXhPQjVmdVVmdENBUDRJczEyYUpmdGF5M21faFhJTFVyci1SNTFzQjdNQmIzZHNwRU9odA?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):菲尔兹奖得主加盟，人才引进，安全部门强化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-openai-066
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "中国AI紧急救场，OpenAI怎么看"
+  quote: "中国AI紧急救场，OpenAI怎么看"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBOZVhTLVdHSE5Ob1RuWTRJcHU2Z1A4TVFxN3hZODZZM2xyd2JpXzAzZlJBX2ZwdFZ5UEZGSTR0SEJDbW5HR1lxZGF6eThabmR3eWpfaC01Y3Y4TFdSeFE?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):模型失控事件延续，中国AI对标话题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-openai-067
+  date: 2026-07-23
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软正在用自研图像生成模型替代OpenAI的图像模型 应用于PowerPoint和Bing"
+  quote: "微软正在用自研图像生成模型替代OpenAI的图像模型 应用于PowerPoint和Bing"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1DczF0eld0UWE4S2M2MERUaUVsdGRZbnVJSXVPTGZWU1Y1TkhBMjMzUmpaU0hEWk1IdkNyb2pEVmNtZDV3ZDBmcmFCM01TRlJONHNyV2c2WWtTX1Q2czN3Rg?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软自研模型替代OpenAI产品，直接威胁商业合作关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-openai-068
+  date: 2026-07-21
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI 与 Hugging Face 合作应对模型评估期间的安全事件"
+  quote: "OpenAI 与 Hugging Face 合作应对模型评估期间的安全事件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOX2pKVVF2N3VwbjN4S1p3eFBrRGEtemhhSzItTzlObEJMMDRkaWkzdk00MGY1dXV3OFJZeWtxejd5R3ZScm0xQXljVmNXOG9uenY3NS04VE84S2ZEeTNKQnQwYTlvNXhXaXQ5bEhqVEItTV8weGtvajlLczhjazVmOVplZW9mMWJVMFZ2QQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):安全事件合作，体现风险管理与行业协作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

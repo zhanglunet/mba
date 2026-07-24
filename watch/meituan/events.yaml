@@ -340,3 +340,49 @@
   source_type: media
   note: "LLM 预分类建议(high):虚假服务谣言，美团官方澄清，涉及品牌信誉。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-22-meituan-022
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团无人机累计完成订单超100万单"
+  quote: "美团无人机累计完成订单超100万单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5Q2Z3TWFGLXplYkhCTzJRQWpTblhIckJvOFlLS3VETFBFUzN0YWpMbGlUTDBCcUItTXRRUnNSMXpTbWRheWZZc2JOendDX015bkRjTkwwN1Jza3Q2LWd4bw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):无人机业务里程碑，产品进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-meituan-023
+  date: 2026-07-23
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团(3690.HK)首次覆盖报告：外卖竞争趋缓 盈利持续修复"
+  quote: "美团(3690.HK)首次覆盖报告：外卖竞争趋缓 盈利持续修复"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNUk9kcDFieGNXdWlKLW1jUkJVVEk5anRvczJWZTBmQl9tdUE5aVlIN1BjVjBnaVIyRjg4YmU0QjFsaUZYcS1LaEdxQklHUmxrZEZ4Q05fbkVNNmNCai13eGI2empBVEVoVW5lTVlUbWF1dnB6c2tjeTBuNUxCbFFlenUyOUhZR1FVdUdoTkMtUEZEZ0xBYU8xVVJVd1NraDJMUENTYjlNRmVtT0VCbU9zdW1n?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师首次覆盖，涉及盈利修复预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-meituan-024
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团独投A轮，具身智能公司“自变量机器人”已融资超10亿元"
+  quote: "美团独投A轮，具身智能公司“自变量机器人”已融资超10亿元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JVkZBRjNSdnhmR1JBUXpjbkp5Q2tvYzN4V3lqYmJHc2FMNWlrVFlheFhvT2I2N3lKRnAtMDh5UDVwLXlVTUtzS1RiSFFyaGc2Y1E?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):投资具身智能公司，体现战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -771,3 +771,139 @@
   source_type: media
   note: "LLM 预分类建议(high):首份财报预期引发市场分歧，关键信息点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-23-spacex-050
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "IPO后首次大考！SpaceX拟明日凌晨再试飞星舰，此前因发动机故障遗憾推迟"
+  quote: "IPO后首次大考！SpaceX拟明日凌晨再试飞星舰，此前因发动机故障遗憾推迟"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5OY0JVT3AxaTJ4OHJCQ2xNdko3Yzg0ajFIMWRWWUtEVHhHTGktdDhaRVdhQjkwRkZyNG5CZTdaUnAtV09vQmxZclJjUXVmVGRWNVY0?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰飞行测试重要进展，技术里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-spacex-051
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX星舰第13次飞行测试将首次部署20颗星链V3卫星"
+  quote: "SpaceX星舰第13次飞行测试将首次部署20颗星链V3卫星"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9XUVNLLURyMWJEdllrWVVzYVA4RHpQMXZhMWZ2a1k5QlNoZlUxdS1rUU95VGdwRnU4akM3cVQwcWxtYkdIMDFPM2ZWM04zV0MxT3BUWUVfUEZLUXlBODNrVUd3?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰部署星链卫星，业务进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-spacex-052
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "“木头姐”力挺SpaceX：或成为“全球历史上最重要的公司”"
+  quote: "“木头姐”力挺SpaceX：或成为“全球历史上最重要的公司”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE9rRnhQdklJR1h1T3FScjVNTF9HR2owY1NuSXg2T0c1SWxINXRyWGZ5RGRUdmxDUllpanFJVnJYZ0pJVk83V19VTWtjeHFDUWhsb1V1c2NxSHdyZ1NqaWl2MWxTd0ZpZw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):知名投资人看好评价，舆论支持。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-spacex-053
+  date: 2026-07-23
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX AI 计划在得克萨斯州大规模扩建数据中心"
+  quote: "SpaceX AI 计划在得克萨斯州大规模扩建数据中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxOaUxwZnIwVDdYdEh1NzRDd0NnRk1qRnpqUU8xVjd6Tjg2OWFDMHpiOGZxWmpmZE9qdGxoY0Q4V2RaR1pCZ3dWSTk3ZmNhWGdfLUw0b0NHRWhfWUcyeExqcGQtaFpJcFFlUVJ6NVc1THdsVEZJMTdSdHdRMVJNZnQ4bnB2RHZDX0U?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX战略扩张，数据中心投资具体事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-spacex-054
+  date: 2026-07-23
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "影响市场重大事件：“木头姐”力挺SpaceX：或成为“全球历史上最重要的公司”；“太空光伏工作组”将成立"
+  quote: "影响市场重大事件：“木头姐”力挺SpaceX：或成为“全球历史上最重要的公司”；“太空光伏工作组”将成立"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5KaFhXX1JIVE5Db0wyQ0dDTExiTEN1RWRrdjNvQ2xyZTVzNlhrUzJsWUZZZVE0WmIycEFNRTFPNkxIZXFBY1VBdEhOLVdIVHVRXzdScndGaW9oQXNOczJjTnFISWRUQQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):知名投资人背书，太空光伏工作组成立，重大利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-spacex-055
+  date: 2026-07-23
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX股价腰斩 市值蒸发1万亿 发生了什么？ 全球募资规模前十的超级IPO，大部分在上市初期都经历了冲高回落。但这里面有一个本质的区别x像沙特阿美这样的公司，是“印钞机式”盈利，市场给它的定价逻"
+  quote: "SpaceX股价腰斩 市值蒸发1万亿 发生了什么？ 全球募资规模前十的超级IPO，大部分在上市初期都经历了冲高回落。但这里面有一个本质的区别x像沙特阿美这样的公司，是“印钞机式”盈利，市场给它的定价逻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFAwVURhNlhTZ0lkY0pYWkJVUXZGUUtyZ3EzT1N5R3JzYUhhX3lCZ2pNbW9tVTh3Q1c0T0gxRDJQekhVQVRuRndEeFpuMFo2YVVIMmc?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO后股价大幅下跌，市值蒸发，重大负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-spacex-056
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌披露持有SpaceX股份941亿美元 其中800亿美元受短期禁售协议约束"
+  quote: "谷歌披露持有SpaceX股份941亿美元 其中800亿美元受短期禁售协议约束"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE01aTcwcXRZMmN6VUFHbkRDV1J3b0thWVF2M2UyaktSWmZJTDVKd291UjdlZE9WNGFRS3E3Z2NjUU9mWnRKYkI1MkE3RTF6cXpoc09LeWJYU1BZZTRQRGpCU21YaDYwRnQ1Z3c?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌持股披露，涉及股权结构和禁售协议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-spacex-057
+  date: 2026-07-24
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "市值蒸发数千亿！特斯拉大跌14.5%、SpaceX腰斩，马斯克的故事讲不通了？"
+  quote: "市值蒸发数千亿！特斯拉大跌14.5%、SpaceX腰斩，马斯克的故事讲不通了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE11cFFNUVozSmhnd1FZbW9JSGZkVTE4MGNtbGxfTHlJM2JCVHZuYjUtcHR1Z3FULS11M2xFQzNmZmlCX1Vqc2Y0MTN1cXFObVU0M3B6aWprV00wTGFmMV96SG9R?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX市值腰斩，与特斯拉联动下跌，重大负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-spacex-058
+  date: 2026-07-23
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX拟在得州新建数据中心 规模或超孟菲斯基础设施"
+  quote: "SpaceX拟在得州新建数据中心 规模或超孟菲斯基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBnUU1qUVplMjJQa0I2aGlJemprVU9KcVpqbUZWVzFYN2J4aUVrcHNjNVY1UzhhWFoyTG53YXJVZl9PRFpMTmxwYw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):数据中心扩建计划，战略投资具体信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

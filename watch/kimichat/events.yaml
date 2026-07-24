@@ -771,3 +771,139 @@
   source_type: media
   note: "LLM 预分类建议(high):美国官方指控技术与芯片违规，重大合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-24-kimichat-050
+  date: 2026-07-24
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "美中AI科技战：白宫称中国“月之暗面”Kimi K3模型窃取Anthropic技术"
+  quote: "美中AI科技战：白宫称中国“月之暗面”Kimi K3模型窃取Anthropic技术"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFB4OWlMbElJZmY2UHFyTEV1QkduWXZ5Z211Qkt1d2F1ZnpPcDNTQTJRQjRMLUJyUXZQQnFjZFJuUFQwcGZPbDRKekw2U1Z2OTJOMDFVOTgyRC1heklTMk1fdXdXODBkZ9IBa0FVX3lxTE9lYzhkN1hHc1VtejJVRVZsVnB5M0IzNHNoNF8xdjliZV92Y0Q1NHIyNDBuUjNqVTlmdVViLTZYY2l1SnZFdjZ4RXVoQ0pmZ1dlamhrUXltTnp0UjRqcS1yVEgwSV9lbTBEMzU4?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):白宫指控Kimi窃取Anthropic技术，重大负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-kimichat-051
+  date: 2026-07-23
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "美国官员指控中国“月之暗面”窃取Anthropic模型，并称其获取受限英伟达芯片"
+  quote: "美国官员指控中国“月之暗面”窃取Anthropic模型，并称其获取受限英伟达芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi6wFBVV95cUxQS0FlUEp6aTh6Rllubmpvb3JGQTlaQVQ5RXZOQk11aUN1TV9GNGVrZkNUTnk1WUN6ZC16aktTeUtBRXZlTmQyYkhFczdYNnlNMlRFUWwyWXpYekp2YW02UHg2S2NfRGFkeEJJOHpER2U5b3AyMEZ0UEZmLUMxNmtaS0hiWXNCcjRjZUVOMC02OTNUaFJTaFFwVGJuVUpFSjA1X2l2REtfN0ZabDlUN1JIMm45Ym1OZnJ2R2NZRnlIN3Fsbm5sRVVHRUthYlJZZFNwWGttMXNkdWNBUnpEQVJpVndDSmp0c1h4clh30gHrAUFVX3lxTFBLQWVQSnppOHpGWW5uam9vckZBOVpBVDlFdk5CTXVpQ3VNX0Y0ZWtmQ1ROeTVZQ3pkLXpqS1N5S0FFdmVOZDJiSEVzN1g2eU0yVEVRbDJZelh6SnZhbTZQeDZLY19EYWR4Qkk4ekRHZTlvcDIwRnRQRmYtQzE2a1pLSGJZc0JyNGNlRU4wLTY5M1RoUlNoUXBUYm5VSkVKMDVfaXZES183RlpsOVQ3UkgybjlibU5mcnZHY1lGeUg3cWxubmxFVUdFS2FiUllkU3BYa20xc2R1Y0FSekRBUmlWd0NKanRzWHhyWHc?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美国官员指控窃取技术、获取受限芯片，涉及合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-kimichat-052
+  date: 2026-07-23
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "美控月之暗面窃取AI技术 Kimi模型引发美中新争端"
+  quote: "美控月之暗面窃取AI技术 Kimi模型引发美中新争端"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTFBRVFhNWjFkRTY3YnlyWG90b3prUWdueURnRDZqYzl1ZEw2OUExZWxiQU1udVItMmNPUFV6dEtfdnpwcXV6NnRMSHpkQ1ItV0RadVJtem83ZXBrSjE2Uk1KT00xRWx2Rzl0?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重复指控窃取AI技术，引发美中争端，重大舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-kimichat-053
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi K3引爆全网的秘密：2.8万亿参数之外，杨植麟和他的天才团队，最小成员仅17岁！"
+  quote: "Kimi K3引爆全网的秘密：2.8万亿参数之外，杨植麟和他的天才团队，最小成员仅17岁！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOQ3pneC1sbjN4Sy1XSXNNX3N2Z0ZsU0Z1cm9aRTNBdE0yNE5TTHFJdEotaVFQcGZ4TXNENERnbUFRNUhzaFl4WFhYTEQ4UElKbF9EbGRITDNlRTc4T2Z5YkU0bTZ6V2JLcEwwQjlwdm5XSXNINzdDMXUwZXk2ZVk1dE90Ukx5X0xCQ2xYb3VBNHV0Y1BGZG1uLVZKOFJSdUtxbHpIdjZSNU5zZDFFaHEwWmpB?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):产品发布亮点（参数规模、团队构成），但含标题党成分。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-kimichat-054
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "从摇滚主唱到AI新贵:杨植麟与月之暗面KIMI-K3的崛起"
+  quote: "从摇滚主唱到AI新贵:杨植麟与月之暗面KIMI-K3的崛起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5yNGJ4ay03cU5GdnM4RGNKV1FDeXo3YXdMRXJ5UlVrT0hhZTdXT0FlTnhZQnl4dlJTQTFIaW1aaG94TDltMXpDQ3VnNDhJeDdrTTViTjVfQ25qV1FKVGZmSGo2X2NTQ1ZQN1JPZGxiam1VaTdtMmt5VkQwTGNjWHc?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(med):创始人背景故事与产品发布关联，宣传性质较强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-kimichat-055
+  date: 2026-07-24
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi K3登顶全球第一、估值500亿美元冲刺IPO，月之暗面到底有多强？"
+  quote: "Kimi K3登顶全球第一、估值500亿美元冲刺IPO，月之暗面到底有多强？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9tMEd3UGdZU1NDRUVkRTl3SUk1Y1JJREQ3ZHBCR2FLVVR3ODV4ZVZ4aU13Tk5oMWRIMURCdkdJSkozQm5YeDJPSS1XQTNUYUZWR1B0eGtGTTlDSHgxQmRrMElB?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及估值、IPO计划等重要商业信息，但含夸大成分。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-kimichat-056
+  date: 2026-07-23
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "美指月之暗面窃取美企AI技术 或列入贸易黑名单"
+  quote: "美指月之暗面窃取美企AI技术 或列入贸易黑名单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE5hM0N2dXh1UzVUM3lScHZRa1hQTEc4WlF1dHNoaVpIekkyUjJzY1dWdzYxLXExZGdRQWFnUHFOVXpKWUtiY0NTamxnSks1WkJ0cjhpcW9vSk9XR2RaaWwzZDlNdUE2c3RzUWc?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美国贸易黑名单威胁，重大合规风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-kimichat-057
+  date: 2026-07-24
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "中国新一代开放权重AI模型引发美国热议"
+  quote: "中国新一代开放权重AI模型引发美国热议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE01UFVab0tBdHliOUZsNG8xM1ozTFFtSjZmXzY5ME9NdkJNSmtkM1g4VGNkNkVZUkx1N3ZEWGZvSUFCQ04tYUVDb1k0Z1hLdGhKdF9RaWhTNTNSWVRtVk5BTXBR?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):中国AI模型引发美国关注，涉及地缘政治舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-kimichat-058
+  date: 2026-07-22
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "月之暗面计划何时上市？目标估值多少？"
+  quote: "月之暗面计划何时上市？目标估值多少？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1DeGZ3QmphVzFrR3prS2EzQm1xb0Vwak1CSzVrcF85cFd0RnFZTVU5Y1gzcmREV0dicXdzc0tubkRENjJDWTJzUkdEWjItS0ZVaUNwQ1pRa1JNSXc3cEFnVTdQSzQ0S2ZsTEJzY3hFOGZCZElSQ2MtOVFLWnF2aEU?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO预期问询，涉及融资计划信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

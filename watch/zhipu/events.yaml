@@ -237,3 +237,19 @@
   source_type: media
   note: "LLM 预分类建议(high):并购事件，战略布局舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-22-zhipu-014
+  date: 2026-07-22
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "港股评级汇总：中金公司上调智谱评级至跑赢行业"
+  quote: "港股评级汇总：中金公司上调智谱评级至跑赢行业"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxONmlSd0l5MGtPd2NJa2R0SEpwbzY1YmJyMVhnS1p1TEl3Y0M2OXVuREVEZUp5clM2RUIwTllrTnFMYUxCbC14QTVYZ0kzV3FfX09aNlJOZWhwN2JycXgxSEFsbXE0NXI3aVA1ZS1kb2hJZ2NxdERfN3c4c2pyTmUxX0FZZWNpam5Qa0JndEdNNGt0eFN0a004RXln?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):券商上调评级，市场认可信号，利好舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -520,3 +520,34 @@
   source_type: media
   note: "LLM 预分类建议(high):新品官宣，竞争对标信息，有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-24-huawei-034
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为入局！AI眼镜再添重磅玩家"
+  quote: "华为入局！AI眼镜再添重磅玩家"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5XOVpOOEM3cmhYUjhhUGhJQ3NKeVI4MFpXanFhZzdvSGU0RC1VLWdIQ0doSUx2clRPSGtjNUp6NVJoMHgybDJZWA?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为进入AI眼镜赛道，新品类布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-huawei-035
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为Nova 11系列发布会亮点"
+  quote: "华为Nova 11系列发布会亮点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE51VjFwd195Rm5FUTJ1TGlBWFFjVm5tNXlsNDlGcTBqdXFoZkstTFJxVFFPd3lKQ3YzNkhtMGdQcy1RZjRJdTNLOXZUeFRMQ3BHZGs1Zw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):Nova系列发布会，产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

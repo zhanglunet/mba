@@ -537,3 +537,124 @@
   source_type: media
   note: "LLM 预分类建议(high):融资/投资事件，品牌资本舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-23-deepseek-035
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "梁文锋与投资人4小时闭门会内容流出 AGI才是目标 不急着现在抢芝麻"
+  quote: "梁文锋与投资人4小时闭门会内容流出 AGI才是目标 不急着现在抢芝麻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxQNzlacmJKQ3Q5c1FaVEZoaERDeVlwRjJZNGQ2blRGZFI0NGZ6eXJfMW5GanFPOTBCTnhlTW00Q2NvSGkyQ3Z4VDJyUWtHc1o5TGVkRTJlQy00Y1Ztck5KLXFxYUNRYVRWa3Z4NWt2WlFrQnNHRVB0c096T2NBNUFxMzVB?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人闭门会内容泄露，涉及战略意图与信息安全。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-deepseek-036
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek今年已增资65%"
+  quote: "DeepSeek今年已增资65%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQVTQ5NFF5RWNyazl2elI1VVRLejFTcjFrb2Z2aHcwOUJHcHZxWTlkZm9nYXl5SW1CSEFrWTFWOTVrSV8zdVdDQTZ1bFd5dTNHeG1sLVd3V3Z1LWVoMHFrRTJTQ0lHZmZ1ZFFGOFJYRlF3ZWZ4NHdtSFhvZXU4Tk1GZ2JFdkh2VVNfUGJLcw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资增长65%，融资进展显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-deepseek-037
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "梁文锋：DeepSeek不追求成为字节或腾讯 AGI是首要目标"
+  quote: "梁文锋：DeepSeek不追求成为字节或腾讯 AGI是首要目标"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxNX0dlNmNWb3lwX1dnS0lKa3V1aFNHdFpVT0J4cUJoUGZreUtTaHpLNXF0NmN4OW9qTDgwclFCajhZVkFQTVhPcW5IQzlsMGh0QVdwQXE5ZHFpUzd3ZG1lLWxzWERXTnJ1Q2x1Qy1RdDhCRWZJUWRXZnhNTjZkcnY4eWZ6Rlc3dw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人公开表态战略目标，明确AGI定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-deepseek-038
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek估值超3500亿元，小鹏宣布2027年全球推人形机器人，AI商业化的下半场开始了？"
+  quote: "DeepSeek估值超3500亿元，小鹏宣布2027年全球推人形机器人，AI商业化的下半场开始了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE4zbDJDTFpLdUFURWFkU0M5TVJKOHZ4NXE0bUM1TXpDcXh4WG4tdFNGU3RpRWczbVdLQkhvWkItS1dfa003Z1Z4b2xCMU9HZXBpazlVNVpsM3N6Q2dzdldHZHRxX2xDZWNZbHZ1NzJTY0JsTHFSY3RYd3hzNGRLTHM?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):估值超3500亿元，融资规模与市场地位重大突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-deepseek-039
+  date: 2026-07-24
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "梁文峰闭门会实录刷屏背后：DeepSeek 3个月时间已两次增资"
+  quote: "梁文峰闭门会实录刷屏背后：DeepSeek 3个月时间已两次增资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE94d1Azd25rTndyRGcycVJyZ1psUnByYl9hZUNzSXhBeGlDazBFUVRnZThfLVBlcGNSd28wVVNhTzFLU2p1XzNmV2NzMjhrWTZhdnpmTlRHUllzdVJfZTZJZEhR?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):3个月两次增资，融资频率与规模显著加速。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-deepseek-040
+  date: 2026-07-24
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "别重蹈覆辙！胡锡进喊话kimi、DeepSeek掌门人杨植麟、梁文锋：别去美英加澳新这五国"
+  quote: "别重蹈覆辙！胡锡进喊话kimi、DeepSeek掌门人杨植麟、梁文锋：别去美英加澳新这五国"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTFBsT2wtQXROTnhrY3d1OGtRZTZERWNUM3Y4X3Zvd3dRTGFXWUI5RGVsYnZjMER4U2h2TlRIVlBOdGRwUlRKVkFwdGtOQmRuT190MnUzNm9xZ1Q?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):政策风险警示，涉及国际关系与合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-deepseek-041
+  date: 2026-07-21
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "从“三不”原则到千亿IPO传闻：梁文锋与DeepSeek的三年突围战"
+  quote: "从“三不”原则到千亿IPO传闻：梁文锋与DeepSeek的三年突围战"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Hc2laNkRla2RodHNTVDROd05DVkhaSzQ0dmJRQ21vc0p4UzRxUkVLaWhiWHNZNDBualhhdGRIMHh0V0xpLTBibjlMOHp2QjJjS2lHNjBn?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人三年战略回顾，IPO传闻，重大发展节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-deepseek-042
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面估值超300亿美元，DeepSeek拟冲710亿，中国AI独角兽扎堆上市"
+  quote: "月之暗面估值超300亿美元，DeepSeek拟冲710亿，中国AI独角兽扎堆上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9PQ3pGbVhEaGh2WjRXSWFhSVNNOXR1TUtpUmdBcWdncHY5V2MybXlfUndZLV9faGtBM1BDTUVVUEFwZ1NBVG1FY2JDbWZEUlNtRHNqQUxqYTY2dzdmOU9xb2Jn?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资估值与IPO预期，中国AI独角兽上市潮。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

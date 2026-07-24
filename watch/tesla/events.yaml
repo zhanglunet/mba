@@ -534,3 +534,124 @@
   source_type: media
   note: "LLM 预分类建议(high):特斯拉加密资产减值损失，涉及财务表现披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-23-tesla-035
+  date: 2026-07-23
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD新能力曝光：自动驾驶开始拥有「用户模型」，AI司机千人千面"
+  quote: "特斯拉FSD新能力曝光：自动驾驶开始拥有「用户模型」，AI司机千人千面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwwJBVV95cUxNYWxhQXVlX2lZWmRkNjJoeEJURHZuVkVkT2t1czN2eTFLdlV4U1dhMGljbmRVaXB5M1RZT3pfbmNuMjZMalA4UnJWdUxxYmhOQl8tZnB6OGVGRXVUTlYyMW1pdncxdEdvVWJWMndqbzlJX3ZFQUVCZkpjWVgtSTF0akQ3cWp0Y0hCbVREUWtKWnpIbUFEYTNDQ25NMHozYVVQQ0xtOUNaaTFkbmtRMnBvQVY1ME55aWRDS2lfWld6cEwxZjVSV2JoaUctaXFSN0xsLS1xVkdSZU9PMlBQTlk5Y1h2cDNHeWZRcDhrdkZqN201NExPWUtjQW15VjB6TWVhdmFIMHlyLVp4OWdrd1U1N1Y5NGlaeV8xTVNNZGV4QWxQeTFUVEpydlNGZjJxeFBCN1UxRjRYMDZrX2hobmpJd1BvVQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD新功能发布，用户模型个性化是产品创新亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-036
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉第二季营收282亿美元，交付451758辆车 运营利润率仅1.4%"
+  quote: "特斯拉第二季营收282亿美元，交付451758辆车 运营利润率仅1.4%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxQRkZleVVrc2VDOG1wZnpfVFdRaUk3YU5LbWZTQm5rSXhpS1ZYOG9IaVEzczBkVFJQS1JkbVFvTG5IMFd3MXp0N3RxMnpKVWRsSXVmT2RFdFhHZFpPdnJjMXA3Xy13Rkw1ajZ6MkROOXNwQVR1R0NLMmh1YWozMmg1UmdGQ1ptRm93V3NtbktRQ2FzXzJuWlE?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2财报营收下滑、利润率低至1.4%，重大业绩预警。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-037
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "美国银行表示，特斯拉的FSD和Robotaxi扩张被视为第二季度业绩不及预期后的关键增长驱动力。"
+  quote: "美国银行表示，特斯拉的FSD和Robotaxi扩张被视为第二季度业绩不及预期后的关键增长驱动力。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPV3V4TkRQVHJQWlVjcllwRnNiWjZidUtPaXN6UzhybFdXVlY5Sm5ScmlqLXl6ME9wdEYyYnhPbDl1TnBYLXlCQVhmTHpQeGNXQlFOWWZZaHh1N0tRQ3NwOThYeFJRbWJobDhzOG1LRnJCbXFQN1d3bW9QdVNqSkM2b3pxUXNGeGM2RFlxVUxjVU1RMV90ajZhcGphVlpuLW9NaWFGSE9iQQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师观点：FSD和Robotaxi为增长关键，但基于业绩不及预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-038
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "利润暴跌57%，特斯拉和谷歌亏了，为智驾买车的该醒醒了？"
+  quote: "利润暴跌57%，特斯拉和谷歌亏了，为智驾买车的该醒醒了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1PRTNlYUE0X0xrS2JCVGNDR2NDNFNJX1MyM2JtUDlfajFNNTFlVDBWUkNRU3h2aEtOMTNWc0dtVTlsb0QyYnk4WmVPaFZQMl9rdW5iY2NUc1FWUkZMeHc?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):利润暴跌57%，涉及财务表现和消费者信心。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-039
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉Semi电动卡车何时能用上FSD？马斯克称今年底至明年初"
+  quote: "特斯拉Semi电动卡车何时能用上FSD？马斯克称今年底至明年初"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9uRnZGVFExM05HdHdnWEFVR1pRa1BBSkd2Sl9LZ3lVTUk3UG1wY3ltWGtGQWRTXzdHVnYyQXZqdHJkZndDbU5Xcm5xTE9MTk1uRzlkZXNuNi1hOGhjNzJ1emlwTmlNWExqMWNoRUVWb2MxOE1XNURPRUVlSjI4WWM?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Semi卡车FSD时间表披露，产品路线图更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-040
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉第二季度盈利意外下滑，原因在于研发和人工智能成本上升"
+  quote: "特斯拉第二季度盈利意外下滑，原因在于研发和人工智能成本上升"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxOSDNnRjNsSmlWZENDYkpUNUFvMm50VEh0WWVFclp6MHNCTlFwOFRYbmZpbDBBVkhOekROVEtYTk9tY21BZ3hsSHhzRGpjRkZ5aWdsYzJfQzlfOUR6QnRJWDBrRjVYbU9sRm5BOVJBM1dYbFBmXy1hS0xVR2xCVk0zMVY2UHZjcW9yZ1ZhS2VkcGpaT1RXV3JxdTBmN3VpeEVTQWVpejAyUElIbW9XQVNvZWVDcw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2盈利下滑原因分析，AI研发成本压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-041
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "代码暗示，特斯拉App已开始为Optimus人形机器人上线做准备|埃隆·马斯克|tesla|特斯拉cybercab|手机|数据_手机新浪网"
+  quote: "代码暗示，特斯拉App已开始为Optimus人形机器人上线做准备|埃隆·马斯克|tesla|特斯拉cybercab|手机|数据_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxNTndMV0N3QWhNbmlUVjBidE1BMGdIVjBfTWhvRk93dlllY3dpMlUyTV91eU9pczcwLUg3bGdCZDJBeFJnNk5zSmMyVFJMbi1wUkpBVHZUR0hPLS1md1BkUGUxQnd5RDVVUzRmaU1uLVE1WGNVd20wNWVUZVhKei1iU3VDOFgxN0J0WGl1MThnQ3BpTlI2Ujd5N1V6dU0?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):Optimus机器人App集成进展，产品开发信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-042
+  date: 2026-07-23
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉(TSLA.US)绩后股价暴跌超13% 华尔街称AI投资拖累利润及现金流机器人业务成估值关键"
+  quote: "特斯拉(TSLA.US)绩后股价暴跌超13% 华尔街称AI投资拖累利润及现金流机器人业务成估值关键"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxNY0FtcTRubVVaMlNqdm9EUXBVOUpuUnhLeDR6b25MOHFySVdQeU1SUlF3LThBbVNaRTJUeG5JaVJzRmZ3ZkFlWW5xSW1HVlVfU3Z0SnFSQmxuUjRpRFpjU3JRVWJ3R0NuU0hpWEhnTnlkOTd1dFQ5M094eGhTX2xtZXZ5d3BlQ1Q5WXFhUDRiT3RnNk5xTDhjUVpseTZkckxpbHc?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价暴跌13%，AI投资拖累利润现金流，市场重大反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

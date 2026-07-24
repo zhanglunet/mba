@@ -273,3 +273,34 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕品牌文化解读,涉及品牌认知舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-24-hermes-018
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕2026秋冬新品鉴赏活动"
+  quote: "爱马仕2026秋冬新品鉴赏活动"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPbVZ4OGl2Q292Y3J6T21DVlpPeTJqLXYySFV2Zm9veERxT08zc0E5ZGZkNW1Db3B4U0c3SEhCRTVzSTNRMXZ4djBJU1hQaHl5elEtaDNSQ2w0ZWFGYkRyQXRVSDhVZThCTDVHNTd5eEtoX1VOVjNOUUdsN0dwQ1RzOTQ4RGtYS2NTTHl2eQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):品牌新品发布活动，常规营销事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-hermes-019
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "第一次买爱马仕选Picotin还是Garden Party？2026年入门款价格与保值率全对比"
+  quote: "第一次买爱马仕选Picotin还是Garden Party？2026年入门款价格与保值率全对比"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxOdWhLZ0xic0lTcnlnZGRWN19tQ0VXUlpTTGlBNWVlVlRzLThtWjJIZ1pfNE5pOWZqSkpUUVUwZUJkdjN2NThmY2tLNDQ1VjhmVjBVc0c3LWhmVWZwck85U2R0OWJEZnpMZEYxejNHRGswVXlFS3dWLUU2LTJGMUVvMlNvVm8?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕产品价格与保值率信息，消费舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

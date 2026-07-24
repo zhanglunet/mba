@@ -287,3 +287,34 @@
   source_type: media
   note: "LLM 预分类建议(high):重大监管风险，涉及大疆全系产品被禁，市场冲击显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-22-dji-019
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "从新手到航拍达人：大疆Lito X1如何让每一次飞行都成为视觉盛宴"
+  quote: "从新手到航拍达人：大疆Lito X1如何让每一次飞行都成为视觉盛宴"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9sbDhkTzBHWWFFNm05alkzNENNSGhYdkgxLUVBbkd5MzZkRVR1WFV3MXRYM244c1JBUEJlNUNZanhmUDNCMHVjSkpIRjNyVmZDSnVIeXNCRWtxbHZXUGJTcVBB?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):大疆Lito X1产品宣传，新品功能介绍。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-dji-020
+  date: 2026-07-21
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "2026年，用口袋里的导演，记录你人生的每一帧高光"
+  quote: "2026年，用口袋里的导演，记录你人生的每一帧高光"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE4tRS1NX0pTNzRNN3lkbDFkckRPRC1TVlFlUjFZRy1YcUxBeWFMejBTVldJTG1mMGhheG5wTExiaVcwOTRLNlhHOEdWRGxtNl9wbjQ0VElKX181aTdPTl9fUDNn?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):大疆2026年产品愿景，品牌营销内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
