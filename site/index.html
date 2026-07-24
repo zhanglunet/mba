@@ -72,6 +72,19 @@
   .starmap-banner .sb-text strong { color: var(--ink); font-size: 14px; margin-right: 8px; }
   .starmap-banner .sb-go { margin-left: auto; flex-shrink: 0; color: var(--accent); font-weight: 700; font-size: 13px; white-space: nowrap; }
   @media (max-width: 640px) { .starmap-banner { flex-wrap: wrap; } .starmap-banner .sb-go { margin-left: 42px; } }
+  /* ── CLI / API 提示条:给人也给 agent(端点见 /api/index.json,指南 /agents)── */
+  .cli-banner { background: #11100e; border: 1.5px solid #2b2822; border-radius: 8px; padding: 14px 16px; margin: 0 0 26px; }
+  .cli-banner .cb-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+  .cli-banner .cb-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; font-weight: 800; color: #f5f2ec; }
+  .cli-banner .cb-sub { font-size: 12px; color: #8f8a80; line-height: 1.5; }
+  .cli-banner .cb-go { margin-left: auto; font-size: 12px; font-weight: 700; color: #e0733f; text-decoration: none; white-space: nowrap; }
+  .cli-banner .cb-go:hover { text-decoration: underline; }
+  .cli-banner pre { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; line-height: 1.75;
+    color: #d7d2c8; overflow-x: auto; white-space: pre; }
+  .cli-banner pre .c { color: #6f6a61; }
+  .cli-banner pre .u { color: #7fb2e5; }
+  .cli-banner .cb-note { margin-top: 9px; font-size: 11.5px; color: #8f8a80; line-height: 1.6; }
+  .cli-banner .cb-note code { color: #d7d2c8; background: #1c1a17; border-radius: 3px; padding: 0 4px; }
 
   /* ── KPI 行(stat tiles)───────────────────────────────── */
   .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 30px; }
@@ -211,6 +224,7 @@
         <a href="/panorama.html">评委全景</a>
         <a href="/starmap.html">知识星图</a>
         <a href="/docs.html">文档</a>
+        <a href="/agents">API / CLI</a>
         <a href="https://github.com/zhanglunet/mba">GitHub</a>
       </nav>
     </header>
@@ -226,6 +240,31 @@
       <span class="sb-text"><strong>全维度知识星图</strong>品牌 × 9 监控维度 × 5 镜头 × 面板 × 评委,按真实关系连成一张可搜索、可聚焦的关联图谱。</span>
       <span class="sb-go">进入星图 →</span>
     </a>
+
+    <div class="cli-banner">
+      <div class="cb-head">
+        <span class="cb-title"><span style="color:#e0733f;">$</span> 也能用命令行读 · Built for agents</span>
+        <span class="cb-sub">所有报告/评委/面板都有静态 JSON:<b style="color:#d7d2c8;">无 token · CORS 全开 · 每日重新部署</b></span>
+        <a class="cb-go" href="/agents">完整接入指南 →</a>
+      </div>
+<pre><span class="c"># agent 的自我说明书(发现入口)</span>
+curl -s <span class="u">https://mbabrand.com/llms.txt</span>
+
+<span class="c"># 全站 manifest:counts + 所有端点 URL</span>
+curl -s <span class="u">https://mbabrand.com/api/index.json</span> | jq
+
+<span class="c"># 排行榜 top5(分数在嵌套的 .score 下)</span>
+curl -s <span class="u">https://mbabrand.com/api/reports.json</span> \
+  | jq -r <span class="u">'.items|sort_by(-.score.normalized)[:5][]|"\(.score.normalized)  \(.slug)"'</span>
+
+<span class="c"># 查单个品牌 / 全文检索 91 条语料</span>
+curl -s <span class="u">https://mbabrand.com/api/reports/huawei.json</span> | jq
+curl -s <span class="u">https://mbabrand.com/api/search.json</span> | jq -r <span class="u">'.items[]|select(.text|test("开源"))|.title'</span></pre>
+      <div class="cb-note">
+        MCP(让 agent 直接跑审计):<code>npx -y mba-mcp-server@latest</code> · Claude Code skill:<code>/mba &lt;brand&gt;</code>　·
+        端点全表见 <a href="/api/index.json" style="color:#e0733f;text-decoration:none;">/api/index.json</a>,人类可读指南见 <a href="/agents" style="color:#e0733f;text-decoration:none;">/agents</a>
+      </div>
+    </div>
 
     <section aria-label="品牌监控">
       <!-- REPORTS:START — 生成自 site/reports-meta.yaml(scripts/build_home_cards.py)· 勿手改 -->
