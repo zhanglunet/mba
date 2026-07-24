@@ -613,3 +613,124 @@
   source_type: media
   note: "LLM 预分类建议(med):涉及谷歌服务在华可用性，用户关切问题，但偏FAQ性质。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-23-google-040
+  date: 2026-07-23
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "现金流首次转负：谷歌AI豪赌的代价"
+  quote: "现金流首次转负：谷歌AI豪赌的代价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE9IcTZwYUpUZ05CeGVOQlhyNE1tTWdKa1h3YXZBLUpwS1ktNzZpZDl3ZDloN3dmS1JlcFlyWkJ6UUhGd2VHVVI5M3V0UFVKZ3NGTTB1elhad0l6ZnJvcE42ZkVURmtUNkhqX3BDWVF1azhmVFBI?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财务负面信号，AI投入成本压力显现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-google-041
+  date: 2026-07-24
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Google 旗舰大模型难产背后：军方合作引员工不满 内部感叹“已落后”"
+  quote: "Google 旗舰大模型难产背后：军方合作引员工不满 内部感叹“已落后”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGX0h6eGhIT0JtaklXc002MFpieFZ4bFp1QWFCbGxGRU1mUTlJdmNZcmZJeGlxdHFUUXBsNFRiYmdlU3JHdklVU2EzMTBCbXZQcEo0UlRoeHJlXzlUbHpZaA?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):内部冲突+竞争力担忧，涉及军方合作争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-google-042
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "欧盟重罚谷歌8.9亿欧元 恐再激怒特朗普政府"
+  quote: "欧盟重罚谷歌8.9亿欧元 恐再激怒特朗普政府"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAJBVV95cUxNZ2FBQTI2Y0d3ZHRIbVEzMmRoVW5kbm1FMUl0RGh5UEJ5T3lLVEk0TElJSXgyc3NNSVYzX0JnMTY1TGZGZTNlbHFpZk56QW9uTm1WRHZEcmJWQl9EVHJJTFdoWC01Y19ZMDNOdV9tZ3FZTHUwb1QxNG9YNk9YNkQ2Q21Pb3lyZ3VWeVFXTklLR0pXcE1QYTQ5UDlkS3p0emJQSTBHTmwteXc3RjQ3RHdSQ2d0TDdGamJ1dVlYSFk1UDJSWHZYbmhoNXJITVEwNWRXQThtaEh1OWtJTjQySDhqNjRWQ2stQlQ2Vk9nUjlvUlFvaUcxLVNHSU5oOWdvcFFDWFJxTm5oSUhVb3VpeV9uSFdZQVJ5TjRhVjhLVkcwVEsyWDBzd25IamFJRHpkVnBUeWFoVl93S3NKaHBa?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟重罚+政治风险，涉及特朗普政府反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-google-043
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "无视美国威胁 欧盟对谷歌处以逾13亿元罚款"
+  quote: "无视美国威胁 欧盟对谷歌处以逾13亿元罚款"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE1WSk1UZ0pPY2psWGJvSTlXT2xlMmdfV2VaaWQ1VldfWHBWdFZvdUJkMmdMdjFhZTVxR25Yb3VpZkFId181bzZRTkFWWlpqa3VGZE01bUdvdGFPMTA1U1Zoel9FbEVEVFdsbkJqNg?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟罚款重复，强调监管压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-google-044
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Gemini月活逼近十亿大关- Google 谷歌"
+  quote: "Google Gemini月活逼近十亿大关- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBMUDdrejVsRUtndy1wcnhHNHFuMjYtTkRKNV8za3V5U29ZZ0IwSGVxbVdvendac29nUzVUcjlhOExsMUowbWtFcmREOEJLeHBPZzJnbHBvYmF1V3BYMXRDNw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Gemini用户增长里程碑，AI产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-google-045
+  date: 2026-07-23
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Google上市以来首次录得负自由现金流AI基础设施巨额投入引发阵痛- Google 谷歌"
+  quote: "Google上市以来首次录得负自由现金流AI基础设施巨额投入引发阵痛- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBtdDY3TmJob2VfSkZYckZxVXZ6UW1HeWN4WUJ1MVBxaU0yT1A3NlBRQV9semwwRXpDVVJJbjZyOExlUFJpTGJIeDgyeC1WYThia1FBcHNIVVloNy1PNDhpYw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):首次负自由现金流，AI基础设施投入阵痛。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-google-046
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google推出全新安全验证方式允许用户通过自拍视频登录账号- Google 谷歌"
+  quote: "Google推出全新安全验证方式允许用户通过自拍视频登录账号- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE05REJGbFBYcmMyX3JQTnI1Q3VaUVlUTlZPTVFTdndxcUt2dUd1ZU1IcXl3VDk5Y0NMZTRzWFpSUjl6UHR5RlFUU0FESnVNcm00b1E1WWRiWFk2SVU2TkprZQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):安全验证创新功能，用户体验升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-google-047
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌被罚8.9亿欧元"
+  quote: "谷歌被罚8.9亿欧元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPYnFqeWJQdkMxMXZUbHk0RUZ5bUdwSjQzVFdBXzRaVjR1bzZtU2lkS1I2RDBhbjl2eW15S1VlYVU4VXg5UkUtRnVWSEk2dllJRjlwaFZ1V0ZBZTJKSk5heElNem9lZ2JEYmVfMGZ5UEJpaW00eXRZbVJJeTZBVlgtcHRQcDJLa1lQdHlWb2RZaHhfSFVsOGdYbDhGTjJhbzlKak52R1c1aw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟罚款简化版，监管压力确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

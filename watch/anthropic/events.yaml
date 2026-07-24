@@ -811,3 +811,109 @@
   source_type: media
   note: "LLM 预分类建议(high):战略合作确认，数十亿美元规模，GPU容量锁定。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-23-anthropic-052
+  date: 2026-07-23
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI攻破英伟达CUDA“壁垒”：Anthropic用Claude自研，一周末打通AMD全套适配"
+  quote: "AI攻破英伟达CUDA“壁垒”：Anthropic用Claude自研，一周末打通AMD全套适配"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5lcVpXbFdjdEVvOEhiZGVxaHdmdWlhbExnTkk1cGxfSmRGcjJ6aDNGZVVtRUNWc1lEUWVMbS1aTUpTVW9HRTFhUFRCWWJybC1ITXhZ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude技术突破，打通AMD适配，体现产品能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-anthropic-053
+  date: 2026-07-24
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic对Claude语音模式发起重要更新 引入更强模型"
+  quote: "Anthropic对Claude语音模式发起重要更新 引入更强模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5RZkRINmppa0c0TEZQQ0RFWGxYUFdaNnFfY09mMkJnZlRtNGFpR0RWNVlocmIxRHMzcjFtMzJZVmZFd0J0RE9EcmVMNkplU3lNSVYySWVMWE5hVkhFQnh6N2Fn?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude语音模式重要更新，产品功能升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-anthropic-054
+  date: 2026-07-24
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 升级 Claude 语音模式:支持旗舰模型与第三方应用跨生态联动"
+  quote: "Anthropic 升级 Claude 语音模式:支持旗舰模型与第三方应用跨生态联动"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTFBuR2IzSjA4TUR2MGhOUVZRLXdTQUtNRHlTV0d2UnBnR1dOZTBrc0xtNmhlSmlCWTE3M04tS1VGdTNEdDUtYUNYeVRQVnNuUzQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude语音升级支持旗舰模型与跨生态联动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-anthropic-055
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic Claude 领跑企业编程基准，OpenAI GPT-5.6 速度封王"
+  quote: "Anthropic Claude 领跑企业编程基准，OpenAI GPT-5.6 速度封王"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE94SFJnajV1SXRGWUFmWUcwLXlwbEtNOVNJYTFNWTU3U05RNTM4QXV6bXhnSTRYNHQxZVlpSl96YjZsRWVWQmZhMmxueG1vRjlXNVF0Qklocw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude企业编程基准领先，但GPT-5.6速度对标，竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-anthropic-056
+  date: 2026-07-22
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "AMD将向Claude开发商Anthropic投资最高达$50亿；双方签署芯片合作协议"
+  quote: "AMD将向Claude开发商Anthropic投资最高达$50亿；双方签署芯片合作协议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxNR1gzVjlLTVpSeUcyWnlZMDk4bVU0SjM0c2xWOFBYY1JYMXpnU2lYcl9kQlByQk5ubG9DeFg1bW1QYUlnRFJvUnR3QWl3RkRXQThrdGtETTM0WlRNZ0haM2ZIbFhBX2x0QzVrOG1RUWViMGkzV0k3dTBXTU9zYjAxWTFaZXdKMjd3MkNYeWI2VXQ1RXhBWmQ4?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AMD投资50亿美元，战略合作，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-anthropic-057
+  date: 2026-07-23
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic加入英国FCA第二期AI监管沙盒，提供Claude模型"
+  quote: "Anthropic加入英国FCA第二期AI监管沙盒，提供Claude模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE1EdmVtb2xBVHFsc0o1aV9qbmE0eWNmLTJnYmR0enYtMXZxd2JQVzJRRXp4ZnlDc3paZXp1T1ZNSGU3YXgxS2xIbG15aEowNWktc193Z0phTzN6UzdpZFE0ZkF0Z0hSZw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):加入英国FCA AI监管沙盒，合规与市场认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-anthropic-058
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "不只是芯片交易与投资承诺：AMD将在内部应用Anthropic Claude"
+  quote: "不只是芯片交易与投资承诺：AMD将在内部应用Anthropic Claude"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9LUTRpYkh1d2M5WW5FN2lKVnJQbi1fejZpSExNX3FqVFN4eFBnZnBaOEtOcm1fNS1uc2haclk4RGo4OUtwWEN3Rw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AMD内部应用Claude，战略合作深化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

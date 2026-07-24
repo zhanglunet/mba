@@ -519,3 +519,154 @@
   source_type: media
   note: "LLM 预分类建议(high):NVIDIA市场竞争力受挑战，涉及战略风险与行业变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-23-nvidia-034
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达向美国海军研究生院捐赠GB300超算"
+  quote: "英伟达向美国海军研究生院捐赠GB300超算"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxNNk5aMTQ4eGROR0tiOG9PUWxBTWRJeUVqU2tyelRJbWtwTjFUS1E3Y28xZExCNEZkTnU3UGViQW9PSTNJTmRuZWVhVERMTWNjaHJKczFLREw2TDkyUXIzXzNreFRiSFdBbzNFRmhEbkZEMUFfN2s3MEJ0SzBlcnZNbVFvZXl4UW8yN21OOXRPUnBzMm16ZXBYQk9sdV9wZ1BrLXY3cDBZYw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达向美国海军研究生院捐赠超算，体现企业社会责任与战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-035
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达与韩国科学技术院（KAIST）联合成立人工智能研究实验室，以加速韩国的人工智能创新"
+  quote: "英伟达与韩国科学技术院（KAIST）联合成立人工智能研究实验室，以加速韩国的人工智能创新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWU5EVkRLcHRZTERuZWxkN3pHRVFuVmpZS3VhbHRoVHo4N3kxTEVZM2FnSXJ6RjJtQ1pWSXpPUEN3SEdHUGVVNjVNYmtEd3RJY0FpNmN6eFpqNmxWb3o2UWd5eUw3Tl9NUE9SeVBpN2JSYXFTZ0hLeUQ3ZXBlaTRibGpKRWhVdWVhdVV2a0Q0aEQyR1gzOVZmdGVHZ3pEWkcxS3dBNkw4WTN1Zw?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达与KAIST联合成立AI研究实验室，战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-036
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达携手Lunar Outpost 将把芯片送上月球- nVIDIA"
+  quote: "英伟达携手Lunar Outpost 将把芯片送上月球- nVIDIA"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBybjlqVEg2Vno0enM5QmVrVmNoaFU3SFMtX21UaUkwMEx0UUVyOThNMC10TXo5aGI2WmNkTzE1cVd0SHJ4NklBSGQyeEo3aU51eUd2X2xtdWFUMktWdUVyTg?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达芯片登月项目，创新应用与品牌亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-037
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "88核打128核！英伟达Vera CPU智能体AI性能6倍于AMD Turin"
+  quote: "88核打128核！英伟达Vera CPU智能体AI性能6倍于AMD Turin"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5iamVKeXNUY2s0ZGNDTGVGY2RnS21paG03Und4TUoteG5LZzlPVWFOOFhjaEZxS3NVOWJlX0t4RG5iVUt6VXhVS01DUDVDZXUybGhF?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Vera CPU性能对标AMD，产品竞争力发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-nvidia-038
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Spectrum-6 专为 Vera Rubin 打造，登陆十亿瓦级 AI 工厂"
+  quote: "NVIDIA Spectrum-6 专为 Vera Rubin 打造，登陆十亿瓦级 AI 工厂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxQX1lvZ2Vndm1xcWNlUmN5YkVQWjlsekE4Y1E0S3ROT2d5eURQZEVsQXMyYjJFOFA0OHBDZ3plQU9EbE5DUzlBMjFjNWpMSnNDa2NZbEJ1d2o5T1FmVVV0eWw5NDhLWjB2OHRkZm15MExwQWg0Mnp6TVlna2FTTk9zZjc3RWtMSTlUbjlJ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):NVIDIA Spectrum-6网络产品发布，AI工厂解决方案。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-039
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA AI for Media 助力新闻编辑室检测合成视频"
+  quote: "NVIDIA AI for Media 助力新闻编辑室检测合成视频"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5RZ21BZndxdFR1R1E0cXNxTFh6R196ZjVHaEtaR3ZRU1JLZzBqbERLaGFkeDBJVmxlQjVBSU92azFPX1RfMWozc29jLXRhSFN2ejdWVElVaHFxeUM1T1YtYjFn?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):NVIDIA AI for Media应用发布，产品功能创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-nvidia-040
+  date: 2026-07-21
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "23:50:35【英伟达详解下一代AI专用Vera CPU 称速度是其他CPU的两倍多】"
+  quote: "23:50:35【英伟达详解下一代AI专用Vera CPU 称速度是其他CPU的两倍多】"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1lOWdlSE5pa2pzckhQcndqcUx3dy1EY2IzMjRaN1BZR3Rab05rVkpfenhDdi1CMHIwcXZyVU8xRnJtOE83b3BYLQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Vera CPU详细规格发布，产品性能亮点披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-041
+  date: 2026-07-23
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国官员指控中国“月之暗面”窃取Anthropic模型，并称其获取受限的英伟达芯片"
+  quote: "美国官员指控中国“月之暗面”窃取Anthropic模型，并称其获取受限的英伟达芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi6AFBVV95cUxQMjlHdnhEdzl4dE5oTm1HTE9sOUM2Y2VzTmo5VkVfTHZtVTVFUF9GcWNacUF5dFhrTE1uVVhUMk0ycWwwTllManEtWHhuUjNWNkV6N2E3eXBWai01Um9Yb1FsSzVpSkNsS2JTdDNsWXZDdDFxNVpGTVVBbFc2SmpwbWlUT2pQc0NHQ0tqRWhPOGFqVC02TGNhbXoxZ0ZQcXNCcVA3ZUFmREptT3BEWGpzU3VDZlBzZW9TLURZSzVLRzR4aG5qcnlNRzNQeUFxWGFaYWdza1hsQURjTmwzdG9XZU9KM3BSUEU50gHrAUFVX3lxTFBLQWVQSnppOHpGWW5uam9vckZBOVpBVDlFdk5CTXVpQ3VNX0Y0ZWtmQ1ROeTVZQ3pkLXpqS1N5S0FFdmVOZDJiSEVzN1g2eU0yVEVRbDJZelh6SnZhbTZQeDZLY19EYWR4Qkk4ekRHZTlvcDIwRnRQRmYtQzE2a1pLSGJZc0JyNGNlRU4wLTY5M1RoUlNoUXBUYm5VSkVKMDVfaXZES183RlpsOVQ3UkgybjlibU5mcnZHY1lGeUg3cWxubmxFVUdFS2FiUllkU3BYa20xc2R1Y0FSekRBUmlWd0NKanRzWHhyWHc?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达芯片被指非法获取，涉及出口管制风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-21-nvidia-042
+  date: 2026-07-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Vera Rubin 提升每瓦性能，为全球合作伙伴实现最低 Token 成本"
+  quote: "NVIDIA Vera Rubin 提升每瓦性能，为全球合作伙伴实现最低 Token 成本"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE5WS1FEbTJGQkZVZU9aZ2Y1Z04yTUdYM0JPaDUyaHJZa0NKS09xcTlIYnVXaDhBVkJna0MtSXBHSU1BRnpxM2g2U19rSkJ6NEZtNlE?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Vera Rubin性能指标发布，产品优势宣传。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-043
+  date: 2026-07-23
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "性能10倍提升！NVIDIA首次亮出Vera CPU、Rubin GPU详细规格 还回应DLSS争议"
+  quote: "性能10倍提升！NVIDIA首次亮出Vera CPU、Rubin GPU详细规格 还回应DLSS争议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mYWl6bW02OWJKMUtqbmdpWkQwYlpQMTg3YkFONmowdjhLd3dhaWZMQjQwenJxck9wdGVIdjJfUE8zdVJhdUdXZUtKZjExYzA3TzZV?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Vera CPU、Rubin GPU规格详解，重大产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -521,3 +521,169 @@
   source_type: media
   note: "LLM 预分类建议(high):商业平台年化销售额达600亿，业绩里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-24-amazon-034
+  date: 2026-07-24
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "海外观察|亚马逊入局电视端云游戏,对标Netflix游戏服务"
+  quote: "海外观察|亚马逊入局电视端云游戏,对标Netflix游戏服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFBwdXo3cXNlcUVXNXYtYzZuelpyYm1yUFdLdnYzNVd3amU3MUs4dm85Mk54cFVUWnF5ak9YM0djQ01KTTYySzBrZnBaYzlLZEV1WVlVTzlFdWJ1ZUxqQlRJckNsUU9nMGFiZ01V?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊云游戏电视端扩展，产品战略升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-amazon-035
+  date: 2026-07-24
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊Luna云游戏登陆美英Fire TV端Prime Video应用程序"
+  quote: "亚马逊Luna云游戏登陆美英Fire TV端Prime Video应用程序"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxObjJ2SE41ZDdHZk9uOGtQby1QdDE0Zm96UFNkV29LZFlRcDlpOC1YZjhmelVvMURnYTFFM0tMdE5Uc0RRWlFlcndmTjZQYXVtRG1Dc053RjIzSThNVWpBWHVJWF84YUhOTExPZFlUckU0aU1EckxtUzFwSEJiQnlRLVd1N2ZLZ0s2cXZz?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Luna云游戏Fire TV集成，平台融合进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-036
+  date: 2026-07-23
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊全球物流的“版图”拼全了，它把“前置仓”开到了中国长三角工厂“门口”"
+  quote: "亚马逊全球物流的“版图”拼全了，它把“前置仓”开到了中国长三角工厂“门口”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE4yV3h6cFVQREVROHhmQ2Z5TDhmRHl2QmJabjVvRmVyZmg5VFpYU1FLbEd3RkpyekZFQVdsNkJINHZTUEY0emtaQ0M5MzY?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊物流前置仓进入中国工厂，本地化扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-037
+  date: 2026-07-23
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "你可能有錢沒領 Amazon最高51美元和解退款倒數中"
+  quote: "你可能有錢沒領 Amazon最高51美元和解退款倒數中"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxNWk90WC1pb25pXzJaNGdHVWVDVEQ3MmZpQ1EzZ1VhcUp5ZE9CNW9DZlVCVzF4cWpHbFRvZnl0OXZXSmdWWFI0cEFrUVNQMk5XMmh5bGtxdEY4aG83NTdlLUpCSGwyX0pySzJoVFhONFJrRnlnek8zalRPODNUMHlkWXBoRUlZQdIBZ0FVX3lxTFBseTRRNVRYNk9yVDhCaHBGWHU2bVZXazJTNjJnbTNKU1BXUDhoSUxJZlJZZWtEMy1sdkJtLUNmdURHc0hQUEhhQjdPcGptcV93OEx2SjY5bVBTQ2VlQ2FFMHcxNjZZXzQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊和解退款事项，法律合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-038
+  date: 2026-07-23
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Amazon Stock Slides After Trimming Jobs In AI Unit"
+  quote: "Amazon Stock Slides After Trimming Jobs In AI Unit"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxOdmJleUdWMy1JclVSbWhHQmxNVktqUmo2YkZuTE9TcUEzdVVtM1J6N2VoUTI2V2h5bm4wVm12R1RRdndaOWt2VEtqR3JTZGVOazlqZC1vQWF3R2IzV1VIREZ4amIzWTFNR1JKNnFLSVNVT3lEZTRXNWRaRmZFZ3dtcWRZamxfYUI5OEtUd01uLVlTa1A1?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊AI部门裁员，股价下滑显著事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-amazon-039
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "亚马逊准备基于AI的Prime Video重组，杰夫·贝佐斯下台"
+  quote: "亚马逊准备基于AI的Prime Video重组，杰夫·贝佐斯下台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE9mZG5qLWRicXJEc3VLY09saGN2T2pSb0lTcU93VmZxMWVVd1NpcHJOMk9CR3BLLW9IbXZnSzFCME1ZaFFsbVZuUmROWjlDTknSAUJBVV95cUxPeW5Zc3N3U1RZYVZ6MXR2WVRWNFk5U0ZsWUVXcVdZNzFCTlBfRk1iTm9ObWVIX1gyMjBmeGF0NlpYeXc?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Prime Video AI重组，战略调整与领导层变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-040
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊 Alexa Plus 获 AI 升级，能听懂“冷水洗但需深度清洁”这类复杂指令"
+  quote: "亚马逊 Alexa Plus 获 AI 升级，能听懂“冷水洗但需深度清洁”这类复杂指令"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE96T0JDeV9FM0pjUXNfUTQ3dEJQWnNaQWRFakFkLVJvcXRnMnJpcG15MFZUQ0xBT2VPc0J2WXo2STJKaTdWVU1PU3JraXNTRGZkYVY1M0JEdUpoVzJ3OTFWNjZ3?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Alexa AI能力升级，产品功能创新事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-amazon-041
+  date: 2026-07-22
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊商业平台第二季年化销售额600亿美元"
+  quote: "亚马逊商业平台第二季年化销售额600亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wbzRzUU42aGNsMDZUWFJFckRfamRSdk9XVHNEZnEyTTZlRXgtM1V5TlMyOXV4OWk1UFNLRXpiOTN4UzlqcUZ6LWFSZkdqbzRmWUE?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):商业平台销售额数据，业绩表现事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-amazon-042
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Amazon AGI organization lays off staff: Is AWS's AI valuation anchor about to shift?"
+  quote: "Amazon AGI organization lays off staff: Is AWS's AI valuation anchor about to shift?"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE9xMF9UcGg4b216V205YTlUaFhpTW95ME50elRJUWQ5RFlidU1fcWRFVTNqRXdTanFFcTRCMDZoSVRZSzYxdWh4NkhCR0hPT192?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AGI部门裁员，组织调整与战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-amazon-043
+  date: 2026-07-22
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊有望凭借AWS的强劲表现实现第二季度业绩超预期，美国银行证券公司（BofA Securities）表示"
+  quote: "亚马逊有望凭借AWS的强劲表现实现第二季度业绩超预期，美国银行证券公司（BofA Securities）表示"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxQZU5Ldkl4YjBMSkptVXNKZzFqZWcycEtsbjhxc2x5QVhBcG5xLUdjMXp0X010TzNwX0FiZy1kanZnei1JMXVTcy1HN25jWFBnaDhzdWdOcWtDbGJORGxNZ2FIVlFwaXNpWHNPVjVyLU1CczRlbmxIQ2s3Z01VbjRMN0JzN1JYQng0VTAyQkpDZHNBYTU2TU5sQ3dKREtjOGV1ZG9tNF96clRmMmg2dEE?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):AWS业绩预期超预期，分析师观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-044
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "AI浪潮下的新裁员：Uber砍客服 亚马逊缩AGI"
+  quote: "AI浪潮下的新裁员：Uber砍客服 亚马逊缩AGI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE1raV9hQkFUV3NKS1VzRlczYTVJaWNjc0FjbGlOakhhMEhPSlZKd3pwVVM1V0VmMFJHV2RIM0dBaU40dWltLXAtdUJKdkd0b3ZQWnBHaGRRcU1wSUI3NHBVWS1fTUFvczIx?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI浪潮下裁员趋势，亚马逊AGI缩编。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

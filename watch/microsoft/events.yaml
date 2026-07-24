@@ -687,3 +687,154 @@
   source_type: media
   note: "LLM 预分类建议(high):微软与AMD扩大合作，战略联盟进展，具有产业舆情意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-23-microsoft-045
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Databricks和微软扩大合作伙伴关系，帮助企业为生成式AI注入业务上下文"
+  quote: "Databricks和微软扩大合作伙伴关系，帮助企业为生成式AI注入业务上下文"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdTZLWG04bXRzb3l2am5JX1ljY2RKRFd1bU4yVkxnSF9QQjVvV0pyV2g5NE1pUGFmRVRKLTJwS2JvTnNtT0xPOXBEc0Vrb1NUTnJXc1IyX2J3ZWplS0xzak1lVjExX0E4QnhwRDY0WnpLNERRQ2MxZVdrRF9fN0VZOGQwNjBfLXVlVG9wOVVqTDJoTlBjc3lfTkYtLWpsUkgwRUh5eUxlUmNyb0d4WTJrMzVldTVGcXdvQVdLMmpTX09MWnM?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与Databricks战略合作扩展，涉及生成式AI业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-046
+  date: 2026-07-23
+  dim: W3
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "双喜临门！上海诺未连获微软FY26两大重磅奖项"
+  quote: "双喜临门！上海诺未连获微软FY26两大重磅奖项"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE54YzhNZno0eko1SWE4cnNMUklEcTVfc0NaWXB2ZTZ4ODF1Mm00M2ZpUHhKU0xKeEt0a0xYX295ZTB0MDZyc2FXd2Fkd1JhdE1FNjFfeHdMcm05RFFBNmxkRk0zdU5vRVFwTU8xUA?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):微软合作伙伴获奖，体现生态建设成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-microsoft-047
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft与Mistral扩大战略合作"
+  quote: "Microsoft与Mistral扩大战略合作"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxNXzhQX3ZSellGQXZIelVLcUJIMkg5M3FITWFWNEZFeTN5NHpDd0c1YXlScUFwWU96SWl2Rzkxc3FIdkZIMWVYVjM3X2lHc3ctT1ZRNlFDb1dFXzl5cUN6aWplbFlrU3JpN045QjVXSWZfcHRPckZHUnVYY0RJYlBPR3FqdUZaV1NxM1haR2FKZkV0UQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与Mistral战略合作，AI领域重要布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-048
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软推送针对Android平台的“跨设备接续”功能可接续微信与WhatsApp等手机应用- Microsoft 微软"
+  quote: "微软推送针对Android平台的“跨设备接续”功能可接续微信与WhatsApp等手机应用- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SM0RBakZoLW5pNnNUbHk3eVE4REtNYm5mRjdnUzdFOUJuaHUyWUEycTJ6ZUs4SVBmQ1NIVGJNTlZZZ1VWdGsxVkJFaVZxUkotbkhKM1RtU0dlTzBuaHJHYg?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软推出跨设备功能创新，产品能力升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-microsoft-049
+  date: 2026-07-24
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "微软XBOX启动广告支持免费云游戏测试"
+  quote: "微软XBOX启动广告支持免费云游戏测试"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE53RFN4aW1IcDNHeDYwYWZodmwwQ3BkNzZvS29FMlI1di1IUHZ1MUliTHF4Ykk1TFpIeUw5X0RUUUxmcDFBUUtVSXdlOUNmbkN0eElQU2JOUG5Rb2pWVkdnM2h3?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Xbox云游戏引入广告模式，商业模式调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-050
+  date: 2026-07-23
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft与Mistral扩大战略合作，为企业及受监管行业提供可控的前沿AI"
+  quote: "Microsoft与Mistral扩大战略合作，为企业及受监管行业提供可控的前沿AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE5KZjR6MloyUU9VTEZ5UnBRVGNrd2RaWWh4a3RES1dQU21vYjRmMl94cjhBdjNJTFJSX2NmTHZIUXFtRF9IcWgtOGE0MkpJVTFPWDZ3eFBjWQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软Mistral合作深化，企业AI可控方案重点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-051
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Databricks与微软扩大合作，将共同扩展企业AI规模"
+  quote: "Databricks与微软扩大合作，将共同扩展企业AI规模"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE1XLW5BZWFmeXc4Njdjc2VOY092WjVGWVl5NEk2U3ZCQXNDVGRxQ3U4ZGk1NGl3d0x1Q3N2TFgteXRudWpnQXFQcWhrY3V1bEZJSElrMHVtU2dELXA2YnFoN2E3TVBmTHdoNHVfRE5HMG1MUQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软Databricks合作扩展，企业AI规模化战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-052
+  date: 2026-07-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Knox Systems与微软合作，加速政府安全访问微软Azure上的商业创新"
+  quote: "Knox Systems与微软合作，加速政府安全访问微软Azure上的商业创新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivwFBVV95cUxPOVpPc19JTXdFNzVzQ1lMSWtMMnMyb3ByYnZUajdrU3NlQ19UYnJEYlF2RmN5aHd0SkFSam93QVN1QnJLcVJ5NDAyeUZYTmhhQTNUTHNoUXZhQVR4US1HbVI0dXRINlJfYWxCRVNtWlRqYy1tS2Y3aW85dkZqZ1NPNUhLcmlBX2l3NzFTaGplUHFFcnZjNml2TVY1RUtucWFPUFg4S21lTUQwbFJ2RFZZdzRtZVh5aHJVYVpoMXdVTQ?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与Knox合作政府云方案，公共部门拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-053
+  date: 2026-07-23
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "IntelAgree 作为联合销售合作伙伴，将其人工智能合同智能解决方案引入微软市场"
+  quote: "IntelAgree 作为联合销售合作伙伴，将其人工智能合同智能解决方案引入微软市场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivgFBVV95cUxPbl9tMWJ5a2M0Q1AzVTZCYmE4bWNDaVptSzdONjhHN2VxV2FXcG1XWUR1SDhBa2VWRkkxU0NQNy11dk5JTWRfVi1YS1IwN2Z0cFBNQ3Y4TDFmLUZGS0NFcS1GRU50UDlHcDU3X2haWkJDV1RCVFViaG1BcVhhc0VnMDhFdTZ6djYwNjNMa0xoem1rVXMzYTEwcVJhYktVRzA3LTlZTEpPdFp0RFBpWGhMSFdEalc1cXRiU2NKMzVB?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):AI合同智能方案进入微软市场，生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-054
+  date: 2026-07-23
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软(MSFT.O)：已完成网络更新的回滚操作，绝大多数Microsoft 365用户受到的影响已消除。"
+  quote: "微软(MSFT.O)：已完成网络更新的回滚操作，绝大多数Microsoft 365用户受到的影响已消除。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxOeEVjTm9DNTUyV2VDUTA5QWpHa3FLd25KMEUxdTFEbGF2NjRhQTFpUGYxNFZBR0lsZVk5ODRKR3g2QzFJMUM1NmlfOVVPY1B0QS1UelpBN1ZjV1pkMmFOV0d3dDBhSGJJQy1QS0Q0d1FVTnp4RUFtRTJxNjBMbVVIOXo5WWFhNXdoRXA2MzdHOTlpV0VwWFlKdVA0ekFCQWs?oc=5
+  fetched_at: "2026-07-24T05:31:20Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软365服务故障已解决，风险管理体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
