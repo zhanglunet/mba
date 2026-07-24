@@ -655,15 +655,37 @@ curl -s https://mbabrand.com/api/index.json
 # 列出所有已发布的报告
 curl -s https://mbabrand.com/api/reports.json | jq '.items[] | {slug, brand_cn, version}'
 
+# 排行榜 top5(注意:分数在嵌套的 .score 下)
+curl -s https://mbabrand.com/api/reports.json \\
+  | jq -r '.items|sort_by(-.score.normalized)[:5][]|"\\(.score.normalized)  \\(.slug)  \\(.version)"'
+
 # 读联想的审计 meta
 curl -s https://mbabrand.com/api/reports/lenovo.json
+
+# 全文检索(reports + panels + judges + dimensions + lenses 的扁平语料)
+curl -s https://mbabrand.com/api/search.json \\
+  | jq -r '.items[]|select(.text|test("开源"))|"\\(.type)  \\(.title)  \\(.url)"'
 
 # 查 auto panel 里有谁
 curl -s https://mbabrand.com/api/panels/auto.json | jq '.judges[].display_name_cn'
 
 # 拿单个评委的 SKILL.md 描述
 curl -s https://mbabrand.com/api/judges/jobs.json | jq -r .description
+
+# 没有 jq 时用 python 兜底
+curl -s https://mbabrand.com/api/reports.json | python3 -c "
+import json,sys
+for r in sorted(json.load(sys.stdin)['items'], key=lambda r:-(r['score']['normalized'] or 0))[:5]:
+    print(r['score']['normalized'], r['slug'], r['version'])"
 ```
+
+## Gotchas(写 client 前先读这三条)
+
+- `/api/reports.json` 的形状是 `{"count": N, "items": [...]}`,**不是裸数组**。
+- 单报告的分数在**嵌套的 `score` 对象**下:`.score.normalized` / `.score.total` /
+  `.score.max`——按顶层取 `score_normalized` 会得到 `null`。
+- 分数**只在评委重审时变**(EVOLUTION),舆情信号只建议、不改分;`audit_date` +
+  `version` 是判断新鲜度的字段,不要用抓取时间。
 
 ## Trigger MBA from your own agent
 

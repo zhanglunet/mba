@@ -518,6 +518,62 @@ npx -y mba-mcp-server@latest      # 直接跑,或写进下面的 claude_desktop_
 
 完整用法见 [`docs/13-mcp-quickstart.md`](docs/13-mcp-quickstart.md);源码与开发/发布说明见 [`packages/mcp-server/`](packages/mcp-server)。
 
+### 5.2 HTTP JSON API —— `curl` 直接读,不装任何东西
+
+MBA 的站点**不只是给人看的报告站,也是给 agent 调用的品牌判断接口**。所有结构化内容在 build 时落成静态 JSON,挂在 `https://mbabrand.com/api/*.json`:
+
+**无 token · CORS 全开(`Access-Control-Allow-Origin: *`)· `application/json; charset=utf-8` · 随站点每日自动重新部署。**
+
+```bash
+# agent 的自我说明书(发现入口):端点清单 + quick start
+curl -s https://mbabrand.com/llms.txt
+
+# 全站 manifest:counts + 所有端点 URL
+curl -s https://mbabrand.com/api/index.json | jq
+```
+
+**端点全表**(以 `/api/index.json` 的 `endpoints` 为准):
+
+| 端点 | 内容 |
+|---|---|
+| `/api/index.json` | manifest:counts + 所有端点 URL |
+| `/api/about.json` | MBA 是什么 + team + repo + install |
+| `/api/methodology.json` | 7 维度 × 5 镜头 × 5 阶段流水线的结构化描述 |
+| `/api/reports.json` | 已发布审计报告列表(`{count, items[]}`) |
+| `/api/reports/{slug}.json` | 单报告元数据 + `html_url` / `pdf_url` |
+| `/api/panels.json` · `/api/panels/{slug}.json` | 10 套评委 panel + 行业映射 / 单 panel 组成 |
+| `/api/judges.json` · `/api/judges/{slug}.json` | 43 位评委视角 / 单评委来源 SKILL.md |
+| `/api/install.json` | 怎么把 MBA 装进 Claude Code |
+| `/api/search.json` | 扁平语料(reports + panels + judges + dimensions + lenses),给客户端做 substring search |
+
+**常用配方**(可直接粘贴):
+
+```bash
+# 排行榜 top5 —— 分数在嵌套的 .score 下
+curl -s https://mbabrand.com/api/reports.json \
+  | jq -r '.items|sort_by(-.score.normalized)[:5][]|"\(.score.normalized)  \(.slug)  \(.version)"'
+
+# 查单个品牌
+curl -s https://mbabrand.com/api/reports/huawei.json \
+  | jq -r '"\(.brand_cn) \(.version) \(.score.normalized)/10 (\(.score.total)/\(.score.max)) panel=\(.panel)"'
+
+# 全文检索(在 91 条扁平语料里找关键词)
+curl -s https://mbabrand.com/api/search.json \
+  | jq -r '.items[]|select(.text|test("开源"))|"\(.type)  \(.title)  \(.url)"'
+
+# 没有 jq 时用 python 兜底
+curl -s https://mbabrand.com/api/reports.json | python3 -c "
+import json,sys
+for r in sorted(json.load(sys.stdin)['items'], key=lambda r:-(r['score']['normalized'] or 0))[:5]:
+    print(r['score']['normalized'], r['slug'], r['version'])"
+```
+
+> ⚠️ **易踩的坑**:`/api/reports/{slug}.json` 的分数在**嵌套的 `score` 对象**下(`.score.normalized` / `.score.total` / `.score.max`),**不是顶层字段**——按顶层取会得到 `null`。
+>
+> `/api/reports.json` 的形状是 `{"count": N, "items": [...]}`,不是裸数组。
+
+人类可读的接入指南(端点表 + 更多示例 + Claude Code 集成):**<https://mbabrand.com/agents>**。
+
 ---
 
 ## 六、环境配置
