@@ -1,0 +1,101 @@
+name: Watch Prescreen (L1)
+
+# L1 预筛:判断哪些「建议重审」的品牌真的值得跑全量重审(docs/16 §9.5)。
+#
+# **只能手动触发**(workflow_dispatch)——刻意不进每日流程:
+#   L1 的判断质量尚未验证过,先由人点一次、看 verdict 靠不靠谱,再决定要不要自动化。
+# 默认**不提交** watch/prescreen.json,只把结果打进 job summary(Actions 页面直接可读),
+# 所以点它是**只读**的、不会污染仓库。要落库时把 commit 勾上。
+#
+# 复用 watch-discover 同一套 secrets/variables(GLM / OpenAI / Anthropic 网关)。
+# 没配 key 时脚本会优雅跳过(退出 0),不会把 workflow 弄红。
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "只打印将发给模型的输入 + token 估算,不调用模型(不花钱)"
+        type: boolean
+        default: false
+      brand:
+        description: "只看一个品牌(留空 = 全部触发品牌)"
+        type: string
+        required: false
+      commit:
+        description: "把 watch/prescreen.json 提交回 main(默认不提交,只看结果)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  prescreen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install deps
+        run: pip install --quiet pyyaml
+
+      - name: Run L1 prescreen
+        id: run
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          set -o pipefail
+          ARGS=""
+          [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          [ -n "${{ inputs.brand }}" ] && ARGS="$ARGS --brand ${{ inputs.brand }}"
+          echo "运行:python3 scripts/watch-tools/prescreen_reaudit.py $ARGS"
+          python3 scripts/watch-tools/prescreen_reaudit.py $ARGS 2>&1 | tee /tmp/prescreen.out
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## L1 预筛结果"
+            echo ""
+            echo '```'
+            cat /tmp/prescreen.out 2>/dev/null || echo "(无输出)"
+            echo '```'
+            if [ -f watch/prescreen.json ]; then
+              echo ""
+              echo "<details><summary>watch/prescreen.json(完整)</summary>"
+              echo ""
+              echo '```json'
+              cat watch/prescreen.json
+              echo '```'
+              echo ""
+              echo "</details>"
+            fi
+            echo ""
+            echo "> L1 只判断「值不值得请评委重审」,**不判断分数涨跌**;verdict 为 model-judged,"
+            echo "> reason 引用事件 id 供复核。分数只在评委 in-character 重打时变(合并=人工闸门)。"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit prescreen.json (opt-in)
+        if: ${{ inputs.commit && inputs.dry_run == false }}
+        run: |
+          if [ ! -f watch/prescreen.json ]; then
+            echo "没有 watch/prescreen.json(可能未配 key 而跳过)—— 不提交。"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add watch/prescreen.json
+          if git diff --cached --quiet; then
+            echo "prescreen.json 无变化 —— 不提交。"
+            exit 0
+          fi
+          git commit -m "chore(watch): L1 预筛结果 $(date -u +%Y-%m-%d) [skip ci]"
+          git push
