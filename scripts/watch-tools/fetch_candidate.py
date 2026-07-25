@@ -265,6 +265,65 @@ def _published_slugs():
     return out
 
 
+ATOM_NS = "{http://www.w3.org/2005/Atom}"
+
+
+def parse_feed(xml):
+    """任意 RSS 2.0 / Atom feed → [{title, link, date}](date 归一为 YYYY-MM-DD,认不出留空)。
+
+    给 `rss_feeds`(§9.9 免费社媒线)用:自托管 RSSHub 输出 RSS 2.0,但"任意 RSS 源"
+    的承诺意味着 Atom 也要认(GitHub releases.atom 就是 Atom)。**解析失败返回空列表,
+    绝不编造**;标题/链接逐字取自 feed,反捏造同官网直采。
+    """
+    import xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+    if not xml:
+        return []
+    try:
+        root = ET.fromstring(xml.encode("utf-8") if isinstance(xml, str) else xml)
+    except Exception:
+        return []
+    out = []
+    for it in root.findall(".//item"):                      # RSS 2.0
+        t = (it.findtext("title") or "").strip()
+        link = (it.findtext("link") or "").strip()
+        raw = (it.findtext("pubDate") or "").strip()
+        try:
+            d = parsedate_to_datetime(raw).date().isoformat()
+        except Exception:
+            m = re.search(r"20\d{2}-\d{2}-\d{2}", raw)
+            d = m.group(0) if m else ""
+        if t and link:
+            out.append({"title": t, "link": link, "date": d})
+    for e in root.findall(f".//{ATOM_NS}entry"):            # Atom
+        t = (e.findtext(f"{ATOM_NS}title") or "").strip()
+        ln = e.find(f"{ATOM_NS}link")
+        link = (ln.get("href") if ln is not None else "").strip()
+        raw = (e.findtext(f"{ATOM_NS}published") or e.findtext(f"{ATOM_NS}updated") or "").strip()
+        m = re.search(r"20\d{2}-\d{2}-\d{2}", raw)
+        if t and link:
+            out.append({"title": t, "link": link, "date": m.group(0) if m else ""})
+    return out
+
+
+def _brand_rss_feeds(slug):
+    """该品牌的自备 RSS 源列表(§9.9:自托管 RSSHub 的微博/小红书路由填这里)。
+
+    reports-meta 的 `rss_feeds` 接受**字符串或列表**;没配返回 []——保持原行为,无回归。
+    这是免费社媒线的对接口:用户本地 RSSHub 跑通后把 URL 填进 meta,当天流水线即开吃,
+    仓库侧零改动。
+    """
+    for r in _meta_reports():
+        if r.get("slug") == slug:
+            v = r.get("rss_feeds")
+            if isinstance(v, str):
+                return [v] if v.strip() else []
+            if isinstance(v, list):
+                return [str(x) for x in v if str(x).strip()]
+            return []
+    return []
+
+
 def _brand_news_page(slug):
     """该品牌的**官网新闻页 URL**(直采兜底),没配则 None。
 
@@ -405,6 +464,23 @@ def cmd_discover(args):
                     ET.SubElement(e, "pubDate").text = it["date"]
                 official_links.add(it["url"])
                 items.append(e)
+        # ⑤ 第五路:自备 RSS 源(自托管 RSSHub 的微博/小红书路由等,§9.9)。
+        for feed_url in _brand_rss_feeds(slug):
+            feed_xml = curl(feed_url)
+            got_feed = parse_feed(feed_xml)
+            if not got_feed:
+                # 哨兵同官网直采:RSSHub 路由挂了 / cookie 过期 都是**静默失效**,必须喊出来。
+                msg = f"⚠️ 自备 RSS 0 条:{slug} <- {feed_url}(路由可能失效或 cookie 过期)"
+                print(f"discover: {msg}", file=sys.stderr)
+                lines.append(f"\n## {slug} —— {msg}")
+            for it in got_feed:
+                e = ET.Element("item")
+                ET.SubElement(e, "title").text = it["title"]
+                ET.SubElement(e, "link").text = it["link"]
+                if it["date"]:
+                    ET.SubElement(e, "pubDate").text = it["date"]
+                social_links.add(it["link"])
+                items.append(e)
         if failed:
             lines.append(f"\n## {slug} —— ⚠️ 部分源拉取/解析失败:{', '.join(failed)}")
         if not items:
@@ -508,6 +584,53 @@ def cmd_discover(args):
     return 0
 
 
+def cmd_selftest(_args):
+    """离线自检:parse_feed(RSS 2.0 / Atom / 垃圾输入)与 rss_feeds 读取。fixture 跑,不出网。"""
+    checks, fails = 0, []
+
+    def ok(cond, name):
+        nonlocal checks
+        checks += 1
+        if not cond:
+            fails.append(name)
+
+    rss2 = """<?xml version="1.0"?><rss version="2.0"><channel>
+      <item><title>美团发布二季度财报</title><link>https://x/1</link>
+            <pubDate>Mon, 20 Jul 2026 08:00:00 GMT</pubDate></item>
+      <item><title>无日期条目</title><link>https://x/2</link></item>
+      <item><title></title><link>https://x/3</link></item>
+    </channel></rss>"""
+    got = parse_feed(rss2)
+    ok(len(got) == 2, "rss2:空标题条目被丢弃")
+    ok(got[0]["date"] == "2026-07-20", "rss2:RFC-2822 日期归一为 ISO")
+    ok(got[1]["date"] == "", "rss2:无日期留空,不猜")
+
+    atom = """<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom">
+      <entry><title>v0.6.1 发布</title><link href="https://x/r1"/>
+             <updated>2026-07-21T09:30:00Z</updated></entry>
+      <entry><title>微博:美团骑士节</title><link href="https://x/r2"/>
+             <published>2026-07-17T00:00:00+08:00</published></entry>
+    </feed>"""
+    got = parse_feed(atom)
+    ok(len(got) == 2, "atom:entry 被解析(RSSHub 之外的 Atom 源也认)")
+    ok(got[0]["date"] == "2026-07-21" and got[1]["date"] == "2026-07-17",
+       "atom:updated/published 都取日期部分")
+    ok(got[1]["link"] == "https://x/r2", "atom:link 取 href 属性")
+
+    ok(parse_feed("<html>不是 feed</html>") == [], "垃圾输入:返回空,不编造")
+    ok(parse_feed("") == [] and parse_feed(None) == [], "空输入:返回空")
+
+    import inspect
+    src = inspect.getsource(cmd_discover)
+    ok("_brand_rss_feeds(" in src and "自备 RSS 0 条" in src,
+       "discover:自备 RSS 已接线且带静默失效哨兵")
+    ok("social_links.add(it[\"link\"])" in src, "discover:自备 RSS 条目标 social")
+
+    print(f"fetch_candidate --selftest: "
+          f"{'✅ ' + str(checks) + ' 组断言全部通过' if not fails else '❌ 失败: ' + ', '.join(fails)}")
+    return 1 if fails else 0
+
+
 def main(argv):
     ap = argparse.ArgumentParser(description="舆情事件候选取数 / 自动发现 / 反捏造自审")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -524,6 +647,8 @@ def main(argv):
     pg.add_argument("--limit", type=int, default=12, help="每品牌候选上限(防噪音灌水,默认 12)")
     pg.add_argument("--out", help="写入文件(如 watch/_candidates/<date>.md);缺省打印 stdout")
     pg.set_defaults(func=cmd_discover)
+    ps = sub.add_parser("selftest", help="离线自检(feed 解析 fixture,不出网)")
+    ps.set_defaults(func=cmd_selftest)
     args = ap.parse_args(argv)
     return args.func(args)
 
