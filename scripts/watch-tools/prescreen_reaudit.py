@@ -40,12 +40,19 @@ import evaluate_triggers as et            # 复用 30 天窗口触发规则
 OUT_PATH = os.path.join(ROOT, "watch", "prescreen.json")
 WATCH_DIR = os.path.join(ROOT, "watch")
 
-# 分批:每批 6 个品牌。2026-07-25 首次真跑,17 家一次要模型输出 17 个含 reason 的对象,
-# 撞上 call_llm 默认 max_tokens=2000 被截断 → JSONDecodeError。分批 + 调大上限双保险。
-BATCH_BRANDS = 6
+# ── 批量与限流(两次真跑调出来的)────────────────────────────────────────────
+# 2026-07-25 第 1 次:17 家一次 → 输出撞 max_tokens=2000 被截断(JSONDecodeError)。
+# 2026-07-25 第 2 次:改按「品牌数」分批(6 家/批)仍全批超时 —— 因为 **payload 大小取决于
+#   事件数,不是品牌数**:6 家 × 平均 30 条 = 195 条/批 ≈ 11.5k token,90s timeout 扛不住。
+# 故:① 按**事件数**分批;② 每品牌**限量**且 P0/P1 优先(预筛只需判断「有没有硬事实」,
+#   看最重要的十几条足够,不必喂全部);③ 标题截短;④ timeout 加大。
+BATCH_EVENTS = 70          # 每批事件数上限(≈6k 字符 ≈3k token 输入)
+MAX_EVENTS_PER_BRAND = 18  # 每品牌最多喂多少条(按 P0>P1>P2、同级新→旧取头部)
+TITLE_CHARS = 70           # 标题截断:预筛判"类型"够用,不需要完整标题
 MAX_TOKENS = 4000
-# 单个品牌的输出大小(经验值,用于 --dry-run 估算):slug+verdict+reason+2 个 event id ≈ 175 字符
-OUT_CHARS_PER_BRAND = 175
+TIMEOUT = 180              # 单次调用超时(默认 90 太紧)
+OUT_CHARS_PER_BRAND = 175  # 单品牌输出经验值,供 --dry-run 估算
+_SEV_RANK = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 
 SYSTEM = (
     "你在给一个品牌影响力审计系统做**预筛**:判断某品牌积压的舆情信号里,有没有值得"
@@ -65,23 +72,30 @@ SYSTEM = (
 )
 
 
-def _events_digest(events, window_days=30, as_of=None):
-    """取窗口内未消费事件的 (id, date, severity, title) —— 只给标题,不给正文/URL,省 token。"""
+def _events_digest(events, window_days=30, as_of=None, limit=MAX_EVENTS_PER_BRAND):
+    """窗口内未消费事件 → (id, date, sev, title);只给标题,不给正文/URL,省 token。
+
+    **按 P0>P1>P2、同级日期新→旧取前 `limit` 条**:预筛只判断「有没有已落地的硬事实」,
+    喂最重要的十几条足够;全喂会让单批 payload 撑到 11k+ token 而超时(2026-07-25 实测)。
+    优先级排序保证「限量」不会把 P0 挤掉。
+    """
     dates = [et.as_date(e.get("date")) for e in events if isinstance(e, dict)]
     dates = [d for d in dates if d]
     if as_of is None:
         as_of = max(dates) if dates else datetime.date.today()
     start = as_of - datetime.timedelta(days=window_days)
-    out = []
+    rows = []
     for e in events:
         if not isinstance(e, dict) or e.get("consumed_by"):
             continue
         d = et.as_date(e.get("date"))
         if d is None or not (start <= d <= as_of):
             continue
-        out.append({"id": e.get("id"), "date": str(e.get("date")),
-                    "sev": e.get("severity"), "title": (e.get("title") or "")[:110]})
-    return out
+        rows.append((_SEV_RANK.get(e.get("severity"), 9), -d.toordinal(),
+                     {"id": e.get("id"), "date": str(e.get("date")),
+                      "sev": e.get("severity"), "title": (e.get("title") or "")[:TITLE_CHARS]}))
+    rows.sort(key=lambda r: (r[0], r[1]))
+    return [r[2] for r in rows[:limit]]
 
 
 def build_payload(brand=None, window_days=30):
@@ -130,7 +144,22 @@ def _clean(rows, wanted_slugs):
     return by
 
 
-def run(items, prov, batch=BATCH_BRANDS):
+def _chunks(items, max_events=BATCH_EVENTS):
+    """按**事件数**切批(而非品牌数)—— payload 大小取决于事件数。单家超限时自成一批。"""
+    out, cur, n = [], [], 0
+    for it in items:
+        k = len(it["events"])
+        if cur and n + k > max_events:
+            out.append(cur)
+            cur, n = [], 0
+        cur.append(it)
+        n += k
+    if cur:
+        out.append(cur)
+    return out
+
+
+def run(items, prov, max_events=BATCH_EVENTS):
     """分批调用,汇总。
 
     **两处都是 2026-07-25 首次真跑踩出来的**:
@@ -141,18 +170,17 @@ def run(items, prov, batch=BATCH_BRANDS):
     单批失败**不拖垮整体**:该批品牌降级为 directional 并标注,其余批次结果照常返回。
     """
     out, wanted = {}, {it["slug"] for it in items}
-    starts = list(range(0, len(items), batch))
-    for bi, start in enumerate(starts):
+    batches = _chunks(items, max_events)
+    for bi, chunk in enumerate(batches):
         if bi:
             time.sleep(float(cc._env("MBA_CLASSIFY_BATCH_PAUSE", "2")))  # 避开端点 QPS 限流
-        chunk = items[start:start + batch]
         payload = [{"slug": it["slug"], "events": it["events"]} for it in chunk]
         slugs = {it["slug"] for it in chunk}
         try:
-            rows = cc.call_llm(payload, prov, system=SYSTEM, max_tokens=MAX_TOKENS)
+            rows = cc.call_llm(payload, prov, system=SYSTEM, max_tokens=MAX_TOKENS, timeout=TIMEOUT)
             out.update(_clean(rows, slugs))
         except Exception as e:  # 单批失败:保守降级,继续跑其余批
-            print(f"prescreen: 第 {bi + 1}/{len(starts)} 批失败({e})—— 该批降级为 directional。",
+            print(f"prescreen: 第 {bi + 1}/{len(batches)} 批失败({e})—— 该批降级为 directional。",
                   file=sys.stderr)
             for slug in slugs:
                 out[slug] = {"verdict": "directional",
@@ -200,16 +228,18 @@ def main(argv):
         payload = [{"slug": it["slug"], "events": it["events"]} for it in items]
         blob = json.dumps(payload, ensure_ascii=False)
         n_ev = sum(len(it["events"]) for it in items)
-        n_batch = (len(items) + BATCH_BRANDS - 1) // BATCH_BRANDS
-        per_batch = min(BATCH_BRANDS, len(items))
-        out_chars = per_batch * OUT_CHARS_PER_BRAND
-        print(f"prescreen --dry-run:{len(items)} 个触发品牌 / {n_ev} 条未消费事件 "
-              f"→ 分 {n_batch} 批(每批 ≤{BATCH_BRANDS} 家)")
-        print(f"  输入合计 ≈ {len(blob)} 字符 + system {len(SYSTEM)} 字符×{n_batch} "
-              f"≈ {(len(blob) + len(SYSTEM) * n_batch) // 2} token(粗估,中文 ~2 字符/token)")
-        # 输出量必须一起估 —— 2026-07-25 首次真跑就是漏估输出、撞 max_tokens 被截断而失败。
-        print(f"  单批输出 ≈ {out_chars} 字符 ≈ {out_chars // 2} token "
-              f"(上限 max_tokens={MAX_TOKENS};超了会被截断 → JSON 解析失败)")
+        batches = _chunks(items)
+        print(f"prescreen --dry-run:{len(items)} 个触发品牌 / {n_ev} 条事件"
+              f"(每品牌 ≤{MAX_EVENTS_PER_BRAND} 条,P0/P1 优先)→ 分 {len(batches)} 批"
+              f"(每批 ≤{BATCH_EVENTS} 条事件)")
+        print(f"  输入合计 ≈ {len(blob)} 字符 + system {len(SYSTEM)}×{len(batches)} "
+              f"≈ {(len(blob) + len(SYSTEM) * len(batches)) // 2} token(粗估,中文 ~2 字符/token)")
+        # 逐批打印:两次真跑的失败都出在**单批**过大(截断 / 超时),总量反而不是关键。
+        for i, ch in enumerate(batches, 1):
+            c = len(json.dumps([{"slug": x["slug"], "events": x["events"]} for x in ch], ensure_ascii=False))
+            oc = len(ch) * OUT_CHARS_PER_BRAND
+            print(f"    批{i}: {len(ch)} 家 / {sum(len(x['events']) for x in ch)} 条 / "
+                  f"入 ≈{c // 2} token · 出 ≈{oc // 2} token(上限 {MAX_TOKENS},timeout {TIMEOUT}s)")
         print(f"  品牌:{', '.join(it['slug'] for it in items)}")
         return 0
 
@@ -256,6 +286,17 @@ def _selftest():
     ok(len(d) == 1 and d[0]["id"] == "a-1", "digest:只取窗口内未消费")
     ok("title" in d[0] and "url" not in d[0], "digest:不含 URL(省 token)")
 
+    # 限量必须 P0 优先 —— 否则"每品牌 ≤18 条"可能把 P0 挤掉(2026-07-25 超时修复引入)
+    many = ([{"id": f"p2-{i}", "date": today, "severity": "P2", "title": "小事"} for i in range(30)]
+            + [{"id": "p0-x", "date": today - datetime.timedelta(days=20), "severity": "P0", "title": "大事"}])
+    dd = _events_digest(many, 30, as_of=today, limit=5)
+    ok(len(dd) == 5, "digest:限量生效")
+    ok(dd[0]["id"] == "p0-x", "digest:P0 优先(限量不会挤掉最重要的)")
+
+    ok(len(_chunks([{"slug": "a", "events": [0] * 50}, {"slug": "b", "events": [0] * 50}],
+                   max_events=70)) == 2, "chunks:按事件数切批(不是品牌数)")
+    ok(len(_chunks([{"slug": "a", "events": [0] * 200}], max_events=70)) == 1, "chunks:单家超限自成一批")
+
     cleaned = _clean([{"slug": "x", "verdict": "substantive", "reason": "见 a-1", "key_event_ids": ["a-1"]}],
                      {"x", "y"})
     ok(cleaned["x"]["verdict"] == "substantive", "clean:保留合法 verdict")
@@ -276,14 +317,17 @@ def _selftest():
     src = inspect.getsource(run)
     ok("system=SYSTEM" in src,
        "run:必须显式传自己的 SYSTEM(不传会用成 classify 的分类 prompt,答错题)")
-    ok("max_tokens=MAX_TOKENS" in src and "BATCH_BRANDS" in inspect.getsource(sys.modules[__name__]),
-       "run:必须分批 + 调大 max_tokens(17 家一次会被 2000 截断)")
+    ok("max_tokens=MAX_TOKENS" in src, "run:必须调大 max_tokens(17 家一次会被 2000 截断)")
+    ok("timeout=TIMEOUT" in src, "run:必须加大 timeout(默认 90s 扛不住大 payload)")
+    ok("_chunks(" in src, "run:必须按事件数分批(按品牌数分会撑爆单批)")
+    ok("timeout" in inspect.signature(cc.call_llm).parameters, "call_llm:必须支持覆盖 timeout")
 
     # 单批失败不拖垮整体:mock 一个必炸的 call_llm
     real = cc.call_llm
     try:
         cc.call_llm = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("boom"))
-        got = run([{"slug": "a", "events": []}, {"slug": "b", "events": []}], ("x", "k", "u", "m"), batch=1)
+        got = run([{"slug": "a", "events": [0]}, {"slug": "b", "events": [0]}],
+                  ("x", "k", "u", "m"), max_events=1)
         ok(set(got) == {"a", "b"} and all(v["verdict"] == "directional" for v in got.values()),
            "run:单批失败→该批降级为 directional,不抛异常")
         ok("需人工复核" in got["a"]["reason"], "run:失败降级理由写明需复核")
