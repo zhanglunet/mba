@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MBA 系统如何运作 · System overview — Metric Brand Auditor</title>
+<meta name="description" content="MBA 整套系统怎么转:两个输入(人物语料 / 舆情信号)、一个核心(panel 编组 → 7 维×5 镜打分)、三个出口(网站 / API / MCP);两个循环如何交汇于人工闸门 —— 含流程图。" />
+<meta property="og:title" content="MBA 系统如何运作 · System overview" />
+<meta property="og:description" content="两个输入 · 一个核心 · 三个出口;两个循环交汇于一道人工闸门。" />
+<meta property="og:url" content="https://mbabrand.com/system.html" />
+<style>
+  :root {
+    --ink: #111;
+    --paper: #faf8f3;
+    --muted: #6b6760;
+    --rule: #1a1a1a;
+    --accent: #c1440e;
+    --card: #fff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 840px; margin: 0 auto; padding: 56px 28px 80px; }
+  header {
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 18px; margin-bottom: 30px;
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
+  .mark a { color: inherit; text-decoration: none; }
+  .mark .dot { color: var(--accent); }
+  nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 18px; }
+  nav a:hover, nav a[aria-current] { color: var(--accent); border-color: var(--accent); }
+
+  h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.16; margin: 0 0 12px; font-weight: 800; letter-spacing: -0.01em; }
+  .sub { font-size: 17px; color: var(--muted); margin: 0 0 28px; font-style: italic; }
+  .lead { font-size: 18px; margin: 0 0 28px; }
+
+  h2 { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 22px; margin: 48px 0 6px; padding-top: 14px; border-top: 1px solid var(--rule); letter-spacing: -0.01em; }
+  h2 .n { color: var(--accent); font-weight: 800; margin-right: 10px; }
+  h3 { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 16px; margin: 26px 0 6px; }
+  p { margin: 0 0 14px; }
+  .en { color: var(--muted); font-size: 14px; font-style: italic; }
+  strong { color: var(--ink); }
+  code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.86em; background: #f0ece3; padding: 1px 6px; border-radius: 4px; }
+
+  .toc { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 18px 22px; margin: 0 0 36px; }
+  .toc h3 { margin: 0 0 10px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .toc ol { margin: 0; padding-left: 20px; }
+  .toc li { margin: 4px 0; }
+  .toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid #d8d2c6; }
+  .toc a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .diagram { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 22px 18px; margin: 18px 0 8px; overflow-x: auto; }
+  .diagram .mermaid { display: flex; justify-content: center; min-width: 100%; }
+  .caption { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin: 0 0 24px; text-align: center; }
+
+  table { border-collapse: collapse; width: 100%; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; margin: 14px 0 22px; }
+  th, td { border: 1px solid #d8d2c6; padding: 9px 12px; text-align: left; vertical-align: top; }
+  th { background: #f0ece3; font-weight: 700; }
+  tbody tr:nth-child(even) { background: #fbf9f4; }
+
+  ul.tight { margin: 8px 0 18px; padding-left: 22px; }
+  ul.tight li { margin: 5px 0; }
+
+  .lenses { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 14px 0 20px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+  .lens { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; background: var(--card); }
+  .lens .t { font-weight: 700; font-size: 14px; }
+  .lens .d { color: var(--muted); font-size: 13px; margin-top: 4px; line-height: 1.45; }
+
+  .blocks { counter-reset: blk; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; margin: 14px 0 20px; }
+  .blk { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e7e1d5; }
+  .blk:last-child { border-bottom: none; }
+  .blk .num { flex: 0 0 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .blk .bd b { display: block; }
+  .blk .bd span { color: var(--muted); }
+
+  .callout { border-left: 4px solid var(--accent); background: #fff7ed; padding: 12px 16px; margin: 16px 0 22px; font-size: 15px; border-radius: 0 6px 6px 0; }
+
+  .hack-banner { background: #fff7ed; border: 2px solid var(--accent); color: var(--ink); padding: 13px 18px; font-size: 13.5px; line-height: 1.55; margin: 0 0 30px; border-radius: 4px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+  .hack-banner .tag { display: inline-block; background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; margin-right: 8px; letter-spacing: 0.06em; }
+
+  footer { margin-top: 56px; padding-top: 18px; border-top: 2px solid var(--rule); color: var(--muted); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+  @media (max-width: 560px) { .lenses { grid-template-columns: 1fr; } }
+
+  /* ── logo glyph(五镜头雷达,规范见 /logo-design.html)── */
+  .mark { display: inline-flex; align-items: center; gap: 10px; }
+  .mark > a, a.mark-lockup { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+  .mark-glyph { display: block; flex-shrink: 0; }
+  .mark-glyph .radar-data { stroke-dasharray: 100; }
+  .mark-glyph .radar-dot { transform-box: fill-box; transform-origin: center; transition: transform .25s cubic-bezier(.2,1.4,.4,1); }
+  .mark:hover .radar-dot { transform: scale(1.35); }
+  @media (prefers-reduced-motion: no-preference) {
+    .mark-glyph .radar-data { animation: mba-draw 1.1s cubic-bezier(.6,0,.25,1) .2s backwards; }
+    .mark-glyph .radar-dot { animation: mba-pop .4s cubic-bezier(.2,1.6,.4,1) 1.2s backwards; }
+  }
+  @keyframes mba-draw { from { stroke-dashoffset: 100; fill-opacity: 0; } to { stroke-dashoffset: 0; fill-opacity: 1; } }
+  @keyframes mba-pop { from { transform: scale(0); } to { transform: scale(1); } }
+</style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" role="img" aria-label="MBA — Metric Brand Auditor"><a href="/" class="mark-lockup"><svg class="mark-glyph" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true" focusable="false"><defs><linearGradient id="mbaGradMk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/></linearGradient></defs><polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/><g fill="none" stroke="#111" opacity=".12" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g><polygon class="radar-data" pathLength="100" points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#mbaGradMk)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/><circle class="radar-dot" cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/></svg><span>MBA<span class="dot">.</span></span></a></div>
+      <nav>
+        <a href="/">品牌监控</a>
+        <a href="/watch/">舆情信号</a>
+        <a href="/panorama.html">评委全景</a>
+        <a href="/starmap.html">知识星图</a>
+        <a href="/docs.html" aria-current="page">文档</a>
+        <a href="https://github.com/zhanglunet/mba">GitHub</a>
+      </nav>
+    </header>
+
+    <h1>MBA 系统是怎么运作的</h1>
+    <p class="sub">System overview — 两个输入 · 一个核心 · 三个出口;两个循环交汇于一道人工闸门</p>
+
+    <div class="hack-banner">
+      <span class="tag">HACKATHON DEMO</span>
+      评委头像 / 评分 / verdict 均为 AI 基于<strong>公开一手资料</strong>的 in-character 模拟,<strong>非本人真实意见</strong>;本站报告<strong>不构成投资建议</strong>,也不构成对任何品牌 / 上市公司的实际评价。
+    </div>
+
+    <p class="lead">
+      MBA 把"品牌影响力"这件本来靠感觉的事,拆成<strong>可打分、可比较、可复盘</strong>的东西。
+      这一页讲<strong>整台机器怎么转</strong> —— 单次打分的细节在
+      <a href="/how-it-works.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">怎么打分</a>那一页。
+    </p>
+
+    <div class="toc">
+      <h3>目录</h3>
+      <ol>
+        <li><a href="#overview">全景:两个输入、一个核心、三个出口</a></li>
+        <li><a href="#loops">两个循环:一个慢、一个快</a></li>
+        <li><a href="#life">一条新闻如何最终改变分数</a></li>
+        <li><a href="#l1">L1 预筛:一道更便宜的闸门</a></li>
+        <li><a href="#gates">谁在把关:六道门禁 + 一条铁律</a></li>
+        <li><a href="#use">三种用法</a></li>
+        <li><a href="#numbers">数字快照</a></li>
+      </ol>
+    </div>
+
+    <h2 id="overview"><span class="n">01</span>全景:两个输入、一个核心、三个出口</h2>
+    <p>整个系统只有两个输入源,但它们的<strong>节奏完全不同</strong> —— 这是理解 MBA 的关键。</p>
+
+    <div class="diagram">
+      <pre class="mermaid">
+flowchart TB
+  A1["<b>输入 ①　人物语料</b>　· 慢变量<br/>43 位评委 · 一手著作 / 访谈 / 决策"]
+  A2["<b>输入 ②　舆情信号</b>　· 快变量<br/>24 个品牌 · 每日自动发现 170~180 条"]
+  B1["<b>核心 ①　编组</b>:10 套 panel<br/>按行业选评委 · 利益冲突自动回避"]
+  B2["<b>核心 ②　审计</b>:7 维度 × 5 镜头<br/>N 位评委彼此隔离、独立打分"]
+  R["<b>版本化报告</b>　v1 → v2 → v3 …<br/>每版冻结快照,旧版永久可回溯"]
+  C["<b>三个出口</b><br/>网站报告页　·　JSON API × 11　·　MCP 工具 × 16"]
+  A1 --> B1
+  B1 --> B2
+  A2 -.->|"累积到阈值 ⇒ 触发重审"| B2
+  B2 --> R
+  R --> C
+  R -.->|"vN 作为下一次的基线"| B2
+  style A2 stroke-dasharray: 4 3
+      </pre>
+    </div>
+    <p class="caption">虚线 = 反馈回路。舆情只能<b>触发</b>重审,永远不能自己改分。</p>
+
+    <div class="callout">
+      <strong>慢变量 vs 快变量。</strong> 人物语料是慢的 —— 深化一位评委要走 6 路一手调研、≥30 条已验证引用。
+      舆情是快的 —— 每天自动进 170~180 条候选。系统的设计难点就是
+      <strong>让快的那条不要污染慢的那条</strong>。
+    </div>
+
+    <h2 id="loops"><span class="n">02</span>两个循环:一个慢、一个快</h2>
+
+    <div class="diagram">
+      <pre class="mermaid">
+flowchart TB
+  subgraph B["循环 B · 舆情循环(机器驱动,每天 02:17 UTC)"]
+    direction LR
+    B1["发现候选<br/>170~180 条/天"] --> B2["AI 预分类<br/>维度/严重度/方向"] --> B3["自动开 PR"] --> B4["人审 diff<br/>合并入库"]
+  end
+  B4 --> EV["events.yaml<br/>累计 858 条 · 24 品牌"]
+  EV --> TR{"触发规则<br/>30 天滚动窗口"}
+  TR -->|"未达阈值"| WAIT["继续累积"]
+  TR -->|"达阈值"| SUG["建议重审<br/>首页亮灯"]
+  SUG --> L1["L1 预筛<br/>值不值得跑"]
+  L1 --> A0
+  subgraph A["循环 A · 审计循环(人驱动,按需)"]
+    direction LR
+    A0["/mba 品牌"] --> A1["立 PRD<br/>人确认"] --> A2["N 个子代理<br/>并行取证"] --> A3["Lead 合成<br/>证据包"] --> A4["N 位评委<br/>隔离打分"] --> A5["Lead 合并<br/>+ 版本快照"]
+  end
+  A5 --> DONE["新版本 vN+1<br/>事件标记已消费"]
+
+  style B4 fill:#fff7ed,stroke:#c1440e,stroke-width:2px
+  style A4 fill:#fff7ed,stroke:#c1440e,stroke-width:2px
+      </pre>
+    </div>
+    <p class="caption">橙色框 = 人在把关的两个环节。其余均可自动化。</p>
+
+    <h3>触发规则(三选一命中即触发)</h3>
+    <table>
+      <thead><tr><th>规则</th><th>条件</th><th>含义</th></tr></thead>
+      <tbody>
+        <tr><td>R1</td><td>P0 ≥ 1</td><td>出现一条重大信号即可</td></tr>
+        <tr><td>R2</td><td>P1 ≥ 3</td><td>三条次重要信号累积</td></tr>
+        <tr><td>R3</td><td>4×P0 + 2×P1 + 0.5×P2 ≥ 6</td><td>加权总量达标</td></tr>
+      </tbody>
+    </table>
+    <p>三条都只算<strong>30 天滚动窗口内、且尚未被任何一次重审消费过</strong>的事件 —— 所以旧新闻不会一直把品牌卡片标红,同一件事也不会被重复计价。</p>
+
+    <h2 id="life"><span class="n">03</span>一条新闻如何最终改变分数</h2>
+    <p>把上面两张图串起来,追一条真实信号的完整旅程 —— 注意<strong>哪几步是 AI、哪几步是人</strong>。</p>
+
+    <div class="blocks">
+      <div class="blk"><div class="num">1</div><div class="bd"><b>发现 · 机器</b><span>每日定时抓公开新闻源,按品牌聚合候选。标题、日期、链接<b>逐字取自来源</b>,不改写。</span></div></div>
+      <div class="blk"><div class="num">2</div><div class="bd"><b>分类 · AI</b><span>判维度 / 严重度 / 方向 / 影响镜头,全部显式标注 <code>model-judged</code> —— 是编辑判断,不假装客观。</span></div></div>
+      <div class="blk"><div class="num">3</div><div class="bd"><b>入库 · 人</b><span>自动开"建议入库"PR,<b>人审 diff 再合并</b>。校验器把关 schema 与适用性矩阵。</span></div></div>
+      <div class="blk"><div class="num">4</div><div class="bd"><b>累积 · 机器</b><span>触发规则每天重算。未达阈值就继续躺在事件库里等。</span></div></div>
+      <div class="blk"><div class="num">5</div><div class="bd"><b>预筛 · AI</b><span>L1 只看标题,逐条打类别标签,判断"这家有没有真正落地的硬事实"。<b>不判断分数涨跌。</b></span></div></div>
+      <div class="blk"><div class="num">6</div><div class="bd"><b>重审 · 人发起</b><span>评委以上一版为基线 in-character 重新打分。同一件事的多家转载<b>不重复计价</b>;悬而未决的事只给<b>方向价</b>,不改分。</span></div></div>
+      <div class="blk"><div class="num">7</div><div class="bd"><b>发版 · 人</b><span>合并 PR = 最后一道闸门。新版本落快照,事件标记 <code>consumed_by: vN</code>,不会被下次重复消费。</span></div></div>
+      <div class="blk"><div class="num">8</div><div class="bd"><b>对外 · 机器</b><span>网站、JSON API、MCP 工具同步刷新,旧版本永久可回溯。</span></div></div>
+    </div>
+
+    <div class="callout">
+      <strong>为什么这么克制?</strong> 2026-07 一次性重审了 15 个品牌,结果是
+      <strong>8 升 / 1 平 / 6 降,最大只动了 0.16 分</strong>。一个月的新闻轰炸下来,
+      真正改变品牌影响力的东西其实很少 —— 绝大多数是券商观点、传闻、同一件事的多家转载,
+      它们只有"方向价值",不该改分。
+    </div>
+
+    <h2 id="l1"><span class="n">04</span>L1 预筛:一道更便宜的闸门</h2>
+    <p>
+      完整重审一个品牌要读全篇报告加全部未消费事件,<strong>成本很高</strong>;而上面的数据说明,
+      绝大多数时候结论是"没变化" —— 钱花在了得出"不用改"上。所以加一道只看标题的前置闸门:
+      <strong>筛完全部触发品牌的成本,约等于完整重审一家。</strong>
+    </p>
+
+    <div class="diagram">
+      <pre class="mermaid">
+flowchart TB
+  E["每条新闻<br/>只喂标题 + 严重度"] --> M["AI <b>逐条</b>打类别标签"]
+  M --> W{"是否命中<br/>9 类封闭白名单?"}
+  W -->|"命中"| K["记为硬事实<br/>并引用事件 id"]
+  W -->|"没命中"| D["无实质变化"]
+  K --> AGG["<b>程序</b>汇总:任一命中 ⇒ 值得重审<br/>结论不由 AI 直接给"]
+  D --> AGG
+  AGG --> OUT["建议 + 逐条依据 + 覆盖率<br/>供人复核"]
+  style AGG fill:#f0ece3,stroke:#111,stroke-width:2px
+      </pre>
+    </div>
+    <p class="caption">品牌层面的结论由<b>程序</b>汇总,不由 AI 直接给。</p>
+
+    <h3>九类封闭白名单</h3>
+    <p>财报数字 · 融资完成 · 并购完成 · 监管处罚 · 上市进程 · 大规模裁员 · 重大事故 · 股价异动 · 旗舰发布。<strong>挑不出就是"无实质变化"。</strong></p>
+
+    <table>
+      <thead><tr><th>设计要点</th><th>为什么这么做</th></tr></thead>
+      <tbody>
+        <tr><td><b>逐事件</b>打标签,不给品牌级结论</td><td>让 AI 直接下品牌结论,它会"挑最弱的一条说不" —— 曾把排在第一位的"完成融资、估值超 3500 亿"直接跳过</td></tr>
+        <tr><td>类别取自<b>封闭清单</b>,挑不出即无</td><td>"这件事重不重要"是开放判断,能力有限的模型做不稳;<b>分类</b>才稳</td></tr>
+        <tr><td>白名单<b>由代码校验</b></td><td>模型自创一个类别,程序一律不认 —— 不靠自觉</td></tr>
+        <tr><td>每条引用事件编号 + 报出覆盖率</td><td>可逐条复核;<b>静默漏答比误判更危险</b></td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>边界</strong>:L1 只回答"值不值得请评委重新打分",<strong>永远不判断分数涨跌</strong>。
+      目前只能手动触发、默认不写库 —— 判断质量充分验证前不进每日流程。
+    </div>
+
+    <h2 id="gates"><span class="n">05</span>谁在把关:六道门禁 + 一条铁律</h2>
+
+    <div class="callout" style="border-left-color:#111;background:#f0ece3;">
+      <strong>铁律:审计分数从不自动变。</strong> 只在评委 in-character 重新打分时变,
+      且<strong>合并 PR = 人工闸门</strong>。AI 做的是分类与搬运,不是打分。
+    </div>
+
+    <table>
+      <thead><tr><th>门禁</th><th>守什么</th></tr></thead>
+      <tbody>
+        <tr><td><b>反捏造防火墙</b></td><td>评委档案里带署名的逐字引用,<b>必须在本套一手语料里逐字存在</b>;引一句语料里没有的话 = CI 报红</td></tr>
+        <tr><td><b>结构 / 质量检查</b></td><td>43 套评委档案的结构与质量,全量必须满分</td></tr>
+        <tr><td><b>利益回避静态拦截</b></td><td>每套评委档案都声明"不给自己的品牌打分",不靠自觉;已在微软 / 华为 / 特斯拉 / Palantir 四家真实触发</td></tr>
+        <tr><td><b>舆情数据校验</b></td><td>事件 schema + 品牌适用性矩阵对齐发布白名单;判断字段恒标"模型判定"</td></tr>
+        <tr><td><b>一致性守卫(12 格)</b></td><td>版本号、文档索引、评委数、工具数、维度口径、产业分类、首页卡片…… 抓"数据改了、页面没跟上"的漂移</td></tr>
+        <tr><td><b>报告完整性</b></td><td>评分矩阵列和必须等于声明总分;网页版与 Markdown 版不得漂移</td></tr>
+      </tbody>
+    </table>
+
+    <p>这些检查<strong>本地跑的命令与 CI 完全一致</strong> —— 贡献者在推送前就能拿到和 CI 一样的结论。</p>
+
+    <h2 id="use"><span class="n">06</span>三种用法</h2>
+
+    <table>
+      <thead><tr><th>方式</th><th>要 key 吗</th><th>能做什么</th><th>适合谁</th></tr></thead>
+      <tbody>
+        <tr><td><b>HTTP JSON API</b><br/>11 个端点</td><td>不要</td><td>读已发布的报告 / 评委 / panel,做搜索</td><td>任何人、任何 AI 助手,<code>curl</code> 即可</td></tr>
+        <tr><td><b>MCP server</b><br/>16 个工具</td><td>要</td><td>把 panel 与评委接进自己的 AI 助手</td><td>Claude Desktop / IDE 用户</td></tr>
+        <tr><td><b>Claude Code skill</b><br/><code>/mba</code></td><td>要</td><td>真跑完整流水线,产出新报告</td><td>想审新品牌的人</td></tr>
+      </tbody>
+    </table>
+
+    <p>
+      完整指南见 <a href="/agents" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">API / CLI 页</a>;
+      AI 助手的自我发现入口是 <a href="/llms.txt" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">/llms.txt</a>。
+    </p>
+
+    <h2 id="numbers"><span class="n">07</span>数字快照</h2>
+    <p class="en">Numbers are generated, not hand-written — 以下数字来自构建产物,随每次发布刷新。</p>
+
+    <table>
+      <thead><tr><th>项</th><th>数</th><th>项</th><th>数</th></tr></thead>
+      <tbody>
+        <tr><td>已发布审计报告</td><td><b>24</b></td><td>人物评委</td><td><b>43</b></td></tr>
+        <tr><td>可运行 panel</td><td><b>10</b></td><td>维度 / 镜头</td><td><b>9 / 5</b></td></tr>
+        <tr><td>创始人档案</td><td><b>24</b></td><td>创始人晚餐</td><td><b>3</b></td></tr>
+        <tr><td>舆情事件库</td><td><b>858</b> 条</td><td>监控品牌</td><td><b>24</b></td></tr>
+        <tr><td>JSON API 端点</td><td><b>11</b></td><td>MCP 工具</td><td><b>16</b></td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:36px;font-size:16px;">想看真实产物?
+      <a href="/how-it-works.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">打分体系详解</a> ·
+      <a href="/watch/cockpit.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">全站舆情驾驶舱</a> ·
+      <a href="/panorama.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">43 位评委全景</a> ·
+      <a href="https://github.com/zhanglunet/mba" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">GitHub 源码</a>。
+    </p>
+
+    <footer>
+      <span>MBA · Metric Brand Auditor · 评分为 AI 评委模拟,非本人观点,不构成投资建议</span>
+      <span><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></span>
+      <span style="flex-basis:100%;">© 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai">marsdata.ai</a></span>
+    </footer>
+  </div>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose', flowchart: { useMaxWidth: true, htmlLabels: true } });
+  </script>
+</body>
+</html>

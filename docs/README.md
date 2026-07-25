@@ -34,6 +34,7 @@
 | 23 | [23-industry-dimension.md](23-industry-dimension.md) | 产品 / 贡献者 | **产业维度**:按产业给 17 品牌分 6 大类(AI/消费/硬科技·航天/智能制造·硬件/企业服务·安全/教育);`reports-meta.yaml` 的 `industry` 字段单一真源 + 首页产业筛选/卡片标签(`build_home_cards.py`)+ `check_consistency` 第 10 格硬 gate;含分类表、schema、开发计划存档 |
 | 24 | [24-site-qa.md](24-site-qa.md) | 贡献者 / 运维 | **全站功能巡检与修复**:一次系统性 click/execute/verify(Playwright 爬 177 页 + 交互测试)找出并修复 4 个真实缺陷(2 处死链 + 版本快照断图 + redirect 目标错);含可复现方法、CDN 环境假阳性说明、11/11 交互测试结果 |
 | 25 | [25-superpowers-checklist.md](25-superpowers-checklist.md) | 贡献者 | **Superpowers 本地 checklist**:web 环境 `/plugin` 装不了插件,把 obra/superpowers 的方法论与铁律(七阶段工作流 + verification/TDD 两条 Iron Law 逐字转写)蒸馏成本地对照表 + MBA 适配(报告/YAML 的等价「测试」=本项目门禁)+ §4 每次开发收尾自检模板;用户 standing rule「每次开发验证 Superpowers」的落地 |
+| 26 | [26-system-overview.md](26-system-overview.md) | 所有人(入门) | **系统如何运作**:全景视角——两个输入(慢变量人物语料 / 快变量舆情信号)、一个核心(panel 编组 → 7 维×5 镜打分)、三个出口(网站 / JSON API / MCP);两个循环(审计循环人驱动 · 舆情循环每日机器驱动)如何交汇于「触发重审」;L1 预筛这道便宜闸门的设计要点;六道门禁 + 「分数从不自动变、合并 PR = 人工闸门」这条铁律;数字快照。网页版 mbabrand.com/system |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(原始设计草案) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |
