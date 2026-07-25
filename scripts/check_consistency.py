@@ -43,6 +43,64 @@ def check_version_alignment():
                        f"—— 每份 FRESH 报告会拷这个模板,必须同步(改 front-matter 时一起改)。")
     return True, f"SKILL version == panel 模板 mba_version == {fm.group(1)}"
 
+def check_system_numbers():
+    """「系统如何运作」页与文档里手写的数字,必须 == site/api/index.json 的 counts。
+
+    2026-07-25 起:system.html / docs/26 是**手写**的图文页,里面钉着一堆
+    「43 位评委 / 10 套 panel / 11 端点 / 16 工具」——和 agents.html 曾停在 v0.1.0
+    整整一个版本周期没人发现是同一类病:**会过期的数字手写在页面里、没人守**。
+
+    **只守稳定量**:评委 / panel / 端点 / 工具 / 镜头。
+    **故意不守事件条数**——它每天随舆情流水线增长,写死等于每天 CI 红;
+    页面里改成指向 `/watch/cockpit.html` 看实时数(这是设计,不是遗漏)。
+    """
+    idx = rd("site/api/index.json")
+    if idx is None:
+        return False, "site/api/index.json 不存在(先跑 build_agents_api.py)"
+    try:
+        counts = json.loads(idx)["counts"]
+        endpoints = len(json.loads(idx)["endpoints"])
+    except (ValueError, KeyError) as e:
+        return False, f"解析 site/api/index.json 失败:{e}"
+    srv = rd("packages/mcp-server/src/server.ts")
+    if srv is None:
+        return False, "packages/mcp-server/src/server.ts 不存在"
+    tools = srv.count("registerTool(")
+
+    # (人话名, 正则, 期望值) —— 正则要**锚在独特措辞上**,避免误伤无关数字。
+    # 反例:`(\d+) 个品牌` 不能用 —— 页面里有「重审了 15 个品牌」这种句子。
+    specs = [
+        ("评委数", re.compile(r"(\d+)\s*位评委"), counts.get("judges")),
+        ("panel 数", re.compile(r"(\d+)\s*套 panel"), counts.get("panels")),
+        ("镜头数", re.compile(r"[×x]\s*(\d+)\s*镜头"), counts.get("lenses")),
+        ("API 端点数", re.compile(r"(\d+)\s*个?端点|JSON API\s*[×x]\s*(\d+)"), endpoints),
+        ("MCP 工具数", re.compile(r"(\d+)\s*个?工具|MCP 工具\s*[×x]\s*(\d+)"), tools),
+    ]
+    targets = ["site/system.html", "docs/26-system-overview.md"]
+    bad, empty = [], []
+    for rel in targets:
+        text = rd(rel)
+        if text is None:
+            return False, f"{rel} 不存在"
+        for name, pat, want in specs:
+            if want is None:
+                return False, f"index.json 的 counts 里缺 {name} 的真源"
+            # 每条正则可能有多个捕获组(措辞变体),取非空的那个
+            got = [next(g for g in m if g) for m in
+                   (m.groups() if pat.groups > 1 else (m.group(1),) for m in pat.finditer(text))]
+            if not got:          # 逐文件要求(不能靠另一个文件兜底,否则 gate 对本文件失效)
+                empty.append(f"{rel} 找不到{name}")
+                continue
+            bad += [f"{rel} 的{name}写着 {v}(应为 {want})" for v in got if int(v) != want]
+    if bad:
+        return False, ("系统页数字过期:" + ";".join(bad) +
+                       " —— 这些数字的真源是 site/api/index.json,改了记得同步页面。")
+    if empty:
+        return False, ("；".join(empty) + " —— 要么数字被删了,要么措辞变了导致本 gate 失效。")
+    return True, (f"系统页数字自洽(评委 {counts['judges']} · panel {counts['panels']} · "
+                  f"镜头 {counts['lenses']} · 端点 {endpoints} · 工具 {tools},2 处文件)")
+
+
 def check_mcp_version():
     """面向用户的「当前 MCP 版本」陈述必须 == packages/mcp-server/package.json 的 version。
 
@@ -266,6 +324,7 @@ CHECKS = [
     ("创始人晚餐", check_collabs),
     ("产业维度", check_industries),
     ("晚餐亮点对齐", check_dinner_home),
+    ("系统页数字", check_system_numbers),
 ]
 
 def main():
