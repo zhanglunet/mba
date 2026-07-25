@@ -632,6 +632,66 @@ zhipu 两条同为「收购中科加禾」只有 **0.04**,google 的 Q2 财报�
 应先手动跑一段时间、确认 `verdict` 靠谱,再考虑 ① 进 workflow ② 首页只对 `substantive` 亮红。
 **L2(自动跑全量重审)更要等 L1 验证之后**——分数只在评委重打时变,这条不能让弱模型代劳。
 
+## 9.6 官方源召回:为什么 Opus 5 只被"转述"捡回来(2026-07-25)
+
+**问题**:用户问「Anthropic 发 Opus 5 这么大的事,为什么没收录?」查下来实情分三层:
+
+1. **收录了**——`2026-07-24-anthropic-059`「中国模型加速AI明星"内卷",**Anthropic上新Opus 5**,
+   性能逼近 Fable 5 价格打对折」。但报告是 **v4(2026-07-20)**,比该事件早四天,
+   所以报告页看不到它不是漏,是**还没重审**(`consumed_by: None`,正在等触发)。
+2. **但发现渠道单一**:discover 的唯一信息源是 Google News RSS **中文档**的**品牌名**查询,
+   **没有任何官网 / 官方博客源**。实证:该品牌 12 条事件的 `url` 全是
+   `news.google.com/rss/articles/...`、`source_type` 全是 `media`。于是官方公告
+   《Introducing Claude Opus 5》**没进库**,进库的是中文媒体转述——标题主语还是
+   "中国模型内卷",Opus 5 只是从句。
+3. **分级偏低**:旗舰模型发布判了 **P1**,而 R1 是 `P0 ≥ 1` 才立即触发,P1 要攒 3 条。
+
+### 修法一:加 `site:<官方新闻源>` 第二路召回
+
+不新增抓取器——**Google News RSS 支持 `site:` 语法**,复用现有管道即可,
+且 URL 直指官方原文。`site/reports-meta.yaml` 新增可选字段 **`news_site`**。
+
+**三条实测结论(都是踩出来的,别再试错)**:
+
+- **① 必须锚到新闻室子域/路径,不能用根域名。**
+  `site:apple.com` 召回的是 Apple Music 歌曲页、`site:tesla.com` 是招聘页、
+  `site:openai.com` 是状态页。改成 `apple.com/newsroom` / `news.microsoft.com` 后才干净。
+- **② 官方源查询必须走英文档。** 模块默认 `hl=zh-CN`,而 13 个官方源在中文档召回**几乎全为 0**:
+
+  | | EN | CN | | | EN | CN |
+  |---|---|---|---|---|---|---|
+  | `anthropic.com/news` | **16** | 0 | | `news.lenovo.com` | **41** | 0 |
+  | `openai.com/index` | **32** | 0 | | `blogs.nvidia.com` | **38** | 0 |
+  | `blog.google` | **75** | 1 | | `news.microsoft.com` | **28** | 0 |
+  | `aboutamazon.com/news` | **34** | 0 | | `apple.com/newsroom` | **7** | 0 |
+  | `huawei.com/en/news` | **17** | 0 | | `ir.tesla.com` | **5** | 0 |
+  | `spacex.com/updates` | **2** | 0 | | `investors.palantir.com` | **2** | 0 |
+  | `deepseek.com` | **100** | 9 | | | | |
+
+  故官方查询单独走 `GNEWS_EN`。官方条目标题因此是**英文一手原文**——
+  反捏造不变:quote 仍是源 feed 逐字标题,**不翻译不改写**。
+- **③ 中文品牌的官网 Google News 基本不收录**(`moonshot.cn` / `about.meituan.com` /
+  `dji.com/newsroom` 召回均为 **0**)。故 `news_site` **设计成可选**,只给实测有效的
+  13 家配;其余 11 家保持原行为,**无回归**。这是能力边界,不是遗漏。
+
+### 修法二:P0 判则加严
+
+预分类 prompt 显式列出 P0 类别,**首条就是"旗舰产品 / 主力大模型的正式发布或重大版本更新"**;
+候选 payload 带上 `src`(official/media),官方渠道的上述事件优先判 P0。
+同时**防住反向滥用**:招聘、产品目录、状态页、技术博客**不能**因为"来自官网"就升级。
+三条 selftest 断言钉住(改回去 = 自检红)。
+
+### 接线时踩的三个坑
+
+| 坑 | 现象 | 根因 / 修法 |
+|---|---|---|
+| 1 | 官方源接好了,候选里 **0 条 official** | 模块用中文档,官方源在中文档召回 0 → 单独走 `GNEWS_EN` |
+| 2 | 改英文档后仍 **0 条 official** | media 查询在前,`new[:limit]` 把官方条目**整段截掉** → 官方保留名额 |
+| 3 | 官方条目霸占 98/184 席,且混入分页页 | 官方**只占一半名额**、媒体保底;`is_noise` 加"`Page N of M`"与资源页 ID 模式 |
+
+**端到端验收**(真跑 discover,不是单测):`[official] Introducing Claude Opus 5` 已召回 ✓ ·
+分页噪音 0 残留 ✓ · 每品牌 official/media ≈ 5/5 ✓。
+
 ## 10. 单次扫描操作 SOP(M1 人肉/半自动版)
 
 ```

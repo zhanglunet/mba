@@ -79,6 +79,14 @@ SYSTEM = (
     "  与该品牌无实质关系/纯个人观点评论/标题党无信息量。宁缺勿滥。\n"
     "- dim(str):从该条给出的 applicable_dims 里选**一个**最贴切(如 W5)。\n"
     "- severity(str):P0 重大 / P1 显著 / P2 一般 / P3 轻微。\n"
+    "  **P0 判则(2026-07-25 加严)**:下列任一即 P0——\n"
+    "  · 该品牌**旗舰产品 / 主力大模型的正式发布或重大版本更新**(对 AI 公司而言这是\n"
+    "    最重要的事件类别之一;此前它常被判成 P1,导致「P0≥1 立即触发重审」这条规则失效);\n"
+    "  · 监管处罚 / 禁令 / 判决或和解已下达;· 融资或并购完成且金额明确;\n"
+    "  · 财报关键数字公布;· 大规模裁员或核心高管变动;· 重大安全事故 / 大规模服务中断。\n"
+    "  输入里 `src` 为 `official` 表示该条**取自品牌官方新闻源**(一手公告,不是媒体转述)——\n"
+    "  官方渠道发布的上述事件**优先判 P0**;但 `src` 只是来源标注,**不能**让招聘、\n"
+    "  产品目录、状态页、技术博客这类日常内容因为「来自官网」就升级。\n"
     "- direction(str):pos/neg/neutral/mixed —— 这是**显式编辑判断**,不假装客观。\n"
     "- lens_map(数组):origin/category/leverage/identity/signal 的子集(1–3 个)。\n"
     "- confidence(str):high/med/low(你对这条分类的把握)。\n"
@@ -181,6 +189,9 @@ def classify(cands, prov):
         chunk = cands[start:start + BATCH]
         items = [{"i": i, "brand": c.get("brand") or c.get("slug"),
                   "title": c.get("quote") or c.get("title"),
+                  # official = 该条来自品牌官方新闻源的 site: 召回(discover 标注),
+                  # 用于 severity 分级——官方渠道的旗舰发布是 P0 级事件。
+                  "src": c.get("source_type") or "media",
                   "applicable_dims": c.get("applicable_dims") or DIMS}
                  for i, c in enumerate(chunk)]
         try:
@@ -295,6 +306,16 @@ def _selftest():
     # 非法字段兜底
     bad = _clean({"keep": True, "dim": "W99", "severity": "X", "direction": "up", "lens_map": ["nope"]}, ["W5"])
     assert bad["dim"] == "" and bad["severity"] == "" and bad["direction"] == "" and bad["lens_map"] == ["signal"]
+
+    # ↓ 锁住 2026-07-25 的「官方源 + P0 判则」改动(见 docs/16 §9.6)↓
+    # 起因:Anthropic 发 Opus 5,库里只进了中文媒体转述(标题主语是"中国模型内卷"),
+    # 官方公告没进库;且旗舰模型发布被判 P1,而触发规则 R1 是 P0≥1 才立即触发。
+    assert "旗舰产品" in SYSTEM and "大模型" in SYSTEM, "P0 判则必须点名旗舰产品/大模型发布"
+    assert "official" in SYSTEM and "`src`" in SYSTEM, "prompt 必须解释 src=official 的含义"
+    assert "不能" in SYSTEM and "招聘" in SYSTEM, "必须防住『来自官网就升级』(招聘/目录/状态页)"
+    import inspect
+    src_run = inspect.getsource(run) if "run" in dir() else open(__file__).read()
+    assert '"src": c.get("source_type")' in src_run, "payload 必须把 source_type 传给模型"
     # adopt 事件是合法 YAML/JSON
     import tempfile
     p = tempfile.mktemp(suffix=".yaml")

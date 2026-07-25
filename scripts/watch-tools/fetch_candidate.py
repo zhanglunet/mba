@@ -121,6 +121,14 @@ def is_noise(title):
     # 纯 ticker 标题(如 "GOOGL" / "BABA")
     if re.fullmatch(r"[A-Z]{2,6}(\.[A-Z]{1,4})?", core.strip()):
         return True
+    # 官网**分页 / 栏目 / 资源页**——2026-07-25 接官方源后冒出来的新噪音:
+    # "Transformation - Page 37 of 37" / "Tech in Action - Page 41 of 41" /
+    # "Floodlights-G1131097396" / "Device as a Service"(产品目录页)。
+    # 它们是站点结构页,不是新闻,进了候选只会白烧分类预算。
+    if re.search(r"\bPage\s+\d+\s+of\s+\d+\b", core, re.I):
+        return True
+    if re.fullmatch(r"[\w \u2019'&-]{0,40}-[A-Z]?\d{6,}", core.strip()):
+        return True
     return False
 
 
@@ -239,6 +247,11 @@ def cmd_verify(args):
 # 中文源:标题直接是中文(取自中文媒体),满足「候选标题中文化」且**不做翻译**——
 # quote 仍是源站逐字标题(反捏造:中文标题来自中文源,非机器翻译)。
 GNEWS = "https://news.google.com/rss/search?q={q}&hl=zh-CN&gl=CN&ceid=CN:zh"
+# 官方源(site:)必须走**英文档**:2026-07-25 实测,13 个官方新闻源在中文档召回
+# 几乎全为 0(anthropic.com/news → 0),英文档 13/13 全有(anthropic 16 条,
+# 首条即 "Introducing Claude Opus 5")。官方条目标题因此是英文一手原文——
+# 反捏造不变:quote 仍是源 feed 逐字标题,不翻译、不改写。
+GNEWS_EN = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
 
 
 def _published_slugs():
@@ -250,6 +263,34 @@ def _published_slugs():
             if s and not s.startswith("#"):
                 out.append(s)
     return out
+
+
+def _brand_news_site(slug):
+    """该品牌的**官方新闻源**(域名或域名+路径),没配则 None。
+
+    2026-07-25 起:此前 discover 的唯一信息源是 Google News 的**品牌名**查询,
+    所以官方发布只能靠中文媒体转述被动捡回 —— Anthropic 发 Opus 5 那天,库里进的是
+    「中国模型加速AI明星内卷,Anthropic上新Opus 5……」(Opus 5 只是从句),
+    官方公告本身没进库。加一条 `site:<官方新闻源>` 查询即可召回一手原文。
+
+    **只给实测召回有效的品牌配**(见 docs/16 §9.6 的召回表):
+    根域名不行(`site:apple.com` 会召回 Apple Music 歌曲页、`site:tesla.com` 召回招聘页),
+    必须锚到**新闻室子域或路径**(`apple.com/newsroom` / `news.microsoft.com`)。
+    中文品牌的官网 Google News 基本不收录(moonshot.cn / about.meituan.com 召回 0),
+    故**留空** —— 留空即保持原行为,无回归。
+    """
+    for r in _meta_reports():
+        if r.get("slug") == slug:
+            return r.get("news_site") or None
+    return None
+
+
+def _meta_reports():
+    meta_path = os.path.join(ROOT, "site", "reports-meta.yaml")
+    try:
+        return (yaml.safe_load(open(meta_path, encoding="utf-8")) or {}).get("reports", [])
+    except Exception:
+        return []
 
 
 def _brand_query(slug):
@@ -300,15 +341,30 @@ def cmd_discover(args):
     cands = []  # 结构化候选(供前台 triage 页 / build_watch_triage.py 消费)
     total_new = 0
     for slug in slugs:
-        q = urllib.parse.quote(f"{_brand_query(slug)} when:{args.days}d")
-        xml = curl(GNEWS.format(q=q))
-        if xml is None:
-            lines.append(f"\n## {slug} —— ⚠️ RSS 拉取失败(出口/超时)")
-            continue
-        try:
-            items = ET.fromstring(xml.encode("utf-8") if isinstance(xml, str) else xml).findall(".//item")
-        except Exception as e:
-            lines.append(f"\n## {slug} —— ⚠️ RSS 解析失败:{e}")
+        # 两路召回:① 品牌名(媒体转述)② site:<官方新闻源>(一手原文,没配则跳过)。
+        # ② 是 2026-07-25 加的:此前官方发布只能靠媒体转述被动捡回(见 _brand_news_site)。
+        queries = [(f"{_brand_query(slug)} when:{args.days}d", "media")]
+        news_site = _brand_news_site(slug)
+        if news_site:
+            queries.append((f"site:{news_site} when:{args.days}d", "official"))
+        items, official_links, failed = [], set(), []
+        for qtext, kind in queries:
+            tpl = GNEWS_EN if kind == "official" else GNEWS
+            xml = curl(tpl.format(q=urllib.parse.quote(qtext)))
+            if xml is None:
+                failed.append(kind)
+                continue
+            try:
+                got = ET.fromstring(xml.encode("utf-8") if isinstance(xml, str) else xml).findall(".//item")
+            except Exception as e:
+                failed.append(f"{kind}({e})")
+                continue
+            if kind == "official":
+                official_links.update((it.findtext("link") or "").strip() for it in got)
+            items += got
+        if failed:
+            lines.append(f"\n## {slug} —— ⚠️ 部分源拉取/解析失败:{', '.join(failed)}")
+        if not items:
             continue
         urls, titles = _existing(slug)
         dims = brand_dims(slug)
@@ -334,8 +390,19 @@ def cmd_discover(args):
         if not new:
             lines.append(f"\n## {slug} —— 无新候选(窗口内 {args.days} 天)")
             continue
-        omitted = max(0, len(new) - args.limit)
-        shown = new[: args.limit]
+        # **官方源条目排前面**:media 查询在前,若按原序取 `new[:limit]`,官方条目会被
+        # limit 整段截掉(2026-07-25 首次接线就踩了这个——官方源拉到了,却 0 条进候选)。
+        # 官方一手公告正是本次改动要召回的东西,必须优先占名额。
+        # 官方源**保留名额**而非全占:首次接线时官方优先排序把媒体条目整段挤掉
+        # (184 条里 98 条官方)。官方一手公告要保证进得来,但媒体的舆情面也不能丢,
+        # 故官方最多占一半名额,其余按原序留给媒体。
+        off = [x for x in new if x[2] in official_links]
+        med = [x for x in new if x[2] not in official_links]
+        quota = max(1, args.limit // 2)
+        shown = (off[:quota] + med)[: args.limit]
+        if len(shown) < args.limit:                      # 媒体不足时官方回填
+            shown += [x for x in off[quota:] if x not in shown][: args.limit - len(shown)]
+        omitted = max(0, len(new) - len(shown))
         total_new += len(shown)
         more = f"(另 {omitted} 条同题材省略,防噪音灌水)" if omitted else ""
         lines.append(f"\n## {slug} —— {len(shown)} 条新候选{more} · 可用维度(非 off):{applicable}")
@@ -356,6 +423,8 @@ def cmd_discover(args):
                 "title": quote,
                 "url": link,
                 "source": (src or "").strip(),
+                # 官方源召回的条目显式标注,便于分类时给更高 severity(旗舰发布 = P0)
+                "source_type": "official" if link in official_links else "media",
                 "applicable_dims": [dm for dm, v in dims.items() if v != "off"],
                 "lens_suggest": ["signal"],
                 "fetched_at": now,
