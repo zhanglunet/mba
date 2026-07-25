@@ -108,26 +108,43 @@ def _clean(sug, applicable):
 
 
 def _extract_array(text):
-    """稳健取 JSON 数组:忽略 ```围栏/前后散文,截取第一个 [ 到最后一个 ]。"""
+    """稳健取 JSON 数组:忽略 ```围栏/前后散文,截取第一个 [ 到最后一个 ]。
+
+    解析失败时给出**可诊断**的错误 —— 最常见的原因是 max_tokens 太小导致输出被截断
+    (2026-07-25 实测踩过:17 家一次输出撞上 2000 上限,裸 JSONDecodeError 看不出病因)。
+    """
     text = (text or "").strip()
     i, j = text.find("["), text.rfind("]")
     if i < 0 or j <= i:
-        raise ValueError(f"模型返回无 JSON 数组:{text[:120]}")
-    return json.loads(text[i:j + 1])
+        raise ValueError(f"模型返回无 JSON 数组(可能被截断或返回了散文):…{text[-160:]}")
+    try:
+        return json.loads(text[i:j + 1])
+    except json.JSONDecodeError as e:
+        raise ValueError(
+            f"模型返回的 JSON 解析失败({e})。常见病因:**输出被 max_tokens 截断**"
+            f"(本次返回 {len(text)} 字符);可减小批量或调大 max_tokens。尾部:…{text[-160:]}"
+        ) from e
 
 
-def call_llm(items, prov):
-    """items: [{i, brand, title, applicable_dims}] → 建议列表(等长)。按 provider 分派。"""
+def call_llm(items, prov, system=None, max_tokens=2000):
+    """items → 模型返回的 JSON 数组。按 provider 分派。
+
+    `system` / `max_tokens` 可覆盖 —— 供别的预筛/分类脚本复用本函数的 provider 分派与
+    429 退避逻辑,而**用自己的 prompt**。默认值保持本模块原行为不变。
+    (2026-07-25:prescreen_reaudit 复用时没传 system,结果模型答的是「事件分类」而非
+     「预筛」;且 17 家的输出撞上 max_tokens=2000 被截断 → JSONDecodeError。故开这两个口子。)
+    """
     kind, key, base, model = prov
+    sys_prompt = system or SYSTEM
     user = json.dumps(items, ensure_ascii=False)
     if kind == "anthropic":
-        payload = {"model": model, "max_tokens": 2000, "system": SYSTEM,
+        payload = {"model": model, "max_tokens": max_tokens, "system": sys_prompt,
                    "messages": [{"role": "user", "content": user}]}
         headers = {"content-type": "application/json", "anthropic-version": "2023-06-01", "x-api-key": key}
         url = f"{base}/v1/messages"
     else:  # openai 兼容(GLM / OpenAI / 任意 OpenAI 兼容端点)
-        payload = {"model": model, "max_tokens": 2000, "temperature": 0,
-                   "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]}
+        payload = {"model": model, "max_tokens": max_tokens, "temperature": 0,
+                   "messages": [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user}]}
         headers = {"content-type": "application/json", "authorization": f"Bearer {key}"}
         url = f"{base}/chat/completions"
     req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers, method="POST")

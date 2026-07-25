@@ -28,7 +28,7 @@
     python3 scripts/watch-tools/prescreen_reaudit.py --brand apple  # 只看一个品牌
 """
 
-import os, sys, json, glob, datetime, argparse
+import os, sys, json, glob, time, datetime, argparse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -39,6 +39,13 @@ import evaluate_triggers as et            # 复用 30 天窗口触发规则
 
 OUT_PATH = os.path.join(ROOT, "watch", "prescreen.json")
 WATCH_DIR = os.path.join(ROOT, "watch")
+
+# 分批:每批 6 个品牌。2026-07-25 首次真跑,17 家一次要模型输出 17 个含 reason 的对象,
+# 撞上 call_llm 默认 max_tokens=2000 被截断 → JSONDecodeError。分批 + 调大上限双保险。
+BATCH_BRANDS = 6
+MAX_TOKENS = 4000
+# 单个品牌的输出大小(经验值,用于 --dry-run 估算):slug+verdict+reason+2 个 event id ≈ 175 字符
+OUT_CHARS_PER_BRAND = 175
 
 SYSTEM = (
     "你在给一个品牌影响力审计系统做**预筛**:判断某品牌积压的舆情信号里,有没有值得"
@@ -123,10 +130,39 @@ def _clean(rows, wanted_slugs):
     return by
 
 
-def run(items, prov):
-    payload = [{"slug": it["slug"], "events": it["events"]} for it in items]
-    rows = cc.call_llm(payload, prov)
-    return _clean(rows, {it["slug"] for it in items})
+def run(items, prov, batch=BATCH_BRANDS):
+    """分批调用,汇总。
+
+    **两处都是 2026-07-25 首次真跑踩出来的**:
+    1. 必须显式传 `system=SYSTEM` —— 否则 `cc.call_llm` 会用 classify_candidates 的模块级
+       SYSTEM(那是「给事件分 dim/severity」的 prompt),模型会答错题;
+    2. 必须分批 + 调大 max_tokens —— 17 家一次要输出 17 个含 reason 的对象,撞上默认
+       max_tokens=2000 被截断,报裸 JSONDecodeError。
+    单批失败**不拖垮整体**:该批品牌降级为 directional 并标注,其余批次结果照常返回。
+    """
+    out, wanted = {}, {it["slug"] for it in items}
+    starts = list(range(0, len(items), batch))
+    for bi, start in enumerate(starts):
+        if bi:
+            time.sleep(float(cc._env("MBA_CLASSIFY_BATCH_PAUSE", "2")))  # 避开端点 QPS 限流
+        chunk = items[start:start + batch]
+        payload = [{"slug": it["slug"], "events": it["events"]} for it in chunk]
+        slugs = {it["slug"] for it in chunk}
+        try:
+            rows = cc.call_llm(payload, prov, system=SYSTEM, max_tokens=MAX_TOKENS)
+            out.update(_clean(rows, slugs))
+        except Exception as e:  # 单批失败:保守降级,继续跑其余批
+            print(f"prescreen: 第 {bi + 1}/{len(starts)} 批失败({e})—— 该批降级为 directional。",
+                  file=sys.stderr)
+            for slug in slugs:
+                out[slug] = {"verdict": "directional",
+                             "reason": f"本批模型调用失败,保守判为无实质变化(需人工复核):{str(e)[:60]}",
+                             "key_event_ids": []}
+    for slug in wanted:  # 兜底:任何漏网的品牌
+        out.setdefault(slug, {"verdict": "directional",
+                              "reason": "模型未覆盖该品牌 —— 保守判为无实质变化(需人工复核)",
+                              "key_event_ids": []})
+    return out
 
 
 def render_md(result):
@@ -164,9 +200,16 @@ def main(argv):
         payload = [{"slug": it["slug"], "events": it["events"]} for it in items]
         blob = json.dumps(payload, ensure_ascii=False)
         n_ev = sum(len(it["events"]) for it in items)
-        print(f"prescreen --dry-run:{len(items)} 个触发品牌 / {n_ev} 条未消费事件")
-        print(f"  输入 ≈ {len(blob)} 字符 + system {len(SYSTEM)} 字符 "
-              f"≈ {(len(blob) + len(SYSTEM)) // 2} token(粗估,中文 ~2 字符/token)")
+        n_batch = (len(items) + BATCH_BRANDS - 1) // BATCH_BRANDS
+        per_batch = min(BATCH_BRANDS, len(items))
+        out_chars = per_batch * OUT_CHARS_PER_BRAND
+        print(f"prescreen --dry-run:{len(items)} 个触发品牌 / {n_ev} 条未消费事件 "
+              f"→ 分 {n_batch} 批(每批 ≤{BATCH_BRANDS} 家)")
+        print(f"  输入合计 ≈ {len(blob)} 字符 + system {len(SYSTEM)} 字符×{n_batch} "
+              f"≈ {(len(blob) + len(SYSTEM) * n_batch) // 2} token(粗估,中文 ~2 字符/token)")
+        # 输出量必须一起估 —— 2026-07-25 首次真跑就是漏估输出、撞 max_tokens 被截断而失败。
+        print(f"  单批输出 ≈ {out_chars} 字符 ≈ {out_chars // 2} token "
+              f"(上限 max_tokens={MAX_TOKENS};超了会被截断 → JSON 解析失败)")
         print(f"  品牌:{', '.join(it['slug'] for it in items)}")
         return 0
 
@@ -224,6 +267,28 @@ def _selftest():
 
     ok("不判断分数" in SYSTEM and "directional" in SYSTEM, "prompt:明确禁止判断分数涨跌")
     ok("转载" in SYSTEM, "prompt:明确同一事多家转载算一件")
+
+    # ↓ 两条锁住 2026-07-25 首次真跑踩到的 bug ↓
+    import inspect
+    sig = inspect.signature(cc.call_llm).parameters
+    ok("system" in sig and "max_tokens" in sig,
+       "call_llm:必须支持覆盖 system/max_tokens(否则复用时会用错 prompt / 被截断)")
+    src = inspect.getsource(run)
+    ok("system=SYSTEM" in src,
+       "run:必须显式传自己的 SYSTEM(不传会用成 classify 的分类 prompt,答错题)")
+    ok("max_tokens=MAX_TOKENS" in src and "BATCH_BRANDS" in inspect.getsource(sys.modules[__name__]),
+       "run:必须分批 + 调大 max_tokens(17 家一次会被 2000 截断)")
+
+    # 单批失败不拖垮整体:mock 一个必炸的 call_llm
+    real = cc.call_llm
+    try:
+        cc.call_llm = lambda *a, **k: (_ for _ in ()).throw(RuntimeError("boom"))
+        got = run([{"slug": "a", "events": []}, {"slug": "b", "events": []}], ("x", "k", "u", "m"), batch=1)
+        ok(set(got) == {"a", "b"} and all(v["verdict"] == "directional" for v in got.values()),
+           "run:单批失败→该批降级为 directional,不抛异常")
+        ok("需人工复核" in got["a"]["reason"], "run:失败降级理由写明需复核")
+    finally:
+        cc.call_llm = real
 
     r = {"generated_at": "t", "model": "m",
          "brands": {"a": {"verdict": "substantive", "reason": "见 a-1", "key_event_ids": ["a-1"]},
