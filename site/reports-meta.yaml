@@ -242,6 +242,7 @@ reports:
     ticker: 3690.HK
     panel: vc-cn
     industry: 消费
+    news_page: https://about.meituan.com/news
     version: v4
     audit_date: 2026-07-20
     score_total: 171

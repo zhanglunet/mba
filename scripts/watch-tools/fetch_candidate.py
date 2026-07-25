@@ -265,6 +265,18 @@ def _published_slugs():
     return out
 
 
+def _brand_news_page(slug):
+    """该品牌的**官网新闻页 URL**(直采兜底),没配则 None。
+
+    给 Google News **不索引官网**的品牌用(实测 `site:about.meituan.com` 召回 0)。
+    抓取与解析在 `official_site.py`(通用内嵌 JSON 提取,不写死站点选择器)。
+    """
+    for r in _meta_reports():
+        if r.get("slug") == slug:
+            return r.get("news_page") or None
+    return None
+
+
 def _brand_news_site(slug):
     """该品牌的**官方新闻源**(域名或域名+路径),没配则 None。
 
@@ -366,6 +378,26 @@ def cmd_discover(args):
                 if kind == "official":
                     official_links.update((it.findtext("link") or "").strip() for it in got)
                 items += got
+        # ③ 第三路:官网新闻页直采(只给 Google News 不索引官网的品牌配)。
+        news_page = _brand_news_page(slug)
+        if news_page:
+            import official_site
+            page = curl(news_page)
+            got_site = official_site.parse_news(page, news_page) if page else []
+            if not got_site:
+                # **哨兵**:配了却抓到 0 条 —— 多半是站点改版把解析打掉了。
+                # 这类失效是静默的(没有报错、只是不再有条目),必须显式喊出来。
+                msg = f"⚠️ 官网直采 0 条:{slug} <- {news_page}(站点可能改版,解析已失效)"
+                print(f"discover: {msg}", file=sys.stderr)
+                lines.append(f"\n## {slug} —— {msg}")
+            for it in got_site:
+                e = ET.Element("item")
+                ET.SubElement(e, "title").text = it["title"]
+                ET.SubElement(e, "link").text = it["url"]
+                if it["date"]:
+                    ET.SubElement(e, "pubDate").text = it["date"]
+                official_links.add(it["url"])
+                items.append(e)
         if failed:
             lines.append(f"\n## {slug} —— ⚠️ 部分源拉取/解析失败:{', '.join(failed)}")
         if not items:
@@ -378,10 +410,13 @@ def cmd_discover(args):
         for it in items:
             t = (it.findtext("title") or "").strip()
             link = (it.findtext("link") or "").strip()
+            raw_date = (it.findtext("pubDate") or "").strip()
             try:
-                d = parsedate_to_datetime(it.findtext("pubDate") or "").date().isoformat()
+                d = parsedate_to_datetime(raw_date).date().isoformat()
             except Exception:
-                d = None
+                # 官网直采(official_site)塞的是 ISO 日期,不是 RFC-2822——
+                # 不接住的话日期会整段丢失(候选变成 YYYY-MM-DD 占位,要人工回填)。
+                d = raw_date if re.fullmatch(r"20\d{2}-\d{2}-\d{2}", raw_date) else None
             key = norm(strip_suffix(t))
             if not t or not link or not key or key in seen:
                 continue
