@@ -126,7 +126,7 @@ def _extract_array(text):
         ) from e
 
 
-def call_llm(items, prov, system=None, max_tokens=2000):
+def call_llm(items, prov, system=None, max_tokens=2000, timeout=90):
     """items → 模型返回的 JSON 数组。按 provider 分派。
 
     `system` / `max_tokens` 可覆盖 —— 供别的预筛/分类脚本复用本函数的 provider 分派与
@@ -152,7 +152,7 @@ def call_llm(items, prov, system=None, max_tokens=2000):
     delays = [4, 10, 20, 35]
     for attempt in range(len(delays) + 1):
         try:
-            with urllib.request.urlopen(req, timeout=90) as r:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
                 body = json.loads(r.read().decode("utf-8"))
             break
         except urllib.error.HTTPError as e:
