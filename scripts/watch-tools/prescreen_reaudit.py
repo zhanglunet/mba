@@ -58,17 +58,35 @@ SYSTEM = (
     "你在给一个品牌影响力审计系统做**预筛**:判断某品牌积压的舆情信号里,有没有值得"
     "「请人类评委重新打分」的**已落地硬事实**。\n\n"
     "判定标准——\n"
-    "substantive(值得重审):出现了**已经发生、可核验**的实质事件,例如:财报/营收/盈亏"
-    "具体数字、完成融资(含估值)、产品正式发布并可用、裁员/高管变动落地、监管处罚或诉讼判决、"
-    "重大合作签约完成、股价异动伴随明确事由。\n"
-    "directional(不值得):只有**方向价**——券商评级/目标价/观点、'据报道/洽谈中/预计/"
-    "拟/预览/即将'、分析文章、同一件事的多家转载、纯口号或愿景表述。\n\n"
+    "substantive(值得重审):**已经发生、可核验**的实质事件。包括两类:\n"
+    "  (a) 结果类:财报/营收/盈亏具体数字、融资完成(含估值)、产品正式发布并可用、"
+    "裁员/高管变动落地、监管处罚或诉讼判决、股价异动伴随明确事由;\n"
+    "  (b) **程序性里程碑已完成**:招股书/文件**已递交**、禁令/规定**已下达**、处罚**已生效**、"
+    "合作**已签约**、许可**已获批**、机构**已设立**——这些是既成法律/行政事实,**不要因为"
+    "「后续结果还没出来」就判成预期**(例:『提交招股书』是已发生的事实,不是『上市预期』;"
+    "『FAA 禁止员工购股』是已下达的规定,不是观点)。\n"
+    "directional(不值得):只有**方向价**——券商评级/目标价/分析师观点、"
+    "'据报道/洽谈中/预计/拟/计划/**将**/预览/即将/有望'、分析与评测文章、"
+    "同一件事的多家转载、纯口号或愿景表述。\n\n"
     "重要:\n"
     "1. 你**不判断分数涨跌**,也不建议加减分——只回答「值不值得人去重审」。\n"
     "2. 同一件事被多家转载,算**一件**;若该事件本身只是观点,再多转载也仍是 directional。\n"
-    "3. reason 必须**引用具体事件 id**(取自输入),不要泛泛而谈。\n\n"
+    "3. **相关性门槛**:硬事实还要**可能影响品牌影响力**(市场份额/定价权/护城河/"
+    "用户信任/品牌身份)才算 substantive。真实但边缘的事(如成立一个联合实验室、"
+    "单件商品拍卖成交价)**不足以单独触发重审**。\n"
+    "4. reason 必须**引用具体事件 id**(取自输入),不要泛泛而谈;控制在 60 字内。\n"
+    "5. **key_event_ids 只能放 substantive 的依据**,不许混入 directional 事件"
+    "(例:『以 500 亿估值**洽谈**融资』是 directional,不能当依据)。\n\n"
+    "对照例(取自本项目真实事件):\n"
+    "  substantive ✓「Anthropic提交招股书,冲击万亿美元市值」(招股书已递交=既成事实)\n"
+    "  substantive ✓「FAA禁止员工购买SpaceX股份」(禁令已下达)\n"
+    "  substantive ✓「完成首轮融资,估值超3500亿,梁文锋持股31%」(融资完成+具体数字)\n"
+    "  directional ✗「微软**将**在 Azure 大规模部署 AMD Helios」(『将』=未落地)\n"
+    "  directional ✗「月之暗面以500亿美元估值**洽谈**Pre-IPO融资」(洽谈中)\n"
+    "  directional ✗「英伟达与韩国科学技术院联合成立AI研究实验室」(真实但对品牌影响力权重过低)\n"
+    "  directional ✗「中金评级上调」(券商观点)\n\n"
     '只输出 JSON 数组,每项:{"slug":"...","verdict":"substantive|directional",'
-    '"reason":"...(≤80字,含事件 id)","key_event_ids":["..."]}。不要任何解释性散文。'
+    '"reason":"...(≤60字,含事件 id)","key_event_ids":["..."]}。不要任何解释性散文。'
 )
 
 
@@ -135,7 +153,9 @@ def _clean(rows, wanted_slugs):
         v = r.get("verdict")
         if v not in ("substantive", "directional"):
             v = "directional"
-        by[slug] = {"verdict": v, "reason": str(r.get("reason") or "")[:160],
+        # reason 上限 220:prompt 要 ≤60 字,但 reason 里还要带事件 id(单个 id ≈ 25 字符),
+        # 160 会把「60 字正文 + 2~3 个 id」截在半个词上(2026-07-25 kimichat 实测)。
+        by[slug] = {"verdict": v, "reason": str(r.get("reason") or "")[:220],
                     "key_event_ids": [str(i) for i in (r.get("key_event_ids") or [])][:6]}
     for slug in wanted_slugs:
         by.setdefault(slug, {"verdict": "directional",
@@ -308,6 +328,22 @@ def _selftest():
 
     ok("不判断分数" in SYSTEM and "directional" in SYSTEM, "prompt:明确禁止判断分数涨跌")
     ok("转载" in SYSTEM, "prompt:明确同一事多家转载算一件")
+
+    # ↓ 四条锁住 2026-07-25 第 3 次真跑的误判(见 docs/16 §9.5)↓
+    # 假阴性最危险:「提交招股书」「FAA 下达禁令」都被判成"预期/观点"而漏掉。
+    ok("程序性里程碑" in SYSTEM and "已递交" in SYSTEM and "已下达" in SYSTEM,
+       "prompt:程序性里程碑已完成 = substantive(招股书已递交 / 禁令已下达)")
+    ok("后续结果还没出来" in SYSTEM,
+       "prompt:显式禁止「后续结果没出来⇒判成预期」这条错误推理")
+    # 假阳性:「微软**将**在 Azure 部署」被判 substantive。
+    ok("计划" in SYSTEM and "将" in SYSTEM and "洽谈" in SYSTEM,
+       "prompt:未来时(将/计划/洽谈)= directional")
+    ok("相关性门槛" in SYSTEM and "品牌影响力" in SYSTEM,
+       "prompt:相关性门槛(真实但边缘的事不足以单独触发重审)")
+    ok("key_event_ids 只能放 substantive" in SYSTEM,
+       "prompt:key_event_ids 不许混入 directional 事件")
+    ok(SYSTEM.count("substantive ✓") >= 3 and SYSTEM.count("directional ✗") >= 3,
+       "prompt:两类各 ≥3 个 few-shot 对照例(取自真实事件)")
 
     # ↓ 两条锁住 2026-07-25 首次真跑踩到的 bug ↓
     import inspect
