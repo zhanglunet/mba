@@ -181,6 +181,23 @@
   .field-table code { background: transparent; padding: 0; color: var(--accent); }
   .field-table .d { color: var(--muted); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
 
+  /* 00 · 三种接入方式对比 */
+  .cmp-wrap { overflow-x: auto; margin: 14px 0 18px; }
+  .cmp { border-collapse: collapse; width: 100%; min-width: 640px;
+    font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; }
+  .cmp th, .cmp td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .cmp thead th { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 800;
+    border-bottom: 2px solid var(--rule); }
+  .cmp thead th.w { color: var(--ink); text-transform: none; letter-spacing: 0; font-size: 13.5px; }
+  .cmp tbody th { font-weight: 600; color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+  .cmp code { font-size: 12px; }
+  .cmp .yes { color: #1a7a4a; font-weight: 700; }
+  .cmp .no { color: var(--muted); }
+  .pick { border-left: 3px solid var(--accent); background: var(--card); border-radius: 0 6px 6px 0;
+    padding: 12px 16px; margin: 0 0 22px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13.5px; line-height: 1.85; }
+  .pick b { color: var(--ink); }
+  .pick .arrow { color: var(--accent); font-weight: 800; }
+
   .callout {
     border-left: 4px solid var(--accent);
     background: #fff7ed;
@@ -262,6 +279,80 @@
       本接口是黑客松演示版。已发布 audit 报告中评委头像 / 评分 / verdict / Round 2 辩论均为 AI 基于公开一手资料的 in-character 模拟,<strong>非本人真实意见</strong>;接口返回的评分<strong>不构成投资建议</strong>。生产用法请加 disclaimer。
     </div>
 
+
+    <h2 id="pick"><span class="n">00 ·</span>三种用法,先选一个</h2>
+
+    <p>MBA 有三条通路:<strong>读已有结论</strong>(HTTP API)、<strong>让 agent 跑新审计</strong>(MCP)、<strong>人在 Claude Code 里跑</strong>(skill)。差别不在功能多少,在<strong>你是要「读」还是要「审」</strong>。</p>
+
+    <div class="cmp-wrap">
+    <table class="cmp">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="w">① HTTP JSON API</th>
+          <th class="w">② MCP server</th>
+          <th class="w">③ Claude Code skill</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>一句话</th>
+          <td><b>读</b>已发布的审计结果</td>
+          <td>让<b>你的 agent 跑新审计</b></td>
+          <td>人在 Claude Code 里交互跑</td>
+        </tr>
+        <tr>
+          <th>怎么起</th>
+          <td><code>curl .../api/reports.json</code></td>
+          <td><code>npx -y mba-mcp-server@latest</code></td>
+          <td><code>/mba &lt;brand&gt;</code></td>
+        </tr>
+        <tr>
+          <th>要装什么</th>
+          <td><span class="yes">什么都不用装</span><br/>任何语言能发 HTTP 就行</td>
+          <td>Node ≥ 20(<code>npx</code> 自动拉,<b>无需 clone</b>)</td>
+          <td>Claude Code + 装 skill</td>
+        </tr>
+        <tr>
+          <th>要 key 吗</th>
+          <td><span class="yes">不要</span> · 无 token、CORS 全开</td>
+          <td>要 <code>ANTHROPIC_API_KEY</code></td>
+          <td>用你的 Claude 订阅</td>
+        </tr>
+        <tr>
+          <th>能审新品牌吗</th>
+          <td><span class="no">不能</span> —— 只能读库里已发布的</td>
+          <td><span class="yes">能</span></td>
+          <td><span class="yes">能</span></td>
+        </tr>
+        <tr>
+          <th>延迟 / 成本</th>
+          <td>毫秒级 · 免费</td>
+          <td colspan="2">分钟级 · 首次审计 ~$3、增量重审 ~$0.4/次(变化探针只重跑受影响维度)</td>
+        </tr>
+        <tr>
+          <th>典型场景</th>
+          <td>给 agent 灌事实、DD 前置过滤、供应商筛选、RAG ingest</td>
+          <td>Claude Desktop / Cursor / 自建 agent 编排;<b>长期订阅 + 自动重审 + 主动推送</b></td>
+          <td>你自己在 Claude Code 里做一次调研</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="pick">
+      <b>怎么选</b><br/>
+      <span class="arrow">→</span> 只想拿<b>已有结论</b>(分数 / 榜单 / 评委 / 舆情信号)——用 <b>①</b>,零依赖零成本,先读 <a href="/llms.txt">/llms.txt</a> 就够。<br/>
+      <span class="arrow">→</span> 要审<b>库里还没有的品牌</b>——用 <b>②</b> 或 <b>③</b>(这是唯一的区别点:只有它们会真的跑流水线)。<br/>
+      <span class="arrow">→</span> 已经在 Claude Code 里工作 <span class="arrow">→</span> <b>③</b>;在别的客户端 / 自己的 agent 里 <span class="arrow">→</span> <b>②</b>。<br/>
+      <span class="arrow">→</span> 要<b>长期盯一个品牌</b>(有变化就自动重审并推给你)——<b>②</b> 的 <code>subscribe_brand</code>,配 npm 包自带的第二个可执行 <code>mba-webhook-receiver</code> 收推送。<br/>
+      <span class="arrow">→</span> 只是想让自己的 agent <b>知道 MBA 存在</b>——把 <a href="/llms.txt">/llms.txt</a> 或 <a href="/api/index.json">/api/index.json</a> 放进 system prompt,它会自己遍历端点。
+    </div>
+
+    <p style="font-size:13.5px;color:var(--muted);font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;">
+      ①、② 常常<b>一起用</b>:先用 API 判断"这品牌审过没、分数多少、几号审的",没有或太旧再用 MCP 触发一次审计 —— 省钱也省时间。
+      ② 的完整工具清单与配置见下方 <a href="#other-agents">§06</a>。
+    </p>
 
     <h2 id="quickstart"><span class="n">01 ·</span>30 秒上手</h2>
 
@@ -493,7 +584,7 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
 
     <p style="margin-bottom:8px;"><strong>Hermes / OpenClaw / 任何支持 HTTP tool 的 framework</strong> —— 直接调。</p>
 
-    <p style="margin-bottom:8px;"><strong>MCP server</strong> —— <code>mba-mcp-server</code> v0.1.0（TypeScript，stdio，Node ≥ 20）。接进 Claude Desktop / Cursor / 任何 MCP 客户端：</p>
+    <p style="margin-bottom:8px;"><strong>MCP server</strong> —— <a href="https://www.npmjs.com/package/mba-mcp-server"><code>mba-mcp-server</code></a> <strong>v0.2.0</strong>（TypeScript，stdio，Node ≥ 20，<strong>已发布到 npm</strong>，<code>npx</code> 一行接入无需 clone）。包内含两个可执行：<code>mba-mcp-server</code>（MCP stdio 服务）与 <code>mba-webhook-receiver</code>（收订阅推送）。接进 Claude Desktop / Cursor / 任何 MCP 客户端：</p>
     <pre style="margin:6px 0 10px;"><code style="background:none;padding:0;font-size:13px;">// claude_desktop_config.json
 { "mcpServers": { "mba": {
   "command": "npx",
@@ -504,7 +595,7 @@ const hits = corpus.items.filter(i =&gt; i.text.includes(<span class="s">'AI 时
     <p style="margin-bottom:8px;padding-left:12px;font-size:14px;"><strong>核心审计（8）</strong>：<code>propose_audit</code>（生成 PRD）· <code>confirm_audit</code>（启动后台流水线，非阻塞）· <code>get_status</code>（轮询进度）· <code>fetch_report</code>（拉报告 MD/HTML）· <code>list_audits</code> · <code>resume_audit</code>（断点续跑）· <code>list_panels</code>（面板发现）· <code>add_judge</code>（注册自定义评委）<br/>
     <strong>演化追踪（6）</strong>：<code>subscribe_brand</code>（订阅品牌自动重审）· <code>trigger_evolution</code>（触发 EVOLUTION 重审）· <code>list_subscriptions</code> · <code>unsubscribe_brand</code> · <code>get_delta_report</code>（两次审计评分对比）· <code>get_brand_trend</code>（跨多次审计轨迹）<br/>
     <strong>舆情监控（2）</strong>：<code>get_watch_events</code>（读事件流 + 触发评估）· <code>record_watch_event</code>（录可溯源事件；P0/触发命中经订阅链路下发重审建议，永不改分）</p>
-    <p style="margin-bottom:8px;">支持<strong>品牌订阅 → 定时/事件/舆情触发 → 增量重审 → delta 报告 → webhook/email 主动通知</strong>的完整闭环。变化探针只重跑受影响的维度，演化审计成本从 ~$3 降到 ~$0.4/次。内置 5 位评委（傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣），可扩展。220 tests（含真实 MCP 协议层 e2e）。上手见 <a href="https://github.com/zhanglunet/mba/blob/main/docs/13-mcp-quickstart.md">docs/13-mcp-quickstart.md</a>；源码 <a href="https://github.com/zhanglunet/mba/tree/main/packages/mcp-server">packages/mcp-server/</a>。</p>
+    <p style="margin-bottom:8px;">支持<strong>品牌订阅 → 定时/事件/舆情触发 → 增量重审 → delta 报告 → webhook/email 主动通知</strong>的完整闭环。变化探针只重跑受影响的维度，演化审计成本从 ~$3 降到 ~$0.4/次。内置 5 位评委（傅盛 / Jobs / 李可佳 / 吴俊东 / 张一鸣），可扩展。29 个测试文件 / 215 个 test（含真实 MCP 协议层 e2e）。上手见 <a href="https://github.com/zhanglunet/mba/blob/main/docs/13-mcp-quickstart.md">docs/13-mcp-quickstart.md</a>；源码 <a href="https://github.com/zhanglunet/mba/tree/main/packages/mcp-server">packages/mcp-server/</a>。</p>
 
     <p style="margin-bottom:8px;"><strong>RAG ingest</strong> —— 直接拉 <code>/api/search.json</code>,扁平 corpus 就是给 client-side substring search 准备的;也适合直接灌 embedding。</p>
 
