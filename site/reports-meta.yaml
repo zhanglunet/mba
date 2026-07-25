@@ -100,6 +100,7 @@ reports:
     ticker: 688561.SH
     panel: security-cn-global
     industry: 企业服务·安全
+    news_site: qianxin.com/news
     version: v2
     audit_date: 2026-07-12
     score_total: 175
@@ -281,6 +282,7 @@ reports:
     brand_en: Hermès
     panel: luxury-en
     industry: 消费
+    news_site: finance.hermes.com
     version: v1
     audit_date: 2026-06-28
     score_total: 216

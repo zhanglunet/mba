@@ -656,7 +656,7 @@ zhipu 两条同为「收购中科加禾」只有 **0.04**,google 的 Q2 财报�
 - **① 必须锚到新闻室子域/路径,不能用根域名。**
   `site:apple.com` 召回的是 Apple Music 歌曲页、`site:tesla.com` 是招聘页、
   `site:openai.com` 是状态页。改成 `apple.com/newsroom` / `news.microsoft.com` 后才干净。
-- **② 官方源查询必须走英文档。** 模块默认 `hl=zh-CN`,而 13 个官方源在中文档召回**几乎全为 0**:
+- **② 官方源查询要 EN + CN 两档都发。** 模块默认 `hl=zh-CN`,而多数官方源在中文档召回**几乎全为 0**:
 
   | | EN | CN | | | EN | CN |
   |---|---|---|---|---|---|---|
@@ -668,11 +668,25 @@ zhipu 两条同为「收购中科加禾」只有 **0.04**,google 的 Q2 财报�
   | `spacex.com/updates` | **2** | 0 | | `investors.palantir.com` | **2** | 0 |
   | `deepseek.com` | **100** | 9 | | | | |
 
-  故官方查询单独走 `GNEWS_EN`。官方条目标题因此是**英文一手原文**——
-  反捏造不变:quote 仍是源 feed 逐字标题,**不翻译不改写**。
-- **③ 中文品牌的官网 Google News 基本不收录**(`moonshot.cn` / `about.meituan.com` /
-  `dji.com/newsroom` 召回均为 **0**)。故 `news_site` **设计成可选**,只给实测有效的
-  13 家配;其余 11 家保持原行为,**无回归**。这是能力边界,不是遗漏。
+  **但反例存在**:`qianxin.com/news` **只在中文档有**(CN 12 条 / EN 0),首条是真新闻
+  「AI又惹祸了?硅谷大佬Mac遭一键清空」。所以**不能写死一档**——第一版写死 EN,
+  qianxin 就会被漏掉。现改为**两档都发、结果合并**(重复项由既有的标题 key 去重兜住),
+  代价是每个已配品牌每天多一次请求。
+  官方条目标题因此可能是**英文一手原文**——反捏造不变:quote 仍是源 feed 逐字标题,
+  **不翻译不改写**。
+- **③ 部分中文品牌的官网 Google News 确实不收录**,但要**逐个试过才算数**:
+  `moonshot.cn` / `about.meituan.com` / `100tal.com/news` / `dji.com/newsroom` 召回均为 **0**;
+  而 `qianxin.com/news`(CN 12)与 `finance.hermes.com`(EN 15)是**能用的**——
+  第一版只试了根域名就下了"中文品牌不行"的结论,**结论下早了**。
+  故 `news_site` **设计成可选**,目前 **15 家**已配;其余 9 家保持原行为,**无回归**。
+
+  **仍未覆盖的 9 家**(`chengshi-auto` / `kimichat` / `tal-education` / `genki-forest` /
+  `meituan` / `dji` / `asiainfo` / `zhipu` / `yuanxin`)—— 直接 curl 官网实测:
+  `about.meituan.com/news`(124KB,18 条新闻链接,**标题可解析**)与 `100tal.com/news`
+  (108KB,14 条)**能抓**;`moonshot.cn` / `dji.com/cn/newsroom` 是 JS 壳、
+  `chi.cn` / `spacesail.com` 返回 114B 空壳。
+  **但逐站写 HTML 解析器是另一个子系统**(每站一套选择器、改版即静默失效、日期要另解析、
+  CI 不出网无法回归),成本远高于 `site:` 那条路。故**本期不做**,留作后续决策项。
 
 ### 修法二:P0 判则加严
 
@@ -685,7 +699,7 @@ zhipu 两条同为「收购中科加禾」只有 **0.04**,google 的 Q2 财报�
 
 | 坑 | 现象 | 根因 / 修法 |
 |---|---|---|
-| 1 | 官方源接好了,候选里 **0 条 official** | 模块用中文档,官方源在中文档召回 0 → 单独走 `GNEWS_EN` |
+| 1 | 官方源接好了,候选里 **0 条 official** | 模块用中文档,多数官方源在中文档召回 0 → 增开 `GNEWS_EN`(后又改两档合并) |
 | 2 | 改英文档后仍 **0 条 official** | media 查询在前,`new[:limit]` 把官方条目**整段截掉** → 官方保留名额 |
 | 3 | 官方条目霸占 98/184 席,且混入分页页 | 官方**只占一半名额**、媒体保底;`is_noise` 加"`Page N of M`"与资源页 ID 模式 |
 

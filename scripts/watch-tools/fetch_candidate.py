@@ -349,19 +349,23 @@ def cmd_discover(args):
             queries.append((f"site:{news_site} when:{args.days}d", "official"))
         items, official_links, failed = [], set(), []
         for qtext, kind in queries:
-            tpl = GNEWS_EN if kind == "official" else GNEWS
-            xml = curl(tpl.format(q=urllib.parse.quote(qtext)))
-            if xml is None:
-                failed.append(kind)
-                continue
-            try:
-                got = ET.fromstring(xml.encode("utf-8") if isinstance(xml, str) else xml).findall(".//item")
-            except Exception as e:
-                failed.append(f"{kind}({e})")
-                continue
-            if kind == "official":
-                official_links.update((it.findtext("link") or "").strip() for it in got)
-            items += got
+            # 官方源**两档都查**:绝大多数官方源只有英文档收录(anthropic/openai/lenovo…
+            # 中文档全为 0),但 `qianxin.com/news` **只在中文档有**(CN 12 条 / EN 0)。
+            # 写死一档就会漏掉另一类,故合并两档结果(重复项由下面的 key 去重兜住)。
+            tpls = [GNEWS_EN, GNEWS] if kind == "official" else [GNEWS]
+            for tpl in tpls:
+                xml = curl(tpl.format(q=urllib.parse.quote(qtext)))
+                if xml is None:
+                    failed.append(kind)
+                    continue
+                try:
+                    got = ET.fromstring(xml.encode("utf-8") if isinstance(xml, str) else xml).findall(".//item")
+                except Exception as e:
+                    failed.append(f"{kind}({e})")
+                    continue
+                if kind == "official":
+                    official_links.update((it.findtext("link") or "").strip() for it in got)
+                items += got
         if failed:
             lines.append(f"\n## {slug} —— ⚠️ 部分源拉取/解析失败:{', '.join(failed)}")
         if not items:
