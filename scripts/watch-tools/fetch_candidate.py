@@ -359,12 +359,17 @@ def cmd_discover(args):
         news_site = _brand_news_site(slug)
         if news_site:
             queries.append((f"site:{news_site} when:{args.days}d", "official"))
-        items, official_links, failed = [], set(), []
+        # 第四路 social:知乎经 Google News 中文档的收录量大且贴题(2026-07-26 实测
+        # `site:zhihu.com 美团` 100 条,「如何看待…」问题与专栏正是 W2 社交社区维度的信号)。
+        # 微博是登录墙、小红书收录仅 3~5 条、公众号发现入口是 JS 壳——都走不通(见 docs/16 §9.7),
+        # 知乎是唯一一个**零新增抓取器**就能拿到的社区源。只取标题入库,不碰知乎反爬墙。
+        queries.append((f"site:zhihu.com {_brand_query(slug)} when:{args.days}d", "social"))
+        items, official_links, social_links, failed = [], set(), set(), []
         for qtext, kind in queries:
             # 官方源**两档都查**:绝大多数官方源只有英文档收录(anthropic/openai/lenovo…
             # 中文档全为 0),但 `qianxin.com/news` **只在中文档有**(CN 12 条 / EN 0)。
             # 写死一档就会漏掉另一类,故合并两档结果(重复项由下面的 key 去重兜住)。
-            tpls = [GNEWS_EN, GNEWS] if kind == "official" else [GNEWS]
+            tpls = [GNEWS_EN, GNEWS] if kind == "official" else [GNEWS]   # social/media 走中文档
             for tpl in tpls:
                 xml = curl(tpl.format(q=urllib.parse.quote(qtext)))
                 if xml is None:
@@ -377,6 +382,8 @@ def cmd_discover(args):
                     continue
                 if kind == "official":
                     official_links.update((it.findtext("link") or "").strip() for it in got)
+                elif kind == "social":
+                    social_links.update((it.findtext("link") or "").strip() for it in got)
                 items += got
         # ③ 第三路:官网新闻页直采(只给 Google News 不索引官网的品牌配)。
         news_page = _brand_news_page(slug)
@@ -436,11 +443,14 @@ def cmd_discover(args):
         # (184 条里 98 条官方)。官方一手公告要保证进得来,但媒体的舆情面也不能丢,
         # 故官方最多占一半名额,其余按原序留给媒体。
         off = [x for x in new if x[2] in official_links]
-        med = [x for x in new if x[2] not in official_links]
-        quota = max(1, args.limit // 2)
-        shown = (off[:quota] + med)[: args.limit]
-        if len(shown) < args.limit:                      # 媒体不足时官方回填
-            shown += [x for x in off[quota:] if x not in shown][: args.limit - len(shown)]
+        soc = [x for x in new if x[2] in social_links and x[2] not in official_links]
+        med = [x for x in new if x[2] not in official_links and x[2] not in social_links]
+        q_off = max(1, args.limit // 2)                  # 官方一手公告优先保进
+        q_soc = max(1, args.limit // 4)                  # 社区信号(知乎)少量保底,不挤媒体面
+        shown = (off[:q_off] + soc[:q_soc] + med)[: args.limit]
+        if len(shown) < args.limit:                      # 不足时按 官方→社区 顺序回填
+            for pool in (off[q_off:], soc[q_soc:]):
+                shown += [x for x in pool if x not in shown][: args.limit - len(shown)]
         omitted = max(0, len(new) - len(shown))
         total_new += len(shown)
         more = f"(另 {omitted} 条同题材省略,防噪音灌水)" if omitted else ""
@@ -463,7 +473,8 @@ def cmd_discover(args):
                 "url": link,
                 "source": (src or "").strip(),
                 # 官方源召回的条目显式标注,便于分类时给更高 severity(旗舰发布 = P0)
-                "source_type": "official" if link in official_links else "media",
+                "source_type": ("official" if link in official_links
+                                else "social" if link in social_links else "media"),
                 "applicable_dims": [dm for dm, v in dims.items() if v != "off"],
                 "lens_suggest": ["signal"],
                 "fetched_at": now,
