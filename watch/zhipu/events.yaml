@@ -253,3 +253,19 @@
   source_type: media
   note: "LLM 预分类建议(high):券商上调评级，市场认可信号，利好舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-25-zhipu-015
+  date: 2026-07-25
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "大吃一惊！Kimi K3有多恐怖？美中情局长戳破"
+  quote: "大吃一惊！Kimi K3有多恐怖？美中情局长戳破"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE5mOHJKUzAzRE9CZGZMdjRnT3NTTDZCZ2hyTFllekdncFotV3J2WXl5U0I3dlJEY0JDbm9BN0NkY05VSE41WmdkTWxCeWJlNjhJMjREMFI4ZEN2MUY3QWfSAWNBVV95cUxQVHVkVUY1SzBFU0NMWlo2LWxaem5GaDFUdGM5M2F0enJNcmhFRHJLdEVWSjlIYWE3cnp4bWRaY1FfRTJsX2xRcnpwSGVKTURSSm9CYmNaLVhiUUgxQ29nTko2bzQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美国官员公开评价Kimi K3性能威胁，涉及地缘政治舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

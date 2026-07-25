@@ -687,3 +687,109 @@
   source_type: media
   note: "LLM 预分类建议(high):AI浪潮下裁员趋势，亚马逊AGI缩编。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-24-amazon-045
+  date: 2026-07-24
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊AWS云服务故障导致 “半个互联网”一度瘫痪"
+  quote: "亚马逊AWS云服务故障导致 “半个互联网”一度瘫痪"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswJBVV95cUxPYWhoS3dpd3lDdXJudTVfRHNqWklqQWJPNUtzZFZMVDhVWDFHLTJnanczY3ZOUXRGR3dwcEJsTkpDdHlLYTZaZUZialUtM1NEaHVvQjVCOWVJQjZHN0MzTHg4bWtoTVNsWHg3ekdocEZmeld0NzlxV3U5YXAyUnJsSS0tbW10ZnNMUDQ2WEJobDMzSG5MS1R1X1ppOWhuSHhZVWpWNm9CWHNCMUFzMENLN3ljdnFfX2V0dGNqa0ZlOUZxWXZ3UzVVTEdLaW9qR1ZKQ1hjbkljSkx5Mk9kZ0FIZ1hJWXBGbEw4UTBFMHZRZllscHFYaFBmTUpVbUdGNTJ3YmtsWXdpNUh6Y1NWT28zcEJyWGdYMjFhbDRtaS1hajBqMGNlM2dVVjZwb0l3Tk9WVHJn?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS重大故障事件，互联网服务中断。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-046
+  date: 2026-07-23
+  dim: W1
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊为Luna新增了两款免费游戏"
+  quote: "亚马逊为Luna新增了两款免费游戏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ybmJMSmgxdHplZUwxWTNiVTgtRGNjam41c1pyZzZOeE1SSHVESUh2RGhLZG9Md1hVa3ZsWUtseHY2NEpIVjEwU3JNWVYtbzA5MXhtOUJwc3BsaDZhaWhVajhB?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Luna游戏服务内容更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-amazon-047
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊2026年第二季度财报电话会议"
+  quote: "亚马逊2026年第二季度财报电话会议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxOWjBQcWN0MGxWWFRkRzBMcnJ2V1BJV3lvMExWdnJmYXRxbWptVjJoTXFyajZwYjRncldkb2hNa18zNHM1REotclJEOFJVY1FWS29wcFF0anJtZkhUTGlBdEVEaWUtX0ZaVmRpdkVXY21JemRZcmJzdlE3TWhFaExnTEpkY01FTFBuOGNMNWw3by1YdmlXNklvUWdiVDVmUQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):财报电话会议，重要财务信息披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-048
+  date: 2026-07-23
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "市场传闻：亚马逊因涉嫌受到中国影响而正接受美国参议院委员会调查"
+  quote: "市场传闻：亚马逊因涉嫌受到中国影响而正接受美国参议院委员会调查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxOdXduNkJ1S2hWUy11RE1IRGZQZkVmY1M5Q2hmcklsendYMmRudjlzc2JFS0FPYVEzRF9RVWZnTHd3dXV5TXNsSVhDdmxYYWNaTFdkV0pNc0Y5S3BEQjJJWjJIUzZOMGVndzVFOTdiMUdBa1NZdE5UdlJGMVI2ck9TQzRSUTJsbzNFM29uMlk2RlJXYllKb1plUHhoaTJKejVCdENYVmItQmJzeVdlRGNNVWNrS1NYQQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊遭美国参议院调查，涉及国家安全问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-amazon-049
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊AWD登陆西欧！本地库存补货体系覆盖英德法意西五国"
+  quote: "亚马逊AWD登陆西欧！本地库存补货体系覆盖英德法意西五国"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NWndPUjhZV21LYWM3LVNWSWE4VUlucGUxUFl1ZEhGc3B6ZmR0Y2NDX05kclhQay01cXd1N2dPMklUb05McDRPNzcwQlZLUXA3NkE?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊物流体系扩展至西欧五国。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-amazon-050
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Amazon Games负责人确认《Tomb Raider: Catalyst》延期至2028年"
+  quote: "Amazon Games负责人确认《Tomb Raider: Catalyst》延期至2028年"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE5tNHRIdXlfWnFiWjAzNjRGX3NDOVV6TV9RemJxQlVkQnhaVDh3LUU3X1pfR21wS2pWdEpkOU5ySlo1YzRwbW5NSkZmckNuQ0VucUZmZFRhem5FZ0NFVXVjSTdsekk?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Amazon Games旗舰游戏延期至2028年。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-amazon-051
+  date: 2026-07-23
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亞馬遜再度裁員 通用人工智慧部門縮編"
+  quote: "亞馬遜再度裁員 通用人工智慧部門縮編"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQUTQ3VnpSSnZjdHJBbnhGWUNjcWRacnFPX0hnUDRwcDExN1BRbUVPVFJuZ1FMeWNhZmdTNDNvdzl0MXZYT1dpQkRsbjdYMVhDU2dnSjMzcUNxS2dRdTIzWUVuLUo2OEE2ZHQ1eDBXYTBlRGc4RDltU0FCTnd4YWtXcXBDUXJaOTTSAWdBVV95cUxNdlNnZWN5ZkhaTlMxMUhuTWx3bW16b0JTZ2Q1WDlQWEhsdmdlNmpnTjVEeWpFTzNhOHJLYnVodWpFX05oX18tUmlabXV0WFJHbDRQUTJKOTNFZFdOQXVjZktDQmxBdlRR?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊通用AI部门裁员，涉及战略调整和组织变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

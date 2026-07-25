@@ -838,3 +838,109 @@
   source_type: media
   note: "LLM 预分类建议(high):微软365服务故障已解决，风险管理体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-24-microsoft-055
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软与Mistral扩大战略合作，为企业及受监管行业提供可控的前沿AI"
+  quote: "微软与Mistral扩大战略合作，为企业及受监管行业提供可控的前沿AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE1tUEtfZ3loZm5zMkRFa2JCeVhPeHl4UEVPVW54ZVRSUDIwbGVCcnBsRTBQc1pHTHVsRVVVZmZVaVVleXM3bjRDQjJpcFYwMFdCR05fU3RDWFJXdG1FZlItMVNSd1hPcEpYcnd1YUJOZGRnc3Na?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与Mistral战略合作，AI能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-microsoft-056
+  date: 2026-07-22
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软测试 Kimi K3：推理成本或可减少 40 亿"
+  quote: "微软测试 Kimi K3：推理成本或可减少 40 亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE5kQWtMVVVKZzB2Nnh3eHRVZmV4Zkl0azNIbWNBVzhvN1hxTnVrVE1JX01iejgxRXlJd3dvVWl5TE1CdWJPM19TV0FxS1VlQWwtZjVlSkVFUW9ULUdHdWV2Q2xfY1JwWFRIS2VYZGluNWJLYmRJcDVnQTdVT1Q0Zw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):微软测试AI推理优化，成本降低40亿。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-microsoft-057
+  date: 2026-07-22
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "告别“听得到吗”尴尬：微软 Teams 推送会议音频预览功能"
+  quote: "告别“听得到吗”尴尬：微软 Teams 推送会议音频预览功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTFBkc3U3OC1ZX2NyQnE2amFldDNxOU0zWlZBVTB4RFdVNU45SkJmZnJObkNhN1kwbTl5UjR4WjF6bnlrc2ZVXzYtLVc4SXRBTDNoYVg4cGx3?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Teams会议功能优化，用户体验改进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-microsoft-058
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软加速推进AI自主化，自研图像生成模型将取代OpenAI相关技术！"
+  quote: "微软加速推进AI自主化，自研图像生成模型将取代OpenAI相关技术！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQeWhzY056SEl6aDc5bU45cFBERmFpbkpkWUs0RjlsMGpnMUphOHFvUXdpTUczV3hzS0c3ZUg2SWFyaDk2UkRsMG5SN1g0UzdmbXBuTUFpSms0SngxZnhhamxXQVExb2JsZl84RlZXNGhqdXdfYkxGemhFZ1pGa2lYYXFyWWNuSkpJZ1JhNw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软AI战略重大调整，自研模型替代OpenAI技术。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-059
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软发布高保真图像编辑生成与低延迟文本转语音模型- Microsoft 微软"
+  quote: "微软发布高保真图像编辑生成与低延迟文本转语音模型- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pdmRxc2RSb3dFbkdGcFptMDlHTHozeW5qR0VmUE43TDlucVdWOTFRbV9qOWhNU0Mzc1RmeEpBdVNyeGpsY2V1UkM4VmgtMzlsM2dwTjIxY3l0bFZ4ZEt5aA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):微软发布新AI模型，产品技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-microsoft-060
+  date: 2026-07-22
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软Azure将保持强劲增长，Truist表示"
+  quote: "微软Azure将保持强劲增长，Truist表示"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxPcXN6WWRXSWV1VklNVmVDLVdWSHp4bmxlQVM3YlRyX040M1Bab2lEaGx2V1FKN0lBTWVjZW82a3psQ2lpQ0lkNVRtN3F5TV8xaDdZUm5LSXo0dmRaMWZfM2NONFVybW11TnVrMmRTVW5FZkVWdHQweHlXb1hqU3V6TXRrdmxmYW1BVVltR3pmcjN5RGtSOFJkYkxoWF9GbzFzN1d3?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):分析师看好Azure增长，业务前景评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-microsoft-061
+  date: 2026-07-23
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软的Azure和Copilot将成为第四财季的关键驱动力，摩根士丹利表示"
+  quote: "微软的Azure和Copilot将成为第四财季的关键驱动力，摩根士丹利表示"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxQaHVvV1pFRURuME1vb0ZFMlZnZ250ZTl4aEVPVmpjUktiWVktTFVnREI1YkVadlV1Vk0yQ1VmUGFNRUV1a25KNUdUVDZhTGRlMnZwMGpqX2trMDlQOUN1YWplT3RMdnpObVJVU05ONUNWbl9hS1hhSnVzUjdjbDltdkdJTVBqSnlfeWFOUTVHMktIVVBCTVRPbzE2OA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):分析师预期Azure和Copilot驱动业绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

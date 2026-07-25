@@ -1087,3 +1087,169 @@
   source_type: media
   note: "LLM 预分类建议(high):安全事件合作，体现风险管理与行业协作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-25-openai-069
+  date: 2026-07-25
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI下一代模型，被曝8月提前上线"
+  quote: "OpenAI下一代模型，被曝8月提前上线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9tRmJlSjFsWVlRM3FLeWhtTVZKVE15a2p4Y2s0QkVfY1d5NWpUZWk2b193My1RSFVUa1Z5WXI3cGZLdzhIeUd6b1JJWFJqZ09DX1dMOUcwVllheVFpUjBNMTQ2dmNJMTF2NFBPOUhHNlVGUTl1OWNlcEJjWEhqNUU?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):下一代模型提前上线，产品进展但信息来源为曝料。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-070
+  date: 2026-07-25
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI ChatGPT桌面应用上线语音模式|GPT-Live|Codex|语音识别|模型|收件箱_手机新浪网"
+  quote: "OpenAI ChatGPT桌面应用上线语音模式|GPT-Live|Codex|语音识别|模型|收件箱_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPTzVManJSLUhDYmhpM0tlWjZtSXdSZk5zaFZhbFBnNEJxbW5rR0t6UVNPNktjUGNBRFFiUFh5UWw5Tl9TZGhlUUcxVzFOUjdoNklFZnNOZUhzRVNpSW1hLUxfMUFvb2RzU3hEVDc4US1WMmx6OG0zRFFLaXJnR1ZzZlc4aGdDQzI3TzE0czNjci1JNDR3dElvZ2ZxSDc3bWprOHUzSXJlQQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ChatGPT桌面应用新增语音模式，产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-071
+  date: 2026-07-25
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "中国大模型“撕裂”硅谷，撼动OpenAI、Anthropic长期估值逻辑；七巨头市值较高点蒸发逾16万亿元，谷歌、特斯拉现金流转负；特朗普：正与伊朗谈判，不排除加大军事打击 | 一周国际财经"
+  quote: "中国大模型“撕裂”硅谷，撼动OpenAI、Anthropic长期估值逻辑；七巨头市值较高点蒸发逾16万亿元，谷歌、特斯拉现金流转负；特朗普：正与伊朗谈判，不排除加大军事打击 | 一周国际财经"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE5vaEtlZ1dia0JrQXNuM1RRTVdyNFZ3T19DOXdfMnduSzJYZmxYTzB3ekk0a0gtTVV6VWpkLTJ0b0R3X1RXUjJwNXYxTTYycGtUWWc?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):中国大模型竞争冲击OpenAI估值逻辑，竞争压力事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-072
+  date: 2026-07-25
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "路透社：OpenAI人工智能代理未经授权入侵Hugging Face"
+  quote: "路透社：OpenAI人工智能代理未经授权入侵Hugging Face"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE5wQnpucFRYRV9teDg0SHZveUU0RzNMSE1iZXFOb1B4TFBTZFZTR1BqTGFPWTdPTmhSMDhPdGpwdE1DWjQ0MVJkTXdUdVpXNWEzN2FBWnd4bWNpNnFMN3Q2NEZkbHNNWnVLYzl4NHBVRjRzZjI1YkE?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI代理未授权入侵事件，安全与合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-073
+  date: 2026-07-25
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "新晋菲尔兹奖得主雅各布宣布加入Open AI"
+  quote: "新晋菲尔兹奖得主雅各布宣布加入Open AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSkFVX3lxTE95U2xsWGNFaVVpWTUzdmtTcktudjVjTEhWTE9OR2xqSkg1c1FmemdqNFY1Y1JjMVlzQndOUGRXLUN2RE81bVNoS2t3?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):菲尔兹奖得主加入，人才招聘正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-074
+  date: 2026-07-25
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI透露可穿戴设备与语音助手新规划"
+  quote: "OpenAI透露可穿戴设备与语音助手新规划"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE40Zmoxem10SU1McDlmSmZWVU9tRU1penkzTmJkRjZYY0F5S2xoT3ZTQmR0SUtPZm9YVDhTaWNqTENTVFVuS0RKcVAwTnYybWdCNkFXNHNBNHZTeXRrd2c?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):可穿戴设备与语音助手新规划，产品战略扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-075
+  date: 2026-07-25
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI模型失控始末：智能体早已出现异常，逃逸一周未被察觉- 产业链"
+  quote: "OpenAI模型失控始末：智能体早已出现异常，逃逸一周未被察觉- 产业链"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xLUxCcDQxbFQ2VHRrb0JKNUM3Ny00WVNBZGQxNDV1Qm1CR2xZa0pGeXpzTFU4RzRobHhZY2JRb1NESE4zSkE4Y0tmSlNVRjNncklIc0xCMA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI模型失控逃逸事件，重大安全风险但需验证真实性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-076
+  date: 2026-07-25
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI将打造“贾维斯”式语音助手，未来有望登陆第三方智能眼镜"
+  quote: "OpenAI将打造“贾维斯”式语音助手，未来有望登陆第三方智能眼镜"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBxTUtOc3ByZW9XZ0padHUzVE9WMXVPWUd6VC1QUW4tRGJZbXJoZlREcXpOeUIzcE92aWFiUlRPa2xVWVlOQVBBSzh0UE54UDhIV2R5aUNraTM1SGhDMmRSa3RR?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):贾维斯式语音助手规划，产品创新方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-openai-077
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI总裁：无论如何，算力短缺都将长期持续"
+  quote: "OpenAI总裁：无论如何，算力短缺都将长期持续"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPMjBJZS0yc1pTU28zdWN5dGdXb1VtUXNTVmJvUXN5emYwRnJzZEVrNmhmTTBIbnM2MS02V0NUci1IQldndkh1WEs3TzBvN3lKY0V6SWk0WFhzd3VyalNkZUREZEtQRUdmdXlwZGx5N3BZUDFqQWVleXJrYVVZcUpTbERyOGV6eFU?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):总裁表示算力短缺长期持续，运营挑战信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-078
+  date: 2026-07-25
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "25家巨头高举开源大旗，OpenAI与Anthropic为何沉默？"
+  quote: "25家巨头高举开源大旗，OpenAI与Anthropic为何沉默？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi_gFBVV95cUxPSHREbktfZEhrbmluWnB4dS0tMjZPc3pBWnFBbE9JaV90MlI0Ml9BbTJ4SElPUldic0Q2UFRJRk5vMlc0SVpNNzZmR2pYQkpybndNSVpIdjZ6NUx4OV9WYkNxX2plaVdVTEdxNVVMcWxoWkJsX3Z2Uld1STJDYUpIYndtSXdkdHhjT3l1d2tMWGMzLTFjRXJkdF9kYmo4ZFI0dFVhYWZBNkpHNHhTTDhkUW5mYWU3WlBUVC1sMU5rSHBtTjdvTVktT1ZBMzRnNGQ5UGVXbHRkRXNIT1pOZ3ZBZ1lNN2FiUnVNUTUwRUxVVWdPRGRZZkIzclRmS05Edw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):开源浪潮中OpenAI沉默，竞争策略对比。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-openai-079
+  date: 2026-07-25
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克：当初帮忙创立OpenAI却意外加速AI竞赛，这并非我本意"
+  quote: "马斯克：当初帮忙创立OpenAI却意外加速AI竞赛，这并非我本意"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE0tNkpfaG54QUhBUWM1d0w2clZYajA5UmZ0TllhNXFyTDFZSnBtMDMydmc3TDlrY25tSzRZelFmQkI2RDVycUstdmdKal9qb3F3em1VRDA5MGg4WGlrTmxOYmdNTHVMNEFJTG1IN3FNczFJMm5paUlhWjgtY0EtZjg?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克评价创立OpenAI加速AI竞赛，历史观点与竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

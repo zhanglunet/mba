@@ -854,3 +854,124 @@
   source_type: media
   note: "LLM 预分类建议(high):AI购物助手功能上线，零售体验升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-23-apple-056
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果全家桶「年年焕新」来了，到底划不划算？"
+  quote: "苹果全家桶「年年焕新」来了，到底划不划算？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1IV1RrOURMckd1cE41bWw3WTNFS2E4cVlDY3Faempwb2pxaEtZcF8wQnQycWIyaGprLVJYaWtRdDVMd0U?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果产品更新策略评价，涉及消费者认知与商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-apple-057
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "影石产品入驻Apple授权专营店！全国500家苹果店能体验Luna Ultra"
+  quote: "影石产品入驻Apple授权专营店！全国500家苹果店能体验Luna Ultra"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWDFwb0pTWU1oMWI3WkpacllyWmdWdkZxYno4X2Y5TUVpVVVLQ0c4QWk5SEpxVEdCX0Fvc3JSRnVKRkltVjN6SkU1ZVk2Qk43UUlLYlVzYzNfWTg0NnNrYzloVmx5eTM4SG5YaHlGakxtUU51eE9kbVNYSW1PaUwtVVlJU0llLXB4SmRR?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):第三方产品入驻苹果授权店，体现生态合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-apple-058
+  date: 2026-07-25
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "报告称苹果 Apple Park 园区 23 日发生火情，消防人员出动约 45 分钟完成处置"
+  quote: "报告称苹果 Apple Park 园区 23 日发生火情，消防人员出动约 45 分钟完成处置"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1hYWo2RmxJS28tUzU3NVU2UWhjY2RyZ0p0bW1JaWhPRjZjR0JSeG5VYjhPSjZvZk5iNUIzTExqRFowTW9jWW5IOFg1M3V6LTI1Vi1DR0VDTnFpZEtSNF9WaDU5RGtEVExfaVBqQnF2T2s1QzhWUXpNQ05UdmZTRnc?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果总部园区火情事件，涉及企业安全与运营风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-apple-059
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "iPhone和Luna Ultra同台！和荣耀合作后，影石又入驻了500家苹果店"
+  quote: "iPhone和Luna Ultra同台！和荣耀合作后，影石又入驻了500家苹果店"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbXJselFSdVFacE5qZllGZFdtRGlleFJ2U0tKZkZfcGVGZmhCQ05BeUtuS2JlN09yNktDbXU1QnJmZEVSZVlzbmNZZHh5dGpmQjNpRy1EbHdjbFdYMWd2Wnk1eHNUUEtEdWM3T0tiekhtVzA4eE5WSVV2SUdmNXZxSGpOWldpQzJO?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):影石产品与苹果店合作扩展，体现渠道战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-apple-060
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "隐私条款泄密！Apple Store AI 虚拟购物助理即将上线，对话式选苹果产品不用再翻规格"
+  quote: "隐私条款泄密！Apple Store AI 虚拟购物助理即将上线，对话式选苹果产品不用再翻规格"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBFRDZOTU4tNkFiMnlJZS00WGV4NUlEcEc2bnV1LXBlVm5TQ2tINi1pUUFFb2ZkOFRmd1BxSWc2Ti03NFpmU3BCeXFYQVdhNGJSZFpsckMtWGRuc3Z4QUZKMGp2Q0tFN3RrOEozWldfN3JqT1VLbTg0T2JrZk81Q1k?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Store AI购物助手功能泄露，涉及产品创新与隐私。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-apple-061
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果AI国区用不了？5个免费替代来了"
+  quote: "苹果AI国区用不了？5个免费替代来了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9OWVhSQjhsZjFMSzBHMDJQNUVJNU9IT2VRNEtReHctX3RqNk5qbFBDQVBlU1FEMEEwZ09Kam1CVlBiOXB0V0lzTXRFRXZlWEZLd0p3LTY2NkFyNHVWQ3V3YXY0MS1kREk2bTA2RUI3ZHBSSFlIMWVKbUFJY1l5TDg?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果AI国区限制引发用户替代方案讨论，体现市场困境。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-apple-062
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple TV 质量标杆：苹果官宣《早间新闻》最终季 2027 年播出"
+  quote: "Apple TV 质量标杆：苹果官宣《早间新闻》最终季 2027 年播出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1QOTJmMHU1UzdqcWNaWVF4Wlh6S1JaRGhJVC0zY1I4Vm1LYU9VZWFyMGdNZktZRXgxSUlON1NSMEtTQXJxdEVBeUJVVFNUOVEzRHZqRG1TTFNLYi1qRE9jOUJLa091dURLa2EwVHQwNkpQYlp2V2dicTNJb2hSc1E?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果TV内容规划公布，体现内容战略与品牌投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-apple-063
+  date: 2026-07-24
+  dim: W2
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果预告 Apple TV 首个约会题材纪录片：共 8 集，让性格迥异的伴侣走到一起"
+  quote: "苹果预告 Apple TV 首个约会题材纪录片：共 8 集，让性格迥异的伴侣走到一起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1xSFVXQnZoWGk0ZEJuaDUtdlFvcnhiMzJVMWtYVFhuN0hCNGcxMGc2c3l4c1U1UTh5TmNyZF9ZRjlVV1BPSmVrM1ZOZlZDQUdCRmUzRHN5MTRjM2k1Mko1LTg2ZHhxeVYyNDBUQmp4NnVSV2pOb2s4LTIwdUVUNmc?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple TV 内容策略更新，新纪录片系列发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

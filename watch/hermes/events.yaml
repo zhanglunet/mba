@@ -304,3 +304,64 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕产品价格与保值率信息，消费舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-24-hermes-020
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "不是LV、香奈儿？爱马仕Evelyne真的更值，贵妇都在悄悄换"
+  quote: "不是LV、香奈儿？爱马仕Evelyne真的更值，贵妇都在悄悄换"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxPRkc1eDNvZTJrcGh2cHdlM0pfVmsxMUQ1ZlVUNndMZkY0aThINVFjRk01SzQ2WnM1NmJaVWZxQ0wtTmdzcEdyRUJJTk9kYzB3WjJWYVNkeGFJR0k5QURVeGdJNTFvUkxsWTJ2RF9IWWxtamlqUmVOMkpqcTItMmRJU01Dcw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):产品对标评价，涉及品牌消费者认知转变。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-hermes-021
+  date: 2026-07-24
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "虞书欣将爱马仕丝巾当上衣穿"
+  quote: "虞书欣将爱马仕丝巾当上衣穿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE84Y05kRHh5dURwdmNtNXdDaHlaWExtUTR1ZjlDYlctOXFDM2JmVVBkNGlMWlJRWkpoNVEzOWFPdlpBdTN0eFZQWXBkSE56VDFpOTdlcUp2STlCMWN2bUl6OEtqMWw1akRjQUt0QmwyR2NSU2c?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):明星穿搭传播，品牌曝光正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-hermes-022
+  date: 2026-07-24
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "15-30万预算买奢侈包怎么选？爱马仕、香奈儿、LV保值率实测对比"
+  quote: "15-30万预算买奢侈包怎么选？爱马仕、香奈儿、LV保值率实测对比"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxPZjJJMnVCZ1pDV1ZXMlk4eVBRTTlpRlFveEpUOTQtS1dLSndleEI4TG42aFo0SjFYcXNuS0xCWFhldlF4V1ZwVEpNX3R4emZldFhFeWVVUk4zQ09FS0thMWM2RnVHWndUWDNydFhYeVB2LW9PQ3JCdTYzUW4zeS1lZHZjdw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):保值率对比测评，涉及品牌价值认知。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-hermes-023
+  date: 2026-07-24
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "爱马仕原版Birkin包以1000万美元拍出"
+  quote: "爱马仕原版Birkin包以1000万美元拍出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxQTnA2eEpfVHdpbWpqVjZEckx4T2thQVptcVJDSWxDeUM4RUpqZ3VOYnotaDBaOGM1a1FpNFo1ek9oTTBTdDNCTzZDV19XYklWeEVvVzRjNVF2S1dQWUpNTzk4ellIVjZFVmZDd3p0SE01azNfWXN3eEcxaF8xNVdGUU1SMA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Birkin天价拍卖，品牌价值象征性事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

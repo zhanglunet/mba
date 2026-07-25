@@ -907,3 +907,139 @@
   source_type: media
   note: "LLM 预分类建议(high):数据中心扩建计划，战略投资具体信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-25-spacex-059
+  date: 2026-07-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX星舰第13次试飞成功，发动机重启、溅落精准，马斯克：星舰完好无损"
+  quote: "SpaceX星舰第13次试飞成功，发动机重启、溅落精准，马斯克：星舰完好无损"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE15clpCVHBBVC1YLV9zY2RUZzRMVEJKRTFhaVAyWS1VVlV4LXczSnpmUThOVzg3b1BHNGRTQTJ4MHp0ZGNiQ1V2dGF5aUR5MUg1SzVv?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰试飞成功，核心业务里程碑事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-spacex-060
+  date: 2026-07-25
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "摩根士丹利分析师：若 SpaceX 股价跌至 100 美元就预示其 AI 业务无价值"
+  quote: "摩根士丹利分析师：若 SpaceX 股价跌至 100 美元就预示其 AI 业务无价值"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE0xbVczaE9fNXdILW90YkNJa05wN19jU0J0dWdyOXhFLXhLWHRCaU5yNnRFREFtaEh0cHR5UW9mZVV3Sk4zN1ZmVE5LQTFXZVJ4c25UMHRTZXdaRHB3cWNmTg?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):分析师负面评价，涉及AI业务估值质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-spacex-061
+  date: 2026-07-25
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "一文读懂SpaceX“十三飞”：部署20颗卫星的意义是？"
+  quote: "一文读懂SpaceX“十三飞”：部署20颗卫星的意义是？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxOSGdWZVE3N3VZb0VoTkRFRHp4YzNFd1NuZmtRSFpDVDNLczlxdTlsYW1RcjRMaXR6Qkk5YTlWNWR4TkR1VDhYRU1teGViYVFFMlAzRk9vemNUcUdDMXo4N1VWUHJsdjdXUFFEVWcxYndiMld6VW5BRjNWOENxby1tNA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰试飞卫星部署，业务进展解读。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-spacex-062
+  date: 2026-07-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX“星舰”完成第13次试飞"
+  quote: "SpaceX“星舰”完成第13次试飞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zSTNTdGpXMDQ1d21wRThCNWZaWHpJT3g3WVdXMjd6NXN2aGd6OG9ZcG1GdE94aHNUdTdDaFZZbjBDYjRvdGR3MUlkNFcyYm9kWU9ORUM3TkpVNHRJNVI3bQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰第13次试飞完成，核心技术突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-spacex-063
+  date: 2026-07-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX第13次飛行測試 星艦火箭自德州發射升空"
+  quote: "SpaceX第13次飛行測試 星艦火箭自德州發射升空"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUTGw2a3k3TU9lTUV5WVR4bGFfSXJqdmxSVTAza3QwaTMtVGNhZ2p1MlhpWTNWdTdNME1vVGxxUmVsS3JqSzM4dHByNldEa181M09OMHBMSkJxbGFfUW41RNIBZkFVX3lxTE12X1NpT2paOWlNQURaVjRMeFcyTHFhWlJ1Nm1LSkxvT0x1SEFUQkdFOVB4ZmlHd2x1WHpGNDZRVXEzYlB6SWdOdHNvOWxNanNiaGhST25oTjNXZExobDROWjQxbmtjdw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰试飞成功，重大运营里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-spacex-064
+  date: 2026-07-24
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX“星舰”完成第13次试飞，首次部署二十颗全新星链V3卫星"
+  quote: "SpaceX“星舰”完成第13次试飞，首次部署二十颗全新星链V3卫星"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ubm5aM0UzbzE4ckR1ODdHZnhScTBlTFoxeTM0MjFGMzBJa29lN3dkX295WEhBX1BFNmN2SjdDMVVVeU1CbWl2X25sYWE?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰第13次试飞成功并部署星链V3卫星，核心产品进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-spacex-065
+  date: 2026-07-25
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "“迄今最轻柔的一次溅落”，美“星舰”完成第13次试飞"
+  quote: "“迄今最轻柔的一次溅落”，美“星舰”完成第13次试飞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE1vM2dUZFRrblZEcjlTcTRZRzduZlNKTXJLTl80dHl5U1gxcXR4ZDBBYkVuUl8xeFdJUGVNa0xjUzlTczhkMWZsazFoaS1KaVlYbU00NjVLZGI2M1dFajBEbi1FQk5ndFpEc3c?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰第13次试飞成功，与第0条同源但表述不同，核心事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-spacex-066
+  date: 2026-07-25
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX据悉暂停部分“猎鹰9号”发射服务预订，加快向“星舰”过渡_手机新浪网"
+  quote: "SpaceX据悉暂停部分“猎鹰9号”发射服务预订，加快向“星舰”过渡_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE9DZmhscms1SUpPNVluT1pUUV9RblZObjRsRmJhYnZiSDF4RFpMR1NuTVpfTTROZDRuakJEQ3RkbVJnblRhWHRwVUhNSDA3cTB2THVscGFzaExqUTBRb29LdEQxNGNlVUN2aWUwcVE3LW1OR0g4Nl90eQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):暂停猎鹰9号预订、加快星舰过渡，战略调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-spacex-067
+  date: 2026-07-24
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克爆料：正着手推进SpaceX IPO事宜，自动驾驶汽车今年将实现更广泛部署"
+  quote: "马斯克爆料：正着手推进SpaceX IPO事宜，自动驾驶汽车今年将实现更广泛部署"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5vTkhrZDFIM0pZUHBaZXMtX3NISzR0SU1qZVpvUmlfaER1SERhTUtZUGVYc0FjQjM4WXV2TnJvZXV1RzZWUGpQRQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):马斯克爆料IPO进展，重大融资信号但需验证真实性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
