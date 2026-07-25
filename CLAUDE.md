@@ -137,3 +137,10 @@ python3 packages/mcp-server/scripts/generate-personas.py             # 再 git d
 - **Git / PR**:conventional commit;合并走 **squash**(每个 PR 落成一个 `(#NN)` 提交)。
   只在用户明确要求时开 PR。若 designated 分支的 PR 已合并 → 把分支从最新 `main` 重置再做新活
   (旧提交都是已合并历史,`--force-with-lease` 推送 OK)。
+- **PR 没有 CI check ≠ Actions 坏了(2026-07-24 实证)**:`pull_request` 事件的 workflow 跑在 GitHub
+  生成的 **merge ref**(`refs/pull/N/merge`)上;**PR 有合并冲突时算不出 merge commit,校验 workflow
+  会静默不触发**——而 Cloudflare Pages 这类基于 head commit 的检查**照常跑**,于是看起来像"只有一项 CI"。
+  **判断顺序**:迟迟没 check → 先 `git fetch origin main` 看落后/冲突,rebase 消除冲突后 CI 自然就来;
+  **别先怀疑 Actions 配置**。实证:`8352ed0`(有冲突)→ 0 run;rebase 成 `3472e79` → 2 run 立即全绿。
+  ⚠ 本仓库每日舆情 PR 会自动合并并**重生成 `site/index.html`**,所以隔夜的分支极易与 main 冲突——
+  开 PR 前先 rebase 到最新 `main`(手写区改动与 `REPORTS:START/END` 生成块通常能自动合并)。
