@@ -734,3 +734,139 @@
   source_type: media
   note: "LLM 预分类建议(high):欧盟罚款简化版，监管压力确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-25-google-048
+  date: 2026-07-25
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Verizon 与谷歌达成超 10 亿美元“暗光纤”数据中心网络连接交易"
+  quote: "Verizon 与谷歌达成超 10 亿美元“暗光纤”数据中心网络连接交易"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgJBVV95cUxPX3FfNnNzT2twYzJfS1JydlBLZk1SU21aNDJ3TkFTVjN1SU9yaTFUSDJvdDJiV2lvd3Q4TFhMWF9Ga29lWWkyOGZwRERVYW1GUUd1OUhUZ3JnalRmSlFDOWtkN2JUSlBfVnlnT3kzeWt1LVc2eE0xZHY3elVsVnllRnhMMmFMaUxOaXFSMi1mMVNVazU5V0hOWnFhN0IweFRFUXZURFZnNnhCXzVZbkptVGpscjV1VU9YQ0ZGZ0NUX3VFcG5ZdnBXV0p0cmpENDhSMnd5NVRlTlV6Rk0tbXIyVE9IdGVxY3NfcFk2QkpoM1p4TGlreU14RFFPOHJHcWNLMnVQMkFlSjRSTHVhd3c?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌基础设施投资，与Verizon达成10亿美元交易。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-google-049
+  date: 2026-07-24
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "7月谷歌新政 | 语聊App监管升级，开发者验证再推进"
+  quote: "7月谷歌新政 | 语聊App监管升级，开发者验证再推进"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yd3hFRGpuUGo4WXpTdnp6am5yWXQyQnVKRDFOVXRJbWVMYVlEXzhDVGRDQ1diUG1DUU0wN3dXczdyTkpYc3FtSEo5Y28?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌政策调整，App监管升级与开发者验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-google-050
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌强大对话式家庭智能助手上线，第一代 Google Home Mini 和 Nest Hub 可用但需订阅服务"
+  quote: "谷歌强大对话式家庭智能助手上线，第一代 Google Home Mini 和 Nest Hub 可用但需订阅服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE1EdkstUHlhQlU5cnRnWUVyN2pfUERqejhwOFE0QXVWMjg2UHdvd0drUFQxWC1hODZfVF82MnlHNWxRS3hqMHVjVUh3VHhhVnZRaFZ1bFRhUlVRbWVmSGZkR09Pckx2LVhRVThZ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌Home产品功能升级，AI助手新能力发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-google-051
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "原创导读｜欧盟委员会依据《数字市场法》处罚谷歌8.9亿欧元，涉及搜索自我优待与Google Play外部引导限制"
+  quote: "原创导读｜欧盟委员会依据《数字市场法》处罚谷歌8.9亿欧元，涉及搜索自我优待与Google Play外部引导限制"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE41Tk11SHZucHFoYnVtLW5qWXp6bzVsODhaZGlUcTBmSjlYS19HMFUwTlhVUmNOVm5MdXVJeVQ0c00yUUQxNXpkSUY2TkktWktNb0ZmMWlkcGY5TW1YdGl6NmZHcTlJY1lkMlE1a0VRVHJuS3RxNDFRWHFYc1Q2bDQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟重罚谷歌8.9亿欧元，涉及反垄断违规。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-google-052
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌现在允许用户通过自拍视频登录账号|Google|IT之家|摄像头|身份验证|系统_手机新浪网"
+  quote: "谷歌现在允许用户通过自拍视频登录账号|Google|IT之家|摄像头|身份验证|系统_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOOFUwenlHdzQ0TnJaMTFlZldVdGJVcllZeGxrZ212Mkh4YzRsLTI0VjFmMkk0cmtHWFhNc2Y3bkdyTHpZR2FrNU4tSjdTWjYyX3NPRFNCd0RIQ0wtaFhIM2x2WVMxMzIwVUdEdTFET0Y0X2tkdVlrQ2s2MFZLZGhqcUljaGpUNUM2MFp5OTdwR0RzYmVFR3BFUU41RWlwcWZ4eGRPSnJxQ2J2enIweVMwMzhB?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌账户安全功能更新，自拍视频登录上线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-google-053
+  date: 2026-07-23
+  dim: W2
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌Pixel Watch 5智能手表规格曝光：升级3GB内存"
+  quote: "谷歌Pixel Watch 5智能手表规格曝光：升级3GB内存"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAFBVV95cUxPSS1VRnNmQ3VudmRxYi1nOGhwYjFiempqS05wLXp3cWotX3NIeVJPM1Fvc1ZNTUQ5THlVeDBTVXZtUnFORXgtMGcxT0ZZWDg4ZUprUGxtRGJ3OWpQNnNERXN5Tm1sZFdVcTl6ekJxVmZyaVRXa2dQcE1DZ1Excll3aEMxbXcwNFh1RlN2ZE85MDFqMUZJbldBMWJBVl9BckxaME02T1BmNG5tZ1VVWEJTMzdVRjl2QWp2dEN1Nw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Pixel Watch产品规格曝光，硬件升级信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-google-054
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "AI搜索引发流量大地震 Reddit与各大出版商考虑屏蔽Google爬虫"
+  quote: "AI搜索引发流量大地震 Reddit与各大出版商考虑屏蔽Google爬虫"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9saXVIa1E5anJ6WGJUaFZidXNDbWZBc3B6ei1VU25OQmNaRE5xaWVEOElxNUtJN05MdmpJY20xWmstZ0pRbllzZTRBMGlHYkt0MDZZSVNJZjJtYmptZWdxVQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AI搜索引发内容生态冲突，Reddit等考虑屏蔽。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-google-055
+  date: 2026-07-22
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌与出版商关系生变：搜索流量下滑引发矛盾 AI或被“断供”"
+  quote: "谷歌与出版商关系生变：搜索流量下滑引发矛盾 AI或被“断供”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBxTzVDdHJBdnNFT2RkYzlUbUNKMnNzZWR0dkZQZGp4ZlBnWm95M3lhR2ZmRUM4UTdTRUhnLTdPWFo4WlgwZWVaQ1RnRV8zRnVIcHJKb0QteHFtUHQxQ1F3bw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌与出版商关系恶化，AI训练数据供应风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-google-056
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "歐盟重罰Google 10億美元！指責其偏袒自家服務"
+  quote: "歐盟重罰Google 10億美元！指責其偏袒自家服務"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ZamJnS0Nac2VlSm4wb1pQRXJ2Q3V1WHhVSnJFclVSSzRzNDVZUDE5Z1RlUXZ1UVNDSjRTRkdsRUJzS1Bya01yNXRCMDhHc3hWZnVJTE9QUnV5WG1yYkFaS9IBZkFVX3lxTE1WNWRRaWZiU2pqQV9SMHFHUVlhM3htbWh3ZEctX0NHNzlEWm1pNFRFbzBNY1hxTXlFUHRJeXN5azdkYjlNZFEzWFZtZGNpbmIzTEhSVkJTaGt3MmNYTEtOWXBzaEJtZw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟罚款10亿美元，重复事件（与i5同源）。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

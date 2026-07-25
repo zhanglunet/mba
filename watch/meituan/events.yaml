@@ -386,3 +386,34 @@
   source_type: media
   note: "LLM 预分类建议(high):投资具身智能公司，体现战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-23-meituan-025
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团(3690.HK)首次覆盖报告：外卖竞争趋缓盈利持续修复- Futubull"
+  quote: "美团(3690.HK)首次覆盖报告：外卖竞争趋缓盈利持续修复- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxPYXlBVkliNVVjc1N4N2M0cVhKM1JPbnd0TVRJOXJMSklfS09Bdy1GNy0zRTBRMUJZckVMU0w1VFh6Mk9sNm5ya2prTE9Za0Z0cmg2N25BbkQxRUtxRzFpTGwzcXlLTXVucGJHRlF5WVZfTFpTUzRtYlpxS0ZUcVJrNzI1dWhVeWFiS3Y1dXZuX1FuZ3BZSl8zOHp4X05BWlVtS3N2ZmtnaEk3ZzZHVlI3THE3dWtiUQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首次覆盖报告，外卖竞争缓和盈利修复，重要分析师观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-meituan-026
+  date: 2026-07-24
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "十间航空公司及美团(03690.HK)等五间线上售票平台被约谈"
+  quote: "十间航空公司及美团(03690.HK)等五间线上售票平台被约谈"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxPUDNjQzR4YXR4Q2M0cERlaDc0SjF2bURqdTllSUdoUldlTDJ4ekJ1X3NvTzV6QXVONVBmZDZoSG9KWWRsNkpkek1DTGZPN0g5R2tVUkYySlZQd2FWZDMxWVBMaWZLVFVfNHFsUkE4Nnpib18zQ0Q1dDVWUTdBbnc5UFo1Z09FZms3R1cweVlaN1U0TlZKd3QzYkNHQjA5TnJPcmJpem9rWXdaM25Neksw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美团被监管部门约谈，涉及票务平台合规问题，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

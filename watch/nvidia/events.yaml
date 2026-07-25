@@ -670,3 +670,139 @@
   source_type: media
   note: "LLM 预分类建议(high):Vera CPU、Rubin GPU规格详解，重大产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-24-nvidia-044
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达：Naver、Nvidia、Brookfield将斥资高达100亿美元扩建人工智能数据中心"
+  quote: "英伟达：Naver、Nvidia、Brookfield将斥资高达100亿美元扩建人工智能数据中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBCVVVSLXB2RHlsZFRRYlZrMm00d2lVNUo2M1pxRDZwR3BYVUgySm9ZcDlNYlpHcDlJaV9JZzFpaTI0dDVTU2htbThQZHAyWV9IM083ZlU2dkc0Ym1sdXBwME84NzQxQ2lCalN5RHVpOHY?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):100亿美元AI数据中心投资，英伟达战略扩张信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-045
+  date: 2026-07-23
+  dim: W2
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "美国官员指控中国“月之暗面”窃取Anthropic模型，并称其获取受限英伟达芯片"
+  quote: "美国官员指控中国“月之暗面”窃取Anthropic模型，并称其获取受限英伟达芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi6wFBVV95cUxQS0FlUEp6aTh6Rllubmpvb3JGQTlaQVQ5RXZOQk11aUN1TV9GNGVrZkNUTnk1WUN6ZC16aktTeUtBRXZlTmQyYkhFczdYNnlNMlRFUWwyWXpYekp2YW02UHg2S2NfRGFkeEJJOHpER2U5b3AyMEZ0UEZmLUMxNmtaS0hiWXNCcjRjZUVOMC02OTNUaFJTaFFwVGJuVUpFSjA1X2l2REtfN0ZabDlUN1JIMm45Ym1OZnJ2R2NZRnlIN3Fsbm5sRVVHRUthYlJZZFNwWGttMXNkdWNBUnpEQVJpVndDSmp0c1h4clh30gHrAUFVX3lxTFBLQWVQSnppOHpGWW5uam9vckZBOVpBVDlFdk5CTXVpQ3VNX0Y0ZWtmQ1ROeTVZQ3pkLXpqS1N5S0FFdmVOZDJiSEVzN1g2eU0yVEVRbDJZelh6SnZhbTZQeDZLY19EYWR4Qkk4ekRHZTlvcDIwRnRQRmYtQzE2a1pLSGJZc0JyNGNlRU4wLTY5M1RoUlNoUXBUYm5VSkVKMDVfaXZES183RlpsOVQ3UkgybjlibU5mcnZHY1lGeUg3cWxubmxFVUdFS2FiUllkU3BYa20xc2R1Y0FSekRBUmlWd0NKanRzWHhyWHc?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):美国官员指控窃取模型与芯片违规，重大地缘政治舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-25-nvidia-046
+  date: 2026-07-25
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达携手韩国企业布局AI 合作规模达5000亿美元"
+  quote: "英伟达携手韩国企业布局AI 合作规模达5000亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizAJBVV95cUxNQ3hkVFNGN3FsdFc5RDA3UXI0VGxtTzRrNGxmYm1ibnRuaVZXVHFpN0RpWFEzY3NRc2xTOTY2a2FBU2x3djVvN0txUHpqZkhQWGoyVlhGZXpLRk9IMkx4UkN3WVFQODBCbTcwMWdDWlBib1l2NmRLU0h4SjBsdWVWVjl1cHZORjlGWUpkNzdvMEs0ck9fNkRMWk5JVG8zMUp2S3FiVGVERzNEUlNpNmlBRUllLU1xcWpOZ1NEVnpHUU9CVmxqY0paemwyN19TbWI3dndWa0Fid0M4MjVQRTg5WGV0MjctNXQ4VkM5NENDT1FGbWE2Y2VURF9ZWnJ1UjVKdkdjOWljQkhINDFLQVJMa2xzcUU5aUNsS0VQaHp4M2hKWjJ4WjN5WDJMMUVGaUE3UjgzREZRdllvbFVUbWlJeWMxQlNHemJDa09fVw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):5000亿美元韩国合作，英伟达国际战略重大进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-047
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达推出新一代Jetson Thor计算平台 推动主流机器人与边缘AI发展"
+  quote: "英伟达推出新一代Jetson Thor计算平台 推动主流机器人与边缘AI发展"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE5pZlpONW1pekdkYVphb2Y4dER2cmQwY3AyS0ctZC16SWZ6a19GOGRtNXJrNnZxQXA4RzNmZGR3VUNvaTM4NVhhTk85NHdOVWYt?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品Jetson Thor发布，技术战略进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-nvidia-048
+  date: 2026-07-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达与韩国科学技术院在首尔联合成立人工智能研究实验室"
+  quote: "英伟达与韩国科学技术院在首尔联合成立人工智能研究实验室"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aYnZobFJpVkxDWTRzN3BieGhvTl9rUm8tNVg1QnFnQklHaVI1NVdra2tJMWd3X0R4UmVFLTJDbllVeGZYUmpzYXgzcVAya1hyRWZHZ3VuUDNmd0cy?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达与韩国科学技术院合作成立AI研究实验室，体现战略布局与生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-049
+  date: 2026-07-23
+  dim: W1
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "NVIDIA 发布 610.82 显卡热修复驱动，解决《光环：战役进化》稳定性问题"
+  quote: "NVIDIA 发布 610.82 显卡热修复驱动，解决《光环：战役进化》稳定性问题"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5XNzJuNHpzSlJlZnR4NWsxZzJ5TFVaYmk3M2QzRVNKMkxWQ1Ruc01nV242aGZuTVh5SEItME0tMzdCRWJDM0RUWmxVSF9EbXM5VmlTZjktUHFJWDdlREtSNVpXMk9FRVczVE1WdF9PV3VKYlhNbnpuTDJsVGNxWlk?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):驱动更新修复具体问题，属产品维护事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-050
+  date: 2026-07-23
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA 培训 | 探索开源课程，加速 AI 学习培训与实践创新"
+  quote: "NVIDIA 培训 | 探索开源课程，加速 AI 学习培训与实践创新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1IUXdyVmNNRUprVnhjMkVrMXg4U1NxV0VSbTZfUWpUWXFFZnBsMjJrMTZXckExYzlQNk42LTJqcV9oQzRoTDE5VmhvQ1FORm1HU1hkQm9hdWliVU9JTnpNSDFn?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达开源课程培训计划，体现生态建设与品牌投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-nvidia-051
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "等等党输麻了！曝英伟达全面上调显卡套件价格"
+  quote: "等等党输麻了！曝英伟达全面上调显卡套件价格"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1XeGlabEw0enQybHFrQUtkMjNNa0RYS1d4WHdRQjlOT0hQRmlVN3Blelhmc0QtRUE4UjNfM0RSLWdOTXdlV2Mtb0wtLWVpcDhGWUt5emQ3aXpOdmxFb0VUZEJn?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):显卡套件全面涨价，涉及消费者利益与市场舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-nvidia-052
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "消息称NVIDIA非5090 / 5090 D v2显卡迎来套件出货价格补涨"
+  quote: "消息称NVIDIA非5090 / 5090 D v2显卡迎来套件出货价格补涨"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBSamRxenVoRUs2V24xb2tIR05vSi12aTI3ZUhRS1Rwc3hjMG9PaVIxbVFFRXliYjVDckpvcVRRRm01YUo3VjlKNXAxVlFJQmxVWEo4ZE8ycEVZYzhtdmN2TjA1dHpvZEh1ZkpaYXNZLXY?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):显卡出货价补涨消息，与价格策略相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

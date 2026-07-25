@@ -202,3 +202,19 @@
   source_type: media
   note: "LLM 预分类建议(high):投资者关系活动记录,公司治理信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-24-asiainfo-013
+  date: 2026-07-24
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚信科技：盈利预警"
+  quote: "亚信科技：盈利预警"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE9mbXZzcU9FdjNhQ090bTN3SFBMRzladzZnNVM4dTk0UFBGNGRYN3pVVkVxV0I2U1FwS2hmUnJEc0JURkVWSDRoTGJIOHV5MjJZVjk2dTFfLUt2U0o1LUlsV1pzdlhReWlLc3lCanBrbmtUaVBNY3N2QQ?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):上市公司盈利预警，重大财务风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

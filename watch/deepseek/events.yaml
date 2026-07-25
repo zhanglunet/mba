@@ -658,3 +658,109 @@
   source_type: media
   note: "LLM 预分类建议(high):融资估值与IPO预期，中国AI独角兽上市潮。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-24-deepseek-043
+  date: 2026-07-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "梁文峰投资人会议实录刷屏，DeepSeek已获国家AI产投基金入股"
+  quote: "梁文峰投资人会议实录刷屏，DeepSeek已获国家AI产投基金入股"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPN09WUmZyTDZvMVlRVk9naGlRay1DVnlFZzVFaUZ0RmN4YlZ6MGpFSjJWUjhXRlphd2N5NllYRjJpWGE0djNrQm1xcFVqb2tzd1R0N1daWFk4RVZyV2p3N256XzFTTk9vOWhDemtmQk03cHA2TFRuTHpRaXN0RzNnbDQ3XzZZVFJHM1lPdA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人会议实录公开，获国家基金入股，重要融资信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-deepseek-044
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "氪星晚报 ｜DeepSeek今年已增资65%；马斯克：FSD是拉动特斯拉汽车需求的核心驱动力"
+  quote: "氪星晚报 ｜DeepSeek今年已增资65%；马斯克：FSD是拉动特斯拉汽车需求的核心驱动力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBsY01HZklxNVR2N1pqUWVfZDZBX0l1Uk1Nc1BRQXZ3emtLMU1Rakw3QzI5R0JWb3NPQzRRQjdHNDNfS2hybzRsaWhydi1NZw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek年度增资65%，融资进展显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-deepseek-045
+  date: 2026-07-24
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "中国生成式人工智能(AI)企业深度求索(DeepSeek)创始人梁文峰董事长(图)表示,美中AI产业唯一的差距在于英伟达(NVIDIA)图形处理器(GPU)等计算资源,并预测随着中国日益强劲的“AI崛"
+  quote: "中国生成式人工智能(AI)企业深度求索(DeepSeek)创始人梁文峰董事长(图)表示,美中AI产业唯一的差距在于英伟达(NVIDIA)图形处理器(GPU)等计算资源,并预测随着中国日益强劲的“AI崛"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE1aR0ZCWmYwNjRmaHVIWkhrV0VqU2xKT0hiSWlRd1FSRGI4WFBUVmV3WDZGVVNDRFAzVWVEaHRsVVN2TlpSQVpVY0xyeXNqajg?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人公开表述中美AI差距与GPU限制，涉及政策舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-deepseek-046
+  date: 2026-07-24
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "掮客、份额与百亿资金：DeepSeek融资实录"
+  quote: "掮客、份额与百亿资金：DeepSeek融资实录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi1gJBVV95cUxPc3VUQ29tU2FPREhtZEJVSmhkallOUDdlVUg4MWtKNkI1OVpnazZSR3lGajlfMVN1Z3BvYTdJa1g0TlZIaVByM0RwUG5DVnh1ZVhpMlFZN2kwV0RlNW9MS0Zjd1I1eTFNSlBDalRpTURqaDBsLXdLdW9QWVhHMW00c3Q4WmVmdlY5SWxqOVpmc0dObGc5bTJqNVpvUTQzeFRoOFFEdkZ2Z080a2hHd29xTHU3U2FuNUV6RnMtRTlJWDFlNW95blRJanVuSjJlN0M1MVVrU3hjUlZ5T1lLcXFrUXNFWUJYYUp0Zll3enA3LTBQT05QbTlndTNGVTgwZDA3elVkZ0VsTlNveHlyZ3FQa3lFTzk0RVJfSkxSZ0NpTGxUczVyYnJEbWZnaHo5cTlqVy12RWJaTV9yd1BGUmZvbEZVWmp4SnFHaDEzc1JPV2pCekh1eXc?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资过程深度报道，涉及融资结构与资金规模。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-deepseek-047
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英媒：中国新开源模型让科学家印象深刻，月之暗面K3尤其令人兴奋"
+  quote: "英媒：中国新开源模型让科学家印象深刻，月之暗面K3尤其令人兴奋"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNdlBHV01aWUtzaXdHY0xSbUZodWNOaHI0UUpWVGh0MkJVejBaOEw3TkZ0MVFTSTlSZEpzVHBPN3A3SklfcnY1MGo1ZWpKcGFSTVEzVlp6ZmZHT3ZBdWZlZm1wZkF4ZENPNVBpdUQ1UjF5NWRTS3Fnc0YtTVdGMHpiQlpzTG9vNk1GaF80Mg?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):国际媒体正面评价开源模型，涉及品牌国际认可度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-deepseek-048
+  date: 2026-07-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "越是“克制”，越是值钱：DeepSeek凭什么值3500亿？"
+  quote: "越是“克制”，越是值钱：DeepSeek凭什么值3500亿？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBqR053RDB1QkJBV21MMElqalg5RDljdVh6a2U0aUZBYTdoNkFYSjBqb3VKTWQ0eWt4WjM2Q1M5MWF6WV96S0tqMVNmdThXQUlwSjFvVXE4VUdDSW1mNWRRdHJ3?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):估值3500亿分析，融资与商业价值核心舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-deepseek-049
+  date: 2026-07-22
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "搞副业狂赚28亿！九安医疗变身创投大佬，押中DeepSeek、Kimi"
+  quote: "搞副业狂赚28亿！九安医疗变身创投大佬，押中DeepSeek、Kimi"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxPVlE2WkpRWW5Ydzc5cUFaN1dNZm9fQmZZd1hJVXdnWWFwdGpIa1JuUWQ5RzA4M0JHVmVZVjExdE9CMG9ySENnZGhZb1FMQXBXc01fVFEyR0xZcUVWMkhQcG9hZkF3RFRDZDR3MkVJcXN2UlFTVzZhSDU0aWttNHBrMW9TUWhFUE5Da3c?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):投资方获利28亿，DeepSeek作为投资标的的价值体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

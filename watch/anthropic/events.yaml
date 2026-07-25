@@ -917,3 +917,64 @@
   source_type: media
   note: "LLM 预分类建议(high):AMD内部应用Claude，战略合作深化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-24-anthropic-059
+  date: 2026-07-24
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "中国模型加速AI明星“内卷”，Anthropic上新Opus 5，性能逼近Fable 5价格打对折，刷新ARC-AGI-3纪录"
+  quote: "中国模型加速AI明星“内卷”，Anthropic上新Opus 5，性能逼近Fable 5价格打对折，刷新ARC-AGI-3纪录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE0xU3ZKWFB0dGdwNVJ4aFNNVGNDMVR4ajNPOFRsaFpDZmJjYmQyV2tFU3RMZmNROEVUNnJLN1hWRGdTenJjU25BZThsRXpLNF9VZ2lR?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic新品发布，性能与成本优势明显。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-anthropic-060
+  date: 2026-07-24
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic重磅推出Claude Cowork：专门处理办公室杂事的AI代理"
+  quote: "Anthropic重磅推出Claude Cowork：专门处理办公室杂事的AI代理"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSkFVX3lxTE51N3RMX1VyNzM3QnB6UEVvZlRTakFBSmpJX00xdnYyeFBTQlJoSnpLWnRBNXBwbUJSTVZnSS1CUl84V0FYbDFOQXpR?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品Claude Cowork发布，产品线扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-anthropic-061
+  date: 2026-07-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic升级Claude语音：支持多模型与第三方应用集成"
+  quote: "Anthropic升级Claude语音：支持多模型与第三方应用集成"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQLWxPR2ZBS21vWEZFaW4tOEZBWUVyLTdHTEFtLXpVaEJQcFh3WUhIZkZQLVk3dkJkb25SUEJpWUlVLWhtbGhRbzEwQnhxeXlCbEhYOWdiNUdHMkNVUzVodWpBaDFXelQ1TUlFNVc1b3VJVnRFaVY3dVFYdXNhaE5mU2pSVTF4T1BZcWRNdA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude语音功能升级，多模型集成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-anthropic-062
+  date: 2026-07-23
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "AMD投50亿美元入股Anthropic 签2GW芯片大单"
+  quote: "AMD投50亿美元入股Anthropic 签2GW芯片大单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTE5XYjlwUEprTEtQUVVCbTJramZFSnRDYlk5eFlyYXFsSWtfTnRwc0FKaHRZdUVVM2ozcmdXZHNHX3JHSkItWktpXzRxRkpWRjJicUNvX2lZTjlQZjg2ek1lUjcyd0xhZnFwbDFqdGFsd0lKSFpibzlz?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AMD战略投资与芯片大单，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

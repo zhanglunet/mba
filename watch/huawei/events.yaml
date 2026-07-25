@@ -551,3 +551,49 @@
   source_type: media
   note: "LLM 预分类建议(med):Nova系列发布会，产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-24-huawei-036
+  date: 2026-07-24
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为Mate 90很快登场：最强麒麟芯片加持 Mate系列迎来史诗级升级"
+  quote: "华为Mate 90很快登场：最强麒麟芯片加持 Mate系列迎来史诗级升级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxNS1dEWF9IZE5iYXFzU1hnNlVHamNlRzc3OEh1T29GaEpfdjVMY3o1TUlNdVJtcXdndkY4VHdVS18xenBRenRGMW1CNm5PbkpRb1plXzBpcV9vQ0xobkllNnQ3dEVjZ2hseWxZSEhYLWc4OUlWd0pQSW10RnZ3MEtyTm9R?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为Mate 90新品发布预告，涉及产品战略和技术升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-huawei-037
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为乾崑详解车载光技术：百万像素车灯加双焦面AR-HUD"
+  quote: "华为乾崑详解车载光技术：百万像素车灯加双焦面AR-HUD"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1fZmNLNEduM1QtbnJBZUpwOWNTM2lwLWwyUVpFSFhoNmd5aWVwN1E5TkthbU1hZTk1NEZFenh0V0tQN0tNX0FqWA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为车载光技术发布，涉及新产品和技术创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-huawei-038
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "消息称华为现在还处于回血状态，Mate 90 系列手机 + τ 定律芯片是转折点"
+  quote: "消息称华为现在还处于回血状态，Mate 90 系列手机 + τ 定律芯片是转折点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAJBVV95cUxNWnNZQjRSbkFKc2xmX3hqNjVFN3J6T1NIUWdoOXFaY1h6UW5yNTBsclBLRmpEbHcwSDZueVNIc2tsMkZac3kxUnpNcU9zUHlwUEpTTm1wZV91MGlPTkFlLWFldExVTGJub1ZUWl9FSU9aM3VYbkpYaFdibU5iOTN5WUk4Z3diV01lTDhHelVHelFXM1lrLWNNbzVyRjQ3UTgtb1gzWUpRcjFLaUtXLUp5ajYtb0lXQnFyakxzZkJNLW1yNHhqMXJqX2FzcGR6TmEwb2gtV3o0UFdoQnY4bHZrN294RGRtQUM0cm0xUHlCVXRxemo3WFZHZWdBVGpWTTEyOXFPbHl4NmhnOG85d0pjcXRYRkZhaDl5bGluMW5OVXc?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):华为财务状况和Mate 90转折点预期，涉及战略和业绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

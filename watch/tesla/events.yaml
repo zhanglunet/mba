@@ -655,3 +655,154 @@
   source_type: media
   note: "LLM 预分类建议(high):股价暴跌13%，AI投资拖累利润现金流，市场重大反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-25-tesla-043
+  date: 2026-07-25
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "消息称台积电版特斯拉AI5芯片采用3nm工艺制程|tesla|三星|代工|晶圆|电动汽车_手机新浪网"
+  quote: "消息称台积电版特斯拉AI5芯片采用3nm工艺制程|tesla|三星|代工|晶圆|电动汽车_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOVzladWRqVi1NaGJtM19GOVpXVGRraFVlMUZ6bnpHMFM2Mmd2WERSaVdqN0VGSS11Skg3X2VfU2tIeURkVlpVemNrZUlaMS1HYmpDbVdwWDYyTGp6MnFiZGlQWG1rbURqWGVLa3ZoZ20zc001SV9pVUpCc2xPVEdxWGsyUUNobi04NUFWQnRHQ29wQkxIRTRxcDl2cUx0Z0N2bE5tQUhsVDlIT3NkVmU4MWRR?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉AI5芯片采用3nm工艺，涉及技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-tesla-044
+  date: 2026-07-24
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Elon Musk Has Lost This Much Money as SpaceX, Tesla Stock Tank"
+  quote: "Elon Musk Has Lost This Much Money as SpaceX, Tesla Stock Tank"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxPcTJ5bjE4VXAyUGQxQWU4QU0zQmhrcHpnS2cxaFRXRW1Ua0szMnJoU284bWlnclpfNUxIRkJiM2ozMFF3TEI4NnZtRTVNdzZaSHF5TG9WSFptSG5uU3lMaUd1aUNfMHdhb01TbVpyLXY5cDdTZU1nNWFmem91VDQ4LVZ3VGI4ME9yQWUzdGdtYnQyWFhpUW9aVExMUzhGZw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克资产缩水，涉及特斯拉股价下跌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-tesla-045
+  date: 2026-07-24
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Tesla Stock Fell 15% Thursday. Here’s What Could Drive It Through 2026"
+  quote: "Tesla Stock Fell 15% Thursday. Here’s What Could Drive It Through 2026"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxQN1pvaEx3emtFcTh1WUZPWGozcXNKY1NCQVQzeWJ4dUlobDFPRnRCWktfUmFmR0dyVURlRHplSFZJa3lzR0lSbzkzTkZlM3AwalpjSktZZ1V4NXJ1VVJ1UDlpUVNLRTVDWGRkcG40SHVub3dacHJYclFPWWJXVkJkcDNPcjJ6YklzdU9nb0hPTGNpSGFjalVnT3JHaTFjZw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉股价下跌15%，涉及市场表现和投资风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-tesla-046
+  date: 2026-07-24
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克谈特斯拉扩张|埃隆·马斯克|tesla|optimus|cybercab|giga texas|terafab|德克萨斯|内华达|弗里蒙特|休斯顿_新浪新闻"
+  quote: "马斯克谈特斯拉扩张|埃隆·马斯克|tesla|optimus|cybercab|giga texas|terafab|德克萨斯|内华达|弗里蒙特|休斯顿_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE03UTZBbFlwRG9fOXRiVm5zbE51N1A1RFVCR0VNRDdISlR2czBxbE4yMTR2Wklpd3dVOWpRN1FWLVkySmh5eW9KNTdXWXZCM0dQOEJmZE8zdU5iWEJUTjdjdWFCaw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克谈特斯拉扩张战略，涉及业务发展方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-tesla-047
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Tesla 2026年Q2业绩电话会全文（核心要点总结）"
+  quote: "Tesla 2026年Q2业绩电话会全文（核心要点总结）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE00WW5lVzJOZWVqWUM4MUs4dDBaZXFWZHlwM2tXV1p1dEhHbVdHQ0Z1U1pnWWNiQzl4bTBXVnNrdVpxcWN3LUZPajVDd28yVTdCd0I0bFprY2x5Yld0TThrMUhhYkpXNUFOM01QbHZBYVVsZw?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方财报电话会纪要，核心业绩数据发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-048
+  date: 2026-07-23
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "现实冲击马斯克及特斯拉、SpaceX的拥趸"
+  quote: "现实冲击马斯克及特斯拉、SpaceX的拥趸"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxQaUFXUFByUkZBUTJCSDJfVUpMclJ5OGpRNTFwaVRjMDJqaE50eVhCd0ZTRmZtQ0ZmYm9QS285RTY2Q19hQTN4YzVnclRHUmdfcHRkUWxiSlViVGVIQ0ZkRjRsUEZvOTFNN29tdjhUZE81eXNPam8yeHFsRjFEQnREbzUxanVVeDJXbkc3eldXajZoMW1wY3c?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及马斯克及特斯拉形象冲击，但表述模糊。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-22-tesla-049
+  date: 2026-07-22
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Tesla Q2 revenue surges 26% but profit drops 18%, falling far short of expectations; company emphasi"
+  quote: "Tesla Q2 revenue surges 26% but profit drops 18%, falling far short of expectations; company emphasi"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE11ckZpRDhlRDdiTFZFc3hWd3hQalJYVktOOEV1VDRWeUVtNGkxYl82bE9EV3N2RkRnclNxLVJRTlg5RDRNbDZVRERmeEpyZ0lQZUVv?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2财报关键数据：收入增长但利润下滑，未达预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-050
+  date: 2026-07-23
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉首席执行官Musk为与SpaceX合并留下余地"
+  quote: "特斯拉首席执行官Musk为与SpaceX合并留下余地"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxPeUQ4dk5WUGNtMU9uenBKX1JXNEQtY1ZKVFU2NkdCS3ZSaE1DMFZ6SllWdFhSSWREcWVqRFY2NmxPVUo2aEc5RjIyMGdLVTBWSHV3OURrRDRqRV9HX3g0TjVUeEdGWGh2cFhMb1RVNFBfeUFPeG1IcWRPQVhUV0pDSWRXWTRkLVhTWHR3aGdlVnlJblJZV0NJV3J3NA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO战略动向，涉及与SpaceX合并可能性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-24-tesla-051
+  date: 2026-07-24
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "一个月撞207起创纪录特斯拉自动驾驶事故超2021年全年细节全涂黑- Tesla 特斯拉"
+  quote: "一个月撞207起创纪录特斯拉自动驾驶事故超2021年全年细节全涂黑- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TWGdGRkFKSVB3YW01R0sySGJMWHg3X0IzWWJ6a1U3TGRzNUtPVFRldVpHYWV1ZENROWtheGhmMXgtaUIxYTJTWHBZWmh4cndDYkNINFdhZEpZUW5qUnYyaA?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):自动驾驶事故创纪录，月度207起，重大安全舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-23-tesla-052
+  date: 2026-07-23
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "市场传闻：特斯拉从Micron获得了条款合理的芯片供应，Musk表示"
+  quote: "市场传闻：特斯拉从Micron获得了条款合理的芯片供应，Musk表示"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbHQzQ0tOMUtqYjVRXzhPRnJvc3lURE1nR1VSMzIteE1TbXZ2dGdlRE5SclhQUEpOY3hCT1V1ZnFJYlNwUlF3ejJ0bUJHbklqNDc5R201eUNSRE5uOXhrVGF6TkdOREQwMHZsSFZHVDJFSkEtYVd0aUlwSGZSck1Xd0ZXa1NycVVVdllyZWZ1aUVYVzN6V0dfaWg5SHhwZFlVU2JUWTNyZ0NPSk1tOUNlcThNV1pwSDc3?oc=5
+  fetched_at: "2026-07-25T05:25:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):供应链合作进展，芯片供应条款确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
