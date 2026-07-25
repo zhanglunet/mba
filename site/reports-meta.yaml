@@ -38,6 +38,7 @@ reports:
     audit_date: 2026-07-20
     panel: default
     industry: 智能制造·硬件
+    news_site: news.lenovo.com
     score_total: 122
     score_max: 250
     score_normalized: 4.88
@@ -185,6 +186,7 @@ reports:
     brand_en: Anthropic (Claude)
     panel: vc-en
     industry: 人工智能
+    news_site: anthropic.com/news
     version: v4
     audit_date: 2026-07-20
     score_total: 181
@@ -337,6 +339,7 @@ reports:
     brand_en: SpaceX
     panel: vc-en
     industry: 硬科技·航天
+    news_site: spacex.com/updates
     version: v3
     audit_date: 2026-07-20
     score_total: 218
@@ -394,6 +397,7 @@ reports:
     brand_en: OpenAI
     panel: vc-en
     industry: 人工智能
+    news_site: openai.com/index
     version: v2
     audit_date: 2026-07-20
     score_total: 190
@@ -452,6 +456,7 @@ reports:
     brand_en: DeepSeek
     panel: ai-app-cn
     industry: 人工智能
+    news_site: deepseek.com
     version: v3
     audit_date: 2026-07-20
     score_total: 208
@@ -481,6 +486,7 @@ reports:
     brand_en: NVIDIA
     panel: vc-en
     industry: 人工智能
+    news_site: blogs.nvidia.com
     version: v3
     audit_date: 2026-07-20
     score_total: 220
@@ -509,6 +515,7 @@ reports:
     brand_en: Apple
     panel: vc-en
     industry: 智能制造·硬件
+    news_site: apple.com/newsroom
     version: v2
     audit_date: 2026-07-20
     score_total: 222
@@ -537,6 +544,7 @@ reports:
     brand_en: Google
     panel: vc-en
     industry: 人工智能
+    news_site: blog.google
     version: v2
     audit_date: 2026-07-20
     score_total: 208
@@ -567,6 +575,7 @@ reports:
     brand_en: Microsoft
     panel: vc-en
     industry: 企业服务·安全
+    news_site: news.microsoft.com
     version: v3
     audit_date: 2026-07-20
     score_total: 170
@@ -594,6 +603,7 @@ reports:
     brand_en: Amazon
     panel: vc-en
     industry: 企业服务·安全
+    news_site: aboutamazon.com/news
     version: v2
     audit_date: 2026-07-20
     score_total: 216
@@ -622,6 +632,7 @@ reports:
     brand_en: Huawei
     panel: security-cn-global
     industry: 企业服务·安全
+    news_site: huawei.com/en/news
     version: v2
     audit_date: 2026-07-20
     score_total: 215
@@ -651,6 +662,7 @@ reports:
     ticker: TSLA
     panel: auto
     industry: 智能制造·硬件
+    news_site: ir.tesla.com
     version: v2
     audit_date: 2026-07-20
     score_total: 171
@@ -674,6 +686,7 @@ reports:
     ticker: PLTR
     panel: vc-en
     industry: 企业服务·安全
+    news_site: investors.palantir.com
     version: v1
     audit_date: 2026-07-17
     score_total: 165
