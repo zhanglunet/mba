@@ -37,6 +37,9 @@ jobs:
       - name: 官网直采解析自测(通用内嵌 JSON 提取 · 抓不到必须报 0 不编造)
         run: python scripts/watch-tools/official_site.py --selftest
 
+      - name: discover feed 解析自测(RSS 2.0 / Atom fixture · 离线)
+        run: python scripts/watch-tools/fetch_candidate.py selftest
+
       - name: Brand Watch 触发规则评估器自测(校准阈值回归防线)
         run: python scripts/watch-tools/evaluate_triggers.py --selftest
       - name: 创始人维度校验(founders/*.yaml schema + brand 对齐白名单 + 履历带 provenance + 自测)

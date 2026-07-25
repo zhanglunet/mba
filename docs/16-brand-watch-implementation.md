@@ -787,6 +787,62 @@ asiainfo/zhipu 路径未定。**没配 = 保持原行为,无回归。**
 **前置条件**:本地桌面版把 `WUYING_API_KEY` 配进 `.env` → 跑 `scripts/wuying/smoke_test.py`
 确认 GetLink 是否仍 400。烟测通过之前,云浏览器 leg 不动工。
 
+## 9.9 免费社媒线开发计划:微博 / 小红书 / 公众号(2026-07-26)
+
+用户不想为 Wuying 付费,问免费方案。**先把"零运维白嫖"的路全部实测排除**(本会话数据中心 IP):
+
+| 免费候选 | 实测 | 原因 |
+|---|---|---|
+| 微博移动端 API 无登录直连 | ❌ 返回访客系统 HTML | 新浪按 **IP 信誉**拦,数据中心 IP 直接挡 |
+| RSSHub 公共实例(rsshub.app 等) | ❌ 403 / 503 | 公共实例限流数据中心 IP,微博/小红书路由多半没配 cookie |
+| 公众号镜像(freewechat) | ❌ 403 | 同上 |
+| GitHub Actions + Playwright | 不推荐 | runner 也是数据中心 IP,同一套访客系统照拦;cookie 进 secrets 有过期与泄露问题 |
+
+**结论:免费可行的路 = 把"计算"挪到用户自己的机器 / 家庭网络。** 三步走:
+
+### ① 仓库侧铺管道:`rss_feeds` 任意 RSS 源支持(✅ 本 PR 已做)
+
+- `reports-meta.yaml` 可选字段 **`rss_feeds`**(字符串或列表),`discover` 第五路消费:
+  逐源 curl → `parse_feed`(**RSS 2.0 + Atom 都认**,解析失败返回空绝不编造)→
+  标 `source_type: social` → 名额与去重复用 #213 的逻辑。
+- **哨兵**:配了却 0 条(RSSHub 路由挂 / cookie 过期都是静默失效)→ stderr + 候选 md 双告警。
+- 验收(已过):selftest 10 组(RSS2 日期归一 / Atom href 与 published / 垃圾输入返回空);
+  真源 Atom 解析 25+10 条;端到端临时配真 RSS → 候选正确标 social;坏 URL → 哨兵喊。
+  ⚠ 沙箱假象记录:GitHub `releases.atom` 在本会话被仓库代理拦成 JSON 错误,**不是解析 bug**,
+  换 reddit/.rss 与 github.blog/feed 验证通过。
+
+### ② 用户侧验证:本地自托管 RSSHub(**用户动作**,零成本一条命令)
+
+```bash
+docker run -d --name rsshub -p 1200:1200 diygod/rsshub
+# 微博(公开主页,通常无需 cookie;家庭宽带 IP 一般能过访客系统):
+curl "http://localhost:1200/weibo/user/1746173800"          # 美团官微 uid
+# 小红书(需要 cookie:RSSHub 环境变量 XIAOHONGSHU_COOKIE):
+curl "http://localhost:1200/xiaohongshu/user/<user-id>/notes"
+```
+
+- **验收标准**:本地能出含 `<item>` 的 RSS(条目标题是真实微博/笔记)。
+- **诚实边界**:「家庭 IP 能过访客系统」是机制推断 + RSSHub 社区经验,数据中心会话**无法代验**;
+  不通就说明该路由当前版本失效,进 ③ 的 Playwright 备选。
+- **账号与条款风险由用户拍板**:自动化抓取违反微博/小红书 ToS,cookie 绑定的账号可能被风控。
+- **公网可达性**:每日 workflow 在 GitHub runner 上跑,要吃你本地 RSSHub 有两个选:
+  (a) 内网穿透(cloudflared tunnel 免费档)把 `localhost:1200` 暴露成 https URL 填进 meta;
+  (b) 不穿透,本地 cron 定期跑 `discover --brand <x>` 把候选文件推 PR。**(a) 简单但 URL 半公开
+  (建议加随机路径),(b) 更稳私但要本地跑东西 —— 到时按偏好选。**
+
+### ③ 条件分支(②通了 / 没通)
+
+- **②通了**:把 RSSHub URL 填进 `rss_feeds`(每品牌微博一条,有 cookie 再加小红书)→
+  当天流水线开吃,仓库侧零改动。观察一周,信号质量 OK 再考虑给更多品牌配。
+- **②没通**:退到**本地 Playwright + 登录态**脚本(免费但要逐站写、逐站维护),
+  只做微博 + 小红书两站、只抓官方账号页标题;产出直接复用 `rss_feeds` 也吃的候选格式。
+  这条成本高,**等 ② 的实测结果再决定,不预先动工**。
+
+### 全线不变的边界
+
+标题/日期/链接逐字取自源,不改写不翻译;dim/severity 留给分类环节;
+**审计分数从不自动变,合并 PR = 人工闸门**。
+
 ## 10. 单次扫描操作 SOP(M1 人肉/半自动版)
 
 ```
