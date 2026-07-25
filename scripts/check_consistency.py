@@ -43,6 +43,41 @@ def check_version_alignment():
                        f"—— 每份 FRESH 报告会拷这个模板,必须同步(改 front-matter 时一起改)。")
     return True, f"SKILL version == panel 模板 mba_version == {fm.group(1)}"
 
+def check_mcp_version():
+    """面向用户的「当前 MCP 版本」陈述必须 == packages/mcp-server/package.json 的 version。
+
+    2026-07-25 起:agents.html 曾停在 v0.1.0 而 npm 已发 0.2.0(整整一个版本周期没人发现)——
+    这类"会过期的数字"手写在页面里、没被任何 gate 守着。
+    **只查白名单两处「当前版本」陈述**;`docs/11-roadmap.md` 的 P3-A 段与 `handoff-*` 是
+    **完成时的历史快照**(同段还记着"6 工具 / 22 tests"),属于存档、不该被"刷新",故不纳入。
+    """
+    pkg = rd("packages/mcp-server/package.json")
+    if pkg is None:
+        return False, "packages/mcp-server/package.json 不存在"
+    try:
+        want = json.loads(pkg)["version"]
+    except (ValueError, KeyError) as e:
+        return False, f"解析 package.json version 失败:{e}"
+    # 紧邻组合:`mba-mcp-server` 与其后 120 字符内的 vX.Y.Z(容忍中间的 HTML 标签)
+    pat = re.compile(r"mba-mcp-server.{0,120}?\bv?(\d+\.\d+\.\d+)", re.S)
+    targets, total, bad, empty = ["site/agents.html", "docs/README.md"], 0, [], []
+    for rel in targets:
+        text = rd(rel)
+        if text is None:
+            return False, f"{rel} 不存在"
+        hits = pat.findall(text)
+        if not hits:          # 逐文件要求(不能靠另一个文件兜底,否则 gate 对本文件失效)
+            empty.append(rel)
+        total += len(hits)
+        bad += [f"{rel} 写着 v{v}" for v in hits if v != want]
+    if bad:
+        return False, (f"MCP 版本陈述过期:{'; '.join(bad)},但 package.json 是 {want} "
+                       f"—— 发完 npm 包记得同步这两处面向用户的说明。")
+    if empty:
+        return False, (f"{' / '.join(empty)} 里找不到 `mba-mcp-server vX.Y.Z` 版本陈述 "
+                       f"—— 要么版本号被删了,要么写法变了导致本 gate 对该文件失效。")
+    return True, f"MCP 版本陈述一致(agents.html / docs/README == package.json == {want},{total} 处)"
+
 def check_docs_index():
     readme = rd("docs/README.md")
     if readme is None:
@@ -220,6 +255,7 @@ def check_industries():
 
 CHECKS = [
     ("版本对齐", check_version_alignment),
+    ("MCP 版本陈述", check_mcp_version),
     ("docs 索引完整", check_docs_index),
     ("评委数自洽", check_judge_count),
     ("工具数自洽", check_tool_count),
