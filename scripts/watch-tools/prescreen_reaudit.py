@@ -28,7 +28,7 @@
     python3 scripts/watch-tools/prescreen_reaudit.py --brand apple  # 只看一个品牌
 """
 
-import os, sys, json, glob, time, datetime, argparse
+import os, re, sys, json, glob, time, datetime, argparse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -67,42 +67,74 @@ _SEV_RANK = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 # 根因不是判定标准写得不够细,而是**输出结构允许模型只看一两条就下品牌级结论**。
 # 故改成:模型对**每一条事件**单独出判定,品牌 verdict 由代码聚合(任一 S ⇒ substantive)。
 # 这样「挑最弱的说不」在结构上不可能发生,且每条判定都能被人逐条复核。
+# **S 的封闭白名单**(2026-07-25 第 5 次真跑后引入)。
+# 第 5 次实测:把 S 定义成开放的「已发生的实质事件」+ 一句「不得用相关性门槛否掉」,
+# 模型把「不得否掉」泛化成了「凡是已发生的都别否」——16/17 家 substantive,等于没筛
+# (`SIGGRAPH展示已进行`、`网络回滚操作已完成`、`开启 HarmonyOS 升级` 全判了 S)。
+# 连续 5 轮在「过严 ↔ 过松」之间摆,说明让 Haiku 级模型做「这件事重不重要」这种**开放判断**
+# 本身就不稳。改成**分类**:只能从下面这张封闭清单里挑一个类别,挑不出就是 D。
+# 白名单在**代码里**校验(见 _aggregate):模型编一个新类别,一样落成 D。
+CATS = {
+    "FIN":    "财报/营收/利润/现金流的具体数字已公布",
+    "FUND":   "融资 / 投资入股已完成或已签署,且金额明确",
+    "MA":     "并购 / 收购 / 剥离已完成或已签约",
+    "REG":    "监管处罚 / 禁令 / 判决 / 和解 / 立案调查已下达或已生效",
+    "IPO":    "招股书已递交 / 已上市 / 解禁等资本市场程序性里程碑已发生",
+    "PEOPLE": "大规模裁员 / 创始人或核心高管变动已落地",
+    "CRISIS": "重大安全事故 / 大规模服务中断 / 数据泄露 / 产品召回已发生",
+    "PRICE":  "股价大幅异动(有具体幅度)且伴随明确事由",
+    "LAUNCH": "全新旗舰产品或模型正式发布且已开放使用",
+}
+
+# ── prompt:**逐事件分类**(不是开放判断)──────────────────────────────────────
+# 2026-07-25 第 3/4 次真跑的教训:**per-brand 判定会被模型「挑最弱的一条说不」**。
+# 第 4 次 A/B(同一份 events.yaml,只换 prompt)实测:per-brand 下模型对 deepseek 判
+# directional,引用的是 `039 闭门会实录`——而同一份输入的**第一条**就是 P0
+# `027 完成首轮融资:估值超3500亿`(且它一字不差地写在 prompt 的正例里)。
+# 根因不是判定标准写得不够细,而是**输出结构允许模型只看一两条就下品牌级结论**。
+# 故:模型对**每一条事件**单独出**类别**,品牌 verdict 由代码聚合(任一非 D ⇒ substantive)。
 SYSTEM = (
     "你在给一个品牌影响力审计系统做**预筛**。输入是若干品牌各自积压的舆情事件。\n"
-    "你的任务:对**输入里的每一条事件**单独判定它是不是**已落地的硬事实**。\n"
-    "**逐条判,一条都不能漏**——输出条数必须等于输入事件条数,id 原样照抄。\n\n"
-    "S = substantive(已落地硬事实):**已经发生、可核验**的实质事件。两类:\n"
-    "  (a) 结果类:财报/营收/现金流具体数字、融资完成(含估值)、产品正式发布并可用、"
-    "裁员/高管变动落地、监管处罚、诉讼判决或和解、股价异动伴随明确事由;\n"
-    "  (b) **程序性里程碑已完成**:招股书/文件**已递交**、禁令/规定**已下达**、处罚**已生效**、"
-    "合作**已签约**、许可**已获批**——既成法律/行政事实。**不要因为「后续结果还没出来」"
-    "就判成预期**(『提交招股书』是已发生的事实,不是『上市预期』;『FAA 禁止员工购股』"
-    "是已下达的规定,不是观点)。\n"
-    "D = directional(只有方向价):券商评级/目标价/分析师观点、"
-    "'据报道/据悉/洽谈中/预计/拟/计划/**将**/预览/即将/有望/曝光/被视为'、"
-    "分析评论与产品评测、营销稿与影像大赛、纯口号或愿景表述。\n\n"
-    "重要:\n"
-    "1. 你**不判断分数涨跌**,也不建议加减分——只判断每条事件是 S 还是 D。\n"
-    "2. **相关性门槛只用来排除明显边缘的事**(如成立一个联合实验室、单件商品拍卖成交价、"
-    "单一商户下架)。**财报数字 / 监管处罚 / 禁令 / 融资完成 / 诉讼和解 / 大额投资入股"
-    "一律判 S,不得用相关性门槛否掉。**\n"
-    "3. 同一件事被多家转载,**每条都照常单独判**(去重由后续代码做,不用你操心)。\n"
-    "4. 只有 v=\"S\" 的才写 why(≤20 字,说清楚落地的是什么);v=\"D\" 的 why 留空字符串。\n\n"
+    "你的任务:给**输入里的每一条事件**打一个**类别标签**。\n"
+    "**逐条打,一条都不能漏**——输出条数必须等于输入事件条数,id 原样照抄。\n\n"
+    "**只能从下面这 9 个类别里挑一个**;挑不出就打 D。不许自创类别。\n"
+    + "".join(f"  {k} = {v}\n" for k, v in CATS.items()) +
+    "  D = 以上都不是\n\n"
+    "打 D 的典型(**这些一律 D,不要硬往上面 9 类里塞**):\n"
+    "  · 券商评级 / 目标价 / 分析师观点 / 分析评论文章\n"
+    "  · 未来时与未确认:'将 / 拟 / 计划 / 预计 / 即将 / 下周 / 明年 / 洽谈中 / 据悉 / 据报道 / 有望 / 曝光'\n"
+    "  · **产品规格或参数公布、版本升级、展会演示、评测、营销稿、影像大赛**\n"
+    "  · 合作意向 / 联合实验室 / 战略备忘录等**没有明确金额或交割**的合作\n"
+    "  · 内部运维动作(如网络回滚、服务扩容)、单件商品成交价、单一商户上下架\n"
+    "  · 纯口号、愿景、创始人访谈与闭门会观点\n\n"
+    "两条硬规则:\n"
+    "1. **已发生 ≠ 值得重审**。事件必须**同时**满足:已经发生、可核验 **且** 命中上面 9 类之一。"
+    "「已经发生」但不属于这 9 类的(展会展示、规格发布、版本升级、运维操作),**一律 D**。\n"
+    "2. **不要因为「后续结果还没出来」就判成未落地**:『提交招股书』=IPO(已递交),"
+    "不是『上市预期』;『FAA 禁止员工购股』=REG(禁令已下达),不是观点。\n\n"
+    "你**不判断分数涨跌**,也不建议加减分——只打类别。\n"
+    "同一件事被多家转载,**每条都照常单独打**(去重由后续代码做,不用你操心)。\n\n"
     "逐条对照例(取自本项目真实事件):\n"
-    "  S ✓「Deepseek完成首轮融资:估值超3500亿 梁文锋个人持股31%」(融资完成+具体数字)\n"
-    "  S ✓「FCC祭出最严禁令:追溯封杀超300家套壳公司」(禁令已下达)\n"
-    "  S ✓「欧盟委员会依据《数字市场法》处罚谷歌8.9亿欧元」(处罚已落地)\n"
-    "  S ✓「Anthropic提交招股书,冲击万亿美元市值」(招股书已递交)\n"
-    "  S ✓「美法官批准Anthropic 15亿美元版权和解」(和解已生效)\n"
-    "  S ✓「AMD投50亿美元入股Anthropic 签2GW芯片大单」(投资入股已宣布,金额明确)\n"
-    "  D ✗「微软**将**在 Azure 大规模部署 AMD Helios」(『将』=未落地)\n"
-    "  D ✗「月之暗面以500亿美元估值**洽谈**Pre-IPO融资」(洽谈中)\n"
-    "  D ✗「SpaceX**据悉**暂停部分猎鹰9号预订」(『据悉』=未确认)\n"
-    "  D ✗「英伟达与韩国科学技术院联合成立AI研究实验室」(边缘,权重过低)\n"
-    "  D ✗「中金评级上调」(券商观点)\n"
-    "  D ✗「DJI Osmo Pocket 4 评测」(产品评测)\n\n"
+    "  FUND ←「Deepseek完成首轮融资:估值超3500亿 梁文锋个人持股31%」\n"
+    "  FUND ←「AMD投50亿美元入股Anthropic 签2GW芯片大单」\n"
+    "  REG  ←「FCC祭出最严禁令:追溯封杀超300家套壳公司」\n"
+    "  REG  ←「欧盟委员会依据《数字市场法》处罚谷歌8.9亿欧元」\n"
+    "  REG  ←「美法官批准Anthropic 15亿美元版权和解」\n"
+    "  IPO  ←「Anthropic提交招股书,冲击万亿美元市值」\n"
+    "  FIN  ←「谷歌Q2自由现金流首次转负,上调全年资本开支至最高2050亿美元」\n"
+    "  PEOPLE ←「亚马逊3万人大裁员,Nova团队被裁」\n"
+    "  CRISIS ←「AWS云服务故障导致大面积互联网瘫痪」\n"
+    "  D ←「英伟达在SIGGRAPH展示Vera CPU与Rubin GPU规格」(展会 + 规格公布)\n"
+    "  D ←「微软完成网络回滚操作」(内部运维动作)\n"
+    "  D ←「华为Mate 80等系列开启HarmonyOS升级」(版本升级)\n"
+    "  D ←「爱马仕宣布2027年1月推出高级定制系列」(未来时)\n"
+    "  D ←「微软**将**在 Azure 大规模部署 AMD Helios」(『将』=未落地)\n"
+    "  D ←「月之暗面以500亿美元估值**洽谈**Pre-IPO融资」(洽谈中)\n"
+    "  D ←「英伟达与韩国科学技术院联合成立AI研究实验室」(无金额无交割的合作)\n"
+    "  D ←「中金评级上调」(券商观点)\n"
+    "  D ←「DJI Osmo Pocket 4 评测」(产品评测)\n\n"
     '只输出一个扁平 JSON 数组(不按品牌嵌套),每项:'
-    '{"id":"<原样照抄的事件 id>","v":"S"|"D","why":"...(仅 S 需要,≤20字)"}。'
+    '{"id":"<原样照抄的事件 id>","k":"<上面 9 个类别之一,或 D>","why":"...(非 D 才写,≤15字)"}。'
     "不要任何解释性散文。"
 )
 
@@ -158,43 +190,85 @@ def _accepts_none(fn):
     return False  # evaluate 需要显式 as_of;保留分支以便将来放宽
 
 
-def _aggregate(rows, chunk):
-    """**事件级**判定 → 品牌级 verdict:任一事件 S ⇒ 该品牌 substantive。
+def _norm_title(t):
+    """标题规范化:去掉全部空白与标点。CJK 无词间空格,直接按字符比更稳。"""
+    return re.sub(r"[\s\W_]+", "", str(t or ""), flags=re.UNICODE)
 
-    品牌结论由**代码**聚合,不由模型给——这正是「挑最弱的一条说不」在结构上不可能发生的原因。
-    模型漏答的事件按 directional 记(保守),但**记进 coverage 并在摘要里显示**:
-    静默的漏答比误判更危险,必须看得见。
+
+def _bigrams(s):
+    return {s[i:i + 2] for i in range(len(s) - 1)} or ({s} if s else set())
+
+
+def _same_story(a, b, thresh=0.65):
+    """同一件事?用字符二元组的**重叠系数**(不是 Jaccard)。
+
+    重叠系数 = |A∩B| / min(|A|,|B|):新闻转载常见「一条是另一条的浓缩版」
+    (『SpaceX星舰第13次试飞成功,发动机重启、溅落精准…』vs『SpaceX"星舰"完成第13次试飞』),
+    长度差距大时 Jaccard 会被长的那条稀释,重叠系数不会。
+    **这是启发式,只用于合并展示与计数,不影响 substantive/directional 判定**;
+    漏合(如简繁体不同源)只是多列一条,不会改结论。
+    """
+    A, B = _bigrams(_norm_title(a)), _bigrams(_norm_title(b))
+    if not A or not B:
+        return False
+    return len(A & B) / min(len(A), len(B)) >= thresh
+
+
+def _aggregate(rows, chunk):
+    """**事件级分类** → 品牌级 verdict:任一事件命中白名单类别 ⇒ 该品牌 substantive。
+
+    三道防线,都在代码里(不靠模型自觉):
+    1. **白名单校验** —— 类别必须 ∈ CATS,模型自创的类别一律落成 D(第 5 次:开放判断下
+       模型把「已发生」等同于「值得重审」,16/17 家 substantive);
+    2. **品牌结论由代码聚合** —— 「挑最弱的一条说不」在结构上不可能发生(第 4 次的坑);
+    3. **coverage 如实记录** —— 模型漏答按 D 保守处理,但必须看得见,静默漏答比误判更危险。
     """
     owner = {}                      # event id → slug
     for it in chunk:
         for e in it["events"]:
             owner[str(e["id"])] = it["slug"]
 
-    seen = {}                       # event id → (verdict, why)
+    seen = {}                       # event id → (cat, why);cat=None 表示 D
     for r in rows if isinstance(rows, list) else []:
         if not isinstance(r, dict):
             continue
         eid = str(r.get("id") or "")
         if eid not in owner:        # 模型编的 / 不属本批的 id,丢弃
             continue
-        raw = str(r.get("v") or r.get("verdict") or "").strip().upper()
-        v = "substantive" if raw.startswith("S") else "directional"
-        seen[eid] = (v, str(r.get("why") or "").strip()[:40])
+        raw = str(r.get("k") or r.get("cat") or "").strip().upper()
+        cat = raw if raw in CATS else None      # ← 白名单硬校验
+        seen[eid] = (cat, str(r.get("why") or "").strip()[:40])
 
     out = {}
     for it in chunk:
         ids = [str(e["id"]) for e in it["events"]]
-        subs = [(i, seen[i][1]) for i in ids if seen.get(i, ("directional", ""))[0] == "substantive"]
+        title = {str(e["id"]): e.get("title", "") for e in it["events"]}
+        # 命中白名单的,按 id 升序(id 以日期开头,升序即原发在前)后**同类去重**:
+        # 同一件事的多家转载只留最早一条(第 5 次:spacex 的 059/062/063/065 全是「星舰第 13 次试飞」)。
+        hits = sorted(i for i in ids if seen.get(i, (None, ""))[0])
+        kept, dropped = [], 0
+        for i in hits:
+            cat, why = seen[i]
+            if any(seen[j][0] == cat and _same_story(title.get(j), title.get(i)) for j in kept):
+                dropped += 1
+                continue
+            kept.append(i)
+
         covered = sum(1 for i in ids if i in seen)
-        if subs:
-            reason = " · ".join(f"{i}:{w}" if w else i for i, w in subs[:4])
+        if kept:
+            reason = " · ".join(f"{i}[{seen[i][0]}]" + (f":{seen[i][1]}" if seen[i][1] else "")
+                                for i in kept[:4])
+            if dropped:
+                reason += f"(另 {dropped} 条为同一事件的转载,已合并)"
         else:
-            reason = f"{len(ids)} 条事件逐条判定后全为方向价"
+            reason = f"{len(ids)} 条事件逐条分类后无一命中白名单"
         if covered < len(ids):
             reason += f"(注:模型只覆盖 {covered}/{len(ids)} 条,未覆盖的按方向价保守处理)"
-        out[it["slug"]] = {"verdict": "substantive" if subs else "directional",
+        out[it["slug"]] = {"verdict": "substantive" if kept else "directional",
                            "reason": reason[:400],
-                           "key_event_ids": [i for i, _ in subs][:8],
+                           "key_event_ids": kept[:8],
+                           "categories": sorted({seen[i][0] for i in kept}),
+                           "merged_duplicates": dropped,
                            "coverage": f"{covered}/{len(ids)}"}
     return out
 
@@ -239,11 +313,13 @@ def run(items, prov, max_events=BATCH_EVENTS):
             for it in chunk:
                 out[it["slug"]] = {"verdict": "directional",
                                    "reason": f"本批模型调用失败,保守判为无实质变化(需人工复核):{str(e)[:60]}",
-                                   "key_event_ids": [], "coverage": f"0/{len(it['events'])}"}
+                                   "key_event_ids": [], "categories": [], "merged_duplicates": 0,
+                                   "coverage": f"0/{len(it['events'])}"}
     for slug in wanted:  # 兜底:任何漏网的品牌
         out.setdefault(slug, {"verdict": "directional",
                               "reason": "模型未覆盖该品牌 —— 保守判为无实质变化(需人工复核)",
-                              "key_event_ids": [], "coverage": "0/0"})
+                              "key_event_ids": [], "categories": [], "merged_duplicates": 0,
+                              "coverage": "0/0"})
     return out
 
 
@@ -361,33 +437,55 @@ def _selftest():
                    max_events=70)) == 2, "chunks:按事件数切批(不是品牌数)")
     ok(len(_chunks([{"slug": "a", "events": [0] * 200}], max_events=70)) == 1, "chunks:单家超限自成一批")
 
-    # ── 逐事件聚合(2026-07-25 第 4 次改造:品牌结论由代码算,不由模型给)────────────
-    chunk = [{"slug": "x", "events": [{"id": "x-1"}, {"id": "x-2"}]},
-             {"slug": "y", "events": [{"id": "y-1"}]}]
-    agg = _aggregate([{"id": "x-1", "v": "D", "why": ""},
-                      {"id": "x-2", "v": "S", "why": "融资完成"},
-                      {"id": "y-1", "v": "D", "why": ""}], chunk)
-    ok(agg["x"]["verdict"] == "substantive", "aggregate:任一事件 S ⇒ 品牌 substantive")
+    # ── 逐事件分类 + 代码聚合(第 4 次:品牌结论由代码算;第 5 次:类别走封闭白名单)──
+    chunk = [{"slug": "x", "events": [{"id": "x-1", "title": "券商上调评级"},
+                                      {"id": "x-2", "title": "完成首轮融资估值超3500亿"}]},
+             {"slug": "y", "events": [{"id": "y-1", "title": "产品评测"}]}]
+    agg = _aggregate([{"id": "x-1", "k": "D", "why": ""},
+                      {"id": "x-2", "k": "FUND", "why": "融资完成"},
+                      {"id": "y-1", "k": "D", "why": ""}], chunk)
+    ok(agg["x"]["verdict"] == "substantive", "aggregate:任一事件命中白名单 ⇒ 品牌 substantive")
     ok(agg["x"]["key_event_ids"] == ["x-2"],
-       "aggregate:key_event_ids 只含 S 事件(结构上不可能混入 directional)")
+       "aggregate:key_event_ids 只含命中白名单的事件(结构上不可能混入 D)")
+    ok(agg["x"]["categories"] == ["FUND"], "aggregate:categories 记录命中了哪些类别")
     ok(agg["y"]["verdict"] == "directional", "aggregate:全 D ⇒ 品牌 directional")
-    ok("融资完成" in agg["x"]["reason"], "aggregate:reason 由 S 事件的 why 拼出,可逐条复核")
+    ok("FUND" in agg["x"]["reason"] and "融资完成" in agg["x"]["reason"],
+       "aggregate:reason 带类别与 why,可逐条复核")
 
-    # **本次改造的核心**:哪怕模型只回了最弱的一条,只要另一条判了 S,品牌就是 substantive。
-    # per-brand 时代模型能「挑最弱的说不」;逐事件 + 代码聚合后这条路被堵死。
-    ok(_aggregate([{"id": "x-2", "v": "S", "why": "融资完成"}], chunk)["x"]["verdict"] == "substantive",
-       "aggregate:模型漏答其余事件也不影响——有 S 就是 substantive")
+    # **第 5 次的核心**:白名单在代码里校验,模型自创类别一律落 D。
+    ok(_aggregate([{"id": "x-2", "k": "已发生的实质事件", "why": "很重要"}], chunk)["x"]["verdict"]
+       == "directional", "aggregate:模型自创类别 → D(封闭白名单由代码守)")
+    ok(_aggregate([{"id": "x-2", "k": "LAUNCH", "why": "旗舰发布"}], chunk)["x"]["verdict"]
+       == "substantive", "aggregate:合法类别照常通过")
+
+    # **第 4 次的核心**:哪怕模型只回了最弱的一条,只要另一条命中,品牌就是 substantive。
+    ok(_aggregate([{"id": "x-2", "k": "FUND", "why": "融资"}], chunk)["x"]["verdict"] == "substantive",
+       "aggregate:模型漏答其余事件也不影响——有命中就是 substantive")
+
+    # 去重:同一件事的多家转载只留最早一条(第 5 次:spacex 星舰试飞 4 条重复)
+    dup = [{"slug": "s", "events": [
+        {"id": "d-1", "title": "SpaceX星舰第13次试飞成功，发动机重启、溅落精准"},
+        {"id": "d-2", "title": "SpaceX“星舰”完成第13次试飞"},
+        {"id": "d-3", "title": "欧盟处罚谷歌8.9亿欧元"}]}]
+    dd = _aggregate([{"id": "d-1", "k": "LAUNCH", "why": "试飞成功"},
+                     {"id": "d-2", "k": "LAUNCH", "why": "试飞成功"},
+                     {"id": "d-3", "k": "REG", "why": "处罚落地"}], dup)
+    ok(dd["s"]["key_event_ids"] == ["d-1", "d-3"], "aggregate:同类同事去重,只留最早一条")
+    ok(dd["s"]["merged_duplicates"] == 1, "aggregate:合并掉几条如实记录")
+    ok("已合并" in dd["s"]["reason"], "aggregate:合并要写进 reason(不能静默)")
+    ok(_same_story("SpaceX星舰第13次试飞成功，发动机重启、溅落精准", "SpaceX“星舰”完成第13次试飞"),
+       "same_story:浓缩版标题能识别为同一件事(重叠系数,不是 Jaccard)")
+    ok(not _same_story("欧盟处罚谷歌8.9亿欧元", "SpaceX“星舰”完成第13次试飞"),
+       "same_story:不相干的两条不会被误合")
 
     # 漏答必须**看得见**,不能静默变 directional
-    part = _aggregate([{"id": "x-1", "v": "D", "why": ""}], chunk)
+    part = _aggregate([{"id": "x-1", "k": "D", "why": ""}], chunk)
     ok(part["x"]["coverage"] == "1/2", "aggregate:coverage 如实记录模型覆盖了几条")
     ok("模型只覆盖 1/2" in part["x"]["reason"], "aggregate:未全覆盖必须写进 reason(不许静默)")
     ok(part["y"]["coverage"] == "0/1", "aggregate:一条没答的品牌 coverage=0")
 
-    ok(_aggregate([{"id": "编造的-id", "v": "S", "why": "x"}], chunk)["x"]["verdict"] == "directional",
+    ok(_aggregate([{"id": "编造的-id", "k": "FUND", "why": "x"}], chunk)["x"]["verdict"] == "directional",
        "aggregate:模型编造的事件 id 被丢弃(不能凭空造依据)")
-    ok(_aggregate([{"id": "x-1", "v": "涨分!", "why": ""}], chunk)["x"]["verdict"] == "directional",
-       "aggregate:非法 verdict 归为 directional(模型不能自创判定)")
 
     md = render_md({"generated_at": "t", "model": "m", "brands": part})
     ok("逐事件覆盖率:1/3" in md and "⚠ 未全覆盖" in md, "render:摘要必须显示覆盖率与未覆盖告警")
@@ -398,22 +496,28 @@ def _selftest():
     ok("每一条事件" in SYSTEM and "一条都不能漏" in SYSTEM,
        "prompt:必须要求逐条判定、不许漏(per-brand 会被『挑最弱的说不』)")
     ok("输出条数必须等于输入事件条数" in SYSTEM, "prompt:输出条数 == 输入条数")
-    ok('"id"' in SYSTEM and '"v"' in SYSTEM and "扁平" in SYSTEM,
+    ok('"id"' in SYSTEM and '"k"' in SYSTEM and "扁平" in SYSTEM,
        "prompt:输出契约是扁平的事件级数组(不按品牌嵌套)")
 
-    # ↓ 锁住第 3 次真跑的误判(见 docs/16 §9.5);假阴性最危险 ↓
-    ok("程序性里程碑" in SYSTEM and "已递交" in SYSTEM and "已下达" in SYSTEM,
-       "prompt:程序性里程碑已完成 = S(招股书已递交 / 禁令已下达)")
-    ok("后续结果还没出来" in SYSTEM, "prompt:显式禁止「后续结果没出来⇒判成预期」这条错误推理")
+    # ↓ 第 5 次:S 必须是**封闭白名单分类**,不是开放判断 ↓
+    ok(len(CATS) == 9, "白名单:9 个类别(改动数量必须同步改 prompt 里的『这 9 个类别』)")
+    ok("只能从下面这 9 个类别里挑一个" in SYSTEM and "不许自创类别" in SYSTEM,
+       "prompt:封闭白名单,不许自创类别")
+    for code in CATS:
+        ok(f"  {code} = " in SYSTEM, f"prompt:类别 {code} 的定义在 prompt 里(代码与 prompt 不能漂移)")
+    ok("已发生 ≠ 值得重审" in SYSTEM,
+       "prompt:显式打断「已发生⇒值得重审」这条推理(第 5 次 16/17 家的根因)")
+    # 第 5 次的四条假阳性,必须逐条出现在 D 的对照例里
+    for kw, name in [("SIGGRAPH", "nvidia 展会+规格"), ("网络回滚", "microsoft 运维动作"),
+                     ("HarmonyOS升级", "huawei 版本升级"), ("2027年1月", "hermes 未来时")]:
+        ok(kw in SYSTEM, f"prompt:第 5 次的假阳性进了 D 对照例 —— {name}")
+
+    # ↓ 锁住第 3/4 次真跑的误判;假阴性最危险 ↓
+    ok("已递交" in SYSTEM and "已下达" in SYSTEM,
+       "prompt:程序性里程碑已完成(招股书已递交 / 禁令已下达)命中白名单")
+    ok("后续结果还没出来" in SYSTEM, "prompt:显式禁止「后续结果没出来⇒判成未落地」这条错误推理")
     ok("计划" in SYSTEM and "将" in SYSTEM and "洽谈" in SYSTEM and "据悉" in SYSTEM,
        "prompt:未来时/未确认(将/计划/洽谈/据悉)= D")
-    # 第 4 次真跑:相关性门槛被模型当成否掉一切的逃生口(欧盟罚款也被否)。必须封边界。
-    ok("相关性门槛只用来排除明显边缘的事" in SYSTEM,
-       "prompt:相关性门槛只排除边缘事,不是万能否决权")
-    ok("不得用相关性门槛否掉" in SYSTEM,
-       "prompt:财报数字/监管处罚/禁令/融资完成/诉讼和解 一律 S,不得被相关性门槛否掉")
-    ok(SYSTEM.count("S ✓") >= 5 and SYSTEM.count("D ✗") >= 5,
-       "prompt:两类各 ≥5 个 few-shot 对照例(取自真实事件)")
     # 第 4 次真跑漏掉的四条硬事实,必须逐条出现在正例里
     for kw, name in [("3500亿", "deepseek 融资完成"), ("FCC", "dji 禁令"),
                      ("8.9亿欧元", "google 欧盟处罚"), ("15亿美元版权和解", "anthropic 和解")]:
