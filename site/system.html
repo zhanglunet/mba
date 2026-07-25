@@ -188,7 +188,7 @@ flowchart TB
     direction LR
     B1["发现候选<br/>170~180 条/天"] --> B2["AI 预分类<br/>维度/严重度/方向"] --> B3["自动开 PR"] --> B4["人审 diff<br/>合并入库"]
   end
-  B4 --> EV["events.yaml<br/>累计 858 条 · 24 品牌"]
+  B4 --> EV["events.yaml<br/>24 个品牌 · 持续累积"]
   EV --> TR{"触发规则<br/>30 天滚动窗口"}
   TR -->|"未达阈值"| WAIT["继续累积"]
   TR -->|"达阈值"| SUG["建议重审<br/>首页亮灯"]
@@ -324,7 +324,7 @@ flowchart TB
         <tr><td>已发布审计报告</td><td><b>24</b></td><td>人物评委</td><td><b>43</b></td></tr>
         <tr><td>可运行 panel</td><td><b>10</b></td><td>维度 / 镜头</td><td><b>9 / 5</b></td></tr>
         <tr><td>创始人档案</td><td><b>24</b></td><td>创始人晚餐</td><td><b>3</b></td></tr>
-        <tr><td>舆情事件库</td><td><b>858</b> 条</td><td>监控品牌</td><td><b>24</b></td></tr>
+        <tr><td>监控品牌</td><td><b>24</b></td><td>舆情事件库</td><td><a href="/watch/cockpit.html" style="color:var(--accent);">每日累积 →</a></td></tr>
         <tr><td>JSON API 端点</td><td><b>11</b></td><td>MCP 工具</td><td><b>16</b></td></tr>
       </tbody>
     </table>
