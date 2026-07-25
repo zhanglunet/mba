@@ -58,15 +58,6 @@ TIMEOUT = 180              # 单次调用超时(默认 90 太紧)
 OUT_CHARS_PER_EVENT = 60   # 单事件输出经验值,供 --dry-run 估算
 _SEV_RANK = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
 
-# ── prompt:**逐事件**判定 ────────────────────────────────────────────────────
-# 2026-07-25 第 3/4 次真跑的教训:**per-brand 判定会被模型「挑最弱的一条说不」**。
-# 第 4 次 A/B(同一份 events.yaml,只换 prompt)实测:per-brand 下模型对 deepseek 判
-# directional,引用的是 `039 闭门会实录`——而同一份输入的**第一条**就是 P0
-# `027 完成首轮融资:估值超3500亿`(且它一字不差地写在 prompt 的正例里)。
-# 同类漏判还有 dji(P0 FCC 禁令)、google(欧盟罚 8.9 亿)、anthropic(P0 赔 15 亿)。
-# 根因不是判定标准写得不够细,而是**输出结构允许模型只看一两条就下品牌级结论**。
-# 故改成:模型对**每一条事件**单独出判定,品牌 verdict 由代码聚合(任一 S ⇒ substantive)。
-# 这样「挑最弱的说不」在结构上不可能发生,且每条判定都能被人逐条复核。
 # **S 的封闭白名单**(2026-07-25 第 5 次真跑后引入)。
 # 第 5 次实测:把 S 定义成开放的「已发生的实质事件」+ 一句「不得用相关性门槛否掉」,
 # 模型把「不得否掉」泛化成了「凡是已发生的都别否」——16/17 家 substantive,等于没筛
@@ -83,7 +74,10 @@ CATS = {
     "PEOPLE": "大规模裁员 / 创始人或核心高管变动已落地",
     "CRISIS": "重大安全事故 / 大规模服务中断 / 数据泄露 / 产品召回已发生",
     "PRICE":  "股价大幅异动(有具体幅度)且伴随明确事由",
-    "LAUNCH": "全新旗舰产品或模型正式发布且已开放使用",
+    # LAUNCH 是 9 类里最主观、最容易被撑开的一类(第 6 次实测:`7月28日推出租赁计划`、
+    # `Gemini 产品线扩展`、`扫拖机器人发布` 全被塞了进来)。定义里**把排除项写死**。
+    "LAUNCH": ("该品牌**主力旗舰**产品或模型正式发布**且当下已可用**"
+               "(**不含**:定档/预告、版本升级、产品线扩展或廉价版、配件与周边品类)"),
 }
 
 # ── prompt:**逐事件分类**(不是开放判断)──────────────────────────────────────
@@ -125,6 +119,9 @@ SYSTEM = (
     "  PEOPLE ←「亚马逊3万人大裁员,Nova团队被裁」\n"
     "  CRISIS ←「AWS云服务故障导致大面积互联网瘫痪」\n"
     "  D ←「英伟达在SIGGRAPH展示Vera CPU与Rubin GPU规格」(展会 + 规格公布)\n"
+    "  D ←「苹果Apple Upgrade租赁计划**7月28日**推出」(定档 = 还没发生,且不是旗舰产品)\n"
+    "  D ←「谷歌扩展Gemini产品线推出更廉价模型」(产品线扩展 / 廉价版,不是主力旗舰)\n"
+    "  D ←「大疆ROMO 2系列AI扫拖机器人发布」(周边品类,不是该品牌主力旗舰)\n"
     "  D ←「微软完成网络回滚操作」(内部运维动作)\n"
     "  D ←「华为Mate 80等系列开启HarmonyOS升级」(版本升级)\n"
     "  D ←「爱马仕宣布2027年1月推出高级定制系列」(未来时)\n"
@@ -199,14 +196,25 @@ def _bigrams(s):
     return {s[i:i + 2] for i in range(len(s) - 1)} or ({s} if s else set())
 
 
+EVENTS_PER_CAT = 2         # key_event_ids 每个类别最多留几条代表
+
+
 def _same_story(a, b, thresh=0.65):
     """同一件事?用字符二元组的**重叠系数**(不是 Jaccard)。
 
     重叠系数 = |A∩B| / min(|A|,|B|):新闻转载常见「一条是另一条的浓缩版」
     (『SpaceX星舰第13次试飞成功,发动机重启、溅落精准…』vs『SpaceX"星舰"完成第13次试飞』),
     长度差距大时 Jaccard 会被长的那条稀释,重叠系数不会。
-    **这是启发式,只用于合并展示与计数,不影响 substantive/directional 判定**;
-    漏合(如简繁体不同源)只是多列一条,不会改结论。
+
+    **阈值 0.65 是量过的,不能再降**(2026-07-25 第 6 次真跑后实测):
+      · 同一故事的**最低**有效重叠 = 0.41(anthropic 三条「15 亿版权和解」)
+      · 不同故事的**最高**重叠     = 0.48(`anthropic-046 提交招股书` vs
+        `anthropic-034 盗版书赔 15 亿` —— 两件完全不同的事,但都含 "Anthropic"、标题都短)
+    **两个分布是重叠的**,降到 0.45 会把招股书和版权赔偿合并成一件。
+    更糟的是相似度**根本抓不到**改写型转载:zhipu 两条同为「收购中科加禾」只有 **0.04**,
+    google 的 Q2 财报四条低到 **0.06** —— 靠标题这条路走不通。
+    所以这里只保守合并**近乎逐字**的转载;剩下的靠 `EVENTS_PER_CAT`「每类别取代表 + 如实计数」
+    来控制展示量,**不假装能识别同一事件**。
     """
     A, B = _bigrams(_norm_title(a)), _bigrams(_norm_title(b))
     if not A or not B:
@@ -254,20 +262,34 @@ def _aggregate(rows, chunk):
                 continue
             kept.append(i)
 
+        # **每类别只留 EVENTS_PER_CAT 条代表**,但把该类别的总数如实报出来。
+        # 标题相似度抓不到改写型转载(zhipu 两条「收购中科加禾」重叠仅 0.04),再降阈值又会误合
+        # (见 _same_story)。所以不假装能识别同一事件——限制展示量 + 计数,让被截掉的可见。
+        counts, reps = {}, []
+        for i in kept:
+            cat = seen[i][0]
+            counts[cat] = counts.get(cat, 0) + 1
+            if counts[cat] <= EVENTS_PER_CAT:
+                reps.append(i)
+
         covered = sum(1 for i in ids if i in seen)
-        if kept:
+        if reps:
             reason = " · ".join(f"{i}[{seen[i][0]}]" + (f":{seen[i][1]}" if seen[i][1] else "")
-                                for i in kept[:4])
+                                for i in reps[:4])
+            more = {c: n for c, n in counts.items() if n > EVENTS_PER_CAT}
+            if more:
+                reason += "(" + "、".join(f"{c} 共 {n} 条,只列代表" for c, n in sorted(more.items())) + ")"
             if dropped:
-                reason += f"(另 {dropped} 条为同一事件的转载,已合并)"
+                reason += f"(另 {dropped} 条为近乎逐字的转载,已合并)"
         else:
             reason = f"{len(ids)} 条事件逐条分类后无一命中白名单"
         if covered < len(ids):
             reason += f"(注:模型只覆盖 {covered}/{len(ids)} 条,未覆盖的按方向价保守处理)"
         out[it["slug"]] = {"verdict": "substantive" if kept else "directional",
                            "reason": reason[:400],
-                           "key_event_ids": kept[:8],
-                           "categories": sorted({seen[i][0] for i in kept}),
+                           "key_event_ids": reps[:8],
+                           "categories": sorted(counts),
+                           "category_counts": dict(sorted(counts.items())),
                            "merged_duplicates": dropped,
                            "coverage": f"{covered}/{len(ids)}"}
     return out
@@ -477,6 +499,23 @@ def _selftest():
        "same_story:浓缩版标题能识别为同一件事(重叠系数,不是 Jaccard)")
     ok(not _same_story("欧盟处罚谷歌8.9亿欧元", "SpaceX“星舰”完成第13次试飞"),
        "same_story:不相干的两条不会被误合")
+    # 阈值不能降:这两条**真实**标题是不同的事(招股书 vs 版权赔偿),实测重叠 0.48。
+    # 若把 thresh 降到 0.45 去够改写型转载,就会把它们误合 —— 这条断言把阈值钉死。
+    ok(not _same_story("Anthropic提交招股书，冲击万亿美元市值",
+                       "自称安全AI却偷偷下载700万本盗版书Anthropic要赔15亿美元"),
+       "same_story:阈值不得降到 0.45——会把『招股书』与『版权赔偿』误合(实测 0.48)")
+
+    # 每类别取代表 + 如实计数(标题相似度抓不到改写型转载:zhipu 两条「收购中科加禾」仅 0.04)
+    # 标题必须彼此**真正不同**,否则会先被 _same_story 合并掉,测不到「取代表」这一层。
+    many = [{"slug": "m", "events": [
+        {"id": "m-0", "title": "欧盟依据数字市场法处罚该公司8.9亿欧元"},
+        {"id": "m-1", "title": "美法官批准15亿美元版权和解协议"},
+        {"id": "m-2", "title": "FCC祭出禁令追溯封杀套壳无人机厂商"},
+        {"id": "m-3", "title": "证监会就信息披露问题启动立案调查"}]}]
+    mm = _aggregate([{"id": f"m-{i}", "k": "REG", "why": "处罚"} for i in range(4)], many)
+    ok(len(mm["m"]["key_event_ids"]) == EVENTS_PER_CAT, "aggregate:每类别最多留 EVENTS_PER_CAT 条代表")
+    ok(mm["m"]["category_counts"] == {"REG": 4}, "aggregate:category_counts 记录该类别真实总数")
+    ok("REG 共 4 条,只列代表" in mm["m"]["reason"], "aggregate:被截掉的必须在 reason 里可见")
 
     # 漏答必须**看得见**,不能静默变 directional
     part = _aggregate([{"id": "x-1", "k": "D", "why": ""}], chunk)
@@ -511,6 +550,15 @@ def _selftest():
     for kw, name in [("SIGGRAPH", "nvidia 展会+规格"), ("网络回滚", "microsoft 运维动作"),
                      ("HarmonyOS升级", "huawei 版本升级"), ("2027年1月", "hermes 未来时")]:
         ok(kw in SYSTEM, f"prompt:第 5 次的假阳性进了 D 对照例 —— {name}")
+
+    # ↓ 第 6 次:LAUNCH 是唯一剩下的漏斗口,排除项必须写死在定义里 ↓
+    for kw in ("定档", "版本升级", "产品线扩展", "配件与周边"):
+        ok(kw in CATS["LAUNCH"], f"白名单:LAUNCH 定义里写死排除项 —— {kw}")
+    ok("主力旗舰" in CATS["LAUNCH"] and "当下已可用" in CATS["LAUNCH"],
+       "白名单:LAUNCH 必须是主力旗舰 且 当下已可用")
+    for kw, name in [("7月28日", "apple 定档=未来时"), ("更廉价模型", "google 产品线扩展"),
+                     ("扫拖机器人", "dji 周边品类")]:
+        ok(kw in SYSTEM, f"prompt:第 6 次的 LAUNCH 假阳性进了 D 对照例 —— {name}")
 
     # ↓ 锁住第 3/4 次真跑的误判;假阴性最危险 ↓
     ok("已递交" in SYSTEM and "已下达" in SYSTEM,
