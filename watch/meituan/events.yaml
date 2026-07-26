@@ -417,3 +417,109 @@
   source_type: media
   note: "LLM 预分类建议(high):美团被监管部门约谈，涉及票务平台合规问题，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-15-meituan-027
+  date: 2026-07-15
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "让AI走进物理世界，清华大学和美团开启新一期合作"
+  quote: "让AI走进物理世界，清华大学和美团开启新一期合作"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260717250004882
+  fetched_at: "2026-07-26T05:43:01Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):美团与清华合作AI项目，体现技术战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-10-meituan-028
+  date: 2026-07-10
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "为家庭提供可信赖的口腔健康机构与医师，美团发布首届“司南口腔榜”"
+  quote: "为家庭提供可信赖的口腔健康机构与医师，美团发布首届“司南口腔榜”"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260714187009210
+  fetched_at: "2026-07-26T05:43:01Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):美团发布口腔健康榜单，拓展医疗健康业务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-06-meituan-029
+  date: 2026-07-06
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团 LongCat-2.0 开源，同步开放国产卡推理代码"
+  quote: "美团 LongCat-2.0 开源，同步开放国产卡推理代码"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260706216009547
+  fetched_at: "2026-07-26T05:43:01Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):开源LongCat-2.0模型，国产芯片推理，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-06-meituan-030
+  date: 2026-07-06
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "紧急行动！美团驰援广西受灾地区"
+  quote: "紧急行动！美团驰援广西受灾地区"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260707224002170
+  fetched_at: "2026-07-26T05:43:01Z"
+  lens_map: [origin, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):企业社会责任，灾难救援行动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-02-meituan-031
+  date: 2026-07-02
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "从7省试点到推向全国，“职业伤害保障网”健全新就业群体社保制度"
+  quote: "从7省试点到推向全国，“职业伤害保障网”健全新就业群体社保制度"
+  quote_type: title
+  url: https://about.meituan.com/news#NN26070223300637X
+  fetched_at: "2026-07-26T05:43:01Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):职业伤害保障从试点推向全国，社保制度创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-01-meituan-032
+  date: 2026-07-01
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团骑手高丰获评全国优秀共产党员 系外卖行业首次"
+  quote: "美团骑手高丰获评全国优秀共产党员 系外卖行业首次"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260701168007973
+  fetched_at: "2026-07-26T05:43:01Z"
+  lens_map: [origin, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):骑手获全国优秀共产党员，行业首次，品牌形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-06-30-meituan-033
+  date: 2026-06-30
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布"
+  quote: "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260630164005904
+  fetched_at: "2026-07-26T05:43:01Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):万亿参数大模型LongCat-2.0发布，旗舰AI产品重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
