@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-07-26T05:43:01Z",
+  "window_days": 3,
+  "candidates": [
+    {
+      "key": "450cd9af0fe9",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-07-20",
+      "quote": "美团上线“本科专送”“硕士优送”“博士尊享”配送服务？官方客服回应",
+      "title": "美团上线“本科专送”“硕士优送”“博士尊享”配送服务？官方客服回应",
+      "url": "https://about.meituan.com/news#NN260721186006468",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-26T05:43:01Z"
+    },
+    {
+      "key": "9000ec22d6ca",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-07-15",
+      "quote": "让AI走进物理世界，清华大学和美团开启新一期合作",
+      "title": "让AI走进物理世界，清华大学和美团开启新一期合作",
+      "url": "https://about.meituan.com/news#NN260717250004882",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-26T05:43:01Z"
+    },
+    {
+      "key": "13bdd359b5b1",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-07-10",
+      "quote": "为家庭提供可信赖的口腔健康机构与医师，美团发布首届“司南口腔榜”",
+      "title": "为家庭提供可信赖的口腔健康机构与医师，美团发布首届“司南口腔榜”",
+      "url": "https://about.meituan.com/news#NN260714187009210",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-26T05:43:01Z"
+    },
+    {
+      "key": "eb53d2ece7e7",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-07-06",
+      "quote": "美团 LongCat-2.0 开源，同步开放国产卡推理代码",
+      "title": "美团 LongCat-2.0 开源，同步开放国产卡推理代码",
+      "url": "https://about.meituan.com/news#NN260706216009547",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-26T05:43:01Z"
+    },
+    {
+      "key": "1d7fdf680d28",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-07-06",
+      "quote": "紧急行动！美团驰援广西受灾地区",
+      "title": "紧急行动！美团驰援广西受灾地区",
+      "url": "https://about.meituan.com/news#NN260707224002170",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-26T05:43:01Z"
+    },
+    {
+      "key": "a78c7e72a2ec",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-07-02",
+      "quote": "从7省试点到推向全国，“职业伤害保障网”健全新就业群体社保制度",
+      "title": "从7省试点到推向全国，“职业伤害保障网”健全新就业群体社保制度",
+      "url": "https://about.meituan.com/news#NN26070223300637X",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-26T05:43:01Z"
+    },
+    {
+      "key": "bf13cc8ed819",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-07-01",
+      "quote": "美团骑手高丰获评全国优秀共产党员 系外卖行业首次",
+      "title": "美团骑手高丰获评全国优秀共产党员 系外卖行业首次",
+      "url": "https://about.meituan.com/news#NN260701168007973",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-26T05:43:01Z"
+    },
+    {
+      "key": "91ab4f17d2e1",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-06-30",
+      "quote": "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布",
+      "title": "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布",
+      "url": "https://about.meituan.com/news#NN260630164005904",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-07-26T05:43:01Z"
+    }
+  ]
+}
