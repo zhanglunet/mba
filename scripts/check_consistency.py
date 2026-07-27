@@ -43,6 +43,28 @@ def check_version_alignment():
                        f"—— 每份 FRESH 报告会拷这个模板,必须同步(改 front-matter 时一起改)。")
     return True, f"SKILL version == panel 模板 mba_version == {fm.group(1)}"
 
+def check_judge_names_cn():
+    """评委名单必须**每位都有中文姓名**(judges.json 的 name_cn)。
+
+    2026-07-26 起:名单此前只有 slug 与 `xuxin-perspective` 这类内部名,中文读者看不出是谁。
+    中文名真源是 `panels/*.yaml` 的 `display_name_cn`,由 build_agents_api 注入。
+    **新增评委若忘了在 panel 里写中文名,这里报红** —— 否则会静默地少一位。
+    """
+    api = rd("site/api/judges.json")
+    if api is None:
+        return False, "site/api/judges.json 不存在(先跑 build_agents_api.py)"
+    try:
+        items = json.loads(api)["items"]
+    except (ValueError, KeyError) as e:
+        return False, f"解析 judges.json 失败:{e}"
+    missing = [j.get("slug", "?") for j in items if not (j.get("name_cn") or "").strip()]
+    if missing:
+        return False, (f"{len(missing)} 位评委缺中文姓名:{', '.join(missing[:6])} "
+                       f"—— 在 metric-brand-auditor/panels/*.yaml 给该 slug 补 display_name_cn,"
+                       f"再跑 build_agents_api.py。")
+    return True, f"评委名单中文姓名齐全({len(items)} 位全有 name_cn)"
+
+
 def check_system_numbers():
     """「系统如何运作」页与文档里手写的数字,必须 == site/api/index.json 的 counts。
 
@@ -325,6 +347,7 @@ CHECKS = [
     ("产业维度", check_industries),
     ("晚餐亮点对齐", check_dinner_home),
     ("系统页数字", check_system_numbers),
+    ("评委中文名", check_judge_names_cn),
 ]
 
 def main():

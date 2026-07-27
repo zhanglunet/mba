@@ -813,6 +813,8 @@ asiainfo/zhipu 路径未定。**没配 = 保持原行为,无回归。**
 
 ### ② 用户侧验证:本地自托管 RSSHub(**用户动作**,零成本一条命令)
 
+> **逐步操作手册(含隧道、加固、排错、维护)见 [`docs/27`](27-rsshub-local-setup.md)**;下面是速览。
+
 ```bash
 docker run -d --name rsshub -p 1200:1200 diygod/rsshub
 # 微博(公开主页,通常无需 cookie;家庭宽带 IP 一般能过访客系统):

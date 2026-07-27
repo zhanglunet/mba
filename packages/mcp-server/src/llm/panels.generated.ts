@@ -41,7 +41,8 @@ export const GENERATED_PANELS: Record<string, GeneratedPanel> = {
       "zhanglan",
       "luoyonghao",
       "yangjianhui",
-      "zhongshanshan"
+      "zhongshanshan",
+      "xuxin"
     ]
   },
   "cross-border": {
