@@ -35,8 +35,25 @@ FOUNDERS_DIR = os.path.join(ROOT, "founders")
 LENSES = {"origin", "category", "leverage", "identity", "signal"}
 
 
+INVESTORS_DIR = os.path.join(ROOT, "investors")
+
+
 def founder_exists(slug):
     return os.path.isfile(os.path.join(FOUNDERS_DIR, f"{slug}.yaml"))
+
+
+def investor_exists(slug):
+    return os.path.isfile(os.path.join(INVESTORS_DIR, f"{slug}.yaml"))
+
+
+def participant_exists(slug):
+    """晚餐参与者可以是**创始人**(founders/<brand>.yaml)或**投资人**(investors/<slug>.yaml)。
+
+    2026-07-26 放宽:此前只认创始人,于是「徐新 × 刘强东」这类组合做不了 —— 投资人不隶属
+    某个被审品牌,塞进 founders 就得伪造 brand。加 investors 维度后,两类档案都算数;
+    slug 撞名由 validate_investors 侧拦住(否则按 slug 找参与者会指错人)。
+    """
+    return founder_exists(slug) or investor_exists(slug)
 
 
 def canonical_stem(brands):
@@ -60,8 +77,9 @@ def validate_collab(stem, data, seen_stems, check_founder=True):
         errs.append(f"{ctx0}: 文件名应为字母序 `{canonical_stem(brands)}`(brands 的规范化连接)")
     if check_founder:
         for b in brands:
-            if not founder_exists(b):
-                errs.append(f"{ctx0}: brand `{b}` 无对应 founders/{b}.yaml(晚餐双方都须有创始人档案)")
+            if not participant_exists(b):
+                errs.append(f"{ctx0}: 参与者 `{b}` 既无 founders/{b}.yaml 也无 investors/{b}.yaml "
+                            f"(晚餐双方都须有创始人或投资人档案)")
     if stem in seen_stems:
         errs.append(f"{ctx0}: 晚餐 `{stem}` 重复")
     seen_stems.add(stem)
@@ -195,10 +213,29 @@ def selftest():
     if not fn:
         failed.append("文件名非规范序应抓,实得 0")
 
-    # founder 不存在应抓(打开 check_founder)
+    # 参与者档案不存在应抓(打开 check_founder)
     miss = validate_collab("aa--bb", ok(), set(), check_founder=True)
     if not miss:
-        failed.append("founder 不存在应抓,实得 0")
+        failed.append("参与者档案不存在应抓,实得 0")
+
+    # **投资人也算合法参与者**(2026-07-26 放宽):否则"允许创始人×投资人"就是句空话。
+    # 用真实存在的 investors/*.yaml 与 founders/*.yaml 各取一个 slug 组一场。
+    import glob as _glob
+    inv = sorted(os.path.splitext(os.path.basename(x))[0]
+                 for x in _glob.glob(os.path.join(INVESTORS_DIR, "*.yaml")))
+    fnd = sorted(os.path.splitext(os.path.basename(x))[0]
+                 for x in _glob.glob(os.path.join(FOUNDERS_DIR, "*.yaml")))
+    if inv and fnd:
+        pair = sorted([inv[0], fnd[0]])
+        mixed = ok()
+        mixed["brands"] = pair
+        for c in mixed["courses"]:
+            for t in c["exchange"]:
+                t["who"] = pair[0]
+        got_mixed = validate_collab("--".join(pair), mixed, set(), check_founder=True)
+        bad = [e for e in got_mixed if "既无" in e]
+        if bad:
+            failed.append(f"投资人应算合法参与者,却被判缺档案:{bad[0]}")
 
     if failed:
         print("validate_collabs --selftest: ❌", file=sys.stderr)

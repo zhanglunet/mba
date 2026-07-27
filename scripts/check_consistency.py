@@ -43,6 +43,21 @@ def check_version_alignment():
                        f"—— 每份 FRESH 报告会拷这个模板,必须同步(改 front-matter 时一起改)。")
     return True, f"SKILL version == panel 模板 mba_version == {fm.group(1)}"
 
+def check_investors():
+    """投资人维度自洽:委托 validate_investors.py(schema + provenance + 关系标注)。
+
+    2026-07-26 新增。`founders/` 是**按品牌**建索引的,投资人不隶属被审品牌、放不进去,
+    故单开 `investors/`(按人建索引,slug == perspective slug)。
+    """
+    script = os.path.join(ROOT, "scripts", "investor-tools", "validate_investors.py")
+    if not os.path.exists(script):
+        return True, "investors 校验器不存在(功能未启用,跳过)"
+    r = subprocess.run([sys.executable, script], capture_output=True, text=True)
+    if r.returncode != 0:
+        return False, "投资人维度校验未通过:" + (r.stderr or r.stdout).strip().splitlines()[-1][:150]
+    return True, (r.stdout or "").strip().replace("validate_investors: ✅ ", "") or "投资人维度自洽"
+
+
 def check_judge_names_cn():
     """评委名单必须**每位都有中文姓名**(judges.json 的 name_cn)。
 
@@ -344,6 +359,7 @@ CHECKS = [
     ("panorama 名单", check_panorama_roster),
     ("创始人维度", check_founders),
     ("创始人晚餐", check_collabs),
+    ("投资人维度", check_investors),
     ("产业维度", check_industries),
     ("晚餐亮点对齐", check_dinner_home),
     ("系统页数字", check_system_numbers),

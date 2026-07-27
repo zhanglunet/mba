@@ -1,0 +1,95 @@
+# 投资人档案 —— 徐新(今日资本)
+#
+# 与 founders/<brand>.yaml 的区别:**founders 按品牌建索引**(一个已发布品牌一个文件),
+# 投资人不隶属某个被审品牌,故 **investors 按人建索引**(slug == perspective slug)。
+# 校验:scripts/investor-tools/validate_investors.py(schema + provenance + 关系必须标「分析:」)。
+#
+# 反捏造:career/portfolio 每条都必须带 evidence(可核验来源);relation 是**标注分析**、
+# 不冒充本人原话,故强制以「分析:」开头。她本人的逐字引语只存在于
+# perspectives/xuxin-perspective/references/research/,不在本文件里编造。
+
+slug: xuxin
+perspective_slug: xuxin
+
+investor:
+  name_cn: 徐新
+  name_en: Kathy Xu
+  firm_cn: 今日资本
+  firm_en: Capital Today
+  role: 创始人 / 总裁
+  status: 现任
+
+career:
+  - period: 1988-1995
+    milestone: 南京大学外语系毕业(1988);早年在中国银行工作,后赴普华永道从事审计
+    evidence: 21财经《今日资本徐新:伟大的公司不多,一定要长期持有》(南京大学 120 周年校友直播访谈,2022-05-24) m.21jingji.com/article/20220524/herald/f34557f814c06676252df6c437f88bf0.html
+    lens:
+      - origin
+
+  - period: 1995-2005
+    milestone: 加入霸菱投资(Baring Private Equity Asia)开启风险投资生涯;期间以 500 万美元投资网易,成为其早期机构股东
+    evidence: 21财经 同上(2022-05-24);21财经《3亿美元,徐新拿下字节老股》(2025-11-26) www.21jingji.com/article/20251126/herald/74ca7024d761a7b5c628e2328678225e.html
+    lens:
+      - origin
+      - leverage
+
+  - period: '2005'
+    milestone: 离开霸菱、创办今日资本(Capital Today),专注中国市场的消费与零售早期投资
+    evidence: 21财经《今日资本徐新:伟大的公司不多,一定要长期持有》(2022-05-24) m.21jingji.com/article/20220524/herald/f34557f814c06676252df6c437f88bf0.html
+    lens:
+      - origin
+      - category
+
+  - period: '2006'
+    milestone: 投资京东 —— 刘强东当时只求 200 万美元,她给了 1000 万美元;后在京东与对手打价格战的关键期提供 5 次过桥贷款
+    evidence: 21财经 同上(2022-05-24,访谈中她本人回顾该决策与过桥贷款);逐字引语见 perspectives/xuxin-perspective/references/research/
+    lens:
+      - leverage
+      - signal
+
+  - period: 2018-2022
+    milestone: 公开复盘两次「认知边界」误判 —— 早期见张一鸣时嫌 70 亿美元估值贵而错过字节;因不了解低线市场错过拼多多,遂带团队下乡蚌埠固镇实地住访
+    evidence: 格隆汇访谈与 21财经 南大校友访谈(2022-05-24)两处均有其本人自述;逐字引语见 perspectives/xuxin-perspective/references/research/02-conversations.md §A/§E
+    lens:
+      - identity
+      - signal
+
+  - period: '2025'
+    milestone: 今日资本以近 3 亿美元从中银集团手中竞得字节跳动老股(7 家参与竞拍),按成交价倒推字节整体估值约 4800 亿美元
+    evidence: 21财经《3亿美元,徐新拿下字节老股》(2025-11-26) www.21jingji.com/article/20251126/herald/74ca7024d761a7b5c628e2328678225e.html;新浪财经(2025-11-25) finance.sina.com.cn/roll/2025-11-25/doc-infyqqee5816775.shtml
+    lens:
+      - signal
+      - identity
+
+# 代表投资案例。brand 若命中 MBA 发布白名单会在页面上互链;不在白名单的照常记录(她的版图远大于被审品牌)。
+portfolio:
+  - brand: meituan
+    year: '2014'
+    note: 早期投资美团;她在南大访谈中把京东与美团并列为最成功的两个案例
+    evidence: 21财经《今日资本徐新:伟大的公司不多,一定要长期持有》(2022-05-24) m.21jingji.com/article/20220524/herald/f34557f814c06676252df6c437f88bf0.html
+  - brand: 京东
+    year: '2006'
+    note: 1000 万美元投资(创始人只求 200 万),今日资本成名之战
+    evidence: 21财经《3亿美元,徐新拿下字节老股》(2025-11-26) www.21jingji.com/article/20251126/herald/74ca7024d761a7b5c628e2328678225e.html
+  - brand: 网易
+    year: '2000'
+    note: 互联网泡沫期间以 500 万美元入股
+    evidence: 21财经《3亿美元,徐新拿下字节老股》(2025-11-26) www.21jingji.com/article/20251126/herald/74ca7024d761a7b5c628e2328678225e.html
+  - brand: 字节跳动
+    year: '2025'
+    note: 以近 3 亿美元竞得老股(非早期轮),她称错过字节是自己的认知边界
+    evidence: 21财经(2025-11-26) www.21jingji.com/article/20251126/herald/74ca7024d761a7b5c628e2328678225e.html
+
+# 关系解读:**标注分析**,不是她本人原话,故每条以「分析:」开头(与 founders 同一硬约束)。
+relation:
+  origin: 分析:审计出身(中行 + 普华永道)让她把"看财报、翻年报"当基本功;她把研究历史赢家的传记与年报列为方法论第一步,这与外语系 + 审计的复合背景一致。
+  category: 分析:她把品类判断放在赛道层面 —— 先确认品类对路,再找该品类的先行者重仓,而非在同一品类里分散下注。
+  leverage: 分析:她的杠杆是"给到远超对方开口的钱",让被投公司舍命狂奔占据领先位置;京东 200 万变 1000 万是这一手法的原型。
+  identity: 分析:她公开复盘自己错过字节与拼多多,并把原因归到"认知之外的钱赚不到",这种把盲区讲出来的做法本身构成其公众身份的一部分。
+  signal: 分析:她对"心智占领"给出可观测口径(城市 20% 人口天天看到 → 成为品牌;50% → 很牛的品牌),使品牌强度成为可验证的信号而非感觉。
+
+sources:
+  - 21财经《今日资本徐新:伟大的公司不多,一定要长期持有》(南京大学 120 周年校友直播访谈,2022-05-24) —— 一手:含其第一人称长段自述 https://m.21jingji.com/article/20220524/herald/f34557f814c06676252df6c437f88bf0.html
+  - 21财经《3亿美元,徐新拿下字节老股》(2025-11-26) —— 二手报道 https://www.21jingji.com/article/20251126/herald/74ca7024d761a7b5c628e2328678225e.html
+  - 新浪财经《徐新豪掷3亿补票?字节跳动4800亿估值登顶全球非上市企业第二》(2025-11-25) —— 二手报道 https://finance.sina.com.cn/roll/2025-11-25/doc-infyqqee5816775.shtml
+  - 逐字引语与心智模型见 perspectives/xuxin-perspective/references/research/01-06.md(前瞻大咖自述 / 格隆汇访谈 / 南大校友访谈三源)

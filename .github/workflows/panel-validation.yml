@@ -46,7 +46,12 @@ jobs:
         run: |
           python scripts/founder-tools/validate_founders.py
           python scripts/founder-tools/validate_founders.py --selftest
-      - name: 创始人晚餐校验(collabs/*.yaml schema + 双方均有创始人档案 + 诚实盒 + 自测)
+      - name: 投资人维度校验(investors/*.yaml schema + 履历带 provenance + 关系标注「分析:」+ 自测)
+        run: |
+          python scripts/investor-tools/validate_investors.py
+          python scripts/investor-tools/validate_investors.py --selftest
+
+      - name: 创始人晚餐校验(collabs/*.yaml schema + 双方均有创始人或投资人档案 + 诚实盒 + 自测)
         run: |
           python scripts/collab-tools/validate_collabs.py
           python scripts/collab-tools/validate_collabs.py --selftest
