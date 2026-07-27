@@ -110,7 +110,7 @@ CI 上跑的硬 gate(本地同一套命令即 CI 镜像,见 `CLAUDE.md`):
 | `check_structure.py` / `quality_check.py` | 43 套评委 SKILL 的结构与质量(全量 6/6) |
 | `check_self_conflict.py` | 每套 SKILL 声明自身 `--panel-drop`,利益回避不靠自觉 |
 | `validate_watch.py` | 舆情 schema + 适用性矩阵对齐发布白名单;判断字段恒标 `model-judged` |
-| `check_consistency.py` | 12 格一致性:版本对齐、docs 索引、评委数、工具数、维度口径、产业、首页卡片…… |
+| `check_consistency.py` | 17 格一致性:版本对齐、docs 索引、评委数、工具数、维度口径、产业、首页卡片…… |
 | `validate_report.py` / `check_report_integrity.py` | 报告分数自洽(矩阵列和 == 声明总分)、HTML 与 md 不漂移 |
 
 反捏造的具体纪律(引号内必须是源站原话、中文按去空格匹配、provenance 如实标注)见 `CLAUDE.md` 坑 #3。

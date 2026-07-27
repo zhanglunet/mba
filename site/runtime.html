@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MBA 在哪里运行 · 完全线上运行 — Metric Brand Auditor</title>
+<meta name="description" content="MBA 的日常运行 100% 在云端:每日舆情发现、预分类、入库、站点部署、日报盘点全由 GitHub Actions 与 Cloudflare Pages 承担,零本机依赖。附:可选的自托管社媒线完整接入指南(当前暂缓)。" />
+<meta property="og:title" content="MBA 在哪里运行 · 完全线上运行" />
+<meta property="og:description" content="零本机依赖的云端闭环,与一条需要常开机器的可选社媒线 —— 以及为什么现在不开它。" />
+<meta property="og:url" content="https://mbabrand.com/runtime.html" />
+<style>
+  :root {
+    --ink: #111;
+    --paper: #faf8f3;
+    --muted: #6b6760;
+    --rule: #1a1a1a;
+    --accent: #c1440e;
+    --card: #fff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 840px; margin: 0 auto; padding: 56px 28px 80px; }
+  header {
+    border-bottom: 2px solid var(--rule);
+    padding-bottom: 18px; margin-bottom: 30px;
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 22px; }
+  .mark a { color: inherit; text-decoration: none; }
+  .mark .dot { color: var(--accent); }
+  nav a { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); margin-left: 18px; }
+  nav a:hover, nav a[aria-current] { color: var(--accent); border-color: var(--accent); }
+
+  h1 { font-size: clamp(28px, 4.4vw, 44px); line-height: 1.16; margin: 0 0 12px; font-weight: 800; letter-spacing: -0.01em; }
+  .sub { font-size: 17px; color: var(--muted); margin: 0 0 28px; font-style: italic; }
+  .lead { font-size: 18px; margin: 0 0 28px; }
+
+  h2 { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 22px; margin: 48px 0 6px; padding-top: 14px; border-top: 1px solid var(--rule); letter-spacing: -0.01em; }
+  h2 .n { color: var(--accent); font-weight: 800; margin-right: 10px; }
+  h3 { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 16px; margin: 26px 0 6px; }
+  p { margin: 0 0 14px; }
+  .en { color: var(--muted); font-size: 14px; font-style: italic; }
+  strong { color: var(--ink); }
+  code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.86em; background: #f0ece3; padding: 1px 6px; border-radius: 4px; }
+
+  .toc { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 18px 22px; margin: 0 0 36px; }
+  .toc h3 { margin: 0 0 10px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .toc ol { margin: 0; padding-left: 20px; }
+  .toc li { margin: 4px 0; }
+  .toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid #d8d2c6; }
+  .toc a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .diagram { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 22px 18px; margin: 18px 0 8px; overflow-x: auto; }
+  .diagram .mermaid { display: flex; justify-content: center; min-width: 100%; }
+  .caption { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin: 0 0 24px; text-align: center; }
+
+  table { border-collapse: collapse; width: 100%; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; margin: 14px 0 22px; }
+  th, td { border: 1px solid #d8d2c6; padding: 9px 12px; text-align: left; vertical-align: top; }
+  th { background: #f0ece3; font-weight: 700; }
+  tbody tr:nth-child(even) { background: #fbf9f4; }
+
+  ul.tight { margin: 8px 0 18px; padding-left: 22px; }
+  ul.tight li { margin: 5px 0; }
+
+  .lenses { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 14px 0 20px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+  .lens { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; background: var(--card); }
+  .lens .t { font-weight: 700; font-size: 14px; }
+  .lens .d { color: var(--muted); font-size: 13px; margin-top: 4px; line-height: 1.45; }
+
+  .blocks { counter-reset: blk; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14px; margin: 14px 0 20px; }
+  .blk { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e7e1d5; }
+  .blk:last-child { border-bottom: none; }
+  .blk .num { flex: 0 0 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+  .blk .bd b { display: block; }
+  .blk .bd span { color: var(--muted); }
+
+  .callout { border-left: 4px solid var(--accent); background: #fff7ed; padding: 12px 16px; margin: 16px 0 22px; font-size: 15px; border-radius: 0 6px 6px 0; }
+
+  .hack-banner { background: #fff7ed; border: 2px solid var(--accent); color: var(--ink); padding: 13px 18px; font-size: 13.5px; line-height: 1.55; margin: 0 0 30px; border-radius: 4px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+  .hack-banner .tag { display: inline-block; background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; margin-right: 8px; letter-spacing: 0.06em; }
+
+  footer { margin-top: 56px; padding-top: 18px; border-top: 2px solid var(--rule); color: var(--muted); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+  @media (max-width: 560px) { .lenses { grid-template-columns: 1fr; } }
+
+  /* ── logo glyph(五镜头雷达,规范见 /logo-design.html)── */
+  .mark { display: inline-flex; align-items: center; gap: 10px; }
+  .mark > a, a.mark-lockup { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+  .mark-glyph { display: block; flex-shrink: 0; }
+  .mark-glyph .radar-data { stroke-dasharray: 100; }
+  .mark-glyph .radar-dot { transform-box: fill-box; transform-origin: center; transition: transform .25s cubic-bezier(.2,1.4,.4,1); }
+  .mark:hover .radar-dot { transform: scale(1.35); }
+  @media (prefers-reduced-motion: no-preference) {
+    .mark-glyph .radar-data { animation: mba-draw 1.1s cubic-bezier(.6,0,.25,1) .2s backwards; }
+    .mark-glyph .radar-dot { animation: mba-pop .4s cubic-bezier(.2,1.6,.4,1) 1.2s backwards; }
+  }
+  @keyframes mba-draw { from { stroke-dashoffset: 100; fill-opacity: 0; } to { stroke-dashoffset: 0; fill-opacity: 1; } }
+  @keyframes mba-pop { from { transform: scale(0); } to { transform: scale(1); } }
+
+  /* ── 本页专用:状态横幅 / 折叠步骤 ── */
+  .status { border: 2px solid var(--rule); background: var(--card); border-radius: 8px; padding: 16px 20px; margin: 0 0 30px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 14.5px; line-height: 1.6; }
+  .status .pill { display: inline-block; background: #1c7c3f; color: #fff; padding: 3px 12px; border-radius: 999px; font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; margin-right: 10px; vertical-align: 2px; }
+  .status .pill.off { background: var(--muted); }
+  .status p { margin: 10px 0 0; }
+
+  details.steps { border: 1px solid var(--rule); border-radius: 8px; background: var(--card); margin: 16px 0 0; }
+  details.steps + details.steps { margin-top: 10px; }
+  details.steps > summary { cursor: pointer; padding: 14px 18px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 700; font-size: 15px; list-style: none; }
+  details.steps > summary::-webkit-details-marker { display: none; }
+  details.steps > summary::before { content: "\25B8  "; color: var(--accent); font-weight: 800; }
+  details.steps[open] > summary::before { content: "\25BE  "; }
+  details.steps > summary:hover { color: var(--accent); }
+  details.steps .body { padding: 14px 18px 16px; border-top: 1px solid #e7e1d5; font-size: 15px; }
+  details.steps .body p:last-child { margin-bottom: 0; }
+  pre.cmd { background: #f0ece3; border-radius: 6px; padding: 12px 14px; overflow-x: auto; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; line-height: 1.7; margin: 12px 0; }
+  pre.cmd code { background: none; padding: 0; font-size: inherit; }
+</style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='12'%20fill='%23faf8f3'/%3E%3Cpolygon%20points='32,7%2056.7,25%2047.3,54%2016.7,54%207.3,25'%20fill='none'%20stroke='%23111'%20stroke-width='2.5'%20stroke-linejoin='round'/%3E%3Cpolygon%20points='32,8.6%2048.3,27.7%2043.9,49.4%2023.6,44.6%2014.2,27.2'%20fill='%23c1440e'%20fill-opacity='.18'%20stroke='%23c1440e'%20stroke-width='3'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='32'%20cy='8.6'%20r='4'%20fill='%23c1440e'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" role="img" aria-label="MBA — Metric Brand Auditor"><a href="/" class="mark-lockup"><svg class="mark-glyph" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true" focusable="false"><defs><linearGradient id="mbaGradMk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c1440e" stop-opacity=".30"/><stop offset="1" stop-color="#c1440e" stop-opacity=".06"/></linearGradient></defs><polygon points="32,7 56.7,25 47.3,54 16.7,54 7.3,25" fill="none" stroke="#111" stroke-width="2" stroke-linejoin="round"/><g fill="none" stroke="#111" opacity=".12" stroke-width="1"><polygon points="32,20 44.4,29 39.6,43.5 24.4,43.5 19.6,29" stroke-linejoin="round"/><path d="M32 33V7M32 33 56.7 25M32 33 47.3 54M32 33 16.7 54M32 33 7.3 25"/></g><polygon class="radar-data" pathLength="100" points="32,8.6 48.3,27.7 43.9,49.4 23.6,44.6 14.2,27.2" fill="url(#mbaGradMk)" stroke="#c1440e" stroke-width="2.5" stroke-linejoin="round"/><circle class="radar-dot" cx="32" cy="8.6" r="3.2" fill="#c1440e" stroke="#faf8f3" stroke-width="1.5"/></svg><span>MBA<span class="dot">.</span></span></a></div>
+      <nav>
+        <a href="/">品牌监控</a>
+        <a href="/watch/">舆情信号</a>
+        <a href="/system.html">系统如何运作</a>
+        <a href="/docs.html" aria-current="page">文档</a>
+        <a href="https://github.com/zhanglunet/mba">GitHub</a>
+      </nav>
+    </header>
+
+    <h1>MBA 在哪里运行</h1>
+    <p class="sub">Runtime &amp; hosting — 云端全自动闭环,与一条需要常开机器的可选支线</p>
+
+    <div class="status">
+      <span class="pill">当前状态</span><b>完全线上运行,零本机依赖。</b>
+      <p>每日舆情发现、AI 预分类、入库、首页更新、站点部署、日报盘点、全部门禁 ——
+      都跑在 <b>GitHub Actions</b> 与 <b>Cloudflare Pages</b> 上。
+      关掉所有本地机器,系统照常出结果。</p>
+      <p><span class="pill off">暂缓</span>自托管社媒线(微博官微直采)<b>已实测打通但暂不接线</b> ——
+      它要求一台 24×7 醒着的机器,与"零本机依赖"冲突。管道与手册就位,想开随时两步接上,
+      见<a href="#optional" style="color:var(--accent);">第 4 节</a>。</p>
+    </div>
+
+    <p class="lead">
+      这一页回答一个很实际的问题:<strong>这套系统到底靠什么在转,断了谁会停</strong>。
+      系统<em>怎么</em>打分在<a href="/system.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">系统如何运作</a>那一页。
+    </p>
+
+    <div class="toc">
+      <h3>目录</h3>
+      <ol>
+        <li><a href="#cloud">云端跑什么:一张时刻表</a></li>
+        <li><a href="#not">哪些事不在云上(诚实边界)</a></li>
+        <li><a href="#why">社媒线为什么暂缓</a></li>
+        <li><a href="#optional">可选支线:自托管 RSSHub 完整接入指南</a></li>
+        <li><a href="#when">什么时候值得开</a></li>
+      </ol>
+    </div>
+
+    <h2 id="cloud"><span class="n">01</span>云端跑什么:一张时刻表</h2>
+
+    <div class="diagram">
+      <pre class="mermaid">
+flowchart TB
+  subgraph CLOUD["☁️ 全部跑在云端 · 无需任何本机"]
+    direction TB
+    D["<b>每日 10:17 北京</b><br/>舆情发现<br/>四路召回"]
+    C["<b>AI 预分类</b><br/>维度 / 严重度 / 方向<br/>全部标注 model-judged"]
+    F["<b>折入事件库</b><br/>重算 id · 重生成首页舆情条"]
+    P["<b>开 PR → CI 绿 → 自动合并</b>"]
+    S["<b>Cloudflare Pages</b><br/>推 main 即部署"]
+    R["<b>每日 09:00 北京</b><br/>日报盘点<br/>从 git 派生"]
+    D --> C --> F --> P --> S
+  end
+  P -.->|"累积到阈值"| T["<b>建议重审</b><br/>首页亮灯"]
+  T --> H["<b>人发起重审</b><br/>评委 in-character 打分"]
+  H --> V["新版本 vN+1"]
+  V --> S
+  style H fill:#fff7ed,stroke:#c1440e,stroke-width:2px
+  style CLOUD fill:#fbf9f4,stroke:#111
+      </pre>
+    </div>
+    <p class="caption">橙色框是唯一需要人的环节 —— 也是<b>分数唯一会变的地方</b>。</p>
+
+    <table>
+      <thead><tr><th>何时</th><th>干什么</th><th>人工介入</th></tr></thead>
+      <tbody>
+        <tr><td><b>每日 10:17</b>(北京)</td><td>四路召回(媒体 / 官方新闻室 / 官网直采 / 知乎)→ 候选 → AI 预分类 → 折入事件库 → 重生成首页舆情条 → 开 PR</td><td><b>无</b>,CI 绿后自动合并</td></tr>
+        <tr><td><b>每日 09:00</b>(北京)</td><td>从 git 派生前一日工作盘点</td><td>补充说明人工补</td></tr>
+        <tr><td>手动触发</td><td>L1 预筛:哪些品牌够格触发重审</td><td>读结论的人</td></tr>
+        <tr><td>每个 PR / push</td><td>反捏造防火墙 · 结构质量 · 舆情校验 · 一致性守卫 · 报告完整性</td><td>修红的人</td></tr>
+        <tr><td>推 <code>main</code></td><td>站点部署</td><td>无</td></tr>
+      </tbody>
+    </table>
+
+    <p>三个出口也都在云上:<strong>网站</strong>(Cloudflare Pages)、<strong>JSON API</strong>(随站点静态发布)、
+    <strong>MCP server</strong>(npm 包)。没有一台需要自己维护的服务器。</p>
+
+    <h2 id="not"><span class="n">02</span>哪些事不在云上(诚实边界)</h2>
+
+    <div class="blocks">
+      <div class="blk"><div class="num">1</div><div class="bd"><b>评委重审 —— 人发起</b><span>审计是人跑 skill 触发的。这是<strong>设计如此</strong>:分数从不自动变,舆情只能提出"建议重审",不能自己改分。</span></div></div>
+      <div class="blk"><div class="num">2</div><div class="bd"><b>一手取数 —— 开发动作</b><span>抓原文、深化评委档案,需要能出网的会话。这些是<strong>开发动作</strong>,不是每日流水线的一环。</span></div></div>
+      <div class="blk"><div class="num">3</div><div class="bd"><b>自托管社媒线 —— 暂缓</b><span>唯一真正需要"一台常开机器"的东西。见下。</span></div></div>
+    </div>
+
+    <p>前两条不影响"日常运行零本机依赖" —— 它们由人主动发起,不是每天必须发生的事。</p>
+
+    <h2 id="why"><span class="n">03</span>社媒线为什么暂缓</h2>
+
+    <p>
+      管道、门禁、手册<strong>全部就位</strong>,也已经<strong>端到端实测打通</strong>:
+      从公网侧拉自托管 RSSHub,微博路由返回 10 条真实条目,再过本项目的解析器 ——
+      日期全部归一、链接可核。<strong>技术上没有问题。</strong>
+    </p>
+
+    <div class="callout">
+      <strong>问题不是技术,是依赖。</strong> RSSHub 跑在你自己的机器上,隧道从你家出口连出去 ——
+      机器睡了、断网了、搬家了,当天这条源就没了。这与"完全线上、零本机依赖"<strong>直接冲突</strong>。
+    </div>
+
+    <table>
+      <thead><tr><th></th><th>完全线上(当前)</th><th>加上本机社媒线</th></tr></thead>
+      <tbody>
+        <tr><td><b>依赖</b></td><td>只依赖 GitHub + Cloudflare</td><td>多一台必须 24×7 醒着的机器</td></tr>
+        <tr><td><b>失效模式</b></td><td>平台故障 —— 罕见,且全网可见</td><td>睡眠 / 断网 / cookie 过期 / IP 被风控 —— <b>静默</b>,靠哨兵喊</td></tr>
+        <tr><td><b>拿到的信号</b></td><td>媒体 + 官方新闻室 + 官网直采 + 知乎</td><td>多出<b>品牌官微一手发布</b></td></tr>
+        <tr><td><b>运维</b></td><td>0</td><td>升级镜像、换密钥、盯哨兵</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>当前选择:保持零本机依赖。</strong> 这是取舍,不是缺陷 —— 少一个信号源,换掉一整类静默失效。</p>
+
+    <h2 id="optional"><span class="n">04</span>可选支线:自托管 RSSHub 完整接入指南</h2>
+
+    <p>
+      下面是全过程,<strong>想开的时候照做即可</strong>。约 20 分钟。
+      <strong>顺序不能换</strong> —— 先上锁再暴露到公网,否则中间有一段裸奔窗口。
+    </p>
+
+    <details class="steps">
+      <summary>第 1 步 · 起服务并<b>先上锁</b>(ACCESS_KEY)</summary>
+      <div class="body">
+        <pre class="cmd"><code>KEY=$(openssl rand -hex 24); echo "$KEY"      # 记到密码管理器
+docker rm -f rsshub
+docker run -d --name rsshub --restart unless-stopped -p 1200:1200 \
+  -e ACCESS_KEY="$KEY" diygod/rsshub:chromium-bundled
+
+curl -s -o /dev/null -w "无 key → %{http_code}\n" "http://localhost:1200/weibo/user/&lt;uid&gt;"
+curl -s -o /dev/null -w "带 key → %{http_code}\n" "http://localhost:1200/weibo/user/&lt;uid&gt;?key=$KEY"</code></pre>
+        <p><b>镜像必须是 <code>:chromium-bundled</code>,不是 <code>latest</code></b> —— 新版微博路由走
+        Playwright 抓 <code>m.weibo.cn</code>,<code>latest</code> 没打包浏览器、直接报错。</p>
+        <p><b>验收看返回码</b>:无 key 必须非 200。若无 key 也 200,说明这版鉴权参数名不是
+        <code>key</code>(历史上有两种)—— 查官方文档,<b>别硬猜</b>。以返回码为准,不以指南为准。</p>
+        <p>macOS 装不上 Docker Desktop(<code>brew</code> 要 sudo 去链 <code>/usr/local/bin</code>)?
+        用 <b>OrbStack</b>,更轻、免 sudo,<code>docker</code> 命令完全一样。</p>
+      </div>
+    </details>
+
+    <details class="steps">
+      <summary>第 2 步 · 建命名隧道(避开需要 sudo 的那条命令)</summary>
+      <div class="body">
+        <p>Cloudflare Dashboard → <b>Zero Trust → Networks → Tunnels → Create a tunnel</b> →
+        取名 → 保存后<b>复制它给的 token</b>。</p>
+        <p>⚠️ <b>不要用页面给的 <code>cloudflared service install</code></b> —— 它要写
+        <code>/Library/LaunchDaemons</code>、<b>需要 sudo</b>。改用:</p>
+        <pre class="cmd"><code>cloudflared tunnel run --protocol http2 --token &lt;你的 token&gt;</code></pre>
+        <p><b><code>--protocol http2</code> 往往是必需的</b>:cloudflared 默认走 QUIC(UDP 7844),
+        很多网络把它阻断,表现为隧道建不起来或时断时续。<b>连不上先试这个,别怀疑 RSSHub。</b></p>
+        <p>隧道 HEALTHY 后加 <b>Public Hostname</b>:子域 <code>rsshub</code> + 你的域名 →
+        <code>HTTP</code> → <code>localhost:1200</code>。DNS 记录 Cloudflare 自动建。</p>
+      </div>
+    </details>
+
+    <details class="steps">
+      <summary>第 3 步 · 免 sudo 开机自启(macOS LaunchAgent)</summary>
+      <div class="body">
+        <p>第 2 步那条命令跑在前台,关终端就停。用<b>用户级</b> LaunchAgent
+        (<code>~/Library/LaunchAgents/</code>,不需要 sudo)常驻,完整 plist 见
+        <a href="https://github.com/zhanglunet/mba/blob/main/docs/29-cloudflare-named-tunnel.md" style="color:var(--accent);">docs/29 §3</a>。
+        plist 里是明文 token,记得 <code>chmod 600</code>。</p>
+        <p><b>机器必须在北京 10:17 醒着</b>(每日发现的时刻)。系统设置里打开
+        "接通电源时防止自动进入睡眠"即可 —— 这项不需要命令行、不需要 sudo。
+        <b>笔记本合盖仍会睡</b>,长期跑建议插电常开或换台常驻机器。</p>
+      </div>
+    </details>
+
+    <details class="steps">
+      <summary>第 4 步 · 公网侧三段验收(<b>这一步不做等于没验证</b>)</summary>
+      <div class="body">
+        <p>本机 curl 通 <b>≠</b> GitHub Actions 通 —— 云上走的是公网这一侧。
+        <b>用手机流量或另一台机器测</b>,家里 WiFi 可能命中本地 DNS,测不出真实路径。</p>
+        <pre class="cmd"><code>curl -s -o /dev/null -w "healthz → %{http_code}\n" https://&lt;域名&gt;/healthz
+curl -s -o /dev/null -w "无 key  → %{http_code}\n" "https://&lt;域名&gt;/weibo/user/&lt;uid&gt;"
+curl -s "https://&lt;域名&gt;/weibo/user/&lt;uid&gt;?key=&lt;KEY&gt;" | head -40</code></pre>
+        <p><b>三条同时满足才算过</b>:<code>healthz</code> 200 · 无 key 非 200 · 带 key 出含
+        <code>&lt;item&gt;</code> 的真实条目。</p>
+      </div>
+    </details>
+
+    <details class="steps">
+      <summary>第 5 步 · 密钥交给 GitHub,<b>绝不进仓库</b></summary>
+      <div class="body">
+        <p>本项目仓库是<b>公开</b>的,而 RSSHub 的 key 必须跟在 URL 上 —— 直接写进配置文件
+        <b>等于公开发布密钥</b>。机制:配置里只存占位符,真值放 Actions secrets。</p>
+        <pre class="cmd"><code># GitHub → Settings → Secrets and variables → Actions
+#   Name: RSSHUB_KEY    Secret: 第 1 步那串
+
+# 配置文件里只写占位符:
+rss_feeds:
+  - https://&lt;域名&gt;/weibo/user/&lt;官微uid&gt;?key=${RSSHUB_KEY}</code></pre>
+        <p>两道保险:<b>门禁</b>会拦住任何明文密钥(CI 直接红);<b>哨兵</b>在变量没配时
+        跳过该源并明确喊"环境变量未设置",而不是拿空 key 去请求 ——
+        空 key 会被拒,那会<b>把配置错误伪装成路由故障</b>,排错追错方向。</p>
+      </div>
+    </details>
+
+    <details class="steps">
+      <summary>第 6 步 · 找官微 uid,先配 1~2 个品牌观察一周</summary>
+      <div class="body">
+        <p>浏览器打开该品牌<b>官方微博主页</b>,地址栏形如 <code>weibo.com/u/1746173800</code>,
+        <code>u/</code> 后面的数字就是 uid。<b>别抄别处给的 uid,自己从主页地址栏确认</b> ——
+        抄错了等于监控了别人家。</p>
+        <p>候选会标 <code>source_type: social</code>,与知乎共用"社区 ≤1/4 名额" ——
+        但<b>桶内自备源排在知乎泛查询之前</b>(否则知乎召回量大的品牌会把微博条目
+        <b>100% 静默挤掉</b>:源确实抓到了,只是没进候选,哨兵还不会响)。
+        每品牌候选总量不变,下游成本不涨。</p>
+      </div>
+    </details>
+
+    <div class="callout">
+      <strong>风险由使用者拍板。</strong> 自动化抓取违反微博 / 小红书服务条款;配 cookie 的账号可能被风控。
+      隧道 URL 公网可达,<strong><code>ACCESS_KEY</code> 是唯一一道门</strong> ——
+      不配等于开放代理,别人能用你的 IP 和带宽去请求微博。
+    </div>
+
+    <h2 id="when"><span class="n">05</span>什么时候值得开</h2>
+    <p>不是"越多源越好"。满足下面任一条再开:</p>
+    <ul class="tight">
+      <li><b>某品牌的关键事件反复只在官微首发</b>,媒体转述滞后一天以上 —— 这时官微才是真正的一手。</li>
+      <li><b>手上有一台本来就常开的机器</b>(小主机 / NAS / 常驻服务器),边际代价接近 0。</li>
+      <li>要覆盖的品牌<b>本身没有英文新闻室</b>,官网也不被新闻聚合索引(实测存在这类品牌)。</li>
+    </ul>
+    <p>反过来,如果只是"想多一个源",按第 3 节那张表算账,<strong>不划算</strong>。</p>
+
+    <div class="callout" style="border-left-color:#111;background:#f0ece3;">
+      <strong>全线不变的边界。</strong> 标题 / 日期 / 链接<strong>逐字取自源</strong>,不改写不翻译;
+      维度、严重度、方向是 <strong>model-judged 分类</strong>并明确标注;
+      <strong>审计分数从不自动变</strong> —— 分数的每一次变化都来自评委重新 in-character 打分。
+    </div>
+
+    <p style="margin-top:36px;font-size:16px;">相关:
+      <a href="/system.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">系统如何运作</a> ·
+      <a href="/watch/cockpit.html" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">全站舆情驾驶舱</a> ·
+      <a href="https://github.com/zhanglunet/mba/blob/main/docs/30-online-operation.md" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">docs/30 完全线上运行</a> ·
+      <a href="https://github.com/zhanglunet/mba/blob/main/docs/29-cloudflare-named-tunnel.md" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none;">docs/29 命名隧道手册</a>。
+    </p>
+
+    <footer>
+      <span>MBA · Metric Brand Auditor · 评分为 AI 评委模拟,非本人观点,不构成投资建议</span>
+      <span><a href="https://github.com/zhanglunet/mba">github.com/zhanglunet/mba</a></span>
+      <span style="flex-basis:100%;">© 2026 MBA · Jason · 清风 · John · 技术支持 <a href="https://marsdata.ai">marsdata.ai</a></span>
+    </footer>
+
+  </div>
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'neutral', securityLevel: 'loose', flowchart: { useMaxWidth: true, htmlLabels: true } });
+  </script>
+</body>
+</html>

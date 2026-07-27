@@ -137,6 +137,8 @@ def check_system_numbers():
         ("镜头数", re.compile(r"[×x]\s*(\d+)\s*镜头"), counts.get("lenses")),
         ("API 端点数", re.compile(r"(\d+)\s*个?端点|JSON API\s*[×x]\s*(\d+)"), endpoints),
         ("MCP 工具数", re.compile(r"(\d+)\s*个?工具|MCP 工具\s*[×x]\s*(\d+)"), tools),
+        # 门禁格数写在页面上就会过期:2026-07-27 发现两处都还停在「12 格」,实际已 16。
+        ("一致性守卫格数", re.compile(r"一致性守卫[((](\d+)\s*格|(\d+)\s*格一致性"), len(CHECKS)),
     ]
     targets = ["site/system.html", "docs/26-system-overview.md"]
     bad, empty = [], []
@@ -156,11 +158,50 @@ def check_system_numbers():
             bad += [f"{rel} 的{name}写着 {v}(应为 {want})" for v in got if int(v) != want]
     if bad:
         return False, ("系统页数字过期:" + ";".join(bad) +
-                       " —— 这些数字的真源是 site/api/index.json,改了记得同步页面。")
+                       " —— 真源是 site/api/index.json(评委/panel/镜头/端点)、server.ts(工具)、"
+                       "本文件 CHECKS(门禁格数);改了记得同步页面。")
     if empty:
         return False, ("；".join(empty) + " —— 要么数字被删了,要么措辞变了导致本 gate 失效。")
     return True, (f"系统页数字自洽(评委 {counts['judges']} · panel {counts['panels']} · "
-                  f"镜头 {counts['lenses']} · 端点 {endpoints} · 工具 {tools},2 处文件)")
+                  f"镜头 {counts['lenses']} · 端点 {endpoints} · 工具 {tools} · "
+                  f"门禁 {len(CHECKS)} 格,2 处文件)")
+
+
+def check_schedule_times():
+    """「在哪里运行」页与 docs/30 写的**每日跑批时刻**,必须 == workflow 里的 cron。
+
+    2026-07-27 新增。runtime.html / docs/30 的卖点就是"什么时候跑什么",
+    时刻写死在页面里而真源在 `.github/workflows/*.yml` —— 改了 cron 没改页面,
+    读者按页面等结果就会等空。**只守 cron 有真源的那两个每日任务。**
+    页面写的是北京时间(UTC+8),这里做转换后比对。
+    """
+    jobs = [("watch-discover", "舆情发现"), ("daily-report", "日报盘点")]
+    want = {}
+    for wf, label in jobs:
+        text = rd(f".github/workflows/{wf}.yml")
+        if text is None:
+            return False, f".github/workflows/{wf}.yml 不存在"
+        m = re.search(r"cron:\s*[\"'](\d+)\s+(\d+)\s", text)
+        if not m:
+            return False, f"{wf}.yml 里找不到 cron(本 gate 失效)"
+        minute, hour_utc = int(m.group(1)), int(m.group(2))
+        want[label] = f"{(hour_utc + 8) % 24:02d}:{minute:02d}"
+    bad, missing = [], []
+    for rel in ("site/runtime.html", "docs/30-online-operation.md"):
+        text = rd(rel)
+        if text is None:
+            return False, f"{rel} 不存在"
+        for label, hhmm in want.items():
+            if hhmm not in text:
+                # 页面上出现了别的时刻 = 过期;一个都没有 = 措辞变了导致 gate 失效
+                others = set(re.findall(r"每日\s*(\d{2}:\d{2})", text))
+                (bad if others - set(want.values()) else missing).append(
+                    f"{rel} 没有{label}的 {hhmm}(北京)" + (f",却写着 {sorted(others)}" if others else ""))
+    if bad or missing:
+        return False, ("跑批时刻与 workflow 的 cron 不一致:" + ";".join(bad + missing) +
+                       " —— 真源是 .github/workflows/*.yml 的 cron,改了记得同步页面。")
+    return True, ("跑批时刻自洽(" +
+                  " · ".join(f"{k} {v}" for k, v in want.items()) + " 北京,2 处文件)")
 
 
 def check_mcp_version():
@@ -390,6 +431,7 @@ CHECKS = [
     ("系统页数字", check_system_numbers),
     ("评委中文名", check_judge_names_cn),
     ("RSS 源无明文密钥", check_rss_secrets),
+    ("跑批时刻", check_schedule_times),
 ]
 
 def main():
