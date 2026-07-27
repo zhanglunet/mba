@@ -48,6 +48,12 @@ jobs:
 
       - name: Discover candidates
         id: disc
+        env:
+          # 自托管 RSSHub 的 ACCESS_KEY(免费社媒线,docs/27 · docs/29)。
+          # **本仓库公开**,所以 reports-meta.yaml 里只写 `?key=${RSSHUB_KEY}` 占位符,
+          # 真值放这里的 secrets、只在 runner 内存展开(fetch_candidate.expand_secrets)。
+          # 没配 secret 时:该源被跳过并在候选 md 里留哨兵,其余四路照常跑。
+          RSSHUB_KEY: ${{ secrets.RSSHUB_KEY }}
         run: |
           DATE=$(date -u +%F)
           OUT="watch/_candidates/${DATE}.md"

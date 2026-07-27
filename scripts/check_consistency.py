@@ -58,6 +58,31 @@ def check_investors():
     return True, (r.stdout or "").strip().replace("validate_investors: ✅ ", "") or "投资人维度自洽"
 
 
+def check_rss_secrets():
+    """`reports-meta.yaml` 的 `rss_feeds` **不得含明文密钥**(本仓库是公开仓库)。
+
+    2026-07-27 新增。自托管 RSSHub 的 `ACCESS_KEY` 必须跟在 URL 上(`?key=…`),
+    而 meta 是提交进公开仓库的 —— 写明文 = **把密钥公开发布**。
+    规则:凡 key/code/token/auth 类查询参数,值必须是 `${ENV_NAME}` 占位符;
+    真值走 GitHub Actions secrets,由 `fetch_candidate.expand_secrets()` 在 runner 内存里展开。
+    """
+    meta = rd("site/reports-meta.yaml")
+    if meta is None:
+        return False, "site/reports-meta.yaml 不存在"
+    urls = re.findall(r"(?m)^\s*(?:-\s*|rss_feeds:\s*)(https?://\S+)", meta)
+    urls = [u for u in urls if "rsshub" in u.lower() or "?key=" in u or "&key=" in u]
+    bad = []
+    for u in urls:
+        for k, v in re.findall(r"[?&]([A-Za-z_]+)=([^&\s]*)", u):
+            if k.lower() in {"key", "code", "token", "auth", "access_key", "apikey", "api_key"}:
+                if not re.fullmatch(r"\$\{[A-Z][A-Z0-9_]*\}", v):
+                    bad.append(f"{k}={v[:12]}…")
+    if bad:
+        return False, ("rss_feeds 里出现**明文密钥**:" + ", ".join(bad) +
+                       " —— 本仓库公开,密钥须写成 ${ENV_NAME} 占位符,真值放 Actions secrets")
+    return True, f"自备 RSS 源无明文密钥({len(urls)} 条已检)"
+
+
 def check_judge_names_cn():
     """评委名单必须**每位都有中文姓名**(judges.json 的 name_cn)。
 
@@ -364,6 +389,7 @@ CHECKS = [
     ("晚餐亮点对齐", check_dinner_home),
     ("系统页数字", check_system_numbers),
     ("评委中文名", check_judge_names_cn),
+    ("RSS 源无明文密钥", check_rss_secrets),
 ]
 
 def main():
