@@ -43,6 +43,14 @@
       "language": "zh",
       "weight": 1.0,
       "api_url": "/api/judges/zhongshanshan.json"
+    },
+    {
+      "slug": "xuxin",
+      "display_name_cn": "徐新",
+      "display_name_en": "Kathy Xu",
+      "language": "zh",
+      "weight": 1.0,
+      "api_url": "/api/judges/xuxin.json"
     }
   ]
 }

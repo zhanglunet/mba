@@ -44,3 +44,9 @@ judges:
     display_name_en: Zhong Shanshan
     language: zh
     weight: 1.0
+
+  - slug: xuxin
+    display_name_cn: 徐新
+    display_name_en: Kathy Xu
+    language: zh
+    weight: 1.0

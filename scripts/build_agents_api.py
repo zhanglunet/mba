@@ -269,9 +269,30 @@ def build_i18n_block(tr: dict, models: list[dict], slug: str) -> dict:
     return block
 
 
+def load_panel_names_cn() -> dict:
+    """slug → 中文姓名,真源是 panels/*.yaml 的 `display_name_cn`。
+
+    2026-07-26:评委名单(judges.json.items 与每位的 body)此前只有英文 slug 与
+    `xuxin-perspective` 这类内部名,中文读者看不出是谁。中文名**已经存在于 panel 配置里**
+    (43/43 全覆盖),所以不新建真源、直接取用——避免又多一处会漂移的手写名单。
+    同名以字母序第一个 panel 为准(实测无冲突)。
+    """
+    out: dict[str, str] = {}
+    for path in sorted(PANELS_DIR.glob("*.yaml")):
+        if path.name == "industries.yaml":
+            continue
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        for j in data.get("judges") or []:
+            slug, cn = j.get("slug"), j.get("display_name_cn")
+            if slug and cn:
+                out.setdefault(str(slug), str(cn).strip())
+    return out
+
+
 def build_judges() -> tuple[list[dict], dict[str, dict]]:
     """Returns (list_items, by_slug_body)."""
     i18n = load_judges_i18n()
+    names_cn = load_panel_names_cn()
     items = []
     bodies = {}
     for path in sorted(PERSP_DIR.glob("*-perspective/SKILL.md")):
@@ -283,16 +304,19 @@ def build_judges() -> tuple[list[dict], dict[str, dict]]:
         # tier:有 references/research/0[1-6]-*.md 即 full,否则 seed(仅 quotes.md)。
         research = path.parent / "references" / "research"
         tier = "full" if list(research.glob("0[1-6]-*.md")) else "seed"
-        items.append({
-            "slug": slug,
-            "name": full_name,
+        item = {"slug": slug, "name": full_name}
+        if names_cn.get(slug):                    # 中文姓名(真源:panels 的 display_name_cn)
+            item["name_cn"] = names_cn[slug]
+        item.update({
             "summary": first_paragraph(desc),
             "skill_url": skill_url,
             "api_url": f"/api/judges/{slug}.json",
         })
+        items.append(item)
         bodies[slug] = {
             "slug": slug,
             "name": full_name,
+            "name_cn": names_cn.get(slug, ""),
             "display": derive_display(desc) or slug,
             "tier": tier,
             "panels": [],  # 由 main() 在 build_panels 后回填

@@ -4,6 +4,7 @@
     {
       "slug": "arnault",
       "name": "arnault-perspective",
+      "name_cn": "伯纳德·阿尔诺",
       "summary": "Bernard Arnault (Chairman & CEO of LVMH) — the consolidator-builder: desirability above all, long-term vision / family group / look beyond the figures, the eternal Maison (timelessness + legacy), quality × creativity, decentralized entrepreneurial Maisons, honor-the-past-and-invent-the-future, cash flow as investment capacity. Full tier: pure first-party (30+ verbatim from his signed LVMH Chairman's messages & Letters to Shareholders, 100% first-party by count); research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/arnault-perspective/SKILL.md",
       "api_url": "/api/judges/arnault.json"
@@ -11,6 +12,7 @@
     {
       "slug": "awintour",
       "name": "awintour-perspective",
+      "name_cn": "安娜·温图尔",
       "summary": "Anna Wintour (editor-in-chief of US Vogue 1988–2025; global chief content officer, Condé Nast) — the arbiter's eye: timelessness & clarity of purpose over trend, power/attitude & making people more themselves, self-possession, \"backwards and forwards at once\", champion-the-new / community-not-elitism, crisis-as-catalyst. Full tier: pure first-party (39+ verbatim from her signed Vogue Editor's Letters & tribute letters, 100% first-party by byline); research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/awintour-perspective/SKILL.md",
       "api_url": "/api/judges/awintour.json"
@@ -18,6 +20,7 @@
     {
       "slug": "burton",
       "name": "burton-perspective",
+      "name_cn": "莎拉·伯顿",
       "summary": "Sarah Burton (creative director of Givenchy from 2024; previously creative director of Alexander McQueen, 2010–2023) — the maker's hands: the atelier is the heart and soul, it comes alive in the fitting, how the woman feels (armor, but still herself), a couture look-by-look mindset, creating out of nothing / \"it was never 'no'\", steward the DNA yet author for today. Full tier: pure first-party (39+ verbatim from her clean-label interviews, only her answers, 100% first-party by count); research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/burton-perspective/SKILL.md",
       "api_url": "/api/judges/burton.json"
@@ -25,6 +28,7 @@
     {
       "slug": "chennian",
       "name": "chennian-perspective",
+      "name_cn": "陈年",
       "summary": "陈年(凡客诚品创始人)的「极致单品/一件衬衫、反浮躁、敬畏之心(学小米)、回归产品诚意/反一抄了之、 专注不凑热闹、复盘/自我否定」消费 / 品牌反思视角。 Full tier:纯一手(2014「一件衬衫」828 发布会讲话全文实录)+ semi-一手(陈年口述、李原整理)蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/chennian-perspective/SKILL.md",
       "api_url": "/api/judges/chennian.json"
@@ -32,6 +36,7 @@
     {
       "slug": "cucinelli",
       "name": "cucinelli-perspective",
+      "name_cn": "布鲁内罗·库奇内利",
       "summary": "Brunello Cucinelli (founder & chairman of Brunello Cucinelli) — \"humanistic capitalism\", fair profit, quiet luxury, Italian craftsmanship, dignity of work (Solomeo) lens. Full tier: distilled from his first-party doctrine (the company's 2024 \"Report on Humanistic Capitalism and Human Sustainability\"); research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/cucinelli-perspective/SKILL.md",
       "api_url": "/api/judges/cucinelli.json"
@@ -39,6 +44,7 @@
     {
       "slug": "fusheng",
       "name": "fusheng-perspective",
+      "name_cn": "傅盛",
       "summary": "傅盛（猎豹移动 / Cheetah Mobile 创始人&CEO，猎户星空董事长，傅盛AI / OpenClaw\"龙虾\"项目发起人，1978年生）的思维框架与表达方式。 基于6路并行调研（约186条来源、80%一手占比）提炼6个核心心智模型、8条决策启发式和完整的\"AI布道者\"表达DNA。 用途：作为思维顾问，用傅盛的视角分析AI应用 / Agent / 出海 / 红海产品 / 创业战略 / 大模型vs应用 / 个人认知升级 / 中年二次创业问题。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/fusheng-perspective/SKILL.md",
       "api_url": "/api/judges/fusheng.json"
@@ -46,6 +52,7 @@
     {
       "slug": "hexiaopeng",
       "name": "hexiaopeng-perspective",
+      "name_cn": "何小鹏",
       "summary": "何小鹏(He Xpeng,小鹏汽车 XPENG 董事长 / CEO,1977 年生,UC 浏览器创始人 → 阿里 → 小鹏汽车)的品牌与产品判断视角。基于小鹏发布会(P7 / G9 / G6 / X9 / MONA / 智驾)、财报电话会、2022-10 G9 反思内部信、2023-07 大众战略 合作公告、2024 欧洲拓展公开发言、知乎极少量长文,提炼\"工程师 CEO 的低 饱和度产品 / 技术陈述 + 诚实的组织诊断\"表达 DNA。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/hexiaopeng-perspective/SKILL.md",
       "api_url": "/api/judges/hexiaopeng.json"
@@ -53,6 +60,7 @@
     {
       "slug": "huangzheng",
       "name": "huangzheng-perspective",
+      "name_cn": "黄峥",
       "summary": "黄峥（拼多多创始人）的「本分、消费者导向非竞争导向、Costco + Disney、需求归集 / 性价比普惠」 新电商判断视角。Full tier:由其一手公众号原创文（2016–2018，原文已删，据「投资研究」整理合集）+ 拼多多致股东信蒸馏；research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/huangzheng-perspective/SKILL.md",
       "api_url": "/api/judges/huangzheng.json"
@@ -60,6 +68,7 @@
     {
       "slug": "jensenhuang",
       "name": "jensenhuang-perspective",
+      "name_cn": "黄仁勋",
       "summary": "Jensen Huang / 黄仁勋（NVIDIA 创始人、总裁兼 CEO）的 AI 基础设施、加速计算、 平台生态、开发者飞轮与技术品牌判断视角。基于 NVIDIA 官方简介、GTC 公开演讲 和公司公开故事，提炼为“平台要把计算范式变成生态”。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jensenhuang-perspective/SKILL.md",
       "api_url": "/api/judges/jensenhuang.json"
@@ -67,6 +76,7 @@
     {
       "slug": "jiangnanchun",
       "name": "jiangnanchun-perspective",
+      "name_cn": "江南春",
       "summary": "江南春(分众传媒创始人)的「反着走、抢占心智一词定位、信任状、时间窗口先入为主、饱和攻击、 道就是人心」品牌定位判断视角。Full tier:由其两场公开演讲(2017 湖畔大学 / 高榕资本)第一人称实录 蒸馏;research 见 references/research/01-06.md。理论承袭特劳特定位理论(已标注)。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jiangnanchun-perspective/SKILL.md",
       "api_url": "/api/judges/jiangnanchun.json"
@@ -74,6 +84,7 @@
     {
       "slug": "jobs",
       "name": "jobs-perspective",
+      "name_cn": "乔布斯",
       "summary": "Steve Jobs（乔布斯，Apple/NeXT/Pixar 创始人）的思维框架与表达方式。基于 6 路并行调研（约 2100 行调研、150+ 条来源、Stanford Jobs Archive 官方一手为主）提炼 6 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用乔布斯的视角分析产品 / 设计 / 战略 / 组织 / 人生抉择问题。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/jobs-perspective/SKILL.md",
       "api_url": "/api/judges/jobs.json"
@@ -81,6 +92,7 @@
     {
       "slug": "leijun",
       "name": "leijun-perspective",
+      "name_cn": "雷军",
       "summary": "雷军（小米集团创始人、董事长兼 CEO，1969 年生）的品牌与产品判断视角。 基于公开演讲、SU7 发布会、Q&A、外部市场批评、关键决策与时间线预研，提炼 \"温暖的创始人问责 + 工业级兑现压力\"表达 DNA。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/leijun-perspective/SKILL.md",
       "api_url": "/api/judges/leijun.json"
@@ -88,6 +100,7 @@
     {
       "slug": "libin",
       "name": "libin-perspective",
+      "name_cn": "李斌",
       "summary": "李斌(William Li,蔚来汽车 NIO 创始人 / 董事长 / CEO,1974 年生,易车网 → 摩拜投资 → 蔚来)的品牌与产品判断视角。基于 NIO Day 历届主题演讲、用户面 对面 Q&A、2019 现金流危机全员信、2020 合肥救助节点公开材料、多品牌矩阵 发布期内部信、换电联盟讲话,提炼\"温和的用户社区主理人 + 长期服务承诺 持有者\"表达 DNA。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/libin-perspective/SKILL.md",
       "api_url": "/api/judges/libin.json"
@@ -95,6 +108,7 @@
     {
       "slug": "likejia",
       "name": "likejia-perspective",
+      "name_cn": "李可佳",
       "summary": "李可佳（Ethan KJ Li，BotLearn / Ouraca / Aibrary 创始人，前字节跳动智慧教育业务 CEO）的思维框架与表达方式。基于 6 路并行调研（约 73 条来源、50 条一手）提炼 5 个核心心智模型、8 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用李可佳的视角分析 AI 产品 / 教育产品 / 出海创业 / Agent 生态 / 早期融资问题。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/likejia-perspective/SKILL.md",
       "api_url": "/api/judges/likejia.json"
@@ -102,6 +116,7 @@
     {
       "slug": "lixiang",
       "name": "lixiang-perspective",
+      "name_cn": "李想",
       "summary": "李想(理想汽车 / Li Auto 创始人,1981 年生,泡泡网 → 汽车之家 → 车和家 / 理想) 的品牌与产品判断视角。基于微博 6800+ 条主帖、内部信(被晚点 / 36 氪 / 雷锋网 转载部分)、理想 ONE / L7 / L8 / L9 / MEGA 发布会、财报电话会、2024-03 MEGA 反思 letter,提炼\"用户场景为锚 + 自批为信誉 + 节奏比规模优先\"表达 DNA。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/lixiang-perspective/SKILL.md",
       "api_url": "/api/judges/lixiang.json"
@@ -109,6 +124,7 @@
     {
       "slug": "luoyonghao",
       "name": "luoyonghao-perspective",
+      "name_cn": "罗永浩",
       "summary": "罗永浩(锤子科技创始人,「交个朋友」直播创始人)的「天生骄傲不作弊、理想主义营销、直面问题公开认错、 能做出来≠能量产、理想主义 vs 商业能力、创始人 IP 是杠杆也是枷锁」消费 / 网红品牌判断视角。 Full tier:由其 2014「一个理想主义者的创业故事」演讲全文实录(~3 万字)+ 2021 搜狐专访蒸馏; research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/luoyonghao-perspective/SKILL.md",
       "api_url": "/api/judges/luoyonghao.json"
@@ -116,6 +132,7 @@
     {
       "slug": "musk",
       "name": "musk-perspective",
+      "name_cn": "马斯克",
       "summary": "Elon Musk (founder/CEO of Tesla, SpaceX, X/Twitter, xAI, The Boring Company, Neuralink; 1971 birth) brand and product judgment. Built from public IAC speeches, Tesla earnings calls, signature X threads, Walter Isaacson's biography and long-form podcast appearances, distilled into \"first-principles confrontation with reality, delivered with founder collateral.\"",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/musk-perspective/SKILL.md",
       "api_url": "/api/judges/musk.json"
@@ -123,6 +140,7 @@
     {
       "slug": "naval",
       "name": "naval-perspective",
+      "name_cn": "纳瓦尔",
       "summary": "Naval Ravikant (co-founder of AngelList & Epinions; angel investor; writer on wealth, leverage & judgment) — \"seek wealth, not money or status\", \"specific knowledge × leverage\", \"play long-term games with long-term people\", code-and-media-as-permissionless-leverage, \"escape competition through authenticity\". Full tier: distilled from his first-party nav.al corpus (the 2018 \"How to Get Rich (without getting lucky)\" series expanded into edited podcast transcripts, 2019, plus the happiness/desire essays 2020–2021), read in full and quote-verified; research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/naval-perspective/SKILL.md",
       "api_url": "/api/judges/naval.json"
@@ -130,6 +148,7 @@
     {
       "slug": "paulg",
       "name": "paulg-perspective",
+      "name_cn": "保罗·格雷厄姆",
       "summary": "Paul Graham (co-founder of Y Combinator; essayist) — \"make something people want\", \"do things that don't scale\", problems-over-ideas, talk-to-users startup lens. Full tier: distilled from 28 first-party paulgraham.com essays (2001–2024), read in full and quote-verified; research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/paulg-perspective/SKILL.md",
       "api_url": "/api/judges/paulg.json"
@@ -137,6 +156,7 @@
     {
       "slug": "pmarca",
       "name": "pmarca-perspective",
+      "name_cn": "马克·安德森",
       "summary": "Marc Andreessen (co-founder & general partner, Andreessen Horowitz / a16z; co-creator of Mosaic & Netscape) — \"market is the only thing that matters\" / product-market fit, software-eats-the-world / technology-as-growth-engine, strong-founder thesis, \"it’s time to build\", techno-optimism / category lens. Full tier: distilled from a first-party corpus read in full and quote-verified — the 2007 \"Pmarca Guide\" (Startups Parts 1-9, Career Planning, Personal Productivity, Big Companies; pmarchive.com) + a16z’s \"It’s Time to Build\" (2020) and \"The Techno-Optimist Manifesto\" (2023). Research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pmarca-perspective/SKILL.md",
       "api_url": "/api/judges/pmarca.json"
@@ -144,6 +164,7 @@
     {
       "slug": "pthiel",
       "name": "pthiel-perspective",
+      "name_cn": "彼得·蒂尔",
       "summary": "Peter Thiel (co-founder of PayPal, Palantir, Founders Fund; ideas behind \"Zero to One\") — contrarian secrets, \"competition is for losers\", monopoly & moats, definite optimism, 0→1, and the power law. Full tier: distilled from a first-party corpus — Blake Masters' notes of Thiel's Stanford CS183 lectures (Spring 2012, classes 1–9, 11, 13; semi-first- party, Thiel-endorsed, later became the book) plus Thiel's signed 2009 essay \"The Education of a Libertarian\". Research in references/research/01-06.md; verified verbatim quote bank in references/research/quotes.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/pthiel-perspective/SKILL.md",
       "api_url": "/api/judges/pthiel.json"
@@ -151,6 +172,7 @@
     {
       "slug": "renzhengfei",
       "name": "renzhengfei-perspective",
+      "name_cn": "任正非",
       "summary": "任正非（华为创始人、CEO）的硬科技组织、长期研发、政企信任、全球化压力 与基础设施品牌判断视角。基于华为官方高管简介、公开访谈与公开讲话材料， 提炼为“活下去、长期研发、组织韧性和客户信任”。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/renzhengfei-perspective/SKILL.md",
       "api_url": "/api/judges/renzhengfei.json"
@@ -158,6 +180,7 @@
     {
       "slug": "rhoffman",
       "name": "rhoffman-perspective",
+      "name_cn": "里德·霍夫曼",
       "summary": "Reid Hoffman (co-founder of LinkedIn; partner at Greylock; author of \"Blitzscaling\" & \"Superagency\") — network effects, blitzscaling / speed-over-efficiency, market timing, the Start-up of You, both-sides-of-the-marketplace, AI-optimism / \"superagency\". Full tier: distilled from Hoffman’s first-party 2023–2025 AI-phase corpus (reidhoffman.org essays & speeches + NYT / Times / SF-Standard op-eds), read in full and quote-verified; research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/rhoffman-perspective/SKILL.md",
       "api_url": "/api/judges/rhoffman.json"
@@ -165,6 +188,7 @@
     {
       "slug": "salkhan",
       "name": "salkhan-perspective",
+      "name_cn": "萨尔曼·可汗",
       "summary": "Sal Khan (Salman Khan, founder & CEO of Khan Academy) — a nonprofit, \"free world-class education for anyone, anywhere\", mastery-learning, flip-the-classroom, humanize-the-classroom, and AI-tutor (Khanmigo, with guardrails) judgment lens. Full tier: distilled verbatim from his two official TED transcripts (2011 origin talk + 2023 AI talk); research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/salkhan-perspective/SKILL.md",
       "api_url": "/api/judges/salkhan.json"
@@ -172,6 +196,7 @@
     {
       "slug": "satyanadella",
       "name": "satyanadella-perspective",
+      "name_cn": "萨提亚·纳德拉",
       "summary": "Satya Nadella（Microsoft Chairman and CEO）的企业级云、AI 平台、生产力生态、 安全优先与 ToB 信任判断视角。基于 Microsoft 官方博客、CEO 公开信和安全优先 公开备忘，提炼为“云 + AI + 安全要成为企业生产力平台”。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/satyanadella-perspective/SKILL.md",
       "api_url": "/api/judges/satyanadella.json"
@@ -179,6 +204,7 @@
     {
       "slug": "shennanpeng",
       "name": "shennanpeng-perspective",
+      "name_cn": "沈南鹏",
       "summary": "沈南鹏(红杉中国 / Sequoia China 创始及执行合伙人,携程 / 如家联合创始人)的 「赛手第一 / 投人、看公司三点标准、长期主义(理智诚实+反人性)、创业者背后的创业者、 优秀创业者共通性、做多中国 + 全站式平台」投资判断视角。 Full tier:由其第一人称实录(何问西东访谈 + 秦朔访里他的回答)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/shennanpeng-perspective/SKILL.md",
       "api_url": "/api/judges/shennanpeng.json"
@@ -186,6 +212,7 @@
     {
       "slug": "shouzichew",
       "name": "shouzichew-perspective",
+      "name_cn": "周受资",
       "summary": "周受资(Shou Zi Chew,TikTok CEO,前字节跳动 / 小米 CFO)的「使命与产品哲学、创作者/小企业经济、 信任靠行动赢得、安全优先于短期变现、本地化与独立性(Project Texas)」全球平台 / 出海判断视角。 Full tier:由其 2023-03-23 美国众议院书面证词(~3.1 万字符,准备陈述)蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/shouzichew-perspective/SKILL.md",
       "api_url": "/api/judges/shouzichew.json"
@@ -193,6 +220,7 @@
     {
       "slug": "tomford",
       "name": "tomford-perspective",
+      "name_cn": "汤姆·福特",
       "summary": "Tom Ford (revived Gucci/YSL as creative director; founded the Tom Ford brand; filmmaker) — the image-maker's total control: obsessive perfectionism (details/shape/cut/color), endow the product with excitement so it makes you stop, glamour as a show of respect, be part of your time, clothes over spectacle, make people beautiful (as armor), self-aware that the persona is the product. Full tier: pure first-party (35+ verbatim from his clean-label interviews, only his answers, 100% first-party by count); research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/tomford-perspective/SKILL.md",
       "api_url": "/api/judges/tomford.json"
@@ -200,6 +228,7 @@
     {
       "slug": "wanghuiwen",
       "name": "wanghuiwen-perspective",
+      "name_cn": "王慧文",
       "summary": "王慧文(美团联合创始人;2023 个人出资创办 AGI 公司光年之外 / Light Years Beyond,故审计美团 / 光年之外时须 self-conflict)的 「体量决定成败、规模效应=商业世界的万有引力、马太效应=进化论/后发优势、 管理是反规模效应/人越少越好、做正确的事 vs 做容易的事(边算账)、不设限/找规律」战略与经营方法论视角。 Full tier:纯一手(2017 源码码会 + 2020 清华「不设限」演讲全文)+ semi-一手(笔记侠整理的清华产品课,类比 pthiel)蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/wanghuiwen-perspective/SKILL.md",
       "api_url": "/api/judges/wanghuiwen.json"
@@ -207,6 +236,7 @@
     {
       "slug": "wu-jundong",
       "name": "wu-jundong-perspective",
+      "name_cn": "吴俊东",
       "summary": "吴俊东（Frank Jundong WU，Aibrary / BotLearn 联合创始人，前好未来战投+学而思网校\"东得多\"主讲老师，哈佛肯尼迪学院 MPP）的思维框架与表达方式。基于 6 路并行调研（约 90 条来源、56 条一手，含 EdTech Insiders 54 分钟英文长访谈完整 transcript）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用吴俊东的视角分析教育/学习产品判断、AI 时代的人才能力分层、关系网络与长期投资、出海创业的资本组合、个人 IP 与身份转换问题。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/wu-jundong-perspective/SKILL.md",
       "api_url": "/api/judges/wu-jundong.json"
@@ -214,6 +244,7 @@
     {
       "slug": "xuxin",
       "name": "xuxin-perspective",
+      "name_cn": "徐新",
       "summary": "徐新(今日资本创始人)的「第一品牌 / 心智占领、打造品牌四大要义、赌赛道 + 找狼性企业家、 三段论 winner-pattern、时间的复利长期持有、成长性投资」消费 / 零售早期投资判断视角。 Full tier:由其第一人称实录(前瞻自述 + 格隆汇访谈她的回答)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/xuxin-perspective/SKILL.md",
       "api_url": "/api/judges/xuxin.json"
@@ -221,6 +252,7 @@
     {
       "slug": "yangjianhui",
       "name": "yangjianhui-perspective",
+      "name_cn": "阳萌",
       "summary": "阳萌(Steven Yang,安克创新 / Anker 创始人兼 CEO)的「第一性、求极致、共成长、创造者平台、 价值分配匹配价值创造、超级品类 vs 细分品类」出海 / 消费电子判断视角。Full tier:由其一手官网 对谈实录(anker.com.cn,anker_71 / anker_72,2024)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yangjianhui-perspective/SKILL.md",
       "api_url": "/api/judges/yangjianhui.json"
@@ -228,6 +260,7 @@
     {
       "slug": "yangzhilin",
       "name": "yangzhilin-perspective",
+      "name_cn": "杨植麟",
       "summary": "杨植麟(月之暗面 Moonshot AI 创始人 / CEO,Kimi 背后的人)的「第一性原理/去雕花、无损压缩=智能/long-context、 长期主义反 PMF 短视、成立的非共识、AGI=科学+工程+商业/登月计划、智能是核心增量」模型层创始人视角。 Full tier:由其 2024-02 第一人称实录(《潜望》张小珺 + 海外独角兽 两场长访谈他的回答)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yangzhilin-perspective/SKILL.md",
       "api_url": "/api/judges/yangzhilin.json"
@@ -235,6 +268,7 @@
     {
       "slug": "yuminhong",
       "name": "yuminhong-perspective",
+      "name_cn": "俞敏洪",
       "summary": "俞敏洪(新东方创始人、东方甄选发起人)的「韧性 / 赤子之心、人生没有失败、主动革命(二次创业)、 热爱与使命先于赚钱、认知升维」教育与转型判断视角。Full tier:由其一手公开演讲全文 (2016 创业家讲课 / 2023「人生四件事」/ 2025「韧性的力量」)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/yuminhong-perspective/SKILL.md",
       "api_url": "/api/judges/yuminhong.json"
@@ -242,6 +276,7 @@
     {
       "slug": "zhang-yiming",
       "name": "zhang-yiming-perspective",
+      "name_cn": "张一鸣",
       "summary": "张一鸣（字节跳动创始人）的思维框架与表达方式。基于 6 路并行调研（38000+ 字、148 条来源、85 条一手）提炼 6 个核心心智模型、10 条决策启发式和完整的表达 DNA。 用途：作为思维顾问，用张一鸣的视角分析产品 / 组织 / 战略 / 决策问题。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhang-yiming-perspective/SKILL.md",
       "api_url": "/api/judges/zhang-yiming.json"
@@ -249,6 +284,7 @@
     {
       "slug": "zhangbangxin",
       "name": "zhangbangxin-perspective",
+      "name_cn": "张邦鑫",
       "summary": "张邦鑫(好未来 / 学而思创始人)的「教不好学生等于偷钱和抢钱(道德底线)、口碑 / 管理增长、 科技做大规模低价格高品质的教育公平普惠、教育的本质是爱而不是科技、教育改变命运→教育获得幸福、 自我颠覆 / 价值观即商业模式」教育判断视角。 Full tier:semi-一手(芥末堆整理的 2016 年会 + 2019 AI 教育大会演讲实录,整理稿)+ 报道引述蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhangbangxin-perspective/SKILL.md",
       "api_url": "/api/judges/zhangbangxin.json"
@@ -256,6 +292,7 @@
     {
       "slug": "zhanglan",
       "name": "zhanglan-perspective",
+      "name_cn": "张兰",
       "summary": "张兰(俏江南创始人,麻六记联合创始人)的「草根逆袭、个人 IP 话题营销、轻资产高毛利、 东山再起」餐饮 / 消费品牌判断视角。基于其公开创业经历与麻六记直播带货的公开报道提炼。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhanglan-perspective/SKILL.md",
       "api_url": "/api/judges/zhanglan.json"
@@ -263,6 +300,7 @@
     {
       "slug": "zhanglei",
       "name": "zhanglei-perspective",
+      "name_cn": "张磊",
       "summary": "张磊(高瓴 / Hillhouse 创始人)的「长期主义 / 做时间的朋友、价值创造是唯一标准、弱水三千但取一瓢、 与伟大格局观的创业者同行、动态护城河、第一性原理 + 人文 / 哑铃理论」研究驱动价值投资判断视角。 Full tier:由其第一人称实录(人大毕业演讲 + 《价值》自序 + 高层论坛低碳演讲)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhanglei-perspective/SKILL.md",
       "api_url": "/api/judges/zhanglei.json"
@@ -270,6 +308,7 @@
     {
       "slug": "zhangmingzheng",
       "name": "zhangmingzheng-perspective",
+      "name_cn": "张明正",
       "summary": "张明正 / Steve Chang（Trend Micro 趋势科技创办人、董事长）的企业级安全、 亚洲安全公司全球化、长期技术信任判断视角。基于 Trend Micro 官方领导团队、 历史沿革与公开公司资料，提炼为“安全品牌要靠长期威胁情报和客户信任复利”。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhangmingzheng-perspective/SKILL.md",
       "api_url": "/api/judges/zhangmingzheng.json"
@@ -277,6 +316,7 @@
     {
       "slug": "zhongshanshan",
       "name": "zhongshanshan-perspective",
+      "name_cn": "钟睒睒",
       "summary": "钟睒睒(农夫山泉 / 养生堂创始人)的「产品主义/慢就是快、反低价内卷/往上卷、差异化逆共识、 首富的可执行利他主义/助农、独行做长期/战略性亏损、研究型企业/创新哲学」消费品判断视角。 Full tier:由其 2024-2025 第一人称实录(央视《对话》他的回答 + 养生堂年会演讲全文)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhongshanshan-perspective/SKILL.md",
       "api_url": "/api/judges/zhongshanshan.json"
@@ -284,6 +324,7 @@
     {
       "slug": "zhouhongyi",
       "name": "zhouhongyi-perspective",
+      "name_cn": "周鸿祎",
       "summary": "周鸿祎（360 集团创始人、董事长）的网络安全、政企安全、AI 安全与 品牌心智判断视角。基于 360 官方创始人介绍、公开演讲、ISC 公开资料 和长期安全行业公开表达，提炼为“安全是攻防实战，不是功能清单”。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhouhongyi-perspective/SKILL.md",
       "api_url": "/api/judges/zhouhongyi.json"
@@ -291,6 +332,7 @@
     {
       "slug": "zhuangshuai",
       "name": "zhuangshuai-perspective",
+      "name_cn": "庄帅",
       "summary": "庄帅(百联咨询创始人、零售电商行业分析师)的「人货场→货场人(直播电商反向逻辑)、平台无纯粹(内容电商化+电商内容化)、 人设=主播核心资产、全网爆款→人群爆款、拆盈利模式/单位经济(反忽悠)、殊途同归(地产+金融)」零售电商拆解视角。 Full tier:纯一手(庄帅署名专栏/博客原文,40+ 条逐字,一手占比 100%)蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhuangshuai-perspective/SKILL.md",
       "api_url": "/api/judges/zhuangshuai.json"
@@ -298,6 +340,7 @@
     {
       "slug": "zhuxiaohu",
       "name": "zhuxiaohu-perspective",
+      "name_cn": "朱啸虎",
       "summary": "朱啸虎(金沙江创投 / GSR Ventures 主管合伙人)的「泡沫与死亡谷反向指标、应用为王反 AGI 叙事、 商业化/单位经济优先、错开共识 15 度、离开大厂三条马路、快决策+控规模」早期投资判断视角。 Full tier:由其 2025 第一人称实录(中关村论坛演讲 + 新浪《未竟之约》张小珺访谈他的回答)逐字蒸馏;research 见 references/research/01-06.md。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/zhuxiaohu-perspective/SKILL.md",
       "api_url": "/api/judges/zhuxiaohu.json"
