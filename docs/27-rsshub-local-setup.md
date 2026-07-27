@@ -71,14 +71,16 @@ cloudflared tunnel --url http://localhost:1200 --protocol http2
 > 很多网络(公司网 / 部分家宽 / 酒店)**把 UDP 7844 阻断**,表现为隧道建不起来或时断时续。
 > 加 `--protocol http2` 走 TCP 443 就通了。**连不上先试这个,别怀疑 RSSHub。**
 
-**再换稳定 URL**(正式用):Cloudflare 控制台 → **Zero Trust → Networks → Tunnels →
-Create a tunnel**,照页面给的一行命令在本机安装 connector,把 Public Hostname 配成
-`rsshub.mbabrand.com → http://localhost:1200`。免费档,URL 永久稳定。
+**再换稳定 URL(正式用)→ 全部步骤见 [`docs/29`](29-cloudflare-named-tunnel.md)**:
+先给容器加 `ACCESS_KEY` 上锁 → Zero Trust 控制台建命名隧道(**避开需要 sudo 的
+`cloudflared service install`**,改用 `cloudflared tunnel run --token`)→ Public Hostname 配成
+`rsshub.mbabrand.com → http://localhost:1200` → macOS 免 sudo LaunchAgent 常驻 →
+公网侧三段验收 → 密钥进 GitHub secrets、meta 只存 `${RSSHUB_KEY}` 占位符。免费档,URL 永久稳定。
 
-**加一道钥匙(强烈建议)**:隧道 URL 是公网可达的,别人扫到就能白嫖你的 RSSHub 且用你的
-IP/cookie 去请求微博。给容器加 `-e ACCESS_KEY='<随便一串长随机字符>'`(重建容器:
-`docker rm -f rsshub` 后带上该参数重跑 A 的命令),之后所有请求带 `?key=<那串字符>`
-(具体参数形式以 docs.rsshub.app 的 Access Control 一节为准)。
+**加一道钥匙(不是可选项)**:隧道 URL 公网可达,别人扫到就能白嫖你的 RSSHub 且用你的
+IP/cookie 去请求微博。`-e ACCESS_KEY='<长随机串>'`,之后所有请求带 `?key=<那串>`。
+**验收看 curl 返回码**:不带 key 必须非 200 —— 若也返回 200,说明这版参数名不是 `key`,
+去 docs.rsshub.app 的 Access Control 查,别硬猜(`docs/29 §1`)。
 
 **隧道建好后必须做的公网侧验收**(本机 curl 通 **≠** GitHub Actions 通 —— 云上走的是公网这一侧):
 
@@ -110,12 +112,20 @@ curl -s "https://<你的隧道域名>/weibo/user/<uid>" | head -40  # → 出 <i
     ...
     news_page: https://about.meituan.com/news
     rss_feeds:
-      - https://rsshub.mbabrand.com/weibo/user/<美团官微uid>?key=<你的ACCESS_KEY>
+      - https://rsshub.mbabrand.com/weibo/user/<美团官微uid>?key=${RSSHUB_KEY}
 ```
 
+> ⚠️ **密钥写占位符,不写真值** —— 本仓库**是公开仓库**,`?key=<真串>` 提交进来 = 公开发布密钥。
+> 真值放 GitHub **Actions secrets** 的 `RSSHUB_KEY`,由 `fetch_candidate.expand_secrets()`
+> 在 runner 内存里展开(日志与候选 md 里打印的永远是占位符模板串)。
+> 两道保险:`check_consistency` 第 16 格「RSS 源无明文密钥」会拦明文;
+> 变量没配时 discover **跳过该源并喊「环境变量未设置」**,而不是拿空 key 去请求
+> ——空 key 会 403,那会把配置错误伪装成路由故障。详见 `docs/29 §5`。
+
 提交 PR 合并后,**次日 10:17(北京)的自动发现就带微博信号**:候选标
-`source_type: social`,与知乎共用「社区 ≤1/4 名额」,每品牌总量不变、下游成本不涨。
-先只配 1~2 个品牌观察一周,质量 OK 再扩。
+`source_type: social`,与知乎共用「社区 ≤1/4 名额」——但**桶内自备 RSS 排在知乎泛查询之前**
+(2026-07-27 修:同桶且排在后面时,知乎召回量大的品牌会把自备 RSS **100% 静默挤掉**)。
+每品牌总量不变、下游成本不涨。先只配 1~2 个品牌观察一周,质量 OK 再扩。
 
 ## E. 维护:哨兵会替你盯着
 

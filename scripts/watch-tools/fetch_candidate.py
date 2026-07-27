@@ -306,6 +306,65 @@ def parse_feed(xml):
     return out
 
 
+ENV_PLACEHOLDER = re.compile(r"\$\{([A-Z][A-Z0-9_]*)\}")
+
+
+def expand_secrets(url):
+    """把 `rss_feeds` URL 里的 `${ENV_NAME}` 占位符换成环境变量真值。
+
+    **为什么非有这层不可**:本仓库是**公开仓库**,而 RSSHub 的 `ACCESS_KEY` 必须跟在 URL 上
+    (`?key=…`)。把密钥直接写进 `site/reports-meta.yaml` = **把密钥公开发布**。
+    故 meta 里只存占位符(`?key=${RSSHUB_KEY}`),真值走 GitHub Actions secrets → 环境变量,
+    只在 runner 内存里出现。
+
+    返回 `(真实URL, 缺失的变量名列表)`。**缺失时调用方必须跳过、不要发请求** ——
+    带空 key 去请求会被 RSSHub 拒(403/401),表现得像"路由挂了",
+    等于**把配置错误伪装成源站故障**,排错时会追错方向。
+
+    ⚠️ 调用方打日志/写候选 md 时**一律打模板串(未展开的那个)**,不能打返回值 ——
+    否则密钥会进公开 Actions 日志和提交进仓库的候选文件。
+    """
+    if not url:
+        return url, []
+    missing = []
+
+    def sub(m):
+        v = os.environ.get(m.group(1), "")
+        if not v.strip():
+            missing.append(m.group(1))
+            return m.group(0)
+        return v
+
+    return ENV_PLACEHOLDER.sub(sub, url), missing
+
+
+def _apply_quota(off, own, soc, med, limit):
+    """把四类召回按名额合成最终候选列表。抽成纯函数是为了能真跑断言,而不是只读源码。
+
+    四类:`off`=官方源 · `own`=**自备 RSS**(用户逐条配进 meta 的 RSSHub 微博等) ·
+    `soc`=社区泛查询(`site:zhihu.com`)· `med`=媒体。
+
+    名额规则(两条都是踩坑踩出来的):
+      - `off ≤ limit/2`:2026-07-25 首次接线时按原序取 `new[:limit]`,官方条目被整段截掉;
+        反过来让官方优先排序,又把媒体面整段挤掉(184 条里 98 条官方)。故给一半保留名额。
+      - **社区总名额 ≤ limit/4,且桶内 `own` 排在 `soc` 前面**:2026-07-27 实测发现,
+        自备 RSS 与知乎共用一个桶且**排在知乎后面** —— meituan 上 `soc` 有 53 条(知乎泛查询),
+        `soc[:3]` 全被知乎占满,**自备 RSS 的 10 条 100% 被挤掉**。更糟的是它**静默**:
+        源确实抓到了条目,哨兵不会响,看起来一切正常。用户显式配进 meta 的源,
+        优先级必须高于泛查询 —— 这是"有意配置 > 顺带召回"。
+
+    媒体拿剩余名额;都不满时按 官方 → 社区 顺序回填,总数不超过 limit。
+    """
+    q_off = max(1, limit // 2)
+    q_soc = max(1, limit // 4)
+    social = (own + soc)[:q_soc]                      # 桶内 own 优先,余额才给泛查询
+    shown = (off[:q_off] + social + med)[:limit]
+    if len(shown) < limit:
+        for pool in (off[q_off:], (own + soc)[q_soc:]):
+            shown += [x for x in pool if x not in shown][: limit - len(shown)]
+    return shown
+
+
 def _brand_rss_feeds(slug):
     """该品牌的自备 RSS 源列表(§9.9:自托管 RSSHub 的微博/小红书路由填这里)。
 
@@ -423,7 +482,9 @@ def cmd_discover(args):
         # 微博是登录墙、小红书收录仅 3~5 条、公众号发现入口是 JS 壳——都走不通(见 docs/16 §9.7),
         # 知乎是唯一一个**零新增抓取器**就能拿到的社区源。只取标题入库,不碰知乎反爬墙。
         queries.append((f"site:zhihu.com {_brand_query(slug)} when:{args.days}d", "social"))
-        items, official_links, social_links, failed = [], set(), set(), []
+        # own_links = **自备 RSS**(用户配进 meta 的 RSSHub 源)。它同时也进 social_links
+        # ——分类口径上它确实是 social;单独留一份是为了**名额优先级**(见 _apply_quota)。
+        items, official_links, social_links, own_links, failed = [], set(), set(), set(), []
         for qtext, kind in queries:
             # 官方源**两档都查**:绝大多数官方源只有英文档收录(anthropic/openai/lenovo…
             # 中文档全为 0),但 `qianxin.com/news` **只在中文档有**(CN 12 条 / EN 0)。
@@ -466,7 +527,17 @@ def cmd_discover(args):
                 items.append(e)
         # ⑤ 第五路:自备 RSS 源(自托管 RSSHub 的微博/小红书路由等,§9.9)。
         for feed_url in _brand_rss_feeds(slug):
-            feed_xml = curl(feed_url)
+            # 密钥走 ${ENV} 占位符(公开仓库不能存明文 key)。**日志与候选 md 一律打 feed_url
+            # 这个模板串,不打展开后的真值** —— 展开值带密钥,会进公开 Actions 日志。
+            real_url, missing = expand_secrets(feed_url)
+            if missing:
+                # 与"抓到 0 条"分开报:这是**配置没到位**,不是源站失效,排错方向完全不同。
+                msg = (f"⚠️ 自备 RSS 跳过:{slug} <- {feed_url}"
+                       f"(环境变量未设置:{', '.join(missing)} —— 在 GitHub Actions secrets 里配)")
+                print(f"discover: {msg}", file=sys.stderr)
+                lines.append(f"\n## {slug} —— {msg}")
+                continue
+            feed_xml = curl(real_url)
             got_feed = parse_feed(feed_xml)
             if not got_feed:
                 # 哨兵同官网直采:RSSHub 路由挂了 / cookie 过期 都是**静默失效**,必须喊出来。
@@ -479,7 +550,8 @@ def cmd_discover(args):
                 ET.SubElement(e, "link").text = it["link"]
                 if it["date"]:
                     ET.SubElement(e, "pubDate").text = it["date"]
-                social_links.add(it["link"])
+                social_links.add(it["link"])   # 分类口径:自备 RSS 抓的是社媒 → social
+                own_links.add(it["link"])      # 名额口径:显式配置的源,优先于泛查询
                 items.append(e)
         if failed:
             lines.append(f"\n## {slug} —— ⚠️ 部分源拉取/解析失败:{', '.join(failed)}")
@@ -519,14 +591,11 @@ def cmd_discover(args):
         # (184 条里 98 条官方)。官方一手公告要保证进得来,但媒体的舆情面也不能丢,
         # 故官方最多占一半名额,其余按原序留给媒体。
         off = [x for x in new if x[2] in official_links]
-        soc = [x for x in new if x[2] in social_links and x[2] not in official_links]
+        own = [x for x in new if x[2] in own_links and x[2] not in official_links]
+        soc = [x for x in new if x[2] in social_links
+               and x[2] not in official_links and x[2] not in own_links]
         med = [x for x in new if x[2] not in official_links and x[2] not in social_links]
-        q_off = max(1, args.limit // 2)                  # 官方一手公告优先保进
-        q_soc = max(1, args.limit // 4)                  # 社区信号(知乎)少量保底,不挤媒体面
-        shown = (off[:q_off] + soc[:q_soc] + med)[: args.limit]
-        if len(shown) < args.limit:                      # 不足时按 官方→社区 顺序回填
-            for pool in (off[q_off:], soc[q_soc:]):
-                shown += [x for x in pool if x not in shown][: args.limit - len(shown)]
+        shown = _apply_quota(off, own, soc, med, args.limit)
         omitted = max(0, len(new) - len(shown))
         total_new += len(shown)
         more = f"(另 {omitted} 条同题材省略,防噪音灌水)" if omitted else ""
@@ -539,6 +608,11 @@ def cmd_discover(args):
             eid = next_id(slug, d)  # next_id 只看已入库事件,批内多条人工顺延 NNN
             qj = json.dumps(quote, ensure_ascii=False)
             src_hint = f"(来源:{src})" if src else ""
+            # 召回路径已经确定了 source_type,人工候选 md 里就不该再写死 `media`
+            # (2026-07-27:官方公告与自备 RSS 的微博条目在 md 里全被标成 media,
+            #  人工照抄就是错标。JSON 侧一直是对的,错的只有给人看的那一份)。
+            st = ("official" if link in official_links
+                  else "social" if link in social_links else "media")
             cands.append({
                 "key": hashlib.sha1(link.encode("utf-8")).hexdigest()[:12],
                 "slug": slug,
@@ -549,8 +623,7 @@ def cmd_discover(args):
                 "url": link,
                 "source": (src or "").strip(),
                 # 官方源召回的条目显式标注,便于分类时给更高 severity(旗舰发布 = P0)
-                "source_type": ("official" if link in official_links
-                                else "social" if link in social_links else "media"),
+                "source_type": st,
                 "applicable_dims": [dm for dm, v in dims.items() if v != "off"],
                 "lens_suggest": ["signal"],
                 "fetched_at": now,
@@ -568,7 +641,7 @@ def cmd_discover(args):
   url: {link}
   fetched_at: "{now}"
   lens_map: [signal] # TODO 人工:⊆ origin/category/leverage/identity/signal
-  source_type: media # TODO 人工:official/media/finance/regulator... {src_hint}
+  source_type: {st} # ↑按召回路径判定,人工核对:official/media/finance/regulator... {src_hint}
   note: "每日自动发现候选;标题/日期/URL 取自 Google News RSS。待人工定维度/等级/方向后入库。\"""".rstrip())
     out = "\n".join(lines) + "\n"
     if args.out:
@@ -620,11 +693,55 @@ def cmd_selftest(_args):
     ok(parse_feed("<html>不是 feed</html>") == [], "垃圾输入:返回空,不编造")
     ok(parse_feed("") == [] and parse_feed(None) == [], "空输入:返回空")
 
+    # ── ${ENV} 密钥占位符(公开仓库不能存明文 ACCESS_KEY)────────────────────
+    os.environ["MBA_SELFTEST_KEY"] = "s3cr3t"
+    os.environ.pop("MBA_SELFTEST_ABSENT", None)
+    u, miss = expand_secrets("https://rsshub.example.com/weibo/user/1?key=${MBA_SELFTEST_KEY}")
+    ok(u == "https://rsshub.example.com/weibo/user/1?key=s3cr3t" and miss == [],
+       "占位符:环境变量已设 → 展开为真值")
+    u, miss = expand_secrets("https://x/a?key=${MBA_SELFTEST_ABSENT}")
+    ok(miss == ["MBA_SELFTEST_ABSENT"] and "${MBA_SELFTEST_ABSENT}" in u,
+       "占位符:变量缺失 → 报出变量名且不静默替空(调用方须跳过)")
+    os.environ["MBA_SELFTEST_BLANK"] = "   "
+    _, miss = expand_secrets("https://x/a?key=${MBA_SELFTEST_BLANK}")
+    ok(miss == ["MBA_SELFTEST_BLANK"], "占位符:空白值等同缺失(空 key 会被 403,伪装成路由挂了)")
+    u, miss = expand_secrets("https://x/plain")
+    ok(u == "https://x/plain" and miss == [], "占位符:无占位符的 URL 原样返回(无回归)")
+
+    # ── 名额分配(_apply_quota)—— 2026-07-27 抓到的静默挤压 ────────────────
+    def mk(tag, n):
+        return [(f"{tag}{i}", "2026-07-27", f"https://{tag}/{i}") for i in range(n)]
+
+    off_, own_, soc_, med_ = mk("off", 1), mk("own", 10), mk("soc", 53), mk("med", 33)
+    shown = _apply_quota(off_, own_, soc_, med_, 8)
+    ok(len(shown) == 8, "名额:总数不超过 limit")
+    ok(any(x[2].startswith("https://own/") for x in shown),
+       "名额:自备 RSS 必须进得来(知乎 53 条时曾被 100% 静默挤掉)")
+    n_social = sum(1 for x in shown if x[2].startswith(("https://own/", "https://soc/")))
+    ok(n_social == max(1, 8 // 4), "名额:社区桶总量仍锁在 limit/4(自备 RSS 不额外扩张)")
+    ok(all(x[2].startswith("https://own/")
+           for x in shown if x[2].startswith(("https://own/", "https://soc/"))),
+       "名额:桶内自备 RSS 排在泛查询之前(显式配置 > 顺带召回)")
+    ok(sum(1 for x in shown if x[2].startswith("https://med/")) >= 1,
+       "名额:媒体面不被挤空")
+    shown2 = _apply_quota(mk("off", 20), [], [], [], 6)
+    ok(len(shown2) == 6 and all(x[2].startswith("https://off/") for x in shown2),
+       "名额:只有官方源时用回填占满,不留空位")
+
     import inspect
     src = inspect.getsource(cmd_discover)
     ok("_brand_rss_feeds(" in src and "自备 RSS 0 条" in src,
        "discover:自备 RSS 已接线且带静默失效哨兵")
     ok("social_links.add(it[\"link\"])" in src, "discover:自备 RSS 条目标 social")
+    ok("expand_secrets(feed_url)" in src and "curl(real_url)" in src,
+       "discover:请求用展开后的真 URL")
+    ok("source_type: media #" not in src and "source_type: {st}" in src,
+       "discover:候选 md 的 source_type 按召回路径填,不写死 media(人工照抄会错标)")
+    # 反密钥泄露:哨兵消息里出现的必须是**模板串** feed_url,不能是展开值 real_url。
+    sentinel_lines = [ln for ln in src.splitlines() if "自备 RSS" in ln and "<-" in ln]
+    ok(len(sentinel_lines) == 2 and all("{feed_url}" in ln for ln in sentinel_lines),
+       "discover:自备 RSS 两个哨兵都打模板串(密钥不进公开日志/候选 md)")
+    ok("{real_url}" not in src, "discover:任何日志都不打展开后的 URL")
 
     print(f"fetch_candidate --selftest: "
           f"{'✅ ' + str(checks) + ' 组断言全部通过' if not fails else '❌ 失败: ' + ', '.join(fails)}")
