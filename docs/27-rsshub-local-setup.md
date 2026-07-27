@@ -12,10 +12,18 @@
 ## A. 起服务(1 分钟)
 
 ```bash
-docker run -d --name rsshub --restart unless-stopped -p 1200:1200 diygod/rsshub
+docker run -d --name rsshub --restart unless-stopped -p 1200:1200 diygod/rsshub:chromium-bundled
 # 验证服务活着:
 curl -s http://localhost:1200/healthz        # → ok
 ```
+
+> **⚠️ 必须用 `:chromium-bundled`,不是 `latest`**(2026-07-27 实测)——
+> 新版**微博路由走 Playwright 抓 `m.weibo.cn`**,`latest` 镜像**没打包浏览器**、直接报错;
+> `chromium-bundled` 版才能跑。这一条踩过才知道,别按默认 tag 装。
+>
+> **macOS 装不上 Docker Desktop 时用 OrbStack**:`brew install --cask docker` 需要 sudo
+> 去链接 `/usr/local/bin`;拿不到管理员密码就装 **OrbStack**(`brew install orbstack`)——
+> 更轻、免 sudo,`docker` 命令完全一样(实测 server 29.4.0 正常)。
 
 `--restart unless-stopped`:开机/Docker 重启后自动拉起,免得哪天悄悄停了。
 
@@ -32,6 +40,9 @@ curl -s "http://localhost:1200/weibo/user/<uid>" | head -40
 
 **验收标准**:输出是 RSS(`<rss …><item><title>…真实微博内容…`)。
 出 `<item>` 且标题是该官微的真实微博 → **② 通过,进 C**。
+
+> 2026-07-27 首次实测用**人民日报**(uid `2803301701`)做冒烟——它公开、更新频繁,
+> 适合先证明"路由本身能用",再去配自己真正要监控的品牌官微。
 
 排错:
 - 返回错误/空 → 大概率你的出口 IP 也被访客系统拦(公司网/代理常见),换家庭宽带试;
@@ -51,10 +62,14 @@ curl -s "http://localhost:1200/weibo/user/<uid>" | head -40
 
 ```bash
 # macOS: brew install cloudflared   |   其它平台: developers.cloudflare.com/cloudflared 下载
-cloudflared tunnel --url http://localhost:1200
+cloudflared tunnel --url http://localhost:1200 --protocol http2
 # 输出一个 https://<随机>.trycloudflare.com —— 在手机流量(非家里 WiFi)下打开
 # https://<随机>.trycloudflare.com/weibo/user/<uid> 能出 RSS 即通。
 ```
+
+> **⚠️ `--protocol http2` 往往是必需的**(2026-07-27 实测):cloudflared 默认走 **QUIC(UDP 7844)**,
+> 很多网络(公司网 / 部分家宽 / 酒店)**把 UDP 7844 阻断**,表现为隧道建不起来或时断时续。
+> 加 `--protocol http2` 走 TCP 443 就通了。**连不上先试这个,别怀疑 RSSHub。**
 
 **再换稳定 URL**(正式用):Cloudflare 控制台 → **Zero Trust → Networks → Tunnels →
 Create a tunnel**,照页面给的一行命令在本机安装 connector,把 Public Hostname 配成
@@ -64,6 +79,17 @@ Create a tunnel**,照页面给的一行命令在本机安装 connector,把 Publi
 IP/cookie 去请求微博。给容器加 `-e ACCESS_KEY='<随便一串长随机字符>'`(重建容器:
 `docker rm -f rsshub` 后带上该参数重跑 A 的命令),之后所有请求带 `?key=<那串字符>`
 (具体参数形式以 docs.rsshub.app 的 Access Control 一节为准)。
+
+**隧道建好后必须做的公网侧验收**(本机 curl 通 **≠** GitHub Actions 通 —— 云上走的是公网这一侧):
+
+```bash
+curl -s "https://<你的隧道域名>/healthz"                     # → ok
+curl -s "https://<你的隧道域名>/weibo/user/<uid>" | head -40  # → 出 <item> 且是真实微博
+```
+
+2026-07-27 首次打通时,就是用**另一台机器(数据中心侧)**拉这个 URL 才算验收通过的:
+`/healthz` 200、微博路由 200 / 30KB / **10 条真实条目**,再过一遍本仓库的 `parse_feed`
+→ 10 条、日期全部归一为 ISO、链接可核。**这一步不做,等于没验证 GitHub 那边能不能用。**
 
 ### 方案 b:不穿透,本地 cron 推候选(更私密,多点运维)
 
@@ -107,5 +133,12 @@ IP/cookie 去请求微博。给容器加 `-e ACCESS_KEY='<随便一串长随机�
 2. **反捏造不变**:进库的只有 feed 里逐字的标题/日期/链接;dim/severity 由分类环节判;
    **审计分数从不自动变,合并 PR = 人工闸门**。
 3. **隧道安全**:务必配 `ACCESS_KEY`;URL 别公开发。
-4. 「家庭 IP 能过访客系统」是机制推断 + RSSHub 社区经验 —— **B 步就是拿你的真实网络验证它**,
+   ⚠️ **`trycloudflare` 临时隧道默认无鉴权、公网可达** —— 2026-07-27 实测,
+   一台无关的数据中心机器能直接从该 URL 拉到微博数据。也就是说**任何扫到它的人
+   都能用你的 IP 与带宽去请求微博**(风控算在你头上)。临时验证用完即关;
+   **正式使用必须命名隧道 + `ACCESS_KEY`**。
+4. **临时隧道不要填进 `reports-meta.yaml`**:`trycloudflare` 的 URL **重启即变**、
+   进程停了就断。填进去只会让每日流水线天天请求死 URL、哨兵天天告警。
+   **先建命名隧道拿到稳定域名,再填。**
+5. 「家庭 IP 能过访客系统」是机制推断 + RSSHub 社区经验 —— **B 步就是拿你的真实网络验证它**,
    不通就如实回报,按 §9.9 ③b 决策 Playwright 备选。
