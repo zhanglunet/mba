@@ -102,13 +102,27 @@ def load_yaml(path):
     return yaml.safe_load(open(path, encoding="utf-8")) or {}
 
 
+INVESTORS_DIR = os.path.join(ROOT, "investors")
+
+
 def founder_info(slug):
-    """返回 (name_cn, role)。缺文件时回落 slug。"""
+    """返回 (name_cn, role, kind)。kind ∈ founder / investor / unknown。
+
+    2026-07-26:晚餐参与者可以是**创始人**(founders/<brand>.yaml)或**投资人**
+    (investors/<slug>.yaml)。投资人不隶属被审品牌,没有 /reports/<slug>/ 页,
+    互链要走评委视角而不是品牌报告(见 xlinks)。缺文件时回落 slug,页面不至于崩。
+    """
     p = os.path.join(FOUNDERS_DIR, f"{slug}.yaml")
-    if not os.path.exists(p):
-        return slug, ""
-    f = (load_yaml(p).get("founder") or {})
-    return f.get("name_cn", slug), f.get("role", "")
+    if os.path.exists(p):
+        f = (load_yaml(p).get("founder") or {})
+        return f.get("name_cn", slug), f.get("role", ""), "founder"
+    p = os.path.join(INVESTORS_DIR, f"{slug}.yaml")
+    if os.path.exists(p):
+        i = (load_yaml(p).get("investor") or {})
+        firm = i.get("firm_cn") or i.get("firm_en") or ""
+        role = " · ".join(x for x in (firm, i.get("role", "")) if x)
+        return i.get("name_cn", slug), role, "investor"
+    return slug, "", "unknown"
 
 
 def brand_names():
@@ -149,8 +163,8 @@ def shell(title, desc, nav_html, body):
 
 def render_dinner(stem, data, names):
     a, b = data["brands"]                       # 已按字母序(校验器保证 stem==canonical)
-    an, ar = founder_info(a)
-    bn, br = founder_info(b)
+    an, ar, ak = founder_info(a)
+    bn, br, bk = founder_info(b)
     abn = {a: (an, names.get(a, a)), b: (bn, names.get(b, b))}
 
     courses = sorted(data.get("courses") or [],
@@ -180,7 +194,10 @@ def render_dinner(stem, data, names):
     tensions = "".join(f"<li>{esc(x)}</li>" for x in (data.get("tensions") or []))
     sources = "".join(f"<li>{esc(x)}</li>" for x in (data.get("sources") or []))
 
-    def xlinks(slug, nm, brand):
+    def xlinks(slug, nm, brand, kind="founder"):
+        if kind == "investor":
+            # 投资人没有被审品牌页,互链走评委视角(判断标准在其 SKILL 里)
+            return f'<a href="/judge.html?slug={esc(slug)}">{esc(nm)} 评委视角 →</a>'
         return (f'<a href="/founders/{esc(slug)}.html">{esc(nm)} 创始人页 →</a>'
                 f'<a href="/reports/{esc(slug)}/" style="margin-left:14px">{esc(brand)} 报告 →</a>')
 
@@ -199,8 +216,8 @@ def render_dinner(stem, data, names):
   <div class="box take"><h2>假想合作备忘</h2><ul>{takeaways}</ul></div>
   <div class="box tension"><h2>合作张力(诚实盒)</h2><ul>{tensions}</ul></div>
 
-  <div class="xlinks" style="margin-top:6px">{xlinks(a, an, names.get(a, a))}</div>
-  <div class="xlinks" style="margin-top:4px">{xlinks(b, bn, names.get(b, b))}</div>
+  <div class="xlinks" style="margin-top:6px">{xlinks(a, an, names.get(a, a), ak)}</div>
+  <div class="xlinks" style="margin-top:4px">{xlinks(b, bn, names.get(b, b), bk)}</div>
 
   <h2>数据来源(可复盘)</h2>
   <ul class="sources">{sources}</ul>
@@ -222,7 +239,7 @@ def render_index(built, names):
     founders = []
     for p in sorted(glob.glob(os.path.join(FOUNDERS_DIR, "*.yaml"))):
         slug = os.path.splitext(os.path.basename(p))[0]
-        nm, _ = founder_info(slug)
+        nm, _, _kind = founder_info(slug)
         founders.append({"slug": slug, "name": nm, "brand": names.get(slug, slug)})
     built_stems = [s for s, _, _ in built]
 
@@ -349,8 +366,8 @@ def render_home_block(collabs, names):
     feat = pick_featured(collabs)
     stem, data = feat
     a, b = data["brands"]
-    an, ar = founder_info(a)
-    bn, br = founder_info(b)
+    an, ar, ak = founder_info(a)
+    bn, br, bk = founder_info(b)
     course = pick_highlight_course(data)
 
     bubbles = ""

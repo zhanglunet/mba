@@ -36,6 +36,7 @@
 | 25 | [25-superpowers-checklist.md](25-superpowers-checklist.md) | 贡献者 | **Superpowers 本地 checklist**:web 环境 `/plugin` 装不了插件,把 obra/superpowers 的方法论与铁律(七阶段工作流 + verification/TDD 两条 Iron Law 逐字转写)蒸馏成本地对照表 + MBA 适配(报告/YAML 的等价「测试」=本项目门禁)+ §4 每次开发收尾自检模板;用户 standing rule「每次开发验证 Superpowers」的落地 |
 | 26 | [26-system-overview.md](26-system-overview.md) | 所有人(入门) | **系统如何运作**:全景视角——两个输入(慢变量人物语料 / 快变量舆情信号)、一个核心(panel 编组 → 7 维×5 镜打分)、三个出口(网站 / JSON API / MCP);两个循环(审计循环人驱动 · 舆情循环每日机器驱动)如何交汇于「触发重审」;L1 预筛这道便宜闸门的设计要点;六道门禁 + 「分数从不自动变、合并 PR = 人工闸门」这条铁律;数字快照。网页版 mbabrand.com/system |
 | 27 | [27-rsshub-local-setup.md](27-rsshub-local-setup.md) | 用户 / 运维 | **本机自托管 RSSHub 操作手册**(免费社媒线 ②):docker 起服务 → 验微博路由(uid 自查) → Cloudflare Tunnel(推荐,含 ACCESS_KEY 加固)或本地 cron 推候选 → `rss_feeds` 填 URL 打通 → 哨兵维护与升级;含平台 ToS/账号风控/隧道安全的风险签收清单。对应 docs/16 §9.9 计划的用户侧步骤 |
+| 28 | [28-investor-dimension.md](28-investor-dimension.md) | 产品 / 贡献者 | **投资人维度**:`investors/<slug>.yaml` 按**人**建索引(founders 是按品牌,投资人不隶属被审品牌、放不进去);schema 与 founders 同构 + `firm`/`portfolio`,履历与投资案例强制带 evidence、relation 强制「分析:」;「创始人晚餐」放宽为**创始人 × 投资人**可配对(渲染侧投资人互链走评委视角,避免死链);`validate_investors.py` 12 组自测 + `check_consistency` 第 15 格 |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(原始设计草案) |
 | - | [hackathon/](hackathon/) | 对外 | 5 分钟 pitch + overview deck(Markdown / HTML / PPTX) |
