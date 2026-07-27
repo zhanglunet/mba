@@ -125,6 +125,21 @@ def founder_info(slug):
     return slug, "", "unknown"
 
 
+def party_label(slug, names):
+    """发言气泡/首页亮点里名字后面的小字标签。
+
+    创始人显示**品牌名**(names 来自被审品牌);投资人没有被审品牌,`names.get(slug, slug)`
+    会把 slug 当品牌名显示成「徐新 xuxin」——故投资人改显示**机构名**(今日资本)。
+    """
+    if slug in names:
+        return names[slug]
+    p = os.path.join(INVESTORS_DIR, f"{slug}.yaml")
+    if os.path.exists(p):
+        i = (load_yaml(p).get("investor") or {})
+        return i.get("firm_cn") or i.get("firm_en") or ""
+    return slug
+
+
 def brand_names():
     out = {}
     for r in (load_yaml(META).get("reports") or []):
@@ -165,7 +180,7 @@ def render_dinner(stem, data, names):
     a, b = data["brands"]                       # 已按字母序(校验器保证 stem==canonical)
     an, ar, ak = founder_info(a)
     bn, br, bk = founder_info(b)
-    abn = {a: (an, names.get(a, a)), b: (bn, names.get(b, b))}
+    abn = {a: (an, party_label(a, names)), b: (bn, party_label(b, names))}
 
     courses = sorted(data.get("courses") or [],
                      key=lambda c: LENS_ORDER.index(c["lens"]) if c.get("lens") in LENS_ORDER else 99)
@@ -194,6 +209,13 @@ def render_dinner(stem, data, names):
     tensions = "".join(f"<li>{esc(x)}</li>" for x in (data.get("tensions") or []))
     sources = "".join(f"<li>{esc(x)}</li>" for x in (data.get("sources") or []))
 
+    def subtitle(slug, role, kind):
+        """chip 第二行。创始人是「品牌 · 角色」;**投资人没有被审品牌**,只显示角色
+        (角色里已含机构名)——否则会把 slug 当品牌名显示成「徐新 / xuxin · 今日资本」。"""
+        if kind == "investor":
+            return esc(role)
+        return f"{esc(party_label(slug, names))} · {esc(role)}"
+
     def xlinks(slug, nm, brand, kind="founder"):
         if kind == "investor":
             # 投资人没有被审品牌页,互链走评委视角(判断标准在其 SKILL 里)
@@ -204,9 +226,9 @@ def render_dinner(stem, data, names):
     body = f"""
   <p class="disclaimer">{DISCLAIMER}</p>
   <div class="pair-head">
-    <span class="who-chip"><b>{esc(an)}</b><br><span class="r">{esc(names.get(a, a))} · {esc(ar)}</span></span>
+    <span class="who-chip"><b>{esc(an)}</b><br><span class="r">{subtitle(a, ar, ak)}</span></span>
     <span class="vs">×</span>
-    <span class="who-chip"><b>{esc(bn)}</b><br><span class="r">{esc(names.get(b, b))} · {esc(br)}</span></span>
+    <span class="who-chip"><b>{esc(bn)}</b><br><span class="r">{subtitle(b, br, bk)}</span></span>
   </div>
   <h1 style="margin-top:8px">{esc(data.get("title"))}</h1>
   <p class="scene">{esc(data.get("scene"))}</p>
@@ -228,7 +250,7 @@ def render_dinner(stem, data, names):
            '<a href="/watch/">舆情信号</a>'
            '<a href="/panorama.html">评委全景</a>')
     title = f"{an} × {bn} · 创始人晚餐 · MBA"
-    desc = f"{an}（{names.get(a, a)}）× {bn}（{names.get(b, b)}）的假想晚餐:按 5 镜头推演潜在合作(AI 演绎·非真实合作)。"
+    desc = f"{an}（{party_label(a, names)}）× {bn}（{party_label(b, names)}）的假想晚餐:按 5 镜头推演潜在合作(AI 演绎·非真实合作)。"
     return shell(title, desc, nav, body)
 
 
@@ -376,7 +398,7 @@ def render_home_block(collabs, names):
             who = t.get("who")
             side = "a" if who == a else "b"
             nm = an if who == a else bn
-            brand = names.get(who, who)
+            brand = party_label(who, names)
             bubbles += (f'<div class="dh-bubble {side}"><div class="dh-who">{esc(nm)}'
                         f'<span class="brand">{esc(brand)}</span></div>'
                         f'<div class="dh-say">{esc(_collapse(t.get("say")))}</div></div>')
@@ -390,8 +412,8 @@ def render_home_block(collabs, names):
     return f"""      <div class="dinner-hl">
         <div class="dh-head"><h2>🍽️ 创始人晚餐 · 亮点</h2>{more}</div>
         <div class="dh-card">
-          <div class="dh-pair"><b>{esc(an)}</b><span class="r">{esc(names.get(a, a))}</span>
-            <span class="vs">×</span><b>{esc(bn)}</b><span class="r">{esc(names.get(b, b))}</span>
+          <div class="dh-pair"><b>{esc(an)}</b><span class="r">{esc(party_label(a, names))}</span>
+            <span class="vs">×</span><b>{esc(bn)}</b><span class="r">{esc(party_label(b, names))}</span>
             <span class="dh-lens" style="border-color:{lens_color};color:{lens_color}">{esc(lens_cn)}</span></div>
           <div class="dh-title">{esc(data.get("title"))}</div>
           <div class="dh-turns">{bubbles}</div>
