@@ -811,12 +811,12 @@ asiainfo/zhipu 路径未定。**没配 = 保持原行为,无回归。**
   ⚠ 沙箱假象记录:GitHub `releases.atom` 在本会话被仓库代理拦成 JSON 错误,**不是解析 bug**,
   换 reddit/.rss 与 github.blog/feed 验证通过。
 
-### ② 用户侧验证:本地自托管 RSSHub(**用户动作**,零成本一条命令)
+### ② 用户侧验证:本地自托管 RSSHub(**用户动作**,零成本一条命令)——✅ 2026-07-27 已打通
 
 > **逐步操作手册(含隧道、加固、排错、维护)见 [`docs/27`](27-rsshub-local-setup.md)**;下面是速览。
 
 ```bash
-docker run -d --name rsshub -p 1200:1200 diygod/rsshub
+docker run -d --name rsshub --restart unless-stopped -p 1200:1200 diygod/rsshub:chromium-bundled
 # 微博(公开主页,通常无需 cookie;家庭宽带 IP 一般能过访客系统):
 curl "http://localhost:1200/weibo/user/1746173800"          # 美团官微 uid
 # 小红书(需要 cookie:RSSHub 环境变量 XIAOHONGSHU_COOKIE):
@@ -824,8 +824,16 @@ curl "http://localhost:1200/xiaohongshu/user/<user-id>/notes"
 ```
 
 - **验收标准**:本地能出含 `<item>` 的 RSS(条目标题是真实微博/笔记)。
-- **诚实边界**:「家庭 IP 能过访客系统」是机制推断 + RSSHub 社区经验,数据中心会话**无法代验**;
-  不通就说明该路由当前版本失效,进 ③ 的 Playwright 备选。
+- **实测结果(2026-07-27,用户本机 macOS + 家庭网络)**:全线通。三条踩坑经验已写进 `docs/27`:
+  ① 镜像**必须 `:chromium-bundled`**——新版微博路由走 Playwright 抓 `m.weibo.cn`,`latest` 没打包浏览器直接报错;
+  ② Docker Desktop 装不上(brew 要 sudo)可用 **OrbStack** 免 sudo 替代;
+  ③ `cloudflared` 默认 **QUIC(UDP 7844)常被网络阻断**,加 `--protocol http2` 才连得上。
+  **公网侧代验(本会话数据中心 IP,与 GitHub runner 同一侧)**:`/healthz` 200;
+  `weibo/user/2803301701` 200 / ~30KB / **10 条真实条目**;再过本仓库 `parse_feed` → 10 条、日期全归一 ISO。
+  → 「家庭 IP 能过访客系统」由此**从推断变成实测**,③ 的 Playwright 备选不必启用。
+- **诚实边界**:上述验证跑在**临时 `trycloudflare` 隧道**上——URL 重启即变、且**默认无鉴权公网可达**
+  (数据中心机器能直接拉到数据 = 任何人扫到都能用你的 IP 请求微博)。
+  故**临时 URL 一律不进 `reports-meta.yaml`**;要正式接线必须先建**命名隧道 + `ACCESS_KEY`**。
 - **账号与条款风险由用户拍板**:自动化抓取违反微博/小红书 ToS,cookie 绑定的账号可能被风控。
 - **公网可达性**:每日 workflow 在 GitHub runner 上跑,要吃你本地 RSSHub 有两个选:
   (a) 内网穿透(cloudflared tunnel 免费档)把 `localhost:1200` 暴露成 https URL 填进 meta;
@@ -834,11 +842,10 @@ curl "http://localhost:1200/xiaohongshu/user/<user-id>/notes"
 
 ### ③ 条件分支(②通了 / 没通)
 
-- **②通了**:把 RSSHub URL 填进 `rss_feeds`(每品牌微博一条,有 cookie 再加小红书)→
-  当天流水线开吃,仓库侧零改动。观察一周,信号质量 OK 再考虑给更多品牌配。
-- **②没通**:退到**本地 Playwright + 登录态**脚本(免费但要逐站写、逐站维护),
-  只做微博 + 小红书两站、只抓官方账号页标题;产出直接复用 `rss_feeds` 也吃的候选格式。
-  这条成本高,**等 ② 的实测结果再决定,不预先动工**。
+- **②通了**(← 2026-07-27 实际走到这条):把 RSSHub URL 填进 `rss_feeds`(每品牌微博一条,
+  有 cookie 再加小红书)→ 当天流水线开吃,仓库侧零改动。观察一周,信号质量 OK 再考虑给更多品牌配。
+  **卡口**:等命名隧道 + `ACCESS_KEY` 就位再填,临时 URL 填进去 = 每日请求死链、哨兵天天告警。
+- ~~**②没通**:退到本地 Playwright + 登录态脚本~~ —— **不必启用**(② 已实测通过),留档备查。
 
 ### 全线不变的边界
 
