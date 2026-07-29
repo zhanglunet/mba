@@ -978,3 +978,109 @@
   source_type: media
   note: "LLM 预分类建议(high):AMD战略投资与芯片大单，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-27-anthropic-063
+  date: 2026-07-27
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Our position on open-weights models"
+  quote: "Our position on open-weights models"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE1vVU84Xy1NRFVUV1l6QjNvVTl0QncwbVM0bnRpbmNvUFBNSHNaR3lmTlk0cWRHQ3hKVEZkNGNOVVNaMWFfXzVqTVgxeENSdGV0THY2SUF5VjdPS0h5SUZmTzhfdUgyOExsOG5V?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方立场声明，涉及开源模型策略，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-anthropic-064
+  date: 2026-07-27
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Expanding our partnership with Cognizant"
+  quote: "Expanding our partnership with Cognizant"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9zRV9FTFpYXzJpNTZtMGE1ckUxZWJPS01XS2xkN3JXNXBFNkZIZ3VSSWtjMW9sWFBzU1dPVFNrT0ZBZEt3SHhrQldMX3lvdnliRlpmZ2x1VngtR3NyUndR?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布战略合作扩展，属重要商业事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-anthropic-065
+  date: 2026-07-28
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "数百条Claude聊天记录被谷歌索引，Anthropic回应称用户主动分享所致"
+  quote: "数百条Claude聊天记录被谷歌索引，Anthropic回应称用户主动分享所致"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE9PNGZIUXBsVGlUVDkyNng4bWtPQ2x0RHhzNGZJQmtES1UwTlJDWlJ4QXJ0RW9DSWRNSkpwNXR1cTZabXR2RWpoVXI3Q2dwTjV6emhYby1QcFpHbnNJRWdhRXh1Y08wdzFJdTM1ZTZfZnk5UVA2?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):用户数据被索引，涉及隐私安全问题，具有舆情风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-anthropic-066
+  date: 2026-07-29
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "针对Anthropic的抵制情绪正在硅谷积聚"
+  quote: "针对Anthropic的抵制情绪正在硅谷积聚"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi9gFBVV95cUxOc1htSTVCcGp5VUN2S1RMMGJCYV9CNjdUZFdYdXFaSEdNSHM3blVhRHNjZGpTRlNqai1hbElZczctM05LNUJtcVdhZE0yNE53bnVVUDVoSXdtWU1FbERUS053d2tBRFQ2UmNOSVdvdXVJV3Y2ZHhRM1hGQ0dqZW9KalprT2tRd1FDalFSYXlYZThVTHVSaUZfVWhIekllSDMxSnpyMmwyTHk5YmxlVHlCTWo0YjlNU2FlSFFiZ0tKek5hUmpLNnFiYURqYVhJajlBc2VxUTk0dURlUzFVeENxZWFBOHFENjJTbXdNNGVuQ0hKdm5SVXc?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):硅谷抵制情绪涉及品牌声誉,但缺乏具体事件触发点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-anthropic-067
+  date: 2026-07-28
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic公司的Claude AI共享聊天记录出现在谷歌搜索结果中，引发了隐私担忧"
+  quote: "Anthropic公司的Claude AI共享聊天记录出现在谷歌搜索结果中，引发了隐私担忧"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE9EcXpfbjl4emVXNkllSnR4ekJwODV0Tlc3TzRBLVlnNzNBcWNZc3NlYXhKeGRmR3JDT2dVZERNTzVQNmZYY3N4S3VZOTdoUE4xRGxnM3RGX2hZbEs0RWhNdUI0dWFweFNRN1pNRU5NaFItRlhseUE?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude聊天记录隐私泄露,涉及用户数据安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-anthropic-068
+  date: 2026-07-27
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI与Anthropic同日发布语音功能重大更新-人工智能"
+  quote: "OpenAI与Anthropic同日发布语音功能重大更新-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wdnhVRnYyMTlMdFZmOHVHOUtVSjBXenZONUJPT0pwdEdxd3dKbm1wSlpnVXFIeV9nN2szSHIyMWdQMVBHOVRnYzZOV29pQ3FfMUZtRWM2UnVvQVE3WUE?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能更新,与竞品对标,具有行业参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-anthropic-069
+  date: 2026-07-27
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "安全厂商AbnormalAI遭AI巨头Anthropic起诉品牌侵权，官方激烈回应"
+  quote: "安全厂商AbnormalAI遭AI巨头Anthropic起诉品牌侵权，官方激烈回应"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ELWFab1FrYktzT19DNm5QXzhCVzUxS3FSZGgwMmNPZG5xaml6cHJHVEVKSmF0dzd2WnNuQy13bmdUaFZCMVF5blA3RWxLQQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic主动起诉品牌侵权,涉及法律纠纷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

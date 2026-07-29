@@ -944,3 +944,94 @@
   source_type: media
   note: "LLM 预分类建议(med):分析师预期Azure和Copilot驱动业绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-27-microsoft-062
+  date: 2026-07-27
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Project Perception"
+  quote: "Introducing Project Perception"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mVmxKZUNCUEtOazJmLVJtWEhkOUhBQ0tyNWd2d25CSVNJSC1MOG0zNlJfT2RrQU1fNURSNTdsaWlMTVVoOVlKLUs1WnNGNGIxVGJzb1pHWFgwWE0wTTkwQw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方发布Project Perception新项目，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-microsoft-063
+  date: 2026-07-27
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Windows Server 2025 中文版、英文版下载 (2026 年 7 月更新)"
+  quote: "Windows Server 2025 中文版、英文版下载 (2026 年 7 月更新)"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mR0RSZEg2ZWNiQ0p6Nm5tdjRnVTAzUi1EMmpnWDhla0hoMERURF9FZVBGMk9GWjIyUWFMV3lOcGI0dEN2dGoyZUthS0JzMHdYZkhhZ18ydDdkMXZo?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(med):Windows Server 2025版本更新发布，产品迭代事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-microsoft-064
+  date: 2026-07-28
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "速递｜微软推出自研网络安全AI模型MAI-Cyber-1-Flash，对标Anthropic Mythos"
+  quote: "速递｜微软推出自研网络安全AI模型MAI-Cyber-1-Flash，对标Anthropic Mythos"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE41ZjVEWnRLVTBKRnlXaWw1UlVMX2daU1hxZWl4eW9pZGdtNF80WWlRbzlxWjlYSFpZREdrQlFTeWF5eUUxWVlJWHlNRVdjcTNTUmJKbmtySElWQksw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):微软自研网络安全AI模型发布，新产品线重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-microsoft-065
+  date: 2026-07-28
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软推出由人工智能驱动的网络安全平台“Project Perception”"
+  quote: "微软推出由人工智能驱动的网络安全平台“Project Perception”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitwFBVV95cUxOVVoxS2Y2UnV6NDlZT1o4b3pScWFCTE1ON0Vpb1VBTnd6eG9NcmstZjVoT3h6OHppbmZFd3F6WExQb3dVU19YZF9aVW5uV3ZFbnhhN1RkdFJSVlhRU1BxbmJYck1LNlFJUGVhU1pHMmRTOW80blZaa08wdGxiMFpPQXM3NXRKOWVIaFNEUmJwUkVCYjhCcWdMT2pzc0F6dEp3TjhBWGJuazNGTUdXQkZxdFZPN01sbzQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软推出AI驱动网络安全平台Project Perception，新产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-microsoft-066
+  date: 2026-07-27
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软强推 Office 升级广告横幅，付费 Microsoft 365 用户也无法关闭"
+  quote: "微软强推 Office 升级广告横幅，付费 Microsoft 365 用户也无法关闭"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5qWWZodW13NU1kOTdKblJSdXFzeld3YlA1aW1HcEFoYjJ4bFRQZ1ZsN3VmOF9ydnNqR1h4SUZob3hNeVVDUUE4LUtSSHFMX1hQcVNPY3ItM3FKZGRxcDRKOGdwZWhKMDh0VVNHSF82Q0Y4WFA2azBRVDdCemU1YWM?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):付费用户体验问题，强制广告引发用户不满，舆情风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-microsoft-067
+  date: 2026-07-28
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Windows 11：微软的新TPM规定不会影响您的电脑"
+  quote: "Windows 11：微软的新TPM规定不会影响您的电脑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE04T2R4UkpybXBmQjEtbXNCZFZ2bUxlODM2WHlRQkRoU2I2V2xhNlB0M2R1VTNBOXUzV2trelJmMnp6WWo4SHRuS1RFczVaY01TaGFCb0xmTl80VmpJdFR0R0RibGx2d2FvRWRmVTNTVQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):微软澄清TPM规定政策，回应用户关切。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

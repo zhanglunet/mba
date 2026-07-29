@@ -1253,3 +1253,109 @@
   source_type: media
   note: "LLM 预分类建议(high):马斯克评价创立OpenAI加速AI竞赛，历史观点与竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-28-openai-080
+  date: 2026-07-28
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "突发，翁荔官宣离职！穆拉蒂的创始团队仅剩两人"
+  quote: "突发，翁荔官宣离职！穆拉蒂的创始团队仅剩两人"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE13ZjN5NU56SkJOT0pWVlZ3Z0gxdGhVYnkzV2NKVWw1NTA2MzVLZ1dOb3hJWWU2bkIwVW5BVmdlbzh0Q3RXVnV1THUzRUFnNGxkT2R4aUhVMW9XcEZI?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):核心高管离职，创始团队重大变动，显著舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-openai-081
+  date: 2026-07-29
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI发布开源代码安全工具Codex Security CLI 处于早期阶段"
+  quote: "OpenAI发布开源代码安全工具Codex Security CLI 处于早期阶段"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JZE9ueld6anE1Smk5aWRobmZZcWluU3NKcmJzX05IVWRheUpoTUFZbU1YOGMxTVI3NE9jU2Y5NHNxTWZER1ZJNXFOMWRFQkNnQ1A3ZG1OOFdrVGRHOXIyUWxn?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品发布（开源工具），产品线扩展，一般舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-openai-082
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI“失控智能体”入侵Modal Labs的一名客户"
+  quote: "OpenAI“失控智能体”入侵Modal Labs的一名客户"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE81TmlIREoydXpVWUJsdmFBb1VKdXJjek9Scy0yV09Zc0wxbDByOEhoWk55Z1RrdGdWeWxNMEVCb0RCc2otMElITWxnT1E1X1plU1dN?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AI智能体安全事故，涉及客户系统入侵，显著负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-openai-083
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "科普一下 | OpenAI智能体侵入Hugging Face，AI真的会“造反”吗？"
+  quote: "科普一下 | OpenAI智能体侵入Hugging Face，AI真的会“造反”吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1nVHlRTko4MFdwcFFNU1hwQWhWeVl0bmR5MzBON18xc3VoQXphT0JoR3I1Y1ZHVURGY1ExbHpTOWF6Ri1LTjZxRWU5S1hXYklHcjlKbmhTVlNMYkNKNmVJT2VuRFpWaFo1VmRnbzBhbXQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AI失控事件报道，安全风险舆情，显著负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-openai-084
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "AI进化太快了？来自Anthropic和OpenAI的1100名研究员联合起来向全人类发出了警告"
+  quote: "AI进化太快了？来自Anthropic和OpenAI的1100名研究员联合起来向全人类发出了警告"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5CdUhRWWVLWXN2THdtd1N6RFpVaVE5YnVSck05Z2F6ZElVaXVudmZOTzZuQVNWbG4zMjhfLXc0bkJkYm1zSDN3QUF5cTBaY0dKNXhMaUlOX3k4czNoQ25vYjN5LVpYbGhmQVhnZW5tR2JSSGQ2Ykw2cG5XRm50RWs?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模研究员联署警告，涉及OpenAI，显著舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-openai-085
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI与Anthropic员工传阅请愿书 拟呼吁华府放慢前沿AI发展步伐"
+  quote: "OpenAI与Anthropic员工传阅请愿书 拟呼吁华府放慢前沿AI发展步伐"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikwJBVV95cUxQSm9hZ2VRSWMtVk9rcjhMa0tFQnMtc3FGeXZBVTNpLVF0UV95LUxjRVR6VEFlaGdzS200UnlHQnVCQV9BTFJfdEI3WVB6VnM3QVRyNWNwQ1hXamlwQzhFQkFpZldESjlLT3VtSm5KaUltdU9CbjI0Vnlqblc5U3RRVXVNd3lDcXVJUEVfYm1idEZOVW5yM0pfUk1ieWRTbDNEdHEzOVVyUUNXeGc1X1Y0enJLZE1OZ1Z1V3dyak4wV2hIVDlTZHJaVVNkQjUtNnEyZWJDUlFUXzBCN0FkRXhaRmRmOEJiOFlxUmlnT1VzcjIzV1BDNkU3d1FzcFg4d1pWYjd3QXdfYzcweFM1anlPclNOSQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):员工请愿书，涉及监管政策倡议，显著舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-openai-086
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI測試再爆AI失控 千人聯署籲強化治理"
+  quote: "OpenAI測試再爆AI失控 千人聯署籲強化治理"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE44R2k5Tk9DZXIwbHhPMFNNckxIOWVzRG0tTTR4R3hVRXFGdFNyQmtOanEyd1ZFQnJSMVd4aUFkR0FFdVpwNC1RS1JuM2hXOFc5dlFjTlhCamFrYkJQdTd3Z9IBZkFVX3lxTE5USVJiRFNtTmhkdXdFYVhYSkNJS3J1TkI4RVNVVmFuRE5BUVdyU0h2b1JObi1lNkF2UFdrNTlJZzZKT3hvUUxldVVDNGlTQmNEWWstX0hhSE94VnRmVm82UUpLbU84dw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AI失控测试再爆，千人联署，重大安全舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

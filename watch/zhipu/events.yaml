@@ -269,3 +269,34 @@
   source_type: media
   note: "LLM 预分类建议(high):美国官员公开评价Kimi K3性能威胁，涉及地缘政治舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-27-zhipu-016
+  date: 2026-07-27
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "中國開源模型 爭取AI規則權"
+  quote: "中國開源模型 爭取AI規則權"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxOczdvQ1ZPUnk1ZHBWYW1aRVVwVi02UU1XYVJoWUs4clJ6MjE5RDZ1Nk9GWlctdjB6RlBMMFlSV1h2ZldtRU5CWGxaaTBhazRXUmg4MjI1SUNLYTdNVGdDaXdqZGI5djY2eFIwTWM0ZmYyX0RRX0VJaG9VeGt1cV95ejA1V2lmTmstS0HSAWdBVV95cUxOUmxwblpvMThtT1FOU0ZSZHgxTl9jLTVkQmh4WXdvRFFBY3AxLUZNSlZvWENqOEZYRmZxbXF5eXVVMHNKMzdiVE5sMDNjMTRyZ0RjZmZrRTZ3NVlUNVJiTjVZSmN2VGVr?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及开源模型与AI规则权争夺，行业政策信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-zhipu-017
+  date: 2026-07-28
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "《大行》汇丰研究降智谱(02513.HK)目标价至1,500元 竞争加剧 料明年提早扭亏"
+  quote: "《大行》汇丰研究降智谱(02513.HK)目标价至1,500元 竞争加剧 料明年提早扭亏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxPM2Q4MDdPREZPSm5USUp6SEZmUmxTbkMwYk93dEpWZF9DcE5pWkdDZTFKbXFjMUlnNEJVQm05UjVtZG5hUHdJdzhJUjc0TXpvQ3BBMWZNb1BkSHhKaUF6azR4RHVKYnBCTU9wZmdrcmxaTmFwWmlaTjhSWE5DcHU3T1dvc19sV0NBUDVIcXpkdE5lTnVrckU4bDRVMWV1NjFZ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报预期调整，竞争压力与扭亏预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -870,3 +870,79 @@
   source_type: media
   note: "LLM 预分类建议(high):欧盟罚款10亿美元，重复事件（与i5同源）。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-28-google-057
+  date: 2026-07-28
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini API Managed Agents: 3.6 Flash, hooks, and more"
+  quote: "Gemini API Managed Agents: 3.6 Flash, hooks, and more"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxPVjZ3STZxcEtMM2xXUTFpSG1xTXJramphRGZuOFp6aC1CQnNhZVpfQlpGQjJBNmgxMDJvYXdoamdvbXVEelNPeXJXdFdaamdaNEVPeG1tLS1vaHFMMERuTk43OTBqX2xKcWp5N2UyTmFLaExtb3pvXzBGZDZvSjNPNE1aLURLUXlwTW5GTGh5ckRqbkUtYkdRTUhhSUFuNVlPS1lTcTE2eFdDMVUyZ1Fpb2VMMUo4OG1uU1E?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Gemini API新功能与模型更新，产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-google-058
+  date: 2026-07-27
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NOAA and Google Cloud collaborate to advance weather forecasting."
+  quote: "NOAA and Google Cloud collaborate to advance weather forecasting."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOajhUclc2bE9qbVloM0JYZ0RFdEtGMk82VS10d1VjV0hDSmV0S01oMWl5MFE0M0lIZnM1NktlS3JRUGtnUm5SdV9jVHdIYW5JSHhLelpDUFF0X3IteFZGb05CN1dqLTcxRUNPMm9wcW9TYnRScmFzUXRKbEZWZnZ6bDlMNXVCQ0dvMXJ3NFNDSXltQS1Vdy1ncHpqZ1p0bHU1WGx6RjMxbF9pc2hNenMyN2lRWkw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布与NOAA合作气象预报，战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-google-059
+  date: 2026-07-27
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Going Beyond Zero: A New Paradigm For Enterprise Security"
+  quote: "Going Beyond Zero: A New Paradigm For Enterprise Security"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxQT2lVSlhoV2duR3V2d202UTNUNkJLWnJvWVVLeGFpMHc5UUtwemhjajJuUTlpS0JoeEM1SUVkWUNjTkwxUGpTa21ILUozenlEUVllUFQzY2FhMDNOTmdZQzVwMkFiS1V1RjB2cGRVMy1hOS00c0dwemNDSGxPeTJ5OER1MGJPeWowYnN0Z2xtaw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):企业安全新范式发布，技术战略更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-26-google-060
+  date: 2026-07-26
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "30分钟详解 Google Cloud Next ’25 ：Firebase Studio 实战、A2A 智能体协议、Gemini Live API"
+  quote: "30分钟详解 Google Cloud Next ’25 ：Firebase Studio 实战、A2A 智能体协议、Gemini Live API"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxPTTFJTUtyMndMYWU3eDV2TkdUZjVqWVpUc0ZUSnY4M1VGekl5d1BNMzRvVEFFY1QyMHMzdms4MXo3cmdRSFBQZk03VWp6UHl5ZWtobTg0Q2wyeVNNMWdCX1BfV3cxV3FDaFNiYWtJMW5WRVVmZG5yQ1hXMElyQ2didkQzQ0ZpOWlhc2c2S2hrcTRrWTNka2Jtbw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Google Cloud Next大会新品发布详解，Firebase与Gemini API更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-google-061
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Google Pixel 11 Pro (XL)：爆料显示电池容量缩小，再次暗示价格可能上涨"
+  quote: "Google Pixel 11 Pro (XL)：爆料显示电池容量缩小，再次暗示价格可能上涨"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE1jNTBpV1BmcXdNeElWNm52VHIwWng1Tk16QXdkSnYzM012cGYtTGVCOGN5eWlWSXJXTkwwN0sxSEpOMDhiMC1WT29MazBDREFGOWtUQUJOWGs0V3Q3TmhYUkVydWFFekFwcTNqUTdEdlBSYXFaNTVIaTRR?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Pixel 11爆料显示硬件缩水与价格上涨预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

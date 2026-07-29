@@ -764,3 +764,154 @@
   source_type: media
   note: "LLM 预分类建议(high):投资方获利28亿，DeepSeek作为投资标的的价值体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-07-27-deepseek-050
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "梁文锋不满会谈纪要外流，DeepSeek 第二轮融资紧急叫停；特斯拉20 亿美金收购AI 硬件公司；月之暗面Kimi K3 庆功照流出| 极客早知道"
+  quote: "梁文锋不满会谈纪要外流，DeepSeek 第二轮融资紧急叫停；特斯拉20 亿美金收购AI 硬件公司；月之暗面Kimi K3 庆功照流出| 极客早知道"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBKaWZqazNFa1pmOGd3cTV0NnhILWlQUGwxbTNQWFUwd0FZby05WVZKM3dCWWowZm95QXlNVEJsRVljT3h1a1JBSU1KVXJjNmFDM2VKdEFfYnpjLUp3?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):融资暂停、内部信息泄露、创始人风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-deepseek-051
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "4 小时内部录音，深度求索真正的野心"
+  quote: "4 小时内部录音，深度求索真正的野心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTFA1SjJtSnJDdnhNX3JBOGJwWklEZ2xsYWpkSDZ6ODRpLVFMbWFuZzJubDJyWXRTMDRnUHVfWXZRTzhEcG10U0ZyZEJYMFNNcVVDejdyT1NiMjA?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):内部录音泄露涉及战略意图，信息安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-deepseek-052
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "【嘉賓連線】DeepSeek融資突停 梁文鋒講話洩密？"
+  quote: "【嘉賓連線】DeepSeek融資突停 梁文鋒講話洩密？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE94ZjRZaTY3R2RxUHRlRWlSTUpvTFY4Mlcycko1SG9NQV8wLWlNS1MwMzVKQlRGbUVCTlJBVzdkTjdvdzkxM3U3Mzk2S0xqa2xWcUdvc3RmeUJ3SkRfRG9jNtIBZkFVX3lxTFB5ZExqTWthR05BR1h6dEwyRmFhclgyeG8yckdtUXdNai1zS2FqV2hsWkFic2xpVHlzT3FRemF2eDJTQ2dpb09IM2F4N0tsTlJJZzF0WVJ5U0NWUjZoZ09lOG1XRDhwUQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资暂停与信息泄露事件确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-deepseek-053
+  date: 2026-07-27
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek首轮融资完成,传梁文锋砸200亿“一票独大”"
+  quote: "DeepSeek首轮融资完成,传梁文锋砸200亿“一票独大”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5hT29hOWk0N1hvd21wZW1uMEktaFZxUGtZTExkS2xHVEFEd1d5SE1MU2ZuVHc1bkFrZHdZTEZfVHBTUHp0c0I3YkE0VklTWTd1X2NjdlZnb2RrZU9MSkVKMjBZWFA4enhrNE90Q3A5VXlNVEVtLVFVQlNMZ1ladVE?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成且金额明确，创始人控制权结构。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-deepseek-054
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "下午察：外泄梁文锋“金句”给美国递刀子？"
+  quote: "下午察：外泄梁文锋“金句”给美国递刀子？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE5LdEQxVVNncE5xX3V5QmpRNl94bW9BdjRveWU2UUlxaDYwWWR6WFFwOURhYkxXY3Q0OFZmS0Vxc2FZOGRmbGJFM0dkeGprMGQ2MG1UejFIQ3U3SUJsdG1xMVF3bXNWM3J1SXc?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):泄露言论涉及敏感政治风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-26-deepseek-055
+  date: 2026-07-26
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek创始人梁文锋称不追求利润最大化 其经营思路很有特点"
+  quote: "DeepSeek创始人梁文锋称不追求利润最大化 其经营思路很有特点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi-gFBVV95cUxNMlRPcjJXbGtYY0VFQmZ1a2xpdmIxZE56NFlOeXpOZ0ZkTnJ1OXFpck1vTTh0Q3BGcDZacWxwSEtkd283RE1mSjNLVEh6cFFMRHl0UmYwNXJWV0l3cTh1YkxGVGQzMDBCRlJaQm1zRHh2aGpCY1hselp4MlZpQmN6TDd1YVpTZ0tsWnZaM1Y4TWh3V0Y4V1JzaWtURVhQcTFrNEVBUzZHVGU0X0htZ2NXQkktdTZnVW5FYTFGZlVYMHJaNTN2ZmpFeHI2OXhRNUZKM2FjX1dXX2k2cU9uTkZNdVhXdFlVVUNKLS1hVjVMUFVYZi01Y1FrNVF3?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人经营理念表态，品牌定位信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-deepseek-056
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "傳DeepSeek因會議錄音外泄暫停第二輪融資"
+  quote: "傳DeepSeek因會議錄音外泄暫停第二輪融資"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yTFAxQ3RSOENZbXhZRS0yOFJRZC1CVHRCVnNvNm5UU3pXOUpLNzZuWG5XRGMxVXZqQnNsR291UWUtbXNwTExvOWp6bEJrNmZWbHplWnliY1l6UTZfTzJvQ9IBZkFVX3lxTE0zRjdvbUpHcEpTYUdSNmFLRUhiMXJLZk1uN0pybURYaXZiT0MzRTUxaTJINUxEeFRFOVBOUlVLUVNtNzZzSVRWSDJneTlpa01zY3NscXAtLTVxWlNYVUhkYklaZHBlQQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资暂停事件确认，内部管理风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-deepseek-057
+  date: 2026-07-29
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek创办人梁文锋：中美AI差距本质是算力而非人才"
+  quote: "DeepSeek创办人梁文锋：中美AI差距本质是算力而非人才"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizwJBVV95cUxPb19xaU1rM2tscWJHSEh5c3FiaUQzX3FLUHZHbktsOUNnT2hyRDJqYWNLRmdaWmw3SklzRm1jMEZ4dUlWRGo4N3dkMmZweUVVYU1memJYU0lrV0N1dm5RVmhjc3VMbWpyQUNYSTcxWGV3ZFJsYUtwTTI4UXNFSkN0aFZ2QW8tOEVVemM4bGRTZnFnaTdZWEZFSXdLUWRXMm94ZmVGTnBoMjBleVZhdW1mRGp2Uk9Ia0xoaW5mSVUzd1Y2SllURlVlbE9GZmdiNFhoZUtuSzgzUWk4MkdUbWh4b0RSMFBBbmkwNmV2dHBPNFpKejFuNGg5a1dWV3o3VUpRSl9xWTNrOXJPa3VZWVpVRUNQbHFGVkJibkNmNHVPeVFpRkdVeWdYT3JHRTd6a1YyOWxKU1lpTDlINUFvS21qQlF0Ujk1MUFwWFFjM0gxOA?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人战略观点，品牌定位与竞争认知。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-deepseek-058
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "梁文锋不满会谈纪要外流，DeepSeek 第二轮融资紧急叫停；特斯拉20 亿美金收购AI 硬件公司；月之暗面Kimi K3 庆功照流出"
+  quote: "梁文锋不满会谈纪要外流，DeepSeek 第二轮融资紧急叫停；特斯拉20 亿美金收购AI 硬件公司；月之暗面Kimi K3 庆功照流出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFAzVmJXX2tnSTdPMVhtUWJ0dUwzNkRLZExEQ01tQWZkZUxEWk9sR0huN3piOWdDQmFnenNxQkRKY0ZIWEJ5OVI0UE9qQnk?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资暂停、泄露事件重复确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-26-deepseek-059
+  date: 2026-07-26
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek融资突喊停 梁文锋“泄密”引关注"
+  quote: "DeepSeek融资突喊停 梁文锋“泄密”引关注"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zLXgwREVDZ2lYdWFWQkV3SmVxOS10dHdYeWFnTHlFM0RKaEl2akdrTWFPWGR0dUlYeDJ3d3VoRWpzSEZzNkN6cU9uSGNmckxaQ0piYjhhSm9qc1hDcjkxWXNDUi1CaHIy?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资暂停与泄密事件核心舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
