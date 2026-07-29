@@ -355,3 +355,139 @@
   source_type: media
   note: "LLM 预分类建议(high):联想作为服务器厂商受益于AI资本开支增长，业绩验证期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-28-lenovo-023
+  date: 2026-07-28
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Powers Esports World Cup 2026 as a Founding Partner"
+  quote: "Lenovo Powers Esports World Cup 2026 as a Founding Partner"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxPcWpoTERLZi14T0pyU3Q4WEVHWjgwdURzRUNLSlc5bnNTV0tRQWVtb1NOcV8wZXZ0N3NwWTM3dFlZSlhtN1B6aDRLc29tUzc3RjFBWFpHZnZGVHNHbGkzZjIydzZFMzUtRU40LUlDSU5XYUtfd1V6d25PUTZVQXNaNjY2d2xWckRIQlNMdFhYZGsxT3hKamVPTTdjRzQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):品牌赞助电竞赛事，属营销合作事件，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-lenovo-024
+  date: 2026-07-27
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo reaches new high in Workplace Pride Benchmark with first ‘Advocate’ status"
+  quote: "Lenovo reaches new high in Workplace Pride Benchmark with first ‘Advocate’ status"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxNNE0wdFJHaS15ZXB2emk2eGlKbFY0dktnRWtCM09IbHZPT3U5UHlBMmVySDlrY3ZUNk50WjJVQi1vRFhxTGpBaXFrVDBSUFYxNXAwQjBZTEkySFRKNGloT3JwX3FnWTFtVkt5NHBCZGtmYk1ad3ozTFlERFRvTGVzR3hsZ3B1bVNpNEpvWW15ZEg?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [identity]
+  source_type: official
+  note: "LLM 预分类建议(high):企业社会责任认证升级，属品牌形象事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-lenovo-025
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Motorola Expands Indigenous Languages Initiative with Indigenous Collections App"
+  quote: "Motorola Expands Indigenous Languages Initiative with Indigenous Collections App"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxNOG4xOGRTSjFJT2dpUlVidGJBM2xBbFA2LXpEemdxODlsdmk0TVVLM1BjbzExWWFCdVBBNHdLcTFvRzN3QkR6aHl2dVpxTm5oZDZOeTFpRjUwSEtNd2EyOGJmWnQ0SkZ2b3hEellhZmJaaTdKQko5SlhETVdSaXBUTWNMQVdMcEhlU0MyM1Y1NmJRMFZGS2xhRzVITXVISXFGTmc?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):摩托罗拉产品功能扩展，属产品更新类事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-lenovo-026
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Jumps to #153 on ‘Fortune Global 500’ as AI-driven Business Fuels Growth"
+  quote: "Lenovo Jumps to #153 on ‘Fortune Global 500’ as AI-driven Business Fuels Growth"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixAFBVV95cUxPWFVKYlpQNWhvaVIwSHVoUE5OX3NWMEdoaTFfMEp6Z3EweHdBRGJDU0xNU2NCbG4zbFk3cDVUdzdraW5Jd0JjRGt0YndhTmZxZFRVLXcxSW1NUVlkb0tXcThHWmpCc19GbHFFa25ZX1BPT0E0ZnV6d2ptMk4yd0hWc0ZDcDlVRTlPNTNTWFZWTWJoUmJ6eGxxSFo3Y29rRzJaTVVJdk96Ul91bm9zMGppR3pjWkVsOUpyOEU0QVFncENZcGJa?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):财富500强排名提升，AI驱动增长，具有显著市场信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-lenovo-027
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "摩根大通上调联想集团评级至\"增持\"，目标价升至30港元"
+  quote: "摩根大通上调联想集团评级至\"增持\"，目标价升至30港元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBHYzA2eDF0SVRhM3cxTnZ6RDdmZmNOSTdNVHlLRDRzR1E4R3NxVDJqMFVuN1VTUy1OREg3Zlh1djFWXzFRZDhiZ3A4TThSNlJuY1BZ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):投行上调评级和目标价，具有市场信号意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-lenovo-028
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "ISG高增长支撑业绩，瑞银看好联想集团服务器业务改善"
+  quote: "ISG高增长支撑业绩，瑞银看好联想集团服务器业务改善"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxPejNmXzh4eUd5bUppVFZHa21hWUFTd0RITm9LclEwdmItbFJKV3RxamJIclNBanlOdzBNdlp0cHc2Y05GYzVBTndRdjJRUFc3S290WW1nQ21HLW1QNThEZDlJZXBlRXFtdk9iMmJIRnBzamFsLXlMcEpla0VRbFVoM09rU19ZZ0ktRkFnejJwQmRIOVU2Mzk0ZWRyUlFnQQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):投行看好服务器业务，属市场分析信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-lenovo-029
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "营收净利增长目标清晰 海通国际重点推荐联想集团"
+  quote: "营收净利增长目标清晰 海通国际重点推荐联想集团"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yeGUyazV6NGRMNV9zcGpBOHphQ2t3OEFoTWVOYVg4RllzRE5xTzJVSl8zb1Y1eEtHQUlxOTg5bmM3eWdjdXp5WlhETGxBT2o1NHQ0?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):投行重点推荐，业绩目标明确，具有市场信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-lenovo-030
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "公募基金加仓AI算力硬件，联想集团首次进入计算机行业重仓前十"
+  quote: "公募基金加仓AI算力硬件，联想集团首次进入计算机行业重仓前十"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxONDhjN2VfYmpsY3Jha2lQVzFXeHBMNTVnNXpXenhBOWpUUC05eDlBSjY5NWV1Tnl3ei1OMjB1Y24yenFRZC1XbUQta1pwU1pjZEpudExXa3JPYTlzM08zMXAwbjJ0VXc0RUdMUUNoZGdzVG11WU1RQmw2YnRXczBrMTY0MC1VN1lGcnhTRE1LemNqWVkyZkZ2bTAzdE94R2x1S1J6Z2ZWZGpEYWZlUDNN?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):基金加仓AI硬件，联想首入行业重仓前十，市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-lenovo-031
+  date: 2026-07-28
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Lenovo Group Stock Sheds 3.7% in Hong Kong"
+  quote: "Lenovo Group Stock Sheds 3.7% in Hong Kong"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxPdGlqYnZyZTQ2UkpnamV5dHBvdll4SlUtU0R5c3ZTNW41TmdjcE1CcElUWFZucnl5WDJWWVpCdTBXTG1Ob2xlTEdDUHpEamxCZmtCRVZLTHNMZ2FQNlUyMXphakJaTVU4YTM3dkxZV1VWOWtNU2lSelBaMjZYNkpwWTdXd3pfckJKMUhQWEFxWXJ4Zw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价下跌事件，属市场表现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -975,3 +975,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Apple TV 内容策略更新，新纪录片系列发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-28-apple-064
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple Upgrade launches in the United States"
+  quote: "Apple Upgrade launches in the United States"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSjRzdmZCOXJRTkVEWmotS2QzZGM3ejFWeGMzZkRfT3dkLTB3c0s2Rml6RE1nU3FRSmNxNDBaQlpRQ0FJYWxOUWd6MFIwVjEwT3l5aWJXLUdsQU1Sdk9PYnRRTjFLUnJoUkNlQzNXcTRaR0hyNnRQSkdkd2tRSkEtblJnVnZlZTRlUm1N?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):苹果官方发布设备升级服务，新商业模式推出。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-apple-065
+  date: 2026-07-29
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "月租 17.99 美元起，苹果在美推出全新设备灵活租赁服务"
+  quote: "月租 17.99 美元起，苹果在美推出全新设备灵活租赁服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE9wVTVXQi10OGFQY1ljRUVfeFdLNVc2Vlc4NjdsVER5N19uV2RzSkNqWDN3ay01cFQtb1lhSkRSSmF3T3JWdDZqWXpraWNJMGZYNUVkTTE0bElqaVB3R2p6UTZ1LXZ2X1g5QzltYVhHbG1uQWJGUlR4Mw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果推出设备租赁服务，新商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-apple-066
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果市值首破5万亿"
+  quote: "苹果市值首破5万亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxOOHNCTFFoWTNXUWU3X1lCaDJ4bDk2SVFyY2pLbkw1TUQ1VE8wcWgzMFJ5c0Jxd2RUZ1RWU1ZSNnRmSnhfenNJbUhwejh4RjkwVFVtc2NreHVoZlA0SEVfcmNfR21fX2xGYU1UUVhmbVRmNnpBQjQ1YWk4NkE4RmV4a2prOTg5WmVfamVSbXNodjhEbXotczA1TEE5cmlORHRjbkNpY3FURQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果市值首破5万亿，重要财务里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-apple-067
+  date: 2026-07-29
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "古尔曼爆料苹果今秋推2026款Apple TV和HomePod mini"
+  quote: "古尔曼爆料苹果今秋推2026款Apple TV和HomePod mini"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWHhFNU5CbktDVFN2NEF3cGh1c043R2NBRmdsbWdYSWNaSkd0RlpRaXd0OFhYZzJQSXFiYXYxd0FWVTFiWTBaT3JWNF9lZmg0M0kxd2pqdi0zVXhWRFVYQ0dVQjdoVDItNW5Rb1dFZ0hlYnVLMDBPcmZ4R2N3RHlHWlNPWHI1N0Jz?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):苹果计划推出新款Apple TV和HomePod mini，产品发布预告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-apple-068
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果公司计划今秋发布新款Apple TV和HomePod Mini，并于10月至明年初间推出Home Hub"
+  quote: "苹果公司计划今秋发布新款Apple TV和HomePod Mini，并于10月至明年初间推出Home Hub"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5sdVVlQ0x0TnNHN0hqVDN4cVppYzhSRkhlY2JoWWt1SGRPdWtWNmt5TDBGS3RiMThlZWQ2LTM2Wk1DLVNsT2xQa3JwcW1UNFB2N0JTVXpMckdjUTkyOURic0dPajZMUQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):苹果秋季新品与Home Hub发布计划，产品路线图。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-apple-069
+  date: 2026-07-28
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果智能家居“大洗牌”：今秋拟推Siri AI新终端，Apple TV与HomePod mini蓄势待发"
+  quote: "苹果智能家居“大洗牌”：今秋拟推Siri AI新终端，Apple TV与HomePod mini蓄势待发"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwcXVXZ1QyOWNhcGw5amJ4RDktV0s5aTMxbEt1UHpJb0JuUWdWYnVJTlpNRG1naTJocWQza3JyUU41VFJWYWdDNmZVN0dPVWhud3Vz?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果智能家居新品与AI终端战略更新，涉及产品线重组。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-apple-070
+  date: 2026-07-28
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果在美国推出设备租赁业务，iPhone每月17.99美元起"
+  quote: "苹果在美国推出设备租赁业务，iPhone每月17.99美元起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9GX1haR1RMNjY3RzgzUndGOEd6N1hfUmxsNjR4WlhvMjl3YTRmWmdXU2hoOGlhREhOYUE1MG11aGFNOVRFR1J1RDVhZE8?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新商业模式推出，租赁业务扩展，影响消费策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

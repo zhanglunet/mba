@@ -793,3 +793,64 @@
   source_type: media
   note: "LLM 预分类建议(high):亚马逊通用AI部门裁员，涉及战略调整和组织变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-27-amazon-052
+  date: 2026-07-27
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "How Amazon Leo plans to connect mobile devices from space"
+  quote: "How Amazon Leo plans to connect mobile devices from space"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxNajdxUy1zYmtPMHN6ZU5UQVlIc0VZckkwdU4ySVVFakY0QUItTmdCeFRESmxXejVCdzJwbGpKSEtLRGpTQmtmUVNkN19vOVkzcXg2eUY5emNweVg3SWpOZVVIOWo5TDFRcmxTdUZJVWhPSzUycTdOTFdNMjlyRnRGRlVqYzVwd09LRUt1ZWpVZzEzRFJxMENOWVdfNEVRckl6?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):亚马逊官方发布Amazon Leo卫星连接计划，新产品战略公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-amazon-053
+  date: 2026-07-28
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "海豚社电商资讯：印度放宽电商投资规则 亚马逊出口业务迎来新机遇"
+  quote: "海豚社电商资讯：印度放宽电商投资规则 亚马逊出口业务迎来新机遇"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE8xdmczVWJjMVdyXzdfT0l1M2RSZzZjMVgzMFA0Q1hWS01xaUVaeG1xSFBjTjZleTlLaDlvY0ViY25HejBKRUFBbExVUk5fUGhsdUtUWWdEbDB0YXly?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):印度电商政策变化利好亚马逊出口业务，市场机遇。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-amazon-054
+  date: 2026-07-28
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊正式为 Leo 递交设备直连申请，计划建设超 5000 卫星大型网络"
+  quote: "亚马逊正式为 Leo 递交设备直连申请，计划建设超 5000 卫星大型网络"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9BSnpEOF9Hd3I3bi1kelpqdkYtNmFuMDJ0aWhWWEljdGhxU1VaWHRZcVJLRlJBSHpQT1hobHJkSlEwLXFYN1J1WlVPYnM0T252UE1ZM1lsc3lsR0dnSWNyckdUR1NjWTg4SkM2RDRTeDR2c2RHSmVLVWU1SmlhcDA?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊卫星网络项目重大进展，涉及战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-amazon-055
+  date: 2026-07-28
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "14点聊电商：亚马逊在英国拓展Amazon Now服务配送最快30分钟达- 栏目"
+  quote: "14点聊电商：亚马逊在英国拓展Amazon Now服务配送最快30分钟达- 栏目"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiRkFVX3lxTE9URER2OVF0WjdzcUgtemNjYmVFdUptN1V4Wi1aeEhveXRyZXQzNm92ano3N2Y4MGxiSmZjS3k2bGdCY0tnUnc?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):英国快递服务扩展，常规业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

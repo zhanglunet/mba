@@ -1043,3 +1043,64 @@
   source_type: media
   note: "LLM 预分类建议(med):马斯克爆料IPO进展，重大融资信号但需验证真实性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-28-spacex-068
+  date: 2026-07-28
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX to Post Second Quarter 2026 Results and Host Webcast on August 4, 2026"
+  quote: "SpaceX to Post Second Quarter 2026 Results and Host Webcast on August 4, 2026"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi7gFBVV95cUxORV9fdWNDQmY4LTVRT0dXRXVzUXZrbDJScFFpYzRieHVmMmlfRTlCbGZ1dk5yWHU2R1NBZEduSGdlRkppRjJPcTlYMG5leXFIeXJQS0VqR2Y2ZHBJYnZDdndjM1d3ZWRMZnJXUEE2T3oxc2dtZXkzRUpyYjlRZ2ZOUnBDMExkdnFQbUpxcmhVbXJxOGtQNGFqV1dZRVlxd1hmanlfX1R1bzdHMWs4Um5TY0JXSTgxZjhXNzBUVktoQlBkcG93OHRzc1JLSmZ6N00wem9MMU1fZHV2X1U2OEY5OU15Uzgzd1pKNEdJSHFB?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报发布公告，Q2 2026业绩披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-26-spacex-069
+  date: 2026-07-26
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "星舰第13次试飞的意义，SpaceX真正的悬念才刚刚开始"
+  quote: "星舰第13次试飞的意义，SpaceX真正的悬念才刚刚开始"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pbFpzUVF2ODdDUGY2cDJWRnZpc3JfeFJJUVBlejg4WnpKTWRFbGgwZ0x1Z1kwa2FfZl9ONElBOXVlRWxNOU44SE4wVVhTbHdEWHZYMlJsOVRDTDhw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):星舰第13次试飞进展，技术里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-26-spacex-070
+  date: 2026-07-26
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "市值2万亿美元!一直射，一直炸的SpaceX,怎么成了史上最大IPO?"
+  quote: "市值2万亿美元!一直射，一直炸的SpaceX,怎么成了史上最大IPO?"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1oUTA2a3NwMG45QnU1Y2prdzN4LWVQUDNVYzdrcUZoWkdSX1RKbjZuNGFwcFIyVGQ3QTJWYjZVa2F3OElHZFZod3BYRFVUZHJ5Y0U4TGE4OW1Zclgw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):SpaceX IPO估值传言，融资预期信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-spacex-071
+  date: 2026-07-28
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "马斯克旗下股票市值蒸发1.5万亿美元 SpaceX锁定期解除在即迎来新考验"
+  quote: "马斯克旗下股票市值蒸发1.5万亿美元 SpaceX锁定期解除在即迎来新考验"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxORzExbEpiUVlYM25sZjVyZzJDXzc0V2dfb0NPZlFMOG8yTUQ2NUV5eDNEVlV3TXRud3o2eXIwOXNIZnl1VnlUeFdLcDB1eXhEMnY3TUl2bTV0SjloLXMwZVJRci1NV0RFNjhweEQ0VDdTcFVBV0FJOC1qWW94OUV6dG5hVXVycGs?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克资产缩水，SpaceX锁定期解除风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1058,3 +1058,169 @@
   source_type: media
   note: "LLM 预分类建议(high):OpenAI官方评价Kimi K3，既认可竞争力又质疑蒸馏，重要第三方声音。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-28-kimichat-069
+  date: 2026-07-28
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "开源AI的里程碑时刻！月之暗面重磅发布Kimi K3：2.8万亿参数“混合专家”模型的巅峰之作"
+  quote: "开源AI的里程碑时刻！月之暗面重磅发布Kimi K3：2.8万亿参数“混合专家”模型的巅峰之作"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5yNGtUaTdiWGxVSEw4eHhRQURaMHlkcVNCUnFaM1NWbDRUX2U0RFJfMnBJYUtvSkVyR1BScFdjaHpJSUFVOXRGVm9NYTZKcWJmNWtYU3NJSHZOQk9O?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Kimi K3重磅发布,2.8万亿参数旗舰模型,里程碑事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-kimichat-070
+  date: 2026-07-27
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，Kimi K3开源！3万亿模型权重全球开放"
+  quote: "刚刚，Kimi K3开源！3万亿模型权重全球开放"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE43dm5tZ1cxY3lWSHlhV2ZNV25mLWNmek1rb3ItVVlYbWlnS0UtZ3FUdjQ0VVlELTMzLVlQM2cyN0Fub1hWNUNzVmM0bE52d2YwVGRvck5PU3dDX2lF?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Kimi K3开源发布,3万亿模型权重全球开放。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-kimichat-071
+  date: 2026-07-27
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "2.8万亿参数全面开源：Kimi K3 深度研究报告——它如何重新定义 AI 竞赛的规则？"
+  quote: "2.8万亿参数全面开源：Kimi K3 深度研究报告——它如何重新定义 AI 竞赛的规则？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5felJHZTRGaTdQMmJGNW9hUTVHSkFYY3FnSmdQU256U2gzejVoeGFHemE1VEgwMFpIR0FMSVZTZHMxUkx1TzZDbWtXTklScVFKQmRuSS01UEgzVEVw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Kimi K3深度分析,重新定义AI竞赛规则的战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-kimichat-072
+  date: 2026-07-27
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面Kimi K3今晚11点开源 2.8万亿参数成全球最大开源模型"
+  quote: "月之暗面Kimi K3今晚11点开源 2.8万亿参数成全球最大开源模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE1tQy11c19CN1ZhVHVWSG95TWpMQlFQZXMwNi1ka0dmazAxcDhfVWtxTFRuOEhXSW1BdE1wRERSWEY5ZDZnRUUwZUJhaWdwdw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3正式开源发布,全球最大开源模型。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-kimichat-073
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Kimi K3技术细节公开，用户需获商业授权"
+  quote: "Kimi K3技术细节公开，用户需获商业授权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE1GNGxtNGdoeVozNDMzQ2E5SnZtY0hXdHAwMi1jbVFTRFVqdEl3MHZ5UW5mZkJSd0Z6dmotamlqaHNGb2Q3SWMyUUhoLWl1S1Y5Z2pxRFZpVklEUnV0Sm1jTGZtcFBkWFQ0R19IQTlXNzRzczlESUNlQQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3技术细节公开,商业授权条款明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-kimichat-074
+  date: 2026-07-28
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面宣布Kimi K3正式开源"
+  quote: "月之暗面宣布Kimi K3正式开源"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBxV214N1lySjliMTB3YXJjQjUzeE1na2ROaDdtNUY4YUhHU1lSY2NwRnQ4ZG5vVnltVjN6anRpUVNmU2Nrd3VlRw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3正式开源宣布,旗舰产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-kimichat-075
+  date: 2026-07-28
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面全栈开源Kimi K3，引爆全球开发者社区，登顶“抱抱脸”平台趋势榜榜首"
+  quote: "月之暗面全栈开源Kimi K3，引爆全球开发者社区，登顶“抱抱脸”平台趋势榜榜首"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxPZWI5dE1ucHUxMjB3OHpNd0dhNExmSThsQS1JR0VBN3hVNGd1WEZjVmNrRVQtdmh5U0UwYnVXeS1oU0JUSEZCakVmQnR6eXBhT285eC1FZy1QT1lHVUtBT0ZDVzlGRnlyTnVINDVUZm1QdjcydWJPbkdBR0RIRmE2b3kzR0FMeGFCSUdXNUVJR3NBQ2VBTkRNSXJfUGpnNkluNUFWYUVuSHZkdXUxUHc?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品K3全栈开源发布，登顶平台趋势榜，重大产品里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-kimichat-076
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "月之暗面传寻求更多英伟达顶级芯片以训练下一代Kimi K4大模型- AI 人工智能"
+  quote: "月之暗面传寻求更多英伟达顶级芯片以训练下一代Kimi K4大模型- AI 人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1DblM3NDhQYnNPaEViZDdoVV9KTzQwaTFnVEZHSk1XT2Z5NmR6eEwtVTFwQnhneHVzT19zLVNwaXFnb19IZGdXa0xhYjlBMTZPWFRXUUNvVHJjY05RTHhZQQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):下一代K4模型融资/芯片采购传言，未官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-kimichat-077
+  date: 2026-07-27
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国警告制裁中国AI公司 北京反控美企蒸馏模型并威胁反制"
+  quote: "美国警告制裁中国AI公司 北京反控美企蒸馏模型并威胁反制"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi-AJBVV95cUxPOGpVNEd1bmlTcXpCbHh3VHg0X1ZpV2xLeDNibk91ajBTUGZaaG1xeTQ5TC1SdWo0OFRYYThjeGQyUmx2M2FuVEJJbEgwTG9JMERUNFBwVFk1OFZHdG1WVFlsNGwzZDBwelhTZzFkbnZRRnJZU0t0ZFR6N21LZVZDb3F0T3hJQnEwcF82VXpyalhpb05ncTNPWlVOS1dlZ3pfU0VLeko0QUhNVDJjQzg5bFJTQy1JTm5TempFZ0dWRXdubHp5R0w0eFBSTXl4YWs3UzEzdXhmUFVFQkNvbnl5TVR5eFI3Qld2OE9OOGYyWEl6SjREVDJOZC1tOHhONFk0S0JJWkpjcjB4R0tRaTdQNkRGY0gwUGtjYUItMHAtbjAtS3UwUWJBNVVsZ1loeUhfWnJqTGlmN21lNG9rcmNiOVF0akE0V2lZY0NzZFNsR3F0d3FSdjFFdDN0UkkyVXlrdzk5eVp5NkR1eGdMZlFoYklGV09pRTFm0gH4AkFVX3lxTE9FbUlnUjNydF9Vc2VpVEpZaUJqOEMtMm1fcjZnQWxlVEJwZ3g1clc5ai1KT3doUkdGTVlsenlMSFFSem83MEkxNnF2U2tsN3lDQmxYRHZyRkU0SnNzaDBYZ21zUzBWR1VMUEtnN05nSlNnN3ZVZTBMMGh2UU1yNTNjNnZHYW1LSHpVRHVQeVNUdGlrb1lfN3VvemNVeWJCbG5YQ3B0eGtpYllUMlhvb0wyM0NLUkEybEVEQVQ0NmRsTWpGSU1oaS1oZjZzVDZ3YUFuTFEwX19RQ3dMb3dtREtZa2VHVDhWWk1zM090QTQ3Y01vczFZaEpOUXdzQ1RMNnhJckZBcC0xVWtiTmFUZTMxTjBkUnRIY1NsVU9KTFZ2b090d3dncGcxTXZ2dFV1MXZkam1lcS16S1IxMENXaGlwRVRJQVg0WTB0TzEzc3pzd1g5dDhHMy1jNVYyLWtSMFhOSnNVWmRiUXpBVWhkOWwzWHlYT0JtQkE?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及监管/制裁风险，中国AI公司面临美国警告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-kimichat-078
+  date: 2026-07-28
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi K3正式开源：海外热议，华为阿里等国产算力已适配"
+  quote: "Kimi K3正式开源：海外热议，华为阿里等国产算力已适配"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE4tc093anBxS3UzVWJFcDZMMU5PQU9Cbl8tUDA3Vmlqbnd0U2V5dFhQNVNtal9XNWt1eHJSX0VXTDZoM0ZfcFhYNzlFeUxyQVZCLUxKaGlLalZEaE41WWdsQUNLMTdCSUl6NWNkZWxIcw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3正式开源，国产算力适配，重大产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-kimichat-079
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi母公司筹备港股IPO"
+  quote: "Kimi母公司筹备港股IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRFFvb3k0VThlTHpRRkg0NXU2QVZmVlFHV2l5TWl2TDB3MzZhVmV3QXdaS1FKelVPSmxaZVJ4b19VV1Rwa2RmLUhtNVR0QWN2UDRobXJQZUp3NU9fZE1PanBGRzZHMzJZS2EzX0ZBMjlCdk5NMnh3RmhncGxtUmNmSzV4Sm84a3g3?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):母公司筹备港股IPO，融资/上市预期，未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

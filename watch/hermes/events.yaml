@@ -365,3 +365,34 @@
   source_type: media
   note: "LLM 预分类建议(high):Birkin天价拍卖，品牌价值象征性事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-29-hermes-024
+  date: 2026-07-29
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "沈阳 LV 香奈儿爱马仕包包回收告别隐形扣费，标准化认证门店成为市民变现首选"
+  quote: "沈阳 LV 香奈儿爱马仕包包回收告别隐形扣费，标准化认证门店成为市民变现首选"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxQTmFuVlZyV0NyQW1nS29VMGVtaVB6QnF4X3p4dF81VTlEb2ZjNFRiekFVNG54ZG5SbmtPRnNKNlNQTlFfVDk5SFViQzRlZFFIVGVsYzRYYjFKdmxPckhWRC10TnJVbUo2MjdnS3JQMUNtcFdGVE9xZEVCYjdDcjZUT0llUHp4VkN4WFFmRGttUWtLUzRfMDVMeg?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕二手包回收市场动态，涉及品牌资产保值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-hermes-025
+  date: 2026-07-27
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "奢侈品的饥饿营销是怎么回事？3个维度拆解爱马仕法拉利背后的心理战+FAQ"
+  quote: "奢侈品的饥饿营销是怎么回事？3个维度拆解爱马仕法拉利背后的心理战+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE8wRjhpeUlBVlFQSmZuZFJHMkJmdUVRVmdiOUZUOXR1V2tLVl9GODJBTzhSNjNRVE1QdUhQQ3o0LVJJbmVOdWZqQmY1allfRGZyN1NTUlZfRkNTX2lnZmJWVTdlNzJ6OGI2Z2lEVjlsZER6Zw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):爱马仕饥饿营销策略分析，涉及品牌商业模式评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

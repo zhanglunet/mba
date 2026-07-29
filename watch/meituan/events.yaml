@@ -523,3 +523,109 @@
   source_type: official
   note: "LLM 预分类建议(high):万亿参数大模型LongCat-2.0发布，旗舰AI产品重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-21-meituan-034
+  date: 2026-07-21
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "外卖配送按骑手学历分级收费？假的，系某博主AI生成"
+  quote: "外卖配送按骑手学历分级收费？假的，系某博主AI生成"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260728187010654
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方澄清谣言，AI生成虚假信息，品牌声誉防守。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-20-meituan-035
+  date: 2026-07-20
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "美团上线“本科专送”“硕士优送”“博士尊享”配送服务？官方客服回应"
+  quote: "美团上线“本科专送”“硕士优送”“博士尊享”配送服务？官方客服回应"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260721186006468
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方客服回应学历分级收费谣言，舆情应对。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-meituan-036
+  date: 2026-07-28
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团正式发布 CatPaw：全场景 AI Agent，从个人提效到企业智能化"
+  quote: "美团正式发布 CatPaw：全场景 AI Agent，从个人提效到企业智能化"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9wejM4NHEtWl80RF83eldERXFwRTd0RlVXb21vaXJCRlR2N2t6aVhqZHhxZ2Zabl83bzVLZlhITkh3OXJCVlhwdWlSSzVoSFRkbUdySjVBNjU4X1VI?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):CatPaw AI Agent平台正式发布，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-meituan-037
+  date: 2026-07-27
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团AI“小团”升级：把“帮我找找”变成“帮我办了”"
+  quote: "美团AI“小团”升级：把“帮我找找”变成“帮我办了”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FUk9VTU9sUzNvOGZRTEZDVlA1WnF1M3NITXFvblV6bGs2bzJQTFc1Z2xZbEQ2QmVxcGZPOHRyZnBnOHBFaU14TzR4cVk5YzdoSWllazJxSVNBZw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI助手\"小团\"功能升级，产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-meituan-038
+  date: 2026-07-27
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团CatPaw为商家配备AI帮手"
+  quote: "美团CatPaw为商家配备AI帮手"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxNWU84MUQ5VWVlUzIyVFQxcTI0dEFUUFROWkJkWnNOc1JzRGJOVkZZbkhQZDFvY0gxOTZiOXEzal83cWJUZmduT0pjbWhYdkJ2U3M0c3dpT1hNNGtwTUVyOS0zX01JVFhDMDl2cTVvSEtiMjRHd2NPVlByMDc3TmhIWDZ5TEpKM2FBY0lvb1FtVQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CatPaw为商家提供AI工具，产品应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-meituan-039
+  date: 2026-07-27
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI进入本地生活：美团 CatPaw 要做商家数字化经营伙伴"
+  quote: "AI进入本地生活：美团 CatPaw 要做商家数字化经营伙伴"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1oR2pZWGwxVHM2Y1BIZWFMMlJ1bm1FN1VyNzRVRGJENDJLOHFTcHducUhyelhLWGtHR0FVYzk1N1BHWWpHbVE1NTBxZ1VBYUxfa1dvLTNIcWs3dw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CatPaw进入本地生活，战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-meituan-040
+  date: 2026-07-28
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团推出全场景AI Agent平台CatPaw，内部已覆盖9万员工"
+  quote: "美团推出全场景AI Agent平台CatPaw，内部已覆盖9万员工"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcE95OGJXZXU5am1qSDFXeEQ5RnBuaDVJN2tzZ0hqR1Q2Sk9XdkhxUlg4N25Yd1p3M3lVY2JwakZ1XzQ1b2JUemdjWVdBZEFqNF81YlZ4VW5SQk5uVmp1djFFVW5fRE4zNDgyeWhXZ0pwWjRWXzNndkY3NE5LZ0w1OVlBdFhCVnZsOFVqaldsd3FIZVh4MjNIbnhIeWFLeW9LcXJqSnREU1ViVEVTR24tOTR5TWFUVjhTclFqaFdBajlVcmN0VU9makNiWEJ3VGxoeDZV?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CatPaw平台发布，内部覆盖9万员工，规模应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

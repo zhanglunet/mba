@@ -806,3 +806,64 @@
   source_type: media
   note: "LLM 预分类建议(med):供应链合作进展，芯片供应条款确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-27-tesla-053
+  date: 2026-07-27
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，Karpathy亲自辟谣：我没走！"
+  quote: "刚刚，Karpathy亲自辟谣：我没走！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CcGE5Z1ZLTkdTeEFybks3a3NlNzJ5TzRFSGFpelV1RmxROWtVeUJsUGpEUzNzMUhTc2ozVjhXV3h1T3VFak5MbktPc3BNQjdZUkt5ako5Mm1EZkhO?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Karpathy辟谣离职传言，核心高管动向澄清。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-tesla-054
+  date: 2026-07-27
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD新能力曝光：自动驾驶开始拥有「用户模型」，AI司机千人千面"
+  quote: "特斯拉FSD新能力曝光：自动驾驶开始拥有「用户模型」，AI司机千人千面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixAJBVV95cUxPdVNZVzFONU5hWUgtWEMtcjIxT3p6ZWFFQktVeEJtR05nMmJmWV8xVTdvb1ZKd0VmWTRlWTl0cTdkc0JqUGR4OWtLaHhoa3FaZUZuRjVIUzl2VVZ2VVR3QmNOQThHSjZJR0xOVkktZkI4bXAzWV9BRGJTOVZxbHVpV3QtRl91cUNZaW1za2J2cjJqWS1QSTBOYnBhYnVwQk9xUHNNN2NxVjlQeTJ1MEFydEpvODNKeGUxdW1ucUxHMGFVNkZGX01FLUhrTGZKVHJTVWk2Mi1mZGxOM2gwU1I5bEs5bkViR3NTc204REJoQzFvNjFqdmRNaHNybkU1emIwbk10VThWSmljVlJXYVMxeG1Wa3JJOEVWb0lfdjk3T1VyY1FtbE12MEs2TXFDREwxem45aU0zT24tNmpJbUxQUGZnZTA?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD新功能曝光，涉及自动驾驶核心能力迭代，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-tesla-055
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "【机构股评】特斯拉一季度交付量超预期"
+  quote: "【机构股评】特斯拉一季度交付量超预期"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPaElUOGtZekVwOWg2bFFqb3doMk4tMDJoZzBKZTUzMTJDT0RyckRGaDRWR2p0Sk1rYnBJcmYxeU9vdGloSVhzNUJkbF8tUGVtLTBXTnpxSkdjbno1bUdnaUtyZFNxLVJSbWxSSnZRUk9MeTd2akRrYU9KRnZqeTlTRGlhSE52dHY3YUo4YWtwbEVzSVNDOW5kY3hMLXpZN0k4WjE5TWx0WQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):一季度交付量超预期，财务关键指标，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-tesla-056
+  date: 2026-07-27
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉Optimus项目遭“泼冷水”，知名投资人：短期不会产生收入"
+  quote: "特斯拉Optimus项目遭“泼冷水”，知名投资人：短期不会产生收入"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxQcDdTSWkyZ05BVGpOYXlVZ1BETHN5Q0hhbTlPbzZxWFBZNm5iTjdBLTIxVTVZUGV3Y3FudFE3aHYyNHFmUWNuRExob1loY3UySEZNNERlVVhYLXk2bDB0RGR5Wm9EY2tZa3gyMUE1Rk4wbGl5T3BMV1hQZU9FclJsMW1NTWhWeW5jYUlxaXloMjU3dUptRklLSk9mUHZMSE13ODdFY2t4RnVZSTRy?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Optimus项目遭质疑，涉及核心产品前景评价，具舆情关注度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -806,3 +806,109 @@
   source_type: media
   note: "LLM 预分类建议(med):显卡出货价补涨消息，与价格策略相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-27-nvidia-053
+  date: 2026-07-27
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "TrendForce：英伟达、博通CPO交换机展开小量出货，光引擎良率、先进封装产能成关键因素"
+  quote: "TrendForce：英伟达、博通CPO交换机展开小量出货，光引擎良率、先进封装产能成关键因素"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YMklzbzFiZG02LTNWSkFwU0Q5d3lweTJsRy02dFVsYU1xV1ZCVENqay02MmltdE9ZRlJ0SVZ2U1ZxTXNPcTNXZXNOMHNsN3lvNVVhSGZjY0prSURV?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):英伟达CPO交换机出货进展，涉及产能与良率关键因素。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-nvidia-054
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI行业动态20260729:Nvidia向Ilya Sutskever的Safe Superintelligence投资50亿美"
+  quote: "AI行业动态20260729:Nvidia向Ilya Sutskever的Safe Superintelligence投资50亿美"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE95eTFSLXpnRHo2MUxnUXkzaUtuX19QY2d6OTNrQ1lYLVlMTjFKMGNoWE9CazktRVY4b1VRYzhjSGFWaVhmVFZodzBwcjk2LTMtTlRzVXdOajJJUWZf?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):英伟达向SSI投资50亿美元，战略投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-nvidia-055
+  date: 2026-07-28
+  dim: W2
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "NVIDIA 发布 GeForce Game Ready 610.88 WHQL 显卡驱动程序"
+  quote: "NVIDIA 发布 GeForce Game Ready 610.88 WHQL 显卡驱动程序"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgFBVV95cUxNaVdnU3Z2eUxTY2FpMTJpSlRIdFdqaUQyQkFtemRxNmFuX3dCSzM4NHpTay1abUFzcGlwM1ZyWW0tZnNFLUJHX3kzWTB0VHJPUkRZUjd3R0psb3JsbWVEeTd1blhwalduUGNxRi16TXpPWHZoODhSU0dzUHRMRVQwX2R5aGI5MmlkVnJPUEFB?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):驱动程序例行更新发布，日常产品维护。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-nvidia-056
+  date: 2026-07-27
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达宣布与多个创始成员共同成立开放安全人工智能联盟，推动人工智能安全与保障"
+  quote: "英伟达宣布与多个创始成员共同成立开放安全人工智能联盟，推动人工智能安全与保障"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBudzR1LWZoWVNjcEYzdFhKTXNVNGpFSFFBTXV3SjV4MTY0UnlWdGhxWDRUOS1zdWNRdExSSkxFQ0NOQkZidU5YSE8tN1BTRDkybmRMTzNPSGxTV3o3NEhRczBuc0FHQQ?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达成立AI安全联盟，战略合作与生态建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-nvidia-057
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达重构工程软件栈：Agent、PhysicsNeMo 与 CUDA-X 合流"
+  quote: "英伟达重构工程软件栈：Agent、PhysicsNeMo 与 CUDA-X 合流"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBtanUxYTdETzBzdThPZFktX1REX09mVzZHWUxUdnM4aTFjNDZFWEdsQThKYzktYmxYc05KeFpPWWtPTVJ3elQxLXlEWW9UMkFTemNPWkliQ3JuTEV6eUE?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达重构工程软件栈，技术平台升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-nvidia-058
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "韩国人工智能峰会：SK与英伟达提出价值500亿美元的合作计划，NAVER人工智能工厂规模扩大三倍"
+  quote: "韩国人工智能峰会：SK与英伟达提出价值500亿美元的合作计划，NAVER人工智能工厂规模扩大三倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixgFBVV95cUxQOVlvVlVhNy1fS1lMTUlMU2dnVlFkLUpQVGNqZkNLMF9TUlBvRGZvU2FlOVN4dUNqeVVhbHRMdDhLTmQwT2pGel9sMFdLU29KYktBNXp4d0p5MWQ4UnZrSE9HSnJMUmhxanVkTUpBclBCQ3lueDhiWkJPajRCRTVzd25Zd0Y5Y3lMYm8zdGozYUJ1OVBCSGg0NUxKd2NBOHN0M2NCMTdRc3l2YUY2cDN4RHRGclE5MDZVX0dIU2swSHpRbklWd2fSAcsBQVVfeXFMT05nSGgtRTVvemUxeVM3ZGRlLUVrNjFLZV9Uel80ZXE0NE85WmUxQ05oMkgxVU5VdVFVbGxIT3g3VWhQQXBJbE1pUWtDRW5mT29RQkRDOFM3WTZaenFCQTl4Rm8xNC1scDB6bXhvUmFpaEJqNTlKMVNxWjk0ME5YcnNyTzFXZVNnY1dzNm9ac2NQQ3k3cnJ6aGp2UkpOZHpKMlVQU21IdnduODdxT3JqSWRpZy1NaVNyRnBrNUR0SWNOcUwwQU1iSFZyMnM?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):SK与英伟达500亿美元合作计划，重大商业协议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-nvidia-059
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "英伟达逾7500亿美元AI新交易 令循环融资忧虑重燃"
+  quote: "英伟达逾7500亿美元AI新交易 令循环融资忧虑重燃"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE9SdHNwaHNuUFBqc2JObWNLS2I4d2U0U3lieEQ4OUIwbDI0SjRfMEFGRHY0WVo3UWdQT18tOGtuTUpHZHA3S0JubGwzeVdKSHRCZWg4WWU2TVQxMG9IcUowNFRKZE5FWGJ6TDJyY3h3?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):英伟达7500亿美元AI交易，融资规模巨大但融资模式引发争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

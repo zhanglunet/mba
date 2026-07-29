@@ -80,3 +80,19 @@
   source_type: media
   note: "LLM 预分类建议(high):品牌合作活动，AI领域战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-27-palantir-006
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Palantir Q2财报前瞻：盈利预期增长，华尔街给出200美元目标价"
+  quote: "Palantir Q2财报前瞻：盈利预期增长，华尔街给出200美元目标价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNFBxaUNuRVhhaFpiZEhkeFZrVXd2NmFld1kteV8xcDlJMTBRcFNtLUNoVUR1NVEzWmFUdnIyTXFFelJRdm1OVkFLX2FDQ2JYVjVoR3Fya0RzSzRTQTRwYkN5a2s3UGlhNDQ0T3RacW9tYlB0T3RrMDNaN2R5T0YweEN3V2h0eUtFUmRuQ3pfZW93dGZxS19FYTY5dkFOTGdRVkQxWVpDVHdyVlRuRFRQb3IxWEFGcVUwMXZfbmZIczNKVmIzWHowT2FXMC1MYU80d1BPTlE2Wm5Gdw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2财报前瞻，盈利预期增长，华尔街目标价，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

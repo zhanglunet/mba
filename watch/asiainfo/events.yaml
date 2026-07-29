@@ -218,3 +218,19 @@
   source_type: media
   note: "LLM 预分类建议(high):上市公司盈利预警，重大财务风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-27-asiainfo-014
+  date: 2026-07-27
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "电信业务信号转弱 亚信科技向AI与卫星寻出路"
+  quote: "电信业务信号转弱 亚信科技向AI与卫星寻出路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgJBVV95cUxPUXQ1ZHE3VEJKUENnMG9hMVpoOXZTZUFOaGZKYVM3ZF9Qa0VhSGFYaGZObGh1Z3h5Umhlb0xwQ3BXTG9SNjF4UFZCekZBaTZpeGdSbUxaQ0s4VGJmX3hIWFR2THd4Q2NHbnQzazUwUkdVc0V0T0YxY3M4aGtqV0x3dEdvekFjdFpmX2EwQXhVWFg1OFpjdEM4OXU4VVA4Rkh5OTZXd29USGstalM4cnRxNDZsN2FVVC1qdnUtaEhyRjM3RDBYbjRGRWh5c3RMQ3U4WG5xRTVfMTdSSUtkWG81ZjhsYnFndnNLNUM1VkItVVFPaUdwSVhXSUtKOTU1M2tGN09hem5OVFdERElxX2VEVDNoRHFVOHdNSUQxTE11cUlobjhnT05HeHY4TDVUZw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚信科技业务转向AI与卫星，战略调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

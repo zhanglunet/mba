@@ -597,3 +597,94 @@
   source_type: media
   note: "LLM 预分类建议(med):华为财务状况和Mate 90转折点预期，涉及战略和业绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-26-huawei-039
+  date: 2026-07-26
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "奕境X9将于8月开启预售 在成都车展交付"
+  quote: "奕境X9将于8月开启预售 在成都车展交付"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fWlA0cjBaV3N1Z1prUHVQRnFOdWUtOHM0OFVFLVN2dUNiUTlNQm45TkRFeVBRV3JTZ2wwZnp5eXhLVFBzRFp4WUlVU3MtT2JhaW5UX3FIMllxZmJL?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):华为汽车新品预售上市，产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-26-huawei-040
+  date: 2026-07-26
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国FCC禁售含中国关键硬件设备，伤害性不大脱钩性极强"
+  quote: "美国FCC禁售含中国关键硬件设备，伤害性不大脱钩性极强"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1udzF4NEhWakIxeGFVRGVNYXY3YjJxb0FSVTBqRVRaRDlWMTdYdkRpZ3VoVWFibUpmR0cySVNZVl82c1lXLW9hSlV0ZUVzcUpRVmEtdEU2ZXI4Y2dX?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):美国FCC禁售令涉及华为，监管风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-huawei-041
+  date: 2026-07-28
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为HarmonyOS 7花粉Beta版推送：新增全新视效、支持AI变声检测"
+  quote: "华为HarmonyOS 7花粉Beta版推送：新增全新视效、支持AI变声检测"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi2ARBVV95cUxQMkxzcUF6WmVFOE9CUTlHYWRiZWhrb254TVFaa05FVUpKM0RWZUg2T3pTMjAwLXljS000VjZRSzBRM0lzeF9iQWtiMW5zOVh0N1g4S3hlWWIwcjFlVEdVZ2ljTVRBSWFIV2hIU1hSSVg3dy0xZG14eURBNlBBNnk5a1lYd1ZGTE0wQ3JPVnVpMElaVEZ6SHBKWklqSzJDX2ZOR19IcnQ0S0lmYlAzMXVqajc3aGdjUi1UU3NMNlcxcTk2R19SV3dsQ0lGOUxydzFUVWtZay1GVTNXWE11RnZHTFZwNUIyaXE0OElfcVNsVF9WVk1qaW90NC1zWVZqVFgzcnVEbkdORGJyaEQzS2dLSllnektNT3ViMVZ6emI4aVByQy1rNVhRelFuVVZCSDR3cmUyWXVXenhTZXRFd1czWGZiSU1tOW1maGQtYU1iSW5zMl9YQjVveV82ZXFvWXk1M0N5anc5MGNXbmRMcVFIcTAwZXJTZl9mZldSM3c2NHNtd1dfN1ROS19YaC04SkVkZGltZ0hmMFN1MU5YUUhsQk5uNHNyaExqZVlIVGkxRUF0MFk3OVliZDRFZjI1ZEhLSWxoVS1CWHRmTEdmZzF2Q3IxV3gwLXJjcV9OSU8tUXV1MXk5TUl2Y2JFaENZWGJXaGpmcThwZnl4d19tMEl2Tkxma0NORDVpR1pvNzc4V2tEU2pPc09zMnUyeW1lbkxKTmFmTEd6S2NONzNiTUY4bkQxUk5sSU14U3NwQTYwTHNOSm4tN0JBZ19kTnBtR3N4NHdwRlhtbnc?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):HarmonyOS 7重大版本更新发布，旗舰产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-huawei-042
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为鸿蒙HarmonyOS 7花粉Beta版开启报名"
+  quote: "华为鸿蒙HarmonyOS 7花粉Beta版开启报名"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSjBBNlBEdEtlSTd1a0ZIc1RHSENMRVdoQ1d1RElVR0FEYWtteTlWR29vN3puQWY1ZUxMano1eWVUOFVuV1hkZzhMMTNsbi01dndvbjJSSjR3b2ROXzRsOXgxYklrLUNtc3hpNlJYNDVPa2hPUzdTLWVfRHg1ZVZDQWhYQWtpMDNl?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):HarmonyOS 7 Beta招募启动，产品发布前期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-huawei-043
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "韬定律芯片配风扇 华为Mate90系列性能暴增"
+  quote: "韬定律芯片配风扇 华为Mate90系列性能暴增"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOdTR4U1JtZmItVkFGblBiSEEyNS1zOGxJR3FRM0E2NmpYRC15M0I3Y2RPQlUyVTI5RXJaUmt3MVZIVVpzQmJzcHJ2VktoTjZ3VHFkamgwZmV2S3ZWWWhFRmVZTmVsU0IxUXg4ejd3bnpQYjc4WHNlSFRTUWhLbjVobFhn?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Mate90系列性能升级信息，产品特性发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-huawei-044
+  date: 2026-07-28
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为下半年大招不断!8月新机新品牌铺垫?9月Mate90、三折叠屏集体登场"
+  quote: "华为下半年大招不断!8月新机新品牌铺垫?9月Mate90、三折叠屏集体登场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNMnVLXzExY29McHF2YmFfUkR4MHVaYk5GREd5VnFneFMxT000THdvZG02MVF4OEVLOUFNYUFBV1NZUHAwLV83NzZMdHgwTE5vWnV6TUgzTzZ4anVUem9zbGRFb0hoc0hQRGlEdFVuTDh3VjcyQWdUQlpfN05lTURvSw?oc=5
+  fetched_at: "2026-07-29T05:32:50Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Mate90、三折叠屏等重磅新品发布预告，旗舰产品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
