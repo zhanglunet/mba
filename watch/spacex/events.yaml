@@ -1104,3 +1104,94 @@
   source_type: media
   note: "LLM 预分类建议(high):马斯克资产缩水，SpaceX锁定期解除风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-29-spacex-072
+  date: 2026-07-29
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "怎么看待马斯克表示正在派船回收 Starship S40？"
+  quote: "怎么看待马斯克表示正在派船回收 Starship S40？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0dXZHRDREZXpEU2o0WkdhRVN2R05SV0VPZHVPQnRyd0Q5UU9JSEVUZ25uN0RfdnZGVmNLOU95Y0dmcmwxdXd5R3FwX2xqV19EOEh4c205TVJMOW5VMWw0?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Starship S40回收动向，技术进展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-spacex-073
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX获得美国太空军16亿美元的合同"
+  quote: "SpaceX获得美国太空军16亿美元的合同"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pODVhZEVvd1lDdkE1Nmt5MnJSZHVkSThVbnB4VFZlV0d3QzVyY1d4Nm9kdXpKNk1Jb0NVMGlLQ1RXY0pQVWp3c1lEN1VzSVhFQUY1WTAzZTZleEJjYldycEhHTmxPelMy?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):美国太空军16亿美元合同，重大商业订单。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-spacex-074
+  date: 2026-07-30
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "限售股解禁前夕，SpaceX获美国太空军16亿美元订单"
+  quote: "限售股解禁前夕，SpaceX获美国太空军16亿美元订单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSGVHS3puWE0yaDVTbF9nQTZSdHQ3RndUNWFnN2JDN0otMUp1c0FPWW44TG55YW9lVmlYSVhuUGVKUnkxMkZpTVFMSW1GX3lIWnNqSWJkZC01dndfMUlaV18zdUN3VlQ1bzlneFNSSzFXenp2S2RRc3RxaG53MTQxdjY0Q3BTdVp1?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):太空军16亿美元订单，涉及限售股解禁背景。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-spacex-075
+  date: 2026-07-30
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "突发：SpaceX获得美国太空军一份价值$16亿的合同，用于执行18次猎鹰9号任务，发射军用目标定位卫星。"
+  quote: "突发：SpaceX获得美国太空军一份价值$16亿的合同，用于执行18次猎鹰9号任务，发射军用目标定位卫星。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxPZUxoOHA5QWxncjk2TUtQdDNTOVB1V29aUnYwOWpZVVFDYmF5Qko1bHcwRmN6c0x5NlI0Vmo1SENqMzJNR3ZzdmVhaUV5VkIwZ2NEVGIxZnZWRVFqTjg0YzRZSlRRNUhpaTZ6RjN4bFFCQlZvR05BVkcwVFhrUzg1V0JGWjM1TjNzOE8tVUFfd0hROElYMEZxSWJ6SE9pM0lBTlFmWVlRVzJEY0RsaHVV?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):太空军16亿美元合同，18次猎鹰9号任务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-spacex-076
+  date: 2026-07-29
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX暴跌40%反成\"产品富矿\"：五机构抢发\"防摔\"票据，赚取高额手续费"
+  quote: "SpaceX暴跌40%反成\"产品富矿\"：五机构抢发\"防摔\"票据，赚取高额手续费"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5MVFRqNi1SNW1aY2VXSW1UZmdEaFF1WlJQdU1RUC01alM5TDZYamRLcG0wNmxlemg5R0N1bzdjZk8yOUI4aUZlNVk1NWp1VkkxSUNn?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX股价暴跌40%，金融衍生品交易分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-spacex-077
+  date: 2026-07-30
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX已经“跌掉”一个特斯拉 亚马逊入局卫星通信大战 | 环球市场"
+  quote: "SpaceX已经“跌掉”一个特斯拉 亚马逊入局卫星通信大战 | 环球市场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1ORGtlZXl3NFNNMlBpTEliY2tsdUNJblZ0VHFxR1ZQZUUyV0dmY0NnRE9aWWRSOGx4QnFhVEY4S1Yzb1RVLTF6Vw?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX股价大幅下跌，市值缩水对标分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

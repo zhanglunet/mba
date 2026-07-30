@@ -1035,3 +1035,94 @@
   source_type: media
   note: "LLM 预分类建议(med):微软澄清TPM规定政策，回应用户关切。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-29-microsoft-068
+  date: 2026-07-29
+  dim: W6
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft Cloud and AI strength fuels fourth quarter results"
+  quote: "Microsoft Cloud and AI strength fuels fourth quarter results"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxNOGduWWtVTDNKbC1BS2VVd25nODZmVEZWblNWeS1FLVFuZ3hwN1pKcXFDa3V0aVdpSjBPWnVrMk9sSUUyUE1va3dzdWhLX2RWeVI4TWhGelA5dEExSWtHUTRJZU5aT0djby1SbnE2SU03RFVBLTFRblNxUkt4R0VNaTVIVDQ5Z2ROSGF0dzNHNjZjVmFaR0tyWUpUa2NsVUlTMzJQZWktN0Etd0Ry?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报，云AI业务强劲，关键数字。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-microsoft-069
+  date: 2026-07-29
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软安全 AI 的 95.95%：模型只是输入，系统才是产品"
+  quote: "微软安全 AI 的 95.95%：模型只是输入，系统才是产品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hYmlwcUYtbTJEU3RtelhGZVBad1JMY01wRzZuTGwzLVNWZ0hYODdFbElqcklkNGs2TzJXaFljQ0hkX0pfRGNMdjFCejM0OFY1S0pLc3FpQ1hXdS1r?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(med):安全AI模型技术分享，产品能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-microsoft-070
+  date: 2026-07-28
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "海外AI观察日报｜2026-07-28｜微软发布网络安全模型，Google AI搜索覆盖43%查询"
+  quote: "海外AI观察日报｜2026-07-28｜微软发布网络安全模型，Google AI搜索覆盖43%查询"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE8ySkpUeXpJQk9mVkdVVDlyNTk3MjA4eFktajlpT3dYNHNfZE0xMWZ3SkJ6UXFIcmtEZlZsU2taRWFob3Y3TnlxYTJ4dzlmR01oUWw1TjRvclJoeTU1?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(med):网络安全模型发布，AI产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-microsoft-071
+  date: 2026-07-29
+  dim: W6
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "微软上季云+AI强劲答卷：Azure收入增超40%，资本支出低于预期，新增数据中心租约超1300亿｜财报见闻"
+  quote: "微软上季云+AI强劲答卷：Azure收入增超40%，资本支出低于预期，新增数据中心租约超1300亿｜财报见闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE95TUY0WXFrMUNUZDN3VGRkY29XNHEwQ2pIZ1diYjdvR3NzaUhhZjU1MkJMRFBLYm4yaElGSjVsbmktUzhkR0hjSE9fa19iTllUd0N3?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字，Azure收入超40%增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-microsoft-072
+  date: 2026-07-30
+  dim: W6
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "微软利润激增31%，Azure云业务财年收入首破千亿美元大关"
+  quote: "微软利润激增31%，Azure云业务财年收入首破千亿美元大关"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE95WnotX3NzR0VCZ3JDT0FCcjdkNmY5Q29QdERzY3M2X3VENy0tbWZIV2c2WGVud1pKR2JURkJvTlhidVg3RVJaQUZ0d3NacmNJejUtRzBCNnV4NWVxeExmUGwzZ2diZw?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):财报数据，Azure首破千亿美元。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-microsoft-073
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Microsoft 365引入Copilot后涨价，微软遭英国监管机构调查"
+  quote: "Microsoft 365引入Copilot后涨价，微软遭英国监管机构调查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9RcV9ySlJoVUY1ZTk4RHJDbEhmN3QwRHVGajdkRmF0U1dQNnR0b0NYOFFPSEFJdmVoMmlpQnpPdWg4TmdoWFVZT0tSOVdUOFZ0NElTWFBhREhGM2puSDY2QUdvZGJaZm5qMnR0ejJMSENnVG1IdjVIMERna1NKaW8?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):英国监管调查，涨价合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

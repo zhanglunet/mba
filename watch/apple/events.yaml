@@ -1081,3 +1081,79 @@
   source_type: media
   note: "LLM 预分类建议(high):新商业模式推出，租赁业务扩展，影响消费策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-29-apple-071
+  date: 2026-07-29
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Framework显然对Apple Upgrade——苹果公司的新硬件租赁服务——颇有微词"
+  quote: "Framework显然对Apple Upgrade——苹果公司的新硬件租赁服务——颇有微词"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTFBPWV9SX0pzQ0NwanZlemY5MEJvQ1dZMWsweTM4blZiZ3l3VFgxQzBnWEdQMDNOOTZ2NkREb0hpMHd2MzRxdzJuU04zWmNBRlk3WHpCV3luWm9TUUNpTjkzRlh3emhxZHowcWdzazd5OTN6bkUwWEtQT2pvVQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新服务Apple Upgrade引发第三方评论，反映市场反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-apple-072
+  date: 2026-07-29
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "122元用iPhone，苹果要做手机包租公了？"
+  quote: "122元用iPhone，苹果要做手机包租公了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBQX1F1a3F5UFBmQUc2am1JMUlWWUJyX3hyZFpqekdxelJoeVdwRFJNN1EwWmhmU19NdWJZZTVibmhFY2pLYzU3Nm1WQ213QQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果新租赁服务的媒体评论，标题党但涉及新商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-apple-073
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果推出设备租赁计划 iPhone月租最低约23新元"
+  quote: "苹果推出设备租赁计划 iPhone月租最低约23新元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE9xeVFXVmQyWG5BNGVFNXRrb0QtOHdCVTg1VnlOaHowanJyRWUwV1Q2MG5mS2lWUzlOb2J3WDBhcVMxODFEb2xiZFcwbWFTN0ZTclcwTjNiaUdvdWNtTXlwaWhMOENma0lVYUE?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果正式推出设备租赁计划，新商业模式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-apple-074
+  date: 2026-07-28
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果在美国推出“Apple Upgrade”设备租赁计划，iPhone月租17.99美元起"
+  quote: "苹果在美国推出“Apple Upgrade”设备租赁计划，iPhone月租17.99美元起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE83MHdUclQ3Qk9pc3k5R1k3NEZFQm1jYkJ1X2JJV29KTkhLTFpHWE9ueWxHQzV5bHozTWRPVzVZdzM4MjJkd3FJR0RkTFdXUE5veVBrTkg3dUJLX3VFTGtKNXNibHE1QQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Upgrade美国市场正式推出，重要商业策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-apple-075
+  date: 2026-07-30
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "高通预估苹果调制解调器业务收入下滑速度超出预期- Apple 苹果"
+  quote: "高通预估苹果调制解调器业务收入下滑速度超出预期- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5VUtzTnNIZWZLQ01xYjJRZkRfNWpfQVZsbnY1aENVWXBfZG94UDM5VXRiemdPaERjaWZiM0tUN0NrWHRRcmpOX1c3QzlrSEZSd3VjcGh1WUdqN1FVdERnbQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):高通预警苹果调制解调器业务下滑，涉及供应链风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

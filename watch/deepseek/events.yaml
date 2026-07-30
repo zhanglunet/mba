@@ -915,3 +915,34 @@
   source_type: media
   note: "LLM 预分类建议(high):融资暂停与泄密事件核心舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-27-deepseek-060
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "“美中AI 差距将在5 年内消失”，DeepSeek 因梁文峰言论外泄，中止第二轮融资_苏里南_新闻"
+  quote: "“美中AI 差距将在5 年内消失”，DeepSeek 因梁文峰言论外泄，中止第二轮融资_苏里南_新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE16X2tEQUl1YWhCVk8wcVFzYlpCWWRtd2M0dkJybDRoT1JKOFZMM1cxem9xY3BMWHAtZEhHMVJIZUxfbmpqeFQtR0FkRTZjdzFXVW5DbHBEZFVjeHo5R2c?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资中止+高管言论外泄，对品牌融资进展有实质影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-deepseek-061
+  date: 2026-07-27
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "梁文鋒閉門談話疑遭外洩 DeepSeek第2輪融資喊停"
+  quote: "梁文鋒閉門談話疑遭外洩 DeepSeek第2輪融資喊停"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE1qWjRiVmxLcHZpZjlsN0VoTlo2Q3pXWHFPSzI3WldjTGw1b1BiYUplUW9xelNEdF9zblNYNldmbjZwRkNRVlZMdHZhY0lvRjQtRmxPRTgyVndYc2dXaVo1U2pZTVp6cU5QcHfSAWdBVV95cUxNOHdrVmg4VUx2VkI2T3ZWcllIRFpmTEFBcTFMMkhKbkU2eTZPd1NDWWVDV3NXdXZHMzVrVUktNXZtODF2V0NWdVE2QUo4Q2V6SzJZQjRzZTB1RGdzNVJLZmpOVExVdzF3?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资中止+言论外泄事件，重复内容但确认融资暂停。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -396,3 +396,34 @@
   source_type: media
   note: "LLM 预分类建议(med):爱马仕饥饿营销策略分析，涉及品牌商业模式评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-30-hermes-026
+  date: 2026-07-30
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕：判断中国销售何时反弹 看“猪肉价格”"
+  quote: "爱马仕：判断中国销售何时反弹 看“猪肉价格”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE0wZDUtUnVhbW5mejF2a1NUaTVac3pKQUdKd2VWR2daMVNyT0U0aV9UWWo3QmFuZlhnUkVZYlNwTlJVN3Vud2g4M3c0YnR3VmNjRlMwamswWmw0MlpReHA2aGhFZDExbkUzamk3YS1n?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕中国销售前景分析，涉及业务动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-hermes-027
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "爱马仕上半年皮具营收增长10% 利润率高达41%领跑奢圈"
+  quote: "爱马仕上半年皮具营收增长10% 利润率高达41%领跑奢圈"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE4yeEZ3SFhwTVIzekQ5N1V2RmF2ajB5MVJaWldESXByOWtEbDBwVjNuRHM2REhyQnczNUJpeGFGdDUzeXhXOXFCTURSbjM3ZjBIYlRxbV9oNmQxazdIcXhHNmln?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):上半年财报数据公布，皮具营收增长与利润率。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

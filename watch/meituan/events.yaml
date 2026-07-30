@@ -629,3 +629,49 @@
   source_type: media
   note: "LLM 预分类建议(high):CatPaw平台发布，内部覆盖9万员工，规模应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-16-meituan-041
+  date: 2026-07-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "28笔特殊“订单”，逆着洪水送达"
+  quote: "28笔特殊“订单”，逆着洪水送达"
+  quote_type: title
+  url: https://about.meituan.com/news#NN26072718400904X
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布洪灾期间配送服务案例，体现企业社会责任与运营韧性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-10-meituan-042
+  date: 2026-07-10
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "小团的这几个“老熟人”，被通报了"
+  quote: "小团的这几个“老熟人”，被通报了"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260728178008100
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方通报涉及员工或合作方违规，需核实具体内容判断舆情影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-meituan-043
+  date: 2026-07-27
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团AI“小团”全面升级，从“能答”走向“能办”"
+  quote: "美团AI“小团”全面升级，从“能答”走向“能办”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xeXN6dHh3NTZjWkQ2Z3ZKNG4zLTFwYUpmRFoyd2tPUE94RnZCUkdGWExxREF5a2lmTTlBYlM5Rm43M0h4dFI5R1lUbDlaUTRXV1NF?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI产品升级发布，功能迭代从回答到执行，重要产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

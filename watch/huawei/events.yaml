@@ -688,3 +688,64 @@
   source_type: media
   note: "LLM 预分类建议(high):Mate90、三折叠屏等重磅新品发布预告，旗舰产品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-29-huawei-045
+  date: 2026-07-29
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "inwi and Huawei Commercially Deploy 8T8R Solution, Setting New Benchmark for Mobile Experience on Hi"
+  quote: "inwi and Huawei Commercially Deploy 8T8R Solution, Setting New Benchmark for Mobile Experience on Hi"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOcnRMcVhJdzFFZVBSUDVFcGZhVHlVcTVVNVVXZVdDY0k1bUN5R1lTOG1YYWtqRU5zbm82Vi1lcjNVVDlURm9YZGl6RzQ2OEhTNWxrZjVrbDVxMXR6Y09XdFdWR0Z5ZWo0WG5rZkR2dXF3OVk0U0xUTmZvQkh3NnpjQy13?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布技术方案商用部署，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-huawei-046
+  date: 2026-07-27
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "东风奕派M8交付即搭载华为乾崑ADS 5 Pro！限时权益价16.58万起！"
+  quote: "东风奕派M8交付即搭载华为乾崑ADS 5 Pro！限时权益价16.58万起！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9tQi1IZE1CVFM0VjNna0N2cnBzVjhhbWRfZUEyMWtIQjNJZzVBVnNXNFZWS1JPZDB4XzJjaTZHcDZuVmE2OEhGQzlmVElSMDMzTEFiQUcyQTNodzVS?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):华为ADS系统在车型上的应用，产品合作进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-huawei-047
+  date: 2026-07-30
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为举办鸿蒙电脑新品技术沟通会 折叠大屏与超轻薄鸿蒙电脑新品惊艳亮相"
+  quote: "华为举办鸿蒙电脑新品技术沟通会 折叠大屏与超轻薄鸿蒙电脑新品惊艳亮相"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE53WHNKbklSUkVxSFVIRDBHckRVanVxYmhONDNNdG1VOE1Qa0pLNFU2Z0hwbFUwbUgyM3JkcmhlU2JLTlFkZmZEang3UkdzYWpDMWRNeWtkS1g?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新品发布会，鸿蒙电脑新品亮相，重要产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-huawei-048
+  date: 2026-07-29
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为超轻薄鸿蒙笔记本电脑命名S系列 机身仅重798g！"
+  quote: "华为超轻薄鸿蒙笔记本电脑命名S系列 机身仅重798g！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRUEzaVB3ZzRHUC1EWjJEdk0tMTR5dExfWEZVMDU2dkNKUlpUaDEtMDBoVU11ajBqdFRjbU1PMElzck1abm5hX1JwQ3BpQWdiV2RmYm9IMUZsUEpZY1RNZElJX2tfcFpTeGVkbi1qT2pENjh2cGxoOVNEQTZmUXZhTGU5aTE2dFRH?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为新款笔记本产品发布，轻薄创新卖点明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
