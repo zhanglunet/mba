@@ -1359,3 +1359,94 @@
   source_type: media
   note: "LLM 预分类建议(high):AI失控测试再爆，千人联署，重大安全舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-29-openai-087
+  date: 2026-07-29
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "How GPT-5.6 fuses frontier intelligence with frontier efficiency"
+  quote: "How GPT-5.6 fuses frontier intelligence with frontier efficiency"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE5BVE1UdnNURWZXWHE3dlU1Q0NDanNJdlRWODRrenIwTGZiSFBYTk02QUs4bEtRUmRuZU5vMlBmQm1TNGtXblhzdGVrM1E4R01JYkpnQ3MzUldxOHJJejRXeU9uQndxM2REOXZyN1Y5ckFsNjRq?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布新模型GPT-5.6，旗舰产品重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-openai-088
+  date: 2026-07-29
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI、Anthropic 等上千员工联名请愿美政府控制 AI 发展速度，反映了什么？有何影响？"
+  quote: "OpenAI、Anthropic 等上千员工联名请愿美政府控制 AI 发展速度，反映了什么？有何影响？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE1TeUYzMDVmSzZfalNqMzlMWVRrVHM0ZWt6dTA1dWpiQVdlOGItWGd1UU9VZk5IdmtDcWlKMGlVM0NvZHZXRkI1emZDQUg2T2V5SDg0NmxzYjJvNktBWUZZ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):员工联名请愿涉及监管政策立场，显著舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-openai-089
+  date: 2026-07-29
+  dim: W6
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Hugging Face遭OpenAI新模型攻击，但真正的问题不在这"
+  quote: "Hugging Face遭OpenAI新模型攻击，但真正的问题不在这"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mTUlTNVlranQtVlVEbmNqLW02Y2J2ZWowWFpSTDJCem5TN2hLWjBTSzZXVmxLMTAxVkN1WEplWFRtOU5fM3ROMWtXVG9hNFIxNE92Mm8xT1AzVlIx?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [leverage, category]
+  source_type: social
+  note: "LLM 预分类建议(med):与竞品冲突相关，但标题党成分较重，需验证具体内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-openai-090
+  date: 2026-07-30
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI，开源了！"
+  quote: "OpenAI，开源了！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5ODlkUjRGUG91cDNmWmRzYld5WHN4REl5VFNrcm14cDc1elRPVF8tZ196bThfRHdMcmI5aTczUEQ0ak9LT3ZrVmtlYzNzUEdyYjZ2QWNR?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源重大战略调整，产品策略转变。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-openai-091
+  date: 2026-07-30
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "翁荔重返OpenAI，将主导AI递归自我改进研究"
+  quote: "翁荔重返OpenAI，将主导AI递归自我改进研究"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBkVW8yN1Yzb3FaLXQ2TnR3MVFOVU5XNkxJVnQyX19lSU1EQWdlZlRCVXVHUDcwVWFBdUpZTTNUN25aeFFMYnRBbA?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):核心高管重要人事变动，研究方向调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-openai-092
+  date: 2026-07-30
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI年化收入提速，CFO内部喊话：7月一个月顶过整个二季度"
+  quote: "OpenAI年化收入提速，CFO内部喊话：7月一个月顶过整个二季度"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1xZEthVGMwQ19xZGFrd2k2dWQwRjZSSnBJLVdOZmlhZUFlWlJCMzg4THp1U096TWRqNnd3VElNUW0xbnJKcTIwdldfY05MNzBfbFVF?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财务关键数据公布，收入加速增长显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

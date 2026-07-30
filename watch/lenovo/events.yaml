@@ -491,3 +491,49 @@
   source_type: media
   note: "LLM 预分类建议(high):股价下跌事件，属市场表现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-30-lenovo-032
+  date: 2026-07-30
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "光大证券将联想集团纳入8月港股金股组合，AI算力主线获重点关注"
+  quote: "光大证券将联想集团纳入8月港股金股组合，AI算力主线获重点关注"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPN1FLVkF0SGoxdEdlM1dzV2FBa0pMWjc2MzFCVDM1QXVURGxMWVl5NE5YOG9GSTNDWE92Q2NkYzhCZjktZWw4V015MERvSTNPeWJ6WDBxZlVwNTJ4M3RqYlo2R0hkMU5yNDYwUFcxRFQ1OF9VLUFVZkJaOG92ZkdqOFJqUEw3dUVaNWxyVVMwNDRxX3VXcGFYakI2bGtkUFpoTHRhOVYtUQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):券商纳入金股组合，AI算力主线获关注，市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-lenovo-033
+  date: 2026-07-29
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "中国创新盘点：联想集团、腾讯和比亚迪等入选财富中国科技50强和财富世界500强"
+  quote: "中国创新盘点：联想集团、腾讯和比亚迪等入选财富中国科技50强和财富世界500强"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE4xTGpRUVFIY0wtYWxzd3NZZXJLZ1JJTlN4MGtxcW1qSDZESDM3YWJwaWdTaTVCeVNBblJZMmhEOTN3VFk5MG9QMXZDel94bVg3TXZaVEdnR0MyeGJ4TEE?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):入选财富科技50强和世界500强，品牌荣誉认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-lenovo-034
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "芯和半导体携手联想集团 国产EDA智能体实现落地"
+  quote: "芯和半导体携手联想集团 国产EDA智能体实现落地"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOcHlPRmRpZWpsejh2Zm41Z0k2d0JxZ3lZdE5BZkNRVGYzMnZoMjJEU2dQYmowRndYa1BHM2hDU2xkLUttVU15eFhWODFMS1FaQmJTYnR0Y254a2hRTFNoQWIwdFJGWUJmUXl1czFRd0ppbTNtNG5rVy1fYmxrNHNZZDh1WHY1OVBDei12VTlDMzJqZmNxZ2o1WWxnZDB0dW51cUVoV3BuYXVkWDJiXzMwU1VHSl8?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):与芯和半导体合作国产EDA智能体落地，战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

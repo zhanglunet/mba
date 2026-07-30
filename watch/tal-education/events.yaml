@@ -103,3 +103,19 @@
   source_type: media
   note: "LLM 预分类建议(high):战略投资退出，涉及业务调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-07-29-tal-education-007
+  date: 2026-07-29
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "净利润同比增长超5倍 好未来2026财年净收入突破30亿美元"
+  quote: "净利润同比增长超5倍 好未来2026财年净收入突破30亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE5sTGZ6QkZXTEpFazdIeTV0QVp2a2ZUa0hCdTdrczB5ek9DTFdzRjBGVVM3amVwZGh0QWlzclVaclk3TkxvbVB2RkNlZnlCY2dfekE?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布：净利润增长超5倍、收入突破30亿美元。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

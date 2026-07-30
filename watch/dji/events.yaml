@@ -318,3 +318,34 @@
   source_type: media
   note: "LLM 预分类建议(med):大疆2026年产品愿景，品牌营销内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-29-dji-021
+  date: 2026-07-29
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谁将占据珠穆朗玛峰…美中无人机展开极限竞争"
+  quote: "谁将占据珠穆朗玛峰…美中无人机展开极限竞争"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxNdE9XLXZheXlOekdQd0JiLTBDU0R0bVJkYV9VY3JRMzZDdkJxMDk1NGE1WUsxVWJjR1V3S3A5NHl0a1VUQjBQVUhVS2NrM1JodUkzV1pJcmpUM1ZtQ2UxS3UtREpGQ0pmbHVNelVpY1J0OUUzb1RQcTJ3VUNPOUFNQnJDVE5BZF9hT241ZFdoNDVMUQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及大疆与美国无人机竞争态势，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-dji-022
+  date: 2026-07-27
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "农民日报社与大疆农业联合发布《农业无人机行业白皮书（2025/2026）》，以安全规范护航农业低空经济高质量发展"
+  quote: "农民日报社与大疆农业联合发布《农业无人机行业白皮书（2025/2026）》，以安全规范护航农业低空经济高质量发展"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE9hcGN3YkI4WWw3Z2FzbXZSZzRBd1hDSEFQX2YwWnZqUmhYbC1iTHA1TnVncldsaUxMY0JpbnB1Q0lKbHJOeFlDcDhScnBFdERsclE?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):大疆农业与权威媒体联合发布行业白皮书，体现行业地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

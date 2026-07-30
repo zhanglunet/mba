@@ -946,3 +946,139 @@
   source_type: media
   note: "LLM 预分类建议(med):Pixel 11爆料显示硬件缩水与价格上涨预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-29-google-062
+  date: 2026-07-29
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini for macOS adds new natural language capabilities"
+  quote: "Gemini for macOS adds new natural language capabilities"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxQOW8wU2lGd2pKNFJZY1liRXZGX3RoRG9jcGdKS2FZTElHWDdDYzJ3dXhUdGU2VEVqRjhzOXNBVFFDckxEV2Zhdzh0SHR4QjMzUFBBSEM0Yzk1NDRlOUg3eXk2VndyN1lreU5LemF3LXBKY1ppX0lNOUU3dkR5Ml9kcjIzREplRHp3UkJmd1FtZl9Mc3hqOVN3?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Gemini macOS新功能，AI产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-google-063
+  date: 2026-07-29
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and"
+  quote: "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxONWk1T0pfVU5aeEVUNFJiVmRHdVNyc2R2Q3VtYUdSem0zTFR3U2VIbWpoNGhoYXAxS2FWOWJiSG1IQzhPdGF4Rm5kaUhtUE12emJ5V0hjUHplTjkxTldKZU1QTmRKWmIyYlduYjVlTW0zS0pxT1lkY0pVMkJCaW9JVFBaUDVDejg?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Lyria 3.5音乐生成模型版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-google-064
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Ask Google Pay, and expanding everyday credit"
+  quote: "Introducing Ask Google Pay, and expanding everyday credit"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVWx5aFY0UVlqbWxQcUpxenZSUDJuRmlaY2hiODlXNm56N1BWTm9KNkIybGUtNlRxUy14aWpOdzY1V2NjU0FSMEl6ZzNncHJpa3hzYTJJYVJySk5FRVlrRDNVSGF4VTEzd2dBZ25ZZmRfUHo0WGRvelMwNjhFRWJQUi0zNHN0b3owM3owdHBmVGdRZUlYNHpQUGpwX3ZuUWZxRkRZNkNHTnhEcDZhUmV3U0h0aFZfby1M?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方推出Ask Google Pay新功能，支付产品扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-google-065
+  date: 2026-07-28
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "5 ways AI Mode in Search helps you enjoy the real world"
+  quote: "5 ways AI Mode in Search helps you enjoy the real world"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTDlsajAySWtVb1BMdDYxcWVLSGVwZ2plbmp4OGNFeEVvZ0w5RkVtMDRpdDJwS3h2VEthdHp0RlpPQXFFcjBrM2RUTFhRb3ZOaWJxU0lsVnVSWGVBYXM0VUhrQXVTTC1fUks1YlpsTVdTNDA3bE5SLXdBOVJBMlpobmI4MjJ6MXRBSTdj?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方介绍Search AI Mode功能，核心产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-google-066
+  date: 2026-07-29
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Gemini Spark: Your 24/7 personal AI agent in India"
+  quote: "Introducing Gemini Spark: Your 24/7 personal AI agent in India"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxORmVHV2JlTjJDaWUwVnF6b3BSNzN1OWJXRXhsdjNxWnJ3QzVYTTM1WU9rWXBrTE9PQ2hKbXVoeUxjNUNNQ3JzdEZzUHBPajJDSmQzaXlEMGhock1rUmwyRENWNXBPQVhhbEQ5TWN3bnJ6YTRFZUVPcGd2bWljMzcwYWJ1bGtVM3VXOEsxeWJ0ODBGbURXYURKYWV0RDkyd2E1QnN0V0YyTVJ5MFVQOHNZZkZnZTlaNFhfUHc?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Gemini Spark个人AI助手，新产品推出。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-google-067
+  date: 2026-07-28
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How Gemini Flash agents are helping a Michigan dairy farmer"
+  quote: "How Gemini Flash agents are helping a Michigan dairy farmer"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxOS1VsNE9zR0w2elN0UTFiMXRjZjVGbURrRDdJeUhVNE8yY01Ed1EwT2YwUXNyaUJMMURkR05NTnJObk5TYkViWW9CVzhtY25QTFVwNmNLUjVDVTZsN0J6SGNMUWpXRkVTcWcxV1dQUmZuVjZVY2dGNll1bjZnODNVajVJYS1XUUVrRk5UMHoyUllZbTF6OWxCNUduQVh2T2wwM0E?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方案例展示Gemini Flash应用，产品应用宣传。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-google-068
+  date: 2026-07-30
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌预热Pixel 11 Pro手机Glow功能，灯效融入用户日常交互|Google|灯带|手机屏幕|双子座|机身_手机新浪网"
+  quote: "谷歌预热Pixel 11 Pro手机Glow功能，灯效融入用户日常交互|Google|灯带|手机屏幕|双子座|机身_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxQczVhbmxCOG56RTZJUU5WSWtZd0FHcGd1X0Iyd0dLTGI5bEcxeWJQNmo1dXhaa3VFNGV6MzZCY3RHMksxUG85S0h0NEFtV1JPQ0FFMVhxRnZ1N0EtZGQ5U3dKWUxuTkJJLUhfMU44QUk5TmxlY3hMS24wTi11cUpneXdJelZ3ejZfMHBGT3BQNksxeFJsTklKOXRJeVlkTnJhZXNKb2tHcw?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Pixel 11 Pro新功能预热，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-google-069
+  date: 2026-07-29
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌因违反欧盟《数字市场法》被罚款10亿美元"
+  quote: "谷歌因违反欧盟《数字市场法》被罚款10亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE8tWEwzbERqdVRXRkNxSjVkOVNUVGh2VV94d1dQLU04MlRfcVhOa0Rpb0pmYjVkaDg2QUxRWS1rR1VIalFRV3JOVElhOThPcmtFTmc?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟监管处罚10亿美元，重大合规事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-google-070
+  date: 2026-07-29
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Google发布音乐生成模型Lyria 3.5 带来更自然、更具表现力的AI歌曲创作能力- Google 谷歌"
+  quote: "Google发布音乐生成模型Lyria 3.5 带来更自然、更具表现力的AI歌曲创作能力- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yS3VkZmM1UU5YSHZ0aHYwNWM3RHFEelVGMFp6dVJyUWpkV2hLYUl1SFZJQTU5WG1NS25rbXdidWJZQWFLVDl1ZHdIZG1CaDgzNjl6dzhKelB4d3JRSG4zRg?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):AI音乐生成模型发布，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

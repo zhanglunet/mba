@@ -854,3 +854,49 @@
   source_type: media
   note: "LLM 预分类建议(high):英国快递服务扩展，常规业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-29-amazon-056
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊儿童沙子商品石棉测试报告+DV验证"
+  quote: "亚马逊儿童沙子商品石棉测试报告+DV验证"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1NdE1HMG5DVHNSRmVnMW5BNGxzU016WUMwZFBsV1hMNkNHTWVLaHQ1T1hjM3JhUFJPZjNicDFzWm1DaG8zamtPYm1adTZFbjVObW5sYWliMlJFWGt3?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):产品安全问题，石棉检测涉及消费者健康风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-amazon-057
+  date: 2026-07-28
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊为Leo递交设备直连申请，计划建设超5000卫星大型网络"
+  quote: "亚马逊为Leo递交设备直连申请，计划建设超5000卫星大型网络"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixwJBVV95cUxON0ZPR01PakdnVU9QWTBFNkNTUTFWSk9rM1p6bDU2Q0ZsX3NRWGhDSG9pcnUxRVdJdjJpdlRBZndDdmIzWElwbmFFOEtoUzQtVXo4MkpyZDBNeXFXMVBFMkFOOHo1NHNELU5McjJZWFpDOWtiSUlRNmI4YWppYnBuTXZ4Y2lDQ05lSmlLN2VzR1p3VFJJdnRZejhQQzJOWHdzaE1iSFRtQlNUVXFpZGdjUi1xU0xjZnVhZ05sTEdqM1g4c2cxMmdRb0VENndDMHhPREV3X0JlZUxQU2xkTEo4RHFuVzI0UmNjMVZ6RWtrVEhubGpoTUoxYWRvOW9McGN6c1h1WWJrWWpYbjRqX2F2OUg2QTRxX2xBWDM2eV9vb3NrQXpFdm5OQ1VCLVBzVTRXZW95UWJTTDBSeTUzSUtldElVa2hjY2s?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重大战略项目，卫星网络申请，涉及业务扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-amazon-058
+  date: 2026-07-28
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊申请发射5105颗卫星，打造手机直连太空网络，正面挑战星链"
+  quote: "亚马逊申请发射5105颗卫星，打造手机直连太空网络，正面挑战星链"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE96WGphcUlJLVdFeHlIUzJuU283WFhJSHNzLW1yUHF5MEU3Z0FjYURJSG1rYWFNdnJHdmJyNl91XzV5VE9fYlZIT0d5TTl4WHczcG0wNWF4NTI1RUpM?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重大战略项目，卫星网络申请，与星链竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

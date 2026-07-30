@@ -867,3 +867,94 @@
   source_type: media
   note: "LLM 预分类建议(med):Optimus项目遭质疑，涉及核心产品前景评价，具舆情关注度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-28-tesla-057
+  date: 2026-07-28
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉与SpaceX潜在合并可能提升其在连接技术、机器人和自动驾驶技术领域的地位，RBC表示"
+  quote: "特斯拉与SpaceX潜在合并可能提升其在连接技术、机器人和自动驾驶技术领域的地位，RBC表示"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiywFBVV95cUxPUEFtalFZekdXOFh0NEd2Y2tsWUM5MUVkZmRRQWVqWWFqeFJmcnZLY3o2Ri03US1FY3p4RWlTTHFJWUdESHRsaHROX3lmUzhFUmQ0SFh5dmZfZ1diR0NzTm4zYW9uYmZYZkZkX2hrYVJ3b25femhRRWlsNFp2WVhmcms0NHYtdU95d2ZJcXlDdkRGcTlleG1WOHZzemhkYkYxUHNWaFIxS29Xb0JwMXFLQUlaWmtmaFZRZWluQTJDYkU4VHZtUTNVSkNvRQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):特斯拉与SpaceX潜在合并传言，分析师观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-tesla-058
+  date: 2026-07-30
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "车主吐槽特斯拉FSD被救护车吓到急刹：路口绿灯猛踩刹车座上午饭被甩飞- Tesla 特斯拉"
+  quote: "车主吐槽特斯拉FSD被救护车吓到急刹：路口绿灯猛踩刹车座上午饭被甩飞- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BdDE4eDJMamk2TFVxUXFwQXN5Q2NOTGJuTklpRzFpNGYyb254ZmRTeDVhY2daT2NNVjVmcHU0bUpsejI2QmI5aXcxakI3Y0ZCUjZrWFZLYmppVktJM2pudw?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD安全事故投诉，自动驾驶功能缺陷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-tesla-059
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "马斯克两个核心资产，正在同时遭遇市场拷问"
+  quote: "马斯克两个核心资产，正在同时遭遇市场拷问"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNUGlmaXF1TmwwbGl5X2xMNVVNd1dYZlNOVjBsVG5GbmNlZlcwczZtWWp1YzhBNHdZVUU2eVQwV0VGZXpLcGZmN2VBSEhGUmozZXlhSlFXcTJybHNzbEY4YnNsSjV3RHpzOUtlcU4zZG9FTmxlc1JBYnUtUXJ0NjRKdUl3aw?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):马斯克资产面临市场压力，涉及特斯拉经营。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-tesla-060
+  date: 2026-07-28
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉Model S/Model X签名版，限量350台，售价159420美元"
+  quote: "特斯拉Model S/Model X签名版，限量350台，售价159420美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zR3lMUFJoWTB6T0dVM3RGMDhQNkhfMWpFeko1NFlNMXYtMXJHcF9HWUJCWjZXd0htbXBaWmc2VGFDVUl6dy1NTHlRU2RDWm5fV0kwVmc2c01pTlE?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉限量版车型发布，产品信息明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-tesla-061
+  date: 2026-07-27
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "2025款特斯拉Model3实测：续航智能都到位，缺点也实在"
+  quote: "2025款特斯拉Model3实测：续航智能都到位，缺点也实在"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE5zTlZrQmpiU3diOFlGOUhKYVFHOWM2YnYyMi1GcXp6Qmw5LXE3RWVHWnpSaUpRekZlVGpIWWhlSFRHTzcwT29aZW1JVmI5TmRfc20yRVVnbW00LUE?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Model 3实测评测，产品性能与缺点并述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-tesla-062
+  date: 2026-07-28
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉城市NOA上新：7城Robotaxi已运营，FSD订阅率破纪录，值得上车吗？+FAQ"
+  quote: "特斯拉城市NOA上新：7城Robotaxi已运营，FSD订阅率破纪录，值得上车吗？+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE1QbEN0WUVfTFo2RElaejlrcnFQTGZoVTQwVHdLUUIydDlGakxGcEVVTFgtTWhTdHpjNnRCUWd0ek1LbWJyQmZqUzJHZm1DRkpOQ1NKbWRkb3NlODdSVTB1NjR1VnozTTFMeWMycC0yWVJQZw?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉城市NOA扩展、Robotaxi运营进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

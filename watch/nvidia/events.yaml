@@ -912,3 +912,94 @@
   source_type: media
   note: "LLM 预分类建议(med):英伟达7500亿美元AI交易，融资规模巨大但融资模式引发争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-27-nvidia-060
+  date: 2026-07-27
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security"
+  quote: "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jbERSYTYzMDlvaExvNHBYWTZrU2Zfd210S2U0NHAyMDBqWG5DS0hkenZPaUgxVDcxcEtPUUhrbVhObUpvQzV2b0VKSzRjOF9sMW9WdW03ZVhyUC1TaG5XVGdHS3Q?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布联盟合作，体现品牌在AI安全领域的战略地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-nvidia-061
+  date: 2026-07-28
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "台湾检方拘押涉嫌协助向中国走私芯片的英伟达经理；英伟达：走私芯片“不可行”"
+  quote: "台湾检方拘押涉嫌协助向中国走私芯片的英伟达经理；英伟达：走私芯片“不可行”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxNWVpndVo1cTVsb3p3Z25QMnpxVUVPUU1jVWw4S1c3RkxFZHJaa08xZU5kSnFFMl9MSWZOZGhDcGZRaWxSTW93dkJnNVpHQUY3UlB2Q00wN2NVYmJadEx1OHRaUExXWGtreERVSC1hb3lCdEI4aXpMbmk0ZzFmRVBtakl5MmliV0h2YmdsVGxaQkdRMkxsSVRLS3ZLWHDSAZ8BQVVfeXFMUFY2OTlXcUQyaVdlbU9tbVk5dmlhU1Myc1VZem43ODY5LVg2VWlWMTZSV2JKR2FMeG9QSnRmMUM2OW5xdGhwRmtya00ycFVCeXFnck14VmJ5SHdZbWtKYVZyc0F4Ums3RUpJVW9udHgzaUhiMUhsZnV5RThPVHh4eE5QQlUyUndzcF9tTE8wc0lpNmhURXM2cFpwRHdhdlRZ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):芯片走私案涉及NVIDIA员工被拘，监管风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-nvidia-062
+  date: 2026-07-29
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达扩展智能体工具包，推动芯片与系统工程自动化-AI基础设施"
+  quote: "英伟达扩展智能体工具包，推动芯片与系统工程自动化-AI基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE9aZEl3Y1pja09wZGo4bmhoWDBvM3J5cnFGVzZyc1FXVW5SXy1iNm1EaWZoeDNDR19nU2ZCUzdQU19GRy1qMVlMbjB1UTNJUWR3THFKckg5eEljQklDZlZZNmhIWE9TX0Z6a3g3a2ZmRUdfZw?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):NVIDIA工具包扩展发布，产品能力升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-nvidia-063
+  date: 2026-07-27
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Safe Superintelligence与NVIDIA达成合作 将采用Vera Rubin架构"
+  quote: "Safe Superintelligence与NVIDIA达成合作 将采用Vera Rubin架构"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBBZzFyaVpfanJ4UGhsOEYzTURweXdwWGpBS1VnV0VsQndZbkdVZE5DLVhGV0FIc3NEYThRUk9rTWw0LTB3d3NBckgzbVEyUmFXNjVXNGZxazVzMDRqSHItSA?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作达成，NVIDIA架构被采用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-nvidia-064
+  date: 2026-07-28
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI泡沫论｜Nvidia续投资AI基建 据报豪掷3900亿租数据中心"
+  quote: "AI泡沫论｜Nvidia续投资AI基建 据报豪掷3900亿租数据中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi5wJBVV95cUxNNVRLdmxkeVd3cGwtbkFRRDl6TktHTjBaQjRjS2xWUXl0ODB5WXF4SjkxLXpleURFdk1HOWtlM3ZFNWZaZk4zbnhMUWpuWTJuNURZakY0S29TNndsaUNWWmcwM2RLc054eHhza21FZjk0dGg5Z05yZkg4b0FOck5jeVpvTHQ0akliZzBuNEN3MXZvQ21FS0E3Z0tMMThCSHZBZkdRVlltVUE2TExpZEZOUUdPNHVmcUtOSFRSOTFOd1dhbXVhVEE2a3F2SzZVZ25CemhWaUdjdDA4d0JHNDBOSDlSZW9xMWl5VU5mLXp1LW4zT0E2UWwxdXZLcThscm5kblpHMmtxLTlmOF82SjBIcGl1emxnX3RvUm1feUNNTzJ2cTJXM1AyNjFscDljODUwblFYZU5EbDRRaXY1MlczREJiRU1pa2kwZ2ZrT2I1MG5ab3p5SGhBM2pkcUVBYU95eGNfZnJsUQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大额投资计划报道，体现NVIDIA战略投入。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-nvidia-065
+  date: 2026-07-27
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA联合微软等科技巨头成立开放安全AI 联盟倡导开源模型安全防御"
+  quote: "NVIDIA联合微软等科技巨头成立开放安全AI 联盟倡导开源模型安全防御"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfWjBXd0J0cjdsRW0tS2l6ZjhNTEpwOG1SOFVLQW5nRy14Sl9qNmZyY1RGR0ZaYzZSdjhzVGFGS0dGNjVPUXBmMmVvdVNyd2FGUmhFekVCWQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方联盟成立，与微软等巨头合作AI安全。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

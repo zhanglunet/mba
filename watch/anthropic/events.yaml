@@ -1084,3 +1084,124 @@
   source_type: media
   note: "LLM 预分类建议(high):Anthropic主动起诉品牌侵权,涉及法律纠纷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-29-anthropic-070
+  date: 2026-07-29
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple iOS 26.6：Anthropic利用Claude发现了一个Safari漏洞"
+  quote: "Apple iOS 26.6：Anthropic利用Claude发现了一个Safari漏洞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxQSGpwOEdYWHZOWjZwV3NhSnF2cV90ekZUVHo0Mk9BbXlsM25zd3R2NzR6U3VWdVpsQm9USzV0ak94ZEJIWVVmN3Y0N2ZwRjZpaFFnbXhFYVN4NmpjMGE2RXk2Wll2TzFjNzltd0hMRVpma0pMMUN6U25vUHFDRDhaZURuMWJxaUI0YjdpVDhFRQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude发现Safari漏洞，展示模型安全能力应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-anthropic-071
+  date: 2026-07-27
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI 和 Anthropic，正在砸钱抢这个市场"
+  quote: "OpenAI 和 Anthropic，正在砸钱抢这个市场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBnTU80MVZpWUNMaGFFdHBDeGhHeEFLZTFsUmtFSEI2SUN2eGFwZ0VfaFZ5YzZsM3dOdHdRaDBWNEMwQ2Y0TldKUlRuTlg?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI和Anthropic竞争态势，市场动向分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-anthropic-072
+  date: 2026-07-27
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic为何押注AMD？Claude Opus 5亮相，数百亿美元算力布局加速"
+  quote: "Anthropic为何押注AMD？Claude Opus 5亮相，数百亿美元算力布局加速"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9WV0p5TzQ3LWM2bjlEU19wajQtVnVmNUcxU3NHUjBIOTRQVk5YX3VMUC1BSmZhc1AxZ1Q1bHZRM2dtU3V4c2JST2VnU01LbWg3TUw4WXdHX3g?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude Opus 5亮相，AMD算力布局加速，重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-anthropic-073
+  date: 2026-07-28
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic Claude共享聊天功能曝隐私风险，大量对话被谷歌收录"
+  quote: "Anthropic Claude共享聊天功能曝隐私风险，大量对话被谷歌收录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5pc3EyQUtyVkszdm90Slg3c1EwT3dmMUtrZEltUV9ZVVRwcXRjejAxRE5wbms5cGFjM3BDeDJiS29ZR0hhMkM1VkZweDNuQQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):共享功能隐私风险，大量对话被谷歌收录，安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-anthropic-074
+  date: 2026-07-27
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "达内集团成为Anthropic的Claude合作伙伴网络顶级合作伙伴"
+  quote: "达内集团成为Anthropic的Claude合作伙伴网络顶级合作伙伴"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNd0cybm1tMWN5TjVMdVlYNGJ6LTN6aUR2MW9fM0Q2M3gtZE9xbFNtUXJ2WEpHVzdXMEUwZC1JVDdjcjNmUzJLYUNNRVloN0dqYVQ0bUh3RFJTUjJzM2lXeS1jRUY2cWhGMGs1RzhkUVlSZjJlbm5GVmhFSVZkYWdvaHJ3UmhLVlMzcWsxbXo3Z1poZXgxNTdZWG1QUQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):达内集团成为Claude合作伙伴网络顶级合作伙伴，战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-anthropic-075
+  date: 2026-07-27
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic Claude共享对话被Google索引，暴露加密钱包助记词等敏感信息"
+  quote: "Anthropic Claude共享对话被Google索引，暴露加密钱包助记词等敏感信息"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE5Ba0E1bVVoeWJ5VXZraGc4MTJyb3lMMVVJVFFtT29ncGNxbFZzNXBIdW05WFptZHg0RkxwajVSZWp6NHMyLWdPb21tVTl2UWNKNUMySERhZW9UcnV6OHFfdnluOElfakl5dXdn0gFrQVVfeXFMTkFrQTVtVWh5YnlVdmtoZzgxMnJveUwxVUlUUW1Pb2dwY3FsVnM1cEh1bTlYWm1keDRGTHBqNVJlano0czItZ09vbW1VOXZRY0o1QzJIRGFlb1RydXo4cV92eW44SV9qSXl1d2c?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):共享对话被索引，暴露加密钱包助记词，重大隐私安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-28-anthropic-076
+  date: 2026-07-28
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic：Claude发现加密算法弱点，对后量子安全构成理论威胁"
+  quote: "Anthropic：Claude发现加密算法弱点，对后量子安全构成理论威胁"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBCa2RjNzV2dkFZZF9ha0k5NGFXR0Nmc3Q3Y1pVVmFFMHV6QkFzbmlsd1F3dlduLTBsQm9jTmJpLWZZZXFCQThtXzd6UFpqcXJrMTd2LVgtRVB5TFJiaDZKQWlOS1g0UQ?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude发现加密算法弱点，安全研究发现，理论威胁。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-27-anthropic-077
+  date: 2026-07-27
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 正式发布 Claude Opus 5：安全性强兼具多步编程与自检能力"
+  quote: "Anthropic 正式发布 Claude Opus 5：安全性强兼具多步编程与自检能力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0AJBVV95cUxQaWxzX2JydVVZOEQ5MjdzNHhGRTdyMjFQWlF0VWZIX1VmcGxMTF95UVMwYnBIeFpNVUdLb0k3a0Y0XzFYUkxVSl80dWRsOUliOVJHUndNZ2VNd0RnOHI1ZmxxUHdoc2diTm1ndDljZmlSdXN2S3AxMU1qcGdvZTVUVm1faHZaa1hPTVh4aE43WUh6UzZNZGhZVlB1TUQxYUpxQ2E4UFhVLTZ1aWFabjZfMVNxaHlIUmRLVHZPNFJHODFCN3JBTmprcXJOMms4OWU3ZW9pU2I0bjBqLUlQNklENl9fTXhTZWdlVml0bG5pSl84RHk5MXBxVW1JUklPNzB0RDdjZ09JWlZHN1c4VXlrTWRjRjNBVnBqNTl3QUg0RF82VDZxV3lNNE53NnJ6UjRFLVN3eU9uU3hKMlZ1SGJfYUNZVTdTbzFjQWhCUXZtc1g?oc=5
+  fetched_at: "2026-07-30T05:20:16Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude Opus 5正式发布，旗舰大模型重大版本更新，P0事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
