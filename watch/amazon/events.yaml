@@ -900,3 +900,109 @@
   source_type: media
   note: "LLM 预分类建议(high):重大战略项目，卫星网络申请，与星链竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-30-amazon-059
+  date: 2026-07-30
+  dim: W3
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "Amazon.com Announces Second Quarter Results"
+  quote: "Amazon.com Announces Second Quarter Results"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxOZExYaC1BN1dHSmNVeXVxYjdmTVB1Mk9zQTkta2hBZUJKc2FuTWhmNmdPRngzcFF3MUtNc1U4ODBEc2wxYmVoVWZIemI1c1E1elh5OGs2N2RhUHZzdnN6S3RNUDlsYmZSQWpsdWgtSlVrRm9xWkVsZ2RhQ3pxbjRWeGdqMlJmM1g3WUZacmU5U0xVSkdpQklvRHdyU1JwWkhySEN0NW0xOWdabFZ5eFRn?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报公告，关键数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-amazon-060
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Q2 Earnings: Andy Jassy on what's driving Amazon Ads growth"
+  quote: "Q2 Earnings: Andy Jassy on what's driving Amazon Ads growth"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxQVHhqUkpST3dWa0hQZk5zRHBJMHJEOFNTYy1HMDN5VFVaa1hiSjFOWVdiajNhcDNBcnpPTU05RlVjdzBaNVotMldFV3FNc3NXcEJMSmNZT2xOQWZVSDhjWXg4UHdEak00Zlk3Nk5oZVJHN1VaVHFiMlNXbzZ6anpMMXFNMF9NM3ZBbml4S2NUMXRPdjBOcGZ3LTdGeG1HX0ljUnlPVA?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报解读，Ads业务增长亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-amazon-061
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Q2 Earnings: Andy Jassy on why AWS is booming and what it means for customers"
+  quote: "Q2 Earnings: Andy Jassy on why AWS is booming and what it means for customers"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxPTTVGLThGNktqWXFGVUhUanRuUE1XYTd4bk5DWHludWFyU2RNWnBjd0ZJTlpYd0VOTjVrZnFhWU1xcElQV0ttNnNvTnM2b05Bdk5HWGg5ZmpEM210bEpVbGtiUE5UckxQYUJ0SGRtTUMzcTlweVpHSlB0bUNLVnBSNFFfbGFRQmhXZkxwLXpwX05KSW9rQ01RNXU1VndxWm53LVdXb1Vn?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报解读，AWS增长核心业务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-amazon-062
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Q2 Earnings: Andy Jassy on Amazon Stores growth, delivery speed, and AI shopping"
+  quote: "Q2 Earnings: Andy Jassy on Amazon Stores growth, delivery speed, and AI shopping"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxOa3RkVTZ3QWl3QzZMSGdsdmp2ZGpiX1FjMElOUnViUmVOUXFnbzhYODEzNF94MnZLOGlaeEt5UVVtdE5LSzBrU1pLVEkxUEQxVll4Z1pIcXBhbmNjSDhWWEpZbEczWk9MY3lYSjFjVkJVQVJLaHVkb1laaGJ1cWNTTDZ0a1QwbTdSeGszaURKYmtjbWpYRWVsVjBYdFJsM2theFlEUmFaNE9VUWs2eWY0?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报解读，多业务线增长亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-amazon-063
+  date: 2026-07-31
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "How Amazon became one of the world’s top chip companies in a decade"
+  quote: "How Amazon became one of the world’s top chip companies in a decade"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE9oTTMtVXpHbmZ6ZnFKeWhnYUM3eVM2eGtpTmFrU293cGUtV09yNGNPU2RnczYyMXI1c1I4aktfU1pTRURWTGRNVk1CdUQ2RzhFT1NPN21QQWJ5b3lXamE1T09weF94ejAycXN0TzZyLWp2YUpDRUxiYQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方芯片战略成就报道，核心竞争力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-amazon-064
+  date: 2026-08-01
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊提前兑现对 OpenAI 投资 500 亿美元承诺，当前持股约 5%"
+  quote: "亚马逊提前兑现对 OpenAI 投资 500 亿美元承诺，当前持股约 5%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgJBVV95cUxPdVp4OWdGZ2JEZXhzaHhJMnhQalFfbUVpbnNmSEdXXzd2ajBUakVnSVZhUmRhT2xCZkhfSFhkS20zZ1pzWjUxRk1ZNURPVVJfMGEzQ2U2LW5sNWdNQ0xvMGh0UWdrVVdMVDZHSzFadHpXQWp4MldiMTJaWDh6Y3ZDazVFS0hubnpmdnh2Uk1KV2tqTFpLRTc2Y2pOV0ROeG1nTjJ3R2t5MzhrWlduZlFjZmNwWFdrNUctOG0wckQzSzVLSEhKaFR5UENmWTdzMWtRR0p3SlU1RENVMHIybWxES0NSblAzREFnQ0EyUHFFaEpNdUtXSzdyTTZucVdQcXdEbGRSVG9MV1oySklOcmcxOGJlTzZuOGlkTkJjemVzSkhqbnZKeWVvaEJzWU5NX2kxalE?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大投资承诺兑现，融资事件明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-amazon-065
+  date: 2026-07-30
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "亚马逊大涨！AWS以37%的超预期增速回应AI烧钱质疑，市场无视现金流转负、资本开支上调｜财报见闻"
+  quote: "亚马逊大涨！AWS以37%的超预期增速回应AI烧钱质疑，市场无视现金流转负、资本开支上调｜财报见闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE80NHRDUUdHTHdtYmVzbVk4VlFvRFF6YXlmdEpNX2NXRmlCY2Y0Y1JkY3pXYVJVRlZNMnFuX0R3eFVlNk1zclVnZmNncF9xM0xfMFZj?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字，AWS增速与资本开支矛盾。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

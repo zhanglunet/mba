@@ -1003,3 +1003,124 @@
   source_type: media
   note: "LLM 预分类建议(high):官方联盟成立，与微软等巨头合作AI安全。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-29-nvidia-066
+  date: 2026-07-29
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "深入了解 NVIDIA Rubin GPU 架构：助力代理式 AI 时代"
+  quote: "深入了解 NVIDIA Rubin GPU 架构：助力代理式 AI 时代"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5qWjdWalBncVZqOG4xenk0RF83ZEhBQXRRS3AtMzhIREVKY0lCdFdLcFhabkk5Y00yckpEVHU2dWZkYktlZjRjN3A0RERxLW9oU0kxWmRnY0d0TE81?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):Rubin GPU架构技术解读，新产品线信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-nvidia-067
+  date: 2026-07-29
+  dim: W6
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达 50 亿美元重磅战略投资SSI；行业首家百亿估值医疗世界模型企业，商汤医疗完成超1 亿美元B 轮融资| 创投日报"
+  quote: "英伟达 50 亿美元重磅战略投资SSI；行业首家百亿估值医疗世界模型企业，商汤医疗完成超1 亿美元B 轮融资| 创投日报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0tZ2lOTEZ1V0swbGNzcnNGcDd2aDlrY2I0TVY5bUo3VkJ1ai00c0UwQTZBY19qV1oxYVlNQV9URk9OUklIcV9TNkFudE5LRzhDa1VwRkpmNHNkYjN1?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):英伟达50亿美元战略投资SSI，融资金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-nvidia-068
+  date: 2026-07-29
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达\"看了一眼\"就掏重金：Ilya的持续学习有眉目了？"
+  quote: "英伟达\"看了一眼\"就掏重金：Ilya的持续学习有眉目了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE01azlfWDNCSWlIUjZpdEl2N1B5aU9HdF9JQkh1cXN5NE1CZXh0c3Q3S2hnMTlTVVFxOWs3X1k5VUVhSDUxaWhjQXpjM0dEbDhPbGdwZ0pzTEVIeFRN?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):英伟达投资Ilya项目，战略投资信号，金额待确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-nvidia-069
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "7.31雷达财经早报：英伟达牵头成立网安联盟，捍卫开源AI"
+  quote: "7.31雷达财经早报：英伟达牵头成立网安联盟，捍卫开源AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxNeUxrSEd3LTFVNm1EV2lMNmM4OXlRaEVBQ093c1FTb2JOYUh6UVNUNXpKc0owa0FwdWxaT1pUdm40NjlPNXVZcW82SlFoNUY1bVNKbnRXakcwNnRzUDZ3a21RbEdzOGRDRHFzNmEzZzZYdjAwTFdPUEdNZTV1dzU2dExsVXhpamxmRjcyV1V0UFB0eWJDSl9OUXZKUkFVM29fb3VPQUFKWQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达牵头网安联盟，战略合作与行业地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-nvidia-070
+  date: 2026-07-30
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA发布Nemotron 3 Super，面向高阶推理任务的开源混合架构模型"
+  quote: "NVIDIA发布Nemotron 3 Super，面向高阶推理任务的开源混合架构模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE95dVpZRXRvdm13RHRzd2U5LTc2RXJCVXFkRm1XdXpFcXo3WVJudXJYdUlaRjFuempQLWVSZENiT3NPY09lNWZfSA?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Nemotron 3 Super开源模型发布，产品线扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-nvidia-071
+  date: 2026-07-29
+  dim: W4
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达将召开第二季度财务业绩电话会议"
+  quote: "英伟达将召开第二季度财务业绩电话会议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisAFBVV95cUxON2NfYy0tS1BaSzVwV01Hcl9yOUV2TDJHemtMdV9HZnRQR2pOMG9UcmdNc2FlbzRBOTl6RWpkMDJadEU1Q05GQlBUcm9UdGUxajBUTGRlbTl5TnJNVjQ4M29idE1nZHVpdm1ESzV2SmxNRnU4YlBzSEQyNUgtWmREelQtelBhYkRFTWRYM2kyZVYxM0k5azNiMl9IN1ZZWXFrT2NSd3pmb25ZaW1MYnlVZQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):财报电话会议公告，财务数据披露预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-nvidia-072
+  date: 2026-07-30
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "研华与英伟达深化合作推出「AI Factory Brain」_AI Factory Brain_研华"
+  quote: "研华与英伟达深化合作推出「AI Factory Brain」_AI Factory Brain_研华"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1mdk9TSWRCNS1lN1ZMSW1jeDJ5NTQwQTFrRTVHLTNsOVVWc09oNm5FUzd1Vm5pZC1mZ2pfTXZXaThrelZvZ0lqZW43Umo0NTZQZ3VxbXVrX0k4eWo5?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):与合作伙伴深化合作推出AI产品，属商业合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-nvidia-073
+  date: 2026-07-29
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达押注自研CPU加速芯片设计，EDA行业迎来AI转折点"
+  quote: "英伟达押注自研CPU加速芯片设计，EDA行业迎来AI转折点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBzLXh4dnFVVDJTdVR1SHVKVHB5OF9HWU1wS3drN2lGWVdhVmFVbnA3TzladENDZzVGRGdJTDdGWVdMa00wZEFKQXBIQlQyTVBma3E0?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):自研CPU芯片设计战略调整，产品方向重要信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

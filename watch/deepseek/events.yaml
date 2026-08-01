@@ -946,3 +946,79 @@
   source_type: media
   note: "LLM 预分类建议(high):融资中止+言论外泄事件，重复内容但确认融资暂停。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-31-deepseek-062
+  date: 2026-07-31
+  dim: W1
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "如何看待2026年7月31日发布的deepseek v4-flash更新？"
+  quote: "如何看待2026年7月31日发布的deepseek v4-flash更新？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBXZF80dl9oQ3N1aUtIaWN0ZXQ1d21jNzRBMnQxMGJ4OVo5Y29mSWVfaEM5NG1EN19DWURTaGZXRVQ2U0I0bG5QVGZTVWJBdk1BUHFGZ0h6NVg2bVoyMzJ3?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):V4-Flash版本更新发布，主力模型重大版本迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-deepseek-063
+  date: 2026-07-31
+  dim: W1
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "如何评价 7 月 31 日上线的DeepSeek V4 Flash正式版？"
+  quote: "如何评价 7 月 31 日上线的DeepSeek V4 Flash正式版？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9EZ0E4Y3RQTFpxVDVuLVFGQzF0eTVINW04OWN3bGhoMmE3VVZUVnN4NzYzMGhDeERDZjRSQXVHdTd6eWotUkxmMkZJZ2JhZTdCamVlbHpfdWUtMHJ2bHlN?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):V4 Flash正式版上线，旗舰产品重大版本发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-deepseek-064
+  date: 2026-07-31
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek V4 flash 正式版发布，有哪些亮点值得关注？"
+  quote: "DeepSeek V4 flash 正式版发布，有哪些亮点值得关注？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNR0hremIwMXN4RnRibUxVbC1ZLVFRM2wtQzBiNWpKSll2dF8zVGV4REpfLTFvazZ3eTkxNjNiWlZHNmtyc1NrN2tzUTdhT2VNRmtRWm1STEFQNlZwUGZiNkdkTHlnTDJEblc0bld6ci1WRDFTOGUzRmRzcGJfVW4wdEwwdw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):V4 Flash正式版发布亮点评析，主力模型版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-deepseek-065
+  date: 2026-08-01
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek-V4-Flash正式版跑分亮相：约98%缓存命中打造极致性价比"
+  quote: "DeepSeek-V4-Flash正式版跑分亮相：约98%缓存命中打造极致性价比"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCblRnVnBiazRvUmQ1NTZwckNRZWVXSGYzTjJCc1psWHo5SlMzS2h5Wl9ITnpLaDhMRnFRaHpPSTZWTy1ETGVidQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):V4-Flash正式版性能数据公布，旗舰产品重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-deepseek-066
+  date: 2026-07-31
+  dim: W6
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "消息：DeepSeek拟在内蒙古设巨型AI数据中心"
+  quote: "消息：DeepSeek拟在内蒙古设巨型AI数据中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxQVzN4Tm1YSFRsRlljMENsTElQZHhTVjF2cFdtYWRnblBsOTNSVHZLTlBMemtfcmtLeVU2Vl9YWVl1YkRKd2xiR0lQVV9fOUt5bWtSeHBPQzRUNjZOQTRMR1ZFWTlPUHFHYm5vRDBFY2UxUmdzMlJGTkF2S3VtSVkxY3Vza1BVQQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):数据中心投资计划，战略扩张信号，具体金额待确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

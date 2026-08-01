@@ -1126,3 +1126,79 @@
   source_type: media
   note: "LLM 预分类建议(high):英国监管调查，涨价合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-29-microsoft-074
+  date: 2026-07-29
+  dim: W3
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "Microsoft earnings press release available on Investor Relations website"
+  quote: "Microsoft earnings press release available on Investor Relations website"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivgFBVV95cUxPTmFpNWVHYTdQdm1jYS1tc0F4dUpnUm1jcUJ4WlhTOEhxVkV3QUwwNkVzbUlXTVlubU5TajBNRDMyWHc4dlNVNkVWT0dVdFRoTmp6cGNubDQ3dEUxVEFlTUktc3J6NVN4cVduMzNUVGFYQXFRUGxTUzhhTmFEYzViVE9nXzlVSDRiTmh1aDlpb1p3bHd4aV9lOWY4Nks4aXU4cGxrMVVySFJTYTZwRFBpTTNPNjZrQmhKMzdic1FB?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报发布，关键财务数据公开。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-microsoft-075
+  date: 2026-07-30
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "微软最新投资季度收益：A社负责暴涨，OpenAI负责送股东进ICU"
+  quote: "微软最新投资季度收益：A社负责暴涨，OpenAI负责送股东进ICU"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5uMy1pclJiUGdCWGRmVXZZQkdKYWpDWWFsdlctWE1DODhsYl92cVdGTHFkeDVoQzFza0pzOWQ3VDJ2Y3JraHRITkRRUjlFZmpWTFR2a0RkS2JkTG1Q?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):财报解读：AI业务增长与OpenAI投资风险并存。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-microsoft-076
+  date: 2026-07-29
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Azure +43% 却指引放慢，21.8 倍 PE 的微软贵不贵？"
+  quote: "Azure +43% 却指引放慢，21.8 倍 PE 的微软贵不贵？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0xLS02aXBVaW8tNjVvZ09RLXFCQ0lXUnhQZHA2a2gwc2ZiZG5sdHlRSks3MFhZWVlOM2EwdjNENjNOOXVTNWg5RDBSYmNMQ3hnQjBXTnlBVlJXeTRQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):Azure增长强劲但指引放缓，估值评估争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-microsoft-077
+  date: 2026-07-30
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软创下美国公司史上最大单日市值增幅"
+  quote: "微软创下美国公司史上最大单日市值增幅"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxOVVRJcXFPNHlESkQ4TE1qb29uUk1kY01yZ2VNN1ZrcjVaUkhXeFhBdzd4OUdNUEZReWplS0otb3c0MXotU2FQZENzWW5oY3BfVkw5bW1qdC1GcUg0QUlmYmZPYUZ2cHllb1A2WHN3YmRTZF9Pdlo4Q1NZMGM4SGlPZE1OeW9SYnh6QjdPNjJlVUV2QzVxMENMTGR2X2pMRWxmNWI2enp3NA?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):单日市值增幅创纪录，反映市场重大反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-microsoft-078
+  date: 2026-07-31
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "微软宣布年内推出Copilot AI “超级应用” 整合聊天、编程与自主智能体功能- Microsoft 微软"
+  quote: "微软宣布年内推出Copilot AI “超级应用” 整合聊天、编程与自主智能体功能- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBLV21kdUpTcnBuU3hRNVV1NnpTdlFFdnoxOV9DNFJqTEtCM3Q1Y1FmQ0E0amppaTdtdTZwZGM5NWZ3ekRGQWdpUGxQWV90ZHQtUUdYNTRma3Nydk5fQWlxUA?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰AI产品Copilot重大功能更新发布计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

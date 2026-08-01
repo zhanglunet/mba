@@ -1082,3 +1082,139 @@
   source_type: media
   note: "LLM 预分类建议(high):AI音乐生成模型发布，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-30-google-071
+  date: 2026-07-30
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini Spark now integrates with Chrome"
+  quote: "Gemini Spark now integrates with Chrome"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikwFBVV95cUxPM3VnRE5fZjA5T1hxZnZTNkpiYUkxbmNnT1dHR0tCemw3NF9OODJibGlGeFI4SW96ckRQOGJzajlzaHQwcU5YekxRejhDU1NiQVpybXloX2VSZ1hMNmVHV2pYYUx6ZEhGZFZVNmI0S2RVbFRHTjlyMy12N2dVVlFCV2E0SXFvMmt1d0JGMUczZFlHTWs?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方产品功能集成更新，AI产品策略推进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-google-072
+  date: 2026-07-30
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Stronger with every update: How we’re making Chrome and the web safer in the AI Era"
+  quote: "Stronger with every update: How we’re making Chrome and the web safer in the AI Era"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFA1alhiMUotMkF4SEpTT2l0OXc3YUdiWlZvRWpCcFV4OFg0M2VLOXl3Rm5zenZialN4SEViS09icHoxNXVJc2ctY2xhRkhsN3ZiNFVRN29GSFhfS3pkR3U1MFZSV3NGZWt0bVBhT25qY1Q?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方安全更新公告，AI时代产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-google-073
+  date: 2026-07-30
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Gemini Robotics ER 2"
+  quote: "Introducing Gemini Robotics ER 2"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxOTm5kVDZidVI2WUlXTUs4UmplRDVCR1hTOUc4RWY3YnFyRjVUZGNVTVlkT1FTdU1WdkZqQmZfX2pTYlJXRHd5dmR1dWpRZFBrSTNDNXlOX2Jmdkw5NmNTb2ZmM3B5YmJUd1kxOUkxcHJTUm9DTlR1RU5hZ0pFbmNNT3Z4WndfWUdPejRReFlib0lUVzlXS2VHeXlsNA?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Gemini Robotics新产品，属旗舰AI产品重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-google-074
+  date: 2026-07-29
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "2026年Google谷歌两次算法更新后，AI批量内容的风险正在被放大，附阿里巴巴国际站新子目录事件"
+  quote: "2026年Google谷歌两次算法更新后，AI批量内容的风险正在被放大，附阿里巴巴国际站新子目录事件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5lcHgxVHR4cWhIck9rR3NBTWhXbFpFcDVlTG1CSGY4eV92Vy1NOFNMZnFwQUIwUm9yc0lXNUlHSmY0SjhPRXlmbGpPRkNJeWU1a1g2NHNNWFd5Y241?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):算法更新风险分析，涉及搜索生态，有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-google-075
+  date: 2026-07-30
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "黑客声称拿下了谷歌管理权限。被泄露的数据包含管理信息、谷歌DNS服务器登录凭据。"
+  quote: "黑客声称拿下了谷歌管理权限。被泄露的数据包含管理信息、谷歌DNS服务器登录凭据。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0wc3otOXcyd0RzdkJzVUZMcldhWkRPMm0yN1BXc1REZU9OWFdpek5mZkVuTF9xNXBESjloYXI5R2xnd0huclZWUG8yRWpRbTlxMXNzNUxxdU1Hc25t?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):重大安全事故：管理权限泄露、DNS凭据暴露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-google-076
+  date: 2026-07-29
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌解散AlphaFold团队，诺奖得主出走、资源转向Gemini"
+  quote: "谷歌解散AlphaFold团队，诺奖得主出走、资源转向Gemini"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9UZGdJNWotUk1QNGFneU9tQjAya1AyZHpJSTFwamoxUDZ2RTEteWZrY3U0eTFreFlGOS1zTndjVHU0RnAzd2R4cG1iM2FvY09TTm5VR3o1ZWlUaE16?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):核心团队解散、诺奖得主离职、资源调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-google-077
+  date: 2026-08-01
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Google或将推出智能追踪器“Pixel Tag”"
+  quote: "Google或将推出智能追踪器“Pixel Tag”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5JODVtdnpzMEpzVWlmTnZYd3NfcXZaMmJJTExKZ0M0WkgxZmllUWkzdEQxanB5eHJoWWVwUFdEd2VvbzFKWmhJTmptZnp1RjNPU1BsRmR4aGViVlAtNms3LQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新产品传言，信息来自媒体推测，确定性低。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-google-078
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌因虚假卫星图像争议撤回Google Earth AI图像生成功能 提供者 Investing.com"
+  quote: "谷歌因虚假卫星图像争议撤回Google Earth AI图像生成功能 提供者 Investing.com"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFA1TmoyRmJqOW14bHpUamQ3WjU5OVNlTmRibjNVUDJFSHVuTFhRNThZQUFraDI2b2xfcnJnWkY0dG1lTGlRb2kzUnRHaU9WQ2VGZDlTWEZ5ZFVuZ1dwS0ZsTGdKRUR0QnBBMkE?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):功能因虚假内容争议被撤回，产品信誉受损。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-google-079
+  date: 2026-07-31
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌：Gemini Spark 向美国以外 Google AI Pro 用户推出"
+  quote: "谷歌：Gemini Spark 向美国以外 Google AI Pro 用户推出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOTmFldlVfNmlNbVZkeDlYSHBSY3NiTjJiV09RRDFnbGZGcmExT2xJdU95VklqZGUyeW4xTFlpaUNVeHpISUNaYXdkcHJWeHhXZFpPc1FqWEQxUlFXWHRjcUJLdmozcnBDRW9lcC1MNDRJUzhuVEExcXU5cXpsakZReWFn?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Gemini Spark功能扩展推出，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

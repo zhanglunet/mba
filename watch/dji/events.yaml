@@ -349,3 +349,34 @@
   source_type: media
   note: "LLM 预分类建议(high):大疆农业与权威媒体联合发布行业白皮书，体现行业地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-29-dji-023
+  date: 2026-07-29
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "通锐微电子高精密电源管理芯片 TRP8711 助力大疆 Osmo Pocket 4 持久稳帧创作"
+  quote: "通锐微电子高精密电源管理芯片 TRP8711 助力大疆 Osmo Pocket 4 持久稳帧创作"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNY3pwb3VXaFpvbWtMRkIxckNXWkM4dTJISWRmdllibGpHa0JQRVVUbXVBejN5T3FXRHJnRXk0VGlnYVdCS2E3QnhvVnRUMUc1d3RVRzJPOUNqbWpONW5iZU04LXZFZl9ma19GQWtkQUhUNmd0MnM2MHNIM3YzaG5oWU9xMWdpRHV5?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):产品供应链合作，Osmo Pocket 4芯片方案。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-dji-024
+  date: 2026-07-30
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "每卖3台近2台来自DJI：大疆横扫日本数码摄像机市场"
+  quote: "每卖3台近2台来自DJI：大疆横扫日本数码摄像机市场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5FMnFfSk1tWnpOQXFhV05ORjZJSHlCZGx5QWY4UVRrOXBOQk9obUFJS2FNN0x2TWdkQUpaNkJNWDJfS1g0bVBWbHd3Y0hldG1lc1YwZl85V1BSZ2Y5?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):市场份额数据，日本摄像机市场领导地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

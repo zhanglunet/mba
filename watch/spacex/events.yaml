@@ -1195,3 +1195,64 @@
   source_type: media
   note: "LLM 预分类建议(high):SpaceX股价大幅下跌，市值缩水对标分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-01-spacex-078
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX即将发布IPO后首份财报 大摩警告最危险时刻来临"
+  quote: "SpaceX即将发布IPO后首份财报 大摩警告最危险时刻来临"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5yU0prcUtGeTU3R3pIMEVlN3NUZVFVQUVjdFo1UVFoSzBnM0NraUMtM1RIZ1hyT01ubXhwaU05aEViNU53WFBZcQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX IPO后首份财报即将发布，重要财务事件预告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-spacex-079
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX首次财报前估值争议焦点：AI数据中心建在太空中可行吗？"
+  quote: "SpaceX首次财报前估值争议焦点：AI数据中心建在太空中可行吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5xRVJvaGlBd01FRDJUdFA0TkRrS2FkQW5iLVhlbGVwRW95Sk94UkZKMzMyUjRmS1BRZTBhT0hGczFqUFg4QURjV0RuX2NwZjFzUVVv?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报前估值争议焦点，AI数据中心战略讨论，显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-spacex-080
+  date: 2026-07-31
+  dim: W4
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX将于8月4日发布IPO后首份财报 大摩警告最危险时刻来临"
+  quote: "SpaceX将于8月4日发布IPO后首份财报 大摩警告最危险时刻来临"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE00SDZtZVhWWi0zR2EzNjdhMGpEX2M5ZVAzWjVOVWdETzlpYmN1d1ZjWnAtMURfSjliaGdndGwzRGpGUjVUclBoeGVqbkRGUQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO后首份财报发布日期确认（8月4日），重大财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-spacex-081
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "空穴来风？马斯克称特斯拉考虑出售中国业务是假新闻"
+  quote: "空穴来风？马斯克称特斯拉考虑出售中国业务是假新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3AJBVV95cUxNc2dEa2dCOWNaMWVhVkhkYUpVSkVmdTJmMTZHZ1FWYzdnODBrV2lYMTZkNWtHZGkxeGtuQV9mQ0JRbVlnTjRVbDM2akxOaE1yOGZoeW9iVC1ZVjREMERxQ0RlZm01WTNqV2twMFFWX3JCZm9UakpZYkdBT3BzQ1dqb2hiazNjOEx0T3NMSEREeWt5a09OaHUwWS1zVi1oVy1QQnJaRnhheTZyaEViYkpobTRhN0JzRkVfX0Rjb0s2UjkzSHRNMWtldXpoamZoZGFfVE5Vc3JXUUZnUXlPV2FMWGp6ZUd5bW5HVjNueE12MlY2OVl0SGUxUHlRZ2trVDJLZVU2bFRnWHNfdUI5LWZiT05Tc3lmV1RGOEg0eEdwLTgxb3Nibnd0a2Y2Vmp6ajN0a19sa1lhY0pZb1h0NGlrZGhsNnFjU3dkQXdZSGREUmVtT0lCczVaeWI5UG_SAdwCQVVfeXFMTTZuelVsR25zUjQ4YlE2OU1zSlJ5aTkzUUJ6R3J5WkZwd3dVVnpqZFNnaWJFc3Jib3R4U09Od19lMDd1NS1JaXBxX0JHYWJFeTFVakdlczcyZjdnbmcyM0RzLUZFRS1nSi1YcVZFd2NrcDQyVUNnQmxLaTVhQ0NCT0dJVUd3cDdPZXZHeXlCX1RNN0VEVHVxS3pWYjdNYm1jbW9XY2JkbU5fZ2FLSVlwbUEzN0dYeURRdkdiTjdCdngtWEk1eUt1SGR3V1UwZmFFMkhWQndLdWg4ejJKRldtSDJYWjA2T2NXcF9XekZkNzE2VlJHR3pvc054dzU0THNzOVd3MDBhcjR1aW1hSzlzYXZkUWFFWFMxMUNrTUowQ2lzUjlOR3k5LWdQbXYxckMwNXROMEdUTlpoYm9WOERSS0FhOVhOaGNQa192M21HVkRlUURqZzVVenBnbzFk?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克否认特斯拉出售中国业务传言，澄清重要舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

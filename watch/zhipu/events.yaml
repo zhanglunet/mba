@@ -300,3 +300,34 @@
   source_type: media
   note: "LLM 预分类建议(high):财报预期调整，竞争压力与扭亏预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-31-zhipu-018
+  date: 2026-07-31
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "智谱 GLM Coding Plan 订阅回归：透明积分制，每月 118 元起"
+  quote: "智谱 GLM Coding Plan 订阅回归：透明积分制，每月 118 元起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5MbWlhVDF1QkowWTlCb3hEY2dnNXBRa05ZQjhuLW91UzZMN2dFYzNGY0VjREVRa1VBR2hyWkNRRnJPZk90eWZGS1ZYcDFKTWw4a1l1dl9hZFJMbjVJS0tWeGFETE5fbjRuVnV3ZTNSUW5jaGloSDV5ZEhVdXVYVDQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品订阅制调整，定价策略变化。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-zhipu-019
+  date: 2026-07-29
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "港股“大模型第一股”智谱今日上市，盘中拉升涨超8%，总市值超550亿港元。"
+  quote: "港股“大模型第一股”智谱今日上市，盘中拉升涨超8%，总市值超550亿港元。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ0h5WGZWVDluWVNSdG1EZmlCMjlJaWU1V3hXbTJzdWU4aW9OaTRVYThkbml0ZDU2cTlibWplVWxPYkRPSzc2WjRwdXY2MnhBaG84dUlUUFhidTJfMmNVZklBQ3JSTl9UNVlhOHdTa1VPUWY4ZzJ0YUtjYkxXbndVYnd4OVFoU3lIbmc5R3I4ZC1FQmtlYWlR?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):港股上市完成，融资事件确定，市值明确，符合P0判则。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
