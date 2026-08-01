@@ -119,3 +119,49 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数字公布：净利润增长超5倍、收入突破30亿美元。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-30-tal-education-008
+  date: 2026-07-30
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "摩根士丹利将TAL Education Group的目标价调整至$20，此前为$16，维持超配评级"
+  quote: "摩根士丹利将TAL Education Group的目标价调整至$20，此前为$16，维持超配评级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxQN2phUVU2Tzl1WGZHcDhkOGw5WDJrTmtiMkpTcVp0VVJwUWtQWEdaQlo4TDZYY1psOWZfWlFGdW1iWFNlOWhaaXB1dUxsN1pNeXN4UzMwcFk2Y3FVRld5ZlhpZnBYWUVVeU5Xek55YlJIeGVKMm1uTWNkTUNaWjU3ZTlpd1IxTkxNaDdXUXhwNUcwS1l1WkdGQW5vUHIzUXBxSTFhVDRReEFKNTlQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师调价，摩根士丹利上调目标价至$20。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tal-education-009
+  date: 2026-07-31
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "好未来低价买下Epic 账面大赚却添政治风险"
+  quote: "好未来低价买下Epic 账面大赚却添政治风险"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAJBVV95cUxNWURlcFl0WjlyNnRMZmZXc0tXNklHQ1NBOU1oTGZ1ZWc2T2ZZbEQzcHFURFUtd1JsLV9vaVlIVHdLdDkzZmtUSEx1RUxlNzB0dVdYaS1SaUdRSXQ0cjJMUFVZUjlvMDlhdDVPX0lMM1VtVXhjOXBKR0Y3ZkpwSl9kNnRDakU0ZEszbkxlQnhvTUhSSnUtanFFQWRPdUd3RmU5Q1RyRExwdEw5R1N2QWxuNmlUMHZ1NW9jZkJEOUY0WTJNLUJzcXNzNW9iUmxSSXJjekRVV2RXcmFFdEJEZ0xscnZoTGNRMFBPVW9la203ZG5RZGdFSFRwa2FZbWhWYUd3WVlacDZiWnhIbUpHX2VaY0tabEhsaWZP?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):并购事件，好未来收购Epic，涉及政治风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tal-education-010
+  date: 2026-07-31
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "好未来：2027财年一季度净利润增长1204%，投资收入大幅增加可能无法持续"
+  quote: "好未来：2027财年一季度净利润增长1204%，投资收入大幅增加可能无法持续"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aTXlxMlRkanY5bm9LLUE0SGRqQ09XTlE3VXBlYWh1eGxONXJ5VVJhbFpra3BDVk5WekJ0eWFqc0ZPaXhMSnZQR29NSWlCdjRyRDZmM0dqelpKcGFqVUUxNw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布，净利润增长1204%，属P0级重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

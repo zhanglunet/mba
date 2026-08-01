@@ -1390,3 +1390,124 @@
   source_type: media
   note: "LLM 预分类建议(high):Kimi K3开源宣布，旗舰大模型正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-07-30-kimichat-091
+  date: 2026-07-30
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "【LLM技术报告】《KIMI K3:开放的前沿智能》——Kimi K3技术报告"
+  quote: "【LLM技术报告】《KIMI K3:开放的前沿智能》——Kimi K3技术报告"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE8tcUgyTEFpNGg2MzZiTy0yeTJkZW8wTE5IOHhVYm5CM04wN2M5QWtPRUxlUFJQVy16RkRIRVQxdWg5X0tfMS1MSlpzRWxZMC1IX2YzYWY2X2I0ZzFj?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):Kimi K3开源发布，旗舰模型重大版本事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-kimichat-092
+  date: 2026-07-31
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "汤臣倍健斥资超亿元投资Kimi母公司 董事长梁允超的岳母间接持股？"
+  quote: "汤臣倍健斥资超亿元投资Kimi母公司 董事长梁允超的岳母间接持股？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE9sWVQwZFFtS0JjSTZRbm9uVjFTcjQxT2c4RXlzSnNtOFNNR2JWU05YY2NuemIyNzAxb0ZtLUtub3lJZU5Gdk9kdmJCYi1UN2pZVlByYU0wVTd3cjdPMmlpYzJ3ZUstcDNVSTlqYml4Vnp2VFpa?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):融资事件，汤臣倍健投资月之暗面，涉及关联方。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-kimichat-093
+  date: 2026-08-01
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "美議員促DoorDash解釋使用Kimi模型信息"
+  quote: "美議員促DoorDash解釋使用Kimi模型信息"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1fVXotZUZxdGdIWnZaTWExcS0wWHBjX2VWaENVTnByTEFtZGxQVDM4bnR1bkQ5Y296a3k0eDNJVDF1Unl4WWJyXzVBbFdsMkJBa3ROd0JxeTNIZ9IBVEFVX3lxTE5kRGxvVHlGdE5YMURlX09BLTIwUEZWdlFtWWpneVA3Y3hlRDdxNFZwb0c0RW5LTW42WlhRSEEwaVFWeE5VQ3J3Mzk4ZHJubkc2ajJxTQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):监管关注，美议员要求DoorDash解释Kimi使用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-kimichat-094
+  date: 2026-07-31
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "中美AI竞赛｜月之暗面与阿里享算力协议 可使用2万枚英伟达芯片"
+  quote: "中美AI竞赛｜月之暗面与阿里享算力协议 可使用2万枚英伟达芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuANBVV95cUxQbkdOcUNqdnVYY3BxOXV4V0ttcGFkclQ1T0NjOG03S1Y0NlFlWTk5UmdwYXNzRjg4MzFKMVhUTGxobmhITGhOcm80SmxxYUw3U0xaQ2RnTEpoY0pUZU5TR2twbGVUZ3JCcFpOcDVwd3dDRndpRG5TdkZCMzllRUFJTl94VUJvZVIySjlaTzlwZ1dzUnlpTFYzNzc5RjRDTnpQX0NFVE0xM1JUQ0lVc25VV05GUHRhVUZUazdZQ1BzSXBycE9RM191Ymt6SVdRUk84MWgtTlQ3RFViNDJLQmZUcXhGOUdfNFZncm9hdVNqUWZEeTBZVDJIZzg1Ukl0bWtROHBzWlZSU3BwNlN4Q1FzWm1DaXZNS2FRVUpJOUFIRnRlX3dvV1QxWlFtWktMS2lRNi1GTlZnVFhIcTVSZC00NFVVdFYyc0tJbnJFZFNKNEo2WUdudEdseVZnU0hUbXN5azJLRWlJa0dMT19oZ09xX215NmdKZmJBWHIxZmFwaDQyOTNsZUt1M040aVdCazZzLXRqOEVTbElEejN3VG9CVmk1V3BmWjM2WTdvSzhiX3BrWklraG40Mg?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):算力协议，月之暗面与阿里合作2万枚芯片。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-kimichat-095
+  date: 2026-07-31
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "编程榜登顶，综合全球前三！3万亿级别模型 Kimi K3 有多能打？"
+  quote: "编程榜登顶，综合全球前三！3万亿级别模型 Kimi K3 有多能打？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxONDZsSHloajZGT2tNaTFkblRqUHlRQUlUcmJ5ZXhGRS1HWW5jWFo5Rk05WVBjZ25ScFFOU0xLWUhDLXpKMkcyLVpWMVJaVHdvbGVvRFlibGFjNXQzWmdFdEY1T0VacGRaMGwwdE9IRW93dGNveG53TzllaFIxVWJ1bDk2bkpMVXpYTE50VA?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3性能排名，编程全球前三。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-kimichat-096
+  date: 2026-07-31
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Kimi 3借用阿里巴巴的2萬枚英偉達芯片訓練"
+  quote: "Kimi 3借用阿里巴巴的2萬枚英偉達芯片訓練"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE5maXFlSl9tUEFpbG5KQWxuNDZWeUJBV0M5bkIwU2R3ejlzVkZHWVNHR24zaTRPQjFrbHBiRE9KS2lmWWNyeU1UN1ItTmFqOGhQNlh6WHVfY2dLZ9IBVkFVX3lxTE9pV1d1Q0d5YVpTajNTV0JDN2JNMktGWkZwbHQ2M0N6Qm9qUDJ2MWwydjJSdjVEcHNQVE90Tm11aFJwX0hybm5xTm81dlp5NkkzaEV1SkFB?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi 3训练资源，阿里2万枚英伟达芯片。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-kimichat-097
+  date: 2026-07-29
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "完成35亿美元融资 月之暗面估值飙至350亿美元"
+  quote: "完成35亿美元融资 月之暗面估值飙至350亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFBzalNSalZBVFNTbllTcDYzcTh0a3B6eGRFUDdOaUZMeFV4S2xGVk5pdUFlU0ZHT0o5NlFJbzN1RVk4dHhONjBrTUY3dTliNmdHWExKSmJMZjRWQVJMQl9KcWxyYw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成，35亿美元，估值350亿，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-kimichat-098
+  date: 2026-07-30
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面融资35亿美元远超预期 Kimi K3模型助力投后估值达350亿"
+  quote: "月之暗面融资35亿美元远超预期 Kimi K3模型助力投后估值达350亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTFBmVU5xamt0MWhjMWNla3d5WUZCTjJBREFYUEVxRDVmWV90MTlNdnJ2S1d2LU9hUDVaSzhNdGtqZ3FTbFZwcDFsQzcyQXVmTFVVR0FLMFJSbw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成，35亿美元，估值350亿，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

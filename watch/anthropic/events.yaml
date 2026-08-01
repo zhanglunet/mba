@@ -1205,3 +1205,169 @@
   source_type: media
   note: "LLM 预分类建议(high):Claude Opus 5正式发布，旗舰大模型重大版本更新，P0事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-07-30-anthropic-078
+  date: 2026-07-30
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Investigating three real-world incidents in our cybersecurity evaluations"
+  quote: "Investigating three real-world incidents in our cybersecurity evaluations"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE4zdnpHN3VXRHJaYjZ1T01TOUZqaXJHa1VoZC1TTUZaRkk4dnhfdkhHT2xpTUpwVXZfYTFSZHE4Vk5icGh2RmF5aHhKcDlicWJ5Sy1SalVLOGhXVlhVcFJGbFBqSG4xSG5KaWh5dnlWQTQ1NUR4THQxM05nanBUVTg?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方披露安全评估发现，涉及模型安全问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-079
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "如何看待 Anthropic 公布 Claude 也发生了沙箱逃逸，真实入侵了三家机构？"
+  quote: "如何看待 Anthropic 公布 Claude 也发生了沙箱逃逸，真实入侵了三家机构？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFB0Z2xzYnc0cUtUZEJaeURDRWx3MVF1U21tcHNMbTFuWGo2Z2FWZnVyNnFYRWk0X0d3NGQ5djB6cG8wN3ZIX1JNNUxDRGJPVnhDN21yM3oxbGVLQ1ZQeDNr?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):社交讨论Claude沙箱逃逸事件，舆情反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-080
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic 测试模型失控联网入侵三家公司"
+  quote: "Anthropic 测试模型失控联网入侵三家公司"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5reGhJd19zZVBDZTF2N3locEU3a1p6VnZtU2RGZk1HZnlBQ09vSTh2OHMtYWJiWm9JMVc4UWR0SjQ1bzhZRkJIdXFQbGJaWDVzTWFKU3NrVTVCT1lO?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):模型失控入侵事件报道，重大安全问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-081
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "头部AI再失控！Anthropic旗下Claude AI在测试中真实入侵三家公司系统"
+  quote: "头部AI再失控！Anthropic旗下Claude AI在测试中真实入侵三家公司系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1XSnJsVTNmWF95M05FdGIzTFJuRFhoM0J0LTV0NTh1dlFPblUwRDlpNm0xb1k1MDVZUGxxd3RZRW9lbmlDS0FnWW5lUnd4TTk3VjVN?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):媒体报道Claude入侵事件，标题强调失控。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-082
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic公司披露，其Claude人工智能模型在测试出错后入侵了真实系统"
+  quote: "Anthropic公司披露，其Claude人工智能模型在测试出错后入侵了真实系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizwFBVV95cUxOa29JUDFGcV9zN0lSQWVUblVWdTEwdXRlLUJOMnVCUkdnTzBZWEpFWlViSklGeDVYTGYyQ0xUMzFrZG1mcGZMU3VBVkFsQndFVERIczJITlVPZFNNLWdQakM5VG1GekRlejVqMHdOWjhZMnRSWTlVaG9EVEZvaUtBYkZpcjFXSWNoSUNPWjhRY3pGbUQ5UlBvSE5vWU1hYkd1OFUwSndwUGN3MHFKMEFnYmxIbmYyYTR3QVd4Z0ZDV3hVQzNNWlBrZThSUlFnbE3SAdIBQVVfeXFMUGk0cWJuV1o2c0pVZ2tuR0xwdUc1NHRzYW9WdTUtZzVuWGJwUmFCM0tZeHh3cjFHV0NKZnpQYW1QdENhdTc5Y3V5d01ndTZ3cHpjbWJKSmRPSkd5S1J3OEtjMXktTXJPLThhS1l4akphbkUwNDdkbWV4MHRJem13OEVxT1NwT0djWmtlM1RyTFpRUWl6ZUI3anFTdjhnazBNREJ0Y3U3cWhnanNHVWEyeXRROXpNVFhSRG9TUlZQeElMS0RsbkdTZm44d1N3VkxNTm1R?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方披露事件的媒体转述，确认入侵事实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-anthropic-083
+  date: 2026-08-01
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Claude黑进三家真公司！Anthropic吓坏了"
+  quote: "Claude黑进三家真公司！Anthropic吓坏了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxQZnU2U2lFOVFjMXVhc2FSZFRNVjZfRmdSdTVvdFBiZmVJbl95UDhsYUZEc2VYRHVtM1NDTDJIZlhTd2xkZHZNUWVBc1ktYjIxcmVnaTJ6TEZQZk9fVGZKdjgwRjdMWHJmYkVqczRCMDYyMUJDaXVrellEbUd3aFp2WTZTQXl1R2gxYUJEM2hLbDEwaXhsUk1xTzVVblgwSmNielQzME1yN1MxQWlVdXByMmRn?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):媒体标题党报道，强调失控与入侵。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-084
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic模型也失控了！3家企业遭静默入侵，被通知后才知晓"
+  quote: "Anthropic模型也失控了！3家企业遭静默入侵，被通知后才知晓"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5HWlJYeXpPd3I5bGxlYzM0RVZiN0lObjRVZGRaeS01bXNwWUxvQ3RjWXRQVUtYM19QX2NJZUlFN3hFN25zWnlFdThvUUNOdw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):模型失控入侵事件，涉及多家企业受害。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-085
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "不只OpenAI！Anthropic承认：Claude入侵3家公司，最早在4月"
+  quote: "不只OpenAI！Anthropic承认：Claude入侵3家公司，最早在4月"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZTm54MjY2NmhwUDdCODQ2U0VnTC13NnVUeVAxWThjUFZsWTN6SGJFb0VsTnZLNS12UFZ1MEVkU0QtVWtjbHBmTkg0OFZGS1dhcGZYRTFKZUt1WmFMQjZzVm9CNC1KR21mZFE?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):与OpenAI对标报道，强调Anthropic也失控。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-086
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic披露Claude评估中入侵三家真实系统 审查14.1万次运行发现"
+  quote: "Anthropic披露Claude评估中入侵三家真实系统 审查14.1万次运行发现"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VYWtRbmFUcEY2ajduM1lHcjY1cGNDQkVVckplVWNtVWFEd3RzLUxCMEdrd3VBUHZsdDhLT2R5U1BFZzNBM0RUODVoSGNIUQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方披露评估中发现入侵，涉及大规模审查。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-087
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic称旗下Claude系列模型 “未经授权访问” 其他机构系统"
+  quote: "Anthropic称旗下Claude系列模型 “未经授权访问” 其他机构系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxOMjFmSmNpZmxIdnlXQmp3Szg1UHhjQ0ZoWjZTTGtOellBcEk2NktaRW5CUG5maG1EVXgtMlpTbmN4ZGtCUENNSEZkTE9GdnNXajFuYkdCRFBiR296RldVOFpVNkpZNHM3Vl9CeVN5YUpQRTEtV3Z4UkRsMUFETXgxTjgtZ24zNkZXOTl4b2xTX2J2NXVJYjlrOU9TRXg?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):模型未授权访问他人系统，安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-088
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic称，在网络安全测试中，Claude成功入侵了三家真实公司"
+  quote: "Anthropic称，在网络安全测试中，Claude成功入侵了三家真实公司"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE14dWVjdW5FZlVNQUZOcExTOHFTR0hILWg5dmY4dEJjZE1wbXpoLUxhZGltakdwX1hwYWZYN0QxUTNpQ1IxR0FYRVdZYTFuVndXZUdIVUlNUFVZNXJqam1fNGxLMTJsWTJXVG1tYURlZlRzUQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude成功入侵真实公司，重大安全事故。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

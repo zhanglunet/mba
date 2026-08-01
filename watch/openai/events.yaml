@@ -1450,3 +1450,139 @@
   source_type: media
   note: "LLM 预分类建议(high):财务关键数据公布，收入加速增长显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-31-openai-093
+  date: 2026-07-31
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Disrupting a Criminal Scam Operation"
+  quote: "Disrupting a Criminal Scam Operation"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLU9NWW1wblpVWjR1b2VYZXo4bXo3QmhjcWx0SE9lZUlFRm5nTnNzRERwb296UF85aVgwRWN2SHdmS25vMnhfTE1RRHpZMnNEWDZmQ3pNcC0zbld3Q1FsWFpReExfZWd1UXQyLTRvSU9qOUdPQV9mdFdkY1BKQkoxakp5dWlaZUtG?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布安全治理举措，展示平台治理能力。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-openai-094
+  date: 2026-07-30
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Advancing the price-performance frontier with GPT-5.6"
+  quote: "Advancing the price-performance frontier with GPT-5.6"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxQRnlkYzM3c2c5ajVNcWNYZ3ZoV3M1anl1T3lFSUtHRzVBcmU1cUpaSkJ2MHR1ZXpJVWtLSWhfQTZOQzdfY252YmhzeG1DX2t2elJmVXVNYmR3VkN2NjRES0JHaS1WUmdMNGhnTi1wVE5yMGYzeU9Hanh4Q2E3YnRBM1VVTEVDdw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布旗舰大模型GPT-5.6重大版本更新，符合P0判则。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-openai-095
+  date: 2026-07-31
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Advancing responsible AI across Europe"
+  quote: "Advancing responsible AI across Europe"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE55UlFLV3cyX2JQVHFFMF9HUjhJcVFhSWFSXzNPdEJ1Y0NwTEs0QlBtN0VNQ3NJam43SzJrbG91T2xCR3hWaTZ0TkN1aUpTVmlGSzAyNmgxeFBlRFBlNTc3dzktNlpZNkNQeUFMZkZuVWlEQQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布欧洲AI治理策略，展示合规承诺。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-openai-096
+  date: 2026-07-29
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark"
+  quote: "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTFAwcE5jLW96SjBBYTNYYnFQcnM1OFFCYWR5N0R0LVBza3N5WE42YUNfV0NiQTVOZmc4Vl9ZMUdneWNoTVZfOGphbmJlS044Mmw3cWtzVDRKdnhyTWNIYVVoYXJSX3h6cnNVZ1QtUXQxOFBfYnRXcHN0ZExVaw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布模型性能突破（ARC-AGI基准），具体数据支撑。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-openai-097
+  date: 2026-07-29
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Accelerating scientific discovery with ChatGPT for Academic Researchers"
+  quote: "Accelerating scientific discovery with ChatGPT for Academic Researchers"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE5RdURTcDByN0NKcGZ6RzBEWmk1SjV5T1hEOG82MXp2cmRCc09ZLUxUV1JjX0dtYUlxTEVfLXVyUHI3dWIxMnNydzIxR0hwb1kxbU15dlQ1bThHYmc2M1lyeFM2eXpENWRKUlE?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布学术应用功能扩展，产品进展。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-openai-098
+  date: 2026-07-30
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "速递｜翁荔因身体原因离开Thinking Machines，重返OpenAI，专注递归自我改进研究"
+  quote: "速递｜翁荔因身体原因离开Thinking Machines，重返OpenAI，专注递归自我改进研究"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE83cnhnRkRhaFg0YkxvU2w1WktBZ3RLNDVNNVlsUXljMUZnWkU4ZGdiUXpPbVU3Y2dyRWpWdDFib3NRRjhsTVlvWHJKSE16Qmw3Z2ZYdHVaWGpPanpf?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):核心研究人员变动，涉及组织结构调整。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-openai-099
+  date: 2026-08-01
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "推动负责任的人工智能在欧洲发展"
+  quote: "推动负责任的人工智能在欧洲发展"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxQRVZtNjJTd3NuMWpCVXUtOUdULWNkQXVKaHFoRGxvX1ZWSG1hamlqemRsbmFMLThLMEh6MkV4RVFSbnlXbTZPMGV4OE1GQW11ajd6ZnUtWXl4Tkh5STMzcGhaUWlzcmpoWk5LQmQ0dndzelBKeEg1b0V1LWh1Mk5aSw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):媒体转述官方欧洲AI治理策略，合规承诺。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-openai-100
+  date: 2026-08-01
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI首席财务官“放暖风”：7月年化收入超过第二季！"
+  quote: "OpenAI首席财务官“放暖风”：7月年化收入超过第二季！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1La2d1TmtPcm4wbDZreGg1QUozYWRoVVk1ZHRXYVNzLXpHRHpnTm1fdGFjdkZKUl9Ia3hYRkw5VUZxMDF0MnNIUQ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CFO公开财务数据，年化收入环比增长，关键财务指标。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-openai-101
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "知情人士：OpenAI或将推迟至明年启动上市"
+  quote: "知情人士：OpenAI或将推迟至明年启动上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMjdRYWJ1RjBKMDIybFZpQlhKY2V5YV9zbkQtU3k1YmVJQzdqWk42dFRCV19Cc3FrdjVrU0ZkaERyTzg4V2sxWXpkYmRsOWFQcXdYdmVocFlwbmM2SVQtN0YwMzlHUm5MWHJVaTRORno3cjNTYVY0WG5vc0NzdjVZcVdBUzktNkd4WmVhYlppYzUzNncxVWVscEd1ZXE1eVcyOExYc0JPZXBJRVhnR1ZCem0xY19paG9zend5WkhTSXpPREFVdjJxdVYtTFR3eEZJZzg4Qmd3VGpjVUgxbUJJ?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):知情人士披露IPO时间调整，重大融资事件预期变化。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

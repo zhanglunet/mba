@@ -1157,3 +1157,94 @@
   source_type: media
   note: "LLM 预分类建议(high):高通预警苹果调制解调器业务下滑，涉及供应链风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-30-apple-076
+  date: 2026-07-30
+  dim: W2
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "Apple reports third quarter results"
+  quote: "Apple reports third quarter results"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxQUC12SGRSXzJwSGx6LWtPWlltY1lFVWJNMlBtcGUtOGF3bGZLbjlfTFJhNHdWVFFoT2pZbHN1M2NEVktGU1dXd29tbUlLaXZFNl9nMW5SRFRzYTlnLUlBd1NTWHhwQUY3YXFGQUdfSnRmX281clFiOTY4ZjlBS2dicg?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报发布，关键数字公布，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-apple-077
+  date: 2026-07-30
+  dim: W2
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "2026-07-30 Apple reports third quarter results"
+  quote: "2026-07-30 Apple reports third quarter results"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxQTGluVmMwSWc3YW80bFpnWnVhbnhER19kM3h0UEV1akwxV25tTm1OVUxRNHE4cXF3cnV4ZkxVcG5zNUxmUWdmNVotTEVfYXlWaVBwYlFFMkpLZGlpLTVta1k3bjlZelNydU9Vc0psbVlrS1YwUi1WZkY2dDNaS0VPUW5EaThkclVVY2UyV25jM0U0WmRL?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报发布，关键数字公布，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-29-apple-078
+  date: 2026-07-29
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果上线“iPhone官方直租”！月租仅为售价的3%，价格优势明显"
+  quote: "苹果上线“iPhone官方直租”！月租仅为售价的3%，价格优势明显"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE81Y2tCcFJhZjFESWVPTkc3bmRabXF1STBTNFRyblplTkhuU25zSGV1djFaUmpjaGZweW9fSFQ5TElOSi00N0FDSUhIeWpzM1Vwd29JTUgwQ0I4OU42?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):新商业模式上线，产品策略调整事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-apple-079
+  date: 2026-07-31
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Apple警告Mac、iPhone及iPad未来将面临“供应限制”"
+  quote: "Apple警告Mac、iPhone及iPad未来将面临“供应限制”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2ci14QWJnNXVNbmgya0V5QXhac1p3R0l1bm1USlhaems2OFdqemJiU0FGSWhueGk5WFBocnh2QlR6d1ZMR3dTT1pUUXNLYjhjRHVjdGRqWHl0eml3d1pBcHRIZXN2UdIBa0FVX3lxTFBzQm9oclo5dE9BRE1oeWNXa0xoX3BlcFFqUFJ5eUY0eE40TEppOXhtaVAwTFFhZmc2bU9GWGVOTDRPd2ptLThTeWZOY1dWNUoyUmdHVkdtSFJpRmE4V0h0d3BjcVFGdWp5SkVj?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方警告供应链风险，重要运营信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-apple-080
+  date: 2026-08-01
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果公司警告AI算力资源或面临短缺或将引发产品与服务延迟发布- Apple 苹果"
+  quote: "苹果公司警告AI算力资源或面临短缺或将引发产品与服务延迟发布- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE03UjdJbE9iYldPcEhXbF9QeWFYeXoxZTJnYUEtdjlydGdmdUFKUWpwdHFERkJhaDRhTklrQS1yTkhQZ3NaZlZRMFZUekxlRzZrNV9JeXc5U1poaE5UR0hTcg?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方警告AI算力短缺影响产品发布，重要风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-apple-081
+  date: 2026-08-01
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "目前，数千名用户无法使用Apple Pay"
+  quote: "目前，数千名用户无法使用Apple Pay"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yNGU1SnA4dE9UaFFYOHRTVE5PV3pLMzdSN2Z2aEJOaW05YnN4MWRIZUp0Z3hoblQzWl9GOUZpa3psTnlZeHNGbl9BUWdGNnB0RmFXSW00eXV5YzVkN000SEhYbUc5Z2Jw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大规模服务中断事件，影响用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

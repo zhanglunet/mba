@@ -958,3 +958,139 @@
   source_type: media
   note: "LLM 预分类建议(high):特斯拉城市NOA扩展、Robotaxi运营进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-07-31-tesla-063
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉否认「剥离或出售中国业务」，中国业务对其有多重要？怎样从商业角度解读？"
+  quote: "特斯拉否认「剥离或出售中国业务」，中国业务对其有多重要？怎样从商业角度解读？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9CS01la21nLXRjVy1vRUZ1YjRUa19MWGljLVdybUVmbUdtbjQyYml6LUMxSngxOHBjSndYb09hRFJWVnh5Snc2dmQySEw2MHh3UkE0WTV0RWZDbXJNUjhV?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):特斯拉否认剥离中国业务谣言，战略澄清。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-tesla-064
+  date: 2026-08-01
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路"
+  quote: "特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNVy0zTGt5Ml96YmFqMFBBVkdhQXhPNllyMWpidFUxVDBKYjdPUDVzazA2ZUZPeGl3MlZYRk1sQmI3SjVzYW43X1NpU1BFNExPN2RhVVZsUm4zbEZwLWx0XzJ4MTB6Z0FFTUtidGdkRU5VSmtZdzk5QTVXMGtpN2tobFRLOGlDdFBOclRUcFJYZmEwWlNvZC0zNEVXRnRUWWl4WVEyMDBjanAtLTdxTzIyZlVR?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):特斯拉考虑出售中国业务传言，战略重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tesla-065
+  date: 2026-07-31
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉正全面升级Robotaxi"
+  quote: "特斯拉正全面升级Robotaxi"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxPYXU0ZVk0ZzFDazhCazVqZ2xVTTFyYy1MMzJVVmYtRWJnazhxdVZfbnY4ZnNFczNyYV9fOW9LblhLRkktZDBoUlhuRS1VZVhkeWhTWU1sZlFzTWFvZHVqT3JRQzhPMzVwM0l4aHFOb1RHOW1PR29TaWt3TTJ4Skg4ZGhZYw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Robotaxi全面升级，核心产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tesla-066
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克为什么可能出售中国业务？Tesla × SpaceX背后，一场押注AI未来的超级豪赌"
+  quote: "马斯克为什么可能出售中国业务？Tesla × SpaceX背后，一场押注AI未来的超级豪赌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE0yMWl3cVFkbWY4YUZjbzI0dXZUVV9kQkJYSDhwLTdESWNPUm1QV21QQzhWVjN2eXdjWTZTRFZ6c0djaGJSVmZwZDZTYVNpOHV5dDA0?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):中国业务出售传言与SpaceX合并推测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tesla-067
+  date: 2026-07-31
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "签三份长期购电协议 协合新能源每年为特斯拉供1200吉瓦时电力"
+  quote: "签三份长期购电协议 协合新能源每年为特斯拉供1200吉瓦时电力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE96SENKNVI5YjhZLUMwd0F5SmFpRTZUb3lLUjZwTDEycWY2N3U3Znl6TXFucndFVHZSUlBhMGtESHI5T082ZEFhaWltT1J3VTJmUDRXR3Q1WTBjVnc3ZGRmQUNGRUlGSGNMc2lJWDFnSEQtMm8?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉签三份长期购电协议，供应链合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tesla-068
+  date: 2026-07-31
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉不剥离中国业务，还推送豆包、宠物模式更新"
+  quote: "特斯拉不剥离中国业务，还推送豆包、宠物模式更新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHb2JCN0RJNllidW5uZTlEeHJWUUZHbVZpS0lrQURaLUZ3N3lzdGJIdG5ZcklUdHE4MVZTWUgwZHdEeUN4V2NVS29KQUNYOHM?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉否认剥离中国业务，推送新功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-tesla-069
+  date: 2026-07-30
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉中国Model 3焕新版售价降至24.59万元- Futubull"
+  quote: "特斯拉中国Model 3焕新版售价降至24.59万元- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgFBVV95cUxNTFRPV1E5eG9lUE5nRVVnaHVmSDhMREtfM3p6V3NfNHZwZ19oOHZrdDd6Q3AweXpoWm1ud3R3X1RMWVRsaF9YQTZyNGZQMDNMMDdBVzVLUkJjNDdXbjFwSXZCY0dvdnpxLWpRYlY3cXFqSXVPU2p5SmVfY1RwMzY0SUNVVS1JT1lORkpyZGFn?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Model 3降价至24.59万,涉及产品定价策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tesla-070
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "传Tesla(TSLA.US)为与SpaceX(SPCX.US)潜在合并铺路 拟剥离中国业务"
+  quote: "传Tesla(TSLA.US)为与SpaceX(SPCX.US)潜在合并铺路 拟剥离中国业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE0xMHMxbS1LX1g5WWgtanVDYy02Q1lRUzBySXFDMFBZOVBOcm01N01SNGN4Qm4xZ19fSXE5RnVMeDF3QUk5a2txWURaUURxUDlvQ2dRTHl6eXhGdw?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):传言Tesla-SpaceX合并及剥离中国业务,重大战略传言需关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tesla-071
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Tesla and SpaceX Merger Speculation Heats Up and Elon Musk Tries to Cool It Off"
+  quote: "Tesla and SpaceX Merger Speculation Heats Up and Elon Musk Tries to Cool It Off"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSDQxTFpqTV84cjVoMlE2ZlVZaGc5ZUtmZEZHcnBHUWpMZmFtWjJzMnJmci00SWhEZ3k3LWxVOUtqMFJTa2hwdll6VEcwU0pCRGRCRVlUVGVNaWRzUVphOUdJWkVkNXBDUmIyRWtSNVRFenRZRWZYYWVHdVBXVEFhN3VnWTBaa2VTczFDNEVFaS1wUk1jVmlULXBBOGhpZGtFeHBQS05vdjM?oc=5
+  fetched_at: "2026-08-01T05:37:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Musk回应合并传言,涉及战略澄清与舆论管理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
