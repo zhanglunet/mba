@@ -473,3 +473,49 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕Kelly包消费指南，品牌产品相关舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-01-hermes-031
+  date: 2026-08-01
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕的品牌文化和核心价值观是什么？3个维度拆解+FAQ"
+  quote: "爱马仕的品牌文化和核心价值观是什么？3个维度拆解+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNYVBWbEZWeVdXWU1JUksyS1lXMWw0ZDZiZUZ6Q3Zwb3gzSVdNQ0d2bVJ1TENWbU5fYjZKTkU4VEJNdnNCMVByOWdvWjdONEVtNDB0cExQWUVJdTNodWJSV05DbXhrLUg4aGVSV0xvLVJQVnJkSFFQWXNiaGtMWTgwRnV6aw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):品牌文化价值观解读，有舆情参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-hermes-032
+  date: 2026-08-01
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕配货比是多少？不同包款比例悬殊，2026最新行情+FAQ"
+  quote: "爱马仕配货比是多少？不同包款比例悬殊，2026最新行情+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNbFdZaFA0ZzhWYmduemt3WVNPOGFBSUt1SDJxYVkyajhNNEdYSlNyV0Y3VVBxUjNMNjA5OUVtM1psREROOUVlUW0yT08wTnZLSk1jaS0ybEl3di1CMVVRXzRxbHV2VDFIMTk3ZVZ5RENhN0JVbFNhNnFUeXZqVG5adzM0aw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):产品配货比例行情分析，消费舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-hermes-033
+  date: 2026-08-01
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕2025新款值不值得期待？3个维度拆解复刻包/通勤包/生活方式线+FAQ"
+  quote: "爱马仕2025新款值不值得期待？3个维度拆解复刻包/通勤包/生活方式线+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxPRTduZ3QtQ2NhSmhHT0lfSDhRcWNKNk9OeGFhWXNlcUE5alNMNG1JUHVTaWgwc3RKUkFTTHloUFgxZXNvWFBnVmxDRllvdmxDeGVzc19VdW9OUzB3UW15ZTlVZnFSZXRyQVpQWEVFZzBUdG52cFJFQ1VDTUFicngxWjhSZw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):2025新款产品期待度分析，消费舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

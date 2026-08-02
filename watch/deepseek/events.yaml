@@ -1022,3 +1022,19 @@
   source_type: media
   note: "LLM 预分类建议(high):数据中心投资计划，战略扩张信号，具体金额待确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-01-deepseek-067
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "欧美最担心的事情来了！DeepSeek落地内蒙古打造GW级国产算力中心"
+  quote: "欧美最担心的事情来了！DeepSeek落地内蒙古打造GW级国产算力中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPQUNnaTRoNXpIWFNvRnBTWVJrMUNyMWRKQ2lfZEtreUs1T0dYeC16YWlZOW1RLUJMT25mdDh2MGlhWmFRNGI5X2dBZUhlX2VNTm5Rc1pxX0pKMmxPcUN5b1FjM2U5RU1kNjFIZlJKNjdDMk16aVk0MTNZMWpCcGw1VEZaVHVmbm5IbmJqRw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大基础设施投资，涉及战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

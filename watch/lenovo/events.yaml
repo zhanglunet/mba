@@ -553,3 +553,34 @@
   source_type: media
   note: "LLM 预分类建议(high):董事长人物专访，涉及企业战略与AI定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-01-lenovo-036
+  date: 2026-08-01
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "联想ETG总裁芮勇：联想做车计算不是为了向车企要数据- Futubull"
+  quote: "联想ETG总裁芮勇：联想做车计算不是为了向车企要数据- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxQbFNWRTdXQk5yV2txRlNEa1pfSzBuemx3Y1hzVFdOakJzNkRTRmFxY0w1YUUwdVdqWjBXRzZxRWpocVFHalhnb0pTSUdxRzVtOHo2cXY5NWhHZ2tjXzBwOGUzb0tiUTloeFg5bXJkbFBHRS05WXNHVWdoRmFfRXkyLUlBU1Y3OFZiWmdzbklyNV9iV09VY0lrYnJ4bE5VanR3cE9B?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管阐述战略方向，涉及新业务领域（车计算），有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-lenovo-037
+  date: 2026-08-01
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "花旗升联想目标价至20港元 重申“买入”评级"
+  quote: "花旗升联想目标价至20港元 重申“买入”评级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNZmF4VkNONThNOExnT2UzcUxZQ2I5eWxjNkhvekQ1b1FDanEzTFNXR3FiNi15R081YmZQYm5hUUpWV1d1TnpqS1NBYkJyNGhBY3lsV0kxNV9jRDAyQlpXOU1JOUNQcDI2a2ZyTnlDdFpfRl9Yblotb0hNMWgtWFo1ekh6S2hGazhFMkczdlhReVQ2NG1xa29ZSG5PTQ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师升级目标价并维持买入，反映市场对品牌的积极评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

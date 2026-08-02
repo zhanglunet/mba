@@ -1202,3 +1202,79 @@
   source_type: media
   note: "LLM 预分类建议(high):旗舰AI产品Copilot重大功能更新发布计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-31-microsoft-079
+  date: 2026-07-31
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软把Copilot焊成一个超级App，模型可以不是我的，但入口必须是！"
+  quote: "微软把Copilot焊成一个超级App，模型可以不是我的，但入口必须是！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE42aTlpc3lZQlZ5MFVRSi1sQmt6aEwyZHBXRGxVaFhmWGtEWkVlUzQ2eDZ2ZWFsODU0WjB3QTZjeG9ta0R0VVNhZ0hTVmtsSWxMNGNtdmNjUlIwTE14?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):Copilot产品策略调整，涉及AI入口整合，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-microsoft-080
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "【已复现】SharePoint 无需认证 RCE 漏洞 CVE-2026-50522 已被在野利用"
+  quote: "【已复现】SharePoint 无需认证 RCE 漏洞 CVE-2026-50522 已被在野利用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5zRjNWT2t2cTA4bXZyZnhiZWZkNkUtanVsTTk0ZEMtSE5oMmphc1NXdDktZUJyaGpBbkpBZEZqSlNHZmhVTTk0ZGlyaW9jM1RPVDNLaU51XzdfX1VI?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):SharePoint RCE漏洞在野利用，安全事件，需监控影响范围。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-microsoft-081
+  date: 2026-07-31
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "微软交出优秀财报：Azure云业务同比增长43% 多项数据超市场预期"
+  quote: "微软交出优秀财报：Azure云业务同比增长43% 多项数据超市场预期"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE04bVVPVHlXWWdwTDMwRlYyd21ndEoxNy1ZUnhnZ2NYbHhtTUU2emY3U0pKbVV3cl9pRWpacEc4UHNrVTFoNlhycQ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数据公布，Azure增长43%超预期，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-microsoft-082
+  date: 2026-08-02
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "从11.9%飙到95.95% 微软屠榜网安基准真正王牌不是大模型- Microsoft 微软"
+  quote: "从11.9%飙到95.95% 微软屠榜网安基准真正王牌不是大模型- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkMmc5NDVTRkkzd3RxcmxnY1RKWEVjLVJSVDA3b1NzajlwQkQwbmRhSmZwQVlzUUoxcWpsZU9aenY1ZVd6MDJyVkVRaVZLWjJhZThuNzVVZmdaZHBMeEtOMw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):网安基准测试成绩显著提升，产品竞争力体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-microsoft-083
+  date: 2026-07-30
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "用户通过Fireworks AI在Microsoft Foundry部署Kimi K3模型|IT之家|云服务|微软|月之暗面|汇率_手机新浪网"
+  quote: "用户通过Fireworks AI在Microsoft Foundry部署Kimi K3模型|IT之家|云服务|微软|月之暗面|汇率_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxOWm90NDhmZkdERnp6aWkxQVpJTWhvZXBzLVVfYTl5STAtTFdPdkJpb3dJelNMZHh3QXFGVnh2WDlSWGI2dnJfOHhqU3U5Qmp1dzFiamQ5LTdHcndfLXVWX3ZYNWRyaWlXTjc5WnhFMUZKRHVKYjU0LTN2aGVzeDR1YUNIS3FhaDRqc1I4SDFfSW10QQ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):第三方模型在微软平台部署，涉及生态合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

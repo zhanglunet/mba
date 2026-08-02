@@ -96,3 +96,19 @@
   source_type: media
   note: "LLM 预分类建议(high):Q2财报前瞻，盈利预期增长，华尔街目标价，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-01-palantir-007
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "伦敦金融城叫停帕兰提尔：五千万资金难见天日"
+  quote: "伦敦金融城叫停帕兰提尔：五千万资金难见天日"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxQVnN0Y1c4bE04VjZKU0o2RTllUFRzMkJ5R0pNRmx5Q3NlTDhIUVluUm9oVzBwWWtxYmRSVWtjODBiVU5jeWFoaHlsRkJWRW5nYTV3SU9mWl9pRk0yS2NZX0N4cWY5RTJYVU1vVHZ4N3ZvbGJZa015RTVCcUg4cWtLNkQwZkJjaEZyWnYxVUY4LVVUNEdoWmxmSEtNYW9tWHc?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):伦敦金融城叫停，涉及5000万资金冻结。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

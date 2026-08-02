@@ -1256,3 +1256,94 @@
   source_type: media
   note: "LLM 预分类建议(high):马斯克否认特斯拉出售中国业务传言，澄清重要舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-07-31-spacex-082
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克火速辟谣：特斯拉剥离中国业务是假消息，从未讨论过"
+  quote: "马斯克火速辟谣：特斯拉剥离中国业务是假消息，从未讨论过"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMVWlJN2dHS0VEYXhkVlhJVmtSVkU5anM3VHVSQTRnem1ITnBQMm1uc1E4NkRJMm16QkxVUmVadHRfZENJbnJHN0hFSEdDX0lVQWVYT1BVWmFwbFc5?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):马斯克辟谣中国业务传言，显著舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-spacex-083
+  date: 2026-08-01
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美媒重磅爆料：马斯克的特斯拉正考虑剥离或出售在中国的业务"
+  quote: "美媒重磅爆料：马斯克的特斯拉正考虑剥离或出售在中国的业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrMzMzd1pWOUZhcWp1eTV3UW85XzZXejBRcXZBMWdaYXpMOTZfYjNBOEVTOGhyWVMtZkRGRG9YdGF3aTVYLXVNMW9McGJ6ejFrZFNWV2xNNGdCLUgw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):美媒爆料特斯拉考虑剥离中国业务，显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-spacex-084
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "环球下周看点：SpaceX首份财报+解禁潮 中东冲突箭在弦上"
+  quote: "环球下周看点：SpaceX首份财报+解禁潮 中东冲突箭在弦上"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE1BY2JNTjE5TkFua0VlQ3QzQUlLM1ZlWjJTY0YzS2FETXQwQmZXdmxqeXZxYTBHMlk2cmsyYW1PWlVNbVV1NUdfaldYLWQ3bUMt?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首份财报公布是重要事件，但标题混杂中东冲突等无关内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-spacex-085
+  date: 2026-08-02
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX首份财报来了SpaceX下周迎天量解禁"
+  quote: "SpaceX首份财报来了SpaceX下周迎天量解禁"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTFBzeXRrSU9UeHRabzJYam9CTTdKX1NYNVRFSlktR2RHMnJReFM4SGdUbURjNHZDcGVrSXM4TEZxNVRaRlNhdDd4b3hlLUUtemRGWWQzZ2dxNHZHYkdJMjlUUXBQRVExQWlPY3pqTy1wMUJVQWphYTFERQ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报发布+解禁潮，财务信息披露事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-spacex-086
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX会把火箭涂成粉色吗？在首份财报发布前，投资者关切的焦点已超越月球和火星"
+  quote: "SpaceX会把火箭涂成粉色吗？在首份财报发布前，投资者关切的焦点已超越月球和火星"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTE9sakxlZUw3SXdJX0Q2RWQ3NlBNc1hLRVZ3WmtwOUVtb3RocVItcjdJcTd2VjFyNnJZLWhzc2dvR2VnczdITzdXSjVybURoWkRrTWZxZzhyNXA0dG05YWlLYU0xdnFjSjRuSHhncGc0QVlLQ2syZy1Z?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首份财报前投资者关切，财务披露相关舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-spacex-087
+  date: 2026-08-02
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX上市后首次财报电话会将至，散户投资者问题五花八门"
+  quote: "SpaceX上市后首次财报电话会将至，散户投资者问题五花八门"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9BVURBUkFZWV9KdHFLdV9Rd1kxS0tSdDh0OEhMbFZkSTM5ZnZrdzlISGJkSURsV2ZvQTNBUVJrUzg2clltd2s5NDBtSDU?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):上市后首次财报电话会，投资者互动事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

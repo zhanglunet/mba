@@ -1511,3 +1511,49 @@
   source_type: media
   note: "LLM 预分类建议(high):融资完成，35亿美元，估值350亿，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-31-kimichat-099
+  date: 2026-07-31
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "美国封不住！中国AI巨头推进Kimi K4，绕道买禁运英伟达顶级芯片"
+  quote: "美国封不住！中国AI巨头推进Kimi K4，绕道买禁运英伟达顶级芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBoTlh6V1pOakIwNklnVWxSdWlxeHN3VHhzc0oyaVNpNkxBLVR0Z0EtZDFTa3l3b1JMeW9ROF85RGxaWmJJeXkyS19JSXAyMnNCcWkzbXdQUkhtZUJSWkh1MWNEUzg3SUZoWG1lUjA1bHJ4QQ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及芯片采购与监管规避，标题党成分重。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-kimichat-100
+  date: 2026-07-31
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "中国AI发展仍依赖西方 Kimi内幕“见不得光”"
+  quote: "中国AI发展仍依赖西方 Kimi内幕“见不得光”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5XVTgyNklJWmJvalAxWVNfUzJsaFM2STRndFY3R2gxY2x0RkRsc1hrZW9EQ1lGZ3dZcVp6WjRxaGw2U2plV0NGWkJzbDd3M2JCUVhVd1VSQjBfUUwzVDlTVk9JZm4tZw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及技术依赖与监管话题，但缺乏具体事实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-kimichat-101
+  date: 2026-07-30
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "超额融资35亿美元，月之暗面逼近500亿美元估值"
+  quote: "超额融资35亿美元，月之暗面逼近500亿美元估值"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiREFVX3lxTE14TmFYVVBuS2dNTzdOTjlCcUh4LTBvZHdTbUpJc2Nqd0JwV0UtRG12Q3AxbngzVnNsM2hIZUFmNGVGUWRM?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成且金额明确，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

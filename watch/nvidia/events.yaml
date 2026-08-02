@@ -1124,3 +1124,64 @@
   source_type: media
   note: "LLM 预分类建议(high):自研CPU芯片设计战略调整，产品方向重要信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-31-nvidia-074
+  date: 2026-07-31
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达与科技巨头联合发起安全人工智能联盟"
+  quote: "英伟达与科技巨头联合发起安全人工智能联盟"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9WYzVzc0wtZVpDbjNIeU5YNGlLczVWdEJhUU1WVHYzSzk4djJrLVl1d1hvdkNlVjlPZDBWVThKejNyQXBqQWZERzhEblI2SnZoX3FkckktWnVub21k?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):英伟达参与安全AI联盟，体现战略合作与行业影响力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-nvidia-075
+  date: 2026-07-31
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "15亿参数挑战机器人控制，MiniCPM-RobotManip正式开源；覆盖文本/图/视频/动作序列，英伟达发布全模态模型Cosmos3-Edge"
+  quote: "15亿参数挑战机器人控制，MiniCPM-RobotManip正式开源；覆盖文本/图/视频/动作序列，英伟达发布全模态模型Cosmos3-Edge"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE51VXhYeHQ5N3NCWmhGLU5RZWpadS1YTmV3cFZIY0RhbGRLMHgycmlSQjJELXJoczAySTFIUEpxY21hWjlsT2tEZkdwQUpYTXlWdXFSbUZVejZIaXZs?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):英伟达发布Cosmos3-Edge全模态模型，产品进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-nvidia-076
+  date: 2026-07-30
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA 利用 Vera CPU 加速下一代 CPU 与 GPU 设计"
+  quote: "NVIDIA 利用 Vera CPU 加速下一代 CPU 与 GPU 设计"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4RHJjV0I4RExqLTN1QWRMdFY5NzRBTkNLWWJVaHlVZ3R6VGVEcGtZMThZYkhFb1NpNTl5d1RRVmRsdW9IdnlnR05iYzYwMTlZc2xZ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达技术进展，Vera CPU设计加速方案。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-nvidia-077
+  date: 2026-08-01
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达公开Rubin GPU细节：3360亿晶体管，智能体AI性能较Blackwell提升10倍"
+  quote: "英伟达公开Rubin GPU细节：3360亿晶体管，智能体AI性能较Blackwell提升10倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9CdGVBWFU1dHlYZTRiMTJPazZmR3dVMnZ4WHBiV1Z4dkhvWXd1Vi1DSC1DODI3R2s2TmlLNzNNc0JpVGhXM0VIRFFxdmE?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达Rubin GPU技术细节公开，重要产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

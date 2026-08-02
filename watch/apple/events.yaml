@@ -1248,3 +1248,64 @@
   source_type: media
   note: "LLM 预分类建议(med):大规模服务中断事件，影响用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-01-apple-082
+  date: 2026-08-01
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果公司与 Klarna 在美国推出设备租赁计划 Apple Upgrade。"
+  quote: "苹果公司与 Klarna 在美国推出设备租赁计划 Apple Upgrade。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxNczUyWktwVDNydXpYTzVFc2NiYWFSeFV3R1d3b01LVGlvSThlUld5S2NZM0pHanMxbmUtMHR6MTBHM1U5QkN1aGhja1dRcXRaS2NRMm1icWVUSHlrNU83MHJGaVBCLUJ3QU9vZEU4Y3RnYVNJTko3bDl3VG1vZHROX29MMFpkR2JDMGNKNnlNQVBFZV9jeEp4Z3VrR29KV282bDNDNWU0a043SDlq?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果与Klarna推出设备租赁计划，商业模式创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-apple-083
+  date: 2026-08-01
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "2nm芯片+存储成本太恐怖！苹果要涨价了：iPhone 18 Pro系列上调300美元"
+  quote: "2nm芯片+存储成本太恐怖！苹果要涨价了：iPhone 18 Pro系列上调300美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwJBVV95cUxNeVNpaHluMnlYTE54YXRlanlzQjFjcEpoNGM1eTRCa29RVEs3emZUNDQ1emdTV1hQRFpQWXhSSnZOOUNrNFN0aDFRNEZnbHJ6Wk45c2tlMXlZREFvWHYzTnE0UzJBV2xnSVhFUl9TVGNlOVFHSGJDVUdBNmFVZmZaZlVyNTdpMGdoVmtSMmdRR0FXSUVlMTlDeUh4dWdKdzRNTzJIQXotdFZrLTRrc3R0VHNtbWdvZXFTdHpNUXRTYlNJYUFqWkgtYnZka3RpRW5SSXNyQnhkTTVOVVEyNkJkSVVVUHoxSllvSlZWVFhZREYybzNNNW5YTzl5eXhQck9KajBV?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):iPhone 18涨价传言，成本压力信号，但未官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-apple-084
+  date: 2026-07-31
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "库克15年CEO任期收官：让苹果市值增长超10倍，超越乔布斯"
+  quote: "库克15年CEO任期收官：让苹果市值增长超10倍，超越乔布斯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE01NkRjc19ONThwTC1oWXNqTnJEcWR3ZHNVLUJDQ1pFUWNXcnhiSUd4bTBldFgtcDlnbnpfWDFaMFdjdEtWWUc0cGZPR0R2c1lmQ2ZubldMVjVZdw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):库克CEO任期收官，市值增长成就，重要高管里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-apple-085
+  date: 2026-08-01
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果在美宣布新计划：iPhone每月起租价17.99美元，租约期满可买可退可升级"
+  quote: "苹果在美宣布新计划：iPhone每月起租价17.99美元，租约期满可买可退可升级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcGVpTDcxcnUySkJMZzhoWG1qVFh0dEJTTVMxcHMta1VtNmJaNFp1Y0ZqTDRDNHpJSUlRa0xNaGs2LVE2QjhlOER3OFN3dUZIaFM5c192eVI3ZmlhUWQxSnNabEU3SmMzT3pab1ZNd0t1bWczU2FCRW9ZaHFtcEtvQWVRVzhKdUVEbTFZVjRXT3kyYWtlVTlvYS1JQmZhdEhoZDhjanVuN212cXJHdElqdDdrX0gwZ2JIYUpMZ3AxOEtZN3hkOVdHVGNUV1E4ZFMwUXpaenkyZnh6TURH?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新商业模式发布，iPhone租赁计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
