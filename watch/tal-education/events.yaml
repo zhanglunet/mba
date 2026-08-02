@@ -165,3 +165,34 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数字公布，净利润增长1204%，属P0级重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-07-30-tal-education-011
+  date: 2026-07-30
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "TAL Education Board Authorizes Extension of Share Repurchase Program >TAL"
+  quote: "TAL Education Board Authorizes Extension of Share Repurchase Program >TAL"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi6gFBVV95cUxQOHI4SjJSWVRGelBzck1ZQ1FvTElLVTFEbms5Z2ttQlNfOUNmb2YzUzd5TXlGbGpaX1k0MVUzTW5ybnlub1ZsNFZKUXRBSnAzNUJ1M2ZxdVpzV2J0UHl5Q2dzWU01NGZuMTVqXy0xaGVDcVgzUk1ualpjVlg5c0RUZXRadlVNcmxvWlJJRmJPUUNyMFNEX0NFWmQ4Yi1WcWxaQWZabFppb3RaUnZWaXRRZzZLd3VjYWluaHMwQ3RhejhlT3JfR0pVWENmTE0wNnZreFJUbUxzTE1iRGJtZkZKalFuQkNwdUFKT1E?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):回购计划延期，财务行为公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-tal-education-012
+  date: 2026-07-30
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "好未来(TAL.US)Q1营收同比增长31.9% 净利润同比暴增1204.3%"
+  quote: "好未来(TAL.US)Q1营收同比增长31.9% 净利润同比暴增1204.3%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxNMEFIQmp2YmQ0N05ScjhTTTdyVVR3N2JDS3FMSXNjTU91NUxmUm5hTkluVE5ZdTB3WGZibzk3cnFxdmJqb3BsbVZmMmhQdWxxenVhUG9zMUN4WW1BeHUtbWd4bVlULUNsVlZtQ2k0WHJOY3pzbnlHN0h4ekQ2cVNXUkgtZThCQ0lrdElRTkdSRzRkajREWloyRGZRRWdfNVE?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

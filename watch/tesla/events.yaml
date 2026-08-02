@@ -1094,3 +1094,94 @@
   source_type: media
   note: "LLM 预分类建议(med):Musk回应合并传言,涉及战略澄清与舆论管理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-01-tesla-072
+  date: 2026-08-01
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美媒重磅爆料：马斯克的特斯拉正考虑剥离或出售在中国的业务"
+  quote: "美媒重磅爆料：马斯克的特斯拉正考虑剥离或出售在中国的业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrMzMzd1pWOUZhcWp1eTV3UW85XzZXejBRcXZBMWdaYXpMOTZfYjNBOEVTOGhyWVMtZkRGRG9YdGF3aTVYLXVNMW9McGJ6ejFrZFNWV2xNNGdCLUgw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):重大战略调整传言，涉及中国业务剥离，需核实官方回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-tesla-073
+  date: 2026-08-02
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉(Tesla)二季度交付480,126辆汽车，同比增长25%。"
+  quote: "特斯拉(Tesla)二季度交付480,126辆汽车，同比增长25%。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOREZkeGJqZGROOElrUXh3SHc0T3p6OGR6c0tndmxodnN1bFJidUZhZS1mZ1ZzeHlrdmMzMDBVWUxrdGsybU4yald5N0t6NENscVpwZHdHYjQ0X3E5LXRBNjdKRVREWTlOdkFLaDlab0pKaHdfWE9VTjNxbVlHV0VaeTB5d184ZElYdHM2Tg?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2财报交付数据，同比增长25%，重要业绩指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tesla-074
+  date: 2026-07-31
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Moves Could Be Precursor to Tesla, SpaceX Merger -- WSJ"
+  quote: "Moves Could Be Precursor to Tesla, SpaceX Merger -- WSJ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxOMXdpWTVBWkh0RlVkNjd2a1dncUJ0QkNwaS1ZOEJTZ0x1Y2oyeml1d1RkcS1TbGdfQ2l2Q0tsaDZuVGVubjJkVkhubW5YOTdSR0Z2NE1pM2l0TjhtMWJfeU9Qay12UEN1WklaTFNVc1ItZHpiQm5wUlAtekpfand1cmdRWjFFeVhTYS1peTVYaHhCOGlTNUExRmp1NnhqUXc?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):并购传言（Tesla-SpaceX），需验证可信度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-tesla-075
+  date: 2026-07-30
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉第1000万辆下线|特斯拉_新浪新闻"
+  quote: "特斯拉第1000万辆下线|特斯拉_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXUm5kT3ByMnQ3RzU5dE5NekJwaXd5UnY1OGQ1dTh4R25NYXk1VExWa0FYcFNVTURmekROelNrN0x0LXliN2hScUdsZUhDRGNqOENxVkw5X3BDUFFISlNPeWxoSQ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):第1000万辆下线里程碑，重要产量成就。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-tesla-076
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国国家公路交通安全管理局对120万辆特斯拉涉悬挂系统故障展开调查- Tesla 特斯拉"
+  quote: "美国国家公路交通安全管理局对120万辆特斯拉涉悬挂系统故障展开调查- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hQTFobjItZmE0M3FzeEJYVG1XSGZzTkIxUDhyNWpPOFhoM0loQ3Z5Rk9aMHlRdm15aUNiMkhWX0owd0JleGJmdk1aV2x2bzJtMzNpWFk4US16empuTEVpQw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):NHTSA调查120万辆悬挂故障，重大安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-tesla-077
+  date: 2026-07-31
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克：Tesla评估剥离中国业务消息不实"
+  quote: "马斯克：Tesla评估剥离中国业务消息不实"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikwFBVV95cUxOSmxVWXBEcDFCZk83X3hrS1NDZXhiLVdsenFQRHk3Z1ZkLU0zcktSbzk2bHo0TW4zdUZjejJYQUk2LXFaZjgzUVlVQUhpN294bVlZcWkwTkJxczUyWHljVWJMOWhnME16S0kzMDk2a3pvUUZZQnhidTlTTGNjUXZwRXlYUUJnSFA5S1lrM1ZDM2l5RWc?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克否认剥离中国业务传言，重要澄清。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

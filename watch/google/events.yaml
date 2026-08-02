@@ -1218,3 +1218,64 @@
   source_type: media
   note: "LLM 预分类建议(high):Gemini Spark功能扩展推出，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-07-31-google-080
+  date: 2026-07-31
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Find out what’s new in the Gemini app in July's Gemini Drop."
+  quote: "Find out what’s new in the Gemini app in July's Gemini Drop."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTGNMOTNoZHpuMGU0U1lyQkF3dWh0SHVEZ1pmMGlxWW85VjlxbC0zSGVtcGhIeEI3SXQtNXEzVlNBdk13VDVuYlpJMUpCemFKNUJWdVNiSUNVYXNxa1dfMHZ2eHhJTVRVNGVVXzM5R05KTS01QTA4NFZ6WFcwVFE5S1FNcWszbHJv?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):Gemini大模型月度更新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-google-081
+  date: 2026-07-30
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌新功能：单独统计“社媒/视频内容”的SEO数据"
+  quote: "谷歌新功能：单独统计“社媒/视频内容”的SEO数据"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9lX2VibWNWbXk4Vm0xQnRFdF9aemgyd24zdERzb3dXOWdEb24teUVEMHZ6REU0N3gyWkVRY3NKLVlkTTk0YjBlMUoxaDZkdmxLNnlRZllpOFFCY05E?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):SEO工具新功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-google-082
+  date: 2026-08-02
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "能制造虚假卫星图，谷歌紧急撤下Google Earth AI工具"
+  quote: "能制造虚假卫星图，谷歌紧急撤下Google Earth AI工具"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE85dVhFWVNDNjd3bGhPS0Fjb2pYQk40Y1hkbDRzM3dEZ1hKNUNYYjZhNzdtWGdRNGhyaTZsaF9reWhiM2ZiY3VxdEtnTzYyakY3Z2xtSTZSaGlUaWFvekJ6UVFMNEsxMHBLb3JIbTZleVlLTkRhTHZNaw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI功能安全缺陷，紧急撤回。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-google-083
+  date: 2026-08-01
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "一句话就能在伊朗增加核设施，谷歌地球仓促撤回AI生成功能"
+  quote: "一句话就能在伊朗增加核设施，谷歌地球仓促撤回AI生成功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ydzJ5N3Bsb0RpME1ZNWhtWVVjRHFDaDcyTF9YeDd0RkxmcENQNURxbGtXU0RTV3pTQk5VNUw1VTNrM00xQnpQVDk4QnJrZVA0UHpySW8yNzdrS2ZXXzBGaklydU8?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI生成虚假内容风险，紧急下线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

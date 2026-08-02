@@ -1006,3 +1006,109 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数字，AWS增速与资本开支矛盾。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-07-31-amazon-066
+  date: 2026-07-31
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊云科技CEO Matt Garman：支持并签署开放权重宣言"
+  quote: "亚马逊云科技CEO Matt Garman：支持并签署开放权重宣言"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE54R0hxNm5OeloxUEVnVHNPYi13RldkSWFMOUFPVzFTMVhTV1psNW9sejlscGtZYkFMcHNCTDZtdVNLZmNhUFdaX3JVaTNTMnE4anVJYzNlRUVaTXFM?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):CEO支持开放权重宣言，体现AI政策立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-amazon-067
+  date: 2026-07-31
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon Bedrock GPT-5.6大降价，2折起售！"
+  quote: "Amazon Bedrock GPT-5.6大降价，2折起售！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IWHdBdWJVYUpDSjRGaGhxdHNJSUl3R0RiVVNnSjNoTU5uOWtNRkdGaW1FdmpXcTROTlp5bU1ZQWhnZUZTUGRheU1nMl96Mjh2bzdlLXBHQnYya1pJ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):Bedrock产品大幅降价，竞争策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-amazon-068
+  date: 2026-07-31
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊赢麻了！靠Anthropic赚3600亿，盘后大涨10%"
+  quote: "亚马逊赢麻了！靠Anthropic赚3600亿，盘后大涨10%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBlSlFlR3R0M3Y5N3BfMXZYWDN1aVhueTZ4YXdlNmR6NE1WUWFfQWZ3Y1RJY2N0SDF2LVE2eThoNVlVT1ljN1pzTkItdkNES19YR1RjdlZKZnEtU3Rm?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):Anthropic投资收益显著，股价反应强烈，需验证具体数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-amazon-069
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "算力缺口或持续至2028年！亚马逊财报会实录：云服务与自研芯片双线爆发"
+  quote: "算力缺口或持续至2028年！亚马逊财报会实录：云服务与自研芯片双线爆发"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1XVG1FR3hmSHBBRGlGNWxWWEJ6cDRlUXdOLVNjdGtIT21iUUhCQXJXRjN3aFZfZlVhTkg5ckFxLTdsRE90ZmZFMA?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报会披露算力缺口预期与云服务增长，战略信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-amazon-070
+  date: 2026-07-31
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "云订单近五千亿，目标万亿营收！全栈AI让亚马逊云科技收获红利"
+  quote: "云订单近五千亿，目标万亿营收！全栈AI让亚马逊云科技收获红利"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgFBVV95cUxNUnh5TzRxQVVvQ09OTGozZ2hPMzRJUFBOSFJ3SzlEMWlieWtNVi1MRXFvZE5kbDhLVXQ3ZzFtQWJYT3BLQno0MXNOZ0VmMGx3YThZcnA5RnhSaThMWjYyM1VkM01IRzBuRDlKSjBQNExWQXk2RmJUU09zd3ktZDZOclVackxJbzZibFFiSkl3?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):云订单规模与营收目标披露，业务增长关键指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-amazon-071
+  date: 2026-08-01
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊云科技推出Amazon GameLift Streams助力开发者实现游戏全平台跨设备串流"
+  quote: "亚马逊云科技推出Amazon GameLift Streams助力开发者实现游戏全平台跨设备串流"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1McFF2QzV0cjNrZkdIbUdERVV4Y0pHck5NcnFLVDkwczdwVXRtR3VCVS1DWmtaalVnYVlFcFZVLUd6ODRtcWgyTE10dUpqdTNxNGc?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS新产品功能发布，属于常规产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-amazon-072
+  date: 2026-07-30
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "2024亚马逊严打跟卖政策落地 平台跟卖乱象潮水消退 跨境电商卖家合规运营成主流趋势"
+  quote: "2024亚马逊严打跟卖政策落地 平台跟卖乱象潮水消退 跨境电商卖家合规运营成主流趋势"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9uU0RNdm1BaUJNTHpsNnRacFVVcGQ1SlZjdjZScUlrMURGcVQ1Uy1ZbkNXMXRIUDdtOEJ6WTdDeHVQWUxLaTNlc3NneGVhOENhbUZV?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):平台政策调整，影响卖家生态，属于运营策略事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

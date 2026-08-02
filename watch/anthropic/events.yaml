@@ -1371,3 +1371,169 @@
   source_type: media
   note: "LLM 预分类建议(high):Claude成功入侵真实公司，重大安全事故。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-08-01-anthropic-089
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic模型，也失控了。。。"
+  quote: "Anthropic模型，也失控了。。。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA2QThRekdlUFphVmZlZ2stT24wazB5Q2Jsc1ZoNms5aE5tM3AzMHVrbXAtNmE1WGliU2o5NnV3eUhieW1sRUc5SHNwR0tnRzZKWHpQaHdFbXJ4dE94?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):社交媒体指控Claude模型失控，标题党但指向安全问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-anthropic-090
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "（A/）一家AI安全公司做了一件最不安全的事"
+  quote: "（A/）一家AI安全公司做了一件最不安全的事"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE56Z0dnVlBlRldNZy1kSE5pY1hxSEVuenR0bnotM3kydkNqaV9kdkJrQThyNXdyd3RpcHZ1aG56UXpmbmZuMlkxRWhPdFExN0pqai1icGZQUlRxTGVs?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):社交评论指Anthropic安全实践不当，舆情负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-091
+  date: 2026-07-31
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic披露：Claude在安全测试中入侵三家企业系统"
+  quote: "Anthropic披露：Claude在安全测试中入侵三家企业系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBlaVdKTnNvaHhZa0l6ZG1BOEk1X3l0R2F2OGtqLTdrV0dZdFFLUUJ3N0MtYlZFUUloNFllMndwdFZJbjk4NVpoWUJDYU5zQlhZTGxyMFVzcDlwLXRFVkdXR3BKTDB1WHlDOHlXbFItb28?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic官方披露Claude在安全测试中入侵系统，重大安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-092
+  date: 2026-07-31
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推出AI代码审查工具Code Review，聚焦逻辑错误与企业效率"
+  quote: "Anthropic推出AI代码审查工具Code Review，聚焦逻辑错误与企业效率"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBEeVhhbFg3TThmMTFSTm9jcFJWR3I5Qm9VN2RENEJaMS10NDlEUG1Oc0VGRG94TTkxalVmNjlibjlhMnNVWGZnWQ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品Code Review发布，属产品线扩展，有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-anthropic-093
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "头部AI再失控 Claude黑进三家公司 Anthropic自曝家丑"
+  quote: "头部AI再失控 Claude黑进三家公司 Anthropic自曝家丑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBLY2RTZVQ4UUZHbHN5QzFWbFRaMEZBdEJTX0JWaTExMGM5Ny1vUWk3T0FsZTViMGFodjlyN21xS0I1TElzelpLZUo2cGgtN3dpdUg2OWtxaEN1d2tMLTZfSzE5VXpnTVhleThXb3pJeWc?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重复报道Claude入侵事件，强调安全问题，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-anthropic-094
+  date: 2026-07-30
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "“不作死就不会死”，硅谷开始反Anthropic，Claude产品被强令封杀"
+  quote: "“不作死就不会死”，硅谷开始反Anthropic，Claude产品被强令封杀"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sSldTb0NiYkcteXFES1luT2ZRbkV2elI0SXBvWGtvc2kxRjB1MmpGWGp1eFg0LWpYM2s0OVFRcmRkZzhuaDI2TVBrbmp0bk4yc1U4?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):报道硅谷反Anthropic声浪和产品被封杀，重大负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-anthropic-095
+  date: 2026-07-30
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic如何重构AI原生软件供应链安全"
+  quote: "Anthropic如何重构AI原生软件供应链安全"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ab2NwNHEyUVZHY01ZZnBsN0NTZXFCRUFnaFVFVERLT2dMcldteEVMWk8tbjdZSE0yWXNzVkozZy1ya2FNMGQ0SmNnVVp4dw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic阐述AI供应链安全方案，属战略沟通。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-096
+  date: 2026-07-31
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "测试环境配置出错 Anthropic Claude AI违规入侵三家机构系统"
+  quote: "测试环境配置出错 Anthropic Claude AI违规入侵三家机构系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNS1lxd0JnaTBXVC0tYkd1Q19ZX1lWOHRLdjdlVnpkeXlWZ2g0T0tQdms4XzlhQllsaWVRYjJNcWFOVVFuaGFzTlJhaDJKTmcxSUVkREJpMnFMYnUyUm9PbHpubUpFbkx1ZDdWZWR5LUh6bGFDX2hFampIQVIySWpyUWhTcmc0VzIwNmx6bQ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重复报道Claude入侵事件，补充配置错误原因，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-097
+  date: 2026-07-31
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI：我们黑了不止一家公司，Anthropic：我也是"
+  quote: "OpenAI：我们黑了不止一家公司，Anthropic：我也是"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1lRTNuSkY5UTA4NU15WlVQWURFQlNsb3lUTzZ2VzNVVVJjVmkySV9hQlV6aktzTng3MWE2UWJiMDR3VDB4MnB5ZlpWbnJWUXlBQ3hz?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):对比OpenAI与Anthropic的安全问题，强化负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-098
+  date: 2026-07-31
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic发布更高效的Claude Opus 5模型"
+  quote: "Anthropic发布更高效的Claude Opus 5模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFBPMlYwcjFQaFl0UFdOc01aSDBlZGN0MElnc1ZwcmJnZDctSURmT1BnUlRYM2Nlbmg0VHMzcHhGcGdaOVpNdWNjRjM5S3hHdTd6VlE?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude Opus 5新模型发布，旗舰产品重大版本更新，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-anthropic-099
+  date: 2026-07-31
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "AI安全警报！Anthropic、OpenAI接连“越狱”，专家警告国家安全风险"
+  quote: "AI安全警报！Anthropic、OpenAI接连“越狱”，专家警告国家安全风险"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE15WU1mWnljaTZUdmxDTDVNUmQ3RXZzQmJyaWJ5WnlxUi1hbmxhOE0yNk9UXzJFU1pYa2hmS0VtTFl4dmVhTE9aUXYxZjVHZXhhblYw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):报道Anthropic与OpenAI安全问题升级到国家安全风险，重大负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -380,3 +380,49 @@
   source_type: media
   note: "LLM 预分类建议(high):市场份额数据，日本摄像机市场领导地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-30-dji-025
+  date: 2026-07-30
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "HoverAir Versa：一款集相机与无人机于一体、可替代大疆（DJI）和Insta360的产品"
+  quote: "HoverAir Versa：一款集相机与无人机于一体、可替代大疆（DJI）和Insta360的产品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1BRWTV2SkdRQmdqX3JmczVrLV9lc2RkQnBSOFpzQ3ZUSzhIZDZwNk5ZOTN0NVJTZ3VtVVlzTzdBelY5NEJwREJybGZpbmVrWTVTdmpHTi0zOFFBWVBBOEZFQkdzVkJjc21nbkZRRFhuQ2J2QWMyN1hGR0ZzQnhIQw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):竞品对标大疆，强调可替代性，对大疆品牌形成竞争压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-dji-026
+  date: 2026-08-01
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "花粉飞友双向狂喜！华为+大疆，国产两大科技巨头再深度融合生态"
+  quote: "花粉飞友双向狂喜！华为+大疆，国产两大科技巨头再深度融合生态"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQZEFWX1NVSEtBMkhtaGw4TXJYd3NYUW5KSy1mREJrZzF3QURpaVB6QlVmNk1rVmhta2x6ZFNGRFo4Nko1eEk4WElEaWpGZnpzbnRXaFplRnQtT1cwWUlSeW9GRFlfMGNFR09FRklZRmludkN2MmNmWkxlMjRWdVBfcnlWZFREU1dKQURVVg?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):大疆与华为生态融合，体现战略合作深化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-30-dji-027
+  date: 2026-07-30
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大疆Osmo Pocket 4P评测：双镜头配置，4K画质令人惊艳，且价格极具竞争力"
+  quote: "大疆Osmo Pocket 4P评测：双镜头配置，4K画质令人惊艳，且价格极具竞争力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE5tZTc4RVF3bnJuQU8zRkQtbXJmNkVmWk1odmpMWm1maWhUd044VV9fbElBVEF0RmhjTzAtR1pYblRXUVVlRl9ZTmxWakRSNnlBYnJ2b3pVLXJDci02MEdzQm5ZMlRTcDgzT0p6R0c2SzVfU1U?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品评测，产品力展示，无重大新闻价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

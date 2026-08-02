@@ -1586,3 +1586,79 @@
   source_type: media
   note: "LLM 预分类建议(med):知情人士披露IPO时间调整，重大融资事件预期变化。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-07-30-openai-102
+  date: 2026-07-30
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Previewing GPT-5.6 Sol: a next-generation model"
+  quote: "Previewing GPT-5.6 Sol: a next-generation model"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9BR2ZzcDRMbGphY1pfMF9mVWVCZGUyV25mbHpZMnRjQUxWWWgtWGZqSk93eXEweHNlOU1MTW85d2hLc3NvT2E4Znd4ZG5DR1diQTZPcFExTi1wcC1t?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布下一代旗舰模型GPT-5.6 Sol，重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-openai-103
+  date: 2026-08-01
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "如何看待OpenAI下一代模型Astra大量解决数学猜想？"
+  quote: "如何看待OpenAI下一代模型Astra大量解决数学猜想？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFAzLWFuREpSSXNjckczLXFEZEFwZzUxTjV0WDNwdjVpeklzUDg2eGdjMV9JT3E0WTZUNjI1cTlLMG9GeTFlMzlzUnFvbHFKb0UzVU1meVJNZVRzcFYxeDgw?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):下一代模型Astra解决数学难题，技术突破舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-openai-104
+  date: 2026-08-01
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "降幅高达80%！OpenAI大砍两款AI模型价格 “Token价格战”升温"
+  quote: "降幅高达80%！OpenAI大砍两款AI模型价格 “Token价格战”升温"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCWHJOcG91cUpOc2tLcWFmRlpDaW1vbDlaZURpWGxyMVVYeGpPLWNjSllBRWtUdXlXU3ZibnkwUWhhRDZOZWViSg?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):模型降价80%，定价策略调整，市场竞争信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-01-openai-105
+  date: 2026-08-01
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI确认下一代模型Astra存在，以2000美元算力成本破解十项数学未解难题，正向监管层展示"
+  quote: "OpenAI确认下一代模型Astra存在，以2000美元算力成本破解十项数学未解难题，正向监管层展示"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1neUhrMXFrdkdyN24tNzhVbGsxa1BZTjc0N2ZwQzFpVFR2RS12Tlc4ZllhamYwc1p4bEZ6OWxJWk1xUThfRzRSWnJDRHNsSGxUUFM0?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方确认下一代模型Astra，破解数学难题，重大技术突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-openai-106
+  date: 2026-08-02
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "全球首例AI自主攻击受害方披露细节，向OpenAI索赔1亿美元算力资源"
+  quote: "全球首例AI自主攻击受害方披露细节，向OpenAI索赔1亿美元算力资源"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1JVDVuLTZ1dDF0TjdONEphRG1TeDRaUTNFSC1fRkhfX21SX25ZeDFneUpWSk9Hc2Q1amd0NlhyckFEdVhpQWI0UWJZakF0VlB5VEZJeWNkQzdxYUpYbkNySEt3WWVBSlhzcVZGV05HMzA?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及AI安全事件与法律纠纷，但缺乏官方确认细节。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

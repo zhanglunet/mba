@@ -825,3 +825,49 @@
   source_type: media
   note: "LLM 预分类建议(high):协同认证功能适配机型公布，产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-07-30-huawei-054
+  date: 2026-07-30
+  dim: W1
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei's MB2 Antenna Wins 2026 Red Dot Design Award"
+  quote: "Huawei's MB2 Antenna Wins 2026 Red Dot Design Award"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE13UnZydXVSZkpFbXl0NFZkcjdUWnBXajl0azBSVXAyOTdhVHVBb1NXaF84cFJxTmItMm9TcVVLZHlPYkxBYU9nU2Nvci1ITFJMQm13NHMzMUxUSDdz?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):产品获设计奖项，官方发布但属常规荣誉宣传。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-huawei-055
+  date: 2026-07-31
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "专访华为朱懂东：要让鸿蒙电脑成为真正懂你的智能伙伴"
+  quote: "专访华为朱懂东：要让鸿蒙电脑成为真正懂你的智能伙伴"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9uclg2N2ZZSXU3NzhyUUc4RUo1NzMwd1AybzUtOGNIcnBGOEN1SzB5VmFhRjBtSGg4blhiS0VrbFdrTy1JZXEwUlUySXZOUVotWkppQ0JHNUtiVzlJ?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):高管专访谈鸿蒙OS战略，属于产品方向阐述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-07-31-huawei-056
+  date: 2026-07-31
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为开源 920 亿参数盘古 2.0 Flash，MoE 架构推理效率有多能打？"
+  quote: "华为开源 920 亿参数盘古 2.0 Flash，MoE 架构推理效率有多能打？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxOaDlqd01OVHNlZjNYcE8yUXRFVzZDMzQ0WXM3bHRQR29fNWpWQ0ZodkFBMkZ6UjlmVGRkVzlEUDVxMVFoX3JINHhDWWZpWG1hd2VGLXU0UU8wRXgyOVN2aXQtUWpGcGE1Vk1vOGZvVkstR0gxWEJpZ3B5MDF4Nlg5T2NjaE9TZDM0MnJmM2lEMi1MSWxhdTFpSg?oc=5
+  fetched_at: "2026-08-02T05:38:37Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):开源大模型发布，属于AI产品重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
