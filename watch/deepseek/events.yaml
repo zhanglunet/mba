@@ -1038,3 +1038,94 @@
   source_type: media
   note: "LLM 预分类建议(high):重大基础设施投资，涉及战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-03-deepseek-068
+  date: 2026-08-03
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek API 性能下降（DeepSeek API Degraded Performance）"
+  quote: "DeepSeek API 性能下降（DeepSeek API Degraded Performance）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFByOTNKSy0weHBfeU9RaFBBUURuQU8wVDJRc3d2TlhXd3MxMEJUd1c1T1RKX2d0Wmd0SmVWQWs4c3hOYjktZjFVOHcxVG1NSDBCbUxDUTNDZXlTVnRsTGtvNA?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: official
+  note: "LLM 预分类建议(high):服务中断公告，运维事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2024-10-11-deepseek-069
+  date: 2024-10-11
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Chat Completions API"
+  quote: "Chat Completions API"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE9WRWc1Y1Etei1wcEpkODI1Q2tKU2xxUWtCVHVyaXh1OFJOSVNlcXo2ZGNIWGpXd0t2cWlYY1R4dzZvaW5ZMlo2YUpkZm4zVS1iMnpKLXVSaUg3X2xWN3J5ZExoWVdwTXNo?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布API产品，旗舰产品功能扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-deepseek-070
+  date: 2026-08-03
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "用同一张基座模型只重训一下，DeepSeek 把 V4-Flash 干翻自家旗舰 Pro"
+  quote: "用同一张基座模型只重训一下，DeepSeek 把 V4-Flash 干翻自家旗舰 Pro"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5GWnh3bEd0N05ETkROanFLQlEyVF9WdVVwbk54X3VkeUN5MzFvYVJRVUxHSVdTWkJ2Mjk2LVN5RlYtbzh3ZHhqNmZ3WDA0UkQtbzhmcElDRVJWaDhq?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):V4-Flash性能突破，产品竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-deepseek-071
+  date: 2026-08-04
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "从DeepSeek到Kimi 中国大模型为何纷纷“开源”？-新闻中心"
+  quote: "从DeepSeek到Kimi 中国大模型为何纷纷“开源”？-新闻中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE5meXg5R3VTZmdPZG80enA3T0o5c0k5ZHV1TUppMlFqUExYeHhvRXFTbE1mUU1XQm1fVF90OEc2c1lLV1pDTFpFWTlsRU16NEVMbnRQeHlVczV3VnhkUEZrQmZqY0pVcXF0?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源策略分析，涉及产品战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-deepseek-072
+  date: 2026-08-03
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美研究机构：DeepSeek最新模型成本远低于其他模型"
+  quote: "美研究机构：DeepSeek最新模型成本远低于其他模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFBpUVZ0YUZaUGYwY0o5aTJ2NVhCZHY1ZUR5YmNhOWoxVU43dlk3NkMtb2k1SU9jbDVyUzZDNFBoUHkwWl9lM09STzJwbEhpdkt3cjlrSllPT3pBRXZKQzZVeGVyU09vQmwyR2c?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):成本优势第三方验证，竞争力指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-deepseek-073
+  date: 2026-08-02
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "7月AI焦点：开放权重模型升温全球协同治理提速|Kimi K3|新华社|日内瓦|DeepSeek|月之暗面_手机新浪网"
+  quote: "7月AI焦点：开放权重模型升温全球协同治理提速|Kimi K3|新华社|日内瓦|DeepSeek|月之暗面_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAJBVV95cUxPMlRaVElUN1JlM3JObGdIaGFXRE9Fd3FwTXZkX0Q0MlIzdWtHUW1KXzFvV3FacUZQMXJIT043NmdxRjdzWjZaR2I4MjZsNXhyam1DZlE1ZnhBNnhoX0dtVFVBam9fM0Z1bzZpM0RqWlp0ZUZ2cUdUQ2NJQnViWU9UQnM4MnJESExNTXZlaExFS0VoR1hNTlJNU09BZ21JRHlsZnF3MmIxSmZmdHNUUFNzN21xb0RGbm1SWUhqbkR5UjlaU2RiZDBDcGp3VGpiV2RlV0xrMWhCM250b05pakNydHVmWkFfSW05bi1GTTFxclpOdVV1d1NTeWc3ejlXWDFYdkxYb3BBbkhNRU55YTFsaQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):行业月度综述，DeepSeek作为焦点提及。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

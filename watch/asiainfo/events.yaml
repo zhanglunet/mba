@@ -234,3 +234,19 @@
   source_type: media
   note: "LLM 预分类建议(high):亚信科技业务转向AI与卫星，战略调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-04-asiainfo-015
+  date: 2026-08-04
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚信科技发布乐竞·体育app下载系列AI平台加速行业智能升级与绿色转型-TGBUS"
+  quote: "亚信科技发布乐竞·体育app下载系列AI平台加速行业智能升级与绿色转型-TGBUS"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE5LVWNZbGt5YnBFTVNtXzRGSEtRSjNwY1h6bjZaanJJZTJfMmQ2bjJmdXZKbDFlVXZKLUJoUjJmX2U1NW5XWlRqa19CazdtOHRmaXNhYXNKN2pxTXVGNnQ4N2hkMmM?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):产品发布，AI平台新品，行业升级方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

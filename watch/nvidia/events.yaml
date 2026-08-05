@@ -1185,3 +1185,79 @@
   source_type: media
   note: "LLM 预分类建议(high):英伟达Rubin GPU技术细节公开，重要产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-04-nvidia-078
+  date: 2026-08-04
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Availabl"
+  quote: "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Availabl"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifEFVX3lxTE1UcldGcWwyYlZROHhjVGRWVnl6YTRsdkhXdjFld0N2OTFUYTJZY0VDU0FiOTlMeW1vTUQ5VGFnUEJndVVzYTZ4dEtYOXFhZFNBdE9mMjdsTWNCcXNaQ3h6NFBTVmNTcjNGWEk2ZTRGZzViMnkwSWdwcE9ya1Y?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布新产品Alpamayo 2 Super。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-nvidia-079
+  date: 2026-08-03
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "TrendForce：CSP资本支出预计增长90%，2026年AI服务器出货量增幅上调至近31%"
+  quote: "TrendForce：CSP资本支出预计增长90%，2026年AI服务器出货量增幅上调至近31%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5wVDVSQXNOejVublA5NUtLdG9fUlo2aThPWHJNQm43eGd1VDlzNkQwT0VpQUllbVVuSjY3V18xVEI0cXVBS2UyaVlWa3ZZeTZRMGRidTlOOGxfSVBC?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):市场预测利好，AI服务器需求增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-nvidia-080
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "机构：英伟达评估下调Rubin Ultra HBM配置，或将不限于12Hi HBM4E"
+  quote: "机构：英伟达评估下调Rubin Ultra HBM配置，或将不限于12Hi HBM4E"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qVnNVa0hIYlVKTC1tTG92MzFTTm9TQTZ1UzIxY0MzU21lalFoSEpOSmJpWjZncmw3SFhwMHdoc3M3YnB3aFFCc2NZRmhxY2xJdW5Z?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Rubin产品配置调整传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-nvidia-081
+  date: 2026-08-04
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "NVIDIA 评估下调 Rubin Ultra HBM 配置，或将不限于 12Hi HBM4E"
+  quote: "NVIDIA 评估下调 Rubin Ultra HBM 配置，或将不限于 12Hi HBM4E"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1wWjU4c2JmVWtERFZzY2tpWTcyd2VxY1hWOTd2ZUJFd2VCYmoxeXNZVF9RcTV2WGM2NGVYTzMyS0pnYURoelVPMDFBNFZ4ZkhqRjZSY290WlJsT0x2OFFjQllEWWczNlJFOTAzQW53M3BycTBONkQzMkJna3JRVTA?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品Rubin配置调整，涉及HBM供应链策略变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-nvidia-082
+  date: 2026-08-03
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "赶超NVIDIA：传闻谷歌规划2028年部署1200~1500万颗TPU v9|Google|IT之家|英伟达|三星|英特尔_手机新浪网"
+  quote: "赶超NVIDIA：传闻谷歌规划2028年部署1200~1500万颗TPU v9|Google|IT之家|英伟达|三星|英特尔_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiyAJBVV95cUxOSEVObGhkcXdmV0FjTWhMbWJlMURiejdhWURacVNyUmgzQV9VQk5fQmxYaGJ2NDllakgzOEhISWZvMmpuQXc1SkFXdGlaeUtKdVIwc2wwMEVHMnJrT1F4R3BCWng5RWFWa3dLZkpybGNBVU1PT1VUUjIxWlByM2JVb0NQWmk1cUtmSS1nSnVwUmRaZlNIUmlXbW4zRVNERzN3eWJFS0FzdDRMNGs3S01QdUl6Wl92d1NwVWdjU21Oa3BYMC1XczU5WDluOXprVl9Oc1BoeHJUNFlCdkI4WVZCUF9lY3RIX0lJWGM0UDNSU013T2xoVldudEU3YjM3em1PaWUtZHEwR2VHMmp0Z0twTzJXYlFhN3g5OS1HV3ZqeTVCV1hESWJnRjZ3aDBYRWI4aU9BWXZEcW9nZjFkTDAtNTNKQ2V2T1ZV?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):竞争对手TPU规划传闻，对NVIDIA市场地位的间接威胁评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

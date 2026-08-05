@@ -196,3 +196,49 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数字公布，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-03-tal-education-013
+  date: 2026-08-03
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "【一周连连看】新东方、好未来发布财报"
+  quote: "【一周连连看】新东方、好未来发布财报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE94cnZ6Ym4wVmpWeG9ZQTFTN05ubTdVM2lRbE9WU1IxLWVNTW14Tmh4NW9qZXhZbGxsQ1ZvU1VDaDFDVFhiMllnMGVtOFlnT05BMWJrWEk4TG85OWpBa2gtelZhYmgybjRWeGc?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):好未来财报发布,关键财务数据公开。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-tal-education-014
+  date: 2026-08-03
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "第三次来到突破前高的窗口期，好未来(TAL.US)好业绩能否带来好股价？"
+  quote: "第三次来到突破前高的窗口期，好未来(TAL.US)好业绩能否带来好股价？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqM3lWTWd4SXdXRzFtdTI2UWpra2tWdnZiVHh4MmZBRGcyYjhCREJrcDlMdV81ZGhmbk5WMnNwS0xoRnVndldobDBvTkpzU2xy?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):好未来业绩分析,股价表现与财务关联。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-tal-education-015
+  date: 2026-08-03
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "狂揽10亿美元营收的学而思学习机，AI批改、卡顿闪退问题投诉不断"
+  quote: "狂揽10亿美元营收的学而思学习机，AI批改、卡顿闪退问题投诉不断"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOGkwZ3NRMTJMcHNtSnJKMU5KajlldmZYRzBXMHVlYnlDRXlZUVNGNUZ3bThuNWhBcFFLZjh4VGN4cm92c2V5RWU4UlNnb3pEVHMtbHkyUkhsQy0tZElkV0JnVWRRaEhzZ0REMDg5SUFPRkhUZEp5UTdYYmZfczVjbjRZQWF0b0l1?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):学而思学习机产品投诉，涉及用户体验问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

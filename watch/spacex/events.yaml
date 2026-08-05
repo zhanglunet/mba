@@ -1347,3 +1347,169 @@
   source_type: media
   note: "LLM 预分类建议(high):上市后首次财报电话会，投资者互动事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-08-04-spacex-088
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "首次财报前夜，德银为SpaceX“站台”：AI业务定价为零是\"过度惩罚\""
+  quote: "首次财报前夜，德银为SpaceX“站台”：AI业务定价为零是\"过度惩罚\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBIeHdoWUxtXzc3UXliTnFuRFVpUWREQTNDWHg4MjFOc00tTWJONFpQSzd5LXFmQy01VGppZFEzeXRSZEVLMWlIWVJ1REJ4S1ZYQmhCODJGQ2tMNnpo?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):财报前分析，投资机构评价，AI业务定价争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-spacex-089
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX IPO后首份财报倒计时！分析：投资者应紧盯“星舰”而非短期盈亏"
+  quote: "SpaceX IPO后首份财报倒计时！分析：投资者应紧盯“星舰”而非短期盈亏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE80MlVGdW0zXy1ESzJLaEQySWQ0WmRZS2ZEaDRPQXhRNXJYWFZOZTJ5Y2pWSVBDUUllMHh5b1lteFJmQWI5cFNRTTRyQmplaldMM1NEaktrOWhYQjFH?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):首份财报预期，市场关注焦点，重大时间节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-090
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX首次财报本周重磅登场！除业绩外，市场还将关注这些……"
+  quote: "SpaceX首次财报本周重磅登场！除业绩外，市场还将关注这些……"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBYaXBJcVVYVDI4LWhibUN3TEt1WVBqbWs2MmFUR1dvRUFKT3Fsak43UmJ4NENoWEhaMG9BbUZpdVhoRVpnUlVuSQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首份财报发布在即，市场重点关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-091
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX的AB面：星链日赚1800万，AI日烧1.7亿"
+  quote: "SpaceX的AB面：星链日赚1800万，AI日烧1.7亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1tODRIcW5qclliYi1yYnE3TzhITmRqcmFOazE2NFR3U1poM05YSy1VUzZCWmwxdHFnenNqUXpmT1cxTGw5dGZtalYzVTJvMFd6NkRv?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报数据解读，业务对比分析，AI投入争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-spacex-092
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "突然直线跳水！SpaceX和AMD遭遇“业绩杀”！马斯克最新发声"
+  quote: "突然直线跳水！SpaceX和AMD遭遇“业绩杀”！马斯克最新发声"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zNDFsajhZdzZfQk1DYlRCVUJTS2c4Q3lXcl9KTGFNU1NRZWZVQ0QtdUtTY2JKMlJuSXhGNnRUdzVnQnpTVW5ndS1HMnpDU3JxTGFlbnBxZ01qZ2JSUGNheA?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价下跌，财报反应，市场负面评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-093
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX首份财报超预期，携手英伟达打造Starmind轨道AI算力卫星"
+  quote: "SpaceX首份财报超预期，携手英伟达打造Starmind轨道AI算力卫星"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0tYjEwQkhCa2dqVmtmc09mN1hmRjg3Z25SbWV6YUxyWF9xRUJxV2dNUnp6OTNHaUhHeHowbUxtbzl1czJjLTRpZEtwemYzdlpLZFBtTFY0TTIxME9F?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):财报超预期，新产品合作，战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-094
+  date: 2026-08-05
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX公布上市后首份季报 营收同增92%"
+  quote: "SpaceX公布上市后首份季报 营收同增92%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE9ab2g4ZlpncVlUVEhCUFNIXzdrVmN0WEtMU0tsWm1WSnpYZnhFVUI1d21SS2pIN3hjazM5b0d3el9Cck15aktDNXJQR1N3empjZWN6U0VlWnkxQzVzMkY5TXkxRVdyT1IzQnNEeUMxNjZ5TG5mc1FTRw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):上市后首份季报，营收关键数字公布92%增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-spacex-095
+  date: 2026-08-04
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克称星舰2027年底可载人 SpaceX目标2030年收入1万亿美元"
+  quote: "马斯克称星舰2027年底可载人 SpaceX目标2030年收入1万亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFB0Q0s3cXY1Slp6THFrOXpQczl3OVJNZjR6VWlPTEhqUVhOeExNWEptbGw2cFhrZHNkNzVROTMyU3l2NmNrUy02cnFtUTd4ajBMX3dvWnFuRzFvRzU2cllNcVRR?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):高管发声，星舰进展，收入目标宣示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-096
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX财报后暴跌7.5%：空头狂赚155亿美元，但历史上做空马斯克的人，最后都输了"
+  quote: "SpaceX财报后暴跌7.5%：空头狂赚155亿美元，但历史上做空马斯克的人，最后都输了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE16T0NjMXRSbHJZdzNlODNSSUR4UnpLdm81Zl9uaFhiWEw1aTMya2JQTTc2b2dLckF1UHp5WWwzZDl3amdMdGFvTm1DQjJ6MURH?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报后股价暴跌，空头获利，市场反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-097
+  date: 2026-08-05
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX上市后首份财报：营收激增92%，星链撑起基本盘"
+  quote: "SpaceX上市后首份财报：营收激增92%，星链撑起基本盘"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE5lY1V2Y2NuX01pdjdiWUtjOG5uNDVCQTFEaDUxSGthaFR2ZjgteGZWejZ3dk9LV3F4WTRMLWZ5c2RQekRmT2hwNEFRcllyaEpydVoyMHRn?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):上市首份财报，营收激增92%，关键财务数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-098
+  date: 2026-08-05
+  dim: W5
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX上市首份季报出炉：营收近乎翻倍，高额AI投入引发盘后股价跌超8%"
+  quote: "SpaceX上市首份季报出炉：营收近乎翻倍，高额AI投入引发盘后股价跌超8%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE1VblJuYkE5MHMwUmpVaFZTWEFYczZxNUtUb0tYV1lBaHB3bVpHLW10TTVTSWhpbEhGenNORmZhUWNfcXptaXVLYS00N05BTlFYTVBrcmRCY1Q?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首份季报，营收翻倍，AI投入引发股价波动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

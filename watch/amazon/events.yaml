@@ -1112,3 +1112,79 @@
   source_type: media
   note: "LLM 预分类建议(high):平台政策调整，影响卖家生态，属于运营策略事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-03-amazon-073
+  date: 2026-08-03
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "FedEx、UPS疯狂涨价，亚马逊和马士基却在低价抢人，美国物流变天了？"
+  quote: "FedEx、UPS疯狂涨价，亚马逊和马士基却在低价抢人，美国物流变天了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBsY2lYbVo4bGZFdnB0Z2ZMbDlURGxvVTBsTnNaOGVfSmh4d2o0QnJuQllZTm5CWHZmYVlFUUFNeUVTNm9hTjg2aGVlU3gtSzV2Z0RrUkRWX1dsRmpp?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):亚马逊物流策略调整，涉及竞争动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-amazon-074
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "上诉法院推翻原裁决，Perplexity智能体重获亚马逊电商访问许可"
+  quote: "上诉法院推翻原裁决，Perplexity智能体重获亚马逊电商访问许可"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNDhPSERUQnNQaWk0VkJfSzdpYzh3dzZ3S0ZRc2RGYldhcTNON3d6LVJBZEl4V3JPM21lTWc5TVFGdTdJX3NURVFoUUpZa0E5b1F3RUpRVUVPZzFLZy1CZ3ZvekhRbGtOTUw5Ym5DNEdzZ2JRVV9wRnR2YjZ0ai1ka25PLTBYMlA5?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):法院裁决推翻，Perplexity获亚马逊访问权，涉及监管/法律。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-amazon-075
+  date: 2026-08-05
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊2026 Q1财报前瞻：AWS与广告双引擎发力，能否打消市场疑虑？"
+  quote: "亚马逊2026 Q1财报前瞻：AWS与广告双引擎发力，能否打消市场疑虑？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVnIwaXlyQ1pWbERONHlLUzJzZFJfR0thMXhaSm5fR3h0bjRZOFp5OGJWRnVqNEV1MGJfMHgwdXFBN1ZzcEd4NEZib0xwbGR6aXAtS3Q5dC1ZVXBlSURHX1BDeW9aODVBclZ3aV9QQW1SUDhucFZKQjRQeHV6VmxtWklHTV9raHdyNFlGZGZFVkZ3bDhXUDZsMGVjdlQ2R2F2anFhR2pjLU9zaTNTQ2p6alJXVm1JQWZFcTRn?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报前瞻分析，涉及AWS与广告业务预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-amazon-076
+  date: 2026-08-04
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊市值首次突破3万亿美元"
+  quote: "亚马逊市值首次突破3万亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE80VG5udnJJU0Z0Y2V1VnpzYTdRSmVob2NnOHZwSFRheU5SSG80ZjhFM0ktNUdfUnZuVnJrN3JBN2sxRUVKMHNxSGtocENDUdIBTEFVX3lxTFB4Yk50QlY3VFE0OUFXQUhMc3hxZnkxdzcyZHc2Sl9uVmtIQmdLeGMtYUVmNjgtV0Ixb3FMS2kwdG5jRDdwWkxoOGJPZ1o?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):市值里程碑突破，重要财务指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-amazon-077
+  date: 2026-08-04
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊Prime Video成为全球首个支持HDR10+ ADVANCED的流媒体"
+  quote: "亚马逊Prime Video成为全球首个支持HDR10+ ADVANCED的流媒体"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE1wTUpaSFBLSFNhbDFxNEg3bWtFMTlTSG1PandMSUQ4TjB0emVjd2FTdWJwV1RTQ2FaWHU2d015RlNTb2Y0UmNJYzJWWUlHbC0yc3lqbXpyWDJ0Y0diVG1oWTJ2R2l4UQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Prime Video技术突破，流媒体竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

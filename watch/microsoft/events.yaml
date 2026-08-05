@@ -1278,3 +1278,139 @@
   source_type: media
   note: "LLM 预分类建议(med):第三方模型在微软平台部署，涉及生态合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-08-03-microsoft-084
+  date: 2026-08-03
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "衡量AI发展势头的下一个标准：工作重塑"
+  quote: "衡量AI发展势头的下一个标准：工作重塑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwAJBVV95cUxQZkFiVGt5ZV8yN0l6ejg2QlY0U0gtd1ZrTTRrd2xqYWtuZklSTWduZnVEeVZBMm00SnBiYTR4ZHVYVDJ6U0QyMkRhVW50Q0c3VVplVlVpRjlIVHQ2c3d1a2VtSlM1RjhvSTlqbFlOWkdDcWlkRjIwaS1CWkV2S0dQLVd4S0d5YUF3SEFKZUk4QU9sVjlpcE1tbmx3eXNEc2tBbDRqSUMzRGpId2lTUDhsZXVXeEQ0WTVMelBydGFLQS02RXVyUWR4NkcxNzNPQlBhMVpZMm11SDMwU3AxYjlqTkd3Qm5tb3ZkTk9ra3diM0xwWVdFaTgwVXkxUFhRUHN1NG1xZEpOZGF4Zm0yb1JTaGgtZVFoa0h5V3JsTnkyajZtbzlxMHZZWko3NDgxa3ljbTBULTlNbnAtLVhodTREeA?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方观点文章，AI发展标准思考，属战略思想输出。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-microsoft-085
+  date: 2026-08-04
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Teaching AI to speak the language of pathology | Microsoft Signal Blog | Microsoft"
+  quote: "Teaching AI to speak the language of pathology | Microsoft Signal Blog | Microsoft"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxQMDdVTzFiZ25yaW5RNkNHVkRGMjF0U2NIT292eXA5aFpCbWJfcmNFS1IwZUdzY09qR1FsSVZIbTdVSlZVSEQzc0FOZ1lFMWR3cmdFT0gtSzhFbkxkREpnWFcwV1lWLXc2MjhIN0hOSkZKWEd0MnhWclNWbzVLNThiSXo2WDBkNkJXS0VLaTRBS2NVaUdF?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方技术博客，AI在病理学应用，产品能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-microsoft-086
+  date: 2026-08-04
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft Unveils Work Trend Index 2026, Guiding Thai Organizations Toward “Owned Intelligence” For "
+  quote: "Microsoft Unveils Work Trend Index 2026, Guiding Thai Organizations Toward “Owned Intelligence” For "
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxNUl9vUkc4WFNjLTA2blBqcjBwTnpWNGdtblNJZHc5QzRQaHhvYVNHYUZJcmkxQTE5NjFfU053LTJmak51WnRQbF9fTGUyWlpTS09MVE5SdVV4S2lBYTh1T1F1bE5tQXd2Uy1QekVSeUlzZ0hiam1LQjhaWndwNTJnUEFDU1RFSmRneUx4LXViQTdYcTZLRjBFNWQwZkZndDBHQ2Jr?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Work Trend Index 2026报告，市场洞察发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-microsoft-087
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软开源Mage-VL：编解码器原生流式多模态大模型，砍掉75%视觉Token，推理提速3.5倍"
+  quote: "微软开源Mage-VL：编解码器原生流式多模态大模型，砍掉75%视觉Token，推理提速3.5倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5OQU5pTFJ4LTlzQ3haRWc2d1ljSk53bmpTcmNuamJxNHFYaXdIOFNMRUF0NS1SSUFkbTl4MGpzYnZIeVZ3Q2JnM3BnaThQWXNLazA3UEkxN1F4UmV1?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):开源多模态大模型Mage-VL，技术突破，性能提升显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-microsoft-088
+  date: 2026-08-04
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "如何评价微软 Copilot 2025年7月的更新？对企业和开发者意味着什么？"
+  quote: "如何评价微软 Copilot 2025年7月的更新？对企业和开发者意味着什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE85MlhoRmZpRXp6TXU1ZERpdXhrc3BNT0VpNFRTUXVKWUc3dDJHSG5ieG5DZUxJQ2FuWllfV3EtRUtFQXNZeW5QMlBpaS00VXBNNlhwV3VXbXVRdzNX?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Copilot更新讨论，产品迭代信息，但标题为提问形式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-microsoft-089
+  date: 2026-08-04
+  dim: W4
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "微软在Edge Canary测试版中灰度上线新版推荐奖励计划"
+  quote: "微软在Edge Canary测试版中灰度上线新版推荐奖励计划"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVXB0ZXBwLThLVVlmMGtUbGdkMnRDRWJ0X25QbUQ4dHlJcXA5UVpZZW5vYUt2VjdrNDdLdnV4OEtNcXppUlRUb0l5WlhXVmduckw0VkhhS216UXd5VlZYWDh2TFNmTkdGZ3BJbndBYmQ0WnFpNmQwWWU5b1docEt1dzBMZFdTVVdl?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Edge浏览器灰度测试新功能，产品迭代，影响范围有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-microsoft-090
+  date: 2026-08-04
+  dim: W4
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "微软将于8月为Teams推出安全举报功能"
+  quote: "微软将于8月为Teams推出安全举报功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1WQmI0VHRGZ2lpS3NBUHlXdXYtTVhFZ1N2QzZYWThQQlpFU043bG5vTjhVbTh1M1hjcnpUREZSR3ZMV3IwQnlrdA?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Teams安全功能计划上线，产品安全增强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-microsoft-091
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软承认Copilot付费用户遭\"升级弹窗轰炸\"系故意为之且无意提供关闭开关- Microsoft Office"
+  quote: "微软承认Copilot付费用户遭\"升级弹窗轰炸\"系故意为之且无意提供关闭开关- Microsoft Office"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KQVJjVlZSd2VsMnBIOEdTZ29ubWpoV0NhbzdiYUdFT0JvUlh1RWdNbkp3bXBLV1ZTTU1nNUFoQU9SZjN5aXRKRVdRWFYzM3MxVXJUNHdnNEt4RXhtbnZSYg?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Copilot付费用户体验问题，微软承认故意设计，用户满意度风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-microsoft-092
+  date: 2026-08-03
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "从11.9%飙到95.95%！微软屠榜网安基准，真正王牌不是大模型"
+  quote: "从11.9%飙到95.95%！微软屠榜网安基准，真正王牌不是大模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9BQzEzcDlSWTZnMEZfb29HN0NKYjdOcnlNYVhEMllwV1Zwa2kzR0dodTNXVTQxTUpzbVlmbUw5eV9EMzdkNGlmSg?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软网安基准测试成绩突破，产品能力验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -112,3 +112,64 @@
   source_type: media
   note: "LLM 预分类建议(med):伦敦金融城叫停，涉及5000万资金冻结。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-02-palantir-008
+  date: 2026-08-02
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Palantir_ Q2_2026-Investor-Presentation"
+  quote: "Palantir_ Q2_2026-Investor-Presentation"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgFBVV95cUxPdmxTdVc0Zk9RYURyWEFYZlBqUFZ2SmFLcUlQeUFQRFh6MGJDdGRYWWtKZ3ZwaC1MOWoxa3p6Vmt1bC04eHFpNmowUDljMkhlYXpjRi1EUlh1UXJrcDJYNFhqa0hlamN2WDUtQm0td1p6OWtHcUZrOE9LemQwczA5V2NNdFhFTU56YlJGTjdR?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方Q2财报投资者演示文稿，财务数据披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-palantir-009
+  date: 2026-08-04
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Palantir季度營收利潤均超預期 盤後股價大漲"
+  quote: "Palantir季度營收利潤均超預期 盤後股價大漲"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WN1hFVS1CSlBOMkdqamRQZ2JlcUc0QlJYanlYdFJuMFpldGY4cERFdUNsY2VXLXp4THU5N1Q5YTduU1ZPdHM5eTlsMnZQQ2RfQ0RwRG1FVE52ZGJmNGd0OUZkSjfSAWRBVV95cUxOVjdYRVUtQkpQTjJHampkUGdiZXFHNEJSWGp5WHRSbjBaZXRmOHBERXVDbGNlVy16eEx1OTdUOWE3blNWT3RzOXk5bDJ2UENkX0NEcERtRVROdmRiZjRndDlGZEo3?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):季度营收利润超预期，财报关键数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-palantir-010
+  date: 2026-08-03
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "帕兰提尔第二季度业绩创新高，卡普警告企业守住数据控制权| 乌克兰新闻"
+  quote: "帕兰提尔第二季度业绩创新高，卡普警告企业守住数据控制权| 乌克兰新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE50LUE4bjBBb1VOeUZYWlJkMEVNOXJrZWo2RVB6eGdZQWY3YkxFWVRZYk1vOUhDLVdYWjF3Q3ZLT0VQekljOU5lOGJQUkZJNUN4c1o3bnZPZEduYWlweEJQZk8zdzE?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2业绩创新高，CEO观点发声，财报亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-palantir-011
+  date: 2026-08-04
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Palantir收入飙升93%，Karp抨击AI竞品“马克思主义化”"
+  quote: "Palantir收入飙升93%，Karp抨击AI竞品“马克思主义化”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugJBVV95cUxPcnNmVkxTMnF2dEhUVHJPNmhjZ2dnbDFpVlhvU1FjLU1CbS15UlhWdEZzcFJsSVFoT3NzQ1U1YU1fWUZvODhpTDVua3NtQnFUSk16cTZXZ0dkTnBDZDlfVF9veUNJNDZSWldyS181dDhYUF9ZZk1EaXJCTVFKQjA0TF9UYnZkUkcyNHdhb3BXVmlVVHIxX0tFWG1vZDBDY0ZUMkpLZlNRcEVlWmN2UTlTLXdrYVpTc3BUMDE1ZS1JY2h2X2lZNVhkYkJoOHVmaWkzY0V3U1hjRDVqUDV5dGppRkwxckVwdUxjT3VJZWF2YzVGRlJ6ZGVzWEU1R3VLdUNOUzRIUzZJUmZtTHdTVk1JdjVQbFFkellqMFQzalF1U3NaemxXeVBvRWxGSXpyZnIyV2REcmU0czBsUQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):收入飙升93%，CEO竞争态度表述，财报核心数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

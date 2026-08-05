@@ -721,3 +721,34 @@
   source_type: media
   note: "LLM 预分类建议(high):股票回购行为，金额明确但非融资并购，一般关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-02-meituan-047
+  date: 2026-08-02
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "实地走访美团乡村儿童操场：一个平台经济参与乡村振兴的标准样本"
+  quote: "实地走访美团乡村儿童操场：一个平台经济参与乡村振兴的标准样本"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPcTF5cnh3UFE2ajQ1MjJKSEQwV3hzdkhCbTY4T0NzSmNsWF9IZ05uSlcxT1lZN0twUVMwb21ENHF2TVhNSmxxSWRFN3BrUjlQRzRtSkpaNTBPZW1I?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):美团乡村振兴实践案例，品牌社会责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-meituan-048
+  date: 2026-08-02
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团新叙事：构筑物理AI底座"
+  quote: "美团新叙事：构筑物理AI底座"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxPcjV2STJCdkFEZlFiUDRwVzlzdHlYUHB0YzhiZkRuU1piUHpOSTI3VlBsYzNjcTltLUJzbkxOb1hGdmthQXF6NUg0UWNJUEZ0YUJEMDBTUUtUbGxSSDJZN0c5cTVUMk9uVHJXcXBXYnp1RllkSDBXcTNKYVpmWG1yZUVuZmNfVVlyekgtcUcyYzlFVmJGdHFNV2hXVHBUTUE?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):美团AI战略叙事，核心业务方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

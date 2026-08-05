@@ -1279,3 +1279,94 @@
   source_type: media
   note: "LLM 预分类建议(high):AI生成虚假内容风险，紧急下线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-04-google-084
+  date: 2026-08-04
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "The latest AI news we announced in July 2026"
+  quote: "The latest AI news we announced in July 2026"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQemtQSDNYOWU4ZTlNeURXUE1RNFM0TXVScXFhRENEcEN1NnhCeTNlVURYaXBnaUVlQUVNYWd1THllTDRYQ0NvamNjeXFMYjFqS3dnT09Hby1VemQzaEFJUXhPM3o0V3QtZlE3b3VnOThqeGV4cXBCMmQ1M0JjM3llSmt3Y3lMcjQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方AI产品月度发布汇总，旗舰产品更新动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-google-085
+  date: 2026-08-03
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Announcing the 2026 cohort of Google Play Accelerator India"
+  quote: "Announcing the 2026 cohort of Google Play Accelerator India"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxQRXMyTU5WbUFfcXlqMUg0MUpmV19IZGZZSFJQY1o1NWdmUXV1QVRlV0J3RktYUGFXNVNUODhxQ09xdzd5bDY0TG5RLWxlYmdCVTFGMVNRYVYwTEQtdWRZdXBpYUlRWkFBZXo4cGVnRVU3LUljWnJhUUpfQnVROGRMaEkxQVFsal9GS0ttb0ZISGh6ODYtaEE?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布加速器项目，属常规生态建设，无重大事件特征。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-google-086
+  date: 2026-08-04
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌诺奖团队解散，大厂AI研究体系为何集体进入大洗牌？"
+  quote: "谷歌诺奖团队解散，大厂AI研究体系为何集体进入大洗牌？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0wSzJGajJLbHF5SVpwSHhxMjlyV3pITkZBdFJLQllzRXhwNERWYW5NTG1yM1FwWHg3bkh4Mk5ubWIwUlE2Q19jT2ZCUXZBZGhacWRTZGJCM1RnUHJB?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):诺奖团队解散涉及组织变动，反映AI研究体系调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-google-087
+  date: 2026-08-03
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌宣布Google Cloud Cortex Framework第7版正式全面上市"
+  quote: "谷歌宣布Google Cloud Cortex Framework第7版正式全面上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5EODdnOGs5Qy1rUE1vSFZGSHlkVU0xenRwakpYT3F0ZjBoeWNSVHc4SGlqU19ZYkRYMlhfNFg1cl9RRUtvR19FY0ZhRXBIVXN3ZWh3d2I0Q3ZJWW5oNWllQg?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Cloud Cortex Framework第7版全面上市，产品版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-google-088
+  date: 2026-08-03
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌地球紧急撤回AI生图功能，虚假卫星图像泛滥引发监管反思"
+  quote: "谷歌地球紧急撤回AI生图功能，虚假卫星图像泛滥引发监管反思"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5GV2V0NnRnWlNOZDZxQ0ZZOGRLNGhxa1J3d2ljMkRicVRFc09NMERaUzYzQUVzN0dWOHlIRXVQWllYejFjMFFsalFGMjZSVk51N25PTEtMYjdYOWxs?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI生图功能撤回，涉及产品安全问题和监管反思。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-google-089
+  date: 2026-08-03
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "赶超NVIDIA：传闻谷歌规划2028年部署1200~1500万颗TPU v9|Google|IT之家|英伟达|三星|英特尔_手机新浪网"
+  quote: "赶超NVIDIA：传闻谷歌规划2028年部署1200~1500万颗TPU v9|Google|IT之家|英伟达|三星|英特尔_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiyAJBVV95cUxOSEVObGhkcXdmV0FjTWhMbWJlMURiejdhWURacVNyUmgzQV9VQk5fQmxYaGJ2NDllakgzOEhISWZvMmpuQXc1SkFXdGlaeUtKdVIwc2wwMEVHMnJrT1F4R3BCWng5RWFWa3dLZkpybGNBVU1PT1VUUjIxWlByM2JVb0NQWmk1cUtmSS1nSnVwUmRaZlNIUmlXbW4zRVNERzN3eWJFS0FzdDRMNGs3S01QdUl6Wl92d1NwVWdjU21Oa3BYMC1XczU5WDluOXprVl9Oc1BoeHJUNFlCdkI4WVZCUF9lY3RIX0lJWGM0UDNSU013T2xoVldudEU3YjM3em1PaWUtZHEwR2VHMmp0Z0twTzJXYlFhN3g5OS1HV3ZqeTVCV1hESWJnRjZ3aDBYRWI4aU9BWXZEcW9nZjFkTDAtNTNKQ2V2T1ZV?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):TPU规划传闻，未官方确认，属战略信号但可信度有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
