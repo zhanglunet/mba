@@ -1309,3 +1309,139 @@
   source_type: media
   note: "LLM 预分类建议(high):新商业模式发布，iPhone租赁计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-08-05-apple-086
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "晒完整聊天记录硬刚苹果，OpenAI：这场诉讼草率、咄咄逼人，与苹果声誉不符"
+  quote: "晒完整聊天记录硬刚苹果，OpenAI：这场诉讼草率、咄咄逼人，与苹果声誉不符"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5UejhhSXRkQ0pxdWx3ZVhmdWV3X1JkY0RERjlKeUtMSXRnXzdzNTV4T0s2Sy1MRVZIVGFWazBsU01oU3JrLTFDY0hvTmFraVJwSktxclRCcTIzVF9H?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):OpenAI公开回应诉讼纠纷，涉及商业冲突升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-apple-087
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果一边告前员工偷机密，一边把发布会计划留在他们手机里"
+  quote: "苹果一边告前员工偷机密，一边把发布会计划留在他们手机里"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZOXNFS2xJd09YQzlFbXBTV0pCN2pOUDNORmpmNldHT0xQYnI5ZFpQNFdpSFdKRF8yMTVROXdWNFlJelBZa1ZZUkJxSFk5TTZOQ2VOUjM1Z1FvNE9r?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):员工泄密与安全管理矛盾，品牌信誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-088
+  date: 2026-08-05
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "智能手表也涨价了！手机涨价后，Apple Watch S12、Ultra4 同步调价"
+  quote: "智能手表也涨价了！手机涨价后，Apple Watch S12、Ultra4 同步调价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOU3p4T1pNYjlmTGhIVlNLWTZZZ0xWRmdidG1xazdSaEplWEticFFucl83V3EzVFlCaUlUUi0xdFlfMHN4ZjRkXy1GaWFSMXUyRnd2VXZkNkNwdk14YW91dERHWXlZb0ZUV1p0QzdpMnNMU1FESEdCeXNhYm9yTDNoY3IwcEltM1luTEg2UQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品涨价公告，消费者舆情敏感点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-apple-089
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "WWDC26前瞻：Apple Intelligence在海外会是什么样"
+  quote: "WWDC26前瞻：Apple Intelligence在海外会是什么样"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijARBVV95cUxNSFVfbkZRREg4Vmp2cGFsdks4b1QwMEYwS1JUcEZUVHVRSmVwaVdjRWJHQTlWQml5aE1sem1uMl90Q0toRl9uR3Y0a0x1UlhRUTRoQmtmU3pWaHhsRHFlUkFYVE9sbmFHQUhXU1k4cHMwUms5YVZabFNIcXdxczFPSjJiUXFJdjNGMXJwd1NXdWoyamtzdkE1NVlrUWtGM1hCUDVNNGUwQ3A0dXBFLWViNTJUR0tzM012Z0pCNWlPT0kzcXBkUGtHOFV6WHZOaE5nY29qSWZaX2RFTWQxMm9hc3Jjc2J3eVFJRG1GVE9NZjlzODJLUXNoajlPWXRURGh6amhYb3NBcFE3cE1fdm00RVJmT21feFZOZHVmaEpaNnVQWWtQS082b0xBWmlPOEZJNjhkNWNpUTVGYVdTaDdTV3VNci1WSERPTi1uSW5xR0VDelRNTS1TYm1JcU1pQVpsREFsMklGMjBMeUQyMzVzR3lYLThOVmR6Nm5mR0JRTlRjMDZ3bnZId3VLc0NMcGZxd3o2dG1sVm5DYUZ5UkFQV3IyY1ZBMGtMNDkxRUFrWTB2eXQ1aFEzNVc0enNtXzFlYzRYckVfZGcxQ0VBX0NlekQxZG9MNjJrWi1lN05QVW9la0JBY2hyOXNTSnlnT1EyQ0JZdF9uMjJoT0RYUUdTYlIyM1lOOEw1MFdZLQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):AI功能国际化前瞻，产品策略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-090
+  date: 2026-08-05
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "曝苹果下月将推出五款新品 涵盖多条产品线"
+  quote: "曝苹果下月将推出五款新品 涵盖多条产品线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE9TOXFMTDlRN1BUa1lsVG8zX0t1c0U4ZXk0X0NzZWMzQ1lUUFYzdy1BeE1Kbl8zTUl0Y1VMVnMyRUw3Ul85NkhhcVN6Z2dmZFlEczR6VE5WRmU0UGU1SWIycXlpLWd2dmZmV2J0SThlQmI?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品发布预期传闻，产品线动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-apple-091
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI回应商业纠纷案：苹果对此案处理有误"
+  quote: "OpenAI回应商业纠纷案：苹果对此案处理有误"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE9uNUJrWWY5RWRDUnlaQW5Qd2RIeHFxQmV2NW1rWExIQXJBYlViUnNNMlRjU2lfanZGbjhYQ3hXQWF6N0NaWlItR2dfSHN6R0xkSV9qTFNfR2hSQ2F4Rm1WNnNJLW1SZw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI再次公开回应诉讼，商业纠纷持续升温。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-092
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "打官司、挖人，苹果和OpenAI的硬件大战才刚开始- Apple 苹果"
+  quote: "打官司、挖人，苹果和OpenAI的硬件大战才刚开始- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1icE1mR3gweHNNeHFwZjBEYk44WGRfdkZVSnphbVJteXR4Zi1VcURRYk5wa09hVl9aeWZPVDh1eExkbFpMMm5fRVQtTHAxN2xSME9jcFcxMlgzdDNUVWhjSg?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果与OpenAI竞争冲突升级，涉及硬件战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-apple-093
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果申请禁令要OpenAI别碰商业秘密，后者反手公开了双方沟通记录"
+  quote: "苹果申请禁令要OpenAI别碰商业秘密，后者反手公开了双方沟通记录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9iTzBMWGRKV0hwYW93aUg0MVhhSkRlS3BhR0pkanhidnM4X1ByTUE2cEhXWEJFaTBxcWx3b1lEZ2MtSS1VR0NVSUVQamUxcGNXMUo5cjcxS214ZEYyR3YxeXFKRmxRNVFrR21LTXpMMUIyWmRkTlVqYno3aUtvUHc?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):法律纠纷升级，OpenAI公开沟通记录，商业冲突公开化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-apple-094
+  date: 2026-08-04
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果大举进军智能家居：将发布家庭中枢等多款新品，主打Siri AI"
+  quote: "苹果大举进军智能家居：将发布家庭中枢等多款新品，主打Siri AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5PUHlVWElyT1QydTQtYy11MnNaZ1NvZExkc244ek82OUR0LVVBcDRqV3IyeDcxQTZKRjFXdUY0WWF3bDQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):智能家居新品线战略发布，AI产品组合扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

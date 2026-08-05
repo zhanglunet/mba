@@ -584,3 +584,64 @@
   source_type: media
   note: "LLM 预分类建议(high):分析师升级目标价并维持买入，反映市场对品牌的积极评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-04-lenovo-038
+  date: 2026-08-04
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI业务加速释放增长动能 财通证券研报：给予联想集团\"增持\"评级"
+  quote: "AI业务加速释放增长动能 财通证券研报：给予联想集团\"增持\"评级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wRDVhS3ItZ2hiTWNaUWlVTVdUVmJUUG9Fcmc1VjZwMlg4NTJhenNiemdEUE5wVERJazJvMWFxeUxtaDZYaDlJVUR5MU1ya0FvdlQw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):第三方研报给予增持评级，反映AI业务增长预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-lenovo-039
+  date: 2026-08-03
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "联想集团内部人士出售了价值4.39亿美元的股票，显示出犹豫态度"
+  quote: "联想集团内部人士出售了价值4.39亿美元的股票，显示出犹豫态度"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ2x0V1NRVERzOVJXZEViczBiSTJLY180dUJ3UHM5TWlIU1JFZlNTdHlhV1FJLVdXWXhfd0VjcmV4eXdZSXJrS0wtZVZRUVBBcGJNSWJhb1lBeDVqcXhuNEFwWmx6RnJZdjlCY2t4czNmV29kNHljNUxxUnM0ZW1GaEZFU0JIUk8tczBSMkRSTXhDOTRvdlo5cFlPMTFNTlFWOGo0TkRDcG90bW5SRXdWZ2dB?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):内部人士大额减持，显示市场信心不足。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-lenovo-040
+  date: 2026-08-03
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "国盛证券：联想AI服务器加速放量，盈利改善进入兑现期"
+  quote: "国盛证券：联想AI服务器加速放量，盈利改善进入兑现期"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFAtWU15UV9PWU8waVZfSFd1NFczS0NRMWR6THdkbEM2aFhnaWxwZXd2OFR0dGlRd2Q1YURvenVneFkwT2RVYk16cXhPNGUxZUdEQ2Vv?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):研报看好AI服务器业务放量，盈利改善预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-02-lenovo-041
+  date: 2026-08-02
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "南向资金追踪｜净卖出超9亿港元 加仓联想集团抛售阿里巴巴和腾讯"
+  quote: "南向资金追踪｜净卖出超9亿港元 加仓联想集团抛售阿里巴巴和腾讯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb0hyZm1WaHZpRFBCeWd2NzJtMnJyVGlpTVU1UUdpU2toVVFEOUxjcE8taWt0V2xPenlHc2lHX3JwdzlXeHl3dmRDcVhZRzcwNmdtNm5pNDBKTnhMdkhLejJaQld1ZjNicElVNm13VDdwckc4WHg1UUxMMWpjU19PN3VXbm41M1ZINF9LTHU5OTVjVHJ0MXVzS0JiWElvS241eFVTMVVGczU?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):南向资金净卖出超9亿港元，反映机构态度变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

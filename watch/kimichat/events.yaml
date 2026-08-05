@@ -1557,3 +1557,94 @@
   source_type: media
   note: "LLM 预分类建议(high):融资完成且金额明确，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-04-kimichat-102
+  date: 2026-08-04
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "在读Kimi K3 开源文档之前，一文回顾 Kimi 这三年的技术亮点"
+  quote: "在读Kimi K3 开源文档之前，一文回顾 Kimi 这三年的技术亮点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE93U01TSnpyWnZQNlUwdmR4SFFvM0FrbzJEeExNdnNMVG1PTVZ0cE1DNUNUTGxuZFVzODd1TUhpdTlBMFNIb2FQUDlDbzN5RWFmVGtkWm8tMzVwckRV?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Kimi K3开源文档发布,产品技术更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-kimichat-103
+  date: 2026-08-03
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "【中国新闻周刊】“最强模型”公开，人人都可自由使用？"
+  quote: "【中国新闻周刊】“最强模型”公开，人人都可自由使用？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE4ySlhtZ3J0dEJSR1ZvUmFmelJhXzNoaEVjWVpVakxSQVh6MXM3b09sdzBaVHg0VUUzOUpoUzBITEktZXpaZlRrajZEeUdSRjFkc1FIOHFwZUVsem9NZ0dJTFlsUjdUZjBXVGo1Mk9YRkU?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi新模型发布,开源策略重大更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-kimichat-104
+  date: 2026-08-03
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "知情人士否认月之暗面kimi本月内递表港交所"
+  quote: "知情人士否认月之暗面kimi本月内递表港交所"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE1SUUdVelVrSV82a2l2YjhXbWY2emlBNngyXzdxMlVycUJhMWZUTnJkVHMxcnpwU3Z3QkRwVWtuTFJ5YnRiQ0ZkWGRVS1hNZ0FoNGtSaEhjbVdQZzZFcHFFME80VkZrREkwa3Zvc0ln?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO传闻澄清,融资动向重要信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-kimichat-105
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Kimi K3来了：自己承认不如顶级模型，还涨价，凭什么？"
+  quote: "Kimi K3来了：自己承认不如顶级模型，还涨价，凭什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE1OUkJsT1paMDkyMWFQdkYzblRvYUl0akpjSTFmdm5kWWI1ZFVhdmpfbm84YjZBaU9iTWd5VmNwUzhEQTBOWTFKNjJVQjQ5cTdCb0h6a3p1ZFN1aXM?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3发布涨价且性能承认不足,产品策略争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-kimichat-106
+  date: 2026-08-03
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "一款中国大模型，意外逼出了美国AI产业路线之争"
+  quote: "一款中国大模型，意外逼出了美国AI产业路线之争"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE4xQ0g4bjFrcmMydTg4QTIzSFhHUllrUTl2ay12QnRyR2dDOHl5WXJBcVFnRjdYcHBNQmZTNGxheVpGaHZ0NExaeWMySVNtWFhqQms1SlpMTmFBSWZhYWdPQkd3?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi引发美国AI产业路线争议,国际影响力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-kimichat-107
+  date: 2026-08-04
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "宗馥莉的“同父异母兄弟”成立新公司，实际控制人为杜建英；月之暗面回应港股IPO传闻；DeepSeek新AI模型成本远低于全球知名模型丨邦早报"
+  quote: "宗馥莉的“同父异母兄弟”成立新公司，实际控制人为杜建英；月之暗面回应港股IPO传闻；DeepSeek新AI模型成本远低于全球知名模型丨邦早报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA2WENzc081OFFfTW94TTd2ck83bmxCWGlMZldnY052MGxGV3Y1d1ZTUGRlMlRCN3g0a3V3Q3g3dG5wSkpnbVJHdjFVdk9HaDNrZEdGeU5BZnhFdEhK?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):月之暗面IPO传闻再次出现,融资动向持续关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

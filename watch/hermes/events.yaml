@@ -519,3 +519,64 @@
   source_type: media
   note: "LLM 预分类建议(med):2025新款产品期待度分析，消费舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-04-hermes-034
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "哪些奢侈品不贬反涨？仅3%能赚钱，爱马仕/香奈儿/劳力士保值率拆解+FAQ"
+  quote: "哪些奢侈品不贬反涨？仅3%能赚钱，爱马仕/香奈儿/劳力士保值率拆解+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNc2pnODBsR2k4MW5nX2VXc2s3UGo0a2YzRFVoYmE2eDlxM2YwMTgtcWpiY25IRWZSbE9WelZTenlCY29SNlE4aHR1ZHlIcWE4TDNlNF9VMkRHQnQtajN6Uzg1dExXLUVKS0dNQnBQR1ZFbTV1SVhNcnRWMGJHNVZtRjV1Zw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕保值率分析，品牌价值认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-hermes-035
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "金价下跌，“黄金爱马仕”露底了？"
+  quote: "金价下跌，“黄金爱马仕”露底了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizgFBVV95cUxPcy1lN1hmR2hHRTBmbU1HZ0RRdUdMM2xOcHpIdDNRRGg5cnU4cGJqbF9SclZjRDU5Ykk4UGFfa19GSDNqMS1ydW9ZdTlZbWVKR3dmTlQtUGF4OU5MeElaTHZTWUJBTGRxLU5rWFlVWGFfdDZnT010d3hRd3FaWEl1U2J3MG5uMUxCX25GLTBjQ2VaYjI0SEdaNFgwU2pUUnJsMmpGWndUcGJudnc4WFhoZjQ0ODh2UFpETmxNc1I4THl5MGJFaDg0X1Z6b01RQQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):金价波动对爱马仕产品影响分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-hermes-036
+  date: 2026-08-04
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "爱马仕联合创始人Karan：谈如何打造能够自我改进的人工智能体"
+  quote: "爱马仕联合创始人Karan：谈如何打造能够自我改进的人工智能体"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxORTZPSnRfcmo0OG93QmZSR21PXzNSdUVXSmJ0em50a0o4ZlItdDI1YkJPTGYzNzRwT3B0NTkzUURVM0k2Z1dsTEVwRDNVNkd6QnpzXzBNWDEtVTROem10cWQxdGp4RGdCaU9uM2RsdmF4WXZZaWZzem1YTDJPMjktS2ZWT3JEZkxI?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕联合创始人AI观点，品牌战略发声。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-hermes-037
+  date: 2026-08-03
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "爱马仕凭什么火了180年？从马具工坊到奢侈品帝国，三个关键转折说透+FAQ"
+  quote: "爱马仕凭什么火了180年？从马具工坊到奢侈品帝国，三个关键转折说透+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxQRy1ldzdQVkZhRXc5NGlWMjV2UDFsQlN4T2w1ek9jUndqQklnNHQ5cDluNHpSWGJJOTd5OGJlcHN2M3ZjWmVyWEhYMjFjdENnbHZwN1VlYU95Z1Q0Zm1uZkE2anEyZVVKTXl5anBoMXFPQkQxLXh6bE5BZ1kwcHFmbTRoNA?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕品牌历史与发展分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

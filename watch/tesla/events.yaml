@@ -1185,3 +1185,94 @@
   source_type: media
   note: "LLM 预分类建议(high):马斯克否认剥离中国业务传言，重要澄清。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-04-tesla-078
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉要出售中国业务？马斯克背后的资本算盘是什么"
+  quote: "特斯拉要出售中国业务？马斯克背后的资本算盘是什么"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9GS3FqTGNfTEhCYk91bmUxQVBfUVh1a3lOUFJzNS1mN2lvQmlJbHRYdGI0emd2LWZKNTlocHRlYlZNTkVVUjVobTljUlBRSTQzLWdMZTJUSjNWT1Fw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):特斯拉中国业务出售传言，涉及战略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-tesla-079
+  date: 2026-08-03
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "近120万辆特斯拉汽车遭调查；DeepSeek又发重磅更新；东方甄选前CEO首播，热度超董宇辉；华为半导体首席科学家罕见露面丨邦早报"
+  quote: "近120万辆特斯拉汽车遭调查；DeepSeek又发重磅更新；东方甄选前CEO首播，热度超董宇辉；华为半导体首席科学家罕见露面丨邦早报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TMXlVeGU5RjVFbnVsTHFfS21HNHR6bjJNMWRsdTlwMFhTSFItNzVrdEpNdjFMRnBUNkZHdFM1MlBRN0xMTkhvZjdwNkN3MkJhbGdQU040ZUJyMlE?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):特斯拉120万辆汽车遭调查，监管风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-tesla-080
+  date: 2026-08-04
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD新能力曝光：自动驾驶开始拥有「用户模型」，AI司机千人千面"
+  quote: "特斯拉FSD新能力曝光：自动驾驶开始拥有「用户模型」，AI司机千人千面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqARBVV95cUxPeURzVWdIaWpyZ1RJWDlQMENoMnBHeEsxTmM0c2EwMl9Ud3hqeTJkbFhPZU55TXlkc0dxOFpPdUZfNUVoeGVzeWtDVGlnVldWT2hyRF8wSXlicUNxWm03WHh0MnlqaVhxUDRCUUpmQnllcE5MOV9qNWNmV0hEN0FPY2Vya2dTQzNFOFp3c19TN05rb09Lc3dYYVM4UmVPWlBEc1VwSFVCbXRLV0tpOER4T3llamRwU0picUd2S3F5ZHRibHVFb2ZWVFEzdmVSVjdGbW9WVVZ2b3o5Qi03OHB2c0RvNklOY3FUZGRQLWRyM3NwSXUtbFBtT0tqMHZzVnBpOUtXd01DWjNpZVJHb01IMktua2I0cTdmYV9mZXgxYzNtMXRndVBwcVI1dTRPazlnWmM3TmdpX01YU2F0aE1yUzNreHRDdElTclBVWjh2b3IwWWc3Q3lxcEVtaHJTUXhUdnBwSGpmZGREY0tjSl9VVWhTcFZRTUQ2RGU5azU3d0ZNRGt3VGxJancxZmN5NU8wRmI4d0p0TTdKdktobXR6RlBxa0JZRG8zYkZTTUlhM19OWkk2eC0xcGNldml3MjJJeVh1UGFqa0p2MS15cTlDY2ZGNVpIeExVd2tRSFlQdWJBR3NQWmdQUTdyTG9PWEZoTndEc1luUkZPZXpuUzFoTEJVMzI4U0l4a3N6OHhGTmR5Y3R3Z1RTems5VkE5Y1k2VU5TMjhNMU0?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD新功能曝光，产品能力更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-tesla-081
+  date: 2026-08-03
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉：上海超级工厂是全球最大出口中心，2月交付量同比增长91%"
+  quote: "特斯拉：上海超级工厂是全球最大出口中心，2月交付量同比增长91%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxQVzR4YkRiN0V1NTZVQWVubjh2M2pMY2pWdVJidjZyOTlSd0ZFSG84bVRaZXNKVk9mUXFDeFlIelpZckZCaW53SmduY0xsQ21zZWNLZENjLXN4ZUNtcnVabDR4a1IwSllJT0VmeXY4RFVWUVZ4V2hpc2hicl94NTNldXZhdEdxcC1LZTI4LXdvRDhYTV9lUzlZb0FEYUtFdw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):上海工厂出口中心地位确认，交付量同比增长91%，显示业务增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-tesla-082
+  date: 2026-08-04
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉(TSLA.US)或建“巨型”芯片厂，马斯克称AI与机器人发展需自建产能"
+  quote: "特斯拉(TSLA.US)或建“巨型”芯片厂，马斯克称AI与机器人发展需自建产能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxOVzRFdEhJdmFyNXRZRXM3VU81bjd2dE5aWmZnZHBZWHZkMTVFNGVQTEJ6ckdJTm14bk1CX09BVDA4MlI1MVM5emNFZHN3T1dWYW95TURscEJXNGJVZmZobGUzWFI3anR1MHIzclBlV1BQdlNYR3luOFUxV255ZTFKaEtKQ1ZiSUttLTZQX3NtWFpMT1dlNGp1VWtpLXM3QQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):自建芯片厂规划，战略意向信号，但未确认具体进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-tesla-083
+  date: 2026-08-03
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉为与SpaceX合并将剥离中国业务？马斯克驳斥：从未讨论 纯属“荒谬假新闻”"
+  quote: "特斯拉为与SpaceX合并将剥离中国业务？马斯克驳斥：从未讨论 纯属“荒谬假新闻”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxOQnBBZFdQTWZhTEU3UTFWdnhlTnRzcUIzMG92QUQ4elZWWW5vU3Awc09pdUNCX2tUYmtkbWJESmNFNFpyTXNPT3dyODB2Uk1pV0RGS2hiWk8xQzNyYndUa0tLNWxmQnBxLWJJTjNOSmk2Sm12N0dId0lBc3YtSVZ1YS1XRGpob1NUQkFsbnBobnZzR0Rp?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克澄清合并谣言，驳斥假新闻，舆情管理回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

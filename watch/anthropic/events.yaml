@@ -1537,3 +1537,94 @@
   source_type: media
   note: "LLM 预分类建议(high):报道Anthropic与OpenAI安全问题升级到国家安全风险，重大负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-04-anthropic-100
+  date: 2026-08-04
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Tino Cuellar joins Anthropic as Chief Global Affairs Officer"
+  quote: "Tino Cuellar joins Anthropic as Chief Global Affairs Officer"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vODE3REpJODF0TzhuZTBCTFpEdTNMNXFsV2QtOHhzZ0NUVUlmTDVESzZQM2ZHQWl4MkxaSzY1Z0pNSWVUaTB4NzRsX0dUVGxqWWIwVkFB?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [identity]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布核心高管任命，全球事务负责人加入。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-anthropic-101
+  date: 2026-08-03
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic 突然把 Claude Code 的提示词删了 80%"
+  quote: "Anthropic 突然把 Claude Code 的提示词删了 80%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1FLWF0ZHVSdE1RcThXZEFPemhjQUVDbnV4ajhMZ0UxbjJ6N0U2dlZaaVZVOXlqcWNrV3E5M2JEVllJNE5BZ09hY2RYaGRLNmdlVDBKV3l0LTVhNFk1?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Claude Code提示词大幅删除，涉及产品安全/功能变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-anthropic-102
+  date: 2026-08-03
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 详解 Claude 的安全隔离架构：如何在 Web、开发和桌面环境中约束 Agent 行为"
+  quote: "Anthropic 详解 Claude 的安全隔离架构：如何在 Web、开发和桌面环境中约束 Agent 行为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBRc3RQbzdVY0RSX2ZQN1FsWVFrWkMtckpienRSam1WU2E5a2NIZjlsRGh2aWtTV1lIUEU0OEVxQ296dklsRHlRVXNlbTZVYjJKOWx2YWJGVE9sdm1xSnc?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方详解Claude安全架构，回应安全关切。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-anthropic-103
+  date: 2026-08-03
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic自曝Claude模型入侵三家企业，AI安全测试再曝重大漏洞"
+  quote: "Anthropic自曝Claude模型入侵三家企业，AI安全测试再曝重大漏洞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE14d0pZb3R3R2h4RklBbFlPWFRSSmtpVlU2UnRvMWZaYmUxSDlNUlVtSlNUTEk1bkxObkh2b1dITk1xSm15eUhTYTRtbHlFZkJ3OTR2RGk5c2Zva29j?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude模型入侵企业，重大安全漏洞曝光。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-anthropic-104
+  date: 2026-08-03
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic发布Claude Sonnet 5，主推高性价比智能体能力"
+  quote: "Anthropic发布Claude Sonnet 5，主推高性价比智能体能力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE94ZG5WaDhWdUEzNmlwb1g1RmdKS0c5dUYtdDBwV1kzR3Mwd1Q0TUdWUndrb1hsS2FwOVZod055OGpEcW1zQnpMUA?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude Sonnet 5发布，主力模型重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-anthropic-105
+  date: 2026-08-03
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "不只是OpenAI：Anthropic也承认Claude黑客行为\"未达到理想状态\""
+  quote: "不只是OpenAI：Anthropic也承认Claude黑客行为\"未达到理想状态\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLUJ5MDJnMUtHallJTEVqN3FVdnI5aVJoU0E2djRaOURCdkFKSS1UaTA0d2JsVjM1eUhudHU3RkM3aHprRnI1VWc0TzRUX1Jkc2RYMFcxUXNaNVRHbS1GSWNOZHVKYjNaSHRyc1lIZklxSUFTcl83bk5oY21uT0NyTEJ3YXFocVRm?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude安全防护承认不足,涉及产品能力缺陷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

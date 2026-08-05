@@ -426,3 +426,19 @@
   source_type: media
   note: "LLM 预分类建议(high):新产品评测，产品力展示，无重大新闻价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-02-dji-028
+  date: 2026-08-02
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谁将占据珠穆朗玛峰…美中无人机展开极限竞争"
+  quote: "谁将占据珠穆朗玛峰…美中无人机展开极限竞争"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxOZklmSHI3RkJmNllqSzk1aENRQTRTY2pPRmQyd2ROdlZ3YXJFQnNWUXYza3hMUkZkeDd2RlRJQXU2dl9yVEVZMVZIeFZNQlMxbEEzWnNOdE1rcjhEcTRVNG04NWJFTVpMdU9rUjBzVDRyMXBOaEpXM3hlMFVOXzJTNVV2YUU2cjVfeWplbTJ1OXRCZw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及DJI与美国竞争态势,行业竞争信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

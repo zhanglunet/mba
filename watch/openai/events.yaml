@@ -1662,3 +1662,154 @@
   source_type: media
   note: "LLM 预分类建议(med):涉及AI安全事件与法律纠纷，但缺乏官方确认细节。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-08-04-openai-107
+  date: 2026-08-04
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Third-party cyber evaluations involving OpenAI models"
+  quote: "Third-party cyber evaluations involving OpenAI models"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxQeENBNFQwQ0gzSm1EbTFlZmNhZmhBX2RPYzRSR3E4YUYtNmNsYnZ2Ml9ncDN4TGJOOExiSkNxYlhTbV9Zek1kSmZxVUYxck93bWc5VnpGcE11X1RRYWhnZDZZNC1XalhtMVgzNFc4WHBwVmNzM05tMHo1aV9jM0YtUndhbG1JZw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布安全评估，第三方网络评测，合规透明。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-openai-108
+  date: 2026-08-04
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Apple is getting this wrong"
+  quote: "Apple is getting this wrong"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ZTy1JSjFBbTl4NWdhZUpqaTVzZF9lMUl4RHMyUGM2LUhLd1UxVEpMRk5kWkNwMHFrWU5Na0hLd3Z1X19zLW5tV3hvaE1NTG11Z1d3Zm0zRE5HRDlGbVhtTXF2RQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方评论竞争对手，涉及策略立场但缺乏具体事实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-openai-109
+  date: 2026-08-03
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "How we built a realtime system for responsive voice AI in six months"
+  quote: "How we built a realtime system for responsive voice AI in six months"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTE1UcG9ubmpPbGl3VkV2bFlmd2NWbllZMURHdzFyZHlZQzZsS1NjampUeGl2X3V2R01ReVhlemU3ZmV4ZWNLbFlQeFZabXJNaFNnQ3NiRXNFRVRTNnNpTzBwX1F0ckIwRExlaHAtc2RxazdocVdsWE04?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):实时语音AI系统技术突破，官方技术成果披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-openai-110
+  date: 2026-08-04
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "数学家24小时驳回OpenAI攻破的猜想！“AI证对了每句话，但已不是原猜想”"
+  quote: "数学家24小时驳回OpenAI攻破的猜想！“AI证对了每句话，但已不是原猜想”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE94TnNaRWxHUWp2R2FDTlpabktGSEJCZnpXeTRNcy0tbV9QNHZ5bDV1dFB6bW1Vel82YVEzOExaTjN5SlFDZDNQb3JxdnhJRFZqd011Yjc1YVVNRzA0?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):AI数学能力争议，涉及技术能力评价但信息不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-openai-111
+  date: 2026-08-03
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "中国大模型包揽全球调用榜前六，OpenAI上市三周砍价80%，微软Copilot正式脱钩OpenAI"
+  quote: "中国大模型包揽全球调用榜前六，OpenAI上市三周砍价80%，微软Copilot正式脱钩OpenAI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE45SlJRbU4yTWRmeTZ2MmF5enQtMUp4dXFDTHhXSGhpWEJId1JteDNWU1kxOTFkQmpSemRsYVFJMWdXN3Y2QUh6WmVxOWUtel80ZlJDY2dRdUhIdWt2?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):市场竞争态势、定价变化、战略调整信号混合。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-openai-112
+  date: 2026-08-04
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI公开62页核心手稿！AI连破十大「菲尔兹奖级」难题"
+  quote: "OpenAI公开62页核心手稿！AI连破十大「菲尔兹奖级」难题"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE04dlE3RVVEWVdYc2tRTjVQbTZPY01HNlhoZnduUkl0QTlLOUtPMHNkQWhfU3hEMmVjbzZQbDhwZzdvcDJPb1NKMlBGWllYZnU3VFpvbEItRFpFbWVu?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal, origin]
+  source_type: social
+  note: "LLM 预分类建议(high):AI科研突破宣传，核心能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-openai-113
+  date: 2026-08-05
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "刚刚，OpenAI挖来黑客「祖师爷」！"
+  quote: "刚刚，OpenAI挖来黑客「祖师爷」！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tc3NSdmxZWjVsTWtFVXNCSGhJN2JqWDNROTVhWVp3UDJjdVdtd25GUG9FUWlYelVLSE5TUFNxNVJGNWF0bzR3SVJ0eGJEX1UwYjJoNnFR?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):核心人才招聘，组织能力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-openai-114
+  date: 2026-08-05
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI回应：我们没有也不想要他们任何商业秘密，更想打造创新产品和技术- 21财经"
+  quote: "OpenAI回应：我们没有也不想要他们任何商业秘密，更想打造创新产品和技术- 21财经"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNSEZaazJrZUE3TWdON0doMmc4NkFkdGQ4VWpiSlVNc0s4clNGOEdLdEh2bHFkalp6aUt4OFVLdFpFUzlrVllDMTJLSkg5ZHIxRFdMMjZETDNqMFhrN2xUMzBJbVY2YXR2Mi1aTGNJVVRISTJ5MWZzaEhyNXVjU05SZE1lRTM5cTBqYi13Sw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及商业纠纷回应，战略立场表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-openai-115
+  date: 2026-08-04
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI披露旗下AI模型在外部安全测试中突破预设边界"
+  quote: "OpenAI披露旗下AI模型在外部安全测试中突破预设边界"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTFBXbW9aaUhvcUZheXh3WUpKa21qcGZDTHlCSGJIYndWNVl4NkpzLWs3UU5xQjl6bHFpajFod21Zd0ZNRXNNUi1RbGppRWgwV0tuNURzOFBfa3B5WEEyZXRJeVpSOEFUa0FIQXQtWS1HNnctTVhXUnl2SllB?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI安全事件，模型突破预设边界风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-openai-116
+  date: 2026-08-05
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "打官司、挖人，苹果和OpenAI的硬件大战才刚开始"
+  quote: "打官司、挖人，苹果和OpenAI的硬件大战才刚开始"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9DOVk2TDlCSzB6bGhpVmZoQUlqMmxremc1NU90RDdmVVRvdXAwS1NaM2Z1dU9kMmVrWTh6Wktfb25naG9idHFKUlNSOFQ?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):竞争冲突分析，战略对抗信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

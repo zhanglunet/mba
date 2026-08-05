@@ -871,3 +871,64 @@
   source_type: social
   note: "LLM 预分类建议(high):开源大模型发布，属于AI产品重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-04-huawei-057
+  date: 2026-08-04
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei's E-band Microwave RTN 3800 Wins 2026 iF Design Award and Red Dot Design Award"
+  quote: "Huawei's E-band Microwave RTN 3800 Wins 2026 iF Design Award and Red Dot Design Award"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1EV25wbXlEelVOeXNCTXROUVpyaG0yWFJIN1B0X2pOOXdnS1IzV2dVZzhEY2UzTXNfY0hxWkcyVUs1S1pNMm9ROGJFYktXbTNrUWExRG5GX1B6MUEtMVFHOUtB?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布产品获设计奖，品牌认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-huawei-058
+  date: 2026-08-04
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "华为兆瓦超充卖得贵，抠成本的重卡用户会不会买单？"
+  quote: "华为兆瓦超充卖得贵，抠成本的重卡用户会不会买单？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xZUcxV3lzWDVSZF92RDV2Q0JydC1pVVg1dlduVkxTQmVrN1MzRFc2amFOT3c1MVJSY3pGZFY2RzJpT2dycThCS21GbGw1QTVTTFhQdlNfdnpodVJS?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):华为超充产品定价策略讨论，市场反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-huawei-059
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "鸿蒙智行发布“竹知了”相关情况说明- Huawei 华为"
+  quote: "鸿蒙智行发布“竹知了”相关情况说明- Huawei 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JZ3RTQ0tSWjRROEtwOGQwejBQZXM0Sk5KZV90bTM0ajZBNHVKd0R6eXVkZHlaUmFSaFVYdllSdURRSHVOOEFUbGJVeENSSTE1RTZBUlhQUGJSUk5SM185Zw?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):官方情况说明，涉及产品/服务相关澄清。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-huawei-060
+  date: 2026-08-03
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为鸿蒙 HarmonyOS 7 直连供电功能适配机型公布，含 Pura 90 系列等"
+  quote: "华为鸿蒙 HarmonyOS 7 直连供电功能适配机型公布，含 Pura 90 系列等"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgRBVV95cUxPY2JmWGhfekFzQ2k2R0stRWJRWlJKS3NNSElDU3hTXy13ckhLX091bUc2QTVQZDhNdE1CWENPQTYxcXdZMUpzakZjb2JSeDB4RGJXQ2pXSVBqcTZuWTl2ckNxbjhvRmNKZnB2T2dFYXJERURVQVhPaTVxb2xqWXl6REZIMWxDWkpwRC1Qd2JfWnpGTnU4bDhvcXc1NVI0T2IxQ3JZVlVrMk9hU3FaUHBHRm54bFFyLXlYT1ZZVFFoYUkzZzJmaDREbG90dXhXek8zUHpIaDVKWURNUWZnRWprZVpQUVFQbnNkVk1fQ0N5SzZJV1BVdkNfZm50bVlzR2ZMeFFTQ1REaWFwMTZDcWVES3hWTGpYVkxjeXhuQWQ5UTVaS1p1REJlY0otcXROT0oyUFZGVWpxcGVFUjk3VUtRUm1lSVRvT1c5ckxYZC1PQUJ2TDdoLVQ4SE9pdWt3M2JHVnc4NTVYTkxMYzJCRlVuQlU1SW5xbG5wR1RYUHcyQ3NtbHZqcVd5QkdCR3R5alJiUFAtQjlSTmg5cWUwaWtDTkxCNGttdGJ3MEZkMW54Qkh3STE5UU9VLWItWHhmRnpaNnRJU3RIZXA5MXRrT2FhZWJzem0zSHlNZzg5N3lGbWtVLW0tRFBlcUFDT05MS21PRlBIM1o1emh3T0I0cUl0UzFYY3RReWlHZW9pRXhIQUdaamVaZVE?oc=5
+  fetched_at: "2026-08-05T05:26:22Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):HarmonyOS 7功能适配公布，产品更新信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
