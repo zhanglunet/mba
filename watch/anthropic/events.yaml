@@ -1628,3 +1628,154 @@
   source_type: media
   note: "LLM 预分类建议(high):Claude安全防护承认不足,涉及产品能力缺陷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-08-04-anthropic-106
+  date: 2026-08-04
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "实测｜同一 Claude 多语言表现差异：语言如何影响大模型价值倾向（附 Anthropic 最新论文解读）"
+  quote: "实测｜同一 Claude 多语言表现差异：语言如何影响大模型价值倾向（附 Anthropic 最新论文解读）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFAtbEh4a3l0cUFhN210OERncnJkcG5wSng3WDJ6aGhIWEFwa2h5VzdXT0UwblNEWWxHRkxoYkpMY3ItN3B5OVM0SDdQTGNocG1WZkwyODlMTDdNM19z?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(med):Claude多语言表现研究，涉及模型能力评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-anthropic-107
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "模型厂开始背刺应用层，卖API，抄作业，抢生意"
+  quote: "模型厂开始背刺应用层，卖API，抄作业，抢生意"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hUDE1OXNETTZ1a1ZrOFI3LTZucUthaEg4NUhySDZZUzVGaGhTSFBWYkxnMk9HeTdsMklCekEwTVNwVWdaREwzcWxjUF9tdko3SmNFSU1WOVptMmpu?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):模型厂商竞争加剧，Anthropic涉及商业竞争话题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-anthropic-108
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic再豪掷100亿美元锁定算力，英伟达支持的新贵接单"
+  quote: "Anthropic再豪掷100亿美元锁定算力，英伟达支持的新贵接单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBiaTc5RFZxclFUZF9RLTRqNFpDdEp0WV91LVFKeUowcFdhU3pMMU9VN3Q3b2IxcTJ3TlNaVkhBbGtWQ0xmMGdPdFd0RHJLN2Z6UWJaVDljNTRxRHJ4?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Anthropic投入100亿美元锁定算力，战略扩张信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-109
+  date: 2026-08-05
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic确认组建自研AI芯片团队，采用“多芯片”策略支撑Claude扩张"
+  quote: "Anthropic确认组建自研AI芯片团队，采用“多芯片”策略支撑Claude扩张"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KMm40VExLOTdfRGc5RTRBYzdNNXM3eElqQVdLQWd5UkJwR2FtSE5ZZmVkOUx1R0R5cFViazdmS1FQTWVwVS1INU96dk9DdmlNdlZz?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic确认自研AI芯片团队，战略转向重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-110
+  date: 2026-08-05
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic首次公开确认组建团队 为Claude设计自研AI芯片"
+  quote: "Anthropic首次公开确认组建团队 为Claude设计自研AI芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE95LXNUUDhXM2dDZURPZl92U1EwcTBpaXRJVEU1ckpBcE1sLVdLeXN6b18zTUtXeTh6NE5NOW9HeFpiaVZEQU5xZmVWVGw5eWFVQkxaVGJTZ2RyYWNFVE9BdFBR?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic首次公开确认自研芯片，战略重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-111
+  date: 2026-08-05
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "摆脱算力依赖！Anthropic组建自研芯片团队 专为Claude打造AI芯片"
+  quote: "摆脱算力依赖！Anthropic组建自研芯片团队 专为Claude打造AI芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE92QllnZllsWjdMcjV4Yk1WbzhKLVNuSHhIeDVWMHJOamdMcmV1aUh2c09xOUVpVTFOSWdwSExfc3ZjbE02OHQtY0d3TVV0OXl3R2FKYjNxM3U?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):自研芯片团队确认，Claude专属硬件生态布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-112
+  date: 2026-08-05
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic首次确认：公司正组建团队自研AI芯片，专为Claude定制"
+  quote: "Anthropic首次确认：公司正组建团队自研AI芯片，专为Claude定制"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1vSGNPd2FBTi1VQ1ZabkxvSngwR3NCZGhBaDEwRzNLWWlvdnZNbi1kNV9ERnBsQmYtbUV3MTl5RVIzQm1DQ0FTOHpISkM?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic自研芯片团队确认，战略重大转向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-113
+  date: 2026-08-05
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "外媒：Anthropic确认正在为Claude组建内部芯片团队"
+  quote: "外媒：Anthropic确认正在为Claude组建内部芯片团队"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NSVI3di1MTVExcFlCcXlpVjA1Q2ZSallFNGtIYmVsX0l2NFZ0RlZrRU5KV2dDNlhZN2VxaVJvMVpydFE5d3hxVXNFTWM1c29WVGNvYTMtdTBQSS1KLTlXQTY4N0t5YWs?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic自研芯片团队确认，战略重大举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-114
+  date: 2026-08-05
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "消息称Anthropic组建自研芯片团队打造Claude专属硬件生态- AI 人工智能"
+  quote: "消息称Anthropic组建自研芯片团队打造Claude专属硬件生态- AI 人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Bd3JxSWZVRVJ4QjlpM2xoOTJSMVdMYV9Qd3Nabk8tcTRuV2s4RUU2bE1CWWpzeEZacmdoNlA5ZGNyUDlld2wwV0tuUGoxRnBCeUVYQW9ZSXg0RU5FbjE0bw?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):自研芯片团队确认，Claude硬件生态布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-115
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic与AI云服务新创公司Volta签署百亿美元合作协议-AI基础设施"
+  quote: "Anthropic与AI云服务新创公司Volta签署百亿美元合作协议-AI基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE9YSVdodWF3ckJVVW94SENiNDZsX3JyTEZtT203TTVWWU92RFc0YkVyZExKUEw5RWFvMjNhLWFCUzhQaTctZDBOVV9PRGJHRW1mSl9fTEFJdUZsdkhKb19zbm9hanFiWFFmeGFFWFA1QTA0QQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic与Volta签署百亿美元合作，融资/战略合作确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

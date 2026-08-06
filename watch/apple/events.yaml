@@ -1445,3 +1445,124 @@
   source_type: media
   note: "LLM 预分类建议(high):智能家居新品线战略发布，AI产品组合扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-05-apple-095
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "刚刚!OpenAI否认Apple挖角窃密指控,公开短信和邮件记录"
+  quote: "刚刚!OpenAI否认Apple挖角窃密指控,公开短信和邮件记录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4zM2g5UTE0MjRod0k0bVpHZW9mcS1HOHhmVzJWcDNTVmhKeXpGUGo0czl3cHpBbnl6ZUJ5emQ4UldHel9Bb05YamJSZnZ3VEhnX3RtRjBMb3pDNnpU?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Apple与OpenAI纠纷升级，涉及挖角指控，有法律/商业冲突信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-096
+  date: 2026-08-05
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果2026秋季发布会筹备启动：iPhone 18 Pro系列+首款折叠iPhone Ultra将同台亮相"
+  quote: "苹果2026秋季发布会筹备启动：iPhone 18 Pro系列+首款折叠iPhone Ultra将同台亮相"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hbUMzbTUwckNfS0NuZmI0SU1BU0w0N1JSMnpzRTB1Tkw0SS1nQk9BQWE5YUZ4MXhEWllEd3FXTGZYWnNkQWdtNThrX283V0J4dUZRbXdMRDZQZ19E?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(med):iPhone 18/折叠机发布预期，产品路线信息，但来自社交媒体传言。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-097
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "比亚迪腾势Z9S官宣全球首搭苹果Apple CarPlay小窗模式"
+  quote: "比亚迪腾势Z9S官宣全球首搭苹果Apple CarPlay小窗模式"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE4wR2hNRUNfQXlGeGRsb0ROV3ljbkthcENILS1NX01meHAtdFZoNEpab2N4d2hubjR1WTVFUmozZUhkbERYY19yemQ3Q2tPTEhiM1lzSmcwdW43VkI3NW4tTWwyVURpVVFocVZMVl9yS3d6dw?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple CarPlay功能首搭合作，产品生态扩展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-098
+  date: 2026-08-05
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "月租122元用iPhone，苹果官方租机是福利还是套路？"
+  quote: "月租122元用iPhone，苹果官方租机是福利还是套路？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTFBXNGRpcG8zYTFYWjYwRktzU01MaVFrOC1pOHAyR3NmYnpUQ1ZqTk05NDB4UGhsVllQaWpMdEVSdTBvSkhJcUdvMDV1bzZBSXdsQWtwSWFDNA?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple官方租赁服务推出，商业模式创新，含消费者质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-099
+  date: 2026-08-05
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "2026年苹果9月发布会：预计将推出iPhone 18、新款Apple Watch、AirPods等产品"
+  quote: "2026年苹果9月发布会：预计将推出iPhone 18、新款Apple Watch、AirPods等产品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOQlJTM195ZVFoQUNkYV82eUxPaTVoZXhoZVd3LVhvUTdLcUhIb1laMk9sbUdRM19TZFM1QnlWMFNmbWk4SkxUMUxKaFRCWGQ0b2NHYVJTSENuc21RZDBZdkltTGNILU5DeGVHNjR5NnRkVXV4NHlSenFnMDUxWE1CVkVjekpHUXFVRklyaQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):2026年发布会预期信息，产品路线预告，但基于传言。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-100
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果Apple Pay正式在菲律宾上线"
+  quote: "苹果Apple Pay正式在菲律宾上线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ0VVMy1WaGhFRmh1U2ZFbG1NMTFtSnBrZ0JpQksyWUdETm5vancwSUx6UkNLVEhoOU5hTWY3dUhMY19oOGloakZPQ2xoYVZzdGFPdkFHdDB5eDluY2x3MTZIRnM4a203U1YzR2VUMS0zZS1EVWNPSGlHbHFkMTZUSmd2d2hIaC0z?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Pay菲律宾上线，地域扩张事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-101
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI 公开邮件和聊天记录回应苹果诉讼，称“Apple is getting this wrong” - OSCHINA - 开源 × AI · 开发者生态社区"
+  quote: "OpenAI 公开邮件和聊天记录回应苹果诉讼，称“Apple is getting this wrong” - OSCHINA - 开源 × AI · 开发者生态社区"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE92R2xwb3VmUk1qWFBHSHhBU19pNG9veFdOMVpIenJzdHp4UklJaXBTZENvRTZZS3p5NXRSaG5mTm5GcEoxajRhYXJFamNadVE0MUFlelBsNWtJUHg5V2lmcm41cXI0OW4tdGxFRGJFSFM?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI公开回应Apple诉讼，企业纠纷升级，有法律冲突信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-apple-102
+  date: 2026-08-03
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "月供121元用上iPhone，苹果下场搞租赁，可能要“卷”掉中国租机平台一层皮_商业资讯"
+  quote: "月供121元用上iPhone，苹果下场搞租赁，可能要“卷”掉中国租机平台一层皮_商业资讯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5RWx4MnltLUttZ1lVTjlacmNndDZYdXBwOWJ3b3Nadk9HdzFpQUZ1RzU2Wi0tRDhybE5mZGJVdUN5UHZ3eEVsZzRodmFKN1NyMWVmbjNSUFNEb3FwanFsQw?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple租赁服务推出，商业模式创新，市场竞争信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

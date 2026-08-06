@@ -242,3 +242,19 @@
   source_type: media
   note: "LLM 预分类建议(high):学而思学习机产品投诉，涉及用户体验问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-03-tal-education-016
+  date: 2026-08-03
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "免费AI攻入教育，好未来们的护城河还剩多宽？"
+  quote: "免费AI攻入教育，好未来们的护城河还剩多宽？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5TTWEzX1FvcmRpYlg0RnNRZzZvdFZmZVVkQ3RXM0VBd1hUVlNfY3lzWDFsNU9hSHdNSEdmMlVfdEtYR1NrZ0JIeFROWUUyZw?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):免费AI冲击教育行业，好未来竞争压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

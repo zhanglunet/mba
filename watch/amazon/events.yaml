@@ -1188,3 +1188,64 @@
   source_type: media
   note: "LLM 预分类建议(high):Prime Video技术突破，流媒体竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-04-amazon-078
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon EKS 新增升级后 7 天内回滚 Kubernetes 版本的功能"
+  quote: "Amazon EKS 新增升级后 7 天内回滚 Kubernetes 版本的功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9RT1dXeE9OR1JpeHZqQ2NGNmRzajdSSDYxQjdkRm1pcHp2dGdrZG0wT1MzbzlBOUlWQmthMHdJV1pmamVxZjJGMHI4MjYtVTJ6UlFwbWVueTU5TG90MVE?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):EKS产品功能更新，技术进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-amazon-079
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊试图阻止Perplex ity的Comet Agent，但遭第九巡回上诉法院驳回"
+  quote: "亚马逊试图阻止Perplex ity的Comet Agent，但遭第九巡回上诉法院驳回"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ2pqUG0zY285YmExdlczZlNpTFFBT2k0V2xqVndiaWFGQ1gta3J2OGVRY21yRjE1WFQzSEg1UnFocjduV2F1bEIzaHNCVHRsamNkeTVCY2pHYmh6VlVMZ1lfNDVySW5JN0NZbVoxUTNfT25KaHlPZE5LSnVWYWlxakU0Rkx6WWhhOGZNal9PUlBnWTNTWmtxSlRNMzUzS0RqclZnZA?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):法律诉讼被驳回，涉及品牌权益争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-amazon-080
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊 Prime Video 成为全球首个支持 HDR10+ ADVANCED 的流媒体服务"
+  quote: "亚马逊 Prime Video 成为全球首个支持 HDR10+ ADVANCED 的流媒体服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1samZ5dE5zUUlKYXhLUlRhNXhnVUZaTnBWWDVXY1llVllHU0sxU1NPbXNaaVRESnRBalR0Q3V3VWNpQVVIYUtRMThxTmU4M24zTE9iTW96ZEVqRTZnclpiOTFxVVVvUjJBSmFQaUJsSzEzbUhLaTdjS0RXQ0NiYTg?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Prime Video技术功能首发，产品竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-amazon-081
+  date: 2026-08-04
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊市值首次突破3万亿美元 财报后股价再创新高"
+  quote: "亚马逊市值首次突破3万亿美元 财报后股价再创新高"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTFB4bXRHZXo1Yk52V19WVEVIaXk4N2VWaGxvd1hDZnh0OTJSSl8tMUJkbDl5angtTnowZXc3MlBCQ0M4dHBEeXhnMkxuamxyWG5mQlY3VTJlSnlqWFRZODRIc2VHVUM2WWh0Z24wMXlIUmNsNExXelFNdg?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):市值里程碑突破，重要财务指标公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

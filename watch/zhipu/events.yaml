@@ -362,3 +362,19 @@
   source_type: media
   note: "LLM 预分类建议(med):下一代模型GLM-5.3迹象，产品路线图信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-06-zhipu-022
+  date: 2026-08-06
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "美AI业界借力中国开源模型 网安引闭源机制争议"
+  quote: "美AI业界借力中国开源模型 网安引闭源机制争议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiyAJBVV95cUxOTVotTjhzRWkwMjhkR0JjcjAxWWZEQjB3WEFUM1RnX2NCcTFfMDJBcG9VMm9ib0V2Y2kwdWF0ODBFd2QzMU8wUC05N0ZWdGJzOTAzbWRjSmZCZ1o0Vl94ZGhMMTF3eWtVTndoYWZaTHlRb21mM091dFdJaEw1Sk02aXoyRXVUUzRrS2ZnWFQ4bGVVanlOVVk5Z1dfVnRoblQ1OG51Q1UzSUF2YjV4NzZUTEItazA4dlBCYXdvYWQzRjFvZGNVNF9ISkU4Z2lzVG5OQnRfd2Z6YWk5MVdUa3lLQmgwMnd0T19vVE1JZjFBS2JaOXJXVy1JbXZQQnFDOEhJanIyalRDRGpQMUFLQVkwb0RXbURNZEhPMk1NbTkzT0FEcElnZ0hIQ0tob0pQZnFkV2FPd2lOc3JNdHo3SllCTDdkX096ajlJ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及智谱开源模型被美国采用，网安政策争议，行业影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

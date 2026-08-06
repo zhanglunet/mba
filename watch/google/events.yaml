@@ -1370,3 +1370,109 @@
   source_type: media
   note: "LLM 预分类建议(med):TPU规划传闻，未官方确认，属战略信号但可信度有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-05-google-090
+  date: 2026-08-05
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "The next chapter of our AI momentum"
+  quote: "The next chapter of our AI momentum"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQcFZsVmdKNHhSVnQ0VDZwRXY1VmZWQno1V3MwUzMxM2VJMW5UeFFmODZXa1VDcXVBS0dOMldjY0dwcTI1V05Pc0hHUzJWcGFzMnhVMnlVLW96U0J1ZjJFQWpQVENFdnRvd0dNUFpMU003dlFlbWhSQUJDNG9qX3ZkdmJFeWloYnQ4VmNVeQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方AI战略宣示，来自官方渠道，重大产品/战略方向信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-google-091
+  date: 2026-08-03
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Jeff Dean最新访谈：基础模型越来越强，小团队如何与谷歌等巨头竞争？"
+  quote: "Jeff Dean最新访谈：基础模型越来越强，小团队如何与谷歌等巨头竞争？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Da0JUb1JWajE4dURzbnlNRFR6VEdBekZDZTdhaDlsczZ6TXRUaW9EajRfaXFiY0c4YWpQam53X3h1M1NETVZMUzdUNVFSWFkwRkxiTkF4QlI4V041?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Google高管观点访谈，涉及AI竞争态势，但主要为个人评论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-092
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌「地基元老」Jeff Dean 离职创业，新公司瞄准 AI4S"
+  quote: "谷歌「地基元老」Jeff Dean 离职创业，新公司瞄准 AI4S"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE55OWs4X0ZjTkZjV3MzRFB5aVM4SFlwLWJib2hrbG44NmFuZ2JFZlFHcWtWVE1xanlZVWM0a0RvZHFBM1lQdXFQNzNEZGw0SGVrekl3MDNzRzN0NTRYZlZMLXA5dmxaNGhESTdVY3p0UlpDYVozVjgtRklDTUUwQzQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Google核心AI科学家离职创业，涉及人才流失和战略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-google-093
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "哈萨比斯卸任Google DeepMind CEO，谷歌股价下跌"
+  quote: "哈萨比斯卸任Google DeepMind CEO，谷歌股价下跌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUDlHRnlCX3RrUlUwRTlQVWJzck5mOHFXVmVnR1hyN3huR09uWE5WbWRUamN6RWZtVUxnanRpTzlyMmFGRHB0cnFvZmNWb3lDRGV0UExUZTVma2xHdmgtVWNZM29VVTdRYVl2ejIzdS1nczB4Z2V4SzZTNWZzV0duZFp2M2lmcjBI?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepMind CEO卸任，核心高管变动，股价下跌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-google-094
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Jeff Dean 27年Google生涯落幕，携三位顶尖科学家离职创业，Kavukcuoglu接棒Gemini 4"
+  quote: "Jeff Dean 27年Google生涯落幕，携三位顶尖科学家离职创业，Kavukcuoglu接棒Gemini 4"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5fNTdpbU1nR0pwanBaem1ycTAwVE1UY1FQT0tKMGpzTHJfeTJISmhLZm9EV0J5blZjM3dLSlQ5S3lpZTVPZURmeWt0enUwc0JYZjhJ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Jeff Dean等多名顶尖科学家离职，Gemini产品线领导权交接。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-095
+  date: 2026-08-06
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌将于下月停用安卓设备上的 Google Assistant"
+  quote: "谷歌将于下月停用安卓设备上的 Google Assistant"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5SSW5iY051bG16UDMwTkhQSm5zVVNHUEFCa0R6b2JhRTRwWExfbjZtTWd0WFRIazAtdmxnRng3WFctN1BwMkNGN056NllPUTZrMHFOYXhXcVlqakhNbXNTb2x1U3I5Zw?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Google Assistant功能下线，产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-google-096
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌AI部门大地震 多名大将离职 股价跌4%"
+  quote: "谷歌AI部门大地震 多名大将离职 股价跌4%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgJBVV95cUxPamRzaUNvMnNSU3NaZWFPUnZ0dFVUdDFEUDQzSWMwSGN4bWUzQ2JCc0hzRkowZEp3QTkxS0xTX2tFSllCTjJVMGFkbU40SHpCUFYtVzlpOXZ1RXhOVmVEcENoWjE0QUhxT2prUFN1SlBxOGRNMjNFUnJYN2hFZTYyalZzODdIZ3AxRks5UUwtMzJzUlVpSHI5WjlOa29ZS1pjT182dGtLZWM1UWhVVE1lRmNuQ3VKVW5kalhzU1FjLW9yTHpKdF9Zd1JBRWpyaV9hQWJTd1p4eUpSVS00RVRjRVc4MmNxSUxORkNWS2ttNUcxRjBxM1pIbEVWSkZDejVvWDlnY1BYS1BYSFAxWkRjb0Z1SEVsU2Q1UEQ5RUY0eElTV3VuLXc?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI部门多人离职，股价下跌4%，重大人事变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

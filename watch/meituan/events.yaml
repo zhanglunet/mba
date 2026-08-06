@@ -752,3 +752,34 @@
   source_type: media
   note: "LLM 预分类建议(high):美团AI战略叙事，核心业务方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-05-meituan-049
+  date: 2026-08-05
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "美团外卖员朝餐食吐口水？湖南通报：系摆拍"
+  quote: "美团外卖员朝餐食吐口水？湖南通报：系摆拍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE9sbXJuTU9QYnExN1A0bjYyRVlTcEJTUWFlYXhhN3BLTG5ZMFA2bnhyX0l6VzNsMV96RGJfOHZqLWJ2bm9CN1J4b2UxejFyd3NNQkE?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):外卖员不当行为指控，虽系摆拍但涉及品牌服务质量与信任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-meituan-050
+  date: 2026-08-04
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "美团：AI产品Wow尚在试用阶段- Futubull"
+  quote: "美团：AI产品Wow尚在试用阶段- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxNOG8wZm84Q1JRbm9ILV91U2JXYXF0a0JEU0pmQzJObWFyc3ZoNWFLSUlzaTFwenJKaFBpaHdaR2FUbTRHVC1vT1dDSG9MdkZBZ0phMDloYndzTFpQcXJXY3NLd1lJcTY5c3h1TjZDNmcyUFd5OG5DUF9CYXJzTXFhNnZ3QWI5SDJBNUttWF9rYjdpVTBW?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI产品Wow试用阶段状态更新，产品进展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

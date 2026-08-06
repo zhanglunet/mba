@@ -1813,3 +1813,94 @@
   source_type: media
   note: "LLM 预分类建议(med):竞争冲突分析，战略对抗信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-04-openai-117
+  date: 2026-08-04
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "New ways to learn and teach with ChatGPT Work and Codex"
+  quote: "New ways to learn and teach with ChatGPT Work and Codex"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9GV1MyNmtiTnBOV2JLaWpxQWJad2doUFB3ZmRVLUlOdUVrSkE5bDNGblNWZklQNDBiOGo3NGpTNTZ1YVZJMHBPRU5YNExpbWNzeG9kazh5MFNydUY5UGdFOExQby03SEU?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category]
+  source_type: official
+  note: "LLM 预分类建议(med):官方发布ChatGPT新功能，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-openai-118
+  date: 2026-08-04
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI正面回击苹果诉讼，公开邮件及聊天记录否认窃密指控"
+  quote: "OpenAI正面回击苹果诉讼，公开邮件及聊天记录否认窃密指控"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NdHh0SW5adVNUbm1qX2IteFFVU3FBbnNOZm9KczNHY2tHZUViNThKM09yUWU4NmdHcEN2ZDZlQzRJOWYyM21rUjQxUVkteXJRclI1T1Bsc3NhN0lV?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):诉讼回应，法律纠纷事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-openai-119
+  date: 2026-08-05
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI 揭秘 GPT-Live 全双工流式架构，WARP 显著降低WebRTC 启动延迟；腾讯混元Hy ASR 3.0 发布：支持上下文纠错与方言识别丨日报"
+  quote: "OpenAI 揭秘 GPT-Live 全双工流式架构，WARP 显著降低WebRTC 启动延迟；腾讯混元Hy ASR 3.0 发布：支持上下文纠错与方言识别丨日报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE8xU3FSRlk3WmZxMC1LaEtlZVZSM3ktRWFTa3o2WmUtal9EYzBrRllFS1lGM04zdXNpVWFQd3NnN3FkTjMyeUNhWlZ2NE00OWJtUHl5UERGV0c0QzNP?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):GPT-Live技术架构发布，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-openai-120
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软最新披露显示其AI业务收入主要来自OpenAI"
+  quote: "微软最新披露显示其AI业务收入主要来自OpenAI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5VVmZPOXY3c1kxa2ZXRW56N2NNV3JxOWlnVHdkaHZQV2hzNlVDeERkTmJKd3pmbkFZQTRwX2d3OVdEYWJDeWM5Z01MUE1qS08zemFkQzdFY0RCa1Q1eG5vQQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软披露AI收入结构，涉及OpenAI商业地位，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-openai-121
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软七成AI业务营收依托OpenAI合作，收入结构牵动行业估值"
+  quote: "微软七成AI业务营收依托OpenAI合作，收入结构牵动行业估值"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNM2taOUZUcEdjUi1QZ2NBNWNhVjA0SlRkaWFiMVFQYW15WXRiVS01dk5PeWNvaUhpTjg0UUhXTS1uRDhmTzVtQm5Iay1vVmtsZVZyQ0FBUXJkVHprNlRkRThPLS1VR3FkZy1kWllLTkFTNnZuVktOSFBWX2tkUDNTd1pmZnFkVjVHcEFFNg?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软AI收入结构披露，涉及OpenAI战略地位和行业估值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-openai-122
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI透露模型失控细节：多个智能体联合“作弊” 5月份就相互沟通"
+  quote: "OpenAI透露模型失控细节：多个智能体联合“作弊” 5月份就相互沟通"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5UUmZDMUVqcDZleGRrU3RxaWxJNjR2OHFQOG9zczNqTFdOWVgwX3JXT2hNY1NzamI0ZHlIU2otRVpxNFBpUUdCTg?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):模型失控、智能体作弊行为，涉及AI安全风险，需关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
