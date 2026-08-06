@@ -645,3 +645,64 @@
   source_type: media
   note: "LLM 预分类建议(high):南向资金净卖出超9亿港元，反映机构态度变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-05-lenovo-042
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "热门板块速睇：港股脑机接口概念走强，联想集团领涨"
+  quote: "热门板块速睇：港股脑机接口概念走强，联想集团领涨"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ1ZSOThWZVNqN1YyUlZLQ1d1b2o5aEdjdmNuVlgtbEtQUFh1M3NUZ1pUMHY2eVdpeVZldjExeUlMNnFjOC05TlZkN1d1bjQ5M3pWTTAxeUNBd1FzWFN5dzdYMlZHY3M1WUNxdXJDdW50T1k2TlJVdm00NDRvcWFEN3VQUjlsOHViVkV0aVlSM1dvNGJ3Nk9wOFIzeHVITGhoaE1Ld180OG9SQUxuSXlKNXJR?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):联想因脑机接口概念领涨，市场信号积极。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-lenovo-043
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "港股异动 | 联想集团(00992)涨超6% ISG板块利润率中枢或仍存在明确上行空间"
+  quote: "港股异动 | 联想集团(00992)涨超6% ISG板块利润率中枢或仍存在明确上行空间"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxPdGhyYWRiQTBjOEFTbGJJWFE2dHlmNXU4SXBNUVRLSlRfQUVWREsxOUFvbEJjdlladEV3SkkxREx2SmNaR056T1p1RC1oOXdqZkVCbFBkNFV6ZVBvS0FTX1A2Qi04Z0lWUW4yeUpERkdQeGtiQ3V0cHdQdDZ6cllBN2Myam9mNEV2WDJNQS04bVV0OTFMY3RkYk5MZw?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):联想涨超6%，ISG板块利润率预期向好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-lenovo-044
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团财报前瞻：调整后净利润或增近六成，ISG进入利润兑现期"
+  quote: "联想集团财报前瞻：调整后净利润或增近六成，ISG进入利润兑现期"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxNOUFRSU1zclN1TzJkdjlmYzZGZHFvYkthaDFjMWJFTlotQVFhd2lJU2VKbHVtU0Q5cWJISzhidUJnYzcxQTBpMkVQTEpXTlFXLWZYbXVFMHYzTndXQlN1ekh4eHJ4ZHhBSnBpdXVKMzlQbGNGY3p6dVdNOHdpOXNrX3kzM1RvUXZ0TExqbU1LRlFld01idUJqUzFTa1pRZHJGdmNKWl93?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报前瞻，净利润增长预期明确，ISG利润兑现期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-lenovo-045
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "摩根士丹利看好港股科技修复，联想跻身长线资金前50大持仓"
+  quote: "摩根士丹利看好港股科技修复，联想跻身长线资金前50大持仓"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxPZnB4ejdZSG1mR0tKTzIxMVp4Ml9CM0xadTlQZ2NEeV81TlZQZjI0dWNwNS1tbzN1OXhOZHFDejVzdkVjVjZMSEJkSUdKX3lDX1dTNlZ2ZUoySzVQV1hHTGpUM05pdzExXzlxZktZRG9NZVQ2S085SEM2eTNUSGQ4TUxJaVBrSy10MHJFcVkxVFk5V0k3cXRWVnZaTQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):摩根士丹利看好，联想进入长线资金前50大持仓。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

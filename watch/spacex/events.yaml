@@ -1513,3 +1513,109 @@
   source_type: media
   note: "LLM 预分类建议(high):首份季报，营收翻倍，AI投入引发股价波动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-04-spacex-099
+  date: 2026-08-04
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX 首份财报出炉，第二季度营收达到 78 亿，同比增长92% ，有哪些亮点值得关注？"
+  quote: "SpaceX 首份财报出炉，第二季度营收达到 78 亿，同比增长92% ，有哪些亮点值得关注？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE54VFhud0s1M0xxR1l0ZDJ5YkM5Y2paM0NGaGs3ME05TWtQRTVfU2dUMWFybXBYT01paEpkbkpQZFhOX29zcTdqVGtjSUhRdXQ0QUd3NGVCMnNuZUpJT2Z3?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):首份财报公布，营收增长92%，关键财务数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-100
+  date: 2026-08-05
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，SpaceX、英伟达宣布：AI数据中心要上天了"
+  quote: "刚刚，SpaceX、英伟达宣布：AI数据中心要上天了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrMzlKTzE2RG1pZkRpTXlMUTYzYW5Ec3BSQnZrazFwWGFPZ1oyM1BXWjNGMnA3NmNaYzlzdmYxN29CSW1wMjNnb1lCeW4zLU1rUzNEbmo4d1MzWlNL?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):与英伟达合作AI数据中心项目，战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-spacex-101
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX首份财报出炉！营收暴增92%背后，星链赚钱、AI烧钱"
+  quote: "SpaceX首份财报出炉！营收暴增92%背后，星链赚钱、AI烧钱"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9RS3AzNW04amRwbUNCbTY3bzJvcDZVb25rRl9ienNYN3pWTVdzcUp2N3JUZnpOUS1qUlU2WEJlYkJQSEd5bTU2Tng3Ni1Tb1Q4dTczaWZHV2pZcWVs?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):财报解读，星链盈利与AI成本分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-102
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX股价单日暴跌14%背后：机构抛售、散户接盘"
+  quote: "SpaceX股价单日暴跌14%背后：机构抛售、散户接盘"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5zQW1OeURVanpsYTViT1RnSnVCMzVVQjRod2VmeTYxdFNTakUyajcxWl9FMENCdHZxdmZtM2FvRzcxMVByUjJpa0pZalU1MDRYVENB?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价单日暴跌14%，机构抛售事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-103
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX赚钱了，市场却慌了"
+  quote: "SpaceX赚钱了，市场却慌了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNazV6VC1hMlVZeUllWjFqOG8zcWJPTE15RUloRXYtVk12VG5qWHVtN2RXcThQOW9vM0JKT1JkYUVaaVFlUmJLVXE4SGtITEdENHlDbXNLV2pvZlRWdEtQWFB1eFZyMGE2eVdJWW5UUnFpbUlfQTlDNGlqTUZsUlY1QWJaUFBMV1ZJdW50QQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):财报利好但市场反应负面，舆情转向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-104
+  date: 2026-08-06
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX火箭殘骸撞月 预计掀起月尘羽流"
+  quote: "SpaceX火箭殘骸撞月 预计掀起月尘羽流"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5wbTRNeDludE1YWjFSOW1jaWhiQ0tWZ1AwN010cW04TG9pUzRQTUFKLWhfd0hLVld1UDRIVVJXRVFxb3dHOEFsSTZ6N3ZraEkyb1lZ0gFWQVVfeXFMTko0eV9QZGN6aFRzaThNWEdQSjlGU3JVN2h6M05QcHVMWS1KOWVqM3p6dFV3WXpfbm52OG4wTS1seVFrN1V1WW11WUlyeXdNRHNKeDRJelE?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):火箭残骸撞月事件，运营安全相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-105
+  date: 2026-08-06
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "国际丨SpaceX火箭残骸7倍音速撞月球，砸出直径30米的坑"
+  quote: "国际丨SpaceX火箭残骸7倍音速撞月球，砸出直径30米的坑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE8zTnE2SjlrQnVvZF9XZFhQQ1ZpcUtJUTlQeHVKY0duX3dIaHFqWU1EQVlGQW10MG0yM1BYQWpKS3FxYW56U2VUTDVoXzlxQ2p4T2ctZjBLM0l6T1JSNndId1JYUGI?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):火箭残骸撞月具体数据，运营事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

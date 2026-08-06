@@ -580,3 +580,19 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕品牌历史与发展分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-03-hermes-038
+  date: 2026-08-03
+  dim: W6
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Appointments to the Executive Committee of Hermès International"
+  quote: "Appointments to the Executive Committee of Hermès International"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxNc0pGazN1NXRPTDdZNlhFY0JvbUlpS1BWajRsV29EN0hHcU5ZOVBGMFJ1U1p0UzBrMlVtMWNTQ3JsekxXSjNaUDJYY0ZMdUlzY2FyWGJWZWh1YjVja2FZa3psRU9JcnJVQURmT2FfRTNzSGlSS1pCU0ktU09rU0R3bWEySklBdzl5d3VDY1NZTkJjbTNzM2pHQW5xcnYzZFVnbTllT1ZORQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):执行委员会人事任免，官方公告的核心高管变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

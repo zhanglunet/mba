@@ -250,3 +250,19 @@
   source_type: media
   note: "LLM 预分类建议(med):产品发布，AI平台新品，行业升级方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-05-asiainfo-016
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亞信科技：派發截至二零二五年十二月三十一日止年度末期股息- Futubull"
+  quote: "亞信科技：派發截至二零二五年十二月三十一日止年度末期股息- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxQX0wxQUNfYklfaU9fNFFTWC01eXBkOHRzRVRJUGlxbHN3YzFmRUs1Y0ZaNjVMT2pSOERsRTRSWmdacmFrMXNrSkRFZnloemVvRHIzMlFfWlRPZGFfMEtaZVFrdXl2RTItMUNhVFREa29oLWV6bjFDTTI0X3piYlNQYnVkcV9MQVJPS2V2ZUc1WWJjV2ppZ1lEdE1yd2xQb3BZR3I0ag?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):上市公司派息公告，财务信息披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

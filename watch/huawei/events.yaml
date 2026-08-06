@@ -932,3 +932,94 @@
   source_type: media
   note: "LLM 预分类建议(high):HarmonyOS 7功能适配公布，产品更新信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-05-huawei-061
+  date: 2026-08-05
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "华为全新旗舰MatePad Pro正式发布 以轻薄重塑平板创作生产力边界"
+  quote: "华为全新旗舰MatePad Pro正式发布 以轻薄重塑平板创作生产力边界"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE8yWEJhOWxvdFA4azZ0RXhZR3FQeVhUQi1EV0ZzN3dnRlZ5cFp6dXV2WG9yTHEzbjZ1dGpwNWtLbFEtYXltaloxWk5Fd29RUThTNUVMN2s2M3pQamly?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰产品MatePad Pro正式发布，重大产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-062
+  date: 2026-08-05
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "华为MateBook Pro S发布，以防窥屏将轻薄本数据安全推向新维度"
+  quote: "华为MateBook Pro S发布，以防窥屏将轻薄本数据安全推向新维度"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oWFNhbUttTFVrTm1FQlIzaTdLLVBHWUNNQ0NGOHlPbXdIdTVwRWpVLWZuYU8wLUNzQ1BNV3hkM05wYnY3Uk5WMWY1UTlLazJ6d0hua2w1QlY4Tjlm?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):MateBook Pro S发布，旗舰产品重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-huawei-063
+  date: 2026-08-06
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "尊界时代旗舰MPV及华为全场景新品发布会召开，多款重磅科技新品发布"
+  quote: "尊界时代旗舰MPV及华为全场景新品发布会召开，多款重磅科技新品发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNZVZUSmlzX2RNaGEwNUtBcWlWVGlfSHJ6N0xhZjRPb1NzNHY1V0NiY1BqdWxVZnZGYnoyNkY4d1llODVKcEd6OHoycXdtWUsySF9US0M5NDFPQk9MSzNXdm0zMi15M2tJVGQ3a1VBaTFqU1dQZGxwV0UxTEhmYU96aDFTUlBLNWl4LU00aA?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):多款新品发布会，重要产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-huawei-064
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "全新HUAWEI MateBook Fold非凡大师发布 巨幕书写打造折叠电脑巅峰体验"
+  quote: "全新HUAWEI MateBook Fold非凡大师发布 巨幕书写打造折叠电脑巅峰体验"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE9qS2FNQ0lGbDZzc21CVnFpNExVeTNxX2hfMjc4LTZNWGtFM3lzamcxblJPUUhjQUl5dUEwLUV1WEJCOHlaSVVPc0FtbVY2N2N4TnJneVhKZk9udWhmTVBsOW5QWjVhaGg0c2VZVktn?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品发布，折叠电脑新品上市。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-065
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为发布3款旗舰级鸿蒙电脑，Matebook Pro S首创灵盾防窥屏"
+  quote: "华为发布3款旗舰级鸿蒙电脑，Matebook Pro S首创灵盾防窥屏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKU2htWi1PWjQ3bURhTlJiZ01fX0pkaVNqeEZ0eC1XZ0wzM1N5Vmc0eGE4dFJlU0FQUVh0LW0ybHROVHotdkpiNUVRYnVSUXpyUTA1M1BCUENyaU0?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰级产品发布，多款MateBook新品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-066
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为nova 16 SE发布：8500mAh电池+红枫镜头"
+  quote: "华为nova 16 SE发布：8500mAh电池+红枫镜头"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxPTW90a1ozbTlKS2EtNklLYzBRS19lLUNEc3hRZ0Z1RTlNc1daV3NTSkd1aWpnODZnWmJ1Q2ZvUXNhLXJRSUlQdm5GQ1UtSDkwWHBYNUZDOW5IZmUzN0JESXJWSVA1Y09Kd0RCUzEwaUpXZGFtMXoyS3huY0NMZ1k3bFhR?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):nova系列新机发布，中端产品线更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

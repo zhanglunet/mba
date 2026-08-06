@@ -1261,3 +1261,49 @@
   source_type: media
   note: "LLM 预分类建议(med):竞争对手TPU规划传闻，对NVIDIA市场地位的间接威胁评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-05-nvidia-083
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，SpaceX、英伟达宣布：AI数据中心要上天了"
+  quote: "刚刚，SpaceX、英伟达宣布：AI数据中心要上天了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrMzlKTzE2RG1pZkRpTXlMUTYzYW5Ec3BSQnZrazFwWGFPZ1oyM1BXWjNGMnA3NmNaYzlzdmYxN29CSW1wMjNnb1lCeW4zLU1rUzNEbmo4d1MzWlNL?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):SpaceX合作宣布，新业务方向，具体商业合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-nvidia-084
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX宣布独家采用英伟达GPU，斥巨资构建10GW级太空AI算力版图"
+  quote: "SpaceX宣布独家采用英伟达GPU，斥巨资构建10GW级太空AI算力版图"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5IV240OXpiZF9HSlNLRlAxT0lqRTNrRE00VVVPaHFfZGdyNlo5YkloajdQUVhRMklFdFUtdGNTUGhWbjBjSm80Z1l4cEduaXNYRDNsa185OVdjc3lweHh3bGF0QWdBc3Z3ZXVIMUJWZlRuQjJDVHBVQl94SHRpa28?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX独家采用GPU，大额商业合作，具体业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-nvidia-085
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Nvidia开源cuFile API，大幅提升GPU高速存储读写性能-AI基础设施"
+  quote: "Nvidia开源cuFile API，大幅提升GPU高速存储读写性能-AI基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE1FazVaOVdJekdxVVlycnFjc054Rk1VSHo4WC1qOWZYSlBmaEc4TGw0YTBUZm1HN3ZLX2l1MGd2UDZoa2Nkc3dMZ2hNai1mX1NxQVl6RVl4VUNOY0VjaFh6YmVla0hxQnRyTmU0aTYwaWlqdw?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源API发布，产品功能升级，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

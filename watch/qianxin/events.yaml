@@ -172,3 +172,20 @@
   consumed_by: v2
   lens_map: [leverage, category]
   note: AISOC/QAX-GPT 商业化落地(医疗行业);日期以 URL 内嵌(20260520)自证。
+
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-05-qianxin-012
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "奇安信2026年中漏洞报告：“高危+AI诱导”漏洞激增，攻防进入“小时级”时代"
+  quote: "奇安信2026年中漏洞报告：“高危+AI诱导”漏洞激增，攻防进入“小时级”时代"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBMR1A4RlUwS0FaN3hTZXhYZ3dYV1dxcGk1RzBWcldkZ2tyZXJhejV1NmlmVTBudGpOaTFncHF4ZG91YlFzZnNPcVJSWEtYX2VwZlZiQzNwVUlaU2hvb2c?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布安全报告，漏洞激增预警。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

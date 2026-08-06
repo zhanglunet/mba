@@ -1276,3 +1276,49 @@
   source_type: media
   note: "LLM 预分类建议(high):马斯克澄清合并谣言，驳斥假新闻，舆情管理回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-06-tesla-084
+  date: 2026-08-06
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉成本低40%，Waymo安全高7倍，美国Robotaxi市场将迎来双巨头大战！"
+  quote: "特斯拉成本低40%，Waymo安全高7倍，美国Robotaxi市场将迎来双巨头大战！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxNVENrWENmZ045XzQxQU1XZ3FJRmc0b3p1QXFFTk1CNjZBLVF2T3p2YzNMREtfN1pHRU52TnRWUmxlWFdyU2V5VzhFN0d1R0prcGN5LVhKTjRxNGtKZ1NkR29LenpBVXVVemlnSENqTGFuMThyY21NQ3VHaUlFeFZYb0hIQkV4MnZNNGhHbGs3MA?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):特斯拉与Waymo竞争对比，涉及自动驾驶市场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-tesla-085
+  date: 2026-08-05
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉(TSLA.US)将扩大其在日本的虚拟发电厂单元"
+  quote: "特斯拉(TSLA.US)将扩大其在日本的虚拟发电厂单元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxOckI4dzFyUEhyY0twZG5JRXdCTmRIT1M3bnRDUkloaFV5QWZIX3NxOEhDcnRCSFBSWDAzR0dpUTRhN0JRa1AybVJDd3hMSEVjZVMtMFMxSlFxNldZSkhGSFlTWXJpczdjeWl2djNuQ3Y2enZfd2Y2RjlJRHNkeFVyanNZdHk3WHFHTWsxQl9uMXhsTkYxZkkwT3ZyQV93cEU?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉日本虚拟电厂业务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-tesla-086
+  date: 2026-08-04
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉全球第900万辆电动车在上海超级工厂下线- Futubull"
+  quote: "特斯拉全球第900万辆电动车在上海超级工厂下线- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxQUEgtcEFrREhVZkhhV29OZkI5Z0FvR1hVQTVab19Hd0tST0M0SkM2YVRSeUQ3aHJ4RkVJOUJsMlFROEdPOW03NThWM3duOWZIZGdmMGs4bllfMF9DUVJGaFZvS2FwMlpPLTNRdlBrZ0wtLVBlWElvdGtIRzZuVURaS0Q5dldoOHNhRjVyajBVa1ZrQ1h3QnBVQXNhZ3JrOElROUFNU0NIWQ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):全球第900万辆下线，生产里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

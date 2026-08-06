@@ -173,3 +173,49 @@
   source_type: media
   note: "LLM 预分类建议(high):收入飙升93%，CEO竞争态度表述，财报核心数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-04-palantir-012
+  date: 2026-08-04
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Palantir第二季度业绩超预期，上调指引：印证AI软件需求强劲"
+  quote: "Palantir第二季度业绩超预期，上调指引：印证AI软件需求强劲"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE90elNVRTFrVVc3V0JNVTMxVXAtSkJqcHZ2d3B4OXl3aEpyeXdGaXFnVWJBWjNRaUhaeEQyRDlUWl9GbmptNHBIWlJzUUtmN2x5aTd6S1JQMWdQWVNrYlR4dmlCZ2VLUnhTOTRZ?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2财报超预期+全年指引上调，财报关键数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-03-palantir-013
+  date: 2026-08-03
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Palantir Q2财报全面超预期大涨15%，AI需求强劲推动全年指引上调"
+  quote: "Palantir Q2财报全面超预期大涨15%，AI需求强劲推动全年指引上调"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbjQxS0VvMm03UHdyM1JYSEEzdjNDd3NsZ25nbVd5MlpvZkU4QUQwWWtBVTVQOWRQSGZWWnoyWTM5cHJ3Q1NZLUZNQ0htSEpCdzJRdU1odE5IakpweG9PR2tBbW5ScEhjUkZfWTlZM1BoZ2dDRXRoeWZLNjktZkRhTk10alBGZjd3ZmJxMHVtYmV4alJEWkY2QlRyZGc5VzVrMHA3NHl2TlNqbTNnNnVDRnhPMnQ0WGJfQzVPWDRNZXRzdFNTT3dhYWdkdnF5T2VkVmc?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2财报超预期+全年指引上调，财报关键数字。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-palantir-014
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "帕兰提尔预测美国企业对其人工智能软件需求将持续上升"
+  quote: "帕兰提尔预测美国企业对其人工智能软件需求将持续上升"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxNZTlrbEYxekc3YkYxQUJ3Q0k5MmcxMGlKQlZXOFZIVHhyLXZIbkRmWVc4OV90eGVSTGFnU25iUUhfTXZPaTlFNkR5b1pjM0JFN0Z2NTlyc3BTbE13dHpOWE9TUjRLdkRQMmlsUTJ0WmoxUF9ldTZiU09HM3liOG5iSWVxckR2dkE?oc=5
+  fetched_at: "2026-08-06T05:28:29Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):帕兰提尔官方预测AI需求前景，战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
