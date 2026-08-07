@@ -1754,3 +1754,34 @@
   source_type: media
   note: "LLM 预分类建议(high):K3技术突破，超大参数模型性能。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-04-kimichat-115
+  date: 2026-08-04
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面最快本月递交港交所上市申请 或募资30亿美元"
+  quote: "月之暗面最快本月递交港交所上市申请 或募资30亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi4wRBVV95cUxPVXNEeEg2enlySHdHQW1TRE13bmh4cXF3SXY2aWU5WHVwVi1xYUNIOGI2b2FtalpaeWhpY0hxTGtZaWlqS3JvMEJ5c2xraTFBOVFJWEJoZ0JoOXFkN25PSG1CTUtmRnZTT3FEQ19Jc2RuMF9lUEdhbVRwQ1hBSVVub3ZrRXl2LTh4bTIyY0x1SnQzVTFGMEpCZW1JQnBCM3J4d1VpU3BoWlctVzRlMjRjQnZIT0NUakdmYjJ6OVM0X2UzeW1zdTY0N0c2cUxZTVMyUFhUb1NVRDJVSkJPalQ4YXQ1N0JNQS1tZmEtaDJpUnVHT3U3UE53ZXphd1doUnhkLS1HR0EzUHVVX2tQYnJVMElHMDF2ZWthVXFIemFsamQ0R2wwNjR6a0oxMWluSzBqLVNUc2JZLW9BME1sMXhlMG90dnlxdmt3MUFKS0FEandkblFqbzYxZjBoS3B3YWdBWkR0anZfMGNpSUlGQ1JtbmpOc2Z6QXFfcGdmSExoUmhYWEtLUUVLUXRST3Nlcl9ZNGlaTTdEQ2tLUlM1WExpYzZXVUIwX0lQaXFud0YtSzBrQVlVUjRfd09LTDhZNUpWYWFjemJEbzRWcXFWOUdfVFlaVnBsWkI2MElNdTZSaHpRMTVYNFNpNE1MWm1KUWI4elQ5ZmJzSXZjanFqVUxGUnJUV2V2bVBocTVXZDFLajFrbG1PS3ZLMnB4STRmOFJYQ1poY3ZldjhfdTVhcmRlZHZuWmFCRFBmYzBQZnRISXVxWDhjMTBjcThuenltQ1NmcGVCdDZhTFlWLVVsQU9aa2diOA?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资/IPO重大事件，金额明确30亿美元。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-kimichat-116
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "“最早本月申请IPO”消息不实，月之暗面估值冲向500亿美元"
+  quote: "“最早本月申请IPO”消息不实，月之暗面估值冲向500亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE82b1pDNXViaTBKbkxpd0VKVXBERFFKMUJiWDVQS1lXM3YzUDVISUxKU1hWX3AtcndxQnN4THBvMWtob2xucWpRSnAxSXg1TDlBODVxTkhhalJPS2x3VWJYblg5TlhSdkZ6QXRxNEppOGdjQQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO传言澄清与估值更新，重要融资信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

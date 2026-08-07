@@ -783,3 +783,19 @@
   source_type: media
   note: "LLM 预分类建议(high):AI产品Wow试用阶段状态更新，产品进展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-06-meituan-051
+  date: 2026-08-06
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "燃油费再降 美团(03690)：机票搜索量增长超四成 北京广州成都居出行热度前三"
+  quote: "燃油费再降 美团(03690)：机票搜索量增长超四成 北京广州成都居出行热度前三"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxQYUFaSWxQaHhBUDR3ZWxqbXcyUmNMYVpoWVpEUjBGNFk4eHZ0QWh4Y01Qc1RKakhESjFyLTFQaTk5UDZvLWJJeVlBMW1PNlMyQTFGWWU0a1JhRjI4bWI0Vk5jSER4UGY4TmZ5blJMMFRXcGtEem00Vi05eGs4WFk5RFBUcXE1c05lZGhDVHV0Q3g1UUNhWmVQWnpEcUxkOXNiUjdmaldnRWNld29oUVE?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):业务数据公布，机票业务增长信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

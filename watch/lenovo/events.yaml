@@ -706,3 +706,49 @@
   source_type: media
   note: "LLM 预分类建议(high):摩根士丹利看好，联想进入长线资金前50大持仓。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-06-lenovo-046
+  date: 2026-08-06
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Signs Industry Letter Supporting Open-Weight AI"
+  quote: "Lenovo Signs Industry Letter Supporting Open-Weight AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxNVmk0MHlCdU1JNHlCQkZIUmYwNlJQdzFKZ0xucFVlaFdNVi1nRG1NTWwwRlZYa2djZ21sSFJ4RV9BdFhpLUxjMVlHbk4zaDBPUW96RmZkVWd2aG1kcS1pdk5pRWJGQXB4R0tMeERyOGt0ZG5CMHhUT1hDWDBMdXVTRFdKN21kZkpxY2d5SF8zTGVyYU9iWHd0RnA0cTU3VlJxY0xGVkRZRQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):联想官方支持开放权重AI倡议，体现产业立场与战略导向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-lenovo-047
+  date: 2026-08-06
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Why Lenovo Is Joining the Open Secure AI Alliance"
+  quote: "Why Lenovo Is Joining the Open Secure AI Alliance"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9GN0txMEY3Uk81Z2ZEZ2liZzE2MWNXUm81ZXZoc0JJUGxTUDE5LTBFTGl3R0VjcFpYc01rM3NRWlVSdmtwUUN2X1JrXzRXR1JJdFhwLVRUNURUcDB0?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):联想加入开放安全AI联盟，官方战略举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-lenovo-048
+  date: 2026-08-06
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Telecom Leader Securelink Expands Services with Lenovo TruScale DaaS to Support Growth and Customer "
+  quote: "Telecom Leader Securelink Expands Services with Lenovo TruScale DaaS to Support Growth and Customer "
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizAFBVV95cUxQSG9hcllKbWtlcW1BbXhsUldSTm0zOWNqOW9LS2pCWkczTC1BSjZ3Tno2Q0NON0hGOGJRUE1EODBKMzBDU1FYNUpkcTQ0U0JfdVltOTcyRWtiN0VnTnRtZjhJbF9KdjNrLVRfRjVUS011UzBkMDR4QzlZNUNQNmI2YzVUaUZ3eXhXQnR2Tkd6Y2F2Q1pIZ24ydmVLODB0S2l3OVoxdGVkeFRDRExRZXVyVEI0MzVvM196TFc1VFd1OGlMYlFRbkVEVFhBdU0?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):联想TruScale DaaS服务扩展案例，产品应用进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

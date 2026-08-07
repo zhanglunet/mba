@@ -1475,3 +1475,64 @@
   source_type: media
   note: "LLM 预分类建议(high):AI收入依赖OpenAI，战略风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-06-microsoft-097
+  date: 2026-08-06
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft’s newest India datacenter region goes live to power the country’s AI economy and enable Fr"
+  quote: "Microsoft’s newest India datacenter region goes live to power the country’s AI economy and enable Fr"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi8AFBVV95cUxQLU9jOC1pWHdUcXBVek1PMHFaYUJkNGtvdzFXWlZldGFjNldnbVlXVnlKZGRPMmhjT2xvVkxONVVrNFpHT3ZBbXBDTU5xU3VhbS1MUjE5X0Fkdlh0by1XRTFRVjNDaXhBVTBfN1RXNEp3YlY0ejJEbm5DQkFHNklMVmVPSEVfS0V2aXBOTWpnc3lGaXFSckQwbEkxZUhIRHlES2RWcVQteFRZWjBaa0ZnMjZvYlZ5bGtSU2VpNnN0MGxoUGR6U1Nrckphb3ZYWGl2dWF2UkQzeGJhMFhleVh1UDU5SDZ6dzlNdEhxWEZuVFo?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):新数据中心上线，基础设施扩展，体现战略投入。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-microsoft-098
+  date: 2026-08-07
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Win10/Win11新版Outlook本月将集成Planner"
+  quote: "Win10/Win11新版Outlook本月将集成Planner"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTVI0UG9aeGFKNms5X09QbFZTR0pEVGxHcUdUUThrQUlCYWlCaG0xcUZpOHpGMXY0d2xfTG9VcGt4Rm1GVkg1MktlTW01QUpGRHZ0MUVpZ3AwU0lLYWpzWnFzUnU2MG1GQmpvak5YTGlUQkxSMHl5NEFoYkJxSWlGTDkweEtvMUlj?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Outlook产品功能更新，属产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-microsoft-099
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软的最新披露显示其AI业务收入主要来自OpenAI"
+  quote: "微软的最新披露显示其AI业务收入主要来自OpenAI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxQalhSc1VFQW9CVEdRaGdTYWp5UUdhWmp3c0hfUGNRLUJHb3R0NjZFMTJmQUJaeEhrY3RXcHV6Ull6YzA3X0Y3dFZaVmFnMFVRUk51N3kyREp1N3pEbDhwRDJMM29KTG1UUjVzWW5vNDRsb3hNTUlRQzZxUTdPTTYxZGlicDBNZnprdW5meE5XQ3EyLWRHeEFuM3gwM3NfQjNBR1RDNFVGWVoxQQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软AI业务收入结构披露，财务信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-microsoft-100
+  date: 2026-08-06
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "机构称MacBook Neo正逼迫微软让Windows系统更高效- Microsoft 微软"
+  quote: "机构称MacBook Neo正逼迫微软让Windows系统更高效- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE41LWs3dlV5Z0stdEZiTmhXak0yUWNTdUF6SEUyYkx4a0JYdlUzVHdHaEpCUmgwTmQxNjlTcU85VnlzSnRmZGdGb3Z2LWVPNTFMdWNXdU5IbWFnVGd1YXBDSA?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):竞争压力分析，MacBook Neo对Windows影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

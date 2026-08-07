@@ -1307,3 +1307,109 @@
   source_type: media
   note: "LLM 预分类建议(high):开源API发布，产品功能升级，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-04-nvidia-086
+  date: 2026-08-04
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI Leaders Propose SAFE Guidelines for Cybersecurity Transparency"
+  quote: "AI Leaders Propose SAFE Guidelines for Cybersecurity Transparency"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTE9sQWVOTFFZVEcwTWtiN1FlNVo1bzRWSzlWVkpmWkZmUnJQY0xhcm9udUYxY19uUjdzRXRjUXVocDNQWTdYVzdFZHdjVjI4Qmg1YktoSVNTb0ctYmRncFpjdml2RTN6Q0JIZEtBOW5wVEFOYWtFei1V?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):英伟达参与网络安全指南倡议，行业影响力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-nvidia-087
+  date: 2026-08-06
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Into the Omniverse: How Open World Models Push the Frontier of Physical AI"
+  quote: "Into the Omniverse: How Open World Models Push the Frontier of Physical AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE9qRy04XzlrLXJpMXlobEpKc3FzdXlXMzdaYVh5amRUbXJWSVltcURwWmlIWDhLMkhXMjUxUTNZOWpLYV9nRnlSRG9DTkQxQ1hYdlNmRWJ6ZlBNU1N5M0RZR21TNnF2OTI3bHd2cA?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):物理AI开放世界模型研究进展，技术方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-nvidia-088
+  date: 2026-08-04
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the U"
+  quote: "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the U"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBSZTdMUk1OTDZyVEIwcFpCRVhUY3ByMVFxRXNENnhQdC1IcjZ0ZEpENmU3X1RBVVhZbzJfTkVFLUswMG4yRDl4cktlN2JIME9LYkdwczVhV2QwUENfd1lyczltaTc3NUcySW9NUy1FT0Rfdw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布加入NSF项目，体现研发投入和生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-nvidia-089
+  date: 2026-08-04
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "TrendForce：2027年DRAM供给持续紧张，英伟达评估下调Rubin Ultra HBM配置"
+  quote: "TrendForce：2027年DRAM供给持续紧张，英伟达评估下调Rubin Ultra HBM配置"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yVXpxYVE1c0RiYVVNMTBFTkJCLUdDaWZnNHdLWVR5bDhyM0lWYjJTbTBNTEFHZElnWEZpbjhDWndqTkxEX2JsVE5yd0JzS2lXaFJoMG5zRHZjS0M1?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):Rubin Ultra配置下调，反映供应链压力和产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-nvidia-090
+  date: 2026-08-05
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "《战争机器：事变日》测试版将于 8 月 6 日上线并支持 DLSS，NVIDIA 重返 QuakeCon"
+  quote: "《战争机器：事变日》测试版将于 8 月 6 日上线并支持 DLSS，NVIDIA 重返 QuakeCon"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9abFBtbFJETEdjMzlSNHdLYjZUY0lCQmZCZzEwaEQ4TE9KMmZqcFJlMEM0NllrOEYzMGg2NU9BcV9kRnZtV2RKTlVKWk9fVkZmSVE0YVpmN0ZEUm9J?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):游戏生态合作，DLSS技术应用和品牌活动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-nvidia-091
+  date: 2026-08-06
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "为缓解HBM供应短缺，消息称英伟达考虑降低Rubin Ultra GPU配置"
+  quote: "为缓解HBM供应短缺，消息称英伟达考虑降低Rubin Ultra GPU配置"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTVE2Sm5HSW5XTnZwclVoOVhxZ1BwbTNmNHU1cllrXzlLb0liRWN0Zjk0VGNFUm13MHFJMW1WM01iajgtem5pWFBhcmJtTXhFemVucG9tdVV1MWV1dnAxc3U0MlZ6MW5aSk1uRTRBNnIxNWdNNzJjZ0JUajhSSWNGQzJjUUhmT21W?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Rubin Ultra配置下调传言，供应链风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-nvidia-092
+  date: 2026-08-05
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI 领导者提出 SAFE 指南，旨在提高网络安全透明度"
+  quote: "AI 领导者提出 SAFE 指南，旨在提高网络安全透明度"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE9aT09udUNfeU9tbTg1QVFIQ08wZi0tQmlmdlBMdG40QTk5OW1WeWRXekVxSWhYQm9WZXQyOWI1NHVJbXREZENtTE1HRVlLck4xRDJPQ2VPNGM3clRHWGRfMEMwVy14bVgxbEMxQlZRbjNjeUVGMGc?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):NVIDIA参与安全指南制定，行业领导力体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

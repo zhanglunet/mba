@@ -378,3 +378,19 @@
   source_type: media
   note: "LLM 预分类建议(med):涉及智谱开源模型被美国采用，网安政策争议，行业影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-06-zhipu-023
+  date: 2026-08-06
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "智谱盘中上涨，AI模型竞争转向综合比拼，机构看好公司商业化爆发潜力"
+  quote: "智谱盘中上涨，AI模型竞争转向综合比拼，机构看好公司商业化爆发潜力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxOM3M3OVktTnFvZnEwaWZyTmp6RFJERnBVRTZoOTlKeFB0bGM1UzlQcHk2R2Zxd0YwUEJzaXIzd3lvRFNYRHp4QmpqT3BNY3BscC14Tjk5TFducksxa2Jud1NDYUEzWkc0eDcxQUU2SzhxYk9iYXYzU2U0NEdJVTF3NnpLMUtTNlJhMVdwZmZwSENTX1kwTFpmNFVBVjhFVjda?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):股价表现+市场观点，但缺乏具体事件支撑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -458,3 +458,49 @@
   source_type: social
   note: "LLM 预分类建议(high):大疆诉讼案件，涉及知识产权争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-06-dji-030
+  date: 2026-08-06
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大疆Osmo 360二代将于8月7日开启预约 续航有望提升"
+  quote: "大疆Osmo 360二代将于8月7日开启预约 续航有望提升"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTXVFZDVtN0d2eGFTdGFDX0RBTU1aTjlnNnh3Q3RyTHJwemwxcXRldXZQcE5QMmVDOHdDM2haNHA0RGFKUkx1cF82R2FyS2UtN2V4STFES3lwQXFKRXcyTXVSQjZMelBOTGFGX0M2ZjFJcXZlZXVUaFJuTTNQdDhXd05NeFoyMEw5?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品预约启动，产品迭代信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-dji-031
+  date: 2026-08-07
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大疆Osmo 360 II全景相机即将发布"
+  quote: "大疆Osmo 360 II全景相机即将发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQejB6MklKeWJ1dmk1TkFVYXhUb0V6WG40UG1TZl9KQmlEY2NUb2lLUllPSExXNzlqM1lFRUVNejdfNWJGTTZOSTM4a1RMM1dOYk82LUt5dUFZazVfQ3N5cnc2LWozdWlZMlFMU2VqSHZIZWFjclM4R09YOVozYTBFS1RVSnJndEly?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品新版本发布预告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-dji-032
+  date: 2026-08-04
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "7A数显线+大疆设备优先！DJI Power 140W 氮化镓充电套装深度体验：一个充电头搞定大疆全家桶"
+  quote: "7A数显线+大疆设备优先！DJI Power 140W 氮化镓充电套装深度体验：一个充电头搞定大疆全家桶"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE82NUVwWXRrTEhjM0NZUW1OeEhBSGxacjVRbzJNWDdBcmlwMldoMm5DRHpPMHRqMVpvQTYzYk5GdGk0Zlg0bW1QZE81Sm9sclAydHc?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品体验评测，产品线扩展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
