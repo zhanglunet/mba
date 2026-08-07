@@ -1023,3 +1023,139 @@
   source_type: media
   note: "LLM 预分类建议(high):nova系列新机发布，中端产品线更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-08-04-huawei-067
+  date: 2026-08-04
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "HNS 2026 | Huawei Unveils Upgraded Xinghe Intelligent Network Under the \"Secure and Intelligent Conn"
+  quote: "HNS 2026 | Huawei Unveils Upgraded Xinghe Intelligent Network Under the \"Secure and Intelligent Conn"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxORDhlWEZZSXZ2LTRnQzNsNlU3MERWNi13QlQ1clgzMl8xV3Bzc01ZSTNPX0tXRk5PeU1XQVV1bjh6TzZtWDRtVlFVM1BxTUhtSDhrU0hOTlVhQVk5bWxWbExNRHg0MzNWVWVoREFiZDVMUG5PQTN1ZlBlUUNEMkFGWFE3ODRVSTYyX2p1N3o1WFhuNlduVGtyRzhNbHNyZ0N4bHVTUUpyUWpJNi1p?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布网络产品升级，技术创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-huawei-068
+  date: 2026-08-04
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "GEPIC and Huawei Jointly Release the Zijin Yuneng Model"
+  quote: "GEPIC and Huawei Jointly Release the Zijin Yuneng Model"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxQazdvV3JXYnVaXzhxSllId1pfOElleFFkU1NRN1dVTGpiaHBONV8tVUlPUjROYWhyREkwSFlZUGF1OGpEd0RiTGRQZGJrdXNZQ0NVZEZNanBRbWNfU0pKMUNIMUtTbU9pcnJHUldQY29mOWt4NzlicUVzV09oVDlONlRKbw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布大模型合作，AI能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-huawei-069
+  date: 2026-08-07
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei Named Sole Leader in GlobalData 2026 Microwave Backhaul: Competitive Landscape Assessment"
+  quote: "Huawei Named Sole Leader in GlobalData 2026 Microwave Backhaul: Competitive Landscape Assessment"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTFBhWGgwTjh5SHg2S3lfNUZkTXl3dDF6ZUJlNUlUTy05dHkwQVdreEV6YWZkdmhtLW5jU0NKTWl6UHdhaG9ROXI3clg0WEMxRklYcl83Nmhsd2FCNzJkWmNFTTNTbTVzQ3U3VldIelh1eGtpVVU?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方获评行业领导者，竞争力认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-070
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为WATCH GT 7系列正式发布，智能手表颜智实力派再度刷新综合体验"
+  quote: "华为WATCH GT 7系列正式发布，智能手表颜智实力派再度刷新综合体验"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CY0ZaM2xXTEVha3ZSYUJvSFhqaTFoS3A3Rl9XT25scWxZUGtINHhrOVREdjBaSXpscUNCV09fRDRsUy1oT3U0LXE4U2hxbHpnbC1fVG1acWJyX1FZ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰产品正式发布，新品上市。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-071
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为史上续航最长平板发布 华为MatePad Pro实现轻薄与长续航兼得"
+  quote: "华为史上续航最长平板发布 华为MatePad Pro实现轻薄与长续航兼得"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5VdUhFblYtY1FZaGx2dVdVT1ltQ2JRQ1Z4ZUFxRV9fakV4eEtWV0hOZ0ZuZEs3T0l3ZmVuamtxb0FmVnlQVUI3VERNZ01iRXhqcjRlNkdfaTZBZzJ5?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰平板产品发布，性能创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-huawei-072
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "全新HUAWEI MatePad Pro 12英寸，打造平板创作巅峰体验"
+  quote: "全新HUAWEI MatePad Pro 12英寸，打造平板创作巅峰体验"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAZBVV95cUxNY1h6WjgzYkQ4ZnBFeUM2cGQ4UDd2QjVtd3dack41dVBBbU1qUnE4YVc1YjY3elowMnA0UFNrZlRBVVRHYTNBa0Z3SUxvTzBjZGhfNlBFNnpUT1R5enlkUURjdmd1WHQ5dDVXRGs4dVZNSTBDRDRER1VVVFRDVXhzMUFRdGJzV3N5SGc3Ni04RjdDUDYtXzY0WmNkdnVNdVV1ejF1TTlvM2xxS0dmT055SWp0bXdmNkNDdkgxbUxTUWd4WjhYeTNGOVN5Q19Ca2tzaW1VbXBJWkVYcGVpOHAxbEROSm9xcEhleEZWWHBoSXgwT2F4QXlFcll5MFJjVFFTUElabk1tUHREREs5Um51Qmc3Q1QyVUJmNFB0M1lxcUhWNl9mUDhYZFhqeXpMdGVBUEFRR3JHaVhsV1ZoeWRvTThfRlhIVVFOS1VvYXl4cEFvYm0tcHc4SHdNSGdNX08wSExEZEktczh4dUxIY3pmaXhkNDRuTU5oNkpaQWdOdkZKNERyQUJTNmI2ZWNIa2U4c0YycnczV2ZDcjBzNHdhejBlS1AycjVKbjNQTWNFTjhkSWlxMFZwYXAxS2tLaGNQUnluTnJWMEtaemNFUDR0ejBpaG1tMElLMzgzMml0SDl0WVlrRnJoYWlNeDIzV1YxSUt3dl9Yc0ZMb3hRYjE3T3JNNi1tbExMQWxTTUdlOGFhak5hNHhFaHowc2MzZEwtVUVZNHpTX21WdkZOaC1mSDBVVjRHRk9XcEVRa2Y4emlqVHkzTHJ3alpXdWZRSXp6cDNyWHpZNzZ4UDluRGlXTnVjbzNQLXM3RHNyR1RxaEVRcWNaMTZrdFNIUnJWclpZYkZta3E3N0p1WTR1LVBoVGV4WVp1SnB6R2R4dXZrcGQ3Z1Bpd3RPTDNKdHFCLTJneUY3a2xDWTRtcDd2OFlxV1ZXQjJMbVRyN2xyVUFGSmNnbzZWR3FiekQwTnhfR240NEdJQ2RTZUZKVEpQV1RQcmE2V0Z2bnlmR2pBbElOemNyVXdPT2R2Z0hoaEdHSUo4?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰平板新品发布，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-huawei-073
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "重塑折叠PC交互体验 全新HUAWEI MateBook Fold非凡大师震撼登场"
+  quote: "重塑折叠PC交互体验 全新HUAWEI MateBook Fold非凡大师震撼登场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWjFTZlgwb0doMmhVb2pHejJoN1JYQ19fYlJlS0VJV182ZEs4RV9ISHhyTFFULThmNS1teUtOTFNPRmd3TmpFaGg5dGt0by1vOTA4V1ZLWldraXlocEdFLXBEdjNIMkdRdW96LWhiTlNDR2h5b25DamcxUUcwVXViVXdaR3Z4TWRs?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):折叠PC新品发布，创新产品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-074
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "尊界时代旗舰MPV及华为全场景新品发布会开幕，多款重磅新产品发布"
+  quote: "尊界时代旗舰MPV及华为全场景新品发布会开幕，多款重磅新产品发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTFBsNHcxVzR3dWZUYnhNTjdmTUZfWkR0M3lnVVgxWnRVM0JOM0d2LVUzWWdnSnNKcXBNbmZvSnVyakVkOUZOdjEta0ZUbkdfYWI5MlJqdw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):多款新品发布会，产品战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-huawei-075
+  date: 2026-08-06
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "竹知了事件，没有赢家- Huawei 华为"
+  quote: "竹知了事件，没有赢家- Huawei 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFB6Y3ZEM0ktb292bWMxNFN3U3V2ZmZOeEl2SW5xdTZYTjhubWdPRG1Sd1NBdVRVY3YybjgwNmgwa05aTXBBV05fN2lkWGdsY0dhdEh0UHQ2MHpNUUVBaUVudQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及品牌争议事件，舆情关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

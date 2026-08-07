@@ -1779,3 +1779,154 @@
   source_type: media
   note: "LLM 预分类建议(high):Anthropic与Volta签署百亿美元合作，融资/战略合作确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-08-07-anthropic-116
+  date: 2026-08-07
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Improving Fable 5's biology safeguards"
+  quote: "Improving Fable 5's biology safeguards"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE95RXUtcVFIR1hIbmVDRk5sRDZEVWZSRTlXNXRMU1RXQk1JdE1kRzBMR3RuOGhzOVRZdEs2bGRIX3JIa1ZZbjlCbGx5RzlZRGdQZ3RwLXVidjZyZUpXeU1sM0hYeTQ2QW0zOXlCWnJQenFhZ0dEUFNFUA?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):Claude官方发布生物安全防护改进，产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-117
+  date: 2026-08-06
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "成立仅7个月，英伟达投的新公司，拿下Anthropic 680亿AI大单"
+  quote: "成立仅7个月，英伟达投的新公司，拿下Anthropic 680亿AI大单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0tbGZWLUdFdUpFRVBDVXcxUk9XT29OajB3NHF3S1RBZjhlZ3dZUzJ2T0VsMVRJT25lX1JwMEl1SVZyMWJWemhfQThoMldFTDRBQkFxdUNLRGpILTNC?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Anthropic获680亿AI大单，融资/商业进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-anthropic-118
+  date: 2026-08-04
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI编程史上最疯狂的凌晨：Claude和GPT同天开战，程序员的游戏规则彻底变了！"
+  quote: "AI编程史上最疯狂的凌晨：Claude和GPT同天开战，程序员的游戏规则彻底变了！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tLVMzbzhiYWkyVHVMeWhteXF5NXVkR2hQWGJnRGF2WENPNmpSYzBtX1dWSEF5Tk5nTVlyVkk4SmNnRGo1UklVNU1MSDdpLTFLWmlIQmZRNjBRTzRX?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Claude与GPT竞争升级，产品对标事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-119
+  date: 2026-08-06
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic确认自研AI芯片为Claude定制处理器，头部AI公司和云厂商均已入局"
+  quote: "Anthropic确认自研AI芯片为Claude定制处理器，头部AI公司和云厂商均已入局"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5RbXFHN0FlUWVEU1l2cVc1cXIwNjVvcTdEWXpVQy1MSml0ZkNhZ2d1S19xWWRRQTdxSFFmellDYzJaQlFXS1M3LWw2WEdoWXNVNE1YY3E4OTF1WjVq?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic自研AI芯片战略确认，重大产业举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-120
+  date: 2026-08-06
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 将自研定制芯片为其大模型 Claude 提供算力，并采取多厂商多芯片混合方案"
+  quote: "Anthropic 将自研定制芯片为其大模型 Claude 提供算力，并采取多厂商多芯片混合方案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNa3FRczVkZmJwSUJPU25aNjhnTnJvQXZ4bEM0LS04RUNUaW85T2ExbWxZUFZ3dzJ0VTJxSG9mNkJSZFlHX1g0Z3hFYkdpT0plODA2OWRqVWdVTG50blVDN1p0eVowQS1VdzUzSi05bG9PX05jUndtb2xKWnB1T3d5NmxmNzN6QzA1aGtENA?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic自研定制芯片为Claude提供算力，战略重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-121
+  date: 2026-08-06
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic官宣自研AI芯片计划，将与大语言模型联合设计-芯片"
+  quote: "Anthropic官宣自研AI芯片计划，将与大语言模型联合设计-芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1Ja2hBQ3FrNGpnYkNKSWd4YWQ0SzNoQVhjc1dRMlhCbnlNZVRyTkVTcUxieExDNncxRENmbXRBbU9QWjJfUXhjdVFDY3JEN1JKZWVXSnNsM0dGd0N1bzdQdUR3?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic官宣自研AI芯片计划，重大战略发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-122
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Claude Opus 4.7 或本周上线，但 Anthropic 要查你证件了"
+  quote: "Claude Opus 4.7 或本周上线，但 Anthropic 要查你证件了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi8gRBVV95cUxOd0RPZXlQYTdzZDIxZFpxbU54Q2hfVkR0S1RGeVBWQkp6azJvWE8xZG9HVklDZUpBRzkyTkF3R0NsSkppNkpnTHl3dUxtR04wWXN3aGpKNkdMSUpQczZCT0RoS1c2UFc0djlhZll5QnlnSERfOHAxTmg0dUxlYlZfT21BWERqZ1MtMEhOUXN3QnFqOVNUcVVMdVAwMDI3Tk9CbGw0SERobnNmMThFRFV3M0RPUnpLMUVtNzU3elYzUVpCd0ppVDFraUNwMHlpbmk5RFRBVW41b2hVdkxRWEVsMjA5aldhOFllM2FvNFNWRGd6MS1MdEV2LVQ3XzNmVmdydjkwSW1mZmh3RzMyVEI2a0dLcjF1YXNkZGROc1UxdzI0b21NZ2RTUXpvbS1LTG1vZ2E5NzZoaENoLWxzeW05RVVtRVFlallzS2taZVFFV09KUllRdmZIVzZxMDYwWW1EcVpuOTR3OW5RN0xZS1hJMWltZG0tUERidkgxRV9TM0hXYkFXTy0xbkdkcTE1dzNfMFdzUUhpYWYwMEkzaFZORFFvQXNpREt6Y0FPZTBiV0NVcTYyRzg1V3ZCUElZR1JnOXE3SlRMTy1hNzJDWURGYkNZUl9kV1BqTjFEWHJaWXlWWEhZRTM0ZnI4QldBSmROU3g2eGJKREJGVTNZTkQ3SUtTaDNZYk5weVRIX0tZQWk5cTYwUWlBZGZlUlZkX1pIRmxQQmlTWnB3aUtxWERaWjY4TGdpR0ZSVmJzRWFqQ09SWnpPYzZhTkstdE9vV2tpSVY0N091cFBwU2R4cGdUWEw2ZmJDcTJXdXA3ZGFPQlF1QQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude新版本上线预期+身份验证政策，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-123
+  date: 2026-08-05
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "首次超越OpenAI，Anthropic年化收入暴涨至300亿美元"
+  quote: "首次超越OpenAI，Anthropic年化收入暴涨至300亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5FN0NMTzRRZjJhZkxxY0U4VFRlbFBkbHNkWU03QUNTZk9PWTg4WlYxM1Q2Ny1QUUFBNTlYcjMwODhXZlQ4aUV6cHVMUWR0Z2NKT2hj?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Anthropic年化收入300亿美元，财务数据公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-124
+  date: 2026-08-05
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic组建内部AI芯片团队 为Claude设计定制芯片"
+  quote: "Anthropic组建内部AI芯片团队 为Claude设计定制芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9kV3liUUEwZ2xySDlUYUV2di0zSHp1VTF6dUZJN2RPMVFXRGZjODFqUXZiMmtzWjdacm02eUIxY1JUbzBtN2doNA?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic组建芯片团队为Claude设计定制芯片，战略重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-125
+  date: 2026-08-06
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Meta正面硬刚OpenAI与Anthropic：发布首个AI编程智能体Muse Code，主打低价与“崩溃恢复”能力"
+  quote: "Meta正面硬刚OpenAI与Anthropic：发布首个AI编程智能体Muse Code，主打低价与“崩溃恢复”能力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE56STJ6S3ZNdjFSYkJkdWpaQ0pYTEJfMTkyQmpBNk9OajM2bW9YbHlNek1SX3BxR0RNT2dZc1h6TVhVMVQ0bTI2Nk9BQ20?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Meta发布AI编程智能体与Anthropic竞争，行业对标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

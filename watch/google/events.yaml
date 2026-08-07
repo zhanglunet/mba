@@ -1476,3 +1476,94 @@
   source_type: media
   note: "LLM 预分类建议(high):AI部门多人离职，股价下跌4%，重大人事变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-06-google-097
+  date: 2026-08-06
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Our WeatherNext 2 AI model demonstrated a massive leap forward in predicting cyclones."
+  quote: "Our WeatherNext 2 AI model demonstrated a massive leap forward in predicting cyclones."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxQdW1JSWxuMDZJdy1ncHFwMlc1S1ZTbVBlZXlOTGNPbGhlTE9jM1gwZ2xFajAyTHhyeVFnNGFWM3d6c0hETW1mX2tPWjdyVm1QN1lsYzZrNms1LU9tQkhIZGUxU3lGTDR6cWVseEVGNVgwM0pITDRpSDhEOFJoNVNCa25ZWllzaVpxWHpmQkVUX1kwdGZmaFVCTnhydjV6dw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):AI模型重大进展公告，体现技术能力提升，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-google-098
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌 AI 领军人物杰夫・迪恩等离职创业，这预示着 AI 行业哪些新趋势？"
+  quote: "谷歌 AI 领军人物杰夫・迪恩等离职创业，这预示着 AI 行业哪些新趋势？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE93Q0hRTFhiaThhVy1sZjgzaTlZeGQ1OFp0Sndqb19XOFlTSEVIY1hkRFg4YVpFUjRSY0JfUkV6NzVHNTFGMFV5Z3BiMk16ZTJZb3ZrT1hsV0hQeDBnTnA4?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):AI领军人物离职创业，涉及人才流失和战略影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-099
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "速递｜Google首席科学家、Gemini项目负责人Jeff Dean离职创业，创办AI科学发现公司Discovery Loop"
+  quote: "速递｜Google首席科学家、Gemini项目负责人Jeff Dean离职创业，创办AI科学发现公司Discovery Loop"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5NNGNHZ1U5UkRETzk2X3RaLTRsbVpLM1czcXNVYjIxd3lQV3NYZkc2c0E2MXJ1VDRoQWFrbVVscmxvNEtVaG5sR3haeXd2ZUF4emZhZ2FySDRoNDlS?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):核心高管Jeff Dean离职创业，具体事实明确，属重要人事变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-100
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "刚刚，哈萨比斯卸任谷歌 DeepMind CEO，27 年老将 Jeff Dean 离职创业"
+  quote: "刚刚，哈萨比斯卸任谷歌 DeepMind CEO，27 年老将 Jeff Dean 离职创业"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1QTGJCMEtBQzFVUDB4R2UyMEZ6UmRWeUk1TlhEVGRvTXhXcGlUTHE5aXk1bERfZ1B3UHk0YV9yQlB2UUI0SmZWX1VFUklVWlI1OFJRbVA1dmY4NHQtYkE?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Hassabis卸任CEO、Jeff Dean离职，双重高管变动，重大人事事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-101
+  date: 2026-08-06
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌市值一日蒸发1800亿美元"
+  quote: "谷歌市值一日蒸发1800亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBQa3Z0ZmlPcHg1ektWRFo2dzBZMEsxUzdSSm13TUxhMmMzZVlDc0xubkQ4dXVJQ2NLeFdiWjdjLWVFRi1wN09wZUIxbnJjd0VhcGgyNUVMZHlfeGg5RDIzUDhYQ3JJS04yU1BNVWhtNjRiemZRdUZ6bzJZVHhiQ00?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):市值大幅下跌，财务指标重大变化，具显著舆情影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-google-102
+  date: 2026-08-07
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Google人事大调整旨在权力转移AI控制权交还创始人布林- Google 谷歌"
+  quote: "Google人事大调整旨在权力转移AI控制权交还创始人布林- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE4xYkJlU2pkdlN3YlI1RHM0dDRVRXVMblZ1WHhJTnlDbm41MHk4ZWhxNFRyMGZHMmNOTHNkRS1QeFlZMHBWRTBOdGpZYTl5LUdhbWRDOHlJV2JxbnR4MTc4RQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):人事大调整涉及权力转移和AI控制权，战略性重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

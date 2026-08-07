@@ -1619,3 +1619,139 @@
   source_type: media
   note: "LLM 预分类建议(high):火箭残骸撞月具体数据，运营事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-08-05-spacex-106
+  date: 2026-08-05
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克：SpaceX只用英伟达GPU"
+  quote: "马斯克：SpaceX只用英伟达GPU"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE15SzRvRXQ2M3YyUXVYYmhUZDJqdWR6LVVzeXp0V0VXWUUzVXBYb0cySHZqeS1sak5EZWhCUE0zaV9OZUZ3cXBGTnRVRV9IRVFROW9XZU5sNzFCdmUz?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):CEO公开声明供应链策略，涉及重要商业决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-107
+  date: 2026-08-06
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX 市值从 3 万亿跌到 1.6 万亿美元，首份财报说了什么？"
+  quote: "SpaceX 市值从 3 万亿跌到 1.6 万亿美元，首份财报说了什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9nNmdyVnN1NE1VOGpieFVuSk05WlJfMVQ4YVozdDN5TmxocEgyRVhRWm8yWjF4cDZNbHYxNko0ZGtGNi1aRC1DMy1SdEcwOENZS0kzb3hlM21aYWZz?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(high):首份财报公布，市值大幅下跌，重大财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-108
+  date: 2026-08-06
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX首份财报分析、 为什么同样广告业务为主谷歌估值高于 Meta"
+  quote: "SpaceX首份财报分析、 为什么同样广告业务为主谷歌估值高于 Meta"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9CMGkwdkY2OHVfR2MxVVJMa0dUaGRwX1lBUy01dEZqRXJJMmoxaFhqRjdaQWNyaE9OOFdTR2ItbW8tb2JUbEQ5T2t1M0gweXNQQ2wzcW10Qm1YRmpu?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(high):首份财报分析，涉及关键财务数据解读。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-109
+  date: 2026-08-06
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "1000亿美金解禁潮今夜来袭！SpaceX迎上市后首次套现日，破发或致4.5亿股延长锁定"
+  quote: "1000亿美金解禁潮今夜来袭！SpaceX迎上市后首次套现日，破发或致4.5亿股延长锁定"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5scFZod2xCNW5qaEM5UFJMTklqakUwSkV2aWVxR0ZQMzhqWl9ldHhVSEhvWGtUMERSbzRJRzcyYVc3YXRZOWE2cnJiT0UyQW9scmZZ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):上市后首次解禁，涉及股价风险和大规模套现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-spacex-110
+  date: 2026-08-07
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美股史上最大解禁冲击来袭！SpaceX即将迎来真正考验"
+  quote: "美股史上最大解禁冲击来袭！SpaceX即将迎来真正考验"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE90NldXUlZYR1BUTEFGcl95T2FnTGtJUENFNFpjUWEwd2hNeTEza0FIbWtUVTVTelN3RHV4UmxNdUs5ME40ME1zVg?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):解禁潮冲击，涉及股价波动和市场风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-111
+  date: 2026-08-06
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX庞大电力需求对这些企业构成明确利好"
+  quote: "SpaceX庞大电力需求对这些企业构成明确利好"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPVlJackpjdVVFV0hQckNEdi0ybXhqRVFfMDdMRFRxLWVzTldHaGMyT1h1SzN4Z3hyTnhqWGJwNWVnSUg5TlB5cC1UZzFVdU0tMkhxYlVUTE9scjVJRzhpT252bm5hMmxHV05wWE5IeThqSGVHM0pZcmR1ZTdRcjViWU1hNUdwUG8?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX电力需求对产业链的利好影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-spacex-112
+  date: 2026-08-07
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX与特斯拉将在得州投资168亿美元建设AI芯片工厂"
+  quote: "SpaceX与特斯拉将在得州投资168亿美元建设AI芯片工厂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1V2trNHVxZzBsZlNrRURmdFV6STFnQ0o1YTRrQXVJNy1zWURkWmFwSDB4V2dMUnZqanoxNXBZWlc3eWF5YXNueG42QVZTcjYwUzlnQw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重大投资计划,涉及SpaceX战略扩张,但非核心航天业务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-113
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX火箭撞击月球 NASA将启动调查事故"
+  quote: "SpaceX火箭撞击月球 NASA将启动调查事故"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VSDJ2TDlOcERnVFUweFlQUHgwY1BhMmQtaFFsbm5jdnlOTTBaMTNuYXNZaEYzbEVfNmlRUHNqRWtvdGQwd1JRMEJBZl9CaGNYVXhDdUM1UzFSVXBJcEs5dW5ILVREQdIBa0FVX3lxTE9idmFkTVNDQmplV3RCRk1RM0tra0MyaXRzX1FKWEVmTTk2VXczUl8xQlZIeXVkaDdUTmtmZFpsZHhTSUpVTFVTTFpHZENudHItaWFIcXZQOTlJanM2Y3dfeG5ZNUJxV2pCZFk4?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):火箭事故触发监管调查,涉及安全与运营风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-spacex-114
+  date: 2026-08-06
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX首批逾9.11亿股解禁 规模超IPO"
+  quote: "SpaceX首批逾9.11亿股解禁 规模超IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBHM1ZRQXNfNE1DQV91QjE1dEhaRDZuS3BDSmJLaDVINHNfaXY4dFNPMTh2MENzU3JSc1BwdWk4aVJnUXoyTjJlVWE1X1RlUQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模股票解禁,涉及融资与市场信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

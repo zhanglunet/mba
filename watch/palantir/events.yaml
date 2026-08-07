@@ -219,3 +219,34 @@
   source_type: media
   note: "LLM 预分类建议(high):帕兰提尔官方预测AI需求前景，战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-04-palantir-015
+  date: 2026-08-04
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Palantir 2026年第二季度关键数据"
+  quote: "Palantir 2026年第二季度关键数据"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxPUTQ2cFYtbHYyRXFKOWw3Q1pxU3hSOGpuMG9QY190djNiQUhmSFpzaTJZdlJxWFQ0ZGFXNTNPUXM5RmtOUWtOeDRtOVpTb1pzYy1hS3Npal95S0RTQ1c0VlU2RXE5UG52UTJBN3VOVmRDVURKbmg0VFZzbUVwLWwxbnNVTDNzRXQzdnhNQ2dRLUFyVW1X?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):财报数据公布，但标题未透露具体内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-palantir-016
+  date: 2026-08-04
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "帕兰提尔大涨16%，商业收入表现堪称“超乎寻常”"
+  quote: "帕兰提尔大涨16%，商业收入表现堪称“超乎寻常”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbjZ4Mzh1WWdERGJrWVllMEplaDdlSEF1bXBDSThTSXF0Q2tVcG9wSk8wckJzOVluWm9NTGdJTXVhYnctaHJaSkVOR1JJdTZCU1RqQ3ZlTlVBU08xM2wwd2tPM3VYdndzaml6dTQzNFo5Y1dCRkxqcXYwV0NKUE04LW16WW1fcUVlekZZY1A0Q2RzRklyemRQMnNNVzExNkI0M2VfRDZiV2R3UUdJeGROLXFGbTZYM3NrNHlWVFM0eGF3TzZDeU5nWUg3a1pUOFNpZ014YmkyUjM1dXg4NFpF?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报期间股价大幅上涨，商业收入表现突出，具有显著市场反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1249,3 +1249,109 @@
   source_type: media
   note: "LLM 预分类建议(high):市值里程碑突破，重要财务指标公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-06-amazon-082
+  date: 2026-08-06
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon Pharmacy now delivers GLP-1 medications to eligible Medicare patients for $50 a month"
+  quote: "Amazon Pharmacy now delivers GLP-1 medications to eligible Medicare patients for $50 a month"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE5oZ3huT3Ezc0RTbFJjeGNySWFZRTJkcGZLRHRqXzVaT2xNakVzQVNJXzg3TnBxekRJWHVEV2U1UzZWN21ReElROS1fSlNtUGNIRFpSQUVXbm84S19nN0VfMnYxamUtT1JFck1hMzJOQWQ4YWEzckRUbi1n?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):Amazon Pharmacy新服务上线，业务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-amazon-083
+  date: 2026-08-05
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "欧洲“维修权”正式影响亚马逊卖家：退款逻辑改变，售后体系需要重新设计"
+  quote: "欧洲“维修权”正式影响亚马逊卖家：退款逻辑改变，售后体系需要重新设计"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBsNURVY09aOUJRaG9rSmxvUGZWSEEzblZENmFSYkQtaXNRcnpHYW5Rc1NOUFE4RHBuZVlqdU5HbnVPWTAzV1ZRSkZ0eGtabWpsNmJxYS1UbUVfY1RL?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):欧洲监管政策影响亚马逊运营规则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-amazon-084
+  date: 2026-08-07
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊为Luna新增了两款免费游戏"
+  quote: "亚马逊为Luna新增了两款免费游戏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IQVZNWlVUaUMyb3JTYTV2bld0R1Btekx4SzR3T0RoZkx4TExSb1NWcklzQXhGa3Q0VDFNVk94RFVoTV9nZXhzUnJ6Z1JRNVFDWm5SX2E3X19td1NjWUNabXpR?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Luna游戏服务内容更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-amazon-085
+  date: 2026-08-06
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "贝索斯拟减持逾40亿美元亚马逊股票，首批已套现3.5亿"
+  quote: "贝索斯拟减持逾40亿美元亚马逊股票，首批已套现3.5亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixAFBVV95cUxPcHFhUE1TczI0SEhqOExQZEY4MXVMczhjS09Cb3dSU2ItdEY5OG9panh1M1E3U185WHdsM3VjX29wMklSbmw5aXoyV3RPMW5wSDh1MFotWEZxVFNFTTNBWGxLV3Rqc0gwV09hWjlpRGhyNkhqdzFhVFdQQVRxVEJZNkVMYmFPbWk5TGVZQ2N5U0xQdzRFR0ZFZF9ZdVNmbE9VVWNFS2pMNzBmdXpEb3RvcTRLYUZKNFk1MXpULWQ1azY4MUho?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):贝索斯减持计划，高管资本动作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-amazon-086
+  date: 2026-08-05
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "上诉法院推翻原裁决，Perplexity 智能体重获亚马逊电商访问法律许可"
+  quote: "上诉法院推翻原裁决，Perplexity 智能体重获亚马逊电商访问法律许可"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5SUkxpY2Z1dnNBUzJmTl93dEVKcW9hZFhZYUs5SkNsdzJPYTN4YUlobWdvOG1IQkhSYTZYU2VEZFVKVWZQNFp4ZWhtMzBPSWFpeVRWVXM5Zm9HUFliVXpib3VQWmlBc09Xcm1odXRfRXlUMExqNTNsV3B0SDhVc28?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):法律诉讼推翻，Perplexity获亚马逊访问权。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-amazon-087
+  date: 2026-08-06
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊股价创新高 贝佐斯伺机套现逾14亿"
+  quote: "亚马逊股价创新高 贝佐斯伺机套现逾14亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE85WlJDVG4ybEdlY1V3R0dTakt0cVc5WFZiSlljajF6VFdBTncxclYya1pldF93b1pfbjB1b0l4aVgwRG1adFJtQ1FtcTBUQUQzbXh3b3IzdTU3Wkxyb3ZOX1pQc0hKN0lEcjZjZDdMdmNwZw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价创新高、高管套现，财务信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-amazon-088
+  date: 2026-08-05
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊押注Alexa购物助手，AI电商闭环加速形成"
+  quote: "亚马逊押注Alexa购物助手，AI电商闭环加速形成"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxPMmpDVkVUVXlOa1RDUFc3NmQ1alRTUnhSdHNLN3Z6Xy1LMkVYZF9YVlVpY3hNcUJzdDVMeDdMTXZUR2d6NDF3c3pRRG5sUTI4Yi1BS19hOFlYaTFWZ0Y4M21qTmlyTzU4SE4yeERGd0ZxTGlVRF9CZ0FLNmRsd29lM0RyN0NUWlBQNDZXM015NnVQR0l1OHZUV2szYnE?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):AI购物助手战略布局，电商创新方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

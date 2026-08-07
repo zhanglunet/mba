@@ -1566,3 +1566,139 @@
   source_type: media
   note: "LLM 预分类建议(high):Apple租赁服务推出，商业模式创新，市场竞争信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-08-05-apple-103
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "长鑫拒绝苹果压价，要求内存采购价不低于三星和SK 海力士，是否意味议价权彻底反转？可能有哪些影响？"
+  quote: "长鑫拒绝苹果压价，要求内存采购价不低于三星和SK 海力士，是否意味议价权彻底反转？可能有哪些影响？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBCX09INV9wUnliSktQWEY4Sm16aHZONFJLbGFzcDBmQzhPV21wcnNUcUJFSlNwSnpiY0l0S0pQVXBEN2tuXy1DMzhGMXVDQVNpcXFYN2FISVZvSC1zdTln?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):供应商拒绝降价，苹果议价权削弱的重要信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-104
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果为降低成本要求长鑫降价反遭涨价，长鑫的市场筹码来自哪里？反映了怎样的市场博弈？"
+  quote: "苹果为降低成本要求长鑫降价反遭涨价，长鑫的市场筹码来自哪里？反映了怎样的市场博弈？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9lT1FSS1BxWWFxN3M0SkxHZDcxVHNjM0FuQ0JmUElEbktYQzZYWG1sVmhoVjFyU29kWnJsaXJIcFhWLXpUemJVWExqaTRYLWg0OHBDQ0Z0bzRvYm9aS0NN?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):供应链博弈升级，苹果成本控制受阻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-apple-105
+  date: 2026-08-04
+  dim: W8
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI正面回击苹果诉讼，公开邮件及聊天记录否认窃密指控"
+  quote: "OpenAI正面回击苹果诉讼，公开邮件及聊天记录否认窃密指控"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NdHh0SW5adVNUbm1qX2IteFFVU3FBbnNOZm9KczNHY2tHZUViNThKM09yUWU4NmdHcEN2ZDZlQzRJOWYyM21rUjQxUVkteXJRclI1T1Bsc3NhN0lV?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):OpenAI公开回应诉讼，涉及苹果与AI公司纠纷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-apple-106
+  date: 2026-08-06
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "又升值了！苹果上调以旧换新价格：iPhone、iPad、Mac集体涨价"
+  quote: "又升值了！苹果上调以旧换新价格：iPhone、iPad、Mac集体涨价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxNbUNuZGZXMkN6cXVtUGU0YUdHMHI0cUI4NVVYSEF0Z1hlZEhXdVQxVHF3dGtrazN3TkloVkN6TTQyc0JfNk1fczNNTE1aQ3NTNldZMEVrMWRqZ1FESVlwUFdzSjNCZFdUSW9YYlRxS1RkcEo2RjJsWEhvMnRfeldROF9wSmwwUkxndWY2U0szYVJrSWcxRDJVOG8wRVBpR1NTLUdESFBHRQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):官方调整以旧换新价格，产品策略和定价调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-apple-107
+  date: 2026-08-07
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果公司将多款产品系列的以旧换新价值上调了最高30%"
+  quote: "苹果公司将多款产品系列的以旧换新价值上调了最高30%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBaejJ5c1hGZ3ZVZVRnSGtIM0g1Y2RSa2hVMldCUXotOEpVVEdlNmlTVjRPb3JZTE84YjhqSjMyZEtzRGE5QW5TVjBxUGNzWVRGZFFwUUxPR1dpY3hpS2tV?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):官方调整以旧换新价格，与i12重复但确认政策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-04-apple-108
+  date: 2026-08-04
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果官方突然降价，iPhone17 Pro二手价格反超新机"
+  quote: "苹果官方突然降价，iPhone17 Pro二手价格反超新机"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBHUmJPazN3MEJoeWJvUzg2Y0ZOR2x6cW1tNU54TTRZb0hOWW1YN2NTYVFUOGR6eHFtNWxZTTEyaUFuZ3FOWWdPVzVid3BiTjcwc19n?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):官方降价导致二手价格倒挂，定价策略异常。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-apple-109
+  date: 2026-08-05
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果9月或再迎涨价潮：Apple Watch与AirPods将涨价"
+  quote: "苹果9月或再迎涨价潮：Apple Watch与AirPods将涨价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1PMjJxbm5qQk4xdFUzam8wLTJMQ3lrU0JrWjJBcUc4SDVIX2ZLakkyaVJlRUNhdDFEeU9NYmtHaEZ5Y0NoaWtldw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品涨价预期，对消费者端有负面影响，但属常规商业决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-apple-110
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果库克9月卸任在即，新任CEO John Ternus能够让苹果再次伟大吗?"
+  quote: "苹果库克9月卸任在即，新任CEO John Ternus能够让苹果再次伟大吗?"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi7gFBVV95cUxQdzV1NlQ2UDVNZXpZc3RhVlNOZElfaTJOa3FiWnpkYUw3R3JtVWtxNEV3V1MyRG5WaWhkSmJXdTJ2bzdwNjA0STVXY1RIZEVoSlF1U0pjM2x4LUItT2VEN3J2c2pIZHkxbTYwMHFBY1BDWVlnRkMzQTY3cFE1V1hOX0Q5eWhxckFfckliWFlUU3I5MDI0bU9pT19DLUQ2TjVWbWlOd2pYaENvRlpkYkdRRFF6eHg0NmNiVTh1MzVzVXZ4OFktTnhDdWVNOFAwVFg2dW1IVU5YcTBxUDlTMElhelhDSmdOc1BHM3FLd3VB?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):核心高管变动（库克卸任、新CEO上任），属重要人事事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-apple-111
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI请求法院驳回苹果公司诉讼 称其借助窃密官司应对人才流失"
+  quote: "OpenAI请求法院驳回苹果公司诉讼 称其借助窃密官司应对人才流失"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxQM18tc1JHbmVPX0FnVzhQZ0VRazFodlZOZ3Y2MTNxaEhDT0xiemUxaXBsSWFIRkd1Tjl6cUxtSnkwcG5BWEhUaFNmNVZ5LXZKWHl0ZFowazU1ZV9Bb2NmcjJKLTY4cEFzRXR5ODRSM19TUHVyeTc4MWhwdG8yUVJwRXlxWjl2aS1SMkxUOVh0dk43RFp0RnkyRlFjQWc?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):法律诉讼涉及窃密指控，涉及品牌声誉和法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

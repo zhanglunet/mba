@@ -1205,3 +1205,64 @@
   source_type: media
   note: "LLM 预分类建议(high):融资完成，金额明确5000亿元，符合P0融资判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-07-deepseek-079
+  date: 2026-08-07
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek投资宇树科技1.4亿元；宇树科技王兴兴身家有望超200亿；小红书开启AI陪伴产品自研；张一鸣：字节跳动“拒绝蒸馏”丨邦早报"
+  quote: "DeepSeek投资宇树科技1.4亿元；宇树科技王兴兴身家有望超200亿；小红书开启AI陪伴产品自研；张一鸣：字节跳动“拒绝蒸馏”丨邦早报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHQm0zcWxkTVBabVZFZFVJUHpuSUxLU2pCLW5uM09uanRLbzQ0SjY3bTlST2JSWlF3Y3ltVE4zSmN5NXFTNkpuMWVuUVdmUTNyUlFCdmVURUpFT1lP?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):DeepSeek投资宇树1.4亿元，战略投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-deepseek-080
+  date: 2026-08-07
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "宇树科技IPO定价揭晓DeepSeek等9家投资者参与战配- 中国日报网"
+  quote: "宇树科技IPO定价揭晓DeepSeek等9家投资者参与战配- 中国日报网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxOUlpLbnY2WC10MUpfdWVPMFpjQmRkazVfR1lLSElRN0xhdXFjUS1BWjBJcFJyZjJIeXZzc0FNVE5Ga2xuczZIZ2ZVRzBvOWlUTV9fMHNZSUZhWi1EYU1EVndRc0dUcDVZWG1lY0xhc3JnWFh0UDBkaFcxdjdWYXB3LV9IMA?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek参与宇树IPO战配，投资布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-deepseek-081
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek等获宇树科技战略配售"
+  quote: "DeepSeek等获宇树科技战略配售"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTFBuSWNRZDNUbjZ3STM0TnU3TEEzSzVRelZXQjBGNjI4SW1pakJQVHBjZWRodDNQVG1qOGtTd0MwZThxQ3UxeWhIRTZnNE1rMnphaVhQVm5aa2tla0RLWUduaXowYjJPZ3VoaGlIVkdqbUlzdGZwMWp3Vw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek获宇树战略配售，投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-deepseek-082
+  date: 2026-08-07
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek 参与宇树科技上市配售，金额约 1.41 亿元"
+  quote: "DeepSeek 参与宇树科技上市配售，金额约 1.41 亿元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE4zTDNBSk11YVd1bWNrQUwzU3ZsY3c4UnJXVm82NHN2LW1zcTBLeGRSTDlRUnFEdE1oVmRGTmxwX24yQU5nenpURWJTRDVxams2Mk56d0E2Zk5uNUNwU3NvWXJR?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek宇树配售1.41亿元，具体金额确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

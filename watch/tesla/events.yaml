@@ -1322,3 +1322,109 @@
   source_type: media
   note: "LLM 预分类建议(high):全球第900万辆下线，生产里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-06-tesla-087
+  date: 2026-08-06
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克Terafab AI芯片超级工厂项目启动，自建发电厂，初期投资168亿美元"
+  quote: "马斯克Terafab AI芯片超级工厂项目启动，自建发电厂，初期投资168亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KVGtEbktEQkV0TWp4dnJWZXZXZmtFTU9XTGg2U1ZNVTR4RE5iY3c4SWFMNzBRR2JhWWJjN3JpMjBIRnQ4UV96Zzc3TklUeVV3eUVv?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉重大战略投资168亿美元建芯片工厂，涉及产业链扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-tesla-088
+  date: 2026-08-06
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "人民日报：从“年产过千万”看“特斯拉效应”"
+  quote: "人民日报：从“年产过千万”看“特斯拉效应”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTzJzeFpqRVdwZUVFaHNrMDYzTll0ZldFRnR6cFptcXFOak15V2xKNEk1WWlKRTdwQklEOVRmb3paOUhxenNvQUFrZ0lURDlveTRlOHN6T1VXaUk5RnlSWExvTk11UmFPcXRvTXdmci1BVy1HTWFLZmZaU2pDeFlWZTYzakJPYmRBQkpET2RUUVBzcFQyYkN3VnRpeXJYekkxem16a2ZnWjdFZW8?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):人民日报评论特斯拉产能成就，属宏观舆论导向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-tesla-089
+  date: 2026-08-06
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉谈论计划建造机器人出租车后，Uber和Lyft均下跌约2%。"
+  quote: "特斯拉谈论计划建造机器人出租车后，Uber和Lyft均下跌约2%。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxPb3pwcUFqaDlJZGxXRVRqX3BEY0FMZ0F6eUxnZk1rbVFpQ1A5Mklzc1NNZ2tBam5ZajFia0pvcUpEU0FKMWltY3BrM0NJVUFINDd0Y1FFTjV6bHA5V2JlYW1zc2ZXUkFmZlhZUXhXQmhXaUZTMDhkMUlheWNUR0IxZ0RBaEVoMWEzWEljZ1N5a3d5ckZwOEE?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):机器人出租车计划引发竞争对手股价波动，市场反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-tesla-090
+  date: 2026-08-06
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉CEO埃隆·马斯克：我们拥有市场上最先进的人形机器人。"
+  quote: "特斯拉CEO埃隆·马斯克：我们拥有市场上最先进的人形机器人。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxOdU11WEFXVlZnMW5yNVRiWnRNZjUxaGpoZnFWUlV2dUxzc1pKWWk4blJPTnFCM0ZudGJvU18xaU5EUTNWbTZwSUxROTFKUk5kTWlFR3oxNlpJXy1OVU5zNDNGcVpaVGtCcnJGMG9SeDNIejhoZWp4MDk0RjZ1by1KdWRXTnljVDNicDZNQnZhdVMzYzBkeTMzZTBoZFY?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO声称人形机器人领先，产品竞争力宣示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-tesla-091
+  date: 2026-08-06
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "EVgo将部署数百个V4 Tesla超级充电桩，品牌独立运营-能源电力"
+  quote: "EVgo将部署数百个V4 Tesla超级充电桩，品牌独立运营-能源电力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyM3EwaXowR3FWU25LbmNNcVRiU3B3OUpjMmduMjItQzA3MHk1UWFwSWVUWngwMnVZdlFyTzlvUk1XQXFCYjZNSHhWR3ItRDZsM1NjWDg2R0pGT0FveVdoc1pxUQ?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):第三方部署特斯拉充电桩，生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-tesla-092
+  date: 2026-08-07
+  dim: W8
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉超速被交警拦下开罚单司机坚称自己无辜：是FSD自动驾驶开的车- Tesla 特斯拉"
+  quote: "特斯拉超速被交警拦下开罚单司机坚称自己无辜：是FSD自动驾驶开的车- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yckZkTXZ4WUlHRzhQWk9mMGs1M3dTYmpkSS1oNFRYWjY4QWs0Q0MtcUNSZkhIUmhUc0JyU0U4WUU4dlZZMDctTmR6SDNWMVEtR0Q3SnNiQnZpNVYxMFVXYw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD自动驾驶责任纠纷，涉及产品安全争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-tesla-093
+  date: 2026-08-06
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉与SpaceX宣布将投资168亿美元建设Terafab芯片工厂"
+  quote: "特斯拉与SpaceX宣布将投资168亿美元建设Terafab芯片工厂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5CNXZtOVhxTmFDQlM4Unk0aXlESnNwX0JEalJ1ckhQWUZlaTRwZUtGLU5nTW01dE5wekRZUkN6Z2wzQXhhdEFyUGNkdlFQek10MElrcVRtRkZCMWVfY0JqY1dYbi04dw?oc=5
+  fetched_at: "2026-08-07T04:33:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉与SpaceX联合168亿美元芯片工厂投资，战略重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
