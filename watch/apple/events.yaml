@@ -1702,3 +1702,64 @@
   source_type: media
   note: "LLM 预分类建议(high):法律诉讼涉及窃密指控，涉及品牌声誉和法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-05-apple-112
+  date: 2026-08-05
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果计划将AI眼镜打造为健康健身终端，完整运动功能或将延后至迭代机型"
+  quote: "苹果计划将AI眼镜打造为健康健身终端，完整运动功能或将延后至迭代机型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ZVE9La1pOVEtEeTAtV3dpN3ZJMUtKbFlPbi0wNXNSZGF5S3duYzMySUFjdnRNZHgtaERVTXg4a0FxZmdLRG16TUdhU01WMklIYXdPOXowZnBTQmp2?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):AI眼镜产品规划调整，涉及新品战略但未正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-apple-113
+  date: 2026-08-08
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "降幅10~15%：苹果美国扩展官翻Mac、Apple Watch等产品"
+  quote: "降幅10~15%：苹果美国扩展官翻Mac、Apple Watch等产品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE13Y2l2LWFRcVBFUzZCZHVLbzhYX1RmZldRX3pKNTV5UDFXMzBjaHhscTJLT0dsSDFaVFV3NUZoZHJIUFVFVXo0LUF1aGw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):官翻产品降价促销，涉及定价策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-apple-114
+  date: 2026-08-07
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果加速印度化！"
+  quote: "苹果加速印度化！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizgRBVV95cUxNWDdGeG9sdEs0Y3RlWGNPTUVaWWxoRE1Ta2FKTzZyNFlKUHhIbkJGQUdUeEU0clJIRHJlZ0U1bGIwa3hsU0MwNEp2SU5tNGUteXo5R1FwUDJ4X3YxUFQzbU9DTUVSOXRmSVc1bUxaNGlwU2NmUzNWX3lXZFI5RUJ2ODhtRHJjUWV0TkZpUDg1N2luX0tfbzBTV0ZTLVVMdHg3NjNzeEZUajdZN3RIN0pPRlV0LXRqU09JWTRvYU1DNE1OTGF6ZXd0ckM0R1BUdmdxRkU0YThpd0ZQaWU0TWlFdEEyMmRBWk5LQWRwcGE2azdvWU1JY2wxV25RN29qUXVDM2tsN0x3U2pyaDRqQ2o5RUU2ZzRWOXZfMkpMUjV0Q09GYWpkbV9sV2NhLTBFcmdBMWxZUXVxM0xrQ2wtV2tZbHpiZTZYSVlMbnMyTk1fMU8tcXZTSmdlX3FmQk5KSUF0cUtBeTZvUGs1RjBOdjB3N0dwcEpyVEFvSWFtVVV5ZDhpN3hub21hUGV0MlBrNGlpRnAxZ1Q4SFZxZmo2ZUM0VGxJVlRXT3JUaURmQkhNMXpFbWdLTWVMY0pVbnpBSkxMZ042YllYeVp6WUlaYjZmWlM2ZGM4dEV3NEhoRV8xV1BZLXBvUms4VmltMVdPenhaV0VfNEpxWHQteWdKbnFsN2FYV0ZKYUw0d1RySnU0SnJDTXdFcXVqeXpUT2hoV2dfTWFMNjJUZk9KeXdPSGFreWt5akxzVzFCRUl3d3lpallxREdCT1k3U1dkSUUwZw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):标题党，缺乏具体信息，难以判断实质内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-apple-115
+  date: 2026-08-07
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "传折叠屏iPhone、带摄像头AirPods与触摸屏MacBook或将于半年内陆续面世- Apple 苹果"
+  quote: "传折叠屏iPhone、带摄像头AirPods与触摸屏MacBook或将于半年内陆续面世- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1GT0J5TzVaeEhrVlNRY0FaaTBQUVdDY3FZZHZ1NEZMLWp6Y1N5bHp2Mm9RU3JlMnpCVFhib2dMZGRTRGRHeG1vMXRjM3R0SHUxSXBLcmM1SlpHY0htVFc3Qw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):多款新品传言，涉及产品路线图但未官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

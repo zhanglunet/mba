@@ -1355,3 +1355,79 @@
   source_type: media
   note: "LLM 预分类建议(high):AI购物助手战略布局，电商创新方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-07-amazon-089
+  date: 2026-08-07
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Inside Amazon's first-ever drone delivery site in the UK"
+  quote: "Inside Amazon's first-ever drone delivery site in the UK"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTFBlSWNfeVI3cWh1Q1NKM1VsRnl5WDZlZVE3Yk1FcHA3UUVGZnVKQVR1dUN3UGc1MkxqcmRoSThGbHJIejhrcUp4WFRmSlBXS0dmbGJ2OUlqbFhWWUU2YUxXS3EyZUxSWlR3SWtMVFNjZXVrSU85M0RkOFVObnhOUQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布亚马逊无人机配送首个英国站点,重大业务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-amazon-090
+  date: 2026-08-07
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "市场传闻：亚马逊AWS工程师因算力资源趋紧，面临更长的CPU服务器等待时间"
+  quote: "市场传闻：亚马逊AWS工程师因算力资源趋紧，面临更长的CPU服务器等待时间"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc1JTaHVGeEN4dWVTSnJNTV9QbmZRbzBibVRIT0I5RC1JRERoNXppZ0pndldjVlBUdkl4MWcyOUFNTGRHTzJDWDExaWpTTDhaM29yTk83aDdxNVpqQzV3Nzk2a2gzSzU4TkJoTnZ0VlYtZFVoenBTaGhTUUt6MFZVSjRqanRjdnFJN2xnRTBPMHJtczJmYk16LVB1YkFheDFFQ1hXYzVHY0JRUQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):AWS算力资源紧张传闻，涉及服务能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-amazon-091
+  date: 2026-08-07
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊上很多产品根本不是新品，只是换了一种「人设」"
+  quote: "亚马逊上很多产品根本不是新品，只是换了一种「人设」"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBaT1lfeWtSNmtCQVQ3RFJ5OUd3bUdpWFQ2MGpUUEZMelliMnZKbTk3UElNQmt4SmJfOXRaeW5TQU81LXg4WWJLR1BwSmY?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品虚假宣传指控，涉及商业诚信。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-amazon-092
+  date: 2026-08-07
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "亞馬遜如何在加州悄蓋數據中心？居民開工才知情"
+  quote: "亞馬遜如何在加州悄蓋數據中心？居民開工才知情"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE1YNWNSTHBCZDNQRHE1QnhCX29kQS1NT1M3YzNEcGM0VFlOZUpkbWp0YnAwcHA3SEIwc2hWdlNYdTBVZnFady1YUkR4enVVclVzSXdrWGVOVkl4cklyNmtzVG5KS2JSdUUxRUHSAWdBVV95cUxNTG9TT1VFWDF1SEMwLVlYZTJvTVhmRXRpNWJhY0FXRnFfbFY2RFlJNzhIMTFDbTdRcTZFek50WHh3RC1WNlRPcy1PWHRGUGhXbkkxVnhpT0l6MVlvYklBSVFaTXNlN2xn?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):数据中心建设隐瞒居民，涉及透明度争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-amazon-093
+  date: 2026-08-07
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "LaFontaine Automotive Group 加入亚马逊汽车市场，其在密歇根州拥有40多个零售网点"
+  quote: "LaFontaine Automotive Group 加入亚马逊汽车市场，其在密歇根州拥有40多个零售网点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAFBVV95cUxOTkN2NExsbEFVOTlMSlAyTlR6MjIzQjJlVlR0aWhHN2NQWklPOGg3YTg1WkU1bm9zV2I3WGc0a2pXb2h2R3Mtdk1CLVZwU1l4WDZmdF8tTVViaUJzd0cyNEFENHJ3Z1k2ZUZMeDJ2aWt0a0VMMy04RzlnUUt0SEtXT2NrMDBOaFIwTmd1cklDV3RqcWlMUDJUYnZRQ3IteG8zLVVPY0Z2RlgxSGx2dFZpeE9sWUNrN3RLSlhmbg?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):汽车市场新合作伙伴加入，业务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

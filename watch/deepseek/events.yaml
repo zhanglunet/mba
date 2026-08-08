@@ -1266,3 +1266,64 @@
   source_type: media
   note: "LLM 预分类建议(high):DeepSeek宇树配售1.41亿元，具体金额确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-06-deepseek-083
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek 网页/API 性能下降（DeepSeek Web/API Degraded Performance）"
+  quote: "DeepSeek 网页/API 性能下降（DeepSeek Web/API Degraded Performance）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxOMkhTMFRXbmJXV3l5NmEwRlJxSDR0aFJZUGJObWxEanZoVWRrNG1NLTJtRFBvWlAySHRBeS1YX3ByOHNaMEJ4WkZQZTVMRFQ0blEwTVQ2dFpmcGUxa28tbnEtOXRMNFJxazFPelpEYmRaTVVtalFheVp6Zjl2WER3emJNb3g?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布服务中断，重大可用性事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-deepseek-084
+  date: 2026-08-07
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI 首款AI 硬件曝光；DeepSeek 拟上调API 服务定价；曝字节拟训练超5 万亿超大参数模型｜极客早知道"
+  quote: "OpenAI 首款AI 硬件曝光；DeepSeek 拟上调API 服务定价；曝字节拟训练超5 万亿超大参数模型｜极客早知道"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1iQVZUUnJuamk2UVFKRXo5eXVoS1dyWFZVUVJXZUlsU1FMZ3gydDdJTk94Q0RtSWJIeWJrd0ZZaExSVkZpdWhZb2g5a0V2VVVxQVRZWHlOeHhuVjRp?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):API定价调整传言，涉及商业策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-deepseek-085
+  date: 2026-08-08
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek 1.4亿元入局宇树战略配售，为具身智能铺路"
+  quote: "DeepSeek 1.4亿元入局宇树战略配售，为具身智能铺路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxPNXpTeVBXY1BQUnozeW1wSHNBT3V2NWdrSzBJWEZiaU5hbW1lLTR6ZWV6dzhiQVE2SUZQODVuWjhaX1FtZ21KMVFQLUpmSE5ScWFvb2hBZnVjTDBJZU5jOWNBb1VLajIyaXVUbmhnck83ZHNCTVlTVDhwdVItcGx1cUlxTXE0RzJEeldNMF9LMmhiMUxM?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek战略配售宇树IPO，体现具身智能布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-deepseek-086
+  date: 2026-08-07
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "王兴兴回答超300个问题，谈美国禁令、DeepSeek-观察者网"
+  quote: "王兴兴回答超300个问题，谈美国禁令、DeepSeek-观察者网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE14T1NsdERxbTFkM0YzeVdLYVY4Q1Ewa00tUENJXzZfaU9jU0NwV25XZTlaaUJxNXpsTGgyOWVyLW5fYUE4UHZOMTJ1ZmlRZmI4RlV3T1hyMW1VQ25wNWx6YzJjZUhiQQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO公开回应美国禁令等热点，体现官方态度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

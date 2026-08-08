@@ -504,3 +504,34 @@
   source_type: media
   note: "LLM 预分类建议(high):新产品体验评测，产品线扩展信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-06-dji-033
+  date: 2026-08-06
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "大强AI说的想法: 终于来了！大疆Pocket 4上手 | #数码 #摄影 #Pocket4 #DJI 大疆创新"
+  quote: "大强AI说的想法: 终于来了！大疆Pocket 4上手 | #数码 #摄影 #Pocket4 #DJI 大疆创新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5pZXdEcHlVRWJILUhxZmJWMEVJZDZGN3ZDekUzaklyRVhyMkZ2cDhJMXoybDhDdHN6MHBQVXFNMW1jVm04TEl3enZKVjV4SUVJdldxbXdMLU8?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(med):Pocket 4产品上手评测，产品动态信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-dji-034
+  date: 2026-08-07
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "大疆Osmo 360 II 全景相机8 月 7 日开启预约多项体验短板完成优化_业界_资讯"
+  quote: "大疆Osmo 360 II 全景相机8 月 7 日开启预约多项体验短板完成优化_业界_资讯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE5LZ2VEVlg4V19SMC1CYV9NakVNZHdheG00UWQ0bVpwaWxJWHdnSy1tMFB0cDZrQTdoX0dvUzJSTGhVQ0RJUnl3VWRWUW1QNTFKaGF5MEFBMA?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Osmo 360 II新品预约启动，产品发布节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

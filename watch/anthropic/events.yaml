@@ -1930,3 +1930,124 @@
   source_type: media
   note: "LLM 预分类建议(high):Meta发布AI编程智能体与Anthropic竞争，行业对标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-08-anthropic-126
+  date: 2026-08-08
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推出Claude Code跨会话通信功能提升多任务协作效率- AI 人工智能"
+  quote: "Anthropic推出Claude Code跨会话通信功能提升多任务协作效率- AI 人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFB4TVhuU3YxM3M1aGk3S1BEaklQS0p1MmVVci1Yc0tPSFpub2lPYk9YOFhGXzg3WUFKRXc4eXdQYW1DUWtWX2xVamZBYjZiczBta3ItYjlsTkJXV3AySHJfZg?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude Code功能发布，产品更新事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-anthropic-127
+  date: 2026-08-07
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic即将启用实名制刷脸"
+  quote: "Anthropic即将启用实名制刷脸"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBjQXFmcWhDRkZvMFZvZkRvaWZPNWhBYnhtSV9GQ1pnVHljZUZDcGNpSDRQemdTREpwUG1RNlNOU0JpZkp6c2g3RlhZU2EtZw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):实名制刷脸政策，用户隐私相关，可能负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-anthropic-128
+  date: 2026-08-07
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic旗下AI模型误入真实网络，意外入侵三家公司-人工智能"
+  quote: "Anthropic旗下AI模型误入真实网络，意外入侵三家公司-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFA0dE5HTFBzdlJCTDdVX3ZCUmdjc1BrdkFGdWY5NWNtREc2YW1oVTJ5bTB1RDdHSTVZcnlyMDJhLW1BOWUtMExaR3Q1Z2xfZ2NNOTVrQXc5TUtBOHdVR2c?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI模型入侵公司，安全事故，重大负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-anthropic-129
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic官宣组建芯片团队，协同设计Claude与硬件提升运行效率"
+  quote: "Anthropic官宣组建芯片团队，协同设计Claude与硬件提升运行效率"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE1jR0JuRVdYTHlxZzd1c2ZucFpVZmJCZGtBcExSQjJpM1otb0E0bGpBRXV6T1hnZ0VTYmFuMXdqRElNbWxQS19kVnlBVjE1YkJVRXNUXzVTblFkb3lWZmJhZVk4eFY1aEU5dFFJ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):官宣组建芯片团队，战略布局重要事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-anthropic-130
+  date: 2026-08-05
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "外媒：Anthropic确认正在为Claude组建内部芯片团队"
+  quote: "外媒：Anthropic确认正在为Claude组建内部芯片团队"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5CVERONVpYWGdRcUV4R1lUUzUzN1VrTnRUOWo1MmJpZml1SGZDX2xBd0lLSmhSRzBjUEJuYkM0bUFzWnlNRm9jSl9Sd181UEhuNF9QSmNFd24taDMzZkhYbHVPOENmZw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):与i13重复，芯片团队确认，战略事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-131
+  date: 2026-08-06
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic组建自研AI芯片设计团队-芯片"
+  quote: "Anthropic组建自研AI芯片设计团队-芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9tajU5S1hrT0lFYzNPY0NmcGRvMVVKbF9EczQ5M1NZc09WNFpUYnI1YXBWS3FNU3dpQWducEhlaWx0Q1NyUkFEMDI5QTlha0oybXBLZzNBQXlUajgwaWU1eGR3?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):与i13/i15重复，自研芯片团队组建。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-132
+  date: 2026-08-06
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "【Anthropic】将自主设计定制芯片以支持Claude模型运行"
+  quote: "【Anthropic】将自主设计定制芯片以支持Claude模型运行"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOQmJ1bGRBeHlHMGtxalVoUERFZU5fSFlXRUdmNlBuNjhZNGU0ZlBjdnhtc0V1ZDN4ZXBaTTZEa1lTNW9jVS1kdUFxbWZ3cEEzU3U4QVE3NXFlQU1JMWNSbFhZdmcwOUl4ZHVyV3YzNE9NLUF4Z3VGSFQ3c1NoaGZZWDk3WGwwbjNVZzZ5YQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):与i13/i15/i16重复，定制芯片设计战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-133
+  date: 2026-08-06
+  dim: W1
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "【Anthropic】将自主设计定制芯片以运行Claude模型，采取多芯片战略"
+  quote: "【Anthropic】将自主设计定制芯片以运行Claude模型，采取多芯片战略"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOekkyMGJGcWlKa3Rua3cwV0o0ci03dGoxRXBsdzAtdTAtRllYMWJKSFIxRlhyTXMwdnp5QXBNNjBhYTlzZks0NjU3Wk9rdHQ0YjNCTXdrVTdMTVNRZ04zZmV1Sm9jNHdaWGt1UzM3Ti1DN1RoQWYtbUV0UFlCeXkzeV8zSUxraXV2ck44eA?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品Claude运行的芯片战略调整，属于重大技术决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

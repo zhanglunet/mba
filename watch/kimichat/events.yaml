@@ -1785,3 +1785,94 @@
   source_type: media
   note: "LLM 预分类建议(high):IPO传言澄清与估值更新，重要融资信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-06-kimichat-117
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "趋零成本的奇点：Kimi K2.5、OpenClaw 与“免费智能”@6:03's Moon Day 3.3"
+  quote: "趋零成本的奇点：Kimi K2.5、OpenClaw 与“免费智能”@6:03's Moon Day 3.3"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MRWF3YVJyOTZiakZVMzRvWHFRcU9ieE9oT0x3MVZNRm04M1BqQ3U1Nk1acE5ldk85aVdGa0tsWHpuT3lwcFk0M2RodmV6TFNYbWhSZWM4MzlzSkp1?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Kimi K2.5版本发布，产品更新信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-kimichat-118
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "報告：月之暗面Kimi K3模型越獄 性質嚴重"
+  quote: "報告：月之暗面Kimi K3模型越獄 性質嚴重"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBaMEZHUmNSamJjTTF0VGVua19VWlM3VVBUalkyZzg3d05TR0RNYXpzR1g5T0F5RU9WUzQ5dV9hSHZsbFFQSlY3Z1hjUm1rbVZjaUJJeFZmZnh3UjBub0dF0gFkQVVfeXFMTm5pQldtWUhlWkZLem02ZzZOTHBZY3RJbjJLSVJiWHpxSmRiWjY3dnl1aHFfY0lqXzNoSF85YTNRRGZRTktYcklSRFhPWFp6TmkybFNBQ0w2cWhURDM3Y25XLXdDdQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3模型越狱安全事件，品牌风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-kimichat-119
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Kimi K3“越狱”逃出沙盒 专家警告恐成骇客工具"
+  quote: "Kimi K3“越狱”逃出沙盒 专家警告恐成骇客工具"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAJBVV95cUxQQ2RDTC1rNkNJeVQ2MkJPYlQ4dzFOb1BhT0lDdnhuUVA3dldndnhmR3hvWDJaZHBpN09CN0kyczRRV0hVQi1pUkNDZGozUWF3Y29tNE1LM0RTa3dacG5lb3BnRTRsN2ZYSWJrX2FvTlpHckZEMzItSnFQY0lQTlRPMldUakJwczNXTzdKQW9BbG5vUGZGWi1YYi1pNGx4elU2cWVVNV9HWTNSRkloTl9VbF9QTmcyazIxQ3ZQUE15MDM2Y2owenpxUEJmdFY0YU41cUVqQ1BUV014ODB0MG9RdGRlTHpXaGRJMmk3RWloMUZ3VTNlaXViUGxUVjRIeGdxZVQ1eHVZSElVNnlVZndhUVlXWkJ2aTNjM041ZElQZlpPcTgzQ29vQ0JXZnI?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3沙盒漏洞安全风险，重复报道同一事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-kimichat-120
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Moonshot大模型Kimi K3借“沙盒漏洞”溜出围栏"
+  quote: "Moonshot大模型Kimi K3借“沙盒漏洞”溜出围栏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixAJBVV95cUxPZVFwODR5VVRDUi1EVEVXVXg4eTRNSUdpbkpUX2R0SW1oTC12OTlhYUhIQ283bVZmaE9scTFKYUYtQVZsU3JGZHI0MGlwVU9uSWdJbGVKVjEtd1ZkT2pJMTE0dS1aUUQxdVU0YmpFOVo5QngyNDdXQXhaY0ZGQ3BUZXdqSm5OcVllMzFmRlhSNEJjUWtvNHJLVTh0ZlFGNFozSnpQQVBNekxUVWZNWGgtcFJ4X2JvN3cwNktIdm53WkVRV1hfM1VvYnNDQWlFV1ExWTZkcGk1QWh5OTBuQjRZNEJRS3oyOFBWc3Vub3V6ZGpZeUZ0NjVfaDBOY2doU1VZYzgwTGt0YTZPa0lvZ3RzalN2R1d0Qm9xMXJET2N3TGhiT1lTdk10QU8yWEdNNjFJWUhsZHFjSFhiOUh4U2RUZEc4WWM?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3沙盒漏洞事件，重复报道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-kimichat-121
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Kimi K3測試作弊 跑到場外上GitHub抄答案交差"
+  quote: "Kimi K3測試作弊 跑到場外上GitHub抄答案交差"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTFBkSEFycVhGcHdybU5lVXdxUkd4bHJOaTRRTjllYkFJTWtLR1V5RVBjR3NXT1J3VzNRM1NveFVrTWhRY1lQbGpfMm40UEc5WFNkU2VDMmMwOThRMC1QU1Atcm5xWFnSAWRBVV95cUxQZEhBcnFYRnB3cm1OZVV3cVJHeGxyTmk0UU45ZWJBSU1rS0dVeUVQY0dzV09Sd1czUTNTb3hVa01oUWNZUGxqXzJuNFBHOVhTZFNlQzJjMDk4UTAtUFNQLXJucVhZ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3测试作弊事件，重复报道同一安全问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-kimichat-122
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "中国Kimi K3模型 引发资安风险疑虑"
+  quote: "中国Kimi K3模型 引发资安风险疑虑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mSzFRM29kdG5lVVZObTVjaGp1TE85R1ZwWkxuQjVaeThCRXhrTTI0MlM0emRzZ0ZILWRuZ2ZHU2xESDJsSHFJVTNWZDBFV096RUdleC1uWkdJd3RMWmc?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3资安风险，重复报道同一安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

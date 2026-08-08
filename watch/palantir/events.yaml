@@ -250,3 +250,34 @@
   source_type: media
   note: "LLM 预分类建议(high):财报期间股价大幅上涨，商业收入表现突出，具有显著市场反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-06-palantir-017
+  date: 2026-08-06
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "帕兰提尔“史上最佳业绩”……“SOL帕兰提尔备兑看涨期权ETF”受关注- 阿视亚经济"
+  quote: "帕兰提尔“史上最佳业绩”……“SOL帕兰提尔备兑看涨期权ETF”受关注- 阿视亚经济"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBXTDVjZnQ3V05OVUt5TVFaTDJpNnVRYTd0TDkyVUp3aGxUOTFCblYyUHM2VlhvajlyQVhvRGJkN3BHU2N0bm1tdVEzWlhlWVJaTG9NalJLc0tQdGwyU0dUMktIaE55Zw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):财报业绩创新高，涉及金融产品关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-palantir-018
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Palantir是赢家：AIP快速普及、盈利能力扩大、自由现金流激增"
+  quote: "Palantir是赢家：AIP快速普及、盈利能力扩大、自由现金流激增"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxOaDhmeHpGeFdnTXRsZVNaUjBXWmtNOEJXTGNSSWk4b2pFZEt4TlljUEtDTU1MM05zbUtaNFFTZjdYWGpRMjZwd2dYcmRVTGRjbWpKeWdFNlhubnJHVFJWeVJtcXUyaFp3RFRTcFJyT3lmOEJVNU1PcnZTZEtCR3ZHbA?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Palantir业绩亮点：AIP普及、盈利扩大、现金流增长，显著正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

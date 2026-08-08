@@ -1980,3 +1980,49 @@
   source_type: media
   note: "LLM 预分类建议(high):官方宣布免费用户功能扩展,产品策略重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-07-openai-128
+  date: 2026-08-07
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI暂停部分Astra模型开发，Astra或具备发现并利用零日漏洞能力"
+  quote: "OpenAI暂停部分Astra模型开发，Astra或具备发现并利用零日漏洞能力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE0zdDZGNEJoTFdXOGtiS0ViakxDNllLLXhsTkZ3djRNUHloemROT1pzYXpreGJtYzZiVXNIaWRfV0hxazBwUTJ4T1o5clhfT0lETDNF?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):模型开发暂停涉及安全风险，具有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-openai-129
+  date: 2026-08-08
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI因网络安全担忧暂停新AI模型的部分研发"
+  quote: "OpenAI因网络安全担忧暂停新AI模型的部分研发"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAJBVV95cUxORnhLV0F4QkJiNDctSnplRWFSMnFiMVQwZnVtYmctRWMyY1ktME5QZHFHSmpRQXB1d29TaUtwWUNING5zS2gxNTBObDlMdy03VzN2T0dUeVBnM1drOWU0Yk5Rakl2MEI0NHFLX1ByVzFlRFQwRk5Jek9oYmF0U0tmdWZZZlJkd25hZTl0bDNGX29CTVZiWktzZmNNTE9sb01BeGxsNk9tREJaVHkyMDhZZWFONks4LXVDY3BBWUlKdThmSm9xempBdkpfaDFCLUctbGFnMUZHa1I3dzZ2SGxtSldfY2h1X0JMM3pXczlRd0E1eXV6TU0yeDd1Y0c5RHgxM3VvanVBUEU4ZlZBbGk3NDFhMGZXeTF3N3lGNWNpLU9QNEFO?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):网络安全担忧导致研发暂停，重复第1条核心事实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-openai-130
+  date: 2026-08-08
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI闭源模型失控事件的最新进展如何？"
+  quote: "OpenAI闭源模型失控事件的最新进展如何？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE10ZE9OYkVtQzFyM2ZOcnhoVnNOSUpyTndoRzh0WW5UbkVOd1c0MkVGU1gwZnBpa0VmakM1c2w0N25HMzBRMHZEdDNBM3E4bjNfak5LcjgyYlZ6eHdVa1NSelJBd2VYX3F3MjlwOTk3aHQ2RWU4NUIxdkVCNXM0OVk?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):闭源模型失控事件追踪，涉及安全/治理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

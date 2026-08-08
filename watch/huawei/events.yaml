@@ -1159,3 +1159,79 @@
   source_type: media
   note: "LLM 预分类建议(med):涉及品牌争议事件，舆情关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-05-huawei-076
+  date: 2026-08-05
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "HNS 2026 | Huawei Launches Xinghe AI Fabric 2.0 to Drive Data Center Network Evolution in Latin Amer"
+  quote: "HNS 2026 | Huawei Launches Xinghe AI Fabric 2.0 to Drive Data Center Network Evolution in Latin Amer"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxNekI5U0tQXzdpODRNdE1uWTlPN0hqeGo0cV9xQ184NzQ5OG1taGVrLS1BT1ZLWjAzTmcwbzNVTHdPaFFOMnF4ZnFxV252MDRtd19yZXY1cEVKRlhnczA5cF9JQnMyVVVOME9CaUNsQmdoQmlwRUVwXzc0NUFSWjQ2cEpxMXBPMEFYYnRnNEkwMzAtNlZuYnVpSGRFLVcxZw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布AI网络产品2.0版本，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-077
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei Launches Xinghe AI Full-Scope Security Campus Technical White Paper for the Latin American Re"
+  quote: "Huawei Launches Xinghe AI Full-Scope Security Campus Technical White Paper for the Latin American Re"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxNR3ZIZ0VGbGwybnNmcXppTjg4RjRjcWlHalNFRE9GNFlaQXB4NGI1ZlFteC0xNlNsNTBxSFM4d0VDY0N5RnRjNE90NU1zS3RiSy1FQjEwVzAtM3pOU2VvaE5rR2tUazJ1aDRZRFJueWNweXJFSzdqeG5JUGNfNlVxWDNBNkRIWXhyTnh4UmRKdXpKcEU5ZVFiMkFTbXdYZXh6NkYzOWxLNFZUWFgzdFppNS1pYjhjUQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布AI安全白皮书，战略举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-078
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "HNS 2026 | Huawei Releases AIFW Technical White Paper in Latin America to Consolidate Digital Securi"
+  quote: "HNS 2026 | Huawei Releases AIFW Technical White Paper in Latin America to Consolidate Digital Securi"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxQdnZqTE1MV21vclh6bzdKa20wMmJYMGJBbEtOalZJX0QwUFVHalhLaTlib3NXM211Ym1BUTRhWDJRV1JoU1dDZEY3MTRRYXNFTGFTZzlwbGFXQ1NvYUNESC1DckNNVVpxTk1ZYnNJYVI3cFlmZmoxSkJFT0RfZnBDTWV2RnJVbHd0UE44UkQ3MEJmQjFwN2dROXNFcVlCbHdqdkVNaUtR?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布AI框架白皮书，技术输出。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-huawei-079
+  date: 2026-08-05
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "24.99万起！华为智驾新车官宣：8月8日，正式上市"
+  quote: "24.99万起！华为智驾新车官宣：8月8日，正式上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YME9jbHN4UHZuS3JwaFU5cU9DeGZ1UkRpN0RJMTJhYlZhR05VdGZHeFJzS3c1bnBUTnhpdVI4YU01NVlqaEtnNzF6a293eXZSb0Q5WW9XaE5zVlRI?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):华为智驾新车上市官宣，旗舰产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-huawei-080
+  date: 2026-08-06
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "余承东口误报错价，坦诚道歉反圈粉"
+  quote: "余承东口误报错价，坦诚道歉反圈粉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE9hcDBJYVBTUV95S1hZMUVKdWFUSzVvUmVHWU1zcjBOYk84WnVtVVJnQVRuc0ROV3laRFZuTTRzcHZENE1PNnhQdXM0cnVYOGk5ZVZ6TVpJUjhaaGw2bk1NdnJWc3ZCSWxpMEVfUE45VVl0VEhQQ1hnaktXekcydw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管公开失误与道歉，涉及品牌形象与危机处理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
