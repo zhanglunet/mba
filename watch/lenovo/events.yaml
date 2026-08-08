@@ -752,3 +752,49 @@
   source_type: official
   note: "LLM 预分类建议(high):联想TruScale DaaS服务扩展案例，产品应用进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-07-lenovo-049
+  date: 2026-08-07
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "港股异动 | 联想集团(00992)涨超6%再创新高 下周将发Q1业绩 ISG仍为最大增长弹性来源"
+  quote: "港股异动 | 联想集团(00992)涨超6%再创新高 下周将发Q1业绩 ISG仍为最大增长弹性来源"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxOYXFSUDRPSkF0TlplQ0NkTjQwVi1NV2MxNXhEZEdlTHotTkxKM1hGbTFQWEpuMjJqTE9rVThJOFFsblVOX0Z6MU1kcDR0aW1ISUVnYURBcXpObnAzQXE1cFVvZzg0MEM2NnBVNDBIUGlzRkNYYXFoU21peDF6bzhyZXpUbHhCTGIzRHNjbEZ5OGxfNmFiSEtFMTJ4ZDRoN1ZnYWhsWFhB?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):股价异动+Q1业绩预告，财务信息相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-lenovo-050
+  date: 2026-08-07
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团再创新高，下周将发Q1业绩，ISG仍为最大增长弹性来源"
+  quote: "联想集团再创新高，下周将发Q1业绩，ISG仍为最大增长弹性来源"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxNMmp4TUlwRDRRa3lZeXNkM0hSWDZkN0pZVlZYdkNGR1ZYbEpHT1ZaYTFZTmg1NWZoY2Y3V3NMMndGeFdkRXZ2VXBsTzZsTUY1bUdYVy15eXNSMXNXcl92bWRNZ1diZWFZMVBpMkVYcjgyTHFTbWlZOHhhTDR0OS02M3ZQcWRJd3VpbnZEZDdybw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):与i1重复，Q1业绩发布预告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-lenovo-051
+  date: 2026-08-07
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "联想入股人机交互领域研发商光帆科技"
+  quote: "联想入股人机交互领域研发商光帆科技"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxQdzVtV0xHVnR6Si1pQmNXeE5QWFVrOENMOFRXNzdObnB1bHpHSEFTZ0dTZ1RfRC1HWW1GR1hGVWNsX0N6Sm9kbWhDWXBBczhyVThtNmlGczZfZFpqSkFjNXQyNU1TRnlycUE0T3Y4WWpqY0wzbDJiVXB4bDZfZzZ0bmZxa2EzcDB5R0F2b0ZKajk4WmNqbnpKVUpBaVh2OW9IaXlnMWxTMjZEX0l4N2c?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):联想入股人机交互公司，战略投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

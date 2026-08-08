@@ -1755,3 +1755,94 @@
   source_type: media
   note: "LLM 预分类建议(high):大规模股票解禁,涉及融资与市场信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-06-spacex-115
+  date: 2026-08-06
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "美债正式突破40 万亿美元大关；SpaceX 首份财报出炉，第二季度营收达到78 亿，同比增长92%；广东一事业单位笔试第一考生被第二名花钱劝弃考，教育局已开展核查｜早报 20260806"
+  quote: "美债正式突破40 万亿美元大关；SpaceX 首份财报出炉，第二季度营收达到78 亿，同比增长92%；广东一事业单位笔试第一考生被第二名花钱劝弃考，教育局已开展核查｜早报 20260806"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hY2lVVjVYRGlMSFczWThZSFBiZWVDYjVTTUpBcUIxQmJSaXJnN01qUlZxOUFiei0tUnhOaXNwV1FIWHM0R2ZlSzVkQzRvQ0hEY3ExVHFkXzVtQXNX?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):SpaceX首份财报公布，Q2营收78亿同比增92%，关键财务数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-spacex-116
+  date: 2026-08-07
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX解禁后两日暴涨23%，期权成交创纪录，空头回补或进一步推升股价"
+  quote: "SpaceX解禁后两日暴涨23%，期权成交创纪录，空头回补或进一步推升股价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5nSWp2Sy1IRVItY0txblBqRlVQQWhPZ0xSYkN5UmQxOFZxUktNT1JBYURWaHUwVFlOWUtnQ2FDV0xQZVZQZUV5MHktYV9ERXlFcnlz?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO解禁后股价暴涨23%，市场反应显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-spacex-117
+  date: 2026-08-07
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克得州芯片工厂再曝新细节：SpaceX将自建能源系统保障生产"
+  quote: "马斯克得州芯片工厂再曝新细节：SpaceX将自建能源系统保障生产"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9xV2tPbDRPN2ZaQS1mMXFMNEdZcThMRGpLQVVwSzhuN0I0bjhBa0tkWDhEakwtdndpQVc1R3VsQWJURDJaNllyZw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):SpaceX芯片工厂能源系统建设，战略投资新进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-spacex-118
+  date: 2026-08-07
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX巨额AI资本开支是否会导致持续亏损？"
+  quote: "SpaceX巨额AI资本开支是否会导致持续亏损？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxQQzl1NVlvWTNzbjZOU01ReVZLaVI0SVcwTm9FaGtpVURlMTdmM0U1bDc1V1VwVlNkMHFHX0I1blA2SFI1Y21hTllDWmdMZTBFMUxCcU0xdUxIRmVvenM1Rlo5Z0wtblRXSnFEaEhPMmhSbTNnY2o0aGN0SHJzUXpOcU9vQQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI资本开支与盈利能力分析，财务风险讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-spacex-119
+  date: 2026-08-07
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX财报给出的三道题该如何答"
+  quote: "SpaceX财报给出的三道题该如何答"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxQb1VYSEdBRkhHX1J6UGVvTnR6VXQtZy1MNGhIVEdZaHJ1b3FsUnM1c05vWTZWOTVDaFBYREJjbzhoS0VENWd2S0ZGVjJHQ0NwaGdHazVOUWRWcHNuSmZJel92elNyNHRxaTNLOFRibjJSRFJXNUloSTZZanRzOEU0MnJUcWsyODFTSjdmMVM0VQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):财报解读分析，涉及战略问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-spacex-120
+  date: 2026-08-07
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX火箭残骸撞月，中国卫星记录下关键画面"
+  quote: "SpaceX火箭残骸撞月，中国卫星记录下关键画面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE9BTFVVWnF0Zmw3VHVTSTZ4VC1URi1Wa2NmSG4yWGFES2F1RzVjc1B1Q3NfN3M4SG5BZmpfZVBlc2NubnpQdXRUc1lhY2pXbm9OYlp2UGlZRFB4Z2JMR0x2NWtvX1ljS1M3?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):火箭残骸撞月，潜在安全/环境问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -799,3 +799,49 @@
   source_type: media
   note: "LLM 预分类建议(high):业务数据公布，机票业务增长信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-07-meituan-052
+  date: 2026-08-07
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团联合联想百应上线OpenClaw远程部署服务- Futubull"
+  quote: "美团联合联想百应上线OpenClaw远程部署服务- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOdExobkRxVExEZW5QQnZFRGpBa2tHaUY1cmlJT0NXXzlqYUw0b25ZOWF1dzNxN3VsTW91TEZ4S2EyOUowUFo1TWxKS2h0NWxES1l2X0dJZ21pVkgySmRqUl9fbXBtYXNiWVgwcXNhOThVdGhtQW00SlpkTkRaWE42VFItdHVOaTR3YXVNWVdXRGN4c3VleTgyTVlFbUdzcFhMYWt4S2JlX1czd2I2?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美团与联想合作上线新服务，产品/合作动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-meituan-053
+  date: 2026-08-07
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团王莆中：立足医疗资源连接者角色，与行业伙伴共建“15分钟医疗卫生服务圈”"
+  quote: "美团王莆中：立足医疗资源连接者角色，与行业伙伴共建“15分钟医疗卫生服务圈”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE53SmNuMk9wYzU1cnlzajFPMWhraE1xTUtEbXY2RXMzdHpCdFZuUGVDNXNveWEtOVI4N1FNVGxoWUVwb2FIa0p6QmgzTTRBV0xySlE?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管发声医疗战略，业务方向信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-meituan-054
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美团回应被处罚- Futubull"
+  quote: "美团回应被处罚- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE5uekRtX3pOVmZERVlCMnU5Si1CVDlXQjBQN09WWUNqcjBfc2ZYdHh2UTB3LXNWdGFNa081RnBhYldhQ1BZY2JsQXdfN0JaT0dtUmo5VmE2a01zYzJPNHo4VGR6MGZPV2p4WWRqUjdCNmxXbEU2ak90ZQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):监管处罚回应，需确认具体内容，但标题不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

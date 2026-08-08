@@ -1567,3 +1567,124 @@
   source_type: media
   note: "LLM 预分类建议(high):人事大调整涉及权力转移和AI控制权，战略性重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-06-google-103
+  date: 2026-08-06
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Parents can now send money to their kids on Google Wallet."
+  quote: "Parents can now send money to their kids on Google Wallet."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxQRVBFQUtiMGFqZGNsc0VuUkUwc1AzeldVcE9aNnBMeFowc0pRUDg5S3RjajZPWWdWQzhpVl9TLXl4dkFLT205eFpQdVBBOXBybVBHalFFdFAzdk1YOU8wcGdqNUxPMGdUM0ZZM3gtYTFDTEJWWVdVWnhfTjlPeVlWMkRzYzJhZy0zTTFTSlBYVUI0ZFJQNFRYcGhR?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Google Wallet新功能，产品迭代更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-104
+  date: 2026-08-06
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Ask Maps gets more helpful with food ordering and more"
+  quote: "Ask Maps gets more helpful with food ordering and more"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPSHhGRVpnTU40d2VDNkFEUXQ4QkJQeXhPNnRuMGRNMVZydjNGTjl3OE00SGgyd21tRGRjUzZSZURNcTYyZEJRcDNZWjhSQUpWMl95NjZqRF9pd0xXXzZ3dzZtV3hjVFFsUzhmbzhzNHdUSTJMRzc5aGNtR1pnVXlWRlp3S05ycjg?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Maps功能增强，产品迭代更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-105
+  date: 2026-08-06
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How Gemini plans such detailed vacation itineraries for you"
+  quote: "How Gemini plans such detailed vacation itineraries for you"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxNMmhIbE4yd1RUTEF2UXI1cVBTeTlJV3RfUjdwa21qM1p5VG9OUUQ5WDFjak5nNm1LZC1ENWozQmN2eDJDUWVMMGd1ZUhFQmtJbVNyM0dibHNzbFdoNHByYVJRN3lnbmZpSHhxLS14dzJEUmxKb1EwNDZpelc0aFFEcGdkcl90SlVadmc?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方介绍Gemini功能特性，产品能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-google-106
+  date: 2026-08-07
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "See what 5 builders are making with Gemini Omni"
+  quote: "See what 5 builders are making with Gemini Omni"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxNcFllWnRiM0M0S0FNWlVDcElWNnpGdnFMUERkOVVMSHpfWnFMbU4ta1Q3bGhIbUFITFRWdTZnMWVDVzU2anh0OUU5LWIxSDlUWFhOeGIyMGt3cDVYeTNZQzJURUlwc2hldEY0SHFpcU5mZkNnd3hyaVNNNVVhOTFpYTJRU1c2dkhXVG1ESnhjMmY4WGlmV0VMeQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方展示Gemini Omni应用案例，产品推广。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-107
+  date: 2026-08-06
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "为什么Jeff Dean从Google离职引起这么大的轰动？"
+  quote: "为什么Jeff Dean从Google离职引起这么大的轰动？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Tb0xaa01fNFkwYlVyVEpfX2hpbEZfZExlYW9HOHRfdGhQeU11UFhPNHdtekJiY3lKVmhiQk1uQ3JpMmx2MU1uS1k0T2dib0lrR0szMFU3VXI5dVVuYWlz?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):AI领域关键高管离职，涉及组织变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-108
+  date: 2026-08-06
+  dim: W2
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "突发！谷歌首席科学家离职、DeepMind CEO卸任，股价跌超5%"
+  quote: "突发！谷歌首席科学家离职、DeepMind CEO卸任，股价跌超5%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IeGxEUVhCSmxCTk8xZjNnM1p4N1hWNDhxSWZwRFE1UFRFX2x4YlhSS2R4ZVFzNk9JN1F4Y09sM0FXM2dnaVRHLS0tZjd1MDhOa3pBYmcwdVJ5cDZ2?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):核心高管变动(首席科学家离职、DeepMind CEO卸任)且股价大幅下跌,符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-google-109
+  date: 2026-08-07
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Google AI不知何故得知了一个只存在于开发者私人文档中的秘密- Google 谷歌"
+  quote: "Google AI不知何故得知了一个只存在于开发者私人文档中的秘密- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1xUnNCclp3UkhhdDFfLXphaWprLUFKV3IxZHNIZUZrLW1iTUV4Z2lIT1NUR2JQeGVRNzVGNWU0N2NiSlZNVi11QW1wTUh6T25FdEZKRWJvZG1wNlVVMW9xUw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):AI模型隐私/安全事件,涉及数据泄露风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-google-110
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌：下月起Google Assistant将逐步退出历史舞台"
+  quote: "谷歌：下月起Google Assistant将逐步退出历史舞台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE4xZ3ZhQ2I5VFpYckpfZGhXWGFIRlp5UFZIQldWTEg0ZVRfM1luRFFHcmVwQkxuVHhPNHhwU2NVVG5KancxNGUwTUV3Rnc?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品Google Assistant正式退出,重大产品线调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

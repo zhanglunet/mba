@@ -394,3 +394,19 @@
   source_type: media
   note: "LLM 预分类建议(med):股价表现+市场观点，但缺乏具体事件支撑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-07-zhipu-024
+  date: 2026-08-07
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "中国AI大模型公司智谱、MiniMax港股上市提振AI概念股，其中MiniMax涨幅扩大至- Futubull"
+  quote: "中国AI大模型公司智谱、MiniMax港股上市提振AI概念股，其中MiniMax涨幅扩大至- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxNVEhPM09mcUFOYzNCSk16bnhKRE50SHAwaXNZRm9wd2EwYXhuTTRFaE03dF84S1lKSVZ5UThnZmpOOUJJdWotX2NVWlVCUG1qNlpxazBEM2RJX2Y0b3BTQWp3a2xlQ19EZkxNUUJNNHlITzVFcjZ0dVNmbDRfUk1DLTBZMTM4R1dMcEViSHRSOG1lNU81UlJxQVF3RlQ2S0p5?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):港股上市完成，融资/并购类重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

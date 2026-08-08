@@ -1413,3 +1413,94 @@
   source_type: media
   note: "LLM 预分类建议(high):NVIDIA参与安全指南制定，行业领导力体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-05-nvidia-093
+  date: 2026-08-05
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA and Partners Build in America, for America"
+  quote: "NVIDIA and Partners Build in America, for America"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxOUUlZdjFDVXVqTjBfY2F4REp1QTZPYzRTODFCZm9nOTV6NTZWbXAxQXJ1aEJEb1FhcVNZRFBQQUJFU3ZWT3IwV2w2ck4zTnVjQ0xKYl9Id0piUHJPQTNDa3VvT04tcWt5S0ZiQW42cHhnVFZlZUR0NUEwQ2FEZE5pNXMtbmxZZw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布美国本土投资战略，涉及地缘政治。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-nvidia-094
+  date: 2026-08-06
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "RTX 5090 显卡涨价后华硕拒按原价发货：英伟达直接砍单，重购需多花 553 美元"
+  quote: "RTX 5090 显卡涨价后华硕拒按原价发货：英伟达直接砍单，重购需多花 553 美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0yRDlnWktNQTU0N0M3SzExem5nNnJwMHBJY25PUzRpY2JRLUx0Unh3ekNKaHZxZnFpUjZkbWFrdUQ0YTRHQjdxU1BYcVVxWFZ1aDB5QlVxRnY1clh1?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):RTX 5090涨价风波，涉及供应链冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-nvidia-095
+  date: 2026-08-07
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "103μs 降到 18μs 背后，Cursor 为何剑指英伟达，重写 GPU？"
+  quote: "103μs 降到 18μs 背后，Cursor 为何剑指英伟达，重写 GPU？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVLVFkbUtNNW1neW1XaDliUUV3NVRnYUM4NWRCd2JkcDUtb196b1YyUHdESkFpV2IxSXBoSEJFdERwQnBURHREa2hUbHJTSmlrZVFibnFBMFB4Ymlr?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):Cursor挑战NVIDIA GPU架构，竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-nvidia-096
+  date: 2026-08-07
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达据称测试降配版Rubin Ultra GPU"
+  quote: "英伟达据称测试降配版Rubin Ultra GPU"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjRTU4cmMtOExGYnlMdW0tS1hOMWdZRTBPaTB1eFBVaUI5alRGNDYyMEZVX2FURnZTUDBhcnJpWnFUVGttMmRFMWxTa1VrMmlDcHVRXzJHbno2MlN4T21ueg?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Rubin Ultra GPU降配测试，产品策略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-nvidia-097
+  date: 2026-08-05
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达Q1财报深度：超预期为何不涨？当前亮点与隐忧全解析"
+  quote: "英伟达Q1财报深度：超预期为何不涨？当前亮点与隐忧全解析"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitwFBVV95cUxPSVpJd1lfcC1vLVppc2FSYm1DSy0tNmRkdGJ4aE5sM1dnSXF3ejFzQ0NLOVpfX0c1VGlXcmNSb0NnVzdLQlQ1ZGRQTVNWeHNoWl9vTEVfSUk1WjlQbTNoUE05ck1lbHU1V01veDN5WmlOTDhpSUYxNkVWVTFNclB4bGw4bUtKUkx0c1BPbWsyRUpXTWlZQmo2OUp4ZF9JczBoSEdfemFteTNJLURYQXNYVVJLNUJ1RmM?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q1财报超预期，关键财务数据公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-05-nvidia-098
+  date: 2026-08-05
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX英伟达联手 研发卫星AI处理器"
+  quote: "SpaceX英伟达联手 研发卫星AI处理器"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5xTGRKODZ1YXk3UFZGcHFjWENDVURackxoMThkRXNOZEVaRE5zdWwxWl9QNWFfcHVLRHIydEdKVDhnQ1hzRGxFbTFmYmhOZDVtYXBnNkZudTlCdUtwWlROZXl2aVZDSEF0RWNVXzcyTEZxQQ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX合作研发卫星AI芯片，战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

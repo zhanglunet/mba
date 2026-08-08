@@ -1536,3 +1536,49 @@
   source_type: media
   note: "LLM 预分类建议(med):竞争压力分析，MacBook Neo对Windows影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-07-microsoft-101
+  date: 2026-08-07
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "微软承诺Win11 OOBE更快、更高效，但账户登录仍未松绑"
+  quote: "微软承诺Win11 OOBE更快、更高效，但账户登录仍未松绑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQREhSbEU2UjM3ZG9EOGh1cy1aLVl6YklYR1EycjlEaTFNMU1XeG1haUpoYUdQa2xVbThIOF9md1pmcXZNakZsbDdCdEdjZHFNVkhyUGNmR3FIN2xKZDJCNnZnZGprYkRqbW5XNVpyS3dQQUNxUFZJSDlnR0IxX21fYnpVcTFTTzRZ?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Windows 11产品体验优化承诺,涉及用户体验改进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-microsoft-102
+  date: 2026-08-06
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软力推Copilot超级应用，全面押注多模型AI战略"
+  quote: "微软力推Copilot超级应用，全面押注多模型AI战略"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FdThYNllTd3BwVjNrMjBoV1Rfcm9pbmlZTjZOeXNDNjBPNU84OC1YS3VfTXFWajJPVDFDekplU0Q1Vk9iR1VIQ2Z2N0VlQnF2UVdlR0JIUEdfaVJYTnFUNw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软Copilot战略升级,AI产品线重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-microsoft-103
+  date: 2026-08-07
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软意外泄露新版Copilot图标设计趋向扁平化与极简风格- Microsoft 微软"
+  quote: "微软意外泄露新版Copilot图标设计趋向扁平化与极简风格- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBFbGQxZ0RQSlVXeDVjd0lzd014ZkxtYmZscDBUMzBQRHl0N2MtRWlnTGl1SjkxWFVaNWZEYU9iZl9kMVN6MGhTOXk0T3NrYlZCd2VZVk4xXzZJeG91OE16Zw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):Copilot产品设计泄露,涉及品牌视觉策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

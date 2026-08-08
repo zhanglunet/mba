@@ -687,3 +687,19 @@
   source_type: media
   note: "LLM 预分类建议(high):涉及增速放缓、战略调整等重要业务信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-05-hermes-045
+  date: 2026-08-05
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Hermès establishes its first store in Scottsdale, Arizona"
+  quote: "Hermès establishes its first store in Scottsdale, Arizona"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxPTUsxZURRdDdBQThjTHBBdTRyb2hJdTRFa3lScWs3MGNpRW5Ma0NHTnJQbVdBWFVpM3ZFZFViZXhOMXRZTEprLUdjeFJQZ24xelRFXzUwaVNCVVBRZzl0NHgwa3BETy1IekRWcGdsYzVZaVNnMHE4aDRMUjZkNFpJTnhZMkZoaGVRQl9tMFIwVm1tbkpOS3RVUGxja2x3dHlxS1E?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布新店开业，业务扩张信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

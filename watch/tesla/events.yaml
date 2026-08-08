@@ -1428,3 +1428,94 @@
   source_type: media
   note: "LLM 预分类建议(high):特斯拉与SpaceX联合168亿美元芯片工厂投资，战略重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-06-tesla-094
+  date: 2026-08-06
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "“2036年金钱将失去意义”，马斯克抛出大胆预测，回应：没有自己的特斯拉与SpaceX、创办OpenAI的初衷"
+  quote: "“2036年金钱将失去意义”，马斯克抛出大胆预测，回应：没有自己的特斯拉与SpaceX、创办OpenAI的初衷"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4c3ZCM2pxVU9odzBOeHpfMzRJTnpCelhldlhQczFKLVlmM3laZkRTejJGSEs5blhwRDFHTW5CV05TZng4YkpnR2VobFhJUnFVLXBxd2s4amRKVjk4?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):CEO重大言论涉及品牌战略与AI定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-tesla-095
+  date: 2026-08-06
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "自动驾驶的十年：那些空头支票是怎么开出来的"
+  quote: "自动驾驶的十年：那些空头支票是怎么开出来的"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hX1AxRXJBbkVLOGhLaHRPYjc2RURiS0RFOHlXR2paUlZYWWVXcjBDTTViMHVJdjU5aWhzSXduTnRCMF8yYmpoNUVPSlBQLTNrNW56dTUtLThZMTNS?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):自动驾驶承诺兑现问题，涉及品牌信誉。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-tesla-096
+  date: 2026-08-07
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "埃隆·马斯克在特斯拉财报电话会开场强调，人工智能是核心焦点。他同时表示计划扩大产能，但未设"
+  quote: "埃隆·马斯克在特斯拉财报电话会开场强调，人工智能是核心焦点。他同时表示计划扩大产能，但未设"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxQWHY0bVB1SXhaU29vS0xNbEtNbFpocjRJYVZfN1dfWFU2alpyZWhRRU44ejE2N0NDN082b3ZkZXQ5RklqN1FTNEdzcXdxY1FocTdtdHVEM2huczBDZ0F1Z1VPLVRHSDdMbDZZa3pHa0UwQlVzbVRUMF83U1RtZWNrNHVtblBHWWpucENka3oxMVFWWWxHR05jTXplaUdGVWxw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报电话会CEO战略表述，涉及AI与产能规划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-tesla-097
+  date: 2026-08-07
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉重新设计门把手，此前该部件招致安全审查"
+  quote: "特斯拉重新设计门把手，此前该部件招致安全审查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOd2ZJdUJvNERpNkp1STVXTlc3czNNa0RvOXBqUnNXd0ZqMnBlNkJUU2JhbWp4dHUyaGc5Z0xyWllZVUtiWHdGbUVWTTZCaXJKdEYwUElpekVpeHA2X3AxTzJfc29GM2ZRdWFvajYzYjc5eXp6WW9oWmdfTU9nS2hJWi1VMTU4MUxqRHBaRUlsVGc0RHFnbWJwblNZNExLbHNXN0RZLXJNRnZoTkJ2d2l0aFR5bEE?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品安全问题与改进，涉及监管审查。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-tesla-098
+  date: 2026-08-07
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX, Tesla to Build Chip Plant in Texas to Meet Compute Demand"
+  quote: "SpaceX, Tesla to Build Chip Plant in Texas to Meet Compute Demand"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxOQWF0dHlNclNvWWVjem9la0xOSFVHUGZDaGV1Ui1VRE9wNVZOeVFUSEVUcU91cEJ1TjllUGw1ZGFzMjFNVmlBZkNld3UzNUZTODlKZVNSU1BnX2lRT1RETVBKQndhYmVrblE3NjYzM0lkOWNyWjM2QTJXa085X0RpLWZxeEZDdnBUaG1zTG02YVc?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大投资计划公布，芯片制造战略扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-tesla-099
+  date: 2026-08-07
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "年产算力将为当前全球50倍？马斯克“超级造芯计划”动工"
+  quote: "年产算力将为当前全球50倍？马斯克“超级造芯计划”动工"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOYm0tMkF6SzBUSFF6MjdBdmVXR0VzaWplYjVYWWhsRHhLR3NUVEtyU09vRm9UOWZWcGdhSTJIakhvSVJ5RDVXenVjQTh5WmljY0VqeDNjZWtWOElKNmRuU1EzQmUwUmJEVTdSNzdTaTZ4S0hmdUkzTFBwRV85Q2gzUmVQRUM2Y19HRG5TMw?oc=5
+  fetched_at: "2026-08-08T03:45:43Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):超级芯片项目启动，战略性AI基础设施投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
