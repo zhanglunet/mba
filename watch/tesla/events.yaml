@@ -1519,3 +1519,94 @@
   source_type: media
   note: "LLM 预分类建议(high):超级芯片项目启动，战略性AI基础设施投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-09-tesla-100
+  date: 2026-08-09
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉开放Model S/X设计资料：不是开源，是给'三柱合一'帝国铺第一块砖\""
+  quote: "特斯拉开放Model S/X设计资料：不是开源，是给'三柱合一'帝国铺第一块砖\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5NWGpPcEF2cmtEcGhFanZ2SFRfczNHU2pxWTZVclZfblRhMDN4SmRGMno1cjBKT1lvcjRBSVhxMXJKaEg3Z0tlUkhubHo?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):特斯拉开放Model S/X设计资料，战略举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-tesla-101
+  date: 2026-08-09
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "重磅！押注自由电子激光，SpaceX与Tesla合建全球最大芯片厂！"
+  quote: "重磅！押注自由电子激光，SpaceX与Tesla合建全球最大芯片厂！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uMnpDcmF2ck9ySFJ6QWhYZDNLQ1JqOG9LRmJPQzJIQTk5U2x1bVpBdTlTUzFmamQzT25UTS1VeFNtMUVNZjFDYTNBYU5majVvUEVj?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):SpaceX与特斯拉合建芯片厂，涉及战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-tesla-102
+  date: 2026-08-08
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "加州警局高官吐槽特斯拉：仅能押送一名囚犯、安全性不够"
+  quote: "加州警局高官吐槽特斯拉：仅能押送一名囚犯、安全性不够"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxOajdPLW9xSlc3enp1ZGplVlRtSEpKeGRHaFY0eklDVGxvM21aNVBmT0hLR01kbFVuaTc2VWt5cEJkMUtPaGxxWDVXZV9YZWtIcGVJTkh2TlU4MHh5Z2NEdVJBN3VZZk1ERTFhTzNoS0FuRnNTVkxyMEIzY2dzeVQ3NmlTT3ZVcWJZRHBQc2ZCV2hvQmZKbVZrY0hwazdZdERGOVE0aFAtbFRwdFozcDZyMGphdw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):执法部门对特斯拉产品安全性的质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-tesla-103
+  date: 2026-08-08
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉Robotaxi计划遇挑战，Model 2成救命稻草?"
+  quote: "特斯拉Robotaxi计划遇挑战，Model 2成救命稻草?"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxQcjluLTF1NXo5Vk1kR0tvRFc3bHZiWnlWenlPcjdGTUhPTlFlU2VxbDFtajA3NExtald6eEVIblB1NFhzSXFsOGdjWjJfTlNKSi1seHhpR2d5b2NUUER6YXBXSWFCX3dndmkxMFYzMmpBb3Ytd2YxM3dvck53OE5lSnE1UWRGRFNWRWdyR0lDdjVKMEYwUm5aS2tscG8?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Robotaxi计划挑战与Model 2战略关联。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-tesla-104
+  date: 2026-08-08
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "韦德布什证券：Spacex与特斯拉两家企业或于2027 年合并- Futubull"
+  quote: "韦德布什证券：Spacex与特斯拉两家企业或于2027 年合并- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxQLVJ6WVVHQVdJZ1lBMkNtclZtZnpZSjR2ZktpbnAwSWJiU3d6NjcyNG9ZTy1Ldzk3YkltbjBSbUhGR0hONXBza3F4T0c4MGptSWp2ZVFjTkpkYVpxR1pwNEYxWjQyZWhuZmZfbEpSeUtGamR4dko4T1hWNVI2WE9FZ1FVdzZNRGxvNk1jY0ZrM2Iwckc1NWtXc0Rrcw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):分析师预测SpaceX与特斯拉2027年合并。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-tesla-105
+  date: 2026-08-08
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "据汽车新闻网站Electrek：特斯拉解雇了正极材料与制造高级经理安东尼•瑟斯顿。"
+  quote: "据汽车新闻网站Electrek：特斯拉解雇了正极材料与制造高级经理安东尼•瑟斯顿。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisAFBVV95cUxNamszQVIwOElRaVZPUlVsaC1rVm5XYUdlUG5GN2FlWW80RVozYWRsYWtNUU81SFUxdnE0TW5FNzkwaXF4bU5sMEpjS3p1N1RQSXZ6cHNhOGVmVzJULXpiRjVkeFNNSGdmeWxwM1RrM285elV4ZlJnNGxNVV9GUHdDa2xMenJ3ZW44Y05CTzhiYW5aT19yaGxSR2t4Sm52THRUUjVEeklZYzVpWkJjcXZpRA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉解雇正极材料高级经理，人事变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

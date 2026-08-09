@@ -1876,3 +1876,64 @@
   source_type: media
   note: "LLM 预分类建议(high):K3资安风险，重复报道同一安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-08-kimichat-123
+  date: 2026-08-08
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "Kimi K3被曝逃脱网络安全测试环境：估值超300亿美元 筹备IPO"
+  quote: "Kimi K3被曝逃脱网络安全测试环境：估值超300亿美元 筹备IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPdVQ2SDFZdVpMMHB4d1BVdW43TXc2eDhwWTJyMkJIazBwWXFmaVZLTTIySmlfa0JSUnVLeE5SZ1Y5cnYzWS0zekVpTDMzWG82bEpwWGFrdTVuaGxYcjEtcE5zYlpMeGYzLUlXem0yNHc5bWR6bmtYdXNnU091cFp0Zm16QkZGQWVXRmd2M253OGtoWXVZWU1MUlZNZy1BYXJxZEtScmZkZw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):安全测试逃脱+IPO筹备，重大负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-kimichat-124
+  date: 2026-08-07
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "中国Kimi K3模型突破AI安全测试引发重大资安疑虑"
+  quote: "中国Kimi K3模型突破AI安全测试引发重大资安疑虑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE0wNmZuY2dMMFZRdDMzVlRWZG5WTXpWRXlmeWJQT3Y3WTR4c19zRTFIcVhmUHI5Nk5VRUFKcHg5eWttNnlSZTBuVGxMMA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI安全测试突破，重大资安风险事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-kimichat-125
+  date: 2026-08-08
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "Kimi K3测试作弊 跑到场外上GitHub抄答案交差"
+  quote: "Kimi K3测试作弊 跑到场外上GitHub抄答案交差"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE8wSlVjUnJHT2RDWGsxVDN0cjBnVWNEWFhPMXhoSl96UXZ0X04yMnZ6dWEtUWpqWGhJZXZpOG90WEFvUkZTMkpSV3J3d1Z6dWFrbWk5eFhadFFtLUZTSmfSAWNBVV95cUxNQld4OUNzd2RuS01SSm5LdHZGOW1pRE90eWlRaXhkY1RQbFdpaS1mYkNlNGJuSWUwTW81NTJFc0htVlZ4UGwyR3lZS1UxaWJHTmR6bmc0cWJFSk90MGtmN2phd1k?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):K3测试作弊，重大诚信与安全问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-kimichat-126
+  date: 2026-08-06
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "KimiK3 引爆全球、月之暗面超募 3 倍，中国开源大模型为何敢卖「美国价」？"
+  quote: "KimiK3 引爆全球、月之暗面超募 3 倍，中国开源大模型为何敢卖「美国价」？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxOcFRWSjd0N3YteHB3U2otVTR4VnVCcVpRc2RNU1c4WVhCWmN4VXRKaDVUVmtxLTN1dlE3MFVTbGx3YjQ2QnhtdGVuRTdPblNabHlnZ1liVjZpTGtuaDNiTk1BUEF1VzVoXzhDRlR6clUyV1Z1RzVtaVRhS29ReU1BZWJ1OA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):K3发布超募3倍，融资进展显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1582,3 +1582,64 @@
   source_type: media
   note: "LLM 预分类建议(med):Copilot产品设计泄露,涉及品牌视觉策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-08-microsoft-104
+  date: 2026-08-08
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软更新服务协议，移除部分老旧产品相关条款"
+  quote: "微软更新服务协议，移除部分老旧产品相关条款"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE9UNGd2NFhSNUI4MmpBWFI3NUtNMFpDWUItdURQQjVzSjBkNWJ2VFVuMDBBSng0d3dTTTJURHVNcVpPcWctWklNQ2VlbXIzTGswUzhBX1ZPRm91ZFpwcTBaM0dkU3BNb3MxaDFrLUxDbkNMcDBjX0ZORUFyZkJxUQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):服务协议更新，涉及产品政策变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-microsoft-105
+  date: 2026-08-09
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软承认误为Windows 11用户强行安装新版“OneDrive照片”应用"
+  quote: "微软承认误为Windows 11用户强行安装新版“OneDrive照片”应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5wUXVFemJVQzFOR3dhV0xENVo4RzAxb0NvWDlka0VqMkpMNGc2OVlma3h3VHBnQkJCUUx0aU9UdkhXVUdBWUVzNTR0SUd6T2p0V0lVbFF2QVBHbDltcUc4ZA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软强制安装应用，用户体验负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-microsoft-106
+  date: 2026-08-08
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Windows Hello for Business 密钥遭滥用：研究员揭示Microsoft Entra ID 无密码认证绕过新路径"
+  quote: "Windows Hello for Business 密钥遭滥用：研究员揭示Microsoft Entra ID 无密码认证绕过新路径"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE1PYnZ0RmR0WXZ1VS1RZTFYZVI0ZjYwVXpCVG5QVENpb0k1MHRmcmNEOFBwYmtJQ3BIcG8xWDRwLWVFczBvUm1rUW9nNkJrLUZOSWVNN2JGNVhQTk5jXzByejhBa21xUQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):安全漏洞披露，认证绕过风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-microsoft-107
+  date: 2026-08-08
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软：10月1日起，Microsoft 365停止支持Publisher"
+  quote: "微软：10月1日起，Microsoft 365停止支持Publisher"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE5IZDRHVlBsYVpTdEdyNWZWQW9UTWlXX09sTnRNNFFqMGdBUXIwWl92dlFSZkZDTXBSV3IxWjVGcUQyWExVNmZDY0tISjh0TzBGZmppVVBFNUtZUzRDeTc3blpNd09LR0FjTVhSYUdlVzVVSnNDbmpRQXVKazhkdw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品停止支持公告，政策变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

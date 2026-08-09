@@ -798,3 +798,34 @@
   source_type: media
   note: "LLM 预分类建议(high):联想入股人机交互公司，战略投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-07-lenovo-052
+  date: 2026-08-07
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "联想集团将于08月13日发布财报，一图速览分析师最新预测"
+  quote: "联想集团将于08月13日发布财报，一图速览分析师最新预测"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxOV0xaOVpXckpDRWFTQVItUVNDTlNYTUlUaXZFWllwNlFQNVhTeWQtVFd2YmJjejlmNEpSa0VoNFJ5NllSZFZjaHhDcUNZT1dfNkJFdWlGcXUxMl84TllaczZHT3VUSDhJSS1NOUxuMXY4N1F6REhJRGlqd1h2T2ZuUzNtSDNLb2NFbDF3SjVMd2oxMHB1LWNpZTNwTWUtVGNmelViU0JXYXBBaDM2UjZUZkZSOWI?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报发布预告，关键财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-lenovo-053
+  date: 2026-08-08
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "联想中小企业业务新财年誓师：推出AI主机等新品，加速布局AI原生设备"
+  quote: "联想中小企业业务新财年誓师：推出AI主机等新品，加速布局AI原生设备"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vR1Bfc082bzZRRTAtREhFMFd5OXd1LTItVXdaOVVhdlEtY2dIeGdmaF8yOU53b3MwdHVVeE5GVkF6d2tZS1BsRjNRRHpHWkpmemc?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新品发布与AI战略布局，产品层面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

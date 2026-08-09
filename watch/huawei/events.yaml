@@ -1235,3 +1235,49 @@
   source_type: media
   note: "LLM 预分类建议(high):高管公开失误与道歉，涉及品牌形象与危机处理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-08-huawei-081
+  date: 2026-08-08
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "余承东放大招，华为Pura X阔直板新机曝光，7000元以上起售"
+  quote: "余承东放大招，华为Pura X阔直板新机曝光，7000元以上起售"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uSm9LOE43Q0JGT0x5UGpEeVZOejhZZ2ozNC0yQlRESDBVOFdOUEM5WUstekc3eEpib1dRbmZUeldmWFNENnFjTUg5T1hqNUJ6eXN5eGEzQS1RQXRr?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):华为Pura X新机曝光，旗舰产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-huawei-082
+  date: 2026-08-06
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "让每个伙伴都有一个“O仔”，华为+伙伴重构AI时代的服务体系"
+  quote: "让每个伙伴都有一个“O仔”，华为+伙伴重构AI时代的服务体系"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE53QjNnVzNZamd4RTZka004eTBtX3U0UGY4ZmlRX05ENWQ4OVdsMF9iUWxqME1wcDUybGl5b0xRUmxOaDBnNzdQRW51X3FNdDAtczFnVnRMMEE1YkpB?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(med):华为AI服务体系战略，生态合作动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-huawei-083
+  date: 2026-08-07
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为上一代拍照手机现在多少钱？官方翻新版4299元起，二手3500元+FAQ"
+  quote: "华为上一代拍照手机现在多少钱？官方翻新版4299元起，二手3500元+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNSnUtTlYwUVN3ZEJOeENiYUkxQmdYREpoaFRCY25nU3FaN2FkZmpVSWMwY1c1RDJQbE5QRE0xVGppcmZvYURvc3dPUi0zM0pDTlRSV0xBVXZBejhtdUNIcVh3dUVXSmI4cHprM1BKcjN2encyTWFYZkt2bkRLWUNXYw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):产品定价信息，涉及官方翻新版和二手市场价格。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

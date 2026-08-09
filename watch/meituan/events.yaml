@@ -845,3 +845,19 @@
   source_type: media
   note: "LLM 预分类建议(med):监管处罚回应，需确认具体内容，但标题不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-08-meituan-055
+  date: 2026-08-08
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团无人机低空航网正式投入运营，全面开启授权服务商招募"
+  quote: "美团无人机低空航网正式投入运营，全面开启授权服务商招募"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRUVkNWNhZ2NnNnlwc0lsVkhiRG9mSThFcjJpS0kzbkt0S0pfd1JZVjMxZDQxRzZ2eFBvZ0MwZGN5NW15V2k5T05lWkJIV0RWVng0Y0lDRk5YclJhVkp1V2NjWVpfbG5aMWZneFU5QjYwcTQ4MXdJYmN1YUo1OTVSMnQtZXhzY0RNUER2azhUbHotZDRMSk5Bc2hqM0t3UkJYTjhwMTB5Qnd1ZzBCV0R0Sm42M2VYYk12TEJr?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美团无人机低空航网正式投入运营，新业务线启动，具体业务进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

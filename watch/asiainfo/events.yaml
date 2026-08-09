@@ -266,3 +266,19 @@
   source_type: media
   note: "LLM 预分类建议(high):上市公司派息公告，财务信息披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-08-asiainfo-017
+  date: 2026-08-08
+  dim: W3
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "中国国际金融股份有限公司关于亚信安全科技股份有限公司重大资产购买暨关联交易之估值报告（修订稿）"
+  quote: "中国国际金融股份有限公司关于亚信安全科技股份有限公司重大资产购买暨关联交易之估值报告（修订稿）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQWhpdGI1Y3VfdXFneUdMLTVfQnBCdjNHRWJYXzc5Ul8xWmpkc2pRS3dEQnphcVYtX0NLMzJpQUZZRnMwNUdzV24yci1FdDAxZ0JoaWFsVWEtVjduVGY3TU93NHcwek0tRlU5U1N2bExvc1ZRM3p6eUFRTjhHbVRmU3RRZ0szMGVWQzRYSnczaWpCb2FZb0IxZ2F0a2I5Y2pNcm9jaWJSMHhaSkR6X1FfS1dYNWpjajkt?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚信安全重大资产购买估值报告，并购交易进展，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

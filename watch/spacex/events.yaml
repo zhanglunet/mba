@@ -1846,3 +1846,64 @@
   source_type: media
   note: "LLM 预分类建议(high):火箭残骸撞月，潜在安全/环境问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-08-spacex-121
+  date: 2026-08-08
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX、特斯拉官宣投资168亿美元 地球最大芯片厂有新进展"
+  quote: "SpaceX、特斯拉官宣投资168亿美元 地球最大芯片厂有新进展"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5rTHpZSVUwTjZXVXdkRENPWFhXVy12eDJzTzZKb0VGN2k3Q2owckt2Qkd0Qmd5UUN1NjZHOGZha3d3M2tvck9hQQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):SpaceX与特斯拉投资芯片厂，金额明确，战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-spacex-122
+  date: 2026-08-09
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "重磅！押注自由电子激光，SpaceX与Tesla合建全球最大芯片厂！"
+  quote: "重磅！押注自由电子激光，SpaceX与Tesla合建全球最大芯片厂！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uMnpDcmF2ck9ySFJ6QWhYZDNLQ1JqOG9LRmJPQzJIQTk5U2x1bVpBdTlTUzFmamQzT25UTS1VeFNtMUVNZjFDYTNBYU5majVvUEVj?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):同上，重复报道，确认投资芯片厂事实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-spacex-123
+  date: 2026-08-09
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "马斯克也被骗了！SpaceX火箭残骸撞月视频是假的：没有太空设备拍到"
+  quote: "马斯克也被骗了！SpaceX火箭残骸撞月视频是假的：没有太空设备拍到"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE12X29PbWdJT0s3c1lCQXIzbUR5LUlaWjg5MUJSM2MtQVVGVUJUcUdKWVpRamoxOEVnZmJBVXh4cGhYbVQ5cmp2dHFCVDA0NkY3YTE2Q1ljdVM?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):澄清虚假信息，涉及品牌声誉，需记录。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-spacex-124
+  date: 2026-08-08
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX和特斯拉聯手 在德州建地球最大芯片廠"
+  quote: "SpaceX和特斯拉聯手 在德州建地球最大芯片廠"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIeDUtTGRmRTZWZkpmYVR2Y3NUUDZnbEJMVjE2Vl9kaVZXSWRxTmwtWExwbWV4Qk5JS0g1amw5cHZ6azhWSmFOZG1DcW1GQVlBTW5IUjh0WmMzdERQbjZz0gFkQVVfeXFMT3ZPMlJLYUZlN2FIQjQtSzVWM0RVWUtENVJBR3VtWU95ZkJQeDZDc3JjM2d3ejJFLVNDaVpIQ1ZkTUxTZ0I3SFpPc1BQZjhOcjVRTWt0RlBmWW9xZ01uQXNONWRfMw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):SpaceX与特斯拉芯片厂合作，重复确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

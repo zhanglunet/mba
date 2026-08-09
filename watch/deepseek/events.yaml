@@ -1327,3 +1327,94 @@
   source_type: media
   note: "LLM 预分类建议(med):CEO公开回应美国禁令等热点，体现官方态度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-08-deepseek-087
+  date: 2026-08-08
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek重启融资，三年市值对齐腾讯？"
+  quote: "DeepSeek重启融资，三年市值对齐腾讯？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9EVHZnb0NrNmFVY3JUZHFxSXJkcmZVaG1LODhzV0p6M3d2SEticFNPbHVWZDVjNmRVVlJhS1FZVmhFUWhnTE1FZG4zbmJhR0V2d0pxTzd5eTdUejZW?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):融资重启，估值对标腾讯，战略信号重要。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-deepseek-088
+  date: 2026-08-08
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "战略入股宇树，梁文锋与王兴兴“绑定”三年，谁更需要谁？"
+  quote: "战略入股宇树，梁文锋与王兴兴“绑定”三年，谁更需要谁？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYQ2NadWtHN2JUQmhKMk5NVGZEZU9TNHlBdXQ2VElpVG81VXdlTTNwT0ROdzJPaTV1SFE4eVhMemVpZVh3ckVvaGQ1R09YM1ZzNzI1bmhyX3RRMk5JQTdiUnA5Z1ktUQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):战略入股宇树，高管关键合作关系确立。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-deepseek-089
+  date: 2026-08-08
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek豪掷1.4亿护航宇树IPO，杭州绝代双骄战略合体"
+  quote: "DeepSeek豪掷1.4亿护航宇树IPO，杭州绝代双骄战略合体"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9lUlhpcjhvdDB2X0FibGtJU0VQYlF6djJEbl9BVGdCc3JuRmN5dzFEd3NxTHBoS2ZZRGZ4UUVpaUh1bGxtUlNlMA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):1.4亿战略投资宇树IPO，重大财务与战略举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-deepseek-090
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek、腾讯等获宇树科技战略配售"
+  quote: "DeepSeek、腾讯等获宇树科技战略配售"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5KRkhjY3hWc25SLXdBeTJ0dmZ3eEN4U0drM1Fycm1QeV9PVThhTnE1V1VGR1A1bjVUeGpLNFRMQjd0REFxTEpCLQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):宇树IPO战略配售，投资布局确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-deepseek-091
+  date: 2026-08-07
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "业绩如何支撑高估值？与DeepSeek如何合作？如何看待股价炒作？王兴兴回应多个热点"
+  quote: "业绩如何支撑高估值？与DeepSeek如何合作？如何看待股价炒作？王兴兴回应多个热点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9iNHpFZnVHQzloV3ZkVks4bkV2MUpibXBXa2ZXWXV2WlZmMTd2bVJmcHdtR0dOdDZOTmhoZGhNMGRJaTNLU0IxR1A3T1RkMWhaRk11N3V2eTlYTEZWRWc?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管回应估值、合作、股价热点，战略澄清。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-deepseek-092
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "宇树科技与DeepSeek签战略合作备忘录 后者获配93.339万股"
+  quote: "宇树科技与DeepSeek签战略合作备忘录 后者获配93.339万股"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5SbDI3Z0pTbmJzTHFNTlB2c2d5ZXVESEFGRlpZaGlwamx4YWhpQTR0cHhkbmdxRTM5ZU9FLTdCZkQ2ekVtQnYyMXRJX2hJQQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作与股权配置，显示DeepSeek生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
