@@ -2026,3 +2026,124 @@
   source_type: media
   note: "LLM 预分类建议(med):闭源模型失控事件追踪，涉及安全/治理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-07-openai-131
+  date: 2026-08-07
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Responding to the next frontier of critical cyber capabilities"
+  quote: "Responding to the next frontier of critical cyber capabilities"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ2NXUG1KWUhSOVU2TE1wWWk5LUtwOHRBc2dGQWxlZTh2azJ2MHlnUHlTcWhaTWJKZ1g4WXUzS0VxcnRxbTByNjR6LUdJS3pYRUtKVmVwb3hQTVFqQXNSQjliUDRLSFVpR01uR3hjcTNreG1hR3FDc2ZpMW1qYXRUT25KdE8?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方发布网络安全能力声明，战略方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-openai-132
+  date: 2026-08-06
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Working with the American Psychological Association on youth mental health and AI"
+  quote: "Working with the American Psychological Association on youth mental health and AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9jYzVfQm12ZlNNaTNhSVlmT0xoNG92R1ktakVlMXJidjNhX3ZIYW0ycGtaNVMzYmsxeU9WU0dRQlZMeG04WFVhYmVod1NpcTczNGRma1VsYTd1VzdaMkJYdDIwZ2R6dVFUNkw3Qms0X2RzUkZpV3N5TVdvajc5bWM?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方与APA合作青少年心理健康，社会责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-openai-133
+  date: 2026-08-08
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI 网红之旅是如何翻车的"
+  quote: "OpenAI 网红之旅是如何翻车的"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0xb1pxaUF1SWF4U3l3akl5U0lxa2FLaXRHeGtOSlp1anlvQXNabUJlSzFZcGhFWndGcElVY1Jsc3JtVHNjM25jZkgwOXBpUHFRa19GSXBieGZyazBn?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):品牌声誉事件，网红策略失利。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-openai-134
+  date: 2026-08-06
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "投资英特尔大赚85亿美元救场！软银集团净利润大超预期，但OpenAI延迟上市阴霾压顶"
+  quote: "投资英特尔大赚85亿美元救场！软银集团净利润大超预期，但OpenAI延迟上市阴霾压顶"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBzZFljQ2k0WW9NcGV4Vml4cXlhOTQ5R1hKNmN5cjhqNFFrZGJEYzBrWlhlUzBZdzEwT21yRzNYeE9TaVRFRlp2eElmVkVHSm9CSTNET0pHTlJrMllN?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):OpenAI上市延迟确认，融资动向，重大战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-openai-135
+  date: 2026-08-09
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "性能太强反而是隐患？OpenAI放缓Astra模型开发"
+  quote: "性能太强反而是隐患？OpenAI放缓Astra模型开发"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxNYmFKRG5vQXlBeHdqZGV4YW9yR0lFemJucS11VFc1N0pWb2p4REs3T1BCRmk1eFRUZGRRTW55d0ZMYl9KMVA0NVlweFh3MnNBQS13Vy14MmppMUlRREZZUkJvR2RzMVdQd0ZaNWJMR1BMZjhHSEZjdTdiYi05NFd0WlRRMmZKeTQ3cGNPWnljcU9rby1nMlZpbnNmT0JZb1NSUndYdjB0SQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Astra模型开发策略调整，涉及产品路线重大决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-openai-136
+  date: 2026-08-08
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI桌面端ChatGPT上线语音交互功能"
+  quote: "OpenAI桌面端ChatGPT上线语音交互功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifEFVX3lxTE44eWt5czlTRVd4aWJPOC1oLXJSUHNJVDJkRnZSbmlVQTNzN2hlOHFpS3VfTjUzTUZKVXk4Y0xBVnNoUk9QYUxpWmx6LXg2MlVYWEpzR1dlV0lBbkZGY21fVUZPcVdRMVkwc1EtYlptVlZEeHl6VEE3NjRDWmI?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):ChatGPT桌面端功能迭代，产品能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-openai-137
+  date: 2026-08-09
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI收购演示文稿初创公司NextSlide"
+  quote: "OpenAI收购演示文稿初创公司NextSlide"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBoX0FvMlRHOUVmUmdoSmZpX2ppRWhEcDJFSUJ0Z2JnWlZnRHlKRTVqcjRTVmc1WnYzcTNwX2VQSzJ6WjE1VnluYU5tM0g?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):并购NextSlide，战略扩张演示文稿领域。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-openai-138
+  date: 2026-08-09
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI等美企被曝旗下AI模型“越界” 安全风险引担忧"
+  quote: "OpenAI等美企被曝旗下AI模型“越界” 安全风险引担忧"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNSHFRMGFQZ1ducmlXMHhqOE10QzV6T0hmMHlIeXlfSFdNSmdzTmN2X1pzcHlwb2tZZWFUWVJTd1N6bVNtQUg0dm15cWJveDRRdWRNWkV2TnF2QnpvOGJ0Tlk0cXJwd184dktMWFo3TVc2aVRaY2YxMXM4U1g0ZHdMVGRsYm5Vb1RZYjUwNA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AI模型安全风险曝光，监管与舆论关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

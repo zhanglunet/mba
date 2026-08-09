@@ -1504,3 +1504,79 @@
   source_type: media
   note: "LLM 预分类建议(high):SpaceX合作研发卫星AI芯片，战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-08-nvidia-099
+  date: 2026-08-08
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA研发的\"语音记忆\"：让AI语音助手学会\"知错就改\"|语音识别|英伟达|Qwen|开源模型|Minimax_手机新浪网"
+  quote: "NVIDIA研发的\"语音记忆\"：让AI语音助手学会\"知错就改\"|语音识别|英伟达|Qwen|开源模型|Minimax_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTkhTSk1uMmFtcG96UTN1NVZINzNXWElTSmVEX3dGSldHS0hHRzBhaXctX1FNV08xSEZxNGRxMVJ3QjEta1YwOVZuS0NiR3lRN09BMnJXYzdzMWVRdnEyRm5tOTYzU191UlpwSzByaGo2MkctWEs5UzJfY3BQR1oyMm5ZbFRuZGNQU0VfbUhjQTBpRHMwaDBLVWxpcDhaTmhJdkszUlBTM3BIa1hIdDhSZDZObnVuNXZ1NWlLLTFfS3c0MUs4NTBtV3FzQzFfN3FyR3dRRFNyZFBHTVBFOTlUb1NBZGpTZm5BUHc?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):英伟达研发新技术公开，产品创新信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-nvidia-100
+  date: 2026-08-07
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "每周观察| 2026年AI服务器出货量增幅上调至近31%；英伟达评估下调Rubin Ultra HBM配置；2028年电视、显示器、笔电三大面板供需版图…"
+  quote: "每周观察| 2026年AI服务器出货量增幅上调至近31%；英伟达评估下调Rubin Ultra HBM配置；2028年电视、显示器、笔电三大面板供需版图…"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VWVBEMHhDaG5adE1TRmJrSG14TTNQbzE3MFRNVXl0TEx0THZyTUJzZFF5S2lkZnN6UHB0R0dYRVI4dERpY081azd5Y2NSYThNY1Vr?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Rubin配置调整涉及产品规划变化，市场信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-nvidia-101
+  date: 2026-08-08
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "HBM短缺迫使Nvidia削减下一代芯片规格"
+  quote: "HBM短缺迫使Nvidia削减下一代芯片规格"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNEtmOFRjUmtoNkU2N3NzRnQ5VkQ2X09FN1hCcENaOWdCQm91SVlCZUpETVY3QlljNGh6X2l6QnhFbVVWaU1rQnRkSWdPYVA5cFZiRnNpeU9ycFZ3QjdmejRIQ2cycG1VTW1iS2hDaTNsMFM0c19vWEhpRjVYaG9JSGhMM051dVds?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):HBM短缺导致下代芯片规格下调，供应链风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-nvidia-102
+  date: 2026-08-08
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "为缓解HBM供应短缺，消息称英伟达考虑降低Rubin Ultra GPU配置|IT之家|证券|堆栈|容量|原厂_手机新浪网"
+  quote: "为缓解HBM供应短缺，消息称英伟达考虑降低Rubin Ultra GPU配置|IT之家|证券|堆栈|容量|原厂_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqARBVV95cUxPazVLUmxBTnBNcG9JRS1ZTnNjem96VlNNNEp5NmdHdU04bmNmTmpMY0ZsMmE4WWhJSkJRZDZ3R3dxeXllYnQzWUNNbzJGMy01OVBaQk9FVDY2X0ZYOUduMGIyeEVrWjloeGV4eFMwTjA3T2JSdDM4RkNuSGNWalN6bHgtZEFPbEkyeUJFM3RmN0cwOExwd3ByOEJPVVlvN0hINHJROW1GMklOVVZOQlF5NmRnODJRR092UUFabDZvVW5MVHdsM2dkZERPdFd1cWlWTjkxSmhFLXU1b1VoRUZuUDB2YldzTHVVWC1uT18yQVMwbDBLbWU2d3Jjb2xNZmY4Sy1xR2xuOWx6REdPcjhlOUdnSmFpZUx4UmYyM3pydVlEdGJsc3J2dWFpUmlaR0lxQmdyWWp2b1VXVFhDbjFhU3FpeXpYUmpYY0x4RUpXQ0ZhUC1oMnQ5cVBpanFsYnpLN1JUUHhrMzlWVUlYcFpaNkY4dFhQZGRacUtMWVQwREsyU3kxS0dDTzlveWpVbnBLdTg3VVNSbGZXWkJvcExFWWFrMEp3TzRwcmhMSm9oWkFHTENLZ0tZbTk5YU9QSlRWbTZJUmJ1ZkQxcDNiT1FzOGg5MkxnU3BPSXptS2VsbXI0dU11Z1JyMHZ5Yl9DTHgtSkJDX3NsTTd5d0hxOTFMSWtCbDVmU3FoUEFHamJtaHYzejZGSF9QeFA4Vlp6ZmVkTzE3VVUzXzM?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Rubin Ultra配置下调重复报道，供应链压力确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-nvidia-103
+  date: 2026-08-08
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达将获得Lancium 20%的股权，作为首笔$20亿投资——消息人士称"
+  quote: "英伟达将获得Lancium 20%的股权，作为首笔$20亿投资——消息人士称"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPR3pkSkZFN2FoT1lIblFKcEwzLXRyR3hWYVhoX2p6UG5vTk44WVhQendnRXpoaFR4QXlUREpfZG1OWHNGYTNUay1QZ2pkYTB0UENtUHlWV0NDeUFSSnFsTWVjWTg0R3lPbnVKNHJkLU9VVUlmRW9hNE53OGhycGRBMTViRFdabGVUYUJDUg?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [leverage, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达20亿美元投资Lancium，战略投资确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

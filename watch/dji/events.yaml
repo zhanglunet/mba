@@ -535,3 +535,34 @@
   source_type: media
   note: "LLM 预分类建议(high):Osmo 360 II新品预约启动，产品发布节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-07-dji-035
+  date: 2026-08-07
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "中国运动相机市场大疆与影石合占近 98%销售额，其高市场份额是如何形成的？"
+  quote: "中国运动相机市场大疆与影石合占近 98%销售额，其高市场份额是如何形成的？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QdTdqUmdERVZpV1JtV1p5VUtKOWE5T3d4bWZPLWE3VWZjR1FoSEpHMUhiaHZJcEtnYXhkSnd0a2h6OE9QLUFjWnJkSVFlSndlS3I4UXZxcEVzSFAyc093?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):市场份额数据，运动相机市场地位分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-dji-036
+  date: 2026-08-07
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "大疆Osmo 360 II全景相机即将发布"
+  quote: "大疆Osmo 360 II全景相机即将发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE5QdHE2bFZVZ3BtSFpqVEhpaWF1cmtZS0hDWTc0QnZWbVljZnhTRmZiWXdfbV84cDhBaGcwdDZ4ZUJUSDBZc2IyRW9BYi1BRVBxc0dUWEZZMy1xSVk?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品Osmo 360 II即将发布，产品线更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

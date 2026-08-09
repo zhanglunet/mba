@@ -2051,3 +2051,109 @@
   source_type: media
   note: "LLM 预分类建议(high):旗舰产品Claude运行的芯片战略调整，属于重大技术决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-08-anthropic-134
+  date: 2026-08-08
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "测试一千程序员后，Anthropic发现Claude Code全自动更安全"
+  quote: "测试一千程序员后，Anthropic发现Claude Code全自动更安全"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5HTXBpbmQzZlp4Z1FqUmQ1eFowNE1Eamx2c3BJNmxseFpzblVtX2p3bVByWXAzelNBNVVZNkVvTXpaZlVtS0RmbUlpZ3pqSTNfMXFYRVh3YWZ6dHpz?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):Claude Code功能测试结果发布，产品能力验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-anthropic-135
+  date: 2026-08-09
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic实锤了：Claude会见人下菜碟"
+  quote: "Anthropic实锤了：Claude会见人下菜碟"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFByRFRqSkk4RDZibWYxd0dLcDhWaFVoSFZyWnFlZGZRNGt3OWc3cXBJQ3BBQUJkY0lUREgyY2EzOVk5OWs4QzY3dXd6ZUF2Uk9SeEo0NkRyd2xzekFq?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Claude行为争议，舆情信号但缺乏具体事实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-anthropic-136
+  date: 2026-08-08
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推记忆导入工具，助力用户迁移至Claude"
+  quote: "Anthropic推记忆导入工具，助力用户迁移至Claude"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ZT0Jxd3BnWldDcHYwVmJOSkFua1FBTkVmTVM0S2pUblloVUVBWmJLOUxCY0dkcnA1T2JvSkZYcnZEWVVvd3lGcA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新工具发布，用户迁移功能，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-anthropic-137
+  date: 2026-08-07
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "六巨头定AI插件新标准！撞脸Claude，Anthropic没上桌"
+  quote: "六巨头定AI插件新标准！撞脸Claude，Anthropic没上桌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE9XT2hUTmZ4UE5DeXVpQWlOUlllVjF5NTRMOFF5S3BwMkx5d1NkanptWjEyWldwTGcyWnNGT3VpMUVpWGU1T3dESnVRYw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):标准制定中被排除，竞争地位受影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-anthropic-138
+  date: 2026-08-06
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic回应造芯！327万年薪招揽芯片工程师"
+  quote: "Anthropic回应造芯！327万年薪招揽芯片工程师"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9nZk1Xc25YUGt0U2lZZDRmVkdKNkJrb0dXMXBNZFlfYzlPSGZCQjV5YUNTMWEwXzBLdlM5LThjRjAyU2FmcVRPaA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):造芯战略确认，高薪招聘芯片人才。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-anthropic-139
+  date: 2026-08-08
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic优化Claude Fable 5模型生物安全机制，减少85%误拦截"
+  quote: "Anthropic优化Claude Fable 5模型生物安全机制，减少85%误拦截"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9DYTdlclBmRnJ2bWRxYURHVDRKdlpPRkNxYWNJOC1mRllSc0VmUjF0S3l1Sy1vN1phRmNTUG81Tk10V1NTVjh0cA?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude模型优化发布，安全机制改进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-anthropic-140
+  date: 2026-08-07
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic 详解 Claude 的安全隔离架构：如何在 Web、开发和桌面环境中约..."
+  quote: "Anthropic 详解 Claude 的安全隔离架构：如何在 Web、开发和桌面环境中约..."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vVHdSVXBpNmpqU1BSWDFlbkg4OWg2T3VWNVlZVFVuYlJTVlRzaG1oTnFiWmZ3cldldVc3UEdYNWM5aG01d2NZbmVMYnJzeXVZ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude安全架构技术解读，产品能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

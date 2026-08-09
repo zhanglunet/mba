@@ -1763,3 +1763,79 @@
   source_type: media
   note: "LLM 预分类建议(med):多款新品传言，涉及产品路线图但未官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-09-apple-116
+  date: 2026-08-09
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "11:22:23【苹果中国官网删除Apple智能接入阿里千问手册】"
+  quote: "11:22:23【苹果中国官网删除Apple智能接入阿里千问手册】"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBJRlFPYVVRVkFEWTBrY3o0ZFhqSjI5RloxU3NFTnlrTy1RcnFNVDZSSkNYTGl3dW1WQ3pJZ24wbTJjbUpmYV9rNw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):官网删除千问手册，政策调整信号，可能涉及合作变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-apple-117
+  date: 2026-08-08
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果终于把千问接进Siri：中国版Apple Intelligence来了"
+  quote: "苹果终于把千问接进Siri：中国版Apple Intelligence来了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LRUV4QmhGYkJCRC1vNGhjQTB4dzFMeVdZY1l3azc2czZDd1lrRHZVNVN6US0zaVNXcVdyejQ0b2ZkM2VMdTVXaTJQYzV0RV9FMFhn?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Intelligence中国版集成千问，重要产品功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-apple-118
+  date: 2026-08-08
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "刚上线就删了！苹果中国官网删除Apple智能接入阿里千问手册"
+  quote: "刚上线就删了！苹果中国官网删除Apple智能接入阿里千问手册"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KR29ITHJaYl92cklfNXQ4bFpMWFc2OWcxZXY5YnJzU2pza2xramw1SUZMcEsxZDdzZVU1T1dHVFM3QURmMEh1Rm92T01UTjZHeVNvNGZISFc?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果官网删除AI功能文档，涉及产品策略调整和舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-apple-119
+  date: 2026-08-09
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果国行AI突然发布，首次官宣牵手阿里，Mac用上千问了"
+  quote: "苹果国行AI突然发布，首次官宣牵手阿里，Mac用上千问了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE9lOWVLUXZWMmRXWUNhc1lyVkxQbmJESHRfTVNsbmt6Z1RNSmVHUTdDSkNhSXZ1UWNTOFpEQ2RyTVdjYldGajB6c0JsUG1kMTg?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果AI国行版首次官宣与阿里合作，产品功能重大更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-apple-120
+  date: 2026-08-09
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果官网确认接入阿里千问，但相关文档又撤回了"
+  quote: "苹果官网确认接入阿里千问，但相关文档又撤回了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNUF9FSml4ZzRqbTN0ZGNSZVFEang0RGRiZllvQUQxZkJScHNzQzNJNWJ1SVNMSWRXNi1lUzNnWDFramowdGZfcTJXVWVVY1p1TVhRYWk2OHp3OEQ3QUpBNDAyNGs4dzV2QnJWVUhqMDEtTnlWMl9TZDRkOFZwN3U5ZlQ0NFNUUjNaejd1OQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官网确认后撤回文档，反映产品策略不确定性和舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

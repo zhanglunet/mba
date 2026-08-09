@@ -1431,3 +1431,79 @@
   source_type: media
   note: "LLM 预分类建议(high):汽车市场新合作伙伴加入，业务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-08-amazon-094
+  date: 2026-08-08
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊8月6日起关停社交媒体促销码功能- 快讯"
+  quote: "亚马逊8月6日起关停社交媒体促销码功能- 快讯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE1uN1pjY3A0RVJ6ODhfendQSnZnQjZKSEM0RXA4OUFDeUIxME1DY09hN05TQWs0OHBIazk5ZEtVd1Nab2t5WWxaZlQzY1dlQm9nWF9jODJTY3k?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊功能关停，平台政策变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-amazon-095
+  date: 2026-08-08
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "报道称OpenAI正与亚马逊谈判，拟从亚马逊融资至少100亿美元并使用其AI芯片"
+  quote: "报道称OpenAI正与亚马逊谈判，拟从亚马逊融资至少100亿美元并使用其AI芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxPOXJkdGxIQk9wLUhfdU1hSXp5QzcyTGdMY29MOXA3Qm9aR0hQRTZNbVBTTlpvOUhPeEhTQ1VWRUhraE9IblBKUE1ucFRqeU1YZmlmcU1BYWllaGlhVzAwM2Fpdzg3NWhPUTA1VF81VnJxeGljcGs2aG12VnU5VUJvMENOWEZ3ZnQweE0wQnZGeEN4NDcyZGk5SF9LZ3o?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资谈判报道，涉及亚马逊与OpenAI合作，金额明确但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-amazon-096
+  date: 2026-08-08
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "亞馬遜悄蓋數據中心 加州小鎮居民開工才知"
+  quote: "亞馬遜悄蓋數據中心 加州小鎮居民開工才知"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE1QM1d3ajY2LVdSYlhtc0MtVlJGa3N3emVCMndNamZWX2lhLThWMVgweS1JZjR5Zk9yWmxFeVp0SDkwMnlRQlA1NVgwOVR5OWV1Wms0LWk2djFHVzV1ZFFzZUo5UkVBc3pkOHfSAWdBVV95cUxQbTZqWHQxRnpseDJyUjA1WlA0TERVazdablNMTWUtZHhrVGczZkhfSndUeHVLMkM5Vkx5bnd0ekFOUjJseEtrMG9HQlNrSjhSSUdSUFNKdDZaZXNrM2FrUldocjN3NFk0?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):数据中心建设引发社区争议，涉及公共关系风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-amazon-097
+  date: 2026-08-08
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊(AMZN.US)陷关税困局：保利润还是保份额?Evercore ISI预警股价承压风险"
+  quote: "亚马逊(AMZN.US)陷关税困局：保利润还是保份额?Evercore ISI预警股价承压风险"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxNNk5jU1ZxUnhyVW50eGJTd2hKTmtwQy1KaW9yc1BDcFdCdTV3eXpUejZIUjBfcE5YdTRYQ09uTnhtLWhYU3R5TDE2OHBrNXFqajlpeXRINXY3N2U3d2M4b1pyX01aUjU4cFpjM0VDNFQtNE1oNnNVbGNnN3RNNElBQm9DVmlDOFc3OUlQWG53UmIxUHg0VUpXMTVn?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):关税政策对亚马逊利润影响分析，涉及经营风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-amazon-098
+  date: 2026-08-07
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "TikTok Shop美区订单使用亚马逊MCF配送，配送费立减35%！"
+  quote: "TikTok Shop美区订单使用亚马逊MCF配送，配送费立减35%！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1zVTlUOElQTG5FTGg5SDE2Nlh6NmNFbElrQk15emd5a2RMblpyVkhHNE82NDljc3UyZExhTURkRWJMZDduY2dnMUI4ZFY?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊物流与TikTok Shop合作，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

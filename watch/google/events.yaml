@@ -1688,3 +1688,124 @@
   source_type: media
   note: "LLM 预分类建议(high):旗舰产品Google Assistant正式退出,重大产品线调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-07-google-111
+  date: 2026-08-07
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Ask Maps is rolling out in Australia – helping you get answers, plan your trip and find inspiration"
+  quote: "Ask Maps is rolling out in Australia – helping you get answers, plan your trip and find inspiration"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxPN2FSb1BQQW5ILWFkdmo0RHVmeC00b3VmSjg2Sk04bUpfX2lrSF9aazZYeFdXZ3l3Z0M5cjJEbFg3OTJsNERLT2tHeVZ5ajh5Ui1yVjQ5d2djV3BENkRwUjRtWVdiUW5iTGN3a3ZMbVktdDhRbkV4ZHFqc2VsaFAzMUIzVk9sdw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal]
+  source_type: official
+  note: "LLM 预分类建议(med):Maps功能区域扩展，产品迭代更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-112
+  date: 2026-08-06
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌AI权力格局一夜大洗牌！亲手搭起技术地基的27年老将Jeff Dean，离职创业"
+  quote: "谷歌AI权力格局一夜大洗牌！亲手搭起技术地基的27年老将Jeff Dean，离职创业"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE92NUljOWJXSS1BNEZ6YTNISEl1cFk1YU5nR2ZDRXZzT0w4WEZ4dDQyTzJiMkN1aGcxTFBvYm95Mk9YeUZlMFphNVFfaXk4UzN0NnZ2Tno5SjBPWXJr?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):AI核心高管Jeff Dean离职创业，涉及组织重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-google-113
+  date: 2026-08-08
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "谷歌AI重组：创始人布林亲自盯Gemini，哈萨比斯交权"
+  quote: "谷歌AI重组：创始人布林亲自盯Gemini，哈萨比斯交权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ZUUQwQVhSVHV6T1lrMm8xNW5UYkZFOXhZaEMwRGlUVFRtVDlnYWpxa01kVHF6TVdNZDJhcU5qTDhPN3BjZjVnTnhXc25KS01XQndsTzcwZjJJMmhs?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):谷歌AI权力重组，创始人直接介入Gemini管理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-google-114
+  date: 2026-08-09
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "最新爆料称哈萨比斯竟也想走但Google怕了- Google 谷歌"
+  quote: "最新爆料称哈萨比斯竟也想走但Google怕了- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BS1VHWkRydWVDcHp6TTN0aDV6anE0TlVrRlRyNE1WcHdfdjg0M1huQjZteFp0QnNXOVNaUlVVV0l5YzcxeEhCZGQ4RExlbDFOREF2QklPUkxDNlZQNzNfeg?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):爆料哈萨比斯离职意向，涉及核心高管稳定性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-115
+  date: 2026-08-06
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Maps新增智能体功能，支持订餐、订酒店和购票-AI应用"
+  quote: "Google Maps新增智能体功能，支持订餐、订酒店和购票-AI应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE9DVXhBbXNYRkh5OEI1UldLZV8tbWhRTk5tSGxfM3oweXZSQXI4ZEU4Z093TnJpb2RFYUVKa0JLemtHZlRXZ2JteDJFd29fLVlsQ1JBb1lxZVl6MmNNNXhkcnlvVWJ1SlFXSVFWNGRaZw?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Maps新增智能体功能，产品能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-06-google-116
+  date: 2026-08-06
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌首席科学家Jeff Dean离职创业Discovery Loop，携三位AI元老出走"
+  quote: "谷歌首席科学家Jeff Dean离职创业Discovery Loop，携三位AI元老出走"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5HY05VVDJIQTg3RTZpUVpnc2FEN2VkX1FiSVdnZkQ3QzZKdEZrRE5kQ2xnOGY0Tjg5czV3MjdfRDN3ZF9yT2xzczByY0tWYkhUajdacWQyU1BLS0dk?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首席科学家Jeff Dean携三位AI元老离职创业，核心人才流失。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-07-google-117
+  date: 2026-08-07
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美国谷歌9月4日移除移动端助手，Gemini接管"
+  quote: "美国谷歌9月4日移除移动端助手，Gemini接管"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE42RVZCN0J3Tm9fSFpZNmdxNHI2a09BNGRuTVF2U3hqVlhRazljLUtMWFFNQm42WHBfaWJGaGxibGRJZjFhZVNCRDdIV0VQeHpYc0J1QVBSa0s?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Assistant正式下线，Gemini接管，产品策略重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-google-118
+  date: 2026-08-09
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Google Pixel 11系列及Watch 5新品发布多图前瞻- Google 谷歌"
+  quote: "Google Pixel 11系列及Watch 5新品发布多图前瞻- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qZjMyTDhNRkRqMVFSRkRjOGJ4OVAyNFpNUGxFUGNudExiRXROQjNza21XczV1RE9QRHg4RGJOQlZGVEdCRHZZT05IckRINDRCQ0RBU1JpTXYwNnRDUVFtQQ?oc=5
+  fetched_at: "2026-08-09T03:54:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Google旗舰产品Pixel 11系列及Watch 5新品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
