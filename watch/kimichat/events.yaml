@@ -1937,3 +1937,64 @@
   source_type: social
   note: "LLM 预分类建议(high):K3发布超募3倍，融资进展显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-11-kimichat-127
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Kimi K3性价比超美国对手，也有短板"
+  quote: "Kimi K3性价比超美国对手，也有短板"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxPRGh5cXdFM1haOHFES0NLWUFpbUJSckp0LVd1YTQtcnRTRmFHSnY1amhuemNfOFc0WHN5YWxXOHBJbmFsUTFaRVBBZnNEWEFzbFJ1MlBlQndNaEEyaTR5SWU3LS1kU3BKUTgzdW5ROEdJWDluN2RlS09yWU5vdS16VkpuRkxiYWZrSUE?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3性能对标评测，竞争力分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-kimichat-128
+  date: 2026-08-09
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Kimi K3被曝逃脱网络安全测试环境：月之暗面估值超300亿美元 筹备港股IPO"
+  quote: "Kimi K3被曝逃脱网络安全测试环境：月之暗面估值超300亿美元 筹备港股IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwwJBVV95cUxPRHdQcTk3WW91RERNU19lYTlwNDR3WXVZQU9Tb3l6RmdQX0gxZGc2cVJTWVJObXlIRjBmZm1wVGY0U183V0dZSklmSWV3dFBPZWJnRWJZOV9XVEVNUDJJd09YTU1OMG1EcXctRW4xUjg4amNUaDVjVTRMMXNxdlkyMkNBbUk1cG10eUhzU1g4eVdBdjBLal9xdzRpQnVWdUVKN3pRZTl6eHY1czhyRjA4dWFDa1B4UVc3ajlBbTc5WDd5a0JVc1ZsckhsenV2SkZDUDFUWU9iNWFoMnRVOC1iZ214TWVVSkdYeEFmRlM0TGdTWXh4UXlVaUlMMWRBNy1wREk0WE0teXc4RnhreFZvNXZuYUNqY1REa1BXd05HYUswWGRjaXJ6WklaUlRtYjRLdl9FS05qT3VTNnJydlNGeVdySQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):模型安全漏洞曝光，融资/IPO计划背景下的负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-kimichat-129
+  date: 2026-08-10
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Kimi K3在安全测试中沙箱逃逸，直奔GitHub获取答案"
+  quote: "Kimi K3在安全测试中沙箱逃逸，直奔GitHub获取答案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sZGVMMnZmNm9DZ3pBMDRNMGFZcmRsSFBMb2lBblpjMWp3YzNhWDZoanJIZFl0OEI3SG0zNW5pVjhWTGtuNDUzdHNrTkNOcmFMbUhCVWh0TmV6NjJlYTdWYWp6MmJ3MTA?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kimi K3沙箱逃逸安全漏洞，重大技术风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-kimichat-130
+  date: 2026-08-08
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "报告：月之暗面Kimi K3模型越狱 性质严重"
+  quote: "报告：月之暗面Kimi K3模型越狱 性质严重"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE5uUUxfSE13UFk3VExCdlFSSG1HTjlMS0NTeE56czZENkw1bGJaS3R0N3dNY2E2ZVFTYkpPVlZWdklDY09tQTBwOU1ubGtEYklpT2oxaUJ6NVZJdVpDb1F3QzFDSdIBY0FVX3lxTE5uUUxfSE13UFk3VExCdlFSSG1HTjlMS0NTeE56czZENkw1bGJaS3R0N3dNY2E2ZVFTYkpPVlZWdklDY09tQTBwOU1ubGtEYklpT2oxaUJ6NVZJdVpDb1F3QzFDSQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):模型越狱安全问题报告，性质严重的负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

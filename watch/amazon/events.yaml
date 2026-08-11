@@ -1507,3 +1507,94 @@
   source_type: media
   note: "LLM 预分类建议(high):亚马逊物流与TikTok Shop合作，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-10-amazon-099
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon's statement on a planned data center campus in Pecos County, Texas"
+  quote: "Amazon's statement on a planned data center campus in Pecos County, Texas"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxPLXRJcVRzN3VqUW5Oa05pblVJTjBUZGtuRGUtZ3N5bHczR1E3R0czNDJYdGRUUHdXeEhPQVdyUHh3VmRiMi11Rng3YW83LVh3M2VxWkQ0OW5IVUdZM0N5MENrM2JwaFl6ZHdhWkY2ems1aG5XaVYyQWw0SHdlWkVEM1V5YWRRcnFmSXNZQWlXMlB6R3lTcjA0SmhXaEtndzVvMzNz?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):亚马逊数据中心园区计划声明，重大基础设施投资项目。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-amazon-100
+  date: 2026-08-10
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊 WorkMail 宣布关停！官方推荐迁移至 Zoho Mail，专属一键搬家通道已开启"
+  quote: "亚马逊 WorkMail 宣布关停！官方推荐迁移至 Zoho Mail，专属一键搬家通道已开启"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE51dzJmaE85U2Jtc3hkYmFERUxoZUdObG42YlRXNTZnU1NyWF93dVA2WDNvNUVpUVV6NHZKUEp1QXp2Nm5oWGhJS3FfX1pJbGxjWXJFTjFrTFZCdlNT?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):亚马逊关停WorkMail服务，涉及产品生命周期终止，用户迁移影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-amazon-101
+  date: 2026-08-10
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "诺和诺德设立亚马逊 AWS 协同创新中心，利用 AI 加速药物上市"
+  quote: "诺和诺德设立亚马逊 AWS 协同创新中心，利用 AI 加速药物上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi_AtBVV95cUxNbEhFUmJhTmxkYm4yQU9xU25meFRXX2ppb1cxdjFUTF93M1V3bmFQUmItd2JhNERKNXdTOFpuZks1T2tkUTY3S1VKY21QSUJzYl9MSmVwTWg0ODduSi1qRmxGemktN0VHWlNoTVItRkdUeU1JUXpVMHo1X3FCVUM5NkZOUjV3UzFxckVlaHlKX1JUUklEdUhBQVRRQ1l6bFNYanRkWUdabUFCUV8wNDZ0VnhCSG51dVhROGQxTFhwTk1ST2NpNk1PWFF2Tnd3bGQxNzJlUnVzS01kc25VejVXSmw4ZldneTdheWZOTVY3eUYxWWE5eElNVFVxNVdrcGRKOU5MQ3c1OEhCbDVUdjFZaFBydXNaMi05WG1heEQxS28wY2lKVkRVc3ZQZGRRUGFYdTBDaEVPMDQyUVV2N3dCMnVTdzEzalY5R1QzNmZGbmtQYWpWMlA3dm1jVFYwdHUyVktORWg1V3VTNnEzNmlUSVdlanJRMnFYWEF6bkd0MlQtemMtTS1UUjJrMVNhYjA1NXAwZ09ndFVfQ1hOZHhid2dRdVFmaXFRYmhOUWJFTTZDaWVVV0NTOXF6MFN6UDRuVkZ2OW9qamM0aEpGSWN3RWctY09xTG9xS2M4U19tR1R0bW0yc3lWc2FyVDFsM1ZDSkoySE5NQnFNbEVHLTV4ZE9sYWZZemw0ZEdUeC1ETHI5dW1vZm01Mk5remJwU3MtV2xsYnM5WjQ3T1ZOVUlLTk4xWlFvYXZQTnVCQ2tDN3g1dU1naTJBcGZHYS05RWZzR3B6d2c2WFA0XzlOVkdHc0dZOU9oVVoxMUUzUE1wM1E0ZTI2UHJJYloyVDFNQm9BOWRrNkJ2VHNFd1dlZlhtUUloNV81NnJwaTB1c3NtVFdKbndndV85MlZjdl9TWU1WN0JvdFptSUJhQVNYemhGYTNLOE1BeHVSekdzNmsyTkttRkd3TlpudFVubWRoMDBzS2xwYUg4ZWxlWFpYbGFIVWc2MU1oNjh0UTFVYkJ1REl2eGtXRXhaNlVZZDEwdS00YjVaR3lUUDdqNlpRb3JsRUVZUGJ1ZUFiRFJkb3J4MDJkQmptYzJoczVVOG9OWnduTXZxd2RuY3BqRGZEcGxMdTRoWDFOMmRtNm14WXAxU1J1UTVMNHhMNFhKTHl3bERMZ2k5LUJlZThkNVpGaGNXMTQ1dVdyTGVxSWVSYVlodXNYbEhTem5sdFoydkdhYl9YaEVkM1MxV3dOTk9Yci16NF9rcS15ZDRaOThGV1FQZUNDWGpwUzZuNXdlZHk5QXZmRW56SkxVM244RTRIVDNGVGQwa0hJNnVuYmtyMzZ2SFdoSFhQal9odnZBd3FiLXFBSThWUzZGU2ZtcjR5U253czN3a05VeDBNMF9oNzZLRHVnOVBoRzZ1NGN2WUVYY0kwLUYyMjBrOUVBbjh1WklydjFSTDFBbEJoVG55X2VjazllTWhjZTdHOUJhY3hSYmRnTFpSLWRCSm5mVkI3dTBVTG9BYWVoTHBQRWhnajdGUnJGMjI2cVBpOTQ5VUx1TE1HNGs0UURhOGE5Y24xZDZjRUlzZmpNSWlJY0JjM195MHVHZ204Q0ZUcmNTcGdFbGU3SkFVNm9ja3Q5V09QcDBKSEVqVmJwbzZOSDZWX2JlUlM4ODNqSm5feVp5YnM2cXFGTS0zYUJkd3M0RWdzaGktczFzclNSd29jUmZfOXdNdS1rLXB5YWptdFNFYmY5ZzlKQmhpS3ZLYnhEYzVSM0VrSlB6R2JBYTI3bXlobHdDa0NDc3lMVmpLWXJmS01YM2Mzc0UxQzJ1OEFUZkthbll2ZXJzSEUwbUN1V1plU2NDUE1YTnlLcm5GdVBjcWx0Y3JGTURHcTNRQ2g2TldpWWhIUjJZc2laSlNzSm8yeXVmLU1aNkNCODE2b0k2UnAtWWlHYkZ5MWVtaWZZQUFvc0p5RFRFOHVPcVc3N1Y2TjZsdVpNekxlaHN5QUI1Um0xN0VwQktVaE1yeHp1U1lyMDI4VkhQeFVGZFRBaGhVWQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):诺和诺德与AWS建立协同创新中心，体现AWS商业拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-amazon-102
+  date: 2026-08-10
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "亚马逊拟在得州建设7.65吉瓦燃气电厂为AI数据中心供电"
+  quote: "亚马逊拟在得州建设7.65吉瓦燃气电厂为AI数据中心供电"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE1IdW5VY2ZUenpRbGl2cS1NcThET21POUxZVzRRRVNLdS13WEhjWjhYU2FFMk5nNThBaDhpU1U1aTBGR1VoM0tTV1dTYnpoNXZIRTBfWHUyNW9iWE0?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊在得州建燃气电厂供AI数据中心，涉及基础设施投资与能源战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-amazon-103
+  date: 2026-08-09
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊二季度持仓曝光： $AMZN 正在押注AI算力、核能与下一代交通亚马逊刚刚更新了截至第二季度末的股票投资组合。..."
+  quote: "亚马逊二季度持仓曝光： $AMZN 正在押注AI算力、核能与下一代交通亚马逊刚刚更新了截至第二季度末的股票投资组合。..."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwFBVV95cUxNU1FuSG1CYVhnWGVDMUJYWjFnY203U3JhcV9STjU3X1F5dUthdVVIRTZaandSb29sQzc2Wloxd0ZrSDR5QjNQTk9Hbk95ek5UUnNJVjNPVC1aeFk1M1NNOUw0OC1VckVFUGpjNEo2cjhRenc1LU1CaFBXbmkxdlU1MXRmaDd0MFRUaWVHalJzNUNWVEZkUVFQN1ZqcXFySEgxREtnZ00tVjM3NVV6MGVWWkhZSVhEZ3k4Yy1N?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):亚马逊二季度投资组合曝光，显示AI算力与能源战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-amazon-104
+  date: 2026-08-09
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "美国亚马逊天然气电厂获准每年排放3300万吨二氧化碳"
+  quote: "美国亚马逊天然气电厂获准每年排放3300万吨二氧化碳"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE01Nl9TSGJ5Qms0aVpITEg2SjFWbU1MaHoxRk9BcDVZN25hOS1ZTzByVDVsX3RqVmladFhLQ1RBcW1PbnIwRFl4X3FSZnlmZm9rRHFwbHQwVTY?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊天然气电厂获准排放许可，涉及环保与监管。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

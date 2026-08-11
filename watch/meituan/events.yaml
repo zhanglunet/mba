@@ -861,3 +861,49 @@
   source_type: media
   note: "LLM 预分类建议(high):美团无人机低空航网正式投入运营，新业务线启动，具体业务进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-07-meituan-056
+  date: 2026-08-07
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团立秋联合64个品牌近10万家门店发起饮品杯专项回收行动"
+  quote: "美团立秋联合64个品牌近10万家门店发起饮品杯专项回收行动"
+  quote_type: title
+  url: https://about.meituan.com/news#NN260810238008991
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发起环保回收行动，展现企业社会责任，规模明确。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-08-meituan-057
+  date: 2026-08-08
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "美团电话会：受高基数影响下半年订单增速或放缓，将线上线下双向加码AI"
+  quote: "美团电话会：受高基数影响下半年订单增速或放缓，将线上线下双向加码AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxNS1l4UmFzQ08yY2FMZ2VrS0JJT09CWS1iTmJCNVo2eW03VGwwSFNiTEVFT1liVXM2cDU1SHd4d1gzSWJfQTU1Zkp6U2NMc25Fa0dRX0ROdGk5bDdTSmlLcGQ0ZVl6UVRHOGRNUjFPeElVVUdGclAwT092b1l6OFRMaDk2MW10enA5UlNyRUF0dDdmY0NFWnRxZ1NqbjhILUE?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报电话会关键信息：增速预期、AI战略调整。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-meituan-058
+  date: 2026-08-09
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "ATFX港股：美团Q3业绩胜于预期，但绩后股价逆市下跌"
+  quote: "ATFX港股：美团Q3业绩胜于预期，但绩后股价逆市下跌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE55S0RqTkF1N0VUNGZHZ1o3Rk5ZMU1RMTNyT3BPRFlxLVBGSlFGT1BPZGhkZ3EzclA2dnFBMzc2aEZfZmctakppcEJVWkVwVzhXMVE?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q3财报业绩公布，股价反应，财务关键数字。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

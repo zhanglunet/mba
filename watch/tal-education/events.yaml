@@ -258,3 +258,19 @@
   source_type: media
   note: "LLM 预分类建议(high):免费AI冲击教育行业，好未来竞争压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-09-tal-education-017
+  date: 2026-08-09
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "填补教培空白 中国儿童暑期热捧AI学习机"
+  quote: "填补教培空白 中国儿童暑期热捧AI学习机"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAJBVV95cUxPUTZqeW9yX3RWYUdkNGNXZzRueHV6UEM1MTZVTTQwbng3cUo5SDRab210N200a20wS2tzZ0VCT0UzODdDb3JlOThzZDR1aF9lelAtLWVTVUV1Z3RZcjQzaDlOYl94SVVtWU1YRjRsYVhqUHlMR3JMOXhOZTRaRXdQLXpNcFNSYVJPTkFoUF9qTS1MMWZROUdJTmZqbHdrbDYwR3VGLXRQMWQyVE51cXdIVmVSdGFrXzRSWUpQWDFncVVWVk1pVlM3YS1wYWgzcVdnalZ0d18wZXE3cXFNRHVaekYzamZidXJsRkpqbjZjcGlTaXFlNkstR0o4X1JIX0d3QWxsUGpJR2EwalM1Y0FKM3FJWHctN19q?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):好未来AI学习机产品市场表现，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

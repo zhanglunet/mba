@@ -1643,3 +1643,49 @@
   source_type: media
   note: "LLM 预分类建议(high):产品停止支持公告，政策变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-10-microsoft-108
+  date: 2026-08-10
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft introduces new age assurance for app store users in Australia"
+  quote: "Microsoft introduces new age assurance for app store users in Australia"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivwFBVV95cUxOclcyMHVkU3JzRm15WmJSUXVta3BleDdkT0UtU3NBTm5sdVZRTWx1all3bjNTQmU3S0hreTZyTXBMUG80eEd1SkFUZThYdXNPZ2dNZzZnOEp5TFhtR29rQXdQVTJfNktYYWExUFRJNlVuQU1pQ05zXzJOYjVWYk51RENQLVNlRml5X2QtZFlMbVhjSVdGSHYtemI0Yk1Mb3F0R3NzM3RrUXBDUFQzQ0F1dUtHUV9yX2N4UG9pMkttUQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):应用商店年龄验证功能上线，涉及合规与用户保护政策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-microsoft-109
+  date: 2026-08-10
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软计划于9月发布其下一代MAIA 300人工智能芯片"
+  quote: "微软计划于9月发布其下一代MAIA 300人工智能芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oZENYemhfem1nTzZqWW1RNkZDOEYxenJSTWlSdjN5U1J3UUNoTmh2UXYzdGE0WEwzM0MzcklLZy1EQURHTkNkdy02SEVKdzY0ME1DRXN4dkxXdl9KbVJGSQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):微软下一代AI芯片MAIA 300发布计划，重要产品线进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-microsoft-110
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "微软财报披露业务格局演变Windows地位下降或成战略调整主因- Microsoft 微软"
+  quote: "微软财报披露业务格局演变Windows地位下降或成战略调整主因- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBaUW8xNnk5bTM4VzJPQzRWWGx2WGtJVnBPbHdvdXFxeU9GS2J3b3pTQ2F6NHplT3ZOQVEyTUV0M3JpSmJNa1NFTHJxbkxCd0JPVUcxQm0xeHVhTjNucy1HcQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报披露业务格局变化，Windows地位下降，战略调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

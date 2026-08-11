@@ -410,3 +410,34 @@
   source_type: media
   note: "LLM 预分类建议(high):港股上市完成，融资/并购类重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-10-zhipu-025
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "智谱API用户数近700万，新启用超5万块国产算力芯片"
+  quote: "智谱API用户数近700万，新启用超5万块国产算力芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxNV29OMEd2d3RXdVdzb1dtRWJaN3RDUnNhZi01LW9IVnlKMGQyT2pDNjN4M21yZnBWWGUyYlltTVAzRnpwbkJlNDJtWHZEVzE3c3VtOW55OUZsRGJLc0pKLXNnbzBfQ3NyWE41MDRPMzVLNUdBODczaTNBTU1lQXdWTGMyQ0dMMnh1SWlKZWd4bEY?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):用户数/算力投入具体数据，显示业务增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-zhipu-026
+  date: 2026-08-09
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "智谱发布GLM-5.1高速版API，刷新全球大模型API速度纪录"
+  quote: "智谱发布GLM-5.1高速版API，刷新全球大模型API速度纪录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgFBVV95cUxQdmh0T3h1UTlIQ0tBQzBGUGJPblNuRUxaa01sb2ZlemdJQndMcndkZVM4eDZwV19aVVlHbW8wZGhpYjdDQ3BjYkJxOUJpRTEtQXUyRlMtSHVRZEUwaEhkSzdzcDNFaVQzR0twazRRUFB6OHM3ZGtIbVp3QVZQZVJTVXMyMnBaSTFiVUM3X2VB?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):新版本API发布，性能指标更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

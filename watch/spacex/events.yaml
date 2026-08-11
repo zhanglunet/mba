@@ -1907,3 +1907,64 @@
   source_type: media
   note: "LLM 预分类建议(med):SpaceX与特斯拉芯片厂合作，重复确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-11-spacex-125
+  date: 2026-08-11
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "越南Vinspace与SpaceX签署卫星发射协议 计划明年二季度入轨"
+  quote: "越南Vinspace与SpaceX签署卫星发射协议 计划明年二季度入轨"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9YeGtMdk9BdmR6T2x2OVFBTnZCakdhSG5CWUxxVGpDYS16SEN5cU1QRmtoXzFJZE5xMXVDcHFHUW5tRkNhTmczUzFiT3JLejQzVEp2Y1J5eUZJc0g4T0l4aUln?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX与越南签署卫星发射协议，具体商业合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-spacex-126
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大行评级丨花旗：重申SpaceX“买入”评级 维持200美元目标价"
+  quote: "大行评级丨花旗：重申SpaceX“买入”评级 维持200美元目标价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTFBudDNOYXVpUEJndXZrRE10SEZ6OUpkNERpYm1YX01ETnNYcXN5bEFhdVFRUG1fUFRwMGlKallScU50ckZlMEZGWWZBcnlRSUJnWTYzcjY3OXdnc0g4OG40NXRVVmItLXp0WEt0b1U3NW9vaHV5YVZWTg?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):花旗重申买入评级，市场认可信号，具舆情参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-spacex-127
+  date: 2026-08-10
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "热点丨SpaceX绑定英伟达AI架构，太空算力打开新增长叙事"
+  quote: "热点丨SpaceX绑定英伟达AI架构，太空算力打开新增长叙事"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9pUW4yc29Qc0Y3NUNxT01WLWdrS29JUzVPNm1MRTY5amFUY21WTU42b1hQNDRpX0xTYVo1MEt5aGFMWW9CWXRFaVY2SktYTkdvM3lV?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):SpaceX与英伟达AI架构合作，新增长叙事，具舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-spacex-128
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "股价反弹之际 SpaceX上市后散户首次净卖出"
+  quote: "股价反弹之际 SpaceX上市后散户首次净卖出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOWUNwM2YtTGl0a01vXzByRzBNTmFfcXo5aHFSMGxfTG0zSUlJbG1NQjFkNDNfMWc4N1pwX1hsUjlLaHpCWjJTN0wwQUJvY2JuZTVBcENPWUd0VzRXaDhJMkRRbk9WSTBQRFJvUFpiSTBwYnFDbmNSU1RPeHR6N2VrMVh6Vjg5c3J1cFladw?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO后散户首次净卖出，市场情绪转变信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

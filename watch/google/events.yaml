@@ -1809,3 +1809,94 @@
   source_type: media
   note: "LLM 预分类建议(high):Google旗舰产品Pixel 11系列及Watch 5新品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-10-google-119
+  date: 2026-08-10
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI预测台风精度或大幅提升，谷歌天气预测模型登上Nature并开源"
+  quote: "AI预测台风精度或大幅提升，谷歌天气预测模型登上Nature并开源"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqVXo1eERuTS01alQ2YVRqSzk1SktPWFBHakR1YTRadE0zSHo5eW1OZzBsRlVmaThXanF2a281RGxxVVBPVi1OUFFZTUdxcmdNenplOVlPTV8yeF8x?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):谷歌天气预测模型Nature发表并开源，AI研究成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-google-120
+  date: 2026-08-10
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "深度｜复盘谷歌AI人才流失史：从Transformer八子到Jeff Dean"
+  quote: "深度｜复盘谷歌AI人才流失史：从Transformer八子到Jeff Dean"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9RV0drNHRHaldDV1RYU3JJZlpzRkNWajVwejZMT3UtS3BPLURnM1BfNUVXSlFzOC1aRGM3LUNlWjU5NEJHdmsxcFpnbHAwQTdJUm9yWGt5MjRoZ3o3?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [identity]
+  source_type: social
+  note: "LLM 预分类建议(high):谷歌AI人才流失历史复盘，组织风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-google-121
+  date: 2026-08-10
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Aptoide成首家入驻美区谷歌Play的第三方应用商店"
+  quote: "Aptoide成首家入驻美区谷歌Play的第三方应用商店"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBCVkNibnloaUVsam9NZS16RjRWaEtLOC1IS2Z4UFRtY085QU95U3htZ0NMRFlDdXh4UTI3Mm0wcGpfc1ByUEpIbEl4RXlGbHhMUm5aYVhrTEY4YkZQRDRtNXdvT1puZWNWTmN5ZXo1c2hFTENwWG9hYUVqUGdINmM?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌生态政策调整，第三方应用商店入驻，涉及平台开放策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-google-122
+  date: 2026-08-10
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Play新增Venmo支付选项，数字内容购买更便捷-AI应用"
+  quote: "Google Play新增Venmo支付选项，数字内容购买更便捷-AI应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE03SkxDMVctOWlsNHBpNzk0a1NFZDdPV3drVkVneUNEaUtsdVJ6TjA0WWZYMkdoLTFNdG5DOUxJdFUwMUhDNEktLTYtRTl3NllmWEMwNUhsVkFfRkZJY21OWjJTQi1GSHNKTE9fNUMyWQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Google Play支付选项扩展，用户体验优化，功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-google-123
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "“史诗级”让步，谷歌将允许竞品应用商店进入Google Play商店"
+  quote: "“史诗级”让步，谷歌将允许竞品应用商店进入Google Play商店"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1fTGloSnh6YUdWUFBlQWE5X09SRTF5Z1RPYTFXRUdic0VRM0lsVlU0TkNST1MtWVNiMWJvdHBicUZ6UlhlY0Fia2xOdzZxUGlSQUZPdC1xTXNKVkdmUkw4YnlqUWtqUlJGbXowbHE5WGE?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌重大政策让步，允许竞品应用商店，涉及反垄断压力与战略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-google-124
+  date: 2026-08-10
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌将举办“Made by Google”发布会，推出Pixel 11"
+  quote: "谷歌将举办“Made by Google”发布会，推出Pixel 11"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxPNzMxeHA3eXhvTmd5Ny1ockJ2SE13eV9LUnNYRWc2czVNMmNZNTh1LVBZNmdNb2NnSzNYcllwNzVEUW5fYmh3SUhEbXExNFpjUXNtMjk1U09rcGYwV056R0lpcU1WblBZeEV1bm9EWDRWQTZFMS01YWFmT1dUQmtKclhCWk8xanFKV2Z3ZTlSWQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌旗舰产品Pixel 11发布会预告，重大产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

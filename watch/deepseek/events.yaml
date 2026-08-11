@@ -1418,3 +1418,34 @@
   source_type: media
   note: "LLM 预分类建议(high):战略合作与股权配置，显示DeepSeek生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-10-deepseek-093
+  date: 2026-08-10
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "为什么中国大模型便宜又好用？（外国网友趣问中国⑩） --国际"
+  quote: "为什么中国大模型便宜又好用？（外国网友趣问中国⑩） --国际"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE80VnU4N3ZuWmhkZk9LajRuaGpRNDhWQ1lWbVU3WTRNR2JMblhLc1hHUHdweWJIcTJpY056d0FXemU5LVQ1UDlKbjYzSVFHRkxJRlBEb1dOQ3JXdk4ybi1maElrRGdPYnZZc0lhbg?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):行业评价，涉及中国大模型竞争力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-deepseek-094
+  date: 2026-08-10
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "“AI工友”要涨价，你们“友谊的小船”说翻就翻？"
+  quote: "“AI工友”要涨价，你们“友谊的小船”说翻就翻？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE91R2dqTlcyWmdfVDJvQjFrVXBGUXUzaFRvQmtYQlV4TmxWYU15ZUR2QjlZWjlveGd0QTRHd2EwZnFVejNKRmxqOXVNenRxRFN6R00wdThBOFNqd1JDVVdnYU5LTkhuUndBRldBdm9jTmRSQklwUDJJTG9LZEp6eVU?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及产品定价调整，对用户体验有直接影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

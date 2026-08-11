@@ -2147,3 +2147,109 @@
   source_type: media
   note: "LLM 预分类建议(high):AI模型安全风险曝光，监管与舆论关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-10-openai-139
+  date: 2026-08-10
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Expanding Daybreak as the Cyber Defense Window Narrows"
+  quote: "Expanding Daybreak as the Cyber Defense Window Narrows"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQNHhOZWxZTjFGeVhORk1uYkFLc2tpM2d1SmxadExqMU1KM1lrMmt3VVh2SXpFZ01GRGFBSWJYcG1NSU02a1ZLTFEzb3hwd1VJcUt6bk9oam9ZYXZLdFZBTEdveF9SQjl3Z1B5Z3JlOS1uN2pnd1JTclY4b21hREdzUmxSOFZ1alE?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布网络防御产品Daybreak扩展，产品进展公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-openai-140
+  date: 2026-08-10
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Premium seats are coming to ChatGPT Business"
+  quote: "Premium seats are coming to ChatGPT Business"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5QbFoyeEpDQWY4c3hYV2NQSlBfcWhvZF9jR3BMdDBDdmpKbE9xZ1NFRHVBY1lldEZ2YXJLTmNwUlB6VkNXVGN3Z2ppdEZBVkxUNHY0OUltRTR6MkFGRUE3ZlI5MGZFOTg?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布ChatGPT Business高级功能，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-openai-141
+  date: 2026-08-10
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Putting frontier cyber models in more trusted hands"
+  quote: "Putting frontier cyber models in more trusted hands"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxONTMxN3pScDV4Ul81eXN1anAzOXJmVnV0Y09SZ0l2a1JGd2ZVSjY4eVkyUVprUU1WN25MdzViaEc3SmYyOGd5N0R1MUNKaU1aem9uakRjYmljMkNIbE9ib0RlMzZ3TVphRE51REFMSGlQQXpSOHlneW4ySWlzQW4xUXRBVQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布前沿网络防御模型，产品/能力发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-openai-142
+  date: 2026-08-10
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas"
+  quote: "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE9PbHdWX05rUm4wU0dZcHk2aDVZbzQ1dV9LbzI5VmJpV0RlbjhxUk43aUZ4S25LVHZuOXh3RThhRmZkR1dxOHRiS2ltNGx0YVRPdEd1dS10a0ZEUXhlSjB2M09qU1c0N0xsckE4WEdR?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方致德州州长信函，AI基础设施政策倡议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-openai-143
+  date: 2026-08-10
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI全新GPT Image突袭！碾压Image 2，塑料感终于消失"
+  quote: "OpenAI全新GPT Image突袭！碾压Image 2，塑料感终于消失"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CZHlGZUc2VmMxeTR5WmUwREExZzlxa1NYWUdsc2JLTE50Ymdnd2xhRHNlZE1jZlRRd1dkVERKVmUtX2VNZk1Kcl9qVl9mUFc4X0o5V05DYTRGemlQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(med):新产品GPT Image发布，但标题党风格，真实性待验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-openai-144
+  date: 2026-08-10
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI推出GPT-5.6-Cyber：向网络安全防御人员开放“限制更少”的模型"
+  quote: "OpenAI推出GPT-5.6-Cyber：向网络安全防御人员开放“限制更少”的模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1mUlRMc0FWekV1SU5mZDVVSnVlUDhQZHJpMG9HbVB2TWJJRVZWMWpuNDU3VDg5SkZpU1VpUk5ITXZnSGp0QlU0bzhhcGRDZ3A3QTBz?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):新模型GPT-5.6-Cyber发布，针对网络安全领域。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-openai-145
+  date: 2026-08-10
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI自掏70亿，估值不涨反被超"
+  quote: "OpenAI自掏70亿，估值不涨反被超"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtRFNaSHhNblVuNjRndWw2Q0pBeVppWk9XazlGS2dnTi1WQjBqb3Z2b01GMm9qWUQ3VHlXSWxsTkRPRlRHeEN5YmQzTDdiQnFf?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):融资/估值相关，但标题表述模糊，需核实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

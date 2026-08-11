@@ -1580,3 +1580,139 @@
   source_type: media
   note: "LLM 预分类建议(high):英伟达20亿美元投资Lancium，战略投资确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-08-08-nvidia-104
+  date: 2026-08-08
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Firebird Launches CIS Region’s Largest AI Factory in Armenia"
+  quote: "Firebird Launches CIS Region’s Largest AI Factory in Armenia"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxQdFhLSV9ISjJIVzQ4d2IyN0dVTk9RbkJ6T0NtYmtsZUhVeklkRUJnLVhraWdKYWE5eWc5OW9xMWRrdDVvTUxTOTJpX1lVZ0ZhNW5GendIWVpVZnYwQ25NWVFFRGc3cDR3TDNfZjNScmVMbDhnMXg2YkxSc1lXazAzWlc4ejg?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布区域AI基础设施建设，战略布局事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-nvidia-105
+  date: 2026-08-10
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达开源Alpamayo 2 Super，智驾领域的安卓到来？"
+  quote: "英伟达开源Alpamayo 2 Super，智驾领域的安卓到来？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE04TkxTbXNMYWwwWXhDWVRCRFNta1E3czBfd2lhZkhqQldlWjYyWDB1UkZFZ3RvZXVFLW11WlM4ZF9FOTZSZ0pFRU10UVBOY29pcXhiVTNyS1FLSTBT?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):开源产品发布，智驾领域重要技术动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-106
+  date: 2026-08-11
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA 牵头组建 5000 亿美元人工智能计算基础设施融资平台"
+  quote: "NVIDIA 牵头组建 5000 亿美元人工智能计算基础设施融资平台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAJBVV95cUxNbTZfUnMwUkcyVzZwTzhfY1FSektpWHBVM0UweXRSSUt4a0t5T3VjTzJnUjNaTEV3QVJEUU4tTHZ2em1RWk1NQjB2Z2RNY3lLQkZ0ZmsyYUxabW9xQ2FuQkYxMWhQZUhkdzlsMDF2dGZVMkRrRHBlSjFSeFRWQ2k0b3pPTTdvdWtNeFlnSTducEZrWEI5M3dZOE44c3BGSk9Lb01qNE9kb09KeEVZTkRGQkRHWWV2VHpISUNMcEJNdEkxdDE3VEdQTE1Nc0I0UEJKYTZ6NVZOaE42MnRxMWNETWNEYm55NUZZQmxINkRiZDk5R09kUmJiNWQ0X2JMb2t1cWN6RA?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):融资平台组建，金额明确5000亿美元，战略级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-nvidia-107
+  date: 2026-08-10
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达与华尔街多家机构达成AI融资协议，目标规模达5,000亿美元"
+  quote: "英伟达与华尔街多家机构达成AI融资协议，目标规模达5,000亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxQdVpvZ3NGUGNkYmZWRGtMME1QLXZ4TVJMUnJnRFFkdWkzbm1SQTdvSmhMZDZlRjlSRU40VjRkNjJXUFJnTUFrOVE4NVBJSGUyQ25neTlqV0lmVTdURHRZeUNmX2lBQW1QenRlMk1UQXpHUlZKQ0ZuSkc1QkVHa3JYWEdVU0xGZmRCWWdCUDV6X2UwY0U0RE1YZWpfNHFRU051ekhOUnJhNXY5UUIx?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):融资协议达成，金额明确5000亿美元，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-108
+  date: 2026-08-11
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达牵头5000亿美元融资 共建AI基础设施"
+  quote: "英伟达牵头5000亿美元融资 共建AI基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFB6a0JMaWZlT01FdVlsZmhHYWtWRnFVS0RzSi1uMkNXcURFelMzM1VHcUczUDJRMXFERDJzcUM3ZjUtWk81VmRjRVM5eG1RcXVSczZXNEVhbGdPakhrT3JGdGxpMVVnNmU3UlNYanhwYkY?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):融资平台建设，金额明确5000亿美元，战略级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-nvidia-109
+  date: 2026-08-10
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Nvidia携手6大金融巨头 筹逾2兆发展人工智能"
+  quote: "Nvidia携手6大金融巨头 筹逾2兆发展人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE5idlFLOGcwMUM0Y2tVMUU0cmg4b1l0UW03S2JNd2ZmbjZoX0x6WXZJa25mT2F6VkxFaE9jVkNuUzBueWlvSGgzNUNMZm5lcXQ0ZWVnSWNKRGFvd2NCemlqc1hESQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):融资协议达成，金额明确2兆，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-nvidia-110
+  date: 2026-08-10
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "速递｜黑石支持的AI电力基础服务商Lancium获英伟达20亿美元投资，估值100亿美元"
+  quote: "速递｜黑石支持的AI电力基础服务商Lancium获英伟达20亿美元投资，估值100亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNV2JHdTJKZVRnRElqV2JqYkxpTF9xZGJCaFBfcm03TkJHWXpmYk13dUxkdDQzV2c1b3BUNlBUM3o5WlJoeVZWUlc3YUpIdEpkaFVTWk9SWlB4V2MydXA1MFpxblQwSEtuZERGVmVtYk8xa3RtZTh6UlhkNVNXRUVUMGZnRzQzUGRtaVNkNw?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):NVIDIA投资20亿美元，金额明确，战略投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-nvidia-111
+  date: 2026-08-09
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达XR AI正式面向AR眼镜和XR设备推出公开测试版"
+  quote: "英伟达XR AI正式面向AR眼镜和XR设备推出公开测试版"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE5TNWg3a2NicVZtcnc3Q3ZBQk5ud0lDNGhlU0h0N3NmLUhoZHdTM3V1a3h0dlhpVnl4TDNfcnhhd05TVXBpQUhTWi0tR0UzcjBiQlczMHVUSW8wWlp6SnpPTHdhSG1fbjh5a0hfeW8wZ1U?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):XR AI产品公开测试版发布，新产品线重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-nvidia-112
+  date: 2026-08-09
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "英伟达首款Windows CPU最新跑分！甩开AMD、Intel：却依然落后苹果"
+  quote: "英伟达首款Windows CPU最新跑分！甩开AMD、Intel：却依然落后苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFA5VXl6eGlzbnRwaEJ6V1BUX1FlVmU0dGdOOWJVUXRlM2NROGRGVlNQZGNpcHhudDRlc2FPUmlxNURpX2U1Q0hRdVRmbE0?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):首款Windows CPU性能数据公布，产品竞争力评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

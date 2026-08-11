@@ -1839,3 +1839,109 @@
   source_type: media
   note: "LLM 预分类建议(high):官网确认后撤回文档，反映产品策略不确定性和舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-09-apple-121
+  date: 2026-08-09
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果官网确认与千问合作，苹果 Apple 智能要来了？"
+  quote: "苹果官网确认与千问合作，苹果 Apple 智能要来了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oTEVfOG9GZkVrMDZXNF8yc0luVEN5Q3B1X2NIZjJ3SmgzZWdRdkVkWWJVR1g1N0taNURGbGVoQnh6N2VsNEVwdlByWl85YW1VX1JZVnd2TUVIcnBh?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):苹果与阿里千问合作确认，涉及Apple Intelligence国行落地。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-apple-122
+  date: 2026-08-09
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果中国官网，删除Apple智能接入阿里千问手册"
+  quote: "苹果中国官网，删除Apple智能接入阿里千问手册"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5TMDdxM2d0TzdNTTdzZ1p2VXVueGxYOTNUSU5yMUhNdkpzRHdvUy1PbVZpN05tMUJJYU83dlFxM0NBTFFicGVyTE9ucTFUMEZtWWNnTVFkSmVmdEtC?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):官网删除千问手册，反映合作政策调整或风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-apple-123
+  date: 2026-08-10
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Apple Watch大变身？苹果被曝正考虑重新设计产品 探索圆形表盘或无屏设备"
+  quote: "Apple Watch大变身？苹果被曝正考虑重新设计产品 探索圆形表盘或无屏设备"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5CUjBZRUQtalA4b01aLW44QWQ5TFJxUG5taUlEQnhDYnBCdndyVFhMMVl0QUdBX3NaRnZWYXZxemtSOHhTekdXVA?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Apple Watch重设计传言，产品规划信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-apple-124
+  date: 2026-08-10
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "下一块 Apple Watch，苹果连屏幕都不想要"
+  quote: "下一块 Apple Watch，苹果连屏幕都不想要"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE84aThrV1RIbTdNU1ljTEhaX09tUTRCdWtHdVFaS0UxMV9KenRHNUZoMWF1QjhZRUpVeHZ3OFV6dmhQanc?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):无屏Apple Watch设计探索，产品创新方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-apple-125
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果与MLB合作，为Vision Pro带来沉浸式棒球直播"
+  quote: "苹果与MLB合作，为Vision Pro带来沉浸式棒球直播"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1aQjB6azNwWmpITWlzbkxDNlZ6cHpBWklwWDRqdU9lb2dfU2E1LUlmeUxMb05SeC04REhadFJja0dFN3M?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Vision Pro与MLB合作，内容生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-apple-126
+  date: 2026-08-10
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果iOS 27 Beta 5更新发布：液态玻璃图标大改 国行AI还是没来"
+  quote: "苹果iOS 27 Beta 5更新发布：液态玻璃图标大改 国行AI还是没来"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi_gFBVV95cUxQWkJ6a1hCc3IxSWVKSnRkcEZmeEpmVlNWT1R5dW8wZllXQVFHbllkUXZzU3FCejZ1SjI1bUNQVTFMQ3lYR2ZOOTY3alhuVDhPMjNZMVM5U1czbWstTHEyenJNZVpmc2tSdVB2djZnSURDN25ydUQ2MlRicVBXYXJyZVI0MnhfTFpzeGJ1Q1RuTDJUVjNfY1NTakNVSXJ1ZEQ5ZUJ2ZG8yWl9UMDFMYTRhRFBUTG1LLVdiaG81YnYxLVlVMFg0TVdLYXNMSS1aQVlZNkdwN2kxQUVCQUJXTXcwc1R0eWtOX2Z4c0toSmhrN3lYRTFwU29aaERPRnVNdw?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):iOS 27 Beta发布，国行AI缺失现状。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-apple-127
+  date: 2026-08-09
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "上线不到一天，苹果官网撤下千问使用手册"
+  quote: "上线不到一天，苹果官网撤下千问使用手册"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE4zSXJ3REVDeldqOUFjMTItb1pZWExQbG01THNpVUFiMUp0US1SVDFJeEpwSm1rcm1Db1BBbjNpVE82X2ZBbFF5ZFJGUnBiYTU2a3NaeEZaMVlndFBhMlMtZGcwVlY?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官网快速撤下千问手册，合作政策重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
