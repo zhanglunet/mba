@@ -1610,3 +1610,94 @@
   source_type: media
   note: "LLM 预分类建议(high):特斯拉解雇正极材料高级经理，人事变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-10-tesla-106
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉8月已启动Optimus机器人产线：V3进厂造车，得州工厂将造V4"
+  quote: "特斯拉8月已启动Optimus机器人产线：V3进厂造车，得州工厂将造V4"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wTHl2S0l0UUtrcjRvcG9VdlRISjE2VkpodUgxYnBIY29QLWtjeTVmX0pTcG1VSXRaVDh3U3pRaF9TaUZGVjNtQTV6ZTRWQTRSc1ZyekZ5WkdfNlVY?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Optimus机器人产线启动，战略进展明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-tesla-107
+  date: 2026-08-09
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "芯片自造、算力外贩、颠覆光刻机：马斯克AI帝国的全栈豪赌"
+  quote: "芯片自造、算力外贩、颠覆光刻机：马斯克AI帝国的全栈豪赌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9JQ3lCckFvcnoyYWpXUnotOHpaRWpUTGhEUVN2YVI4R1M4MHBQaWhYSXo0V1NGbTBzODlTTXgxeV8xQVlwZURaZ0t5VlVtVUU2VmFkWEhnVmN0MGY0?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):芯片自造战略分析，涉及核心业务方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-tesla-108
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克的芯片梦，要靠这个清华人来落地"
+  quote: "马斯克的芯片梦，要靠这个清华人来落地"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HZlA1WWE3UHBTSkZwNVdmTE8td1VoUGhJMTk4R0ZOcVczVXNPQjB6VFU4WG1BUDBpWXJvVENSOTB0RUE4eklMOTgyajE0dWlsMTB4T3d3?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):芯片战略人事信息，涉及核心项目。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-tesla-109
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克在社交平台发文称，特斯拉锂精炼厂现已投入运营。其指出，这是美国最大的锂精炼厂。"
+  quote: "马斯克在社交平台发文称，特斯拉锂精炼厂现已投入运营。其指出，这是美国最大的锂精炼厂。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxPZnNaaUwzTWdkSnVtSlAyN1g0MXNGTUJHZHg2U3JuNjR2UGRTLV9tbjBDVTRfaW9KeUhSTW9KZlV1TEJqTTlWXzRlWGd5MWdGSVd5QmtQYm54R3o2bVJPOFI2YWNQSGFXZDlaR3N2U0pTcXdxb0hpbUlqb1JlNnBNcmxuOTVqaDVFc2NCT1R4SENQZ2NxRGw1T2tnc1E?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):锂精炼厂投入运营，供应链战略进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-tesla-110
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉Robovan无人车再现Terafab渲染视频，无方向盘设计瞄准低成本运输"
+  quote: "特斯拉Robovan无人车再现Terafab渲染视频，无方向盘设计瞄准低成本运输"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE56VjZDekpvRDg2RDV0WVN3S0JiMFFBUFprM3B3ZmVTSVgtbkFoOFdQOXB2RG1CdFV5U0ZBNHd5TExvaEJqanJ3S3pTaTNPbGxzTGtfSmQ2WmlDbGlJ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Robovan新车型设计公布，产品线扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-tesla-111
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Terafab工厂预计建筑面积超1亿平方英尺全球最大单体建筑- Tesla 特斯拉"
+  quote: "Terafab工厂预计建筑面积超1亿平方英尺全球最大单体建筑- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5faGsydldoQkdTZnhzaTdpODJ6MkgzNXhGRUhnTUtUSk9mdkU1ZXBiUUtvM25lazdrU2M1MjhXRG9EZzhiOTJ1dmd5OVg2NDkyaUtoUV9XQ2pQc3c4VXF0Yg?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Terafab超大工厂规划公布，战略投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

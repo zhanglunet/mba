@@ -734,3 +734,19 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕Q1销售额受地缘政治影响，财报关键数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-09-hermes-048
+  date: 2026-08-09
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "“从不直白袒露一切”，爱马仕如何做好一本品牌杂志？"
+  quote: "“从不直白袒露一切”，爱马仕如何做好一本品牌杂志？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQEFVX3lxTE42MnFtTGY2VlBZVXVmVmRqM1RZTFlnRTFlMy1WcFhDSzVMRVNPSHNYWG9EaEpGalZMRG5WaEZCLVk?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):品牌杂志策略分析，展现品牌文化定位。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

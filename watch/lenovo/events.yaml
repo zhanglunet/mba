@@ -829,3 +829,109 @@
   source_type: media
   note: "LLM 预分类建议(high):新品发布与AI战略布局，产品层面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-10-lenovo-054
+  date: 2026-08-10
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "联想集团新财年首份财报前瞻：三千亿之后的三大核心估值锚点"
+  quote: "联想集团新财年首份财报前瞻：三千亿之后的三大核心估值锚点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBxWXZBbTJfdXN3SDVTanJaOFFGV1U5Rmx3VHR3Q0dCd1QtblF0RGF0c2dJU3JzYmtQT0VNb0RIcDkzRGg4TGlrRHBJNmR2RzJJTmNn?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报前瞻涉及核心估值指标，具舆情监测价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-lenovo-055
+  date: 2026-08-09
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大摩：联想集团在大中华区PC市场处最佳位置 升目标价至11.4港元"
+  quote: "大摩：联想集团在大中华区PC市场处最佳位置 升目标价至11.4港元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxQMXpoclFNVFVpd3JybjJ5R0ozaF9aTXA0ejYyV2lYWWIybS1aSmZ5QlpQVnNBclo2S2J1MVM0OG53UWJQZjhqOENKN053VjRta0pnOGRaekNkdC1ZdnJCU2laSzhNUTRZRUhrUG9ncTdzUXFiVXFvMDRKNVBqMlEzcnNRelVzNVFhbWdVNl9RY3c3SkY3N2ZBcDFqaw?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师升目标价，反映市场对品牌评价变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-lenovo-056
+  date: 2026-08-09
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI 营收占比 32% 甬兴证券：维持联想集团买入评级"
+  quote: "AI 营收占比 32% 甬兴证券：维持联想集团买入评级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxOWnkyOEtCVC1pQ2RsTlZBRVZ4eHJrUG5Fc21SV1U2c1k4bUtOQW5XZXFCdDltcmJpNkdiVFBwdzVfdi01RWFBWEp5WkJhSU5FUElkTG9uYlRvNlBmS1prdUpHZmdMWGJoVVYyeFVzakNsU0JMX2kzUVNKZlJuSGZCRy1jTkJtTldsVGlzbFNkWk03M19ZLTFJQWVRTEg4dThlR0JFSHpNSQ?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI营收占比32%关键数据公布，战略转向信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-lenovo-057
+  date: 2026-08-09
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团推出首款搭载高通骁龙XElite的下一代Copilot+PC"
+  quote: "联想集团推出首款搭载高通骁龙XElite的下一代Copilot+PC"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxObUhZWjA5ckU0MDNYaDVTVElrQVdFNHFKRHNtVDJvcS1tNjhjYVVNbXZXYUlkS2NGYVg5cGk5RERkWF8zZ25kSm5obU1wZFFwQXc3R2w0V2JSZkNsSk9SZmdZQnA2bDBidWZHeVYyM3I2RTVJNU9aWkZpNTRVbEM5eXp4RXRXUFpTeFFqQVZDQ19XR2xHTEdlSFJvN09XX3VFb1k3SFRCeUpXbTJu?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品发布，AI PC战略重要产品线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-lenovo-058
+  date: 2026-08-09
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI PC新机将提高联想集团收入及毛利率弹性"
+  quote: "AI PC新机将提高联想集团收入及毛利率弹性"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxQVUFIa2taVTE1QkRKUlpvclR4clZvVVZVX0xLWXBtbnczcjdpcmZFRzVMbU9RNTdac3p0T29SMVNKbUVLV3YwWno3RGlBUk9VZEtNWmtJMjUtcFduQmFaaGhzLTNZb0o1UUdfb3lZalV6bXE2ejZnaWV5bF9NN3ZyUDQ2ZHUyalFEN3IwUzhfZ1Z6ZlpBUlZIdw?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师观点涉及收入毛利率预期，具参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-lenovo-059
+  date: 2026-08-09
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想发布“AI工厂”解决方案"
+  quote: "联想发布“AI工厂”解决方案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1tNk1GazlOY2sxZG8wX0ZsMEtrQTIyYWktLWZEaE9CRTVHUUJ3SjkwWW8ycFFLbmZkclI5UGlqM1pVc21BbWRqYi1DUzJtMzBpbVE?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):新解决方案发布，AI战略重要举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-lenovo-060
+  date: 2026-08-09
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "联想新一代拯救者Y700游戏平板发布：小尺寸性能之王，起售价2899元"
+  quote: "联想新一代拯救者Y700游戏平板发布：小尺寸性能之王，起售价2899元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFBIeExMUFB5bjZZNUhDZ0RZbjNBYXpSWEtoRE9XbEVCRjFOWlZMM3J1LWRIS19rTTVfT0ZoemxQSk15VkNfRXdnVklYTF9ReFBFMnc?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品发布，产品线扩展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

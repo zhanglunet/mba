@@ -281,3 +281,34 @@
   source_type: media
   note: "LLM 预分类建议(high):Palantir业绩亮点：AIP普及、盈利扩大、现金流增长，显著正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-10-palantir-019
+  date: 2026-08-10
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "帕兰提尔股价上周大涨近40%，AI驱动增长超预期"
+  quote: "帕兰提尔股价上周大涨近40%，AI驱动增长超预期"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVjVuekFMZ3JHZF9WUWRiQ2txcHhndHM5cjgzeVl6OFk1U3l6RFItR1FiS1dLbkNYaGNocEhETFVlWm44QlFzRktRNldzQ1U4dUdGa0tyN2luVnBLWWJXdWZCZDNMSUpGb1VLTGRkWGxwM0xscUNNN3F4OUJoX3A0Wi02ZWkxUVYxb1dRS3hQVVlESjVoWWFGZWVMSWdqS1VrV2RwV2RFLTR4Zw?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价大幅上涨，AI增长超预期，财务信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-palantir-020
+  date: 2026-08-10
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Palantir：131亿美元的未完成订单，投资者刚刚开始洞察"
+  quote: "Palantir：131亿美元的未完成订单，投资者刚刚开始洞察"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNMUl0VXgzbFM0VDQ5TERIRVNJWDV4ZF9YRHZ6UWdYNXBRZXdrY2pPT043cFdJUDFYelpFV0JvdEJlYnV6TGJRb0tseWhjSVc3cUt5ZkpGbk53VjFJMDJKbTdDT01LcFNhT1l3UzhubmVXeC1JSHZQTUp3cndUbUZVag?oc=5
+  fetched_at: "2026-08-11T03:56:21Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):未完成订单(backlog)是关键财务指标,反映业务增长动能和收入确定性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
