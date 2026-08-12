@@ -1449,3 +1449,124 @@
   source_type: media
   note: "LLM 预分类建议(high):涉及产品定价调整，对用户体验有直接影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-11-deepseek-095
+  date: 2026-08-11
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "怎么看 DeepSeek 注册 Harness 公众号并选用黑鲸鱼 logo ？"
+  quote: "怎么看 DeepSeek 注册 Harness 公众号并选用黑鲸鱼 logo ？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBSby1qV3pDQ3ZpUnUwTXZSZUtFWnNrRjQwS1FfUFY2cHAwS2dSNUxyVWpHTTV2VHJtZkJSTkxQUl9KQmItaVpiTnhnN3ZBZFhGS200LWk4QlVER2lEc0Y4?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):DeepSeek注册Harness公众号+新logo，品牌/产品线动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-deepseek-096
+  date: 2026-08-11
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "官方公众号落地，DeepSeek的智能体工具团队来了！"
+  quote: "官方公众号落地，DeepSeek的智能体工具团队来了！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFByVUVabGdFei1qbFB4N2x1RGNyd2JnV0d4T3AwYldZT1F5MFhTNlJINDRSM1RJNVRIdmQ2RzJ2c0pyY1llV3JiZDJqbXNvcXMxWGt2UVlOUm5nQ2N4ejktbmhHVTl1QQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方公众号落地，智能体工具团队成立。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-deepseek-097
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Harness正式浮出水面，DeepSeek不再只做模型"
+  quote: "Harness正式浮出水面，DeepSeek不再只做模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5KZVE2LVNWVmNnTl9CSDdtM2o2SkxCYkJnNU1LY1VkRHJabjMwdThMWU41QnRrQUNSQ0tZdWZRRjV6SXpKSHNjZWxNZmU?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Harness产品线正式浮出，业务扩展至智能体领域。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-deepseek-098
+  date: 2026-08-11
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek进军Harness，意在抢滩国产高端智能体蓝海"
+  quote: "DeepSeek进军Harness，意在抢滩国产高端智能体蓝海"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTFBzQnlkNVlyTkVkQnA2SmVZRzJqdHZkYU5mNjFCMEFYRWo1Y2dVY0NzbnlmLWg4bVV4MThqVUVJUzh1ZTZPQlZNMzNTWl9RNHFYZThZREhPMEZmdE9KMUlmZW9Ma081NWR6dzZoYl8xWTR3VWxvcTI0NTVNTXpidw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek进军Harness，国产高端智能体新赛道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-deepseek-099
+  date: 2026-08-11
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "主攻代码智能体产品？深度求索注册“Deepseek Harness 团队”公众号"
+  quote: "主攻代码智能体产品？深度求索注册“Deepseek Harness 团队”公众号"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1UbEp6eHRwUmwwLVZrREVKM2haZDBqdEQyZ1dQQVZVeXVNUERLSm5QQ2N3VnplNlBSY1hzNS1MQmNqT3VzOHlFUVBnTDZ5dk1PTHdMNVc5SkNmMzJXelFMUEdOTm9ib2tBMnZXS3JwUXVvRzlzYXg0ZVlOT2FOa2s?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):代码智能体产品团队注册，新产品线确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-deepseek-100
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "前瞻全球产业早报：DeepSeek组建Harness团队_产经"
+  quote: "前瞻全球产业早报：DeepSeek组建Harness团队_产经"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFBMZVo4LWJ6djR0cXFxLVdYRDFyX1ZSTzFjb1ExM2pQRUtaOGpWZ0RlM2xZMzZRcko1OVRnR0ZMUWczZEZWbHllUHgtbGtpeFdTQ1k1QUVGSHAzazVWMFI0TDNMMS1rb1ZKNWc?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek组建Harness团队，产业动向报道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-deepseek-101
+  date: 2026-08-11
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek正式开设Harness团队公众号，或主攻代码智能体"
+  quote: "DeepSeek正式开设Harness团队公众号，或主攻代码智能体"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE9sU2VjSjFmT0xpT3FPeDMzVkl5Y1BXR3dqaUhqUmdOLUtsaGp4YUI2c0ZlSzZGQkVVYldmbnZjTlRMcjJkcnduS3ZVcnowQ09vTTh3ck1R?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Harness团队公众号开设，代码智能体产品确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-deepseek-102
+  date: 2026-08-11
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "深度求索注册“Deepseek Harness团队”公众号主攻代码智能体产品- AI 人工智能"
+  quote: "深度求索注册“Deepseek Harness团队”公众号主攻代码智能体产品- AI 人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE42UnBiTjRDdmJManlTZ0F1YkQzNENsMUdKcmNCb2ZxMnkwRnRFVy1TUkY4VlRCTXY5MzVES29wYnFSS0I5RU44cDRLZFozT2lZckxHMkNnSFR5Z21WX05XMA?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Harness团队注册，代码智能体产品线启动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

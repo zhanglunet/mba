@@ -935,3 +935,19 @@
   source_type: media
   note: "LLM 预分类建议(high):新产品发布，产品线扩展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-10-lenovo-061
+  date: 2026-08-10
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团午后涨近2%，股价再创历史新高，此前一度跌近3%，月内累涨超21%；公司将于本周四公布最新季度业绩。"
+  quote: "联想集团午后涨近2%，股价再创历史新高，此前一度跌近3%，月内累涨超21%；公司将于本周四公布最新季度业绩。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxNcG9MVk56aXNoMUwtbXNFc1FDekV1WkZ3YW43bnFoS3BUTkJwS3NCN21rUlByUFRPbHVrMVQ3YnRxSkJmRUtkS0ZfY3B2ZG5vN09nMm90WnJnbng2LWRCaE1PY2hWSlpWQXhiYmVMclk0SHlqajYycEpjVF9ENVRvS3JMYy1wS1oxZ0FqQU9pU2NNYlRQc3pN?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价创新高+即将公布季度业绩，有实质信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

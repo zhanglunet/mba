@@ -750,3 +750,64 @@
   source_type: media
   note: "LLM 预分类建议(med):品牌杂志策略分析，展现品牌文化定位。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-12-hermes-049
+  date: 2026-08-12
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "阚清子送完爱马仕再送黄金，宠粉天花板？"
+  quote: "阚清子送完爱马仕再送黄金，宠粉天花板？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE80Q0hWZlQxSU15aU1VVUlGNWlueU16aEROSGZoMV9FNjBrSWlWZ3Y0bnVSakNYY3V0a1NMQnRjbVlIWFQ3YnJqNllIVVlWLUZGOTV4LWctaUh2QVNfZExmVmlBaUhOenhoWUtOS2t1dHo?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):明星代言人宣传爱马仕产品，品牌曝光。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-hermes-050
+  date: 2026-08-12
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "从排队抢购到二手商“不敢收”，“黄金爱马仕”不好卖了？"
+  quote: "从排队抢购到二手商“不敢收”，“黄金爱马仕”不好卖了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxOVG4zV1p5YnZwQ0lGczA1aEU2eW9vRG9zTFIzTU5BdUVNcEVfWVZNZ05WYkd1THFzWmtzNmc4bU9mVEVkU28xd2NCNTlWZmZvdlpsODF4VDBwNk5VRGdNVmxubndHVVJNaDRiVmtPRFRIWUFjNFFYMTZwci05emxzSWY3V3ZzZjktNnQ4aTNrRkxYWGJZeExLSXJHR0dqbkRsenVJ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品销售困难信号，市场需求下降。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-hermes-051
+  date: 2026-08-09
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕国内和国外价差有多少？3个维度拆解真实成本+FAQ"
+  quote: "爱马仕国内和国外价差有多少？3个维度拆解真实成本+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNWndPUWFVYktBOFdHbjEwVjZVa0ZpX1BYRVEtbDhybWZnWXVFbUM5MjJsd2ZVdDBPek9YT3NGNkJjdmVsRWtlTV9FNmx3eHlFbTBLRERqUnNkVU9yYU81X1dGX2xlTXVHbEdHOU5ZY3NTZ0JpR0ljODcwemRWVlRoOGNWTQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕价格策略分析，市场关注度指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-hermes-052
+  date: 2026-08-10
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "最保值奢侈包排行榜：爱马仕138%重夺王座，Mini Kelly溢价282%，Goyard为何紧咬不放？+FAQ"
+  quote: "最保值奢侈包排行榜：爱马仕138%重夺王座，Mini Kelly溢价282%，Goyard为何紧咬不放？+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNbFN3TFBwa3EyVTVmWktuSUlPaDhZSWdqQi1oSmdLR1JlbkZrSjNxWTZ5ZWFHai15OFpYT1d6em5QN0l4WW95LXVhNHAyLTJkWUZxS0I4QmtvVjU2aDIyd1RYalJQZVRwUkY1VEphYXcxNVNvVjJ1Y2ZJY2ZRUjBFN1V5Zw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕保值率排名第一，品牌价值认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

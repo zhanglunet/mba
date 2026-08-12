@@ -566,3 +566,19 @@
   source_type: media
   note: "LLM 预分类建议(high):新产品Osmo 360 II即将发布，产品线更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-11-dji-037
+  date: 2026-08-11
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国拟扩大禁外国制无人机 大疆光达机型恐受影响"
+  quote: "美国拟扩大禁外国制无人机 大疆光达机型恐受影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE03UkpNQTRDOFlIYlhUR2ZQdXN3OERFeTBkMEUzV2hkME96aXhpS1JSdW9xOVhGcnNzRlJoLXdtdDZBRW5UbkxJRmpJSU1Fdlo0ZGZnUU9hVlI3LVQ1ZTJYV3JZR3J2MVBLOW93?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美国拟扩大无人机禁令，直接涉及大疆产品合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

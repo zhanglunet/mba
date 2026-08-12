@@ -1701,3 +1701,79 @@
   source_type: media
   note: "LLM 预分类建议(high):Terafab超大工厂规划公布，战略投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-09-tesla-112
+  date: 2026-08-09
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "168亿美元、929万平方米：马斯克口中的“地球最值钱建筑”长这样！"
+  quote: "168亿美元、929万平方米：马斯克口中的“地球最值钱建筑”长这样！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE05R1RpRTVVTkxHTEYwOUJ6V054czljVFpBaFBSQU11cWJOcGt3MXdwN0NFLWlBeWdxX1k5a284bjNVM2ZiQlZfRmRmR0ZoVVpXNGU4SDJUdmktZ1V1?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):马斯克资产规模言论，涉及特斯拉企业价值评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-tesla-113
+  date: 2026-08-11
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "实测对比：特斯拉FSD v14.3.4行人突发响应仅0.45秒"
+  quote: "实测对比：特斯拉FSD v14.3.4行人突发响应仅0.45秒"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxNU0kyVW15MGV2M2VCa2dUbTEtVU9TVzhEeUM4MjdYQzMtcGhIcHBma1FJNkUtODZ2YlNSS3VycEllazlCMTRCZTZuX1U5RzF5Z1NaYXVfZUNCSlBQVE5GQ3pMc3o5TU9XSFBfdWUxLTlQeHB4dFR4Mmd0YU9rTXA1cy05UWJsZWs?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD v14.3.4性能数据，产品能力更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-tesla-114
+  date: 2026-08-11
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉首席设计师表示，新款Roadster 即将亮相"
+  quote: "特斯拉首席设计师表示，新款Roadster 即将亮相"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNbzRsQXp0Wi02bmk3NllBbUFyb2FFek96aDgzeDdIWUxFQ05EdGswNnk1WUdhN2hwZTZuRGdRZk1uUWJNQ01RVW84bEkxTmFBZTdQNzVGUEhFLXFvbVdQeTl4RldvNFdpMkRqUkYyenhfQlNBVThfWk50RlNMb29fNGxFNEFYeHRTcDRiNzBQMGg2RWo2TmRDTlZXYw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新款Roadster即将亮相，产品发布预告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-tesla-115
+  date: 2026-08-09
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "媒体再爆料：特斯拉陷入混乱，马斯克不再关心汽车"
+  quote: "媒体再爆料：特斯拉陷入混乱，马斯克不再关心汽车"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxNNXdDaGhxXzRxOVNtMGlNam53THFnZlVVX1BjT21xZ1E1MHo2RDdhN3hKb29yeHY5OHg2cFBZRjNwaXVOdkF0dzNjdmRlcWxObkFiVHRxWWh1Rm1veEllRFJYb2RSSXNOSTc1Q2hidERjVTdvSU1DRjNhY1JYcEUyako0QnNhWDFieUlJVmtTVVR2ck5iXzQ2QQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):负面爆料：管理混乱、战略偏离，需验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-tesla-116
+  date: 2026-08-09
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉获得在墨西哥建造超级工厂的许可。 (EXPANSION)"
+  quote: "特斯拉获得在墨西哥建造超级工厂的许可。 (EXPANSION)"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxQUkpFNndmQmZoODd0NDYwZWZtSDl2SS15Mmp1T1JvWmJ3ZWEzX3l5MWtVR1BJSmF5TTZSWlBZVHhfWlk2WjBLWWt5RWxWUkxXRV9Obnd1LWZKVDQxazZYX0FIbUhSU1p4VW5JSThFcjFGTTVjRUdxTmluUUhqMHo4MkhSaDVwRHRqZkFPRGNwZldoVVM1VUFOQWpwV2k4RldJNGhTamJn?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):墨西哥超级工厂许可获批，扩产重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

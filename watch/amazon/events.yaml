@@ -1598,3 +1598,64 @@
   source_type: media
   note: "LLM 预分类建议(high):亚马逊天然气电厂获准排放许可，涉及环保与监管。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-11-amazon-105
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "马姆达尼对阵亚马逊：纽约新法案拟叫停快递员外包模式"
+  quote: "马姆达尼对阵亚马逊：纽约新法案拟叫停快递员外包模式"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTEpJN2wybzV4aGZ0LW1rMmFqTXItSmIyOVlYWGRVLWlKR0FfWmNLYXNhUVFXQ3o0RHUtYm9tYk02amROZ0RpTzQ1bjh2VTJJanFaNFJMalptc3B5UkQ3RmZyUkREX19icFdCS1U1MVZyRl9xbkJWakdLMk5wQWZCY3ljdUpBZV95eUxGcHNlWkhLYlkxWDRjVlZXS21yTHEydFBFc3BQcjFuZw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):纽约法案拟禁亚马逊快递员外包模式,监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-amazon-106
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Amazon英国站卖家注意：你的英国公司董事必须完成这项认证"
+  quote: "Amazon英国站卖家注意：你的英国公司董事必须完成这项认证"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE4wbndXbVF0RDFfcXJudDRUWVNLS0xJbEo1bWxmbDc0a2FTQVJSQnY2UlRRc2FYOU9SQk5HekM0b0tITVN0a3hxcFJRY2s?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊英国站卖家合规要求,平台政策更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-amazon-107
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "流量之后，出海电商平台开始争夺什么？"
+  quote: "流量之后，出海电商平台开始争夺什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTFBydWstOE9rM0tfNkp4MTJqSkZack1NdUxXX0ZTLXItS3hYajh2SkhMWmpINUJZamVmRWRESlUzZm5ZUVRadmd0VlFpeVJITzA?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):出海电商平台竞争分析,涉及亚马逊战略定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-amazon-108
+  date: 2026-08-11
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "9月3日前必须完成！亚马逊强制执行，未合规费用增加53%！"
+  quote: "9月3日前必须完成！亚马逊强制执行，未合规费用增加53%！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFB0akZtN0NBdzRsZDVmamFvTVk4czVhZmEyTmdoUUZacVotOXBOUHRTTjhlV3hRZWh0RzB2cXpFb1FFdm5Va3c1V0Y4aHk?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):亚马逊政策变更，涉及卖家合规成本增加，但缺乏官方确认细节。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

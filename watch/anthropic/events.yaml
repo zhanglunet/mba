@@ -2323,3 +2323,154 @@
   source_type: media
   note: "LLM 预分类建议(high):融资合作助力基础设施扩张，战略投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-08-11-anthropic-152
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，Anthropic开源Claude挑战黎曼猜想的4篇文章"
+  quote: "刚刚，Anthropic开源Claude挑战黎曼猜想的4篇文章"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5OMDNOTlo3T1c4VVIyRUJsb0VsRndsN0kyTkJ1eHJ3bVpnYnNNaEh4eG8xUUxiLV9SdGhzbGxWbDFCNDhrd0ZYUkdtRFVKWFNwYnNFWjF2Q2s4aWR0?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Claude开源研究成果，展示技术能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-anthropic-153
+  date: 2026-08-10
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic 把 Claude Code 默认设为 Auto Mode：它不是“放权”，而是把责任推回给开发者"
+  quote: "Anthropic 把 Claude Code 默认设为 Auto Mode：它不是“放权”，而是把责任推回给开发者"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0zTl92akdOM0FHN294M3hyTVdQeG5OeDhjelA2Y3dwMF9TbWJ0MXoxa1dreFNKUnY3Q1hmVlhUS2VKMXpFMk9TeXRTeVdLSnlEaC11RzBXWXh3NlBQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Claude Code功能调整，涉及产品策略变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-154
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic为Claude引入隐形水印 依据欧盟AI法案全球实施"
+  quote: "Anthropic为Claude引入隐形水印 依据欧盟AI法案全球实施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFA5UHVneFFDNGxIWE9CQUZWOThzbndjMWtTY3ZUNVJ6QkdhNWN6RGx1bXQ0eW10MVNHR1hjaUduU25makFYN2hCQ0owNF93Zw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude引入隐形水印，响应监管要求的产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-155
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic将为Claude生成文本加入隐形水印，防范AI内容冒充原创"
+  quote: "Anthropic将为Claude生成文本加入隐形水印，防范AI内容冒充原创"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxNQ0Y0Um5jM2p0MV9aLWJXMXRxb3pmRDVib3RBWDNjcnNTZnlUN1cxZzc1ck1seGVsand0dmFWQklhY2c5WG5vMHoyOHFRZlA0VF9VZ2pOb1k4NnlmQ2JiNkFFY3QwV3N4anV6VlRxcGdCWFpFU0xsZUxKWjBpSDBud1c3cXVvRGk0WFFrV1RDR3lLNjJWTlA0R0hmTXZ0UFE?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude文本水印功能发布，防范冒充的安全措施。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-156
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic挑战黎曼猜想失败，但意外刷新一项数学纪录"
+  quote: "Anthropic挑战黎曼猜想失败，但意外刷新一项数学纪录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1fWmlzY1BJVFVSZEpfTVVjS3ZsUjBULXVrdnNPS1ZXWW04MGpMZTIyRVJwazZORjFBVDNOX0I0NGpld2FuaVdqckltRVk5ZkxKRTlwTktrS2NaYU5MNHhaSQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):黎曼猜想研究未成功但刷新数学纪录，技术突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-anthropic-157
+  date: 2026-08-10
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic宣布：默认启用Claude Code自动审查"
+  quote: "Anthropic宣布：默认启用Claude Code自动审查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VV1JMck1uek1hRXRmNHBlVW5TWmM3UEI2QW14b29taTh5MEFfQ2RxdGNRUF90WUptbjRPdHdGaUFaamFESWFSd2E0aFJuczhPLUx2YWxR?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude Code自动审查功能启用，产品安全更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-158
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic为Claude文本引入水印，欧盟人工智能法案推动内容溯源| 乌克兰新闻"
+  quote: "Anthropic为Claude文本引入水印，欧盟人工智能法案推动内容溯源| 乌克兰新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE5QYUpYMkJ4ZTBxUlhJRXZZVF91bFFkelVRLXI0NElJLWgxUjRfaDUxdlItWTI1Y1ZQUDZIVkl0djg1alJjbmZWODVEaVZpVEM3ckE0V2JBWXI5QUZjd2FSRUFOUzlOeGxZOXMtbjVpYw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude水印功能响应欧盟AI法案，合规重要举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-159
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic宣布Claude生成内容将嵌入隐形水印，复制粘贴后仍可追踪"
+  quote: "Anthropic宣布Claude生成内容将嵌入隐形水印，复制粘贴后仍可追踪"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE4zbHJyUEs5Y192bEZqNlY5c3hFenV5Mzc2Z2xxX3RpT0ZweEROQ1lBSUxNbGNSTzZvb05qQVZ5d25fVlJmV2xHMkV6SGI4eEpwV1cw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude生成内容水印追踪功能，内容溯源创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-160
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic宣布Claude文本嵌入隐形水印 复制粘贴后仍可追踪"
+  quote: "Anthropic宣布Claude文本嵌入隐形水印 复制粘贴后仍可追踪"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE1lOHNBdl84TlVFZzEyTENyWHZjV2VFQTRTaWNmckQxYzl2eHpSQ2duRnRRbjUxclM0T0tUNzVYcGt0dDlXLWtvMEVzOXRhZw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude文本隐形水印功能，防冒充的产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-161
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic内部神秘模型在黎曼猜想上取得突破：关键下界从41.6%推到67.2%"
+  quote: "Anthropic内部神秘模型在黎曼猜想上取得突破：关键下界从41.6%推到67.2%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBST0g3N2NhZ0NuRVExMnRfWm4zMzIyY0JCWWRZVzR1Rm9VU2FUMTA2Qy1lcll0Um1EQUF1MllXa1ZING1QRjdwLUVnV1pwMGJieThF?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude在黎曼猜想下界突破，技术能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

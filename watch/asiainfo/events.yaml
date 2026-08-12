@@ -282,3 +282,19 @@
   source_type: media
   note: "LLM 预分类建议(high):亚信安全重大资产购买估值报告，并购交易进展，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-10-asiainfo-018
+  date: 2026-08-10
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亞信科技：授出購股權- Futubull"
+  quote: "亞信科技：授出購股權- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1ucm1fYWJFWEZGd1IyVy1WV2VaaWI5bnd0UkZKeTBhSlJkWDQ1MzgtaFM2RXU5azVNZUlJdzhSb3poZTV4RENJdGV0ZmhoQ2tVd2toekxHel95VlY2QzNtakNoN2x4eDdOUl83anAtelgxMW1ZM3VSbEtWUWFMTlE?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):亚信授出购股权，股权激励事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -907,3 +907,19 @@
   source_type: media
   note: "LLM 预分类建议(high):Q3财报业绩公布，股价反应，财务关键数字。。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-10-meituan-059
+  date: 2026-08-10
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "“浙江温州一建筑被台风吹塌了”不实（2026·08·10）"
+  quote: "“浙江温州一建筑被台风吹塌了”不实（2026·08·10）"
+  quote_type: title
+  url: https://about.meituan.com/news#NN26081025600101X
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方辟谣不实信息，品牌声誉管理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

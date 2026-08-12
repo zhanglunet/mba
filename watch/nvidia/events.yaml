@@ -1716,3 +1716,124 @@
   source_type: media
   note: "LLM 预分类建议(high):首款Windows CPU性能数据公布，产品竞争力评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-11-nvidia-113
+  date: 2026-08-11
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Nemotron 3.5 Lightning and NeMo Switchyard Deliver Faster, Smarter, More Efficient Agentic AI"
+  quote: "NVIDIA Nemotron 3.5 Lightning and NeMo Switchyard Deliver Faster, Smarter, More Efficient Agentic AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTE44a0Z4MVlQcjdHM0Fhc0hpeVljTFlVb0Z4Y3JyRVlCU25XZjB4ZUVNRWhFTWZESmw1WWFpaGZoSENXUE9hMDk3Y2NrVC1KVzltbWFkSjMySndTX2ZWLU5FY2FFRGhCS29mYmhxTTgxMllFSEFBdjFv?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布开源AI模型Nemotron 3.5及NeMo Switchyard，属旗舰产品重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-114
+  date: 2026-08-11
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA and Local AI Community Fuel Open Source Models and Intelligent Agents"
+  quote: "NVIDIA and Local AI Community Fuel Open Source Models and Intelligent Agents"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE45UUttUUMyRTI3WHVUbF9oMlRKX0NIUHJ2WUFobm9Ta3NubmhVS0pmRjkxMzZILU0wWEFFa1JWTXVBYVhzTkhhS292U1hOWUFoUkRrOUJTTFY3RURHTkZjMWlyTVhlYjE1bHQ2M3ZDRzNlSWlpNDJPTUM1d0l0eFU?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布开源模型与智能体合作，属产品生态扩展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-115
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达宣布将与六家金融公司合作，设立独立算力融资平台，对行业意味着什么？芯片还会涨价吗？"
+  quote: "英伟达宣布将与六家金融公司合作，设立独立算力融资平台，对行业意味着什么？芯片还会涨价吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBQd3YxelAtbHJ2WjVmdk1jd3lQNGE1LVlHdWc1cUx2bk1MamJ1aGh6MHhzS3pmWDlQcUVyNndRWm4xajFVUXdxTzhPd0d3RFZybm9Dd1dZVTlKMjBkR0ZR?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):英伟达与六家金融公司设立5000亿美元AI融资平台，属重大商业合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-116
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "周二美市盘前走高 聚焦英伟达建“计算融资平台”"
+  quote: "周二美市盘前走高 聚焦英伟达建“计算融资平台”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE5iN1QzTFVrYmpadC1TeURiSlZEelFzdERtRlNYZm5mOFNCc3dqZXJYMl9OMmpVNjVCSS1lMk01Wmx2Y3cwalhCUk4zOFRFQWxNY1VObDNoODdDWkg3c2F6a05kSE0xRjA3YjQyUFBR?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):报道英伟达计算融资平台建立，属重大商业事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-117
+  date: 2026-08-11
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "英伟达5000亿美元的人工智能基础设施推动使加密计算进一步落后"
+  quote: "英伟达5000亿美元的人工智能基础设施推动使加密计算进一步落后"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxPUGRsalZrZHpoR0RVODg5dUo1d3pvalJ6Wk9Lclo5eFpYYXh2RGpYcEotNHlVSGtmMzhyMGJBTFhaX01UbEQxOHRfSGxiT21Wa2tSenE0MHJrN3hxSlJxWmNUUm1nd3FCeWxCM1k5RXZvUDh0b1dUSUFnZTNHMXFHcEx2OW5OVWlmSGxOZW1yU0Rjb3VxTm1OM0E4TkZOOE9KNGxUZG91UExFcHpk?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及英伟达AI基础设施规模与加密计算竞争关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-118
+  date: 2026-08-11
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达推出首款开源AI模型Nemotron 3.5 Lightning"
+  quote: "英伟达推出首款开源AI模型Nemotron 3.5 Lightning"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9RWWQ4ZXlvX3lNTXdkOHhxQlpMNkJtaGdPbC1lVW9oZ2N3bWR4Q1VndkRzZm90cGg1QVRRcVBCWXRpSnNxVHZ1ck5JZGg5dXVsZkFVRDFpemJiU0xkcktHNQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达推出首款开源AI模型Nemotron 3.5，属旗舰产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-119
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英偉達聯手華爾街六巨頭 推五千億AI融資平台"
+  quote: "英偉達聯手華爾街六巨頭 推五千億AI融資平台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE03NHR4U3RkRHdvVE5nRVNNZGEyVVJDYjhuRXI2UW94YjZhVW9QeGtia0dwWGJMLUxJZWF4bjQ5aGNldlpyajNzd2V1dnMzVzRYdEtQY3ZlbDJIanlaZ042VtIBZkFVX3lxTE1GTGpEMWVlOVN3SGhXeWRCbHJycmd4ZHlNTGZKSDU4MFluSE84SWZKTVRyX1k2WlJlc2JadndGYVJEdExQYkRfc1gyYmRHSUUwbWFYY1NzaEZJMFJ2RlFycUY2SUljQQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达与华尔街六巨头推5000亿美元AI融资平台，重大战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-120
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达与华尔街为AI基建筹集5000亿美元"
+  quote: "英伟达与华尔街为AI基建筹集5000亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE1EeHE3R2M1MVVsLU5PMGJzNVRhUXJjVjh3NnlIUlhHdW5kQlZMbmxBN3haR2w0SmpEbTV6d0dRdGNxWEpIT0R0eEpPNE1DSkNCY2JLRW52TUswQWFVc1hVSHdKalV0anVQcjl0Z3p3?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达与华尔街筹集5000亿美元AI基建融资，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
