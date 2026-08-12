@@ -1968,3 +1968,109 @@
   source_type: media
   note: "LLM 预分类建议(high):IPO后散户首次净卖出，市场情绪转变信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-09-spacex-129
+  date: 2026-08-09
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软缺算力，马斯克补上？SemiAnalysis：SpaceX 2027年新增算力或超10GW，ARR达3000亿美元"
+  quote: "微软缺算力，马斯克补上？SemiAnalysis：SpaceX 2027年新增算力或超10GW，ARR达3000亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA3MXhzWUdmcmhBbnB4NWZvcmlPWjFNa0VSZTBrcG53SktHb0g0NF9IWHhBcmMtUnpwb25FY1FtTFo1alZRY01ZYWJab3dnTkl4dng4dHYxdUdZdFhr?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):SpaceX算力扩张计划，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-spacex-130
+  date: 2026-08-09
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "168亿美元、929万平方米：马斯克口中的“地球最值钱建筑”长这样！"
+  quote: "168亿美元、929万平方米：马斯克口中的“地球最值钱建筑”长这样！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE05R1RpRTVVTkxHTEYwOUJ6V054czljVFpBaFBSQU11cWJOcGt3MXdwN0NFLWlBeWdxX1k5a284bjNVM2ZiQlZfRmRmR0ZoVVpXNGU4SDJUdmktZ1V1?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):SpaceX资产规模披露，企业发展指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-spacex-131
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克押注AI代理赛道，SpaceX AI推出Grok Bot，对标Anthropic与OpenAI"
+  quote: "马斯克押注AI代理赛道，SpaceX AI推出Grok Bot，对标Anthropic与OpenAI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE4tLU1IdU81bERYZVl2Q2ViX3lLbjNWcDNNOHNkTDU2NEl1anpPa1VWODdfUUF0VGtmR3FZemtZWXh6M2c0dmFDMUtTMFQwY2RhWEZN?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX推出AI产品Grok Bot，新业务发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-spacex-132
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克内部放话：5年内AI将占SpaceX价值99%"
+  quote: "马斯克内部放话：5年内AI将占SpaceX价值99%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5UdnlpMGRoUGw4QklyTEgwRGQ3M3h6bmY2clUxRFdhd2FackFlbHN0YWNWV3VGUXNjVVJTZFo1cWJCcm91X3pJM09TSnA?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):管理层战略表态，AI业务战略重心。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-spacex-133
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克：AI收入下月将超越SpaceX全部其他业务 五年后AI占SpaceX价值99%"
+  quote: "马斯克：AI收入下月将超越SpaceX全部其他业务 五年后AI占SpaceX价值99%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPRzl5Z0IxeUtiTEZWSGZNUmZhNnpkZGRIc1Z6SE1ySDRPZHpLdnpSZG00T1JIcno0VFBEbk42dXA5OE5HdDg3T0xuVlBSY2cxQ2RGNXFmWVA2Vy15N1UyS3MwaklGdWlDTUNaak1jQlY0Q1BDdGxDdzdJTlM0bEhKZlJjcURVd2k4T3MwUQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克关于AI收入占比的战略表述，涉及SpaceX业务方向调整预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-spacex-134
+  date: 2026-08-11
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX拟600亿美元收购Cursor 摩根士丹利维持300美元目标价"
+  quote: "SpaceX拟600亿美元收购Cursor 摩根士丹利维持300美元目标价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPV05iZzJUY0NkUUV4SlVVYVEzTFJyeUpjWHNFdWhfV2EwMFB0elJPY2JnNUJreDAzWDlqeVI2VXFlX21odlFnNE9EUExnNmdBTmpYQmg3a2VFWTdfMThFRnB3?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):SpaceX拟收购Cursor，涉及并购意向但金额未确认完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-spacex-135
+  date: 2026-08-11
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "越南航天公司VinSpace与SpaceX签署合同，计划明年发射卫星-观察者网"
+  quote: "越南航天公司VinSpace与SpaceX签署合同，计划明年发射卫星-观察者网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFA2ZUNCdkx4d3I2dmt3YkZ1WG1CZ1ZpbVQxRVpaUHVwQ0x6MEdKamVPdmM2aG84YUtGVUpJOXQzbGpaOVFOazdOMWk0SzB2UGRUTjNXZ2dUd0RBbWRKczV2YjlaX2RnRXpQV2c?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX与越南公司签署卫星发射合同，业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

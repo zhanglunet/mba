@@ -1281,3 +1281,94 @@
   source_type: media
   note: "LLM 预分类建议(high):产品定价信息，涉及官方翻新版和二手市场价格。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-11-huawei-084
+  date: 2026-08-11
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "智能“测糖”手表怎么选？实测4款：糖记星、华为、OPPO、苹果，开箱对比"
+  quote: "智能“测糖”手表怎么选？实测4款：糖记星、华为、OPPO、苹果，开箱对比"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9wNFdqdVVkUXhGYUJhS042NUg4R3JNTVBBRzY4dUFrZjhxU2FidG1nN2RfSncyUEkta0hQR2w5OHJqX0dzM251UGFMNmt3SXZpWDBaSVdUcW9jc2J6?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):华为手表与竞品对比评测，涉及产品竞争力评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-huawei-085
+  date: 2026-08-10
+  dim: W6
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "阿维塔高管称不认为和华为的合作模式是「必要项」，阿维塔具备差异化的能力，如何看待这一表态？"
+  quote: "阿维塔高管称不认为和华为的合作模式是「必要项」，阿维塔具备差异化的能力，如何看待这一表态？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE1aQ0N6aDA1QTFLSnpKV2pESGVzelRmdGw3dmc0Wjd0aVQ3UFNuendDUE81RjVCb1Azb2RlN3ltN0FIZjJ0U0NOM2hSVkZkd256UUpUalhEbzhLeWUwNmp3?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):阿维塔高管评论华为合作关系，涉及华为生态战略评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-huawei-086
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为 Mate 80 Pro 天猫百亿补贴低至 6899 元"
+  quote: "华为 Mate 80 Pro 天猫百亿补贴低至 6899 元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2QmdMZV9TZGczd20xZEtHemNSNmFvQ3BJUmZ6c1p1b1lYZ1YzTDZMVXpUMFJWc1VlQTZSUHlCVE9TcHA2X3YzZGI0TUxfR3BEVlNTWHhVZw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Mate 80 Pro促销信息，反映产品销售动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-huawei-087
+  date: 2026-08-09
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "赛力斯迎来新时刻：问界退潮，赛豆未至？"
+  quote: "赛力斯迎来新时刻：问界退潮，赛豆未至？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HZTloY2ZDNTNtZE9CM19pZUt5bzZMdmhTV2I5Q0dBMDdXSVlpMV8zNTY4cWFwYUliVGJyZXE2dXhmTzhQWTJnSVVyODkzUlVaV3hOUFln?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):赛力斯与华为合作生态变化分析，涉及华为汽车战略评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-huawei-088
+  date: 2026-08-09
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "4000-6000元鸿蒙AI手机拍娃视频怎么选？实测对比只有这3款值得买+FAQ"
+  quote: "4000-6000元鸿蒙AI手机拍娃视频怎么选？实测对比只有这3款值得买+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPenJWOTJ2VURaZERCUkltQ1JxOFVrNTJ5T3h5d2xiNEdlR0tqV29vYzd2bzJvY2wtckNxbHZVMGlaakQ0ZnBrT2lLNjZkVTVabUpyeHVxWkU5ekp5bFBtOHhUTjJXWTdTUmh1SmVtUkw3REp0enQyQXB0M2ZCTmtQSA?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):鸿蒙AI手机对比评测，涉及华为产品竞争力评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-huawei-089
+  date: 2026-08-11
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "奕境X9大六座SUV首秀华为鸿蒙座舱6，多屏流转玩法公开"
+  quote: "奕境X9大六座SUV首秀华为鸿蒙座舱6，多屏流转玩法公开"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Pc1dqRE5ONHIzQmQtdG9EdXpDN0RYMnduMEtBQk05MVlrSHFSb2VfTy0wUEtOS2RxLTZPa2V0eUlJOFNCWmlOOGtqaENzcWphb2h6SUdWZ0F1WllrcDJSZXJB?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):奕境SUV搭载华为鸿蒙座舱，反映华为生态应用进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

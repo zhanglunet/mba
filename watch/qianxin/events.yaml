@@ -189,3 +189,19 @@
   source_type: official
   note: "LLM 预分类建议(high):官方发布安全报告，漏洞激增预警。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-11-qianxin-013
+  date: 2026-08-11
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "奇安信获中国合格评定国家认可委员会认可，跻身国家级权威检测机构行列"
+  quote: "奇安信获中国合格评定国家认可委员会认可，跻身国家级权威检测机构行列"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9vcGUtbUxEcFRIZXZMUFlSSUt1NWhtMHk5Tm1RTHBBSU1oTGVVdlJBZ1h3bFpnNTNtS3JKSFhvbUNQMXpHWVp6cFVyYWlhTXdFdVZmOVpRMlp6OGppOWc?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方认可资质获得，品牌能力认证事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

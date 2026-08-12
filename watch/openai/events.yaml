@@ -2253,3 +2253,79 @@
   source_type: media
   note: "LLM 预分类建议(med):融资/估值相关，但标题表述模糊，需核实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-11-openai-146
+  date: 2026-08-11
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Daybreak models are now available on AWS"
+  quote: "Daybreak models are now available on AWS"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE45SU9RVTVwLVo0ZVNlYVp6Mkd2TGM1dEc3eUtwRHJuQ3ZHeXZqbTd0SHZkZXZsRUhObWd0d2t2WlB3YWUyTVJfdTlNVlpUbkJONGc3N1NqR2hLQVc0N1NIZTlCQi1UOHlwSTJlTjU4TUFfSGxt?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Daybreak models在AWS上线，新产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-openai-147
+  date: 2026-08-11
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI发布GPT-5.6-Cyber！高危查询95%不再拒绝，已挖2个Chrome零日"
+  quote: "OpenAI发布GPT-5.6-Cyber！高危查询95%不再拒绝，已挖2个Chrome零日"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1mMk1vY0RBaExUOFQzLTkxSGQtb3UzcUhWRFozaUFfVXB5OXpCN1A0cWo4MGtobjNKb3ZqNjJuaTdibzJhT2xSYTM2djFUMU5xT3pwa3hsZ1JVNjYz?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):GPT-5.6安全问题传言，涉及模型安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-openai-148
+  date: 2026-08-12
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI高管Brad Lightcap离职 将开启新项目"
+  quote: "OpenAI高管Brad Lightcap离职 将开启新项目"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1FREU5TGxuVTk0REF2TldVV1FlaEpZU28xWEgtQmlsQldEZDExSGF4UDBCXzlDck1NVDk5clM3Y0s4WlRYemFzaDJ2NlVxYWZBQjN5aGYyUHRzVU92LTI1bHBR?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高管Brad Lightcap离职，核心商务高管变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-openai-149
+  date: 2026-08-12
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "突发：OpenAI“1号商务员工”离职，或将创业"
+  quote: "突发：OpenAI“1号商务员工”离职，或将创业"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9NWkVQY21NMWd1el9QTjZVaFZXUFl6WjRDTVdzcTkxMkhaWHZBNnRfdXBRUC1EQ08wbFZKTGE0bnotdWxJbHZJeA?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI商务高管离职创业，核心人员变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-openai-150
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "闲聊的OpenAI免费，干活的DeepSeekAPI涨价，AI进入分层定价时代"
+  quote: "闲聊的OpenAI免费，干活的DeepSeekAPI涨价，AI进入分层定价时代"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxQVnp1YUFVLXpKVm91RUlwemxhN0F0bFJub0lIczQ1a1FhWm5jaDdBR0lpelJVS2d4dW5tSXppX0FvaHZiY1lRWjAzcUdvQ3Q0SkZiTFBnbUdRT1FOTmJPeUw1RGVxaFBlcTZZaUV0R1ZqV2hIQlY0ekpKMXFUbFdzdFc0OWhUZkxlWHdxM3lrNnp4VW1ERUhOYmdSLUsyYmdOaDVUOWdQcTR3QVdCTkNrNDd3?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI定价策略调整，市场竞争态势变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

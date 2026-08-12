@@ -1945,3 +1945,124 @@
   source_type: media
   note: "LLM 预分类建议(high):官网快速撤下千问手册，合作政策重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-09-apple-128
+  date: 2026-08-09
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Apple 智能即将上线，确认接阿里千问！"
+  quote: "Apple 智能即将上线，确认接阿里千问！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMb1BLb3dpaG5sbXlsdG4xbHktYmJWWnlrNDN2SDlMaHMwM1JkSDlpRldvakpZd3k0NXhudmVROXdzRGt3SmFiY0tPOGZRNHEyQllKLXpKNlZiNEdU?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):Apple Intelligence与阿里千问合作确认，属产品功能重要更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-apple-129
+  date: 2026-08-10
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "古尔曼双爆料：Apple Watch S12陶瓷材质或回归，苹果正研发圆屏、无屏全新穿戴形态"
+  quote: "古尔曼双爆料：Apple Watch S12陶瓷材质或回归，苹果正研发圆屏、无屏全新穿戴形态"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9DN09tcU5ncVgwQ1NtWWlnMVAxdGRwbHk3bnNLeWtMdTdXQUlXVktVcHpJdGRhZkU4U05qYjBTQkVfNFdiTndkUWRjX053VFlNczc2Y0FjMVlmVTdq?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):Apple Watch S12及新穿戴形态爆料，属产品规划信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-apple-130
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "国行苹果AI支持哪些iPhone机型？"
+  quote: "国行苹果AI支持哪些iPhone机型？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPTU9DM0FRekZqend3ZHZqSXI0Z1RoVTFsQnh2NU1YTGtTT0ZCMnRBVEY3RElwc2pLbWZKSGx5SV91UldIdWFoSlpVSmxQcEhvaVZGNDFFRlpWWXZmcG9RMmdPSklDTmtjbXdYbzVaNTJ3eVFCVWpSd2pGanlPQXAwaQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):国行Apple Intelligence支持机型信息，属产品功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-apple-131
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "国行苹果AI支持机型曝光 仅这几款iPhone能用"
+  quote: "国行苹果AI支持机型曝光 仅这几款iPhone能用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE9SY0d5TUtZeWcyVTR6c3BONHl5WG9EYTlkamhicjVLYzBnMU4ySVhVNDhPejF3WlpJUk83ZTlRZ3QzcUhHbXRQMl94OTlWTVlBaG8zN0tybGluYUNiUVhuUnd0dG02aVVibjVyRHJn?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):国行Apple Intelligence支持机型曝光，属产品功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-apple-132
+  date: 2026-08-11
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "效力超25年，消息称苹果Apple Pay负责人贝利10月退休"
+  quote: "效力超25年，消息称苹果Apple Pay负责人贝利10月退休"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE50S3lUcG1NNjVYa1U1TjNONjkwR2RCbFBhOEM4NndkTmpaTlhfYmZrdHZwbXNSSFdVekNzS3hKcWpDX21VVkNHMnRTX0s?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Pay负责人贝利退休，属核心高管变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-apple-133
+  date: 2026-08-12
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "千问接入Apple智能手册深夜下线 苹果中国官网误发还是压力撤回？"
+  quote: "千问接入Apple智能手册深夜下线 苹果中国官网误发还是压力撤回？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTHlISnBJQVNzUy0tbkhPM0NfN2dQM2ZENkJKWDNvM3JLSG1MZUpDVlBlcjFUZW1RcUE3YzZtSUdwVDhEYWFiQ2RUUC1hMFptVlYyX08zZGtfVlVfamoxd280NEhxR3I3MEVOd2ZCcVd4clhvUG5yeWlhOGhEaENVcDJqbUMwMVFI?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果官网产品页面异常下线,涉及与竞品集成的策略调整,但信息不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-apple-134
+  date: 2026-08-11
+  dim: W6
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果支付与Apple Card负责人詹妮弗·贝利即将退休 在公司效力长达23年"
+  quote: "苹果支付与Apple Card负责人詹妮弗·贝利即将退休 在公司效力长达23年"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kM3lDYTJMdFdBYV8zVlIxSGdHUDdjeWdEZXBDVnJ2T1VkWVJjb2lTUjdXTWJmTUVYckVWTUZGMnlnOFUzSFQ1ZFJTUE5MZzlqRXl0R3hyMGpRM3dJLUY0NA?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):核心高管(支付负责人)退休,23年资深员工离职,属显著人事变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-09-apple-135
+  date: 2026-08-09
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果官网删除Apple智能接入千问手册 上线不到一天即被撤"
+  quote: "苹果官网删除Apple智能接入千问手册 上线不到一天即被撤"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBJVlAtNV9PM3E1SHdPNFFBZTBEbXVHLU9TQ3ZrUmJDa2ZmSFhxVEFSVDVSbW85Zm15SG8zY2tldG4yc2lKVXQxcEhYQjh0dw?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官网产品页面快速下线,反映策略调整或压力撤回,重复事件但确认性强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

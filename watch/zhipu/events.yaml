@@ -441,3 +441,49 @@
   source_type: media
   note: "LLM 预分类建议(high):新版本API发布，性能指标更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-11-zhipu-027
+  date: 2026-08-11
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "智谱(02513)ZCode用户突破100万 四项新功能上线"
+  quote: "智谱(02513)ZCode用户突破100万 四项新功能上线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRFBhQTcxZHVIYWRRaFJacjBOZzJ4RTBnaWhqMTlDLXNEVjVES0xLVGdQRjZlaDZLM2tTa29QQWFkeEp0TlZBRlp4aHc1VnJsMElpSDZOdnY4eVhsUlNVTWRDTERucmhBdzRFeEk4R0hVZDRPYWpiaVhVdjd6YWRpZ3J3YngxckF5V0gtbDdVUWdIaUFEX083bW1WOGZ4aXZqWWhxYWZScnc?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ZCode用户突破100万+新功能上线，产品进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-zhipu-028
+  date: 2026-08-10
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "智谱API用户数近700万，新启用超5万块国产算力芯片- Futubull"
+  quote: "智谱API用户数近700万，新启用超5万块国产算力芯片- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxPRVpYS2ktWm9iMWNjaFZDVEVLbk1JZjk3M3FRUU9Oa2xFUU9YZEw5dlJib0VVUllCamhwSEtvc3hrRGNNWnVfUXJ0b2RqRUhaVExfd1JpR3VBTjEwd2Q4NUdZNEUtaDJVRDgyS1U4WWRUR1dJZ09PejNGWEZHY0ZEaTB6UkRQXzc2YmFrOGQtS21BME5oblE?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):API用户数近700万+国产芯片部署，业务规模进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-zhipu-029
+  date: 2026-08-10
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "《大行》大摩升智谱(02513.HK)目标价至1,700元 降MiniMax(00100.HK)目标价至900元"
+  quote: "《大行》大摩升智谱(02513.HK)目标价至1,700元 降MiniMax(00100.HK)目标价至900元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxNQ1FsYjdVOVNKUWtUVjhoWmpWU01QTVllZjFYSUM2bWxTaDZGM2dOenRXWFhEODRiNlRNVG5rSFpscVJuWnJsSWRVblRnWTU2dFZzSEdyS2N5LVI3ZnlmSE8zWk1EZ21OVXF1NGJFT2ZGNXFMR28weWJYTmxQRFkyeWh1cnJya2JGcGV1bXk3Wjg3eHJ2TE9aVQ?oc=5
+  fetched_at: "2026-08-12T04:18:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大摩升目标价至1700元，分析师评级调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
