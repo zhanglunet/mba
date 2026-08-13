@@ -582,3 +582,34 @@
   source_type: media
   note: "LLM 预分类建议(high):美国拟扩大无人机禁令，直接涉及大疆产品合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-11-dji-038
+  date: 2026-08-11
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美擴大無人機禁令 擬禁具備光達機種"
+  quote: "美擴大無人機禁令 擬禁具備光達機種"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQSjBUT0JBa1A2akVyUnNMX3pNakFxZ0ZLZXZjVVJ6NF9PYWQyczB0bXUzdHYwWXg3d0U5WTJyTHVUT1M4ZmtwdHhWUEdzYTZLTUxxZ2hfeDY2T3BGTUN4N25ic19YRERRNERhWDJhM0l0NmJuLXc5UkVwWXRoWEkwclp6eFltR1nSAWdBVV95cUxNWlBha2h3TWNjajV5aWl6VGMzRjdhRVhSU2s0VmdPWXVTMEV5RTNtSmVyV2h2M1R2NEVMU1ZwTU5QaEVWa0NEWmR6WGFhMnNzQzdaWGQ3cUhrbzV3alMyb0ZlOGNjVXU0?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美国扩大无人机禁令，涉及光达机种，对大疆业务有直接影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-dji-039
+  date: 2026-08-11
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美扩大无人机禁令 拟禁具备光达机种"
+  quote: "美扩大无人机禁令 拟禁具备光达机种"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE03YzU3dUZoZGRpM2ZoaGQzMzRXZXFPWWE2RFRqd3hXaUhQbDdCNXVtZHJHWmRGSzFOaDlEbmFvcHB3eDJUbm8zTzl1a2F4d2Uyb185MHkwc2Rmdjc4YmQzaDA0Z9IBY0FVX3lxTE03YzU3dUZoZGRpM2ZoaGQzMzRXZXFPWWE2RFRqd3hXaUhQbDdCNXVtZHJHWmRGSzFOaDlEbmFvcHB3eDJUbm8zTzl1a2F4d2Uyb185MHkwc2Rmdjc4YmQzaDA0Zw?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美国扩大无人机禁令重复，涉及光达机种禁令。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

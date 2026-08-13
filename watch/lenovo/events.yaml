@@ -951,3 +951,49 @@
   source_type: media
   note: "LLM 预分类建议(high):股价创新高+即将公布季度业绩，有实质信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-13-lenovo-062
+  date: 2026-08-13
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Delivers Strongest Quarter in Group History: Hybrid AI Strategy Powers Growth Momentum"
+  quote: "Lenovo Delivers Strongest Quarter in Group History: Hybrid AI Strategy Powers Growth Momentum"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBjdGM2M2FKNF9aZlBidVhNMXNCaGhrOVprQWNPbjQ2QjZCME51NzlrMWlwZ1l5UFdYcGRLTThNUlVRM2tBQ3pDMml2R21kelJXbWxHRGpjQ2VtN1NORWVLVENFUWhSSThITmltanUwNDY?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布财报创历史新高，AI战略驱动增长，关键财务数据公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-063
+  date: 2026-08-13
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "入选大摩\"算力制造生态\"推荐阵容 联想集团Q1业绩今日迎来验证"
+  quote: "入选大摩\"算力制造生态\"推荐阵容 联想集团Q1业绩今日迎来验证"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBXMkdjNGRfdTVfUzZtY25IOWNsZUM5TUkyNW9oTVdmemtfVXF5RTlMM2VlVWt6d1ItLU4zQlVLeHlOaHVBVERrYmk2RWd0UU9NaE5v?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q1业绩验证，入选大摩推荐阵容，市场认可度提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-064
+  date: 2026-08-13
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团第一财季经调整净利10.75亿美元，人工智能相关收入同比增长60%"
+  quote: "联想集团第一财季经调整净利10.75亿美元，人工智能相关收入同比增长60%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxORFc0eHBWOUx4akozVkkzTVV0UUVHOGtqS2VaWmFyb3B6bzhxcWJwckJnSmR6Qk9lRnRDR0hHWDZNTk05aUdPQnlSTWU2b1k1NkMwN3BnbWlYdmJOYmlFVkVXanBleDM0ZWpxLTRwREcxRkNHb0RwZFAzN1pyUTBJY2RFMWFxc1djZ212M0dMbXNmUlN1Tm8tOA?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布，AI收入同比增长60%，重要业绩指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

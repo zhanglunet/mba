@@ -923,3 +923,19 @@
   source_type: official
   note: "LLM 预分类建议(high):官方辟谣不实信息，品牌声誉管理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-10-meituan-060
+  date: 2026-08-10
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Unitree持股披露能否推动美团股价上涨？"
+  quote: "Unitree持股披露能否推动美团股价上涨？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikwFBVV95cUxOZUxoUzMweHMya3hyelNIUE9yTnlUTXhJekNHRVNQRDhFUTlTTG5DUURFX0c2ZFhiZG1qMDQtamNZdjhNSW5HY1BIMEs5TFRzS3FURzZXVkpIbjlSMzBpd1J4ZU5vQlJEYzg4UUdKNUpFaFktdnQyRVVkY2pSZFBJUjNTRXNWWUY3Wm0tQ1dMcUtjNGs?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Unitree持股披露，涉及美团股权变动信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1659,3 +1659,124 @@
   source_type: media
   note: "LLM 预分类建议(med):亚马逊政策变更，涉及卖家合规成本增加，但缺乏官方确认细节。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-12-amazon-109
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How Amazon's AI shopping assistant makes hundreds of millions of products feel personal"
+  quote: "How Amazon's AI shopping assistant makes hundreds of millions of products feel personal"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxNekpCWmhmYlJBeHNIWk9JVUphMHNYVjlVR01iaHozNExiTXZDM3pOUk0zRjNzWmo2N3Vrek52clFRQzZuZzRocEgzTkVMTTBTQ3hHOHBhSmE4cG1OVFlXbVpBMlhYc19MMVBDazROeFJhSWtFWlE4QVpyYXN3WXFFdWljNDRmSDFjVkVaOHhHSEU?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布AI购物助手功能，产品创新宣传。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-amazon-110
+  date: 2026-08-12
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "重磅！2026.7.1 亚马逊三大新政同步落地，欧美加卖家立刻自查整改 附整改建议"
+  quote: "重磅！2026.7.1 亚马逊三大新政同步落地，欧美加卖家立刻自查整改 附整改建议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrQVFUd3J5dThDYXNGQ3JDTDFWY0xUemFkeUIwOEM3TUNUd09pSHd2V3NpcTZRR2RVR2FzMkp0cE5ycV9SSS1Kb2RJdDB5NjZROThTdVBEaXhuMk96?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):亚马逊新政策落地，影响卖家，具舆情热度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-amazon-111
+  date: 2026-08-13
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊将交还游戏《命运方舟》《王权与自由》西方发行运营权"
+  quote: "亚马逊将交还游戏《命运方舟》《王权与自由》西方发行运营权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBHWEYzQTdZSXhSdUpHVnB2SlRUeFFEX0dLdkgySk5SZy1wV0Jfb2s0YU1QSXpIcHo3Z2F6enlPLV9sbjVzV1MzbktCc2hSUGdWdVVJcHVNT1QwOFltMUVVZWE2UVpWSmVDVjIwZDhGYUw?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):游戏发行权交还，业务调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-amazon-112
+  date: 2026-08-12
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊下重手，“跟卖”潮水消退"
+  quote: "亚马逊下重手，“跟卖”潮水消退"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9LRXp2MkszMkJDQlQtVjEyQ3ZfR2Q0a1dtR1B6UHNFdHVBQnBULWhjX29mcEtkM0Jtc2hraFg4TDVhQTBDSGNZS21JbXk?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):打击跟卖行为，平台治理举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-amazon-113
+  date: 2026-08-12
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon Is Spending $220 Billion This Year. The AWS Numbers Suggest It’s Worth It."
+  quote: "Amazon Is Spending $220 Billion This Year. The AWS Numbers Suggest It’s Worth It."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR3p4QmN2Xy1JTmVoVzBHdkZiUU1FWkFVRjBiek05MjJRdkNPblItWFo1Wm9aYUdTcVB6dDFfWDVxQTNnNUgxaFFwelNjWWMxQ0NpZzVrcmxtMmpkZlROcWM5OGVFbU80SG5Zc2FYcUZQV3RnTk9jZkFhSFpPYU1qNkIycGVsRzM2LXlhTmpCMTU0a2Z4OFBMQ2VrdXpkM0VkeVc4cXdGQmdYQQ?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS投资规模与ROI分析，财务信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-amazon-114
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊自动化推理团队十年：将数学验证从学术研究带入生产系统"
+  quote: "亚马逊自动化推理团队十年：将数学验证从学术研究带入生产系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzcDh2RzJ2RnhQSFd0bTZpWGZUejBQQUdLa0E4TVJHZklyQzRNM3hXWTQtbU05cEFtV3lwZ0xQYnBsZ3lxd3pueExTY1JzdVV4QUE?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):自动化推理技术十年成果，技术创新叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-amazon-115
+  date: 2026-08-11
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon DynamoDB现已推出实时向量搜索功能"
+  quote: "Amazon DynamoDB现已推出实时向量搜索功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rNS1JNTNPbmZZWGRHeU9wdTFUUnlhZFp5NHVwU2pTbFJZYTQwYjllU3ZXcEF1T212aG5ZZ1cyVGVVQ2lUMlpjNGhIbEtGVl90U1ljNkY3eE1uS1E?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DynamoDB新功能发布，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-amazon-116
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "“报告撰写时间3小时→5分钟”……AWS推出办公人工智能助手“亚马逊Quick”"
+  quote: "“报告撰写时间3小时→5分钟”……AWS推出办公人工智能助手“亚马逊Quick”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FX0RQcjE2RkwtN3lYLU5tT3dlNkQ0NWRJbU0yemptbXJiUUlKeHZRM3lVV2U2dlV1MU5ETEZhYnBGeWg3UWNibWpkMVhEdXBkRHg4TGt4dGY2dkdOZ2UwbjBKa3U?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS推出办公AI助手，产品创新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -487,3 +487,34 @@
   source_type: media
   note: "LLM 预分类建议(high):大摩升目标价至1700元，分析师评级调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-12-zhipu-030
+  date: 2026-08-12
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "智谱API用户一个月增加约200万，超5万块国产算力芯片已启用"
+  quote: "智谱API用户一个月增加约200万，超5万块国产算力芯片已启用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFB6R2tLVG1NSlpTM1NCWXh6T0gwWUpjX3pJNWNWWDVkY0VrS25aVVJlRzIwWDVNd0dJeWlXaVh0YTBBNi1PZm9vSlZsUUZ1Q09qR25tMGtxbFdueFlQLWJWa2xNVUxpai1yZ2pXS0d4SnFJeUJMYW9YZFNzU3dWbXM?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):API用户增长+芯片部署数据，业务扩展指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-zhipu-031
+  date: 2026-08-12
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "MSCI中国旗舰指数调整：新纳入智谱等33只标的"
+  quote: "MSCI中国旗舰指数调整：新纳入智谱等33只标的"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxNRXNWYWJ5VWNlRDBlc1lIRGhtVnBxdFM0S2NZaEFDamN6dHkwclltNkZUc29kTHdRTVlIYjlSRUlMcmhUbU1Ka3dpRWJELVlFWTlYdjFTQ2ZWTWxnT1U0RXpWOUpwSGRsdkhUa0xWQVJJZTA3R2p1T2ZWNThqSko4b0ZXYWlvdllXU1dzRHZSQTJYQlhlR0ttd3RrS050amF5d0tMRnhXZHdFeFBuVUItWUZJUQ?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):智谱纳入MSCI中国旗舰指数，资本市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

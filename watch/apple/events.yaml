@@ -2066,3 +2066,124 @@
   source_type: media
   note: "LLM 预分类建议(high):官网产品页面快速下线,反映策略调整或压力撤回,重复事件但确认性强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-10-apple-136
+  date: 2026-08-10
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "上线不到24小时！苹果官网撤下千问接入文档，国行AI又跳票了？"
+  quote: "上线不到24小时！苹果官网撤下千问接入文档，国行AI又跳票了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xQnhLNVNQbzRuUS1fbUN3Smc5ZXRoX3ROTFlvQUNJRlBKdjZnZm91Y0I3UkdGZmZIQmFoSF9VM0JYVHhHQjFnbDltb3ZFLU5LWmkyMFJoT2lCWmJK?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):官网文档上线后撤下，AI功能延期，国行版本受阻，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-apple-137
+  date: 2026-08-10
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "TrendForce：预估iPhone 18 Pro成本大增近40%，苹果或调整毛利策略以稳健出货"
+  quote: "TrendForce：预估iPhone 18 Pro成本大增近40%，苹果或调整毛利策略以稳健出货"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rcGlwQW1DWFpvMURqbjJJdmQ2SFJMM3R5d195UG9UMWVyM19HQkFzVnlTYmJrNzZQUXNQWmJFZC1aSFdqbWRfcFdTbnhrdEw1VzY1aG91UEVERUxi?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):iPhone 18成本大幅上升预测，毛利策略调整预期，市场关切。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-apple-138
+  date: 2026-08-10
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果千问接入手册发出来又删了，别慌，问题不大"
+  quote: "苹果千问接入手册发出来又删了，别慌，问题不大"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RRGd5ZGoxX0hWMC00X0x6Ullfa0dtSk1qRUpYbERlcG5ETVRHTHoyZ05fQzQtN3lSOEFqaHdUQ3lTNGppWUxWOGRHOU5Db1FBRGJWcjF6dkZaaGk1?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):千问接入文档删除事件重复报道，淡化处理，但反映AI功能推进波折。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-apple-139
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果将iPhone 18内存升级到12GB与AI功能有何关联？"
+  quote: "苹果将iPhone 18内存升级到12GB与AI功能有何关联？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxONmxjZVZVb3V0T2dCLURyc3ZOMU8wN21QUkMwX0FJcHRTRnMtc0pQLXFYVlkzT3JLU1loT1pZNFA1b0VWM3BTb2lnR2w2ZFVUT0ZYUWVJZEszNjh3TjVlQUdGQmloR0FiVUlxaUI1OHlsX1VzX0ZYSHgwMVN2NkNGXw?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):iPhone 18内存升级与AI功能关联分析，产品策略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-apple-140
+  date: 2026-08-12
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "【早报】Apple智能可配合阿里千问模型工作；江波龙定增大幅溢价"
+  quote: "【早报】Apple智能可配合阿里千问模型工作；江波龙定增大幅溢价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1DWkN2T3hvbkNBeEYyUTB1WGJPT1FRelgtQ0pWS1pKaTVNWHZPN1ZIejJBRmUwVjdIVUViUE5KZTZrdE0xbDFiSA?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Intelligence与阿里千问模型合作确认，AI生态进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-apple-141
+  date: 2026-08-12
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "iOS 27曝光苹果AI收费：想让iPhone更聪明？得加钱"
+  quote: "iOS 27曝光苹果AI收费：想让iPhone更聪明？得加钱"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwc2VOTGFwZmFxQ2hYaW1Hbm5TY05IVF9LYkt4X2hidzRkeXNZazQyNFoteE5Sa1VSYlVMelViaThEX0wwemc1T0FxRmt2akVKcGJj?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):iOS 27曝光AI功能收费模式，用户付费预期，潜在舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-apple-142
+  date: 2026-08-10
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果考虑重塑Apple Watch产品线 探索无屏设备及更多形态"
+  quote: "苹果考虑重塑Apple Watch产品线 探索无屏设备及更多形态"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nUUgxcFhCLUs5bzdLbnFrbVlUWjRuajNXX2VrVXJsTHVwMi12bnc0RjlaUXZfQ2VCTzNCUHVKOTJZTG9QXzRKQ2s5RndGU0Q4d2ppMWVrcmhoZXZNM0gxUw?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Apple Watch产品线重塑探索，新形态设备规划，战略方向信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-apple-143
+  date: 2026-08-13
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "iPhone 18的AI功能依赖12GB内存吗"
+  quote: "iPhone 18的AI功能依赖12GB内存吗"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNUGJQTXRnQUpBd1puNFZ4ZTJzY2IwZkRoM09xRnhJX2M1NE9JSnphaWNLRDdpaHpmZFpLWnIzN1B3T2k5Q2NsbDE2M1dCZWZIZVBHSEZJT2xwZ3Q2R3VMaEtOTy1TUUNFWVpsd1o0c1c3WEJualNNQ0hUOUdYX0dNTg?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):iPhone 18 AI功能规格传言,未官方确认,信息价值有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

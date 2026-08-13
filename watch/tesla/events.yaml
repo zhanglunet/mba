@@ -1777,3 +1777,79 @@
   source_type: media
   note: "LLM 预分类建议(high):墨西哥超级工厂许可获批，扩产重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-12-tesla-117
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉“纯视觉”路线再遭质疑分析师直言对其自动驾驶规模化失去信心- Tesla 特斯拉"
+  quote: "特斯拉“纯视觉”路线再遭质疑分析师直言对其自动驾驶规模化失去信心- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE54Z1N4OEoyTkJ3UkFfbHhiWnAzWV9URENPX3BjR3hwNzRkbW9mN0dOdVB1U1l4QmhxMGVjVVNXWF9Sck1rVFlzVE10Nm5KNWlnSzZmMll5N080bDZaQnBUZQ?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师质疑特斯拉自动驾驶纯视觉方案,显著负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-tesla-118
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉即将推出Model YL+，电池增大，续航突破800km"
+  quote: "特斯拉即将推出Model YL+，电池增大，续航突破800km"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tXzNqVDlIVHNqVGJES1ljTF8wcnlWOVdDMy16NEhpT3hwSHhFSFBzN3A1cDRhdUtkdDVFQ0N2Wkgxa0NNUklkSHREd3VLZ295SHZMMHlaRjVNSmM?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品版本更新，续航升级为主要卖点，具有市场竞争意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-tesla-119
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克宣布未来所有特斯拉车型均将配备星链系统 首发Cybercab"
+  quote: "马斯克宣布未来所有特斯拉车型均将配备星链系统 首发Cybercab"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ZbTNXTW10VnJtbzV1aVVvSkVjTms5R1Y3NjV2aTJnMEhfVThkNUpxRU1JQm40SWNpZXRkclFuSmVSWTVWMTdLcDFxOGpQdDlIS1JEc3FWZi1vb0ZLTDVTSQ?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大产品战略宣布，星链系统集成+Cybercab首发，具有标志性意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-tesla-120
+  date: 2026-08-12
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "剑指1太瓦算力，马斯克豪掷8000亿建全球最大芯片厂"
+  quote: "剑指1太瓦算力，马斯克豪掷8000亿建全球最大芯片厂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE50NlBkc0EyME9oQi1oT1Qza3I4ajhvSENZWGlqX0VWS0dBSmUwZHQxSVBTR3VZaGRBbFFRRk9qbGxYOUxMSTVZTXFNYURyZDc0Y2lpSnQxS3dqelgydGJDMUNR?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大战略投资宣布，芯片自主制造，金额明确（8000亿），具有长期战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-tesla-121
+  date: 2026-08-10
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国对特斯拉完全自动驾驶（FSD）功能展开调查"
+  quote: "美国对特斯拉完全自动驾驶（FSD）功能展开调查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wTEhFQUxRbVJJWm8wLWpScmtWRGctTHlCVEdja0RkYVFVdTE0R01zRWZXWEloNmxObjZLSm1jVGFLNHFialM2aURMN2QzQl92Y3c?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):监管调查启动，涉及核心功能FSD，存在合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1837,3 +1837,64 @@
   source_type: media
   note: "LLM 预分类建议(high):英伟达与华尔街筹集5000亿美元AI基建融资，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-12-nvidia-121
+  date: 2026-08-12
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Nemotron 3.5 Lightning 和 NeMo Switchyard 助力打造更快、更智能、更高效的代理式AI"
+  quote: "NVIDIA Nemotron 3.5 Lightning 和 NeMo Switchyard 助力打造更快、更智能、更高效的代理式AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTFB6T05XZEpVOWtaRGViTDhYaWFsSWJHcVRaR0QzbVlybUEwWEludjBqVUVGRUxkc2MwaHNERjdiLVVsQUd3cGE3aGIyQXJRQmIwSmw1YzRnN3lqemwtR0JHMFhtUDNRazRHZ1BIMG00TWhtd0M1X3c?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Nemotron 3.5 Lightning新模型发布，AI产品线更新，具体功能说明。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-nvidia-122
+  date: 2026-08-12
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA 推出其最高效的开源 AI 模型 英伟达已加入开源 AI 支持行列，推出了其自有模型 Nemotron 3.5 Lightning。"
+  quote: "NVIDIA 推出其最高效的开源 AI 模型 英伟达已加入开源 AI 支持行列，推出了其自有模型 Nemotron 3.5 Lightning。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivgFBVV95cUxOTmYyR21DQ3RsR05QbV9GdTFVR2RGdXp3ZU1iVXFRNzJyMm1qN2llSGRiV1NJT0tZNVpZaUtxN0wwMDBvQV9YUG1tS2Z5d2toY2t2NFE4NkpnUHBxYWV2RmVkUUhHZEpScFdCUU1GSzd0XzNmVjIteEd4MVJRaVRJUXZuQzZPd1BhR3EteVFNck55ZmVNZjd6cHotTVdKMWJtOXlZMkZVREdSYVBmNmQxeWdNNFpGbkxTOGxId1N3?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源AI模型Nemotron 3.5 Lightning正式推出，战略方向调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-nvidia-123
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达与本地 AI 社区携手推动开源模型与智能体发展"
+  quote: "英伟达与本地 AI 社区携手推动开源模型与智能体发展"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMQXE5eVRJSlMteTFCWldHZkR6MzZSaHZjMERwZm1icWE4LUlGcVF3R0xRTV9lWG5abU1fXzdTN2hOVkwyeUVVOTJqM1pFT2hsbmc?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):开源社区合作声明，生态建设举措，具体内容不详。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-10-nvidia-124
+  date: 2026-08-10
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Nvidia启动710万亿韩元AI融资…华尔街倾巢出动- 阿视亚经济"
+  quote: "Nvidia启动710万亿韩元AI融资…华尔街倾巢出动- 阿视亚经济"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE42WmdSWjk2aDcyWVl2dUlNWS1pbjJWU3IzcGFRYnZmeGxUQnlIMTQyeExXSldRR1d1SWFGYzNCLWdNTm5FUE9xbUNXM1VsbnRJVWJsNm9hYUdWNnBqelF1Z0o0SU8?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资金额明确（710万亿韩元≈约5000亿美元级别），重大融资完成，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
