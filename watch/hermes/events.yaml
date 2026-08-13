@@ -811,3 +811,64 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕保值率排名第一，品牌价值认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-12-hermes-053
+  date: 2026-08-12
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕和蒂芙尼婚戒哪个更显钻？10万预算实测对比+FAQ"
+  quote: "爱马仕和蒂芙尼婚戒哪个更显钻？10万预算实测对比+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1RUHZGV3RXNXYwUC1hLVQ3U0t1SVRrVzlpalFjb1paMHlnaGdXcG5GNWZSZW9jYTR4MGx0bl9mRktKSFhvN3Q2ZkRXd21yNE9COFpqZElzbVZwWmwtaEhpOVBn?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕婚戒产品对比评测，涉及品牌产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-hermes-054
+  date: 2026-08-12
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "阚清子宠粉再升级：送完爱马仕又送黄金"
+  quote: "阚清子宠粉再升级：送完爱马仕又送黄金"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBvaEYwU01QRkttdHkwMUV1SmoxVnlHVVI1RkNqal80QVZKcWlTQkJSME1UdkVNdjdUdmxDNjFvdE5kSkZWRlVURF9HTmExc0N2eENFLTR2TnZXaDcyNWNzS2NTdVFWRFFWMUYzMlp3MWQ?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):明星代言人赠送爱马仕产品，品牌营销相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-hermes-055
+  date: 2026-08-12
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Hermes 手袋钱包 质感上新 封面手提包 $6250"
+  quote: "Hermes 手袋钱包 质感上新 封面手提包 $6250"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisAFBVV95cUxQMzBnM2JnUGMtbzFoTXRocmlxY0ozN3hBU3A4OGEtSEQyOUlnbXhyTnpCSkNUYUt5d3VoLXZjXzdHeks3U3RxT2w1VGNIN2RHZDI0ZUVSYldqQnFlbXFlUVNHam1iU2pVRU9RaVlHb0Q3QldORC1EMFFnNzFSUlhXYm5Sd1FfcmVheWR5QTdNUEY5a19NS0Q4emwyUFFObVp1dHdwU2llRGhEeFh2d05FYQ?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕新品手袋上市信息，产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-hermes-056
+  date: 2026-08-12
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕Evelyne二手行情：95新回收价1万-2.8万，保值率最高85%还值得买吗？+FAQ"
+  quote: "爱马仕Evelyne二手行情：95新回收价1万-2.8万，保值率最高85%还值得买吗？+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxQRWM4SnItd3I2b2UxSmVOQ1dyaVN1amdtbnBWdnFlU1BXamNvcjQ4TGVwZjRZanRiQVVfbjgxZGRyNUVYUWFQRFlURm1ua2NBdEFGY3dpZ3NTWGcyTGZjY01hMUhwRy1fMk5iRHNOQmRIczFsU3VfNGJ4eERxNDdOeXlEMA?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕二手包包行情评测，涉及品牌产品保值率。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

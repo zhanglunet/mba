@@ -1372,3 +1372,94 @@
   source_type: media
   note: "LLM 预分类建议(high):奕境SUV搭载华为鸿蒙座舱，反映华为生态应用进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-12-huawei-090
+  date: 2026-08-12
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "发布会助兴演出已获批，华为Mate 90系列有望9月23日亮相，首发韬定律麒麟芯"
+  quote: "发布会助兴演出已获批，华为Mate 90系列有望9月23日亮相，首发韬定律麒麟芯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fblJBZ2JYQXJ2cDVBSTQ2Vi1PRExpODVHSmw5YmI2cmh1cU1RSkFJcTU3V3E2bWR3dEZKWkNlVHpPUkhfZl9TLUIxaFNTRjg5TUlJU1U2OWZBcEhF?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰产品Mate 90系列发布会定档,新芯片首发,重大产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-huawei-091
+  date: 2026-08-13
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Mate 90系列？文旅部透露华为终端Haco发布会定档9月23日"
+  quote: "Mate 90系列？文旅部透露华为终端Haco发布会定档9月23日"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxONWpzWldOckNDa1JXOGVnVmhzaVBPTkVBNHZrX3k5WllzbDR3ZkM5M2F1bmRHUUZCWXpHaUFZaC1CV0RSWWNld3h1aUo3WjRkckFEcTdsRFkxQklzYWszbUZvRGI2ams1Mkl5QVZ5SFBKWnMwTUNHLVZtTEVPb3lhX3lfbWkyY3NkV2RhR3k2ajJheHhyX3hoY25KQWN3dnROTWo3SWc5b2twODd6YzJhb1ZR?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Mate 90发布会官方确认9月23日,旗舰产品重大版本发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-huawei-092
+  date: 2026-08-13
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "4大旗舰同台亮相！华为Mate 90发布会阵容豪华：史上最强Mate准备就绪"
+  quote: "4大旗舰同台亮相！华为Mate 90发布会阵容豪华：史上最强Mate准备就绪"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOR3h5bU1XbUtUdkJjX2w5M2hnSTl2UzB4aUdPWVdkdXBpWDlla1h2UTdoNGFuamliXzFVaXRwZGptbThvOFY5Q195dW5ZYkFSLUxjV2pJV3JzLXFUYnFBV2FFRzFIWERIM0kzUEdHQzRRNmFZcFRQeDhMZnhLNTUxRkpn?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Mate 90发布会阵容确认,4大旗舰同台,重大产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-huawei-093
+  date: 2026-08-12
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "华为秋季发布会或定档9月23日 Mate 90系列旗舰将至"
+  quote: "华为秋季发布会或定档9月23日 Mate 90系列旗舰将至"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE4zd0hBU3E2VThkeV83cWxrOFlrdFVDUkV2dHgteHA5V3F4R0VTNGJjcWRhdFp3djA4VzRmZXU5Q0pGNnpmYUd2SElIcjVHLXkyMER6R05TQlg2SmR6MGZ5RmFib1ZCMWN3ZWo3U2hhdUQ?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Mate 90系列发布会定档9月23日,旗舰产品重大版本发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-huawei-094
+  date: 2026-08-12
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "文旅部剧透华为Mate90发布时间，锁定9月23日"
+  quote: "文旅部剧透华为Mate90发布时间，锁定9月23日"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE1keWVhM2ttMWhxVnFBbDdjQXdNbFJIYkoySjVpSHZ5aE85aXZENXJmR2R0ZmQxUFRSclpvVENRVnA5SEpEcWNWS1hjd202ck0?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Mate 90发布时间官方确认9月23日,旗舰产品重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-huawei-095
+  date: 2026-08-12
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "曝华为将于9月23日举办Mate 90发布会 韬定律芯片来了？"
+  quote: "曝华为将于9月23日举办Mate 90发布会 韬定律芯片来了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOXJLbTVVMU1fM0ZDc3ZfWHJ4UUg3bWk0TkdUeE9LRnZjN2I0bUZZTFJhb2x3RGszTzVMQUNzNkdxWUhoeHoydTZPWFF2cTNMSEFjSm1wd0w1dTJoV2poeWdwN3NnME9HcldqTk0wdkVtOE9BN2Fkd29xVHBIWnIySElUNkxFYktj?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Mate 90发布会9月23日确认,新芯片首发,旗舰产品重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

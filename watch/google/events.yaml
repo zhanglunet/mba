@@ -1976,3 +1976,124 @@
   source_type: media
   note: "LLM 预分类建议(high):谷歌允许竞品应用商店入驻,重大政策调整,反垄断妥协。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-12-google-130
+  date: 2026-08-12
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Keep tabs on your valuables with Google Pixel Tag"
+  quote: "Keep tabs on your valuables with Google Pixel Tag"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1tdzZab0JuVF9BRTdwOGxkMzVwYWllZ2FQakdmN1Q1UTRMd0RoZmNMeEZvT3NnZmYwVTFlX0tpWktkSk92VkNHNG9OcWpBdXpyOTQwek5qbEtxX1dNck02cHF6eDV1bjJRRUZlMVdDU2FxaU1SVlRCdDVmUHNwZW8?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布新硬件产品Pixel Tag,属产品线扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-131
+  date: 2026-08-12
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Now you can connect even more of your favorite apps and services to Gemini."
+  quote: "Now you can connect even more of your favorite apps and services to Gemini."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeDduU2QwMEtMemdEM29GZkJWVDRqVVNVWXZwZEo5SnMzOGFiYWhLU1F4Y1d2cTBVZWR3YThmblJ3VEFsdFpUY2JITGQzUWZnUElHU01MZHlORG1XYnVEaHg0QndXUzlVV0c4NzRseU5sTERQeHdjRmo3N3NGZHEzY3pQMFF4WHFldHMxNlA0c2xvOFpIVkpBeG1Rem42Y3NBalhnRlNvYkY?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布Gemini功能扩展,属主力产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-132
+  date: 2026-08-12
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "The Pixel 11 series: Your most personal Pixel yet"
+  quote: "The Pixel 11 series: Your most personal Pixel yet"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxOb2JGbUFVRnJ6a3IxeHlBYS1ybTNzQkVyS3JiUXNxY29hdGVUZ3d2VV9RUWRMaVMwMHMxUWJSWmtzWWNNR0xQMDBsMmszeGhabU1iV1ZxZEpNN3U4cUo2YzVGZ0pCRVBoeTdRQmY2RUlkNlJmcFgwQTRYc21VQ19kT0h2WHVTVjA?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Pixel 11系列新旗舰,重要产品线发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-133
+  date: 2026-08-12
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "7 can’t-miss updates from our Pixel 11 launch"
+  quote: "7 can’t-miss updates from our Pixel 11 launch"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPY2E2UTJqYjh2Zmg0T1M0ZWRGZEFMRWtSdWlFVGZnU29yclY1MWFuOFdKemtRcHB6MV9JTlBuVVd1ZFdhc3RPaW1fQzM5MC1uLUN2NTA5Y051MndleHJJZDc4VjVoVkF5b2lhVzhfSHBNZjdLYnVvU2U0WUJ2YWRoVw?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方总结Pixel 11发布亮点,重要产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-google-134
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌创始人布林紧急接管Gemini团队，但“3.5 Pro已被取消”"
+  quote: "谷歌创始人布林紧急接管Gemini团队，但“3.5 Pro已被取消”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9uUXB2WlNlZjNwdm12bC1hZjAzd0l3YlQwc1A1M0FNb3BBc3d5Z2VyQm40WGluR2VXZ0piSF8yRFRNNnhyTktkd0tPRWktZnhfMlZoaThlZXFfRGtw?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):创始人干预AI团队、产品取消传言,涉及组织变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-135
+  date: 2026-08-12
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌发布三款新手机 搭载Google Tensor G6芯片"
+  quote: "谷歌发布三款新手机 搭载Google Tensor G6芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sTzc3LThWeUFMNExfaWpfdks2RzlBNnlqNEUwd3NQbVUyQmFMRzk3TUx4cGJJLXllU1FrQzlmclpySzlYWkItMUhNd3prbFJwd3JJTTRwUzFCSUNRRXNaSW1uWQ?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):媒体报道Pixel新品发布,重要产品线发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-136
+  date: 2026-08-12
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "外媒曝Google AI重组内幕：布林不满落后Anthropic 要求全力押注Gemini"
+  quote: "外媒曝Google AI重组内幕：布林不满落后Anthropic 要求全力押注Gemini"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xU3g3Rlg5ZXlhcWVCRGFkcWZYZGJUTlB0WGk4MU8xY0lqdENGWTV6eHJINmptemt6bnB0REkyUndoYW12Y09UQ3FsYTRoNDlBdFhJTG43aThVNGluODFacA?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):创始人重组AI团队、战略调整,涉及组织变动和竞争态势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-137
+  date: 2026-08-12
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌\"Made By Google\"发布会：Pixel 11系列、HiLight、Tag、Watch 5等新品亮相-人工智能"
+  quote: "谷歌\"Made By Google\"发布会：Pixel 11系列、HiLight、Tag、Watch 5等新品亮相-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE5iZXZFU1ktUFNwdzc0QkJjaUhIWTRYa190ME1LX0dfWmc1RGI5dHNzUXlkYVBtQTZ0eXJGOXBaU3JfU1pVMU1PdkkxS1ZxUWNhZ0JkWUJrdzdVVGoyX2c?oc=5
+  fetched_at: "2026-08-13T04:21:57Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Made By Google发布会多款新品,重要产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
