@@ -312,3 +312,19 @@
   source_type: media
   note: "LLM 预分类建议(high):未完成订单(backlog)是关键财务指标,反映业务增长动能和收入确定性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-12-palantir-021
+  date: 2026-08-12
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "ShipOS：Palantir如何颠覆美军造船能力"
+  quote: "ShipOS：Palantir如何颠覆美军造船能力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQWHJwYzBGWWlmVjQ5S2lyb1VyenBfamJnOFNoRDAtQ3JxdTVmbGpiaC0xSHFOSHFTRW5IZzNiWEphOTdwN0h1VUdrYTdTWHlEbTN4aUFRMmtJNGpNWm5Hbi1obEM4TU54Ni1DSFlJc0N1bnZuN1UxMmhNOWhMckVlNG5QRTRqRkx0Slg1TQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品应用案例，军事领域业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

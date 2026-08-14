@@ -2195,3 +2195,124 @@
   source_type: media
   note: "LLM 预分类建议(high):CEO战略声明：AI占估值99%，算力目标明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-13-spacex-144
+  date: 2026-08-13
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "挪威主权基金半年赚了1840亿美元，持股SpaceX价值超12亿美元"
+  quote: "挪威主权基金半年赚了1840亿美元，持股SpaceX价值超12亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BY1ViM0JNaVk3NGdKNE84QTJRa3huWWVubEdQUER2ZE1tVzNZbWZSYjVITkFDdmJFYm1BSDU0TktTV3lNWnFrZkxnLThzd2JDQ2M2YW00RXVpb3lh?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):SpaceX融资/估值信号，挪威基金持股价值公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-spacex-145
+  date: 2026-08-12
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克押注AI代理赛道，SpaceX AI推出Grok Bot，对标Anthropic与OpenAI"
+  quote: "马斯克押注AI代理赛道，SpaceX AI推出Grok Bot，对标Anthropic与OpenAI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mTEVUbzhZU3N2dFhKYm9HQ09JWURJOFJvYUJ5SjF5aW5leUp5QVF1R1duSkktWklVSURBcWNIbmdqU0RBdkY5a2hrZjc3UHRObktwRmhsZG1acTdH?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):SpaceX AI新产品Grok Bot发布，战略扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-spacex-146
+  date: 2026-08-11
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大摩：市场严重低估SpaceX AI业务的价值，牛市情景股价看至600美元"
+  quote: "大摩：市场严重低估SpaceX AI业务的价值，牛市情景股价看至600美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE91bi1lWUV2ZlpYX2tkX0dqbnpLMlB1cnpEa3ZlNkV3VmptYVZtMjBiMEhnbHFyVnJUTG9oVWxoMmo1VVZ5YmloeWxROEF2N25Ob1FUcWtqd3ZhenRE?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):摩根士丹利SpaceX AI业务估值分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-spacex-147
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "主权基金集中现身SpaceX股东名单 持仓规模首次曝光"
+  quote: "主权基金集中现身SpaceX股东名单 持仓规模首次曝光"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBheTctWWRBT2JPR0dpaVJ4STk3MC16WmxYYnV3bldHUWFEOUhyQ3BzMFZlR05xVk1hdXNFakhWQUdBTEpLaGF4N1hMZGVmNUdJZjUtQ3Jkd0U0UDZhd0EybFJB?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):主权基金入股SpaceX股东名单披露，反映融资方结构变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-spacex-148
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "文件显示先锋资本管理有限责任公司披露持有SpaceX 2660万股A类股份"
+  quote: "文件显示先锋资本管理有限责任公司披露持有SpaceX 2660万股A类股份"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFBkR2dRa2FaX1Izbk1oMHIyZFlSb1VmMFFURE1KMnZIQ1FWOGx6RVlrR3NoQ0xfQlRFRnplNmR6aDRGVzM0bWR1SnRDdkUzbGwtZkVZV1BrUXp5WFJIVXQ2b1I1TQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):具体股东持仓披露，反映融资结构变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-spacex-149
+  date: 2026-08-14
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "【早报】SpaceX三日暴跌23%；油价下挫、金价收涨；梅西梅开二度，加冕世界杯历史射手王"
+  quote: "【早报】SpaceX三日暴跌23%；油价下挫、金价收涨；梅西梅开二度，加冕世界杯历史射手王"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFA5em55UzF5ZHktbUw1a2Y4WGZqQndnUmdHMGVSOEo5ZkY1elU5eVpHM214VjhKSmpnejVqOUpXZlpyMzduS2haeg?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):SpaceX三日暴跌23%，股价重大波动事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-spacex-150
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX完成首轮禁售期解禁考验，市值大涨 5000 亿美元"
+  quote: "SpaceX完成首轮禁售期解禁考验，市值大涨 5000 亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPUWRqRDBFenc3LXdNTXJOTm5Scnk5Q0tNRWpNOFZRLVR3cXA3eFpSOGoxTmRmQ1ZvcGszalBIejUxbGNYdnNiOEl2clNYMVZQdXdTN0NIOXhzRGVPTnlnYkdnVTVObk9LYktnalE0RW1ueEdIVVAwNUlhSVZiWExLTDh4ekpPck0?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):禁售期解禁完成且市值大幅增长，融资相关重要节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-spacex-151
+  date: 2026-08-13
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "【早报】前5个月电子行业净利润增长翻倍；SpaceX拟收购光模块公司"
+  quote: "【早报】前5个月电子行业净利润增长翻倍；SpaceX拟收购光模块公司"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFA1b1daTTdzcXV1b0RCWkJxdTBEeFk5Rmw4cmFnUlVfOWthamtjWjgwZWR2TVdqOGFFeDNsS3N2RmJJRzRXNVhXNw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):SpaceX拟收购光模块公司，并购意向披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

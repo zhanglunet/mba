@@ -2187,3 +2187,79 @@
   source_type: media
   note: "LLM 预分类建议(med):iPhone 18 AI功能规格传言,未官方确认,信息价值有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-13-apple-144
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple opens Advanced Manufacturing Center in Houston"
+  quote: "Apple opens Advanced Manufacturing Center in Houston"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxNTHBUVTVSdWdfXzR2T0kyNGJwZVFhbWNRS0N1NlpsY0hoODFwS2o0MHRmUTFHVDRCOHM5TWtxcDh4bEZUREVvNDB2aFk2b0FuZGF3aENMTEVFUjlReDdSR1NzT1FoM2Q2WVZDYTkyQV9VYS1uVnFzZU1lYmVQWnQxdFUwQkZvTFMxLXY5MHB0V1M4bFB4eFdR?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布制造中心建设，战略投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-apple-145
+  date: 2026-08-11
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "确定了，国行苹果 AI 定档 9 月正式上线！"
+  quote: "确定了，国行苹果 AI 定档 9 月正式上线！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBYaExQOEFVeG84bTNYLXNCcEx0NTZCY2NIQWx6THI5Ukt4X0NlM1oyQTF4MEtiWnlxc0w4RUlZdUp6eVB2Ukk1ZVo3VThJc1ZpbkhoT1QxNG02c0Nx?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰AI功能国行上线时间确认，重要产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-apple-146
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果在休斯顿开设先进制造中心助力培养新一代美国制造业人才- Apple 苹果"
+  quote: "苹果在休斯顿开设先进制造中心助力培养新一代美国制造业人才- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WdGdCaWxpeVFjOEhrRkRJRHg3R1JRVElUU0FKRk5hMFN0YWY4ejJuUW5iekQ2SVVpOHctX0hOd0pVN2pNMlVILUZ2OTFFdV80X3Q0S0d2SUYyUi12dlVfTA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果在美国建立制造中心，涉及产业布局和人才培养，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-apple-147
+  date: 2026-08-13
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "代码显示苹果Wallet将重构线下iPhone换购流程：估价90天有效|Apple|iOS|客户|钱包|报价_手机新浪网"
+  quote: "代码显示苹果Wallet将重构线下iPhone换购流程：估价90天有效|Apple|iOS|客户|钱包|报价_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNZlVjdFFwM3NacXh4eDNUb1VVYTBoamdiejhSRnVteEdoTzEtVjJKQ2NWYlBZTkFjLUxSZUdZbVIxd01RZUtIQWVmSHpoT2dwblNRUXlyN2hiUFZwMTFGdlV3eHMwNV93SVpOR0MtYUJ6bFdvTXpHakVJQllyNVppMjZwaXRmVF9JR2JwRUZQeEpSdlEtb2NIZmFGWTJuWHI5M3hMQVRxaU80ZXkyTnRXZnVB?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Wallet功能优化，涉及产品体验改进，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-apple-148
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果向110个国家的用户发布间谍软件威胁警报呼吁采取严密防范措施- Apple 苹果"
+  quote: "苹果向110个国家的用户发布间谍软件威胁警报呼吁采取严密防范措施- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9vdU9qTlk4azh5STNXSmI2SlE3MlBiSk5ScXlVdk1tZEFvaGhIcUY0aDhBX1VUZDV1NlB6Z1loeHdyd2hYV2ZjVzVaa2ZKZm9LSjRCdnY3QUlfOVZsVFlxcw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):安全威胁警报涉及用户隐私，具有显著负面舆情影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

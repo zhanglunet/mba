@@ -1853,3 +1853,49 @@
   source_type: media
   note: "LLM 预分类建议(high):监管调查启动，涉及核心功能FSD，存在合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-13-tesla-122
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉将在2026年中，发布全新Model YL+车型！"
+  quote: "特斯拉将在2026年中，发布全新Model YL+车型！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE1WTnNWM2xsMlJoREpoQjZOR0wzUXhKOVhmaThuam9vVXl5bEowM2JCR0hwNjlKeGRpalZFbnBLVXRjOFdOVDVEcUxDQi1ieHpHVEJZRFNMSzdSNFk?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新车型发布计划，产品线扩展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-tesla-123
+  date: 2026-08-14
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美国特斯拉在得州推Powerwall租赁 月费35美元"
+  quote: "美国特斯拉在得州推Powerwall租赁 月费35美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE1PNEdodVNMY1BUbk03WHVBRXZCbDdDSkNaRmdFOUNlcDExTWx6QzdqVEE0QkN5TnhHclBJcXBiU29FamRYVF9adjV4M1A5SW8taFZScjMwdmg?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新业务模式推出，能源产品线扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-tesla-124
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉老款车型OTA更新后主板烧到96度直接趴窝- Tesla 特斯拉"
+  quote: "特斯拉老款车型OTA更新后主板烧到96度直接趴窝- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1WERKR19zY0hKUUtiVDhwOFRrX1haSmhyb3JRMGtxQzlBcnRNcU80eHhpVWNPT080Rlhvd2JDNU9faGZORk5lMm1OUS1pNGVQdW94NC1lTHFnTzBLN2xmVg?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OTA更新导致硬件故障，产品质量问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

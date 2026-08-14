@@ -1463,3 +1463,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Mate 90发布会9月23日确认,新芯片首发,旗舰产品重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-13-huawei-096
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei Unveils Upgraded Xinghe Intelligent Network Under the \"Secure and Intelligent Connectivity\" P"
+  quote: "Huawei Unveils Upgraded Xinghe Intelligent Network Under the \"Secure and Intelligent Connectivity\" P"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxQd3drSWhKMWdUMDEwMklXYU1XZjhBaGs3TktabVplTlJWaWpENmF1cERtVVRzWlRWd0FlVGVXSTRoM3lIUlQ3V09GSWpWWHpNNFVMN0pVSjJnTmVJTFRMX1gwOHRqUm1rQmZ2UVFQYksyeUZTVzUxTXNBd3Y2NWlNOWZVQzVpcUwwaUROdW1wZkJIMVlnc04zTUI0bzIzMjVvZnYtZA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布星河网络升级版本,产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-huawei-097
+  date: 2026-08-11
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为AI芯片来时的路"
+  quote: "华为AI芯片来时的路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBiQjVEVDBjdzJOM2JiM3VsQ1UwbkdCeEl3YklXeUpDMzI1Z1R1UWpQbDU0Yy15VGtfWFI0TUI1ZnExdmJoNkpJbE1VUUFia21RRmRSSUpYZzZIaDNO?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(med):华为AI芯片发展历程分析,背景信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-huawei-098
+  date: 2026-08-12
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "阿维塔一句“合作非必要”，整个汽车圈都替华为急了"
+  quote: "阿维塔一句“合作非必要”，整个汽车圈都替华为急了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBtSEtMV21EOGN3RGNrWTRpeFZmX2hUUGF2ODE2c1RpU19kSGFlNVBmV3c2YTR4R3FHNi1RZkNQT1ZzTm91Y2VxWXVsNHVUUUJ0RlhWYjcxZ2VnQ1o3?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):阿维塔与华为合作关系评论,涉及品牌关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-huawei-099
+  date: 2026-08-14
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "华为天才少年宁博宇离职：焦虑对不起公司回村卖玉米将赴瑞典深造- Huawei 华为"
+  quote: "华为天才少年宁博宇离职：焦虑对不起公司回村卖玉米将赴瑞典深造- Huawei 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wcVRPM1RMMFpkUnVnRnNsZEpLcVdFOXhwbl93bGp5M3ByQUtMN3hsU3NHY2lxYXFpQ0RsVEFtWFQzdmt5dlNyYm9udXBuX1ZtYWktM0xPTHNjc0NCLXNCdA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):华为天才少年离职事件,涉及人事变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-huawei-100
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "5大重磅新机扎堆9月：华为史上规模最大的发布会准备就绪"
+  quote: "5大重磅新机扎堆9月：华为史上规模最大的发布会准备就绪"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxORDREOGVUYVZpMzBQQzRJc2Z5N0JVQWFRNHdIbGswRk12Tjhva2lvR2ViV2RMakdZSloxMWZteW1sb1dSM1Y4UjNwT3I4aFFpa2VSemZCN2ZQNXRCM0tSZmNoVFBjcmhBU2JiVXNLd2J2VHFlTEtnZlVKRGJJNlZlUkln?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):华为9月重磅新机发布会预告,重大产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-huawei-101
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为乾崑联合设计，奕境X9汽车座舱配置公开"
+  quote: "华为乾崑联合设计，奕境X9汽车座舱配置公开"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBnS0VWb3pTa2FnX3dfeFh0bk5KaVBkejRwSk9iNEF3b1JpcXc5OVJ1VmVDNzFOMmNkb0ZLLWxjakdqeHZ6RzRTLTJKZXk?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):华为与乾崑合作汽车座舱设计,产品合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-huawei-102
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "消息称华为终端 Haco 发布会档次将对标 Mate 60 发布会，甚至更加豪华"
+  quote: "消息称华为终端 Haco 发布会档次将对标 Mate 60 发布会，甚至更加豪华"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOT0xlNnd0SlZQNWxXaDdZNWwwS3d4bG96ZGxYb29iTFN6bkVtZTJ2T3NGMjRXU0hIRVlsbkxfNFpvLVREVm04LVBwYXk0YWpNQ1RBbXpNU2xWRkxGQm9NVEs4MU5rTEpHMTh6NzdvUHFVcFhqTjV1SzhrRnVwcEtVbndn?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):华为Haco发布会规格预期,重大产品发布预告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

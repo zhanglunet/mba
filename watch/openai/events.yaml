@@ -2390,3 +2390,124 @@
   source_type: media
   note: "LLM 预分类建议(high):GPT-5.6训练方法创新，红队自博弈技术。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-13-openai-155
+  date: 2026-08-13
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed"
+  quote: "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZMFhmQ0dtWnYzRnVhcnM5ZUI5NjJWLXgtT0dSbExsWWZqQmw0a0tuN1ZXVUdIUXl2Y3JVUC0wMGRhdVJrVFdITEV4c2VnYTl4dzFORjVSOGVUZw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布GPT-5.6新版本，旗舰产品重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-openai-156
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI appoints Dali Rajic as Chief Revenue Officer"
+  quote: "OpenAI appoints Dali Rajic as Chief Revenue Officer"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE5vZ014TTBMWjk5ZkxNRkhScXlJakpYU3FzYlpxdnpPMXhwQTJIbnhDYTVXcll3Y0xUTU9WYlM5Sm5Jbnp4MGlVTGd6dlY0MUdrRnVJODdqbEVuTEFadkdBMTRsdlVVLXRmc0E?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):官方任命首席收入官，核心高管变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-openai-157
+  date: 2026-08-13
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "The builder’s guide to GPT‑5.6"
+  quote: "The builder’s guide to GPT‑5.6"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5tMWFtaDR2X0I2UjdDcjFYRkJTTXE2cnNqSk1sVnIwMzR5MHl1M3FTVEkxaGEyMjI2ekZ1d2VTNGx2VnVYMlhPU3lvamJBSS15YzlfY0lFaGVmRkV3b0N4ZA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布GPT-5.6开发者指南，产品文档更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-openai-158
+  date: 2026-08-13
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "刚刚！Ilya首个模型曝光了"
+  quote: "刚刚！Ilya首个模型曝光了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5GYTNqTzcwQ3o0QzJ6b0NWRFd3MWtVX1JZeDZxQzQ0TkJIalhIcmdCc0VQOU9WMWtrSXlYWld0dXZyQXpVdVVvQUVxVjdkV2I0eWlaVVdKdDJubDQ4?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Ilya新模型曝光，可能涉及重要产品动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-openai-159
+  date: 2026-08-12
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI和Anthropic费尽心机加密的思维链，竟然能被轻松提取？"
+  quote: "OpenAI和Anthropic费尽心机加密的思维链，竟然能被轻松提取？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1acXo4OXdob3UzeWxZV1NBdzZud284bkMzbVpObmtUSGlkY0xMSlBrcE80dU5qcTd2dF9lX0E4TEpsVGpIMUNLamdVLWpMdENhNEtOU2pxYVlyTkF6?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):思维链加密被破解，安全漏洞披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-openai-160
+  date: 2026-08-12
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "360图龙锋破解OpenAI自检盲区，最新发现Codex 6个高价值安全漏洞"
+  quote: "360图龙锋破解OpenAI自检盲区，最新发现Codex 6个高价值安全漏洞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE8tdnpseE9iS2txdGUtajhqV0VGMHA3aFh5bzFUby1KeXNPYXZ1SXhxRnFiWTROUUk4eWFka2pkODUwajRoOUtLYUVTY3FEUGFTSXJYeUpIanpTYUl2?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):Codex发现6个高价值安全漏洞，安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-openai-161
+  date: 2026-08-14
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI年化营收突破400亿美元 较2025年底翻倍"
+  quote: "OpenAI年化营收突破400亿美元 较2025年底翻倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBNWHNXTkN5em4yNjk1azdLY3hpLUY2dUR6dFVuMzVkZnNvaTlKTmxQZmdLNkp5RWI2NllYc3lyc1lpdEFoTWdBaXFGYmxjc3p1YjF5NnFtNmoyNW5LVmpnRW9n?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):年化营收突破400亿美元翻倍，财报关键数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-openai-162
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "冲刺IPO，OpenAI年化收入已达400亿美元"
+  quote: "冲刺IPO，OpenAI年化收入已达400亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE4waGxBaVVjTmZ3WUR2cjc0QmpTNDY2enVzM0xfMVI1NzY0Z3hVcXhGcmVzazUxUXBoT0N4VkIzOERJQzd5dVlIMERabVV3NFpudnlr?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO融资预期信号，但未确认具体融资完成，属显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
