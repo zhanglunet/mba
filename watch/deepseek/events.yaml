@@ -1676,3 +1676,94 @@
   source_type: media
   note: "LLM 预分类建议(high):黑鲸项目内测启动，新产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-13-deepseek-110
+  date: 2026-08-13
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek-V4-Pro GA Release"
+  quote: "DeepSeek-V4-Pro GA Release"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iMWppQXQ2QjBmcUwtTlNFdTFKY1NvQjV1YWcyenNHajVnQm1UVUw0Ni1Vd1ZMdTI4eUlEUDBOeEdPMlNTdVQteVpOQUdEZ1V6QVBEbjhvRXpuZw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布旗舰产品正式版，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-deepseek-111
+  date: 2026-08-13
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek-V4-Pro 正式版上线"
+  quote: "DeepSeek-V4-Pro 正式版上线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ITG53QVVLZzFpQV9BVXRhUHFEWTVtdzhVVzItZ2tUbWg2cWo5UXJ3eUxqZDdwX0I1bFRIU01wSmhqNmJlTUQ4TU5NSExESWw4cDVuT3k4bXI4MTY5c21hTFpR?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布旗舰产品正式版上线，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-deepseek-112
+  date: 2026-08-13
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "一夜之间，DeepSeek V4 Pro和Grok 4.6把全球大模型推入了新的斩杀线。"
+  quote: "一夜之间，DeepSeek V4 Pro和Grok 4.6把全球大模型推入了新的斩杀线。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1IZHhscGI1RjdOWWxzeHhvXy05dnZQVEE2cWVaSmZEeEtZbDFlQndYekhNQmt1UG1veC1JT0ZTdTN4ek12YmxDMGdfU2NhZVRoNWFtcXpJYjgzOFQ0?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):竞品对标评价，涉及产品性能对比，显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-deepseek-113
+  date: 2026-08-13
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek调价方案公布，8月17日生效"
+  quote: "DeepSeek调价方案公布，8月17日生效"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgJBVV95cUxOcFp6NGROT2Uydm9ZakdzTGhlMUhJdmdGMl9BTEJDYXFTVlVxM25lXzNycGJJQnRlSXN4V2tLYk1IX0pQLU5wUjFUb2lxZG5oUC1VcGVSQ0xyejhUemJ1UWMtS21ERXBFX2dRSTVWSUlOd045X1NtTFpNYjdJUHN2bHpfVjU0S0dhNjdVUWM5ZHZyb2lfdjc2TGFPZ3NheE5XZjV4QUI0blZCd0FuOWRYalNrVXhRdERQQVhZT08wVWtuTVVjSjNTcUV0aDlOMjVxMm04MW1BdHloRmtuWThpOFVBMjVUVllRWmttM3IyRUZ4emJIR0gyOW56VFJTTUJ1bVJadkM0SE1UODhOb3c?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):API涨价公告，影响用户成本，显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-deepseek-114
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "涌金楼丨浙产大模型要改变全球AI竞争格局？"
+  quote: "涌金楼丨浙产大模型要改变全球AI竞争格局？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1QWEpFSy13UjJNMFRPeHYwNXBWV0pEM2JsSkdqc3NPNkkzUjZkTURrRFlwNENhcFFmRHBYMWcyRU9qcUhTclg4N19QNG5JZGdNaG1pWkNvbTRxQ2FOUDNoYllGNWFBUXZmRjFpdEJhYmxyLVdWOFBYeU93TWgyZFk?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):品牌战略评论，涉及全球竞争格局预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-deepseek-115
+  date: 2026-08-13
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "DeepSeek宣布API涨价，8月17日起峰值价格最高涨至27元，新版V4 Pro正式上线"
+  quote: "DeepSeek宣布API涨价，8月17日起峰值价格最高涨至27元，新版V4 Pro正式上线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LMlBybTB6WGMtbVRicnNyX2owc1R5TnRwSzI5Sk9qRXpXM1JHSVlDa2w4TFp3al9kZm4wLXJ5OGFrbTlGVEw1OVBXa3FVTS1mNy1N?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品正式版上线+涨价双重信息，显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

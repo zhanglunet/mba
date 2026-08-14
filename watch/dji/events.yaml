@@ -613,3 +613,19 @@
   source_type: media
   note: "LLM 预分类建议(high):美国扩大无人机禁令重复，涉及光达机种禁令。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-13-dji-040
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "大疆发布第二代全景相机，AI成为影像产品升级重点"
+  quote: "大疆发布第二代全景相机，AI成为影像产品升级重点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQWFh3SlpaMS1uWVo0NUNZejU0LVFNcWIzV3VoMVNkc2pXRlBfdlU2TnhyT1JUb3F3UjlURlVUMWt6ODJYMUItN3pCZXJYZUZ2aFJxekJxM1gtLUpoUFVZWjViLTM0emdZZjRiRWRMOGRMb1BsdFMxejB0SktYaEJ3VjBNR1pYRllUckY0VQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品全景相机新一代发布，AI功能升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

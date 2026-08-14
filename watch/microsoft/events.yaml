@@ -1856,3 +1856,109 @@
   source_type: media
   note: "LLM 预分类建议(med):微软参与AI芯片设计合作，体现技术应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-12-microsoft-122
+  date: 2026-08-12
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "SQL Server Management Studio (SSMS) 22.9 发布 - 微软数据库管理工具"
+  quote: "SQL Server Management Studio (SSMS) 22.9 发布 - 微软数据库管理工具"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA2XzN2UExZUFFYWDhvSVpTU0tlUFZxcHBGd19BblVxMTBMbTRyLWVZUGJfdjVXOWFkQTVTZkdENFVpLTdiUGd6eElGcG52QzVMRWlJa2R3RmlHal9K?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):产品版本更新发布，常规迭代，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-microsoft-123
+  date: 2026-08-12
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "【已复现】SharePoint 曝出 9.1 分认证绕过漏洞，无需密码直接接管站点（CVE-2026-55040）"
+  quote: "【已复现】SharePoint 曝出 9.1 分认证绕过漏洞，无需密码直接接管站点（CVE-2026-55040）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBGRHJZU2REX2JjV2FycVZJZnlBV29PWEJUR1Z3UXpDamt3aG5pVW5xWVA1LS04Z1lIVjR2emxRNWVHRjE4VjQ5QUVzTktoQlktTWdud3Nsd0pjcTRJ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):安全漏洞已复现，认证绕过风险，需监控补丁进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-microsoft-124
+  date: 2026-08-13
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "VLC 播放 MP3 卡顿 33 秒？微软 Microsoft Defender 背锅"
+  quote: "VLC 播放 MP3 卡顿 33 秒？微软 Microsoft Defender 背锅"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBrZHBVRFV4dWJlbmRSaFUyTFVfbmlOa1dRb2xDMXdjME1NYzFSS2pENDlVS3ZnbHN5VXpsbFVJUUF3aldhLVlwTzRMM1Qzd3A0SU5wS0RiMUkzT0FsLU9yRm83ZXdWZXVLM1ZHRVZfdlBqaDEzd2NOd2x4YVJBZlk?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Defender性能问题，用户体验负面，但影响范围有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-microsoft-125
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软整合旗下Copilot应用 打造统一AI“超级应用”"
+  quote: "微软整合旗下Copilot应用 打造统一AI“超级应用”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFB4aHZySUdrQUFUNkRhV3ZXbFh2OENndHJTVHFrWUZlUXBLYzUtQWlRTnFERVVJYXEteFNYSEEyOENmWWlRRVhMNVJNNUJueVBfdjB2MU9QUUxmb0V3bjlERw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Copilot整合战略调整，AI产品线重组，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-microsoft-126
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软Microsoft Defender曝零日漏洞ShieldBreak"
+  quote: "微软Microsoft Defender曝零日漏洞ShieldBreak"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE9kOTg2bmItcThWU3hhY050Q1R3UkY2QkhOSEpIVHphNXpCTmhrY2dlR3h2ck5JaG96MWdaWjdZcnlHRTN6UTYtM1hyV1dJcWtJMndmS1Q4Sk90Q1psaUFMdFJFejBOcUtIMnNKVHh0YTI?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Defender零日漏洞曝光，安全产品核心风险，需重点关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-microsoft-127
+  date: 2026-08-13
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软限制Win10版Microsoft 365和OneDrive新功能以推动升级Win11"
+  quote: "微软限制Win10版Microsoft 365和OneDrive新功能以推动升级Win11"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE5SdG9zRDJ1c2ZiWjZiNVdrQlZTZnBKcVEtSDFycW4zNWhLaHJLUVNvRVoxSG1BWk1XTU1lQnQ0YXFEZGhxcjRabjU0ekMzMFVwUzRxbEZZbmJZUTdhdXc?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):限制旧版功能推动升级，用户体验负面，商业策略争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-microsoft-128
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "标普全球扩大与微软的合作，以集成365 Copilot"
+  quote: "标普全球扩大与微软的合作，以集成365 Copilot"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxPV2hxY2hLUG5QRl9NM0F6VjhtbnB4QXJ1dTV4aFk2RmNhT09VdThSZm1ycVNTNENVV1FxeXREYVczZnh5ajJQMHJIRjlsMlgtMTh0X1NRMVRRRWtrd25KRm1wMlNWSUt6S2ZpRmF2NVRkcWN5dWZIeGQxd0JUWEpGdUVxZ215c2ViVV9IaGFkNzd0bmdVVkpOcjRqbU93SE5kNEFmN1pJOFBDd1llZGhn?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作扩展，365 Copilot商业化进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

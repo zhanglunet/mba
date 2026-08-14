@@ -2097,3 +2097,169 @@
   source_type: media
   note: "LLM 预分类建议(high):Made By Google发布会多款新品,重要产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-08-13-google-138
+  date: 2026-08-13
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Gemini 3.7 Flash"
+  quote: "Introducing Gemini 3.7 Flash"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxOZnVHS2RsOVpIeE9xTGhZMUZHbWRtVi1IVHpZcFQ3RExDV1N2c3l2c1o2OW9iazVBQXRTaEpfRFU1UEdlZ3VYNGl6TFZYQTBoNENJRFd4dUNFTE9vYU5mYk05ZFJBWDhIRXE0T0xUQ1hrUzFuSzNPM0tTaGNTWTZyM1V5SzcxcGRLek5tUUZOYnhFSUFZanRnUDFMdGVKUkd2NDNR?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Gemini新版本，AI主力产品更新，官方渠道P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-139
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Here’s what’s new with Pixel Buds Pro 2 and Pixel Buds 2a."
+  quote: "Here’s what’s new with Pixel Buds Pro 2 and Pixel Buds 2a."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxObVl4RWZkM3hOZmgzTGFEa1loMzlXUml6aTN4NU53WjFxZ3lHOFY5b3FBOUxWTHMwc2RTcnR0QkN5amNuOUpNb1FhZXBIeGtPbXNSRUdfQm9XaXl0R1BHZDdULWprZ3J4UVRuNTlWZGpnV2dqbGxtb3VFblJNbHRBWmRiR2NObXlTSTgzSA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Pixel Buds新品，硬件产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-140
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Sharing between Pixel devices is now just a tap away."
+  quote: "Sharing between Pixel devices is now just a tap away."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxObkdNdWUzY2ZoRF83Tnk3QzZrSU42X2FQRFcwTzlSbWcyUXZxa1NlbjBHV1JzZWxOSUNWZUloRGV5bU9EcHpPMzFzc3BVUmtfd1hManpyU252QkV5UnVxV1B6U1Y3M3lfcFhsT28tbkRPWmd2bXZ5T2YzYmlxVTBicnB1RnQwQmlSUXc?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布设备间共享功能，产品功能优化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-141
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Track subtle changes in your body with Health Guardian features on Pixel and Fitbit"
+  quote: "Track subtle changes in your body with Health Guardian features on Pixel and Fitbit"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ3RjYkZCeUdnZ0ZXQnRnNzVJTWNsVHdDTnA3QW5KV0pTVl9TeF9HWk1scHRBQk5iQ19jSGt3ZTRfcWhscUtBb3Q0dEV1d1k1TXgtS1RGWjAtbmlkUnU5NVJ3SmtraG4wR21wRWZzNDZuQ2pISDRXejlTWl9CQ0ZwcEV2bWxtTDRXMlBIRWxzMWhtWFB4TmRFMXl3?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布健康监测功能，产品能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-142
+  date: 2026-08-12
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Made by Google 2026: Latest Pixel devices news"
+  quote: "Made by Google 2026: Latest Pixel devices news"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNb3BEV1Ezekcta0dDUVNPWXZwZXpGWmNRb0U5SkFSd2hIMmYzYS05Z3NLS0xkTVc1MmNERVNhRnl3alBmSnZFQjZNLVFVamJzY3pKTzEyeGtmbllDTnZtRXJxYUhGQU1JRWFJa2h4TkJpUHJESnFLcmF2V2FQS082ckNTNA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方Made by Google 2026发布会，新品发布集中事件，P0级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-google-143
+  date: 2026-08-11
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Stream free movies and shows on Google TV Freeplay"
+  quote: "Stream free movies and shows on Google TV Freeplay"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxOMjRObjM3Ykl1QzFCM0xZRGg3OXlZbmwtM294MHluN3lnVEh3NENaUGhZRjY3OWV2U0c4a0ZwYUQ1VmhYdlR4dXJydXBJY2JPZzN6OUV5ME90a0NzYzIwR25ENWVUYzdiVlM0NUF6T21JTkZidGZzdTM4LXo5Yk93YlRyV19uQ0IyQlQ4b3JiOUdUd0pyT0wzRExtZVBxYW42SlJqUlQ0NzNXS2c5M2ZB?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Google TV免费内容服务，产品功能新增。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-144
+  date: 2026-08-12
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "《置身谷内》！Jeff Dean上顶会自曝离职现场：被1500人围堵"
+  quote: "《置身谷内》！Jeff Dean上顶会自曝离职现场：被1500人围堵"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rcjBuNzd1NzVvRUE4MWFiZWY0SlBtWkdzdFFTdGx2eXZZZFBqSFQ1aUhodWNXR2xZc1lHSDVsYjFVLWdtQTluaTF5N1hqclV3cnlpX3hrS2JfcGNJ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [identity, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):Jeff Dean离职事件，核心高管变动，具有显著舆情影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-145
+  date: 2026-08-12
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Google发布Pixel 11系列：涨价叠加设计缺乏新意，能否挑战苹果三星？"
+  quote: "Google发布Pixel 11系列：涨价叠加设计缺乏新意，能否挑战苹果三星？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFAxNmpDSGR4eVloMW9NR2psM1Jubzl5SDhrMGFzV0g3UjNodmVEYzNrY1BPcTRodTd5cXRZVFVsLTVqdUNRcnl0RFJtQkZiaUdtMFA3S0toTmZ3UnZ1?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):Pixel 11发布评价，涉及产品定价和竞争力，舆情关注度高。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-google-146
+  date: 2026-08-13
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌推出Android设备近距离数据快速共享，仅需点击即可完成"
+  quote: "谷歌推出Android设备近距离数据快速共享，仅需点击即可完成"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAFBVV95cUxNSWYxXzNDRS1XSkFHVkhtTWFybXZvbDVnbzhKOS1ob0VlbDFKRnZmdDczSnI3Y1ZwdmVBS2NRdUVWXzQyMFEweHpzQmw0eHNMREYzZXA3aDBVejR3Q193bk9RdjhTWF9KVi1UeEstTmFGNkFLcldvcS1xZVprbDJZSzIxWjVCUDRTd2trU0NmQnd5YXdpbmU3YVliRFNudzUwTDFzRXNMOWt3cjVzR0pnQndNWGFUYjNVbEl5Sw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Android设备共享功能发布，产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-google-147
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌發布Pixel 11系列 搶攻AI手機市場"
+  quote: "谷歌發布Pixel 11系列 搶攻AI手機市場"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mY3lLd1ZsVVpDUTNIV01VUUZ6cWFSYmZ3UWE1dUJOWXRieksxenRZWmxmaWFfM0NpdFJrQ3h3aXgtYUxvVVR5eUhqeXpYczA1Q1hpVkNObkVEcnB3a0JNWNIBZkFVX3lxTE5TVXlQTDcxMWladnFKbkRiODZIN0NTdXMyeXJrN3BIcTRudUxvTFVob085SVlXWGxiT2VkUFVMUFlheVJQdEdsQWdfNDhSbEp5eFp4UFAtRmpvTFAxMVk4aFFfbEs1UQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Pixel 11系列发布，AI手机新品上市，产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-google-148
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌2026年\"Made by Google\"发布会全程精华12分钟速览"
+  quote: "谷歌2026年\"Made by Google\"发布会全程精华12分钟速览"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMnAtd2pVano1Nk8zUms5RWRqcmZNbHRvcnRyblZiQTFNVnpqdE5aTE1FOXMzYkNaUlhBbmRrNmpCOEJTWFF1NDdZb1FoTEJ4XzhkSy1XekNqN3AzM0t2eW1Rdmp1aEVETlRRYW5BcEQ1RmZ0RDh6Q0ZNd2Q5Vk5JcFZtVFYySGJs?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Made by Google 2026发布会总结，新品集中发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

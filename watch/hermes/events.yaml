@@ -872,3 +872,34 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕二手包包行情评测，涉及品牌产品保值率。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-12-hermes-057
+  date: 2026-08-12
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕Birkin现在多少钱？2025最新公价突破11.5万，配货才是隐形价格？+FAQ"
+  quote: "爱马仕Birkin现在多少钱？2025最新公价突破11.5万，配货才是隐形价格？+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5SMDd4UFFZT3ExZ0ctOFd3S3hBOEFsYzMwZDdwcHZpS3NjT3Y0bE9vYU1vblc4dWYxS2xPQXh4WTk0TEx1V2xWTVYtbHFXd0otWDl1aFZCSHowNlpvczNpelF5MnUtSHhrMUhIRGY0Tm1jQQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕Birkin公价更新，品牌产品定价信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-hermes-058
+  date: 2026-08-12
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Hermès高雄汉神店重开！全球独家展示限量6枚“飞船星空”腕表"
+  quote: "Hermès高雄汉神店重开！全球独家展示限量6枚“飞船星空”腕表"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi_gJBVV95cUxNcVctUVNUMnhLUzlmbERIMGpGVlJXWHkyUC1SUkpzY3FhZ2l4cThfdk9TQkVwZnRKaXhpNTZRU3p1M2l0VVpnak5DTEYteVdIWlFiMVRJdzgxZVhPZFo1ODFWT25Qa25RTk5NbnhGTmNOSUs3TFcxTXpQaUxPWUpRYWlLckVPOWhma1FfamQ5bGNUdS1oUVVJTFJEREtZOWE2TS1uN1lJcnJKMVpUV1hpeWRfbVF3djFiUDIyMjFVbUxVOU9ra1VZQ3RSbU40VjR0emhaM0tRUVlUTXk0S0JZUG8zMlpQbUhrTlpkWHJrSHQwQ0hHT2xmNlZpUEt0UXVIZld0LUhFdE1sTHV4QXZyaTlVOU85Z1Nzc3BaT1RhRnoyMWtqZVN4VUI5YmJZMzNic3NSZWdZWDNhRnlkUG9fOGMxNmJOcEt4QWRROGJfVXV5Q0hWTGRzZXNiUjZEdkJUMk9mblRJV1dXTjNFX2pzVTM5OVM2ODk0X1hQQXF3?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕高雄门店重开及限量产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

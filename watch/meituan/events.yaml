@@ -939,3 +939,34 @@
   source_type: media
   note: "LLM 预分类建议(med):Unitree持股披露，涉及美团股权变动信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-13-meituan-061
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团在京上线“等灯停表”首个正式版本，骑手已在部分路段路测"
+  quote: "美团在京上线“等灯停表”首个正式版本，骑手已在部分路段路测"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rV09SUFlVdURiY1U3bkp6aWItZDU4NTByVjZIckZUZXNGeVVmMkxnSDJYZ2tzeDVrS1pVejZRZ0ozQWlVZWowUWFCMlBGY2FlZDJJRGpHRUltUQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新功能正式版上线，涉及骑手体验与产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-meituan-062
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团(03690.HK)、淘宝闪购及京东外卖率先集中在京落地「红灯停表」"
+  quote: "美团(03690.HK)、淘宝闪购及京东外卖率先集中在京落地「红灯停表」"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxQbFB5TklIeWc3RExuLV9jVmFMU2tZUGZUZGJVWVExR2lYTVVJbWk3SXdhYmxOR2xoS3BjenNuN3ZqekhRSm1JTlNsdmlPLTBRbDJIMWt0NENTT2VTaVVZZ3l5SE9NNnJCRjgyWE5PUGx4N3RfdzVUdEZJemlPYnVTOU1lZGZPU0VNVkFnYl9aOU9tX0Y2cmRqVDhIVVNSQQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):美团等平台联合推进「红灯停表」功能落地。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

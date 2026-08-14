@@ -997,3 +997,124 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数字公布，AI收入同比增长60%，重要业绩指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-13-lenovo-065
+  date: 2026-08-13
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "CN 1Q FY2627 Earnings Announcement_FINAL"
+  quote: "CN 1Q FY2627 Earnings Announcement_FINAL"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxPVnJ4SWZZTldncnJzWnNienoxbzhxdk5rblZERXozaVJHM0N1R3Y4ZzFFV2ZGVjZCQ0lrWldQWVZDWF9mb29GU2l0YkpvMmduMUlnSDVyUjd2ZUFpVUd6Y1l5MGdkRmsydWFpX1dOdGgxeklmSFNYd1JGd2o1VFpTYjUxeFlycVZLd1VkSXZLQm1sTWgyM3BYbzlaekRlWURpUzAtQQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报公告，Q1关键财务数据披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-066
+  date: 2026-08-13
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "FY2026/27 Lenovo Earnings"
+  quote: "FY2026/27 Lenovo Earnings"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE5pN2Y3UU1KTWxicTRrRm1ZanhmeUFNNGdOQkFKQkF2VXI2bS02MXpnclFMbjZUTkV5UHF2dC1rUUpDOTVsa3RNd3JRLUJiSjZ1SDRfWUdYMUxQR3FvT1ZJeEdMbHpEU0NkTTRrRElR?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方财报数据发布，FY2026/27业绩公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-067
+  date: 2026-08-13
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Delivers Strongest Quarter in Group History: Hybrid AI Strategy Powers Growth Momentum"
+  quote: "Lenovo Delivers Strongest Quarter in Group History: Hybrid AI Strategy Powers Growth Momentum"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTFBLdGNUVHVUVUo2WTdvdmYzcy1KN0hMWGE0S2RJMm9NYjV0RkFmV3BEdTZYS2lzZ0FGN3JQSkRkYlozWHVENldJVEljV1ZqckZPcm9VemVFc3VveWdqeFRrV3Z1RDVlUDc1Z1VnczhkSUFaZDJTcGRwOA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Q1历史最强季度业绩，AI战略驱动增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-lenovo-068
+  date: 2026-08-14
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团CFO郑孝明回应存储涨价：联想整体是受益方，终端业务具备定价权"
+  quote: "联想集团CFO郑孝明回应存储涨价：联想整体是受益方，终端业务具备定价权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE96REdLRllLbGdnaHI4RDc5RWp6ME14WVpnbjVmcEMzRTJQczlfbWt5T3pEb0dDZThNdnhybG9KWkc1Zm9QMUNfS05XT19KaEJPQm9Z?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):CFO回应存储涨价，阐述业务定价权和受益地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-lenovo-069
+  date: 2026-08-14
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团CFO郑孝明：服务器业务利润率还有上升空间"
+  quote: "联想集团CFO郑孝明：服务器业务利润率还有上升空间"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE51RzJnM1RRd2lXZnRlQTR6T2daNGpMQlE3Tk5aeEdKVl9NMEYtZTFEXy1iMzB5SWJiTFNCQ0JUblVxVDBZRWVHb09FUFNEVUY4Njlj?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CFO表述服务器业务利润率上升空间，战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-070
+  date: 2026-08-13
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团首季业绩大幅超预期，高盛维持\"买入\""
+  quote: "联想集团首季业绩大幅超预期，高盛维持\"买入\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBDeEstUVJQRzFmclRZMl9MWGQ4MHBPZTBiXzI1MFM2WFg4amR1WmpJejBvWVRGQ2V1dHllNGw1VDJBam4zanpqTnlCbVhya3ByaDFR?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Q1业绩超预期，分析师维持买入评级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-071
+  date: 2026-08-13
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团CFO郑孝明：不担心AI服务器订单可持续性"
+  quote: "联想集团CFO郑孝明：不担心AI服务器订单可持续性"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LU1M5Q0l5c1dId1FlS0ZWRVNwVlRHb1FGNG9kdDFvRWl4Qy1VUTVmZnZzcWxiZlpVUldLdURmY1JCN1k4OWttMGFsZmNqNHZOdm13?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CFO表述AI服务器订单可持续性信心，战略确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-072
+  date: 2026-08-13
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "花旗：联想集团Q1全面强劲超预期，AI驱动结构性增长逻辑进一步强化"
+  quote: "花旗：联想集团Q1全面强劲超预期，AI驱动结构性增长逻辑进一步强化"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1yaTFRMWlCOWlzOG5HTUszOW9iRlNzemhwel9mZFJlTm5UaWROalYtdjk3ekxHOEViWmRZQmZ4b1VBLTBIMV9xLTdab25QcVpjc0Nv?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师评价Q1全面超预期，AI驱动增长逻辑强化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

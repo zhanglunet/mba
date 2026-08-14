@@ -1780,3 +1780,109 @@
   source_type: media
   note: "LLM 预分类建议(high):AWS推出办公AI助手，产品创新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-11-amazon-117
+  date: 2026-08-11
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊 FBM 新规来了！备货时间延长至 2 天，自发货还能这样做 Deal"
+  quote: "亚马逊 FBM 新规来了！备货时间延长至 2 天，自发货还能这样做 Deal"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXZzZBVVlGamtEN1d3QlA5VDVKdGFtdmVId3VQMmY4TDV2X0E2S2plWFdLN0VlUFVMS1hzXzd4ZEYwdFVFaEcyS2cwS185YlJSbXBJYkliOXkzdDcz?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):FBM政策调整，卖家规则变更，影响商户运营。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-amazon-118
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊上线原生向量搜索，定义AI时代的数据库"
+  quote: "亚马逊上线原生向量搜索，定义AI时代的数据库"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBxbExkNnBJWnJ6djB6ZkJJMUtuMndUazcwY2gybHBuOXRVYlZ1OVA4eV9SR3g1bW5SenR2UlZDeXlsdzFFdWtKbUpqNUM2bVVEYzVkTXVlRVRTOVJZ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):数据库新功能发布，AI能力集成，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-amazon-119
+  date: 2026-08-13
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "甲骨文与亚马逊云服务深化合作，加速甲骨文数据库迁移"
+  quote: "甲骨文与亚马逊云服务深化合作，加速甲骨文数据库迁移"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVmEtX09ibWR4MlhuZ3lJQTFoM0FaNVpxaWlSMVNGQWVXV3dhSjZoMkdvRmRzaVBuN3hGYXA3UUIwMTBSb0VQekgtMEt1TVh6OWRNTEQwbEFKQ1RmbTBqbklIcGtKVDJydWJlZDN4cUJWajBpNExYWjlSYWFfS2MxYnlYRktQZ2ZZWUs4YzhTeElnQ3dPV2xCcncwYXFoN0xhWjNPOFVBelFHRURkRXZzR1dPY0tQS0pMQ0hLWUVyVWlKdw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作深化，云服务竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-amazon-120
+  date: 2026-08-13
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊将交还韩国 MMO 游戏《命运方舟》《王权与自由》西方发行运营权"
+  quote: "亚马逊将交还韩国 MMO 游戏《命运方舟》《王权与自由》西方发行运营权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5qOWhYNE9MWTR6STdKR0ozdTBQY0ROc1NKSzRNd0JqSVB1QnBJLWhtUUdZVEJYT1FZRDNMMmVDSDQxeVZibGdEMzVPX3VUa2pmRng2TE5EeDQtcDQzMXA4MEdjY1J0c0pJQ2tKOW00dmRya2dxRWk5SlN1SmlZLTA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):游戏发行权交还，业务调整，战略收缩信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-amazon-121
+  date: 2026-08-12
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI安全模型上线亚马逊平台，500亿美元投资已完成"
+  quote: "OpenAI安全模型上线亚马逊平台，500亿美元投资已完成"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFB2YlMyWnJwS0pQMEwwS05vel9lVVlRa2g3RER3WEZQSmNuYUc3SVFLaXJPUFhQNjQtcGd6NW9KZW1uX2VvQ1pkdDdRa0dHQ3lkYlp3?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI模型上线AWS，500亿投资完成，战略合作里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-amazon-122
+  date: 2026-08-11
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Mamdani剑指亚马逊、联邦快递……推动直接雇佣配送员- 阿视亚经济"
+  quote: "Mamdani剑指亚马逊、联邦快递……推动直接雇佣配送员- 阿视亚经济"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE5kblRPWkZrVUczRTkyTkp5ckVvS2ZEaDF2M0t1SVlCYnZmRGhJeDJxcGVfQmY4LTNKMmgzaFYxdDBxbGF0VGRaYzRXRWNjb1UwUlBnR2dDQTdnTEVsVmcydEc3Nko?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及亚马逊配送模式的外部批评,但信息不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-amazon-123
+  date: 2026-08-12
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "接入 Amazon Bedrock 新一代推理引擎 Mantle：用 LiteLLM 网关统一调用 GPT-5.6 与 Claude"
+  quote: "接入 Amazon Bedrock 新一代推理引擎 Mantle：用 LiteLLM 网关统一调用 GPT-5.6 与 Claude"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxPakhJNHgtZGtCZGpvZFhHQ0VrVTNqUlJfaUVfcFpRTFhVd0NzdGFhWUpmenJ4dm5lV2ItOGpDSXNNTy1ETmlEUlVTYm9ic2tqeGM1WjZCd2pmX3hsd2NsUjBQdDhoRzFTMUc4WE0yU1RjaUNhYnhuOHU4ZHdpdWZoWEt0U0pzbUpHUFlEeUg4ZjdZWjV3TWd6bw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):亚马逊Bedrock接入新推理引擎,产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

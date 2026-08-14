@@ -1898,3 +1898,79 @@
   source_type: media
   note: "LLM 预分类建议(high):融资金额明确（710万亿韩元≈约5000亿美元级别），重大融资完成，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-11-nvidia-125
+  date: 2026-08-11
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "深度 | Rubin Ultra 双芯重构：CoWoS-L 翘曲如何逼 NVIDIA 放弃 1TB 旗舰"
+  quote: "深度 | Rubin Ultra 双芯重构：CoWoS-L 翘曲如何逼 NVIDIA 放弃 1TB 旗舰"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE00al91TXQ2bE0tZTJSQ1dXMmdtejhEY0RDQTFRRElPQ0k3OFNFVmlWTDhDdi1JRjl4c1VTQ0J5S05QeEo3YTNDLUtZdVR6ZzdyNFJQN2VCRjhveF84?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):涉及旗舰产品设计调整，竞争态势分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-nvidia-126
+  date: 2026-08-12
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "砸3.37万亿元！英伟达拉上华尔街六大金主，把GPU炒成硬通货"
+  quote: "砸3.37万亿元！英伟达拉上华尔街六大金主，把GPU炒成硬通货"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9aWGp6OGI2R3FJWEVVS0NfQ3VxZVJER29FSzFaLWh0MlozWHN5TE5IcFBuaWpHQjVZU2lIbWh6anoxVXRWRWUtZVl1Q2VCVGF1VTlBT2pmUy1wSVB6?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):融资传言，但金额未确认，需验证官方。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-nvidia-127
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "GPU开始金融化！黄仁勋拉上华尔街搞5000亿美元融资"
+  quote: "GPU开始金融化！黄仁勋拉上华尔街搞5000亿美元融资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wMGpUN3YwdG1GVzNhUjhVdldsSkhEQnlYaWZ4N2J3R0pRZ1A5M2JfQXlVZGljd2txM3MwZXNjdTBTNmlQMVJmLU9yQWh0OEdMYlV4VmFlSzJ1a0FF?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):融资传言，金额未确认，标题党风格。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-128
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "LG集团与英伟达达成战略合，拟明年一季度公开双足人形机器人"
+  quote: "LG集团与英伟达达成战略合，拟明年一季度公开双足人形机器人"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNSTBaY3J3ajBKYVdfbnp5RXNnalpVeUtlaDlYM2NTLVlDTEdRdmxEekZZODBfeW5mQVVISDV6MmRSS3N6QmNudDJHeTIzLUZfd21OR2p0WUU5czRkZG1uMG1qb2E3V2c3R2lEUGEyTDNxYmJ0bnV2UmFnTXFUNjdqRkVaYXR0XzJNY1dFQQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作公告，涉及新产品发布计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-nvidia-129
+  date: 2026-08-13
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "芯片2年过时论破产！6年前的NVIDIA A100还在赚钱"
+  quote: "芯片2年过时论破产！6年前的NVIDIA A100还在赚钱"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5vNi1KNVB2cjRoaXAtR0pXcjJTb0JWQ3FkRTViM2JiTE4tdkRvNTdKLVdfUmw5UEdNdlluOGZiXzV4cWhHR21nanlIRXZTeXdIRWlweWVRdHA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品生命周期/商业模式分析，有实质信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

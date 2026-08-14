@@ -2535,3 +2535,124 @@
   source_type: media
   note: "LLM 预分类建议(high):水印功能引发用户担忧，产品政策争议事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-11-anthropic-166
+  date: 2026-08-11
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic宣布Claude生成内容将嵌入隐形水印，复制粘贴后仍可追踪"
+  quote: "Anthropic宣布Claude生成内容将嵌入隐形水印，复制粘贴后仍可追踪"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE51TGR6cWFua2JEYjRZZHpMREh3S2dGRTBFeFJaZGU1VDIzem10ek5RcHlfVHZJbS1SOVJNdThjeE02WVFlaUxhd3lhN0xiaDZLOGxlTndvT05NMzFm?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):Claude输出内容添加隐形水印，涉及内容追踪机制。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-167
+  date: 2026-08-11
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Claude Opus 5正式发布：SWE-Bench 97%登顶，成本减半，已集成四大平台——Anthropic的\"窗口期狙击\""
+  quote: "Claude Opus 5正式发布：SWE-Bench 97%登顶，成本减半，已集成四大平台——Anthropic的\"窗口期狙击\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFAtaXI3bzdudDF4QVJIOWdfcjFGX01Ib2lYQllYeXZfM05OVnJZbEFSY2lRZDNoeWdxRlRVU25pNlczdmRfWi02V0JrV0NoUkxfR0Q1M0xyR2tfcWdJ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Claude Opus 5正式发布，旗舰模型重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-anthropic-168
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic为Claude输出内容添加水印，部分用户感到不满-AI应用"
+  quote: "Anthropic为Claude输出内容添加水印，部分用户感到不满-AI应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE1lNExLVDBuOHdpaXc4dFVycG5iSW04akRfajF4OXBXZEF2ZVg5czlvTDJrYWJGQmFCcnV2UWFBUjNaLXZPVmd6dVNrV3NYdlNFaVFwVUQyRHJVRkVpTWZuUG95dW5sdmlkVDV6WWlVSQ?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude文本水印功能引发用户反馈，产品政策争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-anthropic-169
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "部分 Claude 模型将添加“文本水印”，Anthropic 回应各界关切|IT之家|马斯克|谷歌|辛诺夫斯基|数字_手机新浪网"
+  quote: "部分 Claude 模型将添加“文本水印”，Anthropic 回应各界关切|IT之家|马斯克|谷歌|辛诺夫斯基|数字_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwJBVV95cUxPcmVZUFBzeGZxd3FGYllQbDh6WHhJaUFhS3d2aTN1RjkySTRCQ1ZLVEl3ZmlyMkU5cXduMlhXWTQzM0ZVdGQwUmFHR0hYY1MtM2k4LVA0Z1VLTm1aVmNoTE5hdzdUd2FLcXpJVjlfNkRybWpLZGtLSjFkUGN3dUcxZmtUYnlhZVBWU2toZl9lb1JCSnFpS3I5aGo4T0xwMEZZQVBSSm9wSHJqek11ZFYtSXR2WFdTZW8xYkpXRHhkSF9PN3NDa2ExWnNEUnFUb0c3VFBEVTFuaUdTeFNlWWNTVDJsbkdzemVMRlZvaVZSdjlud3hDZXZuOElXQi1TYXJRWWZjaEpZN3Q2TXdEd1M4?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude模型添加文本水印，官方回应用户关切。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-anthropic-170
+  date: 2026-08-13
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "IPO前大动作！Anthropic拟60亿美元收购芯片优化公司Decart AI"
+  quote: "IPO前大动作！Anthropic拟60亿美元收购芯片优化公司Decart AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5FdW1EbkVKVHBiZVZEMkpLeUhicjR6dUVRMGpXclVJOThRRnpta2Yzd05Tc0VvOGg3czJEeUVTV3gwbTM4UHFrelNUaG9xZjJVa1dF?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO前60亿美元收购Decart AI，重大并购交易。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-anthropic-171
+  date: 2026-08-13
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic将为AI生成内容添加水印以符合欧盟法规"
+  quote: "Anthropic将为AI生成内容添加水印以符合欧盟法规"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFA0VDJaS2VzTTBtS0NQWUVhZE9MamFRenFHZ3N4Zy1wSjB1RDFEam5FSjhyUmhNeGRxd1NEc29uMTNSNmFiQWo4TA?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能更新应对监管要求，涉及合规策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-anthropic-172
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic升级Chrome端Claude 更名为Claude Cowork"
+  quote: "Anthropic升级Chrome端Claude 更名为Claude Cowork"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCU2p1RXFQWkpsVUtGM0dmYlZmZlMtM25QNVMtVHVSSVJFQUJCLUFEZWpzZlBCOHNUcUJwQmhZdnNZQm5WOEY4M05RT3c5aGNZbE1SVkNn?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品Claude重大功能升级与品牌更名。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-11-anthropic-173
+  date: 2026-08-11
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic取消Claude Sonnet 5加价计划 初始定价永久保留"
+  quote: "Anthropic取消Claude Sonnet 5加价计划 初始定价永久保留"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBkMWRLRndZcGhtdUdsQjBFeTVUdzRNRG1lVmZzWUI5bEdFcWZNb1F0TC1pRUZZTnF5ZXl0UDN1ZU9jNGR5VVNCOWs5ajdFdw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):产品定价策略调整，涉及商业决策与用户权益。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

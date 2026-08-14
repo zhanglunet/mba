@@ -518,3 +518,19 @@
   source_type: media
   note: "LLM 预分类建议(high):智谱纳入MSCI中国旗舰指数，资本市场认可信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-14-zhipu-032
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "GLM-5.3 版本踪迹浮现：预计近期发布，多模态能力或仍缺席"
+  quote: "GLM-5.3 版本踪迹浮现：预计近期发布，多模态能力或仍缺席"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE1iRXZOOUptTVkzdElvemRCb2VmZjBZUHdocWRJSjVEamxiV1Z0TS1jblg2Y2txVHE1YnJ4Vlo5RkZqUmREUmVNNVRTbFUwTzhZOWtjb2ZHek5UVXlyRzRmWWVtYw?oc=5
+  fetched_at: "2026-08-14T04:19:15Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):竞品版本预期，对智谱品牌舆情有参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
