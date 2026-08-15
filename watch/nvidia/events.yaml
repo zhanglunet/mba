@@ -1974,3 +1974,154 @@
   source_type: media
   note: "LLM 预分类建议(high):产品生命周期/商业模式分析，有实质信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-08-13-nvidia-130
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Class Is in Session: GeForce NOW Levels Up Linux, Chromebooks and More"
+  quote: "Class Is in Session: GeForce NOW Levels Up Linux, Chromebooks and More"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTFBKZXFDc3RJUmkxVkNWRzI0VlJ1QWdsRVdfQ1dmQ01NRndZamwtWlU1UDRveExYMmVtdFNUak45SDM1dVBscjViYkZNVUdVX3FtNTNReGxkOXAwcTMwNTZHTnhZS044eWpPSnFRZ1BkSFR6V2w5OWVn?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: official
+  note: "LLM 预分类建议(high):GeForce NOW功能扩展，官方产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-131
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop L"
+  quote: "Universitas Gadjah Mada, Indosat and NVIDIA Open Indonesia’s First University AI Center to Develop L"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE1yUVBQNWE0YUdMcXlRVHE0VjMxVHh1UU1GSXV1UjAtV1RuOURrcHF2ck9RMVZvc1BmbEdzWFYtY0pESk5XRS0yX1Z5NEZtcjRuTVVKUU5DbVZud1NXckxmSkRoQlJ2WHlFSVZTbWJncjh3TjkwSzI4a3Jn?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):印尼首个大学AI中心合作，官方战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-nvidia-132
+  date: 2026-08-12
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA CEO Tops Glassdoor’s 2026 List of Best CEOs"
+  quote: "NVIDIA CEO Tops Glassdoor’s 2026 List of Best CEOs"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE5YblNtdkFpTEFWVkJzTmZySENOMW5TSEN2R2VsZmR0amprdUVtSXY5UWhyX1JkVWpDaXl3UW5PTk1SM3hYQkQtRTZDcEpjamxMcVZKMllOQmpoNGdKS1V1MWFaZnItRGRFczFUREFseGtxT0JD?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [identity]
+  source_type: official
+  note: "LLM 预分类建议(high):CEO获Glassdoor最佳CEO榜单，品牌声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-133
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "使用 NVIDIA Alpamayo 2 Super 生成轨迹、推理路径和自动标注"
+  quote: "使用 NVIDIA Alpamayo 2 Super 生成轨迹、推理路径和自动标注"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjRGtNcVdMc1FlVVdqWXZhY2tJUXk0ekhBVW04QjRpa1pMdWR0Qm5CU1JUX1lXN3UzM2Etdk1QSUNkdnJ5XzJLRjJyc3pDQ1RyNG5WYi1OZWdBdHRB?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(med):Alpamayo 2 Super产品功能介绍，技术更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-nvidia-134
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Vera 存储基准测试：加速 AI 原生存储的加密、压缩、完整性检查和恢复"
+  quote: "NVIDIA Vera 存储基准测试：加速 AI 原生存储的加密、压缩、完整性检查和恢复"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE14OVlvSGtuSWtlZzRpMGN2YjhnZDlMYzJHVFBkYkpYck9SSkxqbVBYUmE4QVRxYV9tU1Q2RDc2dURhOE9Ob3ViclcwSHdyUmtEQWY0M001NFIxT2VQ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(med):Vera存储基准测试发布，技术方案展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-nvidia-135
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达造万亿参数模型，为整座AI工厂促销"
+  quote: "英伟达造万亿参数模型，为整座AI工厂促销"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5HSExEelR6V0tQNHRZNFpwRkNEaTdlY0FUY3Y0ZVJCalJxTmdERDhBMGNFakMtOERLMTRnSEhXWDFYTllxYjQ0LW81YUcySl80Vkw5Mkg0Y29nREp3?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):万亿参数模型发布，重大模型里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-136
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "LG、NVIDIA签署谅解备忘录，双方多领域AI合作转入执行阶段"
+  quote: "LG、NVIDIA签署谅解备忘录，双方多领域AI合作转入执行阶段"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE5RNmxrZjcxU3d2QndyWEhMUkFZZVBxdXBoa05wVWFZQ2FidHFmN3BYTjZvTkRzN0MtYTZhMUNOV0JjaEhxeGNTc0NkcDNaYTgxeTB1ZVFnUzNCVWZ6OTJwd0dsaVZqNDJjLXhMemRXQi1TekFEZUg2X1ROejVJdw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):LG与英伟达AI合作进入执行阶段，战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-137
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达弃用交流电力推800V直流供电- nVIDIA"
+  quote: "英伟达弃用交流电力推800V直流供电- nVIDIA"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zY3NqZ2VWdEV3X0JzVVI0Rm9tNkJPZk1fcm1xdDRwV0toRkttZ2JfZlUwSDJJc0hLd3BxS0lhWnpIWDhQWXZjYmpOTkVsdkI0blczQkZwdEVfM0ZGQ0RQRw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):800V直流供电技术方案，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-138
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "LG与英伟达签署协议：2027年推出搭载英伟达芯片的人形机器人"
+  quote: "LG与英伟达签署协议：2027年推出搭载英伟达芯片的人形机器人"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxNbkM1OE50ai1uRGNjc0RnZC11bFJhYnZHMGJ1S2JaaGQ0bllzQ1hpTXl6by1jak5yVDZvR0xSc3gzSnMtdVhGRFV0TmhSRmZWQ2FUWFhYZ1FVbU5FNEp2N29ic0h0LWtOX1J2eEpqbk9lUmx4bVQyNUNOeGZTdmE2UGVRUFo1VklTLUxQTEc5ZDd6eDRNZ2VLakFBbkhDeVg3VXJyMA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):LG与英伟达人形机器人合作协议，战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-nvidia-139
+  date: 2026-08-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达与本地AI 社区携手推动开源模型与智能体发展-人工智能"
+  quote: "英伟达与本地AI 社区携手推动开源模型与智能体发展-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1BSlBka1RKMzQ2OWlYTDVGSGNVajVqa0REQ2ZFTTNONXdBb0ZxQWhSYkhPVnBOYi1EX0ZJWjJTOWtrZTRKRXdQSTVJcVhmYXg4dV9sVnRsT2hxUzhwV1E?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):开源模型与智能体合作，生态建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

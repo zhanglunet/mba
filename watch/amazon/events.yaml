@@ -1886,3 +1886,94 @@
   source_type: media
   note: "LLM 预分类建议(med):亚马逊Bedrock接入新推理引擎,产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-14-amazon-124
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "海豚社电商资讯：亚马逊澳大利亚加速当日达服务 最快5小时收货"
+  quote: "海豚社电商资讯：亚马逊澳大利亚加速当日达服务 最快5小时收货"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9GYzhvNTVfTzQ0cFM4QkwyRGQzdzBHbk9YcG1YRmNCQU1WTE1pejZ3WU53UEQtLWx2UG85NjhpY2tqOEJGQ0U4dF9rWDR2SjV3aU9Ick1xOXp4YkRJ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):澳洲当日达服务加速，物流服务升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-amazon-125
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "诺和诺德与亚马逊云科技达成战略合作，借助人工智能加速药物研发"
+  quote: "诺和诺德与亚马逊云科技达成战略合作，借助人工智能加速药物研发"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1McDBMdDcyejJGdDFZUEdQREFnWk5hZ3BRd2ZMWEZmWUR3amNEc1FoYmxZQms4UHNxRUhQV0pWN0JlTW0yU05pTG9CNFZtWUZ0Z2V6Q2d0UVEyd292MTNVR0VQZzZXaFlXRm50ZXF5cnI?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS与诺和诺德战略合作，涉及AI药物研发。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-amazon-126
+  date: 2026-08-14
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊SP广告自动扩站外，8月10日起生效！"
+  quote: "亚马逊SP广告自动扩站外，8月10日起生效！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE41OGdPSkZNZy16MnNGWF9GWmR4dDBYS3RZRk5fOEYtbmZaRml3TmF6MmZSTnVwVG5TM2Nub0l6Q2pIcDFUajN6WkVrUWg?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊广告功能更新，8月生效。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-amazon-127
+  date: 2026-08-14
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊公主魔杖召回，存灼伤风险！"
+  quote: "亚马逊公主魔杖召回，存灼伤风险！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxNY2lLQU0yMDBiUGtsTzFWeldxX19jd2t6VkZnMUlUSUhZV1Z6UUZMWWFsQ1ZBXzBHWFM5OC1hZVlHbUp3ZVROSF96dV8xSWdHUC1sQXVEMDJ3VlU3Q3ZLalBwRDA2Szc4eWFHOG5JamlBQmQ1VHF2dE5VNDdHZEx3Y3JtTlVERDdRVDBEWUw5SFJOa1BwOFVQUEtlX3dldzRNRzhoZHVB?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品安全召回事件，存灼伤风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-amazon-128
+  date: 2026-08-14
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊为Luna新增三款免费游戏"
+  quote: "亚马逊为Luna新增三款免费游戏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE13MVRHbmU4ZWRxYVZnd0NabldzbTBhTkcybVBscTUtZExZSktyWTh3NTFjOXE4NENkcUZCejN6VjFPNzVqYjlHUHNVcmRfOEV2V2stZ3k0UW9YWUluMUhTT0Z3?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):Luna游戏服务内容更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-amazon-129
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊交还韩国网游《王权与自由》《命运方舟》运营"
+  quote: "亚马逊交还韩国网游《王权与自由》《命运方舟》运营"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE5wdWhTRGtVUUV4eUR2M014d0RsZWV4Q3FyUVd1NFZDV29sQVBzM2lHeFIyYjFmWU91eXkwcWdzX2RKTU9fQzlvSG9vd0Y1WHBnc3pfempBcjBvTUJiMHNnREVOYmQ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊游戏运营权交还，业务调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

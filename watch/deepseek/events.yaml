@@ -1767,3 +1767,49 @@
   source_type: media
   note: "LLM 预分类建议(high):产品正式版上线+涨价双重信息，显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-14-deepseek-116
+  date: 2026-08-14
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "浙产大模型要改变全球AI竞争格局？"
+  quote: "浙产大模型要改变全球AI竞争格局？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTFAzVjk0dldBTzFXZmhuOFhveE02dGFwRGotZERjcmxmNE1Lc2xaaDU4dTVIZWs1RXFQQWYwTkhuRHNydXlfSHE0U0ZyVTVaNHV5SEo2OWVBdHpGS1B1LU51Y1A5UEtMMVQ4RFFsb0JINWUzR1podkE?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):浙产大模型竞争力评述，缺乏具体事实支撑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-deepseek-117
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "像玩乐高一样拼插件，DeepSeek Harness能带来哪些改变？"
+  quote: "像玩乐高一样拼插件，DeepSeek Harness能带来哪些改变？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5oS3E1dGdlVHZFV3ZEOFZfTVhqbF9YaXJfcDZJSWU4X3VZT1ZSOEdNY283WEJ5NEJFUV95cVBCMzU5UmExdGRkTGtxYlNHZHV3dGVlRVhHMWg?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):DeepSeek Harness产品特性介绍，无重大版本发布确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-deepseek-118
+  date: 2026-08-13
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek API服务，8月17日起调价"
+  quote: "DeepSeek API服务，8月17日起调价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTFBTZ3Z4UFB6dTktVlRva3RqZkZMOWlXVWNXWmtFa01KejhmSXptY3pEV3ZRQ1BOWHZzenFxcFd6OGd4SUZjM01OalJwQ0dvSEhv?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):API调价公告，影响用户成本，具体事实明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

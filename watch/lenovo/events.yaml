@@ -1118,3 +1118,109 @@
   source_type: media
   note: "LLM 预分类建议(high):分析师评价Q1全面超预期，AI驱动增长逻辑强化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-13-lenovo-073
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Q1 2026/27 Key Achievements and Milestones (Infographic)"
+  quote: "Q1 2026/27 Key Achievements and Milestones (Infographic)"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxQMm5ydEFXUHFpa1ZwZXRQS1BLblZwMU1NWU5OUzdUUzBSRlBtdzdqVy1RMTkxWFBtbHlkN0tpZzJ0cHhXT2k2NF9qYlZ0NUN5c2VuVE9KNE1YQmFsd3M2RWIzZzVKV2FxeFV5QUpmV0JIQm5ZVnVSNGxMa01OY3JBbnlERUdHQQ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):Q1财季成绩公布，官方里程碑总结，含关键业绩数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-lenovo-074
+  date: 2026-08-14
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Lenovo CFO Winston Cheng on Bloomberg: Business Strategy, AI Demand (August 14, 2026)"
+  quote: "Lenovo CFO Winston Cheng on Bloomberg: Business Strategy, AI Demand (August 14, 2026)"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaE9YaEpvalFBSTJRdEVlczFqWlhFd194M1dKOGw1QTc0YUllUHdhNl9RdkhtVkxES2ZNeUg4eGx0dmtDZ2tqaXFCTjdSWHUwYTM1VDc4SjN5RVpNb00yUVl3dkNCT05EdjBneWlocGR5T3JJNTVLYjlESjZVVE1sRTRuMW1jNmF5bHlGYmZ5MjN3OElNUG5rZlhKbXBwdjNVTlA3LXM0R2o?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):CFO公开发言，战略与AI需求阐述，高管观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-075
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "股价暴涨20%、净利飙升176%！联想靠AI闷声发大财"
+  quote: "股价暴涨20%、净利飙升176%！联想靠AI闷声发大财"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1JOWJJWnQ0VC1mMWJ3YTB2Ump2RFlYUVRGR0dLYm91c2VueUxKTUZHZUVkcmtNWmczLXFTUVFZZy1GOGplUkNqSWpVNmYyaGN1ZlYwcDlDa1NaUTc2?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):股价涨幅、净利增长数据，AI业务驱动财务表现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-076
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团IDG营收逆势大增27% PC市占率领先优势连续10个季度扩大"
+  quote: "联想集团IDG营收逆势大增27% PC市占率领先优势连续10个季度扩大"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jeE9mRGVkZmhPT3NtSGhUUU12Tm02TTJwSDh1THJnWGtwZVQxYlVvZThFTC1ocGIwWFlRQkZHRW1UUE5GVE1jSjJSZTNGZzE4d0VZ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):IDG营收增长27%、市占率连续扩大，具体业务数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-077
+  date: 2026-08-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团AI相关业务营收单季增长60%！"
+  quote: "联想集团AI相关业务营收单季增长60%！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rRS1hNjduUzlCUHZTSlFfdklCeXdvUVpSRmpqTTRXNjl2SnZXMmZRenZqOVQtSzhVUXBYRjMyanpIWVBNdjU3Y3cxSG1XX1lBWUVj?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AI业务单季增长60%，核心战略业务增速数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-078
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "杨元庆：世界杯见证联想集团从PC领导者向AI引领者跃迁"
+  quote: "杨元庆：世界杯见证联想集团从PC领导者向AI引领者跃迁"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6SS1VVHFCT2RqSjRzaDN0VjJjZC1ZWXJZSXFsUDNOYllTVXJmTmh5cHpETGtUZklFQWcxaDdBajFyYlplbjRFdndtTWdBOGZSTXIw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO战略表述，PC向AI转型定位，高管观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-079
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "黄仁勋年初预言\"今年属于联想\"，杨元庆最新回应：多年投入兑现的结果"
+  quote: "黄仁勋年初预言\"今年属于联想\"，杨元庆最新回应：多年投入兑现的结果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1CM1RFZkhIWjVubWFvUXlFMFZheGdJaXBXQUFWQkxaZnFSQlR5aXJDTEYzSldJTmdHRGdOWWRFTC1JZEZBOVFHN1RzNnp3RGk5QVRn?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO回应黄仁勋预言，战略投入兑现，高管观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1962,3 +1962,64 @@
   source_type: media
   note: "LLM 预分类建议(high):战略合作扩展，365 Copilot商业化进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-13-microsoft-129
+  date: 2026-08-13
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软8月一次性修复421个漏洞，1个已在野利用，别只按评级排队"
+  quote: "微软8月一次性修复421个漏洞，1个已在野利用，别只按评级排队"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4dXByZjJMSEFwS2V1a2FOclNzUU5IN1ozV05QUGpGcEZ6OTBQcUVjcHpwcnd2eF9OZlNNX256aWh5c0Z1MW1DNDd1bi1lV283UFpmdUNnS05UTmot?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):大规模漏洞修复+在野利用，安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-microsoft-130
+  date: 2026-08-15
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软 Copilot Notebooks 扩展支持 Markdown，强化 AI 资料分析"
+  quote: "微软 Copilot Notebooks 扩展支持 Markdown，强化 AI 资料分析"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigJBVV95cUxORVgxZlBDajctX0V1THFCLWVsdVFKWHgzWDJzcDg0cU93b3l2b0N5LXR6WW9LVTFyeXpmSGtGREVPVS01Q0FYTm1udzlTYU5rT05XTmRLQzAxWVk2WGhWckRISk1vcVlheFYxa0lZUlhqSm5WeXRkeFU5SnN2dW54ei1CbVRPSzlhR19Va2NwdWJEenQ3cWNJaUtvZnRRQ2xPWmxCYXRmMjlmd0pyM2xyb2xJNXZGLTdiQ1ZHNWF0aGZoTEpkenUyUGZFRWdBVW5QZEpMcTlCTkpONTlfQnZ2ZDRMYkFFR2Vidk5lb0ZtSFJsMGtlaEprUzVtMktseXhOMC1mU2M3ZlRCZw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Copilot Notebooks功能扩展，产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-microsoft-131
+  date: 2026-08-14
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软将Copilot与Microsoft 365 Copilot合并为统一应用，同时停用3项功能"
+  quote: "微软将Copilot与Microsoft 365 Copilot合并为统一应用，同时停用3项功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFBqWGRvaGdLNlp1OHRZVDJ5YldobS1MSGw1S1VHN3BqQVJnR2k4NlRNUVJXVGt1TUZneFBtV3VBLU1weUU1MjRYVXUwZVdSc0VGeHc?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Copilot应用合并+功能停用，产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-microsoft-132
+  date: 2026-08-14
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "2026年8月“补丁星期二”：微软修复了420多个漏洞"
+  quote: "2026年8月“补丁星期二”：微软修复了420多个漏洞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFBwRjhmSkkyYnNOd2dzWThycWhUQVEzeDdwX1pld1JRakJuUGxITlU5bnJXb0VIQzhOVndjT0U4UjNWNEtjNl9UM3hYX2dWNjFGeEZQd0QzaXV1SzVkVi1JREwwUGJLYVhNZ2c?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):月度补丁发布，常规安全维护。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

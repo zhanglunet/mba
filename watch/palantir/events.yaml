@@ -328,3 +328,19 @@
   source_type: media
   note: "LLM 预分类建议(high):产品应用案例，军事领域业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-14-palantir-022
+  date: 2026-08-14
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Palantir财报炸了。 营收增长93%。 盘后股价一度上涨13%。 真..."
+  quote: "Palantir财报炸了。 营收增长93%。 盘后股价一度上涨13%。 真..."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1EWVdqczlEY2psVEN1U2RmbjBlV0hVRHQxbDhXZXV5T252UjFrS0gyd1p6Q2JtRVd4c0lUMXI4SVhCT2hwZkZnU2xZb3pRTXlFczZHajU4M2tvU3V1NmZYc1haUGk?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):帕兰提尔财报公布，营收增长93%，关键财务数据，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

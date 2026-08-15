@@ -2511,3 +2511,109 @@
   source_type: media
   note: "LLM 预分类建议(med):IPO融资预期信号，但未确认具体融资完成，属显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-15-openai-163
+  date: 2026-08-15
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI被曝有望实现超400亿美元年化收入 对手Anthropic正筹备上市"
+  quote: "OpenAI被曝有望实现超400亿美元年化收入 对手Anthropic正筹备上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPMkVtMUkxaUQ2LWF1STVOby0teXRyQ2tJZk1LV2NqenBhZE5zd3dMLVRKX2loUExGR3l4MUhZZFE1S2YzVUxBMlFTX3NUV1Q4cmsxNFlfUU9ZSFg2NlVpbHljMXlldFVaUE9pYl9ndDlHX3BuVWQ2RXozNC02bmhUZkxVYlotUGp0TWI3TlV3c0pieENUWEN4dE9CZ3VhSWt1Y1VKeVlCOA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):OpenAI年化收入400亿美元预期，重要财务数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-openai-164
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI被曝ARR破2000亿，官宣新任首席营收官"
+  quote: "OpenAI被曝ARR破2000亿，官宣新任首席营收官"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiRkFVX3lxTFA4NWNFNkJuc01UMThsOGRHbGI1OUh4cjVpYnFfOEJwRVd6UFo3d0tRdDdRbjU0LWdRcVJTa2FGR1JjNGNMTVE?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ARR破2000亿+高管任命，显示商业进展，但未达P0级重大版本/融资完成标准。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-openai-165
+  date: 2026-08-14
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "知情人士：英伟达缩减为OpenAI数据中心提供2500亿美元担保的计划"
+  quote: "知情人士：英伟达缩减为OpenAI数据中心提供2500亿美元担保的计划"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxNTDBabmxSOXBtamhDTThPWW9SVHBsV2Z6bG5NWHRwMDY1ZDdTNEpZSlZWc2JCN0R1M21Rc1FGeVZzZlJlalNIUGFnSWEzV09Kakk1WENrUk1YWFBGSmVydlgydDBYdGJzNGtESE1KR0tabUVfejMtZVgxSTZxRWxiYmE3MkhXclk?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资计划调整，涉及数据中心战略，显著但未最终确定。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-openai-166
+  date: 2026-08-14
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "297天后回收Atlas，OpenAI产品战略之变"
+  quote: "297天后回收Atlas，OpenAI产品战略之变"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9kSDFrZjJuYklCRnZKRVZXSV9tNlk1M3hDOEhiYTRDN2QtdkNUVXpwM3F2Ynd4bHpIR3J1WDlhVFBHdl9UUmpZSUhERVNrSkNDbTFR?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品策略调整（Atlas回收），一般性产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-openai-167
+  date: 2026-08-15
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苦等两年！ChatGPT杀入Linux，Codex上手能改你的代码"
+  quote: "苦等两年！ChatGPT杀入Linux，Codex上手能改你的代码"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE8yV1JXd0ZBNG80em1ZNzF3QlF6U1BVWG03Vy04Mk1xZGY5MTYydVgzdmlJdndFMXUtc1RwdGx6WEpVdHJ4eW9mUA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ChatGPT功能扩展（Linux/Codex），常规产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-openai-168
+  date: 2026-08-14
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI亲手按下了暂停键：当AI学会自己找漏洞，谁来看住它？"
+  quote: "OpenAI亲手按下了暂停键：当AI学会自己找漏洞，谁来看住它？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5uY2VWOXpRN2NaUnRTMU5qR05hZVQ5Vl90Y1R1bXlucEc5dXBNLWhmOHlkRXFXdWNSZFh3cWFFTGFDRmRvZDZKbjZ2Mkc0NjFUbG9BTWlUUUpxb1hab0lYSg?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI安全/漏洞发现，涉及风险管理，但标题党成分较重。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-openai-169
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI IPO前夕高管接连出走，8520亿美元估值面临治理稳定性考验"
+  quote: "OpenAI IPO前夕高管接连出走，8520亿美元估值面临治理稳定性考验"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE1yVWVUM19HOHZTQnRMQ0JKY0ViZktwT3pjbFJnRUNpUGhydlRVeFZCZUI4ZGkxT0lxUWRqN2xzSV9JOTE1VGR3S0xaQWhZM0F1dWFqRDE3RG9nVFRpS1VaMV9MR21OZw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):高管离职+IPO前夕，治理稳定性风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2316,3 +2316,94 @@
   source_type: media
   note: "LLM 预分类建议(med):SpaceX拟收购光模块公司，并购意向披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-14-spacex-152
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达首度披露SpaceX持仓，借道xAI间接持有约210亿美元"
+  quote: "英伟达首度披露SpaceX持仓，借道xAI间接持有约210亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBsVlp5bWhPQ2tycVNsMm9aVXI1V0xKR3JoZ1c5QUNrRlk4VnU5UHBKdWJkTUJXZ291ZGJEN0Q3MVhqWGdRQTFVYnE1cURpU2padnRV?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达披露持仓SpaceX210亿美元，反映投资方重大财务动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-spacex-153
+  date: 2026-08-14
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX完成600亿美元收购Cursor合并生效"
+  quote: "SpaceX完成600亿美元收购Cursor合并生效"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE16LVgyOVZQWHhfaERtOVZpZGN0cmlicjl6Nnd6ZjBRdEt6ZkR5ME8wQmJhQldQZUdVZ0FnNDVrMUl1ZHV4STViYkU3R3ZYWUw3bUZZaEQ0SGRRQ1pLWm1ldkl3?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):600亿美元收购Cursor完成，重大并购事件，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-spacex-154
+  date: 2026-08-15
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌对SpaceX投资10年翻了100倍，达到940亿美元"
+  quote: "谷歌对SpaceX投资10年翻了100倍，达到940亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1DalhUc1FoSnp0VGdINDRzbjdJR1JJWFNlaHVPVGdCVXJKbUIyanFjNjB0WDRhLWtjbDJiUERDZWtBN1BtbWU1NFQxQUI?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):谷歌投资SpaceX10年增长100倍至940亿，重大投资数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-spacex-155
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达披露持有210亿美元的SpaceX股份"
+  quote: "英伟达披露持有210亿美元的SpaceX股份"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBJV0w3Q3JRdXFRQ0RRMURTVW9jWlNvQmx2R0dEd2ZNZFZsTDZFQ3F1U1Itd1BRN3hrWEwxcVdkMDF5WFhBa0djVF95cDVtQ0pDS0pzSDcxVEdNejdCa2IxbA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达持仓210亿美元SpaceX股份披露，重要财务信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-spacex-156
+  date: 2026-08-15
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "13F追踪 | 英伟达Q2持仓新增SpaceX，成第二大持仓"
+  quote: "13F追踪 | 英伟达Q2持仓新增SpaceX，成第二大持仓"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxNU2tyZEF4eFNCVHhTU29ldWRYYVBQOVJWZFgyVE11YmItWGZRbU93V1NiYjdKc1JnUTRtT3lVNW5lbllhR013NldvRzlNYk1oQ2Uydk5XX2JpczVvbWl3enRlZFI5NU5WTTlUMnpOMTBJNXNic2ZfX09xX2xrU25rOWRfeFF4azg0WlJfZDFTdDQtOVRnV0c3YVVTMEhJU3E1LUdzZmgtLWltRlJ3Ull0MG5MUmM?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达Q2新增SpaceX持仓成第二大，重要投资动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-spacex-157
+  date: 2026-08-15
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX 600亿收购Cursor：马斯克AI版图扩容，预言九月收入超主业"
+  quote: "SpaceX 600亿收购Cursor：马斯克AI版图扩容，预言九月收入超主业"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwJBVV95cUxNNW53NWI0RGVMMmtDVkxFbkVpZjFoSGl5SDdUUy1QclpoSlp1WHNBcXMyQWVJbE9FcmFOakRLdDhwYWluN0Z0bUtCMDZSdUNqTWFDWTcwbmo4dkxteXNoTC1fZ3Z5MVdPemJyck9WdXBELW00T3pCeHFUX3RDUWtDejEtTF9td0hLdVVxX181bzVpTWJoc1Vqc09GUVNQTXd0akNiRVhxT2lZa3FpWWxQRWxGcGdyWHdQWmY0Q0JJSUJmSkFya0FSb3daZ2ZzVHlJUzczeGFGblppaGVVTDdWRkJ6VjluVUIxQklzWk4wM2JNMnVRbVIzWFIwb3B1OF9DWHVkcS1NTzdJZE5fYV9wOTlZU2xpNkYza2pHZWZFOA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):600亿收购Cursor完成，AI版图扩容，重大并购事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

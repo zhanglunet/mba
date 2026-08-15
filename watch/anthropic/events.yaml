@@ -2656,3 +2656,94 @@
   source_type: media
   note: "LLM 预分类建议(high):产品定价策略调整，涉及商业决策与用户权益。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-13-anthropic-174
+  date: 2026-08-13
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "如何看待Anthropic传出最快10月IPO，估值目标飙升至2万亿美元？"
+  quote: "如何看待Anthropic传出最快10月IPO，估值目标飙升至2万亿美元？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE03TldsdERzaUQwNldXS3A5WlBaRmdnMzJXN1B5cVVHMnN5SFhhT3MwWjI1M084eFNtSWFRcThMM3d5d19fV3ZqTFZtY2VKdHJVX3JDU2dHdGRHVEQ0Vk04?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):IPO传言、估值目标，融资预期信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-anthropic-175
+  date: 2026-08-14
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Claude Code今天正式\"放手\"了：AI编程不再需要你点批准"
+  quote: "Claude Code今天正式\"放手\"了：AI编程不再需要你点批准"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBSUmRuVXBwWEFYeDRWT0s2bVBnVHNEQ19YcGQwYVg1UXliUW9SdlltaWpOc3o2bFFlZHlzRWxrQndLLUU3aGM0Vm53QUdneVJVWFkyU2Q5VU90U04w?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):Claude Code功能更新，产品重大迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-176
+  date: 2026-08-15
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic水印计划引发争议 Claude用户取消订阅、考虑中国模型"
+  quote: "Anthropic水印计划引发争议 Claude用户取消订阅、考虑中国模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kOEN4dWx3N0t0S1BnbGFTU0VZTW0xQUd6UWhUMm4zbWFmZlNDSF9wTmlmc1dVWkhWUWZ5cHdEUl8wREhlTThSeHh1eUg?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):水印政策引发用户反弹、订阅取消，产品争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-anthropic-177
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic实验揭示：多智能体协作会引发\"地盘争夺战\"-人工智能"
+  quote: "Anthropic实验揭示：多智能体协作会引发\"地盘争夺战\"-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1YVHBxS0Z6Ym00Y2Z4MmRXdmxPNExhNmFqTDR2a0w4ZHJKYjFfQ2RZVkZmMGk2bHY4U2F3WHFYbUlyN0I2bkhIQmgta1FydWZOYzJhWEZkR0tBQTJmVlE?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Anthropic多智能体研究发现，学术价值但非产品/融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-anthropic-178
+  date: 2026-08-13
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "投资者押注估值翻倍！报道：Anthropic拟以2万亿美元估值上市，或将成为史上最大IPO"
+  quote: "投资者押注估值翻倍！报道：Anthropic拟以2万亿美元估值上市，或将成为史上最大IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0U1VJZ0tXdHkzZUJZdVozZzJVQ1VZV0ptRTMzTlF4M0VIelo3QTZlTlJDTVZRRDdpWUpFajRnTkZDWGU0NWU0SW41SGM0RWQxZWVZ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO传言涉及融资估值，但未确认需谨慎。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-anthropic-179
+  date: 2026-08-13
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic为Claude输出内容添加水印，部分用户感到不满"
+  quote: "Anthropic为Claude输出内容添加水印，部分用户感到不满"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQek1uaXRsWHJpOWhIY21LOHdiblVRNV9RYk5lVlRSVzBmLXFKTHpiYjEweVVVdmtVRGdWdFV0RDBzQ3NBODdrNlAzbVFBNS1CeHFPVDl5SVY2dC03a25VM1hzRGpIN3NVWXNIcVdWTzNWd2lWeERwVENucEt4eWpxdlM3WFQ3VTYz?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude产品功能更新引发用户反应，有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

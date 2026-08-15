@@ -629,3 +629,49 @@
   source_type: media
   note: "LLM 预分类建议(high):旗舰产品全景相机新一代发布，AI功能升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-13-dji-041
+  date: 2026-08-13
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国将对进口无人机及零部件征收最高 100%关税，将如何影响全球产业？"
+  quote: "美国将对进口无人机及零部件征收最高 100%关税，将如何影响全球产业？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE80XzJjYkxaZnotMVFuclVKZ0RacUpVMjFEVnRTcmFGNkxqX2pOMEN1bkt0NW1ldXM4dzdONTBadTZPYXgyTnd5S3ZtMkxKeUlVaElmWkt5UW5YNjdoWXhJ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):美国关税政策直接影响大疆，监管风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-dji-042
+  date: 2026-08-14
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联邦上诉法院要求下级法院重审将大疆从五角大楼中国军事企业清单除名诉求"
+  quote: "联邦上诉法院要求下级法院重审将大疆从五角大楼中国军事企业清单除名诉求"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwJBVV95cUxQTEpUTHE0dTFTdjUzRHRFUy1wOG9XNUVtYm1zdktSQzJDeFcxa0ZyZVB4RUQ4NXlEbnFFbnNFcFFtZEpGMXJ1LU1FSkZlX00yd1BKVHRuMGlhZlljWEluQ1lETnpnaDYzWU5TZ3hadnA5NXl0LVlLREZidzBmWHZFWmszWHpfVkk0aEt3LVpDbVNXWG5SR2hNc2QyaW5fa0dQNmFMeFk2cTdYSFVlcUNLRkxsNk5sMFBCaVBRUUR0emRnU011cTA2NnoyY2NSdU11YXRSQk84QnUzQl93UmFGNnVILUx2V3lLbGJKakJQTUEtR0ZMd2xPbkhZYTV6bnUyVkFJekJXVndMOHc5RmV30gGPAkFVX3lxTFBMSlRMcTR1MVN2NTNEdEVTLXA4b1c1RW1ibXN2S1JDMkN4VzFrRnJlUHhFRDg1eURucUVuc0VwUW1kSkYxcnUtTUVKRmVfTTJ3UEpUdG4waWFmWWNYSW5DWUROemdoNjNZTlNneFp2cDk1eXQtWUtERmJ3MGZYdkVaazNYel9WSTRoS3ctWkNtU1dYblJHaE1zZDJpbl9rR1A2YUx4WTZxN1hIVWVxQ0tGTGw2TmwwUEJpUFFRRHR6ZGdTTXVxMDY2ejJjY1J1TXVhdFJCTzhCdTNCX3dSYUY2dUgtTHZXeUtsYkpqQlBNQS1HRkx3bE9uSFlhNXpudTJWQUl6QldWd0w4dzlGZXc?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):法院重审大疆除名诉求，监管进展重要。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-dji-043
+  date: 2026-08-14
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "特朗普总统签署造船业备忘录及无人机关税公告，意在应对中国竞争"
+  quote: "特朗普总统签署造船业备忘录及无人机关税公告，意在应对中国竞争"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi1AFBVV95cUxQT3BBa3ZLUkRmQWxNUk9RRWhqaU1kYVNPTU5fdDdFVVZtSlEwUzZKbjIwM2l1bmhsZVN1R2JuM216YXBETmp2NVROWXExMjgwTHgyM2FCTFpMWEl6anBQUjZobDNCOE1mQVF2a3pzQ3lybWRyYVBqYkU4cmE2Y2UxQ01KTkxzVVVTTnMtODE4eko3WXFGTlNia2NjdDlKNWhHZWdMdDdEdDRRV3FPMDUtdW1WUWliWUFIeGszTGVQSk9KcDJVVkxnSWEwalNEa19reThvedIB1wFBVV95cUxOak03UmpOY0RZSF9CaERzZTdYYml4Nmw1ZDFUUjJOZS1nSFBoSWwxdXBhX1pCRzR2M1ZrVk5iZnZtbkZsdVlfck8tUzBjanl2NXRKQUNCMnVzbUh5S0ZwQnVkSS1Bd2ZtOVltWUFTMVVmVUNLaE5FTlBPdFVjQVBneUZOY2hiRzFodFJNMjAxOUxVMF9pSHptUmplS2NSYjc3R3d2VUdYdmJub0loajFWdHVGVHlKT1h2a2Ryd1BJM1dlbjYzRjBnbU5yWmJnaEpSR1ZVZ0czOA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):特朗普签署无人机关税公告，监管禁令已下达。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
