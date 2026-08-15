@@ -534,3 +534,34 @@
   source_type: media
   note: "LLM 预分类建议(med):竞品版本预期，对智谱品牌舆情有参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-14-zhipu-033
+  date: 2026-08-14
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚！智谱发布GLM-5.3模型、“为编程而生”，性能比肩Fable 5"
+  quote: "刚刚！智谱发布GLM-5.3模型、“为编程而生”，性能比肩Fable 5"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxOdFVIZGpKOXV2NHRvRTF6M2tEMXZHSWR6eG1naHJ2b1Y2X2RkU0FPQ0NhNlZTbXJiSFozSmxVR2dpNW45Q2FpWTBmcWNmTmYyUVVkSHFCOFFFWFFsY2hQU1MxTFlubFBPVkxaY0gyYmxYYTVReTVBUURVT01wWVdwYjJYSEZkQUNyRWpTU0xueThsQmVpTEdtaGR4NlQ4QQ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰模型GLM-5.3正式发布，AI公司核心事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-zhipu-034
+  date: 2026-08-15
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "GLM-5.3 发现 2436 个漏洞，在 CyberGym 上登顶"
+  quote: "GLM-5.3 发现 2436 个漏洞，在 CyberGym 上登顶"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE9hOTU5S01waU5LQVExX0R4TUNzNUZuZTQ2enJ5NlBwQlI5Z1Z2TmJCWWRIajRLRUItZ2MtakFCQ1hTYmZjbVpHWU1EVEsyekM5LWFZTlM2NTVELTc1UkZtMGdFdHBackotZVlZUUpVOVc0SmhmbnFVaEVyQWlTQQ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):GLM-5.3性能指标公布，产品能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

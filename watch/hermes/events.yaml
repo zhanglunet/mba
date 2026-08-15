@@ -903,3 +903,64 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕高雄门店重开及限量产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-12-hermes-059
+  date: 2026-08-12
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Hermès’ new Beijing Sanlitun store in China unites contemporary craftsmanship with local culture"
+  quote: "Hermès’ new Beijing Sanlitun store in China unites contemporary craftsmanship with local culture"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixwFBVV95cUxNd0wyUUlHMTNhbWF0SU9GQTlDTm9LQ1YySlNZVkp5SXFFRThyU2tnMEY2QUdzTDhDc2VuT1hjbHVEVXBvRVlHOERMQ0VGcC10Y0d0RGVnNDlYWnRtLUVYU3NnQjZveEFiYXVaX29IN25hcVNxTnM3bV8zZmRvQmVhWTF4d1lmMzRfWHdrRUJ6R0xkbXVPUWx2Wl9sN2xRVUh4S1JURzNDdS1MVEFXNDZnUlFwa2taRjJ3U2hZb0FkM1hLS3ZDV2JJ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布新店开业，融合工艺与本地文化，品牌扩张信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-hermes-060
+  date: 2026-08-14
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Hermès Birkin和Kelly怎么选？保值率最高282%却装不下日常，容量与场景全对比+FAQ"
+  quote: "Hermès Birkin和Kelly怎么选？保值率最高282%却装不下日常，容量与场景全对比+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxNVzNsbU9kQkpDZjk0R0lzdGUwVlNISHZkZVJQbXFsZjJPYkp1NndERnRoYlpaMlZBelh4Qk5SVVlKOUdjZjJEeTRwRmlUM0ltWGZDV2lvd01ncnFaUGJuUGJCZXg0SGI3ZURpaS1WRTU0Z2VoZWR6T01fZG9kZ3N5SjFSdw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕经典款对比评测，产品保值率分析，消费指南。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-hermes-061
+  date: 2026-08-14
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "2026上海出手爱马仕菜篮子，弄懂这 3 点，回收估价更贴合预期"
+  quote: "2026上海出手爱马仕菜篮子，弄懂这 3 点，回收估价更贴合预期"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxPSHdrejBDZ2ZXU2FXaHl5MC1NM3FsaHhhbWhabUJJM1FFTGxZWmZYZUNnbzZRZlVIWUtMLUFJRmdJUzhoejFrSUJNTVlmTG5KQVZOcTJUcDFwS3VHNTN4MDJvYldaM3J3ZDBZekw3NmFNdEJaRkt4aW14b2hFLVM1b3RWeDY5RHVUQ3ZLeVJSdnA4VThXQVFVYw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕菜篮子产品回收估价指南，二手市场信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-hermes-062
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕销售额与猪价有关？聊聊经济风向标丨兄妹财经"
+  quote: "爱马仕销售额与猪价有关？聊聊经济风向标丨兄妹财经"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxQU3laT3hRVVdzSFlUUDFtNF9Ga0VZTFhPMmZfMl9uYjJrbWpLRDJsYW1oc1I4ZVllRDB2azdNZUQ3enVqUG5ZcS1mU1NKVVQ0SWF6ZllmSm5NMkNnWFAxV3RlT0xhYXdmb0hCamJVNWY4UU9aUjA0MEZIdjcwM1p1SGlpejBKSWxjWTd4Ui1ldXR2M3FfR0UtcA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):爱马仕销售与宏观经济关联分析，品牌业绩信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

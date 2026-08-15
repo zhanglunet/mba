@@ -2263,3 +2263,154 @@
   source_type: media
   note: "LLM 预分类建议(high):Made by Google 2026发布会总结，新品集中发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-08-14-google-149
+  date: 2026-08-14
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How Google is Making Private AI Practical with Homomorphic Encryption"
+  quote: "How Google is Making Private AI Practical with Homomorphic Encryption"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxQMk1RUEszN1VwcnlZMmpOSThSZVRWN1dnZXFQdHk1OWNxQkNQVlBlZURXeDd5UVFNNjF2X2R2bXd6THphVURqQURybm5VMHJvTy1vMGZ5ekoxMTJqMmp6dmZRN2NXbEhNbmxoNnQ4UmhraENra0UzaDgwaF9URHlxdWVHWllLTURCNVJKeHFsc3l6MHMwN0NyUlRGUm9BQ0JR?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方技术方案发布，隐私AI能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-google-150
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Bring your spreadsheet data to life with Sheets canvas"
+  quote: "Bring your spreadsheet data to life with Sheets canvas"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVkxwYzJ5NnUtdVJaeDJLNWEzclZXSDhOQmVzNjhlcjR4bUFmMmhaTUhibTI5WFJrdzR4TWx4TmlXNjBjeWZiSXJfVndXUUJiQjVsVTNlcXE0d2YtZTdGaHRvSk9ZWUxrMGJvY2lrcnhRZ0swZnBZSlBnSWR0OU5UajI0U2FhdnNCWW1MU0JCaERjQ2MxWDg5YWxuVGxDY0JUWFZoNHRKZ2Z5aTA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方产品功能更新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-151
+  date: 2026-08-12
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Pixel Watch 5: Proactive assistance and advanced health tracking on your wrist"
+  quote: "Pixel Watch 5: Proactive assistance and advanced health tracking on your wrist"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTFBDdkFKYkhYSndpMmJnRXliSkR3dk5mbEwzY2tueWtUZzJSN1gtdmh6ZUZPbEpvaEZhQTZUTENfUXVzWlI2V1o2Q1FPRXg1cmRqaXN2eTRPbkRuRkJGdndMMm9CeGNBeU51RHY3emlGY19RVGViUW4tcjNrNA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方产品功能发布，健康追踪能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-152
+  date: 2026-08-12
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How your Pixel Watch steps in if you stop breathing"
+  quote: "How your Pixel Watch steps in if you stop breathing"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxQYWxra0UycDQ5V3p6WmVueG5LMVZudktrbW5WelhpcXFGWlMtdnBzS081NHZmWHJQUC05OGQtT1VGYlVuZWkwWlhKcVYwRF84Sm1PUm90cjhmRmh2Q0JDdWp0UjVkU244RzM1RW9jUFNZMDlZbmFYYmJYbXhjQUJRLXhSRVF4VTc5WGJGekZNWXNTd044YzVVWlo5cmExTEZa?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方产品安全功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-google-153
+  date: 2026-08-12
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Google’s most sophisticated foldable: Pixel 11 Pro Fold"
+  quote: "Google’s most sophisticated foldable: Pixel 11 Pro Fold"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxOdGFkMzFEQ0xXY1hjRkVUT3dRUGZVNzNXc0pLTTZQOHBSUmd0RFp2TDFGVnNVVHU3Yl9OMkVrQVhMZW1DbTNLVW13RVdFeU9RR1dpbElmZWxoakplYWxQdFEyNGNad2EyVkktb3M4NlhmZlo5YVJtYVdzSHltME9MSQ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方旗舰折叠屏产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-google-154
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌推出 Gemini 3.7 Flash，有哪些亮点和创新？"
+  quote: "谷歌推出 Gemini 3.7 Flash，有哪些亮点和创新？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9jUUJBNUdiQkw2SlEyMWtzMnNXZy1RbzNOY01OT3ZMci1iQXFTSlUtSURGY3I3MUd1WmVIaHJKa1kzaHdQcTlXNXkxaGlUMF81RXQtWHdVdFE1cVVzMmUw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):大模型版本更新发布，核心产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-google-155
+  date: 2026-08-14
+  dim: W8
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌开始肢解DeepMind，数个团队被划归总部"
+  quote: "谷歌开始肢解DeepMind，数个团队被划归总部"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9WMkJiLUtBaDByUzgybXlzQzR2OGp6c2k4WmMwWENBNm82SDJMTHhYcUdQcWdoN2xpTGZMVlI1WG9JWmxMNVM3OGpxd1dwYnhfSnlTTFkzeDcxNlZC?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [identity]
+  source_type: social
+  note: "LLM 预分类建议(high):组织重组，核心AI部门调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-google-156
+  date: 2026-08-14
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "「美国豆包手机」全系涨价，新东西全留给了 Gemini"
+  quote: "「美国豆包手机」全系涨价，新东西全留给了 Gemini"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE15el8taE9wVVBSUDFLMGtvYlJDNVhIaXJacUVuS2ZOS1QxS2NtcXBibEhtaTRDNFJCellSQVl5SkVSYnppM0Jzb3pIT1JEQXFUMGk0bXFPREdDcEtU?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):Pixel手机涨价+新功能独占Gemini，涉及产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-google-157
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌彭昱钧：Tensor G6芯片采用台积电最新改良3nm制程|Google|智能手机|IT之家|CPU|应用程序_手机新浪网"
+  quote: "谷歌彭昱钧：Tensor G6芯片采用台积电最新改良3nm制程|Google|智能手机|IT之家|CPU|应用程序_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPQmd3OE1zeUlRLWpNNjZBeTBBY3dSa05LeHp4dy1qbV9NdS02Wkx4LV9EQVgzYW55WFQwZ2RFUllzRVRLbURyOU02QWN3UTVybjRFUklmSGNEUDlMb3E3aUhlZGNuWVRlODg4MWo5clBTVXdoQVNDczRZZU42aTFLNWZLTGU4dnlTa3JRaVRTclRYT0VRckFpc1ZaTUk5QkRWYnlpT3BBdw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):Tensor G6芯片工艺升级信息，产品技术更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-google-158
+  date: 2026-08-14
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini 3.7 Flash 突袭：性能逼近旗舰、价格打“骨折”！！DeepMind 新帅重画性价比斩杀线"
+  quote: "Gemini 3.7 Flash 突袭：性能逼近旗舰、价格打“骨折”！！DeepMind 新帅重画性价比斩杀线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFAxYV9aVk1FR3BQMzFONTVjVW1lOHFkUTdDYW1HcGxudlMzb2lxdW5kNWY3ektpRVplZXNWSjJmY1pFbWpUWDFFWkpUNVBNZzYxcWpOQl8zRW0tZUhJOHc?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Gemini 3.7 Flash发布，性能价格更新，但标题党风格。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

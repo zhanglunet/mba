@@ -1899,3 +1899,49 @@
   source_type: media
   note: "LLM 预分类建议(high):OTA更新导致硬件故障，产品质量问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-14-tesla-125
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "市场传闻：特斯拉即将发布‘飞行版’Roadster"
+  quote: "市场传闻：特斯拉即将发布‘飞行版’Roadster"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxQY3NJUjB4aGo2eHk0aG05dnV5cnRpWFZDT1AxU2taVTYwSXJHQWhiWFFnTG9CRGVhMXFubldvX3JoUnJOZ2djdkc3Q2wxSEtreklSVmVSelBfRGg1YUtuWmJyeW16Z0Y5bnVoSnNuUnB0Q3A0Yk9FZF9xcjlzMHRmOHBFRW5SM3hDUy1xRFZTa3VpWHdVQ2J2a3dxRkVLSnZLYjFJ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):特斯拉新产品传闻，但标注为市场传闻，可信度待验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-tesla-126
+  date: 2026-08-15
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉即将发布颠覆性全新 “飞行版”Roadster跑车"
+  quote: "特斯拉即将发布颠覆性全新 “飞行版”Roadster跑车"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nQktqMWdyQ2E4Z0xrQ3VTZGtJMDFhQi1IOU5hbTVzR2F0eFpEcUtHWVFkRkd2Y2JMVnQ1QzBIVVQ1akNLUjB3d2diZDdpSEZxQVZfV19yQTZ3dU13emxYMg?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):特斯拉飞行版Roadster发布预期，重大产品动向但缺官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-tesla-127
+  date: 2026-08-15
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉拉斯维加斯5000辆自动驾驶出租车宏图受挫 首批仅获批10辆"
+  quote: "特斯拉拉斯维加斯5000辆自动驾驶出租车宏图受挫 首批仅获批10辆"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Kc2ZaU2xJMnVIbS0teGVrNVlJMElzYWZnYmcwOGdCdW9tV1Fhd3I0ZW1NdThBSUhLcGdueXZhd3Z2ajYxcmZYTVM5a3N4cmo4bFZaZGVOYlBxODJYQWNXeA?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):特斯拉自动驾驶出租车项目受挫，监管阻力明显，重大负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

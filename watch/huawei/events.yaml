@@ -1569,3 +1569,79 @@
   source_type: media
   note: "LLM 预分类建议(med):华为Haco发布会规格预期,重大产品发布预告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-14-huawei-103
+  date: 2026-08-14
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "HNS 2026 | Huawei Upgrades Xinghe AI Fabric 2.0 to Build Ultra-Resilient Data Center Networks in Asi"
+  quote: "HNS 2026 | Huawei Upgrades Xinghe AI Fabric 2.0 to Build Ultra-Resilient Data Center Networks in Asi"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxNU0g3SXJXSnJETFM5Rk9qaFdRc1BnQkdYWk56N2ZrYW5zTjZsUDl3bDVSaDhkYTdQbURSVmR2bHlwREROZHpkX2tkU0dDeVVSYjdjSkxub1BPenhleFdpSnBaRFNiZUF6eFZZUEVpYnpEOHFTdW54LWJHQThmdXBrb0wtYTJjRkFnWUNlSkZzTW1qaXlDeXZHcFE0R1E?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布星河AI Fabric 2.0升级，数据中心网络产品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-huawei-104
+  date: 2026-08-14
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "三款鸿蒙电脑新品今日开售，华为MateBook Pro S可以入手了"
+  quote: "三款鸿蒙电脑新品今日开售，华为MateBook Pro S可以入手了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE93SmRaODQ0VHdxSmVXX0V4enI2QmFvSXB5TFFpRWNmRHo2RmhXZWlHdDFTLUFscjZJNmdBcjgybWVZWWZhb1B0d0xORWdkOGNaTmR1Z1pvRG5fdjZB?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(high):鸿蒙电脑新品上市销售。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-12-huawei-105
+  date: 2026-08-12
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "鸿蒙电脑新品扎堆亮相！钉钉鸿蒙PC版更新，办公更顺手更高效！"
+  quote: "鸿蒙电脑新品扎堆亮相！钉钉鸿蒙PC版更新，办公更顺手更高效！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE83ekZqbnNXZzA3cG5sTkY5WGI2N3F2WFFYd1hUU1FITWFGYlN4M1R5bG9hcGNPV3lBcmVtWnRpcmFBTzVGSkV1VDBRQ1FLaTFna0N3dkluYXM2OGk3?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(high):鸿蒙PC生态更新，钉钉适配。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-huawei-106
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "爱立信未达标 西班牙最大运营商暂缓淘汰华为5G设备"
+  quote: "爱立信未达标 西班牙最大运营商暂缓淘汰华为5G设备"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIQlR4dVRsT2dZR3hQWTFKTk84ZDE4SkpqLWdoR2JqMklHNVBaTHBKSDROMktnWHZyMi1VdmxQemlpcWtqVEVwaGxQV0dUYy0yeFNURHZIaGtIRVgxTVBwYQ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):西班牙运营商暂缓淘汰华为5G，监管态度转变。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-huawei-107
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "华为五大新机具体什么时候发布？"
+  quote: "华为五大新机具体什么时候发布？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5yY2JsR2RDcnFIVUcwa1g1dFhydTY3a0lBaEx5WFdHRm14NkstMHV0LVQ2THJYakl4eWFNckFXYmtvYjkybERkd3BUeHlTVFpEQnNsaVRVVXB0ZDd6ejBpM3k5UWQza2wxbGJ1VGZQSHFfUQ?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):华为新机发布预期信息，产品动向值得追踪但缺具体时间。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

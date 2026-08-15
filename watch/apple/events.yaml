@@ -2263,3 +2263,94 @@
   source_type: media
   note: "LLM 预分类建议(high):安全威胁警报涉及用户隐私，具有显著负面舆情影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-12-apple-149
+  date: 2026-08-12
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果绝版陶瓷手表重磅回归，这次真的普通人劝退"
+  quote: "苹果绝版陶瓷手表重磅回归，这次真的普通人劝退"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oTkdIRFBXZnZTYUhxTjRWNW1zTXRsaHdweWFIcUU5QjFUdlpJbzY5anFWa3g4Wlg2OXJzeUlkMVBMbTJwYUptRzJZR2FpTGZxTHo1RnI0UzlORHg3?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(high):陶瓷手表产品回归，消费者反应评述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-apple-150
+  date: 2026-08-14
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "MacBook 终于能自己修了！苹果自助维修升级，Neo 成 14 年来最易修 Mac"
+  quote: "MacBook 终于能自己修了！苹果自助维修升级，Neo 成 14 年来最易修 Mac"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBCbmd3Vk50bUc4VXYyWkJhUWRfek1LcW5yTWRJc1hzYjZsVzQtVm95Ni1LdWw1S241NWp5U2JTeE9FZk1CbnBFNjV1QlVUVXFBVHhGSGZFeWtSYWJN?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: social
+  note: "LLM 预分类建议(high):维修政策升级，影响用户体验和品牌形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-apple-151
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果地图 Apple Maps 广告位招商中：美国、加拿大商家提前预订最高每月返现 1000 美元"
+  quote: "苹果地图 Apple Maps 广告位招商中：美国、加拿大商家提前预订最高每月返现 1000 美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAJBVV95cUxNYUtUeXAzQTFyNkhOdXRFdjAwZnBCaWUwMWQ2NmZZQTU1UlF4SDhUM0dJb1NfUlBxcU5mQjJ5LUtvRFZYd0lnOGU2NEFiZDcxT1VMU3BZc3hIMmVEX0tOb1ZnYktFMTRuSVpIQ2RzdGJEcUZnQ0pCT2dDejQ5WEV2bzZ5UGJhVkl1a1RDV0o1ZW0xUEtnd1dmTE02T3V0TThDRl8yZzM4SlJ5NW92akdYU3IxT1ptMGFQNm1oLWQ0b1ZQRC01dTBCNU4wUU12bERWcUxKd1R4dnJRLWpNYS1RZFNjc0wtVmtDYThwWnRhQWRsWUxpOHVkTHB6UnFheGFBc2xMcUZuWVBJS05FdGltNg?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):地图广告商业化新举措，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-apple-152
+  date: 2026-08-14
+  dim: W6
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Apple-阿里巴巴合作开发中国市场专属AI模型"
+  quote: "Apple-阿里巴巴合作开发中国市场专属AI模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogJBVV95cUxNakVoMjdDUG51cHJNUXo1eTdDQ2lxZFJzQWRQcV9kVXM4aVpBbGhhSHVxRHhEbFQ5N0JIVVI4SEllaFdaOWVoWnJCVE96ZHpTeXpKSW4tV01mbE5VMUh3NWNiUkQyY0dCV1FwYjVWSVlNREVqYTZfdUJDM3Vid0RXZUpaand2RUpLeDE4aDB6b3hRcjBVbWUzX1FRdGdRa0lqbFZ0RENCOU1aS0hKU19vTU83WmJ1MURVdVBPb1h5Mk9pajh1R0pSX3pSOUdsVk8yb3RsenJnbWR5OURYYV9DOW1lcDVRWWVTT21mWnpWcngzb2dKeVQ3QXNIR2JoaHl3Z09ubEpYSUtGZjJsMWJ6MUdjcmM4MjlpaF93aGROTU9jZw?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):战略合作发布，AI本地化重要举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-apple-153
+  date: 2026-08-14
+  dim: W6
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果在华押注“双轨AI战略”：一边接入阿里千问，一边打造自己的本土大模型 港美股资讯"
+  quote: "苹果在华押注“双轨AI战略”：一边接入阿里千问，一边打造自己的本土大模型 港美股资讯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9qRGtiV1ZSU1czcnhjckx0b1JZdGFBVHpFQktuTW9nSkFacjA4aEtPSmlicTB4dm9Dcl9GM2oxUy1zNUdyY3hEVGpMQXNFS2ZJb2k5NHo4UUZ1X2FUYURzQ0h3?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):中国市场AI双轨战略披露，重要战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-apple-154
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "发力中国市场！据称苹果训练了一款“中国定制”大模型，开启AI双轨布局"
+  quote: "发力中国市场！据称苹果训练了一款“中国定制”大模型，开启AI双轨布局"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiRkFVX3lxTFBTZjlZVF84SFVZUGdJZnFsT3JGTnFwYjEyNzFIUzVHSDZORjFEMlBUM1lxV0RSTDd2andRNG1PbWVzbUxtU0E?oc=5
+  fetched_at: "2026-08-15T03:07:24Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):中国定制大模型开发，战略重点市场布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
