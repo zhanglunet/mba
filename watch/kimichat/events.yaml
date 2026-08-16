@@ -2077,3 +2077,19 @@
   source_type: media
   note: "LLM 预分类建议(high):月之暗面官方声明警惕可疑交易，品牌风险提示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-14-kimichat-136
+  date: 2026-08-14
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "月之暗面：严正声明打击假借名义非法融资"
+  quote: "月之暗面：严正声明打击假借名义非法融资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE01b3VrSTBxSTJQSW9ndzZ2M3NUZzdGUDEzUnNrdzVsYkQ1NWJuR250LU1nXzd2X192ang1aXltbXZzSFJHNjN1bGI1UUQyU1Jmdnh5eWk0eWVnZjVScXJJaTRQZzJmZw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方声明打击假冒融资，品牌风险管理公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

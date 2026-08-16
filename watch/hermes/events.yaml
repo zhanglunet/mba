@@ -964,3 +964,49 @@
   source_type: media
   note: "LLM 预分类建议(med):爱马仕销售与宏观经济关联分析，品牌业绩信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-15-hermes-063
+  date: 2026-08-15
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕稀有皮保值吗？顶级年化18%跑赢黄金，鸵鸟皮却折价过半+FAQ"
+  quote: "爱马仕稀有皮保值吗？顶级年化18%跑赢黄金，鸵鸟皮却折价过半+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxPTjdmOWY1cV9WM0tydTl3Y0luZDNtLXAybXRHbDZPSFZKWjUydGJpaXp5OV9ZZnQxUU10LUU0R0tVeTZfXzg4TmJFc180RkVUR25wbDY1TmR2bHlMWHNmSVkzWlhEeWxmVzVzUjMxVTdPdWlpWG1taHZSbGllYWM1cVMwaw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕皮革保值率分析，涉及品牌产品价值评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-hermes-064
+  date: 2026-08-15
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕和Delvaux包袋工艺对比：谁才是手工之王？3个维度拆解+FAQ"
+  quote: "爱马仕和Delvaux包袋工艺对比：谁才是手工之王？3个维度拆解+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE5ZcVNfaDNYUm5FU0FIWVNjZmN3MTdjODJVbzBFVktTSWlQTjFNNGQ0QVZoNFE4eU5XYl9Va0ZHVUE1eXUzWFk3OGpKWWQ2LW5telQ1LXB1bDNLc3JNVk14VmFHaVRMZjJ0TldXUmZxWWlQeVFiM3ZJc0lCQmhDUQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕工艺对标分析，涉及品牌竞争力评估。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-hermes-065
+  date: 2026-08-13
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "爱马仕（Hermès）品牌丝巾搭配技巧只会系脖子？90×90cm方巾7种系法，中古回收先看这4处鉴定点"
+  quote: "爱马仕（Hermès）品牌丝巾搭配技巧只会系脖子？90×90cm方巾7种系法，中古回收先看这4处鉴定点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE9obWVJa21GQzBydWZDLWJHZTFlT2VYOGhrQ1Nid1FoQmNpQXMwekZVT2tUQlV5OEhGR0Rpa3J1WjZJNFpFcFJTUXdQOElEdzRLdWlJVzNWdldjYlZnc3I1cGM4ZlUtWXN5SVZVLVNNSUJRZlRIR0ZJS3haV2p1QQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):爱马仕丝巾产品使用指南与鉴定知识，涉及品牌产品内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2023,3 +2023,64 @@
   source_type: media
   note: "LLM 预分类建议(high):月度补丁发布，常规安全维护。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-14-microsoft-133
+  date: 2026-08-14
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软 Copilot 逆境翻盘：不押注单一模型，押注\"分发 + 生态\""
+  quote: "微软 Copilot 逆境翻盘：不押注单一模型，押注\"分发 + 生态\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9BNzlJWWJrZlJEMjFSMDhhRFZiSGpBckl3T1VBTDhRMkRwTzVtS2VPMzA3NHdkaGFFdzdPSnA3MG9PM0V0ZG1TRlg2LTBFSF8yR0w1SWpNeTBiWG9m?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Copilot战略调整，从单一模型转向分发生态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-microsoft-134
+  date: 2026-08-15
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软合并Copilot应用，为“超级应用”铺路"
+  quote: "微软合并Copilot应用，为“超级应用”铺路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFB5MHhNczNWa2JLMndlLVZsbU5KcWFxRmxqNlhYRE1rbGt4OXFMdkp0cnZQR3JNdWZVRHZ6YXVkWWRHbGZtbkVyeHJPQ3pkR25rcEViaWZKbC1vTnFfZ1E?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Copilot应用合并，产品战略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-microsoft-135
+  date: 2026-08-15
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软Copilot大一统！Windows超级版应用9月上线|Microsoft Office 365 with AI|播客|消费级|群聊|个人账户_手机新浪网"
+  quote: "微软Copilot大一统！Windows超级版应用9月上线|Microsoft Office 365 with AI|播客|消费级|群聊|个人账户_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwJBVV95cUxQcllvYVcwai0wQWZ2Q0tva0tmVDR2NVVOdzhfRUJLYjNwT1ZYQjRWTHNWR3NOOW1rVmxzOTdxNWxHVWZSaFNQS3docHVmWXprbk1CUVhxZFk3RjBXb0J2QWJzZUltNEEtZy1EZmF0M1I5bFZBV1JHbXA3Q2NwZ21jalRXcTN3RmhqMlVWcmNmbzlaWWNKb2VFS250bE9xTWEzSlJCdnZlV1NBY0x6Y0VtbVV6RzA1Y1c0QU9US1lvcFdodmZVTnBldHZOMFFpLTNjbUdNYnowdFp6TFduYW9QVjdoYXgzV2JrOFNkY05TWjQ5ZTllZmFWMEtoSldZd3BXaUIzalVWSG1YM2UzNVIzQVVtWUlLVno4cG10Qjd5RQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Copilot产品整合策略更新，涉及Windows应用生态重组。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-microsoft-136
+  date: 2026-08-13
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软整合个人、企业版两套Copilot AI助手，为“超级应用”铺路"
+  quote: "微软整合个人、企业版两套Copilot AI助手，为“超级应用”铺路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE5SMFgxXy1uMjdYQzhmODhWb1Y2aE9wNzBvUnREakwweklKZEI0ZXRMMlB2QTIzcjFJNHJzRWRfNFAtbkFleXRZUEw0bHpXRlRGYTc0YTh2YmMzeUR6bk9Wa1hlSklKUWhxUDQ4TTNYZGZFLVc2Zl91ZFdwb0VrZw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Copilot个企版整合，AI助手战略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

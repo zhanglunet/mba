@@ -1813,3 +1813,79 @@
   source_type: media
   note: "LLM 预分类建议(high):API调价公告，影响用户成本，具体事实明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-13-deepseek-119
+  date: 2026-08-13
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Safe Use Policy"
+  quote: "Safe Use Policy"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KUlE5SkhfS3c1UXhEVHJWT1p6VDdpNkJwR3ZQdG1FTjJ4QWp3OVlTSnZOSEtHc2lJUThmUmZZWklCdzMxQVBLUXJuQ3Q3Yjl3Z1dR?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布安全使用政策，属于产品治理更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-deepseek-120
+  date: 2026-08-14
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Responses API"
+  quote: "Responses API"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzODBSS3NuZi1DbXJ0cVdwSVVPSzFkRExRNmU2VjdUbHpCUkRCUDBNMmJNVXdXckJZMXRSMFRJOFlqT0gwZkFsVTdhSjl4TzhBaXVjbGlOT2ozNXE2MGc?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布API功能，属于产品能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-deepseek-121
+  date: 2026-08-14
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek-V4-Pro正式版上线：Agent能力跃升，定价启用峰谷机制"
+  quote: "DeepSeek-V4-Pro正式版上线：Agent能力跃升，定价启用峰谷机制"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE5PYVlGVm83NEVTZlV4dzB5NXVkaDNGR2poTURmZy1oNzhRQkN6cEhNc1h5aWxJLURfN25zeUxPcWd3THJzakZKYS1TRHZQRThaYjlpTg?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):V4-Pro正式版上线，定价调整，重要产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-deepseek-122
+  date: 2026-08-14
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek官方Agent来了，它不想做下一个Codex"
+  quote: "DeepSeek官方Agent来了，它不想做下一个Codex"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeXNhUjRkazA0cEI2NHZlR0tISzVjUDBBMTQ0NWphV2QtVFQzZ0tMSUpRV2dmd0x5UlZ6QzJEVElOUVVpeW5HX2ExZ2w5WmpjdzRYMGtPeFVhem9qV0J5enlBQzVVSklfNDVKOERSZm5vNEVSa1VaZjRqQ2xYdkVnTmR0X1ppRGUx?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):官方Agent功能发布，产品能力重要扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-deepseek-123
+  date: 2026-08-13
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "DeepSeek-V4-Pro正式版上线，调价方案公布"
+  quote: "DeepSeek-V4-Pro正式版上线，调价方案公布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE1GZC0xdmdZN2VLUjlzTnNsdWFZWjBQTkFzcERFUXh2V0lSWFgzeVRqSml1Vkp3Q29rQUhuekY5NFJ3RVVZM21LTkVobF9JYjlVc2JRdi1R?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):V4-Pro正式版上线与调价公布，重要商业决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

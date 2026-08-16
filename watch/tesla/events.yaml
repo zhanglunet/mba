@@ -1945,3 +1945,34 @@
   source_type: media
   note: "LLM 预分类建议(high):特斯拉自动驾驶出租车项目受挫，监管阻力明显，重大负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-16-tesla-128
+  date: 2026-08-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "老马斯克：Optimus机器人发布 特斯拉市值或飙至8兆美元"
+  quote: "老马斯克：Optimus机器人发布 特斯拉市值或飙至8兆美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi1AJBVV95cUxQZ05Zell2YmJjWlVnSmFxSHA3bUhGSndCX1o2UXptLVJMWHJfU2tqUTlrWE4wSkFjSkJ5S2x2Q0dmZDlvc0F4Q0NMc1NpbGpENFdlQkNTRFZDZ3hUYU5RU3ktM1R1dGpzU1JDRUFPSkFQbTNPdHFDT2Rxb1FLd29LSUtRbHBuUk5JbnZ4OS1qMDdRMWlJTXk3N1FTN3JpWXMwVl9mRHdDZ2ZDY2gwUWEyU1dFSDFIRndrckFFaGg3Umt5dS1DMXdjMVJqQm1TWXRiUjVWN1I5azNwV3lsaUdqR29IOEt0QjJ2QnhtUkRjWDZ6a21OTlE1YW9RRTZCTGdXanBWMUpHRzJoay1KSFlPYnpmX0JHYkE1LXVjb2U2X01tR3lDamhaUEYzY3c5X0lBTmw2Rm1uNVVEOEY5NHhHSWFwYW56X25uQjQ4YmhaNXAyTHRk?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Optimus机器人发布，特斯拉重要产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-tesla-129
+  date: 2026-08-15
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "与SpaceX合作研发？Tesla据报拟发表飞行版Roadster电动跑车"
+  quote: "与SpaceX合作研发？Tesla据报拟发表飞行版Roadster电动跑车"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi4AJBVV95cUxNNEt3X2tieEhIamJFZTV2TG5pZlpfM0xrNFg0ZHo1U0xaLXhHbDR4QnlMYmJnWDVIczl5UjNTZExSVi02NW1LT3RHdTRpTUhXTG8xOVc0SDhrMGp6Q21KSzY5eWJGUTBMc3I5WDlGdWhuT2xScmh5MHIxTTV2V2RIdk1HbnRmMTNIeFMwUHpnbkc0Xzl4UUMtZkRoOWtSTWtpdl9mSUFmMzhnaTZEbUdwazd2Q2JDX3RySFlwbkpkTk5ONFhVZlVrenhlTlFEQ0NNYzdwbDA2MXAweXoxMWRFdS1ZZW9QN2ZrUWNXZXctX3I2enhodlgxUnQtaWFRWjlwaTVCSVc2RzFtX1N3UHFQbGtGTjdQdDBqNi1palFuS0oybDBzdy1DVnBFaGFnVl9IeUJDLWFPZFZTOXgtYWQ0aE91VzVRc3hoc2RfeFIzc1dlWjd6cWd3QTkzUllrYVIt?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):特斯拉飞行版Roadster合作传闻，产品创新信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

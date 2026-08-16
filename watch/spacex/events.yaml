@@ -2407,3 +2407,124 @@
   source_type: media
   note: "LLM 预分类建议(med):600亿收购Cursor完成，AI版图扩容，重大并购事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-15-spacex-158
+  date: 2026-08-15
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达：公司持有SpaceX近1.23亿股股份，双方AI算力合作进一步加深"
+  quote: "英伟达：公司持有SpaceX近1.23亿股股份，双方AI算力合作进一步加深"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5NV3l3b2c2ZUJxMzNBWU95em83M3dJaFFCeURrMGRfTVJXeXdQaXZZb3ZnbjNDeDJpWm0wN24zYkdnLW8?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达持有SpaceX股份，涉及战略合作与融资关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-spacex-159
+  date: 2026-08-16
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "哈佛大学重仓SpaceX，22亿美元投资彰显长期布局"
+  quote: "哈佛大学重仓SpaceX，22亿美元投资彰显长期布局"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE5jMkNQOWI3bm92bWFGcjNmTDdLNlNob2wyN0xYc0FLWmtCZFlZcGk0SWlWa0xuVk1xbngtSkd3N1JDSEl5RHhOQXZPR1RLR3h1OFQ1U2F0akJ1bkRoQmg1OUFDNHpIWUdPbHRJMDB3dw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):哈佛22亿美元投资SpaceX，涉及融资与机构认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-spacex-160
+  date: 2026-08-15
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克语出惊人：火箭只值1%，SpaceX的99%是AI！"
+  quote: "马斯克语出惊人：火箭只值1%，SpaceX的99%是AI！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE9sTUNocnVUTjZQT25xdmJScGNSMGhmX29UaUhKd1Bod3ZGbHBJS1JpbUh1aHVyVlhyaEJiV0pSal8xcFVQQmw5cmlFSzRlY1JwZTRaTXVwTnZfSlpGYS04WFZma1dYZG1wSjV5M0pMVkp5dw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克关于SpaceX战略定位的重要表述，涉及品牌方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-spacex-161
+  date: 2026-08-16
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "首次披露！黄仁勋投了马斯克"
+  quote: "首次披露！黄仁勋投了马斯克"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxPVGpCV1NoTGg3Rkk1cWtQbldPdTVpUmJPckZhT0Vuck9kVllrNDJwLXZtWTNBNWFabnM5Si1jMG5hMFBNV2ctdFJFX0cwY1FEVWRTbURKbGtuNEJtMlo5UWVORXZ4RzQyRVdtR1F1cjFPaW5iY2tFNFROdkVVWDdNMWwwaEo?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):黄仁勋投资马斯克/SpaceX，涉及融资与战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-spacex-162
+  date: 2026-08-16
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "据福克斯新闻：哈佛对SpaceX(SPCX.O)进行了高达22亿美元的重大投资。"
+  quote: "据福克斯新闻：哈佛对SpaceX(SPCX.O)进行了高达22亿美元的重大投资。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE1HUlZla21HUHhMNjJFVURkT2lnbWV5VzBrUGhiMERpdU5HRHo4dFhlSUdMbFNBeFJOMFcxSDJMa2xRUlNIb24wQlEyWUlGY21abW83bEtCMlZXYlBydzJUM2hOQmJzTXlaODJFVFJmcw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):哈佛22亿美元投资SpaceX重复报道，融资事件确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-spacex-163
+  date: 2026-08-15
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达披露第二季度末持有SpaceX股份210亿美元"
+  quote: "英伟达披露第二季度末持有SpaceX股份210亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxOV3BXUmpSekR6Tjc3OGpVclVfRkw4NXlGNGYwUFp5SWRYX2VXMUpqUVFOMFEyNksyeEltU0hzQ2ZIU1VwWDQxMzFJMkZsX0o1SFFqejJhZlJqdzFfZDdEQVItYU1hZjdXdzVCaDlVTmhzejhFczdTMnBGVHI3NVRPcUVmT1RKMkxhOVVLUW9ZVUxKbWc1Z2tzX3BSdlM?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达持仓SpaceX210亿美元披露，融资与战略关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-spacex-164
+  date: 2026-08-16
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "210亿美元，黄仁勋投了马斯克"
+  quote: "210亿美元，黄仁勋投了马斯克"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi7gFBVV95cUxPQTBiMHFVYU54U2VtQ1hHM1JVaWRZSTJBeDNoVFk2UUJYOWt5WHljU0szUjd2WVQxUERPZVAwZl94Z1FyRVFHY2lZbFZ4b3BSUzE2cDhudDRGT09OVXgweTBYcEtfNE41eG92WTJsS3NnY3Y1VHptYVFEVTZqU3VmaDBqOVVvYmFBNV83SHQ2QW1MNEdueUlKM2lLX1JKZ1lTclhMVkd5UlhGYXBOZXdja29aaWNmR0tSOXFWNnY1QThsVl9jWjlDSjRiT0swU293eXhNSDZMQ3hIV3F2M2FudVpOaU5nUXVPLTY4NXBn?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):黄仁勋投资额度确认，融资与战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-spacex-165
+  date: 2026-08-16
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达持仓股票曝光！位列SpaceX第六大股东，持有市值仅次于英特尔"
+  quote: "英伟达持仓股票曝光！位列SpaceX第六大股东，持有市值仅次于英特尔"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE5wTGFjcDhrcEdPLTkwNUFEUVM5QnJYTUt3eUpiWTJ1ZkR2M2p5ZHo1UkFrZ1JqU3VjanNaUEhyV3dETUN4dHNUaXBwRHdDd2tibGY4a21jWmxOQmg4WkJXYmZXQk1tTXh0aTlWN3dXa1lpbmkyOEE?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达成为SpaceX第六大股东，融资与股权结构事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -565,3 +565,34 @@
   source_type: media
   note: "LLM 预分类建议(high):GLM-5.3性能指标公布，产品能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-14-zhipu-035
+  date: 2026-08-14
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "智谱正式发布GLM-5.3"
+  quote: "智谱正式发布GLM-5.3"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxQNC0yUy11M2wxRmI4OHBMT2FfenBMcmxNNnFUUnV3ZEJoMV9NaDVneDI0YmNrelVybi1EcVR2RnFFYy1NZ291Y21EVzRQcUpHTDhsTVRTYUNMYTBzTk9pdEZzT0Vwd3pUMkFyTmxwOHoxRHhFaGk5bE5zQ0JMX2hidA?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品GLM-5.3正式发布，重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-zhipu-036
+  date: 2026-08-14
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "千问办公引入智谱、DeepSeek，打响模型聚合大战"
+  quote: "千问办公引入智谱、DeepSeek，打响模型聚合大战"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMGZQNVpQX1RXXzhVWEwxSUdwdGRnZGRuc0RrLXk5dEdFODh2TmE3TzJCVFJnNDVuc3ZaZDNyZDdOeHhEMUZ4bkpHMDFhMkpuM0pLckVFdnR6RnlEZ1VoM2tBQ1lkM3FzT2hIalg4YVFWMXdWV1gtbW5VSEY5ZEotemRsRFlWMHRmMWZ6aFcwNmNQT00yTkdKR3ZBNHNHa1R4TlpOTUVQQURMZw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):智谱模型被集成应用，市场合作动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

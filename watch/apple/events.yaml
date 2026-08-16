@@ -2354,3 +2354,139 @@
   source_type: media
   note: "LLM 预分类建议(high):中国定制大模型开发，战略重点市场布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-08-14-apple-155
+  date: 2026-08-14
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果秋季发布会预告：除了折叠屏 iPhone，还有这 10 款新品"
+  quote: "苹果秋季发布会预告：除了折叠屏 iPhone，还有这 10 款新品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xNmN3ajRfVF80R2xXNkFqQnpzUGRXM29BU1hRejRKdFdVNnJKZjZpNEc4R1AzejYzZGg4bmoxdzhwV3l3aUhhNkVWQ2RiRUNrd0Z1SkdUdlpwQ3Fv?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):秋季发布会预告含新品信息,但标题党成分较重,需验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-apple-156
+  date: 2026-08-15
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "No.8 放着 PyTorch 不用，苹果为什么要自己造 MLX"
+  quote: "No.8 放着 PyTorch 不用，苹果为什么要自己造 MLX"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4xZnhYWGNlcDhYY2NYbzZkWjBOdW1aZ3lyWkdyNFBRSWI3cmdCN3dGQWlYbmt3NGlmSjZYcUN6QnlYQ19XTEpGZG9wdTh1M3ljUmZQdDVfZ1JsV2Yz?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):苹果MLX框架技术分析,产品策略信息,有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-apple-157
+  date: 2026-08-15
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果中国官网短暂上线千问支持文档后下架 Apple智能本土化合作引关注"
+  quote: "苹果中国官网短暂上线千问支持文档后下架 Apple智能本土化合作引关注"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5oMFFfNnZlektjdUR6c0ZqRXlsNW90bi1ybFlCMFhyUGRDNzE3Qm8ya29oZ1pHRGxYaUI4dE1IbnNvQU0?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果官网删除千问文档,涉及合作调整,舆情敏感。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-apple-158
+  date: 2026-08-15
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "刚上线就删了！苹果官网删除Apple智能接入牌九网址登录手册"
+  quote: "刚上线就删了！苹果官网删除Apple智能接入牌九网址登录手册"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE5JOXdiOExtVHdka25YM1ZxMTgwaERPeEQybGtNY1ZiaDVQeUM2ZDYtUFFxLUJhYnUzS2NzbnlNNGt2TUVITFhBVG4tWFJ3NGhraHdHdENDQQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果官网删除Apple智能手册,与i7同源事件,合作变动信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-apple-159
+  date: 2026-08-15
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "别人争造最强大模型，苹果坚持赌“入口”"
+  quote: "别人争造最强大模型，苹果坚持赌“入口”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAFBVV95cUxNaGNJeEJiUmZJcnlBbms1MU9HQWFMVDhleUNqZElTdlFsTlo5cTJndk9jRWpGa0x6STJ5NEc3aGVfNVhCRWtDMkpQRWJrdFhPS2VXemdvc3lMelZCWkNqWEoyck1HcnpOeDdEX2NuVHVHZ01pRDdQYzIzRUxIYzc3STl6dE1mNy01b3A1eTFmTTNIOGRCcjFCN2x1R1hTNXpYbDNQSVBJcTdENFhUeXhsTHE0dThDc1oxMzdQRA?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):苹果AI战略分析评论,体现产业定位,但观点性较强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-apple-160
+  date: 2026-08-14
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果地图Apple Maps广告位招商中：商家最高返现1000美元/月"
+  quote: "苹果地图Apple Maps广告位招商中：商家最高返现1000美元/月"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zYWRGU0NqM3NCRWR2TGRnOHBCOVNVeFFpczlLQ2VUYmZfUGJfckdlMVVMYllnWWVvd2Z0R0Rkd0syRjJ0cXVNdWtwZlY1Q0piTGc?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果地图广告商业化新举措,产品运营事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-apple-161
+  date: 2026-08-15
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果自研中国版大模型 阿里低调“撑腰”"
+  quote: "苹果自研中国版大模型 阿里低调“撑腰”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgJBVV95cUxQZ0h4RlczdG5GR2YycjVsS3dXbk81VlNQMUZsN2RFMDBTOUw1Yy1GY19lZmtQVWFoa1piQ1dDYzJHb2VIRm96N2NMcW4yQmpOcXdMdGZDQzZHMWFFNmh3aEJ4ZXh4MWoxam5hdHdwTEpBOWc1cU5KdkFUdVFWNEhETlk4RC01VEY1Z1RTZVNpQlFNQlpiNUVvbUlzSmpJbUxLWEYyTVFELTV2ZGNoNFdvMXQyTWVUUjBIYXh6SnZfUjFpZkRwVmJtR2J3bEJ0eEEyQnA5U1E3blRPNzVoT1NTN21kQmpEc0UzWTN4Q0M2YjBmUEs1d3VTT3NoWVBEZFhlT3lBUkFrNHV5bTVHcFNUaHdXUXQxR3lRaXc?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果自研中国版大模型与阿里合作,重要战略信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-apple-162
+  date: 2026-08-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果折叠屏将冲击行业TOP3：和三星华为形成三足鼎立之势- Apple 苹果"
+  quote: "苹果折叠屏将冲击行业TOP3：和三星华为形成三足鼎立之势- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mclNVRmJPMDcxM1ZYSmI1MTM0VVFJbWdqU2NLbFo2UUg0YmdIZ1hlQW9HWFRIc0xGQ2lSeXNXMTVrbmVGbFJHX3JLbV9vakxGWXp0S21XeXZnaEFXRGVDdQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):苹果折叠屏产品预期,新品类进展,但含预测成分。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-apple-163
+  date: 2026-08-14
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "曝苹果已与阿里合作训练大模型"
+  quote: "曝苹果已与阿里合作训练大模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9YVGtCYk5qbVVZZGhoZnlDbEtxWGZmZ2ZJV19KSk10Y2xmR2c2WkYtZGhwRHhWdGk4Tmg5U2xqNDJKOVZYOElLYQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果与阿里大模型合作曝光,与i12同源,战略合作确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

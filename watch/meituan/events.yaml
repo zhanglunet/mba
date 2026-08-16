@@ -1016,3 +1016,19 @@
   source_type: media
   note: "LLM 预分类建议(med):AI入口收费策略调整，涉及商业模式变化，需确认具体指向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-13-meituan-066
+  date: 2026-08-13
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团骑手“等灯停表”功能已在北京试点路测"
+  quote: "美团骑手“等灯停表”功能已在北京试点路测"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxNbmJiRzNJOS1LOVk2UnpOVV9iZEkwbEF3OGp4RUd5X3d5NGhDZFlKYmhRZkhoaHJXdXktNzR1SlN1MHJfbVBYYUluZFFBMEZhUmM1ZGU4Y2pxekFsWWNZc2RqTnZ6MnJOYnNZLUx3YjVrNG5kSjR0SFJNQ0stRC1WOFlRWXgzMXVuU3VEdHRCN0JQNC11UjZn?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新功能试点上线，产品更新但规模有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

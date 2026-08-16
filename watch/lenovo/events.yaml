@@ -1224,3 +1224,124 @@
   source_type: media
   note: "LLM 预分类建议(high):CEO回应黄仁勋预言，战略投入兑现，高管观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-08-13-lenovo-080
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "大行评级｜花旗：维持联想集团“买入”评级，首财季业绩强化AI驱动结构性增长叙事"
+  quote: "大行评级｜花旗：维持联想集团“买入”评级，首财季业绩强化AI驱动结构性增长叙事"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Hc2h5Uzd2bkl5akltWWlOZ0Fab1g1NzlMVGZ2ZlpGRmRMTTZ5dWRIeUNNMGRLVl8tLTJyTnhxbjExRWJNWlduVi12VXhDYmE0TWRF?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师评级维持买入，基于Q1业绩强劲。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-081
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI服务器爆发式增长！联想Q1营收同比增43%，经调整净利润增176%，股价创历史新高"
+  quote: "AI服务器爆发式增长！联想Q1营收同比增43%，经调整净利润增176%，股价创历史新高"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxNNlpYQ1RZODE3NXU0d21EM2VsSV9jcmdNLXdsLS0tZzMxVEZyOXBEUmgxRFdPQXBZZHY4bjVNZVQ1YVBlczlpVGdQYkNxTVgtaXhjRVVhUFlrNUF4dkpoakZSWE5zVU1mSkdBTGc0NHJldnRCRnBWXzhCcEh1S2RBVjlFZ24wV3Jzam5UN1FEaTZBMVZL?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q1财报关键数字公布，营收增43%、净利润增176%。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-082
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "港股收评：恒科指涨0.33%，有色金属股重挫，联想业绩超预期飙涨20%"
+  quote: "港股收评：恒科指涨0.33%，有色金属股重挫，联想业绩超预期飙涨20%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wZ05DeVlrNlRWOWhKODBTXzFKUVRxNXRZWG8wczBHblp6VmZXa0RoaC1icllIRDl3c0VjSDRaaFI2ZUtEVmpBdFhIQ3BjOXhGSXdZ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报超预期，股价大幅上涨20%。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-lenovo-083
+  date: 2026-08-14
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "中金：基于ISG盈利能力改善 维持\"跑赢行业\"评级"
+  quote: "中金：基于ISG盈利能力改善 维持\"跑赢行业\"评级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfSHA2cGREUXdkY1hQbW4yVk9MYjYwc0hIZmdKU0ZqZ2VteWNCb1hQaHVVRzU2TFNVRkFMdEhtQzF6c3JfaXFlRjNIeEpYLVdYeTJn?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分析师基于ISG盈利改善维持正面评级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-084
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想ISG营收超预期近四成，利润率高达9.1%超预期近两倍"
+  quote: "联想ISG营收超预期近四成，利润率高达9.1%超预期近两倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE05OTJXbW54ZFBsOVQ5ek5Vem5QaVZxSE1zVGhwa2pDQ2F6UmV0TmdVNEtJT3FxcVdmbER0MXM3MTdQWUFPek9ZSHE5WkwtdW8yS0R3?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ISG营收利润双超预期，体现业务增长。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-085
+  date: 2026-08-13
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "杨元庆：有信心提前实现千亿美元营收 进度比预期要快"
+  quote: "杨元庆：有信心提前实现千亿美元营收 进度比预期要快"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XbkZkZjJQM0xyT1ZIUGNzemZ5MzIwMmFDSXpGSmN0RURtZ0ZTbV9faUNNVF9iNEpIMGRZYW9WaW9rMUtlQ0JKYUJGVlJLNjM0d3Yw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO表态提前实现千亿美元营收目标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-lenovo-086
+  date: 2026-08-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Citi: Lenovo Group (00992) posts first-quarter results far exceeding expectations, validating AI gro"
+  quote: "Citi: Lenovo Group (00992) posts first-quarter results far exceeding expectations, validating AI gro"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUXdLWVhSQTU5QVlhTEZpbnpmYS04dG5RZkJRMVlhdFljMnoxTXNIb3FjVkQ1X3JyN2ZxUHZqMXJyV1RjZ0pSNEY2X00tZ0o1VFltQmFRcVpCWk1KQ2pKYXl6QXB5WUgwZlBPVmdORFJSN1JhTHhzQTBCTDdIUEFFWDREbnR3N01LalhicWU4TFlVX2pSbGk1TGdkVkI1UGI3OFo2X0NLTTgyTW8?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q1财报远超预期，验证AI增长叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-lenovo-087
+  date: 2026-08-14
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "联想次季营收新高 认股权证拖累盈转亏 - 财经 - 国际财经"
+  quote: "联想次季营收新高 认股权证拖累盈转亏 - 财经 - 国际财经"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83QWh1bG5EbG5UOVkxZm02cUVZSV8yZDFtZktFS1dDVDZ5dGhEemZGNnkybmZWTWlOQlZ2Z2ZWWURRQUdyN0ZoQmM4bHdkQkQ3ZkJEblZaRlhRZnhKNWtVcUFLbzU2V0E?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Q2营收创新高但认股权证致盈转亏。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

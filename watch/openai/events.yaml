@@ -2617,3 +2617,139 @@
   source_type: media
   note: "LLM 预分类建议(high):高管离职+IPO前夕，治理稳定性风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-08-14-openai-170
+  date: 2026-08-14
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "速递｜OpenAI一年内再换CRO，Wiz总裁Dali Rajic接任"
+  quote: "速递｜OpenAI一年内再换CRO，Wiz总裁Dali Rajic接任"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0wTmVuLUJpc0RJSG9McVZ0cWxQMlljMFNOQWtEUHhqZnF0blZDNkd5YVVQRG1FVzFKclhjQU9VVmVhcElMN1FCaEdPOWozU0k3VTlObVVxQVNhaUxs?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):核心高管变动(CRO换人)，具有组织结构舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-openai-171
+  date: 2026-08-13
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "GPT-5.6：68%少错，免费版升级了什么？"
+  quote: "GPT-5.6：68%少错，免费版升级了什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBOY1AzZTZTRnh1blo1b3VqWHlfMnVGLVBzVVFJQUpkR3hVd3BPWkhQRkRhekZ3eTI4OGpacUlLUV9EbHpXV1dENDJoVHppcUNxZXlRSWhaQkItTVVq?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰产品GPT-5.6版本更新发布，属重大产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-openai-172
+  date: 2026-08-16
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI提速狂飙16倍！GPT-5.6多智能体V2上线，741轮对话1秒打开"
+  quote: "OpenAI提速狂飙16倍！GPT-5.6多智能体V2上线，741轮对话1秒打开"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTFBqRXc2N3RMdENRQVplNUwyY3RLQXVJYXpZanJ2V0hqaW9peThSdTBUc1k5aFlDZ0xmTUxld0lQcUxxNVVwRWRkZlVXbkNkNTg5anJZd0ZVNzM3UENVd0RIeFphWkc0SUJvS2hBNA?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):GPT-5.6多智能体V2上线，性能提升16倍，旗舰产品重大更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-openai-173
+  date: 2026-08-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "消息称OpenAI 设专有邮箱，员工投诉可直达CEO 奥尔特曼|收件箱|伊琳娜|停车位|官僚化|萨姆_手机新浪网"
+  quote: "消息称OpenAI 设专有邮箱，员工投诉可直达CEO 奥尔特曼|收件箱|伊琳娜|停车位|官僚化|萨姆_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAJBVV95cUxQb1l5Yk1zWFZGQ3VXMGc3Z2VqRk5jMUtQeDZDLWl3Uk5CUU4ydGxvUHpQRVktS25hRVpkLXluTHNRTWswYkYyLUw0QlViLXVRQmJYOElkUWQ3cC1lN0trWWUwdzVqNENwcnFXeTN4bEZwRmNuZU1BbnlpSUdIYWEwN3I4STR0Y1pvNDc0TDFrY05vVmU1YzBGVlNkeFBISHRnRTlWakdPSGFEMWVOUjkwWlIyOEtvQm5NX18yUndHWEpSSTV4dENXTzZNM2ZFMmJMSUE5bHAzLW5fakd4eElKZXlONFpCR3lER29PU3dSWDhrRjdNWnU1MlBUQ1k5MHowNk1jMkIzZXN0R09EME0xWXlkRVA1VUVC?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):员工投诉机制设立，反映内部管理动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-openai-174
+  date: 2026-08-15
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "上市前夜，OpenAI遭遇“高管离职潮”"
+  quote: "上市前夜，OpenAI遭遇“高管离职潮”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTFBIOVdKTUVHamt0N1JuUUFrSk5tbHZLZmhCR0gtQ0dGTUl4SmdyLWdlQ3ZianB5YS1tN1Bvdy1FOFppbFYzLVdXaml6ZjcyQWliQ3VxY05PWFZxQUFfYS1udl8tMDdLejhw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):高管离职潮，IPO前夕组织稳定性风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-openai-175
+  date: 2026-08-15
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI彻底震撼数学界，80年核心猜想被破解，菲尔兹奖得主惊呼坐不稳"
+  quote: "OpenAI彻底震撼数学界，80年核心猜想被破解，菲尔兹奖得主惊呼坐不稳"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE81VDFXMGI4MHh0RHJwbFg5MjdhNE51LUJyY3dIWTFHazF4VW00Y2NZRmZVN0lJbGZXc3lQWFZVdloyTzliMVVGNHMxbkJWQQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI能力突破数学领域，品牌技术影响力体现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-openai-176
+  date: 2026-08-16
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI冲刺万亿IPO遭遇内部动荡：高管争宠，员工受挫抛股套现"
+  quote: "OpenAI冲刺万亿IPO遭遇内部动荡：高管争宠，员工受挫抛股套现"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1SeFNIZ1dJLUIwODRzRXlzLUVXVFY2UkNGM0tZVVhvM3RFelY2UkN4bmFnekZ3ZmNsekFycGVhbnFGUnlUTlRNb25wZXg?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO前内部动荡、高管争议、员工套现，组织风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-openai-177
+  date: 2026-08-15
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "AI智能体网络威胁升级 OpenAI扩大Daybreak安全计划"
+  quote: "AI智能体网络威胁升级 OpenAI扩大Daybreak安全计划"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5CXzJQazJlM0xSY3Qya2U5SlNHRThjT015ajIteTc3OG4yR0tUZk1rNHNVUFBObWxkWWFWak1tUTg1ZnpXTWpjZQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):安全计划扩大，应对AI智能体网络威胁。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-openai-178
+  date: 2026-08-15
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI据称完成70亿美元员工股票回购 IPO前释放股权流动性"
+  quote: "OpenAI据称完成70亿美元员工股票回购 IPO前释放股权流动性"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1GV1JyRkpVOUV6QmtSV29td2JUN3hwODFMMjFNdVA5dVpIM3pQTm02Z2FydmJ4S0ZDV19ZejNEWno0Ql9xU09mdg?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):70亿美元员工股票回购，IPO前融资/股权重大事项。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
