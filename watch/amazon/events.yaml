@@ -1977,3 +1977,19 @@
   source_type: media
   note: "LLM 预分类建议(high):亚马逊游戏运营权交还，业务调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-14-amazon-130
+  date: 2026-08-14
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "再度套现！亚马逊市值破2万亿之际 贝佐斯将减持约50亿美元股票"
+  quote: "再度套现！亚马逊市值破2万亿之际 贝佐斯将减持约50亿美元股票"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxOMVBCc3g4YXRhNDMweFh4MkdqakRuVlNmZ21aaUwtQks3dW4zdHlSazdMOERPV0hvNVY5ckxhVmpTYVVoRlBLeFUyQnlQelM2ZExCZU81TElRc2g2UWp6NklVeV94Y2JMNFZ1azFrSElzcnZzMWhIcXBIT2RubXd1cW1QYTJiNTJmMkd6VVUtLTRLQQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):贝佐斯减持50亿美元，重大股东行为信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

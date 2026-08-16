@@ -2125,3 +2125,94 @@
   source_type: media
   note: "LLM 预分类建议(high):开源模型与智能体合作，生态建设。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-15-nvidia-140
+  date: 2026-08-15
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达开源了Nemotron 3.5 Lightning ，我突然意识到一件事"
+  quote: "英伟达开源了Nemotron 3.5 Lightning ，我突然意识到一件事"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1YUlFESUxlYnA4Rmo5QmNzREFuSE1OVjh6VWlZblhiZ25FQmhUVXhlQzdCQlVSaWJGV09lQU9kaWR0R1pTVUZPOVVfcDVEV0MtWHBwNllld1p0UGla?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category]
+  source_type: social
+  note: "LLM 预分类建议(high):英伟达开源Nemotron模型，产品战略动作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-nvidia-141
+  date: 2026-08-16
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "边缘AI：英伟达对嵌入式系统的影响"
+  quote: "边缘AI：英伟达对嵌入式系统的影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE16VnFrT3RPODdYT2czSlp2OHFmTlRNblliU1hwaGItd25sSTE2UldmX0VYTFhZaXRCNFVHOVNlSWh3R0k0ZGo0bm9BOXVHUk5HOGFPa3ZIMHA0aC1k?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):分析英伟达在边缘AI领域影响，战略分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-nvidia-142
+  date: 2026-08-15
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达量产CPO交换机，用于超大规模AI集群|NVIDIA|以太网|芯片|鸿海|激光器_手机新浪网"
+  quote: "英伟达量产CPO交换机，用于超大规模AI集群|NVIDIA|以太网|芯片|鸿海|激光器_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxNanFEM3N1V3NWQzM5TEJTS2h3VkhQQVVuRExLV1I5WVd1Zng3U1NrLWNxQzd5cWRTZ2FFX2RhcDBtX1ZQdkNDaWtlZUVMY1JodTEwMkx3Q2J1emRvWXNrdklYT1dHV0k3OEVHX2tHQU5veUFwZXNuUTFLdzlUTXhwQ0Z6ck53dVk?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达量产CPO交换机，AI基础设施重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-143
+  date: 2026-08-14
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达加速推进下代芯片架构：直奔台积电升级版A16制程 制造压力陡增"
+  quote: "英伟达加速推进下代芯片架构：直奔台积电升级版A16制程 制造压力陡增"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE53aGdPY3lSUVZEVTE1RENHM3MzTFJCOVVrNmdKU1A0bHp2bDIyejJxb1FZVXZDU0FzajJXR0RXSHRYcy1feHpfeFYwWm9Ddmc?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):下代芯片架构升级至A16制程，核心产品路线图。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-nvidia-144
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Larsen & Toubro旗下部门赢得英伟达AI工厂合同"
+  quote: "Larsen & Toubro旗下部门赢得英伟达AI工厂合同"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxOekxyU0pNTGppTXVCMjJwQ0ZwRnRUUDRGUk5WNW84UGVrWl9xU3pIdGlOTm5HR25TRWtjUlBTWTJSX1RBdHU3NDM5SHV0c1lqbTYtRWE0OVpqdWJDRWdIczh4S2Vyc2czVEdiLWxJYUU5YVpod0x1eE51VkUyazlIWmxVMmd4SFhabnlSSTgyYkNIVjJ4ZWp5VDlOWmM0dw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达AI工厂合同签约,体现产业链扩展,但非旗舰产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-145
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "LG携手英伟达三大领域合作 明年首季推双足机械人"
+  quote: "LG携手英伟达三大领域合作 明年首季推双足机械人"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBPT21PU0xDcVZLMFhESC13d0VMTkpPYlMxMHViZEQtdVVrZmY5elFJeGpVX0xUM1ozdS1IdmNVUjJsMHhqOUV4eVpvVHBvSUxlREFvMVZ1RmdIbjhfOVE0ZUZhdEtqMGRSVE1ySE9lOGdzdw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):LG与英伟达合作推机械人,产业合作事件,信息量足。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1645,3 +1645,64 @@
   source_type: media
   note: "LLM 预分类建议(med):华为新机发布预期信息，产品动向值得追踪但缺具体时间。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-13-huawei-108
+  date: 2026-08-13
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "HNS 2026 | Huawei Releases High-Quality 10 Gbps AI Campus Network Technical and Standard White Paper"
+  quote: "HNS 2026 | Huawei Releases High-Quality 10 Gbps AI Campus Network Technical and Standard White Paper"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxQYWh6REtxX0xZeG9oNm15cGgxQmNCbDZRNVZrU3ZYZ24ycVkyNXJtOTRnY1BfQmhLMTJ0VTF3SUxwbUN4ZnpmVENzM0Nja1owSVJjeXlnVGR2REllWWh2QXMyZlk5ZWxWWDdCQ0Mxd24ybDUxaDFOQks2aFcwX1lTWnhhYnJNcTFFNmt2QzFXQkJrc3ZqTzdjMFFlY2FoQlVwa09vczQ2MUlYTmNySHJ1QjNDcmN3QQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):华为发布AI校园网技术白皮书，产品标准更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-13-huawei-109
+  date: 2026-08-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为手环11Pro正式开售：内置鸿蒙6、续航14天"
+  quote: "华为手环11Pro正式开售：内置鸿蒙6、续航14天"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9EVFkyQUVmTW03V2J4MWpBUVk1b0E2d19FWU1pVjBfQ1RuVE9kY1o5UkQ5NjZPcFBCQWNobnYyajFVQW1SYTVtRjRSUnZvMkNtRzR4VElpY0VQWVQ0?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):华为手环新品正式开售，产品发布信息有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-huawei-110
+  date: 2026-08-15
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为WATCH GT 7预判身体状态，1588元起"
+  quote: "华为WATCH GT 7预判身体状态，1588元起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE1lcGpzUGdoRVNHU2F1bmR0YUJ1SklCWk5PRzlIYnNCN2xwUnhIam9OeGhLYmwzakwzSV9iYjZiQnlPWm80bEswbmhqQ2tQeW1xMFJRaExUa3JxVTdHVW1EencyMUFpSjF3cTkyVHBSb2lDQQ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):华为手表新品发布，价格公布，产品发布信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-huawei-111
+  date: 2026-08-16
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "9月发布！余承东阔直板新机将至，华为Mate90系列同台发布"
+  quote: "9月发布！余承东阔直板新机将至，华为Mate90系列同台发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1nMkNhYWhNVE1QTzdta3dudWtHYjFUZlpsVTMtZXQtNnNUeUFVQUZZZkxjd0hIN1RkQ3JSVmxZYTV1T19IZFpyenhUVWxpVm9DX3JxMWZQUE9wTEg3djV4Nl92NjFSUXpQNXFiQXhCdmszaVNGSDY4YnFRR29CSnM?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):华为Mate90系列发布预告，重要产品线发布信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

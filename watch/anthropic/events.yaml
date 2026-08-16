@@ -2747,3 +2747,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Claude产品功能更新引发用户反应，有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-15-anthropic-180
+  date: 2026-08-15
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic发布186页风险报告：Claude安全漏洞浮现，最强模型限制开放"
+  quote: "Anthropic发布186页风险报告：Claude安全漏洞浮现，最强模型限制开放"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5GaW0xSlA0b1dxVy1UT1N2NTRFZGJTNkZLVU96NEd3SDZ6dGFiZVBTOENjTWJ1OW5LcXpITlk2YlBrcTBnek1PNGZQRDZfcHY2T3N5bkhVN3haVzlC?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):发布风险报告，披露安全漏洞，限制模型开放。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-anthropic-181
+  date: 2026-08-16
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "三个Claude互相封号、投毒、栽赃！Anthropic：一个AI安全，一群AI未必"
+  quote: "三个Claude互相封号、投毒、栽赃！Anthropic：一个AI安全，一群AI未必"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9UckxOcTN4ME91MWc1SlUwMmhjNmJ1a0pnb1p1NVlWSDFaYUtMZF9DanRhQnp0MVVZU1pNOHVSU3lHbWozQ2NSMW1va2U?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude多实例安全测试暴露风险，涉及AI安全。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-182
+  date: 2026-08-15
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic将为Claude生成的AI内容添加水印标记-人工智能"
+  quote: "Anthropic将为Claude生成的AI内容添加水印标记-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Sck9EVjBjRUZsb0ZKSndDbGxHMjNMVW56a0FIZk5neE5mcTJORllCNnQ2V3psRjhfVEQ3MVFBZUFiR2g0anpVT21jTl9mWi1EWWpSd3NzdVh5Y2RRbHc?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude内容添加水印，产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-183
+  date: 2026-08-15
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "刚刚，Anthropic给Claude装了隐形卧底！全球生效"
+  quote: "刚刚，Anthropic给Claude装了隐形卧底！全球生效"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1CUS0xUURDUnpZWlRKUXdsOWlDM1FCdzRMSV8wNzEzNHl5bTVLbGE0QmR6WGVCbVF0RTVUNUltdFpsV1NoN3dCbEJqRjZSQ1ZyNUwtTWZxcWdKUUpJUWJnUUJ4aF9HcnFMSXRqUjRWYjhSYWdJSlgzdEFYT1o3UDA?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude新功能（文本水印）发布，产品更新但非旗舰版本重大迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-184
+  date: 2026-08-15
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "国产模型紧追，Anthropic IPO前“自曝”新模型与安全事故"
+  quote: "国产模型紧追，Anthropic IPO前“自曝”新模型与安全事故"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE1BLWRCaXh1RGhEZ1puWWE3MDNzTEoyaFZibHhTclhxb1FJOURRT3pYdFhERE5mY1NTNExQU1VHRHlBQkRVUUVHRW1zY1d2SVFUeW91N2tjdkZRblJzd24yYnY3bExBVkJLWS1RbA?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新模型发布+安全事故并提，涉及产品和风险双重信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-185
+  date: 2026-08-15
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic 解释了 Claude 文本中的水印将如何运作"
+  quote: "Anthropic 解释了 Claude 文本中的水印将如何运作"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxPd1ctdWVGUDhCczJzSVBCQTJ4WlRUQVlNNUpmTjhWSzZlVFNMMFdYWl9zNVFweVpMbV9XYWxPWnZsNG84aTl6T1doaTBqM2FXLTJnWmk1cGdzMWlNUXkxanl3Z1l5YjcwMXhTaG9tVUpoaklJaXBrM2xrUDAycmR6OTRBZ3N1RFVGelRQa1BzMkxrVWx1YVpvSDl5SEVBZmNUcWtBeg?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):水印功能技术解释，产品特性说明，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-186
+  date: 2026-08-15
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic水印计划引发争议Claude用户取消订阅、考虑中国模型- AI 人工智能"
+  quote: "Anthropic水印计划引发争议Claude用户取消订阅、考虑中国模型- AI 人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5JcmdsTGx3UGlxNTdzQzNxMjBLQnJSUFpzMDFPUlFBSHdKeU95YjlnMDZjcXZkcGQtb0t1QTNyS3JTdm5sMHYwd0pUdEJOTjZvU2FobzR0RjBGS3k4aE5rbw?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):水印政策引发用户反弹和订阅取消，负面舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -675,3 +675,64 @@
   source_type: media
   note: "LLM 预分类建议(high):特朗普签署无人机关税公告，监管禁令已下达。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-14-dji-044
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Osmo 360 II 背后：大疆全景影像的「三代进阶」之路"
+  quote: "Osmo 360 II 背后：大疆全景影像的「三代进阶」之路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sYWVxWmczVWhiUlJRNWZCMVFqaC1tYXo5WFU2dTdfdzZNd0FCUHhuRUxVcXN2SEJuVDVsbGNFN2E0ZW1DMk53TE9JTUx6UEJiOUVJOFpLM1kwdTVl?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Osmo 360 II产品演进介绍，产品更新但非重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-dji-045
+  date: 2026-08-14
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "大疆与影石的这场“内战”，正在上演50年前东京湾的故事"
+  quote: "大疆与影石的这场“内战”，正在上演50年前东京湾的故事"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5sRWVkVzY3ekx3TVAwc1Y4R3pOaHd5Tm95Y3pRbTlKX3ZISzY1MG5wTzNXQTZKeklCeWp0Q05CX3owZFlCa0s5UXdRTGxwUG9rckhEYWVrN3dJMlUt?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):大疆与影石竞争分析，市场竞争态势评论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-dji-046
+  date: 2026-08-15
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美国法院罕见发回大疆黑名单案"
+  quote: "美国法院罕见发回大疆黑名单案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE96RWVmcXNYVUNHMTRUek4yTmZmWkxIR0I5ck5fUVQ1OW8yVVY2Ym1vN05MUkdNcGtsTUEyVFhPdTYzcHJMRXFCUVFfVU1Pb0R1Y3dpei1VdTNjWjFaSkp2X2ln?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美国法院发回黑名单案，监管诉讼重大进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-dji-047
+  date: 2026-08-15
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OR | 大疆再得翻盘之机，五角大楼黑名单案发回重审"
+  quote: "OR | 大疆再得翻盘之机，五角大楼黑名单案发回重审"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiO0FVX3lxTE1PNnJnX29GdkNyVWpvaFRaQTFkdjVHQ053WnRwbXBqS0lWQjJTUkJIYldDazl1eGZFZWNJ?oc=5
+  fetched_at: "2026-08-16T03:14:51Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):五角大楼黑名单案发回重审，监管诉讼重大转机。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
