@@ -1976,3 +1976,64 @@
   source_type: media
   note: "LLM 预分类建议(med):特斯拉飞行版Roadster合作传闻，产品创新信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-17-tesla-130
+  date: 2026-08-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉新一代Roadster据称将于本月亮相 会“飞”的车要来了？"
+  quote: "特斯拉新一代Roadster据称将于本月亮相 会“飞”的车要来了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KeDhYTU1PVjBfNTNTVHZzZ3JUMW5GRGo2dGFCZVZyQ19UMjdJSVVEMy1yS0xQd2FQQl9Id3M5TV82R01XYU1tY2djT3B4MHVnQ093RklYVEVhN2ExLThGVQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):新一代Roadster亮相传言，产品发布预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-17-tesla-131
+  date: 2026-08-17
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "馬斯克Terafab超級晶片廠 為何落腳德州格縣？"
+  quote: "馬斯克Terafab超級晶片廠 為何落腳德州格縣？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9WNU82TlFFMWtoZE0xNFo2RURlS2MyalpjeUJGYnRRaXljd3hOVUxwTGpValZreDd2YUVzTkk3UkxsS1JJRmVrNDZUZWJuMWNjZmJRWHZOZW4tZnJaT3JVdNIBZkFVX3lxTE5lbzZQOHJtTEV5WFdta3ZJczdqdkZZc2xUd1FPSVp1STZoNkZCN3BxSHQtTG9iNUFFdUVndndwSnBiZGFhdzhKY3pWWXNNRlBzMU53XzNrR2Y0NkV3UU9HUkl5UzdLQQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Terafab晶片厂选址德州，战略投资动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-tesla-132
+  date: 2026-08-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "客服回应特斯拉监督版FSD入华- Futubull"
+  quote: "客服回应特斯拉监督版FSD入华- Futubull"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxOT3VvVzBidkhMQ1R0Z0twakE0d3dGOW9sSjJfLWJVZ3BwNFJyazkxUlMxd21EdUpiN29KTGRKZ2pWT1BjUC1JOHl0YjhLVjVrS1hMLWhiLWZMMFpja2tNUVE0TUVsWTFnQVhKUjhDUUg4MTRaQm5PVjRzVWNzMndCVUtjdk02TldNYVlTUjQ0UDAzc1RKN29CbFAtX1MySXdjcmY4RGNOQQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(med):FSD入华进展客服回应，产品本地化动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-tesla-133
+  date: 2026-08-15
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Tesla中国业务要独立？ 马斯克若真把特斯拉中国业务独立，市..."
+  quote: "Tesla中国业务要独立？ 马斯克若真把特斯拉中国业务独立，市..."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE5aYUgwUFNvYTdsaUx3Ym4xMmFnZGlpQVVGR2Y0WTlwWkN2bnIzRERRR3JMQ2ZESjdpWDZxR2JTLTdaTFRkRWlFUFNlUGVHeGJtbU5NTlNKdl9VUC1wSG9WWnhrU2s?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):中国业务独立传言，组织结构重大调整预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

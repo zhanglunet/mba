@@ -2753,3 +2753,94 @@
   source_type: media
   note: "LLM 预分类建议(high):70亿美元员工股票回购，IPO前融资/股权重大事项。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-08-16-openai-179
+  date: 2026-08-16
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "1.228亿股！黄仁勋投了马斯克；英伟达大幅收缩对OpenAI数据中心的融资担保；OpenAI奥尔特曼：大学读四年可能有点久，两年就够了｜邦早报"
+  quote: "1.228亿股！黄仁勋投了马斯克；英伟达大幅收缩对OpenAI数据中心的融资担保；OpenAI奥尔特曼：大学读四年可能有点久，两年就够了｜邦早报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4zQml4SmYwT0g1U21hMjZoVzBteFhMNlQwbER5NFF4V1luRHFQbDVXUV82a0VWc3RFczZqa3NCbWd4N2NldzA5UXdQQUFKNW52WktZNTRoVTlvaWR0?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):英伟达收缩OpenAI融资担保,融资政策变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-17-openai-180
+  date: 2026-08-17
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI企业业务收入超越消费者业务 整体年化运行率达400亿美元"
+  quote: "OpenAI企业业务收入超越消费者业务 整体年化运行率达400亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFB6MHhCa1pkU1JRSW1mOThjdlhvQnQ1c3FjRUhLTFFMQUxQelZaSVd0VlQ5RTdxbzFMSDdEY2ZzY28weFBZUnMwQlhVZ1R5SEJFYS0wQVp5a3JLM2g1S282cXB3?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI财报关键数据,企业收入超消费者。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-17-openai-181
+  date: 2026-08-17
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "6740亿！曝OpenAI继续找钱，拉来英伟达担保贷款"
+  quote: "6740亿！曝OpenAI继续找钱，拉来英伟达担保贷款"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiRkFVX3lxTE8tVnctdk5yNHdNOTctaHpQcXhKc0toNFZNd1RzdHVOakN1eENOTlRfTVo5dU9ORzNWV3I5QW5aYlh6RDBKbGc?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI融资信息,英伟达担保贷款。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-openai-182
+  date: 2026-08-16
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "筹备 IPO 之际，消息称 OpenAI 已解散旗下风险防范团队"
+  quote: "筹备 IPO 之际，消息称 OpenAI 已解散旗下风险防范团队"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxOekNYRFJjczdQSF95TC0yNHBvUXpZeG45WWVyOGpFS2s0NUxqN21pck1wZWM2UnFtUlk1eHBGTEVnazBHZ0R5WS1kTnBMc2k2dndaYjA1NDBWZFNkUHh5SzlaOWRwbU95NHdjUVRLTW9VVzJ3ekY3ZFRWZ3QzNlNaTUotSkFKRnRnM1E?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO前夕解散风险防范团队,重大组织变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-17-openai-183
+  date: 2026-08-17
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI开放Codex百万Token上下文支持ChatGPT账号"
+  quote: "OpenAI开放Codex百万Token上下文支持ChatGPT账号"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Gd2I5cTl0VFJQMF9iZ1JqSlJqTXRHdW1lMHZNVmhnTzlMR01ycl8xVjkwU0RPRnEwY2J3YVBTNFlnd3E4WnBPNTJLdlVIZlRNUGg0andFZWFZOUlZM3c?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):OpenAI产品功能更新,Codex上下文扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-17-openai-184
+  date: 2026-08-17
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "ARR或飙至400亿美元，OpenAI营收翻倍，企业业务成为增长核心引擎"
+  quote: "ARR或飙至400亿美元，OpenAI营收翻倍，企业业务成为增长核心引擎"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFRxSlltRWQtd2gxS0JXMEVwc0lnT0tjLU51Z0hsRklFbThBTnFuSjNadWhNdTNfcjBIbmpJYWF1ajkwbm5neE5ETkdKVl9HTWJxbFdiMldNSU45YmY5VDE4NzhyZzRoZXN3VlluMTVmeXExaWJBbTZtRUdndEhyUzZUVVowYUkxNzl0WA?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数据公布，ARR飙升至400亿美元，营收翻倍，属P0级财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

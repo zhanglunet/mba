@@ -1889,3 +1889,19 @@
   source_type: media
   note: "LLM 预分类建议(high):V4-Pro正式版上线与调价公布，重要商业决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-08-17-deepseek-124
+  date: 2026-08-17
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek-V4系列今日起价格上涨：峰谷定价 高峰期贵一倍"
+  quote: "DeepSeek-V4系列今日起价格上涨：峰谷定价 高峰期贵一倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LQVdIejI4RTZ5X3FlVnJ0LUxjZUgyaXdLRzgxRzgtdm5XX20zNGhfeV96OE96UWp2NGpoaDZiTGVkSlI2QUF4WjJ6b0N4Z0RXQlRtbElNN2V0Zw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):DeepSeek API定价调整，涉及商业模式变化，但非重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

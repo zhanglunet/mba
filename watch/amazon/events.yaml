@@ -1993,3 +1993,79 @@
   source_type: media
   note: "LLM 预分类建议(high):贝佐斯减持50亿美元，重大股东行为信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-17-amazon-131
+  date: 2026-08-17
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊修改使用条款，再度禁止用户发起集体诉讼"
+  quote: "亚马逊修改使用条款，再度禁止用户发起集体诉讼"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBsd2wzUU53c19KUUpoTjY5b0tTdmhpOUR6cVlMSDZWTEZJU2M0STdGbHFwbjM5YzBYcWhqODZBbXkwTXZpZmNTcVptYUZMYzFJLWdCNkdJMElCckJrNTNEZXlGYmFUb2t2WEtVM01yTUw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊修改条款禁止集体诉讼，涉及法律政策重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-amazon-132
+  date: 2026-08-15
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克怒喷达美航空弃用星链服务 高管反击：亚马逊竞品更便宜、功能更多"
+  quote: "马斯克怒喷达美航空弃用星链服务 高管反击：亚马逊竞品更便宜、功能更多"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9rdzh2cFNqQm1YaXZZZ1ZvV2xtZXBKOC03TFl5OFc4ZFFrazlxVVNScDN2SjRTcjZfYVZucTJteThXeXY2dFU4MA?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):涉及亚马逊卫星互联网竞品对标，有市场竞争信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-amazon-133
+  date: 2026-08-16
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊更新了服务条款， 限制了客户的集体诉讼"
+  quote: "亚马逊更新了服务条款， 限制了客户的集体诉讼"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVTlCLXJuYXJobnY3Q3M0c2tWTmVsdDZObXVTcGVHcDZWOXdBZjQxQnhvcmh5Sk1NSng1UFlpVUhvRTFUS0k1T2V3R3JkUEduOHNIMVdCYnE3dUY4d2lWYjg3VDhEcDBsMFV0QkxGOTR6ZUNNRUF2MlBiYjRDMEdhN1NrM0xQWFp1X1ZlRDRhZVdrTFVvUHE4U1p6NnVzR1Y2VHFYU0xVeWw0Zw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):服务条款变更限制用户权益，涉及法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-amazon-134
+  date: 2026-08-15
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊MMO全线雪崩！放弃《皇冠现金体育APP官网》《王权与自由》发行权、还给研发"
+  quote: "亚马逊MMO全线雪崩！放弃《皇冠现金体育APP官网》《王权与自由》发行权、还给研发"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE14djAzeW52NFdldURISkdzamgyck0xMTVka0FlUjhVMmNiWE1JSExfT0xiR29qd0s3eVMybExSVjB2LXJCRlFKb09HeXJFUnhiOVd0SFhMdlpDSWstY2dF?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):游戏业务战略调整，放弃发行权，反映业务收缩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-amazon-135
+  date: 2026-08-15
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "日本海关已经收税了，为什么亚马逊还要再收一次？"
+  quote: "日本海关已经收税了，为什么亚马逊还要再收一次？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBxcmhLaG1rQXF6YXQ1UGFyaE9HZ1lNQnlqVzkxbDlrUVVwSXIwYm92QXZONXNheW1qVE5JNmZubTh2bGVxUXk5MDRkX0w?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):用户投诉亚马逊重复收税，涉及消费者权益争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

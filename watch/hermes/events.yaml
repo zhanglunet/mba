@@ -1010,3 +1010,34 @@
   source_type: media
   note: "LLM 预分类建议(high):爱马仕丝巾产品使用指南与鉴定知识，涉及品牌产品内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-14-hermes-066
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Hermès unveils its renovated Berlin Kurfürstendamm store (Germany) in a celebration of the city’s at"
+  quote: "Hermès unveils its renovated Berlin Kurfürstendamm store (Germany) in a celebration of the city’s at"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwwFBVV95cUxNemZXZjRDbmhJMks5X2xQaUEySmgtc1dranB1ZEZEMmhJSTBqZU43UGQ5Sld5SWN5UU1MNUI0a1F1dnhfdF9oNk5zU19NSjhLYWc2WU5zd1VNZEIzMDJYQUtueVhTaERYODNoT211blRlaFRMY0QtenRjVW5oUlJ2eU5OelF5OGpHZDQ4cFNuQUhvV0xYWXRSYWlTdWN4bk1hSjRycWRVMHBDUUd5Z1NMNnhUVHEtOUUydVNiZ0VHUTJuQkU?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):爱马仕官方发布柏林旗舰店翻新开业，品牌扩张信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-hermes-067
+  date: 2026-08-16
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "爱马仕上半年营收82亿欧元 不裁员反扩增逾600人"
+  quote: "爱马仕上半年营收82亿欧元 不裁员反扩增逾600人"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aSkk0dWwxc29EWVlSNEZ1QWZaMVlpYk02blJEQW1uNnNJcHh6NGZGamR1bTF4dzB1dDB4WWNVNzVJdHprUlVhV203YUpibndEdU51eS1FVGR3NDhUMFN2eW02TQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布（上半年营收82亿欧元）且逆势扩招，P0级财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

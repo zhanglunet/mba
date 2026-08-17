@@ -2216,3 +2216,64 @@
   source_type: media
   note: "LLM 预分类建议(high):LG与英伟达合作推机械人,产业合作事件,信息量足。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-16-nvidia-146
+  date: 2026-08-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "传英伟达38亿元投资软银子公司SB Energy"
+  quote: "传英伟达38亿元投资软银子公司SB Energy"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE1FZC1WSjJDVXE1RkJFR0NvX1NROTJNVGI2ZDBKYzJneHBzU1l3dXNGRzFPYmtjX0hCLTA2WFpsZ1YxeUluSEhQV0JEMDJEWVdZNXJYWjBiQzlMS1FZRkNncGNXWUhCUzY4OGdmVzdBdnNQdVE?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达投资软银能源子公司，战略投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-nvidia-147
+  date: 2026-08-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达持有SpaceX股权价值172亿美元 马斯克对黄仁勋“投桃报李”"
+  quote: "英伟达持有SpaceX股权价值172亿美元 马斯克对黄仁勋“投桃报李”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBJbF9qTlNVc0pvVFM0cTJXUEZHT0ZtY0tkdEZqTGdsTkp6WUowT3NLTHptSmFaQ0dwbjJ3VHh0d0ZrUl9WX29CeFJvRUxJVlNsMFItc1ZZWFdGN0MtQy0yU1dHOUozNi02d2NSa3VkSzF0dw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达持有SpaceX股权价值披露，战略关系信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-nvidia-148
+  date: 2026-08-16
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达悄然缩减OpenAI数据中心担保规模，从2500亿美元降至1200亿美元以下"
+  quote: "英伟达悄然缩减OpenAI数据中心担保规模，从2500亿美元降至1200亿美元以下"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxOakZFdjZLSHNsZW8wa1NXZWFYZmhOR00taUpXVXJueE5ZVVB1QjFmSXJNdklSQXpPMVpsU2p4dWp3V0t3SG92QTZMMFNjY2tHYkpFcUlLUlJ0em14dVNxeVdOU2N5UUJwdzJKdGlHNDdDR3ZRRm51dnpUdEFyUVFRZUJxTWVZaW9lMV8zMDZCTk1PMnA2aDdOWWZJRQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):英伟达缩减OpenAI数据中心担保规模，战略调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-nvidia-149
+  date: 2026-08-14
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达大脑加LG硬件......人形机器人领域的强大联盟"
+  quote: "英伟达大脑加LG硬件......人形机器人领域的强大联盟"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ReGVpZDQzblkyZ2puXzJSQmNVcjBHdTJrMmxQVlRKb3oxTmtHRlMwMUJEZGtXTjZQVXBWczJ4Z2hqYXdoMk9EdVd2WXUwZHF6RkZZ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):英伟达与LG人形机器人合作，战略联盟事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

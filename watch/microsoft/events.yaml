@@ -2084,3 +2084,64 @@
   source_type: media
   note: "LLM 预分类建议(high):Copilot个企版整合，AI助手战略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-08-15-microsoft-137
+  date: 2026-08-15
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "第 957 期：微软意外地在经典版 Outlook 中禁用了 Copilot，我倒是希望这不是个错误"
+  quote: "第 957 期：微软意外地在经典版 Outlook 中禁用了 Copilot，我倒是希望这不是个错误"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1UQzJvX3lyNEdUYjF6eTNVMDQtcHdreElMYmE1NzVxVkNfU2lDT09vSVp6eHBfRktUUVk4YlJ4aklVbG1pSVZPbEZQVXBsZjlmd1hRb2s5a0dFWUpK?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Outlook禁用Copilot，涉及产品功能变动，用户反馈。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-microsoft-138
+  date: 2026-08-16
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "微软推送 Windows 11 升级，Windows 10 上的 Microsoft 365 功能暂停更新"
+  quote: "微软推送 Windows 11 升级，Windows 10 上的 Microsoft 365 功能暂停更新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBTQ2p1M2VNMWc1czRCX1UzVndBa0dNMUxJMG5uNXUxcHdMZ2dTck5DTzM5ZlMtTGZQS3NKZERQaGQtb3E1VmpXLUV4LTV1X2M4cVlPamJvYnJYOG15VEtQajlXU0FkQQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Windows 11推送与Windows 10功能暂停，产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-microsoft-139
+  date: 2026-08-15
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软承认米6体育APP 11内存占用过高 将对8G内存PC做好优化"
+  quote: "微软承认米6体育APP 11内存占用过高 将对8G内存PC做好优化"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hczdCaTc2c3c5MzRMWnFfUFB6dzVBMGtyM21mUXhEU3daRkRYcF9mdjdUbEJOQ295d0FJb2FUNGd1ZG9JYldNU2JpZWlkcmRHekVKejlqTGNvZw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):微软承认内存占用问题并承诺优化，产品质量问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-microsoft-140
+  date: 2026-08-16
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软在Copilot Voice推出不到一年后便停用了其AI助手"
+  quote: "微软在Copilot Voice推出不到一年后便停用了其AI助手"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5YMTMzbTJDUndabk01eWExUG5nVkZHQm4zTGdEVDllSl9jOXdDSVhGdzJoeFhDa3IyOFlENHhrVjh0LS04bGNHSW1uZW00VTlJWEhzNlQzSi1DYXg1TzZicEtVbXU4cUFEOENoWEVaZHZrZw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Copilot Voice功能停用，AI产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

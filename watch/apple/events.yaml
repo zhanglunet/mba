@@ -2490,3 +2490,79 @@
   source_type: media
   note: "LLM 预分类建议(high):苹果与阿里大模型合作曝光,与i12同源,战略合作确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-08-14-apple-164
+  date: 2026-08-14
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Vision Pro折戟之后，AI眼镜能拯救苹果的穿戴野心吗？"
+  quote: "Vision Pro折戟之后，AI眼镜能拯救苹果的穿戴野心吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqSi1xLVB4Z2xLejkwZlhhWDNidUhqeGNxbGZabVJ1VUY2QzRsMi04QUszODk2SW1jbzRsZENGOHV6ZWhfZlptckVpTWZ5UF8tbUkwaW4wMkZINUF4?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):Vision Pro失利后AI眼镜前景分析，产品战略评论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-17-apple-165
+  date: 2026-08-17
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "解读丨苹果为何「死磕」自研 AI ？"
+  quote: "解读丨苹果为何「死磕」自研 AI ？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFA1c2RocHpZY0EtaHJ4ZjVITVRoRUR0SnVvQWZmeFFobXRsYXUzMHZEdFF6TFVSc2RCX2YwV1NyYTYzRzhlRFNuZ1VHOTlFTTg0UnRiSWhUV193LVhiVjBZbTlpeEpJT2drc2dwUXFWQTUzV3FPaGp2dmxENzNXV2s?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果自研AI战略分析，属产品方向评论，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-apple-166
+  date: 2026-08-16
+  dim: W5
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "全球首家！Apple体验区进驻WeWork上海门店，共享办公站上新风口"
+  quote: "全球首家！Apple体验区进驻WeWork上海门店，共享办公站上新风口"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNOUt2QmxPd0g5OUhHTHZNWHRIVHl1cXV5STAzTTNReWozV3gwUmRQNkVKaVVWcGpldVVrVEYtenNTV3c3SEozeGUtdG1HdjQ1SVZfV29RQTZqWEozZjhWQmtTaXNjTDNHV0ZqZzluQVpGdXAzaEEwMlF2M1RpaEJYaVRYMHFpX2xzQWw3cQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):体验区开设属渠道拓展，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-apple-167
+  date: 2026-08-15
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "国行iPhone用上AI不远了，揭秘苹果如何打造“中国特供”模型"
+  quote: "国行iPhone用上AI不远了，揭秘苹果如何打造“中国特供”模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE5nOXJXS3A0M1BucWdrVkNKN0lDY0kzRXptcHk3NU5kaV92ZFJTQi1sb1RSSUVNa2hIVS15R2JPR2JwT0F0RVdZZW5RQUdYM1RlVnQ5WlZB?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):苹果中国AI模型本地化进展，产品策略相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-apple-168
+  date: 2026-08-16
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果和阿里联合训练的大模型将支持哪些具体功能？"
+  quote: "苹果和阿里联合训练的大模型将支持哪些具体功能？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9BX1ZaRzgxMHdFR0pNbFFjalFJRmVVcmJFM09OSll5c1VrOTh0Mm1uZlBPSzNnYkFnM2Y4cGRGRFFBeVJ6REJXWjcxdkdZWlhTcTRFb21jRFRRYkZJbDkwbTAtX2pzdU45TV8ySThkZ3cxMWpCenJWSVZqQ1pCZVU?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):苹果阿里联合模型功能解读，产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

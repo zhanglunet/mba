@@ -2535,3 +2535,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Gemini 3.7 Flash正式发布，主力大模型版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-08-17-google-167
+  date: 2026-08-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Electric Saul: A free AI tool helping households go electric and cut bills"
+  quote: "Introducing Electric Saul: A free AI tool helping households go electric and cut bills"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVUYtb214aS0xSTUxVDd5T1ZUTUs0RWxiV1d0WDVBUTU1QWFveThpNUlRY3J4STZOWHYweGsyUE5EalBXRmpBaHhqREFlSUFoVXdoTDhNWTZyNmJHRlFHUHdlcDZOQVlnR0t4NjNKOEJIRDFtcXhWV2czZ2RIekpQREFUUURpTWtESWt6OXo5QjF3c2FjMXRvYWJWRTBfa3ZvaVFOLS0yN2N5VVdGN0pfSFA0TDR0OXh6?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):谷歌官方发布新AI工具，产品发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-google-168
+  date: 2026-08-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "时隔三周，谷歌再更Flash模型，年内打五折"
+  quote: "时隔三周，谷歌再更Flash模型，年内打五折"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CV1hBazVJWjlyZVlTaUVEVjdRVDBwa2FQZExVdk5VVGUxQ1J5TkVhU0pHU1gxM0dxQzdnSUtlOTdKVkFNeFNXTGxnaWdXczdlc3R4N3VyRnkwVWJq?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, category]
+  source_type: social
+  note: "LLM 预分类建议(high):谷歌Flash模型更新迭代，主力模型优化升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-google-169
+  date: 2026-08-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "时隔三周Google再更Flash模型年内打五折- Google 谷歌"
+  quote: "时隔三周Google再更Flash模型年内打五折- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1GOEhVWXlfT2lXNVJvY0hKbXN1bFRzSUxHQTliUGhmbVNlU3dwQzNpOXJXMkIyZ3F6SXR5a2NmeERETElCVVJMVzZtejc0NGtQX1IxZzhBRjJCVkRBU3d0WA?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌Flash模型更新与价格调整，主力模型重要迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-google-170
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Gemini 3 Flash的参数是多少？"
+  quote: "Gemini 3 Flash的参数是多少？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE91cS13UTJJc2ZnNndueWc5M2x0eWFIeVhlZ0dUcWVrUDV2UjlpckNyNGdEQlpSNXlVeFkxN3l0T2xndEhhUU9nZUZvc0Z3allRT1EzLTZCV2pCSkNCQlZDXy1mT181Q3hzdGx5YzR1UEYyV1NrTnZFMU1yeGppU3c?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):Gemini模型技术参数问答，产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-google-171
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌升级 Freeplay 服务，提供超 1 万部免费电影、电视剧"
+  quote: "谷歌升级 Freeplay 服务，提供超 1 万部免费电影、电视剧"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5Sbk9QaGNFWnJlbHFVbGpDQkRYeG1wcTBSY0pick9lSGV5S2hXdHVRRldQTTBaU2hjb0RlX1VpaUhzMzBZYW5TX0xnZEhENG1NTzJvS1lJUS1ORk9HN0RSZDR5d2N4dw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌Freeplay服务升级，产品功能扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-google-172
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "DeepSeek涨价，谷歌降价"
+  quote: "DeepSeek涨价，谷歌降价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1za01Hbm9qenNqc2pod0E0c2NQd0l6YTlaZjRHT000Mlh3VmEwM3V6Y21YbldqdEtrQ0tDSlBFVHBYT0VPMTB2S3lqWmEtcm1NR2d0TGtWQm53ejV4blVZc2J1ZjAyamFNOVc0RXF1RWFyR3VfTjhtTFhuelRNb3c?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌降价回应竞争对手涨价，涉及AI服务定价策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-google-173
+  date: 2026-08-14
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Google更新AI工具设置用户现可选择关闭Gemini可见水印- Google 谷歌"
+  quote: "Google更新AI工具设置用户现可选择关闭Gemini可见水印- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CdGpRaXhPZFZMVmlpc3VSamNLQVVHS0NOd0NSSnZrczFGbm5PUWFrNExpRVZGYko2WHQyTGIxWWl3ZnV5aG43bDl0Nkl6VXZ2NHRoTlFwWF9SaVUzVHNRSw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Gemini功能更新，用户可关闭水印，产品迭代信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2853,3 +2853,154 @@
   source_type: media
   note: "LLM 预分类建议(high):水印政策引发用户反弹和订阅取消，负面舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-08-14-anthropic-187
+  date: 2026-08-14
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "How Claude's text watermarking works"
+  quote: "How Claude's text watermarking works"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE8xMjZ5Ynd3TkptcUFtRGZxalN0VUxKTWRxSktRTkhsa1llV0w0OUphLXRYWDkyaGJvendtY0drMTRCTWV1QjJxeVc5MzFxb2NXQVpXRWhRZDY3eC1Zak5QZWV3?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方技术博客，文字浮水印技术细节披露，产品安全特性说明。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-188
+  date: 2026-08-15
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "CEO还是「教主」？Anthropic正遭受「信仰」反噬"
+  quote: "CEO还是「教主」？Anthropic正遭受「信仰」反噬"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wbkk2YjlLc19mblp6NlBGME44QllsTkg2NTRGVHNLcUktb1VuVm1XRE9jX1BrS2dWYU1oUGQ3cmpKdTg3T2QwVkdzYXpWYXM0NzlsZ2VZSnRmS3A3?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [identity]
+  source_type: social
+  note: "LLM 预分类建议(med):CEO领导力与公司文化质疑，涉及组织治理舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-189
+  date: 2026-08-15
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic报告泄露Model 2，比Mythos 5更强的内部模型"
+  quote: "Anthropic报告泄露Model 2，比Mythos 5更强的内部模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9EZTRqNEczTTlhM0c3UE5USUV0RUFhbndkZjR2WUZ1WUFqVlI1aWZKcUtHQldiZjNKUUxqeHRhSWozZURsZnJndmVoTVhvdEtxZUM2R05MMWg1cnUy?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):内部模型信息泄露，涉及产品安全与知识产权风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-anthropic-190
+  date: 2026-08-16
+  dim: W4
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic Claude出现大规模服务故障"
+  quote: "Anthropic Claude出现大规模服务故障"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxNZVBST0tvNk9CSzZ0T1N0eFk5NUpLcndXUFVYTTI0dkxoLXdfQkxXaE9TbnRyUmRpWWVGN1M5VGtWNjF6UUhjVU1CR29NR1VrX0swRFRaUUREdXk4b2RFb2o2Q1d5eVVMUEZjMFZCNTM3bmphQWppYl91bVhWZ1pIMkh0OWxNSm5xUjFOWlJ6Q1JRWVdZTGdVNmNadTI2Z1FnaGNDZ1lxcw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模服务故障，重大安全事故，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-17-anthropic-191
+  date: 2026-08-17
+  dim: W4
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic Claude大规模服务故障 多服务受影响"
+  quote: "Anthropic Claude大规模服务故障 多服务受影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE8yRVRqUUZ0YndVMVhJMXlXZDd2ODNGM1Y0Q21JSkhUVDV0ZVE5TzlBc0xGRmhSRzBiSlZPdjBZaUltYXVxd3RvaGVwelpITFp0d3ctd19jSkJVbGhsUUhCOFhqOEtuWmJacEE2ZGd3UzM?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重复报道大规模服务故障，多服务受影响，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-anthropic-192
+  date: 2026-08-16
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic公开Claude文字浮水印细节 改写后98.3%无法检出"
+  quote: "Anthropic公开Claude文字浮水印细节 改写后98.3%无法检出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBpV19MZU1aWWFEQkJ2SEN5c1lyTGpmNmJONE81NEhCbFhnSE82S2VlVmtYeVZIeUVhZTZ4YWNRdFVqdVJyanFzYk01OENPZw?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):浮水印技术细节公开，改写后失效率高，涉及产品安全缺陷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-16-anthropic-193
+  date: 2026-08-16
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic：阿里巴巴动用2万5000个虚假账号试图窃取Claude"
+  quote: "Anthropic：阿里巴巴动用2万5000个虚假账号试图窃取Claude"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxOUE9pQTA0bXRXUG9kWjd3VnVPa3FkU0RuLVJqODNQeHIycXJmMHZSRU5yQ3hfc3c5ajF3c2ZWUUdBYzgtYWpaT0QtVUNPektqVGhBN0pTZnB0c3RKZXVEUEt6MWlVazlzbGtEQ0pqRlRTNDVvRmNDV1FLTXNqb210bmRLVVlxM3k3Nng0WkRNTFVPQQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):指控阿里巴巴大规模账号攻击，涉及安全事件与商业竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-194
+  date: 2026-08-15
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "信息仅供参考，不构成投资建议Anthropic（Claude）营收暴涨利好两大方"
+  quote: "信息仅供参考，不构成投资建议Anthropic（Claude）营收暴涨利好两大方"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFBSaEJRakxudFRWbzAxR1hrMy1TaGZCamZzN3BnMGNZZFpnTEVlYmZxSTdDTS1wMGhzMFJObkF3TWw3SHZ2X2NnZVVITnJ5Q0w0LXFfclBmWGJPNUtGTlNHdllPcHVydXlKMkNJ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):营收数据公布，财务表现向好，具有投资舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-17-anthropic-195
+  date: 2026-08-17
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic通报Claude故障 AI安全现裂缝"
+  quote: "Anthropic通报Claude故障 AI安全现裂缝"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1KQm9xdTFLektfRUQxOXFnRkhSSDNHOWJkc2NwUnpsOG8yeFpLWTEwX1BEZkdBZjJWcTRUSjRJX1pOMi1sRG5WT05Dc1E0TjNwaFdrM3JMM1U3N3RuUDVDSWpySi0ydGdlcDVNWVVqMmI?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):服务故障通报，AI安全风险暴露，重大舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-anthropic-196
+  date: 2026-08-15
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "刚刚，Anthropic报告泄露Model 2，比Mythos 5更强的内部模型"
+  quote: "刚刚，Anthropic报告泄露Model 2，比Mythos 5更强的内部模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTFBscTgzeUk2NHBnSFFMYVJDck0wdjhjUlBGSFdrZUtHeTRObnQ0TS1RMVZOekFWbVlQX3Zra2EtbjE5THBid1Z5V3hCNXlmQkli?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):内部模型泄露重复报道，涉及产品机密与安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
