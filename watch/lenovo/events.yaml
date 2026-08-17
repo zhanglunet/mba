@@ -1345,3 +1345,34 @@
   source_type: media
   note: "LLM 预分类建议(high):Q2营收创新高但认股权证致盈转亏。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-16-lenovo-088
+  date: 2026-08-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "大行评级｜高盛：联想集团首财季业绩远超预期，维持“买入”评级"
+  quote: "大行评级｜高盛：联想集团首财季业绩远超预期，维持“买入”评级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxNOUYxaC1rUWdTdXQzbEZYRWk4Nkg4YmRPVDdtM19STW9JNGtldGlGQzZjOE9xRTd6TS1pWTRPWTd5WURVT3VwdEVuYlJEeERDcmk5X2RiVXVpczhHQTlWVk1kVEFvd01xODY5c3phWWRlb014eTQ5WHRYbjZaRUlsX05BVGpmbndEX0wycnR5TjFQNWFPcmxWQlhpRW1UV29PUDdkbA?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数据公布，分析师评级维持买入，具有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-lenovo-089
+  date: 2026-08-15
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "联想集团刘军：AI PC国内市场销量占比过半"
+  quote: "联想集团刘军：AI PC国内市场销量占比过半"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNVzh5OTV1QTlnbnEtRTJuQjYyZkFaWERCa0pMMXNybm44MndoZm1jRmpvZWZDUktrb3VHQjlKWF83QTFKdGNQbHdHN2hqbEJLMm9UNkpKYkU0Rm5mS3AzOUIzd0hnckZZOTRxYWg1bGNKelFLV1BmQzJ2YVNObFFPaHBrS0Q3X0RpbTI1NQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):AI PC产品线销售进展，高管发言透露市场表现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

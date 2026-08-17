@@ -736,3 +736,34 @@
   source_type: media
   note: "LLM 预分类建议(high):五角大楼黑名单案发回重审，监管诉讼重大转机。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-08-14-dji-048
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "联邦上诉法院要求下级法院重审是否将大疆从五角大楼中国军事企业清单除名"
+  quote: "联邦上诉法院要求下级法院重审是否将大疆从五角大楼中国军事企业清单除名"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAJBVV95cUxNV1YxS3lnakNOSkZQVm8xN3hOUkpvRFc3bEpTS1d6azZMUmZCejRkLV9QUGl3VnJCd01vdTgtU2RMcHVHbHZPaFc0aEZqYldfVVRQQURrd3ZzTXNhN1F5UGFDbFV5SzFuaUtqNDlwV205am1wSk8tOV9ad3l0M0lQdTFMY1FXSnBUeVdoRXE5S29hZU1KVk41QkMydHd5ZEVwSDRMaWhsYllCN2hmMEJrSHNJNW5TdG5pLWY5clJUZTVIYTZZMUtQMnJzYTlkZUFzMFcxWG9yOVJ6eFdVV3VXSnFzNWgzb21uSVYzUEljeExwMTVBcS1jQ2c4dl9wdVQtNnpOdzFZWnMtSVJV0gGPAkFVX3lxTFBMSlRMcTR1MVN2NTNEdEVTLXA4b1c1RW1ibXN2S1JDMkN4VzFrRnJlUHhFRDg1eURucUVuc0VwUW1kSkYxcnUtTUVKRmVfTTJ3UEpUdG4waWFmWWNYSW5DWUROemdoNjNZTlNneFp2cDk1eXQtWUtERmJ3MGZYdkVaazNYel9WSTRoS3ctWkNtU1dYblJHaE1zZDJpbl9rR1A2YUx4WTZxN1hIVWVxQ0tGTGw2TmwwUEJpUFFRRHR6ZGdTTXVxMDY2ejJjY1J1TXVhdFJCTzhCdTNCX3dSYUY2dUgtTHZXeUtsYkpqQlBNQS1HRkx3bE9uSFlhNXpudTJWQUl6QldWd0w4dzlGZXc?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美国法院重审大疆除名案，涉及监管与贸易政策风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-15-dji-049
+  date: 2026-08-15
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "大疆上诉告赢五角大楼 有机会脱离美国防部采购黑名单 - 国际 - 即时国际"
+  quote: "大疆上诉告赢五角大楼 有机会脱离美国防部采购黑名单 - 国际 - 即时国际"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE9mZlBwS0VQT1BNMVdnczNNYXhOQ2xJaUIxYTNFUkV6NjFiSExWU21fYjlfV1Z6UVFjY285VGx0Zlk1VU5ZakhUNjd1SGpSSTVlOHZhYzB4LXhSdHlqNzJic3BkVERyNWdUbEpZWm5GMA?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大疆上诉美国防部采购禁令取得进展，具有政策突破意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

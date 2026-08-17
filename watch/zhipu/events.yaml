@@ -596,3 +596,49 @@
   source_type: media
   note: "LLM 预分类建议(high):智谱模型被集成应用，市场合作动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-08-14-zhipu-037
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "GLM Coding Plan 已全量上线 GLM-5.3"
+  quote: "GLM Coding Plan 已全量上线 GLM-5.3"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFbXZqWnhMaEpGVnluYmxrWk9iQ1hQY1YtWlN4WkhKSmhPc0hGd0ZHOEd3SVVWRjRIUDl5dHphTm5USkkyWDhMZEVIeVlCTUQ0WDJkYkNkRmN1MWpq?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):产品功能全量上线，GLM-5.3编程能力更新，显著产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-zhipu-038
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "GLM-5.3发布，743B参数没变，性能却暴涨515%——智谱给行业上了一课"
+  quote: "GLM-5.3发布，743B参数没变，性能却暴涨515%——智谱给行业上了一课"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA0N2c4aTJudnA4VHBRTkZhcGlqckJvUWFiX2x2amRIQ28tX3M2U2prMDVnbDNOS290czRZUDJsWWRjRTZ2WFZOQ2JDVTlHU0NxWjJROW9uSlY4TjlT?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):GLM-5.3性能大幅提升515%，主力模型重要版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-08-14-zhipu-039
+  date: 2026-08-14
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "智谱发布GLM-5.3模型、“为编程而生”，性能比肩Fable 5"
+  quote: "智谱发布GLM-5.3模型、“为编程而生”，性能比肩Fable 5"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxObW95djExZlExS0NLS0RtdzZSa1ZkNWRLYTZhZ3czN1pxa3VWb1NfeWFFbUdtZGNDaEtPVXM3clFaWmViYVRrQWlua1JKQ0pNTk9rLU1aYjBHVlFzNDRvYWUzQ0Nyc3p0VmNYbDFOM2psU21Hc2pjVzVlU0dEUjhENi1ZRHZrZVBvSHo1NGVLVQ?oc=5
+  fetched_at: "2026-08-17T03:14:46Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):GLM-5.3正式发布，编程专向模型，主力产品重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
