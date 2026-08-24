@@ -1,0 +1,4402 @@
+{
+  "generated_at": "2026-08-24T03:26:14Z",
+  "window_days": 3,
+  "candidates": [
+    {
+      "key": "ba6918cad9f1",
+      "slug": "lenovo",
+      "brand": "联想集团 Lenovo Group",
+      "date": "2026-08-22",
+      "quote": "2026年8月 笔记本选购指南——【游戏本】推荐：20000元以上（旗舰）",
+      "title": "2026年8月 笔记本选购指南——【游戏本】推荐：20000元以上（旗舰）",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9lOXNmN0pTdUZPbVhfcGxYM0FYOWlBMWsxMTFkeGowWkpGNmtqWEozTjRaUWhQQUNMS25uT1h5ZDA0bGZ2bk5SRXUybTkxWHgtV2thNUQ3TFJuNXhn?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "c77935a9117c",
+      "slug": "lenovo",
+      "brand": "联想集团 Lenovo Group",
+      "date": "2026-08-21",
+      "quote": "最佳数智化雇主：联想、西门子与施耐德电气员工反馈机制有何不同",
+      "title": "最佳数智化雇主：联想、西门子与施耐德电气员工反馈机制有何不同",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTjhEYUQtU01ydW1lS1pqR3FPcnNpbDctMUlKUUlnZTBIOEVpVE1rcFhuOHphcDctUUZQNk9oWmFwTlZKQXFrT3ZYVFJTQ181Qy14Q1gzcjhIMFpyWWsyQl9wWGdhNWVHc3NLSmZJWUpqdkNXLUpnOVRPM0ZUSExiN1NBNEpfeVU?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "fb8c51b3fcd5",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-22",
+      "quote": "谷歌TPU之父，被Anthropic连夜挖走了！",
+      "title": "谷歌TPU之父，被Anthropic连夜挖走了！",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBfNWQ4TDU4NWozbUszQkdXRmd4aTdoemp5VWJHQkJER1pqbjZZY2h5T3M2ZzRwMWpzX20wNkFRdTRlQlZXZXhJZk9sNUE5Vnl3T044WS05ZlQ1Mmgw?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "1df87309d3a0",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-21",
+      "quote": "速递｜Anthropic与黑石合资公司完成首笔收购，拓展企业AI服务",
+      "title": "速递｜Anthropic与黑石合资公司完成首笔收购，拓展企业AI服务",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IRmc3S254Si1KeHFvdUVQX01VRlJlZllmbXRUR1ZJb2tPSWhBbG5vXzMxZTdNMmh4c0thSkMzeGJfX1I4dDRPZjBEZTZWR1ZmWVE1dlMyR1NNeGRm?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "1cf63c86c730",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-21",
+      "quote": "Anthropic 给 Claude 加水印，用户直接退订——这波欧盟 AI 法，坑了谁？",
+      "title": "Anthropic 给 Claude 加水印，用户直接退订——这波欧盟 AI 法，坑了谁？",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE90dU1TeUFCNWRaWl90ajZzVnNTSlNVNkc3WGFrNXNPa0JMWDUtaWI1YUkya2RHeWVVUE85aFpYU2NjX29HQW16cjl0WjJGRkZ0bThJZFJnZ01nZVNl?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "16dec8805589",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-23",
+      "quote": "Anthropic滑跪认错！Claude暗中降智实锤",
+      "title": "Anthropic滑跪认错！Claude暗中降智实锤",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5qVXAyczRuQVpNcVNVdnJzRU4xOC1xbGtNMkNQVEVIVDRIa1k3RnBhOHowbk9IYkpnVXIxcnFhTnZRYTNtdEIxMjRTcklMN0ZBY3dhNWF5OUpGcEluZVRjc2J1VmpNd0dncWpBQWZkOEpYVUZqbnFvR3BtcXI?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "e9de5c0e23b5",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-21",
+      "quote": "OpenAI 之后又是 Anthropic，Claude 将攻击延伸至公共互联网",
+      "title": "OpenAI 之后又是 Anthropic，Claude 将攻击延伸至公共互联网",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9XcWJFQ0xZNllHU19lNmZjb0w4ZU5aNGRsWnVsU09yakpQaW83UmVUcS1NTnM0ckxYbGd1eUJBZ0o5ZEt3NEczMDlxdmRFTlRMTk9fb3g1NF80dUo4R1E?oc=5",
+      "source": "InfoQ-CN",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "2bc3d505e482",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-23",
+      "quote": "Anthropic多款Claude旧模型可被越狱生成露骨色情内容",
+      "title": "Anthropic多款Claude旧模型可被越狱生成露骨色情内容",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTVpSUXJpSU9FdG5mbG8yLXJ2dWctejF5YkQySERJSkRwTUdEMjZWcmlrSWdreHBHV1g2a2FWMTJTWW51UWtzcXdnYlpyNnpmd01OU0F3YzBaZGpKX3JjenJLM2w5c2NWUEVtZ1VETkZfaDZZeW4zcWY4S1ZoWGxWZGZ4SG5kUHdXc0ctU2FsaERQQ004MVRMRE13ZWhFZkY5SWZLaUl3OA?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "8d3b2170149d",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-21",
+      "quote": "拆解Anthropic：押注coding的公司很多，为什么它先吃到复利？",
+      "title": "拆解Anthropic：押注coding的公司很多，为什么它先吃到复利？",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ySFByZXlQVjNtUVN4aklmSzcxaXRxUF9VNFZxamVEa3NBS1ZFWkttd21QN1hTMERyTXBmX1Y3T20tNXBTbExRazFzN3RndFZlcW5aSjZPZW5ITmdjUHc?oc=5",
+      "source": "thepaper.cn",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "7c499dc43e7a",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-23",
+      "quote": "Anthropic把员工入职第一课给公开了- AI 人工智能",
+      "title": "Anthropic把员工入职第一课给公开了- AI 人工智能",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9xcERlbVlSNElpazE4R0kya3R0REtBVkhsN184UjNEN3hodlJWY3ZVLUUzWUU2b1ZIQmJWWFZzeHVDQ3NiZm1HdnlpQXI4Sl9TZFk5N3VGYUkyOGFleFpsTQ?oc=5",
+      "source": "cnBeta.COM",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "8dcf4598a6db",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-22",
+      "quote": "Anthropic自研芯片落子：挖来谷歌TPU业务创始人，2万亿IPO前夜的\"去英伟达\"豪赌",
+      "title": "Anthropic自研芯片落子：挖来谷歌TPU业务创始人，2万亿IPO前夜的\"去英伟达\"豪赌",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFByenFyT1V3UnYxV0xaRmJ0d3FXeXpZVXFsd3pUOUZlQWlVYnVselBKaTE2dU8zTVB0Njg2NkpQUUJSZzJPTFpPSnZ2bFJZdkhzZFhZ?oc=5",
+      "source": "华尔街见闻",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "fbfd15410264",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-21",
+      "quote": "Anthropic为Claude添加AI水印，引发用户强烈反弹-人工智能",
+      "title": "Anthropic为Claude添加AI水印，引发用户强烈反弹-人工智能",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1HS3haeWdIeDJEb1FpRUY0YWtIRDhPTEt3OEZ3a0Y5c3FZT2JZZGJnazBTdmNCb1l4VFJNYXlRa0Q3N3RobXdvUXpWeUo5eTl2WFN2NTR0LW5yc0pDV1E?oc=5",
+      "source": "至顶网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "8a2ae0c585da",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-22",
+      "quote": "Codex活跃用户达2000万追赶Claude Code，OpenAI与Anthropic模型竞争激烈！",
+      "title": "Codex活跃用户达2000万追赶Claude Code，OpenAI与Anthropic模型竞争激烈！",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qR0tVTVp2ak45cmV6U3NpaEEwUXZEUWx6LUJTYjdkbXlVWFl1a2F5c000WlhzX2FOS29RWTdGdnY4U05iOEJYNzB4a1BJQnVkV1NyZzB5YjMzZTd2a2xfcGJvWGw0R29zOUNJ?oc=5",
+      "source": "blog.csdn.net",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "d6ffee87c6d6",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-08-21",
+      "quote": "Anthropic 在安全工具中部署 Claude Mythos 5，3500万美元开源基金",
+      "title": "Anthropic 在安全工具中部署 Claude Mythos 5，3500万美元开源基金",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVHlmcjI3alNQUUlSZ2pSQnloNkd0NWhmZlJGaEZiWXBWenpnUXVlV0dyclhoZUpTbDNtdFE3akRGdk9JUWdyM0lkd3RiUDBkcXc4Nlp0VFFwRlFzWFdpZlUxTU9kUVE0RUJoTlp4RjNuLVlrX1MwWXpwZGhmQU1kWDl6WWNhVDlFaHMyWGxOVkxPYlZBeFBDRmhfWWJHQ1pUUXc?oc=5",
+      "source": "Unite.AI",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "4fe021c230af",
+      "slug": "dji",
+      "brand": "大疆创新 DJI",
+      "date": "2026-08-21",
+      "quote": "多维协同赋能影像新境：DJI 大疆专业影像生态亮相 BIRTV 2026",
+      "title": "多维协同赋能影像新境：DJI 大疆专业影像生态亮相 BIRTV 2026",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE44UUpOQUdxcVdhUGJJbGVVeS1wVG5pSlpIcFZPYzFDYlNpc0tjMC00TjlEc0o2MjZWaDFXSWNXemVNTVRJQ3FhcjVuU3BUNGMzbVExeUUxTks?oc=5",
+      "source": "驱动之家",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "a6b0f4189719",
+      "slug": "dji",
+      "brand": "大疆创新 DJI",
+      "date": "2026-08-22",
+      "quote": "8-17 16:32 来自 微博视频号",
+      "title": "8-17 16:32 来自 微博视频号",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Fbnh6OElVaUpPSkxUaTJIU1A5ZTd3MGg4akR5RnlZZzlhMEhIVndTUVVVYkROZFNOd3FJOXZRWUUtZk9wTDI0YTBoTGtKWVRNSzV3VG83cmx6V1dYUGg5NlB6SmZqWlNrUnVkZkt2NA?oc=5",
+      "source": "微博",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "c77780c5d717",
+      "slug": "dji",
+      "brand": "大疆创新 DJI",
+      "date": "2026-08-21",
+      "quote": "朱雀三号火箭任务顺利收官，定制航天“影像盒子”完成全程拍摄记录",
+      "title": "朱雀三号火箭任务顺利收官，定制航天“影像盒子”完成全程拍摄记录",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9LQUNGdEJ0RkxZWF9COWxVUWtPdE4wc2NhYU0yakVOdkpSbXYxYnJhSlM2X3dET3AwTVdqOW5CbG1wZUNaZnhQdGQzMzVyMFEzWWZzd2FNaW5aVmQ2SkE?oc=5",
+      "source": "thepaper.cn",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "cd62f5cba5a6",
+      "slug": "dji",
+      "brand": "大疆创新 DJI",
+      "date": "2026-08-23",
+      "quote": "美無人機去中化 台灣成潛在供應夥伴",
+      "title": "美無人機去中化 台灣成潛在供應夥伴",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDYjlmblAyQVBtTHNuWTlJU0lXdlFtdUZhWER5QWdzV2NHemFNd3l1dnBlYUZYazExTGlGbHlaOVJuWTFUbHlNNktCOGpYdkFDVWp1RG93ZWNENTQ1aGx1Y3ZWSVR5d9IBZkFVX3lxTFBDYjlmblAyQVBtTHNuWTlJU0lXdlFtdUZhWER5QWdzV2NHemFNd3l1dnBlYUZYazExTGlGbHlaOVJuWTFUbHlNNktCOGpYdkFDVWp1RG93ZWNENTQ1aGx1Y3ZWSVR5dw?oc=5",
+      "source": "大纪元",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "2a595ae42f91",
+      "slug": "dji",
+      "brand": "大疆创新 DJI",
+      "date": "2026-08-21",
+      "quote": "大疆亮相BIRTV2026展示影像生态",
+      "title": "大疆亮相BIRTV2026展示影像生态",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1uT0Q3OEdOYUxwYUxkdXFiRzU3WWlxR0pIT0JDR2N5dkdmN0JobEdjX0NoOFhkYW1LRUlLWUV0Z3QwSFNhTDFWRnRSU19fRkFlTWx5Y283OFI4UUx5UmpxY09R?oc=5",
+      "source": "手机网易网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "58828a4fa4ae",
+      "slug": "dji",
+      "brand": "大疆创新 DJI",
+      "date": "2026-08-21",
+      "quote": "华为Pura X View配置爆料 起售价低于Pura X",
+      "title": "华为Pura X View配置爆料 起售价低于Pura X",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05c1lDbEkweHhPeFA3c2xHRnNtSzFrQzBiVS1DUXhaMnV3VlJBaU1nM3A3VFJVWXdBeUEzTUZmSnNTdEIzQ1dTWHktOWU2Y3pSTm04YnNRQUgtWEptbU1TdWhKRlZBdkhBcmkzSXE2aw?oc=5",
+      "source": "微博",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "639f426ce749",
+      "slug": "kimichat",
+      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
+      "date": "2026-08-23",
+      "quote": "Kimi K3 之后，国内 AI 的竞争逻辑变了",
+      "title": "Kimi K3 之后，国内 AI 的竞争逻辑变了",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8wX3cyNVNRVU9vUkxCX3E2ZXRQUUpiVmpnXzJGTlhoMHhIaXlDLWtIY29CVXFZc1Mxb194bzBlMzZWcnlzSTJJVkw0c3NyZkx5MFV2eGNzWUJQYk9X?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "379a4cb8de8c",
+      "slug": "kimichat",
+      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
+      "date": "2026-08-21",
+      "quote": "从deepseek到笔灵：12款亲测好用的AI写小说工具（含工具优缺点对比图）",
+      "title": "从deepseek到笔灵：12款亲测好用的AI写小说工具（含工具优缺点对比图）",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0zRHNmMDBhaFFtNEpFcDhYZEVaOGRPbVdFUFlqSS15cGhkZFExcG9kSVlQUHVrN1lHd3NOU2JORk0wQVljQ1g0bWtUVGtBN0FmVl9zSGV4V2tobnll?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "5a3a60211b4b",
+      "slug": "kimichat",
+      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
+      "date": "2026-08-21",
+      "quote": "国内外知名大模型及应用——模型/应用维度（2026/08/21）",
+      "title": "国内外知名大模型及应用——模型/应用维度（2026/08/21）",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5TWThkQ1RZRFJwX1FEUDJ3dUdyRURhT0dvODY0VThtcERMdUYzTkJEdHJ6OTlYWTVCQ1BXUGR1M29EZTVVSklnSHVMTmxFXzQ?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "61d1d6138bde",
+      "slug": "kimichat",
+      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
+      "date": "2026-08-24",
+      "quote": "AI实力调查：中国Kimi第6",
+      "title": "AI实力调查：中国Kimi第6",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNFd1aHVMcHZGaXQzeTNmMUxTa3RHeWlNd19RallKenNWZWZISEI4S1UwVE5PMk9iMTJRNXRldUEtZ1lIVzBtMmZ2V24yaVdvSGNhN3FoaHZEWTZ3VEl6R2k3WUEwcDVfa2Rwem1OdnJ0bjA3WmRVRnRPTVk4WjhSMmZHaEFXcUlJUlE?oc=5",
+      "source": "日经中文网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "82d4f70cdda5",
+      "slug": "kimichat",
+      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
+      "date": "2026-08-23",
+      "quote": "OpenAI投资的美国AI公司转用中国开源模型",
+      "title": "OpenAI投资的美国AI公司转用中国开源模型",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5xMXRySjlmclF4Qk53TEgxdVczbmV4N2kyUXA3VHVUUmVGT2U1MzYyWWdKTXhXWmFXYTliU21nRld4NFF5ZE1XaWVhQjRCekRsV2F2a3ZWQ2Jsbmt6QlRBY3lUODh2WWVVODJmT2M3SzUzRnhjRzhaZlBKeHVEdw?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "d0e992be1fc5",
+      "slug": "kimichat",
+      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
+      "date": "2026-08-21",
+      "quote": "驶入 AGI 深水区|中博聚力再度加码月之暗面（Kimi），以耐心资本护航底层技术破局",
+      "title": "驶入 AGI 深水区|中博聚力再度加码月之暗面（Kimi），以耐心资本护航底层技术破局",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JQ2lZeFlpNlhPN3oyVkl4THd1LUdvS2llRGZYblVXdFhITFNoOGlNTnFTUk9MUEtHYzJKSUo0ZnpoVzRnWFlJWjVEcEtDY3lC?oc=5",
+      "source": "凤凰网财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "b360ec91b76a",
+      "slug": "tal-education",
+      "brand": "好未来 TAL Education",
+      "date": "2026-08-22",
+      "quote": "学而思培训机构专业资质和真实口碑怎么样？3个维度说清+FAQ",
+      "title": "学而思培训机构专业资质和真实口碑怎么样？3个维度说清+FAQ",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00cW8zcTh0SWp2QlhLZlBHc0xHcllkQVRMVTFpMTAtUmt2MWxSeEItQjhVSzVFNGtGRVVNYl9OV3FIZ3lZb2JIMkRfY29sc2ozNTRZZWpONkJiaWlURzlWRW5kdFk3Rm0xTl9UTFpJUWQ5eDVDdlRsbHpsdGFYdw?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "171f69c2ac7c",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-08-20",
+      "quote": "5年点亮1.6万家24小时药店 美团“小黄灯”织密深夜买药服务网",
+      "title": "5年点亮1.6万家24小时药店 美团“小黄灯”织密深夜买药服务网",
+      "url": "https://about.meituan.com/news#NN260820206008197",
+      "source": "",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "7058312ea04c",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-08-22",
+      "quote": "速度 | 万豪新玩法？这种给行政待遇了",
+      "title": "速度 | 万豪新玩法？这种给行政待遇了",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAyaE9iN0lGOUVWajNvVGpCQVhDTDV2QnB6VHR5YVlCc1RsczBqME5iQXB5MWNqZXNUVFFUWUFZWHNPRy1TbElhZTVVUEhJUVZqOG1OSTVxU1UtYmZl?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "4f332b0b335b",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-08-21",
+      "quote": "即日起施行！外卖商家不做这3件事，轻则扣分重则罚20万",
+      "title": "即日起施行！外卖商家不做这3件事，轻则扣分重则罚20万",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rSDZhSzJ0TE4tdGdfOHN4R1A1QTIxdjVWRWRVclpjdmdGcVM1a2hpMm42RkM2WWxxak85R0w3YVBTQ1ZpRjdTNXZDQ3R2YVJFMzloU2o0cU1FdWJP?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "ad3979c0e93e",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-08-21",
+      "quote": "这位美团先锋骑手，正是全网寻找的“一车制胜”平民英雄",
+      "title": "这位美团先锋骑手，正是全网寻找的“一车制胜”平民英雄",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VN2xpRF84SG1SeHhsQlVoWlpZZlg0Vklac3RGV1UyR1ZMS3pNSkItNGFwMlZBTWxEUmdkbldyVlJpemxQanpnQ0lKeWMxTXRnY18xMWdRVHJLQQ?oc=5",
+      "source": "meituan",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "fad1ce5130da",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-08-24",
+      "quote": "美团-WR(83690.HK)将于08月28日发布财报",
+      "title": "美团-WR(83690.HK)将于08月28日发布财报",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUDVFRWlxV2I1Vk5XNXlvQUtfS2VGSFROcUdpUUNKTl9YZEZzZVhQQ0Z6ZVIxdTJzVGk2eDZKTnpBVnBmeVdlZFk3MFNtMGY5YkNrOUpVQ3ZUMnhUTl8wOWU4Z19haHlsVGN5Rnptd1pudWh5T2xNTF9lakRRNHFCR2JRLUdPX0FhVGVUcEVGOGlDZXhPdWhQNHVPY3kyem5PbEVJNDBB?oc=5",
+      "source": "Moomoo",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "627d2fc2607c",
+      "slug": "meituan",
+      "brand": "美团 Meituan",
+      "date": "2026-08-22",
+      "quote": "华尔街日报：中国“以租代买”迅速兴起",
+      "title": "华尔街日报：中国“以租代买”迅速兴起",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9OTDNLb05BcHoydWFuZkpUeHVUMFhZRkZaV3FOa1Q1REZHb3YzWXo4OEIzWElaWkZ1UTVlcWJlSEtTT0FKa19MaXdsRWFudThRZmc?oc=5",
+      "source": "万维读者网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "821abd5b03c1",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2025-02-25",
+      "quote": "Policies & Publications",
+      "title": "Policies & Publications",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mQV94b2NaZHlNN21HYTY3LVMtakltUkowbDhFSElEN0dsX3Z2Yi16d3dnaUY3QTRaR1lrVVJnVmllQ2FQcjdWZFRHWFk2cG40RGl5dHFGYlVqUFVpRVRrSw?oc=5",
+      "source": "Hermès Finance",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "824e7cb7e379",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-21",
+      "quote": "Strategy",
+      "title": "Strategy",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBsQWJvTmJDX1l4OXdwbzdhYjViWFpDTVdvZGVkV09CU3RlQkVuQ1dpWHU0bWxKRUh2V2laaUlPSlRLcHBsTW5QbXVGaU1vSl9vbGc?oc=5",
+      "source": "Hermès Finance",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "e18220abe15e",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2023-08-21",
+      "quote": "Calendar",
+      "title": "Calendar",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE02bUU4TEkzRVk5VGFkTUpQbGpaX1hrVzZHX2M4N0dlYXREbm51RDhpZ3RkOUNYSFFJSUZ4TWNLdGhneEgxT3BoSmZ1YmFzaG14U1VhdGYtUnA4T1k?oc=5",
+      "source": "Hermès Finance",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "69a2b39a9bf0",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-21",
+      "quote": "Climate",
+      "title": "Climate",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9KSDN1X2lGdU5ZTjJPVmM5VkxsR1hFUGI5akxRb2pLdTRSWElrc2FmZmlLdDZTMnlmZ3NVWFJ6NGxkRXJIR3dVZjFHVjFXQQ?oc=5",
+      "source": "Hermès Finance",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "de00699d1cd7",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-21",
+      "quote": "Hermès reopens its doors in Bangkok’s Central Embassy retail centre",
+      "title": "Hermès reopens its doors in Bangkok’s Central Embassy retail centre",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNX1lkSlNzR1FaMTd1RHlRRGN6SkxmajdYZFhPR2pQXzk3eEVoVUVBTE9qUUo1UmV5X0VHNlNDMWNCTTAxVUJuS05qRHc1OEdwNmtZWVhqWmp1ZnIwT2dhMnhzcGpUanFoTjZmRnc1ajdsWXVTWm02Njl2cGxTSXdNRGJHdl85UnNlaUF0YUttU3pDZXNWQjh6LVhaQUFZVXVMeVkw?oc=5",
+      "source": "Hermès Finance",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "0f4bb9f6c792",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-22",
+      "quote": "5年前我用AutoGPT，今天用Hermes Agent接管",
+      "title": "5年前我用AutoGPT，今天用Hermes Agent接管",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB3SFZWX1B6akZfak5WVVRkOXJHX3lhWWpXMGpxOGVhV2RZcWxlYnV4bzJYdnRxVXlSWUVReUNjamNXR3dSM3BnX0FHWHBGWGRxSGZ6dlhOb0JhcGVR?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "684fcd691853",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-21",
+      "quote": "紧急通知！Hermes Agent迎来WebUI + Gemma 4 部署实录+无token操作",
+      "title": "紧急通知！Hermes Agent迎来WebUI + Gemma 4 部署实录+无token操作",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RbUFDTXRWN1Y4TWpZb1Z0MWlaRHNwcEZacWhzU0xwZGhkRnFTOVhNMVFvQVh5UFJFYk9neW1ONmxYN3QyLVpCUVZJajBYNVJSY3ZxSlUyclNCa25l?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "e3d41e345873",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-21",
+      "quote": "Hermes 联动小爱音箱，远程 TTS 播报 + NAS 本地音乐双实现",
+      "title": "Hermes 联动小爱音箱，远程 TTS 播报 + NAS 本地音乐双实现",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5sX0c3YTFxQmk2RFo0blVhZ3FhVFRZemNFMng3VGlPVnpaT1otUm95ejlBd2d3cWpPejl1NnY1c0FzaVM4ZGE3V29aWTJVM1Atd0NtODFTWUNNWlhr?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "2ad26b15447c",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-24",
+      "quote": "宋亚轩爱马仕项链配巴宝莉T恤，贵气感扑面而来",
+      "title": "宋亚轩爱马仕项链配巴宝莉T恤，贵气感扑面而来",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZkFXY2s0WnQtM0I5WUJrUkIzYTVFemo0NERiWk45X2lyTzZPY184MUJYcldvZFYybDQzUklFQU1uRUNmdFRyNzJ3Qk16Nlh1UjQzelduZE5PSVdPcVRrT0w0VF9maXNSaVd0SkpSN2hIYVJ4N3pYREdobUplTkRTbHU0SmJmT05ybFM1Tw?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "5a58db09d307",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-24",
+      "quote": "Delvaux vs Hermès谁更高级？3个维度拆解比利时皇室御用VS法国马具传奇+FAQ",
+      "title": "Delvaux vs Hermès谁更高级？3个维度拆解比利时皇室御用VS法国马具传奇+FAQ",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRWQyQTVxdGhTaGVmN2g2a2FJS0dGaUh1VmNjMktvaE14LUlPc0pJeHlwejEyTnJyUWZkdHl0aDVwRUlSTWR2Zlh3alR2NFpsOTZRX2xTODRWY3R4SzVCTl94Z2dDUlhlTjNzYTNMd2VTaVFCVElNQXdtakJkTEJ6eFk2cw?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "4e7537cac45c",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-23",
+      "quote": "【禁闻】中共海外追税效应：奢侈品销售大降 | 境外财富 | 奢侈品牌 | 路易威登 | 新唐人电视台",
+      "title": "【禁闻】中共海外追税效应：奢侈品销售大降 | 境外财富 | 奢侈品牌 | 路易威登 | 新唐人电视台",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBSMURIRkZIWGw2R3FWMDY0eENHT0FqZFhoVEctclM0ejU3M1dmOUNOMEFxYU9HQUlDVFZnR3FqMmRrTjZKOGtIRGdUZVk1Qi1wb0hLN3hvSDFoNjFTQlVnNHQ4Rjlvekdob1pacg?oc=5",
+      "source": "新唐人電視台",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "4d260586b281",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-08-23",
+      "quote": "上海浦东出包必看｜爱马仕Kelly金刚色回收价比普通色高15%，黑色香奈儿22bag更保值",
+      "title": "上海浦东出包必看｜爱马仕Kelly金刚色回收价比普通色高15%，黑色香奈儿22bag更保值",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQM2ZWMk9XTHp6VlJHTHRheVFzaFZKa1VESVBCdElxZTZzRlhZOFJzTWZLS0RCajNyUVVHRVVULUJIUFl5WE9WOVNWTW1OMzhlYVFZT1l2RXZVVXV1YlBVNUxjM1RCeHFhUzJxbjJycDIwR1QtVlQ5MHdvTnVqQWtTc3pWLWthSFFRTEZ5S2swRURNeWY3d25ubA?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "f586df7a908a",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-22",
+      "quote": "如何评价SpaceX以600亿美元收购AI编程工具Cursor？这对AI行业意味着什么？",
+      "title": "如何评价SpaceX以600亿美元收购AI编程工具Cursor？这对AI行业意味着什么？",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5HQ1pDS3hJUWdWd0t2UFBreHJ1d2d6cUFpNE9LeUtkYnljelR4d3UtZmRvNnRmZXNKdVBaQm1DQTFIdVNocUZLNi1qUkM2Z3dfOFJQdGdld0ItYS1T?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "93df5403014a",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-21",
+      "quote": "史上最大IPO将易主？传Anthropic募资额或超SpaceX",
+      "title": "史上最大IPO将易主？传Anthropic募资额或超SpaceX",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ERHRIcU9sNVVualpHZ3NIQVNRR1BHODN2cEppMFVtVXRqV21kSmNKbFdlaURXU1FTZkJpYjJ0SlR2NGFzckJKdThDTWo2d1FIdTU2NnRVYVRHMWJ0?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "be1626b5ffc0",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-23",
+      "quote": "英伟达财报“万众瞩目”：Rubin周期、循环融资与远期市场份额",
+      "title": "英伟达财报“万众瞩目”：Rubin周期、循环融资与远期市场份额",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SS01rX0JyTkRuWE1iNURPcnBYZElIU2h1UzFQRHdjQy1YQ3JGVzdjSkFQYkd1c1FOaHdRSHJIUFM2aUdGYlR1QjZmTFBVankxbjJKOHFQd2U1bEJ4?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "2ebba36d7222",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-24",
+      "quote": "蓝箭航天会成为中国的SpaceX吗",
+      "title": "蓝箭航天会成为中国的SpaceX吗",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5XVzROVzVEN3k4bEFrMXZ3QS1RTzh3STY3eWxLU0hmYW1yQ18xNFlLTDZpdGpuMF9ZUFhRTm5YT2xpQlBpUTdtdHRIVkE?oc=5",
+      "source": "凤凰网科技",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "dfd7a171f7bb",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-23",
+      "quote": "SpaceX股价较IPO后高点下跌了30%：接下来会发生什么？",
+      "title": "SpaceX股价较IPO后高点下跌了30%：接下来会发生什么？",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUXV4S1Nfam5lZ2lyNUFscjM3REw4eG85bXV0UzVJNnRhYzVKV1k3emF2akd0ZUhTYUp3eHU2a1lwdEEyZHhhTDVUNUVhemYzemwxZ204dGcxbzg5ZFdocU1IRTRYZVJuNnlQSmcxTTlQLVROLUt3ckk4Qk1YSDNpRnlMUkNSSS1hRW90WFd5V1h3Tnp4M1c5RVFETFFXSDZqdmx1Zm16N2tJZzFVdWdUUXJOb1ZHaHJJMkpVNmF3Qm1OWG55VFJkUjVGRXB6dw?oc=5",
+      "source": "TradingKey",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "d9a78cf397eb",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-23",
+      "quote": "600亿美元！SpaceX完成收购AI编程初创公司Cursor",
+      "title": "600亿美元！SpaceX完成收购AI编程初创公司Cursor",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE45M1ozVHBFTmk5V3pzbHN5SkdnWVEzTW0tZHFyc0pOT1c5U2ZHQVd5THJaYmZfMHdzODJMSjJaSl9RUnc?oc=5",
+      "source": "集微网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "db7d96a6d439",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-21",
+      "quote": "巴菲特也成了SpaceX股东？真相有点“绕”",
+      "title": "巴菲特也成了SpaceX股东？真相有点“绕”",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16Mm9qbTNXSWlqU2ctZnFEV3ZkN1gxUjJHMmc1TU9LLWwxSlFEM3RCU19nZnREQkstSkFPREE0Mmw3NlJ0RGhHdEpOQ2l2TlRwY08xUzRmb0FvVGNwMHB5T0NLU2hmVHM?oc=5",
+      "source": "东方财富",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "b4911a8a1dab",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-23",
+      "quote": "SpaceX以小博大娱乐网站盘后跌超8%",
+      "title": "SpaceX以小博大娱乐网站盘后跌超8%",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9yNHJHbExmbGJUcThuemRLZGlJU3dKVnlMaUdrX3JXZTNqbFVidTdaX3FmYlNIQ3RhREFnVUVCWUJIZTgzaDBzczVucWV3M0l3UENDcVVObw?oc=5",
+      "source": "womenofchina.com",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "ce70c7f5bb4f",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-23",
+      "quote": "马斯克身家破万亿美金？三次炸火箭的代价，你真的看懂了吗？",
+      "title": "马斯克身家破万亿美金？三次炸火箭的代价，你真的看懂了吗？",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEM2R4YlRKT0VHM2FfWlFBMzFTTXZlZ1lESkE4NTMtZ1VUR1VoTGRZcTNzY04tbVJVWGlRUlhHaFByY2J4UjBTM2dWRkRtMzZTWGVoQkNSNVJIblpELW9KUGJSRTU0SWNpVUVqM2tVTE8?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "74ed57198caa",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-22",
+      "quote": "财报季第十篇：SpaceX（SPCX）持仓盈利 23.32% 商业航天与星链护城河实战复盘",
+      "title": "财报季第十篇：SpaceX（SPCX）持仓盈利 23.32% 商业航天与星链护城河实战复盘",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM3JNcmtPNmFiaUtWYkl4TkQ0V0FOZEZFNVFTSktkUzhDd0pkZVQyVkVOUGxhOVRRcWpFbUlETFJXNWdYVkstLV9fejVlc2xHTEw4b21hcFdiUmtuYklic3FrckpqbmNKWllYYkRRVzdQdmJmZHZIdHRFdDBXRUlTVmlYWjQtMEhJRHh5VWg4QVRWZm9CZVpPdElpSjNzRmloSWpPamJWQUZEWnJQNWxydm9TMERhOUszdEZSZVBORQ?oc=5",
+      "source": "Moomoo",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "b8dfc1cb3948",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-23",
+      "quote": "央视财经专访SpaceX埃隆·马斯克的母亲梅耶·马斯克说中国人智慧且有远见",
+      "title": "央视财经专访SpaceX埃隆·马斯克的母亲梅耶·马斯克说中国人智慧且有远见",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUGdCYWxqcS1sSlZPT3E5aERNeC1uWDNqa19jdWVyUktCMW9mWERnYmVZLUg1YXVMcFE3eWlUU0NaUHJ1U29YWjBzU1RrdXVjOXRWaVQxeXBtQlhvWVQ3aHdfb1BveUZoX3M0ajQ1UWJNajNLZlRPbHZSMDBiekRieEEwUmJpUWpT?oc=5",
+      "source": "搜狐网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "65673920a437",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-08-23",
+      "quote": "台湾首度试射火箭为何坠毁？马斯克SpaceX差点破产、韩国狂烧12年…国产火箭要缴多少「学费」？",
+      "title": "台湾首度试射火箭为何坠毁？马斯克SpaceX差点破产、韩国狂烧12年…国产火箭要缴多少「学费」？",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE81V1BFTnRBd1NfZC1XMzVBZjFReEl6dkpGdjJZR3pUM2RZM1htbXJ5OFZBVS14cFZJMThWMUdHcnV6T0JY?oc=5",
+      "source": "茉莉花新闻网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "6f1b6e1c4e5c",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-23",
+      "quote": "OpenAI 的急刹车，可能刹错了地方",
+      "title": "OpenAI 的急刹车，可能刹错了地方",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KSk41UTg4TGc4ZXpqZjlaNXhONWhBMzExMEVLbGhDUm9pbG84UjkxWkZTU05JWTZOQWdrb3V3VkVCZ1E2NnJDUDk1TjJCVWppYmU3Y3Z2UFlsZFdx?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "53d4233b13f0",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-22",
+      "quote": "Claude Code、OpenAI Codex 与 DeepSeek Harness 架构对比",
+      "title": "Claude Code、OpenAI Codex 与 DeepSeek Harness 架构对比",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB6SGw0U08xQUhnRVFBNkZTeFFYNUw4N0c2RGl0ZXFmSVN4TGF6aGJ2d1RzOXc1d3A1Smh2ZkViWEJ0aG1BdTNLWUlvMkhUT09oOUZXclBuNDBnOVVk?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "815d57aac016",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-23",
+      "quote": "国内使用Codex教程（2026年8月最新）：从安装到上手，新手零基础也能跑通",
+      "title": "国内使用Codex教程（2026年8月最新）：从安装到上手，新手零基础也能跑通",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QaVNZckxKSWpmYXNCSUFsV0hpcm9WYlA5WFp3Mk9qZVNSWE5yYnVkY3pCUXVBN0tZSlhudGdBUWZ1MXlLYTNFVW5NenAzMkdoUkkzVWNUZzctV2lW?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "e82eb27356ed",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-23",
+      "quote": "OpenAI、谷歌：降价",
+      "title": "OpenAI、谷歌：降价",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ISURPZDA5dFpjSnhEWTc4bVpZdmFVS0VFTHJwRnh5NGJkVF9abWl4UFUzVldiOUdQTmRFTENnWHZaZ1F6bTBmdk5QSWpXME4xSXhobUt6a0RKS0Z6SlE?oc=5",
+      "source": "thepaper.cn",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "a14d95a08060",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-24",
+      "quote": "OpenAI CEO奥尔特曼：担心人工智能会被少数强势主体掌控",
+      "title": "OpenAI CEO奥尔特曼：担心人工智能会被少数强势主体掌控",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM1B0QWVNMTRnZ1JCZ182cDR2Ti1DQkpfaVR0dlBfVUJTU242M29YZUl4Snl5T0NObGtLN2xGSnVUdms3UkpxZUtxLTFMandQYjVrM3JRSjU5d2Nsam5Za1BFaklMX2ExdzZ2UDJTT3JkRmNDMEwySWJFeTF3bkdzX3RZUGR6WEY0b1h0blBqY2JQV3ZCbVVWQjVPUUlOaktMTGpGUThFQQ?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "12b2f5266c4c",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-24",
+      "quote": "招商局创投出手，前OpenAI专家创立的具身智能公司亮源新创完成数亿元Pre-A轮",
+      "title": "招商局创投出手，前OpenAI专家创立的具身智能公司亮源新创完成数亿元Pre-A轮",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5XQkVhZTN0ZFYtZlNVeVJwV25NMTk0cXU0Z2tOUXNmQmtjUXNOSHVJUHlmeWh6MURRcmhobjkxcFJZM1VwNFNuMkVHQnR0aV96YUlfdjZXcw?oc=5",
+      "source": "AgeClub",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "2590819adf56",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-24",
+      "quote": "OpenAI呼吁加州加强AI安全法案保障措施",
+      "title": "OpenAI呼吁加州加强AI安全法案保障措施",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5jQ3dTcnFaQTFnQ0stSDVYNEhDeTdMU1hOSlhTaU1yRF81NVdPMFpXcnRQSDk1REl1Z0Vpc3o4dEpIbXQ2cHNQeE1QNERSSTVRdFE?oc=5",
+      "source": "至顶网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "768c5500a5fd",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-23",
+      "quote": "OpenAI失控模型的受害者 AI公司Hugging Face考虑出售估值130亿美元",
+      "title": "OpenAI失控模型的受害者 AI公司Hugging Face考虑出售估值130亿美元",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE53c25tMmg0LVpMbUZTV2VuSUVGd2lVRkZDeWpBdzhQY0ZiRW92U2lub3VtWUhJTVNsSmpOeTRYbVpTVkM2WjEtZDB3U2Y?oc=5",
+      "source": "凤凰网科技",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "7cf1a84dc455",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-24",
+      "quote": "AI模型现失控风险 OpenAI紧急放缓前沿模型研发强化安全管控",
+      "title": "AI模型现失控风险 OpenAI紧急放缓前沿模型研发强化安全管控",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVXBQR2RYN3VISzhMMFZtaUZXR1NHUmp6OWlsXzFGY09tUENneHRmXzlxMWpaVUF1TmxqcURoQzFkWlVLbzcxUVMwWUdHNDFVUy1mV0k5YTc1S3FDSGRhZGQ1WGppUnA2Q1o0N0FLa3NYdWFrQmdEdVNRTk5VNnRfeUc1ZTl2RjZXMUVHSw?oc=5",
+      "source": "搜狐网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "c832543e1ab3",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-23",
+      "quote": "OpenAI CEO萨姆·奥特曼：担忧AI被少数巨头垄断 但过度防范无异于“以自由换安全”",
+      "title": "OpenAI CEO萨姆·奥特曼：担忧AI被少数巨头垄断 但过度防范无异于“以自由换安全”",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5JUjhIV1RqOERoeTg1WXZMMi1sek9PTG9pYTFqMGtwdWlBTzdXRHVIM19CbTM3Y2pFYVp4b2VGdXdRY2hXUDZ4WU9PdGVWZlBzSVk5OGlIYmZRcmsxRF9FdA?oc=5",
+      "source": "cnBeta.COM",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "f1aa1f22856e",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-23",
+      "quote": "OpenAI Codex明日重置额度，修复消耗过快问题",
+      "title": "OpenAI Codex明日重置额度，修复消耗过快问题",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBoVGRHd0M0S0hqenl2OThWMjF6VXAtMlFldWx1dXRMM0J6eVZMMzhqd3ZSUTVydG41anc0VFJsS1BKZ1Z2RWJsVlZJX2c?oc=5",
+      "source": "凤凰网科技",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "eb6a5a746a1d",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-08-23",
+      "quote": "Github万星Agent整锅端进OpenAI！「AI版Firebase」宣布全队加入",
+      "title": "Github万星Agent整锅端进OpenAI！「AI版Firebase」宣布全队加入",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9YdWlLYWNwNFdROERpMEZ5OWlqWWc1QVgzbUdSLWhya1BucTFBcHJzdDNKbGlJUFpRMW9Oekp4UllncE5qY00wVUZGeDNsX1FqN3pqZDRRNnFXdmZod29PR0ZFRnlBX1VOVDlJd1BjTE9FaHViOWxwM2FNT2w?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "1074c2d702b6",
+      "slug": "zhipu",
+      "brand": "智谱 Zhipu AI",
+      "date": "2026-08-22",
+      "quote": "神秘「牛来」大模型刷屏，限时免费",
+      "title": "神秘「牛来」大模型刷屏，限时免费",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0xanA1em02SWtuNE5ZWDl3eFM2V0NYSWlCd2F3dmZsOVczYU1RT3FFSFNSSk9BbDRTOGdlb2lLSzBkWVBkVkJ3UUIxajVza203OFJZemszVFNPaFZI?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "6a600968b586",
+      "slug": "zhipu",
+      "brand": "智谱 Zhipu AI",
+      "date": "2026-08-21",
+      "quote": "君联资本投出万亿智谱和长鑫后- 零售",
+      "title": "君联资本投出万亿智谱和长鑫后- 零售",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8xQ0ZPQzhqMW0zcXBKR29HdWpJVjJzR3lrQm5rSl92cjEwMDFJcFFnR082TEhLWndxOEYwTGxpNjNiS1lpQnlEVkF6UkpoM0hyMWNVVS1n?oc=5",
+      "source": "亿邦动力网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "872016436349",
+      "slug": "zhipu",
+      "brand": "智谱 Zhipu AI",
+      "date": "2026-08-21",
+      "quote": "智谱(02513.HK)：算力扩容阶段性落地 TOKENS和收入高增长可期",
+      "title": "智谱(02513.HK)：算力扩容阶段性落地 TOKENS和收入高增长可期",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOb01rZkFjcHRJVEktaUlOdFdfZmJRcVpkVmhyQzVzSGVoTjhodDRqRGxBZ2ZlY1JyQlZDZ3NXNHU3M0tuWmJISmRJY19obFlVYXBEQjQ0b05ueTRnMHFQOEJDa0V4Mkc4Y3ZqN1MyNzZ4aXc3VS1zTzFjRGs2bFBWcEhQWUVsdHY5WmNNV3dFZFM0NkQtUzlDekhoQkY?oc=5",
+      "source": "富途牛牛",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "6b5f591a9c32",
+      "slug": "zhipu",
+      "brand": "智谱 Zhipu AI",
+      "date": "2026-08-23",
+      "quote": "Ox Alpha 被误认为 Gemini 3.5 Pro，但指纹指向 GLM-5.3",
+      "title": "Ox Alpha 被误认为 Gemini 3.5 Pro，但指纹指向 GLM-5.3",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSWxGQy1CRGNGMDN3TXVpZDFsclEteEMwVUxRNnZOWGVfdDRhZnh6NlVWZ0pmZ2syeUZfU2kyQm1fOFJBQlVGdnJBTWNjekVzQjNBQzFnNlBnN2kyNGRLZ09zd2NxZENQVlNPQTNoSnFRVk9iMVFrSG5vT2tfNm5LQTJpLUI?oc=5",
+      "source": "Pasquale Pillitteri",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "65a8f04d9f0c",
+      "slug": "zhipu",
+      "brand": "智谱 Zhipu AI",
+      "date": "2026-08-21",
+      "quote": "智谱午后短线拉升，现涨超11%，此前一度跌超2%；MINIMAX涨幅扩大近15%。",
+      "title": "智谱午后短线拉升，现涨超11%，此前一度跌超2%；MINIMAX涨幅扩大近15%。",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUjNUUnFJSHpHNFI3cWM2c1ExVktVcDFIWVZOczJQNGNPeUFtbUxpRWxHOVRQd0xxcEdlcmh5ZFk2WGZzZmpQUmdVUHV1TFlLTF81VlVRczhFcVE4VFNtUmlSSFFBc2ZxYWVBRTdLamRFSVN0aGloZWJzT0xKSWw0dl9PTkk5OFBaelJ3OFE4T3lkYjlIYlVqd004OA?oc=5",
+      "source": "富途牛牛",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "40e805486867",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-21",
+      "quote": "DeepSeek-V4-Flash-Vision-Exp Release: Multimodal API Now Live",
+      "title": "DeepSeek-V4-Flash-Vision-Exp Release: Multimodal API Now Live",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxdUl6dnJOdEJIRGNHSmdqWlcydkVqa2xDTEJwdkdUS2pMT1loRTY1NktVT3lrRkJJcUV3LUh0ZUxEWklSc0NuZ1cyQksxRzJiZFpqOVRQV3lzZw?oc=5",
+      "source": "DeepSeek",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "556ed20aedad",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-21",
+      "quote": "Vision",
+      "title": "Vision",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8wNG4wMkFScllTMVNDbGg5VVdhbEVINEEwODdWalZ3N2Q2aERYLXI5SnFxWUc5MTFobzdlRTViWGlFbHBoVHE0MmpjX0hRUDRndTZkT2x6Zw?oc=5",
+      "source": "DeepSeek",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "c1ad9caaff1c",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-21",
+      "quote": "List Files",
+      "title": "List Files",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB5TzlHbVhYcXN3ZDV6dmdYUE1KUHRaS29qSDZCVl9jN2NiUDJwRVBNa3hPTHBjdl9jeDVmcF94UE9ybUJTMnRtOEg2Z2Q3R1haWHNTbUNrQQ?oc=5",
+      "source": "DeepSeek",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "d93a1d29e67d",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-21",
+      "quote": "Upload File",
+      "title": "Upload File",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0xM0FUdDM3VUlsR0YySXg0ZllFdkRvYzVrM0l5U0dIR29xeWFlTi01S1RwUjltVFMycl9lc2dsVko0N2VPOTJRZlE1YmZzQ2J5eUw4NzBtR2w?oc=5",
+      "source": "DeepSeek",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "169a46801e24",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-21",
+      "quote": "V4-Flash-Vision-Exp 上线，开启多模态 API 服务",
+      "title": "V4-Flash-Vision-Exp 上线，开启多模态 API 服务",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PeDFYZW40blVCcGtRUDZ3el9vaDdqS1BXRk1QNnN2TlJiLXVXNzJnMEZ0NUZMdFZrbjZtaEtFU0hfQTVDdkx1bklNMXhvMUNUOEdHZDJXMzdPSDJncUEwOA?oc=5",
+      "source": "DeepSeek",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "b5800d35b4db",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-22",
+      "quote": "微信灰测「按住转文字」功能被吐槽；DeepSeek 上线多模态功能；应急机械拉手难操作，多家车企召回427 万辆车| 极客早知道",
+      "title": "微信灰测「按住转文字」功能被吐槽；DeepSeek 上线多模态功能；应急机械拉手难操作，多家车企召回427 万辆车| 极客早知道",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9UZmlBV3Y2SDRJQmpfN2Q3YkRydFNHZm9Eb1dnTWtjTFJJTzV5c29xVkJMMGJNOU90QWVHQ1owbWV0SWJlOUNaLUZFY0h2WWhkb2RzY24ySVpPanFf?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "f3ba8f3f1193",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-21",
+      "quote": "张一鸣向左，梁文锋向右",
+      "title": "张一鸣向左，梁文锋向右",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9LaENmdmdNR25lc3E0OVRlN3d2dHZIWVF6b3NqdUx2UWdoM1JBc1dJZFMzZWNuaTh0Tmh2aG9HaXB3dVZhbDZuQ05GcnpoTFVXRk9CMDRadHdWMjFK?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "a3b65c6cda9f",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-22",
+      "quote": "更强的GLM-5.3，为什么没有刷屏？",
+      "title": "更强的GLM-5.3，为什么没有刷屏？",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE50OHFfQUdBUHctN05ObEZYUWJndlh1QTh4TVkxa1gzZGpEVVNab3hJUk8xZkRsOGdzREpfSHNwUVpGeEcwU0lsMV9hM21RSExTTkF1VWlLbERhWFFP?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "a2b254e74d8d",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-23",
+      "quote": "深度求索（DeepSeek）一周2次调价，高峰涨幅1100%后周末又降价，中小开发者该如何应对？",
+      "title": "深度求索（DeepSeek）一周2次调价，高峰涨幅1100%后周末又降价，中小开发者该如何应对？",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5ETmVoZTk1WWZhMGR2d0RheE1zNXVSSnE2VFhab3dhbkw4LWlTNTRYd2tPOGZCY21kQXZUMXVULUpBeXdtOVRrUEN2cDhxN3VpYUdLRTE5UGVNbTJoYzVzQUE4dnhmVDBiVnZQRUI4c2dBRWRld2N0bGF4cl8tdw?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "44ca1e66a787",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-23",
+      "quote": "8月23日0点起，“深度求索”调价",
+      "title": "8月23日0点起，“深度求索”调价",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1hWFN0RnhNOUdBTF9PMlRQcktQTU90OFhHMGNwMXpjVGhKZkt3b1dFbEI1ZUJsZ21NNE9Hai1wYUxkRFhLc2Qxdks0N1JSbDJ0RE83YjFuTFFJMlYwRGJyUjRKakdUc2N1VTByN2wta3BsQQ?oc=5",
+      "source": "京报网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "215bbd895497",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-24",
+      "quote": "DeepSeek V4-Flash-Vision-Exp 上线：开启多模态 API 服务，Agent 能力接近 Opus-4.8",
+      "title": "DeepSeek V4-Flash-Vision-Exp 上线：开启多模态 API 服务，Agent 能力接近 Opus-4.8",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE56bE53N1BmckhIdVBNcEtrTWxjMmpoZGxyN1JGYm1MYVZmRGJKZTVxMGZ6T1hsaHp5X01MQll2WlU0c2IzS3BCNzRLUFE0dVQtX3otd3ppa3Q?oc=5",
+      "source": "白鲸出海",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "4ab90915d8b0",
+      "slug": "deepseek",
+      "brand": "DeepSeek / 深度求索",
+      "date": "2026-08-23",
+      "quote": "DeepSeek API再“变价”：周末按低谷收费，V4 Pro大幅涨价",
+      "title": "DeepSeek API再“变价”：周末按低谷收费，V4 Pro大幅涨价",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9xeHRQdHI4TnJWbUZfRkdxZW1fUXItLWxKX1kxVEhYNE1CQk96UnBnTkpjN2lxU3dLVDA3NDJrMXc1QVNkdTgxNEhyOUhfdw?oc=5",
+      "source": "全球定制网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "360db32e39dc",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-23",
+      "quote": "零成本，克隆任何人的声音，本地部署开源TTS教程",
+      "title": "零成本，克隆任何人的声音，本地部署开源TTS教程",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ZeUVDZk51b0NGMGYteDZVRi1kNkVqLVBRS0VJZ0tXUlpGanMzY1RiaXkyaTBBNFFtZVJvUV9DTzRkc2lES243ZFZjdllramY5dDRnNUc4VldHRzB5?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "0842f8f59454",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-21",
+      "quote": "速递｜AI算力调度公司Callosum获1亿美元种子轮融资，英国主权AI基金参投",
+      "title": "速递｜AI算力调度公司Callosum获1亿美元种子轮融资，英国主权AI基金参投",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBEMzBnSDQtQ2VaOEhoelhHRWhnd2V0Zkx3MjJkNE90eGkxVzVEajlIZFRoRUVSdFc4ZE9ZRmdWeGtZOXlnQXNrQW9La1VJOVBBTEQtaVRnMEdxZ0V3?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "fb8c51b3fcd5",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-22",
+      "quote": "谷歌TPU之父，被Anthropic连夜挖走了！",
+      "title": "谷歌TPU之父，被Anthropic连夜挖走了！",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBfNWQ4TDU4NWozbUszQkdXRmd4aTdoemp5VWJHQkJER1pqbjZZY2h5T3M2ZzRwMWpzX20wNkFRdTRlQlZXZXhJZk9sNUE5Vnl3T044WS05ZlQ1Mmgw?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "03bf40068470",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-23",
+      "quote": "英伟达砸60亿打造开放AI模型 议员警告美国放慢脚步恐让中国受益",
+      "title": "英伟达砸60亿打造开放AI模型 议员警告美国放慢脚步恐让中国受益",
+      "url": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxQNkxkR04yb3B4S0pBdjQtRW5hNzJfcWtGT3RxMEJZMlNZejE3QURENkltMzRwX0Y1NGRUeUMxYTNWakpDdnlxUFp1c2ZUYVpPcHd6RFpza1JHc3RLWDVhVl9JS3pnV3c1Zm8wdVJkSnNZVWVxUDA2TThNUkEwOVoxNHdUdkwzQ1lGQjllS1ExdmlhOEJ5cTRGMW8zRkVycTFEV2w2VmJSYUVweUVubTBJMTR3RFhnSVJvSUhUWko0X1dYSFN5WFg5R0hDcmR4cUpwTXpveU03TzdGWjN1bEkwOGF5T2Jic2xSbXhnWTFWYlkzQ3Z3V3d2VTMwcGFoXzdoOGh5dGoxR3g4a1A5SnpUZXRQYkY5bmhaTTk1QTNEdG1FYTJxRGxVT3lkY05ja0NISmdvWWlseTJ3ckNnNmRDeFVOdEJ4X1ZaSTFtRERpOUNSbkxUTnNqSHNtMUd5U3pXdjk1ODY3VU1IRWlEazNCT3VOYllYZ2hiME1FamN6Z0c1c0d1dWJjTlNFQVZtcXdTdFZmMXBVMnJubHVmSVJJcDIzdVBXTzFVNmc?oc=5",
+      "source": "RFI",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "f4fa49618cac",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-24",
+      "quote": "英伟达豪掷60亿美元构建美国开放AI生态，全面对标中国",
+      "title": "英伟达豪掷60亿美元构建美国开放AI生态，全面对标中国",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcVBzQy1IUmhLNlE3MFNzbUVSc19nM0dtQ2IyWTFqZTlfQUVndzhrWC1zXzc5LTJMRGRsTmQ0aE9adXJOR3Z5X19ROW9SbTl4emV1MGpxamU2U1hEZU83LUQzckNibWY2TU1FM0NJcm5OMUpnYnNXdG9aVUx0ZEVMMk9hUFpMWXh2cEZrMWhoSU5VTlBudVJRTVJubEVWVmdaZTJtdW5uR0o5dUlXTVV6WW5qMnRqdw?oc=5",
+      "source": "华尔街日报中文网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "c7534da04dc0",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-24",
+      "quote": "NVIDIA官宣GeForce ON玩家大放送| Gamescom 2026科隆游戏展",
+      "title": "NVIDIA官宣GeForce ON玩家大放送| Gamescom 2026科隆游戏展",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVmRyRG5oaTQzQzNBMjRhdGs3a1UyeEt6b2F3OUNES2VEX3BLQjV1RDJxU1FSNmUyOGlyRlVmWTgwT21RQUs5OGt3RnZTRS03eWlSSzIxQUtzYVcyc0hMSnZxMDlLU2VrMk5wYkVmdUpPMDFLbzdCQm13aXNZR3RQdGpZeE0xZm9X?oc=5",
+      "source": "搜狐网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "ade64282901c",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-23",
+      "quote": "四号秀威尔逊：感谢购买我新秀W88优德体育登录的球迷 会让这次购买物超所值",
+      "title": "四号秀威尔逊：感谢购买我新秀W88优德体育登录的球迷 会让这次购买物超所值",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfcU9QTmExbmN2VERlRUljbmhyQkVaLXpzVHVrU0xKQUxBbV91bEJUSkpyU0xZSW91ZGZLRFotN0dNZTh3R3V4YnE3UTJuOHNyTVdN?oc=5",
+      "source": "womenofchina.com",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "f741c8a71085",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-23",
+      "quote": "内存危机冲击英伟达：AI服务器价格预计将上涨超过15%",
+      "title": "内存危机冲击英伟达：AI服务器价格预计将上涨超过15%",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9rNWJvODJvRjF5clJxZHBsVTdhWUhDNGZ0YnZYOGNfcDZCMW92ZDFKVE1qcFZDbTYzekJGNFpsbEhCQVhCaDFKY0l1Z3NaTTY4d3gzRnNLQTFhLXVZUW9QNWtxMA?oc=5",
+      "source": "Notebookcheck CN",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "c624cb2cbfee",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-22",
+      "quote": "英伟达 战略入股电力开发商！锁定AI工厂的“电力第一公里”",
+      "title": "英伟达 战略入股电力开发商！锁定AI工厂的“电力第一公里”",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tMHJnMWxoZFBEQmdBU1RCdHZIQXc4SXhabGoteU5oS3JnWVlWeTFMQ0FkQ2tocDdncWNTSGhyNFRIMkdKUFNHTExBV1JGdDhmSXF4alc2UHZ4YkNEZzR6bg?oc=5",
+      "source": "东方财富",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "541979b45296",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-23",
+      "quote": "韩国LG电子与英伟达加快机器人开发，年内拟积累10万小时训练数据",
+      "title": "韩国LG电子与英伟达加快机器人开发，年内拟积累10万小时训练数据",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdDU0RDVDSG9uaU9reHlzSmh0aVZKS3NzY3lJd3JrNkhibjIxMkZaR2FQNHBYb1RXenpmZ19JdmxCZWRCNXk0cnlCOWtIZ2hiRzVhNGtsd1JBNEVwUXd2RmVkWHI4WGFoVkVla3dDUzNWOFhKb3V2YUJtd1cxeEJXR2syMUhTczE4d3c?oc=5",
+      "source": "jpchinapress.com",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "4b90106cfac5",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-23",
+      "quote": "英伟达股价连续 10 日上涨：AI 算力短缺背景下的增长天花板是多少？",
+      "title": "英伟达股价连续 10 日上涨：AI 算力短缺背景下的增长天花板是多少？",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQM1p5M0JsSmZJN2ZCLWJWOE1YNHdBTXhNOHdWSzBRaENDUVlnN1VWR2tYZHRiRS1Ib0pSRjY2Y0JCR1pCSnh2VDZaRlczTjhiWm9Bc2Q0dGhmdWhJWHRMVENDVGk2QTY1NV9VY2Vya2J3eVhGY1dTbkwxN29ucy1ZYmpiZmNJRjVUcDluVFFDamhNZm1HaU9UcTJTVm94dm5RLVNQMDF1VUxza1F3VW5lLVU4dncxYngtbkticFJVTWhRQUFETTIwLV9QRTJIOXJVbWZxbGp4UE80ZHByZVNXX2prMzFPa3M?oc=5",
+      "source": "TradingKey",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "3644d6813be5",
+      "slug": "nvidia",
+      "brand": "NVIDIA / 英伟达",
+      "date": "2026-08-24",
+      "quote": "NVIDIA公开了在人工智能(AI)服务器上使用的CPU继现有的Arm和x86之后,将扩大到开源CPU设计方式\"RISC-V\"的战略。 这意味着,为了让更多的半导体企业使用NVIDIA AI平台,将扩",
+      "title": "NVIDIA公开了在人工智能(AI)服务器上使用的CPU继现有的Arm和x86之后,将扩大到开源CPU设计方式\"RISC-V\"的战略。 这意味着,为了让更多的半导体企业使用NVIDIA AI平台,将扩",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE45VHBqNlRtc1dZSm9teXhOb3RhYlVNbC1RNUs1ZURaZ3laWGw3RVdJUHpMMXcwWU9zZXBvZ1FBMTZqR0E2M21kQ2FGMA?oc=5",
+      "source": "매일경제",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "ac59fc9cd611",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-23",
+      "quote": "In the Loop: Tim Cook celebrates World Photography Day",
+      "title": "In the Loop: Tim Cook celebrates World Photography Day",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNllJb2t3M3FVYW1SWGNBUEFSTVB4b2pkTy1rcTVVMkJTRnM4a2RBVENhMzNvano4bTBRVmNPQVlCdTVFeXFWTGtDSnpvMzZGYnowRmdYQks5MmlVTEFWMzdzOS03Y25xaXFGSXZ1OTZhUEdwQjdoeWMzcTA2LXNtNXdSeXR4Y3NsZmN3RGxSZXJaUHFPcGhYLQ?oc=5",
+      "source": "Apple",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "706dbe3ee8d6",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-21",
+      "quote": "ChatGPT 桌面版接进 Apple Messages:Mac 上一句话能替你发 iMessage 了",
+      "title": "ChatGPT 桌面版接进 Apple Messages:Mac 上一句话能替你发 iMessage 了",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBvYk92aTQyYk9lODdjUmc1QkpLMTFtUGFkTXlHUndRQmFEYVZjSUtWTEpvdEE0SDJkei1JUG5NSE9PZlhZbXpmTVJyWlJMSUxQcFFpWEpxX0FNQkZN?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "f6f67072d3eb",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-23",
+      "quote": "Tether：不用 Mac，也能让 Linux 和 iPhone 拥有类似 Apple Continuity 的体验",
+      "title": "Tether：不用 Mac，也能让 Linux 和 iPhone 拥有类似 Apple Continuity 的体验",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TeXZhajRhNzF3VnJyUmFyWGx1SVhRSktFYjZteUQ0aGptTTNwMUFBTTB2V0E5dGhqZmdwcEFlVXVBYXhWRDl6LWFYWnl2ZmI1MDVmVGV3b0tTYWY2?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "5b531f01e634",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-21",
+      "quote": "曝苹果VR研发团队大幅裁员，研发资源全面向智能眼镜倾斜",
+      "title": "曝苹果VR研发团队大幅裁员，研发资源全面向智能眼镜倾斜",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8wQWlyNzRjdUNPOEtyTUtOc3RIYjdfNVhVV005Ujl5ZHQ5WGJ3em5VdVA1YVNMbW1fbTkwT1RNc0Z5RnB3ODdtVUxCZGpQVHF4eGZrZ3kwT3d3Y0l5?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "a6cc980ccee7",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-21",
+      "quote": "苹果 Apple Music 不想放过任何一首 AI 音乐",
+      "title": "苹果 Apple Music 不想放过任何一首 AI 音乐",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE54WVJZZ0FOdkNndnZKR2h4b2NSekUxc2lJdnM0eDBkb0hOOGpfeVpuZ3NmNG5URE9OcFl2MHJUazNGWWs?oc=5",
+      "source": "爱范儿",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "a1549f994b50",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-23",
+      "quote": "富国天博_游戏资讯_苹果推出Apple Upgrade硬件租赁 买不起的iPhone可以“借”着用",
+      "title": "富国天博_游戏资讯_苹果推出Apple Upgrade硬件租赁 买不起的iPhone可以“借”着用",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE16Q1cweTRjakUxLUtZU0xSQWdjRFltMWVPY0VhTi1rT3pFMUJNcXhBRTkwUkhfRVYxUkdaOGFKaWtSMjB3eWlLWTdQT01LYWZwRXppai1uR0lyTkJ0ZE5lNA?oc=5",
+      "source": "womenofchina.com",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "92a7785e3667",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-23",
+      "quote": "苹果零售店重组内部布局全面迎接全新智能家居产品上市- Apple 苹果",
+      "title": "苹果零售店重组内部布局全面迎接全新智能家居产品上市- Apple 苹果",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9uak9QNTNrUTItQkRvZjJZUVRmelFTdUMzZURvUXF2cGdJWHNJYXlRVnEtZXNUWVFTVDJQYUhkcTFBZUo0eUtJVzY3aS1BbG02aW5CN2hMWi1NYTBCbGhqSg?oc=5",
+      "source": "cnBeta.COM",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "5c1d871ffc54",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-22",
+      "quote": "苹果调整Vision与Siri业务，裁员总数约200人",
+      "title": "苹果调整Vision与Siri业务，裁员总数约200人",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdXRGVHlNeVBTN2tqeFNVNXBlU0JMUmtMR0dnTVQya3RRYTdkbFJndllRUEtaTmlzM3Fta01VLV9hT2JCWGpJZ2F6c183SFRINWoyZzNfWnN0M2t0OTNqOEtvb0tBU3g5dm1RVEhHQ3Qzb013VUhUSFdaSkd3aXFFTEZtZ24zUi16eUtfR005YnNsWFJHcm1IWkIzcFNvcWJhY0M5c0psbw?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "74a1b56b4270",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-21",
+      "quote": "苹果端侧AI性能与安卓旗舰相比如何？",
+      "title": "苹果端侧AI性能与安卓旗舰相比如何？",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0wejhBX08yWlZTMFY4VHpBc0tFLWQ3NEt1a0x0MVIwb0s0Q0FSN3pzdjAtaGFRMGt4NjJpOHVKLU5UQzY3NVEtcE13STNyU3NEQUJuQl9VYXJvLU54Nms5Ynhrdm9LSFg5ekhQenBCNF84NjA2UGlncXJGQjRzbU0?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "4fc8e9e66b88",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-22",
+      "quote": "MG名爵要接入苹果Car Key了，iPhone和Apple Watch可以直接当车钥匙",
+      "title": "MG名爵要接入苹果Car Key了，iPhone和Apple Watch可以直接当车钥匙",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRDdDRndmZmpHLVk3MldobmZBSmlrWkdGd2RoSlo1cVFxTkZJY2RhV3RMcWN5VFU3V2hBUWNvZjRKVEJrSEctRGd1UUtjZ0JVX3FLaGFUTDk0RGthQjZoZlZzUlUyOVZrVWN1RmdvRFhIOVIyc1l5eE1DZ29TVkdNMVI2LXhhVDZMSUxIag?oc=5",
+      "source": "搜狐网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "ff8e0f4e7a01",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-23",
+      "quote": "Apple Music为标记人工智能歌曲创建标签",
+      "title": "Apple Music为标记人工智能歌曲创建标签",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB3TVZKN2U3Z3l4SW9uTlA1VjczWDFPeWs3T25hSmd2MGE0RjVieW43SXkzbTZqaTNyTjJxWUFBV3R4ajlOTlpOTHFsVmRqRW_SAUJBVV95cUxQRllKUVJWZTRadjB3bjJndU1mdEFaU2VHRnZrMF81UFR3OUhqWENpam1ieUJCZWdOOWtVR3NmVXNZaEE?oc=5",
+      "source": "VOI.ID",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "c0fea253e6ff",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-08-24",
+      "quote": "苹果或于今秋更新家居产品线：新HomePod mini、Apple TV 4K与智能家居中枢有望同场亮相",
+      "title": "苹果或于今秋更新家居产品线：新HomePod mini、Apple TV 4K与智能家居中枢有望同场亮相",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ1lzcGdjcFZxNEJ0eGpCVkVZV0pwcTEtclV5YS1lVjZpaUFNMFJWTXJfZnNITTVpZ2Z5ZzB2WGE3V09mc1RMWUFHQ0xESkI5RHZtLVl3a3Zoa2RlUzRRZFRMWkNNN3VtY0QwYzZkX0ZSWFk2RDRxZXdyRUFmaVFuRF9NM3BFU3F0Q2dsQXJCZEgtaTBTeE1DVjFyZ0p2R3JfY25PSGlfZ05CeFU0Qy1SZ3gtRnVoNmVEU1BEM3hSc0JMOVVn?oc=5",
+      "source": "디지털투데이",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "f3095935fee6",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-21",
+      "quote": "Tap to pay with Google Pay is coming to Walmart.",
+      "title": "Tap to pay with Google Pay is coming to Walmart.",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRlBtRG5fX1BQTXpKSkZWbHFKemlJekNDNjFXTFdNTk1tVjFiWTVDQUNsbzZYYzF3YkJPa2NETV9ySTJmQl9aUFdDa2ZEUktDQ0dOcy05bnJqTjNhYTN5eDFMQUJKbHlZbTVXWTE5MnFVNnlTaloxZEhWTmthaVhpYjlaeHhObVpjYTZad3JrdEVNTkpDekxQYlh3?oc=5",
+      "source": "blog.google",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "3fab512b9dd8",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-21",
+      "quote": "Enter Google Play’s sweepstakes to win legendary experiences and collectibles with your Play Points.",
+      "title": "Enter Google Play’s sweepstakes to win legendary experiences and collectibles with your Play Points.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOajBJX1VBRFhmSmg1dUNnQW82Yi1rLUh2YUZuUzJTSDVDdVhwU0hwSlBfYl9qVXNVZFdqSVBWZEZJeHA4YWhjaXk1YVpseUhOODFyRWhwRVhUZnE3V2R4U1Y1WE1PZFp2ZjlqY3hzRE1mdmhDUWNleFk2VE5XZ25WNnlhcmQyblhtZmZnRnRRZHZVaHM?oc=5",
+      "source": "blog.google",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "7dbe13a8a118",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-21",
+      "quote": "What does “full-stack” AI actually mean?",
+      "title": "What does “full-stack” AI actually mean?",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUkZOclU4THFna0VKT00wODhBSjBvQTRTdzNaNWYtb04yMDhoZjZXeTMyNUR6S3FaUnZiYWVLMld1Rzd6ejBrbHRpcGtFMjY2TVJYUW05R1ZWTlJMdzk1ZnlwZUpKMmlPWTJmMVJzYi1jdnA2LWxBbG4tVEY1OXlva1dScldoOWd1VUlrRThvbFhTczVxX1JSUVVrQzA4WWtuVkUzVXFIb0E1Zw?oc=5",
+      "source": "blog.google",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "33282e81af5e",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-21",
+      "quote": "Here's how to use sign-to-text translation on Pixel 11.",
+      "title": "Here's how to use sign-to-text translation on Pixel 11.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOU0F5QWhEQko3dkxoQl9Nc01jUlNjb3JxQ21XcHJBazdCdnNaZi1wdW9YdGpKdDY1anVZRHRmbVJCMkxla2hLaDlkWi1lZFZDOFJVOUlkMnBSOS0wMkxOV2pLWVNZVkhjTDFISW1jblJ2RnVXLTU5MktJOVpPSWZ1NU1VQzRIQ0theXIycUZ0ZUxiRVVyVFJXQjZMakxlMU5laGU1Tw?oc=5",
+      "source": "blog.google",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "0331a66cc067",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-24",
+      "quote": "Start the academic year with one year of Gemini, on us",
+      "title": "Start the academic year with one year of Gemini, on us",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxON1JsSFlCN2t3dnVTS3VXdmhTODZnaUlKQ04tMDV0YS02NEZnM0Z3S1V5QU5GMkRudmJUUmtGZlhXaXo2d1IzRFFjNEtDMEhXSHpwTXJocm8wTVpIMm9LNnQtV3BBX2FrU2VxSElWaHplbElCTi1nenBVMll5R2FtcG1zN1Uzd1dlQ0ZmQVB0c1RsQUZVWU9najd3?oc=5",
+      "source": "blog.google",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "e529a4823e61",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-23",
+      "quote": "匿名牛来大模型被扒出智谱血缘，也有人怀疑Cursor拿开源GLM训的",
+      "title": "匿名牛来大模型被扒出智谱血缘，也有人怀疑Cursor拿开源GLM训的",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE04SzI2eTA3MmlGM1BVRHRjcTRVVE1udmxQWUx0amt4bkp3TE5GSm9XNGFIRjlXQkZFa2k4WVJTdjJ5ZTJZVFo2THk3SlRhWVowdHBiUHpDTDBvUXRO?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "815d57aac016",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-23",
+      "quote": "国内使用Codex教程（2026年8月最新）：从安装到上手，新手零基础也能跑通",
+      "title": "国内使用Codex教程（2026年8月最新）：从安装到上手，新手零基础也能跑通",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QaVNZckxKSWpmYXNCSUFsV0hpcm9WYlA5WFp3Mk9qZVNSWE5yYnVkY3pCUXVBN0tZSlhudGdBUWZ1MXlLYTNFVW5NenAzMkdoUkkzVWNUZzctV2lW?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "1db52571ade1",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-23",
+      "quote": "神秘「牛来」掀翻硅谷！谷歌抢着认领被全网笑惨",
+      "title": "神秘「牛来」掀翻硅谷！谷歌抢着认领被全网笑惨",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Fa0E2cjJ4Z2VCTnA0aGF4RFhKMi1qcEcwRmJ3d0l3dl9PVlhqcXpMbmRkT2JaZjBjNXliSDNuX0lMa2w1RDNmNDhZdXN0ZzY0dmdURk11Mk5FdWtp?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "9daf95fe28fb",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-23",
+      "quote": "华为手机现在能用谷歌全家桶吗？3分钟看懂系统版本+实操方案+FAQ",
+      "title": "华为手机现在能用谷歌全家桶吗？3分钟看懂系统版本+实操方案+FAQ",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE81RXhNWlQ0Uk5TNmUxVHVtSlltOVc3UkZ5MXJWcDN0ejNCa0VrOE94ZURzeU1tWnBKUnJxT1hhYzdGUEpXdnhlbUpOWFg3dTRhLUFzNXZfUUwtX2FvQjQya01feEZYTjBBdFhPd3pVWDAtdw?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "d8414f082da6",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-22",
+      "quote": "谷歌TPU之父，被Anthropic连夜挖走了！",
+      "title": "谷歌TPU之父，被Anthropic连夜挖走了！",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaVdjOTQyeUdrRzFBRkxtaXJGWThqS0dPYm1JNnRqLTB6SlZNem1UMjJIMVhKX2JxU3c3OEpUUEZSVWQ4czItNWZqcWhMaWxjbDNDU1BaNXdTaWFDOWdiNC1rbDZvZDJzT2UtRVpkNTFGTVZsR0lyenVfeERLSGFqSTlyQUdIM0VIS21ibkREZzNqeWh2WW9wQXZPQTN2cjZPY2l0cDVjd0tVeXRGVnNGbmhB?oc=5",
+      "source": "新浪财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "957add94bf79",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-22",
+      "quote": "耐用性是普通机型的三倍，但Google Pixel 11 Pro Fold在耐用性测试中仍出现断裂",
+      "title": "耐用性是普通机型的三倍，但Google Pixel 11 Pro Fold在耐用性测试中仍出现断裂",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAwUkZ1b1Fhck05cGJXRGtrS2FGYS1ETDNCbVNKREZtbElhOS00RkdQX2JzVzFfeExCd2FxcGY4d01WWmRETjhmWTRYUGdpbGJCMmlLaV9sWnRzSlpNYWZQbnpCemxFRGRrbzRBVHlxNnpUY2dUcjA2bVVvTDM?oc=5",
+      "source": "Notebookcheck CN",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "db2d0be0c3dc",
+      "slug": "google",
+      "brand": "Google / 谷歌",
+      "date": "2026-08-21",
+      "quote": "“谷歌税”累计为哈财政贡献1788亿坚戈 Temu关联公司缴税最多",
+      "title": "“谷歌税”累计为哈财政贡献1788亿坚戈 Temu关联公司缴税最多",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RMXJYYmpKalY4M3lLaWdScUFtaFdNSFlWdWZQcEJGZVhqQ3FxajExTW1YQjhNQS11ZV90N0xvcVQtdWJlbVc2UDJxZjZoclQ4dEZ0dEZmeFlPNEdiWXVRT1JYNVdhc1lGRjlWbHA5TjFOQdIBcEFVX3lxTFBab1lHbDU5VS1LV0QzTHRoaUdVS0NBQnh0THhWM2pPbjRUR3BMeUhyZEFJT3RtN0k3cHdmQkQ3MDY5S1Q3Nm14TU5VaG8tMmxEaTRjdXVlMWIwWFVrNXFvYmZock54VVhKWVVhNUdfMFQ?oc=5",
+      "source": "哈通社",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "e7dd0469a04a",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-21",
+      "quote": "Salim Naim - Microsoft Australia News Centre",
+      "title": "Salim Naim - Microsoft Australia News Centre",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE04OWxCNXY3UC1Jb2dCbWl1VktOaUNfMkVsQk14bjhHRVB3ejdOdE03cFJROWZBTlF4RFZSRE9QanV5ZTVNM1RmckUxMVk4andCSkVhdTNfOXRfQmZ3cXc?oc=5",
+      "source": "Microsoft Source",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "fb8f7565667e",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-21",
+      "quote": "Aditi Singh - Microsoft Australia News Centre",
+      "title": "Aditi Singh - Microsoft Australia News Centre",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB2Y0tBc0tLWmRaVmk2ZXN5aFU2NXFWZFhxNm4wV0tfV084MnI3ajQ5LVA3bm9UN05sNFI2dUV4X1ptM2tndnNod3VCSFBsTDRfM2lVczI5N2xrenVDZEg4?oc=5",
+      "source": "Microsoft Source",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "231d5a4653db",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-21",
+      "quote": "Liz Fitch - Microsoft Australia News Centre",
+      "title": "Liz Fitch - Microsoft Australia News Centre",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9lOWh5QVhiMlV4bkZCTFh4X0tMc0FmZTN3Q29rVkxvTUc5WUlfZ00yVmlWeXlOclJqbVFtc3B0Ukt1ZzlENFU5VDFwNGdBRzNlbXU3YlN2aTZSM3BB?oc=5",
+      "source": "Microsoft Source",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "36687d80c428",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-21",
+      "quote": "OneDrive停售单品服务，谁是最佳平替？",
+      "title": "OneDrive停售单品服务，谁是最佳平替？",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4xV1Jqak9SUEI3VjBFY2NfN2pHekozSzItb0xybUstNElZN3BmNjdlSHFCQzgzSWtHRTduZVQwU3VIdU10dlBNNDVNc3ROdkdrVV9LWmprXzVKTmNU?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "0c9d13bc0da8",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-21",
+      "quote": "误删文件后还能找回吗？从回收站到专业恢复的完整逻辑",
+      "title": "误删文件后还能找回吗？从回收站到专业恢复的完整逻辑",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9JYkFHS2FJT0U2WFpwWmhENnp5eXV4TWhuYXhYRll0alNyanJWemoyRFNWUnJjVTdPbjI3UW0wemp6QTIzenFaaG9JY19UQlJZMDF6Y1lkUUJSNVlH?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "73199ff1e3f1",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-22",
+      "quote": "Windows 11 24H2强制AI，如何彻底卸载",
+      "title": "Windows 11 24H2强制AI，如何彻底卸载",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMcklaWDdJdjJTTVdGQjRCY3JXSkF4VnhpTnZIeU1kMmp5NEFoVzBOS243VDhYRHZXbkIzc3VrWlVaUUlnMHRwVnFCLTRCZWdMYUI2RW9NdlM4R0V6?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "3220a261c4e1",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-23",
+      "quote": "抓住熊猫 - Free download and play on Windows | Microsoft Store",
+      "title": "抓住熊猫 - Free download and play on Windows | Microsoft Store",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQN25fX2FoMWFzSEhyc3B0U0dmVnRHSndDN2JRb2l2SXBPUjc0UHBsX2dSeFBIZE0yRElfMmwtb0RHaFZleV9hQU1GYXQxZEk0TUh6dW5Yc3ItZHF5U1JVbzkxc2NrNUVsNEFxcmMzYmd1UUNJbWlRYVVlRDlLMzB1SzhOOHdHUEJDYWZR?oc=5",
+      "source": "Microsoft",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "e7bf7a16b964",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-23",
+      "quote": "Microsoft 365 商业版邮箱扩容至 100GB，企业用户迎来存储红利",
+      "title": "Microsoft 365 商业版邮箱扩容至 100GB，企业用户迎来存储红利",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBtb2MxVEFUWEpOMFFyejVla3lMNlFKT1pwMnF6Y1Nlbnl5QVI2TTlFU3VhTXZVNm93ek5YNnFkRlVza1dUNkc0NkFYUXZIMkYyOGJtZUNBWnhMZ0dlVEZKLUliM21VQQ?oc=5",
+      "source": "blog.csdn.net",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "40aa92b93ced",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-23",
+      "quote": "微软股价预测：AI需求正在转化为实际云收入，股价或重返500美元",
+      "title": "微软股价预测：AI需求正在转化为实际云收入，股价或重返500美元",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQc2dmaXBhYXJxYlBtaHFPVGI1MzZHNDNYc2FwTzhCSl83Tk9RS2M3N1Nzc0N1d3BMU1R2MnhnZFZxa04tQkVvYmp0MkJlckpNTFJkNXVfZ1JwVnRMeEF3RC1QZE8xSDhyTzdkc3lQR0RjMDc4UE9wSHpNenRfdUlQZjFLQWk2U2FEU1JCYm11TWJNMzRIblYyb1BsSHZ3Rm5EREhTYkNQY0Jubk92clJDemdrSmFQN1U1OFk3c3VIc0JhVEQ3MmlfYXZOLUZmb3YzcDdFcU82N2ZULV84c3lrMlhVNA?oc=5",
+      "source": "TradingKey",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "42420d6a9634",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-23",
+      "quote": "微软程序员在搞什么：推出纯广告营销软件 一键替换Chrome/FF主页",
+      "title": "微软程序员在搞什么：推出纯广告营销软件 一键替换Chrome/FF主页",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9sOXVJdFhpZk9TTUFOOHhzUC1UcWxObU51NVVYQlBfZHh2bUY5Z3pGOWNEYTJTYzczQXZqSzJnd0NEQUZ2LUNQSU5EcmNwQWp3TFVOTjJZaXY?oc=5",
+      "source": "驱动之家",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "3c55f2fcfdd9",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-21",
+      "quote": "微软推出22.2MB应用引导Chrome/Firefox设Bing为默认搜索引擎",
+      "title": "微软推出22.2MB应用引导Chrome/Firefox设Bing为默认搜索引擎",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOamJNUTVNclNaanA2dVBCNm4xZDJReExlNzllb01TVWY3QndFQmhaYTFqS1NDd1ZSLXVCXzd2MXdFOG1aQk5jbEJlWVhhOFRDajdhOHhCU0p6QXQ1dzJ5R3hEMUw0UF93bW9GWnd2YlhIUWM4NGZubWZJTnZzbWdNanpGYVVWUmRQ?oc=5",
+      "source": "搜狐网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "8a0d84d47a62",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-08-23",
+      "quote": "微软 Edge 浏览器移动版推出邀请好友得积分活动，一年最多可获 9 万 Rewards 积分",
+      "title": "微软 Edge 浏览器移动版推出邀请好友得积分活动，一年最多可获 9 万 Rewards 积分",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNMXg3X1F5UXlYMEpqclNkd1Z1bDJZNjZqUGFKOUNYc3lCZGhMRHJ3RFNMYWkwTGhWUk9ZMzBMbFFSdl9yU01sQ0FZWXRaOWF1TXBmSHdLdjM0bWhPYU41bDdUeWw4TkpqYm94bVFxR2l0T2xyYjhPaU9EQ3djcE1kd1I1dFBMb3dRYTltMDVJUXNSREFDTXBIVEdUY1JRc0U0NFFjRTZYcEc0TzBVRWVOalhoNTFmeFhvYlo1MXpNdHpOcVdXclNOUFEycnpLNHRhZllqZnRqaFJmc21CS2k0RUtTb3YxUWF2RVZ6cmNwdVFoSmVfQUstS09ieGFjeVgtX19RUXFn?oc=5",
+      "source": "新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "1a498b50fe94",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-21",
+      "quote": "Kindle怎么传书？这是我最常用的几种方法",
+      "title": "Kindle怎么传书？这是我最常用的几种方法",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rREpGb1JQWkxnM2pVS3pkU2NpdlNoMWlkMmlNWHZSa2VaV3VQWkROYTNIcTFzdlFuVTlqS2NDNTVPQWNzNEhOWEVGYmpCakVnSlhrME5TY25PR19D?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "5eedc25d5c38",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-21",
+      "quote": "电影牛来火爆全球，亚马逊同款卖断货",
+      "title": "电影牛来火爆全球，亚马逊同款卖断货",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9yMkpSTXl6bnlTUmRiMG9DTjhKS3VBazFwazlqRmRKNURxeWxzaE9XX05TTGNiekhhdmxhUFUwOE5uaVoxQ3hLbXMzY0FWUUxOb3I1bUwtdUF1bWtn?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "93df5403014a",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-21",
+      "quote": "史上最大IPO将易主？传Anthropic募资额或超SpaceX",
+      "title": "史上最大IPO将易主？传Anthropic募资额或超SpaceX",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ERHRIcU9sNVVualpHZ3NIQVNRR1BHODN2cEppMFVtVXRqV21kSmNKbFdlaURXU1FTZkJpYjJ0SlR2NGFzckJKdThDTWo2d1FIdTU2NnRVYVRHMWJ0?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "c3f34f048ad7",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-23",
+      "quote": "亚马逊无人机空投出包!包裹直坠游泳池,女一看傻眼",
+      "title": "亚马逊无人机空投出包!包裹直坠游泳池,女一看傻眼",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE95c3c5U0NqUGptOTl5TngwU2FUaVJabXE0N2Vfdy1ua1pvTGpLaWg2bVl5NUo4cEtLOGc1YzRPbWk3dkZwOHFPU1QzZkc0Vk03SVhLX1VEdWZ2Wml4RVJpSmYxdzI2Q291d3lhOUphY0Z0c2s?oc=5",
+      "source": "文学城",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "3ccbb9139b8b",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-22",
+      "quote": "芬兰Treon为亚马逊Monitron用户推Treon Flow过渡方案，2026年将亮相",
+      "title": "芬兰Treon为亚马逊Monitron用户推Treon Flow过渡方案，2026年将亮相",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1uLVNZSEVLekEyV2lXeENqX1hNOG1TcmdPYkJISF9wdEtXZER1OXBJSkk4ekRYRkQ1YU1peXQzdFg0Z3RUQXJxS01MOURoRWZCczd3djlsclQ?oc=5",
+      "source": "维度网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "716ae83be27f",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-21",
+      "quote": "万代南梦宫亚马逊 Steam 激活码促销活动开启 — 《铁拳 7》最高 79% 折扣",
+      "title": "万代南梦宫亚马逊 Steam 激活码促销活动开启 — 《铁拳 7》最高 79% 折扣",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMG1EbFNpcFQzWDJJV2xsNFkwQ3djQjFvNzZjSi1DRWVLQUlwQ3R1WTV4N05yYm5aR1p0SVRoX2N6SU54LU1vUGplMkk0enp2ZEZHU1ZqWHZHQzhLNVBpNFU4VjNwTFZXbnJZZFpYRkNwMGMzY002Ums2RUNVYjhBdkloeVFpTjR1TmwyeDZHNE5qYUxsOUxObW5wZlhjUVU2V0NMTFF3?oc=5",
+      "source": "haveagood-holiday.com",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "18c4bb31f6c0",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-23",
+      "quote": "今晚截止：MERONTE 空气净化器 适用3600平方英尺 支持Wi-Fi连接 $95.19",
+      "title": "今晚截止：MERONTE 空气净化器 适用3600平方英尺 支持Wi-Fi连接 $95.19",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWGJXN2J3WkpLb2Q5MGpCTEdTeTVXendYREtwVGFJbzYzNW82VmpBWFJUTnFYbVkyRUlMZm9BNW9fRzBEdFNsQzZrcFRWT2g3VjlVbkRzOHRidFpJY0VuWTdmdFhnU2FZekdKMDV4dGM5NkxFMnFGTXExcUxNbDRRV1FBbzlzVEx2?oc=5",
+      "source": "dealmoon.ca",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "55fadcb89e96",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-22",
+      "quote": "联合包裹解雇亚马逊是否是一个明智的决定？｜长桥证券",
+      "title": "联合包裹解雇亚马逊是否是一个明智的决定？｜长桥证券",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1PZG5QRjB0TFZuYS1jbm1VWm1yTFBuM3Nmb0x1eHUySmQyYUpDVktnNzVPbWZmamw4RU1zeEF5U0VTVGEzWE80Y3NSYlN6MzhZYnpWUmJR?oc=5",
+      "source": "Longbridge",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "8fb318acc0da",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-22",
+      "quote": "Amazon无人机送货摆乌龙 客亲睹包裹遭“精准”空投入泳池｜有片",
+      "title": "Amazon无人机送货摆乌龙 客亲睹包裹遭“精准”空投入泳池｜有片",
+      "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxOLTR0eWxvcEZDRm4tb0UwNkZRaG1rSE5iVThsNTJSdFpFUWpDQ3ZWZHJjNURENFdJNkRnYzBybG9jN2hSdEI5cUZZX00ydWpDNDBwa0FiYTlJOVNPdG91VkdtWlFKcGU1RGNsRG4wZVQ2Tzl1WlRCN2hZOTBNVnZISUhiclJjV2lXZlV3Q2dNLTZ6YnVGdEhCZURoQ2FxQUExZFVWeGtBaDJQcDZrdFdZM1F0TTJYQUl3YXNRNFdHa0tuV240ZHJhMmhmVlFNS3FUWTkya0tiSHFsSXE3Y2lrZjMzMG5kTmtlbUluUEo0akJkT3phTFJFZndtWC1rNHl5bWVoWHRQdzBmakFMdDZsNnJRaFF3N000R0NtV19NTWNiTFBjSlVzemVSbU9zS3AzOG1KT3FWUmlnSjNrUmZwZGMwaG56R0tIdWFESUVmb284ZmEyeDlMaGNvT283N09aOEs2dkEtdFIzaFluYnNBVVJndHVWdGtaN0drNmM3N1NEd0NDSndYZmp6SUZ6ZGs4c21oVERKY2lJUW8?oc=5",
+      "source": "香港01",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "d82051305be7",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-21",
+      "quote": "终结沃尔玛霸主地位 亚马逊营收登顶全球第一",
+      "title": "终结沃尔玛霸主地位 亚马逊营收登顶全球第一",
+      "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxOTWI5NHU3akxGeUtlWk16M0VyS1NfaDlmY1dRRzFKVVhuaFJKVDg1SHZpWmRTdjJhVkN6czF6TVRodFlIN1JjSklmLURVUVJoQVJPcHhsZURzR1lzNTk0dmFJNURUdDdVczA0M2NGV21GMVNmR3RtYW04RzYtenh2dV9sazZ0UjNLSms2OGZHMW1LaXY1XzctSnFEeGJySkMyaFpDcmdubk82RzZhenhYZEpzUWxaTjM2OS0xOFdVNVFhLWMxckRNYzFPTmpfNHRJRUdPYlZhdjQ2c2c1eTB4VFl4aTRWWHhUQW5lbkZlUl9feUJNaGRXWVFiRzlpOC1fYnlNdFVtbG5Ha2VidWlXNFVsZ2hBM3FPRUx2RGtCY3IxTEtqQzBTVlJBUWRpclhLTkRfRVNFYlBMQTB1VXVZa3l5ZzRzUUVKdGRoYUE5ZkM?oc=5",
+      "source": "KLSE Screener",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "3509a52b5020",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-22",
+      "quote": "HUANUO 单臂支架 灵活稳固 承重约为2至9公斤 $49.98",
+      "title": "HUANUO 单臂支架 灵活稳固 承重约为2至9公斤 $49.98",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUFkyU3k1VU55VW42N3NQYTNZajNSNF9tWGdQaHhKT2JsQXE0aXRZRmFYcy1BRjVCUmdNMkVkTUwwajd0eDA1dXotLUxjY1cxVWR5dG9HRVdpN3J4c2p5ck5nWC1CSnNBOFExZExyckZnbllHTTBGLVFRRG8ybDJqcWh1djAwbkEyanVSbTdlMU93TDBlTnhLN1l1X1pndFk0cW1pdUJ3aFBDblNPdW5OdzJEWQ?oc=5",
+      "source": "dealmoon.ca",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "f9cbe6ca26b7",
+      "slug": "amazon",
+      "brand": "Amazon / 亚马逊",
+      "date": "2026-08-23",
+      "quote": "向量数据库要被取代？DynamoDB 开始原生支持 AI 搜索",
+      "title": "向量数据库要被取代？DynamoDB 开始原生支持 AI 搜索",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA2OC1VOVp6Wm1VazRmbkdtb2hYNk5DN2p3TDYweG9GZ0lpd0NBV2syQjlqeTd5dm9GMk1KaVRJcURNTlRSZ25VWnpRbzZxcmhKbXBqbE05N1JqNS1pcWc?oc=5",
+      "source": "InfoQ-CN",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "0b350b91524b",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-21",
+      "quote": "stc Group and Huawei Complete World's First Commercial MB² Deployment",
+      "title": "stc Group and Huawei Complete World's First Commercial MB² Deployment",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE83anVRbGFua1h0Z2pwQnpZOUJwaldzeS1FLWY0Q3dtQjFxcHR0eFNaVEZkaTZ6SW1vaTRXa0pPOFRZMVo2UFktdEFIZkw0Qy1LTWR3LUU5d2RBa3FWb0d2eWp3LUZlMm9HTmtkT1pWRTZTSUtvRENkejhB?oc=5",
+      "source": "Huawei",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "bc556e4bd452",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-21",
+      "quote": "埃安Ray7亮相 重塑年轻纯电体验",
+      "title": "埃安Ray7亮相 重塑年轻纯电体验",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02cTlsMW5WX1FDMVFRZC1sUlA3TlhqaFp5M2d2bktMakpONDhVRTBJS283SU0ybjg4UGxIOGNXMXh3UklpMk1TOXJYNlFwdGUwZU9jUmJ4bExHWG4y?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "719d9ede62c2",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-22",
+      "quote": "HAMi 晋升 CNCF 孵化项目：与全球开发者共建 AI 时代的异构算力基础设施",
+      "title": "HAMi 晋升 CNCF 孵化项目：与全球开发者共建 AI 时代的异构算力基础设施",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAyNzE1NDJLSENWYUJoTjZCSkdBb0pud0xxSVhMZ1dReEZCeFdvdjJPelVPV1N0MGxUd0M2RmhCOHZDTkZsTFdfczJyTThxTzdQTTRRRVRnR3JFcnJD?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "fdd4f7061ae5",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-23",
+      "quote": "卖爆71万台！华为Pura X Max阔折叠，凭什么高端市场站稳脚跟？",
+      "title": "卖爆71万台！华为Pura X Max阔折叠，凭什么高端市场站稳脚跟？",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sTWFSZkhLdkZnU0hpUlhyZzFzWEs0QUc3c3hPUGV6WjdPZ0xIdU01a1B0TzVkRHpUSGNrQy0xQjR6ZzdHUkgyV09rcmxDZlNXYndfRlBaWWhCQU9z?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "caf799231691",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-22",
+      "quote": "沙特stc联合华为实现多频多波束（MB²）微波解决方案全球首商用",
+      "title": "沙特stc联合华为实现多频多波束（MB²）微波解决方案全球首商用",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE43aXN5WC12ZFljLVMyNEJkd1o3UzJGQWk0dHA2ejBySUl6Q0lNYm5qOF9mZXhBNUxFZi1pTVR0VGRRLXJfbjFKVS1UUWVDMlcyMVB1dGxkWWhoVEtlRlh1dEVTeDJDVE4tVEVGemJwN244V091Y014NTF3?oc=5",
+      "source": "Huawei",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "859d3fc00f84",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-24",
+      "quote": "适合女生的折叠屏手机推荐",
+      "title": "适合女生的折叠屏手机推荐",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB6cDFYNFQ1d3ZCQlRjQ2N3ODNzUjEwRi13MnE3cGYtOWctOGQ4b21nNlhxblJ5UEVVeld2ejlzXzdIakM1WU1PMWo0RjVOalFmODRKMnpSLWFMaGxER29VRnU0dGJlRVF5ZkxWcnlqOGZldw?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "701dc29757dc",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-21",
+      "quote": "华为首款阔直板HUAWEI Pura X View亮相 手机形态再+1",
+      "title": "华为首款阔直板HUAWEI Pura X View亮相 手机形态再+1",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BSUpTUHYxUVI4NlNOdm5oZUNnalpRaE10X2I4VzROVlg3V2pIc25OWmZ2cEQwdUNtckJTTWh3UXFna0ViUThDbnUzM2JRaVdsNVNmVjEzT3RwMTlySDJpSw?oc=5",
+      "source": "东方财富",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "5dc338ebcd65",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-21",
+      "quote": "华为（HUAWEI）‘AI+体育’生态发布会首站落地马德里，聚焦PG电子・麻将胡了下载新体验",
+      "title": "华为（HUAWEI）‘AI+体育’生态发布会首站落地马德里，聚焦PG电子・麻将胡了下载新体验",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qYW9YRXY5WkhuMGtVWmJUd0M1aFZkTFNHT2FzSkpFZ2FOdi1jal9QRTdVNFdHSUgtbWVzYXljZ055bnZtM0ZMd2dPbHlEbE96OS1abENrMVRZdWRRcGc?oc=5",
+      "source": "womenofchina.com",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "30effcec68e9",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-21",
+      "quote": "华为阔直板手机亮相，屏占比96.1%",
+      "title": "华为阔直板手机亮相，屏占比96.1%",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fOWM3Z2hLSldMQWxsd3hHV2lnd09jNlhjS2dNU2lxQmlRajNwX0ItQklQQmNZSHdDck02dUE0OUd3SGxTaDMyQUtXYzVhUTRoV2hrbE9JZ1pGbXFnOE1mLTJFNzM?oc=5",
+      "source": "观察者",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "d4f39c0f89ea",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-23",
+      "quote": "华为Pura X Max典藏版销量为何反超标准版？",
+      "title": "华为Pura X Max典藏版销量为何反超标准版？",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB4ZkdQT3VraXVtNVM2cXBtdS16T19taDk2cElxRnlMaUY3Ny1SUGhfbGVCanVOMEJCWnhSWU9QNEhya0xrOU5kem1hY05ubW5HTU1KLXFTaVhURGFMeV8tN2lzZDEtelQ0aVVEaWVrM0ZkQQ?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "741e8e9f6ee9",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-22",
+      "quote": "华为Pura系列值不值得买",
+      "title": "华为Pura系列值不值得买",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1JUnp4ZlNCUDhJVUsyYk1YdkNPNFpLLVA1QzR3cGNsYWU3V1JXSkQ1RWZiQ1ZSR05OckFfY1NQUzFFOF96X2ZJMHRVcjdhQm4zVzFsSFhfVmtPYVdxX0JCZWQ0TWFjUURVd2h5UDg0MDl2dw?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "12b315667e3a",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-08-22",
+      "quote": "像素高的手机推荐",
+      "title": "像素高的手机推荐",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5QS0NkdU8yU1NiQjVTaWJNdnBhOHNwZ0FhazZBcHNnNTJzSlNmUjYwQjktcm83WG85dVVYMnIyREtVQjJIb3hCQTNGMjNlcUxOYWVGTkRFQ08zVmFZelFidTZwbkJMb2JyRlpqNzRNOTAxUQ?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "309bf4206ccf",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-22",
+      "quote": "特斯拉监督版FSD入华有变！最新名单没中国",
+      "title": "特斯拉监督版FSD入华有变！最新名单没中国",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWeHpEQTZRRXpfQ3dWSW1HQ1RvSzRORFNWUDVYa3NyS1drODBCdlhibVl4Y1F4TG9BbjNtU1RaS21mWHNndmJZTng2c2xwd0JQZWh2UGVxU0FxbkNj?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "d0ed63d1d763",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-22",
+      "quote": "FSD入华进程突生变数：特斯拉战略遇阻、国内智驾行业格局重塑深度观察",
+      "title": "FSD入华进程突生变数：特斯拉战略遇阻、国内智驾行业格局重塑深度观察",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5aYUo2NUJib1dyU0h4aFM3WWdoRWYwQjUyU3ZDVnRYTng4b3pRM0Y2VGR4ZUhJSUEza1c5VFJYWDNELUg3ZFdsX0RrV0FNaHRzekJGalp5eHMzQ3dE?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "ada520142eb1",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-21",
+      "quote": "OTA情报局：问界升智驾、零跑改底盘、特斯拉终于聊上天",
+      "title": "OTA情报局：问界升智驾、零跑改底盘、特斯拉终于聊上天",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE50YVFfNVVfTnAtVkMzUVl5UlVIWEx4V0dsLTgzbDQ3dGhQeUd4VEdTNVl6T2hLVWdVbFk5UnV5R1lUektHUkpxa3JaelFYdk1JbGpyZlNYa1N2djZV?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "b2cc450d9e37",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-23",
+      "quote": "#一分钟精选视频扶持计划#特斯拉",
+      "title": "#一分钟精选视频扶持计划#特斯拉",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdmZWdW8wd3ZKUlh3VEZmbC1uVzJUSFJOQTZDTWMzcjg0UnA4NXB4UloycUxwejVnUHRRdWFIZFdZMEdtdkpzMnA5eGE1S2ZoZkhLNUtBTUtQZVktQmh0dXZINEZpQWRIeFhPeTBia3JKMWtFMjJZTXVZZHdjb0pFQg?oc=5",
+      "source": "手机新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "5af605b33a31",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-22",
+      "quote": "特斯拉大规模汽车召回案：隐形电子门把手何以成为电动车安全隐患？",
+      "title": "特斯拉大规模汽车召回案：隐形电子门把手何以成为电动车安全隐患？",
+      "url": "https://news.google.com/rss/articles/CBMivANBVV95cUxOS1JjNkphOHFHMDFHVU9GTUhzTFpNSGVPYzNqbWlRTE5QbmxSS0ZZd0w5c0dSbkhlbVlZUTA2d3E1WWlKdUJjTWtjcTZNbGZWZkFGQVJWb1RRR3JBUFdFNHROdEZacTVBOHhCc180TlN2SlUwRlNzZF9mRnAyR3ZFYzlUb3RfR3luMFU5TFdWYVU2d0N5T3VKYW0ybXQyTzUzOVU3RGtVYlNXVWxMTkRlM3hSeENTaERkTXlSbkNtOVdtd0xnZHZzRVVxWGJBSGQ4a2tTanF5YUNBa2dkdGpSSTgzZWpPbmlXWUxyU3dfUFUwWTRpNE9SNFhyVlFxb2U2M2NTNWFYcC1RdW1xdmNaU0Nvcml5a3FrUjFKWENiLTk5UHRLb01pNlpxcTBjdDBKd1hMM09rZkptR0E2YUdKdl9fbnpMR1NLT3EtTVJESDk1WkFodHRYbkpCeGdMc3Z5d1d1YmFwY0E2RlA0blBvek42M3ZRYlhRZnJHaVFXTVdKTmtyT0NpMkNUWHpyVlBWc1E4NXp3TVJQeHRWWElKRXIwS3VNNEJHMUtyR18zc3hwazJoOF94R0JyOFQ?oc=5",
+      "source": "RFI",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "204da484494f",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-23",
+      "quote": "对 2026 年、2027 年、2028–2030 年及以后 Tesla (TSLA) 股票价格的预测",
+      "title": "对 2026 年、2027 年、2028–2030 年及以后 Tesla (TSLA) 股票价格的预测",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBWbHMxYUNtRUg5ZHloTzVSd3BaZUR0d1lTbkc1eDJYNVpBQ2IxV1lpelFhMEJ3eWwwX0JBNnBPSHQydkxBUFd1cmttYkNTenNfczlUbDdYdlNYZ2FwN2hnb0s2V0huSk1Ud3V1dWxneEdUWFhBdXhZLThvTFVyQQ?oc=5",
+      "source": "LiteFinance",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "6a93ec699d0e",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-21",
+      "quote": "市场传闻：特斯拉停产太阳能屋顶产品线",
+      "title": "市场传闻：特斯拉停产太阳能屋顶产品线",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMlRxck9kb3lzZk5NZ0h4akFSUmJob3pfYnFQY2NON2cwZUNPcWI3MUE5WEZGWEdaeWdIU2d6VDFVTVdXVW5xMXJHcTJUeldpTmxEZkFwR3Ftck9QeGpfcll0UGRNcGJBckFhTW9nOXdVTFdaRTY3Q280c0liRVVucmlTanl2S0x6V0ROU2x2ODNMS0hSWGFNVFR6aWVUeHg0cFBVeHM3QQ?oc=5",
+      "source": "Moomoo",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "6c640c5099c5",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-23",
+      "quote": "特斯拉回应近300万辆召回车主无需全部到店- Tesla 特斯拉",
+      "title": "特斯拉回应近300万辆召回车主无需全部到店- Tesla 特斯拉",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBoU0JfS29WbkdCNXo4M2phdnBXN3Eta0phYVh6b1JRUDVfVXY3X1JyNmtQU0NzaGhhbzJQbVlQblVPU0RNTHlsUFdsYzNNUWQ5TkVib05KUUFLdmtNSkFtVQ?oc=5",
+      "source": "cnBeta.COM",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "23ac6f0eef03",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-22",
+      "quote": "特斯拉官宣！9月3日在奥斯汀举行Cybercab发布会",
+      "title": "特斯拉官宣！9月3日在奥斯汀举行Cybercab发布会",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTzFsa19OSXg0eW82am8tUmlfYUpOUGtBT3dONzN5dUVfbkJWU2NRcncwR3NNRXVjV2FDb0MxVUpxeFJOazhTc29lUE5Sb3cyTl8wSHRFZ3Y5ZDVYeEhTOS1Md3YwaGNaVzI2djRLaHdKMEpTUFVBa09DT2tfT0hybEJWYzU4aWtRZWx0TXpTUXRQZ1d0QWdUN0FXWDRsMXBnV1E?oc=5",
+      "source": "富途牛牛",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "b65f57116edc",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-24",
+      "quote": "Tesla自动驾驶的士Cybercab将问世 可搭载2名乘客",
+      "title": "Tesla自动驾驶的士Cybercab将问世 可搭载2名乘客",
+      "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQMldZVkR6VVZUUC13RWExYUtQVzFuaXVfVU4yYXdFbFZTVlpQUFNTRlpSdUQ2eXo1YVliY0lnQy1RNWZ1VVd0YndaN01SbUc5LXlsVi1MNjhOOHZxeExLVm1UYVpTcW9XeGVBNEFEdTdyaEhKSlZGT1BDUTdVSVVfVXZMLXMzemlvb3ZndWRzeEJBNHhpOWFIR1Z0OFFENWd0NDQ4NnFjRjlQd2Q3Y2NZMk5kdVd4dHJKMmlhUEYySzhaYzBmWDh5OWZwNGxEVGg1bTFPVXFZd0V3NmdWSlVZS0htWjlwajdocGVEZlg1T2FvT3lhM281U0tSSUdnQS1aMVZ6MUtFZUNGU3luVENnbXdrSDcycFZYM1gzdHdybG9ZWkp2cHRlclcwaU9QSlFZRnNOdXRqTkRKNFpKSEgwVm1pV3RrbUpOYkk4ckJxUk44LUdXTzNKQVlqMFA?oc=5",
+      "source": "dushi.singtao.ca",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "2a237525deb5",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-22",
+      "quote": "Tesla Tokenized Stock (Robinhood) 今日 Indonesian Rupiah 价格 | 实时 TSLA 对 IDR 汇率转换器",
+      "title": "Tesla Tokenized Stock (Robinhood) 今日 Indonesian Rupiah 价格 | 实时 TSLA 对 IDR 汇率转换器",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Rb3hGYXlORVd3S2lyeS1DWmx1Q2VIRzU1YXhXZ0pZQ3N5LU54UHg4VGxLcUhSY3MyTEg0RFBHUElFa1hxZXZWQnpwOTRRUUNidnhFcWpYbTNWTWRYNmFIWDJ0ekpxMW9RNkJFQWpKcVJuRDZw?oc=5",
+      "source": "CryptoRank",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "02b27bba0e30",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-08-23",
+      "quote": "Tesla Cybercab Launch Plans Push Stock Toward Strongest Weekly Gain Since May",
+      "title": "Tesla Cybercab Launch Plans Push Stock Toward Strongest Weekly Gain Since May",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVUp1d01rWDZDZDBIR216MUwtRXA5X1c2RWVWUl9RN3FCbDgydDEwSTV0ei1MVHRZTFNqYTlOR3FvYWRxclA2N1BLbkdZbHpWbjVPMzlhZnVEdlNtZ09ES3JrQnlzUEoxb19BS0pLamlmWGttTXRjc0ZUVUZrZnJXTWsxTQ?oc=5",
+      "source": "TIKR.com",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "40da59c613f4",
+      "slug": "palantir",
+      "brand": "Palantir / 帕兰提尔",
+      "date": "2026-08-21",
+      "quote": "帕兰提尔(PLTR)股票8月21日盘中上涨3.80%：释放什么信号？",
+      "title": "帕兰提尔(PLTR)股票8月21日盘中上涨3.80%：释放什么信号？",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPT080cmNhMmpoRkNSdlFrQ0lzc0FXSFdrN2JxOEl5RkItLU5UOFYtdG8yLUpJZF9ocXp3RFg1NEFjVGNLbFhNbVNESFFIVHNnLWFvLTBEVG9KcGtqUnhsNzExUXlGbjBNckliUUtfSU9rVHdXSU5BZDRtb0RPbjRveW9wb0pMM3NFNUlzUHRoT0xoWWoxS0E?oc=5",
+      "source": "TradingKey",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "658f0cd5fb9a",
+      "slug": "palantir",
+      "brand": "Palantir / 帕兰提尔",
+      "date": "2026-08-23",
+      "quote": "特朗普最新调仓曝光：抛售Meta等股票、买入伯克希尔",
+      "title": "特朗普最新调仓曝光：抛售Meta等股票、买入伯克希尔",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zbGo0MzRWc1dzUDEzNUN1bUpFM0lSTXAycERfc3dKYWtJOTZLY01RcGFrcmQ3bHBsblROYm0tRzEwSmZYTVd1NWJTMkRtYTF5?oc=5",
+      "source": "凤凰网财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "7052e3ebde67",
+      "slug": "palantir",
+      "brand": "Palantir / 帕兰提尔",
+      "date": "2026-08-23",
+      "quote": "特朗普6月交易曝光，规模达数千万至上亿美元，投资组合“大换血”",
+      "title": "特朗普6月交易曝光，规模达数千万至上亿美元，投资组合“大换血”",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPd3NCNEVkZXI5X0ZSbG1NcVN6ZVJqMmVhWnNnVHU5R0RyRUVyQ095WUFZSGN3ZFVNaHpmNVBySGMyV0RoQ1hxOGFTQkJJRF9CS294STJEOUpUYWE5d1RpeEJwR1cxRFY1SUdzemhHWG9XOTRaZEVxQnppQXVXMmhNYmJuRmN6Yi01?oc=5",
+      "source": "搜狐网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    },
+    {
+      "key": "b8f19ca8a6a3",
+      "slug": "palantir",
+      "brand": "Palantir / 帕兰提尔",
+      "date": "2026-08-21",
+      "quote": "Palantir股票现在值得买入吗？AIP增长、估值风险与目标价分析",
+      "title": "Palantir股票现在值得买入吗？AIP增长、估值风险与目标价分析",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa0ZscnlXNERmU1YzV2dzMlB2S19XdmVUaXBzVWY2Q0hGckZrMDhVVURuQ1hTczA4LVpVbF9Dd0xsXzQwM0tIMjdJQ3JVQTlVNjVDRHVBV2VkR2tzRF9pVEJXNjNKeE1wdjduMXVhbHU4QzBIcFZoNUh5YWR0emhxcm1KQnlHb2NmMkNBUEFCaVlYWWRncXlWOFVWVTB2X3lmV3hLaFJMbG9YUEMtaUZTcnJOYVBkOXpnQ0Q0RUZtODlQMmQwZHBIa1VKREV3blhnc24waDNOdHI1VUVJREhUcndZeEQ?oc=5",
+      "source": "TradingKey",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-08-24T03:26:14Z"
+    }
+  ]
+}
