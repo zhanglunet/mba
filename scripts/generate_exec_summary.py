@@ -31,6 +31,7 @@ def strip_md(s: str) -> str:
     s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
     s = re.sub(r"\*(.+?)\*", r"\1", s)
     s = s.replace("`", "")
+    s = re.sub(r"[（(]\d{3}[)）]", "", s)  # 去掉 watch 事件 ID 引用，如（014）
     s = re.sub(r"\[(.+?)\]\(.+?\)", r"\1", s)
     return s.strip()
 
