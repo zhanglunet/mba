@@ -1,6 +1,7 @@
 # PRD-022/T1：mba panel 独立验收测试规范（草稿 v1）
 
-> 依据：`metric-brand-auditor/panels/` 下 11 个 panel yaml 的真实结构（以 `default.yaml` 为例），
+> 依据：`metric-brand-auditor/panels/` 下 10 个 panel yaml 的真实结构（以 `default.yaml` 为例；
+> 另有 `industries.yaml` 为行业→panel 映射表，非 panel，不计入），
 > 借鉴 K-Dense-AI/scientific-agent-skills 独立测试思路（MIT）。
 
 ## 一、测什么（每个 panel 一个测试文件）
@@ -21,9 +22,9 @@
 
 | # | 检查项 | 说明 |
 |---|---|---|
-| 1 | 注册清单一致 | panels/ 下的 yaml 文件集合 == README/索引中声明的 panel 集合（11 个） |
-| 2 | 跨 panel 无重复评委 | 11 个 panel 的评委 slug 全局无重复（同名不同人须显式区分，如 `fusheng` 只出现一次） |
-| 3 | portrait 文件存在 | 每位评委的 `portrait` 引用的图片文件真实存在（default 引用 `傅盛.jpg` 等 5 张） |
+| 1 | 注册清单一致 | panels/ 下的 yaml 文件集合（排除 `industries.yaml` 映射表）== README/索引中声明的 panel 集合（10 个） |
+| 2 | 跨 panel 评委复用 | 允许复用（实测 9 个 slug 跨 panel 共用，如 `fusheng` 在 ai-app-cn/default，属有意设计）；不做全局唯一断言，panel 内 slug 唯一由各 panel 测试 #6 保证 |
+| 3 | portrait 文件存在 | 每位评委的 `portrait` 引用的图片文件在 `assets/judges/` 下真实存在（default 引用 `傅盛.jpg` 等 5 张） |
 
 ## 三、不测什么
 
@@ -76,6 +77,6 @@ def test_weight_valid():
 ## 五、落地步骤（T2 用）
 
 1. 先合入本规范 + `test_default.py`（第一批 PR）。
-2. 其余 10 个 panel 照抄 `test_default.py` 改文件名与期望人数，分 2 批 PR。
+2. 其余 9 个 panel 照抄 `test_default.py` 改文件名与期望人数，分 2 批 PR。
 3. `tests/_contract/test_panels.py` 单独一个 PR。
 4. 接入 `.github/` CI。
