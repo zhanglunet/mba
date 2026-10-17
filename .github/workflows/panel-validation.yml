@@ -17,9 +17,11 @@ jobs:
         with:
           python-version: "3.x"
       - name: Install Python deps
-        run: python -m pip install --quiet pyyaml
+        run: python -m pip install --quiet pyyaml pytest
       - name: Validate panel configs
         run: python scripts/validate_panels.py
+      - name: Run panel pytest suite (PRD-022/T2)
+        run: python -m pytest tests/panels tests/_contract -q
       - name: Validate perspective SKILL.md structure
         run: python scripts/perspective-tools/check_structure.py
       - name: Anti-fabrication firewall (SKILL 引用必须逐字存在于本套 research 语料)
