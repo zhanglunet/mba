@@ -1,0 +1,95 @@
+# ==============================================================================
+# 新 panel 模板（PRD-022/T4，trend #124）
+# ==============================================================================
+# 使用方法：
+#   1. 复制本文件 → metric-brand-auditor/panels/<你的panel名>.yaml
+#      （注意：去掉 `.example` 后缀，文件名必须与下面的 `name:` 完全一致）
+#   2. 按下面的中文注释逐字段填写（标【必填】的必须填，【选填】的可删）。
+#   3. 复制 tests/panels/template_example.py → tests/panels/test_<你的panel名>.py，
+#      按那份文件头的说明改 3 处，跑 pytest。
+#   4. 把新 panel 名加进 tests/_contract/test_panels.py 的 EXPECTED_PANELS，
+#      否则契约测试会报"注册清单漂移"。
+#
+# 规范依据：docs/plans/2026-10-17-panel-test-spec.md（T1）。
+# 照着填完，`python3 scripts/validate_panels.py` 与 pytest 一次通过。
+#
+# 为什么本文件叫 `_template.yaml.example` 而不是 `_template.yaml`：
+#   scripts/validate_panels.py 用 glob("*.yaml") 扫描 panels/ 目录，
+#   tests/_contract/test_panels.py 用同样方式核对"注册清单"。
+#   后缀 `.example` 让这两个地方都扫不到它，模板本身永远不会被当成真实 panel。
+# ==============================================================================
+
+# 【必填】panel 唯一标识（T1 §一 #3）。
+# 必须与文件名去掉 .yaml 后完全一致，例如文件叫 fintech.yaml，这里就填 fintech。
+# 只能用小写字母、数字和连字符。validate_panels.py 硬校验，不一致 CI 直接红。
+name: your-panel-name
+
+# 【必填】人类可读的展示名（T1 §一 #2），英文即可。
+display_name: Your Panel Display Name
+
+# 【必填】一句话说明这个 panel 是干嘛的、适合给谁用（T1 §一 #2）。
+# 用 > 折叠换行（YAML 语法）：下面缩进的几行会拼成一段。
+description: >
+  这里写 panel 的定位：覆盖哪个行业/人群、评委阵容的共同特点、
+  适合给什么样的品牌做影响力审计。照着 auto.yaml 的 description 写一段就行。
+
+# 【选填】panel 状态，缺省 active。
+# 只有一种情况需要改：评委的 perspective skill 还没写好、想先占位，
+# 填 skeleton，validate_panels.py 会放行缺失的 skill（只打印 OK skeleton）。
+# 正式 panel 删掉这一行或填 active。
+# status: skeleton
+
+# 【必填】评委列表，非空（T1 §一 #4）。至少 1 位，常规 5 位左右。
+judges:
+  # --- 第 1 位评委。照着这一块复制，改下面的值 ---
+  # 注意 YAML 格式：每位评委以 "- slug: xxx" 开头（短横线+空格），
+  # 后续字段缩进对齐（两个空格）。缩进错一位，yaml.safe_load 就抛错，
+  # 这是新手最常踩的坑（T1 §一 #1）。
+  - slug: first-judge-slug
+    # 【必填】评委唯一标识（T1 §一 #6）。
+    # 同一 panel 内不许重复（CI 会查）；跨 panel 复用允许且常见
+    # （如 fusheng 同时在 ai-app-cn 和 default，属有意设计，T1 §二 #2）。
+    # 另一条硬约束：perspectives/<slug>-perspective/SKILL.md 必须存在，
+    # 不存在且 status 不是 skeleton 时，validate_panels.py 报硬错误，CI 红。
+    # 所以：先有 skill，再写 panel；或者先用 skeleton 占位。
+
+    # 【必填】评委中英文名（T1 §一 #5）。
+    display_name_cn: 第一位评委中文名
+    display_name_en: First Judge English Name
+
+    # 【必填】评委的主要语言（T1 §一 #5），只能填 zh 或 en。
+    # validate_panels.py 只认这两个值，填别的（如 cn）CI 红。
+    language: zh
+
+    # 【必填】打分权重（T1 §一 #7）：必须是数字，且 0 < weight <= 2.0。
+    # 常规填 1.0；想让某位评委话语权减半填 0.5、加倍填 2.0。别填 0 或负数。
+    weight: 1.0
+
+    # 【选填】评委头像文件名（T1 §二 #3）。
+    # 如果填了，assets/judges/ 下必须有同名文件，否则契约测试红。
+    # 没头像就整行删掉，别留空。
+    # portrait: first-judge.jpg
+
+  # --- 第 2 位评委 ---
+  - slug: second-judge-slug
+    display_name_cn: 第二位评委中文名
+    display_name_en: Second Judge English Name
+    language: en
+    weight: 1.0
+    # portrait: second-judge.jpg
+
+  # 再加评委就继续复制上面的块。建议 3–6 位。
+
+# ==============================================================================
+# 填完之后别忘了两件事（都在上面的"使用方法"第 3、4 步）：
+#   1. industries.yaml：如果你希望 `--industry <别名>` 能选中这个 panel，
+#      在 industries.yaml 里加一行 "<别名>: <你的panel名>"。
+#      validate_panels.py 会校验别名指向的 panel 真实存在，写错 CI 红。
+#   2. tests/_contract/test_panels.py 的 EXPECTED_PANELS 里加上你的 panel 名，
+#      否则契约测试报"注册清单漂移"。
+#
+# 自检命令（在仓库根目录跑）：
+#   python3 scripts/validate_panels.py
+#   python -m pytest tests/panels/test_<你的panel名>.py -q
+# 两个都绿，就可以开 PR 了。
+# ==============================================================================
