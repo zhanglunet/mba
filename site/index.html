@@ -63,6 +63,11 @@
 
   .intro { font-size: 14px; color: var(--muted); margin: 0 0 26px; max-width: 72ch; }
   .intro a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+  .positioning { margin: 0 0 26px; padding: 16px 18px; background: #fff; border: 1px solid var(--hair); border-left: 3px solid var(--accent); border-radius: 8px; }
+  .positioning .pos-label { display: inline-block; font-family: ui-sans-serif,'Inter',-apple-system,sans-serif; font-size: 12px; font-weight: 800; letter-spacing: .06em; color: var(--accent); margin: 0 0 6px; }
+  .positioning p { margin: 0 0 12px; font-size: 14px; line-height: 1.75; color: var(--ink); max-width: 72ch; }
+  .positioning p:last-child { margin-bottom: 0; }
+  .positioning code { font-family: ui-monospace,SFMono-Regular,Menlo,monospace; font-size: 12.5px; background: var(--soft); padding: 1px 6px; border-radius: 4px; }
   .starmap-banner { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink);
     background: linear-gradient(90deg, rgba(193,68,14,.06), rgba(193,68,14,.02)); border: 1px solid var(--hair);
     border-left: 3px solid var(--accent); border-radius: 8px; padding: 13px 16px; margin: 0 0 26px; transition: border-color .15s, box-shadow .15s; }
@@ -231,6 +236,12 @@
     </header>
 
     <p class="intro">多位「人物评委」按 7 维度 × 5 镜头对品牌独立打分,报告版本化——同一品牌随时间的每一次重审都可比较、可复盘。<a href="/system.html">系统如何运作 →</a>　<a href="/runtime.html">在哪里运行 →</a>　<a href="/how-it-works.html">怎么打分 →</a>　<a href="/watch/cockpit.html">全站舆情驾驶舱 →</a>　<a href="/founders/">创始人维度 →</a>　<a href="/collabs/">🍽️ 创始人晚餐(合作推演)→</a></p>
+    <div class="positioning" aria-label="项目定位与愿景">
+      <span class="pos-label">定 位</span>
+      <p>给"一人公司"做的<strong>品牌影响力审计师</strong>——把大公司市场部才玩得起的品牌调研、舆情监测、竞品跟踪，做成一个人也能跑起来的自动化工具。<code>/mba &lt;brand&gt;</code> 一行命令，得到一份可打分、可比较、可复盘的版本化品牌审计报告。</p>
+      <span class="pos-label">愿 景</span>
+      <p>让个人和小团队拥有<strong>"品牌雷达"</strong>：每天早上打开指挥舱，健康分多少、网上在聊什么、竞品干了什么，一目了然。把品牌影响力变成像看财报一样日常的东西——可量化、可比较、可复盘。</p>
+    </div>
 
     <a class="starmap-banner" href="/starmap.html" aria-label="打开品牌监控全维度知识星图">
       <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false">

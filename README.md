@@ -17,6 +17,16 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 > **v0.6.1** —— 两种用法:① Claude Code **skill**(`/mba <brand>`);② 独立 **MCP server**([`mba-mcp-server`](https://www.npmjs.com/package/mba-mcp-server),已上 npm,16 工具含舆情监控),可接进 Claude Desktop / Cursor,支持**品牌订阅 → 舆情/定时/事件触发 → 自动重审 → delta 报告 → webhook/email 通知**的演化闭环。**本版**:24 品牌;**全部触发品牌 EVOLUTION 重审**(15 家按 watch 事件流 delta 重审、触发器全清零、克制到底)+ **首页每日自更新**(每日舆情 PR 自动 squash 合并);舆情自动化闭环——每日发现候选 → LLM 多 provider 预分类 → 自动折入 `events.yaml` 开 PR → 人工只审 diff(AI 判类不改分、合并=人工闸门)。见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
 > 新增:[全维度知识星图](https://mbabrand.com/starmap.html) + 每品牌私有星图;**舆情变化自动推送飞书群**([docs/19](docs/19-feishu-notify.md));**舆情驾驶舱看板**(`/watch/<slug>/cockpit.html`,管理层视角,[docs/20](docs/20-sentiment-cockpit-mapping.md))。
 
+## 定位与愿景
+
+**定位**：给"一人公司"做的品牌影响力审计师。以前，品牌调研、舆情监测、竞品跟踪、定期出品牌健康报告，是大公司市场部 + 咨询公司才玩得起的东西；mba 把它做成了一个人也能跑起来的自动化工具——`/mba <brand>` 一行命令，得到一份可打分、可比较、可复盘的版本化品牌审计报告。
+
+**怎么做**：两条腿走路。一是"多智能体并行调研"，多个 agent 分头搜集公开资料；二是"panel 独立打分"，5 位评委（AI 扮演的行业人物）各自独立打分、互不可见；再用"元评审"盯着评委——计算评委间分歧、识别系统性偏松 / 偏紧，给打分一致性评 A–F。审计者也要被审计。
+
+**愿景**：让个人和小团队拥有"品牌雷达"。每天早上打开指挥舱——健康分多少、网上在聊什么、竞品干了什么，一目了然；分数掉了，飞书第一时间告诉你。最终，把品牌影响力变成像看财报一样日常的东西：可量化、可比较、可复盘。
+
+---
+
 ## 团队 / Team
 
 | 角色 | 成员 |
