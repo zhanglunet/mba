@@ -94,3 +94,39 @@ jobs:
             -print0 | xargs -0 -r bash -n
       - name: Build site
         run: bash site/build.sh
+
+  meta-review:
+    # PRD-063/T4：元评审 CI 集成 —— 只报告、不设合并门禁。
+    # 位置说明：GitHub Actions 的 needs 不能跨 workflow 文件引用 job，
+    # 为满足"在 PRD-022 结构测试之后跑"，本 job 直接放在 panel-validation.yml 内，
+    # needs: validate-panels（结构测试挂掉时本 job 自动 skip，不会误报）。
+    needs: validate-panels
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    continue-on-error: true  # 双保险：本 job 永远不 block 合并（脚本本身也永远 exit 0）
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 需要 base/head 做 diff，判断本 PR 是否改动 panel yaml
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: 检测本 PR 是否改动 panel yaml
+        id: changed
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          head="${{ github.event.pull_request.head.sha }}"
+          # 注：panel yaml 实际路径为 metric-brand-auditor/panels/（非仓库根下的 panels/）
+          if git diff --name-only "$base" "$head" -- \
+              'metric-brand-auditor/panels/*.yaml' 'metric-brand-auditor/panels/*.yml' \
+              'metric-brand-auditor/panels/**/*.yaml' 'metric-brand-auditor/panels/**/*.yml' \
+            | grep -q .; then
+            echo "panels_changed=true" >> "$GITHUB_OUTPUT"
+            echo "本 PR 改动了 panel yaml，跑元评审"
+          else
+            echo "panels_changed=false" >> "$GITHUB_OUTPUT"
+            echo "本 PR 未改动 panel yaml，跳过元评审"
+          fi
+      - name: 元评审审计摘要（只报告，不设门禁）
+        if: steps.changed.outputs.panels_changed == 'true'
+        run: python scripts/ci_meta_review.py >> "$GITHUB_STEP_SUMMARY"
