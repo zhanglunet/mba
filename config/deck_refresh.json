@@ -1,0 +1,38 @@
+{
+  "_comment": "PRD-062/T4：指挥舱定时刷新与异动告警配置。用 JSON 而不用 YAML：Python 纯标准库即可解析，无外部依赖。",
+  "alert": {
+    "_comment": "飞书告警 webhook 从该环境变量读取，不在仓库里硬编码。未配置时降级为 dry-run（打印到 stdout）。",
+    "_threshold_sources": "PRD-062 §风险'阈值先宽松，跑两周按真实异动回调'；T1 §七 T4'综合评分下降超阈值/负面舆情声量突增→飞书推送'。口径：score_total 下降超 5 分（/250）/ 任一 lens 均值变化超 ±0.5 / 负面声量日环比增幅超 50%（昨日为 0 时按 ≥5 条计）/ 新增 Top 热点事件与竞品关键事件天然异动直接告警。",
+    "thresholds": {
+      "health_lens_change": 0.5,
+      "health_score_total_drop": 5,
+      "sentiment_negative_surge_min": 5,
+      "sentiment_negative_surge_pct": 50
+    },
+    "webhook_env": "DECK_ALERT_WEBHOOK"
+  },
+  "deck_path": "data/deck.json",
+  "health": {
+    "_comment": "默认报告路径；可用 --report 参数覆盖",
+    "report_path": "published/reports/deepseek/report.md"
+  },
+  "schedule": [
+    {
+      "cron": "0 8 * * *",
+      "desc": "舆情每日 08:00（北京时间）刷新：python3 scripts/refresh_deck.py --section sentiment",
+      "section": "sentiment"
+    },
+    {
+      "cron": "0 9 * * 1",
+      "desc": "竞品每周一 09:00 刷新：python3 scripts/refresh_deck.py --section competitors",
+      "section": "competitors"
+    },
+    {
+      "cron": null,
+      "desc": "事件驱动，无定时：报告产出后运行 python3 scripts/refresh_deck.py --section health --report <报告路径>",
+      "section": "health"
+    }
+  ],
+  "sources_config": "config/deck_sources.json",
+  "state_path": "data/deck_state.json"
+}

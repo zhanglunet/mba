@@ -61,3 +61,6 @@ packages/*/coverage/
 
 # 指挥舱聚合 JSON —— 生成物，T4 定时任务负责刷新，不入库（PRD-062/T2）
 data/deck.json
+
+# 指挥舱异动告警状态 —— 每次运行就变，T4 refresh_deck.py 幂等用，不入库（PRD-062/T4）
+data/deck_state.json
