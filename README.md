@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/mba-mcp-server?logo=npm&label=mba-mcp-server)](https://www.npmjs.com/package/mba-mcp-server)
 [![license](https://img.shields.io/npm/l/mba-mcp-server)](packages/mcp-server/LICENSE)
+[![plugin](https://img.shields.io/badge/plugin-0.6.1-blue)](plugins/mba) [![marketplace](https://img.shields.io/badge/marketplace-manifest-7c3aed)](.claude-plugin/marketplace.json) [![demo](https://img.shields.io/badge/demo-mbabrand.com-D97757)](https://mbabrand.com)
 
 > 多智能体并行调研 + 五人评委打分,把"品牌影响力是怎么搭起来的"拆成可量化、可演化、可复盘的版本化报告。
 
