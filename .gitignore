@@ -58,3 +58,6 @@ node_modules/
 packages/*/dist/
 packages/*/coverage/
 *.tsbuildinfo
+
+# 指挥舱聚合 JSON —— 生成物，T4 定时任务负责刷新，不入库（PRD-062/T2）
+data/deck.json
