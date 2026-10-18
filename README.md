@@ -55,6 +55,80 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 ---
 
+## 安装 / Installation
+
+三条路,看你是谁:
+
+| 路径 | 适合谁 | 一句话 |
+|---|---|---|
+| ① 插件市场 | Claude Code 用户 | 两条命令装上 skill,之后 `/mba <brand>` 直接用 |
+| ② npm MCP server | Claude Desktop / Cursor 等 MCP 客户端用户 | 不装 skill,只接审计能力的 16 个工具 |
+| ③ 本地 skill | 要改 skill / 跑完整流水线 / 贡献代码的开发者 | clone 仓库,软链到本地 skills 目录 |
+
+### ① 插件市场 —— Claude Code 用户
+
+```bash
+claude plugin marketplace add zhanglunet/mba
+claude plugin install mba@mba-marketplace
+```
+
+(在 Claude Code 会话里也可用 `/plugin marketplace add zhanglunet/mba` 和 `/plugin install mba@mba-marketplace`)
+
+验证:
+
+```bash
+claude plugin list        # 应看到 mba
+```
+
+然后在 Claude Code 里直接 `/mba <brand>`(如 `/mba deepseek --quick --no-judges` 先跑个单视角速读)。
+
+### ② npm MCP server —— Claude Desktop / Cursor
+
+一行接入,无需 clone:
+
+```bash
+npx -y mba-mcp-server@latest
+```
+
+写进 MCP 客户端配置(如 `claude_desktop_config.json`):
+
+```jsonc
+{
+  "mcpServers": {
+    "mba": {
+      "command": "npx",
+      "args": ["-y", "mba-mcp-server@latest"]
+    }
+  }
+}
+```
+
+验证(服务端能正常启动;首次运行会下载包,约 1 分钟):
+
+```bash
+timeout 90 npx -y mba-mcp-server@latest 2>&1 | grep -m1 "server ready"
+```
+
+客户端里应能看到 16 个工具(8 核心审计 + 6 演化追踪 + 2 舆情监控)。完整用法见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
+
+### ③ 本地 skill —— 开发者
+
+```bash
+git clone https://github.com/zhanglunet/mba.git ~/mba
+mkdir -p ~/.claude/skills
+ln -s ~/mba/metric-brand-auditor ~/.claude/skills/mba
+```
+
+验证(重启 Claude Code 让 skill 加载后):
+
+```
+/mba list
+```
+
+应返回已审计品牌列表(新仓库显示"暂无")。完整环境配置(含评委 perspective 软链、云浏览器 key)见 [docs/06-installation.md](docs/06-installation.md)。
+
+---
+
 ## 一、设计思路:为什么要这样写
 
 传统"品牌分析报告"有三个老问题:
