@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>问一问 · mba 品牌问答 demo</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root{--paper:#faf8f3;--ink:#111;--muted:#6b6760;--accent:#c1440e;--missing-bg:#f0ede7;--line:#e0ddd8;}
+*{box-sizing:border-box;}
+body{background:var(--paper);color:var(--ink);
+ font-family:ui-serif,"Noto Serif SC","Songti SC",Georgia,serif;
+ max-width:760px;margin:0 auto;padding:24px 20px 60px;}
+a{color:var(--accent);}
+.topbar{display:flex;justify-content:space-between;align-items:center;
+ font-size:13px;color:var(--muted);margin-bottom:18px;}
+.topbar a{text-decoration:none;}
+h1{font-size:26px;margin:0 0 6px;}
+.sub{font-size:14px;color:var(--muted);margin:0 0 16px;}
+.brandline{font-size:13px;color:var(--muted);margin:0 0 16px;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;}
+.chip{font-family:inherit;font-size:13px;background:#fff;border:1px solid var(--line);
+ border-radius:999px;padding:6px 14px;cursor:pointer;color:var(--ink);}
+.chip:hover{border-color:var(--accent);color:var(--accent);}
+.askrow{display:flex;gap:8px;margin:0 0 8px;}
+#q{flex:1;font-family:inherit;font-size:15px;padding:10px 14px;border:1px solid var(--line);
+ border-radius:8px;background:#fff;color:var(--ink);}
+#q:focus{outline:2px solid var(--accent);border-color:var(--accent);}
+#send{font-family:inherit;font-size:15px;padding:10px 22px;border:none;border-radius:8px;
+ background:var(--accent);color:#fff;cursor:pointer;}
+#send:hover{opacity:.9;}
+.hint{font-size:12px;color:var(--muted);margin:0 0 20px;}
+.deckwarn{background:#fdf3e7;border:1px solid #e8c98a;color:#8a5a00;font-size:13px;
+ border-radius:8px;padding:10px 14px;margin:0 0 16px;display:none;}
+.qa{margin:0 0 26px;}
+.q{font-size:15px;font-weight:700;margin:0 0 10px;}
+.q::before{content:"问 ";color:var(--accent);}
+.intent-tag{display:inline-block;font-size:11px;color:var(--muted);border:1px solid var(--line);
+ border-radius:4px;padding:1px 8px;margin:0 0 8px;}
+.fallback{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;
+ font-size:14px;line-height:1.8;}
+.fallback p{margin:0 0 8px;}
+.fallback p:last-child{margin:0;}
+.genui-card{background:#fff;border:1px solid var(--line);border-radius:8px;
+ padding:16px 18px;margin:0 0 20px;}
+.genui-title{font-size:14px;font-weight:700;margin-bottom:10px;}
+.genui-chart-box{position:relative;height:260px;}
+.genui-missing{background:var(--missing-bg);color:var(--muted);
+ border-radius:8px;padding:28px;text-align:center;font-size:14px;}
+.genui-chart-err{color:var(--muted);font-size:13px;text-align:center;padding:40px 0;}
+.genui-metric-total{font-size:44px;font-weight:800;color:var(--accent);}
+.genui-metric-max{font-size:20px;color:var(--muted);font-weight:400;}
+.genui-metric-sub{font-size:13px;color:var(--muted);margin-top:6px;}
+.genui-sub{font-size:12px;color:var(--muted);margin:-4px 0 10px;}
+.genui-evlist{list-style:none;margin:0;padding:0;display:flex;
+ flex-direction:column;gap:10px;}
+.genui-ev{font-size:14px;line-height:1.6;border-bottom:1px solid #eee;padding-bottom:8px;}
+.genui-ev:last-child{border-bottom:none;padding-bottom:0;}
+.genui-ev a{color:var(--ink);}
+.genui-ev-meta{font-size:12px;color:var(--muted);margin-top:2px;}
+.genui-badge{font-size:11px;color:#fff;border-radius:4px;padding:1px 6px;}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);
+ font-size:12px;color:var(--muted);text-align:center;}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span>mba · 品牌影响力审计</span>
+  <a href="dashboard.html">← 回指挥舱</a>
+</div>
+<h1>问一问</h1>
+<p class="sub">只读问答 demo：用自然语言问品牌问题，图表自己长出来。</p>
+<p class="brandline" id="brandline"></p>
+<div class="chips" id="chips"></div>
+<form class="askrow" id="askform">
+  <input id="q" type="text" placeholder="比如：哪个维度最弱？" autocomplete="off">
+  <button id="send" type="submit">问</button>
+</form>
+<p class="hint">回车发送。答不上来的问题会诚实说答不上来，不编答案。</p>
+<div class="deckwarn" id="deckwarn"></div>
+<div id="history"></div>
+<footer>只读 demo · 数据来自 data/deck.json · 不调 LLM · 问答历史只留本页</footer>
+
+<script>
+/* ===== BEGIN route()：scripts/ask_router.py 的 JS 等价实现 =====
+   关键词表与裁决逻辑逐字照搬 Python 版（T1 §2.2/§2.3），两边行为必须一致。
+   若改 Python 版触发词表，这里同步改。 */
+var INTENTS = ["total","compare","radar","delta","volume","sentiment","events","rivals"];
+var INTENT_CN = {total:"查总分",compare:"维度对比",radar:"维度雷达",delta:"版本变化",
+  volume:"声量趋势",sentiment:"口碑",events:"热点事件",rivals:"竞品动态"};
+var TRIGGERS = {
+  total:["总分","综合评分","多少分","评分","归一化","健康度","哪一版","版本"],
+  compare:["最强","最弱","最高","最低","排名","排序","排个序","对比","哪个维度","谁高谁低"],
+  radar:["雷达","画像","全貌","整体","分布","五个维度","维度情况"],
+  delta:["上版","上次","上一版","变化","涨跌","涨了","跌了","Δ","δ","delta","对比上","动了"],
+  volume:["声量","音量","讨论量","热度","趋势","走势","曲线","每天","每日","近7天","7天"],
+  sentiment:["正负面","正面","负面","口碑","好评","差评","占比","比例","中性"],
+  events:["热点","大事","事件","新闻","发生了什么","新消息","动态"],
+  rivals:["竞品","对手","对标","友商","同行"]
+};
+var WRITE_VERBS = ["重新打分","重审","推送","发送","刷新","修改","删除","告警"];
+var OUT_OF_SCOPE = ["股价","股票","市值","营收","预测"];
+var PAIRS = [
+  ["rivals","events",["竞品","对手","对标","友商"],null],
+  ["sentiment","volume",["正负面","正面","负面","口碑","好评","差评","占比","比例"],
+   ["趋势","走势","曲线","每天","每日","近7天","7天"]],
+  ["compare","radar",["最强","最弱","最高","最低","排名","排序","排个序","对比"],
+   ["雷达","画像","全貌","整体","分布"]],
+  ["delta","total",["上版","上次","上一版","变化","涨跌","涨了","跌了","对比上"],null]
+];
+var PRIORITY = ["rivals","events","delta","sentiment","volume","compare","radar","total"];
+
+function normalizeQ(q){
+  return (q||"").replace(/[ \u3000\t\n]/g,"").toLowerCase();
+}
+function hitsOf(q,intent){
+  var seen=[];
+  TRIGGERS[intent].forEach(function(kw){
+    if(q.indexOf(kw)!==-1 && seen.indexOf(kw)===-1) seen.push(kw);
+  });
+  return seen;
+}
+function qScore(q,intent){
+  return hitsOf(q,intent).reduce(function(s,kw){return s+(kw.length>=4?2:1);},0);
+}
+function whichHigh(q){
+  return q.indexOf("哪个")!==-1 &&
+    ["高","低","强","弱"].some(function(c){return q.indexOf(c)!==-1;});
+}
+function layer1(q,hasHit){
+  var winners=[];
+  PAIRS.forEach(function(p){
+    var a=p[0],b=p[1],aWords=p[2],bWords=p[3];
+    if(!(hasHit[a]||hasHit[b])) return;
+    var aEx=aWords.some(function(w){return q.indexOf(w)!==-1;});
+    if(a==="compare"&&whichHigh(q)) aEx=true;
+    if(aEx){winners.push(a);}
+    else if(bWords!==null){
+      if(bWords.some(function(w){return q.indexOf(w)!==-1;})) winners.push(b);
+    }else if(hasHit[b]){winners.push(b);}
+  });
+  return winners.filter(function(w,i){return winners.indexOf(w)===i;});
+}
+function route(question){
+  var q=normalizeQ(question);
+  if(!q) return "unknown";
+  if(WRITE_VERBS.some(function(v){return q.indexOf(v)!==-1;})) return "unknown";
+  if(OUT_OF_SCOPE.some(function(w){return q.indexOf(w)!==-1;})) return "unknown";
+  var hasHit={};
+  INTENTS.forEach(function(i){hasHit[i]=hitsOf(q,i).length>0;});
+  var winners=layer1(q,hasHit);
+  if(winners.length===1) return winners[0];
+  var cands=winners.length?winners:INTENTS.filter(function(i){return hasHit[i];});
+  if(!cands.length) return "unknown";
+  cands.sort(function(x,y){
+    return (qScore(q,y)-qScore(q,x))||(PRIORITY.indexOf(x)-PRIORITY.indexOf(y));
+  });
+  return cands[0];
+}
+/* ===== END route() ===== */
+
+/* ===== BEGIN render：scripts/genui_charts.py 的 JS 等价实现 =====
+   渲染器与 null 降级逐字照搬 Python 版；区别：直接操作 DOM 并 new Chart()，
+   不经过 <script> 标签二次激活。 */
+var PALETTE=["#c1440e","#1a4a7a","#1a7a4a","#7c3aed","#d97706","#0e7c86","#a31e5b"];
+var ACCENT="#c1440e",ACCENT_SOFT="rgba(193,68,14,0.10)";
+var POSITIVE="#1a7a4a",NEGATIVE="#b3261e",NEUTRALC="#b9b2a6";
+var uidCounter=0;
+function uid(){uidCounter++;return "genui-canvas-"+uidCounter;}
+function esc(s){
+  return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#x27;");
+}
+function missingCard(text){
+  var d=document.createElement("div");
+  d.className="genui-missing";d.textContent=text||"数据暂缺";return d;
+}
+function parseDelta(s){
+  if(s==null) return 0;
+  s=String(s).trim();
+  if(s===""||s==="↔"||s==="-") return 0;
+  var m=/^[↑+]\s*([\d.]+)/.exec(s);if(m) return parseFloat(m[1]);
+  m=/^[↓\-\u2212]\s*([\d.]+)/.exec(s);if(m) return -parseFloat(m[1]);
+  var v=parseFloat(s);return isNaN(v)?0:v;
+}
+var BASE_OPTIONS={responsive:true,maintainAspectRatio:false,
+  plugins:{legend:{display:false}}};
+function canvasCard(title){
+  var card=document.createElement("div");card.className="genui-card";
+  var t=document.createElement("div");t.className="genui-title";t.textContent=title;
+  card.appendChild(t);
+  var box=document.createElement("div");box.className="genui-chart-box";
+  var cv=document.createElement("canvas");cv.id=uid();box.appendChild(cv);
+  card.appendChild(box);
+  return {card:card,canvas:cv};
+}
+function drawChart(canvas,type,labels,datasets,options){
+  if(typeof Chart==="undefined"){
+    var p=document.createElement("p");p.className="genui-chart-err";
+    p.textContent="图表库加载失败（chart.js CDN 不可达），数据本身完好。";
+    canvas.parentNode.replaceChild(p,canvas);return;
+  }
+  new Chart(canvas.getContext("2d"),
+    {type:type,data:{labels:labels,datasets:datasets},options:options});
+}
+function validLenses(l){return Array.isArray(l)&&l.length>0;}
+function renderMetricCard(health){
+  if(!health||typeof health!=="object"||health.score_total==null)
+    return missingCard("健康度数据暂缺");
+  var card=document.createElement("div");card.className="genui-card genui-metric";
+  var total=document.createElement("div");total.className="genui-metric-total";
+  total.innerHTML=esc(health.score_total)+'<span class="genui-metric-max">/'+
+    esc(health.score_max!=null?health.score_max:250)+"</span>";
+  card.appendChild(total);
+  var bits=[];
+  if(health.score_normalized!=null) bits.push("归一化 "+esc(health.score_normalized)+"/10");
+  if(health.report_version) bits.push("v"+esc(health.report_version));
+  if(health.report_date) bits.push(esc(health.report_date));
+  if(bits.length){
+    var sub=document.createElement("div");sub.className="genui-metric-sub";
+    sub.textContent=bits.join(" · ");card.appendChild(sub);
+  }
+  return card;
+}
+function renderBar(lenses,title,delta){
+  if(!validLenses(lenses)) return missingCard("健康度数据暂缺");
+  var rows=[];
+  lenses.forEach(function(l){
+    if(!l||typeof l!=="object") return;
+    var name=l.name_cn||l.key||"?",val;
+    if(delta){val=parseDelta(l.delta);}
+    else{val=parseFloat(l.mean);if(isNaN(val)) return;}
+    rows.push([name,val]);
+  });
+  if(!rows.length) return missingCard("健康度数据暂缺");
+  if(!delta) rows.sort(function(a,b){return b[1]-a[1];});
+  var labels=rows.map(function(r){return r[0];});
+  var values=rows.map(function(r){return r[1];});
+  var colors=delta
+    ? values.map(function(v){return v>0?POSITIVE:(v<0?NEGATIVE:NEUTRALC);})
+    : values.map(function(_,i){return PALETTE[i%PALETTE.length];});
+  var cc=canvasCard(title);
+  var options=Object.assign({},BASE_OPTIONS);
+  options.indexAxis="y";options.scales={x:{beginAtZero:true}};
+  drawChart(cc.canvas,"bar",labels,
+    [{data:values,backgroundColor:colors,borderColor:colors,borderWidth:1}],options);
+  return cc.card;
+}
+function renderRadar(lenses,title){
+  if(!validLenses(lenses)) return missingCard("健康度数据暂缺");
+  var labels=[],values=[];
+  lenses.forEach(function(l){
+    if(!l||typeof l!=="object") return;
+    var v=parseFloat(l.mean);if(isNaN(v)) return;
+    labels.push(l.name_cn||l.key||"?");values.push(v);
+  });
+  if(!labels.length) return missingCard("健康度数据暂缺");
+  var cc=canvasCard(title);
+  var options=Object.assign({},BASE_OPTIONS);
+  options.scales={r:{min:0,max:10,ticks:{stepSize:2}}};
+  drawChart(cc.canvas,"radar",labels,
+    [{label:"维度均值",data:values,borderColor:ACCENT,backgroundColor:ACCENT_SOFT,
+      borderWidth:2,pointRadius:3,
+      pointBackgroundColor:values.map(function(_,i){return PALETTE[i%PALETTE.length];})}],
+    options);
+  return cc.card;
+}
+function renderLine(daily,title){
+  if(!Array.isArray(daily)||!daily.length) return missingCard("舆情数据暂缺");
+  var labels=[],values=[];
+  daily.forEach(function(d){
+    if(!d||typeof d!=="object") return;
+    var v=parseFloat(d.count==null?0:d.count);if(isNaN(v)) v=0;
+    labels.push(d.date||"");values.push(v);
+  });
+  if(!labels.length) return missingCard("舆情数据暂缺");
+  var cc=canvasCard(title);
+  var options=Object.assign({},BASE_OPTIONS);
+  options.scales={y:{beginAtZero:true}};
+  drawChart(cc.canvas,"line",labels,
+    [{label:"声量",data:values,borderColor:ACCENT,backgroundColor:ACCENT_SOFT,
+      fill:true,tension:0.3,borderWidth:2,pointRadius:2}],options);
+  return cc.card;
+}
+function renderDoughnut(daily,title){
+  if(!Array.isArray(daily)||!daily.length) return missingCard("舆情数据暂缺");
+  var pos=0,neu=0,neg=0;
+  daily.forEach(function(d){
+    if(!d||typeof d!=="object") return;
+    [["positive","pos"],["neutral","neu"],["negative","neg"]].forEach(function(k){
+      var v=parseFloat(d[k[0]]==null?0:d[k[0]]);if(isNaN(v)) v=0;
+      if(k[1]==="pos")pos+=v;else if(k[1]==="neu")neu+=v;else neg+=v;
+    });
+  });
+  if(pos+neu+neg<=0) return missingCard("暂无声量数据");
+  var cc=canvasCard(title);
+  drawChart(cc.canvas,"doughnut",["正面","中性","负面"],
+    [{data:[pos,neu,neg],backgroundColor:[POSITIVE,NEUTRALC,NEGATIVE]}],
+    Object.assign({},BASE_OPTIONS));
+  return cc.card;
+}
+var SENT_LABEL={positive:"正面",negative:"负面",neutral:"中性"};
+var SENT_COLOR={positive:POSITIVE,negative:NEGATIVE,neutral:NEUTRALC};
+function safeUrl(url){
+  var u=String(url||"").trim();
+  return /^https?:\/\//i.test(u)?u:"";
+}
+function renderEvents(events,title,subtitle,showBrand){
+  if(!Array.isArray(events)||!events.length) return missingCard("暂无事件数据");
+  var ul=document.createElement("ul");ul.className="genui-evlist";
+  events.forEach(function(e){
+    if(!e||typeof e!=="object") return;
+    var li=document.createElement("li");li.className="genui-ev";
+    var head;
+    var url=safeUrl(e.url);
+    if(url){
+      var a=document.createElement("a");
+      a.href=url;a.target="_blank";a.rel="noopener";
+      a.textContent=e.title||"（无标题）";head=a;
+    }else{
+      var sp=document.createElement("span");
+      sp.textContent=e.title||"（无标题）";head=sp;
+    }
+    if(showBrand&&e.brand){
+      var b=document.createElement("b");b.textContent=e.brand+" ";
+      li.appendChild(b);
+    }
+    li.appendChild(head);
+    var sent=String(e.sentiment||"").toLowerCase();
+    if(SENT_LABEL[sent]){
+      var badge=document.createElement("span");badge.className="genui-badge";
+      badge.style.background=SENT_COLOR[sent];badge.textContent=" "+SENT_LABEL[sent];
+      li.appendChild(badge);
+    }
+    var bits=[];
+    if(e.at) bits.push(e.at);
+    if(e.summary) bits.push(e.summary);
+    if(bits.length){
+      var meta=document.createElement("div");meta.className="genui-ev-meta";
+      meta.textContent=bits.join(" · ");li.appendChild(meta);
+    }
+    ul.appendChild(li);
+  });
+  if(!ul.children.length) return missingCard("暂无事件数据");
+  var card=document.createElement("div");card.className="genui-card";
+  var t=document.createElement("div");t.className="genui-title";t.textContent=title;
+  card.appendChild(t);
+  if(subtitle){
+    var sub=document.createElement("div");sub.className="genui-sub";
+    sub.textContent=subtitle;card.appendChild(sub);
+  }
+  card.appendChild(ul);
+  return card;
+}
+function lensesOf(deck){
+  var h=deck&&deck.health;
+  return (h&&typeof h==="object")?h.lenses:null;
+}
+function renderIntent(intent,deck){
+  if(!deck||typeof deck!=="object") return missingCard();
+  var health=deck.health,sentiment=deck.sentiment,competitors=deck.competitors;
+  if(intent==="total") return renderMetricCard(health);
+  if(intent==="compare") return renderBar(lensesOf(deck),"维度对比",false);
+  if(intent==="radar") return renderRadar(lensesOf(deck),"维度雷达");
+  if(intent==="delta") return renderBar(lensesOf(deck),"版本变化",true);
+  if(intent==="volume"){
+    var d1=(sentiment&&typeof sentiment==="object")?sentiment.daily_volume:null;
+    return renderLine(d1,"近 7 天声量");
+  }
+  if(intent==="sentiment"){
+    var d2=(sentiment&&typeof sentiment==="object")?sentiment.daily_volume:null;
+    return renderDoughnut(d2,"正负面占比");
+  }
+  if(intent==="events"){
+    var ev=(sentiment&&typeof sentiment==="object")?sentiment.top_events:null;
+    return renderEvents(ev,"热点事件",null,false);
+  }
+  if(intent==="rivals"){
+    if(!competitors||typeof competitors!=="object") return missingCard("竞品数据暂缺");
+    var wl=competitors.watch_list||[];
+    var sub=wl.length?("对标品牌："+wl.map(String).join("、")):null;
+    return renderEvents(competitors.events,"竞品动态",sub,true);
+  }
+  return missingCard("未知意图");
+}
+/* ===== END render ===== */
+
+/* ===== 页面接线 ===== */
+var FALLBACK_HTML =
+  "<p>这个问题我答不上来。这个 demo 是只读的，只能聊指挥舱里已有的数据："+
+  "品牌健康度（综合评分、5 个维度、版本变化）、舆情（近 7 天声量、正负面占比、热点事件）、竞品动态。</p>"+
+  "<p>你可以问我，比如：「综合评分多少？」「哪个维度最弱？」「和上版比变了多少？」"+
+  "「最近 7 天声量怎么样？」「正负面占比如何？」「最近有什么大事？」「竞品在干什么？」</p>";
+var EXAMPLES = ["综合评分多少？","哪个维度最弱？","和上版比变了多少？",
+  "最近 7 天声量怎么样？","正负面占比如何？","最近有什么大事？","竞品在干什么？"];
+
+var deck=null, deckLoaded=false;
+
+function showDeckWarn(){
+  var w=document.getElementById("deckwarn");
+  w.style.display="block";
+  w.textContent="data/deck.json 未找到——请先跑聚合脚本生成 data/deck.json，再刷新本页。"+
+    "（路由演示仍可用，但所有意图都会显示「数据暂缺」。）";
+}
+function refreshBrandline(){
+  var el=document.getElementById("brandline");
+  if(deck&&deck.brand) el.textContent="当前品牌："+deck.brand+"（数据来自 data/deck.json）";
+  else el.textContent="";
+}
+function buildChips(){
+  var box=document.getElementById("chips");
+  EXAMPLES.forEach(function(q){
+    var b=document.createElement("button");
+    b.type="button";b.className="chip";b.textContent=q;
+    b.addEventListener("click",function(){ask(q);});
+    box.appendChild(b);
+  });
+}
+function ask(question){
+  question=(question||"").trim();
+  if(!question) return;
+  var intent=route(question);
+  var wrap=document.createElement("div");wrap.className="qa";
+  var qEl=document.createElement("div");qEl.className="q";qEl.textContent=question;
+  wrap.appendChild(qEl);
+  var tag=document.createElement("div");tag.className="intent-tag";
+  tag.textContent="意图："+(intent==="unknown"?"答不上来":(INTENT_CN[intent]||intent));
+  wrap.appendChild(tag);
+  if(intent==="unknown"){
+    var fb=document.createElement("div");fb.className="fallback";
+    fb.innerHTML=FALLBACK_HTML;wrap.appendChild(fb);
+  }else{
+    wrap.appendChild(renderIntent(intent,deck));
+  }
+  var hist=document.getElementById("history");
+  hist.insertBefore(wrap,hist.firstChild);
+  wrap.scrollIntoView({behavior:"smooth",block:"start"});
+}
+document.getElementById("askform").addEventListener("submit",function(ev){
+  ev.preventDefault();
+  var input=document.getElementById("q");
+  ask(input.value);input.value="";input.focus();
+});
+buildChips();
+fetch("data/deck.json").then(function(r){
+  if(!r.ok) throw new Error("http "+r.status);
+  return r.json();
+}).then(function(d){
+  deck=d;deckLoaded=true;refreshBrandline();autoAsk();
+}).catch(function(){
+  deckLoaded=false;showDeckWarn();refreshBrandline();autoAsk();
+});
+function autoAsk(){
+  var m=/[?&]q=([^&]*)/.exec(location.search);
+  if(m) ask(decodeURIComponent(m[1].replace(/\+/g," ")));
+}
+</script>
+</body>
+</html>
