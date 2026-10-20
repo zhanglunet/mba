@@ -129,7 +129,7 @@ CHART_MARK = {
     "radar": ['"type": "radar"', "信号"],
     "delta": ['"type": "bar"', "-0.3"],
     "volume": ['"type": "line"', "2026-10-11"],
-    "sentiment": ['"type": "doughnut"'],
+    "sentiment": ['"type": "bar"', '"stacked": true'],
     "events": ["融资落地"],
     "rivals": ["openai", "发布新模型"],
 }
