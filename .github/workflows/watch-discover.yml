@@ -178,3 +178,35 @@ jobs:
               sed 's/^/  pr.err: /' /tmp/pr.err || true
             fi
           fi
+
+      - name: Prune old candidates（只保留近 30 天）
+        # 每天清理 watch/_candidates 下早于 cutoff 的 .md/.json(README.md 不在 20* 通配内,保留)。
+        # 归档 = git 历史:删掉的文件仍可从提交历史找回,不丢数据。
+        run: |
+          KEEP_DAYS=30
+          CUTOFF=$(date -u -d "$KEEP_DAYS days ago" +%F)
+          cd watch/_candidates
+          DELETED=0
+          for f in 20*.md 20*.json; do
+            [ -e "$f" ] || continue
+            d="${f:0:10}"
+            if [[ "$d" < "$CUTOFF" ]]; then
+              rm -f "$f"
+              DELETED=$((DELETED + 1))
+            fi
+          done
+          cd - > /dev/null
+          echo "prune: 删除 ${DELETED} 个早于 ${CUTOFF} 的候选文件(保留近 ${KEEP_DAYS} 天,git 历史可找回)" >> "$GITHUB_STEP_SUMMARY"
+          if [ -z "$(git status --porcelain watch/_candidates)" ]; then
+            echo "无过期候选文件 —— 不提交。"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add watch/_candidates
+          git commit -m "chore(watch): 清理 30 天前的候选文件（仅保留近 30 天）"
+          # 本 job 稍早已推过 main,此处直接推;万一 main 被别处推进,先 rebase 再推
+          if ! git push origin HEAD:main 2>/tmp/prune-push.err; then
+            git pull --rebase origin main 2>/dev/null || true
+            git push origin HEAD:main
+          fi
