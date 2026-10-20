@@ -47,33 +47,33 @@ Lenses are fixed: **Origin · Category · Leverage · Identity · Signal** (起�
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
-body{background:var(--paper);color:var(--ink);font-family:ui-serif,"Noto Serif SC","Songti SC",Georgia,serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+body{background:var(--paper);color:var(--ink);font-family:ui-serif,"Noto Serif SC","Songti SC","Noto Serif",Georgia,serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
 .wrap{max-width:820px;margin:0 auto;padding:56px 28px 80px;}
 header{border-bottom:2px solid var(--rule);padding-bottom:18px;margin-bottom:36px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
-.mark{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-weight:800;letter-spacing:.02em;font-size:20px;}
+.mark{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-weight:800;letter-spacing:.02em;font-size:20px;}
 .mark .dot{color:var(--accent);}
-.panel-badge{display:inline-block;padding:3px 10px;border:1.5px solid var(--panel);color:var(--panel);font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border-radius:3px;}
+.panel-badge{display:inline-block;padding:3px 10px;border:1.5px solid var(--panel);color:var(--panel);font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border-radius:3px;}
 h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 10px;font-weight:800;letter-spacing:-.01em;}
 .brand-en{font-size:17px;color:var(--muted);font-style:italic;margin:0 0 6px;}
-.meta-line{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:13px;color:var(--muted);margin:0 0 28px;}
+.meta-line{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:13px;color:var(--muted);margin:0 0 28px;}
 .meta-line span{margin-right:18px;}
 .tldr{background:#fff;border-left:4px solid var(--panel);padding:18px 22px;margin:0 0 36px;font-size:16px;line-height:1.65;}
 .tldr strong{color:var(--panel);}
 
 .score-hero{display:flex;gap:28px;margin:0 0 40px;flex-wrap:wrap;align-items:center;}
-.score-big{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:64px;font-weight:900;line-height:1;color:var(--ink);}
-.score-sub{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:14px;color:var(--muted);margin-top:6px;}
-.score-norm{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:28px;font-weight:700;color:var(--panel);}
+.score-big{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:64px;font-weight:900;line-height:1;color:var(--ink);}
+.score-sub{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:14px;color:var(--muted);margin-top:6px;}
+.score-norm{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:28px;font-weight:700;color:var(--panel);}
 
 .charts-row{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:0 0 44px;}
 @media(max-width:600px){.charts-row{grid-template-columns:1fr;}}
 .chart-box{background:#fff;border:1px solid #e5e2db;border-radius:8px;padding:20px;}
 .chart-wrap{position:relative;height:260px;}
-.chart-title{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;}
+.chart-title{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;}
 canvas{width:100%!important;}
 
-.section-title{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:40px 0 14px;border-top:1px solid var(--rule);padding-top:16px;}
-table{width:100%;border-collapse:collapse;font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:14px;margin:0 0 36px;}
+.section-title{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:40px 0 14px;border-top:1px solid var(--rule);padding-top:16px;}
+table{width:100%;border-collapse:collapse;font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:14px;margin:0 0 36px;}
 th{background:var(--ink);color:#fff;padding:9px 12px;text-align:left;font-weight:600;font-size:12px;letter-spacing:.05em;}
 td{padding:9px 12px;border-bottom:1px solid #e5e2db;}
 tr:last-child td{border-bottom:none;}
@@ -97,13 +97,13 @@ td.flat{color:var(--muted);}
 @media(max-width:560px){.judge-grid{grid-template-columns:1fr;}}
 .judge-card{background:#fff;border:1px solid #e5e2db;border-radius:8px;padding:18px 20px;}
 .judge-card .jname{font-weight:700;font-size:16px;margin:0 0 2px;}
-.judge-card .jrole{font-size:12px;color:var(--muted);margin:0 0 10px;font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;}
-.judge-card .jscore{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:28px;font-weight:800;color:var(--panel);}
+.judge-card .jrole{font-size:12px;color:var(--muted);margin:0 0 10px;font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;}
+.judge-card .jscore{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:28px;font-weight:800;color:var(--panel);}
 .judge-card .jscore-max{font-size:14px;color:var(--muted);font-weight:400;}
 .judge-card .jverdict{font-size:14px;margin-top:10px;line-height:1.55;color:var(--ink);}
 .judge-card.competitor{border-color:#d4a017;background:#fffcf0;}
 .judge-card.highest{border-color:var(--panel);border-width:2px;}
-.badge-competitor{display:inline-block;background:#d4a017;color:#fff;font-size:10px;padding:1px 7px;border-radius:999px;font-family:ui-sans-serif,sans-serif;font-weight:700;letter-spacing:.04em;margin-left:6px;vertical-align:middle;}
+.badge-competitor{display:inline-block;background:#d4a017;color:#fff;font-size:10px;padding:1px 7px;border-radius:999px;font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-weight:700;letter-spacing:.04em;margin-left:6px;vertical-align:middle;}
 
 .verdict{border:2px solid var(--rule);padding:22px 26px;margin:0 0 36px;border-radius:6px;}
 .verdict p{margin:0 0 10px;font-size:16px;line-height:1.65;}
@@ -111,23 +111,23 @@ td.flat{color:var(--muted);}
 
 .action-list{margin:0 0 44px;padding:0;}
 .action-list li{list-style:none;padding:16px 18px;border:1px solid #e5e2db;border-radius:6px;margin-bottom:10px;background:#fff;}
-.action-list li .action-num{font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-weight:700;color:var(--panel);font-size:14px;margin-bottom:6px;}
+.action-list li .action-num{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-weight:700;color:var(--panel);font-size:14px;margin-bottom:6px;}
 .action-list li p{margin:0;font-size:15px;line-height:1.6;}
 
 /* ── optional situational blocks (use when relevant; CSS kept house-consistent) ── */
 .record-strip{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 36px;}
-.record-pill{background:var(--panel);color:#fff;font-family:ui-sans-serif,sans-serif;font-size:12px;font-weight:700;letter-spacing:.04em;padding:5px 12px;border-radius:999px;}
-.conflict-box{background:#fffbf0;border:1.5px solid #d4a017;border-radius:6px;padding:14px 18px;margin:0 0 32px;font-family:ui-sans-serif,sans-serif;font-size:13px;line-height:1.6;}
+.record-pill{background:var(--panel);color:#fff;font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.04em;padding:5px 12px;border-radius:999px;}
+.conflict-box{background:#fffbf0;border:1.5px solid #d4a017;border-radius:6px;padding:14px 18px;margin:0 0 32px;font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:13px;line-height:1.6;}
 .conflict-box .cf-title{font-weight:700;color:#8a6500;margin-bottom:6px;text-transform:uppercase;letter-spacing:.06em;}
 .insight-box{background:#fff6f0;border:1.5px solid var(--panel);border-radius:8px;padding:20px 24px;margin:0 0 36px;}
-.insight-box .ib-title{font-family:ui-sans-serif,sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--panel);margin:0 0 10px;}
+.insight-box .ib-title{font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--panel);margin:0 0 10px;}
 .quote-block{border-left:3px solid var(--panel);padding:14px 20px;margin:0 0 16px;background:#fff6f0;border-radius:0 6px 6px 0;}
 .quote-block p{margin:0;font-size:15px;font-style:italic;line-height:1.65;}
-.quote-block .quote-attr{margin-top:8px;font-size:13px;color:var(--muted);font-family:ui-sans-serif,sans-serif;font-style:normal;font-weight:600;}
+.quote-block .quote-attr{margin-top:8px;font-size:13px;color:var(--muted);font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-style:normal;font-weight:600;}
 /* EVOLUTION delta banner (v2+ only) */
 .delta-banner{background:linear-gradient(90deg,#fff3e6,#ffe8d1);border-left:4px solid var(--panel);padding:14px 18px;border-radius:6px;margin:0 0 28px;font-size:15px;}
 
-footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted);font-family:ui-sans-serif,"Inter",-apple-system,sans-serif;font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);color:var(--muted);font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 
   /* ── logo glyph(五镜头雷达,规范见 mbabrand.com/logo-design.html)── */
   .mark { display: inline-flex; align-items: center; gap: 9px; }
@@ -279,7 +279,7 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);color:v
 </script>
 
 <!-- LEGAL + SOURCES — required. Fill {{brand}} / {{panel}} / {{judge_names}}; Sources must be real URLs. -->
-<section class="mba-legal" style="max-width:860px;margin:48px auto 0;padding:20px 24px;border-top:2px solid #1a1a1a;font-family:ui-sans-serif,system-ui,sans-serif;font-size:13px;line-height:1.7;color:#6b6760;">
+<section class="mba-legal" style="max-width:860px;margin:48px auto 0;padding:20px 24px;border-top:2px solid #1a1a1a;font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;font-size:13px;line-height:1.7;color:#6b6760;">
   <h2 style="font-size:15px;color:#111;margin:0 0 12px;">Legal, IP &amp; Disclaimer — 商标、知识产权与免责声明</h2>
   <p><strong>公开资料说明：</strong>本报告仅引用和分析公开可访问资料（新闻报道、行业媒体、品牌官方公开材料、公开访谈与演讲、MBA 方法说明）。报告未使用 {{brand}}、其关联公司或任何第三方的非公开资料、内部文件、商业秘密或未授权数据库。</p>
   <p><strong>商标与品牌归属：</strong>报告中提及的品牌名、产品名、商标、标识及相关商业外观均归其合法权利人所有，仅为识别、评论、研究和说明目的引用，不表示 MBA 与相关权利主体存在赞助、授权、合作或背书关系。</p>

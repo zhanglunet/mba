@@ -62,14 +62,14 @@ def ext_links_html(slug):
         cards.append(
             f'<a href="{esc(lk.get("url", ""))}" target="_blank" rel="noopener" '
             "style=\"display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid #e2dac6;"
-            "border-radius:12px;text-decoration:none;color:#2a2e2c;font:14px/1.4 -apple-system,'PingFang SC',sans-serif\">"
+            "border-radius:12px;text-decoration:none;color:#2a2e2c;font:14px/1.4 ui-sans-serif,'Inter','PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',-apple-system,sans-serif\">"
             f'<span style="font-size:20px">{esc(lk.get("emoji", ""))}</span>'
             f'<span><b>{esc(lk.get("title", ""))}</b><br>'
             f'<span style="font-size:12px;color:#5a5852">{esc(lk.get("subtitle", ""))}</span></span></a>'
         )
     return (
         '<div style="margin:4px 0 22px;">'
-        "<div style=\"font-family:ui-sans-serif,'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;"
+        "<div style=\"font-family:ui-sans-serif,'Inter','PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',-apple-system,sans-serif;font-size:11px;font-weight:700;"
         'letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">相关看板 / Related</div>'
         + " ".join(cards) + "</div>"
     )
@@ -233,7 +233,7 @@ TEMPLATE = r"""<!doctype html>
 <style>
   :root{--ink:#111;--paper:#faf8f3;--muted:#6b6760;--rule:#1a1a1a;--accent:#c1440e;--card:#fff;--hair:#e2ddd3;}
   *{box-sizing:border-box;} html,body{margin:0;padding:0;}
-  body{background:var(--paper);color:var(--ink);font-family:ui-sans-serif,"Inter","PingFang SC","Noto Sans SC",-apple-system,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  body{background:var(--paper);color:var(--ink);font-family:ui-sans-serif,"Inter","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",-apple-system,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;}
   .wrap{max-width:1000px;margin:0 auto;padding:32px 22px 48px;}
   header{border-bottom:2px solid var(--rule);padding-bottom:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
   .mark{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em;font-size:22px;line-height:1;color:var(--ink);text-decoration:none;}
