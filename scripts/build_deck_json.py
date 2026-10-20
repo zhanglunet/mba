@@ -35,6 +35,12 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = REPO_ROOT / "config" / "deck_sources.json"
 SHANGHAI = datetime.timezone(datetime.timedelta(hours=8))
 
+# deck.json schema 版本（PRD-098/T3 第一批 V1）：对应 T1 §五 schema
+# （顶层 brand/generated_at + health/sentiment/competitors 三段结构）。
+# schema 不兼容变更（增删段、改字段口径）递增主版本；消费方
+# （dashboard/ask.html）按此版本号判断兼容性。仅标注，不影响产物结构。
+DECK_SCHEMA_VERSION = "1.0.0"
+
 
 def _load_module(name: str):
     here = pathlib.Path(__file__).resolve().parent
