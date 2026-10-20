@@ -39,6 +39,12 @@
 import argparse
 import sys
 
+# 规范版本（PRD-098/T3 第一批 V1）：本文件意图目录（INTENTS/INTENT_CN）与
+# 触发词表（TRIGGERS/WRITE_VERBS/OUT_OF_SCOPE/PAIRS/PRIORITY）的版本号。
+# 不兼容变更（增删意图、改裁决层级）递增主版本；仅增补触发词等兼容变更
+# 递增次版本。ask.html 内 JS 版为双实现，两边须同步演进、保持版本口径一致。
+ROUTER_SPEC_VERSION = "1.0.0"
+
 # 8 个意图（§2.1），顺序仅用于展示，裁决顺序见 PRIORITY
 INTENTS = ("total", "compare", "radar", "delta",
            "volume", "sentiment", "events", "rivals")
