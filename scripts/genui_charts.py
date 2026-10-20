@@ -464,37 +464,54 @@ def _lenses(deck):
     return h.get("lenses") if isinstance(h, dict) else None
 
 
+_genui_ir_mod = None
+
+
+def _load_genui_ir():
+    """加载同目录的 genui_ir 模块（兼容按路径加载本文件的环境）。
+
+    注：本文件受 PRD-081 只读审计约束（不得 import os/subprocess 等），
+    故同目录定位用 __file__ 字符串切分 + sys.path，不引入 os/pathlib。
+    """
+    global _genui_ir_mod
+    if _genui_ir_mod is not None:
+        return _genui_ir_mod
+    mod = sys.modules.get("genui_ir")
+    if mod is None:
+        for m in list(sys.modules.values()):
+            f = getattr(m, "__file__", None)
+            if f and f.replace("\\", "/").rsplit("/", 1)[-1] \
+                    == "genui_ir.py":
+                mod = m
+                break
+    if mod is None:
+        try:
+            import genui_ir as mod
+        except ImportError:
+            here = __file__.replace("\\", "/").rsplit("/", 1)[0] \
+                if "/" in __file__ else "."
+            if here not in sys.path:
+                sys.path.insert(0, here)
+            import genui_ir as mod
+    _genui_ir_mod = mod
+    return mod
+
+
 def render(intent, deck):
-    """意图 → 渲染器分发（含 §2.4 null 降级）。"""
+    """意图 → HTML 片段（含 §2.4 null 降级）。
+
+    PRD-098/T3 M1 第 1 步：实现改为垫片——经 genui_ir.compose() 把
+    意图 + deck 编译为 IR 文档，再由 genui_ir.render_ir() 按节点 type
+    分发渲染；对外行为与 IR 化前逐字一致（黄金快照锁死）。unknown
+    意图不产 IR（compose 返回 None），沿用"未知意图"降级；deck 非
+    dict 时 compose 直接产 missing_card 文档（"数据暂缺"先行口径不变）。
+    """
+    ir = _load_genui_ir()
+    doc = ir.compose(intent, deck)
+    if doc is not None:
+        return ir.render_ir(doc)
     if not isinstance(deck, dict):
         return missing_card()
-    health = deck.get("health")
-    sentiment = deck.get("sentiment")
-    competitors = deck.get("competitors")
-    if intent == "total":
-        return render_metric_card(health)
-    if intent == "compare":
-        return render_bar(_lenses(deck), title="维度对比")
-    if intent == "radar":
-        return render_radar(_lenses(deck), title="维度雷达")
-    if intent == "delta":
-        return render_bar(_lenses(deck), title="版本变化", delta=True)
-    if intent == "volume":
-        daily = sentiment.get("daily_volume") if isinstance(sentiment, dict) else None
-        return render_line(daily, title="近 7 天声量")
-    if intent == "sentiment":
-        daily = sentiment.get("daily_volume") if isinstance(sentiment, dict) else None
-        return render_stacked_bar(daily, title="正负面占比")
-    if intent == "events":
-        evs = sentiment.get("top_events") if isinstance(sentiment, dict) else None
-        return render_events(evs, title="热点事件")
-    if intent == "rivals":
-        if not isinstance(competitors, dict):
-            return missing_card("竞品数据暂缺")
-        wl = competitors.get("watch_list") or []
-        sub = ("对标品牌：" + "、".join(str(w) for w in wl)) if wl else None
-        return render_events(competitors.get("events"), title="竞品动态",
-                             subtitle=sub, show_brand=True)
     return missing_card("未知意图")
 
 
