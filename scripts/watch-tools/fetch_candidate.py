@@ -150,7 +150,8 @@ def guess_source(url):
     return "media"
 
 
-def next_id(slug, date):
+def max_n(slug):
+    """该品牌已入库事件的最大 NNN(用于推导下一个候选 id)。"""
     path = os.path.join(WATCH, slug, "events.yaml")
     n = 0
     if os.path.exists(path):
@@ -158,7 +159,11 @@ def next_id(slug, date):
             m = re.search(rf"-{re.escape(slug)}-(\d+)$", str(e.get("id", "")))
             if m:
                 n = max(n, int(m.group(1)))
-    return f"{date or 'YYYY-MM-DD'}-{slug}-{n + 1:03d}"
+    return n
+
+
+def next_id(slug, date):
+    return f"{date or 'YYYY-MM-DD'}-{slug}-{max_n(slug) + 1:03d}"
 
 
 def brand_dims(slug):
@@ -470,6 +475,7 @@ def cmd_discover(args):
     import hashlib
     cands = []  # 结构化候选(供前台 triage 页 / build_watch_triage.py 消费)
     total_new = 0
+    batch_n = {}  # slug -> 本次运行已分配的最大 NNN(批次内递增,解决批内 id 重复)
     for slug in slugs:
         # 两路召回:① 品牌名(媒体转述)② site:<官方新闻源>(一手原文,没配则跳过)。
         # ② 是 2026-07-25 加的:此前官方发布只能靠媒体转述被动捡回(见 _brand_news_site)。
@@ -605,7 +611,11 @@ def cmd_discover(args):
             nid += 1
             quote, src = (t.rsplit(" - ", 1) + [None])[:2]
             quote = quote.strip()[:100]
-            eid = next_id(slug, d)  # next_id 只看已入库事件,批内多条人工顺延 NNN
+            # next_id 只看已入库事件,批内多条会重复 —— 用批内计数器递增,不再依赖人工顺延
+            if slug not in batch_n:
+                batch_n[slug] = max_n(slug)
+            batch_n[slug] += 1
+            eid = f"{d or 'YYYY-MM-DD'}-{slug}-{batch_n[slug]:03d}"
             qj = json.dumps(quote, ensure_ascii=False)
             src_hint = f"(来源:{src})" if src else ""
             # 召回路径已经确定了 source_type,人工候选 md 里就不该再写死 `media`
@@ -629,7 +639,7 @@ def cmd_discover(args):
                 "fetched_at": now,
             })
             lines.append(f"""
-- id: {eid}          # ⚠️ 批内多条时人工顺延 NNN
+- id: {eid}
   date: {d or 'YYYY-MM-DD'}
   dim: W?            # TODO 人工:{applicable} 里选
   severity: P?       # TODO 人工:P0..P3
