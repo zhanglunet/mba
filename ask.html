@@ -9,7 +9,7 @@
 :root{--paper:#faf8f3;--ink:#111;--muted:#6b6760;--accent:#c1440e;--missing-bg:#f0ede7;--line:#e0ddd8;}
 *{box-sizing:border-box;}
 body{background:var(--paper);color:var(--ink);
- font-family:ui-serif,"Noto Serif SC","Songti SC",Georgia,serif;
+ font-family:ui-serif,"Noto Serif SC","Songti SC","Noto Serif",Georgia,serif;
  max-width:760px;margin:0 auto;padding:24px 20px 60px;}
 a{color:var(--accent);}
 .topbar{display:flex;justify-content:space-between;align-items:center;
@@ -162,7 +162,7 @@ function route(question){
 /* ===== BEGIN render：scripts/genui_charts.py 的 JS 等价实现 =====
    渲染器与 null 降级逐字照搬 Python 版；区别：直接操作 DOM 并 new Chart()，
    不经过 <script> 标签二次激活。 */
-var PALETTE=["#c1440e","#1a4a7a","#1a7a4a","#7c3aed","#d97706","#0e7c86","#a31e5b"];
+var PALETTE=["#c1440e","#1a4a7a","#1a7a4a","#7c3aed","#d97706"];
 var ACCENT="#c1440e",ACCENT_SOFT="rgba(193,68,14,0.10)";
 var POSITIVE="#1a7a4a",NEGATIVE="#b3261e",NEUTRALC="#b9b2a6";
 var uidCounter=0;
@@ -282,7 +282,7 @@ function renderLine(daily,title){
       fill:true,tension:0.3,borderWidth:2,pointRadius:2}],options);
   return cc.card;
 }
-function renderDoughnut(daily,title){
+function renderStackedBar(daily,title){
   if(!Array.isArray(daily)||!daily.length) return missingCard("舆情数据暂缺");
   var pos=0,neu=0,neg=0;
   daily.forEach(function(d){
@@ -294,9 +294,14 @@ function renderDoughnut(daily,title){
   });
   if(pos+neu+neg<=0) return missingCard("暂无声量数据");
   var cc=canvasCard(title);
-  drawChart(cc.canvas,"doughnut",["正面","中性","负面"],
-    [{data:[pos,neu,neg],backgroundColor:[POSITIVE,NEUTRALC,NEGATIVE]}],
-    Object.assign({},BASE_OPTIONS));
+  var options=Object.assign({},BASE_OPTIONS);
+  options.indexAxis="y";
+  options.scales={x:{stacked:true,min:0,max:pos+neu+neg},y:{stacked:true}};
+  drawChart(cc.canvas,"bar",[""],
+    [{label:"正面",data:[pos],backgroundColor:POSITIVE,borderColor:POSITIVE,borderWidth:1},
+     {label:"中性",data:[neu],backgroundColor:NEUTRALC,borderColor:NEUTRALC,borderWidth:1},
+     {label:"负面",data:[neg],backgroundColor:NEGATIVE,borderColor:NEGATIVE,borderWidth:1}],
+    options);
   return cc.card;
 }
 var SENT_LABEL={positive:"正面",negative:"负面",neutral:"中性"};
@@ -369,7 +374,7 @@ function renderIntent(intent,deck){
   }
   if(intent==="sentiment"){
     var d2=(sentiment&&typeof sentiment==="object")?sentiment.daily_volume:null;
-    return renderDoughnut(d2,"正负面占比");
+    return renderStackedBar(d2,"正负面占比");
   }
   if(intent==="events"){
     var ev=(sentiment&&typeof sentiment==="object")?sentiment.top_events:null;
