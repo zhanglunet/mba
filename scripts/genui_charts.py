@@ -38,8 +38,12 @@ import sys
 
 CHART_JS_CDN = "https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"
 
-PALETTE = ["#c1440e", "#1a4a7a", "#1a7a4a", "#7c3aed",
-           "#d97706", "#0e7c86", "#a31e5b"]
+# 多系列调色板（PRD-099/T3 第二批，规范 §3/§8 第 4 项定版）：
+# 由 7 色收敛为 series-1..5。保留：1=#c1440e(accent 本尊) 2=#1a4a7a(蓝)
+# 3=#1a7a4a(正向绿) 4=#7c3aed(紫) 5=#d97706(预警橙)；
+# 砍除 #0e7c86(青)/#a31e5b(品红)——现渲染器最多 5 个系列（5 lens），
+# 索引 5/6 本就不可达；未来系列数 >5 时按 i%5 回绕映射到保留色。
+PALETTE = ["#c1440e", "#1a4a7a", "#1a7a4a", "#7c3aed", "#d97706"]
 ACCENT = "#c1440e"
 ACCENT_SOFT = "rgba(193,68,14,0.10)"
 POSITIVE = "#1a7a4a"
@@ -120,10 +124,11 @@ COMPONENTS = {
             "title": "string，可选，缺省 “近 7 天声量”",
         },
     },
-    "doughnut": {
-        "renderer": "render_doughnut",
+    "stacked_bar": {
+        "renderer": "render_stacked_bar",
         "intents": ("sentiment",),
-        "description": "环形图：近 7 天正面/中性/负面声量求和占比。",
+        "description": "100% 堆叠条形图：近 7 天正面/中性/负面声量求和占比。"
+                       "PRD-099/T3 第二批按规范 §2.4 定版替代原 doughnut。",
         "props": {
             "daily": {
                 "type": "list[dict]", "required": True,
@@ -358,8 +363,10 @@ def render_line(daily, title="近 7 天声量"):
                         _chart_js(cid, "line", labels, datasets, options))
 
 
-def render_doughnut(daily, title="正负面占比"):
-    """`sentiment` 意图：近 7 天 positive/negative/neutral 求和环形图。"""
+def render_stacked_bar(daily, title="正负面占比"):
+    """`sentiment` 意图：近 7 天 positive/negative/neutral 求和 100% 堆叠条形。
+    PRD-099/T3 第二批：按图表规范 §2.4/§8 第 3 项定版，以 100% 堆叠条形
+    替代原 doughnut；数据口径不变（三类声量按 7 天求和）。"""
     if not isinstance(daily, list) or not daily:
         return missing_card("舆情数据暂缺")
     pos = neu = neg = 0.0
@@ -378,15 +385,24 @@ def render_doughnut(daily, title="正负面占比"):
                 neu += v
             else:
                 neg += v
-    if pos + neu + neg <= 0:
+    total = pos + neu + neg
+    if total <= 0:
         return missing_card("暂无声量数据")
     cid = _uid()
-    datasets = [{"data": [pos, neu, neg],
-                 "backgroundColor": [POSITIVE, NEUTRAL, NEGATIVE]}]
+    datasets = [
+        {"label": "正面", "data": [pos], "backgroundColor": POSITIVE,
+         "borderColor": POSITIVE, "borderWidth": 1},
+        {"label": "中性", "data": [neu], "backgroundColor": NEUTRAL,
+         "borderColor": NEUTRAL, "borderWidth": 1},
+        {"label": "负面", "data": [neg], "backgroundColor": NEGATIVE,
+         "borderColor": NEGATIVE, "borderWidth": 1},
+    ]
+    options = dict(_BASE_OPTIONS)
+    options["indexAxis"] = "y"
+    options["scales"] = {"x": {"stacked": True, "min": 0, "max": total},
+                         "y": {"stacked": True}}
     return _canvas_card(title, cid,
-                        _chart_js(cid, "doughnut",
-                                  ["正面", "中性", "负面"],
-                                  datasets, dict(_BASE_OPTIONS)))
+                        _chart_js(cid, "bar", [""], datasets, options))
 
 
 _SENT_LABEL = {"positive": "正面", "negative": "负面", "neutral": "中性"}
@@ -468,7 +484,7 @@ def render(intent, deck):
         return render_line(daily, title="近 7 天声量")
     if intent == "sentiment":
         daily = sentiment.get("daily_volume") if isinstance(sentiment, dict) else None
-        return render_doughnut(daily, title="正负面占比")
+        return render_stacked_bar(daily, title="正负面占比")
     if intent == "events":
         evs = sentiment.get("top_events") if isinstance(sentiment, dict) else None
         return render_events(evs, title="热点事件")
@@ -554,7 +570,9 @@ def self_test():
           and NEGATIVE not in outs["delta"]  # 本轮无负值
           and POSITIVE in outs["delta"])
     check("line chart", '"line"' in outs["volume"])
-    check("doughnut chart", '"doughnut"' in outs["sentiment"])
+    check("stacked bar chart", '"bar"' in outs["sentiment"]
+          and '"stacked": true' in outs["sentiment"]
+          and '"doughnut"' not in outs["sentiment"])
     check("event list", "genui-evlist" in outs["events"]
           and "genui-evlist" in outs["rivals"])
     check("rivals watch_list", "openai" in outs["rivals"])
@@ -590,7 +608,7 @@ def self_test():
 DEMO_CSS = """
 :root{--paper:#faf8f3;--ink:#111;--muted:#6b6760;--accent:#c1440e;--missing-bg:#f0ede7;}
 body{background:var(--paper);color:var(--ink);
- font-family:ui-serif,"Noto Serif SC","Songti SC",Georgia,serif;
+ font-family:ui-serif,"Noto Serif SC","Songti SC","Noto Serif",Georgia,serif;
  max-width:760px;margin:0 auto;padding:32px 20px;}
 .genui-card{background:#fff;border:1px solid #e0ddd8;border-radius:8px;
  padding:16px 18px;margin:0 0 20px;}
@@ -620,7 +638,7 @@ def build_demo(path="/tmp/genui_demo.html"):
                           ("radar", "radar · 雷达图"),
                           ("delta", "delta · delta 条形图"),
                           ("volume", "volume · 折线图"),
-                          ("sentiment", "sentiment · 环形图"),
+                          ("sentiment", "sentiment · 100% 堆叠条形图"),
                           ("events", "events · 事件列表（含 XSS 测试）"),
                           ("rivals", "rivals · 竞品事件列表")):
         parts.append("<h2>%s</h2>" % label + render(intent, deck))
