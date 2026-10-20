@@ -310,8 +310,8 @@ def render_kpis(reports):
 
 
 # 舆情方向 → 颜色/中文(与舆情驾驶舱同口径,docs/16)
-_DIR = {"pos": ("#1a7a4a", "利好"), "neg": ("#b3241f", "利空"),
-        "neutral": ("#8a857c", "中性"), "mixed": ("#c98a2b", "分歧")}
+_DIR = {"pos": ("#1a7a4a", "利好"), "neg": ("#b3261e", "利空"),
+        "neutral": ("#b9b2a6", "中性"), "mixed": ("#c98a2b", "分歧")}
 
 
 def load_recent_alerts(by_slug, limit=12):

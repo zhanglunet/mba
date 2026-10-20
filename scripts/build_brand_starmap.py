@@ -42,7 +42,7 @@ WDIM_NAME = {
     "W5": "资本市场", "W6": "产品口碑", "W7": "人事组织", "W8": "技术知产", "W9": "供应链生态",
 }
 SEV_R = {"P0": 11.5, "P1": 8.5, "P2": 6.5, "P3": 5.0}
-DIR_COLOR = {"pos": "#1a7a4a", "neg": "#b3241f", "neu": "#8a857c", "neutral": "#8a857c"}
+DIR_COLOR = {"pos": "#1a7a4a", "neg": "#b3261e", "neu": "#b9b2a6", "neutral": "#b9b2a6"}
 DIR_LABEL = {"pos": "正向 ▲", "neg": "负向 ▼", "neu": "中性 ▬", "neutral": "中性 ▬"}
 
 
@@ -243,7 +243,7 @@ def build_brand_graph(slug, meta_entry):
         eid = f"ev:{k}"
         nodes.append({"id": eid, "name": short, "type": "event", "metaHtml": m,
                       "x": round(math.cos(a) * rad, 1), "y": round(math.sin(a) * rad, 1),
-                      "r": SEV_R.get(sev, 5.0), "c": DIR_COLOR.get(direction, "#8a857c")})
+                      "r": SEV_R.get(sev, 5.0), "c": DIR_COLOR.get(direction, "#b9b2a6")})
         if lmap:
             for l in lmap:
                 edges.append({"s": eid, "t": f"lens:{l}", "evt": 1})
@@ -352,7 +352,7 @@ TEMPLATE = r"""<!doctype html>
   .panel .sev{font-weight:700;color:#fff;border-radius:4px;padding:0 6px;font-size:11px;}
   .panel .sev-P0{background:#b3241f;} .panel .sev-P1{background:#c1440e;} .panel .sev-P2{background:#c98a2b;} .panel .sev-P3{background:#9a958c;}
   .panel .dir{font-weight:700;font-size:11px;}
-  .panel .dir-pos{color:#1a7a4a;} .panel .dir-neg{color:#b3241f;} .panel .dir-neu,.panel .dir-neutral{color:#8a857c;}
+  .panel .dir-pos{color:#1a7a4a;} .panel .dir-neg{color:#b3261e;} .panel .dir-neu,.panel .dir-neutral{color:#b9b2a6;}
   .panel .dimt{font-size:11px;color:var(--muted);} .panel .dt{margin-left:auto;font-size:11px;color:var(--muted);}
   .panel .mlink{display:inline-block;margin-top:6px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);font-size:12px;}
   .panel .pconn{margin-top:10px;font-size:12px;color:var(--muted);border-top:1px solid var(--hair);padding-top:8px;}
@@ -381,7 +381,7 @@ TEMPLATE = r"""<!doctype html>
     <span class="tog" data-type="judge"><span class="sw" style="background:#9a958c"></span>评委 __NJ__</span>
     <span class="tog" data-type="event"><span class="sw" style="background:#1a7a4a"></span>舆情事件 __NE__</span>
     <button class="btn" id="kg-reset">重置视图</button>
-    <span class="legend"><span class="d" style="background:#1a7a4a"></span>正向<span class="d" style="background:#b3241f;margin-left:8px"></span>负向<span class="d" style="background:#8a857c;margin-left:8px"></span>中性 · 大小=P0-P3 严重度</span>
+    <span class="legend"><span class="d" style="background:#1a7a4a"></span>正向<span class="d" style="background:#b3261e;margin-left:8px"></span>负向<span class="d" style="background:#b9b2a6;margin-left:8px"></span>中性 · 大小=P0-P3 严重度</span>
   </div>
 
   <div class="stage" id="kg-host"></div>

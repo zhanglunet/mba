@@ -28,8 +28,8 @@ WDIM = {
     "W1": "媒体报道", "W2": "社交声量", "W3": "招投标采购", "W4": "监管司法",
     "W5": "资本市场", "W6": "产品口碑", "W7": "人事组织", "W8": "技术知产", "W9": "供应链生态",
 }
-DIRS = [("pos", "利好", "#1a7a4a"), ("neg", "利空", "#b3241f"),
-        ("neutral", "中性", "#8a857c"), ("mixed", "分歧", "#c98a2b")]
+DIRS = [("pos", "利好", "#1a7a4a"), ("neg", "利空", "#b3261e"),
+        ("neutral", "中性", "#b9b2a6"), ("mixed", "分歧", "#c98a2b")]
 DIR_COLOR = {k: c for k, _, c in DIRS}
 DIR_CN = {k: cn for k, cn, _ in DIRS}
 SEV_COLOR = {"P0": "#b3241f", "P1": "#c1440e", "P2": "#c98a2b", "P3": "#9a958c"}
@@ -253,7 +253,7 @@ TEMPLATE = r"""<!doctype html>
   .kpi .v.warn{color:var(--accent);}
   .panelbox{background:var(--card);border:1px solid var(--hair);border-radius:8px;padding:14px 16px;}
   .chart{width:100%;height:auto;display:block;}
-  .chart .ax{font-size:9px;fill:var(--muted);} .chart .bl{font-size:9px;fill:var(--ink);} .chart .dimlbl{font-size:9.5px;fill:var(--ink);}
+  .chart .ax{font-size:12px;fill:var(--muted);} .chart .bl{font-size:9px;fill:var(--ink);} .chart .dimlbl{font-size:12px;fill:var(--ink);}
   .empty{color:var(--muted);font-size:13px;margin:6px 0;}
   .lgs{margin:8px 0 0;font-size:11.5px;color:var(--muted);}
   .lg{margin-right:12px;white-space:nowrap;} .lg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:middle;}
