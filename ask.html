@@ -357,38 +357,157 @@ function renderEvents(events,title,subtitle,showBrand){
   card.appendChild(ul);
   return card;
 }
-function lensesOf(deck){
-  var h=deck&&deck.health;
-  return (h&&typeof h==="object")?h.lenses:null;
+/* ===== END render ===== */
+
+/* ===== BEGIN IR：scripts/genui_ir.py 的 JS 等价实现（PRD-098/T3 M1 第 2 步）=====
+   与 Python 版 genui_ir.py 逐项对应，两边行为必须一致（同问同 IR）：
+   composeIR(intent, deck) 把"意图→组件映射 + deck 切片"编译为自包含的
+   IR 文档 {ir, intent, router_spec, deck_schema, root}，renderIR(doc)
+   只认 IR 节点（按 type 分发），不再认识 deck/intent。
+   节点 type 白名单 = genui_charts.COMPONENTS 注册表 key（白名单即安全
+   边界）；props 只允许纯 JSON 数据。unknown 意图不产 IR（返回 null），
+   调用方沿用页面级 fallback。降级双保险、文案与 Python 版逐字一致：
+   binder 层（数据段级）产 missing_card 节点、渲染器层（字段级）校验
+   不过同样落 missing_card。版本常量与 Python 侧同批同步：
+   IR_VERSION / SUPPORTED_IR_MAJOR 见 genui_ir.py，ROUTER_SPEC_VERSION
+   见 ask_router.py，DECK_SCHEMA_VERSION 见 build_deck_json.py。 */
+var IR_VERSION="1.0.0";
+var SUPPORTED_IR_MAJOR=1;
+var ROUTER_SPEC_VERSION="1.0.0";
+var DECK_SCHEMA_VERSION="1.0.0";
+var IR_INTENTS=["total","compare","radar","delta","volume","sentiment","events","rivals"];
+var IR_COMPONENTS={
+  metric_card:{renderer:"renderMetricCard",props:{health:{type:"dict",required:true}}},
+  bar:{renderer:"renderBar",props:{lenses:{type:"list[dict]",required:true},
+    title:{type:"string"},delta:{type:"bool"}}},
+  radar:{renderer:"renderRadar",props:{lenses:{type:"list[dict]",required:true},
+    title:{type:"string"}}},
+  line:{renderer:"renderLine",props:{daily:{type:"list[dict]",required:true},
+    title:{type:"string"}}},
+  stacked_bar:{renderer:"renderStackedBar",props:{daily:{type:"list[dict]",required:true},
+    title:{type:"string"}}},
+  events:{renderer:"renderEvents",props:{events:{type:"list[dict]",required:true},
+    title:{type:"string"},subtitle:{type:"string"},show_brand:{type:"bool"}}},
+  missing_card:{renderer:"missingCard",props:{text:{type:"string"}}}
+};
+var IR_FALLBACK_TEXT={metric_card:"健康度数据暂缺",bar:"健康度数据暂缺",
+  radar:"健康度数据暂缺",line:"舆情数据暂缺",stacked_bar:"舆情数据暂缺",
+  events:"暂无事件数据",missing_card:"数据暂缺"};
+function isPlainObj(v){return v!==null&&typeof v==="object"&&!Array.isArray(v);}
+function irNode(type,props){return {type:type,props:props,children:[]};}
+function irMissingNode(text){return irNode("missing_card",{text:text});}
+function irEnvelope(intent,root){
+  return {ir:IR_VERSION,intent:intent,router_spec:ROUTER_SPEC_VERSION,
+    deck_schema:DECK_SCHEMA_VERSION,root:root};
 }
-function renderIntent(intent,deck){
-  if(!deck||typeof deck!=="object") return missingCard();
+function composeIR(intent,deck){
+  if(!isPlainObj(deck)) return irEnvelope(intent,irMissingNode("数据暂缺"));
+  if(IR_INTENTS.indexOf(intent)===-1) return null;
   var health=deck.health,sentiment=deck.sentiment,competitors=deck.competitors;
-  if(intent==="total") return renderMetricCard(health);
-  if(intent==="compare") return renderBar(lensesOf(deck),"维度对比",false);
-  if(intent==="radar") return renderRadar(lensesOf(deck),"维度雷达");
-  if(intent==="delta") return renderBar(lensesOf(deck),"版本变化",true);
-  if(intent==="volume"){
-    var d1=(sentiment&&typeof sentiment==="object")?sentiment.daily_volume:null;
-    return renderLine(d1,"近 7 天声量");
+  var root;
+  if(intent==="total"){
+    root=isPlainObj(health)?irNode("metric_card",{health:health})
+      :irMissingNode("健康度数据暂缺");
+  }else if(intent==="compare"||intent==="delta"||intent==="radar"){
+    var lenses=isPlainObj(health)?health.lenses:null;
+    if(!Array.isArray(lenses)) root=irMissingNode("健康度数据暂缺");
+    else if(intent==="compare")
+      root=irNode("bar",{lenses:lenses,title:"维度对比",delta:false});
+    else if(intent==="delta")
+      root=irNode("bar",{lenses:lenses,title:"版本变化",delta:true});
+    else root=irNode("radar",{lenses:lenses,title:"维度雷达"});
+  }else if(intent==="volume"||intent==="sentiment"){
+    var daily=isPlainObj(sentiment)?sentiment.daily_volume:null;
+    if(!Array.isArray(daily)) root=irMissingNode("舆情数据暂缺");
+    else if(intent==="volume")
+      root=irNode("line",{daily:daily,title:"近 7 天声量"});
+    else root=irNode("stacked_bar",{daily:daily,title:"正负面占比"});
+  }else if(intent==="events"){
+    var evs=isPlainObj(sentiment)?sentiment.top_events:null;
+    if(!Array.isArray(evs)) root=irMissingNode("暂无事件数据");
+    else root=irNode("events",{events:evs,title:"热点事件"});
+  }else{ /* rivals */
+    if(!isPlainObj(competitors)) root=irMissingNode("竞品数据暂缺");
+    else{
+      var cevs=competitors.events;
+      if(!Array.isArray(cevs)) root=irMissingNode("暂无事件数据");
+      else{
+        var wl=competitors.watch_list||[];
+        var sub=wl.length?("对标品牌："+wl.map(String).join("、")):null;
+        root=irNode("events",{events:cevs,title:"竞品动态",
+          subtitle:sub,show_brand:true});
+      }
+    }
   }
-  if(intent==="sentiment"){
-    var d2=(sentiment&&typeof sentiment==="object")?sentiment.daily_volume:null;
-    return renderStackedBar(d2,"正负面占比");
+  return irEnvelope(intent,root);
+}
+function irTypeOk(v,t){
+  if(t==="dict") return isPlainObj(v);
+  if(t.indexOf("list")===0) return Array.isArray(v);
+  if(t==="string") return typeof v==="string";
+  if(t==="bool") return typeof v==="boolean";
+  if(t==="number") return typeof v==="number"&&isFinite(v);
+  return true;
+}
+function irHas(props,k){return Object.prototype.hasOwnProperty.call(props,k);}
+function irDispatch(type,props){
+  if(type==="metric_card") return renderMetricCard(props.health);
+  if(type==="bar")
+    return renderBar(props.lenses,irHas(props,"title")?props.title:"维度对比",
+      irHas(props,"delta")?props.delta:false);
+  if(type==="radar")
+    return renderRadar(props.lenses,irHas(props,"title")?props.title:"维度雷达");
+  if(type==="line")
+    return renderLine(props.daily,irHas(props,"title")?props.title:"近 7 天声量");
+  if(type==="stacked_bar")
+    return renderStackedBar(props.daily,
+      irHas(props,"title")?props.title:"正负面占比");
+  if(type==="events")
+    return renderEvents(props.events,irHas(props,"title")?props.title:"热点事件",
+      irHas(props,"subtitle")?props.subtitle:null,
+      irHas(props,"show_brand")?props.show_brand:false);
+  if(type==="missing_card")
+    return missingCard(irHas(props,"text")?props.text:"数据暂缺");
+  return missingCard();
+}
+function renderNodeIR(node){
+  if(!isPlainObj(node)) return missingCard();
+  var spec=(typeof node.type==="string")?IR_COMPONENTS[node.type]:undefined;
+  if(!spec) return missingCard();
+  var props=isPlainObj(node.props)?node.props:{};
+  var keys=Object.keys(spec.props);
+  for(var i=0;i<keys.length;i++){
+    var pspec=spec.props[keys[i]];
+    if(pspec.required&&(!irHas(props,keys[i])||!irTypeOk(props[keys[i]],pspec.type)))
+      return missingCard(IR_FALLBACK_TEXT[node.type]||"数据暂缺");
   }
-  if(intent==="events"){
-    var ev=(sentiment&&typeof sentiment==="object")?sentiment.top_events:null;
-    return renderEvents(ev,"热点事件",null,false);
+  if(Array.isArray(node.children)){
+    /* v1 无容器组件：递归机制先行（与 Python 版一致），子节点输出不拼装 */
+    node.children.forEach(function(c){renderNodeIR(c);});
   }
-  if(intent==="rivals"){
-    if(!competitors||typeof competitors!=="object") return missingCard("竞品数据暂缺");
-    var wl=competitors.watch_list||[];
-    var sub=wl.length?("对标品牌："+wl.map(String).join("、")):null;
-    return renderEvents(competitors.events,"竞品动态",sub,true);
-  }
+  return irDispatch(node.type,props);
+}
+function renderIR(doc){
+  if(!isPlainObj(doc)) return missingCard();
+  var irv=doc.ir;
+  if(typeof irv!=="string") return missingCard();
+  var seg=irv.split(".")[0];
+  var major=/^[+-]?\d+$/.test(seg)?parseInt(seg,10):NaN;
+  if(isNaN(major)||major!==SUPPORTED_IR_MAJOR) return missingCard();
+  if(!isPlainObj(doc.root)) return missingCard();
+  return renderNodeIR(doc.root);
+}
+/* renderIntent 保留为兼容垫片（与 genui_charts.render 同口径）：
+   经 composeIR → renderIR 转调；unknown 意图 composeIR 返回 null，
+   沿用"未知意图"降级；deck 非对象时 composeIR 直接产 missing_card
+   文档（"数据暂缺"先行口径与 Python 版一致）。 */
+function renderIntent(intent,deck){
+  var doc=composeIR(intent,deck);
+  if(doc!==null) return renderIR(doc);
+  if(!isPlainObj(deck)) return missingCard();
   return missingCard("未知意图");
 }
-/* ===== END render ===== */
+/* ===== END IR ===== */
 
 /* ===== 页面接线 ===== */
 var FALLBACK_HTML =
@@ -435,7 +554,9 @@ function ask(question){
     var fb=document.createElement("div");fb.className="fallback";
     fb.innerHTML=FALLBACK_HTML;wrap.appendChild(fb);
   }else{
-    wrap.appendChild(renderIntent(intent,deck));
+    /* M1 第 2 步：页面渲染路径切换到 IR（route → composeIR → renderIR）；
+       unknown 已在上方分支处理，composeIR 对已知意图恒产 IR 文档。 */
+    wrap.appendChild(renderIR(composeIR(intent,deck)));
   }
   var hist=document.getElementById("history");
   hist.insertBefore(wrap,hist.firstChild);
