@@ -27,7 +27,7 @@ html, body { margin: 0; padding: 0; }
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: ui-serif, "Noto Serif SC", "Songti SC", Georgia, serif;
+  font-family: ui-serif, "Noto Serif SC", "Songti SC", "Noto Serif", Georgia, serif;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +38,7 @@ header {
   padding-bottom: 16px;
   margin-bottom: 24px;
 }
-.mark { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
+.mark { font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; font-weight: 800; letter-spacing: 0.02em; font-size: 20px; }
 .mark .dot { color: var(--accent); }
 .deck-title { font-size: clamp(26px, 5vw, 40px); line-height: 1.15; font-weight: 800; margin: 8px 0 4px; }
 .deck-sub { font-size: 14px; color: var(--muted); font-style: italic; margin: 0; }
@@ -52,12 +52,12 @@ header {
   background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px;
   padding: 10px 14px; font-size: 13px;
 }
-.status-item .k { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.status-item .k { font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 .status-item .v { font-size: 14px; margin-top: 2px; }
 
 section.block { margin-bottom: 44px; }
 section.block h2 { font-size: 22px; font-weight: 800; margin: 0 0 4px; padding-bottom: 6px; border-bottom: 1.5px solid #ddd; }
-.block-meta { font-size: 13px; color: var(--muted); margin: 0 0 16px; font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.block-meta { font-size: 13px; color: var(--muted); margin: 0 0 16px; font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; }
 
 .stale-warn {
   background: var(--warn-bg); border: 1.5px solid var(--warn); color: #7c4a03;
@@ -70,11 +70,11 @@ section.block h2 { font-size: 22px; font-weight: 800; margin: 0 0 4px; padding-b
 
 /* 健康度 */
 .score-hero { display: flex; align-items: flex-end; gap: 32px; padding: 24px 28px; background: #fff; border: 2px solid var(--rule); border-radius: 6px; margin-bottom: 24px; flex-wrap: wrap; }
-.score-big { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 64px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
-.score-label { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
-.score-sub { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 18px; font-weight: 700; }
+.score-big { font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; font-size: 64px; font-weight: 900; line-height: 1; color: var(--accent); letter-spacing: -0.03em; }
+.score-label { font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.score-sub { font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; font-size: 18px; font-weight: 700; }
 .lens-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 16px; }
-.lens-table th { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
+.lens-table th { font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 8px 6px; border-bottom: 2px solid var(--rule); }
 .lens-table td { padding: 8px 6px; border-bottom: 1px solid #e8e4dc; }
 .delta-up { color: var(--green); font-weight: 700; }
 .delta-down { color: #b3261e; font-weight: 700; }
@@ -84,7 +84,7 @@ section.block h2 { font-size: 22px; font-weight: 800; margin: 0 0 4px; padding-b
 .chart-box { background: #fff; border: 1.5px solid #e0ddd8; border-radius: 6px; padding: 20px; }
 .chart-wrap { position: relative; height: 300px; width: 100%; }
 .chart-wrap canvas { max-width: 100%; }
-.chart-title { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.chart-title { font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
 .chart-wrap.single { max-width: 560px; margin: 0 auto; }
 
 /* 事件列表 */
@@ -93,17 +93,17 @@ section.block h2 { font-size: 22px; font-weight: 800; margin: 0 0 4px; padding-b
 .event .ev-title a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); }
 .event .ev-title a:hover { color: var(--accent); border-color: var(--accent); }
 .event .ev-summary { font-size: 14px; color: #333; margin: 0 0 6px; }
-.event .ev-meta { font-size: 12px; color: var(--muted); font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; }
+.event .ev-meta { font-size: 12px; color: var(--muted); font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; }
 .badge { display: inline-block; border-radius: 4px; padding: 2px 8px; font-size: 12px; color: #fff; margin-right: 8px; }
 .badge-positive { background: var(--green); }
 .badge-negative { background: #b3261e; }
 .badge-neutral { background: #b9b2a6; }
 .watch-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; padding: 0; list-style: none; }
-.watch-list li { font-family: ui-sans-serif, "Inter", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 999px; padding: 4px 14px; }
+.watch-list li { font-family: ui-sans-serif, "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif; font-size: 13px; background: #fff; border: 1.5px solid #e0ddd8; border-radius: 999px; padding: 4px 14px; }
 
 .footer { font-size: 12px; color: var(--muted); margin-top: 40px; border-top: 1px solid #ddd; padding-top: 12px; }
 .load-error { background: #fdecea; border: 1.5px solid #b3261e; color: #7a1a12; border-radius: 6px; padding: 16px 20px; font-size: 14px; margin-bottom: 24px; }
-.load-error code { font-family: monospace; background: #fff; padding: 1px 6px; border-radius: 3px; }
+.load-error code { font-family: ui-monospace, "JetBrains Mono", Menlo, monospace; background: #fff; padding: 1px 6px; border-radius: 3px; }
 
 @media (max-width: 640px) {
   .wrap { padding: 28px 16px 64px; }
@@ -217,7 +217,7 @@ function renderHealth(health) {
   body.innerHTML = html;
 
   if (lenses.length && window.Chart) {
-    var palette = ["#c1440e", "#1a4a7a", "#1a7a4a", "#7c3aed", "#d97706", "#0e7c86", "#a31e5b"];
+    var palette = ["#c1440e", "#1a4a7a", "#1a7a4a", "#7c3aed", "#d97706"];
     new Chart(document.getElementById("radarChart").getContext("2d"), {
       type: "radar",
       data: {
@@ -304,12 +304,17 @@ function renderSentiment(sentiment) {
     var pos = 0, neg = 0, neu = 0;
     daily.forEach(function (d) { pos += d.positive || 0; neg += d.negative || 0; neu += d.neutral || 0; });
     new Chart(document.getElementById("sentChart").getContext("2d"), {
-      type: "doughnut",
+      type: "bar",
       data: {
-        labels: ["正面", "中性", "负面"],
-        datasets: [{ data: [pos, neu, neg], backgroundColor: ["#1a7a4a", "#b9b2a6", "#b3261e"] }]
+        labels: [""],
+        datasets: [
+          { label: "正面", data: [pos], backgroundColor: "#1a7a4a" },
+          { label: "中性", data: [neu], backgroundColor: "#b9b2a6" },
+          { label: "负面", data: [neg], backgroundColor: "#b3261e" }
+        ]
       },
-      options: { responsive: true, maintainAspectRatio: false }
+      options: { responsive: true, maintainAspectRatio: false, indexAxis: "y",
+                 scales: { x: { stacked: true, min: 0, max: pos + neu + neg }, y: { stacked: true } } }
     });
   }
 }
