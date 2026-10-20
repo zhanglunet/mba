@@ -46,6 +46,130 @@ POSITIVE = "#1a7a4a"
 NEGATIVE = "#b3261e"
 NEUTRAL = "#b9b2a6"
 
+# ---------------------------------------------------------------- 组件目录
+# PRD-098/T3 第一批（C2 组件定义契约）：7 个渲染单元的声明式元数据。
+# 只做登记（name/description/props 字段表），不参与渲染逻辑；
+# 供将来接入 LLM 生成 UI 时作为组件签名来源（对应 T1 拆解的
+# defineComponent 概念），字段口径与各渲染器 docstring 及实际取值一致。
+COMPONENTS = {
+    "metric_card": {
+        "renderer": "render_metric_card",
+        "intents": ("total",),
+        "description": "大数字卡：总分/满分 + 归一化分 + 版本·日期。",
+        "props": {
+            "health": {
+                "type": "dict", "required": True,
+                "fields": {
+                    "score_total": "number，必填；为 None 时降级为暂缺卡",
+                    "score_max": "number，可选，缺省 250",
+                    "score_normalized": "number，可选；归一化分（/10）",
+                    "report_version": "string，可选；报告版本号",
+                    "report_date": "string，可选；报告日期",
+                },
+            },
+        },
+    },
+    "bar": {
+        "renderer": "render_bar",
+        "intents": ("compare", "delta"),
+        "description": "横向条形图：compare 按分值排序展示 5 lens；"
+                       "delta 复用本渲染器，按 delta 正负着色。",
+        "props": {
+            "lenses": {
+                "type": "list[dict]", "required": True,
+                "fields": {
+                    "key": "string，维度英文 key",
+                    "name_cn": "string，维度中文名（缺省回退 key）",
+                    "mean": "number，delta=False 时必填；维度均值",
+                    "delta": "string，delta=True 时使用；"
+                             "取值 ↔ / ↑n / ↓n（parse_delta 解析）",
+                },
+            },
+            "title": "string，可选，缺省 “维度对比”",
+            "delta": "bool，可选，缺省 False；True 时按 delta 取值并着色",
+        },
+    },
+    "radar": {
+        "renderer": "render_radar",
+        "intents": ("radar",),
+        "description": "5 轴雷达图：各维度均值整体画像。",
+        "props": {
+            "lenses": {
+                "type": "list[dict]", "required": True,
+                "fields": {
+                    "key": "string，维度英文 key",
+                    "name_cn": "string，维度中文名（缺省回退 key）",
+                    "mean": "number，必填；维度均值（0-10）",
+                },
+            },
+            "title": "string，可选，缺省 “维度雷达”",
+        },
+    },
+    "line": {
+        "renderer": "render_line",
+        "intents": ("volume",),
+        "description": "折线图：近 7 天每日声量走势。",
+        "props": {
+            "daily": {
+                "type": "list[dict]", "required": True,
+                "fields": {
+                    "date": "string，日期",
+                    "count": "number，当日声量计数",
+                },
+            },
+            "title": "string，可选，缺省 “近 7 天声量”",
+        },
+    },
+    "doughnut": {
+        "renderer": "render_doughnut",
+        "intents": ("sentiment",),
+        "description": "环形图：近 7 天正面/中性/负面声量求和占比。",
+        "props": {
+            "daily": {
+                "type": "list[dict]", "required": True,
+                "fields": {
+                    "positive": "number，当日正面声量",
+                    "neutral": "number，当日中性声量",
+                    "negative": "number，当日负面声量",
+                },
+            },
+            "title": "string，可选，缺省 “正负面占比”",
+        },
+    },
+    "events": {
+        "renderer": "render_events",
+        "intents": ("events", "rivals"),
+        "description": "事件列表：标题（可链接）+ 情感徽章 + 时间/摘要；"
+                       "rivals 复用本渲染器并显示品牌名。",
+        "props": {
+            "events": {
+                "type": "list[dict]", "required": True,
+                "fields": {
+                    "title": "string，事件标题（缺省 “（无标题）”）",
+                    "url": "string，可选；仅 http(s) 渲染为链接，其余纯文本",
+                    "brand": "string，可选；show_brand=True 时显示",
+                    "sentiment": "string，可选；positive/negative/neutral，"
+                                 "命中才显示情感徽章",
+                    "at": "string，可选；事件时间",
+                    "summary": "string，可选；事件摘要",
+                },
+            },
+            "title": "string，可选，缺省 “热点事件”",
+            "subtitle": "string，可选，缺省 None（不显示副标题）",
+            "show_brand": "bool，可选，缺省 False",
+        },
+    },
+    "missing_card": {
+        "renderer": "missing_card",
+        "intents": (),
+        "description": "null 降级卡：数据缺失/意图未知时渲染的灰色暂缺卡，"
+                       "所有渲染器的降级路径。",
+        "props": {
+            "text": "string，可选，缺省 “数据暂缺”",
+        },
+    },
+}
+
 _uid_counter = [0]
 
 
