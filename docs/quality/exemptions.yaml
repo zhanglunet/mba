@@ -1,0 +1,16 @@
+# PRD-151 评委工程质量门豁免台账（T1 §五，docs/plans/2026-10-23-judge-quality-gate.md）
+#
+# 规则：
+#   - 只允许 P1 条目（B-1..B-4 / C-1..C-3）；P0（A-1..A-6）不设豁免，退步即回归。
+#   - 每位评委同时有效豁免 <=3 条；expires 过期自动失效。
+#   - 改本文件的 PR 必须人工 review；报告中豁免显式计入 exempt_count，不静默。
+#
+# 登记模板（复制下方五行为一段，去掉行首「# 」注释再填；占位一律用尖括号形态，
+# 勿写真实主机名 / IP / 账号 / 密钥）：
+#   - slug: <judge-slug>
+#     item_id: <P1 条目 ID，如 B-2>
+#     reason: <一句话原因，必填>
+#     expires: <YYYY-MM-DD，必填>
+#     issue: <追踪链接，如 zhanglunet/trend#755>
+#
+# 当前登记：0 条（本台账由 PRD-151/T5 建立，trend #759；此前脚本按文件不存在处理）。
