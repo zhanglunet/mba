@@ -196,8 +196,8 @@ def test_end_to_end_golden_positive(tmp_path, real_audit_md):
     out = r.stdout
     assert "## 🚦 评委工程质量门禁状态（PRD-151/T3）" in out
     assert "不设合并门禁" in out
-    # 表格行由契约 JSONL 渲染：金正样例 P0 六条 + C-3 过，P1 其余 6 条 warn
-    row = re.search(r"\| `satyanadella` \| PASS \| 7/13 \| 6 \| 0 \|", out)
+    # 表格行由契约 JSONL 渲染：T4 起金正样例 13/13 全绿（B/C 机检化后）
+    row = re.search(r"\| `satyanadella` \| PASS \| 13/13 \| 0 \| 0 \|", out)
     assert row, out
     # 联动：deepseek 画像偏紧的朱啸虎命中入库归档（含过门日期），傅盛本次运行
     assert "朱啸虎" in out and "2026-10-18" in out
