@@ -24,6 +24,7 @@ MBA = 把品牌影响力拆成**可打分 / 可比较 / 可复盘**的事。一�
 - **`docs/10-deepening-perspectives.md`** — perspective 深化 SOP(seed→full),含 43 套 tier 追踪表
 - `docs/03-architecture.md` / `docs/04-pipeline.md` — 架构与 5 阶段流程
 - `docs/12-evolution-tracking.md` · `docs/13-mcp-quickstart.md` · `docs/wuying-usage.md`
+- **`docs/31-positioning-vision.md`** — 定位 / 目标 / 愿景的可回看汇总(互补 README「定位与愿景」与 `docs/01-prd`,不替代)
 
 ---
 
