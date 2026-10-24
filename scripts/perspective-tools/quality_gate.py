@@ -34,6 +34,12 @@ P0 六条机检 + P1 七条）。设计依据：docs/plans/2026-10-23-judge-qual
 附录机器可读 JSON 行（T1 §四.2 接口契约，T3 元评审只读不解释）。报告不含时间戳 /
 耗时 / 绝对路径，保证同仓库状态下逐字节可复现。
 
+T3 只读接口（PRD-151/T3，trend #757）：`--json-out FILE` 把同一份契约 JSON 行追加
+写入 FILE（JSONL，一评委一行），供元评审侧（scripts/ci_gate_status.py）只读消费——
+消费方只读不解释、不改门禁判定。追加语义：多评委逐次 `--judge` 累积到同一文件，
+同一评委多行时以最后一行为准；FAIL 结论同样写（报告已产出，写入与退出码无关）。
+--selftest 不支持 --json-out（回归验收走 stdout，无落盘产物）。
+
 T2 只报告不阻断（--judge/--sample 以退出码给结论，不接 CI 门）；P1 转 hard gate
 另立议题。产物不入库（T1 §四.5：报告走 stdout / PR summary）。
 
@@ -42,6 +48,8 @@ T2 只报告不阻断（--judge/--sample 以退出码给结论，不接 CI 门�
   python3 scripts/perspective-tools/quality_gate.py --judge tests/quality/fixtures/fake-judge
   python3 scripts/perspective-tools/quality_gate.py --sample 0
   python3 scripts/perspective-tools/quality_gate.py --selftest
+  python3 scripts/perspective-tools/quality_gate.py --judge satyanadella \
+      --json-out /tmp/gate-results.jsonl        # T3：契约 JSON 行落盘（元评审只读消费）
 
 退出码：0 = 报告产出且结论 PASS；1 = 结论 FAIL（任一 P0 fail）；2 = 用法/IO 错误。
 """
@@ -217,6 +225,22 @@ def load_exemptions() -> dict[str, list[str]]:
         elif m_item and cur:
             out.setdefault(cur, []).append(m_item.group(1))
     return out
+
+
+def append_json_line(path: str, payload: dict) -> bool:
+    """T3 只读接口（T1 §四.2）：契约 JSON 行追加写入 path（JSONL，一评委一行）。
+
+    供元评审侧（scripts/ci_gate_status.py）只读消费：消费方去重规则为同一评委
+    取最后一行。写失败（IO 错误）返回 False，由调用方按用法/IO 错误退出 2。
+    """
+    try:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(payload, ensure_ascii=False) + "\n")
+        return True
+    except OSError as e:
+        print("quality_gate.py: --json-out 写入失败 %s：%s" % (path, e),
+              file=sys.stderr)
+        return False
 
 
 # ── P0 机检（A 组：直接调用仓库既有命令）──────────────────────────────────────
@@ -462,7 +486,7 @@ def judge_report(judge_arg: str, cache: dict | None = None) -> tuple[str, dict]:
 
 
 # ── CLI 子命令 ────────────────────────────────────────────────────────────────
-def cmd_judge(judge_arg: str) -> int:
+def cmd_judge(judge_arg: str, json_out: str | None = None) -> int:
     try:
         report, summary = judge_report(judge_arg)
     except JudgeNotFound:
@@ -470,10 +494,12 @@ def cmd_judge(judge_arg: str) -> int:
               % judge_arg, file=sys.stderr)
         return 2
     print(report)
+    if json_out is not None and not append_json_line(json_out, summary["payload"]):
+        return 2
     return 0 if summary["verdict"] == "PASS" else 1
 
 
-def cmd_sample(round_no: int) -> int:
+def cmd_sample(round_no: int, json_out: str | None = None) -> int:
     slugs = list_slugs()
     if not slugs:
         print("quality_gate.py: perspectives/ 下没有 *-perspective/", file=sys.stderr)
@@ -491,6 +517,9 @@ def cmd_sample(round_no: int) -> int:
         print("═" * 64)
         if summary["verdict"] != "PASS":
             worst = 1
+        if json_out is not None and not append_json_line(json_out,
+                                                         summary["payload"]):
+            return 2
     return worst
 
 
@@ -556,19 +585,25 @@ def main(argv: list[str]) -> int:
                     help="确定性抽 5 套（字典序 + 轮次偏移取模）")
     ap.add_argument("--selftest", action="store_true",
                     help="金样例回归 + 10 次 sha256 一致性验收")
+    ap.add_argument("--json-out", metavar="FILE",
+                    help="契约 JSON 行追加写入 FILE（JSONL，T1 §四.2；T3 元评审只读消费）")
     args = ap.parse_args(argv)
 
     modes = [bool(args.judge), args.sample is not None, args.selftest]
     if sum(modes) != 1:
         print("quality_gate.py: --judge / --sample / --selftest 三选一", file=sys.stderr)
         return 2
+    if args.json_out is not None and args.selftest:
+        print("quality_gate.py: --selftest 不支持 --json-out（回归验收走 stdout）",
+              file=sys.stderr)
+        return 2
     if args.judge:
-        return cmd_judge(args.judge)
+        return cmd_judge(args.judge, json_out=args.json_out)
     if args.sample is not None:
         if args.sample < 0:
             print("quality_gate.py: --sample 轮次须 ≥0", file=sys.stderr)
             return 2
-        return cmd_sample(args.sample)
+        return cmd_sample(args.sample, json_out=args.json_out)
     return cmd_selftest()
 
 
