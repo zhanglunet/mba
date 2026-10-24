@@ -381,6 +381,114 @@ def check_c3(skill_dir: Path) -> tuple[str, str]:
     return "pass", "正则清单初版 0 命中（扫 %d 个文件：SKILL.md + references/research/*.md）" % scanned
 
 
+# ── T4（trend #758）：B-1..B-4 / C-1 / C-2 机检（T1 §二 B/C 表；warn-only 不变）──
+
+def check_b1(skill_dir: Path) -> tuple[str, str]:
+    research = skill_dir / "references" / "research"
+    if not research.is_dir():
+        return "warn", "references/research/ 目录不存在（六路文件无从核对）"
+    missing, empty = [], []
+    for i in range(1, 7):
+        prefix = "%02d-" % i
+        matches = [n for n in research.iterdir() if n.name.startswith(prefix)]
+        if not matches:
+            missing.append(prefix + "*.md")
+        elif all(n.stat().st_size == 0 for n in matches):
+            empty.append(matches[0].name)
+    if missing:
+        return "warn", "六路缺档：%s" % "、".join(missing)
+    if empty:
+        return "warn", "六路空文件：%s" % "、".join(empty)
+    return "pass", "01-06 六路齐全且非空"
+
+
+def check_b2(skill_dir: Path) -> tuple[str, str]:
+    quotes = skill_dir / "references" / "research" / "quotes.md"
+    if not quotes.is_file():
+        return "warn", "quotes.md 不存在"
+    rows = [
+        ln for ln in quotes.read_text(encoding="utf-8").splitlines()
+        if ln.startswith("|") and not set(ln.replace("|", "").strip()) <= set("-—: ")
+        and not ln.lower().startswith("| function")
+    ]
+    rows = [ln for ln in rows if "short fragment" not in ln.lower()]
+    if not rows:
+        return "warn", "quotes.md 无数据行可解析"
+    anchored = sum(1 for ln in rows if re.search(r"https?://", ln))
+    rate = anchored / len(rows)
+    if rate >= 0.9:
+        return "pass", "锚定率 %d/%d（%.0f%% ≥ 90%%）" % (anchored, len(rows), rate * 100)
+    return "warn", "锚定率 %d/%d（%.0f%% < 90%%）" % (anchored, len(rows), rate * 100)
+
+
+def check_b3(slug: str, skill_dir: Path) -> tuple[str, str]:
+    files = [skill_dir / "SKILL.md"] + sorted(
+        (skill_dir / "references" / "research").glob("*.md"))
+    pattern = re.compile(r"用\s*%s\s*视角" % re.escape(slug), re.IGNORECASE)
+    for f in files:
+        if f.is_file() and pattern.search(f.read_text(encoding="utf-8")):
+            return "pass", "可复制调用示例在场（%s）" % to_repo_rel(f)
+    return "warn", "未找到「用 %s 视角…」整行调用示例（SKILL.md / references）" % slug
+
+
+def check_b4(skill_dir: Path) -> tuple[str, str]:
+    files = [skill_dir / "SKILL.md"] + sorted(
+        (skill_dir / "references" / "research").glob("*.md"))
+    pattern = re.compile(r"cutoff|研究截止|截止日期|截稿", re.IGNORECASE)
+    for f in files:
+        if f.is_file() and pattern.search(f.read_text(encoding="utf-8")):
+            return "pass", "Boundary 研究截止标注在场（%s）" % to_repo_rel(f)
+    return "warn", "未找到 cutoff / 截止 / 截稿 标注"
+
+
+def _frontmatter_description(text: str) -> str:
+    if not text.startswith("---"):
+        return ""
+    lines = text.splitlines()
+    desc, capturing = [], False
+    for ln in lines[1:]:
+        if ln.startswith("---"):
+            break
+        if ln.startswith("description:"):
+            capturing = True
+            inline = ln[len("description:"):].strip()
+            if inline:
+                desc.append(inline)
+            continue
+        if capturing:
+            if ln and not ln[0].isspace():
+                capturing = False
+            else:
+                desc.append(ln.strip())
+    return "\n".join(desc)
+
+
+def check_c1(skill_dir: Path) -> tuple[str, str]:
+    skill = skill_dir / "SKILL.md"
+    if not skill.is_file():
+        return "warn", "SKILL.md 不存在"
+    desc = _frontmatter_description(skill.read_text(encoding="utf-8"))
+    if not desc.strip():
+        return "warn", "frontmatter description 为空"
+    if re.search(r"用[^\n，。]{1,20}视角", desc) or "explicit triggers" in desc.lower():
+        return "pass", "description 非空且含显式触发短语（%d 字符）" % len(desc)
+    return "warn", "description 非空但未找到「用 X 视角」类触发短语"
+
+
+def check_c2() -> tuple[str, str]:
+    doc_path = REPO_ROOT / "docs" / "10-deepening-perspectives.md"
+    if not doc_path.is_file():
+        return "warn", "docs/10-deepening-perspectives.md 不存在"
+    doc = doc_path.read_text(encoding="utf-8")
+    slugs = sorted(
+        p.name.removesuffix("-perspective")
+        for p in (REPO_ROOT / "perspectives").glob("*-perspective") if p.is_dir())
+    missing = [s for s in slugs if s not in doc]
+    if missing:
+        return "warn", "tier 追踪表缺 %d 个评委：%s" % (len(missing), "、".join(missing[:5]))
+    return "pass", "tier 追踪表覆盖 perspectives/ 全部 %d 个评委" % len(slugs)
+
+
 # ── 报告 ──────────────────────────────────────────────────────────────────────
 SUGGEST_P0 = {
     "A-1": "补齐 structure-spec 要求的 5 个必需 H2 区",
@@ -414,8 +522,16 @@ def judge_report(judge_arg: str, cache: dict | None = None) -> tuple[str, dict]:
     results["A-5"] = check_a5(slug, cache)
     results["A-6"] = check_a6(slug, cache)
     results["C-3"] = check_c3(skill_dir)
-    for iid in MANUAL_ITEMS:
-        results[iid] = ("warn", "人工/待查（T2 不机检）")
+    # T4（trend #758）：B-1..B-4 / C-1 / C-2 由「人工/待查」转机检（warn-only 不变）
+    results["B-1"] = check_b1(skill_dir)
+    results["B-2"] = check_b2(skill_dir)
+    results["B-3"] = check_b3(slug, skill_dir)
+    results["B-4"] = check_b4(skill_dir)
+    results["C-1"] = check_c1(skill_dir)
+    if not is_fixture:
+        results["C-2"] = check_c2()
+    else:
+        results["C-2"] = ("warn", "fixture 不适用（tier 追踪表为仓库级条目）")
 
     # 豁免覆盖（仅 P1；T1 §五.2 P0 不设豁免；已机检 pass 的条目无需豁免）
     exempt_ids: list[str] = []

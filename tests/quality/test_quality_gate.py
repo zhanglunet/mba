@@ -42,8 +42,8 @@ def test_golden_positive_satyanadella():
     for iid in ("A-1", "A-2", "A-3", "A-4", "A-5", "A-6"):
         assert items[iid] == "pass", (iid, items[iid])
     assert items["C-3"] == "pass"
-    # P1 其余条目 T2 输出人工/待查（warn），不计 fail —— 结论仍 PASS。
-    assert p["warn_count"] == 6 and p["exempt_count"] == 0
+    # T4（trend #758）：B-1..B-4/C-1/C-2 转机检，金正样例 13/13 全绿（范例验收线）。
+    assert p["pass_count"] == 13 and p["warn_count"] == 0 and p["exempt_count"] == 0
 
 
 def test_golden_negative_fixture():
