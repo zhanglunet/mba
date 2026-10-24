@@ -25,6 +25,8 @@ npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5
 
 **愿景**：让个人和小团队拥有"品牌雷达"。每天早上打开指挥舱——健康分多少、网上在聊什么、竞品干了什么，一目了然；分数掉了，飞书第一时间告诉你。最终，把品牌影响力变成像看财报一样日常的东西：可量化、可比较、可复盘。
 
+可回看汇总:[`docs/31-positioning-vision.md`](docs/31-positioning-vision.md)(定位 / 目标 / 愿景;与上文及 [`docs/01-prd.md`](docs/01-prd.md) 互补,不替代)。
+
 ---
 
 ## 团队 / Team

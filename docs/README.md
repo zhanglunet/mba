@@ -4,7 +4,7 @@
 
 ## 阅读顺序
 
-新人推荐顺序:**01 → 02 → 03 → 04 → 06 → 05**(产品 → 技术 → 用)
+新人推荐顺序:**01 → 02 → 03 → 04 → 06 → 05**(产品 → 技术 → 用)。定位 / 目标 / 愿景的可回看汇总见 [31-positioning-vision.md](31-positioning-vision.md)(不替代 README 与 01)。
 
 | 编号 | 文档 | 受众 | 一句话 |
 |---|---|---|---|
@@ -39,6 +39,7 @@
 | 28 | [28-investor-dimension.md](28-investor-dimension.md) | 产品 / 贡献者 | **投资人维度**:`investors/<slug>.yaml` 按**人**建索引(founders 是按品牌,投资人不隶属被审品牌、放不进去);schema 与 founders 同构 + `firm`/`portfolio`,履历与投资案例强制带 evidence、relation 强制「分析:」;「创始人晚餐」放宽为**创始人 × 投资人**可配对(渲染侧投资人互链走评委视角,避免死链);`validate_investors.py` 12 组自测 + `check_consistency` 第 15 格 |
 | 29 | [29-cloudflare-named-tunnel.md](29-cloudflare-named-tunnel.md) | 用户 / 运维 | **命名隧道 + RSSHub 加固操作手册**(免费社媒线正式接线):先上锁(`ACCESS_KEY`,以 curl 返回码为准而非手册)→ Zero Trust 控制台建命名隧道(**避开要 sudo 的 `service install`**)→ macOS 免 sudo LaunchAgent 常驻 → **公网侧三段验收**(本机通 ≠ 云上通)→ 密钥走 GitHub secrets + meta 只存 `${RSSHUB_KEY}` 占位符(公开仓库不能存明文)→ 排错表 / 安全边界 / CLI 附录 |
 | 30 | [30-online-operation.md](30-online-operation.md) | 所有人 | **MBA 完全线上运行(零本机依赖)**:云端跑什么(时刻表:每日 10:17 舆情发现自动入库 · 09:00 日报盘点 · PR 门禁 · Pages 部署)、哪些事**不在**云上(评委重审由人发起 = 设计如此;一手取数是开发动作)、**社媒线为什么暂缓**(它要一台 24×7 醒着的机器,与零本机依赖冲突——附代价/收益对照表)、想开时的两步接线、什么时候值得开。网页版 mbabrand.com/runtime.html |
+| 31 | [31-positioning-vision.md](31-positioning-vision.md) | 所有人 | **定位 · 目标 · 愿景(可回看汇总)**:把 README「定位与愿景」与 01-prd 的产品愿景 / 目标用户 / 成功指标收成一篇短文;汇总不替代门面与 PRD,并标明推断与原文 |
 | - | [testing.md](testing.md) | 贡献者 / 新人 | **测试说明**(PRD-022/T5):测什么 / 不测什么(为什么不测真实打分) / 怎么跑(3 条命令一次跑通 72 个 panel 测试) / CI 规则(panel-validation.yml 触发时机、meta-review job 只报告不设门禁) |
 | - | [wuying-usage.md](wuying-usage.md) | 用户 / 运维 | 阿里云无影 AgentBay 云浏览器 leg 的实操参考 |
 | - | [mcp-server-design.md](mcp-server-design.md) | 未来贡献者 | MBA → MCP server 的设计与开发手册(原始设计草案) |
