@@ -8,6 +8,7 @@ single maintained copy here and run commands from the repo root, for example:
 ```bash
 python3 scripts/perspective-tools/merge_research.py jobs-perspective
 python3 scripts/perspective-tools/quality_check.py jobs-perspective/SKILL.md
+python3 scripts/perspective-tools/quality_gate.py --judge jobs   # PRD-151 评委质量门（13 条一页视图）
 python3 scripts/perspective-tools/srt_to_transcript.py input.srt
 scripts/perspective-tools/download_subtitles.sh <YouTube_URL> out/subtitles
 ```
