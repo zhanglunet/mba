@@ -183,10 +183,10 @@ This persona exists purely to exercise the validator path end to end with enough
     expect(out.registered).toBe(false); // validate_only
   });
 
-  it('list_panels returns default + 10 industry panels with rosters', async () => {
+  it('list_panels returns default + 10 industry panels + consumer-mixed with rosters', async () => {
     const result = await client.callTool({ name: 'list_panels', arguments: {} });
     const out = parse(result as any);
-    expect(out.panels).toHaveLength(11); // default + 10
+    expect(out.panels).toHaveLength(12); // default + 10 industry + consumer-mixed (PRD-178)
     const names = out.panels.map((p: any) => p.name);
     expect(names).toContain('default');
     expect(names).toContain('luxury-en');

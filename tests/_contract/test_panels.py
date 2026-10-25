@@ -18,6 +18,7 @@ EXPECTED_PANELS = {
     "ai-app-cn",
     "auto",
     "consumer-cn",
+    "consumer-mixed",
     "cross-border",
     "default",
     "edu-cn",

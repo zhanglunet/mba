@@ -154,7 +154,7 @@ def cmd_validate():
     if hard:
         print(f"❌ self-conflict validate 失败({hard} 类硬错误)。")
         return 1
-    print(f"✅ self-conflict validate 通过(43 套 panel-drop 完整 · 关联表 {len(jmap)} 评委)。")
+    print(f"✅ self-conflict validate 通过({len(persps)} 套 panel-drop 完整 · 关联表 {len(jmap)} 评委)。")
     return 0
 
 # ── query ───────────────────────────────────────────────────────────────────

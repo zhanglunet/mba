@@ -44,6 +44,7 @@ judges:
 | `language` | enum: `zh` / `en` | – | 该评委在 `reviews/<slug>.md` 里用哪种语言落笔。缺省 `zh` |
 | `portrait` | string | – | 头像文件名(相对 `${IMAGES_DIR}`)。缺省走 emoji / monogram 兜底 |
 | `weight` | float | – | Phase 5 算 mean 的权重。缺省 `1.0`。雷达图 / 异议热力图按 raw score 画,不被权重污染 |
+| `role` | enum: `expert` / `consumer` | – | 评委角色(PRD-178/T1 §五.1)。缺省 `expert`(走 5 镜头,一字不动);`consumer` = 模拟消费者评委,走 C1–C5 题组(judge-prompt-template STEP 3/5 按 role 分支),结论不进专家 Score Matrix、与专家分数不换算不平均。既有 panel 不写此字段 = 全专家,零改动 |
 
 > `slug` 一定要跟 perspective skill 的目录名前缀严格对齐:`fusheng-perspective/` ⇒
 > slug 写 `fusheng`,**不要**写 `fusheng-perspective`、`Fusheng`、`fu-sheng`。

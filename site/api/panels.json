@@ -1,5 +1,5 @@
 {
-  "count": 10,
+  "count": 11,
   "industries": {
     "auto": "auto",
     "ev": "auto",
@@ -41,6 +41,14 @@
       "judges_count": 6,
       "description": "中文消费品 / 快消 panel:媒介杠杆派 + IP 化派 + 反共识表达 + 跨境产品力 + 渠道极致。给消费品牌、零售、IP 化餐饮、跨境消费品做 影响力审计。",
       "api_url": "/api/panels/consumer-cn.json"
+    },
+    {
+      "slug": "consumer-mixed",
+      "display_name": "Consumer Mixed Panel (simulated)",
+      "status": "production",
+      "judges_count": 3,
+      "description": "模拟消费者视角评委组（合成人设，非真实市场调研）：直觉快判 + 研究验证 + 怀疑 求证三种决策风格互补，覆盖第一印象 / 购买意愿 / 价格直觉 / 信任犹豫 / 表达欲 （C1–C5 题组）。与专家 panel 并排互补、分开展示，不换算、不平均。",
+      "api_url": "/api/panels/consumer-mixed.json"
     },
     {
       "slug": "cross-border",

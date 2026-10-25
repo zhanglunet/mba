@@ -12,7 +12,7 @@ MCP server 已发布到 npm,一行接入(无需 clone):
 npx -y mba-mcp-server@latest      # 或写进 claude_desktop_config.json,见 §5.1
 ```
 
-`/mba` 文件夹下的核心 skill 名为 **Metric Brand Auditor**(MBA)—— 一条由 Lead 编排、子 agent 并行执行、人物评委 panel 独立打分的品牌影响力审计流水线。默认 panel 是 5 位评委,另有 9 套行业 panel 可按需替换 / 扩展(共 **10 套内置 panel、43 位评委,全部可运行**)。整个仓库就是这条流水线的源代码 + 角色资料 + 历史报告。
+`/mba` 文件夹下的核心 skill 名为 **Metric Brand Auditor**(MBA)—— 一条由 Lead 编排、子 agent 并行执行、人物评委 panel 独立打分的品牌影响力审计流水线。默认 panel 是 5 位评委,另有 9 套行业 panel 可按需替换 / 扩展(共 **11 套内置 panel、46 位评委(43 位专家 + 3 位模拟消费者人设),全部可运行**)。整个仓库就是这条流水线的源代码 + 角色资料 + 历史报告。
 
 > **v0.6.1** —— 两种用法:① Claude Code **skill**(`/mba <brand>`);② 独立 **MCP server**([`mba-mcp-server`](https://www.npmjs.com/package/mba-mcp-server),已上 npm,16 工具含舆情监控),可接进 Claude Desktop / Cursor,支持**品牌订阅 → 舆情/定时/事件触发 → 自动重审 → delta 报告 → webhook/email 通知**的演化闭环。**本版**:24 品牌;**全部触发品牌 EVOLUTION 重审**(15 家按 watch 事件流 delta 重审、触发器全清零、克制到底)+ **首页每日自更新**(每日舆情 PR 自动 squash 合并);舆情自动化闭环——每日发现候选 → LLM 多 provider 预分类 → 自动折入 `events.yaml` 开 PR → 人工只审 diff(AI 判类不改分、合并=人工闸门)。见 [§5.1](#51-mcp-server--从任何-mcp-agent-调-mba) 与 [MCP 快速上手](docs/13-mcp-quickstart.md)。
 > 新增:[全维度知识星图](https://mbabrand.com/starmap.html) + 每品牌私有星图;**舆情变化自动推送飞书群**([docs/19](docs/19-feishu-notify.md));**舆情驾驶舱看板**(`/watch/<slug>/cockpit.html`,管理层视角,[docs/20](docs/20-sentiment-cockpit-mapping.md))。
@@ -198,7 +198,7 @@ mba/
 ├── research/                     ← 工具层:复用的"PRD 多代理深度调研" skill
 │   └── SKILL.md                       MBA 内部当作搜索建块,自身也可独立 `/research` 调用
 │
-├── perspectives/                 ← 评委层:43 套 production 人物视角 skill(目录名 <slug>-perspective/)
+├── perspectives/                 ← 评委层:46 套人物视角 skill(43 套专家 + 3 套模拟消费者人设,目录名 <slug>-perspective/)
 │   ├── default panel 的 5 位:
 │   │   fusheng(傅盛)/ jobs(Steve Jobs)/ likejia(李可佳)/
 │   │   wu-jundong(吴俊东)/ zhang-yiming(张一鸣)
@@ -629,7 +629,7 @@ curl -s https://mbabrand.com/api/index.json | jq
 | `/api/reports.json` | 已发布审计报告列表(`{count, items[]}`) |
 | `/api/reports/{slug}.json` | 单报告元数据 + `html_url` / `pdf_url` |
 | `/api/panels.json` · `/api/panels/{slug}.json` | 10 套评委 panel + 行业映射 / 单 panel 组成 |
-| `/api/judges.json` · `/api/judges/{slug}.json` | 43 位评委视角 / 单评委来源 SKILL.md |
+| `/api/judges.json` · `/api/judges/{slug}.json` | 46 位评委视角 / 单评委来源 SKILL.md |
 | `/api/install.json` | 怎么把 MBA 装进 Claude Code |
 | `/api/search.json` | 扁平语料(reports + panels + judges + dimensions + lenses),给客户端做 substring search |
 

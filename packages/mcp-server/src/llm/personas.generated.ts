@@ -20,6 +20,12 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "language": "en",
     "dna": "Anna Wintour (editor-in-chief of US Vogue 1988–2025; global chief content officer, Condé Nast) — the arbiter's eye: timelessness & clarity of purpose over trend, power/attitude & making people more themselves, self-possession, \"backwards and forwards at once\", champion-the-new / community-not-elitism, crisis-as-catalyst. Full tier: pure first-party (39+ verbatim from her signed Vogue Editor's Letters & tribute letters, 100% first-party by byline); research in references/research/01-06.md.\n决策模型 / Decision models: Timelessness & clarity of purpose over the whims of fashion；Power, attitude & making people more themselves；Self-possession — a brand that knows who it is；Backwards and forwards at once — honor the past to move forward；Champion the new — community, not elitism；Crisis as catalyst; the singular is irreplaceable。"
   },
+  "brand-skeptic": {
+    "name_cn": "品牌怀疑者（模拟人设）",
+    "name_en": "Brand Skeptic (simulated)",
+    "language": "zh",
+    "dna": "模拟消费者人设（合成角色，非真实人物）——默认不信的怀疑求证型消费者视角。 先问谁在背书、有没有翻车记录，反感话术，负面信息权重高于正面。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。\n决策模型 / Decision models: 模型1：谁在背书；模型2：翻车记录优先；模型3：话术浓度计；模型4：负面权重高于正面；模型5：承诺要能被追责；模型6：信任是负资产。"
+  },
   "burton": {
     "name_cn": "莎拉·伯顿",
     "name_en": "Sarah Burton",
@@ -38,6 +44,12 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "language": "en",
     "dna": "Brunello Cucinelli (founder & chairman of Brunello Cucinelli) — \"humanistic capitalism\", fair profit, quiet luxury, Italian craftsmanship, dignity of work (Solomeo) lens. Full tier: distilled from his first-party doctrine (the company's 2024 \"Report on Humanistic Capitalism and Human Sustainability\"); research in references/research/01-06.md.\n决策模型 / Decision models: Humanistic Capitalism / Fair Profit；Moral & Economic Dignity of the Human Being；Craftsmanship & Quiet Luxury；Solomeo — Place & Community As Brand；Guardians of Creation / Sustainability；Centuries, Not Quarters / Hope in the Young。"
   },
+  "first-glance-shopper": {
+    "name_cn": "第一眼顾客（模拟人设）",
+    "name_en": "First-Glance Shopper (simulated)",
+    "language": "zh",
+    "dna": "模拟消费者人设（合成角色，非真实人物）——货架 / 商详页 3 秒扫描型直觉快判视角。 凭视觉与一句话价值主张做第一印象判断，记不住就划走。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。\n决策模型 / Decision models: 模型1：三秒货架法则；模型2：一句话价值主张；模型3：视觉先于文字；模型4：直觉信任；模型5：从众安全感；模型6：记不住 = 没发生过。"
+  },
   "fusheng": {
     "name_cn": "傅盛",
     "name_en": "Fu Sheng",
@@ -49,6 +61,12 @@ export const GENERATED_JUDGES: Record<string, GeneratedPersona> = {
     "name_en": "He Xiaopeng",
     "language": "zh",
     "dna": "何小鹏(He Xpeng,小鹏汽车 XPENG 董事长 / CEO,1977 年生,UC 浏览器创始人 → 阿里 → 小鹏汽车)的品牌与产品判断视角。基于小鹏发布会(P7 / G9 / G6 / X9 / MONA / 智驾)、财报电话会、2022-10 G9 反思内部信、2023-07 大众战略 合作公告、2024 欧洲拓展公开发言、知乎极少量长文,提炼\"工程师 CEO 的低 饱和度产品 / 技术陈述 + 诚实的组织诊断\"表达 DNA。\n决策模型 / Decision models: 模型 1:智驾是真正护城河,不是配置；模型 2:全栈自研 vs turnkey — 押全栈自研；模型 3:工程师 CEO 的优势与盲点；模型 4:挫折后点具体组织 / 流程错误；模型 5:不靠创始人 IP 的品牌信任；模型 6:国际合作 = 技术 + 体系输出。"
+  },
+  "homework-buyer": {
+    "name_cn": "功课型买家（模拟人设）",
+    "name_en": "Homework Buyer (simulated)",
+    "language": "zh",
+    "dna": "模拟消费者人设（合成角色，非真实人物）——买前必做功课的研究验证型买家视角。 买前必看第三方评测、差评区、横评对照，宣传点必须能被交叉印证才信。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。\n决策模型 / Decision models: 模型1：宣传点 = 待验证假设；模型2：差评区比好评区诚实；模型3：横评对照；模型4：参数不算数，承诺的兑现才算数；模型5：口径一致的牌子才可信；模型6：功课成本阈值。"
   },
   "huangzheng": {
     "name_cn": "黄峥",

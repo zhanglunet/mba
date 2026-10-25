@@ -1,0 +1,39 @@
+# metric-brand-auditor/panels/consumer-mixed.yaml
+#
+# 消费者视角评委 panel（PRD-178/T2，trend #891）—— 模拟消费者人设（合成角色），
+# 非真实市场调研、非真实人群众包；无真实用户 PII。
+# 消费者评委用 C1–C5 题组（第一印象 / 购买意愿 / 价格直觉 / 信任犹豫 / 表达欲），
+# role: consumer 由 judge-prompt-template STEP 3/5 分支处理；消费者结论不进专家
+# Score Matrix，与专家 5 镜头分数不换算、不平均（报告分开展示）。
+#
+# 5 套消费者人设草案（PRD-178/T1 §二）先落地 3 套（early-adopter / value-counter 留待后续）；
+# 人设目录 perspectives/<slug>-perspective/，语料 references/scenario.md（seed tier）。
+
+name: consumer-mixed
+display_name: Consumer Mixed Panel (simulated)
+description: >
+  模拟消费者视角评委组（合成人设，非真实市场调研）：直觉快判 + 研究验证 + 怀疑
+  求证三种决策风格互补，覆盖第一印象 / 购买意愿 / 价格直觉 / 信任犹豫 / 表达欲
+  （C1–C5 题组）。与专家 panel 并排互补、分开展示，不换算、不平均。
+
+judges:
+  - slug: first-glance-shopper
+    display_name_cn: 第一眼顾客（模拟人设）
+    display_name_en: First-Glance Shopper (simulated)
+    language: zh
+    role: consumer
+    weight: 1.0
+
+  - slug: homework-buyer
+    display_name_cn: 功课型买家（模拟人设）
+    display_name_en: Homework Buyer (simulated)
+    language: zh
+    role: consumer
+    weight: 1.0
+
+  - slug: brand-skeptic
+    display_name_cn: 品牌怀疑者（模拟人设）
+    display_name_en: Brand Skeptic (simulated)
+    language: zh
+    role: consumer
+    weight: 1.0
