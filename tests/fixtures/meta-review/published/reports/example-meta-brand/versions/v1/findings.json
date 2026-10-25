@@ -1,0 +1,77 @@
+{
+  "findings_version": "prd-177-v1",
+  "brand_slug": "example-meta-brand",
+  "panel": "example-meta",
+  "report_ref": "published/reports/example-meta-brand/versions/v1/report.md",
+  "counts": {
+    "confirmed": 1,
+    "needs_validation": 2,
+    "rejected": 1
+  },
+  "findings": [
+    {
+      "id": "F-alpha-judge-001",
+      "status": "confirmed",
+      "judge_slug": "alpha-judge",
+      "lens": "identity",
+      "claim": "占位结论：样例设定中身份一致性有报告矩阵与评委落笔双重依据",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-meta-brand/versions/v1/report.md",
+          "quote": "| Identity / 身份一致 | 9 | 4 | 8 | 7.00 |",
+          "kind": "report"
+        },
+        {
+          "source_ref": "published/reports/example-meta-brand/versions/v1/reviews/alpha-judge.md",
+          "quote": "占位理由：样例设定中，该品牌在全部触点保持同一身份主张。",
+          "kind": "review"
+        }
+      ]
+    },
+    {
+      "id": "F-beta-judge-002",
+      "status": "needs_validation",
+      "judge_slug": "beta-judge",
+      "lens": "identity",
+      "claim": "占位结论：identity 镜头与均值分差偏大，疑样例设定偏置",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-meta-brand/versions/v1/report.md",
+          "quote": "| Identity / 身份一致 | 9 | 4 | 8 | 7.00 |",
+          "kind": "report"
+        }
+      ],
+      "unresolved_fact": "占位：低分是否源于样例设定缺对照数据，待下一轮补齐后复核"
+    },
+    {
+      "id": "F-gamma-judge-003",
+      "status": "needs_validation",
+      "judge_slug": "gamma-judge",
+      "lens": "signal",
+      "claim": "占位结论：真实信号镜头全档无数据，不下定论",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-meta-brand/versions/v1/report.md",
+          "quote": "| Signal / 真实信号 | 5 | 5 | 5 | 5.00 |",
+          "kind": "report"
+        }
+      ],
+      "unresolved_fact": "占位：缺可核对的真实使用数据来源"
+    },
+    {
+      "id": "F-lead-001",
+      "status": "rejected",
+      "judge_slug": "lead",
+      "lens": null,
+      "claim": "占位结论：Lead 层撤回的候选结论",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-meta-brand/versions/v1/report.md",
+          "quote": "Score Total: 33 / 50",
+          "kind": "report"
+        }
+      ],
+      "rejected_reason": "占位：与样例 Score Matrix 实测分差矛盾，故撤回（条目留痕不删）"
+    }
+  ]
+}

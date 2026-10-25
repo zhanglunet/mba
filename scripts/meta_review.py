@@ -12,14 +12,96 @@
 
 设计原则：只出审计报告，不改分；措辞是"分歧点"/"疑似"，不是"错误"/"定罪"。
 
+PRD-177/T3（trend #887）起支持可选只读消费 findings.json（`--findings <path>`，
+schema `prd-177-v1`，PRD-177/T1/T2）：审计项 4（分歧定位）输出行附 finding id
+回指线索 + 附录 F 线索段。消费纪律与 ci_gate_status（PRD-151/T3）同款：
+只读不解释、版本字段纪律（只认 findings_version=prd-177-v1，未知版本拒读）、
+findings 有问题时降级说明（退出码不受影响，审计本身照常产出）。三态合法性
+判定权在 scripts/validate_findings.py，本脚本不重复校验 R-1…R-7；
+四项审计算法与 A–F 阈值一字不动，findings 只作回指线索。
+
 用法：
-  python3 scripts/meta_review.py published/reports/<brand>/report.md [-o out.md]
+  python3 scripts/meta_review.py published/reports/<brand>/report.md [-o out.md] \
+      [--findings published/reports/<brand>/versions/vN*/findings.json]
 """
 import argparse
+import json
 import math
 import pathlib
 import re
 import sys
+
+
+# ---------- findings 只读消费（PRD-177/T3，trend #887） ----------
+
+FINDINGS_VERSION = "prd-177-v1"
+FINDING_STATUSES = ("confirmed", "needs_validation", "rejected")
+EXPERT_LENSES = ("origin", "category", "leverage", "identity", "signal")
+CLIP_CHARS = 40  # 附录 F 线索句截断长度（一页可读）
+
+
+def load_findings(path):
+    """只读加载 findings.json。返回 (doc_or_None, notes)。
+
+    版本不识别 / JSON 不可解析 / 顶层形态非法 → (None, notes)（降级，不抛错）。
+    """
+    notes = []
+    try:
+        text = pathlib.Path(path).read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError) as e:
+        return None, ["findings 文件无法读取（%s）" % e]
+    try:
+        doc = json.loads(text)
+    except ValueError as e:
+        return None, ["findings JSON 不可解析（%s）" % e]
+    if not isinstance(doc, dict):
+        return None, ["findings 顶层不是 JSON object，拒读"]
+    if doc.get("findings_version") != FINDINGS_VERSION:
+        return None, ["findings_version=%r 版本不识别（本消费方只认 %s），"
+                      "拒读不猜测语义" % (doc.get("findings_version"),
+                                          FINDINGS_VERSION)]
+    if not isinstance(doc.get("findings"), list):
+        return None, ["findings 字段不是数组，拒读"]
+    return doc, notes
+
+
+def build_findings_view(path, doc, notes):
+    """把 findings doc 整流为渲染线索视图（只取线索字段，排序显式，确定性）。"""
+    by_lens = {}   # 专家镜头短名 -> [finding id]（排序后）
+    nv, rj = [], []  # (id, judge_slug, 说明)
+    tally = {s: 0 for s in FINDING_STATUSES}
+    skipped = 0
+    if doc is not None:
+        for f in doc.get("findings", []):
+            if not isinstance(f, dict):
+                skipped += 1
+                continue
+            fid, status = f.get("id"), f.get("status")
+            if not isinstance(fid, str) or status not in FINDING_STATUSES:
+                skipped += 1
+                continue
+            tally[status] += 1
+            if status == "needs_validation":
+                nv.append((fid, str(f.get("judge_slug", "?")),
+                           str(f.get("unresolved_fact", ""))))
+            elif status == "rejected":
+                rj.append((fid, str(f.get("judge_slug", "?")),
+                           str(f.get("rejected_reason", ""))))
+            lens = f.get("lens")
+            if lens in EXPERT_LENSES:
+                by_lens.setdefault(lens, []).append(fid)
+        for ids in by_lens.values():
+            ids.sort()
+        nv.sort()
+        rj.sort()
+    return {"path": str(path), "doc": doc, "notes": list(notes),
+            "by_lens": by_lens, "nv": nv, "rj": rj, "tally": tally,
+            "skipped": skipped}
+
+
+def _clip(text, n=CLIP_CHARS):
+    text = " ".join(text.split())
+    return text if len(text) <= n else text[:n] + "…"
 
 
 # ---------- 解析 ----------
@@ -224,7 +306,7 @@ def rating(max_sigma):
 
 # ---------- 渲染（T1 规范 §二） ----------
 
-def render(report_path, data, res, heatmap):
+def render(report_path, data, res, heatmap, findings_view=None):
     lenses, judges, scores = data["lenses"], data["judges"], data["scores"]
     meta = data["meta"]
     max_sigma = max(res["sigma"].values())
@@ -243,6 +325,8 @@ def render(report_path, data, res, heatmap):
         head += "（" + "、".join(meta_bits) + "）"
     head += "；审计方式：纯计算（`scripts/meta_review.py`），未重新打分；"
     head += "措辞为“分歧点”/“疑似”，非“错误”/“定罪”结论。"
+    if findings_view is not None:
+        head += "；findings 线索：`%s`（PRD-177/T3 只读回指）。" % findings_view["path"]
     L.append(head)
     L.append("")
     L.append("## 一页审计摘要")
@@ -253,9 +337,14 @@ def render(report_path, data, res, heatmap):
     for i, d in enumerate(res["dissent"], 1):
         lo_s = "、".join("%s（%d）" % (j, d["lo"]) for j in d["lo_judges"])
         hi_s = "、".join("%s（%d）" % (j, d["hi"]) for j in d["hi_judges"])
-        L.append("   %d. %s：σ=%s，分数范围 %d–%d；%s ↔ %s，分差 %d"
-                 % (i, short_lens(d["lens"]), f2(d["sigma"]), d["lo"], d["hi"],
-                    lo_s, hi_s, d["gap"]))
+        line = ("   %d. %s：σ=%s，分数范围 %d–%d；%s ↔ %s，分差 %d"
+                % (i, short_lens(d["lens"]), f2(d["sigma"]), d["lo"], d["hi"],
+                   lo_s, hi_s, d["gap"]))
+        if findings_view is not None:
+            ids = findings_view["by_lens"].get(short_lens(d["lens"]).lower())
+            if ids:
+                line += "；findings 线索：%s" % "、".join(ids)
+        L.append(line)
     L.append("3. **建议复核项**：")
     if res["outliers"]:
         L.append("   - 离群打分（|score−μ|>2σ）：")
@@ -340,6 +429,54 @@ def render(report_path, data, res, heatmap):
             key = short_lens(d["lens"]).lower()
             txt = heatmap[key][1] if key in heatmap else "（热力图无此维度）"
             L.append("- %s：%s" % (short_lens(d["lens"]), txt))
+    if findings_view is not None:
+        L.append("")
+        L.append("### F. findings 线索（PRD-177/T3，只读）")
+        L.append("")
+        fv = findings_view
+        if fv["doc"] is None:
+            L.append("findings 文件：`%s`" % fv["path"])
+            for n in fv["notes"]:
+                L.append("- 降级：%s" % n)
+            L.append("- 以上为 findings 消费降级说明；四项审计未受影响。")
+        else:
+            doc = fv["doc"]
+            counts = doc.get("counts") if isinstance(doc.get("counts"), dict) else {}
+            L.append("findings 文件：`%s`（findings_version=%s，panel=%s）"
+                     % (fv["path"], doc.get("findings_version"), doc.get("panel")))
+            L.append("三态计数（透明化全量）：confirmed %d · needs_validation %d · rejected %d，共 %d 条"
+                     % (fv["tally"]["confirmed"], fv["tally"]["needs_validation"],
+                        fv["tally"]["rejected"], sum(fv["tally"].values())))
+            mismatch = [s for s in FINDING_STATUSES
+                        if isinstance(counts.get(s), int) and counts[s] != fv["tally"][s]]
+            if mismatch:
+                L.append("- 计数对账差异（线索级，判定权在校验器）：%s"
+                         % "；".join("%s counts=%s vs 实际=%s" % (s, counts[s], fv["tally"][s])
+                                     for s in mismatch))
+            if fv["skipped"]:
+                L.append("- 形态非法跳过 %d 条（只取线索字段，合法性判定权在"
+                         " `scripts/validate_findings.py`）" % fv["skipped"])
+            bits = []
+            for d in res["dissent"]:
+                ids = fv["by_lens"].get(short_lens(d["lens"]).lower())
+                if ids:
+                    bits.append("%s → %s" % (short_lens(d["lens"]).lower(), "、".join(ids)))
+            L.append("Top3 分歧镜头回指：%s" % ("；".join(bits) if bits else "无命中"))
+            if fv["nv"]:
+                L.append("needs_validation（建议复核）：" +
+                         "；".join("%s（%s：%s）" % (fid, js, _clip(txt))
+                                   for fid, js, txt in fv["nv"]))
+            else:
+                L.append("needs_validation（建议复核）：本轮无")
+            if fv["rj"]:
+                L.append("rejected（留痕）：" +
+                         "；".join("%s（%s：%s）" % (fid, js, _clip(txt))
+                                   for fid, js, txt in fv["rj"]))
+            else:
+                L.append("rejected（留痕）：本轮无")
+            L.append("")
+            L.append("（findings 只作回指线索；四项审计算法与 A–F 阈值未动；"
+                     "三态合法性判定权在 `scripts/validate_findings.py`。）")
     L.append("")
     L.append("---")
     L.append("")
@@ -352,6 +489,9 @@ def main():
     ap = argparse.ArgumentParser(description="mba 元评审审计（纯计算）")
     ap.add_argument("report", help="完整报告路径，如 published/reports/deepseek/report.md")
     ap.add_argument("-o", "--output", help="输出文件（缺省打印到 stdout）")
+    ap.add_argument("--findings", default=None,
+                    help="findings.json 路径（PRD-177/T3 只读线索消费；缺省不读，"
+                         "版本只认 prd-177-v1）")
     args = ap.parse_args()
 
     p = pathlib.Path(args.report)
@@ -366,7 +506,11 @@ def main():
         return 2
     res = audit(data)
     heatmap = parse_heatmap(md)
-    out = render(p, data, res, heatmap)
+    findings_view = None
+    if args.findings:
+        doc, notes = load_findings(args.findings)
+        findings_view = build_findings_view(args.findings, doc, notes)
+    out = render(p, data, res, heatmap, findings_view)
     if args.output:
         pathlib.Path(args.output).write_text(out, encoding="utf-8")
         print("written: %s" % args.output)

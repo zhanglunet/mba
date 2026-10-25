@@ -15,8 +15,14 @@ $GITHUB_STEP_SUMMARY 用的 Markdown。
 措辞纪律（T1 §四）：全文只出现"分歧点"/"疑似"/"建议人工复核"，
 不出现"错误"/"定罪"（含否定式引用，一并净化）。
 
+PRD-177/T3（trend #887）：可选 `--findings <path>` 透传给 meta_review.py，
+在审计项 4（Top3 分歧点）输出行附 finding id 回指线索。消费纪律：只读不解释、
+版本字段纪律（只认 prd-177-v1，由 meta_review 侧拒读）；文件不存在时输出
+降级说明，不影响审计与退出码（永远 exit 0）。
+
 用法：
-  python3 scripts/ci_meta_review.py [--reports-dir DIR] [--report PATH]
+  python3 scripts/ci_meta_review.py [--reports-dir DIR] [--report PATH] \
+      [--findings published/reports/<brand>/versions/vN*/findings.json]
 """
 
 import argparse
@@ -57,11 +63,12 @@ def find_latest_report(reports_dir: pathlib.Path):
     return candidates[-1][2]
 
 
-def run_audit(report_path: pathlib.Path):
-    """跑 T2 审计，返回 (stdout, err_note)。失败时 stdout 为 None。"""
+def run_audit(report_path: pathlib.Path, extra_args: list[str] | None = None):
+    """跑 T2 审计（可附 PRD-177/T3 --findings 透传），返回 (stdout, err_note)。失败时 stdout 为 None。"""
     try:
         r = subprocess.run(
-            [sys.executable, str(SCRIPTS_DIR / "meta_review.py"), str(report_path)],
+            [sys.executable, str(SCRIPTS_DIR / "meta_review.py"), str(report_path),
+             *(extra_args or [])],
             capture_output=True,
             text=True,
             timeout=300,
@@ -111,7 +118,9 @@ def extract_summary(audit_md: str) -> dict:
     return d
 
 
-def render_ci_summary(brand: str, report_rel: str, d: dict) -> str:
+def render_ci_summary(brand: str, report_rel: str, d: dict,
+                      findings_rel: str | None = None,
+                      findings_note: str = "") -> str:
     """渲染 job summary Markdown（已做措辞净化）。"""
     lines = [
         "## 🔍 元评审 CI 摘要（PRD-063/T4）",
@@ -120,6 +129,17 @@ def render_ci_summary(brand: str, report_rel: str, d: dict) -> str:
         "",
         f"**输入报告**：`{report_rel}`（24 个品牌中 Audit Date 最新：{brand}）",
         "",
+    ]
+    if findings_rel:
+        lines.append(
+            f"**findings 线索**：`{findings_rel}`（PRD-177/T3 只读回指，"
+            "Top3 分歧点行内附 finding id；三态合法性判定权在 "
+            "`scripts/validate_findings.py`，四项审计与 A–F 阈值未动）")
+        lines.append("")
+    if findings_note:
+        lines.append(f"**findings 降级说明**：{findings_note}")
+        lines.append("")
+    lines += [
         f"**总体一致性评级：{d['grade']}**（最大维度 σ={d['max_sigma']}；"
         "评级只反映分歧程度，不等于打分质量）",
         "",
@@ -159,7 +179,25 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="元评审 CI 摘要（只报告，不设门禁）")
     ap.add_argument("--reports-dir", default=str(REPO_ROOT / "published" / "reports"))
     ap.add_argument("--report", default=None, help="直接指定报告路径（本地自测用）")
+    ap.add_argument("--findings", default=None,
+                    help="findings.json 路径（PRD-177/T3 只读线索透传；"
+                         "文件不存在时降级说明）")
     args = ap.parse_args()
+
+    findings_args: list[str] = []
+    findings_rel: str | None = None
+    findings_note = ""
+    if args.findings:
+        fp = pathlib.Path(args.findings)
+        if fp.is_file():
+            findings_args = ["--findings", str(fp)]
+            try:
+                findings_rel = str(fp.resolve().relative_to(REPO_ROOT))
+            except ValueError:
+                findings_rel = str(fp)
+        else:
+            findings_note = ("指定的 findings 文件不存在，线索消费降级"
+                             "（审计不受影响）：%s" % args.findings)
 
     if args.report:
         report_path = pathlib.Path(args.report)
@@ -172,7 +210,7 @@ def main() -> int:
             print(degraded("published/reports/ 下未找到品牌报告"))
             return 0
 
-    audit_md, err = run_audit(report_path)
+    audit_md, err = run_audit(report_path, findings_args)
     if audit_md is None:
         print(degraded(err))
         return 0
@@ -182,7 +220,8 @@ def main() -> int:
     except ValueError:
         rel = str(report_path)
     brand = report_path.parent.name
-    print(render_ci_summary(brand, rel, extract_summary(audit_md)))
+    print(render_ci_summary(brand, rel, extract_summary(audit_md),
+                            findings_rel=findings_rel, findings_note=findings_note))
     return 0
 
 

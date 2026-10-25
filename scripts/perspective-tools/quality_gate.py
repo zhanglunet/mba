@@ -43,6 +43,15 @@ T3 只读接口（PRD-151/T3，trend #757）：`--json-out FILE` 把同一份契
 T2 只报告不阻断（--judge/--sample 以退出码给结论，不接 CI 门）；P1 转 hard gate
 另立议题。产物不入库（T1 §四.5：报告走 stdout / PR summary）。
 
+PRD-177/T3 只读附件（trend #887）：`--judge` 模式下可选 `--findings FILE`
+（`--findings-root DIR` 指定 findings 的仓库根基准，缺省本仓库根）。调用
+scripts/validate_findings.py（PRD-177/T2，R-1…R-7 唯一判定权）并把结论作为
+只读附件段渲染 + 契约 JSON 行追加可选键 findings_readonly。纪律（T1 §四.2）：
+findings 的 R-1…R-7 **不计入 13 条 checklist**（避免口径膨胀）、不改 PASS/FAIL
+判定；版本字段纪律与 gate_version 一致——只认 findings_version=prd-177-v1，
+未知版本记「版本不识别，拒读线索」；校验器不可用时降级说明，绝不抛错。
+--sample / --selftest 不支持 --findings。
+
 用法（在仓库根）：
   python3 scripts/perspective-tools/quality_gate.py --judge satyanadella
   python3 scripts/perspective-tools/quality_gate.py --judge tests/quality/fixtures/fake-judge
@@ -50,6 +59,9 @@ T2 只报告不阻断（--judge/--sample 以退出码给结论，不接 CI 门�
   python3 scripts/perspective-tools/quality_gate.py --selftest
   python3 scripts/perspective-tools/quality_gate.py --judge satyanadella \
       --json-out /tmp/gate-results.jsonl        # T3：契约 JSON 行落盘（元评审只读消费）
+  python3 scripts/perspective-tools/quality_gate.py --judge satyanadella \
+      --findings published/reports/<brand>/versions/v1/findings.json \
+      [--findings-root DIR]                     # PRD-177/T3：findings 只读附件（不计入 13 条）
 
 退出码：0 = 报告产出且结论 PASS；1 = 结论 FAIL（任一 P0 fail）；2 = 用法/IO 错误。
 """
@@ -73,6 +85,10 @@ GATE_VERSION = "prd-151-v1"
 SAMPLE_SIZE = 5
 SELFTEST_RUNS = 10  # T1 §三.3：金样例连跑 10 次，报告 sha256 逐字节一致
 P0_IDS = ("A-1", "A-2", "A-3", "A-4", "A-5", "A-6")
+
+# PRD-177/T3 只读附件（trend #887）：findings 校验器（R-1…R-7 唯一判定权）+ 版本纪律
+VALIDATE_FINDINGS = REPO_ROOT / "scripts" / "validate_findings.py"
+FINDINGS_VERSION = "prd-177-v1"
 
 # 13 条 checklist（T1 §二）：id / level / 标题
 ITEMS: list[tuple[str, str, str]] = [
@@ -602,13 +618,97 @@ def judge_report(judge_arg: str, cache: dict | None = None) -> tuple[str, dict]:
 
 
 # ── CLI 子命令 ────────────────────────────────────────────────────────────────
-def cmd_judge(judge_arg: str, json_out: str | None = None) -> int:
+def findings_annex(findings_path: str,
+                   findings_root: Path) -> tuple[list[str], dict]:
+    """PRD-177/T3 只读附件（trend #887）：调用 validate_findings.py（PRD-177/T2，
+    R-1…R-7 唯一判定权）并原样转述结论；不计入 13 条 checklist、不改 PASS/FAIL。
+
+    消费纪律与 ci_gate_status（PRD-151/T3）同款：只读不解释、版本字段纪律
+    （只认 findings_version=prd-177-v1，未知版本记 recognized=false 并拒读线索）、
+    校验器不可用时降级说明——绝不抛错、绝不影响门禁判定。
+    返回 (附件行, 契约 JSON 行的可选键 findings_readonly)。
+    """
+    p = Path(findings_path)
+    display = to_repo_rel(p) if p.is_absolute() else findings_path
+
+    def degraded(note: str) -> tuple[list[str], dict]:
+        payload = {"file": display, "available": False, "schema": None,
+                   "recognized": False, "ok": False, "error_count": 0,
+                   "note": note}
+        return (["findings 附件（PRD-177/T3，只读，不计入 13 条、不改 PASS/FAIL）:",
+                 "  降级：%s" % note], payload)
+
+    if not VALIDATE_FINDINGS.is_file():
+        return degraded("scripts/validate_findings.py 不存在（PRD-177/T2 未叠入），"
+                        "findings 附件降级")
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(VALIDATE_FINDINGS), findings_path,
+             "--root", str(findings_root)],
+            cwd=str(REPO_ROOT), capture_output=True, text=True,
+            encoding="utf-8", errors="replace", timeout=300)
+    except (subprocess.TimeoutExpired, OSError, ValueError) as e:
+        return degraded("findings 校验器执行异常：%s" % e)
+    appendix = None
+    for line in proc.stdout.splitlines():
+        if line.startswith("附录: "):
+            try:
+                appendix = json.loads(line[len("附录: "):])
+            except ValueError:
+                appendix = None
+    if appendix is None or proc.returncode not in (0, 1):
+        return degraded("findings 校验器输出无法解析（exit %d）" % proc.returncode)
+    # 版本字段纪律对准被检文件自身的 findings_version（校验器附录 schema 字段是
+    # 校验器自身版本常量，不是文档版本，不能混用）
+    doc_version = None
+    try:
+        doc = json.loads(Path(findings_path).read_text(encoding="utf-8"))
+        if isinstance(doc, dict):
+            doc_version = doc.get("findings_version")
+    except (OSError, UnicodeDecodeError, ValueError):
+        doc_version = None
+    payload = {"file": appendix.get("file", display), "available": True,
+               "schema": doc_version, "recognized": doc_version == FINDINGS_VERSION,
+               "ok": bool(appendix.get("ok")),
+               "error_count": appendix.get("error_count", 0)}
+    lines = [
+        "findings 附件（PRD-177/T3，只读，不计入 13 条 checklist、不改 PASS/FAIL）:",
+        "  文件: %s · findings_version=%s（%s）· R-1…R-7 校验 %s · 违规 %s 处"
+        % (payload["file"], doc_version,
+           "识别" if payload["recognized"] else "版本不识别，拒读线索",
+           "PASS" if payload["ok"] else "FAIL", payload["error_count"]),
+        "  （三态合法性判定权在 scripts/validate_findings.py；本附件只读转述，"
+        "与 gate_version 同款版本字段纪律。）",
+    ]
+    return lines, payload
+
+
+def apply_findings_annex(report: str, payload: dict, findings_path: str,
+                         findings_root: Path) -> str:
+    """把 findings 附件段插到「机器可读 JSON 行」标签之前，并把 findings_readonly
+    键并入契约 JSON 行（保持一评委一行）。返回新报告文本。"""
+    annex_lines, fpayload = findings_annex(findings_path, findings_root)
+    payload["findings_readonly"] = fpayload
+    lines = report.rstrip("\n").splitlines()
+    if len(lines) < 2 or not lines[-1].startswith("{"):
+        return report  # 报告形态与预期不符时原样返回（防御，不抛错）
+    label, json_line = lines[-2], lines[-1]
+    new_json = json.dumps(payload, ensure_ascii=False)
+    return "\n".join(lines[:-2] + annex_lines + ["", label, new_json]) + "\n"
+
+
+def cmd_judge(judge_arg: str, json_out: str | None = None,
+              findings: str | None = None,
+              findings_root: Path | None = None) -> int:
     try:
         report, summary = judge_report(judge_arg)
     except JudgeNotFound:
         print("quality_gate.py: 找不到评委 %r（--judge 接 slug 或含 SKILL.md 的目录）"
               % judge_arg, file=sys.stderr)
         return 2
+    if findings is not None:
+        report = apply_findings_annex(report, summary["payload"], findings,
+                                      findings_root or REPO_ROOT)
     print(report)
     if json_out is not None and not append_json_line(json_out, summary["payload"]):
         return 2
@@ -703,6 +803,11 @@ def main(argv: list[str]) -> int:
                     help="金样例回归 + 10 次 sha256 一致性验收")
     ap.add_argument("--json-out", metavar="FILE",
                     help="契约 JSON 行追加写入 FILE（JSONL，T1 §四.2；T3 元评审只读消费）")
+    ap.add_argument("--findings", metavar="FILE", default=None,
+                    help="findings.json 路径（PRD-177/T3 只读附件；仅 --judge 模式，"
+                         "不计入 13 条、不改 PASS/FAIL）")
+    ap.add_argument("--findings-root", metavar="DIR", type=Path, default=None,
+                    help="findings source_ref / panel yaml 的解析基准（缺省本仓库根）")
     args = ap.parse_args(argv)
 
     modes = [bool(args.judge), args.sample is not None, args.selftest]
@@ -713,8 +818,15 @@ def main(argv: list[str]) -> int:
         print("quality_gate.py: --selftest 不支持 --json-out（回归验收走 stdout）",
               file=sys.stderr)
         return 2
+    if args.findings is not None and (args.sample is not None or args.selftest):
+        print("quality_gate.py: --findings 仅支持 --judge 模式", file=sys.stderr)
+        return 2
+    if args.findings_root is not None and args.findings is None:
+        print("quality_gate.py: --findings-root 需与 --findings 同用", file=sys.stderr)
+        return 2
     if args.judge:
-        return cmd_judge(args.judge, json_out=args.json_out)
+        return cmd_judge(args.judge, json_out=args.json_out,
+                         findings=args.findings, findings_root=args.findings_root)
     if args.sample is not None:
         if args.sample < 0:
             print("quality_gate.py: --sample 轮次须 ≥0", file=sys.stderr)
