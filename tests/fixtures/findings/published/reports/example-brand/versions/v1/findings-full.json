@@ -1,0 +1,62 @@
+{
+  "findings_version": "prd-177-v1",
+  "brand_slug": "example-brand",
+  "panel": "example",
+  "report_ref": "published/reports/example-brand/versions/v1/report.md",
+  "counts": {
+    "confirmed": 1,
+    "needs_validation": 1,
+    "rejected": 1
+  },
+  "findings": [
+    {
+      "id": "F-example-judge-001",
+      "status": "confirmed",
+      "judge_slug": "example-judge",
+      "lens": "identity",
+      "claim": "占位结论：该品牌视觉与语言在样例设定中保持一致",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-brand/versions/v1/_raw/synthesis.md#L6",
+          "quote": "样例设定中，品牌视觉与语言在全部触点保持一致。",
+          "kind": "synthesis"
+        },
+        {
+          "source_ref": "published/reports/example-brand/versions/v1/reviews/example-judge.md#L9",
+          "quote": "占位理由：在样例设定中，该品牌的视觉与语言保持同一主张，未发现漂移。",
+          "kind": "review"
+        }
+      ]
+    },
+    {
+      "id": "F-example-judge-002",
+      "status": "needs_validation",
+      "judge_slug": "example-judge",
+      "lens": "signal",
+      "claim": "占位结论：真实使用信号不足以下定论",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-brand/versions/v1/_raw/synthesis.md#L7",
+          "quote": "样例设定没有真实使用数据，真实信号待下一轮补齐。",
+          "kind": "synthesis"
+        }
+      ],
+      "unresolved_fact": "占位：缺哪一项可核对的真实使用数据"
+    },
+    {
+      "id": "F-lead-001",
+      "status": "rejected",
+      "judge_slug": "lead",
+      "lens": null,
+      "claim": "占位结论：Lead 层撤回的候选结论",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-brand/versions/v1/report.md#L7",
+          "quote": "（占位：本样例不承载真实分数矩阵。）",
+          "kind": "report"
+        }
+      ],
+      "rejected_reason": "占位：与样例 Score Matrix 实测分差矛盾，故撤回（条目留痕不删）"
+    }
+  ]
+}
