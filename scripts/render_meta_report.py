@@ -215,9 +215,9 @@ def parse_audit(md: str) -> dict:
     d["review_items"] = review_items
     d["review_note"] = _sanitize(tail_note)
 
-    # 附录：### A. ~ ### E.
+    # 附录：### A. ~ ### F.（PRD-177/T3 起 findings 线索段为 ### F.，trend #887）
     appendix = []
-    parts = re.split(r"^### ([A-E])\.\s*(.+)$", md, flags=re.M)
+    parts = re.split(r"^### ([A-F])\.\s*(.+)$", md, flags=re.M)
     # parts: [前, 字母, 标题, 正文, 字母, 标题, 正文, ...]
     for i in range(1, len(parts) - 1, 3):
         letter, title, body = parts[i], parts[i + 1].strip(), parts[i + 2]
