@@ -1,0 +1,223 @@
+{
+  "findings_version": "prd-177-v1",
+  "brand_slug": "example-consumer-brand",
+  "panel": "consumer-mixed",
+  "report_ref": "published/reports/example-consumer-brand/versions/v1/report.md",
+  "counts": {
+    "confirmed": 0,
+    "needs_validation": 14,
+    "rejected": 0
+  },
+  "findings": [
+    {
+      "id": "F-first-glance-shopper-001",
+      "status": "needs_validation",
+      "judge_slug": "first-glance-shopper",
+      "lens": "c1",
+      "claim": "颜色、说人话、没记住名字",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/first-glance-shopper.md#L8",
+          "quote": "样例设定里第一眼只留下一句主张和一个颜色，牌子名没进脑子。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-first-glance-shopper-002",
+      "status": "needs_validation",
+      "judge_slug": "first-glance-shopper",
+      "lens": "c3",
+      "claim": "没有价格锚点",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/first-glance-shopper.md#L10",
+          "quote": "材料里没有可对照的价格带，说不清贵还是值。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-first-glance-shopper-003",
+      "status": "needs_validation",
+      "judge_slug": "first-glance-shopper",
+      "lens": "c4",
+      "claim": "暂不推荐家人",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/first-glance-shopper.md#L11",
+          "quote": "只有第一印象依据，质量与售后没有材料，不敢推荐给家人。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-first-glance-shopper-004",
+      "status": "needs_validation",
+      "judge_slug": "first-glance-shopper",
+      "lens": "c5",
+      "claim": "一眼觉得「这也行？",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/first-glance-shopper.md#L12",
+          "quote": "真见到一眼说清的会随手转给朋友看。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-homework-buyer-001",
+      "status": "needs_validation",
+      "judge_slug": "homework-buyer",
+      "lens": "c1",
+      "claim": "卖点待印证",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/homework-buyer.md#L8",
+          "quote": "第一眼印象是口号偏大，需要第二来源印证。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-homework-buyer-002",
+      "status": "needs_validation",
+      "judge_slug": "homework-buyer",
+      "lens": "c2",
+      "claim": "第二来源未印证",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/homework-buyer.md#L9",
+          "quote": "宣传点没有独立的第二来源印证，我先不下单。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-homework-buyer-003",
+      "status": "needs_validation",
+      "judge_slug": "homework-buyer",
+      "lens": "c3",
+      "claim": "缺对照价",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/homework-buyer.md#L10",
+          "quote": "材料里连个对照价都没有，我不猜贵还是值。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-homework-buyer-004",
+      "status": "needs_validation",
+      "judge_slug": "homework-buyer",
+      "lens": "c4",
+      "claim": "售后没查明白",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/homework-buyer.md#L11",
+          "quote": "推荐给家人之前我得先把售后这条查明白。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-homework-buyer-005",
+      "status": "needs_validation",
+      "judge_slug": "homework-buyer",
+      "lens": "c5",
+      "claim": "只写避坑笔记",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/homework-buyer.md#L12",
+          "quote": "我会写避坑笔记，但不会转发广告。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-brand-skeptic-001",
+      "status": "needs_validation",
+      "judge_slug": "brand-skeptic",
+      "lens": "c1",
+      "claim": "话术浓度高",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/brand-skeptic.md#L8",
+          "quote": "第一眼满是形容词，一条实锤都没有。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-brand-skeptic-002",
+      "status": "needs_validation",
+      "judge_slug": "brand-skeptic",
+      "lens": "c2",
+      "claim": "没有实锤",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/brand-skeptic.md#L9",
+          "quote": "正面话术没有实锤支撑，我不会买。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-brand-skeptic-003",
+      "status": "needs_validation",
+      "judge_slug": "brand-skeptic",
+      "lens": "c3",
+      "claim": "口径撑不起价格",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/brand-skeptic.md#L10",
+          "quote": "按材料给的口径撑不起这个价格带。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-brand-skeptic-004",
+      "status": "needs_validation",
+      "judge_slug": "brand-skeptic",
+      "lens": "c4",
+      "claim": "担保门槛太高",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/brand-skeptic.md#L11",
+          "quote": "推荐给家人等于我替它担保，门槛太高。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-brand-skeptic-005",
+      "status": "needs_validation",
+      "judge_slug": "brand-skeptic",
+      "lens": "c5",
+      "claim": "会去写避雷帖",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/brand-skeptic.md#L12",
+          "quote": "我会去写避雷帖，吐槽不嫌麻烦。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    }
+  ]
+}

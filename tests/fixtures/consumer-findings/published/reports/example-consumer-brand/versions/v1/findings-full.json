@@ -1,0 +1,67 @@
+{
+  "findings_version": "prd-177-v1",
+  "brand_slug": "example-consumer-brand",
+  "panel": "consumer-mixed",
+  "report_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/report.md",
+  "counts": {
+    "confirmed": 1,
+    "needs_validation": 1,
+    "rejected": 1
+  },
+  "findings": [
+    {
+      "id": "F-first-glance-shopper-001",
+      "status": "confirmed",
+      "judge_slug": "first-glance-shopper",
+      "lens": "c1",
+      "claim": "占位结论：第一印象记忆点为颜色与说人话，主张一句话可懂（占位）",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/first-glance-shopper.md#L8",
+          "quote": "样例设定里第一眼只留下一句主张和一个颜色，牌子名没进脑子。",
+          "kind": "review"
+        },
+        {
+          "source_ref": "perspectives/first-glance-shopper-perspective/references/scenario.md#L24",
+          "quote": "「说实话，就记住那个颜色了，牌子名完全没进脑子。」",
+          "kind": "research"
+        }
+      ]
+    },
+    {
+      "id": "F-homework-buyer-001",
+      "status": "needs_validation",
+      "judge_slug": "homework-buyer",
+      "lens": "c3",
+      "claim": "占位结论：说不清贵不贵——材料里缺可对照的价格带（占位）",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/reviews/homework-buyer.md#L10",
+          "quote": "材料里连个对照价都没有，我不猜贵还是值。",
+          "kind": "review"
+        },
+        {
+          "source_ref": "perspectives/homework-buyer-perspective/references/scenario.md#L29",
+          "quote": "「说不清贵不贵——材料里连个对照价都没有，我不猜。」",
+          "kind": "research"
+        }
+      ],
+      "unresolved_fact": "占位：缺可对照的价格带数据，待下一轮 synthesis 补齐后复核"
+    },
+    {
+      "id": "F-lead-001",
+      "status": "rejected",
+      "judge_slug": "lead",
+      "lens": null,
+      "claim": "占位结论：撤回「消费者组代表市场验证通过」的候选结论",
+      "evidence": [
+        {
+          "source_ref": "tests/fixtures/consumer-findings/published/reports/example-consumer-brand/versions/v1/report.md#L6",
+          "quote": "诚实盒：消费者评委为模拟人设（合成角色），非真实市场调研，不代表任何真实人群统计。",
+          "kind": "report"
+        }
+      ],
+      "rejected_reason": "占位：模拟人设非真实市场调研（见 report 诚实盒），该候选结论措辞越界，撤回留痕不删"
+    }
+  ]
+}
