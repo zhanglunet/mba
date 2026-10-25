@@ -710,9 +710,11 @@ Agent(
 
 Resolver:
 - `{judge.slug}` → `<probe>/<slug>-perspective/SKILL.md` (first hit across `${PERSPECTIVES_PATH}`)
-- `{judge.display_name_cn}` / `{judge.display_name_en}` / `{judge.language}` / `{judge.portrait}` /
-  `{judge.weight}` all come from the panel yaml row; missing fields use the defaults documented
-  in `panels/README.md` §2
+- `{judge.display_name_cn}` / `{judge.display_name_en}` / `{judge.language}` / `{judge.role}` /
+  `{judge.portrait}` / `{judge.weight}` all come from the panel yaml row; missing fields use the
+  defaults documented in `panels/README.md` §2 (`role` defaults to `expert`; `consumer` judges
+  answer the C1–C5 consumer question set per `references/judge-prompt-template.md`, never the
+  5 lenses — their answers stay out of the expert Score Matrix)
 
 If a judge's SKILL.md isn't found in any `${PERSPECTIVES_PATH}` entry, mark that judge
 `MISSING` in the panel summary and proceed N-of-M (per the Prerequisites degradation rules

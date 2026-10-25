@@ -230,6 +230,8 @@
       F('马斯克','musk','early'),F('雷军','leijun','early'),F('李想','lixiang','early'),F('何小鹏','hexiaopeng','early'),F('李斌','libin','early')]},
     {name:'security-cn-global',score:'6/6',done:true,sub:'早期基础面板',judges:[
       F('周鸿祎','zhouhongyi','early'),F('张明正','zhangmingzheng','early'),F('任正非','renzhengfei','early'),F('黄仁勋','jensenhuang','early'),F('马斯克','musk','early'),F('Satya Nadella','satyanadella','early')]},
+    {name:'consumer-mixed',score:'3/3',done:true,sub:'模拟消费者人设(PRD-178),语料=scenario.md',judges:[
+      S('第一眼顾客','first-glance-shopper'),S('功课型买家','homework-buyer'),S('品牌怀疑者','brand-skeptic')]},
   ];
   const PT={pure:'纯一手',semi:'semi 整理稿',early:'早批 / 复用'};
   document.getElementById('grid').innerHTML=panels.map(p=>{

@@ -3,8 +3,10 @@
 """
 firewall_check.py — anti-fabrication firewall (MBA 立身之本,机器门禁)
 
-对每套 perspective 校验两类「声称的逐字引用」,**必须**在该套 references/research/*.md 语料
-(quotes.md + 01-06)里逐字存在(规范化后子串匹配),否则 = 可能捏造 / 漂移 → CI fail:
+对每套 perspective 校验两类「声称的逐字引用」,**必须**在该套语料里逐字存在
+(规范化后子串匹配),否则 = 可能捏造 / 漂移 → CI fail。语料 = references/research/*.md
+(quotes.md + 01-06);**消费者模拟人设(PRD-178/T2)的语料 = references/scenario.md**
+(场景设定 + 口吻样例句,条目编号锚定)——两种语料并存时都算:
 
   (1) SKILL「## Core Mental Models / 关键引用」区里的 `>` blockquote 逐字引用;
   (2) F4:「## 表达DNA / Expression DNA」等区 ```代码块``` 里**带来源署名**的代表句式
@@ -166,6 +168,11 @@ def strip_annotation(q: str):
 
 def load_corpus(persp_dir: str):
     files = sorted(glob.glob(os.path.join(persp_dir, "references", "research", "*.md")))
+    # PRD-178/T2:消费者模拟人设的语料是 references/scenario.md(场景设定 + 口吻
+    # 样例句),与研究语料并存时都算;专家评委没有 scenario.md,行为零变化。
+    scenario = os.path.join(persp_dir, "references", "scenario.md")
+    if os.path.isfile(scenario):
+        files.append(scenario)
     raw = ""
     for f in files:
         raw += open(f, encoding="utf-8").read() + "\n"
@@ -253,7 +260,7 @@ def main(argv):
         print(f"❌ {total_fail} quote(s) across {n_fail} perspective(s) not verbatim in their research corpus.")
         print("   反捏造门禁:SKILL 引用必须逐字存在于本套 references/research;修正引用或补回语料。")
         return 1
-    print("✅ 全部 SKILL 引用均在本套 research 语料逐字命中(anti-fabrication firewall 通过)。")
+    print("✅ 全部 SKILL 引用均在本套语料(research / scenario)逐字命中(anti-fabrication firewall 通过)。")
     return 0
 
 if __name__ == "__main__":

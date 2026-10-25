@@ -73,7 +73,7 @@ full tier 的核心是 **≥80% 一手来源**——必须能**读到一手原�
 - 因此深化作业应在**能读全文的环境**做:本地 + `WebFetch` 放行,中文人物配 **Wuying** 云浏览器。
 - 这也正是仓库 `scripts/wuying/` 与 `docs/wuying-usage.md` 存在的原因。
 
-## 6. 进度追踪(43 套 perspective 的 tier)
+## 6. 进度追踪(43 套专家 perspective 的 tier;消费者模拟人设另册,见本节末注)
 
 **FULL(42)**:
 
@@ -365,6 +365,14 @@ semi-一手 16 条、二手 0 条**——纯一手占多数,semi 全程标注(�
 >   (Pro/Ultra 限定);中文一手(微信公众号 / 知乎 / B 站 / CF 保护中文站)未通。ai-app-cn /
 >   vc-cn / consumer-cn / cross-border 的中文人物仍需 Wuying 解封或把对应中文源站加进
 >   allowlist 后用 curl 抓。
+
+**消费者模拟人设（PRD-178，另册，不进上表 tier 追踪）**:`first-glance-shopper` ·
+`homework-buyer` · `brand-skeptic`（2026-10-25 起，consumer-mixed panel）。三套是
+**合成人设**（模拟消费者，非真实人物），语料 = 各自 `references/scenario.md` 的场景
+设定 + 口吻样例句（条目编号锚定，非真实人物语录），**无真实一手语料可深化——full
+tier 6 路调研对本类不适用**，按定义长期停在 seed tier（`check_structure` / `quality_check`
+6/6 / `firewall_check`（语料=scenario.md）照常适用）。它们用消费者题组 C1–C5，
+不打专家 5 镜头（见 `metric-brand-auditor/references/judge-prompt-template.md` role 分支）。
 
 ## 7. 本会话已处理的数据修正(深化时请沿用)
 

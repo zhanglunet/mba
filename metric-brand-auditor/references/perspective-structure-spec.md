@@ -74,6 +74,30 @@ the validator.
 - Primary vs secondary attribution per file when not obvious
 - Reference shape: `jobs-perspective/SKILL.md` L447-end
 
+## Consumer persona variant (PRD-178) — 模拟消费者人设的语义映射
+
+The 5 required H2 sections are **unchanged** for consumer personas (synthetic shopper
+personas, e.g. `first-glance-shopper-perspective`). Only the semantics of each section
+map differently — the persona's "corpus" is its own `references/scenario.md` (scene
+settings + consumer-voice sample lines, anchored by item numbers), not a real person's
+recorded material. No `references/research/` six-route corpus: by definition there is
+no real first-hand material to deepen, so consumer personas stay seed tier permanently
+(seeded in `docs/10-deepening-perspectives.md` §6 as 消费者模拟人设另册).
+
+| Required section | Consumer semantic (per PRD-178/T1 §四) |
+|---|---|
+| Core Mental Models | 消费决策心智模型（价格锚、口碑传导、社交货币等）；定义引用 scenario.md 设定条目，引用样例句以 scenario.md 逐字命中为准（firewall_check 语料含 scenario.md） |
+| Honest Boundary | 必写「**我是模拟人设，非真实人物；无真实购买经历与人口学身份**」+ 研究截止（cutoff）声明 |
+| Anti-Fabrication Red Lines | 不虚构销量、市场份额、真实用户数、具体价格事实；不虚构「我买过 / 我朋友用过」的经历；场景设定没有的细节答「不知道」 |
+| Self-Conflict Rule | 场景设定关联品类与被审品牌重合时主动申请 `--panel-drop <own-slug>`（静态门禁同专家） |
+| Sources | 指向 `references/scenario.md`（逐条列场景设定条目 + 口吻样例句锚定方式） |
+
+Non-required sections for consumer personas: `## Consumer Question Set（C1–C5 题组）`
+(the consumer question set replacing the 5 lenses — C2 is the only numeric score and
+never enters the expert Score Matrix)、`## 表达DNA / Expression DNA`、`## 内在张力`.
+Consumer personas are judged by `check_structure.py` / `quality_check.py` /
+`firewall_check.py` / `check_self_conflict.py` exactly like expert personas.
+
 ## Adding a new perspective
 
 1. Copy the H2 skeleton from `satyanadella-perspective/SKILL.md` (shortest production

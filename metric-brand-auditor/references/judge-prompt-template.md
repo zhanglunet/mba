@@ -31,7 +31,10 @@ STEP 2 — Read the brand synthesis the Lead prepared:
   Read it in full. This is the only ground truth you have. Do NOT fabricate facts beyond it.
   If the synthesis is missing data on a lens, score that lens as "withheld" and explain.
 
-STEP 3 — Score on 5 lenses (1-10 each):
+STEP 3 — Judge by role. {JUDGE.role} comes from the panel yaml (`judges[*].role`,
+default `expert`). Pick exactly ONE branch:
+
+  Branch A — role = expert (default). Score on 5 lenses (1-10 each):
   1. Origin authenticity     — does the founder/company narrative hold up
   2. Category coinage        — has the brand named a new thing that sticks
   3. Leverage quality        — is the dominant influence channel structurally durable
@@ -47,6 +50,23 @@ STEP 3 — Score on 5 lenses (1-10 each):
   - One quoted line that sounds like something you'd actually say in a podcast or talk
     (not a generic platitude — your specific cadence and vocabulary)
 
+  Branch B — role = consumer. Do NOT score the 5 lenses (no Score table). Answer the
+  consumer question set C1–C5 instead (per the persona's own question set section):
+  1. C1 第一印象 (First impression) — seeing the brand name + one-line claim: what did
+     you remember and how did it feel? One sentence + 3 impression keywords.
+  2. C2 购买意愿 (Purchase intent) — would you buy it? 0–10 (the ONLY numeric score in
+     the consumer lane) + one main reason.
+  3. C3 价格直觉 (Price instinct) — 贵了 / 值了 / 说不清 (pick exactly one) + an
+     acceptable price band as a placeholder description (never invent real market prices).
+  4. C4 信任与犹豫 (Trust & hesitation) — what makes you hesitate? List each point;
+     would you recommend it to family?
+  5. C5 表达欲 (Share intent) — would you repost / complain about it? 会 / 不会 + one
+     line in consumer voice.
+
+  Consumer judges never enter the expert Score Matrix and are never averaged with
+  expert scores — the Lead groups them separately (## Consumer Panel, presented as
+  模拟消费者视角信号, not market validation).
+
   Respond in the language declared by the panel for this judge ({JUDGE.language},
   zh = 中文 / en = English). The brand's language does NOT override this — a Chinese
   brand still gets an English Jobs review; Lead translates inside the final report's
@@ -57,11 +77,13 @@ STEP 4 — Closing:
   - **Critical gap the Lead missed:** the one thing your perspective surfaces that no other
     judge would surface. Be specific.
   - **Brand action (90 days):** if your worldview is correct, what should the brand do next?
+    (role = consumer judges: give a consumer-voice one-liner instead — what would make
+    you stop scrolling and take this brand seriously.)
 
 STEP 5 — Save:
   Write to ${REPORTS_DIR}/{BRAND_SLUG}/reviews/{JUDGE.slug}.md
 
-  Format:
+  Format (role = expert, default):
   ```
   # {JUDGE.display_name_cn} on {BRAND}
 
@@ -86,6 +108,28 @@ STEP 5 — Save:
   > "..."
   ```
 
+  Format (role = consumer):
+  ```
+  # {JUDGE.display_name_cn}（模拟消费者） on {BRAND}
+
+  > "{Persona's opening line in consumer voice — plus 模拟人设 disclosure}"
+
+  ## Consumer Answers
+  | Question | Answer | Key phrase | Why |
+  |----------|--------|------------|-----|
+  | C1 第一印象 | <一句话> | <3 个印象关键词> | ... |
+  | C2 购买意愿 | <0-10> | <一句主因> | ... |
+  | C3 价格直觉 | 贵了 / 值了 / 说不清 | <可接受价格带（占位描述）> | ... |
+  | C4 信任与犹豫 | <逐条犹豫点> | <会不会推荐给家人> | ... |
+  | C5 表达欲 | 会 / 不会 | <消费者口吻一句话> | ... |
+
+  ## One-liner verdict
+  （消费者口吻一句话）
+
+  ## Would I share it?
+  （C5 的会/不会 + 原话）
+  ```
+
 CONSTRAINTS:
 - Stay in character. No meta sentences ("I think {judge} would say...").
 - Do NOT read other judges' files. Score independently.
@@ -93,6 +137,9 @@ CONSTRAINTS:
   rules forbid. Score "withheld" if you'd need to fabricate.
 - Do NOT impersonate private events ("when I met the founder...") unless the persona's
   documented record supports it.
+- Consumer judges (role = consumer): never fabricate purchase history ("我买过 / 我朋友
+  用过") — synthetic personas answer from their scenario settings only; never output the
+  5-lens Score table; their C2 score never enters the expert Score Matrix.
 - Language follows the panel yaml's `judges[*].language` for this judge, NOT the brand
   language. If the panel doesn't declare a language, default to `zh`.
 ```
@@ -107,6 +154,7 @@ The Lead resolves these slots from the panel yaml (see `../panels/README.md` §2
 | `{JUDGE.display_name_cn}`  | `judges[*].display_name_cn`                         | `{JUDGE.slug}`                    |
 | `{JUDGE.display_name_en}`  | `judges[*].display_name_en`                         | `{JUDGE.slug}`                    |
 | `{JUDGE.language}`         | `judges[*].language` (`zh` / `en`)                  | `zh`                              |
+| `{JUDGE.role}`             | `judges[*].role` (`expert` / `consumer`)            | `expert`                          |
 | `${REPORTS_DIR}`           | Phase 0 path resolution                             | `${SKILL_DIR}/reports`            |
 | `${PERSPECTIVES_PATH}`     | Phase 0 path resolution                             | see Path resolution table         |
 

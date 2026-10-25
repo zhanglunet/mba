@@ -45,6 +45,16 @@ export const GENERATED_PANELS: Record<string, GeneratedPanel> = {
       "xuxin"
     ]
   },
+  "consumer-mixed": {
+    "name": "consumer-mixed",
+    "display_name": "Consumer Mixed Panel (simulated)",
+    "description": "模拟消费者视角评委组（合成人设，非真实市场调研）：直觉快判 + 研究验证 + 怀疑 求证三种决策风格互补，覆盖第一印象 / 购买意愿 / 价格直觉 / 信任犹豫 / 表达欲 （C1–C5 题组）。与专家 panel 并排互补、分开展示，不换算、不平均。",
+    "judges": [
+      "first-glance-shopper",
+      "homework-buyer",
+      "brand-skeptic"
+    ]
+  },
   "cross-border": {
     "name": "cross-border",
     "display_name": "Cross-Border Panel",
@@ -132,4 +142,4 @@ export const GENERATED_PANELS: Record<string, GeneratedPanel> = {
   }
 };
 
-export const PANEL_NAMES = ["ai-app-cn", "auto", "consumer-cn", "cross-border", "default", "edu-cn", "luxury-en", "security-cn-global", "vc-cn", "vc-en"] as const;
+export const PANEL_NAMES = ["ai-app-cn", "auto", "consumer-cn", "consumer-mixed", "cross-border", "default", "edu-cn", "luxury-en", "security-cn-global", "vc-cn", "vc-en"] as const;

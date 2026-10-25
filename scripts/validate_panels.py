@@ -112,6 +112,12 @@ def main() -> int:
             if language not in {"zh", "en"}:
                 errors.append(f"{path.name}: judge {slug!r} has unsupported language {language!r}")
 
+            # PRD-178/T1 §五.1:可选 role 字段,缺省 expert;consumer 评委的人设目录
+            # 解析由下方 perspective_exists 检查对全体评委统一把关。
+            role = judge.get("role", "expert")
+            if role not in {"expert", "consumer"}:
+                errors.append(f"{path.name}: judge {slug!r} has unsupported role {role!r}")
+
             weight = judge.get("weight", "1.0")
             try:
                 if float(weight) <= 0:

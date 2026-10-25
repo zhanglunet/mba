@@ -1,5 +1,5 @@
 {
-  "count": 91,
+  "count": 95,
   "items": [
     {
       "type": "report",
@@ -219,6 +219,14 @@
     },
     {
       "type": "panel",
+      "slug": "consumer-mixed",
+      "title": "Consumer Mixed Panel (simulated)",
+      "text": "模拟消费者视角评委组（合成人设，非真实市场调研）：直觉快判 + 研究验证 + 怀疑 求证三种决策风格互补，覆盖第一印象 / 购买意愿 / 价格直觉 / 信任犹豫 / 表达欲 （C1–C5 题组）。与专家 panel 并排互补、分开展示，不换算、不平均。",
+      "url": "/api/panels/consumer-mixed.json",
+      "api_url": "/api/panels/consumer-mixed.json"
+    },
+    {
+      "type": "panel",
       "slug": "cross-border",
       "title": "Cross-Border Panel",
       "text": "出海 / 跨境电商 panel:极致下沉算法供应链 + 静默产品力 + 极致供应链数据驱动 + 失败者复盘 + 行业观察者补位。 给跨境电商、出海消费品牌、SaaS 出海、TikTok 商品做影响力审计。",
@@ -291,6 +299,14 @@
     },
     {
       "type": "judge",
+      "slug": "brand-skeptic",
+      "title": "brand-skeptic-perspective",
+      "text": "模拟消费者人设（合成角色，非真实人物）——默认不信的怀疑求证型消费者视角。 先问谁在背书、有没有翻车记录，反感话术，负面信息权重高于正面。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。",
+      "url": "/api/judges/brand-skeptic.json",
+      "api_url": "/api/judges/brand-skeptic.json"
+    },
+    {
+      "type": "judge",
       "slug": "burton",
       "title": "burton-perspective",
       "text": "Sarah Burton (creative director of Givenchy from 2024; previously creative director of Alexander McQueen, 2010–2023) — the maker's hands: the atelier is the heart and soul, it comes alive in the fitting, how the woman feels (armor, but still herself), a couture look-by-look mindset, creating out of nothing / \"it was never 'no'\", steward the DNA yet author for today. Full tier: pure first-party (39+ verbatim from her clean-label interviews, only her answers, 100% first-party by count); research in references/research/01-06.md.",
@@ -315,6 +331,14 @@
     },
     {
       "type": "judge",
+      "slug": "first-glance-shopper",
+      "title": "first-glance-shopper-perspective",
+      "text": "模拟消费者人设（合成角色，非真实人物）——货架 / 商详页 3 秒扫描型直觉快判视角。 凭视觉与一句话价值主张做第一印象判断，记不住就划走。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。",
+      "url": "/api/judges/first-glance-shopper.json",
+      "api_url": "/api/judges/first-glance-shopper.json"
+    },
+    {
+      "type": "judge",
       "slug": "fusheng",
       "title": "fusheng-perspective",
       "text": "傅盛（猎豹移动 / Cheetah Mobile 创始人&CEO，猎户星空董事长，傅盛AI / OpenClaw\"龙虾\"项目发起人，1978年生）的思维框架与表达方式。 基于6路并行调研（约186条来源、80%一手占比）提炼6个核心心智模型、8条决策启发式和完整的\"AI布道者\"表达DNA。 用途：作为思维顾问，用傅盛的视角分析AI应用 / Agent / 出海 / 红海产品 / 创业战略 / 大模型vs应用 / 个人认知升级 / 中年二次创业问题。",
@@ -328,6 +352,14 @@
       "text": "何小鹏(He Xpeng,小鹏汽车 XPENG 董事长 / CEO,1977 年生,UC 浏览器创始人 → 阿里 → 小鹏汽车)的品牌与产品判断视角。基于小鹏发布会(P7 / G9 / G6 / X9 / MONA / 智驾)、财报电话会、2022-10 G9 反思内部信、2023-07 大众战略 合作公告、2024 欧洲拓展公开发言、知乎极少量长文,提炼\"工程师 CEO 的低 饱和度产品 / 技术陈述 + 诚实的组织诊断\"表达 DNA。",
       "url": "/api/judges/hexiaopeng.json",
       "api_url": "/api/judges/hexiaopeng.json"
+    },
+    {
+      "type": "judge",
+      "slug": "homework-buyer",
+      "title": "homework-buyer-perspective",
+      "text": "模拟消费者人设（合成角色，非真实人物）——买前必做功课的研究验证型买家视角。 买前必看第三方评测、差评区、横评对照，宣传点必须能被交叉印证才信。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。",
+      "url": "/api/judges/homework-buyer.json",
+      "api_url": "/api/judges/homework-buyer.json"
     },
     {
       "type": "judge",

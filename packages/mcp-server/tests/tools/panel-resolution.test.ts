@@ -18,10 +18,11 @@ function mockStore(): FilesystemStore {
 }
 
 describe('panel data integrity', () => {
-  it('bundles 10 industry panels', () => {
-    expect(PANEL_NAMES.length).toBe(10);
+  it('bundles 10 industry panels + consumer-mixed (PRD-178)', () => {
+    expect(PANEL_NAMES.length).toBe(11);
     expect(GENERATED_PANELS['luxury-en']).toBeDefined();
     expect(GENERATED_PANELS['vc-en']).toBeDefined();
+    expect(GENERATED_PANELS['consumer-mixed']).toBeDefined();
   });
 
   it('every judge in every panel has a bundled persona', () => {
@@ -35,8 +36,8 @@ describe('panel data integrity', () => {
     }
   });
 
-  it('bundles all 43 unique judges', () => {
-    expect(Object.keys(GENERATED_JUDGES).length).toBe(43);
+  it('bundles all 46 unique judges (43 expert + 3 simulated consumer, PRD-178)', () => {
+    expect(Object.keys(GENERATED_JUDGES).length).toBe(46);
   });
 });
 

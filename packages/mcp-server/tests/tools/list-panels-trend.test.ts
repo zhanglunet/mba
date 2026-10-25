@@ -7,9 +7,9 @@ import { getBrandTrend } from '../../src/tools/get-brand-trend.js';
 // ── list_panels ───────────────────────────────────────────────────────────────
 
 describe('listPanels', () => {
-  it('returns default + 10 industry panels, each with an enriched roster', () => {
+  it('returns default + 10 industry panels + consumer-mixed (PRD-178), each with an enriched roster', () => {
     const { panels } = listPanels();
-    expect(panels).toHaveLength(11);
+    expect(panels).toHaveLength(12);
     const vcEn = panels.find(p => p.name === 'vc-en')!;
     expect(vcEn.judges.map(j => j.slug)).toContain('paulg');
     for (const j of vcEn.judges) {

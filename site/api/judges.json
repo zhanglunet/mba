@@ -1,5 +1,5 @@
 {
-  "count": 43,
+  "count": 46,
   "items": [
     {
       "slug": "arnault",
@@ -16,6 +16,14 @@
       "summary": "Anna Wintour (editor-in-chief of US Vogue 1988–2025; global chief content officer, Condé Nast) — the arbiter's eye: timelessness & clarity of purpose over trend, power/attitude & making people more themselves, self-possession, \"backwards and forwards at once\", champion-the-new / community-not-elitism, crisis-as-catalyst. Full tier: pure first-party (39+ verbatim from her signed Vogue Editor's Letters & tribute letters, 100% first-party by byline); research in references/research/01-06.md.",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/awintour-perspective/SKILL.md",
       "api_url": "/api/judges/awintour.json"
+    },
+    {
+      "slug": "brand-skeptic",
+      "name": "brand-skeptic-perspective",
+      "name_cn": "品牌怀疑者（模拟人设）",
+      "summary": "模拟消费者人设（合成角色，非真实人物）——默认不信的怀疑求证型消费者视角。 先问谁在背书、有没有翻车记录，反感话术，负面信息权重高于正面。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/brand-skeptic-perspective/SKILL.md",
+      "api_url": "/api/judges/brand-skeptic.json"
     },
     {
       "slug": "burton",
@@ -42,6 +50,14 @@
       "api_url": "/api/judges/cucinelli.json"
     },
     {
+      "slug": "first-glance-shopper",
+      "name": "first-glance-shopper-perspective",
+      "name_cn": "第一眼顾客（模拟人设）",
+      "summary": "模拟消费者人设（合成角色，非真实人物）——货架 / 商详页 3 秒扫描型直觉快判视角。 凭视觉与一句话价值主张做第一印象判断，记不住就划走。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/first-glance-shopper-perspective/SKILL.md",
+      "api_url": "/api/judges/first-glance-shopper.json"
+    },
+    {
       "slug": "fusheng",
       "name": "fusheng-perspective",
       "name_cn": "傅盛",
@@ -56,6 +72,14 @@
       "summary": "何小鹏(He Xpeng,小鹏汽车 XPENG 董事长 / CEO,1977 年生,UC 浏览器创始人 → 阿里 → 小鹏汽车)的品牌与产品判断视角。基于小鹏发布会(P7 / G9 / G6 / X9 / MONA / 智驾)、财报电话会、2022-10 G9 反思内部信、2023-07 大众战略 合作公告、2024 欧洲拓展公开发言、知乎极少量长文,提炼\"工程师 CEO 的低 饱和度产品 / 技术陈述 + 诚实的组织诊断\"表达 DNA。",
       "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/hexiaopeng-perspective/SKILL.md",
       "api_url": "/api/judges/hexiaopeng.json"
+    },
+    {
+      "slug": "homework-buyer",
+      "name": "homework-buyer-perspective",
+      "name_cn": "功课型买家（模拟人设）",
+      "summary": "模拟消费者人设（合成角色，非真实人物）——买前必做功课的研究验证型买家视角。 买前必看第三方评测、差评区、横评对照，宣传点必须能被交叉印证才信。人设语料 = 本目录 references/scenario.md 的场景设定，不是任何真实人物语料。",
+      "skill_url": "https://github.com/zhanglunet/mba/blob/main/perspectives/homework-buyer-perspective/SKILL.md",
+      "api_url": "/api/judges/homework-buyer.json"
     },
     {
       "slug": "huangzheng",
