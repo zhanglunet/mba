@@ -1,0 +1,20 @@
+# metric-brand-auditor/panels/example-dual-consumer.yaml
+#
+# tests/fixtures/consumer-fake-position 专用样例 panel（PRD-178/T5）：仅用于
+# 假岗位消费者样例 findings.json 校验（R-4 judge_slug 归属核对）的 mini 仓库树，
+# 不属于任何真实评委组，不进 scripts/validate_panels.py 的真实 panel 清单
+# （该工具只扫真实 panels 目录）。全部内容为占位示例，不指向任何真实评委或品牌。
+
+name: example-dual-consumer
+display_name: Example Dual Consumer Panel (fixture, simulated)
+description: >
+  假岗位消费者样例专用占位 panel：只含一位模拟人设评委 fake-title-buyer，
+  其「头衔/经历」为样例内的不可验证声明（缺可验证证据的验收样本）。
+
+judges:
+  - slug: fake-title-buyer
+    display_name_cn: 头衔买家（模拟人设·假岗位样例）
+    display_name_en: Fake-Title Buyer (simulated, fixture only)
+    language: zh
+    role: consumer
+    weight: 1.0

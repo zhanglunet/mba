@@ -1,0 +1,88 @@
+{
+  "findings_version": "prd-177-v1",
+  "brand_slug": "example-dual-brand",
+  "panel": "example-dual-consumer",
+  "report_ref": "published/reports/example-dual-brand/versions/v1/report.md",
+  "counts": {
+    "confirmed": 0,
+    "needs_validation": 5,
+    "rejected": 0
+  },
+  "findings": [
+    {
+      "id": "F-fake-title-buyer-001",
+      "status": "needs_validation",
+      "judge_slug": "fake-title-buyer",
+      "lens": "c1",
+      "claim": "看着内行",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/fake-title-buyer.md#L11",
+          "quote": "样例设定里这句话像我工作台上的工具该说的话。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-fake-title-buyer-002",
+      "status": "needs_validation",
+      "judge_slug": "fake-title-buyer",
+      "lens": "c2",
+      "claim": "没有可核对凭证",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/fake-title-buyer.md#L12",
+          "quote": "我替公司买过三次的经验没法在材料里核对，凭证缺失就不下单。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-fake-title-buyer-003",
+      "status": "needs_validation",
+      "judge_slug": "fake-title-buyer",
+      "lens": "c3",
+      "claim": "没有可比价",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/fake-title-buyer.md#L13",
+          "quote": "材料没给同行对照价，价格带说不清。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-fake-title-buyer-004",
+      "status": "needs_validation",
+      "judge_slug": "fake-title-buyer",
+      "lens": "c4",
+      "claim": "担保不了",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/fake-title-buyer.md#L14",
+          "quote": "我的头衔证明不了产品好坏，推荐家人等于我担保。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-fake-title-buyer-005",
+      "status": "needs_validation",
+      "judge_slug": "fake-title-buyer",
+      "lens": "c5",
+      "claim": "没意思转发",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/fake-title-buyer.md#L15",
+          "quote": "没有可核对的实锤，转发它会显得我不专业。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用消费者评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用）；消费者结论是模拟人设视角信号、不代表市场调研，需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    }
+  ]
+}
