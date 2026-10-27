@@ -1,0 +1,88 @@
+{
+  "findings_version": "prd-177-v1",
+  "brand_slug": "example-dual-brand",
+  "panel": "example-dual-expert",
+  "report_ref": "published/reports/example-dual-brand/versions/v1/report.md",
+  "counts": {
+    "confirmed": 0,
+    "needs_validation": 5,
+    "rejected": 0
+  },
+  "findings": [
+    {
+      "id": "F-expert-judge-001",
+      "status": "needs_validation",
+      "judge_slug": "expert-judge",
+      "lens": "origin",
+      "claim": "占位理由：样例设定中的起源叙事自洽，但缺第三方印证。",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/expert-judge.md#L10",
+          "quote": "占位理由：样例设定中的起源叙事自洽，但缺第三方印证。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用），需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-expert-judge-002",
+      "status": "needs_validation",
+      "judge_slug": "expert-judge",
+      "lens": "identity",
+      "claim": "占位理由：样例设定中视觉与语言保持同一主张。",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/expert-judge.md#L11",
+          "quote": "占位理由：样例设定中视觉与语言保持同一主张。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用），需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-expert-judge-003",
+      "status": "needs_validation",
+      "judge_slug": "expert-judge",
+      "lens": "signal",
+      "claim": "占位理由：样例设定没有可核对的真实使用数据。",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/expert-judge.md#L12",
+          "quote": "占位理由：样例设定没有可核对的真实使用数据。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用），需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-expert-judge-004",
+      "status": "needs_validation",
+      "judge_slug": "expert-judge",
+      "lens": null,
+      "claim": "占位结论：样例设定中叙事自洽、真实信号不足，结论留待复核。",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/expert-judge.md#L15",
+          "quote": "占位结论：样例设定中叙事自洽、真实信号不足，结论留待复核。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用），需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    },
+    {
+      "id": "F-expert-judge-005",
+      "status": "needs_validation",
+      "judge_slug": "expert-judge",
+      "lens": null,
+      "claim": "占位缺口：样例设定没有提供与竞品的对照数据。",
+      "evidence": [
+        {
+          "source_ref": "published/reports/example-dual-brand/versions/v1/reviews/expert-judge.md#L18",
+          "quote": "占位缺口：样例设定没有提供与竞品的对照数据。",
+          "kind": "review"
+        }
+      ],
+      "unresolved_fact": "适配层默认降级：该结论仅引用评委落笔原文单条依据，未满足 confirmed 进入条件（evidence ≥2 条且覆盖 ≥2 种 kind，或含 synthesis 逐字引用），需评委复核或下一轮 synthesis 交叉验证后定三态。"
+    }
+  ]
+}

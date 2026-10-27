@@ -1,0 +1,18 @@
+# metric-brand-auditor/panels/example-dual-expert.yaml
+#
+# tests/fixtures/consumer-fake-position 专用样例 panel（PRD-178/T5）：双视角对照
+# 演示的专家侧 mini panel，仅用于 findings-expert.json 校验（R-4 judge_slug 归属
+# 核对）。不属于任何真实评委组，不进 scripts/validate_panels.py 的真实 panel
+# 清单。全部内容为占位示例，不指向任何真实评委或品牌。
+
+name: example-dual-expert
+display_name: Example Dual Expert Panel (fixture)
+description: >
+  双视角对照演示专用占位 panel：只含一位样例专家评委 expert-judge（5 镜头）。
+
+judges:
+  - slug: expert-judge
+    display_name_cn: 示例评委（占位）
+    display_name_en: Example Judge (placeholder)
+    language: zh
+    weight: 1.0
