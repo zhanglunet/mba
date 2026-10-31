@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "schema": 1,
+    "updated": "2026-10-30",
+    "sources": [
+      "dashboard.html",
+      "ask.html",
+      "site/index.html",
+      "scripts/genui_charts.py"
+    ],
+    "attribution": "form-only, no code or rule text reused (pbakaus/impeccable Apache-2.0)",
+    "compat": "PRD-098 openui + PRD-099 chart token 上游"
+  },
+  "tokens": {
+    "color": {
+      "primary": "#1a73e8",
+      "secondary": "#34a853",
+      "danger": "#ea4335",
+      "warning": "#fbbc04",
+      "text": "#202124",
+      "text_secondary": "#5f6368",
+      "background": "#ffffff",
+      "surface": "#f8f9fa"
+    },
+    "font": {
+      "primary_stack": "system-ui, -apple-system, sans-serif",
+      "mono_stack": "monospace"
+    },
+    "size": {
+      "h1": "28px",
+      "h2": "22px",
+      "h3": "18px",
+      "body": "14px",
+      "caption": "12px"
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px"
+    },
+    "radius": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px"
+    },
+    "motion": {
+      "duration_fast": "150ms",
+      "duration_normal": "300ms",
+      "easing": "ease-in-out"
+    }
+  },
+  "rules": [
+    {
+      "id": "DL-C01",
+      "description": "品牌色主按钮必须使用 primary",
+      "severity": "hard"
+    },
+    {
+      "id": "DL-C02",
+      "description": "文本对比度不低于 4.5:1",
+      "severity": "hard"
+    },
+    {
+      "id": "DL-T01",
+      "description": "标题字号必须来自字号阶梯",
+      "severity": "hard"
+    },
+    {
+      "id": "DL-S01",
+      "description": "留白间距必须来自间距档位",
+      "severity": "soft"
+    },
+    {
+      "id": "DL-M01",
+      "description": "动效时长必须使用预设档位",
+      "severity": "soft"
+    }
+  ],
+  "checks": {
+    "DL-C01": "machine",
+    "DL-C02": "manual",
+    "DL-T01": "machine",
+    "DL-S01": "machine",
+    "DL-M01": "machine"
+  }
+}
