@@ -1,0 +1,2843 @@
+{
+  "schema": "perspective-discoverability-report/v1",
+  "scope": "跨工具可发现性·结构级验证（真实异构工具加载实测归 T5 #1174）",
+  "criteria": "SKILL.md + frontmatter name(=目录名, kebab-case)/description(非空≤1024)/路径规范/正文非空/无内网主机与凭据（公开引文 URL 不在违规面）+ metadata.version/standard + 触发式句式 + name 全库唯一（PRD-199 消费纪律与 226/T3 同口径）",
+  "perspectives_dir": "/Users/zhang/github/mba/perspectives",
+  "results": [
+    {
+      "skill": "arnault-perspective",
+      "name": "arnault-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1032 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "awintour-perspective",
+      "name": "awintour-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "brand-skeptic-perspective",
+      "name": "brand-skeptic-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "burton-perspective",
+      "name": "burton-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1076 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "chennian-perspective",
+      "name": "chennian-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "cucinelli-perspective",
+      "name": "cucinelli-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "first-glance-shopper-perspective",
+      "name": "first-glance-shopper-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "fusheng-perspective",
+      "name": "fusheng-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1186 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "hexiaopeng-perspective",
+      "name": "hexiaopeng-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "homework-buyer-perspective",
+      "name": "homework-buyer-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "huangzheng-perspective",
+      "name": "huangzheng-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "jensenhuang-perspective",
+      "name": "jensenhuang-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "jiangnanchun-perspective",
+      "name": "jiangnanchun-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "jobs-perspective",
+      "name": "jobs-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "leijun-perspective",
+      "name": "leijun-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "libin-perspective",
+      "name": "libin-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "likejia-perspective",
+      "name": "likejia-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "lixiang-perspective",
+      "name": "lixiang-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "luoyonghao-perspective",
+      "name": "luoyonghao-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "musk-perspective",
+      "name": "musk-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1282 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "naval-perspective",
+      "name": "naval-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1148 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "paulg-perspective",
+      "name": "paulg-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "pmarca-perspective",
+      "name": "pmarca-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1214 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "pthiel-perspective",
+      "name": "pthiel-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "renzhengfei-perspective",
+      "name": "renzhengfei-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "rhoffman-perspective",
+      "name": "rhoffman-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1231 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "salkhan-perspective",
+      "name": "salkhan-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "satyanadella-perspective",
+      "name": "satyanadella-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "shennanpeng-perspective",
+      "name": "shennanpeng-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "shouzichew-perspective",
+      "name": "shouzichew-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "tomford-perspective",
+      "name": "tomford-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1094 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "wanghuiwen-perspective",
+      "name": "wanghuiwen-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "wu-jundong-perspective",
+      "name": "wu-jundong-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 长度",
+          "ok": false,
+          "reason": "description 1386 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "xuxin-perspective",
+      "name": "xuxin-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "yangjianhui-perspective",
+      "name": "yangjianhui-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "yangzhilin-perspective",
+      "name": "yangzhilin-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "yuminhong-perspective",
+      "name": "yuminhong-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhang-yiming-perspective",
+      "name": "zhang-yiming-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": false,
+          "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhangbangxin-perspective",
+      "name": "zhangbangxin-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhanglan-perspective",
+      "name": "zhanglan-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhanglei-perspective",
+      "name": "zhanglei-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhangmingzheng-perspective",
+      "name": "zhangmingzheng-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhongshanshan-perspective",
+      "name": "zhongshanshan-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhouhongyi-perspective",
+      "name": "zhouhongyi-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhuangshuai-perspective",
+      "name": "zhuangshuai-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "skill": "zhuxiaohu-perspective",
+      "name": "zhuxiaohu-perspective",
+      "ok": false,
+      "checks": [
+        {
+          "item": "frontmatter 可解析",
+          "ok": true
+        },
+        {
+          "item": "name 合规且与目录同名",
+          "ok": true
+        },
+        {
+          "item": "description 非空且长度合规",
+          "ok": true
+        },
+        {
+          "item": "路径规范（无空格大写）",
+          "ok": true
+        },
+        {
+          "item": "metadata.version 在位",
+          "ok": false,
+          "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+        },
+        {
+          "item": "metadata.standard 对齐声明",
+          "ok": false,
+          "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+        },
+        {
+          "item": "触发式句式（Use as / Explicit triggers）",
+          "ok": true
+        },
+        {
+          "item": "正文非空",
+          "ok": true
+        },
+        {
+          "item": "无密钥字面量",
+          "ok": true
+        },
+        {
+          "item": "无内网主机/凭据（公开引文 URL 不在违规面）",
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 46,
+    "passed": 0,
+    "failed": 46,
+    "failure_kinds": {
+      "metadata.version 在位": 46,
+      "metadata.standard 对齐声明": 46,
+      "description 长度": 9,
+      "触发式句式（Use as / Explicit triggers）": 9
+    },
+    "failure_reasons": [
+      {
+        "skill": "arnault-perspective",
+        "item": "description 长度",
+        "reason": "description 1032 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "arnault-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "arnault-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "awintour-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "awintour-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "brand-skeptic-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "brand-skeptic-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "burton-perspective",
+        "item": "description 长度",
+        "reason": "description 1076 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "burton-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "burton-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "chennian-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "chennian-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "cucinelli-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "cucinelli-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "first-glance-shopper-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "first-glance-shopper-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "fusheng-perspective",
+        "item": "description 长度",
+        "reason": "description 1186 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "fusheng-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "fusheng-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "fusheng-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "hexiaopeng-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "hexiaopeng-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "hexiaopeng-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "homework-buyer-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "homework-buyer-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "huangzheng-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "huangzheng-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "jensenhuang-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "jensenhuang-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "jiangnanchun-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "jiangnanchun-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "jobs-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "jobs-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "jobs-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "leijun-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "leijun-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "leijun-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "libin-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "libin-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "libin-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "likejia-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "likejia-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "likejia-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "lixiang-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "lixiang-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "lixiang-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "luoyonghao-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "luoyonghao-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "musk-perspective",
+        "item": "description 长度",
+        "reason": "description 1282 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "musk-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "musk-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "naval-perspective",
+        "item": "description 长度",
+        "reason": "description 1148 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "naval-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "naval-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "paulg-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "paulg-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "pmarca-perspective",
+        "item": "description 长度",
+        "reason": "description 1214 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "pmarca-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "pmarca-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "pthiel-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "pthiel-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "renzhengfei-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "renzhengfei-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "rhoffman-perspective",
+        "item": "description 长度",
+        "reason": "description 1231 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "rhoffman-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "rhoffman-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "salkhan-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "salkhan-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "satyanadella-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "satyanadella-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "shennanpeng-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "shennanpeng-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "shouzichew-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "shouzichew-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "tomford-perspective",
+        "item": "description 长度",
+        "reason": "description 1094 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "tomford-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "tomford-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "wanghuiwen-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "wanghuiwen-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "wu-jundong-perspective",
+        "item": "description 长度",
+        "reason": "description 1386 字 > 1024 上限（工具侧会被截断/拒载；建议保留前 1024 字内的角色与 Use as 摘要，全文移入 references/）"
+      },
+      {
+        "skill": "wu-jundong-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "wu-jundong-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "wu-jundong-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "xuxin-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "xuxin-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "yangjianhui-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "yangjianhui-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "yangzhilin-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "yangzhilin-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "yuminhong-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "yuminhong-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhang-yiming-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhang-yiming-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhang-yiming-perspective",
+        "item": "触发式句式（Use as / Explicit triggers）",
+        "reason": "description 缺 Use as:/Explicit triggers: 触发句式（T2 口径）"
+      },
+      {
+        "skill": "zhangbangxin-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhangbangxin-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhanglan-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhanglan-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhanglei-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhanglei-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhangmingzheng-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhangmingzheng-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhongshanshan-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhongshanshan-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhouhongyi-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhouhongyi-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhuangshuai-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhuangshuai-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      },
+      {
+        "skill": "zhuxiaohu-perspective",
+        "item": "metadata.version 在位",
+        "reason": "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）"
+      },
+      {
+        "skill": "zhuxiaohu-perspective",
+        "item": "metadata.standard 对齐声明",
+        "reason": "缺 standard: agentskills-2026-10（PRD-199 口径；随 T4 补齐）"
+      }
+    ]
+  }
+}
