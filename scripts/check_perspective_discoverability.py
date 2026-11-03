@@ -114,11 +114,18 @@ def check_skill(skill_dir: Path) -> dict:
         record("路径规范（无空格大写）", True)
 
     has_version = re.search(r"^\s+version:\s*\S", frontmatter, re.MULTILINE) is not None
-    if has_version:
-        record("metadata.version 在位", True)
+    version_value = (re.search(r"^\s+version:\s*(\S+)", frontmatter, re.MULTILINE).group(1)
+                     if has_version else None)
+    if has_version and re.match(r"^\d+\.\d+\.\d+$", version_value) \
+            and version_value != "0.0.0":
+        record("metadata.version 规范（semver 非 0.0.0）", True)
+    elif has_version:
+        record("metadata.version 规范", False,
+               f"version={version_value!r} 不符合 semver 或为 0.0.0"
+               "（T4 VERSIONING §1，随版本与变更规范落地补齐）")
     else:
         record("metadata.version 在位", False,
-               "缺 metadata.version（PRD-199 口径；随 T4 版本与变更规范落地补齐）")
+               "缺 metadata.version（T4 VERSIONING §1，随版本与变更规范落地补齐）")
     if "standard: agentskills-2026-10" in frontmatter:
         record("metadata.standard 对齐声明", True)
     else:
