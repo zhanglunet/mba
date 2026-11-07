@@ -1,0 +1,16 @@
+{
+  "name": "mba-market-sizing",
+  "version": "0.1.0",
+  "description": "TAM/SAM/SOM 市场规模估算与增长模型",
+  "entry_skill": "mba-market/sizing",
+  "inputs": [
+    "industry",
+    "geography",
+    "product_description"
+  ],
+  "outputs": [
+    "market_sizing_model",
+    "assumptions_log"
+  ],
+  "dependencies": []
+}
