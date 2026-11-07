@@ -1,0 +1,698 @@
+{
+  "schema": "judge-pack-registry/v1",
+  "alignment": "skill-pack-layering-spec@1.0.0",
+  "alignment_note": "技能包分层规范：skill-pack-layering-spec@1.0.0（livepowers PRD-227/T1 草案）。本登记册为评委归属与检索的单一事实源（规范 §7）；映射数据源为 T1 docs/plans/2026-10-26-judge-pack-layering.md §四.2（映射是数据不是代码）。",
+  "borrowed_form": "「分层 + 总登记册」组织形态借鉴 AgriciDaniel/claude-seo（MIT License，Copyright (c) Daniel Agrici，https://github.com/AgriciDaniel/claude-seo）：只复用形态，未复用其代码与文本。",
+  "version_policy": "全库 lockstep 0.1.0（规范 §6.3 允许的本地政策；包内评委增删或定位变更至少升 MINOR）",
+  "packs": [
+    {
+      "name": "mba-brand",
+      "positioning": "先回答「这个品牌是谁、占什么位置」——看定位、心智占领与长期品牌资产的评委组。",
+      "version": "0.1.0",
+      "spec_version": "1.0.0",
+      "skills": [
+        {
+          "name": "arnault",
+          "triggers": "\"用 Bernard Arnault 视角\", \"LVMH / Arnault 会怎么看\", \"star brand lens\", \"luxury empire perspective\".",
+          "x-name_cn": "伯纳德·阿尔诺",
+          "x-role": "expert",
+          "x-panels": [
+            "luxury-en"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "品牌组合经营与 Maison 长期价值、desirability",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 arnault",
+          "x-perspective_ref": "perspectives/arnault-perspective/"
+        },
+        {
+          "name": "chennian",
+          "triggers": "「用陈年视角」「凡客会怎么看」「极致单品 / 复盘视角」。",
+          "x-name_cn": "陈年",
+          "x-role": "expert",
+          "x-panels": [
+            "cross-border"
+          ],
+          "x-secondary_packs": [
+            "compliance"
+          ],
+          "x-positioning": "凡客式品牌透支的失败复盘",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 chennian",
+          "x-perspective_ref": "perspectives/chennian-perspective/"
+        },
+        {
+          "name": "cucinelli",
+          "triggers": "\"用 Brunello Cucinelli 视角\", \"Cucinelli 会怎么看\", \"humanistic capitalism lens\", \"quiet luxury / craftsmanship perspective\".",
+          "x-name_cn": "布鲁内罗·库奇内利",
+          "x-role": "expert",
+          "x-panels": [
+            "luxury-en"
+          ],
+          "x-secondary_packs": [
+            "compliance"
+          ],
+          "x-positioning": "人文资本主义品牌哲学",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 cucinelli",
+          "x-perspective_ref": "perspectives/cucinelli-perspective/"
+        },
+        {
+          "name": "huangzheng",
+          "triggers": "「用黄峥视角」「拼多多 / 多多会怎么看」「本分 / 新电商视角」。",
+          "x-name_cn": "黄峥",
+          "x-role": "expert",
+          "x-panels": [
+            "cross-border"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "下沉市场品类与供应链品牌打法",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 huangzheng",
+          "x-perspective_ref": "perspectives/huangzheng-perspective/"
+        },
+        {
+          "name": "jensenhuang",
+          "triggers": "“用 Jensen Huang 视角”, “黄仁勋怎么看”, “NVIDIA 式平台生态”, “AI 基础设施评委”, “accelerated computing lens”.",
+          "x-name_cn": "黄仁勋",
+          "x-role": "expert",
+          "x-panels": [
+            "security-cn-global"
+          ],
+          "x-secondary_packs": [
+            "copy"
+          ],
+          "x-positioning": "平台生态心智（CUDA）与技术领导品牌",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 jensenhuang",
+          "x-perspective_ref": "perspectives/jensenhuang-perspective/"
+        },
+        {
+          "name": "jiangnanchun",
+          "triggers": "「用江南春视角」「分众会怎么看」「抢占心智 / 一词定位 / 饱和攻击视角」。",
+          "x-name_cn": "江南春",
+          "x-role": "expert",
+          "x-panels": [
+            "consumer-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "媒介杠杆与心智占领，品牌定位的锚点评委",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 jiangnanchun",
+          "x-perspective_ref": "perspectives/jiangnanchun-perspective/"
+        },
+        {
+          "name": "leijun",
+          "triggers": "心智占领 + 用户社区，品牌与创始人 IP 一体",
+          "x-name_cn": "雷军",
+          "x-role": "expert",
+          "x-panels": [
+            "auto",
+            "vc-cn"
+          ],
+          "x-secondary_packs": [
+            "copy"
+          ],
+          "x-positioning": "心智占领 + 用户社区，品牌与创始人 IP 一体",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 leijun",
+          "x-perspective_ref": "perspectives/leijun-perspective/"
+        },
+        {
+          "name": "libin",
+          "triggers": "“用户企业”，社区即品牌资产",
+          "x-name_cn": "李斌",
+          "x-role": "expert",
+          "x-panels": [
+            "auto"
+          ],
+          "x-secondary_packs": [
+            "copy"
+          ],
+          "x-positioning": "“用户企业”，社区即品牌资产",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 libin",
+          "x-perspective_ref": "perspectives/libin-perspective/"
+        },
+        {
+          "name": "likejia",
+          "triggers": "Bot 派“新物种”，以新品类定义教育产品",
+          "x-name_cn": "李可佳",
+          "x-role": "expert",
+          "x-panels": [
+            "default",
+            "edu-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "Bot 派“新物种”，以新品类定义教育产品",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 likejia",
+          "x-perspective_ref": "perspectives/likejia-perspective/"
+        },
+        {
+          "name": "lixiang",
+          "triggers": "产品定义即定位，开创增程品类",
+          "x-name_cn": "李想",
+          "x-role": "expert",
+          "x-panels": [
+            "auto"
+          ],
+          "x-secondary_packs": [
+            "visual"
+          ],
+          "x-positioning": "产品定义即定位，开创增程品类",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 lixiang",
+          "x-perspective_ref": "perspectives/lixiang-perspective/"
+        },
+        {
+          "name": "musk",
+          "triggers": "\"use Elon Musk's perspective\", \"what would Musk say\", \"Musk view\", \"first-principles take on this\", \"if Musk were judging this brand\", \"Tesla/SpaceX founder lens\".",
+          "x-name_cn": "马斯克",
+          "x-role": "expert",
+          "x-panels": [
+            "auto",
+            "security-cn-global"
+          ],
+          "x-secondary_packs": [
+            "visual"
+          ],
+          "x-positioning": "第一性原理重构品类认知，创始人个人品牌",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 musk",
+          "x-perspective_ref": "perspectives/musk-perspective/"
+        },
+        {
+          "name": "pmarca",
+          "triggers": "\"用 Marc Andreessen 视角\", \"pmarca / a16z 会怎么看\", \"software eats the world lens\", \"product/market fit lens\", \"Andreessen perspective\".",
+          "x-name_cn": "马克·安德森",
+          "x-role": "expert",
+          "x-panels": [
+            "vc-en"
+          ],
+          "x-secondary_packs": [
+            "copy"
+          ],
+          "x-positioning": "Software-eats-world 品类创造叙事",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 pmarca",
+          "x-perspective_ref": "perspectives/pmarca-perspective/"
+        },
+        {
+          "name": "pthiel",
+          "triggers": "\"用 Peter Thiel 视角\", \"Thiel / Founders Fund 会怎么看\", \"zero to one lens\", \"contrarian monopoly perspective\".",
+          "x-name_cn": "彼得·蒂尔",
+          "x-role": "expert",
+          "x-panels": [
+            "vc-en"
+          ],
+          "x-secondary_packs": [
+            "compliance"
+          ],
+          "x-positioning": "0→1 独占式定位",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 pthiel",
+          "x-perspective_ref": "perspectives/pthiel-perspective/"
+        },
+        {
+          "name": "rhoffman",
+          "triggers": "\"用 Reid Hoffman 视角\", \"Reid / Greylock 会怎么看\", \"blitzscaling lens\", \"network effects perspective\", \"superagency lens\".",
+          "x-name_cn": "里德·霍夫曼",
+          "x-role": "expert",
+          "x-panels": [
+            "vc-en"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "网络效应决定品牌扩张上限",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 rhoffman",
+          "x-perspective_ref": "perspectives/rhoffman-perspective/"
+        },
+        {
+          "name": "salkhan",
+          "triggers": "\"用 Sal Khan 视角\", \"Khan Academy 会怎么看\", \"mastery learning lens\", \"AI tutor / Khanmigo perspective\".",
+          "x-name_cn": "萨尔曼·可汗",
+          "x-role": "expert",
+          "x-panels": [
+            "edu-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "普惠教育品牌使命与信任",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 salkhan",
+          "x-perspective_ref": "perspectives/salkhan-perspective/"
+        },
+        {
+          "name": "shennanpeng",
+          "triggers": "「用沈南鹏视角」「红杉中国会怎么看」「做多中国 / 赛手第一 VC 视角」。",
+          "x-name_cn": "沈南鹏",
+          "x-role": "expert",
+          "x-panels": [
+            "vc-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "平台型 LP，看品类机会与品牌可投性",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 shennanpeng",
+          "x-perspective_ref": "perspectives/shennanpeng-perspective/"
+        },
+        {
+          "name": "wanghuiwen",
+          "triggers": "「用王慧文视角」「王慧文 / 老王会怎么看」「清华产品课方法论」「规模效应/马太效应视角」。",
+          "x-name_cn": "王慧文",
+          "x-role": "expert",
+          "x-panels": [
+            "ai-app-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "连续创业的品类探索与产品定位判断",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 wanghuiwen",
+          "x-perspective_ref": "perspectives/wanghuiwen-perspective/"
+        },
+        {
+          "name": "wu-jundong",
+          "triggers": "Education becoming，教育理念即品牌定位",
+          "x-name_cn": "吴俊东",
+          "x-role": "expert",
+          "x-panels": [
+            "default",
+            "edu-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "Education becoming，教育理念即品牌定位",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 wu-jundong",
+          "x-perspective_ref": "perspectives/wu-jundong-perspective/"
+        },
+        {
+          "name": "xuxin",
+          "triggers": "「用徐新视角」「今日资本会怎么看」「消费品牌 VC / 第一品牌视角」。",
+          "x-name_cn": "徐新",
+          "x-role": "expert",
+          "x-panels": [
+            "consumer-cn",
+            "vc-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "消费投资“杀手锏”，看品牌可投性与品类冠军相",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 xuxin",
+          "x-perspective_ref": "perspectives/xuxin-perspective/"
+        },
+        {
+          "name": "yangjianhui",
+          "triggers": "「用阳萌视角」「Anker / 安克会怎么看」「第一性 / 求极致视角」「出海创造者视角」。",
+          "x-name_cn": "阳萌",
+          "x-role": "expert",
+          "x-panels": [
+            "consumer-cn",
+            "cross-border"
+          ],
+          "x-secondary_packs": [
+            "visual"
+          ],
+          "x-positioning": "以产品力立品牌（Anker 静默产品力）",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 yangjianhui",
+          "x-perspective_ref": "perspectives/yangjianhui-perspective/"
+        },
+        {
+          "name": "yangzhilin",
+          "triggers": "「用杨植麟视角」「Moonshot / Kimi 会怎么看」「模型层创始人视角」。",
+          "x-name_cn": "杨植麟",
+          "x-role": "expert",
+          "x-panels": [
+            "ai-app-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "以长上下文定义大模型品类，技术品类卡位",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 yangzhilin",
+          "x-perspective_ref": "perspectives/yangzhilin-perspective/"
+        },
+        {
+          "name": "zhang-yiming",
+          "triggers": "产品全球化与平台品牌势能",
+          "x-name_cn": "张一鸣",
+          "x-role": "expert",
+          "x-panels": [
+            "default"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "产品全球化与平台品牌势能",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 zhang-yiming",
+          "x-perspective_ref": "perspectives/zhang-yiming-perspective/"
+        },
+        {
+          "name": "zhangbangxin",
+          "triggers": "「用张邦鑫视角」「好未来 / 学而思会怎么看」「教育科技公平视角」「教不好等于抢钱」。",
+          "x-name_cn": "张邦鑫",
+          "x-role": "expert",
+          "x-panels": [
+            "edu-cn"
+          ],
+          "x-secondary_packs": [
+            "compliance"
+          ],
+          "x-positioning": "教育品牌的使命叙事与信任",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 zhangbangxin",
+          "x-perspective_ref": "perspectives/zhangbangxin-perspective/"
+        },
+        {
+          "name": "zhanglei",
+          "triggers": "「用张磊视角」「高瓴会怎么看」「长期主义价值投资视角」。",
+          "x-name_cn": "张磊",
+          "x-role": "expert",
+          "x-panels": [
+            "vc-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "长期主义，看品牌护城河",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 zhanglei",
+          "x-perspective_ref": "perspectives/zhanglei-perspective/"
+        },
+        {
+          "name": "zhongshanshan",
+          "triggers": "「用钟睒睒视角」「农夫山泉会怎么看」「产品主义 / 反低价内卷视角」。",
+          "x-name_cn": "钟睒睒",
+          "x-role": "expert",
+          "x-panels": [
+            "consumer-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "品类定义（“大自然的搬运工”）与渠道品牌叙事",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 zhongshanshan",
+          "x-perspective_ref": "perspectives/zhongshanshan-perspective/"
+        },
+        {
+          "name": "zhuxiaohu",
+          "triggers": "「用朱啸虎视角」「朱啸虎会怎么看」「VC 应用层视角」「金沙江会投吗」。",
+          "x-name_cn": "朱啸虎",
+          "x-role": "expert",
+          "x-panels": [
+            "ai-app-cn",
+            "vc-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "红海实战派，看品牌变现与模式成立度",
+          "x-acceptance_example": "审计任务命中「新品牌定位审计、品类竞争、品牌资产与可投性评估」时，期望 mba-brand 包召回包含 zhuxiaohu",
+          "x-perspective_ref": "perspectives/zhuxiaohu-perspective/"
+        }
+      ],
+      "x-pack_trigger": "新品牌定位审计、品类竞争、品牌资产与可投性评估",
+      "x-pack_kind": "sub-pack"
+    },
+    {
+      "name": "mba-copy",
+      "positioning": "看品牌怎么说——名字、话术、发布会与内容表达能否把定位说清、说动人。",
+      "version": "0.1.0",
+      "spec_version": "1.0.0",
+      "skills": [
+        {
+          "name": "awintour",
+          "triggers": "\"用 Anna Wintour 视角\", \"Vogue / Wintour 会怎么看\", \"taste gatekeeper lens\", \"fashion editor perspective\".",
+          "x-name_cn": "安娜·温图尔",
+          "x-role": "expert",
+          "x-panels": [
+            "luxury-en"
+          ],
+          "x-secondary_packs": [
+            "visual"
+          ],
+          "x-positioning": "编辑仲裁，Editor's Letters 定义内容品味",
+          "x-acceptance_example": "审计任务命中「命名与 slogan 评审、发布会与直播话术、创始人 IP 表达」时，期望 mba-copy 包召回包含 awintour",
+          "x-perspective_ref": "perspectives/awintour-perspective/"
+        },
+        {
+          "name": "fusheng",
+          "triggers": "布道式认知叙事",
+          "x-name_cn": "傅盛",
+          "x-role": "expert",
+          "x-panels": [
+            "ai-app-cn",
+            "default"
+          ],
+          "x-secondary_packs": [
+            "brand"
+          ],
+          "x-positioning": "布道式认知叙事",
+          "x-acceptance_example": "审计任务命中「命名与 slogan 评审、发布会与直播话术、创始人 IP 表达」时，期望 mba-copy 包召回包含 fusheng",
+          "x-perspective_ref": "perspectives/fusheng-perspective/"
+        },
+        {
+          "name": "luoyonghao",
+          "triggers": "「用罗永浩视角」「老罗会怎么看」「天生骄傲 / 创始人 IP 视角」。",
+          "x-name_cn": "罗永浩",
+          "x-role": "expert",
+          "x-panels": [
+            "consumer-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "发布会文案与表达风格，文案包锚点评委",
+          "x-acceptance_example": "审计任务命中「命名与 slogan 评审、发布会与直播话术、创始人 IP 表达」时，期望 mba-copy 包召回包含 luoyonghao",
+          "x-perspective_ref": "perspectives/luoyonghao-perspective/"
+        },
+        {
+          "name": "naval",
+          "triggers": "\"用 Naval 视角\", \"Naval Ravikant 会怎么看\", \"leverage & specific knowledge lens\", \"Naval perspective\".",
+          "x-name_cn": "纳瓦尔",
+          "x-role": "expert",
+          "x-panels": [
+            "vc-en"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "浓缩表达与媒体杠杆",
+          "x-acceptance_example": "审计任务命中「命名与 slogan 评审、发布会与直播话术、创始人 IP 表达」时，期望 mba-copy 包召回包含 naval",
+          "x-perspective_ref": "perspectives/naval-perspective/"
+        },
+        {
+          "name": "paulg",
+          "triggers": "\"用 Paul Graham 视角\", \"pg / YC 会怎么看\", \"make something people want lens\", \"Paul Graham perspective\".",
+          "x-name_cn": "保罗·格雷厄姆",
+          "x-role": "expert",
+          "x-panels": [
+            "vc-en"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "写作即思考，essay 式清晰表达",
+          "x-acceptance_example": "审计任务命中「命名与 slogan 评审、发布会与直播话术、创始人 IP 表达」时，期望 mba-copy 包召回包含 paulg",
+          "x-perspective_ref": "perspectives/paulg-perspective/"
+        },
+        {
+          "name": "yuminhong",
+          "triggers": "「用俞敏洪视角」「老俞会怎么看」「新东方 / 东方甄选视角」「教培转型怎么看」。",
+          "x-name_cn": "俞敏洪",
+          "x-role": "expert",
+          "x-panels": [
+            "edu-cn"
+          ],
+          "x-secondary_packs": [
+            "brand"
+          ],
+          "x-positioning": "以直播表达完成品牌重生",
+          "x-acceptance_example": "审计任务命中「命名与 slogan 评审、发布会与直播话术、创始人 IP 表达」时，期望 mba-copy 包召回包含 yuminhong",
+          "x-perspective_ref": "perspectives/yuminhong-perspective/"
+        },
+        {
+          "name": "zhanglan",
+          "triggers": "「用张兰视角」「麻六记会怎么看」「话题营销 / 餐饮直播视角」。",
+          "x-name_cn": "张兰",
+          "x-role": "expert",
+          "x-panels": [
+            "consumer-cn"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "直播话术与餐饮 IP 表达",
+          "x-acceptance_example": "审计任务命中「命名与 slogan 评审、发布会与直播话术、创始人 IP 表达」时，期望 mba-copy 包召回包含 zhanglan",
+          "x-perspective_ref": "perspectives/zhanglan-perspective/"
+        },
+        {
+          "name": "zhuangshuai",
+          "triggers": "「用庄帅视角」「零售电商分析师怎么看」「商业模式 / 供应链拆解视角」「货场人视角」。",
+          "x-name_cn": "庄帅",
+          "x-role": "expert",
+          "x-panels": [
+            "cross-border"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "署名专栏拆解，行业叙事写作",
+          "x-acceptance_example": "审计任务命中「命名与 slogan 评审、发布会与直播话术、创始人 IP 表达」时，期望 mba-copy 包召回包含 zhuangshuai",
+          "x-perspective_ref": "perspectives/zhuangshuai-perspective/"
+        }
+      ],
+      "x-pack_trigger": "命名与 slogan 评审、发布会与直播话术、创始人 IP 表达",
+      "x-pack_kind": "sub-pack"
+    },
+    {
+      "name": "mba-visual",
+      "positioning": "看品牌长什么样——产品与视觉识别是否配得上定位，第一眼是否成立。",
+      "version": "0.1.0",
+      "spec_version": "1.0.0",
+      "skills": [
+        {
+          "name": "burton",
+          "triggers": "\"用 Sarah Burton 视角\", \"McQueen / Givenchy 会怎么看\", \"atelier / craftsmanship lens\", \"creative-director-as-steward perspective\".",
+          "x-name_cn": "莎拉·伯顿",
+          "x-role": "expert",
+          "x-panels": [
+            "luxury-en"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "时装设计传承与工艺美学",
+          "x-acceptance_example": "审计任务命中「产品设计与包装评审、视觉识别系统、高端 / 时尚品牌审计」时，期望 mba-visual 包召回包含 burton",
+          "x-perspective_ref": "perspectives/burton-perspective/"
+        },
+        {
+          "name": "hexiaopeng",
+          "triggers": "智能汽车造型与座舱体验",
+          "x-name_cn": "何小鹏",
+          "x-role": "expert",
+          "x-panels": [
+            "auto"
+          ],
+          "x-secondary_packs": [
+            "brand"
+          ],
+          "x-positioning": "智能汽车造型与座舱体验",
+          "x-acceptance_example": "审计任务命中「产品设计与包装评审、视觉识别系统、高端 / 时尚品牌审计」时，期望 mba-visual 包召回包含 hexiaopeng",
+          "x-perspective_ref": "perspectives/hexiaopeng-perspective/"
+        },
+        {
+          "name": "jobs",
+          "triggers": "产品设计美学，视觉包锚点评委",
+          "x-name_cn": "乔布斯",
+          "x-role": "expert",
+          "x-panels": [
+            "default"
+          ],
+          "x-secondary_packs": [
+            "brand"
+          ],
+          "x-positioning": "产品设计美学，视觉包锚点评委",
+          "x-acceptance_example": "审计任务命中「产品设计与包装评审、视觉识别系统、高端 / 时尚品牌审计」时，期望 mba-visual 包召回包含 jobs",
+          "x-perspective_ref": "perspectives/jobs-perspective/"
+        },
+        {
+          "name": "tomford",
+          "triggers": "\"用 Tom Ford 视角\", \"Tom Ford 会怎么看\", \"glamour / branding lens\", \"creative director perspective\".",
+          "x-name_cn": "汤姆·福特",
+          "x-role": "expert",
+          "x-panels": [
+            "luxury-en"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "时装视觉体系，设计师即 CEO",
+          "x-acceptance_example": "审计任务命中「产品设计与包装评审、视觉识别系统、高端 / 时尚品牌审计」时，期望 mba-visual 包召回包含 tomford",
+          "x-perspective_ref": "perspectives/tomford-perspective/"
+        }
+      ],
+      "x-pack_trigger": "产品设计与包装评审、视觉识别系统、高端 / 时尚品牌审计",
+      "x-pack_kind": "sub-pack"
+    },
+    {
+      "name": "mba-compliance",
+      "positioning": "看品牌经不经得起查——安全、监管、危机与信任治理视角下的品牌成色。",
+      "version": "0.1.0",
+      "spec_version": "1.0.0",
+      "skills": [
+        {
+          "name": "renzhengfei",
+          "triggers": "“用任正非视角”, “华为式长期主义”, “硬科技组织怎么看”, “政企基础设施品牌”, “Ren Zhengfei perspective”.",
+          "x-name_cn": "任正非",
+          "x-role": "expert",
+          "x-panels": [
+            "security-cn-global"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "危机管理与合规体系，长期风险",
+          "x-acceptance_example": "审计任务命中「政企与安全行业品牌、监管敏感行业、出海合规与危机议题」时，期望 mba-compliance 包召回包含 renzhengfei",
+          "x-perspective_ref": "perspectives/renzhengfei-perspective/"
+        },
+        {
+          "name": "satyanadella",
+          "triggers": "“用 Satya Nadella 视角”, “微软 CEO 怎么看”, “企业级云安全平台”, “Microsoft Security lens”, “Nadella perspective”.",
+          "x-name_cn": "萨提亚·纳德拉",
+          "x-role": "expert",
+          "x-panels": [
+            "security-cn-global"
+          ],
+          "x-secondary_packs": [
+            "brand"
+          ],
+          "x-positioning": "企业级平台信任与治理",
+          "x-acceptance_example": "审计任务命中「政企与安全行业品牌、监管敏感行业、出海合规与危机议题」时，期望 mba-compliance 包召回包含 satyanadella",
+          "x-perspective_ref": "perspectives/satyanadella-perspective/"
+        },
+        {
+          "name": "shouzichew",
+          "triggers": "「用周受资视角」「TikTok 会怎么看」「全球平台 / 出海信任 / 地缘合规视角」。",
+          "x-name_cn": "周受资",
+          "x-role": "expert",
+          "x-panels": [
+            "cross-border"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "监管听证应对一线经验，全球化合规",
+          "x-acceptance_example": "审计任务命中「政企与安全行业品牌、监管敏感行业、出海合规与危机议题」时，期望 mba-compliance 包召回包含 shouzichew",
+          "x-perspective_ref": "perspectives/shouzichew-perspective/"
+        },
+        {
+          "name": "zhangmingzheng",
+          "triggers": "“用张明正视角”, “Trend Micro 创办人怎么看”, “亚洲安全全球化”, “企业安全品牌长期信任”, “Steve Chang perspective”.",
+          "x-name_cn": "张明正",
+          "x-role": "expert",
+          "x-panels": [
+            "security-cn-global"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "安全产业全球化，企业信任",
+          "x-acceptance_example": "审计任务命中「政企与安全行业品牌、监管敏感行业、出海合规与危机议题」时，期望 mba-compliance 包召回包含 zhangmingzheng",
+          "x-perspective_ref": "perspectives/zhangmingzheng-perspective/"
+        },
+        {
+          "name": "zhouhongyi",
+          "triggers": "“用周鸿祎视角”, “红衣教主怎么看”, “360 安全视角”, “中国网络安全心智评委”, “攻防实战判断这个品牌”.",
+          "x-name_cn": "周鸿祎",
+          "x-role": "expert",
+          "x-panels": [
+            "ai-app-cn",
+            "security-cn-global"
+          ],
+          "x-secondary_packs": [],
+          "x-positioning": "中国安全心智，合规包锚点评委",
+          "x-acceptance_example": "审计任务命中「政企与安全行业品牌、监管敏感行业、出海合规与危机议题」时，期望 mba-compliance 包召回包含 zhouhongyi",
+          "x-perspective_ref": "perspectives/zhouhongyi-perspective/"
+        }
+      ],
+      "x-pack_trigger": "政企与安全行业品牌、监管敏感行业、出海合规与危机议题",
+      "x-pack_kind": "sub-pack"
+    }
+  ],
+  "x-crosscut": {
+    "name": "mba-consumer",
+    "pack_kind": "cross-cutting",
+    "positioning": "受众侧的一面镜子——第一印象、购买意愿、价格直觉、信任犹豫与表达欲。",
+    "trigger": "与任一 sub-pack 并行，给专家结论加消费者校验（C1–C5 题组）",
+    "skills": [
+      {
+        "name": "first-glance-shopper",
+        "triggers": "“用普通消费者视角看”、“第一印象怎么样”、“会不会买”、 “消费者第一眼”、“购买意愿”。",
+        "x-name_cn": "第一眼顾客（模拟人设）",
+        "x-role": "consumer",
+        "x-panels": [
+          "consumer-mixed"
+        ],
+        "x-secondary_packs": [],
+        "x-positioning": "受众侧的一面镜子——第一印象、购买意愿、价格直觉、信任犹豫与表达欲。",
+        "x-acceptance_example": "专家包结论产出后追加消费者校验时，期望 consumer 横切组召回 first-glance-shopper",
+        "x-perspective_ref": "perspectives/first-glance-shopper-perspective/"
+      },
+      {
+        "name": "homework-buyer",
+        "triggers": "“用普通消费者视角看”、“买前做功课的人怎么看”、“宣传点能信吗”、 “购买意愿”、“会不会推荐给家人”。",
+        "x-name_cn": "功课型买家（模拟人设）",
+        "x-role": "consumer",
+        "x-panels": [
+          "consumer-mixed"
+        ],
+        "x-secondary_packs": [],
+        "x-positioning": "受众侧的一面镜子——第一印象、购买意愿、价格直觉、信任犹豫与表达欲。",
+        "x-acceptance_example": "专家包结论产出后追加消费者校验时，期望 consumer 横切组召回 homework-buyer",
+        "x-perspective_ref": "perspectives/homework-buyer-perspective/"
+      },
+      {
+        "name": "brand-skeptic",
+        "triggers": "“用普通消费者视角看”、“多疑的消费者怎么看”、“这牌子可信吗”、 “翻车记录”、“购买意愿”。",
+        "x-name_cn": "品牌怀疑者（模拟人设）",
+        "x-role": "consumer",
+        "x-panels": [
+          "consumer-mixed"
+        ],
+        "x-secondary_packs": [],
+        "x-positioning": "受众侧的一面镜子——第一印象、购买意愿、价格直觉、信任犹豫与表达欲。",
+        "x-acceptance_example": "专家包结论产出后追加消费者校验时，期望 consumer 横切组召回 brand-skeptic",
+        "x-perspective_ref": "perspectives/brand-skeptic-perspective/"
+      }
+    ]
+  }
+}
