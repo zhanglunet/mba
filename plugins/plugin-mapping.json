@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "source": "PRD-118/T2 能力拆分映射表（trend #590）",
+  "note": "每个插件 = 可独立安装的评测能力单元；口径对齐 knowledge-work-plugins 官方格式",
+  "plugins": [
+    {
+      "plugin_id": "mba-brand-audit",
+      "name": "品牌审计",
+      "entry_skill": "mba-brand/audit",
+      "description": "品牌资产盘点与竞争定位审计",
+      "inputs": ["brand_guidelines", "competitor_list"],
+      "outputs": ["brand_audit_report", "positioning_matrix"],
+      "dependencies": [],
+      "estimated_tokens": "5-15k"
+    },
+    {
+      "plugin_id": "mba-copy-review",
+      "name": "文案审查",
+      "entry_skill": "mba-copy/review",
+      "description": "营销文案质量审查与改写建议",
+      "inputs": ["draft_copy", "target_audience"],
+      "outputs": ["review_comments", "rewritten_variants"],
+      "dependencies": [],
+      "estimated_tokens": "3-8k"
+    },
+    {
+      "plugin_id": "mba-visual-review",
+      "name": "视觉审查",
+      "entry_skill": "mba-visual/review",
+      "description": "视觉资产（Logo/海报/UI）品牌一致性检查",
+      "inputs": ["visual_assets", "brand_guidelines"],
+      "outputs": ["visual_audit_report", "fix_suggestions"],
+      "dependencies": ["mba-brand-audit"],
+      "estimated_tokens": "3-10k"
+    },
+    {
+      "plugin_id": "mba-compliance-check",
+      "name": "合规检查",
+      "entry_skill": "mba-compliance/check",
+      "description": "广告法/平台规范合规检查",
+      "inputs": ["draft_copy", "target_platform"],
+      "outputs": ["compliance_report", "risk_flags"],
+      "dependencies": [],
+      "estimated_tokens": "2-5k"
+    },
+    {
+      "plugin_id": "mba-market-sizing",
+      "name": "市场规模测算",
+      "entry_skill": "mba-market/sizing",
+      "description": "TAM/SAM/SOM 市场规模估算与增长模型",
+      "inputs": ["industry", "geography", "product_description"],
+      "outputs": ["market_sizing_model", "assumptions_log"],
+      "dependencies": [],
+      "estimated_tokens": "5-12k"
+    }
+  ]
+}
