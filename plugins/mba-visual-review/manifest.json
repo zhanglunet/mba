@@ -1,0 +1,17 @@
+{
+  "name": "mba-visual-review",
+  "version": "0.1.0",
+  "description": "视觉资产（Logo/海报/UI）品牌一致性检查",
+  "entry_skill": "mba-visual/review",
+  "inputs": [
+    "visual_assets",
+    "brand_guidelines"
+  ],
+  "outputs": [
+    "visual_audit_report",
+    "fix_suggestions"
+  ],
+  "dependencies": [
+    "mba-brand-audit"
+  ]
+}

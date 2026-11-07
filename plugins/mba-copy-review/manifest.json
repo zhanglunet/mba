@@ -1,0 +1,15 @@
+{
+  "name": "mba-copy-review",
+  "version": "0.1.0",
+  "description": "营销文案质量审查与改写建议",
+  "entry_skill": "mba-copy/review",
+  "inputs": [
+    "draft_copy",
+    "target_audience"
+  ],
+  "outputs": [
+    "review_comments",
+    "rewritten_variants"
+  ],
+  "dependencies": []
+}

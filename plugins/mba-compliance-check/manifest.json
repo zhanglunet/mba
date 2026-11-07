@@ -1,0 +1,15 @@
+{
+  "name": "mba-compliance-check",
+  "version": "0.1.0",
+  "description": "广告法/平台规范合规检查",
+  "entry_skill": "mba-compliance/check",
+  "inputs": [
+    "draft_copy",
+    "target_platform"
+  ],
+  "outputs": [
+    "compliance_report",
+    "risk_flags"
+  ],
+  "dependencies": []
+}
