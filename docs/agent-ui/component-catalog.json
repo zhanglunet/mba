@@ -1,0 +1,10 @@
+{
+  "schema": "agent-ready-ui/v1",
+  "components": [
+    {"id": "task-card", "name": "评审任务卡", "agent_callable": true, "props": ["task_id", "title", "status"]},
+    {"id": "score-panel", "name": "打分面板", "agent_callable": true, "props": ["dimensions", "current_scores"]},
+    {"id": "finding-list", "name": "发现列表", "agent_callable": true, "props": ["findings", "three_state"]},
+    {"id": "assembly-preview", "name": "组装预览", "agent_callable": true, "props": ["panel_order", "judges"]},
+    {"id": "help-panel", "name": "帮助面板", "agent_callable": false, "props": ["guide_url"]}
+  ]
+}
