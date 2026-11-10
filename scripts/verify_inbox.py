@@ -77,7 +77,7 @@ def collect(*, low_confidence: list[dict[str, Any]] | None = None,
              str(lc.get("reason") or "低置信评分项（占位）"))
     for w in withdraw_confirms or []:
         _add("withdraw_confirm", str(w.get("source_ref") or "withdraw-motion"),
-             str(w.get("reason") or "作品撤回动议待确认（占位）"))
+             str(w.get("reason") or ""))   # reason 必填
     for sg in slides_gate_reviews or []:
         _add("slides_gate_review",
              f"slides-gate/v1#{sg.get('check', 'page_mapping')}",
