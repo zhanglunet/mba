@@ -3,7 +3,7 @@
 import json, unittest
 from pathlib import Path
 
-class Testmba-compliance-check(unittest.TestCase):
+class TestMbaComplianceCheck(unittest.TestCase):
     def setUp(self):
         self.plugin_dir = Path(__file__).resolve().parents[2] / "plugins" / "mba-compliance-check"
         self.manifest = json.loads((self.plugin_dir / "manifest.json").read_text(encoding="utf-8"))
