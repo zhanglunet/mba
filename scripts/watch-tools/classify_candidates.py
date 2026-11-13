@@ -41,7 +41,7 @@ DIMS = [f"W{i}" for i in range(1, 10)]
 SEVS = ["P0", "P1", "P2", "P3"]
 DIRS = ["pos", "neg", "neutral", "mixed"]
 LENSES = ["origin", "category", "leverage", "identity", "signal"]
-BATCH = 18
+BATCH = 6
 
 # 多 provider:按环境变量存在与否择一(GLM 优先,再 OpenAI 兼容,再 Anthropic)。
 # GLM(智谱)/ OpenAI 走 chat/completions;Anthropic 走 messages。可用 MBA_CLASSIFY_MODEL 覆盖模型。
@@ -153,6 +153,8 @@ def call_llm(items, prov, system=None, max_tokens=2000, timeout=90):
     else:  # openai 兼容(GLM / OpenAI / 任意 OpenAI 兼容端点)
         payload = {"model": model, "max_tokens": max_tokens, "temperature": 0,
                    "messages": [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user}]}
+        if "open.bigmodel.cn/api/coding/" in base and model.lower().startswith("glm-5"):
+            payload["thinking"] = {"type": "disabled"}
         headers = {"content-type": "application/json", "authorization": f"Bearer {key}"}
         url = f"{base}/chat/completions"
     req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers, method="POST")
@@ -175,7 +177,12 @@ def call_llm(items, prov, system=None, max_tokens=2000, timeout=90):
         text = "".join(b.get("text", "") for b in body.get("content", []) if b.get("type") == "text")
     else:
         text = (body.get("choices") or [{}])[0].get("message", {}).get("content", "")
-    return _extract_array(text)
+    try:
+        return _extract_array(text)
+    except ValueError as exc:
+        finish = ((body.get("choices") or [{}])[0].get("finish_reason") if kind == "openai"
+                  else body.get("stop_reason"))
+        raise ValueError(f"{exc} (finish_reason={finish})") from exc
 
 
 def classify(cands, prov):
