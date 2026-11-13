@@ -117,9 +117,25 @@ jobs:
             --as-of 2026-11-13 \
             --output /tmp/nvidia-reaudit/judgments.json
 
+      - name: Review saved NVIDIA pilot judgments
+        if: github.ref == 'refs/heads/feat/nvidia-auto-reaudit' && inputs.brand == 'nvidia' && inputs.dry_run == false
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          python3 scripts/watch-tools/reaudit_review.py \
+            --judgments watch/_reaudit/nvidia/judgments-lens-2026-11-13.json \
+            --evidence watch/_reaudit/nvidia/evidence-2026-11-13.json \
+            --baseline watch/_reaudit/nvidia/baseline-v3.json \
+            --output /tmp/nvidia-reaudit/review.json
+
       - uses: actions/upload-artifact@v4
         if: github.ref == 'refs/heads/feat/nvidia-auto-reaudit' && inputs.brand == 'nvidia' && inputs.dry_run == false
         with:
           name: nvidia-reaudit-judgments
-          path: /tmp/nvidia-reaudit/judgments.json
+          path: /tmp/nvidia-reaudit/
           if-no-files-found: error
