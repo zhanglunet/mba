@@ -1,0 +1,205 @@
+{
+  "status": "draft",
+  "brand": "nvidia",
+  "judgments": [
+    {
+      "judge": "pmarca",
+      "as_of": "2026-11-13",
+      "scores": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152"
+        ],
+        "category": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "leverage": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152"
+        ],
+        "signal": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The founding myth WAS Jensen: 30 years, Denny's, two near-death rescues — the strongest founder-identity in tech. The verified 2026-11-12 board announcement confirms Jensen Huang has resigned as President and CEO. The origin narrative loses its living protagonist; the story is now past tense. Still a real, non-consensus 30-year run, so −1, not a collapse.",
+        "category": "Still defining and winning the markets software is eating: verified August releases extend the category into physical AI — Alpamayo 2 Super for robotaxis/autonomous vehicles (078) and Nemotron 3.5 Lightning / NeMo Switchyard for agentic AI (113). The market is pulling NVIDIA into each new vertical; category leadership is undiminished by the CEO change. Hold 10.",
+        "leverage": "CUDA lock-in plus full-stack expansion — open frontier models for autonomous vehicles and agentic AI tooling are new layers on the same platform lever, verified as shipped and available (078, 113). Technology as the lever on the world: this moat is untouched by the personnel event. Hold 10.",
+        "identity": "This is where Jensen's exit bites hard. My own Part 9 rule: if no founder can be CEO, 'sell your company — now.' I hold both the market-first and strong-founder theses, and the verified announcement (152) removes the founder-CEO at the exact moment the identity system WAS Jensen. An interim CEO (CFO Colette Kress) is an insurance pick, not a thesis-carrying founder; identity coherence is genuinely impaired. 9 → 7.",
+        "signal": "Two sides. Real build signal: products shipping and available now — an open frontier robotaxi model and agentic AI releases (078, 113), customers can pull these today; money talks. But the CEO resignation (152) is a destabilizing real-world event that the market must re-price, and a founder's departure is the kind of risk-onion layer you cannot peel back. Net: hold 8, watch whether the machine runs without its founder."
+      },
+      "reason": "Market is the only thing that matters — and the market didn't change: NVIDIA's category creation (robotaxi/AV open models, agentic AI, 078/113) and CUDA-era leverage remain at the ceiling. What changed is the founder. The verified 2026-11-12 resignation of Jensen Huang takes the founder-CEO out of the identity system and makes the origin story past tense — my strong-founder thesis prices that as real damage (identity 9→7, origin 9→8). Signal holds at 8: shipped products are the felt PMF signal, but a founder exit at the top of a hype cycle is an unpeeled risk layer. The question this cycle answers is whether the machine — not the man — is the moat."
+    },
+    {
+      "judge": "paulg",
+      "as_of": "2026-11-13",
+      "scores": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 9,
+        "identity": 6,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152"
+        ],
+        "category": [],
+        "leverage": [],
+        "identity": [
+          "2026-11-12-nvidia-152"
+        ],
+        "signal": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113",
+          "2026-11-12-nvidia-152"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The founder story was Jensen at the wheel for 30 years — two near-death escapes, Denny's, the whole narrative. That story just broke: he resigned as President and CEO (152, board-confirmed 2026-11-12), with CFO Colette Kress as interim. The origin narrative loses its living author; the story remains real but is now history, not current fact. Down from 9 to 8 — not lower because the 30-year record itself doesn't vanish overnight.",
+        "category": "No new evidence touches category definition this round. NVIDIA's record of defining new categories (GPU/CUDA/AI factory, per prior versions) stands; Alpamayo and Nemotron extend existing categories rather than coin new ones. Hold at 9.",
+        "leverage": "No new evidence touches the core CUDA/full-stack moat. The prior round's net hedge (China erosion vs sovereign AI expansion) remains the operative picture; nothing here moves the area of the moat. Hold at 9.",
+        "identity": "This is the biggest hit on the board. NVIDIA's identity system *was* Jensen — founder mode in the flesh, one voice, one taste, for three decades. A verified CEO resignation with an interim CFO successor (152) removes the founder from founder mode, and in my experience the default failure pattern after a founder leaves is exactly the manager-mode drift I warned about. An interim CFO is a caretaker signal, not a successor with product taste. Down from 8 to 6.",
+        "signal": "Two genuinely positive real-world signals — Alpamayo 2 Super shipping for robotaxis (078) and Nemotron 3.5 Lightning for agentic AI (113), both official and verified — say the engine of shipping things people want still runs. The CEO exit (152) is a negative signal but its product-level effect is unproven as of today. Net: hold at 8, flagged for re-reading the moment post-Jensen execution data arrives."
+      },
+      "reason": "This round is really about one event: Jensen resigned. The two product releases (078, 113) are good but ordinary — a company at NVIDIA's scale shipping models is expected, not signal of new love. The resignation is extraordinary. My heuristics are early-stage lenses and NVIDIA is a late-stage giant, so I apply them with care — but the founder-mode question is universal: the founder WAS the identity of this company. Removing him dents origin slightly (the record stands), hits identity hard (an interim CFO is the opposite of founder mode), and leaves signal unhedged-but-watching because shipping cadence hasn't broken yet. Category and leverage untouched — the moat doesn't care who signs the emails, until it does."
+    },
+    {
+      "judge": "pthiel",
+      "scores": {
+        "origin": 7,
+        "category": 10,
+        "leverage": 10,
+        "identity": 6,
+        "signal": 6
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152"
+        ],
+        "category": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "leverage": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152"
+        ],
+        "signal": [
+          "2026-11-12-nvidia-152"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "起源叙事就是黄仁勋本人——Denny's 起家、30 年掌舵的创始人故事。2026-11-12 董事会公告确认其辞任 CEO（克雷斯临时接任），叙事的男主角退场了。故事没被证伪，但失去了主角；一个由创始人三十年亲自讲述的秘密故事，交给 CFO 转述总归打了折扣。8→7。",
+        "category": "品类定义不是靠 CEO 一人：Alpamayo 2 Super（robotaxi/自驾前沿开源模型）与 Nemotron 3.5 / NeMo Switchyard（agentic AI）证明 NVIDIA 在机器人与智能体范式上仍在做 0→1 的品类创造，而非 1→n 追赶。CEO 更替不动摇品类机器。10 守住。",
+        "leverage": "护城河是 CUDA 近二十年的生态锁定 + 全栈系统，不是某个人的一天。董事会公告只涉人事变动；同期 Alpamayo / Nemotron 显示技术杠杆仍在产出。垄断的\"总面积\"未受本组证据触动。10 守住。",
+        "identity": "这是本轮唯一真正的结构性减分。NVIDIA 的身份系统与黄仁勋个人身份高度同构——他的皮衣、他的 keynote、他的 definite vision。创办人辞任、CFO 临时接任，意味着身份从\"创始人的具体愿景\"退向\"职业经理人的流程\"——用我的话说，从 definite optimism 滑向 indefinite。公告未给继任的确定性方案。8→6。",
+        "signal": "守 7 是因为中国风险早已定价；但 2026-11-12 创始人在需求周期高位突然辞任、只给临时 CEO，是真实世界里一个未解释的负信号——好的垄断不该在巅峰期出现叙事断层。Alpamayo / Nemotron 两条正向产品信号部分对冲，故 7→6，只给方向不给结构。"
+      },
+      "as_of": "2026-11-13",
+      "reason": "创始人即品牌：黄仁勋辞任（2026-11-12，董事会公告核实）击穿 Origin 与 Identity，并给 Signal 一个未定价的负向真实信号；品类与护城河（CUDA 锁定、Alpamayo/Nemotron 的机器人与智能体扩张）不受人事变动影响，守 10。43→39。"
+    },
+    {
+      "judge": "naval",
+      "as_of": "2026-11-13",
+      "baseline_scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 10,
+        "identity": 8,
+        "signal": 8
+      },
+      "scores": {
+        "origin": 7,
+        "category": 9,
+        "leverage": 10,
+        "identity": 6,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152"
+        ],
+        "category": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "leverage": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152"
+        ],
+        "signal": [
+          "2026-11-12-nvidia-152",
+          "2026-08-04-nvidia-078"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The origin story was Jensen himself — the Denny's founder who compounded a thirty-year founding narrative. That narrative has now ended: the board announcement confirms Jensen Huang has resigned and Colette Kress is interim CEO (152). Specific knowledge that lived in a person cannot be trained into a successor on short notice. The founding myth is now history, not a living asset — origin drops 9→7, not lower because CUDA's institutional origin still stands.",
+        "category": "Category leadership is untouched and arguably extended: Alpamayo 2 Super as the frontier open model for robotaxis (078) and Nemotron 3.5 Lightning for agentic AI (113) show NVIDIA still defining the paradigms it sells shovels into. Open models are permissionless media-code leverage aimed at owning the next category. Holds at 9.",
+        "leverage": "Leverage is the compound asset that earns while you sleep — and CUDA plus the full-stack software estate (Alpamayo 2 Super, Nemotron 3.5, 078/113) kept compounding this cycle, independent of any one person. Zero-marginal-cost model releases extend the moat. No verified evidence this cycle erodes the leverage structure; holds at 10.",
+        "identity": "All the benefits come from long-term games with long-term people — and the person who played the thirty-year game just left it. A CFO as interim CEO is a caretaker, not a name on the line in the accountable-founder sense (152). Brand identity was inseparable from Jensen's founder-accountability; that is now severed and un-replaced. Identity drops 8→6 pending evidence the long-term game continues under new leadership.",
+        "signal": "The slope, not the pitch: product signals remain strong (078, 113), but a P0 verified CEO resignation (152) is the loudest non-price signal a company can send — it re-prices continuity itself. Net of strong product cadence, signal drops one point, 8→7: the assets still compound, but the trust premium attached to the founder is gone."
+      },
+      "reason": "Conflict disclosure: none — NVIDIA is not an AngelList/Epinions-associated company. Jensen's verified resignation (152) is the decisive event: assets that earn while you sleep keep the Leverage at 10 and Category at 9, but the origin narrative and founder-anchored identity — the 'long-term people' half of long-term games — take real damage (Origin 9→7, Identity 8→6, Signal 8→7). Alpamayo 2 Super and Nemotron 3.5 (078/113) confirm the leverage compounds without him; whether judgment and the long-term game do too is the open question."
+    },
+    {
+      "judge": "rhoffman",
+      "as_of": "2026-11-13",
+      "scores": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152",
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "category": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "leverage": [
+          "2026-08-11-nvidia-113",
+          "2026-08-04-nvidia-078"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152"
+        ],
+        "signal": [
+          "2026-11-12-nvidia-152",
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "黄仁勋的 30 年 Denny's 创始人叙事是 NVIDIA 起源故事的基石——v1 我给 9 正因如此。2026-11-12 董事会公告确认他辞任 CEO、CFO Kress 临时接任：创始人叙事的核心人物离场，这是起源叙事的结构性事件，不是噪音。Alpamayo 2 Super 与 Nemotron 3.5 的连续官方发布显示组织仍有产出能力，部分缓冲——但叙事锚点移位，9→8。",
+        "category": "品类定义(9.4 面板均值)本已近满且计价。Alpamayo 2 Super(开源 Robotaxi/AV 前沿模型)+ Nemotron 3.5/NeMo Switchyard(智能体 AI)确认 NVIDIA 继续从'AI 工厂'向机器人、智能体开源自研栈外延品类版图——这是方向性确认，不构成对近满分数的上修。守 9。",
+        "leverage": "CUDA 生态锁定 + 全栈杠杆未被本轮事件触动。Nemotron 3.5 开源与 NeMo Switchyard 反而是把开发者更深织入 NVIDIA 网络的动作——网络在继续加节点。CEO 变动不影响护城河本身，只影响它的护送者。守 9。",
+        "identity": "品牌身份与黄仁勋个人形象高度绑定——这是 v1 Identity 给 9 的前提。创始人 + CEO 一并离任(公告确认)，身份系统必须经历一次没有创始人在场的重构：临时 CEO 交接期，叙事连续性断点。这是本轮最大的单点减分，9→7。我的短板检查:'amplification' 不等于不变——人物即机构时，人物走了，机构要重新讲自己是谁。",
+        "signal": "读需求曲线，不看标题。正向：Alpamayo 2 Super(可用于商业)与 Nemotron 3.5 是真实产品节奏与采用基础的信号。负向：CEO 突然辞职并交由 CFO 临时代理，是组织内部的一个未解释的真实信号——按我的小风险原则，不可逆的人事地震不是'可迭代的小风险'。正负相抵后净向下，8→7。"
+      },
+      "reason": "本轮的三个事件是两条正线、一条重负线。两条正线(Alpamayo 2 Super、Nemotron 3.5/NeMo Switchyard)确认品类外延与开发者网络继续加密——category/leverage 守住。但 2026-11-12 董事会公告确认黄仁勋辞任 CEO、CFO Kress 临时接任：这是 v1 起源叙事(30 年创始人)与身份系统的锚点事件，也是 signal 上的一个不可逆组织信号。Origin 9→8、Identity 9→7、Signal 8→7，Category/Leverage 守 9。补充：本董事层面变动之后任何 CEO 继任进展，都应触发 identity 的重审。"
+    }
+  ]
+}
