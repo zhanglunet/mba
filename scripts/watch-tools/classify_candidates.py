@@ -281,6 +281,8 @@ def main(argv):
         return 0
     cands = classify(cands, prov)
     events, kept, dropped, review = to_adopt(cands)
+    if not any(c.get("suggest") for c in cands):
+        print("::warning::舆情自动分类全部失败，已回退人工审核。", file=sys.stderr)
     write_report(args.report, kept, dropped, review)
     if args.adopt and events:
         os.makedirs(os.path.dirname(args.adopt) or ".", exist_ok=True)
