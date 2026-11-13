@@ -74,5 +74,16 @@
     "verification_reason": "NVIDIA 董事会 2026-11-12 公告确认辞职，Colette Kress 暂任 CEO；仅核实人事变动，不推断原因。",
     "verified_at": "2026-11-13",
     "verification_by": "codex-source-review"
+  },
+  {
+    "id": "2026-08-26-nvidia-fy27q2",
+    "date": "2026-08-26",
+    "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027",
+    "verification": "verified",
+    "verification_source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+    "verification_excerpt": "revenue for the second quarter ended July 26, 2026, of $96.2 billion",
+    "verification_reason": "FY2027 Q2 revenue and data center revenue are reported by NVIDIA; they describe a period before the CEO transition.",
+    "verified_at": "2026-11-13",
+    "verification_by": "codex-source-review"
   }
 ]
