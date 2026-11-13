@@ -9,6 +9,16 @@
 
 ---
 
+## 2026-11-13 人工事实复评（评分待重审）
+
+NVIDIA 董事会 11 月 12 日公告，黄仁勋辞去总裁、CEO 和董事职务；CFO Colette Kress 暂任 CEO，董事会启动永久继任者搜索。[NVIDIA 公告](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx)。创始历史本身不会因离任改变，但品牌身份和管理交接面临新的不确定性，继任人选与交接后的经营表现尚待观察。
+
+截至 7 月 26 日的 FY2027 第二财季营收 962 亿美元、同比增长 106%；这是管理层变动之前的数据，不可用来证明交接后的经营表现。[NVIDIA 财报](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/)。
+
+**评分提示：下文 220/250、8.80/10 及五位评委意见均为 2026-07-20 的 v3 历史结果，尚未反映上述变动。新一轮评委复评尚未完成。** 原文中的现任管理层描述应以本提示为准。
+
+---
+
 ## v3 变化速览 (delta banner)
 
 **总分 220 → 220（净持平）· 归一化 8.80 ↔**。一次"版图轮动、净对冲"的重审——本轮正负信号相互抵消,分数守持。
