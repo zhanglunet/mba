@@ -99,3 +99,25 @@ jobs:
           fi
           git commit -m "chore(watch): L1 预筛结果 $(date -u +%Y-%m-%d) [skip ci]"
           git push
+
+      - name: NVIDIA review draft (pilot branch only)
+        if: github.ref == 'refs/heads/feat/nvidia-auto-reaudit' && inputs.brand == 'nvidia' && inputs.dry_run == false
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          python3 scripts/watch-tools/reaudit_judges.py \
+            --evidence watch/_reaudit/nvidia/evidence-2026-11-13.json \
+            --report published/reports/nvidia/report.md \
+            --output /tmp/nvidia-reaudit/judgments.json
+
+      - uses: actions/upload-artifact@v4
+        if: github.ref == 'refs/heads/feat/nvidia-auto-reaudit' && inputs.brand == 'nvidia' && inputs.dry_run == false
+        with:
+          name: nvidia-reaudit-judgments
+          path: /tmp/nvidia-reaudit/judgments.json
+          if-no-files-found: error
