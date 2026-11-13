@@ -642,3 +642,34 @@
   source_type: media
   note: "LLM 预分类建议(high):GLM-5.3正式发布，编程专向模型，主力产品重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-11-zhipu-040
+  date: 2026-11-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "海外估值坐标落地在即 智谱宣布回购后盘中一度涨超8%"
+  quote: "海外估值坐标落地在即 智谱宣布回购后盘中一度涨超8%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWENUY3h6eVJXZEdyM1U5eWlVdVZZVVNpYXROanplWUNPcVl4MXJiS0Roa3Vkd2NnSnZkclpjZzRNcG5fVHhHNkZ3THFfREowcnY4WnRXeFIyd09ERGpzLU4zb244QlZ3WElLaTBxZFpmbmJjVmphNTZsdjg5WU9lUWtFMnRaZVVTeXBqMUpiWnNCWmEwX0Vfb3ZTUVZFYjdXV29PZEVrUUJxLWpEdzBqaWc0NFA1ZUdSaWdn?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):回购举措属重大公司行动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-zhipu-041
+  date: 2026-11-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "港股公告精选｜智谱拟斥资最多40亿港元回购 阿里巴巴计划分拆平头哥赴港IPO"
+  quote: "港股公告精选｜智谱拟斥资最多40亿港元回购 阿里巴巴计划分拆平头哥赴港IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxPMnBhaEg5WVJ6YVpic2Rwc3BfRGszRlcwR2tYdFQ4SXZqV1N6ZUZGTXk4VDlEd0tnTTdnZkNVRWdxcmtQaDBsbU42VGMzdUI3S0lFMUtueXd3T05vUE9mRDJzcmFkTGZjeFk5LW5nWWt5ZDREZ0tzS2hrNUE0al9qM2k2SmZZWTE4alhrdkxlMmhkQ2dCX293cVd1U1dRQTVWQUVUTQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):40亿港元回购，金额明确重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

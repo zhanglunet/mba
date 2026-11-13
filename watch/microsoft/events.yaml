@@ -2145,3 +2145,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Copilot Voice功能停用，AI产品策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-10-microsoft-141
+  date: 2026-11-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "IBM and Microsoft announce a new AI agent platform designed for industry-specific transformation"
+  quote: "IBM and Microsoft announce a new AI agent platform designed for industry-specific transformation"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVlNLbW92WmpoLXJQU1EtWWRfZ1RwTlpfNU5BNmtyUmpSNzZWYXgwdFphU2VaWGVXcnJaSFpoODVnZ3lZeTktNk5QZmNyMmlEOFhjc0pEM3RZaU1nS3ZER0Jsc2R3Sk96c1pmc3VGMzFlTVlZMVNxWmtWdlluWGpKQWN0OGlqTV9MWC1oRzJBYldSSER6RjRRT2lFZ3lQVkJRSDV6ZWJhY3QtYUZMZ2d3M0IxUFpURWFMWHV6c0ZOUU41T2lxVzg3azVWSVRHeGpXelNSTFlhakQyQQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方宣布合作平台，非正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-microsoft-142
+  date: 2026-11-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft and Qatar’s Ministry of Communications and Information Technology mark availability of Azu"
+  quote: "Microsoft and Qatar’s Ministry of Communications and Information Technology mark availability of Azu"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAJBVV95cUxOQnFnQjcxRi12T2hTdWxIREpCbXBWV18xSUtUczk1Ml85VnJXNThxTlljUWhBV1ZTR2dfcExwd29LblpQeFU2QUlJQTdMMVBhdzR1TGw1eW5HNVRLVFRybEMydVdpOFBJdHFWM2RTb1VXOHpEVjFGYnlWdzhEVmZIelRzZmdoSjVCU05QUS1FU2hlbUtPUVZJM1VnVk9ZdzVrMlNCRnIxMHFOeGlkbmZYZFlCUFRJTkZOV2xCX2VtTkNWV0dOMWJuWHZwdnJYeUpfRURIajVGWHdzWGVJNE5xZTBfdnJBYllZdmduWlhjOXB2dEFaZUtyaUxyV3FqRy0xZ0dYcUs0MVltSzlvSS1xakFkdUN2RFNTWFJKZ3ZId2RuSU1U?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方宣布Azure落地卡塔尔，区域扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-microsoft-143
+  date: 2026-11-12
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软多项服务发生大规模故障，Outlook异常报告超13万起，问题可能出在哪？你现在还能正常登录吗？"
+  quote: "微软多项服务发生大规模故障，Outlook异常报告超13万起，问题可能出在哪？你现在还能正常登录吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5UTWxiejhXT1RCUFp6ZzlBRVJibHFNeVNlXzROelJ6R09MZDFFRjJNSmJXQnk2ZnJXTkhmX1NaWmthX19CVGFTVDEtdUo2OEl5S0lKTVN3U29BYkRTMjMw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):大规模服务中断，Outlook超13万异常。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-microsoft-144
+  date: 2026-11-11
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "2026-11微软漏洞通告"
+  quote: "2026-11微软漏洞通告"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE83azRNVlRsbFNxTnBqQlpqYThwamk1RThYOERsd2trTDhfWUZJOEc0TGp2OUR0OWRpcFh6VzJib2hwUmhKYUVvTEpjTXNJeEhqcjVGZkhJZTBKWV8z?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):常规月度漏洞通告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-microsoft-145
+  date: 2026-11-11
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic 把 Fable 5.2 和 Mythos 5.2 放进了 Microsoft Foundry，企业该怎么用、怎么算账？"
+  quote: "Anthropic 把 Fable 5.2 和 Mythos 5.2 放进了 Microsoft Foundry，企业该怎么用、怎么算账？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1TaTFkUm9qR1VZNExINGtmeXRfZXN6c25WSGVYYzNNeUVhOE9TUjVlSnVwZmNIUmlIOFlWRTJ5c2JtZnJEYi1xc0lYX2twMzVrYzUxcnV6dmNCNFpw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):第三方模型入Foundry，生态合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-microsoft-146
+  date: 2026-11-13
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软系统全球瘫痪：Outlook、Teams、Copilot受影响"
+  quote: "微软系统全球瘫痪：Outlook、Teams、Copilot受影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9tYXRBdmhKWFR5eFFPSE5wcEVkVXZtckZjR01MQ01KZy1rUmtJUk4ycy1CR19OQ0FRMVpYVHdhb25scnQwZ3UwRmRSUlItWHNhR05nZ1FIWFF5Z0djTkNZeVQzX1EwQlnSAWxBVV95cUxPZ1duN2hPdWV1WmI4S0tQcVpyd1c2YUVGVVJrbnc0V2YtZWdpTnY5aW13LUpsZHFxRFBvNjZSOEx1LVctMHI0VU5ESnZXZW1lZE95RmROS0hrMVJmRDdmVFQzSTNfQ3lPWW5kX2E?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模服务中断，核心产品瘫痪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-microsoft-147
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软Outlook突发大规模故障 全球数万用户受影响 波及新加坡"
+  quote: "微软Outlook突发大规模故障 全球数万用户受影响 波及新加坡"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFBMaGFXZS1FU2pPeXlqZS1JcW43YWQzOFFLVE0yZWFzUEdseF9IME9aTUVnYi1nZG9HRnpMaWFiUjBBTEp0R2xIWWh0NGxpUTdFUnJWeTlJdmwxTFNodXRGM09yRUt0NFFUVXc?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Outlook大规模故障，波及全球用户。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

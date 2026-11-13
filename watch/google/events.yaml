@@ -2641,3 +2641,139 @@
   source_type: media
   note: "LLM 预分类建议(high):Gemini功能更新，用户可关闭水印，产品迭代信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-12-google-174
+  date: 2026-11-12
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Gemini 4 Hydrogen for Agentic Workflows"
+  quote: "Introducing Gemini 4 Hydrogen for Agentic Workflows"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxNbnlqelBIT1ZXblFBa25zdHlXalhPR2Z2b2xLZ2lmeEtFbUFXS3Mya3FtU0tyeGJrOXpHVEJOdFpDVUZSUTVOUHA0WjRiakw2a2hIRzc3ZHBfM3pDT3dKTDdfMExNQ2FnU1NWSHI3UGpXX2lVSEUxeVYwb2FfNE5vRGJnMjhWSzU5WkFrdmtOdW5Fb0lja1dFN3JUMkQ5R01JRXhNUA?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布主力大模型重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-google-175
+  date: 2026-11-12
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Google Search gets a major upgrade with Gemini 4 Hydrogen"
+  quote: "Google Search gets a major upgrade with Gemini 4 Hydrogen"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxQcEx3ZWpIeklDNURpS0RHX3B0RWZ5andjREM4R2FqVUdUSGNQTTNXUkhwb1haZmlreVA0bE9IX1pMQldlUVQ2Y3JPckYwaFIwSEFHcTNjS2hMNzFvNV9lWTdoQ2c4c1UzZUVnLTY1WWFwcjR5bUEwWWdtdTBuZ2t1bGxyQzJMeGpiaF9IbjRlVXJtVmtHTXJZ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布核心产品接入新大模型。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-google-176
+  date: 2026-11-12
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers"
+  quote: "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNNWJnSDNidWM0SVJfeVVCbDJXelYxX0pRejVJakk1dEVTSzAzd1BoODdSU3FkeG5tZ2xhVnE2M2ZOMmVGUzFEMFIzNzNJOW15WWRfNXBDM3pUZGxXQmo5SmQwcW5OVG91eDZNSjBTNlY2QVdpOXE1MDl6TldJSVFJSGpxc1ZtZzJZaHpreS1xeVVsN0FrZklFS1JOOA?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布主力模型重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-google-177
+  date: 2026-11-12
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Designing for privacy on intelligent eyewear"
+  quote: "Designing for privacy on intelligent eyewear"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxObThTNHIwWjFPSnZmTFBUc1RfWFdvNDMxenNyald6S2E4NnhONDZQRFp0bmZDWl9RSUZubEpBQ3Y4SmpBODBzcVRPZ2ctTHo5aXlBRE1wWjA2QkVkSjVqNzczcmQ4a3ViOXdPYnJ3NjBtRWE3MWttWGFkb0kzNWVCREtFQlZXVm5reHhIQzdjYTlNbkp4bDdTMklZU056MVZESUVHZVFVcnc?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方隐私设计说明，非事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-google-178
+  date: 2026-11-11
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Talk it through with Gemini, now on Apple CarPlay"
+  quote: "Talk it through with Gemini, now on Apple CarPlay"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxQYXRXYXFrSTNsUnNkbUtwV09hNmI2bFVPcHluaGMwTGM0UlBPbXJKUndlSVdJMDBud2pNVWFtVjR5VTROZUI2N2RXSnpGTVlQUlpvOHlBcUstaFdaYVhacnZRejJVQ2I4b2loeC0wMnQ3MjVwVERYVVVxT3ZIeVF1cEJYNl92XzN1QWc?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):Gemini 上架 CarPlay 生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-google-179
+  date: 2026-11-10
+  dim: W5
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "谷歌正式开放模型 Gemini 4 Carbon，如何评价？实际体验如何？"
+  quote: "谷歌正式开放模型 Gemini 4 Carbon，如何评价？实际体验如何？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5oaXJPNDNUNUhEZ0Z4VklQbUZpaU9kdjFNRDZ6UXV3aFlUS0lZcFpLWElUQTFzd2xoMnRmMERDdnZOLUNueXg3NG5HSlhhQ3JsRnExQmxpVndxLUpybGN3?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):正式开放模型发布，社媒讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-google-180
+  date: 2026-11-12
+  dim: W5
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "如何评价Google 11月13日发布的模型Gemini 4 Hydrogen？"
+  quote: "如何评价Google 11月13日发布的模型Gemini 4 Hydrogen？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9hR1VpYm1YcFhQUEtxclBtc3Q4elpDZ0hTZFR2V0xldTF2SGlzWGFnSkhxcnRPMlVqbzRiRWZsSlRsLXpKUkthZkpsQjNCc3ZQcGNCSVNqWGZrOUlDRTRF?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(high):重大模型发布引发的讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-google-181
+  date: 2026-11-13
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌新Gemini 4，跑分超Argon，搜索引擎上免费用"
+  quote: "谷歌新Gemini 4，跑分超Argon，搜索引擎上免费用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9oX0p6bkhySUtLUkxMdUkteDR1T0NRYjFnQ2xGXzItOF9TUEwtclhWUnl3NEF5ZExaUXZSaDJBMFAxaEhTczR2dU10MjRxQWcyZ1VyOWVfRUZMWVh6?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, leverage, category]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰大模型发布，P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-google-182
+  date: 2026-11-12
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌发布Gemini 4 Hydrogen模型|Google|IT之家|Token|Agent|档位_手机新浪网"
+  quote: "谷歌发布Gemini 4 Hydrogen模型|Google|IT之家|Token|Agent|档位_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPd3RvbW94Skl4RXR3OHhoVVFrNEQwejM5OFZBYnI0TFhYbkxRdW1sU1ZPTDlPeFowbGJMVDU0bzBacEU2bVJ6dHE4dk1HRzlvc1hSVG5qTEpnWkQ4RjZKZk1WbF9KM0lhYTFyUGJJQjQ3RXA4dFJaZzBTb2E2a3F6YzhsYjhoaDBwN0YwRVZuNDduQzZkS3QtYkxIWnVLZjVPNFpsMkxFZw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Gemini 4 正式发布，重大更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

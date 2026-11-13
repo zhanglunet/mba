@@ -1905,3 +1905,64 @@
   source_type: media
   note: "LLM 预分类建议(high):DeepSeek API定价调整，涉及商业模式变化，但非重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-13-deepseek-125
+  date: 2026-11-13
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "黃樂據報投資DeepSeek 承諾供應英偉達芯片"
+  quote: "黃樂據報投資DeepSeek 承諾供應英偉達芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84MWJqUTdKYVJlT01XTnhmSElDVjNjUjZPdEt1MDZ4eEFzTFkzbUF0NER4ck9HZ3JzVDBodzNscWRZN1gzUnJGWTd1UHN0N3VONmxNLUFSWkkxaWlyUF84SlYxZWtyY3PSAWdBVV95cUxPODFialE3SmFSZU9NV054ZkhJQ1YzY1I2T3RLdTA2eHhBc0xZM21BdDREeHJPR2dyc1QwaHczbHFkWTdYM1JyRlk3dVBzdDd1TjZsTS1BUlpJMWlpclBfOEpWMWVrcmNz?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):传闻投资与芯片供应，未经证实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-deepseek-126
+  date: 2026-11-11
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek工程师谈开源：让AGI加速到来"
+  quote: "DeepSeek工程师谈开源：让AGI加速到来"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIajZpcmlVeWxZZVFIVm85RVZwdURhZ0JyWm90dDlLamktV29VM1hhYk1JTTNQbTY0bTVkNlVVZHpPQnVGM0FxSTkzd25LdW9BNWFR?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):工程师开源观点，轻微正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-deepseek-127
+  date: 2026-11-13
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "黄乐爆参与投资DeepSeek 承诺提供“辉达Blackwell晶片” - 国际 - 即时国际"
+  quote: "黄乐爆参与投资DeepSeek 承诺提供“辉达Blackwell晶片” - 国际 - 即时国际"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE55VGl3dEsyM3dtLThmTW4tSVNKZHEza09uMU9lNFNkNDNSRmFqTjhmLTlwbE9zZGt1aVQxc2Q5LUdXUVR5YUU3SXFCSEEzb1JqaFZzN0lXQnZmSlNXaVUzdEx4OWNweE9ONTQ3QU94TQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):投资与芯片供应传闻,涉合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-deepseek-128
+  date: 2026-11-11
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek V4.1 Flash 越狱成功！Cherry Studio + API，关闭思考才稳，提示词免费分享！ Jordyn Woods (gHkEfZjWeH)"
+  quote: "DeepSeek V4.1 Flash 越狱成功！Cherry Studio + API，关闭思考才稳，提示词免费分享！ Jordyn Woods (gHkEfZjWeH)"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jc1ZOeVJOVFlXSjBXTjVxbVlFSEhmakxDVEFzblZXTjN2WTY2c2ZqUWpjMmRMVTU5RnBRbW9HX2N6R01PMVR5NUFwS0p4NGVVZk9TclRJZWt6cW4xQ0pOX052Nzl6UQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):模型越狱暴露安全弱点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

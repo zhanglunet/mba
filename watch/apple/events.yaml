@@ -2566,3 +2566,109 @@
   source_type: media
   note: "LLM 预分类建议(med):苹果阿里联合模型功能解读，产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-10-apple-169
+  date: 2026-11-10
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple TV introduces new Sign Language interpretation feature"
+  quote: "Apple TV introduces new Sign Language interpretation feature"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxPNzhoWXZLQVdiWkJqUG1FV1pSWURWQmZ0dFNRSGhJNTd0RUdaS2xaeDhyVnRpNGpBaFJmMTd5dXdnUktqUGhIODNlNVQxUW9mMklLVVZOQWp0V2hkcXl3WWJaSDNtOHBLNWRrQkNjaXpiY0h5bXMtQnpleXVkUWtFU3h4ek16bkF6LVBwM2M1cXM3OENZS1BSMU15Um1yOTlWdXc?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方无障碍功能上线，日常产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-apple-170
+  date: 2026-11-10
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Football Manager and other hit franchises headline Apple Arcade’s holiday lineup"
+  quote: "Football Manager and other hit franchises headline Apple Arcade’s holiday lineup"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwFBVV95cUxNejRQejVPVlE0b3lBaUlVWE9FSFVvVmhiV3l0T3JqYkRKOFVIUS04Q3duWkNHaFRfQlBGLUlnaUNNd0NHbUVWRXFGU2o1c3pUWnVlTDMwYjZfa0lnOHhLZVpHTzJ0akQ2M1FtdWhzc25wci1qczV0b0tKVWZXZVZGLUgxMk9RUE9lbDBUZzgtOHlJX2FsUzJ0UTlfLWs5RUJvQXlPbU5jVTFHSHB0d3dXWXAtT3VrZWtoV193?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category]
+  source_type: official
+  note: "LLM 预分类建议(high):游戏目录更新，轻微正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-apple-171
+  date: 2026-11-11
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果开卖334元AI“加油包”，额度不详，仅面向已订阅创作套件用户"
+  quote: "苹果开卖334元AI“加油包”，额度不详，仅面向已订阅创作套件用户"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE43cW5mdVg0ckdYTEdncFptMVVPWlp0UGpHbHZUZGtPeDR2SXp2MTNkMzVTWkNmcEtCUTBWWHhsdXNQT3plQkgzeVBLNGZzanZRc2pUTWZURFJlQjdP?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):AI服务收费新动作，定价引争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-apple-172
+  date: 2026-11-12
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果Apple支持社区正式进入只读模式 11月20日将永久下线"
+  quote: "苹果Apple支持社区正式进入只读模式 11月20日将永久下线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE8tSzRyNDBkVG9qM2pMbkJGSVRldG1pbldkT2JOU0pHdFZBcHR5bGxCZmw4R0NhRHRlVWU2QktyNDI3c2U2X1RFclQzQXJMVmlWb2Fab3AteUxUTGMxTkdfWXEzU25peWFOMUtkUDFaYWh6alpITUdMRQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方社区永久关闭，服务收缩事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-173
+  date: 2026-11-13
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果HomeView与第四代Apple TV 4K开售 299美元起"
+  quote: "苹果HomeView与第四代Apple TV 4K开售 299美元起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPR0pZekRoczBpeVNqUm9ZcmhVQkVxYnFCalN5RVhLSVdQMDJmQmdoMXBGeEhlWFpzenlvU3E4M0VYRi1abXk4Rml4WU96T3N5bjNMZW5EbTFwbnVkMzBEZG90YUVYZHdWYzA5Z3pub3pFVUpxT1JpUjBQQ01mY3VNTnlBVnRsODZL?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新品类硬件开售，非旗舰新品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-174
+  date: 2026-11-13
+  dim: W5
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "tvOS 27.2.1将为旧款Apple TV 4K加入Siri AI"
+  quote: "tvOS 27.2.1将为旧款Apple TV 4K加入Siri AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aQTlnVzdQSnBGTnhwMlpUSkhiNmZMaGk0ZVMwekhQU3hhaGFoRkJLemNTVGs5N0Zqc2UwSTZ3RjdRVUFTS1VMWHhzT3FSSFFRVjlXamNKWTA5TnZtQS1CRg?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):旧设备功能小幅更新，影响轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-apple-175
+  date: 2026-11-12
+  dim: W7
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Apple支持社区将于11月20日永久关闭"
+  quote: "Apple支持社区将于11月20日永久关闭"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9RQ0xXbzQ0WXlDMURWOHVQT2dYaV9kNTFXLUFsa2JMZFgxX3V2Q01wS0dQa2pGQUlDVFpqcnVsaVZxOFJXaTFjV0hKT204Z0pMVUs2RlZsRVA1Wmh3MUZsQjlGWWwxZUQ5RjJwem5YempsOXl0YnZubXQwRlFxVWc?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):关闭30年官方社区，服务收缩事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

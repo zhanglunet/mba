@@ -1706,3 +1706,94 @@
   source_type: media
   note: "LLM 预分类建议(high):华为Mate90系列发布预告，重要产品线发布信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-11-huawei-112
+  date: 2026-11-11
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "ADIPEC 2026 | Huawei Unveils Full-Scenario Intelligent Oil & Gas Solutions, Upgrading the Industrial"
+  quote: "ADIPEC 2026 | Huawei Unveils Full-Scenario Intelligent Oil & Gas Solutions, Upgrading the Industrial"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxOdUVuY1d1bWFaNjBnTlZsSVlwUUV1Vnp1WHNkWWM0WDFJMDhyc1YwX25sZEVUWkhpRnNsSzU1SWZDTlZ4ZHR3dF9lT0JVMHZtSVpOUDRoVzV5V3BCWFlacGVoU0gzLXFZeHloVW93R3VBMmRmb3B3Y3g0cVNZWmV2dDd0SXNob2tKQXBXaDREMGpWYWNENXBQNUx3?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, category, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布行业解决方案，B2G拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-huawei-113
+  date: 2026-11-13
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "China Unicom and Huawei Build the Industry's First Dual Ten-Gigabit Smart Thermal Power Private Netw"
+  quote: "China Unicom and Huawei Build the Industry's First Dual Ten-Gigabit Smart Thermal Power Private Netw"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE1aUHFzRU0xRmZGeU5IVWlxMXZNZm90X2FRTjdUMThod3pmSUdpNEhXV2FoM0NqTDcxZlhLNkFGTEItb0hmdFlCWGFYNGZIb1JlNjBfZTFMUjZ0UnpjWnhQbXoyNndMdVVJRHhWTQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(high):行业首创5G专网合作，标杆项目。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-huawei-114
+  date: 2026-11-11
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "在风浪到来之前，让深圳海洋预报更有底气- 华为"
+  quote: "在风浪到来之前，让深圳海洋预报更有底气- 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxNYnR6VllqbTREc3pIYlRjeGpmYlpYZ3VhN3FnWnlfRWxDd3ZVWU15QmoxNWloMHo3bWNOZURmVGJERWNRdVNVaEpjLWxoZk11ZUtVczBscFlybTFQc1hzS0xNWGxod0x0dnNyRW8yOVNCMWQ1elk5YnlIZlBQTGUwaF9TVXBZc2ZBblhXNGV6Nlo?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):华为技术落地海洋预报，正向社会价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-huawei-115
+  date: 2026-11-11
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为官宣比亚迪腾势N8搭载HUAWEI HiCar车手车互联"
+  quote: "华为官宣比亚迪腾势N8搭载HUAWEI HiCar车手车互联"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE9mZmhZd2hIdDhhUHRPWHllYXR4NFNmb0RfQ2E3aFVfMVB5QThvV2dVZUlwZDJuZ3Q0Snh5SWlRNVhBRkdPU0NqaWpkMGs5NmxKUWNrcTNTbm9CUnRLdmhybXdmZ1JkbmlzZlE4UXJ6bk9VR0Y2WEFWUkpCcjg0QQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官宣HiCar合作扩展，生态进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-huawei-116
+  date: 2026-11-11
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为官宣比亚迪腾势N8搭载HUAWEI HiCar手车互联，支持三折叠手机形态跨端同步"
+  quote: "华为官宣比亚迪腾势N8搭载HUAWEI HiCar手车互联，支持三折叠手机形态跨端同步"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1hVXBGekZlZkJJVENSRndSamEyR01qMWtCTTN3czY4SWUydGJlNVZFcFZXX004aTZab2Y2WDNjRkdVZG13TGRJZGlhY0c?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):生态合作扩展，正面但非重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-huawei-117
+  date: 2026-11-11
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为手机新品牌OSTA星芒将于11月20日亮相"
+  quote: "华为手机新品牌OSTA星芒将于11月20日亮相"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNZW1SVWh1ZHh2dW9EYlNYTjl4dzY4dlQ3RElPSzQxM0p1U05rTlptQ1p3a212OFFkbzNDMFotRlYtUXNWXzBpcFNXRWlHT2pJdl96amRSU2hXN2JUdW9OQ1lFUGxXc3k4VTRfT3Z2S2ZvejZ4VjNteWdqSGVFLXBxbA?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新子品牌亮相，品牌战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

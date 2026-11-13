@@ -2844,3 +2844,139 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数据公布，ARR飙升至400亿美元，营收翻倍，属P0级财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-12-openai-185
+  date: 2026-11-12
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Supporting research on AI and children’s safety"
+  quote: "Supporting research on AI and children’s safety"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBuOXptWDVwdFpaZ2JTVXdBSTZKdjlzLW1VX3BRRTBxY0lxbERfTzNSeEZaaUdNb1Q0S0N2YUVNQ09lSlZPcVlZT1BXQjdZOXFYUGlRbkphODhOZU12ZWtob2hR?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方公益研究计划，正向但非重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-openai-186
+  date: 2026-11-11
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "ChatGPT Plus for veterans and servicemembers"
+  quote: "ChatGPT Plus for veterans and servicemembers"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JZDVqU2NMbXRqaFZkVEJfcnRlUHMzT3hTUEV6V21mQmk2aS1MOW1Wb0pXYlZxd3JPTlJZcmxvSjZydzRtWGlMcG1WaTIwa2dMbjZLRnQ2XzFqX25SQ1FFSQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, category]
+  source_type: official
+  note: "LLM 预分类建议(med):官方产品权益扩展，一般利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-openai-187
+  date: 2026-11-11
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Singapore Airlines elevates travel & work with OpenAI technology"
+  quote: "Singapore Airlines elevates travel & work with OpenAI technology"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NUzdYcWZucWtDS2FlTjR4ODIzajRvX0UxWGd0S3ZhZ2dkV19aNWlaal9UVW40RWt4X1lKQ21qRDZKV3pnSmNScFNwT2V6eVlHRnBWdkQ5Q3BRTXNvVU5yc2w1VllUb0E?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方客户案例，品牌正面展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-openai-188
+  date: 2026-11-12
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Gilbert + Tobin rethinks the business of law with AI"
+  quote: "Gilbert + Tobin rethinks the business of law with AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBlU3UxRF83THdKRE1tMTJwVzA3YVZiY0c3R3pTTVJwYU1zU1dQcEtwRVRNNHJrM19SeWNWS1JJelVxV1EtNmdNQ0x2bk1PMWwwSW53anVWNmRoZjY0LWFoVVFB?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):客户应用案例，轻微正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-openai-189
+  date: 2026-11-10
+  dim: W3
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "Work at the Frontier: AI’s effect on freelance work"
+  quote: "Work at the Frontier: AI’s effect on freelance work"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9jbjZqUWRlTUJ3MkZPVlYzd2hSb3A2aDlBOG5zckhFZjVEZFlQc3diU0lxOVhwLUFHTnNRMy1SSlgyRGxhOVpsV2w4MHNFOElOSFBQRlNnSDV4eDloc2V0R3lnUQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方研究内容，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-openai-190
+  date: 2026-11-11
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "速递｜OpenAI收购AI旅行初创Odessia，布局旅行服务"
+  quote: "速递｜OpenAI收购AI旅行初创Odessia，布局旅行服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXdmpWSkM3enVxZ05CT3RNRlFxZ0hYQ29tb3BCNHZiLXg2LUpzUzhVNFpIcUlCVG52QWZNMGZZUnhyY3NRa1p5N2JnTU5ldkw2NGVZMHNSVk90R3Z1?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, category]
+  source_type: social
+  note: "LLM 预分类建议(med):收购布局，金额未明确故P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-openai-191
+  date: 2026-11-12
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Altman密会三星高管：承认AI短期泡沫，算力需求存在“重复计算”的水分"
+  quote: "Altman密会三星高管：承认AI短期泡沫，算力需求存在“重复计算”的水分"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFAzM0tRME9KbFZVcjd0eWhTaGhPNGNmcGZoZmtzZmprakRnMDBQMmtiZ1R5anVGWG15ZEtzbmpRdWpyeHBaVTF4UFk4TFdsVzc0clRvNHZPbmlTOGxt?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):CEO承认泡沫言论，涉声誉。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-openai-192
+  date: 2026-11-12
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI或贡献微软过半AI收入：罕见披露背后，微软在帮其IPO铺路？"
+  quote: "OpenAI或贡献微软过半AI收入：罕见披露背后，微软在帮其IPO铺路？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jT2lXa1BuT2tfZVpIcGhIVHUtNzdHc21VNG0taUpiX1pxQWhHQ0xUbU15cVZMME5PM3BrNllpVTlVRnNtR19pTA?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):收入贡献披露涉IPO传闻，信息量大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-openai-193
+  date: 2026-11-13
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软大规模宕机持续数小时！OpenAI和Anthropic遭波及 日本、新加坡政府受影响"
+  quote: "微软大规模宕机持续数小时！OpenAI和Anthropic遭波及 日本、新加坡政府受影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE1WMGM3b1dsTjFMUklpZzJJallfNVFIWFk1dmJaMmZNWV9uQ21Ga2s2MEYzajMwWWJuYXZ6NFpWNjA1N1dzMlJIOEh3em9BaFYwSUhyY3M0MWRRMDZiUFBWX2hudw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模宕机波及品牌服务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

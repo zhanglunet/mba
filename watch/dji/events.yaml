@@ -767,3 +767,79 @@
   source_type: media
   note: "LLM 预分类建议(high):大疆上诉美国防部采购禁令取得进展，具有政策突破意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-13-dji-050
+  date: 2026-11-13
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "11月18日起执行，大疆官宣调价"
+  quote: "11月18日起执行，大疆官宣调价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jakowdnJ0Skh0S2luMVhsSl9yZnF3M3paZE9MWHZySzBzNVFDRG1GYy1uYzNKUXBudzdreUNKVDJreUtya3IxNmN3ODhxbUJrbjRSOFAzbnFDcWlBRWd6cnpqeUI?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方调价公告，市场事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-dji-051
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "独家｜受半导体及存储成本飙升影响，大疆官宣涨价，云台、拇指相机在列"
+  quote: "独家｜受半导体及存储成本飙升影响，大疆官宣涨价，云台、拇指相机在列"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOb2QzbHpucFRTRHF0RnBjXy1rVEMzUkx0LTdrQ3JFQ3ZPM202RzhuSEpEbkU1cW1TQVJGUHZBRl9Xb2lfQmxtLVR6bHJUUUhvUFlGeU04X1luNHVoMEFEdWliZ2VobVUwN3VBNmpuclAwOWw0UE93VU1GNW0zTlduOFkyVWZ4WHZGcVR4SQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):独家报道大疆涨价事件，有实质信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-dji-052
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "大疆官宣 11 月 18 日起调整部分产品的建议零售价"
+  quote: "大疆官宣 11 月 18 日起调整部分产品的建议零售价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBLV3FRSmJUSVRMb0ZNMG5VdERUYlRpQTRPWVRYZC1vQkhybFV0Zi1XeHFMMGFiUnNiMkU1ajNHUXpjSWI0V2hDVFQ0cjhXN1U0ZFJOU2NnR2hQOW91RWFvNw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方调价公告，属价格事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-dji-053
+  date: 2026-11-11
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "因间谍风险 德国联邦国防军禁用中国无人机和汽车"
+  quote: "因间谍风险 德国联邦国防军禁用中国无人机和汽车"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0AJBVV95cUxONXpKY3ZfXzhqZWotWnRwMmQ0RURUMXRXSVM5S3Q1dFFpWGQxbERDWkZGLUJTeFVyUFdDTXBMUERlS0ZzY2JhVi1jWGY0a05FZ1hXZGRqR00wVDExUTUxUndjMmc1dXJXVHRyWndpSlJLb015TXZTVVhYWU9QYU5mRURMSW40UU9sR2V2Y1lmX1NsR1d2ajQ2V2NlQUZTaUhlUWlBOFBtSURKUUhtUWc3Q29KRUtzZDQtWTRDUmJqMVd5anYzT1RuZHU2TzlTakt4WUIyZmlWSjBkVjlSV1Z6c2N5WkJMdC0zVEtGdWRHSG9xazZZbURXV2hUUEhnbm9US1FzbVZzVTZFV2E0dW16Nk1hak85VW5HZ3NkUlpLNkNwUURTdlJ0SzhPempOUUxPcTF0NkRONkF6RFI2TXJTdHFDSThNc2x4WFB3LXJuOC3SAdACQVVfeXFMUEdXU1VleUYzUkNCUkRHRnlmd3ltbms1Qk1PZ0lMb2VJdGNEWlU4RENFWjRGcTZpZzFicFU5VUR2ZWh1SG1lRXhZMlhkUFpYa0F0dl9hSUhRbUtOc1dQaFQ5MmlZMXpKay1xeHNZUnhCVmllNDEzYnZMUHo5SVBwR3dDaG5HOVFOUTViTDBoM3A2UXVWemNkVl93TUZQMHJzZXZxa2kzTXpiWDZvbEhRMkROY2dlS1gydzRUdFpTOWtKMldyamN0MkYyb2Z2UkpmNVQwS2RIbjAzWk5SVGNwbTV6OGpVUGhoUWh6ZDNFZWt2RnNQRmlDdml4NjFSWmdrbWhTbWs3QkdGUWFKMWw1WWlzbXRuR2p4dkgxWmRwYlY4VWVQWHVsR1F4SFVDb2FwZmhrTVVydUV2UjJUdXRRaVZhcDJ4alpJek04UThUV2tL?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):德国军方禁用涉大疆地缘风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-dji-054
+  date: 2026-11-11
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "德媒：2024年才获准采购DJI大疆 德军忧安全突禁中国商用无人机"
+  quote: "德媒：2024年才获准采购DJI大疆 德军忧安全突禁中国商用无人机"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgNBVV95cUxNQTZ3bmlZSzZDT3BINGROeWNlb1RzNFhoQUpNS0VNT3IxUm9Tejg2dlg3MUI5dG9VRHBSOU9Fbl9BTWItN2J1Z19GcFNPUURFbWVBM2ZmNkxqRENHdURacVYwd050cnZqNXZoVjliUktzQ3pmWHdXNVpqdTROQlhzVWFvbldJSmlNYzN2SEZFTzB4WFJFbEdmdDd1NmVLM3V5bEtFRldqbXZiajcxVkdwcHR2bmhpS2RUZ2k3bHVGSkNmMTZiUkVOUWItUWx6NXUzT2NFczNUZm0zMUNnYkVENGhhNG5YVTBqckxtWTRmcE5vWko5N1hrSDBiRHlSWW50MTJ1TmtILXVvZUxheXgzTUtHY2dIUUgwUFJadHdVNXJQclZETWhsMkxHODhUVVE4SjRfeWkyY1FBZHRVN3JYWDZzNFZBdEdrMjZiS2wxN0JLNzBQSW9ILUNVQ1RNem1uaUlBMkZHcWtwQmZzMklpWEFRU3VROE9tbVlZWC1lT2VoV19KNWtkTmJFbi0zemxPaFpCNkZ2UzRBYXR1NkNvc0ZUSzB6Zw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):德国安全疑虑或禁用大疆，涉政策风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

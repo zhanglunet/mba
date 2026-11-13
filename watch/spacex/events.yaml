@@ -2589,3 +2589,49 @@
   source_type: media
   note: "LLM 预分类建议(med):特斯拉Roadster新产品预告,涉及SpaceX推进器合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-12-spacex-170
+  date: 2026-11-12
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "马斯克Grok泄露自家机密！SpaceX特斯拉工资绩效全曝光"
+  quote: "马斯克Grok泄露自家机密！SpaceX特斯拉工资绩效全曝光"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE41NkhUanJNV0lnMkJERGZVeGoyV2l0eW11UU5yQVdqMHZ4N0RmTHFmY1NrNURmLXNEQmJnNGl5UGpjRkp0WVNjZVdOcGx0RzNzZUc3NjRISWdGdC0z?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):涉薪资机密泄露，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-spacex-171
+  date: 2026-11-13
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX与特斯拉合并谈判加速，最快12月官宣史上最大并购"
+  quote: "SpaceX与特斯拉合并谈判加速，最快12月官宣史上最大并购"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxOR3cwNFlxY2dkX0pDLXFmdEx2eklZeW9TNlhKb0UzTm55VmY0Tm9KajV1ZXEwNWdPNEVmWFpieThoM0FaYnU5NC1LN1FrLURSeUJkaGJGUlZ5NkRZbWJWck1jTUZSelZJN1RWbkF6eVUwc1FRTU5LMTVGQU5wMFBLT2pfR29QUFBkUlp6dkIyQQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):合并传闻，未完成交易，判P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-spacex-172
+  date: 2026-11-12
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX计划投资740亿美元，在亚利桑那州和德克萨斯州建设数据中心"
+  quote: "SpaceX计划投资740亿美元，在亚利桑那州和德克萨斯州建设数据中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBEZFR4LWlZdWk1NDctdnl6ME40STk3OS1CbEFTT2xPdlktVWFhXzhGeFpxZ2NHMWxBQUM2bFV0TXhYd3IxNzEyblBPWHFQQ0pLMGtv?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):740亿美元重大投资计划，金额明确但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

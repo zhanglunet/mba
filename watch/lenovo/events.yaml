@@ -1376,3 +1376,94 @@
   source_type: media
   note: "LLM 预分类建议(high):AI PC产品线销售进展，高管发言透露市场表现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-10-lenovo-090
+  date: 2026-11-10
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "80% of IT Leaders Say the Digital Workplace Is Critical to AI Success, Yet Only 10% Have Fundamental"
+  quote: "80% of IT Leaders Say the Digital Workplace Is Critical to AI Success, Yet Only 10% Have Fundamental"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPNjg4MFVIQ09keE1odU5OdTlCem5LQ1FfbnVOd2NRMDR3RERDbUdBVW4zRFUtWFBxYmNXUFJvOXRwQmZYR3RJZExmdWpjbnBmVWZqMUF3ZDVCNEF6VjR5YUhTaDcxczZ5b1NybFVnWkp2Z1I5QzRZeGxOWHh6QzdRa0s0RmFnekU?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方调研报告，行业洞察类内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-lenovo-091
+  date: 2026-11-10
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Accelerates AI and HPC Convergence with Next-Generation Infrastructure for the New Era of AI-"
+  quote: "Lenovo Accelerates AI and HPC Convergence with Next-Generation Infrastructure for the New Era of AI-"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixgFBVV95cUxQRjlsc1JHRVg4QkptRTdVZlRiMkx3Tk1vNFN2U3dpdDlhM0d5X3BDUlc0MjdHaDlJMFJCTlFLaVNZS1lMdmExM3RKNzZMdmVSYThOT2xWbndPUlA3d0RHbUJBaV9HOXRlQ0ZfeEttb0JwdWoxZVBFZTZCbk50UW93MldKdmtzcHBybmh1MWFRWm9MN1VDUWtTcnJCR1F4bHJ5ZFUyNzRuVXRhZWlRM0NjenVvQ21zNVpqc2RtUDNXZkM1SUN6cHc?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方发布新一代AI基础设施，重大产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-lenovo-092
+  date: 2026-11-11
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "The next chapter of Lenovo 360: a smarter experience for the AI era"
+  quote: "The next chapter of Lenovo 360: a smarter experience for the AI era"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9LWG5RNEFaZUxHbzU5b2MtT09LZkdGR3VrSk5qWFlHdS1IVkFjb3lSQ1RNblZ5dDYtaXhIX0YwZVVNX0YxVjJkMUhhVl82NFB3bXYtX3dZc0VGWDRESHV2VXNLcEtGVVNaZklNSTMyc0IzQWRuT1lIUjBfT0Zqd2M?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):Lenovo 360平台升级，官方叙事内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-lenovo-093
+  date: 2026-11-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想发布混合词元工厂，2027年将建成1.5万P算力集群"
+  quote: "联想发布混合词元工厂，2027年将建成1.5万P算力集群"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOSnk3M0RqNzRGM0RZWTZiSFZTSUNJUjdIakJhU00zejJMYlhBb0VuU2UtdUlaeTd2bDZyMjM5OHFJemJFUzNkN1JTZ0FQZmhpR0l1RndNYXBuU2VlMWZhU3U5QW5DcmlJVXFVbFRidnRsY1o3ek5Yam5RRDlSV3F0TWc0SDFNRWhweFdjLXk5aHNuVl94STdmUXc0Q20wUkpMTVdOaHRvOTE1aXNaa2hnWVB3?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重大算力基建计划，实质性战略事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-lenovo-094
+  date: 2026-11-12
+  dim: W3
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "李彦宏对话杨元庆：AI替代不了CEO见客户，革命性技术初期不必过早谈投入产出比"
+  quote: "李彦宏对话杨元庆：AI替代不了CEO见客户，革命性技术初期不必过早谈投入产出比"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE5zQ0NGWnhrSTREU1haeHZYR3ZEaFFoUUNDLV9EQ255U2NZVHZhaUpWN0h4aU1SdWlCTkZVM0h6YURncTIwdjBKazVEdzR5NXpFRDF4SQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):高管对话观点交流，事件性弱。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-lenovo-095
+  date: 2026-11-12
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo เปิดตัวแบรนด์ Wanquan Hybrid Token Factory พร้อมวางแผนโครงการในจางเจียโข่วเพื่อสร้างคลัสเตอร์"
+  quote: "Lenovo เปิดตัวแบรนด์ Wanquan Hybrid Token Factory พร้อมวางแผนโครงการในจางเจียโข่วเพื่อสร้างคลัสเตอร์"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTE9IQW5pSmpPY19nc05XQ2d2MXdiejlmRzBBZk1wWk1vS1NJRTdUT2FjQzFEXzZzSGtRb085c21XRFprZlluVUdOVjhuLU1RUzJXRDQwanlwdw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):联想发布新品牌与产业集群计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

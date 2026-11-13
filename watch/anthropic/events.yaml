@@ -3004,3 +3004,139 @@
   source_type: media
   note: "LLM 预分类建议(med):内部模型泄露重复报道，涉及产品机密与安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-10-anthropic-197
+  date: 2026-11-10
+  dim: W6
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic launches roadshow for proposed initial public offering"
+  quote: "Anthropic launches roadshow for proposed initial public offering"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE51YVF6eThycm5nblZRV2ZpeDRhWUtVRi03bmxZMGNuX0pJMzUzRDFWSHh5clR6VVN1R3ZzaTNFWHNvYjRwUTNCUERQbFQ3WmFyMkxVcGpFTUpjQQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方确认IPO路演启动，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-anthropic-198
+  date: 2026-11-10
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚！Anthropic首次公开Claude记忆架构！"
+  quote: "刚刚！Anthropic首次公开Claude记忆架构！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CRThOZ1dXWTQ4VS00c0pnMHlFdUtSRkhLWENjMDRubkR3bU1PQy10WU5VQmdyWGtPZk5ITzhFbk53a050UnA2OUlzUUFPWGgxM0ZnSXZiM1VhYVN5?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Claude记忆架构披露，技术动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-anthropic-199
+  date: 2026-11-11
+  dim: W8
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic靠封号9个月获23亿美元收入：你被封的号，帮Claude上市"
+  quote: "Anthropic靠封号9个月获23亿美元收入：你被封的号，帮Claude上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE53OGNJNm04cXFhTllFOFVZYWV6OEthT0ZxX3lDbzlGVVoyTk5yU3BoMTk3T0ZaLXFkMDYxWmgyT1VjMTNNVm44akhJOHdPV2YxMlFFNVZnWjh5a01B?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):封号争议引发负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-anthropic-200
+  date: 2026-11-11
+  dim: W6
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic万亿IPO启动路演：五组数字背后的算力赌局"
+  quote: "Anthropic万亿IPO启动路演：五组数字背后的算力赌局"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9waVN4WlNBenYzaTZYVXhvNVRBUWlyY0E0OXdGMDFPTlUwaXJKV051VWZ6V3hSSF9pQ0x1OHlWMHZHd01iQ09XU3ByQ1cxMzE5RTZSWVFWRGVLUENC?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):IPO解读，含算力风险担忧。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-201
+  date: 2026-11-13
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "AI越界撞上中期选举？Anthropic Claude“翻付费墙”，调取州选民数据！"
+  quote: "AI越界撞上中期选举？Anthropic Claude“翻付费墙”，调取州选民数据！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBQMkRuNkRwb0JJa0tadTYtQkFhUFg4TFRPUWcxZTJ2bXVNdE5hT3VSUVl3M245MmtZczk0MXdlcGdNcjVuNHpLYg?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude越界调取选民数据，合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-202
+  date: 2026-11-13
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 正式推荐 Claude Opus 5.5：成为多套餐默认模型"
+  quote: "Anthropic 正式推荐 Claude Opus 5.5：成为多套餐默认模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE9PREJ0ak1NQ2xYMmdjclNFM0hiUjhXUDRvVW43VEZiVHU1akxMTG8yTy1CdTd1b2FCdGYwY0NUTEpBbmE1S3R6UU1yWmZEdw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰模型重大更新并成默认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-anthropic-203
+  date: 2026-11-12
+  dim: W7
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "上市前夕收紧Claude使用资格 Anthropic封堵股权架构通道"
+  quote: "上市前夕收紧Claude使用资格 Anthropic封堵股权架构通道"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JNGhWNnRIRWUwRnZtVnNHbjZpWVZEZWpxWVVHendrNU50NlluUXR4YXlNWmRMYkZpRDEwd1NQUVFydXRXSUZWOUxBVThDQzJSLS1Tb0dfMXZZSmlQaGttNg?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):上市前治理调整，信息量中等。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-anthropic-204
+  date: 2026-11-12
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推出面向实时视频通话的 Claude Meetings 测试版"
+  quote: "Anthropic推出面向实时视频通话的 Claude Meetings 测试版"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxPSFI4Ykd0Z0o5RFdJeHBhMURCNzdvNUFPOGlWWWYyZjBrLVNzWHFwYWlkM3JFMHRuMEhqWjBNMndZMkxQa3dmTEZJZmg1dWFCNi1kTXJOZEY3bUxzbmtBZi0wRFJ1Y2k5ZVYxUU5aenBmZ3FaQWZWY3pudzFGRmdkeHY4OE1vRThTNl92cUZPQVktUQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新品类功能正式测试发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-anthropic-205
+  date: 2026-11-11
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic大清洗：Claude最严封号潮来了！11月12日全面生效"
+  quote: "Anthropic大清洗：Claude最严封号潮来了！11月12日全面生效"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9tT1JOaGFJdS0wZkstZ1plRVdnQmZRRGpZd0FmTjM1dlpRR2JLb05GTTVzZlgwSldIYk1MMGpoWEVUTnVranNTbkRuTC1mQllBNzI0?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大规模封号影响用户，负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
