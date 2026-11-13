@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T08:04:10Z",
+  "generated_at": "2026-11-13T08:18:30Z",
   "window_days": 3,
   "candidates": [
     {
@@ -26,7 +26,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "3a34c49c9ed9",
@@ -52,7 +52,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "57c2528ee989",
@@ -78,7 +78,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "174a4e9c81b2",
@@ -104,7 +104,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "42a0100cf7c9",
@@ -130,7 +130,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6f62f30dab9e",
@@ -156,7 +156,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "70031c8796ca",
@@ -182,15 +182,15 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "7668af1800a0",
       "slug": "anthropic",
       "brand": "Anthropic Anthropic (Claude)",
       "date": "2026-11-10",
-      "quote": "Anthropic launches roadshow for proposed initial public offering",
-      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "quote": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A c",
+      "title": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A c",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51YVF6eThycm5nblZRV2ZpeDRhWUtVRi03bmxZMGNuX0pJMzUzRDFWSHh5clR6VVN1R3ZzaTNFWHNvYjRwUTNCUERQbFQ3WmFyMkxVcGpFTUpjQQ?oc=5",
       "source": "Anthropic",
       "source_type": "official",
@@ -208,7 +208,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "0ec685031430",
@@ -234,7 +234,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "3b5a1dd4b454",
@@ -260,7 +260,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ad17cdd6025f",
@@ -286,7 +286,33 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "b537f5ffbb2f",
+      "slug": "anthropic",
+      "brand": "Anthropic Anthropic (Claude)",
+      "date": "2026-11-13",
+      "quote": "AI越界撞上中期选举？Anthropic Claude“翻付费墙”，调取州选民数据！",
+      "title": "AI越界撞上中期选举？Anthropic Claude“翻付费墙”，调取州选民数据！",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBQMkRuNkRwb0JJa0tadTYtQkFhUFg4TFRPUWcxZTJ2bXVNdE5hT3VSUVl3M245MmtZczk0MXdlcGdNcjVuNHpLYg?oc=5",
+      "source": "财联社",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "01131e03196c",
@@ -312,7 +338,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "53d48fa42ad3",
@@ -338,7 +364,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "178a51fd60ba",
@@ -364,7 +390,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "4fe1d10ea4e2",
@@ -390,7 +416,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b95608703fcd",
@@ -416,33 +442,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "859eb91a5473",
-      "slug": "anthropic",
-      "brand": "Anthropic Anthropic (Claude)",
-      "date": "2026-11-12",
-      "quote": "太炸裂！Anthropic二季度营收达逾115亿美元 同比实现14倍暴涨",
-      "title": "太炸裂！Anthropic二季度营收达逾115亿美元 同比实现14倍暴涨",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5TQmI4dFp2Wl9qQmo2R25VaVpIbjdaQWFfd1d6d080LUVaNjc3clAtQnZ4ZTFWV3BrMEpQMDFvdDZxdm5oTDlVSQ?oc=5",
-      "source": "财联社",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "20126c91518b",
@@ -468,7 +468,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6cb57d489b7b",
@@ -494,7 +494,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "5da2e59e3cb1",
@@ -519,7 +519,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "bfa360d4a6ce",
@@ -544,7 +544,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "47b1b3dc40c9",
@@ -569,16 +569,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
-      "key": "29621e35b376",
+      "key": "3a25521ab6df",
       "slug": "dji",
       "brand": "大疆创新 DJI",
       "date": "2026-11-13",
-      "quote": "大疆正式宣布调价：受成本持续大幅上涨的影响，11月18日00:00起，对部分产品的建议零售价进行调整",
-      "title": "大疆正式宣布调价：受成本持续大幅上涨的影响，11月18日00:00起，对部分产品的建议零售价进行调整",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KeV9HeUc4N1NHWEw3cUs2YUFTSHBuSVJ0eWJwaTNYUTZ0a2lQbE5kUGJJVEZTZTZZQmt3RGRLTDBwdDk0UWd6Y1UwbFIxb29NZ0picGk1UlZ1UnNPRmNORw?oc=5",
+      "quote": "刚刚，正式宣布涨价！",
+      "title": "刚刚，正式宣布涨价！",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yMkplMUtDdG5fMnJSSFNyOERKalVpTV9uV0xxWEJhdW93T2dPUnkzTGRQT1c4cmVfektxWXRYY0JiVFZmeFQ3dE9jOHA0ZVZyZnlDellDZmhBY0djYjU5Mg?oc=5",
       "source": "ThePaper.cn",
       "source_type": "media",
       "applicable_dims": [
@@ -594,7 +594,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "26074c85b3b5",
@@ -619,7 +619,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "e0c103cfde41",
@@ -644,7 +644,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "f485b5660e5a",
+      "slug": "dji",
+      "brand": "大疆创新 DJI",
+      "date": "2026-11-13",
+      "quote": "受成本持续大幅上涨影响，大疆正式宣布调价",
+      "title": "受成本持续大幅上涨影响，大疆正式宣布调价",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE40YkNHOHhXdzg2LVhaOW43T0ZSVkxZU1kwaVc2S3JoSV9LeGM5RktLb3pIb29oVVRhaGRtSzg1MzhodGtfd3RBeVhHTGc4NXNZUFhjX3BnbEZBWGxl?oc=5",
+      "source": "网易新闻客户端",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "739608e4b4ce",
@@ -669,7 +694,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "27a437471baa",
@@ -694,7 +719,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "a3a3ab98f03b",
@@ -719,7 +744,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "fc2a813162de",
@@ -744,7 +769,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "dc24b8a89472",
@@ -769,32 +794,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "1b326ec359fe",
-      "slug": "dji",
-      "brand": "大疆创新 DJI",
-      "date": "2026-11-13",
-      "quote": "大疆宣布调价！",
-      "title": "大疆宣布调价！",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM3E0bjMxUWh3dGRTOEo2Q1otaWdfMFpfVXRwdmxpZDFaX09fQ01UaFpCdkRGM3hTXzZWQkxZUTJ5Q1JPRXd4TzJqYWxXNWN5LVVHaW1oSFNYeXltR184R2UtUWdiNHVpbFlMaWxXeHNla3JwUURwaEVXdUJXS1NrNURVbDgySnl6?oc=5",
-      "source": "Sohu",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "1b282c35f01e",
@@ -819,7 +819,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6850c4b1a8a0",
@@ -844,7 +844,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b5cbd2c80840",
@@ -869,7 +869,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "84cb9ba5ce03",
@@ -894,32 +894,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "13aeafcd2f57",
-      "slug": "kimichat",
-      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
-      "date": "2026-11-10",
-      "quote": "黄仁勋出轨丨谍影重重下 月之暗面被指内地租用Nvidia顶级AI芯片",
-      "title": "黄仁勋出轨丨谍影重重下 月之暗面被指内地租用Nvidia顶级AI芯片",
-      "url": "https://news.google.com/rss/articles/CBMipwNBVV95cUxPV1hZUU5KMVRuNGU4a0JETF9mTmxKdVRjT2tidGM4clQ2QWNheTBSaVIxVFBrTVJkRHpEc3NGWGU2OXJwMDdkNnk3WnZIb0lQVGxoeWRLblRWaGV3NjdsbncxUTBpUVFKaVZpSWp2aWhqbXNwUkhRbnI4OWlZR3FtNVdhbGl4Ty1FaDRtVmRCVS1jVVpUYS1OWV9iWndTcHlfS1h2MDFhQ1p4VnJ5ODc5WmxBRE9Bb1pWUTJzQVBOVDFFTXhSYWpXSWhORl9HckprckZOcHJkaVZ0NjFSdHY1cW12dkpaZnpWRnVVZEg0UjQtODNVcDJfUHh5RjMxMmdmYUZFU2JnWWdtQ2dqTHVSd280ZzloN2gtRndaMXNPck1JTnR3eXdoelNsQ3JNSDBWdnRMRXlUOGt0eHBERFk5NkJzYTRrN3MzQjB0MC1qRVVXR0JRRW4wMXp1dW14YXpmcGRQU1hUSlhBVF9xaHdPSEhRVjBPREJuYUhBemVlckhYRFlNdmNQam1BcTJXTW1mZ3EtUUNLLTRMSVpwcjNkejVDcUdXQms?oc=5",
-      "source": "香港01",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ca2791000b29",
@@ -944,7 +919,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "c51b935fbb1b",
@@ -969,7 +944,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "a69f8afb93c9",
@@ -994,7 +969,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "27131ec27cb5",
@@ -1019,7 +994,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "999ebc97afa3",
@@ -1044,7 +1019,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "2575c6c02a82",
@@ -1069,7 +1044,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "c174ce3d81a8",
@@ -1094,7 +1069,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "7d7c060ca259",
@@ -1119,7 +1094,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "241514a941e8",
@@ -1144,7 +1119,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "891aa6572314",
@@ -1169,7 +1144,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ff3982b26af9",
@@ -1194,7 +1169,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "8fa91ae6cf8d",
@@ -1219,18 +1194,18 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
-      "key": "18011fb05640",
+      "key": "24db41f9db5a",
       "slug": "meituan",
       "brand": "美团 Meituan",
-      "date": "2026-10-22",
-      "quote": "美团举办骑手好人好事表彰大会，荣誉体系激励骑手善举同比增146.7%",
-      "title": "美团举办骑手好人好事表彰大会，荣誉体系激励骑手善举同比增146.7%",
-      "url": "https://about.meituan.com/news#NN261023272002669",
-      "source": "",
-      "source_type": "official",
+      "date": "2026-11-13",
+      "quote": "计算机行业周报：国产模型持续迭代，头部应用交互领跑_行业研究_研报",
+      "title": "计算机行业周报：国产模型持续迭代，头部应用交互领跑_行业研究_研报",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZSEN6bzI1c0pRQ001dWhmNF9lUFIta0U3Qm9SZ25SNE85ZmhUNmotZzFHOE5EMk9BN3JVYU9vVVMxNE9NdllIRFRNM0I1U3NpRnpHZDlJb3FSZ0U4UWhDZ1R3?oc=5",
+      "source": "证券之星",
+      "source_type": "media",
       "applicable_dims": [
         "W1",
         "W2",
@@ -1244,7 +1219,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "a2d45a38b3fe",
@@ -1267,7 +1242,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "81384682e724",
@@ -1290,7 +1265,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "18e52bd8ddb4",
@@ -1313,7 +1288,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "aa9d433da3cd",
@@ -1336,7 +1311,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "54b50c7448e2",
@@ -1359,7 +1334,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "76cda1e1ef56",
@@ -1382,7 +1357,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "7574851e180a",
@@ -1405,7 +1380,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "3c63af5cb3b2",
@@ -1428,7 +1403,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "d6e18b3398cb",
@@ -1451,7 +1426,30 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "9b4c109cc734",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-11-11",
+      "quote": "P'tit Arcon Bag P'tit Arcon 手袋 $6950.00 超值好货 | 北美省钱快报",
+      "title": "P'tit Arcon Bag P'tit Arcon 手袋 $6950.00 超值好货 | 北美省钱快报",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DTTd1T2NIaDRsNl9mYjR4UGgxdWg5REhLMWlzS2NyVnRIcWZGaUtrOTFPU090NXlQeUkyczFuQWZtc3pLSlZTSEY4dTlSRmR0V2NGY1JlWENBVXJtV3NOc181eUJtR2hfR3RoT2ZB?oc=5",
+      "source": "m.dealmoon.ca",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "de1f6d80d655",
@@ -1474,7 +1472,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "a557185784d7",
@@ -1497,56 +1495,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "e2d6d32c6864",
-      "slug": "hermes",
-      "brand": "爱马仕 Hermès",
-      "date": "2026-11-11",
-      "quote": "爱马仕和德尔沃哪个档次高？3个维度说清顶奢包之争+FAQ",
-      "title": "爱马仕和德尔沃哪个档次高？3个维度说清顶奢包之争+FAQ",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBUemJyOUp6Nlc0RVFYdDM2amtrY2wwUDJzSVVSeU0yVDVDeWNHOTJ0cXcyTWMtMXNVeUZyRVJUQV9GcEJJdVdzSGxDS1d4UlktMFNGLVhkOGNoTXFYNDA1YzNSVXVLREgzZnIybDBfVQ?oc=5",
-      "source": "新浪财经",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "b364433b0747",
-      "slug": "spacex",
-      "brand": "SpaceX",
-      "date": "2026-11-12",
-      "quote": "马斯克Grok泄露自家机密！SpaceX特斯拉工资绩效全曝光",
-      "title": "马斯克Grok泄露自家机密！SpaceX特斯拉工资绩效全曝光",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE41NkhUanJNV0lnMkJERGZVeGoyV2l0eW11UU5yQVdqMHZ4N0RmTHFmY1NrNURmLXNEQmJnNGl5UGpjRkp0WVNjZVdOcGx0RzNzZUc3NjRISWdGdC0z?oc=5",
-      "source": "知乎专栏",
-      "source_type": "social",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "88762a3c21c0",
@@ -1572,7 +1521,33 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "b364433b0747",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-11-12",
+      "quote": "马斯克Grok泄露自家机密！SpaceX特斯拉工资绩效全曝光",
+      "title": "马斯克Grok泄露自家机密！SpaceX特斯拉工资绩效全曝光",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE41NkhUanJNV0lnMkJERGZVeGoyV2l0eW11UU5yQVdqMHZ4N0RmTHFmY1NrNURmLXNEQmJnNGl5UGpjRkp0WVNjZVdOcGx0RzNzZUc3NjRISWdGdC0z?oc=5",
+      "source": "知乎专栏",
+      "source_type": "social",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "39873f8cb474",
@@ -1598,33 +1573,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "e1968721b84c",
-      "slug": "spacex",
-      "brand": "SpaceX",
-      "date": "2026-11-13",
-      "quote": "SpaceX与特斯拉世纪合并谈判提速，最快12月宣布交易",
-      "title": "SpaceX与特斯拉世纪合并谈判提速，最快12月宣布交易",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rZFl2YzdZVDB1SGZ5b2dzd0FIb0Nzb0FKQWdyTU0xWVJoaE1lSE9DTlRQYmVtSlJrcDdmRTRyS1c0YjlrZEFldmJfNXN6MGtPVXBj?oc=5",
-      "source": "华尔街见闻",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "63b22ccd84cf",
@@ -1650,7 +1599,59 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "e1968721b84c",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-11-13",
+      "quote": "SpaceX与特斯拉世纪合并谈判提速，最快12月宣布交易",
+      "title": "SpaceX与特斯拉世纪合并谈判提速，最快12月宣布交易",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rZFl2YzdZVDB1SGZ5b2dzd0FIb0Nzb0FKQWdyTU0xWVJoaE1lSE9DTlRQYmVtSlJrcDdmRTRyS1c0YjlrZEFldmJfNXN6MGtPVXBj?oc=5",
+      "source": "华尔街见闻",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "b8d1f6b8a727",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-11-13",
+      "quote": "SpaceX与特斯拉合并谈判加速，最快12月官宣史上最大并购",
+      "title": "SpaceX与特斯拉合并谈判加速，最快12月官宣史上最大并购",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOR3cwNFlxY2dkX0pDLXFmdEx2eklZeW9TNlhKb0UzTm55VmY0Tm9KajV1ZXEwNWdPNEVmWFpieThoM0FaYnU5NC1LN1FrLURSeUJkaGJGUlZ5NkRZbWJWck1jTUZSelZJN1RWbkF6eVUwc1FRTU5LMTVGQU5wMFBLT2pfR29QUFBkUlp6dkIyQQ?oc=5",
+      "source": "21财经",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "dafa07c7126b",
@@ -1676,7 +1677,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "c64692144972",
@@ -1702,7 +1703,33 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "fa3bd6f8eac9",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-11-13",
+      "quote": "SpaceX与特斯拉合并谈判被曝取得进展，最快下月公布交易",
+      "title": "SpaceX与特斯拉合并谈判被曝取得进展，最快下月公布交易",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNLUplTWVUd1c1ejFWanBFUWxCZERCeS13Wm96S3ZDMmFDYVdTNFA1bVFFX254RGdRMGF1b2RDOVZsTlBwOTZVUDdRZjA1b0VSSmRPZWRzYWFsLWNtT0dNTA?oc=5",
+      "source": "ThePaper.cn",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6849096be08c",
@@ -1728,33 +1755,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "3f6e884d79ac",
-      "slug": "spacex",
-      "brand": "SpaceX",
-      "date": "2026-11-13",
-      "quote": "SpaceX、特斯拉合并谈判最快12月宣布",
-      "title": "SpaceX、特斯拉合并谈判最快12月宣布",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTzhnZTJIb3lfZGFGemJTZHp0cjBlSUJEcFpHS3ZVazc2UkNlTFp4QkIyY1BfcVBCa2ozM1FrZjhDQ2hrZnFsME1lQmhpcUxKX2VqbFpoWUZMSVVaZkpzRWRaSTZESGxLajEyc3oyYnNZVEJ0VEtscHhWNkxiY2RBWjZSampxN0JRWkJTMUNZNA?oc=5",
-      "source": "21财经",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "64686b45d046",
@@ -1780,7 +1781,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "953724e882aa",
@@ -1806,85 +1807,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "26238b79ac44",
-      "slug": "spacex",
-      "brand": "SpaceX",
-      "date": "2026-11-13",
-      "quote": "估值超23万亿！马斯克用SpaceX反向吞特斯拉：最快下月官宣",
-      "title": "估值超23万亿！马斯克用SpaceX反向吞特斯拉：最快下月官宣",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBJckwzSmhpMmlHNXVDNlRKaThVdzlzcVBxVkRTRFlTWEVrdWtaQ2hrMGEzeE5ZMEJzX0Y3Vm1adjhMUzduOS1Ka05IV0F1cTZMcTBpRmdaLWc?oc=5",
-      "source": "驱动之家",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "f1f30e09618d",
-      "slug": "openai",
-      "brand": "OpenAI",
-      "date": "2026-11-10",
-      "quote": "Introducing Businesses in ChatGPT",
-      "title": "Introducing Businesses in ChatGPT",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1QWl94aW1pbWMtLVFmMnN6d3NRdk5zOGFhNUNYVUJ4dkZtaG14dnpwQ1F3blgzN2hvTm5DeHV4cXV3dVdfS3JxbDVVb21MMG9sWG0tS2NYNUJTREIyYTVGNmFFdTZEdzQ?oc=5",
-      "source": "OpenAI",
-      "source_type": "official",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "7407b0360d6c",
-      "slug": "openai",
-      "brand": "OpenAI",
-      "date": "2026-11-10",
-      "quote": "Closing the AI guidance gap in education",
-      "title": "Closing the AI guidance gap in education",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9PY2czTVhLaWY0UXdZVW9LX2Rpai1fSlY5d2M4Vm9OeFNHR01YZGlnd3czdzQwMnRxQW5ybHpIUXJGMU1VYWc0Z2ZfcWdaYnpvOXlmQU9MRDRFNzBJRFc3cEt3aVlsenhkb2pB?oc=5",
-      "source": "OpenAI",
-      "source_type": "official",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "8102dbd9bb78",
@@ -1910,7 +1833,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "f371dc41199a",
@@ -1936,7 +1859,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "fd89d1db7b5d",
@@ -1962,7 +1885,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "112f03cc5952",
@@ -1988,7 +1911,59 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "356500980455",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-11-12",
+      "quote": "Gilbert + Tobin rethinks the business of law with AI",
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBlU3UxRF83THdKRE1tMTJwVzA3YVZiY0c3R3pTTVJwYU1zU1dQcEtwRVRNNHJrM19SeWNWS1JJelVxV1EtNmdNQ0x2bk1PMWwwSW53anVWNmRoZjY0LWFoVVFB?oc=5",
+      "source": "OpenAI",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "a2caa947cc53",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-11-10",
+      "quote": "Work at the Frontier: AI’s effect on freelance work",
+      "title": "Work at the Frontier: AI’s effect on freelance work",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9jbjZqUWRlTUJ3MkZPVlYzd2hSb3A2aDlBOG5zckhFZjVEZFlQc3diU0lxOVhwLUFHTnNRMy1SSlgyRGxhOVpsV2w4MHNFOElOSFBQRlNnSDV4eDloc2V0R3lnUQ?oc=5",
+      "source": "OpenAI",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "f256e73a676f",
@@ -2014,7 +1989,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "f0fa2c772552",
@@ -2040,7 +2015,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "fb44f9c5325b",
@@ -2066,7 +2041,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "e18420cd1d5d",
@@ -2092,7 +2067,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "d4741703d15b",
@@ -2118,7 +2093,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "5628b940e67c",
@@ -2144,7 +2119,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "8e60016bc6b2",
@@ -2170,7 +2145,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "43657408dc83",
@@ -2196,7 +2171,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ebf9d4c487de",
@@ -2222,7 +2197,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "a9f3dcb01595",
@@ -2247,7 +2222,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "0b09e54e7c54",
@@ -2272,7 +2247,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "8b9a07af875d",
@@ -2297,7 +2272,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "40718caf444d",
@@ -2322,7 +2297,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "49f935842974",
@@ -2347,7 +2322,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "cfd505d42b3b",
@@ -2372,7 +2347,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b8d74bfc283f",
@@ -2397,7 +2372,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "39e89430e194",
@@ -2422,7 +2397,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "feb52e925dc6",
@@ -2447,7 +2422,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b945394f0586",
@@ -2472,7 +2447,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "5ef43357049d",
@@ -2497,7 +2472,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "f0cb6570c5d8",
@@ -2522,7 +2497,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "1f7537590c68",
@@ -2547,7 +2522,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ae6aba596441",
@@ -2572,7 +2547,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b54637dc92d9",
@@ -2597,7 +2572,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6ac680170ec4",
@@ -2622,7 +2597,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "f20a62206707",
@@ -2647,7 +2622,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6547f7f5ab94",
@@ -2672,7 +2647,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "2b9cc6c49dc1",
@@ -2697,7 +2672,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ae9868680942",
@@ -2722,7 +2697,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "4fc702092f59",
@@ -2747,7 +2722,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6e2714e5eeed",
@@ -2772,17 +2747,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
-      "key": "d73bffd5f366",
+      "key": "fe56eef30464",
       "slug": "nvidia",
       "brand": "NVIDIA / 英伟达",
-      "date": "2026-11-13",
-      "quote": "关于英伟达临时CEO克雷斯，我们知道些什么",
-      "title": "关于英伟达临时CEO克雷斯，我们知道些什么",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYjVlNmc2QnRSQnJCdllHQVZLRzBvLWNoSEhZNThQS1R1aGxSOXA2bEJuenh2RVBfRTgxS3VBYThPaVY4YVZOZ01rNVFyWU5Nb2dONmdERHU4VzF3bGcyZXg3SlNRc2E1UHR5TjNRM2RHRzRkOVhmam5oYjFUc25EZnFXdw?oc=5",
-      "source": "纽约时报中文网",
+      "date": "2026-11-12",
+      "quote": "黄仁勋辞任英伟达CEO，公司CFO出任临时掌门人，中企忙着抢租海外算力",
+      "title": "黄仁勋辞任英伟达CEO，公司CFO出任临时掌门人，中企忙着抢租海外算力",
+      "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPeXdicmxJbGl3VlEtdmYzdF9fSzBGLXFWOU9leFFyLXpnYUFNckVtNnlqZ2ljU3IwQ1o2dnNzdG9FM2VzQnI2STNEWGxiWG9HLTNqajRxdzdVR3Y5YXhDc0ZteTBJOEtJVTVnZ2RZWkE5WTFvSXE1R3ZwVGUyNTc1RnhGcVpLV1hzSUNERVEtdFFQQ2NmZ1NlSjdBYTdyVExpVjhKVERWMVFMalB1c3ljWVZacUd4dWJfQ0psTjVCaFpaV3E1TERIekRES094ZkhjdFhzTGxBYmMzZEp5SDJscjdKdFV4SzdrWlMtY1ctemRrbXJiX1dqWGpsekEtVElTUVpjOURWYVNEX25KcXhGT1NScVd3bkF2Sm5OaU5YQTg0TVNVVzJqNHlyYm1wcVY4emQwSjV5dm5hZHRzRUZWMlRhRzR3TWVlTHIyaVRwbWtlVjZtQUN6cjR5clpkVVHSAd8CQVVfeXFMUGRQSHdSNjR5aHdDaU9zOHpYQmFIbnFzanJucUhIZ25JTVZMS21vY1JqdDBCd0E2LXV6R1E2MHJscGgwVTlFNVRkdGlKWW9wTGV0YVhCTTdPWmdMT2JXRG9yVENXaTZsUk53Qjh3TEtZTVdvSkNNaFoxNVJYX2VaRHc2QVozTWd2RmE2amdQZXB1LVdDdEZJLWw0QlM1N1RKeFc0aC1NUll4NW9JU0ZZRFpjeFBGd1BWUEN2VFZ0XzAwNU5XVlNCc2JSb1g5V0QxZFQwRnc5bHpfRnF6dVNtcmRHRGVKZmdCcUJhNm5DcUZnQmNQYk5KOW5mcVFqM1N2RzA4S1hpYXY5cGxQbjFnSmNzc19naU5OQWF1NW11dzdlS3M3MUlDZnRCZ0xTNl9uUmVPRkJSNHVxRGFIdDZmMGRjNVFoMUNQQnV0Q3JMenhkMy1XcHpOeUt3XzVuaEs0?oc=5",
+      "source": "DW.com",
       "source_type": "media",
       "applicable_dims": [
         "W1",
@@ -2797,7 +2772,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "da8a63cb2750",
@@ -2822,7 +2797,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ecebba874ec8",
@@ -2847,7 +2822,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "2bac8d9c9fac",
@@ -2872,7 +2847,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6af301cae756",
@@ -2897,7 +2872,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "d76834c53952",
@@ -2922,7 +2897,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "8344b579c8a0",
@@ -2947,7 +2922,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "9144453e0b7d",
@@ -2972,7 +2947,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "725f322e3d62",
@@ -2997,32 +2972,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "1fbe354f9af1",
-      "slug": "apple",
-      "brand": "Apple / 苹果",
-      "date": "2026-11-12",
-      "quote": "iPhone Siri AI 体验：距离真正的 AI Phone，苹果还有多远？| 附开通指南",
-      "title": "iPhone Siri AI 体验：距离真正的 AI Phone，苹果还有多远？| 附开通指南",
-      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9QajVXekYwY0tPTWlGTHRYa0cxdDd2alRmVi15UGhFcGtjQVA4eFZZU2hHb2hYZ3NCYWstNnlkQTUxd0U?oc=5",
-      "source": "爱范儿",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "87367353ccf4",
@@ -3047,7 +2997,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "1fbe354f9af1",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-11-12",
+      "quote": "iPhone Siri AI 体验：距离真正的 AI Phone，苹果还有多远？| 附开通指南",
+      "title": "iPhone Siri AI 体验：距离真正的 AI Phone，苹果还有多远？| 附开通指南",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9QajVXekYwY0tPTWlGTHRYa0cxdDd2alRmVi15UGhFcGtjQVA4eFZZU2hHb2hYZ3NCYWstNnlkQTUxd0U?oc=5",
+      "source": "爱范儿",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "53af53cf8671",
@@ -3072,7 +3047,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "c648a8a499c5",
@@ -3097,7 +3072,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "744c5439251c",
@@ -3122,7 +3097,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "c88533b238ec",
@@ -3147,7 +3122,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "7970e047359e",
@@ -3172,7 +3147,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "d3fe3b9f33e7",
@@ -3197,7 +3172,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b802e6428582",
@@ -3222,7 +3197,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "3986e4b6fc6c",
@@ -3247,7 +3222,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "67fbc68ac463",
@@ -3272,7 +3247,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6229d7912383",
@@ -3297,7 +3272,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "744db1a33eb3",
@@ -3322,7 +3297,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "133421380b76",
@@ -3347,7 +3322,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "fda1b3661dc8",
@@ -3372,7 +3347,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "802881aba428",
@@ -3397,7 +3372,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b525add50dc6",
@@ -3423,7 +3398,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "7f4d34f05efa",
@@ -3449,7 +3424,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "94da1769dc5a",
@@ -3475,7 +3450,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "edf1d5276da0",
@@ -3501,7 +3476,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b5559e29de9a",
@@ -3527,7 +3502,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "bbeccc3dde5c",
@@ -3553,7 +3528,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "5d27b56d0a91",
@@ -3579,7 +3554,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "901fe5018114",
@@ -3605,7 +3580,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "631bd2b544b6",
@@ -3631,7 +3606,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "821d6089c713",
@@ -3657,7 +3632,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "141a5774c197",
@@ -3683,7 +3658,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "3667000ef4de",
@@ -3709,7 +3684,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ee9bf658cbc5",
@@ -3735,7 +3710,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "7a98eb960c60",
@@ -3761,7 +3736,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "2c022ee0eada",
@@ -3787,7 +3762,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "444a1cd7d076",
@@ -3813,7 +3788,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "f9acf91ae58c",
@@ -3839,7 +3814,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "a69c268ed6ed",
@@ -3865,7 +3840,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "15e4f5418128",
@@ -3891,7 +3866,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "eeb5a3d6e103",
@@ -3917,7 +3892,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "9c836c9d55b8",
@@ -3943,7 +3918,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "7841f8f18909",
@@ -3969,7 +3944,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "8732693fcddc",
@@ -3995,7 +3970,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "2c58b720b187",
@@ -4021,7 +3996,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "4e0750c25312",
@@ -4046,7 +4021,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "aa7c2e7c3c55",
@@ -4071,7 +4046,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "07dd794bf690",
@@ -4096,7 +4071,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "0ec8c61e0aa9",
@@ -4121,7 +4096,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "901b34113933",
@@ -4146,7 +4121,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "9575d6b76375",
@@ -4171,7 +4146,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "469be6009737",
@@ -4196,7 +4171,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "b3d2c46dbb2a",
@@ -4221,17 +4196,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
-      "key": "8695f1e195c2",
+      "key": "37d9af48e2cd",
       "slug": "huawei",
       "brand": "Huawei / 华为",
       "date": "2026-11-11",
       "quote": "华为官宣比亚迪腾势N8搭载HUAWEI HiCar手车互联，支持三折叠手机形态跨端同步",
       "title": "华为官宣比亚迪腾势N8搭载HUAWEI HiCar手车互联，支持三折叠手机形态跨端同步",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1hVlRURVBZU09XOFlFT1dtUzViVm56OWZuQXp5RVBQeFhETnhTUld3MDl0TFh6OFFBVWhDdkFIVFlUY0FvSnZHQk0wcXdrOGd2eXc?oc=5",
-      "source": "Sohu",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1hVXBGekZlZkJJVENSRndSamEyR01qMWtCTTN3czY4SWUydGJlNVZFcFZXX004aTZab2Y2WDNjRkdVZG13TGRJZGlhY0c?oc=5",
+      "source": "凤凰网科技",
       "source_type": "media",
       "applicable_dims": [
         "W1",
@@ -4246,7 +4221,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "c8fed7b9bafb",
@@ -4271,7 +4246,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "74ea6def3395",
@@ -4296,7 +4271,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "c5e6861c034d",
@@ -4321,7 +4296,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "4d634e5b1fbb",
@@ -4346,7 +4321,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "0a08c1266c96",
@@ -4371,16 +4346,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
-      "key": "8486e2898069",
+      "key": "84db893ea30f",
       "slug": "tesla",
       "brand": "Tesla / 特斯拉",
-      "date": "2026-11-10",
-      "quote": "悼Cybertruck文：马斯克\"最好的车\"，只卖了三年半",
-      "title": "悼Cybertruck文：马斯克\"最好的车\"，只卖了三年半",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BSnZ4eVd0TktNbl9RbHdJX2JxdjY2d1d1cl9Lc0F1QWZvdTdLSFEwZE1EX1lCZlEzMjdnZ1BUaWpkLXlDRmFfdXc5T1hVRUxvRV8yalVnRnA0S0NZ?oc=5",
+      "date": "2026-11-11",
+      "quote": "特斯拉10月国内销量暴跌，Model Y从第1跌至第66名；英伟达聘请律所调查黄仁勋；谷歌最强模型Gemini 4 Carbon登场丨邦早报",
+      "title": "特斯拉10月国内销量暴跌，Model Y从第1跌至第66名；英伟达聘请律所调查黄仁勋；谷歌最强模型Gemini 4 Carbon登场丨邦早报",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBhZVBIa1NTdjQ3cW41elhwakJGZTRwakl5eEFoaHlYVjhMVUw4ZEI5Yml5UU5kekhpT2VBamNueEt0UWp3R2lYalZ5a2J5VmxISHVMaUt5R1dvaUkz?oc=5",
       "source": "知乎专栏",
       "source_type": "social",
       "applicable_dims": [
@@ -4396,7 +4371,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "a33040c13c10",
@@ -4421,7 +4396,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "77b840cfb53c",
+      "slug": "tesla",
+      "brand": "Tesla / 特斯拉",
+      "date": "2026-11-13",
+      "quote": "把未来机器人摆上桌面，这份赛博工业浪漫有点酷|特斯拉|Tesla Bot|人形机器人_新浪新闻",
+      "title": "把未来机器人摆上桌面，这份赛博工业浪漫有点酷|特斯拉|Tesla Bot|人形机器人_新浪新闻",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5xTlNMMUlvUDFxRmpOS01BOURGVnI3cGtrOWNfY2ozbWc0N09YeXNJRk92N1VJWWw3akw4MlRwbTB6ZTVjcWxUVE1YaUh3bzZKUTBRbk1QQWpLa1NZdlp5akltOA?oc=5",
+      "source": "新浪网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "ab72b5a338d7",
@@ -4446,7 +4446,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "a04cbe9a7864",
@@ -4471,7 +4471,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "51307af9da20",
@@ -4496,7 +4496,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "74e648e1d361",
@@ -4521,7 +4521,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "6eb10c560a84",
@@ -4546,7 +4546,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "2dc353604f69",
@@ -4571,7 +4571,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "00142dac50b2",
@@ -4596,32 +4596,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
-    },
-    {
-      "key": "95523a69a68d",
-      "slug": "tesla",
-      "brand": "Tesla / 特斯拉",
-      "date": "2026-11-11",
-      "quote": "特斯拉上新：Cybertruck遥控车1769元 人形机器人摆件199元",
-      "title": "特斯拉上新：Cybertruck遥控车1769元 人形机器人摆件199元",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0wYjI1dVJxMndIZTdjUTVyZDRNSXNUenpoekRuQVM5blY1NWF0QzVKOFd2YXVLU2dsZkg5eWlFcWZieXJhNS1rU29wb182Nnp3ejZ6TDNMdkh0RW5UaWFteA?oc=5",
-      "source": "cnBeta.COM",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "04fad01598c7",
@@ -4647,7 +4622,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "bf6a1a04478a",
@@ -4673,7 +4648,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "812654d81ef0",
@@ -4699,7 +4674,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "57fcbb5a7f64",
@@ -4725,7 +4700,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "bcff9330b4d4",
@@ -4751,7 +4726,33 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
+    },
+    {
+      "key": "f3d6fe5cb063",
+      "slug": "palantir",
+      "brand": "Palantir / 帕兰提尔",
+      "date": "2026-11-10",
+      "quote": "突发：强劲CPI数据重燃50个基点加息预期，科技股下挫",
+      "title": "突发：强劲CPI数据重燃50个基点加息预期，科技股下挫",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRC10REQxOE9xRDREeFl4aHFKQ1dpdW9LNXUxajN2NC12djQzLThCM05ncTZBc0xoV0N1cUtNc3BFVjczeUI2cUpoS1VOOVZBcGNLM3o5bFFGQUJrdjdDbXZWWU1QUXNINVFYWDQ1Zm9nbEhQVG1WdWJUcFpNYWVUMVpVYWhsTHRBRkllTk5KbE9VOFlqN3k1TXNHaTBkQ25aSmFja2F1U0VlaUhBLUJNOXFlSWFvQQ?oc=5",
+      "source": "Moomoo",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T08:18:30Z"
     },
     {
       "key": "19baa9dea70f",
@@ -4777,7 +4778,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:04:10Z"
+      "fetched_at": "2026-11-13T08:18:30Z"
     }
   ]
 }
