@@ -2069,3 +2069,109 @@
   source_type: media
   note: "LLM 预分类建议(high):用户投诉亚马逊重复收税，涉及消费者权益争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-10-amazon-136
+  date: 2026-11-10
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Ring announces Ring Robotics, ushering in a new era of security"
+  quote: "Ring announces Ring Robotics, ushering in a new era of security"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQa1dtdUwwb2pOMlRmVThaNUxEb0htNUFkWV9jOTFMWVNkbGttM3R6NDJrUFZhMkhpLUE2VWRmWE5QUTlXak5vcmJscTRUN2dtNXpsTVppd2h4VUd0Y1BBUGtFbEVCQTRDajdaYmt2Wkw2VFhlR2FXemRUVTVOTS1ZWnl0VWdORW8?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):Ring发布新品类，子公司重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-amazon-137
+  date: 2026-11-11
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "AWS to launch first cloud infrastructure region in Chile, investing more than $4 billion"
+  quote: "AWS to launch first cloud infrastructure region in Chile, investing more than $4 billion"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE1kUUdQZmRlOS14MmtpNmlYT1R5OGxlQmp1TFlLbi1PalBaYkdhWUdVS2drOVZBODJVV2dBSmdBTXZ1c0xqcUE0d3QwWW55ODNGMXBzSGtGSzNwVG9sQWhXVDhPN1JvckdFWno4VGRGb1lVXzVORGVycVREYmFCZjQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布40亿美元智利区域投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-amazon-138
+  date: 2026-11-12
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon ranks No. 1 on Forbes’ list of America’s Best Companies for 2027"
+  quote: "Amazon ranks No. 1 on Forbes’ list of America’s Best Companies for 2027"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxQWHRXd2VoVFNBVkJZSWhrQVk4ZzJhVGcxNWZxWFd0WXB5OHJXY3dTVXgzWkE2U2hUWmRlc3N3RjlJcUdBNXFCMGt6VHoyUUUwUlRJUWQwTjZSYk1PcUVOVWZCbXlnYmZFR0R6Q2dnNnRrd3RBU2NVZndlWFVIZzRMQnFB?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):福布斯榜单第一,品牌声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-amazon-139
+  date: 2026-11-11
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊云科技在华三大能力升级，助力全球化企业智赢AI时代"
+  quote: "亚马逊云科技在华三大能力升级，助力全球化企业智赢AI时代"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1KS3k5XzU5MjFHNXpSMVpOdUZ0dlN2SlQ4bzRaYVc2QmtmaVIzMDBFMTNRRmVGZFBiWE1aWnNwUkh2d2w4Rk1sVUJ3MHRUaFNIbHZSbnR6UGlLWWZD?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):在华能力升级,有实质信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-amazon-140
+  date: 2026-11-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊云科技升级在华三大能力 中国区域年内上线277项新服务"
+  quote: "亚马逊云科技升级在华三大能力 中国区域年内上线277项新服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5oSzZkRWJLa25nTzVzUmxvVXFrNmt6Mk9jNVV3dW56S3R2djg4SkdjazVKNDN6U2Ezd29ST1UtQTJvaHhBdHJvdmdMUGY5Y0FkU2NtbF81Q0xGZnp2WnZTTnhR?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS中国大规模服务升级，重要产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-amazon-141
+  date: 2026-11-12
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊确认2028年游戏《古墓丽影：催化剂》将登陆Nintendo Switch 2平台"
+  quote: "亚马逊确认2028年游戏《古墓丽影：催化剂》将登陆Nintendo Switch 2平台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5mZ2dXWko2YmIxRzVMTkN3RURBeU9maVd3blk3b3R0QlJoRmRLMC1lM2VIV0NVVWVhWHNDWHMyQ2dLaUpTZVFpZWJnc1Y?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):游戏发行平台信息，一般业务动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-amazon-142
+  date: 2026-11-12
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "黑五还没开场，亚马逊卖家的流量和利润先被分走了？"
+  quote: "黑五还没开场，亚马逊卖家的流量和利润先被分走了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5IWHdkUGhoWjhGMnM0bGNxdVo3TDRfaFJFLTdkUktQdE9hWDZVWUNiOFhUakF4YjU3c0lPemFzVXBnV203dHFGY2p2UWM?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):卖家生态受损，涉平台政策舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

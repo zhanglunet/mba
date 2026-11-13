@@ -1032,3 +1032,94 @@
   source_type: media
   note: "LLM 预分类建议(high):新功能试点上线，产品更新但规模有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-04-meituan-067
+  date: 2026-11-04
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "全网寻找北京丰台救人骑手找到了！美团已为其发放奖金和证书"
+  quote: "全网寻找北京丰台救人骑手找到了！美团已为其发放奖金和证书"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261106206010782
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方正面CSR事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-03-meituan-068
+  date: 2026-11-03
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团推进“放心外卖”行动，进一步提升商家信息食安透明度"
+  quote: "美团推进“放心外卖”行动，进一步提升商家信息食安透明度"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261106285001540
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方食安透明度举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-02-meituan-069
+  date: 2026-11-02
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "美团发布LongCat-2.5大模型，“国模国芯”实现新突破"
+  quote: "美团发布LongCat-2.5大模型，“国模国芯”实现新突破"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261102280001343
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布主力大模型重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-10-23-meituan-070
+  date: 2026-10-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "2026外卖产业大会：行业重回积极向好，低价泡沫消退增长更有含金量"
+  quote: "2026外卖产业大会：行业重回积极向好，低价泡沫消退增长更有含金量"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261023179008537
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):行业大会官方表态，非重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-10-23-meituan-071
+  date: 2026-10-23
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团签署《互联网营销宣传自律公约》 积极履行平台主体责任"
+  quote: "美团签署《互联网营销宣传自律公约》 积极履行平台主体责任"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261023166013137
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):签署自律公约，合规履责。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-meituan-072
+  date: 2026-11-10
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "美团开源LongCat-2.5: 1.6T参数、48B激活，强化多模态理解与长程 Agent 编程"
+  quote: "美团开源LongCat-2.5: 1.6T参数、48B激活，强化多模态理解与长程 Agent 编程"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QWEYtQzl4V2NZQjk2VXV4ckhyMVlDYk5DZDZ1WDZtYldpWkxHTTh1cnZFdkxMMVVLaXVlN1lJb2xoYjVxQ2R6d1g2Tk1LTmtBQ3oweFpqLURTNVVH?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):开源1.6T大模型重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

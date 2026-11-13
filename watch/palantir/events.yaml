@@ -344,3 +344,49 @@
   source_type: media
   note: "LLM 预分类建议(high):帕兰提尔财报公布，营收增长93%，关键财务数据，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-12-palantir-023
+  date: 2026-11-12
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "卡普称帕兰提尔产品具有进步主义色彩，过往言论却显出明显反差"
+  quote: "卡普称帕兰提尔产品具有进步主义色彩，过往言论却显出明显反差"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE94OVVyd3lFenZMeU9XM21JOWZmRTBKMGdDdHFSczJjUjJfU3cwaU5wRUlTVnlIdEFWUkwtMDFhLU5BTkluY1dEVExBQ1hmaHVnSmgxUUdCeDlySTUxUVByTm9sSTZxVlpkRUo0aQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO言论前后矛盾，形象争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-palantir-024
+  date: 2026-11-11
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "博思艾伦改用英伟达Nemotron大模型"
+  quote: "博思艾伦改用英伟达Nemotron大模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxNSndhd2VRenZsS0VHQWVRYzdoeVIyLUJaWW9ReV9QQUVpRFNPS0hSMnpIdWtkX3NyZ2VObGs1UlRLaVZ6V21RNXA2bDFOVGY3ZDZTTmM5Z0NBNk9jdERCdWtMSGdtdm1CWDVwNzNwanpaMUVQMmtmOFJYd1YtTjZHVzFDVldndms?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大客户改用竞品模型，竞争信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-palantir-025
+  date: 2026-11-12
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "PLTR股价预测：Q3财报推动股价八连跌，股价恐将跌向130美元"
+  quote: "PLTR股价预测：Q3财报推动股价八连跌，股价恐将跌向130美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiywFBVV95cUxQWTV4dzFmTzM3azM4Y3BVZ0FpVmtzdFRDejVfYVQyWk5SRHdhVTlxa0xnbGZfWHQyeVFXRFdVMGhqeWY5RVI3MUZha2Y2M0dwVnljd2Rjd080Qm1nME9ES1A0TDdQM05fTHE1ZmRwdGEySXJiVHlOMTZKeGo1R1lzR0JRMEFLNWZMallVWmRHRVFkVlEwUEpZM09nbUNDZWRpQUdFWkNnYjNwV2tBc0g5cE4tZjFWeVM1TnFIWFZyd1hoa19jYk1JLXVuZw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):股价八连跌，财报后市场负面情绪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

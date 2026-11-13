@@ -2037,3 +2037,154 @@
   source_type: media
   note: "LLM 预分类建议(med):中国业务独立传言，组织结构重大调整预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-11-10-tesla-134
+  date: 2026-11-10
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "批发还在涨 零售却崩了 特斯拉10月国内只卖出8817辆"
+  quote: "批发还在涨 零售却崩了 特斯拉10月国内只卖出8817辆"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9tUFhneU1UVlgwOWI2QWpTRzRrRFRIMU9CUTZRMGU2eHhEU1VCTTkweWM2RXVmUlQxT2x3V0I4T2YyR0ZfeHVFSmlBUmxEWW5fYUxIaWhST09nRk5T?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):零售销量暴跌，市场表现负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-135
+  date: 2026-11-11
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "媒体破解特斯拉智驾系统做测评 特斯拉：逾期不整改报案追刑"
+  quote: "媒体破解特斯拉智驾系统做测评 特斯拉：逾期不整改报案追刑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqSWozMEFNcWxDS2NaNHlyRWZlVHRPN1lzTEIwNTR6X01XMllnMmVORFFVS1lRS1dyOXlWeVlJRkluZWc1RHUyUlc0TzMzd0lmM3E3ZGF6NUJ3dmU5?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):法务威胁媒体引发舆情争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-136
+  date: 2026-11-11
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉10月国内销量暴跌，Model Y从第1跌至第66名；英伟达聘请律所调查黄仁勋；谷歌最强模型Gemini 4 Carbon登场丨邦早报"
+  quote: "特斯拉10月国内销量暴跌，Model Y从第1跌至第66名；英伟达聘请律所调查黄仁勋；谷歌最强模型Gemini 4 Carbon登场丨邦早报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBhZVBIa1NTdjQ3cW41elhwakJGZTRwakl5eEFoaHlYVjhMVUw4ZEI5Yml5UU5kekhpT2VBamNueEt0UWp3R2lYalZ5a2J5VmxISHVMaUt5R1dvaUkz?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):销量暴跌数据显著，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-tesla-137
+  date: 2026-11-12
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "没有方向盘和踏板！特斯拉Cybercab在长沙亮相-掌上长沙"
+  quote: "没有方向盘和踏板！特斯拉Cybercab在长沙亮相-掌上长沙"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZUXlKMV9BN1NvMy1WdnNrbmpaSWx2ZVpQN3FqRG1hZ1JOd3JNd3FyRlhVbWgtaEU3YWx6RmVGMFlSS2NhSE56WTdTdFdVWFlYV2h5Tjg5Zm1wcURvYnc?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):Cybercab亮相，产品展示事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-138
+  date: 2026-11-11
+  dim: W7
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "芬兰提前放行特斯拉辅助驾驶：先改名再限速，欧盟表决仍在后面"
+  quote: "芬兰提前放行特斯拉辅助驾驶：先改名再限速，欧盟表决仍在后面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQkFVX3lxTE5iUGk2LVR5Y2ttQXJEQ2FHT2QxWi1XUUEtMnp1eFhzV0NXR1hiZ3Q2Wm56SHd0UVY2RTRqUjF1V2pxUQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟监管进展，影响辅助驾驶。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-tesla-139
+  date: 2026-11-13
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX与特斯拉世纪合并谈判提速，最快12月宣布交易"
+  quote: "SpaceX与特斯拉世纪合并谈判提速，最快12月宣布交易"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeGd0cmdDTVh2aTdQNDBHLTlZaUFYMGNfWGpPMS15M2hvOEk1TzNJSjdoMEV4dmxMQS11UnVUNGU3b3ptWEVKTEtBV1R1dkw4amVRald5eTliZEpicEc0VExUczFHQlpXWmhNTmRaQ2tDemRBVVVacU9maGx1SWJicXVYMnJka1RIcG1ILWRjQ01SaHp3TVBGWjNPbFZ0R0lKLS0ya20xNFdza2VZd0JFaG1HY3RfcXROYzlV?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):重大并购传闻，尚未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-140
+  date: 2026-11-11
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "好消息！Tesla Cybercab要来北京上海展出啦"
+  quote: "好消息！Tesla Cybercab要来北京上海展出啦"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBaMlVuTmtzVXFpVDdzRDYyREJ5SEZMTExGblVSYkFrMjZpNHIwRUh2cVN5QWZaai00cG55VG5wQTduVV9iSFQxQmZncFJTNnpkUENEWVJZOExyTUk?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):Cybercab国内展出，产品活动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-141
+  date: 2026-11-11
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Tesla将退还部分Cybertruck定金，马斯克为停产决定辩护-人工智能"
+  quote: "Tesla将退还部分Cybertruck定金，马斯克为停产决定辩护-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1zLTdoWGY3a0IxcHE4WVptWnFnTjFpcGdmbkhqSlRjN2Z4aDRhTFVMQXloMXRYampmYVV5VVQwQmZabUtwdXhpSHNYSGhBWE1lbEJaMnBJUXZHUGFnUnc?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [category, signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):Cybertruck停产退定金，重大产品线收缩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-142
+  date: 2026-11-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉辅助驾驶扩展至欧洲11国 芬兰即将开启推送"
+  quote: "特斯拉辅助驾驶扩展至欧洲11国 芬兰即将开启推送"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSGozYmZMSU1ocllEcTJPUEpTWU9jczJteU5paHFET2RScHRSa1pKR1NaQnZTWXNjd0wwVlF3ZWJIeTh6ejlCUW0wa3MyQk4wT0h3SXRzbzVPRWJFMDBuX3REV0hOcnJ0MDI5TXhPM2NsVDMzNFFKUllmT2paQVJwQWxEYzVlNTlM?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):辅助驾驶欧洲扩张，产品推进事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-143
+  date: 2026-11-11
+  dim: W9
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "芬兰暂时批准特斯拉驾驶辅助系统——Channel NewsAsia"
+  quote: "芬兰暂时批准特斯拉驾驶辅助系统——Channel NewsAsia"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxPeUpnN3NZbnllb0RBdlFXYmM4ZVJJcnpiWlBlTUsyZmxvbzBoQzktZnNJYk1ZVEhHNkNJeFE4eDdIcUdzbWw4YkpvZDNCS0FPVkR4VU10RkVaZjdSUHUzS2MxZ2N1Y2Vwak1OOEdmLUVsNUh0Q2w3akpsNEdvVEdMdS1ZNzQ2Wkk1anRoWkhRUzZ0dTFFVzBRd3pEOGRhSU9IQ3ZLSXdMc2lmYnRtbHlmUzh4N18?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):监管获批，FSD落地利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

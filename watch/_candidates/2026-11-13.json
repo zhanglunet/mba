@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T08:28:13Z",
+  "generated_at": "2026-11-13T09:00:22Z",
   "window_days": 3,
   "candidates": [
     {
@@ -26,7 +26,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "3a34c49c9ed9",
@@ -52,7 +52,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "57c2528ee989",
@@ -78,7 +78,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "174a4e9c81b2",
@@ -104,7 +104,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "42a0100cf7c9",
@@ -130,7 +130,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6f62f30dab9e",
@@ -156,33 +156,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "d7dbb19b9d7f",
-      "slug": "lenovo",
-      "brand": "联想集团 Lenovo Group",
-      "date": "2026-11-12",
-      "quote": "Lenovo เปิดตัวแบรนด์ Wanquan Hybrid Token Factory พร้อมวางแผนโครงการในจางเจียโข่วเพื่อสร้างคลัสเตอร์",
-      "title": "Lenovo เปิดตัวแบรนด์ Wanquan Hybrid Token Factory พร้อมวางแผนโครงการในจางเจียโข่วเพื่อสร้างคลัสเตอร์",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTE9IQW5pSmpPY19nc05XQ2d2MXdiejlmRzBBZk1wWk1vS1NJRTdUT2FjQzFEXzZzSGtRb085c21XRFprZlluVUdOVjhuLU1RUzJXRDQwanlwdw?oc=5",
-      "source": "Moomoo",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "70031c8796ca",
@@ -208,7 +182,33 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "d7dbb19b9d7f",
+      "slug": "lenovo",
+      "brand": "联想集团 Lenovo Group",
+      "date": "2026-11-12",
+      "quote": "Lenovo เปิดตัวแบรนด์ Wanquan Hybrid Token Factory พร้อมวางแผนโครงการในจางเจียโข่วเพื่อสร้างคลัสเตอร์",
+      "title": "Lenovo เปิดตัวแบรนด์ Wanquan Hybrid Token Factory พร้อมวางแผนโครงการในจางเจียโข่วเพื่อสร้างคลัสเตอร์",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTE9IQW5pSmpPY19nc05XQ2d2MXdiejlmRzBBZk1wWk1vS1NJRTdUT2FjQzFEXzZzSGtRb085c21XRFprZlluVUdOVjhuLU1RUzJXRDQwanlwdw?oc=5",
+      "source": "Moomoo",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "7668af1800a0",
@@ -234,7 +234,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "0ec685031430",
@@ -260,7 +260,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "3b5a1dd4b454",
@@ -286,7 +286,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ad17cdd6025f",
@@ -312,7 +312,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b537f5ffbb2f",
@@ -338,7 +338,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "01131e03196c",
@@ -364,7 +364,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "53d48fa42ad3",
@@ -390,7 +390,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "178a51fd60ba",
@@ -416,7 +416,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "4fe1d10ea4e2",
@@ -442,7 +442,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b95608703fcd",
@@ -468,7 +468,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "20126c91518b",
@@ -494,7 +494,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6cb57d489b7b",
@@ -520,7 +520,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "5da2e59e3cb1",
@@ -545,7 +545,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "bfa360d4a6ce",
@@ -570,16 +570,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "862d73dda446",
+      "key": "3ca49a89f6d1",
       "slug": "dji",
       "brand": "大疆创新 DJI",
       "date": "2026-11-13",
       "quote": "大疆官宣调价！受半导体及存储成本大涨影响，5天后将涨价",
       "title": "大疆官宣调价！受半导体及存储成本大涨影响，5天后将涨价",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdy1ndUJlNi1DTE1pQi1faldjX1JRd2x1TldSNnJWTnpWcnk2bHJVbDdmWnIzR2hzdlFMWVRMZWNCWmEtLTYtNy1lVF9mNzdZbGJZTEdqYi1iYzNmbjdWNUV4WnBpd0VSQkp2TGlKV2xTRW9mVGlXQjgtUTdMWk5mRDQ5VU4xQTM0?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOamJtZHBpNVp0cDRwUmFqQkdsb0Q3cXc0cjVPVk5UaVlzd1lray1Bcll5NlF6SlFPbUtNbWNneTJXRXpaYXV2cEFsRm13eC1LbjVTZkg3QVdaNkxtT1hpblpNZjRtamx3QXNvOFl0bjd1ZnJEWjltbTN4SXJMOXJZejVtNTBDQWdaUm1V?oc=5",
       "source": "Sohu",
       "source_type": "media",
       "applicable_dims": [
@@ -595,16 +595,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "3a25521ab6df",
+      "key": "29621e35b376",
       "slug": "dji",
       "brand": "大疆创新 DJI",
       "date": "2026-11-13",
-      "quote": "刚刚，正式宣布涨价！",
-      "title": "刚刚，正式宣布涨价！",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yMkplMUtDdG5fMnJSSFNyOERKalVpTV9uV0xxWEJhdW93T2dPUnkzTGRQT1c4cmVfektxWXRYY0JiVFZmeFQ3dE9jOHA0ZVZyZnlDellDZmhBY0djYjU5Mg?oc=5",
+      "quote": "大疆正式宣布调价：受成本持续大幅上涨的影响，11月18日00:00起，对部分产品的建议零售价进行调整",
+      "title": "大疆正式宣布调价：受成本持续大幅上涨的影响，11月18日00:00起，对部分产品的建议零售价进行调整",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KeV9HeUc4N1NHWEw3cUs2YUFTSHBuSVJ0eWJwaTNYUTZ0a2lQbE5kUGJJVEZTZTZZQmt3RGRLTDBwdDk0UWd6Y1UwbFIxb29NZ0picGk1UlZ1UnNPRmNORw?oc=5",
       "source": "ThePaper.cn",
       "source_type": "media",
       "applicable_dims": [
@@ -620,7 +620,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "26074c85b3b5",
@@ -645,7 +645,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "47b1b3dc40c9",
@@ -670,7 +670,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "739608e4b4ce",
@@ -695,7 +695,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "27a437471baa",
@@ -720,7 +720,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "871f944c0505",
+      "slug": "dji",
+      "brand": "大疆创新 DJI",
+      "date": "2026-11-13",
+      "quote": "大疆发布调价说明：18日起上调部分产品建议零售价",
+      "title": "大疆发布调价说明：18日起上调部分产品建议零售价",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5najFNWUYwZm5oY2gyRnItZDBwUWFnRXc3dlR6a2ZjZ19qMWllMXJ2Rm41MUt5a0ZXYVVJZ01NV3JSeWpCdEROM2p4S0lwU2NaNi13ODFwNnJ3b3NNOE5yYWhGeksxQm02N1NhOHI4ZXhzZk8t?oc=5",
+      "source": "风闻",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "e0c103cfde41",
@@ -745,7 +770,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "fc2a813162de",
@@ -770,7 +795,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "dc24b8a89472",
@@ -795,32 +820,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "a3a3ab98f03b",
-      "slug": "dji",
-      "brand": "大疆创新 DJI",
-      "date": "2026-11-13",
-      "quote": "大疆宣布涨价",
-      "title": "大疆宣布涨价",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVTJoYUtwNWFmbi05eTBOOWJCRjRfc28zT3FzX1VTSGI4Sk9HaFBHdEhDWDhGS0RFeWdmUjJXbW5YdTROMUlHMDI5QmVIUWljeEVla25qUkZfMXNNNVdpWTg1OXpNRFVQb2hHZGJtSjFtYkRXZnAxOTF5ODYtYlhlR19UZHg4X21r?oc=5",
-      "source": "Sohu",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "be7575e54b99",
@@ -845,7 +845,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "1b282c35f01e",
@@ -870,7 +870,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6850c4b1a8a0",
@@ -895,7 +895,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b5cbd2c80840",
@@ -920,7 +920,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "84cb9ba5ce03",
@@ -945,7 +945,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "3bddec478ece",
+      "slug": "kimichat",
+      "brand": "Kimi / 月之暗面 Kimi (Moonshot AI)",
+      "date": "2026-11-13",
+      "quote": "黄仁勋完了？ 惊爆中共4巨头全用上英伟达最强芯片",
+      "title": "黄仁勋完了？ 惊爆中共4巨头全用上英伟达最强芯片",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9WT0RwVnU5VVgzM2loaXIzaG1VRkFxajh4alJsOWd2OHplaDZqZGlEQXJfc3NyeEdoSjBTa0RrS1JDMzhQUnlqRXpDbXB6emk2UW9lZmU1M1JocFFsS1E?oc=5",
+      "source": "阿波罗新闻网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ca2791000b29",
@@ -970,7 +995,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "c51b935fbb1b",
@@ -995,7 +1020,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "a69f8afb93c9",
@@ -1020,7 +1045,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "27131ec27cb5",
@@ -1045,7 +1070,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "999ebc97afa3",
@@ -1070,7 +1095,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "2575c6c02a82",
@@ -1095,7 +1120,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "c174ce3d81a8",
@@ -1120,7 +1145,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "7d7c060ca259",
@@ -1145,7 +1170,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "241514a941e8",
@@ -1170,7 +1195,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "891aa6572314",
@@ -1195,7 +1220,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ff3982b26af9",
@@ -1220,7 +1245,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "8fa91ae6cf8d",
@@ -1245,7 +1270,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "24db41f9db5a",
@@ -1270,7 +1295,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "a2d45a38b3fe",
@@ -1293,7 +1318,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "18e52bd8ddb4",
@@ -1316,7 +1341,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "aa9d433da3cd",
@@ -1339,7 +1364,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "54b50c7448e2",
@@ -1362,7 +1387,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "76cda1e1ef56",
@@ -1385,7 +1410,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "7574851e180a",
@@ -1408,7 +1433,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "3c63af5cb3b2",
@@ -1431,7 +1456,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "d6e18b3398cb",
@@ -1454,76 +1479,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "de1f6d80d655",
-      "slug": "hermes",
-      "brand": "爱马仕 Hermès",
-      "date": "2026-11-11",
-      "quote": "圈中富婆生日排场极奢华 获LV Hermes包场庆祝",
-      "title": "圈中富婆生日排场极奢华 获LV Hermes包场庆祝",
-      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNa0VkekRiZ1NSdXYxWVlsWGlLMTFRbFVrSjMtV3ZJbTRTMjVHZkFzNS12NDFaSGhCMUJUNDlHalhvSm5VOVcya2gxOVlfU2pxRmpIR3FEV3Bxa21rRXZ4MWxmVExBVDJ1Z1ZhOXMwQWlQTENPQnVyZGJZSW9JVTdwd25Kbk02elNOZWE3S2ZyQ0FoZVY3R2NGSUJRVTgwRHRoaEJhbmlISDRKQk1zZVI1UVZpOEtMTmZtRDlHanQ5SG1qMFI2WERQeDJWeWxPQlFPNlBUcExaeC03X0lFOEUwdTBUMXlTeTZydEQyUDJvU0UybklVbWhaSncyWGhOT3pVci0xOWNKRGcwaXlha2pUdC1NTklBV19EekFkRTF2MmVrcEtkcktGTkhn?oc=5",
-      "source": "China Press",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "a557185784d7",
-      "slug": "hermes",
-      "brand": "爱马仕 Hermès",
-      "date": "2026-11-10",
-      "quote": "Rescale让工程智能体参与Hermes 2反应堆设计",
-      "title": "Rescale让工程智能体参与Hermes 2反应堆设计",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOeGtTYUdpQkI5QzB0LXlqYnFubDVPMkI4RlhFUkUteWx2aEVuclNrTFFIY01iS200MXJzVHdpNS1BMzlvcW1pZE9fSHNpTmh1bXNRaXdZd3VyaU1fc2ZWSWhFVFNBMm1WUUNiMEs5Y21DLUVjWTdmY1FFRTZlbDg2YWd1MFI4YXNVNWQ0TkwwTnhCTE5IT1ZESkh3?oc=5",
-      "source": "Unite.AI",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "e2d6d32c6864",
-      "slug": "hermes",
-      "brand": "爱马仕 Hermès",
-      "date": "2026-11-11",
-      "quote": "爱马仕和德尔沃哪个档次高？3个维度说清顶奢包之争+FAQ",
-      "title": "爱马仕和德尔沃哪个档次高？3个维度说清顶奢包之争+FAQ",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBUemJyOUp6Nlc0RVFYdDM2amtrY2wwUDJzSVVSeU0yVDVDeWNHOTJ0cXcyTWMtMXNVeUZyRVJUQV9GcEJJdVdzSGxDS1d4UlktMFNGLVhkOGNoTXFYNDA1YzNSVXVLREgzZnIybDBfVQ?oc=5",
-      "source": "新浪财经",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "9b4c109cc734",
@@ -1546,7 +1502,76 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "de1f6d80d655",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-11-11",
+      "quote": "圈中富婆生日排场极奢华 获LV Hermes包场庆祝",
+      "title": "圈中富婆生日排场极奢华 获LV Hermes包场庆祝",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNa0VkekRiZ1NSdXYxWVlsWGlLMTFRbFVrSjMtV3ZJbTRTMjVHZkFzNS12NDFaSGhCMUJUNDlHalhvSm5VOVcya2gxOVlfU2pxRmpIR3FEV3Bxa21rRXZ4MWxmVExBVDJ1Z1ZhOXMwQWlQTENPQnVyZGJZSW9JVTdwd25Kbk02elNOZWE3S2ZyQ0FoZVY3R2NGSUJRVTgwRHRoaEJhbmlISDRKQk1zZVI1UVZpOEtMTmZtRDlHanQ5SG1qMFI2WERQeDJWeWxPQlFPNlBUcExaeC03X0lFOEUwdTBUMXlTeTZydEQyUDJvU0UybklVbWhaSncyWGhOT3pVci0xOWNKRGcwaXlha2pUdC1NTklBV19EekFkRTF2MmVrcEtkcktGTkhn?oc=5",
+      "source": "China Press",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "a557185784d7",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-11-10",
+      "quote": "Rescale让工程智能体参与Hermes 2反应堆设计",
+      "title": "Rescale让工程智能体参与Hermes 2反应堆设计",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOeGtTYUdpQkI5QzB0LXlqYnFubDVPMkI4RlhFUkUteWx2aEVuclNrTFFIY01iS200MXJzVHdpNS1BMzlvcW1pZE9fSHNpTmh1bXNRaXdZd3VyaU1fc2ZWSWhFVFNBMm1WUUNiMEs5Y21DLUVjWTdmY1FFRTZlbDg2YWd1MFI4YXNVNWQ0TkwwTnhCTE5IT1ZESkh3?oc=5",
+      "source": "Unite.AI",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "f3b6d183793d",
+      "slug": "hermes",
+      "brand": "爱马仕 Hermès",
+      "date": "2026-11-11",
+      "quote": "排场惊人！香港知名女星获两大奢侈品牌包场庆生，身旁手袋值20万",
+      "title": "排场惊人！香港知名女星获两大奢侈品牌包场庆生，身旁手袋值20万",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNT19aMW1GQU54X1BmZjdTWFNNWlJqSUpRSnFTZlE4S3I5OXhqQ3FVdXlTdHlsdUhhdWQ2UWdERVpfdDM5NEoteFA2bFdseTRhUWF6UWtucEdvaUVOMU84ZHR3eF9VYmthVHAwVlBGcnFEdG4yaVlKaUpNS0lpWlYwNHhwMlJHNmdrS1lr?oc=5",
+      "source": "Sohu",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "88762a3c21c0",
@@ -1572,7 +1597,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b364433b0747",
@@ -1598,7 +1623,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "39873f8cb474",
@@ -1624,33 +1649,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "63b22ccd84cf",
-      "slug": "spacex",
-      "brand": "SpaceX",
-      "date": "2026-11-13",
-      "quote": "史上最大规模！SpaceX和特斯拉最快12月宣布合并，“民主党紧盯马斯克”",
-      "title": "史上最大规模！SpaceX和特斯拉最快12月宣布合并，“民主党紧盯马斯克”",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5vWktwUGNIelFhYnF2YmFvVVU1bl9xclktM01JZks0aXJmTFF3WURiYzN6UnVzNzYyQXdRcV9tSUd4eHl0ZWRNT1FEZEduS3poZXBWLWI5M1B6V2p2QlVUREZZcS1GY2ZIWUxUR3pNLXdFQnc?oc=5",
-      "source": "观察者网",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b8d1f6b8a727",
@@ -1676,16 +1675,42 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "e1968721b84c",
+      "key": "63b22ccd84cf",
       "slug": "spacex",
       "brand": "SpaceX",
       "date": "2026-11-13",
-      "quote": "SpaceX与特斯拉世纪合并谈判提速，最快12月宣布交易",
-      "title": "SpaceX与特斯拉世纪合并谈判提速，最快12月宣布交易",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rZFl2YzdZVDB1SGZ5b2dzd0FIb0Nzb0FKQWdyTU0xWVJoaE1lSE9DTlRQYmVtSlJrcDdmRTRyS1c0YjlrZEFldmJfNXN6MGtPVXBj?oc=5",
+      "quote": "史上最大规模！SpaceX和特斯拉最快12月宣布合并，“民主党紧盯马斯克”",
+      "title": "史上最大规模！SpaceX和特斯拉最快12月宣布合并，“民主党紧盯马斯克”",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5vWktwUGNIelFhYnF2YmFvVVU1bl9xclktM01JZks0aXJmTFF3WURiYzN6UnVzNzYyQXdRcV9tSUd4eHl0ZWRNT1FEZEduS3poZXBWLWI5M1B6V2p2QlVUREZZcS1GY2ZIWUxUR3pNLXdFQnc?oc=5",
+      "source": "观察者网",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "ee04440efe5d",
+      "slug": "spacex",
+      "brand": "SpaceX",
+      "date": "2026-11-12",
+      "quote": "SpaceX计划投资740亿美元，在亚利桑那州和德克萨斯州建设数据中心",
+      "title": "SpaceX计划投资740亿美元，在亚利桑那州和德克萨斯州建设数据中心",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBEZFR4LWlZdWk1NDctdnl6ME40STk3OS1CbEFTT2xPdlktVWFhXzhGeFpxZ2NHMWxBQUM2bFV0TXhYd3IxNzEyblBPWHFQQ0pLMGtv?oc=5",
       "source": "华尔街见闻",
       "source_type": "media",
       "applicable_dims": [
@@ -1702,7 +1727,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "c64692144972",
@@ -1728,7 +1753,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "fa3bd6f8eac9",
@@ -1754,7 +1779,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6849096be08c",
@@ -1780,7 +1805,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "64686b45d046",
@@ -1806,17 +1831,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "953724e882aa",
+      "key": "0b1a8605e5a5",
       "slug": "spacex",
       "brand": "SpaceX",
       "date": "2026-11-13",
-      "quote": "3.47万亿美元！特斯拉与SpaceX合并提速，交易最快12月官宣",
-      "title": "3.47万亿美元！特斯拉与SpaceX合并提速，交易最快12月官宣",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8yaWU0OU9KN2tzci1KWE94ZWlIUWJYTFBRY1ZENXZsOGFfMFlMb1BzMERZLWpETnpHa1RURGhaZFJjUmlQdWhlOTMyU0hlV3RkTkFJanhaMmdad3pxekJsM0NuQlRwM1NMQlRzZmhfekV2UQ?oc=5",
-      "source": "手机新浪网",
+      "quote": "消息称SpaceX与特斯拉创纪录合并谈判取得进展",
+      "title": "消息称SpaceX与特斯拉创纪录合并谈判取得进展",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1zUnRrdmpYM0xQSXl3QmlxY2lEZzNKRVloM0xtV3drcmR5STNSaElaZ3RVdTZMdjBpRk51NE14ZHpNa2hfeWhpNmJQQ3YwbkdRLUwwa0VRbDZ3ejlPTkJkVGREaw?oc=5",
+      "source": "东方财富",
       "source_type": "media",
       "applicable_dims": [
         "W1",
@@ -1832,7 +1857,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "26238b79ac44",
@@ -1858,33 +1883,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "f1f30e09618d",
-      "slug": "openai",
-      "brand": "OpenAI",
-      "date": "2026-11-10",
-      "quote": "Introducing Businesses in ChatGPT",
-      "title": "Introducing Businesses in ChatGPT",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1QWl94aW1pbWMtLVFmMnN6d3NRdk5zOGFhNUNYVUJ4dkZtaG14dnpwQ1F3blgzN2hvTm5DeHV4cXV3dVdfS3JxbDVVb21MMG9sWG0tS2NYNUJTREIyYTVGNmFFdTZEdzQ?oc=5",
-      "source": "OpenAI",
-      "source_type": "official",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "8102dbd9bb78",
@@ -1910,16 +1909,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "a2caa947cc53",
+      "key": "f371dc41199a",
       "slug": "openai",
       "brand": "OpenAI",
-      "date": "2026-11-10",
-      "quote": "Work at the Frontier: AI’s effect on freelance work",
-      "title": "Work at the Frontier: AI’s effect on freelance work",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9jbjZqUWRlTUJ3MkZPVlYzd2hSb3A2aDlBOG5zckhFZjVEZFlQc3diU0lxOVhwLUFHTnNRMy1SSlgyRGxhOVpsV2w4MHNFOElOSFBQRlNnSDV4eDloc2V0R3lnUQ?oc=5",
+      "date": "2026-11-11",
+      "quote": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ucFZmNFh3OWpGRXNoVUFXRlQ0aHVFa0pRNVJqUFo1eGx1RGZQMW94eXBXd3plYmtKSnI5SDFUUjVyUTdHb2xzUTZ3cVpFNGRweW5xd2N5Y0xya0VU?oc=5",
       "source": "OpenAI",
       "source_type": "official",
       "applicable_dims": [
@@ -1936,7 +1935,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "fd89d1db7b5d",
@@ -1962,7 +1961,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "112f03cc5952",
@@ -1988,16 +1987,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "90785c147fa5",
+      "key": "356500980455",
       "slug": "openai",
       "brand": "OpenAI",
-      "date": "2026-11-10",
-      "quote": "Helping caregivers use AI in everyday life",
-      "title": "Helping caregivers use AI in everyday life",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5OUjBJclNmYnpaSEk4RzRSbVFqNmF2NFNpV1FEUzhxZHZkNzhsVUd6QVdYTWZyNEJwbml5ZmlZUUhmRUtsRUFLQ1p2d2EwVWJuc1lRZHplMXkyUUFqcjBadGsxdkRrZVJGWGR2M3lOTVN6cUJNX2NB?oc=5",
+      "date": "2026-11-12",
+      "quote": "Gilbert + Tobin rethinks the business of law with AI",
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBlU3UxRF83THdKRE1tMTJwVzA3YVZiY0c3R3pTTVJwYU1zU1dQcEtwRVRNNHJrM19SeWNWS1JJelVxV1EtNmdNQ0x2bk1PMWwwSW53anVWNmRoZjY0LWFoVVFB?oc=5",
       "source": "OpenAI",
       "source_type": "official",
       "applicable_dims": [
@@ -2014,7 +2013,33 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "a2caa947cc53",
+      "slug": "openai",
+      "brand": "OpenAI",
+      "date": "2026-11-10",
+      "quote": "Work at the Frontier: AI’s effect on freelance work",
+      "title": "Work at the Frontier: AI’s effect on freelance work",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9jbjZqUWRlTUJ3MkZPVlYzd2hSb3A2aDlBOG5zckhFZjVEZFlQc3diU0lxOVhwLUFHTnNRMy1SSlgyRGxhOVpsV2w4MHNFOElOSFBQRlNnSDV4eDloc2V0R3lnUQ?oc=5",
+      "source": "OpenAI",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "f256e73a676f",
@@ -2040,7 +2065,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "f0fa2c772552",
@@ -2066,7 +2091,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "fb44f9c5325b",
@@ -2092,7 +2117,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "e18420cd1d5d",
@@ -2118,7 +2143,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "d4741703d15b",
@@ -2144,17 +2169,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "5628b940e67c",
+      "key": "17fa12844662",
       "slug": "openai",
       "brand": "OpenAI",
       "date": "2026-11-13",
       "quote": "微软大规模宕机持续数小时！OpenAI和Anthropic遭波及 日本、新加坡政府受影响",
       "title": "微软大规模宕机持续数小时！OpenAI和Anthropic遭波及 日本、新加坡政府受影响",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbldoWExwNk1kLTN1cDNuakF2bWJWZlA0MUpjMFdQYUxsekl0M1QyTjR6RHFtU0tYWVdCSkRPZHJYSV94dmJ1ZV9OSzdVVmhia1VaUlFhOGpzbkFBdXZtVUp4YlRodmFJTDlENEdfcTdkcjZ3MjlsNTh3dy1QdXNIS0JHZzBvTGJ6WWQ3N1E4Zw?oc=5",
-      "source": "21财经",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1WMGM3b1dsTjFMUklpZzJJallfNVFIWFk1dmJaMmZNWV9uQ21Ga2s2MEYzajMwWWJuYXZ6NFpWNjA1N1dzMlJIOEh3em9BaFYwSUhyY3M0MWRRMDZiUFBWX2hudw?oc=5",
+      "source": "东方财富",
       "source_type": "media",
       "applicable_dims": [
         "W1",
@@ -2170,7 +2195,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "8e60016bc6b2",
@@ -2196,7 +2221,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "43657408dc83",
@@ -2222,7 +2247,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ebf9d4c487de",
@@ -2248,7 +2273,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "a9f3dcb01595",
@@ -2273,7 +2298,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "0b09e54e7c54",
@@ -2298,7 +2323,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "8b9a07af875d",
@@ -2323,7 +2348,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "40718caf444d",
@@ -2348,7 +2373,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "49f935842974",
@@ -2373,7 +2398,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "cfd505d42b3b",
@@ -2398,7 +2423,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b8d74bfc283f",
@@ -2423,7 +2448,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "39e89430e194",
@@ -2448,32 +2473,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "feb52e925dc6",
-      "slug": "deepseek",
-      "brand": "DeepSeek / 深度求索",
-      "date": "2026-11-11",
-      "quote": "从“具身还太早”到连投两家：梁文锋下山后第一盘大棋，下在了机器人",
-      "title": "从“具身还太早”到连投两家：梁文锋下山后第一盘大棋，下在了机器人",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iMFRrTVQ2Q25aYkNYU3FNMEFqcndNTXRzWmxTcTJJVFoyLUFvYlNpQzhEZm9qUHhoZTBuc1JRaUdaOTNrNGlHUklZSDZJc0ptd1VFTndDM19vVTFaQWxXcQ?oc=5",
-      "source": "Sohu",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b945394f0586",
@@ -2498,7 +2498,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "5ef43357049d",
@@ -2523,7 +2523,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "f0cb6570c5d8",
@@ -2548,7 +2548,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "1f7537590c68",
@@ -2573,7 +2573,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ae6aba596441",
@@ -2598,7 +2598,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b54637dc92d9",
@@ -2623,7 +2623,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6ac680170ec4",
@@ -2648,7 +2648,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "f20a62206707",
@@ -2673,7 +2673,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6547f7f5ab94",
@@ -2698,7 +2698,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "2b9cc6c49dc1",
@@ -2723,7 +2723,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ae9868680942",
@@ -2748,7 +2748,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "4fc702092f59",
@@ -2773,7 +2773,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6e2714e5eeed",
@@ -2798,17 +2798,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "fe56eef30464",
+      "key": "d73bffd5f366",
       "slug": "nvidia",
       "brand": "NVIDIA / 英伟达",
-      "date": "2026-11-12",
-      "quote": "黄仁勋辞任英伟达CEO，公司CFO出任临时掌门人，中企忙着抢租海外算力",
-      "title": "黄仁勋辞任英伟达CEO，公司CFO出任临时掌门人，中企忙着抢租海外算力",
-      "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPeXdicmxJbGl3VlEtdmYzdF9fSzBGLXFWOU9leFFyLXpnYUFNckVtNnlqZ2ljU3IwQ1o2dnNzdG9FM2VzQnI2STNEWGxiWG9HLTNqajRxdzdVR3Y5YXhDc0ZteTBJOEtJVTVnZ2RZWkE5WTFvSXE1R3ZwVGUyNTc1RnhGcVpLV1hzSUNERVEtdFFQQ2NmZ1NlSjdBYTdyVExpVjhKVERWMVFMalB1c3ljWVZacUd4dWJfQ0psTjVCaFpaV3E1TERIekRES094ZkhjdFhzTGxBYmMzZEp5SDJscjdKdFV4SzdrWlMtY1ctemRrbXJiX1dqWGpsekEtVElTUVpjOURWYVNEX25KcXhGT1NScVd3bkF2Sm5OaU5YQTg0TVNVVzJqNHlyYm1wcVY4emQwSjV5dm5hZHRzRUZWMlRhRzR3TWVlTHIyaVRwbWtlVjZtQUN6cjR5clpkVVHSAd8CQVVfeXFMUGRQSHdSNjR5aHdDaU9zOHpYQmFIbnFzanJucUhIZ25JTVZMS21vY1JqdDBCd0E2LXV6R1E2MHJscGgwVTlFNVRkdGlKWW9wTGV0YVhCTTdPWmdMT2JXRG9yVENXaTZsUk53Qjh3TEtZTVdvSkNNaFoxNVJYX2VaRHc2QVozTWd2RmE2amdQZXB1LVdDdEZJLWw0QlM1N1RKeFc0aC1NUll4NW9JU0ZZRFpjeFBGd1BWUEN2VFZ0XzAwNU5XVlNCc2JSb1g5V0QxZFQwRnc5bHpfRnF6dVNtcmRHRGVKZmdCcUJhNm5DcUZnQmNQYk5KOW5mcVFqM1N2RzA4S1hpYXY5cGxQbjFnSmNzc19naU5OQWF1NW11dzdlS3M3MUlDZnRCZ0xTNl9uUmVPRkJSNHVxRGFIdDZmMGRjNVFoMUNQQnV0Q3JMenhkMy1XcHpOeUt3XzVuaEs0?oc=5",
-      "source": "DW.com",
+      "date": "2026-11-13",
+      "quote": "关于英伟达临时CEO克雷斯，我们知道些什么",
+      "title": "关于英伟达临时CEO克雷斯，我们知道些什么",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYjVlNmc2QnRSQnJCdllHQVZLRzBvLWNoSEhZNThQS1R1aGxSOXA2bEJuenh2RVBfRTgxS3VBYThPaVY4YVZOZ01rNVFyWU5Nb2dONmdERHU4VzF3bGcyZXg3SlNRc2E1UHR5TjNRM2RHRzRkOVhmam5oYjFUc25EZnFXdw?oc=5",
+      "source": "纽约时报中文网",
       "source_type": "media",
       "applicable_dims": [
         "W1",
@@ -2823,7 +2823,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "da8a63cb2750",
@@ -2848,7 +2848,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ecebba874ec8",
@@ -2873,7 +2873,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "2bac8d9c9fac",
@@ -2898,7 +2898,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6af301cae756",
@@ -2923,7 +2923,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "d76834c53952",
@@ -2948,7 +2948,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "8344b579c8a0",
@@ -2973,16 +2973,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "9144453e0b7d",
+      "key": "3aca17749914",
       "slug": "apple",
       "brand": "Apple / 苹果",
       "date": "2026-11-13",
-      "quote": "苹果首款智能家庭中枢HomeView及新款Apple TV 4K上市，首批订单已送至澳新客户手中",
-      "title": "苹果首款智能家庭中枢HomeView及新款Apple TV 4K上市，首批订单已送至澳新客户手中",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE54VXpIbzhmQzdCRzBHOTFHZjBlemlnbHluSTcwXzdtRHFnV1JpT0lITTFHTTdKTmNCVHpha3FFV1MwN1dESkZzV3pNc04?oc=5",
+      "quote": "苹果票房最高电影《F1:狂飙飞车》后皮特再接Apple TV新片",
+      "title": "苹果票房最高电影《F1:狂飙飞车》后皮特再接Apple TV新片",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9zYzh2UVVCckpSaWJkQnJLZzBTZ3dFbENGTzU0OGgxRk5WaWMxUi1mXzRvLWRKaFhWaDF1bFlxQXNoMjhBcFR0ck5QUVk?oc=5",
       "source": "凤凰网科技",
       "source_type": "media",
       "applicable_dims": [
@@ -2998,7 +2998,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "725f322e3d62",
@@ -3023,7 +3023,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "87367353ccf4",
@@ -3048,32 +3048,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "1fbe354f9af1",
-      "slug": "apple",
-      "brand": "Apple / 苹果",
-      "date": "2026-11-12",
-      "quote": "iPhone Siri AI 体验：距离真正的 AI Phone，苹果还有多远？| 附开通指南",
-      "title": "iPhone Siri AI 体验：距离真正的 AI Phone，苹果还有多远？| 附开通指南",
-      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9QajVXekYwY0tPTWlGTHRYa0cxdDd2alRmVi15UGhFcGtjQVA4eFZZU2hHb2hYZ3NCYWstNnlkQTUxd0U?oc=5",
-      "source": "爱范儿",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "53af53cf8671",
@@ -3098,7 +3073,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "c648a8a499c5",
@@ -3123,7 +3098,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "1fbe354f9af1",
+      "slug": "apple",
+      "brand": "Apple / 苹果",
+      "date": "2026-11-12",
+      "quote": "iPhone Siri AI 体验：距离真正的 AI Phone，苹果还有多远？| 附开通指南",
+      "title": "iPhone Siri AI 体验：距离真正的 AI Phone，苹果还有多远？| 附开通指南",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9QajVXekYwY0tPTWlGTHRYa0cxdDd2alRmVi15UGhFcGtjQVA4eFZZU2hHb2hYZ3NCYWstNnlkQTUxd0U?oc=5",
+      "source": "爱范儿",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "744c5439251c",
@@ -3148,7 +3148,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "c88533b238ec",
@@ -3173,7 +3173,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "7970e047359e",
@@ -3198,7 +3198,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "d3fe3b9f33e7",
@@ -3223,7 +3223,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b802e6428582",
@@ -3248,16 +3248,16 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "3986e4b6fc6c",
+      "key": "9a8de86a1701",
       "slug": "google",
       "brand": "Google / 谷歌",
       "date": "2026-11-11",
-      "quote": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTGVFa0w0cmk4aTZOc0dVWnc5bm5lSzRZOE9aQldlcTZZUGc4MGNNWGlTbDFJYUlibHJoQ2xpOEdrUFpPODBQOGluNUhVQWxvY2ZuWE84TVN3NVJza04xVXlBcW1kVkl1WjZMM2RxREktM2Z3bVVqbTBkUnJuTy0tRl9KSkxuT2pzY0Zib1dKV24?oc=5",
+      "quote": "Talk it through with Gemini, now on Apple CarPlay",
+      "title": "Talk it through with Gemini, now on Apple CarPlay",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYXRXYXFrSTNsUnNkbUtwV09hNmI2bFVPcHluaGMwTGM0UlBPbXJKUndlSVdJMDBud2pNVWFtVjR5VTROZUI2N2RXSnpGTVlQUlpvOHlBcUstaFdaYVhacnZRejJVQ2I4b2loeC0wMnQ3MjVwVERYVVVxT3ZIeVF1cEJYNl92XzN1QWc?oc=5",
       "source": "blog.google",
       "source_type": "official",
       "applicable_dims": [
@@ -3273,7 +3273,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "67fbc68ac463",
@@ -3298,7 +3298,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6229d7912383",
@@ -3323,7 +3323,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "744db1a33eb3",
@@ -3348,7 +3348,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "133421380b76",
@@ -3373,7 +3373,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "fda1b3661dc8",
@@ -3398,7 +3398,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "802881aba428",
@@ -3423,7 +3423,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b525add50dc6",
@@ -3449,7 +3449,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "7f4d34f05efa",
@@ -3475,7 +3475,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "94da1769dc5a",
@@ -3501,7 +3501,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "edf1d5276da0",
@@ -3527,7 +3527,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b5559e29de9a",
@@ -3553,7 +3553,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "bbeccc3dde5c",
@@ -3579,7 +3579,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "5d27b56d0a91",
@@ -3605,7 +3605,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "901fe5018114",
@@ -3631,7 +3631,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "631bd2b544b6",
@@ -3657,7 +3657,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "821d6089c713",
@@ -3683,33 +3683,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "141a5774c197",
-      "slug": "microsoft",
-      "brand": "Microsoft / 微软",
-      "date": "2026-11-13",
-      "quote": "微软Outlook突发大规模故障 全球数万用户受影响 波及新加坡",
-      "title": "微软Outlook突发大规模故障 全球数万用户受影响 波及新加坡",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBMaGFXZS1FU2pPeXlqZS1JcW43YWQzOFFLVE0yZWFzUEdseF9IME9aTUVnYi1nZG9HRnpMaWFiUjBBTEp0R2xIWWh0NGxpUTdFUnJWeTlJdmwxTFNodXRGM09yRUt0NFFUVXc?oc=5",
-      "source": "联合早报",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W5",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "3667000ef4de",
@@ -3735,7 +3709,33 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "141a5774c197",
+      "slug": "microsoft",
+      "brand": "Microsoft / 微软",
+      "date": "2026-11-13",
+      "quote": "微软Outlook突发大规模故障 全球数万用户受影响 波及新加坡",
+      "title": "微软Outlook突发大规模故障 全球数万用户受影响 波及新加坡",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBMaGFXZS1FU2pPeXlqZS1JcW43YWQzOFFLVE0yZWFzUEdseF9IME9aTUVnYi1nZG9HRnpMaWFiUjBBTEp0R2xIWWh0NGxpUTdFUnJWeTlJdmwxTFNodXRGM09yRUt0NFFUVXc?oc=5",
+      "source": "联合早报",
+      "source_type": "media",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ee9bf658cbc5",
@@ -3761,7 +3761,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "7a98eb960c60",
@@ -3787,7 +3787,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "2c022ee0eada",
@@ -3813,7 +3813,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "444a1cd7d076",
@@ -3839,7 +3839,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "f9acf91ae58c",
@@ -3865,7 +3865,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "a69c268ed6ed",
@@ -3891,7 +3891,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "15e4f5418128",
@@ -3917,7 +3917,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "eeb5a3d6e103",
@@ -3943,7 +3943,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "9c836c9d55b8",
@@ -3969,7 +3969,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "7841f8f18909",
@@ -3995,7 +3995,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "8732693fcddc",
@@ -4021,7 +4021,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "2c58b720b187",
@@ -4047,7 +4047,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "4e0750c25312",
@@ -4072,7 +4072,32 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
+    },
+    {
+      "key": "14523c6da957",
+      "slug": "huawei",
+      "brand": "Huawei / 华为",
+      "date": "2026-11-13",
+      "quote": "China Unicom and Huawei Build the Industry's First Dual Ten-Gigabit Smart Thermal Power Private Netw",
+      "title": "China Unicom and Huawei Build the Industry's First Dual Ten-Gigabit Smart Thermal Power Private Netw",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aUHFzRU0xRmZGeU5IVWlxMXZNZm90X2FRTjdUMThod3pmSUdpNEhXV2FoM0NqTDcxZlhLNkFGTEItb0hmdFlCWGFYNGZIb1JlNjBfZTFMUjZ0UnpjWnhQbXoyNndMdVVJRHhWTQ?oc=5",
+      "source": "Huawei",
+      "source_type": "official",
+      "applicable_dims": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "lens_suggest": [
+        "signal"
+      ],
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "aa7c2e7c3c55",
@@ -4097,7 +4122,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "07dd794bf690",
@@ -4122,7 +4147,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "0ec8c61e0aa9",
@@ -4147,7 +4172,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "901b34113933",
@@ -4172,7 +4197,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "9575d6b76375",
@@ -4197,7 +4222,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "b3d2c46dbb2a",
@@ -4222,7 +4247,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "469be6009737",
@@ -4247,17 +4272,17 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
-      "key": "8695f1e195c2",
+      "key": "37d9af48e2cd",
       "slug": "huawei",
       "brand": "Huawei / 华为",
       "date": "2026-11-11",
       "quote": "华为官宣比亚迪腾势N8搭载HUAWEI HiCar手车互联，支持三折叠手机形态跨端同步",
       "title": "华为官宣比亚迪腾势N8搭载HUAWEI HiCar手车互联，支持三折叠手机形态跨端同步",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1hVlRURVBZU09XOFlFT1dtUzViVm56OWZuQXp5RVBQeFhETnhTUld3MDl0TFh6OFFBVWhDdkFIVFlUY0FvSnZHQk0wcXdrOGd2eXc?oc=5",
-      "source": "Sohu",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1hVXBGekZlZkJJVENSRndSamEyR01qMWtCTTN3czY4SWUydGJlNVZFcFZXX004aTZab2Y2WDNjRkdVZG13TGRJZGlhY0c?oc=5",
+      "source": "凤凰网科技",
       "source_type": "media",
       "applicable_dims": [
         "W1",
@@ -4272,7 +4297,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "c8fed7b9bafb",
@@ -4297,7 +4322,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "74ea6def3395",
@@ -4322,32 +4347,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
-    },
-    {
-      "key": "c5e6861c034d",
-      "slug": "huawei",
-      "brand": "Huawei / 华为",
-      "date": "2026-11-11",
-      "quote": "2026年底苹果手机可以用华为耳机吗",
-      "title": "2026年底苹果手机可以用华为耳机吗",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1PVmFyQ19wV0tGUlhHSVdCTlBKSUtMYWNheFQyVVV0QUh3OGI4QVk1WGVhN1dMQXpUQVRhTUp0UXBGUGRJUlJzQktUUHFrLWNKTWlqM0xNOE5lX2JVUVE?oc=5",
-      "source": "CSDN",
-      "source_type": "media",
-      "applicable_dims": [
-        "W1",
-        "W2",
-        "W3",
-        "W4",
-        "W6",
-        "W7",
-        "W8",
-        "W9"
-      ],
-      "lens_suggest": [
-        "signal"
-      ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "4d634e5b1fbb",
@@ -4372,7 +4372,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "0a08c1266c96",
@@ -4397,7 +4397,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "84db893ea30f",
@@ -4422,7 +4422,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "a33040c13c10",
@@ -4447,7 +4447,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "77b840cfb53c",
@@ -4472,7 +4472,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "ab72b5a338d7",
@@ -4497,7 +4497,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "a04cbe9a7864",
@@ -4522,7 +4522,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "51307af9da20",
@@ -4547,7 +4547,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "74e648e1d361",
@@ -4572,7 +4572,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "6eb10c560a84",
@@ -4597,7 +4597,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "2dc353604f69",
@@ -4622,7 +4622,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "00142dac50b2",
@@ -4647,7 +4647,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "04fad01598c7",
@@ -4673,7 +4673,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "bf6a1a04478a",
@@ -4699,7 +4699,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "812654d81ef0",
@@ -4725,7 +4725,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "57fcbb5a7f64",
@@ -4751,7 +4751,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "bcff9330b4d4",
@@ -4777,7 +4777,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "f3d6fe5cb063",
@@ -4803,7 +4803,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     },
     {
       "key": "19baa9dea70f",
@@ -4829,7 +4829,7 @@
       "lens_suggest": [
         "signal"
       ],
-      "fetched_at": "2026-11-13T08:28:13Z"
+      "fetched_at": "2026-11-13T09:00:22Z"
     }
   ]
 }

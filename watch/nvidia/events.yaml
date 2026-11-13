@@ -2277,3 +2277,94 @@
   source_type: media
   note: "LLM 预分类建议(high):英伟达与LG人形机器人合作，战略联盟事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-12-nvidia-150
+  date: 2026-11-12
+  dim: W4
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "A New Dawn in the Cloud: ‘Warhammer 40,000: Dawn of War IV’ Is Coming to GeForce NOW"
+  quote: "A New Dawn in the Cloud: ‘Warhammer 40,000: Dawn of War IV’ Is Coming to GeForce NOW"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSno3NTBxOWotUUktZzhDMFRJbDlaaDZtMVBVM1g1ZDlRRUJMNlh4WG5JdHQ3YzZBSXpfWXdiaG1aVWhxeFU5RUhNdE42VUxCNG9GVG5tMmkyek82QzN4bUxtSlJ5YVY2MG1NT0tXWlVZazRSQ0dzZEdWOThuc19mNFlNQ0g5bkVITl9v?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方游戏上云日常内容,轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-10-nvidia-151
+  date: 2026-11-10
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Expands Open Source Commitment With OpenShell Contribution and New AI Infrastructure"
+  quote: "NVIDIA Expands Open Source Commitment With OpenShell Contribution and New AI Infrastructure"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE02ejIwRkM1MEFBdlp4WUlTMlNwVGZ4eHAzRklON3VDU0Jkd3ptOV9ocTdkTm5MRkV0V1E1OVJIbmNHTHkxcDhvcGJRdEl1NmdkcnJMMkI0dU90YzdfTEVTRVU0WDBoYlZac2cyVmgxY0xQblp0d0E?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):官方开源贡献与AI基础设施更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-nvidia-152
+  date: 2026-11-12
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达宣布 CEO 黄仁勋辞职，CFO 科莱特·克雷斯出任临时 CEO，会对英伟达带来哪些影响？"
+  quote: "英伟达宣布 CEO 黄仁勋辞职，CFO 科莱特·克雷斯出任临时 CEO，会对英伟达带来哪些影响？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LSGpLcnl6NUJDaEhnSkg5OGlRVzNZNzJ4RVNrQm51WXF3eWhCWFZkV2JNbktwY0luU2FfWHVVSW5FZWRUc0dXR3NhOTU3SFYtQmhGdnVHODJLVFJ4UG9R?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [origin, identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):CEO变动传闻，若属实属重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-nvidia-153
+  date: 2026-11-13
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "深陷丑闻的黄仁勋辞职后 巨头英伟达陷入动荡"
+  quote: "深陷丑闻的黄仁勋辞职后 巨头英伟达陷入动荡"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1RNXdDRkF6TE5nX2FwLUlOaWxzWGFla29JQVZJYUl4SzJLU0RkbDNjQmMzU1JLVEZxSF9GZ21hTDVPT0RIMV8tSjJyMTRKYzl4bURvS05IWjRoZGNMYldaTXc3ZFZkZmfSAWxBVV95cUxQOGlXMmJ4ZFBtRDRoTVMzUkFaZmtVZ19hR3FvVDlDaUV6SHc4R2hMeG1FR2MycEpYTExwUllsQmlQd1dieHBPTkFXSDVpVWtqUDFYUlR0cF9mT2JWTDl5YlNHT3VBZWFuMFJUeks?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO辞职丑闻，核心高管重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-nvidia-154
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "黄仁勋辞职后英伟达总部外出现鲜花和蜡烛|NVIDIA|加利福尼亚州|圣克拉拉|玻璃罐|首席执行官_手机新浪网"
+  quote: "黄仁勋辞职后英伟达总部外出现鲜花和蜡烛|NVIDIA|加利福尼亚州|圣克拉拉|玻璃罐|首席执行官_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxNTFlKaEJUSVNBYTliMklWbVFpWVRuUVNRZXZBUlJrbE43c3NpbVMtdHBCN1REb3dxTFFwLVAzNFFhUHhtSlQ3MGQxSWtWbWJPNDNhWDdZeWp0RlcyQmtINGJ2TnM1SE5tWHRQdXNkR2VHa1MyN053aFZnSG9TR19UWDN6TFFjc3huVnRmelBzODE2V2JaaVRpY3NLQU0?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):辞职后续情绪事件，舆论关注高。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-nvidia-155
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "关于英伟达临时CEO克雷斯，我们知道些什么"
+  quote: "关于英伟达临时CEO克雷斯，我们知道些什么"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxOYjVlNmc2QnRSQnJCdllHQVZLRzBvLWNoSEhZNThQS1R1aGxSOXA2bEJuenh2RVBfRTgxS3VBYThPaVY4YVZOZ01rNVFyWU5Nb2dONmdERHU4VzF3bGcyZXg3SlNRc2E1UHR5TjNRM2RHRzRkOVhmam5oYjFUc25EZnFXdw?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):临时CEO人事安排，接任者背景。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

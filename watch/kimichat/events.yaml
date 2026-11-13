@@ -2093,3 +2093,19 @@
   source_type: media
   note: "LLM 预分类建议(high):官方声明打击假冒融资，品牌风险管理公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-13-kimichat-137
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "中国AI公司月之暗面即将完成架构重组，为IPO铺路"
+  quote: "中国AI公司月之暗面即将完成架构重组，为IPO铺路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugJBVV95cUxQbzRhV2wwVlhFTUhOWWFSTUFHbDNaTmlHRnJTYXNIOExRU3Jadk11OFdBZXNxR2liQVQ5SERXdFdUTU5obU1NRTlsSnpJLUZyZl9aZGZpRHZ6VVFWU3N2TDlMQTdHR0d3Ums4UExaRFU2MDhleGlMMzdDWEJQZGJvY2ZYakp3SFU0NDBLMEEzUXY5Y2prQVdvUng1Q3NYazFXdktudExld3EwbVBVbm5FRC1wMDRZTVZtTnJ6WTVidFJWNjFhRUx2ZFkwQlFNNFhMRHVjYTNYVl9BWGxmSGRfTXgtX3FLdzRpeTJkeUViOEV1cDhHVzFlVXVHTlhJUWRGRE1JUFQyTHR1NklDTi1vcjM1VkdIQWwxb2xaUjBMSXVwUlVvT0hRbTRYZ09aSkNQTWV4LVc0QkdCUQ?oc=5
+  fetched_at: "2026-11-13T09:00:22Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):架构重组铺路IPO，重大公司动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
