@@ -113,6 +113,8 @@ jobs:
           python3 scripts/watch-tools/reaudit_judges.py \
             --evidence watch/_reaudit/nvidia/evidence-2026-11-13.json \
             --report published/reports/nvidia/report.md \
+            --baseline watch/_reaudit/nvidia/baseline-v3.json \
+            --as-of 2026-11-13 \
             --output /tmp/nvidia-reaudit/judgments.json
 
       - uses: actions/upload-artifact@v4
