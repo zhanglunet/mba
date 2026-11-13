@@ -56,6 +56,16 @@ def validate_judgment(result, judge, evidence, baseline=None):
     validate_score_evidence(ids, evidence)
 
 
+def call_with_retry(items, provider, system):
+    for attempt in range(3):
+        try:
+            return llm.call_llm(items, provider, system=system, max_tokens=6000, timeout=180)
+        except ValueError:
+            if attempt == 2:
+                raise
+            print(f'Invalid model output; retry {attempt + 1}/2', flush=True)
+
+
 def generate_judgments(report, evidence, provider, baseline, as_of):
     verified = [e for e in evidence if e.get('verification') == 'verified']
     if not verified:
@@ -71,7 +81,7 @@ def generate_judgments(report, evidence, provider, baseline, as_of):
                   'lens_evidence (one evidence ID array per lens), lens_reasons (one explanation per lens), as_of (the supplied date), reason. Each changed score needs lens-specific evidence; never present earlier events as occurring after later events. The founder departure does not change founding history: keep Origin at its baseline unless new verified evidence corrects the founding narrative. Financial results predating the departure do not show post-transition performance. Distinguish uncertainty from demonstrated damage. Do not invent facts.\n'
                   + perspective)
         items = [{'judge': judge, 'as_of': as_of, 'baseline_scores': baseline[judge], 'previous_report': report, 'verified_evidence': verified}]
-        reply = llm.call_llm(items, provider, system=system, max_tokens=4000, timeout=180)
+        reply = call_with_retry(items, provider, system)
         if not isinstance(reply, list) or len(reply) != 1:
             raise ValueError(f'{judge}: expected one judgment')
         validate_judgment(reply[0], judge, verified, baseline[judge])

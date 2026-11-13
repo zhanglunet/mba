@@ -39,3 +39,10 @@ class LensEvidenceTest(unittest.TestCase):
         self.result['lens_evidence']['signal'] = ['e1']
         self.result['as_of'] = '2026-08-01'
         with self.assertRaises(ValueError): mod.validate_judgment(self.result, 'paulg', self.evidence, self.baseline)
+
+class RetryTest(unittest.TestCase):
+    def test_invalid_model_output_is_retried(self):
+        from unittest.mock import patch
+        with patch.object(mod.llm, 'call_llm', side_effect=[ValueError('bad JSON'), [{'ok': True}]]) as call:
+            self.assertEqual(mod.call_with_retry([], ('x','key','url','model'), 'system'), [{'ok': True}])
+            self.assertEqual(call.call_count, 2)
