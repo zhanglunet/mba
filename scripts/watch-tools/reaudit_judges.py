@@ -2,14 +2,54 @@
 """Generate a review-only NVIDIA judge panel proposal from verified evidence."""
 import argparse
 import json
+import re
 from datetime import date
 from pathlib import Path
+import yaml
 import classify_candidates as llm
 from reaudit_evidence import validate_score_evidence
 
 LENSES = ('origin', 'category', 'leverage', 'identity', 'signal')
 JUDGES = ('pmarca', 'paulg', 'pthiel', 'naval', 'rhoffman')
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def validate_baseline(baseline, panel):
+    if baseline.get('version') != panel.get('version'):
+        raise ValueError('baseline version differs from panel')
+    scores = baseline.get('scores')
+    if not isinstance(scores, dict) or set(scores) != set(JUDGES):
+        raise ValueError('baseline judge roster mismatch')
+    for value in scores.values():
+        if not isinstance(value, dict) or set(value) != set(LENSES) or any(type(n) is not int or not 0 <= n <= 10 for n in value.values()):
+            raise ValueError('invalid baseline scores')
+    if sum(sum(v.values()) for v in scores.values()) != panel.get('score_total'):
+        raise ValueError('baseline total differs from panel')
+
+
+def baseline_from_report(report, panel):
+    match = re.search(r'^##\s+Score Matrix[^\n]*\n(.*?)(?=^##\s|\Z)', report, re.M | re.S)
+    if not match:
+        raise ValueError('baseline score matrix missing')
+    lines = [line for line in match.group(1).splitlines() if line.startswith('|')]
+    if not lines:
+        raise ValueError('baseline header missing')
+    header = [x.strip() for x in lines[0].strip('|').split('|')]
+    if len(header) < 7 or header[1:6] != ['安德森', '格雷厄姆', '蒂尔', '纳瓦尔', '霍夫曼']:
+        raise ValueError('baseline judge order mismatch')
+    scores = {judge: {} for judge in JUDGES}
+    for lens in LENSES:
+        matches = [line for line in lines[1:] if line.split('|')[1].strip().lower().startswith(lens)]
+        if len(matches) != 1:
+            raise ValueError(f'baseline lens missing or duplicated: {lens}')
+        cells = [x.strip() for x in matches[0].strip('|').split('|')]
+        if len(cells) < 7 or any(not re.fullmatch(r'(?:10|[0-9])', cell) for cell in cells[1:6]):
+            raise ValueError(f'baseline scores invalid: {lens}')
+        for judge, value in zip(JUDGES, cells[1:6]):
+            scores[judge][lens] = int(value)
+    baseline = {'version': panel.get('version'), 'scores': scores}
+    validate_baseline(baseline, panel)
+    return baseline
 
 
 def validate_judgment(result, judge, evidence, baseline=None):
@@ -66,6 +106,24 @@ def call_with_retry(items, provider, system):
             print(f'Invalid model output; retry {attempt + 1}/2', flush=True)
 
 
+def fresh_evidence(evidence, baseline_date, as_of):
+    start = date.fromisoformat(str(baseline_date))
+    end = date.fromisoformat(str(as_of))
+    if end < start:
+        raise ValueError('review date precedes baseline')
+    result = []
+    for item in evidence:
+        if item.get('verification') != 'verified':
+            continue
+        try:
+            event_date = date.fromisoformat(str(item['date']))
+        except (KeyError, ValueError):
+            raise ValueError('verified evidence has invalid date')
+        if start < event_date <= end:
+            result.append(item)
+    return result
+
+
 def generate_judgments(report, evidence, provider, baseline, as_of):
     verified = [e for e in evidence if e.get('verification') == 'verified']
     if not verified:
@@ -96,18 +154,24 @@ def main():
     parser.add_argument('--evidence', type=Path, required=True)
     parser.add_argument('--report', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--baseline', type=Path, required=True)
+    parser.add_argument('--baseline', type=Path, help='optional baseline file; defaults to current report matrix')
     parser.add_argument('--as-of', required=True)
+    parser.add_argument('--panel', type=Path, required=True)
     args = parser.parse_args()
     evidence = json.loads(args.evidence.read_text(encoding='utf-8'))
     if not isinstance(evidence, list):
         raise ValueError('evidence must be a list')
-    baseline = json.loads(args.baseline.read_text(encoding='utf-8'))
-    if set(baseline) != set(JUDGES):
-        raise ValueError('baseline judge roster mismatch')
-    results = generate_judgments(args.report.read_text(encoding='utf-8'), evidence, llm._provider(), baseline, args.as_of)
+    report = args.report.read_text(encoding='utf-8')
+    panel = yaml.safe_load(args.panel.read_text(encoding='utf-8'))
+    derived = baseline_from_report(report, panel)
+    baseline = json.loads(args.baseline.read_text(encoding='utf-8')) if args.baseline else derived
+    validate_baseline(baseline, panel)
+    if baseline != derived:
+        raise ValueError('baseline matrix differs from current report')
+    evidence = fresh_evidence(evidence, panel['published_at'], args.as_of)
+    results = generate_judgments(report, evidence, llm._provider(), baseline['scores'], args.as_of)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps({'status': 'draft', 'brand': 'nvidia', 'judgments': results}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    args.output.write_text(json.dumps({'status': 'draft', 'brand': 'nvidia', 'baseline': baseline, 'judgments': results}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Wrote review-only proposal to {args.output}')
 
 if __name__ == '__main__':

@@ -58,11 +58,12 @@ def critique(judgments, evidence, baseline, provider):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    for name in ('judgments', 'evidence', 'baseline', 'output'):
+    for name in ('judgments', 'evidence', 'output'):
         parser.add_argument('--' + name, type=Path, required=True)
     args = parser.parse_args()
     load = lambda path: json.loads(path.read_text(encoding='utf-8'))
-    result = critique(load(args.judgments)['judgments'], load(args.evidence), load(args.baseline), llm._provider())
+    draft = load(args.judgments)
+    result = critique(draft['judgments'], load(args.evidence), draft['baseline']['scores'], llm._provider())
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print('Independent evidence review:', result['evidence_review'], '(still requires human review)')

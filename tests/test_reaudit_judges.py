@@ -46,3 +46,33 @@ class RetryTest(unittest.TestCase):
         with patch.object(mod.llm, 'call_llm', side_effect=[ValueError('bad JSON'), [{'ok': True}]]) as call:
             self.assertEqual(mod.call_with_retry([], ('x','key','url','model'), 'system'), [{'ok': True}])
             self.assertEqual(call.call_count, 2)
+
+class BaselineConsistencyTest(unittest.TestCase):
+    def test_report_and_panel_versions_must_match_baseline(self):
+        baseline = {'version':'v3','scores':{name:dict.fromkeys(mod.LENSES, 8) for name in mod.JUDGES}}
+        with self.assertRaisesRegex(ValueError, 'baseline version'):
+            mod.validate_baseline(baseline, {'version':'v4','score_total':200})
+
+    def test_panel_total_must_match_baseline_matrix(self):
+        baseline = {'version':'v4','scores':{name:dict.fromkeys(mod.LENSES, 8) for name in mod.JUDGES}}
+        with self.assertRaisesRegex(ValueError, 'baseline total'):
+            mod.validate_baseline(baseline, {'version':'v4','score_total':213})
+        mod.validate_baseline(baseline, {'version':'v4','score_total':200})
+
+class BaselineExtractionTest(unittest.TestCase):
+    def test_extracts_matrix_in_vc_en_order(self):
+        rows = ['## Score Matrix','| Lens | 安德森 | 格雷厄姆 | 蒂尔 | 纳瓦尔 | 霍夫曼 | Mean |','|---|---|---|---|---|---|---|']
+        for lens in mod.LENSES: rows.append('| '+lens+' | 9 | 8 | 7 | 6 | 5 | 7.0 |')
+        rows.append('## Next')
+        baseline = mod.baseline_from_report('\n'.join(rows), {'version':'v4','score_total':175})
+        self.assertEqual(baseline['scores']['pmarca']['origin'],9)
+        self.assertEqual(baseline['scores']['rhoffman']['signal'],5)
+
+    def test_missing_matrix_is_rejected(self):
+        with self.assertRaises(ValueError): mod.baseline_from_report('no matrix', {'version':'v4','score_total':1})
+
+class FreshEvidenceTest(unittest.TestCase):
+    def test_only_verified_evidence_after_baseline_and_before_review(self):
+        evidence=[{'id':'old','date':'2026-11-14','verification':'verified'}, {'id':'new','date':'2026-11-15','verification':'verified'}, {'id':'future','date':'2026-11-18','verification':'verified'}, {'id':'unverified','date':'2026-11-15','verification':'unverified'}]
+        selected=mod.fresh_evidence(evidence, '2026-11-14', '2026-11-16')
+        self.assertEqual([e['id'] for e in selected],['new'])
