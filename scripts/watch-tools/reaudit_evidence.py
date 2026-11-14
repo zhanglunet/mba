@@ -40,11 +40,32 @@ class TextParser(HTMLParser):
         self.parts.append(data)
 
 
+TRUSTED_SOURCE_HOSTS = frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com', 'www.reuters.com', 'apnews.com'})
+
+
+def allowed_source_url(url):
+    try:
+        parsed = urlparse(url)
+        return (parsed.scheme == 'https' and parsed.hostname in TRUSTED_SOURCE_HOSTS
+                and parsed.username is None and parsed.password is None
+                and parsed.port in (None, 443))
+    except ValueError:
+        return False
+
+
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
 def fetch_source(event):
     """Fetch a source for quote matching; a match is not fact verification."""
     try:
+        if not allowed_source_url(event['url']):
+            raise ValueError('source host is not allowlisted')
         req = urllib.request.Request(event['url'], headers={'User-Agent': 'MBA-Research/1.0'})
-        with urllib.request.urlopen(req, timeout=15) as response:
+        opener = urllib.request.build_opener(NoRedirect())
+        with opener.open(req, timeout=15) as response:
             data = response.read(1000001)
             if len(data) > 1000000:
                 raise ValueError('response exceeds size limit')

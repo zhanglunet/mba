@@ -49,16 +49,18 @@ class FetchTest(unittest.TestCase):
             def __exit__(self, *args): pass
             def read(self, n): return b'<html><title>Important news</title><body>Important news</body></html>'
             def geturl(self): return 'https://example.com/article'
-        with patch.object(module.urllib.request, 'urlopen', return_value=Response()):
-            result = module.fetch_source({'url': 'https://example.com/article', 'quote': 'Important news'})
+        with patch.object(module.urllib.request, 'build_opener') as factory:
+            factory.return_value.open.return_value = Response()
+            result = module.fetch_source({'url': 'https://investor.nvidia.com/article', 'quote': 'Important news'})
         self.assertTrue(result['quote_match'])
         self.assertEqual(result['verification'], 'unverified')
         self.assertEqual(result['fetch_status'], 'ok')
 
     def test_source_failure_stays_unverified(self):
         from unittest.mock import patch
-        with patch.object(module.urllib.request, 'urlopen', side_effect=OSError('offline')):
-            result = module.fetch_source({'url': 'https://example.com/article', 'quote': 'x'})
+        with patch.object(module.urllib.request, 'build_opener') as factory:
+            factory.return_value.open.side_effect = OSError('offline')
+            result = module.fetch_source({'url': 'https://investor.nvidia.com/article', 'quote': 'x'})
         self.assertEqual(result['fetch_status'], 'error')
         self.assertEqual(result['verification'], 'unverified')
 
@@ -70,3 +72,14 @@ class ProvenanceTest(unittest.TestCase):
     def test_duplicate_ids_are_rejected(self):
         with self.assertRaises(ValueError):
             module.validate_score_evidence(['e1'], [{'id': 'e1'}, {'id': 'e1'}])
+
+class PublicSourceTest(unittest.TestCase):
+    def test_rejects_local_and_private_addresses(self):
+        for url in ['http://127.0.0.1/', 'https://localhost/', 'http://169.254.169.254/', 'http://[::1]/']:
+            with self.subTest(url=url):
+                self.assertFalse(module.allowed_source_url(url))
+
+    def test_allows_only_explicit_trusted_domains(self):
+        self.assertTrue(module.allowed_source_url('https://investor.nvidia.com/news/press'))
+        self.assertFalse(module.allowed_source_url('https://investor.nvidia.com.attacker.example/news'))
+        self.assertFalse(module.allowed_source_url('https://user:pass@investor.nvidia.com/news'))
