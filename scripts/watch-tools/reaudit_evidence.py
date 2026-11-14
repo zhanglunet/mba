@@ -3,7 +3,7 @@
 import argparse
 import json
 import re
-from datetime import date
+from datetime import date, datetime
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
@@ -38,21 +38,32 @@ class TextParser(HTMLParser):
         super().__init__()
         self.parts = []
         self.page_title = ''
+        self.og_title = ''
         self.source_date = ''
+        self.date_text = ''
+        self.in_date = False
         self.in_title = False
     def handle_starttag(self, tag, attrs):
         values = dict(attrs)
         if tag == 'title':
             self.in_title = True
+        if tag == 'span' and 'module_date-text' in (values.get('class') or '').split():
+            self.in_date = True
+        if tag == 'meta' and values.get('property') == 'og:title':
+            self.og_title = values.get('content') or ''
         if tag == 'meta' and (values.get('property') in ('article:published_time', 'og:published_time') or values.get('name') in ('date', 'pubdate', 'publish-date')):
             self.source_date = (values.get('content') or '')[:10]
     def handle_endtag(self, tag):
         if tag == 'title':
             self.in_title = False
+        if tag == 'span' and self.in_date:
+            self.in_date = False
     def handle_data(self, data):
         self.parts.append(data)
         if self.in_title:
             self.page_title += data
+        if self.in_date:
+            self.date_text += data
 
 
 TRUSTED_SOURCE_HOSTS = frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com', 'www.reuters.com', 'apnews.com'})
@@ -91,8 +102,13 @@ def fetch_source(event):
             if 'html' in content_type:
                 parser = TextParser()
                 parser.feed(text)
+                if not parser.source_date and parser.date_text.strip():
+                    try:
+                        parser.source_date = datetime.strptime(parser.date_text.strip(), '%B %d, %Y').date().isoformat()
+                    except ValueError:
+                        pass
                 text = ' '.join(parser.parts)
-            return {**assess_source(event, text), 'fetch_status': 'ok', 'final_url': response.geturl(), 'source_date': parser.source_date if 'html' in content_type else '', 'source_title': parser.page_title if 'html' in content_type else ''}
+            return {**assess_source(event, text), 'fetch_status': 'ok', 'final_url': response.geturl(), 'source_date': parser.source_date if 'html' in content_type else '', 'source_title': (parser.og_title or parser.page_title) if 'html' in content_type else ''}
     except (OSError, ValueError, KeyError) as exc:
         return {'fetch_status': 'error', 'error': str(exc), 'quote_match': False, 'verification': 'unverified'}
 

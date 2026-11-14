@@ -111,3 +111,16 @@ class OfficialPipelineTest(unittest.TestCase):
             factory.return_value.open.return_value=Response()
             source=module.fetch_source(event)
         self.assertEqual(module.official_statement_evidence(event,source)['verification_scope'],'official_statement')
+    def test_nvidia_investor_page_title_and_date_are_recognized(self):
+        from unittest.mock import patch
+        class Response:
+            headers={'Content-Type':'text/html; charset=utf-8'}
+            def __enter__(self): return self
+            def __exit__(self,*args): pass
+            def read(self,n): return b'<html><head><title>NVIDIA Corporation - Launch</title><meta property="og:title" content="Launch"></head><body><span class="module_date-text">November 12, 2026</span>Launch</body></html>'
+            def geturl(self): return 'https://investor.nvidia.com/news/launch'
+        event={'id':'e1','title':'Launch','quote':'Launch','date':'2026-11-12','url':'https://investor.nvidia.com/news/launch','source_type':'official'}
+        with patch.object(module.urllib.request,'build_opener') as factory:
+            factory.return_value.open.return_value=Response()
+            source=module.fetch_source(event)
+        self.assertEqual(module.official_statement_evidence(event,source)['verification_scope'],'official_statement')
