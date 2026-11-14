@@ -117,3 +117,30 @@ class MultiPanelBaselineTest(unittest.TestCase):
         with patch.object(mod,'call_with_retry',side_effect=model):
             result=mod.generate_judgments('report',evidence,('x','key','url','model'),baseline,'2026-11-16',judges=roster)
         self.assertEqual([x['judge'] for x in result],list(roster))
+
+class ConflictDisclosureMatrixTest(unittest.TestCase):
+    def test_openai_marks_conflicted_judges_without_changing_roster(self):
+        import yaml
+        root=pathlib.Path(__file__).resolve().parents[1]
+        panel=yaml.safe_load((root/'published/reports/openai/panel.yaml').read_text(encoding='utf-8'))
+        registry=yaml.safe_load((root/'metric-brand-auditor/panels/vc-en.yaml').read_text(encoding='utf-8'))
+        report=(root/'published/reports/openai/report.md').read_text(encoding='utf-8')
+        result=mod.derive_panel_baseline(report,panel,registry)
+        self.assertEqual(result['scores']['pthiel']['signal'],7)
+        self.assertEqual(result['disclosures'], {'pthiel':'△', 'rhoffman':'△'})
+        self.assertEqual(sum(sum(x.values()) for x in result['scores'].values()),190)
+
+class DroppedJudgesTest(unittest.TestCase):
+    def test_microsoft_excludes_declared_conflicted_judge(self):
+        import yaml
+        root=pathlib.Path(__file__).resolve().parents[1]
+        panel=yaml.safe_load((root/'published/reports/microsoft/panel.yaml').read_text(encoding='utf-8'))
+        registry=yaml.safe_load((root/'metric-brand-auditor/panels/vc-en.yaml').read_text(encoding='utf-8'))
+        report=(root/'published/reports/microsoft/report.md').read_text(encoding='utf-8')
+        result=mod.derive_panel_baseline(report,panel,registry)
+        self.assertEqual(result['excluded_judges'],['rhoffman'])
+        self.assertNotIn('rhoffman',result['scores'])
+        self.assertEqual(sum(sum(x.values()) for x in result['scores'].values()),170)
+    def test_unknown_dropped_judge_is_rejected(self):
+        with self.assertRaises(ValueError):
+            mod.derive_panel_baseline('',{'panel':'vc-en','score_max':0,'overrides':{'drop':['unknown']}},{'name':'vc-en','judges':[]})

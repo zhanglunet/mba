@@ -67,3 +67,15 @@ class DraftContextTest(unittest.TestCase):
         self.assertIn('https://example.com/a',result)
         self.assertIn('未对维持不变的评分进行独立复核',result)
         self.assertIn('No material change',result)
+
+class DisclosureTest(unittest.TestCase):
+    def test_draft_preserves_original_conflict_markers_and_exclusions(self):
+        from reaudit_judges import LENSES
+        base={'version':'v1','scores':{'j':dict.fromkeys(LENSES,8)},'disclosures':{'j':'△'},'excluded_judges':['other']}
+        evidence=[{'id':'e1','date':'2026-11-15','verification':'verified','verification_source':'https://example.com/a','verification_excerpt':'x','verification_reason':'reviewed'}]
+        judgments=[{'judge':'j','scores':dict(base['scores']['j']),'as_of':'2026-11-16','reason':'unchanged','lens_evidence':{k:[] for k in LENSES},'lens_reasons':dict.fromkeys(LENSES,'unchanged')}]
+        draft={'status':'draft','brand':'example','baseline':base,'judgments':judgments,'evidence_sha256':mod.evidence_hash(evidence)}
+        review={'evidence_review':'passed','judgments_sha256':mod.judgment_hash(judgments),'evidence_sha256':mod.evidence_hash(evidence),'reviews':[]}
+        result=mod.build_draft(draft,review,base,evidence)
+        self.assertIn('j: △',result)
+        self.assertIn('other',result)
