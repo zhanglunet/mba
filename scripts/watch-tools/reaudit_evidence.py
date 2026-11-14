@@ -179,6 +179,14 @@ def main():
             raise ValueError('invalid baseline event snapshot')
         ids = {e['id'] for e in baseline_events} if baseline_events is not None else None
         result = [event for event in result if date.fromisoformat(str(event['date'])) > cutoff or (ids is not None and date.fromisoformat(str(event['date'])) == cutoff and event['id'] not in ids)]
+    if args.auto_official and any(not allowed_source_url(event['url']) for event in result):
+        import reaudit_feed
+        entries = reaudit_feed.fetch_feeds()
+        for event in result:
+            if not allowed_source_url(event['url']):
+                matched = reaudit_feed.match_official(event, entries)
+                if matched:
+                    event.update(matched)
     candidates = [event for event in result if allowed_source_url(event['url'])]
     for event in candidates[:args.fetch_limit]:
         fetched = fetch_source(event)
@@ -189,7 +197,8 @@ def main():
             except ValueError:
                 pass
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2, default=str) + '\n', encoding='utf-8')
-    print(f'{len(result)} unverified leads written to {args.output}')
+    verified = sum(item.get('verification') == 'verified' for item in result)
+    print(f'{len(result)} leads ({verified} attributed official statements) written to {args.output}')
 
 if __name__ == '__main__':
     main()
