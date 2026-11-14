@@ -77,7 +77,7 @@ class TextParser(HTMLParser):
             self.jsonld_buffer += data
 
 
-OFFICIAL_HOSTS = {'nvidia': frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'}), 'apple': frozenset({'www.apple.com'}), 'amazon': frozenset({'www.aboutamazon.com'})}
+OFFICIAL_HOSTS = {'nvidia': frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'}), 'apple': frozenset({'www.apple.com'}), 'google': frozenset({'blog.google'}), 'amazon': frozenset({'www.aboutamazon.com'})}
 TRUSTED_SOURCE_HOSTS = frozenset().union(*OFFICIAL_HOSTS.values(), {'www.reuters.com', 'apnews.com'})
 
 

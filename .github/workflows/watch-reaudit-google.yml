@@ -1,0 +1,129 @@
+name: Google watch re-audit (review draft)
+
+# 实验性自动重审：仅在当前基线之后出现可归因的官方原文时生成待审 PR。
+# 不修改正式报告、分数或事件消费状态；来源匹配只是证明公告存在，事实判断仍须审阅。
+on:
+  schedule:
+    - cron: '37 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: watch-reaudit-google
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install --quiet pyyaml
+      - name: Check for an existing review
+        id: pending
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh pr list --state open --limit 1000 --json headRefName > /tmp/reaudit-prs.json
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          prs=json.load(open('/tmp/reaudit-prs.json', encoding='utf-8'))
+          print('exists=' + str(any(p['headRefName'].startswith('reaudit/google/') for p in prs)).lower())
+          PY
+      - name: Evaluate fresh watch triggers
+        id: trigger
+        if: steps.pending.outputs.exists == 'false'
+        run: |
+          set -euo pipefail
+          DATE=$(date -u +%F)
+          BASE_COMMIT=$(git log -1 --format=%H -- published/reports/google/panel.yaml)
+          test -n "$BASE_COMMIT"
+          git show "${BASE_COMMIT}:watch/google/events.yaml" > /tmp/reaudit-baseline-events.yaml
+          python3 scripts/watch-tools/reaudit_trigger.py \
+            --events watch/google/events.yaml --panel published/reports/google/panel.yaml \
+            --baseline-events /tmp/reaudit-baseline-events.yaml --as-of "$DATE" > /tmp/reaudit-trigger.json
+          HIT=$(python3 -c "import json; print(str(json.load(open('/tmp/reaudit-trigger.json'))['hit']).lower())")
+          echo "hit=$HIT" >> "$GITHUB_OUTPUT"
+          if [ "$HIT" != true ]; then
+            echo 'No fresh events meet the re-audit trigger.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Gather new official evidence
+        id: evidence
+        if: steps.pending.outputs.exists == 'false' && steps.trigger.outputs.hit == 'true'
+        run: |
+          set -euo pipefail
+          DATE=$(date -u +%F)
+          BASELINE=$(python3 -c "import yaml; print(yaml.safe_load(open('published/reports/google/panel.yaml'))['published_at'])")
+          mkdir -p /tmp/reaudit
+          python3 scripts/watch-tools/reaudit_evidence.py watch/google/events.yaml \
+            --after "$BASELINE" --baseline-events /tmp/reaudit-baseline-events.yaml --brand google --auto-official --fetch-limit 30 --output /tmp/reaudit/evidence.json
+          READY=$(python3 -c "import json; print(str(any(x.get('verification') == 'verified' for x in json.load(open('/tmp/reaudit/evidence.json')))).lower())")
+          echo "ready=$READY" >> "$GITHUB_OUTPUT"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          if [ "$READY" != true ]; then
+            echo 'No new date-matched official statements. No re-audit proposed.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Run five simulated judges
+        if: steps.evidence.outputs.ready == 'true'
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          python3 scripts/watch-tools/reaudit_judges.py \
+            --evidence /tmp/reaudit/evidence.json \
+            --report published/reports/google/report.md \
+            --panel published/reports/google/panel.yaml \
+            --panel-registry metric-brand-auditor/panels/vc-en.yaml --brand google \
+            --baseline-events /tmp/reaudit-baseline-events.yaml \
+            --as-of '${{ steps.evidence.outputs.date }}' \
+            --output /tmp/reaudit/judgments.json
+      - name: Critique proposed changes
+        if: steps.evidence.outputs.ready == 'true'
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          python3 scripts/watch-tools/reaudit_review.py \
+            --judgments /tmp/reaudit/judgments.json --evidence /tmp/reaudit/evidence.json \
+            --output /tmp/reaudit/review.json
+      - name: Generate draft and open PR
+        if: steps.evidence.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          DATE='${{ steps.evidence.outputs.date }}'
+          BRANCH="reaudit/google/$DATE"
+          DEST="drafts/auto-reaudit/google/$DATE"
+          mkdir -p "$DEST"
+          python3 scripts/watch-tools/reaudit_report.py \
+            --draft /tmp/reaudit/judgments.json --review /tmp/reaudit/review.json \
+            --evidence /tmp/reaudit/evidence.json --output "$DEST/report.md"
+          cp /tmp/reaudit/*.json "$DEST/"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -b "$BRANCH"
+          git add "$DEST"
+          git commit -m "draft(google): automated review $DATE"
+          git push origin "$BRANCH"
+          printf '%s\n' '自动生成的 Google 重审草稿。来源匹配只确认公司公告内容，五位评委和复核均为 AI 模拟；需人工检查证据、评分和时序。此 PR 不修改线上报告或消费事件。' > /tmp/reaudit-pr.md
+          gh pr create --draft --base main --head "$BRANCH" \
+            --title "draft(google): 自动重审 $DATE" --body-file /tmp/reaudit-pr.md
