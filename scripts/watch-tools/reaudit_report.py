@@ -2,10 +2,12 @@
 """Build a review-only report; never update published reports or event state."""
 import argparse
 import hashlib
+import html
 import json
 from pathlib import Path
 from reaudit_judges import JUDGES, LENSES, validate_judgment
 from reaudit_review import validate_reviews
+from reaudit_evidence import validate_score_evidence
 
 
 def judgment_hash(judgments):
@@ -52,12 +54,30 @@ def build_draft(draft, review, baseline, evidence):
     for lens in LENSES:
         vals = [by_judge[j]['scores'][lens] for j in roster]
         out.append('| '+lens+' | '+' | '.join(map(str, vals))+' | '+f'{sum(vals)/len(roster):.1f}'+' |')
+    out += ['', '## 本轮来源', '', '自动匹配仅确认官方陈述存在，不代表独立事实核验。', '']
+    referenced = {event_id for j in judgments for ids in j['lens_evidence'].values() for event_id in ids}
+    by_id = {item['id']: item for item in evidence}
+    eligible = {item['id'] for item in evidence if item.get('verification') == 'verified'}
+    for event_id in sorted(eligible):
+        validate_score_evidence([event_id], evidence)
+        item = by_id[event_id]
+        title = html.escape(str(item.get('title') or event_id)).replace('[', r'\[').replace(']', r'\]').replace('\n', ' ')
+        url = str(item['verification_source']).replace('>', '%3E').replace(' ', '%20')
+        out.append(f'- {event_id} · {item.get("date", "")} · {title} · <{url}>')
+    if not eligible:
+        out.append('- 无可归因来源；需人工检查输入。')
+    if not referenced:
+        out.append('- 评委未引用任何事件；需人工检查输入及理由。')
+    out += ['', '## 评委总体理由', '', '以下为 AI 模拟原文，可能包含未经核验的事实或关系判断，不能视为人物本人意见。', '']
+    for judge in roster:
+        reason = html.escape(by_judge[judge]['reason']).replace('\n', ' ').replace('[', r'\[').replace(']', r'\]')
+        out.append(f'- **{judge}**：{reason}')
     out += ['', '## 逐项变化与证据', '']
     for judge, lens in changed:
         item = by_judge[judge]
         out.append(f'- {judge} / {lens}: {scores[judge][lens]} → {item["scores"][lens]}；{item["lens_reasons"][lens]}；事件：{", ".join(item["lens_evidence"][lens])}')
     if not changed:
-        out.append('- 没有评分变化。')
+        out.append('- 没有评分变化；本次证据复核只检查改分项，未对维持不变的评分进行独立复核。')
     out += ['', '## 限制', '', '来源核验、评分理由和时序仍需人工检查；模型复核不保证事实或判断正确。', '']
     return '\n'.join(out)
 
