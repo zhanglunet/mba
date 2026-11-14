@@ -2175,3 +2175,109 @@
   source_type: media
   note: "LLM 预分类建议(med):卖家生态受损，涉平台政策舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-11-amazon-143
+  date: 2026-11-11
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How we built the agents that built AWS Emulator"
+  quote: "How we built the agents that built AWS Emulator"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQWjlFckw4Vk4yZDlaOU5oeE9hWmM5OU5wQk80SzBJQjhYZkRnY3hCU1hZSGhteUhFeFlBYk01S1BPM3FoXzZnLUExakFzRm1IRU5JTHphSEJOTUxuVDZZTE9LTnJFR3hienJ2ZzR4T0w0ZFZaaGVPeDFwMklGVVNfMUw2cG9qUUE?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方技术博客，AI代理构建工具，中等价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-amazon-144
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "An update on labor proceedings in Delta, British Columbia, and Amazon’s work to ensure our employees"
+  quote: "An update on labor proceedings in Delta, British Columbia, and Amazon’s work to ensure our employees"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxOUVhVSmwyS0p5a3NWMUp1SW9ab3RRT2hIem9NcG5yQm1nTEM2M0NTZjVMSm9iTGl5ZGlXMFpIRDdSTWRfMk1lQUhmbVN1TkRCYWxYSVd4aGxIN3V0Y2hlbFU3OTFfUGVnaGYtTWRMVTh0TE92OE1lT0hVRldmbllJTGtkeE8tdw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方回应劳工诉讼，劳动争议事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-amazon-145
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "亞馬遜擬建世界商品圖譜 未售商品的資料也收錄"
+  quote: "亞馬遜擬建世界商品圖譜 未售商品的資料也收錄"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfQldlN2xzVGNiREEySF9uSnZvUHNmU0dfdDdVdmIyRks3OFlWZ2FjTTJ3cFBZVnVDT0xQUXRTb0RxQXhQX2ZmTnI5bmRROWxmSlBzc3JrcnBxT3NQeThsVDVoSTE3UWPSAWdBVV95cUxQX0JXZTdsc1RjYkRBMkhfbkp2b1BzZlNHX3Q3VXZiMkZLNzhZVmdhY00yd3BQWVZ1Q09MUFF0U29EcUF4UF9mZk5yOW5kUTlsZkpQc3Nya3JwcU9zUHk4bFQ1aEkxN1Fj?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):商品图谱数据战略，业务布局事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-amazon-146
+  date: 2026-11-13
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊和拼多多干起来了"
+  quote: "亚马逊和拼多多干起来了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WN2txdFdzT1ltMUxVX3IyZ2RwVF9MOVdwTU56cUc1UmxuUTRNUllJNzVOR0E1YkVVdlpkaGRET3J6YWdHRWV4Uy1pZUlYTUlYUWQ0eUIxQ3N0M3RhWWJtaA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):与拼多多正面竞争，标题党但涉竞争冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-amazon-147
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊、微软与Alphabet云业务业绩对比：Google Cloud营收增长103%领跑，AWS规模居首"
+  quote: "亚马逊、微软与Alphabet云业务业绩对比：Google Cloud营收增长103%领跑，AWS规模居首"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaUp5cFhiTEVIUGhhVVdDZndGZ3BzOUpaS2xuekJ2X3B4dmJNalJBd01rclBJZnZxbHozejA4ZkNySXF3bEt6bzBKdnN3OGlERW5vd3FfTnV1R1BlZUUyOTZfZUkwRUpRdXhEbGFFc0hJRmRmUjZLZnFleWNQcDdZMmlKOXVrMkh5YjVUaEFpaTlGUkFhUnBRYU56NXdBUFp5OVZ1Q2FZZlhjdWpCalBMYTl4T2trQm43U2ZMSDNUMWR4bHkyQWs2cE9yTHZ1WFVLRk9VWmxRYXJ6RllpWHIxdGkzRk5HQjlfRlFBQ3NR?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):云业务业绩对比，财报关键数字类。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-amazon-148
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊更新前台隐藏界面CLP页面"
+  quote: "亚马逊更新前台隐藏界面CLP页面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kajM5THJEUEVIRXpaMnF2OVhoS1FUS0xwWWRsV0pPbHJ5Y1g4b0VnUmsxcGRMLTFYY0pYZHE5UEY5ekdjb1hxcU5SU0I?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(med):前台页面更新，产品运营变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-amazon-149
+  date: 2026-11-11
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊回报近14倍，谷歌也赚翻了！Anthropic上市将造就史上罕见投资暴利"
+  quote: "亚马逊回报近14倍，谷歌也赚翻了！Anthropic上市将造就史上罕见投资暴利"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxQZV81MHk4QS1rSGFNWE84c2t2MFpIMTZFSnBaRk4zX2hYcHZoeW5EU2pucnlTeDR4cS11YWRxcWpBYnJaZV9vMTdhaFJheUl3TS0wejBaeVVJUTRoWnVkWXBacjQ5cndnbjAxQXAyT0dWeURLSkUyY0QtOTYwVW9DNzcxY3dYM0Q5OUVhUUhmd25GN1p6RkpUWDdR?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):投资Anthropic巨额回报，重大投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

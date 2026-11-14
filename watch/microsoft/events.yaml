@@ -2251,3 +2251,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Outlook大规模故障，波及全球用户。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-12-microsoft-148
+  date: 2026-11-12
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How a new AI model could help crushed rock fight climate change"
+  quote: "How a new AI model could help crushed rock fight climate change"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxOdWFZcGp2ejhwSk82VDlCUkFYemJQbW1Vc0tRcEtnZjlPVUk0SjdtdWozZzNYUm44VFdhTGJ0VFA0RlBrRlpPWXM1YW80XzljOWNmMWpyRFhOZUhGMElBZFQxZzc1ZEdVODl6NjFLNXUzX0JZUG02ajJVS3lRbFVhbnllQkxCbjhldXA1VXdRaVFSZlNJVjJfekRMUEVILWRFRUl4M2sybzJuOEtaUDRB?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):AI应用研究案例，正面技术叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-microsoft-149
+  date: 2026-11-11
+  dim: W3
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "KT ‘Meisters’ and Microsoft engineers build AI agents to spot network issues before customers do"
+  quote: "KT ‘Meisters’ and Microsoft engineers build AI agents to spot network issues before customers do"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRmlHa010N1huTWRDb2xmYS1JcDVPMFBDdS1lV0pQSG5RNUxKOVdwNEUxbjV5NkxRaklPU1J0MTRMT3BWcGFUMURoRERaellDblY0M2tQM2x1OVBDSEFrdlFYaVcwWW90dm5RalFmbk4ya3NJbE1NdE1Za21qdi00T09veHRyNTdPUGMtM3JEQlRaY1lPQ0RWZy1hbG9aLXJHM3VnV3JvYWFEWHdTaVhHaXNPUy02R2FUMm0xS3hJck9ZSDl0U2dNbzVEUnhjNkRBdkhkejczd2lJdmx1R0JyMmVPV2wwVXdGdFotb3BvaGJQNUE?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):合作案例展示，轻度正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-microsoft-150
+  date: 2026-11-12
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Context on our country-by-country tax footprint"
+  quote: "Context on our country-by-country tax footprint"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE5XX1ZuMFgyLU5KYWUyWGh3blBqaWJsclh1RDlLSnFyM3BnbWUzZld3VXN5N2pyR2hlT1lVSGU1U3NhZzVEN056VUVZM293WFp2NzhERDdvWHoxT1pGd3FEQ3JKWUx1WE9aNjR3Yg?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity]
+  source_type: official
+  note: "LLM 预分类建议(med):税务议题官方声明，涉公共关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-microsoft-151
+  date: 2026-11-13
+  dim: W2
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软宕机近10小时，Microsoft 365、Outlook、Teams等应用持续中断"
+  quote: "微软宕机近10小时，Microsoft 365、Outlook、Teams等应用持续中断"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE8tNk5wM1R5Mjg3NnZDSEFycjFkQW56R014Qjg2NGREOE1tS3lwbDBqeUlKQkJNNGk4dEVmYVhTY2FWY0lYQ1dvNTl1eUNVQlRvOHJyc0JlUW1xdW1h?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):大规模服务中断近10小时。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-microsoft-152
+  date: 2026-11-13
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "如何看待微软Outlook等多项服务全球大规模宕机、报障超13万起？问题最可能出在哪？"
+  quote: "如何看待微软Outlook等多项服务全球大规模宕机、报障超13万起？问题最可能出在哪？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBhUldfR0J5Uk5YaWdnSkN5bmxNUG4yMHlpdlRGNEd3a2dpSktDQktfWHBEdjM0YjJiUnpRYkVJN01nU2lzU2tkclhCUHRSamZsMmVWZ2lEdnZKanBu?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):宕机讨论，评论性但信息量足。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-microsoft-153
+  date: 2026-11-13
+  dim: W2
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软服务出现全球大规模宕机"
+  quote: "微软服务出现全球大规模宕机"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxNSmRIOUdJaEo5ZXdfLWkzVDl5eW0xOC03dU5JVDZER2lRbW1pMktDQVBQT2xSTHRLcWh3TnhpZ3BYbjlxTEFiQzhkQTUyZF83OVB0NXZHV29sTmRoUWVPcDVQdnktZHYza1RtazVDdkoyd29KX0l3Tkg2MlhYSW9IYy1QeXJoUFlJT2pRU09PVTHSAZMBQVVfeXFMTVppX0dsSlNUdTNnVk80QUFTQWtUNy1RZlhDanB4VjNPZS1yQXVSeWFEMkpZSzEtOHh5MDUwUUtaNDRxVmJsMTFaNEMxTVBnY0lnT1hLcktkUUpkb3pqV1p5VUhLbmtvQkZtQXpqaHk3b0dyVUQySk9rWXl2OXlGMVM5WUcwM3Q0M1BIVGpqTjBOczFV?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):全球大规模宕机重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-microsoft-154
+  date: 2026-11-13
+  dim: W2
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软大规模宕机持续数小时，波及OpenAI和Anthropic"
+  quote: "微软大规模宕机持续数小时，波及OpenAI和Anthropic"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE9RR3dmXzl0UEJxdlRKb3NKQm9oUDRNa281N2M3UnZzRDFHZWJudXVKb01iVlF2RHprdXZLWlFnMEFYOTY2a214ODROeGRZLWFndkd6NklKZkJlSTZPYnF6VFhING9FS3RreXRhM2hOUDA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [origin, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):宕机波及AI厂商，影响扩大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

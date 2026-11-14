@@ -1123,3 +1123,124 @@
   source_type: social
   note: "LLM 预分类建议(high):开源1.6T大模型重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-10-22-meituan-073
+  date: 2026-10-22
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团举办骑手好人好事表彰大会，荣誉体系激励骑手善举同比增146.7%"
+  quote: "美团举办骑手好人好事表彰大会，荣誉体系激励骑手善举同比增146.7%"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261023272002669
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):骑手荣誉体系数据，正面品牌建设事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-10-16-meituan-074
+  date: 2026-10-16
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团携手联合国世界粮食计划署发布“健康生活倡议行动网络”，60家品牌共促健康生活"
+  quote: "美团携手联合国世界粮食计划署发布“健康生活倡议行动网络”，60家品牌共促健康生活"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261016167012293
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):联合国合作倡议，品牌ESG事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-10-15-meituan-075
+  date: 2026-10-15
+  dim: W7
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "医美消费走向专业化、个性化，美团发布2026北极星医美榜"
+  quote: "医美消费走向专业化、个性化，美团发布2026北极星医美榜"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261016276001063
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):医美榜单发布，轻量产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-10-09-meituan-076
+  date: 2026-10-09
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "3名美团骑手荣登全国见义勇为榜，美团回应：将加大奖励骑手好人好事"
+  quote: "3名美团骑手荣登全国见义勇为榜，美团回应：将加大奖励骑手好人好事"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261010199009934
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):见义勇为上榜与官方回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-meituan-077
+  date: 2026-11-11
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "美团 LongCat-2.5 权重已开源：现在该不该自己部署？三关核对"
+  quote: "美团 LongCat-2.5 权重已开源：现在该不该自己部署？三关核对"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE10bFpRY0M3TzdWQ2FJOUs1UThhdHVodGg4RGlqeXU1NU42dUZ6Nngxcm9CeFc4NFk3ZDdhYW5jaTF3T052MkxhVkZqa0YxSXY0TDk3VWlWVEJJRWlK?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):模型开源讨论，技术口碑观察。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-meituan-078
+  date: 2026-11-11
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "美团1.6万亿参数大模型开源！累计Token用量破千亿，四项测试位列第一"
+  quote: "美团1.6万亿参数大模型开源！累计Token用量破千亿，四项测试位列第一"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jdVFjQUlkNFZwbHU3X1JqelhTMURaY2dyNjllYzJ3R0JJOUtHR0MtVmVPZ0c5emNJSHdmNW5Da1dRODRHLUhrYUdiWEtCSXBSb1hUSzRlYlRSWWJI?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰大模型正式开源发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-meituan-079
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "从美团 LongCat-2.0 看国产芯片算力集群的训练效率"
+  quote: "从美团 LongCat-2.0 看国产芯片算力集群的训练效率"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9yR3pQZ2lvYlhDUjZsY0tJSFpONlphNzZVem5kaEJnakJqSkQzYnliYmM2QUE0b19IdTZ2eW9VQVFlbG0tQnhMNUhPY1lyNmhMQjZ6REVHb1Y1SzNm?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):LongCat-2.0 训练效率讨论，但非正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-meituan-080
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团再投算力芯片，领投灵睿智芯Pre-A+轮数亿元融资"
+  quote: "美团再投算力芯片，领投灵睿智芯Pre-A+轮数亿元融资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNa1RjTXRoa0J3Ykl4Nm5KTWxqTWZHbnp1QmxybmFLLXFTZDByRnVDazZ3R2FONVU0SHZsTV9kZkVObUtwSkRyZmEyenRwOEZxQVMyZnB5bTh1bXVjcXVVVkxkdG5TTmxYS1VBd1NnZ2lCUWd2SHBPWXdCd2hrYkxrNDAtTUd5Y3dTeGpUZTg4NUQ3NzNtZkpOUlE2a21DOHlVZXdkSnRiaEtCTmVGbW9McWR3?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):领投芯片融资数亿元，战略动作显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

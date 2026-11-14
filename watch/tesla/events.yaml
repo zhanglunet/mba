@@ -2188,3 +2188,79 @@
   source_type: media
   note: "LLM 预分类建议(med):监管获批，FSD落地利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-13-tesla-144
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉确认在芝加哥罕见交付首批50辆Semi电动卡车"
+  quote: "特斯拉确认在芝加哥罕见交付首批50辆Semi电动卡车"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kWXl0Q01lMWc4eUdhUjZ1c0ctMFQ3ZGZ2TlNjOTUxOGtjN2MxY3RyaDJfc3R1T0tIc2tmWnQ5bkVjRTM1c1FvaUM0Y0Fjb1hjZ2c?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Semi首批交付，产品里程碑事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-tesla-145
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "把未来机器人摆上桌面，这份赛博工业浪漫有点酷|特斯拉|Tesla Bot|人形机器人_新浪新闻"
+  quote: "把未来机器人摆上桌面，这份赛博工业浪漫有点酷|特斯拉|Tesla Bot|人形机器人_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE5xTlNMMUlvUDFxRmpOS01BOURGVnI3cGtrOWNfY2ozbWc0N09YeXNJRk92N1VJWWw3akw4MlRwbTB6ZTVjcWxUVE1YaUh3bzZKUTBRbk1QQWpLa1NZdlp5akltOA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Tesla Bot桌面模型，周边软文但有信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-146
+  date: 2026-11-11
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克又来收割钱包！特斯拉Cybertruck遥控模型车上线：1:10还原不锈钢棱角"
+  quote: "马斯克又来收割钱包！特斯拉Cybertruck遥控模型车上线：1:10还原不锈钢棱角"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9adFVkQ1pDVFREemN3Q0thR1BJcGV6MHBTd041djA1ZWx4MUlIbnBDQXZXcUI0T3RScUx5aUpIQ2VINk5hbkVXOXVadmY1VENHRWtpR29sQzU?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Cybertruck周边商品上架，轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-tesla-147
+  date: 2026-11-12
+  dim: W2
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "Tesla Cybertruck遥控模型车开卖"
+  quote: "Tesla Cybertruck遥控模型车开卖"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE5YZlc0RXVrVzdJOGxqRmVFQW9NUVUtcjBydUtPSzg5UExETHRPc0xkT2Q0OWtxYUNJOGlrTlpMVG4yZVl3d1BnN3FIaHN2bXY5bm5wcUs2UkVwcVpGTFczbVVnMTF5OHNDQVdN?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):周边商品上架，轻微营销事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-tesla-148
+  date: 2026-11-11
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉TAD获批芬兰上路，速度偏移限10%"
+  quote: "特斯拉TAD获批芬兰上路，速度偏移限10%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxaF9mNFJnaWlGVTRTU2dHTDNZOXhoMzFuX2o0dUhYWGNtYUsxdmdtdTBJajZSZ09lWXo3ajl6QURLYjRvWWdHczRvWUE1aGF4azNlYlJuQXN2akk?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD系获欧洲监管放行，进展显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
