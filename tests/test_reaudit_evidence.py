@@ -124,3 +124,16 @@ class OfficialPipelineTest(unittest.TestCase):
             factory.return_value.open.return_value=Response()
             source=module.fetch_source(event)
         self.assertEqual(module.official_statement_evidence(event,source)['verification_scope'],'official_statement')
+    def test_apple_jsonld_date_and_og_title_are_recognized(self):
+        from unittest.mock import patch
+        class Response:
+            headers={'Content-Type':'text/html; charset=utf-8'}
+            def __enter__(self):return self
+            def __exit__(self,*args):pass
+            def read(self,n):return b'<html><head><title>Apple Launch - Apple</title><meta property="og:title" content="Apple Launch"><script type="application/ld+json">{"@type":"NewsArticle","datePublished":"2026-11-13Z"}</script></head><body>Apple Launch</body></html>'
+            def geturl(self):return 'https://www.apple.com/newsroom/2026/11/launch/'
+        event={'id':'a','title':'Apple Launch','quote':'Apple Launch','date':'2026-11-13','url':'https://www.apple.com/newsroom/2026/11/launch/','source_type':'official'}
+        with patch.object(module.urllib.request,'build_opener') as factory:
+            factory.return_value.open.return_value=Response()
+            source=module.fetch_source(event)
+        self.assertEqual(module.official_statement_evidence(event,source,brand='apple')['verification_scope'],'official_statement')

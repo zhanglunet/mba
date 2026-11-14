@@ -37,3 +37,19 @@ class PipelineTest(unittest.TestCase):
         self.assertIn('195/250',result)
         evidence[0]['verification_excerpt']='different'
         with self.assertRaisesRegex(ValueError,'evidence differs'):mod.build_draft(draft,review,baseline,evidence)
+
+class DynamicDraftTest(unittest.TestCase):
+    def test_draft_uses_actual_panel_size_and_brand(self):
+        from reaudit_judges import LENSES
+        roster=['zhuxiaohu','zhanglei']
+        baseline={'version':'v1','panel':'vc-cn','scores':{j:dict.fromkeys(LENSES,8) for j in roster}}
+        evidence=[{'id':'e1','date':'2026-11-15','verification':'verified','verification_source':'https://example.com/a','verification_excerpt':'x','verification_reason':'reviewed'}]
+        js=[]
+        for j in roster:
+            scores=dict(baseline['scores'][j]);scores['signal']=7
+            js.append({'judge':j,'scores':scores,'as_of':'2026-11-16','reason':'review','lens_evidence':{k:(['e1'] if k=='signal' else []) for k in LENSES},'lens_reasons':dict.fromkeys(LENSES,'reason')})
+        draft={'status':'draft','brand':'anthropic','baseline':baseline,'judgments':js,'evidence_sha256':mod.evidence_hash(evidence)}
+        review={'evidence_review':'passed','judgments_sha256':mod.judgment_hash(js),'evidence_sha256':mod.evidence_hash(evidence),'reviews':[{'judge':j,'lens':'signal','verdict':'supported','reason':'ok'} for j in roster]}
+        result=mod.build_draft(draft,review,baseline,evidence)
+        self.assertIn('anthropic',result)
+        self.assertIn('78/100',result)

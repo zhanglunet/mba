@@ -80,3 +80,40 @@ class FreshEvidenceTest(unittest.TestCase):
         evidence=[{'id':'old','date':'2026-11-14','verification':'verified'}, {'id':'new','date':'2026-11-14','verification':'verified'}]
         selected=mod.fresh_evidence(evidence,'2026-11-14','2026-11-14',baseline_ids={'old'})
         self.assertEqual([e['id'] for e in selected],['new'])
+
+class HistoricalMatrixTest(unittest.TestCase):
+    def test_extracts_real_apple_evolution_matrix(self):
+        import yaml
+        root=pathlib.Path(__file__).resolve().parents[1]
+        text=(root/'published/reports/apple/report.md').read_text(encoding='utf-8')
+        panel=yaml.safe_load((root/'published/reports/apple/panel.yaml').read_text(encoding='utf-8'))
+        baseline=mod.baseline_from_report(text,panel)
+        self.assertEqual(baseline['scores']['pthiel']['signal'],8)
+        self.assertEqual(sum(sum(x.values()) for x in baseline['scores'].values()),222)
+
+class MultiPanelBaselineTest(unittest.TestCase):
+    def test_anthropic_uses_active_vc_cn_matrix(self):
+        import yaml
+        root=pathlib.Path(__file__).resolve().parents[1]
+        panel=yaml.safe_load((root/'published/reports/anthropic/panel.yaml').read_text(encoding='utf-8'))
+        registry=yaml.safe_load((root/'metric-brand-auditor/panels/vc-cn.yaml').read_text(encoding='utf-8'))
+        report=(root/'published/reports/anthropic/report.md').read_text(encoding='utf-8')
+        result=mod.derive_panel_baseline(report,panel,registry)
+        self.assertEqual(result['panel'],'vc-cn')
+        self.assertEqual(result['scores']['zhuxiaohu']['signal'],8)
+        self.assertEqual(sum(sum(x.values()) for x in result['scores'].values()),181)
+
+    def test_nonempty_overrides_are_rejected(self):
+        with self.assertRaises(ValueError):
+            mod.derive_panel_baseline('', {'panel':'vc-cn','overrides':{'add':['someone']}}, {'name':'vc-cn','judges':[]})
+    def test_flexible_judges_generate_independently(self):
+        from unittest.mock import patch
+        roster=('zhuxiaohu','zhanglei')
+        baseline={j:dict.fromkeys(mod.LENSES,8) for j in roster}
+        evidence=[{'id':'e1','date':'2026-11-15','verification':'verified','verification_source':'https://example.com/a','verification_excerpt':'x','verification_reason':'reviewed'}]
+        def model(items, provider, system):
+            j=items[0]['judge']
+            return [{'judge':j,'scores':dict(baseline[j]),'as_of':'2026-11-16','reason':'unchanged','lens_evidence':dict.fromkeys(mod.LENSES,[]),'lens_reasons':dict.fromkeys(mod.LENSES,'unchanged')}]
+        with patch.object(mod,'call_with_retry',side_effect=model):
+            result=mod.generate_judgments('report',evidence,('x','key','url','model'),baseline,'2026-11-16',judges=roster)
+        self.assertEqual([x['judge'] for x in result],list(roster))
