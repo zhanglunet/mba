@@ -127,3 +127,11 @@ jobs:
           printf '%s\n' '自动生成的 Amazon 重审草稿。来源匹配只确认公司公告内容，五位评委和复核均为 AI 模拟；需人工检查证据、评分和时序。此 PR 不修改线上报告或消费事件。' > /tmp/reaudit-pr.md
           gh pr create --draft --base main --head "$BRANCH" \
             --title "draft(amazon): 自动重审 $DATE" --body-file /tmp/reaudit-pr.md
+
+      - name: Preserve re-audit diagnostics
+        if: always() && steps.evidence.outputs.ready == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: re-audit-diagnostics-amazon
+          path: /tmp/reaudit/
+          if-no-files-found: warn
