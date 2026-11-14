@@ -137,3 +137,16 @@ class OfficialPipelineTest(unittest.TestCase):
             factory.return_value.open.return_value=Response()
             source=module.fetch_source(event)
         self.assertEqual(module.official_statement_evidence(event,source,brand='apple')['verification_scope'],'official_statement')
+    def test_microsoft_jsonld_headline_overrides_site_suffix(self):
+        from unittest.mock import patch
+        class Response:
+            headers={'Content-Type':'text/html; charset=utf-8'}
+            def __enter__(self):return self
+            def __exit__(self,*args):pass
+            def read(self,n):return b'<html><head><meta property="og:title" content="Launch - The Official Microsoft Blog"><meta property="article:published_time" content="2026-11-12T17:00:00Z"><script type="application/ld+json">{"@type":"NewsArticle","headline":"Launch","datePublished":"2026-11-12T17:00:00Z"}</script></head><body>Launch</body></html>'
+            def geturl(self):return 'https://blogs.microsoft.com/blog/launch/'
+        event={'id':'m','title':'Launch','quote':'Launch','date':'2026-11-12','url':'https://blogs.microsoft.com/blog/launch/','source_type':'official'}
+        with patch.object(module.urllib.request,'build_opener') as factory:
+            factory.return_value.open.return_value=Response()
+            source=module.fetch_source(event)
+        self.assertEqual(module.official_statement_evidence(event,source,brand='microsoft')['verification_scope'],'official_statement')

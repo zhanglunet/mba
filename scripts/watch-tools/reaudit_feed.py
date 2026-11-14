@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 from reaudit_evidence import NoRedirect, allowed_source_url, OFFICIAL_HOSTS
 from urllib.parse import urlparse
 
-FEEDS = {'nvidia': ('https://nvidianews.nvidia.com/rss.xml', 'https://blogs.nvidia.com/feed/'), 'apple': ('https://www.apple.com/newsroom/rss-feed.rss',), 'google': ('https://blog.google/rss/',), 'amazon': ('https://www.aboutamazon.com/rss/feed.rss',)}
+FEEDS = {'nvidia': ('https://nvidianews.nvidia.com/rss.xml', 'https://blogs.nvidia.com/feed/'), 'apple': ('https://www.apple.com/newsroom/rss-feed.rss',), 'google': ('https://blog.google/rss/',), 'amazon': ('https://www.aboutamazon.com/rss/feed.rss',), 'microsoft': ('https://blogs.microsoft.com/feed/',)}
 MAX_FEED_BYTES = 1000000
 
 
