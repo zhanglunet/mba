@@ -1,0 +1,86 @@
+{
+  "status": "draft",
+  "brand": "nvidia",
+  "judgments": [
+    {
+      "judge": "pmarca",
+      "scores": {
+        "origin": 7,
+        "category": 10,
+        "leverage": 10,
+        "identity": 6,
+        "signal": 7
+      },
+      "evidence_ids": [
+        "2026-11-12-nvidia-152",
+        "2026-08-04-nvidia-078",
+        "2026-08-11-nvidia-113"
+      ],
+      "reason": "The market is the only thing that matters — and the market here (Category 10, Leverage 10) is untouched: full-stack CUDA/systems lock plus expansion into physical AI (Alpamayo 2 Super robotaxi open model, 2026-08-04) and agentic AI (Nemotron 3.5 Lightning, 2026-08-11) confirms the software-eats-the-world thesis in a vertical NVIDIA already leads; these are builders building, felt product pull, so Category/Leverage hold at near-max. But the verified CEO transition (2026-11-12-152, NVIDIA board press release) hits where my corpus says it hurts most: the strong-founder thesis and Startups Part 9 — if the founder isn't running it, that's a real risk layer. Identity drops 9→6 (Jensen's 30-year founder narrative was the identity system; an interim CFO-CEO is an unproven replacement), Origin 9→7 (the Denny's two-near-death founder story now has a discontinuity), Signal 8→7 (strong product output is real money talking, but leadership transition injects execution uncertainty that hasn't resolved). Uncertainty: the resignation's cause and whether Kress becomes permanent are unknown — post-cutoff developments may move Identity either way; I only score the verified personnel fact, not rumors of why."
+    },
+    {
+      "judge": "paulg",
+      "scores": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 8
+      },
+      "evidence_ids": [
+        "2026-11-12-nvidia-152",
+        "2026-08-04-nvidia-078",
+        "2026-08-11-nvidia-113"
+      ],
+      "reason": "The founder story was a big part of this brand's identity — 30 years, Denny's, two near-death rescues. A resignation confirmed by the board (2026-11-12-nvidia-152) removes the person who *was* the narrative, so Origin drops 9→8 and Identity 8→7: an interim-CEO transition is exactly the moment a founder-driven identity gets tested, and I can't verify what remains once he's gone. Against that, the product evidence is the kind I trust most — things shipped and available, not announcements: Alpamayo 2 Super for robotaxis (078) and Nemotron 3.5 Lightning for agentic AI (113), both verified against NVIDIA's own blogs. Users of these tools are not 'liking' them; autonomous-driving and agent developers have urgent needs, so Signal holds at 8 (performance claims are self-reported, which caps it). Leverage and Category stay 9: CUDA plus full-stack expansion into robotics and sovereign-scale AI keeps the moat's area intact. Uncertainty: my lenses are early-stage tools applied to a mega-cap, so the identity penalty may be over- or under-weighted — a giant company can survive a founder exit better than a startup, and I have no first-hand knowledge of internal succession quality or of the reasons behind the resignation, which the evidence deliberately does not address."
+    },
+    {
+      "judge": "pthiel",
+      "scores": {
+        "origin": 7,
+        "category": 10,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 6
+      },
+      "evidence_ids": [
+        "2026-11-12-nvidia-152",
+        "2026-08-04-nvidia-078",
+        "2026-08-11-nvidia-113"
+      ],
+      "reason": "以蒂尔视角（基于 2012 CS183 讲课记录推断，非本人）：本轮最大的事件是黄仁勋辞职（`152`，官方公告已核实）。蒂尔反复强调'foundings'——'A startup messed up at its foundation cannot be fixed'——创始人是叙事与身份的核心载体；30 年创始人离任，即便品类与护城河仍在，Origin 与 Identity 各 −1（8→7）：确定性愿景（definite vision）的主体换了，'为特定未来制定的秘密计划'是否延续存疑。Signal 7→6：v1 我已独给 7、点名对华管制，v2/v3 被现实追认；现在叠加 CEO 过渡期的执行不确定性，但只给方向的价——护城河（CUDA 生态锁定、全栈）不由单一人事决定。Category 与 Leverage 守 10：Alpamayo 2 Super（robotaxi 开放模型）与 Nemotron 3.5（`078`/`113`，官方已核实）确认 NVIDIA 持续 0→1 地定义新品类并扩张护城河版图——'last mover' 的耐久性证据反而在增强。不确定性：CEO 辞职原因未核实，继任者的 definite plan 能力未知；两个产品事件的性能主张为公司自述；若新任 CEO 展现同等确定性愿景，Origin/Identity 可回升。"
+    },
+    {
+      "judge": "naval",
+      "scores": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 10,
+        "identity": 6,
+        "signal": 6
+      },
+      "evidence_ids": [
+        "2026-11-12-nvidia-152",
+        "2026-08-04-nvidia-078",
+        "2026-08-11-nvidia-113"
+      ],
+      "reason": "Leverage holds at 10: CUDA full-stack plus new permissionless, zero-marginal-cost assets (open models — 078 Alpamayo 2 Super, 113 Nemotron 3.5) are exactly code-and-media leverage that compounds while you sleep; nothing here erodes that. Category 9: shipping frontier open models for robotaxis and agentic AI extends category leadership, though near ceiling. The decisive negative is 152: Jensen Huang has resigned, with an interim CFO CEO — the founder whose 30-year specific knowledge and accountable name WAS the brand. That is an identity rupture, not a rotation: Identity drops to 6 because the long-term-game accountability now transfers to an unproven caretaker, and Signal drops to 6 because the deepest compounding asset of the company was founder judgment itself; in an age of infinite leverage, judgment is the multiplier, and it just walked out the door. Origin eases 9→8: the narrative survives but its living proof is gone. Uncertainty: we do not know the reason for resignation or successor permanence; if a strong accountable leader is named, Identity/Signal recover. Scoring is a directional repricing, not a structural collapse — the code-and-ecosystem moat remains."
+    },
+    {
+      "judge": "rhoffman",
+      "scores": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 8
+      },
+      "evidence_ids": [
+        "2026-11-12-nvidia-152",
+        "2026-08-04-nvidia-078",
+        "2026-08-11-nvidia-113"
+      ],
+      "reason": "The founder-CEO is the story here. Jensen Huang's resignation (verified via NVIDIA's own board announcement, 152) hits the two lenses I weight most for brand: a 30-year founder narrative is nearly impossible to replicate, and the brand identity was unusually founder-coupled — 'Denny's founder builds the AI factory' was the origin myth itself. I drop Identity hardest (9→7) because the face of the company is gone and an interim CFO-CEO is a caretaker signal, not a network-builder; Origin 9→8 because the founding story is durable but its living proof just exited stage. Against that, Alpamayo 2 Super (078) and Nemotron 3.5 / Switchyard (113) — both verified on NVIDIA's own blogs — confirm the CUDA-plus-full-stack leverage and category-defining rhythm continue without missing a release beat; Leverage and Category stay essentially intact (I hold my prior 9s). Signal stays 8: product cadence is real demand evidence, but an unexplained CEO exit is a genuine uncertainty I won't paper over — 'small risks fast' doesn't cover a founder-shaped one-way door. Uncertainty: we have no verified reason for the resignation; if it signals internal trouble rather than orderly succession, Identity and Signal deserve a further cut next cycle. Timing lens: the wave is still cresting and they're still surfing it — the question is now who's on the board."
+    }
+  ]
+}

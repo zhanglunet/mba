@@ -1,0 +1,40 @@
+{
+  "version": "v3",
+  "scores": {
+    "pmarca": {
+      "origin": 9,
+      "category": 10,
+      "leverage": 10,
+      "identity": 9,
+      "signal": 8
+    },
+    "paulg": {
+      "origin": 9,
+      "category": 9,
+      "leverage": 9,
+      "identity": 8,
+      "signal": 8
+    },
+    "pthiel": {
+      "origin": 8,
+      "category": 10,
+      "leverage": 10,
+      "identity": 8,
+      "signal": 7
+    },
+    "naval": {
+      "origin": 9,
+      "category": 9,
+      "leverage": 10,
+      "identity": 8,
+      "signal": 8
+    },
+    "rhoffman": {
+      "origin": 9,
+      "category": 9,
+      "leverage": 9,
+      "identity": 9,
+      "signal": 8
+    }
+  }
+}

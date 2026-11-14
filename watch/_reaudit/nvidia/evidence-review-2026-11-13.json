@@ -1,0 +1,84 @@
+{
+  "status": "draft",
+  "evidence_review": "failed",
+  "reviews": [
+    {
+      "judge": "pmarca",
+      "lens": "origin",
+      "verdict": "supported",
+      "reason": "Verified NVIDIA board announcement (2026-11-12) confirms Jensen Huang resigned as President/CEO, supporting the factual basis. The −1 scoring for losing the living founder-protagonist is a judgment call grounded in the verified event; founding history itself unchanged, so mild deduction is consistent."
+    },
+    {
+      "judge": "pmarca",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "Same verified board announcement supports the factual claim that the founder-CEO exited and CFO Colette Kress was named interim CEO. The stronger 9→7 deduction reflects the judge's own founder-CEO thesis applied to a verified fact; no unsupported causal or outcome claims asserted as source-proven."
+    },
+    {
+      "judge": "paulg",
+      "lens": "origin",
+      "verdict": "supported",
+      "reason": "The NVIDIA board press release (2026-11-12) explicitly confirms Jensen Huang resigned as President and CEO with CFO Colette Kress as interim CEO. The factual assertions — resignation, interim CFO, end of the 30-year living founder narrative — are directly supported. The modest 9→8 adjustment correctly avoids claiming any post-event outcome; it only reclassifies the origin story from current to historical, which the source supports."
+    },
+    {
+      "judge": "paulg",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "The core factual claims (founder-CEO removed, interim CFO successor, no permanent successor with product taste named) are directly confirmed by the board press release. The prediction of 'manager-mode drift' is the judge's own opinion, but it is framed as an expectation rather than a source-proven effect, and no post-event outcome is asserted as fact. The evidentiary basis for the 8→6 change holds."
+    },
+    {
+      "judge": "pthiel",
+      "lens": "origin",
+      "verdict": "supported",
+      "reason": "Verified NVIDIA announcement confirms founder-CEO Jensen Huang resigned with CFO Kress as interim CEO, supporting the claim that the founder-centered origin narrative loses its protagonist; the interpretive scoring judgment is consistent with the verified facts."
+    },
+    {
+      "judge": "pthiel",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "The verified board announcement confirms the resignation and interim CFO succession with no permanent successor named, which supports the factual basis for the identity score reduction; the definite-to-indefinite framing is interpretation but grounded in the confirmed facts."
+    },
+    {
+      "judge": "pthiel",
+      "lens": "signal",
+      "verdict": "unsupported",
+      "reason": "The source verifies only the personnel change; it does not support the claims that the resignation occurred at a demand-cycle peak, that it was sudden/unexplained, or the Alpamayo/Nemotron positive product signals cited as offsetting (no evidence for those is provided). The reasoning relies on unverified assertions."
+    },
+    {
+      "judge": "naval",
+      "lens": "origin",
+      "verdict": "supported",
+      "reason": "The verified NVIDIA press release confirms Jensen Huang's resignation and Kress as interim CEO, supporting the factual basis. The claim that this weakens the founding narrative is interpretive but consistent; founding history (Denny's origin) itself is unchanged, which the reason correctly implies."
+    },
+    {
+      "judge": "naval",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "The personnel change is verified by the official press release. The characterization of an interim CFO as a caretaker and the impact on founder-accountable brand identity is opinion, but the underlying factual assertions are all source-supported."
+    },
+    {
+      "judge": "naval",
+      "lens": "signal",
+      "verdict": "supported",
+      "reason": "CEO resignation is verified via NVIDIA's investor page, and the August 2026 Alpamayo 2 Super release is verified via NVIDIA's blog. Chronology is sound (product release precedes the leadership change); the scoring judgment is interpretive but rests on supported facts."
+    },
+    {
+      "judge": "rhoffman",
+      "lens": "origin",
+      "verdict": "supported",
+      "reason": "NVIDIA press release confirms Huang's resignation and Kress as interim CEO; official blogs confirm Alpamayo 2 Super and Nemotron 3.5 releases. A 1-point reduction for the founder-CEO departure is a reasonable narrative judgment, and the judge correctly avoids causal claims."
+    },
+    {
+      "judge": "rhoffman",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "The CEO transition is verified by the official press release excerpt. The identity-lens concern (brand tied to Huang's persona) is a defensible interpretation; no causal or post-event outcome claims asserted beyond the confirmed fact."
+    },
+    {
+      "judge": "rhoffman",
+      "lens": "signal",
+      "verdict": "supported",
+      "reason": "Negative signal rests on the verified resignation announcement; positive signals are verified official product releases, treated as company statements without adoption/performance claims. Reasoning acknowledges 'unexplained' nature without speculating on causes."
+    }
+  ]
+}

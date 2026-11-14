@@ -1,0 +1,36 @@
+{
+  "status": "draft",
+  "evidence_review": "passed",
+  "reviews": [
+    {
+      "judge": "pmarca",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "The cited evidence (title plus NVIDIA IR press-release verification) explicitly confirms Jensen Huang resigned on 2026-11-12 with CFO Colette Kress as interim CEO. The reasoning that this constitutes a founder-identity discontinuity follows directly from that verified event; the judge appropriately frames it as a risk/discontinuity rather than proven damage, and does not claim post-event outcomes beyond the source."
+    },
+    {
+      "judge": "paulg",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "The cited NVIDIA press release explicitly confirms Jensen Huang's resignation and Colette Kress as interim CEO. The factual basis for the score change is verified; the identity-coherence reasoning (founder as brand) is presented as judgment with acknowledged uncertainty, and no causal or post-event outcome claim is asserted beyond that."
+    },
+    {
+      "judge": "pthiel",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "Verified NVIDIA press release confirms Huang resigned and CFO Kress became interim CEO, directly supporting the assertion that founder-led identity coherence broke. The modest one-point reduction is appropriately framed as uncertainty rather than demonstrated damage."
+    },
+    {
+      "judge": "naval",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "The cited evidence, including a verification link to NVIDIA's press release, explicitly supports the core factual claims (Huang resigned 2026-11-12, Kress interim CEO). The score change is framed as pricing transition risk rather than claiming demonstrated damage, which matches what the source can support. The '30 years' founder-tenure framing is consistent with Huang co-founding NVIDIA in 1993. No chronology or causality overreach."
+    },
+    {
+      "judge": "rhoffman",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "Verified NVIDIA board press release confirms Jensen Huang's resignation and Kress as interim CEO, establishing a real identity discontinuity at a founder-led company. The reasoned 9→7 discount (transition risk, not proven incoherence) is consistent with the cited evidence and appropriately avoids unsupported causal claims."
+    }
+  ]
+}
