@@ -34,6 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -99,3 +101,34 @@ jobs:
           fi
           git commit -m "chore(watch): L1 预筛结果 $(date -u +%Y-%m-%d) [skip ci]"
           git push
+
+      - name: Historical re-audit replay (test branch only)
+        if: github.ref == 'refs/heads/test/nvidia-reaudit-replay' && inputs.brand == 'nvidia'
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/replay
+          git show 5d68d2f:published/reports/nvidia/report.md > /tmp/replay/v3.md
+          git show 5d68d2f:published/reports/nvidia/panel.yaml > /tmp/replay/panel.yaml
+          python3 - <<'REPLAY'
+          from pathlib import Path
+          p=Path('/tmp/replay/v3.md'); s=p.read_text(); start=s.index('## Score Matrix'); end=s.index('\n## ',start+5)
+          matrix=s[start:end].replace(' ↔','').replace(' ↓0.4','')
+          p.write_text(s[:start]+matrix+s[end:])
+          REPLAY
+          python3 scripts/watch-tools/reaudit_evidence.py watch/nvidia/events.yaml --after 2026-11-09 --auto-official --fetch-limit 30 --output /tmp/replay/evidence.json
+          python3 scripts/watch-tools/reaudit_judges.py --evidence /tmp/replay/evidence.json --report /tmp/replay/v3.md --panel /tmp/replay/panel.yaml --as-of 2026-11-14 --output /tmp/replay/judgments.json
+          python3 scripts/watch-tools/reaudit_review.py --judgments /tmp/replay/judgments.json --evidence /tmp/replay/evidence.json --output /tmp/replay/review.json
+          python3 scripts/watch-tools/reaudit_report.py --draft /tmp/replay/judgments.json --review /tmp/replay/review.json --evidence /tmp/replay/evidence.json --output /tmp/replay/report-draft.md
+      - uses: actions/upload-artifact@v4
+        if: always() && github.ref == 'refs/heads/test/nvidia-reaudit-replay' && inputs.brand == 'nvidia'
+        with:
+          name: nvidia-historical-replay
+          path: /tmp/replay/
+          if-no-files-found: error
