@@ -99,3 +99,26 @@ jobs:
           fi
           git commit -m "chore(watch): L1 预筛结果 $(date -u +%Y-%m-%d) [skip ci]"
           git push
+
+      - name: Amazon re-audit live replay (test branch only)
+        if: github.ref == 'refs/heads/test/amazon-reaudit-live' && inputs.brand == 'amazon'
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/amazon-replay
+          python3 scripts/watch-tools/reaudit_evidence.py watch/amazon/events.yaml --brand amazon --after 2026-07-20 --auto-official --fetch-limit 30 --output /tmp/amazon-replay/evidence.json
+          python3 scripts/watch-tools/reaudit_judges.py --evidence /tmp/amazon-replay/evidence.json --report published/reports/amazon/report.md --panel published/reports/amazon/panel.yaml --panel-registry metric-brand-auditor/panels/vc-en.yaml --brand amazon --as-of "$(date -u +%F)" --output /tmp/amazon-replay/judgments.json
+          python3 scripts/watch-tools/reaudit_review.py --judgments /tmp/amazon-replay/judgments.json --evidence /tmp/amazon-replay/evidence.json --output /tmp/amazon-replay/review.json
+          python3 scripts/watch-tools/reaudit_report.py --draft /tmp/amazon-replay/judgments.json --review /tmp/amazon-replay/review.json --evidence /tmp/amazon-replay/evidence.json --output /tmp/amazon-replay/report-draft.md
+      - uses: actions/upload-artifact@v4
+        if: always() && github.ref == 'refs/heads/test/amazon-reaudit-live' && inputs.brand == 'amazon'
+        with:
+          name: amazon-reaudit-live
+          path: /tmp/amazon-replay/
+          if-no-files-found: error
