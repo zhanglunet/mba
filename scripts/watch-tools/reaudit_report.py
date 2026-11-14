@@ -12,6 +12,10 @@ def judgment_hash(judgments):
     return hashlib.sha256(json.dumps(judgments, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
 
 
+def evidence_hash(evidence):
+    return judgment_hash(evidence)
+
+
 def ensure_complete_review(required, review):
     if review.get('evidence_review') != 'passed':
         raise ValueError('evidence review did not pass')
@@ -27,6 +31,8 @@ def build_draft(draft, review, baseline, evidence):
         raise ValueError('judge roster mismatch')
     if review.get('judgments_sha256') != judgment_hash(judgments):
         raise ValueError('review does not match judgments')
+    if draft.get('evidence_sha256') != evidence_hash(evidence) or review.get('evidence_sha256') != evidence_hash(evidence):
+        raise ValueError('review evidence differs from scoring evidence')
     scores = baseline['scores']
     changed = []
     for judgment in judgments:

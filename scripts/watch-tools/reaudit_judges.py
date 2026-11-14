@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate a review-only NVIDIA judge panel proposal from verified evidence."""
 import argparse
+import hashlib
 import json
 import re
 from datetime import date
@@ -168,10 +169,11 @@ def main():
     validate_baseline(baseline, panel)
     if baseline != derived:
         raise ValueError('baseline matrix differs from current report')
+    scoring_evidence = evidence
     evidence = fresh_evidence(evidence, panel['published_at'], args.as_of)
     results = generate_judgments(report, evidence, llm._provider(), baseline['scores'], args.as_of)
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps({'status': 'draft', 'brand': 'nvidia', 'baseline': baseline, 'judgments': results}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    args.output.write_text(json.dumps({'status': 'draft', 'brand': 'nvidia', 'baseline': baseline, 'evidence_sha256': hashlib.sha256(json.dumps(scoring_evidence, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest(), 'judgments': results}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Wrote review-only proposal to {args.output}')
 
 if __name__ == '__main__':

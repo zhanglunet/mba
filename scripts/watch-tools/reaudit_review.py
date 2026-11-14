@@ -64,7 +64,12 @@ def main():
     args = parser.parse_args()
     load = lambda path: json.loads(path.read_text(encoding='utf-8'))
     draft = load(args.judgments)
-    result = critique(draft['judgments'], load(args.evidence), draft['baseline']['scores'], llm._provider())
+    evidence = load(args.evidence)
+    evidence_hash = hashlib.sha256(json.dumps(evidence, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+    if draft.get('evidence_sha256') != evidence_hash:
+        raise ValueError('evidence differs from scoring evidence')
+    result = critique(draft['judgments'], evidence, draft['baseline']['scores'], llm._provider())
+    result['evidence_sha256'] = evidence_hash
     payload = json.dumps(draft['judgments'], ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()
     result['judgments_sha256'] = hashlib.sha256(payload).hexdigest()
     args.output.parent.mkdir(parents=True, exist_ok=True)
