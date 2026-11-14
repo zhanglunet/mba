@@ -85,5 +85,16 @@
     "verification_reason": "FY2027 Q2 revenue and data center revenue are reported by NVIDIA; they describe a period before the CEO transition.",
     "verified_at": "2026-11-13",
     "verification_by": "codex-source-review"
+  },
+  {
+    "id": "2026-11-13-nvidia-reuters-kress",
+    "date": "2026-11-13",
+    "title": "Colette Kress, the CFO who challenged Huang’s bets, is Nvidia’s interim CEO",
+    "verification": "verified",
+    "verification_source": "https://www.reuters.com/business/colette-kress-cfo-who-challenged-huangs-bets-is-nvidias-interim-ceo-2026-11-13/",
+    "verification_excerpt": "many investors, analysts and industry sources",
+    "verification_reason": "Reuters reports differing views about interim leadership; uncertainty and views are attributed, not treated as established performance.",
+    "verified_at": "2026-11-14",
+    "verification_by": "codex-source-review"
   }
 ]
