@@ -49,3 +49,11 @@ class MicrosoftFeedTest(unittest.TestCase):
         event={'id':'m','quote':'Microsoft Launch','date':'2026-11-12','url':'https://news.google.com/a'}
         self.assertEqual(mod.match_official(event,feed,brand='microsoft')['url'],'https://blogs.microsoft.com/blog/launch/')
         self.assertIsNone(mod.match_official(event,feed,brand='apple'))
+
+class OpenAIFeedTest(unittest.TestCase):
+    def test_openai_rss_profile_matches_only_openai(self):
+        xml=b'<rss><channel><item><title>Introducing ChatGPT Wallet</title><link>https://openai.com/index/introducing-chatgpt-wallet</link><pubDate>Fri, 13 Nov 2026 15:00:00 GMT</pubDate></item></channel></rss>'
+        feed=mod.parse_feed(xml,brand='openai')
+        event={'id':'o','quote':'Introducing ChatGPT Wallet','date':'2026-11-13','url':'https://news.google.com/a'}
+        self.assertEqual(mod.match_official(event,feed,brand='openai')['url'],'https://openai.com/index/introducing-chatgpt-wallet/')
+        self.assertIsNone(mod.match_official(event,feed,brand='apple'))
