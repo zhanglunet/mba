@@ -39,9 +39,23 @@ jobs:
           prs=json.load(open('/tmp/reaudit-prs.json', encoding='utf-8'))
           print('exists=' + str(any(p['headRefName'].startswith('reaudit/nvidia/') for p in prs)).lower())
           PY
+      - name: Evaluate fresh watch triggers
+        id: trigger
+        if: steps.pending.outputs.exists == 'false'
+        run: |
+          set -euo pipefail
+          DATE=$(date -u +%F)
+          python3 scripts/watch-tools/reaudit_trigger.py \
+            --events watch/nvidia/events.yaml --panel published/reports/nvidia/panel.yaml \
+            --as-of "$DATE" > /tmp/reaudit-trigger.json
+          HIT=$(python3 -c "import json; print(str(json.load(open('/tmp/reaudit-trigger.json'))['hit']).lower())")
+          echo "hit=$HIT" >> "$GITHUB_OUTPUT"
+          if [ "$HIT" != true ]; then
+            echo 'No fresh events meet the re-audit trigger.' >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Gather new official evidence
         id: evidence
-        if: steps.pending.outputs.exists == 'false'
+        if: steps.pending.outputs.exists == 'false' && steps.trigger.outputs.hit == 'true'
         run: |
           set -euo pipefail
           DATE=$(date -u +%F)
