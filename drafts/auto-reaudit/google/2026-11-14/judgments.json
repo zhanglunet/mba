@@ -1,0 +1,250 @@
+{
+  "status": "draft",
+  "brand": "google",
+  "baseline": {
+    "version": "v2",
+    "panel": "vc-en",
+    "scores": {
+      "pmarca": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 8,
+        "identity": 7,
+        "signal": 7
+      },
+      "paulg": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 8,
+        "identity": 8,
+        "signal": 7
+      },
+      "pthiel": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 9,
+        "identity": 8,
+        "signal": 7
+      },
+      "naval": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 9,
+        "signal": 8
+      },
+      "rhoffman": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 8,
+        "identity": 8,
+        "signal": 8
+      }
+    }
+  },
+  "evidence_sha256": "793754d568be2d75a95c523a2f47de93aa88c3ee836d5945730372826e987852",
+  "judgments": [
+    {
+      "judge": "pmarca",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-google-177"
+        ],
+        "category": [
+          "2026-11-12-google-175",
+          "2026-11-12-google-185",
+          "2026-11-11-google-187"
+        ],
+        "leverage": [
+          "2026-11-12-google-175",
+          "2026-11-12-google-176",
+          "2026-11-11-google-186",
+          "2026-11-11-google-178",
+          "2026-11-13-google-183"
+        ],
+        "identity": [
+          "2026-11-12-google-177"
+        ],
+        "signal": [
+          "2026-11-12-google-176",
+          "2026-11-11-google-186",
+          "2026-11-12-google-185"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No new verified evidence corrects or extends the founding narrative (the Stanford-BackRub-garage story stands as reported in the v2 baseline). The only origin-mapped event, the eyewear privacy design post (2026-11-12-google-177), is a P2 product-explainer, neutral by classification, and does not touch founding history. Per rules, Origin stays at baseline 8.",
+        "category": "Category stays at 9. Google announced a major Gemini 4 Hydrogen upgrade to Search itself (2026-11-12-google-175, P0, official) — putting its frontier model into the category it defined — plus a new intelligent-eyewear hardware line open for pre-order (2026-11-12-google-185) and a new Labs product (Tabletop, 2026-11-11-google-187). These are official statements confirming announcements only, not verified adoption, and eyewear/Tabletop are category extensions rather than new category creation; the v2 regulatory downshift on Leverage/Signal has no Category impact. Maintain, don't expand: 9.",
+        "leverage": "Up from 8 to 9 (recovering the v2 EU-mandate downshift directionally, not fully erasing it — no verified evidence shows the regulatory pressure resolved). The cluster shows leverage compounding across the stack: Gemini 4 Hydrogen embedded in Search (2026-11-12-google-175, P0 official claim), a major model release for developer/agentic workflows (2026-11-12-google-176, P0), a new Decisions API (2026-11-11-google-186, P0), plus ecosystem expansion onto Apple CarPlay (2026-11-11-google-178) and Wallet integration (2026-11-13-google-183). This is the distribution-as-lever thesis in action — embedding the model into billions of touchpoints. All are company statements of releases, not independently verified outcomes, so it's +1, not +2, and regulatory uncertainty from the baseline remains unresolved.",
+        "identity": "Identity stays at 7. No verified evidence addresses the v2 identity deductions ('Don't be evil' fadeout, Alphabet-era dispersion). The privacy-by-design eyewear post (2026-11-12-google-177) is a P2 official explainer — it gestures at the user-first ethic but is a company claim of intent, not a demonstrated identity shift. Insufficient verified evidence to move the score in either direction.",
+        "signal": "Up from 7 to 8. The v2 core deduction was 'inventing the technology but being outpaced' — a cluster of P0 official releases in one week (Gemini 4 Hydrogen for Search, 2026-11-12-google-175/176; Decisions API, 2026-11-11-google-186) plus a shipping hardware line in pre-order (2026-11-12-google-185) is direct build-and-ship evidence against the 'too slow to commercialize' narrative. Caveats preserved: these are official announcements confirming the statements were made, not independent adoption or usage data; the v2 antitrust and publisher-lawsuit exposures show no verified resolution in this evidence set. Direction-value only: +1."
+      },
+      "reason": "Baseline: pmarca v2 totals (8/9/8/7/7, total 39). This round's unconsumed watch events are a dense cluster of official product announcements (2026-11-11 to 2026-11-13), several P0: Gemini 4 Hydrogen wired into Search itself, a major developer-facing model release, a new Decisions API, CarPlay/Wallet expansion, eyewear pre-orders. This is the strongest possible answer to my v2 Signal deduction — 'it's chasing, not defining' — because the model is now native to the product that defined the category, and it's my distribution-as-the-catch-up-lever thesis executed. So Signal 7→8 and Leverage 8→9. Discipline: every item is an official statement — verification confirms publication, not performance or adoption — so moves are modest (+1 each), the unresolved regulatory/litigation exposure from v2 is not treated as resolved, Origin stays at baseline per the founding-history rule, and Identity has no verified evidence to justify a move. Category stays 9: extensions of an already-led category, not new coinage. Money talks, hype walks — I'll move it further when independent adoption numbers talk."
+    },
+    {
+      "judge": "paulg",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 8,
+        "identity": 8,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [
+          "2026-11-12-google-185"
+        ],
+        "leverage": [
+          "2026-11-12-google-175",
+          "2026-11-11-google-186"
+        ],
+        "identity": [],
+        "signal": [
+          "2026-11-12-google-176",
+          "2026-11-11-google-178",
+          "2026-11-13-google-183"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No new verified evidence corrects the founding narrative. The Stanford/BackRub/garage origin remains one of the great origin stories — keep baseline 9.",
+        "category": "The eyewear pre-order announcement (2026-11-12-google-185) is a company statement of entering/strengthening a new hardware category, but it confirms publication only, not market definition. Google's category-creation record (search, Android, Transformer) already justifies 9; announcements don't move it.",
+        "leverage": "Gemini 4 Hydrogen in Search (175) and the Decisions API (186) show Google doing what it does best — putting its model into its own distribution. That's real structural leverage on paper. But these are official announcements; whether the integration compounds is unverified. Keep 8.",
+        "identity": "The eyewear privacy post (177) is a P2 design note, not an identity event. Nothing here re-anchors 'Don't be evil' or resolves identity dilution. Keep 8.",
+        "signal": "Real signal means users urgently wanting the thing — retention, usage, growth. What we have are official launch statements: developer tools (176), CarPlay (178), Wallet integration (183). Product announcements are what a company says; signal is what users do. No verified adoption data in this batch, so the prior concerns (antitrust ruling, being out-shipped on its own Transformer) keep this at 7. Publishing new models is necessary, not sufficient."
+      },
+      "reason": "This batch is all official Google statements — product launches and integrations, verified only as made, not as adopted. Under my lens, announcements are not signal: I score what users do, not what a company says it shipped. The Gemini-into-Search move is the right kind of leverage play (distribution over persuasion), so Leverage holds at 8; the pre-order eyewear event holds Category at 9; nothing touches Origin (9) or Identity (8). Signal stays at 7 — the structural questions from the prior review (illegal-monopoly ruling, out-innovated on its own invention) are unresolved, and a week of press releases doesn't answer them. Uncertainty is not damage, but it isn't demonstration either."
+    },
+    {
+      "judge": "pthiel",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 9,
+        "identity": 8,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-google-177"
+        ],
+        "category": [
+          "2026-11-12-google-175",
+          "2026-11-12-google-185"
+        ],
+        "leverage": [
+          "2026-11-12-google-175",
+          "2026-11-11-google-186",
+          "2026-11-11-google-178",
+          "2026-11-13-google-183"
+        ],
+        "identity": [
+          "2026-11-12-google-184"
+        ],
+        "signal": [
+          "2026-11-12-google-176",
+          "2026-11-12-google-185"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "Baseline holds. A privacy-design explainer for eyewear (official statement) neither corrects nor deepens the Stanford-garage founding narrative. Origin is about what was true at the founding; nothing here revises it.",
+        "category": "10 stands. Google's category-creation history — search, search advertising, Transformer — is uncorrected. The Gemini 4 Hydrogen Search upgrade and eyewear pre-order are official announcements that maintain and possibly extend the category, but automated verification confirms only publication, not that the upgrade or product succeeds; this cannot raise a score already at my ceiling.",
+        "leverage": "I cut this 10→9 in v2 because regulators are prying open the distribution moat. The new evidence — Gemini embedded into Search, a Decisions API, CarPlay and Wallet integration — is exactly the flywheel I prize: shoving the model through billions of existing distribution points. But every item is a company statement of intent or release; none verifies adoption, usage, or that the regulatory opening of Android/search data has been resolved. Distribution leverage looks reinforced on paper; the monopoly remains under legal attack. A 9, not yet back to 10.",
+        "identity": "Baseline 8. Flow tools 'designed by visual artists' is a mild creator-identity signal, P2 weight, official statement only — far too small to move a dimension already strained by 'Don't be evil' fading and Alphabet-era diffusion.",
+        "signal": "7 stands. Here is the discipline: signal means demonstrated results, and every new item — the Hydrogen developer launch, the Decisions API, eyewear pre-orders opening — is an announcement the company made about itself. Verification confirms the statements were made, not that the model wins, that pre-orders convert, or that the antitrust and publisher-suit exposures from v2 have improved. Until independent numbers arrive, the innovator's-dilemma discount and legal overhang stay. Uncertainty is not demonstrated damage — but neither is it demonstrated recovery."
+      },
+      "reason": "All scores held at the v2 baseline. The November wave is a coherent, distribution-first Gemini push (Search integration, Decisions API, CarPlay, Wallet) that, if real in the market, addresses exactly the leverage question I flagged. But under the official_statement scope, I can only confirm Google said these things — not that the moat is rebuilt, the category re-led, or the legal siege lifted. Announcements are the indefinite optimism of press releases; durable cash flows are the definite fact. When verified adoption data arrives, Leverage may return to 10. Until then, the scores wait on evidence, not narrative."
+    },
+    {
+      "judge": "naval",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 9,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [
+          "2026-11-12-google-175",
+          "2026-11-12-google-185",
+          "2026-11-11-google-187"
+        ],
+        "leverage": [
+          "2026-11-12-google-175",
+          "2026-11-12-google-176",
+          "2026-11-11-google-186",
+          "2026-11-13-google-183"
+        ],
+        "identity": [],
+        "signal": [
+          "2026-11-12-google-176",
+          "2026-11-11-google-186",
+          "2026-11-12-google-185"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The founding narrative is unchanged: Stanford, PageRank, the mission from day one — real specific knowledge, authentic to the founders. No new verified evidence corrects the origin story, so baseline 9 holds.",
+        "category": "The company that coined modern search and invented Transformer keeps extending the category: Gemini 4 Hydrogen embedded into core Search (company statement, 2026-11-12), an intelligent eyewear line opening pre-orders (2026-11-12), and new collaborative spaces (Tabletop). Official announcements confirm the statements, not market outcomes — maintained at 9, not raised.",
+        "leverage": "This is the Naval point: embedding the model into billions of queries and devices is distribution as leverage — Gemini in Search, a Decisions API for developers, Wallet integration, CarPlay. Zero-marginal-cost software pushed through an owned distribution stack earns while you sleep. These are company claims of releases, not demonstrated adoption; regulatory pressure from the prior review remains unresolved. Held at 9.",
+        "identity": "'Google' is still a verb; that brand asset compounds. No new verified evidence on identity this cycle (the privacy-on-eyewear post is a design explainer, not an identity event), so baseline 9 holds.",
+        "signal": "The signal question was never strength but conversion: does the full-stack ammunition translate into shipped, compounding products? A dense week of real releases — major model version, Search integration, new APIs — is consistent with the flywheel converting. But these are announcements verified only as published statements; adoption data is absent, and antitrust exposure persists. 8, unchanged — direction is positive, proof is not yet in."
+      },
+      "reason": "Naval lens, scores held at baseline across all five lenses. The verified events are all positive product-shipping signals — Gemini 4 Hydrogen into Search, developer APIs, ecosystem integrations — that confirm the flywheel is still turning (leverage maintained at 9) and the compounding machine remains intact. Nothing in the evidence corrects origin or identity, and signal stays at 8 because official statements confirm releases, not demonstrated adoption; antitrust overhang from the prior review is unaddressed by this evidence set. Disclosure: this is an in-character simulation from Naval's published corpus, not the person."
+    },
+    {
+      "judge": "rhoffman",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 8,
+        "identity": 8,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-google-177"
+        ],
+        "category": [
+          "2026-11-12-google-175",
+          "2026-11-12-google-185"
+        ],
+        "leverage": [
+          "2026-11-12-google-175",
+          "2026-11-12-google-176",
+          "2026-11-11-google-186",
+          "2026-11-11-google-178",
+          "2026-11-13-google-183"
+        ],
+        "identity": [
+          "2026-11-12-google-177"
+        ],
+        "signal": [
+          "2026-11-12-google-185",
+          "2026-11-12-google-176",
+          "2026-11-11-google-186"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "维持基线9。本轮唯一映射到 origin 的事件是智能眼镜隐私设计说明(P2,官方声明,仅证实发布),它不改写斯坦福宿舍、PageRank、'organize the world's information'这段经典起源叙事——起源历史无新验证证据修正。",
+        "category": "维持9。Gemini 4 Hydrogen 接入 Google Search(官方声明)显示 Google 在把自家的 Transformer 技术基石重新注入其定义的搜索品类——这正是我在 v2 说的'分发即追赶杠杆';智能眼镜开放预订(P2)是品类扩张而非新品类创造。品类王冠未被挑战,但也非本轮显著增量,9 不动。注意:这些是公司宣布,公告本身不证明产品成功。",
+        "leverage": "维持8。一组官方发布(Search+Gemini 4 Hydrogen、开发者 agentic 工具、Decisions API、CarPlay、Wallet 整合)展示了分发与生态杠杆的宽度——Gemini 嵌入搜索、苹果生态、支付场景,正是数据+分发飞轮的复利逻辑。但 v2 的监管侵蚀(欧盟强制开放 Android/搜索数据)仍在进行中,本轮无证据显示缓解;护城河越深,监管靶子越大的张力未变,8 不动。",
+        "identity": "维持8。隐私设计说明(官方)是温和的正向信号,呼应'Focus on the user'身份,但 P2 量级不足以修复'Don't be evil'淡出与身份弥散的结构性减分;8 不动。",
+        "signal": "维持8。官方发布流(Search 升级、主力模型版本、Decisions API)是公司主张而非独立验证的采用与留存——按我的 PMF 纪律,'读需求曲线,不读发布会'。眼镜'开放预订'是预订,不是采用。v2 的法律敞口(出版商诉讼、反垄断)无新进展证据。8 不动。"
+      },
+      "reason": "本轮事件全部为 Google 官方产品发布声明(official_statement:仅证实公司发布,不证明性能或采用)。从我的视角看,它们验证了 v2 的判断——Google 正在用分发杠杆把 Gemini 嵌入搜索、CarPlay、Wallet,把'发明了 Transformer 却被偷袭'的叙事往回扳。但官方公告是供给端信号,不是产品市场契合的需求端证据;且监管/法律风险(v2 下修的来源)无缓解证据。五个维度均维持基线,方向性利好被证据等级与未决风险抵消。"
+    }
+  ]
+}
