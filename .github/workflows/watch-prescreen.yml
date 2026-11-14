@@ -99,3 +99,26 @@ jobs:
           fi
           git commit -m "chore(watch): L1 预筛结果 $(date -u +%Y-%m-%d) [skip ci]"
           git push
+
+      - name: Apple re-audit live replay (test branch only)
+        if: github.ref == 'refs/heads/test/apple-reaudit-live' && inputs.brand == 'apple'
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/apple-replay
+          python3 scripts/watch-tools/reaudit_evidence.py watch/apple/events.yaml --brand apple --after 2026-07-20 --auto-official --fetch-limit 30 --output /tmp/apple-replay/evidence.json
+          python3 scripts/watch-tools/reaudit_judges.py --evidence /tmp/apple-replay/evidence.json --report published/reports/apple/report.md --panel published/reports/apple/panel.yaml --panel-registry metric-brand-auditor/panels/vc-en.yaml --brand apple --as-of "$(date -u +%F)" --output /tmp/apple-replay/judgments.json
+          python3 scripts/watch-tools/reaudit_review.py --judgments /tmp/apple-replay/judgments.json --evidence /tmp/apple-replay/evidence.json --output /tmp/apple-replay/review.json
+          python3 scripts/watch-tools/reaudit_report.py --draft /tmp/apple-replay/judgments.json --review /tmp/apple-replay/review.json --evidence /tmp/apple-replay/evidence.json --output /tmp/apple-replay/report-draft.md
+      - uses: actions/upload-artifact@v4
+        if: always() && github.ref == 'refs/heads/test/apple-reaudit-live' && inputs.brand == 'apple'
+        with:
+          name: apple-reaudit-live
+          path: /tmp/apple-replay/
+          if-no-files-found: error
