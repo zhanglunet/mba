@@ -83,3 +83,16 @@ class PublicSourceTest(unittest.TestCase):
         self.assertTrue(module.allowed_source_url('https://investor.nvidia.com/news/press'))
         self.assertFalse(module.allowed_source_url('https://investor.nvidia.com.attacker.example/news'))
         self.assertFalse(module.allowed_source_url('https://user:pass@investor.nvidia.com/news'))
+
+class OfficialEvidenceTest(unittest.TestCase):
+    def test_exact_official_title_and_date_can_support_attributed_statement(self):
+        event={'id':'e1','title':'Launch','quote':'Launch','date':'2026-11-15','url':'https://blogs.nvidia.com/blog/launch/','source_type':'official'}
+        source={'fetch_status':'ok','quote_match':True,'source_date':'2026-11-15','source_title':'Launch','final_url':event['url']}
+        result=module.official_statement_evidence(event, source)
+        self.assertEqual(result['verification'],'verified')
+        self.assertEqual(result['verification_scope'],'official_statement')
+
+    def test_mismatched_date_or_source_cannot_be_promoted(self):
+        event={'id':'e1','title':'Launch','quote':'Launch','date':'2026-11-15','url':'https://blogs.nvidia.com/blog/launch/','source_type':'official'}
+        for source in [{'fetch_status':'ok','quote_match':True,'source_date':'2026-11-14','final_url':event['url']}, {'fetch_status':'ok','quote_match':True,'source_date':'2026-11-15','final_url':'https://www.reuters.com/a'}]:
+            with self.assertRaises(ValueError): module.official_statement_evidence(event, source)

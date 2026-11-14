@@ -3,6 +3,7 @@
 import argparse
 import json
 import re
+from datetime import date
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
@@ -36,8 +37,22 @@ class TextParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self.parts = []
+        self.page_title = ''
+        self.source_date = ''
+        self.in_title = False
+    def handle_starttag(self, tag, attrs):
+        values = dict(attrs)
+        if tag == 'title':
+            self.in_title = True
+        if tag == 'meta' and (values.get('property') in ('article:published_time', 'og:published_time') or values.get('name') in ('date', 'pubdate', 'publish-date')):
+            self.source_date = (values.get('content') or '')[:10]
+    def handle_endtag(self, tag):
+        if tag == 'title':
+            self.in_title = False
     def handle_data(self, data):
         self.parts.append(data)
+        if self.in_title:
+            self.page_title += data
 
 
 TRUSTED_SOURCE_HOSTS = frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com', 'www.reuters.com', 'apnews.com'})
@@ -77,9 +92,37 @@ def fetch_source(event):
                 parser = TextParser()
                 parser.feed(text)
                 text = ' '.join(parser.parts)
-            return {**assess_source(event, text), 'fetch_status': 'ok', 'final_url': response.geturl()}
+            return {**assess_source(event, text), 'fetch_status': 'ok', 'final_url': response.geturl(), 'source_date': parser.source_date if 'html' in content_type else '', 'source_title': parser.page_title if 'html' in content_type else ''}
     except (OSError, ValueError, KeyError) as exc:
         return {'fetch_status': 'error', 'error': str(exc), 'quote_match': False, 'verification': 'unverified'}
+
+
+NVIDIA_OFFICIAL_HOSTS = frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'})
+
+
+def official_statement_evidence(event, source):
+    """Confirm an attributable company statement, not its underlying factual truth."""
+    url = event.get('url', '')
+    parsed = urlparse(url)
+    if (not allowed_source_url(url) or parsed.hostname not in NVIDIA_OFFICIAL_HOSTS
+            or event.get('source_type') != 'official' or source.get('final_url') != url
+            or source.get('fetch_status') != 'ok' or not source.get('quote_match')):
+        raise ValueError('not an eligible direct company source')
+    try:
+        event_date = date.fromisoformat(str(event.get('date')))
+        source_date = date.fromisoformat(source.get('source_date', ''))
+    except ValueError:
+        raise ValueError('invalid or missing publication date')
+    if event_date != source_date:
+        raise ValueError('event and source publication dates differ')
+    quote = str(event.get('quote') or '').strip()
+    title = str(source.get('source_title') or '').strip()
+    if not quote or not title or quote.casefold() != title.casefold():
+        raise ValueError('source title and quote differ')
+    return {**event, 'verification': 'verified', 'verification_scope': 'official_statement',
+            'verification_source': url, 'verification_excerpt': quote,
+            'verification_reason': 'Exact dated title verified on NVIDIA source; confirms publication only, not independent factual truth.',
+            'verified_at': date.today().isoformat(), 'verification_by': 'automated-source-match'}
 
 
 def validate_score_evidence(ids, evidence):
@@ -103,6 +146,8 @@ def main():
     parser.add_argument('events', type=Path)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--fetch-limit', type=int, default=0, help='fetch at most this many sources')
+    parser.add_argument('--after', help='select events strictly after an ISO date')
+    parser.add_argument('--auto-official', action='store_true', help='record matching dated NVIDIA statements as attributed evidence')
     args = parser.parse_args()
     events = yaml.safe_load(args.events.read_text(encoding='utf-8'))
     if not isinstance(events, list):
@@ -110,8 +155,18 @@ def main():
     result = prepare_events(events)
     if args.fetch_limit < 0:
         parser.error("--fetch-limit must be nonnegative")
-    for event in result[:args.fetch_limit]:
-        event.update(fetch_source(event))
+    if args.after:
+        cutoff = date.fromisoformat(args.after)
+        result = [event for event in result if date.fromisoformat(str(event['date'])) > cutoff]
+    candidates = [event for event in result if allowed_source_url(event['url'])]
+    for event in candidates[:args.fetch_limit]:
+        fetched = fetch_source(event)
+        event.update(fetched)
+        if args.auto_official:
+            try:
+                event.update(official_statement_evidence(event, fetched))
+            except ValueError:
+                pass
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2, default=str) + '\n', encoding='utf-8')
     print(f'{len(result)} unverified leads written to {args.output}')
 
