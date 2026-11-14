@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Independently critique draft score changes; never publish or modify scores."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import classify_candidates as llm
@@ -64,6 +65,8 @@ def main():
     load = lambda path: json.loads(path.read_text(encoding='utf-8'))
     draft = load(args.judgments)
     result = critique(draft['judgments'], load(args.evidence), draft['baseline']['scores'], llm._provider())
+    payload = json.dumps(draft['judgments'], ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()
+    result['judgments_sha256'] = hashlib.sha256(payload).hexdigest()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print('Independent evidence review:', result['evidence_review'], '(still requires human review)')

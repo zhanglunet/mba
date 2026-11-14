@@ -132,6 +132,15 @@ jobs:
             --evidence watch/_reaudit/nvidia/evidence-2026-11-13.json \
             --output /tmp/nvidia-reaudit/review.json
 
+      - name: Build review-only report draft
+        if: github.ref == 'refs/heads/feat/nvidia-auto-reaudit' && inputs.brand == 'nvidia' && inputs.dry_run == false
+        run: |
+          python3 scripts/watch-tools/reaudit_report.py \
+            --draft /tmp/nvidia-reaudit/judgments.json \
+            --review /tmp/nvidia-reaudit/review.json \
+            --evidence watch/_reaudit/nvidia/evidence-2026-11-13.json \
+            --output /tmp/nvidia-reaudit/report-draft.md
+
       - uses: actions/upload-artifact@v4
         if: github.ref == 'refs/heads/feat/nvidia-auto-reaudit' && inputs.brand == 'nvidia' && inputs.dry_run == false
         with:
