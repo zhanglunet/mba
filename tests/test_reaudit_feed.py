@@ -26,6 +26,14 @@ class AppleFeedTest(unittest.TestCase):
         result=mod.match_official({'id':'a','quote':'Apple Launch','date':'2026-11-13','url':'https://news.google.com/a'},feed,brand='apple')
         self.assertEqual(result['url'],'https://www.apple.com/newsroom/2026/11/launch/')
 
+class AmazonFeedTest(unittest.TestCase):
+    def test_amazon_official_feed_profile_is_isolated(self):
+        xml=b'<rss><channel><item><title>Amazon Launch</title><link>https://www.aboutamazon.com/news/example</link><pubDate>Wed, 11 Nov 2026 12:00:00 GMT</pubDate></item></channel></rss>'
+        feed=mod.parse_feed(xml,brand='amazon')
+        event={'id':'a','quote':'Amazon Launch','date':'2026-11-11','url':'https://news.google.com/a'}
+        self.assertEqual(mod.match_official(event,feed,brand='amazon')['url'],'https://www.aboutamazon.com/news/example')
+        self.assertIsNone(mod.match_official(event,feed,brand='apple'))
+
 class GoogleFeedTest(unittest.TestCase):
     def test_google_rss_entry_matches_only_google_profile(self):
         xml=b'<rss><channel><item><title>Google Launch</title><link>https://blog.google/products/launch/</link><pubDate>Fri, 13 Nov 2026 20:30:00 +0000</pubDate></item></channel></rss>'
