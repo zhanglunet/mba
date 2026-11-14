@@ -76,3 +76,7 @@ class FreshEvidenceTest(unittest.TestCase):
         evidence=[{'id':'old','date':'2026-11-14','verification':'verified'}, {'id':'new','date':'2026-11-15','verification':'verified'}, {'id':'future','date':'2026-11-18','verification':'verified'}, {'id':'unverified','date':'2026-11-15','verification':'unverified'}]
         selected=mod.fresh_evidence(evidence, '2026-11-14', '2026-11-16')
         self.assertEqual([e['id'] for e in selected],['new'])
+    def test_same_day_new_evidence_requires_baseline_snapshot(self):
+        evidence=[{'id':'old','date':'2026-11-14','verification':'verified'}, {'id':'new','date':'2026-11-14','verification':'verified'}]
+        selected=mod.fresh_evidence(evidence,'2026-11-14','2026-11-14',baseline_ids={'old'})
+        self.assertEqual([e['id'] for e in selected],['new'])

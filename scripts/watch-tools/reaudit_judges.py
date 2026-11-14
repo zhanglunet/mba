@@ -107,7 +107,7 @@ def call_with_retry(items, provider, system):
             print(f'Invalid model output; retry {attempt + 1}/2', flush=True)
 
 
-def fresh_evidence(evidence, baseline_date, as_of):
+def fresh_evidence(evidence, baseline_date, as_of, baseline_ids=None):
     start = date.fromisoformat(str(baseline_date))
     end = date.fromisoformat(str(as_of))
     if end < start:
@@ -120,7 +120,7 @@ def fresh_evidence(evidence, baseline_date, as_of):
             event_date = date.fromisoformat(str(item['date']))
         except (KeyError, ValueError):
             raise ValueError('verified evidence has invalid date')
-        if start < event_date <= end:
+        if event_date <= end and (event_date > start or (baseline_ids is not None and event_date == start and item.get('id') not in baseline_ids)):
             result.append(item)
     return result
 
@@ -158,6 +158,7 @@ def main():
     parser.add_argument('--baseline', type=Path, help='optional baseline file; defaults to current report matrix')
     parser.add_argument('--as-of', required=True)
     parser.add_argument('--panel', type=Path, required=True)
+    parser.add_argument('--baseline-events', type=Path)
     args = parser.parse_args()
     evidence = json.loads(args.evidence.read_text(encoding='utf-8'))
     if not isinstance(evidence, list):
@@ -170,7 +171,11 @@ def main():
     if baseline != derived:
         raise ValueError('baseline matrix differs from current report')
     scoring_evidence = evidence
-    evidence = fresh_evidence(evidence, panel['published_at'], args.as_of)
+    baseline_events = yaml.safe_load(args.baseline_events.read_text(encoding='utf-8')) if args.baseline_events else None
+    if baseline_events is not None and (not isinstance(baseline_events, list) or any(not isinstance(e, dict) or not e.get('id') for e in baseline_events)):
+        raise ValueError('invalid baseline event snapshot')
+    ids = {e['id'] for e in baseline_events} if baseline_events is not None else None
+    evidence = fresh_evidence(evidence, panel['published_at'], args.as_of, ids)
     results = generate_judgments(report, evidence, llm._provider(), baseline['scores'], args.as_of)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps({'status': 'draft', 'brand': 'nvidia', 'baseline': baseline, 'evidence_sha256': hashlib.sha256(json.dumps(scoring_evidence, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()).hexdigest(), 'judgments': results}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

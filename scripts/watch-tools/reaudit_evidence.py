@@ -146,7 +146,8 @@ def main():
     parser.add_argument('events', type=Path)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--fetch-limit', type=int, default=0, help='fetch at most this many sources')
-    parser.add_argument('--after', help='select events strictly after an ISO date')
+    parser.add_argument('--after', help='select events after an ISO date, including same-day additions with a snapshot')
+    parser.add_argument('--baseline-events', type=Path)
     parser.add_argument('--auto-official', action='store_true', help='record matching dated NVIDIA statements as attributed evidence')
     args = parser.parse_args()
     events = yaml.safe_load(args.events.read_text(encoding='utf-8'))
@@ -157,7 +158,11 @@ def main():
         parser.error("--fetch-limit must be nonnegative")
     if args.after:
         cutoff = date.fromisoformat(args.after)
-        result = [event for event in result if date.fromisoformat(str(event['date'])) > cutoff]
+        baseline_events = yaml.safe_load(args.baseline_events.read_text(encoding='utf-8')) if args.baseline_events else None
+        if baseline_events is not None and (not isinstance(baseline_events, list) or any(not isinstance(e, dict) or not e.get('id') for e in baseline_events)):
+            raise ValueError('invalid baseline event snapshot')
+        ids = {e['id'] for e in baseline_events} if baseline_events is not None else None
+        result = [event for event in result if date.fromisoformat(str(event['date'])) > cutoff or (ids is not None and date.fromisoformat(str(event['date'])) == cutoff and event['id'] not in ids)]
     candidates = [event for event in result if allowed_source_url(event['url'])]
     for event in candidates[:args.fetch_limit]:
         fetched = fetch_source(event)

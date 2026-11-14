@@ -22,6 +22,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
@@ -45,9 +46,12 @@ jobs:
         run: |
           set -euo pipefail
           DATE=$(date -u +%F)
+          BASE_COMMIT=$(git log -1 --format=%H -- published/reports/nvidia/panel.yaml)
+          test -n "$BASE_COMMIT"
+          git show "${BASE_COMMIT}:watch/nvidia/events.yaml" > /tmp/reaudit-baseline-events.yaml
           python3 scripts/watch-tools/reaudit_trigger.py \
             --events watch/nvidia/events.yaml --panel published/reports/nvidia/panel.yaml \
-            --as-of "$DATE" > /tmp/reaudit-trigger.json
+            --baseline-events /tmp/reaudit-baseline-events.yaml --as-of "$DATE" > /tmp/reaudit-trigger.json
           HIT=$(python3 -c "import json; print(str(json.load(open('/tmp/reaudit-trigger.json'))['hit']).lower())")
           echo "hit=$HIT" >> "$GITHUB_OUTPUT"
           if [ "$HIT" != true ]; then
@@ -62,7 +66,7 @@ jobs:
           BASELINE=$(python3 -c "import yaml; print(yaml.safe_load(open('published/reports/nvidia/panel.yaml'))['published_at'])")
           mkdir -p /tmp/reaudit
           python3 scripts/watch-tools/reaudit_evidence.py watch/nvidia/events.yaml \
-            --after "$BASELINE" --auto-official --fetch-limit 30 --output /tmp/reaudit/evidence.json
+            --after "$BASELINE" --baseline-events /tmp/reaudit-baseline-events.yaml --auto-official --fetch-limit 30 --output /tmp/reaudit/evidence.json
           READY=$(python3 -c "import json; print(str(any(x.get('verification') == 'verified' for x in json.load(open('/tmp/reaudit/evidence.json')))).lower())")
           echo "ready=$READY" >> "$GITHUB_OUTPUT"
           echo "date=$DATE" >> "$GITHUB_OUTPUT"
@@ -83,6 +87,7 @@ jobs:
             --evidence /tmp/reaudit/evidence.json \
             --report published/reports/nvidia/report.md \
             --panel published/reports/nvidia/panel.yaml \
+            --baseline-events /tmp/reaudit-baseline-events.yaml \
             --as-of '${{ steps.evidence.outputs.date }}' \
             --output /tmp/reaudit/judgments.json
       - name: Critique proposed changes
