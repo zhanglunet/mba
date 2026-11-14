@@ -1,186 +1,73 @@
-# NVIDIA / 英伟达 — Brand Influence Review (v3) · EVOLUTION
+# NVIDIA / 英伟达 — Brand Influence Review (v4) · EVOLUTION
 
-**Panel**: vc-en（安德森 · 格雷厄姆 · 蒂尔 · 纳瓦尔 · 霍夫曼）
-**Panel Note**: 黄仁勋(NVIDIA 联合创始人)是 MBA 评委但不在本 panel,无 --panel-drop;5 位评委均无 NVIDIA 利益相关。
-**Audit Date**: 2026-07-18 · **v3 EVOLUTION**: 2026-07-20
-**基线**: v2 (2026-07-18)
-**Mode**: EVOLUTION · **watch 事件流驱动**（无新增外部调研,新事实仅来自 `watch/nvidia/events.yaml`）· 快照:[v1](versions/v1_2026-07-16.md) · [v2](versions/v2_2026-07-18.md)
-**MBA Version**: 0.4.5
-
----
-
-## 2026-11-13 人工事实复评（评分待重审）
-
-NVIDIA 董事会 11 月 12 日公告，黄仁勋辞去总裁、CEO 和董事职务；CFO Colette Kress 暂任 CEO，董事会启动永久继任者搜索。[NVIDIA 公告](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx)。创始历史本身不会因离任改变，但品牌身份和管理交接面临新的不确定性，继任人选与交接后的经营表现尚待观察。
-
-截至 7 月 26 日的 FY2027 第二财季营收 962 亿美元、同比增长 106%；这是管理层变动之前的数据，不可用来证明交接后的经营表现。[NVIDIA 财报](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/)。
-
-**评分提示：下文 220/250、8.80/10 及五位评委意见均为 2026-07-20 的 v3 历史结果，尚未反映上述变动。新一轮评委复评尚未完成。** 原文中的现任管理层描述应以本提示为准。
-
----
-
-## v3 变化速览 (delta banner)
-
-**总分 220 → 220（净持平）· 归一化 8.80 ↔**。一次"版图轮动、净对冲"的重审——本轮正负信号相互抵消,分数守持。
-
-- **净对冲(所有镜头 ↔)**:正向——黄仁勋访日、**NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施** + 助攻日本 AI 生态 + Together AI(英伟达为股东)融资 8 亿美元(watch,leverage/pos)——**主权 AI** 是巨量新需求,把 v2 里丢掉的中国流失部分对冲回来;负向——RTX 50 SUPER 因显存太贵**叫停出货** + "大客户集体转向、CUDA 垄断崩塌"叙事(watch,signal/leverage neg)。
-- **判定**:Leverage 已在 9.6(近满),日本主权 AI 强化但不越顶;CUDA 侵蚀是尚未兑现的 watch 项、RTX50 属消费级小盘——正负净对冲,5 位评委均不动。**分数守持 220/8.80**。
-- **克制**:主权 AI 落地为早期、CUDA "崩塌"为叙事口径,均只作方向观察,不改分。事件已消费、触发清零,留待兑现再重估。
-
----
-
-## 版本变化速览 (delta banner)
-
-**What changed since v1（2026-07-16 → 2026-07-18）· 总分 222 → 220（−2）· 归一化 8.88 → 8.80（−0.08）· 蒂尔 v1 唯一的减分理由(对华出口管制)被现实坐实,日本主权 AI 部分对冲。**
-
-本次是 NVIDIA 首个 Brand Watch 事件流驱动的 EVOLUTION,消费 `watch/nvidia/events.yaml` 4 条未消费事件(3×P1 + 1×P2)——净微降,但几乎全在 v1 唯一的分歧维度 Signal 上:
-
-- **Signal 主驱动·负（`001`/`002`,P1）**:**对华 AI 芯片销售停滞,华为等本土厂商取得领先**(AP `001`);美方称对华 **H200 实际出货"极少"**(CNBC `002`,出口管制博弈)。v1 里 Signal 是全卷唯一的实质分歧,蒂尔独给 7、点名"对华出口管制"是"垄断能否穿越浪潮"的关键减分项——这两条正是那条风险的**现实兑现**:中国市场在流失、本土厂商在补位。**Signal ↓**。
-- **对冲面·正（`003` P2 / `004` P1）**:推出 **Jetson Thor** 面向主流机器人与边缘 AI(官方 `003`);**与日本政府共建全球首个国家级 AI 基础设施**(官方 `004`)。机器人/边缘 + 主权 AI 是**新战场的品类/杠杆扩张**,部分对冲中国市场的流失。
-- **Leverage / Category ↔**:中国侵蚀(neg)与主权/机器人扩张(pos)在 9.6/9.4 的近满天花板上**净对冲**——护城河的"总面积"未变,只是版图在轮动(中国 − / 主权 +)。
-- **Origin / Identity ↔**:无新证据触及。
-
-**诚实说明**:下修**克制**——NVIDIA 的需求从不由中国单一市场决定(美国+主权+云资本开支是主体),中国流失是"少一块"而非"塌一角";且同期主权 AI/机器人开出新战场。故 Signal 仅 −0.4、总分仅 −2,护城河维度纹丝不动。
-
-**分数轮动**:Signal **↓0.4**(安德森/纳瓦尔各 −1,蒂尔守 7、格雷厄姆/霍夫曼守 8)、Leverage/Category **↔**(中国 vs 主权/机器人净对冲)、其余 **↔**。
-
----
+**Panel**: vc-en · 5 位 AI 模拟评委　**Audit Date**: 2026-11-14　**基线**: v3（2026-07-20）
 
 ## TL;DR
 
-v1 的结论:NVIDIA 是 MBA **综合得分最高**的品牌(8.88),Leverage(9.6)/Category(9.4)近满,唯一真实分歧在 **Signal(8.2)**——蒂尔式"垄断能否穿越浪潮"的质疑,点名**对华出口管制**是核心减分项。**v2 的追问是:那条被点名的风险,兑现了吗?** watch 事件流的回答:**兑现了一部分。** 对华芯片销售停滞、华为等本土厂商领先、H200 出货"极少"——正是 v1 蒂尔担心的那条线在现实里显形;但同期 Jetson Thor(机器人/边缘)+ 日本国家级 AI 基础设施开出新战场,部分对冲。222→220(8.88→8.80),克制下修:护城河(9.6)没动,动的是"这种强能持续多久"里被点名的中国这一块。
+黄仁勋离任带来品牌身份及管理交接不确定性；历史创始叙事和已有平台能力没有因人事变化自动消失。五位 AI 模拟评委的总分由 220 降至 213，归一化由 8.80 降至 8.52。
 
----
+## 事实与时间边界
+
+- NVIDIA 董事会 11 月 12 日公告黄仁勋辞任总裁、CEO 和董事，CFO Colette Kress 暂任 CEO；永久继任者尚待确定。
+- FY2027 第二财季截至 2026 年 7 月 26 日：营收 962 亿美元、同比增长 106%，数据中心营收 890 亿美元、同比增长 117%。这些数字发生在 CEO 交接之前。
+- 公司 10-Q 记载与资金提供方签订谅解备忘录，拟长期动员超过 5,000 亿美元第三方资金建设 AI 基础设施；目标并非已经完成的融资。
+- NVIDIA 宣布与 SSI 建立长期合作并投资；该公告未披露投资金额。Alpamayo 和 Nemotron 的技术及性能表述主要来自公司，市场采用与性能尚需独立核验。
+- Reuters 对临时 CEO 的采访报道反映不同市场意见；这些担忧是观点，不能作为交接后经营损害已发生的事实。
 
 ## Score Matrix
 
-**Panel 说明**:vc-en 5 评委全员参与,满分 250。
+| Lens | 安德森 | 格雷厄姆 | 蒂尔 | 纳瓦尔 | 霍夫曼 | Mean |
+|---|---:|---:|---:|---:|---:|---:|
+| Origin / 起源叙事 | 9 | 9 | 8 | 9 | 9 | 8.8 |
+| Category / 品类定义 | 10 | 9 | 10 | 9 | 9 | 9.4 |
+| Leverage / 杠杆点 | 10 | 9 | 10 | 10 | 9 | 9.6 |
+| Identity / 身份系统 | 7 | 7 | 7 | 7 | 8 | 7.2 |
+| Signal / 真实信号 | 8 | 8 | 7 | 8 | 7 | 7.6 |
+| Judge Total | 44 | 42 | 42 | 43 | 42 | — |
 
-| Lens | 安德森 | 格雷厄姆 | 蒂尔 | 纳瓦尔 | 霍夫曼 | Mean（Δ vs v2） |
-|------|--------|----------|------|--------|--------|------|
-| Origin / 起源叙事 | 9 ↔ | 9 ↔ | 8 ↔ | 9 ↔ | 9 ↔ | **8.8** ↔ |
-| Category / 品类定义 | 10 ↔ | 9 ↔ | 10 ↔ | 9 ↔ | 9 ↔ | **9.4** ↔ |
-| Leverage / 杠杆点 | 10 ↔ | 9 ↔ | 10 ↔ | 10 ↔ | 9 ↔ | **9.6** ↔ |
-| Identity / 身份系统 | 9 ↔ | 8 ↔ | 8 ↔ | 8 ↔ | 9 ↔ | **8.4** ↔ |
-| Signal / 真实信号 | 8 ↔ | 8 ↔ | 7 ↔ | 8 ↔ | 8 ↔ | **7.8** ↔ |
-| **Judge Total** | **46** ↔ | **43** ↔ | **43** ↔ | **44** ↔ | **44** ↔ | — |
+**Score Total: 213 / 250**　**Score Normalized: 8.52 / 10**
 
-**Score Total: 220 / 250**（v2: 220 ↔）
-**Score Normalized: 8.80 / 10**（v2: 8.80 ↔）
+## 镜头分析
 
-图例：`↔` 未变(相对 **v2**)。本轮所有镜头净对冲、分数守持——日本主权 AI 对冲 CUDA 侵蚀 + RTX50 叫停。
+- Origin：创始历史本身未因离任改变，均分 8.8。
+- Category：既有平台及品类定位尚无本轮证据证明发生结构性变化，均分 9.4。
+- Leverage：既有生态和资源动员能力仍是基线，融资计划属于目标，均分 9.6。
+- Identity：创始人长期是品牌的主要公众表达者，离任引入身份连续性与继任执行的不确定性；均分 7.2，较 v3 的 8.4 下降 1.2。该判断不是已证实的商业损失。
+- Signal：董事会过渡为重要新信号，未来调查与经营影响尚不确定；均分 7.6，较 v3 的 7.8 下降 0.2。
 
-图例：`↔` 未变 · `↓n` 相对 v1 下移 n 分。
+## Dissent Heatmap / 评委差异
 
----
+本轮 Identity 均为 7；Signal 蒂尔和霍夫曼为 7，其余为 8。差异是 AI 模拟判断，不是人物真实意见。五位评委使用同一模型、不同视角提示，意见并非来自独立的人类受访者。
 
-## Dissent Heatmap / 异议热力图 (v2)
+## 评委意见与核查
 
-```
-Lens        范围    σ     分歧
-Origin       8–9   0.40  █ 稳定共识(↔ 未重审)
-Category     9–10  0.49  █ 近满、重审后 ↔(机器人/主权扩张 vs 已计价)
-Leverage     9–10  0.49  █ 全卷领跑、重审后 ↔(中国 vs 主权净对冲)
-Identity     8–9   0.49  █ 稳定(↔)
-Signal       7–9→7–8 0.40 █ 下修后收敛 ← 蒂尔的 7 被中国事件追认
-```
+五个单独调用的完整模型输出、按镜头引用及独立提示复核结果分别保存在 [judgments.json](https://github.com/zhanglunet/mba/blob/main/published/reports/nvidia/reviews/v4/judgments.json)、[evidence.json](https://github.com/zhanglunet/mba/blob/main/published/reports/nvidia/reviews/v4/evidence.json) 和 [review.json](https://github.com/zhanglunet/mba/blob/main/published/reports/nvidia/reviews/v4/review.json)。独立复核同样使用同一模型，只能辅助识别不支持的断言，不能保证事实或判断正确。
 
-**本轮变化——蒂尔的 7 被现实追认**:v1 Signal 的分歧是安德森/纳瓦尔的 9 vs 蒂尔的 7(蒂尔独疑对华管制 + 周期性)。`001`/`002`(中国停滞、H200 受阻)把那条被点名的风险变成现实后,安德森/纳瓦尔各 −1 向蒂尔靠拢,Signal 8.2→7.8。**蒂尔守 7 不动,成了唯一提前给中国风险定价的人**——与微软那卷同构:事件在追认 v1 的少数派。
+- **安德森**：This is where the founder-thesis hits: my 2007 Part 9 is blunt — if no founder can be CEO, sell the company. Huang's resignation (2026-11-12), an interim CFO-CEO, and Reuters reporting 'differing views' among investors and analysts about the interim leadership means thesis, narrative, and operating leader no longer point one direction. This is demonstrated leadership discontinuity, not just uncertainty — 9 → 7. But it's an interim appointment days old; no demonstrated damage to the identity system itself, so not lower.
+- **格雷厄姆**：NVIDIA's identity was unusually founder-anchored — 30 years, one CEO, founder mode incarnate. The verified resignation (2026-11-12-nvidia-152) breaks that anchor as a matter of fact, and Reuters (2026-11-13-nvidia-reuters-kress) shows unresolved disagreement about interim leadership. No demonstrated damage yet, but identity coherence itself is now genuinely uncertain rather than settled. 8 → 7.
+- **蒂尔**：This is the lens the transition actually hits. NVIDIA's identity is unusually founder-shaped — Huang has been the narrative for thirty years, and my own heuristic is that 'a startup messed up at its foundation cannot be fixed.' An interim CEO (Kress) means the identity system is in an unresolved state: Reuters reports only differing investor and analyst views, not demonstrated continuity or demonstrated damage. I mark down one point for demonstrated discontinuity of the founder-identity link itself, and no further — the rest is uncertainty, not evidence of incoherence.
+- **纳瓦尔**：This is where the event lands. Jensen's name on the line — accountable judgment over thirty years — was part of the brand's identity. That name stepped off (`152`). Reuters reports differing views about Kress's interim leadership (`kress`); that is uncertainty, not demonstrated damage — but identity is precisely the lens where the departure of the long-term person at the center of the long-term game must be priced. 8 → 7: one point for the accountable founder exiting, no more, because the institutional brand and board continuity remain and nothing shows actual incoherence.
+- **霍夫曼**：Jensen Huang resigning as President and CEO (2026-11-12, board-confirmed) with CFO Colette Kress as interim CEO strikes directly at identity coherence: for three decades the brand's identity system has been founder-led — Huang IS the narrative layer. The verified Reuters piece attributes differing views among investors, analysts and industry sources about the interim leadership — that is demonstrated uncertainty about whether the identity holds without the founder, so −1, but no verified post-transition identity damage yet.
 
----
+## Final Verdict / 结论
 
-## 影响力构造分析 (v2 — 护城河未动、版图在轮动)
+本次下调主要反映身份和信号的不确定性，不是对离任原因、调查结果或交接后业绩的结论。董事会调查结果、永久 CEO 人选和下一财季业绩均需要后续跟进；原有监测事件尚未全部独立核验，不将其标记为已消费。
 
-```
-创始叙事(黄仁勋 · Denny's 起家 · 两度濒死 · 30 年)— 稳定 ↔ 8.8
-      │
-      ▼
-CUDA 近二十年生态锁定 + 芯片/网络/系统/软件全栈 — Leverage 9.6 全卷领跑
-      │
-      ├──→ ⚠ 中国版图流失(NEW · watch 001/002,Signal 主驱动·负)
-      │      对华销售停滞 · 华为等本土领先 · H200 出货"极少"
-      │      → v1 蒂尔点名的"对华出口管制"风险现实兑现
-      │
-      ├──→ ✚ 主权 AI 新战场(NEW · watch 004,pos)
-      │      与日本政府共建全球首个国家级 AI 基础设施
-      │      → 品类/杠杆向"主权算力"扩张,对冲中国流失
-      │
-      ├──→ ✚ 机器人/边缘(NEW · watch 003 P2,pos)
-      │      Jetson Thor 面向主流机器人与边缘 AI
-      │      → 品类版图从数据中心 GPU 外延
-      │
-      └──→ 品类创造史(GPU/CUDA/AI 工厂)— 稳定 ↔ 9.4
+## Legal / Disclaimer
 
-【判定】v1:Leverage 9.6 领跑 · Signal 8.2(蒂尔独疑对华管制)
-       v2:Leverage 9.6 ↔(版图轮动)· Signal 8.2→7.8(中国风险显形)
-```
+本报告为 AI 基于公开资料模拟人物视角，评委并非本人、未参与或认可报告。NVIDIA 与 MBA 无赞助或授权关系；信息与分类可能有误，不能构成投资建议。评分采用有局限的七条核查线索及原报告，非完整商业尽调。
 
----
+## Sources / 来源
 
-## 各维度评估 (v2 delta)
-
-### Origin（起源叙事）— 8.8 ↔ / Identity（身份系统）— 8.4 ↔（均未重审）
-无新证据触及。黄仁勋 30 年创始人叙事、品牌身份维持 v1 判断。
-
-### Category（品类定义）— 9.4 ↔（重审后净对冲)
-`003`(Jetson Thor 机器人/边缘)+ `004`(日本国家级 AI 基础设施)确实把品类版图外延到机器人、主权算力;但 Category 已在 9.4 近满,且"NVIDIA 反复定义新范式"本就是 v1 计价的核心。检视后 ↔:扩张确认了品类领导力,但不构成对已近满分数的额外上修。
-
-### Leverage（杠杆点）— 9.6 ↔（重审后净对冲)
-本轮重审镜头之一,结论是 ↔。两股力量在 9.6 天花板上对冲:`001`/`002` 中国市场流失是护城河的一块版图被侵蚀(neg);`004` 主权 AI + `003` 机器人是新版图扩张(pos)。护城河的"总面积"未变,只是"中国 − / 主权 +"的轮动。CUDA 生态锁定这条核心杠杆未被触动。
-
-### Signal（真实信号）— 7.8 ↓0.4（唯一下移维度)
-v1 8.2,是全卷唯一实质分歧,蒂尔独给 7、点名对华出口管制。`001`(对华停滞、华为领先)+ `002`(H200 出货极少)把那条风险变成现实——中国市场在流失。安德森/纳瓦尔各 −1 向蒂尔靠拢;蒂尔守 7(早已定价)、格雷厄姆/霍夫曼守 8。净 −0.4:NVIDIA 需求不由中国单一市场决定,且主权/机器人开出新战场,故只给方向性负信号的价。
-
----
-
-## 核心张力与结论
-
-### 张力:中国流失是"结构性衰退"还是"版图轮动"?
-v2 的争论:对华停滞该按"垄断被地缘击穿"给,还是按"少一块、别处补上"折价?安德森/纳瓦尔按方向下修(各 −1),蒂尔守 7(早已定价),但全 panel 都认 Leverage/Category ↔——因为主权 AI + 机器人在同期开出新战场。共识:中国是"少一块版图"而非"塌一角",故 Signal −0.4、护城河不动。
-
-### 裁决:护城河没动,动的是蒂尔点名的中国这一块
-- **护城河纹丝不动**:Leverage 9.6 ↔、Category 9.4 ↔。中国流失与主权/机器人扩张净对冲。
-- **蒂尔的 7 被现实追认**:Signal 8.2→7.8。他 v1 唯一的减分理由(对华管制)在现实里显形——守 7 的他是唯一提前定价的人。
-- **克制**:NVIDIA 需求非中国单一市场决定,只给方向的价(−0.4),没给结构的价。
-
----
-
-## 总评
-
-**总分**: 220 / 250 · **归一化**: 8.80 / 10（v1: 222 · 8.88）
-
-v1 给 NVIDIA 的画像是"几乎全维近满,唯一分歧是蒂尔式'这种强能持续多久'——核心减分项是对华出口管制"。**v2 的事件流恰好落在那条被点名的风险上**:对华销售停滞、华为领先、H200 出货极少——中国市场在现实里流失;但同期日本国家级 AI 基础设施 + Jetson Thor 机器人开出新战场,部分对冲。222→220,克制下修:护城河(9.6)没动,动的是 Signal 里被蒂尔点名的中国这一块。这一格是"版图轮动"的价,不是"结构衰退"的价。
-
-**建议关注**:对华芯片政策与华为等本土替代的份额演进(Signal 继续下修 / 回升的裁决点)、主权 AI(日本模式)能否规模化复制并计入新增杠杆、机器人/边缘(Jetson Thor)的商业化节奏、云厂商自研芯片 + AMD 的竞争(蒂尔"穿越浪潮"疑虑的另一条线)。
-
----
-
-## Legal, IP & Disclaimer
-
-**版本说明**:本报告为 v2 EVOLUTION 版,在 v1（2026-07-16）基线上,仅消费 Brand Watch 事件流 `watch/nvidia/events.yaml` 中 4 条带原文 URL 与逐字标题引用的事件（`001`/`002`/`003`/`004`）进行定向重打分;未做任何新增外部调研,v2 新事实全部来自上述事件。v1 全部事实与来源以 `versions/v1_2026-07-16.md` 快照为准。
-
-- NVIDIA、英伟达、Huawei/华为、日本政府及相关商标归各自合法权利人所有;本报告仅为识别、评论、研究目的提及,与 NVIDIA 无任何赞助、授权或合作关系。
-- 5 位评委(安德森、格雷厄姆、蒂尔、纳瓦尔、霍夫曼)评分与评语均为 AI 基于其公开资料的 in-character 模拟推断,代表合乎逻辑的分析视角,非本人真实意见。
-- 本轮新事实(对华销售、H200 出货、Jetson Thor、日本 AI 基础设施)为第三方媒体/官方报道口径;出口管制博弈的实际口径以官方为准,带 `[未核实]` 性质的传闻未作打分依据。
-- 本报告不构成投资建议、证券分析或任何形式的商业尽调建议。
-
----
-
-## Sources / 来源（v2 增量）
-
-v1 基线来源见 `versions/v1_2026-07-16.md`。v2 增量 = 4 条 watch 事件原文(唯一新事实来源,无新增外部调研;完整源 feed 见 `watch/nvidia/events.yaml`):
-
-1. AP News — Nvidia's AI chip sales in China stall, as local chipmakers like Huawei take the lead（2026-06-28,neg · `2026-06-28-nvidia-001`）
-2. CNBC — U.S. trade official says 'very few' Nvidia H200 AI chips have been shipped to China（2026-07-14,mixed · `2026-07-14-nvidia-002`）
-3. NVIDIA 官方 — NVIDIA Introduces New Jetson Thor Computers to Advance Mainstream Robotics and Edge AI（2026-07-15,P2 pos · `2026-07-15-nvidia-003`）
-4. NVIDIA 官方 — Japan Government, Industrial Leaders and NVIDIA Launch the World's First National AI Infrastructure（2026-07-16,pos · `2026-07-16-nvidia-004`）
-
-各评委 v2 定向重打分记录见 `reviews/v2_rescores.md`(结尾列消费事件 id)。
-
----
+- [董事会 CEO 交接公告](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx)
+- [FY2027 Q2 财报](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/)
+- [FY2027 Q2 10-Q](https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf)
+- [SSI 合作公告](https://investor.nvidia.com/news/press-release-details/2026/Ilya-Sutskevers-Safe-Superintelligence-Inc--and-NVIDIA-Announce-Long-Term-Strategic-Partnership/default.aspx)
+- [Reuters 对临时 CEO 的报道](https://www.reuters.com/business/colette-kress-cfo-who-challenged-huangs-bets-is-nvidias-interim-ceo-2026-11-13/)
+- [Alpamayo 商用公告](https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/)
+- [Nemotron 技术博客](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/)
 
 ## Versions
 
-- v1 — 2026-07-16 — initial（vc-en · 222/250 · 8.88）
-- v2 — 2026-07-18 — EVOLUTION（对华管制风险:Signal ↓0.4）· 220/250 · 8.80；快照 [v2](versions/v2_2026-07-18.html)
-- v3 — 2026-07-20 — EVOLUTION（消费 watch:日本主权 AI 对冲 CUDA 侵蚀,净持平）· **220/250 · 8.80**
+- [v3 — 2026-07-20](versions/v3_2026-07-20.md)，220/250
+- v4 — 2026-11-14，213/250，领导层交接重审
