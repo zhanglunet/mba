@@ -99,3 +99,26 @@ jobs:
           fi
           git commit -m "chore(watch): L1 预筛结果 $(date -u +%Y-%m-%d) [skip ci]"
           git push
+
+      - name: Google re-audit live replay (test branch only)
+        if: github.ref == 'refs/heads/test/google-reaudit-live' && inputs.brand == 'google'
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MBA_CLASSIFY_MODEL: ${{ vars.MBA_CLASSIFY_MODEL }}
+          GLM_BASE_URL: ${{ vars.GLM_BASE_URL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/google-replay
+          python3 scripts/watch-tools/reaudit_evidence.py watch/google/events.yaml --brand google --after 2026-07-20 --auto-official --fetch-limit 30 --output /tmp/google-replay/evidence.json
+          python3 scripts/watch-tools/reaudit_judges.py --evidence /tmp/google-replay/evidence.json --report published/reports/google/report.md --panel published/reports/google/panel.yaml --panel-registry metric-brand-auditor/panels/vc-en.yaml --brand google --as-of "$(date -u +%F)" --output /tmp/google-replay/judgments.json
+          python3 scripts/watch-tools/reaudit_review.py --judgments /tmp/google-replay/judgments.json --evidence /tmp/google-replay/evidence.json --output /tmp/google-replay/review.json
+          python3 scripts/watch-tools/reaudit_report.py --draft /tmp/google-replay/judgments.json --review /tmp/google-replay/review.json --evidence /tmp/google-replay/evidence.json --output /tmp/google-replay/report-draft.md
+      - uses: actions/upload-artifact@v4
+        if: always() && github.ref == 'refs/heads/test/google-reaudit-live' && inputs.brand == 'google'
+        with:
+          name: google-reaudit-live
+          path: /tmp/google-replay/
+          if-no-files-found: error
