@@ -129,7 +129,7 @@ jobs:
             --title "draft(openai): 自动重审 $DATE" --body-file /tmp/reaudit-pr.md
 
       - name: Preserve re-audit diagnostics
-        if: always() && steps.evidence.outputs.ready == 'true'
+        if: always() && steps.evidence.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: re-audit-diagnostics-openai
