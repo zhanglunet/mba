@@ -1,0 +1,42 @@
+{
+  "status": "draft",
+  "evidence_review": "passed",
+  "reviews": [
+    {
+      "judge": "pmarca",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "NVIDIA's own press release (verification source) confirms Huang's resignation on 2026-11-12 and Kress as interim CEO, and Reuters is appropriately cited for attributed differing views, not established outcomes. The reasoning (leadership discontinuity justifying 9→7, but not lower since no demonstrated damage yet) follows from the sources."
+    },
+    {
+      "judge": "paulg",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "The verified NVIDIA press release confirms Huang's resignation and Kress as interim CEO, and the Reuters source explicitly attributes uncertainty about interim leadership to named parties. The reasoning draws only the modest inference that founder-anchored identity coherence is now uncertain, explicitly disclaiming demonstrated damage, so it does not overclaim."
+    },
+    {
+      "judge": "pthiel",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "Verified NVIDIA press release and Reuters report confirm Huang's resignation and Kress's interim appointment; the modest one-point markdown for factual discontinuity of the founder-identity link is directly supported, and the judge correctly declines to infer further damage from unattributed uncertainty."
+    },
+    {
+      "judge": "naval",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "NVIDIA's own press release (verification source) confirms Huang resigned and Kress became interim CEO, supporting the core factual claim. The reason correctly treats Reuters's differing views as uncertainty rather than demonstrated damage, prices only a modest one-point change, and notes remaining brand/board continuity. No causal or post-event performance claims overreach the evidence."
+    },
+    {
+      "judge": "rhoffman",
+      "lens": "identity",
+      "verdict": "supported",
+      "reason": "Board press release confirms Huang's resignation and Kress interim appointment; Reuters verifies attributed uncertainty about interim leadership. The reasoning explicitly avoids claiming post-transition identity damage, only pricing uncertainty — consistent with what sources support."
+    },
+    {
+      "judge": "rhoffman",
+      "lens": "signal",
+      "verdict": "supported",
+      "reason": "Reasoning correctly notes Q2 revenue predates the transition and cannot show post-transition performance; Reuters piece only supports attributed uncertainty. A −1 adjustment for verified uncertainty plus prior priced items is a defensible, evidence-bounded judgment."
+    }
+  ]
+}
