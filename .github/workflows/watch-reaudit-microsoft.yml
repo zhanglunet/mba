@@ -124,6 +124,6 @@ jobs:
           git add "$DEST"
           git commit -m "draft(microsoft): automated review $DATE"
           git push origin "$BRANCH"
-          printf '%s\n' '自动生成的 Microsoft 重审草稿。来源匹配只确认公司公告内容，五位评委和复核均为 AI 模拟；需人工检查证据、评分和时序。此 PR 不修改线上报告或消费事件。' > /tmp/reaudit-pr.md
+          printf '%s\n' '自动生成的 Microsoft 重审草稿。来源匹配只确认公司公告内容，评委和复核均为 AI 模拟；需人工检查证据、评分和时序。此 PR 不修改线上报告或消费事件。' > /tmp/reaudit-pr.md
           gh pr create --draft --base main --head "$BRANCH" \
             --title "draft(microsoft): 自动重审 $DATE" --body-file /tmp/reaudit-pr.md
