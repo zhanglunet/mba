@@ -1,0 +1,20 @@
+{
+  "status": "draft",
+  "evidence_review": "passed",
+  "reviews": [
+    {
+      "judge": "pmarca",
+      "lens": "leverage",
+      "verdict": "supported",
+      "reason": "All five cited items are verified official Google announcements whose titles directly support the factual claims (Gemini 4 Hydrogen in Search, developer release, Decisions API, CarPlay availability, Wallet integration). The reasoning correctly frames these as distribution/embedding moves and explicitly acknowledges they are company statements of releases, not verified adoption outcomes, warranting only +1. No chronology issues; regulatory non-resolution is a conservative default, not an unsupported factual claim."
+    },
+    {
+      "judge": "pmarca",
+      "lens": "signal",
+      "verdict": "supported",
+      "reason": "The three cited items (Gemini 4 Hydrogen developer release, Decisions API, eyewear pre-order) are verified official announcements supporting the build-and-ship characterization. The judge explicitly limits the inference to shipping activity rather than adoption/performance, and does not claim resolution of antitrust/lawsuit exposures. Reasoning is proportionate to the evidence scope."
+    }
+  ],
+  "evidence_sha256": "793754d568be2d75a95c523a2f47de93aa88c3ee836d5945730372826e987852",
+  "judgments_sha256": "4ec4bc04491c1d23755f5df9d3bb4b65ebbc7d49e7bcb427c8963b837cd1ff7a"
+}
