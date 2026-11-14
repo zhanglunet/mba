@@ -43,10 +43,16 @@ class TextParser(HTMLParser):
         self.date_text = ''
         self.in_date = False
         self.in_title = False
+        self.in_jsonld = False
+        self.jsonld = []
+        self.jsonld_buffer = ''
     def handle_starttag(self, tag, attrs):
         values = dict(attrs)
         if tag == 'title':
             self.in_title = True
+        if tag == 'script' and values.get('type') == 'application/ld+json':
+            self.in_jsonld = True
+            self.jsonld_buffer = ''
         if tag == 'span' and 'module_date-text' in (values.get('class') or '').split():
             self.in_date = True
         if tag == 'meta' and values.get('property') == 'og:title':
@@ -54,6 +60,9 @@ class TextParser(HTMLParser):
         if tag == 'meta' and (values.get('property') in ('article:published_time', 'og:published_time') or values.get('name') in ('date', 'pubdate', 'publish-date')):
             self.source_date = (values.get('content') or '')[:10]
     def handle_endtag(self, tag):
+        if tag == 'script' and self.in_jsonld:
+            self.in_jsonld = False
+            self.jsonld.append(self.jsonld_buffer)
         if tag == 'title':
             self.in_title = False
         if tag == 'span' and self.in_date:
@@ -64,9 +73,12 @@ class TextParser(HTMLParser):
             self.page_title += data
         if self.in_date:
             self.date_text += data
+        if self.in_jsonld:
+            self.jsonld_buffer += data
 
 
-TRUSTED_SOURCE_HOSTS = frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com', 'www.reuters.com', 'apnews.com'})
+OFFICIAL_HOSTS = {'nvidia': frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'}), 'apple': frozenset({'www.apple.com'})}
+TRUSTED_SOURCE_HOSTS = frozenset().union(*OFFICIAL_HOSTS.values(), {'www.reuters.com', 'apnews.com'})
 
 
 def allowed_source_url(url):
@@ -102,6 +114,24 @@ def fetch_source(event):
             if 'html' in content_type:
                 parser = TextParser()
                 parser.feed(text)
+                if not parser.source_date:
+                    found = set()
+                    def visit(value):
+                        if isinstance(value, dict):
+                            if isinstance(value.get('datePublished'), str):
+                                found.add(value['datePublished'][:10])
+                            for child in value.values():
+                                visit(child)
+                        elif isinstance(value, list):
+                            for child in value:
+                                visit(child)
+                    for block in parser.jsonld:
+                        try:
+                            visit(json.loads(block))
+                        except (ValueError, RecursionError):
+                            pass
+                    if len(found) == 1:
+                        parser.source_date = next(iter(found))
                 if not parser.source_date and parser.date_text.strip():
                     try:
                         parser.source_date = datetime.strptime(parser.date_text.strip(), '%B %d, %Y').date().isoformat()
@@ -113,14 +143,14 @@ def fetch_source(event):
         return {'fetch_status': 'error', 'error': str(exc), 'quote_match': False, 'verification': 'unverified'}
 
 
-NVIDIA_OFFICIAL_HOSTS = frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'})
+NVIDIA_OFFICIAL_HOSTS = OFFICIAL_HOSTS['nvidia']
 
 
-def official_statement_evidence(event, source):
+def official_statement_evidence(event, source, brand='nvidia'):
     """Confirm an attributable company statement, not its underlying factual truth."""
     url = event.get('url', '')
     parsed = urlparse(url)
-    if (not allowed_source_url(url) or parsed.hostname not in NVIDIA_OFFICIAL_HOSTS
+    if (not allowed_source_url(url) or parsed.hostname not in OFFICIAL_HOSTS.get(brand, frozenset())
             or event.get('source_type') != 'official' or source.get('final_url') != url
             or source.get('fetch_status') != 'ok' or not source.get('quote_match')):
         raise ValueError('not an eligible direct company source')
@@ -137,7 +167,7 @@ def official_statement_evidence(event, source):
         raise ValueError('source title and quote differ')
     return {**event, 'verification': 'verified', 'verification_scope': 'official_statement',
             'verification_source': url, 'verification_excerpt': quote,
-            'verification_reason': 'Exact dated title verified on NVIDIA source; confirms publication only, not independent factual truth.',
+            'verification_reason': f'Exact dated title verified on {brand} official source; confirms publication only, not independent factual truth.',
             'verified_at': date.today().isoformat(), 'verification_by': 'automated-source-match'}
 
 
@@ -164,7 +194,8 @@ def main():
     parser.add_argument('--fetch-limit', type=int, default=0, help='fetch at most this many sources')
     parser.add_argument('--after', help='select events after an ISO date, including same-day additions with a snapshot')
     parser.add_argument('--baseline-events', type=Path)
-    parser.add_argument('--auto-official', action='store_true', help='record matching dated NVIDIA statements as attributed evidence')
+    parser.add_argument('--auto-official', action='store_true', help='record matching dated company statements as attributed evidence')
+    parser.add_argument('--brand', choices=sorted(OFFICIAL_HOSTS), default='nvidia')
     args = parser.parse_args()
     events = yaml.safe_load(args.events.read_text(encoding='utf-8'))
     if not isinstance(events, list):
@@ -181,10 +212,10 @@ def main():
         result = [event for event in result if date.fromisoformat(str(event['date'])) > cutoff or (ids is not None and date.fromisoformat(str(event['date'])) == cutoff and event['id'] not in ids)]
     if args.auto_official and any(not allowed_source_url(event['url']) for event in result):
         import reaudit_feed
-        entries = reaudit_feed.fetch_feeds()
+        entries = reaudit_feed.fetch_feeds(args.brand)
         for event in result:
             if not allowed_source_url(event['url']):
-                matched = reaudit_feed.match_official(event, entries)
+                matched = reaudit_feed.match_official(event, entries, args.brand)
                 if matched:
                     event.update(matched)
     candidates = [event for event in result if allowed_source_url(event['url'])]
@@ -193,7 +224,7 @@ def main():
         event.update(fetched)
         if args.auto_official:
             try:
-                event.update(official_statement_evidence(event, fetched))
+                event.update(official_statement_evidence(event, fetched, args.brand))
             except ValueError:
                 pass
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2, default=str) + '\n', encoding='utf-8')

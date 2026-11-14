@@ -27,7 +27,8 @@ def build_draft(draft, review, baseline, evidence):
     if draft.get('status') != 'draft' or draft.get('baseline') != baseline:
         raise ValueError('draft baseline mismatch')
     judgments = draft.get('judgments')
-    if not isinstance(judgments, list) or len(judgments) != len(JUDGES) or {j.get('judge') for j in judgments} != set(JUDGES):
+    roster = list(baseline.get('scores', {}))
+    if not roster or not isinstance(judgments, list) or len(judgments) != len(roster) or {j.get('judge') for j in judgments} != set(roster):
         raise ValueError('judge roster mismatch')
     if review.get('judgments_sha256') != judgment_hash(judgments):
         raise ValueError('review does not match judgments')
@@ -43,12 +44,14 @@ def build_draft(draft, review, baseline, evidence):
     by_judge = {j['judge']: j for j in judgments}
     total = sum(sum(j['scores'].values()) for j in judgments)
     previous = sum(sum(j.values()) for j in scores.values())
-    out = ['# NVIDIA 自动重审草稿', '', '**状态：待人工复核，未发布。** 评委与证据复核均为 AI 模拟。', '',
-           f'基线 {baseline["version"]}: {previous}/250；本轮提案 {total}/250（{total/25:.2f}/10）。', '',
-           '| Lens | '+ ' | '.join(JUDGES)+' | 均分 |', '|---|---:|---:|---:|---:|---:|---:|']
+    maximum = len(roster) * 50
+    brand = draft.get('brand') or 'unknown'
+    out = [f'# {brand} 自动重审草稿', '', '**状态：待人工复核，未发布。** 评委与证据复核均为 AI 模拟。', '',
+           f'基线 {baseline["version"]}: {previous}/{maximum}；本轮提案 {total}/{maximum}（{total*10/maximum:.2f}/10）。', '',
+           '| Lens | '+ ' | '.join(roster)+' | 均分 |', '|---|'+'---:|'*(len(roster)+1)]
     for lens in LENSES:
-        vals = [by_judge[j]['scores'][lens] for j in JUDGES]
-        out.append('| '+lens+' | '+' | '.join(map(str, vals))+' | '+f'{sum(vals)/5:.1f}'+' |')
+        vals = [by_judge[j]['scores'][lens] for j in roster]
+        out.append('| '+lens+' | '+' | '.join(map(str, vals))+' | '+f'{sum(vals)/len(roster):.1f}'+' |')
     out += ['', '## 逐项变化与证据', '']
     for judge, lens in changed:
         item = by_judge[judge]

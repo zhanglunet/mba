@@ -17,3 +17,11 @@ class FeedTest(unittest.TestCase):
         self.assertIsNone(mod.match_official(event,feed))
         event['date']='2026-11-14'
         self.assertIsNone(mod.match_official(event,feed))
+
+class AppleFeedTest(unittest.TestCase):
+    def test_apple_atom_entry_has_direct_official_url(self):
+        xml=b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Apple Launch</title><updated>2026-11-13T12:00:00Z</updated><link href="https://www.apple.com/newsroom/2026/11/launch/"/></entry></feed>'
+        feed=mod.parse_feed(xml,brand='apple')
+        self.assertEqual(feed[0]['date'],'2026-11-13')
+        result=mod.match_official({'id':'a','quote':'Apple Launch','date':'2026-11-13','url':'https://news.google.com/a'},feed,brand='apple')
+        self.assertEqual(result['url'],'https://www.apple.com/newsroom/2026/11/launch/')

@@ -37,7 +37,8 @@ def validate_reviews(reviews, required):
 def critique(judgments, evidence, baseline, provider):
     if not provider[1]:
         raise ValueError('no model credentials')
-    if len(judgments) != len(JUDGES) or {j.get('judge') for j in judgments} != set(JUDGES):
+    roster = set(baseline)
+    if not roster or len(judgments) != len(roster) or {j.get('judge') for j in judgments} != roster:
         raise ValueError('judge roster mismatch')
     by_id = {e['id']: e for e in evidence}
     all_reviews = []
