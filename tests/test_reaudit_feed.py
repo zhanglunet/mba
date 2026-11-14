@@ -41,3 +41,11 @@ class GoogleFeedTest(unittest.TestCase):
         event={'id':'g','quote':'Google Launch','date':'2026-11-13','url':'https://news.google.com/a'}
         self.assertEqual(mod.match_official(event,feed,brand='google')['url'],'https://blog.google/products/launch/')
         self.assertIsNone(mod.match_official(event,feed,brand='apple'))
+
+class MicrosoftFeedTest(unittest.TestCase):
+    def test_microsoft_rss_profile_rejects_other_brands(self):
+        xml=b'<rss><channel><item><title>Microsoft Launch</title><link>https://blogs.microsoft.com/blog/launch/</link><pubDate>Thu, 12 Nov 2026 17:00:03 +0000</pubDate></item></channel></rss>'
+        feed=mod.parse_feed(xml,brand='microsoft')
+        event={'id':'m','quote':'Microsoft Launch','date':'2026-11-12','url':'https://news.google.com/a'}
+        self.assertEqual(mod.match_official(event,feed,brand='microsoft')['url'],'https://blogs.microsoft.com/blog/launch/')
+        self.assertIsNone(mod.match_official(event,feed,brand='apple'))

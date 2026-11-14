@@ -77,7 +77,7 @@ class TextParser(HTMLParser):
             self.jsonld_buffer += data
 
 
-OFFICIAL_HOSTS = {'nvidia': frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'}), 'apple': frozenset({'www.apple.com'}), 'google': frozenset({'blog.google'}), 'amazon': frozenset({'www.aboutamazon.com'})}
+OFFICIAL_HOSTS = {'nvidia': frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'}), 'apple': frozenset({'www.apple.com'}), 'google': frozenset({'blog.google'}), 'amazon': frozenset({'www.aboutamazon.com'}), 'microsoft': frozenset({'blogs.microsoft.com'})}
 TRUSTED_SOURCE_HOSTS = frozenset().union(*OFFICIAL_HOSTS.values(), {'www.reuters.com', 'apnews.com'})
 
 
@@ -114,24 +114,29 @@ def fetch_source(event):
             if 'html' in content_type:
                 parser = TextParser()
                 parser.feed(text)
-                if not parser.source_date:
-                    found = set()
-                    def visit(value):
-                        if isinstance(value, dict):
-                            if isinstance(value.get('datePublished'), str):
-                                found.add(value['datePublished'][:10])
-                            for child in value.values():
-                                visit(child)
-                        elif isinstance(value, list):
-                            for child in value:
-                                visit(child)
-                    for block in parser.jsonld:
-                        try:
-                            visit(json.loads(block))
-                        except (ValueError, RecursionError):
-                            pass
-                    if len(found) == 1:
-                        parser.source_date = next(iter(found))
+                found = set()
+                headlines = set()
+                def visit(value):
+                    if isinstance(value, dict):
+                        if isinstance(value.get('datePublished'), str):
+                            found.add(value['datePublished'][:10])
+                        kind = value.get('@type')
+                        if (kind in ('Article', 'NewsArticle') or isinstance(kind, list) and any(k in ('Article', 'NewsArticle') for k in kind)) and isinstance(value.get('headline'), str):
+                            headlines.add(value['headline'].strip())
+                        for child in value.values():
+                            visit(child)
+                    elif isinstance(value, list):
+                        for child in value:
+                            visit(child)
+                for block in parser.jsonld:
+                    try:
+                        visit(json.loads(block))
+                    except (ValueError, RecursionError):
+                        pass
+                if len(headlines) == 1:
+                    parser.og_title = next(iter(headlines))
+                if not parser.source_date and len(found) == 1:
+                    parser.source_date = next(iter(found))
                 if not parser.source_date and parser.date_text.strip():
                     try:
                         parser.source_date = datetime.strptime(parser.date_text.strip(), '%B %d, %Y').date().isoformat()
