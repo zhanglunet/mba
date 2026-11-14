@@ -53,3 +53,17 @@ class DynamicDraftTest(unittest.TestCase):
         result=mod.build_draft(draft,review,baseline,evidence)
         self.assertIn('anthropic',result)
         self.assertIn('78/100',result)
+
+class DraftContextTest(unittest.TestCase):
+    def test_unchanged_draft_includes_evidence_and_discloses_no_change_review(self):
+        from reaudit_judges import JUDGES,LENSES
+        base={'version':'v4','scores':{j:dict.fromkeys(LENSES,8) for j in JUDGES}}
+        evidence=[{'id':'e1','date':'2026-11-15','title':'Official announcement','verification':'verified','verification_source':'https://example.com/a','verification_excerpt':'example','verification_reason':'reviewed'}]
+        judgments=[{'judge':j,'scores':dict(base['scores'][j]),'as_of':'2026-11-16','reason':'No material change','lens_evidence':{k:['e1'] for k in LENSES},'lens_reasons':dict.fromkeys(LENSES,'unchanged')} for j in JUDGES]
+        draft={'status':'draft','brand':'apple','baseline':base,'judgments':judgments,'evidence_sha256':mod.evidence_hash(evidence)}
+        review={'evidence_review':'passed','judgments_sha256':mod.judgment_hash(judgments),'evidence_sha256':mod.evidence_hash(evidence),'reviews':[]}
+        result=mod.build_draft(draft,review,base,evidence)
+        self.assertIn('Official announcement',result)
+        self.assertIn('https://example.com/a',result)
+        self.assertIn('未对维持不变的评分进行独立复核',result)
+        self.assertIn('No material change',result)
