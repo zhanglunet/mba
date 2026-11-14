@@ -2635,3 +2635,79 @@
   source_type: media
   note: "LLM 预分类建议(high):740亿美元重大投资计划，金额明确但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-13-spacex-173
+  date: 2026-11-13
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "同样是科技巨头IPO，Anthropic为何比SpaceX上市定价更保守"
+  quote: "同样是科技巨头IPO，Anthropic为何比SpaceX上市定价更保守"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NM2tuQjNJR1Jfeld4aXBwWFlSTzhITkN0LS14LVljOENEYUVIVGNuQ1plcE9HM1RWelV0Mlk5S1c4MFUxRzMydV9MeWRaMkNUNHNr?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):涉SpaceX上市定价分析，属比较评论但有信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-spacex-174
+  date: 2026-11-14
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "产业观察｜SpaceX与特斯拉推进合并谈判：3个维度看懂背后的战略逻辑"
+  quote: "产业观察｜SpaceX与特斯拉推进合并谈判：3个维度看懂背后的战略逻辑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMTHdTb0tnbHR0M3JJTVk2UUpSdlZMUEk0Zng4eXRqbkhBNzZxVThuaWlKNEtrdXJxeVktVWFqaC1VbUc4dWNSekVUcVhfSmx4UGFuVFdXQktaaTg?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):SpaceX与特斯拉合并谈判，重大战略事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-spacex-175
+  date: 2026-11-13
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic与SpaceX算力协议据悉难以长久 马斯克秒回：乐意收回所有算力"
+  quote: "Anthropic与SpaceX算力协议据悉难以长久 马斯克秒回：乐意收回所有算力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9LZDE5cHhab0Q2am1UQ1UzaEFCT2VXbC15NkFWRkhaMlI1cHczdTNuT0ZIaTE3VU13N0lPVm53OERhZEc1TDNsMg?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):算力协议存续争议，马斯克公开表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-spacex-176
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX表示：超重型助推器已按计划与星舰飞船分离"
+  quote: "SpaceX表示：超重型助推器已按计划与星舰飞船分离"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBvZXBZZXlyb2NxdmNEUi1tTmhoTHliSlg2ZWE0cENKQ1c0RWUwTDhEckpDY3hQZjM1V3pWX2N2Um9lclBPa05BbWFJMV96c1Ewb21wc3ltUXg3WnJWczQ4Mg?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰发射关键节点官方进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-spacex-177
+  date: 2026-11-14
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX星舰超重型助推器捕获回收取消，海上溅落时起火燃烧"
+  quote: "SpaceX星舰超重型助推器捕获回收取消，海上溅落时起火燃烧"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTFAyTmlQVm9nMndIR2cyaS0zdGlHU2haZjdVOVdlOVgyN3FxRHh0UWJDYW1BVnBIZS1IbFlfeEFCdkFaS0Rxd1RRcDBSQjVOQWt3aWhOOTlMaU1lU1dKQUVqUTJLUUxremMxaWZCSDVB?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):第15次试飞助推器回收失败起火。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

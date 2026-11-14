@@ -843,3 +843,64 @@
   source_type: media
   note: "LLM 预分类建议(med):德国安全疑虑或禁用大疆，涉政策风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-13-dji-055
+  date: 2026-11-13
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "大疆将调整部分产品的建议零售价"
+  quote: "大疆将调整部分产品的建议零售价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxOY1doeUxpUXkzYTJIemMyVE9nNGdXdXFsWHhLNU9kcnpjVFoxZHN2YWJDWTNnQm9WOEEyUnU4dFhhMWpVa2dvWWpwSjFaY1RGQlR1b21QVWtvYnY2c1VOcVlGQXkyNEhsanNJdm4xcVNXYTl6Q1BsVWNFdFVwelpUOA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):官方调价公告，影响一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-dji-056
+  date: 2026-11-12
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "大疆官宣调价！受半导体及存储成本大涨影响，5天后将涨价"
+  quote: "大疆官宣调价！受半导体及存储成本大涨影响，5天后将涨价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUDFTMjg3MGtHMnBNNVdRMlo2S1gzbW1LSExkS1pzeVBLWl81bWFYcW1oVjNsT0Z3WDY1R1Z4X3NLNGxxWnNwWVY4R3RONU9hejVfd2s3V01Yd3I4ZTdIR2xTRWFJUQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):官方调价事件，影响面广但属商业决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-dji-057
+  date: 2026-11-13
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "大疆正式宣布调价：受成本持续大幅上涨的影响，11月18日00:00起，对部分产品的建议零售价进行调整"
+  quote: "大疆正式宣布调价：受成本持续大幅上涨的影响，11月18日00:00起，对部分产品的建议零售价进行调整"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTFBwM2lkZzJ4cFNNNGY2c3JydjcwMEZJb01hYnhUUUktM3V5RWY0MzRFWGtfakJpWWpsLThmVDc5S1pNdFlWaEtKUFFVQkJIRnBn?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):信息最全的调价公告，信息量最大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-dji-058
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "因半导体及存储等零部件成本持续上涨，大疆部分产品11月18日起上调售价"
+  quote: "因半导体及存储等零部件成本持续上涨，大疆部分产品11月18日起上调售价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SMEJ3Tm1PY3JyUTIzUDFQeS1lbWlMRnAxV2JqWDJvcWJ4cVVoeHFFRVZCT2c4MHdlc3ZBdFAwS0VZd01rZ091RVYxRzJ3Y1k4WWFIQ010RWF5djNta2FSdA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方涨价事件，影响面广。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

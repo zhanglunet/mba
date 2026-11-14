@@ -294,15 +294,15 @@
       "brand_cn": "NVIDIA / 英伟达",
       "brand_en": "NVIDIA",
       "ticker": null,
-      "version": "v3",
-      "audit_date": "2026-07-20",
+      "version": "v4",
+      "audit_date": "2026-11-14",
       "panel": "vc-en",
       "score": {
-        "total": 220,
+        "total": 213,
         "max": 250,
-        "normalized": 8.8
+        "normalized": 8.52
       },
-      "tl_dr": "EVOLUTION v3(watch 事件流):一次\"版图轮动、净对冲\"的重审,分数守持 220/8.80。正向——黄仁勋访日、 NVIDIA 联手日本政经界发布全球首个国家级 AI 基础设施 + Together AI(英伟达为股东)融资,主权 AI 是 巨量新需求,把 v2 丢掉的中国流失部分对冲回来;负向——RTX 50 SUPER 因显存太贵叫停出货 +「大客户转向、 CUDA 垄断崩塌」叙事。Leverage 已在 9.6(近满)不越顶,CUDA 侵蚀是未兑现 watch 项、RTX50 属消费级小盘, 正负净对冲,5 位评委均不动。220→220(8.80 ↔),克制守持:主权 AI 落地为早期、CUDA「崩塌」为叙事口径, 只作方向观察不改分,留待兑现再重估。",
+      "tl_dr": "v4 以已核验的管理层交接、财报和融资合作信息重审。创始历史与既有平台能力维持基线； 品牌身份和信号因交接不确定性下调。213/250（8.52），AI 模拟评审，非人物本人意见。",
       "html_url": "/reports/nvidia/",
       "pdf_url": null,
       "api_url": "/api/reports/nvidia.json"

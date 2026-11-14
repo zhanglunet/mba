@@ -2672,3 +2672,139 @@
   source_type: media
   note: "LLM 预分类建议(high):关闭30年官方社区，服务收缩事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-13-apple-176
+  date: 2026-11-13
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Apple HomeView available today"
+  quote: "Apple HomeView available today"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTFA4V182WGV5QTByS3VlUmxVLVo0Zy1iVndBaW1jRHU5R09MclZ4QmQwMTBobU04RXE3SEJ6a0pkUmdUcjZ6WmZjOVdDM0h5alB5STNKSkswT0xGSGJRakpqU1RiU3hNSnYxN0sza2o4UjNDUXh5djQ4S2Rn?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方新品正式发布上线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-177
+  date: 2026-11-13
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果宣布，Apple 支持社区 11 月 20 日永久关停！"
+  quote: "苹果宣布，Apple 支持社区 11 月 20 日永久关停！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wazBiM0t4QlpvOWNaT2FuOG96TEhRVEZTbU01OHdQV2lrMmd1UWtidm1PMnhpbU5EeEVYYmgtLVVScGROQThQNWI4ZnB0UTJNc3hTdVgxQkdCaU5m?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):官方社区永久关停,服务收缩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-178
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果两款新品上市，国内用户暂时买不到"
+  quote: "苹果两款新品上市，国内用户暂时买不到"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1fenpqa0doa0JZNTVsOFRKbTNHb21wZXdERlBmSE9MeXlyenhnYUJnSkRtNUg4ZzQ0RTM2Q2hSVlZzYjdGSmZHanExV0xkR1lkd2pZM1M3bURPMEEw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):新品上市但国内不可购。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-179
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "tvOS 27.2.1 将为第二/三代 Apple TV 4K 机型带来 Siri AI"
+  quote: "tvOS 27.2.1 将为第二/三代 Apple TV 4K 机型带来 Siri AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNSDRvaU15LVhXQzdKUURyR1FvTURhdjdWY1hha18xUWUxQW1pQjEwd2FZVVctc0lsNVBiQkMxWkY5aHdTQ2o3MHRRemNIWUxqQWNXTjBMNnBXMjdTVnZpMWxid0RIQzZ0anBuNGd3S3J5anY2ejE0YUx4UDlHTU1GMQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):系统更新带来AI功能。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-180
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple Watch Ultra4体验 新一代钉子户预订"
+  quote: "Apple Watch Ultra4体验 新一代钉子户预订"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE5iMG10UUcyVnVNS0VaTm1NbVVEZHRwVDRiUmx2WDlUSWVkdjJkV1RFQUYxelJNVlExLTdiZjRSTmdEQnlLX2JhdURGcHBJTDd6Tnl2WE1mTQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品体验评测，口碑正向但非正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-181
+  date: 2026-11-13
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "苹果今日推出两款新品"
+  quote: "苹果今日推出两款新品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQdktWc0syNjBnbzAzZVBON3lTZzdGZ1NfSnc4b3o3d0NqamFFYndSOTktbUxCdmVSLTl4V3hqbjdFdkxfQlZRTXc3NWEyX01wV0ZONmR0X3RHMFFLTS1iT2lDWTZMQ3NCN3d2RF9lSFVKSjNsN2VqTTZYVW54dDZZSVZMUGNZdTJCeFE5Tw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):旗舰新品推出属重大发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-182
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果多款iPhone机型降价- Apple iPhone"
+  quote: "苹果多款iPhone机型降价- Apple iPhone"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhTFhBQVN2Nl9uNGtrSThUVV9lbGVNVXJPZVM5WVhyMkVGWU04bmV2bE44eU9TN3ZZSmw4N1R1ZHhQZjBsZkRxc1oxR3FNUUZhQUZKLW9MVTg5M1Vqc2d6Yw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):iPhone降价属显著市场动作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-apple-183
+  date: 2026-11-11
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "用户都去问AI了，苹果突然关掉30年历史社区"
+  quote: "用户都去问AI了，苹果突然关掉30年历史社区"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kZHVvUE5hRTQ2NXN5U2luRHM0M19GOXd3WEFjNG1tTm5PMzlvd1ljYWkzUi1pRU4wRFFtQUdfRjExSFJORURORDZsdzJJLWxxVy0xSUJUVVNtQ0dDbHNlUkNpNDA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):关闭30年社区引用户不满。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-apple-184
+  date: 2026-11-11
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果官宣Apple支持社区永久关闭"
+  quote: "苹果官宣Apple支持社区永久关闭"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxNelB3QkQxZWhPVGJ0MXdXRTVEaWpueHZySHMtemxORTBqeGdkQzgxWUdNVkRRSDFkU2lLc2FlZ21veFprRWIxVVFYQnpHbkQ4bndaTnNyamE3V3JjZnlQc3ZMTGVkSjlXVERDYmNrMkVyZXdmbzA0RmU2c21QSlg3NEJnenFKMnRjRDlEMW9FMA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官宣关闭支持社区为显著服务变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

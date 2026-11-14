@@ -2777,3 +2777,169 @@
   source_type: media
   note: "LLM 预分类建议(high):Gemini 4 正式发布，重大更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-11-13-google-183
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Connect Google Wallet to Gemini for personal finance insights"
+  quote: "Connect Google Wallet to Gemini for personal finance insights"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaVBtU2pIREI2VkItNWF5TEhZNHVPR2dOb0hXNXBBUmowWUZQdEduYnpfbHBrQzB2OHlkejFmN0pDa3RZYjUzUUNYTzlsWW1OLUR3c2M4b0lTWkU2bF82OWJuZ0swUWJlYm9pbndYRXdXU1d2aVBBQWx3VWhLbnNfOWVVMVdyWmVQYThR?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):Gemini与钱包整合的产品功能扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-google-184
+  date: 2026-11-12
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "5 new Google Flow Tools designed by visual artists"
+  quote: "5 new Google Flow Tools designed by visual artists"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxQSlA3YkRWODVZa2NaUDZUMHptUmp3bGJyMjVaUTRIUF83a1ZjSkFRT2pGYjd2dDAtVHZSUlhHNGd0LUpqYkpjTW1ySnFyQ1dvY2ZzQjIwVmZGQmZxV0dKV08zZHczVmFIVzRlR1RnZGVLbTdRSkFlcVo5UVhieWN0VDhDUFAyNTE3OVBZcFJTSWJPNHhRTWFB?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):Flow新工具发布，创意生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-google-185
+  date: 2026-11-12
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "See our intelligent eyewear lineup and pre-order your pair"
+  quote: "See our intelligent eyewear lineup and pre-order your pair"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxOY3NlTEd1VnUzRldnbENXZmtUTGVCeDZraHoyTmItaDBBcV9tRTNZZDNLS2RBLUdvN0ktT3Q1c0tUS3N3bjEzVURJVldMNm9JenhaZDhTdlpfZFpvM0QxUXd4aGtIRkVOZ1JxNERzR2JYZWZUd0J4bTRMeVhXODhhbUZKTzliTmhUUGhEUTRFbUxhTVlyMHF5bmpEYmtOQXVid3ZELXlpZw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):智能眼镜开放预订，硬件产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-google-186
+  date: 2026-11-11
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini Decisions API: Fast, calibrated multimodal decisions"
+  quote: "Gemini Decisions API: Fast, calibrated multimodal decisions"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxPTGVFa0w0cmk4aTZOc0dVWnc5bm5lSzRZOE9aQldlcTZZUGc4MGNNWGlTbDFJYUlibHJoQ2xpOEdrUFpPODBQOGluNUhVQWxvY2ZuWE84TVN3NVJza04xVXlBcW1kVkl1WjZMM2RxREktM2Z3bVVqbTBkUnJuTy0tRl9KSkxuT2pzY0Zib1dKV24?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布主力模型新API，重大更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-google-187
+  date: 2026-11-11
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together."
+  quote: "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxQcG5nNXYxWU1ya1FfejVObFVKN2swOHdaX1JiR2hrcUhlT0V5a2o0NjByQWZiMElKQ25KUU5MMWhVVy1yZWgtZWt3TEsxZjB4M1ppTHZuS2NzYzNNNldKZVNFSjRJQVFQM0FtQWtMX0t3RFVFdFFWTVhvT1lfREQxYWtrTHAzQQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category]
+  source_type: official
+  note: "LLM 预分类建议(med):新产品上线，一般功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-google-188
+  date: 2026-11-13
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌今日「换脑」！轻量之王Gemini 4 Hydrogen反杀旗舰"
+  quote: "谷歌今日「换脑」！轻量之王Gemini 4 Hydrogen反杀旗舰"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Rd0hFTWVyMUpGdERJenl1UGl6bW9La2V1R2xUNERUN0J5NmhteXBCeDJ6bkY5U0E0UTB4ZzFLVzdSZGdvTUxvR3lvelBpeTV5WHdQSlA3em5iNXo3?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):主力模型发布传闻，社媒源信息待核。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-google-189
+  date: 2026-11-11
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "奇袭Claude！谷歌Gemini新旗舰全面上线，一夜复刻OpenCode桌面应用"
+  quote: "奇袭Claude！谷歌Gemini新旗舰全面上线，一夜复刻OpenCode桌面应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5iUldFWGI1NzJsdG4zTW5zeDZwRERyaHpMSXl6ZDFTNXhBQUQwYklkVmRral9RZmdIdE0xU0t2S2FLeW5mRUszR0NKQTA5RzlFaHctSFhhRmVSRDZI?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):新旗舰上线并复刻竞品应用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-google-190
+  date: 2026-11-12
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "不用Flash命名，谷歌发布Gemini 4 Hydrogen：幻觉减少5倍，速度翻倍"
+  quote: "不用Flash命名，谷歌发布Gemini 4 Hydrogen：幻觉减少5倍，速度翻倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xaWRfRTA4NHhxTGEtXzFwaWs4Q2lXN2V6d3hfMkphQU5KZjlIemNhcE1ORkZYd2EtZHJKbU43SGw4QzBKUTFaVUlCSkQwbGxzVzlNZl9IcV9kYkVN?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, origin]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰模型重大版本发布，指标明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-google-191
+  date: 2026-11-13
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌开源气象数据集SatWeave与PARDIG"
+  quote: "谷歌开源气象数据集SatWeave与PARDIG"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9oUGpFeTltSXFRd1ZmUmNhWF84bGVlTDRWSWc5M3FwOXplWEZSaTFSQUpXaktnYnpnbm1lbmVDYnJQekdJVjBYaUItMFhfclRkNWczQmhkSzE2bXcwYXV2XzBUQzlfOXZKRXI4dUtJWWpnTkpHUldOejZDanBsYXM?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):开源数据集，一般性技术动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-google-192
+  date: 2026-11-13
+  dim: W6
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Google AI眼镜发布：从395美元起，主打隐私保护"
+  quote: "Google AI眼镜发布：从395美元起，主打隐私保护"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaURlOE90TFVNeVcwQWVaN2hXQ2psaFlmZTlHcWNsWGdIalNCaU1UdnU3cmg4MFBLZ2FmeFlQbmpudGlrSm5hRXJ3SHFxX1FjX1RCODhsc2Mta1dTOHBHazJxeVBoMmJXZ284aXBZY1JnT1Y3dnp0UldVWHhrNUxfUW1heXBfZkxN?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰硬件正式发布，价格明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-google-193
+  date: 2026-11-13
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini 4 Hydrogen来了所有人都能用- Google 谷歌"
+  quote: "Gemini 4 Hydrogen来了所有人都能用- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kaGVCT0pVNndTbWd5OHBRcGU0LTF6ODBzSmc4TUIyZVN0aERGX2RxX1pLQ0o3bHNlMWJmdHBJVDJTQzRFVERZMlhjd3BJQXh0VGRPREpnWkZMZjBUc2RLZA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):主力模型全面开放使用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1,0 +1,208 @@
+{
+  "status": "draft",
+  "brand": "nvidia",
+  "judgments": [
+    {
+      "judge": "pmarca",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 9,
+        "category": 10,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152"
+        ],
+        "category": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "leverage": [
+          "2026-08-11-nvidia-106",
+          "2026-07-29-nvidia-067"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152",
+          "2026-11-13-nvidia-reuters-kress"
+        ],
+        "signal": [
+          "2026-11-13-nvidia-reuters-kress",
+          "2026-08-26-nvidia-fy27q2",
+          "2026-08-04-nvidia-078"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The founding narrative — Jensen Huang, Denny's, 30 years, two near-death rescues — is history, and a CEO departure does not rewrite history. Nothing in the evidence corrects the founding story; baseline holds at 9.",
+        "category": "Market is the only thing that matters, and NVIDIA keeps defining the markets software is eating: Alpamayo 2 Super for robotaxis/AV (2026-08-04) and Nemotron 3.5 Lightning / NeMo Switchyard for agentic AI (2026-08-11) extend the category map from datacenter into physical AI and agents. Great markets, and NVIDIA keeps pulling them into its platform. 10 holds.",
+        "leverage": "Technology as a lever on the world: the $500B-over-time AI infrastructure financing platforms (10-Q-confirmed MOUs — third-party capital, not yet completed) plus the SSI long-term partnership and investment are new layers on top of the CUDA full-stack lock. MOUs are intent, not cash — so no upside past an already-near-max score. 10 holds.",
+        "identity": "This is where the founder-thesis hits: my 2007 Part 9 is blunt — if no founder can be CEO, sell the company. Huang's resignation (2026-11-12), an interim CFO-CEO, and Reuters reporting 'differing views' among investors and analysts about the interim leadership means thesis, narrative, and operating leader no longer point one direction. This is demonstrated leadership discontinuity, not just uncertainty — 9 → 7. But it's an interim appointment days old; no demonstrated damage to the identity system itself, so not lower.",
+        "signal": "Two disciplined reads. First, the FY27 Q2 $96.2B revenue quarter (2026-08-26) predates the transition — it proves nothing about post-Huang performance and I won't present it as if it did. Second, the departure itself is uncertainty, not demonstrated damage: Reuters shows attributed analyst disagreement, not actual results. Meanwhile the pre-departure build signal stayed strong (Alpamayo 2 Super commercially available). Money talks, hype walks — and no post-transition money has talked yet. 8 holds, with the transition as the watch item."
+      },
+      "reason": "Net: one real change. The founder departure breaks the identity coherence my strong-founder thesis prices heavily (9→7); Origin is history and stays 9; Category and Leverage hold at 10 on verified physical-AI/agentic expansion and financing-platform MOUs (scored as intent, not accomplishment — raising money is never an accomplishment in and of itself); Signal holds at 8 because the strong Q2 predates the transition and post-transition performance is unproven uncertainty, not damage. Uncertainty is not demonstrated damage — but a missing founder-CEO is a fact."
+    },
+    {
+      "judge": "paulg",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152"
+        ],
+        "category": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "leverage": [
+          "2026-08-11-nvidia-106",
+          "2026-07-29-nvidia-067"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152",
+          "2026-11-13-nvidia-reuters-kress"
+        ],
+        "signal": [
+          "2026-08-26-nvidia-fy27q2",
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The CEO departure does not change founding history. Huang's Denny's-origin, 30-year founder narrative remains the verified record (2026-11-12-nvidia-152 confirms the resignation, not a correction to the founding story). Baseline 9 holds.",
+        "category": "Alpamayo 2 Super (robotaxi/AV open model, 2026-08-04) and Nemotron 3.5 Lightning / NeMo Switchyard (agentic AI, 2026-08-11) confirm NVIDIA keeps extending its category map into physical AI and agentic software. But category was already near-priced at 9; shipping new models is what NVIDIA does, not a new ceiling. Hold 9.",
+        "leverage": "The $500B financing-platform MOUs (2026-08-11-nvidia-106) are memorandums of understanding — intent, not completed capital — and the SSI investment (2026-07-29-nvidia-067) is an undisclosed amount. Directionally reinforcing, not new leverage. Hold 9.",
+        "identity": "NVIDIA's identity was unusually founder-anchored — 30 years, one CEO, founder mode incarnate. The verified resignation (2026-11-12-nvidia-152) breaks that anchor as a matter of fact, and Reuters (2026-11-13-nvidia-reuters-kress) shows unresolved disagreement about interim leadership. No demonstrated damage yet, but identity coherence itself is now genuinely uncertain rather than settled. 8 → 7.",
+        "signal": "The $96.2B Q2 FY27 quarter (2026-08-26) is real, urgent demand — but it predates the transition and says nothing about post-transition performance. The August product launches (Alpamayo, Nemotron) are real usage signals from the pre-departure engine. Users still want the thing; no verified post-transition evidence in either direction. Hold 8 — uncertainty, not damage."
+      },
+      "reason": "The one real change is the founder leaving. That doesn't touch origin history, and I won't pretend financials from August tell us anything about November. But identity at NVIDIA was the founder; that anchor is now broken as fact, and the interim-leadership picture is contested — so identity takes a measured −1. Everything else holds: demand is real and urgent, category leadership keeps shipping, leverage is intact. Read the slope, not the pitch: the slope is unverified past the departure date."
+    },
+    {
+      "judge": "pthiel",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113",
+          "2026-07-29-nvidia-067"
+        ],
+        "leverage": [
+          "2026-08-11-nvidia-106",
+          "2026-07-29-nvidia-067"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152",
+          "2026-11-13-nvidia-reuters-kress"
+        ],
+        "signal": [
+          "2026-11-13-nvidia-reuters-kress"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The founder's departure does not rewrite founding history. The Denny's founding narrative, the two near-death experiences, thirty years of building — none of that is corrected by new evidence this cycle, so Origin stays at its baseline of 8. A founding is a fact about the past; it does not move on personnel news.",
+        "category": "No evidence touches the category-creation record — GPU, CUDA, the AI factory — and the new events (Alpamayo 2 Super for robotaxis, Nemotron 3.5 agentic AI, the SSI partnership) are continued extension of an already-defined paradigm. 10 stands.",
+        "leverage": "The moat is untouched. The $500B-over-time financing platforms are MOUs, not completed capital — directional, not yet leverage. The SSI investment is ecosystem extension. No verified evidence shows CUDA lock, scale, or network effects impaired by the CEO transition. 10 stands; last-mover durability is not refuted by a resignation.",
+        "identity": "This is the lens the transition actually hits. NVIDIA's identity is unusually founder-shaped — Huang has been the narrative for thirty years, and my own heuristic is that 'a startup messed up at its foundation cannot be fixed.' An interim CEO (Kress) means the identity system is in an unresolved state: Reuters reports only differing investor and analyst views, not demonstrated continuity or demonstrated damage. I mark down one point for demonstrated discontinuity of the founder-identity link itself, and no further — the rest is uncertainty, not evidence of incoherence.",
+        "signal": "The Q2 FY27 results ($96.2B revenue) predate the departure entirely and cannot show post-transition performance — I refuse to count them either way. The only post-transition signal evidence is attributed uncertainty (Reuters: 'differing views'), which is not a demonstrated negative signal. Signal stays at its baseline of 7, where my standing China-exposure discount already lives. Re-price when real post-transition numbers arrive."
+      },
+      "reason": "A founder's exit changes who tells the story, not the story's origin, and not the moat. I keep Origin 8, Category 10, Leverage 10. Identity drops 8→7 because the founder-identity link — real and verified — is now severed into an interim arrangement; that is demonstrated discontinuity, nothing more. Signal stays 7: pre-departure financials prove nothing about the transition, and reported uncertainty is not damage. In Thiel terms: the secret and the monopoly survive the founder; whether the definite plan does is exactly what the next two quarters will price."
+    },
+    {
+      "judge": "naval",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152"
+        ],
+        "category": [
+          "2026-08-11-nvidia-113",
+          "2026-08-04-nvidia-078"
+        ],
+        "leverage": [
+          "2026-08-11-nvidia-106",
+          "2026-07-29-nvidia-067",
+          "2026-08-26-nvidia-fy27q2"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152",
+          "2026-11-13-nvidia-reuters-kress"
+        ],
+        "signal": [
+          "2026-11-13-nvidia-reuters-kress",
+          "2026-08-26-nvidia-fy27q2",
+          "2026-08-11-nvidia-106"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The founding narrative — Denny's, two near-death scrapes, thirty years of compounding — is untouched by the CEO transition. Founding history is founding history; the resignation (`152`) does not rewrite it. Origin stays at its baseline. No verified evidence corrects the origin story.",
+        "category": "Category Coinage was already near-full and priced in. The August releases (Alpamayo 2 Super for robotaxis, `078`; Nemotron 3.5 Lightning agentic AI, `113`) confirm NVIDIA keeps defining adjacent categories — robotics, agentic AI — but confirming an already-priced leadership is not a new score. Category is a natural-monopoly position still held; no new evidence erodes it post-transition.",
+        "leverage": "Leverage is code-and-media-shaped: CUDA, the software stack, network effects, and now financing structures. The $500B AI infrastructure financing MOUs (`106`) are capital leverage with permissionless characteristics — third-party capital mobilized over time, not rented time. The SSI partnership plus equity investment (`072`/`067`) compounds the ecosystem. FY27 Q2 revenue of $96.2B (`fy27q2`) confirms the assets earn while you sleep — but it predates the transition, so it demonstrates the machine, not post-transition performance. The leverage lives in systems, not in one man's calendar. 10 holds.",
+        "identity": "This is where the event lands. Jensen's name on the line — accountable judgment over thirty years — was part of the brand's identity. That name stepped off (`152`). Reuters reports differing views about Kress's interim leadership (`kress`); that is uncertainty, not demonstrated damage — but identity is precisely the lens where the departure of the long-term person at the center of the long-term game must be priced. 8 → 7: one point for the accountable founder exiting, no more, because the institutional brand and board continuity remain and nothing shows actual incoherence.",
+        "signal": "Distinguish uncertainty from damage. The FY27 Q2 results (`fy27q2`) and financing MOUs (`106`) predate the departure — they show the machine compounding before, not after. The Reuters piece (`kress`) shows attributed analyst uncertainty, not measured decline. No verified post-transition performance exists yet. So Signal holds at 8: real, compounding, owned assets — with the caveat that the next datapoint, not this one, settles whether the slope survives the sailor leaving the deck."
+      },
+      "reason": "The CEO transition touches identity and identity only. Origin is history and stays; category and leverage are carried by systems — CUDA, the stack, capital MOUs, ecosystem equity — that earn while you sleep. Identity takes one point off for the accountable name leaving the long-term game; signal holds because pre-transition financials cannot demonstrate post-transition performance, and analyst uncertainty is not damage. Wealth compounds through leverage, not through any single person — but the name on the line mattered, and its absence is worth exactly one point until evidence says otherwise."
+    },
+    {
+      "judge": "rhoffman",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 8,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-11-12-nvidia-152"
+        ],
+        "category": [
+          "2026-08-04-nvidia-078",
+          "2026-08-11-nvidia-113"
+        ],
+        "leverage": [
+          "2026-08-11-nvidia-106",
+          "2026-07-29-nvidia-067"
+        ],
+        "identity": [
+          "2026-11-12-nvidia-152",
+          "2026-11-13-nvidia-reuters-kress"
+        ],
+        "signal": [
+          "2026-11-13-nvidia-reuters-kress",
+          "2026-08-26-nvidia-fy27q2"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The CEO transition does not rewrite founding history: Huang's Denny's-origin, two-near-death, 30-year founding narrative remains intact and verified. Origin stays at baseline 9 — the departure is a present-day governance event, not a correction to the origin story.",
+        "category": "Category leadership confirmed, not extended: Alpamayo 2 Super (open frontier model for robotaxis/AV, 2026-08-04) and Nemotron 3.5 Lightning / NeMo Switchyard for agentic AI (2026-08-11) reinforce that NVIDIA keeps defining adjacent categories (autonomy, agentic AI) — 'surfing the cresting wave' behavior. But category coinage was already near the ceiling at 9; these confirm, they don't newly coin. Hold 9.",
+        "leverage": "The financing-platform announcement is memorandums of understanding aiming at $500B over time — intent, not mobilized capital; I don't score MOUs as completed leverage. The SSI partnership plus investment is a real network node (cross-side value with a frontier lab), but amount undisclosed. No verified erosion of the CUDA/full-stack moat in this round. Hold 9.",
+        "identity": "Jensen Huang resigning as President and CEO (2026-11-12, board-confirmed) with CFO Colette Kress as interim CEO strikes directly at identity coherence: for three decades the brand's identity system has been founder-led — Huang IS the narrative layer. The verified Reuters piece attributes differing views among investors, analysts and industry sources about the interim leadership — that is demonstrated uncertainty about whether the identity holds without the founder, so −1, but no verified post-transition identity damage yet.",
+        "signal": "Pre-transition demand remains strong ($96.2B Q2 FY2027 revenue, quarter ended 2026-07-26 — this predates the departure and cannot show post-transition performance). The verified signal for the current state is the Reuters report of contested views on interim leadership — uncertainty, not yet demonstrated damage. Combined with the earlier China-erosion watch items already priced at 8, the transition pushes signal down −1 to 7: I price the uncertainty and the unresolved founder-dependency question, not a decline I can't yet observe. 'Stopping to avoid risk is a risk' cuts both ways — a founder exit is also a risk to be navigated, and we don't yet know if Kress is navigating it."
+      },
+      "reason": "Net −2 vs my baseline (44→42). Founder departure is an identity and signal event, not an origin event: Huang's founding narrative is untouched, so Origin holds 9. Category (Alpamayo, Nemotron confirm continued category extension) and Leverage (SSI is a real network node; $500B is MOUs, not capital; no verified moat erosion) hold. Identity −1 and Signal −1 price the verified leadership transition and the attributed uncertainty about Kress — carefully distinguishing demonstrated damage (none yet, post-transition performance unobserved) from uncertainty (real, multi-source). Financial strength predating the departure supports the floor, not the post-transition trajectory."
+    }
+  ]
+}

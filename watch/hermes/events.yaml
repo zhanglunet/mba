@@ -1057,3 +1057,19 @@
   source_type: official
   note: "LLM 预分类建议(med):官方门店扩张动态，正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-13-hermes-069
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "声画导读｜爱马仕Birkin二手价急跌 路透：稀缺性神话褪色惹关注"
+  quote: "声画导读｜爱马仕Birkin二手价急跌 路透：稀缺性神话褪色惹关注"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi7wJBVV95cUxOU2xEMkYydGFEcEFUdmN3OEI1THpyN3M0dE10WUt6NjlENHdhRl8ybEdVWWtMWjlFSDZCbTBLbVNzQ3FCSXVaSks2am5BYkFfUlNia3hwYklYQk9rMHJSUDNBLUQtREdJS21qNGhvRXVpZTVHODI4eHZRdFpYaEFCc3RyWWtmbkFlSWxaa0Z0aktHZy1OT1FNcDdwZEFpVjVkdGs2cHpYLW1OajdicmtLRU05N2E5SkRJdDJCcEtGUkVkUDVpUTBRbUdqSFVMTncyRk5GX010X045LWVvaV9aSHlaaDktbThIenh4NG9MYk1XcEJzVThCcGNKNC11N3VYWEJ0Wm9pUG56NzBUOUlqY084WTlwN20xNWZmLXhUbFRMd1RPMWVIR3BNZk5VZ29sTWNxdG02dElVTjVNV2pRaTRQX3dOWHRNRVFNVm9oZ05xXzMtVnBKbVo5Q3hGN0IxNnVuQlUwUzdCZEUzQW5n?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Birkin二手价急跌，稀缺性神话受质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
