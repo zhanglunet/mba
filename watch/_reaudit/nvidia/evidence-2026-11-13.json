@@ -96,5 +96,27 @@
     "verification_reason": "Reuters reports differing views about interim leadership; uncertainty and views are attributed, not treated as established performance.",
     "verified_at": "2026-11-14",
     "verification_by": "codex-source-review"
+  },
+  {
+    "id": "2026-08-11-nvidia-106",
+    "date": "2026-08-10",
+    "title": "NVIDIA partners to establish AI infrastructure financing platforms targeting $500 billion over time",
+    "verification": "verified",
+    "verification_source": "https://investor.nvidia.com/files/doc_financials/2027/NVDA-2027-Q2-10Q-Final-including-exhibits.pdf",
+    "verification_excerpt": "memorandums of understanding with several large capital providers",
+    "verification_reason": "NVIDIA 10-Q states MOUs aim to mobilize third-party capital over time, not completed fundraising.",
+    "verified_at": "2026-11-14",
+    "verification_by": "codex-source-review"
+  },
+  {
+    "id": "2026-07-29-nvidia-067",
+    "date": "2026-07-27",
+    "title": "NVIDIA and SSI announce long-term strategic partnership",
+    "verification": "verified",
+    "verification_source": "https://investor.nvidia.com/news/press-release-details/2026/Ilya-Sutskevers-Safe-Superintelligence-Inc--and-NVIDIA-Announce-Long-Term-Strategic-Partnership/default.aspx",
+    "verification_excerpt": "NVIDIA has additionally made an investment in SSI",
+    "verification_reason": "Company confirms investment and partnership; cited announcement does not disclose amount.",
+    "verified_at": "2026-11-14",
+    "verification_by": "codex-source-review"
   }
 ]
