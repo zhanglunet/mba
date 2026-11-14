@@ -54,6 +54,10 @@ def build_draft(draft, review, baseline, evidence):
     for lens in LENSES:
         vals = [by_judge[j]['scores'][lens] for j in roster]
         out.append('| '+lens+' | '+' | '.join(map(str, vals))+' | '+f'{sum(vals)/len(roster):.1f}'+' |')
+    if baseline.get('excluded_judges'):
+        out += ['', '## 原报告排除的评委', '', ', '.join(baseline['excluded_judges']) + '（沿用原面板排除设置；原因参见原报告）']
+    if baseline.get('disclosures'):
+        out += ['', '## 原报告评委关联披露', '', '以下标记沿用原报告，尚需核验：' + ', '.join(f'{j}: {m}' for j, m in baseline['disclosures'].items())]
     out += ['', '## 本轮来源', '', '自动匹配仅确认官方陈述存在，不代表独立事实核验。', '']
     referenced = {event_id for j in judgments for ids in j['lens_evidence'].values() for event_id in ids}
     by_id = {item['id']: item for item in evidence}
