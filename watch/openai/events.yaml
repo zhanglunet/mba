@@ -2980,3 +2980,109 @@
   source_type: media
   note: "LLM 预分类建议(high):大规模宕机波及品牌服务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-13-openai-194
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing ChatGPT Wallet"
+  quote: "Introducing ChatGPT Wallet"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ab0pjcFNKdWdXUVFfbEMyNnBKUm56eDlpLXRjWktkSWtKNFBpQml6US05eHBPWnhCajF4V1lnZUhrZHY5U0dJb29BYldsRjlhWUxjVkFPdlhibmRYNkFMb1dn?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布新功能产品，非旗舰大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-openai-195
+  date: 2026-11-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Cogent and OpenAI build cyber defense factories for enterprises"
+  quote: "Cogent and OpenAI build cyber defense factories for enterprises"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFB5TnE1UjlpM1pERzg3engxOXBzbXNnMWNhSTNSbWVESzVQdXZJeGNyUVJTdk5tR25LNGc3d05CVkFXTGdHWHFtaEk5OTNOWHBQeXlB?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(med):企业级合作落地，业务扩张信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-openai-196
+  date: 2026-11-12
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "速递｜OpenAI第三季度营收首次突破100亿美元，环比增长近50%"
+  quote: "速递｜OpenAI第三季度营收首次突破100亿美元，环比增长近50%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFAxMzhWMDV5M1V3UEhSUDNGaTE1MEstUHpEdVFOMk5RbUw0bC1JMy13SUhwaHNBNlp2aUoxXzB0Rzk1MlhkcDJZaG1tUnBWQnlVaFBuRmJvNlZmTHZw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):关键财报数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-openai-197
+  date: 2026-11-11
+  dim: W9
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "从威尔逊格点到 Wightman 公理：OpenAI 的杨-米尔斯构造，到底证到了哪一步"
+  quote: "从威尔逊格点到 Wightman 公理：OpenAI 的杨-米尔斯构造，到底证到了哪一步"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xMFJpRUdVUHU3aFJoSm80Z0ZoS01BbURQd3QxSnFXREVYOHBBUWM0UXZJd0p3VHJncU5ULXhGWVZjT0RraHFPWDdmZ2VVZVBYWEF6b3Z3MTBIV1JS?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, origin]
+  source_type: social
+  note: "LLM 预分类建议(med):技术进展讨论，科研能力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-openai-198
+  date: 2026-11-11
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI CFO：第三季营收100亿美元 环比增长近50%"
+  quote: "OpenAI CFO：第三季营收100亿美元 环比增长近50%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uaXRBMFR5VzRVM21NRFp0WF8wLWJpUHhhdDdsMTBtcC0wS3VyM0lDU2w3Y25mWThJTWNjRkwyc01keVlpMEZmclA4TGg0cGs1RlBmeGJtMlJMbzBS?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):财报关键营收数字公布，触发P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-openai-199
+  date: 2026-11-14
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "突发｜OpenAI解散独立机器人团队"
+  quote: "突发｜OpenAI解散独立机器人团队"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE8xbmZ0TEdtQVVMU3cxdGdWOEkwd2NzRWNxRWdlTGpaYzhlN3l6ZDFNU0ZZTXl5cVdMWjk4WnF6NjVCYWx0WkExRVlTYXhBSmZ2Nm4yRUxpcU9sb3oxZTRKSzBEMzJXMDY5bWtIWm9GcDl1a3VPY0l4eW1XNTJSS2M?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):解散团队属重大组织变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-openai-200
+  date: 2026-11-14
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "让智能体帮你购物，OpenAI推出支付功能ChatGPT Wallet"
+  quote: "让智能体帮你购物，OpenAI推出支付功能ChatGPT Wallet"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9MUzhmcmVuYldQeFMteWF1bF9GbmljMXAzT2tNbkJ3c2tzeDdTbkhWZGlFX0JLcFhrckM1V1B3M2lYS1BfcEl6dnV0S2Q?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品支付功能推出，实质事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

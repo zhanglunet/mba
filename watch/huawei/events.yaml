@@ -1797,3 +1797,94 @@
   source_type: media
   note: "LLM 预分类建议(med):新子品牌亮相，品牌战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-13-huawei-118
+  date: 2026-11-13
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei Retains Top Spot as Sole Leader in GlobalData's 2026 Small Cells Competitiveness Landscape As"
+  quote: "Huawei Retains Top Spot as Sole Leader in GlobalData's 2026 Small Cells Competitiveness Landscape As"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE45aW9XbGhtY2hDZWc2WE1IVmxhZnJUbWNZZDhBOTJwX2JKMTZkc29LdjA2TERwNklkNHQtQU5YNE53T2JzNzNpTEY0Y3FSWk10dXRnZm1qbHVETGNKTXlDQWdmS1A2V0FFdWt0cEFSeDZXbjd3THYxOG5obw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布蝉联行业领导者排名。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-huawei-119
+  date: 2026-11-11
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "18.98万！深蓝G318四驱畅行乾崑版上市，华为ADS+双电机+35度电！"
+  quote: "18.98万！深蓝G318四驱畅行乾崑版上市，华为ADS+双电机+35度电！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFByUVlSU1hPSHEyVHdyal9LZHR3WGVkSHhYd2NmbnQ0X2pXYVlwUXcxLXlxUG9wQm5sZlctM2pCazVpX0RmV25ONWtyZzdaa1BSbV8xREhVeFdLTXZQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):搭载华为ADS新车上市，合作生态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-huawei-120
+  date: 2026-11-13
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "中国联通携手华为打造行业首个双万兆智慧火电专网- 华为"
+  quote: "中国联通携手华为打造行业首个双万兆智慧火电专网- 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE92WUNIcDZuZ0ktSERpa3ZZN01yaGRnNHVteU5VZk9Tb2YzSVFZYXltUmtweDBtaEc2TllKa2Fkd1hTUm1kX0lUbTVHZnZlQ1lFWGZUbVB6Y3YxNEYwa0VzLUUycmFRcG1yUWpXaw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):行业首个双万兆专网合作落地。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-huawei-121
+  date: 2026-11-13
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "第二届华为乾崑智驾公开赛收官，超19万车主参与"
+  quote: "第二届华为乾崑智驾公开赛收官，超19万车主参与"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE92anpjMnhsLW44V2JtUTZwY3h4UXpQTWx4OXBrWkJUWkFTb2FqVU44TWpUby1lRm1RRTdoTU5MOFg0TFVzcGdnUnliNXhBcTk4U0MzaFRUd3NVcGs?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):智驾赛事收官，正向生态活动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-huawei-122
+  date: 2026-11-13
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为金融智能体生态蓬勃发展，openJiuwen × FAB 加速汇聚行业伙伴 -华为企业业务"
+  quote: "华为金融智能体生态蓬勃发展，openJiuwen × FAB 加速汇聚行业伙伴 -华为企业业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTFBuSTNSMjI5cE5weFdpZnE4TjB6c1NudGRXNTVCS1VDbGdSWW51ZmZJZkVEbnc3M1Z1Z1UwalJybjh0LXluNmhrcUJQOFFOQUpPcHBrU2x1Qzl4RlUwUUE4RDB6V0hqUHo0T2U1VXB4b0Ria2l4VkE?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):金融智能体生态扩展，正向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-huawei-123
+  date: 2026-11-12
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为宣布比亚迪腾势N8将搭载HUAWEI HiCar手车互联系统"
+  quote: "华为宣布比亚迪腾势N8将搭载HUAWEI HiCar手车互联系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBrUW5VTW1HUlU0NGpCYTNaaGNSZmoxZEpLaFNjVkVNMFBUOFUtMy0ySGdrSUt6Tm1BaERRWWdPeTNVUTNHMFZIMzRhMURnQmhWOExuenRObHhFTjA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):HiCar合作落地新车型。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

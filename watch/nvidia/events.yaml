@@ -2368,3 +2368,34 @@
   source_type: media
   note: "LLM 预分类建议(med):临时CEO人事安排，接任者背景。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-12-nvidia-156
+  date: 2026-11-12
+  dim: W1
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "黄仁勋辞任英伟达CEO，公司CFO出任临时掌门人，中企忙着抢租海外算力"
+  quote: "黄仁勋辞任英伟达CEO，公司CFO出任临时掌门人，中企忙着抢租海外算力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3wJBVV95cUxPeXdicmxJbGl3VlEtdmYzdF9fSzBGLXFWOU9leFFyLXpnYUFNckVtNnlqZ2ljU3IwQ1o2dnNzdG9FM2VzQnI2STNEWGxiWG9HLTNqajRxdzdVR3Y5YXhDc0ZteTBJOEtJVTVnZ2RZWkE5WTFvSXE1R3ZwVGUyNTc1RnhGcVpLV1hzSUNERVEtdFFQQ2NmZ1NlSjdBYTdyVExpVjhKVERWMVFMalB1c3ljWVZacUd4dWJfQ0psTjVCaFpaV3E1TERIekRES094ZkhjdFhzTGxBYmMzZEp5SDJscjdKdFV4SzdrWlMtY1ctemRrbXJiX1dqWGpsekEtVElTUVpjOURWYVNEX25KcXhGT1NScVd3bkF2Sm5OaU5YQTg0TVNVVzJqNHlyYm1wcVY4emQwSjV5dm5hZHRzRUZWMlRhRzR3TWVlTHIyaVRwbWtlVjZtQUN6cjR5clpkVVHSAd8CQVVfeXFMUGRQSHdSNjR5aHdDaU9zOHpYQmFIbnFzanJucUhIZ25JTVZMS21vY1JqdDBCd0E2LXV6R1E2MHJscGgwVTlFNVRkdGlKWW9wTGV0YVhCTTdPWmdMT2JXRG9yVENXaTZsUk53Qjh3TEtZTVdvSkNNaFoxNVJYX2VaRHc2QVozTWd2RmE2amdQZXB1LVdDdEZJLWw0QlM1N1RKeFc0aC1NUll4NW9JU0ZZRFpjeFBGd1BWUEN2VFZ0XzAwNU5XVlNCc2JSb1g5V0QxZFQwRnc5bHpfRnF6dVNtcmRHRGVKZmdCcUJhNm5DcUZnQmNQYk5KOW5mcVFqM1N2RzA4S1hpYXY5cGxQbjFnSmNzc19naU5OQWF1NW11dzdlS3M3MUlDZnRCZ0xTNl9uUmVPRkJSNHVxRGFIdDZmMGRjNVFoMUNQQnV0Q3JMenhkMy1XcHpOeUt3XzVuaEs0?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):核心高管变动，P0 判则触发。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-nvidia-157
+  date: 2026-11-12
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "间谍丑闻引发担忧美国限制措施，中国AI公司争相获取境外英伟达芯片产能"
+  quote: "间谍丑闻引发担忧美国限制措施，中国AI公司争相获取境外英伟达芯片产能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi4gNBVV95cUxPcHExa1hPcFdKMTVkUkgya1gzTWpGNFY3SmJHc1pEdVpOU05rRkZqRDFwZTQ2TVVEUzhSNE5COGdMLUI0V20tNEJRWjJ5NzkwYy0tOW5SUjd5akdWMEd0bjZzRzNTUHpnYjdlR2ZWUWVJVlY5SUZWSG1ROHhiTTdEOEVobDNvVkZfU0ZSWnNFakRLaGx5a0s5bU00VFc1eWRKZ3VhLUhGUXlFeUhwMHFnNDdwVXJjU3BvSy0yeXU4X2twRlR2a2g3QWlaT2g5VTdfWXlXcnBTcFFjbHpEdUtEdFlrcnM3aUZFSVRudzBMbWhvSG1wU1dpemZzTDNTQXFURHpBRVgxRzhCYl9XamlqSXdKR2lGU0xoUlJqWGc2eFN2dlJ4NU9YeUtIdTg1V1J3MEg5TDJTREgxelNkaEFHc2F3eURpcDVGY25ldWoxYXNDbG40aWFpN2Rrckx0QUJlOWgtdW0wVmR6NUZJbTVuZnlGZXhoUDBOcVZ2NW51bmZvRjRnZWRITm1DMXJOTFlXUVAzNldmdXRNV0JrbmtVMWYtT0VUa0J2ZnJuY2hidlJlN2xJMjhUcmF2eVNYVlF6dG9CVVlMemY5TDdkN2Q5VW9CaWwxejZyc0YzNVE5SlRPdw?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉管制与芯片产能，间接相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

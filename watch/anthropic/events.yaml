@@ -3140,3 +3140,139 @@
   source_type: media
   note: "LLM 预分类建议(med):大规模封号影响用户，负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-11-anthropic-206
+  date: 2026-11-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "怎么看 Anthropic IPO 提到 Claude适配全芯片训练和推理，接入 AMD只用 3 天？"
+  quote: "怎么看 Anthropic IPO 提到 Claude适配全芯片训练和推理，接入 AMD只用 3 天？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFByaHVwVFF5d0VDSU02MkQtNUczeE5HaHI1cFk1SzZfZUIzV0kwQ1czTjNwRWhWQ0hPYW9Za3FVZG5qQl85azJhUl9ORW5oTjREYkxUOHlRRjkyaU82aUx3?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):IPO 与技术适配讨论，涉及核心竞争力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-anthropic-207
+  date: 2026-11-11
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic上市：一家资本市场从没见过的公司，与一名42岁的员工"
+  quote: "Anthropic上市：一家资本市场从没见过的公司，与一名42岁的员工"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE10Tmk1VEtJLUpPWXpPRC1aTHlPS2liV1hpaTNQYXE0M1otQWlRZHpubXhDc21MM2VnQmNPaXJOSWFMcGNxNEpMZ0JNclF6cF83TVg1YXVVNWgwMmpt?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [identity, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):IPO 重大融资叙事，社区热议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-anthropic-208
+  date: 2026-11-12
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Claude 禁用新规今日生效！连股东都要查，这下车门真焊死了"
+  quote: "Claude 禁用新规今日生效！连股东都要查，这下车门真焊死了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBRMnVhRXdpLUN5UjdfVFBGbWF1dWsyNkc2bC1jdW1mLWdhaWF2b1E4X2JpYlhGWV90a3htUzRITS1lNkpQQ1ZhQ3AxLWJ6cVRINllydFV0M2tLaUdu?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):使用政策收紧生效，引发用户负面情绪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-209
+  date: 2026-11-13
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic称Claude认证问题已修复 正调查性能下降"
+  quote: "Anthropic称Claude认证问题已修复 正调查性能下降"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DNk1taW9GOGY2SERKSlpjRmI4Sm4wZy1tYlZuZTdhMUV1NVVjUnpJbHhrVE9MbmVMb05OTWI5dkt4S0c1dDBwN0l2VXg5QQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):故障修复与性能下降，服务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-210
+  date: 2026-11-13
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Claude出现大量报错，Anthropic官方公告称正在调查"
+  quote: "Claude出现大量报错，Anthropic官方公告称正在调查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1jNmpBVmhnSVpzUDhFZXpLejJkTkJ6NU1DMjFoZ3NmMnNiWEo3VEMxUFdzanE1cU9oeDJoYm5pOFl1QUowVzNfUDM4OUU?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude大面积报错，官方调查中。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-211
+  date: 2026-11-13
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic 连发多条故障通报：微软服务中断波及 Claude"
+  quote: "Anthropic 连发多条故障通报：微软服务中断波及 Claude"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE13RXc0YV9YX2F6S3V0R3paaXlKQl9VV1doR0I0VG5aSzJfQjZENmplMlhzbTMtb2g0YVNMaGNVR2tlWHdsTVgtWHJvakM5bXN1dlBNbU9mRQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):连发通报，微软中断波及Claude。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-212
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic将Claude服务异常归因于微软365故障用户认证功能一度失效- Microsoft Error"
+  quote: "Anthropic将Claude服务异常归因于微软365故障用户认证功能一度失效- Microsoft Error"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFByeFJtUHZMUnlKQjJ3M29jcktISWxVcm1tVThKSDBodTRjalNUVGhwYjVSRUpmRFBJRlJwMVlrS3lrZFRTX09GbHQ4TTZodHo1TE5EQTBrVUMyNWVRY3I4SA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):服务中断事故，归因外部认证故障。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-213
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic Claude 进视频会议：边开会边产出文件白板_全球市场"
+  quote: "Anthropic Claude 进视频会议：边开会边产出文件白板_全球市场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTFBIdU5SR1BDb0Y2bXgxaDhmOUlKWnIwdUx0SDZXZ2FLdXZXVHNNMm03LXZvOEZiUXJ2TDlCMHlodjZrbnNEcjduZlhtSnNLaHV4RnVPTEExaG5rd0JNNUxsRmU0VVY?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品功能落地会议场景，正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-12-anthropic-214
+  date: 2026-11-12
+  dim: W7
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "太炸裂！Anthropic二季度营收达逾115亿美元 同比实现14倍暴涨"
+  quote: "太炸裂！Anthropic二季度营收达逾115亿美元 同比实现14倍暴涨"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5TQmI4dFp2Wl9qQmo2R25VaVpIbjdaQWFfd1d6d080LUVaNjc3clAtQnZ4ZTFWV3BrMEpQMDFvdDZxdm5oTDlVSQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布，触发P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

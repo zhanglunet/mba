@@ -1467,3 +1467,19 @@
   source_type: media
   note: "LLM 预分类建议(high):联想发布新品牌与产业集群计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-13-lenovo-096
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "联想集团将于11月19日发布财报，一图速览分析师最新预测"
+  quote: "联想集团将于11月19日发布财报，一图速览分析师最新预测"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxOcjU4UGZWY1F1Tnh1TUxNYk1DRExTYjBpaFN1VU53MEVpamlWSUVoVmF6aHlxOFZ3MFhJaVE1ekNObXRnMkpqWEpqRGs4TG1DOVZ2ME1UZ2JFTGhGQjNMVjRSbHNIb2kya0tta2R4NW1TSVRaSnFLOUFrazN6R1JidkJjaFV0M2M1SUdyTFB0UGpyRWVRUmp0SVdTZ0xhaGc0bE9ZOW10czJxRm9BN1hhcUVLNmFrdXdPeXc?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):财报前分析师预期，有参考价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

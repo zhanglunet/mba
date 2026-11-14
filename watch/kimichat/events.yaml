@@ -2109,3 +2109,64 @@
   source_type: media
   note: "LLM 预分类建议(high):架构重组铺路IPO，重大公司动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-13-kimichat-138
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "传闻估值500 亿美元，月之暗面拟2027 年初港股IPO|Moonshot AI|月之暗面|IPO|港股_新浪新闻"
+  quote: "传闻估值500 亿美元，月之暗面拟2027 年初港股IPO|Moonshot AI|月之暗面|IPO|港股_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9fSmZVTmhkWGtpWWZ1SVNHS0VmRmgxeXB4YU1nOUp2SmY4dkMxcHVTbWtSNGNUbFdFUVk0M1o5dkJsM2dzejAxVUFEeVNzQ2ZiZk5GaWluVF9uckp0RFR5X2o5QQ?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO传闻，金额与时间明确但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-kimichat-139
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "无需 GPU：极客利用傲腾内存成功运行 2.8 万亿参数大模型 ｜#AI资讯# #KimiK3# #硬件创新#"
+  quote: "无需 GPU：极客利用傲腾内存成功运行 2.8 万亿参数大模型 ｜#AI资讯# #KimiK3# #硬件创新#"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPOWNHLXIyWHJWWHY5SEU0akdndEtPSGcycVBEdjB3a3VHYThaM2NlVXlXZDNiUDVsOUpkT1JxdmZ2N0EtRkowVVptVHNhYUNUR1NCV1VTUk01ZWFsUkxBNkRJTjNzT0VBenZ0ZXFwQlFsTW5xZlNQZG9nTjNLOE5mcWVBYzJKXzYwaGNtZA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):第三方跑Kimi模型，产品力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-kimichat-140
+  date: 2026-11-13
+  dim: W6
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "中国AI模型被发现英伟达Blackwell芯片“指纹” 研究推算部分训练集群规模达3000至4500颗"
+  quote: "中国AI模型被发现英伟达Blackwell芯片“指纹” 研究推算部分训练集群规模达3000至4500颗"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yUW9xNTZiRG5DQXZyMFlOY0Z1a1QtVkk1ampyZlh1Tm1FblJGZGRNU0hkejFFZjJKNWNDT0VGc3hvRHZfMk1IUURlcWN6VG4wTlZGVFU2ZEFBYkd0ZGx4ZA?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):涉品牌算力来源推测，行业芯片话题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-11-kimichat-141
+  date: 2026-11-11
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenRouter 周 token 消耗量创纪录达210 万亿：DeepSeek 连续三周居首，中国模型占Top 20 十席"
+  quote: "OpenRouter 周 token 消耗量创纪录达210 万亿：DeepSeek 连续三周居首，中国模型占Top 20 十席"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIREZtVjV3YzEtN2x0NG5MeHVEUTVzY1E1bFljcTJqVnVENVQwUGt6aDF0aUtTNlBsb09qRzY1ckpVT08zaUd6eg?oc=5
+  fetched_at: "2026-11-14T02:24:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):中国模型榜单表现，含Kimi相关排名。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
