@@ -96,3 +96,18 @@ class OfficialEvidenceTest(unittest.TestCase):
         event={'id':'e1','title':'Launch','quote':'Launch','date':'2026-11-15','url':'https://blogs.nvidia.com/blog/launch/','source_type':'official'}
         for source in [{'fetch_status':'ok','quote_match':True,'source_date':'2026-11-14','final_url':event['url']}, {'fetch_status':'ok','quote_match':True,'source_date':'2026-11-15','final_url':'https://www.reuters.com/a'}]:
             with self.assertRaises(ValueError): module.official_statement_evidence(event, source)
+
+class OfficialPipelineTest(unittest.TestCase):
+    def test_html_metadata_passes_to_attributed_evidence(self):
+        from unittest.mock import patch
+        class Response:
+            headers={'Content-Type':'text/html; charset=utf-8'}
+            def __enter__(self): return self
+            def __exit__(self,*args): pass
+            def read(self,n): return b'<html><head><title>Launch</title><meta property="article:published_time" content="2026-11-15T12:00:00Z"></head><body>Launch</body></html>'
+            def geturl(self): return 'https://blogs.nvidia.com/blog/launch/'
+        event={'id':'e1','title':'Launch','quote':'Launch','date':'2026-11-15','url':'https://blogs.nvidia.com/blog/launch/','source_type':'official'}
+        with patch.object(module.urllib.request,'build_opener') as factory:
+            factory.return_value.open.return_value=Response()
+            source=module.fetch_source(event)
+        self.assertEqual(module.official_statement_evidence(event,source)['verification_scope'],'official_statement')
