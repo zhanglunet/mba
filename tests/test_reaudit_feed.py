@@ -25,3 +25,11 @@ class AppleFeedTest(unittest.TestCase):
         self.assertEqual(feed[0]['date'],'2026-11-13')
         result=mod.match_official({'id':'a','quote':'Apple Launch','date':'2026-11-13','url':'https://news.google.com/a'},feed,brand='apple')
         self.assertEqual(result['url'],'https://www.apple.com/newsroom/2026/11/launch/')
+
+class GoogleFeedTest(unittest.TestCase):
+    def test_google_rss_entry_matches_only_google_profile(self):
+        xml=b'<rss><channel><item><title>Google Launch</title><link>https://blog.google/products/launch/</link><pubDate>Fri, 13 Nov 2026 20:30:00 +0000</pubDate></item></channel></rss>'
+        feed=mod.parse_feed(xml,brand='google')
+        event={'id':'g','quote':'Google Launch','date':'2026-11-13','url':'https://news.google.com/a'}
+        self.assertEqual(mod.match_official(event,feed,brand='google')['url'],'https://blog.google/products/launch/')
+        self.assertIsNone(mod.match_official(event,feed,brand='apple'))
