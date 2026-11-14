@@ -34,8 +34,11 @@ def assess_source(event, text):
 
 
 class TextParser(HTMLParser):
-    def __init__(self):
+    def __init__(self, openai_article=False):
         super().__init__()
+        self.openai_article = openai_article
+        self.in_openai_meta = False
+        self.in_openai_date = False
         self.parts = []
         self.page_title = ''
         self.og_title = ''
@@ -53,6 +56,10 @@ class TextParser(HTMLParser):
         if tag == 'script' and values.get('type') == 'application/ld+json':
             self.in_jsonld = True
             self.jsonld_buffer = ''
+        if self.openai_article and tag == 'div' and values.get('data-article-hero-copy-region') == 'meta':
+            self.in_openai_meta = True
+        if self.in_openai_meta and tag == 'p' and 'text-meta' in (values.get('class') or '').split():
+            self.in_openai_date = True
         if tag == 'span' and 'module_date-text' in (values.get('class') or '').split():
             self.in_date = True
         if tag == 'meta' and values.get('property') == 'og:title':
@@ -60,6 +67,10 @@ class TextParser(HTMLParser):
         if tag == 'meta' and (values.get('property') in ('article:published_time', 'og:published_time') or values.get('name') in ('date', 'pubdate', 'publish-date')):
             self.source_date = (values.get('content') or '')[:10]
     def handle_endtag(self, tag):
+        if tag == 'p' and self.in_openai_date:
+            self.in_openai_date = False
+        if tag == 'div' and self.in_openai_meta:
+            self.in_openai_meta = False
         if tag == 'script' and self.in_jsonld:
             self.in_jsonld = False
             self.jsonld.append(self.jsonld_buffer)
@@ -71,13 +82,13 @@ class TextParser(HTMLParser):
         self.parts.append(data)
         if self.in_title:
             self.page_title += data
-        if self.in_date:
+        if self.in_date or self.in_openai_date:
             self.date_text += data
         if self.in_jsonld:
             self.jsonld_buffer += data
 
 
-OFFICIAL_HOSTS = {'nvidia': frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'}), 'apple': frozenset({'www.apple.com'}), 'google': frozenset({'blog.google'}), 'amazon': frozenset({'www.aboutamazon.com'}), 'microsoft': frozenset({'blogs.microsoft.com'})}
+OFFICIAL_HOSTS = {'nvidia': frozenset({'investor.nvidia.com', 'nvidianews.nvidia.com', 'blogs.nvidia.com', 'developer.nvidia.com'}), 'apple': frozenset({'www.apple.com'}), 'google': frozenset({'blog.google'}), 'amazon': frozenset({'www.aboutamazon.com'}), 'microsoft': frozenset({'blogs.microsoft.com'}), 'openai': frozenset({'openai.com'})}
 TRUSTED_SOURCE_HOSTS = frozenset().union(*OFFICIAL_HOSTS.values(), {'www.reuters.com', 'apnews.com'})
 
 
@@ -112,7 +123,7 @@ def fetch_source(event):
                 raise ValueError('unsupported content type')
             text = data.decode('utf-8', errors='replace')
             if 'html' in content_type:
-                parser = TextParser()
+                parser = TextParser(openai_article=urlparse(event['url']).hostname == 'openai.com')
                 parser.feed(text)
                 found = set()
                 headlines = set()

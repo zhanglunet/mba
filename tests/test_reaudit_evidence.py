@@ -150,3 +150,18 @@ class OfficialPipelineTest(unittest.TestCase):
             factory.return_value.open.return_value=Response()
             source=module.fetch_source(event)
         self.assertEqual(module.official_statement_evidence(event,source,brand='microsoft')['verification_scope'],'official_statement')
+
+class OpenAIMetadataTest(unittest.TestCase):
+    def test_article_meta_date_is_parsed(self):
+        from unittest.mock import patch
+        class Response:
+            headers={'Content-Type':'text/html; charset=utf-8'}
+            def __enter__(self): return self
+            def __exit__(self,*args): pass
+            def read(self,n): return b'<html><head><meta property="og:title" content="Introducing ChatGPT Wallet"></head><body><div data-article-hero-copy-region="meta"><p class="text-meta text-primary-100">November 13, 2026</p></div>Introducing ChatGPT Wallet</body></html>'
+            def geturl(self): return 'https://openai.com/index/introducing-chatgpt-wallet/'
+        event={'id':'e','title':'Introducing ChatGPT Wallet','quote':'Introducing ChatGPT Wallet','date':'2026-11-13','url':'https://openai.com/index/introducing-chatgpt-wallet/','source_type':'official'}
+        with patch.object(module.urllib.request,'build_opener') as factory:
+            factory.return_value.open.return_value=Response()
+            source=module.fetch_source(event)
+        self.assertEqual(module.official_statement_evidence(event,source,brand='openai')['verification_scope'],'official_statement')

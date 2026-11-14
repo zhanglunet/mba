@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 from reaudit_evidence import NoRedirect, allowed_source_url, OFFICIAL_HOSTS
 from urllib.parse import urlparse
 
-FEEDS = {'nvidia': ('https://nvidianews.nvidia.com/rss.xml', 'https://blogs.nvidia.com/feed/'), 'apple': ('https://www.apple.com/newsroom/rss-feed.rss',), 'google': ('https://blog.google/rss/',), 'amazon': ('https://www.aboutamazon.com/rss/feed.rss',), 'microsoft': ('https://blogs.microsoft.com/feed/',)}
+FEEDS = {'nvidia': ('https://nvidianews.nvidia.com/rss.xml', 'https://blogs.nvidia.com/feed/'), 'apple': ('https://www.apple.com/newsroom/rss-feed.rss',), 'google': ('https://blog.google/rss/',), 'amazon': ('https://www.aboutamazon.com/rss/feed.rss',), 'microsoft': ('https://blogs.microsoft.com/feed/',), 'openai': ('https://openai.com/news/rss.xml',)}
 MAX_FEED_BYTES = 1000000
 
 
@@ -23,6 +23,9 @@ def parse_feed(data, brand='nvidia'):
     for item in root.findall('./channel/item'):
         title=(item.findtext('title') or '').strip()
         url=(item.findtext('link') or '').strip()
+        # OpenAI's RSS links redirect to the same path with a trailing slash.
+        if brand == 'openai' and urlparse(url).hostname == 'openai.com' and not urlparse(url).query and not urlparse(url).fragment:
+            url = url.rstrip('/') + '/'
         published=(item.findtext('pubDate') or '').strip()
         try:
             day=email.utils.parsedate_to_datetime(published).date().isoformat()
