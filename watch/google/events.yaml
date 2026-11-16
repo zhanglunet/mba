@@ -2943,3 +2943,124 @@
   source_type: media
   note: "LLM 预分类建议(high):主力模型全面开放使用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-15-google-194
+  date: 2026-11-15
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "2026谷歌奖学金公布，清华、复旦、大连理工等校友入选"
+  quote: "2026谷歌奖学金公布，清华、复旦、大连理工等校友入选"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE43bkpvYnU1RURSdjRVWEx6dkxRdFoya3pJbE1UOVlIaExPMnBJbUhVTGdhTHdvQ08yc2ctWWtPZFB1Z3V2d0t3SlVEaGdwcFk2WXhqTUFjOEExYm9l?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):奖学金公布，人才品牌正向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-google-195
+  date: 2026-11-14
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "最会卖广告的谷歌，把“隐私”写进了智能眼镜的第一句"
+  quote: "最会卖广告的谷歌，把“隐私”写进了智能眼镜的第一句"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE56Vl9iOERjUllSVGw2RW5BWjlXZHZpeUtWTkNncngya2hPVEhBWGk1bDBVSEV4aW9UTG9ObkpWYWQ0ZHdFdU41UzF5eFJGOHpsSFB3R2k3Q2YyWDFr?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):智能眼镜隐私争议，评论性但有关注点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-google-196
+  date: 2026-11-13
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini 4又更了！谷歌搜索已换上，人人都可玩"
+  quote: "Gemini 4又更了！谷歌搜索已换上，人人都可玩"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE82ekNuaHJaLWNpc3ZKNDQ5d2RRSUp6dW9PcmF3ZFdLTV80ZkNYd2JhYVhkMWlHRUJRdl9HN1pBc05XeTEwZTd4dlZBNTIwZ0tZdzZvZ0VxT2hNZU5W?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Gemini 4重大版本更新并接入搜索。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-google-197
+  date: 2026-11-14
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌Gemini个人智能功能接入Google Wallet：可分析用户消费记录、追踪订阅费用并制定预算"
+  quote: "谷歌Gemini个人智能功能接入Google Wallet：可分析用户消费记录、追踪订阅费用并制定预算"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE15NDNGMnVEOTBVTENyZElqN3pOZEhaZ2oySTdpRDhZaTlyQXNHcVFVZXFfZ3hQTy1qZ2llQzByVGtWU3BrT0YwRnRtN05ZNjZaa21VdFJBU1o4QXh2SVhJck5lbGgxU2xmZnc0aGYtRjVzRmJBWXNUY2JnNG9uUQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Gemini接入Wallet功能扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-google-198
+  date: 2026-11-14
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google开源WeatherNext3气象模型两大基础数据集- Google 谷歌"
+  quote: "Google开源WeatherNext3气象模型两大基础数据集- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9YLXhRSnBLS01TOU54Tjg2ZjlfUXlGWUN6cW03eWdkUTZLVkIxUW53Z1VBTVZmUGh3TGpQYUc3cFBTSm5LbWpDbGZpU0QyVzQ1MHB6TjUzYXF4NWt1cjdsNw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):开源气象模型与数据集，技术开放举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-google-199
+  date: 2026-11-13
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌删除韩国地点经纬度坐标 以符合安全规定"
+  quote: "谷歌删除韩国地点经纬度坐标 以符合安全规定"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVEybnBOX01na3JxUVVCcHpvSjVuWjd3UENoY2VCbzkzV2p6TmJQOE1nRFNDY05wVGFYUXlkaEZSbWxnSHNEOVhZQ1h4bnZMeDVyQldrVVZXaXAzLVdyc2VHQlRFa1g4c1Y3cndPUERzRTZVQ1NTNG5rRFp6R1NzMDVFTjM1UVZKNzQ0VDh0RERrdHJGcXpNYUtXSUsweXFTOFhCQXYyTnhySWs?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):地图合规调整，监管相关但非处罚。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-google-200
+  date: 2026-11-13
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "韩国政府：谷歌将删除Google地图中所有军事及安全设施内部和周边的街景图像"
+  quote: "韩国政府：谷歌将删除Google地图中所有军事及安全设施内部和周边的街景图像"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxNbVd5U3JYSEZRbHd3VzF6bWoycFZ1TjZ6UW9BVFBnZ01VaUdDRXE4SWV2VEN3Ym1kX3FjX1dMSURpUFFLR3phLTdERTkySFhRU0ZlREdaSWtiSFVid3oxTWlxWVh2YXotUm9aeTBiNEdaTXlXSDFSOVVvclkta0lOaDBJMkJlX2ZyaEpqRlZNMkVjT2tmUS0xeTg3M0dxWXVFdGFRSg?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):政府要求删除敏感街景，合规事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-google-201
+  date: 2026-11-14
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google为Gemini推出个人财务分析功能接入银行账户和信用卡帮用户分析收支- Google 谷歌"
+  quote: "Google为Gemini推出个人财务分析功能接入银行账户和信用卡帮用户分析收支- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OZE5GLTdINFRsUVVObEhYM1RySnduWDVXYVRiemJiQXN5RUg4a1FpN2dlME5iVDhRb0ZVa1NQNEZYM0RvczY3S2RKY1FhLUlTdVk5amlPdnFtN2N3TG8wcg?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Gemini新功能涉及银行数据接入。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

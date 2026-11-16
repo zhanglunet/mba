@@ -2399,3 +2399,124 @@
   source_type: media
   note: "LLM 预分类建议(med):涉管制与芯片产能，间接相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-16-nvidia-158
+  date: 2026-11-16
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities"
+  quote: "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBFeFdid2ZPZ3ZNMHd3NGdYLTNvYzlMTElHdEh0clRZYmpOek5tUTcwbl84ZzFZcGJmR2QxR3YyRGZvOUJ1NGRDZA?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方生态活动，轻度品牌信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-nvidia-159
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "如何评价英伟达员工发起挽留行动，内部投票超97% 希望黄仁勋回归，他的个人魅力真的有这么大吗？"
+  quote: "如何评价英伟达员工发起挽留行动，内部投票超97% 希望黄仁勋回归，他的个人魅力真的有这么大吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE1lRm5HZnlLemJYd3hQUjdZTEd6amxvQmlyV1NiZFNoeUVKMW9Jek13cWhyZkt4MkhkMUpFOGw1bkFYS0lRSDJZNFllZ3Q3TzF0SnF4VWxxcWI1NWxZYk1V?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):高管动荡舆情发酵，涉及留任风波。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-nvidia-160
+  date: 2026-11-14
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "英伟达临时CEO被曝是制衡黄仁勋的重要力量，是唯一一位给AI投资唱反调的人，她会给英伟达带来哪些变化？"
+  quote: "英伟达临时CEO被曝是制衡黄仁勋的重要力量，是唯一一位给AI投资唱反调的人，她会给英伟达带来哪些变化？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE0zdXRRaEp5VURBQlYybjI0dlc5YjVaNTA2MzU0UXMzUGV5QWs2YU5QaHlKM3YwcWlrZ3ZYSDdzX2RoWTR4MFBmVW9rbjE2QTg1MHJmNHRDQjgzbjVBZlM4?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, origin]
+  source_type: social
+  note: "LLM 预分类建议(med):临时CEO核心高管变动相关讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-nvidia-161
+  date: 2026-11-15
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Nvidia黄仁勋丑闻如何令亲商的新加坡大感头疼"
+  quote: "Nvidia黄仁勋丑闻如何令亲商的新加坡大感头疼"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HbDFueVZhaFFnaXczcFhiS1ZESERGcmxwNWJIazViWF9Db2xUYW9tM014LWFucmN2Z01SNnFwWmFhNThoYTY5UkxjZDVvbUM5ck5sWmxUOUhxZXNDMzV3cnlsOWtldFXSAWxBVV95cUxNRVdfbjMwU05QQ3c4VFVZcDRZUWYyRXlXeHNSSkUzaGhjNmxYV2VfdmFIcmoyOXdMeHY4bHkzYlFGSERkOG9GMnUxMEdocEtNbTdCRzFWZ1JlTmdWUjVvOXRSbnozLVdxOWlyR1Y?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):媒体负面报道丑闻外溢影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-nvidia-162
+  date: 2026-11-14
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克支持黄仁勋复职 英伟达不能没有黄仁勋"
+  quote: "马斯克支持黄仁勋复职 英伟达不能没有黄仁勋"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxQS2I1ajJVXzdTUlRMNjVNQjJyNTNrNThqaFZZdFBaSXRCSmgtd1lCWHVnOENTTjRHcGloUDlZa0hDY3FULXFJc3pfWmYyWjFzbURGay1tUlZIWXNqdGlHbzVOU0hfblJnSGgwc2Y0TTZPSDZTQjkzZGtDZ2w4MW5fMmZn?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):名人声援涉CEO继任议题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-nvidia-163
+  date: 2026-11-15
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达陷入CEO继承难题- nVIDIA"
+  quote: "英伟达陷入CEO继承难题- nVIDIA"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9lZlZJcW1Tazk3Q1J3TS16eDgwWWpVZjF0R0tTTlJrMmFVWVdabDJTWEpVWjNqSFVsemJ1b2NpVURqY2NGYmQ0eW1hWlQ2ajVZVElzS0trV080YUxDd0dCaA?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO继承难题涉高管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-nvidia-164
+  date: 2026-11-13
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国专栏 - 英伟达国安疑云正在扩大"
+  quote: "美国专栏 - 英伟达国安疑云正在扩大"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAJBVV95cUxQRTNiZDV0cDRMQ1JPTldoRFpWX1ZOczVkOGNhb0ZtR3RlRldOZXpWMkJrdTk1b1hCYXVreHB4VU16eC1EbGVxS0hTWS1ubHpXRWFsVzFacHdnQTVXXzlfNzZ5Q0M5NDBkVjNFbHBLOS1vc1RlSnltZnRBSjVaUFBhYkc2NnctTmVheDFWWmYtX2ZEVTVJcG8xc1RBSTA0aXNpcXR3dFluZThJOGhiWWlodFA5YkxnLUNTaGcyeHRLWVAzNDRaQllSeHc5MlV6eTJsZUdHMnhHbmpsb0FaOEdnM1JTTVpoV01KRHA4NUJQZ19mc3pUcEpBWllsZHQtZTlPX21QMFpHQmdWUUZJTFJYd2tTVDdDT28xakVrQ1dqXzFNeVVsT2k2Vk9iTXQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):国安疑云涉监管风险，负面显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-nvidia-165
+  date: 2026-11-15
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国财长：英伟达须彻底改组管理层 物色新首席执行官"
+  quote: "美国财长：英伟达须彻底改组管理层 物色新首席执行官"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxQTlNXWDZhQTM1X3hEVVk5VlM4MGJXU2trZzVXaVpLbjdJYVRJbmhEVHVPZ1JaMWp2QVFCSlg1NFhCXzZEeTRDMkZWU3NHcDdTY25hSi1Ncy0xdTVYZ3VndWdXVkdRQldVSkFMWm9KTU55RVVTak5ibmM3cVdZWG1lM0FLSTBDT0JwcF9mX01sZGRUbjZ6eW1JTlR3alNlcnNPdHc?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):官方要求改组管理层，重大负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2170,3 +2170,34 @@
   source_type: media
   note: "LLM 预分类建议(med):中国模型榜单表现，含Kimi相关排名。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-14-kimichat-142
+  date: 2026-11-14
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "一家北京AI公司的“拆桥”时刻：月之暗面拆除离岸架构冲刺IPO"
+  quote: "一家北京AI公司的“拆桥”时刻：月之暗面拆除离岸架构冲刺IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiREFVX3lxTE13ZjNnRHc5bFAxb1FhS3MwYjVoSXFibmpSS3BnY2NCaHppa3BhWW1HYzZBUW14RHU3NW1jR1M5RkZOUXQx?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):拆VIE冲IPO重大资本动向，但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-kimichat-143
+  date: 2026-11-15
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi估值500亿美元 月之暗面为何紧急拆除海外架构"
+  quote: "Kimi估值500亿美元 月之暗面为何紧急拆除海外架构"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9NdktTcHJZdkNWZkdEWFVOU2VmR0hIVmcwY3I5Zkw0cUFXYldMellDSTNaRC1QUHhKMzZNLVNoMUdxOHI3d0Z1c1piWDRWNk5sSDF3?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):高估值与架构调整，融资未完成故P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

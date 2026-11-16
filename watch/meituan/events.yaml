@@ -1244,3 +1244,49 @@
   source_type: media
   note: "LLM 预分类建议(med):领投芯片融资数亿元，战略动作显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-14-meituan-081
+  date: 2026-11-14
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Meituan-Robotics-0(MR0)方法分析"
+  quote: "Meituan-Robotics-0(MR0)方法分析"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BU2JfQ2VHb2p5VVJZSF9rZ0RYT0Y5dXdkQmlraHctMDdrNWJ5OENMdlVtdXAzT29LU0JjcGE2Y1FkWElWenlTUlhpdDB2MlZnZ0FkQU9SRFZ6TXFH?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):机器人技术方法分析，社区讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-meituan-082
+  date: 2026-11-15
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "美团开源 LongCat-2.5 权重：1.6 万亿参数 MoE Agent 模型，自托管指南未提供 Nvidia GPU 路径"
+  quote: "美团开源 LongCat-2.5 权重：1.6 万亿参数 MoE Agent 模型，自托管指南未提供 Nvidia GPU 路径"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ISV94TjBzSG0wNE1jUjNqcGdZSjhKUzZEdUNUR1lrNmFScFVMZDdnSi0yUGs2UTBxU0dTS1hJZXpVQ3dRVmo4Qw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):主力大模型重大发布，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-meituan-083
+  date: 2026-11-13
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "美团股价下跌逾3%，8 billion yuan离岸债券发行后抛售压力持续"
+  quote: "美团股价下跌逾3%，8 billion yuan离岸债券发行后抛售压力持续"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxPVGZpZDN3MjBWbmhxQk00SjdXcDh0UURQVW1jd0VWLWsydlhkSEZaVWZ0VU9zcGZlejUtZzd3c194LWNmelNyWW1mZVFfX1FVNmRCRnlQdU93OWE4b09EREFabHRTTVhUc0MzX0Z5ZUZGWmNncWFjbEk0RlJKdEhNZ0RJekJ4M1JRZlR2VjU1VTZaTnVwV2c?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):债券发行后股价下跌，具事件性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

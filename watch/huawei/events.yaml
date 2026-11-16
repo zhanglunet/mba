@@ -1888,3 +1888,124 @@
   source_type: media
   note: "LLM 预分类建议(high):HiCar合作落地新车型。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-13-huawei-124
+  date: 2026-11-13
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为在GlobalData 2026 Small Cell竞争力评估中蝉联唯一“领导者”称号"
+  quote: "华为在GlobalData 2026 Small Cell竞争力评估中蝉联唯一“领导者”称号"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE5qXzVtS1VkRWQ1TTRFSkJKUVpmSjdwek5uaGlQeHJYLXVCWjVYMXBqSkRSNVlXcTlqcmJpeWZ1ODJDUGtJQzBYaUV0aVJ1TmlaN0tMYkxvNFlacHRQMHE3ZU9Ea1B2M3ZSb3FUY3I3bVFQdi00c2pkRmQtaw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):权威评估蝉联领导者，品牌声誉利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-huawei-125
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "HUAWEI Mate X8 及全场景新品发布会定档 11月24日14:30"
+  quote: "HUAWEI Mate X8 及全场景新品发布会定档 11月24日14:30"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9lWEpNTUlOQmNXR2ZkN2JSNVpwclVCYXkzSzlicGJjR1JLZnlOMkJYUE1wakJNSDZaaDl4cF9pM0x6djRDdkVUWHdfcl9PSldNQnBHcExDNlg?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰新品发布会定档，重要预热事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-huawei-126
+  date: 2026-11-15
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为更多机型鸿蒙HarmonyOS 7系统“转正”，含nova 12 / 13系列、畅享70X等"
+  quote: "华为更多机型鸿蒙HarmonyOS 7系统“转正”，含nova 12 / 13系列、畅享70X等"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdnI4cmM4SDBQUE5DM2xiV01lZ0hpSFgxYTNYQnphY3k5bG1JNVVmTTdXTllyWTBVamJ3X1BXVVRwM3ExQW9MYkJBR0M0QUVtdWFyUl9XdzBDWG9iZ3FIZEFVeG5Md3ZzSEVseTdTT0JYaXVSLTVvMXFLMGRleHlZVVVDWVZ0YkJV?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):鸿蒙7扩量机型，系统生态进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-huawei-127
+  date: 2026-11-15
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "余承东宣布华为Mate X8折叠屏手机外观公布"
+  quote: "余承东宣布华为Mate X8折叠屏手机外观公布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9jX2RyMllHY29DYWppUWdIZXlvWEhxdU5KQWRsbkpuSDZfVXpuRmpteC1CYWQwSnRzSUJ4N3k0cUx1d1JSUzk4N0xwVGZPdUtxZmY0M1BSWm4xVHpKeGxEZ1N0cXQwYXRpSDJUX3BsakdNRzd6V19zT3hVRVBwbDQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰折叠屏新品外观官宣，重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-huawei-128
+  date: 2026-11-15
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei 紧凑型折叠笔记本电脑开启预售，最高配备 32GB 内存和 1TB 存储空间"
+  quote: "Huawei 紧凑型折叠笔记本电脑开启预售，最高配备 32GB 内存和 1TB 存储空间"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE5nZTR0ZTBqQnRFSWhiSEduaTdMdEJHZmswa0c2VHpvblhxVmRzcWRzSXkzYXpfV3N6ZGRSdmhSRm9fb2R1cDZjWEhPanhYTzZrb0QxekowZC1nZGN1NUpjR1d1d0UxYnRIUE9mT3lrelQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):新品类折叠本预售，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-huawei-129
+  date: 2026-11-14
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "第二届华为乾崑智驾公开赛今日收官：超19万车主参与"
+  quote: "第二届华为乾崑智驾公开赛今日收官：超19万车主参与"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE44SjNnYmMxUTFLNURVcjFQeldoN1ktWjRsNDd0Ry1KMTBZankxN3VkdExEVDZmbEVIWTcyNl9adjQybHFKNVNPSHV0b1NnTHU1ajZONmt0U1RuU2dlS1R4ZzQ0aUx6dENwRWFJUC1yUjFQWE5GNFpEYzFFN2xfUQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):智驾赛事收官，用户生态正事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-huawei-130
+  date: 2026-11-14
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为发布支持智能手表连接的 Sense G1 血糖传感器"
+  quote: "华为发布支持智能手表连接的 Sense G1 血糖传感器"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5abFFVRkg2Si1peVJIVzdYVkJGOE9ld2hIREJWdnhaZC1QaXdNOFp3Smc3VTVkQzdjeFczZWhIR3NyOExQVGpfdVo0ZnBScGV2NURBcVVFd3lydEY2Q21tZV9EWElKRTA?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品配件发布，常规产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-huawei-131
+  date: 2026-11-14
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "“The One Thing China Lacks Is Chips”: Why Huawei Can’t Replace Nvidia Yet"
+  quote: "“The One Thing China Lacks Is Chips”: Why Huawei Can’t Replace Nvidia Yet"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxNN0FqajFEOWVvWW15czl2eUVlVkh3UTVXeXpuazJCakJ5RnpoMTh5cnU1Y2YtS3IzTEV5TzNtQjk3cDl1Y3NRTmRZbno5eHl1NkxJY0d0OFZ6dWQ0YnRwSXNrQTNBeDdYUUJqUG10TUZuQzlmeWYyNkZOT3MtaGZwUnBHV2szNEdjaWM4V0JQM3c1NHRqcl93amdvZ3pYams?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):芯片短板分析，涉品牌能力质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

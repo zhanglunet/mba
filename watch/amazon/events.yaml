@@ -2281,3 +2281,79 @@
   source_type: media
   note: "LLM 预分类建议(med):投资Anthropic巨额回报，重大投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-13-amazon-150
+  date: 2026-11-13
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "5 things you need to know about re:Invent, AWS’s biggest annualcloud event of the year"
+  quote: "5 things you need to know about re:Invent, AWS’s biggest annualcloud event of the year"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Uc1JyeTJ6TTJwcWhKbmQ2NGlseW5zMUk4b28yZDVqZnpDQU04Mk1kTVlCczRweG9xYWZ1X2g3ZExWQ2lua2M2WDEzXzdSTk5fMC1McHpiN2lLazVvcVdvU0hNVmJzamd3?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):AWS年度大会预热，重大品牌事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-151
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "波音与洛马合资火箭升空失败 亚马逊40枚网络卫星全毁"
+  quote: "波音与洛马合资火箭升空失败 亚马逊40枚网络卫星全毁"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggNBVV95cUxPZ0ZoaGpBa2lSUmI4Z1kwYVBtZGNMbkltQlVvTjFaNkI5SHFsbThmZTJVbnRRUFFBUGpnbndiUkVhck94LWRpTC10N0FTMzUxdW43clo0MkFMMklBcEdrWGk0NjhDTF9fYzUzdm5DQU8wWERFbHMxUEs3RTMtcjl4QmNONF9aMTBaSExoYWh5YlEwb3pWclFZX2prUTBTOHNfN3E5TDZRUzNPeUh6ci12YVRxbEtUakN5WWNlbTB5T0FaMFY2ZHdXNm13c0ZlVkVuTVZpQWlkZkxsamwydkRWYXQwV1BSeTVISGFTa2QwbG4zZ1hpM3FmdjEwLXZhX3Fha0ZsaDVobV84ZjBDSXNlNFBQVjItV2tGQmxISmFuNTd4Y3dOTlpOVGZVUkNBUmJRVG1xLWVVZE1PMklxSzNWYmRCZFByMVhXU01pM09OUGpGbnJrY3gtWjRicEV2YmtiaGdfUDhwTjAwYVFIckF3NWdSVC1OTlpkb3VwUUx6UURaUQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):重大事故，卫星全毁，损失严重。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-152
+  date: 2026-11-16
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美國亞馬遜互聯網衛星發射失敗 挑戰馬斯克“星鏈”受挫"
+  quote: "美國亞馬遜互聯網衛星發射失敗 挑戰馬斯克“星鏈”受挫"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE5UdHdjU2QtM3J2ajBKQXRXbDBHUmozbUV5QlpRbWM0dFRmam1acHBnVW9nVjZ1Q1dtM0oyOV80TFU3SEhkT3Iyam5hRGlrSTVqM1lHbDdXRTBaMnN1aldiTjV4cUd5MkdlZGJBVTVlRQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kuiper卫星发射失败，重大业务受挫。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-153
+  date: 2026-11-16
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "国际特赦组织：亚马逊在沙地移工仍遭受剥削"
+  quote: "国际特赦组织：亚马逊在沙地移工仍遭受剥削"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE83emtrVFB4LUdYVC1WTTVEZU5UUlMwWUF6bGJESTRiSUlWaG9MWlZ0Z3lBUWNyUklENUMzcVdCX0xoY28wZFNxTTVhWHl0dl9HNkV0VnBiY1RzNHNBcmdVc1VWUHJQTFVaVVRESU1TbnBWUUNjelFPWA?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):国际组织指劳工剥削，声誉风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-amazon-154
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "亚马逊旨在防止购物者在谷歌、论坛和品牌网站上研究产品内部文件称，存在缺陷的AI回答和高昂成"
+  quote: "亚马逊旨在防止购物者在谷歌、论坛和品牌网站上研究产品内部文件称，存在缺陷的AI回答和高昂成"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxPR1VwUkU0WXU0M2ZkRVB1TzRqZFZXQllMaGxnTWp0WGYyRGU5aVlMUVZfX0RUN3NxQk81M0lPQmJNZ1k3MmdsYXVCZWg4LXB6VzB6aU80RU5UUkJhdmVfbmJqNV9zb1gwRGd0MTZycVEyaXV5cDE4UjIwalZ4MnViOGRjbG4xa3dkRzR2NkRfRmFZYzBEOWRQZDB0dEltWkJaYko2U042WGRKb3Zk?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):内部文件曝光AI战略与产品缺陷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

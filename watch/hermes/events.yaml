@@ -1073,3 +1073,64 @@
   source_type: media
   note: "LLM 预分类建议(high):Birkin二手价急跌，稀缺性神话受质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-13-hermes-070
+  date: 2026-11-13
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Hermès unveils its renovated and expanded store in Osaka’s Hilton Plaza East in Japan, inspired by l"
+  quote: "Hermès unveils its renovated and expanded store in Osaka’s Hilton Plaza East in Japan, inspired by l"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwgFBVV95cUxQS0lzd1hxc0xxUk92VUgyUllHMXpsUU10bUQyV0FCdVlSVFlDVWRUWmNBUTFubDh5UGViY2ZxUEhFV0R0aGkwdkVUd01Xck1pMWVEMjZtQVhvOFdPbHFCTFBtaTMybUJ3YVMydDhFUDkxNk1vZlU2LVJUclVjaFZVNUhKY2FidVRzV2U0d3pJQTlISXFzTFpTYlRHbnhhbG55LU10RGhjb1I0VGNseVhXYXlQSDlzZG1ETjVrX3lVakhfdw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, category]
+  source_type: official
+  note: "LLM 预分类建议(med):官方门店扩张动态，日常但可入库。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-hermes-071
+  date: 2026-11-14
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "创上市以来最差表现！爱马仕跌下神坛，打醒所有幻想抗周期的品牌"
+  quote: "创上市以来最差表现！爱马仕跌下神坛，打醒所有幻想抗周期的品牌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NTW0xWFprV1hvSjhqY0FQeE9WdWs5cXJLdndQLTVRTmFqVWt5aEljUDk2eFpoVlRwOW5Md1I2T3FfNnpzT1NKZWF3VmlNUlNEZy1OSUs2RTluQU9U?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):上市最差表现，品牌声誉冲击。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-hermes-072
+  date: 2026-11-15
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "女子在江苏二手店花57.5万买爱马仕手袋 竟或是“组装包”"
+  quote: "女子在江苏二手店花57.5万买爱马仕手袋 竟或是“组装包”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE9zQUtpSkk1RmRMc09VZXh3d1BkajhjYkE3dFVHY1AwWHFQX3BaM2VQS3N1aEpoN3lqZkduX0F6LUxuRmxTN2tnTTVMWHFoRkRXaDVvVVp4VjlKN080YV83QUVEQXFXVjlzWjRtS1FKM0VKWG8?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):假货争议事件涉品牌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-hermes-073
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "声画导读｜Hermès爱马仕Birkin二手价急跌 路透：稀缺性神话褪色惹关注"
+  quote: "声画导读｜Hermès爱马仕Birkin二手价急跌 路透：稀缺性神话褪色惹关注"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi_gJBVV95cUxPaHViWHpFVjRET1haMGRuNE5IdGtsYnJOSkthUVMtSDZzM2ZMZHJIV2FRNnBjMDdaN0RXN1UyLWU2U2ZzV3RHQnlydEk5Uy1JU3FuUEFTWTMtVGN2bE1DVTNuTnhqelZOdXJjclI4cUNoWkhMU3FxQzBVM2EwcWFTMFBZVmFCZTQ4b0p5cDEyUmxMdVdjelNWMTNqeUQxX1NLY1BzUV9ESTVCMHhjbVlxbUhpMUFNc1d4V0ozZVk4YklBZm81Zm5aNk1xSF9ZTUhJMTZXWTVXRGl2bFplZVdCbklOYm5CZU5BUmY2RnJWRzhjN0Vzc3RlcThKaEtrVHlQS1VWVlVrUGZjdEpGX0dUMXUxUkVNNC13TnBuRlRTdjRPQTg3Z2kwN00ydm40Rmh2MXBPZm5DQlFzcm9naUJRSVBDdEhsNVEwdkNKM0l0Z3JidzFNZGxHUlhQV0ZmaUpibmtkajVHcG5mUWZVeEluc29uajF6dnNnU3IxZmRB?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品二手价大跌，稀缺神话受质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

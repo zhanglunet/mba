@@ -904,3 +904,109 @@
   source_type: media
   note: "LLM 预分类建议(high):官方涨价事件，影响面广。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-13-dji-059
+  date: 2026-11-13
+  dim: W7
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "口袋里的双摄电影机 大疆Pocket 4P测评 |"
+  quote: "口袋里的双摄电影机 大疆Pocket 4P测评 |"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5TTFRlRDBSTjdfeHV6YVh1UTdxOVltN1lDR0dpWDU2MDE2Sl81R0ZObFFlMXBMZ3RORDZqZjNJTzhEZHRGUFVISjV4MnBPOVRyUnlUb3R0eHg?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):Pocket 4P 测评，口碑正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-dji-060
+  date: 2026-11-13
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "大疆回应涨价：涉及部分在售手持云台相机等"
+  quote: "大疆回应涨价：涉及部分在售手持云台相机等"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5xYk9PSHF5dHFBTUM1RUFNZnluTUJmVDZONEpBZUp6cE1lMWlQZUtXSEVSd0RyQnZ4ajV2TXNUUkdJSk40VWRCbDRuVG9MM0xJcTBqWFVKR0tGRWI1TllXNW1GZndrSFdrQ3EtT1JNcXB3QQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方回应涨价，影响品牌价格形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-dji-061
+  date: 2026-11-13
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "受全球半导体及存储等多项关键零部件成本持续大幅上涨的影响，大疆正式宣布调价"
+  quote: "受全球半导体及存储等多项关键零部件成本持续大幅上涨的影响，大疆正式宣布调价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE12MlFQSkcyalpNSGpqOWo1LWFLREJ5T2RfWk1ZNmU0U2EyN3hSbFhxY2l2ZGNhanZqMGpqb2ZjWmVfOEgtUldGY281Vm1LZnpRZUFLY29nd1RBMWV6R3dnNjBmY281TmdCa09JVC1qd3pDdVZmY3Q2ZnZB?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方调价公告，重大定价事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-dji-062
+  date: 2026-11-14
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "大疆Pocket4系列将涨价"
+  quote: "大疆Pocket4系列将涨价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ObDZ3VHVaXzZzdHQ4QjlCZXU4X3JERE93Z3dORzBuYjBvOGQ0ODFHX1c3aEdid2JnSVFMUHBEdk5kNGFCdWx1OVA4VlRleXpYUlRhOUlPMVo1NktwT0FiZw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):主力产品线涨价，事件信息明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-dji-063
+  date: 2026-11-14
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "巨头也顶不住了？大疆官宣：受半导体及存储成本大涨影响，11月18日起部分产品将调价"
+  quote: "巨头也顶不住了？大疆官宣：受半导体及存储成本大涨影响，11月18日起部分产品将调价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOTnZ3b1RzUjhXeXR1MGxodjdsdElkT1hicXlSSnR5WlNlTld0Vm5WYXRSYzVxaUdiQUhSRGtyWlo0bkdNTDFKbktRb0JHSnRwRTFvQ0dFeVRnSk1FbDJzU2JzWFNiTnNLWWM0Wk5oUTlRaXFDeTZlQkxnZ0s4TER1WVFJVGc3N2tidUFRYw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官宣调价及原因与时间。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-dji-064
+  date: 2026-11-13
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "确认了！大疆创新部分产品将于11月中旬涨价"
+  quote: "确认了！大疆创新部分产品将于11月中旬涨价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOYUd4b0l6Z1A0MVFnNWtYb0QxdjVyVTVXc1cxV1U1SDZfOENaM3hUSTQtdWZ5WlNpZ2dzVXgxd21Lc3o0czAzNFcyOEdfeDRnQWYzUTRrWGdjYnZSUUxaTkwxTEdZd0I4OE1kcXMzYXJ3Wk1kZGtCLU5PbkVIczZucExpMTdLUmNWcmN2Uw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):调价事件确认，与1、4重复但可留。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-dji-065
+  date: 2026-11-13
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "大疆宣布11月18日起上调部分产品售价，因核心零部件成本大涨"
+  quote: "大疆宣布11月18日起上调部分产品售价，因核心零部件成本大涨"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFBFSGNER05wSXhQNTZiTmtETnhBZ0M5OGF5cEZYN0VxTmt4U1BIeE1vckwwMzRFVWI1UWxpTFZ5STk0UXZSVjItWUZUaDdLUUEyVWc?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方调价公告，涉及全线成本与定价策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

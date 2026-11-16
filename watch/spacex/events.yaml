@@ -2711,3 +2711,124 @@
   source_type: media
   note: "LLM 预分类建议(high):第15次试飞助推器回收失败起火。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-15-spacex-178
+  date: 2026-11-15
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX试飞星舰开展关键测试，回收助推器未能成功"
+  quote: "SpaceX试飞星舰开展关键测试，回收助推器未能成功"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBkUnZJcFFIYnFLVVQyYk54Y3k4S0RiaS1ESTBtakpZUWtYemVJcnJKM2NOZmZzSnhIdEhlVU1KQktUbUlmMVpONGRJYjZ1aWh2YTNnSHV3UmlZclRM?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):星舰关键测试部分失败，技术舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-spacex-179
+  date: 2026-11-15
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX首次用 “筷子臂” 成功完成星舰捕获回收"
+  quote: "SpaceX首次用 “筷子臂” 成功完成星舰捕获回收"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9semtlbTdTVXVtMXFhOEdhM3NjTF9vUzVaaEJSeUpMeGFYTnpyTTg2R01VVk00M0tkYjZ3eEhib0tneVpRSWJySkhYVThSWGE5ZDF1elRqczVhSEV4?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal, origin]
+  source_type: social
+  note: "LLM 预分类建议(high):星舰首次成功回收，重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-spacex-180
+  date: 2026-11-14
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX 星舰第 15 次试飞，飞船首次成功回收，如何理解本次结果？"
+  quote: "SpaceX 星舰第 15 次试飞，飞船首次成功回收，如何理解本次结果？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE81eWQwdW5JSmk2T1lKNUlMdmxKZlZSYXZZMlc1ZUZDcXhoLWdBa0h1T2RkMmdTNEwzaTR0R0toWUJiYzFNd2ZMazlGeUY4UWQ4NHN3eUhsTnJOaXlUb3J3?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):星舰首次回收飞船，重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-spacex-181
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX成功捕获“星舰”飞船，此前助推器坠海"
+  quote: "SpaceX成功捕获“星舰”飞船，此前助推器坠海"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgJBVV95cUxNZ0hVZG5LV3dGRnoxaXFQWEhIS1l3TXlIT0h2bDZFUUs5dHdwRkpGN09KZjlIQll0T3FablJvWnI4aGlSZTlpUFRtUmZUcW8xU21MTWR4RTJVelhIX1ZmblJ2Smo3TnBJbHlrc0RIa2I1bExGeElSbWhGZVpEeTNLOXl3ME1DUFpwVUhCWHhCRFZsbnI4WWp6RlFxLVpDaC1nZ1dGbmJUeGh1TTBoeVUxTE5lTG9vRzFZNW13UGw0WVlEd0RjLWpXQjhlaFRBbmIyV1FRNTFSbThtNExkYWx3bVJfQmI3ZlRSTE5MME1QOUdqSWlIWmctUjM1azNCYlVOMVdHT245a2VQNkxwNXc?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):飞船回收成功但助推器坠海。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-spacex-182
+  date: 2026-11-16
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "三星将在美国为SpaceX生产卫星芯片"
+  quote: "三星将在美国为SpaceX生产卫星芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE83SVNnYXpvS0hWd1F5MnRTb1VubEM5VU5EMVhSVjhKWTNuMERnOXBvbDRIV1NIZ1o0SzZWeGJnampHdi1rZDdjX01DQlo2akU3eGFKT0ZIVDBZNS12bXh6YnlyOTFuZnJSYkNQNDJmWXV2Zw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):三星代工卫星芯片，供应链深化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-spacex-183
+  date: 2026-11-16
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "乌方称星盾通信大面积故障，SpaceX否认，恰逢美俄开启和平外交"
+  quote: "乌方称星盾通信大面积故障，SpaceX否认，恰逢美俄开启和平外交"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE81S3dzUzVpV1FjcEJ4SHpYWVB5aU16WmYwRVlpam1ldzM1WTQxd1NFdFlRTzA0TkR3MjdWZmFRQzEwbHlSaEdMRTJNRQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):星盾故障争议涉地缘与信任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-spacex-184
+  date: 2026-11-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "三星，将为SpaceX生产芯片"
+  quote: "三星，将为SpaceX生产芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9SU0txOUFGamZEc0xJV2kxV2pDa21XY1hpb0RjU0VReXBROUUzaklNQzhxSlJRZlQ0dWgxS09ncHNoSS0ySDhuMGRyWkxJR2oydWM0?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):三星为SpaceX代工芯片，供应链合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-spacex-185
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX星舰第15次试飞飞船首次被机械臂捕获"
+  quote: "SpaceX星舰第15次试飞飞船首次被机械臂捕获"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTFBSeDBwOUtfV1RXbHBQUXhJQVpOb0NGRXN2bUdIVDNMajdhMDVPMFlLQmlIOWJLOVYzcklXcE03c1gtNU4xUzZKSDJFcy1PM1ZIZWQxeTlxMEhDRTQ5c3NHOUJUS01QLUVpekpENkZWU3JlRmc?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰重大技术里程碑：机械臂捕获飞船。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
