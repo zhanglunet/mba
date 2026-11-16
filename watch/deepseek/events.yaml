@@ -2042,3 +2042,64 @@
   source_type: media
   note: "LLM 预分类建议(med):创始人战略布局，具品牌信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-14-deepseek-134
+  date: 2026-11-14
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek 网页/Chat 性能下降（DeepSeek Web/Chat Degraded Performance）"
+  quote: "DeepSeek 网页/Chat 性能下降（DeepSeek Web/Chat Degraded Performance）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBiSUtQVURkWGZmSW1HY29HMHBfSURzVENvRm1Md3ZjenFKWlpzX2xkZlVHbUZQMThMWTdqUm1QVURmR3JLMC1kR3FtM1hsRzJwVDNLV3BiRGxjb0VvVE9XeA?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方确认服务性能下降事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-deepseek-135
+  date: 2026-11-14
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "黃樂關聯企業投資DeepSeek 涉供應受限AI芯片"
+  quote: "黃樂關聯企業投資DeepSeek 涉供應受限AI芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WSlZZT3g0RXgyeGhKcllSTTVGWFU0SWxKY0hkY2twWVJMYWRQNUYxblNIWUZzNGFqTERlSXRUOW1OUm1XQ2t3Zi02aWFBVFpCd09MYk41ZWE1bV93elBwZtIBZkFVX3lxTE0xUGZHVE95cDNPLUc2M3QtSF8xdVI2bWw0MEsxdFpfZURwMWNhTEdMNW1KbmhwMlU5RGpCbFBHUlhhS1FjQm1YTFE1eHJSUGhvbFZEclJoRUVvZFppRV9XY2M5TndOQQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):涉受限芯片投资,合规风险舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-deepseek-136
+  date: 2026-11-13
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "黄乐创办公司曾获多款对华禁售英伟达芯片 关联企业据报投资DeepSeek"
+  quote: "黄乐创办公司曾获多款对华禁售英伟达芯片 关联企业据报投资DeepSeek"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE1HWEV3Y0lCc2hwdFNnU202emZRZzR5MUpsc3RieEM1dXN5YXpmNTZDU0NaRHR6anR6ZnJmZ1FlbU9IYjN1NEVLVmp0YklWekQzV2c0WldIaWZiZmx3aFRWY1lzTUhCV1RfRFFmY3owV19aTEHSAXhBVV95cUxNZjFYX1Z1dzN1Zno4VmRTZTBaNkVqY1RPRl96RGo3MlZnMWFFb1RlcUNBc0FTeFRfbThkTVNKSzhPd0NsVkdESHBZZFlrbEQyTFVGMmR2OS1iNVA1Vjd2dlBJd2lEUXdoMF9CXzVZMUFSYjFjVVV0Yi0?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):同主题禁售芯片关联报道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-deepseek-137
+  date: 2026-11-13
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "受管制英伟达芯片现身上海？黄乐关联企业投了DeepSeek"
+  quote: "受管制英伟达芯片现身上海？黄乐关联企业投了DeepSeek"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1hdHVQWDhBcnZpWG5HdVc4ZW5Da1RYZjdUNHdhMFFWZ0Y1TFZsNlBEa3BjeGpzQjU3c0JJRXlwbVpJNVlrS1I3Vg?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):受管制芯片舆情,需关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

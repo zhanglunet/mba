@@ -3086,3 +3086,109 @@
   source_type: media
   note: "LLM 预分类建议(high):新产品支付功能推出，实质事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-15-openai-201
+  date: 2026-11-15
+  dim: W9
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "A step toward defining the Standard Model on a lattice"
+  quote: "A step toward defining the Standard Model on a lattice"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE4xSGFfWmVQdlE5eUpDUzdzczVqWV9MSnhzQnhKXzlicXUtdmFfandZbE9fUTAtVnVUeElydnowdzQ0dkY0Q0VxeTlDQ2JpeU5iR0JGaW5uN3FibEZaVFFFOE5jVUVwS2dvWXRNTHpGUkNpUU0?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官网科学博客文章，研究内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-openai-202
+  date: 2026-11-14
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI的AI购物又往前迈了一步"
+  quote: "OpenAI的AI购物又往前迈了一步"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1vTm8tMDVyQXdBX0VSbU95QkNLUktpcThuZm9lTzkzMjgyVFZWeVo0ZzBWX2R1dGpfa1d2UllvTjc0VklWaUlVRV85amE4WjJyY3V4VVl3QmRmMVpK?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):AI购物业务推进，产品布局动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-openai-203
+  date: 2026-11-16
+  dim: W6
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI撤销机器人团队"
+  quote: "OpenAI撤销机器人团队"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5V1V6SE1UT1JvZ0gxdlM4aVQ4UmFSVWJDamFPbmtVS0xoYjdHNy1LamphRUh6d2IwOURUeEFWNUpPd0dMcVdjTzY4aWRfQW1fdW54WmZn?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):解散机器人团队，战略收缩事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-openai-204
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI推出ChatGPT Wallet 落地AI智能体代付场景"
+  quote: "OpenAI推出ChatGPT Wallet 落地AI智能体代付场景"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5ZYlZpUC02alBsWlRnamdZRnlCZ1BlSGZZZ3d4OEU0dUVYZzFyX3I4M1FDTE5UcE5fTzZpOEdJTFh2SXBxOU02Qw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):重要新产品落地，属重大产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-openai-205
+  date: 2026-11-15
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "“别提越权”，OpenAI自曝：AI摸进黑客考场后台，交卷时只字不提"
+  quote: "“别提越权”，OpenAI自曝：AI摸进黑客考场后台，交卷时只字不提"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBiNG9RcTZtZUozUkpVaVp0SHJYUjNiQ2d6Y0N6cVhhcER2Q2VIaDZwLWRSUUpqUm1DWUtPbUcxTzhVMlNRRG8zUw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):AI越权行为自曝，安全与信任风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-openai-206
+  date: 2026-11-13
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "隆重推出 GPT-6 Sol 和 Luna"
+  quote: "隆重推出 GPT-6 Sol 和 Luna"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTFBlM2NrMUY4MnZ1NUVpXzVWYkozUDNBQ1plVWtFLWlQQkpnVTdzVnhmd2ptZTVTeGpBWGZXLVlWUmFiZVMzTExFeEJ1UVZSWVRBRVg2RE5YVDlyUGlPQlJvclBPNzZBN1lUazAtdEVQSXVwRVRwZkE?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰大模型正式发布，按则判P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-openai-207
+  date: 2026-11-15
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "突发｜OpenAI解散机器人团队，机器人的专属大脑不用单独做了？"
+  quote: "突发｜OpenAI解散机器人团队，机器人的专属大脑不用单独做了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE1sNjBHU2RwQ0NkWmZXWjV4ZnhleGlmSmRnbmZYZ3h1TjVjNl9sSVVDQmNBRUdQZEVrTTFaeHYwLVY4Z3FRdF9fd2ZLSl9mQQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):解散机器人团队，战略调整事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

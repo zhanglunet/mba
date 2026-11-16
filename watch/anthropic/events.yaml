@@ -3276,3 +3276,154 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数字公布，触发P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-11-13-anthropic-215
+  date: 2026-11-13
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 发布 Claude Fable 5.2 和 Mythos 5.2，Google 用 Gemini 4 Hydrogen 接替 3.8 Flash"
+  quote: "Anthropic 发布 Claude Fable 5.2 和 Mythos 5.2，Google 用 Gemini 4 Hydrogen 接替 3.8 Flash"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9UeTRyQnFldk16WjZqUms3MGVvQTNFV1RvTTZsNGVya1B3MnZvQ3ZFM0dvN25NMlVMcHB4SGZwSEVJRV90NnYwV3pncklQMVJWbTYtQXJHQnlvbllj?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):主力模型重大发布，符合P0判则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-216
+  date: 2026-11-13
+  dim: W7
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "黄仁勋离任背后，Anthropic与英伟达的分歧与合作"
+  quote: "黄仁勋离任背后，Anthropic与英伟达的分歧与合作"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE94Ukk1d3hDd2RhajVhYnMzeUJHZ2V2bEZXYlNUVGxRT3pwTVdiVDlTa1Jwa0RrODVFblVOa3ZiYXZ0cUdBNkZBUzhIekVZSXFDZjFJOXI5OFBYdTNR?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):涉及高管变动与合作关系。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-217
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Claude Fable 5.2 一半成本追平 Opus 5.5 极限档：开发者的模型分层调用策略"
+  quote: "Claude Fable 5.2 一半成本追平 Opus 5.5 极限档：开发者的模型分层调用策略"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SUFBIeWlJQ01ZVUtWM3B5QWRRbU5nTDZVLXhidUIzczgwcFNDMnZNU3B6dF9ySzZYQ3ZQOEJUbXhFaXdJY2xMVE1jZW9RR0JNSXBsQTdxbGJZN1JB?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):新模型性能与成本分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-anthropic-218
+  date: 2026-11-16
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "不调用图像模型，Anthropic Claude Fable 5.2用Python代码模拟真实画笔作画"
+  quote: "不调用图像模型，Anthropic Claude Fable 5.2用Python代码模拟真实画笔作画"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5PWkpQQVZTUTBPOVIzeXZ6ZlVoZ1VzbTNoMllqWnZ4akc2dm9tX3hEQ2ZweEhxWlFTbnktYlZyZzJWb29RbU5wWnhzWUE?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品能力演示，正向但轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-219
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic称：Claude.AI和Claude API正在恢复"
+  quote: "Anthropic称：Claude.AI和Claude API正在恢复"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE81RWpZSzFtOVpTNFN1cmt4SFhiQkNDMi02SDZXckJVVlZPSjloS3R0SzRIdWF5YU85TmdyYTkxaTFQQ1otLXFZVG0xSHBZRURKeXE3Skk3eV84cU1mMFZPcXlGNA?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):服务恢复公告，跟进事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-220
+  date: 2026-11-13
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic IPO认购超额约6倍"
+  quote: "Anthropic IPO认购超额约6倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxPNVMtei14b1lwVXI3VHNlY0hZSFYxcGNqeTg5WFdoNk85UmhmaVRSNVM1WjdoNHdRUGVJNnVhOXMzNmJobnBSNXppd3BtVThQNm10RTlFZU9tR1IxX3VIQkRKQnRacTZOdGVIZDk0cXNwTWhZS0E1VzNKMUttZVVtTDZhRlFvbEg1MUE?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO认购热度，融资显著利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-221
+  date: 2026-11-13
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic：Claude的错误率已恢复至正常水平"
+  quote: "Anthropic：Claude的错误率已恢复至正常水平"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE95SlpsekpGZnJBN0ZCSk5JWnZyOXdIRWhiNG1KbUJlbTdLNDlmX0NXalhKcGRhZjBmcHV4dU9TWFA1TnR2Yk9aUC1OSHJmOVhYQ1NxaHpFbkJhZDZ4RmgzU2JzMTJRTG8?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):故障率恢复正常声明。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-anthropic-222
+  date: 2026-11-15
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 概述 Claude Code 的 AI 驱动代码审查"
+  quote: "Anthropic 概述 Claude Code 的 AI 驱动代码审查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxNSHhBMDUtU0djbDhZOF9JcHprWU9jY1NQbmhxWUcwSFpzWUlma2w2Y1lLRVVPTzE4VGNqclpQRnZOVXBwUmlBeF9leUNfTzFLM0wtRkJFQWVPWWFRWDJEN3BMS3h3eUJQXzVkbzhMU0JaNzgxMlRtWUVUS2lrZGdjcTBEZFdyLWkzZ1F3ZFhHNGdZbjBiSHNVejJUcE0?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude Code 功能介绍，产品能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-anthropic-223
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Claude 宕机，claude.ai 和 Claude Code 出现登录故障"
+  quote: "Claude 宕机，claude.ai 和 Claude Code 出现登录故障"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxOYXVycmlJLVhHaHFZR0hvRWZ3bExWWWR4TmNLV2M5MlRtMzJtcEtoakpHWVYzWVVkWC03QXNHNWNjTFpWblFJa2pjYy16aE9rNlY3SEthN1I0WmVlNGVpZ0ZxY2I0elNHWkRnMEIxOV9wYWJZWUswM21jUmJTQ25JTl9jMU0yU2h6WU1SeWEwNzRyLXN3d2JQVnpR?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):核心服务宕机，影响用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-anthropic-224
+  date: 2026-11-15
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Claude Duet 推出邀请机制，每人三个，但不必四处找邀请"
+  quote: "Claude Duet 推出邀请机制，每人三个，但不必四处找邀请"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxNR0ZLcVpWdXJSZDU5WkJPX21ERXFoT2pNQ1ZjVHpxOG9nMHBZLV9iUURMNDAtbjFMNTZYbzR2bGl3X3dzeTk0RS04RmFxWDJ6cER3RW5FcmJzTzAySVNoSXQwNkZQQ3paVmNfQmJvaXNfeWV1SVd3RHVyMDhlZ3lHdU13?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude Duet 邀请机制，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

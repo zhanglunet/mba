@@ -2808,3 +2808,124 @@
   source_type: media
   note: "LLM 预分类建议(high):官宣关闭支持社区为显著服务变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-16-apple-185
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple launches research study to explore the use of AI for health"
+  quote: "Apple launches research study to explore the use of AI for health"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZEhyWXRwQm9NZnp2SjdSVDVubTJCeXJGTW9kaks3bWpUTGdBRWdHejdqZ0VuQ25pODcwazZ5c0R2aDhwRlpKM3FGMjUxZFhNdHhfZ3huNTNDWWZSRXBVV294TDNwQWktVm9nTWlHaEFZZEhmRWVGbmlieUYxLWFQeFVKWUpsV1hVZ2lhOE56TUxYajVSMnNpcnpzVW12bUI3cG03X3g2QTA?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [signal, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布AI健康研究计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-apple-186
+  date: 2026-11-14
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "In the Loop: New iPad mini, iMac, MacBook Pro, and MacBook Pro with PROLED XDR Display"
+  quote: "In the Loop: New iPad mini, iMac, MacBook Pro, and MacBook Pro with PROLED XDR Display"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivwFBVV95cUxOT2RkMlpEOHBmMEo0eGhULXU4NDNVd2g5alNpNXVpMWRScnpMdUVVU1dxYXl3bHlsOGpackkzY3BLazRpUG1oNlVMYXlDYjc0VkptbjJRSXg0VUhPLVVTZDY5cTlWaWhnWTRHcXplenFkVl91TFJBbHRQSFRuN2hXQUM1M0p1bTh1VFhFVlFjYm9GVkxLQjlfdVRGbkZWcmZMcm9TUzBxbjc5NVYzTXlEdl9rMGQzWm0tSUFlNVJVWQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方多产品发布但属例行更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-187
+  date: 2026-11-13
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果官网更新，老 iPhone 全面降价了！"
+  quote: "苹果官网更新，老 iPhone 全面降价了！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BUFJpLWRwc21jd3RxTTVvcTVLQUdpcFZ1OEp3Vy11TDBpRkpYeERJd2JLZmo2MThaZUhHVHMzTC1ibWphSTIybjdLa2dyY3B6eTZoM3pmSks5NnUz?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):官网老机型降价清库存。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-apple-188
+  date: 2026-11-16
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果新款Apple TV 4K提供8GB内存，但应用程序和游戏最多只能使用2GB"
+  quote: "苹果新款Apple TV 4K提供8GB内存，但应用程序和游戏最多只能使用2GB"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaF9FbV9qQnBZcG0zN0pPM2h5UmY5ZnJyS0hOTXpub1ZHZU5tamR2cXBDcE1WcmRqNFhCRDdUMkY3UmpCRVN1VXpUU09md1BZM1ZXUXY2WVQtbGU2U3o4UFpYY0VZanA3V0prcV9rMlR6Z2tfTGR0dks2TVBkajJrNTlQQWtJSV81?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品内存限制引负面讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-apple-189
+  date: 2026-11-15
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "苹果为老款Apple Watch机型推送watchOS 26.6.1版本，聚焦修复安全漏洞"
+  quote: "苹果为老款Apple Watch机型推送watchOS 26.6.1版本，聚焦修复安全漏洞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9fWU80UkhvdURwNGppNXhTclIwTXpjMHN0VnY1eTUzRVdKMTducVhMc3g3SlJQQkFwYWlqeVloVjc3S0VFeWVDQQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):安全补丁更新，轻微正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-apple-190
+  date: 2026-11-15
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果：Apple支持社区将于11月20日永久关闭"
+  quote: "苹果：Apple支持社区将于11月20日永久关闭"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE8zMHJ4SVJKZHM2SDlOWFJVdzZJSUtRbk1pdWlBdThoM1R0MUJCaFBuaFdDbkJjaEl5NGZLMnh3azRVNGVWWDh6S1MxQ2p3V0hoSmtFdFkwNW56TGRyMWxzbA?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方社区关闭，服务收缩引不满。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-apple-191
+  date: 2026-11-14
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple智能新增苹果平板和笔记本电脑场景，已完成备案"
+  quote: "Apple智能新增苹果平板和笔记本电脑场景，已完成备案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QS3BzWXRQRnJzaGtILXRSUTJxWUFLbWVXbllaUm5qZmF0UUNYc2ZBb0l5STZJSU9PWmRGZlNXaUR2UGVCMUFqQnZidnpuVTdCeGlMTnhReS16NVN3Qmhnbw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI功能扩品类并完成备案。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-apple-192
+  date: 2026-11-13
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果首款智能家庭中枢HomeView及新款Apple TV 4K上市，首批订单已送至澳新客户手中"
+  quote: "苹果首款智能家庭中枢HomeView及新款Apple TV 4K上市，首批订单已送至澳新客户手中"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE14eXVJbFEyM1NpX2VkWDdZbEh0bk5pYTc5V2ZacTZPWHZBMEdIMi1tZ0RzbkFWZG45TzhuMThEOE1lQ1dLMnZzbExfaElzeXpUVnA3OE5Ic0VUS0RL?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):新硬件品类上市发货，显著事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

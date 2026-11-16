@@ -2264,3 +2264,124 @@
   source_type: media
   note: "LLM 预分类建议(high):FSD系获欧洲监管放行，进展显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-14-tesla-149
+  date: 2026-11-14
+  dim: W4
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "电车不能开长途？来自马来西亚的这位00后车主，直接把他的Model 3从马来西亚开到了它的“出生地”上海超…"
+  quote: "电车不能开长途？来自马来西亚的这位00后车主，直接把他的Model 3从马来西亚开到了它的“出生地”上海超…"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5rV1FqZmt1Q2tWLTl2MXBlTEFqRndpa1NpcTlTTUVLb0pTbFVCdGF1UVM1NEhpcEJFY2dCa3NtbkNhXzZVSjRyd21POFotUXhwbWZlbnF6UUk?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [origin, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):用户长测实证产品力，正面口碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-tesla-150
+  date: 2026-11-15
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Model Y 10月销量暴跌？为什么特斯拉销量忽高忽低"
+  quote: "Model Y 10月销量暴跌？为什么特斯拉销量忽高忽低"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTFBpLWJPczIydnpBcUx3NUp4SkY3ME5PZFJEYkxMNUdZWHJSX01SVU1keklmLVhEZDZuVjhRaDZEcVJ3LS1DRHBUOTN6a3p5MkJIMlhTeHNpQ1g?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):销量波动讨论，涉品牌表现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-tesla-151
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉向“特定”客户开放自动驾驶Cybercab的销售"
+  quote: "特斯拉向“特定”客户开放自动驾驶Cybercab的销售"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxOQk1IUUhEeDRWaG9SczlNZzlzTG8tbzhDMG5yNjduWGJwdGpBVWRjZXkzZ3BjUVNta241cUJQOExYV1VvWDh1clI1Nkt3a0hOc251LVMyUHR0SnRGOHQxeE41WWJUZ01Fd0NCZGRKZnRXLWJoYkJ6aUJTaWNjX3V2aTM5SDR3NnlGT0tXQlVwVHdJeHg5ZkJTMkRfTEE4clE?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰新品Cybercab开售，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-tesla-152
+  date: 2026-11-15
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "美国特斯拉Model Y Premium自带外放电了，其他车型呢？国内呢？"
+  quote: "美国特斯拉Model Y Premium自带外放电了，其他车型呢？国内呢？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LMFFac3UwTWREZjdXX292ZHFGdmJUS1d6SlhWY3NvOE96eFlhWDF6N21HOVJKWFNwOGxjYlBhZUVFT21HY3NnRTJMemRjajJFenZVaVBoWmp2U3c?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品功能更新引发区域差异讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-13-tesla-153
+  date: 2026-11-13
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉辅助驾驶系统TAD获芬兰批准，欧洲第11国放行背后的技术路线博弈"
+  quote: "特斯拉辅助驾驶系统TAD获芬兰批准，欧洲第11国放行背后的技术路线博弈"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfY1NPdHZTS1ZoVmFoWmFvbFpLUGhKLW1sY1Z4Q2JPR3o1a0ZNT19BaUUzd2VVdWxXbnJocDR3QXNwNGhBdlRJRS1TWUdORzA4dzV1d1Y2Rk1uRjQ?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD获欧洲多国批准，监管进展显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-tesla-154
+  date: 2026-11-14
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉Model YL“塌屁股”事件后续 官方参数国内与海外不一样"
+  quote: "特斯拉Model YL“塌屁股”事件后续 官方参数国内与海外不一样"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9qRS1EQThQT1UtdXE3LXg2RHdJNVJCdWxPang2RnBfcFE4UkRpN1dtY3dLYllBcW1ISi1kZHNUQkQ1a2pmei1Ca2paaGxSa2xSSUtWS1hZbEtiT2ZEMFE?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品参数中外不一致质疑，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-tesla-155
+  date: 2026-11-14
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "BYD领跑，小米崛起，特斯拉跌出中国十大汽车品牌榜单"
+  quote: "BYD领跑，小米崛起，特斯拉跌出中国十大汽车品牌榜单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oZEI3OC0xLXE1TDZKbEJYRzlCUnRRZE1iWFlZWlRTbmFrdWVqLVRIc1AyY1kwMFpkTUFveWc5ckxEbk12UHZhaHZpVl9nYWFyQWt0RGl1U01VUXpyOE8tTw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):跌出中国市场十强，竞争地位下滑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-tesla-156
+  date: 2026-11-14
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉：开始面向个人销售Cybercab"
+  quote: "特斯拉：开始面向个人销售Cybercab"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Wc2VQTmJHMGtnMS1QdEZGc3l3dHp3VmJFUjg4amFCQ2QzUG4yMlNkZEd5SFlXSy1YNzNSYnMwZXRsUU8tekpvTWV1OHZzZ1N1ZnVaLV9mNnZoNDJZS2ZCXw?oc=5
+  fetched_at: "2026-11-16T02:27:54Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):旗舰新品正式面向个人销售。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
