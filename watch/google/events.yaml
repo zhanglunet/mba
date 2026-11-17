@@ -3064,3 +3064,109 @@
   source_type: media
   note: "LLM 预分类建议(med):Gemini新功能涉及银行数据接入。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-16-google-202
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Regional voices are rolling out in the Gemini app."
+  quote: "Regional voices are rolling out in the Gemini app."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE40RXBfMFZfcGhiY0xNeDdLTWh3ZHE1c3NOQTRsMVhwWUsyZm5QdGlnR3N6LU5rTzZ0TC1oQWltdVlfc29LZDJjREhndjg5eUxNMVhnVTRLSmJmVGxNekJ1aTV4N0xheWRLYjc0SDBQd216c3RBTWNQSjFqSFljU2M?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):Gemini应用区域语音功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-203
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Transform notes, research, and sources into interactive sites with Gemini Notebook."
+  quote: "Transform notes, research, and sources into interactive sites with Gemini Notebook."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNR2ZHZ1dFQXBCd3QxdDVvZGFMaWh5ZGxDbmhlQUlpY1hfVDRhTGhJVGNZNlpZTEN6Mzk5VktpUkdNTnMxX1VIN0dMcl9xbkU0eHhEMjZ3ZnJFSk54NEhzcWRORXY3M2FjU3dtY3l2RWRuaDhPUHVHUVNkQzJTR0NZQllxU3hHUENm?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):Gemini新产品能力，重要但非旗舰发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-204
+  date: 2026-11-16
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "The era of autonomous attacks has arrived."
+  quote: "The era of autonomous attacks has arrived."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQmRmSmxKWU9FcmlwNFg2MFR4Y29GV3YzdjMwd0liZHl5UHdDR25lTjctSENSZGczdGZPWEtWdmFqSGQ4WVNZRU9WUTVBc2lvdGwtdUwyaXQxUFhkemJDRFNDdHJNTDJhOWlaZDZlUDdJaVR5a2xaV0pwUVBTejhRZDdrdW5PdVdjRzl4WWgyNVc5WlpiWTIzdUlObVV2TlQxRjdZQXhfZFpKZ1U?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [signal, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):安全议题观点文，涉品牌安全立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-205
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "New AI training performance benchmarks for Google TPUs"
+  quote: "New AI training performance benchmarks for Google TPUs"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxQRWdRejJIdFYwTWhvOVBvSnNyUEM4cTR0TlhSSUJHM3NuYjJBTkhRWFFsS0h6X25DUVo0d3FWSjNtNW0tSi1QRTRDMjBvTjRiSkRaYzM4dm9vUjZfaEw3aXdlWE1oczVwMkdNcnFHRU5MTUtMbDdKZlR3UzFHWlBOSllMYnpDVG51eFVXYU1MUFJfUmRfVHdZUkZFQmRTNm51andia0NnaVljcDJqMXJTSXl1Yw?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):TPU基准数据发布，技术实力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-206
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌奇袭英伟达：整柜TPU开卖"
+  quote: "谷歌奇袭英伟达：整柜TPU开卖"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE56bC1CMmN4NW9HYS15bWdKZ2xNSTJxbUhER2FvQ3NDc3B3eGM5NmR4MDYxajBZRTJwZUN3bzRZeWlGODBHM01YTzM2MEo2eTlTUjg3dWNDVmFxcl82?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [leverage, signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):TPU整柜商用，重大竞争举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-207
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Wallet接入Gemini个人智能，可读取账户生成理财建议"
+  quote: "Google Wallet接入Gemini个人智能，可读取账户生成理财建议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9LTFAzVzBYai1hWEdRdVRxNVhmUnA1cE5XQUtfY1JSbEYzRm8xQ1FEQWcyTkxyQ3o4azczMHg1V0VwOUlyMUFPdlRRbHlCelBHckVIN3NRa2lOU0VZMjdzRHc0TQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Gemini接入Wallet产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-google-208
+  date: 2026-11-14
+  dim: W9
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "8.9亿欧元罚单之后，谷歌承认欧洲搜索变难用了"
+  quote: "8.9亿欧元罚单之后，谷歌承认欧洲搜索变难用了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivwFBVV95cUxQQzQwRHQyYzA1SFF5d2x4WUFjNVlGYUJKbUd0bklRYVYyRjZBdVBjUWR3cUdoci1OeDMtRUlnZ1JGRUl6RHRfWmE2MWRDeTltdnZ3anF2NmZuZTNacm9rNjFLZmx0MDRSemF5X05QOE5ZdU5XbjZBRFNMYnJuNjloVkwzb2hoLXpZLU9hTTZRVG5IRk1aSXh0cVg1LXFrYzJ6dFUyUmtvNTZYZUNwZG9BNy1XdWVGdnE0NElRamV0SQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):巨额罚单后续，监管舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

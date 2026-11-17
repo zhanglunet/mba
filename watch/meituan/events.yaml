@@ -1290,3 +1290,19 @@
   source_type: media
   note: "LLM 预分类建议(high):债券发行后股价下跌，具事件性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-16-meituan-084
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团电话会：三季度外卖UE预计同比明显改善，Keeta盈利加速，AI迈向商家端"
+  quote: "美团电话会：三季度外卖UE预计同比明显改善，Keeta盈利加速，AI迈向商家端"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxNMWZzXzlKMDNsRXpUMm1lMGVwOGdIaEFubTJNR2xidGVvT1I2V3R4MFE0X2lkUWpJazNUcnlMM1RmZGlwOEFjOHE5cXEwS3FKTFMxOTd4d21WUzN5TlJKY0tybUxYUWYzTlBMcFhmeEo3QzhOMnoxWUhZWU1rN3J6RHpobWNiNVowSElid1ZUUndBUnpDcE5Pd09HOGt5TldYM1hCTi1pbjNjR1JVSEtB?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报电话会披露经营关键指引。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

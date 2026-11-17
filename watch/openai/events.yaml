@@ -3192,3 +3192,94 @@
   source_type: media
   note: "LLM 预分类建议(high):解散机器人团队，战略调整事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-14-openai-208
+  date: 2026-11-14
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "突发！OpenAI解散机器人团队：赌通用大模型通吃物理世界"
+  quote: "突发！OpenAI解散机器人团队：赌通用大模型通吃物理世界"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1WUVc0Unc3RWJMaDFJYWtoWTVUN0hveGxtUWRrYUpzUmdVVXd0TW5hTmVmV0Vpc0p1QlppVGtQUDhXYUhYd0NvNS1oVURMTWcxalRzamtzZGRCRUFs?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [origin, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):组织调整，解散机器人团队。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-209
+  date: 2026-11-17
+  dim: W2
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "美国加州正式起诉 OpenAI，指控 AI 智能体至少 80 次失控"
+  quote: "美国加州正式起诉 OpenAI，指控 AI 智能体至少 80 次失控"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE11RWg2ZjdveUF4OThhYnQ5UlpsbnpKUjBHNHRKR3JiYWIyLV9Tck1vcXZFVDlBQkVsclE1aThJMzBaSHdzYi1qT0VFM1A5ZGhfckJjTzg4a1FieFZ5WnVGR1RhSnpRdGNZN011OXRTU3lPZ1FLT1JaeWs4eFlzMFk?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):监管起诉已下达，重大合规事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-openai-210
+  date: 2026-11-16
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI启动首阶段嵌入式安全评估 向最多20万研究人员免费开放ChatGPT"
+  quote: "OpenAI启动首阶段嵌入式安全评估 向最多20万研究人员免费开放ChatGPT"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBHRDNjTXVPLVhCSXpOaldiNFpQbDVUQkF0MWI3elY5aUNaZ2FpR1JHWGpRdXBtQThwcHlxZzJuTGVJazJBN1IyV1p1V1k1VFp3cGdnM3F3ZFpEUkotbWtHX29R?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):安全评估开放，主动安全姿态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-211
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI重组机器人团队 GPT-6 Astra智能体模拟基准成功率74.8%"
+  quote: "OpenAI重组机器人团队 GPT-6 Astra智能体模拟基准成功率74.8%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0MTNIS1RZS093UkpJNFZnRXQxODBfSlY2SU5BaUhNajF5c0lzMHRyMXBveXk0bVVCQ2JSc0pNaUNJX3JvaEdKMFJSa1EtOE51Y0hDZmExTHRzNVhacjBNZnc0ZmVJQQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):团队重组与基准数据，显著动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-212
+  date: 2026-11-17
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI奥尔特曼首谈黄仁勋离职：他一直是我心中的英雄 但英雄也有缺陷"
+  quote: "OpenAI奥尔特曼首谈黄仁勋离职：他一直是我心中的英雄 但英雄也有缺陷"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5RRkswNkg4eDVMWFI1VjVmZXFDZ1MyM0pLNjdVSlNzdndFZEduaktxbVQtNkRjYzVZbWpwbW1LZkFmVHVKd2J2cWRTbkUxb2NwQWdnZ0thbVU?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO公开谈同行高管变动，品牌关联言论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-openai-213
+  date: 2026-11-16
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "The Information 独家报道：OpenAI 曾探索以逾50 亿美元收购机制可解释性初创Goodfire，谈判未达成交易"
+  quote: "The Information 独家报道：OpenAI 曾探索以逾50 亿美元收购机制可解释性初创Goodfire，谈判未达成交易"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBmMzladkV6UmliRjZrSTNyUUc5dzhVM1U5OFhiTVBvQ0JIZ1h4cjZnU3pZa0JsQnpGYkN4R0E3MVllQ1Jfbjh1bg?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大收购传闻，金额明确但未成交。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

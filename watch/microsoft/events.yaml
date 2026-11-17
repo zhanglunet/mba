@@ -2463,3 +2463,124 @@
   source_type: media
   note: "LLM 预分类建议(high):修复未达预期并测试新方案，有增量信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-16-microsoft-162
+  date: 2026-11-16
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft approved to support NATO RESTRICTED workloads across cloud and AI infrastructure and produ"
+  quote: "Microsoft approved to support NATO RESTRICTED workloads across cloud and AI infrastructure and produ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi-AFBVV95cUxQQVlpNFhHbTF5Z3dfSzZGVUdLTUVIX1VLTFh5dXVqM1J1NW14N1F0aTRzOExuUFlibm9pT29zblFGYmtIY2RFNVFfWmhndFRGZHViekx5bjBKRF9DcVIyd21uZjFzUGZBVk1ydTN3X0dyVHZTcTdKQ05LQTViSnhwd2YwUnNLcUtBam1IeUlXLTlzNmFRQUNJMkdadmxlTXhkMlhTczIzRVVUcFhWRnZqclM2QS02Y2p6TThMQXd6ZWpCbXBMTGZxbDlPMlEzUkFqbGEyRHB1aF9DSFE4WFRDV0NBbEFQZW9qSlVGT0pFSG9pZU9CZ0ViSg?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [origin, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):获北约受限工作负载资质，信任背书。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-microsoft-163
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft Ignite 2026 | Book of News"
+  quote: "Microsoft Ignite 2026 | Book of News"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE1faC1idjZzLWFzc0tXMm5tdUZ2N2ZCQW1sdlZyaEN5MUxQVWo0NEt2Tmxxck8yZkt6OVV5UmpfQWRDQnp6S0kyeE1rVGk5VlhSdkE1NXcxSTgzN3JSMWRYbUNQUEFaQmpSVHNn?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):Ignite官方新闻汇总，重大发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-microsoft-164
+  date: 2026-11-17
+  dim: W9
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软Microsoft 365全球宕机 中信证券称业绩影响有限"
+  quote: "微软Microsoft 365全球宕机 中信证券称业绩影响有限"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE5fOGxpZGJOcFg5ZEhlVXBEQURLb2pVZG0tRTVYN2NyVkFIV2pEY3d3SGxoeXJJSjFVXzlEc2NWX1RMNVllSmRyZ2tPTnZWNjBoN3dHN3JOQnhLd3FUY3RWTTBrOWhXWmdra3R2cGhnWFgzcEhj?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):全球大规模服务中断属P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-microsoft-165
+  date: 2026-11-17
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软宣布2027年度商业云定价调整，人民币计价下调至多8.5%"
+  quote: "微软宣布2027年度商业云定价调整，人民币计价下调至多8.5%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBWZUF5N1FTNVQyMzRSLTVfUFZNNzlxMENHdVIxa25JenNXQi1iZGV0NFNWd3Y4b2RvNG1YU3hOcjBpc0JEX1Qzeg?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大定价调整，影响客户与竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-microsoft-166
+  date: 2026-11-16
+  dim: W9
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软披露：7月潜伏漏洞引发Microsoft 365全球大规模宕机 提供者 Investing.com"
+  quote: "微软披露：7月潜伏漏洞引发Microsoft 365全球大规模宕机 提供者 Investing.com"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE9yeWdwTnFMNG9YLUFqVTNQVnNhWEFiR3BDejdPd0lwMi0zWjJtTnZ0OURPN3ZOUmwxb1Fpbm4zQk5aVTlULWhFVThmallONzh6TW9oNTdVRW5NYkRDSGlYelc0T2w2S0FlTUxtQXdLREQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):披露宕机根因，重大事故P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-microsoft-167
+  date: 2026-11-14
+  dim: W3
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软宕机超过24小时：英国医疗系统改用纸质病历，全球逾740万次故障报告"
+  quote: "微软宕机超过24小时：英国医疗系统改用纸质病历，全球逾740万次故障报告"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi_wFBVV95cUxQdFlyRFNSX0ZtSXZfQjlLM1d4X2QxdUNsWFlPSlVjczcyRE5MWHlfcUFabjFrandCRklsQ2VwOHFsYmg5MVlWd2lsLVBhQzFldzEzZ0wwZkYyaGJpOEtEVXFiWDJseWtiM0hESlB2RWpweUNjTFJ3NFFYektuRms5OTBsekxrVHEzM3poTWpZU1ZFMTFzblJ0X1BTaEd2ZlN0QkNkVWF2bEs5dEQxUXI4NjRMOVV0SnFac3M1SURDX0V6RmZ2M201ZXRfLU12WVlveE9OZnpxLUQwaXR6UndsaG9YalhuakUzd2l1N21wMXlnbnNlTlgwS3pKMVd1ZUHSAf8BQVVfeXFMTjdNNjFCX0tCY1ZsbklKSE5mVmZZNlBDbmRnNFFlMzd6U2k0bmZza2JLTWxLZVpDOUhJV3dBcFc5WVRjOWZVb1ZtWWxOVVprSy12ZkZpWXNGZ0VGOTA1WUNjb2JkVkN0YmtHYlpxUW9ZeVc2T1JZX3NWZjMwY2UzVVNYR0prLWJYWE04WVk2SFhEOGhUUGVlcXQwLWFBeGFKRmFmcHNtWWJtUzg0WkZEdEhvSVhDNXhVZ2xzcmREUHdzWmFxLVNNTHRWVVhXdmJsOFdtZHFMSFdiVDFHbVBZTFdkeWtuTjNnNW90TThPbjNuVHhjLS1FNGNMUVRwa2Qw?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模服务中断重大事故。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-microsoft-168
+  date: 2026-11-16
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软披露Microsoft 365大规模故障根因：三项因素叠加逾八成网关服务器失去响应- Microsoft Error"
+  quote: "微软披露Microsoft 365大规模故障根因：三项因素叠加逾八成网关服务器失去响应- Microsoft Error"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kQ0sxMDd4U2YtbGNhUFFaYzRqM1p6VTY2RlpDOUVqOERDMXo4MXVVZmh4VU41RHdZMi1WQWRNS3N6SXl3WFg2RHNHanZ6TWJFX2Y2UnRwakxxSENJSFZycA?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方披露根因，补充主事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-microsoft-169
+  date: 2026-11-14
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软消费者产品服务已全面恢复"
+  quote: "微软消费者产品服务已全面恢复"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE56aF9ESmM1NmluNHpHcTRCaTBBbTkzQXAySUdtcTFnVDU2TkRBNWh1U3FVRVFoOHdObFd5cnVSaW9ES3E3dVRHTFN0ZVEwRVhiaGxDOExyb0I4RjNlY0ozQ3hVZw?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):服务恢复，事件阶段性节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
