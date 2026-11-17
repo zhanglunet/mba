@@ -1134,3 +1134,34 @@
   source_type: media
   note: "LLM 预分类建议(high):旗舰产品二手价大跌，稀缺神话受质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-16-hermes-074
+  date: 2026-11-16
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "女子花57万多元买爱马仕，是她最贵的包！用了十多个月后，二奢店员的话让她坐不住了：这只包有问题！"
+  quote: "女子花57万多元买爱马仕，是她最贵的包！用了十多个月后，二奢店员的话让她坐不住了：这只包有问题！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE1sTUd0ZEhqZV8xaWV5MHRnWndxcFh0Wm1RMmRIaHhoVDY1M2tJUzZmZkxvOW5OV1FtRDZiSjZzc0dtNzNqOThwNnM4bWxYUWZsRDlacXFHN3M4aWJLSjcxd3g4VkI3cnhRYU9UQ1VrZmVGYUtjX1ZoYQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):消费者质疑真伪，涉品牌信任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-hermes-075
+  date: 2026-11-15
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "女子二手店花57.5万买爱马仕 竟然可能是\"组装包\""
+  quote: "女子二手店花57.5万买爱马仕 竟然可能是\"组装包\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3wJBVV95cUxQb19aS2FmaUR2VFNDUTFWQVM4WEpNbk5pUUl1Yk1FVVJ5bmVCQnRRR2puZ3NEQ3V6NFFuQkVLY2pwVHhuNVZVMDVkTzAxdjI5V1NBSUR2QkliR3dIazhNel80ZER2QXhOYmFuZ2ctcGozVllEdkdwSnRFY01SV19mZzBDN2I5NFhmNlVhQ2NnZnpkT1c2N3VyV3doV2ZaTVA0SEFTcHpXbXpZWFlsVFZaMVZXRjBKRUZldnlMU1RVT1pyQ004UVVCbEVqVWNjdFVSNm5acFhiQkNBeEdfajVSZ012cDdpOVl6OXhlbGxNUXNjYjBoN3RMVm02bUV5TDVITm91LURMcUlFRy1Ya2RKb0JMS3dfb3FIYURYTXNMU0tUdVpDWFAxRWhQd05FN2Zod3JxS1NnM2hMVW5QdGJLUHVEbEZIb1FHZzJDZWx3TVBOUWxHMlE2ZVE4aFF1aW8?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):二手假货纠纷涉品牌真伪风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

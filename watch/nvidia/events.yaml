@@ -2520,3 +2520,94 @@
   source_type: media
   note: "LLM 预分类建议(med):官方要求改组管理层，重大负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-16-nvidia-166
+  date: 2026-11-16
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab"
+  quote: "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE5BSlc0SnE1YXVZbUtRTFBjTEZVNnQySGFzbEtIUi15YVNpR3R3cGFlWXU2eW1XRmRSaGxjb0RDb3hzY1Vlb1FoSzI3emo0aVRYMGVXZWdybmtYVGhMUEdEZVFhZ3RlTkNZd0E0MzNzSVQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方产品上市,硬件品类事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-nvidia-167
+  date: 2026-11-16
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics"
+  quote: "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE45VUN4TFNYSi04aUh5dFJOTUNGRUYtbnFrVGI1NkVPaTRibDludFZST2JYd29ETkQ4Y0xJUURqcmNYWERkajZKZ0JZSFRUQ2RmSWc?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方正式发布新主力GPU。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-nvidia-168
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing"
+  quote: "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE43bkVvdHFFVzQwS0VVTTk1OFRudWlQQi1Ia0dXOS1Ka1VxTV9MMTdXS3JzVlBIT3hpQnlVRkUwek40cVFkS0c5NURoQ0Q3X2lwTzluaGlCaHA4c3p4X1BuV0VHZi1vT182VWlGVFZSb3R6Mm1mM0RmOQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, origin]
+  source_type: official
+  note: "LLM 预分类建议(med):官方宣布量子计算扩展举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-nvidia-169
+  date: 2026-11-16
+  dim: W9
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance"
+  quote: "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE1VSU5OUUtpQ2tvVnBrUkJYVEJ5aFJGcmo1MFVNUjhEOER5YVRCMWpUZFA1YkUzWW1WbFNxR1czUHV1ak5paUxFZmxTa3VBa2VMOUxsNXpkeENuMlhVbFNlaFpGQWJLMEU3RmNDV1ZmX3lsdEdXdHc?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):基准测试领先,Vera Rubin亮相。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-nvidia-170
+  date: 2026-11-15
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "曝黄仁勋考虑重返英伟达，其硅谷盟友正向英伟达董事会施压，要求恢复其职务，黄仁勋会真的回归吗？"
+  quote: "曝黄仁勋考虑重返英伟达，其硅谷盟友正向英伟达董事会施压，要求恢复其职务，黄仁勋会真的回归吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE8wMzdyWjkySTBwd1RFVm5UZ0l1X1phanZlNWdFVG5MV3o2MWw3cXh3R200cjlWclEyRU1TeExNVC1fTEVEbXZENkpfaGU1TXozMUwtLVBNaDJCVGo3cXI0?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):核心高管变动传闻，待证实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-nvidia-171
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达工程师因黄仁勋离职宣布辞职，超16万人请愿黄仁勋复职，为何他的「出走」能引发如此大的持续反响？"
+  quote: "英伟达工程师因黄仁勋离职宣布辞职，超16万人请愿黄仁勋复职，为何他的「出走」能引发如此大的持续反响？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoVlRTTXY3TjJWVWtTMGd1Y1JsWldNYzEwOUhrVmh4anc5NGYxTno3d1o0LXdxR29XQTNjejBTdWRfMVBuZFNhRDdWcmxWc05obXpaUnVKYUN0c19jUG1B?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, origin]
+  source_type: social
+  note: "LLM 预分类建议(med):高管出走引发员工离职，组织动荡。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

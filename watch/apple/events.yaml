@@ -2929,3 +2929,79 @@
   source_type: media
   note: "LLM 预分类建议(high):新硬件品类上市发货，显著事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-16-apple-193
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "曝黄仁勋考虑重返英伟达担任CEO；苹果计划明年发布首款智能眼镜；OpenAI 撤销独立机器人研究团队| 极客早知道"
+  quote: "曝黄仁勋考虑重返英伟达担任CEO；苹果计划明年发布首款智能眼镜；OpenAI 撤销独立机器人研究团队| 极客早知道"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1FVm45WEtMdHVfR2RfcVZxbldNRDl6YUVkLXNibUVoSUdSeGhJVWlvODVWNmNEYm4zcGlDcXU2MXFtUzZzR0EtUGtsdEF3bE1mZlVnZGFVUnVwUnp4?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):苹果智能眼镜计划传闻，具信号意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-apple-194
+  date: 2026-11-15
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "刚发布的 iOS 27.3，还有隐藏新变化！"
+  quote: "刚发布的 iOS 27.3，还有隐藏新变化！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ZQnpoU3Foak0wVWVWSF9wRXhzbVpzY1JFVllKYmM5NDN1c1VXenBBMGI1RlZwRFlzMUFJOVVhU1Ywcld4WUNnZmVjc0FzSVczSHhNWk1oTVVfYkVE?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):iOS版本更新但非重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-apple-195
+  date: 2026-11-14
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "智能音箱的带屏幕版本Apple HomeView 来了"
+  quote: "智能音箱的带屏幕版本Apple HomeView 来了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmdnNpWF9tOHNfaWs2bkdPenBiNGRUeHhQNS1BVGVIeVpMejB5OTlNYlppaVRPTFB1enAyRnlOVFF5NkZQR1FIa282ZUo1bkZiRG5xZTJBNmluenpH?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):新品类产品发布信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-apple-196
+  date: 2026-11-14
+  dim: W5
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "Phone 18、18e 最新曝光，双双搭载 A20 芯片"
+  quote: "Phone 18、18e 最新曝光，双双搭载 A20 芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE53eEVpRjMtTU4wR0hZM0FXRjRJMmUwbFNEbldtUEtBdmZQbjRuenAwY3YzTHFQeUZ1c3lsc0dTNVd6a21WMXV6aGdDR0E5WTduaTRYMElTWHYyMFdv?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):iPhone18与A20芯片曝光传闻，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-apple-197
+  date: 2026-11-14
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "iPhoneDuo经45.7万次折叠后屏幕完好铰链松动，测试结果说明了啥？能在多大程度上反映手机寿命？"
+  quote: "iPhoneDuo经45.7万次折叠后屏幕完好铰链松动，测试结果说明了啥？能在多大程度上反映手机寿命？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE1TNzUwTVNTaTJocjlZOVZyVEdoQm1neGZWOFFaeVZWalJSTHlkSzRfdGZrV1JZNE9xYTJNU0F3OU8tUVFGOGFBQWdTSUw5eGpBU1dXbDNqTFE0b1o5VEo4?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):折叠屏耐久测试负面，涉及产品质量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

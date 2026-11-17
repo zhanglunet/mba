@@ -2385,3 +2385,94 @@
   source_type: media
   note: "LLM 预分类建议(med):旗舰新品正式面向个人销售。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-16-tesla-157
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Tesla无人驾驶的士Cybercab开卖 仅限受邀客户"
+  quote: "Tesla无人驾驶的士Cybercab开卖 仅限受邀客户"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuTTA0bGVBeHFJUFhfRG9LeEFzNER0b3lLTW84YUtJUGVZdFhrWTQ1UE81UlVHdkQ2S2VOdlNnSFN0ODV1OVZMNm0yeGlQZ01kN0MzSmF3YTRvRzhQdEpzVFRvZUhTNEFF?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品Cybercab正式开卖。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-tesla-158
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Tesla为赢打赌，仓促推出半成品Cybercab？-AI应用"
+  quote: "Tesla为赢打赌，仓促推出半成品Cybercab？-AI应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE5veHZiWTBNc0dlZTdDWW9Ybzltb1JmZ2czV0FfVWNVVDVZQTI0ZENfWWs0ZklmRENQY1NlVXc3UWNJSGZacmhYcExnZno4YV9FaEFCcWtMaHA4endJSFhQdktwUmVwd2tTUW9Rb1R5Zw?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):质疑产品仓促上线的负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-tesla-159
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉开始接受个人用途自动驾驶Cybercab的订单"
+  quote: "特斯拉开始接受个人用途自动驾驶Cybercab的订单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMjA3ZjN5d3VsSFVJZ0hVYlpxUXhWazcxclFHdWdYMkFEWFJsOFhqc1MzOEdIZ0h3RG1JNGJHMGJJc1dTcWtEVEtYcVRzLTBiOGNpSXVfaGxiSFVxR3NHQkRiVjdWSWFMZF93UTN3aFdaV01VNkFpNzgwSUp4RDNJdUpYNzJsZW9kZDhmeE1kcVI1c0pDSFRLSjdFS1ZlZ0kwOHZUcE1RbFg?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Cybercab开放个人订单重大进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-tesla-160
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉售后市场公司提议达成一项由投资者支持的交易，以继续生产Cybertruck"
+  quote: "特斯拉售后市场公司提议达成一项由投资者支持的交易，以继续生产Cybertruck"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixgFBVV95cUxQTDNFaGQyZlhueVAwS3BVUnF0Ri1fWWp3UnlkZ0ozYkFwS2tWdEZJa3IwbmZfV2VrSWZZb29OTExvRDV1cGs0Z1dRbDV2clVWcTY2ZGl6b1JKTmFlNmY0QXdGSUs0UEhYcWRkOVo3dE9Qcjd0NkxUcGZZSFdqZnBybW40dDRBUEZicWFIclk2WVBIODRFWUxHT2dabThPdHpZZVdnUGgyV1hjdVlpc1dKeTRLenRmbHpFTmR2NUxTZkttLWlidEE?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(med):Cybertruck生产相关实质交易动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-tesla-161
+  date: 2026-11-15
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉邀特定客户选购Cybercab 售价约3万美元"
+  quote: "特斯拉邀特定客户选购Cybercab 售价约3万美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgJBVV95cUxOZGNfaGpXaG5yM0ZvODN4WDRpeF9SVS1PNWhKc2Vhenl4WXRSc0JuOW5VTDRRV1hGV2VleVRaUDVCblB3emh5bDlVYzc3ODBhMFQ4UXQ5SlFJOFNWUVBhR2pKNzN1dUg2c0tZT2hCZlFMNlExV0N4RnIzQndnZjlrN1FXR3pqcVpXa3BiOGRvU0MyNjZEaU5PY00xT2lZcFBqUVpoWXVkWE10S0ZPWEVKcnVuaGRXWnJtTnc0RlRyV2huSDIwSHVwQnVaUl9TNFUwX3RYeFZqOE1IX0JCZTY2YlJkQUxMSURoZTdBLVFOTDFfQ3ZkRVRYanBtMEE5bllTSmdrRk1Qb3hTdE53Q0FJeUpCNDlIUQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Cybercab开售属重要产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-tesla-162
+  date: 2026-11-15
+  dim: W8
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉和中国车企因隐藏式门把手问题召回430万辆电动汽车"
+  quote: "特斯拉和中国车企因隐藏式门把手问题召回430万辆电动汽车"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxQLWhsTmlYdDhuZGZVNW9GY2dra01sbDBaQlFhbTdGUEk4T0lVcnNRQzJndWxmQjd0VzNVTnBnUDV0R3ZTNjBieS1xejl3RXRrVjJGeDYxNjJEbUY4QktUVnRqRUNpZUlSYkRya25TR1NLeW10eUpRcXU2UkVSNVNxTWlLT21ZWjFqZUpOOG0yU01MN1BudXpiTllON19Td0pFQVNtNnFWSmtLMHZSVkE?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模召回涉安全质量事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

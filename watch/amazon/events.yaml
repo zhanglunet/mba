@@ -2357,3 +2357,79 @@
   source_type: media
   note: "LLM 预分类建议(med):内部文件曝光AI战略与产品缺陷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-16-amazon-155
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Robert Pattinson is the new James Bond"
+  quote: "Robert Pattinson is the new James Bond"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxPazZEWWpXTnBPUTZ6cHZrUjlQQjRJQm41R0Z2M05UaWxPMlBJZi01cDlBVy1ySVJESmZMNjRINWhyQkVwbUxvZExDcE9LNm43THlsZm9jUENHb3EtZFhYQ2ZlS2dFaGJkY3BEUVNBczN1LUdFOEg4dUdsMy0wSFZ3S3RQSlVaYnBNTWxWQ2c2emJrVXN6dW5JNlp2OA?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):旗下007新邦德人选公布，内容IP大事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-156
+  date: 2026-11-16
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon opens its first delivery station in Puerto Rico, bringing faster shipping and new jobs"
+  quote: "Amazon opens its first delivery station in Puerto Rico, bringing faster shipping and new jobs"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxQcGRMZUJkNlFKTm9pUzJ3S0FRaFVuS3lnajZoUjV4bWVncmhYTFVJbXZfTGxsdTRIMzRsMUt1d0NsYklYMDVHYnRzeDQ4T3NjbERnVXZTOUJnWlF1d21WS2NyLTg2LW1xWmVKX05oMXhURVNEVTYzamJtS21NVDZ3VTkxU1FCVC1EeG5xcThvdTl5QQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):物流扩张首站落地，业务正向事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-157
+  date: 2026-11-16
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Correcting the record about Amazon’s deal-event pricing"
+  quote: "Correcting the record about Amazon’s deal-event pricing"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE9PWHVQREtidEZhdDZpRHFuMS1OOFlNbHJLY1d3WjdtXzdXVi1HcS1rcXNiOUJlRm02enFZRmNmcXotcDlVSjNtUGgtUmp3WE0wX1hOT2Itd1p4Q2pQWFVGMXNzN0FzTHd3bHpfcTdRZ1piMkdJVWp4SDlPTQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方澄清定价争议，舆情回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-amazon-158
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "曝黄仁勋考虑重返英伟达，其硅谷盟友正向英伟达董事会施压；DeepSeek 调整对话上限长度；美国 ULA 成立 20 年来首次发射任务完全失败，40 颗亚马逊卫星全部损毁｜早报 20261117"
+  quote: "曝黄仁勋考虑重返英伟达，其硅谷盟友正向英伟达董事会施压；DeepSeek 调整对话上限长度；美国 ULA 成立 20 年来首次发射任务完全失败，40 颗亚马逊卫星全部损毁｜早报 20261117"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ndE1XRm5fdW1OZEEwUEd3TkV1Mk1EelNHYzRaWGpwak4zd2xEdGpVdjhicm9IMk5LZnhiLTE3YndScWp2ZFk4RWw3NzhwMlVjaUVWRWF0U0dXdmRq?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):早报含40颗亚马逊卫星损毁事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-159
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊挑战星链遇挫 火箭升空出事 40颗卫星全毁"
+  quote: "亚马逊挑战星链遇挫 火箭升空出事 40颗卫星全毁"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNM0F1VUdyOHFuSzJzTFJrQ1c2c0lsbXBzcXREejEyd0pHOXhmM282TVNEY3lPTU1BeHZLOWZ4RHhTRFNSVVRtV25pMll4Uy1JNnpLdHJVVzcyekJKekUyX0hkYjZjQ1JN?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Kuiper重大挫折，卫星全毁。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

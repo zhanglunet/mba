@@ -2103,3 +2103,49 @@
   source_type: media
   note: "LLM 预分类建议(med):受管制芯片舆情,需关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-16-deepseek-138
+  date: 2026-11-16
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek限额了！单次输入文字上限缩短至4万字 限制每日对话额度"
+  quote: "DeepSeek限额了！单次输入文字上限缩短至4万字 限制每日对话额度"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9PQTMwUGFKZ2lMMUdfemIzUm9SY0lYOXp0T2JPeW9PMmdoVGU1b2RacnlrZ3dta1VoREhSZ0tnNGFET244NG9fRk1rSk1SOXNhRVBzVk5VZ2U2cm5vTmJ3SVljaTh6OE9Ick4tal9UQ1pVeHh4YWZFNThFS25ZR0k?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):服务限额调整，影响用户实际体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-deepseek-139
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek因算力不足限额使用 引免费模式可持续性疑虑"
+  quote: "DeepSeek因算力不足限额使用 引免费模式可持续性疑虑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE1Xc0dxaWpqa2oyUGFJSkFiVUg1Z1A1VWpRMU5sVHg4MllJRWZxZ3JNZGZ4YmxKOFpLenh3Y1hoZWF4YmNCeVo4STQydDNHUDhLdFdKZHVsOFgwZXozSUdHaXY3bTYyYkpEZUdB?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):算力限额限流，运营能力受质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-deepseek-140
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek因算力不足限额，其今年已故障超10次"
+  quote: "DeepSeek因算力不足限额，其今年已故障超10次"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQLXR4b3l4V01rYVRLQjlzREw1OU85VC1jTnVCSFU2eURVLWxmUUl2OXNBaldRYmRkNDlxYVE0N2d4SDVaQkRSdzJzN2otMF9IMnJQelg1Z285MXR5eG1ZakJmMXV4WEY4OENFRGNnWE1vUk1YcHBpSkUxQ3BRc3ZZOUlfQVlRc014ZUdwQQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):年内故障超10次，稳定性问题显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2009,3 +2009,94 @@
   source_type: media
   note: "LLM 预分类建议(med):芯片短板分析，涉品牌能力质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-16-huawei-132
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "如何看待 11 月 16 日华为官宣的大折叠？有哪些值得关注的信息？"
+  quote: "如何看待 11 月 16 日华为官宣的大折叠？有哪些值得关注的信息？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RaXlVTXljd3gxRHR0R2tTOXczOWQxb1R2WWhJTGFNbEt2aklXakg4RkIxa3VmWmJlTm5yRHlGMnJYTkh4Vml4N3JCQ1RRNVZZR1JWeElUN3JDZ19mZ3kw?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰折叠新品官宣，值得关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-14-huawei-133
+  date: 2026-11-14
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "37.98万起！全新问界M8上市，全系华为4激光雷达、宁德时代电芯！"
+  quote: "37.98万起！全新问界M8上市，全系华为4激光雷达、宁德时代电芯！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hLXNjSW4wd0lpdG9VVkdvZWtPYXNvWXJCa195eTdNVk5kc3BDcGVNTldwVElETm5XdDBta20wZXdvOU1Lc0M0Q0JYSnhIVWpONFdGdktTUG9qeWds?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):问界M8上市定价，重大产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-huawei-134
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "如何看待华为Mate X8 屏幕大升级？有哪些值得关注的新技术？"
+  quote: "如何看待华为Mate X8 屏幕大升级？有哪些值得关注的新技术？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FMWFJQi1Qa0FHNXBva1JLUlJzTG0tWTY0WGRlNzJCTUpTSWYwX0R1ZXFkX0c5Z0RJekJKYm8ySmE0c19HTU81THZrbEVWX1hSRnRJSWswOWhzNy1kaE80?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰折叠屏技术预热讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-huawei-135
+  date: 2026-11-15
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "余承东剧透！大折叠八年重磅之作华为Mate X8，轻薄折痕或迎突破"
+  quote: "余承东剧透！大折叠八年重磅之作华为Mate X8，轻薄折痕或迎突破"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YSkZ1LWRPU2pHZXlKNnlZVEdIZFo5M29DVVRhcUg2RXNSVnlqLVFib1BMUUh4MzNaT1F2Ry1DUGEzMVB5aFRYcWVTZlcyVzZPM2RKaXBERFRENVg5?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):高管剧透旗舰新品，预热事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-huawei-136
+  date: 2026-11-15
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "屏幕、拍照、性能有新突破，余承东：华为Mate X8真机亮相即将登场"
+  quote: "屏幕、拍照、性能有新突破，余承东：华为Mate X8真机亮相即将登场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBlY0VHZDBrNEdTNW5hSnowQk5EWWdzTTRLRTdEWDZCaWNQa1dncHFuTDZnVWRnU194QmNUQVpTdGFaLUI3TFV5R0pzRmkxNVM1SlJIcDlLTjZLZHFm?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):高管官宣旗舰亮相，预热事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-huawei-137
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为Mate X8正式定档：从配色到DECO全焕新，大折叠美学再进阶"
+  quote: "华为Mate X8正式定档：从配色到DECO全焕新，大折叠美学再进阶"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE03TTRkd04yRlJCSDlaeXkxYXZVWkE3TVYwVGhTLUtWUF9JMU4tZHNBWHh4UzhHX2RSRERKT3BvS1JaVDlETmZTeUpzSG41MkZkRkxSYkpjVVNHOUN1?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):Mate X8定档，重大产品节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

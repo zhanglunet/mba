@@ -2832,3 +2832,64 @@
   source_type: media
   note: "LLM 预分类建议(high):星舰重大技术里程碑：机械臂捕获飞船。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-16-spacex-186
+  date: 2026-11-16
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "星舰第15次试飞成功部署26颗卫星 首次实现“筷子夹飞船”"
+  quote: "星舰第15次试飞成功部署26颗卫星 首次实现“筷子夹飞船”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxPVkNjOWd0RG02OTNONWpFTU1wQjA1TmZJZkg4VThRVld4SkJuMXBvRnNrOE9TMU1qMEZ0ZUVpTkkwcFNyOWVRUUFZNVg1ZHBPakk3OEk2aDlndmFNdkpaNTB1ODFRVi04bDg3aWFkYW9iOG9oQ2xwNl9pVFpuOUJPWmk0bTdSdw?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰重大试飞里程碑，旗舰事件P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-spacex-187
+  date: 2026-11-16
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "预测市场：特斯拉‑SpaceX在2027年4月前完成合并的概率升至60%以上"
+  quote: "预测市场：特斯拉‑SpaceX在2027年4月前完成合并的概率升至60%以上"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCb0lQUE9JdjdRcGp0LTF3aXpDZHNuSjRiTXktdzUyTXpYNkxaYTJmTFcwYkRpSTEzeDlNT2tneXNOOVVULVZOUF9ITjN4b2FhM2w3d0k3c1FYcV8xalNIZg?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):并购传闻有信息量，但未落实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-spacex-188
+  date: 2026-11-16
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX“星舰”返回创造历史！美防长：马斯克是“伟大的美国人”"
+  quote: "SpaceX“星舰”返回创造历史！美防长：马斯克是“伟大的美国人”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBhdG9JdG9kcjdEWjVKZmhvMW1RYzdOSmpQY1hTQ1dBeEJ0YjFtOUZNeENwMkhZZkhLMnBMQUVFajk0SVhyNnhYcDMyaGhlX1dUWkgzbHJUNzlkTk5aSUNfMkx1VHFuT0N0eDc1bHRFdkludw?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰星舰重大技术里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-spacex-189
+  date: 2026-11-15
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "再创历史：星舰飞船首次成功回收"
+  quote: "再创历史：星舰飞船首次成功回收"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi5AFBVV95cUxOY3ZSRkJnRmttMlY4SEt2VzN4LTJMVVh3OUVSaXZFRjVBbGNrYXdpV2RweGZ1ZWxRMGp2WXp2ZGVaR1U3Rl90SFpHbExYRFV4TEZLX18wbUlzdUo2aVh6dXhONmdncHN0WXpKOWlLR0Fhc0J0blJ6bXdZSXNZZ2dBTVVuc0ZueDRXeThiNW1QVXZkejl5YUNPbFltWW8tZGwwSlViVnhQSGhPRV9HLWZwaDB0SDgzVlNOZHJJdjY5VFJjdnpkUkdOQXlWLXJYeFJ6dFlocXlVaVFJZ003dEpLTmgwYjjSAeQBQVVfeXFMTVd6b2tfdHdEUXk4SndaRkY2eW94WmpEZlRma1dDQ0pJUUxLYURnaFhDanFrOWg5b1dSY0o4MC04UmpnSkpXb0MyUVRpd1Y0OGdvdllSQmFRS1FuN1lvbkZUUmd4eXZ6cVB2UnRidThuLVBpZGhLLV9SMW9acUoxZTQ1MTF0Y2JkQzIzVWJscXA2X2hueXRMOVlLRm9aT2FFQWNJUW5FNEFFUGFWRHB5SVlsRm1EdWx4d1c4MDdOVW1GN09xMEJFTzNLdzFTR3JQWUp1YkRWSllQVlZvbkNwbmhDX0hB?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰首次成功回收，重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

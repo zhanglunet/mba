@@ -390,3 +390,19 @@
   source_type: media
   note: "LLM 预分类建议(high):股价八连跌，财报后市场负面情绪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-14-palantir-026
+  date: 2026-11-14
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Palantir CEO 卡普访谈：反对财富税，警告AI监控与数据主权风险"
+  quote: "Palantir CEO 卡普访谈：反对财富税，警告AI监控与数据主权风险"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Zc3ZQWWJLWjVIaGdkYkFOSTNlTmFEM3NrX0ZfYkh6NHVydHpfUTBoRnNlRHRPQkcxYVpNSnF5bE9YMmFvOEhXaGUyWUNBTDQ5SDJtRQ?oc=5
+  fetched_at: "2026-11-17T02:26:05Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO公开表态，涉品牌价值观立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
