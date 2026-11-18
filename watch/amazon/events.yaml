@@ -2433,3 +2433,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Kuiper重大挫折，卫星全毁。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-17-amazon-160
+  date: 2026-11-17
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon sets goal to cut electricity carbon intensity 65% by 2030"
+  quote: "Amazon sets goal to cut electricity carbon intensity 65% by 2030"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxQelZUVC1NUHNJRG4xUHhiYnBERjhGTmxFMzZSQ0Nyb3pIODNYSU0tTFViWFl3YXQwUjZmZERMMnhFTHJMSVhYUkctNmVfdGNMQXhSTE1vRFJlOWpaeU54WkFoVy1ZWGlHcjNVWEZaOFpDNkRtWS1adnIzbjYwbXk4VDF0Y1ZHNi1LT09DeDZjRGRpSDgycWo1RzRwRFJUNDA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方碳减排目标，ESG事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-amazon-161
+  date: 2026-11-17
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon to invest $7 billion in renewable energy in India by 2030"
+  quote: "Amazon to invest $7 billion in renewable energy in India by 2030"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxOSnpWNHNBck1xZ0d0YWdjNE5sVG1meHV4SDF3NTZXS2FfUGxvRkc5TWhWODMzYmVzbUlaR0ZRZVk4X3VzUWFZclJDamE4T2xMaUFtLVphMDNvTUFTTFFiMkozU1NoY1d0bktncVNrMURMa1Z6cmNyY292R1lucy1BUGJWa2pFZENISmZ6dWNsS0RXZw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):重大投资承诺，金额明确但非融资完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-amazon-162
+  date: 2026-11-17
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "5 ways Amazon is supporting US communities in 2026, from free meals to affordable homes"
+  quote: "5 ways Amazon is supporting US communities in 2026, from free meals to affordable homes"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTFB4ejEzR0xrdkdiWlVRNE5qOVNvSGhPSTNWZGpTRTJoUVAxTkRoQnN3RXZ0YS1WRjl3Qm1rNDRKdDhmV3NsRVhtbzYyejRGeEgyVUh1MEFlMzdYcXVYeWtnWkhTNEZEYnowUnc0VkxlQm1hWGFpSl84M0ZlMA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, origin]
+  source_type: official
+  note: "LLM 预分类建议(med):社区公益举措，品牌形象相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-163
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Watch the teaser trailer for ‘Beast Games’ Season 3, coming to Prime Video December 16"
+  quote: "Watch the teaser trailer for ‘Beast Games’ Season 3, coming to Prime Video December 16"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxNeWx5ZnZsYk1DS0k5MklJS05mMzJpOEhqNHg4QjJkTjZVN2hrQndNbWNnRUlZVEh5V0RadjVubWd6Q1ZEaFQzOG12RGdfMG0ya01JLUs5dmh4VEUyN1loaFhxRVI5TUhtR19RbGJnSjFDTUd4R05qQ2xCUjAwdDZNVFAtZlFVOWpvbDR5S3pwWkk1OW12djVN?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(med):自制内容上新，轻度品牌事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-amazon-164
+  date: 2026-11-17
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊(AMZN.O)CEO贾西：尚未向AI代理开放Amazon.com，正与相关公司磋商，以确保用户体验良好。"
+  quote: "亚马逊(AMZN.O)CEO贾西：尚未向AI代理开放Amazon.com，正与相关公司磋商，以确保用户体验良好。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNLUktcEVCb2hBVEJIOVo0MFRMRTUxcTBNZUdhcEJ1YXJudmxSd1pjTHhOMW1GNm9QQ2lvV25yaVFGOWtGdUNmazFyNVdPU1Y1dTFGcUdmN1lQeU1DSFZ1eFJ0LVRyQmlQcU4yX29jVEpickdmcjRkd1RtU2FfUEdjTENoUzRfOUpZdDhRUU5OQmR5bktPX1BBUFBjMA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO公开表态AI代理战略，显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-165
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊云科技为 EventBridge 推出增强型自定义事件总线"
+  quote: "亚马逊云科技为 EventBridge 推出增强型自定义事件总线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1kbnFveVhMbWxURDdEdWU1cGhwSTFKRnRzUTVRYkg2WXlnQXlXM3JnWTVQRFNtdEZJV1BOTmRWdkFLVG5TYnIwQmRLeWhjZUI1aHJ1TGRqUDBiRkpKWlE?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):云服务产品更新，一般事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-amazon-166
+  date: 2026-11-17
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊2027年将3.5%燃油附加费扩展至多渠道配送与仓储服务 - 新闻和统计"
+  quote: "亚马逊2027年将3.5%燃油附加费扩展至多渠道配送与仓储服务 - 新闻和统计"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUlIxMWJVTXRXTlYxZmVOTVRHRFVEZ042SG54NzVkYmNNSVQ0TjA5d2hRZTRSSUVuZS1tcnpOSTlnWVlDOWJacjdDV2RHT2ZfZFNSUmNOdFZpOThsdUdUZGJfd2MteElUZEFBRTl1Y1pyZGhmM2tXckc2SzVETmVnT0N1d3JRbWZmNEJNZkp5SVZEQW90NVFKNGpCRWRLOUxwczVnQ2VVNm9zU1l6cHlRdzZfalVxNWV0SHRGeFUwM0NWMF9hUEd5dA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):费用上调影响卖家，负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

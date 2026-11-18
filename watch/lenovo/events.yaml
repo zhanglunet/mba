@@ -1499,3 +1499,19 @@
   source_type: social
   note: "LLM 预分类建议(med):联想发布词元工厂概念，属业务动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-17-lenovo-098
+  date: 2026-11-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "联想首次超越苹果拿下全球第一 全球PC和平板销售额登顶：狂揽21.4%份额"
+  quote: "联想首次超越苹果拿下全球第一 全球PC和平板销售额登顶：狂揽21.4%份额"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9VVWFsV3Zkd2pBLW1MS2xhbW1OVkxLejdpMlcxb3A5OFlZU0VCWXhpLWpNMDlBWWlhSlota2EwMGZobVRrOW42VkhZem1fNHNHbU4zTWdIak5VaTd5THBPYw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):全球PC平板份额登顶，重大成绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

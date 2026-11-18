@@ -2584,3 +2584,124 @@
   source_type: media
   note: "LLM 预分类建议(med):服务恢复，事件阶段性节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-17-microsoft-170
+  date: 2026-11-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Mi"
+  quote: "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Mi"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi-wFBVV95cUxORkZHWDR3ZUhncjV1akxHdlZHdTJwQkVTN19NODZGd3liaHlXZ2J1ejJVS1V5TGN6ejF3NElLUjVmR2FJa082Z2U4U3BoZnpuZUJ0czZRU0tfWHdMMmtwQ1luXzE4dUI5UzR0ckMzZTVrd2Eyc1RCX2N6cWF2TkgxVEQzajJtanhYYXhNODBpNXNrX25wX1hjeThhVEdodng5Wk9ydURmQ1k5aFh2ako0X005Y1NkcENsRXVwdy1rX29CWjVlOHp3RGV4NE9iRHpraDgxUk91RlZVLUNfcm1xbGNfdkVqSGRFVEUxZ1dqeDRqTmdVeEI3aXA1Zw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方合作产品发布，非旗舰级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-microsoft-171
+  date: 2026-11-17
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft and organizations across industries launch AI Transparency Initiative to strengthen enterp"
+  quote: "Microsoft and organizations across industries launch AI Transparency Initiative to strengthen enterp"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAJBVV95cUxPNm14ZjRrTW93dFpEX3FpMzhVcGNZQ0dGMm0tc2dxcGhxQ1Y0WjN6T0YtbkxlYjh1YTFHVHJ3R3NrbG56anItWjh2bTRpcktQYTdmLWdTUUI3aGRBVzZ5UDlEWGJXMlhLTDYyeDdiWFZUbDVMOHAtMUZzbm5zTzEzcUpERTlLbG5CNmlTbnNZcTNPTXE5Zk9Mc1I0QjF5bjJDcWdvUVNzQjRZRmtqX2Z6NW4teE11dGZGN2ZCd2JaUXR3X00tQlZvaVhLSG45QzlwZ2JLeXRMTlgtSFRNdnRieXd1Sklwc0U3dk5fc0pxQTlmTWlnTUlSUDVhWlF6WkxLVDhqMmVVa1dnY21t?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方发起AI透明度倡议，生态合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-microsoft-172
+  date: 2026-11-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "At Apollo Hospitals, clinicians use a continuous learning AI system to improve patient safety review"
+  quote: "At Apollo Hospitals, clinicians use a continuous learning AI system to improve patient safety review"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi-wFBVV95cUxNdTl5Vi1UWEZlSzNXcjlpYml2c29MVWFxekk4WDh3SmdGZ3E4dXl0bkI4STFITmRvMXJsV3NoNGdTYmdyTUdYal9MYWJLRUhLX19pX19hR0ZKY2lUOGVGcDFjWVN6ZjF6cXBBRUFuM0xCMzVUT0otWUl1OHREbXpFTF90cWdvMFEtM1hDcWhoNldVeV9WbTV1UldSSGstYjVnUUcyYVBxeEJWaWNId1RMRmlKWmltTDY4Z3Q3OUhOeVhlMmx6SjVKa2dRVkxabVAtOUF5WHF5SGI0U21NeExpM2dITWtaRDNQLTc0NEd6RzFVM1UtUDl6SHc0MA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):客户案例应用，正面但非重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-microsoft-173
+  date: 2026-11-17
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft Ignite 2026: Empowering Human Ambition, Intelligence, and Trust"
+  quote: "Microsoft Ignite 2026: Empowering Human Ambition, Intelligence, and Trust"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxPNGRvdE1tR0k0SnVsamc4YjI3emNoNzQ5Z1hzc3ppM2g1SU5adWxURUdyUk9uWjBiZmdlbGZyM295MTk4WHNOY1VrdXJraGQ1Z281SnhIWkd0QmQ3UTVwdlpTUGNaRTIycVl5UEZnYXZoVVZpQUpycFdMVlRwOV9QWFUydTdqcU10SHFicjd6MXoweXgwanpTTkhSWnE5RGlWdUpWWl9DTFN3cEtDbUNUWWFQOENXcEN3bmc?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [origin, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方大会主题发布，旗舰事件优先P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-microsoft-174
+  date: 2026-11-16
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软全球服务宕机调查：一个潜伏四个月的漏洞，15小时才发现问题所在"
+  quote: "微软全球服务宕机调查：一个潜伏四个月的漏洞，15小时才发现问题所在"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE96azFleHRJYUJEVnJPWDZiQkJnZXpZeGU5bXJHd3MyZmFIc0poZXJaRWtfTzFIRFZsalZCZzNXdEdjbGpxbi1JMmZXV1lmbXlSeU9iZC15cEdhOGlE?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):全球大宕机根因调查，重大事故。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-microsoft-175
+  date: 2026-11-17
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软三个月前的补丁，这两天把74个国家和地区全整崩了"
+  quote: "微软三个月前的补丁，这两天把74个国家和地区全整崩了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RZHM1Wk43UG1pXzFrTEpscnVmNGZ0RFN0ZkRtRVZ0R1FLRXVYZGJlcTcwaXB6Qmhkc2hVMG8tMXFLeXpJLUtkcHdwMlk1UmhRZTRPWGlybG51MWll?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):补丁致多国服务崩溃，重大事故。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-176
+  date: 2026-11-18
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Jev再被狙击，微软新决策模型来了，速度快2倍，准确率登顶-36氪"
+  quote: "Jev再被狙击，微软新决策模型来了，速度快2倍，准确率登顶-36氪"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE00SmZEb2pFM2F3NE5BbkFyZHJXb2JQa2FWVzNROHdzNkRLSHZGUDBqQ1NKeTNnckNRU1NiRkNhclFLV0hyODVIWjVPNTFGRk0?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新决策模型发布，主力模型更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-microsoft-177
+  date: 2026-11-17
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软2026最大宕机事件余波：部分用户反馈Microsoft 365服务再次出现故障"
+  quote: "微软2026最大宕机事件余波：部分用户反馈Microsoft 365服务再次出现故障"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFAxalFfeVlZa2Ffc0ZiZ01acmVlczlSMnRxRTlOVE1VYWRjTHBmSkROSHpLVGRFelNDRThHeHR3U20yeU16YzVYbGNtdTA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大宕机余波，服务再故障。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

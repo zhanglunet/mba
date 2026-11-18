@@ -1306,3 +1306,19 @@
   source_type: media
   note: "LLM 预分类建议(high):财报电话会披露经营关键指引。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-17-meituan-085
+  date: 2026-11-17
+  dim: W7
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "美团(03690.HK)：定于2026年11月27日举行董事会会议，以考虑及通过本集团20"
+  quote: "美团(03690.HK)：定于2026年11月27日举行董事会会议，以考虑及通过本集团20"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxNcWNoRnlYQzRYZDUzWlMwbGMxUlJ2T19ON3NpZ241NkZtMF9MOF95V2Y5M0Z0UWg0QnJDak5kRDdSNmlKTG5UUGItSEtmdG1pMFJydkk0azdjay1rWThrTVdIclFhckFtbzBxVVVlX29mR0NfMjhfd0tXc3ZoV1lIY2RNYzJTcG5GYXZKeS1yQkd0S2g4dXEwOUo2Z25Maldq?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报董事会公告，财报前重要节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

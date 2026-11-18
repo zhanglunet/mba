@@ -2100,3 +2100,124 @@
   source_type: social
   note: "LLM 预分类建议(high):Mate X8定档，重大产品节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-17-huawei-138
+  date: 2026-11-17
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AIS and Huawei Jointly Launch the First AN Innovation Center Outside China, Opening a New Chapter in"
+  quote: "AIS and Huawei Jointly Launch the First AN Innovation Center Outside China, Opening a New Chapter in"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBXczFvejRIb1E2anBSRHB0bm1weDJOSXNXR3JuX3RQaFdHRXVPWk1VcEZETHhEelhVLU5aOWhQSkVzYk90QmlPMktlbEhsUWxyOUV1VTdnZGIzLThPRnpfcDhuc3M0bzRmSmZQTEVXVHg2UQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):海外首个创新中心落地，战略合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-huawei-139
+  date: 2026-11-17
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "China Unicom and Huawei Build a \"5G-AxAI\" Smart Wind Farm Cluster Benchmark for Inner Mongolia Energ"
+  quote: "China Unicom and Huawei Build a \"5G-AxAI\" Smart Wind Farm Cluster Benchmark for Inner Mongolia Energ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFSG1ibW1aSlBaLXpWai1zZm9mN1E4eUJXdzYydWFucGVpYmZFRVNBS2NRYnNIYkVXbEFDd1JwalphWkVnbE95R2REbUZwY0RfQlFtazUyLURUYlROd3dFZUV3?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方合作项目落地，正面但非重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-huawei-140
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为Mate X8大折叠发布在即，屏幕“大、亮、平”特点提前揭晓"
+  quote: "华为Mate X8大折叠发布在即，屏幕“大、亮、平”特点提前揭晓"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CaEJhNmJmaUdOMTRIRENGY2pkdEJjMmJMN3NsVm84aEY3LUctSmJZVE5mTG8xVlFhZUpkQmlhazdSdFBDcU1rU0d2X1RnRVE0MnRRWTdnaEtMU3JL?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰折叠屏发布前预热，有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-huawei-141
+  date: 2026-11-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AIS与华为共建海外首个自智网络样板间正式发布，共启L4商用新篇- 华为"
+  quote: "AIS与华为共建海外首个自智网络样板间正式发布，共启L4商用新篇- 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE1ueFB6MGhkQllQUzJKZThzeGRVRGJVUDBuYktQbmR3UVhTTG5CYXlLSDVNRXg5WjVWc1Nhb2ktUjdqaW9wYkJocDFfeDVQYVlHNENqeWJvX3M3OTBUTk9lMm1PNnBybDdOUzc2aWpteDdEdw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):海外首个自智网络样板发布，合作里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-huawei-142
+  date: 2026-11-17
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "中国联通、华为携手蒙能集团，打造5G-A×AI智慧风电场集群标杆- 华为"
+  quote: "中国联通、华为携手蒙能集团，打造5G-A×AI智慧风电场集群标杆- 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9EU2lzbXhGUnpZSzZ3dE51Zkk1MHZ2MU5Pcm1GOGNyckkzcjNURkFFSGY0RmNoQ3BoY201aFV6UW9aSkhEeFA0OGh2YVRCN0t0ek9HbjFfQTdnVU5WNERPVjVn?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):5G-A×AI落地标杆案例，实质合作进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-huawei-143
+  date: 2026-11-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为星芒公布首款手机O1 Pro外观，采用宽屏直板设计"
+  quote: "华为星芒公布首款手机O1 Pro外观，采用宽屏直板设计"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTFAxbmZkM1hKbXdpcDdqd2JnN3VnSmZkdUU2NmRpc2lzZ0JtdjV2MnA3WVhpQlk1Q25yaUtNSmQ3UzM4ck5FN1ZZMUZwZXRub3NicUFIdkhBNjVodC1EZWVOcmpFTXNrRURCaWVCLTNtNk5WQmJa?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品牌机型外观首曝，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-huawei-144
+  date: 2026-11-16
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为影像大赛10周年 巴黎大皇宫落幕"
+  quote: "华为影像大赛10周年 巴黎大皇宫落幕"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwJBVV95cUxPRFpoemowakkweS1YcEJYakh1dEptYmc1ems1dGhuU3JPdnJfdmZ3cVBlRzgxWmtGLVV3bWs4a2oxVmd4R1hIa3F4VWxLYXp0Tnl3dUs4R1p0dVpMNzdXTFFpOFB5RXNCQjRjdXMxRkFvNndSR3A4NXNnMTVtV2M4NDFyU2M3QVNUOXZYTlFGcW9mMExzUGYzbk15MzJ2MG82S1VzWFU5ZWM0QUphZEtDcFNwQVBKUlI3VWY4eWduUFB2cW4tZ1YxSFJTUTlObFQ1ZndmelNOeTFkNHhaNEVlMThMNnZDRFhRdlM5U0ZhLWFOWkhtcDZtanlQQjBjajAtUnVTdjJURERYVnRtZ3c2a0hTRW1kYzQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(high):影像大赛十周年活动落幕，品牌事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-huawei-145
+  date: 2026-11-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为Mate X8曝光，屏幕更大更轻薄"
+  quote: "华为Mate X8曝光，屏幕更大更轻薄"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBGSjQySGp3aG9yYVhNWkxGb0RiQi00UjFib0VQd1h2dWJYZVU3d2p2amx5Mm9FNWFGcWI0YWNZc2c0bzFtLU45NWV4b010dDgyRUVPRjhVZVNlS1VyR2p0R2FQMWxhNTE4WnVWSy1xN2toUQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):旗舰折叠屏曝光，未正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -3427,3 +3427,64 @@
   source_type: media
   note: "LLM 预分类建议(med):Claude Duet 邀请机制，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-15-anthropic-225
+  date: 2026-11-15
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "黄仁勋塌房风暴还在继续！Claude Code 被曝泄露上千密钥，阿里 Qwen4 抢先开测｜AI Weekly 11.9-11.15"
+  quote: "黄仁勋塌房风暴还在继续！Claude Code 被曝泄露上千密钥，阿里 Qwen4 抢先开测｜AI Weekly 11.9-11.15"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5wbkFNTVl3S1pzYzBCTjBnNUhEaFpFRWhfRThiajJMMU5NeVpjLTVqVk1jS1ZjaTQ5RW1uQ3RTN1BfRjJzQlFEM3ZaYjdmQ3N3NWVxSVB5SGV5UTd1?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):Claude Code泄露密钥安全事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-anthropic-226
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic披露Mythos用3天让Claude跑上AMD GPU"
+  quote: "Anthropic披露Mythos用3天让Claude跑上AMD GPU"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQS1haYVpDdnFDejNEd1FWTWVINXZOTVVXbnJ0MU5ka2NyaThWUmJnTUp2SjRqNThsbUFrZUFzY05ZZnJpRHpHQ2VKOGRHU0xERER4LWZDa1oxT3pQTktQY1VsQTl4NmlEcXBWR0ZMdnVLS3VKQmNvTzFQMy1OMGdqemFzTFo1UXREWWtsMw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重要技术进展，模型适配AMD GPU。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-anthropic-227
+  date: 2026-11-17
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic 为 Claude API 应用推出关联计费测试版"
+  quote: "Anthropic 为 Claude API 应用推出关联计费测试版"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxPMDF0Wi1MVEpyMGg4VkdGZWRXeERubHV6Q21SbzRrNWJlUmlHWjdhc1h4cFFVYnM0RTlqdWZLaDNWeVN3NTliTVJNUk9jSmNQN2RrcVdFWktfUTZHSHJNYWM1bnJkMVFCWnhWdTFPbzNqUnptX3BidF9VZjBYbmgtMWh0d1BDRHlRUUZ6Z2NEcw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):API计费功能测试版，产品动态一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-anthropic-228
+  date: 2026-11-17
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Salesforce上调全年业绩预期 携手Anthropic加码企业AI赛道"
+  quote: "Salesforce上调全年业绩预期 携手Anthropic加码企业AI赛道"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9DYkgzdXZNTFlhcE9rQUI4cVRKOWxxTzdFR3RQbkVVcWZXWVpQdFJMMDVVUEoyWU95UlpwaFc4Um5BQWxxOGtaSw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Salesforce合作加码企业AI。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

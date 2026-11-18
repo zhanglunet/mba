@@ -274,3 +274,34 @@
   source_type: media
   note: "LLM 预分类建议(high):好未来AI学习机产品市场表现，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-17-tal-education-018
+  date: 2026-11-17
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "高盛：AI学习应用爆发，维持新东方及好未来“买入”评级"
+  quote: "高盛：AI学习应用爆发，维持新东方及好未来“买入”评级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxObHNKWWVaX0VBbURZU3Brd3FyaExlMmZRT05hMkxsQ3ZrTzFldWxPWTVjbnJxQlFNV1VtQlBaU3BfdDAwaXpGbHVCeXNOR0NxcWV6ZU9qNnU1ZXh1MDFkWU0tS3BHM3ZtbGRPMlpvdjdsZ2tfU1ptY05QQlFqMkxWLWFpYzZlRWhldTNDTw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):高盛维持买入，正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-tal-education-019
+  date: 2026-11-17
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "好未来AI投资浮盈与学习机业务承压"
+  quote: "好未来AI投资浮盈与学习机业务承压"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE5DOU5Lc1YxLVhYSV8tN2RVXzNSbDg3Rk0zNEJwS1VfQXR1cDl5dnZCV1duS3NpLTJ3RXo0WmVXRkxCb2IyMVd3SDd5MWJXczRvdmZHek8tWXJUckEzR0JNRDBJQjltU1kxbGtRMUNn?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):业务与投资业绩双重信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

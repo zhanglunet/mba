@@ -2476,3 +2476,79 @@
   source_type: media
   note: "LLM 预分类建议(high):大规模召回涉安全质量事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-17-tesla-163
+  date: 2026-11-17
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉拟投30亿欧元扩建柏林工厂 目标年产100万辆Cybercab"
+  quote: "特斯拉拟投30亿欧元扩建柏林工厂 目标年产100万辆Cybercab"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1UWWtiYmJKMDhHa3dkUnRPSjA0Z1JoemhiS29nUmNLcTBKLXRSaXVobV8wUUpXV3dzQTF0a1d0NmhvcG1vakRVUF9lZTZkTVJxU2RWNmdxM29XQll1V2tTbA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):重大扩产投资计划产能信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-tesla-164
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Musk Says Owners’ Tesla Robotaxi Trials “May Start” Next Month. That’s a Threat to Uber"
+  quote: "Musk Says Owners’ Tesla Robotaxi Trials “May Start” Next Month. That’s a Threat to Uber"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOYmFpOFQzYjF6YmRLY21oMXVCeDNQb1Q0NnV6dkVBM3hlSHpjeFQxUW5ibmRqSC1KSmtjZndVSlRfREdwWEhoVmFaenJCbGs4ckNmRXJrSXgxbUVPbk5qcGstOEpiUGJ6V0ZSRzFseXZtVmRwd0NJc3ZuLWR1Q3JXSWxTQ2RRWDFqM0NNYWFOWmpib1JLSlFEcUJoTXNoNHMtTmYyWm9KcEJWMGEtU1RfYVd3?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Robotaxi试点将启动重要进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-tesla-165
+  date: 2026-11-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克画饼成真特斯拉车主将可以让车自己出去拉活挣钱- Tesla 特斯拉"
+  quote: "马斯克画饼成真特斯拉车主将可以让车自己出去拉活挣钱- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5xc0hicXpPcW5LN0xfMHU4OFZYT1c4TDgydkdfeE13Z3dfTFpIdDdIdTBmRVh4MVhxcTlSX00xYWJvZGRxTURid1hIcG81enh1XzNhNGdLMlFEMHVTQWR0SQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):车主车队拉活属传闻计划性质。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-tesla-166
+  date: 2026-11-15
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉美国官网停售入门版Model Y AWD，四驱入门价上调约19%"
+  quote: "特斯拉美国官网停售入门版Model Y AWD，四驱入门价上调约19%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxPYkE3aVdDZzZkWGRWVVRBQUUtTUlsd0JBSmxHQTNrbkp2bXNtX0FoZG14QnFTaWhkODYzbVdZTWE4NGlVZmJQRVZRUU0wbk4wMy1Sc3J6SVpxWFY5V2tENnlHUktsNHRIbVRNbU5BQWo2aDN5SkNjX0RFRFhXaF9zeXBpSmFaRHg1TzdWZVZWLXhhZUg2Ymt5TUNNWldYU0cxZ3haV0FiVFVXLW14bmtGODExVl9Fa01OTXc?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):停售车型并提价，影响产品与消费者。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-tesla-167
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉拟投30亿欧元扩建德国工厂生产Cybercab，高管称2029年投产"
+  quote: "特斯拉拟投30亿欧元扩建德国工厂生产Cybercab，高管称2029年投产"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxOS05MTzZnNnNOY3k2NTlkSEhZb1hNY045VENycmpkSHRYZnQzWGFJVDNFQlI0ajJYWGVCTGFvVGVxaGpIUU8tb29aRjBTS01ESW9JX1dJS19QQTFWWXBLZnNTZHlvWUNNejNkV1JyRWc2dENQZ0lQdmpHWlNLMVA1OW1waVo0d0wwOXVTVlhUNVRyU0tERjNF?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):重大投资扩建计划，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

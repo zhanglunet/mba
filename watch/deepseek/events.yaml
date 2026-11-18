@@ -2149,3 +2149,79 @@
   source_type: media
   note: "LLM 预分类建议(high):年内故障超10次，稳定性问题显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-16-deepseek-141
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek 发布全家桶应用 API"
+  quote: "DeepSeek 发布全家桶应用 API"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9wQWY3RVgyVjA3Zmtna3hFbENPbEFESk1ETXJGQVhsT1FGeFFYSnNkS2JrVnVuS20tR1JBYzVSR1BodHBGMzloNy1YaHE1YVJuRjU0eDVZY19UMHE3OFdKZXVB?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布全家桶应用API，重大产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-deepseek-142
+  date: 2026-11-17
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国收紧算力管制DeepSeek限额使用– 普通话主页"
+  quote: "美国收紧算力管制DeepSeek限额使用– 普通话主页"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVzlqLXhtMnFqR2Zfb1RjYUxVbEFXeVkzWjVXOVctNU5kWXNrNXZWNXdYYzNINVloT1B2ek92M0lMMjZuZzVuNGFzN3JTMkhUQjFyU2xKeVBWSXVVTkNDbUNfZVdVVWdsQzN4WE1tUklPVGNrclVzNm1CdUVFc2JnVTIzaTVEZUVIVFNhaUJOYks3UmVQekFNbDdfTDFuY200UUhrR2dRTnhTSVVuSjF3bm1nNXZzQ1ZRODkzR0hudG5QWmZ2MV9oRlJnUm1JRHNB?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美收紧算力管制致限额，监管相关显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-deepseek-143
+  date: 2026-11-16
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "因算力不足，DeepSeek对App/网页版限额使用"
+  quote: "因算力不足，DeepSeek对App/网页版限额使用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9rRGFTSFJJaUstc0FaV25WWFpkM3dvNGFQS0I4NU5GdUJKOGxvMzZHcHVsOXRqcW1rX0dRcGx0QThUVVVyUmF3dXlWSHg?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):算力不足致服务限额，服务受限事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-deepseek-144
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek因算力不足限额 额度管理逻辑曝光"
+  quote: "DeepSeek因算力不足限额 额度管理逻辑曝光"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBad0JfNWJyU19URUsxZEt0OGdKUFFTWW53VUZtNjIwSzFDdm1EWDhmQ3NJeFkwcFNVOFVlUlVBQW5VaURzbHd4NDRDZFdRekQyc3ZhbUpRVFdyRUN1ODZObGVjZHJuUVlFOS0zY2FsUk8?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):算力不足限额，服务能力受限引发质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-deepseek-145
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek因算力不足限额使用：不再支持超过7天不活跃的长对话，并将单次输入文字的上限缩短至4万字左右"
+  quote: "DeepSeek因算力不足限额使用：不再支持超过7天不活跃的长对话，并将单次输入文字的上限缩短至4万字左右"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1qQjZ6a1Q3dW9ESWFINVNNYnExSFQyVWFjWWQ4TG9yREljSFlxVVJvZlBCckdyZGVJb3dfXzNfNGUySEJVRGpYdWNLQWo?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):含具体限额细节，服务策略调整实质事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
