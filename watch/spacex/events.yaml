@@ -2893,3 +2893,109 @@
   source_type: media
   note: "LLM 预分类建议(high):星舰首次成功回收，重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-15-spacex-190
+  date: 2026-11-15
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX首现“筷子夹飞船”，分析师：支撑万亿估值最关键一步"
+  quote: "SpaceX首现“筷子夹飞船”，分析师：支撑万亿估值最关键一步"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBIVk9mVXdPMWhiY1pISEVsbTVBamhEUEdkYllkZF9QcnpRbkJFVjhzLXd4a0M2Wl9TX194RjQ5S3lpaEpaS2t3OENxTlQ4WDJmQlB5bFNXNjZnNWVz?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):筷子夹火箭重大技术里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-15-spacex-191
+  date: 2026-11-15
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "星舰绕地球飞行14圈后，SpaceX首次用机械臂接住返回的飞船"
+  quote: "星舰绕地球飞行14圈后，SpaceX首次用机械臂接住返回的飞船"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZVXlCTm5aUjdaOVdNX1VETmRyZDg5MGYtekZjTzdOSXVyWDN3U2x0NUlGUmlFVXJHX004Y2cwT053UTQwdHJCYWpYWHY3enM0eFB5eGI3Mk5zVktE?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):星舰首次塔接飞船，重大技术里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-spacex-192
+  date: 2026-11-18
+  dim: W6
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX最快本周启动400亿美元AI晶片债务融资部分发行"
+  quote: "SpaceX最快本周启动400亿美元AI晶片债务融资部分发行"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTFA1S2swZ25pWXc5Q3VoSVNzSG01Qk1xWlpOam05Y2Y0a1Y1U1ItY1FYMzFnRHVuTUtYSlRGM2M3aDdTTXFZb0VBTFNfQm9wZ0U4OFU0aVBPTVh5TE1NWVc4Sklzakw1YXEwNGFxeEVrdw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):400亿美元融资传闻，未完成，显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-spacex-193
+  date: 2026-11-17
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX首席财务官表示，Anthropic将需要“多得多”的算力，明年SpaceX可能成为最大的AI基础设施参与者"
+  quote: "SpaceX首席财务官表示，Anthropic将需要“多得多”的算力，明年SpaceX可能成为最大的AI基础设施参与者"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE5mcUprcXZ1S3V5ZHRpZjdvemo3NFFtbUFCb0JjQVNHQkpTT1MzRU1SWTdienZINFZWQUoxaEhnVUE3QS02aUpXUVIwYURvbWJ1bkMwMk5kQThseVROcm9sNmQ3SQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):CFO谈AI基础设施前景，前瞻表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-spacex-194
+  date: 2026-11-17
+  dim: W6
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX首席财务官：400亿美元债务融资今日启动公开承销"
+  quote: "SpaceX首席财务官：400亿美元债务融资今日启动公开承销"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBra2hSYlRmdEl4ZDNGX2pncndGY2FFYklSXzdETlBneUtwYmlvZkxSRlpIQmp1eHZwcXd5SFNzYkVnYWlMMTBwekdQbXVxZUc0RWJjZHlnaXNFN3g1ZFZYNUZB?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资正式启动，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-spacex-195
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "高通拿下重磅大单！SpaceX采用其5G芯片 数万基站部署成本有望下降"
+  quote: "高通拿下重磅大单！SpaceX采用其5G芯片 数万基站部署成本有望下降"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Za2dhS3BPdjViMkN5MENVY2JhLUdTaVNSZ1BadEVTQ3hnNG1selVEVGhNTlZuendZRlhfOG5HYWlUYlEtbUVzQnd3aE5ONXR4aTcyQkVqUGs?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):与高通芯片合作，涉成本与供应链。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-spacex-196
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX最快本周启动400亿美元AI芯片债务融资的部分发行"
+  quote: "SpaceX最快本周启动400亿美元AI芯片债务融资的部分发行"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE5nWkhRUVlKNERoRTQzQlRkUTJuUGxIMjYtemlEYmRNMTQtRXdaU3djd1E1YU1TUzNIVy11V2ZtbmppSDRabE9KSFdybw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):400亿债务融资启动，金额明确但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

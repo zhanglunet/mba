@@ -3170,3 +3170,109 @@
   source_type: media
   note: "LLM 预分类建议(high):巨额罚单后续，监管舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-17-google-209
+  date: 2026-11-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "From easier entry to smarter savings, here’s what’s new in Google Home."
+  quote: "From easier entry to smarter savings, here’s what’s new in Google Home."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxQM3Y2bVY5SC1OZ29tT2xDemtZQmktUm1MbDZDZGRQYmx5RU5uMTg3OXozU3FBb1BoenlYTFBoV3VpS0dkNmFHNndVb3pwVjBhMzItZ3IxWVgxRldONXBhSE5hTXJjX0JNTTFQZGcxeHpBYTZuNDRUYlVlelpaNnNSRGdjd0NaR1NtblJwanhUWnFJVTA0N3RNOVV0eWl3QQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方产品功能更新，非重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-210
+  date: 2026-11-16
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "New Ask Maps features to help with holiday travel and prep"
+  quote: "New Ask Maps features to help with holiday travel and prep"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNcXBBMHU1RHBlZUdyVUVvMktDRFotWXE1alJvclVUcmRsQWFhU0R2YUNCMVB3WGtjeklUWFUwNG5VSGNpS0VZOTRUcjk3aC1FZ05mX2lYX1dKWDlxTkVVc2hnWXl2SUZnQ2lLcW15YV9ST2lxX1JZdjZiRzBnclVxN3NVaWpSWXRRaWQ2ckh4QmJ4OGxidjBabkIxRQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):地图功能常规更新，轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-211
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "We’re updating controls in the Gemini app."
+  quote: "We’re updating controls in the Gemini app."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNdXY4TUVKUW5yWFpXcnpjOHdpczdkdE0zaS1ISUstaWxZUzItMjZpYlNVYVRWdWtuakc1TzV6YWtCWFNIX0YyZXJSMWpIRmk5R2tfbE9XbDZ4QzRtVEk4d3Y3V1A0ay1vck0zcDJacUNwdENrM0pmNTZLQVlyVTBVLQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):Gemini 应用控制项更新，一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-212
+  date: 2026-11-16
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Ask Maps is coming to Europe."
+  quote: "Ask Maps is coming to Europe."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxNc0RncVl4ckFHM0g4Zy1JNUJzX1Z4MmMyb1FsNjVLSUQ4UFBwdVJydGJhOWRVYVNDTV91cGdnNXZsa2dOTEtaTkhWTHk0a0tQUXpMbDBScFpHbEY5amFOdFlUdk5nVFdHVFdlZk9MYy1PZUhVZXNkc2JhOUFNZjdVUDZCTE1WZEJvbGpxZlZuRQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(high):功能扩展欧洲，市场扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-213
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌放出Agent记忆教程，代码已开源！"
+  quote: "谷歌放出Agent记忆教程，代码已开源！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE16aHFfVUV3MnlUdFlsQ3loZUpKUTZhNHBhVDRpWGh0dHN3SXoxMWdVR0FGYXp0UjUyTmozMmNvb0M2emZManhyT0VDM2MxMXRHdllLalRCdDB4YnlP?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):开源技术教程，社媒传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-google-214
+  date: 2026-11-18
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌称Google Wallet已面向全美iOS用户开放"
+  quote: "谷歌称Google Wallet已面向全美iOS用户开放"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5nYTFVRW9oYVF3WFk0cnhlem1MWlNQdWRpWlk5UHhfemdIRkcza00yRTh3SFN3S1F2ajJoMjFGSnVpblZWSHBTcjJsNExSODBPdFlSbTM4MDUwTzV6UWRLVGN3?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Wallet扩展至iOS，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-google-215
+  date: 2026-11-18
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Google Wallet登陆美国iOS平台，暂不支持NFC支付"
+  quote: "Google Wallet登陆美国iOS平台，暂不支持NFC支付"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE5FbE0zNTJtNVB0OTk0RFFmMlpaWE91TUU1aHBDWlpOZmp4d3RsMUptekV5YnVmUjBzd0FYRkNRdlpURk1JcW44ejRBYVJaeWZieHNqTURHNkdwNkhka0F2Z0M4cw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Wallet登iOS但缺NFC，含限制信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

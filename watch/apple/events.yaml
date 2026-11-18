@@ -3005,3 +3005,109 @@
   source_type: social
   note: "LLM 预分类建议(med):折叠屏耐久测试负面，涉及产品质量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-17-apple-198
+  date: 2026-11-17
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Apple Podcasts names Baby, this is Keke Palmer the 2026 Show of the Year"
+  quote: "Apple Podcasts names Baby, this is Keke Palmer the 2026 Show of the Year"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisAFBVV95cUxPdHpmd3JnS1E0QmppeHdoUzlMNnN6b3U5MW5Mc2RNM2FST1lUUFRILWJRREc0dzlqZmJyb21JQVpQQWFVbWx6VGpBOWdwRzh3cDFwc3llR01CWmtVZTRIX0RkSTdHUzM4Z3paTDdESW4wTnV6OWhMR24tMFNueWI0MEo5Q1lvalkxSm1PYTlkMWt5MnkwM2ZxRGczT2tsRzRoV1BqT3ZPS1hyNkVBU3JhYw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity]
+  source_type: official
+  note: "LLM 预分类建议(high):官方年度播客评选，日常营销内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-apple-199
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "iPhone iOS 27.3系统Beta版：Siri AI 升级、健康 App 回归及其它"
+  quote: "iPhone iOS 27.3系统Beta版：Siri AI 升级、健康 App 回归及其它"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5X2xEZmRidVpIWkdjOVktRzFwZG1hczVtaXRud25Mc3gxSEVlVlc5SmFxdG5uUlNXejNBRnFCSWZqbV9UeXdDcGRSZ2Q0X0lfaXFBdndfdU1Fd0Mw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):iOS测试版功能更新，一般产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-apple-200
+  date: 2026-11-17
+  dim: W5
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "iPhone Duo 开售三周后，苹果 Apple Store 完成适配|IT之家|折叠屏|乔斯|亚克|在线商店_手机新浪网"
+  quote: "iPhone Duo 开售三周后，苹果 Apple Store 完成适配|IT之家|折叠屏|乔斯|亚克|在线商店_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5MWVg5V2RRREpRZzFLNTV0clUyODhTSFVpZ0psaUpMVE9uY0tlUlNfRFJFVUZEVXpoSmM1T3BDbTBfMGRyaHdsOWZ1ZjMtb04yTGlDcGMyaXNmVjBJUWZTb3NuVDk2ZHFncVpucWIxbUxmaC1GWWxkUDNzN01idlU?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):新品渠道适配进展，轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-apple-201
+  date: 2026-11-18
+  dim: W8
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果因内部系统更新故障导致Apple Pay中断，多数已恢复"
+  quote: "苹果因内部系统更新故障导致Apple Pay中断，多数已恢复"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFBIUnhCUWdsdlNMNGItbHpNV0ZOX2dXSmgtMlFRQ1Ixb1JQSnQ2WF95Ulh5eG9DNjd0c21aYi1NWHFYZ1B3cTNHekxpQV9MSzJoYzBEeUh5SVB5bXVnbXpSS0x5MA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):Apple Pay服务中断，多数已恢复。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-apple-202
+  date: 2026-11-17
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "iPhone Duo开售三周后，苹果Apple Store完成适配"
+  quote: "iPhone Duo开售三周后，苹果Apple Store完成适配"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1BWktZeFlvOXQ1UFdybWxodFVOanVOREFLTUZRSkdoTGVfN3NqNFZnVTVGUGtLTHk2VE9SQUpqOU5lM0hReWR2aFo0MlI?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品适配进展，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-apple-203
+  date: 2026-11-17
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "苹果回应服务宕机：内部系统更新引发故障，Apple Pay、iCloud、App Store均受影响"
+  quote: "苹果回应服务宕机：内部系统更新引发故障，Apple Pay、iCloud、App Store均受影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYkpPS05ET2hxaGRSQzhtRE5xY3ZMWmRETjlPc0x5ZGxsREY0aUQ4SHl1VHoxVHNmOFNuYmU3VHBMRnBfb3BQM1JHWE5lN0NjejNtbzJQZExDNTl3UVZIMjlaNnB6Z3BtWEZrTmRBMDRRZElqbURIRExGbk8tVDB4LS0tN3N3TENQ?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):官方回应大规模服务中断，P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-apple-204
+  date: 2026-11-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "国行 iPad 与 Mac 可体验 Apple 智能，iPadOS/macOS27.3 测试版开放"
+  quote: "国行 iPad 与 Mac 可体验 Apple 智能，iPadOS/macOS27.3 测试版开放"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBpUXNxRGhwRTd2WlJQcFJsTmItRzd6VnZsNGVlb210d2JKandScGVpaHd3alhQd2EyZDFmVTdjcjVMc3U0cjZQZzJEdS1EZw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):国行Apple智能落地，显著进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

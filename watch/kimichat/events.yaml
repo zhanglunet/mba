@@ -2201,3 +2201,49 @@
   source_type: media
   note: "LLM 预分类建议(med):高估值与架构调整，融资未完成故P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-16-kimichat-144
+  date: 2026-11-16
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "成本只有1/20的冲击：日企也开始选用中国AI"
+  quote: "成本只有1/20的冲击：日企也开始选用中国AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxQa1NoT2JPWm9Gb3hrRS1XWHctZG9ORXlsbzFLc05HZk5icVZKcG5vTWxnd2wzZ2NyeWk1a0lTU21vTWRtRTNodkc1YWNPdkhNNHFZTzJ0YUdIb0w3N3JMY2pQMWlYQ3Y0bi1wMWxaV2Vnc25mSTFhRV9MRWlqb29oUA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):日企选用中国AI，涉品牌间接利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-kimichat-145
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "阿里巴巴发布性能更强、成本更低的AI模型"
+  quote: "阿里巴巴发布性能更强、成本更低的AI模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingJBVV95cUxPRkVvUkJJWDF0bllGR2lMX01VRC12QmVrUnp6VlJEMkZNcERORm9oUERxSzdKYndJVVJ6Mk9nNlg2MGd4NFpteXpqaFVKZXc5WUZUZFNrNmZ5YVl4ZkQwcGY5ODhsckhTWS0ySUJzU25xN24ydUU4ZnFVMjU0X1BYOVpNSDZhSTdoU2w5ZmNycEFWNmtDMTBmTUNTMmVkbHhNUTRBT0N3ZEl6R29Eck93NWowTk9NLXU2cjRiREZmVkNTTUM1eXlYQ0plcUdiUTlZbElIbzk5NnRTemRDQVd4TndTanRiSlNTYWZJcHNRRFo3NFVLUGlERFF4Q1JNRGxPeTNCSkxRSG1vTFRHbFZZcXZiQWloWW5hWThmc3pR?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):竞品更强更低价，竞争压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-kimichat-146
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "阿里发布2.4万亿参数Qwen4-Max"
+  quote: "阿里发布2.4万亿参数Qwen4-Max"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTFBIdWxzZXoyMkt0MnR4STdQeTdRVllWUUFuOVNlVXZmTnZyTHNORWtRbWk3S1YzQXJPVzdOakItMUpCMkZMNVBmYW4zRlVaX2NndHotam1B?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):竞品旗舰大模型发布冲击。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -3283,3 +3283,169 @@
   source_type: media
   note: "LLM 预分类建议(high):重大收购传闻，金额明确但未成交。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-11-17-openai-214
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing ChatGPT for Sales"
+  quote: "Introducing ChatGPT for Sales"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE93NzFPZGpUeU84ai1xMjR0SVYxbC1MZ3Q0S1BNeU10VnoteVM2Y01ES18wWTR1cERpU2dfN2RZUFdRcXgtVkx3d1c2SEVGU0x3SEc5cGVhUThaUFBqakhid2pYR2wtZw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方新品发布，非主力模型升级，P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-215
+  date: 2026-11-17
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing GPT-6.2 Astra and Sol"
+  quote: "Introducing GPT-6.2 Astra and Sol"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE1uaG9wYm5WLWZad2xnSC12anhNVVhCQ0d2aWJUY0l5V1JFNlE3SkhjdE5JSk0zRjVhZk5Da3NzVkp5bDkwcnFnbVZ0RjV1TjFQSVZoSVNUdm5jYW13ZDZ5TTU2eVRBZw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布旗舰模型重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-216
+  date: 2026-11-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Astra for Law leads in legal intelligence"
+  quote: "Astra for Law leads in legal intelligence"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTFAxZ1AtdGh5bUdSU1VpTEhQWFVncDNieWRxSkhQUTJVVjhGbl9ycXZTaWs5bGtZUktmUndCRTFtS2pubXJvOE5kY25qQ0s3NlRG?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):垂直领域产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-217
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing OpenAI for Chile"
+  quote: "Introducing OpenAI for Chile"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE83cWRYTHNDZHBNSV9DY1Y1aElkZ2diVzBlOWkxVFlKV1ZuWXRJSjE5bzBubDVUaEZfWk9JWTlJSkNGUHlIczJvRWtnWkY0OUhOSndXcjFhYTFFU0ZBWUpMWm9zMm4?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):区域市场拓展公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-218
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Strengthening NATO and allied cyber defenses with AI"
+  quote: "Strengthening NATO and allied cyber defenses with AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE8zYnJ5UUFIVHE4X1N0SS1sMXcxVVIwSEQyWlE3N1ZTb1RleV9MQmZzdnN1Sy1jQXpWd2w4dHJXbEtUMjlDZ1k1RDRMcUlodHZ5alluX3ZIVjZRU3lQZU9OVzBqOXlxeEhQWGt5U0V5T2pOcVZSdTdfQg?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):政府安全合作，品牌影响力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-openai-219
+  date: 2026-11-16
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Strengthening the fight against online child sexual abuse with new tools and support"
+  quote: "Strengthening the fight against online child sexual abuse with new tools and support"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFA0ZC1UYUtkd0JZU043eUgyaDZuV0UxTzdCRFZqX281andjdGtXTl9IN1g5dTgxSmpDRlJ2b2FFN1M1dHVfTjEzVWVMeEpERjI0RktYNzZNUzUzRW1XSDExY0psTTJ2Z1pOQ0cw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, origin]
+  source_type: official
+  note: "LLM 预分类建议(med):安全治理与公益举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-220
+  date: 2026-11-17
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI进入医疗工作流，拓展Healthcare应用边界"
+  quote: "OpenAI进入医疗工作流，拓展Healthcare应用边界"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rb3RGU0I0eGFpaUtvUXdfd3VNSUZaTkRjMzFMcHhXdElyUXJMVWNCQ285enIwMDlObW5CdW5TeG9vMkttVjNCZVBRQ3Y4VzJqbmpRNEpjNjVYb1Ft?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):医疗领域应用拓展，社媒讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-221
+  date: 2026-11-17
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "GPT-6.2 Astra难产真相曝光！OpenAI突然彻查迄今最大RL训练"
+  quote: "GPT-6.2 Astra难产真相曝光！OpenAI突然彻查迄今最大RL训练"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9DN1dHRzI4OXhXOEp2Mm1FdTV6RU8yY0I4Qk1pNU43aVQ2eEE2VWFDY2lCWXNURk9vc3doQ0EyVmdaeHRuOWJEYXNVZWlMYzN4UmFhYk90UXduT21v?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰模型延期传闻，涉核心产品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-222
+  date: 2026-11-17
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "建设惠及美国的 AI 基础设施"
+  quote: "建设惠及美国的 AI 基础设施"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE0yYVBMSG05NnZTRWtuZzlaTEx3R2ZTNHZhVG5PelZ4ZW4yLTBUYnExekpoZ3BLZS1wa3ZCTU1sNk8zRjFYbExmekY2bXFnVzhPc1ZiOTFnR2I?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):基础设施战略主张，官方叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-223
+  date: 2026-11-17
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic IPO前夕，OpenAI推出最强模型GPT-6.2 Astra，称性能超越Fable 5.2"
+  quote: "Anthropic IPO前夕，OpenAI推出最强模型GPT-6.2 Astra，称性能超越Fable 5.2"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9UYzNsR1lKQW9VZ2lSWHF6QXUzM200TkNUTmRRdGR2aHBQLXZjV3VWLVFrc0VSUzd2OUI5cnZRU29HSDRjUENsLTlpaGlib3MwLVcw?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰大模型正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-224
+  date: 2026-11-17
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "发布“地球最强”模型仅几天后 OpenAI首席科学家发长文呼吁放慢AI开发"
+  quote: "发布“地球最强”模型仅几天后 OpenAI首席科学家发长文呼吁放慢AI开发"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBtOWJ1NTJ1WnRiUW5vbE82MzVDMVJoY2l4NjdtS0VTQWh3d0E0TmpRSENCYllLemw3NFprbUdyRzF1QmRmaF9ReA?oc=5
+  fetched_at: "2026-11-18T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):核心高管公开表态引发关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
