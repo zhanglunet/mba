@@ -3276,3 +3276,94 @@
   source_type: media
   note: "LLM 预分类建议(high):Wallet登iOS但缺NFC，含限制信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-18-google-216
+  date: 2026-11-18
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Gemini 4 Neon"
+  quote: "Introducing Gemini 4 Neon"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxNemJ2dmlaaUw0Vm9IWnV2N3JiaXg4a3BNcVVqZjEtNnlVTnExYzk0d2tzcEZ4SGhqY1MyQ0c5LVpYN2ZKdGJ6d1FTMmhWZ0J0VVJkcGhqOHk1eHB1SFA3M3NLNEdRZEhhbnNzekhRb2E1RnRVSjJFQmNRWC05ckI1NjlybWpvVzJUeWdwaURROFhOcmoySS03UllmRWJJMUk?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布主力大模型重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-google-217
+  date: 2026-11-18
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Genie 4 is now available"
+  quote: "Genie 4 is now available"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxPTFJhV3ZyQ05iWllkRDVUaHVjX3RhUGpwUUFnVVVScEpjT0ZSR2VaekRZa2c4ZTNfNkFxNGRaYTdWV2owd1ItRmpkTWllY0hFVjI5XzNTcG1GbUotaV82cHpOMFVNQ193V0JhSndMcGp3RTZWMnUyUFZBMzY4czd2cnZtNFkzRS1sT3VjQkp6ci1rSUk0aGtPcUdMU2F2RHBJTTJQcDk3WFEwTk1lVnU4?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布Genie 4模型。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-google-218
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "The Gemini app is now available on lower-memory Android devices."
+  quote: "The Gemini app is now available on lower-memory Android devices."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxPMEQ2ZTZ6ZjFjUklnWnpQTUMtV00wSE1aSHA5OHN6bEVHTk5Ta2hnVjAtNFVLQjRUc0tWbm1FV2Iya3hWdGVIdDA4alhoMFJKdUhwaklqbUZELWZkcThhSjdEQ2dTbzFRQlBnWl9CZWE3ZWN6SUlUcVpzYnF3VWxQT3hnMVRDR2xEWjdoOXlsUQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方产品可用性扩展，非重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-google-219
+  date: 2026-11-16
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "狂揽80亿！前Anthropic员工押注RSI，谷歌英伟达都投了"
+  quote: "狂揽80亿！前Anthropic员工押注RSI，谷歌英伟达都投了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4xQzNmWjBYMGd1SGpsWXQ0eFRvX0lCd2x5OElFdEFXMnROWTh0UnF6X2NyQS01VUlmdDdhMlJJM1FJdHNtV0haaE9hVHFzU3JLaUd3MU8ydEJQaWd2?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):谷歌参投，但主角非谷歌品牌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-google-220
+  date: 2026-11-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌称，Google Wallet已面向全美iOS用户开放"
+  quote: "谷歌称，Google Wallet已面向全美iOS用户开放"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1fbzdQY0xLQ24tYkVXMlgwMl9wREM5dmFmTC03N3VsOTN4RkxneVhQOHFxTS1kWlZRMG1qNlJ4Uzc3YUg0cmpmMXhNRXpYUWlsYXdSdlIzVHU2VnhvMzVRRA?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌服务扩展至iOS用户，产品可用性事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-google-221
+  date: 2026-11-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google AI搜索模式新增“隐身对话”功能用户可进行不留痕迹的私密搜索- Google 谷歌"
+  quote: "Google AI搜索模式新增“隐身对话”功能用户可进行不留痕迹的私密搜索- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xc1ZRYUZvRVFYQ0M1YUJPbzQ0cUZvV0tDRXdiNklZWlJNUmJyNHIwbVFyWDV3V0tFUXhVM2RtUjlQVU5kdVFpTzN0RXJHRjJfMmhDTm9FNXktdGtIT2YwMQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):AI搜索新功能，隐私方向产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2247,3 +2247,49 @@
   source_type: media
   note: "LLM 预分类建议(high):竞品旗舰大模型发布冲击。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-16-kimichat-147
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "摩尔线程完成Kimi K3.1 Pro训练适配，打通万亿级多模态大模型训练链路"
+  quote: "摩尔线程完成Kimi K3.1 Pro训练适配，打通万亿级多模态大模型训练链路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE12eWczeGtjazluUWt3bHIyaXR0aGlfRWRMc1dUQXdwRFhKUkYtUmJ4aUlPYUEteHRsSFJFNjZmUG5QVHpMcldiMGlzWG15OUpqOXlOUllhWGdZbGJF?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):Kimi大模型完成国产GPU训练适配，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-kimichat-148
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Linux 上能用的 AI Agent 大全：从 Claude Code 到国产新秀，14 款全实测（附全景对比图）"
+  quote: "Linux 上能用的 AI Agent 大全：从 Claude Code 到国产新秀，14 款全实测（附全景对比图）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjRTZSNzEtTzNUNnBHUGQzNjZtSldDamxUMUFzSmo5UDF0X0F0U0d3cS1XU2tkTldCeUl2XzFxa2JSMmJTa0NVRXhiQlpZT2JVT0FXVDBBRmtGczBS?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):第三方横评涉及品牌产品，口碑参考。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-kimichat-149
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面据报接近完成架构重组，全力为赴港IPO铺路，募资规模或达50亿美元"
+  quote: "月之暗面据报接近完成架构重组，全力为赴港IPO铺路，募资规模或达50亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPY2FBeHF6NXJ2ajFtRm1fT2xEdW9SNDB5NDNBNXlsNnhFSVhVNjRkTVdnU2RjczdOdzB5Vk5PeG1VajNkSG9fdExnU1B1RnpwR1Bocm9QSVdxcTBIazNfVWkzMGJXdlNqM1BzdTlyVzhTaUcxeS0zbURrVVVONFJXVW8tb0VQNGUyaXhDTQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):架构重组与赴港IPO传闻，重大资本动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

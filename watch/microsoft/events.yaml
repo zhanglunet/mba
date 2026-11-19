@@ -2705,3 +2705,109 @@
   source_type: media
   note: "LLM 预分类建议(med):大宕机余波，服务再故障。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-19-microsoft-178
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft Ignite 2026：赋能人类愿景、智能与信任"
+  quote: "Microsoft Ignite 2026：赋能人类愿景、智能与信任"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgJBVV95cUxNRFdJbTVwa0lTcmxySi1RZk1YYmJJdFI1SjBNbDdxZ2dNU2ZESnV6SFlhZ0JwZUw1U1lxaTFCNmNVNHhVWG1UUXQwd2d0cHF5RUpkZFNNcmFvcndjcUpwYWVHOWJjWHRUQ2pXTEtpMS1GU0Q1cVpCc1hVQUluM0hUcHZfM2JURkN6YWhRUG1RREgtU1lHX2c3dU1YSGJUWjJWdS1OdzNDd3BQWFljZldZajlZVkc5MmdaZl9JeUNFc29JY2pOWFpHWjhUYXRRV3g0MGhzb1N4UGR2SlpZdERTdWMzUWUzQWdIa1pYNGFMcHB4VURNcUxDUWJUOVZPY2JVMWc0WG9oREN2aExGbGNYRzJ3ODlQaWJXczYwY3A5S1pWZkNHaUNqU3pB?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方大型年度大会主题发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-179
+  date: 2026-11-18
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft and Intel deepen collaboration to deliver differentiated Azure infrastructure"
+  quote: "Microsoft and Intel deepen collaboration to deliver differentiated Azure infrastructure"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizgFBVV95cUxNYTdtZG1GNmtwa1loVnhGcF9ZR2czUTVRRnZadmNXMFdrZDB6WWIzbWlUUmtVaHNpZDdjSHlqNkNfbThNY1dDYXM0M1lUb25hTldZMHpfdGNIZ29yVjE5R1RWUTE0MVR6MExyT21UQ3dUSk04eDdIMTVILVBXSWwzQVRZbnpfakstQVAzVFhMVlRBQmQ3T1dwdGJkNEczWGlCQUtNN2N2MEpaVGJySXFlZ2doTUV2bXdmZWxVUkNfcnl4SjlIenktakY5RFlSZw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, origin]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布与英特尔深化Azure合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-microsoft-180
+  date: 2026-11-17
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft Ignite 2026: Empowering human ambition, intelligence and trust"
+  quote: "Microsoft Ignite 2026: Empowering human ambition, intelligence and trust"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitwFBVV95cUxOakRna3VBWlppLWRvYXltZXdkcTRaa19FcE4yb2lqMm5YQkQwd3BVQ1MzamJDaHlXcDN4aGQ3M1VqTnBUMUhtZTJKdGxDaExfelRZTVVwZFJwSVl0cHBYY0NPdVpnOFVJV1paOHhNX3MtLTV1a1BudUtLVFlIVVZBdE9qQ1NWZTluU3BYLVAtS3YwX3E4andhS3ZpcE83dFdDY1lIVS1kazZJYTRPaDNFWXA0TGloOFU?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):官方重大发布会，旗舰产品与战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-181
+  date: 2026-11-18
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Building Kuwait’s AI-Powered Gateway to the World"
+  quote: "Building Kuwait’s AI-Powered Gateway to the World"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxQVGtrZGZmeWdncGdIamI3WUhuUjRtZTdxdVV0ZkJLMlplLVRJUmJpMUF5WTh2RzFuUHpSdFhVclRfT0EyRjNrZjI5TDBtcExxY0NYTjBBYXB5OXpHTEs4YUt6b29vWHBPZ0UyQTVBS1h5M1V1VTRvcXFKQTNWdlRNMVJJMHdDSHZBUU05TjhGZklqNi1jS3FycDF0Tmc?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):官方重大海外AI基建合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-microsoft-182
+  date: 2026-11-16
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "一次普通配置改动，让微软 365 瘫痪 9 小时，全球办公集体卡壳"
+  quote: "一次普通配置改动，让微软 365 瘫痪 9 小时，全球办公集体卡壳"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBTWXB5bl91NVFESi03NWxvcXhNRDVhcVlHYzc2U2t3Nm0yVFoyUFQ1eEVyeVFETHdJMDVCckY0X1BxZkhDM29mOXdZR2VpcFJoSVpiLVdMeWJ2VWw1?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):大规模服务中断事故。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-microsoft-183
+  date: 2026-11-19
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "微软拟同字节跳动达成人工智能服务协议 美国众议院要求说明"
+  quote: "微软拟同字节跳动达成人工智能服务协议 美国众议院要求说明"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxORENCT3Fhb2pQSHJwQWVURUw3WDZJaW5DcnlQZjUtQzZqaENDUVVkcVQ2MEJYa1hmRVhBa2NJN3M5N2dvWmVIb2hTUGYtaGtJY21ULS1zS1JmUldPOUZ1SUZkQzdodThrV09hMzFUckduMkpQLVV3NlV3V2Y2VmFJNVAwdVEtZnViOEc4TlZ4b2Y0UFVNM1pIRkpPODcySWc?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):AI合作遭国会质询，涉监管压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-184
+  date: 2026-11-18
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Jev再被狙击！微软新决策模型来了，速度快2倍，准确率登顶"
+  quote: "Jev再被狙击！微软新决策模型来了，速度快2倍，准确率登顶"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaG5EeUFvYkphcmJ3RWp1bTNLNVdXa01uY3lHZFZVa2VtaHlXcEo2bnFPUUlISWtUYkRueWNlOURBRkRUcWlhYnVTOXRpWE92bXRwd0NnRTM2a3FESzF0M2VVZTBlNm94QjB5T25wS24zNUEtdURma1dZVnhWRFc5ZjdGWHFZU1Y0?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):新决策模型发布，性能领先。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

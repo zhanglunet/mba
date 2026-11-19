@@ -1322,3 +1322,49 @@
   source_type: media
   note: "LLM 预分类建议(high):财报董事会公告，财报前重要节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-13-meituan-086
+  date: 2026-11-13
+  dim: W6
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "2027美团洗浴指南：南北洗浴“比学赶超”，暖经济闯出四季大市场"
+  quote: "2027美团洗浴指南：南北洗浴“比学赶超”，暖经济闯出四季大市场"
+  quote_type: title
+  url: https://about.meituan.com/news#NN261114290001158
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, category]
+  source_type: official
+  note: "LLM 预分类建议(med):官方业务指南发布，轻度正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-meituan-087
+  date: 2026-11-18
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团“无人机外卖”加速出海，索降版航线落地迪拜"
+  quote: "美团“无人机外卖”加速出海，索降版航线落地迪拜"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE11R3BzTFVrRFZZOHU3QnNud2Y5TkYzbHRrNV9RVGpEeVFuMjgzZU9ETkUyODRHUy1zaDdLNVlCdExqMlFyUFlJTEI0djhzRC1JRTlCbVdIRy1RUQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):无人机出海落地迪拜，显著业务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-meituan-088
+  date: 2026-11-17
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "北京试点“红灯停表”，外卖骑手怎么说"
+  quote: "北京试点“红灯停表”，外卖骑手怎么说"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aWTZleXJYWnhGU3ljR2paNWpOVVRCOVlxMTQ1aE1XM1hTcUpoYlRYOGNQb0k4cVh6aElOM2VmLUMxMkI1VldhU3dqcll1czJ3bTFGNTk1V2U5UQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):骑手相关试点，涉劳动议题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

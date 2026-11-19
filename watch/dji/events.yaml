@@ -1072,3 +1072,64 @@
   source_type: media
   note: "LLM 预分类建议(med):新公司布局，战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-18-dji-070
+  date: 2026-11-18
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "大疆产品今起正式涨价，最高涨560元！网友：还好双十一买了"
+  quote: "大疆产品今起正式涨价，最高涨560元！网友：还好双十一买了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jc1diUjRnMVBRa2gyREM2Q1Z0NllDMVVPb2VTZGlFV3JVc0JZRGdZcFl4SnRyQUttT0xXWDEtWEZMTGNHVUJYQk1qVlNNNW1QcU5DRDhlelkxQQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):正式调价，价格舆情显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-dji-071
+  date: 2026-11-18
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "大疆，今起涨价"
+  quote: "大疆，今起涨价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lVEQtNklkZWxVY2RERUxua3lpNjZDN0tMZDNpRUdtZk9KQjZRbDBjTGtrWjJueVVQMkZLY0NvZ0wtWjlodko1QmUxNzA4Q0I1MlFSaUxB?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):品牌正式调价，属实质商业事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-dji-072
+  date: 2026-11-17
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "大疆多款产品“如期”涨价：涉Osmo Pocket 4/4P/Nano，最高涨560元"
+  quote: "大疆多款产品“如期”涨价：涉Osmo Pocket 4/4P/Nano，最高涨560元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9mY2lfR2MtZFNtWFo0enRQQ3I4SHIyQS1COVVkSnVzVVRfbnVxS2ppQ3BlLUVIMC1OWGtBd3dZekE0QkJzRmhsMXE5WUE?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):多产品涨价具体信息最全，保留为代表。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-dji-073
+  date: 2026-11-16
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "无人机龙头切入储能后还要造电芯？大疆注册了一家“电池公司”"
+  quote: "无人机龙头切入储能后还要造电芯？大疆注册了一家“电池公司”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBsTGF4OE5RdHdpdVFuVnJWUlp0dlhWdjhfR1hVMUVkMjJZekpzdDZTQmVYRU56OWtxaTNyaWNyX2h3MDdTTEQ5cVpxa2JyM1dVRHpDWGZHQ3FWWldfWWpQaQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):新业务布局信号，涉战略延伸。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

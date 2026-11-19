@@ -2225,3 +2225,64 @@
   source_type: media
   note: "LLM 预分类建议(high):含具体限额细节，服务策略调整实质事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-17-deepseek-146
+  date: 2026-11-17
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "下午察：中国AI大模型经历“至暗时刻”？"
+  quote: "下午察：中国AI大模型经历“至暗时刻”？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFBfeHhXVXEyUXAxeXR1SGNvMG9aVnIyWHBFSWpxTnJ4eTc5UlpVclFaUnoxTXhDLWhsNHMyRHhsVHdZOU9VVlZXMHZ5M3RIOC1FOWNyTzFpUWZubzZyY0xyMllPT3pTaWVEVU9J?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):行业至暗时刻论述涉DeepSeek，属舆情信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-deepseek-147
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek限额了"
+  quote: "DeepSeek限额了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxOT2k2UHJ2d2U2anJ5TTFTVnBZYVB1YlBqZGRXQ1V4TTZrRVJ4eHQ5a1JKNFc4TW5mZGs1QkdtOXdXMTJtUlNHQmpCUnhoSGF3QUMydWZheXBYU25yNzRyOHg5WldjOFQzLUU0OEw1SDRqbURaUk51dWxjVXcwMTYzdDNtb0NWWnJV?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):限额事件涉服务限制，信息量偏少但属实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-deepseek-148
+  date: 2026-11-16
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek算力不足提示限额使用 引免费模式可持续性疑虑"
+  quote: "DeepSeek算力不足提示限额使用 引免费模式可持续性疑虑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE9nMGNPOFM4Z0x3MVY4aEdleVV1ZUFzMURqcWtoR1lpbjFzM1J1Nm9xdmxFTjNWZWNzQkZ0eDBHbVNEOUFZZm16dHdSS1RyT0UtOVI5NkttdHhyR3dpeUlTNGZscFFSUmlH?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):算力不足限额引发免费模式质疑，显性舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-deepseek-149
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek开始限制使用"
+  quote: "DeepSeek开始限制使用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9wTGVEMXhTd3VjLWY2MWNMN2dBaEJCQndxc1V6MDNlYk9HZGU3eXNHZFg3akZNTjRGU1Fzei1tWVRWQmtQX2d2U09YRGI?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):服务使用限制属显著运营事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

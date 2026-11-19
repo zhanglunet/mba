@@ -2717,3 +2717,109 @@
   source_type: media
   note: "LLM 预分类建议(high):财报发布涉及关键数字，触发P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-18-nvidia-179
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA RTX Spark Compact Desktops Out Now"
+  quote: "NVIDIA RTX Spark Compact Desktops Out Now"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE9wLTQ0TXQ3UWpsQkx5MHNhRnhQdXJZbnFuUnNVcGZabU9fdDA5NXFfSHc0QmxOaTZaTmp1dG9QZTJpaVlrNEJyV0M5MFl3UUR6UHN2NmlGMmlqb1VFaWhIS2VORVVLNE5MLUVRRVlQaU1lUTFjdE5YWjJIbw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(med):产品上市但非旗舰发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-nvidia-180
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "CUDA at 20: How the Platform Transformed Scientific Computing"
+  quote: "CUDA at 20: How the Platform Transformed Scientific Computing"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE0zY25BVU12bGFOUEw5SjctYU1fN3A0WmhvMWNKM0ExVVNiN3Q4Yi1vSW9fXzBTeTRBRXZScEZDMVVINEx2ZEh6a25JUzZMZWxoa0ZKT3FKSQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [origin, leverage, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):官方回顾CUDA二十年，品牌叙事事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-nvidia-181
+  date: 2026-11-17
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达空头大赚超240亿美元，特朗普、索罗斯等财团高位密集减持，散户却持续抄底，为何散户往往后知后觉？"
+  quote: "英伟达空头大赚超240亿美元，特朗普、索罗斯等财团高位密集减持，散户却持续抄底，为何散户往往后知后觉？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE92azNqa1paSncwNUdBdXkwdVI1dlpCR2RHSDVMRXVLZDF5YUVvV3ZlcnhaU0k4WHJsVHZ6dkIyOVFTQjhBbTFTenZwV3lPZVRLZmxBRE0tMXZrX3hZVGww?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):空头获利与减持属市场情绪信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-nvidia-182
+  date: 2026-11-17
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达史上首次单季营收突破千亿美元，数据中心收入占比约九成，AI 算力需求还能支撑英伟达增长多久？"
+  quote: "英伟达史上首次单季营收突破千亿美元，数据中心收入占比约九成，AI 算力需求还能支撑英伟达增长多久？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9yZVVwSUd1R2x5X05JaUhYVmVleWNzQlB0aW9yVFVEVWluY0xOTm5uWEFzbjlxcDdtU2d1dFVCd0VnNUlaYzQwblZVREt6dWZMVENzSUNjcldndHNqZzBj?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):财报关键数字公布，单季破千亿。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-nvidia-183
+  date: 2026-11-18
+  dim: W5
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "NVIDIA 发布 2027 财年第三季度财务报告"
+  quote: "NVIDIA 发布 2027 财年第三季度财务报告"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxPTndmVGJCamV2cmc4dGpBenlLc3Rpc2ljZ180QVdMOFJDT1pfS2ozSXJNRm1jXzRvNG01bVhhSllIMzVXWTB0X043aVVFWE01WUdoLXotaXNzcm12Wl9YMnZ4aHVmdGFmbXM0MmJjS2xMck9SSkJJQ0pEY1pUQXU5dXZudVd2bWQ3ejJIaWs2c0hCNS1YX2w3N0dB?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布，属P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-nvidia-184
+  date: 2026-11-18
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达称已停止向中国供应Hopper高端芯片"
+  quote: "英伟达称已停止向中国供应Hopper高端芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwJBVV95cUxPMm5wQmduVFJlQmFsR3lNRy1qUUFUVzhZUmp3blNDd2dTRC1HWk1OOUdXU2NfSEhrdkxOOVAwVGdFYmd4bzFGdmFGcm95S3pZWjMzSGo3Z0F5NjFNTzROVF9JTFo2S2dBa3FvcTUtRVhmdmRoUXVCSzZuZE55d2podjgxVjl0UzdFcDdFZEhCc1J3VU9JVERDa3JqVWtTcDVFVHgzUld5Y2RiRmVKMmdmNDFMdDl5LThvNzZUT2ZOOHUxRW5YaEo4VzVtN0RrVUJ3SVdwY2tlNkRrd05nazBQVFZEYnQ2SV9oaE9uYmpFNV93dDBkdkpRYy1GNWxQcmRsQ1hoZ1YzNjZkUUQyaUd1ZlVNY2ZqcGpmT3didXFUaDFtRzgtajlN?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):对华供应受限，重大业务风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-nvidia-185
+  date: 2026-11-18
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "NVDA董事会雇的猎头，已经与ARM公司CEO接洽，在谈接替黄的可能性"
+  quote: "NVDA董事会雇的猎头，已经与ARM公司CEO接洽，在谈接替黄的可能性"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qRUpqZXhfelpUSU1TR2lhbElJN2hTdWtNMjJLQWdvZzI1ZEoyaEk1aGswWGpmaWlCa2EzVzYtU2ZsYnhydU9mVk1MMm51S3d0Z28ybXJIS0o1YzZ1cnZ1WjRsZw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):核心高管继任传闻，尚属传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
