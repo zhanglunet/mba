@@ -2539,3 +2539,124 @@
   source_type: media
   note: "LLM 预分类建议(high):费用上调影响卖家，负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-18-amazon-167
+  date: 2026-11-18
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How Amazon MGM Studios is delivering more films, more investment, and more ways to watch"
+  quote: "How Amazon MGM Studios is delivering more films, more investment, and more ways to watch"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOWFNyaEE1N0hSZE9kQnZiUjlST0haaGNiUGZDRlJJRmgxUzhkV1NLMklTdG9GQ1RCNnk3eUxDZTNOSXpTMHBGZFZ4bDZaNW44X08welY2LWVXMVNFanBfU0R0UThYOWFzcEpVdDFRWDZIVXR5RUhsVDZLOEFTRF9BMkVqeG12REtndmpnag?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):影业业务扩张战略，品牌延伸。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-168
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "帕丁森成为新邦德，选角公布后还有哪些问题没答案"
+  quote: "帕丁森成为新邦德，选角公布后还有哪些问题没答案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1PaC0tc0lZdU5KamxxUTNNWjJNZjdVOGZyaThWSE5mYUZaWnpfN2ttZ2lfejBqeDY5LXdSQWFMXzFzTnFoT3g2TVlIcGxIU3ZSbGttbEtVMlhEcjBK?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):亚马逊掌控邦德选角引发关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-amazon-169
+  date: 2026-11-17
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "反超谷歌王牌模型！决策新王拿下全球榜首，全尺寸开源"
+  quote: "反超谷歌王牌模型！决策新王拿下全球榜首，全尺寸开源"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE40NmY1RksyZGpPZ0JteV9OUlVqZWZXbm1mR2duSTRBWFJNNWJ0NWZZS01SSVZjMmt0MlppUlVRcjVRX3liM2UwdnFPZi1VeHhVdlc5enNvVERsemV2?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Nova模型登榜首并开源，非官方转述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-amazon-170
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Nunn与亚马逊广告达成合作，强化AI营销"
+  quote: "Nunn与亚马逊广告达成合作，强化AI营销"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5XR1JTcVhSNFppb1JBQ1pUT1FTSDlvWmR3a18tbDJiaGtIMWNpemZWUmNudHZBX2ZCT0FQWUFSeWJvV1RremZ2Um45Skt3OExWbVRDZFk0aXI2c0VhSmxv?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):广告业务合作，实质性一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-amazon-171
+  date: 2026-11-18
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊计划到2030年在印度投资70亿美元 用于可再生能源"
+  quote: "亚马逊计划到2030年在印度投资70亿美元 用于可再生能源"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zNXF3SHM3cEtTYVpIUUY0a3MyTXhpaGlneTVDQU9xYklSMGhLaFlXMDRYd2JyRWEwb2RCV2c3dEJVSmZWVUYtOTJxZFppVEl1bVpIWmhJV2JWczZnNUdhTw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):重大投资计划但尚未完成落地。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-amazon-172
+  date: 2026-11-17
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI攻防进入分钟级对决：亚马逊云科技推Amazon Continuum重构安全响应范式"
+  quote: "AI攻防进入分钟级对决：亚马逊云科技推Amazon Continuum重构安全响应范式"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBoYUUyMzBSeGlJb0RLWnZQc0tFU0p1Qi1CeG44UncxQ0NzRjBRYjlXQl9PSUFMcXJIRDg4czBDVW8tdUNiazkzNzJLeDBvRmZkSHVSZ3piXy1wSDNvWHc?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS安全产品重大发布，但媒体转述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-amazon-173
+  date: 2026-11-16
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊生鲜免运费标准提高，150元以下要收费"
+  quote: "亚马逊生鲜免运费标准提高，150元以下要收费"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTkxwQlMtV2xWT05tN0JxNUMyc01sWVcyZ0pGbkZNTDZUal90bndmaGlPZzY5WmpkRlNkZ0RDZTd5NEhXLUZub1hTV2wtcFJ6T295RU5pRHU2OFZjQnN5NnNDU3JtT09sQ3JsR2FjcC1EZG5tSHlZV0N0Q0l4Z191V1E4d1hQXzJU?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):免运费标准上调，影响消费者体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-amazon-174
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊 Alexa Tablet 8 评测——这款价格低廉的迷你安卓平板确实与众不同"
+  quote: "亚马逊 Alexa Tablet 8 评测——这款价格低廉的迷你安卓平板确实与众不同"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTFBfai0tUTgyZ2VCQjA5dFF2Q1JBckhUazd1c3A4YWVOdG8wdVhXdmczWjdRMmMtSmUxQktpdTYtWlNjd1pmcDV2T2VtZnNRTDVveHlXa0NiQjRJMzVxX0ZVVV9yLXl5c3RoMVFpd09Ibw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):新品评测，有实质产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

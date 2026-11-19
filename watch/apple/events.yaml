@@ -3111,3 +3111,109 @@
   source_type: media
   note: "LLM 预分类建议(med):国行Apple智能落地，显著进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-16-apple-205
+  date: 2026-11-16
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果“回家”：一场迟到的智能家居补课"
+  quote: "苹果“回家”：一场迟到的智能家居补课"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9SOXgzWDVvV3MzcmtTQlFfQjdKU3F2TXNDblVUQXZhNnpXQXdnZmd3clhGcFYxQUpaVms0MDRNT00zd2JaUWsxUUp3R1lwd1R0RE5xb2thOUI1TlpI?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):智能家居战略评论，有一定信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-apple-206
+  date: 2026-11-18
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果服务中断波及iCloud和Apple Pay，美国科技故障频发引关注 提供者 Investing.com"
+  quote: "苹果服务中断波及iCloud和Apple Pay，美国科技故障频发引关注 提供者 Investing.com"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBzclNzdGZ4Mlc2aXJxcl9tbjdESjNfM3BuSjF0dElvaXBkaVBDTWtJZTVSeHIyMV9jblpNZXFZQXFSbWh5YXVJRTcwa3RMRDJOTWlGanYwM2VoT0MzbjY0a2d3UW4xNUtkdG1ockpLSmo?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):服务中断波及核心服务，负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-apple-207
+  date: 2026-11-18
+  dim: W6
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "突发！苹果全美50州大宕机：iCloud、Apple Pay集体瘫痪；Zoom也遭网络攻击（美中报导）"
+  quote: "突发！苹果全美50州大宕机：iCloud、Apple Pay集体瘫痪；Zoom也遭网络攻击（美中报导）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijgFBVV95cUxOUXlCWEd5aWdQZUxONktndnhtWVo4eVZsc214Z0k3MUJPeHlJczJyUHIzRDVnOE5VTThwazhBb2lUM3RBZVFtbFhrOVJWSDUyZDRTeWduT1g1WlA0TWRERF95ZjF1Tmw0WFAtMzNEYV93VndZb3NkbDNXUXF3RlppUlM0d2NYWlhvRUtvSU5B?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):全美大规模宕机，重大服务中断。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-apple-208
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果把视频播客搬进 Apple TV:不买内容、不谈独家,靠10亿设备抢大屏"
+  quote: "苹果把视频播客搬进 Apple TV:不买内容、不谈独家,靠10亿设备抢大屏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE1Wakk4ZHIzQlpCUXpuWkRWcGZsd2lackM4SlY5U2NMUVhTblI5RmxtbDhuZkxsVjRkamllU09oTWUtcDN3amNFYmdlUUZWdU1QejlSemhJbmlBbU5PY0JjVnJiamdNQjRjU21r?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(med):Apple TV新业务布局，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-apple-209
+  date: 2026-11-16
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "国行iPad/Mac能用上AI了！iPadOS/macOS 27.3测试版上线Apple智能"
+  quote: "国行iPad/Mac能用上AI了！iPadOS/macOS 27.3测试版上线Apple智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DT1N5MGtiVlE1VE5hVl96M1d2NzRDSGprWWllc3VCT01iY3JkUWwyODNYSFlxQkRkQnZXT2NRWWxoenB6ZmN3TTd2WF93NTdlUHk4cV9GY2M?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):国行Apple智能落地测试版，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-apple-210
+  date: 2026-11-18
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "从英伟达(Nvidia)到苹果(Apple)，美企面临在华业务困境"
+  quote: "从英伟达(Nvidia)到苹果(Apple)，美企面临在华业务困境"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgJBVV95cUxNZUV2YTEyc3NsNVY3YWoxeXRaYlJ0MTFVd3p0cmpZVFJMcjZ3OTZxU0c3YjRzdmt2MnhyUDJPeUR5UmY3c0U3REE0LWU5RTl5bGpOS0c2bEhJZ0h6NGdnbW51XzBOanR4d1hWcW9NckR3NVVrZmNGVDFKNkdDaExWY1dEeTZRdmphRDQ2TWQ0SG0zZXNjRHd5S1UxVFQ3dGpFOGZ6eHhYRDFzZWRWSDZERUZiMU1iYVl4NUpXNHNzSnprSmdFdl8xVEw3azlQTG9SOUpMUV9GUldlVnd1MjdxRDNVY1dDaFRqZzRfVE10M2N0ZTlHY1BSZDlwUWV4eDktdlhFSVJiRE9oMlUxTmoxb1NON0xaWW5ISTBfV2c0ajU1dVp4YnZYUVhuUVNhbjNLVHc?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):苹果在华业务困境，宏观但涉品牌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-apple-211
+  date: 2026-11-16
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果高管科里·富格曼将领导Apple Pay和钱包业务 接替即将退休的詹妮弗·贝利"
+  quote: "苹果高管科里·富格曼将领导Apple Pay和钱包业务 接替即将退休的詹妮弗·贝利"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE4tcVNIclJDNENYNHpxbHdWLTRXY1h0ZV9tV3JKZWZOR2lueUJrUTdoWHAtVXdXZ3BRWjlRWkY4aUxLTW92R2EwUkhVMHc5dWIyOGZiZmRLTE80eXdudGdUTm1yQQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):核心业务高管更替。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

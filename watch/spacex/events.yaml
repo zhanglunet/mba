@@ -2999,3 +2999,124 @@
   source_type: media
   note: "LLM 预分类建议(med):400亿债务融资启动，金额明确但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-18-spacex-197
+  date: 2026-11-18
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX向美国电信三巨头发起挑战 拟自建地面网络 与卫星网络互补"
+  quote: "SpaceX向美国电信三巨头发起挑战 拟自建地面网络 与卫星网络互补"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBGczR0M3pVb192R09LaEdJbzZiX0FGa3dsb2RPMEpmaFM5V216TzQ1WTRKeE5CTHlQak9GclFINk5sTkpEMU14UA?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):拟自建地面网络挑战运营商，业务扩张信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-198
+  date: 2026-11-19
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX 400亿美元GPU融资安排表外操作，最快本周向投资者发售"
+  quote: "SpaceX 400亿美元GPU融资安排表外操作，最快本周向投资者发售"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTFBkZUFDNklyazJLTmIzX19CVW1kQ2wxTlNPbHVZSFdOZVdCMzBCN21JcWtDblVzZ0dyeEc3T3NuZmhwUEIzMm9raG82N3RnYnNlY0xJbk9KRkU?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):400亿美元GPU融资，金额明确重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-199
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克称Anthropic极可能继续租用SpaceX算力并大幅增加"
+  quote: "马斯克称Anthropic极可能继续租用SpaceX算力并大幅增加"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE0wbWJWbDZRVDFnMmZoZWl0UEEwcnR0UEtsMzUzR1k2c1h1eTdZTi1jUjVQSlJfdUNSVTU3N05QOXJSUndwNGJoWERaalRkWlg4RXVlQ2picnpxSk92ZlJCLThR?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):大客户算力合作表态，业务利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-200
+  date: 2026-11-19
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "马斯克“怒怼”奥尔特曼：SpaceX预计不会从OpenAI处获得任何收入"
+  quote: "马斯克“怒怼”奥尔特曼：SpaceX预计不会从OpenAI处获得任何收入"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aWGx1LXlyYXowaURfRmQwUmZlMGFoMFVDbTJjZ2JsX3NtdXRTaEJONF9VTnFWQ0xVSmRYUjFmRmxKMXBLZ0NxX1ZKUDU?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):高管公开冲突言论，涉收入预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-spacex-201
+  date: 2026-11-18
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX挑战星舰“双回收”完成一半：二级飞船首次被“筷子”接住"
+  quote: "SpaceX挑战星舰“双回收”完成一半：二级飞船首次被“筷子”接住"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5XTW81emRVb3BpQVB3OW1yMVBFV3RfOWc3aEczRDdGUzk4cVgydjVxMXBrSFExVkpRVWtWa1p6U0QtSWt0XzM4ME1YR3o1Uk5ETTlJ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰重大技术里程碑，筷子回收成功。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-spacex-202
+  date: 2026-11-18
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI抛售潮里，SpaceX凭什么扛住了？"
+  quote: "AI抛售潮里，SpaceX凭什么扛住了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9UeVNRR1g5d284bUY5WGdBTmI0NXRnSzllY0ZvTDZjWTdzTDRtUnBZRW1BdVlpYS05enhoNHBtdXNLSDVxRTBBanRhYndjN1ZOaWxn?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):市场韧性分析，涉品牌估值表现。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-spacex-203
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克称预计SpaceX不会向OpenAI出售任何算力；机器人独角兽Genesis完成5亿美元A轮融资｜数智早参"
+  quote: "马斯克称预计SpaceX不会向OpenAI出售任何算力；机器人独角兽Genesis完成5亿美元A轮融资｜数智早参"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE83Rk5FOENlMG9YT2tFRjV6V0dRbDdOWS1pMjdhQkI5TjRibHJQQlZtblF5bXJpWWZJMDhaTkdITVNQRnMwZ3NqM0s3UGlNN3VWX0tjWmZ4UXRtSGo5U1B0R3YwNGt2dw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):马斯克表态算力出售计划，有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-spacex-204
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "摩根士丹利表示：SpaceX或将与AI板块行情走势脱钩"
+  quote: "摩根士丹利表示：SpaceX或将与AI板块行情走势脱钩"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE5vN0ZwdVdXeV95eWhMZUhkUV9GUUVyUWQyZVZYYzhwQnlEb3RYZEI4Qmp0X3BWc1VfQ3hsZG5hMk41QndnNk9qRGthd1JVTS1lZUo5OGpNU0tRSlFOd2gzUlNFbw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):大行观点涉品牌估值走向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

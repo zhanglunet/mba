@@ -1515,3 +1515,19 @@
   source_type: media
   note: "LLM 预分类建议(high):全球PC平板份额登顶，重大成绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-18-lenovo-099
+  date: 2026-11-18
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "【联想携手南宁轨道科创共筑“AI+轨道交通”新范式】PjTime.COM 财经新闻联想"
+  quote: "【联想携手南宁轨道科创共筑“AI+轨道交通”新范式】PjTime.COM 财经新闻联想"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NTW5zZGdLMkpBWFZJVjhkZGU2NE5LZVExQ09sWnVPTXFaTnFuMS1USThidXhRaFVIMUUtOGhLTzBySEdDRktkQUlLd3dLYzNfRmFGLXZFQlRuWXNX?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):行业合作落地，具实质信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

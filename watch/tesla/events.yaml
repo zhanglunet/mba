@@ -2552,3 +2552,79 @@
   source_type: media
   note: "LLM 预分类建议(high):重大投资扩建计划，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-18-tesla-168
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉欧洲版FSD再加安全限制：时速超过130公里必须手握方向盘"
+  quote: "特斯拉欧洲版FSD再加安全限制：时速超过130公里必须手握方向盘"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTFBUMWhTQWtjWTJZUEJ5bkk1azE4TVhWZFRCcU5FWHl2NW1GaWNTckx6MmRWcEkzR1gtR19nTVZic0phRWg0QlhPeFJ4dUVKbTVzUGFTSnhJZ0JHU2FoQ3VUcjJtUDFyM2g1dUN4WWhfUXBnT0hBNFl3aHlzcndFQQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD欧洲新增安全限制，产品合规调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-tesla-169
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉发布7.4兆瓦Powercore 对标前高管Baglino的Heron Link-能源电力"
+  quote: "特斯拉发布7.4兆瓦Powercore 对标前高管Baglino的Heron Link-能源电力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE11Y0tvdHdfN2dRZkRQd2RNTVJJTFZPNHZTWDhjYTlnQ2lXeVo0ZlZWd3Boako0cFlLM0lzWTdoUmhrTkdPNi1EUEpqRV9nNmFYeFoySFUtY3BZenR2bW1DZXNoTQ?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):发布Powercore进军储能硬件，含竞对叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-tesla-170
+  date: 2026-11-18
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉计划斥资30亿欧元扩建德国工厂，Cybercab年产量最高可达100万辆"
+  quote: "特斯拉计划斥资30亿欧元扩建德国工厂，Cybercab年产量最高可达100万辆"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE55S2NxSGQ5Zk1pNzJHejlPblpONDlIWktLV2FIYmtTaW1scU04YlFpQ0FkSVB3eFJPV3RITzBrRDl2bnVtZWRqSjFscEdlR0J6cmMxaGM0RUtuYjFZY01uc3dHZGd0ZjJ2N1ZtUjdrRmk?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):30亿欧元扩厂重大投资计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-tesla-171
+  date: 2026-11-18
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Tesla Enters Grid Hardware: Musk Touts “Solid State Transformers at Scale” From 2027"
+  quote: "Tesla Enters Grid Hardware: Musk Touts “Solid State Transformers at Scale” From 2027"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirwFBVV95cUxObGlrOTh4WDVHMVcweGFxWU1ZRGFiRkwwMEFONDJCMl9WN3dfUU5IcWJKd3ZhZXhNcHp2d0FObGM2dGVqaWt5VmNJZkJlX2J4SEdic2U5Xy15SFFKLVd5OVpuMDBCZ2JUWExKVGhHZHduX2JqVm8xTTE5dk1zZkw5QmdiV0JEak5XakpXZFdsc2xzWHhKNEgwSjR5ejk2SlJKdDBpeTlRaUpCbFUxci1V?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):进军电网硬件，重大新品类布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-tesla-172
+  date: 2026-11-18
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉HW4欧洲版智驾新规：超130km/h须手握方向盘"
+  quote: "特斯拉HW4欧洲版智驾新规：超130km/h须手握方向盘"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Ia0NzdDVKS2pKa3FFZ2VNUlBEdnVkSDc2bUxwVG5sQXJISTNjVzI2bmRrdGZmSlN0YmdrYnJuQUpuNVV0dnJrMFpQYWRjeVlocXRCcDRRd3pDMEE?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):欧洲监管限制特斯拉智驾功能。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

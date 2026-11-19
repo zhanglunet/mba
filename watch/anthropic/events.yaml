@@ -3488,3 +3488,139 @@
   source_type: media
   note: "LLM 预分类建议(high):Salesforce合作加码企业AI。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-18-anthropic-229
+  date: 2026-11-18
+  dim: W7
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic prices initial public offering"
+  quote: "Anthropic prices initial public offering"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE0wb1JNWEpudjJCR014ZnpEdkQ1MUFXOTZsRV9sU2wxclptYmRMVjY3d2R3bWJ2U2ZXdlktS1lNVE45b2NrVkY4aERJOXRJVkpRdy1kd2tRek52UG8wcXUwUEQwaUlEM0p1aE9YRlRvbnkyZVJUSmFLcWhFOA?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):官方IPO定价，重大资本事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-anthropic-230
+  date: 2026-11-18
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic上市前夕，OpenAI发布GPT-6.2：成本大降，3D能力再突破"
+  quote: "Anthropic上市前夕，OpenAI发布GPT-6.2：成本大降，3D能力再突破"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1SUFRiOWdWSnJPOEdjSkdzSDU4OENUMmxHQzhYek5yQlg1Y2Y4cGQyYkMwXzYxNGRiOGFfNW00Zk94dG5XN2RPZDdwS3luVHl6c1lRVEZZYk5aUGtY?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):竞品重大发布且涉Anthropic上市节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-anthropic-231
+  date: 2026-11-18
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic称Claude仅用3天完成AMD GPU适配，CUDA生态护城河是否终结？"
+  quote: "Anthropic称Claude仅用3天完成AMD GPU适配，CUDA生态护城河是否终结？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1FcnVrcWFXa0l1c0R5TW1VVmUzd0ZJY3hWbzJmQzRDTnBoTm1qMTE0T2N2WllPX0JHc0R5TlJraGVLMkJrWGEwS2pNX1c2eW1ld0V6alkxbWsyQXNp?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude跨硬件适配，技术生态进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-anthropic-232
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI新模型高调对标Anthropic，主打性价比优势"
+  quote: "OpenAI新模型高调对标Anthropic，主打性价比优势"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBEenRuNGZ0TllqdnR0UWlYMkpfZkFpZllCWklrcUxyMzljS1dRTXFpOVVmSnB0WWhxQ3p2RUhyejFIbjBzUFplWXcwMHdLSDhpYWJV?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):竞品直接对标，竞争压力事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-anthropic-233
+  date: 2026-11-18
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "加里·马库斯看空Anthropic：1.4万亿估值撑不起一张万亿账单-智能经济"
+  quote: "加里·马库斯看空Anthropic：1.4万亿估值撑不起一张万亿账单-智能经济"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE9uR0tBRFl0SzVITVBmNlNhLWxlQzlrMmNBa0FWdFcyWW1fT1JwTF9lU3dlcmU5UC1VcnVETlh4RFRQdVBsTjUyS1JOMXJCcWc0RGxab29hY0ZwRDlKcV91OVp3aFpvSkFx?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):知名人士公开质疑估值，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-anthropic-234
+  date: 2026-11-17
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "GPT-6.2Astra与Sol突袭发布，OpenAI狙击Anthropic上市日，任务成本仅为Claude的5%"
+  quote: "GPT-6.2Astra与Sol突袭发布，OpenAI狙击Anthropic上市日，任务成本仅为Claude的5%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VUmpBSWw4d0lHWGc3UmdtWXRXalhQQktCVEpQX0dFWi1hU2dxRk1kT0RqN3NNQmx0RGpqMUFFMFhOUG9JZ2hpblhGNWFHdw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):竞品发布冲击Anthropic上市节点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-anthropic-235
+  date: 2026-11-18
+  dim: W1
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic带着1040亿美元亏损登陆纳斯达克，几乎全是账面亏损"
+  quote: "Anthropic带着1040亿美元亏损登陆纳斯达克，几乎全是账面亏损"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikwFBVV95cUxQZ1p0cTgzaTVnWmtzZUtjcWV6X3VGMXV2U1RKRjVvTVJiWmtTb01oZTBqQ3hjRnI0UDJHYjRPeEVNR196RjB0YlplX3Vob0FoMVVkVWwwNTlocU82aG1ER3ptNGRfN2oySmJQWDdEbGw1WjhzcXNXN1RiS2d4UEgxVUFhWWlMNnU1UnBxcjhMNnRPb2s?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO完成且财务数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-anthropic-236
+  date: 2026-11-17
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic 11月19日IPO：投资者在纳斯达克首秀前需要了解什么？"
+  quote: "Anthropic 11月19日IPO：投资者在纳斯达克首秀前需要了解什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSWpEM0tsREQydm5zSWVwUHVHcV84cGoxN091bE5TRkxfclRfOUJMWW1qWUhwSWJxU2ZZVWI5cm1SZWJ4TnBJS2lVaDR6bDVWUGc5TmhjeFVGTWVEQUtDb2lDbnVoLThsdVRUUTRwVlBzS2tMclhYclM2UEVYQlFHYXBvdjhlQ3VZN2tDZnZfWURWOFJtU1c1ejRodXNvWVByWEZ4NFBFMy03NFdXYkdYZXRPU3V6N2w2SHZVLUhGYmc4R1RQZ1dzb216UkVvRVBWTlo0VGlkc1VBNHJH?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO前瞻分析，事件性一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-anthropic-237
+  date: 2026-11-16
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic称，Claude Mythos Preview让一个模型在约3天内运行于AMD MI355X GPU上"
+  quote: "Anthropic称，Claude Mythos Preview让一个模型在约3天内运行于AMD MI355X GPU上"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxOUWVCZy1adUNzamI2QlBmeHROTkhzTFlvQTFDQ1ROVThlN0F3emdJdWlQbWltQk15QTJVNFlidmRYX1Q0aWZaZXNfZDRySTl5YzR0dVJlNG5IRW1YS0JDVkxGRDNHUHlMb25QUG44MUlRRDdNRFVfcW1hQ212bGc4cm1KVDRLQWZzNVRSdGc0X1F3ZWNIR21STk9kYVN0NHM?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):模型跨硬件适配技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

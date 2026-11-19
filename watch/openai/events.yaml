@@ -3449,3 +3449,154 @@
   source_type: media
   note: "LLM 预分类建议(med):核心高管公开表态引发关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-11-19-openai-225
+  date: 2026-11-19
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Research acceleration: The jagged frontier"
+  quote: "Research acceleration: The jagged frontier"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBaWUlLUnMybWl2WE5UeHVkWU9MZUhuZjZoa09ZNHJrV0VfZVlwVVRmQXkzYk83Mk11dWpSYmVlVHRhRU5mRlZFVGNZS04zUmQyZldYdFBhRDJ2dnhxWEhlajdGV0g1OEp5UWhZVWJlRV8?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方研究进展博文，非重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-openai-226
+  date: 2026-11-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Managing frontier AI risk: From training to deployment"
+  quote: "Managing frontier AI risk: From training to deployment"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE45RHJmSHZiNVNSOHgwYTFQNmh3WnlKVGwyRE43R2dWMEF5d2xsTHBqYzdHQllCanRHeTNYTHAyX0FmcTJiT3p1amxoRDVzMTBxemNiSXkxUXJMcDhxUjdCNw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方安全治理阐述，舆情相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-openai-227
+  date: 2026-11-18
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Inside the Codex sandbox"
+  quote: "Inside the Codex sandbox"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE40amtGLVNSQjd3YWcwczVzUGtMdVM3YnlvT1Nlb1haNTRsNnJGb1I5NDJqbHZVWjdsV0FzUUo5SVZPd3ROZ2tudUFqSXBYREFzZHZjVnhsMDBIOUh6QV80?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):Codex技术细节博文，一般事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-openai-228
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Advancing chip design with OpenAI models"
+  quote: "Advancing chip design with OpenAI models"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1RejBWQml3ekRqeU9ieU5OdmN6ZGNMNHd6UkZhcWMzYlRfbEV1Uk1fRlVNZ2pkNXhlR2dJZTVfUEdoSzVaV2ZNQ2JZX05PRnppRm9BY3lYOG1YSTVBYll2bWNLdlNMbFkxRkxHaHh6QjE?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):模型应用案例展示，正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-openai-229
+  date: 2026-11-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT"
+  quote: "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE4wRXpkMG52Qmx5dlo1bEtUM2lwZm5VZlkzNmFOWWJRSHpaWTRkQjJUeElNeWRYU0RyMm5OZXM3UGNOUjNXTXF5YjFsbzNDU05xanp0b0RQb3p2UHlmNFNiaUZYSThmX1JuVDZQSmZqWkpNbzl3djRmYzZPcEdSWHc?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):官方内容合作，生态扩展，非重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-openai-230
+  date: 2026-11-17
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "如何评价OpenAI 发布的 GPT-6.2 Astra 和 GPT-6.2 Sol？"
+  quote: "如何评价OpenAI 发布的 GPT-6.2 Astra 和 GPT-6.2 Sol？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zSEVQUHNxcFZOVU1EVWJfVWZydkFfazJUbUdfaUpnZGZ4NjkxdFBsWFpua2JCSmZYWE5id1VfcUx4bXZMZG5yT29xSkxZaFBXRS1FazJ0UzdGUU11Z1hB?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):主力大模型重大版本发布讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-openai-231
+  date: 2026-11-18
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "加州起诉 OpenAI：智能体失控 80 次"
+  quote: "加州起诉 OpenAI：智能体失控 80 次"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5XeTlfcS1nU2ZHaG5veHRJaEVRTklCZmJCQmhHNjZMWXBodUhLdzRNeGVQZnd5WEthamxpRjZXNU1oMkxkalBYSmxpbThuVm9pZ0piQV9LX3A3UGRk?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):监管诉讼风险，尚未判决故非P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-openai-232
+  date: 2026-11-19
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise"
+  quote: "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE8tZkw1R3BnRHIzRjhnU0FUb3Z6c0tfUzAwSmxZTDdFS0ZaTTg1cU9TNWRDSDZXRzRiYnlhSW95ME51WTBQdXhRSlV0eUdXU0hHWC1fN212d0g4aG1TRE4zb1dvZmhLNzNxSGN3SEJ5dmtDaWNtdUlfY2pR?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):企业客户案例，正面软性但有实质。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-openai-233
+  date: 2026-11-19
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI发布芯片设计最新成果：AMD旗舰GPU PPA最高提升14%|GPT-4o|RISC-V|CPU|ChatGPT|模型_手机新浪网"
+  quote: "OpenAI发布芯片设计最新成果：AMD旗舰GPU PPA最高提升14%|GPT-4o|RISC-V|CPU|ChatGPT|模型_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxNYlF6YnpJY1QzOFpTV0MtSnMtYXFvb0psZndqeFBPZ2traU1PX25KT2NpYVE4ckFiOWdGQlMxd000VW00WldWbHRDRjFxZUM4ZjV1Sk1BQ25TQ2JDNEptdktUaXJsZ2NydGVPUFNxemlEVjA4dk1JSHY3dUhpbEdjTHB2cmQ0eDQ4a0lQbWdUbl9lZw?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):芯片设计成果发布，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-openai-234
+  date: 2026-11-19
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI首款AI硬件或年底启动出货 立讯精密独家承担整机制造"
+  quote: "OpenAI首款AI硬件或年底启动出货 立讯精密独家承担整机制造"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE0xNWdFekRuUU1fUUZ1eXdhenV0bXJUUmdyTXF2M2VTVkZSdjNUaExJZk5FZmJBZ2lkYVlLQm1YWXN5NjJlZnVmX0RZRVVJcXpVU3d1MC11NmhsVHdORGg0dUhR?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):AI硬件出货与独家代工传闻，重大供应链信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2221,3 +2221,109 @@
   source_type: media
   note: "LLM 预分类建议(med):旗舰折叠屏曝光，未正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-16-huawei-146
+  date: 2026-11-16
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "没搞过一天研发的他，50岁以华为董事的身份退休了"
+  quote: "没搞过一天研发的他，50岁以华为董事的身份退休了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mVlgyWUo1QVRRbUh1V2VqMHFIc01WdWhLZzUwNS1xSkFSeVk2SUUzVkFsdFVnbUc0V2hBUVBLcWdxMzctcUJaOEgwUnEwNUFTMTFpTzdQb3ZRMGVp?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [identity, origin]
+  source_type: social
+  note: "LLM 预分类建议(med):华为董事退休，涉及高管变动传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-huawei-147
+  date: 2026-11-17
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "花粉还在等发布会，华为新机OSTA O1 Pro先上架了"
+  quote: "花粉还在等发布会，华为新机OSTA O1 Pro先上架了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFAyZEx6bVlSMzFGRDNJdnRQdFFDc0dWc1ZqZTNvV3BCUy0zbkNaSzQtUW5nX2ZyNGRrSTZHN0JzRDl0VnpMbFBXMHVZN1dTRERTWEs0Wk12WmhzVE9F?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):新机先行上架，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-16-huawei-148
+  date: 2026-11-16
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为Mate X8发布会定档11月24日：更大、更薄、更强"
+  quote: "华为Mate X8发布会定档11月24日：更大、更薄、更强"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5seWtXLS1VZ0p3cVppb3VkaEp6dEhUcTRsQkRpZlI0QWlaY2VMMWZxRzJXRHF2V1AxempqOVFtSi04aGV2T2VjYWJuRnNhRkI1MU56YUpTUGMzN2NS?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰发布会定档，预热事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-huawei-149
+  date: 2026-11-18
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "华为未能在庭审中证明指控 称美国检方给正常商业活动蒙上“阴暗色彩”"
+  quote: "华为未能在庭审中证明指控 称美国检方给正常商业活动蒙上“阴暗色彩”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjQUxoc3IzWGhVT2l5d1NMbExneHhzWmNrak92SjY1NmJManZiUl8wTnJ3dGxhSXlUSlJfVWNTMk15cnJkRTJxRkZmWGNvOWxzX3pKSDh3YVh0VE5PbDZlNA?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):涉美诉讼庭审，判决类事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-huawei-150
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为Mate X8上架预约！"
+  quote: "华为Mate X8上架预约！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPTUZodURPbWE1WU0tLWRpbm02VndmeVZmNWZ2ank3R3lSWlJVcWNlWHZVQ3pfM3h3SG5TVldJUnZKOXNMeF95TWVaLWJ1amtueC1qeThlMTJYNTBTU0NrY2VHREkwZ1htRnotNkk5TmtXYWtzTnBGbHoxTVgxdjBZMA?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰新品上架预约。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-huawei-151
+  date: 2026-11-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为与中国人保签署战略合作协议- 华为企业业务"
+  quote: "华为与中国人保签署战略合作协议- 华为企业业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUGpyVzBPRnl0aGN5SGJHMVpjTmxZSVVTel9BTjFuWmJwMEFGRWtjZkFaU0FLbGsyTGhvNHd0bXVlejZQeG9UWmRkdnZaOW52bnFsSkJTcDNRN0lBaGVrQ0J3V3Bkb1BNcGUwYkJiZ1Q1NWc0Q0o1Q0VsVkJlVlAyeW9oRmgyRGJOcFRz?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):跨行业战略合作，具事件价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-huawei-152
+  date: 2026-11-18
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为Osta O1 Pro外观与配色正式公布新品牌首款机型开启预订- Huawei 华为"
+  quote: "华为Osta O1 Pro外观与配色正式公布新品牌首款机型开启预订- Huawei 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBvZWIxcm5wanRJMWFQeGtMWFU4Q2FNRVVDc09CRTFyU1V1QTAyTzN2bUpZQ2lzUHhoM2Z1OUk0dDVfeEpIWDJUa0xVSURtbGQxeVdBNDNvVEtLNW5JMjJsdg?oc=5
+  fetched_at: "2026-11-19T02:25:45Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新品牌新机发布预订，产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
