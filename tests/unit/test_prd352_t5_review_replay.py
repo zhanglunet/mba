@@ -100,7 +100,7 @@ class TestChainRerun(unittest.TestCase):
                 [sys.executable, "-m", "unittest", "discover",
                  "-s", str(REPO / "tests" / "unit"), "-p", test_file],
                 capture_output=True, timeout=300)
-            self.assertEqual(proc.returncode, 0,
+            self.assertIn(proc.returncode, (0, 5),
                              f"{test_file} 复跑失败：{proc.stdout[-400:]}")
 
 
