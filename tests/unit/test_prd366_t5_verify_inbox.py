@@ -120,8 +120,8 @@ class TestChainRerun(unittest.TestCase):
                           "test_prd366_t3_verify_inbox_gates.py",
                           "test_prd366_t4_verify_inbox_boundary.py"):
             proc = subprocess.run(
-                [sys.executable, "-m", "pytest", "-q",
-                 str(REPO / "tests" / "unit" / test_file)],
+                [sys.executable, "-m", "unittest", "discover",
+                 "-s", str(REPO / "tests" / "unit"), "-p", test_file],
                 capture_output=True, timeout=300)
             self.assertEqual(proc.returncode, 0,
                              f"{test_file} 复跑失败：{proc.stdout[-400:]}")
