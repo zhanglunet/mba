@@ -3217,3 +3217,139 @@
   source_type: media
   note: "LLM 预分类建议(high):核心业务高管更替。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-19-apple-212
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple TV becomes the new U.S. home of F1 ACADEMY™, the all-female racing series"
+  quote: "Apple TV becomes the new U.S. home of F1 ACADEMY™, the all-female racing series"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxNTEExWEx1d1J5SlZ6Uk9DU0FscHhOQ0lnWlcyS1NteUVZTlhFLVp1Z1RmQ0ZuTU5RNkV1NHZTY18xTEpIOERuNEM5UXFLQ0owb0JHWGtXNTZEUVQwXzVqTWpzWDJYU2ZvVXBKcC1UM0ZGV2JWazlJYkhOcmg5VXZhbHJBeVNJWEZ4ZmFkWFVhSE51MWVrb1JkMXVKekhHV3VQaU5idHZWRzdjU2NIMWpFZ1ZQR1VQdw?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):Apple TV获赛事版权，内容生态正向事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-apple-213
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Meet the 2026 App Store Award finalists"
+  quote: "Meet the 2026 App Store Award finalists"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxPclBPNlJBMklNWmMzQXUwTFlSNzZscFpxeXBvSmJlZnFFQU51dWxIS0lLTkJRS0M3VUt6Ym1kUlRNaHE3cGoxV0JneWo2T3ZsWlppbExOM3pBUGkxc2dGNFpsNlZsa2ZxZXZkN1J5QTFwcndPR0g0bmJYVG9MVHFmNUlyY2Jqdw?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):App Store奖项入围名单，生态正向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-apple-214
+  date: 2026-11-17
+  dim: W5
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "Formula 1® Las Vegas Grand Prix™ streams live on Apple TV this weekend"
+  quote: "Formula 1® Las Vegas Grand Prix™ streams live on Apple TV this weekend"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxOTmRpdlhPMldIRWFYV2RwYmxQZXkxNzZpaGswUGlVZzNHQ3lWV3k5N3lsMmRhQ0F1QkxUTmgwLXFrbWN4NUVVQzRvdjhPNlRqRG9xT1VTUGFTdDdpX19GLTlIYkVUU2c0SjZiUU9fbHZDQXN4TlM1bDRaWG9YTlZTSk5JX0ZfME9aSm0xVTBuNFhGNkppNEdabWtLSmw3aDFrSVhyUHQ5c1M0SzE4?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category]
+  source_type: official
+  note: "LLM 预分类建议(med):单场赛事直播预告，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-apple-215
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "国行苹果 AI 还没到，先用这两个免费平替"
+  quote: "国行苹果 AI 还没到，先用这两个免费平替"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBYQmpOZW1ScVVuY2ctS2IzZmo4cFhaNnp5S3pua0dRVXRaLW1Yc0Z1MUZmc1hxaVBUNUM0WGx3b2RoR2Fqa1hxVktiYVktYUxpeDJleXVvUmdkN3B2?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):国行苹果AI缺失引发替代讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-apple-216
+  date: 2026-11-17
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "AI应用淘汰潮来了？13款明星产品折戟，关停、调整或退场"
+  quote: "AI应用淘汰潮来了？13款明星产品折戟，关停、调整或退场"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9WRmtkdUljalZaTjRZRnZRZGxxa3hDVHdBLS10TWJpRkliR2tUdFNyVkZBVk1MWHc1eFZKVU53U2FCeGd0aEhRaVlKMl94OTM1ekpVRHdGb0xJMGNR?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):AI产品淘汰潮涉及行业与品牌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-apple-217
+  date: 2026-11-19
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果相机业务迎人事震荡 核心负责人突然离职"
+  quote: "苹果相机业务迎人事震荡 核心负责人突然离职"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE5QckJmeXhhVkQ5TklHYUViXzFmeHJiMzdpZmQ1ZE1vM1hMbWo0S0xkZnA3ajM5UFFUdG4wR3ZQNlgwNXh1Ql8wWGExZTE2UlVKSl8zenVmdVNIRTRfV0x5UjE0VnVtTXM3Ny0xbmhDNVJmTjVObjdabQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):相机核心负责人离职，属高管变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-apple-218
+  date: 2026-11-19
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "运营28年！Apple支持社区今日永久关闭 曾是全球最大Apple粉丝社区"
+  quote: "运营28年！Apple支持社区今日永久关闭 曾是全球最大Apple粉丝社区"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTFBPWG04c1lIdTV2Q2FYZzVRVS16RTFGR2EyenZXeVZaekt3dDZzUXh5TFYwSVBRRTRMQmVrNkJtZHJFQlNVcUdYam5OZHBBbVplVDAtb1BSdEo?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(med):运营28年社区永久关闭，影响粉丝生态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-apple-219
+  date: 2026-11-19
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果或推迟甚至取消OLED iMac计划"
+  quote: "苹果或推迟甚至取消OLED iMac计划"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE8weVhDeVNXVzgzUzhOZEdycGUwaENNWjhCSy1hbGRtSzg2U0c4ZmNSR1VwY3llSTFVcmlxZnI3cXMwRURwbDU3RmJMenpReUlaU2pkT2ZkSkp0dmFRazJwbg?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品路线传闻，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-apple-220
+  date: 2026-11-17
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "苹果历史首次！iPhone Duo升级2D人脸解锁#Apple##i"
+  quote: "苹果历史首次！iPhone Duo升级2D人脸解锁#Apple##i"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9nc3dnVEdiZkJUZ2ktRW5aeHpUdFlscmlmUVhSSldBcVl1bkl0b055aGRWZHhVNE5mMVEwS2tRQ05rS2NjczNna09Dam4?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):iPhone历史首次功能升级传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

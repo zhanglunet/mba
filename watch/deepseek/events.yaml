@@ -2286,3 +2286,79 @@
   source_type: media
   note: "LLM 预分类建议(med):服务使用限制属显著运营事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-17-deepseek-150
+  date: 2026-11-17
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "DeepSeek是要抛弃免费用户了吗？"
+  quote: "DeepSeek是要抛弃免费用户了吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxOckRYSlNTM2hqN3BQQ29UUTFnaE84LUxkT3dLY3N6N0RoWG1QX19rR2xtdFZrbWNEYThkd0pGcWJUbkozMnJNeXkxYkl5aGljcnJ6V2pnQXVaS045TktNX3NzQVVYV2prU3lYdVR5RHRWNGEzeXNxY3MwMzFNY0NOS203NA?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):用户疑虑免费策略，口碑风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-deepseek-151
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "31名股东排队参投，DeepSeek最新估值超6000亿"
+  quote: "31名股东排队参投，DeepSeek最新估值超6000亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE9BLUQzOEVpdjZwaWJHcE9YT0VIbUdVMVRuUGswSHhwT3lvSzBGS2dhWHFOWDEyR041aFhjZlFybFhfQ1lSekw5YW1maWFWTDhKTHJwZ0FhYmtieG5JM3hRMTZRTHk?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):融资意向传闻，估值未完成，P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-deepseek-152
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "梁文锋股权被稀释！深度求索工商变更落地，DeepSeek前五大股东曝光"
+  quote: "梁文锋股权被稀释！深度求索工商变更落地，DeepSeek前五大股东曝光"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5RcXZob1BFU3p1UDhlYmFfblRKZHNVYkZYa2piOS1mMm5UVGx2R0tXQW9JUTNOcERUWXlnT1JUUlVLYVFKLUtCRXBYWVVSUQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):股权结构变更披露，治理信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-deepseek-153
+  date: 2026-11-19
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek第二轮融资落地！31家出资方入股梁文锋搭建的持股平台"
+  quote: "DeepSeek第二轮融资落地！31家出资方入股梁文锋搭建的持股平台"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBwWjVRVGFwdGg4N28xajZMY0h3ZWFyZFotbGEyZWJkU2lva2hVMmZHY1llUnBoR0ZwcUVBWXlwRlB4Y3Jwd0lKbC12S0JuajZTMHZN?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成且出资方明确，重大事件P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-deepseek-154
+  date: 2026-11-19
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "腾讯、宁德时代、中国移动“现身”，DeepSeek千亿融资落定"
+  quote: "腾讯、宁德时代、中国移动“现身”，DeepSeek千亿融资落定"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBOTEJIcFgwRjVuYmhrUlZUcmtJa0Q1aDVReEFLamgza2hoZDZhdGMzTVdNVnlPVW9zV2lQbEhBbUV3U09IVV8wMWd6UDZjWWY4YllUaTdWdGhUOXNMNmdUSQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新增腾讯等重量级出资方信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2327,3 +2327,154 @@
   source_type: media
   note: "LLM 预分类建议(high):新品牌新机发布预订，产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-11-19-huawei-153
+  date: 2026-11-19
+  dim: W9
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Real 5G Cross-Gen Experience Lights Up Africa's Digital Economy"
+  quote: "Real 5G Cross-Gen Experience Lights Up Africa's Digital Economy"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE80Nnltb1dqRTI1aEw3RUdPMkd3VlE5QlFLZDJqT18xRXlHOXpST2J4djVHMGstY0NwcDVESTUyR2o5VHh0NzJOOC1ZcDB6Zm4tdkR4RUx3TWdCRW90OGctdU5kTldUZDhyUVpXUTZ3?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方5G非洲推广，业务进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-154
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei Launches Next-Gen Core Evolution White Paper and AgenticCore Solution"
+  quote: "Huawei Launches Next-Gen Core Evolution White Paper and AgenticCore Solution"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE5zU0VYcXY2d0tmMWdyRW52QUdwblB6R1podjJqY3lJaUhZVFdwb0p6SzhwWlZVRldWWmhiWjEweVM0ZExTVGVKV3pBRjNiUG5rZ29SUTBSWUl1WGZpeFpVX1ppc096UUhDT1ZaQ1Bn?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布核心网解决方案白皮书。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-155
+  date: 2026-11-19
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Vodacom and Huawei Unveil U6GHz Innovations, Building a Solid Wireless Connectivity Foundation for A"
+  quote: "Vodacom and Huawei Unveil U6GHz Innovations, Building a Solid Wireless Connectivity Foundation for A"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE9zbndJUGpCblhxcVBnWmJyTDEzckN2RmI4UkRyZG9zRVJFcWZkc1JWaDBTT254YU84MVY3d3RlWGpSZnB0Q0xpYl9tVTBqQVBNZG9WNFR4bXJSSlBDVWZxMlBGbG5GWW1Jc0hwQmhEcmM?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):与运营商联合创新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-156
+  date: 2026-11-19
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "手机手表一起“瘦身”！华为超薄家族双旗舰官宣，轻薄体验拉满！"
+  quote: "手机手表一起“瘦身”！华为超薄家族双旗舰官宣，轻薄体验拉满！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqc3FGOWNRY3lCT1dyQkdud1RENW9sdG5lUkhJcGUtcGRIdk8wdlNaUUtuVzFYU0Y5ZnpveFBELUNiakZvWHJQZG5GQTFnSGpuV3haUnhpbXVBS3lh?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):超薄双旗舰官宣，社媒预热。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-157
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "教苹果打造手机，华为Mate 90 Air官宣，轻薄机也要堆料"
+  quote: "教苹果打造手机，华为Mate 90 Air官宣，轻薄机也要堆料"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE00bmJ1NlJXeGJpTWFMTWVkSjItcGwxQ0p1Snpoc2hGU0FBU1VXaVVIcUs1N1FXU014V2tvYnpUajJiQkljLXQzS05xSU9BLTJKRnhLV2trQ3ZQTWlH?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, category]
+  source_type: social
+  note: "LLM 预分类建议(med):Mate 90 Air旗舰官宣预热。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-158
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为WATCH Air正式官宣定档11月24日：6.9mm超薄机身，打造「薄，且强」全新品类"
+  quote: "华为WATCH Air正式官宣定档11月24日：6.9mm超薄机身，打造「薄，且强」全新品类"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Md1BkWWVYdHhhX0RJLU9xNTdNVDRGQ1NaeU9Ib19MTG5XZG95OEV2UzJndXNVY1RvVEFrUi1ReGVuQ2FnWTlEX2pxOFhRLTVTdjZvVUhoQ21ZdUo4?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):WATCH Air新品定档官宣。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-159
+  date: 2026-11-19
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为发布下一代核心网演进白皮书，提出AgenticCore解决方案- 华为"
+  quote: "华为发布下一代核心网演进白皮书，提出AgenticCore解决方案- 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE1tNFJJMW0xcjgyTDliUWZBSXMyOHZHWnYtX282eUlVUXNvV04wUXIzUkoxMmRtR0l3anFVRWxGbFY2cl9fenFicWxjR3BxOVJVZEYzbGpJZEkxcnZoOVZBQjdYUTNnZkNOUkU5UkZB?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):白皮书方案发布，非旗舰大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-160
+  date: 2026-11-19
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "华为WATCH Air定档11月24日发布：6.9mm机身刷新华为史上最薄智能手表纪录，或与Mate 90 Air组成\"超薄双旗舰\""
+  quote: "华为WATCH Air定档11月24日发布：6.9mm机身刷新华为史上最薄智能手表纪录，或与Mate 90 Air组成\"超薄双旗舰\""
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1tMTlMSEw5VVVkR1hqM1BSa09TZFNkeGxvQVFGUk0tN3I1V2w3SjNRRk1iMXIwTlBLd29yeGFZdjR0WEw0bERuVlZ2ekhXZ3JoSVhzTGJoNmdJZjl2?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新品定档发布，史最薄纪录。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-161
+  date: 2026-11-19
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为靳玉志官宣HUAWEI XSCENE车载激光投影焕新升级，支持5种投影模式"
+  quote: "华为靳玉志官宣HUAWEI XSCENE车载激光投影焕新升级，支持5种投影模式"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPelkxV2NCaUpaNlNEenhKVnZ5Y3F2d2gtYWR2VmtTbFdDN2g4ZGo1WURybzBFRlFBZUx5bDRTdVZuR1FrcTRmTjlod2hHTmNYMVZMcWowS1MwbktEUFpOUTFlOVIxeTdIbFU4UlloWUtmREVRNjFfWmdtWW9CR09neGhGZGdxVkNx?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):车载产品升级官宣。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-huawei-162
+  date: 2026-11-18
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "真5G跨代体验点亮非洲数字经济- 华为"
+  quote: "真5G跨代体验点亮非洲数字经济- 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE1rQTM2WFNxclo1NzlCemJJbkZXNjZvRkJBQUxjZXdKQkkxYWxiWWozNWN6SlJVanhaYVBDOW02MDZrcGN1bDh6TjYwUlduV0RHMzRqOWxwT1NidVhSMHdFUzJWanRSYzRjM1Iybjh3?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):海外市场成果，非具体事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
