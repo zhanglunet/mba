@@ -406,3 +406,34 @@
   source_type: media
   note: "LLM 预分类建议(high):CEO公开表态，涉品牌价值观立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-19-palantir-027
+  date: 2026-11-19
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特朗普9月交易记录曝光：加仓英伟达、SpaceX、帕兰提尔，多家企业斩获联邦大单"
+  quote: "特朗普9月交易记录曝光：加仓英伟达、SpaceX、帕兰提尔，多家企业斩获联邦大单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CX1VYTm5pNUJfVjFuNjdWRmMzdUhzT3ZGdUFHa0F1UkY0b2tzcUI3RW80V1pVcWR3eDVXT0ZzcUEtZElMWW5wQzZub19DVjFQeVF5V1F6Nnp2WVRG?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):联邦大单涉及品牌，但焦点在特朗普。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-palantir-028
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "帕兰提尔科技公司董事亚历山大·摩尔出售269万美元PLTR股票 提供者 Investing.com"
+  quote: "帕兰提尔科技公司董事亚历山大·摩尔出售269万美元PLTR股票 提供者 Investing.com"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE5MY2p5bEVNUHpNR2dVZTg4dWlBdEp0ejRXVUVlUkE1NjBFWWRDNHMtNGFTOTk4aUUzb0NwcUNhSVo2V2x1V3ZYWFZ0UDdzQ28zNUdrNlNydEEydGRsNkV5cDd2eUNMbGtZRmVSei1BbzRwekpTdTJ6UFJicw?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):董事减持套现，或影响信心。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

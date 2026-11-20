@@ -1368,3 +1368,34 @@
   source_type: media
   note: "LLM 预分类建议(med):骑手相关试点，涉劳动议题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-18-meituan-089
+  date: 2026-11-18
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "美团推出多项国际化服务举措，青山计划再生座椅亮相APEC新闻中心"
+  quote: "美团推出多项国际化服务举措，青山计划再生座椅亮相APEC新闻中心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTFAwZWdfWWppcVo5a3ZFYkd4dEFZSmdTQUhsMl93RHIybTdHMmFfVWRUSGxVR3ItOVRoYkVRN1JjRzdkUXEzQW9PSkF2U1c0NmprMFdCYlNuaTBfYVozenU1eTNzbHpxMHpXWVFMbWRaWmx1ZVduX0s0?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):国际化与ESG亮相，品牌形象正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-meituan-090
+  date: 2026-11-19
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团无人机索降航线首次落地迪拜"
+  quote: "美团无人机索降航线首次落地迪拜"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FclZZOFdzZU9OZTdsN0dsTW9XY0Z1YlBVb2hqeGRPLWsydTMwV0U1Zk1JcnNfN1RWUEVfeld0SHRMS2lnOHI2SUhOTi1mN3hjYjhCTmt3eFZJWFpQUzB6bA?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):无人机海外首飞，技术出海里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

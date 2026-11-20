@@ -3120,3 +3120,139 @@
   source_type: media
   note: "LLM 预分类建议(med):大行观点涉品牌估值走向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-17-spacex-205
+  date: 2026-11-17
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "撒币会好使吗？马斯克的SpaceX数据中心带动社区福利，当地居民最高可获2.5万美元"
+  quote: "撒币会好使吗？马斯克的SpaceX数据中心带动社区福利，当地居民最高可获2.5万美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE85MFVDQmVDU3lHTFZfd1J6V2pzY3ZqOG16bS1acVQtVkRtNkZfZWhHZGg2X0ZJRjl3aEh0RHh1S1FZaF9iNENLdE1xOWNyTlc5bFE0Wllkdkk4ZjZF?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):数据中心带动社区福利，社区关系事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-206
+  date: 2026-11-19
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克盛赞中国，直言中美合作越多越好，并表示特斯拉会继续在中国提高产量，如何看待他这一发言？"
+  quote: "马斯克盛赞中国，直言中美合作越多越好，并表示特斯拉会继续在中国提高产量，如何看待他这一发言？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Lb3ZKVE9yUWFlYVBmUHdOVmFtX2t4MFRaQXFoRU44WTV6SXlEdzJuU1pYS2tUd0dFZzNPWUt2cEI4NFpDX0JScWgwN2dmV092cmhCaGZsZ2JtLXRic0dn?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):创始人涉华表态，影响品牌舆论环境。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-207
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX周四拟发债60亿美元，完成全部320亿美元债券融资，用于购买英伟达芯片"
+  quote: "SpaceX周四拟发债60亿美元，完成全部320亿美元债券融资，用于购买英伟达芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KVmd5OEV3b28tTlZ3ckxzcHBLNGJMMm9iM0d1MFdfTFNBYktfZHYyQkc3Wk1UTzJWc2VLTzltbHJPb1pIU0ZSXzl4aW5xam9YeDd3?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):60亿美元发债融资，金额明确的重大财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-208
+  date: 2026-11-19
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "400亿美元SpaceX芯片融资最早本周进入市场 定价细节浮出水面"
+  quote: "400亿美元SpaceX芯片融资最早本周进入市场 定价细节浮出水面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFB5OXp2ckRMUVBTOW5Sc1otVkg4Wkt6QkJoQkRkTmJFVTFrVXU2Rmg4SGFSZG5WQTFJQm9jS1BGLUwza19IZ3VlTQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):巨额融资进展但尚未完成，属显著事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-spacex-209
+  date: 2026-11-20
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX发行320亿美元债券 为购买英伟达AI晶片融资"
+  quote: "SpaceX发行320亿美元债券 为购买英伟达AI晶片融资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE0xY2lrY2RLMXY4M1Rpa1dLam9YRzFsbC1ZWlphN2hKRVRkamJyZ2NPakpnVzh0REIyaW9FVS1zNTRqYkw5VjJSQzRWeDF1Uk5aRi1BcDV2MEtQY0NWVE95eXJMdlYyaExfNkpZ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):320亿美元债券发行完成，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-spacex-210
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克称SpaceX将为星链移动用户提供屋顶微基站，助力信号穿透密集城市厚墙体"
+  quote: "马斯克称SpaceX将为星链移动用户提供屋顶微基站，助力信号穿透密集城市厚墙体"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFBmUmFWTllDQlYwLWg5amZHc0k3Y3hqcG16aTZ6YUs4Q0puSHBnTDJic3J5Sm9ReFNVSUp4SXhQSXEtQjNnV3hnRDdQRmdaWXJRb3c?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):星链产品功能规划，一般利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-211
+  date: 2026-11-19
+  dim: W1
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX星舰完成入轨首秀：发动机提前熄火后上演“极限反转”"
+  quote: "SpaceX星舰完成入轨首秀：发动机提前熄火后上演“极限反转”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lM0d3RHotYUxlYkVpVGhPY1Y1cm5YaEEwTm1WR0tZSTV4ZFpiWWhxTWV6UzNoQjJXaHdqMjF1RmdXLVloUkx6ZU5MYS1wU2dPcnpR?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):星舰入轨首秀为旗舰里程碑，含异常。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-212
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克：目前SpaceX每个月约新增0.5GW算力 明年底将提速至每月1GW"
+  quote: "马斯克：目前SpaceX每个月约新增0.5GW算力 明年底将提速至每月1GW"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjV09JVUtCcTlnS0dEeFRpUEc1SnJaOHBLZm01dGpoU0RYM2xOSDMyUE0tdDlaZXhfcXd0YjVBNGZTNmkzZVk3YU1CSXozUDJFN1I1T1B6NlRGRVFBZkt0Mk9Zcw?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):算力扩张表态，一般信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-spacex-213
+  date: 2026-11-19
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX 240亿美元数据中心及电厂项目据悉获美国得州批准"
+  quote: "SpaceX 240亿美元数据中心及电厂项目据悉获美国得州批准"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GT2g4Z3JGd0F5NXRRWG9adEN0Y2MwMTBFeTJxRGlYQ3RGTWpSWDIyVC1qR1JxeWhSc3FJaV9vXzZ0YThzUG5XMjdwdmpBRkJPT2N6Nm0wUWMzTmlaelB5Qw?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):重大基建项目获批，金额明确但属审批。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

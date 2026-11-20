@@ -3624,3 +3624,124 @@
   source_type: media
   note: "LLM 预分类建议(med):模型跨硬件适配技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-18-anthropic-238
+  date: 2026-11-18
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 发行定价83美元，超此前发行价区间，成迄今全球最大IPO，怎么看定价过程与估值？"
+  quote: "Anthropic 发行定价83美元，超此前发行价区间，成迄今全球最大IPO，怎么看定价过程与估值？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE83STQ5RmNtVFJra0hzcjR0MS1fSjAwYkhoemVIS1BScHd2OER6MVpQX2l0SDMwVVNQMnFMX3FiWUlsZVpKb3hVaTQwb0ZXWmw2RmhvWVc4MDdYRHRNMnRn?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):IPO定价为重大融资事件，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-anthropic-239
+  date: 2026-11-18
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "营收涨12倍，员工只涨170%：Anthropic招股书里最值钱的不是模型"
+  quote: "营收涨12倍，员工只涨170%：Anthropic招股书里最值钱的不是模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fTlFlUHhQOXJfQ1Y5YUNfdTVTQlJUbkl6aEdXRVRxUUVqYjBrek5qa0lTcU52cHBuSlBnVHhTZXNTcERKSW1MWThIcGRkVTBwU2psaGRvcFBqNVR5?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):招股书披露营收等关键数据，观点性解读。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-anthropic-240
+  date: 2026-11-19
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic上市：七位创办人跻身亿万富翁之列"
+  quote: "Anthropic上市：七位创办人跻身亿万富翁之列"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPS3VoT1k4Yk5mN19wbllaM2tfa2JrRFRTZHV3M2ZfaGV6V0RERXlCMHdseDJ5bGpuMVFaZjlPdmp5Y2Z4WElVN3l6Y0F6UWhRZTBUTmUyN3lycWlvOEx0LXFmNFc4M03SAWxBVV95cUxNalcyZGVIQ2ZnV2hRNm9TemY4LTZpTEJtb1dIaVp0S3NhMkJYNXhZb19nc0pPZTFVNEJGX1NRUUZrUHNVRndtVUJqSkZBVDBZN2d0YmpaVkI0UjVfYlN4TTZlelROd3lYTW85LUg?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO完成，重大资本事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-anthropic-241
+  date: 2026-11-19
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic纳斯达克上市首日股价跌破开盘价，Claude同日出现性能下降"
+  quote: "Anthropic纳斯达克上市首日股价跌破开盘价，Claude同日出现性能下降"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FOUJsUDhEc2FMRWNKV2ttZVlPSkQydlpEdmszRlpSOWFkb0hDQ25LN2VndXJVdzFfOXdEQ3hxTFdvWGNCWXRWbVpoQjZLbHVYUnhQVg?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):上市首日破跌叠加产品性能下降。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-anthropic-242
+  date: 2026-11-19
+  dim: W2
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了"
+  quote: "刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1QUU8xeUhsNWJ0NTIxR0xLR0RxdUphUFcyd28yXzlBTTJLSFViSy02MWNIRXk4bXNyc2dCZm5kc3h0MTQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO完成，融资事件且金额重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-anthropic-243
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "从业者正在对 Anthropic “没人需要 Claude Code 心理模型”的说法进行验证"
+  quote: "从业者正在对 Anthropic “没人需要 Claude Code 心理模型”的说法进行验证"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzczJ5ZjMwbUFuUHozNnZCY1JwNXNPM3hwUjRjRnpUcm1oRDRoSmZVMUpTZWVnN3pIVHJzLXhoN0ZYSmNyUjltN0JXVVhXOTNPN2RPN2pKREtrVVhmNkE?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品言论引争议，涉Claude Code。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-anthropic-244
+  date: 2026-11-19
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic IPO定价83美元，超出预期区间-人工智能"
+  quote: "Anthropic IPO定价83美元，超出预期区间-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBEdE93cHBSYzVESjBFSmRDRVlEb25XN1FmV3o0d2pMT2k1S3FoeW4tRExuZUVvS2ptLXBDaHhEemZvU3p2endhX1MyQW1EMXllT01SNlhwTkFRaVZBbGc?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO定价明确数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-anthropic-245
+  date: 2026-11-19
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic对阵OpenAI：AI竞争背后的财务指标"
+  quote: "Anthropic对阵OpenAI：AI竞争背后的财务指标"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi6gFBVV95cUxPVUtaSTRMTU9IX1VndUotVXcwSGlmdUVMSWljMl9lLXJmaGhROFp0T2NkUnF4NnFQQjFjUnJMWmZqNWhOY2w4UlIyckgzWXkwaTZ2Uml5eGhUWHJPOTQ2aVVVX3pwczJiMjJCUlI1cWFvYnpuVFd5R0tfVW9TV21iakZzVGFOcGpSSlVxY2V0VEtDTGlRUHNseDk3NGd1N2hTX1JIMGdPOWY1NVR0ZEtYNmI3OGczOEVrTmlWVUQ1VDM1RjFUdzZZRVQ4cUJfLThLeFMyLTg3eEVna3Bubllua0ZRdnIzSElWQXc?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(med):财务指标对比分析，有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

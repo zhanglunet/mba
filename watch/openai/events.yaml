@@ -3600,3 +3600,109 @@
   source_type: media
   note: "LLM 预分类建议(med):AI硬件出货与独家代工传闻，重大供应链信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-18-openai-235
+  date: 2026-11-18
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI 宣布为全球多达20 万科学家免费提供前沿模型访问，如何理解这一动作，可能带来哪些影响？"
+  quote: "OpenAI 宣布为全球多达20 万科学家免费提供前沿模型访问，如何理解这一动作，可能带来哪些影响？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBKN05MYjI3TDduRGk0a29WU3FsOHBZSEN6MGVqdXdYdGZrMWhUdW1jcjNmQ0lnNE9YUjRYZk5tb1RxUkRpQ2RRcHB2TjEyRU9GLWxyVW8yd1A3eG1YZEhB?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):面向20万科学家免费开放，重大生态动作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-openai-236
+  date: 2026-11-18
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI 发布 GPT-6.2 Astra 和 Sol；王兴兴：家用机器人或将迎来技术突破；《GTA 6》开发商批评AI 公司放任游戏仿制行为"
+  quote: "OpenAI 发布 GPT-6.2 Astra 和 Sol；王兴兴：家用机器人或将迎来技术突破；《GTA 6》开发商批评AI 公司放任游戏仿制行为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5ZjRBbXlkWTNxUTNUTzFQVlo2SmZ6RW9rT1pUdkFSdkh1b3VSZTJ2cnh6bXRnRnM2dWhsc1hLazZXb0FlSUJ3ajZmYUlGbm5MTGd1UDRqdXpyc3dP?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰模型发布，混合负面批评。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-openai-237
+  date: 2026-11-20
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI向少量ChatGPT Plus用户测试dots并将向Business用户上线"
+  quote: "OpenAI向少量ChatGPT Plus用户测试dots并将向Business用户上线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Jei1mTnRIeWE3VFNkUEJQZE9GVENtc0YzUEJfQkx3aTFCam1XVEVrWEpJRUlyV1lpUEtyMnFrMEpLNk1WV0RIQVZjTGpoSGhoX0xOcTNyVTRfaHF1Vk1vV2hn?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新功能小范围测试上线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-openai-238
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "GPT-Live-1.1语音模型向开发者开放：可边聊天边处理复杂任务"
+  quote: "GPT-Live-1.1语音模型向开发者开放：可边聊天边处理复杂任务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTFBSazFyMEloUTlSdm4yRGNaRTJNbHVMaE1BQTBtb1RfRUJoeS01NllkXzltT3o2eU9iR1I2V184OTJkQlpMWWFJemltaXlubUlub2c?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):语音模型开放开发者，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-openai-239
+  date: 2026-11-18
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "推出 GPT-6.2 Astra 和 Sol"
+  quote: "推出 GPT-6.2 Astra 和 Sol"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE4xMlItcFdDczV4RnBZeWpjeThNNGRwS2xVRGgwMGphVUVXOWRoMmRPU3h2eXJVaGhyYlo4bWNfWkdhN3RYNU1ReFpaakxZcGcwRHgtZXZXSk5QdUJsVnZaWG1GbHp4a2N3N3RJUW9PdGVqS0FZ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):主力模型正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-openai-240
+  date: 2026-11-20
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI正式开放GPT-Live-1.1语音API，支持全双工实时交互与后端模型协同推理"
+  quote: "OpenAI正式开放GPT-Live-1.1语音API，支持全双工实时交互与后端模型协同推理"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9MbVlqbXp4aXdINTdnQmhRZU9yVDcyTUFTX1NNRVV0R1lzWXdYLVpqcmF4WWtSWWs0SHpqOERvdFc4QUFoSS1raGdQb1VrNDhFY0xnSWVEaFRxU3ZIVnc?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):语音API正式开放，版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-openai-241
+  date: 2026-11-19
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "GPT-6.2 Astra机械臂测试登顶，OpenAI调整机器人团队并转向通用模型路线"
+  quote: "GPT-6.2 Astra机械臂测试登顶，OpenAI调整机器人团队并转向通用模型路线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTFAxdW9HTDhSMU03S0JwRml5ZGhCTDYtVFZQb1QtUUJueE9yMjJDdDBBazFNaXRnNVo2RWhUaUtRbWl4NWJ1VVhXdkVWNFlMMm52OG12Rw?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):旗舰模型测试登顶，重大产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

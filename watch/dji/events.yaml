@@ -1133,3 +1133,79 @@
   source_type: media
   note: "LLM 预分类建议(med):新业务布局信号，涉战略延伸。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-18-dji-074
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "大疆涨价首日实探：三款机型涨价，Pocket 4P Vlog套装涨幅约13%，大内存机型涨价更突出"
+  quote: "大疆涨价首日实探：三款机型涨价，Pocket 4P Vlog套装涨幅约13%，大内存机型涨价更突出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NbzNVaEdhYnl3SW1QLWRudnVFRS1Ib2hsLWtvbnNqV05JekxCWkNSTkdfMXFQS2lmUFBMMXZSX2lUZWR0YU4yQWRMUld0ekJWY1dQNl9xM2hJdlBHeFpxQWVBVC0?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):涨价实探含具体数据与消费者反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-dji-075
+  date: 2026-11-19
+  dim: W8
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "继入局储能之后，大疆还要造电池？"
+  quote: "继入局储能之后，大疆还要造电池？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5tNm9LalNIUjcwWlF6cDhBdW91RnRIMmJicmU0cFhQNi1ZUlhSd0huUjFzZkpkeUZyZmpZdGpJZWFLb3RCbG9sUGZsR1huSm12MWJXRWxVcXdIRkx2bW9VVTh3?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):业务扩张传闻，涉品牌战略动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-dji-076
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "大疆Pocket 4系列正式涨价，部分套装上涨560元"
+  quote: "大疆Pocket 4系列正式涨价，部分套装上涨560元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMid0FVX3lxTFA0NVdRekpVZXNfS3YzN1NxVTR2YWlMVkw1QzNSaFh5ZmpUckRlaGl4TFZZQjNaQnlSVTVxbHNEcUJLcC1TR2Y5Z2FCOXJJUVE5bHpsX3Zici0tVnpqV0hWQV9vLV9mcFB6eHdmcTZQSTI0R0xIR1NR?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品正式涨价，消费者负面情绪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-dji-077
+  date: 2026-11-18
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "别等了，大疆今起涨价！Pocket 4P套装直接贵560元"
+  quote: "别等了，大疆今起涨价！Pocket 4P套装直接贵560元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPS05zd3BZMDdCeEx6RlZrNjRUandQdXlVRE1JR3FEdkRzb3o4dFZxM2toZFRNa21vLWVxbzZrcjVyNkd4czFXYXVCZFpJZHRtc0Y2eFY3ZHpYSzhodnE3TGdJeW9mREMzQmxJRHlBTUhtYmVRWFM1RFVlLW42TGJCN1drSmhuRC1B?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品涨价引发用户负面情绪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-dji-078
+  date: 2026-11-18
+  dim: W1
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "大疆确认参展AWE2027！全球智慧生活创新阵容再添重磅企业"
+  quote: "大疆确认参展AWE2027！全球智慧生活创新阵容再添重磅企业"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSG9nZ0dLcFR2T3dYWnZmNXJfTk1hVTZralBja1IxcHJmWHFCeUNZb3lya01CN3d6bmJNTEQ5OWktUnZacUJLRUgxbTI1RGpaaEl5aVl3d2NZck1odEZxSTBzU0ZzSHpWSWhQYU9MRTBjQnd4R3FMcm5iZHhUdUhheXBwamx4dVA4?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):确认参展属一般动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2660,3 +2660,19 @@
   source_type: media
   note: "LLM 预分类建议(med):新品评测，有实质产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-19-amazon-175
+  date: 2026-11-19
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "A message from Amazon to customers about New York City delivery costs"
+  quote: "A message from Amazon to customers about New York City delivery costs"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxNc0VoVl9HMF9aTU1Edmp2Ul9OQjRMZExVdWlsOHByZkhFV181RFdJdjlkWHQzeURlZ2thWTEwRTdjUmJnbjJZaWtzaGtjZEZxLVFmSFQ0WTAtMktLQjZYTmFGVjdrY3J3SzEtY1NHZTczYUxfdFBVVXc3ZEx5MUVUME9lOTFiQl9aQnhOaVVzbkNlM1U5STNFek4tOXp3Z1ZxWUZF?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):官方就NYC配送费用致客户公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

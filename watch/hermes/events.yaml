@@ -1165,3 +1165,34 @@
   source_type: media
   note: "LLM 预分类建议(med):二手假货纠纷涉品牌真伪风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-17-hermes-076
+  date: 2026-11-17
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Hermès unveils its renovated Long Island store at Americana Manhasset, New York (USA), inspired by t"
+  quote: "Hermès unveils its renovated Long Island store at Americana Manhasset, New York (USA), inspired by t"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixgFBVV95cUxNWXBnOUs5VHFYSnc1SU1QWDY1eWFBRllPNllZZXpybDdERUM2SEJCSXRUd1I0NjFFSFkwOVlvX1VTNzI1OW1uTnpTdTM0WU5DemdNMG4tNURMQXFROUljQXBsZThSZEtnSWo1STBxeHhESVZOVEFGWnhTbmdDWUVGUjVCNkZ2ejdSNUtWZDBSNTZPVjEyR1FDdkxlM0VtaUlObVNnWWtWWFlFTEZRWnB1SEdNdlZTZEkyclJqb1gyMzdHSm9uaUE?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, leverage]
+  source_type: official
+  note: "LLM 预分类建议(high):门店焕新开业,零售扩张事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-hermes-077
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "人事任命｜香奈儿时装中国大陆总经理；开云集团定价总监；爱马仕新调香师；芬迪全球私享客户关系总监"
+  quote: "人事任命｜香奈儿时装中国大陆总经理；开云集团定价总监；爱马仕新调香师；芬迪全球私享客户关系总监"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQEFVX3lxTE1yelNqUkxnbXBzUWxHVUFaVm1Ocm9jd2RRdHg0Q3BibHJCRk1UcldKQXphc21kUnc2eXF4TFlwZWY?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):爱马仕新调香师任命，非核心高管。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

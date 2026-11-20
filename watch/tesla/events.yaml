@@ -2628,3 +2628,109 @@
   source_type: media
   note: "LLM 预分类建议(med):欧洲监管限制特斯拉智驾功能。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-19-tesla-173
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克盛赞中国，直言中美合作越多越好，并表示特斯拉会继续在中国提高产量，如何看待他这一发言？"
+  quote: "马斯克盛赞中国，直言中美合作越多越好，并表示特斯拉会继续在中国提高产量，如何看待他这一发言？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Lb3ZKVE9yUWFlYVBmUHdOVmFtX2t4MFRaQXFoRU44WTV6SXlEdzJuU1pYS2tUd0dFZzNPWUt2cEI4NFpDX0JScWgwN2dmV092cmhCaGZsZ2JtLXRic0dn?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):马斯克表态在华增产，涉品牌立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-tesla-174
+  date: 2026-11-19
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "市场动态：ISS敦促特斯拉股东投票反对董事长"
+  quote: "市场动态：ISS敦促特斯拉股东投票反对董事长"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxOOUdEcHJFN1JvcFVHVmpaWHNIb1ZrOHNlMklfVEtWTWM3NnI0eDI0ZUdEVjNiZkRyRk5CbTFBQlJLakF0Q25oRkxaYmtsNXJIR0xJbmdNNGlJMVphN29Ma0FDMG9qMmNCbDRlckhLc241cDFmU2MyTTNWOUZkSjJFVXRvcU1BSHBkZG5xY1JfZjBoM0praklHSGx4N1hoNTQ2LXpsUQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):ISS敦促股东反对董事长，治理事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-tesla-175
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克剧透自动驾驶版Model Y 回应特斯拉与SpaceX合并"
+  quote: "马斯克剧透自动驾驶版Model Y 回应特斯拉与SpaceX合并"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mTkxLRXBodzJ0Q21VdkRjUzJ3WHZHOUg4aUpOeHF6bkxzT0c3VE9QWHd2ajZPWURkdEpFaFBOaU9JdThrSWJYZzR4Sm90Z1F2QUlzVExLMFRBSS05NlNpYQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):产品预告与合并传闻，信息量中等。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-tesla-176
+  date: 2026-11-19
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克随特朗普访华 现身美方代表团巴士"
+  quote: "马斯克随特朗普访华 现身美方代表团巴士"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE8wVVgwRm0yMnQzQVd3MjBSQ1JDZ2xRcllJTGF3ME1ra0d0ZGpTVEJqbkVVQmZlYlNSclRmMlJsTXdLUHZBNFJ4SlAwVHA2R2JwXzRzTVpHazR0ZlFBN21aVElVN3lzQlg5STc0Yg?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO随团访华，重大政治信号利好品牌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-tesla-177
+  date: 2026-11-19
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉欧洲加强驾驶员监控：分心更快触发警报，超过130公里/小时须手扶方向盘"
+  quote: "特斯拉欧洲加强驾驶员监控：分心更快触发警报，超过130公里/小时须手扶方向盘"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdHFDOW9iU25sZUUyUVlNMUs0Q3k2cjRJWmZrNEJ1blN3WHAxaFJqWmhPbDdiQUQ5amhHRkV5VHc0d3B4NGxTcGxnZy1saWVibDU1YTE2c1dCTGpvWVdUdGhRX0dYa3J5OVN2bWdhVm9sdURpZ3FyN3cwdnJ1anBDWFZBenpJa2RmMXN1ZjBLUGN4QlJDNjBMdlVYSGxKWU9mY2cyUklqeHViQVk?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):欧洲加强监管功能调整，涉安全与FSD信誉。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-tesla-178
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "埃隆·马斯克就特斯拉与SpaceX合并事宜表示：我不应仅因与SpaceX合并而获得与特斯拉"
+  quote: "埃隆·马斯克就特斯拉与SpaceX合并事宜表示：我不应仅因与SpaceX合并而获得与特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxOZG1SWWV6VE9FaG5qZ3BEMWlfQWxLUXZtZkw2aTdaTjZhUExQNEI1aExqRmVrZjZDcWpwY0wzSnFBOGJBc2tabW5HWlZmUkRRUFc4MkpGTm1EYWZIMUhzcFZZcUM5eUllWjZDTmtXRzV1djhzeUtScGFYQmd1emV4UU1TbEdzZUxEUWRhZ3VreWJRUEkyVlpuLVBR?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO谈合并薪酬议题，涉公司治理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-tesla-179
+  date: 2026-11-19
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "埃隆·马斯克表示，特斯拉将在深圳出席APEC会议期间继续提升中国产量"
+  quote: "埃隆·马斯克表示，特斯拉将在深圳出席APEC会议期间继续提升中国产量"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUEg0S0R0MVdkWDJ1LU94V1hRcFpWaUgtUkxYNXdwTlFHR3F4R2tQb0RLV3BqZFlUYWpUTkJpOFlzYkhCMHdmUGN0QnQxVFNTUVJXQlVzZEVLNF92ZElYQlQ3MGVCOGU4M3IwNG1lUFhDLWxncVEtaFlPNlItQ2N0WEJrd08yV0E2MmRRTmV1NVNmR2tRam1TN2EycDNBRWFBR3hJVmFwdW1uUQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO表态提升中国产量，战略利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -3367,3 +3367,169 @@
   source_type: media
   note: "LLM 预分类建议(high):AI搜索新功能，隐私方向产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(11 条)──
+- id: 2026-11-19-google-222
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Let Gemini tackle repetitive chores on your Mac"
+  quote: "Let Gemini tackle repetitive chores on your Mac"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNSThGaHNJVDVxYlFXVDBLdkk5Y2JhcFRYbXBTRjBBQkxYajNXX2V0YUJfUWxIR3VSVlp5MGNSOG0wZE00SHQ3dmNqN05aMU40aDNZVks2VllzMGlKa0pkbXFzOXdZU2Y1dEJGWENuUTBGVlU0R3MzRkpQeThmNUhtZA?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方产品功能宣传，一般产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-223
+  date: 2026-11-19
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Genie 4 is now available on the Gemini API."
+  quote: "Genie 4 is now available on the Gemini API."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxNdmc0RHdtN3dFUFV6blZncWVrcmlTdk5fX09zLUE1aGlUUVR0bUpBUUhVWnRlZWxTQlBfazFPUWNEOTlEYVdjVHRqODBxUGwtMUViV2ZIUHYyOEhWNDlDTHVfSXVqQ3hlcTVFRFRmNndaZjlOV2NGV2Nwc0laZ1hyMzU4SExuT0lrdl9TcHUyYlBmdw?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方主力模型重大版本上线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-224
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Tool Retrieval in the Gemini API"
+  quote: "Introducing Tool Retrieval in the Gemini API"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxQRUtKQkZsalBkRjFvNklTazBkZENkS3g1dVpRNUFXeXd2NXFjM04yZzFCMG1sN0tsUEZET3NtcFBjZ1I2X0hvWXg0WGo5X2Y2UjVJaEkzLTNkS0h3QjcyWkp3TEQteWNmQ1FHN2pIQmxIUTdqNC1FbWxXbGE1VjhmWTBmQWlEZVU1UVFrZVFhNkkzbVZ2MWpN?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):API 新功能发布，非重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-225
+  date: 2026-11-19
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "We’re partnering with Blue Origin on our first heavy-lift Project Suncatcher launch."
+  quote: "We’re partnering with Blue Origin on our first heavy-lift Project Suncatcher launch."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAFBVV95cUxQV1pPYm04bnlUWHZkQ2FjRXJzbFZSMU01Z3pybmVtbmNESTA4OUxRQTI5d0pNS0FpeURPaFV6RGJ6RFcwdXByZE9LeDZxVlVwOG52QWFZZnpnVlNhcG1CYi0xZWJveDdXejh0dXMwRnh2VVRMc0FJNmNlbzhrUDFaVjFLS2xFa1FOLTZESzlHc243SGxyTHlBWUxiUDVmQVBMZHd1YWtfb0RBNWdlSG9WQm5HUGRQSklY?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, origin]
+  source_type: official
+  note: "LLM 预分类建议(med):重要合作与战略级项目进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-226
+  date: 2026-11-19
+  dim: W9
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Expanding Transparency: Google & Alphabet VRP Disclosure Policy Update"
+  quote: "Expanding Transparency: Google & Alphabet VRP Disclosure Policy Update"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxQSnhzZ00xOUE0WWRKQ1BCVnZFa2tGZ3cxM21DQjlQWG9qZk1CMXFvNjBsVFV3Q1AwS0pkX3BrU0N1bmZTN3l3aUpZaFBvTm1pZEVMcEl1Wk9kZElVUHNMenB4X2JjUDYzY2I2c3RfQWx3SlE0UmJrT1FOV19SLTBkX09kMHJEeUpsYkc2b0VtdDdvMkRGeWdFcHlZbU9GUQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):安全披露政策更新，一般治理动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-google-227
+  date: 2026-11-18
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing Stitch Loop: A new way to build and evolve products"
+  quote: "Introducing Stitch Loop: A new way to build and evolve products"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxPVmQ2bHJpUE94TEExanpUQzNyODlRVVBOcmdQUE5OWnIxem04VzhPamxveUR0Q3RNcXFjRmk2UWkyQkVwcHZmQmFEa0lvR0tYLWtmUzZKbFdpdldhRy0xdi1XSGU5WXBMSld1QUlTTjdhS2p1dWZSM1o4M0gwUElZYjZBbmEtMDJ5R1E?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方新工具发布，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-228
+  date: 2026-11-19
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，谷歌Gemini 4再发新款，对标超越GPT-6.2 Sol！世界模型Genie 4也已开放"
+  quote: "刚刚，谷歌Gemini 4再发新款，对标超越GPT-6.2 Sol！世界模型Genie 4也已开放"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aUzBLYWktbnZCWmVzak1zUjV3bk9ZbDZMUGZXcEY5Zk5SUHczdzJIbTZiaU0wYmtxVllTNlFMRHBMclpIMXV2ekhIQlI2bWNHLVpuV1JrS3JQWTRV?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰模型发布传闻，信息重大但来源为社媒。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-229
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Gemini 4凑齐四款，谷歌把选型题甩给了付费用户"
+  quote: "Gemini 4凑齐四款，谷歌把选型题甩给了付费用户"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE00UDBEM0N1UF9CRXVZQVZCdEtXWkoyVmRROVEtT3hOOVR3Q0Zlang2eHhlVTQ4M2NfZ1NialIyT3JWVVc1bXNtOFR6NmhYYW1wWmdnbHdFb0JGTHRT?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):产品线策略引发选型困惑的讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-230
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google DeepMind工程师在办公室打印机上成功运行Gemma 3 270M模型"
+  quote: "Google DeepMind工程师在办公室打印机上成功运行Gemma 3 270M模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE4tV3ZEY1RROWNVVjZmb2Jyc3RPYUk0Y1BtTnkzN253Q3FNd1UtbWc3Nm1GcUMxbXc3a0d4WFZMVk1kb3ZYeFNTeE9yeWh3c1NYY3FRMTZhRjQwSnJVMVJVVg?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):技术演示展示模型轻量化能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-231
+  date: 2026-11-19
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌终于下狠心！Google Play将折叠屏适配列入应用上架要求_热点资讯"
+  quote: "谷歌终于下狠心！Google Play将折叠屏适配列入应用上架要求_热点资讯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1xRllzVlYzdVItWmRwRFE4bTBDSnh1WUx4OTBmSklqMndXbGw5X0VwS3AxYVZ0anhhNlFPSWJlcjBjMUxmLXBzZA?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):平台上架政策调整，影响开发者。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-google-232
+  date: 2026-11-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌Google Wallet面向全美iOS用户开放，iOS端暂不支持碰一碰支付-电报君"
+  quote: "谷歌Google Wallet面向全美iOS用户开放，iOS端暂不支持碰一碰支付-电报君"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5oMW9xVDJBaUFoS1YtbzhCcnQ4UGU4MlZuMWsxT1B5SHlHX0NCR0pZUlVPVTdLSk5wNHlBX3Q4cXVJeklqWVdJVkZOMnlGU2Y5aWllSlpQZ1E4cjNQNjdjTVRkV2Q4QQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):产品跨平台扩张举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

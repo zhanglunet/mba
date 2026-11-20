@@ -2811,3 +2811,109 @@
   source_type: media
   note: "LLM 预分类建议(med):新决策模型发布，性能领先。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-17-microsoft-185
+  date: 2026-11-17
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft and Western Cape Government launch CAPEability AI to expand access to AI skills"
+  quote: "Microsoft and Western Cape Government launch CAPEability AI to expand access to AI skills"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRTVxR0FNN2hMaVRFXzNudEFSOThVUEhnOXI2TVgybmxLSURxbXQ5SklKZmFvSktXcnhiZUY4bmJqWWt3ZU01cTVvcEw1N2t4dzVvZ3hUTlRxWnJJNERySU55eWtEYXJDRHBBM0VQb3JIMmhrZGZRUkQ5Q19ybVlzZUl4UU1Udkp3c01ZRFR0UkpkVXVTYWlDLWloRTZfMkZ2SVF3N1g1dE1adk5Vc2tiNHFXSGMwaVVfQjJ6S0FqMlNxcnRoSnVvV2IxdnRQQmpn?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方合作项目落地,有实质内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-186
+  date: 2026-11-18
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "11172026_Nadella_TRANSCRIPT_Ignite"
+  quote: "11172026_Nadella_TRANSCRIPT_Ignite"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTk43blBKcGs1VGRSVHRJa2djNjF3TVMza0pSMHE5OWp5emRrMFl6MEw3cWFibTFiYnU4LUJZc1hId3YyN2d3a2FvTWVxa0xVRXpFM3owd1V2RVMtV3ZxYVdQNjJ4d0RzeUJ4MTZQZUlQMDJGNFQ0OFQ2Q0t2QlI1Z0RPUElnbmxSQ3JUbU1qNUVQVDR6Ykl6czI5R3Zvc0lhSGhRWjJJTzNHTWc?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal, category]
+  source_type: official
+  note: "LLM 预分类建议(med):CEO主题演讲,重大产品发布载体。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-187
+  date: 2026-11-18
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "微软 Ignite 一口气发布 MAI 新模型：从写代码到实时语音"
+  quote: "微软 Ignite 一口气发布 MAI 新模型：从写代码到实时语音"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wXzVNcXctSjgzTzNSb29CQmRHWFVFX3N4VnhkU3JiMkJPVkpvU0NqSEprRXlzc0RSbC1pcnFhejk1Q0Z6M3FOSFM4VVp5MzlJdVdGLXBIdEdGRy1Z?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage, category]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰MAI模型正式发布，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-188
+  date: 2026-11-18
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "微软Ignite 2026连发七款MAI模型，权重终于能攥在自己手里"
+  quote: "微软Ignite 2026连发七款MAI模型，权重终于能攥在自己手里"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wdGFHZzhITkx0N2Yybjd2WU9kYkJUbl9kM29EQkFnWlJMUEpMend2Wkhzbkk4UUU4cEtUOWtHVFB6dThlS25wMzhLV3pfSmNKYmExX1NIUWJWanQ2?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):连发七款MAI模型并开放权重，重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-microsoft-189
+  date: 2026-11-19
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "港中深联合微软研究院提出多模态统一建模新架构ConvexLLM，让声音接上大模型已经学会的知识与推理"
+  quote: "港中深联合微软研究院提出多模态统一建模新架构ConvexLLM，让声音接上大模型已经学会的知识与推理"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5XM21YRWc2UGNsb0RHUDU0VzJ0bEphYy1lS3VtZ2JZcWcyY3VabXVWNE1MYXlGdno0MTdVaXIzQUhpcjBwVGdlTDREckNGX0REUXlPR2RaR1A3YWhQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, origin]
+  source_type: social
+  note: "LLM 预分类建议(high):研究院学术成果，非重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-microsoft-190
+  date: 2026-11-19
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美众院委员会要求微软说明与字节跳动的拟议AI云服务交易"
+  quote: "美众院委员会要求微软说明与字节跳动的拟议AI云服务交易"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ1o4TXJfdTRoc2NOd0JzQVJ2dTdZdmlKZWxzVld2T3AtYjRJUVp6dENJZDJQX1NPS2dNUmNPRFptN1lCRDJFeVlQc2JtMjBOWk5vYk8zZkJRX25tMVF4RHQ3bzBhU1VGZnBhMFotNTZVWlN1eE9sQzRfWVZFMUZVMmRqLWF0V2dNX0JaallFTWR5U0tNQUlJemtQeVV4ZWx1UTZFQzRXU2dwYk5Yc0NsRGlKa0k?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):国会审查涉字节交易，监管压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-microsoft-191
+  date: 2026-11-19
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Microsoft AI Agent开发框架遭遇供应链攻击，被植入恶意代码"
+  quote: "Microsoft AI Agent开发框架遭遇供应链攻击，被植入恶意代码"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBXZmdPaFRGa3RiYi1ZbTNaNEU0STJadnpaeGxTb3ZVLWhCSnY1OGxkR1FfaTYtb2lIOVA2NnlseEdyUnBuNkJFQmtpSGRvQQ?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):供应链安全事件，开发者生态受影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

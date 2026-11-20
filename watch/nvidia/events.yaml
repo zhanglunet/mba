@@ -2823,3 +2823,94 @@
   source_type: media
   note: "LLM 预分类建议(med):核心高管继任传闻，尚属传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-19-nvidia-186
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs"
+  quote: "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxPcUM5aV9DQUo2TkswazlpZzk3Q1pWdGpQT2xzTy0zRmJCLWFlb3NCM3R6ckoxV2FpZXNFYzM0WFRvb3EycHAtQ25HeXpucTQ4WGpCSjV6QnNUMG1DZEtQZ0ItckRtZy11blhHelhpZlF3V09RX0oxOUp0SzJRUFBVYVUyMU5ybVM0YllCS09LTGg?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):与微软扩展合作，生态重大进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-nvidia-187
+  date: 2026-11-19
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA Earns 15 HPCwire Readers’ and Editors’ Choice Awards at SC26"
+  quote: "NVIDIA Earns 15 HPCwire Readers’ and Editors’ Choice Awards at SC26"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxPcmhONlgwaDY5dzhiVUdwSnpqbTAwY1l2Z1RJX0Y5cVJuQ3RmMlVoWi03ZFZITWFQTHJpUElHdXRjODhMVWZYTXQ1VjV6aFdhZWFoYjdBX3YtR25nT2JvNWhmbjBhcVVjVkM0b3QzWWVXWTUzSHA4RlA0RW1QOTJTQ2hDUWIzYS1kSWRkTmdER2ZSZmRkWDhGS2FKYVY?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):获15项行业奖，品牌声誉正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-nvidia-188
+  date: 2026-11-19
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达员工大会宣布告别「黄仁勋时代」，并承诺在12 月为员工加薪，董事会的做法能赢得员工们的支持吗？"
+  quote: "英伟达员工大会宣布告别「黄仁勋时代」，并承诺在12 月为员工加薪，董事会的做法能赢得员工们的支持吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFAydVJUVmItMFE1VjdST3c2RmVTTVZIYUZoS0ZwZjJCakZ2Skpyb3VXaHJYVE9RZ3dkcUg0cFZicXZKdF9jVjB0NjNhUENDZ3pmZ1hKOFZocWJDWS1hMWtn?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [identity, origin]
+  source_type: social
+  note: "LLM 预分类建议(med):核心高管变动传闻，员工士气舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-17-nvidia-189
+  date: 2026-11-17
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "高达1.3万倍提速，英伟达正式发布量子纠错解码算法"
+  quote: "高达1.3万倍提速，英伟达正式发布量子纠错解码算法"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1FdlpabFJGVzR0RU5xV28tS0FlbE5hckp4YTR1OWxVNmw2NkJIcElWS3Y1LVQ4X0treFRfc2w5ZzNQVE5hS1JTTXpCZ0dmelEwVGVVbjhJUE9XaHg4?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):重要技术发布，非旗舰大模型。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-nvidia-190
+  date: 2026-11-18
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "中国军方对英伟达芯片触手可及？阿里巴巴扮演重要角色"
+  quote: "中国军方对英伟达芯片触手可及？阿里巴巴扮演重要角色"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE9rdnR6eHF3cnk3RGpFTV9PSTR3WjhINTdZT0YzeElwM2x3Z1RVMjRlcHlLNG1uZ0hxLXI0LVYzSzhOWlBZRklhbkhWSEl4Y2FyelVYQjRrMHc5VklNcXdLWExSYUt3M1BscFozT1RMYy0tVVhZbFZfVFZTZmIwZw?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):涉出口管制敏感议题，需关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-nvidia-191
+  date: 2026-11-20
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国加州总检察长向英伟达发出调查传票"
+  quote: "美国加州总检察长向英伟达发出调查传票"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxOSkpTeVRVRmY1YXpQNFRoM2lwRjlycDB6dGp2b3ZCbkctLWFfZVBHRUlYTjFRZFl5WnRDanpiU09ubHpUcHZfeU44MXFZZzFDalFPcHlHQmlFU3hJaTlEWHptZUFadUstTHZ0R3l2MFhyY090aW9kcVRGNUpRTFdFcy1wWTlLTGN3SDVVYmgxbmEyMmRhOExOVHVWcUdrYXQxXzhPUTl4NXdsSkdjcFE?oc=5
+  fetched_at: "2026-11-20T02:25:23Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):监管调查传票，显著监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
