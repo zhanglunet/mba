@@ -2369,3 +2369,49 @@
   source_type: media
   note: "LLM 预分类建议(med):美巨头联手针对中国竞争者。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-20-kimichat-155
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX旗下Cursor擬逐步淘汰中國AI模型"
+  quote: "SpaceX旗下Cursor擬逐步淘汰中國AI模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBMU0c1QVFwV2EyR0UzVmNWejNtT0pORlZoRTJFaG9zR1BtZFk4VzhtaERyQXMtTHJRNXhveEFCZWljLVJ6Qjg1VU05N3VSRXBrSGZ0WHFiVFhPMXZsNVBxRVl30gFnQVVfeXFMTW9oU2hqT0J2Y0hHR0lOZklUZ1Q0bG5Bb1FSVHg5RmVsMmlMUXQ5WS0yUWhkS2RfZnMxb2wyNEpWak5SVjBXQVFIQUwxUHJOY0RZc3k0V2xzdUxWWndrZ0JoS052b1l1cw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Cursor淘汰中国AI模型，涉Kimi出海风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-kimichat-156
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "传特朗普政府考虑要求美企 公开披露所用的中国AI模型"
+  quote: "传特朗普政府考虑要求美企 公开披露所用的中国AI模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0gJBVV95cUxQcFBrX3BPNU1uVlplQkM2OFFROER6WFN0enBQZFR6Z3ZQc0dnWW1ZTkRaSm10Y21nVHNBdWthcy0yMXJLRjhGMHg0Z1FBUzF0b0FQOU1idkxfQmpiY05qNnNyazVqWFZxUlBlTjd4YmtVdEk1N2JYN1lxcWRNLTkzQWZhNktnUmxSQ0hDVlgxR25xWF90clJCcVlxV3VTR2JLcDdfb1RlWldEeEpTMkhmcUtGZTVwYzRDOW9NMXVadnRNSFlKU1BHOHV1S3BHbk1Ob1piWnQyd1NOOF94dWRrNVRnRTFRemY5cDlyUmYxUmlHQl9uX2IwS2VyeEt6dEZmcDlja05YYnhuN1dqUXIyRlZmMkxmZmV2XzZNMDlhMFVUaGpDVWpDc1dxcnRCNlVpV2xjVG5LU1JBSTZIZFpiM0pwU3pFZkJLZi1GTXRNREg2UQ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):美监管动向，涉中国AI模型含Kimi。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-kimichat-157
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "月之暗面(Moonshot AI) 取消通过印尼获取英伟达芯片的合同: 国际 : 财经日报"
+  quote: "月之暗面(Moonshot AI) 取消通过印尼获取英伟达芯片的合同: 国际 : 财经日报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBOVEJETVF2NTJocG9XWGxqcERRS2V3TDBudWxjYkV2a3pqcHlmbDFlQnBKSE96djRMUzV3LXBFRFU3ODVNUmdiVlJOZy05aWpYVTZHYVJybkV4bE1aVWRoeWVR?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):取消芯片合同涉合规与供应，显著但非处罚。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

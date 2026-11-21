@@ -1209,3 +1209,64 @@
   source_type: media
   note: "LLM 预分类建议(med):确认参展属一般动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-20-dji-079
+  date: 2026-11-20
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "大疆多款机型涨价！Pocket4系列最高涨价560元"
+  quote: "大疆多款机型涨价！Pocket4系列最高涨价560元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdFdweWVWaTRWWnhyWGFMT1FxUUh2d2NxejFEY3ZTT1RVcmNYRzlFTVlKWjZlMXJMaGNXcXdQS21tZlJKZzlWN2R6LTFvRTdtNjVXUmRXZm95QUlDNlVGTWhlRU8tczBjVmNxT0xMMVczbEZibjRfWlRjRy1uTmN2Z2lGZzBZVEdC?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):主力产品涨价，影响口碑与销量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-dji-080
+  date: 2026-11-19
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "APEC轻量化采编现场：DJI大疆Osmo Pocket 4P展现影像科技中国智造"
+  quote: "APEC轻量化采编现场：DJI大疆Osmo Pocket 4P展现影像科技中国智造"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE82MVAwV0VrblR2ZGdPV1dBc2RmaHdmSE1KTzhBRXhaOTRBZUNIS3RFRy15ZHJDUEZZdkdSSWNSSmdBdVpwX1dDOW5vWGV6eVdqdl9MX1Zkc01BQQ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):品牌产品亮相国际场合，正面传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-dji-081
+  date: 2026-11-19
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "受内存和芯片成本上涨影响，DJI 上调 Osmo Pocket 相机售价"
+  quote: "受内存和芯片成本上涨影响，DJI 上调 Osmo Pocket 相机售价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1BdzYzT2FSODFpRFRRaEw0aDVZcWlPY0lLSjl4a1Y4dnV0SVN6TlloVFg2MWtTbDkzNUlCR01nSlFSdkRhcjBwdlU5emlmWVNpWG1JV1V4alVVQXR2Y3FQUjhmcXlyVU9aVG83RjFQRkM?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品涨价事件，因成本上涨，舆情中性偏负。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-dji-082
+  date: 2026-11-18
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "大疆Osmo Pocket 4系列正式涨价，最高一台涨了五百六十元"
+  quote: "大疆Osmo Pocket 4系列正式涨价，最高一台涨了五百六十元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKZkhCWE5aRktUdXFpV2RBRXp1V29BMFBnSUJ0QVhteW94eC1GQVNVRVhiZjUteDFFZ0g4N2dSYW5vVUhha1NsNFRYOUdJOG5XUEQ4?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):主力产品涨价，消费者负面情绪风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

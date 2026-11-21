@@ -3745,3 +3745,139 @@
   source_type: media
   note: "LLM 预分类建议(med):财务指标对比分析，有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-20-anthropic-246
+  date: 2026-11-20
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic announces closing of initial public offering, including full exercise of underwriters’ opt"
+  quote: "Anthropic announces closing of initial public offering, including full exercise of underwriters’ opt"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUkFVX3lxTE1pMHRici1uRTBSYVNzNnJ5UVFiS1gtRjdJNWJZNUpDV0JxdzJVWHVUVEh5dXhVcVBYWXpSQWs2N1dnclY1aXJFaDhzM21OamVwQ1E?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方公告IPO完成，融资明确P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-anthropic-247
+  date: 2026-11-20
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic上市首日冲破2万亿美元，史上最大IPO"
+  quote: "Anthropic上市首日冲破2万亿美元，史上最大IPO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBfZzB1Q2lGbFJPVWExeFVlM29fRGtodlhmUjc4aDRQZjRPN0UtdHFZQUFQdkxuMzczQkYyUENXblNENzFBdXVFdGpOVlp6eG1vRFNSU3dMTkVzVWd3?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):上市首日市值破2万亿，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-anthropic-248
+  date: 2026-11-20
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic成功上市，创史上最大IPO融资纪录！7个OpenAI前员工，5年造出万亿美金公司"
+  quote: "Anthropic成功上市，创史上最大IPO融资纪录！7个OpenAI前员工，5年造出万亿美金公司"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE43cE43VnFQZ2pLLV9BZTZoeTI5M29UcE1xUlZNaEZFR2thRVJqYWY4Wl9vYm9BNDFTTWNFUm8wMnhwU3hKeml6ODJlWkxnbUxEQllVeFdXOHhaODM2?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):史上最大IPO，品牌叙事重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-anthropic-249
+  date: 2026-11-20
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic 破纪录IPO能否阻止AI泡沫破裂？"
+  quote: "Anthropic 破纪录IPO能否阻止AI泡沫破裂？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13bWFDdFlPQ05ZLU9tcTZoa3BVdExLUjBVdWQ5M2ZvbFd5OHB0OW85MVJCNGZsUUFibkZEcHMyUmtjNERFdkRBUW1zcVFvNjg2ajk1UXgybWdCWGw0bDVpLU1PSXpmQ1XSAWxBVV95cUxOTmJZOUlzTXBicGdwUmpMVDJfbHB5aW9leFctWkJuTzBjZ3N5cEp3OElMUG40VUd1Wmc3QnJIaFpyZWd1Zm1MUXYxdVNFYXBMZXVLV3FrVjROWkt0TlNSeVJ5R0RyRHBzamNIZ24?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO传闻叠加泡沫质疑，观点性较强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-anthropic-250
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic数学家称Claude攻克了数学界最著名难题"
+  quote: "Anthropic数学家称Claude攻克了数学界最著名难题"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxNbEJnNHBWWE5rVjZNaHYyZ2NQUXpyZzlncU5HaE1ySWNaYXJrOHZSQ05DNVpQQ08ydHVCTGYyaGNPbjV4T0lvRjVPVld5c1RUTDJzV3dCM2dzN2IweEVUWXZNTE5ZeTlTNHBCbjYzOUVLbW95Wkd0ekkzMU5WSmxfM1V2Nld2WUVsdG5Ya3hqbzRiZkloQ0VlT2JzVHp2dkRxUzhEaklGNUh6a1U5d3FqbU1kRGhxZw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Claude重大能力声明，同事件多条。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-anthropic-251
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic数学家称与Claude共同证明黎曼猜想，发布1737万行Lean代码待验证"
+  quote: "Anthropic数学家称与Claude共同证明黎曼猜想，发布1737万行Lean代码待验证"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE5BMHY0RTExRUpOTmVnWGF5OUlyd2F4d0N6ckI1QUFoUFZKWnZBMUZoV2k4d1BKdDNTb3B3LWZaa0JiQmU1NEcwQm5EcEtJN1IwWTVmbA?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):黎曼猜想证明声明，信息最全的一条。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-anthropic-252
+  date: 2026-11-20
+  dim: W2
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic敲钟，美股跳水：AI狂欢要结束了吗？"
+  quote: "Anthropic敲钟，美股跳水：AI狂欢要结束了吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxNSTdmUDVJNEJpOTEyZUtIRnFYaG04S0VqNnNuUVJvR0hrYlZnekpNbTRjQ3Y2bndKXzBSOGJ4LXZQYmtSTV9LM09Sb3BKaVJWRkV0ek5rY0VpY3NoWFY5M0NNNGlVcV9vU1loeGRTenIxYW9ESTlBZUJTNDYwbzJUTEpJODlqWjFzNXp5Z3JtYW9sTUtoclVPdg?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO敲钟完成叠加市场下跌。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-anthropic-253
+  date: 2026-11-19
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic(ANT.US)上市首日大涨17%！市值达1.75万亿美元 IPO募资规模超越SpaceX(SPCX.US)创历史纪录"
+  quote: "Anthropic(ANT.US)上市首日大涨17%！市值达1.75万亿美元 IPO募资规模超越SpaceX(SPCX.US)创历史纪录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE42WVBVMG9XNGdIU3h5YzdHWnJyekdmaUVJeURvamFQTHdISHdKV1lQMTRzRk5aTFJYZG9KcWR2aHltUGQ1UkVnbmJXRlJFVVhlZkhVNHM1TktMN0dmd1BkTw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO上市完成，募资创纪录，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-anthropic-254
+  date: 2026-11-20
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic IPO定价83美元，首日大涨34%"
+  quote: "Anthropic IPO定价83美元，首日大涨34%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxOQWE1T3BxOFR6dHA2VTZJR3g5M1NRSWZ2UFJ0R3otU1ZJMERhbmNzbURyM0NzS2Y3Q0t0YUl3N214dUZDcm9wUUtiR01weUEweEJHNWYxYnExRlhKVE1LRUxlUER6dXdxQzlkWWUxUzJ3YTdXTU50WE0xWjhFZlJ2UWNwcFBqNGZUWEFKMElNRm9qUm1GLW1DT0JlZl9xZw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO定价与首日表现，重大财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

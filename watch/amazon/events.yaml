@@ -2676,3 +2676,64 @@
   source_type: official
   note: "LLM 预分类建议(med):官方就NYC配送费用致客户公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-20-amazon-176
+  date: 2026-11-20
+  dim: W4
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊企业购英国上线Prime返现计划 最高返现4%"
+  quote: "亚马逊企业购英国上线Prime返现计划 最高返现4%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiRkFVX3lxTE1ZOTg3ZzVVUjBPN0Q5Q3p3VnlpN1lXWDk3QTJsNG1pY3ZoaV9jaEFlNGtfWVp3N2xYUVRxcVlkclktYnlmM3c?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):局部促销政策，影响轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-amazon-177
+  date: 2026-11-19
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "西班牙网购越来越贵！Temu、速卖通和亚马逊出现额外收费，部分订单上涨11%"
+  quote: "西班牙网购越来越贵！Temu、速卖通和亚马逊出现额外收费，部分订单上涨11%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi8gFBVV95cUxPR20wWjBic052ZkJJdGlxc2R0UktYM2g1cHpJNUxUNnQxRGhqenFVbUtlS2pIOUY5UEJfdFlOWHJsVEw0QWxidlRPUmVpYmNYeTNreGhGWTR3ek1ueENsdElMa1dsenJsRHBYZEw2LWVmczZfTndpS1JCWE80WThHS1BtXy1YZnFjTlVkbUt6Qm5SREhaQ1NpdXNpLUNNc0dyZE5abVdaNUNteThfcE9PNW9udk1JcUdnMW02aWVqWXpISWNYOENOZUVVSzhFdFQ5NmV2YTRFeGFmSm05SFVTNUJqOVpia1J5RTBpMnV4d0RKQQ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):多平台涨价涉品牌，消费者负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-amazon-178
+  date: 2026-11-18
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊云科技自搭基准测试防AI作弊 Continuum经审计夺33面旗"
+  quote: "亚马逊云科技自搭基准测试防AI作弊 Continuum经审计夺33面旗"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFAxLVI1N0NkREJRUFVVUU9GZ2VNY3BmYkdlcTRyczRDemVOUFJOWktfR3U0Ulp4Y3VrT1JPXzZqRDlBb2lwMm5DSDBQWDhRQQ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AWS基准测试成绩，技术能力事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-amazon-179
+  date: 2026-11-20
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "CAD25自动退款不退货：亚马逊加拿大站跨境自配送卖家6项自查"
+  quote: "CAD25自动退款不退货：亚马逊加拿大站跨境自配送卖家6项自查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5rTk0tUjhpMXN5YXh5T3IxczVzWWJHQUlBTE14SzNKQnlldy1sS19OOUFmTnZmS2ZkZVpScVhyVnJCcEN3R19XNTNrT1Y?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):平台政策变化影响卖家，一般事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1399,3 +1399,34 @@
   source_type: media
   note: "LLM 预分类建议(high):无人机海外首飞，技术出海里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-20-meituan-091
+  date: 2026-11-20
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "全国第一！祝贺四位美团骑手在全国职工技能大赛斩获佳绩"
+  quote: "全国第一！祝贺四位美团骑手在全国职工技能大赛斩获佳绩"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qNEFyQzgxQjc0cHdmU1JXMGVDTjZZQXRWMldNUFc1U1lRSWlBTy03LWtSXzNybzBLT2hreC1kazV1eHE2S213VlZHdkNQek0wemhUSFd0RURKdw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):骑手获奖，正向雇主品牌事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-meituan-092
+  date: 2026-11-19
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团索降无人机在迪拜亮相，配送将从取货柜延伸到家门口"
+  quote: "美团索降无人机在迪拜亮相，配送将从取货柜延伸到家门口"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPZXA1VXI0TWozdnpaNXZ0a0lTZkROR0ZGWHBuUjJWajJGeEdaMHBydmJrVTBKcTlnNjdxR3o3Y3EyeDNHMFhITnVQMW9tWlZ6NVE0dEx3NDBLR3FFWlJwaC05UzFXUHNZYldyWElMOGl1b2dQam9ZLXA1ejFQaEl0ag?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(med):海外无人机配送落地，业务扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2478,3 +2478,109 @@
   source_type: media
   note: "LLM 预分类建议(med):海外市场成果，非具体事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-20-huawei-163
+  date: 2026-11-20
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Establishing Telecom-Grade Secure and Reliable Network Operations in AI Era to Steadily Advance Agen"
+  quote: "Establishing Telecom-Grade Secure and Reliable Network Operations in AI Era to Steadily Advance Agen"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTFAwSXA0a1NuOE1MOEkwbUtlc1JvZ19qeGxhNk1vNmhtQ3hVRjctMHNoelRPYWJGNldxUmVSSlJOQ0JRRXp0b2xRQjc5TTdLY3ZZaHppakYwSlBOUFVCTWJXWHpmNzl0dVNFTW1PV0hR?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方技术方案阐述，正向信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-164
+  date: 2026-11-19
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "还有Mate90 Air、WATCH Air，11月24日华为新品发布会多款新品官宣"
+  quote: "还有Mate90 Air、WATCH Air，11月24日华为新品发布会多款新品官宣"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE42ckRfZzNkMloxZHM2S2RNYjRvemEtOUVRX0gwdDNfM2NJLUdPZEhWWHlCZlE1ZWR3Z3ZBQnpnMk9kNENyaFV4aHJsZ0lRdWcyeS1xVnFocjdZMFRq?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰Mate90系列新品发布会官宣。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-huawei-165
+  date: 2026-11-18
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "紫金锦、青云锦、丹霞锦、苍穹黑、雪域白，华为Mate X8五款焕新配色官宣"
+  quote: "紫金锦、青云锦、丹霞锦、苍穹黑、雪域白，华为Mate X8五款焕新配色官宣"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CbDVXMkVZWEstLWZXMDVwOHA5M3FUTTZWTHAxSnViY2tZTzZ1NVJOQ3diRmFoV1p3X0lmTmtFNllhZHpoREJxaEcwM1duS2hPRHhvcGZuUWR2YjJs?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰配色更新，常规产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-huawei-166
+  date: 2026-11-20
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "打造智能时代电信级安全可靠的网络运维运营，稳步推进Agentic Operations"
+  quote: "打造智能时代电信级安全可靠的网络运维运营，稳步推进Agentic Operations"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTFB2MlAyTmROVzg5Szd0UEFUT0MzU0JvZVdhZXpiV1BNQ1hFT2Jxbl9qMjljY1VJSll3OHM4QWhwOXBZVW1ndVNhMVNnQ3pCVnZ5M2pfNHVVUldCOWFlTTFXSU9JaTNnbWhicVpPYmZB?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):技术方案报道，与i1同源但可留。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-167
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为推出6.9毫米WATCH Air，主打轻薄设计"
+  quote: "华为推出6.9毫米WATCH Air，主打轻薄设计"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE04WmkxQ19VZUpFNERXZjhOLXg5VVFFcVlKaWxTamQ3dWRpR1Y1QzVNZlR6MTQyNGJpaWllQ2RIRTV6anUzc2Q3Y2lWek9oN05vSVZUQlZydnJZYVQ1M01sTWdIcGZwemxqeDdjNmdwZlpWTUcxa2syT0xn?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新品正式推出，可入库。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-168
+  date: 2026-11-19
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为智能汽车解决方案BU CEO靳玉志宣布HUAWEI XSCENE车载激光投影升级支持5种投影模式"
+  quote: "华为智能汽车解决方案BU CEO靳玉志宣布HUAWEI XSCENE车载激光投影升级支持5种投影模式"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uUUY0UGtXSUNhaElJS3ZUaFFNbDh1VHhtSFdYWEc0M1QwZjVidnFpS0E4LW9KRkpDZ21SOV9MSlhrcXJJWFJMWTlOMTJBbnJ1NzlERlFtZkU?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):车载功能升级，具体事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-169
+  date: 2026-11-19
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "薄至6.9mm还有长续航？HUAWEI WATCH Air 11.24即将发布！"
+  quote: "薄至6.9mm还有长续航？HUAWEI WATCH Air 11.24即将发布！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQWmZTSm9OV1I4ZVVHanJLUHlwRFBWSjdMdjltSjNmem90VnI4R0hfLUprVlo4UzVZN21UNVJWc3d5TllDUV94UXJhUnBuR3RHSnFIM0cyLXBTS1hHVkkyQVFMUldDY1ZXTTY4RExMSV9lNlJJSTlBdUdCZmJ3V3V3YkpaVzNOcUk?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品预告，信息量有限但为产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

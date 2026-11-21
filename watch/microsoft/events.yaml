@@ -2917,3 +2917,124 @@
   source_type: media
   note: "LLM 预分类建议(high):供应链安全事件，开发者生态受影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-19-microsoft-192
+  date: 2026-11-19
+  dim: W4
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微软发生重大故障，非常严重！出了什么事"
+  quote: "微软发生重大故障，非常严重！出了什么事"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFB5Zy0zY0R4WXlKQVlwVEhQeEppLVNMc1pQNnVncTA2cDNXU3p1cXFRaTdEekFvdC1PVnFrV0hDMmlrVFRNWmZncnFRUnl3eHZoWmRaTWh5YnMwY2p3?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):重大服务故障传闻，涉服务中断。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-193
+  date: 2026-11-18
+  dim: W4
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "宕机一天后微软CEO致歉：故障与网络攻击及AI无关"
+  quote: "宕机一天后微软CEO致歉：故障与网络攻击及AI无关"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Tc0F2c3ZOYTgtcTJiMDVoMHZHMzN5QlgxUldkdWdQS2tRTS1EUGZWS1QxaDY5XzdtZUhQTE4wQXRIWFNRa3BzeDNNRXlUX3RDTTRfYmd6VTNEbXF4?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):CEO公开致歉重大宕机，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-194
+  date: 2026-11-18
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，微软发布全新一代Windows系统"
+  quote: "刚刚，微软发布全新一代Windows系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Fdm9VMVBqSWtyRTF5Z3VyUlNTbUM4a0p5cUpQb1kyZ09UQ0ZFZlBiRWRESjR6Z2VWZ3p5MzUtTFpsYUFQMmQxbnJhNzgzc0VHRm5yMENYVzd4NHd6?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰产品发布，非官方源存标题党风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-microsoft-195
+  date: 2026-11-20
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "微软365服务在全球中断事件后逐步恢复正常-云资讯"
+  quote: "微软365服务在全球中断事件后逐步恢复正常-云资讯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9fNnpHcnpnZjlSd1l0NDROX0owNHN0ZjBHUkZJY0lJWTVnRXNNOXc4ZWh2RnB3MjNHVjhvNTZWcmZnMWgzM21pYzg5SWxMVTdFZ3ZjN0xneXZmMWZmczd0Xw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):全球服务中断后恢复，重大事故。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-microsoft-196
+  date: 2026-11-20
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微軟Outlook曝漏洞 如何防範黑客竊登錄信息"
+  quote: "微軟Outlook曝漏洞 如何防範黑客竊登錄信息"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE93aktDbUVSS3d0M3J2NjRFMzJIZ21NSFNBUUNRUldKcmdoRjAyRDQwTEZ1YmdoaXJKY0FQQUFnRVVqWVJwNkRwWS15SEFpTF84VURxdUxZRU9Mb3UtTlFaNlVB0gFnQVVfeXFMTkNXTXJLV0N3MUdXVW92eTZoZUpfUF9MM1lqdkdTY1ZuOWRMSWJ5RUY4TUwzREJnUk5kNVg2dkFfQl8ycGhNLWc1MUp0M3FDa2RMZjlkV0pPUUVaZ3BId191enY0MzBQQQ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):安全漏洞涉用户凭证风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-microsoft-197
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软Copilot应用将迎重大调整企业用户明年起默认启用内置Edge浏览体验- Microsoft 微软"
+  quote: "微软Copilot应用将迎重大调整企业用户明年起默认启用内置Edge浏览体验- Microsoft 微软"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE96dlJ1a0dFOGhkZU0tMXV1eklBaFhSQjR4eFhOU0FMLUlzUGdGY3g0dGNKMERZc2dMNWdESE9oQzY2ejc0Zl9DU1RnYkxwR3R2MWZ4TmhlOUtJYjE0NkVWXw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品策略调整，非重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-microsoft-198
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软宣布砍掉To Do待办应用，建议用户迁移到Microsoft Planner"
+  quote: "微软宣布砍掉To Do待办应用，建议用户迁移到Microsoft Planner"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE5lS0FpeTRaOFR5TWJrRHg5SjQ4eUhMajM4QzhwTjdWTWFDZWE3LXdDZ3FZQ053bk5kbEpqM19xb2VIUlkzN3FzUDVnNXlXVjVaM3NUcGhaRmtvSDlnUzVlQlpFTnVRT05nNkpGY2lwVVg?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(high):产品停用影响存量用户。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-microsoft-199
+  date: 2026-11-18
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软扩大与英特尔合作，自研AI芯片首度引入EMIB封装"
+  quote: "微软扩大与英特尔合作，自研AI芯片首度引入EMIB封装"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaFZ3NlhMQktGNWV1NE1ySm5pUWd3Rk1NUTd2R2lRTFE3ZDhWckJaZ0dySTVCRTREQWdlYWZzM05fdVN1YXhZdHpjUFA2MXM3NEx3aFVpd0xuXzJhNU5CVDNaSklDTERHcFpOU1UyTmhydk9wTld4ZzVsQ2FISjlNaGVKWU9RbmFEV2FpaFE1SVRFd3lfQ2hoc2FHNlVFa1VDTG5nVnNwZEVLUDE3WW9weG5fNXRxblV5?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):微软与英特尔芯片合作，供应链重大进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

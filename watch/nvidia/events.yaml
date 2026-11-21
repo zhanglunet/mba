@@ -2914,3 +2914,109 @@
   source_type: media
   note: "LLM 预分类建议(high):监管调查传票，显著监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-19-nvidia-192
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents"
+  quote: "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE9ScVotSFNubUFsUXphSFVPNWQ0UFNoaUlKOFpwejZ2UVh5LWRiUDB3emFhaGZKT0pPSWF3ejMxdnQwZ1JTbFktcGoycTdUNXluZnlpUENvYndkcktiS2xWcFFUVzdNZ0FXQjJHSGRlTDRWbE80ZEY3dFNRdw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):技术博客展示Omniverse生态能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-nvidia-193
+  date: 2026-11-19
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA RTX Spark 紧凑型桌面主机现已上市"
+  quote: "NVIDIA RTX Spark 紧凑型桌面主机现已上市"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE91S0RQTko3eUxJOXRlX25Jdm1oM3dSaHRTTVppQ3ZHMXFqZDdlOXFKX1dNcEFHbW5aSFVvVmd4UjBpTUpmZk5xZnVkcXFfOU5uNlhfeFdYcVk0cVNa?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):新产品上市，社区渠道传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-nvidia-194
+  date: 2026-11-19
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达RTX Spark桌面主机首次亮相：最新Demo现场体验，本地AI玩出花"
+  quote: "英伟达RTX Spark桌面主机首次亮相：最新Demo现场体验，本地AI玩出花"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9TdWN6VURnQzNuNmJXZzFjcTVOakVxR0xFelhZQ29uTUQ1WHhZYUtuZENLbUZqWGJRZ1g4VUpsS0NHREdzZFYzSkphOGJOWExsbklsR3lpSFkwVGZr?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):新品亮相体验，非正式重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-nvidia-195
+  date: 2026-11-20
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "加州向英伟达发传票 调查是否让中国取得先进晶片"
+  quote: "加州向英伟达发传票 调查是否让中国取得先进晶片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE5NalNLSjM0U0gzbXItc0JWYVRHWkpWaWkxRmFLRjB3dE9JQ1FZRU5ZS01aaWM4LUdWS0QwaFlLRjJvZnRnd0dZeHN0QnBpbE5nSHlBRFVvTUc4emFyTnFqdlQ3S0ZmWlBSVjJZ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):监管调查传票，涉出口合规。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-nvidia-196
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "穆迪调整英伟达信用评级 从“正面”下调至“稳定”"
+  quote: "穆迪调整英伟达信用评级 从“正面”下调至“稳定”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9sZEdYa1ZwLUtBSjE4cGNSa2tsNXNJSHBwWmprQVhCUzI4SmJndXpCMUtad0xNbF9KRC15LTkwdnl4OG9JREZUeV92akNibGM2UENCTzZIMjliTmlpenQycw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):评级展望下调，影响有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-nvidia-197
+  date: 2026-11-18
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "从英伟达(Nvidia)到苹果(Apple)，美企面临在华业务困境"
+  quote: "从英伟达(Nvidia)到苹果(Apple)，美企面临在华业务困境"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgJBVV95cUxNZUV2YTEyc3NsNVY3YWoxeXRaYlJ0MTFVd3p0cmpZVFJMcjZ3OTZxU0c3YjRzdmt2MnhyUDJPeUR5UmY3c0U3REE0LWU5RTl5bGpOS0c2bEhJZ0h6NGdnbW51XzBOanR4d1hWcW9NckR3NVVrZmNGVDFKNkdDaExWY1dEeTZRdmphRDQ2TWQ0SG0zZXNjRHd5S1UxVFQ3dGpFOGZ6eHhYRDFzZWRWSDZERUZiMU1iYVl4NUpXNHNzSnprSmdFdl8xVEw3azlQTG9SOUpMUV9GUldlVnd1MjdxRDNVY1dDaFRqZzRfVE10M2N0ZTlHY1BSZDlwUWV4eDktdlhFSVJiRE9oMlUxTmoxb1NON0xaWW5ISTBfV2c0ajU1dVp4YnZYUVhuUVNhbjNLVHc?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):泛谈美企在华困境，关联度一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-nvidia-198
+  date: 2026-11-18
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达发布2027财年Q3财报：营收1158亿美元，同比增长103%"
+  quote: "英伟达发布2027财年Q3财报：营收1158亿美元，同比增长103%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPS2ZDaG44RzJyXzVJMEsxLWl6N2lTZHdFYVBXY0VocEhrVnNBZzRFSjBBYVJnLVRNRGp5WG9Rc1M3QmY0NzNyMWRKUVowOWR4aUowU1EwdDc2VklwREE0MnNDLTBKbXlzUWx6RnJ4QjRNdTNDX3BOQ1lJVWJySmFsU3pCRW1ZSGdJ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布，P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

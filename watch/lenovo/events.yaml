@@ -1592,3 +1592,49 @@
   source_type: media
   note: "LLM 预分类建议(high):财报收入创历史新高。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-19-lenovo-104
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "The right AI infrastructure at the right time with Lenovo AI Express"
+  quote: "The right AI infrastructure at the right time with Lenovo AI Express"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxPdUJtNFhfSmZldHRNUTk0c3BJVEZfOFBxU3ZCZmhoLWtERVJDSkhvNkNVZXRPTENxNmpJVG4teE91RGNVWkJmUnYxVFB6NlFMckJsa2hoaFI3LUJPY2d3Ujk4a3g5cnRuRlJKeHNPaExIZnJxNUQ3YUV5Ynp2U0pxVTF3?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方发布AI Express方案，属产品服务动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-lenovo-105
+  date: 2026-11-19
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Delivers Record Q2 Performance, Confident in Long-term Hybrid AI Opportunities"
+  quote: "Lenovo Delivers Record Q2 Performance, Confident in Long-term Hybrid AI Opportunities"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE1hSjRJM3JyVFZ4dDNBWDNVcG5NeGQ3LTFoNXNTa3VlbzN4eXp2MzU2djg2SFYtaVpmUm1JcTZIanlNZEJ0LUYwbi03c1c4NmRYa1Z2bF80MlFrS1NBV2t5QUY0WERGR3BySzlMQ2JlcnZXOW9HMjhMRg?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布创纪录财报，关键数字事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-lenovo-106
+  date: 2026-11-19
+  dim: W8
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "联想集团：2026/27 财年第二季度业绩"
+  quote: "联想集团：2026/27 财年第二季度业绩"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwgJBVV95cUxNcDl5YkpqTEFKYkcxNmFrUW9qc01kRjdPcEMzMGVESGJvU1Nxbl9HMjZTT0tiME1xWDdIeFl4ZHZtYWNucDVXdU9IR1B2QUdOa1hVWGs4NnNjMjlnakV5ekFTLTVKZ1JPbDA0QzRaQm0zTjJ1em1VaDZYSXV3RF9fcHd6Znl3YTNVYmRJNE43RlFZXzBXaGpJVkxJTXFrWkY0SjRQMFZlaDZ2ZFl1ampIVG45Tmd5R09STHNtdmtjSmhrNGgzVWtXbmxURzY5bXJWaTdJVWNiUERZaDZFb1FydW5INmFtZFRkZG1Id2FjMVBneG55dHpqRnFQbTR2MHdjMzdLeE1tRWZBWU9QNjljLVZWdzJ0Yi1obmNubWdqQ1ZYYWxQWWFxUTNfakEwUTh1WnlzampUWVd4VHNER3pLOGtB?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布，P0事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
