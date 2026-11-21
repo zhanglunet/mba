@@ -1,0 +1,3318 @@
+[
+  {
+    "id": "2026-07-21-apple-020",
+    "date": "2026-07-21",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果iOS 27开发者预览版Beta 4发布：国行iPhone期待的Siri AI继续缺席",
+    "quote": "苹果iOS 27开发者预览版Beta 4发布：国行iPhone期待的Siri AI继续缺席",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPM3JVM0NaVVVuOTJLNDYyTVpualJ3cktvWmN1R2p6ZjI5c2hIUXNQOVM2VmJ6UjlnYzNyR3Y1Nmx3cFk3SEZ1TkNOaDlBenFLRzl3U3kyOXFFaFpyWjJ0M3JrbVNDME9oV293aGZyMW1EdVg1eUpYS294NjFuN0x3LWo1Snp5M3pqbHp2TjRVRGZ4NmJuc0tpRjlzSm0yWHJjYVBkOWZQUQ?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):国行Siri AI缺席，用户体验差异。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-20-apple-021",
+    "date": "2026-07-20",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果 Apple Store 西安万象城零售店完成工商登记注册",
+    "quote": "苹果 Apple Store 西安万象城零售店完成工商登记注册",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQTTZReVRkZU9FdFNPUVZEd2M0STh5bUpzZV9WX3k0THhyTjVYNHpUTThsZlJrVmVUNFVXNDlzNkdkYUF2OVRuTlhSbDV1ZEVqZjV3SHk4V2xPWkMwcVk0YmhGb1o5ZXRNMnIwOEZYWTlBVzA0bXV6M2pndmVhSFl5UldiREZ0eERIQVAyWWtPQk9ybXNQcXYwbndIN1B3ekJBZXFfWDljRzFQbjNnX1ZqZVRrc05EMWtrXzNEc0VESVpmdUlEMHRRNFc2ckRxS2d4QW93MzNfUndHZkRRMVdXRzZicnFYWUh5YWw1akZuYnNhaUUyRzMxdGRQOXhMTkZIekdoRWlvSGw5NTdUTkVQYVhJZnB3NUNhSjJNRnRKR3VIam41MllnczF6MEV2bXdkalM2REVjM1hDdkNtLUhWOXcyTjdEN00?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):零售店扩张，商业进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-apple-022",
+    "date": "2026-07-21",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果发布iOS 27 beta 4：Apple TV应用新增剧集自动下载功能",
+    "quote": "苹果发布iOS 27 beta 4：Apple TV应用新增剧集自动下载功能",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUSFhuQ2plVFMzaDJZeFpGU242YVdrZkFkZzY3a0E5Vkowb2ZhOFhhY3BsNDFWc20zS0xFNDMzZXVtUXY5ZldRazdCb2NCU2xId2tqdEVFUmpjUEVjeEh2T1RR?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):系统功能更新，产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-apple-023",
+    "date": "2026-07-21",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果 watchOS 26.6 RC 发布|Apple Watch|iOS|Apple|升级|版本号_手机新浪网",
+    "quote": "苹果 watchOS 26.6 RC 发布|Apple Watch|iOS|Apple|升级|版本号_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1NdXZ0MW5KeXNuYXFCbnZBcGdOUDVGeXF6SmRva0RjQS1DSWd2TFhPZEVFYXJlV1ppTzBBN1VjTjNyMFkzOEZuS1h3UUlqd25VcDlZd2ZaSTMtTDBSMF9UcTRvQV9tOURCQndmYmpRTHJMUV9MUWg2cVRvU2lwNUk?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):系统版本发布，技术动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-apple-024",
+    "date": "2026-07-21",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "三星在美国推出首张信用卡，与Apple Card正面交锋",
+    "quote": "三星在美国推出首张信用卡，与Apple Card正面交锋",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1uQ09xOTBUQXBSQjRiNWJTemNNQ2pPQzczRXd0SUxwUy1XSkR0Y1dwX0RqTXUwRlRuT05JUzAta2ktc3ljME1fdktjM1lCdXBlWERqdnExX2dnN3VUUEdsb1p3?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):竞争对手推出同类产品，市场竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-20-apple-025",
+    "date": "2026-07-20",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果 iOS/iPadOS 26.6 RC 发布|iPhone|IT之家|macOS|Apple|升级_手机新浪网",
+    "quote": "苹果 iOS/iPadOS 26.6 RC 发布|iPhone|IT之家|macOS|Apple|升级_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOZzh1WEJFQm9Hd2RFYzdFVFR2TUZjSlJOVVVwbVc1ZW53M21LQ3k4di1GSGhvWjUzUERiWFpOcHZRMVFkZ3J2LWxCNzVudUZmSTJobDJjdlUwM0t2cV9BTXJnRHFWWkh4WmhJUUN4LTREdmlGeUh4OTdFX0g1TGVTcDdtNy15QkxxSVhySWhSUTdadmtTUGhnVDRwWlpUOUhiU0w5MTloTE8ycC1YanF6ZGtfNG5PQm10RHJtbmRia3FBelJxV2c1SXFDNjAtZ1ZIMW1xVzg5UndwU21oeVVMTk4tSEZDdnJvNzdFOHJFTUNfZ0dKcnFVOVFSSG9SYmM?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):系统版本发布，技术动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-apple-026",
+    "date": "2026-07-21",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果 macOS 27.0 开发者预览版Beta 4 发布|Apple|版本号|机器人|固件|测试版_手机新浪网",
+    "quote": "苹果 macOS 27.0 开发者预览版Beta 4 发布|Apple|版本号|机器人|固件|测试版_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOdUVRTzlwRzFPaWpHZ1U1OFpjY2R3cHJJaHZad1duNHlUQnBITkUxTjdneVBhRnBJTVJkUFctc1VPZHhqZjRMX2V5cFd1THJ1YmhKMHVZRkptSVl6cE5oa0VfN05USnBXaFJvOTdyb2x0V1pNMEdaTnN0dnRZSkpVVUdST2h4dnlpdWNJZnNDR1NxMkhLWHR1MmhFa21uTkRJTHNGTER3SEhBaEdnUkdka2FGSEFhZm5JbkVrQTdOQktueGhSZ1o2ZURrXy1xRHV3SnBTWEc3ZjBfNXo1TnlwcWhEd2NYTFRMLUM5aDYwYzhOUmZ3WkFfcWttcGlGRTBDSlJOMHo2anI?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):系统开发版本发布，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-20-apple-027",
+    "date": "2026-07-20",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苦等两年，国行iPhone终于能用上AI了！苹果Apple智能牵手阿里",
+    "quote": "苦等两年，国行iPhone终于能用上AI了！苹果Apple智能牵手阿里",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SQ21QVWtwMkl0QXlORVVXY2pmRjllMlpXaFlUOGpXbmllcTNkZGdRV0ZGYlRzVEVwRHZQOER0dng2MEh4Y3ZsTmJHRGxPWmt5M2IxQk52M3Q2bGc0MkE3UkFENzA4aXNrWFdfMTJQUG5iZw?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):国行AI功能上线，重要产品突破。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-20-apple-028",
+    "date": "2026-07-20",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果 visionOS 27.0 开发者预览版 Beta 4 发布",
+    "quote": "苹果 visionOS 27.0 开发者预览版 Beta 4 发布",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOMWFoejV3ejNFRWpGVDlFWXdHZ0ZUc0JNc3JyZmtXanoyOEJLZ05oZldXTjFvaW5ITWluMEJlcmNxQnRYVXA0WHMydy1ZaEk0eVhfdkVqcWdfZi1hSmIwcWhpcnZJd0hvNVZrVDJWdy03Q3ZXSmI5RnNmZDZVS1hjcmxKSjVFN0h6dVVWOWpnV2g0bUtaOTM3cmhMNFJQQlJiQU44NUhScnl5RnMwTXR6dFB0aktBTWpfRklNOEJISzQ2RTl6dHZnTjRnNUpkR3U3bW5yaVlOOE9JMk9oQlNVaVRZdnptZERlNGNVbDRJMUpVVTZGSU0zSw?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):系统开发版本发布，产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-029",
+    "date": "2026-07-22",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果7月28日在美国推出Apple Upgrade设备租赁计划",
+    "quote": "苹果7月28日在美国推出Apple Upgrade设备租赁计划",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE93ZDQ2eXFxSC1sQnJqS2pkbENlVWwxYjUtT1I5UXZMYWJqYTJsNmdLQXBsYWpBWEhvY3B1c3k5TGJPdWMwR1NlWVU3eHVjVmNfLWRROXQ5OE00RkU0OUI0TkNB?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果新商业模式推出，涉及销售策略创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-030",
+    "date": "2026-07-22",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果败诉！法院维持原判：Apple Watch侵权需赔Masimo 6.34亿美元",
+    "quote": "苹果败诉！法院维持原判：Apple Watch侵权需赔Masimo 6.34亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9vT2E3aXdlUVFEd3NiZ0VwM2pmUzRyRG5kQUNjRzZOZVhnUE9pb0g3Nk5kNjhET3dpY04wRkE2SzZlcDlRdk1VbFFZa2c2UXNRalVvbno5U2Jld3FC?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果诉讼败诉，涉及知识产权与品牌声誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-031",
+    "date": "2026-07-22",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "月租iPhone、iPad成为现实：古尔曼称苹果下周将在美国率先推出Apple Upgrade设备租赁计划以刺激销售，年年焕新计划将逐步停运",
+    "quote": "月租iPhone、iPad成为现实：古尔曼称苹果下周将在美国率先推出Apple Upgrade设备租赁计划以刺激销售，年年焕新计划将逐步停运",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUmlaUFRtZm5fbUlXZlJvSXpfUC01UVh2T3BOSzF3NXJRTlYyQW9IYzlFQ3ZPNXA3YUJFWmFzSC1PQ1czNDRqNEVVN3c0dUFITmJubjFMMUZTdnVQc3BKeU84bkM2ak9ac0NlY3BBdnVQRGtDZFZXMVYyU0JZVEM1eGpNY09TT21iejNTZQ?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果推出设备租赁计划，商业模式重大调整，影响销售策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-032",
+    "date": "2026-07-22",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果手表Apple Watch专利侵权维持原判，仍需赔偿6.34亿美元",
+    "quote": "苹果手表Apple Watch专利侵权维持原判，仍需赔偿6.34亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1mTTlKQ1A5RU1scFROeFJ5U2JtbTh5NWYtd0dxTDlPQ1kwbHkxcUFoQ0VvVlJNaHlCNm1JckFqaXdTUUFSaTVPc0FnVTdFYTBsQzVhU3pSNk1raDU1RmtFZU85NGkybUszUVE?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Watch专利侵权诉讼维持原判，需赔偿6.34亿美元。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-033",
+    "date": "2026-07-22",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果硬件全线订阅制？爆料称 iPhone、Mac、iPad 将开启以租代购模式",
+    "quote": "苹果硬件全线订阅制？爆料称 iPhone、Mac、iPad 将开启以租代购模式",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9DUDYxWndVZ1h0OFJ0RHdDcDF3bWVQUF82ajZlT1RtdXpXa1VmWHEza3l2Q3VjWkhwLTl5SWFhYlRra0V1dFZReDN0M3ZtOF9WRlduMXlJUGlESkhoRVhHbE9hRzVDRHBBNlZYaFV1aw?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):硬件全线订阅制爆料，涉及iPhone/Mac/iPad商业模式变革。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-034",
+    "date": "2026-07-22",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "iOS 27代码显示苹果可对欠款租赁设备启用受限模式|Apple Watch|IT之家|彭博社|Apple|系统_手机新浪网",
+    "quote": "iOS 27代码显示苹果可对欠款租赁设备启用受限模式|Apple Watch|IT之家|彭博社|Apple|系统_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVUZRNjg2cTFyM19EamNJcTdJUFV2ZDh6c1RuNlFOcFFBSnppZWgzQkRLSHhtZllJTzRKejdZOHVHaFpPZk5iMndKY0dDcFFsdHpja1V6UnUxckRxUXJacjRFaHg2UVNkdV9WM1RTXzFKX1hIRmRZeHhHeTJHOGRadU55VHNSZlJBY0ZBZldnZU5MTnlqZDFvNk5IRWE0MFBsWEZLaEtVaw?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):iOS 27代码显示租赁设备欠款限制功能，产品策略细节。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-apple-035",
+    "date": "2026-07-21",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果销售模式大变革：联手Klarna推出设备租赁计划，降低购机门槛刺激销售",
+    "quote": "苹果销售模式大变革：联手Klarna推出设备租赁计划，降低购机门槛刺激销售",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5OTDN1TktJRXBSNXBtaEozMFJtaTRZUGRsanhHU2UyakNIQ0xOSUttbkhIcUZjaEtzNVJZOS1PNDFQaDltLUdIVG5GSllXdk5LcUh3?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果联手Klarna推租赁计划，销售模式重大变革。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-apple-036",
+    "date": "2026-07-21",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果将于7月28日在美国推出Apple Upgrade设备租赁计划- 快讯",
+    "quote": "苹果将于7月28日在美国推出Apple Upgrade设备租赁计划- 快讯",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE55M19ZUno4d2FBZWJCenQ0MHBydVlaM3RydkI5Sk8weVJJcEdIeWtZd3VSdEV2VGJ5bEM0ODRQdHM5LV9zRUtFbjZNM0lEdjEzSDZkejJ0VjY?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Upgrade租赁计划7月28日上线，具体执行时间确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-037",
+    "date": "2026-07-22",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果发布 Apple Watch 真实案例视频，山地骑行事故中帮助挽救男子生命",
+    "quote": "苹果发布 Apple Watch 真实案例视频，山地骑行事故中帮助挽救男子生命",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1MdThxd0Q3OFZzOFg0WFdETXhGT0doZWZ1RHVISFNRdDY3QU40SEFuOHJjajZJWDZ1eFlUQWJ2dXpVYU5LaFFIOW12Y0Y?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Watch救援案例宣传，品牌正面形象传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-038",
+    "date": "2026-07-22",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果联手Klarna推出“Apple Upgrade”租赁计划，欲借订阅模式提振硬件销售",
+    "quote": "苹果联手Klarna推出“Apple Upgrade”租赁计划，欲借订阅模式提振硬件销售",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5UbmQ0ZGYwRGV1NFZTd3dyWUZVc3lac3F5b0Q5SjUwdFVEMjdxSUJIMHJGNUt4U0R6dmVnalZweklhZW85VS1KX0dzUTQ?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果Klarna租赁计划提振硬件销售，商业模式创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-039",
+    "date": "2026-07-22",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果被曝准备推出“硬件租赁”计划 欲刺激iPhone等产品销售",
+    "quote": "苹果被曝准备推出“硬件租赁”计划 欲刺激iPhone等产品销售",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB4YlNnZmdFTElaWkVicnJiZjZHSUxhWkF0akhUbWRFUTVZTGI3T3dkYTRIZDYyMDlVc2NnRHhkMUlIbUp3ckV6NQ?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果新商业模式曝光，涉及销售策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-040",
+    "date": "2026-07-23",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果 Apple Park 游客中心启动升级改造，AR 展览区暂时关闭|加利福尼亚州|IT之家|苹果官方|库比|蒂诺_手机新浪网",
+    "quote": "苹果 Apple Park 游客中心启动升级改造，AR 展览区暂时关闭|加利福尼亚州|IT之家|苹果官方|库比|蒂诺_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPc3FMQXVUbk1weWdfR0tvcDVVN0g3ZWZKME90VUFfSzA4dFQxQjlBaVRkaHY3dVRkYVBNTmlZVmpWenZlblVOZ0tMT3cxOUhfWEluUm1BRm5NeFlZWWVyZEdhTUwwel9BWnRNM2s3YzNrVi1hZG56c2NYd2k1ektka3JLdC1kU09PUjNwZDk1d2lhVFlVMzNRTXZaYTFwZGNwSGJLalo2NEdObnk0c19QaTItX21xcjNpN3c2WGdVWWhOdl9HWm15cW41N1hZMnhFTzhkamNKWHNLNE00Mjg2V2k3NVRVeEFqTmkwY3BUS0FiWjNMUTN6NTdzX2tHb00zcW9Kaw?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果官方设施升级改造，品牌形象相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-041",
+    "date": "2026-07-22",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果拟推出设备租赁计划以提振销量",
+    "quote": "苹果拟推出设备租赁计划以提振销量",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBJX3MtckNQck1xa2JHSTRpR1NtRUFOZnlpOWVjS0p4bUFHYmNyUkt2U2Fkamc3VUh6SWZwZEpmenN1NnJwSllydTRfbWF0NzhoZ0ktQXY1TUZmVF9INHpaNg?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):设备租赁计划重复报道，商业模式创新信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-042",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "AI购物助手或登陆苹果商店，Apple Store隐私政策已更新",
+    "quote": "AI购物助手或登陆苹果商店，Apple Store隐私政策已更新",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEckJGOUlVdk5EUS1IT29BSGFXbUZmcmRTZ1BhZ3VFZzBiZnBxWEtxdzM5QlR2VEc5VG9SamhrMUxUYkM0S202UV8tSzVqT3FKT0hCUA?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AI功能上线+隐私政策更新，涉及产品与合规。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-043",
+    "date": "2026-07-22",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果牵手Klarna推设备租赁计划，将取代现有iPhone分期付款项目",
+    "quote": "苹果牵手Klarna推设备租赁计划，将取代现有iPhone分期付款项目",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5DMVhhbXRsaDRGTm5NN2RhMEpYSC1KYWI1OVRnTndLbDNJSDFYSjIzWERHQ2hNZmN5QmFHNXFmU2tlekpKcnZmcl90Y2Z3MjY0NkJr?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):与Klarna合作租赁计划，战略合作与商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-044",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "曝苹果拟推出月租iPhone",
+    "quote": "曝苹果拟推出月租iPhone",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jOW5Pck50VlBfRmI5d2JjeERxVGlKbkRyTzV5ekxfbEZ4RWJSall3LTdpbXl5dE5RU25QeFZ0bnQ4QXBPYk4xVFZFTlNPdTB4UGhuMzYzWDVnZFpKNmdlbjFR?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):月租iPhone计划曝光，商业模式创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-045",
+    "date": "2026-07-23",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "3nm芯片+Apple Intelligence，苹果终于舍得给iPad下血本了",
+    "quote": "3nm芯片+Apple Intelligence，苹果终于舍得给iPad下血本了",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdUYyM29oRzFYTlpKZ0FrS0F4RkkzdFlJaVAzTnY5R3EwakN4eE1OUUo4TDFUVE9yZXNnSzhIcEdRMTdHYTJxNlNfMElWX2w4UXZ5OTIxZkdPay03Q0ZTLUlzRVhTeTF5LW5iQS1qTjJWblJ5SjlZNUpiMUd1ZHlxbEhqTV84VkZ6?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):iPad产品升级，3nm芯片+AI功能，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-046",
+    "date": "2026-07-22",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果Apple Store应用即将迎来AI购物助手",
+    "quote": "苹果Apple Store应用即将迎来AI购物助手",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5mZlBvVkd6dTRtT0tocTZjbUtEWUZ4cnFkTllvV05SWDd5aHBTQTFrUmJrSDBlVTB1ZjU1LVR2dlMxM3VkT1lXOVpTODcyeUVzaUxob21DLUYxN0RjdUh5NA?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):App Store AI购物助手功能，产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-047",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "传苹果将推出设备租赁计划：涵盖大部分iPhone、iPad和Mac等产品",
+    "quote": "传苹果将推出设备租赁计划：涵盖大部分iPhone、iPad和Mac等产品",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTEtEUW5pZmtQUXpNZ0QxbEs2aFJ5LVZvQVAxRTJqXzhTYVJjMl9yUy1FSERfS3V5a2xzRnJFd2Z5RUpWVzNRWnNfUXc3Y0dmTHdkS1JXTTRQalFCQTRuLXlvOXNzdW9iSDJyRUR3Z3YtNHc4bXpscEhsRkZUODFtOWV2akY4ZXFKZm80X3B5Z29nRHkwX0J5ZlNtOEMwOW1URE81UE85WVRuM0NyN3lfdjNR?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):设备租赁计划重复报道，覆盖多产品线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-apple-048",
+    "date": "2026-07-22",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "WWDC26前瞻：Apple Intelligence在海外会是什么样",
+    "quote": "WWDC26前瞻：Apple Intelligence在海外会是什么样",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQXzM4aU02SHBSTWFTTjZULWUyWjg1bUhIWmNPTjhQQWVYb2ZfczQxemZ2eXR6ZWE1STViUzIwNFRGMUxMakJoZHFiM1VVaGFQNkI0MVV4TDYxMG8zb3dkRWhqaVhHbUdJUmtrRWJIMXA0ZHp1RDQxbkY5T1VjVVltMnQtVzdPa0ROc1FCb1ctaTJZeUNiY3gycWgwbmhSQnA2ZUlvWTlPUlM1WmVlZF83R2VVbzVrb3E5V2xPZHVPbjExN3dEZGpDRE9xVkI0UlN0MkZWQXJvaFVyd0xiZHBSNEItUWJ1RGUwbzg3LTktSU5MUQ?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):WWDC前瞻分析，Apple Intelligence国际化策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-049",
+    "date": "2026-07-23",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "史上首次!苹果手表上线Siri AI:11年语音助手彻底进化",
+    "quote": "史上首次!苹果手表上线Siri AI:11年语音助手彻底进化",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPc3VoakFIN19UWXozTjNRb1J5Rk1GQzVVd0JrU3J6QTkxWFR1amZfZlY0VWdJQkkxNVV5ckhhMVF1ZGU4cVJLVWFpNVgtdzVERTBCNlZ0cFhkZ3UtUzB4djJMc25YanVlSkk1S0s2d2dURTkxYWVlYmV2SU1HNmZsSQ?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果手表Siri AI功能升级，产品创新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-050",
+    "date": "2026-07-23",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果 Apple Store 应用有望上线“AI 购物助手”，辅助用户挑选商品|数据|苹果公司|隐私|虚拟|合作伙伴_手机新浪网",
+    "quote": "苹果 Apple Store 应用有望上线“AI 购物助手”，辅助用户挑选商品|数据|苹果公司|隐私|虚拟|合作伙伴_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPR2xZNnYxbTJ4eURfZWZKZ3JDQjhnbEhfXzg5OVZEOF9wMWFYcWhmNDhnVHM0ZDZWZmUzTGZoMmVNc2paVzV6bEg3U3hBaEVpaTM0QzRHY1NNQkpmRTdxdkxWNEJKVTVURDU1UHdMTXJ0c215RGV5eDVVcEtJVnFkcDhTSHR1OW1PaExqNWQ1bUdjNVplYTdSX2FuNXRscGFMaWs1d3UzY0FZUGlQcDcyMWpBS0x3dU1SMnB4eDRzdVV4bmxTZFBrX0ZHR0RyWXhNUm9BVW83R2lPNDdncEVYV2kyQnVFN0RVY3RQMVVPSVVPdTVpdUprWHhCNEsxTGp1dG8wbWZua0RtMk9xVGw4?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):Apple Store AI购物助手功能规划，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-051",
+    "date": "2026-07-23",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Street Color：苹果计划于2027年将Apple Maps整合进Ford的通用电动汽车平台",
+    "quote": "Street Color：苹果计划于2027年将Apple Maps整合进Ford的通用电动汽车平台",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNzBjN0ZuSDZXeDVDZFZDUFNWMVZIY0NuTVNMOV9odUt6MURuX3ZmLTd1WnplS0dNSi0wdVRETTdxaVY3NWQyM0w5M3RZeTcwU0ktTE9TU3RYOXhJZXUzNTB5bWdKV3RNSWswUEVBcXdwQVhnOGowekVVTExzcVF0emRaQVFfS2lWa3pKTmJWSldVNnVkd1lnU0tSU3hyZlk4bnd0d09ja28?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果与Ford合作整合Apple Maps，战略合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-apple-052",
+    "date": "2026-07-24",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果公司正准备与 Klarna 合作，在 7 月底前推出一项新的设备租赁计划。",
+    "quote": "苹果公司正准备与 Klarna 合作，在 7 月底前推出一项新的设备租赁计划。",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWHprVy11MTkxb1dRVFhUZHhHLTF4b3dfNjF0cWpodTVfcEIyTGY0Smdlc1RDSDNobGwzRXU2eEZ4aGRYTGszbXlpdkp1TmRjQjV3LWJXb0tHSWFkRDBqa1lYYVZ5M3htQTljdmltbkpzSlRYcWttWGJqOWUydWJMY3RJWlBCUS1iZUlqSWVCTnZfRXE2?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果与Klarna合作设备租赁计划，商业模式创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-053",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果秋季发布会前瞻：国行AI这次终于“不鸽”了",
+    "quote": "苹果秋季发布会前瞻：国行AI这次终于“不鸽”了",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBjVTROY0l2dmtLeVBncy00aHo0Q25VR0pWMWdILXhxWUNnMUY1MDVHQl9udlUwdzhqcU5oaVluczRKMXljWWRVSXJ2N2hILW5JSDFaaTduZw?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):秋季发布会预期，涉及国行AI功能承诺。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-054",
+    "date": "2026-07-23",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果拟推月租模式，能否落地中国？",
+    "quote": "苹果拟推月租模式，能否落地中国？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1sbW5LWEFWM2M0RWxhdDdPcWFSb1pFM25yOURaVVo0WEEzb2dqUUVkX2ljQnlWMFlsQjNHeGMtck1pTzg3c0dWRERJUDgzVTRPRGJhSGhyeXUyWlNSY1ZtUzRn?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):商业模式创新，涉及中国市场落地可行性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-055",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "外媒：苹果 Apple Store 应用将上线“虚拟购物助手”",
+    "quote": "外媒：苹果 Apple Store 应用将上线“虚拟购物助手”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdXdBbl9PUDRiSEViNmRiVzVLRkxSM1lweGlBRUxfMERZUWhpQzFidVc2cTZqb2YxN2tzMTA1SlZzSUdtNU10QS1STmtkN3JBaGpNMVFCMGdpVmhqV3FKV0hKUFVqdTRmbEdlWFRZVl9OSmFXNUowcmhzdm5IRTVILVItZmxuQ200eVFBOG1LME52TUlHV25GTDVFSERnQm9MQ0dLUjNnSUJCTFdaUXp0VXh3?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AI购物助手功能上线，零售体验升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-056",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果全家桶「年年焕新」来了，到底划不划算？",
+    "quote": "苹果全家桶「年年焕新」来了，到底划不划算？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1IV1RrOURMckd1cE41bWw3WTNFS2E4cVlDY3Faempwb2pxaEtZcF8wQnQycWIyaGprLVJYaWtRdDVMd0U?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果产品更新策略评价，涉及消费者认知与商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-apple-057",
+    "date": "2026-07-24",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "影石产品入驻Apple授权专营店！全国500家苹果店能体验Luna Ultra",
+    "quote": "影石产品入驻Apple授权专营店！全国500家苹果店能体验Luna Ultra",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWDFwb0pTWU1oMWI3WkpacllyWmdWdkZxYno4X2Y5TUVpVVVLQ0c4QWk5SEpxVEdCX0Fvc3JSRnVKRkltVjN6SkU1ZVk2Qk43UUlLYlVzYzNfWTg0NnNrYzloVmx5eTM4SG5YaHlGakxtUU51eE9kbVNYSW1PaUwtVVlJU0llLXB4SmRR?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):第三方产品入驻苹果授权店，体现生态合作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-25-apple-058",
+    "date": "2026-07-25",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "报告称苹果 Apple Park 园区 23 日发生火情，消防人员出动约 45 分钟完成处置",
+    "quote": "报告称苹果 Apple Park 园区 23 日发生火情，消防人员出动约 45 分钟完成处置",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hYWo2RmxJS28tUzU3NVU2UWhjY2RyZ0p0bW1JaWhPRjZjR0JSeG5VYjhPSjZvZk5iNUIzTExqRFowTW9jWW5IOFg1M3V6LTI1Vi1DR0VDTnFpZEtSNF9WaDU5RGtEVExfaVBqQnF2T2s1QzhWUXpNQ05UdmZTRnc?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果总部园区火情事件，涉及企业安全与运营风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-apple-059",
+    "date": "2026-07-24",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "iPhone和Luna Ultra同台！和荣耀合作后，影石又入驻了500家苹果店",
+    "quote": "iPhone和Luna Ultra同台！和荣耀合作后，影石又入驻了500家苹果店",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbXJselFSdVFacE5qZllGZFdtRGlleFJ2U0tKZkZfcGVGZmhCQ05BeUtuS2JlN09yNktDbXU1QnJmZEVSZVlzbmNZZHh5dGpmQjNpRy1EbHdjbFdYMWd2Wnk1eHNUUEtEdWM3T0tiekhtVzA4eE5WSVV2SUdmNXZxSGpOWldpQzJO?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):影石产品与苹果店合作扩展，体现渠道战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-apple-060",
+    "date": "2026-07-24",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "隐私条款泄密！Apple Store AI 虚拟购物助理即将上线，对话式选苹果产品不用再翻规格",
+    "quote": "隐私条款泄密！Apple Store AI 虚拟购物助理即将上线，对话式选苹果产品不用再翻规格",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBFRDZOTU4tNkFiMnlJZS00WGV4NUlEcEc2bnV1LXBlVm5TQ2tINi1pUUFFb2ZkOFRmd1BxSWc2Ti03NFpmU3BCeXFYQVdhNGJSZFpsckMtWGRuc3Z4QUZKMGp2Q0tFN3RrOEozWldfN3JqT1VLbTg0T2JrZk81Q1k?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Store AI购物助手功能泄露，涉及产品创新与隐私。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-apple-061",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果AI国区用不了？5个免费替代来了",
+    "quote": "苹果AI国区用不了？5个免费替代来了",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OWVhSQjhsZjFMSzBHMDJQNUVJNU9IT2VRNEtReHctX3RqNk5qbFBDQVBlU1FEMEEwZ09Kam1CVlBiOXB0V0lzTXRFRXZlWEZLd0p3LTY2NkFyNHVWQ3V3YXY0MS1kREk2bTA2RUI3ZHBSSFlIMWVKbUFJY1l5TDg?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果AI国区限制引发用户替代方案讨论，体现市场困境。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-apple-062",
+    "date": "2026-07-24",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Apple TV 质量标杆：苹果官宣《早间新闻》最终季 2027 年播出",
+    "quote": "Apple TV 质量标杆：苹果官宣《早间新闻》最终季 2027 年播出",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QOTJmMHU1UzdqcWNaWVF4Wlh6S1JaRGhJVC0zY1I4Vm1LYU9VZWFyMGdNZktZRXgxSUlON1NSMEtTQXJxdEVBeUJVVFNUOVEzRHZqRG1TTFNLYi1qRE9jOUJLa091dURLa2EwVHQwNkpQYlp2V2dicTNJb2hSc1E?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果TV内容规划公布，体现内容战略与品牌投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-apple-063",
+    "date": "2026-07-24",
+    "dim": "W2",
+    "severity": "P3",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果预告 Apple TV 首个约会题材纪录片：共 8 集，让性格迥异的伴侣走到一起",
+    "quote": "苹果预告 Apple TV 首个约会题材纪录片：共 8 集，让性格迥异的伴侣走到一起",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1xSFVXQnZoWGk0ZEJuaDUtdlFvcnhiMzJVMWtYVFhuN0hCNGcxMGc2c3l4c1U1UTh5TmNyZF9ZRjlVV1BPSmVrM1ZOZlZDQUdCRmUzRHN5MTRjM2k1Mko1LTg2ZHhxeVYyNDBUQmp4NnVSV2pOb2s4LTIwdUVUNmc?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple TV 内容策略更新，新纪录片系列发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-apple-064",
+    "date": "2026-07-28",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Apple Upgrade launches in the United States",
+    "quote": "Apple Upgrade launches in the United States",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSjRzdmZCOXJRTkVEWmotS2QzZGM3ejFWeGMzZkRfT3dkLTB3c0s2Rml6RE1nU3FRSmNxNDBaQlpRQ0FJYWxOUWd6MFIwVjEwT3l5aWJXLUdsQU1Sdk9PYnRRTjFLUnJoUkNlQzNXcTRaR0hyNnRQSkdkd2tRSkEtblJnVnZlZTRlUm1N?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):苹果官方发布设备升级服务，新商业模式推出。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-29-apple-065",
+    "date": "2026-07-29",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "月租 17.99 美元起，苹果在美推出全新设备灵活租赁服务",
+    "quote": "月租 17.99 美元起，苹果在美推出全新设备灵活租赁服务",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9wVTVXQi10OGFQY1ljRUVfeFdLNVc2Vlc4NjdsVER5N19uV2RzSkNqWDN3ay01cFQtb1lhSkRSSmF3T3JWdDZqWXpraWNJMGZYNUVkTTE0bElqaVB3R2p6UTZ1LXZ2X1g5QzltYVhHbG1uQWJGUlR4Mw?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果推出设备租赁服务，新商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-29-apple-066",
+    "date": "2026-07-29",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果市值首破5万亿",
+    "quote": "苹果市值首破5万亿",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOHNCTFFoWTNXUWU3X1lCaDJ4bDk2SVFyY2pLbkw1TUQ1VE8wcWgzMFJ5c0Jxd2RUZ1RWU1ZSNnRmSnhfenNJbUhwejh4RjkwVFVtc2NreHVoZlA0SEVfcmNfR21fX2xGYU1UUVhmbVRmNnpBQjQ1YWk4NkE4RmV4a2prOTg5WmVfamVSbXNodjhEbXotczA1TEE5cmlORHRjbkNpY3FURQ?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果市值首破5万亿，重要财务里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-29-apple-067",
+    "date": "2026-07-29",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "古尔曼爆料苹果今秋推2026款Apple TV和HomePod mini",
+    "quote": "古尔曼爆料苹果今秋推2026款Apple TV和HomePod mini",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWHhFNU5CbktDVFN2NEF3cGh1c043R2NBRmdsbWdYSWNaSkd0RlpRaXd0OFhYZzJQSXFiYXYxd0FWVTFiWTBaT3JWNF9lZmg0M0kxd2pqdi0zVXhWRFVYQ0dVQjdoVDItNW5Rb1dFZ0hlYnVLMDBPcmZ4R2N3RHlHWlNPWHI1N0Jz?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):苹果计划推出新款Apple TV和HomePod mini，产品发布预告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-apple-068",
+    "date": "2026-07-28",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果公司计划今秋发布新款Apple TV和HomePod Mini，并于10月至明年初间推出Home Hub",
+    "quote": "苹果公司计划今秋发布新款Apple TV和HomePod Mini，并于10月至明年初间推出Home Hub",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5sdVVlQ0x0TnNHN0hqVDN4cVppYzhSRkhlY2JoWWt1SGRPdWtWNmt5TDBGS3RiMThlZWQ2LTM2Wk1DLVNsT2xQa3JwcW1UNFB2N0JTVXpMckdjUTkyOURic0dPajZMUQ?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):苹果秋季新品与Home Hub发布计划，产品路线图。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-apple-069",
+    "date": "2026-07-28",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果智能家居“大洗牌”：今秋拟推Siri AI新终端，Apple TV与HomePod mini蓄势待发",
+    "quote": "苹果智能家居“大洗牌”：今秋拟推Siri AI新终端，Apple TV与HomePod mini蓄势待发",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwcXVXZ1QyOWNhcGw5amJ4RDktV0s5aTMxbEt1UHpJb0JuUWdWYnVJTlpNRG1naTJocWQza3JyUU41VFJWYWdDNmZVN0dPVWhud3Vz?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果智能家居新品与AI终端战略更新，涉及产品线重组。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-apple-070",
+    "date": "2026-07-28",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果在美国推出设备租赁业务，iPhone每月17.99美元起",
+    "quote": "苹果在美国推出设备租赁业务，iPhone每月17.99美元起",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9GX1haR1RMNjY3RzgzUndGOEd6N1hfUmxsNjR4WlhvMjl3YTRmWmdXU2hoOGlhREhOYUE1MG11aGFNOVRFR1J1RDVhZE8?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):新商业模式推出，租赁业务扩展，影响消费策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-29-apple-071",
+    "date": "2026-07-29",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Framework显然对Apple Upgrade——苹果公司的新硬件租赁服务——颇有微词",
+    "quote": "Framework显然对Apple Upgrade——苹果公司的新硬件租赁服务——颇有微词",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBPWV9SX0pzQ0NwanZlemY5MEJvQ1dZMWsweTM4blZiZ3l3VFgxQzBnWEdQMDNOOTZ2NkREb0hpMHd2MzRxdzJuU04zWmNBRlk3WHpCV3luWm9TUUNpTjkzRlh3emhxZHowcWdzazd5OTN6bkUwWEtQT2pvVQ?oc=5",
+    "fetched_at": "2026-07-30T05:20:16Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):新服务Apple Upgrade引发第三方评论，反映市场反应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-29-apple-072",
+    "date": "2026-07-29",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "122元用iPhone，苹果要做手机包租公了？",
+    "quote": "122元用iPhone，苹果要做手机包租公了？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBQX1F1a3F5UFBmQUc2am1JMUlWWUJyX3hyZFpqekdxelJoeVdwRFJNN1EwWmhmU19NdWJZZTVibmhFY2pLYzU3Nm1WQ213QQ?oc=5",
+    "fetched_at": "2026-07-30T05:20:16Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果新租赁服务的媒体评论，标题党但涉及新商业模式。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-29-apple-073",
+    "date": "2026-07-29",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果推出设备租赁计划 iPhone月租最低约23新元",
+    "quote": "苹果推出设备租赁计划 iPhone月租最低约23新元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9xeVFXVmQyWG5BNGVFNXRrb0QtOHdCVTg1VnlOaHowanJyRWUwV1Q2MG5mS2lWUzlOb2J3WDBhcVMxODFEb2xiZFcwbWFTN0ZTclcwTjNiaUdvdWNtTXlwaWhMOENma0lVYUE?oc=5",
+    "fetched_at": "2026-07-30T05:20:16Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果正式推出设备租赁计划，新商业模式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-apple-074",
+    "date": "2026-07-28",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果在美国推出“Apple Upgrade”设备租赁计划，iPhone月租17.99美元起",
+    "quote": "苹果在美国推出“Apple Upgrade”设备租赁计划，iPhone月租17.99美元起",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE83MHdUclQ3Qk9pc3k5R1k3NEZFQm1jYkJ1X2JJV29KTkhLTFpHWE9ueWxHQzV5bHozTWRPVzVZdzM4MjJkd3FJR0RkTFdXUE5veVBrTkg3dUJLX3VFTGtKNXNibHE1QQ?oc=5",
+    "fetched_at": "2026-07-30T05:20:16Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Upgrade美国市场正式推出，重要商业策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-30-apple-075",
+    "date": "2026-07-30",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "高通预估苹果调制解调器业务收入下滑速度超出预期- Apple 苹果",
+    "quote": "高通预估苹果调制解调器业务收入下滑速度超出预期- Apple 苹果",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5VUtzTnNIZWZLQ01xYjJRZkRfNWpfQVZsbnY1aENVWXBfZG94UDM5VXRiemdPaERjaWZiM0tUN0NrWHRRcmpOX1c3QzlrSEZSd3VjcGh1WUdqN1FVdERnbQ?oc=5",
+    "fetched_at": "2026-07-30T05:20:16Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):高通预警苹果调制解调器业务下滑，涉及供应链风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-30-apple-076",
+    "date": "2026-07-30",
+    "dim": "W2",
+    "severity": "P0",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Apple reports third quarter results",
+    "quote": "Apple reports third quarter results",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUC12SGRSXzJwSGx6LWtPWlltY1lFVWJNMlBtcGUtOGF3bGZLbjlfTFJhNHdWVFFoT2pZbHN1M2NEVktGU1dXd29tbUlLaXZFNl9nMW5SRFRzYTlnLUlBd1NTWHhwQUY3YXFGQUdfSnRmX281clFiOTY4ZjlBS2dicg?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方财报发布，关键数字公布，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-30-apple-077",
+    "date": "2026-07-30",
+    "dim": "W2",
+    "severity": "P0",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "2026-07-30 Apple reports third quarter results",
+    "quote": "2026-07-30 Apple reports third quarter results",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTGluVmMwSWc3YW80bFpnWnVhbnhER19kM3h0UEV1akwxV25tTm1OVUxRNHE4cXF3cnV4ZkxVcG5zNUxmUWdmNVotTEVfYXlWaVBwYlFFMkpLZGlpLTVta1k3bjlZelNydU9Vc0psbVlrS1YwUi1WZkY2dDNaS0VPUW5EaThkclVVY2UyV25jM0U0WmRL?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方财报发布，关键数字公布，P0级事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-29-apple-078",
+    "date": "2026-07-29",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果上线“iPhone官方直租”！月租仅为售价的3%，价格优势明显",
+    "quote": "苹果上线“iPhone官方直租”！月租仅为售价的3%，价格优势明显",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81Y2tCcFJhZjFESWVPTkc3bmRabXF1STBTNFRyblplTkhuU25zSGV1djFaUmpjaGZweW9fSFQ5TElOSi00N0FDSUhIeWpzM1Vwd29JTUgwQ0I4OU42?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):新商业模式上线，产品策略调整事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-apple-079",
+    "date": "2026-07-31",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Apple警告Mac、iPhone及iPad未来将面临“供应限制”",
+    "quote": "Apple警告Mac、iPhone及iPad未来将面临“供应限制”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2ci14QWJnNXVNbmgya0V5QXhac1p3R0l1bm1USlhaems2OFdqemJiU0FGSWhueGk5WFBocnh2QlR6d1ZMR3dTT1pUUXNLYjhjRHVjdGRqWHl0eml3d1pBcHRIZXN2UdIBa0FVX3lxTFBzQm9oclo5dE9BRE1oeWNXa0xoX3BlcFFqUFJ5eUY0eE40TEppOXhtaVAwTFFhZmc2bU9GWGVOTDRPd2ptLThTeWZOY1dWNUoyUmdHVkdtSFJpRmE4V0h0d3BjcVFGdWp5SkVj?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官方警告供应链风险，重要运营信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-01-apple-080",
+    "date": "2026-08-01",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果公司警告AI算力资源或面临短缺或将引发产品与服务延迟发布- Apple 苹果",
+    "quote": "苹果公司警告AI算力资源或面临短缺或将引发产品与服务延迟发布- Apple 苹果",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE03UjdJbE9iYldPcEhXbF9QeWFYeXoxZTJnYUEtdjlydGdmdUFKUWpwdHFERkJhaDRhTklrQS1yTkhQZ3NaZlZRMFZUekxlRzZrNV9JeXc5U1poaE5UR0hTcg?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官方警告AI算力短缺影响产品发布，重要风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-01-apple-081",
+    "date": "2026-08-01",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "目前，数千名用户无法使用Apple Pay",
+    "quote": "目前，数千名用户无法使用Apple Pay",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yNGU1SnA4dE9UaFFYOHRTVE5PV3pLMzdSN2Z2aEJOaW05YnN4MWRIZUp0Z3hoblQzWl9GOUZpa3psTnlZeHNGbl9BUWdGNnB0RmFXSW00eXV5YzVkN000SEhYbUc5Z2Jw?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):大规模服务中断事件，影响用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-01-apple-082",
+    "date": "2026-08-01",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果公司与 Klarna 在美国推出设备租赁计划 Apple Upgrade。",
+    "quote": "苹果公司与 Klarna 在美国推出设备租赁计划 Apple Upgrade。",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNczUyWktwVDNydXpYTzVFc2NiYWFSeFV3R1d3b01LVGlvSThlUld5S2NZM0pHanMxbmUtMHR6MTBHM1U5QkN1aGhja1dRcXRaS2NRMm1icWVUSHlrNU83MHJGaVBCLUJ3QU9vZEU4Y3RnYVNJTko3bDl3VG1vZHROX29MMFpkR2JDMGNKNnlNQVBFZV9jeEp4Z3VrR29KV282bDNDNWU0a043SDlq?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果与Klarna推出设备租赁计划，商业模式创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-01-apple-083",
+    "date": "2026-08-01",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "2nm芯片+存储成本太恐怖！苹果要涨价了：iPhone 18 Pro系列上调300美元",
+    "quote": "2nm芯片+存储成本太恐怖！苹果要涨价了：iPhone 18 Pro系列上调300美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNeVNpaHluMnlYTE54YXRlanlzQjFjcEpoNGM1eTRCa29RVEs3emZUNDQ1emdTV1hQRFpQWXhSSnZOOUNrNFN0aDFRNEZnbHJ6Wk45c2tlMXlZREFvWHYzTnE0UzJBV2xnSVhFUl9TVGNlOVFHSGJDVUdBNmFVZmZaZlVyNTdpMGdoVmtSMmdRR0FXSUVlMTlDeUh4dWdKdzRNTzJIQXotdFZrLTRrc3R0VHNtbWdvZXFTdHpNUXRTYlNJYUFqWkgtYnZka3RpRW5SSXNyQnhkTTVOVVEyNkJkSVVVUHoxSllvSlZWVFhZREYybzNNNW5YTzl5eXhQck9KajBV?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):iPhone 18涨价传言，成本压力信号，但未官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-apple-084",
+    "date": "2026-07-31",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "库克15年CEO任期收官：让苹果市值增长超10倍，超越乔布斯",
+    "quote": "库克15年CEO任期收官：让苹果市值增长超10倍，超越乔布斯",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01NkRjc19ONThwTC1oWXNqTnJEcWR3ZHNVLUJDQ1pFUWNXcnhiSUd4bTBldFgtcDlnbnpfWDFaMFdjdEtWWUc0cGZPR0R2c1lmQ2ZubldMVjVZdw?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):库克CEO任期收官，市值增长成就，重要高管里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-01-apple-085",
+    "date": "2026-08-01",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果在美宣布新计划：iPhone每月起租价17.99美元，租约期满可买可退可升级",
+    "quote": "苹果在美宣布新计划：iPhone每月起租价17.99美元，租约期满可买可退可升级",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcGVpTDcxcnUySkJMZzhoWG1qVFh0dEJTTVMxcHMta1VtNmJaNFp1Y0ZqTDRDNHpJSUlRa0xNaGs2LVE2QjhlOER3OFN3dUZIaFM5c192eVI3ZmlhUWQxSnNabEU3SmMzT3pab1ZNd0t1bWczU2FCRW9ZaHFtcEtvQWVRVzhKdUVEbTFZVjRXT3kyYWtlVTlvYS1JQmZhdEhoZDhjanVuN212cXJHdElqdDdrX0gwZ2JIYUpMZ3AxOEtZN3hkOVdHVGNUV1E4ZFMwUXpaenkyZnh6TURH?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):新商业模式发布，iPhone租赁计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-086",
+    "date": "2026-08-05",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "晒完整聊天记录硬刚苹果，OpenAI：这场诉讼草率、咄咄逼人，与苹果声誉不符",
+    "quote": "晒完整聊天记录硬刚苹果，OpenAI：这场诉讼草率、咄咄逼人，与苹果声誉不符",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5UejhhSXRkQ0pxdWx3ZVhmdWV3X1JkY0RERjlKeUtMSXRnXzdzNTV4T0s2Sy1MRVZIVGFWazBsU01oU3JrLTFDY0hvTmFraVJwSktxclRCcTIzVF9H?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):OpenAI公开回应诉讼纠纷，涉及商业冲突升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-apple-087",
+    "date": "2026-08-04",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果一边告前员工偷机密，一边把发布会计划留在他们手机里",
+    "quote": "苹果一边告前员工偷机密，一边把发布会计划留在他们手机里",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ZOXNFS2xJd09YQzlFbXBTV0pCN2pOUDNORmpmNldHT0xQYnI5ZFpQNFdpSFdKRF8yMTVROXdWNFlJelBZa1ZZUkJxSFk5TTZOQ2VOUjM1Z1FvNE9r?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):员工泄密与安全管理矛盾，品牌信誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-088",
+    "date": "2026-08-05",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "智能手表也涨价了！手机涨价后，Apple Watch S12、Ultra4 同步调价",
+    "quote": "智能手表也涨价了！手机涨价后，Apple Watch S12、Ultra4 同步调价",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU3p4T1pNYjlmTGhIVlNLWTZZZ0xWRmdidG1xazdSaEplWEticFFucl83V3EzVFlCaUlUUi0xdFlfMHN4ZjRkXy1GaWFSMXUyRnd2VXZkNkNwdk14YW91dERHWXlZb0ZUV1p0QzdpMnNMU1FESEdCeXNhYm9yTDNoY3IwcEltM1luTEg2UQ?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品涨价公告，消费者舆情敏感点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-apple-089",
+    "date": "2026-08-04",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "WWDC26前瞻：Apple Intelligence在海外会是什么样",
+    "quote": "WWDC26前瞻：Apple Intelligence在海外会是什么样",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxNSFVfbkZRREg4Vmp2cGFsdks4b1QwMEYwS1JUcEZUVHVRSmVwaVdjRWJHQTlWQml5aE1sem1uMl90Q0toRl9uR3Y0a0x1UlhRUTRoQmtmU3pWaHhsRHFlUkFYVE9sbmFHQUhXU1k4cHMwUms5YVZabFNIcXdxczFPSjJiUXFJdjNGMXJwd1NXdWoyamtzdkE1NVlrUWtGM1hCUDVNNGUwQ3A0dXBFLWViNTJUR0tzM012Z0pCNWlPT0kzcXBkUGtHOFV6WHZOaE5nY29qSWZaX2RFTWQxMm9hc3Jjc2J3eVFJRG1GVE9NZjlzODJLUXNoajlPWXRURGh6amhYb3NBcFE3cE1fdm00RVJmT21feFZOZHVmaEpaNnVQWWtQS082b0xBWmlPOEZJNjhkNWNpUTVGYVdTaDdTV3VNci1WSERPTi1uSW5xR0VDelRNTS1TYm1JcU1pQVpsREFsMklGMjBMeUQyMzVzR3lYLThOVmR6Nm5mR0JRTlRjMDZ3bnZId3VLc0NMcGZxd3o2dG1sVm5DYUZ5UkFQV3IyY1ZBMGtMNDkxRUFrWTB2eXQ1aFEzNVc0enNtXzFlYzRYckVfZGcxQ0VBX0NlekQxZG9MNjJrWi1lN05QVW9la0JBY2hyOXNTSnlnT1EyQ0JZdF9uMjJoT0RYUUdTYlIyM1lOOEw1MFdZLQ?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):AI功能国际化前瞻，产品策略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-090",
+    "date": "2026-08-05",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "曝苹果下月将推出五款新品 涵盖多条产品线",
+    "quote": "曝苹果下月将推出五款新品 涵盖多条产品线",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TOXFMTDlRN1BUa1lsVG8zX0t1c0U4ZXk0X0NzZWMzQ1lUUFYzdy1BeE1Kbl8zTUl0Y1VMVnMyRUw3Ul85NkhhcVN6Z2dmZFlEczR6VE5WRmU0UGU1SWIycXlpLWd2dmZmV2J0SThlQmI?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):新品发布预期传闻，产品线动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-apple-091",
+    "date": "2026-08-04",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "OpenAI回应商业纠纷案：苹果对此案处理有误",
+    "quote": "OpenAI回应商业纠纷案：苹果对此案处理有误",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9uNUJrWWY5RWRDUnlaQW5Qd2RIeHFxQmV2NW1rWExIQXJBYlViUnNNMlRjU2lfanZGbjhYQ3hXQWF6N0NaWlItR2dfSHN6R0xkSV9qTFNfR2hSQ2F4Rm1WNnNJLW1SZw?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):OpenAI再次公开回应诉讼，商业纠纷持续升温。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-092",
+    "date": "2026-08-05",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "打官司、挖人，苹果和OpenAI的硬件大战才刚开始- Apple 苹果",
+    "quote": "打官司、挖人，苹果和OpenAI的硬件大战才刚开始- Apple 苹果",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1icE1mR3gweHNNeHFwZjBEYk44WGRfdkZVSnphbVJteXR4Zi1VcURRYk5wa09hVl9aeWZPVDh1eExkbFpMMm5fRVQtTHAxN2xSME9jcFcxMlgzdDNUVWhjSg?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "leverage",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果与OpenAI竞争冲突升级，涉及硬件战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-apple-093",
+    "date": "2026-08-04",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果申请禁令要OpenAI别碰商业秘密，后者反手公开了双方沟通记录",
+    "quote": "苹果申请禁令要OpenAI别碰商业秘密，后者反手公开了双方沟通记录",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iTzBMWGRKV0hwYW93aUg0MVhhSkRlS3BhR0pkanhidnM4X1ByTUE2cEhXWEJFaTBxcWx3b1lEZ2MtSS1VR0NVSUVQamUxcGNXMUo5cjcxS214ZEYyR3YxeXFKRmxRNVFrR21LTXpMMUIyWmRkTlVqYno3aUtvUHc?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "origin",
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):法律纠纷升级，OpenAI公开沟通记录，商业冲突公开化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-apple-094",
+    "date": "2026-08-04",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果大举进军智能家居：将发布家庭中枢等多款新品，主打Siri AI",
+    "quote": "苹果大举进军智能家居：将发布家庭中枢等多款新品，主打Siri AI",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5PUHlVWElyT1QydTQtYy11MnNaZ1NvZExkc244ek82OUR0LVVBcDRqV3IyeDcxQTZKRjFXdUY0WWF3bDQ?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):智能家居新品线战略发布，AI产品组合扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-095",
+    "date": "2026-08-05",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "刚刚!OpenAI否认Apple挖角窃密指控,公开短信和邮件记录",
+    "quote": "刚刚!OpenAI否认Apple挖角窃密指控,公开短信和邮件记录",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4zM2g5UTE0MjRod0k0bVpHZW9mcS1HOHhmVzJWcDNTVmhKeXpGUGo0czl3cHpBbnl6ZUJ5emQ4UldHel9Bb05YamJSZnZ3VEhnX3RtRjBMb3pDNnpU?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):Apple与OpenAI纠纷升级，涉及挖角指控，有法律/商业冲突信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-096",
+    "date": "2026-08-05",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果2026秋季发布会筹备启动：iPhone 18 Pro系列+首款折叠iPhone Ultra将同台亮相",
+    "quote": "苹果2026秋季发布会筹备启动：iPhone 18 Pro系列+首款折叠iPhone Ultra将同台亮相",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hbUMzbTUwckNfS0NuZmI0SU1BU0w0N1JSMnpzRTB1Tkw0SS1nQk9BQWE5YUZ4MXhEWllEd3FXTGZYWnNkQWdtNThrX283V0J4dUZRbXdMRDZQZ19E?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):iPhone 18/折叠机发布预期，产品路线信息，但来自社交媒体传言。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-097",
+    "date": "2026-08-05",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "比亚迪腾势Z9S官宣全球首搭苹果Apple CarPlay小窗模式",
+    "quote": "比亚迪腾势Z9S官宣全球首搭苹果Apple CarPlay小窗模式",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4wR2hNRUNfQXlGeGRsb0ROV3ljbkthcENILS1NX01meHAtdFZoNEpab2N4d2hubjR1WTVFUmozZUhkbERYY19yemQ3Q2tPTEhiM1lzSmcwdW43VkI3NW4tTWwyVURpVVFocVZMVl9yS3d6dw?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple CarPlay功能首搭合作，产品生态扩展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-098",
+    "date": "2026-08-05",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "月租122元用iPhone，苹果官方租机是福利还是套路？",
+    "quote": "月租122元用iPhone，苹果官方租机是福利还是套路？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBXNGRpcG8zYTFYWjYwRktzU01MaVFrOC1pOHAyR3NmYnpUQ1ZqTk05NDB4UGhsVllQaWpMdEVSdTBvSkhJcUdvMDV1bzZBSXdsQWtwSWFDNA?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple官方租赁服务推出，商业模式创新，含消费者质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-099",
+    "date": "2026-08-05",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "2026年苹果9月发布会：预计将推出iPhone 18、新款Apple Watch、AirPods等产品",
+    "quote": "2026年苹果9月发布会：预计将推出iPhone 18、新款Apple Watch、AirPods等产品",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQlJTM195ZVFoQUNkYV82eUxPaTVoZXhoZVd3LVhvUTdLcUhIb1laMk9sbUdRM19TZFM1QnlWMFNmbWk4SkxUMUxKaFRCWGQ0b2NHYVJTSENuc21RZDBZdkltTGNILU5DeGVHNjR5NnRkVXV4NHlSenFnMDUxWE1CVkVjekpHUXFVRklyaQ?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):2026年发布会预期信息，产品路线预告，但基于传言。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-100",
+    "date": "2026-08-05",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果Apple Pay正式在菲律宾上线",
+    "quote": "苹果Apple Pay正式在菲律宾上线",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ0VVMy1WaGhFRmh1U2ZFbG1NMTFtSnBrZ0JpQksyWUdETm5vancwSUx6UkNLVEhoOU5hTWY3dUhMY19oOGloakZPQ2xoYVZzdGFPdkFHdDB5eDluY2x3MTZIRnM4a203U1YzR2VUMS0zZS1EVWNPSGlHbHFkMTZUSmd2d2hIaC0z?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Pay菲律宾上线，地域扩张事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-101",
+    "date": "2026-08-05",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "OpenAI 公开邮件和聊天记录回应苹果诉讼，称“Apple is getting this wrong” - OSCHINA - 开源 × AI · 开发者生态社区",
+    "quote": "OpenAI 公开邮件和聊天记录回应苹果诉讼，称“Apple is getting this wrong” - OSCHINA - 开源 × AI · 开发者生态社区",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92R2xwb3VmUk1qWFBHSHhBU19pNG9veFdOMVpIenJzdHp4UklJaXBTZENvRTZZS3p5NXRSaG5mTm5GcEoxajRhYXJFamNadVE0MUFlelBsNWtJUHg5V2lmcm41cXI0OW4tdGxFRGJFSFM?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):OpenAI公开回应Apple诉讼，企业纠纷升级，有法律冲突信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-03-apple-102",
+    "date": "2026-08-03",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "月供121元用上iPhone，苹果下场搞租赁，可能要“卷”掉中国租机平台一层皮_商业资讯",
+    "quote": "月供121元用上iPhone，苹果下场搞租赁，可能要“卷”掉中国租机平台一层皮_商业资讯",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5RWx4MnltLUttZ1lVTjlacmNndDZYdXBwOWJ3b3Nadk9HdzFpQUZ1RzU2Wi0tRDhybE5mZGJVdUN5UHZ3eEVsZzRodmFKN1NyMWVmbjNSUFNEb3FwanFsQw?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple租赁服务推出，商业模式创新，市场竞争信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-103",
+    "date": "2026-08-05",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "长鑫拒绝苹果压价，要求内存采购价不低于三星和SK 海力士，是否意味议价权彻底反转？可能有哪些影响？",
+    "quote": "长鑫拒绝苹果压价，要求内存采购价不低于三星和SK 海力士，是否意味议价权彻底反转？可能有哪些影响？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBCX09INV9wUnliSktQWEY4Sm16aHZONFJLbGFzcDBmQzhPV21wcnNUcUJFSlNwSnpiY0l0S0pQVXBEN2tuXy1DMzhGMXVDQVNpcXFYN2FISVZvSC1zdTln?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):供应商拒绝降价，苹果议价权削弱的重要信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-104",
+    "date": "2026-08-05",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果为降低成本要求长鑫降价反遭涨价，长鑫的市场筹码来自哪里？反映了怎样的市场博弈？",
+    "quote": "苹果为降低成本要求长鑫降价反遭涨价，长鑫的市场筹码来自哪里？反映了怎样的市场博弈？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9lT1FSS1BxWWFxN3M0SkxHZDcxVHNjM0FuQ0JmUElEbktYQzZYWG1sVmhoVjFyU29kWnJsaXJIcFhWLXpUemJVWExqaTRYLWg0OHBDQ0Z0bzRvYm9aS0NN?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):供应链博弈升级，苹果成本控制受阻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-apple-105",
+    "date": "2026-08-04",
+    "dim": "W8",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "OpenAI正面回击苹果诉讼，公开邮件及聊天记录否认窃密指控",
+    "quote": "OpenAI正面回击苹果诉讼，公开邮件及聊天记录否认窃密指控",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NdHh0SW5adVNUbm1qX2IteFFVU3FBbnNOZm9KczNHY2tHZUViNThKM09yUWU4NmdHcEN2ZDZlQzRJOWYyM21rUjQxUVkteXJRclI1T1Bsc3NhN0lV?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "signal",
+      "identity"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):OpenAI公开回应诉讼，涉及苹果与AI公司纠纷。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-06-apple-106",
+    "date": "2026-08-06",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "又升值了！苹果上调以旧换新价格：iPhone、iPad、Mac集体涨价",
+    "quote": "又升值了！苹果上调以旧换新价格：iPhone、iPad、Mac集体涨价",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbUNuZGZXMkN6cXVtUGU0YUdHMHI0cUI4NVVYSEF0Z1hlZEhXdVQxVHF3dGtrazN3TkloVkN6TTQyc0JfNk1fczNNTE1aQ3NTNldZMEVrMWRqZ1FESVlwUFdzSjNCZFdUSW9YYlRxS1RkcEo2RjJsWEhvMnRfeldROF9wSmwwUkxndWY2U0szYVJrSWcxRDJVOG8wRVBpR1NTLUdESFBHRQ?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官方调整以旧换新价格，产品策略和定价调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-apple-107",
+    "date": "2026-08-07",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果公司将多款产品系列的以旧换新价值上调了最高30%",
+    "quote": "苹果公司将多款产品系列的以旧换新价值上调了最高30%",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBaejJ5c1hGZ3ZVZVRnSGtIM0g1Y2RSa2hVMldCUXotOEpVVEdlNmlTVjRPb3JZTE84YjhqSjMyZEtzRGE5QW5TVjBxUGNzWVRGZFFwUUxPR1dpY3hpS2tV?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官方调整以旧换新价格，与i12重复但确认政策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-apple-108",
+    "date": "2026-08-04",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果官方突然降价，iPhone17 Pro二手价格反超新机",
+    "quote": "苹果官方突然降价，iPhone17 Pro二手价格反超新机",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBHUmJPazN3MEJoeWJvUzg2Y0ZOR2x6cW1tNU54TTRZb0hOWW1YN2NTYVFUOGR6eHFtNWxZTTEyaUFuZ3FOWWdPVzVid3BiTjcwc19n?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):官方降价导致二手价格倒挂，定价策略异常。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-109",
+    "date": "2026-08-05",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果9月或再迎涨价潮：Apple Watch与AirPods将涨价",
+    "quote": "苹果9月或再迎涨价潮：Apple Watch与AirPods将涨价",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1PMjJxbm5qQk4xdFUzam8wLTJMQ3lrU0JrWjJBcUc4SDVIX2ZLakkyaVJlRUNhdDFEeU9NYmtHaEZ5Y0NoaWtldw?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品涨价预期，对消费者端有负面影响，但属常规商业决策。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-06-apple-110",
+    "date": "2026-08-06",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果库克9月卸任在即，新任CEO John Ternus能够让苹果再次伟大吗?",
+    "quote": "苹果库克9月卸任在即，新任CEO John Ternus能够让苹果再次伟大吗?",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQdzV1NlQ2UDVNZXpZc3RhVlNOZElfaTJOa3FiWnpkYUw3R3JtVWtxNEV3V1MyRG5WaWhkSmJXdTJ2bzdwNjA0STVXY1RIZEVoSlF1U0pjM2x4LUItT2VEN3J2c2pIZHkxbTYwMHFBY1BDWVlnRkMzQTY3cFE1V1hOX0Q5eWhxckFfckliWFlUU3I5MDI0bU9pT19DLUQ2TjVWbWlOd2pYaENvRlpkYkdRRFF6eHg0NmNiVTh1MzVzVXZ4OFktTnhDdWVNOFAwVFg2dW1IVU5YcTBxUDlTMElhelhDSmdOc1BHM3FLd3VB?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "identity",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):核心高管变动（库克卸任、新CEO上任），属重要人事事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-06-apple-111",
+    "date": "2026-08-06",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "OpenAI请求法院驳回苹果公司诉讼 称其借助窃密官司应对人才流失",
+    "quote": "OpenAI请求法院驳回苹果公司诉讼 称其借助窃密官司应对人才流失",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM18tc1JHbmVPX0FnVzhQZ0VRazFodlZOZ3Y2MTNxaEhDT0xiemUxaXBsSWFIRkd1Tjl6cUxtSnkwcG5BWEhUaFNmNVZ5LXZKWHl0ZFowazU1ZV9Bb2NmcjJKLTY4cEFzRXR5ODRSM19TUHVyeTc4MWhwdG8yUVJwRXlxWjl2aS1SMkxUOVh0dk43RFp0RnkyRlFjQWc?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):法律诉讼涉及窃密指控，涉及品牌声誉和法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-apple-112",
+    "date": "2026-08-05",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果计划将AI眼镜打造为健康健身终端，完整运动功能或将延后至迭代机型",
+    "quote": "苹果计划将AI眼镜打造为健康健身终端，完整运动功能或将延后至迭代机型",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ZVE9La1pOVEtEeTAtV3dpN3ZJMUtKbFlPbi0wNXNSZGF5S3duYzMySUFjdnRNZHgtaERVTXg4a0FxZmdLRG16TUdhU01WMklIYXdPOXowZnBTQmp2?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):AI眼镜产品规划调整，涉及新品战略但未正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-08-apple-113",
+    "date": "2026-08-08",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "降幅10~15%：苹果美国扩展官翻Mac、Apple Watch等产品",
+    "quote": "降幅10~15%：苹果美国扩展官翻Mac、Apple Watch等产品",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE13Y2l2LWFRcVBFUzZCZHVLbzhYX1RmZldRX3pKNTV5UDFXMzBjaHhscTJLT0dsSDFaVFV3NUZoZHJIUFVFVXo0LUF1aGw?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官翻产品降价促销，涉及定价策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-apple-114",
+    "date": "2026-08-07",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果加速印度化！",
+    "quote": "苹果加速印度化！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMizgRBVV95cUxNWDdGeG9sdEs0Y3RlWGNPTUVaWWxoRE1Ta2FKTzZyNFlKUHhIbkJGQUdUeEU0clJIRHJlZ0U1bGIwa3hsU0MwNEp2SU5tNGUteXo5R1FwUDJ4X3YxUFQzbU9DTUVSOXRmSVc1bUxaNGlwU2NmUzNWX3lXZFI5RUJ2ODhtRHJjUWV0TkZpUDg1N2luX0tfbzBTV0ZTLVVMdHg3NjNzeEZUajdZN3RIN0pPRlV0LXRqU09JWTRvYU1DNE1OTGF6ZXd0ckM0R1BUdmdxRkU0YThpd0ZQaWU0TWlFdEEyMmRBWk5LQWRwcGE2azdvWU1JY2wxV25RN29qUXVDM2tsN0x3U2pyaDRqQ2o5RUU2ZzRWOXZfMkpMUjV0Q09GYWpkbV9sV2NhLTBFcmdBMWxZUXVxM0xrQ2wtV2tZbHpiZTZYSVlMbnMyTk1fMU8tcXZTSmdlX3FmQk5KSUF0cUtBeTZvUGs1RjBOdjB3N0dwcEpyVEFvSWFtVVV5ZDhpN3hub21hUGV0MlBrNGlpRnAxZ1Q4SFZxZmo2ZUM0VGxJVlRXT3JUaURmQkhNMXpFbWdLTWVMY0pVbnpBSkxMZ042YllYeVp6WUlaYjZmWlM2ZGM4dEV3NEhoRV8xV1BZLXBvUms4VmltMVdPenhaV0VfNEpxWHQteWdKbnFsN2FYV0ZKYUw0d1RySnU0SnJDTXdFcXVqeXpUT2hoV2dfTWFMNjJUZk9KeXdPSGFreWt5akxzVzFCRUl3d3lpallxREdCT1k3U1dkSUUwZw?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):标题党，缺乏具体信息，难以判断实质内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-apple-115",
+    "date": "2026-08-07",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "传折叠屏iPhone、带摄像头AirPods与触摸屏MacBook或将于半年内陆续面世- Apple 苹果",
+    "quote": "传折叠屏iPhone、带摄像头AirPods与触摸屏MacBook或将于半年内陆续面世- Apple 苹果",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1GT0J5TzVaeEhrVlNRY0FaaTBQUVdDY3FZZHZ1NEZMLWp6Y1N5bHp2Mm9RU3JlMnpCVFhib2dMZGRTRGRHeG1vMXRjM3R0SHUxSXBLcmM1SlpHY0htVFc3Qw?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):多款新品传言，涉及产品路线图但未官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-apple-116",
+    "date": "2026-08-09",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "11:22:23【苹果中国官网删除Apple智能接入阿里千问手册】",
+    "quote": "11:22:23【苹果中国官网删除Apple智能接入阿里千问手册】",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBJRlFPYVVRVkFEWTBrY3o0ZFhqSjI5RloxU3NFTnlrTy1RcnFNVDZSSkNYTGl3dW1WQ3pJZ24wbTJjbUpmYV9rNw?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官网删除千问手册，政策调整信号，可能涉及合作变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-08-apple-117",
+    "date": "2026-08-08",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果终于把千问接进Siri：中国版Apple Intelligence来了",
+    "quote": "苹果终于把千问接进Siri：中国版Apple Intelligence来了",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LRUV4QmhGYkJCRC1vNGhjQTB4dzFMeVdZY1l3azc2czZDd1lrRHZVNVN6US0zaVNXcVdyejQ0b2ZkM2VMdTVXaTJQYzV0RV9FMFhn?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Intelligence中国版集成千问，重要产品功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-08-apple-118",
+    "date": "2026-08-08",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "刚上线就删了！苹果中国官网删除Apple智能接入阿里千问手册",
+    "quote": "刚上线就删了！苹果中国官网删除Apple智能接入阿里千问手册",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KR29ITHJaYl92cklfNXQ4bFpMWFc2OWcxZXY5YnJzU2pza2xramw1SUZMcEsxZDdzZVU1T1dHVFM3QURmMEh1Rm92T01UTjZHeVNvNGZISFc?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果官网删除AI功能文档，涉及产品策略调整和舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-apple-119",
+    "date": "2026-08-09",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果国行AI突然发布，首次官宣牵手阿里，Mac用上千问了",
+    "quote": "苹果国行AI突然发布，首次官宣牵手阿里，Mac用上千问了",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9lOWVLUXZWMmRXWUNhc1lyVkxQbmJESHRfTVNsbmt6Z1RNSmVHUTdDSkNhSXZ1UWNTOFpEQ2RyTVdjYldGajB6c0JsUG1kMTg?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果AI国行版首次官宣与阿里合作，产品功能重大更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-apple-120",
+    "date": "2026-08-09",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果官网确认接入阿里千问，但相关文档又撤回了",
+    "quote": "苹果官网确认接入阿里千问，但相关文档又撤回了",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUF9FSml4ZzRqbTN0ZGNSZVFEang0RGRiZllvQUQxZkJScHNzQzNJNWJ1SVNMSWRXNi1lUzNnWDFramowdGZfcTJXVWVVY1p1TVhRYWk2OHp3OEQ3QUpBNDAyNGs4dzV2QnJWVUhqMDEtTnlWMl9TZDRkOFZwN3U5ZlQ0NFNUUjNaejd1OQ?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官网确认后撤回文档，反映产品策略不确定性和舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-apple-121",
+    "date": "2026-08-09",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果官网确认与千问合作，苹果 Apple 智能要来了？",
+    "quote": "苹果官网确认与千问合作，苹果 Apple 智能要来了？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oTEVfOG9GZkVrMDZXNF8yc0luVEN5Q3B1X2NIZjJ3SmgzZWdRdkVkWWJVR1g1N0taNURGbGVoQnh6N2VsNEVwdlByWl85YW1VX1JZVnd2TUVIcnBh?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):苹果与阿里千问合作确认，涉及Apple Intelligence国行落地。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-apple-122",
+    "date": "2026-08-09",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果中国官网，删除Apple智能接入阿里千问手册",
+    "quote": "苹果中国官网，删除Apple智能接入阿里千问手册",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5TMDdxM2d0TzdNTTdzZ1p2VXVueGxYOTNUSU5yMUhNdkpzRHdvUy1PbVZpN05tMUJJYU83dlFxM0NBTFFicGVyTE9ucTFUMEZtWWNnTVFkSmVmdEtC?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):官网删除千问手册，反映合作政策调整或风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-apple-123",
+    "date": "2026-08-10",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Apple Watch大变身？苹果被曝正考虑重新设计产品 探索圆形表盘或无屏设备",
+    "quote": "Apple Watch大变身？苹果被曝正考虑重新设计产品 探索圆形表盘或无屏设备",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5CUjBZRUQtalA4b01aLW44QWQ5TFJxUG5taUlEQnhDYnBCdndyVFhMMVl0QUdBX3NaRnZWYXZxemtSOHhTekdXVA?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):Apple Watch重设计传言，产品规划信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-apple-124",
+    "date": "2026-08-10",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "下一块 Apple Watch，苹果连屏幕都不想要",
+    "quote": "下一块 Apple Watch，苹果连屏幕都不想要",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE84aThrV1RIbTdNU1ljTEhaX09tUTRCdWtHdVFaS0UxMV9KenRHNUZoMWF1QjhZRUpVeHZ3OFV6dmhQanc?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):无屏Apple Watch设计探索，产品创新方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-apple-125",
+    "date": "2026-08-11",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果与MLB合作，为Vision Pro带来沉浸式棒球直播",
+    "quote": "苹果与MLB合作，为Vision Pro带来沉浸式棒球直播",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1aQjB6azNwWmpITWlzbkxDNlZ6cHpBWklwWDRqdU9lb2dfU2E1LUlmeUxMb05SeC04REhadFJja0dFN3M?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Vision Pro与MLB合作，内容生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-apple-126",
+    "date": "2026-08-10",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果iOS 27 Beta 5更新发布：液态玻璃图标大改 国行AI还是没来",
+    "quote": "苹果iOS 27 Beta 5更新发布：液态玻璃图标大改 国行AI还是没来",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQWkJ6a1hCc3IxSWVKSnRkcEZmeEpmVlNWT1R5dW8wZllXQVFHbllkUXZzU3FCejZ1SjI1bUNQVTFMQ3lYR2ZOOTY3alhuVDhPMjNZMVM5U1czbWstTHEyenJNZVpmc2tSdVB2djZnSURDN25ydUQ2MlRicVBXYXJyZVI0MnhfTFpzeGJ1Q1RuTDJUVjNfY1NTakNVSXJ1ZEQ5ZUJ2ZG8yWl9UMDFMYTRhRFBUTG1LLVdiaG81YnYxLVlVMFg0TVdLYXNMSS1aQVlZNkdwN2kxQUVCQUJXTXcwc1R0eWtOX2Z4c0toSmhrN3lYRTFwU29aaERPRnVNdw?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):iOS 27 Beta发布，国行AI缺失现状。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-apple-127",
+    "date": "2026-08-09",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "上线不到一天，苹果官网撤下千问使用手册",
+    "quote": "上线不到一天，苹果官网撤下千问使用手册",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4zSXJ3REVDeldqOUFjMTItb1pZWExQbG01THNpVUFiMUp0US1SVDFJeEpwSm1rcm1Db1BBbjNpVE82X2ZBbFF5ZFJGUnBiYTU2a3NaeEZaMVlndFBhMlMtZGcwVlY?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官网快速撤下千问手册，合作政策重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-apple-128",
+    "date": "2026-08-09",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Apple 智能即将上线，确认接阿里千问！",
+    "quote": "Apple 智能即将上线，确认接阿里千问！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMb1BLb3dpaG5sbXlsdG4xbHktYmJWWnlrNDN2SDlMaHMwM1JkSDlpRldvakpZd3k0NXhudmVROXdzRGt3SmFiY0tPOGZRNHEyQllKLXpKNlZiNEdU?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):Apple Intelligence与阿里千问合作确认，属产品功能重要更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-apple-129",
+    "date": "2026-08-10",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "古尔曼双爆料：Apple Watch S12陶瓷材质或回归，苹果正研发圆屏、无屏全新穿戴形态",
+    "quote": "古尔曼双爆料：Apple Watch S12陶瓷材质或回归，苹果正研发圆屏、无屏全新穿戴形态",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9DN09tcU5ncVgwQ1NtWWlnMVAxdGRwbHk3bnNLeWtMdTdXQUlXVktVcHpJdGRhZkU4U05qYjBTQkVfNFdiTndkUWRjX053VFlNczc2Y0FjMVlmVTdq?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):Apple Watch S12及新穿戴形态爆料，属产品规划信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-apple-130",
+    "date": "2026-08-12",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "国行苹果AI支持哪些iPhone机型？",
+    "quote": "国行苹果AI支持哪些iPhone机型？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTU9DM0FRekZqend3ZHZqSXI0Z1RoVTFsQnh2NU1YTGtTT0ZCMnRBVEY3RElwc2pLbWZKSGx5SV91UldIdWFoSlpVSmxQcEhvaVZGNDFFRlpWWXZmcG9RMmdPSklDTmtjbXdYbzVaNTJ3eVFCVWpSd2pGanlPQXAwaQ?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):国行Apple Intelligence支持机型信息，属产品功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-apple-131",
+    "date": "2026-08-12",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "国行苹果AI支持机型曝光 仅这几款iPhone能用",
+    "quote": "国行苹果AI支持机型曝光 仅这几款iPhone能用",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SY0d5TUtZeWcyVTR6c3BONHl5WG9EYTlkamhicjVLYzBnMU4ySVhVNDhPejF3WlpJUk83ZTlRZ3QzcUhHbXRQMl94OTlWTVlBaG8zN0tybGluYUNiUVhuUnd0dG02aVVibjVyRHJn?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):国行Apple Intelligence支持机型曝光，属产品功能发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-apple-132",
+    "date": "2026-08-11",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "效力超25年，消息称苹果Apple Pay负责人贝利10月退休",
+    "quote": "效力超25年，消息称苹果Apple Pay负责人贝利10月退休",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE50S3lUcG1NNjVYa1U1TjNONjkwR2RCbFBhOEM4NndkTmpaTlhfYmZrdHZwbXNSSFdVekNzS3hKcWpDX21VVkNHMnRTX0s?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Pay负责人贝利退休，属核心高管变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-apple-133",
+    "date": "2026-08-12",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "千问接入Apple智能手册深夜下线 苹果中国官网误发还是压力撤回？",
+    "quote": "千问接入Apple智能手册深夜下线 苹果中国官网误发还是压力撤回？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTHlISnBJQVNzUy0tbkhPM0NfN2dQM2ZENkJKWDNvM3JLSG1MZUpDVlBlcjFUZW1RcUE3YzZtSUdwVDhEYWFiQ2RUUC1hMFptVlYyX08zZGtfVlVfamoxd280NEhxR3I3MEVOd2ZCcVd4clhvUG5yeWlhOGhEaENVcDJqbUMwMVFI?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果官网产品页面异常下线,涉及与竞品集成的策略调整,但信息不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-apple-134",
+    "date": "2026-08-11",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果支付与Apple Card负责人詹妮弗·贝利即将退休 在公司效力长达23年",
+    "quote": "苹果支付与Apple Card负责人詹妮弗·贝利即将退休 在公司效力长达23年",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kM3lDYTJMdFdBYV8zVlIxSGdHUDdjeWdEZXBDVnJ2T1VkWVJjb2lTUjdXTWJmTUVYckVWTUZGMnlnOFUzSFQ1ZFJTUE5MZzlqRXl0R3hyMGpRM3dJLUY0NA?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "identity"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):核心高管(支付负责人)退休,23年资深员工离职,属显著人事变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-apple-135",
+    "date": "2026-08-09",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果官网删除Apple智能接入千问手册 上线不到一天即被撤",
+    "quote": "苹果官网删除Apple智能接入千问手册 上线不到一天即被撤",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBJVlAtNV9PM3E1SHdPNFFBZTBEbXVHLU9TQ3ZrUmJDa2ZmSFhxVEFSVDVSbW85Zm15SG8zY2tldG4yc2lKVXQxcEhYQjh0dw?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官网产品页面快速下线,反映策略调整或压力撤回,重复事件但确认性强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-apple-136",
+    "date": "2026-08-10",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "上线不到24小时！苹果官网撤下千问接入文档，国行AI又跳票了？",
+    "quote": "上线不到24小时！苹果官网撤下千问接入文档，国行AI又跳票了？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xQnhLNVNQbzRuUS1fbUN3Smc5ZXRoX3ROTFlvQUNJRlBKdjZnZm91Y0I3UkdGZmZIQmFoSF9VM0JYVHhHQjFnbDltb3ZFLU5LWmkyMFJoT2lCWmJK?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):官网文档上线后撤下，AI功能延期，国行版本受阻，负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-apple-137",
+    "date": "2026-08-10",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "TrendForce：预估iPhone 18 Pro成本大增近40%，苹果或调整毛利策略以稳健出货",
+    "quote": "TrendForce：预估iPhone 18 Pro成本大增近40%，苹果或调整毛利策略以稳健出货",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rcGlwQW1DWFpvMURqbjJJdmQ2SFJMM3R5d195UG9UMWVyM19HQkFzVnlTYmJrNzZQUXNQWmJFZC1aSFdqbWRfcFdTbnhrdEw1VzY1aG91UEVERUxi?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):iPhone 18成本大幅上升预测，毛利策略调整预期，市场关切。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-apple-138",
+    "date": "2026-08-10",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果千问接入手册发出来又删了，别慌，问题不大",
+    "quote": "苹果千问接入手册发出来又删了，别慌，问题不大",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RRGd5ZGoxX0hWMC00X0x6Ullfa0dtSk1qRUpYbERlcG5ETVRHTHoyZ05fQzQtN3lSOEFqaHdUQ3lTNGppWUxWOGRHOU5Db1FBRGJWcjF6dkZaaGk1?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):千问接入文档删除事件重复报道，淡化处理，但反映AI功能推进波折。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-apple-139",
+    "date": "2026-08-13",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果将iPhone 18内存升级到12GB与AI功能有何关联？",
+    "quote": "苹果将iPhone 18内存升级到12GB与AI功能有何关联？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONmxjZVZVb3V0T2dCLURyc3ZOMU8wN21QUkMwX0FJcHRTRnMtc0pQLXFYVlkzT3JLU1loT1pZNFA1b0VWM3BTb2lnR2w2ZFVUT0ZYUWVJZEszNjh3TjVlQUdGQmloR0FiVUlxaUI1OHlsX1VzX0ZYSHgwMVN2NkNGXw?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):iPhone 18内存升级与AI功能关联分析，产品策略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-apple-140",
+    "date": "2026-08-12",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "【早报】Apple智能可配合阿里千问模型工作；江波龙定增大幅溢价",
+    "quote": "【早报】Apple智能可配合阿里千问模型工作；江波龙定增大幅溢价",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1DWkN2T3hvbkNBeEYyUTB1WGJPT1FRelgtQ0pWS1pKaTVNWHZPN1ZIejJBRmUwVjdIVUViUE5KZTZrdE0xbDFiSA?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Apple Intelligence与阿里千问模型合作确认，AI生态进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-apple-141",
+    "date": "2026-08-12",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "iOS 27曝光苹果AI收费：想让iPhone更聪明？得加钱",
+    "quote": "iOS 27曝光苹果AI收费：想让iPhone更聪明？得加钱",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwc2VOTGFwZmFxQ2hYaW1Hbm5TY05IVF9LYkt4X2hidzRkeXNZazQyNFoteE5Sa1VSYlVMelViaThEX0wwemc1T0FxRmt2akVKcGJj?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):iOS 27曝光AI功能收费模式，用户付费预期，潜在舆论风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-apple-142",
+    "date": "2026-08-10",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果考虑重塑Apple Watch产品线 探索无屏设备及更多形态",
+    "quote": "苹果考虑重塑Apple Watch产品线 探索无屏设备及更多形态",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nUUgxcFhCLUs5bzdLbnFrbVlUWjRuajNXX2VrVXJsTHVwMi12bnc0RjlaUXZfQ2VCTzNCUHVKOTJZTG9QXzRKQ2s5RndGU0Q4d2ppMWVrcmhoZXZNM0gxUw?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):Apple Watch产品线重塑探索，新形态设备规划，战略方向信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-apple-143",
+    "date": "2026-08-13",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "iPhone 18的AI功能依赖12GB内存吗",
+    "quote": "iPhone 18的AI功能依赖12GB内存吗",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUGJQTXRnQUpBd1puNFZ4ZTJzY2IwZkRoM09xRnhJX2M1NE9JSnphaWNLRDdpaHpmZFpLWnIzN1B3T2k5Q2NsbDE2M1dCZWZIZVBHSEZJT2xwZ3Q2R3VMaEtOTy1TUUNFWVpsd1o0c1c3WEJualNNQ0hUOUdYX0dNTg?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):iPhone 18 AI功能规格传言,未官方确认,信息价值有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-apple-144",
+    "date": "2026-08-13",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Apple opens Advanced Manufacturing Center in Houston",
+    "quote": "Apple opens Advanced Manufacturing Center in Houston",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTHBUVTVSdWdfXzR2T0kyNGJwZVFhbWNRS0N1NlpsY0hoODFwS2o0MHRmUTFHVDRCOHM5TWtxcDh4bEZUREVvNDB2aFk2b0FuZGF3aENMTEVFUjlReDdSR1NzT1FoM2Q2WVZDYTkyQV9VYS1uVnFzZU1lYmVQWnQxdFUwQkZvTFMxLXY5MHB0V1M4bFB4eFdR?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方发布制造中心建设，战略投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-apple-145",
+    "date": "2026-08-11",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "确定了，国行苹果 AI 定档 9 月正式上线！",
+    "quote": "确定了，国行苹果 AI 定档 9 月正式上线！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBYaExQOEFVeG84bTNYLXNCcEx0NTZCY2NIQWx6THI5Ukt4X0NlM1oyQTF4MEtiWnlxc0w4RUlZdUp6eVB2Ukk1ZVo3VThJc1ZpbkhoT1QxNG02c0Nx?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):旗舰AI功能国行上线时间确认，重要产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-apple-146",
+    "date": "2026-08-13",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果在休斯顿开设先进制造中心助力培养新一代美国制造业人才- Apple 苹果",
+    "quote": "苹果在休斯顿开设先进制造中心助力培养新一代美国制造业人才- Apple 苹果",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WdGdCaWxpeVFjOEhrRkRJRHg3R1JRVElUU0FKRk5hMFN0YWY4ejJuUW5iekQ2SVVpOHctX0hOd0pVN2pNMlVILUZ2OTFFdV80X3Q0S0d2SUYyUi12dlVfTA?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果在美国建立制造中心，涉及产业布局和人才培养，具有战略意义。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-apple-147",
+    "date": "2026-08-13",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "代码显示苹果Wallet将重构线下iPhone换购流程：估价90天有效|Apple|iOS|客户|钱包|报价_手机新浪网",
+    "quote": "代码显示苹果Wallet将重构线下iPhone换购流程：估价90天有效|Apple|iOS|客户|钱包|报价_手机新浪网",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZlVjdFFwM3NacXh4eDNUb1VVYTBoamdiejhSRnVteEdoTzEtVjJKQ2NWYlBZTkFjLUxSZUdZbVIxd01RZUtIQWVmSHpoT2dwblNRUXlyN2hiUFZwMTFGdlV3eHMwNV93SVpOR0MtYUJ6bFdvTXpHakVJQllyNVppMjZwaXRmVF9JR2JwRUZQeEpSdlEtb2NIZmFGWTJuWHI5M3hMQVRxaU80ZXkyTnRXZnVB?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Wallet功能优化，涉及产品体验改进，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-apple-148",
+    "date": "2026-08-13",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果向110个国家的用户发布间谍软件威胁警报呼吁采取严密防范措施- Apple 苹果",
+    "quote": "苹果向110个国家的用户发布间谍软件威胁警报呼吁采取严密防范措施- Apple 苹果",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9vdU9qTlk4azh5STNXSmI2SlE3MlBiSk5ScXlVdk1tZEFvaGhIcUY0aDhBX1VUZDV1NlB6Z1loeHdyd2hYV2ZjVzVaa2ZKZm9LSjRCdnY3QUlfOVZsVFlxcw?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):安全威胁警报涉及用户隐私，具有显著负面舆情影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-apple-149",
+    "date": "2026-08-12",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果绝版陶瓷手表重磅回归，这次真的普通人劝退",
+    "quote": "苹果绝版陶瓷手表重磅回归，这次真的普通人劝退",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oTkdIRFBXZnZTYUhxTjRWNW1zTXRsaHdweWFIcUU5QjFUdlpJbzY5anFWa3g4Wlg2OXJzeUlkMVBMbTJwYUptRzJZR2FpTGZxTHo1RnI0UzlORHg3?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):陶瓷手表产品回归，消费者反应评述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-apple-150",
+    "date": "2026-08-14",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "MacBook 终于能自己修了！苹果自助维修升级，Neo 成 14 年来最易修 Mac",
+    "quote": "MacBook 终于能自己修了！苹果自助维修升级，Neo 成 14 年来最易修 Mac",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBCbmd3Vk50bUc4VXYyWkJhUWRfek1LcW5yTWRJc1hzYjZsVzQtVm95Ni1LdWw1S241NWp5U2JTeE9FZk1CbnBFNjV1QlVUVXFBVHhGSGZFeWtSYWJN?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):维修政策升级，影响用户体验和品牌形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-apple-151",
+    "date": "2026-08-14",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果地图 Apple Maps 广告位招商中：美国、加拿大商家提前预订最高每月返现 1000 美元",
+    "quote": "苹果地图 Apple Maps 广告位招商中：美国、加拿大商家提前预订最高每月返现 1000 美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNYUtUeXAzQTFyNkhOdXRFdjAwZnBCaWUwMWQ2NmZZQTU1UlF4SDhUM0dJb1NfUlBxcU5mQjJ5LUtvRFZYd0lnOGU2NEFiZDcxT1VMU3BZc3hIMmVEX0tOb1ZnYktFMTRuSVpIQ2RzdGJEcUZnQ0pCT2dDejQ5WEV2bzZ5UGJhVkl1a1RDV0o1ZW0xUEtnd1dmTE02T3V0TThDRl8yZzM4SlJ5NW92akdYU3IxT1ptMGFQNm1oLWQ0b1ZQRC01dTBCNU4wUU12bERWcUxKd1R4dnJRLWpNYS1RZFNjc0wtVmtDYThwWnRhQWRsWUxpOHVkTHB6UnFheGFBc2xMcUZuWVBJS05FdGltNg?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):地图广告商业化新举措，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-apple-152",
+    "date": "2026-08-14",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Apple-阿里巴巴合作开发中国市场专属AI模型",
+    "quote": "Apple-阿里巴巴合作开发中国市场专属AI模型",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNakVoMjdDUG51cHJNUXo1eTdDQ2lxZFJzQWRQcV9kVXM4aVpBbGhhSHVxRHhEbFQ5N0JIVVI4SEllaFdaOWVoWnJCVE96ZHpTeXpKSW4tV01mbE5VMUh3NWNiUkQyY0dCV1FwYjVWSVlNREVqYTZfdUJDM3Vid0RXZUpaand2RUpLeDE4aDB6b3hRcjBVbWUzX1FRdGdRa0lqbFZ0RENCOU1aS0hKU19vTU83WmJ1MURVdVBPb1h5Mk9pajh1R0pSX3pSOUdsVk8yb3RsenJnbWR5OURYYV9DOW1lcDVRWWVTT21mWnpWcngzb2dKeVQ3QXNIR2JoaHl3Z09ubEpYSUtGZjJsMWJ6MUdjcmM4MjlpaF93aGROTU9jZw?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):战略合作发布，AI本地化重要举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-apple-153",
+    "date": "2026-08-14",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果在华押注“双轨AI战略”：一边接入阿里千问，一边打造自己的本土大模型 港美股资讯",
+    "quote": "苹果在华押注“双轨AI战略”：一边接入阿里千问，一边打造自己的本土大模型 港美股资讯",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9qRGtiV1ZSU1czcnhjckx0b1JZdGFBVHpFQktuTW9nSkFacjA4aEtPSmlicTB4dm9Dcl9GM2oxUy1zNUdyY3hEVGpMQXNFS2ZJb2k5NHo4UUZ1X2FUYURzQ0h3?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):中国市场AI双轨战略披露，重要战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-apple-154",
+    "date": "2026-08-13",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "发力中国市场！据称苹果训练了一款“中国定制”大模型，开启AI双轨布局",
+    "quote": "发力中国市场！据称苹果训练了一款“中国定制”大模型，开启AI双轨布局",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBTZjlZVF84SFVZUGdJZnFsT3JGTnFwYjEyNzFIUzVHSDZORjFEMlBUM1lxV0RSTDd2andRNG1PbWVzbUxtU0E?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):中国定制大模型开发，战略重点市场布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-apple-155",
+    "date": "2026-08-14",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果秋季发布会预告：除了折叠屏 iPhone，还有这 10 款新品",
+    "quote": "苹果秋季发布会预告：除了折叠屏 iPhone，还有这 10 款新品",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xNmN3ajRfVF80R2xXNkFqQnpzUGRXM29BU1hRejRKdFdVNnJKZjZpNEc4R1AzejYzZGg4bmoxdzhwV3l3aUhhNkVWQ2RiRUNrd0Z1SkdUdlpwQ3Fv?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):秋季发布会预告含新品信息,但标题党成分较重,需验证。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-apple-156",
+    "date": "2026-08-15",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "No.8 放着 PyTorch 不用，苹果为什么要自己造 MLX",
+    "quote": "No.8 放着 PyTorch 不用，苹果为什么要自己造 MLX",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4xZnhYWGNlcDhYY2NYbzZkWjBOdW1aZ3lyWkdyNFBRSWI3cmdCN3dGQWlYbmt3NGlmSjZYcUN6QnlYQ19XTEpGZG9wdTh1M3ljUmZQdDVfZ1JsV2Yz?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):苹果MLX框架技术分析,产品策略信息,有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-apple-157",
+    "date": "2026-08-15",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果中国官网短暂上线千问支持文档后下架 Apple智能本土化合作引关注",
+    "quote": "苹果中国官网短暂上线千问支持文档后下架 Apple智能本土化合作引关注",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5oMFFfNnZlektjdUR6c0ZqRXlsNW90bi1ybFlCMFhyUGRDNzE3Qm8ya29oZ1pHRGxYaUI4dE1IbnNvQU0?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果官网删除千问文档,涉及合作调整,舆情敏感。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-apple-158",
+    "date": "2026-08-15",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "刚上线就删了！苹果官网删除Apple智能接入牌九网址登录手册",
+    "quote": "刚上线就删了！苹果官网删除Apple智能接入牌九网址登录手册",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5JOXdiOExtVHdka25YM1ZxMTgwaERPeEQybGtNY1ZiaDVQeUM2ZDYtUFFxLUJhYnUzS2NzbnlNNGt2TUVITFhBVG4tWFJ3NGhraHdHdENDQQ?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果官网删除Apple智能手册,与i7同源事件,合作变动信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-apple-159",
+    "date": "2026-08-15",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "别人争造最强大模型，苹果坚持赌“入口”",
+    "quote": "别人争造最强大模型，苹果坚持赌“入口”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaGNJeEJiUmZJcnlBbms1MU9HQWFMVDhleUNqZElTdlFsTlo5cTJndk9jRWpGa0x6STJ5NEc3aGVfNVhCRWtDMkpQRWJrdFhPS2VXemdvc3lMelZCWkNqWEoyck1HcnpOeDdEX2NuVHVHZ01pRDdQYzIzRUxIYzc3STl6dE1mNy01b3A1eTFmTTNIOGRCcjFCN2x1R1hTNXpYbDNQSVBJcTdENFhUeXhsTHE0dThDc1oxMzdQRA?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):苹果AI战略分析评论,体现产业定位,但观点性较强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-apple-160",
+    "date": "2026-08-14",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果地图Apple Maps广告位招商中：商家最高返现1000美元/月",
+    "quote": "苹果地图Apple Maps广告位招商中：商家最高返现1000美元/月",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zYWRGU0NqM3NCRWR2TGRnOHBCOVNVeFFpczlLQ2VUYmZfUGJfckdlMVVMYllnWWVvd2Z0R0Rkd0syRjJ0cXVNdWtwZlY1Q0piTGc?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果地图广告商业化新举措,产品运营事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-apple-161",
+    "date": "2026-08-15",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果自研中国版大模型 阿里低调“撑腰”",
+    "quote": "苹果自研中国版大模型 阿里低调“撑腰”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQZ0h4RlczdG5GR2YycjVsS3dXbk81VlNQMUZsN2RFMDBTOUw1Yy1GY19lZmtQVWFoa1piQ1dDYzJHb2VIRm96N2NMcW4yQmpOcXdMdGZDQzZHMWFFNmh3aEJ4ZXh4MWoxam5hdHdwTEpBOWc1cU5KdkFUdVFWNEhETlk4RC01VEY1Z1RTZVNpQlFNQlpiNUVvbUlzSmpJbUxLWEYyTVFELTV2ZGNoNFdvMXQyTWVUUjBIYXh6SnZfUjFpZkRwVmJtR2J3bEJ0eEEyQnA5U1E3blRPNzVoT1NTN21kQmpEc0UzWTN4Q0M2YjBmUEs1d3VTT3NoWVBEZFhlT3lBUkFrNHV5bTVHcFNUaHdXUXQxR3lRaXc?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果自研中国版大模型与阿里合作,重要战略信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-16-apple-162",
+    "date": "2026-08-16",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果折叠屏将冲击行业TOP3：和三星华为形成三足鼎立之势- Apple 苹果",
+    "quote": "苹果折叠屏将冲击行业TOP3：和三星华为形成三足鼎立之势- Apple 苹果",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mclNVRmJPMDcxM1ZYSmI1MTM0VVFJbWdqU2NLbFo2UUg0YmdIZ1hlQW9HWFRIc0xGQ2lSeXNXMTVrbmVGbFJHX3JLbV9vakxGWXp0S21XeXZnaEFXRGVDdQ?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):苹果折叠屏产品预期,新品类进展,但含预测成分。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-apple-163",
+    "date": "2026-08-14",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "曝苹果已与阿里合作训练大模型",
+    "quote": "曝苹果已与阿里合作训练大模型",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9YVGtCYk5qbVVZZGhoZnlDbEtxWGZmZ2ZJV19KSk10Y2xmR2c2WkYtZGhwRHhWdGk4Tmg5U2xqNDJKOVZYOElLYQ?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果与阿里大模型合作曝光,与i12同源,战略合作确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-apple-164",
+    "date": "2026-08-14",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Vision Pro折戟之后，AI眼镜能拯救苹果的穿戴野心吗？",
+    "quote": "Vision Pro折戟之后，AI眼镜能拯救苹果的穿戴野心吗？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqSi1xLVB4Z2xLejkwZlhhWDNidUhqeGNxbGZabVJ1VUY2QzRsMi04QUszODk2SW1jbzRsZENGOHV6ZWhfZlptckVpTWZ5UF8tbUkwaW4wMkZINUF4?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):Vision Pro失利后AI眼镜前景分析，产品战略评论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-17-apple-165",
+    "date": "2026-08-17",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "解读丨苹果为何「死磕」自研 AI ？",
+    "quote": "解读丨苹果为何「死磕」自研 AI ？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA1c2RocHpZY0EtaHJ4ZjVITVRoRUR0SnVvQWZmeFFobXRsYXUzMHZEdFF6TFVSc2RCX2YwV1NyYTYzRzhlRFNuZ1VHOTlFTTg0UnRiSWhUV193LVhiVjBZbTlpeEpJT2drc2dwUXFWQTUzV3FPaGp2dmxENzNXV2s?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果自研AI战略分析，属产品方向评论，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-16-apple-166",
+    "date": "2026-08-16",
+    "dim": "W5",
+    "severity": "P3",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "全球首家！Apple体验区进驻WeWork上海门店，共享办公站上新风口",
+    "quote": "全球首家！Apple体验区进驻WeWork上海门店，共享办公站上新风口",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOUt2QmxPd0g5OUhHTHZNWHRIVHl1cXV5STAzTTNReWozV3gwUmRQNkVKaVVWcGpldVVrVEYtenNTV3c3SEozeGUtdG1HdjQ1SVZfV29RQTZqWEozZjhWQmtTaXNjTDNHV0ZqZzluQVpGdXAzaEEwMlF2M1RpaEJYaVRYMHFpX2xzQWw3cQ?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):体验区开设属渠道拓展，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-apple-167",
+    "date": "2026-08-15",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "国行iPhone用上AI不远了，揭秘苹果如何打造“中国特供”模型",
+    "quote": "国行iPhone用上AI不远了，揭秘苹果如何打造“中国特供”模型",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5nOXJXS3A0M1BucWdrVkNKN0lDY0kzRXptcHk3NU5kaV92ZFJTQi1sb1RSSUVNa2hIVS15R2JPR2JwT0F0RVdZZW5RQUdYM1RlVnQ5WlZB?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):苹果中国AI模型本地化进展，产品策略相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-16-apple-168",
+    "date": "2026-08-16",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果和阿里联合训练的大模型将支持哪些具体功能？",
+    "quote": "苹果和阿里联合训练的大模型将支持哪些具体功能？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BX1ZaRzgxMHdFR0pNbFFjalFJRmVVcmJFM09OSll5c1VrOTh0Mm1uZlBPSzNnYkFnM2Y4cGRGRFFBeVJ6REJXWjcxdkdZWlhTcTRFb21jRFRRYkZJbDkwbTAtX2pzdU45TV8ySThkZ3cxMWpCenJWSVZqQ1pCZVU?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):苹果阿里联合模型功能解读，产品信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-10-apple-169",
+    "date": "2026-11-10",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Apple TV introduces new Sign Language interpretation feature",
+    "quote": "Apple TV introduces new Sign Language interpretation feature",
+    "quote_type": "title",
+    "url": "https://www.apple.com/newsroom/2026/11/apple-tv-introduces-new-sign-language-interpretation-feature/",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方无障碍功能上线，日常产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "verified",
+    "original_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNzhoWXZLQVdiWkJqUG1FV1pSWURWQmZ0dFNRSGhJNTd0RUdaS2xaeDhyVnRpNGpBaFJmMTd5dXdnUktqUGhIODNlNVQxUW9mMklLVVZOQWp0V2hkcXl3WWJaSDNtOHBLNWRrQkNjaXpiY0h5bXMtQnpleXVkUWtFU3h4ek16bkF6LVBwM2M1cXM3OENZS1BSMU15Um1yOTlWdXc?oc=5",
+    "quote_match": true,
+    "fetch_status": "ok",
+    "final_url": "https://www.apple.com/newsroom/2026/11/apple-tv-introduces-new-sign-language-interpretation-feature/",
+    "source_date": "2026-11-10",
+    "source_title": "Apple TV introduces new Sign Language interpretation feature",
+    "verification_scope": "official_statement",
+    "verification_source": "https://www.apple.com/newsroom/2026/11/apple-tv-introduces-new-sign-language-interpretation-feature/",
+    "verification_excerpt": "Apple TV introduces new Sign Language interpretation feature",
+    "verification_reason": "Exact dated title verified on apple official source; confirms publication only, not independent factual truth.",
+    "verified_at": "2026-11-14",
+    "verification_by": "automated-source-match"
+  },
+  {
+    "id": "2026-11-10-apple-170",
+    "date": "2026-11-10",
+    "dim": "W5",
+    "severity": "P3",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Football Manager and other hit franchises headline Apple Arcade’s holiday lineup",
+    "quote": "Football Manager and other hit franchises headline Apple Arcade’s holiday lineup",
+    "quote_type": "title",
+    "url": "https://www.apple.com/newsroom/2026/11/football-manager-and-other-hit-franchises-headline-apple-arcades-holiday-lineup/",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):游戏目录更新，轻微正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "verified",
+    "original_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNejRQejVPVlE0b3lBaUlVWE9FSFVvVmhiV3l0T3JqYkRKOFVIUS04Q3duWkNHaFRfQlBGLUlnaUNNd0NHbUVWRXFGU2o1c3pUWnVlTDMwYjZfa0lnOHhLZVpHTzJ0akQ2M1FtdWhzc25wci1qczV0b0tKVWZXZVZGLUgxMk9RUE9lbDBUZzgtOHlJX2FsUzJ0UTlfLWs5RUJvQXlPbU5jVTFHSHB0d3dXWXAtT3VrZWtoV193?oc=5",
+    "quote_match": true,
+    "fetch_status": "ok",
+    "final_url": "https://www.apple.com/newsroom/2026/11/football-manager-and-other-hit-franchises-headline-apple-arcades-holiday-lineup/",
+    "source_date": "2026-11-10",
+    "source_title": "Football Manager and other hit franchises headline Apple Arcade’s holiday lineup",
+    "verification_scope": "official_statement",
+    "verification_source": "https://www.apple.com/newsroom/2026/11/football-manager-and-other-hit-franchises-headline-apple-arcades-holiday-lineup/",
+    "verification_excerpt": "Football Manager and other hit franchises headline Apple Arcade’s holiday lineup",
+    "verification_reason": "Exact dated title verified on apple official source; confirms publication only, not independent factual truth.",
+    "verified_at": "2026-11-14",
+    "verification_by": "automated-source-match"
+  },
+  {
+    "id": "2026-11-11-apple-171",
+    "date": "2026-11-11",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果开卖334元AI“加油包”，额度不详，仅面向已订阅创作套件用户",
+    "quote": "苹果开卖334元AI“加油包”，额度不详，仅面向已订阅创作套件用户",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE43cW5mdVg0ckdYTEdncFptMVVPWlp0UGpHbHZUZGtPeDR2SXp2MTNkMzVTWkNmcEtCUTBWWHhsdXNQT3plQkgzeVBLNGZzanZRc2pUTWZURFJlQjdP?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "category",
+      "leverage",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):AI服务收费新动作，定价引争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-12-apple-172",
+    "date": "2026-11-12",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果Apple支持社区正式进入只读模式 11月20日将永久下线",
+    "quote": "苹果Apple支持社区正式进入只读模式 11月20日将永久下线",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8tSzRyNDBkVG9qM2pMbkJGSVRldG1pbldkT2JOU0pHdFZBcHR5bGxCZmw4R0NhRHRlVWU2QktyNDI3c2U2X1RFclQzQXJMVmlWb2Fab3AteUxUTGMxTkdfWXEzU25peWFOMUtkUDFaYWh6alpITUdMRQ?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官方社区永久关闭，服务收缩事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-apple-173",
+    "date": "2026-11-13",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果HomeView与第四代Apple TV 4K开售 299美元起",
+    "quote": "苹果HomeView与第四代Apple TV 4K开售 299美元起",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPR0pZekRoczBpeVNqUm9ZcmhVQkVxYnFCalN5RVhLSVdQMDJmQmdoMXBGeEhlWFpzenlvU3E4M0VYRi1abXk4Rml4WU96T3N5bjNMZW5EbTFwbnVkMzBEZG90YUVYZHdWYzA5Z3pub3pFVUpxT1JpUjBQQ01mY3VNTnlBVnRsODZL?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):新品类硬件开售，非旗舰新品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-apple-174",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P3",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "tvOS 27.2.1将为旧款Apple TV 4K加入Siri AI",
+    "quote": "tvOS 27.2.1将为旧款Apple TV 4K加入Siri AI",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aQTlnVzdQSnBGTnhwMlpUSkhiNmZMaGk0ZVMwekhQU3hhaGFoRkJLemNTVGs5N0Zqc2UwSTZ3RjdRVUFTS1VMWHhzT3FSSFFRVjlXamNKWTA5TnZtQS1CRg?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):旧设备功能小幅更新，影响轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-12-apple-175",
+    "date": "2026-11-12",
+    "dim": "W7",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "Apple支持社区将于11月20日永久关闭",
+    "quote": "Apple支持社区将于11月20日永久关闭",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9RQ0xXbzQ0WXlDMURWOHVQT2dYaV9kNTFXLUFsa2JMZFgxX3V2Q01wS0dQa2pGQUlDVFpqcnVsaVZxOFJXaTFjV0hKT204Z0pMVUs2RlZsRVA1Wmh3MUZsQjlGWWwxZUQ5RjJwem5YempsOXl0YnZubXQwRlFxVWc?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):关闭30年官方社区，服务收缩事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-apple-176",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P0",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Apple HomeView available today",
+    "quote": "Apple HomeView available today",
+    "quote_type": "title",
+    "url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(med):官方新品正式发布上线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "verified",
+    "original_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA4V182WGV5QTByS3VlUmxVLVo0Zy1iVndBaW1jRHU5R09MclZ4QmQwMTBobU04RXE3SEJ6a0pkUmdUcjZ6WmZjOVdDM0h5alB5STNKSkswT0xGSGJRakpqU1RiU3hNSnYxN0sza2o4UjNDUXh5djQ4S2Rn?oc=5",
+    "quote_match": true,
+    "fetch_status": "ok",
+    "final_url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
+    "source_date": "2026-11-13",
+    "source_title": "Apple HomeView available today",
+    "verification_scope": "official_statement",
+    "verification_source": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
+    "verification_excerpt": "Apple HomeView available today",
+    "verification_reason": "Exact dated title verified on apple official source; confirms publication only, not independent factual truth.",
+    "verified_at": "2026-11-14",
+    "verification_by": "automated-source-match"
+  },
+  {
+    "id": "2026-11-13-apple-177",
+    "date": "2026-11-13",
+    "dim": "W7",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果宣布，Apple 支持社区 11 月 20 日永久关停！",
+    "quote": "苹果宣布，Apple 支持社区 11 月 20 日永久关停！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wazBiM0t4QlpvOWNaT2FuOG96TEhRVEZTbU01OHdQV2lrMmd1UWtidm1PMnhpbU5EeEVYYmgtLVVScGROQThQNWI4ZnB0UTJNc3hTdVgxQkdCaU5m?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):官方社区永久关停,服务收缩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-apple-178",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "苹果两款新品上市，国内用户暂时买不到",
+    "quote": "苹果两款新品上市，国内用户暂时买不到",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1fenpqa0doa0JZNTVsOFRKbTNHb21wZXdERlBmSE9MeXlyenhnYUJnSkRtNUg4ZzQ0RTM2Q2hSVlZzYjdGSmZHanExV0xkR1lkd2pZM1M3bURPMEEw?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):新品上市但国内不可购。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-apple-179",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "tvOS 27.2.1 将为第二/三代 Apple TV 4K 机型带来 Siri AI",
+    "quote": "tvOS 27.2.1 将为第二/三代 Apple TV 4K 机型带来 Siri AI",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSDRvaU15LVhXQzdKUURyR1FvTURhdjdWY1hha18xUWUxQW1pQjEwd2FZVVctc0lsNVBiQkMxWkY5aHdTQ2o3MHRRemNIWUxqQWNXTjBMNnBXMjdTVnZpMWxid0RIQzZ0anBuNGd3S3J5anY2ejE0YUx4UDlHTU1GMQ?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):系统更新带来AI功能。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-apple-180",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Apple Watch Ultra4体验 新一代钉子户预订",
+    "quote": "Apple Watch Ultra4体验 新一代钉子户预订",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5iMG10UUcyVnVNS0VaTm1NbVVEZHRwVDRiUmx2WDlUSWVkdjJkV1RFQUYxelJNVlExLTdiZjRSTmdEQnlLX2JhdURGcHBJTDd6Tnl2WE1mTQ?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):新品体验评测，口碑正向但非正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-apple-181",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P0",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "苹果今日推出两款新品",
+    "quote": "苹果今日推出两款新品",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdktWc0syNjBnbzAzZVBON3lTZzdGZ1NfSnc4b3o3d0NqamFFYndSOTktbUxCdmVSLTl4V3hqbjdFdkxfQlZRTXc3NWEyX01wV0ZONmR0X3RHMFFLTS1iT2lDWTZMQ3NCN3d2RF9lSFVKSjNsN2VqTTZYVW54dDZZSVZMUGNZdTJCeFE5Tw?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):旗舰新品推出属重大发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-apple-182",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "苹果多款iPhone机型降价- Apple iPhone",
+    "quote": "苹果多款iPhone机型降价- Apple iPhone",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhTFhBQVN2Nl9uNGtrSThUVV9lbGVNVXJPZVM5WVhyMkVGWU04bmV2bE44eU9TN3ZZSmw4N1R1ZHhQZjBsZkRxc1oxR3FNUUZhQUZKLW9MVTg5M1Vqc2d6Yw?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):iPhone降价属显著市场动作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-11-apple-183",
+    "date": "2026-11-11",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "用户都去问AI了，苹果突然关掉30年历史社区",
+    "quote": "用户都去问AI了，苹果突然关掉30年历史社区",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kZHVvUE5hRTQ2NXN5U2luRHM0M19GOXd3WEFjNG1tTm5PMzlvd1ljYWkzUi1pRU4wRFFtQUdfRjExSFJORURORDZsdzJJLWxxVy0xSUJUVVNtQ0dDbHNlUkNpNDA?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):关闭30年社区引用户不满。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-11-apple-184",
+    "date": "2026-11-11",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "苹果官宣Apple支持社区永久关闭",
+    "quote": "苹果官宣Apple支持社区永久关闭",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNelB3QkQxZWhPVGJ0MXdXRTVEaWpueHZySHMtemxORTBqeGdkQzgxWUdNVkRRSDFkU2lLc2FlZ21veFprRWIxVVFYQnpHbkQ4bndaTnNyamE3V3JjZnlQc3ZMTGVkSjlXVERDYmNrMkVyZXdmbzA0RmU2c21QSlg3NEJnenFKMnRjRDlEMW9FMA?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):官宣关闭支持社区为显著服务变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  }
+]

@@ -1,0 +1,220 @@
+{
+  "status": "draft",
+  "brand": "apple",
+  "baseline": {
+    "version": "v2",
+    "panel": "vc-en",
+    "scores": {
+      "pmarca": {
+        "origin": 9,
+        "category": 8,
+        "leverage": 9,
+        "identity": 9,
+        "signal": 7
+      },
+      "paulg": {
+        "origin": 10,
+        "category": 9,
+        "leverage": 8,
+        "identity": 10,
+        "signal": 8
+      },
+      "pthiel": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 10,
+        "identity": 10,
+        "signal": 8
+      },
+      "naval": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 10,
+        "signal": 9
+      },
+      "rhoffman": {
+        "origin": 9,
+        "category": 8,
+        "leverage": 9,
+        "identity": 9,
+        "signal": 8
+      }
+    }
+  },
+  "evidence_sha256": "12aa1c067fee5d708f25c386e5ed1fd21851118ba6b2d6c8737a5861070d8fef",
+  "judgments": [
+    {
+      "judge": "pmarca",
+      "scores": {
+        "origin": 9,
+        "category": 8,
+        "leverage": 9,
+        "identity": 9,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [
+          "2026-11-13-apple-176"
+        ],
+        "leverage": [],
+        "identity": [
+          "2026-11-10-apple-169"
+        ],
+        "signal": [
+          "2026-11-13-apple-176"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No new verified evidence touches the founding narrative; baseline 9 stands unchanged.",
+        "category": "Apple claims HomeView is available today (2026-11-13) — a new official product launch. But verification confirms only that Apple made the statement, not adoption or a new category being defined; no felt product/market fit signal yet. Maintains, not upgrades, the historical category-creation record; stay at 8.",
+        "leverage": "No new verified evidence on ecosystem, silicon, or distribution; baseline 9 stands.",
+        "identity": "Sign Language interpretation on Apple TV (2026-11-10) is consistent with the accessibility-and-design identity — reinforcing but routine; not enough to move an integer score.",
+        "signal": "HomeView launch is a company statement only; no verified demand or PMF signal. The standing reservation (AI-lateness, post-Jobs innovation durability) is unaddressed by these events. Stay at 7."
+      },
+      "as_of": "2026-11-14",
+      "reason": "This cycle's verified events are routine: an accessibility feature, an Arcade content refresh, and an official launch announcement. All are confirmed only as official statements — none demonstrates market pull, and none addresses my core reservation (whether Apple's distribution lock-in can buy it a paradigm it arrived late to). Money talks, hype walks: nothing here talks loudly enough to move a score. Baselines hold."
+    },
+    {
+      "judge": "paulg",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 10,
+        "category": 9,
+        "identity": 10,
+        "leverage": 8,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [
+          "2026-11-13-apple-176",
+          "2026-11-10-apple-170"
+        ],
+        "leverage": [],
+        "identity": [
+          "2026-11-10-apple-169"
+        ],
+        "signal": [
+          "2026-11-13-apple-176",
+          "2026-11-10-apple-169"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "本轮无任何涉及创始叙事或起源历史的新证据。车库创业(1976)→放逐(1985)→归来(1997)仍是创业史上最强的创始人弧线之一——乔布斯是'创始人即产品品味'的极致范本。维持基线 10。",
+        "category": "两条新证据(HomeView 正式发布、Apple Arcade 假日阵容更新)是真实的产品线扩张,方向为正,但它们是生态内的目录更新与周边品类,不是 iPhone 式的品类定义时刻。在'AI 时代苹果是创造还是守成'的既有疑问未解前,不足以从 9 上调。维持 9。",
+        "leverage": "本轮无涉及垂直整合、生态锁定或供应链的新证据。全栈护城河维持原判:极深,但监管与开放压力使我不给满分。维持 8。",
+        "identity": "Apple TV 手语传译功能(2026-11-10)是一个小而真实的正面证据——'把体验做到所有人都能用'正是 Apple 身份语言的延伸,一致而非偏离。但单一无障碍功能不足以改变我对全卷最强身份系统的判断,基线已是满分。维持 10。",
+        "signal": "HomeView 上线(2026-11-13)是官方声明的产品发布——注意:verified 仅确认苹果发布了该声明,不证明市场表现;没有第三方销售或用户留存款。手语功能同理,是'做了'的信号,不是'用户热爱'的信号。真实信号的真实疑问(AI 迟到、后乔布斯创新节奏)本轮没有被新证据实质回答。维持 8,如实区分'产品动作'与'用户想要'的硬证据。"
+      },
+      "reason": "PG 视角本轮三条已验证证据(手语传译、Arcade 阵容、HomeView 发布)全部为正向但量级有限:两条是日常产品更新(P2/P3),一条是正式发布(P0,但仅验证为官方声明,无独立市场表现数据)。它们与既有身份系统一致、方向正确,却不触及唯一的真实分歧——AI 时代的品类定义能力与创新 durability。按我的框架,这些是'做了什么'的信号,还不是'用户是否迫切想要'的信号;没有理由移动任何分数。全部五个镜头维持基线,不确定性与既有保留如实保留。"
+    },
+    {
+      "judge": "pthiel",
+      "scores": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 10,
+        "identity": 10,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [
+          "2026-11-13-apple-176"
+        ],
+        "leverage": [],
+        "identity": [
+          "2026-11-10-apple-169"
+        ],
+        "signal": [
+          "2026-11-13-apple-176",
+          "2026-11-10-apple-169"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No new verified evidence touches the founding narrative (1976 garage founding, Jobs exile and return). The exile-return arc remains strong but, for a monopolist, the moat matters more than the story — Origin stays at its 8 baseline.",
+        "category": "HomeView's official launch (company statement, verified as publication only) shows Apple still expanding into adjacent markets — the scaling recipe I taught: own your market, then take over adjacent ones. But Category is already at 10; an incremental smart-home adjacency neither proves nor dilutes consecutive category creation. No change.",
+        "leverage": "No verified evidence this round bears on ecosystem lock-in, silicon integration, or App Store economics. Leverage holds at 10 — ecosystem lock-in remains textbook monopoly — but it is held, not newly demonstrated.",
+        "identity": "The Sign Language interpretation feature (Apple TV, official statement) is consistent with the accessibility-and-design identity system — a small, on-brand data point. Identity was already at 10; consistency at the margin doesn't move a ceiling score.",
+        "signal": "My v2 reservation was innovation durability in the AI paradigm. HomeView's launch is a positive official signal that Apple is still shipping new product lines, but a smart-home product is an adjacency play, not evidence Apple has solved its generative-AI lateness — and the verification confirms only that Apple made the statement, not market traction. Signal stays at 8: the durability question remains open, neither resolved nor worsened."
+      },
+      "as_of": "2026-11-14",
+      "reason": "I am answering as Peter Thiel, based on public materials (chiefly Blake Masters' notes of my 2012 CS183 lectures) — inference from the written record, not me. The three verified events are routine-to-positive: an accessibility feature (identity-consistent), an Arcade catalog update (minor), and a HomeView launch (a new adjacency). None addresses the panel's one real fault line — whether Apple, late in generative AI and post-Jobs, still defines the next category. All five scores hold at baseline: Origin 8, Category 10, Leverage 10, Identity 10, Signal 8. Verification scope is official_statement only; it confirms Apple made these announcements, not their market performance. Uncertainty is preserved: the durability question is open, not demonstrated damage."
+    },
+    {
+      "judge": "naval",
+      "as_of": "2026-11-14",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 10,
+        "signal": 9
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [
+          "2026-11-10-apple-170",
+          "2026-11-13-apple-176"
+        ],
+        "leverage": [],
+        "identity": [
+          "2026-11-10-apple-169"
+        ],
+        "signal": [
+          "2026-11-10-apple-169",
+          "2026-11-13-apple-176"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No verified evidence in this round touches the founding narrative. The garage origin, exile and return arc remains the baseline; nothing here corrects or extends it. Held at 9.",
+        "category": "Two official statements: an Apple Arcade holiday lineup refresh and the launch of Apple HomeView, described by the company as available today. Note the automated verification confirms only that Apple made these statements, not independent traction. A catalog refresh and one new product announcement do not, by themselves, demonstrate the kind of category-defining move that would move this score off its already-high baseline. Held at 9.",
+        "leverage": "No verified evidence this round bears on the leverage structure — no new ecosystem lock-in, silicon, or installed-base data. The compound leverage of a billion-plus device base remains as previously assessed. Held at 9.",
+        "identity": "The Apple TV Sign Language interpretation feature is a small but authentic expression of the accessibility-and-craft identity — inclusive design done quietly, which is consistent with the brand system rather than expanding it. A P2 product update justifies citing it as coherence, not a change to a score already at 10.",
+        "signal": "The Sign Language feature and the HomeView launch are ordinary, on-schedule compounding signals — shipping, not spiking. They neither resolve nor worsen the open question of innovation durability in the AI cycle. The slope of leverage is unchanged; held at 9 with the same caveat as baseline."
+      },
+      "reason": "Three minor positive official statements — an accessibility feature, an Arcade lineup refresh, and the HomeView launch — all verified only as company statements. They confirm operational continuity and identity coherence but none demonstrates a durable new compounding asset or a category-defining moment. All five Naval scores held at baseline (9/9/9/10/9); no lens-specific evidence meets the bar for a change. Conflict disclosure: none — Naval has no Apple association requiring panel-drop."
+    },
+    {
+      "judge": "rhoffman",
+      "as_of": "2026-11-14",
+      "baseline_scores": {
+        "origin": 9,
+        "category": 8,
+        "leverage": 9,
+        "identity": 9,
+        "signal": 8
+      },
+      "scores": {
+        "origin": 9,
+        "category": 8,
+        "leverage": 9,
+        "identity": 9,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [
+          "2026-11-13-apple-176"
+        ],
+        "leverage": [],
+        "identity": [
+          "2026-11-10-apple-169"
+        ],
+        "signal": [
+          "2026-11-13-apple-176"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "Origin ↔ 9. 本轮无任何与乔布斯车库创业/放逐-回归起源叙事相关的已验证事件;HomeView 发布与 Apple TV 无障碍功能不触及创始叙事。起源史实未被修正,维持基线。",
+        "category": "Category ↔ 8. HomeView 今日正式发布(2026-11-13,官方 P0,仅为官方声明,不独立证明市场成功)是真实的新品类尝试,方向正面——Apple 仍在定义家庭视觉/家居新入口而非纯守成。但我此前在 v1/v2 的 8 分保留是'生成式 AI 这代 Apple 是否仍在创造品类':单一官方发布标题无任何需求侧验证,不足以证明这是'下一个 iPhone 时刻'。Apple Arcade 目录更新(2026-11-10)更是常规内容运营,非品类创造。加分证据不足,维持 8。",
+        "leverage": "Leverage ↔ 9. 本轮三条已验证事件(Sign Language 无障碍功能、Arcade 目录、HomeView 发布)均为产品/内容层面更新,未改变全栈整合、生态锁定、十亿设备网络效应的杠杆结构——维持而非扩张,按既定原则不动分。",
+        "identity": "Identity ↔ 9. Sign Language 无障碍功能(2026-11-10,官方)与 Apple '设计为人人'的身份语言一致,是身份一致性的小额正面印证,但属日常产品表达,不构成对 Identity 9 的一次性位移证据。维持基线。",
+        "signal": "Signal ↔ 8. HomeView 'available today'(2026-11-13)是官方发布声明,不等于需求侧信号——我的原则是读需求曲线而非发布会:没有采用、付费、留存的独立验证,发布本身不加分。Sign Language 与 Arcade 事件亦无信号级验证。v2 的 Signal 8 已计入定价权与 Apple Intelligence 国行落地;本轮无新的已验证需求证据,维持 8,同时对 HomeView 的真实市场表现保持明确的不确定性。"
+      },
+      "reason": "作为霍夫曼视角:本轮仅三条已验证官方事件——HomeView 上线(品类尝试,但仅为官方声明,无 PMF 验证)、Sign Language 无障碍功能(身份一致性小额印证)、Arcade 目录更新(常规运营)。没有触及起源叙事、杠杆结构或需求侧真实信号的证据。发布不是产品-市场契合:读需求曲线,不读发布会标题。五个镜头全部维持基线(9/8/9/9/8),HomeView 的市场表现留待未来已验证需求证据再评估。本评分为基于霍夫曼公开写作的 in-character 模拟推断,非本人意见;无 Greylock/LinkedIn 相关自冲突(Apple 非其组合公司)。"
+    }
+  ]
+}
