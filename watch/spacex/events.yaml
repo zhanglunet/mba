@@ -3256,3 +3256,64 @@
   source_type: media
   note: "LLM 预分类建议(high):重大基建项目获批，金额明确但属审批。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-19-spacex-214
+  date: 2026-11-19
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "重磅突发：马斯克转向了！说后悔花4.46亿美元支持共和党：我挺蠢！"
+  quote: "重磅突发：马斯克转向了！说后悔花4.46亿美元支持共和党：我挺蠢！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0wUVk0V19nN3Q0RXBUd3VoOWJOcF92OXJUSTkzYW1JemtGSUhMTnNibmNVQUl6T0FPNm1oOHBHVUU2Y20yZXdfYnpuVUUyVTdxOW16VEdBUnVwTkdZ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):创始人重大政治立场转向，影响品牌形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-spacex-215
+  date: 2026-11-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "菲律宾总统马科斯称希望承办SpaceX火箭发射"
+  quote: "菲律宾总统马科斯称希望承办SpaceX火箭发射"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE1LMGJ0N00tRHBDQ0JWdVBkNmVhQUFkRDZoUGpwb1QtYnlrZC10b244Sl9NSHE5UU8wZktFRHcybnNKZ0dENW0wQ3FzLVRIT2VqZ1hqaDJQVVJXNUlYTnpUa0p1Ti13TURReXVEcVAwRUEwT0k?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):外国政府主动寻求合作，正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-spacex-216
+  date: 2026-11-20
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX拟筹430亿美元购英伟达芯片 贷款机构据报拟禁芯片上太空"
+  quote: "SpaceX拟筹430亿美元购英伟达芯片 贷款机构据报拟禁芯片上太空"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE13eWJTNlBWb0N5RXpHemJzUkFTeE1mYlJXOXo0VWFpYVNGaVFwVEF2QUdicGVpcHRzTUVVNU9EV2prMnJtWDZGbWpucHV1QQ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):430亿巨额融资传闻，尚非完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-spacex-217
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "华尔街官宣迄今最大GPU租赁融资 就算是SpaceX也得支付“AI溢价”"
+  quote: "华尔街官宣迄今最大GPU租赁融资 就算是SpaceX也得支付“AI溢价”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1sc0VZdEFqd2N5eU1kU1RPRkJjWkZQTzFtRHpTZno5SmNJdHE1WUVZTEYwSUVVZjJ4eTlPekg3bkg4aUYxT1JBbw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):巨额GPU租赁融资涉品牌，金额未明。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

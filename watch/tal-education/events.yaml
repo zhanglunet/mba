@@ -305,3 +305,19 @@
   source_type: media
   note: "LLM 预分类建议(high):业务与投资业绩双重信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-20-tal-education-020
+  date: 2026-11-20
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "TAL エデュケーション グループ、1株当たり0.10USDの配当を発表"
+  quote: "TAL エデュケーション グループ、1株当たり0.10USDの配当を発表"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYnNsWjBtVThSNEdkTHFQVFFFTHkwaEZMTzdpVFRTZHVONzRVZ1Q0aGEyZGxtVHFzS09JNDNwcUlQQS1uaVlqLVUyUGZIbkVYcW13bjdfNkJGRlFabG5nMDZ6OGFpYkYyU2V5OHcwNHp6b0ZaRnlVMWhERE96amtiUDNmWHkxcmdyVlFF?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):分红公告，财务回报事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

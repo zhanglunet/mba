@@ -3353,3 +3353,79 @@
   source_type: media
   note: "LLM 预分类建议(med):iPhone历史首次功能升级传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-20-apple-221
+  date: 2026-11-20
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "爷青结！这个28年的苹果老社区彻底关了"
+  quote: "爷青结！这个28年的苹果老社区彻底关了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5UZGhrRXNZT2hXZG5mblBuNjJpRktHRTdoVVh6YTAtLTRhN3B4Qy1aMWxYYnBwSkNCUmZLNEgtTnlySmtoMTdSMGRROENuU3FWbWhVcDNjNVdxcjE5?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):老社区关闭，社区舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-apple-222
+  date: 2026-11-20
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果急了！Apple Intelligence将迎Agent升级，最快明年推出"
+  quote: "苹果急了！Apple Intelligence将迎Agent升级，最快明年推出"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBjV3VpclhPOEVhcElzTlNQMnAwQzFjZnZQeEpCTGZvZlB2b0xWM2RUb3BXWlg4STF1R0dvaGlzMUJHdHVaV1B2RQ?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Apple Intelligence升级传闻，非正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-apple-223
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果正式关闭运营28年Apple支持社区"
+  quote: "苹果正式关闭运营28年Apple支持社区"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE51MVJGWnljNDgtNjc3Sy1fbklIaHpNNFRFYnluR29iTHZEMjhHVzVHajhSUmVOaGU0S3NLSDlnMmRBODl4N3NvZWNlaGVnS2RETVU0U1JlX093ZE9ZcndobThzbmU2R2hNbmlXYTd3eXo?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity]
+  source_type: media
+  note: "LLM 预分类建议(med):关闭28年支持社区，品牌社区资产收缩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-apple-224
+  date: 2026-11-20
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple招聘信息显示Mac AI智能体已进入早期开发阶段"
+  quote: "Apple招聘信息显示Mac AI智能体已进入早期开发阶段"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxOTFhsc3JXVzk4emc3d3lCRndqYUhEVmhWeHA3Uk1Tbnpmcm1zS3dfZ1hwMVJhSUtWMThBUUc1N1Z4VkZacVh0clNwZE5CSTJTNW53dkZGSkUxZDhoWlVpd0cwWXBlWkFqNUNvY3pDUVhzdkFlRnJYRkF5WUd4SU5OVHdqMGk0eE9qclRhOU1qLWVZakNIcWc?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):招聘信息透露Mac AI智能体开发动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-apple-225
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "全女子F1赛车要上Apple TV了，明年开播"
+  quote: "全女子F1赛车要上Apple TV了，明年开播"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVFB0MHdzbGlWbzdjclhnMG1MZVZfM2tsMUc1UHUzR0xQaGZTRE1GWmFKeEJ6VXdTWE1WRzN3LVFDMGkzTHd5TVpOWVhjMTF1d1A1TkFuVVRSWVJsZWhScUZLT1hLalFLMW0weFJHdG9kdkl6TTlDRVhXT21vX3lXRTFsNXBXOV9F?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Apple TV新内容合作，品牌业务动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -3706,3 +3706,94 @@
   source_type: media
   note: "LLM 预分类建议(med):旗舰模型测试登顶，重大产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-19-openai-242
+  date: 2026-11-19
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI首款硬件不是手机！果链深度参与，苹果烙印满满？"
+  quote: "OpenAI首款硬件不是手机！果链深度参与，苹果烙印满满？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VRGRsaWtMRmRiSTVzenliQk1sY0dRT1pxMXYwMDlybEtjdkpXdDM1Q2xjRHRndWtxSEFadUZ1Xzh3eVh0S3BWdk80Tzc2V0xSY3YtVkJnQmM4LWg3?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):首款硬件发布传闻，重大但信息未证实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-18-openai-243
+  date: 2026-11-18
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，OpenAI宣布GPT-6.2 Astra 和 Sol 发布"
+  quote: "刚刚，OpenAI宣布GPT-6.2 Astra 和 Sol 发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBZYlNDSVlTSlQxb01BekVUSnlGSlNYRGY2Z3FhS3d2YWVtODNySTA1c240SG0yUXhjSlpxSG9ULXEzYV9Zc1hhSmE5TnZYcXRyU3pMeUlwcXowNGk3?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):主力大模型重大版本正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-openai-244
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Hebbia sees improvements in financial research with GPT-6 Astra"
+  quote: "Hebbia sees improvements in financial research with GPT-6 Astra"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE4yMjU5Ui1IV2lBZ29YVnp0dzBZVVVUZU9TOVMybUJQcFB3RmJlTFgxWjBuRXlFTk5HRGhuaXQtQ2hyX3UxVEc2V2QzcG5xT3drWVdWVGxKeEViZGxoNTZsQTNseUc3UkRPaUF4NVpTYzk?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):第三方应用案例，一般正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-openai-245
+  date: 2026-11-21
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "大规模封号来了！OpenAI开打反蒸馏战"
+  quote: "大规模封号来了！OpenAI开打反蒸馏战"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5wZmRkcTBEM3ZXOE9zMjMxamNtdjY1Z0tXajE4aWs4bFZ5d1lYUzRoNmlfdU9GV3pZRkxFQ0lTTDRyek5RQzlIMWxiMjE?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模封号反蒸馏，生态争议事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-openai-246
+  date: 2026-11-21
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI反蒸馏防护进展：GPT-6.2 Astra思考链提取成功率从54%降至0.2%"
+  quote: "OpenAI反蒸馏防护进展：GPT-6.2 Astra思考链提取成功率从54%降至0.2%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOeFlIOVlFSXlTemttVFdiUmdCR1BJREFqMXpYenJCVUswSk9DZU1EUEd1YjZpZGh6SkNrdFFYVlZnM01UblJiOHlyMGFVOXRQMDJ3MzczTkk4SHh2SmJubk1uaWxkN2JzXzFidnV3SXptNTYwbjBPWUU2dlNjVUVfNWRtdjlaSGYzUWJyRA?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):防护技术显著进展，安全能力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-openai-247
+  date: 2026-11-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Oracle完成OpenAI基础设施合同所需融资"
+  quote: "Oracle完成OpenAI基础设施合同所需融资"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5kaWVubkNQQ3hUa3o0bzJpVWtvOHV0UXdfQ08xTEhiS2FRNzVzdzBSSjhVSl9NdHZfVnNQRElWY3otZVZiaHcyeDFKeGZDQ1puQkw4cjgtOHc?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Oracle融资落地涉OpenAI算力合同。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

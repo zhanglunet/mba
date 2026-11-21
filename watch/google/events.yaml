@@ -3533,3 +3533,109 @@
   source_type: media
   note: "LLM 预分类建议(high):产品跨平台扩张举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-20-google-233
+  date: 2026-11-20
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "How Watch Duty is using Gemini to get wildfire alerts out faster"
+  quote: "How Watch Duty is using Gemini to get wildfire alerts out faster"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ3NUNmVVbzU0dUppSFgzX0NHUkxNU2VZR1NOdnVYLWlvZW9Ea2Fic3V0SXoyRThtbURiamhGRmVpekx2aXFoNjcyZ2E5bWFUcWtPX1NpMzRWNmtWdDNsbFJHa1BaYktaUG50MkZwYm1vWUpsWFU3eDR2V2U0QkNDeHdadThnbm1fcFhpOURWaDR2WXotY2xr?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):Gemini社会应用案例，正面品牌叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-234
+  date: 2026-11-19
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Mirror Dimension for Agents: Evaluating Browser-Use Agents Without the Web"
+  quote: "Mirror Dimension for Agents: Evaluating Browser-Use Agents Without the Web"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TMnlkYm9IeHZzVWpIVjZTMUlFV283RTR5ZE04YU0xX095akx2bngzR2FJUUxoU2ExMW5GdUhsbWJIY0tPWEZwTHVGRE5HSENVYmloZVVDdEdndUNFZHV4VXo3TENCT0lI?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):Google技术研究成果，技术信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-235
+  date: 2026-11-19
+  dim: W8
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "How we’re putting one of quantum mechanics’ deepest features to the test at scale."
+  quote: "How we’re putting one of quantum mechanics’ deepest features to the test at scale."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdXFsaXJfbVZBc0J5c1h0TUVCdlJtc2dRdk9uYlhPRUJ1aEhLbFNnTnpSdmlyUGhCX2pMREtmYUpsMjlkSmNjbXgyc1dyRW5LSm9LMVFwdFJFUlF5ZGVQSlVmM1VRT2lvdmg4bDVYVWxfQ2syTkg3cEpuaTNBUThWRzM4RGpPcDJ2TkNpNGxuWElrcUNBcVFBQkVicHg0MkJDYmduXzlYT01PeG5JOWRuQjN6X2hxbm9MdG8wREduRl9ROHczYXl6SlAyeGctSlc0ZS13NDZ4dDg5RUU?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):量子计算规模化研究，技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-236
+  date: 2026-11-19
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "如何评价谷歌突袭发布的Gemini 4 Neon？性价比是否真的优于Claude Opus 5.5 与 GPT-6.2 Sol？"
+  quote: "如何评价谷歌突袭发布的Gemini 4 Neon？性价比是否真的优于Claude Opus 5.5 与 GPT-6.2 Sol？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hQUN3MzY0ZUt0NFd5cjg4Nkdqc0tldDE1UTYta25YczYxYmRULTNkNkQzdHA4aDk0azNIOENNUDhmemZSblNKd2ZOeUdyOTBHWXFrNElFMUdkd1lR?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):涉及旗舰模型发布，社媒评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-google-237
+  date: 2026-11-19
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "全新Gemini 4 Neon震撼上线！编程Agent夺冠，暴击Opus 5.5"
+  quote: "全新Gemini 4 Neon震撼上线！编程Agent夺冠，暴击Opus 5.5"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Kd0hiUUhjWDhZNGFmUTNwWUtuMTY2eS1TX3R6NWh5c1FWOHFGeExzSG9UdW9pcDV1Tkozc0ZSZTl5R3BRZU11Q1k4WG9ENzBUQkR6djlvVER2WkFs?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage, category]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰模型重大版本上线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-google-238
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Google宣布终结Nest应用与Assistant时代 Gemini将全面接管智能家居- Google 谷歌"
+  quote: "Google宣布终结Nest应用与Assistant时代 Gemini将全面接管智能家居- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pN0NBV2ZNVGpycTlqQUp0RzJxY0ZxVkdrOWRHUzJlNG9rRW40cGxqdzZxeGZRSGRTRjM3UnZEMG1xZmVFYmhROEhBX2pPMTNsM3NYeHEwSVl6TTZSUlJnMg?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):产品线终结迁移，影响用户。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-google-239
+  date: 2026-11-20
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Google教育AI争议升温，多地学区考虑弃用谷歌搜索"
+  quote: "Google教育AI争议升温，多地学区考虑弃用谷歌搜索"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTG4xb1BtR1gtYXdHNmhIN214eEZSNFB5UEw3ZkpZRHhoaWJRUXM5VGRPVTJNUVZrT2Z2czA1dGd1ZVY2RUh1ZHVhRmZBYVloTnZCR2ZaVTNhSURFdVhsRDdGTnNVQ2EyWlFua0xNS0FxODBlbzAwZTJveWQxMHEzV2FleUpNMFFt?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):教育AI争议，多地弃用风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

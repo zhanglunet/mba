@@ -2734,3 +2734,109 @@
   source_type: media
   note: "LLM 预分类建议(high):CEO表态提升中国产量，战略利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-20-tesla-180
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉在意大利获得自动驾驶辅助功能的临时批准"
+  quote: "特斯拉在意大利获得自动驾驶辅助功能的临时批准"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxQVXpTVnFLQU9HN3ByVW13Z1J5NnZraEMwVkhvZmppM21vc2ZRaUZTRlVfbTd6azlWXzkzUVpIRjgySTNkckZRQ3V5cjVFOE1UTlFIbGtFQV9MQTdHanBHTWFpZmpGeUdjbl9oXzZXYlJncS1LNjFnZ0ZEUHlJZU5xNkUzMHhPa1BQenhRN09QM0pJdjhEOENpTGgxOW1WOVVzQklDbHFVbkFPLVRmZUFsVTk2aw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):监管获批，拓展欧洲市场利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-181
+  date: 2026-11-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "深圳APEC︱TESLA马斯克快闪中国 转飞上海探班分享人生哲理"
+  quote: "深圳APEC︱TESLA马斯克快闪中国 转飞上海探班分享人生哲理"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi8wJBVV95cUxOb0pSU1ptcnhYeG5DdkNCdFE1RUVLcG52em5jX05mZl9FRGRQYi13MVUyN05nMklrRS1qOGxlN2pMSkwxbEE4bUI5YU5xTW02eC1iVHpXNzNpS1JyZHlWaW1KLVNubW02NUpKSjFGcG5pRHdFN0Q1LUYtQmc5VUg1VWJ5Q2RGQ09HRm5MWnlnSGlUc21ObzZJbDNCLXJfMXdrX25wU0V4LVZ2dGtZNHJvQ2gtYzBpZHJGWHB1Tllndm1PZGtQNnRJRWdGckdsenlqYUdHTm5MbDlOVjMxQmh4dWxoSlZRZlE5SUV5a1FLekdyX0M0alhDQXkyM3JCRjhkaVRxUVBCaVNnVGJjSVZmMHV6bXZnR1UyVXphYTRwY0MtY3NzRldveXNCVGl1c1pDcEFYWk1YWGkzM3UzOGpQSS1rQV95LUE2cEJpdHZpY3VUVFAzbFJ4bUE4VlJBM0RET1ZTVVA4WU1oQjNUemQ3Ykg0MA?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):马斯克访华行程，品牌高层动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-182
+  date: 2026-11-20
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克24小时内访深圳再飞上海视察Tesla超级工厂｜即时新闻｜中港台｜on.cc东网"
+  quote: "马斯克24小时内访深圳再飞上海视察Tesla超级工厂｜即时新闻｜中港台｜on.cc东网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwFBVV95cUxPbFFhMWxGN2VISFA5Wm4zTlZTUEFjSmhSRHFFMm1oTXpKYW1GeHN0S01jOWZpNU1OWkZackFIZGtjazhHTkY2c2hYZEtZWlloaDlDUVByTXNKUGlNSktaV3NBS0NUdXpIX2U3SEtNc1JYcFk2dTIybmZZeVFPODFnLUFLOF9lTHBUbVc5OEk5bw?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克视察上海工厂，实质事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-183
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉Cybercab最新航拍图曝光：车顶方形面板疑为集成星链- Tesla 特斯拉"
+  quote: "特斯拉Cybercab最新航拍图曝光：车顶方形面板疑为集成星链- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKNlFOYW5VZEtma2txQXUycGpKS2c2eVc0RW43bERxMUw3bnBWNnpOQVp3VGxvR05VTk85ZDF6bndDZEFMMjZVdEFiTHMtOEJENExiSzhhTXB2R3FfRUQ4WA?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):产品谍照信息，非正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-184
+  date: 2026-11-20
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉在布宜诺斯艾利斯开设阿根廷首家零售店"
+  quote: "特斯拉在布宜诺斯艾利斯开设阿根廷首家零售店"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxPQUNITi1RcWY5aEZTQVlTblpobGkzcnhjR2ZMY1VRRFNGTV9SRkJnRkk5dlI5VjVVU0tWbzhwYlh0RndTYnYxWHI5ZlRSUEpSQTRSdm5Va3pCNDFfLVNaakM3SDBpZnlvY0FSUHphSmJFQ2piWERjeFdRUUdRUXlMbUZaWGxWRmtXV3o5Q0ZSZGY1QkVvR1RJWHFSQlY4eng0T1Fib2FGcWF6MUFi?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):市场扩张落地事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-185
+  date: 2026-11-20
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "意大利初步批准特斯拉驾驶辅助系统——Electrek"
+  quote: "意大利初步批准特斯拉驾驶辅助系统——Electrek"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxPcWh2djJiOHRCYmduODV3cHhEVnZrV2cwdUVxOHFqTjZhNzQyS1owVXd3OV82TUZ6OXN6Yy1BN2h6dUZ4ZHFQRHhJMVJRNURubHBnM2hqaHpBY2lOWVo3UUFLSmsxZU83OVAyelVaVm82a0lDVGZRaUpVQXp4ZUFyaTMwc1FHbkp0WG5fUlNHeVhBbnNJQVBETkdaaGpFY2lDUFV3?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟主要经济体监管放行。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-186
+  date: 2026-11-20
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "意大利初步批准特斯拉TAD系统，成为首个接受该辅助驾驶技术的欧盟主要经济体"
+  quote: "意大利初步批准特斯拉TAD系统，成为首个接受该辅助驾驶技术的欧盟主要经济体"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxQVWpEdGltZWFnY3JDZ2lKTmtVWU9VcE1xUFdlaG8yWi1RM1dtZjFObWJVTHBEaWxNZmZnNEl4SloyNDNWRmhTTXYyUzF0SU9lMklQenZaUFZhLUgybjV0N0sybnVVUUNBcEprZHVTTXRWS0RIWlhaRXJXZlctTDFUa3lwdS1ibFlBTXdObllYczlpTlJTOW9GWjROSzgydlFvY3d3ZVMyMVhiZXhP?oc=5
+  fetched_at: "2026-11-21T02:25:02Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):欧盟首个放行，监管里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
