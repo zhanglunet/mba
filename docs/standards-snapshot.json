@@ -1,0 +1,22 @@
+{
+ "S1_openui": {
+  "content_sha256": "3f00cb29c5a822ba027ffaa2e80b3e5dcb652d2201ca5bc40e49cece53581b10",
+  "fetched_at": "2026-11-21T13:30:21Z",
+  "head": "pushed=2026-11-21T13:30:21Z release=@openuidev/server@0.4.4"
+ },
+ "S2_skills_doc": {
+  "content_sha256": "af78a1ba64b40a5313af23d72275a06e2b820ae2b8fd07bac43e96ee8ae2d8b9",
+  "fetched_at": "",
+  "head": ""
+ },
+ "S3_cursor_plugins": {
+  "content_sha256": "bb3ade306231226c38a299507901fa242c82b77b8abaabc6088e036dbf2c55b8",
+  "fetched_at": "",
+  "head": "Skill identifier (lowercase, kebab-case)"
+ },
+ "S4_official_readme": {
+  "content_sha256": "de7c98e1604f1f851242371ded19c79eb6071883cdb68ef00c01525e8044c4b1",
+  "fetched_at": "",
+  "head": "phased-out=True"
+ }
+}
