@@ -1196,3 +1196,19 @@
   source_type: media
   note: "LLM 预分类建议(med):爱马仕新调香师任命，非核心高管。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-20-hermes-078
+  date: 2026-11-20
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "爱马仕精通镂空腕表艺术，推出三款雕塑感时计"
+  quote: "爱马仕精通镂空腕表艺术，推出三款雕塑感时计"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxNU2hDSXgzYWNEbGNBMFlib0NEbUFLX0Jfc3pxTFVydlRGQjhnT1psdWQydUJ6VktpZ3YyalFIMnRSN0xMXzl5bHpXSUlEZHY4dUg3MEFjQ1R1UExRdVpNVGYtSERhSmlIVExlZ3lYTWtxQVFVU3Q3eVcyZ010aGo2OElZZXR0Tm5lN3pZeXFIeHhfMHRBaDFoMHJwY1I1YjE5MXcySzB6WTlQYVVtZnJPQ21R?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新品腕表发布，品牌工艺正面曝光。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2584,3 +2584,79 @@
   source_type: media
   note: "LLM 预分类建议(med):新品预告，信息量有限但为产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-19-huawei-170
+  date: 2026-11-19
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为史上最薄智能手表即将发布，或引领行业迈入6mm级时代"
+  quote: "华为史上最薄智能手表即将发布，或引领行业迈入6mm级时代"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBtWk5NVWtVbUZMcURGVlgybW5tNFctdC11d09RVUZLRXc5V193di1Cb3QtVDJaSDRlTEVEeU9vSjliODJuUUwtMVVwdUlJU000U3A3V0VsMzVYVzJl?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):新品预热，或引领超薄品类。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-huawei-171
+  date: 2026-11-22
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为WATCH GT6获鸿蒙7.0.0.108SP8升级，表端支持微信来电接听和挂断"
+  quote: "华为WATCH GT6获鸿蒙7.0.0.108SP8升级，表端支持微信来电接听和挂断"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxObkhhd3VHRUFuXzgtemhvaTlTM29iXzZwa3lPN0dEV3Ywa2F6OUk3d0hCRE13UFI5S2NiaEUzeUxtTGV6b0c5MTc0ZnVBa0NldFd1cXVHT1JHc2FjZUk2bmstSGo1dXdXY3FYNlhWS0dQN2xOdU9aal9wcFZIVGgwUmJUV2djWlVY?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能升级，常规更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-huawei-172
+  date: 2026-11-21
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "“开车不能睡觉”，余承东纠正“口误”"
+  quote: "“开车不能睡觉”，余承东纠正“口误”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5IZEZlVm1mdW9OS1RVU2FJb2swMXZmQzMwUm5yOUhZX1RTdU95QWJsdzhIMlFkSnlsWFdqS2szdmFGT0FLeHhhNG80LTRCOUdiTVRFMWhxVFhJUFY2WTJyVw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):高管言论争议，涉智驾安全表述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-173
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "HUAWEI WATCH Air即将发布 超薄智能手表界迎来华为新答案"
+  quote: "HUAWEI WATCH Air即将发布 超薄智能手表界迎来华为新答案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5LOThUeS1XQVNIa3ZqVmRTSlZEZzdFR1ZoWTBzc001RVl6MnpNY0JzZ19pSGpnWmlTWU5DWUlYTmZ5SklwVjJodHluekxwMkV6WWpsaUpOaFU?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品发布预告，非官方渠道，P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-huawei-174
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为发布全新钛金属智能手表，有望成为史上最薄款"
+  quote: "华为发布全新钛金属智能手表，有望成为史上最薄款"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWSnliRjZXYTNxYlVvYnJSTEJ3Sno2VFh3SWJMUXJRTlRNVURfSk1HLWN6UEVjZk5EbU9UVks5NDJ5NzZvMjVwc3daUnVuTzh1S0VUVHB4SnJ2cjA?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):新品发布，媒体转述，P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

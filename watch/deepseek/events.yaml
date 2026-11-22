@@ -2423,3 +2423,79 @@
   source_type: media
   note: "LLM 预分类建议(high):千亿融资完成且金额明确，触发P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-20-deepseek-159
+  date: 2026-11-20
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "关注！DeepSeek第二轮融资落地！"
+  quote: "关注！DeepSeek第二轮融资落地！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE9zWDI2a095ZllQNDlTSWlhLV9wTDNUQUI0VzhYcXZaX0R3bzdUZlQ3eThuVUtEZXFDa0N4OUJ1cWkyUkoyQXpjOHNJd0w5UW85ZVdLdkg1czlnNzVMdndmNExmb09mRkdmQkE3Zl9fcndtanluZHc?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):融资落地事件，金额未明但重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-deepseek-160
+  date: 2026-11-20
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek千亿融资落地梁文锋持股67%"
+  quote: "DeepSeek千亿融资落地梁文锋持股67%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1fazBxVEtCcFlkbTFjb0hIcU12RVE5V2JXODBzNG9zUUVGUWZzSDhBdW9xQ2w2QWsxVW1qby1Jbnh6ZjhwcG5SaW41aU8?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):千亿融资完成，金额股权明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-deepseek-161
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "深度｜DeepSeek最新融资故事：谁在投？有钱就能入局吗？大模型资本化将走向何方？"
+  quote: "深度｜DeepSeek最新融资故事：谁在投？有钱就能入局吗？大模型资本化将走向何方？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE90dzB0bFBfOXF2eWpGTjEyVzdDZ3BiRklPemVFUThMc3laS2huem9mTXMtcGlPTHdNc2hWd0wzVUJ3Um1sZUtmRV9zRU5iMFF4X1A0M3F0ODliVlZHelVUaWNTLTRwZw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):融资深度分析，非一手事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-deepseek-162
+  date: 2026-11-20
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek新一轮千亿级融资落地，梁文锋保留绝对控制权"
+  quote: "DeepSeek新一轮千亿级融资落地，梁文锋保留绝对控制权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFAtLV9DM3NSM2pnZEdrSmcxTG5IU0VqNVJTSnhsZmdvUEhDNllEMDFYSW5tVWJ4cEFCUnFiU19VWWh0Qjc3QW9kdWh3X3U?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):千亿融资完成且控制权安排明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-deepseek-163
+  date: 2026-11-19
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek第二轮融资落地！31家出资方都是谁？"
+  quote: "DeepSeek第二轮融资落地！31家出资方都是谁？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxNN1NGTFJJYVNUbWdxT1NHRXhmSFBwVGdWdnNiTV9MTHlOVTRwcDE2LUhrMlM4ZWhsWHVjamVic29Tak5hMGVhRWtPSS13VjdCM2YzMHNqUDAzcGhFM3Fzb0E3YWtYRFdjaVFEUEdhWk5CbXhqTVpybkxxMzZXX25qdEtB?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):补充31家出资方信息，有增量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -3639,3 +3639,64 @@
   source_type: media
   note: "LLM 预分类建议(high):教育AI争议，多地弃用风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-20-google-240
+  date: 2026-11-20
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini Robotics 1.5 将 AI 智能体引入物理世界"
+  quote: "Gemini Robotics 1.5 将 AI 智能体引入物理世界"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFB2MHo1VE01eU1kbnM3aTRmZG5pNWxDWUx0NTNBaHNrZVM2VXpSYUhidzE4b3lKRmhRVmR2MU8wNzQzVDVsSWQ3bDhMYmE3dFhSRS1TOVM0Zy1meXQt?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):主力模型重大版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-google-241
+  date: 2026-11-20
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini 4 Hydrogen：一款面向通用机器人的更快速模型"
+  quote: "Gemini 4 Hydrogen：一款面向通用机器人的更快速模型"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KQUJIbmd3LTgtS1BaX0Z6N0dhblRlNmpXZ2ZBLWxpVnhjMWVtcS0zVGVkaC1DVnJpX2tFYnFycXBYYmxpeHBsNEhHRFNHRnRrS19yYXVQYXNRZUdD?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰模型重大更新，P0判则适用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-google-242
+  date: 2026-11-22
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "谷歌宣布2027年智能家居重大调整 Nest应用将关停"
+  quote: "谷歌宣布2027年智能家居重大调整 Nest应用将关停"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNTF9HWkRDVzEwMm1IWHR3S1NTZElJSFMxSXJqTV9YVnZHSVpzS2JUbUVyeFJlOEppejU2NlNfUEg4bjJFT2w4a1lsWVlzMWRYMGozbFBsQXpfM00tRGx6aWx5OEFBUHFxeEpsOWdva2ZqV0p4dVppcnBBU0Z2Q3RjYnNyVlJVYnF2Tkd4Mw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品线重大调整关停，影响用户。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-google-243
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Gemini推出AI生成GIF功能部分国家免费用户也可使用- Google 谷歌"
+  quote: "Google Gemini推出AI生成GIF功能部分国家免费用户也可使用- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBFU3RtU3JJeHVhdGpuWFlJcHBBS3RfVEx2NXFBVWh1ZzJKZERkOGlTVnY5Q2lBeXJPQkNTNURQMElpd1FzcnZtRHFyRDFaOVIycDdSRmtLZDJLQW5zZGdLSQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):功能更新，非重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

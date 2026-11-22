@@ -2415,3 +2415,34 @@
   source_type: media
   note: "LLM 预分类建议(med):取消芯片合同涉合规与供应，显著但非处罚。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-20-kimichat-158
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Cursor拟评估淘汰中国AI模型；预计2027年6月前剥离Kimi基座"
+  quote: "Cursor拟评估淘汰中国AI模型；预计2027年6月前剥离Kimi基座"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxPeVliVmVjWHpQRzkwN2dMSkxZcmF6LUEybTl1VExVLXpLV1VnVmVvUnQtTUFmTllINlNidGNqMjg5N1NoRXMwT1pScUkwNGpsTXRPTjVRZ2NtRS0tM05hd1hXbGpoWUk0VnExY0dtbVdtT1ptOTBIWUhyTS1Rak1JYWpkZEJZQQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):海外平台拟弃用Kimi，显著负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-kimichat-159
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "月之暗面传取消英伟达B300印尼租约 阿里腾讯表态转用国产芯片"
+  quote: "月之暗面传取消英伟达B300印尼租约 阿里腾讯表态转用国产芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE5pUHNnM2swbXo1UHBfQ0c4WmVOVUNEWmNwSXJyaU5WRmNfWVRPclZrY05rMGdkVjVXenhpWDJ2ZUQyLUx3bGdvUy1sWUVjaHRZcGtGTVhVbVZqWVBFdEFQckJyY0JRWE1DWjRR?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):算力租约变动影响重大但属传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

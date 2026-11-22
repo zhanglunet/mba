@@ -3038,3 +3038,94 @@
   source_type: media
   note: "LLM 预分类建议(high):微软与英特尔芯片合作，供应链重大进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-19-microsoft-200
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软 To Do 将于 2027 年 6 月 30 日停用：任务不迁移，个人用户没有 Planner"
+  quote: "微软 To Do 将于 2027 年 6 月 30 日停用：任务不迁移，个人用户没有 Planner"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE0wR0pGejJqOWJ5Si1UUXA3ZUVWNlRKYkI4cTlzTHd4TEpnWkVwMWppV2lTeHVRdE1ITk80SGtNWmJCdFdBaVhwUnB0aThsSnR4d3ZHZ2xWX241UVcz?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):产品停服且无迁移，负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-microsoft-201
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软To Do明年6月停服！个人用户没官方去处 只能自己找"
+  quote: "微软To Do明年6月停服！个人用户没官方去处 只能自己找"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE0wVk5td2lGcElRb0xISkE5WFo4X1poYXZRSkJRSU1XU2xPZ3FYNHppXzJuMldMeE9xNzFJWDFILUxhTDdiU3J4aTlWUkdWbjdSVTEzS1dHb1k?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):To Do停服报道，与i=2重复。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-microsoft-202
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软回应To Do待办应用明年停服，承诺帮用户“平稳过渡”"
+  quote: "微软回应To Do待办应用明年停服，承诺帮用户“平稳过渡”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE80b1BFejNaQUhXRHIyVElSdlY0anUzV0E4VTFabFo3Nk44Y2JvbUZWeUU0Umo1YkRpQzdLc0g2M1hYQ3VhWHE0YnlPekw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方回应停服事件，处置表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-microsoft-203
+  date: 2026-11-21
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软回应To Do待办应用明年停服 承诺平稳过渡"
+  quote: "微软回应To Do待办应用明年停服 承诺平稳过渡"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9iN3ZQZTNMNmF5RG9XNmNrVmNJMnRQNHdhM0c3X0FEdzQ3N0Z6c2pfRmw2X0hNNnRTS1JxRnp1a2pjM090SHVDdHZsNW8?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品停服官方回应,与i2/i3重复可留其一。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-microsoft-204
+  date: 2026-11-19
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软宣布停用To Do任务管理应用"
+  quote: "微软宣布停用To Do任务管理应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1WdU40cE1EQ0pNbm01cUZzMTRob29LOGhkOTNVRmg1TjFtdW9ReGpBQkNNRkFhT1Z4bElEMTRhWWM1bDY1UjU4SWRpZjE?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品线调整,非旗舰,一般事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-microsoft-205
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Satya Nadella Says Microsoft Is “Building Tools, Not Gods” as Copilot Undercuts Anthropic on Price"
+  quote: "Satya Nadella Says Microsoft Is “Building Tools, Not Gods” as Copilot Undercuts Anthropic on Price"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZ0lXdVhwX1JBbXpKSWtobl9vckpJWDZmalN0WG9paEJVTXNjVW56eTBXb2FyMlVTc3B2cFN4bXlqeTdqM3JpMTJ0RnJucnBfTW96NEhmSHZSVEkwa0JxazB5UWJibTVWd2wybV85NlBRUjlfbW9XemRUQ0pzdmZ6NHFLVFZUWXhvNjN2MEhoUG1DRHl1a2YxQWlkVlAyWG5ObGhFR1FVcnNNSlppUm1IRkdoekFyR1UwbUczaG1jMV9kb3M?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [identity, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO定调AI战略叠加价格竞争表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

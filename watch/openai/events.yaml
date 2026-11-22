@@ -3797,3 +3797,139 @@
   source_type: media
   note: "LLM 预分类建议(med):Oracle融资落地涉OpenAI算力合同。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-20-openai-248
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Combatting adversarial distillation"
+  quote: "Combatting adversarial distillation"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE1aNG5qZG9TaTJHTlRrTmJBUzNINzVJT1B2cXZZelBweXRiTXJ1ZGphVkM0MWxySk4ydDZEa2dfdnZReHlJYjlpcVBfaGlyeWJ1WmVJSUI1TzFzeDM3SERWZkd2d2VsNGVRRmhFYXBB?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方技术博客，日常内容不升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-openai-249
+  date: 2026-11-19
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "How OpenAI’s Performance Factory keeps ChatGPT fast"
+  quote: "How OpenAI’s Performance Factory keeps ChatGPT fast"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxOdlZZQktlZzdORDFTUWt1MnM3OFRzb3QyR1c4bnFNbUg2WVU5eFZtN3hIV1FtUjJPY3dESFI2dTdkdTg2N0J6STFhVVFhSnFJLUhSQktKTzhiTGdiTFFMbFp2Um9FVXBMWENuaTNFRzRRdlFjOXZWSl9sZDNnTGI4RQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):技术博客介绍工程实践，轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-openai-250
+  date: 2026-11-21
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "多智能体平台Teamily 推出视频Agent，可接入视频会议和AI 眼镜；OpenAI 上线语音模型GPT-Live-1.1 API，新增低成本待机模式丨日报"
+  quote: "多智能体平台Teamily 推出视频Agent，可接入视频会议和AI 眼镜；OpenAI 上线语音模型GPT-Live-1.1 API，新增低成本待机模式丨日报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqQUZJOFczX1RTUGFfLVBrLXJuaEVXVFlIUVFtSk13cXZHb0Fnd2VmYzhNWTl1eE9OOUNwdk9sanBuRzA3amtJckpQYVhxZlZ1enZ2MUNQTEI1US03?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):日报聚合，语音模型小幅更新，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-openai-251
+  date: 2026-11-19
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI 联手 AMD，在旗舰 GPU 中抠出 14% 物理极限"
+  quote: "OpenAI 联手 AMD，在旗舰 GPU 中抠出 14% 物理极限"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFA0MjROQ2ZfU0hreXhTbTFVRG5DTE5WWTJ3QXE5UmdOVXdnSzZSNVNLV1B2SEFoaGFKYTJCMDBMbWRRUlZyMGlTQjVfRHp0UmFfdWVHSEhsQ3psZllP?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):与AMD深度合作优化旗舰GPU，显著技术事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-openai-252
+  date: 2026-11-22
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "ChatGPT越改越卡？OpenAI派AI自己查，揪出600多个病根"
+  quote: "ChatGPT越改越卡？OpenAI派AI自己查，揪出600多个病根"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Zd3hfTmZGdTczclhoZGVqM3g0WlJVdTg2VHlZVk4yTzQ2clZaR0puaDJDdDFQM09qNkFWQnFMcGZ6UG5COFc4czVRS0E4TjZyblJRR2ZUMFZ5WFlKN184aQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):性能回归问题曝光，但AI自动修复显能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-openai-253
+  date: 2026-11-22
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI布局AI硬件与手机，立讯精密富智康参与，首款硬件2026年底出货"
+  quote: "OpenAI布局AI硬件与手机，立讯精密富智康参与，首款硬件2026年底出货"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxQM2xRQ1VZVlJvby1kYWR3Mmw0RnZVeFYySHpMQVBiY3hNTzMyRXkzeFBacl9FbDRtYkgyb244SExycFd5eU5zQVNSdFFYY3QxaHdhUGt5eTU1YURUWHBzMFVoM2x5ZEt0bEZLQm9ZcEdocFJHSl8yZkVkTGpvTllKSg?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):硬件布局明确供应链与出货时间，重大战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-openai-254
+  date: 2026-11-22
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI披露用智能体工厂自动修复ChatGPT性能回归"
+  quote: "OpenAI披露用智能体工厂自动修复ChatGPT性能回归"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1uOFRxQ3NtcFF4dXJEWk04NEVaeEtlVmxFZE9QS3pGZm1xZGhua3pNbnpCVWU1RVVaZ0pFUkFUZlRVRURvUlc5Q1ZDZzI?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):智能体工厂自动修复，技术能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-openai-255
+  date: 2026-11-21
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI停订20x套餐：共享账号封禁逻辑与开发者合规替代方案"
+  quote: "OpenAI停订20x套餐：共享账号封禁逻辑与开发者合规替代方案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE56Z1JuSnBPeXllYkY4RFhMN3RTWC1IcGpqLUh5d0hpMGNZOEx3U040bVN2Vnd6VGY4Q3FWMWVrSFFVYzJRQ2sxSm5XbGhDR3BfekRqUG81VS1DVTJuUV90Xw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):OpenAI停订套餐涉账号封禁政策，属显著事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-openai-256
+  date: 2026-11-21
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "AI进化速递丨甲骨文称已筹集履行与OpenAI合同所需全部资金"
+  quote: "AI进化速递丨甲骨文称已筹集履行与OpenAI合同所需全部资金"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTE5MNDFsUl80QXFYRzljaFluVkxuZlJoQ3ZHbHdWVnRtYk5LWGFET0IzaUtsUXlBMlo2Skt4aWUxTExrY3RmUzlab1Q5RzAwVGFyMFpEZg?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):甲骨文筹资履约OpenAI合同，重大合作进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2840,3 +2840,109 @@
   source_type: media
   note: "LLM 预分类建议(high):欧盟首个放行，监管里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-19-tesla-187
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "没有方向盘和踏板的特斯拉Cybercab来无锡了"
+  quote: "没有方向盘和踏板的特斯拉Cybercab来无锡了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Kd0JRVzFUZEpYTEdRQUlQdFhHX2praEU5MUhVQzlyVUZpZzcxYjZTMUE4ZE1PSWdGZm1CemcyZW1fOGgxa0xmUC00Y2R6a3RTN2pzU0pnQUNmZTFD?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):Cybercab展示活动，社会传播。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-tesla-188
+  date: 2026-11-22
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "云彩太阳都一模一样！特斯拉FSD V15实景视图刷屏 车主集体喊疯狂"
+  quote: "云彩太阳都一模一样！特斯拉FSD V15实景视图刷屏 车主集体喊疯狂"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9rc2kzc2RFTUxzX29JcmJGSUpUTTBFTFNDeWdCM3FKeXdVaTRPdk5sWmkxZUt5ZVhVeWxKTkM2QXNQX1F2U3o5QTh6ajBaekFKUlFWa040aUE?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, category, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):FSD V15重大版本更新，用户反响强烈。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-189
+  date: 2026-11-20
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "意大利搶先歐盟 Tesla輔助駕駛獲臨時批准"
+  quote: "意大利搶先歐盟 Tesla輔助駕駛獲臨時批准"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE83MG9Dak1kOEVzMHM0TE1Bc3ExMkpGMFJRQUtGQ2YxbVV1OVFSSkF3UkR0RXZ4WkpETGFmVUQ0US1ISUJsU1NDRVgyNGtCVV8yZm9RdHpOOTJPc0Z2TnBDdWNn0gFnQVVfeXFMTkVhTGstbWVqUDExUlBTNWxyclFjX0lubjl3YWk3V3BtaTlOWkhsYzgtTkMwX2FTSWo5VEFhai1ja0JZeG40MnRGVzF4Q3Q0QTJoT0cwX1YxNUJvNFN1bGhpdUktREZiaw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):获意大利监管临时批准，市场准入事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-190
+  date: 2026-11-20
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉FSD入韩申请被驳回5页材料就想过关其中3页还是封面- Tesla 特斯拉"
+  quote: "特斯拉FSD入韩申请被驳回5页材料就想过关其中3页还是封面- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWNXZNV0F5STdzREVfdWE1TkV1RXVlbGFWeWlzdkg2SGRhcUxIa2NNcUhQS1FmZkpMUlVvbUI4dllOZ2U1SGNLR2wxSDV2SEVmYXFEQVhrNC01T1htS2JiNQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD入韩申请被驳回，监管受阻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-tesla-191
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Musk Won’t Take Stock Awards “Simply for Merging With SpaceX.” Tesla Shareholders Still Have to Vote"
+  quote: "Musk Won’t Take Stock Awards “Simply for Merging With SpaceX.” Tesla Shareholders Still Have to Vote"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMixAFBVV95cUxPVEhnb3RsbXlyb09EcUJSUzQ5eHJwLXRGaW5uZFlGNlZDRDktZ0g4X1dpaGFUeWF1ZmNVaDV0NkJBcjZWZ3RjVzVxcmt5SnkxU0JaaWM0QVNhTnNhVUlxN3V4amphdDJWMGFsREdTdE1ENmdMT3RNOXZHVXVnOFZMZGFxRmVaclpHT05DbVktZmUwdFM5cERITldXeHJ1Z0FQUUc3T3NTYlVBRUtOTkxjRlM4NVZOM01RUjV6R0wwZUJkb2Zn?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克薪酬与股东投票,涉公司治理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-tesla-192
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "A $25 Billion Fund Is Betting Big on Tesla"
+  quote: "A $25 Billion Fund Is Betting Big on Tesla"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE5CXzBMUHQ5R21HeGhDM0ZtS2JpVU4xVDZnRnZpYmJ6bWg5TF8zMGptRHN4ZVpkT1dHT0pfdzhscTdISkpjaU1yWGduMDJjbVIzN2V6Wk9ja3ZPUml4c3E4a0dITHVOempnNmw0SmV6aEw2WkxZUTgwNkFaWQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大型基金重仓押注,机构态度信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-tesla-193
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Tesla’s Cybercab “Has Arrived” in Dallas. That’s a Growing Threat to Uber"
+  quote: "Tesla’s Cybercab “Has Arrived” in Dallas. That’s a Growing Threat to Uber"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxPOGRvOTNXX19hSEhjZ19RVl94VE5NZ1BINzJOdjJvY2VJN2F2dlZ6em5LYWEyZE4zS0J5VW1DclJHWjJnRzNIMmswUExVRkt4bjdVMDFmLUdqdG5HMloybm8yTTdJc1JFUkNIWkVjazUxdTlMUUk4YjFjejVLa3h0OGFpclRJc3BxQlR4NkJ6d055LXhwOV9oLVcyMGlNNG8?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Cybercab落地扩张,威胁Uber,业务实质进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

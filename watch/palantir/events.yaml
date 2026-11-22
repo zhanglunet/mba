@@ -437,3 +437,34 @@
   source_type: media
   note: "LLM 预分类建议(med):董事减持套现，或影响信心。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-20-palantir-029
+  date: 2026-11-20
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "PLTR、CRM、NOW、SNOW对比：Palantir增速领先，Salesforce的AI ARR更清晰"
+  quote: "PLTR、CRM、NOW、SNOW对比：Palantir增速领先，Salesforce的AI ARR更清晰"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxNX3hraVNYcEVyM1hvMmxJLVFzSUNPRk1FSFp5Y1M2aUd2ZHd2YUhNYlA5NFBIQUlCTjVRRXBvMVVveUVCc2F4ckJ3ZFJYc1VCWm5ZU0RnVmh1TnhMMlNuTkRlbjNnLXpCTkNsakotMzBLYk9Id29jVVR3NXhwSDQyaUN3WmZJUFpLelA0MnRXRnVhR0JOT3FEN2R2bVpwdjlhNUpUaS1BLVRiTTlwWkdIUDNiT093R2RfcVE?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):同业竞争对比，含品牌增速信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-palantir-030
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "PLTR股价预测：财报超预期支撑下，股价短期有望突破200美元"
+  quote: "PLTR股价预测：财报超预期支撑下，股价短期有望突破200美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogJBVV95cUxQWkhEVXJZVDg5XzdwTlZiT19IQTJQdHFlMlpVQXFhaFRVNmV5LXc2UHVZWHZCMG16S05nNmxzVlI0U2h2dkJ2ektrZWtGcmNFdzFLTVJrU0pJSFd0VWJuaUFlUGVQY0ZrVC1yWnpBdGdNSGw1a1RWV21qdUZvSVE5bHZsdy1aZ2ZFOWpiT0x0VUNrRW9jdU9xYV90Q3NxbHM3SE9HX1ZvdkdVYU54Qk0tX1BQQXVPOHZHaW9RSk1pcWJFRzdkNnFvWVZYSU5BX0FUbGlwYnU5VXZkVExnUW5rSW05MFFGUE1UQXdhcVpxb1hWenk5LXNrajFQTUtZdV9icTJIQWY2V19FclJoS0RNdHE1Q0hvUVVOR3BBQzg0dXlVUQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):财报超预期属实质信息，但为主观预测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
