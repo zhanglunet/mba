@@ -3020,3 +3020,94 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数字公布，P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-21-nvidia-199
+  date: 2026-11-21
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "如何看待截至2026年5月11日，米哈游57810 颗英伟达H200获批却未发货，这意味着什么？"
+  quote: "如何看待截至2026年5月11日，米哈游57810 颗英伟达H200获批却未发货，这意味着什么？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE96ZlZIOFQtbTRVaXJIeXpXYzBtSzhBRWVPT09BZDhTRmw0cVF1Mjd4ZmcwX3UzYWlXUVJMZlBoUzE5RUdJSkVoajNHT0dqSENPR2JaZU5aOTk5UTRRQUtR?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):出口管制下获批未发货，涉政策风险讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-nvidia-200
+  date: 2026-11-19
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "你方唱罢我登场：N卡驱动也被曝空闲异常写入！最高可达每小时30GB"
+  quote: "你方唱罢我登场：N卡驱动也被曝空闲异常写入！最高可达每小时30GB"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE43SFVDTlZjak1UeUZITlVrRGpMVlh4TE4zRGdHNTREZ0ZxeU9JbTFPTEM5dUZuTnRENGpmSnlSVE9hczVRS3FMUmhBaXBJejg4a1oxa0RtMmtJWkRk?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):驱动缺陷致异常写入，产品质量负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-nvidia-201
+  date: 2026-11-20
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "美众院委员会：80多万枚先进芯片获批准出口中国，包括中国涉军企业"
+  quote: "美众院委员会：80多万枚先进芯片获批准出口中国，包括中国涉军企业"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxQeWFYQWloRkpjTlV1b1BvYmViTW1PbnRQZEYwTmZhYWlfWlY4RXJpSktlVV8tRUdlb2p4cnFUVEZIUTlfVk5WTG15MzliSW5DTDlQQXc2NFBMc2p2QkJXWGU4Nmx0TFc0b21VSE4yWlZoR3l1TzVDSzJMZFhYOWFoaHJoNGJKWnFvNTFrcVRwcHowN2VHZnfSAZgBQVVfeXFMUGRtanItYkRGRkNycEFlWm5aYnV3d1hRYTZwc0hDM3NsYUZZY3c1T0RkMDFoRG1FUl9YaFFkTkJ4UzBxTmRtVWRFSUxSQVVGUFVWcnp2b3JsaGRmMUo3UWtENV9jN21CQW1oZWRuLXdJaFFiRi1qeEVCOXQ5ODBwdnFWMzZ1amdIQ3ByaUlMNWF4c2hEVzMtcTg?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):国会质询芯片出口审批，监管风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-nvidia-202
+  date: 2026-11-21
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达GeForce Hotfix 621.35驱动：修复可能对SSD过度写入的问题超能网"
+  quote: "英伟达GeForce Hotfix 621.35驱动：修复可能对SSD过度写入的问题超能网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE9xcjY0ZjhnTmRob0xOeFpqWDFXYjNZRGZXMVpxb3BXYnYwa2ZlY1VmODRkUUtSVmgwZGtNMmhYZkJrSjVYWmtCZ1VGYw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):驱动修复SSD写入问题，产品质量事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-nvidia-203
+  date: 2026-11-21
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国国家资本主义是英伟达丑闻的推手之一"
+  quote: "美国国家资本主义是英伟达丑闻的推手之一"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxPS2pxdDRLSHFwbTFvdUQ0Mm8ydVc2TVdpR2ZabGpsNkhLSXNsTXdwUURubVd0SWJhdlFCXzZsQXFISEl4X3BEa2ZsdWhVMzhYV3BNWVVQcFFwTklROHVHUjhaR0ppeWhhWi1sZF9yRVM2VVJ5VjRuN1N1MGp0QlVMODhGZmJvMGRyVHl2YmxQNTcwOVhNbHNJeDRKcWc?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及英伟达丑闻的负面评论分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-nvidia-204
+  date: 2026-11-19
+  dim: W1
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "特朗普表态：NVIDIA Blackwell芯片可对华销售 但有个条件"
+  quote: "特朗普表态：NVIDIA Blackwell芯片可对华销售 但有个条件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE8zaUtsSTNOZnNEU2RvWVcyUzJZWGRhcnpYRXJhYmlXeXhTYW0xUDdMa3NrSG4yVFd4c0NYSzNTTW9vbThSUTR2aW5ZOUlfdXlqSmR2OF8yN0c?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Blackwell对华销售政策重大变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

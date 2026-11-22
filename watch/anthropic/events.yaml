@@ -3881,3 +3881,94 @@
   source_type: media
   note: "LLM 预分类建议(high):IPO定价与首日表现，重大财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-20-anthropic-255
+  date: 2026-11-20
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "数学家宣称 Claude 证明黎曼猜想，为啥Anthropic股价仍在暴跌？市场不买账，核心原因是啥？"
+  quote: "数学家宣称 Claude 证明黎曼猜想，为啥Anthropic股价仍在暴跌？市场不买账，核心原因是啥？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tRndyNkI5S3kyckxJTEVMUUlDSWp5U0Z5Yk45TlM4SGpxUC02X25NVTBVMG9wdWt6dmVJNHBiVDhRSFhUQlN1clFTajFkUHdMSTAzaklpWWxOSEJKOWhR?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):重大技术宣称但市场反应负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-anthropic-256
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "突发！Anthropic数学家宣称用Claude证明黎曼猜想"
+  quote: "突发！Anthropic数学家宣称用Claude证明黎曼猜想"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBtbmN4NUU3dTBIdnNZa0tMczZ3WUEzelRfclBvYUtXZXNFbkpvSmV4T2U4c3VnMlRnTTdiaTZDN04tWjA4VDl2VU1OVjF4SmZSLWtEbGtaWUdnbHk5?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):重大AI能力宣称，或夸大待核。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-anthropic-257
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic数学家与Claude合作证明黎曼猜想；黄仁勋或将创办新半导体公司丨邦早报"
+  quote: "Anthropic数学家与Claude合作证明黎曼猜想；黄仁勋或将创办新半导体公司丨邦早报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5OLXpqdkVTbzNFVlNuMkxUOXV5eG9YSHZEblQ0T0Z1SHJfTUtoeHBhRmN3U3AtYmVlcldhbFhxQTN0T2p4cDJvNTNtSHNVcnhxVXlIR3Y3OEhUbnlu?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):黎曼猜想证明宣称，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-anthropic-258
+  date: 2026-11-22
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic IPO份额，优先倾斜“Claude重度使用”客户"
+  quote: "Anthropic IPO份额，优先倾斜“Claude重度使用”客户"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxNX1lSTmZ0c0J1LU44WmRjOHhyemRkYTUteUZVRmxtVGYxSndwVXd1ZThEc0FZcWMtQzBCSUFsSzNHd2w4YlBDZS1vMzdjNlBISDZVUXNzTDlfQkFJQ0JmdUNWSlF4YkJ4NlU1TXVfWkRaamhNckpYRzhJdEE0T09SRVV3?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO份额倾斜传闻，未证实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-anthropic-259
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "“数学界第一神山”被攻克？Anthropic数学家宣称证明黎曼猜想，给出1700万行Lean源码，AI证明文件超过25万页"
+  quote: "“数学界第一神山”被攻克？Anthropic数学家宣称证明黎曼猜想，给出1700万行Lean源码，AI证明文件超过25万页"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE56V25Nb01ZNlVmWndwTjlfeFM1QlhqSGdienZoVE5adk1HS0JWNEUtWVgwemlZYnd3Rk1KUzJteFltRXh6dW5TZVRxMmFpcFJnejlB?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):黎曼猜想候选证明，重大技术事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-anthropic-260
+  date: 2026-11-19
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic上市大幕即将拉开"
+  quote: "Anthropic上市大幕即将拉开"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxQOFlHRlV1Rk94MF9TU3UxZmg1QXdPd1BkVUVPVF8xM084bm1EMjVFWjBhbFAtck5MYVV4WDlVSHRBV2lCbmtLdjFNNi1mVjF2d3c4ZDBFOEN6d19BaVpiQ0k2QWlNRjgxUklXRk5hYzVnWkE2SVY0LTQ1UGxmbUl6blBCWQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):上市传闻属重大资本动向，但未确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2737,3 +2737,49 @@
   source_type: media
   note: "LLM 预分类建议(med):平台政策变化影响卖家，一般事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-21-amazon-180
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊AMC新增促销信号 广告主可建受众出价"
+  quote: "亚马逊AMC新增促销信号 广告主可建受众出价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTE5zX1dTWVhyakNXNzF3NmJTUmJ0ZE5MQ2hCTDhmV1gwTEhjVXRMcUoxby1MZ2s1Y25YWWt2X3pELThvUHR1ckxabm1YcE5TcFk?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AMC广告功能更新，平台能力实质进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-amazon-181
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Stary借助亚马逊云科技 重构AI短剧规模化生产"
+  quote: "Stary借助亚马逊云科技 重构AI短剧规模化生产"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmRFpfRHdGWTdFdmV0eUVJbldHN0lhMHV5bjhsR3dHalJzUUZ1YlRrT19tUE9lVDRFa3F0UHZHaXVJcExnODJNTmdUU1JkdWwxOWhuRkx2NHJsem5fODNXZVF2MnZPQQ?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):客户用AWS落地AI案例，软文倾向但有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-amazon-182
+  date: 2026-11-19
+  dim: W3
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "从 Fire 到 Alexa：亚马逊的新款平板电脑有何不同"
+  quote: "从 Fire 到 Alexa：亚马逊的新款平板电脑有何不同"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE9MX1dwbmR4LUY3R2JlXy1JcTdCemtPQVBISHRaOWFRNW5GdFVBNWIzSXY1bnkyVy1SMHNRMnp4aVRYYWJEODU1UGJJOHJLSS1GclF1eVVBZHF2UDBHWjdYU0xZZEtadU9rUUE?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品线介绍，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

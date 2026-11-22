@@ -3429,3 +3429,94 @@
   source_type: media
   note: "LLM 预分类建议(med):Apple TV新内容合作，品牌业务动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-20-apple-226
+  date: 2026-11-20
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果推送iOS 27.3 Beta 2修订版：修复HomeView配对故障，Siri AI可读取完整网页内容"
+  quote: "苹果推送iOS 27.3 Beta 2修订版：修复HomeView配对故障，Siri AI可读取完整网页内容"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yODh5ZTF3dmFlemw1aEpidDg5N2dSSjNQYVhsOGVFWFhuMnJlQTAzSFlwckJBWThPQkdCQ1ZOMEFVaXg3MlNWaVYxSkxScjEtQ1NyaFVCSURmYmRM?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):Beta修订修复，一般软件更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-apple-227
+  date: 2026-11-19
+  dim: W9
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI首款硬件不是手机！果链深度参与，苹果烙印满满？"
+  quote: "OpenAI首款硬件不是手机！果链深度参与，苹果烙印满满？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VRGRsaWtMRmRiSTVzenliQk1sY0dRT1pxMXYwMDlybEtjdkpXdDM1Q2xjRHRndWtxSEFadUZ1Xzh3eVh0S3BWdk80Tzc2V0xSY3YtVkJnQmM4LWg3?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):果链参与OpenAI硬件，产业信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-apple-228
+  date: 2026-11-21
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果AI版图解析：三大体系差异与收费门槛"
+  quote: "苹果AI版图解析：三大体系差异与收费门槛"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE9zWk1Zd2dWMzRhdUlWbmkwUXRDd2NReDk1RkpyYmIxREdpVGxtdDdkVVJMWk9VQ21nRlhWeW8xLXY4bUl6MWpDcmpDSWZpU2l3ajlncVhMbDJxcU85bzRvTGNxQnVKcG14UHNHS3ZTOE4?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):AI战略解析，有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-apple-229
+  date: 2026-11-21
+  dim: W8
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Apple TV 2027年起在美国转播F1学院赛事"
+  quote: "Apple TV 2027年起在美国转播F1学院赛事"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE1ZSl9qU2Q2VGJBM1RTWTFiQThPVHItQ2dPaGNTYzdEeUUwRDcwUnMzV2RZcENncTVhenB2OXpERDdITkdISzdxc2pTREg?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):体育版权新合作，品牌布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-apple-230
+  date: 2026-11-21
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "美国创企GG在印度起诉苹果指控NameDrop功能侵权- Apple 苹果"
+  quote: "美国创企GG在印度起诉苹果指控NameDrop功能侵权- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBEUXRYSjhWWlN1N3JYR2RZZVo1NVpNUWw5QThqUmJsR1JZY0xJcXlTYzlGelB4bk1WYjZVeDczUThncENQZWFrRFJ1NzVfMlNQVnBHamJzanppbF9zbHliYw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):海外专利诉讼，尚未判决。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-apple-231
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "一个28年时代的终结：苹果公司关闭其技术支持论坛。"
+  quote: "一个28年时代的终结：苹果公司关闭其技术支持论坛。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirAFBVV95cUxPNm0yOWVpODEzU3pJNE5pQ0VtSUprX0U5N3JpbGJWZEpQYU9DNmxWZ2hiN08zSGVDb3dVSkNWaUNZY2lWU0xoeURJTUNvMEtsRURkV294c3c0N0NCbi1zR0p2SzhPZ28yYzY1NWFMV2RQekYxX0xTd2k0Ry1TN0lRYlVadDk4S2UyUm1mMWotTGQ3Nmxnc3RXX3VFVnBwNzZlRzI3Ym83dzV1SVZI?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):关闭28年论坛，社区服务收缩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

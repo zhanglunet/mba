@@ -1270,3 +1270,34 @@
   source_type: media
   note: "LLM 预分类建议(high):主力产品涨价，消费者负面情绪风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-20-dji-083
+  date: 2026-11-20
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "影石创新云台相机或将提价！大疆多款产品已涨价"
+  quote: "影石创新云台相机或将提价！大疆多款产品已涨价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE9zRUhVemdFWmUzRHhYcTZJTGpnZXkzMUJ3ZGQ1dGhhMWhld1pCTk1odjA1d3Z5LWlhNjNWbkczcXItdnR1U0tTUHNWRjZIMHZFZ2pSa043U0VnSzdtcjhmU1dQcDZDOHdMLTk4?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品提价涉及消费市场，实质事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-19-dji-084
+  date: 2026-11-19
+  dim: W7
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "大疆Matrice 4系列发布新固件更新，涉及监管相关调整"
+  quote: "大疆Matrice 4系列发布新固件更新，涉及监管相关调整"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWcWR5ZU5YWVAwcHgzUXp2cmZRdHlvU21jamtVN0V5QjdHZmdjaUlUdXRTRlVSeVZUQVBrRjlzN3d0cXgtSG1jNGh2MlQ1X2EwMGhNTVhNcEVreTFNREpaT0EzZFk?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):主力机型固件更新涉监管调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

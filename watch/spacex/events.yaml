@@ -3317,3 +3317,49 @@
   source_type: media
   note: "LLM 预分类建议(med):巨额GPU租赁融资涉品牌，金额未明。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-21-spacex-218
+  date: 2026-11-21
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX：龙飞船溅落海面已确认，SpaceX完成第35次国际空间站商业补给服务任务。"
+  quote: "SpaceX：龙飞船溅落海面已确认，SpaceX完成第35次国际空间站商业补给服务任务。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE9ZTHpNU0dTejFCUnNLa2hTNWlXTWlCWlY2WUM2MGRrYW5xN005ajdGbzYtZjlyMkRsbHFsNXJTOF9uWHZNOG5ud0ZWZw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):完成第35次商业补给任务，实质业务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-spacex-219
+  date: 2026-11-21
+  dim: W7
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "高盛为SpaceX设计融资方案，为AI芯片债务难题提供思路"
+  quote: "高盛为SpaceX设计融资方案，为AI芯片债务难题提供思路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxOcTV0ZmNJQ2FyaXpBU3JDbTR0RkUtWGRkcDJfeVJzV2tHNnFhNE9RZmdYY3hVX29zcWsyVkJldS1ZX2ZEX2M4QkVrdDMwWmc1WVVicDFPMEhDdkZfbFFTbm94V0ViWFZVYVZ6SG9VdHN4RWU2TVp0WHMwNzd4WktEX3NkN1BkYVNtZXpOeHNoRm8wdVRXSXFaMW9wWkdCankwU0xtenkxYXAyUE5vWUo2VC1B?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):高盛设计融资方案，融资相关但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-spacex-220
+  date: 2026-11-21
+  dim: W3
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX：龙飞船的四个主降落伞已展开。"
+  quote: "SpaceX：龙飞船的四个主降落伞已展开。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE9fZC1aRVJJN3B0MnFqeF9UUlN4Z0JQRDVlQjIxS0doSU91N2V5WnVkME9IOWI2cHRLb3JOSEg4b1ZvdlJmbzBZek55dw?oc=5
+  fetched_at: "2026-11-22T02:26:48Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):任务常规进展，信息量轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
