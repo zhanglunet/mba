@@ -2446,3 +2446,19 @@
   source_type: media
   note: "LLM 预分类建议(med):算力租约变动影响重大但属传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-22-kimichat-160
+  date: 2026-11-22
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi也要往AI for Science方向发力了"
+  quote: "Kimi也要往AI for Science方向发力了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOTFctekdmQXU1aXNFVlFtbEdSVXEtdnNuVVNuT01XOGFiSTBXWDdTR1JDS21SdWRaX2NSVjYtYnhudDg3enlJLU5SYW1hTThKdzd0WnhGUDNEMVlfSzFzMlZya0Vxd045X04yckVmQmhOR1pwY05WNnZDMkM2VUJ3ZmpVdlIycGNqQlV3TA?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Kimi战略方向拓展，AI for Science发力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

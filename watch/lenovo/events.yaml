@@ -1684,3 +1684,34 @@
   source_type: media
   note: "LLM 预分类建议(high):财报关键数字，AI收入占比公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-20-lenovo-110
+  date: 2026-11-20
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "花旗预计联想集团净利持续改善，称当前估值极具吸引力"
+  quote: "花旗预计联想集团净利持续改善，称当前估值极具吸引力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE10ZGRWS1pjOVd3SXpXZEQwNmlHeTJzeUdKN3JieThYaGtNRUFqVDhzaWlYLUkzellVMTYyWV93T0s2TXcxNmtZTFhJUG9hVUNQcjk2b0E3SGttbkRTeGpfMW1FNjNOUUc1X0E?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):投行正面观点，非个人评论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-lenovo-111
+  date: 2026-11-20
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大摩：联想集团(00992)次财季收入及经调整纯利均胜预期 评级“增持” 目标价49港元"
+  quote: "大摩：联想集团(00992)次财季收入及经调整纯利均胜预期 评级“增持” 目标价49港元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAFBVV95cUxOUVhCWFF6WmpHUlBJc1dzU1NCQ0tGa2lvVUVmV0hqNkxKT0RxcmRoaTdBeVJrRmdRWWpkQ0lhREpMclpmUl9WeU5kZzYzS3FQUkJJSTA3T3NOeW1jT0w0MDkyRElUMW9DWGV0NklzaFM4SEZMZE1ocFNZSEk4bDBoSlhkbkFBZVhXVkRkcW5uWlVwRUhDLVI3WVR2N0xVVFR6aFBrTktfRUV0TTdGU3NwNHd1Z1hvQllmeWJzag?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):投行评级与业绩超预期评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

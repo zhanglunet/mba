@@ -2946,3 +2946,79 @@
   source_type: media
   note: "LLM 预分类建议(high):Cybercab落地扩张,威胁Uber,业务实质进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-21-tesla-194
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉车主发布FSDv15 全新可视化界面，马斯克称驾驶能力已超越人类，有哪些值得关注的亮点？"
+  quote: "特斯拉车主发布FSDv15 全新可视化界面，马斯克称驾驶能力已超越人类，有哪些值得关注的亮点？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5udDRUX3J0VmZzR3I5VFlxLXl6N0g5UDdzdFBscUVPMlpNT1NTRUw5WFZCNmFsNmJOUEpvdTBCbVNlTUdIcm45Tll5VF84VVZBZ1JuQXh6T1hWNXBWQW1J?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):FSD重大版本功能展示，社会热议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-195
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD V15新可视化 Tesla Reality View亮相"
+  quote: "特斯拉FSD V15新可视化 Tesla Reality View亮相"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE5fandCc19yekxXcEhzZmc3b1VFU09nZS1ZUDMteE5pRkI2dW40Y3hBWWp1czd2SmhVZVFKRzdSTno4TzFnN3hVYi04ODBtQmZUWW9yZmtUTUhjYjhRYkF0ZUFKMTJjWHhCVWFUelJLa25UcW8?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):FSD v15重大版本更新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-tesla-196
+  date: 2026-11-22
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "冲上热搜！特斯拉推出FSD V15，“实景视图”可显示摄像头画面叠加FSD行驶规划！中国市场准备工作推进中"
+  quote: "冲上热搜！特斯拉推出FSD V15，“实景视图”可显示摄像头画面叠加FSD行驶规划！中国市场准备工作推进中"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE93TFQ5X2ZwMm5XS3I3eUlIMzBidUpZNlZUVE9IWWVaTUZQcEN5MTFwYnFkZUJMcnpoOW5ydFRMR2l3bFVRLURmcmhDY3pibnd6SzBv?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD V15重大版本推出并涉中国市场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-197
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉，推出FSDv 15"
+  quote: "特斯拉，推出FSDv 15"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxNdEhtRWJ3dkw1MkI0amdzX1AxeGNNUnozVjVselJtRjdPdWJROGl3VTJVRk05cGVMNlZMLXVta3dsQ3g2YjVUZlNwSlRYb3VUaHZZTC1PQk9pa2o0TlZqOEJRRGY0RlV2S3pFbFloVWlvV25wTHlzWHpZdjZXVUw3U2Zn?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):主力产品FSD重大版本发布，P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-tesla-198
+  date: 2026-11-22
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD V15推送，安全场景处理能力提升25倍"
+  quote: "特斯拉FSD V15推送，安全场景处理能力提升25倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BUndtTTRUSDl1ZWtXV3ZxLWlnd1hCWnNVWGxWYUF5QzhQUWJ0NzNpOTA4T3BtN0pFTmhkMDRmaDF2NXB5RVBiWDlwa1RCMl90YjhOcHNsVm8xMFU?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD V15推送并含关键能力数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

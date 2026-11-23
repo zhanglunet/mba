@@ -3972,3 +3972,109 @@
   source_type: media
   note: "LLM 预分类建议(med):上市传闻属重大资本动向，但未确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-20-anthropic-261
+  date: 2026-11-20
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 数学家称与 Claude 一同证明黎曼猜想，证明已用 Lean 公开"
+  quote: "Anthropic 数学家称与 Claude 一同证明黎曼猜想，证明已用 Lean 公开"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMR2dwMl9SNWFHQURDOHN3SkthLVBrWWkxSTZCMnVDMjliNHZ6TFhFVGlmLWVtdHJIWFBLZ3ZTZzdmaFEtbmhBVTM0clR0VXJNeHJxOENuYlRFTTF3?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):模型能力重大展示，非官方来源。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-anthropic-262
+  date: 2026-11-21
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic募资813亿创纪录，狂欢还是压力测试？"
+  quote: "Anthropic募资813亿创纪录，狂欢还是压力测试？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1UdTZjOWxjZlFSWktHQ253YWg3TmhRc29td3c1MVcyRTN4azB4anpPUV9ScEJXbjRiYVV3UDBrY0pSRkhoUzF4eUozRnQ0Y3V4aUhBR2d3N0wtUktN?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):创纪录巨额融资，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-anthropic-263
+  date: 2026-11-22
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic数学家宣布借助Claude证明黎曼猜想"
+  quote: "Anthropic数学家宣布借助Claude证明黎曼猜想"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE5mZEdJVVAtUkVHR1lMSU1XZThTUUdoblZmSmlMZTlmQ2hmUG5JZFhNa3Fia1B1ajhBQURxTDQtREFXV1FjM19rc3gxd0tnbnNmck12cXlhWXRHeUNlWV9OMXNWOGZRdFc0RVNnanFfcUVaSkdJODJ6LTktcw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude重大能力事件，学术影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-anthropic-264
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic(ANT.US)险些“破发”，Claude却叩关“数学界第一神山”! 1700万行Lean代码写出黎曼猜想候选证明提供者智通财经"
+  quote: "Anthropic(ANT.US)险些“破发”，Claude却叩关“数学界第一神山”! 1700万行Lean代码写出黎曼猜想候选证明提供者智通财经"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE1TbmN3V2RoQjM2SGNOTUR1UzdBTEMyd1ByNFQzODkwMkRZVkpGVC0xRkxMS2tQREZmc3prMWVSS1lObWhJTmtISE91R1JSTWQ2OEppMFdYZ0tjSmZGYkxXamp0ZlpVNGZrQnhIcVFuRHQ?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):含股价与证明双信息，保留。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-anthropic-265
+  date: 2026-11-23
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic研究员称借助Claude完成黎曼猜想证明，公布逾1737万行形式化证明代码"
+  quote: "Anthropic研究员称借助Claude完成黎曼猜想证明，公布逾1737万行形式化证明代码"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxQcU50NzZhYjk3MVBrSmxwSThhaXgyLS1uMUpCVlktX0xsQUswSDNLei1Zb1ZBT1pwcG96YUJoOTVQVTIyRzcwU1pLbjBqRHJGdzEzLXBUUzk5XzhYNzhYYzRSLUNzanNodXZKSElEUDI5NlpESy1RMVdOeFVvR204LTN2clBGZzh3UlhDN1BJdzJTWXNMcUxuVy1wYUIzeVFrMnhmbThUSXZxUnZTQ2ZRVm9zYw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):旗舰模型重大能力突破，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-anthropic-266
+  date: 2026-11-22
+  dim: W8
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic 每年需要 6020 亿美元收入，才能覆盖算力承诺"
+  quote: "Anthropic 每年需要 6020 亿美元收入，才能覆盖算力承诺"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxQS09MVXpmclVwN1FOcGJVRW9Nd1REcWYyWk9US0Q4ZFQySjhwV2tBVTJna1hvNndrMEhhX0d6T21KbzlnODlCcE1kbGZJUTZPREVKUUJleXAzZ0hodTJDaVAySHNXTldxaXJzbFRtZWFmWkJuaFREYk9rTkMwa19rdTRGbm5JbXNGMFF3WWRrVllIcGtlaWpJZnR4VQ?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(med):算力开支与收入压力，财务风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-anthropic-267
+  date: 2026-11-20
+  dim: W8
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic登陆纳斯达克首日收报97.17美元，较发行价涨17.1%"
+  quote: "Anthropic登陆纳斯达克首日收报97.17美元，较发行价涨17.1%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxQTDlQNWhwMlZMNWt5OTdwUUFSSXNjMnBtRmhhRDJzQ1U5SUFlcFNfcGd6dFhOWGZ5N0ZjTEtFZ3BRR20xaVVDNXFRaGhUcFIzM0xBS1RaQWp6TDdHRXd0V2tVMXBVbUlWZ2FPLWkyR0J2ZmlYZ0VaUUw0T0VEbDZlVWlDcmdySXdsaVJOV1dlN0Eya2dMdmNvMWtxLWo?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO上市首日表现，重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

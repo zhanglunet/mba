@@ -2660,3 +2660,79 @@
   source_type: media
   note: "LLM 预分类建议(med):新品发布，媒体转述，P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-20-huawei-175
+  date: 2026-11-20
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Tested by Fire, Proven at Sub-Array Level | Huawei Successfully Completes the Industry's First Sub-A"
+  quote: "Tested by Fire, Proven at Sub-Array Level | Huawei Successfully Completes the Industry's First Sub-A"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPNmI3TmpzZ09iaDVkS04xVHJxUldDaDVfbjVnOGRtRko2NTFIMlo5T1U5N2xaV0dLN3RtUWJvSVd5VG9TSERTbzlScTA1UURiWUpLR1RpLUFDVEx5NXc5Y19ROU44MW90SjB5MlJvaVVER0RXQVNsVVlzV2NmbWJ4a01UbG1CUEU?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布行业首种子阵列级验证成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-huawei-176
+  date: 2026-11-20
+  dim: W4
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "华为OSTA星芒手机正式发布，OSTA O1 Pro重构AI体验，5499元起"
+  quote: "华为OSTA星芒手机正式发布，OSTA O1 Pro重构AI体验，5499元起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE13R2FiOFJTdk4xNm14b2p3VVhSNGJlTEF2NXc0clhmM2FwSDRDYU5qbmRoMTNVNmdmOFpmb2lHSWVoemE3UlNnNEpSR3ZvbGlmMWVuOVMyOFdvd19I?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰手机正式发布及定价，重大产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-huawei-177
+  date: 2026-11-22
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为WATCH GT 6新版本上线 表端接听微信来电"
+  quote: "华为WATCH GT 6新版本上线 表端接听微信来电"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5iaERjNmo2MlUwRm0zOU5CU3NEUzNkSzloamVrdzRVNnVNREtMclhXQmJDNGF3bS1SbTNPMzJBNm54cnpYdG1TbGFITXY?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):WATCH新品版本上线，产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-huawei-178
+  date: 2026-11-20
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "华为Mate 90 Air官宣：Mate史上最薄直板机，11月24日正式发布"
+  quote: "华为Mate 90 Air官宣：Mate史上最薄直板机，11月24日正式发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9wQktLazRvd2hjcmRZTEdYeGdnRVhmSnFGUFJ0TUp5bGN2NzN5S0t1VFlnYkxsby1EZXhkRE9LWHlBd1pWb21UeEhCanFBTnowUS1ENG1rNHFIRnFJ?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰手机正式发布，重大产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-huawei-179
+  date: 2026-11-21
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "主打200MP人像摄影！ 华为nova 16s系列售价从2599令吉！ | 科技 | 生活"
+  quote: "主打200MP人像摄影！ 华为nova 16s系列售价从2599令吉！ | 科技 | 生活"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE5jRVNzU0JCdkRoRnNNR2FEMWloSm9GQzNtVXJsb2RIeV9lQXJxOUd1QkVLYk10YkNad1p4VGhmNzF5bTY5TmNkSDBtOXBTMEVPVS1uajg3cW5MaWdIQUxlcW8tek1fNGJ2VHVleQ?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):海外定价与卖点发布，一般产品新闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -3363,3 +3363,94 @@
   source_type: media
   note: "LLM 预分类建议(high):任务常规进展，信息量轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-21-spacex-221
+  date: 2026-11-21
+  dim: W9
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "黑色星期五，美股暴跌！为什么每次“史上最大IPO”出现，股市就要崩盘？从阿里、SpaceX到Anthropic的百年魔咒"
+  quote: "黑色星期五，美股暴跌！为什么每次“史上最大IPO”出现，股市就要崩盘？从阿里、SpaceX到Anthropic的百年魔咒"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hQ2p6eF8xWDJDc1Nxa1NoNDE1ZjRfSFlpellUUWtMSDVpckdiOVZ6VzUzMldvU2Ezaks0RUpSYVhyeWpxWVZMUWZ4a2VuNjV5VEpYZElDRTJKaF9k?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):IPO与市场波动关联讨论，观点性评论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-spacex-222
+  date: 2026-11-23
+  dim: W6
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "华尔街前瞻SpaceX首份财报：业绩之外更看重未来指引"
+  quote: "华尔街前瞻SpaceX首份财报：业绩之外更看重未来指引"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE13aHA5M1RMcUFRZjNCUXBzRmNReFBWZXY2Z2FheXFOZ3JoSWZ2U1M3U1FYdl9SZW40Mk81ZW42N05KZUlBUjA4cQ?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报前瞻属重大财务节点，媒体关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-spacex-223
+  date: 2026-11-22
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "史上最大规模GPU租赁融资落地 SpaceX租英伟达GPU扩建地面算力"
+  quote: "史上最大规模GPU租赁融资落地 SpaceX租英伟达GPU扩建地面算力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE9YRDFKQ3R6MnMyRTVjTE5uRWJpRHFNQXM0d1ZraGE1OGx5MmxPSXNkVTFpOEFkUkVsMy1aUU4yQ0tpMFIzYkY3bEp0ZGtrc2lNb25vU0tBd1QtT0lnaUhRQ2EyRHc2QQ?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大额融资落地，但涉子公司算力扩建。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-spacex-224
+  date: 2026-11-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX猎鹰9号同一发射台32小时完成两次发射 创周转纪录"
+  quote: "SpaceX猎鹰9号同一发射台32小时完成两次发射 创周转纪录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE13eFZ6NkNhbHFtR0RpNjRLUUg3TC1PMy1KQVdUUC1aN0lDSmxuM0ZVdWVhZjJCR2FPeHBZbkxmc2I0bHFCM0laRExtbDNGUWJVcTBJSzlMaE8tbUxqLUk0empB?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):运营纪录突破，非重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-spacex-225
+  date: 2026-11-22
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "星舰回收成功后，花旗上调SpaceX(SPCX.US)目标价：发射领先优势“正日益扩大为20年鸿沟”，星链将成兑现价值核心"
+  quote: "星舰回收成功后，花旗上调SpaceX(SPCX.US)目标价：发射领先优势“正日益扩大为20年鸿沟”，星链将成兑现价值核心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKOVlBbFlSYmFqMTJOSmI2cVowNk5UN19rcUQtQ2kzZTExU1N4NElFR2VaTXdsTjQ0TS1ubGJzZF9zeklnUWxPSmxvcXpvSTFqYzFIZm5nMkdITDc5VDlCSw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):机构目标价观点，非硬事实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-spacex-226
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "民主党开启调查，SpaceX220亿美元政府合同或被审查"
+  quote: "民主党开启调查，SpaceX220亿美元政府合同或被审查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE5MOXBlVzdJbld4djdyR3FzOFZTUFMwUWZvYi1hVWpFekcxS09MR3pGbVhQclZ6bEo1aDBPaTZmeFNaQWllTG51Y29EcXB2THJJS0pqd2lGbmFFa01qRWpKQld1VTJ1Q0NJcjFkcnd5N01GZw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):政府合同面临调查，监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

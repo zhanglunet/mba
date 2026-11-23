@@ -3700,3 +3700,109 @@
   source_type: media
   note: "LLM 预分类建议(high):功能更新，非重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-21-google-244
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Supporting AI research and talent development with IIT Kharagpur"
+  quote: "Supporting AI research and talent development with IIT Kharagpur"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMirgFBVV95cUxPX0xXQk1BbXVybkFwcl8tVG4yV2F6eDZRY3Q4YldrT0RaMjNxWWpaTWRRU2h6bDNzU0dDNHdEaURfTnNseXdMRVUxOVB3Z3pnVE5qNnFRZ25NUlVlLUg4dXR0TXJnRDZkdWRORXBTT3hTbTRpbXdZRFNrcnRqa05zMDBWbkF2YmVhaE90SXFrbFhWZWc3cWJwaEpGeWRVdXVBZFpmN2hncXQ1OUNEUFE?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方AI人才培养合作，轻微正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-google-245
+  date: 2026-11-22
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Google Australia launches new Stretch Reconciliation Action Plan"
+  quote: "Google Australia launches new Stretch Reconciliation Action Plan"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE04QkZ1bUF1R3VYbFdmRzBwcm9MRXJJeUpkcG9pVUkwZFVMRHZBVThTdmZ3SVVRVU9PcUQ3SjVWYXZGWjVCSHBsZ2dOdnRXQ1RGSkt6Tll3UmJJNzZQOFN4UTNUbFJ3MnNoVWYwYw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity]
+  source_type: official
+  note: "LLM 预分类建议(med):澳洲原住民和解计划，品牌形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-google-246
+  date: 2026-11-20
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Gemini Robotics 2 为机器人带来全身智能 （WBI）"
+  quote: "Gemini Robotics 2 为机器人带来全身智能 （WBI）"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBDdng4YUJVUS1wNW9lRVNfTHN6THBvakU4OWVuUnktekROeDBTZU1XNFJjbXM5dC1ZOTJPWGtLaFJjZWNZZUEzS3dUMHBYSnlhZGFiZU1uWkNzVlNj?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage, category]
+  source_type: social
+  note: "LLM 预分类建议(med):Gemini重大模型版本更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-google-247
+  date: 2026-11-22
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Google AI搜索变现受阻苹果服务业务收入增长也随之放缓- Google 谷歌"
+  quote: "Google AI搜索变现受阻苹果服务业务收入增长也随之放缓- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE51Tks4SVYyVktLa2IzWlJydEJXamJVUktzd1ctRXhvNUNPRHpaTHBFM2J2YkpTV2dnanBBSGFZeGZZdGdaQ001UnJtdExjeTBic2hqbGNfXzAyam1FY3piZA?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI搜索变现受阻涉业务实质。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-google-248
+  date: 2026-11-21
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌Nest应用2027年停服，功能整合进Google Home"
+  quote: "谷歌Nest应用2027年停服，功能整合进Google Home"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE9FbDF3LVFrTmFSVWVnMjJreHV4aVVrOEJVbXF2dU5Gelhhb1BOWWRNWmRLTl9ucUR2SjJJM0Q0OGxSSWwtZHBJdnhGQzdsY2YyWVdySGRnNmJpaGR0cGRTdy1FbmRpYW5vLURCc09VY24?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品停服与整合属产品事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-google-249
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌搜索推出 AI 搜索历史侧边栏 ｜#AI资讯# #Google# #搜索体验#"
+  quote: "谷歌搜索推出 AI 搜索历史侧边栏 ｜#AI资讯# #Google# #搜索体验#"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ1BLTm1jMWR0ZlBweDhuWjNLSFZGY2pWcURwbjgxQ3hOMkZ4Z2xJeHd0UzJFNE5LU3BiV3RqQXpfazhaMXI4Mm4xOHJkYWNKdVJDNlBnLXowMlViclZLU0ZBNmlqZ2pBME5TQ2wxZmp6VHEyWUhiWGhIa1U4WV9LazMzNEkwSGk0aG9SVw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):搜索功能更新，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-google-250
+  date: 2026-11-22
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌披露 Duplex 细节，Gemini 靠它给商家打电话"
+  quote: "谷歌披露 Duplex 细节，Gemini 靠它给商家打电话"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcjgxcEFHN3ZEdjlhU2tRLXFqYWtSNTY3bDN6MmhUZlBsM182OWN6Z1ZJVmVaMFF2WU0yOFk2LXc0djZvY0QyZ1QxbTUwUmE4M3J0N195WXFZVGJRaHpGNWxybmFuanI4Ymd6dGlpTEpYYTZ6MXVwT3gwMlhWck1EcnpaMTlKTTBI?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):谷歌披露Duplex与Gemini整合细节，属产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

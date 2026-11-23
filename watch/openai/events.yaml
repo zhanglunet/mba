@@ -3933,3 +3933,109 @@
   source_type: media
   note: "LLM 预分类建议(med):甲骨文筹资履约OpenAI合同，重大合作进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-20-openai-257
+  date: 2026-11-20
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI拆分机器人团队始末, 真的有推理延迟 160ms 的小 Astra 吗？"
+  quote: "OpenAI拆分机器人团队始末, 真的有推理延迟 160ms 的小 Astra 吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ObmdfelgwSjhZaW40M3VBVV9XYXpLQ3ZLNEptUTZnenRLRndXSXM4Q3IwNWNXM1pFSmkyMHBRWGhVcmpBcUZMN3FuZWlNeEJGOThuMXhpTVVIRFY3?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):机器人团队拆分，组织变动讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-openai-258
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI 的 agent 独自干完了 46% 的研究活"
+  quote: "OpenAI 的 agent 独自干完了 46% 的研究活"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBGVkZpRy1Xa1Fja216Wk5aS0pVekZhWXNmMWV6T3VYNThoR1hheHgxdlZtSFRYLWhUdWJrVlZKVWdWMWpqcmhnajVfQ2FmWmM2QnhyZ2lubHRSSHBG?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):agent能力数据，产品信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-openai-259
+  date: 2026-11-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI：到2027年或出现预训练进展重大突破"
+  quote: "OpenAI：到2027年或出现预训练进展重大突破"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1Id1BkbEFxX243UUdEakpzV2NHV2RxYkhxYWZGc3ZNSFFFVW1OS1Z2dmo3N2cxY3h5VjFlTGpCeTVPU0p5Zl9TRjRzamdOb1NYaHY1dHh2YjBTMlNZMm92bXd3?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):预测性言论，非正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-openai-260
+  date: 2026-11-23
+  dim: W9
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI提出AI预训练统一评估及安全限制"
+  quote: "OpenAI提出AI预训练统一评估及安全限制"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE13dllUNE9DUVNrcjhFVUEyOGZrZUNObXA4WFdSZVZZYzYzY1E0M1FqbTA2anAyQkI0a2hTeEx5ZXE0eVhCLUdHYXBuY1NIdXl3aWkxNUp5Si0?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):安全限制提议有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-openai-261
+  date: 2026-11-22
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI 首次公开预训练困惑度数据：GPT-3.5 约 0.99、当前已低于0.8，并提议全行业设立common limits"
+  quote: "OpenAI 首次公开预训练困惑度数据：GPT-3.5 约 0.99、当前已低于0.8，并提议全行业设立common limits"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5HaGJQSklkQ0ZIaHRFMmpqTmU0U3lhaEtPdWFieExzV216dnFNaWI3MVZEZU9ObmNtZV9adzNpZDFtcGgzbVh6Uw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首次公开核心指标，信息量大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-openai-262
+  date: 2026-11-22
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI首席科学家呼吁业界限制模型开发奥特曼表示赞同- AI 人工智能"
+  quote: "OpenAI首席科学家呼吁业界限制模型开发奥特曼表示赞同- AI 人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1FSU53b0U0UjYzRWZuemZ4NVN1amNLcGY1YUQ3UWhTaUZqd1hISWt5RnE4bW14VmNTT1NLVURFTHJBcG1ObTFjd3k2RkhlMkJhZHNnbEo3SkVncTlNNllSWUgxQjA?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):首席科学家谈AI安全，行业治理信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-openai-263
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "微软AI首席执行官苏莱曼：支持OpenAI提高透明度的倡议"
+  quote: "微软AI首席执行官苏莱曼：支持OpenAI提高透明度的倡议"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE9OZjNmekctWjRVNmlRTG0yLTNRS3VCd0R4RHk4NjRQaS1OQ3pRWDZVVGFlWEpKQ1F2TklzZndrWE5WVG5XMFQ3Ml9hZw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):合作伙伴支持透明度倡议，关系正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -321,3 +321,19 @@
   source_type: media
   note: "LLM 预分类建议(high):分红公告，财务回报事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-22-tal-education-021
+  date: 2026-11-22
+  dim: W5
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "TAL エデュケーション グループ、2027年度第1四半期の決算を発表"
+  quote: "TAL エデュケーション グループ、2027年度第1四半期の決算を発表"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVUZJUEw4bWFjXzRJcjlBLWt5VEI1eTNTYks5Vnlobkk0UkV3eTFBY3I5UEZWczlaakdTZFRhV1J3WnFBaXJTbl9TWi01WWlidzgtWXpTeV9GRldkZ1lDU1RRTDdLczh5dnZyTm5WZm5lZnJ6Qk53WHVzMHlHNUgtUnpuN1FPX1Bq?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):好未来财报关键数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

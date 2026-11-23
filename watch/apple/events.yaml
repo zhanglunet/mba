@@ -3520,3 +3520,64 @@
   source_type: media
   note: "LLM 预分类建议(med):关闭28年论坛，社区服务收缩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-20-apple-232
+  date: 2026-11-20
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "AI日报11.20｜Anthropic上市首日涨约17%，苹果被曝研发电脑智能体"
+  quote: "AI日报11.20｜Anthropic上市首日涨约17%，苹果被曝研发电脑智能体"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5RYWtxM3FFM0FmaDBHcENnZ196Sk1OSWY2MmZMS0ZQVFdjMlFXMmppRkxrQnVwcGYyRlF4M1kteVhKTXNCNUdNaGpKQWFZWnhQbnN5R3RneU9Bd252?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):曝苹果研发电脑智能体，AI动向值得跟踪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-apple-233
+  date: 2026-11-22
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "苹果20周年款iPhone渲染图曝光：全玻璃工业设计搭配曲面屏|显示屏|Apple|iPhone X|苹果公司|爆料_手机新浪网"
+  quote: "苹果20周年款iPhone渲染图曝光：全玻璃工业设计搭配曲面屏|显示屏|Apple|iPhone X|苹果公司|爆料_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxNUld6TkxFZ1pQYVRkS0dLcWJyOVdoRm91S3lKUVlPckhFbVhTUzU0amJ5VkdNVU13aHBOQU5mRnFZSHUxdWthSTJYSERMaWdEUmJVR0lPN2RPUVI1MGU0MU1laDN0ZjZhZXFySzNWcF9tTGY1UTJWaEhHcENTZktWSF9YYVRrdmtzNzZ3dzlaLTZZZw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):20周年iPhone爆料，属传闻轻微关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-apple-234
+  date: 2026-11-22
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "服务果粉28年后，Apple支持社区永久关闭"
+  quote: "服务果粉28年后，Apple支持社区永久关闭"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxONlo2Snd4YjhPb0Q2NkxacmtYZTByTlpjR2Q2cm5SR0FSZXgxMDhNTkIyVHF4Q2dXRUlnVElkc2JqLWNuR0tCVlVHVjc2bHNNdW9qVHRyd09nU2l3NV9WUFdhTnJWWmlNUTVPNG5Kd3p2QTVhQjUzV0FJZHoyRTlPcHAxRkxOLUFr?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(med):官方社区永久关闭，用户服务收缩事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-apple-235
+  date: 2026-11-22
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "苹果Siri裁员未波及新一代AI系统但产品节奏与竞争压力仍待破解- Apple 苹果"
+  quote: "苹果Siri裁员未波及新一代AI系统但产品节奏与竞争压力仍待破解- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9XR01CYzZKdGNZbUFWQldQWDQzeFMxVGctZkNjWFZsdWxsR1lGSjBoX3UzTVJCWUpQcm9BYnhIWk5tNVV2a01IMmdjb09idkkwdVhVVzRZMWNVVk5ySkFCQg?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Siri裁员及AI产品节奏压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
