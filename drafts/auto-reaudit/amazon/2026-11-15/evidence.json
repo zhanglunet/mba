@@ -1,0 +1,2620 @@
+[
+  {
+    "id": "2026-07-20-amazon-018",
+    "date": "2026-07-20",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "跨境日报：亚马逊AWD拒收大件第三方卖家GMV突破5750亿美元- 栏目",
+    "quote": "跨境日报：亚马逊AWD拒收大件第三方卖家GMV突破5750亿美元- 栏目",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE81NUVzNXJXZURYNDB4alNBUzZnYWlZRlNWVDVnTkxqaEdrYWJvYlhvSmI0VV9kRlNCSlR2eVItMDJ0MEpyTmRsWk5TNlZNOUhMc0hxQUtn?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊AWD拒收政策影响卖家，业务调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-20-amazon-019",
+    "date": "2026-07-20",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊云科技概要介绍了某客户如何将 Lambda 函数扩展至 100 万个",
+    "quote": "亚马逊云科技概要介绍了某客户如何将 Lambda 函数扩展至 100 万个",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9FejJlZ0dheXI5NTB0T1pjTmJ4UzZyd3BkU1hURGk0WjV5ZXJLaGxrc0dtV0t2WVdoazBrbm9HRktGa0trb1RvRWlPb3JBVHpOQW9JSndBelNBZEdTQnc?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):亚马逊Lambda技术能力展示，云服务案例。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-20-amazon-020",
+    "date": "2026-07-20",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "L1 Capital：亚马逊货运扩张至零担市场，CEO称AI是“标志性转变”",
+    "quote": "L1 Capital：亚马逊货运扩张至零担市场，CEO称AI是“标志性转变”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE82ZDM2VUhCSnFFaEhVRFl2TlFvNHFoaXdiVHlEZ0dnNWpZVXZfN3lSelRkaV8yQU4zZ1BaS21lOTZiVXFqOS1yaURXU2wtVndYV2NHcUpYOHJvMTh0cnBEb29R?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊货运扩张零担市场，CEO强调AI战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-20-amazon-022",
+    "date": "2026-07-20",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "“七巨头”时代终结？分析师：这一概念已不再适用 AI投资逻辑正在重构",
+    "quote": "“七巨头”时代终结？分析师：这一概念已不再适用 AI投资逻辑正在重构",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FY0FxV0poU1ZhYXhtQmF1dXNBQmFZcjU1eWtJa0ZrMUpHUHo4ZmJuNVgxcG04akt0NF9sVHRpcnI0akZmdnRBdw?oc=5",
+    "fetched_at": "2026-07-21T05:31:16Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):涉及亚马逊在AI投资格局中的地位变化分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-amazon-023",
+    "date": "2026-07-22",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊企业购年化总销售额突破600亿美元",
+    "quote": "亚马逊企业购年化总销售额突破600亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ndjViMDRHLUNPTGx0UmlNdFVZem5CcFQ4MUFkWDhOU1JUdlpGUm9YV2JYLWU3b01HR1M4YWVVMFUzb0xfMXV4ZE8yTm05S3Fka1Q5Tk52bm1OV1V6dFRLNA?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊企业购突破600亿美元年化销售，重要业务里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-amazon-024",
+    "date": "2026-07-21",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Dia停止在亚马逊上销售产品，并将业务重心转移到自己的渠道。",
+    "quote": "Dia停止在亚马逊上销售产品，并将业务重心转移到自己的渠道。",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbUN0RFhKYndDZm1ib0RwSGluNjZRb3pQMnNtNENjNWJSUVM5RXg5UmEya2ZkNTVBNG9QRGFaQ21NdkhkX0tmekVScHhGYlVwdXNrX2VoUmd4LXZaVWp3a1pzUFVPODNYYmJBMmJURmExYWFMZDhCQ000bWVnN2ZxWDR5Ui1PWXNFazRqb0tkeHhmUmtWaUl5Qk9WT3FlRnpubG8xeEUzNDJEZlBfeDdBNmF3?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):品牌商家调整渠道策略，涉及平台生态变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-amazon-025",
+    "date": "2026-07-21",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊商业业务在第二季度的年化总销售额达到$600亿}",
+    "quote": "亚马逊商业业务在第二季度的年化总销售额达到$600亿}",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdjh5ZEg2Qzc0bjh2bUp2dmlhSU1YSTJuX1ZWdGhtVHc1Y2pxWmgtUDRLbDI3ZkdZX2xady1CTURfczYtSVNnTTUtdWpmUlNGam5GRk9qNzFmcUdlS1dQekRWRGh1b1M4ZkVjNjlKRnNhOWZwTG9vUVl6UHFVelhnRXZNZEhHcVRzUHpUSTlFRDJ1SjlxSEFXdDV5enQwVXFkNFhUemdUVkp2dWc?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊商业业务财务数据，重要业绩指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-20-amazon-026",
+    "date": "2026-07-20",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "Temu欧区投流腰斩亚马逊第三方GMV破5750亿 | 邦小白跨境周报- 跨境电商",
+    "quote": "Temu欧区投流腰斩亚马逊第三方GMV破5750亿 | 邦小白跨境周报- 跨境电商",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFByQ01KUkpwM0lXMU9sT0luNURoNXpyWVZhY0E0Q1F4Mm1LRUNJLUU0VU1QZ0ZtTUs2cDBHLWI4TV9xMHJadkE?oc=5",
+    "fetched_at": "2026-07-22T05:30:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):竞争对手动态与亚马逊GMV数据，涉及市场竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-amazon-027",
+    "date": "2026-07-22",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Amazon Bedrock AgentCore Gateway 内置 Web 搜索工具实战",
+    "quote": "Amazon Bedrock AgentCore Gateway 内置 Web 搜索工具实战",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUFZCUms5RkpCSVdMUjVPbGp0U0NOTG13QjNDWl9fY1pXSkVIN3ZnbXRzZWhZb3YxWjF1a0ZJSFVRdS02RzRqdUhRZlR6a1FCcERoeEJtRDZYT2xBNVdMY3h6bk0zcG9uakg2QTZQc1ROd3FUN1VfSVo4aC1jNkJEbGYyeDFfVGllc013NEVGdXI?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品功能更新，Bedrock服务能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-028",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "突发！亚马逊又裁员！凌晨6点电脑�...",
+    "quote": "突发！亚马逊又裁员！凌晨6点电脑�...",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBuZmJLWWxZUDRfZXExVVdTTmJyX2Z3UDhjcy1jN0szdkxselYzOGRSTlNJVDBFZkN3SWItdlp2RVJBZ1pobXBxcklOQXRIT1VieW1qQThUUjMxbmo0dXA5MkNR?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):裁员事件，组织变动，重大人事调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-029",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊AGI组织裁员，AWS的AI估值锚要换了吗？",
+    "quote": "亚马逊AGI组织裁员，AWS的AI估值锚要换了吗？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVzRQLUNZNzJETjB1Y0phVzdtYVlKX1ZUd2NZMndsWlQ3RzQ4aEZFcGNjazdOaDI1NlhQY3dROUo2bDlraktERDMtdFZTN2ZRNnpFLU5pX0NaV2FLRFZtcnNuYVZ3YW1teWFIeEEzZ19CMl9nTEZfc2JXRXU1X1l1aVJhcVVIOVlVN1JoYm5LclJwV0xWbG5YNnZqN2N1U2JtelB6VDRIcURneS0tMkNfU3A5SEd5dW54NklBVTZmbw?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AGI部门裁员，涉及战略调整和估值影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-030",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊再裁员 AI部门首当其冲",
+    "quote": "亚马逊再裁员 AI部门首当其冲",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5TSzhSdzZqMWhEblpWclhJRjdiZWV4Sl9vYkU3aGZveDFIQ1dVYUxObzhaZnVZeFRiaXI1dzVtVlRjX0IzM3NBTC1kcTZmZmNVS3h1TjI4VU9rWkUycTI2eXhiQWpSNDZPTldiS3lvZWVoQQ?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AI部门裁员，重大组织变动事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-031",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "亚马逊在3万大裁员中“牺牲”Nova团队 押注更快兑现AI回报",
+    "quote": "亚马逊在3万大裁员中“牺牲”Nova团队 押注更快兑现AI回报",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxON0E1VVJ6OEl6akxEY3BCSjZyRlV0U2xSLXBldWNhSG43QlZSejcwQ0dsT0d2bWF2a3BpN1NsUXd4M05TTFVMV044aXV4NEpCMlRxTDZrbEpucFJnNEF5V0NLU2trMDh3dmplUWFCLVlRNUtGM0xjUE1ON2JnMUtDcEgzekd0TXRPSzlrYW95akx0bWFKZF9SY1hwVDJweGZ1OHVzVWJKQVBEblRhSnhiTWdSLS16emZfd016MnlaWC1YTkFsU3NVRjY1aHI2TFlxZ3dsSldHdmVUZTk1R00xTTJvWjRmNUc3OVVHRnh0MExkM0FyLTY1MFRiN1V2YWVnV3JJVVA4RGxDdDJ2el94bnQyTldpRDEzU3VDYTB2WFBxSnlWVUFkMmsxMmtfalBmaGk4Y3M3eWFCV0JZbWdXbGJFUmFsNkZ4cEU3eTYyZHNCaERWMXdmcGlSeUU0eWs?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Nova团队裁员，战略调整信号，涉及AI投资方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-21-amazon-032",
+    "date": "2026-07-21",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "企业采购也被亚马逊吃下 年销售逼近600亿美元",
+    "quote": "企业采购也被亚马逊吃下 年销售逼近600亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1mYmIzNGpCVV9JQ083UzVIdk1tZW5WY1ExQ2V6d25pb28xMURXcHk2TUhmWVJqTWw2MXBpcGpNRl9mWlZJTzhtLXR0aU1PbDVQNXZkZ1RSX0tUNmpnRklNcklmUQ?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):商业平台销售额突破，业务扩展成果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-amazon-033",
+    "date": "2026-07-22",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊商业平台第二季年化销售额达600亿美元",
+    "quote": "亚马逊商业平台第二季年化销售额达600亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRLTlTOVVxR1RKMmtzaDgxZ0ZWc3IwNk9JS2hGLXI0SDhMRk5naTRMQ2g2Vl8yTTdya19xZ3ZDbUU3YW4tUjJOaFJrdUt5TFUzWEE3ZHJWZkNrQzdtaG1VSWJEXzZBc0NvaGc?oc=5",
+    "fetched_at": "2026-07-23T05:36:13Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):商业平台年化销售额达600亿，业绩里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-amazon-034",
+    "date": "2026-07-24",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "海外观察|亚马逊入局电视端云游戏,对标Netflix游戏服务",
+    "quote": "海外观察|亚马逊入局电视端云游戏,对标Netflix游戏服务",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBwdXo3cXNlcUVXNXYtYzZuelpyYm1yUFdLdnYzNVd3amU3MUs4dm85Mk54cFVUWnF5ak9YM0djQ01KTTYySzBrZnBaYzlLZEV1WVlVTzlFdWJ1ZUxqQlRJckNsUU9nMGFiZ01V?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊云游戏电视端扩展，产品战略升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-amazon-035",
+    "date": "2026-07-24",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊Luna云游戏登陆美英Fire TV端Prime Video应用程序",
+    "quote": "亚马逊Luna云游戏登陆美英Fire TV端Prime Video应用程序",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObjJ2SE41ZDdHZk9uOGtQby1QdDE0Zm96UFNkV29LZFlRcDlpOC1YZjhmelVvMURnYTFFM0tMdE5Uc0RRWlFlcndmTjZQYXVtRG1Dc053RjIzSThNVWpBWHVJWF84YUhOTExPZFlUckU0aU1EckxtUzFwSEJiQnlRLVd1N2ZLZ0s2cXZz?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Luna云游戏Fire TV集成，平台融合进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-036",
+    "date": "2026-07-23",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊全球物流的“版图”拼全了，它把“前置仓”开到了中国长三角工厂“门口”",
+    "quote": "亚马逊全球物流的“版图”拼全了，它把“前置仓”开到了中国长三角工厂“门口”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4yV3h6cFVQREVROHhmQ2Z5TDhmRHl2QmJabjVvRmVyZmg5VFpYU1FLbEd3RkpyekZFQVdsNkJINHZTUEY0emtaQ0M5MzY?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊物流前置仓进入中国工厂，本地化扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-037",
+    "date": "2026-07-23",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "你可能有錢沒領 Amazon最高51美元和解退款倒數中",
+    "quote": "你可能有錢沒領 Amazon最高51美元和解退款倒數中",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWk90WC1pb25pXzJaNGdHVWVDVEQ3MmZpQ1EzZ1VhcUp5ZE9CNW9DZlVCVzF4cWpHbFRvZnl0OXZXSmdWWFI0cEFrUVNQMk5XMmh5bGtxdEY4aG83NTdlLUpCSGwyX0pySzJoVFhONFJrRnlnek8zalRPODNUMHlkWXBoRUlZQdIBZ0FVX3lxTFBseTRRNVRYNk9yVDhCaHBGWHU2bVZXazJTNjJnbTNKU1BXUDhoSUxJZlJZZWtEMy1sdkJtLUNmdURHc0hQUEhhQjdPcGptcV93OEx2SjY5bVBTQ2VlQ2FFMHcxNjZZXzQ?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊和解退款事项，法律合规风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-038",
+    "date": "2026-07-23",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Amazon Stock Slides After Trimming Jobs In AI Unit",
+    "quote": "Amazon Stock Slides After Trimming Jobs In AI Unit",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdmJleUdWMy1JclVSbWhHQmxNVktqUmo2YkZuTE9TcUEzdVVtM1J6N2VoUTI2V2h5bm4wVm12R1RRdndaOWt2VEtqR3JTZGVOazlqZC1vQWF3R2IzV1VIREZ4amIzWTFNR1JKNnFLSVNVT3lEZTRXNWRaRmZFZ3dtcWRZamxfYUI5OEtUd01uLVlTa1A1?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊AI部门裁员，股价下滑显著事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-amazon-039",
+    "date": "2026-07-24",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "亚马逊准备基于AI的Prime Video重组，杰夫·贝佐斯下台",
+    "quote": "亚马逊准备基于AI的Prime Video重组，杰夫·贝佐斯下台",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9mZG5qLWRicXJEc3VLY09saGN2T2pSb0lTcU93VmZxMWVVd1NpcHJOMk9CR3BLLW9IbXZnSzFCME1ZaFFsbVZuUmROWjlDTknSAUJBVV95cUxPeW5Zc3N3U1RZYVZ6MXR2WVRWNFk5U0ZsWUVXcVdZNzFCTlBfRk1iTm9ObWVIX1gyMjBmeGF0NlpYeXc?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Prime Video AI重组，战略调整与领导层变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-040",
+    "date": "2026-07-23",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊 Alexa Plus 获 AI 升级，能听懂“冷水洗但需深度清洁”这类复杂指令",
+    "quote": "亚马逊 Alexa Plus 获 AI 升级，能听懂“冷水洗但需深度清洁”这类复杂指令",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE96T0JDeV9FM0pjUXNfUTQ3dEJQWnNaQWRFakFkLVJvcXRnMnJpcG15MFZUQ0xBT2VPc0J2WXo2STJKaTdWVU1PU3JraXNTRGZkYVY1M0JEdUpoVzJ3OTFWNjZ3?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Alexa AI能力升级，产品功能创新事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-amazon-041",
+    "date": "2026-07-22",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊商业平台第二季年化销售额600亿美元",
+    "quote": "亚马逊商业平台第二季年化销售额600亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wbzRzUU42aGNsMDZUWFJFckRfamRSdk9XVHNEZnEyTTZlRXgtM1V5TlMyOXV4OWk1UFNLRXpiOTN4UzlqcUZ6LWFSZkdqbzRmWUE?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):商业平台销售额数据，业绩表现事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-amazon-042",
+    "date": "2026-07-22",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Amazon AGI organization lays off staff: Is AWS's AI valuation anchor about to shift?",
+    "quote": "Amazon AGI organization lays off staff: Is AWS's AI valuation anchor about to shift?",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9xMF9UcGg4b216V205YTlUaFhpTW95ME50elRJUWQ5RFlidU1fcWRFVTNqRXdTanFFcTRCMDZoSVRZSzYxdWh4NkhCR0hPT192?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AGI部门裁员，组织调整与战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-amazon-043",
+    "date": "2026-07-22",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊有望凭借AWS的强劲表现实现第二季度业绩超预期，美国银行证券公司（BofA Securities）表示",
+    "quote": "亚马逊有望凭借AWS的强劲表现实现第二季度业绩超预期，美国银行证券公司（BofA Securities）表示",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZU5Ldkl4YjBMSkptVXNKZzFqZWcycEtsbjhxc2x5QVhBcG5xLUdjMXp0X010TzNwX0FiZy1kanZnei1JMXVTcy1HN25jWFBnaDhzdWdOcWtDbGJORGxNZ2FIVlFwaXNpWHNPVjVyLU1CczRlbmxIQ2s3Z01VbjRMN0JzN1JYQng0VTAyQkpDZHNBYTU2TU5sQ3dKREtjOGV1ZG9tNF96clRmMmg2dEE?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):AWS业绩预期超预期，分析师观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-044",
+    "date": "2026-07-23",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "AI浪潮下的新裁员：Uber砍客服 亚马逊缩AGI",
+    "quote": "AI浪潮下的新裁员：Uber砍客服 亚马逊缩AGI",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1raV9hQkFUV3NKS1VzRlczYTVJaWNjc0FjbGlOakhhMEhPSlZKd3pwVVM1V0VmMFJHV2RIM0dBaU40dWltLXAtdUJKdkd0b3ZQWnBHaGRRcU1wSUI3NHBVWS1fTUFvczIx?oc=5",
+    "fetched_at": "2026-07-24T05:31:20Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AI浪潮下裁员趋势，亚马逊AGI缩编。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-amazon-045",
+    "date": "2026-07-24",
+    "dim": "W5",
+    "severity": "P0",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊AWS云服务故障导致 “半个互联网”一度瘫痪",
+    "quote": "亚马逊AWS云服务故障导致 “半个互联网”一度瘫痪",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPYWhoS3dpd3lDdXJudTVfRHNqWklqQWJPNUtzZFZMVDhVWDFHLTJnanczY3ZOUXRGR3dwcEJsTkpDdHlLYTZaZUZialUtM1NEaHVvQjVCOWVJQjZHN0MzTHg4bWtoTVNsWHg3ekdocEZmeld0NzlxV3U5YXAyUnJsSS0tbW10ZnNMUDQ2WEJobDMzSG5MS1R1X1ppOWhuSHhZVWpWNm9CWHNCMUFzMENLN3ljdnFfX2V0dGNqa0ZlOUZxWXZ3UzVVTEdLaW9qR1ZKQ1hjbkljSkx5Mk9kZ0FIZ1hJWXBGbEw4UTBFMHZRZllscHFYaFBmTUpVbUdGNTJ3YmtsWXdpNUh6Y1NWT28zcEJyWGdYMjFhbDRtaS1hajBqMGNlM2dVVjZwb0l3Tk9WVHJn?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AWS重大故障事件，互联网服务中断。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-046",
+    "date": "2026-07-23",
+    "dim": "W1",
+    "severity": "P3",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊为Luna新增了两款免费游戏",
+    "quote": "亚马逊为Luna新增了两款免费游戏",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ybmJMSmgxdHplZUwxWTNiVTgtRGNjam41c1pyZzZOeE1SSHVESUh2RGhLZG9Md1hVa3ZsWUtseHY2NEpIVjEwU3JNWVYtbzA5MXhtOUJwc3BsaDZhaWhVajhB?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):Luna游戏服务内容更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-22-amazon-047",
+    "date": "2026-07-22",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊2026年第二季度财报电话会议",
+    "quote": "亚马逊2026年第二季度财报电话会议",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWjBQcWN0MGxWWFRkRzBMcnJ2V1BJV3lvMExWdnJmYXRxbWptVjJoTXFyajZwYjRncldkb2hNa18zNHM1REotclJEOFJVY1FWS29wcFF0anJtZkhUTGlBdEVEaWUtX0ZaVmRpdkVXY21JemRZcmJzdlE3TWhFaExnTEpkY01FTFBuOGNMNWw3by1YdmlXNklvUWdiVDVmUQ?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):财报电话会议，重要财务信息披露。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-048",
+    "date": "2026-07-23",
+    "dim": "W6",
+    "severity": "P0",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "市场传闻：亚马逊因涉嫌受到中国影响而正接受美国参议院委员会调查",
+    "quote": "市场传闻：亚马逊因涉嫌受到中国影响而正接受美国参议院委员会调查",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdXduNkJ1S2hWUy11RE1IRGZQZkVmY1M5Q2hmcklsendYMmRudjlzc2JFS0FPYVEzRF9RVWZnTHd3dXV5TXNsSVhDdmxYYWNaTFdkV0pNc0Y5S3BEQjJJWjJIUzZOMGVndzVFOTdiMUdBa1NZdE5UdlJGMVI2ck9TQzRSUTJsbzNFM29uMlk2RlJXYllKb1plUHhoaTJKejVCdENYVmItQmJzeVdlRGNNVWNrS1NYQQ?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊遭美国参议院调查，涉及国家安全问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-amazon-049",
+    "date": "2026-07-24",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊AWD登陆西欧！本地库存补货体系覆盖英德法意西五国",
+    "quote": "亚马逊AWD登陆西欧！本地库存补货体系覆盖英德法意西五国",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NWndPUjhZV21LYWM3LVNWSWE4VUlucGUxUFl1ZEhGc3B6ZmR0Y2NDX05kclhQay01cXd1N2dPMklUb05McDRPNzcwQlZLUXA3NkE?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊物流体系扩展至西欧五国。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-24-amazon-050",
+    "date": "2026-07-24",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Amazon Games负责人确认《Tomb Raider: Catalyst》延期至2028年",
+    "quote": "Amazon Games负责人确认《Tomb Raider: Catalyst》延期至2028年",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5tNHRIdXlfWnFiWjAzNjRGX3NDOVV6TV9RemJxQlVkQnhaVDh3LUU3X1pfR21wS2pWdEpkOU5ySlo1YzRwbW5NSkZmckNuQ0VucUZmZFRhem5FZ0NFVXVjSTdsekk?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Amazon Games旗舰游戏延期至2028年。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-23-amazon-051",
+    "date": "2026-07-23",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亞馬遜再度裁員 通用人工智慧部門縮編",
+    "quote": "亞馬遜再度裁員 通用人工智慧部門縮編",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUTQ3VnpSSnZjdHJBbnhGWUNjcWRacnFPX0hnUDRwcDExN1BRbUVPVFJuZ1FMeWNhZmdTNDNvdzl0MXZYT1dpQkRsbjdYMVhDU2dnSjMzcUNxS2dRdTIzWUVuLUo2OEE2ZHQ1eDBXYTBlRGc4RDltU0FCTnd4YWtXcXBDUXJaOTTSAWdBVV95cUxNdlNnZWN5ZkhaTlMxMUhuTWx3bW16b0JTZ2Q1WDlQWEhsdmdlNmpnTjVEeWpFTzNhOHJLYnVodWpFX05oX18tUmlabXV0WFJHbDRQUTJKOTNFZFdOQXVjZktDQmxBdlRR?oc=5",
+    "fetched_at": "2026-07-25T05:25:37Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊通用AI部门裁员，涉及战略调整和组织变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-27-amazon-052",
+    "date": "2026-07-27",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "How Amazon Leo plans to connect mobile devices from space",
+    "quote": "How Amazon Leo plans to connect mobile devices from space",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNajdxUy1zYmtPMHN6ZU5UQVlIc0VZckkwdU4ySVVFakY0QUItTmdCeFRESmxXejVCdzJwbGpKSEtLRGpTQmtmUVNkN19vOVkzcXg2eUY5emNweVg3SWpOZVVIOWo5TDFRcmxTdUZJVWhPSzUycTdOTFdNMjlyRnRGRlVqYzVwd09LRUt1ZWpVZzEzRFJxMENOWVdfNEVRckl6?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):亚马逊官方发布Amazon Leo卫星连接计划，新产品战略公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-amazon-053",
+    "date": "2026-07-28",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "海豚社电商资讯：印度放宽电商投资规则 亚马逊出口业务迎来新机遇",
+    "quote": "海豚社电商资讯：印度放宽电商投资规则 亚马逊出口业务迎来新机遇",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8xdmczVWJjMVdyXzdfT0l1M2RSZzZjMVgzMFA0Q1hWS01xaUVaeG1xSFBjTjZleTlLaDlvY0ViY25HejBKRUFBbExVUk5fUGhsdUtUWWdEbDB0YXly?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):印度电商政策变化利好亚马逊出口业务，市场机遇。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-amazon-054",
+    "date": "2026-07-28",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊正式为 Leo 递交设备直连申请，计划建设超 5000 卫星大型网络",
+    "quote": "亚马逊正式为 Leo 递交设备直连申请，计划建设超 5000 卫星大型网络",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BSnpEOF9Hd3I3bi1kelpqdkYtNmFuMDJ0aWhWWEljdGhxU1VaWHRZcVJLRlJBSHpQT1hobHJkSlEwLXFYN1J1WlVPYnM0T252UE1ZM1lsc3lsR0dnSWNyckdUR1NjWTg4SkM2RDRTeDR2c2RHSmVLVWU1SmlhcDA?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊卫星网络项目重大进展，涉及战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-amazon-055",
+    "date": "2026-07-28",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "14点聊电商：亚马逊在英国拓展Amazon Now服务配送最快30分钟达- 栏目",
+    "quote": "14点聊电商：亚马逊在英国拓展Amazon Now服务配送最快30分钟达- 栏目",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9URER2OVF0WjdzcUgtemNjYmVFdUptN1V4Wi1aeEhveXRyZXQzNm92ano3N2Y4MGxiSmZjS3k2bGdCY0tnUnc?oc=5",
+    "fetched_at": "2026-07-29T05:32:50Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):英国快递服务扩展，常规业务拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-29-amazon-056",
+    "date": "2026-07-29",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊儿童沙子商品石棉测试报告+DV验证",
+    "quote": "亚马逊儿童沙子商品石棉测试报告+DV验证",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1NdE1HMG5DVHNSRmVnMW5BNGxzU016WUMwZFBsV1hMNkNHTWVLaHQ1T1hjM3JhUFJPZjNicDFzWm1DaG8zamtPYm1adTZFbjVObW5sYWliMlJFWGt3?oc=5",
+    "fetched_at": "2026-07-30T05:20:16Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):产品安全问题，石棉检测涉及消费者健康风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-amazon-057",
+    "date": "2026-07-28",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊为Leo递交设备直连申请，计划建设超5000卫星大型网络",
+    "quote": "亚马逊为Leo递交设备直连申请，计划建设超5000卫星大型网络",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxON0ZPR01PakdnVU9QWTBFNkNTUTFWSk9rM1p6bDU2Q0ZsX3NRWGhDSG9pcnUxRVdJdjJpdlRBZndDdmIzWElwbmFFOEtoUzQtVXo4MkpyZDBNeXFXMVBFMkFOOHo1NHNELU5McjJZWFpDOWtiSUlRNmI4YWppYnBuTXZ4Y2lDQ05lSmlLN2VzR1p3VFJJdnRZejhQQzJOWHdzaE1iSFRtQlNUVXFpZGdjUi1xU0xjZnVhZ05sTEdqM1g4c2cxMmdRb0VENndDMHhPREV3X0JlZUxQU2xkTEo4RHFuVzI0UmNjMVZ6RWtrVEhubGpoTUoxYWRvOW9McGN6c1h1WWJrWWpYbjRqX2F2OUg2QTRxX2xBWDM2eV9vb3NrQXpFdm5OQ1VCLVBzVTRXZW95UWJTTDBSeTUzSUtldElVa2hjY2s?oc=5",
+    "fetched_at": "2026-07-30T05:20:16Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):重大战略项目，卫星网络申请，涉及业务扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-28-amazon-058",
+    "date": "2026-07-28",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊申请发射5105颗卫星，打造手机直连太空网络，正面挑战星链",
+    "quote": "亚马逊申请发射5105颗卫星，打造手机直连太空网络，正面挑战星链",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE96WGphcUlJLVdFeHlIUzJuU283WFhJSHNzLW1yUHF5MEU3Z0FjYURJSG1rYWFNdnJHdmJyNl91XzV5VE9fYlZIT0d5TTl4WHczcG0wNWF4NTI1RUpM?oc=5",
+    "fetched_at": "2026-07-30T05:20:16Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):重大战略项目，卫星网络申请，与星链竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-30-amazon-059",
+    "date": "2026-07-30",
+    "dim": "W3",
+    "severity": "P0",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Amazon.com Announces Second Quarter Results",
+    "quote": "Amazon.com Announces Second Quarter Results",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZExYaC1BN1dHSmNVeXVxYjdmTVB1Mk9zQTkta2hBZUJKc2FuTWhmNmdPRngzcFF3MUtNc1U4ODBEc2wxYmVoVWZIemI1c1E1elh5OGs2N2RhUHZzdnN6S3RNUDlsYmZSQWpsdWgtSlVrRm9xWkVsZ2RhQ3pxbjRWeGdqMlJmM1g3WUZacmU5U0xVSkdpQklvRHdyU1JwWkhySEN0NW0xOWdabFZ5eFRn?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方财报公告，关键数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-amazon-060",
+    "date": "2026-07-31",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Q2 Earnings: Andy Jassy on what's driving Amazon Ads growth",
+    "quote": "Q2 Earnings: Andy Jassy on what's driving Amazon Ads growth",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVHhqUkpST3dWa0hQZk5zRHBJMHJEOFNTYy1HMDN5VFVaa1hiSjFOWVdiajNhcDNBcnpPTU05RlVjdzBaNVotMldFV3FNc3NXcEJMSmNZT2xOQWZVSDhjWXg4UHdEak00Zlk3Nk5oZVJHN1VaVHFiMlNXbzZ6anpMMXFNMF9NM3ZBbml4S2NUMXRPdjBOcGZ3LTdGeG1HX0ljUnlPVA?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方财报解读，Ads业务增长亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-amazon-061",
+    "date": "2026-07-31",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Q2 Earnings: Andy Jassy on why AWS is booming and what it means for customers",
+    "quote": "Q2 Earnings: Andy Jassy on why AWS is booming and what it means for customers",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTTVGLThGNktqWXFGVUhUanRuUE1XYTd4bk5DWHludWFyU2RNWnBjd0ZJTlpYd0VOTjVrZnFhWU1xcElQV0ttNnNvTnM2b05Bdk5HWGg5ZmpEM210bEpVbGtiUE5UckxQYUJ0SGRtTUMzcTlweVpHSlB0bUNLVnBSNFFfbGFRQmhXZkxwLXpwX05KSW9rQ01RNXU1VndxWm53LVdXb1Vn?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方财报解读，AWS增长核心业务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-amazon-062",
+    "date": "2026-07-31",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Q2 Earnings: Andy Jassy on Amazon Stores growth, delivery speed, and AI shopping",
+    "quote": "Q2 Earnings: Andy Jassy on Amazon Stores growth, delivery speed, and AI shopping",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa3RkVTZ3QWl3QzZMSGdsdmp2ZGpiX1FjMElOUnViUmVOUXFnbzhYODEzNF94MnZLOGlaeEt5UVVtdE5LSzBrU1pLVEkxUEQxVll4Z1pIcXBhbmNjSDhWWEpZbEczWk9MY3lYSjFjVkJVQVJLaHVkb1laaGJ1cWNTTDZ0a1QwbTdSeGszaURKYmtjbWpYRWVsVjBYdFJsM2theFlEUmFaNE9VUWs2eWY0?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方财报解读，多业务线增长亮点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-amazon-063",
+    "date": "2026-07-31",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "How Amazon became one of the world’s top chip companies in a decade",
+    "quote": "How Amazon became one of the world’s top chip companies in a decade",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9oTTMtVXpHbmZ6ZnFKeWhnYUM3eVM2eGtpTmFrU293cGUtV09yNGNPU2RnczYyMXI1c1I4aktfU1pTRURWTGRNVk1CdUQ2RzhFT1NPN21QQWJ5b3lXamE1T09weF94ejAycXN0TzZyLWp2YUpDRUxiYQ?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方芯片战略成就报道，核心竞争力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-01-amazon-064",
+    "date": "2026-08-01",
+    "dim": "W1",
+    "severity": "P0",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊提前兑现对 OpenAI 投资 500 亿美元承诺，当前持股约 5%",
+    "quote": "亚马逊提前兑现对 OpenAI 投资 500 亿美元承诺，当前持股约 5%",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPdVp4OWdGZ2JEZXhzaHhJMnhQalFfbUVpbnNmSEdXXzd2ajBUakVnSVZhUmRhT2xCZkhfSFhkS20zZ1pzWjUxRk1ZNURPVVJfMGEzQ2U2LW5sNWdNQ0xvMGh0UWdrVVdMVDZHSzFadHpXQWp4MldiMTJaWDh6Y3ZDazVFS0hubnpmdnh2Uk1KV2tqTFpLRTc2Y2pOV0ROeG1nTjJ3R2t5MzhrWlduZlFjZmNwWFdrNUctOG0wckQzSzVLSEhKaFR5UENmWTdzMWtRR0p3SlU1RENVMHIybWxES0NSblAzREFnQ0EyUHFFaEpNdUtXSzdyTTZucVdQcXdEbGRSVG9MV1oySklOcmcxOGJlTzZuOGlkTkJjemVzSkhqbnZKeWVvaEJzWU5NX2kxalE?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):重大投资承诺兑现，融资事件明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-30-amazon-065",
+    "date": "2026-07-30",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "亚马逊大涨！AWS以37%的超预期增速回应AI烧钱质疑，市场无视现金流转负、资本开支上调｜财报见闻",
+    "quote": "亚马逊大涨！AWS以37%的超预期增速回应AI烧钱质疑，市场无视现金流转负、资本开支上调｜财报见闻",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80NHRDUUdHTHdtYmVzbVk4VlFvRFF6YXlmdEpNX2NXRmlCY2Y0Y1JkY3pXYVJVRlZNMnFuX0R3eFVlNk1zclVnZmNncF9xM0xfMFZj?oc=5",
+    "fetched_at": "2026-08-01T05:37:33Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):财报关键数字，AWS增速与资本开支矛盾。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-amazon-066",
+    "date": "2026-07-31",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊云科技CEO Matt Garman：支持并签署开放权重宣言",
+    "quote": "亚马逊云科技CEO Matt Garman：支持并签署开放权重宣言",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE54R0hxNm5OeloxUEVnVHNPYi13RldkSWFMOUFPVzFTMVhTV1psNW9sejlscGtZYkFMcHNCTDZtdVNLZmNhUFdaX3JVaTNTMnE4anVJYzNlRUVaTXFM?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):CEO支持开放权重宣言，体现AI政策立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-amazon-067",
+    "date": "2026-07-31",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Amazon Bedrock GPT-5.6大降价，2折起售！",
+    "quote": "Amazon Bedrock GPT-5.6大降价，2折起售！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5IWHdBdWJVYUpDSjRGaGhxdHNJSUl3R0RiVVNnSjNoTU5uOWtNRkdGaW1FdmpXcTROTlp5bU1ZQWhnZUZTUGRheU1nMl96Mjh2bzdlLXBHQnYya1pJ?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):Bedrock产品大幅降价，竞争策略调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-amazon-068",
+    "date": "2026-07-31",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊赢麻了！靠Anthropic赚3600亿，盘后大涨10%",
+    "quote": "亚马逊赢麻了！靠Anthropic赚3600亿，盘后大涨10%",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBlSlFlR3R0M3Y5N3BfMXZYWDN1aVhueTZ4YXdlNmR6NE1WUWFfQWZ3Y1RJY2N0SDF2LVE2eThoNVlVT1ljN1pzTkItdkNES19YR1RjdlZKZnEtU3Rm?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):Anthropic投资收益显著，股价反应强烈，需验证具体数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-01-amazon-069",
+    "date": "2026-08-01",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "算力缺口或持续至2028年！亚马逊财报会实录：云服务与自研芯片双线爆发",
+    "quote": "算力缺口或持续至2028年！亚马逊财报会实录：云服务与自研芯片双线爆发",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1XVG1FR3hmSHBBRGlGNWxWWEJ6cDRlUXdOLVNjdGtIT21iUUhCQXJXRjN3aFZfZlVhTkg5ckFxLTdsRE90ZmZFMA?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):财报会披露算力缺口预期与云服务增长，战略信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-31-amazon-070",
+    "date": "2026-07-31",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "云订单近五千亿，目标万亿营收！全栈AI让亚马逊云科技收获红利",
+    "quote": "云订单近五千亿，目标万亿营收！全栈AI让亚马逊云科技收获红利",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUnh5TzRxQVVvQ09OTGozZ2hPMzRJUFBOSFJ3SzlEMWlieWtNVi1MRXFvZE5kbDhLVXQ3ZzFtQWJYT3BLQno0MXNOZ0VmMGx3YThZcnA5RnhSaThMWjYyM1VkM01IRzBuRDlKSjBQNExWQXk2RmJUU09zd3ktZDZOclVackxJbzZibFFiSkl3?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "signal",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):云订单规模与营收目标披露，业务增长关键指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-01-amazon-071",
+    "date": "2026-08-01",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊云科技推出Amazon GameLift Streams助力开发者实现游戏全平台跨设备串流",
+    "quote": "亚马逊云科技推出Amazon GameLift Streams助力开发者实现游戏全平台跨设备串流",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1McFF2QzV0cjNrZkdIbUdERVV4Y0pHck5NcnFLVDkwczdwVXRtR3VCVS1DWmtaalVnYVlFcFZVLUd6ODRtcWgyTE10dUpqdTNxNGc?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AWS新产品功能发布，属于常规产品迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-07-30-amazon-072",
+    "date": "2026-07-30",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "2024亚马逊严打跟卖政策落地 平台跟卖乱象潮水消退 跨境电商卖家合规运营成主流趋势",
+    "quote": "2024亚马逊严打跟卖政策落地 平台跟卖乱象潮水消退 跨境电商卖家合规运营成主流趋势",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9uU0RNdm1BaUJNTHpsNnRacFVVcGQ1SlZjdjZScUlrMURGcVQ1Uy1ZbkNXMXRIUDdtOEJ6WTdDeHVQWUxLaTNlc3NneGVhOENhbUZV?oc=5",
+    "fetched_at": "2026-08-02T05:38:37Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):平台政策调整，影响卖家生态，属于运营策略事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-03-amazon-073",
+    "date": "2026-08-03",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "FedEx、UPS疯狂涨价，亚马逊和马士基却在低价抢人，美国物流变天了？",
+    "quote": "FedEx、UPS疯狂涨价，亚马逊和马士基却在低价抢人，美国物流变天了？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBsY2lYbVo4bGZFdnB0Z2ZMbDlURGxvVTBsTnNaOGVfSmh4d2o0QnJuQllZTm5CWHZmYVlFUUFNeUVTNm9hTjg2aGVlU3gtSzV2Z0RrUkRWX1dsRmpp?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):亚马逊物流策略调整，涉及竞争动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-amazon-074",
+    "date": "2026-08-05",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "上诉法院推翻原裁决，Perplexity智能体重获亚马逊电商访问许可",
+    "quote": "上诉法院推翻原裁决，Perplexity智能体重获亚马逊电商访问许可",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNDhPSERUQnNQaWk0VkJfSzdpYzh3dzZ3S0ZRc2RGYldhcTNON3d6LVJBZEl4V3JPM21lTWc5TVFGdTdJX3NURVFoUUpZa0E5b1F3RUpRVUVPZzFLZy1CZ3ZvekhRbGtOTUw5Ym5DNEdzZ2JRVV9wRnR2YjZ0ai1ka25PLTBYMlA5?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):法院裁决推翻，Perplexity获亚马逊访问权，涉及监管/法律。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-amazon-075",
+    "date": "2026-08-05",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊2026 Q1财报前瞻：AWS与广告双引擎发力，能否打消市场疑虑？",
+    "quote": "亚马逊2026 Q1财报前瞻：AWS与广告双引擎发力，能否打消市场疑虑？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVnIwaXlyQ1pWbERONHlLUzJzZFJfR0thMXhaSm5fR3h0bjRZOFp5OGJWRnVqNEV1MGJfMHgwdXFBN1ZzcEd4NEZib0xwbGR6aXAtS3Q5dC1ZVXBlSURHX1BDeW9aODVBclZ3aV9QQW1SUDhucFZKQjRQeHV6VmxtWklHTV9raHdyNFlGZGZFVkZ3bDhXUDZsMGVjdlQ2R2F2anFhR2pjLU9zaTNTQ2p6alJXVm1JQWZFcTRn?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):财报前瞻分析，涉及AWS与广告业务预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-amazon-076",
+    "date": "2026-08-04",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊市值首次突破3万亿美元",
+    "quote": "亚马逊市值首次突破3万亿美元",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE80VG5udnJJU0Z0Y2V1VnpzYTdRSmVob2NnOHZwSFRheU5SSG80ZjhFM0ktNUdfUnZuVnJrN3JBN2sxRUVKMHNxSGtocENDUdIBTEFVX3lxTFB4Yk50QlY3VFE0OUFXQUhMc3hxZnkxdzcyZHc2Sl9uVmtIQmdLeGMtYUVmNjgtV0Ixb3FMS2kwdG5jRDdwWkxoOGJPZ1o?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):市值里程碑突破，重要财务指标。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-amazon-077",
+    "date": "2026-08-04",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊Prime Video成为全球首个支持HDR10+ ADVANCED的流媒体",
+    "quote": "亚马逊Prime Video成为全球首个支持HDR10+ ADVANCED的流媒体",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1wTUpaSFBLSFNhbDFxNEg3bWtFMTlTSG1PandMSUQ4TjB0emVjd2FTdWJwV1RTQ2FaWHU2d015RlNTb2Y0UmNJYzJWWUlHbC0yc3lqbXpyWDJ0Y0diVG1oWTJ2R2l4UQ?oc=5",
+    "fetched_at": "2026-08-05T05:26:22Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Prime Video技术突破，流媒体竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-amazon-078",
+    "date": "2026-08-04",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Amazon EKS 新增升级后 7 天内回滚 Kubernetes 版本的功能",
+    "quote": "Amazon EKS 新增升级后 7 天内回滚 Kubernetes 版本的功能",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9RT1dXeE9OR1JpeHZqQ2NGNmRzajdSSDYxQjdkRm1pcHp2dGdrZG0wT1MzbzlBOUlWQmthMHdJV1pmamVxZjJGMHI4MjYtVTJ6UlFwbWVueTU5TG90MVE?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):EKS产品功能更新，技术进展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-amazon-079",
+    "date": "2026-08-04",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊试图阻止Perplex ity的Comet Agent，但遭第九巡回上诉法院驳回",
+    "quote": "亚马逊试图阻止Perplex ity的Comet Agent，但遭第九巡回上诉法院驳回",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ2pqUG0zY285YmExdlczZlNpTFFBT2k0V2xqVndiaWFGQ1gta3J2OGVRY21yRjE1WFQzSEg1UnFocjduV2F1bEIzaHNCVHRsamNkeTVCY2pHYmh6VlVMZ1lfNDVySW5JN0NZbVoxUTNfT25KaHlPZE5LSnVWYWlxakU0Rkx6WWhhOGZNal9PUlBnWTNTWmtxSlRNMzUzS0RqclZnZA?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):法律诉讼被驳回，涉及品牌权益争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-amazon-080",
+    "date": "2026-08-04",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊 Prime Video 成为全球首个支持 HDR10+ ADVANCED 的流媒体服务",
+    "quote": "亚马逊 Prime Video 成为全球首个支持 HDR10+ ADVANCED 的流媒体服务",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1samZ5dE5zUUlKYXhLUlRhNXhnVUZaTnBWWDVXY1llVllHU0sxU1NPbXNaaVRESnRBalR0Q3V3VWNpQVVIYUtRMThxTmU4M24zTE9iTW96ZEVqRTZnclpiOTFxVVVvUjJBSmFQaUJsSzEzbUhLaTdjS0RXQ0NiYTg?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Prime Video技术功能首发，产品竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-04-amazon-081",
+    "date": "2026-08-04",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊市值首次突破3万亿美元 财报后股价再创新高",
+    "quote": "亚马逊市值首次突破3万亿美元 财报后股价再创新高",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4bXRHZXo1Yk52V19WVEVIaXk4N2VWaGxvd1hDZnh0OTJSSl8tMUJkbDl5angtTnowZXc3MlBCQ0M4dHBEeXhnMkxuamxyWG5mQlY3VTJlSnlqWFRZODRIc2VHVUM2WWh0Z24wMXlIUmNsNExXelFNdg?oc=5",
+    "fetched_at": "2026-08-06T05:28:29Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):市值里程碑突破，重要财务指标公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-06-amazon-082",
+    "date": "2026-08-06",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Amazon Pharmacy now delivers GLP-1 medications to eligible Medicare patients for $50 a month",
+    "quote": "Amazon Pharmacy now delivers GLP-1 medications to eligible Medicare patients for $50 a month",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5oZ3huT3Ezc0RTbFJjeGNySWFZRTJkcGZLRHRqXzVaT2xNakVzQVNJXzg3TnBxekRJWHVEV2U1UzZWN21ReElROS1fSlNtUGNIRFpSQUVXbm84S19nN0VfMnYxamUtT1JFck1hMzJOQWQ4YWEzckRUbi1n?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):Amazon Pharmacy新服务上线，业务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-amazon-083",
+    "date": "2026-08-05",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "欧洲“维修权”正式影响亚马逊卖家：退款逻辑改变，售后体系需要重新设计",
+    "quote": "欧洲“维修权”正式影响亚马逊卖家：退款逻辑改变，售后体系需要重新设计",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBsNURVY09aOUJRaG9rSmxvUGZWSEEzblZENmFSYkQtaXNRcnpHYW5Rc1NOUFE4RHBuZVlqdU5HbnVPWTAzV1ZRSkZ0eGtabWpsNmJxYS1UbUVfY1RL?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):欧洲监管政策影响亚马逊运营规则。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-amazon-084",
+    "date": "2026-08-07",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊为Luna新增了两款免费游戏",
+    "quote": "亚马逊为Luna新增了两款免费游戏",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9IQVZNWlVUaUMyb3JTYTV2bld0R1Btekx4SzR3T0RoZkx4TExSb1NWcklzQXhGa3Q0VDFNVk94RFVoTV9nZXhzUnJ6Z1JRNVFDWm5SX2E3X19td1NjWUNabXpR?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Luna游戏服务内容更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-06-amazon-085",
+    "date": "2026-08-06",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "贝索斯拟减持逾40亿美元亚马逊股票，首批已套现3.5亿",
+    "quote": "贝索斯拟减持逾40亿美元亚马逊股票，首批已套现3.5亿",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcHFhUE1TczI0SEhqOExQZEY4MXVMczhjS09Cb3dSU2ItdEY5OG9panh1M1E3U185WHdsM3VjX29wMklSbmw5aXoyV3RPMW5wSDh1MFotWEZxVFNFTTNBWGxLV3Rqc0gwV09hWjlpRGhyNkhqdzFhVFdQQVRxVEJZNkVMYmFPbWk5TGVZQ2N5U0xQdzRFR0ZFZF9ZdVNmbE9VVWNFS2pMNzBmdXpEb3RvcTRLYUZKNFk1MXpULWQ1azY4MUho?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):贝索斯减持计划，高管资本动作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-amazon-086",
+    "date": "2026-08-05",
+    "dim": "W6",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "上诉法院推翻原裁决，Perplexity 智能体重获亚马逊电商访问法律许可",
+    "quote": "上诉法院推翻原裁决，Perplexity 智能体重获亚马逊电商访问法律许可",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SUkxpY2Z1dnNBUzJmTl93dEVKcW9hZFhZYUs5SkNsdzJPYTN4YUlobWdvOG1IQkhSYTZYU2VEZFVKVWZQNFp4ZWhtMzBPSWFpeVRWVXM5Zm9HUFliVXpib3VQWmlBc09Xcm1odXRfRXlUMExqNTNsV3B0SDhVc28?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):法律诉讼推翻，Perplexity获亚马逊访问权。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-06-amazon-087",
+    "date": "2026-08-06",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊股价创新高 贝佐斯伺机套现逾14亿",
+    "quote": "亚马逊股价创新高 贝佐斯伺机套现逾14亿",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE85WlJDVG4ybEdlY1V3R0dTakt0cVc5WFZiSlljajF6VFdBTncxclYya1pldF93b1pfbjB1b0l4aVgwRG1adFJtQ1FtcTBUQUQzbXh3b3IzdTU3Wkxyb3ZOX1pQc0hKN0lEcjZjZDdMdmNwZw?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):股价创新高、高管套现，财务信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-05-amazon-088",
+    "date": "2026-08-05",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊押注Alexa购物助手，AI电商闭环加速形成",
+    "quote": "亚马逊押注Alexa购物助手，AI电商闭环加速形成",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMmpDVkVUVXlOa1RDUFc3NmQ1alRTUnhSdHNLN3Z6Xy1LMkVYZF9YVlVpY3hNcUJzdDVMeDdMTXZUR2d6NDF3c3pRRG5sUTI4Yi1BS19hOFlYaTFWZ0Y4M21qTmlyTzU4SE4yeERGd0ZxTGlVRF9CZ0FLNmRsd29lM0RyN0NUWlBQNDZXM015NnVQR0l1OHZUV2szYnE?oc=5",
+    "fetched_at": "2026-08-07T04:33:45Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AI购物助手战略布局，电商创新方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-amazon-089",
+    "date": "2026-08-07",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Inside Amazon's first-ever drone delivery site in the UK",
+    "quote": "Inside Amazon's first-ever drone delivery site in the UK",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBlSWNfeVI3cWh1Q1NKM1VsRnl5WDZlZVE3Yk1FcHA3UUVGZnVKQVR1dUN3UGc1MkxqcmRoSThGbHJIejhrcUp4WFRmSlBXS0dmbGJ2OUlqbFhWWUU2YUxXS3EyZUxSWlR3SWtMVFNjZXVrSU85M0RkOFVObnhOUQ?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方发布亚马逊无人机配送首个英国站点,重大业务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-amazon-090",
+    "date": "2026-08-07",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "市场传闻：亚马逊AWS工程师因算力资源趋紧，面临更长的CPU服务器等待时间",
+    "quote": "市场传闻：亚马逊AWS工程师因算力资源趋紧，面临更长的CPU服务器等待时间",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc1JTaHVGeEN4dWVTSnJNTV9QbmZRbzBibVRIT0I5RC1JRERoNXppZ0pndldjVlBUdkl4MWcyOUFNTGRHTzJDWDExaWpTTDhaM29yTk83aDdxNVpqQzV3Nzk2a2gzSzU4TkJoTnZ0VlYtZFVoenBTaGhTUUt6MFZVSjRqanRjdnFJN2xnRTBPMHJtczJmYk16LVB1YkFheDFFQ1hXYzVHY0JRUQ?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):AWS算力资源紧张传闻，涉及服务能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-amazon-091",
+    "date": "2026-08-07",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊上很多产品根本不是新品，只是换了一种「人设」",
+    "quote": "亚马逊上很多产品根本不是新品，只是换了一种「人设」",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBaT1lfeWtSNmtCQVQ3RFJ5OUd3bUdpWFQ2MGpUUEZMelliMnZKbTk3UElNQmt4SmJfOXRaeW5TQU81LXg4WWJLR1BwSmY?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品虚假宣传指控，涉及商业诚信。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-amazon-092",
+    "date": "2026-08-07",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亞馬遜如何在加州悄蓋數據中心？居民開工才知情",
+    "quote": "亞馬遜如何在加州悄蓋數據中心？居民開工才知情",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1YNWNSTHBCZDNQRHE1QnhCX29kQS1NT1M3YzNEcGM0VFlOZUpkbWp0YnAwcHA3SEIwc2hWdlNYdTBVZnFady1YUkR4enVVclVzSXdrWGVOVkl4cklyNmtzVG5KS2JSdUUxRUHSAWdBVV95cUxNTG9TT1VFWDF1SEMwLVlYZTJvTVhmRXRpNWJhY0FXRnFfbFY2RFlJNzhIMTFDbTdRcTZFek50WHh3RC1WNlRPcy1PWHRGUGhXbkkxVnhpT0l6MVlvYklBSVFaTXNlN2xn?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):数据中心建设隐瞒居民，涉及透明度争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-amazon-093",
+    "date": "2026-08-07",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "LaFontaine Automotive Group 加入亚马逊汽车市场，其在密歇根州拥有40多个零售网点",
+    "quote": "LaFontaine Automotive Group 加入亚马逊汽车市场，其在密歇根州拥有40多个零售网点",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTkN2NExsbEFVOTlMSlAyTlR6MjIzQjJlVlR0aWhHN2NQWklPOGg3YTg1WkU1bm9zV2I3WGc0a2pXb2h2R3Mtdk1CLVZwU1l4WDZmdF8tTVViaUJzd0cyNEFENHJ3Z1k2ZUZMeDJ2aWt0a0VMMy04RzlnUUt0SEtXT2NrMDBOaFIwTmd1cklDV3RqcWlMUDJUYnZRQ3IteG8zLVVPY0Z2RlgxSGx2dFZpeE9sWUNrN3RLSlhmbg?oc=5",
+    "fetched_at": "2026-08-08T03:45:43Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):汽车市场新合作伙伴加入，业务扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-08-amazon-094",
+    "date": "2026-08-08",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊8月6日起关停社交媒体促销码功能- 快讯",
+    "quote": "亚马逊8月6日起关停社交媒体促销码功能- 快讯",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1uN1pjY3A0RVJ6ODhfendQSnZnQjZKSEM0RXA4OUFDeUIxME1DY09hN05TQWs0OHBIazk5ZEtVd1Nab2t5WWxaZlQzY1dlQm9nWF9jODJTY3k?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊功能关停，平台政策变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-08-amazon-095",
+    "date": "2026-08-08",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "报道称OpenAI正与亚马逊谈判，拟从亚马逊融资至少100亿美元并使用其AI芯片",
+    "quote": "报道称OpenAI正与亚马逊谈判，拟从亚马逊融资至少100亿美元并使用其AI芯片",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOXJkdGxIQk9wLUhfdU1hSXp5QzcyTGdMY29MOXA3Qm9aR0hQRTZNbVBTTlpvOUhPeEhTQ1VWRUhraE9IblBKUE1ucFRqeU1YZmlmcU1BYWllaGlhVzAwM2Fpdzg3NWhPUTA1VF81VnJxeGljcGs2aG12VnU5VUJvMENOWEZ3ZnQweE0wQnZGeEN4NDcyZGk5SF9LZ3o?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):融资谈判报道，涉及亚马逊与OpenAI合作，金额明确但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-08-amazon-096",
+    "date": "2026-08-08",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亞馬遜悄蓋數據中心 加州小鎮居民開工才知",
+    "quote": "亞馬遜悄蓋數據中心 加州小鎮居民開工才知",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QM1d3ajY2LVdSYlhtc0MtVlJGa3N3emVCMndNamZWX2lhLThWMVgweS1JZjR5Zk9yWmxFeVp0SDkwMnlRQlA1NVgwOVR5OWV1Wms0LWk2djFHVzV1ZFFzZUo5UkVBc3pkOHfSAWdBVV95cUxQbTZqWHQxRnpseDJyUjA1WlA0TERVazdablNMTWUtZHhrVGczZkhfSndUeHVLMkM5Vkx5bnd0ekFOUjJseEtrMG9HQlNrSjhSSUdSUFNKdDZaZXNrM2FrUldocjN3NFk0?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):数据中心建设引发社区争议，涉及公共关系风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-08-amazon-097",
+    "date": "2026-08-08",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊(AMZN.US)陷关税困局：保利润还是保份额?Evercore ISI预警股价承压风险",
+    "quote": "亚马逊(AMZN.US)陷关税困局：保利润还是保份额?Evercore ISI预警股价承压风险",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNk5jU1ZxUnhyVW50eGJTd2hKTmtwQy1KaW9yc1BDcFdCdTV3eXpUejZIUjBfcE5YdTRYQ09uTnhtLWhYU3R5TDE2OHBrNXFqajlpeXRINXY3N2U3d2M4b1pyX01aUjU4cFpjM0VDNFQtNE1oNnNVbGNnN3RNNElBQm9DVmlDOFc3OUlQWG53UmIxUHg0VUpXMTVn?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):关税政策对亚马逊利润影响分析，涉及经营风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-07-amazon-098",
+    "date": "2026-08-07",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "TikTok Shop美区订单使用亚马逊MCF配送，配送费立减35%！",
+    "quote": "TikTok Shop美区订单使用亚马逊MCF配送，配送费立减35%！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1zVTlUOElQTG5FTGg5SDE2Nlh6NmNFbElrQk15emd5a2RMblpyVkhHNE82NDljc3UyZExhTURkRWJMZDduY2dnMUI4ZFY?oc=5",
+    "fetched_at": "2026-08-09T03:54:21Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊物流与TikTok Shop合作，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-amazon-099",
+    "date": "2026-08-10",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Amazon's statement on a planned data center campus in Pecos County, Texas",
+    "quote": "Amazon's statement on a planned data center campus in Pecos County, Texas",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPLXRJcVRzN3VqUW5Oa05pblVJTjBUZGtuRGUtZ3N5bHczR1E3R0czNDJYdGRUUHdXeEhPQVdyUHh3VmRiMi11Rng3YW83LVh3M2VxWkQ0OW5IVUdZM0N5MENrM2JwaFl6ZHdhWkY2ems1aG5XaVYyQWw0SHdlWkVEM1V5YWRRcnFmSXNZQWlXMlB6R3lTcjA0SmhXaEtndzVvMzNz?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):亚马逊数据中心园区计划声明，重大基础设施投资项目。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-amazon-100",
+    "date": "2026-08-10",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊 WorkMail 宣布关停！官方推荐迁移至 Zoho Mail，专属一键搬家通道已开启",
+    "quote": "亚马逊 WorkMail 宣布关停！官方推荐迁移至 Zoho Mail，专属一键搬家通道已开启",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE51dzJmaE85U2Jtc3hkYmFERUxoZUdObG42YlRXNTZnU1NyWF93dVA2WDNvNUVpUVV6NHZKUEp1QXp2Nm5oWGhJS3FfX1pJbGxjWXJFTjFrTFZCdlNT?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):亚马逊关停WorkMail服务，涉及产品生命周期终止，用户迁移影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-amazon-101",
+    "date": "2026-08-10",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "诺和诺德设立亚马逊 AWS 协同创新中心，利用 AI 加速药物上市",
+    "quote": "诺和诺德设立亚马逊 AWS 协同创新中心，利用 AI 加速药物上市",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi_AtBVV95cUxNbEhFUmJhTmxkYm4yQU9xU25meFRXX2ppb1cxdjFUTF93M1V3bmFQUmItd2JhNERKNXdTOFpuZks1T2tkUTY3S1VKY21QSUJzYl9MSmVwTWg0ODduSi1qRmxGemktN0VHWlNoTVItRkdUeU1JUXpVMHo1X3FCVUM5NkZOUjV3UzFxckVlaHlKX1JUUklEdUhBQVRRQ1l6bFNYanRkWUdabUFCUV8wNDZ0VnhCSG51dVhROGQxTFhwTk1ST2NpNk1PWFF2Tnd3bGQxNzJlUnVzS01kc25VejVXSmw4ZldneTdheWZOTVY3eUYxWWE5eElNVFVxNVdrcGRKOU5MQ3c1OEhCbDVUdjFZaFBydXNaMi05WG1heEQxS28wY2lKVkRVc3ZQZGRRUGFYdTBDaEVPMDQyUVV2N3dCMnVTdzEzalY5R1QzNmZGbmtQYWpWMlA3dm1jVFYwdHUyVktORWg1V3VTNnEzNmlUSVdlanJRMnFYWEF6bkd0MlQtemMtTS1UUjJrMVNhYjA1NXAwZ09ndFVfQ1hOZHhid2dRdVFmaXFRYmhOUWJFTTZDaWVVV0NTOXF6MFN6UDRuVkZ2OW9qamM0aEpGSWN3RWctY09xTG9xS2M4U19tR1R0bW0yc3lWc2FyVDFsM1ZDSkoySE5NQnFNbEVHLTV4ZE9sYWZZemw0ZEdUeC1ETHI5dW1vZm01Mk5remJwU3MtV2xsYnM5WjQ3T1ZOVUlLTk4xWlFvYXZQTnVCQ2tDN3g1dU1naTJBcGZHYS05RWZzR3B6d2c2WFA0XzlOVkdHc0dZOU9oVVoxMUUzUE1wM1E0ZTI2UHJJYloyVDFNQm9BOWRrNkJ2VHNFd1dlZlhtUUloNV81NnJwaTB1c3NtVFdKbndndV85MlZjdl9TWU1WN0JvdFptSUJhQVNYemhGYTNLOE1BeHVSekdzNmsyTkttRkd3TlpudFVubWRoMDBzS2xwYUg4ZWxlWFpYbGFIVWc2MU1oNjh0UTFVYkJ1REl2eGtXRXhaNlVZZDEwdS00YjVaR3lUUDdqNlpRb3JsRUVZUGJ1ZUFiRFJkb3J4MDJkQmptYzJoczVVOG9OWnduTXZxd2RuY3BqRGZEcGxMdTRoWDFOMmRtNm14WXAxU1J1UTVMNHhMNFhKTHl3bERMZ2k5LUJlZThkNVpGaGNXMTQ1dVdyTGVxSWVSYVlodXNYbEhTem5sdFoydkdhYl9YaEVkM1MxV3dOTk9Yci16NF9rcS15ZDRaOThGV1FQZUNDWGpwUzZuNXdlZHk5QXZmRW56SkxVM244RTRIVDNGVGQwa0hJNnVuYmtyMzZ2SFdoSFhQal9odnZBd3FiLXFBSThWUzZGU2ZtcjR5U253czN3a05VeDBNMF9oNzZLRHVnOVBoRzZ1NGN2WUVYY0kwLUYyMjBrOUVBbjh1WklydjFSTDFBbEJoVG55X2VjazllTWhjZTdHOUJhY3hSYmRnTFpSLWRCSm5mVkI3dTBVTG9BYWVoTHBQRWhnajdGUnJGMjI2cVBpOTQ5VUx1TE1HNGs0UURhOGE5Y24xZDZjRUlzZmpNSWlJY0JjM195MHVHZ204Q0ZUcmNTcGdFbGU3SkFVNm9ja3Q5V09QcDBKSEVqVmJwbzZOSDZWX2JlUlM4ODNqSm5feVp5YnM2cXFGTS0zYUJkd3M0RWdzaGktczFzclNSd29jUmZfOXdNdS1rLXB5YWptdFNFYmY5ZzlKQmhpS3ZLYnhEYzVSM0VrSlB6R2JBYTI3bXlobHdDa0NDc3lMVmpLWXJmS01YM2Mzc0UxQzJ1OEFUZkthbll2ZXJzSEUwbUN1V1plU2NDUE1YTnlLcm5GdVBjcWx0Y3JGTURHcTNRQ2g2TldpWWhIUjJZc2laSlNzSm8yeXVmLU1aNkNCODE2b0k2UnAtWWlHYkZ5MWVtaWZZQUFvc0p5RFRFOHVPcVc3N1Y2TjZsdVpNekxlaHN5QUI1Um0xN0VwQktVaE1yeHp1U1lyMDI4VkhQeFVGZFRBaGhVWQ?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):诺和诺德与AWS建立协同创新中心，体现AWS商业拓展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-10-amazon-102",
+    "date": "2026-08-10",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "亚马逊拟在得州建设7.65吉瓦燃气电厂为AI数据中心供电",
+    "quote": "亚马逊拟在得州建设7.65吉瓦燃气电厂为AI数据中心供电",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1IdW5VY2ZUenpRbGl2cS1NcThET21POUxZVzRRRVNLdS13WEhjWjhYU2FFMk5nNThBaDhpU1U1aTBGR1VoM0tTV1dTYnpoNXZIRTBfWHUyNW9iWE0?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊在得州建燃气电厂供AI数据中心，涉及基础设施投资与能源战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-amazon-103",
+    "date": "2026-08-09",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊二季度持仓曝光： $AMZN 正在押注AI算力、核能与下一代交通亚马逊刚刚更新了截至第二季度末的股票投资组合。...",
+    "quote": "亚马逊二季度持仓曝光： $AMZN 正在押注AI算力、核能与下一代交通亚马逊刚刚更新了截至第二季度末的股票投资组合。...",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNU1FuSG1CYVhnWGVDMUJYWjFnY203U3JhcV9STjU3X1F5dUthdVVIRTZaandSb29sQzc2Wloxd0ZrSDR5QjNQTk9Hbk95ek5UUnNJVjNPVC1aeFk1M1NNOUw0OC1VckVFUGpjNEo2cjhRenc1LU1CaFBXbmkxdlU1MXRmaDd0MFRUaWVHalJzNUNWVEZkUVFQN1ZqcXFySEgxREtnZ00tVjM3NVV6MGVWWkhZSVhEZ3k4Yy1N?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):亚马逊二季度投资组合曝光，显示AI算力与能源战略布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-09-amazon-104",
+    "date": "2026-08-09",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "美国亚马逊天然气电厂获准每年排放3300万吨二氧化碳",
+    "quote": "美国亚马逊天然气电厂获准每年排放3300万吨二氧化碳",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE01Nl9TSGJ5Qms0aVpITEg2SjFWbU1MaHoxRk9BcDVZN25hOS1ZTzByVDVsX3RqVmladFhLQ1RBcW1PbnIwRFl4X3FSZnlmZm9rRHFwbHQwVTY?oc=5",
+    "fetched_at": "2026-08-11T03:56:21Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊天然气电厂获准排放许可，涉及环保与监管。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-amazon-105",
+    "date": "2026-08-11",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "马姆达尼对阵亚马逊：纽约新法案拟叫停快递员外包模式",
+    "quote": "马姆达尼对阵亚马逊：纽约新法案拟叫停快递员外包模式",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTEpJN2wybzV4aGZ0LW1rMmFqTXItSmIyOVlYWGRVLWlKR0FfWmNLYXNhUVFXQ3o0RHUtYm9tYk02amROZ0RpTzQ1bjh2VTJJanFaNFJMalptc3B5UkQ3RmZyUkREX19icFdCS1U1MVZyRl9xbkJWakdLMk5wQWZCY3ljdUpBZV95eUxGcHNlWkhLYlkxWDRjVlZXS21yTHEydFBFc3BQcjFuZw?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):纽约法案拟禁亚马逊快递员外包模式,监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-amazon-106",
+    "date": "2026-08-11",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "Amazon英国站卖家注意：你的英国公司董事必须完成这项认证",
+    "quote": "Amazon英国站卖家注意：你的英国公司董事必须完成这项认证",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4wbndXbVF0RDFfcXJudDRUWVNLS0xJbEo1bWxmbDc0a2FTQVJSQnY2UlRRc2FYOU9SQk5HekM0b0tITVN0a3hxcFJRY2s?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊英国站卖家合规要求,平台政策更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-amazon-107",
+    "date": "2026-08-11",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "流量之后，出海电商平台开始争夺什么？",
+    "quote": "流量之后，出海电商平台开始争夺什么？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBydWstOE9rM0tfNkp4MTJqSkZack1NdUxXX0ZTLXItS3hYajh2SkhMWmpINUJZamVmRWRESlUzZm5ZUVRadmd0VlFpeVJITzA?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):出海电商平台竞争分析,涉及亚马逊战略定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-amazon-108",
+    "date": "2026-08-11",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "9月3日前必须完成！亚马逊强制执行，未合规费用增加53%！",
+    "quote": "9月3日前必须完成！亚马逊强制执行，未合规费用增加53%！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB0akZtN0NBdzRsZDVmamFvTVk4czVhZmEyTmdoUUZacVotOXBOUHRTTjhlV3hRZWh0RzB2cXpFb1FFdm5Va3c1V0Y4aHk?oc=5",
+    "fetched_at": "2026-08-12T04:18:45Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):亚马逊政策变更，涉及卖家合规成本增加，但缺乏官方确认细节。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-amazon-109",
+    "date": "2026-08-12",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "How Amazon's AI shopping assistant makes hundreds of millions of products feel personal",
+    "quote": "How Amazon's AI shopping assistant makes hundreds of millions of products feel personal",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNekpCWmhmYlJBeHNIWk9JVUphMHNYVjlVR01iaHozNExiTXZDM3pOUk0zRjNzWmo2N3Vrek52clFRQzZuZzRocEgzTkVMTTBTQ3hHOHBhSmE4cG1OVFlXbVpBMlhYc19MMVBDazROeFJhSWtFWlE4QVpyYXN3WXFFdWljNDRmSDFjVkVaOHhHSEU?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方发布AI购物助手功能，产品创新宣传。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-amazon-110",
+    "date": "2026-08-12",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "重磅！2026.7.1 亚马逊三大新政同步落地，欧美加卖家立刻自查整改 附整改建议",
+    "quote": "重磅！2026.7.1 亚马逊三大新政同步落地，欧美加卖家立刻自查整改 附整改建议",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrQVFUd3J5dThDYXNGQ3JDTDFWY0xUemFkeUIwOEM3TUNUd09pSHd2V3NpcTZRR2RVR2FzMkp0cE5ycV9SSS1Kb2RJdDB5NjZROThTdVBEaXhuMk96?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):亚马逊新政策落地，影响卖家，具舆情热度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-amazon-111",
+    "date": "2026-08-13",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊将交还游戏《命运方舟》《王权与自由》西方发行运营权",
+    "quote": "亚马逊将交还游戏《命运方舟》《王权与自由》西方发行运营权",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHWEYzQTdZSXhSdUpHVnB2SlRUeFFEX0dLdkgySk5SZy1wV0Jfb2s0YU1QSXpIcHo3Z2F6enlPLV9sbjVzV1MzbktCc2hSUGdWdVVJcHVNT1QwOFltMUVVZWE2UVpWSmVDVjIwZDhGYUw?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):游戏发行权交还，业务调整信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-amazon-112",
+    "date": "2026-08-12",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊下重手，“跟卖”潮水消退",
+    "quote": "亚马逊下重手，“跟卖”潮水消退",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9LRXp2MkszMkJDQlQtVjEyQ3ZfR2Q0a1dtR1B6UHNFdHVBQnBULWhjX29mcEtkM0Jtc2hraFg4TDVhQTBDSGNZS21JbXk?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):打击跟卖行为，平台治理举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-amazon-113",
+    "date": "2026-08-12",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Amazon Is Spending $220 Billion This Year. The AWS Numbers Suggest It’s Worth It.",
+    "quote": "Amazon Is Spending $220 Billion This Year. The AWS Numbers Suggest It’s Worth It.",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR3p4QmN2Xy1JTmVoVzBHdkZiUU1FWkFVRjBiek05MjJRdkNPblItWFo1Wm9aYUdTcVB6dDFfWDVxQTNnNUgxaFFwelNjWWMxQ0NpZzVrcmxtMmpkZlROcWM5OGVFbU80SG5Zc2FYcUZQV3RnTk9jZkFhSFpPYU1qNkIycGVsRzM2LXlhTmpCMTU0a2Z4OFBMQ2VrdXpkM0VkeVc4cXdGQmdYQQ?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AWS投资规模与ROI分析，财务信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-amazon-114",
+    "date": "2026-08-12",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊自动化推理团队十年：将数学验证从学术研究带入生产系统",
+    "quote": "亚马逊自动化推理团队十年：将数学验证从学术研究带入生产系统",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzcDh2RzJ2RnhQSFd0bTZpWGZUejBQQUdLa0E4TVJHZklyQzRNM3hXWTQtbU05cEFtV3lwZ0xQYnBsZ3lxd3pueExTY1JzdVV4QUE?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):自动化推理技术十年成果，技术创新叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-amazon-115",
+    "date": "2026-08-11",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Amazon DynamoDB现已推出实时向量搜索功能",
+    "quote": "Amazon DynamoDB现已推出实时向量搜索功能",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rNS1JNTNPbmZZWGRHeU9wdTFUUnlhZFp5NHVwU2pTbFJZYTQwYjllU3ZXcEF1T212aG5ZZ1cyVGVVQ2lUMlpjNGhIbEtGVl90U1ljNkY3eE1uS1E?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):DynamoDB新功能发布，产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-amazon-116",
+    "date": "2026-08-12",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "“报告撰写时间3小时→5分钟”……AWS推出办公人工智能助手“亚马逊Quick”",
+    "quote": "“报告撰写时间3小时→5分钟”……AWS推出办公人工智能助手“亚马逊Quick”",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FX0RQcjE2RkwtN3lYLU5tT3dlNkQ0NWRJbU0yemptbXJiUUlKeHZRM3lVV2U2dlV1MU5ETEZhYnBGeWg3UWNibWpkMVhEdXBkRHg4TGt4dGY2dkdOZ2UwbjBKa3U?oc=5",
+    "fetched_at": "2026-08-13T04:21:57Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AWS推出办公AI助手，产品创新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-amazon-117",
+    "date": "2026-08-11",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊 FBM 新规来了！备货时间延长至 2 天，自发货还能这样做 Deal",
+    "quote": "亚马逊 FBM 新规来了！备货时间延长至 2 天，自发货还能这样做 Deal",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXZzZBVVlGamtEN1d3QlA5VDVKdGFtdmVId3VQMmY4TDV2X0E2S2plWFdLN0VlUFVMS1hzXzd4ZEYwdFVFaEcyS2cwS185YlJSbXBJYkliOXkzdDcz?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):FBM政策调整，卖家规则变更，影响商户运营。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-amazon-118",
+    "date": "2026-08-13",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊上线原生向量搜索，定义AI时代的数据库",
+    "quote": "亚马逊上线原生向量搜索，定义AI时代的数据库",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBxbExkNnBJWnJ6djB6ZkJJMUtuMndUazcwY2gybHBuOXRVYlZ1OVA4eV9SR3g1bW5SenR2UlZDeXlsdzFFdWtKbUpqNUM2bVVEYzVkTXVlRVRTOVJZ?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):数据库新功能发布，AI能力集成，产品创新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-amazon-119",
+    "date": "2026-08-13",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "甲骨文与亚马逊云服务深化合作，加速甲骨文数据库迁移",
+    "quote": "甲骨文与亚马逊云服务深化合作，加速甲骨文数据库迁移",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVmEtX09ibWR4MlhuZ3lJQTFoM0FaNVpxaWlSMVNGQWVXV3dhSjZoMkdvRmRzaVBuN3hGYXA3UUIwMTBSb0VQekgtMEt1TVh6OWRNTEQwbEFKQ1RmbTBqbklIcGtKVDJydWJlZDN4cUJWajBpNExYWjlSYWFfS2MxYnlYRktQZ2ZZWUs4YzhTeElnQ3dPV2xCcncwYXFoN0xhWjNPOFVBelFHRURkRXZzR1dPY0tQS0pMQ0hLWUVyVWlKdw?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):战略合作深化，云服务竞争力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-amazon-120",
+    "date": "2026-08-13",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊将交还韩国 MMO 游戏《命运方舟》《王权与自由》西方发行运营权",
+    "quote": "亚马逊将交还韩国 MMO 游戏《命运方舟》《王权与自由》西方发行运营权",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5qOWhYNE9MWTR6STdKR0ozdTBQY0ROc1NKSzRNd0JqSVB1QnBJLWhtUUdZVEJYT1FZRDNMMmVDSDQxeVZibGdEMzVPX3VUa2pmRng2TE5EeDQtcDQzMXA4MEdjY1J0c0pJQ2tKOW00dmRya2dxRWk5SlN1SmlZLTA?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):游戏发行权交还，业务调整，战略收缩信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-amazon-121",
+    "date": "2026-08-12",
+    "dim": "W2",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "OpenAI安全模型上线亚马逊平台，500亿美元投资已完成",
+    "quote": "OpenAI安全模型上线亚马逊平台，500亿美元投资已完成",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB2YlMyWnJwS0pQMEwwS05vel9lVVlRa2g3RER3WEZQSmNuYUc3SVFLaXJPUFhQNjQtcGd6NW9KZW1uX2VvQ1pkdDdRa0dHQ3lkYlp3?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):OpenAI模型上线AWS，500亿投资完成，战略合作里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-11-amazon-122",
+    "date": "2026-08-11",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "Mamdani剑指亚马逊、联邦快递……推动直接雇佣配送员- 阿视亚经济",
+    "quote": "Mamdani剑指亚马逊、联邦快递……推动直接雇佣配送员- 阿视亚经济",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5kblRPWkZrVUczRTkyTkp5ckVvS2ZEaDF2M0t1SVlCYnZmRGhJeDJxcGVfQmY4LTNKMmgzaFYxdDBxbGF0VGRaYzRXRWNjb1UwUlBnR2dDQTdnTEVsVmcydEc3Nko?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):涉及亚马逊配送模式的外部批评,但信息不完整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-12-amazon-123",
+    "date": "2026-08-12",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "接入 Amazon Bedrock 新一代推理引擎 Mantle：用 LiteLLM 网关统一调用 GPT-5.6 与 Claude",
+    "quote": "接入 Amazon Bedrock 新一代推理引擎 Mantle：用 LiteLLM 网关统一调用 GPT-5.6 与 Claude",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPakhJNHgtZGtCZGpvZFhHQ0VrVTNqUlJfaUVfcFpRTFhVd0NzdGFhWUpmenJ4dm5lV2ItOGpDSXNNTy1ETmlEUlVTYm9ic2tqeGM1WjZCd2pmX3hsd2NsUjBQdDhoRzFTMUc4WE0yU1RjaUNhYnhuOHU4ZHdpdWZoWEt0U0pzbUpHUFlEeUg4ZjdZWjV3TWd6bw?oc=5",
+    "fetched_at": "2026-08-14T04:19:15Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):亚马逊Bedrock接入新推理引擎,产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-amazon-124",
+    "date": "2026-08-14",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "海豚社电商资讯：亚马逊澳大利亚加速当日达服务 最快5小时收货",
+    "quote": "海豚社电商资讯：亚马逊澳大利亚加速当日达服务 最快5小时收货",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9GYzhvNTVfTzQ0cFM4QkwyRGQzdzBHbk9YcG1YRmNCQU1WTE1pejZ3WU53UEQtLWx2UG85NjhpY2tqOEJGQ0U4dF9rWDR2SjV3aU9Ick1xOXp4YkRJ?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(high):澳洲当日达服务加速，物流服务升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-amazon-125",
+    "date": "2026-08-14",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "诺和诺德与亚马逊云科技达成战略合作，借助人工智能加速药物研发",
+    "quote": "诺和诺德与亚马逊云科技达成战略合作，借助人工智能加速药物研发",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1McDBMdDcyejJGdDFZUEdQREFnWk5hZ3BRd2ZMWEZmWUR3amNEc1FoYmxZQms4UHNxRUhQV0pWN0JlTW0yU05pTG9CNFZtWUZ0Z2V6Q2d0UVEyd292MTNVR0VQZzZXaFlXRm50ZXF5cnI?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AWS与诺和诺德战略合作，涉及AI药物研发。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-amazon-126",
+    "date": "2026-08-14",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊SP广告自动扩站外，8月10日起生效！",
+    "quote": "亚马逊SP广告自动扩站外，8月10日起生效！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE41OGdPSkZNZy16MnNGWF9GWmR4dDBYS3RZRk5fOEYtbmZaRml3TmF6MmZSTnVwVG5TM2Nub0l6Q2pIcDFUajN6WkVrUWg?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊广告功能更新，8月生效。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-amazon-127",
+    "date": "2026-08-14",
+    "dim": "W4",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊公主魔杖召回，存灼伤风险！",
+    "quote": "亚马逊公主魔杖召回，存灼伤风险！",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNY2lLQU0yMDBiUGtsTzFWeldxX19jd2t6VkZnMUlUSUhZV1Z6UUZMWWFsQ1ZBXzBHWFM5OC1hZVlHbUp3ZVROSF96dV8xSWdHUC1sQXVEMDJ3VlU3Q3ZLalBwRDA2Szc4eWFHOG5JamlBQmQ1VHF2dE5VNDdHZEx3Y3JtTlVERDdRVDBEWUw5SFJOa1BwOFVQUEtlX3dldzRNRzhoZHVB?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):产品安全召回事件，存灼伤风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-amazon-128",
+    "date": "2026-08-14",
+    "dim": "W3",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊为Luna新增三款免费游戏",
+    "quote": "亚马逊为Luna新增三款免费游戏",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE13MVRHbmU4ZWRxYVZnd0NabldzbTBhTkcybVBscTUtZExZSktyWTh3NTFjOXE4NENkcUZCejN6VjFPNzVqYjlHUHNVcmRfOEV2V2stZ3k0UW9YWUluMUhTT0Z3?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):Luna游戏服务内容更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-13-amazon-129",
+    "date": "2026-08-13",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊交还韩国网游《王权与自由》《命运方舟》运营",
+    "quote": "亚马逊交还韩国网游《王权与自由》《命运方舟》运营",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5wdWhTRGtVUUV4eUR2M014d0RsZWV4Q3FyUVd1NFZDV29sQVBzM2lHeFIyYjFmWU91eXkwcWdzX2RKTU9fQzlvSG9vd0Y1WHBnc3pfempBcjBvTUJiMHNnREVOYmQ?oc=5",
+    "fetched_at": "2026-08-15T03:07:24Z",
+    "lens_map": [
+      "origin"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊游戏运营权交还，业务调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-14-amazon-130",
+    "date": "2026-08-14",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "再度套现！亚马逊市值破2万亿之际 贝佐斯将减持约50亿美元股票",
+    "quote": "再度套现！亚马逊市值破2万亿之际 贝佐斯将减持约50亿美元股票",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMVBCc3g4YXRhNDMweFh4MkdqakRuVlNmZ21aaUwtQks3dW4zdHlSazdMOERPV0hvNVY5ckxhVmpTYVVoRlBLeFUyQnlQelM2ZExCZU81TElRc2g2UWp6NklVeV94Y2JMNFZ1azFrSElzcnZzMWhIcXBIT2RubXd1cW1QYTJiNTJmMkd6VVUtLTRLQQ?oc=5",
+    "fetched_at": "2026-08-16T03:14:51Z",
+    "lens_map": [
+      "signal",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):贝佐斯减持50亿美元，重大股东行为信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-17-amazon-131",
+    "date": "2026-08-17",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊修改使用条款，再度禁止用户发起集体诉讼",
+    "quote": "亚马逊修改使用条款，再度禁止用户发起集体诉讼",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsd2wzUU53c19KUUpoTjY5b0tTdmhpOUR6cVlMSDZWTEZJU2M0STdGbHFwbjM5YzBYcWhqODZBbXkwTXZpZmNTcVptYUZMYzFJLWdCNkdJMElCckJrNTNEZXlGYmFUb2t2WEtVM01yTUw?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):亚马逊修改条款禁止集体诉讼，涉及法律政策重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-amazon-132",
+    "date": "2026-08-15",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "马斯克怒喷达美航空弃用星链服务 高管反击：亚马逊竞品更便宜、功能更多",
+    "quote": "马斯克怒喷达美航空弃用星链服务 高管反击：亚马逊竞品更便宜、功能更多",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9rdzh2cFNqQm1YaXZZZ1ZvV2xtZXBKOC03TFl5OFc4ZFFrazlxVVNScDN2SjRTcjZfYVZucTJteThXeXY2dFU4MA?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):涉及亚马逊卫星互联网竞品对标，有市场竞争信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-16-amazon-133",
+    "date": "2026-08-16",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊更新了服务条款， 限制了客户的集体诉讼",
+    "quote": "亚马逊更新了服务条款， 限制了客户的集体诉讼",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVTlCLXJuYXJobnY3Q3M0c2tWTmVsdDZObXVTcGVHcDZWOXdBZjQxQnhvcmh5Sk1NSng1UFlpVUhvRTFUS0k1T2V3R3JkUEduOHNIMVdCYnE3dUY4d2lWYjg3VDhEcDBsMFV0QkxGOTR6ZUNNRUF2MlBiYjRDMEdhN1NrM0xQWFp1X1ZlRDRhZVdrTFVvUHE4U1p6NnVzR1Y2VHFYU0xVeWw0Zw?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):服务条款变更限制用户权益，涉及法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-amazon-134",
+    "date": "2026-08-15",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊MMO全线雪崩！放弃《皇冠现金体育APP官网》《王权与自由》发行权、还给研发",
+    "quote": "亚马逊MMO全线雪崩！放弃《皇冠现金体育APP官网》《王权与自由》发行权、还给研发",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE14djAzeW52NFdldURISkdzamgyck0xMTVka0FlUjhVMmNiWE1JSExfT0xiR29qd0s3eVMybExSVjB2LXJCRlFKb09HeXJFUnhiOVd0SFhMdlpDSWstY2dF?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):游戏业务战略调整，放弃发行权，反映业务收缩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-08-15-amazon-135",
+    "date": "2026-08-15",
+    "dim": "W1",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "日本海关已经收税了，为什么亚马逊还要再收一次？",
+    "quote": "日本海关已经收税了，为什么亚马逊还要再收一次？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBxcmhLaG1rQXF6YXQ1UGFyaE9HZ1lNQnlqVzkxbDlrUVVwSXIwYm92QXZONXNheW1qVE5JNmZubTh2bGVxUXk5MDRkX0w?oc=5",
+    "fetched_at": "2026-08-17T03:14:46Z",
+    "lens_map": [
+      "origin",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):用户投诉亚马逊重复收税，涉及消费者权益争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-10-amazon-136",
+    "date": "2026-11-10",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Ring announces Ring Robotics, ushering in a new era of security",
+    "quote": "Ring announces Ring Robotics, ushering in a new era of security",
+    "quote_type": "title",
+    "url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot?utm_source=rss",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "category",
+      "identity"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(med):Ring发布新品类，子公司重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "verified",
+    "original_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa1dtdUwwb2pOMlRmVThaNUxEb0htNUFkWV9jOTFMWVNkbGttM3R6NDJrUFZhMkhpLUE2VWRmWE5QUTlXak5vcmJscTRUN2dtNXpsTVppd2h4VUd0Y1BBUGtFbEVCQTRDajdaYmt2Wkw2VFhlR2FXemRUVTVOTS1ZWnl0VWdORW8?oc=5",
+    "quote_match": true,
+    "fetch_status": "ok",
+    "final_url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot?utm_source=rss",
+    "source_date": "2026-11-10",
+    "source_title": "Ring announces Ring Robotics, ushering in a new era of security",
+    "verification_scope": "official_statement",
+    "verification_source": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot?utm_source=rss",
+    "verification_excerpt": "Ring announces Ring Robotics, ushering in a new era of security",
+    "verification_reason": "Exact dated title verified on amazon official source; confirms publication only, not independent factual truth.",
+    "verified_at": "2026-11-15",
+    "verification_by": "automated-source-match"
+  },
+  {
+    "id": "2026-11-11-amazon-137",
+    "date": "2026-11-11",
+    "dim": "W3",
+    "severity": "P0",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "AWS to launch first cloud infrastructure region in Chile, investing more than $4 billion",
+    "quote": "AWS to launch first cloud infrastructure region in Chile, investing more than $4 billion",
+    "quote_type": "title",
+    "url": "https://www.aboutamazon.com/news/aws/aws-south-america-chile-region-launch?utm_source=rss",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方宣布40亿美元智利区域投资。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified",
+    "original_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kUUdQZmRlOS14MmtpNmlYT1R5OGxlQmp1TFlLbi1PalBaYkdhWUdVS2drOVZBODJVV2dBSmdBTXZ1c0xqcUE0d3QwWW55ODNGMXBzSGtGSzNwVG9sQWhXVDhPN1JvckdFWno4VGRGb1lVXzVORGVycVREYmFCZjQ?oc=5",
+    "quote_match": true,
+    "fetch_status": "ok",
+    "final_url": "https://www.aboutamazon.com/news/aws/aws-south-america-chile-region-launch?utm_source=rss",
+    "source_date": "2026-11-11",
+    "source_title": "AWS opens South America (Chile) Region, investing more than $4 billion"
+  },
+  {
+    "id": "2026-11-12-amazon-138",
+    "date": "2026-11-12",
+    "dim": "W7",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "Amazon ranks No. 1 on Forbes’ list of America’s Best Companies for 2027",
+    "quote": "Amazon ranks No. 1 on Forbes’ list of America’s Best Companies for 2027",
+    "quote_type": "title",
+    "url": "https://www.aboutamazon.com/news/workplace/amazon-forbes-best-companies-2027?utm_source=rss",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):福布斯榜单第一,品牌声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "verified",
+    "original_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWHRXd2VoVFNBVkJZSWhrQVk4ZzJhVGcxNWZxWFd0WXB5OHJXY3dTVXgzWkE2U2hUWmRlc3N3RjlJcUdBNXFCMGt6VHoyUUUwUlRJUWQwTjZSYk1PcUVOVWZCbXlnYmZFR0R6Q2dnNnRrd3RBU2NVZndlWFVIZzRMQnFB?oc=5",
+    "quote_match": true,
+    "fetch_status": "ok",
+    "final_url": "https://www.aboutamazon.com/news/workplace/amazon-forbes-best-companies-2027?utm_source=rss",
+    "source_date": "2026-11-12",
+    "source_title": "Amazon ranks No. 1 on Forbes’ list of America’s Best Companies for 2027",
+    "verification_scope": "official_statement",
+    "verification_source": "https://www.aboutamazon.com/news/workplace/amazon-forbes-best-companies-2027?utm_source=rss",
+    "verification_excerpt": "Amazon ranks No. 1 on Forbes’ list of America’s Best Companies for 2027",
+    "verification_reason": "Exact dated title verified on amazon official source; confirms publication only, not independent factual truth.",
+    "verified_at": "2026-11-15",
+    "verification_by": "automated-source-match"
+  },
+  {
+    "id": "2026-11-11-amazon-139",
+    "date": "2026-11-11",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊云科技在华三大能力升级，助力全球化企业智赢AI时代",
+    "quote": "亚马逊云科技在华三大能力升级，助力全球化企业智赢AI时代",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1KS3k5XzU5MjFHNXpSMVpOdUZ0dlN2SlQ4bzRaYVc2QmtmaVIzMDBFMTNRRmVGZFBiWE1aWnNwUkh2d2w4Rk1sVUJ3MHRUaFNIbHZSbnR6UGlLWWZD?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "social",
+    "note": "LLM 预分类建议(med):在华能力升级,有实质信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-11-amazon-140",
+    "date": "2026-11-11",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊云科技升级在华三大能力 中国区域年内上线277项新服务",
+    "quote": "亚马逊云科技升级在华三大能力 中国区域年内上线277项新服务",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5oSzZkRWJLa25nTzVzUmxvVXFrNmt6Mk9jNVV3dW56S3R2djg4SkdjazVKNDN6U2Ezd29ST1UtQTJvaHhBdHJvdmdMUGY5Y0FkU2NtbF81Q0xGZnp2WnZTTnhR?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "leverage",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):AWS中国大规模服务升级，重要产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-12-amazon-141",
+    "date": "2026-11-12",
+    "dim": "W2",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊确认2028年游戏《古墓丽影：催化剂》将登陆Nintendo Switch 2平台",
+    "quote": "亚马逊确认2028年游戏《古墓丽影：催化剂》将登陆Nintendo Switch 2平台",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5mZ2dXWko2YmIxRzVMTkN3RURBeU9maVd3blk3b3R0QlJoRmRLMC1lM2VIV0NVVWVhWHNDWHMyQ2dLaUpTZVFpZWJnc1Y?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):游戏发行平台信息，一般业务动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-12-amazon-142",
+    "date": "2026-11-12",
+    "dim": "W6",
+    "severity": "P2",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "黑五还没开场，亚马逊卖家的流量和利润先被分走了？",
+    "quote": "黑五还没开场，亚马逊卖家的流量和利润先被分走了？",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5IWHdkUGhoWjhGMnM0bGNxdVo3TDRfaFJFLTdkUktQdE9hWDZVWUNiOFhUakF4YjU3c0lPemFzVXBnV203dHFGY2p2UWM?oc=5",
+    "fetched_at": "2026-11-13T09:00:22Z",
+    "lens_map": [
+      "origin",
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):卖家生态受损，涉平台政策舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-11-amazon-143",
+    "date": "2026-11-11",
+    "dim": "W4",
+    "severity": "P2",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "How we built the agents that built AWS Emulator",
+    "quote": "How we built the agents that built AWS Emulator",
+    "quote_type": "title",
+    "url": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator?utm_source=rss",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(med):官方技术博客，AI代理构建工具，中等价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified",
+    "original_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWjlFckw4Vk4yZDlaOU5oeE9hWmM5OU5wQk80SzBJQjhYZkRnY3hCU1hZSGhteUhFeFlBYk01S1BPM3FoXzZnLUExakFzRm1IRU5JTHphSEJOTUxuVDZZTE9LTnJFR3hienJ2ZzR4T0w0ZFZaaGVPeDFwMklGVVNfMUw2cG9qUUE?oc=5",
+    "quote_match": true,
+    "fetch_status": "ok",
+    "final_url": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator?utm_source=rss",
+    "source_date": "2026-11-11",
+    "source_title": "AWS Emulator: a local emulator built 100% by autonomous AI agents"
+  },
+  {
+    "id": "2026-11-13-amazon-144",
+    "date": "2026-11-13",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "mixed",
+    "direction_by": "model-judged",
+    "title": "An update on labor proceedings in Delta, British Columbia, and Amazon’s work to ensure our employees",
+    "quote": "An update on labor proceedings in Delta, British Columbia, and Amazon’s work to ensure our employees",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUVhVSmwyS0p5a3NWMUp1SW9ab3RRT2hIem9NcG5yQm1nTEM2M0NTZjVMSm9iTGl5ZGlXMFpIRDdSTWRfMk1lQUhmbVN1TkRCYWxYSVd4aGxIN3V0Y2hlbFU3OTFfUGVnaGYtTWRMVTh0TE92OE1lT0hVRldmbllJTGtkeE8tdw?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "identity",
+      "signal"
+    ],
+    "source_type": "official",
+    "note": "LLM 预分类建议(high):官方回应劳工诉讼，劳动争议事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-amazon-145",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亞馬遜擬建世界商品圖譜 未售商品的資料也收錄",
+    "quote": "亞馬遜擬建世界商品圖譜 未售商品的資料也收錄",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBfQldlN2xzVGNiREEySF9uSnZvUHNmU0dfdDdVdmIyRks3OFlWZ2FjTTJ3cFBZVnVDT0xQUXRTb0RxQXhQX2ZmTnI5bmRROWxmSlBzc3JrcnBxT3NQeThsVDVoSTE3UWPSAWdBVV95cUxQX0JXZTdsc1RjYkRBMkhfbkp2b1BzZlNHX3Q3VXZiMkZLNzhZVmdhY00yd3BQWVZ1Q09MUFF0U29EcUF4UF9mZk5yOW5kUTlsZkpQc3Nya3JwcU9zUHk4bFQ1aEkxN1Fj?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "leverage"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):商品图谱数据战略，业务布局事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-amazon-146",
+    "date": "2026-11-13",
+    "dim": "W3",
+    "severity": "P1",
+    "direction": "neg",
+    "direction_by": "model-judged",
+    "title": "亚马逊和拼多多干起来了",
+    "quote": "亚马逊和拼多多干起来了",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5WN2txdFdzT1ltMUxVX3IyZ2RwVF9MOVdwTU56cUc1UmxuUTRNUllJNzVOR0E1YkVVdlpkaGRET3J6YWdHRWV4Uy1pZUlYTUlYUWQ0eUIxQ3N0M3RhWWJtaA?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):与拼多多正面竞争，标题党但涉竞争冲突。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-amazon-147",
+    "date": "2026-11-13",
+    "dim": "W1",
+    "severity": "P1",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊、微软与Alphabet云业务业绩对比：Google Cloud营收增长103%领跑，AWS规模居首",
+    "quote": "亚马逊、微软与Alphabet云业务业绩对比：Google Cloud营收增长103%领跑，AWS规模居首",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaUp5cFhiTEVIUGhhVVdDZndGZ3BzOUpaS2xuekJ2X3B4dmJNalJBd01rclBJZnZxbHozejA4ZkNySXF3bEt6bzBKdnN3OGlERW5vd3FfTnV1R1BlZUUyOTZfZUkwRUpRdXhEbGFFc0hJRmRmUjZLZnFleWNQcDdZMmlKOXVrMkh5YjVUaEFpaTlGUkFhUnBRYU56NXdBUFp5OVZ1Q2FZZlhjdWpCalBMYTl4T2trQm43U2ZMSDNUMWR4bHkyQWs2cE9yTHZ1WFVLRk9VWmxRYXJ6RllpWHIxdGkzRk5HQjlfRlFBQ3NR?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(high):云业务业绩对比，财报关键数字类。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-13-amazon-148",
+    "date": "2026-11-13",
+    "dim": "W5",
+    "severity": "P2",
+    "direction": "neutral",
+    "direction_by": "model-judged",
+    "title": "亚马逊更新前台隐藏界面CLP页面",
+    "quote": "亚马逊更新前台隐藏界面CLP页面",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kajM5THJEUEVIRXpaMnF2OVhoS1FUS0xwWWRsV0pPbHJ5Y1g4b0VnUmsxcGRMLTFYY0pYZHE5UEY5ekdjb1hxcU5SU0I?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "category"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):前台页面更新，产品运营变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  },
+  {
+    "id": "2026-11-11-amazon-149",
+    "date": "2026-11-11",
+    "dim": "W7",
+    "severity": "P1",
+    "direction": "pos",
+    "direction_by": "model-judged",
+    "title": "亚马逊回报近14倍，谷歌也赚翻了！Anthropic上市将造就史上罕见投资暴利",
+    "quote": "亚马逊回报近14倍，谷歌也赚翻了！Anthropic上市将造就史上罕见投资暴利",
+    "quote_type": "title",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZV81MHk4QS1rSGFNWE84c2t2MFpIMTZFSnBaRk4zX2hYcHZoeW5EU2pucnlTeDR4cS11YWRxcWpBYnJaZV9vMTdhaFJheUl3TS0wejBaeVVJUTRoWnVkWXBacjQ5cndnbjAxQXAyT0dWeURLSkUyY0QtOTYwVW9DNzcxY3dYM0Q5OUVhUUhmd25GN1p6RkpUWDdR?oc=5",
+    "fetched_at": "2026-11-14T02:24:45Z",
+    "lens_map": [
+      "leverage",
+      "signal"
+    ],
+    "source_type": "media",
+    "note": "LLM 预分类建议(med):投资Anthropic巨额回报，重大投资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。",
+    "verification": "unverified"
+  }
+]
