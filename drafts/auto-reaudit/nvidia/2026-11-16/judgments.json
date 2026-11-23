@@ -1,0 +1,197 @@
+{
+  "status": "draft",
+  "brand": "nvidia",
+  "baseline": {
+    "version": "v4",
+    "scores": {
+      "pmarca": {
+        "origin": 9,
+        "category": 10,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 8
+      },
+      "paulg": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 8
+      },
+      "pthiel": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 7
+      },
+      "naval": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 8
+      },
+      "rhoffman": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 8,
+        "signal": 7
+      }
+    }
+  },
+  "evidence_sha256": "ca8452bca856f67b46199c8e757c48f3f9aa92a40614cf93a0bebdbae2172ab1",
+  "judgments": [
+    {
+      "judge": "pmarca",
+      "scores": {
+        "origin": 9,
+        "category": 10,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [],
+        "leverage": [
+          "2026-11-16-nvidia-158"
+        ],
+        "identity": [],
+        "signal": [
+          "2026-11-16-nvidia-158"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No new verified evidence corrects the founding narrative; Jensen Huang's departure (2026-11-12) does not change founding history. Baseline 9 stands.",
+        "category": "No new verified evidence this round shows structural change to NVIDIA's category position. Baseline 10 stands.",
+        "leverage": "AI Day Seoul (2026-11-16) is a company-published account of an ecosystem event engaging Korea's industry leaders, startups, and developer communities — consistent with continued developer-ecosystem leverage, a mild positive. But it is an official statement about an event, not verified market adoption, and FY2027 Q2 results predate the CEO transition and cannot show post-transition performance. Keep at 10.",
+        "identity": "The interim CEO arrangement and unresolved succession remain an identity-system uncertainty; no new verified evidence this round addresses leadership continuity or post-transition coherence. Keep at 7 — uncertainty, not demonstrated incoherence.",
+        "signal": "AI Day Seoul is a real but light positive signal — a company-reported ecosystem event, publication verified but content not independently corroborated. It slightly supports continuity of the build/ecosystem motion under interim leadership, but it is not a felt product/market-fit datapoint and does not outweigh the transition uncertainty. Money talks, hype walks — one blog post is not money talking. Keep at 8."
+      },
+      "as_of": "2026-11-16",
+      "reason": "Only new verified evidence is NVIDIA's own AI Day Seoul event post (2026-11-16), a light, company-sourced ecosystem signal touching signal and leverage. It does not correct the founding narrative (origin stays 9), does not change category position (10), and does not demonstrate post-transition performance or identity damage — the interim-CEO uncertainty keeps identity at 7. Leverage and signal hold at 10 and 8: the event mildly supports ongoing ecosystem leverage but is an official statement, not independent proof. Total 44/50 unchanged from v4; uncertainty about the board investigation, permanent CEO, and next quarter remains unresolved."
+    },
+    {
+      "judge": "paulg",
+      "as_of": "2026-11-16",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [],
+        "leverage": [
+          "2026-11-16-nvidia-158"
+        ],
+        "identity": [],
+        "signal": [
+          "2026-11-16-nvidia-158"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "Founding history is unchanged by the CEO transition; no new verified evidence corrects the founding narrative, so Origin stays at its 9 baseline.",
+        "category": "Existing platform and category position remain at baseline; no new verified evidence this round shows structural change in category definition.",
+        "leverage": "AI Day Seoul (2026-11-16-nvidia-158) is a company-reported ecosystem event — consistent with continued developer and community engagement, which under the make-something-people-want lens is the kind of organic developer love that supports leverage. It is a light, company-published signal, not independent verification, so leverage holds at 9.",
+        "identity": "The verified founder departure (per prior board announcement) left identity coherence genuinely uncertain, but nothing new this round demonstrates either continuity restored or damage; uncertainty is not damage, so identity stays at 7.",
+        "signal": "AI Day Seoul is a modest positive real-world signal (company-stated ecosystem gathering, publication verified only), but it does not show independent adoption, retention, or post-transition operating performance, so Signal holds at 8."
+      },
+      "reason": "No scores change this round. The only new verified evidence is the company's own AI Day Seoul announcement (2026-11-16-nvidia-158), a light positive ecosystem signal consistent with baseline leverage and signal; its verification confirms publication only, not independent factual truth. Origin and category remain at baseline — the founder departure does not change founding history or established platform position. Identity remains 7: the founder-anchored identity system is uncertain after the CEO transition, but no verified evidence shows demonstrated damage or restored continuity. Pre-departure financial results cannot show post-transition performance, and monitoring events (board investigation outcome, permanent CEO, next quarter) remain unresolved."
+    },
+    {
+      "judge": "pthiel",
+      "scores": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [],
+        "leverage": [
+          "2026-11-16-nvidia-158"
+        ],
+        "identity": [],
+        "signal": [
+          "2026-11-16-nvidia-158"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "The founder departure does not change founding history. NVIDIA's origin narrative — a real secret about where computing was going, acted on with a definite plan — remains intact at baseline 8; no verified evidence this round corrects it.",
+        "category": "No new verified evidence of structural change in NVIDIA's category position (accelerated computing / AI infrastructure). Baseline 10 stands on the prior record; the CS183 lens says the 0→1 category creation already happened.",
+        "leverage": "AI Day Seoul (2026-11-16-nvidia-158, official statement — confirms publication only) shows continued ecosystem mobilization across industry leaders, startups and developers, consistent with existing moat depth. Mild, company-sourced; not enough to move a score already at 10.",
+        "identity": "The verified resignation of Jensen Huang (2026-11-12, per prior round) broke the founder-identity link as a fact; Kress is interim and Reuters reported only differing views — uncertainty, not demonstrated damage. One demonstrated discontinuity, no further markdown; no new verified evidence resolves it.",
+        "signal": "AI Day Seoul is a light positive ecosystem signal, but it is an official company statement verifying publication only, not independent adoption data. It does not outweigh the unresolved leadership-transition uncertainty; signal stays at 7."
+      },
+      "as_of": "2026-11-16",
+      "reason": "No change from the v4 baseline. The only new verified item is an official NVIDIA blog title (AI Day Seoul) confirming continued ecosystem activity — company-published, publication-verified only, so it supports the existing leverage narrative without being independent proof of post-transition performance. Founding history is untouched by the departure (origin stays 8), category and leverage hold at prior levels, and identity/signal uncertainty from the CEO transition remains unresolved rather than demonstrated damage."
+    },
+    {
+      "judge": "naval",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 10,
+        "identity": 7,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [],
+        "leverage": [
+          "2026-11-16-nvidia-158"
+        ],
+        "identity": [],
+        "signal": [
+          "2026-11-16-nvidia-158"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No new verified evidence corrects the founding narrative. The founder's departure does not change founding history — Origin stays at its baseline of 9. Specific knowledge and the founder-authentic origin story remain intact as historical fact.",
+        "category": "No new verified evidence this cycle addresses NVIDIA's category position. The CUDA-accelerated-computing category coinage remains the baseline; an ecosystem event in Seoul does not structurally change category ownership either way.",
+        "leverage": "AI Day Seoul (158) shows the developer-ecosystem flywheel still turning — community, startups, and industry leaders convening around NVIDIA's platform. This is an official statement confirming only that the company ran and reported the event, not independent proof of ecosystem strength; but it is consistent with, and mildly supportive of, the existing network-effects leverage baseline of 10. No change.",
+        "identity": "No new verified evidence on the CEO transition this cycle. The interim-CEO uncertainty from the prior review stands — the accountable founder's name stepped off, but no demonstrated post-transition incoherence. Uncertainty is not damage; hold at 7.",
+        "signal": "AI Day Seoul (158) is a real but light positive signal: the ecosystem keeps compounding under interim leadership. One official-blog event is not enough to move the slope reading, especially since the underlying factual reach is company-asserted only. Hold at 8."
+      },
+      "as_of": "2026-11-16",
+      "reason": "Wealth is assets that earn while you sleep — NVIDIA's ecosystem keeps running, and one Seoul event is the flywheel breathing, not proof of a new slope. The founder's exit changed who speaks for the long-term game, not the game's history or its leverage shape; identity uncertainty persists without demonstrated damage, and the single light positive signal does not yet move any score from baseline."
+    },
+    {
+      "judge": "rhoffman",
+      "as_of": "2026-11-16",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 9,
+        "identity": 8,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [],
+        "category": [],
+        "leverage": [
+          "2026-11-16-nvidia-158"
+        ],
+        "identity": [],
+        "signal": [
+          "2026-11-16-nvidia-158"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No new verified evidence corrects the founding narrative; the founder departure (per prior report) does not change founding history. Origin stays at its baseline of 9.",
+        "category": "No new verified evidence this round addresses NVIDIA's category position; existing platform and category definition remain at baseline pending structural change. Stays 9.",
+        "leverage": "AI Day Seoul (2026-11-16, official statement — confirms only that NVIDIA published this) shows continued ecosystem and developer-community mobilization, consistent with the baseline leverage assessment; it is a light, company-sourced signal, so leverage holds at 9.",
+        "identity": "The CEO transition and interim leadership uncertainty described in the prior report remain unresolved, and this round adds no verified evidence of identity-system continuity or damage. Uncertainty persists; identity holds at 8 — no demonstrated post-transition incoherence, no confirmed repair.",
+        "signal": "AI Day Seoul is a mild positive ecosystem signal (company-claimed; adoption and impact not independently verified), but financial results predate the transition and no post-transition performance evidence exists. Signal remains 7: uncertainty from the leadership change is not yet offset by demonstrated real-world demand signals."
+      },
+      "reason": "One new verified item — NVIDIA's official AI Day Seoul wrap-up (2026-11-16) — is a light, company-published ecosystem signal that mildly supports continuity of developer-community leverage, but an automated official_statement verification confirms only that the company made the statement, not independent adoption or performance truth. It does not touch founding history (origin unchanged), category definition, or the unresolved identity question from the 2026-11-12 CEO transition. No verified post-transition financial or operating evidence exists, so signal and identity stay at their prior levels; all scores remain unchanged from the v4 review."
+    }
+  ]
+}
