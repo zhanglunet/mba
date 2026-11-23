@@ -3111,3 +3111,109 @@
   source_type: media
   note: "LLM 预分类建议(high):Blackwell对华销售政策重大变化。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-21-nvidia-205
+  date: 2026-11-21
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "SEC正调查英伟达潜在会计问题，股价当天跌超14%，这件事后续会如何发展？"
+  quote: "SEC正调查英伟达潜在会计问题，股价当天跌超14%，这件事后续会如何发展？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE1jd0gweU1BeXk5UFFQeGI4alR4b1J2RGw2dDVZMmZSbjNtZGRFclZaRm5iaDVGTGZGcmlGWllvNFFlLXZaQjk0cGxMT2NsaHl3YUl6S2E3SFNpRENmUnlF?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):SEC调查致股价大跌，重大监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-nvidia-206
+  date: 2026-11-21
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "如何评价《纽约时报》再发长文《威胁、辱骂与和解：黄仁勋如何让羞辱员工成为常态》？"
+  quote: "如何评价《纽约时报》再发长文《威胁、辱骂与和解：黄仁勋如何让羞辱员工成为常态》？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5BdFVxMXExNVQtYkVTN1lZb3JCYlZqSVJXQUZBNkZEcVlHc0pVSzdudFBzTFdrcWZjaUU5aFYwU0JpMkJ3dGwzQzlLeEQ4a2VIU1BjRkFVM0VFNUdlQjRn?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, origin]
+  source_type: social
+  note: "LLM 预分类建议(med):权威媒体负面报道企业文化与高管。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-nvidia-207
+  date: 2026-11-22
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国政府要求英伟达交代对华晶片销售情况"
+  quote: "美国政府要求英伟达交代对华晶片销售情况"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxPOVQ1S0poQlZ6NEZaOTd1UW1aOWZYNlNOY294cVdrSzgzS0pzMnVMQklibUEzTUszTFdBSDl4bnhYa1k4d2puN01NSHdEWnhfNUhBdjF1b0hOcEpTVHVSaE9PdFNxSk5SUzNDeDhvU0FGT3lYMDJKdVl4Z21jc1BNT2JCY1M2T05oSlh5VUNSc1dPUHBTazlneGhuQmpUaE52Ri1fbg?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):政府要求交代对华销售，监管合规压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-208
+  date: 2026-11-23
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "黄仁勋在英伟达做成的握手交易暗藏风险"
+  quote: "黄仁勋在英伟达做成的握手交易暗藏风险"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE5VVUNuT2VjT0pZdkxDYW5FTVJPZnp1dUFnVFZPQXM4UFhWZjVZM1FlQUp2TWo5ODJYa3dOalp0WklMRlpvVWk2UU1hbEppQzBRMkR0d1BxVzNDNGhyc2dTQ1hjODIwWkEwQWh4YTJhNA?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):媒体分析交易风险，观点性但涉核心策略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-nvidia-209
+  date: 2026-11-20
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "黄仁勋离职后，英伟达面临新的威胁：失去最优秀的工程师"
+  quote: "黄仁勋离职后，英伟达面临新的威胁：失去最优秀的工程师"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxOYV9aNlZDODFOTGxkVHZFTnpXdTBicEkxa1NXU3o0emZ5V0RyY25qN1RHcW44VVRBTS00cDBtUi1xMUR3bzBuNTVoRXpwMVVaNVVTUUVONW94eEoxcXdZT0dSbVlqWHo5NnpLeVlfR180MjNVMjV4N2VNWUpVX1RMdTdxcjRleWNBdjQzZzdFRkpzTkZxckxfSlBqRm5KU0dBTGc?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):核心高管去职引发人才流失担忧。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-nvidia-210
+  date: 2026-11-22
+  dim: W1
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "“可以确定的是，他撒了谎” — 这就是黄仁勋被 Nvidia 解雇的原因"
+  quote: "“可以确定的是，他撒了谎” — 这就是黄仁勋被 Nvidia 解雇的原因"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE9NZFh5YVZEejdWTG9MTmxOMzY5XzRFMm8zMDFENVZHQURPVWJiVE0zUGF3ZGpRMFkwOXVBLUJ5V0NkcWNuVkNLdEpMZ0Q5OXVBR1E3RGZiZXA3S0FXdXlOTHdoZlY?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):核心高管被解雇及指控，重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-nvidia-211
+  date: 2026-11-21
+  dim: W1
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "黄仁勋获特朗普力挺回巢Nvidia 《纽约时报》再罗列18宗罪狙击"
+  quote: "黄仁勋获特朗普力挺回巢Nvidia 《纽约时报》再罗列18宗罪狙击"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijwNBVV95cUxNYnhodG0zSzVINDZmbWphb3hPMDZURzBINkFENDlvMldwTnVqbFFOb1d1UGw1RHJEWEZqWmVaT29Xb19wZ0oyRk1VTWpRcVd4SzRPQVB6bHh3MjgxVjNLRmxDSE90Z3ZXbjBWckV2Z01xcG1ONi0yUDRMdE9fanBUOWpJRkM3eUJTVXJBQXc2WUNBWEVJUnN5bUVJUUhfbDh6VEZSMHdUaFdQTmdSZ3BSaDV1Z04xbERkZzk2YnFaQVpZRGpFbEloejhnNVJtRXpQVkJXOWF3ZmF6R0NnNy1PaGVzUE1JWnY1ajNOZld2dFhaSVdyRXlPZkw2M29QSWRXdk9MVUltVkJMX3lqU3lSNC1kNk9YclFNQzVYenk4WjJuUlpicjBXY0pIQjA2NGdwX25SWEJPWlp2cEhxa0xyUXBMci11UEJEVGYtR1BMMVkyQVhlazl2YlRLVV9VUnRjdVkwNzdHNWZUOV9KM0pLQnFZa2JaNWV5U2dIZFhzSF9wa09kQk1TS3NtWVpoRGs?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):高管去留与媒体指控，重大舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

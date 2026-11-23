@@ -1212,3 +1212,34 @@
   source_type: media
   note: "LLM 预分类建议(high):新品腕表发布，品牌工艺正面曝光。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-21-hermes-079
+  date: 2026-11-21
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "爱马仕2026年Q3增速跌至4.3%，配货比还在涨？3个真相说清+FAQ"
+  quote: "爱马仕2026年Q3增速跌至4.3%，配货比还在涨？3个真相说清+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE04Rlh0WlhEWEVLaTZtXzBXU25Vbzg3djVURVpVZERnZm0tSkNIOUJqNUswYzA2cTYwaFB2S3BPYkV0T09meXVSaFhRZ0M3Znh1eHFBNkFCLXNERzY1TmNpa05sUzBYNVVxWlE?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):增速放缓及配货争议，显著负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-hermes-080
+  date: 2026-11-20
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "高雅德在奢侈品行业处于什么地位？3个维度说清T0隐奢排位+FAQ"
+  quote: "高雅德在奢侈品行业处于什么地位？3个维度说清T0隐奢排位+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBvU0YwSzh5Ym9ZTVJGajZyZkQ0M1YzdEQ5OUJBTXZybHNMVy1zZjRrbzZGdDJGTHYwaEEyYkt0YVY2ZklXdFlPRlhsSlhPb2txb2ZWcFNnVjBON2hXT1RuU3lRQjNvXzdxNHJyU05WdkVaQmpzT05fTk5kTU00X0E?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(med):第三方评爱马仕顶级地位，轻品牌资产信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

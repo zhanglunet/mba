@@ -2499,3 +2499,19 @@
   source_type: media
   note: "LLM 预分类建议(med):补充31家出资方信息，有增量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-21-deepseek-164
+  date: 2026-11-21
+  dim: W4
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "如何看待DeepSeek因免费端限额，且无充值入口，被称付费体验直线上升？它们会开放C端个人订阅吗？"
+  quote: "如何看待DeepSeek因免费端限额，且无充值入口，被称付费体验直线上升？它们会开放C端个人订阅吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBUelpVUzg2MnpSdXJMOEY0OFU0Z3dCeFQwOUkwallTVGt5VUx0RHJoLWY0Zlp2VXZtbGJFLTRBMjlCcVh6bkIwbmRySXpMWGdMOFhhcGd2bDEtVTlsa0hN?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):C端付费策略讨论，轻度舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

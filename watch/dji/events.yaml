@@ -1301,3 +1301,19 @@
   source_type: media
   note: "LLM 预分类建议(high):主力机型固件更新涉监管调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-20-dji-085
+  date: 2026-11-20
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "大疆涨价后，消息称影石Luna系列云台相机或将涨价"
+  quote: "大疆涨价后，消息称影石Luna系列云台相机或将涨价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQnM5dVpGSWZrVU9FdEw5djREczNIcTBVUThpdzR0NlZLcElZX2ViZ204czdKY0lvUEtiZUp3UVllYWZ6YmJ1d0o1dXVGamRrNGtJNGRCeFhhakJ4T3JlRWJheVhrSE1rYTQzd3h3eGRycElfai1XT3lnZkFjU29ZNzdoNXlBVEJu?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大疆涨价牵动竞品跟随，行业信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

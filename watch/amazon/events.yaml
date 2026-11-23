@@ -2783,3 +2783,34 @@
   source_type: media
   note: "LLM 预分类建议(med):产品线介绍，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-20-amazon-183
+  date: 2026-11-20
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "黑五首日哑火，卖家集体炸了"
+  quote: "黑五首日哑火，卖家集体炸了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pVmprbF9oMURkcGUtbUJGRWRNQnowTVo3OEtWR0RhYms4djVQYUhKczJCOXhyUENGS1RfbFFlMVV6bVBpdDFIZGxXdTc3RGZGa3o1aUZldk8wOGNn?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):黑五卖家投诉，涉平台口碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-amazon-184
+  date: 2026-11-21
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊：假日购物与AWS re:Invent前的投资者关注要点"
+  quote: "亚马逊：假日购物与AWS re:Invent前的投资者关注要点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxPOWw4YzcxQ29HTDFOcEZURkh6aHlRUFdQYm9scGZVRjROSjZCMlZaaGVZS2xwMFByR1NZRThvTzFxV3FJVnBkRzNZOUZfeUl5cjdadjV4bVFmZUdoV2VXRDAtajEyak90T2lDVEJvOS1XODZuZVUxVTQ4UTJIN0pzMlRCM1NPOGhXUHdzcVNCV3k4MTJaMjZUY1g3N0VaQjlYMjNzZV9R?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):投资者关注要点，含re:Invent前瞻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

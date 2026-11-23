@@ -3129,3 +3129,109 @@
   source_type: media
   note: "LLM 预分类建议(med):CEO定调AI战略叠加价格竞争表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-22-microsoft-206
+  date: 2026-11-22
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "微软发布企业上下文管理平台Microsoft IQ"
+  quote: "微软发布企业上下文管理平台Microsoft IQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tZ1NoVXBlbFdaRWJ3ekx5MUNXUks4RDEwNmVlRFZUakpHSDlmZUZEamo0dXA2N25KTlB0WFpmLWpnQXpsdEN4QlVHemN0NzdENGZmQTV3?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):微软发布新产品平台，属正式产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-microsoft-207
+  date: 2026-11-20
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软确认 365 家庭版 OneDrive 缩水，全家共用 2 TB"
+  quote: "微软确认 365 家庭版 OneDrive 缩水，全家共用 2 TB"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiswFBVV95cUxNcVIyMW9iQjFBY0gtXzB6THp6eXhucmpqY211N29xSVNoYmZVY0M1MmpId2h0UXhHTWlPSk5ieTlYVFMwVGRTX1h3RVBsRVZiS2JfcUlabUx5UjdzWFB0UWpLZEdwZFJISDBXRnNuTk9Mc0NIb3FsWGpDbDl1cjdiU3dPX21vdWVNdGk2eFNNd05Tbnc3c3g5MTNsVUZiQzh5QVBfRm5Va1dUUkk3bWs2STdvaw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):服务缩水引发用户权益争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-microsoft-208
+  date: 2026-11-22
+  dim: W3
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "《我的世界》PC版国区降价至76.99元"
+  quote: "《我的世界》PC版国区降价至76.99元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5EVzYxMEtSZE5JTmNoUFVsNmRWZl9oVlluVXlhN3AzNmZJQWNvekNlQjBFbE8tRkhtSzRnbEZLX0FDSVBoSmc1TzM2VWtpYjFoWnVGWkRoOGp1ZURX?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品定价调整，一般商业动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-microsoft-209
+  date: 2026-11-22
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软接连砍掉Windows好用软件！用户彻底失望：你们真的恨用户吗"
+  quote: "微软接连砍掉Windows好用软件！用户彻底失望：你们真的恨用户吗"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9zRzJxVnQwRDVoaVpaakJzLUx0Mk5TdXZhLTA5UEs4U3FIck8zRm55MS1PcW9USldJYUFfand6MWg3bHpDTlZSSGNJQmkxNWxEV0JHbkNNWGc?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):用户口碑负面情绪，但偏评论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-microsoft-210
+  date: 2026-11-22
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软公布Outlook宕机最终报告：部分邮件投递失败，安全功能也受影响"
+  quote: "微软公布Outlook宕机最终报告：部分邮件投递失败，安全功能也受影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CeEQ3WXNtQlQzS2txMjkwRHExOW5sc0l2cXdhdGFxZ0kwSXBlenBwUllWaHlLOEdvR2hmdTJLdTA5Qk12bmNHbml2UGZZRUxoMTVXVDlR?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):服务中断官方事故报告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-microsoft-211
+  date: 2026-11-20
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软365大规模宕机引发质疑：LibreOffice开发机构追问各国政府为何没有备用方案- Microsoft Error"
+  quote: "微软365大规模宕机引发质疑：LibreOffice开发机构追问各国政府为何没有备用方案- Microsoft Error"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9faHR6YTZXTjQ0WFhQRjRjenQtT2ZsTEdpWmRZdldTajE2NUtjRkE0a1RqWXFQTU1ZcUI3d0ZKemhTUGlyd2stRmI1M2F0dzJ0MjNiY0RWRlBGMGRTdEV4Nw?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大宕机引发替代性质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-20-microsoft-212
+  date: 2026-11-20
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Microsoft Bought Into Anthropic Around $350 Billion. The IPO Says “Almost Exactly $1.5 Trillion”"
+  quote: "Microsoft Bought Into Anthropic Around $350 Billion. The IPO Says “Almost Exactly $1.5 Trillion”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivgFBVV95cUxQN3l0NVBjNURWUnh2RTNOTDF2aDJjUDlXUkFzck9vcUl1QW1fbTVWZi1vd04xVEZaQmJyc2VhS3p1Rm1oSmlmYXZrRHdIMTk5dW1rdmQyOVZNbUZpTDlfejFGU1hNak1WTmJfMFd5U3Vxc0MzaGlCaWlxQy1hM09HNElSeGtwdTZSVXlEZl9qQlVUZWoyRHBRNkozYTB6eThXSnFwRjQzNnE4RjlfQWFKVjZ0empQbFRrZ1RUOXVn?oc=5
+  fetched_at: "2026-11-23T02:28:04Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):重大投资持股披露，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
