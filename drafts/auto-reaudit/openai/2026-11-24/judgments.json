@@ -1,0 +1,299 @@
+{
+  "status": "draft",
+  "brand": "openai",
+  "baseline": {
+    "version": "v2",
+    "panel": "vc-en",
+    "scores": {
+      "pmarca": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 9
+      },
+      "paulg": {
+        "origin": 7,
+        "category": 9,
+        "leverage": 7,
+        "identity": 6,
+        "signal": 7
+      },
+      "pthiel": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 5,
+        "identity": 5,
+        "signal": 7
+      },
+      "naval": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 8,
+        "identity": 6,
+        "signal": 8
+      },
+      "rhoffman": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 7,
+        "identity": 5,
+        "signal": 8
+      }
+    },
+    "disclosures": {
+      "pthiel": "△",
+      "rhoffman": "△"
+    },
+    "excluded_judges": []
+  },
+  "evidence_sha256": "4db1a588d3eca67100b3dec9c0a5b43c4dc37f6259e7787f0e8e1e9089ec3ded",
+  "judgments": [
+    {
+      "judge": "pmarca",
+      "as_of": "2026-11-24",
+      "scores": {
+        "origin": 8,
+        "category": 10,
+        "leverage": 9,
+        "identity": 7,
+        "signal": 9
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-07-29-openai-087",
+          "2026-07-30-openai-094",
+          "2026-07-29-openai-096",
+          "2026-08-03-openai-109"
+        ],
+        "category": [
+          "2026-08-13-openai-155",
+          "2026-08-13-openai-157",
+          "2026-11-17-openai-214",
+          "2026-11-17-openai-216",
+          "2026-08-04-openai-117"
+        ],
+        "leverage": [
+          "2026-11-13-openai-194",
+          "2026-11-17-openai-214",
+          "2026-11-17-openai-216",
+          "2026-08-11-openai-146",
+          "2026-11-12-openai-188"
+        ],
+        "identity": [
+          "2026-08-13-openai-156",
+          "2026-11-12-openai-185",
+          "2026-11-16-openai-219",
+          "2026-11-17-openai-217",
+          "2026-11-17-openai-218"
+        ],
+        "signal": [
+          "2026-08-11-openai-146",
+          "2026-08-13-openai-155",
+          "2026-08-10-openai-139",
+          "2026-08-10-openai-140",
+          "2026-11-13-openai-194",
+          "2026-11-17-openai-216"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "维持 8：无新证据修正 2015 年创立叙事，本轮全部为官方口径发布声明，自动核验仅确认'公司发表了该声明'，不证明任何性能主张为真。GPT-5.6 'frontier efficiency' 与 ARC-AGI-3 'tripled our scores'（087/094/096）延续其技术非共识姿态，但属公司自报，方向为正、不改变起源历史定价。",
+        "category": "维持 10（本评委唯一满分）：GPT-5.6 Ultrafast '14X the speed'（155）、builders' guide（157）持续加宽旗舰语言；ChatGPT for Sales（214）、Astra for Law 'leads in legal intelligence'（216）、ChatGPT Work + Codex 教学场景（117）显示品类正被垂直复用——software eats every vertical 的字面演示。全部为官方声明口径，性能领先（如'leads'）未经独立验证，但品类即品牌的结构性判断不需依赖这些声明为真。",
+        "leverage": "维持 9：ChatGPT Wallet（194）与 ChatGPT for Sales（214）把 900M 周活分发面继续铸成新的捆绑入口；Astra for Law（216）是分发→垂直捕获的又一个方向信号；Daybreak 上 AWS（146）显示渠道多元（官方口径）。扣 1 分立场不变：资本与算力承诺本身不加分——'Raising money is never an accomplishment in of itself'（2007）。注意：这些扩张是公司主张的方向，捕获是否兑现未经独立证明。",
+        "identity": "维持 7：官方口径均为建设性方向——CRO 任命（156）属商业化补强而非治理危机；儿童安全（185/219）、NATO 合作（218）、OpenAI for Chile（217）是主动的身份填充而非结构改写。v2 的法律/政治敞口仍为未决状态，本轮无新证据证明其恶化或修复。作为'强创始人'论者我继续给高于面板均值的 7，但承认这是方向读法而非已验证事实——'我们是谁'仍未定稿。",
+        "signal": "维持 9：官方声明的节奏本身是真信号——四个月内 GPT-5.6 双发布（087/094）、Ultrafast 14X（155）、Daybreak 网络安全产品线扩展（139/141/146）、Premium seats（140）、Wallet（194）、垂直产品（216）持续出货。'Money talks, hype walks'（2007）：出货节奏在说话。克制保留：全部为公司自报口径，性能数字（14X、ARC 三倍）无独立审计，且未盈利的结构性问题本轮无任何新证据触及——方向价，不是验证价。"
+      },
+      "reason": "本轮全部证据为 OpenAI 官方发布声明，自动核验仅确认发布行为本身，不证明任何性能或市场主张为真——因此五个镜头全部维持基线。方向上官方口径一致偏正（出货节奏、垂直扩张、分发面新品），与我对 Category 10 / Leverage 9 / Signal 9 的结构性高分兼容，但不足以独立上调；Identity 的法律/政治敞口无新证据，维持高于面板均值的 7（强创始人立场），不确定性如实保留。"
+    },
+    {
+      "judge": "paulg",
+      "scores": {
+        "origin": 7,
+        "category": 9,
+        "leverage": 7,
+        "identity": 6,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-07-29-openai-087",
+          "2026-08-03-openai-109",
+          "2026-11-16-openai-219"
+        ],
+        "category": [
+          "2026-08-13-openai-155",
+          "2026-11-17-openai-214",
+          "2026-08-04-openai-117"
+        ],
+        "leverage": [
+          "2026-11-13-openai-194",
+          "2026-11-17-openai-218",
+          "2026-11-12-openai-188"
+        ],
+        "identity": [
+          "2026-08-13-openai-156",
+          "2026-11-16-openai-219",
+          "2026-11-12-openai-185"
+        ],
+        "signal": [
+          "2026-07-29-openai-096",
+          "2026-08-13-openai-155",
+          "2026-11-13-openai-194",
+          "2026-11-10-openai-189"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "维持 7。起源仍是 idea-first(先使命后产品),只是被 2022-11 用户拽成产品救活——本轮没有任何新证据修正创立叙事,官方技术博客(GPT-5.6、实时语音、ARC-AGI-3)延续同一叙事,不改分数。公司声明仅证明发布,不证明性能真伪。",
+        "category": "维持 9。ChatGPT 即品类本身;本轮官方 GPT-5.6 Ultrafast(自述 14x 速度)、ChatGPT for Sales、Astra for Law 均为品类内的深化而非扩张。方向价的克制定价:这些都是公司自报口径,量级未独立核实。",
+        "leverage": "维持 7。分发 + 捆绑仍是真杠杆:官方宣布 Daybreak 模型上 AWS(第二分发面)、ChatGPT Wallet、NATO 合作。但我 v2 的保留仍在——捆绑给的是到达不是热爱,且公司客户案例(Gilbert + Tobin)是官方单方叙事。运营杠杆的判断未变。",
+        "identity": "维持 6。CRO 任命是常规商业化人事,不构成治理传记的新章节;儿童安全、欧洲责任 AI 等官方姿态声明是正面的,但 v2 记录的法律/政治敞口(未决诉讼)没有新进展证据,风险与修复都不确定。分数不动,不预判未决事项结果。",
+        "signal": "维持 7。正面:GPT-5.6 持续迭代、自报基准突破(ARC-AGI-3 翻三倍)、freelance 影响研究。负面权重仍在:v2 记录的崩溃叙事与 Sol 删文件事故未获修复证据。注意所有数字均为公司自报,verification 仅确认官方发布过该声明,不确认性能为真。"
+      },
+      "as_of": "2026-11-24",
+      "reason": "本轮证据几乎全为 openai.com 官方声明(verification_scope: official_statement,仅确认发布,不证明性能/市场声明为真),方向多为正面但幅度有限。无任何证据修正起源叙事,无未决法律事项的新进展,无独立的用户热爱/保留数据来回答 v2 留下的'reach ≠ love'问题。以 Paul Graham 视角,五个镜头全部维持基线:Origin 7(idea-first 被用户救活)、Category 9(品类即品牌)、Leverage 7(分发真、热爱未证)、Identity 6(治理传记仍在修订、法律敞口未决)、Signal 7(收入真、捕获未证)。区分不确定性与已证损害:未决诉讼与热爱缺口都是疑问,不是已发生的崩塌。声明:本评分为基于公开语料的 in-character 模拟;邻近关联披露沿用前卷——Jessica Livingston 为 2015 创始捐赠人、Altman 为 YC 继任者,本人与 OpenAI 无投资关系,按'知情但非利益相关'口径评分。"
+    },
+    {
+      "judge": "pthiel",
+      "scores": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 5,
+        "identity": 5,
+        "signal": 7
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-07-29-openai-087",
+          "2026-08-03-openai-109"
+        ],
+        "category": [
+          "2026-11-17-openai-214",
+          "2026-11-17-openai-216",
+          "2026-08-13-openai-155"
+        ],
+        "leverage": [
+          "2026-11-13-openai-194",
+          "2026-08-11-openai-146",
+          "2026-11-12-openai-188"
+        ],
+        "identity": [
+          "2026-11-12-openai-185",
+          "2026-08-13-openai-156",
+          "2026-11-16-openai-219"
+        ],
+        "signal": [
+          "2026-07-30-openai-094",
+          "2026-07-29-openai-096",
+          "2026-11-10-openai-189"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "官方持续发布前沿模型与技术自述（GPT-5.6、实时语音系统），显示起源期的研发叙事仍在延续——但均为公司自报口径，仅确认发布存在，不确认性能真实性。秘密成色维持 v2 判断：非营利外壳依旧是对共识的讨好。8 分不变。",
+        "category": "ChatGPT for Sales、Astra for Law、Ultrafast 模式等垂直与性能扩张，公司声称在多子品类扩张——但按我的框架，必须与人分享的品类是市场不是垄断；新垂直恰恰说明边界在 widening 而非 owning。维持 9 不给 10：品类即品牌是真的，占有未证明。",
+        "leverage": "ChatGPT Wallet、Daybreak 上 AWS、企业案例（Gilbert + Tobin）均为官方口径的渠道与企业铺开——这些是分发与到达，不是结构性锁定；$250B 级资本承诺换来的仍是被锁住的在位者位置。5 分不变：捕获仍未证明，利润故事没有新增独立证据。",
+        "identity": "官方发布儿童安全、APA 合作等责任叙事并任命 CRO——方向是修复，但全部是公司自述；治理传记三次改写加法律敞口的结构性折扣没有新证据反转。5 分不变：从使命漂向 S-1 与法庭的方向，未被这些公关姿态改写。",
+        "signal": "GPT-5.6 价格性能、ARC-AGI-3 基准、自由职业影响研究——正向但全为公司自报，验证范围仅确认官方发布过该声明，不确认任何性能或影响主张为真。真实收入与用量的既有基线不变，崩溃叙事与未盈利现状无新独立证据。7 分不变。"
+      },
+      "as_of": "2026-11-24",
+      "reason": "本轮增量证据全部为 OpenAI 官方声明（official_statement 级验证：仅确认公司发布了这些说法，不确认性能、市场或安全主张为真），方向一致偏正——模型迭代、垂直产品扩张、责任叙事——但没有任何独立验证的财务、捕获或治理修复证据。按我的框架，官方口径的正向自述不足以推翻 v2 的判断：Leverage 的核心问题（利润被竞争吃掉、捕获未证明）与 Identity 的治理传记折扣均无新事实反转；Origin 的秘密成色与 Category 的品类即品牌维持基线。全部五项维持 v2 分数，体现对自报信号的克制。冲突披露保留：蒂尔为 OpenAI 2015 年创立期捐赠人（△，评分经利益无关者自检）。"
+    },
+    {
+      "judge": "naval",
+      "as_of": "2026-11-24",
+      "scores": {
+        "origin": 8,
+        "category": 9,
+        "leverage": 8,
+        "identity": 6,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-07-29-openai-087",
+          "2026-08-03-openai-109",
+          "2026-11-16-openai-219"
+        ],
+        "category": [
+          "2026-08-13-openai-155",
+          "2026-11-17-openai-214",
+          "2026-11-17-openai-216"
+        ],
+        "leverage": [
+          "2026-08-11-openai-146",
+          "2026-11-13-openai-194",
+          "2026-11-17-openai-218"
+        ],
+        "identity": [
+          "2026-08-13-openai-156",
+          "2026-11-12-openai-185",
+          "2026-11-17-openai-217"
+        ],
+        "signal": [
+          "2026-07-29-openai-096",
+          "2026-08-13-openai-155",
+          "2026-11-13-openai-194"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "维持 8。新证据全部是官方口径的发布声明（GPT-5.6 融合、六个月实时语音系统、儿童安全工具），仅证实 OpenAI 发布了这些内容，不构成对 2015 起源叙事的修正。前沿工程的持续输出与既有的 specific-knowledge 读法一致，打折项仍是结构史与非营利外壳，未变。",
+        "category": "维持 9。ChatGPT 即品类的地位未被任何事件动摇；GPT-5.6 Sol Ultrafast 预览与垂直扩张（ChatGPT for Sales、Astra for Law）显示品类内的节奏权仍在 OpenAI 手上。这些是官方发布声明，非独立验证的性能领先，故不给 10；起草宪法不等于占有品类，公共标准锁定不了任何人。",
+        "leverage": "维持 8。资产是真的：一次训练、多渠道分发，Daybreak 上 AWS、ChatGPT Wallet、NATO 网络防御合作都在把 900M 周活的 reach 铸成切换成本——方向对。但全部为官方合作/发布口径，未经独立验证捕获；permissioned 的算力承诺与烧钱结构未变。跑步机仍在，资产仍在增值，分数不动。",
+        "identity": "维持 6。治理传记仍是短板：结构三改写、五天危机、'Open'之名的语义债，本批证据没有提供任何修正性信息。CRO 任命是常规商业化动作；儿童安全研究、退伍军人权益、智利市场等公告是声誉层的正面信号但属公司自报，不构成结构性治理改善。官方声明只证明说过，不证明身份已定稿。",
+        "signal": "维持 8。收入与用量曲线仍是真实的斜率（v2 基线）；本批正向发布（ARC-AGI-3 提分、Ultrafast、Wallet、企业扩张）方向一致，但全为公司口径、无独立审计，且 v2 的崩溃叙事与产品事故对冲未被反转。复合资产的斜率仍在，捕获仍未证明——8 是克制后的读法。"
+      },
+      "reason": "本轮证据全部为 openai.com 官方声明的标题级验证（verification_scope: official_statement）——只证明公司发布了这些内容，不证明任何性能或前瞻主张为真。作为 Naval 视角，我读的是杠杆的斜率而非发布的音量：发布节奏（模型、分发、企业、政府合作）与既有的'品类即品牌 + 900M 周活分发'杠杆链一致，无任何证据触发任一镜头的重打分。五分全部维持基线，财务与使用数据均沿用 v2 已核实的媒体报道基线，未被本批证据修正。官方正面的发布流本身不加分——status theater 与真实杠杆要用独立信号区分，而本轮没有。"
+    },
+    {
+      "judge": "rhoffman",
+      "scores": {
+        "origin": 9,
+        "category": 9,
+        "leverage": 7,
+        "identity": 5,
+        "signal": 8
+      },
+      "lens_evidence": {
+        "origin": [
+          "2026-07-29-openai-087",
+          "2026-07-30-openai-094",
+          "2026-11-16-openai-219"
+        ],
+        "category": [
+          "2026-08-13-openai-155",
+          "2026-11-17-openai-214",
+          "2026-11-17-openai-216",
+          "2026-08-04-openai-117"
+        ],
+        "leverage": [
+          "2026-08-11-openai-146",
+          "2026-11-13-openai-194",
+          "2026-11-17-openai-218",
+          "2026-08-10-openai-142",
+          "2026-11-17-openai-216"
+        ],
+        "identity": [
+          "2026-08-13-openai-156",
+          "2026-11-12-openai-185",
+          "2026-11-17-openai-217",
+          "2026-08-04-openai-107"
+        ],
+        "signal": [
+          "2026-07-29-openai-096",
+          "2026-08-03-openai-109",
+          "2026-08-11-openai-146",
+          "2026-11-15-openai-201",
+          "2026-11-10-openai-189"
+        ]
+      },
+      "lens_reasons": {
+        "origin": "No new verified evidence corrects the founding narrative — the 2015 non-consensus origin and first-hand read of the wave keep Origin at its baseline 9. The July GPT-5.6 'frontier intelligence with frontier efficiency' announcements (official statements only) are consistent with, but do not upgrade, the origin story; the Nov child-safety tooling post is a mission-consistent gesture at most.",
+        "category": "Category stays 9: ChatGPT remains the category itself. The Aug Ultrafast preview (GPT-5.6 Sol, 'up to 14X the speed' — company claim) plus new vertical expansions (ChatGPT for Sales, Astra for Law, education bundles for ChatGPT Work + Codex) show continued category ownership — though per my anti-application caution, benchmark and product titles are official claims, not independently verified demand at product-market fit.",
+        "leverage": "Leverage holds at 7 — still 'a lead, not a structural lock.' Positive distribution signals (Daybreak models on AWS ending single-cloud dependence, ChatGPT Wallet, NATO cyber-defense cooperation, Texas infrastructure letter) extend reach, but all are company statements; none independently demonstrates compounding defensibility or converted capture. Prior concerns (model-layer convergence, AGENTS.md as public good) are unchanged by this evidence set.",
+        "identity": "Identity stays 5. The August CRO appointment is a neutral commercial signal, and the November cluster (children-safety research, OpenAI for Chile, third-party cyber evaluations, veterans program) shows governance-comfort gestures — but these are official publications, not demonstrated identity repair. The v2 legal/political exposure (Florida AG suit seeking Altman personal liability, Pentagon criticism) remains unaddressed by any new verified evidence, and the 'governance biography, three rewrites, still in draft' read stands.",
+        "signal": "Signal holds at 8 — same shape as v2: real, large, but partly company-voiced. Official releases (ARC-AGI-3 tripling claim, realtime voice system, AWS availability, lattice-Standard-Model research) are positive but official-statement-verified only; automated verification confirms publication, not performance. Freelance-work research and one law-firm case study are thin independent demand proof. No new negative product incidents appear in this evidence set, so the v2 net-negative pressure does not deepen."
+      },
+      "as_of": "2026-11-24",
+      "reason": "All five lenses hold at the v2 baseline. The new unconsumed events are uniformly official OpenAI publications (positive or neutral), and per protocol their verification confirms only that the company made the statements — none independently verifies performance, and none demonstrates new damage. Per model discipline: publicity spikes are not product-market fit, and category-adjacent announcements don't repair a governance biography. Conflict disclosure preserved: Hoffman is an early OpenAI donor and former board member (departed 2023-03 for conflict of interest); this is an operator-investor self-check, not a neutral cross-brand score — recommend panel-drop or judge_self_conflict flag."
+    }
+  ]
+}
