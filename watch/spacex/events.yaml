@@ -3454,3 +3454,109 @@
   source_type: media
   note: "LLM 预分类建议(high):政府合同面临调查，监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-22-spacex-227
+  date: 2026-11-22
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "为马斯克融资买GPU，高盛“秀操作”"
+  quote: "为马斯克融资买GPU，高盛“秀操作”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFB6eGNmRi1FU2tTaGZEQllWdFowb0lnUUhUZWRWRlZETFV4TFZRbFlpbUlBVzd6RllkckkzNEJSbnFyTHdoclJYRXk2V201WVpsSXBPcmZzWm16NFpM?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):涉马斯克体系融资买GPU，属外围舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-spacex-228
+  date: 2026-11-23
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "马斯克承认SpaceX AI研发落后，出租算力比自研Grok更赚钱"
+  quote: "马斯克承认SpaceX AI研发落后，出租算力比自研Grok更赚钱"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1jb3djRHU0bndIVFVfeWhxcW5tVXgxdkhWRUs1eW8xU0tFZlUzZUgyWmprbC1yXzdmVmhlY0VJVEpHYWUyVnFRZ01BMUZNUWQ1M3R3?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):马斯克承认AI落后，涉战略转向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-spacex-229
+  date: 2026-11-24
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国俄勒冈州、弗吉尼亚州起诉SpaceX，指控Grok AI生成儿童性虐待图像"
+  quote: "美国俄勒冈州、弗吉尼亚州起诉SpaceX，指控Grok AI生成儿童性虐待图像"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPV09kNENTNEFxd0RkVkQzQXVlT3p2cE5pTzF4QjFrN0NKTktadjFSM0JucHEyQjc1em9SZnZudksweDUzMlp2ODBtdmt1OGI5blVWaXF0bHk2UGFYRjRVNEpHazF2TkFmUzI2NnRVem4tMUZNZDBXblJJS09iLXIyWjJFZHc3OEFNNkdhTA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [origin, identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):州级诉讼涉及AI生成违法内容，声誉风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-spacex-230
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "马斯克向员工表示SpaceX在AI开发方面正落后 出租SpaceX的算力更有利可图"
+  quote: "马斯克向员工表示SpaceX在AI开发方面正落后 出租SpaceX的算力更有利可图"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ONG1uU3VPYS01Ykx4aE5XcERJbGhBUkgyME5VaURwY1pnZ2hhWVJENkdKb2x4N2VOTXYwVlZSVzViTE4zeHBTeXVrclRmclo3c3BRUFk4cWs0dDZxOHhNRUp2SQ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):内部表态AI落后，战略信号负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-spacex-231
+  date: 2026-11-24
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克被曝正悄悄开发菲律宾岛屿 瞄准SpaceX发射场布局"
+  quote: "马斯克被曝正悄悄开发菲律宾岛屿 瞄准SpaceX发射场布局"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBYS2NucWpZYUJyLU5qTDY5Q2J4OG9ZejY3SmFuRFR1UEpZSEFQbldDUEdzZ2JraVdCRWFTckxDclM3MXFvOExBX2ppZGtIY1l6SE1NRjdid0dtLV9waGpuWEV2UGc0OUFkTHFkTWhhbU8?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):海外发射场布局传闻，扩张动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-spacex-232
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "马斯克承认SpaceX的AI研发落后于对手"
+  quote: "马斯克承认SpaceX的AI研发落后于对手"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5lMFpLRXg0UEtlVDBURVIwRDBjeWZBZ3ZoMWRmeUcwTC1fMzRMNWhfWnVVNENtRHg2b0FNR0lwc1VWdEU2bTdNbmlGeXo?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AI落后表态，竞争能力受质疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-spacex-233
+  date: 2026-11-23
+  dim: W2
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "【马斯克坦言AI研发落后，SpaceX转租算力月入数十亿美元】 马斯克向员工承认SpaceX在AI研发上落后于Anthropic、OpenAI等对手，并主张将数据中心算力出租给竞争对手以获取更高回报。"
+  quote: "【马斯克坦言AI研发落后，SpaceX转租算力月入数十亿美元】 马斯克向员工承认SpaceX在AI研发上落后于Anthropic、OpenAI等对手，并主张将数据中心算力出租给竞争对手以获取更高回报。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1RUG5XX1RhMkxuLVFJbUZiaXNUMXA3LWQzbXFycElnWFdZTWhoU0VXSzE4N3Vzdl9RT2ZmQ0xsM0h0eFVYeUpscmduVUwzU3pUQzByVy1KYjQ0R1NMQ0xocFI1MW9QTzA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):马斯克承认AI落后并转向出租算力，战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

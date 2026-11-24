@@ -1430,3 +1430,19 @@
   source_type: media
   note: "LLM 预分类建议(med):海外无人机配送落地，业务扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-23-meituan-093
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "美团-W将于11月27日发布财报，一图速览分析师最新预测"
+  quote: "美团-W将于11月27日发布财报，一图速览分析师最新预测"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYWRFd2Nod294MHlkZnVRTzB2Q0poYTFuYXFkTnpHZkJVaWdPWkF2Z2hlQ093Sng4bHlVTXhvcGR5eTdqeEhYUUZmNzJhOUxLSHFtTkpjbnFRdGc2MWpEckh3UEJ1VkZNT3c2dEpudzdDWDROWHl3NE5NNldISGE0MUdvTTFKdzdZWDF4c1NmZ0tEM1puWGRrSDJlZ2txZ1YyQWNqTV8wOVNYdw?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):财报发布预告及分析师预测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

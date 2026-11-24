@@ -705,3 +705,64 @@
   source_type: media
   note: "LLM 预分类建议(med):涉及投资智谱浮盈与业务承压。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-23-zhipu-044
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "智谱GLM-5.4低调上线，支持视觉识别与百万级上下文 ｜#AI资讯# #智谱AI# #模型升级#"
+  quote: "智谱GLM-5.4低调上线，支持视觉识别与百万级上下文 ｜#AI资讯# #智谱AI# #模型升级#"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxOSGtGWUdSRUtqcEVqWXRXTHpyOUw2Qi1FajY4ci02dnRsODhzR2lTcVVaaVJCbWZJZHZqMG0zS19Za3Q4R0tJVU4xN0RuaDIxdTBuVnU1R1NlZVFBLWxkaUxJc1BsbE91MFdLbzdqRlF3V3E3cGtFR0NwUzZQYy1ySWJtbi1tZ1lCV0c5aw?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):GLM-5.4重大版本更新发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-zhipu-045
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "智谱GLM-5.4模型发布，已上线Coding Plan"
+  quote: "智谱GLM-5.4模型发布，已上线Coding Plan"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE43NERMM3pxd3R3eFpHdWMwcjloUzEyMnpUN01rWm9TR1FMXzNVUFZiZVdkNkhIemNRQ2Fya2FWeVc1ZW1DeWJzVVlQU0w?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰模型重大版本发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-zhipu-046
+  date: 2026-11-23
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "智谱发布GLM-5.4：用Loop Transformer循环28层 主攻泛Coding"
+  quote: "智谱发布GLM-5.4：用Loop Transformer循环28层 主攻泛Coding"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBtWTBZTnVyd0FHc3h2MVB2bVZqX2JRTEhLX0RNU2Q1YVJnQVJaT2xJYTZHV3psQnZ1VlZPb28yVkJ2ZGlHX0EydlhpaW16N1BzeGdYSzNKZ1h5YVo2V3d5cw?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):GLM-5.4发布含架构信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-zhipu-047
+  date: 2026-11-23
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美众议院两委员会发布《Beijing's AI Playbook》：报告称中国开源模型占Hugging Face 年下载量41%，智谱GLM-5.3 据评估可自主构建端到端漏洞利用"
+  quote: "美众议院两委员会发布《Beijing's AI Playbook》：报告称中国开源模型占Hugging Face 年下载量41%，智谱GLM-5.3 据评估可自主构建端到端漏洞利用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBubmk3X0I5cU1sLUkzNnhUS2ZrUGp6Y29vTGNWWExaaC1DYkFBWl9IelIxZzRRT2liUEg5UU50aXd5Zkd0bV9CSg?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):美报告点名涉安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2814,3 +2814,79 @@
   source_type: media
   note: "LLM 预分类建议(med):投资者关注要点，含re:Invent前瞻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-23-amazon-185
+  date: 2026-11-23
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon to purchase Decart's AI optimization technology to advance chip and model innovation for cust"
+  quote: "Amazon to purchase Decart's AI optimization technology to advance chip and model innovation for cust"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNeGQ0cUZ4OUxtenBhQW1aYTdseTVNY0tCUmpUU3pGSzAtMmhPaXpBcnZ5R1FNenNDaXFObmVGRVZ5WFQ5OFg2M2RrUnloMnpScjlDUENEOVh6azRFdzNweGFGSVAxZ0dqbWdaNlZMTm5saDdfMEdsdW1UWDNlR1JQVA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方宣布收购AI优化技术，金额未明。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-amazon-186
+  date: 2026-11-23
+  dim: W9
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "AI safety can’t depend on an emergency brake. It needs better engineering."
+  quote: "AI safety can’t depend on an emergency brake. It needs better engineering."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE9Vc0k5ZG1YOVlwR0ZzLWY1b0Z3YU95R05SWE5IbWp2NDU0MFlBZ05Nek9adWVUOFlJMi1qQ0lBMGJ3U0VKWTQ2VG9aczl6WGQxa3JXYTZZbzVLQVd1Und0MTFzQzNzeGtZNnBSSFo0dEsxVUpH?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方AI安全观点文章，立场表达。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-amazon-187
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "亚马逊打造的星链竞品为何难以追赶SpaceX"
+  quote: "亚马逊打造的星链竞品为何难以追赶SpaceX"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE9rREdXSFA0aWdnZG5xNVpDVHhpcGJvT1dlQ1pSNWdqYUhUU1R1OEdfZEFYekFtanJ4ZEQ1NDdXVXlDYkRDYUZzUU9PZUo0eGNBV1ZxWEgwYTk5aFlVMnZzS3JsOHlYcWJoUlBjVGtaMA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Kuiper与SpaceX竞争分析。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-amazon-188
+  date: 2026-11-23
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊据悉斥资约75亿美元收购Decart技术与团队 加码Trainium芯片挑战英伟达"
+  quote: "亚马逊据悉斥资约75亿美元收购Decart技术与团队 加码Trainium芯片挑战英伟达"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipgFBVV95cUxNcmVVU0JjWFBQa0trUG0tdkhRckREUlFQbDEtVDhRQ29aRzhaUFlpR2htZV91cDhySTVBd2dxOUJoQmdHeThvTXR5Wm9MSEw1MHBsTVVDNF9HUkl5am9hVkxoQWhQQUJYRHR0eFFfcGp3NjAyak1RYzhhMlhTMnRGM0d5SDhNRjVHakFsV1F4SmxBRU14eXd1RVNLaTZQVW5EWGVGYm1n?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):重大收购传闻，AI芯片布局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-amazon-189
+  date: 2026-11-23
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Amazon ECS Gateway 正式上线，可以自动生成主机名，但不支持自定义域名"
+  quote: "Amazon ECS Gateway 正式上线，可以自动生成主机名，但不支持自定义域名"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9OZkxtVlQ5M256TWxDUjJUYXMzMDVRbU9vLTYzSU5rdjRObEFWeXJYcEYzRnFiV18teHYtWXMxUkNfS3pVX1Rqampvek13OEFPakVVTDMxa0FIMFd1c1E?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):云服务新功能上线，一般产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2515,3 +2515,94 @@
   source_type: social
   note: "LLM 预分类建议(med):C端付费策略讨论，轻度舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-22-deepseek-165
+  date: 2026-11-22
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek已完成新一轮融资，规模或超千亿"
+  quote: "DeepSeek已完成新一轮融资，规模或超千亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hZGUyYndneEQwOWh2Q1hMYVpzX2pvZUlReXp2UjV1eGNzV2RpY296anhnYXFyT1Z0U1NaaHlVcHJMUEFoaTYzWHN3cjRUUHBrVE03Wjd2QnFqTEJwZmdfREp3eU1RMmFm?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):融资完成且规模明确，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-deepseek-166
+  date: 2026-11-22
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek新一轮千亿级融资落地 ，腾讯与宁德时代入股"
+  quote: "DeepSeek新一轮千亿级融资落地 ，腾讯与宁德时代入股"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNNHlldWJuVnBzTmp6djF4SHJoNm4wOTlrZk44c2xnd3NnemttZWNJY1B5WHE3ZjBZOWk5bHlObkIyZ1hsSGxvS1Nvd3dwMGhBTEhpWm5jNjZsRTdEdzNnSmFkblpwZFhLQ01vQXF4N3N3RUhCWWhmbTk4STRGN3FtN1ltQTMxcV91QTJyQQ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):千亿融资落地，股东名单明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-167
+  date: 2026-11-24
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "9家券商参投DeepSeek，对应出资95亿，中信81亿占大头"
+  quote: "9家券商参投DeepSeek，对应出资95亿，中信81亿占大头"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE0yWi14THQyMWFDZ3o2T1VHNlJ6b0dxM0lpdkZSQzJDX1Z6UkUxT19qUE5nNEV4QnZXQ185ZC10aUw3T05MSFc5NQ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):融资细节补充报道，非独立事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-deepseek-168
+  date: 2026-11-22
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek千亿融资落地？31家出资方浮出水面"
+  quote: "DeepSeek千亿融资落地？31家出资方浮出水面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RTHVOYlota1RtaC1uUWpjck92ZWVFSFBIcDZFYWxZZm9xU0FoN2NUUkc3QmVqRHhXRy1faGg5ejhXQlN5SE1TOS1RZG1WVC1JVlZR?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):融资传闻带问号未确认，暂P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-deepseek-169
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "吉利李书福的百亿AI局：DeepSeek和林俊旸都上车了"
+  quote: "吉利李书福的百亿AI局：DeepSeek和林俊旸都上车了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQb1IxY1p3MC1pNzZRQVBCQjdkclNza0RDd0llZmRBa3NleU9uWXNIRHhValNZaEQtWFFMVkdrLW9lR3JSTkRfdVpIMG5Uck8zRW5IS0xzOUx4M1owR0c2NEZCS1NIVlE1RFYyQkRqa1ZhTFd2S3hYc0drSmVTeUZneXFBUHhpRFR4?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):车企合作落地，生态扩展事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-170
+  date: 2026-11-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "梁文锋身家550亿美元 成为全世界最富有的AI模型创造者"
+  quote: "梁文锋身家550亿美元 成为全世界最富有的AI模型创造者"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0wJBVV95cUxOQ0ExWnZqRG1jS09WdzY0dEUyTktxa3hDYUJBTXlXUFpRR2xYWE4tMVM1OExTNmdiZmdLR3ZjNTRWYXoxRDh0cS1GSFZtdkg3YTlTYXFaY2Z3NE5aUnhHa243RVQxelRlWDB1X3Bvd0xGM1ZHaE1WZDJaejNrQS0wdEZ4XzlYZE5yM1NrZnM1RldnbkVwTU5reUd3ajhybXktejhrelhVYTlvNl9LcjRGTXhqMGpfM3BUaGQteG1oYjU2SGNyVkZ3bnF2V0NqZjhqS1drWkU4LUxXY1YtakdQQTNKaTQzUVBqMU9TQ0c3cGV6M1UxcVE4S3I0dW4wNm5yck51ZGpOb04tcU9JTk1VdkQ0NDNXVHZtR1RwTWlWTXV2UHdMU213cHNzOGxDckNfdTc3VGNhaW5GU2xwYkJQeWhKV2FQLTRfeWtQV0VuSGxmYlE?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人财富话题，品牌身份影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -3235,3 +3235,64 @@
   source_type: media
   note: "LLM 预分类建议(med):重大投资持股披露，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-23-microsoft-213
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Windows新篇章：微软重塑Windows、Xbox及其消费生态系统"
+  quote: "Windows新篇章：微软重塑Windows、Xbox及其消费生态系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSEVvY0JzZktRV0ROTXZTVWxTMVZFVlJPeHF5czhnQ1E1QVpnaExTaGd4c0J2aHBuaXRhYzJqYWl3R3Mta0R4TXV0X3hVWGxrYUtuZTIwN3hjaGlpSDhSVW1oODhWb3k5bkF6N3pBRzBLVEd4Vkh2aDFiY0tjMUhvN1FtS2dzVlRl?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):微软重塑Windows与消费生态，战略级动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-microsoft-214
+  date: 2026-11-23
+  dim: W3
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "Microsoft 正在测试修复方案，以解决 Windows 11 的蓝牙音频质量下降问题"
+  quote: "Microsoft 正在测试修复方案，以解决 Windows 11 的蓝牙音频质量下降问题"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ28tU3pvVHEzTVRrTGtpUC16VUF0UUxtcTJSdmd4ZkVWbjYtQnRnSlVXN1Vqb1dXbE9Bb0YwZUt1bFExSnFCSldmYy1hT2NBdUs0SUp5Y1REckhWNzE3T2hXZ1RhZU9mU1dXekswMnJteS0tZ08wVXE5MkVNSERRdXdNaDVDVEJrbmNOWjlabzNIUWlJaHg4?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品缺陷及修复测试，轻微负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-microsoft-215
+  date: 2026-11-22
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软公布Outlook全球宕机最终报告：部分邮件投递失败，安全功能也受影响"
+  quote: "微软公布Outlook全球宕机最终报告：部分邮件投递失败，安全功能也受影响"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNy1Dc0JmTHNjbzI4Tjl1UVgyRUJib2RNdnBhMjJGSS1RWGFGaDJfaGFKajRoRFBPOXlLY2NHdlY0cUF0azhMenVPMkhxeVZpR0ZSZDM4M19hYmV4OGJWNFR4VU9uZWoyRzBQYzNTSTZMZW9FbGZQSVY2dVZ3ODZoLWVOZk1WMWdu?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Outlook全球宕机重大服务事故报告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-microsoft-216
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软改版Edge浏览器首次启动引导体验：大页面变小窗口，可导入谷歌账户数据"
+  quote: "微软改版Edge浏览器首次启动引导体验：大页面变小窗口，可导入谷歌账户数据"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxObnBOMXp4d2dJbjduaUJKaXJxU2FWb082bHdxaUktNk9YeG9XdG5fSWNlQnV2blUyMHdaZ3Zkay1LekxId1ozRldiTnBzMG1vN1hvS0s5d0VLWTB0NnFUQ0J0N0Zwb1lIZWh5TmFKYWJYUlczS1BoTS12NTFsckVDcXVrbW9hMDVO?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Edge产品体验更新，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

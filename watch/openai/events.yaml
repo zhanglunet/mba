@@ -4039,3 +4039,109 @@
   source_type: media
   note: "LLM 预分类建议(med):合作伙伴支持透明度倡议，关系正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-23-openai-264
+  date: 2026-11-23
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI and Cisco introduce Shirudo"
+  quote: "OpenAI and Cisco introduce Shirudo"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE1lbHE3NTF3ZWJRR0tZOFo1MlRjVEVoYjNKaDdWSFVuYnpQQTZ0YTVnMC1nQm04dWZYWkp5TmRVeEg2V2FWZmROOFljV295eWxLMlZUaTh2Z3Y?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(med):官方发布与思科合作新品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-openai-265
+  date: 2026-11-21
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "怎么看OpenAI 宣布升级反蒸馏防御，隐藏推理提取成功率从54% 降至0.2%"
+  quote: "怎么看OpenAI 宣布升级反蒸馏防御，隐藏推理提取成功率从54% 降至0.2%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfMHFFZHIxSk8wQkFZODVJXzloYURZUnFJN2pvOW15bVVCUnJ5eWZzMkZmTmNWbHdIVGROVkp1YzRseXZxdE5aY3hkcEZDZ0ZZdVFyM3VmVVNMUjRfVVJn?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):反蒸馏防御显著升级，安全能力提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-openai-266
+  date: 2026-11-24
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI宣布GPT-6.2 Sol登陆ChatGPT，GPT-5.6系列将于12月23日退役"
+  quote: "OpenAI宣布GPT-6.2 Sol登陆ChatGPT，GPT-5.6系列将于12月23日退役"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE5DUHRPTnRId29tMXNTTjd4emlCNTdaX182ai1PaGZZc2xieS1BTEVldVEyZk9fYVZRSTNoQXNNcjA0YmY5OXUzVHNfeDlmcnJBaU5SMWF2WFJiSy1WZ3YxR3IyaFpUdkRfQU5zUmlEYm1SckdvYW5KWm1rSmhCbzA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):主力模型正式发布并退役旧版。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-openai-267
+  date: 2026-11-23
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "思科与OpenAI推出开源安全项目Shirudo 保障AI智能体安全"
+  quote: "思科与OpenAI推出开源安全项目Shirudo 保障AI智能体安全"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE1xSVFlWG9ldkRBbmlpdEg2bTZvWFBIbEhMUHNxSXNyX2VzWTFEbzRfREE2LW1NeHBBN2NYQ0R1d0ZLVExMNGpyMk00T1ZJUQ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):联手思科开源安全项目，实质事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-openai-268
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI预训练指标曝光：27年AI将雪崩式爆发"
+  quote: "OpenAI预训练指标曝光：27年AI将雪崩式爆发"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IdE15T3hLZU10NWhTdkRwNkR2UmhGMk1NRXlfalpYckUtbG5ZczlmNmRQYVR5OEt1ekNiWmNrSVM4Qmx6dThvZTRRVTl1Ukp5aHl3?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):预训练指标曝光，技术信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-openai-269
+  date: 2026-11-23
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI 首席科学家提议为 AI 开发设置“行业上限” - OSCHINA - 开源 × AI · 开发者生态社区"
+  quote: "OpenAI 首席科学家提议为 AI 开发设置“行业上限” - OSCHINA - 开源 × AI · 开发者生态社区"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiekFVX3lxTE1Ic2c3aTZ1ejRvZlJBNDVCbnRuSjlTRi1EWGlyYmttU09hRWtqaU1ra2k0ZkoxZmV3SzlIVmZaQmpneGR3RmR6eWNyV2dUYks4YTlMTG44eHh4N3pMbjYycmlyQnItTFh5Mm1NSmR5V3pUNjFMMThoSl9R?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):首席科学家政策表态，有舆情价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-openai-270
+  date: 2026-11-24
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI推出GPT-6.2 Sol，全面上线ChatGPT"
+  quote: "OpenAI推出GPT-6.2 Sol，全面上线ChatGPT"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE40RUpIeW9sMXBqSmtIZWlrM2tUcEhEekdoTFgzYWlPb2hBWTZlM29iUEFVMjcxdi1ZTkVCTGNISHl6Q0N6Uk1NajVjNHRVU1UwLU54YVdBUXRwTllhVUE?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):主力大模型正式发布并全面上线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

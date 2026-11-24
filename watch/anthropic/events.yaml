@@ -4078,3 +4078,94 @@
   source_type: media
   note: "LLM 预分类建议(high):IPO上市首日表现，重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-22-anthropic-268
+  date: 2026-11-22
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic攻克黎曼猜想：官方正式盖戳认证，人类纯智力最后的高地失守了"
+  quote: "Anthropic攻克黎曼猜想：官方正式盖戳认证，人类纯智力最后的高地失守了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5LQVhnVWtBNFp5Z096OGQ2MkEwNkxRQTkzcmVRdkphR1J2VHpTNWdNNnpwUUNTVDFObXVfR0FLSDFqS1BzN0RLVHpEcGxjRUFucTJUanVtSzZtbkpN?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):官方认证攻克重大难题，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-269
+  date: 2026-11-24
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic上线代码审查工具Claude Ship 新增两款AI代理"
+  quote: "Anthropic上线代码审查工具Claude Ship 新增两款AI代理"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBtQmZSMmFhcWQyaTFsWXhpM2c3QTRLblNpeW5nZi1uS2I3ZkhGQy1wcVV0bmFjUzd4VERwamhyeWR6UlpRa0ZKOWxvTXZDQm8zVzZuUkhwZkZKS3JXOUluWTlB?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新品工具发布，非旗舰级更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-anthropic-270
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic重磅推出Claude Ship：AI智能体自动审代码、批PR，合并量暴涨逾一倍"
+  quote: "Anthropic重磅推出Claude Ship：AI智能体自动审代码、批PR，合并量暴涨逾一倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSkFVX3lxTE5oZzdnNUdpMmFWSUM3Zm5yRnlTeHM0NUc3dkEzY3V4TTA2Qm9QdE5XTlhrTHN2Uk85Z3FndDlkZGlQVTFUMVc3bjRB?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):主力产品重大发布，信息量最全。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-anthropic-271
+  date: 2026-11-23
+  dim: W7
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic 创纪录IPO 未能扭转AI 市场悲观情绪，Claude 上市当天突发性能降级！靠失业焦虑撑起的万亿估值，该踩刹车了"
+  quote: "Anthropic 创纪录IPO 未能扭转AI 市场悲观情绪，Claude 上市当天突发性能降级！靠失业焦虑撑起的万亿估值，该踩刹车了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1uM3Jqc0FWVHFfLXN5R3Z1VkxUS1JyTnNVb1VQLW4wYXhUN1NsM05sMDlfNVFhbl9fQ2lTSVoxRkhvTTZIVldZbzM2bEpFamdla05lZk9JNFZLLUQ1X2c?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO落地叠加服务降级，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-anthropic-272
+  date: 2026-11-22
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "上市第二天就“差点破发”！Anthropic的“豪华投行承销团”面临压力"
+  quote: "上市第二天就“差点破发”！Anthropic的“豪华投行承销团”面临压力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1odDRESS1UdkFuOVg1RXZKMTRWOHcxeHRpd1lfWDJzVzd1VWpqb2JDM1pac2FmU2NLeWh3dFJ5aXpoNktXcDNkcEpkSU1nSVp3NnZJ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):上市股价承压，市场信心负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-anthropic-273
+  date: 2026-11-23
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic IPO上市，每股定价83美元-AI应用"
+  quote: "Anthropic IPO上市，每股定价83美元-AI应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE12Q3NXMU16NEpWb3NKa0FhNXc5YTdDSU5sc3YwNFl2MXcyaUt2ckJFUEEtb0tEelQxNEszZzhKaWVEUXdKMXcxWHB1bS14RW1KUVN2bV9TaWcyZTRGcEJULXk2U195R1ZYVzZvU3dWMA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):IPO定价公布，关键财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
