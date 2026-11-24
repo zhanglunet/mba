@@ -3581,3 +3581,79 @@
   source_type: media
   note: "LLM 预分类建议(med):Siri裁员及AI产品节奏压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-23-apple-236
+  date: 2026-11-23
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "太狠了！2209 元买的新机，苹果保外维修一口价 2309 元"
+  quote: "太狠了！2209 元买的新机，苹果保外维修一口价 2309 元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wQ090WjMxYU1wc21xcmFYR1FmNTRvR0ZsZ1NfZHhpY0ZqREFnWG00SXVZLVc3Z0pTa3BYWFF1X0w4cWQ4VVdYd0FOQld3ZkdXWUR6V3VGTnhNaHp2?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):保外维修定价争议，负面口碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-apple-237
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "iPhone Duo退货率高达30%……苹果公司该担心吗？"
+  quote: "iPhone Duo退货率高达30%……苹果公司该担心吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxONzRTcE1fdmxaTG9JZzVEZkVqR05EcGpKRUdvU213VGQyel9zWUxzRXpEQjBVaEVqX2hSRTgzYXh3aTdTU3ZOZHpDWV9iZ1BxMm5XWGtxeWk5ek1WQ0JJeEdwVlNyYWJYTmpyb0VsbEVmR0xjanVYb3NCd0FvMU8zNi1hcw?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):旗舰产品退货率异常，负向质量信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-apple-238
+  date: 2026-11-22
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "抢跑618！iPhone 17 Pro系列首次官方降价，天猫官旗优惠超1000元"
+  quote: "抢跑618！iPhone 17 Pro系列首次官方降价，天猫官旗优惠超1000元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBuY0haVFJoZlRRQ3pjaXhOSUMxQ3ppMkpJVGxXSWNlS1B3YXd3R3ZtRmZPaDRYeG5lS08zSm1MMFU4cThvclZBRQ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):官方首次降价，或反映需求压力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-apple-239
+  date: 2026-11-22
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果英国一家Apple Store今日永久关闭"
+  quote: "苹果英国一家Apple Store今日永久关闭"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5lMk5Oajh3LVFtQnROMUtoVHdEc3hxVlU1ZFMzYmNUSFVVRGtIeUh4SEVRQTVxY0Vld2hqb29zN3lJWVMxdTBQdGVhNEU?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [origin]
+  source_type: media
+  note: "LLM 预分类建议(high):门店永久关闭，渠道事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-apple-240
+  date: 2026-11-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "伯克希尔·哈撒韦停止减持苹果股票 占其投资组合的四分之一 - Apple 苹果"
+  quote: "伯克希尔·哈撒韦停止减持苹果股票 占其投资组合的四分之一 - Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBrNVk4Ty1SdTU2X1FsVVpNMWRLODAxSE1RUUlNNDYwalVJRWE1VjZhTjJGSzFBOWFudjhGZ3BIWjZzR2xySnZMV3JpN3RPWE14Z05NdzZNaV96bS1uMkVMWA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大股东停止减持，投资信号积极。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

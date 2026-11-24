@@ -3022,3 +3022,109 @@
   source_type: media
   note: "LLM 预分类建议(high):FSD V15推送并含关键能力数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-23-tesla-199
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "黎曼猜想证明获认证，Claude 参与攻克百年数学难题；特斯拉推出FSD v15，马斯克称驾驶能力已超越人类；2026 赛季 F1 拉斯维加斯大奖赛，维斯塔潘夺冠｜早报 20261123"
+  quote: "黎曼猜想证明获认证，Claude 参与攻克百年数学难题；特斯拉推出FSD v15，马斯克称驾驶能力已超越人类；2026 赛季 F1 拉斯维加斯大奖赛，维斯塔潘夺冠｜早报 20261123"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE03YV8zRlk3V2pQUnJuT2xTNDF4TE1XUlkwZ0dkSXBIMGlPQ0lzYUxWOEJsTWdmdUx2NVp4bmVsMWhpb0J0dnN2MHlVd1M1YXdUSnYxQXNaaTA5dDc2?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):FSD v15重大版本发布，但为聚合早报。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-200
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克把GTA 6搬上特斯拉！FSD端到端实时生世界，一脚油开进3A游戏"
+  quote: "马斯克把GTA 6搬上特斯拉！FSD端到端实时生世界，一脚油开进3A游戏"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBiZFp3V21Cal9FWllsX3FSNmI0OEtPZmdIWVBvbjNNQ3gwdDBPbzc0TE1SMmZtWmdiMEhMYTh6VzRIQkdiQjR1LWtZNjY2d3F5eWxqZ3lVamlOQ3dt?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):FSD实时生成世界技术演示，能力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-201
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉 FSD V15 的全视频渲染 Reality ​"
+  quote: "特斯拉 FSD V15 的全视频渲染 Reality ​"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxNMFhQOUR2Si1JNjRHNUw2dlpmNTNCaklidEN5QnQxSXA1UlBWdlNIanFHc0ZQQlVqTUhheFA1bkJzbnQzVlZrc2F6Y0tENm5XeUEzNnpJVUF0TUt0dE11QnQ2cmZLdkJPZ0lKNGxjYmlFN2R2c1I4RzIwOUcxVnN0VQ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD V15渲染技术解读，正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-202
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD V15正式推送 全球落地加速"
+  quote: "特斯拉FSD V15正式推送 全球落地加速"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE1yOURlUFpnREVScmxNa0FmMXJvNjdRT0NEMWMyQnZlTV9aZXFyQUVKeU5lVW5DMkpaZVI3VmRxRmt3RU5LVFQySVg4Mk9RZElfaENqbmlITlM5WmpSVjI1dnp1bHRIWnFiMDJGR2FaY0IteXIxY3hBWQ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰产品重大版本正式推送。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-203
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "车机直接变GTA！特斯拉 FSD v15上线，实景视图到底有多炸裂？"
+  quote: "车机直接变GTA！特斯拉 FSD v15上线，实景视图到底有多炸裂？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE1DUFJoTzVCUVFkTjV1MGRzWnpVdFBfdW80Q0RQaWF4NFR4Ym4tMmQ0VmYxMFpYWkhFd1dBc3B2UVJWdzdwMGN5eF9VQUphejJmeDVGbHVLZ3Q3bWs?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):标题党但含V15上线信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-tesla-204
+  date: 2026-11-22
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉 FSD V15 拆解：视觉编码器是什么，Reality View 的画面从哪来"
+  quote: "特斯拉 FSD V15 拆解：视觉编码器是什么，Reality View 的画面从哪来"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pOU1fbk1wZFdjMkE3NThZZ0d3aHpXN1o5LTRwSG5lNS1DMm85c2ZWdzhiTjMxU0RZSFlrc3FQS25CSWxEdURJNkFabTlUVXV4aXNv?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):技术拆解分析，中性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-205
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉 FSD v15 实景视图只用半个加速器"
+  quote: "特斯拉 FSD v15 实景视图只用半个加速器"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTFBFUVo2NGhYZ2oyWmxMYVgwOFc5NlhhNnFVaS1zQ1pycmRQajZCMGVZZ3d6OS1abVJwbFhSRFBCd2Jha2dVRldmN3dzLTg2YldITUhxSXNyd2JRSDA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):算力效率细节，正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

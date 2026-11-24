@@ -3806,3 +3806,79 @@
   source_type: media
   note: "LLM 预分类建议(med):谷歌披露Duplex与Gemini整合细节，属产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-23-google-251
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "A more tailored Google Search that’s uniquely yours"
+  quote: "A more tailored Google Search that’s uniquely yours"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxQZU5QOEctOUFCay04Z0xyZ0NNQmVGcDlhUnNlVjJBOWhBQ1cxV19sT1Y0RGh0XzBmbkIwRzljQlhnWnFIbVlDazljWXdRRG1LWEZlNzk5MVZxOGphYkhuLVBlNVBQSGhuMF9PQkwxUi1IdWpVVGZrSndBM3JwZFNiejUtZ205NUZuVm15WDE3dFhxM1doaVRUU3lOblhqNnl6dFE?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, identity]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布搜索个性化升级。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-google-252
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing file slicing controls in the Gemini API"
+  quote: "Introducing file slicing controls in the Gemini API"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxOYmRGbmJqX0VpT0hPa1NPLVUwNnV5VWw4el9SMDcyTXpPTkpWNlN0dnE3MnZJSFRxSThDSGNteFFmeFU0VVlwQ0dfY3U0aHJ6SUdXc0ZtSERheWVPY1h3NGNwTjlDNWp4am04MGs3TXlWMk41UVJqYzF1emYtQlR4cExnZjNJV1IxUkMyb05pYWFadw?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方API功能更新，常规迭代。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-google-253
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Momentum: Deepening Google’s commitment to India’s startups"
+  quote: "Momentum: Deepening Google’s commitment to India’s startups"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiowFBVV95cUxPT0drUFJScElNd2piOWRQQnFSdTRxa3J4ekZQUUV4ZXVCR3hIakVsS1VEVHpybHM5cU1neUZrdW5sY2Fmd3ZFZ0RvaHJZdXBUbi1KZUJ5NWVEMWVOdFBlcGhkNEo5Uy1ob2dUemZ0UzdoYV96Q2p5Tzl2YzVlREFlTUJSZDZTVFJGNm15bUdUSEpoMmFmb1hrczdRQ294N2N3TjM0?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [origin, leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方宣布深化印度初创企业投入。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-google-254
+  date: 2026-11-21
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "谷歌反重力：五天从薅羊毛到集体封号，再到官方重置补偿"
+  quote: "谷歌反重力：五天从薅羊毛到集体封号，再到官方重置补偿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE92ZDJXTnFxc1BwbWZ2M3Q1eWdLWGpISHpsbU5NekxhTXowaE9mdjFVazRmZGFVa3ZUZ2dDTU1hR05FdXdXY0RwR2ZFaWw2ZlB0S0hvalNTTmE5R2lN?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):大规模封号后官方补偿，产品运营事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-google-255
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "谷歌Nest退场Gemini接管"
+  quote: "谷歌Nest退场Gemini接管"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE1KZDlKV002NXIybE1VZkNORFZGNkxWbVRKUGdld1lOZkxMSjEtTUgwTXdhZ3NrSFVPaElna0VwOGMzbjEzX0NjU015ek1RQms1bEU4THJoY2V5aTNrV1RZQ1NVVkZ6dHFCWEZPWg?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Nest退场Gemini接管，产品线重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

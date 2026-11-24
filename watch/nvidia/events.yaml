@@ -3217,3 +3217,79 @@
   source_type: media
   note: "LLM 预分类建议(med):高管去留与媒体指控，重大舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-24-nvidia-212
+  date: 2026-11-24
+  dim: W1
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "NVIDIA董事会宣布即日起恢复黄仁勋的总裁、首席执行官和董事职务，如何评价该事件？"
+  quote: "NVIDIA董事会宣布即日起恢复黄仁勋的总裁、首席执行官和董事职务，如何评价该事件？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5qd2FPRFNkNDBRWXZIY0xPWVRSb2JKX2FGTlR3Mldra0V3YUcyR2p4dnE1WktOY09ndHNFNmptSTZkWW1oUDZwN1k2Qlo4MkVseVp6QXBTTVpVTjhMY053?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):核心高管职务变动，P0事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-213
+  date: 2026-11-23
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "黄仁勋回归，英伟达美股盘前涨幅扩大至 30%，能重回 5 万亿美元市值吗？"
+  quote: "黄仁勋回归，英伟达美股盘前涨幅扩大至 30%，能重回 5 万亿美元市值吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE0wTGc2aGVIdTNRX2l1NkYyWUVYUXY5OFNwbWp2OFYwbTdGdWtEZTJ6UVZJR1VVY2NpU0szVmJkYTNmNGZ4Q3pQU2JuOF9BbW54NmlMSjJ6TnlTbVl6WWo4?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):CEO回归叠加股价大涨，重大人事与市场事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-214
+  date: 2026-11-23
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达董事会恢复黄仁勋CEO职务"
+  quote: "英伟达董事会恢复黄仁勋CEO职务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxOZTR2ZWdMNm5CRVJqNm51QVVVQk5xZVdXUWpIbEdOXzJma0RRUW1hVmtEeE9mZGlWUUpXVUJ5R0pzcDIyaWpjQlE0QkphdDVMSjh3S0VmazNMLWg5QjB1OGd6V1lVY2ljbUVpSkpJSXlLSGFEY1BNaGhOOUJMUU5Qd2VVZ1RkTjg?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):核心高管变动，董事会正式决定。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-215
+  date: 2026-11-23
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "NVIDIA 董事会恢复黄仁勋总裁、首席执行官及董事会成员职务"
+  quote: "NVIDIA 董事会恢复黄仁勋总裁、首席执行官及董事会成员职务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxQUkZFZEVKWDNqSHRxOTQyNERtd09OQ1AtZHBocG55VUs2N1pEY3JkWkN2a3pYSUdETWFyUUhMaGFxQ3FlQTU4cU5NYnhMMW1nbmtzN3FFYU10eFVjNHlEa1hjeGExVkNlbXlJdm1sOEFSQTlBVjExNFIyUXpWVy1HS0FTenBaSkE0STZhNWlSczZ4WXotbElTQy1WSUlIOVVmSnYySA?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):正式恢复CEO及董事职务，重大人事事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-216
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "黄仁勋复职 重掌英伟达"
+  quote: "黄仁勋复职 重掌英伟达"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFA0ZW9ZN1FKeU9oR1RJSXBoeXQ0REItVTNjQ1BncTY5dDlhajg5b2dmWHdZN1VGUXNzbWcyUnNiRVVrbXotczE5bmMyV2NJajh2RVRVb2xOZWQtVGd3VGVUMS1MWG5mUTJka2R3ZU9ZR2NOb3pyRmhBNGFkYWhnMWM?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):核心高管变动，重掌公司。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

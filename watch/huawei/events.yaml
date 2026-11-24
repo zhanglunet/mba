@@ -2736,3 +2736,139 @@
   source_type: media
   note: "LLM 预分类建议(med):海外定价与卖点发布，一般产品新闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-23-huawei-180
+  date: 2026-11-23
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Turkcell and Huawei Deploy World First 5G-A Low-Altitude Commercial Network for Skyline Tourism in C"
+  quote: "Turkcell and Huawei Deploy World First 5G-A Low-Altitude Commercial Network for Skyline Tourism in C"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFBzQnlBRDZ1X0FuSkVrd0xJN1NWeVBYMVJOMXhyN0xELUN6LXY2bG1iRzRtc2lyTW96UXl1UzNfX0JMdE90MTlZNUZ4TlZpdlM3clRsazAtQWpwYmlNU2pacW9sVWphcFJBZEE?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方宣布全球首个5G-A商用网络落地。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-huawei-181
+  date: 2026-11-23
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei Recognized as a Market Shaper in the November 2026 Gartner® Emerging Market Quadrant"
+  quote: "Huawei Recognized as a Market Shaper in the November 2026 Gartner® Emerging Market Quadrant"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE9VQmRvUjV0S0d2VW9kYUluZXJuaEM1UkdIUHdlUWZMTTdxbXl2dVcwTTBvbno2M2FRQThfZFFOT2s3SnJQUExGOVdfYVktdXBOQVR3eDJnV3ZCbUc2QUdPdVFBREE1T2ZHa0E?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):获Gartner市场塑造者认可，品牌声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-huawei-182
+  date: 2026-11-23
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "覆盖三电/空悬/增程器等 奕境X9终身质保升级为长期固定权益"
+  quote: "覆盖三电/空悬/增程器等 奕境X9终身质保升级为长期固定权益"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1EU2J1X0ZvR3lHRkdHOWFJLVJNTVlSOEZrb3A2eGhBdjBiaklhdnQ5ZlRNdDVKVzdNTHJzQ0pfM1FoZ3BNQzhJdFFrTWdjT29KZzctb0tER1plRjhG?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):车型终身质保权益升级，产品服务动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-huawei-183
+  date: 2026-11-23
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为星芒 O1 Pro，如何把手机 AI 再往前努一小步"
+  quote: "华为星芒 O1 Pro，如何把手机 AI 再往前努一小步"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE81Z2tRSTlUNnNiQXd6ZFJjOVY4VElSQ01aQWZ3RklLOXFjWGpSNlZGWldLaXdlQVpTX29pYmpOYUQyRjY3Y3JMN25BYWprMTk4eU9hXy1MZTRadlJM?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰AI手机评测，正面舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-huawei-184
+  date: 2026-11-23
+  dim: W7
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为入选2026年Gartner AI数据存储新兴市场象限“市场塑造者”"
+  quote: "华为入选2026年Gartner AI数据存储新兴市场象限“市场塑造者”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTE1JcU5HTmQzdkFyaHlxODRhcDBrQXZHa3NVT0FpejN5eS13MmV0d0szd1dSa0xsLUtqUHlPRUVQdTB2Q2JMclM5RkRlS1EzYl9aWTdkdDhUUlRMWjlDNWJTaWNLOFBNT1Y5Tmc?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):入选Gartner象限，第三方权威认可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-huawei-185
+  date: 2026-11-24
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "华为将举行HUAWEI Mate X8及全场景新品发布会；蚂蚁阿福启动全球化｜早资道"
+  quote: "华为将举行HUAWEI Mate X8及全场景新品发布会；蚂蚁阿福启动全球化｜早资道"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPMkJuY05EQVY4b2VpWjl0QTgxT1lhTTZaVGtCLUxBeXR2RjQzVDQwcENSakdVTTA5em5jbGRvbkYxM0NsdXpRU2NkOC1uQWRESXdTcDgzOXJ5a054Ukw3bmNici1iaUluU0kydmd1SHhibVNPU1NOU1FIM3V1U0t2T3RyTFlqNHhMeDE1Zw?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):旗舰新品发布会预告，值得跟踪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-huawei-186
+  date: 2026-11-23
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "澳门电讯携手华为正式发布Wi-Fi感知服务商用套餐- 华为"
+  quote: "澳门电讯携手华为正式发布Wi-Fi感知服务商用套餐- 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5qSi1ycm9rRzdpYTVVMGgwWmRkRjc3OEUta3p2Q1lHYS1nTFJ4QnJzV05WUnoyazh0aTY3anVld2NuVm9HWHY5OWlMNTYxd1dGWjVnc1V2MjV4WGhremM0?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):海外商用合作落地，业务进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-huawei-187
+  date: 2026-11-22
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "星芒OSTA O1 Pro新机确认支持华为自研Wi-Fi 7+芯片级协同技术"
+  quote: "星芒OSTA O1 Pro新机确认支持华为自研Wi-Fi 7+芯片级协同技术"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBLUW1UczdtRGxEVTZXNHU5WVd0Vlh0V0R5eWo3cDlLUVNkcnNuMHJOU1VpNm9NaUM5a3RtWlRDYUQ5bGxfTjZOMXJQc08?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):新机确认自研Wi-Fi7+技术，产品力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-21-huawei-188
+  date: 2026-11-21
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "【图】首台量产车下线 配备华为乾崑六大解决方案 奕境X9内饰官图发布"
+  quote: "【图】首台量产车下线 配备华为乾崑六大解决方案 奕境X9内饰官图发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE0yUnVEVUZRUS1DM2ZxbUc1V3ljQ3ZnOEpMeUxlYWU4d1NvVVZfcWNManRSdjNDVTI5dGFHejRDdXpyMjJSUlBJaTFtZ3ZkSy0tcHU3eHIzMHZOcThJVHNZ?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):搭载华为方案首车下线，合作落地。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

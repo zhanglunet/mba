@@ -1715,3 +1715,64 @@
   source_type: media
   note: "LLM 预分类建议(high):投行评级与业绩超预期评价。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-23-lenovo-112
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Earns Frost & Sullivan's 2026 Asia-Pacific Agentic AI Solutions Competitive Strategy Leadersh"
+  quote: "Lenovo Earns Frost & Sullivan's 2026 Asia-Pacific Agentic AI Solutions Competitive Strategy Leadersh"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi8wFBVV95cUxNMjNaZTJ1NmdhYkp5OFI1U290alNUWHZ1VUdiNWVsS3lmOUlfT01YUEFDd3FWbWU5TUxaTkdlY0JtUkcxa3QzYU9ZakxtdzVLbG16ZElwaWNBNXZhT0dKeGNJSGliamZna0RLWmp6V1BWRVBObXc1a1R1MFJuelBkcVNwRFhNbFgxaVEyLWhxcVpPQkxKaFU3MUtxaDJiQ0RHOGozcE1sSlQxM0FxS29fbzIySEtTU0E1Y09YQzRCTEJQY3VIM1l5MHl4b1pTWS1sNTBMQ3o3SUZVUlh2OVBMdl9wYlBZN1U5bzFLNmxmTUM1Njg?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):获第三方权威奖项，正向声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-lenovo-113
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo Named a Leader in the 2026 IDC MarketScape for Worldwide Digital Workplace Services"
+  quote: "Lenovo Named a Leader in the 2026 IDC MarketScape for Worldwide Digital Workplace Services"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxQb2JUX0hDdXRJd3NybjM4U0ZWUVJPdDBHeU1fNDFvekdsY1lQdTdyOVhpdTN5OWxtNTIyQTNMMGgwdkJib3dUSG4xNURMY2E0V0NTUWxtSV9YWExFOGtiSjJhemc2MzdndkMtLWdJWEJlY1F6QUVvY25yRjA0NjBYbkVnUU5xMGhKeU9LUE0xZVQtdw?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):IDC领导者认定，品牌认可事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-lenovo-114
+  date: 2026-11-23
+  dim: W9
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Lenovo signs the Antalya AI Pledge at COP31"
+  quote: "Lenovo signs the Antalya AI Pledge at COP31"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1kN19pNUlnU0JJTW1ySDBSRUR3cU4xQjcyUml5NWFxQjVQTXpoTGhQenZGektUQzFDWTllVHFmTFB6b0syTjJ5bHBmdGZlSWV0Y0tWbDhxOS14eGYwaWZkcU83Qkc?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):COP31签署AI承诺，ESG声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-lenovo-115
+  date: 2026-11-24
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "申万宏源証券：レノボグループ（00992）の「買い」レーティングを維持、26/27年度第2四半期の売上高および調整後純利益が過去最高を更新"
+  quote: "申万宏源証券：レノボグループ（00992）の「買い」レーティングを維持、26/27年度第2四半期の売上高および調整後純利益が過去最高を更新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgFBVV95cUxPenFlU2JRMjFPNkd5Y0NncnJMd2hSRlhsLUk4WlExZU5ZT2I2MkZsNjMxLVl1MjRWZnRnTnd6dk1RWk9XdXBHbjdOSjlicWRuSXNOMEYxWTAteVA1UW9fWHJyc2dESDBZMEFCN2FRS2NTaWZTb2R0MnVTWWJMdW5rUGdGNGZJRy1qbktrRzk5ZkN4NFRtbW1IWGFKaTJ4QWpiNkVfSFU4cTJZbnJvZ3hveXNpSncwZw?oc=5
+  fetched_at: "2026-11-24T02:27:29Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):投行维持买入，业绩创历史新高。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
