@@ -766,3 +766,49 @@
   source_type: media
   note: "LLM 预分类建议(high):美报告点名涉安全风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-24-zhipu-048
+  date: 2026-11-24
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "众院两委员会调查报告对美企依赖中国AI模型发出警告"
+  quote: "众院两委员会调查报告对美企依赖中国AI模型发出警告"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTXpaaW5FM2dwSF95aXpUSVlISnloUklLY1JLd1ljS3k4OEl0M184Q0YxaWczb256R3ltWmVNS2VGc21KVTlYbDZBcFBlSnMwbXdwRTNhOXRuQ0pfVXR2UG5jZG9UUHJHWVFZVU8zeEZSSlBtbkc0QVFpd0U0R0dLQXlGS1pHMk1hQ0FjSGROWkZFRnE1M3FTQXE3ZE95RjhkX1c3NUg0V0c2MS1QeEpoNjE0OU5ER0paXzl3VDhwNUpkX1R1REJzaE5xbDdwTW5Y0gHQAUFVX3lxTE5NelppbkUzZ3BIX3lpelRJWUhKeWhSSUtjUkt3WWNLeTg4SXQzXzhDRjFpZzNvbnpHeW1aZU1LZUZzbUpVOVhsNkFwUGVKczBtd3BFM2E5dG5DSl9VdHZQbmNkb1RQckdZUVlVTzN4RlJKUG1uRzRBUWl3RTRHR0tBeUZLWkcyTWFDQWNIZE5aRkVGcTUzcVNBcTdkT3lGOGRfVzc1SDRXRzYxLVB4Smg2MTQ5TkRHSlpfOXdUOHA1SmRfVHVEQnNoTnFsN3BNblg?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):美官方报告涉中国AI模型依赖，涉监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-zhipu-049
+  date: 2026-11-24
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "智谱发布7500亿参数循环Transformer旗舰模型GLM-5.4"
+  quote: "智谱发布7500亿参数循环Transformer旗舰模型GLM-5.4"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE5neUNGaEhXdXMzZ2xuOEhMbVAxVkVtZ3d6WDJwa1lJVTlURGdrN1RhSHhMQmZrVGUzbFhkVHVQOVFLYXZsUDJQQnRxOWtEYW5RVTlGSEJ3?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰大模型正式发布，加严判则P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-zhipu-050
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "智谱GLM-5.4上线Coding Plan，新增视觉能力"
+  quote: "智谱GLM-5.4上线Coding Plan，新增视觉能力"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE9ObHpxM3kyM2dKVENoRG5zZnN0S2x6b3RENVB0Q2UxcndsOW8zN1JqUDh2emUySzdJQ2wyT1RDb3hQekFHMGRkYmF5UVRnc0xhemx4VFhQdzVDQjVJeVIzU0tybDB0Z2Fxb3RyZkN3UkZsNUxp?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):GLM-5.4上线新能力，属版本功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

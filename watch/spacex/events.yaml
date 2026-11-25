@@ -3560,3 +3560,64 @@
   source_type: media
   note: "LLM 预分类建议(med):马斯克承认AI落后并转向出租算力，战略信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-25-spacex-234
+  date: 2026-11-25
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "连马斯克都承认落后了！AI研发不敌竞争对手 SpaceX转向算力租赁"
+  quote: "连马斯克都承认落后了！AI研发不敌竞争对手 SpaceX转向算力租赁"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ITW1mZ2V4SFQ0NmpXejlEWUFiZE1nYlNyWHU5ZXJkMTVtdkZzVVFGLWdMTGF0QWVINkczc095R1dfUTZ2Sk1MTjNWa2FFTDMzRFFXcVJXdlQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):马斯克承认AI落后，战略转向算力租赁。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-spacex-235
+  date: 2026-11-25
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "摩根大通称与特斯拉合并或助力SpaceX纳入标普500指数"
+  quote: "摩根大通称与特斯拉合并或助力SpaceX纳入标普500指数"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinAFBVV95cUxPRDNIYXRqeEtublBlZnRBeTBLRV9RdE9NTUIzcXdwc2NIbG1STEk0MGJrVDhwWWpwbEFZcWNIRUJTalBVZFNOTGlxNmdET0RqWHB2UW5RTUFuZkVNVVd6ZFNnZHo2RktwTVRscWQ1R0p3elFUMkUwdFlHdTVIWXdNa0xnZnV2NVNzX2l3eWdrMUE5NGQ0c1drM3ZVYk4?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):投行分析合并助入标普500，属推测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-spacex-236
+  date: 2026-11-24
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX和特斯拉据悉委派五名董事负责合并谈判"
+  quote: "SpaceX和特斯拉据悉委派五名董事负责合并谈判"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9xRUFBRnp1R18wZDMwUGdpX3JDdlR1elhSQVJpQmI0TDllWTR4V0c0Z3B0blYxRFh5TWpCRkFjbmVmQzlUSE5KOTNFM05QTmFNMXJ3WGs4WktyNEd1cEc0MHNmQQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):合并谈判进展传闻，未经完成，属重大潜在交易。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-spacex-237
+  date: 2026-11-25
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "因Grok生成儿童性虐待图像，SpaceX被起诉"
+  quote: "因Grok生成儿童性虐待图像，SpaceX被起诉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTFB0SDk1Z3JJYmRwYlJPZnBHNEFjVlRCZjNxeXlDMFg4RUUxWFVhbzNQWXJuVEZVUzV3N3BlemZPY1NqdlN6bWpQcnVlVDZXNDExZHM1eXNNcGMzVlYyRFhRUk1wdVlPXzVhSFJFemdLcXktZ0hjb1E?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(med):涉AI生成有害内容诉讼，重大声誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

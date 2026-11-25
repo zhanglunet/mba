@@ -3128,3 +3128,94 @@
   source_type: media
   note: "LLM 预分类建议(med):算力效率细节，正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-24-tesla-206
+  date: 2026-11-24
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD V15推送，实景视图酷似GTA6"
+  quote: "特斯拉FSD V15推送，实景视图酷似GTA6"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPRWpMSVFuX0NjYkQ5RjVRRTYycU95SGFuejZnSHNEN3hReDUxTl8wRHhXVy1iZVJUMXRuOW5FMGg2N0swdHdRbEhXZlBicVFJVmtmc3VjUlpDcnA1cjd6eWRjX0hQTmJiazZHUm1HTkJPOUdIWEJuRE9EQnBEZ3lxVA?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD重大版本推送，产品力事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-tesla-207
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "瑞银称，特斯拉的垂直整合使其在美国机器人出租车市场中占据独特地位"
+  quote: "瑞银称，特斯拉的垂直整合使其在美国机器人出租车市场中占据独特地位"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMisgFBVV95cUxQZHk2WnJDemR2ZDJqRHB2QUZ6QnBaQlRZN2l5RzNYampsRktSaS1qQVlUYjQwUUNBY1RUdldRQ0NjdWlxUjRMQmhScWhtSWxQQkwzaUktZldHWWlNbkk2REd5V2JDbHVCUm5hUDh3S2Y3NWNqTTVPN05MTDUzYTZWcllLRko1MlN2cUdPMEdUWkFWTHowSTd3U2Z2ZFJxVGpJcGF2ZkhqWWRrdlphajNlWkxR?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):瑞银正面评估Robotaxi竞争地位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-tesla-208
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "特斯拉拟斥资31亿美元在得州建设光伏多晶硅工厂，目标2030年投运"
+  quote: "特斯拉拟斥资31亿美元在得州建设光伏多晶硅工厂，目标2030年投运"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZUHMxTmZQdG5YVGk4S1lWbDBOV01lTUhlNmV1NTMya0huZmVmUHNQTXBveDdHU015eEVOamJBTnJuRjJjb2J1VnA5RlloMmJNakxQUThoUkJlVUJDcXdLZE1BS3NMUmZoZmduQXhzb0ZVRXNnbnJadXh0NFFwQQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):31亿美元重大投资扩产计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-tesla-209
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD V15半小时体验 可视化达GTA 6效果"
+  quote: "特斯拉FSD V15半小时体验 可视化达GTA 6效果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE5jTlhEMGtqdnh6XzJwTGF4aDFud0d1cnNzZy1Ja3prd1dmamtVMEkxbEFDS0xGeFZuZWNSUm5Kamh0dW5TVXNTSUU5RVFWWUk3WlQ4ZXA4V2dBRFVwRzNjR3JDY0VEWG4yRjFqUU43QnZTVG8?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):FSD V15体验报道,产品口碑信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-210
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉V15以低延迟渲染Tesla Vision界面人形机器人复用同视觉系统"
+  quote: "特斯拉V15以低延迟渲染Tesla Vision界面人形机器人复用同视觉系统"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxPMjdVWkpPS2h0cjF2RzZkakk5VVk2TUk3bDhib2JlTExIS0pnUm16V3dIMlhNbzI2UGpnQXZia3dSaUdYa3ZaM1pncDI4azc3YnAxZmhYSll2UlFDNnI4dEJTSlJveFh4MzA3NlQ1S3l5ZW10M1lSMTVoeHh6bEJXUw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):V15渲染技术与人形机器人视觉复用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-211
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD V15开始推送，新增Tesla Reality View界面"
+  quote: "特斯拉FSD V15开始推送，新增Tesla Reality View界面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxORHhBME1KV3EzUHh0bjN5Y1E2Z2JUYUo1SnljdVo5c3NZdjY5bi0ydVllZlJNOWMtSGNWTlRScGk0dDNoT3p6aEhoemQ1YjU5RVczRnFLejk0cTZId0NXYXdhUzFlaTZrTE1TdVd2bjFJYTFoXzRRNmU2VEs2ZXMtRw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):FSD V15重大版本更新正式推送。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

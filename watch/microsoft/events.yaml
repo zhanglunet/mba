@@ -3296,3 +3296,64 @@
   source_type: media
   note: "LLM 预分类建议(high):Edge产品体验更新，信息量一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-24-microsoft-217
+  date: 2026-11-24
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "AI PC 的 NPU 为什么闲着：微软官方那张支持矩阵比「硬件超前」更说明问题"
+  quote: "AI PC 的 NPU 为什么闲着：微软官方那张支持矩阵比「硬件超前」更说明问题"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xdDZmLUxDbkd1SHg4NHZTZTJWRFNWYlczc0RSYXNWdllPczJoQzJBSW9UeUNBcGNLelM1bjhmeVhvdjZzRzVvWEl6eV9UaTVJQnFkYmNBUVNoT3hG?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):批评NPU支持矩阵生态短板。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-microsoft-218
+  date: 2026-11-24
+  dim: W3
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "Outlook宕机24小时后，微软启动“红色代码”"
+  quote: "Outlook宕机24小时后，微软启动“红色代码”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxOZFNKZFVGTXhJLVpyaWxPenNvdTBCelZONUM4dDA3blZ6ZlVIbVJQQUtkRnZuS3hwazI3MmJadldPRWxvUENFRHo5aXBDeWNlVGJCU3FVZ0lKZVVJTDUxNmE3MGcya1d4ejJUTTNRT21UMUVXVUdKV21XUTRMMUtvQ1RVMA?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):大规模服务中断重大事故。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-microsoft-219
+  date: 2026-11-24
+  dim: W3
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "微軟全球大當機後 啟動「紅色警戒」行動"
+  quote: "微軟全球大當機後 啟動「紅色警戒」行動"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1TRjZiOF9OcGVZSzVjR3ZsZm1jSEJteVFCQlV6cFRRUlljQXRfX3RxcEpWZ056c19tYUZLdWtWdU1zOUNYTloyMkc3RmcwUWZad3ZhMWxTV1h6Um5ON2NwVWtn0gFnQVVfeXFMTXg2ZUJTOTB0X0d4TWdMVlFTWGg3R183dENZQWZ5T2hFclZQMk9qdmVJbHQyNkZVVzVxYWctWjhKUVdTTHlVRjB2WEFLcUhwdmdVaDRqamNZanNaLVVBZlZfWFQ0TVZ6Zw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):全球宕机重大事故同源事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-microsoft-220
+  date: 2026-11-22
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软承认Outlook服务在此前中断期间部分电子邮件被退回- Microsoft Outlook"
+  quote: "微软承认Outlook服务在此前中断期间部分电子邮件被退回- Microsoft Outlook"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE11S0pEaENEVVB0MnZ6eXFYczBPbDJVcWM0ZEFkUVJ3bGJkZzItZ1JNYkRSNVYtQl82dzdjUGZVVkNPTDdIblpNR1JRUWgzbFhTckpVYnR0VVZFZmI3ZXJDdw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):宕机后续影响官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -205,3 +205,19 @@
   source_type: official
   note: "LLM 预分类建议(high):官方认可资质获得，品牌能力认证事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-22-qianxin-014
+  date: 2026-11-22
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "再度登榜！奇安信入选2026年度Wind中国上市公司“ESG最佳实践100强”"
+  quote: "再度登榜！奇安信入选2026年度Wind中国上市公司“ESG最佳实践100强”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9KMVBUR3VkeGNSNDdzMVJTMVd1dDZZZWxTc0hoeGR6TVhNUEhkVUJjRUN1X2ZQMVlJTDBlN1I0SkZXTlN2LXZwVUdSSHBOOUllRDQxTTM5NnZiSTRoSWc?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方ESG荣誉入榜，正面声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

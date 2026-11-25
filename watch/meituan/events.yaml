@@ -1446,3 +1446,19 @@
   source_type: media
   note: "LLM 预分类建议(med):财报发布预告及分析师预测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-24-meituan-094
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "美团股价延续跌势，主要 ETF 大规模清算后动能疲弱"
+  quote: "美团股价延续跌势，主要 ETF 大规模清算后动能疲弱"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxNcTJjblY4azJIeURrRVE5VlpiSlkwZDV3UC02ZnozYzF3c1pSaTRtSjdvM2o2REktX1gzM0EzbVliSGNyaVZiTFJTWExmd3VORHBoQkVtcUJJNkFLVVNHaE9DQkNDazMxd3JMWmc0N2tqYWQ4NHFqSncyZl9PYmYyRXdPMm9McmRXbVFfaUt6bHB4Ty1DN1Fv?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):股价跌+ETF清算，属行情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -4145,3 +4145,94 @@
   source_type: media
   note: "LLM 预分类建议(high):主力大模型正式发布并全面上线。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-24-openai-271
+  date: 2026-11-24
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "GPT-6 models demonstrate intrinsic protein-design capabilities"
+  quote: "GPT-6 models demonstrate intrinsic protein-design capabilities"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxOaUdETW1TNzZiLWl5Z2lOUkhpRmtFMGNxY2dRVV9URkpQX3RVRGpVZGk5Q055WEY4elV1X2VHWlVCYzZTQUMydEk4YThidXZUOUh4dlBZVmpfZ21jaTZIeVRQaEFmdFN5MDNkNDhhYU5qdTJEN3ZQeGRXNG5NS215c3hxa2hFbEFjWW1DVE93UXFkdw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布主力模型GPT-6重大能力，P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-22-openai-272
+  date: 2026-11-22
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Introducing GPT-6 Sol and Luna"
+  quote: "Introducing GPT-6 Sol and Luna"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4SldKWWgzNDExSThTZW9MRTQ5WHE3VFRZMl9oSjIzaVhuZEZaY1ZSUTFxZTJFaFpUanlncTQySUg5SlRGVnNkQXZ0S3IxLWJScXNkLXY2Z3Jzbk5WR0UwSFp0NmUxN3c?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [origin, leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):官方发布旗舰模型GPT-6，P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-openai-273
+  date: 2026-11-23
+  dim: W2
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI花65亿造手机，图什么"
+  quote: "OpenAI花65亿造手机，图什么"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE40dWZ6UU1wel9sdm1GZi1LYmgwWV9KQlkwMmFMb0Nya1k2LS1RNk00U1REM2NXS2s4OTB1ZFd4VmtESlJ5bEFvQnEtaHRQdDRtblhQRElWQWR6VTY2?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):涉重大投资传闻，值得跟进。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-openai-274
+  date: 2026-11-24
+  dim: W7
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI首席科学家预警：AI研发明年或加速突破，呼吁行业共同设限"
+  quote: "OpenAI首席科学家预警：AI研发明年或加速突破，呼吁行业共同设限"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE40eDRVdTdObzlmSVB3TGFtRmczLVlOajR4WHJSOTZVN01NbnhpajUyRFJKdkdsM0lpSWQxeDE1T2tHTEdlTFlZNWNoTFQ2c0xtWTlhaFVPSS1KamZieG1nbU1ZTXdZQQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):首席科学家安全呼吁，涉品牌立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-openai-275
+  date: 2026-11-24
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI与Anthropic员工与管理层产生冲突因安全分歧_CNMO"
+  quote: "OpenAI与Anthropic员工与管理层产生冲突因安全分歧_CNMO"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSkFVX3lxTFBoT0JJYVJOcS1taXNFVEUzdFBPY3pOUW9oNUh6N2JzQ2VxZ3kwaVQ0NUR3X3E2NnV1QVFTS0hkbHEwOWl5MDhRQW9R?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):内部安全分歧冲突，负面传闻。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-openai-276
+  date: 2026-11-24
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI 称 GPT-6 无需“外援”即可设计蛋白质，实验室初步验证有效"
+  quote: "OpenAI 称 GPT-6 无需“外援”即可设计蛋白质，实验室初步验证有效"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE9fYWJjWkR0UHBTRGVEV1k5UXpuYkdjeV94WF9ibGkxUm5EUXk3cFpoQndxenZ2QWQxX0Y3VW9pTnptcG45S3ZYLU1ucmNJTl9hcDM2V3hKWEJxTG1vX2xaQ1BLWlZGUG9RYTdwSW9tQ2hhU0xhRzA3XzA0SWk3Rzg?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):GPT-6 重大能力发布，官方转述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

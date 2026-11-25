@@ -3882,3 +3882,139 @@
   source_type: media
   note: "LLM 预分类建议(med):Nest退场Gemini接管，产品线重大调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-24-google-256
+  date: 2026-11-24
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability."
+  quote: "We’re launching Humanity’s First Exam and a Kaggle hackathon to test LLM reliability."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxNZndyalo1NGlxbHFTMk5kQXhSakdGTVBMSzh6bGJXS1JvN2ZndWlyZVQzZmVOTGcwc0VrR01odXRBbmJBTXZ0dTJhdmNXM2ktVnlIaWtKanMzRkVUUGJRV01xZE1KWER3RngzamFSVXllYVZqVUN5TU5xZ2g3Q2NnSzcyN1hfcW5fX0x1MEFLb0xqX0pzdEMwOFU2UQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):官方评测活动，非重大发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-google-257
+  date: 2026-11-24
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "How Gemini is changing the game for Golden State's organization and fans."
+  quote: "How Gemini is changing the game for Golden State's organization and fans."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxNS1dHdlZpMHEtYjU0TXg3UUVJZVRYOFhTZ1hQMTdZQmxxd0htS3Q4enJFMDc0WmVBQ0xtdUNrUG1iMFhCX3lVSWRnZmhkWXlXZ2lwanBfUGVvV19MSjBhR2tsVVVvMl9zSWsyWDZ2NDFqQ0tqRHZKY25tUnVaMHd5eEI5TUZDdw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, identity]
+  source_type: official
+  note: "LLM 预分类建议(med):Gemini体育合作案例,日常宣传。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-google-258
+  date: 2026-11-23
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Organize and share your holiday memories with these five updates in Google Photos."
+  quote: "Organize and share your holiday memories with these five updates in Google Photos."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxNXy05SDhBWURUemNaWDR1RVQ2RjRXWnU5cmFhU2tFbUY4c01JaXhzeWFPcXJMeC0zZ0drUmF4R2FlczZRU1BCWVZVMkd2ZGw2V3RkR3EzVWpXNVpyZTk3Qzc5dDJmOHowR1VOdzdaVGpXMGwxNjJXSWJpY3hCSnJsSl91Rm5nZDYzRlM2LTg0TUN1Y05HdzlLQUJhTHdXeWc?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):Google Photos功能更新,日常。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-google-259
+  date: 2026-11-23
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Here are 4 things you didn’t know you could do with Gemini Canvas."
+  quote: "Here are 4 things you didn’t know you could do with Gemini Canvas."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihAFBVV95cUxPcXB1SVIta1ppS3kzX3o2b3VCSkhGTF9XYXlfZEl6dU1sR2tQbVZNV2V3cXMyZllDZXotSjRIYlBRODJzeHJaYWJ3QWRuWkduUTl2Wnl5S0JnUUctZzNYdlVidVRBZ3lpbmIzdXB0d243YUFSQXVPUEx2c2VVY0Vvd3dIRXo?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):Gemini Canvas使用技巧,软性内容。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-google-260
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "See what 6 builders are making with Gemini 4 Hydrogen"
+  quote: "See what 6 builders are making with Gemini 4 Hydrogen"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxNOFMzU1NOanNrRW1LV3JoRjdpMlU2UHVFNkhaNHVHWGJZeWFrd2RoX0VvSXlJWGpsb0thOHg4dTlUblk4X0pESGxQVmQ0Y002ekZIRkRBZVhyUnRObGpTcEZkdjQxeFhmWmlib1pBX1hCMi1NRVo3Rjg0bVh2N2p0eTMxakdlTkpMZ0Jqa1lsZ3h6ODdLMWpQdkNpVzNfMnV1?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):Gemini 4开发者生态展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-google-261
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "See what 5 builders are making with Gemini 4 Neon"
+  quote: "See what 5 builders are making with Gemini 4 Neon"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimwFBVV95cUxPTkViODd2SnZMN05iTFpjM0hDbDhWal9IRDRMWFc2dm5vdTluRVNCSHJUQlVxUW9QREo3ZWhfc0hrRGZVQUFBT0JBYkYxZVdxUkVNUk5RNzBJLVVSOFVzVUtuaXlkRjZzQWY1dHVKcHloM1J3T0lsenlJMnZJM0JVTW1QXzNrY2Q2bm5OZzJENWxVM0Z1Ymw4NnRYZw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):Gemini 4开发者生态展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-google-262
+  date: 2026-11-24
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Google研究人员展示量子芯片在逻辑游戏中胜过经典计算机的案例- Google 谷歌"
+  quote: "Google研究人员展示量子芯片在逻辑游戏中胜过经典计算机的案例- Google 谷歌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9aR3M5NjJHSjJHdnd0STlVc0diX2R5SGp5YWhRMmpqcExDUC00X1hHTHRleEFCMW5ta2ZzU05DSW00R2NJOWNodHF6aVc5X19GMDVZZ3RfajhoYTJxeXB0aQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):量子计算研究成果展示，技术能力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-google-263
+  date: 2026-11-24
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌将停用Nest应用，后续迁移方案一览"
+  quote: "谷歌将停用Nest应用，后续迁移方案一览"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxPY1VoZG5VVTVFLTZlbXk4RzRFNzBUSHF4RDdvUnh4TlRMVWl1bi1HeWNBMldVM2hORVlueGVXbWdYZjlWbk1Ddl9wQkZFaEFyeEMtYm5WNE5Ed1RNQUFlaTU2bURzMEZWeVJQOThnRHk5alc0Tm5vX0hLamp4YXdRNU9nZlQwc1gw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):停用Nest应用影响存量用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-google-264
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "谷歌又出新招！AI搜索接入消费记录，连你花了多少钱都知道"
+  quote: "谷歌又出新招！AI搜索接入消费记录，连你花了多少钱都知道"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5wYzFUdEJmYjlBYlpRQjYxcFNCR05Eb0M3N1pfQzY4S2xlQVFjRW5uVTN2bGM5QTEzNU9CMVdBZTRJOFlHLU5FZi1JZWs3QQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI搜索接入消费数据涉隐私争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

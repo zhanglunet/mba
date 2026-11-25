@@ -2508,3 +2508,34 @@
   source_type: media
   note: "LLM 预分类建议(med):Cursor弃用中国模型，波及Kimi海外渠道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-25-kimichat-164
+  date: 2026-11-25
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美升級芯片及算力禁令 阿里巴巴等中企受影響"
+  quote: "美升級芯片及算力禁令 阿里巴巴等中企受影響"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9FUW04bWNVaDBpcXFCTlpkRlRDdlhmX19iTC1kc0RMMGdwb3VOZUZzRmI1MENEcjJsU2NZUlVkWENKaWFoSzdGbmtoS0owZ1NVWEpFc05qU0RFQXpSdVk5a0d5LXlKeTTSAWdBVV95cUxPRVFtOG1jVWgwaXFxQk5aZEZUQ3ZYZl9fYkwtZHNETDBncG91TmVGc0ZiNTBDRHIybFNjWVJVZFhDSmlhaEs3Rm5raEtKMGdTVVhKRXNOalNERUF6UnVZOWtHeS15Snk0?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):美国算力禁令涉中企，或影响月之暗面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-kimichat-165
+  date: 2026-11-23
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国堵死AI芯片后门 中国AI有钱也难租到算力！"
+  quote: "美国堵死AI芯片后门 中国AI有钱也难租到算力！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFBZaEJPQWVENHlWeW5aczA1NkpyeHhKV05DMG5FTFYwT0Z0UGg4VVlIeGF6Z0pLUEt0bjZlSU1pcTh3RW9MNEdVMDZ6QjdYQlNXWC0zY2VJUG14dmV4R3dVdW5jbTlFaURGd0tOdFlwUXhZU2tjbElEdVFxVjFhTk0?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):美国芯片管制波及中国AI算力，行业性负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
