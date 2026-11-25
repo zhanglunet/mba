@@ -2890,3 +2890,49 @@
   source_type: media
   note: "LLM 预分类建议(med):云服务新功能上线，一般产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-24-amazon-190
+  date: 2026-11-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "‘The Lord of the Rings: The Rings of Power’ Season 4 is confirmed. Here’s what we know"
+  quote: "‘The Lord of the Rings: The Rings of Power’ Season 4 is confirmed. Here’s what we know"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiogFBVV95cUxQWXhHMkMzRkNtVmN1YTVlNmxodWdFSkVoUFBoa3RjOTVDajhJSUltNUw0b3d3Z2lzOUdhLWNDcmF6UUpEbmZNNU83RVZvYjdZMjVlZXNHVXZaYVd2TnhyRzhaelBPVHV1cjlObkxsZ1Z2d05SbndYMFFOMEdZdURHVWlnT05idXZfLVEtWTN1QmNJQlc3VWc2cXZ2d1FnZVZ3SlE?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):旗舰剧集续订官宣。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-amazon-191
+  date: 2026-11-24
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Vulcan火箭故障后，亚马逊将加快Falcon 9发射 — Ars Technica"
+  quote: "Vulcan火箭故障后，亚马逊将加快Falcon 9发射 — Ars Technica"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitwFBVV95cUxOVEdlMFdHdWhSbXk3STdfQmQ4ZUFNYzJ0cWJlNGo2SlZwWkZWU1JDOVFydG5GNENHWkRwV3NreGFxSW1kMWpJd1N4RnpjRjZTYXppVDBVS1d3SkxVQ3czYzlNTkVRdG92MHRsdFV3cWZuVUd1Vk44TW80MTdwMlJBVHdPaF83UkpfTlhrbVNGWlc5cEc2dVMxWEw2YndQWVI4U0FmSFhOdU9vNDR5T2tocS1ZX2NZV2s?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):Kuiper卫星业务发射计划调整，实质事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-amazon-192
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊续订《力量之戒》第四季——《综艺》"
+  quote: "亚马逊续订《力量之戒》第四季——《综艺》"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinwFBVV95cUxQaFJZbEpFdUlXZHlieXBHNHhGT0V1djBPaUtMWWZGeU9XeDctWlJXZU81bVZ3SzRTOU14QUdudjJCMHJMZE8zaFVLMlZuNEtVQ0NORlZkc0Z2WGVIUUNJVWFUQ3NLVjNiU25vRmJkSGZEWHJBekMzMnhVM3ZFNW1zWk9vVzRpWExJLVgyTEcwTk5zRzNCc0xxUlZiUVNZVXc?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):内容业务重大续订，正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

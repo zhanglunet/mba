@@ -4169,3 +4169,139 @@
   source_type: media
   note: "LLM 预分类建议(high):IPO定价公布，关键财务事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-24-anthropic-274
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，Anthropic内部Claude模型独立攻克代数版P/NP问题，全篇Lean机器验证通过"
+  quote: "刚刚，Anthropic内部Claude模型独立攻克代数版P/NP问题，全篇Lean机器验证通过"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE83c3F2Mmc3aVlhN2loaXhnaDJhU3ZVOW9oUzFMYzJobjEyR1BRdVRMOFFpODF6NlN0a2FiWWdhNnhTM0hOdUN2SlF3UTQ0NHBiUlJOdmF2MThDY3Zw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):疑似重大能力传闻但来源社交媒体未证实。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-275
+  date: 2026-11-25
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推出Claude“安装为应用”测试版 覆盖Mac与Windows"
+  quote: "Anthropic推出Claude“安装为应用”测试版 覆盖Mac与Windows"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Kc2VJaDhXNHh6T1VxNjlhdWFaNXBFd1AzSHFTQVBHUUFad2thdVNOQjZIdnpjLW01OGtJZlJiZTFlWmdac1lHZUtHSjF3X25JRVhYMWM3YUdRVWF2MVhFb3JR?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方新功能发布，产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-276
+  date: 2026-11-24
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推Claude Ship：AI代理自动审查代码并批准变更"
+  quote: "Anthropic推Claude Ship：AI代理自动审查代码并批准变更"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxON2FoVElyYV93c1NaakRsb3dnNndjMmhieDRZbUpHNGZYSkk2X2p5cGdvZWZ0ZGF0emlDTWYyNllyN2NDV1B6OUNWRFR0SnhoOEhHM285cERHSkJpMDVYYW5PQnlFUGxybnRUR0hjQjNGZTNoM3lzUmlGTTljUlNFQ29EcFZBMUVmd3FwVA?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude Ship 新产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-anthropic-277
+  date: 2026-11-23
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic向企业交出AI数据控制权，Claude Ship同步上线"
+  quote: "Anthropic向企业交出AI数据控制权，Claude Ship同步上线"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NQ3VQSzIxWHpTNUJtakotckduXzFpeGJ5RDM3dTNvMGhhREhlU3g2T01xa29QRXFlMTlwQlQ0WlU0TTd6aG9hWVprQm9Bb2JvMWVZ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):企业数据控制权政策+产品同步。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-278
+  date: 2026-11-24
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DXC与Anthropic推出AI代码安全服务，利用Claude Mythos识别企业软件漏洞"
+  quote: "DXC与Anthropic推出AI代码安全服务，利用Claude Mythos识别企业软件漏洞"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPaWFWZWhUWWhfS2JodTUyX0VOQ24xNjc1S1VaV0NPZmQ1Sjh5MjlBc0o5T3VQeTFYRC1QbFdicnJNSmhscE5xTUx4Z1dSMWFXaHNxenpXRkROd0pUbjBrZXY5VXJYMngyNkpCQk5zN1ltZFlOeERqY1phZ0lpZms3eEQzYjJDS0U?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude企业级合作落地，产品能力扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-279
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic评估智能体沙箱越界率"
+  quote: "Anthropic评估智能体沙箱越界率"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE92ZU1LcldQZ1hZUVpGbGxQY1lENGxnRzhsOXltUnBnbmhHLXk2c0NWNmYwb1lQc3ZjNjZseFR0b2tPcjVKMk50bTVUVm8?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):安全评估研究，体现负责任AI立场。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-280
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic Model 4：我们对这款未发布模型的了解"
+  quote: "Anthropic Model 4：我们对这款未发布模型的了解"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFBvRk10ZFJPeXNxNlo1WWtWWFV6NUtyNXdRYm5kSzdDTy1FaTUtb25SYlJQYUtnVy0xUmd0U3pwWVRWSklMOEliMUdpeS1aRXVpVVZEVlZqaEVMZ3VLSElZSF9jVmhiV1JPVXpr?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):未发布模型传闻，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-281
+  date: 2026-11-24
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic研究员称已用Claude证明黎曼猜想-人工智能"
+  quote: "Anthropic研究员称已用Claude证明黎曼猜想-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9TTkZ0bklobTBXWlhTTk1nd2liVTR6Q18yTzJUcmN4TTloaEZ6RXpxT0phYUJjcWRLRVRSWC1BUmluODFON3g0M05PbnN5RHJoNDFkcTZnYkpoeXZycXc?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):重大能力声明但真实性存疑易引争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-282
+  date: 2026-11-24
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Anthropic的Claude Ship让AI编写、审查和批准自己的代码"
+  quote: "Anthropic的Claude Ship让AI编写、审查和批准自己的代码"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMizAFBVV95cUxPQ2lacEhMbVFFNHVoOE4yNEJhbXIwTHh2Y2p5X0tZU1NjaGJqZnpOUlQxU1VzVTh6MGE4eHZ5ZjM1VGRJWXJvOEgxZWR0TXQ0c1hGbFNsMEt6OU5UaS1LOGdWTERTMldMMjMxN01MRlFpcEVzcjkxMVM1N3dCdEd1cVNZZ3lpMHBMTFpORk93Si1PWGJTMjNIejlFT3VTUHc4MGpRQXNYdGdaOUsyMTBkRnRXbXh0OTlZcEVZNmdzc3RmcHQ3bUk2eVdLRUQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):AI自我批准代码涉安全性争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

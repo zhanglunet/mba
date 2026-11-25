@@ -1243,3 +1243,49 @@
   source_type: media
   note: "LLM 预分类建议(med):第三方评爱马仕顶级地位，轻品牌资产信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-22-hermes-081
+  date: 2026-11-22
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "榜单 | 全球排名第一的高端和奢侈品牌：价值超过2300亿元，领先香奈儿、LV"
+  quote: "榜单 | 全球排名第一的高端和奢侈品牌：价值超过2300亿元，领先香奈儿、LV"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE41S2YyOGVDMzlXUnlqX2k0MmVhaEVTWm1haHZIODMzQmRONnZKUTFXQnFBY09EWW55a2NFMTVYaXNJV2IwSUFKNjB5eFhVYkE1VzN4dzZoWlBacjJt?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):品牌价值榜第一，正向舆情信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-hermes-082
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "爱马仕，逆势稳健增长背后的“定力”与“远见”"
+  quote: "爱马仕，逆势稳健增长背后的“定力”与“远见”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQEFVX3lxTE9SOFR1ZngtS2ZNZWZzNm1RVE9iS3lOVTBZNU9oQXFaY2RaYkUtS1VJY09SdDAtU1BmakR6TG5yZDU?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):媒体分析稳健增长，涉业绩。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-hermes-083
+  date: 2026-11-24
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "2027 年爱马仕跃马障碍赛在巴黎大皇宫举行——日期"
+  quote: "2027 年爱马仕跃马障碍赛在巴黎大皇宫举行——日期"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSVpPbFJyck56c0VoblQtUU95Z1RzVXhjLWx2eUItYzNGRjFoZGZ5bS12Rk5ndDZoTmF6cHBwUGdxNERjblN1cUVxUUZ6MmU2Skt1SjVhMHVqdU1taUlfOGRzN0pUenpSUGZKY0FHY2xuZ01Famxac0hLam80R0JCMmZZX2plQnVySzlUQ0QzMUdkTDlpbGlTNUNfdlJITTZPRHhfUmpRcndWTDJjcnV5d2tJRHFjUEl2d0ROMXZmbG1MdC1LTXdyeEhsa3VnclZtSVY4dU9fQXNqZS11X0x0TUhB?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):品牌马术活动官宣，正向文化事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2606,3 +2606,109 @@
   source_type: media
   note: "LLM 预分类建议(high):创始人财富话题，品牌身份影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-22-deepseek-171
+  date: 2026-11-22
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "AI 观察 · 11月23日｜DeepSeek 千亿融资落地，OpenAI 的模型给 AMD 改芯片"
+  quote: "AI 观察 · 11月23日｜DeepSeek 千亿融资落地，OpenAI 的模型给 AMD 改芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mZFRLLTA5ZWYwQlJKejNDODR2Zjd3QzB2MldUb2tpQ0pjODJ4aG1jSUxQdnVXdW82RW54MzlIMG5YZGw3VzlfNWJJTDQtN2xwVmlKTno4UHVSSkRG?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):千亿融资落地，金额明确且重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-172
+  date: 2026-11-24
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "这才是资本盛宴啊 | 梁文峰17号退出了杭州程砚企业管理咨询合伙企业，根据此前杭州程砺，杭州程砚大概率…"
+  quote: "这才是资本盛宴啊 | 梁文峰17号退出了杭州程砚企业管理咨询合伙企业，根据此前杭州程砺，杭州程砚大概率…"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5PYnUzSldqZDhLbElGR3ctR2tRU0FPTUxyd1BkcEE1VkhidmlobUJoclZzWmRfc3IzQkxlNDkxdFQzM2h3T2dVdkVkRmhnWTl4bTRBSExkS3Y?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [origin, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):核心人物工商变动，信息量中等。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-173
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek最新估值或达6078亿元"
+  quote: "DeepSeek最新估值或达6078亿元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwFBVV95cUxPaFVIZkxiT21vV3k1aUpwQTV4NWNwMGNLYzduMVdjdVNnRVBFQkFVVlJIX2JWbjgyYUN4ekI1V2xqQnRkV0JMellKckRhRWktY2N1X0lfWEk4Y0lka0Y1akM4dUdId0N1V2U0aGJBM0hqQzdUQlZkNFplNklIcVdkSmlhZw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):估值传闻，无明确融资完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-174
+  date: 2026-11-24
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "梁文锋身家达550亿美元 为全世界最富有AI模型开发者"
+  quote: "梁文锋身家达550亿美元 为全世界最富有AI模型开发者"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTFBkUXlhZUU5YkhWcXJZU3NpdGtuSGRMbEtoOFE0MzB1bDBZVUJFbkVseC1hbjNUaDRxTWhBc0g2ODMwZ2tTd2ZXMXJFMUF2cjRuTVlsbVROZVgyQmM4OXc2YlVFSjY5TjJkQ1VN?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):创始人财富报道，衍生舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-deepseek-175
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "知乎参投的基金间接投资DeepSeek，获低个位数百分比股权"
+  quote: "知乎参投的基金间接投资DeepSeek，获低个位数百分比股权"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE5sUHRuQUg1ODdQcmFNdlY3ZUI0S0JFNWNLeHZTMXp4eE00a1hXLXd2MlZiYUpGZ1ZBTHpPNTd4TGFzTEJ5ZlJyaEhoTmNjaXR0ZU9hRW9ucWJBTzV4aVIyYXkyT3Btdw?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):间接投资股权披露，非品牌直接事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-176
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek注册资本增逾两成 传新一轮融资后估值达6078亿元-证券之星"
+  quote: "DeepSeek注册资本增逾两成 传新一轮融资后估值达6078亿元-证券之星"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLWjh3QVVRalRNMFZqQmhyWEN6VTVWd1dEMlViTy11bG1KZVl6MnM0V243LVhGeFp0Z040RzNwU2dta1Q4NGM2LVlYZzlrek1BZXhTNkUwR3o2WWpDb1E?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):融资传闻,金额未确认,非官方。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-177
+  date: 2026-11-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek梁文锋膺全球最富AI模型创造者"
+  quote: "DeepSeek梁文锋膺全球最富AI模型创造者"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTFAxb3g0S2NqNE1DRndkQmpZMUF2Y2pueE12WkU4d3JnTkRkc00teGFVUERrLWt1U29KbnN5Q3EzdUJiSEhTNkljZ3h0LXlPTEhxYmlVMUM5UFF5SUI0YzZDb2VIX05sQ0liT2dFNlNHQnNZUGM?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):创始人财富榜,品牌信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

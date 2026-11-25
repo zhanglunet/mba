@@ -3293,3 +3293,109 @@
   source_type: media
   note: "LLM 预分类建议(med):核心高管变动，重掌公司。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-23-nvidia-217
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "英伟达董事会被曝短时间敲定黄仁勋回归，临时CEO等管理层不知情，英伟达在急什么？背后暗藏哪些博弈？"
+  quote: "英伟达董事会被曝短时间敲定黄仁勋回归，临时CEO等管理层不知情，英伟达在急什么？背后暗藏哪些博弈？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9rZ3lBSDhYQUhwQ3FpbjdTT2p2dl9pNXZ6SGgzdTgzNGl5bWFVeHRZazduTS1vOEpxSFZxOUE2SktUcGdnUTNWbFNjYnlBRDQxbkxtVFVlZHFKWEdvUmow?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):核心高管变动传闻，涉董事会博弈。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-218
+  date: 2026-11-23
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达卖空者预计亏损122 亿美元，创下 2019 年以来最大单日亏损，怎么看待这次史诗级空头暴击？"
+  quote: "英伟达卖空者预计亏损122 亿美元，创下 2019 年以来最大单日亏损，怎么看待这次史诗级空头暴击？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9XdkQxbkZmY1dhVzQxOElrRzZSQWFaVFRMXzNIMkNYd1daZXJLS2xQOWVfWFVXS09rX2hsUUpSVHBWdWIwTjJkQUVOUmpubU9sSXR6TmtsOVdTS09COGxr?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):空头巨亏反映股价事件，偏行情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-219
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "特朗普称亲自说服英伟达董事会推动黄仁勋复职，副总统万斯出面沟通，白宫为何这么拼？这波介入起了多大作用？"
+  quote: "特朗普称亲自说服英伟达董事会推动黄仁勋复职，副总统万斯出面沟通，白宫为何这么拼？这波介入起了多大作用？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE1la0pFcElsMWU2enNiTUg5eVFKLVBTT3gzNzFnbkM1VzFfLThCUExnZllOTzBiVGtBWHV4ODhOUEx5QjU3aHZmRUFkUFZkelpEdV9WYUxCNldXQXg5LXRr?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, origin, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):白宫深度介入高管人事，涉政治。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-nvidia-220
+  date: 2026-11-24
+  dim: W4
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "Nvidia丑闻：美国将Megaspeed列入黑名单"
+  quote: "Nvidia丑闻：美国将Megaspeed列入黑名单"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5V29PdnQtSlVLa1JxWTg1OVZCUGZTRzAxalRVZzRUcEQ1aHVsSk9EWk5fUWZZMXRoQWl2N25xNEo3VjNtNjNXX0UtbHVwOE1rZWJkRVBJVmFwNmcwaWxPQzZiUnZUZEnSAWxBVV95cUxPZW9zTGRKOTdIN2xrWDBiNUJxUHVrY2hyYlMycnRIYVJ2alRUZGhHYVZveGFkOXhYdzhuNTRoeURPVnVrU1A2SGFQRHViNV9RR3JIZnZSM0xWbHVDdVBKY1VfdEQwNEJEUGxkQnc?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉品牌监管黑名单事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-221
+  date: 2026-11-23
+  dim: W1
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达重新任命黄仁勋为首席执行官"
+  quote: "英伟达重新任命黄仁勋为首席执行官"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE93UG8tZnpzT2Jja2VqOWV3d0M0MXQwX09CX2JKZFh1ZnVEaHp3VW83c0lBM2ZuUEs3U2F5LUUtYll1OHJqMWpJbGVweGxidWN4dVZDWFBTQWNNTDNjbHhKUmNWbVpEOFF0eF9RNGZsUnlfQQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):核心高管任命，重大公司治理事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-222
+  date: 2026-11-23
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "黄仁勋X账号简介已变更为「英伟达创始人兼CEO」"
+  quote: "黄仁勋X账号简介已变更为「英伟达创始人兼CEO」"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE0wNmZ1dXJmVk9HbTctTS1nM3lzTlg3T2xYSGRaSnM2RTdqSnZMV2M2a1h0YUx6MVBPLXNfRHZxSWFMb1BPMWU1MzR1WTV3NWY2ZzBSOEp6RG9qekhLaGZDeXpzOXZZUQ?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):高管变更后续佐证，轻微但相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-nvidia-223
+  date: 2026-11-24
+  dim: W9
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "NVIDIA｜黄仁勋复职特朗普力挺 贝森特态度急转弯背后藏何玄机？"
+  quote: "NVIDIA｜黄仁勋复职特朗普力挺 贝森特态度急转弯背后藏何玄机？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipANBVV95cUxNZkllWThJQmJrQzJ0LWFoanZkT1VJRlBPbVpKa3BFZ2ZlN0NvaFUtWElkQ0NxYUYxcDc5TFZFQmIxQzdoV3g1Z3N3ajRncGhNT041eTh2YmdKNWJHbm1ZMWh3S3pIQ0RPMGVRZ1pmTGpBZWpyd2tUTjNrRGZsb1QtbmlwNkx1d3dZa1U4bVV2OFlPUUxvSTdzSEJrbFNEYjRzd1dFbXhlR1pQejh5WmFXYTgwWGdoeDJwNTRKNGtxSS1IQ1RQMkNuS2xhMEFLX2lPRjVXX18tNlBrVGREMzh4ZXZET0ZRdWhlNXVGdmF4UUFaUFRpYkVTWHRXR2EwVGFuN0UxVVk1SVpma0JRbW9BRWlRU1B2SkRKcWNvcU94eVFUZ0xoR1ozVnZyNWpLNEN4anBqbXZLVFZpRi14WW1aQUllajBXeG5fR0VJemRsYkJ2U1VaLTUyVVR3SEViV05xWDFmZlFhZ1p1X1Q4djlZT3BFWXhidkpsOGo2T0s4TnlCbHlsNGxSbGxFc0UwdGJjMEtWdkZVd3JUMmpQYlZJQzhTQVk?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [leverage, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):涉政府关系与地缘政治，显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

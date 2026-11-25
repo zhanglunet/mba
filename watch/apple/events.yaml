@@ -3657,3 +3657,109 @@
   source_type: media
   note: "LLM 预分类建议(high):大股东停止减持，投资信号积极。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-24-apple-241
+  date: 2026-11-24
+  dim: W2
+  severity: P3
+  direction: neutral
+  direction_by: model-judged
+  title: "苹果音箱耳机2个“特别版”来了，12月见"
+  quote: "苹果音箱耳机2个“特别版”来了，12月见"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5TRjNadERyazhjbE15Q2ZkS3dTWDRyM2F5VFZqQ3JOVWozVS1HYWVfaGh2M0hsTy1wcE90QjZhWnhDdVBFN0sxU085MjkyUjIzQ0JGYkRiUjZyRzl4?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):配色特别版传闻，影响轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-apple-242
+  date: 2026-11-23
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "苹果智能上线“黎明前”，华为抢发AI手机新品牌“星芒”"
+  quote: "苹果智能上线“黎明前”，华为抢发AI手机新品牌“星芒”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBGeGFIcVRCSEpMZHVrYjVZUzNtdFBmeldsU1A3RmhoT2hqSlJMalhKcEo4RnVMdTJVbmludV9XMU1DTVc0VTdoN0Q5aFp6Z1hoVDZUTzRyNUMtVmot?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):Apple智能滞后被华为抢发对比。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-apple-243
+  date: 2026-11-24
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "苹果下周新品四连发：红色特别版回归！"
+  quote: "苹果下周新品四连发：红色特别版回归！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE9RQmFBYkdtODFtZHJuRFdsc0JwNElnMVRYQllZZGJmTVBFNUNGeGNJZ0ZJaEdlZHptQmJVT3Ita21Mb1VURTZxM0xiX0t2QjU1cEc1X2M1X2w?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):常规配色更新，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-apple-244
+  date: 2026-11-24
+  dim: W2
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "苹果Product(Red)系列将回归 还可能包括AirPods腕带及Apple Watch运动表带"
+  quote: "苹果Product(Red)系列将回归 还可能包括AirPods腕带及Apple Watch运动表带"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE82cEozQ0M3Umg5WlZsU0paeFpLVkhaMkI5LUhSLUwxdEZfcmN2aDFhTUlzaTJFOFZ0Z3NiWHQ1SDFVYjF6aWUwSmtsc3VhUTVZYVJSdFJzU19zbTUyb2JBQg?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):公益配色产品线回归，轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-apple-245
+  date: 2026-11-24
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "第四季刷新苹果 Apple TV 首播纪录后，《足球教练》确认续订第五季"
+  quote: "第四季刷新苹果 Apple TV 首播纪录后，《足球教练》确认续订第五季"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE8xcDNFLWRmZ3dpM1FCVkphNHVRbzZhUVktbjUwZUJoLXhkVDJFTzdvWTB5LWVKNlg3OHdHTGJQckM4N1JYZmd6OTVGb1JQN2EzVVR0RVJ2MlplMzBsVlhDTG10QzNLczRVYW1hMi1QcVcyWTF6eEZqMUM2SWhLanc?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):自制剧破纪录并续订，服务业务利好。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-apple-246
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果Apple Pay上线多项新功能 沃尔玛全面支持"
+  quote: "苹果Apple Pay上线多项新功能 沃尔玛全面支持"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTFBUT2tUcnRMWjBGRVBHSHlaemNHU3VvSnBjSHdNUnRrS0dXQ29KUFVNNjJNc1lkNlpZTVpnWUZqNURQWF9aMDNoT0Jma2M?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):支付功能扩展，一般产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-apple-247
+  date: 2026-11-23
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "时隔多年重启公益联名，苹果拟推（RED）特别版 HomePod mini 2 与 AirPods Max 2"
+  quote: "时隔多年重启公益联名，苹果拟推（RED）特别版 HomePod mini 2 与 AirPods Max 2"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikAFBVV95cUxOeGxxYzdhaWI5anBhSWZHenpaaHhxZHBYSE9ER19PeDhOeUZJN1BnNzFyazM4by0xU0VLUE9ISy0tb2cwM2xyLUJJT3Fycl9LNFIxVGM0TmQ4MUVBTUpJYklTMXBCY1kwWTkydC0zb3hGVjRzbE5Hbmcxd21GNkt0V3FOZ01VQm9TNUFEalJHWHk?oc=5
+  fetched_at: "2026-11-25T02:27:33Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):公益联名产品，品牌形象事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
