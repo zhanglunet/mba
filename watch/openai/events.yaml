@@ -4236,3 +4236,124 @@
   source_type: media
   note: "LLM 预分类建议(med):GPT-6 重大能力发布，官方转述。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-25-openai-277
+  date: 2026-11-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI证明矩阵乘法指数下界为9/4，如何看待？"
+  quote: "OpenAI证明矩阵乘法指数下界为9/4，如何看待？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE50bHNEYW1MYXRoVnBRT3lsTFpRMG9HaUJtdDhBalJqUGNkeEtmUzU4cGF6OGItcnRXZlV0bFFKZVRyY0phMmdsajlIRGI0SnRRRWdERjFWWE5CemIzTGFV?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, leverage, category]
+  source_type: social
+  note: "LLM 预分类建议(med):重要数学成果引发讨论，社区关注。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-openai-278
+  date: 2026-11-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "如何看待 OpenAI 新公开 9 篇数学成果，包括新的数学工具？"
+  quote: "如何看待 OpenAI 新公开 9 篇数学成果，包括新的数学工具？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoVk03WWNKSk1kQUdSSkdNU1kzQnZEUEUwb0ZRT0hsR09rRm9WZlZyYkg1elBCd1ZYUUR6N0I1WVJfUnB2YmxPVk9EUlFaeGpEMXZHYTJlNWF1eXRkbWVF?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):公开9篇数学成果，研究能力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-openai-279
+  date: 2026-11-24
+  dim: W7
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "怎么看Axios 报道，OpenAI 和 Anthropic 因为内部模型太强，可能无法发布？"
+  quote: "怎么看Axios 报道，OpenAI 和 Anthropic 因为内部模型太强，可能无法发布？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE45cVhrN0E1QmNJU004VDNUX3h4Vi1xR093MWp4UFFKVFZzdmtGRHlSUFdaT0NVUmVfWUl5cW9PaVNGUkpTZ2tMc204MGhIaDZSTFllbEtWTGFzeENiOEFZ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):模型过强无法发布传闻，涉及安全。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-280
+  date: 2026-11-26
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI要给GPT做个“翻译官”，让智能体更懂业务"
+  quote: "OpenAI要给GPT做个“翻译官”，让智能体更懂业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1yRjlOV1BPSmJyTmtvTXJQWWZkbnNfdDZ4N0o5bzN2b3Z3OE9QQ00zTld0OWlmU2dGQ1VCTFE3VndvUGhoUmk3NA?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):产品方向报道，非正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-281
+  date: 2026-11-26
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI开测零窥探AI！模型运行时隔离客户数据 连内部员工都无法查看"
+  quote: "OpenAI开测零窥探AI！模型运行时隔离客户数据 连内部员工都无法查看"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE5EdnozMWtEWWZrUVdkbzRlaGhMR0VySVFxeGJRTlY1LUQwdDVadHRfLThxSmhsMXJwdGJjb0g2ZTYyZG1KOTZHX205a2s0T3gwWFZxYWVRcU0?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):隐私推理开测，产品能力进展显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-282
+  date: 2026-11-26
+  dim: W1
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "被控在OpenAI会议室安装窃听设备的沙特籍男子获准以100万美元保释，将佩戴电子脚镣"
+  quote: "被控在OpenAI会议室安装窃听设备的沙特籍男子获准以100万美元保释，将佩戴电子脚镣"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTFA1alJZNGRXYUxPb3I3bDdKSHUzUktoS1RVNFctVjB2WFRHZE9keHM4MklZNkZtRXY3Tm1KUng1NW5iWG4xMUVMSUJYTmNOVWdoWGpuLTV1U3JVQ3B3eUZBajBnMHA3UlNoZW1xeElwSVhzeldsenR0eUxjZzRXb2M?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉品牌窃听案司法进展，舆情相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-283
+  date: 2026-11-26
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI启动ChatGPT聊天与工作模式整合，重度用户高级推理额度或受限"
+  quote: "OpenAI启动ChatGPT聊天与工作模式整合，重度用户高级推理额度或受限"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFAzeXhqamVKcVNEVXNCRjMyelQwYnNvQmNYWTZpdzlJdkRXNUxjYXRXdmFfc1BCeVhrR1RLLWtSdG1uNk9MMW9adHFWQlVGUQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品整合但额度受限，用户影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-openai-284
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI筹备“雅典娜”数据工具，提升智能代理的准确度"
+  quote: "OpenAI筹备“雅典娜”数据工具，提升智能代理的准确度"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxOcmk4LW5jOGREb0t6YW40S2ZYbWEtbWlZcFR2V0l4UWtqN0ZCenpEZjRZbFdMckZMU1RjcGlhRzZKM0pGa2dTenlpWFB6RzNKaWUyU3R3Y1BXRGJVeFhrT0NVbkJXM0ZKdUhmVmwtdVpJSFNFT0dBaXN4dUg1U1ZwYlVfYWNtZGJVYWc?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):传闻性产品动态，无正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

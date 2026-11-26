@@ -3219,3 +3219,64 @@
   source_type: media
   note: "LLM 预分类建议(high):FSD V15重大版本更新正式推送。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-24-tesla-212
+  date: 2026-11-24
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "方向盘可折叠，安全如何保证？钛9折叠方向盘解读"
+  quote: "方向盘可折叠，安全如何保证？钛9折叠方向盘解读"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE81UlN2OFFuRVJEYzYtNWNLQXladHBtX3RJVXFnTEJmbVJhWUhFWk83R3V2bkdhQmd5TVFPV0RpRGg0NkI1VTlheWU5SXFiMlJDTWR0NDFyS3ZDVzJo?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):涉及安全疑虑的产品解读。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-tesla-213
+  date: 2026-11-25
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD V15初体验曝光"
+  quote: "特斯拉FSD V15初体验曝光"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxQaHdROXdlTmlUODZnZjZXRHBIVkZRal90Z3FueDNidUdxeFBOczgybzFCaF9JR21XWW5JMzZxSERtcThPczlpRGJwaERiNVlOaWJsc3V2N2pTeURiZlZzSHN5VE02bzZoT1hlV0hQUmpuQV9IUlEtS2JRdE1yOGctXw?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):FSD新版本体验，属产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-tesla-214
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉 FSD V15，把“智驾够用论”打回了原形"
+  quote: "特斯拉 FSD V15，把“智驾够用论”打回了原形"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE4tVkVWS2VPdHB6c0djU0ExTUQxSDlIS1I3T2NiWFFjSW9heWVjZFpHc0h3WG9NQ1V2VnlNWldtNXVZSmlSTjcwVzVmYTlsUQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):FSD V15发布评测，正面但非官方来源。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-tesla-215
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD V15实景视图刷屏，参数规模扩至百亿"
+  quote: "特斯拉FSD V15实景视图刷屏，参数规模扩至百亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE01bWxIRGlpU3BQRmNkNVlpanNiTG81MzNKeXZZQkNKRDhpWFhTeVN6eWl6cFdMNE5XYVBrcUdBVjBRTU5laHkzcjdwZjZ4UmJ1ak5fOXNyR0dyS28?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):FSD V15功能升级，含参数信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

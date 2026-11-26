@@ -4305,3 +4305,109 @@
   source_type: media
   note: "LLM 预分类建议(high):AI自我批准代码涉安全性争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-23-anthropic-283
+  date: 2026-11-23
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "重磅！Anthropic首次公开Claude记忆架构！"
+  quote: "重磅！Anthropic首次公开Claude记忆架构！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rRlplczBfaXNHOGF0bUhKNnYzNDFxbGdZUWNNM3dfY2tzVmtKNlM4WHV3YjI4VG5VeWpYYkxLWklDMUhhbi1LcmdKZm45WXBRT29zSmMzZXNmbzVM?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):模型架构公开，技术传播事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-284
+  date: 2026-11-25
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推出桌面新功能 Claude生成内容可一键变身独立软件"
+  quote: "Anthropic推出桌面新功能 Claude生成内容可一键变身独立软件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTE1zajFwV1VtakUxWFp6MXNNMDhMRjRPUjlqRC1ubER1Y3p2ZGQ3Y0F2WG5aa1VRQ1pNS1dVeVdQVFZJaEdac3BLUVpTNXNBWF9wc3VCQnl3R18tQnEyNFJldjhvdw?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):产品功能发布，但非旗舰大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-285
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic详述Claude协助将Messages API迁移至Rust"
+  quote: "Anthropic详述Claude协助将Messages API迁移至Rust"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ3Y1OXRIV2hqSjBfRzNsaEpaem5ucXVib0czQzlJRy1fTjdOdWY0UUJXaVg2eURTbHZQOU9wcVJBWWRlRjVZQkpaNDBIb0hPUUlNXy04OXQxMk5uMUdDQ0JDMDlzeFk3dEg5R2U5NmFUVEpka3NOUkpMeWtuTGhmNy1iaW9HU1M1U2sxRTgtRUhYSFRnck00?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):技术实践分享，中等热度。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-286
+  date: 2026-11-25
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推出智能体代码工具Claude Ship测试版"
+  quote: "Anthropic推出智能体代码工具Claude Ship测试版"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nNlZWZFA2WWFibFdpWmdRZUpmenZ4OUpnVHZTSUZtTEhJUWR5d0g2b3N0WTkxMmxmb1UwWTZBTUFrSmZwRWZHRUNEVEIwRTVzVENZR21xX1JnU0s5UU5HSElBUDdHVVRO?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新智能体工具发布，测试版P1。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-287
+  date: 2026-11-25
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic发布Claude Ship 让AI代理自动批准代码- AI"
+  quote: "Anthropic发布Claude Ship 让AI代理自动批准代码- AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKNkZETXhWUFhaS3g4eVFBVnF0MHM1ZWppZmdTMkt5dGtCNml2dWI2Ujc3a01Oclh6dVQzZmFWZUUwNFU2bDJMQkxMZzJ1NWIxOFRZVlJn?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新产品功能发布，自动代码审批显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-288
+  date: 2026-11-25
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic刚上市就遭 “失血”！Claude Code核心再传跳槽OpenAI"
+  quote: "Anthropic刚上市就遭 “失血”！Claude Code核心再传跳槽OpenAI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5DRXR3dEZ6b0pUb245cDFubmFteXBNUzlmVUZRRWlCc2lEdjNzRUdwbjR3YkUxaHp0VjFRMVFmdWU1VXc1LUhEUWEzUEhISlBHazV2amstcVQ2bW9F?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):核心人员流失传闻，涉人才竞争。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-289
+  date: 2026-11-24
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推出桌面新功能：让Claude生成内容一键变身独立软件"
+  quote: "Anthropic推出桌面新功能：让Claude生成内容一键变身独立软件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9pYUx5OXNZXzNLLUVZZV9CZ3lfMFlaWlVwRTBzOUVhWWhvcXFsc29WUDVzZW91WnZwSmdweDk0djBHNEQ3VjBic0JwbHM?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category]
+  source_type: media
+  note: "LLM 预分类建议(high):桌面新功能发布，常规产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

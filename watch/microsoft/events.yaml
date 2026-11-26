@@ -3357,3 +3357,49 @@
   source_type: media
   note: "LLM 预分类建议(high):宕机后续影响官方确认。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-23-microsoft-221
+  date: 2026-11-23
+  dim: W6
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "密码加短信验证码已经是两步验证，微软为什么还要推通行密钥？"
+  quote: "密码加短信验证码已经是两步验证，微软为什么还要推通行密钥？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GS09WMDNTS045VGJiNlJGeHdfOVQ1YTJlMzYyWF9QZ2hjTW1xbU1FWHpvLWwxdU15YjJvUjltOVl0M2UxZGZweWdMYUlPRVBib09ZdXkzWklMT2pq?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, origin]
+  source_type: social
+  note: "LLM 预分类建议(med):涉及微软安全产品讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-microsoft-222
+  date: 2026-11-25
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软紧急修复Microsoft 365幽灵弹窗，敦促用户升级2611版"
+  quote: "微软紧急修复Microsoft 365幽灵弹窗，敦促用户升级2611版"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifkFVX3lxTE5CSkMwLW9jNHo5V05vUzY0d2M0dTc1OG10VUhoUEZFbGdndGppVFFpRzYxRVJxRnhubHZNS3JGQ1cwOHdNcVQ4QmJmMy1oZWN0YjhNVDhnWjJJRWE3MnlBdlpEM2xjTkozZkhVSVZJMlMwNXV4RzF4OVdPR243Zw?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):M365产品缺陷并紧急修复。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-microsoft-223
+  date: 2026-11-25
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软启动云服务故障专项整改行动"
+  quote: "微软启动云服务故障专项整改行动"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE53U29TZFhKMllBb1dPZjNCTjhOOGFmd194WUtNQjlRanRLNWJyNUdlUWxwWng3SndJMllVb2NHSHNqRktEcV9tSTltVHpYRmRSUE1BYklBM24?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):云服务故障整改，涉服务稳定性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

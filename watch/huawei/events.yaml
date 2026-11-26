@@ -3023,3 +3023,154 @@
   source_type: media
   note: "LLM 预分类建议(high):旗舰新品发布会。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-11-25-huawei-199
+  date: 2026-11-25
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "一文读懂HUAWEI Mate X8及全场景新品发布会"
+  quote: "一文读懂HUAWEI Mate X8及全场景新品发布会"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9OX3J0bEJIQkZ6VzhudGczUW45dUpJczQwUFdqeklJNFp2cG9weWtaVFoyOGFzeWxiak1JMjVCVEtGOUQ4NVFIdThfd0w2dG5acF8tVkNGM1o0RXFh?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):Mate X8旗舰发布会，重大产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-200
+  date: 2026-11-25
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "八年深耕，旗舰新阶，HUAWEI Mate X8正式发布"
+  quote: "八年深耕，旗舰新阶，HUAWEI Mate X8正式发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HQ0l5Q1RNNmUzVl9pSmVyQ092ZmtVNXRpWm5YTlF3NnJaejVHQUVBZ2UzSVFlSTJRUC1ad1lrUmdJdXdlTHNkQ2E0dzFqZ1dWbkJQSnJRRWkwMm9H?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰折叠屏正式发布，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-201
+  date: 2026-11-25
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "开合革新重塑便携生产力！华为MateBook Fold S鸿蒙小折叠电脑发布"
+  quote: "开合革新重塑便携生产力！华为MateBook Fold S鸿蒙小折叠电脑发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1odi1pZl9FRzcxbWZRbkJWQk13Q1d6bk1fS2Yya2UwWUFsZzlWcUcyT2ZNdkZNRVFkdjJtUVdrcHkzNVVMQVZrcVdobmdsMU91Ui1zMjYxUV9ObEd0?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(high):鸿蒙折叠电脑新品发布，创新品类。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-202
+  date: 2026-11-25
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "一文看懂华为在美被判罪名及案件细节"
+  quote: "一文看懂华为在美被判罪名及案件细节"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigwJBVV95cUxPN01UNWFXQk9SS1VtMHBUODhRWWU5NzA1SmpCeUwxQ0VGcmNkUUNoRDg0cnBrNXU2N1d1SGNlS2JxaWpMQm9uMWdxX3doa3FNUTRDbF9kRVVicDdBdGcwNFJLX0tlNklLN1RNQnBqelo3NE9FSkxyQlQxemNHM2syR3NTUUtXZ2xVQjNocV9JTjFERDRXSUM2aEdFTEp2VmN5Z093dlNMNngwNE8tR0FTX1RuS2o2TWVHRHQ5N3FPbVhVZUxmOEp5WlQyUENrRkNwWk10ZS0tTy1hREhyX0FCWkRLZWRJbzU0OUpHZTRZSXRSNFBoN29USGJEOWliZHJ5S19Z0gGGAkFVX3lxTFB3bFVWd3pQWl9vYkMybE9OTHVKMXMtOTJtN0lSNFU0NVBUeTJsUmRLRURnWUVxTkMya0hsV0EteXlXMkRkQVJwZEVSenJvTWI1UTRyZVhIVjh2anNrTnNVdTJEWkZTU1NXN2pHQ3BQV0dhcWYxMDA0SXh3czVjdk5YU09fMTNZQk1YRVh4OHU2WmVJeWdkOUlRYmVzemhnYVpESVhCb3d2QmNtYmdzVm0zMmZHbm1IVTUzWnNTTXgtQnM3X05FRXE5a1VveXBXYmFuNjB3YnBVa2lyTlFXVDhGZXZhbVdPc0JhbDRoa2cwMkU1QVpTOWVrTWpSdy05NjZKUTB3LWc?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):美判决案件解读，涉监管法律风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-203
+  date: 2026-11-25
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "华为发布Mate X8等多款全场景新品_国内经济"
+  quote: "华为发布Mate X8等多款全场景新品_国内经济"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1BemZTcjcySzFHdVpweE1DM3plXzFBcFQ2OWZ4QXZnSWxtNEJZS0JPMjRBcDF6MC1nS2hISWd6Skh2eGVXa3VHY25sS284dVhKUmdjRi1FaTNhOWpzNzRHUUM3a2s?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [origin, leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰新品正式发布，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-204
+  date: 2026-11-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为与行芯科技打造“韬EDA”，首次串起国产EDA工具链"
+  quote: "华为与行芯科技打造“韬EDA”，首次串起国产EDA工具链"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihgFBVV95cUxNWTZMclRmSHhpZTFhNzlJQnFOZWxDQ25KNDBuWDJyWDhoUU5iNU5FWXZMUVZ1LUlONVh3dTNiQklrWUo2M19xSG5rbGVDdU0teldKRkNQY3hkX2tMVzZfb1dTMWZYczFyYklDeHl2eGw3bUxNeldDa1ZhUVgzM09GTFNHd1ljZw?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):国产EDA工具链突破，技术自主。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-huawei-205
+  date: 2026-11-24
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "HUAWEI Mate X8及全场景新品发布会召开，发布多款新品"
+  quote: "HUAWEI Mate X8及全场景新品发布会召开，发布多款新品"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE95ODUxQXlxaEFmZzYtUFVldVJ6VHdfazI1aVAyRThxNkE1OUZudG50TlRORHdGM19iM2tiNy00cmdrSHZYbVMydk1VbEtHbGY1MUtZUENsU0Vqc1ZmWEE?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [origin, category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰发布会，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-206
+  date: 2026-11-25
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "杨幂任华为鸿蒙折叠电脑先锋大使"
+  quote: "杨幂任华为鸿蒙折叠电脑先锋大使"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFAwMEFsZjNtZy13RGtUSnQ3Q0NVY1lBVk1vQUxjZy1FR3NlQWM5V0ZzeWpqMUxySGRNS2ZId1A1UjJqcG9nbmFMcGRWOFdJREJDWjIxeWl6ZjJUY21pd3JpaU8zaEpnVVJCSUlwam01bTc?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):品牌代言人官宣，营销事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-huawei-207
+  date: 2026-11-24
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "折叠旗舰HUAWEI Mate X8正式发布，售价12999元起"
+  quote: "折叠旗舰HUAWEI Mate X8正式发布，售价12999元起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE01eDgyOGthZE83QjJET21yWlVCZ2hiOWNYdmtQeG10dmtrMy1DakpCOWJzUUFGTkNMNUpvQ3pxU0x3YWdsSXlIeHJ0REJpQXh1WkVRa0VyZVFTMy1INmc?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):折叠旗舰发布且售价明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-208
+  date: 2026-11-25
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "鸿蒙曲面屏手机怎么选？华为Pura 80 Pro和Mate 70 Air实测对比+FAQ"
+  quote: "鸿蒙曲面屏手机怎么选？华为Pura 80 Pro和Mate 70 Air实测对比+FAQ"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTFBEeEhOUkd4SElydFNiUXkzZk11dG9IU3RYbGpwcXVTY3NLcUNralBNdU1BbVpjbUJ2ZE5aYlNEVzhVbDhTeENheDM0Mno0X0hIVFl2Ulc1SE4wNGs4YnZvWTNjN1JuemV6V2tyUVM0blpWQQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品对比实测，有一定信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

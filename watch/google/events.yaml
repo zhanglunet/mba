@@ -4018,3 +4018,64 @@
   source_type: media
   note: "LLM 预分类建议(med):AI搜索接入消费数据涉隐私争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-24-google-265
+  date: 2026-11-24
+  dim: W6
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Independent filmmakers in India bring big-screen stories to life with Google Flow."
+  quote: "Independent filmmakers in India bring big-screen stories to life with Google Flow."
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipAFBVV95cUxOMS1NS3lPQnQ2MHJvZ0laYmJ1UXRxX1MyT3Y2NWpBTHMwamFkQWZncy1TXy1FRVBMekQ2d1ZQd0M0NXhrQk53dTM5WFdZM1FKbmxBQ3E2QmRpeUlLdWZBOUFudVNOWmRENHFWdFRYc2pIb3ZRZVRPRV9lcEtVNUhodTI1eVAwcllUWUMwTEwxaGxWQ0lkSUM3ZU5EbzFZYnA0WGw5LQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage]
+  source_type: official
+  note: "LLM 预分类建议(med):Flow工具在印度的创作者应用案例。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-google-266
+  date: 2026-11-25
+  dim: W4
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "2026年谷歌停用的六款产品与服务盘点-云资讯"
+  quote: "2026年谷歌停用的六款产品与服务盘点-云资讯"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9fX3VhaWpESzJYal8yNzVNNEthOG9ZRElqRXFfcHlkcldZUU9fa2pMZmlwWTBLSERNeWY5bl9SNUN2Vy1UeDlaaFNzRlR4SFJfWjFoWWtzYlk3eENBcFQ3Qg?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品服务停用盘点，涉及用户影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-google-267
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌Home推送11月更新 Gemini家居指令提速支持追问"
+  quote: "谷歌Home推送11月更新 Gemini家居指令提速支持追问"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5TbFUwdkVPV3U4c3Q2MzluOFJud0NYVXhmWWFubHBEOHNaNUR5YUdjb2o0NXlCWEp4Y0FZWUVfMmhHZTFmN2hoMld3NWM?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):谷歌Home功能更新，一般产品动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-google-268
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌扩展AI模式个人智能功能 接入钱包与云端硬盘"
+  quote: "谷歌扩展AI模式个人智能功能 接入钱包与云端硬盘"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE1wOEcxalE5eXlWQkFZWU1YYS1LQ04xaVBFM1dIWGotMlhqNUtMSVpNbk1PYVJvWFQza0NEM19FVEhZenFJZ0FKLQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):AI模式功能扩展,产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

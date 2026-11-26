@@ -812,3 +812,64 @@
   source_type: media
   note: "LLM 预分类建议(med):GLM-5.4上线新能力，属版本功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-25-zhipu-051
+  date: 2026-11-25
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "摩根士丹利维持智谱 AI 增持评级，看好 GLM-5.4 架构创新与 12 月旗舰催化"
+  quote: "摩根士丹利维持智谱 AI 增持评级，看好 GLM-5.4 架构创新与 12 月旗舰催化"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQ0Z1ZHZ2VXFCMU5TZmJSaEJXay1walVkMWZReUhOaFZwUExVRzI5US1qVkJwRTFHYlJ4SkpDbUpLQ0UxeUxURkVRZDlpM2xfSXF6VGZGbEhVR055QzR3THVfSWZmbWVBRE5HZFZnWGZjNXU2VEREaWxvYVZvWGo5dlRtZkMzbHlKSTEwRUdoNnJWOEZZVVFJNzNNakNXWk5QbC03ckN2ME5rRVdjT3lzWV9zY1gwRnRoNENqUWQ1UmN3UQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):大行评级，含版本预期。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-zhipu-052
+  date: 2026-11-23
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "智谱官宣GLM-5.4：采用 Loop Transformer 架构、开启“泛 Coding”能力 - OSCHINA - 开源 × AI · 开发者生态社区"
+  quote: "智谱官宣GLM-5.4：采用 Loop Transformer 架构、开启“泛 Coding”能力 - OSCHINA - 开源 × AI · 开发者生态社区"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JZGtZVmlJdGJmSmNpd0JBLTYyLWp5MW8xeWJ4Q2tfS2VxYm1JNzZ4SlowODlDLXJqejdfaFBHNzM5enMyNnRINGpZOA?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰模型正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-zhipu-053
+  date: 2026-11-25
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "高盛：智谱维持“买入”评级 目标价1560港元"
+  quote: "高盛：智谱维持“买入”评级 目标价1560港元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMingFBVV95cUxNWXlxbWVQOTljTnU4bzE0MHhCeFhFcmhrYTAwcVRFY1JmSC1PQTdmbU1lb2c4aWhVMHhGV2Jrdzk2UmNBc3dkVkt4dURkSnhyTFI4UkpBUEV1blMybG94endXbUxTNUlpRG5RSDRXMTVPbXM2dUdtQlYtSl94NHY1NFpiaC00Y2ozc2NBb3hlMExzcHBpUVlPb2FSZjVkUQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(high):投行评级维持，正面信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-zhipu-054
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "国产大模型选型决策框架：智谱、Kimi、MiniMax实战对比"
+  quote: "国产大模型选型决策框架：智谱、Kimi、MiniMax实战对比"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE9WQU16ekZvVU16cThES1lWRFJoM3I5bERYQXNXSERGaWxReVBoUnE2UHJoWEM3N2hVT0xUY0F0RGszVVVCOXNkZVh6UVloVmd0VkhBQTV2MVl2OWdaMl84?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):选型对比文，参考价值一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
