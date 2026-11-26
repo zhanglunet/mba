@@ -2712,3 +2712,94 @@
   source_type: media
   note: "LLM 预分类建议(high):创始人财富榜,品牌信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-23-deepseek-178
+  date: 2026-11-23
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "Deepseek千亿融资后，梁文峰仍控制100%投票权！与Anthropic的控制权设计对比分析"
+  quote: "Deepseek千亿融资后，梁文峰仍控制100%投票权！与Anthropic的控制权设计对比分析"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBKYW1xeWpiQmFPRk5kXzFiWFdwRVV4NGlrYnZ5cWpHY1pRMVF6cFdOd0c5Z284LWNlQ1dwNm9uaTBMZ290eG9CMzByUzNpb1lNQjI0QmxKTEJMbjln?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):涉融资后控制权结构讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-deepseek-179
+  date: 2026-11-25
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "【DeepSeek股东格局生变：梁文锋持股被稀释】"
+  quote: "【DeepSeek股东格局生变：梁文锋持股被稀释】"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNcVduRnl6YzJOSS1HNDh1NHZnbHBQc0h4aXhpQjVuZUJEQXNkRlRySXo4NkpXZlZGZV9OcWQ1UjdFOHVyVWhLUjl1Rjg4ck5oV2J4SlcwelYwU09JekVkaTBoV3h5UmM0UlhpWEw3Zl9fUW05dFd2eHlWMHRycE5RdGcyME5jSjY5ZWMwbg?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):股权结构变动涉公司治理，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-180
+  date: 2026-11-24
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek梁文锋身家飙至550亿美元 成世界最富有AI模型创造者"
+  quote: "DeepSeek梁文锋身家飙至550亿美元 成世界最富有AI模型创造者"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiANBVV95cUxPMUZEVjNpdG56TzdBLThLUXVUYXo2OEkyWHBlRFBlZGxlZU14dmtzdEFnVHl3bDFsUThKaHRJb1N3a241aDRveGM3bHdRWF9NNkdCcjNCN2pFXzQwc2ZPLXhvQlYwa3BKR0NXMzJpZWVQSnFYTzdlZHBqSmtVSWlXX0dmSkpYc1dob0p6eExkSUdEVHJlbHRFN0Z1R09tU2QwOUZjSlV6Z2k1cDVLM29uZDBJSjA5VVNhZEJnN1B0aGxUUW1VcExRYjZxODFiLUdMY3JXME03OGc1ZURjZHVuZFJvYVdLTi1yUU5RbUN4azVQdlFXVTVvZEJTZkpfenk0WEpXcWxLR0RkQm82MGhTdVRKbjVxSTZtZE5BenF0ajByeXB1R3BwMVVVNTE0b3JIOXV6N0FRYTN1UjY4TzVHYTFaWk5RTUVsYURYTnNoZDIwOV9GVFBxaDBTVFRGN2dpbXpELUNrczlkdy14THFPd3VhN21mSUtmVlpENlZnYXd2R0pZSThhNw?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):创始人财富报道，正面信号但信息重复。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-deepseek-181
+  date: 2026-11-23
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "AI大模型对决华体育会app全站网页入口：深度求索全新多模态模型发布，性能超越GPT-4o"
+  quote: "AI大模型对决华体育会app全站网页入口：深度求索全新多模态模型发布，性能超越GPT-4o"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE11QzU2NUtEQTJyYnJRY2FsdmMwckFIR3Y4Vjd4MGV2cFNRREV5Z3ppTWx2VFNpZnBLZGI2MG1CZWZqYUMwLXYySk4xdFJhSUFBeHhJZUc4NA?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):旗舰多模态模型发布，标题含夸大成分。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-182
+  date: 2026-11-24
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek完成新一轮融资 创办人梁文锋身家飙至2265亿"
+  quote: "DeepSeek完成新一轮融资 创办人梁文锋身家飙至2265亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiyAJBVV95cUxQcVJOVkxESjFFR0NNZlBjZEdLZGQ4cjJJZWp5X3N3QVgzMXhDVzR0QUpuejRTb0Z2UUR0ZzFHVHhtWVh4dGpuS3puQ0tNZlB2azVIcTJxTy1Za0RkTlJmTWs2ZTQ1SFlxcXo3U2lRZWc4bWJ5Nm5LbGI4bjNmOEtqTk9nbWJtZDlPYm9meXVXTE1IR2FGQ1QzMXMwQk1BdGdUdV9VMElramo5eFEzazFtUTRtNFVLQ0RMd2tMUHJ2RUw5MlRBSGpqcUw3SmloT09sSF8xeS1qZEwzZmFMdmlYRl95Y3BQdW4xVHg4Q2pvbVUzakRrU3d3RllHQ0VnQzI1UG5hazk3cXN0QTRfSnpFWHRRVzRDVVZScnJFR3NJeEU3b3kweVRXQWRYUWdJbnB5RmFKMVJOMHNrZXBBbG11cmpEcjUzVW5Q?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):融资完成且金额身家明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-deepseek-183
+  date: 2026-11-24
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "DeepSeek创办人梁文锋身价飙至550亿美元"
+  quote: "DeepSeek创办人梁文锋身价飙至550亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiREFVX3lxTE1aZmRXTHpJMWlmV0k1VkJKU2ZKRk5OeWNhanN4bUdUZkNKMDZ5Z2YyQkRVVVdLb1dCZTNPTHVGSlYzYm50?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):创始人财富报道，品牌关联但非事件本身。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

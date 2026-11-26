@@ -1807,3 +1807,19 @@
   source_type: official
   note: "LLM 预分类建议(high):官方获权威机构认可，显著正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-23-lenovo-118
+  date: 2026-11-23
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "临时转嫁成本予客户 数据中心供应商突喊涨价！"
+  quote: "临时转嫁成本予客户 数据中心供应商突喊涨价！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMickFVX3lxTE1TTmZveGpwa2lHWWZKTERtRzRXMXZQTUdkR214WFlNVm42VnBQWF94QmpJQThDaUZMdlk3NG1iU2NVOGR2VGdMUzhpMmpmX09MdmF5cDdqYjdPMU4xN3hUbHY3THRVLTZySUNWbFlBRFlMQQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(med):涉供应链涨价，关联联想业务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -2539,3 +2539,19 @@
   source_type: media
   note: "LLM 预分类建议(med):美国芯片管制波及中国AI算力，行业性负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-23-kimichat-166
+  date: 2026-11-23
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美众议院两委员会发布《Beijing's AI Playbook》：报告称中国开源模型占Hugging Face 年下载量41%，智谱GLM-5.3 据评估可自主构建端到端漏洞利用"
+  quote: "美众议院两委员会发布《Beijing's AI Playbook》：报告称中国开源模型占Hugging Face 年下载量41%，智谱GLM-5.3 据评估可自主构建端到端漏洞利用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTFBubmk3X0I5cU1sLUkzNnhUS2ZrUGp6Y29vTGNWWExaaC1DYkFBWl9IelIxZzRRT2liUEg5UU50aXd5Zkd0bV9CSg?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):美国会报告点名，涉安全监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

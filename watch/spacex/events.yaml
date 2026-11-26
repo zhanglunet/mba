@@ -3621,3 +3621,124 @@
   source_type: media
   note: "LLM 预分类建议(med):涉AI生成有害内容诉讼，重大声誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-25-spacex-238
+  date: 2026-11-25
+  dim: W3
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "Grok生成儿童性虐待图像，SpaceX被起诉"
+  quote: "Grok生成儿童性虐待图像，SpaceX被起诉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4zR0Mtc2JrYlRIYXZiYUVCUVRFYUk4dUI2V1BOdktNRVAtMF9iM01waGhwbjZVcGQ5SkpxQUNrOVBkLTk1RHVmR0EwZjRDbWUxUVBXekRWdEpHdXNZ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [origin, category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):诉讼涉重大合规风险，xAI负面外溢。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-spacex-239
+  date: 2026-11-25
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "罗永浩回应和俞敏洪上《再见老板》；红果上线“时间锁”；SpaceX和特斯拉委派五名董事负责合并谈判；豆包灰测“豆包购物”丨邦早报"
+  quote: "罗永浩回应和俞敏洪上《再见老板》；红果上线“时间锁”；SpaceX和特斯拉委派五名董事负责合并谈判；豆包灰测“豆包购物”丨邦早报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE41eFBzMFpGaW9ENm9KZXROTm05V1RqaEI4TUc4R3hWMnV3Qkl0WmpCdTZVMnIzUGpfZU1fdDhWallVU3BpeGF5SXNRcU0xazhzUlNuU0dzUDdaNFRR?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):合并谈判进展，重大资本事件线索。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-spacex-240
+  date: 2026-11-26
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "历史首次！美国监管批准“SpaceX发射100万颗卫星部署太空数据中心”，要求“2040年前完成”"
+  quote: "历史首次！美国监管批准“SpaceX发射100万颗卫星部署太空数据中心”，要求“2040年前完成”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5pQ29LbTVFUWJWMGJ4cVZxZlVYbnd5V3hTMzZYX1Nub2VVcEcyOXlMNmdCRGVxcTZDMi1zWUhzX3RlUjNKcWZzeDdTbVdPOC1Rak5V?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):监管重大批准，里程碑事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-spacex-241
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克给美国每个孩子送股票了！SpaceX官宣赠股计划 本人再掏股份等额配捐"
+  quote: "马斯克给美国每个孩子送股票了！SpaceX官宣赠股计划 本人再掏股份等额配捐"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE80WDVBMW1hNXkzbHFabTZNUEpoRDRrOEI4TG52NHZVa0g3ZUFqam5MZ2ZYei1lajA5N0lUa3FCSGVCTUJfaEdPZzBLMDFyalJhM3hYb2NSV3k?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):赠股计划引发伦理争议但具品牌影响。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-spacex-242
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX向特朗普账户各赠1股 肖特威尔个人赠超200万股"
+  quote: "SpaceX向特朗普账户各赠1股 肖特威尔个人赠超200万股"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE1kV0RPaGI0b2NqeG9FRVA4MzdUb1c5Ri1fZkQxTkhidTZVUWdLck5YQlYtSVlVcVhHdjJrRFRRcVhIZDJRTEYwbHZxTTJhcU1FS2VhakNmanE4bFRjUWZWdVNn?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):向总统赠股涉政治伦理争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-spacex-243
+  date: 2026-11-26
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美批准SpaceX发射最多100万颗卫星 推进太空数据中心计划"
+  quote: "美批准SpaceX发射最多100万颗卫星 推进太空数据中心计划"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE8wcXpIU0RTcEtscGpSM05KY3lQT2RSLS0wS0NDRkZmZTNUNWJuVTVHXzgxUjl3SzhoS2dpU2liZFJhaHVYZWlLUXB4OGN5N2tOY0VqOEtsOTZYN0c0c3J4WWpmRk1Hc2dSZmtR?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):获准发射百万颗卫星重大里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-spacex-244
+  date: 2026-11-25
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "SpaceX被曝下调Blackwell GPU租金最高约35% 并低价转租Anthropic退还的H200芯片"
+  quote: "SpaceX被曝下调Blackwell GPU租金最高约35% 并低价转租Anthropic退还的H200芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9XaGtyUnJtYlktYnpDVWQwV3ZURTlhcDFWTVpSRi1qVUlVcEZSUjhoTllMZzZWbWQwXzBDRWRBQ09nSGg5TFJfZQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):算力租赁降价或显需求承压。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-spacex-245
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX 官宣赠股计划，马斯克个人等额匹配"
+  quote: "SpaceX 官宣赠股计划，马斯克个人等额匹配"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxQMnpGWTlvb1BpZzF0T0paa09uWktZWUZ3LURzc2VFc1pESjZ6cE8zVjZWYzgxdF9DckhVcEhVaDNwN0xYaVlheEx0YUpLWHIyWThWc3JwbE44OHNtamhJdmljVmVCcGJpclpBQkxqcjdWU1FfMDRCX3BLU0RTLWhZbWtpejZGRk0?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, category]
+  source_type: media
+  note: "LLM 预分类建议(med):员工激励计划，涉马斯克与公司治理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

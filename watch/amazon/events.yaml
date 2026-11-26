@@ -2936,3 +2936,79 @@
   source_type: media
   note: "LLM 预分类建议(med):内容业务重大续订，正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-25-amazon-193
+  date: 2026-11-25
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon Autos is coming to the UK—the first country outside the US"
+  quote: "Amazon Autos is coming to the UK—the first country outside the US"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTE1fQmw0UHpIR0laekc0ZHFXSnFGUkR4WDc1bnhtbWs4anpPT24wb2xnVzBTTnFlSjV4Z0ZPZDFybUw2SWZLUmNpd1JZM2VzdldhYXBoTVl1NlJCMlVvelYwcnJOdW1qQQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, category]
+  source_type: official
+  note: "LLM 预分类建议(med):官方宣布业务扩张至英国。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-amazon-194
+  date: 2026-11-25
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊副总裁兼CTO Dr.Werner Vogels 预测2027年及未来的五大科技趋势"
+  quote: "亚马逊副总裁兼CTO Dr.Werner Vogels 预测2027年及未来的五大科技趋势"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1KOE05dXdOQXpmcTFWQTN4U2Z6emsxZzl0NzhtZDE0c193VEpkdk5nY1RIUURqR21pV191Tmh2aktsOHA4Yjh3ajl0X083RWJsSGVFMnlwMDR6UVBp?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):高管趋势预测，思想领导力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-amazon-195
+  date: 2026-11-25
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon CloudFront 如何助力《GTA VI》交付给全球玩家"
+  quote: "Amazon CloudFront 如何助力《GTA VI》交付给全球玩家"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUHo5S2ctR0FyUVBHR2F0MWZnUVdCTTdqTWJJVDBfeUFxTzZXNFE5UFBuaVlhVlJOWENZQzF4UDFNcmNGT2NZeWQtMHg2OW5NZnNMVHJUaHhQS0liaUl4UFJraURCaF9ZbjI5Y0I2Sml0NXV5Y045dVcwSlAwSEhqNUlmbGhETFdVSkxRUkNHaE9vZmY1ZkVyNWV1dFRDTjFjajJ1SnpiSEZiZw?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(high):AWS旗舰案例，展示云能力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-amazon-196
+  date: 2026-11-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊宣布Amazon Autos汽车销售服务将于2027年初登陆英国"
+  quote: "亚马逊宣布Amazon Autos汽车销售服务将于2027年初登陆英国"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVZ1VyWWt3WU40MHhpTHZoS1FvbXhtdzE5Ym9kWUxJSzV3TVJZbHJaZ1VQSXdqUzgwMzBDMFRTOEVDWUVQTzZQa2tOUW9nYXpBWENGeVU4X2Fjb2R5?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新业务出海英国，战略扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-amazon-197
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "亚马逊星链竞品为何难以追上SpaceX"
+  quote: "亚马逊星链竞品为何难以追上SpaceX"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiV0FVX3lxTE1qRFN4RG95eHNOYW5Mc3AwS2pic2ViMWgxWVh4WkRObXBXTVpPYkc5V3VHbzc1WU5POTg2aWMwMmZIX3FLcDNyZ0drSWFneW96MVlXcTFhSQ?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):亚马逊卫星业务落后SpaceX分析，涉竞争劣势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

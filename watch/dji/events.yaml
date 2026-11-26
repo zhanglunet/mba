@@ -1317,3 +1317,34 @@
   source_type: media
   note: "LLM 预分类建议(med):大疆涨价牵动竞品跟随，行业信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-25-dji-086
+  date: 2026-11-25
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "大疆Action运动相机双11销量份额超八成，Action 6携街拍大师套装上新"
+  quote: "大疆Action运动相机双11销量份额超八成，Action 6携街拍大师套装上新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMihwFBVV95cUxPSzR6aFhEMUl0anlqd0p1dlgwNjlQTUFteHpwU2F4VG96Z0w3bVlpR0RVcXBVZVJfNXZwTjAyby1OTVBQX1JVQ19ZVzVBSnBRc3BBWWlrOHk4aFJsa1NJLVNubFhfTEYyRExyU1MxcjNVdS1MYkUzZS0zWkYxLWJiSXIteFBGRk0?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):销量份额数据与新套装上新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-dji-087
+  date: 2026-11-26
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "【从大马制造到大马“智”造💡】当本地大厂FOZ One遇上DJI联合创始人：一场对谈揭开大马工业的『AI新未来』！"
+  quote: "【从大马制造到大马“智”造💡】当本地大厂FOZ One遇上DJI联合创始人：一场对谈揭开大马工业的『AI新未来』！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgRBVV95cUxONGM2RnpRbDZ4aWF6RnJzSldaYVRrTV9fRThtODhSODQtQmVkNFBtVE03c2JvejJFcEFSQ3R3alFpbGFRbXNsTnFGQ25kMnExSjQtT3hxaUl0TnFXSGY2cFlxUEFNNTE5N2k5TW11c25pOVp5cklVdHdjcjBVbDJuanppT2RRck9NQ252bGstNWdoMmR6UGpMZ3YwV1R3ektlTmt2MnBkeTdxOHlyWkQ4T1loNnhPUHNWb1g2WGdYTE1WdkJSRzFaZ0dwRGVpYnlrYm5SdTNRWWZWYjVOWXVLMk4zeWNHU1IxMkZ0LTNBTi1GNDgtY3NmVmhvX19XSV9UdDZMTjNqVTlDS1FTZWJqUEFyWXF0Vkp0VzRsajM5WXN3eUZNT3IxS0J2bHl1RXQ5UXNsVXN2dXBkN19tdUt6UXduM3picFFic3llUk94TlExVXVmeFdfZmhxR253SGRvVWppNUx1eG5JQUZKNUNwSE1VMXdLdUEwZnk0NEpiYV80a0JibWR0VFBfT0c2Z0pGZTNuSWdCOUxFTlBZWE05UmFSX3k1UGhwbWtnY2RhWXZBanExUFpGWF9ZWlZLLXlLbDhvcFo2VzdMQXRFSzBLSVV1NmhmaWtXcjRKNWdUdEVYSEt2QUw0dnRzeVNscUw0R1BrSGhVUzdmNjhDSjRseXoyQXZfUnV5RVJUTk9HT2p3QmdkR1BEdXZ3?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):联合创始人海外对谈，涉品牌形象。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

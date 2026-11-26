@@ -3399,3 +3399,79 @@
   source_type: media
   note: "LLM 预分类建议(med):涉政府关系与地缘政治，显著舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-23-nvidia-224
+  date: 2026-11-23
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "英伟达董事会恢复黄仁勋总裁、CEO 及董事会成员职务，哪些信息值得关注？"
+  quote: "英伟达董事会恢复黄仁勋总裁、CEO 及董事会成员职务，哪些信息值得关注？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE0zRHkxY1hwTXRscDgyMU5vZk1aR25VMFN3Wk9mSV9PbHlCb214VC03cldrcTllaTdCS3o0a2lsLWZaSUdOTUhjNFhJRkZ2MUtUdkNfR3pSWWlCSEc5N2I4?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):核心高管职务变动，已发生但社会讨论性质。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-225
+  date: 2026-11-23
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "黄仁勋称将以最大的谦卑和新的承诺承担这一责任，英伟达接下来将怎样发展？此前的策略会发生变化吗？"
+  quote: "黄仁勋称将以最大的谦卑和新的承诺承担这一责任，英伟达接下来将怎样发展？此前的策略会发生变化吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE94anhPOGMzU1g4U1dTUFpmQnRnOHkwdjhCVklTSU9POC1sdXlKYnQweFhBTF9fY3pIREJHTGRDNUVsbXB0MkxKVnV5aGRpNHVZaDNDY0JicmpKdHlrNHgw?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(med):CEO表态讨论，观点性偏弱但涉战略。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-nvidia-226
+  date: 2026-11-25
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "NVIDIA芯片分销商正急于为大批高端GPU寻找新买家"
+  quote: "NVIDIA芯片分销商正急于为大批高端GPU寻找新买家"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzenJBMjc2WWZPZE43SDRIc1FQS19iSVVPMHEwNUFGeWgwdDVqYi1jcVgtcFNRYkw5d055NjVoeFVEQ1ZJdncyNkVHb21nelJqMDY2THc1NXVRR1JTQmFIdA?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):高端GPU滞销寻新买家，需求风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-227
+  date: 2026-11-23
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特朗普政府继续追查英伟达向中国出口先进芯片是否违规"
+  quote: "特朗普政府继续追查英伟达向中国出口先进芯片是否违规"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxNeDhfcTY1TEE4Mnk5ajdCb2ZiT3N0Yy1RSWVRblZadEM4cDRfWmZ5TDJVeVVxMGpHWk5ReVkxZDNnUk9rdUwybV9EX0RpTVpQOWR4YkM0dWxsX2RzR21KTmlOajhHeDFCN1luRHB6LTdGNkt4STlJc1ZGaU9iVC1OZTItYkdaYWphdFlrMUNWLWFlcnZJTlBpamN6UFNIMFhwdWZZb1Z0cDJRbWlJSndDZkxIUWbSAbcBQVVfeXFMT0lvc0VMREV5VF9PT1U4dE95Z1RUTGVmUGViZ3I1REJfd3VUZnFpWkZOaHVhYUEyUXlDZ3FyemdHYnBybEpuY2ZEdGgzd1JGR1dHSmVqX3NwRW95OEZ1LV9fOEI3dGJzZTN4TXNRYWZ2bUxqVm1UOC10TG1nNlk0SlZJa0VTZUdZaXE0SGp2UU0wa0FuZG0ybGtIaGlmdVprMmFkZEdLMnJqUXRwZzBLYnRNUjVDLVBR?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):美政府涉华出口违规追查，监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-23-nvidia-228
+  date: 2026-11-23
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "黄仁勋辞职11天后重掌Nvidia：白宫背书下上演大逆转，盘前股价涨超30%"
+  quote: "黄仁勋辞职11天后重掌Nvidia：白宫背书下上演大逆转，盘前股价涨超30%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6Sjd2Y2ozb3c3dmFOZmM2S3pjMzN6TEQzbE5NaFhaWFhkSnA5U0oyTkZNSlBNTUlTLTRwREYwbTlaWF9fSFJLVFV4ekVWdjlQal9SNDlhLXQybkRfZW5GWjh2ZVR6Qm_SAWxBVV95cUxQOS0zRkxkclhmd3FWdjZkallkOTlaVTRHMFhkYnExcmFVRDFTU2RhUlNoaTlDUEtlOVRvdXRmM2JOVEx3bnlHeldjb1llU0FBdjZ6cE5kLUREQ05wd2M3V1dWYnRXYUk1bmFPX2o?oc=5
+  fetched_at: "2026-11-26T02:26:35Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO黄仁勋重掌帅印，核心高管重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
