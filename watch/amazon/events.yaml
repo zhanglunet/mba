@@ -3012,3 +3012,124 @@
   source_type: media
   note: "LLM 预分类建议(med):亚马逊卫星业务落后SpaceX分析，涉竞争劣势。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(8 条)──
+- id: 2026-11-24-amazon-198
+  date: 2026-11-24
+  dim: W5
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "Amazon CTO Werner Vogels’ 5 tech predictions for 2027 and beyond"
+  quote: "Amazon CTO Werner Vogels’ 5 tech predictions for 2027 and beyond"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifEFVX3lxTE5LTGk1MkJYeEtuNlVKdm1GQUhjUUNkdFdFZFlYNTRXQVEzc1QxNHpRU1JVZ1BoRjdZSHVZV29PYTNuMzlEY2gwU3YzV3Y5YXF5Q3B6U1l3SV85MzRadVlvSjhkcVdGNFZxRUZfRl93dkpQQkQ4U1ZoOU9UQUk?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):CTO前瞻观点，展示思想领导力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-amazon-199
+  date: 2026-11-26
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "3A游戏大作引爆下载洪峰，亚马逊云科技助力《侠盗猎车手VI》全球发布"
+  quote: "3A游戏大作引爆下载洪峰，亚马逊云科技助力《侠盗猎车手VI》全球发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9MTWZCMDdlLVNWWm1QVG95WTZlMzJaYTV0NlphQXl0YU5UVFEzaUR6UXB1bk1sdFM2am9BNl9zVG1pVXQ5aW85NS1XWTdNMXlNYlhUQ0hSUXdBamct?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):云支撑大作发布，能力展示。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-amazon-200
+  date: 2026-11-25
+  dim: W3
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "速递｜亚马逊拟斥资75亿美元收购AI算力优化公司Decart核心资产，加码自研AI芯片"
+  quote: "速递｜亚马逊拟斥资75亿美元收购AI算力优化公司Decart核心资产，加码自研AI芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yOTR6a29yX3M1ZENzZDV0aHlYem1rU2p4UHgySzRYcmhoU1dJbjZTYldGcEpjU0JLTlZXUVB0NWJSSUxNTllmLTk3ck9XUDloTDR1NHZMM3RXY3Yx?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):75亿美元收购AI芯片资产，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-amazon-201
+  date: 2026-11-24
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "曝收购价500亿！亚马逊买下AI独角兽核心技术、三位联创，为自研AI芯片铺路"
+  quote: "曝收购价500亿！亚马逊买下AI独角兽核心技术、三位联创，为自研AI芯片铺路"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1seUc0TUpZZHdIRFhiQlRCZ01paXRGMUhDNU5jSDhLNWIweG9IQlY5SUVXZVFNSHNfQWdZaDc1NmJrOHotX1JqdTRnektra1dHa3MyVlowSzF1dENQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):同收购案传闻版，金额存疑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-amazon-202
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊将于2027年初在英国推出Amazon Autos服务"
+  quote: "亚马逊将于2027年初在英国推出Amazon Autos服务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE9PTk1EM3dsQmtUU1pNanNnS0RfQ3NrRmE4QlZWVGNqc09BU0o3NGlHV2hvOWtsU3ZZVWF6MDJ3aDB1RTAwLXM5ZGNFeEs4bGlLZTlieU85MVpUbGxmZnFaNzdR?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):新业务国际扩张计划。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-amazon-203
+  date: 2026-11-26
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "游戏大作引爆下载洪峰，亚马逊云科技助力《侠盗猎车手VI》全球发布"
+  quote: "游戏大作引爆下载洪峰，亚马逊云科技助力《侠盗猎车手VI》全球发布"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBRakkzcy01MFZSZUxGWk9LWENxZ1R6eVltUUhIbUMteEFBSHV2U1BuOEJ2dGE5ejRDM1dfTUdJaDFYM3FOSFNTbmZ2YlV3b1JRRXpYSkNpRWI4alE4ZXFXaXVqLWM2SUo3WUFjZjBmdnU?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):云业务支撑大作发布，属业务成果但非重大版本。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-amazon-204
+  date: 2026-11-25
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "【网通社快报】亚马逊宣布Amazon Autos汽车销售服务将于2027年初登陆英国"
+  quote: "【网通社快报】亚马逊宣布Amazon Autos汽车销售服务将于2027年初登陆英国"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE9QTmkzcUktc1JoWmVHZnVwMXluSVEyWVNzcDhfd0dnT0piRjJuY25uNjBPb1AyZHFZWEh6eXBkbDM4NGlMZk93cVo2c1Q?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Amazon Autos扩展英国，业务国际化扩张。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-amazon-205
+  date: 2026-11-26
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊拿下现代汽车"
+  quote: "亚马逊拿下现代汽车"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBoV0YtZllTXy1QZE5PcnN4VXJYeURHcXcwSmJLYmhPU3ZmSkx5U2dJMGY4WkR5QkJyampCcHFINENKV3Q4cVF0RFdhUFlnenlTd183SVE3ZXFwTlkyeERUVQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):与现代汽车合作，业务合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

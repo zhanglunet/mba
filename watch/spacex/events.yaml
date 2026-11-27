@@ -3742,3 +3742,49 @@
   source_type: media
   note: "LLM 预分类建议(med):员工激励计划，涉马斯克与公司治理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-27-spacex-246
+  date: 2026-11-27
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克赠送美国所有儿童SpaceX股票， 预测股价“高到惊人”"
+  quote: "马斯克赠送美国所有儿童SpaceX股票， 预测股价“高到惊人”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE5nd2dvNUlMakQxS3JYTnN0VVlLOThhNHY4elRaRjh3aGpJLUI5QlJpbzBocGVEZnBGM0Y0bzFZT2JWamdJVzBNS1RFTURNeUN1Tlc0Umt6c2E1VDhMcGsxbnFNWWlCSDBJMTB4bg?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):媒体广泛报道的赠股事件，涉股权结构。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-spacex-247
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "[第一时间]SpaceX太空数据中心获批 可部署百万颗算力卫星"
+  quote: "[第一时间]SpaceX太空数据中心获批 可部署百万颗算力卫星"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidkFVX3lxTE1QQVBDYWRFQ1o2blYyQU1kai12anNZa3k4R1BSX0hycTktbmFxZnBiZmI0UWpjdlZ3LTh3Ql8zSnNjaG9rUUVOS1VfbDhRVzczcUxuRWRFbWw3M2x5MEtybVZTUmtobzN4aUhyVlZZMWtraU1jZ1E?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):监管批准部署太空算力星座，重大业务里程碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-spacex-248
+  date: 2026-11-27
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克向全美儿童赠SpaceX股票：先送两股，以后年年加送"
+  quote: "马斯克向全美儿童赠SpaceX股票：先送两股，以后年年加送"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ1ZBNkFkV21JeGJrTUFGLUNqeEdpTFVyb1gzWjk4OXBpdFE5bDBuRkpxSVY0Um5wSHdYZi0tX3lkc2xnMkprNGhoRnhlVkg2YXZVSVZoTW9yOTd1SUVPQlRmaERvN2x6WmNZYlN2NjJidDBoWjRVek9NTnFjcUU4UnNZUHVvUzVfeVZGdw?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):马斯克向全美儿童赠股，品牌形象事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
