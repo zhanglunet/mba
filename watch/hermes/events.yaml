@@ -1289,3 +1289,49 @@
   source_type: media
   note: "LLM 预分类建议(high):品牌马术活动官宣，正向文化事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-25-hermes-084
+  date: 2026-11-25
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "腾讯推出个人AI助手：LightVela 想当你的第二个大脑"
+  quote: "腾讯推出个人AI助手：LightVela 想当你的第二个大脑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1HLW4wSEEtd21lVW1sa0Q5UU0yWjFwclVBaFgzSjRRMTB6eHFORl9SeERYU0lIMWdER25BTGk0U3Q0VWEya1VKS2JzSTcwNkkyRjFCMlVnbzhpWFp5?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):腾讯正式推出AI助手，属重大产品发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-hermes-085
+  date: 2026-11-27
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "伯恩斯坦：爱马仕部分二手包溢价率已从140%跌至30%"
+  quote: "伯恩斯坦：爱马仕部分二手包溢价率已从140%跌至30%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTFBDNDdKUVlUbzlZbklRcVZpMW51WnpMdTZIZWNtZ1ViMkJuajZ5M2hrbkw2bndZbTRlLXdQV3QtMWFlVjZCWTQ5UVB6QVJwQnlCTWlsdm9mY0l2eDJIUTRCM0ZGSFFOY3NYQlVJanN2cWxKVEh2R05Paw?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):二手包溢价大跌影响品牌保值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-hermes-086
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "洗钱案爱马仕商品拍卖成交额近323万元 高出预估价上限近30%"
+  quote: "洗钱案爱马仕商品拍卖成交额近323万元 高出预估价上限近30%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE9vVVdXaW1TcWRwbEJXTHJfcVB3VVFzcTN4RmkwMGZTQTk3ZFZCTTltX0YyOVNuVE5IdWhKLXhSZS1PNUdiX0luTEdNcUxJbHltdHMxZl8ybXFLWFBENVlnT0JmNkl5UUMzdWlIeUtJdFZTTkt3?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):洗钱案关联拍卖，涉品牌物品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

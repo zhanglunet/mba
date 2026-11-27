@@ -3174,3 +3174,94 @@
   source_type: media
   note: "LLM 预分类建议(med):产品对比实测，有一定信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(6 条)──
+- id: 2026-11-24-huawei-209
+  date: 2026-11-24
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "华为最薄直板机HUAWEI Mate 90 Air发布，7寸大屏长续航"
+  quote: "华为最薄直板机HUAWEI Mate 90 Air发布，7寸大屏长续航"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBvRTAwOThUNjFERjFkNF96dmdIMTBDX2VEalR4b3lWTVVVeURrRG9qazQySzY3R1ExY3lxb1dPUzVmaHJreXVLbzYtQVpxbVpYRmR3VGNIMUpBTy1r?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰产品Mate 90 Air正式发布，P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-huawei-210
+  date: 2026-11-24
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "多款重磅新品！HUAWEI Mate X8及全场景新品发布会召开"
+  quote: "多款重磅新品！HUAWEI Mate X8及全场景新品发布会召开"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ueXY4WGJWeWdQcFJybDBOamhvQVVjb1hEVnhOa2JUS01iNHRTTlFTc1piMEtrRkI5bmRyekNWMzJsbElBUXp3RkpINVlEZHhlaU5LeXNYM0RYR25T?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):旗舰新品发布会，P0事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-huawei-211
+  date: 2026-11-24
+  dim: W2
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "HUAWEI Mate X8正式发布，折叠旗舰大展新境"
+  quote: "HUAWEI Mate X8正式发布，折叠旗舰大展新境"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RSmRxWVRPMEJpUkhMNmlGMGJwTDNDOHFXMHd1UkVIUm9xbmdRWVBud2t2LUQ0VVVlZGhZc3dBaEVuNUVvVWRKSmRVUlFENmxjbXlTcUZ3M2RHclJh?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):折叠旗舰正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-huawei-212
+  date: 2026-11-26
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "横跨L2、L3、L4：华为靳玉志重申乾崑智驾HUAWEI ADS 5为自动驾驶而来"
+  quote: "横跨L2、L3、L4：华为靳玉志重申乾崑智驾HUAWEI ADS 5为自动驾驶而来"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQODhGeTFhRDB0RS1sN2M3cks4bG55OHNvdmtZSWNQZ2VnZEMxSndHWFhFLVlNcGVPRTZWQkV2SzYySGZUd0ItLWJwZjg2Tko2ekxfbWRVY0p1TG43VVhlQmZCbDBRa09BOUV4Ty1ldWxRWkhMWGctWi1iLWpPSjY4T3JpTWlWb2Zu?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):高管重申ADS 5定位。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-huawei-213
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为发布新一代HBM设计数据引脚密度翻倍力图突破带宽瓶颈- Huawei 华为"
+  quote: "华为发布新一代HBM设计数据引脚密度翻倍力图突破带宽瓶颈- Huawei 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuZTQ0aDVGbmZSaGF0MjBzcFVUUDJrcV94VmIwdHFFMjN6ZXU3V2JRSkY5WnNKTXVwQkFlU0FOWkNEU0Y2cGtQLWVwd3BwZDZDMHcwaTR0bkE1YmgtZVk0Vw?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):华为HBM技术突破，属芯片技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-huawei-214
+  date: 2026-11-24
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "鸿蒙小折叠电脑HUAWEI MateBook Fold S正式发布，价格14999元起"
+  quote: "鸿蒙小折叠电脑HUAWEI MateBook Fold S正式发布，价格14999元起"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE9pc1puaGpqa3N3UlVBdjJGckF1RjFhTnZRbjVRekQ3Y0RieXlULUxEbnhVeUQtWWJjcTQtN0JiZWd3c2FkQlVzemp3U0VMSHN4NEIzaTZ4NW9MX2FlYUE?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰新品类正式发布且价格明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

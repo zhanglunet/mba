@@ -484,3 +484,19 @@
   source_type: media
   note: "LLM 预分类建议(med):CTO大额减持，涉核心高管信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-25-palantir-032
+  date: 2026-11-25
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "彼得·蒂尔斥资1.2225亿美元买入帕兰提尔科技公司股票 提供者 Investing.com"
+  quote: "彼得·蒂尔斥资1.2225亿美元买入帕兰提尔科技公司股票 提供者 Investing.com"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE5EOHN4SFhxLUJhQk1rVXBnNlZBZmM0eXVJZHFIWTRDelZDVVJNeE9TQWV1WHoyRzJ5QVdSR0ZmbGNyV0d2T0ZDc0g4aU5tcVc4LTJxdFpYS01naF9IdjRWbk9IYWYyNDRiUEN3dUxseURWaFhNcUhZenJHTQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):创始人巨额增持，信心信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

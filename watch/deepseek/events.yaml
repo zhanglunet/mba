@@ -2803,3 +2803,19 @@
   source_type: media
   note: "LLM 预分类建议(med):创始人财富报道，品牌关联但非事件本身。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-26-deepseek-184
+  date: 2026-11-26
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "deepseek新增增值电信业务"
+  quote: "deepseek新增增值电信业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ29IdzZyazNMX2V4UV9rd0k5RktmdTdJZHFqYTlPdlpzZDdONFBSREsyNWNsajY0SDJoVkpKV1hqOGtKWlpfQVlSZ0JtNzNWeHNzVFVDVFJRMlhCSkE3YlFHSEozd0sxMUxGX3FPbW5VQVZEaW1yZ0N0Z1hGa3VLX2VLLXFtS1lMbGtDMDJjWTFzamMzU01DNFJkYTBQYlphZkNpV3lMdw?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):工商经营范围变更，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

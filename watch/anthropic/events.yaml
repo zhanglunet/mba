@@ -4411,3 +4411,154 @@
   source_type: media
   note: "LLM 预分类建议(high):桌面新功能发布，常规产品更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-11-25-anthropic-290
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "怎么看 Anthropic 最新发现，直接研究大模型神经元更有价值，这会改变 AI 可解释性方向吗？"
+  quote: "怎么看 Anthropic 最新发现，直接研究大模型神经元更有价值，这会改变 AI 可解释性方向吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE0yUjJXV2drOWFyeER4MEtHVG9CT0ViSmFhbHdCeUdRb0VuSWVELWVNSEtQUUN5eGdJOEhvNUJUcV9aZUdTeFdHVDgwUm91WWl3X0pYRHV3c3p5X1YxWWlN?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):可解释性研究新发现，技术方向事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-anthropic-291
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic上市：从Uber的预算看Claude怎么赚钱"
+  quote: "Anthropic上市：从Uber的预算看Claude怎么赚钱"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTXlBRFRmMENjSGp1WUQzWHBlNnBVQjRKVmt3ZndSMEZJVDBvZXBWT20xSDZ4R2JGZDE1NGZQdG9HUW1TSVVwUGphNDhXQ0p3Mk5NdFYxWFhnMm5fMXdRTmRFZ1VKNjNaaVNzdWxlMWtEdmpmSGxZNFFMMkoySzYybVpqb3FZVlNW?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):上市与盈利模式讨论，涉公司动态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-anthropic-292
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic为Claude新增Artifacts应用安装功能"
+  quote: "Anthropic为Claude新增Artifacts应用安装功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiaEFVX3lxTE8zUEY4dy0zTmVHZDlYeUk4Wms0MHV5VUFHLUpkWHpsdGo2T09aN0tSOW5yMEhKdVNqSFNMem52OXZUUUpyNWwyRVJLV2tFNUJuVGJVREFPdC1zaE1EU1V1SlBCUHJRV29q?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Claude产品功能更新。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-anthropic-293
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推出Claude Ship让AI智能体审核代码-AI应用"
+  quote: "Anthropic推出Claude Ship让AI智能体审核代码-AI应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMib0FVX3lxTE1EUFhQUDV6eVZadllDQVYwYl9MWkt1SXg3aGowVzJUU2xmZDJ6eXE4alVUcHNQTTl6amRsTjg3YmYxWG9JYUR5d3YxRTlILTZ6LXh6MVRtYkF1ck0zOE45M25rR0VvT1V3eTItY05YOA?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):新产品功能发布，涉代码智能体赛道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-anthropic-294
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic CEO长文刷屏，超级智能时代的桌面APP来了"
+  quote: "Anthropic CEO长文刷屏，超级智能时代的桌面APP来了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTE1pWmJ6ZGVBOVRzYklsMzZDbVRTUGFtVXZ0WGVTRlhOV1Z4bTlITE9CMmxjV0dqUFRLSUM5cnN0MkhCOERwSGZRZ3hQSDlOWGNqVFc4ZlB3?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):CEO重磅发声加桌面APP发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-295
+  date: 2026-11-25
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "AI安全倡导者对Anthropic渐生不满"
+  quote: "AI安全倡导者对Anthropic渐生不满"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxNYmlMbzhjT0dsOEZHQXZ6bEsyUnphLVFMaHUtdFk5SHlKUFJ5WDBDaDZudUUxLVFoeVY1aE1jMWlXYlozVGlVU1ZRM3ZTV3RwX0NCbWNheHkzRGQxUElxNFhEeGRrX1AwYll6bkVTalZXYWRJTm12Ymh3NEt6SHQ3Vk5qOWpqbUVuY0E?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):安全社区不满，涉品牌定位争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-296
+  date: 2026-11-24
+  dim: W1
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic破发一度暴跌14%！创始人套现逾5.6亿美元，黄仁勋回归加剧AI路线之争"
+  quote: "Anthropic破发一度暴跌14%！创始人套现逾5.6亿美元，黄仁勋回归加剧AI路线之争"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QZ3BMWmwyMk9TczdRZW9pMTVjdWdQNnR2OVJwbEVDZ1lZbU0waEw0ZlRWRXJ1cUNJU3hZWTU1X09NUUpMYTBMYVhmS0ZhelZhQWNr?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):上市破发与创始人套现重大舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-297
+  date: 2026-11-25
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "Anthropic Claude Artifacts现可转换为Mac和Windows桌面应用- AI 人工智能"
+  quote: "Anthropic Claude Artifacts现可转换为Mac和Windows桌面应用- AI 人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yS2diVmlmN2RsOXNnTWZGbzlRdnRxNTNSM3EzVmQ0cmpkN2Q0VjVEVmQzeXJndUxRY25PNTZ0M19xZVJET21mVTRfcUdfejIybkhSV3NPRy1ETGpJVEw4dQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):核心人才流失，涉核心竞争力。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-anthropic-298
+  date: 2026-11-24
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "破发不算最疼，Claude Code核心班底被OpenAI疯狂收割才是：Anthropic的编程王座悬了？"
+  quote: "破发不算最疼，Claude Code核心班底被OpenAI疯狂收割才是：Anthropic的编程王座悬了？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE5jRjBXQldWTmd6Um1zUGEzUmNHeTdVUFdHRG9oRWpHN2syVW9weDJJVmFjSGdBSUpqTmFkbTNuTnlZd3M2Wm1lX2tyWWFtdw?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):核心班底被挖角，编程业务承压。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-anthropic-299
+  date: 2026-11-25
+  dim: W3
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic抢先上市，OpenAI境遇艰难|Claude|IPO|黄仁勋|股价|投资者_手机新浪网"
+  quote: "Anthropic抢先上市，OpenAI境遇艰难|Claude|IPO|黄仁勋|股价|投资者_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxPbml0QjV2V2I2cDNNTXNlMXlkSTFZVUJSQW1MV0RYbkNnS1JidmFvUlhzZ2VRNEhGZkdzelNIUWhtdjNtd2taR1pnUFk0RG1MR01zOTM2eHhVRmltUWpBQ0VWSWFncE42MTNTMm1FMjRSQVptc3daa1RKZ3lkU2xqMnM3Mmx1ZmZSRUE?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):IPO传闻类报道，若属实影响重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

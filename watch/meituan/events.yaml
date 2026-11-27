@@ -1508,3 +1508,19 @@
   source_type: media
   note: "LLM 预分类建议(med):投行评级观点，轻度利好信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-26-meituan-098
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "从模仿到自我纠错：Keeta客服模型的RSI实践"
+  quote: "从模仿到自我纠错：Keeta客服模型的RSI实践"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmSkdDNTZPRVlRVHpnTXZmWWlwVi1HaURDRGNmRzc2Ymg2MHpRODhVdi1PVUNEOHhtMFhYdTdJTDlHNTRRRTExRjdPcnhaaGpqT2JVNG5rNXRhNXJp?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):Keeta客服模型技术实践，涉海外业务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

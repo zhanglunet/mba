@@ -2555,3 +2555,49 @@
   source_type: media
   note: "LLM 预分类建议(med):美国会报告点名，涉安全监管风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-26-kimichat-167
+  date: 2026-11-26
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国推出新规限制海外算力 中国AI公司或受冲击 新模型推出速度预计将放缓"
+  quote: "美国推出新规限制海外算力 中国AI公司或受冲击 新模型推出速度预计将放缓"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMivAJBVV95cUxONUdBTUhyS2t4eExSNTg5S0hIckpBb01ka295LVZCTFhPTVU4UnAzZmRxSld4b0hiRFNOZVRHeDFEa2ZENFRsUG5uU3JJU1AxQl9MeGdnX3VrOGtETnFrQU90SGl5TlNmMDVscjlqWmZTaXU1TFh2SFJza0xJOXZ2NXlXd0hxcmlScUlkSnRDT1ZhbEI1OVQxcTRnSTJKb0JIcUJDYkh2MXFvZTl2VUgyOVd4UHRMdjM3cHpnODNybW02dC1mT09sVHlPWXZBNXhRSDlqTUtqdjBHNG02NVpvX0tGY0RESUVhQ3Zfd1F1bFI0aDJnelR1bnpPWnRMQmJoWHhfLWJleWtSQzNsb0w5MWJmZXRYMkFkS2VuSS0xMThqa0V4cTdsMnZJUm9kX3FMY2pDdHlMNmlEWFla0gG8AkFVX3lxTFBOaEVQNWlkVEQwcFExUU84WVc2ZC1yWHo1M2gxNlNhM2w0bl9Ock5HVzhGU1NDYjd5NjByLXNIdDRvNWFKdndCX0J4UlVQcS1PTjhodjVDejJXc0VNekx2UGtfQzBSZXp1VW9aM1JQNko5Rl93ZGgzZjUwNnZhOHJ0aE52WjZGTzhzUFVHNkVfalZjVXVZQUMybjNISkh5SmZlc1cteFUzeHNBTnU4U3dkcUhaUUtNejJMblFoSlE4cFhCb2hHSjJwZU1USENNZ0pnOW1zaHpoUTBBQWZLNWpDd1ExX3J1TjctV3NxbmJmYTlNSFc3UzMwZ0QxamM4RE9GazZQcFBPclJ3T0k4UVFYbUp0YTZ2a0cxTHBpZVJ5Ty1pUGcyUFd1VWFQQTFJMTQxUmU5T1A1S0pCWGw?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):算力管制波及中国AI公司，含风险信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-kimichat-168
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面抛出“Kimi时刻”，港股科技股大涨，南方基金旗下低费率港股通互联网ETF南方(520650)、港股通科技ETF南方(159269)标的指数涨超3.2%"
+  quote: "月之暗面抛出“Kimi时刻”，港股科技股大涨，南方基金旗下低费率港股通互联网ETF南方(520650)、港股通科技ETF南方(159269)标的指数涨超3.2%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiakFVX3lxTFB4SEJuMWVjMzJJcl9vMlRvN01UWS1wekx0WmcyUlRTeXdmY29IS0w0MVh1VmhLMXBrVHY1YTRlVUFIWFhLSTZYMk5LZUNTTFk5akRIanBsQWN5ckI4d044WnVSeWM1MDM3b3c?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Kimi时刻引发市场热议，正显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-kimichat-169
+  date: 2026-11-26
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "6个月拖到1年？美国算力新规卡住智谱AI、月之暗面"
+  quote: "6个月拖到1年？美国算力新规卡住智谱AI、月之暗面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE56ODhocVdpV1FwNWp3Q1ZFc0xPQWFWLXRlTU4yRnc2c29ab3pUOHY2SDN1TE9XOHVENDdtcGg4MkJIMzRkNU40aQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):美算力新规实质影响公司算力获取。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

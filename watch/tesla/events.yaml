@@ -3280,3 +3280,109 @@
   source_type: media
   note: "LLM 预分类建议(med):FSD V15功能升级，含参数信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-24-tesla-216
+  date: 2026-11-24
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉 10 月在中国只卖出 8,817 辆，同月上海工厂往海外发了 59,012 辆"
+  quote: "特斯拉 10 月在中国只卖出 8,817 辆，同月上海工厂往海外发了 59,012 辆"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBzLTJqaFZYNU5xaERYUlR3ZnhDV3BwamFROHozZ2N0MmpzZm05d214akhvQXR3SjUyT2EtQy1pQVdNMlYxX0U4aXI3d2xGdDNJWkpETndFZlg0OXBm?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):在华销量骤降，市场信号负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-tesla-217
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "四大工程秘密：更逼真但更省算力，特斯拉FSD V15是如何实现Reality View？"
+  quote: "四大工程秘密：更逼真但更省算力，特斯拉FSD V15是如何实现Reality View？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9WS1ZKU2RVNGxXTWdDYm9uVkI2WlRVS2dpanVSYVl5YmpWakF1WmpaamtxazVwSGEyNFdGVkNPQ0NKS1pkZFBmNktSRHE5bjB0WTVUSXpsR2Z6cU1D?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):FSD重大版本技术解析，产品进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-tesla-218
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉FSD画面很酷，何小鹏：东西不难，值不值得另说"
+  quote: "特斯拉FSD画面很酷，何小鹏：东西不难，值不值得另说"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiT0FVX3lxTFBiTDVuU3pfNWVsUDctZVY3blBpQ3l3eF9IS01iVVh6SU52bVlTU0RCdzJYV1NxNFE0ZzBGZ0FSbDFUel9tY1M3d1F1cUlDazg?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):竞品高管公开质疑FSD价值。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-tesla-219
+  date: 2026-11-26
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特斯拉赛博旅行车Cybertruck确认停产车主订金全退- Tesla 特斯拉"
+  quote: "特斯拉赛博旅行车Cybertruck确认停产车主订金全退- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1ZGN4QTlIcUtzTnJQd0hibnRRNW9mREJ1RjJXaEI0dHNHdTNBWHM0bmozNk9HU08yWHhYcTA5VzNSdWRXWnEzY05nN2FZNzhpUTdWcDQ3VDVQRzNVTmhVTA?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰车型停产并退订金。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-tesla-220
+  date: 2026-11-24
+  dim: W1
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "FT：Tesla与SpaceX力争在年底前完成合并"
+  quote: "FT：Tesla与SpaceX力争在年底前完成合并"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxNR21YSElSMkgwQmZTTzRFd0ZJTURuakd6TkdIdU9Qc2RYR1FnZzhQOGRheHFMZHhKSlZjS2xxeDFVb0ZEY1BaTlRpdUlwQWdmRGpER3lDWHVlTnA2SjdxbUFDYjVHbVJESUFpVHIxQmpUVllodThobEJXbFMwb0NsU3FqT3FvX3JOem10cVdzdkhyY3NQVGc?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):重大并购传闻，涉重大资本运作。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-tesla-221
+  date: 2026-11-24
+  dim: W2
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "Musk Targets Starlink in All Tesla Models “Towards the End of Next Year.” China Is the Catch"
+  quote: "Musk Targets Starlink in All Tesla Models “Towards the End of Next Year.” China Is the Catch"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiugFBVV95cUxNMFF0OFhVQ0FWMktycTRjNmNnUmlLUmQ4dFlvcmkzRmdURzRMNThwQmV4SWVaQkdteldQVWNwZngtNDNhVkRlZ1lxc29VWnpEQm9wV0NsZ1NMWUk0Y0pOOUtaQWtiVDNZR0dGQkV1UnIyaXluZHJEanV0QmxXSHhjeFpOVEhNaDYxQS1zMFlmXzhaaHR6Y1NLQlh6S05fUElUdEhmemg4NU5pTWVreU5nOEJjREFaTXAzS3c?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):产品路线计划，涉中国市场风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-tesla-222
+  date: 2026-11-26
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克自掏腰包增派糖！每美童送两股SpaceX 涉资可买1.5间国泰"
+  quote: "马斯克自掏腰包增派糖！每美童送两股SpaceX 涉资可买1.5间国泰"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMinANBVV95cUxPTlFaOW0yeENjUzRTR1hqQ2RjaWp6aFF3N1doT0t0WDJGWlZkbEZSUEloQ0pxTHJWZnBabDgyVTBzX0l5aDFwa3AwcVN0bi1FMWVrdHdxSnc3NXI4TG5YeXRyZ1ZZb0UtOHJqQ3Q1OWFuNC1DRzNLb2otYzNkcWEwNzJaUXZNRlZtZ3YxQUVHTHYzME1MbmJxNjlFQms3NjZFamRsSm82UUpxZFpXS3E5cjlsLUhqLW16cWJ2Z0tzVUtRWWg5emlfZTdqOXpBWXdLTWZnY0U4RXZTbVEyRHl0SFZ5QmtVanZTM1IwRFNzMEJuTmZ4NzAzdEFYY1pTOFo4bEtCQlJwRm42RmFKYnhwWHM3enRfQ054cE1Ya05fTWhGdWl3Zk5Sa2lFOTNKaFhnWXNtM0RDRXllUkpWbERnRFZyemZRaXZMVVliRWtDaDM4UElYa2xLd1BLR0s0LVp4bVEzcWtSaGJ2YV9jc2IyQ1JoVlFTUzV5dWxtc2picEJleWw5TWFheVpIOHhlZEFGbWdkck4yX0lsSGdn?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):股东回报举措，涉资规模大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

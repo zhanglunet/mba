@@ -3839,3 +3839,64 @@
   source_type: media
   note: "LLM 预分类建议(med):苹果对AI音乐的透明立场，品牌价值观表达。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-26-apple-253
+  date: 2026-11-26
+  dim: W1
+  severity: P3
+  direction: pos
+  direction_by: model-judged
+  title: "印度第七家门店：苹果 Apple Kukatpally 下月开业，专属壁纸已上线|海得拉巴|苹果官方|苹果公司|拉巴|官网_手机新浪网"
+  quote: "印度第七家门店：苹果 Apple Kukatpally 下月开业，专属壁纸已上线|海得拉巴|苹果官方|苹果公司|拉巴|官网_手机新浪网"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMif0FVX3lxTE00YXU1a1lsb2F1NDZDNnhnNGE5eXYxajg2QXlqQ0RfWGRsR0tCWEJLN0J4bW50bGY5R28wdVNLZDAwa25UcFE4QzNxbVczd1YxVGp3QzE3U1p2WTdRdlhya2tSai1jTzVvdE01ZXJ1OHBxcC1ieU13c2xzcHNLcGc?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):门店扩张事件，信息量有限。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-apple-254
+  date: 2026-11-26
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "iPhone 16 AI 功能广告被指误导消费者苹果在韩国遭监管审查- Apple iPhone"
+  quote: "iPhone 16 AI 功能广告被指误导消费者苹果在韩国遭监管审查- Apple iPhone"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JcEFoNEZ3MnVJaWs1QUgxLVdzRi1Eajc0TjBzSXFlUy1OWl9QQVdudm9zenQyYjh4bFdxb1dBX1JBMTJtcTdpcVV3eVo1RHB3N044WmxwTkxJZnZnYWtwdQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):广告误导遭韩国监管审查。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-apple-255
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "苹果因 iPhone 16 的 AI 功能宣传面临韩国监管机构审查"
+  quote: "苹果因 iPhone 16 的 AI 功能宣传面临韩国监管机构审查"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMipwFBVV95cUxNMHV3MUZKdXBzX3JPVmFzQjQ0alFVa0U3NllWdkwxU25lTmRrdG5ObkZvdHdPMzVYeG5qZGE3V2Z6RDZoRFhPcXh3emNscmdPRXU4VnIzMEpURUZMM0ZZV2RxaGdDaGEwX1ZxZHdmQ0Jlc2hQRElNMmJSbGs3NTdDd3RzTEtyMFFadEZtVElLd3ViXzNKakl3SGlCaE1OY0VkbEczWlQxMA?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):监管审查AI宣传，显著负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-apple-256
+  date: 2026-11-26
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "苹果将在印度海得拉巴开设新零售店- Apple 苹果"
+  quote: "苹果将在印度海得拉巴开设新零售店- Apple 苹果"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE5sQXk4Zm4wSXBFel9mbnZMd2pINzM5N0FQRWNFbnM3aXA2UnRoUldKa3BpUXAyUFhlTDhpdkdkVmxCMVBuWHZEYWhmcjVlRjg5c1ZBMWdENGdpNEF4ZnhuWg?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):印度扩张零售布局，正向一般事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -3475,3 +3475,79 @@
   source_type: media
   note: "LLM 预分类建议(high):CEO黄仁勋重掌帅印，核心高管重大变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-25-nvidia-229
+  date: 2026-11-25
+  dim: W1
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "黄仁勋称英伟达不需要接班人计划，经历这次离职风波，这个观点还站得住脚吗？英伟达到底需要怎样的管理模式？"
+  quote: "黄仁勋称英伟达不需要接班人计划，经历这次离职风波，这个观点还站得住脚吗？英伟达到底需要怎样的管理模式？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBqalBndDVONVVXSEtxQk5CRWRIc1ZLcldyS3BTUDRNTHJsVjQ4TUl6N0wybUdlcmoyS3FGU0dZeFpLVTkzQTVpeTFaanNockc2MktwNU5uaWVJWlZISm93?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):涉高管继任与组织管理的讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-nvidia-230
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "数千枚英伟达B300涌入转售市场，是意味着高端算力采购需求在发生变化吗？为啥英伟达仍称市场供不应求？"
+  quote: "数千枚英伟达B300涌入转售市场，是意味着高端算力采购需求在发生变化吗？为啥英伟达仍称市场供不应求？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBNS0VONk8xVzl3YTJzTS1RbHhVeG1oN3Jpd1ZET3VBdWR3WE8zYkdjWHo4aVh1dDN4UmNEVno3UzYxU3BVV3FTNjdqbGpjTU9rc0R3T1lFbHYzS1FRYjhV?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, category]
+  source_type: social
+  note: "LLM 预分类建议(med):B300转售潮暗示需求变化，非官方推测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-nvidia-231
+  date: 2026-11-26
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "消息：英伟达停止向新加坡在内四国供应服务器"
+  quote: "消息：英伟达停止向新加坡在内四国供应服务器"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMidEFVX3lxTE11Ql92emo0RDktQS1aSjZsWnhyVlZHdHhEeG05ejVtMDFqTUFsVEhOaTZVai1mZmlJc0FCYzZKVjUwa0N4cDB6djZYdTY4X2tSU2d6VWVwckVaVzlodk4wY24xcE1DRXhkaXc0Z0lfQnVXMnl1?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):停供四国涉出口管制，实质供应链事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-24-nvidia-232
+  date: 2026-11-24
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国议员质疑英伟达首席执行官的回归，并提出安全担忧"
+  quote: "美国议员质疑英伟达首席执行官的回归，并提出安全担忧"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitwFBVV95cUxNSURSMXJOWGQxa2p6Q1JnQVhpQUNtZUtaU2NnZmlsUk11YzdXOXhpa0otMUFBaFNpT18yRXVEdXcycUxuYlU5OFhCWGE1Z1VabHhQdkhnTWMtNHZkTUtHSDIyNlRYRm4zUHBMNXhTVHdQeUpFRk83V0JDcUtKV1FFVkNJeXRYd3prQ2ZfLW1SR3NINHZwcnRQMHVqcktDbXBoNWMxZThibTdHaEF5ZC1wMGt0UFNCZFHSAboBQVVfeXFMTWxNUXdCV2Fud1NtcHljNG1ud2FnRWZGdUxIQWlGWmFteUlmN0NwVGVEUFpsS2FqanNBQUJsRFJTQlZuQ2FDcjM1QS1LU0tGTnNvMUp4MUp4Y3EyZlN4Sk5lamViYTRQLU5KcXVkZVo1TFlRUktiUS0tcTRfeHVLRTQ3V2NpZHV2MXZDRlFTWndyMXJjWlc0ZEhzSklWQ0EteHNEYTZ0NzdEVjU4V3dxaVI2cnYxdUhaRXR3?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):议员质疑CEO与安全担忧，政治风险显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-nvidia-233
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "黄仁勋、特朗普与震动英伟达的11天"
+  quote: "黄仁勋、特朗普与震动英伟达的11天"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxNMjRTdEtSdmY1dnlfTUFYdVFYNHNYN1dZaDN3UmFfTDBvLUZkX1lNY0JMaWlrd2JvOXlNQ2VNRWZQdWYzakJJck9BeERpenoyb2tEN2lYZkRLX1l0UlVHdEJIQklrSjF4TWlDNThpNkVyd25NbmtKN0NaeGlqMFZmU2JRU2NoU2JCYjhxaWpudFd2eEdT?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):涉及CEO与总统互动的重大舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

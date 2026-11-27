@@ -873,3 +873,109 @@
   source_type: media
   note: "LLM 预分类建议(med):选型对比文，参考价值一般。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-26-zhipu-055
+  date: 2026-11-26
+  dim: W9
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "智谱GLM-5.5延期是老外造谣：性能Fable级、上万张国产AI卡进展顺利"
+  quote: "智谱GLM-5.5延期是老外造谣：性能Fable级、上万张国产AI卡进展顺利"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWEFVX3lxTE4yRDVINVAtdUZkcmJ2dFV1M3dhMnhLXzBnSGVCZlRSaHVHYk5kRmhvQVAyZ1RKejYtZWpJZGIwZlh5NlZDZTlhcHNnQTQyWHZzdEE1QlJMdzQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):官方回应延期谣言,涉主力模型进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-zhipu-056
+  date: 2026-11-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "期内亏损收窄，智谱强调收入构成转变并回应算力储备与行业竞争"
+  quote: "期内亏损收窄，智谱强调收入构成转变并回应算力储备与行业竞争"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HWDRjY2dxX3VJSUlTUjliMWtSMnhheG0wVnBjb1hkQWtYSi1hcmFoRjFTWlV5OE9qVzM2eVJ6RFdDNXJCTmg3ek1qQUdHdkhZ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布,亏损收窄。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-zhipu-057
+  date: 2026-11-26
+  dim: W7
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "美国蒸馏限制与芯片规则推迟智谱AI GLM-5.5，月之暗面警告AI差距或扩大 - 新闻和统计"
+  quote: "美国蒸馏限制与芯片规则推迟智谱AI GLM-5.5，月之暗面警告AI差距或扩大 - 新闻和统计"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi0AFBVV95cUxNQmJMWUZPTGgzZ2hCR25NSkFLMkgzT25yeVd6aV9vOUVVeTFLQXVCMGFuNERWaFowZGR0RHJOOHVOaEYxTVhsT1Fnb3JJbGZYVlJVZG1aOG5OYXdhR21QeHJlYmlnQTJBYzRob1hmWnBVNGxveVlFd04tblFyWWk3MFpjU2hESzF5ek83eW1LbVFXQlJRZ2E1MzdRSi1OVTRFYTNQMmh2bmxMN3MtdDZReGFiLXRnRzV2SHkzU3dzMGttMkVVY25fM2pQNjFYZXR2?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):外部管制影响旗舰模型节奏。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-zhipu-058
+  date: 2026-11-26
+  dim: W9
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "GLM-5.5延期到2027年？智谱高管发文辟谣"
+  quote: "GLM-5.5延期到2027年？智谱高管发文辟谣"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiigFBVV95cUxPNS0zU21XU0tnQlNMNUhKUElDcFBBS0w5X0UtSS1RVms5bjBfTVpTYkVYckgxZkhtR09KQWV2VXE4ZWlHR2wxbFRmUnJKcU9RSkF3blJncHYteWlPR1lyUldYRElETzc4bkdqc1ZQR0ZvUlBGWFVPcDJxVm5ucHpuU09QRmU5bjVETFE?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):高管辟谣延期传闻,舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-zhipu-059
+  date: 2026-11-25
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "高盛解读智谱：GLM-5.4为更大模型探路，维持1560港元目标价"
+  quote: "高盛解读智谱：GLM-5.4为更大模型探路，维持1560港元目标价"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNT1p5aXlJdE9za0ZMekI0RE9GQllIcU9TakZXRlhoRXVOY3ZEeVRNdmxtbnp2ODdESU9VRmh6dXZIQklWcVF1UFc0OXFMUk81R3JzNFRVcnJmVEMtT29yakJnRVRRT05EenNFRVY4cUsxU2xFUXUwcmozaEZlWDVPVEdXX09TTmJBQTY2bw?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):投行正面解读维持目标价，属媒体观点非事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-zhipu-060
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "GLM-5.5 could slip into 2027—and chips aren’t the only headache"
+  quote: "GLM-5.5 could slip into 2027—and chips aren’t the only headache"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiQkFVX3lxTE43S0RLX1ZtRDJMS2hDaVkwek0tUEJySjlreFIySHd3S3pEQmk1ZHRyRmM5bVlNV1AxZ3lYOHBPTmV2QQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):主力模型延期传闻，涉及芯片约束。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-zhipu-061
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "6个月拖到1年？美国算力新规卡住智谱AI、月之暗面"
+  quote: "6个月拖到1年？美国算力新规卡住智谱AI、月之暗面"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE56ODhocVdpV1FwNWp3Q1ZFc0xPQWFWLXRlTU4yRnc2c29ab3pUOHY2SDN1TE9XOHVENDdtcGg4MkJIMzRkNU40aQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [origin, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):美国算力新规影响研发进度，实质监管事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

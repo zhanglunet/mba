@@ -4357,3 +4357,139 @@
   source_type: media
   note: "LLM 预分类建议(med):传闻性产品动态，无正式发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-26-openai-285
+  date: 2026-11-26
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "怎么看 OpenAI 承认计费错误，修复之后 GPT 6.2 Astra 流量上限的速度会加快40%？"
+  quote: "怎么看 OpenAI 承认计费错误，修复之后 GPT 6.2 Astra 流量上限的速度会加快40%？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FNU9ZZG1lQVFVVV9kdDlTT0RGcW4zSnZCWVppMlhWTHQ2OTd0TVB6UVBtcWpDN0ozajRNME43aC1JSUJjdlFXblN5SDZ0eWo0RE1BTGhNOWc2V1VnRzNv?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):计费错误致费用争议，属服务问题。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-286
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI的6天：一边宣布AGI时代，一边放话要停售"
+  quote: "OpenAI的6天：一边宣布AGI时代，一边放话要停售"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNLS12bHQyQk1PRktaTHd5d3ZUNHNKNWl4X0N3aXVwQ3dIV2xwWHRjNWZDUEpPWHN3cG96NlVOVmwtSXhOd1hOaWltRnZMRmZXZnFScmd1Z0FNWjdC?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):AGI宣示与停售传闻并存，影响显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-openai-287
+  date: 2026-11-25
+  dim: W6
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI：GPT-6就能设计蛋白质，多任务媲美专业模型，实验室验证结合成功"
+  quote: "OpenAI：GPT-6就能设计蛋白质，多任务媲美专业模型，实验室验证结合成功"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5SV0FwTnN5NDBYeWJkS1lSUUtxOUdrWExyLUlidTJJRUFUaHJXeWczX2hIRDRYT05yYkNBZ2FLY2hrNzhaMFZ2NUxnY210dFV2RWNkbUNja3NmX3cy?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):GPT-6能力突破，重大技术进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-288
+  date: 2026-11-26
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI 计费出错，Astra 消耗速度加快 40%、Sol 加快 25%"
+  quote: "OpenAI 计费出错，Astra 消耗速度加快 40%、Sol 加快 25%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBabmRhak1DZzRvN1JSaC1HbUlsaHowaDBXSUhCTFEtU2VobGVheEdMeXFLcXZVd1F0bm5uNC1RNEVjYk5EVXBfVGNOM0M2OFJ1eHJ1MVJDa21YWUQyWXc?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方产品计费故障，影响用户费用。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-openai-289
+  date: 2026-11-27
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI修复GPT-6.2计费错误 部分模型额度消耗将加快"
+  quote: "OpenAI修复GPT-6.2计费错误 部分模型额度消耗将加快"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9VYW1MdjQ1ekdQTnVTU1ZSb1ZRMlZyRFZzTDRhVl9rOFFxTDE4YlZ5SmFhN0VKeFMxdUNzMFB5aTQ3bU1oV2t6Zg?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):计费错误影响用户成本,负面显著。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-290
+  date: 2026-11-26
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "刚刚，Tibo承诺「连续28天发布或重置」，OpenAI遭遇信任危机"
+  quote: "刚刚，Tibo承诺「连续28天发布或重置」，OpenAI遭遇信任危机"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTFBQNTQ5aDRoZ3JCMlV0bFFlVHlFTWtvNDZ1WnlIZ1NkVzJXZFNxT2hDb2xYY21BeFZfQXltRVVGZUkxU0x5b2RyYlhlS0F1QQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):信任危机议题,涉发布承诺风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-291
+  date: 2026-11-26
+  dim: W2
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "OpenAI内部调查显示研究员愿用四成人手或三成算力换取更强编程智能体"
+  quote: "OpenAI内部调查显示研究员愿用四成人手或三成算力换取更强编程智能体"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVEFVX3lxTFAwd2ZNY3p0d25saTN0X21XYjRBclFaU1BJUzEzLTNvZ3JtVlZ0UFRkNTUzQlhYeWZocWJzTkFTUlNFcGw5NUtBWkp5TTFnWThteUpMUw?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):内部研究倾向,反映战略方向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-292
+  date: 2026-11-26
+  dim: W4
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "OpenAI证明矩阵乘法速度极限！复杂度指数下界=9/4，57年数学竞赛一锤定音"
+  quote: "OpenAI证明矩阵乘法速度极限！复杂度指数下界=9/4，57年数学竞赛一锤定音"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9yR1NkSVhuN0Z5SWtybVlsQVdFVlV3RGdyT1BocDlUcjg2dnpqT1BUMFhnYWhwaEtIYmpIdkx0d3R0Q2xEOExNLQ?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):重大数学成果,品牌技术声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-293
+  date: 2026-11-26
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "OpenAI修复GPT-6.2计费错误：额度消耗提速，Astra用户上限触达加快40%，补偿重置+Business免费开放Fast Mode"
+  quote: "OpenAI修复GPT-6.2计费错误：额度消耗提速，Astra用户上限触达加快40%，补偿重置+Business免费开放Fast Mode"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTFBFNllrbmhQd05Sb0lleGtZbHo4Q003TGR1Qjk5aWFGZTdIdkFDQ05hLWFoZGk5aW5uSjRqejRWcGNnelktSXFTdE1uSzRTWFFBTmIyQlFBblpqYVk1U0E?oc=5
+  fetched_at: "2026-11-27T02:27:03Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):计费修复+补偿措施,影响用户。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
