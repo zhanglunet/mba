@@ -3386,3 +3386,109 @@
   source_type: media
   note: "LLM 预分类建议(med):股东回报举措，涉资规模大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-25-tesla-223
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉FSD v15真正的价值，在于找到了世界模型的低维表达"
+  quote: "特斯拉FSD v15真正的价值，在于找到了世界模型的低维表达"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFB2SmVEeEdGN0IyaUtUOUw2RWRZNW5nY1RtdGRMb1dta0pUZ1N1VC1YRGRuN0MzOHExMGVNMUJHVE5SZWI3ck96bUUwTzRXNjEtaXVJekY2RWVDVW53?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):FSD v15技术解读，有观点。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-tesla-224
+  date: 2026-11-27
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "特斯拉或收购德国机床制造商EMAG 用以制造Optimus精密部件"
+  quote: "特斯拉或收购德国机床制造商EMAG 用以制造Optimus精密部件"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTm5Jem56NHFZUnBDMWZHYWFjQmUxR2lVX0tDU28waFUxNGdIMF9ZX2FmNjVZMnpDVHMtOXl0VGxKRWtrTDB6LXdndlMtWmxKM0ZfLUtoa0tsQzZELS12TWxmMGcyV3ZHZm12NzZTcVU4R19mbmtFWnFRT3phYXFWLXFMRll3dFY4VHB1aHRyb211dWQxdDVWRkdiVndISHFtMWFKdjhCajRUUQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(med):传闻收购Optimus供应链企业，或涉并购。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-tesla-225
+  date: 2026-11-26
+  dim: W4
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "被宣布即将停产的特斯拉Cybertruck成了美国卖得最快的二手皮卡- Tesla 特斯拉"
+  quote: "被宣布即将停产的特斯拉Cybertruck成了美国卖得最快的二手皮卡- Tesla 特斯拉"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE4tRHlhd3pXRW56U2Y5ZG5EWnU0ejRudVJ3dlYzQlNnY0dfWTNxQWpQd25OVVJiTXVKN0d3alB5cXF5bE1DejllN0k2LS05WlZNVVRJSFhBQ05ZTm8yT1JVbw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Cybertruck停产与热销并存，涉产品命运。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-tesla-226
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "SpaceX与Tesla合并讨论进入实质阶段，5名独立董事负责谈判: 企业·产业 : 财经日报"
+  quote: "SpaceX与Tesla合并讨论进入实质阶段，5名独立董事负责谈判: 企业·产业 : 财经日报"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYkFVX3lxTE5OZndDX2lDSUNyd1Q3cklfS3VEV0xQN05tTVFJYTlMOURXRTg5MnBFQTNkYVRIbnBfN2xxTktXNGtYUFpSZE5Ub1dPMTEzUTVMdENJXzd1alAtUFI3blZjQU5n?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):重大并购谈判进入实质阶段但未完成。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-tesla-227
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "现实和 AI 画面快分不清了，特斯拉 FSD 15 首发试驾实录"
+  quote: "现实和 AI 画面快分不清了，特斯拉 FSD 15 首发试驾实录"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMigAFBVV95cUxOSTdNTHVVVHNHTFpnVmNzbGNuWGtlUUNEbXd5a0YwdWpFVFhRekZreU93clZkQVYtcVFiVE84VV9kOU5Id0dVYkMwWTZYSUdKbHRwcEc4ZkU1RFRSMmtDOFBUem1nNGloMlp5ZURnU2ZFZGs5VXo4SXZuanZwNlg0ZA?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰智驾系统重大版本首发实测。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-tesla-228
+  date: 2026-11-25
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "特斯拉 FSD V15，把“智驾够用论”打回了原形-36氪"
+  quote: "特斯拉 FSD V15，把“智驾够用论”打回了原形-36氪"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ySERrdE1YN2ZMcDFJbTFUYVJldm9VdzZxTUN4cU1GR1h3VGNlU3J5cGN1N1BNUkNFY0p5ZVJSQ1FSMXBMZkVldkpjdzlPSlMw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):FSD V15深度评测，观点性较强。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-tesla-229
+  date: 2026-11-27
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "马斯克称擎天柱机器人有望12到18个月内具备做家务能力 届时“人人都会想要一台”"
+  quote: "马斯克称擎天柱机器人有望12到18个月内具备做家务能力 届时“人人都会想要一台”"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE1nMWdEemdVR1VtV05NNHpnUnU5M3ljTVJkMWVsTVFHTmw4QjJQZUJ5cXhTSTBPdXZvYXU1R01RWi12NGhreUh6Z0M0UFlGQXQwQXk3dUh5Z0VRZUh4NEgzQQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):核心产品路线图时间表表态。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

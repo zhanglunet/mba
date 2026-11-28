@@ -1524,3 +1524,79 @@
   source_type: social
   note: "LLM 预分类建议(med):Keeta客服模型技术实践，涉海外业务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-27-meituan-099
+  date: 2026-11-27
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "美团2026年三季报：营收增长至1156亿元，季度研发投入同比增长11.3%"
+  quote: "美团2026年三季报：营收增长至1156亿元，季度研发投入同比增长11.3%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiWkFVX3lxTE4weTJqc01FS2VHS1JnNFZ6M3U3LUxSWEVwcVJnT1FsUmNpSFlxUW5PbUJQOFdHSlU0UXR5NFpWN2FvRWR6WEhLaUJJRWpETXhqWmpkZUhqaEttdw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布，触发P0。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-meituan-100
+  date: 2026-11-27
+  dim: W1
+  severity: P0
+  direction: mixed
+  direction_by: model-judged
+  title: "美团电话会：王兴复盘美团优选“重大错误” ，外卖竞争迎来拐点、四季度UE将明显改善，明年AI资本开支将下降"
+  quote: "美团电话会：王兴复盘美团优选“重大错误” ，外卖竞争迎来拐点、四季度UE将明显改善，明年AI资本开支将下降"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiqwFBVV95cUxONTR6WWF6clhYMENHZnJBS2F3bWNNdVU1WU5LYUVIR19TWkhLbjJ5Ty1keDh1SlhNMldhOHBmcFVDS1ZwRlcyb2tQT2hOZUZWTDV1aEJqenBqY0x4d3F6dkowU0ZNSWRaVHE5QWRGOHUzN015OXBzaXc4WHNXTHpPbjlGU0I5Rkw5dDk5MHVaR09JVnJwM2VOOENjVGRQQk1Gekx5eG1CQ3RVYnM?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):财报电话会，含重大战略复盘信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-meituan-101
+  date: 2026-11-27
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "美团第三季度经调整净利润人民币18.503亿"
+  quote: "美团第三季度经调整净利润人民币18.503亿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMioAFBVV95cUxQVllOOEY0eWJOWklJQXZ4WnpRQkZFckJ2TmtKZ3o1YVJsVUt1ZVo1a0dEMGZOWFl1UGRBYmlKcTFqelBCbnNRZ1pLN3RMVzJJdHlhMDF3aHhadTBmcWpoal9remcyYlFQMzZxdWNRYVYwM3RvV1hDY1hRVklWZU1oVXBncGJmelpuTTZ5LUVDdTU3Q0xIek4xTmRZNG02aXRD?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-meituan-102
+  date: 2026-11-27
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "美团电话会：预期四季度餐饮外卖UE较二季度明显提升"
+  quote: "美团电话会：预期四季度餐饮外卖UE较二季度明显提升"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitAFBVV95cUxQQnJKMWNkZktZV0VhWkQzVmJ0T2Jqc3Z1YkhwVEdIV0ZzYnNDVjRJUjRUZHZKRUNjOVJrWXJzTTNJU1FhcUxOUGlUY1d4bjRuQktQUndSbDgySWtJSnlKNmwwZ3lYMnctRXlpOUhJN1JnMjlNclNsN3ZXcmhTQnQ3TllRTHhJOElxZkgwX1ZLaGFtUXd3Z3dfeVJYbFBERTJsSThhdjVLOTFPckhmOER3c3VzRlg?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal]
+  source_type: media
+  note: "LLM 预分类建议(med):管理层业绩指引有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-meituan-103
+  date: 2026-11-27
+  dim: W6
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "美团单季赚21亿元，增长向零售和海外延伸"
+  quote: "美团单季赚21亿元，增长向零售和海外延伸"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimgFBVV95cUxNR1ZHMDlQNHdXRDBMNEo5VFZ6aEtmNDNrbWU3dk1wb2dNZV8tdWlWcDN3VWxzLWRzdkVDVjV4cC1fRHhRb2ZnUy14c2RpVmpEdFFnUkx4OVNxN190Y3RtcDA5VS1GOGxISDZBb3d5blhMdHBYZm1YenFKbG5WSE5MYzRpRmQ0TzMwMG5RajZuTjdqMjVaZmJzRmFn?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):财报关键数字公布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

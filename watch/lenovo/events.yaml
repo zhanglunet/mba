@@ -1823,3 +1823,19 @@
   source_type: media
   note: "LLM 预分类建议(med):涉供应链涨价，关联联想业务。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-26-lenovo-119
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "利用全新的联想AI库提升业务效率。"
+  quote: "利用全新的联想AI库提升业务效率。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQnZOd0oxWERlSDNyYWVydXkxUW1zVHdzWHVlUjJiejNyRkhEODlOUjVZTDU5MXFZRUtmZGpnQkpMYVhLSmJ2Ql9FRGF0QmZhb0lRU1loVzRzbTI1dEI0M2tBTDVsSFRTeFJTbW5xdWFWQkRGbl9zMGl5NFJmNDh4VW5EU0stWVh3bG9r?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):官方AI库营销内容，轻量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

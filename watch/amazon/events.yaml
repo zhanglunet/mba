@@ -3133,3 +3133,49 @@
   source_type: media
   note: "LLM 预分类建议(med):与现代汽车合作，业务合作事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-25-amazon-206
+  date: 2026-11-25
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "首次进军美国以外市场，亚马逊汽车销售服务2027年登陆英国"
+  quote: "首次进军美国以外市场，亚马逊汽车销售服务2027年登陆英国"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE10VDRQYUJCakMxMFFkb2w4WjZFOWh2RGh6NUZVRHNmVVRSWnFTLUp4RVlHa2RvUEdjTDNNTFU5UmdBM21za3BIM3dsaHE?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新业务国际化扩张，显著事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-amazon-207
+  date: 2026-11-25
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Meta据称与亚马逊磋商解除Muse封锁，广告与搜索成焦点"
+  quote: "Meta据称与亚马逊磋商解除Muse封锁，广告与搜索成焦点"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilgFBVV95cUxORHBzVzJPeUNEeXFRMXRQTkY2b1U2em9Hc1piaWZ6TV9Jd0JpeUVqUk9EUGtLMlA4OVIycE14bWNGb0hHRnhVckUydkxPNUkyZEJsXzM1OW1lSjdpZ3hLbjBxNC1renlmcmtXaEdfVkdOaWZxNlB2VkNLaGdyaWpWRWUwZzBPb051WXo1ZXJTNXY4U1l5dGc?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):Meta与亚马逊磋商商业合作，涉及平台格局。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-amazon-208
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "亚马逊汽车2027年登陆英国，首个合作品牌为现代"
+  quote: "亚马逊汽车2027年登陆英国，首个合作品牌为现代"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMie0FVX3lxTE1LZ0lRSW5lYkFxc1NYMzZaNWJCQXhtc2lGRkR3SnpGMlVNMS1xRG9kVTM2UTBzbGdNakZ2TGttenRxU1MtQUdpM0hIZXNqS0NZUlE4Um1qYWVBM3JfSDVQQ1RGTlZ5Vk1PcW56UUJnbW9JM1E5QmpKRFQtSQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):亚马逊汽车出海英国，新业务扩张事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -4155,3 +4155,109 @@
   source_type: media
   note: "LLM 预分类建议(med):平台政策变更，涉开发者隐私争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-27-google-274
+  date: 2026-11-27
+  dim: W4
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "谷歌又搞事情，Gemini 可以在 Claude Code/Codex 中带劲蹬了。"
+  quote: "谷歌又搞事情，Gemini 可以在 Claude Code/Codex 中带劲蹬了。"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1md3k2YVpzajNBajVTLVd1d09rd2Z3VllGbGZvbDBJYkRJVTM0TndZUWFELUUyOFp5RU9xSFpLN1d2NU8wVGVhYjNaYlFSV0xDSVV5aS1fMl8wZ283?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):Gemini跨平台可用，生态扩展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-google-275
+  date: 2026-11-26
+  dim: W6
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "科技资讯|Gemini 推出新隐私设置，可独立控制聊天内容用于生成式 AI 模型训练"
+  quote: "科技资讯|Gemini 推出新隐私设置，可独立控制聊天内容用于生成式 AI 模型训练"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9pOE5EeHJ1RzdMMlpQZnNNUkJsanFSdHhLbm9CT2lGU3N4bENFa2x0YXdTOHV6ZjlhTmJFMlFGalMtbVdGRXpQZFpCN1hDN2czVkk2NTNWbFVOekcy?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):隐私政策重大更新，涉训练数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-google-276
+  date: 2026-11-27
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "曝谷歌第10代TPU芯片将配备512GB定制HBM5内存"
+  quote: "曝谷歌第10代TPU芯片将配备512GB定制HBM5内存"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5BUzF2V1JOdjBJZnE4STVqSHFvU0JWRFA0Q2FDeUlXQ2tQNnB6UG8yVnAzbW5BT3ljMktpR19SaVg3aTRsNUdPOFdzUkQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [leverage, category]
+  source_type: media
+  note: "LLM 预分类建议(med):TPU硬件传闻，供应链信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-google-277
+  date: 2026-11-27
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "担忧AI影响教育 美国多个学区禁用谷歌AI功能"
+  quote: "担忧AI影响教育 美国多个学区禁用谷歌AI功能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QbzU0RC1uVW5vOU1nR21ZdUllVm5kc0FXRGJBTlBMRzBQTHgzUE1lYTljQ3UxUGp6S3JtcXNDUW9XU0tkWnFHUno1NmFxRy01cVNDa1pqMjZfamwtSkh6aQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):多学区禁用AI功能，实质负面舆情。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-google-278
+  date: 2026-11-27
+  dim: W6
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "开个网页吃掉8G内存！Gemini网页爆内存Bug：谷歌终于修了"
+  quote: "开个网页吃掉8G内存！Gemini网页爆内存Bug：谷歌终于修了"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMilAFBVV95cUxQaUcycFRtdnZwd2dDeF9tVzlDOUR4OXdjMlgwTzh0S2w1M19yR21VVjgxREJKdTdfVFU4cjItUW5GNFpuLWNCcVNoeFM0N1pCZFRob01ray1IZko2Rk1PZU1pUUZvZ2pIWjAzeXlnR1lYUzJ5MDA5ajZfZkdFWTAzWW9JTjRya2lEQkcya1lfZEpzU2F4?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):产品Bug已修复，负面但轻微。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-google-279
+  date: 2026-11-27
+  dim: W2
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "刚刚，谷歌DeepMind破解人类生命天书，90亿种基因突变全部算穿"
+  quote: "刚刚，谷歌DeepMind破解人类生命天书，90亿种基因突变全部算穿"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTkFVX3lxTE45NDRpUDhBNzhhOGtaVTROM3hBbDlIM0toWGgza1VNMmpwNlk5VE1RVU5ZUUpJNWI2RHAxZFJYVmZLNlpjX0JiZTFyZXF6Zw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):DeepMind重大科研突破，正面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-google-280
+  date: 2026-11-27
+  dim: W7
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "比利时叫停Google数据中心建设工程 因抽取水资源引当地居民反对"
+  quote: "比利时叫停Google数据中心建设工程 因抽取水资源引当地居民反对"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiuwNBVV95cUxOMEJGVkVuWnk1Ym9RaC1IY1hhZXVzUW5BaXhGSE9WTEJ6Q0hLMEh5N1lpTDNHdDBpT0ZTOW5qQWdMd3pFQ1ExUnpxNmg5NDI3UnhHZU10LTNjbWg5bHRVbk9xVmd1RFBsYzRfV1Y3MmlINkYzV2gxeGJGRDg3d0tUQXc2QW9CNzZzc3J3VGJyS1NCUlhXR0h5a2ZsaHJhZXhieklydGpTZmRPSnNNd3BrRVZHWXE2dm9NSGhVYkdNR1Q0TUtRVUpYdDY1ekRadmdpazl0LXhxU3lnOHhXQnp6U08tM3k1eVdvWTh6cFJnb1NwOXB0aU8wUE51dy1ueXE0dV9nV3l1M0k1aVRuSl90NEdmNkt5X2JHZXB5S2dLR3dzZ0FjQjNDTWNrUVZHT0tfZVVBLUVyd2FfX2ZEVlljY0dDSjRrMEJETWhNWUtveWZGUzJhTXdfRDNYZnFqQWNRZXEwYVoxNkxhS0VZTGxHUngtck1qX3ByeW5nbE9JV2pnRnJzQ2tLVmw2dWVQOUNzOERFZENmOHM1MDRVNlBQbGgxVHJUb1lDblRkbDVhR0s2VTR6Uk5MYTJuaw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [origin, category]
+  source_type: media
+  note: "LLM 预分类建议(high):数据中心工程被政府叫停。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

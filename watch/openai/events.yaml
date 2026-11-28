@@ -4493,3 +4493,109 @@
   source_type: media
   note: "LLM 预分类建议(high):计费修复+补偿措施,影响用户。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-27-openai-294
+  date: 2026-11-27
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "ChatGPT 额度突然不耐用了？OpenAI 承认计费出错，还给了一次重置"
+  quote: "ChatGPT 额度突然不耐用了？OpenAI 承认计费出错，还给了一次重置"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Idjg1MHF5dlJVSkdpTGpQbm55ZWJ6ek05NThfb2ZqQzRXN0hGcDlmSU45V1BSbDFOUGpFTjFzSlpCM2YxVXVCRVVXM181bHlkaUExVU9IN202LXJJ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(high):计费出错损害用户体验信任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-openai-295
+  date: 2026-11-26
+  dim: W5
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "刚刚，OpenAI 宣布合并ChatGPT入口"
+  quote: "刚刚，OpenAI 宣布合并ChatGPT入口"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBja21EWEJDRVF6VUlLVUlZaXBKd0ZIcXA1ZU1faFRKVzFyQm1XZnZueUhDS29Dc1E2N1FWTVQ0ampESzlmbWs1NlB3TEtkZ2VMN0QtRU1PT2xHaDBV?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):产品入口整合重大变更。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-openai-296
+  date: 2026-11-25
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "A社Tibo被曝加盟OpenAI！上市前离职三人组异地团圆"
+  quote: "A社Tibo被曝加盟OpenAI！上市前离职三人组异地团圆"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE03QkJEamNVR1hzV2xMalJHQVg4R25XcUsyejJYZ1R6V0ZFZU1Mc0VSQ09aa2NnZkQtdVc0TjBPdGhwakJNS0xPUE1OSWVCaFZqMG9DZGpKcngxSVhl?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):核心人才加盟。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-28-openai-297
+  date: 2026-11-28
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI再次叫停前沿模型开发 AI+网络安全成国家级战略重点方向"
+  quote: "OpenAI再次叫停前沿模型开发 AI+网络安全成国家级战略重点方向"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE9XcEhsbEZkZ1NUNUVOT0FvUzRfSTlpSjE3Z3BtQms1c3VKeGpIdU9BTFM1LXNvUkdyT3ZFeE9DVG05Rlg5c2tyRA?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):叫停前沿模型开发属重大动向。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-openai-298
+  date: 2026-11-27
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI反击苹果！指控其窃取商业机密、威胁供应商，双方诉讼战升级"
+  quote: "OpenAI反击苹果！指控其窃取商业机密、威胁供应商，双方诉讼战升级"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1IRDBVQlB0WjhGZVlPM3hPU0U2TlBvSldNQlRrTl8wckFFQzlhNDNJeGJtV2UwbFloX0M3eVlZTkViWTVtMXhQNXk3OExVaXVJS2ZV?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [origin, identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):反诉苹果重大法律战，但无判决结果。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-openai-299
+  date: 2026-11-27
+  dim: W4
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "澳大利亚悄然公布OpenAI 智能体入侵Medicare 事件 36 页报告全文：现行法律无法追诉自主行动的AI"
+  quote: "澳大利亚悄然公布OpenAI 智能体入侵Medicare 事件 36 页报告全文：现行法律无法追诉自主行动的AI"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiSEFVX3lxTE5zUWtuZFFORzlPMlVyMmRmMk1tZlNoTFRjUjFJYXpTb1N0Wm5KbFdSRERHTUxDV0N5aXZSdDNZaktoMG04RW1Lbw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):监管报告点名OpenAI智能体入侵，涉法律追责。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-openai-300
+  date: 2026-11-27
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "OpenAI反訴蘋果公司竊取商業機密"
+  quote: "OpenAI反訴蘋果公司竊取商業機密"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE92bzhvaVRlampLeVF5c2cxV0tVY1FvclRGVGZmWnJQV3VVNXRldG01MW1jbVctTW9tYWFUR29XdlJCQUdVbU4wRjhSbDlza1pISzFOLVg0Q083Z3NKV0I0ekZlTHI5VTDSAWdBVV95cUxPdm84b2lUZWpqS3lReXNnMVdLVWNRb3JURlRmZlpyUFd1VTV0ZXRtNTFtY21XLU1vbWFhVEdvV3ZSQkFHVW1OMEY4Umw5c2taSEsxTi1YNENPN2dzSldCNHpGZUxyOVUw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [leverage, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):重大诉讼，反诉苹果窃密，需持续跟踪。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

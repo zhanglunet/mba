@@ -3449,3 +3449,79 @@
   source_type: media
   note: "LLM 预分类建议(high):Copilot应用下线，产品调整事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(5 条)──
+- id: 2026-11-26-microsoft-227
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "微软自曝Win11下月移除3款Microsoft 365应用，太吃内存"
+  quote: "微软自曝Win11下月移除3款Microsoft 365应用，太吃内存"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTFBpQmZVUk55VzdHWkVqejJCNE8ydHE4Q2FJOFpXSThEblJmZ05WRTlUVzV1d0NYdUtWYUJ5SWQ1S3RmZFh4dDVrcWtaNktKVEdnODh5QUpzcDRzYWdGdTZrYXZ2MnhnbU9BN29JU1pPSGk?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Win11移除官方应用，产品调整事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-microsoft-228
+  date: 2026-11-27
+  dim: W5
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "微软将于12月16日停用365伴侣应用"
+  quote: "微软将于12月16日停用365伴侣应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiTEFVX3lxTE5nLVZCbjVUeGVJS21GZ0JXSEZpdVIyNHR1ZHBOTEtrSlpNTVFMMmtpbVllTU9BX2k1Qi03SUpBTFNMUTl6U3JCN0ZHTkI?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [origin, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):官方停用应用，产品变更公告。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-microsoft-229
+  date: 2026-11-26
+  dim: W3
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "微软将停用其 Microsoft 365 配套应用"
+  quote: "微软将停用其 Microsoft 365 配套应用"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibkFVX3lxTE9Hb01OTDFRdFlFU3V2anU5ZlNoaXJPTTdkZ3JScjdaS3pkOS1oYUs2QV9zUzdsUDh3c2Y2Ql9pdXdCOHEyTzdhUzd0TEpGQUNYdjc5bmk3N2pkMVhDaWNWR3pSekctamdYU2NoVU9n?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):官方停用配套应用，影响用户体验。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-microsoft-230
+  date: 2026-11-26
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "微软被指拒绝下架传播木马的商店应用- Microsoft Error"
+  quote: "微软被指拒绝下架传播木马的商店应用- Microsoft Error"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1UkxXVEh6Rng3ZHJmaDBDM1hQTDdxQXFVbzRHWTBleVkyUGlMMks2TTRIdXZJd1lhanVKSWpleXNWTkhFdTdHNUtiSjEtcXdta2U3N1RGMHlJdHZna1Jfdg?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):被指纵容木马应用，涉安全信任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-microsoft-231
+  date: 2026-11-26
+  dim: W3
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "微软自曝Win11移除3款Microsoft 365配套应用原因：太吃内存"
+  quote: "微软自曝Win11移除3款Microsoft 365配套应用原因：太吃内存"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE5pRlEydEVDc1hlNHZ5T3J6U0o4bEZOV251WXpKaU9lZEllbmtaMzJDNHVvcUptMFR2UmV2X0dVM1lMUUdVZ2N3NVFPWGpQZ3pkek0tRXYxSnZxbHdCTlpPVDNpaEZsWmFjcjlTNjRvSEM?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):官方解释移除原因，产品调整。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
