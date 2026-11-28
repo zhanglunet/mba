@@ -1379,3 +1379,64 @@
   source_type: media
   note: "LLM 预分类建议(med):产品过热保护体验问题，负面口碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(4 条)──
+- id: 2026-11-27-dji-090
+  date: 2026-11-27
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "如何评价文章《我疆画地为牢》？文章中写员工离职后遭竞业索赔250万，真实情况是这样吗？"
+  quote: "如何评价文章《我疆画地为牢》？文章中写员工离职后遭竞业索赔250万，真实情况是这样吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBfTUNINU80eTJsOFJLcXRjbmlnTko1b21qQTBqYjZNc2hsbXRMUlN0Wk9NQWxaQWFiOGFrQkNVbGp5MDJieG14eVhhQVBNNG9pbWFvMHNaT2lEX09zQUlJ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, category]
+  source_type: social
+  note: "LLM 预分类建议(med):竞业索赔争议涉雇主品牌，社交热议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-dji-091
+  date: 2026-11-27
+  dim: W6
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "北京全域禁存无人机 外籍旅客携四架无人机转机被罚"
+  quote: "北京全域禁存无人机 外籍旅客携四架无人机转机被罚"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMia0FVX3lxTE5Tb2tRUVhCN0VkSy03WDhXU2FNeW9ZdUhqVWYwOVRRamhTZUttdC0yV3duYlp5T05oeWJfeFlXdF9GMkdQcG5qUTlMWHFVX1VtLTZ0bDBXdE1NRVRGT29FS0VBR1M1ZE9BX0tz?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):北京禁存无人机监管影响行业龙头。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-dji-092
+  date: 2026-11-27
+  dim: W3
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "家门口消防箱被装摄像头，大疆竞业协议边界引争议|兽楼处|大疆|李辰|易杨|竞业协议_新浪新闻"
+  quote: "家门口消防箱被装摄像头，大疆竞业协议边界引争议|兽楼处|大疆|李辰|易杨|竞业协议_新浪新闻"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHTHpoYy10ZGp6eU44RHhUQ1VNcFUyLTN0ZzZmbEhiVWpjX3V1RHZvbktneDJRRU5UVUYyLThKSXhLWTFaMVRuUENuQ1VuUkQ0UmRuYlpMRWc3VjhxaGExWno3WQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(high):媒体曝光竞业协议监控争议，声誉受损。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-dji-093
+  date: 2026-11-27
+  dim: W2
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "两家科技公司重塑电动自行车：大疆系Amflow高歌猛进，而Rivian系ALSO却陷入困境"
+  quote: "两家科技公司重塑电动自行车：大疆系Amflow高歌猛进，而Rivian系ALSO却陷入困境"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZEFVX3lxTFAyQW44ZmdreVVocmE4bVlrTXQxcUNESlVZMUIyUkJ4TndYZ2lXejNDUmowMTZ6anJ4NGR2ZDVqWWh6NnRRMmtkWmxULVF3aWpOQk9PYl9MYkZ4S3BwYW9ueFhyeEU?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):大疆系子品牌业务进展，关联度尚可。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

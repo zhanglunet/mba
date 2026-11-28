@@ -3265,3 +3265,154 @@
   source_type: media
   note: "LLM 预分类建议(high):旗舰新品类正式发布且价格明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(10 条)──
+- id: 2026-11-25-huawei-215
+  date: 2026-11-25
+  dim: W7
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Huawei Peer-Recognized as a 2026 Gartner® Peer Insights™ Customers' Choice for Enterprise Wired and "
+  quote: "Huawei Peer-Recognized as a 2026 Gartner® Peer Insights™ Customers' Choice for Enterprise Wired and "
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxNOVJUT1dvRjdQbDNUX2FYei1WNHMyaFJuaFd1dFJPM3NrMjYxUzlFQ0ZOU1IwcEw1VDJvaEQzOHB5VU9DeUE0SDVWTDhrY2N0cVhuOWZ6X05jbjlmSUg2OHZqSEZwODljZW1aT0l1bGNBQXFxd2U5X0kzRXhUcmtLQXZlUzdJUzVaMUR4YU1fZ1hVbUUtSXNsMg?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: official
+  note: "LLM 预分类建议(high):获Gartner客户选择认可，品牌声誉事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-216
+  date: 2026-11-25
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "鸿蒙终端破1亿台，华为Mate X8把大折叠做到8.95毫米"
+  quote: "鸿蒙终端破1亿台，华为Mate X8把大折叠做到8.95毫米"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HanIwd216cmZVOXV4MEtNM0lFNGtRaHR3aklpOV9UNFMxMEdxQmFyZDN6T0t5ZVV1eXYtRWREaXEzaDFMMkhhU2RvV09YUk1Tc0JwdkFSZ2xlZHpS?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal, identity]
+  source_type: social
+  note: "LLM 预分类建议(high):鸿蒙破1亿台里程碑，生态重大进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-huawei-217
+  date: 2026-11-27
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "旗舰体验不溢价！华为MateBook Fold S今日开售，聊聊华为小折电脑"
+  quote: "旗舰体验不溢价！华为MateBook Fold S今日开售，聊聊华为小折电脑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1nU29YS1VONHI5bUN6dkxqZ2J2X1Q1R096aHNNZU5ROG56VjQyYzR4QkpJbGtSZ28yUUltS0VWTmJ5OVdia2YyNXMwWFRoVS1RVVhJYnJta0phSVc0?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰新品开售，个人评论载体。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-218
+  date: 2026-11-25
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "多款新品发布，HUAWEI Mate X8及全场景新品发布会召开"
+  quote: "多款新品发布，HUAWEI Mate X8及全场景新品发布会召开"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMifEFVX3lxTE1FN3NVQmpfcjZDaFNUSzVaY2daTGliZFBwTmJHZ0IxaWNlSGk2RmZFcGRlb2RJUFd2X0dxTUJqM3dYRUpBVVJvZ0hHLWpNam1ZTlJrWUw1c0FiTVZwTDNvMzItUWFfSWhhZ1VsQXhuSWZsVlZidHhrdHNPcjI?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰新品发布会，重大版本事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-huawei-219
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为：从被美国制裁到成为中国人工智能战略的核心"
+  quote: "华为：从被美国制裁到成为中国人工智能战略的核心"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMicEFVX3lxTE94bFQwT0J5RTNtNTNhdzJyWUNxUUJGWlROZUxIbzZhZll4OXN6NVdLMHdvZExhZVdIVlUtcUFzVmNBZ1dWUHVCdEhWMktUcjhKMEt0VnotcWhJM1o5RC14b2dhUFk0VU9IS3haTUpaaHg?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):战略叙事报道，与品牌实质相关。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-huawei-220
+  date: 2026-11-27
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "HUAWEI ADS 5云端算力达60EFLOPS"
+  quote: "HUAWEI ADS 5云端算力达60EFLOPS"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiW0FVX3lxTE1USTlPbVRSNDc5QWF1R3dPVkZINUFqdXEwSlQ0dWduTTdFbjl4c3pnY2ZLQjZhbXFpRHc5TUtKOGpsQ0h2dEJxdWdYQWtMVUR6VEVmSXhmdW9kS2M?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):ADS 5算力数据，能力信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-huawei-221
+  date: 2026-11-27
+  dim: W1
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "轻薄随身折叠PC，HUAWEI MateBook Fold S 全面开售，标配华为星跃折叠键盘"
+  quote: "轻薄随身折叠PC，HUAWEI MateBook Fold S 全面开售，标配华为星跃折叠键盘"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxQN1d1RXdKS3FzTDJHWlNjYU9waU1kNkhvQjNadGFCMkVQS2NPTTVoeDRhQ0RqNzVTekl5cXBnNkluTWo4aXVLYW9iLWVET3NfTG9uV0lQY1dCYnd3Zm40YjNUNTZScGpvaEhsblUzSTJoRHFva0dPRHdTZEZKTUdRN2ZiUU1GYW1YZHE4?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):旗舰折叠PC正式开售，重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-huawei-222
+  date: 2026-11-25
+  dim: W3
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "华为获2026年Gartner® Peer Insights™企业有线和无线局域网“客户之选”称号"
+  quote: "华为获2026年Gartner® Peer Insights™企业有线和无线局域网“客户之选”称号"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxQOGRBZmxOZ0dETjZVOWZSQU5CNFB2TnZOWElZcjg2bV9UNTJHVG1KQUpQa01rT3lQeGExbXJDVDVIY3VLX1NaNFpSdDEtQmd2UkZ5MzJlNlItQjlxY3AwUU9OVGxJRWtudEpRckpmVDc0YUtlQ2JJUHlnV1E1NmQwSWlpcUtBVzlzLU1kcC1lTU1mZl9hb2Zrcw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, identity]
+  source_type: media
+  note: "LLM 预分类建议(high):获Gartner客户之选，正面口碑。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-huawei-223
+  date: 2026-11-27
+  dim: W1
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "华为预告其高带宽内存设计可超越三星、SK海力士与美光但实际验证仍待时日- Huawei 华为"
+  quote: "华为预告其高带宽内存设计可超越三星、SK海力士与美光但实际验证仍待时日- Huawei 华为"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BY2RwSGs2TnREVmM1ZlF6Y2ZiWVczY3VOWVpSTG1nS3V5SWxSRmc5blNMekRMVHZhY3FnUEt0b2NGRWJhVFZFTnRWVzhLLUYzcjI4dm00d0RrYWNydkJqSw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, category]
+  source_type: media
+  note: "LLM 预分类建议(med):HBM设计预告但未验证，中性。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-huawei-224
+  date: 2026-11-27
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "华为将披露新型HBM设计，数据接口宽度达现有HBM4两倍"
+  quote: "华为将披露新型HBM设计，数据接口宽度达现有HBM4两倍"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTE82MWtNd2ZubWlBcEpOWVhUaF9BYXU5ZDhoQ3l1NGNuTXk1YlgtcDBvOE5ESE5zRnpBV3A3X29SX29RMlJUeE5LZXFjamM0U2Y3aW5LcGNmc0tjZEt3alpPUnI3NE5CQlVVeS1XQlFoc2g4ak12YWNlTA?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):新HBM技术披露，技术信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

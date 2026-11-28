@@ -2601,3 +2601,49 @@
   source_type: media
   note: "LLM 预分类建议(med):美算力新规实质影响公司算力获取。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-25-kimichat-170
+  date: 2026-11-25
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "Kimi K3.1 Pro 开放权重：百万上下文加持，这回真能让 Agent 替你干完脏活累活吗？"
+  quote: "Kimi K3.1 Pro 开放权重：百万上下文加持，这回真能让 Agent 替你干完脏活累活吗？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBoV0ZZa0puRGZLVTRrNUUtX21oSG9NTklCd1FERk1WVURyQzBqNkZaMDI0WWM0NXI4RlZEeHZIY0dZQno3bnBlY3lBdE9lQ2JURExUXy1UUl9vSzJR?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):旗舰模型重大版本开放权重，疑似发布事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-kimichat-171
+  date: 2026-11-27
+  dim: W4
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "ARR超3亿美元的Kimi为何还持续融资？拆解AI大模型的成本结构与现金流逻辑"
+  quote: "ARR超3亿美元的Kimi为何还持续融资？拆解AI大模型的成本结构与现金流逻辑"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFBpU3RQamRSdUlfNWI3YVUyUFd3amdVYVlfcjgtREtnbzVhd3VKbHdQRTFzeTZ3OWxRZmE1RUEyQ2R0NGRYRlhpUkZMS1I2VlRMSVk3cDhtT3NzSmxiMGJN?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):Kimi融资与现金流分析，含ARR数据。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-kimichat-172
+  date: 2026-11-27
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "月之暗面启动 Kimi 科研支持计划，为自然科学与工程领域提供 API 资源 ｜#AI资讯# #MoonshotAI# #科研支持#"
+  quote: "月之暗面启动 Kimi 科研支持计划，为自然科学与工程领域提供 API 资源 ｜#AI资讯# #MoonshotAI# #科研支持#"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxNRTk2UEtWSWZyZzNVek5Nb05LbTNCUW1OUEd5OEg2REp2VEY4VXk5eE9DNXBnQkJZZ29NU3A4VVVJUHJYYmF2ME9BYmt0bTZ0LUpGdDVVTWVNMzV3TVR1Wm5kbG5QbElzUTF6dEtieERTdUw1UXBRRmFsYnFBcm84VkUwZ1pWSVdPckVPNw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):官方科研支持计划，品牌生态举措。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

@@ -1335,3 +1335,34 @@
   source_type: media
   note: "LLM 预分类建议(med):洗钱案关联拍卖，涉品牌物品。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(2 条)──
+- id: 2026-11-26-hermes-087
+  date: 2026-11-26
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "抗周期的奢侈品似乎也卖不动了！"
+  quote: "抗周期的奢侈品似乎也卖不动了！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ZbXVGRUVlTkVsRlFqT0FDM0RjMlVibVJmV3I5UVRJa1MyV05CSHUwb3Zwbjlrei1SSHgzQ2ZOWVh4QmprY2N6Z2tUN0pCVU9FU1lldlVGVDBSNjhq?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):奢侈品销售疲软舆情，涉及品牌负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-28-hermes-088
+  date: 2026-11-28
+  dim: W5
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "爱马仕部分二手包价格暴跌"
+  quote: "爱马仕部分二手包价格暴跌"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMikgFBVV95cUxNdGViZWNTTWZhZ0FUeWRFU09PdExMUk8wWnI5eHRGV3lTQUdZOFltVW5sRXRDa1ZFRWRaQjRwckpGRkIwN2d2THdRRmJmektPRnFjdi1KUy1BSDJwdVpPRW1jNlBRTHdXQzQ4RGY4akk5ZlFweFdWRjhBSUxpWHo5dm85bTU5SzdlbGJzRG15Qmo5dw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):二手包价暴跌，影响保值性核心叙事。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

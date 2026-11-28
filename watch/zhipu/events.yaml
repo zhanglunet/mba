@@ -979,3 +979,19 @@
   source_type: media
   note: "LLM 预分类建议(high):美国算力新规影响研发进度，实质监管事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(1 条)──
+- id: 2026-11-26-zhipu-062
+  date: 2026-11-26
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "GLM-5.4 的 Loop Transformer，似乎让智谱有了一点不一样"
+  quote: "GLM-5.4 的 Loop Transformer，似乎让智谱有了一点不一样"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5uUzBzTmN4UTF5MDQ5YUJLNnlfQUJqVTJoSG9NTVV6VmxjX0lLdlhuNWttYTRBdHVQUFk2d3dnaGt6dERDTlQzUGtVeUs4ZDJaVVJjZ3lGd0ZRbDZv?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal]
+  source_type: social
+  note: "LLM 预分类建议(med):社媒对GLM模型架构技术讨论，正面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

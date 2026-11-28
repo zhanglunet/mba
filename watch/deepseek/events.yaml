@@ -2819,3 +2819,49 @@
   source_type: media
   note: "LLM 预分类建议(high):工商经营范围变更，业务拓展信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(3 条)──
+- id: 2026-11-26-deepseek-185
+  date: 2026-11-26
+  dim: W5
+  severity: P0
+  direction: pos
+  direction_by: model-judged
+  title: "深度求索发布并开源赛博体育地址，综合能力逼近GPT-4级别"
+  quote: "深度求索发布并开源赛博体育地址，综合能力逼近GPT-4级别"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMibEFVX3lxTE5QWVdQUVlnVVcyRzN0aGFzNVFTREEySGE5bmE2T1laOTlyZU1mMkZjTmJtM19pM3FYOW5JTnhaR3p3WHZQOGpVTlNnbGJtZEhESGZYeEw2OVdGREFxYnNBRkstZlZIMmJ5emxxeg?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):大模型正式发布并开源，属P0事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-deepseek-186
+  date: 2026-11-26
+  dim: W4
+  severity: P2
+  direction: neutral
+  direction_by: model-judged
+  title: "DeepSeek 关联公司新增增值电信业务"
+  quote: "DeepSeek 关联公司新增增值电信业务"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZVV5M1lIclM2V3E5bzdnRjJ2MlIzOGRvbnA3STdKaGJTZFNPcHhzcDJCcGtXTm5Ra1QteVNsLU5xakhIbGhVdTMwWWhfSDZEV3JVRU9GTlEyVHFQNWpXVTh3LWJiOFF3d0htNVVHR3JpMmd0VndfNnpaVVdFUnMzSUdQSGJrZmxVUHE4?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):业务范围扩展，轻微信号。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-deepseek-187
+  date: 2026-11-27
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "数据安全风险 爱沙尼亚吁停用DeepSeek等3款AI工具"
+  quote: "数据安全风险 爱沙尼亚吁停用DeepSeek等3款AI工具"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMieEFVX3lxTFBGdEVFa24tRW5xOXdPTUF3Z0hJdUt1LTJDWFQ4dGxQaGNnVERJWW9mM3BCNFhDbzJIMmVKNHIydy1tRGdBWVN3X1ZXTHBROWlUbmdfX2xlQ1RUbnBXbThwMHpQMTNmN1VTREUxQngwYUs2cmc1Ymd5Ug?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):国家级监管禁令风险，负面事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

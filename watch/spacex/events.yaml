@@ -3788,3 +3788,139 @@
   source_type: media
   note: "LLM 预分类建议(med):马斯克向全美儿童赠股，品牌形象事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-06-23-spacex-249
+  date: 2026-06-23
+  dim: W1
+  severity: P0
+  direction: neutral
+  direction_by: model-judged
+  title: "Space Exploration Technologies Corp. Announces Inaugural Bond Issuance"
+  quote: "Space Exploration Technologies Corp. Announces Inaugural Bond Issuance"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi5gFBVV95cUxQdEZsV24zOWNXN013Sm9NSVBrTHlXMkd0bjJacVFmREtjSlZlbTZySWpUSXFRYllOWUtLVzBKYVJjdUdUaklkckE2UUZ5SEVJbWJCcUY1cGpJNHA5cEpfUXVpakRDSU1wbXhiSXFuWFNlOGFRTnZHRHJ4UW1VNjBVXzk1UVZFQ01JOUNfbFkyS2lZQnpIQXZZRmdsLWEyQnBEMGlpQXpqTmppYmpqNkd1NTVFU2JSWEFYRF9ranhzb1NpQk54cHBtZVphdmkwVlpDNlhCU1RfMl9WeFdfSy1kN09vRGJnUQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [origin, leverage, signal]
+  source_type: official
+  note: "LLM 预分类建议(med):官方首次发债，重大融资事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-spacex-250
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "SpaceX获准部署百万颗算力卫星；标普将英伟达评级列入负面观察；Anthropic不再续租SpaceX 5万颗H200 | 日记"
+  quote: "SpaceX获准部署百万颗算力卫星；标普将英伟达评级列入负面观察；Anthropic不再续租SpaceX 5万颗H200 | 日记"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rWnRFRzN6VFdxZ0hIRlJ3UnFvcmU3VFF5aEswT19nbGlIWGRoejFTTUFkQ2g4RnRfRlNqaGxDX2Q1SVZVdGNVRzNra3IyZzJmSDFDc0N0a1VVTU85?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):获准部署算力卫星，含Anthropic退租负面。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-spacex-251
+  date: 2026-11-26
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "100 万颗！FCC 批准 SpaceX 太空数据中心星座计划！"
+  quote: "100 万颗！FCC 批准 SpaceX 太空数据中心星座计划！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9WQ0g0ZkRDS21GVHdMREk0Q05yaHdqUHE0b2lZal9iN1FOQWZDdm5mQXRUbXBMYkluNk9mc0RUNG9RUEZkbmNRcmNqRHJuTHRnWlkxZVZwU1hqVzlH?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [origin, signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):FCC批准百万卫星星座，重要监管进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-spacex-252
+  date: 2026-11-26
+  dim: W3
+  severity: P1
+  direction: mixed
+  direction_by: model-judged
+  title: "马斯克将送全美儿童每人 2 股 SpaceX 股票，这对 SpaceX 股权结构有何影响？"
+  quote: "马斯克将送全美儿童每人 2 股 SpaceX 股票，这对 SpaceX 股权结构有何影响？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTE1tYTZ1dEVISVp2NzVMNElRU1hDa2UxRWZ4TDNFQURUbFpKVzI4bTZTaE1HU1p5aVpFemFlbmdWdnpmZHFPVlRJbExkd3ZlV18wSVJlM2hPaWFSNzhmX0pN?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):赠股计划引股权结构讨论。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-spacex-253
+  date: 2026-11-27
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克承诺向美国每位提供两股SpaceX股票 总价值约180亿美元"
+  quote: "马斯克承诺向美国每位提供两股SpaceX股票 总价值约180亿美元"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMi3gJBVV95cUxQanpqY2ZNRnI0eEg2ZTVBNlBFYVpCczBkYjUwVEo4N0R4SVZ3ekdaU2VDNFJsTFk3b0IyV0xYRGFVUWJjbmgzX2dIUmhXZ3BrRUdPMDhveDhUQjRZLUFacWJ1UU92SVRUVTRfUVNnczVMTGp6cUFuT0NramF2YU1RVUFUeHE1UENOempfMWxIaldrT0VOZUM4czk3VlRQWG1CUzMweTlsY0RDTlByMUpPNXY5SlItMmNOYm5MLVdrNktBV041b3hoVFVuUTdiRkFURDljTFkzTEVSd0RHVXNEdUJlN0Y5ZDVfbzJteThpUC1LcHhMQ0M4eUl5N2daTV9PLU0walNmOFBiblQwM1NSMEU2SVdRMWJhemNVNGJBT3JNZUc1dGExSktaaVgwcUp4Z21mS3pRN2NVaEM2bzdyQ1VkOERMOEJndEhEMUVCdDB5WnlGY2hCZkl4bm9wQdIB3gJBVV95cUxQanpqY2ZNRnI0eEg2ZTVBNlBFYVpCczBkYjUwVEo4N0R4SVZ3ekdaU2VDNFJsTFk3b0IyV0xYRGFVUWJjbmgzX2dIUmhXZ3BrRUdPMDhveDhUQjRZLUFacWJ1UU92SVRUVTRfUVNnczVMTGp6cUFuT0NramF2YU1RVUFUeHE1UENOempfMWxIaldrT0VOZUM4czk3VlRQWG1CUzMweTlsY0RDTlByMUpPNXY5SlItMmNOYm5MLVdrNktBV041b3hoVFVuUTdiRkFURDljTFkzTEVSd0RHVXNEdUJlN0Y5ZDVfbzJteThpUC1LcHhMQ0M4eUl5N2daTV9PLU0walNmOFBiblQwM1NSMEU2SVdRMWJhemNVNGJBT3JNZUc1dGExSktaaVgwcUp4Z21mS3pRN2NVaEM2bzdyQ1VkOERMOEJndEhEMUVCdDB5WnlGY2hCZkl4bm9wQQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):金额明确的重大赠股承诺。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-spacex-254
+  date: 2026-11-27
+  dim: W5
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anterix考虑大规模出售900MHz频谱 SpaceX已表达收购兴趣"
+  quote: "Anterix考虑大规模出售900MHz频谱 SpaceX已表达收购兴趣"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZkFVX3lxTFBJRzhWczlwY2FNRFUyR09ZVy1UN2FaM0ZHcnlnMUw0aUlCbFVIUF9OX1locWdsY2xzWU1kbVd2ZlZPU3pjSzZ0ZVAwcXFWWjBCZTZOT0h3ZU5BWmFua0hraVhzQVZSQQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):频谱收购意向涉战略资产。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-spacex-255
+  date: 2026-11-27
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "两股还不够，马斯克加码“撒钱”：每年再送全美儿童一股SpaceX！"
+  quote: "两股还不够，马斯克加码“撒钱”：每年再送全美儿童一股SpaceX！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1COVhwSHBUZFRxa0c4NWRqUFhvNzg0aHF0LXhaZldQNmtCNlN5c3B4RTA2V203ai1NNWRaQXNxVmNXeXRiUV9DNEgtMWhNaUZTVnAw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):赠股计划扩大属重大承诺。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-spacex-256
+  date: 2026-11-27
+  dim: W3
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "马斯克：每年向所有美国儿童送1股SpaceX"
+  quote: "马斯克：每年向所有美国儿童送1股SpaceX"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiggFBVV95cUxOVjhNaTNmMXdrNFM3bmNScEp3Qkc5V1lxYmhRQjVuUjI2WjRYV3BOREdzM19QMjhOdDJBX0J1LW81NWd2dldkNlFUYzlpdGxYZFlDMU9fSGgyeE1WTEFjcTZxQ083UGhOVEJSWVlQd2J4T0tyOFNuV291OW43ckhXWk5B?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):年度赠股计划延续报道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-spacex-257
+  date: 2026-11-27
+  dim: W5
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "SpaceX火箭碎片落入境内，墨西哥寻求与美国谈判"
+  quote: "SpaceX火箭碎片落入境内，墨西哥寻求与美国谈判"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMic0FVX3lxTE5SWVVmS0NsbjNLQ2kyUzY0cTZVZEN5QWhJZ1BqT29GX056SUgySklYUHlMc3NrMUpxSzFVZkVEX3E3S05MMlV0NmRuemoyM0lfUnpfMHNOQ3JwSnRoQUg5OFo1cUpzMTEzOURvYkd5dlg1VDQ?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):火箭碎片引发外交关切，涉安全责任。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

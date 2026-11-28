@@ -4562,3 +4562,139 @@
   source_type: media
   note: "LLM 预分类建议(med):IPO传闻类报道，若属实影响重大。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(9 条)──
+- id: 2026-11-25-anthropic-300
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic还藏着2个最强模型…"
+  quote: "Anthropic还藏着2个最强模型…"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE9uLV9TVm96VnVSYUdJV1pZSWFNazB3cllQbTlCSUFTZFl3YzRNelgxOXFvQlJxZDU5ZHBKX0lGeVp6ZGdzdk9wb2dSZVFKNk9WOGRWQm5OY2tsanhN?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: social
+  note: "LLM 预分类建议(med):传闻性强但涉未来模型储备。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-anthropic-301
+  date: 2026-11-27
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "写代码一周，验证五个月：精读 Anthropic 把核心 API 迁到 Rust 的真实复盘"
+  quote: "写代码一周，验证五个月：精读 Anthropic 把核心 API 迁到 Rust 的真实复盘"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aa2VYY0tsUUVRVHBSTG5XNFpVcG92RUk0TVBVSTRSUUpEZ3JEZ2Z5ZkJZU2paWFg5bXZjUWpDUC1LN3Z3bElwYm4wc0ZaRE1CbWhSWmJENExyS1p1?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):官方技术实践复盘有信息量。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-anthropic-302
+  date: 2026-11-27
+  dim: W1
+  severity: P1
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic 放出 Claude Ship：内部 PR 合并量3 个月翻倍，回滚比例下降超40%"
+  quote: "Anthropic 放出 Claude Ship：内部 PR 合并量3 个月翻倍，回滚比例下降超40%"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xMHR0RUNYUGlqb0x3dU12Yl9KUExKTHFrNExkcUM4OTUyTG5YWG1KY2hJVmQ5RWRXTGllZ19XYjVLU0tHMkY0N1B3N09KUHUzXzFHZEU4Q3E3dG5kbVRIM1I5aVJFVGs?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):内部工具实证效率提升。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-anthropic-303
+  date: 2026-11-27
+  dim: W1
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "一场代码大迁徙：Anthropic如何用Agent改造软件生产流程"
+  quote: "一场代码大迁徙：Anthropic如何用Agent改造软件生产流程"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE8zeXcyVFRMOTBMZElpMW5HZWg1VzA4bjM5eG85ZnBkN012OUw5R0tIQjUtZlkxa0VDVUlkWlR6Z0lXZmp0aW5qbjdEQlItbklKbFNv?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):Agent工程实践案例报道。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-anthropic-304
+  date: 2026-11-27
+  dim: W4
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "Anthropic发布Siren评估测试Claude模型越狱倾向-人工智能"
+  quote: "Anthropic发布Siren评估测试Claude模型越狱倾向-人工智能"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qM0FnVC0wSGRGYUhaSTF3ZlFjS0J3dDhfeHU2TmR1cngtc1Y0RU1uRzh5Q1RZSkN4THF1cV9WYmU0V1JCdmZBS3liS0VnZHhRRXNrZ1RsVEVaNHc0bGc?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: media
+  note: "LLM 预分类建议(high):安全评估测试发布。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-anthropic-305
+  date: 2026-11-27
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic推Siren蜜罐测试：新版Claude逃逸率降至1以下"
+  quote: "Anthropic推Siren蜜罐测试：新版Claude逃逸率降至1以下"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMijAFBVV95cUxQVkNKcWVjM0JIeklpYVlEVDZHb01HWGZaNmdrWkdRdDF4eFdKcG4xaWN2dndYZ1laZUlfLWtSb3hvakpDRDhjaFN1Z1I2ZnRpREVPV2tqQTlKbzI2UV8zZFZfV2tNeExaVnc1MVVNQ3RpMVBoZ1NCUWZ4cWZwWDZRSTR1WWxOZ2ZUcUlvMA?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, leverage]
+  source_type: media
+  note: "LLM 预分类建议(med):蜜罐测试显示逃逸率下降，安全进展。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-anthropic-306
+  date: 2026-11-27
+  dim: W2
+  severity: P2
+  direction: neg
+  direction_by: model-judged
+  title: "Claude被指破坏机器学习研究，Anthropic员工发布回应"
+  quote: "Claude被指破坏机器学习研究，Anthropic员工发布回应"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMimAFBVV95cUxPT1hDT1EwN3NNVXJEY01xZFNsbDlWSGo0WHpJa3ZGcmV6QWFhRERVTmpuc29qT0Y2cktsVFd4anFXUTNuZXR1bENpN21RVlJWT2tTdnZFdm9oWWdLX1k4OW5FVkcwZjdzZndOSHItS2NCRlBoTy1lU2dKUWU5ZXRpbXpYVzVSaEFWS3J5OGllWDJ6OFlzWlJYWg?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):产品行为争议及官方回应。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-anthropic-307
+  date: 2026-11-26
+  dim: W9
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "被封几个月的Claude老号陆续解封，Anthropic破发后暗中松口？官网仍未开放中国区"
+  quote: "被封几个月的Claude老号陆续解封，Anthropic破发后暗中松口？官网仍未开放中国区"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJakRBUjRNZVlWSEJhTWktWVRYRnAwQk5WVEx3dUxnUUtLNktzc1F3bjBxWHdWa1BCVmN1Q2ZjQzRQTGR3MWZkNDhybDI0Qk42MGg3b1RB?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [origin, identity]
+  source_type: media
+  note: "LLM 预分类建议(med):账号解封涉及区域政策变动。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-26-anthropic-308
+  date: 2026-11-26
+  dim: W6
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "Anthropic让AI重构自家核心系统：CPU消耗骤减70%，内存占用狂降80%，响应速度飙升！"
+  quote: "Anthropic让AI重构自家核心系统：CPU消耗骤减70%，内存占用狂降80%，响应速度飙升！"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiU0FVX3lxTE5XOU1JcUhlbG55NzJWdzktQlFiUVhZUTlrX1pTRl9QRl9idHV5MC1IcVkxV3VlcnZ6MUZtUDdEY1hZd0ZFUFl2aTNFX1JYR2sxc0VF?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):内部系统优化数据，标题夸张但有信息。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+

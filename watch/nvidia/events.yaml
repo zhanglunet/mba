@@ -3551,3 +3551,109 @@
   source_type: media
   note: "LLM 预分类建议(med):涉及CEO与总统互动的重大舆情事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
 
+# ── 前台 triage 采纳折入(7 条)──
+- id: 2026-11-25-nvidia-234
+  date: 2026-11-25
+  dim: W6
+  severity: P2
+  direction: mixed
+  direction_by: model-judged
+  title: "如何看待黄仁勋辟谣特朗普施压复职说法，称是董事会自主作出决定？二人口径为何不一致？"
+  quote: "如何看待黄仁勋辟谣特朗普施压复职说法，称是董事会自主作出决定？二人口径为何不一致？"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiX0FVX3lxTFAteWQ1MXVISHF4MlJsZE50QjR4ajR6UTJwTmNwSzJLaExZcWhwbDVienQ2c1hoUlVKcUltWlRpWDMtaGVaMGZGeVd2ZkRkMHhKWV9vUlhmOU0xc2FSS2F3?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, signal]
+  source_type: social
+  note: "LLM 预分类建议(med):高管回应人事风波，涉口径争议。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-nvidia-235
+  date: 2026-11-25
+  dim: W5
+  severity: P2
+  direction: pos
+  direction_by: model-judged
+  title: "英伟达621.40驱动发布！支持《战锤40K：战争黎明4》，DLSS 5迎来更新"
+  quote: "英伟达621.40驱动发布！支持《战锤40K：战争黎明4》，DLSS 5迎来更新"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiXEFVX3lxTE5GRExaVVdfX1VYM3B2OVRoV1Fmc3ZTMUtONmkwNFVNcEtBcnVBSjJTeGF2NXFQUHFRdnpGZHlMdUlBN1JQbjEzY2tuV2cxY29sQ0NiR25UQjdNZG53?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [category, signal]
+  source_type: social
+  note: "LLM 预分类建议(high):驱动更新属常规产品支持。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-nvidia-236
+  date: 2026-11-27
+  dim: W9
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "特朗普发侮辱女性的黄仁勋举红文胸AI图，并称涉间谍婚外情风波可能是“净利好”；有谁关心首席财务官克雷斯的遭遇"
+  quote: "特朗普发侮辱女性的黄仁勋举红文胸AI图，并称涉间谍婚外情风波可能是“净利好”；有谁关心首席财务官克雷斯的遭遇"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiwAJBVV95cUxPQlgyd0tCam9meXFxZW9QU0c0UUE1MGN0VnF1UFhzSXQwcUFuQ2JQdnpzT2c5dGtSVTFiemxJZVhwTFlscmVhTVJvNF9hTHpoRVBpWjdONThXZnFUdmZaWXpzUDY0N012UkcyT25jWjhSd2RZVjNKeHVaN2k5S3gtdnNTNWNuY2E3Z1VHOXdfZE81TnpRTU9lb0JhbURtcTlRUFdXZWhSb2l2MUVOZzJfbkNxNEk3aDR0N0hMamt6bEk0QUEtaGZrWDNJUmdQQlE1aWFkZ3FqNEF6S19uUGRjRjVUQ0VlMVM5el9LTXI0QVFmWUt1YkN6ZFdOVVhlVHhKZGtNZGpSOU1wNlUwdU5wdERPYlYtc0NwS3dVNVIwSnNCSlJHM0Z5YVg4QjF4M1lNRnBGdksyM2twT1hqcU1xT9IBwAJBVV95cUxQZGQyeERsMWtLSXhJVXljRzZrcDRZalBOY1M2M2lnU0d1RnZMdnJCSHVjWE5ENFJVMktGTjVNMkpicGZhMVpKVnN0bzFFbXkxN3lfTmgzY1BlZUMyQ0JzQ2x4SG02RUE0M1ZkM1BDNGRyOEhyQnZlTEZKQ1hPdHhmNUNZS1RfZGg5aFZ3ckVCMGhSVXFndlY1Q0UyZDNUUkx1eTYxVTJsci1wUHc4ZGxyUVpUemd6TG9RQWg0MDNmcW5qUk51NUpDTlRPVW1WMHJHM19tY1JtTU96cUNoX1IxcE5FdXRlWlVjM0RDdEpabUxJSHcwMk1UTTliUEYyTzRXZ09sckpRaHZZS01sZkNEbXYwTENUQ00zWnhORUhrSVk4VXVLUF9RWGpRaGNqT01zNWYzaU9LWEhRZndVc3EzYg?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):总统涉侮辱性内容，声誉风险。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-nvidia-237
+  date: 2026-11-27
+  dim: W2
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "比特币跌破6万美元 因中国发现Nvidia Blackwell芯片"
+  quote: "比特币跌破6万美元 因中国发现Nvidia Blackwell芯片"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiR0FVX3lxTE9sU0cwdWZoZUlBU09MMkdNT3JVUUlBenUwU1lLOWRBRkhYallUdGo4dEhsZHlWVEZCbmdUblVUUkI3am0wOHpn?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [signal, origin]
+  source_type: media
+  note: "LLM 预分类建议(med):涉芯片违规传闻，或影响声誉。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-nvidia-238
+  date: 2026-11-25
+  dim: W8
+  severity: P1
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达支付2.9亿美元 和解股东2018年的诉讼案"
+  quote: "英伟达支付2.9亿美元 和解股东2018年的诉讼案"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMitgJBVV95cUxQQl9IWkpOenF4dDFjRHZqM21Ic2pIcUhLTG82VUI2U3RydlJTVTRmYmJxTVBjVjAtOGlMWmV2eUh1RVJUOVdMUi1qTlUtZlZ3WGVuM0tiQnRtUHQzZm9GbzdfNG9BOWZjYkZNZkFrTWJnbVdaUnZpZDR6Y055bnpWRDlRTG5wTUQ4YUlZcUxnaFc1V1N6ei1iWk9aT2JDNEoxMEJFVm1XUDZORzdyZ0M2VlE3cXhOY05nb3MwalZzbmxUd3E1SktXT0FOS2VDR0hNZWtiV1QwM29JRWs4VzBDU2MxX1d1Z3hpX1JvMHJRbGVPN1NRUlJaMENaU25oR1ZrRURTQ2dQbXhuc0FYRGQ0ZHFoV3RKVkpjWmFyUkZEbS1KTWFCS2ZUQTgxMHgyWmRpY2NSTGpR?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):2.9亿美元和解已下达，金额明确。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-27-nvidia-239
+  date: 2026-11-27
+  dim: W5
+  severity: P0
+  direction: neg
+  direction_by: model-judged
+  title: "英伟达暂停向马来西亚、新加坡、泰国和印尼发运服务器"
+  quote: "英伟达暂停向马来西亚、新加坡、泰国和印尼发运服务器"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQWlUNGVpNUJrMmxTOU1hOW10MkVkTTBNbUFNc2cwZFF1ZEk3al9HQ2hFbGZHYTVndWJ3Wnh4WTFGbUFpY3laZGlncUJMMHF1aHFQVERDdW1mRzZ0aTB4MXM1V2dlX1pfVEtiR1lBRVl0dkJCUDJHWkdMS1JnMXhTTVNXSHhuc09O?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [origin, leverage, signal]
+  source_type: media
+  note: "LLM 预分类建议(med):多地暂停发货涉贸易管制重大事件。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
+- id: 2026-11-25-nvidia-240
+  date: 2026-11-25
+  dim: W1
+  severity: P1
+  direction: neutral
+  direction_by: model-judged
+  title: "英伟达CEO黄仁勋重申：公司不需要正式接班计划- nVIDIA"
+  quote: "英伟达CEO黄仁勋重申：公司不需要正式接班计划- nVIDIA"
+  quote_type: title
+  url: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBEcldoWTNTcVpaUjNVcDJuQnZjdUxNcUIzbEQ2TENick1kdURRMHB5c1ppd1dMVUVPRjFkRjBlSDZLa3lJWXJQa2VNUUtoWGNJRmhxQk40bXFhbWpscm9aNw?oc=5
+  fetched_at: "2026-11-28T02:25:57Z"
+  lens_map: [identity, leverage]
+  source_type: media
+  note: "LLM 预分类建议(high):CEO接班议题涉核心高管治理。标题/日期/URL 取自源 feed,分类 model-judged,合并前人工复核。"
+
